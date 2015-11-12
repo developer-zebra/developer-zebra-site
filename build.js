@@ -12,42 +12,10 @@ var Metalsmith = require('metalsmith'),
     layouts = require('metalsmith-layouts'),
 	fs         = require('fs'),
 	Handlebars = require('handlebars'),
+    serve = require('metalsmith-serve'),
+    watch = require('metalsmith-watch'),
 	Swag = require('swag');
-// var watch = require('metalsmith-watch');
 
-// /**
-// * Live reload server
-// */
-// var tinylr = require('tiny-lr-fork');
-
-// // standard LiveReload port
-// var port = 35729;
-
-// // tinylr(opts) => new tinylr.Server(opts);
-// tinylr().listen(port, function(err) {
-//   if(err) {
-//     // deal with err
-//     return;
-//   }
-
-//   console.log('... Tinylr (tiny-lr-fork), listening on port %s ...', port);
-// })
-
-
-// /**
-// * Local server, tied with livereload
-// */
-// var http = require('http');
-// var connect = require('connect');
-// var serveStatic = require('serve-static')
-// var app= connect();
-
-// app.use(require('connect-livereload')({
-//     port: 35729
-//   }));
-// app.use(serveStatic(__dirname+'/build'));
-
-// http.createServer(app).listen(8080);
 
 Swag.registerHelpers(Handlebars);
 
@@ -193,6 +161,18 @@ var sitebuild = Metalsmith(__dirname)
 	  pattern: '**/*.html'
 	}))
     .destination('./build')
+    .use(serve({
+        cache: 0
+    }))
+    .use(
+        watch({
+          paths: {
+            "${source}/**/*": true,
+            "layouts/**/*": "**/*.html",
+            "partials/**/*": "**/*.html",
+          },
+          livereload: true,
+    }))
     .build(function (err) {
     if (err) {
       console.log(err);

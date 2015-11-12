@@ -586,6 +586,14 @@ ul.nostyle i {
   transition: border-color 400ms;
   -webkit-transition: border-color 400ms;
 }
+
+#meet-team .team-description {
+  height: 64px;
+  overflow:hidden;
+  margin-bottom: 5px;
+  
+}
+
 #meet-team .team-member .team-img {
   height: 200px;
 

@@ -810,8 +810,8 @@ ul.nostyle i {
 }
 #blog .blog-post .post-format {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   line-height: 34px;
   text-align: center;
   color: #fff;
@@ -856,16 +856,23 @@ ul.nostyle i {
 #blog .blog-post.blog-media {
   margin-bottom: 30px;
 }
+#blog .blog-post.blog-media .media-body {
+  padding-left:10px;
+}
 #blog .blog-post.blog-media .entry-thumbnail {
-  margin: -15px 15px -15px -15px;
   position: relative;
   max-height: 200px;
-  max-width: 100px;
+  max-width: 200px;
+  overflow:hidden;
+}
+#blog .blog-post.blog-media .entry-thumbnail i{
+    position: relative;
+    top: 15px;
 }
 #blog .blog-post.blog-media .post-format {
   position: absolute;
   top: 20px;
-  right: -10px;
+  right: 0px;
 }
 #blog .blog-post.blog-media .entry-date {
   font-size: 12px;

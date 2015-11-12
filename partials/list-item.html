@@ -19,30 +19,50 @@
     </div>
 </div>
 
-<div class="col-md-8 viewlist hidden">
+<div class="col-md-12 viewlist hidden">
     <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="100ms">
-        <article class="media clearfix">
-            <div class="entry-thumbnail pull-left">
-                <img class="img-responsive" src="{{ url }}/{{ image }}" alt="">
-                <span class="post-format post-format-gallery"><a href="{{download}}"><i class="fa fa-download"></i> </a></span>
-            </div>
-            <div class="media-body">
-                <header class="entry-header">
-                    <div class="entry-date"></div>
-                    <h2 class="entry-title"><a href="{{ url }}">{{ title }}</a></h2>
-                </header>
+        <div class="row">
+            <div class="col-md-8">
+                    <article class="media clearfix">
+                        <div class="entry-thumbnail pull-left">
+                            <img class="img-responsive" src="{{ url }}/{{ image }}" alt="">
+                            <span class="post-format post-format-gallery"><a href="{{download}}"><i class="fa fa-3x fa-download"></i> </a></span>
+                        </div>
+                        <div class="media-body">
+                            <header class="entry-header">
+                                <div class="entry-date"></div>
+                                <h2 class="entry-title"><a href="{{ url }}">{{ title }}</a></h2>
+                            </header>
 
+                            <div class="entry-content">
+                                <P>{{ description }}</P>
+                                <a class="btn btn-primary btn-lg" href="{{ url }}">See Details</a>
+                            </div>
+
+                            <footer class="entry-meta">
+                                
+                                <span class="entry-author"><a href="{{source}}"><i class="fa fa-github "></i> Source</span>
+                            </footer>
+                        </div>
+                    </article>
+
+
+            </div>
+            <div class="col-md-4">
                 <div class="entry-content">
-                    <P>{{ description }}</P>
-                    <a class="btn btn-primary btn-lg" href="{{ url }}">See Details</a>
+                    <P><strong>{{product}} {{productversion}}</strong></P>
                 </div>
-
-                <footer class="entry-meta">
-                    <span class="entry-author"><i class="fa "></i> {{product}} {{productVersion}}</span>
-                    <span class="entry-author"><a href="{{source}}"><i class="fa fa-github "></i> Source</span>
-                </footer>
+                <div class="entry-meta">
+                    <p>
+                    {{#each devices}}
+                        {{this}}
+                    {{/each}}
+                        
+                    </p>            
+                </div>
             </div>
-        </article>
+
+        </div>
     </div>
 
 </div>

@@ -33,12 +33,16 @@ jQuery(function($) {'use strict';
 	$('#tile-view').on('click', function(){
 		$('.viewlist').addClass('hidden');
 		$('.tile').removeClass('hidden');
+		$('#tile-view').addClass('hidden');
+		$('#list-view').removeClass('hidden');
 		$('#blog').attr('id','meet-team')
 		return false;
 	});
 	$('#list-view').on('click', function(){
 		$('.tile').addClass('hidden');
 		$('.viewlist').removeClass('hidden');
+		$('#tile-view').removeClass('hidden');
+		$('#list-view').addClass('hidden');
 		$('#meet-team').attr('id','blog')
 		return false;
 

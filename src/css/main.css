@@ -596,6 +596,7 @@ ul.nostyle i {
 
 #meet-team .team-member .team-img {
   height: 200px;
+  border: 2px solid #2A95BE;
 
   /* scale bg image proportionately */
   background-size: cover;

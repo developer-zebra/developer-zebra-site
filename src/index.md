@@ -1,9 +1,9 @@
 ---
 publish: false
-title: Zebra Technologies Samples For Developers
+title: Developers - Zebra Technologies 
 layout: list-products.html
 products:
-  - title: EMDK For Android
+  - title: EMDK For AndroiD
     description: Java sample projects using EMDK API's, Data Capture, Profile Manager, etc.
     url: samples/emdk-for-android/4-0
     image: samples/emdk-for-android/1.png

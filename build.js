@@ -168,8 +168,8 @@ var sitebuild = Metalsmith(__dirname)
         watch({
           paths: {
             "${source}/**/*": true,
-            "layouts/**/*": "**/*.html",
-            "partials/**/*": "**/*.html",
+            "layouts/**/*": "**/*",
+            "partials/**/*": "**/*",
           },
           livereload: true,
     }))

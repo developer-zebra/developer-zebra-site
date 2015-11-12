@@ -1,6 +1,6 @@
 ---
 publish: false
-title: Zebra Technologies Samples For Developers
+title: Developers
 layout: list-products.html
 products:
   - title: EMDK For Android

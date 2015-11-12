@@ -14,6 +14,7 @@ var Metalsmith = require('metalsmith'),
 	Handlebars = require('handlebars'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
+    imagemin = require('metalsmith-imagemin'),
 	Swag = require('swag');
 
 

@@ -32,6 +32,7 @@
     "npm": "^3.3.10"
   },
   "dependencies": {
+    "hexo-server": "^0.1.2",
     "metalsmith-snippet": "^1.0.1"
   }
 }

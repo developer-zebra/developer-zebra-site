@@ -2,8 +2,8 @@
 publish: true
 title: WiFi Configuration
 description: This sample application demonstrate how to manage WiFi networks.
-download: https://github.com/developer-zebra/samples-emdkforandroid-4_1/archive/ProfileWifiSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-4_1/tree/ProfileWifiSample1
+download: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileWifiSample1.zip
+source: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1
 features: 
   - Profile Manager
   - WiFi Manager

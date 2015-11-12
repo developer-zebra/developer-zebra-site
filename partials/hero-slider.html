@@ -1,0 +1,102 @@
+	<section class="cd-hero">
+		<ul class="cd-hero-slider ">
+			{{#each hero}}
+				{{log this}}
+			{{#if @first}}
+			<li class="selected">
+			{{else}}
+			<li class="">
+			{{/if}}
+				{{#if this.img}}
+				<div class="cd-half-width">
+				{{else}}
+				<div class="cd-full-width">
+				{{/if}}
+					<h2>{{this.text}}</h2>
+					<p>{{this.sub}}</p>
+					{{#each this.buttons}}
+						{{#if @first}}
+							<a href="{{this.url}}" class="cd-btn">{{this.text}}</a>
+						{{else}}
+							<a href="{{this.url}}" class="cd-btn secondary">{{this.text}}</a>
+						{{/if}}
+					{{/each}}
+				</div> <!-- .cd-full-width -->
+				{{#if this.img}}
+				<div class="cd-half-width cd-img-container">
+					<img src="{{this.img}}" alt="">
+				</div> <!-- .cd-half-width.cd-img-container -->
+				{{/if}}
+			</li>
+			{{/each}}
+
+
+			{{#if false}}
+			<li>
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="#0" class="cd-btn">Start</a>
+					<a href="#0" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-half-width -->
+
+				<div class="cd-half-width cd-img-container">
+					<img src="assets/tech-1.jpg" alt="tech 1">
+				</div> <!-- .cd-half-width.cd-img-container -->
+			</li>
+
+			<li>
+				<div class="cd-half-width cd-img-container">
+					<img src="assets/tech-2.jpg" alt="tech 2">
+				</div> <!-- .cd-half-width.cd-img-container -->
+
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="#0" class="cd-btn">Start</a>
+					<a href="#0" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-half-width -->
+				
+			</li>
+
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Learn more</a>
+				</div> <!-- .cd-full-width -->
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video">
+					<!-- video element will be loaded using jQuery -->
+				</div> <!-- .cd-bg-video-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Start</a>
+					<a href="#0" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-full-width -->
+			</li>
+			{{/if}}
+		</ul> <!-- .cd-hero-slider -->
+
+		<div class="cd-slider-nav">
+			<nav>
+				<span class="cd-marker item-1"></span>
+				
+				<ul>
+					{{#each hero}}
+						{{#if @first}}
+						<li class="selected">
+						{{else}}
+						<li class="">
+						{{/if}}
+
+						<a href="#0">{{this.menu}}</a></li>
+					{{/each}}
+				</ul>
+			</nav> 
+		</div> <!-- .cd-slider-nav -->
+	</section> <!-- .cd-hero -->

@@ -1,0 +1,21 @@
+<div class="col-sm-6 col-md-4">
+    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+        <div class="team-img" style="background-image: url('{{ image }}')">
+            
+        </div>
+        <div class="team-info">
+            <h3>{{ title }}</h3>
+            <span></span>
+        </div>
+        <p>{{ description }}</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ url }}">Latest Samples</a></p>
+        <ul class="social-icons">
+            <li>Versions: </li>
+            {{#each versions}}
+            <li><a href="{{this.url}}">{{this.menu}}</a> </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+

@@ -1,0 +1,75 @@
+
+{{> header}}
+
+    <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>{{ title }}</h2>
+                    <p>{{ description }}
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+        			<a class="btn btn-primary" href="{{ download }}"><i class="fa fa-download"></i> Download</a>
+        			<a class="btn btn-primary" href="{{ source }}"><i class="fa fa-github"></i> Source</a>
+                </div>
+            </div>
+        </div>
+    </section><!--/#cta-->
+
+    <section id="blog">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+	                    <div class="media service-box wow fadeInRight">
+	                        <div class="media-body">
+	                            <h4 class="media-heading">Product</h4>
+	                            <p>{{ product }} - {{ productversion }}</p>
+	                        </div>
+	                    </div>
+	                    <div class="media service-box wow fadeInRight">
+	                        <div class="media-body">
+	                            <h4 class="media-heading">Devices</h4>
+	                            <p>
+								{{#each devices}}
+	                            	{{this}}
+	                            {{/each}}
+	                            	
+	                            </p>
+	                        </div>
+	                    </div>
+	                    <div class="media service-box wow fadeInRight">
+	                        <div class="media-body">
+	                            <h4 class="media-heading"></h4>
+	                            <p>{{{ contents }}}</p>
+	                        </div>
+	                    </div>
+
+                    </div>
+                </div><!--/.col-sm-6-->
+                <div class="col-sm-6">
+                	<div class="row">
+                		<div class="col-sm-12">
+						    <section id="main-slider">
+						        <div class="owl-carousel">
+						        	{{#each screenshots}}
+						            <div class="item" >
+						            	<img src="{{ ../url }}{{ this }}"/>
+						                
+						            </div><!--/.item-->
+						            {{/each}}
+						        </div><!--/.owl-carousel-->
+						    </section><!--/#main-slider-->
+
+
+            			</div>
+                	</div>
+
+				</div>                
+            </div>
+        </div>
+    </section>    
+{{> footer}}
+

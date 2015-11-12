@@ -1,0 +1,37 @@
+{
+  "name": "launchpad",
+  "version": "1.0.0",
+  "description": "Using MetalSmith for Launchpad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfh463/launchpad.git"
+  },
+  "author": "Rob Galvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cfh463/launchpad/issues"
+  },
+  "homepage": "https://github.com/cfh463/launchpad",
+  "devDependencies": {
+    "handlebars": "^4.0.4",
+    "metalsmith": "^2.1.0",
+    "metalsmith-branch": "0.0.4",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-in-place": "^1.3.2",
+    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metadata": "0.0.2",
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-tags": "^1.0.0",
+    "metalsmith-templates": "^0.7.0",
+    "multimatch": "^2.0.0",
+    "npm": "^3.3.10"
+  },
+  "dependencies": {
+    "metalsmith-snippet": "^1.0.1"
+  }
+}

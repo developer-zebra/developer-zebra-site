@@ -855,6 +855,7 @@ ul.nostyle i {
 }
 #blog .blog-post.blog-media {
   margin-bottom: 30px;
+  background: #eeeeee;
 }
 #blog .blog-post.blog-media .media-body {
   padding-left:10px;
@@ -869,6 +870,13 @@ ul.nostyle i {
     position: relative;
     top: 15px;
 }
+#blog .blog-post.blog-media .entry-thumbnail img{
+    position: relative;
+    top: 15px;
+    border: 2px solid #2A95BE;
+    border-radius: 10px;
+}
+
 #blog .blog-post.blog-media .post-format {
   position: absolute;
   top: 20px;

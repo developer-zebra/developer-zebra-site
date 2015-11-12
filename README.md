@@ -9,7 +9,7 @@
 ##Local Server
 Start local web server to watch for all changes in the build folder
 
-`browser-sync start --server --files "build.*" --server "build"`
+`browser-sync start --server "build"`
 
 
 ##Build

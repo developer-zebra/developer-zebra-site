@@ -1,0 +1,32 @@
+#EMDKServiceConnection
+
+
+##Public Methods
+###isServiceConnected()
+
+**Returns:**
+
+boolean
+
+
+###getService()
+
+**Returns:**
+
+com.symbol.emdk.emdkservice.IEMDKService
+
+
+###onServiceConnected(ComponentName name, IBinder service)
+
+**Returns:**
+
+void
+
+
+###onServiceDisconnected(ComponentName name)
+
+**Returns:**
+
+void
+
+

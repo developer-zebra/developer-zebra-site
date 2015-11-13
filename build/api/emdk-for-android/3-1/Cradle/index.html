@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#Cradle</p>
+<p>Class to communicate with the MC18 cradle.</p>
+<p>##Public Methods</p>
+<h3 id="enable">enable</h3>
+<p><strong>public void enable()</strong></p>
+<p>This method enables the communication to interact with the cradle.</p>
+<p><strong>Returns:</strong></p>
+<p>void</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleException</p>
+<h3 id="disable">disable</h3>
+<p><strong>public void disable()</strong></p>
+<p>This disables communication to interact with the cradle.</p>
+<p><strong>Returns:</strong></p>
+<p>void</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleException</p>
+<h3 id="isenabled">isEnabled</h3>
+<p><strong>public boolean isEnabled()</strong></p>
+<p>Check if cradle has already been enabled</p>
+<p><strong>Returns:</strong></p>
+<p>boolean</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleException</p>
+<h3 id="getcradleinfo">getCradleInfo</h3>
+<p><strong>public CradleInfo getCradleInfo()</strong></p>
+<p>This method gets the information of cradle.</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleInfo</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleException</p>
+<h3 id="unlock">unlock</h3>
+<p><strong>public CradleResults unlock(int unlockDuration, CradleLedFlashInfo ledFlashInfo)</strong></p>
+<p>This unlocks terminal from cradle and flashes the LED.
+ The timeout represents the duration in which the terminal remains unlocked in the
+ cradle before becoming locked again. This is in seconds and the range is from 10 (minimum) to 30 (maximum) seconds.
+ Continuous unlock may lead to heating up of hardware which may lead to unlock failure . This failure will be 
+ indicated through blinking of cradle Red Led’s .Unlock will fail until hardware gets cool down .</p>
+<p><strong>Parameters:</strong></p>
+<p>unlockDuration</p>
+<p>ledFlashInfo</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleResults</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleException</p>
+<h3 id="flashled">flashLed</h3>
+<p><strong>public CradleResults flashLed(int ledFlashCount, CradleLedFlashInfo ledFlashInfo)</strong></p>
+<p>The LED can be flashed to identify device location without unlocking the cradle.</p>
+<p><strong>Parameters:</strong></p>
+<p>ledFlashCount</p>
+<p>ledFlashInfo</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleResults</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleException</p>
+<p>##Public Fields</p>
+<p>###config</p>
+<p>The field to access Cradle configuration.</p>
+<p><strong>Type:</strong></p>
+<p>com.symbol.emdk.personalshopper.CradleConfig</p>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

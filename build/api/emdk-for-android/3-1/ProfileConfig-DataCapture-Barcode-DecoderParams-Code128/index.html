@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#ProfileConfig.DataCapture.Barcode.DecoderParams.Code128</p>
+<p>Holds Code128 configuration settings.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+Code128 code128 = profileConfig.dataCapture.barcode.decoderParams.code128;
+</code></pre><p>##Public Fields</p>
+<p>###length1</p>
+<p>Use to set decode lengths (default - 0).</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+int length1 = code128.length1;
+</code></pre><p><strong>Type:</strong></p>
+<p>int</p>
+<p>###length2</p>
+<p>Use to set decode lengths (default - 55).</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+int length2 = code128.length2;
+</code></pre><p><strong>Type:</strong></p>
+<p>int</p>
+<p>###redundancy</p>
+<p>Sets the reader to read the bar code twice before accepting data (default - disabled).
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.redundancy = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###enable_plain</p>
+<p>Flag to enable other 128 sub types (besides GS1-128 and ISBT -128).
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.enable_plain = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###enable_ean128</p>
+<p>Set the EAN128 subtype. (default - enabled).
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.enable_ean128 = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###enable_isbt128</p>
+<p>Set the ISBT128 subtype. (default - enabled).
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.enable_isbt128 = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###isbt128_concat_mode</p>
+<p>Select an option for concatenating pairs of ISBT code types.
+ Use enum  ProfileConfig.ISBT128_CONTACT_MODE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.isbt128_concat_mode = ISBT128_CONTACT_MODE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ISBT128_CONTACT_MODE</p>
+<p>###check_isbt_table</p>
+<p>The ISBT specification includes a table that lists several types of ISBT bar codes that are commonly used in pairs.
+ If ISBT128 Concat Mode is set, enable Check ISBT T able to concatenate only those pairs found in this table.
+ Other types of ISBT codes are not concatenated (default - disabled).
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.check_isbt_table = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###security_level</p>
+<p>The scanner of fers four levels of decode security for Code 128 bar codes.
+ Select increasing levels of security for decreasing levels of bar code quality.
+ There is an inverse relationship between security and scanner aggressiveness,
+ so choose only that level of security necessary for any given application.
+ Use enum  ProfileConfig.SECURITY_LEVEL.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+code128.security_level = SECURITY_LEVEL.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.SECURITY_LEVEL</p>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

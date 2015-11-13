@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#DiagnosticData</p>
+<p>The diagnostic data.</p>
+<p>##Constructors</p>
+<p>###DiagnosticData</p>
+<p><strong>Parameters:</strong></p>
+<p>svcDiagnosticData</p>
+<p><strong>Type:</strong> com.symbol.emdk.emdkservice.diagnostic.SvcDiagnosticData</p>
+<p>##Public Fields</p>
+<p>###batteryTimeToEmpty</p>
+<p>The remaining capacity of the battery in minutes. 
+ The default value -1 is assigned when this parameter not requested or failed to get it.</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###batteryStateOfCharge</p>
+<p>The predicted Battery capacity in terms of Percentage. 
+  The default value -1 is assigned when this parameter not requested or failed to get it.</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###batteryStateOfHealth</p>
+<p>Battery health in percentage.
+  State of Health (SOH) is the battery capacity as Percentage of the battery rated capacity.
+  The default value -1 is assigned when this parameter not requested or failed to get it.</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###batteryChargingTime</p>
+<p>The remaining time needed for the terminal to be in cradle to reach capacity that will be enough
+  for a requested duration of shopping trip. 
+  The default value -1 is assigned when this parameter not requested or failed to get it.
+  If Device is not charging , then this parameter is not available and displays 65535.
+  Note: This parameter is not supported now. Hence returns 0xFFFFh(65535)</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###batteryChargingTimeElapsed</p>
+<p>The duration in minutes in which battery was charged during the current charge cycle. 
+  The default value -1 is assigned when this parameter not requested or failed to get it.
+  If Device is not charging , then this parameter is not available and displays 65535</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###timeSinceBatteryReplaced</p>
+<p>The duration in days battery was last replaced.
+ The default value -1 is assigned when this parameter not requested or failed to get it.</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###timeSinceReboot</p>
+<p>The time in minutes since the device cold booted the last time. 
+ The default value -1 is assigned when this parameter not requested or failed to get it.</p>
+<p><strong>Type:</strong></p>
+<p>int</p>
+<p>###batteryDateOfManufacture</p>
+<p>The manufacture date of the battery in the format year/mm/date.  Empty string is assigned when this parameter not request or failed to get it.</p>
+<p><strong>Type:</strong></p>
+<p>java.lang.String</p>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

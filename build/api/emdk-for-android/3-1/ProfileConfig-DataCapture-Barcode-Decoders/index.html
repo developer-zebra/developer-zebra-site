@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#ProfileConfig.DataCapture.Barcode.Decoders</p>
+<p>The Decoders class provides access to enable or disable decoder barcode symbologies.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+Decoders decoders = barcode.decoders;
+decoders.upca = ENABLED_STATE.TRUE;
+</code></pre><p>##Public Fields</p>
+<p>###upca</p>
+<p>Sets the Enabled State of Decoder UPCA.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.upca = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###upce0</p>
+<p>Sets the Enabled State of Decoder UPCE0.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.upce0 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###ean13</p>
+<p>Sets the Enabled State of Decoder EAN-13.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.ean13 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###ean8</p>
+<p>Sets the Enabled State of Decoder EAN-8.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.ean8 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###code128</p>
+<p>Sets the Enabled State of Decoder Code 128.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.code128 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###code39</p>
+<p>Sets the Enabled State of Decoder Code 39.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.code39 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###i2of5</p>
+<p>Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.i2of5 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###gs1_databar</p>
+<p>Sets the Enabled State of Decoder Interleaved 2 of 5.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.gs1_databar = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###gs1_databar_lim</p>
+<p>Sets the Enabled State of Decoder GS1 DataBar Limited.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.gs1_databar_lim = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###gs1_databar_exp</p>
+<p>Sets the Enabled State of Decoder GS1 DataBar Expanded.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.gs1_databar_exp = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###datamatrix</p>
+<p>Sets the Enabled State of Decoder Data Matrix.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.datamatrix = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###qrcode</p>
+<p>Sets the Enabled State of Decoder QR Code.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.qrcode = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###pdf417</p>
+<p>Sets the Enabled State of Decoder PDF417.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.pdf417 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###composite_ab</p>
+<p>Sets the Enabled State of Decoder Composite AB.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.composite_ab = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###composite_c</p>
+<p>Sets the Enabled State of Decoder Composite C.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.composite_c = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###microqr</p>
+<p>Sets the Enabled State of Decoder Micro QR.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.microqr = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###aztec</p>
+<p>Sets the Enabled State of Decoder Aztec.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.aztec = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###maxicode</p>
+<p>Sets the Enabled State of Decoder Maxicode.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.maxicode = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###micropdf</p>
+<p>Sets the Enabled State of Decoder Micro PDF.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.micropdf = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###uspostnet</p>
+<p>Sets the Enabled State of Decoder US Postnet.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.uspostnet = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###usplanet</p>
+<p>Sets the Enabled State of Decoder US Planet.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.usplanet = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###uk_postal</p>
+<p>Sets the Enabled State of Decoder UK Postal.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.uk_postal = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###japanese_postal</p>
+<p>Sets the Enabled State of Decoder Japan Postal.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.japanese_postal = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###australian_postal</p>
+<p>Sets the Enabled State of Decoder Australian Postal.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.australian_postal = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###canadian_postal</p>
+<p>Sets the Enabled State of Decoder Canadian Postal.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.canadian_postal = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###dutch_postal</p>
+<p>Sets the Enabled State of Decoder Dutch Postal.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.dutch_postal = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###us4state</p>
+<p>Sets the Enabled State of Decoder US4State.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.us4state = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###us4state_fics</p>
+<p>Sets the Enabled State of Decoder US4State FICS.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.us4state_fics = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###codabar</p>
+<p>Sets the Enabled State of Decoder Codabar.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.codabar = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###msi</p>
+<p>Sets the Enabled State of Decoder MSI.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.msi = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###code93</p>
+<p>Sets the Enabled State of Decoder Code 93.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.code93 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###trioptic39</p>
+<p>Sets the Enabled State of Decoder Trioptic 39.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.trioptic39 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###d2of5</p>
+<p>Sets the Enabled State of Decoder Discrete 2 of 5.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.d2of5 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###chinese_2of5</p>
+<p>Sets the Enabled State of Decoder Chinese 2 of 5.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.chinese_2of5 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###korean_3of5</p>
+<p>Sets the Enabled State of Decoder Korean 3 of 5.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.korean_3of5 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###code11</p>
+<p>Sets the Enabled State of Decoder Code11.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.code11 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###tlc39</p>
+<p>Sets the Enabled State of Decoder TLC 39.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.tlc39 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###signature</p>
+<p>Sets the Enabled State of Decoder Signature.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.signature = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###webcode</p>
+<p>Sets the Enabled State of Decoder Web Code.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.webcode = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###matrix_2of5</p>
+<p>Sets the Enabled State of Decoder Matrix 2 of 5.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.matrix_2of5 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###upce1</p>
+<p>Sets the Enabled State of Decoder UPCE1.
+ Use enum  ProfileConfig.ENABLED_STATE.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+decoders.upce1 = ENABLED_STATE.DEFAULT;
+}
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

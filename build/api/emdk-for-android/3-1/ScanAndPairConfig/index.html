@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#ScanAndPairConfig</p>
+<p>The ScanAndPairConfig class provides a way to configure the settings to use it in scanAndPair() or scanAnUnpair() methods.
+ These settings must be done before calling the scanAndPair() or scanAnUnpair() methods and do not modify the this while the 
+ method is processing its job.</p>
+<p>##Public Methods</p>
+<h3 id="resettodefaults">resetToDefaults</h3>
+<p><strong>public void resetToDefaults()</strong></p>
+<p>Resets all config to default values.</p>
+<p><strong>Returns:</strong></p>
+<p>void</p>
+<p>##Public Fields</p>
+<p>###alwaysScan</p>
+<p>Specifies if a scan should always be performed to get the Bluetooth address
+ or name of the remote device. If set to true, the provided mBluetoothInfo.mDeviceName or 
+ mBluetoothInfo.mDeviceAddress properties are ignored and scanning is always done. If set to false,
+ then scanning is skipped and the provided mBluetoothInfo.Address or mBluetoothInfo.Name properties 
+ are directly used for pairing.</p>
+<p><strong>Type:</strong></p>
+<p>java.lang.Boolean</p>
+<p>###bluetoothInfo</p>
+<p>Specifies the Bluetooth related information. The settings provided through this object are used 
+ for pairing/unpairing.</p>
+<p><strong>Type:</strong></p>
+<p>com.symbol.emdk.scanandpair.ScanAndPairConfig.BluetoothInfo</p>
+<p>###notificationType</p>
+<p>Specifies the notification related information. When using the ScanAndPair() and ScanAndUnPair() methods,
+ notifications can be provided to the user to indicate the progress of the operation. This object provides 
+ access to the settings for the notifications. The default value for NotificationType is BEEPER. 
+ For more information on notifications refer to the  NotificationType class.</p>
+<p><strong>Type:</strong></p>
+<p>com.symbol.emdk.scanandpair.ScanAndPairConfig.NotificationType</p>
+<p>###scanInfo</p>
+<p>Specifies the scanning related information. The settings provided through this object are used for scanning
+ the barcode. It also exposes the scanned data. NOTE: The maximum allowed length of the barcode that can be 
+ scanned is 123 characters.</p>
+<p><strong>Type:</strong></p>
+<p>com.symbol.emdk.scanandpair.ScanAndPairConfig.ScanInfo</p>
+<p>##Public Enums</p>
+<p>###ScanAndPairConfig.NotificationType</p>
+<p>This enum is used by the ScanAndPairTool class. When using PowerTools, notifications 
+ can be provided to the user to indicate the progress of the different PowerTool methods. 
+ This enum provides notification related information during scanning process.</p>
+<p><strong>Values:</strong></p>
+<ul>
+<li><p><strong>BEEPER</strong> -Beeper notification. Raises pre-defined beep sequences. This will give the user 
+an audible alert when specific operations are performed.</p>
+</li>
+<li><p><strong>NONE</strong> -Disable notification. Do not raise notification for any type of operations.</p>
+</li>
+</ul>
+<p>###ScanAndPairConfig.ScanDataType</p>
+<p>Provides the different types of barcode data to be scanned.</p>
+<p><strong>Values:</strong></p>
+<ul>
+<li><p><strong>MAC_ADDRESS</strong> -Scan data is a Bluetooth MAC address</p>
+</li>
+<li><p><strong>DEVICE_NAME</strong> -Scan data is a Bluetooth device name.</p>
+</li>
+<li><p><strong>UNSPECIFIED</strong> -Scan data type is unknown. The ScanAndPair library will automatically attempt to determine
+if it is a valid address. If not, it will be considered as a Bluetooth name.</p>
+</li>
+</ul>
+<p>###ScanAndPairConfig.DeviceIdentifier</p>
+<p>Provides the list of DeviceIdentifier types.</p>
+<p><strong>Values:</strong></p>
+<ul>
+<li><p><strong>INTERNAL_CAMERA1</strong> -Use first available camera</p>
+</li>
+<li><p><strong>INTERNAL_IMAGER1</strong> -Use first available imager</p>
+</li>
+<li><p><strong>INTERNAL_LASER1</strong> -Use first available laser scanner</p>
+</li>
+<li><p><strong>BLUETOOTH_IMAGER1</strong> -Use first available Bluetooth imager. Note: This requires pairing the 
+Bluetooth Imager before calling the ScanAndPair or ScanAndUnPair methods.</p>
+</li>
+<li><p><strong>DEFAULT</strong> -Use default scanner. Depending on the mobile device, the first available scanner can be laser, imager or camera.</p>
+</li>
+</ul>
+<p>###ScanAndPairConfig.TriggerType</p>
+<p>Provides the list of supported trigger types.</p>
+<p><strong>Values:</strong></p>
+<ul>
+<li><p><strong>SOFT</strong> -Scanner is turned ON automatically and no need to press any triggers</p>
+</li>
+<li><p><strong>HARD</strong> -Hardware trigger needs to be manually pressed to turn ON the scanner</p>
+</li>
+</ul>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

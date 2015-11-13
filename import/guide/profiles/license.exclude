@@ -1,0 +1,31 @@
+# License Manager Profile Feature Reference
+
+
+## Overview
+
+The License Manager feature allows you to  TBD
+
+## Name
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+
+## Main Functionality
+
+* Apply a license that has been embedded in XML
+* Apply a license that exists on a devices file system
+* Remove a license
+
+##Apply a license that has been embedded in XML
+This profile feature will allow your application to apply a license ( Base64 encoded binary blob) that has been embedded in an XML file. Provide a path to the license blob, the profile editor will encode and embed the license to the the profile XML.
+
+optionally, verify the license against a standard feature name or enter a custom feature name.
+
+##Apply a license that exists on a devices file system
+This profile feature will allow your application to apply a license ( Base64 encoded binary blob) that resides on a devices file system. Provide a path to the binary blob on the devices file system.
+
+optionally, verify the license against a standard feature name or enter a custom feature name.
+
+##Remove a license
+This profile feature will allow your application to remove an license from a device. Select a standard feature name or provide a custom feature name to be removed.
+
+## Feature Compatibility
+<iframe src="compare.html#mx=4.3&csp=LicenseMgr&os=All&embed=true"></iframe> 

@@ -121,7 +121,10 @@ var sitebuild = Metalsmith(__dirname)
 	        pattern: 'samples/**/*.md',
 	        sortBy: 'date',
 	        reverse: true
-	    }
+	    },
+        apis: {
+            pattern: 'api/**/*.md'
+        }
 
 	}))
     .use(findLayout({

@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#SecureNfcManager</p>
+<p>This class provides access to obtain the object to communicate with the
+ Secure Access Module (SAM).</p>
+<p>##Public Methods</p>
+<h3 id="getavailablesam">getAvailableSam</h3>
+<p><strong>public SamType getAvailableSam()</strong></p>
+<p>Gets the available SAM on the device.</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.securenfc.SecureNfcManager.SamType</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.securenfc.SecureNfcException</p>
+<p>The exception will be thrown if the emdk is not opened.</p>
+<h3 id="getsaminstance">getSamInstance</h3>
+<p><strong>public SamBase getSamInstance(SecureNfcManager.SamType samType)</strong></p>
+<p>This method returns the object to authenticate between SAM with the Host.</p>
+<p><strong>Parameters:</strong></p>
+<p>samType</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.securenfc.SamBase</p>
+<h3 id="gettagtechtype">getTagTechType</h3>
+<p><strong>public TagTechType getTagTechType(Tag tag)</strong></p>
+<p>This method returns the tag type discovered by the device.</p>
+<p><strong>Parameters:</strong></p>
+<p>tag - - Contactless tag already detected by device. We get this
+            through the EXTRA_TAG information from the intent.</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.securenfc.SecureNfcManager.TagTechType</p>
+<p><strong>Throws:</strong></p>
+<p>com.symbol.emdk.securenfc.SecureNfcException</p>
+<p>The exception will be thrown if the emdk is not opened.</p>
+<h3 id="gettagtechinstance">getTagTechInstance</h3>
+<p><strong>public TagTechBase getTagTechInstance(SecureNfcManager.TagTechType tagType)</strong></p>
+<p>Returns the tag technology object based for the Tag type passed. For
+ unsupported tag type, null will be returned. The application must type
+ cast to the corresponding tag technology object.</p>
+<p><strong>Parameters:</strong></p>
+<p>tagType</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.securenfc.TagTechBase</p>
+<h3 id="getpassthruapduinstance">getPassThruApduInstance</h3>
+<p><strong>public PassThruApduProcessor getPassThruApduInstance()</strong></p>
+<p>Returns the PassThruApduProcessor object to securely communicate with
+ contactless smart cards at the Application Protocol Data Unit (APDU)
+ level using the SAM. This method is designed for the NFC applications to
+ perform secure communication with the contactless secure cards (tags) at
+ the low level protocol. The audience of this class is for secure NFC
+ application developers with good understanding and expertise of the
+ secure technology they use, including the cards (tags) and SAM
+ documentation, features and protocol.</p>
+<p> Note: This is recommended only for the secure NFC application developers
+ who is interested getting the full control on the APDU. Other can use the
+  SecureNfcManager.getTagTechInstance which provides simple API to
+ securely communicate with the Smart card/tags for the supported tag
+ technologies.</p>
+<p><strong>Returns:</strong></p>
+<p>com.symbol.emdk.securenfc.PassThruApduProcessor</p>
+<p>##Public Enums</p>
+<p>###SecureNfcManager.SamType</p>
+<p>Supported SAM types.</p>
+<p><strong>Values:</strong></p>
+<ul>
+<li><p><strong>NONE</strong> -No SAM available.</p>
+</li>
+<li><p><strong>MIFARE</strong> -Mifare SAM</p>
+</li>
+<li><p><strong>FELICA</strong> -Felica SAM</p>
+</li>
+<li><p><strong>UNDEFINED</strong> -SAM category is undefined.</p>
+</li>
+</ul>
+<p>###SecureNfcManager.TagTechType</p>
+<p>NFC tag types.</p>
+<p><strong>Values:</strong></p>
+<ul>
+<li><p><strong>MIFARE_DESFIRE</strong> -MifareDesfire Tag</p>
+</li>
+<li><p><strong>MIFARE_PLUS_SL3</strong> -Mifare Plus SL3 Tag</p>
+</li>
+<li><p><strong>MIFARE_PLUS_SL2</strong> -Mifare Plus SL2 Tag</p>
+</li>
+<li><p><strong>FELICA</strong> -Felica Tag</p>
+</li>
+<li><p><strong>UNDEFINED</strong> -Tag category is undefined</p>
+</li>
+</ul>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

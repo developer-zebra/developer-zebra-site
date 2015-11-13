@@ -1,0 +1,44 @@
+# Batch Manager Profile Feature Reference
+
+## Overview
+
+The Batch Manager feature allows you to TBD
+
+
+
+
+
+## Name
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+
+## Main Functionality
+
+* Process batch from device file system
+* Process batch with embedded XML content
+* Process batch containing a path to an encoded binary  on a devices filesystem
+* Process batch with embedded binary content
+* decode encoded xml
+* decrypt encrypted binary
+* reverse order in which encryption was done
+* csp will own a dedicated private key
+* csp will own public key of staging tool
+* rejects binary that cannot be decrypted and xml that cannot be decoded to valid xml
+
+## Batch File Type
+* XML
+* Binary
+
+## Access Method
+When choosing **Device File System**, Enter a path on the device where the XML to be processed is located.
+
+When choosing **Embedded in XML**, Select a file, and the Profile Editor will encode that xml and place it in an xml element in your batch profile.
+
+
+##Encryption methods
+* Opaque - Only Recipient can decrypt with private key
+* Immutable - Anyone can decrypt with public key 
+* Opaque +immutable
+* Private Passphrase 
+
+## Feature Compatibility
+<iframe src="compare.html#mx=4.3&csp=BatchMgr&os=All&embed=true"></iframe> 

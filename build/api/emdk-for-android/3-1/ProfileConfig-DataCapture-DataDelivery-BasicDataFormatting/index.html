@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"/> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    Using Layouts
+        <p>#ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting</p>
+<p>Holds Basic Data Formatting configuration settings.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+BasicDataFormatting basicDataFormatting = profileConfig.dataCapture.dataDelivery.intent.basicDataFormatting;
+</code></pre><p>##Public Fields</p>
+<p>###bdf_enabled</p>
+<p>Enables or disables Basic Data Formatting (default - enabled).
+ Uses the  ProfileConfig.ENABLED_STATE enum.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+basicDataFormatting.bdf_enabled = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###bdf_prefix</p>
+<p>Add characters to the beginning of the data when sent.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+String prefix = basicDataFormatting.bdf_prefix;
+</code></pre><p><strong>Type:</strong></p>
+<p>java.lang.String</p>
+<p>###bdf_suffix</p>
+<p>Add characters to the end of the data when sent.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+String suffix = basicDataFormatting.bdf_suffix;
+</code></pre><p><strong>Type:</strong></p>
+<p>java.lang.String</p>
+<p>###bdf_send_data</p>
+<p>Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted.
+ However, the prefix and suf fix strings, if present, are still transmitted even when this option is disabled (default - enabled).
+ Uses the  ProfileConfig.ENABLED_STATE enum.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+basicDataFormatting.bdf_send_data = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###bdf_send_hex</p>
+<p>Set to send the data in hexadecimal format(default - disabled).
+ Uses the  ProfileConfig.ENABLED_STATE enum.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+basicDataFormatting.bdf_send_hex = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###bdf_send_tab</p>
+<p>Set to append a tab character to the end of the processed data(default - disabled).
+ Uses the  ProfileConfig.ENABLED_STATE enum.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+basicDataFormatting.bdf_send_tab = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+<p>###bdf_send_enter</p>
+<p>Set to append an Enter character to the end of the processed data(default - disabled).
+ Uses the  ProfileConfig.ENABLED_STATE enum.</p>
+<p><strong>Example Usage:</strong></p>
+<pre><code>:::java    
+basicDataFormatting.bdf_send_enter = ENABLED_STATE.DEFAULT;
+</code></pre><p><strong>Type:</strong></p>
+<p>com.symbol.emdk.ProfileConfig.ENABLED_STATE</p>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -14,7 +14,9 @@ var Metalsmith = require('metalsmith'),
 	Handlebars = require('handlebars'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
+    foldermenu = require('metalsmith-folder-menu'),
     imagemin = require('metalsmith-imagemin'),
+    paths = require('metalsmith-paths'),
 	Swag = require('swag');
 
 
@@ -103,9 +105,9 @@ var sitebuild = Metalsmith(__dirname)
 	      url: 'http://zebratechnologies.github.io/samples'
 	    }
 	  })
-    .use(function(files, metalsmith) {
-  console.log(files);
-})
+    .use(paths({
+        property: "path"
+    }))    
 	.use(metaUrl({
 		pattern: '*.md'
 	}))
@@ -146,6 +148,9 @@ var sitebuild = Metalsmith(__dirname)
         pattern: 'samples/emdk-for-xamarin/1-0',
         productVersionName: '1.0'
     }))
+    .use(foldermenu({
+        pattern: 'samples/emdk-for-android/',
+    }))
     .use(markdown({
 	  smartypants: true,
 	  gfm: true,
@@ -185,3 +190,4 @@ var sitebuild = Metalsmith(__dirname)
       console.log('Site build complete!');
     }
   });
+

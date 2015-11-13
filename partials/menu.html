@@ -1,0 +1,15 @@
+            <div class="row">
+                <div class="col-sm-12">
+                MENU
+                    <ul>
+                    {{#each this.menu}}
+                        <li><a href="{{this.url}}">{{this.title}}</a></li>
+                        <ul>
+                        {{#each this.items}}
+                            <li><a href="{{this.url}}">{{this.title}}</a></li>
+                        {{/each}}                        
+                        </ul>
+                    {{/each}}
+                    </ul>
+                </div>
+            </div>

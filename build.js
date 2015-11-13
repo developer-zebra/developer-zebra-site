@@ -103,6 +103,9 @@ var sitebuild = Metalsmith(__dirname)
 	      url: 'http://zebratechnologies.github.io/samples'
 	    }
 	  })
+    .use(function(files, metalsmith) {
+  console.log(files);
+})
 	.use(metaUrl({
 		pattern: '*.md'
 	}))

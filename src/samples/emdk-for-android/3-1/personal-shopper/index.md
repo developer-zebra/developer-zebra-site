@@ -2,8 +2,8 @@
 publish: true
 title: Personal Shopper
 description: This sample application will show how the Personal Shopper APIs can be used to interact with the MC18 Cradle programmatically.
-download: #
-source: #
+download: https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/PersonalShopperSample1.zip
+source: https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/PersonalShopperSample1
 features: 
   - Profile Manager
   - Simulscan

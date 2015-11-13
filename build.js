@@ -59,7 +59,7 @@ var findProductVersion = function(config) {
 
     return function(files, metalsmith, done) {
         for (var file in files) {
-            console.log(file);
+            // console.log(file);
             if (pattern.test(file)) {
                 var _f = files[file];
                 if (!_f.productversion) {
@@ -78,7 +78,7 @@ var metaUrl = function(config) {
         Object.keys(files).forEach(function (filepath) {
         // parent folder name
         	// if (pattern.test(files[filepath])) {
-        		console.log(filepath);
+        		// console.log(filepath);
 	        	files[filepath]['url'] = "/" + filepath.replace("index.md","");
         	// }
     	});

@@ -1,15 +1,39 @@
+<aside class="tree-sidebar">            
             <div class="row">
                 <div class="col-sm-12">
-                MENU
-                    <ul>
-                    {{#each this.menu}}
-                        <li><a href="{{this.url}}">{{this.title}}</a></li>
-                        <ul>
-                        {{#each this.items}}
-                            <li><a href="{{this.url}}">{{this.title}}</a></li>
-                        {{/each}}                        
+                    <div class="sidebar-container">
+                        <ul  class="" >
+                        {{#each this.menu}}
+                            <li class="active">
+                                {{#if this.items}}
+                                <span class="arrow"></span>
+                                {{/if}}
+                                <a href="/{{../this.menuroot}}{{this.url}}"><span>{{this.title}}</span></a> 
+                                {{#if this.items}}
+                                    <ul style="display:block;">
+                                    {{#each this.items}}
+                                        <li>
+                                            {{#if this.items}}
+                                            <span class="arrow"></span>
+                                            {{/if}}
+                                            <a href="/{{../../this.menuroot}}{{this.url}}"><span>{{this.title}}</span></a>
+                                            {{#if this.items}}
+                                                <ul >
+                                                {{#each this.items}}
+                                                    <li>
+                                                    <a href="/{{../../../this.menuroot}}{{this.url}}"><span>{{this.title}}</span></a>
+                                                    </li>
+                                                {{/each}}                        
+                                                </ul>
+                                            {{/if}}
+                                        </li>
+                                    {{/each}}                        
+                                    </ul>
+                                {{/if}}
+                            </li>
+                        {{/each}}
                         </ul>
-                    {{/each}}
-                    </ul>
+                    </div>
                 </div>
             </div>
+</aside>

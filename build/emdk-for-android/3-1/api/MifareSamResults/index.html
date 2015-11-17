@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer - Zebra  Technologies</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.transitions.css" rel="stylesheet">
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <link href="/css/prettify.css" rel="stylesheet">
+    <link href="/css/bootstrap-treenav.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/favicon.ico">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px"> <strong>Developer Samples</strong></span></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/samples"><i class="fa fa-download"></i> Samples</a></li>
+                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+    <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2></h2>
+                    <p>
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+        			<a class="btn btn-primary" href=""><i class="fa fa-download"></i> Download</a>
+        			<a class="btn btn-primary" href=""><i class="fa fa-github"></i> Source</a>
+                </div>
+            </div>
+        </div>
+    </section><!--/#cta-->
+
+    <section id="blog">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+	                    <div class="media service-box wow fadeInRight">
+	                        <div class="media-body">
+	                            <h4 class="media-heading">Product</h4>
+	                            <p>EMDK For Android - 3.1</p>
+	                        </div>
+	                    </div>
+	                    <div class="media service-box wow fadeInRight">
+	                        <div class="media-body">
+	                            <h4 class="media-heading">Devices</h4>
+	                            <p>
+	                            	
+	                            </p>
+	                        </div>
+	                    </div>
+	                    <div class="media service-box wow fadeInRight">
+	                        <div class="media-body">
+	                            <h4 class="media-heading"></h4>
+	                            <p></p><h3 id="mifaresamresults">MifareSamResults</h3>
+
+<p>Defines all the error codes the MifareSAM APIs returns. <br>
+ <br></p>
+
+<p><strong>Values:</strong></p>
+
+<ul>
+<li><p><strong>SUCCESS</strong> -Success</p></li>
+
+<li><p><strong>EMDK<em>NOT</em>OPENED</strong> -The EMDK is not opened.</p></li>
+
+<li><p><strong>NFC_DISABLED</strong> -NFC is disabled in settings, try enabling the NFC.</p></li>
+
+<li><p><strong>SAM<em>NOT</em>AVAILABLE</strong> -SAM not present in the device. Try inserting SAM before using the Secure NFC API.</p></li>
+
+<li><p><strong>FAILURE</strong> -Failure</p></li>
+
+<li><p><strong>ALREADY_CONNECTED</strong> -The SAM is already connected.</p></li>
+
+<li><p><strong>INVALID_VALUE</strong> -Invalid input parameter</p></li>
+
+<li><p><strong>INVALID_KEY</strong> -The key type or length is invalid.</p></li>
+
+<li><p><strong>PARAM<em>NOT</em>SUPPORTED</strong> -The parameter not supported.</p></li>
+
+<li><p><strong>NOT_CONNECTED</strong> -The SAM is not connected. Try calling connect before making other calls.</p></li>
+
+<li><p><strong>SAM<em>NOT</em>IN<em>AV1</em>MODE</strong> -The SAM is not in the AV1 mode.</p></li>
+
+<li><p><strong>SAM<em>NOT</em>IN<em>AV2</em>MODE</strong> -The SAM is not in the AV2 mode.</p></li>
+
+<li><p><strong>SAM<em>KEY</em>DISABLED</strong> -The specified SAM key is disabled.</p></li>
+
+<li><p><strong>INVALID<em>HOST</em>KEY</strong> -The key specified is not a host key</p></li>
+
+<li><p><strong>MEMORY_FAILURE</strong> -Memory failure (KUC could not be updated).</p></li>
+
+<li><p><strong>KEY<em>VER</em>NOT_FOUND</strong> -The key version is not found.</p></li>
+
+<li><p><strong>INVALID<em>KEY</em>ENTRY<em>OR</em>KUC</strong> -Referenced data is invalid for key entry or KUC (Key Usage Counters).</p></li>
+
+<li><p><strong>AUTH<em>COND</em>NOT_SATISFIED</strong> -SAM in AV1 mode: Key entry cannot be used for authentication, MIFARE SAM
+AV2 needs to be unlocked with key entry 00h first or KUC limit reached.</p>
+
+<p>SAM in AV2 mode: Key entry disabled, no Host Key type, startup host
+authentication accomplished, no lock/unlock key, not key zero, unlock key
+number and version mismatch, no AES key type, KUC limit exceeded or
+Unknown key type.</p></li>
+
+<li><p><strong>UNDEFINED</strong> -Error code not defined.</p></li>
+</ul><p></p>
+	                        </div>
+	                    </div>
+
+                    </div>
+                </div><!--/.col-sm-6-->
+                <div class="col-sm-6">
+                	<div class="row">
+                		<div class="col-sm-12">
+						    <section id="main-slider">
+						        <div class="owl-carousel">
+						        </div><!--/.owl-carousel-->
+						    </section><!--/#main-slider-->
+
+
+            			</div>
+                	</div>
+
+				</div>                
+            </div>
+        </div>
+    </section>    
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    © 2014 Zebra Technologies. 
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/bootstrap-treenav.min.js"></script>
+    <script src="/js/prettify.js"></script>
+   
+    <script src="/js/main.js"></script>
+
+
+</body></html>

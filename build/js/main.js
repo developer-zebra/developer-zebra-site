@@ -64,6 +64,7 @@ jQuery(function($) {'use strict';
 
 	//Slider
 	$(document).ready(function() {
+		prettyPrint();
 		var time = 7; // time in seconds
 
 	 	var $progressBar,
@@ -145,6 +146,38 @@ jQuery(function($) {'use strict';
 	      //start again
 	      start();
 	    }
+    addExpandableArrows();
+
+
+    bindTreeEvents($('.sidebar-container li'));
+
+    // Product switcher ------------------------------------------------------------------------- //
+
+    $('.sidebar-container li.product > a').on('click', function(e) {
+        e.preventDefault();
+        var li = $(e.target).parent();
+
+        if (li.hasClass('active')) {
+            return;
+        }
+
+        $('.sidebar-container li.product.active > ul').stop(true, true).show().slideUp({
+            duration: 400,
+            complete: recalcSidebar
+        });
+
+        $('.sidebar-container li').removeClass('active');
+        li.addClass('active');
+
+        li.find('> ul').stop(true, true).hide().slideDown({
+            duration: 400,
+            complete: recalcSidebar
+        });
+
+        recalcSidebar();
+    });
+
+
 	});
 
 	//Initiat WOW JS
@@ -233,3 +266,55 @@ jQuery(function($) {'use strict';
 
 
 });
+
+
+
+
+// more tree binding functions
+function addExpandableArrows() {
+    $('.sidebar-container li.expandable').each(function (item) {
+        $(this).not('>span.arrow').prepend('<span class="arrow"></span>');
+    });
+}
+function recalcSidebar() {
+    $(document.body).trigger("sticky_kit:recalc");
+}
+function bindTreeEvents(li) {
+    li.bind('tree_toggle', function(e) {
+
+        e.stopPropagation();
+
+        if ($(this).hasClass('active')) {
+            $(this).trigger('tree_collapse');
+        } else {
+            $(this).trigger('tree_expand');
+        }
+
+    }).bind('tree_collapse', function(e) {
+
+        e.stopPropagation();
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').find('> ul').stop(true, true).show().slideUp({
+                duration: 400,
+                complete: recalcSidebar
+            });
+        }
+
+    }).bind('tree_expand', function(e) {
+
+        e.stopPropagation();
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active').find('> ul').stop(true, true).hide().slideDown({
+                duration: 400,
+                complete: recalcSidebar
+            });
+        }
+
+    });
+
+    $('.sidebar-container li .arrow').on('click', function(e) {
+        var li = $(e.target).parent();
+        li.trigger('tree_toggle');
+        recalcSidebar();
+    });
+}

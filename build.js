@@ -1,6 +1,6 @@
 var Metalsmith = require('metalsmith'),
     branch = require('metalsmith-branch'),
-  	markdown   = require('metalsmith-markdown'),
+  	showdown   = require('metalsmith-showdown'),
     snippet   = require('metalsmith-snippet'),
     templates  = require('metalsmith-templates')
     Handlebars = require('handlebars'),
@@ -17,6 +17,7 @@ var Metalsmith = require('metalsmith'),
     foldermenu = require('metalsmith-folder-menu'),
     imagemin = require('metalsmith-imagemin'),
     paths = require('metalsmith-paths'),
+    codehighlight = require('metalsmith-code-highlight'),
 	Swag = require('swag');
 
 
@@ -71,6 +72,9 @@ var findProductVersion = function(config) {
     };
 };
 
+
+
+
 var metaUrl = function(config) {
 	var pattern = config.pattern;
 
@@ -121,15 +125,24 @@ var sitebuild = Metalsmith(__dirname)
 	        pattern: 'samples/**/*.md',
 	        sortBy: 'date',
 	        reverse: true
-	    },
-        apis: {
-            pattern: 'api/**/*.md'
-        }
+	    }
 
 	}))
     .use(findLayout({
         pattern: 'samples',
         layoutName: 'sample.html'
+    }))
+    .use(findLayout({
+        pattern: '[^/]+/[^/]+/api',
+        layoutName: 'api.html'
+    }))
+    .use(findLayout({
+        pattern: '[^/]+/[^/]+/guide',
+        layoutName: 'guide.html'
+    }))
+    .use(findLayout({
+        pattern: '[^/]+/[^/]+/tutorial',
+        layoutName: 'tutorial.html'
     }))
     .use(findProduct({
         pattern: 'samples/emdk-for-android',
@@ -151,14 +164,18 @@ var sitebuild = Metalsmith(__dirname)
         pattern: 'samples/emdk-for-xamarin/1-0',
         productVersionName: '1.0'
     }))
-    .use(foldermenu({
-        pattern: 'samples/emdk-for-android/',
+    .use(findProduct({
+        pattern: 'emdk-for-android',
+        productName: 'EMDK For Android'
     }))
-    .use(markdown({
-	  smartypants: true,
-	  gfm: true,
-	  tables: true
-	}))
+    .use(findProductVersion({
+        pattern: 'emdk-for-android/3-1',
+        productVersionName: '3.1'
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/'
+    }))
+    .use(showdown({}))
     .use(snippet({
       maxLength: 250,
       suffix: '...'
@@ -172,6 +189,9 @@ var sitebuild = Metalsmith(__dirname)
 	  // partials: 'partials',
 	  pattern: '**/*.html'
 	}))
+    .use(codehighlight({
+
+    }))
     .destination('./build')
     .use(serve({
         cache: 0

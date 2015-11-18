@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5
 
 Holds Matrix 2 of 5 configuration settings.
 
@@ -98,4 +97,5 @@ Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verif
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

@@ -1,7 +1,6 @@
 ---
 title: SimulScanReaderInfo
 ---
-#SimulScanReaderInfo
 
 SimulScanReaderInfo provides information of the reader device.
  
@@ -72,4 +71,5 @@ List of supported scanner device type.
 * **IMAGER** -The scanner device class is imager.
 
 * **UNDEFINED** -The scanner device class is not defined.
+
 

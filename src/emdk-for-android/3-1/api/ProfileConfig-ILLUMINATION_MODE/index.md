@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.ILLUMINATION_MODE
 ---
-###ProfileConfig.ILLUMINATION_MODE
 
 Turns camera illumination on and off.
  This option is only available when camera is selected in the Barcode input Scanner selection option.
@@ -21,4 +20,5 @@ Turns camera illumination on and off.
 * **OFF** -External illumination is always is off
 
 * **ON** -External illumination is always on
+
 

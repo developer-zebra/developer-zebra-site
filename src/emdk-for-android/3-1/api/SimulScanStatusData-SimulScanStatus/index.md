@@ -1,7 +1,6 @@
 ---
 title: ##SimulScanStatusData.SimulScanStatus
 ---
-###SimulScanStatusData.SimulScanStatus
 
 
 
@@ -18,4 +17,5 @@ title: ##SimulScanStatusData.SimulScanStatus
 * **ERROR** -Error occurred
 
 * **UNKNOWN** -Unknown status
+
 

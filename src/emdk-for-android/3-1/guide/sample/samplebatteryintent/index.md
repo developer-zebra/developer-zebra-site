@@ -1,7 +1,6 @@
 ---
 title:  Battery Intent Sample
 ---
-# Battery Intent Sample
 
 ## Overview
 On Symbol Android devices like the MC40, extra battery information can be retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html). Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information like:
@@ -45,8 +44,9 @@ You may choose to install the Battery Sample Application.apk or to run the proje
 
 
 ## How This Sample Was Built 
-A [Tutorial](../guide/tutorial/tutbatteryintent) walks through how this sample application was built. 
+A [Tutorial](/emdk-for-android/3-1/tutorial/tutbatteryintent) walks through how this sample application was built. 
 
 ## Download
 The project [source](https://s3.amazonaws.com/emdk/Tutorials/BatterySampleApplication.zip) and [application](https://s3.amazonaws.com/emdk/Tutorials/BatterySampleApplication.apk.zip) to this tutorial can be downloaded (Internet Connection Required).
 <a name="theend"></a>
+

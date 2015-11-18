@@ -1,13 +1,12 @@
 ---
 title:  Manage USB Configurations
 ---
-# Manage USB Configurations
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](../guide/profiles/usb) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](/emdk-for-android/3-1/guide/profiles/usb) feature of Mx.
  
-So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](../guide/profiles/usb) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
+So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](/emdk-for-android/3-1/guide/profiles/usb) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
         
 ###Prerequisites
 
@@ -21,17 +20,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxUSBManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](../guide/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The USB Manager Profile Feature
-1. Click [here](../guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "USBManagerProfile" as the Profile Name for this tutorial.
 
@@ -288,7 +287,7 @@ here is the remaining part:
 
 6. Let us declare the `updateUSBSettings` method that will enable or disable ADB USB based on `value` attribute that gets updated depending on user selected option from Radio Button. This method prepares the xml input for the `processProfile` method based on `value` attribute.
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

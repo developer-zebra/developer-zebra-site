@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Trioptic39
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams.Trioptic39
 
 Holds Trioptic39 configuration settings.
 
@@ -31,4 +30,5 @@ Sets the reader to read the bar code twice before accepting data. (default - ena
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

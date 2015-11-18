@@ -1,7 +1,6 @@
 ---
 title:  Battery Intent API Reference
 ---
-# Battery Intent API Reference
 
 ## Overview
 The purpose of this document is to describe the functionality of the Battery Intent API Interface. Its intended audience are Android developers. 
@@ -68,3 +67,4 @@ In addition to the battery information Android returns by default, which can be 
 		     
 		}  
 	} 
+

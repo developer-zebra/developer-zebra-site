@@ -1,13 +1,12 @@
 ---
 title:  Configure Device Browser using Browser Manager
 ---
-# Configure Device Browser using Browser Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](../guide/profiles/browser) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](../guide/profiles/browser) through Profile Wizard.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](/emdk-for-android/3-1/guide/profiles/browser) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](/emdk-for-android/3-1/guide/profiles/browser) through Profile Wizard.
 
-So now we will create a tutorial using Mx [Browser Manager](../guide/profiles/browser) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
+So now we will create a tutorial using Mx [Browser Manager](/emdk-for-android/3-1/guide/profiles/browser) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
 
 ###Prerequisites
 
@@ -21,20 +20,20 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: 1. Provide "BrowserManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4.  
 
-If you are using Android Studio, click [here](../guide/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
 > Note: Browser Manager feature requires Symbol devices with Android KitKat 4.4. So select `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK for this tutorial.
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
 
 
 ## Adding The Browser Manager Profile Feature
-1. Click [here](../guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "BrowserProfile" as the Profile Name for this tutorial.
 
@@ -225,7 +224,7 @@ When done, your AndroidManifest.xml should resemble the following:
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
@@ -432,3 +431,4 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BrowserManagerTutorial.zip).
+

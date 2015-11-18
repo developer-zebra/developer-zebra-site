@@ -1,7 +1,6 @@
 ---
 title: Scanner
 ---
-#Scanner
 
 Scanner class will represent and provides access to the physical scanner
  device.
@@ -356,4 +355,5 @@ List of supported trigger type
 * **SOFT_ALWAYS** -Soft trigger is used for all pending scans and for future reads
  issued. When this mode is set, the scan beam will come up
  automatically without having to press the trigger on the device.
+
 

@@ -1,7 +1,6 @@
 ---
 title: SimulScanTemplateElement
 ---
-#SimulScanTemplateElement
 
 The TemplateElement class represents elements nested directly under the tag in 
  an XML template file
@@ -31,4 +30,5 @@ Returns the region number of the element
 **Returns:**
 
 int
+
 

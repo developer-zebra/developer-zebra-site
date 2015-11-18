@@ -1,7 +1,6 @@
 ---
 title: DiagnosticException
 ---
-#DiagnosticException
 
 The methods of diagnostic API throws DiagnosticException when an error
  occurs.
@@ -21,3 +20,4 @@ Returns the DiagnosticResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.DiagnosticResults
+

@@ -1,19 +1,18 @@
 ---
 title:  Capture critical data from documents using SimulScan API
 ---
-# Capture critical data from documents using SimulScan API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [SimulScan APIs](../guide/reference/EMDKList?SimulScan%20APIs) introduced in EMDK V 3.1, to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
+This guide will walk you through creating an EMDK For Android application that will use [SimulScan APIs](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs) introduced in EMDK V 3.1, to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
 
-Different ways of capturing data from documents using [SimulScan API](../guide/reference/EMDKList?SimulScan%20APIs) are:
+Different ways of capturing data from documents using [SimulScan API](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs) are:
 
 * **Barcode** - Productivity gain by decoding multiple bar codes read with a single trigger pull.
 * **OCR (Optical Character Recognition)** - Automated data entry with character recognition [OCR].
 * **OMR (Optical Mark Recognition)** - Simplified workflow exceptions with checked mark recognition [OMR] and Signature presence detection.
 
-We discussed [SimulScan API](../guide/reference/EMDKList?SimulScan%20APIs) is used to capture above mentioned different types of data from documents. But what types of documents are these? Well, these documents are treated as templates where you know the position of the data that you need to capture. You mark positions of the data of your interest on a template and once you capture the document, SimulScan API would access to data at the positions you mentioned on the template.
+We discussed [SimulScan API](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs) is used to capture above mentioned different types of data from documents. But what types of documents are these? Well, these documents are treated as templates where you know the position of the data that you need to capture. You mark positions of the data of your interest on a template and once you capture the document, SimulScan API would access to data at the positions you mentioned on the template.
 
 **Templates:**
 
@@ -37,7 +36,7 @@ If the required number of fields are more, it could be painful to capture each a
 
 **Solution:**
 
-[SimulScan API](../guide/reference/EMDKList?SimulScan%20APIs) could come really handy here as it captures upto 10 barcodes in less than one second. So we will now create a tutorial that would use above form image to create a template and use this template to capture marked fields from that document populating on UI using [SimulScan APIs](../guide/reference/EMDKList?SimulScan%20APIs). This will let you know how to create your own template for capturing different fields from any particular document.
+[SimulScan API](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs) could come really handy here as it captures upto 10 barcodes in less than one second. So we will now create a tutorial that would use above form image to create a template and use this template to capture marked fields from that document populating on UI using [SimulScan APIs](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs). This will let you know how to create your own template for capturing different fields from any particular document.
  
         
 ###Prerequisites
@@ -114,16 +113,16 @@ This will install the license . For mass deployment, end customers would need to
 
 > Note: Provide "SimulScanTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](../guide/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
 > Note: Select `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK for this tutorial. 
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.   
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.   
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
@@ -166,9 +165,9 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 		import com.symbol.emdk.simulscan.SimulScanStatusData;  
 
     Then you must make the activity to implement following interfaces: 
-	* Implement [EMDKListener](../api/EMDKManager-EMDKListener) for using EMDKManager. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`. 
-	* Implement [SimulScanReader.DataListerner](../api/SimulScanReader-DataListerner), which is an interface for notifying client applications when the scan data is available. Override its `onData` method to receive the scanned data.
-	* Implement [SimulScanReader.StatusListerner](../api/SimulScanReader-StatusListerner), which is an interface for notifying client applications to notify scan events. Override its `onStatus` method to receive status of any SimulScan operation that would be performed in the application.
+	* Implement [EMDKListener](/emdk-for-android/3-1/api/EMDKManager-EMDKListener) for using EMDKManager. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`. 
+	* Implement [SimulScanReader.DataListerner](/emdk-for-android/3-1/api/SimulScanReader-DataListerner), which is an interface for notifying client applications when the scan data is available. Override its `onData` method to receive the scanned data.
+	* Implement [SimulScanReader.StatusListerner](/emdk-for-android/3-1/api/SimulScanReader-StatusListerner), which is an interface for notifying client applications to notify scan events. Override its `onStatus` method to receive status of any SimulScan operation that would be performed in the application.
 	* Implement [View.OnClickListener](http://developer.android.com/reference/android/view/View.OnClickListener.html) and override its `onClick` method to handle on click of buttons.
 	* Implement [AdapterView.OnItemSelectedListener](http://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html) and override its `onItemSelected` and `onNothingSelected` methods for handling spinner.
 
@@ -215,7 +214,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
           
         }      
     
-	We will now create some global variables to hold the instance objects of [EMDKManager](../api/EMDKManager), [SimulScanManager](../api/SimulScanManager) and [SimulScanReader](../api/SimulScanReader). These variables would be used throughout the code.
+	We will now create some global variables to hold the instance objects of [EMDKManager](/emdk-for-android/3-1/api/EMDKManager), [SimulScanManager](/emdk-for-android/3-1/api/SimulScanManager) and [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader). These variables would be used throughout the code.
 
     We will then add some UI elements starting with a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of SimulScan operation. The UI would have a [Spinner](http://developer.android.com/guide/topics/ui/controls/spinner.html) that would contain a list of SimulScan supported devices. The UI would also have two [Buttons](http://developer.android.com/guide/topics/ui/controls/button.html) to start and stop reading template.
 
@@ -342,7 +341,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
     ![img](images/SimulScanTutorialImages/on_create_added.jpg)
 	
 
-4. Get [EMDK Manager](../api/EMDKManager) and [SimulScanManager](../api/SimulScanManager) objects in the `onOpened` method and update the `StatusView` TextView.
+4. Get [EMDK Manager](/emdk-for-android/3-1/api/EMDKManager) and [SimulScanManager](/emdk-for-android/3-1/api/SimulScanManager) objects in the `onOpened` method and update the `StatusView` TextView.
 
 	Now get the list of SimulScan supported devices, iterate over it and set this list to the spinner that we have added in the UI followed by adding listener for this spinner.
 
@@ -394,9 +393,9 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 	![img](images/SimulScanTutorialImages/add_items_on_spinner_method.jpg)
 
-6. The user would select any SimulScan supported device from the list in spinner. So we need get that [SimulScanReader](../api/SimulScanReader) and initiate it. Since the user would select it from the spinner, we need to add our code in `onItemSelected` method of the spinner that we have already overridden.
+6. The user would select any SimulScan supported device from the list in spinner. So we need get that [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader) and initiate it. Since the user would select it from the spinner, we need to add our code in `onItemSelected` method of the spinner that we have already overridden.
 
-	So this code would get user selected [SimulScanReaderInfo](../api/SimulScanReaderInfo) from the spinner and pass it to `simulScanManager.get` to get the user selected [SimulScanReader](../api/SimulScanReader) object. This [SimulScanReader](../api/SimulScanReader) object represents the current SimulScan Reader device selected by user from the spinner of simulscan supported devices. We would then initialize or deinitialize this [SimulScanReader](../api/SimulScanReader) using respective methods. 
+	So this code would get user selected [SimulScanReaderInfo](/emdk-for-android/3-1/api/SimulScanReaderInfo) from the spinner and pass it to `simulScanManager.get` to get the user selected [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader) object. This [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader) object represents the current SimulScan Reader device selected by user from the spinner of simulscan supported devices. We would then initialize or deinitialize this [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader) using respective methods. 
 
 		:::java
 		// Initialize the selected Simul Scan device
@@ -574,7 +573,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 	
 	![img](images/SimulScanTutorialImages/set_current_config_method_2.jpg)
 
-10. In this step, we would add methods that would actually start (`readCurrentScanner`) and stop (`stopReadCurrentScanner`) reading templates with the help of [SimulScanReader](../api/SimulScanReader) instance for the current scanner that we created.
+10. In this step, we would add methods that would actually start (`readCurrentScanner`) and stop (`stopReadCurrentScanner`) reading templates with the help of [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader) instance for the current scanner that we created.
  
 	So lets add `readCurrentScanner` method first.
 
@@ -649,7 +648,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 12. Once we start scanning a template, we would get the template data in `onData` and status while executing scanning operations in `onStatus` methods respectively that have been overridden already but not handled yet.
 
-	So lets handle them starting with `onData` method, which is a callback method upon data availability. `onData` method contains [SimulScanData](../api/SimulScanData) object that has the scanned data of a template. We would add this object to simulScanDataList that we had created to use it while displaying data.
+	So lets handle them starting with `onData` method, which is a callback method upon data availability. `onData` method contains [SimulScanData](/emdk-for-android/3-1/api/SimulScanData) object that has the scanned data of a template. We would add this object to simulScanDataList that we had created to use it while displaying data.
 
 		:::java
 		// clear the SimulScanDataList before adding new scanned data
@@ -680,7 +679,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 14. You can see an error as we have not created a class `StatusDataRunnable` implementing runnable to update "StatusView" on UI thread.
 
-	Lets do that by creating a class implementing runnable and taking [SimulScanStatusData](../api/SimulScanStatusData) as an argument in constructor. `simulScanStatusData.getState()` would return you the current status of scanner, which would be updated on "StatusView" TextView.
+	Lets do that by creating a class implementing runnable and taking [SimulScanStatusData](/emdk-for-android/3-1/api/SimulScanStatusData) as an argument in constructor. `simulScanStatusData.getState()` would return you the current status of scanner, which would be updated on "StatusView" TextView.
 
 	Following is the code for `StatusDataRunnable` class:
 
@@ -746,7 +745,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 	![img](images/SimulScanTutorialImages/on_closed.jpg)  	       
       	
-	That's it!!! We are done with all the coding and configuration part that will let us scan the template stored in sdcard and display fields that we marked in the template, on Symbol device UI using [SimulScan APIs](../guide/reference/EMDKList?SimulScan%20APIs) introduced in EMDK V 3.1. Now let us run the application.
+	That's it!!! We are done with all the coding and configuration part that will let us scan the template stored in sdcard and display fields that we marked in the template, on Symbol device UI using [SimulScan APIs](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs) introduced in EMDK V 3.1. Now let us run the application.
  
 ## Running the Application
 
@@ -787,7 +786,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 	![img](images/SimulScanTutorialImages/parsed_data.png)
 
-	This illustrates how to access critical fields from a document using [SimulScan APIs](../guide/reference/EMDKList?SimulScan%20APIs) by creating its template from the [Template Builder](https://simulscan.zebra.com).
+	This illustrates how to access critical fields from a document using [SimulScan APIs](/emdk-for-android/3-1/guide/reference/EMDKList?SimulScan%20APIs) by creating its template from the [Template Builder](https://simulscan.zebra.com).
 
 
 ##Important Programming Tips##

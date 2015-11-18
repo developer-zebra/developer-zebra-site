@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.BaseDecoder
 ---
-#ScannerConfig.DecoderParams.BaseDecoder
 
 The BaseDecoder class is the parent decoder to all decoders and is
  inherited by all decoders.
@@ -21,4 +20,5 @@ Returns whether or not the Decoder is currently enabled.
 **Type:**
 
 boolean
+
 

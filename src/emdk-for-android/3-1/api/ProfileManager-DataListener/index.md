@@ -1,7 +1,6 @@
 ---
 title: ProfileManager.DataListener
 ---
-#ProfileManager.DataListener
 
 An interface for notifying client applications to notify processProfileAsync result.
 
@@ -22,4 +21,5 @@ resultData - ResultData object.
 **Returns:**
 
 void
+
 

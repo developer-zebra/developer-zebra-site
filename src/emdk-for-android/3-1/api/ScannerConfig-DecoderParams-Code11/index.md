@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.Code11
 ---
-#ScannerConfig.DecoderParams.Code11
 
 The Code11 class provides access to parameters that are available for
  the Code11 decoder.
@@ -90,4 +89,5 @@ Transmit Code 11 data with or without the check digit.
 **Type:**
 
 boolean
+
 

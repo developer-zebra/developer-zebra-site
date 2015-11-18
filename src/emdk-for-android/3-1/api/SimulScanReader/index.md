@@ -1,7 +1,6 @@
 ---
 title: SimulScanReader
 ---
-#SimulScanReader
 
 SimulScanReader class will represent and provides access to the physical Reader
  device.
@@ -274,4 +273,5 @@ statusListener - The StatusListerner callback object to be unregistered
 **Returns:**
 
 void
+
 

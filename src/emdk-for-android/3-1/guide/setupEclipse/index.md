@@ -1,7 +1,6 @@
 ---
 title:  EMDK For Android Setup (Eclipse)
 ---
-# EMDK For Android Setup (Eclipse)
 
 ## Install EMDK for Eclipse
 
@@ -263,3 +262,4 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 9. To verify, type any EMDK class/interface/method name (ex: EMDKListener) and press `F2`.
 
 	![img](images/setup/emdkJarAsLib06.png)
+

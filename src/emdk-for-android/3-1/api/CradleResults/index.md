@@ -1,7 +1,6 @@
 ---
 title: ##CradleResults
 ---
-###CradleResults
 
 Defines all the error codes the cradle API returns.
  <br><br>
@@ -29,4 +28,5 @@ Defines all the error codes the cradle API returns.
 * **INVALID_OBJECT** -Invalid Object
 
 * **UNDEFINED** -Error code not defined.
+
 

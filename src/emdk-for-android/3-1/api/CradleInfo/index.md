@@ -1,7 +1,6 @@
 ---
 title: CradleInfo
 ---
-#CradleInfo
 
 This class holds cradle information.
 
@@ -57,4 +56,5 @@ Return the firmware version of cradle.
 **Returns:**
 
 java.lang.String
+
 

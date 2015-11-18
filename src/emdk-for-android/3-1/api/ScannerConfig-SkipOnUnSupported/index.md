@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.SkipOnUnSupported
 ---
-###ScannerConfig.SkipOnUnSupported
 
 
 
@@ -14,4 +13,5 @@ title: ##ScannerConfig.SkipOnUnSupported
 * **UNSUPPORTED_VALUE** -Skips the only unsupported values and continues with next.
 
 * **ALL** -Skips both unsupported paramters and values and continues with next.
+
 

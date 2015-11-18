@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.ScanParams
 ---
-#ScannerConfig.ScanParams
 
 The ScanParams class provides access to scanning
  parameters that are available for all decoders. NOTE: When calling
@@ -121,3 +120,4 @@ Decoding LED Notification.
 **Type:**
 
 boolean
+

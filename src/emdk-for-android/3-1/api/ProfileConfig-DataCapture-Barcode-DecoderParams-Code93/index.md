@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code93
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams.Code93
 
 Holds Code93 configuration settings.
 
@@ -63,4 +62,5 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

@@ -1,7 +1,6 @@
 ---
 title: App Manager Profile Feature Sample
 ---
-#App Manager Profile Feature Sample
 
 ##Overview
 
@@ -16,13 +15,13 @@ The available actions are:
 This sample application will allow you to install, upgrade, and uninstall an application. 
 
 ##Prerequisites
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](../guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Using This Sample
 1. When the application starts it should look like the following.  
@@ -35,3 +34,4 @@ This sample application will allow you to install, upgrade, and uninstall an app
 4.  Check the status field.   
 	![img](images/samples/2_3.png)  
 	
+

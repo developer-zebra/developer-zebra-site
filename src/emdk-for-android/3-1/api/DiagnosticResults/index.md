@@ -1,7 +1,6 @@
 ---
 title: ##DiagnosticResults
 ---
-###DiagnosticResults
 
 Defines all the error codes the diagnostic API returns.
  <br><br>
@@ -19,4 +18,5 @@ Defines all the error codes the diagnostic API returns.
 * **INVALID_OBJECT** -Invalid Object
 
 * **UNDEFINED** -Error code not defined.
+
 

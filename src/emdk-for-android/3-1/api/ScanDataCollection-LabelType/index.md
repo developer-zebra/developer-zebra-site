@@ -1,7 +1,6 @@
 ---
 title: ##ScanDataCollection.LabelType
 ---
-###ScanDataCollection.LabelType
 
 List of label types of the scanner data
  
@@ -118,4 +117,5 @@ List of label types of the scanner data
 * **HANXIN** -The HANXIN symbology.
 
 * **UNDEFINED** -The Symbology is unknown or not defined.
+
 

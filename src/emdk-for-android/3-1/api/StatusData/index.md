@@ -1,7 +1,6 @@
 ---
 title: StatusData
 ---
-#StatusData
 
 This class provides the Status detail of ScanAndPair.
 
@@ -72,4 +71,5 @@ Defines the different states of the scan and pir/unpair.
   Call StatusData .getResult() for error information.
 
 * **UNDEFINED** -Undefined. This is the initial state.
+
 

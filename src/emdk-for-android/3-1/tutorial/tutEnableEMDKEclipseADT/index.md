@@ -1,7 +1,6 @@
 ---
 title:  Enabling the EMDK in Eclipse with ADT
 ---
-# Enabling the EMDK in Eclipse with ADT
 ## Overview
 
 This tutorial helps you enabling the EMDK API in your project created in Eclipse with ADT, so that you can access it in your application. This is going to be a common step for all the tutorials that use [EMDK for Android](https://developer.motorolasolutions.com/community/android/emdk) API. 

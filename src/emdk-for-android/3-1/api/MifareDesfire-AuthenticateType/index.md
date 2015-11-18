@@ -1,7 +1,6 @@
 ---
 title: ##MifareDesfire.AuthenticateType
 ---
-###MifareDesfire.AuthenticateType
 
 Authentication mode.
 
@@ -12,4 +11,5 @@ Authentication mode.
 * **ISO** -Authentication Type is ISO. Not supported.
 
 * **AES** -Authentication Type is AES. Not Supported
+
 

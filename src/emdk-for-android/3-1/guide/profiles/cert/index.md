@@ -1,14 +1,13 @@
 ---
 title:  Certificate Manager Profile Feature Reference
 ---
-# Certificate Manager Profile Feature Reference
 
 ## Overview
 
 The Cert Manager feature allows your application to install or uninstall certificates and initialize the Android key store. You can use digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. 
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/3-1/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/3-1/guide/profiles/usingwizard) for more information.
 
 ## Main Functionality
 
@@ -18,7 +17,7 @@ The name field is used by the EMDK to identify this particular feature parameter
 * Adjust System Clock
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/3-1/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/3-1/guide/profiles/usingwizard) for more information.
 
 ## Initialize Android Keystore
 When you initialize the Android keystore you create a new keystore replacing any previously existing one.  Before installing or uninstalling certificates, a keystore must exist. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile.
@@ -78,3 +77,4 @@ Provide the name(alias) that will uniquely identify the certificate. The key sto
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=CertMgr&os=All&embed=true"></iframe> 
+

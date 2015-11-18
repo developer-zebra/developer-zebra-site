@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code39
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams.Code39
 
 Holds Code39 configuration settings.
  
@@ -166,4 +165,5 @@ Options: Security level 0 , Security Level 1 , Security Level 2 and Security Lev
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
+
 

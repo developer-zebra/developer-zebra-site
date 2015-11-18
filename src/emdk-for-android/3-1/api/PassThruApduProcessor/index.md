@@ -1,7 +1,6 @@
 ---
 title: PassThruApduProcessor
 ---
-#PassThruApduProcessor
 
 This class is designed for the NFC applications to perform secure communication with the
  contact-less secure cards (tags) at the low level protocol. The audience of this class are 
@@ -204,4 +203,5 @@ Communication protocol between a SAM and tag.
 * **T0** -T-0 byte-oriented half duplex transmission protocol
 
 * **T1** -T-1 block-oriented half duplex transmission protocol
+
 

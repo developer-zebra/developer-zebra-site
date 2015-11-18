@@ -1,7 +1,6 @@
 ---
 title: SimulScanElement
 ---
-#SimulScanElement
 
 The SimulScanElement abstract class represents a processed SimulScanTemplateElement.
 
@@ -40,4 +39,5 @@ Returns the friendly name of this element
 **Returns:**
 
 java.lang.String
+
 

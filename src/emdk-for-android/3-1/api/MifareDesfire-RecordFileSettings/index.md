@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.RecordFileSettings
 ---
-#MifareDesfire.RecordFileSettings
 
 
 
@@ -34,4 +33,5 @@ Current number of records present in the file
 **Type:**
 
 int
+
 

@@ -1,10 +1,9 @@
 ---
 title:  Modifying Profiles With ProfileConfig API
 ---
-# Modifying Profiles With ProfileConfig API
 
 ## Overview
-This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](../api/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](../guide/profiles/profilekeystroke) feature of [EMDK Profiles](../guide/profiles/usingwizard).
+This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/3-1/api/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/3-1/guide/profiles/profilekeystroke) feature of [EMDK Profiles](/emdk-for-android/3-1/guide/profiles/usingwizard).
 
 ###Prerequisites###
 
@@ -18,17 +17,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "ModifyBarcodeProfileTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](../guide/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding a DataCapture Profile
-1. Click [here](../guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "ModifyBarcodeProfile" as the Profile Name for this tutorial.
 

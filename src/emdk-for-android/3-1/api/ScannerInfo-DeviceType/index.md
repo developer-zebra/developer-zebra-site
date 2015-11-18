@@ -1,7 +1,6 @@
 ---
 title: ##ScannerInfo.DeviceType
 ---
-###ScannerInfo.DeviceType
 
 List of supported scanner device types.
  
@@ -22,4 +21,5 @@ List of supported scanner device types.
 * **LASER** -The scanner device class is laser.
 
 * **UNDEFINED** -The scanner device class is not defined.
+
 

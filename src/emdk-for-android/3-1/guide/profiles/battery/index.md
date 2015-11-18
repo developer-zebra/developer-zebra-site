@@ -1,14 +1,13 @@
 ---
 title:  Battery Manager Profile Feature Reference
 ---
-# Battery Manager Profile Feature Reference
 
 ## Overview
 Zebra's Device batteries store information in their internal memory, for instance, the number of charge cycles a battery has accumulated.  Zebra's Android devices expose this through a battery settings menu that displays the accumulated information.  These Android devices are configured with a Decommission Threshold Value that is the maximum number of charge cycles a battery can accumulate before being flagged as a battery that should be replaced. Battery Manager allows the developer to modify that Decommission Threshold from its factory setting.
 
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/3-1/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/3-1/guide/profiles/usingwizard) for more information.
 
 ## Main Functionality
 
@@ -27,3 +26,4 @@ This setting would be used to modify the Decommissioned Threshold for Zebra Gift
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=BatteryMgr&os=All&embed=true"></iframe>
+

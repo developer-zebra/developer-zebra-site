@@ -1,7 +1,6 @@
 ---
 title: SimulScanReader.DataListerner
 ---
-#SimulScanReader.DataListerner
 
 An interface for notifying client applications when the scan data is
  available.
@@ -31,4 +30,5 @@ simulScanData
 **Returns:**
 
 void
+
 

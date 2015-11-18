@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.Upce1
 ---
-#ScannerConfig.DecoderParams.Upce1
 
 The Upce1 class provides access to parameters that are available for
  the Upce1 decoder.
@@ -33,4 +32,5 @@ Flag to enable conversion from UPCE1 to UPCA bar code. If this
 **Type:**
 
 boolean
+
 

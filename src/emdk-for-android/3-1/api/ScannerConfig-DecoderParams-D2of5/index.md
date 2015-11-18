@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.D2of5
 ---
-#ScannerConfig.DecoderParams.D2of5
 
 The D2OF5 class provides access to parameters that are available for
  the D2OF5 decoder.
@@ -55,4 +54,5 @@ Sets the reader to read the bar code twice before accepting data.
 **Type:**
 
 boolean
+
 

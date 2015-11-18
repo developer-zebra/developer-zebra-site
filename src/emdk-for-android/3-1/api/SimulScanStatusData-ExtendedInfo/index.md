@@ -1,7 +1,6 @@
 ---
 title: SimulScanStatusData.ExtendedInfo
 ---
-#SimulScanStatusData.ExtendedInfo
 
 This class allows access to extended status information. It is usually used to pass additional error information.
 
@@ -23,3 +22,4 @@ This class allows access to extended status information. It is usually used to p
 **Returns:**
 
 java.lang.String
+

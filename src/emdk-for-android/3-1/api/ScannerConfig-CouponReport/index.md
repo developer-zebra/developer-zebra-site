@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.CouponReport
 ---
-###ScannerConfig.CouponReport
 
 Supported Coupon modes
 
@@ -21,4 +20,5 @@ Supported Coupon modes
 
 * **BOTH** -Scanner will read both old coupon format as well as the new GS1
  DataBar coupon format
+
 

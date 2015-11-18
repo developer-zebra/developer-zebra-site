@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.Code128
 ---
-#ScannerConfig.DecoderParams.Code128
 
 The Code128 class provides access to parameters that are available
  for the Code128 decoder.
@@ -159,4 +158,5 @@ The scanner of fers four levels of decode security for Code 128
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
+
 

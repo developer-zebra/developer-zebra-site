@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.Keystroke
 ---
-#ProfileConfig.DataCapture.DataDelivery.Keystroke
 
 Holds Keystroke configuration settings.
 
@@ -62,4 +61,5 @@ Gets and Sets keystroke basic data formatting configuration object  ProfileConfi
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
+
 

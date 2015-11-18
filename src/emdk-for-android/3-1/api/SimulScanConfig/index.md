@@ -1,7 +1,6 @@
 ---
 title: SimulScanConfig
 ---
-#SimulScanConfig
 
 The SimulScanConfig class provides access to reader configuration settings.
  
@@ -94,4 +93,5 @@ Amount of time in milliseconds to wait before timing out processing.
 **Type:**
 
 int
+
 

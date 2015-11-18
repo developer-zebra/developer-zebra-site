@@ -1,7 +1,6 @@
 ---
 title: SimulScanStatusData
 ---
-#SimulScanStatusData
 
 SimulScanStatusData class provides access to reader status.
  
@@ -61,4 +60,5 @@ java.lang.String
 * **ERROR** -Error occurred
 
 * **UNKNOWN** -Unknown status
+
 

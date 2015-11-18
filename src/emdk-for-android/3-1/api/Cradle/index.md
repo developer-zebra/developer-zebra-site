@@ -1,7 +1,6 @@
 ---
 title: Cradle
 ---
-#Cradle
 
 Class to communicate with the MC18 cradle.
 
@@ -128,4 +127,5 @@ The field to access Cradle configuration.
 **Type:**
 
 com.symbol.emdk.personalshopper.CradleConfig
+
 

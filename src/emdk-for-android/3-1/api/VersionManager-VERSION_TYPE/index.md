@@ -1,7 +1,6 @@
 ---
 title: ##VersionManager.VERSION_TYPE
 ---
-###VersionManager.VERSION_TYPE
 
 All the version keys for  VersionManager#getVersion(VERSION_TYPE) are enumerated here.
  
@@ -20,4 +19,5 @@ All the version keys for  VersionManager#getVersion(VERSION_TYPE) are enumerated
 * **MX** -MX framework version
 
 * **BARCODE** -Barcode Scanner Framework version.
+
 

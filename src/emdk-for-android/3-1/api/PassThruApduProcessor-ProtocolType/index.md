@@ -1,7 +1,6 @@
 ---
 title: ##PassThruApduProcessor.ProtocolType
 ---
-###PassThruApduProcessor.ProtocolType
 
 Communication protocol between a SAM and tag.
  The protocolType is added for future use only.
@@ -17,4 +16,5 @@ Communication protocol between a SAM and tag.
 * **T0** -T-0 byte-oriented half duplex transmission protocol
 
 * **T1** -T-1 block-oriented half duplex transmission protocol
+
 

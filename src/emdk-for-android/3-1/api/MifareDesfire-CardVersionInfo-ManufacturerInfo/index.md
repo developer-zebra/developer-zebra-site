@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.CardVersionInfo.ManufacturerInfo
 ---
-#MifareDesfire.CardVersionInfo.ManufacturerInfo
 
 Manufacturer information
 
@@ -38,4 +37,5 @@ Production Month
 **Type:**
 
 java.lang.String
+
 

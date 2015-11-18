@@ -1,13 +1,12 @@
 ---
 title:  Specify Touch Mode using Mx Touch Manager
 ---
-# Specify Touch Mode using Mx Touch Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](../guide/profiles/touch) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](/emdk-for-android/3-1/guide/profiles/touch) feature of Mx. 
 
-So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using Mx [Touch Manager](../guide/profiles/touch) feature. 
+So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using Mx [Touch Manager](/emdk-for-android/3-1/guide/profiles/touch) feature. 
         
 ###Prerequisites
 
@@ -21,17 +20,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxTouchManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](../guide/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The Touch Manager Profile Feature
-1. Click [here](../guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "TouchManagerProfile" as the Profile Name for this tutorial.
 
@@ -209,7 +208,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

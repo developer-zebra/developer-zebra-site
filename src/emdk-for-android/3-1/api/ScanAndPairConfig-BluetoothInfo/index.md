@@ -1,7 +1,6 @@
 ---
 title: ScanAndPairConfig.BluetoothInfo
 ---
-#ScanAndPairConfig.BluetoothInfo
 
 This class is used by the ScanAndPairTool class. Specifies the Bluetooth related 
  information. The settings provided through this class are used for pairing/unpairing.
@@ -49,4 +48,5 @@ User supplied pin for bluetooth pairing. Passed as an argument during scanAndPai
 **Type:**
 
 java.lang.String
+
 

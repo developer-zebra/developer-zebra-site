@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.AppKeySettings
 ---
-#MifareDesfire.AppKeySettings
 
 
 
@@ -33,4 +32,5 @@ Cryptography method of whole application CRYPTO_DES_2K3DES (0x00)
 **Type:**
 
 byte
+
 

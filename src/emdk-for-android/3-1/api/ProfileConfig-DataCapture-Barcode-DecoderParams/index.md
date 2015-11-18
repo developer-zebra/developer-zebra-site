@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams
 
 Holds Decoder configuration settings.
 
@@ -302,4 +301,5 @@ Configures the UPCE1 Symbology object  ProfileConfig.DataCapture.Barcode.Decoder
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.VerifyCheckDigit
 ---
-###ScannerConfig.VerifyCheckDigit
 
 Check the integrity of all Code 11 symbols to verify that the data
  complies with the specified check digit algorithm. This selects the check
@@ -22,4 +21,5 @@ Check the integrity of all Code 11 symbols to verify that the data
 * **ONE** -Bar code contains one check digit.
 
 * **TWO** -Bar code contains two check digits.
+
 

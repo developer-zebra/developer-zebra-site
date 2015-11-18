@@ -1,7 +1,6 @@
 ---
 title: ##ScanAndPairConfig.DeviceIdentifier
 ---
-###ScanAndPairConfig.DeviceIdentifier
 
 Provides the list of DeviceIdentifier types.
 
@@ -17,4 +16,5 @@ Provides the list of DeviceIdentifier types.
  Bluetooth Imager before calling the ScanAndPair or ScanAndUnPair methods.
 
 * **DEFAULT** -Use default scanner. Depending on the mobile device, the first available scanner can be laser, imager or camera.
+
 

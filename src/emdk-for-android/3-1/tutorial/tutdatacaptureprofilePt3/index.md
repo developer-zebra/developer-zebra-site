@@ -1,20 +1,19 @@
 ---
 title:  Using Multiple Data Capture Profiles
 ---
-# Using Multiple Data Capture Profiles
 ## Developing an EMDK for Android Application Part 3
 
-This guide will walk you through adding MSR support and multiple profiles to the Android application you made using [Developing an EMDK for Android Application Part 2](../guide/tutorial/tutdatacaptureprofilePt2). This tutorial will add some more complexity by adding a second screen as well as adding a second Data Capture Profile.
+This guide will walk you through adding MSR support and multiple profiles to the Android application you made using [Developing an EMDK for Android Application Part 2](/emdk-for-android/3-1/tutorial/tutdatacaptureprofilePt2). This tutorial will add some more complexity by adding a second screen as well as adding a second Data Capture Profile.
 
 ###Prerequisites
 
 * Java Development Kit (JDK)
 * Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
 * EMDK for Android 
-* Completion of [Developing an EMDK for Android Application Part 1](../guide/tutorial/tutdatacaptureprofile)
-* Completion of [Developing an EMDK for Android Application Part 2](../guide/tutorial/tutdatacaptureprofilePt2)
+* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/3-1/guide/tutorial/tutdatacaptureprofile)
+* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/3-1/guide/tutorial/tutdatacaptureprofilePt2)
  
-For more information about setting up the EMDK please see the EMDK [Setup](../guide/setup).
+For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/3-1/guide/setup).
 
 ##Adding MSR Activity
 Let's start by defining a second activity for the application. This activity will be used to to activate a Data Capture profile that listens for MSR data.
@@ -412,7 +411,7 @@ Lastly we will run and test our application.
 7. Press return to go back to the MSR where you can swipe another card, or hit return again to go back to the main screen. 
 
 ## What's Next
-The [next tutorial](../guide/tutorial/tutdatacaptureprofilePt4) will show you how to use the Intent Output as a Broadcast instead of starting an activity.
+The [next tutorial](/emdk-for-android/3-1/guide/tutorial/tutdatacaptureprofilePt4) will show you how to use the Intent Output as a Broadcast instead of starting an activity.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingMultipleDataCaptureProfiles.zip).

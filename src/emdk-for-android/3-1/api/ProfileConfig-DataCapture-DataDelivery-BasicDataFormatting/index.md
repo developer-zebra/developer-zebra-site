@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
 ---
-#ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
 
 Holds Basic Data Formatting configuration settings.
 
@@ -132,4 +131,5 @@ Set to append an Enter character to the end of the processed data(default - disa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

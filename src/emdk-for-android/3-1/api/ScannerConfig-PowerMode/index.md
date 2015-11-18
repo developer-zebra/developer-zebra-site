@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.PowerMode
 ---
-###ScannerConfig.PowerMode
 
 Set laser scanner power mode
 
@@ -14,4 +13,5 @@ Set laser scanner power mode
 * **HIGH** -High power, and excellent performance.
 
 * **ALWAYS_ON** -Highest power, fastest performance.
+
 

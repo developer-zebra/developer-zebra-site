@@ -1,7 +1,6 @@
 ---
 title:  Persistence Manager Profile Feature Reference
 ---
-# Persistence Manager Profile Feature Reference
 
 ## Overview
 
@@ -11,7 +10,7 @@ The Persist Manager is used to create and remove persistent profile features. Th
 >Data Capture Manager profile features will not be persisted.
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/3-1/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/3-1/guide/profiles/usingwizard) for more information.
 
 ## Main Functionality
 
@@ -23,7 +22,7 @@ The name field is used by the EMDK to identify this particular feature parameter
 * Set if XML should Persist if Error
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/3-1/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/3-1/guide/profiles/usingwizard) for more information.
 
 ## Make Current XML Persistent
 This will make the specified Profile features persistent. The combination of Name, Version and Order will be used to 'identify' the profile set to be persisted. The same combination must be used when trying to remove the features from being persisted.
@@ -61,4 +60,5 @@ This problem can be fixed by reinstalling the EMDK Device Runtime Package on the
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=PersistMgr&os=All&embed=true"></iframe> 
+
 

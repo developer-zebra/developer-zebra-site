@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.CodeIdType
 ---
-###ScannerConfig.CodeIdType
 
 A Code ID character identifies the code type of a scanned bar code. This
  is useful when the reader is decoding more than one code type. Select a
@@ -22,4 +21,5 @@ A Code ID character identifies the code type of a scanned bar code. This
 * **AIM** -A standards based three character prefix.
 
 * **SYMBOL** -A Symbol defined single character prefix.
+
 

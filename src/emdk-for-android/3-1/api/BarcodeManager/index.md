@@ -1,7 +1,6 @@
 ---
 title: BarcodeManager
 ---
-#BarcodeManager
 
 This is the primary object to access the barcode scanning feature.
  
@@ -106,4 +105,5 @@ Defines specific scanner devices of each type.
 * **INTERNAL_LASER1**
 
 * **BLUETOOTH_IMAGER1**
+
 

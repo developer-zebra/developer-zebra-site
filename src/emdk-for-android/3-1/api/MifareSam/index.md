@@ -1,7 +1,6 @@
 ---
 title: MifareSam
 ---
-#MifareSam
 
 Provides access to MIFARE SAM properties and I/O operations on an SAM object.
  This class encapsulates all the methods required for authenticating the host
@@ -191,4 +190,5 @@ SAM modes
 * **AV2** -MIFARE SAM is in AV2 mode
 
 * **UNDEFINED** -MIFARE SAM is in invalid mode
+
 

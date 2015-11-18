@@ -1,7 +1,6 @@
 ---
 title: ##PassThruApduProcessor.VersionType
 ---
-###PassThruApduProcessor.VersionType
 
 The enum to get the Smart Card stack and connected Smart Card versions.
 
@@ -11,4 +10,5 @@ The enum to get the Smart Card stack and connected Smart Card versions.
  only after successful connection.
 
 * **SMART_CARD_STACK** -Retrieves the version of the smart card stack.
+
 

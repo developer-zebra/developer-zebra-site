@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.SecurityLevel
 ---
-###ScannerConfig.SecurityLevel
 
 The scanner offers four levels of decode security for UPC/EAN bar codes.
  Select higher security levels for lower quality bar codes. There is an
@@ -35,4 +34,5 @@ The scanner offers four levels of decode security for UPC/EAN bar codes.
  security can significantly impair the decoding ability of the
  scanner. If this level of security is necessary, try to improve the
  quality of the bar codes
+
 

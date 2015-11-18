@@ -1,7 +1,6 @@
 ---
 title: MifareDesfireExpection
 ---
-#MifareDesfireExpection
 
 The methods of MifareDesfire object throws MifareDesfireException when an error
  occurs.
@@ -22,3 +21,4 @@ Returns the MifareDesfireResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifareDesfireResults
+

@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
 ---
-#ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
 
 LaserSpecific class provides access to the laser scanner specific parameters.
 
@@ -74,4 +73,5 @@ Set scanner power mode.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.PowerMode
+
 

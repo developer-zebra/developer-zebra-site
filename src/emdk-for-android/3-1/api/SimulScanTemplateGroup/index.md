@@ -1,7 +1,6 @@
 ---
 title: SimulScanTemplateGroup
 ---
-#SimulScanTemplateGroup
 
 The SimulScanTemplateGroup class is a grouping of multiple SimulScanTemplateRegion items.
 
@@ -17,4 +16,5 @@ Returns a list of SimulScanTemplateRegion objects that represents a collection o
 **Returns:**
 
 java.util.List
+
 

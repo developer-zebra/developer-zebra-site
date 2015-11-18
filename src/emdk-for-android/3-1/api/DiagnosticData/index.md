@@ -1,7 +1,6 @@
 ---
 title: DiagnosticData
 ---
-#DiagnosticData
 
 The diagnostic data.
 
@@ -96,4 +95,5 @@ The manufacture date of the battery in the format year/mm/date.  Empty string is
 **Type:**
 
 java.lang.String
+
 

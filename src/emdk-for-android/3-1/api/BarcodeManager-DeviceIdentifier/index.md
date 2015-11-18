@@ -1,7 +1,6 @@
 ---
 title: ##BarcodeManager.DeviceIdentifier
 ---
-###BarcodeManager.DeviceIdentifier
 
 Defines specific scanner devices of each type.
 
@@ -16,4 +15,5 @@ Defines specific scanner devices of each type.
 * **INTERNAL_LASER1**
 
 * **BLUETOOTH_IMAGER1**
+
 

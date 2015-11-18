@@ -1,7 +1,6 @@
 ---
 title: MifareSam.SamInfo
 ---
-#MifareSam.SamInfo
 
 SAM information
 
@@ -46,4 +45,5 @@ byte
 **Type:**
 
 com.symbol.emdk.securenfc.MifareSam.SamMode
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##SecureNfcManager.TagTechType
 ---
-###SecureNfcManager.TagTechType
 
 NFC tag types.
 
@@ -16,4 +15,5 @@ NFC tag types.
 * **FELICA** -Felica Tag
 
 * **UNDEFINED** -Tag category is undefined
+
 

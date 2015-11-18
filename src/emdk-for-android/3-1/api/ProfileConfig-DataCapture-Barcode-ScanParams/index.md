@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.ScanParams
 ---
-#ProfileConfig.DataCapture.Barcode.ScanParams
 
 Holds scanning configuration settings.
 
@@ -202,4 +201,5 @@ Data Capture LED ID
 **Type:**
 
 int
+
 

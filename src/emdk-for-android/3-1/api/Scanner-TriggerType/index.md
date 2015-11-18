@@ -1,7 +1,6 @@
 ---
 title: ##Scanner.TriggerType
 ---
-###Scanner.TriggerType
 
 List of supported trigger type
 
@@ -17,4 +16,5 @@ List of supported trigger type
 * **SOFT_ALWAYS** -Soft trigger is used for all pending scans and for future reads
  issued. When this mode is set, the scan beam will come up
  automatically without having to press the trigger on the device.
+
 

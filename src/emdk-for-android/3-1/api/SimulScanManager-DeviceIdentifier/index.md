@@ -1,7 +1,6 @@
 ---
 title: ##SimulScanManager.DeviceIdentifier
 ---
-###SimulScanManager.DeviceIdentifier
 
 Defines scanner device identifier.
 
@@ -12,4 +11,5 @@ Defines scanner device identifier.
 * **INTERNAL_CAMERA1** -Use the internal camera
 
 * **INTERNAL_IMAGER1** -Use the internal imager
+
 

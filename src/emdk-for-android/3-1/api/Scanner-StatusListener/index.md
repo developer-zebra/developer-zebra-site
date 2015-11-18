@@ -1,7 +1,6 @@
 ---
 title: Scanner.StatusListener
 ---
-#Scanner.StatusListener
 
 An interface for notifying client applications to notify scan events.
  
@@ -30,4 +29,5 @@ statusData - StatusData object.
 **Returns:**
 
 void
+
 

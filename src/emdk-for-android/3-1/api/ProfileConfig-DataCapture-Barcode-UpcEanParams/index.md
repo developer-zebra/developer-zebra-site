@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.UpcEanParams
 ---
-#ProfileConfig.DataCapture.Barcode.UpcEanParams
 
 Holds Upc Ean Params configuration settings.
 
@@ -242,4 +241,5 @@ If this is set it converts DataBar bar codes to UPC/EAN format.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

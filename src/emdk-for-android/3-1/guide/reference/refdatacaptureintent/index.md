@@ -1,7 +1,6 @@
 ---
 title:  Data Capture Intent API Reference
 ---
-# Data Capture Intent API Reference
 ## Overview
 The purpose of this document is to describe the functionality of the Data Capture API. Its intended audience are Android developers. The Data Capture API is an application programming interface which provides a number of specific commands that another application can use to control certain aspects of data capture on Android devices.
  

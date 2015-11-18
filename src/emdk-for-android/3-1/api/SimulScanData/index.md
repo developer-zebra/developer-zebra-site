@@ -1,7 +1,6 @@
 ---
 title: SimulScanData
 ---
-#SimulScanData
 
 The SimulScanData object gives scanning result
 
@@ -69,4 +68,5 @@ Returns a list of scanned elements.
 **Returns:**
 
 java.util.List
+
 

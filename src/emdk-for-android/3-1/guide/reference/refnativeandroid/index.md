@@ -1,16 +1,15 @@
 ---
 title:  Using Native Android APIs
 ---
-# Using Native Android APIs
 
 ## Overview
 Symbol offers Android products that are built on Android Open Source Platform (AOSP). Two variants are now being offered on the TC55 and planned for certain future products.
 
 ### "Standard Configuration"
-This version of the operating system incorporates Google Mobile Services. All standard Google API's are available to use in your application. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](../guide/reference/EMDKList) as well.
+This version of the operating system incorporates Google Mobile Services. All standard Google API's are available to use in your application. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](/emdk-for-android/3-1/guide/reference/EMDKList) as well.
 
 ### "Professional Configuration" 
-This version of the operating system does not incorporate Google Mobile Services. Standard Google APIs that doe not rely on the availability of GMS services will work on our devices. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](../guide/reference/EMDKList) as well.
+This version of the operating system does not incorporate Google Mobile Services. Standard Google APIs that doe not rely on the availability of GMS services will work on our devices. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](/emdk-for-android/3-1/guide/reference/EMDKList) as well.
 
 ## About GMS
 Google offers a variety of applications and services collectively known as Google Mobile Services (GMS). There are also optional Android API extensions that allow applications to interface with said services. GMS is independent of Android and under a separate license from Google. GMS runs as an add-on above AOSP (Android Open Source Platform)
@@ -56,3 +55,4 @@ Depending on the feature your application requires, you my want to consider alte
 * Play Store
 	* Consider MDM solutions for application distribution.
 	* Consider cross-platform solutions like RhoGallery.
+

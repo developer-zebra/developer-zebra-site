@@ -1,7 +1,6 @@
 ---
 title: SimulScanGroup
 ---
-#SimulScanGroup
 
 The SimulScanGroup class represents a processed SimulScanTemplateGroup.
 
@@ -27,4 +26,5 @@ Returns additional processed data as an object of type Object
 **Returns:**
 
 java.lang.Object
+
 

@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.Ean8
 ---
-#ScannerConfig.DecoderParams.Ean8
 
 The Ean8 class provides access to parameters that are available for
  the Ean8 decoder.
@@ -15,4 +14,5 @@ Flag to convert EAN8 to EAN13.
 **Type:**
 
 boolean
+
 

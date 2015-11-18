@@ -1,7 +1,6 @@
 ---
 title: MifareSam.SamInfo.ManufacturerInfo
 ---
-#MifareSam.SamInfo.ManufacturerInfo
 
 Manufacturer information
 
@@ -30,4 +29,5 @@ Production Date
 **Type:**
 
 java.lang.String
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.AIM_TYPE
 ---
-###ProfileConfig.AIM_TYPE
 
 Describes the type of aiming to use.
 
@@ -20,4 +19,5 @@ Describes the type of aiming to use.
 * **TRIGGER** -Standard Trigger Mode
 
 * **CONTINUOUS_READ** -In this mode once the trigger is pulled the user can continue scanning barcodes without releasing the trigger. This mode is useful when the user wants to perform rapid scanning.
+
 

@@ -1,10 +1,9 @@
 ---
 title: Extended Status Information User Guide
 ---
-#Extended Status Information User Guide
 
 ##Introduction 
-The [EMDKResults](../api/EMDKResults) class exposes an Enum ( EXTENDED_STATUS_CODE ). Inspecting that Enum after a profile has been processed could provide detailed error information that may have occured while being processed. 
+The [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) class exposes an Enum ( EXTENDED_STATUS_CODE ). Inspecting that Enum after a profile has been processed could provide detailed error information that may have occured while being processed. 
 
 
 ### Section of EMDKConfig.xml

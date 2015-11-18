@@ -1,7 +1,6 @@
 ---
 title:  Battery Intent Tutorial
 ---
-# Battery Intent Tutorial
 
 ## Overview
 On Symbol devices like the MC40, extra battery information can be retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html). Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information like:
@@ -23,7 +22,7 @@ On Symbol devices like the MC40, extra battery information can be retrieved usin
 	registerReceiver(mIntent_Receiver,mIntentFilter);  
 
 ## Processing The Data
-In the below code we are getting the Symbol specific battery information provided by the [Battery Intent](../guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
+In the below code we are getting the Symbol specific battery information provided by the [Battery Intent](/emdk-for-android/3-1/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
 
 	:::java
 	public void onReceive(Context context, Intent intent) {      
@@ -39,4 +38,4 @@ In the below code we are getting the Symbol specific battery information provide
 	} 
 
 ## Downloading the Sample
-Download the source for this project in the [associated sample](../guide/sample/samplebatteryintent).
+Download the source for this project in the [associated sample](/emdk-for-android/3-1/guide/sample/samplebatteryintent).

@@ -1,7 +1,6 @@
 ---
 title: ##MifarePlusSL3Results
 ---
-###MifarePlusSL3Results
 
 
 
@@ -50,4 +49,5 @@ title: ##MifarePlusSL3Results
 * **PARAM_NOT_SUPPORTED** -The parameter not supported.
 
 * **UNDEFINED** -Undefined
+
 

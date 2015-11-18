@@ -1,7 +1,6 @@
 ---
 title: Using the EMDK Samples with Android Studio
 ---
-#Using the EMDK Samples with Android Studio
 
 ##Loading the Sample Application
 Sample Applications are installed along with the EMDK and can be found in your start bar. 
@@ -46,4 +45,5 @@ Sample Applications are installed along with the EMDK and can be found in your s
  Android studio will push the application to your device via USB and start the main activity.
 
  ![img](images/sample/BarcodeSample1_screen.png)
+
 

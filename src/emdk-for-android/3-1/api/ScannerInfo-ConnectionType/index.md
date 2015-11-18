@@ -1,7 +1,6 @@
 ---
 title: ##ScannerInfo.ConnectionType
 ---
-###ScannerInfo.ConnectionType
 
 List of supported scanner connection types.
  
@@ -24,4 +23,5 @@ List of supported scanner connection types.
 * **USB** -The scanner device connected via USB to the mobile device.
 
 * **UNDEFINED** -Connection type is not defined.
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.CheckDigit
 ---
-###ScannerConfig.CheckDigit
 
 The number of check digits to be verified. With MSI symbols, one check
  digit is mandatory and always verified by the reader. The second check
@@ -20,4 +19,5 @@ The number of check digits to be verified. With MSI symbols, one check
 * **ONE** -Verify one check digit.
 
 * **TWO** -Verify two check digits.
+
 

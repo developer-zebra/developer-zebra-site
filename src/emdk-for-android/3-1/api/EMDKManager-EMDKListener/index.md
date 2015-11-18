@@ -1,7 +1,6 @@
 ---
 title: EMDKManager.EMDKListener
 ---
-#EMDKManager.EMDKListener
 
 This is the interface for the callback to notify the opening and closing status of the EMDK.
  On a successful opening, the EMDKManager object will be returned.
@@ -68,4 +67,5 @@ Called to notify the client that this EMDKManager object has been abruptly close
 **Returns:**
 
 void
+
 

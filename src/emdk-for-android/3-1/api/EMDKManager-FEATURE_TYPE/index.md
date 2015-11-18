@@ -1,7 +1,6 @@
 ---
 title: ##EMDKManager.FEATURE_TYPE
 ---
-###EMDKManager.FEATURE_TYPE
 
 This lists all the features exposed by the EMDK.
  
@@ -30,4 +29,5 @@ This lists all the features exposed by the EMDK.
 * **PERSONALSHOPPER** -EMDK feature type for Personal Self Shopper Device
 
 * **SECURENFC** -EMDK feature type to access the Secure Nfc
+
 

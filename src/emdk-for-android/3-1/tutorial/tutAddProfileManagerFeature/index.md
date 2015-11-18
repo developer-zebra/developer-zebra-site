@@ -1,7 +1,6 @@
 ---
 title:  Adding features to Profile Manager
 ---
-# Adding features to Profile Manager
 
 ## Overview
 This tutorial helps you adding different features using Profile Manager to your newly created or existing Profile for any [EMDK for Android](https://developer.motorolasolutions.com/community/android/emdk) application. Creation of Profile is going to be a common step for all the tutorials that use [EMDK for Android](https://developer.motorolasolutions.com/community/android/emdk) API except their "targeted features" for the respective tutorials.
@@ -27,3 +26,4 @@ This tutorial helps you adding different features using Profile Manager to your 
 	![img](images/AddProfileManagerFeatureImage/profile_editor_4.3.jpg) 
 
 7. The Profile Manager wizard provides various features, one of them being Data Capture for capturing Barcode, MSR data in your application and many Mx features (Ex. Wireless Manager, Clock Manager, Access Manager, Browser Manager, Encrypt Manager etc.) for configuring your Symbol device based on requirements.
+

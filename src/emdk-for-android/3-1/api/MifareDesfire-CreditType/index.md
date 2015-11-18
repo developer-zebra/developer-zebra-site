@@ -1,7 +1,6 @@
 ---
 title: ##MifareDesfire.CreditType
 ---
-###MifareDesfire.CreditType
 
 
 
@@ -11,4 +10,5 @@ title: ##MifareDesfire.CreditType
 
 * **LIMITED** -Limited increase of a value without having full Read&Write
  permissions to the file
+
 

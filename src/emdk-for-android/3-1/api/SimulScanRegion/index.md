@@ -1,7 +1,6 @@
 ---
 title: SimulScanRegion
 ---
-#SimulScanRegion
 
 The SimulScanRegion class represents a processed SimulScanTemplateRegion.
 
@@ -58,4 +57,5 @@ Returns the processed data.
 **Returns:**
 
 java.lang.Object
+
 

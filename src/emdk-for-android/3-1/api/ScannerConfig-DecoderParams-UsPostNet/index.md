@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.UsPostNet
 ---
-#ScannerConfig.DecoderParams.UsPostNet
 
 The UsPostNet class provides access to parameters that are available
  for the UsPostNet decoder.
@@ -15,4 +14,5 @@ Flag to enable reporting the bar code check digit.
 **Type:**
 
 boolean
+
 

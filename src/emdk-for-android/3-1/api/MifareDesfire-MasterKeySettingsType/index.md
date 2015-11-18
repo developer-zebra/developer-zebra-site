@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.MasterKeySettingsType
 ---
-#MifareDesfire.MasterKeySettingsType
 
 Master key setting type
 
@@ -55,4 +54,5 @@ Access rights for changing application keys (ChangeKey command) 00:
 **Type:**
 
 byte
+
 

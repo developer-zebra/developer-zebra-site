@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.SupplementalMode
 ---
-###ScannerConfig.SupplementalMode
 
 Supplemental modes
 
@@ -58,4 +57,5 @@ Supplemental modes
  barcode not starting with 977. Tries to scan the supplemental if it
  is present. If the supplemental scanning failed, then the main bar
  code is returned.
+
 

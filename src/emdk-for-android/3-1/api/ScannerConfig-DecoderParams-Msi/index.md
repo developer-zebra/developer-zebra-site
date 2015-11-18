@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.Msi
 ---
-#ScannerConfig.DecoderParams.Msi
 
 The Msi class provides access to parameters that are available for
  the Msi decoder.
@@ -107,4 +106,5 @@ Transmit MSI data with or without the check digit.
 **Type:**
 
 boolean
+
 

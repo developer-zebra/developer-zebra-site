@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.ENABLED_STATE
 ---
-###ProfileConfig.ENABLED_STATE
 
 Enable states
 
@@ -20,4 +19,5 @@ Enable states
 * **FALSE** -Disabled
 
 * **TRUE** -Enabled
+
 

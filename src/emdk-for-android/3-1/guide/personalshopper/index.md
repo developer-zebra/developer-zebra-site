@@ -1,7 +1,6 @@
 ---
 title: Personal Shopper Programmer's Guide
 ---
-#Personal Shopper Programmer's Guide
 
 ##Introduction
 The EMDK for Android provides developers with a set of tools to easily create Personal shopper applications for use with the MC18 enterprise mobility device
@@ -177,3 +176,4 @@ To get Diagnostic Parameters like Battery state of health, State of charge , Tim
     }catch (DiagnosticException e) {
            e.printStackTrace();
     }
+

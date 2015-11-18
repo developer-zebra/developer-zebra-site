@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.POWER_MODE
 ---
-###ProfileConfig.POWER_MODE
 
 Sets the scanner power mode.
 
@@ -24,4 +23,5 @@ Sets the scanner power mode.
 * **HIGH** -High power, and excellent performance.
 
 * **ALWAYS_ON** -Highest power, fastest performance.
+
 

@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig
 ---
-#ScannerConfig
 
 The ScannerConfig class provides access to scanner configuration settings.
 
@@ -620,4 +619,5 @@ Set laser scanner power mode
 * **UNSUPPORTED_VALUE** -Skips the only unsupported values and continues with next.
 
 * **ALL** -Skips both unsupported paramters and values and continues with next.
+
 

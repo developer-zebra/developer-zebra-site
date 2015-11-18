@@ -1,7 +1,6 @@
 ---
 title: ScanAndPairConfig
 ---
-#ScanAndPairConfig
 
 The ScanAndPairConfig class provides a way to configure the settings to use it in scanAndPair() or scanAnUnpair() methods.
  These settings must be done before calling the scanAndPair() or scanAnUnpair() methods and do not modify the this while the 
@@ -117,4 +116,5 @@ Provides the list of supported trigger types.
 * **SOFT** -Scanner is turned ON automatically and no need to press any triggers
 
 * **HARD** -Hardware trigger needs to be manually pressed to turn ON the scanner
+
 

@@ -1,7 +1,6 @@
 ---
 title: SecureNfcManager
 ---
-#SecureNfcManager
 
 This class provides access to obtain the object to communicate with the
  Secure Access Module (SAM).
@@ -131,4 +130,5 @@ NFC tag types.
 * **FELICA** -Felica Tag
 
 * **UNDEFINED** -Tag category is undefined
+
 

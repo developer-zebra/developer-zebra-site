@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific
 ---
-#ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific
 
 CameraSpecific class provides access to the camera scanner specific parameters.
 
@@ -100,4 +99,5 @@ Configures the Viewfinder modes supported for camera scanning.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ViewFinderMode
+
 

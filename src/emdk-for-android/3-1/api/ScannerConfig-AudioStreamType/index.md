@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.AudioStreamType
 ---
-###ScannerConfig.AudioStreamType
 
 Volume slider type for decode audio feedback.
 
@@ -12,4 +11,5 @@ Volume slider type for decode audio feedback.
 * **MEDIA** -Music and Media.
 
 * **ALARAMS** -Alarms.
+
 

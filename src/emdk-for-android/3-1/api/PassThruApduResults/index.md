@@ -1,7 +1,6 @@
 ---
 title: ##PassThruApduResults
 ---
-###PassThruApduResults
 
 APDU Service errors
 
@@ -70,4 +69,5 @@ APDU Service errors
 * **EMDK_NOT_OPENED** -EMDK is not opened.
 
 * **UNDEFINED** -Error code not defined.
+
 

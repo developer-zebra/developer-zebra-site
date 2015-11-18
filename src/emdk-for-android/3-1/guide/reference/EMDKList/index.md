@@ -1,156 +1,155 @@
 ---
 title: EMDK For Android API List
 ---
-#EMDK For Android API List
 
 ## Core and ProfileManager APIs
-The following APIs are to be used to process EMDK features and profiles using the [Profile Manager](../guide/profiles/usingwizard) as well as getting information about the EMDK.
+The following APIs are to be used to process EMDK features and profiles using the [Profile Manager](/emdk-for-android/3-1/guide/profiles/usingwizard) as well as getting information about the EMDK.
 
 ###EMDKBase
-* [EMDKBase](../api/EMDKBase)
+* [EMDKBase](/emdk-for-android/3-1/api/EMDKBase)
 
 ###EMDKManager
-* [EMDKManager](../api/EMDKManager)
-* [EMDKManager.EMDKListener](../api/EMDKManager-EMDKListener)
+* [EMDKManager](/emdk-for-android/3-1/api/EMDKManager)
+* [EMDKManager.EMDKListener](/emdk-for-android/3-1/api/EMDKManager-EMDKListener)
 
 ###EMDKResults
-* [EMDKResults](../api/EMDKResults)
+* [EMDKResults](/emdk-for-android/3-1/api/EMDKResults)
 
 ###ProfileConfig
-* [ProfileConfig](../api/ProfileConfig)
-* [ProfileConfig.ActivitySelection](../api/ProfileConfig-ActivitySelection)
-* [ProfileConfig.ActivitySelection.ActivityElement](../api/ProfileConfig-ActivitySelection-ActivityElement)
-* [ProfileConfig.DataCapture](../api/ProfileConfig-DataCapture)
-* [ProfileConfig.DataCapture.Barcode](../api/ProfileConfig-DataCapture-Barcode)
-* [ProfileConfig.DataCapture.Barcode.Decoders](../api/ProfileConfig-DataCapture-Barcode-Decoders)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams](../api/ProfileConfig-DataCapture-Barcode-DecoderParams)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Codabar)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code11](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code11)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code128](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code128)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code39](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code39)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code93](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code93)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Composite_AB](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Composite_AB)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Discrete_2of5)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Interleaved_2of5)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-Matrix_2of5)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.MSI](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-MSI)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.UK_Postal](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-UK_Postal)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.UPCA](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-UPCA)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE0](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE0)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE1)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.USPlanet](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-USPlanet)
-* [ProfileConfig.DataCapture.Barcode.DecoderParams.USPostnet](../api/ProfileConfig-DataCapture-Barcode-DecoderParams-USPostnet)
-* [ProfileConfig.DataCapture.Barcode.ReaderParams](../api/ProfileConfig-DataCapture-Barcode-ReaderParams)
-* [ProfileConfig.DataCapture.Barcode.ScanParams](../api/ProfileConfig-DataCapture-Barcode-ScanParams)
-* [ProfileConfig.DataCapture.Barcode.UpcEanParams](../api/ProfileConfig-DataCapture-Barcode-UpcEanParams)
-* [ProfileConfig.DataCapture.MSR](../api/ProfileConfig-DataCapture-MSR)
-* [ProfileConfig.DataCapture.DataDelivery](../api/ProfileConfig-DataCapture-DataDelivery)
-* [ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting](../api/ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting)
-* [ProfileConfig.DataCapture.DataDelivery.Intent](../api/ProfileConfig-DataCapture-DataDelivery-Intent)
-* [ProfileConfig.DataCapture.DataDelivery.Keystroke](../api/ProfileConfig-DataCapture-DataDelivery-Keystroke)
+* [ProfileConfig](/emdk-for-android/3-1/api/ProfileConfig)
+* [ProfileConfig.ActivitySelection](/emdk-for-android/3-1/api/ProfileConfig-ActivitySelection)
+* [ProfileConfig.ActivitySelection.ActivityElement](/emdk-for-android/3-1/api/ProfileConfig-ActivitySelection-ActivityElement)
+* [ProfileConfig.DataCapture](/emdk-for-android/3-1/api/ProfileConfig-DataCapture)
+* [ProfileConfig.DataCapture.Barcode](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode)
+* [ProfileConfig.DataCapture.Barcode.Decoders](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-Decoders)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Codabar)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code11](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code11)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code128](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code128)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code39](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code39)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Code93](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Code93)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Composite_AB](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Composite_AB)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Discrete_2of5)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Interleaved_2of5)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-Matrix_2of5)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.MSI](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-MSI)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.UK_Postal](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-UK_Postal)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.UPCA](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-UPCA)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE0](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE0)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE1)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.USPlanet](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-USPlanet)
+* [ProfileConfig.DataCapture.Barcode.DecoderParams.USPostnet](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-DecoderParams-USPostnet)
+* [ProfileConfig.DataCapture.Barcode.ReaderParams](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-ReaderParams)
+* [ProfileConfig.DataCapture.Barcode.ScanParams](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-ScanParams)
+* [ProfileConfig.DataCapture.Barcode.UpcEanParams](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-Barcode-UpcEanParams)
+* [ProfileConfig.DataCapture.MSR](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-MSR)
+* [ProfileConfig.DataCapture.DataDelivery](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-DataDelivery)
+* [ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting)
+* [ProfileConfig.DataCapture.DataDelivery.Intent](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-DataDelivery-Intent)
+* [ProfileConfig.DataCapture.DataDelivery.Keystroke](/emdk-for-android/3-1/api/ProfileConfig-DataCapture-DataDelivery-Keystroke)
 
 ###ProfileManager
-* [ProfileManager](../api/ProfileManager)
-* [ProfileManager.DataListener](../api/ProfileManager-DataListener)
-* [ProfileManager.ResultData](../api/ProfileManager-ResultData)
+* [ProfileManager](/emdk-for-android/3-1/api/ProfileManager)
+* [ProfileManager.DataListener](/emdk-for-android/3-1/api/ProfileManager-DataListener)
+* [ProfileManager.ResultData](/emdk-for-android/3-1/api/ProfileManager-ResultData)
 
 ###VersionManager
-* [VersionManager](../api/VersionManager)
+* [VersionManager](/emdk-for-android/3-1/api/VersionManager)
 
 
 
 ## Barcode APIs
-The following APIs are used when you wish to handle all barcode scanning entirely in Java. These API's work independently of any [Data Capture profiles.](../guide/profiles/profilebarcode)
+The following APIs are used when you wish to handle all barcode scanning entirely in Java. These API's work independently of any [Data Capture profiles.](/emdk-for-android/3-1/guide/profiles/profilebarcode)
 
 ###BarcodeManager
-* [BarcodeManager](../api/BarcodeManager)
-* [BarcodeManager.ScannerConnectionListener](../api/BarcodeManager-ScannerConnectionListener)
-* [BarcodeManager.ScannerConnectionListener.ConnectionStatus](../api/BarcodeManager-ScannerConnectionListener-ConnectionStatus)
+* [BarcodeManager](/emdk-for-android/3-1/api/BarcodeManager)
+* [BarcodeManager.ScannerConnectionListener](/emdk-for-android/3-1/api/BarcodeManager-ScannerConnectionListener)
+* [BarcodeManager.ScannerConnectionListener.ConnectionStatus](/emdk-for-android/3-1/api/BarcodeManager-ScannerConnectionListener-ConnectionStatus)
 
 <!--
 ###Collection
-* [Collection.ScanData](../api/Collection-ScanData)
+* [Collection.ScanData](/emdk-for-android/3-1/api/Collection-ScanData)
 -->
 
 ###InterfaceConfig
-* [InterfaceConfig](../api/InterfaceConfig)
+* [InterfaceConfig](/emdk-for-android/3-1/api/InterfaceConfig)
 
 ###ScanDataCollection
-* [ScanDataCollection](../api/ScanDataCollection)
+* [ScanDataCollection](/emdk-for-android/3-1/api/ScanDataCollection)
 
 
 ###Scanner
-* [Scanner](../api/Scanner)
-* [Scanner.DataListener](../api/Scanner-DataListener)
-* [Scanner.StatusListener](../api/Scanner-StatusListener)
+* [Scanner](/emdk-for-android/3-1/api/Scanner)
+* [Scanner.DataListener](/emdk-for-android/3-1/api/Scanner-DataListener)
+* [Scanner.StatusListener](/emdk-for-android/3-1/api/Scanner-StatusListener)
 
 ###ScannerResults
-* [ScannerResults](../api/ScannerResults)
+* [ScannerResults](/emdk-for-android/3-1/api/ScannerResults)
 
 ###ScannerConfig
-* [ScannerConfig](../api/ScannerConfig)
-* [ScannerConfig.DecoderParams](../api/ScannerConfig-DecoderParams)
-* [ScannerConfig.DecoderParams.AustralianPostal](../api/ScannerConfig-DecoderParams-AustralianPostal)
-* [ScannerConfig.DecoderParams.Aztec](../api/ScannerConfig-DecoderParams-Aztec)
-* [ScannerConfig.DecoderParams.BaseDecoder](../api/ScannerConfig-DecoderParams-BaseDecoder)
-* [ScannerConfig.DecoderParams.CanadianPostal](../api/ScannerConfig-DecoderParams-CanadianPostal)
-* [ScannerConfig.DecoderParams.Chinese2of5](../api/ScannerConfig-DecoderParams-Chinese2of5)
-* [ScannerConfig.DecoderParams.CodaBar](../api/ScannerConfig-DecoderParams-CodaBar)
-* [ScannerConfig.DecoderParams.Code11](../api/ScannerConfig-DecoderParams-Code11)
-* [ScannerConfig.DecoderParams.Code128](../api/ScannerConfig-DecoderParams-Code128)
-* [ScannerConfig.DecoderParams.Code39](../api/ScannerConfig-DecoderParams-Code39)
-* [ScannerConfig.DecoderParams.Code93](../api/ScannerConfig-DecoderParams-Code93)
-* [ScannerConfig.DecoderParams.CompositeAB](../api/ScannerConfig-DecoderParams-CompositeAB)
-* [ScannerConfig.DecoderParams.CompositeC](../api/ScannerConfig-DecoderParams-CompositeC)
-* [ScannerConfig.DecoderParams.D2of5](../api/ScannerConfig-DecoderParams-D2of5)
-* [ScannerConfig.DecoderParams.DataMatrix](../api/ScannerConfig-DecoderParams-DataMatrix)
-* [ScannerConfig.DecoderParams.DutchPostal](../api/ScannerConfig-DecoderParams-DutchPostal)
-* [ScannerConfig.DecoderParams.Ean13](../api/ScannerConfig-DecoderParams-Ean13)
-* [ScannerConfig.DecoderParams.Ean8](../api/ScannerConfig-DecoderParams-Ean8)
-* [ScannerConfig.DecoderParams.Gs1Databar](../api/ScannerConfig-DecoderParams-Gs1Databar)
-* [ScannerConfig.DecoderParams.Gs1DatabarExp](../api/ScannerConfig-DecoderParams-Gs1DatabarExp)
-* [ScannerConfig.DecoderParams.Gs1DatabarLim](../api/ScannerConfig-DecoderParams-Gs1DatabarLim)
-* [ScannerConfig.DecoderParams.HanXin](../api/ScannerConfig-DecoderParams-HanXin)
-* [ScannerConfig.DecoderParams.I2of5](../api/ScannerConfig-DecoderParams-I2of5)
-* [ScannerConfig.DecoderParams.JapanesePostal](../api/ScannerConfig-DecoderParams-JapanesePostal)
-* [ScannerConfig.DecoderParams.Korean3of5](../api/ScannerConfig-DecoderParams-Korean3of5)
-* [ScannerConfig.DecoderParams.MailMark](../api/ScannerConfig-DecoderParams-MailMark)
-* [ScannerConfig.DecoderParams.Matrix2of5](../api/ScannerConfig-DecoderParams-Matrix2of5)
-* [ScannerConfig.DecoderParams.MaxiCode](../api/ScannerConfig-DecoderParams-MaxiCode)
-* [ScannerConfig.DecoderParams.MicroPdf](../api/ScannerConfig-DecoderParams-MicroPdf)
-* [ScannerConfig.DecoderParams.MicroQr](../api/ScannerConfig-DecoderParams-MicroQr)
-* [ScannerConfig.DecoderParams.Msi](../api/ScannerConfig-DecoderParams-Msi)
-* [ScannerConfig.DecoderParams.Pdf417](../api/ScannerConfig-DecoderParams-Pdf417)
-* [ScannerConfig.DecoderParams.QrCode](../api/ScannerConfig-DecoderParams-QrCode)
-* [ScannerConfig.DecoderParams.Signature](../api/ScannerConfig-DecoderParams-Signature)
-* [ScannerConfig.DecoderParams.Tlc39](../api/ScannerConfig-DecoderParams-Tlc39)
-* [ScannerConfig.DecoderParams.TriOptic39](../api/ScannerConfig-DecoderParams-TriOptic39)
-* [ScannerConfig.DecoderParams.UkPostal](../api/ScannerConfig-DecoderParams-UkPostal)
-* [ScannerConfig.DecoderParams.UpcEanParams](../api/ScannerConfig-DecoderParams-UpcEanParams)
-* [ScannerConfig.DecoderParams.Upca](../api/ScannerConfig-DecoderParams-Upca)
-* [ScannerConfig.DecoderParams.Upce0](../api/ScannerConfig-DecoderParams-Upce0)
-* [ScannerConfig.DecoderParams.Upce1](../api/ScannerConfig-DecoderParams-Upce1)
-* [ScannerConfig.DecoderParams.Us4State](../api/ScannerConfig-DecoderParams-Us4State)
-* [ScannerConfig.DecoderParams.Us4StateFics](../api/ScannerConfig-DecoderParams-Us4StateFics)
-* [ScannerConfig.DecoderParams.UsPlanet](../api/ScannerConfig-DecoderParams-UsPlanet)
-* [ScannerConfig.DecoderParams.UsPostNet](../api/ScannerConfig-DecoderParams-UsPostNet)
-* [ScannerConfig.DecoderParams.WebCode](../api/ScannerConfig-DecoderParams-WebCode)
-* [ScannerConfig.ReaderParams](../api/ScannerConfig-ReaderParams)
-* [ScannerConfig.ReaderParams.ReaderSpecific](../api/ScannerConfig-ReaderParams-ReaderSpecific)
-* [ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific](../api/ScannerConfig-ReaderParams-ReaderSpecific-CameraSpecific)
-* [ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead](../api/ScannerConfig-ReaderParams-ReaderSpecific-ContinuousRead)
-* [ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific](../api/ScannerConfig-ReaderParams-ReaderSpecific-ImagerSpecific)
-* [ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific](../api/ScannerConfig-ReaderParams-ReaderSpecific-LaserSpecific)
-* [ScannerConfig.ScanParams](../api/ScannerConfig-ScanParams)
+* [ScannerConfig](/emdk-for-android/3-1/api/ScannerConfig)
+* [ScannerConfig.DecoderParams](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams)
+* [ScannerConfig.DecoderParams.AustralianPostal](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-AustralianPostal)
+* [ScannerConfig.DecoderParams.Aztec](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Aztec)
+* [ScannerConfig.DecoderParams.BaseDecoder](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-BaseDecoder)
+* [ScannerConfig.DecoderParams.CanadianPostal](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-CanadianPostal)
+* [ScannerConfig.DecoderParams.Chinese2of5](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Chinese2of5)
+* [ScannerConfig.DecoderParams.CodaBar](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-CodaBar)
+* [ScannerConfig.DecoderParams.Code11](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Code11)
+* [ScannerConfig.DecoderParams.Code128](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Code128)
+* [ScannerConfig.DecoderParams.Code39](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Code39)
+* [ScannerConfig.DecoderParams.Code93](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Code93)
+* [ScannerConfig.DecoderParams.CompositeAB](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-CompositeAB)
+* [ScannerConfig.DecoderParams.CompositeC](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-CompositeC)
+* [ScannerConfig.DecoderParams.D2of5](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-D2of5)
+* [ScannerConfig.DecoderParams.DataMatrix](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-DataMatrix)
+* [ScannerConfig.DecoderParams.DutchPostal](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-DutchPostal)
+* [ScannerConfig.DecoderParams.Ean13](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Ean13)
+* [ScannerConfig.DecoderParams.Ean8](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Ean8)
+* [ScannerConfig.DecoderParams.Gs1Databar](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Gs1Databar)
+* [ScannerConfig.DecoderParams.Gs1DatabarExp](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Gs1DatabarExp)
+* [ScannerConfig.DecoderParams.Gs1DatabarLim](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Gs1DatabarLim)
+* [ScannerConfig.DecoderParams.HanXin](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-HanXin)
+* [ScannerConfig.DecoderParams.I2of5](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-I2of5)
+* [ScannerConfig.DecoderParams.JapanesePostal](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-JapanesePostal)
+* [ScannerConfig.DecoderParams.Korean3of5](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Korean3of5)
+* [ScannerConfig.DecoderParams.MailMark](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-MailMark)
+* [ScannerConfig.DecoderParams.Matrix2of5](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Matrix2of5)
+* [ScannerConfig.DecoderParams.MaxiCode](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-MaxiCode)
+* [ScannerConfig.DecoderParams.MicroPdf](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-MicroPdf)
+* [ScannerConfig.DecoderParams.MicroQr](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-MicroQr)
+* [ScannerConfig.DecoderParams.Msi](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Msi)
+* [ScannerConfig.DecoderParams.Pdf417](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Pdf417)
+* [ScannerConfig.DecoderParams.QrCode](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-QrCode)
+* [ScannerConfig.DecoderParams.Signature](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Signature)
+* [ScannerConfig.DecoderParams.Tlc39](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Tlc39)
+* [ScannerConfig.DecoderParams.TriOptic39](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-TriOptic39)
+* [ScannerConfig.DecoderParams.UkPostal](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-UkPostal)
+* [ScannerConfig.DecoderParams.UpcEanParams](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-UpcEanParams)
+* [ScannerConfig.DecoderParams.Upca](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Upca)
+* [ScannerConfig.DecoderParams.Upce0](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Upce0)
+* [ScannerConfig.DecoderParams.Upce1](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Upce1)
+* [ScannerConfig.DecoderParams.Us4State](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Us4State)
+* [ScannerConfig.DecoderParams.Us4StateFics](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-Us4StateFics)
+* [ScannerConfig.DecoderParams.UsPlanet](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-UsPlanet)
+* [ScannerConfig.DecoderParams.UsPostNet](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-UsPostNet)
+* [ScannerConfig.DecoderParams.WebCode](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams-WebCode)
+* [ScannerConfig.ReaderParams](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams)
+* [ScannerConfig.ReaderParams.ReaderSpecific](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams-ReaderSpecific)
+* [ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams-ReaderSpecific-CameraSpecific)
+* [ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams-ReaderSpecific-ContinuousRead)
+* [ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams-ReaderSpecific-ImagerSpecific)
+* [ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams-ReaderSpecific-LaserSpecific)
+* [ScannerConfig.ScanParams](/emdk-for-android/3-1/api/ScannerConfig-ScanParams)
 
 ###ScannerException
-* [ScannerException](../api/ScannerException)
+* [ScannerException](/emdk-for-android/3-1/api/ScannerException)
 
 ###ScannerInfo
-* [ScannerInfo](../api/ScannerInfo)
+* [ScannerInfo](/emdk-for-android/3-1/api/ScannerInfo)
 
 ###StatusData
-* [StatusData](../api/StatusData)
+* [StatusData](/emdk-for-android/3-1/api/StatusData)
 
 
 
@@ -158,22 +157,22 @@ The following APIs are used when you wish to handle all barcode scanning entirel
 The ScanAndPair API provides simple methods to scan a Bluetooth barcode (Bluetooth name or address) of a remote device and pair/unpair with the Bluetooth device.
 
 ###ScanAndPairManager
-* [ScanAndPairManager](../api/ScanAndPairManager)
-* [ScanAndPairManager.StatusListener](../api/ScanAndPairManager-StatusListener)
+* [ScanAndPairManager](/emdk-for-android/3-1/api/ScanAndPairManager)
+* [ScanAndPairManager.StatusListener](/emdk-for-android/3-1/api/ScanAndPairManager-StatusListener)
 
 ###ScanAndPairConfig
-* [ScanAndPairConfig](../api/ScanAndPairConfig)
-* [ScanAndPairConfig.BluetoothInfo](../api/ScanAndPairConfig-BluetoothInfo)
-* [ScanAndPairConfig.ScanInfo](../api/ScanAndPairConfig-ScanInfo)
+* [ScanAndPairConfig](/emdk-for-android/3-1/api/ScanAndPairConfig)
+* [ScanAndPairConfig.BluetoothInfo](/emdk-for-android/3-1/api/ScanAndPairConfig-BluetoothInfo)
+* [ScanAndPairConfig.ScanInfo](/emdk-for-android/3-1/api/ScanAndPairConfig-ScanInfo)
 
 ###ScanAndPairException
-* [ScanAndPairException](../api/ScanAndPairException)
+* [ScanAndPairException](/emdk-for-android/3-1/api/ScanAndPairException)
 
 ###ScanAndPairResults
-* [ScanAndPairResults](../api/ScanAndPairResults)
+* [ScanAndPairResults](/emdk-for-android/3-1/api/ScanAndPairResults)
 
 ###StatusData
-* [StatusData](../api/StatusData)
+* [StatusData](/emdk-for-android/3-1/api/StatusData)
 
 
 
@@ -187,70 +186,70 @@ SimulScan is an end-to-end data capture solution for extracting critical data fr
 Customers can interactively capture documents and obtain meaningful data present in the document.  Barcodes are identified and decoded; strings are recognized from fields containing text; images are refined from fields containing pictures and so forth. Based on a "template", an image of the entire document is processed by various engines to extract the relevant data.
 
 ###SimulScanManager
-* [SimulScanManager](../api/SimulScanManager)
+* [SimulScanManager](/emdk-for-android/3-1/api/SimulScanManager)
 
 ###SimulScanResults
-* [SimulScanResults](../api/SimulScanResults)
+* [SimulScanResults](/emdk-for-android/3-1/api/SimulScanResults)
 
 ###SimulScanConfig
-* [SimulScanConfig](../api/SimulScanConfig)
+* [SimulScanConfig](/emdk-for-android/3-1/api/SimulScanConfig)
 
 
 ###SimulScanData
-* [SimulScanData](../api/SimulScanData)
+* [SimulScanData](/emdk-for-android/3-1/api/SimulScanData)
 
 
 ###SimulScanElement
-* [SimulScanElement](../api/SimulScanElement)
+* [SimulScanElement](/emdk-for-android/3-1/api/SimulScanElement)
 
 
 ###SimulScanException
-* [SimulScanException](../api/SimulScanException)
+* [SimulScanException](/emdk-for-android/3-1/api/SimulScanException)
 
 
 ###SimulScanGroup
-* [SimulScanGroup](../api/SimulScanGroup)
+* [SimulScanGroup](/emdk-for-android/3-1/api/SimulScanGroup)
 
 
 ###SimulScanMultiTemplate
-* [SimulScanMultiTemplate](../api/SimulScanMultiTemplate)
+* [SimulScanMultiTemplate](/emdk-for-android/3-1/api/SimulScanMultiTemplate)
 
 
 ###SimulScanReader
-* [SimulScanReader](../api/SimulScanReader)
-* [SimulScanReader.DataListerner](../api/SimulScanReader-DataListerner)
-* [SimulScanReader.StatusListerner](../api/SimulScanReader-StatusListerner)
+* [SimulScanReader](/emdk-for-android/3-1/api/SimulScanReader)
+* [SimulScanReader.DataListerner](/emdk-for-android/3-1/api/SimulScanReader-DataListerner)
+* [SimulScanReader.StatusListerner](/emdk-for-android/3-1/api/SimulScanReader-StatusListerner)
 
 
 ###SimulScanReaderInfo
-* [SimulScanReaderInfo](../api/SimulScanReaderInfo)
+* [SimulScanReaderInfo](/emdk-for-android/3-1/api/SimulScanReaderInfo)
 
 
 ###SimulScanRegion
-* [SimulScanRegion](../api/SimulScanRegion)
+* [SimulScanRegion](/emdk-for-android/3-1/api/SimulScanRegion)
 
 ###RegionType
-* [RegionType](../api/RegionType)
+* [RegionType](/emdk-for-android/3-1/api/RegionType)
 
 ###SimulScanStatusData
-* [SimulScanStatusData](../api/SimulScanStatusData)
-* [SimulScanStatusData.ExtendedInfo](../api/SimulScanStatusData-ExtendedInfo)
+* [SimulScanStatusData](/emdk-for-android/3-1/api/SimulScanStatusData)
+* [SimulScanStatusData.ExtendedInfo](/emdk-for-android/3-1/api/SimulScanStatusData-ExtendedInfo)
 
 
 ###SimulScanTemplate
-* [SimulScanTemplate](../api/SimulScanTemplate)
+* [SimulScanTemplate](/emdk-for-android/3-1/api/SimulScanTemplate)
 
 
 ###SimulScanTemplateElement
-* [SimulScanTemplateElement](../api/SimulScanTemplateElement)
+* [SimulScanTemplateElement](/emdk-for-android/3-1/api/SimulScanTemplateElement)
 
 
 ###SimulScanTemplateGroup
-* [SimulScanTemplateGroup](../api/SimulScanTemplateGroup)
+* [SimulScanTemplateGroup](/emdk-for-android/3-1/api/SimulScanTemplateGroup)
 
 
 ###SimulScanTemplateRegion
-* [SimulScanTemplateRegion](../api/SimulScanTemplateRegion)
+* [SimulScanTemplateRegion](/emdk-for-android/3-1/api/SimulScanTemplateRegion)
 
 ## Personal Shopper APIs
 The following API's are used to control the MC18(Personal Shopper) Cradle. Enabling your
@@ -258,100 +257,101 @@ application to perform tasks such as unlocking the cradle to allow the MC18 to b
 
 
 ###PersonalShopper
-* [PersonalShopper](../api/PersonalShopper)
+* [PersonalShopper](/emdk-for-android/3-1/api/PersonalShopper)
 
 ###Cradle
-* [Cradle](../api/Cradle)
+* [Cradle](/emdk-for-android/3-1/api/Cradle)
 
 ###CradleConfig
-* [CradleConfig](../api/CradleConfig)
-* [CradleConfig.CradleLocation](../api/CradleConfig-CradleLocation)
+* [CradleConfig](/emdk-for-android/3-1/api/CradleConfig)
+* [CradleConfig.CradleLocation](/emdk-for-android/3-1/api/CradleConfig-CradleLocation)
 
 ###CradleException
-* [CradleException](../api/CradleException)
+* [CradleException](/emdk-for-android/3-1/api/CradleException)
 
 ###CradleInfo
-* [CradleInfo](../api/CradleInfo)
+* [CradleInfo](/emdk-for-android/3-1/api/CradleInfo)
 
 ###CradleLedFlashInfo
-* [CradleLedFlashInfo](../api/CradleLedFlashInfo)
+* [CradleLedFlashInfo](/emdk-for-android/3-1/api/CradleLedFlashInfo)
 
 ###CradleResults
-* [CradleResults](../api/CradleResults)
+* [CradleResults](/emdk-for-android/3-1/api/CradleResults)
 
 ###Diagnostic
-* [Diagnostic](../api/Diagnostic)
+* [Diagnostic](/emdk-for-android/3-1/api/Diagnostic)
 
 ###DiagnosticConfig
-* [DiagnosticConfig](../api/DiagnosticConfig)
+* [DiagnosticConfig](/emdk-for-android/3-1/api/DiagnosticConfig)
 
 ###DiagnosticData
-* [DiagnosticData](../api/DiagnosticData)
+* [DiagnosticData](/emdk-for-android/3-1/api/DiagnosticData)
 
 ###DiagnosticException
-* [DiagnosticException](../api/DiagnosticException)
+* [DiagnosticException](/emdk-for-android/3-1/api/DiagnosticException)
 
 ###DiagnosticResults
-* [DiagnosticResults](../api/DiagnosticResults)
+* [DiagnosticResults](/emdk-for-android/3-1/api/DiagnosticResults)
 
 
 ## Secure NFC APIs
 
 ###SecureNfcManager
-* [SecureNfcManager](../api/SecureNfcManager)
-* [SecureNfcResults](../api/SecureNfcResults)
-* [SecureNfcException](../api/SecureNfcException)
+* [SecureNfcManager](/emdk-for-android/3-1/api/SecureNfcManager)
+* [SecureNfcResults](/emdk-for-android/3-1/api/SecureNfcResults)
+* [SecureNfcException](/emdk-for-android/3-1/api/SecureNfcException)
 
 
 ###MifareDesfire
-* [MifareDesfire](../api/MifareDesfire)
-* [MifareDesfire.AppKeySettings](../api/MifareDesfire-AppKeySettings)
-* [MifareDesfire.CardVersionInfo-HardwareInfo](../api/MifareDesfire-CardVersionInfo-HardwareInfo)
-* [MifareDesfire.CardVersionInfo-ManufacturerInfo](../api/MifareDesfire-CardVersionInfo-ManufacturerInfo)
-* [MifareDesfire.CardVersionInfo-SoftwareInfo](../api/MifareDesfire-CardVersionInfo-SoftwareInfo)
-* [MifareDesfire.CardVersionInfo](../api/MifareDesfire-CardVersionInfo)
-* [MifareDesfire.DFNames](../api/MifareDesfire-DFNames)
-* [MifareDesfire.FileAccessRights](../api/MifareDesfire-FileAccessRights)
-* [MifareDesfire.FileSettings](../api/MifareDesfire-FileSettings)
-* [MifareDesfire.FileTypeSpecificSettings](../api/MifareDesfire-FileTypeSpecificSettings)
-* [MifareDesfire.KeySettings](../api/MifareDesfire-KeySettings)
-* [MifareDesfire.MasterKeySettingsType](../api/MifareDesfire-MasterKeySettingsType)
-* [MifareDesfire.RecordFileSettings](../api/MifareDesfire-RecordFileSettings)
-* [MifareDesfire.ValueFileSettings](../api/MifareDesfire-ValueFileSettings)
-* [MifareDesfireExpection](../api/MifareDesfireExpection)
-* [MifareDesfireResults](../api/MifareDesfireResults)
+* [MifareDesfire](/emdk-for-android/3-1/api/MifareDesfire)
+* [MifareDesfire.AppKeySettings](/emdk-for-android/3-1/api/MifareDesfire-AppKeySettings)
+* [MifareDesfire.CardVersionInfo-HardwareInfo](/emdk-for-android/3-1/api/MifareDesfire-CardVersionInfo-HardwareInfo)
+* [MifareDesfire.CardVersionInfo-ManufacturerInfo](/emdk-for-android/3-1/api/MifareDesfire-CardVersionInfo-ManufacturerInfo)
+* [MifareDesfire.CardVersionInfo-SoftwareInfo](/emdk-for-android/3-1/api/MifareDesfire-CardVersionInfo-SoftwareInfo)
+* [MifareDesfire.CardVersionInfo](/emdk-for-android/3-1/api/MifareDesfire-CardVersionInfo)
+* [MifareDesfire.DFNames](/emdk-for-android/3-1/api/MifareDesfire-DFNames)
+* [MifareDesfire.FileAccessRights](/emdk-for-android/3-1/api/MifareDesfire-FileAccessRights)
+* [MifareDesfire.FileSettings](/emdk-for-android/3-1/api/MifareDesfire-FileSettings)
+* [MifareDesfire.FileTypeSpecificSettings](/emdk-for-android/3-1/api/MifareDesfire-FileTypeSpecificSettings)
+* [MifareDesfire.KeySettings](/emdk-for-android/3-1/api/MifareDesfire-KeySettings)
+* [MifareDesfire.MasterKeySettingsType](/emdk-for-android/3-1/api/MifareDesfire-MasterKeySettingsType)
+* [MifareDesfire.RecordFileSettings](/emdk-for-android/3-1/api/MifareDesfire-RecordFileSettings)
+* [MifareDesfire.ValueFileSettings](/emdk-for-android/3-1/api/MifareDesfire-ValueFileSettings)
+* [MifareDesfireExpection](/emdk-for-android/3-1/api/MifareDesfireExpection)
+* [MifareDesfireResults](/emdk-for-android/3-1/api/MifareDesfireResults)
 
 ###MifarePlusSL3
-* [MifarePlusSL3](../api/MifarePlusSL3)
-* [MifarePlusSL3Exception](../api/MifarePlusSL3Exception)
-* [MifarePlusSL3Results](../api/MifarePlusSL3Results)
+* [MifarePlusSL3](/emdk-for-android/3-1/api/MifarePlusSL3)
+* [MifarePlusSL3Exception](/emdk-for-android/3-1/api/MifarePlusSL3Exception)
+* [MifarePlusSL3Results](/emdk-for-android/3-1/api/MifarePlusSL3Results)
 
 ###MifareSam
-* [MifareSam](../api/MifareSam)
-* [MifareSam.AdditionalAuthData-AV1Mode](../api/MifareSam-AdditionalAuthData-AV1Mode)
-* [MifareSam.AdditionalAuthData-AV2Mode](../api/MifareSam-AdditionalAuthData-AV2Mode)
-* [MifareSam.AdditionalAuthData](../api/MifareSam-AdditionalAuthData)
-* [MifareSam.SamInfo-HardwareInfo](../api/MifareSam-SamInfo-HardwareInfo)
-* [MifareSam.SamInfo-ManufacturerInfo](../api/MifareSam-SamInfo-ManufacturerInfo)
-* [MifareSam.SamInfo-SoftwareInfo](../api/MifareSam-SamInfo-SoftwareInfo)
-* [MifareSam.SamInfo](../api/MifareSam-SamInfo)
-* [MifareSamException](../api/MifareSamException)
-* [MifareSamResults](../api/MifareSamResults)
+* [MifareSam](/emdk-for-android/3-1/api/MifareSam)
+* [MifareSam.AdditionalAuthData-AV1Mode](/emdk-for-android/3-1/api/MifareSam-AdditionalAuthData-AV1Mode)
+* [MifareSam.AdditionalAuthData-AV2Mode](/emdk-for-android/3-1/api/MifareSam-AdditionalAuthData-AV2Mode)
+* [MifareSam.AdditionalAuthData](/emdk-for-android/3-1/api/MifareSam-AdditionalAuthData)
+* [MifareSam.SamInfo-HardwareInfo](/emdk-for-android/3-1/api/MifareSam-SamInfo-HardwareInfo)
+* [MifareSam.SamInfo-ManufacturerInfo](/emdk-for-android/3-1/api/MifareSam-SamInfo-ManufacturerInfo)
+* [MifareSam.SamInfo-SoftwareInfo](/emdk-for-android/3-1/api/MifareSam-SamInfo-SoftwareInfo)
+* [MifareSam.SamInfo](/emdk-for-android/3-1/api/MifareSam-SamInfo)
+* [MifareSamException](/emdk-for-android/3-1/api/MifareSamException)
+* [MifareSamResults](/emdk-for-android/3-1/api/MifareSamResults)
 
 ###PassThruApdu
-* [PassThruApduResults](../api/PassThruApduResults)
-* [PassThruApduProcessor](../api/PassThruApduProcessor)
-* [PassThruApduException](../api/PassThruApduException)
+* [PassThruApduResults](/emdk-for-android/3-1/api/PassThruApduResults)
+* [PassThruApduProcessor](/emdk-for-android/3-1/api/PassThruApduProcessor)
+* [PassThruApduException](/emdk-for-android/3-1/api/PassThruApduException)
 
 
 ###SamBase
-* [SamBase](../api/SamBase)
+* [SamBase](/emdk-for-android/3-1/api/SamBase)
 
 ###SamDiverseParams
-* [SamDiverseParams](../api/SamDiverseParams)
+* [SamDiverseParams](/emdk-for-android/3-1/api/SamDiverseParams)
 
 ###SamKey
-* [SamKey](../api/SamKey)
+* [SamKey](/emdk-for-android/3-1/api/SamKey)
 
 ###TagTechBase
-* [TagTechBase](../api/TagTechBase)
+* [TagTechBase](/emdk-for-android/3-1/api/TagTechBase)
+

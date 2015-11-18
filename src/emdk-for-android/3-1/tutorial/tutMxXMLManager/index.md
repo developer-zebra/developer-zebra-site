@@ -1,11 +1,10 @@
 ---
 title:  Manage MX Processing Behavior
 ---
-# Manage MX Processing Behavior
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing the XML processing by specifying the XML processing mode to use on your Symbol Android device using [XML Manager](../guide/profiles/xml) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing the XML processing by specifying the XML processing mode to use on your Symbol Android device using [XML Manager](/emdk-for-android/3-1/guide/profiles/xml) feature of Mx.
 
 The XML Manager supports following XML processing Modes:
 
@@ -14,7 +13,7 @@ The XML Manager supports following XML processing Modes:
 * Try until error, then Skip to Catch
 * Catch error, Execute remainder
 
-Let us create a tutorial and configure the XML processing mode on your Symbol Android device using Mx [XML Manager](../guide/profiles/xml) feature. 
+Let us create a tutorial and configure the XML processing mode on your Symbol Android device using Mx [XML Manager](/emdk-for-android/3-1/guide/profiles/xml) feature. 
         
 ###Prerequisites
 
@@ -28,17 +27,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "XMLManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](../guide/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The XML Manager Profile Feature
-1. Click [here](../guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "XMLManagerProfile" as the Profile Name for this tutorial.
 
@@ -214,7 +213,7 @@ If you are using Eclipse with ADT, click [here](../guide/tutorial/tutEnableEMDKE
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../api/EMDKResults) reference. If the profile is successfully processed, it reruns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) reference. If the profile is successfully processed, it reruns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

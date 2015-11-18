@@ -1,12 +1,11 @@
 ---
 title:  Data Capture Intent Sample
 ---
-# Data Capture Intent Sample
 
 ## Overview
-This sample demonstrates how to use the DataWedge Intent output plug-in and the [Data Capture Intent API](../guide/reference/refdatacaptureintent) to receive captured data in your native Android application. 
+This sample demonstrates how to use the DataWedge Intent output plug-in and the [Data Capture Intent API](/emdk-for-android/3-1/guide/reference/refdatacaptureintent) to receive captured data in your native Android application. 
 
-A [Tutorial](../guide/tutorial/tutdatacaptureintent) walks through how this sample application was built from scratch. If you would simply like to see the application run on your device, follow the instructions in the next section.
+A [Tutorial](/emdk-for-android/3-1/tutorial/tutdatacaptureintent) walks through how this sample application was built from scratch. If you would simply like to see the application run on your device, follow the instructions in the next section.
 
 ## Using This Sample
 
@@ -54,6 +53,7 @@ A [Tutorial](../guide/tutorial/tutdatacaptureintent) walks through how this samp
 The project [source](https://s3.amazonaws.com/emdk/Tutorials/DataCaptureDemoSource.zip) and [application](https://s3.amazonaws.com/emdk/Tutorials/DataCaptureDemoApp.apk.zip) to this tutorial can be downloaded (Internet Connection Required).
 
 <a name="theend"></a>
+
 
 
 

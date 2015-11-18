@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.LCD_MODE
 ---
-###ProfileConfig.LCD_MODE
 
 Enable or disable LCD mode (for Blockbuster imager devices only).
  LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones.
@@ -21,4 +20,5 @@ Enable or disable LCD mode (for Blockbuster imager devices only).
 * **DISABLED** -Disables LCD mode
 
 * **ENABLED** -Enables LCD mode.
+
 

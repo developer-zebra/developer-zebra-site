@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.Isbt128ContactMode
 ---
-###ScannerConfig.Isbt128ContactMode
 
 Option for concatenating pairs of ISBT128 code types.
 
@@ -27,4 +26,5 @@ Option for concatenating pairs of ISBT128 code types.
  number of times set via DataWedge Configuration 4 - 1 1 Redundancy -
  Code128 before transmitting its data to confirm that there is no
  additional ISBT symbol.
+
 

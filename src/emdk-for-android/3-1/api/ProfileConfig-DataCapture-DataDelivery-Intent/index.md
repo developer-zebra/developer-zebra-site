@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.Intent
 ---
-#ProfileConfig.DataCapture.DataDelivery.Intent
 
 Holds Intent configuration settings.
 
@@ -94,4 +93,5 @@ Gets and Sets intent INTENT_DELIVERY configuration object  ProfileConfig.DataCap
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
+
 

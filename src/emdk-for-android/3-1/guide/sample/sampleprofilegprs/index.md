@@ -1,7 +1,6 @@
 ---
 title: GPRS Manager Profile Feature Sample
 ---
-#GPRS Manager Profile Feature Sample
 
 ##Overview
 The EMDK for Android allows you to allows you to add or remove APNs to a Symbol device. 
@@ -15,13 +14,13 @@ The available actions are:
 This sample application will allow you to Add/Replace named APN and remove existing named APN.
 
 ##Prerequisites
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](../guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Using This Sample
 1. When the application starts it should look like the following.

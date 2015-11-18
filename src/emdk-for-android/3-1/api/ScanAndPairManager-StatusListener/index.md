@@ -1,7 +1,6 @@
 ---
 title: ScanAndPairManager.StatusListener
 ---
-#ScanAndPairManager.StatusListener
 
 An interface for notifying client applications to notify scan and pair or unpair events.
  
@@ -30,4 +29,5 @@ statusData - StatusData object.
 **Returns:**
 
 void
+
 

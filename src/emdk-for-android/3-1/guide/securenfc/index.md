@@ -1,7 +1,6 @@
 ---
 title: Secure NFC Programmer’s
 ---
-#Secure NFC Programmer’s
 
 ##Introduction
 The EMDK for Android provides developers with a comprehensive set of tools to easily create Secure NFC application for use with the Zebra Technologies Corporation mobility device.
@@ -309,3 +308,4 @@ The APIs provided by this class is used to enable the connection with the tag ,a
 			    } catch (MifarePlusSL3Exception e) {
 			   e.printStackTrace();
 		 	  }
+

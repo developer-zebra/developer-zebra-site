@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific
 ---
-#ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific
 
 ImagerSpecific provides access to the imager specific parameters.
 
@@ -141,4 +140,5 @@ This is the time (in seconds) when an external scanner is idle in a particular s
 **Type:**
 
 int
+
 

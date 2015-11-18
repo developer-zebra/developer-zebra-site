@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.HanXin
 ---
-#ScannerConfig.DecoderParams.HanXin
 
 The HanXin class provides access to parameters that are available for
  the HanXin decoder.
@@ -25,4 +24,5 @@ Check the inverse of the HanXin decoder
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.HanXinInverse
+
 

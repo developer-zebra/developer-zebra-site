@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.COUPON_REPORT
 ---
-###ProfileConfig.COUPON_REPORT
 
 Supported Coupon modes
 
@@ -22,4 +21,5 @@ Supported Coupon modes
 * **NEW** -Scanner will read only the new GS1 DataBar coupon format
 
 * **BOTH** -Scanner will read both old coupon format as well as the new GS1 DataBar coupon format
+
 

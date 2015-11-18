@@ -175,6 +175,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/3-1/'
     }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/4-0/'
+    }))
     .use(showdown({}))
     .use(snippet({
       maxLength: 250,

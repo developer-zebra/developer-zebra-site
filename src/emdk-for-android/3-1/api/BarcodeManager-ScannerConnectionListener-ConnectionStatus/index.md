@@ -1,7 +1,6 @@
 ---
 title: BarcodeManager.ScannerConnectionListener.ConnectionStatus
 ---
-#BarcodeManager.ScannerConnectionListener.ConnectionStatus
 
 The ConnectionStatus class provides the information about status of scanner connection changes.
 

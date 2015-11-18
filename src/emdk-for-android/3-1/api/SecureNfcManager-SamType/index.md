@@ -1,7 +1,6 @@
 ---
 title: ##SecureNfcManager.SamType
 ---
-###SecureNfcManager.SamType
 
 Supported SAM types.
 
@@ -14,4 +13,5 @@ Supported SAM types.
 * **FELICA** -Felica SAM
 
 * **UNDEFINED** -SAM category is undefined.
+
 

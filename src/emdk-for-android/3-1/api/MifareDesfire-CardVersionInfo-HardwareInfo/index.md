@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.CardVersionInfo.HardwareInfo
 ---
-#MifareDesfire.CardVersionInfo.HardwareInfo
 
 
 
@@ -46,4 +45,5 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##MifareSamResults
 ---
-###MifareSamResults
 
 Defines all the error codes the MifareSAM APIs returns. <br>
  <br>
@@ -51,4 +50,5 @@ Defines all the error codes the MifareSAM APIs returns. <br>
  Unknown key type.
 
 * **UNDEFINED** -Error code not defined.
+
 

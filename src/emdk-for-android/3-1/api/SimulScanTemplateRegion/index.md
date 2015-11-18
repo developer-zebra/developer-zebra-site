@@ -1,7 +1,6 @@
 ---
 title: SimulScanTemplateRegion
 ---
-#SimulScanTemplateRegion
 
 The SimulScanTemplateRegion class represents a particular region in a Template.
 
@@ -56,4 +55,5 @@ Returns the Y coordinate of this template region
 **Returns:**
 
 int
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##ScannerResults
 ---
-###ScannerResults
 
 Defines all the error codes the barcode scanning API returns.
  <br><br>
@@ -53,4 +52,5 @@ Defines all the error codes the barcode scanning API returns.
 * **SCANNER_DEINIT_FAILURE** -Scanner de-initialization failed.
 
 * **UNDEFINED** -Error code not defined.
+
 

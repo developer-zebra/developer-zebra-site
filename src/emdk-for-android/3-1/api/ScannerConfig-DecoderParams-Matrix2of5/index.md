@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.Matrix2of5
 ---
-#ScannerConfig.DecoderParams.Matrix2of5
 
 The Matrix2of5 class provides access to parameters that are
  available for the Matrix2of5 decoder.
@@ -88,4 +87,5 @@ Enable this feature to check the integrity of all Matrix 2 of 5
 **Type:**
 
 boolean
+
 

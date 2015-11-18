@@ -1,7 +1,6 @@
 ---
 title: About EMDK For Android Help
 ---
-#About EMDK For Android Help
 
 ##Overview
 

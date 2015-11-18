@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific
 ---
-#ScannerConfig.ReaderParams.ReaderSpecific
 
 ReaderSpecific class provides access to the reader specific parameters.
 
@@ -54,4 +53,5 @@ Provide access to set the laser specific settings if the scanner device is laser
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
+
 

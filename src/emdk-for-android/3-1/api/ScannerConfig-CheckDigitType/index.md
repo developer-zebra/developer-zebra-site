@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.CheckDigitType
 ---
-###ScannerConfig.CheckDigitType
 
 Verify data integrity.
 
@@ -24,4 +23,5 @@ Verify data integrity.
 * **OPCC** -Select to check the integrity of all Interleaved 2 of 5 symbols to
  verify the data complies with either the Optical Product Code Council
  (OPCC) check digit algorithm.
+
 

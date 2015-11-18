@@ -1,13 +1,12 @@
 ---
 title: SimulScan API Sample#
 ---
-#SimulScan API Sample#
 
 ##Overview##
 This sample application will show how the Simulscan API's can be used to capture multiple types of data from forms, boxes and the like.
 
 ##Prerequisites
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 You will also need:
 
@@ -15,13 +14,13 @@ You will also need:
 * A Simulscan template
 * A printed copy of the form used to create the template
 
-Follow the template generation and device licensing sections of the [SimulScan API tutorial](../guide/tutorial/tutSimulScanAPI)
+Follow the template generation and device licensing sections of the [SimulScan API tutorial](/emdk-for-android/3-1/tutorial/tutSimulScanAPI)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](../guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Using This Sample
 
@@ -45,5 +44,6 @@ Follow the template generation and device licensing sections of the [SimulScan A
 4. Press the "Accept" button. The sample app will then display a screen showing how long simulscan took to capture and decode the template fields. Press the devices "Back" hardware button to return to the main screen.
 
 	![img](images/samples/simulscanSample4.png) 
+
 
 

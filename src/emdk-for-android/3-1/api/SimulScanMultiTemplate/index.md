@@ -1,7 +1,6 @@
 ---
 title: SimulScanMultiTemplate
 ---
-#SimulScanMultiTemplate
 
 The SimulScanMultiTemplate class contains an entire parsed XML template file. It may consist of many individual Template.
 
@@ -66,4 +65,5 @@ Returns the friendly name of the MultiTemplate object
 **Returns:**
 
 java.lang.String
+
 

@@ -1,7 +1,6 @@
 ---
 title: ScanAndPairManager
 ---
-#ScanAndPairManager
 
 The ScanAndPair provides simple methods to scan a Bluetooth barcode (name or address) of a remote Bluetooth device 
  and pair/unpair with the remote Bluetooth device.
@@ -113,4 +112,5 @@ The ScanAndPairManager.config provides a way to configure the settings to use it
 **Type:**
 
 com.symbol.emdk.scanandpair.ScanAndPairConfig
+
 

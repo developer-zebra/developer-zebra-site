@@ -1,7 +1,6 @@
 ---
 title: PassThruApduException
 ---
-#PassThruApduException
 
 The methods of PassThruApduProcessor object throws PassThruApduException when an error
  occurs.
@@ -22,3 +21,4 @@ Returns the PassThruApduResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.PassThruApduResults
+

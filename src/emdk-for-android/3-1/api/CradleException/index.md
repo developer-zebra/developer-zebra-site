@@ -1,7 +1,6 @@
 ---
 title: CradleException
 ---
-#CradleException
 
 The methods of cradle API throws CradleException when an error
  occurs.
@@ -22,3 +21,4 @@ Returns the CradleResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.CradleResults
+

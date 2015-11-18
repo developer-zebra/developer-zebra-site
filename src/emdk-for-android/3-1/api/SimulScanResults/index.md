@@ -1,7 +1,6 @@
 ---
 title: ##SimulScanResults
 ---
-###SimulScanResults
 
 Defines all the error codes the SimulScan API returns.
 
@@ -44,4 +43,5 @@ Defines all the error codes the SimulScan API returns.
 * **UNDEFINED** -Undefined
 
 * **FAILURE** -Failure
+
 

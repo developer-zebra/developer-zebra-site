@@ -1,7 +1,6 @@
 ---
 title: BarcodeManager.ScannerConnectionListener
 ---
-#BarcodeManager.ScannerConnectionListener
 
 An interface for notifying client applications when the external scanner
  is connected or disconnected to the mobile device.
@@ -33,4 +32,5 @@ connectionState - The new connection state.
 **Returns:**
 
 void
+
 

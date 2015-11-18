@@ -1,7 +1,6 @@
 ---
 title: ScanDataCollection
 ---
-#ScanDataCollection
 
 The ScanDataCollection object gives scanning result and the collection of
  ScanData.
@@ -175,4 +174,5 @@ List of label types of the scanner data
 * **HANXIN** -The HANXIN symbology.
 
 * **UNDEFINED** -The Symbology is unknown or not defined.
+
 

@@ -1,7 +1,6 @@
 ---
 title: ProfileManager.ResultData
 ---
-#ProfileManager.ResultData
 
 This class provides the Status detail of processProfileAsync method.
 
@@ -66,4 +65,5 @@ Returns the profile data as ProfileConfig object.
 **Returns:**
 
 com.symbol.emdk.ProfileConfig
+
 

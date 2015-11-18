@@ -1,7 +1,6 @@
 ---
 title: MifarePlusSL3
 ---
-#MifarePlusSL3
 
 Provides access to Mifare Plus tag in security level 3 and I/O operations on
  an IsoDep Tag object. This class encapsulates all the methods required for
@@ -676,4 +675,5 @@ boolean
 com.symbol.emdk.securenfc.MifarePlusSL3Exception
 
 The exception will be thrown if the emdk is not opened.
+
 

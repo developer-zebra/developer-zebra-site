@@ -1,7 +1,6 @@
 ---
 title:  Data Capture Intents Tutorial
 ---
-# Data Capture Intents Tutorial
 
 ## Overview
 DataWedge on Android has the ability to output captured data via Intents. This article describes how to use the DataWedge Intent output plug-in and the Data Capture API to receive captured data in your native Android application.
@@ -449,4 +448,4 @@ In this article, we covered:
 * Configuring DataWedge to send intents to our application
 
 ## Sample Code
-Download the source for this project in the [associated sample](../guide/sample/sampledatacaptureintent).
+Download the source for this project in the [associated sample](/emdk-for-android/3-1/guide/sample/sampledatacaptureintent).

@@ -1,11 +1,10 @@
 ---
 title: Name Value Pair Functionality Programmer's Guide
 ---
-#Name Value Pair Functionality Programmer's Guide
 
 ##Introduction
 
-The [ProfileManager](../api/ProfileManager) API exposes a method ( processProfile ) that is used
+The [ProfileManager](/emdk-for-android/3-1/api/ProfileManager) API exposes a method ( processProfile ) that is used
 to install and activate a static XML profile located in your projects Assets folder. The API also exposes an overload for processProfile that allows one to submit a String Array containing Name=Value Pairs that can be used to replace Name=Value Pairs in a specified Profile before installing and activating that profile. The following guide explains the use of Name=Value Pair replacement and a utility method to help create Name=Value pairs.
 
 ##String Array ( extraData )as Name-Value Pair Array
@@ -120,3 +119,4 @@ CreateNameValuePair is a static function of the ProfileManager class. This funct
 	
 	//This function returns the String in <emdk_name>.<param_name>=<param_value> format.
 	//For instance, "clock1.date=2014-10-10";
+

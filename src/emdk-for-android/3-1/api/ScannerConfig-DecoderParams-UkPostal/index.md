@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.UkPostal
 ---
-#ScannerConfig.DecoderParams.UkPostal
 
 The UkPostal class provides access to parameters that are available
  for the UkPostal decoder.
@@ -23,4 +22,5 @@ Transmit UK Postal data with or without the check digit.
 **Type:**
 
 boolean
+
 

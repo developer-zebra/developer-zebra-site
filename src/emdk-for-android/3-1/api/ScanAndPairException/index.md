@@ -1,7 +1,6 @@
 ---
 title: ScanAndPairException
 ---
-#ScanAndPairException
 
 The methods of ScanAndPair object throws ScanAndPairException when an error occurs.
 
@@ -17,3 +16,4 @@ Returns the ScanAndPairResults enum value.
 **Returns:**
 
 com.symbol.emdk.scanandpairmanager.[ScanAndPairManager.ScanAndPairResults](ScanAndPairManager#ScanAndPairResults)
+

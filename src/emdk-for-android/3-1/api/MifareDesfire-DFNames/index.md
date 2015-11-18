@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.DFNames
 ---
-#MifareDesfire.DFNames
 
 
 
@@ -30,4 +29,5 @@ ISO/IEC 7816-4 DF name
 **Type:**
 
 byte
+
 

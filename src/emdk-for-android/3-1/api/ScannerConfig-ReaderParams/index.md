@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.ReaderParams
 ---
-#ScannerConfig.ReaderParams
 
 The ReaderParams class holds the parameters for a
  scanner. Reader parameters are global to all reads on all open handles on
@@ -19,4 +18,5 @@ ReaderSpecificParams provides access to the reader specific parameters.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific
+
 

@@ -1,7 +1,6 @@
 ---
 title: MifareSam.AdditionalAuthData
 ---
-#MifareSam.AdditionalAuthData
 
 Mifare Sam additional authentication data
 
@@ -30,4 +29,5 @@ Data specific to the AV2 Sam Mode. **Future use only, its not
 **Type:**
 
 com.symbol.emdk.securenfc.MifareSam.AdditionalAuthData.AV2Mode
+
 

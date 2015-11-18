@@ -1,7 +1,6 @@
 ---
 title: ##MifareDesfire.FileIDType
 ---
-###MifareDesfire.FileIDType
 
 
 
@@ -10,4 +9,5 @@ title: ##MifareDesfire.FileIDType
 * **NATIVE** -Native file ID: 1 byte long
 
 * **ISO7816** -ISO 7816-4 complaint file ID: 2 byte long
+
 

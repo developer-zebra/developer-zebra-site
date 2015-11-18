@@ -1,19 +1,18 @@
 ---
 title: Data Capture Profile Feature Sample
 ---
-#Data Capture Profile Feature Sample
 
 ##Overview
 One of the features of the EMDK is the ability to create Barcode scanning profiles. This application allows you to modify a Barcode profile to select which times of Barcodes should be interpreted.  
 
 ##Prerequisites
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](../guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Using This Sample
 1) When the application first loads you will see:
@@ -81,5 +80,6 @@ When you uncheck the checkboxes in the application, the DataCaptureProfile-1 is 
 Now when you scan the same Barcode, you will still see the barcode aimer but the data will not be decoded and you will not see the data displayed in the text area.
 
 ## Next Steps
-Now that you have played with a pre-built sample application, it is time to try and build your own application from scratch. Follow the steps in the [DataCapture Profile Manager Tutorial](../guide/tutorial/tutdatacaptureprofile).
+Now that you have played with a pre-built sample application, it is time to try and build your own application from scratch. Follow the steps in the [DataCapture Profile Manager Tutorial](/emdk-for-android/3-1/tutorial/tutdatacaptureprofile).
+
 

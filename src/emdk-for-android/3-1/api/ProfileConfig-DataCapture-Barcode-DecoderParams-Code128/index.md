@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code128
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams.Code128
 
 Holds Code128 configuration settings.
 
@@ -170,4 +169,5 @@ The scanner of fers four levels of decode security for Code 128 bar codes.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
+
 

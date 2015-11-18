@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.CodaBar
 ---
-#ScannerConfig.DecoderParams.CodaBar
 
 The CodaBar class provides access to parameters that are available
  for the CodaBar decoder.
@@ -92,4 +91,5 @@ Enable this parameter to strip the start and stop characters from
 **Type:**
 
 boolean
+
 

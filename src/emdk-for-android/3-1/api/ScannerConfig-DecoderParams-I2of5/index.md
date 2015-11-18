@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.I2of5
 ---
-#ScannerConfig.DecoderParams.I2of5
 
 The I2of5 class provides access to parameters that are available for
  the I2of5 decoder.
@@ -125,4 +124,5 @@ Specifies security level
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
+
 

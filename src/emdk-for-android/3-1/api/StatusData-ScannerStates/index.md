@@ -1,7 +1,6 @@
 ---
 title: ##StatusData.ScannerStates
 ---
-###StatusData.ScannerStates
 
 Defines the different states of the barcode scanner.
 
@@ -16,4 +15,5 @@ Defines the different states of the barcode scanner.
 * **DISABLED** -Scanner is not enabled.
 
 * **ERROR** -An error has occurred.
+
 

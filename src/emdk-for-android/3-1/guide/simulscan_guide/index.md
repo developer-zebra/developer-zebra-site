@@ -1,7 +1,6 @@
 ---
 title: SimulScan API programmer's guide
 ---
-#SimulScan API programmer's guide
 
 ##Introduction
 SimulScan is an end-to-end data capture solution for extracting critical data from documents. A differentiating data capture value-add, it involves capturing fields of interest in a given document and converting it into data that an end-user application can use immediately at the point of transaction.
@@ -39,7 +38,7 @@ Customers can interactively capture documents and obtain meaningful data present
 
 ###Initialize EMDK manager
 
-Follow the [“Basic Scanning Tutorial using Barcode API”](../guide/tutorial/tutBasicScanningAPI) to
+Follow the [“Basic Scanning Tutorial using Barcode API”](/emdk-for-android/3-1/tutorial/tutBasicScanningAPI) to
 set up your project for the EMDK.
 
 >Note: It is recommended to release EMDKManager in onDestroy() and onClose() (Service disconnected unexpectedly)
@@ -298,3 +297,4 @@ Due to a known issue with the Symbol SimulScan framework version 1.8, the orient
 ##SimulScan Default Templates
 
 The SimulScan default templates are available under `"/enterprise/device/settings/datawedge/templates"`. Although this path is not accessible via the file browser on devices having latest images, it is possible to access the path programmatically and get templates copied to any other location preferred by the application. The application must obtain the SimulScanManager instance before attempting to copy these templates from above location.
+

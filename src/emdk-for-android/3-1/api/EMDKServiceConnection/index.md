@@ -1,7 +1,6 @@
 ---
 title: EMDKServiceConnection
 ---
-#EMDKServiceConnection
 
 Helper class. EMDK internal use only
 
@@ -56,4 +55,5 @@ name
 **Returns:**
 
 void
+
 

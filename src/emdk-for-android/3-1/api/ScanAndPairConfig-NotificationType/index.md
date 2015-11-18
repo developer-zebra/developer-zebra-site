@@ -1,7 +1,6 @@
 ---
 title: ##ScanAndPairConfig.NotificationType
 ---
-###ScanAndPairConfig.NotificationType
 
 This enum is used by the ScanAndPairTool class. When using PowerTools, notifications 
  can be provided to the user to indicate the progress of the different PowerTool methods. 
@@ -13,4 +12,5 @@ This enum is used by the ScanAndPairTool class. When using PowerTools, notificat
  an audible alert when specific operations are performed.
 
 * **NONE** -Disable notification. Do not raise notification for any type of operations.
+
 

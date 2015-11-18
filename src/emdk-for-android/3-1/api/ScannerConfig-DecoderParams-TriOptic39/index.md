@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.TriOptic39
 ---
-#ScannerConfig.DecoderParams.TriOptic39
 
 The TriOptic39 class provides access to parameters that are available
  for the TriOptic39 decoder.
@@ -23,4 +22,5 @@ Sets the reader to read the bar code twice before accepting data.
 **Type:**
 
 boolean
+
 

@@ -1,7 +1,6 @@
 ---
 title: ##ScannerConfig.LinearSecurityLevel
 ---
-###ScannerConfig.LinearSecurityLevel
 
 Sets the number of times a bar code is read to confirm an accurate
  decode.
@@ -24,4 +23,5 @@ Sets the number of times a bar code is read to confirm an accurate
  bar codes.
 
 * **ALL_THRICE** -Three times read redundancy for all bar codes.
+
 

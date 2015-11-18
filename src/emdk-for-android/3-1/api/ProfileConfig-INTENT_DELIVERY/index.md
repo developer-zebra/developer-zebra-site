@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.INTENT_DELIVERY
 ---
-###ProfileConfig.INTENT_DELIVERY
 
 Allows configuration of the Intent Output Plug-in for the profile.
  The Intent Output Plug-in allows the captured data to be sent to an application in the form of an implicit Intent.
@@ -23,4 +22,5 @@ Allows configuration of the Intent Output Plug-in for the profile.
 * **SEND_VIA_STARTSERVICE** -Send output via startService.
 
 * **BROADCAST_INTENT** -Send output via Broadcast intent.
+
 

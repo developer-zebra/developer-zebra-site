@@ -1,7 +1,6 @@
 ---
 title: ##ProfileConfig.CODE_ID_TYPE
 ---
-###ProfileConfig.CODE_ID_TYPE
 
 A Code ID character identifies the code type of a scanned bar code.
  This is useful when the reader is decoding more than one code type.
@@ -24,4 +23,5 @@ A Code ID character identifies the code type of a scanned bar code.
 * **AIM** -A standards based three character prefix.
 
 * **SYMBOL** -A Symbol defined single character prefix.
+
 

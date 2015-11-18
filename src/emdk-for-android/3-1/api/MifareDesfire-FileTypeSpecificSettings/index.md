@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.FileTypeSpecificSettings
 ---
-#MifareDesfire.FileTypeSpecificSettings
 
 
 
@@ -30,4 +29,5 @@ Linear or Cyclic record file specific settings
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.RecordFileSettings
+
 

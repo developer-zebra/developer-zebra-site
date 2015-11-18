@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.FileAccessRights
 ---
-#MifareDesfire.FileAccessRights
 
 
 
@@ -38,4 +37,5 @@ Key no. to be used for changing access rights
 **Type:**
 
 byte
+
 

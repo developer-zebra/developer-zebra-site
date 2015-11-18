@@ -1,7 +1,6 @@
 ---
 title: MifareSam.SamInfo.SoftwareInfo
 ---
-#MifareSam.SamInfo.SoftwareInfo
 
 Software information
 
@@ -46,4 +45,5 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
+
 

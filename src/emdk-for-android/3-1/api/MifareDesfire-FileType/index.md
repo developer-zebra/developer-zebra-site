@@ -1,7 +1,6 @@
 ---
 title: ##MifareDesfire.FileType
 ---
-###MifareDesfire.FileType
 
 
 
@@ -16,4 +15,5 @@ title: ##MifareDesfire.FileType
 * **LINEAR_RECORD** -Linear record file
 
 * **CYCLIC_RECORD** -Cyclic record file
+
 

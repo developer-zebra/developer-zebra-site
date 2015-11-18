@@ -1,7 +1,6 @@
 ---
 title: Collection.ScanData
 ---
-#Collection.ScanData
 
 The ScanData object gives information on the barcode data scanned. 
 
@@ -40,3 +39,4 @@ Returns the time at which the barcode was scanned. The time format is "yyyy-MM-d
 **Returns:**
 
 java.lang.String - Returns time stamp string
+

@@ -1,30 +1,29 @@
 ---
 title: Barcode Manager Feature Sample
 ---
-#Barcode Manager Feature Sample
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](../guide/reference/EMDKList) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](../guide/profiles/profilebarcode).  
+The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/3-1/guide/reference/EMDKList) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](/emdk-for-android/3-1/guide/profiles/profilebarcode).  
 
-The available actions in the [Barcode/Scanning API](../guide/reference/EMDKList) are:
+The available actions in the [Barcode/Scanning API](/emdk-for-android/3-1/guide/reference/EMDKList) are:
   
 * Set Scanner Device  
-* Set [TriggerType](../api/Scanner)
-* Set [Decoder Params](../api/ScannerConfig-DecoderParams)
-* Set [Reader Params](../api/ScannerConfig-ReaderParams)
-* Set [Scan Params](../api/ScannerConfig-ScanParams)
+* Set [TriggerType](/emdk-for-android/3-1/api/Scanner)
+* Set [Decoder Params](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams)
+* Set [Reader Params](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams)
+* Set [Scan Params](/emdk-for-android/3-1/api/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](../api/ScannerConfig-DecoderParams).
+This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams).
 
 ##Prerequisites
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](../guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Using This Sample
 1. When the application starts it should look like the following.

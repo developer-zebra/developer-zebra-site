@@ -1,7 +1,6 @@
 ---
 title: Scanner.DataListener
 ---
-#Scanner.DataListener
 
 An interface for notifying client applications when the scan data is
  available.
@@ -31,4 +30,5 @@ scanDataCollection - Collection of scan data.
 **Returns:**
 
 void
+
 

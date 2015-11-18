@@ -1,7 +1,6 @@
 ---
 title: ##MifareSam.SamMode
 ---
-###MifareSam.SamMode
 
 SAM modes
 
@@ -12,4 +11,5 @@ SAM modes
 * **AV2** -MIFARE SAM is in AV2 mode
 
 * **UNDEFINED** -MIFARE SAM is in invalid mode
+
 

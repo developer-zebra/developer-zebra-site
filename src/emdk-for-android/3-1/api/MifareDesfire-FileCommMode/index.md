@@ -1,7 +1,6 @@
 ---
 title: ##MifareDesfire.FileCommMode
 ---
-###MifareDesfire.FileCommMode
 
 File Communication Mode. Value PLAIN and Enchipered is supported. Value
  MACED is not supported.
@@ -15,4 +14,5 @@ File Communication Mode. Value PLAIN and Enchipered is supported. Value
 * **ENCIPHERED** -Fully enciphered communication. This is supported for authentication
  type NATIVE (TDEA-DESFire). It is not supported for authentication
  type ISO & AES.
+
 

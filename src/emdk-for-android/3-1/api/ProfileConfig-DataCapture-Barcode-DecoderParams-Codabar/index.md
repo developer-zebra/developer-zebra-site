@@ -1,7 +1,6 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar
 ---
-#ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar
 
 Holds Codabar configuration settings.
 
@@ -99,4 +98,5 @@ Enable this parameter to strip the start and stop characters from a decoded Coda
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

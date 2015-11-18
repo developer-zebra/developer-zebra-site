@@ -1,7 +1,6 @@
 ---
 title: EMDK For Android Setup (Android Studio1.0.x)
 ---
-#EMDK For Android Setup (Android Studio1.0.x)
 
 ##Installing EMDK for Android Studio
 
@@ -184,3 +183,4 @@ Select "Import Non-Android Studio project"
 5. Connect a Symbol Android device via USB, and select Run from the Run menu.
 
 	![img](images/setup/as_image48.png)
+

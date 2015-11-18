@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire
 ---
-#MifareDesfire
 
 Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
  Tag object. This class encapsulates all the methods required for
@@ -803,4 +802,5 @@ Authentication mode.
 * **ISO** -Authentication Type is ISO. Not supported.
 
 * **AES** -Authentication Type is AES. Not Supported
+
 

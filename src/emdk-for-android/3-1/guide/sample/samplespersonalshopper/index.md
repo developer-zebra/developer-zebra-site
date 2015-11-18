@@ -1,21 +1,20 @@
 ---
 title: Personal Shopper API Sample#
 ---
-#Personal Shopper API Sample#
 
 ##Overview##
 This sample application will show how the Personal Shopper APIs can be used to interact with the MC18 Cradle programmatically.
 
 ##Prerequisites
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 For this sample, you will need an MC18 and cradle( 1 or 3 bay ).
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](../guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](../guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
 
 ##Using This Sample
 
@@ -48,3 +47,4 @@ For this sample, you will need an MC18 and cradle( 1 or 3 bay ).
 LED's fade in and out, instead of an abrupt on/off state change.
 
 	![img](images/samples/personalShopperSampleSmoothEffect.png)
+

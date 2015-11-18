@@ -1,7 +1,6 @@
 ---
 title: CradleConfig
 ---
-#CradleConfig
 
 The class to access cradle configuration.
 
@@ -76,6 +75,7 @@ boolean
 **Throws:**
 
 com.symbol.emdk.personalshopper.CradleException
+
 
 
 

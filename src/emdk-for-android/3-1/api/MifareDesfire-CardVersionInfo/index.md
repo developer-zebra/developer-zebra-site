@@ -1,7 +1,6 @@
 ---
 title: MifareDesfire.CardVersionInfo
 ---
-#MifareDesfire.CardVersionInfo
 
 
 
@@ -30,4 +29,5 @@ Manufacturer information
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.CardVersionInfo.ManufacturerInfo
+
 

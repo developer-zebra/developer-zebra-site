@@ -1,7 +1,6 @@
 ---
 title: ##SecureNfcResults
 ---
-###SecureNfcResults
 
 
 
@@ -14,4 +13,5 @@ title: ##SecureNfcResults
 * **EMDK_NOT_OPENED** -The EMDK is not opened.
 
 * **UNDEFINED** -Error code not defined.
+
 

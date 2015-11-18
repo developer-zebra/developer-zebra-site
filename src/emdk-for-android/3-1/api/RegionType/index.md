@@ -1,7 +1,6 @@
 ---
 title: ##RegionType
 ---
-###RegionType
 
 The data type contained within the region
 
@@ -16,4 +15,5 @@ The data type contained within the region
 * **BARCODE** -Data type is Barcode.
 
 * **PICTURE** -Data type is picture.
+
 

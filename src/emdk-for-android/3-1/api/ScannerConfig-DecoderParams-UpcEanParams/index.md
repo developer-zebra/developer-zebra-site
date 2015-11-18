@@ -1,7 +1,6 @@
 ---
 title: ScannerConfig.DecoderParams.UpcEanParams
 ---
-#ScannerConfig.DecoderParams.UpcEanParams
 
 The UPCEAN class provides access to parameters that are available for the UPC/EAN decoder.
  UPC/EAN is the family of codes which are used to identify products
@@ -234,4 +233,5 @@ Enable this parameter to add five leading zeros to decoded
 **Type:**
 
 boolean
+
 

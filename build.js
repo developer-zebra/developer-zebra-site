@@ -31,6 +31,7 @@ var findLayout = function(config) {
             if (pattern.test(file)) {
                 var _f = files[file];
                 if (!_f.layout) {
+                    // console.log('Layout: %s : %s',_f.path.dir, config.layoutName);
                     _f.layout = config.layoutName;
                 }
             }
@@ -122,7 +123,7 @@ var sitebuild = Metalsmith(__dirname)
 	}))	
 	.use(collections({
 	    samples: {
-	        pattern: 'samples/**/*.md',
+	        pattern: '**/samples/**',
 	        sortBy: 'date',
 	        reverse: true
 	    }
@@ -145,32 +146,24 @@ var sitebuild = Metalsmith(__dirname)
         layoutName: 'tutorial.html'
     }))
     .use(findProduct({
-        pattern: 'samples/emdk-for-android',
-        productName: 'EMDK For Android'
-    }))
-    .use(findProductVersion({
-        pattern: 'samples/emdk-for-android/4-0',
-        productVersionName: '4.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'samples/emdk-for-android/3-1',
-        productVersionName: '3.1'
-    }))
-    .use(findProduct({
-        pattern: 'samples/emdk-for-xamarin',
-        productName: 'EMDK For Xamarin'
-    }))
-    .use(findProductVersion({
-        pattern: 'samples/emdk-for-xamarin/1-0',
-        productVersionName: '1.0'
-    }))
-    .use(findProduct({
         pattern: 'emdk-for-android',
         productName: 'EMDK For Android'
     }))
     .use(findProductVersion({
         pattern: 'emdk-for-android/3-1',
         productVersionName: '3.1'
+    }))
+    .use(findProductVersion({
+        pattern: 'emdk-for-android/4-0',
+        productVersionName: '4.0'
+    }))
+    .use(findProduct({
+        pattern: 'emdk-for-xamarin',
+        productName: 'EMDK For Xamarin'
+    }))
+    .use(findProductVersion({
+        pattern: 'emdk-for-xamarin/1-0',
+        productVersionName: '1.0'
     }))
     .use(foldermenu({
         folder: 'emdk-for-android/3-1/'

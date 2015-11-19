@@ -4,17 +4,17 @@
 
             {{#each this.menu}}
                 <div >
-                    <a href="/{{../this.menuroot}}{{this.url}}"><span>{{this.title}}</span></a> 
+                    <a href="{{this.url}}"><span>{{this.title}}</span></a> 
                     {{#if this.items}}
                         <ul style="display:block;">
                         {{#each this.items}}
                             <li>
-                                <a href="/{{../../this.menuroot}}{{this.url}}"><span>{{this.title}}</span></a>
+                                <a href="{{this.url}}"><span>{{this.title}}</span></a>
                                 {{#if this.items}}
                                     <ul >
                                     {{#each this.items}}
                                         <li>
-                                        <a href="/{{../../../this.menuroot}}{{this.url}}"><span>{{this.title}}</span></a>
+                                        <a href="{{this.url}}"><span>{{this.title}}</span></a>
                                         </li>
                                     {{/each}}                        
                                     </ul>

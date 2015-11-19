@@ -23,6 +23,38 @@ var Metalsmith = require('metalsmith'),
 
 Swag.registerHelpers(Handlebars);
 
+var defaultPublish = function(config) {
+    var pattern = new RegExp(config.pattern);
+
+    return function(files, metalsmith, done) {
+        for (var file in files) {
+            if (pattern.test(file)) {
+                var _f = files[file];
+                if (!_f.publish) {
+                    _f.publish = true;
+                }
+            }
+        }
+        done();
+    };
+};
+
+var mxversion = function(config) {
+    var pattern = new RegExp(config.pattern);
+
+    return function(files, metalsmith, done) {
+        for (var file in files) {
+            if (pattern.test(file)) {
+                var _f = files[file];
+                if (!_f.mxversion) {
+                    _f.mxversion = config.mxversion;
+                }
+            }
+        }
+        done();
+    };
+};
+
 var findLayout = function(config) {
     var pattern = new RegExp(config.pattern);
 
@@ -116,6 +148,9 @@ var sitebuild = Metalsmith(__dirname)
 	.use(metaUrl({
 		pattern: '*.md'
 	}))
+    .use(defaultPublish({
+        pattern: '.*'
+    }))
 	.use(inplace({
 	  engine: 'handlebars',
 	  partials: 'partials',
@@ -126,9 +161,16 @@ var sitebuild = Metalsmith(__dirname)
 	        pattern: '**/samples/**',
 	        sortBy: 'date',
 	        reverse: true
-	    }
+	    },
+        mx: {
+            pattern: 'mx/**/*.md'
+        }
 
 	}))
+    .use(findLayout({
+        pattern: 'mx',
+        layoutName: 'guide.html'
+    }))
     .use(findLayout({
         pattern: 'samples',
         layoutName: 'sample.html'
@@ -165,17 +207,30 @@ var sitebuild = Metalsmith(__dirname)
         pattern: 'emdk-for-xamarin/1-0',
         productVersionName: '1.0'
     }))
+    .use(mxversion({
+        pattern: 'mx/4-4/',
+        mxversion: '4.4'
+    }))
+    .use(mxversion({
+        pattern: 'mx/5-0/',
+        mxversion: '5.0'
+    }))
     .use(foldermenu({
         folder: 'emdk-for-android/3-1/'
     }))
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/'
     }))
+    .use(foldermenu({
+        folder: 'mx/4-4/',
+        automenu: true
+    }))
     .use(showdown({}))
     .use(snippet({
       maxLength: 250,
       suffix: '...'
     }))
+    
 	// .use(permalinks())
     // .use(templates('handlebars'))
 	.use(layouts({

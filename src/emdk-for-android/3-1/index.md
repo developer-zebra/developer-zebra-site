@@ -3,226 +3,230 @@ title: EMDK For Android
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 menu:
   - title: Home
-    url: guide/about
+    url: /emdk-for-android/3-1/guide/about
   - title: Getting Started
     items:
-      - file: guide/setup
-      - file: guide/setupDevice
-      - file: tutorial/tutdatacaptureprofile
-      - file: guide/profiles/usingwizard
+      - title: EMDK For Android Setup
+        url: /emdk-for-android/3-1/guide/setup
+      - title: Configuring A Device
+        url: /emdk-for-android/3-1/guide/setupDevice
+      - title: Build Hello EMDK
+        url: /emdk-for-android/3-1/tutorial/tutdatacaptureprofile
+      - title: EMDK Profiles Overview
+        url: /emdk-for-android/3-1/guide/profiles/usingwizard
   - title: Tutorials
     items:
       - title: Profile Manager
         items:
           - title: Basic Data Capture
-            url: tutorial/tutdatacaptureprofile
+            url: /emdk-for-android/3-1/tutorial/tutdatacaptureprofile
           - title: Using Intent Output
-            url: tutorial/tutdatacaptureprofilePt2
+            url: /emdk-for-android/3-1/tutorial/tutdatacaptureprofilePt2
           - title: Multiple Profiles
-            url: tutorial/tutdatacaptureprofilePt3
+            url: /emdk-for-android/3-1/tutorial/tutdatacaptureprofilePt3
           - title: Using Broadcast Intent Output
-            url: tutorial/tutdatacaptureprofilePt4
+            url: /emdk-for-android/3-1/tutorial/tutdatacaptureprofilePt4
           - title: Modifying Profiles
-            url: tutorial/tutModifyBarcodeProfileSettings
+            url: /emdk-for-android/3-1/tutorial/tutModifyBarcodeProfileSettings
           - title: Browser Manager
-            url: tutorial/tutMxBrowserManager
+            url: /emdk-for-android/3-1/tutorial/tutMxBrowserManager
           - title: Camera Manager
-            url: tutorial/tutMxCameraManager
+            url: /emdk-for-android/3-1/tutorial/tutMxCameraManager
           - title: Cellular Manager
-            url: tutorial/tutMxCellularManager
+            url: /emdk-for-android/3-1/tutorial/tutMxCellularManager
           - title: Dev Admin
-            url: tutorial/tutMxDevAdminManager
+            url: /emdk-for-android/3-1/tutorial/tutMxDevAdminManager
           - title: Display Manager
-            url: tutorial/tutMxDisplayManager
+            url: /emdk-for-android/3-1/tutorial/tutMxDisplayManager
           - title: App Manager
-            url: tutorial/tutMxAppManager
+            url: /emdk-for-android/3-1/tutorial/tutMxAppManager
           - title: Set the Default Launcher
-            url: tutorial/tutMxDefaultLauncher
+            url: /emdk-for-android/3-1/tutorial/tutMxDefaultLauncher
           - title: Clock
-            url: tutorial/tutMxClock
+            url: /emdk-for-android/3-1/tutorial/tutMxClock
           - title: Profile Errors
-            url: tutorial/tutMxErrors
+            url: /emdk-for-android/3-1/tutorial/tutMxErrors
           - title: GPRS Manager
-            url: tutorial/tutMxGPRSManager
+            url: /emdk-for-android/3-1/tutorial/tutMxGPRSManager
           - title: Persistence Manager
-            url: tutorial/tutMxPersistManager
+            url: /emdk-for-android/3-1/tutorial/tutMxPersistManager
           - title: Power Key Manager 
-            url: tutorial/tutMxPowerKeyManager
+            url: /emdk-for-android/3-1/tutorial/tutMxPowerKeyManager
           - title: Power Manager
-            url: tutorial/tutMxPowerManager
+            url: /emdk-for-android/3-1/tutorial/tutMxPowerManager
           - title: Wi-Fi
-            url: tutorial/tutMxWiFiManager
+            url: /emdk-for-android/3-1/tutorial/tutMxWiFiManager
           - title: Access Manager
-            url: tutorial/tutMxAccessManager
+            url: /emdk-for-android/3-1/tutorial/tutMxAccessManager
           - title: Apply Mx Profile Silently in a Non-Blocking way
-            url: tutorial/tutApplyProfileSilently
+            url: /emdk-for-android/3-1/tutorial/tutApplyProfileSilently
           - title: Wireless Manager
-            url: tutorial/tutMxWirelessManager
+            url: /emdk-for-android/3-1/tutorial/tutMxWirelessManager
           - title: UI Manager
-            url: tutorial/tutMxUIManager
+            url: /emdk-for-android/3-1/tutorial/tutMxUIManager
           - title: Touch Manager
-            url: tutorial/tutMxTouchManager
+            url: /emdk-for-android/3-1/tutorial/tutMxTouchManager
           - title: Settings Manager
-            url: tutorial/tutMxSettingsManager
+            url: /emdk-for-android/3-1/tutorial/tutMxSettingsManager
           - title: USB Manager
-            url: tutorial/tutMxUSBManager
+            url: /emdk-for-android/3-1/tutorial/tutMxUSBManager
           - title: SD Card Manager
-            url: tutorial/tutMxSDCardManager
+            url: /emdk-for-android/3-1/tutorial/tutMxSDCardManager
           - title: Certificate Manager
-            url: tutorial/tutMxCertificateManager
+            url: /emdk-for-android/3-1/tutorial/tutMxCertificateManager
           - title: Encrypt Manager
-            url: tutorial/tutMxEncryptManager
+            url: /emdk-for-android/3-1/tutorial/tutMxEncryptManager
       - title: Platform Intents
         items:
           - title: Datawedge Intents
-            url: tutorial/tutdatacaptureintent
+            url: /emdk-for-android/3-1/tutorial/tutdatacaptureintent
           - title: Battery Intent
-            url: tutorial/tutbatteryintent
+            url: /emdk-for-android/3-1/tutorial/tutbatteryintent
       - title: Scanning APIs
         items:
           - title: Basic Scanning Tutorial
-            url: tutorial/tutBasicScanningAPI
+            url: /emdk-for-android/3-1/tutorial/tutBasicScanningAPI
           - title: Advanced Scanning Tutorial
-            url: tutorial/tutAdvancedScanningAPI
+            url: /emdk-for-android/3-1/tutorial/tutAdvancedScanningAPI
           - title: Using Bluetooth Scanners
-            url: tutorial/tutBluetoothScannerAPI
+            url: /emdk-for-android/3-1/tutorial/tutBluetoothScannerAPI
       - title: ScanAndPair Remote Device
-        url: tutorial/tutScanAndPairAPI
+        url: /emdk-for-android/3-1/tutorial/tutScanAndPairAPI
       - title: Document Capture
-        url: tutorial/tutSimulScanAPI
+        url: /emdk-for-android/3-1/tutorial/tutSimulScanAPI
   - title: Samples
-    url: samples
+    url: /emdk-for-android/3-1/samples
     items:
       - title: Barcode Sample
-        url: samples/barcode
+        url: /emdk-for-android/3-1/samples/barcode
       - title: DataCapture Profile Sample
-        url: samples/data-capture
+        url: /emdk-for-android/3-1/samples/data-capture
       - title: AppManager Sample
-        url: samples/app-manager
+        url: /emdk-for-android/3-1/samples/app-manager
       - title: Clock Sample
-        url: samples/clock
+        url: /emdk-for-android/3-1/samples/clock
       - title: GPRS Manager Sample
-        url: samples/gprs
+        url: /emdk-for-android/3-1/samples/gprs
       - title: PowerManager Sample
-        url: samples/power
+        url: /emdk-for-android/3-1/samples/power
       - title: Wi-Fi Manager Sample
-        url: samples/wifi
+        url: /emdk-for-android/3-1/samples/wifi
       - title: Wireless Manager Sample
-        url: samples/bluetooth
+        url: /emdk-for-android/3-1/samples/bluetooth
       - title: Scan and Pair Sample
-        url: samples/scanandpair
+        url: /emdk-for-android/3-1/samples/scanandpair
       - title: SimulScan Sample
-        url: samples/simulscan
+        url: /emdk-for-android/3-1/samples/simulscan
       - title: PersonalShopper Sample
-        url: samples/personal-shopper
+        url: /emdk-for-android/3-1/samples/personal-shopper
   - title: Guides
     items:
       - title: SimulScan API
-        url: guide/simulscan_guide
+        url: /emdk-for-android/3-1/guide/simulscan_guide
       - title: Name-Value Pair
-        url: guide/name_value_pair
+        url: /emdk-for-android/3-1/guide/name_value_pair
       - title: PersonalShopper API
-        url: guide/personalshopper
+        url: /emdk-for-android/3-1/guide/personalshopper
       - title: Secure NFC API
-        url: guide/securenfc
+        url: /emdk-for-android/3-1/guide/securenfc
   - title: Profile Manager
     items:
       - title: EMDK Profiles Overview
-        url: guide/profiles/usingwizard
+        url: /emdk-for-android/3-1/guide/profiles/usingwizard
       - title: Access Manager
-        url: guide/profiles/access
+        url: /emdk-for-android/3-1/guide/profiles/access
       - title: Analytics Manager
-        url: guide/profiles/analytics
+        url: /emdk-for-android/3-1/guide/profiles/analytics
       - title: App Manager
-        url: guide/profiles/app
+        url: /emdk-for-android/3-1/guide/profiles/app
       - title: Audio Manager 
-        url: guide/profiles/audio
+        url: /emdk-for-android/3-1/guide/profiles/audio
       - title: Battery Manager 
-        url: guide/profiles/battery
+        url: /emdk-for-android/3-1/guide/profiles/battery
       - title: Browser Manager
-        url: guide/profiles/browser
+        url: /emdk-for-android/3-1/guide/profiles/browser
       - title: Camera Manager
-        url: guide/profiles/camera
+        url: /emdk-for-android/3-1/guide/profiles/camera
       - title: Cellular Manager
-        url: guide/profiles/cellular
+        url: /emdk-for-android/3-1/guide/profiles/cellular
       - title: Certificate Manager
-        url: guide/profiles/cert
+        url: /emdk-for-android/3-1/guide/profiles/cert
       - title: Clock
-        url: guide/profiles/clock
+        url: /emdk-for-android/3-1/guide/profiles/clock
       - title: Component Manager 
-        url: guide/profiles/component
+        url: /emdk-for-android/3-1/guide/profiles/component
       - title: Data Capture
         items:
           - title: Activity Selection
-            url: guide/profiles/profileactivity
+            url: /emdk-for-android/3-1/guide/profiles/profileactivity
           - title: Barcode
-            url: guide/profiles/profilebarcode
+            url: /emdk-for-android/3-1/guide/profiles/profilebarcode
           - title: Intent Output
-            url: guide/profiles/profileintent
+            url: /emdk-for-android/3-1/guide/profiles/profileintent
           - title: IP Output
-            url: guide/profiles/profileIP
+            url: /emdk-for-android/3-1/guide/profiles/profileIP
           - title: Keystroke
-            url: guide/profiles/profilekeystroke
+            url: /emdk-for-android/3-1/guide/profiles/profilekeystroke
           - title: Magstripe
-            url: guide/profiles/profilemsr
+            url: /emdk-for-android/3-1/guide/profiles/profilemsr
       - title: Dev Admin
-        url: guide/profiles/devadmin
+        url: /emdk-for-android/3-1/guide/profiles/devadmin
       - title: DHCP Manager 
-        url: guide/profiles/dhcp
+        url: /emdk-for-android/3-1/guide/profiles/dhcp
       - title: Display Manager
-        url: guide/profiles/display
+        url: /emdk-for-android/3-1/guide/profiles/display
       - title: Encrypt Manager
-        url: guide/profiles/encrypt
+        url: /emdk-for-android/3-1/guide/profiles/encrypt
       - title: GPRS Manager
-        url: guide/profiles/gprs
+        url: /emdk-for-android/3-1/guide/profiles/gprs
       - title: KeyMap Manager 
-        url: guide/profiles/keymap
+        url: /emdk-for-android/3-1/guide/profiles/keymap
       - title: Persistence Manager
-        url: guide/profiles/persistence
+        url: /emdk-for-android/3-1/guide/profiles/persistence
       - title: Power Manager
-        url: guide/profiles/power
+        url: /emdk-for-android/3-1/guide/profiles/power
       - title: PowerKey Manager
-        url: guide/profiles/powerkey
+        url: /emdk-for-android/3-1/guide/profiles/powerkey
       - title: SD Card  Manager
-        url: guide/profiles/sdcard
+        url: /emdk-for-android/3-1/guide/profiles/sdcard
       - title: Settings  Manager
-        url: guide/profiles/settings
+        url: /emdk-for-android/3-1/guide/profiles/settings
       - title: Threat  Manager
-        url: guide/profiles/threat
+        url: /emdk-for-android/3-1/guide/profiles/threat
       - title: Touch  Manager
-        url: guide/profiles/touch
+        url: /emdk-for-android/3-1/guide/profiles/touch
       - title: UI  Manager
-        url: guide/profiles/ui
+        url: /emdk-for-android/3-1/guide/profiles/ui
       - title: USB  Manager
-        url: guide/profiles/usb
+        url: /emdk-for-android/3-1/guide/profiles/usb
       - title: WiFi
-        url: guide/profiles/wifi
+        url: /emdk-for-android/3-1/guide/profiles/wifi
       - title: Wireless  Manager
-        url: guide/profiles/wireless
+        url: /emdk-for-android/3-1/guide/profiles/wireless
       - title: XML  Manager
-        url: guide/profiles/xml
+        url: /emdk-for-android/3-1/guide/profiles/xml
       - title: 
-        url: 
+        url: /emdk-for-android/3-1/
   - title: APIs
     items:
       - title: Core and ProfileManager APIs
-        url: guide/reference/EMDKList
+        url: /emdk-for-android/3-1/guide/reference/EMDKList
       - title: Barcode APIs (Java)
-        url: guide/reference/EMDKList#Barcode APIs
+        url: /emdk-for-android/3-1/guide/reference/EMDKList#Barcode APIs
       - title: ScanAndPair APIs (Java)
-        url: guide/reference/EMDKList#ScanAndPair APIs
+        url: /emdk-for-android/3-1/guide/reference/EMDKList#ScanAndPair APIs
       - title: SimulScan APIs (Java)
-        url: guide/reference/EMDKList#SimulScan APIs
+        url: /emdk-for-android/3-1/guide/reference/EMDKList#SimulScan APIs
       - title: Personal Shopper APIs (Java)
-        url: guide/reference/EMDKList#Personal Shopper APIs
+        url: /emdk-for-android/3-1/guide/reference/EMDKList#Personal Shopper APIs
       - title: Secure NFC APIs (Java)
-        url: guide/reference/EMDKList#Secure NFC APIs
+        url: /emdk-for-android/3-1/guide/reference/EMDKList#Secure NFC APIs
   - title: Platform Intents
     items:
       - title: Datawedge Intents
-        url: guide/reference/refdatacaptureintent
+        url: /emdk-for-android/3-1/guide/reference/refdatacaptureintent
       - title: Battery Intent
-        url: guide/reference/refbatteryintent
+        url: /emdk-for-android/3-1/guide/reference/refbatteryintent
 
 ---
 

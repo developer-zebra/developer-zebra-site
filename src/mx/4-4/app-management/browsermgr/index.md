@@ -1,5 +1,6 @@
 ---
 title: Browser Manager
+description: The Browser Manager allows you to configure browser settings like the default home page.
 ---
 
 ## About BrowserMgr

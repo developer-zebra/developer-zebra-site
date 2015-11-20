@@ -5,13 +5,13 @@ layout: list-products.html
 products:
   - title: EMDK For Android
     description: Java developer guides using EMDK API's, Data Capture, Profile Manager, etc.
-    url: /emdk-for-android/4-0/guide
+    url: /emdk-for-android/4-0/guide/about
     btn-text: Latest Guides
     image: /images/products/emdk-for-android.png
     versions:
-      - url: /emdk-for-android/4-0/guide
+      - url: /emdk-for-android/4-0/guide/about
         menu: "4.0"
-      - url: /emdk-for-android/3-1/guide
+      - url: /emdk-for-android/3-1/guide/about
         menu: "3.1"
   - title: EMDK For Xamarin
     description: C# Xamarin developer guides using EMDK API's, Data Capture, Profile Manager, etc.

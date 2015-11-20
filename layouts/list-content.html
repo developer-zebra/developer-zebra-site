@@ -1,0 +1,68 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="container">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3">
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="container">
+                                    <h2>{{ title }}</h2>
+                                    <p>
+                                    {{#if product}}
+                                    {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                     - {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                         - MX: {{mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <section id="services" >
+                                <div class="container">
+                                <!-- Start of content list -->
+                                {{#each contentlist}}
+                                    <div class="row">
+                                        <div class="features">
+                                            <a href="{{url}}">
+                                            <div class="col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                                                <div class="media service-box">
+                                                    <div class="pull-left">
+                                                        <i class="fa fa-line-chart"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">{{title}}</h4>
+                                                        <p>{{description}}</p>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.col-md-4-->
+                                            </a>
+                                        </div>
+                                    </div><!--/.row-->  
+                                {{/each}}  
+                                </div><!--/.container-->
+                            </section><!--/#services-->
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer}}
+
+

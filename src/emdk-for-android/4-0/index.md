@@ -133,28 +133,34 @@ menu:
     items:
       - title: EMDK Profiles Overview
         url: /emdk-for-android/4-0/guide/profiles/usingwizard
-      - title: Access Manager
-        url: /emdk-for-android/4-0/guide/profiles/access
-      - title: Analytics Manager
-        url: /emdk-for-android/4-0/guide/profiles/analytics
-      - title: App Manager
-        url: /emdk-for-android/4-0/guide/profiles/app
-      - title: Audio Manager 
-        url: /emdk-for-android/4-0/guide/profiles/audio
-      - title: Battery Manager 
-        url: /emdk-for-android/4-0/guide/profiles/battery
-      - title: Browser Manager
-        url: /emdk-for-android/4-0/guide/profiles/browser
-      - title: Camera Manager
-        url: /emdk-for-android/4-0/guide/profiles/camera
-      - title: Cellular Manager
-        url: /emdk-for-android/4-0/guide/profiles/cellular
-      - title: Certificate Manager
-        url: /emdk-for-android/4-0/guide/profiles/cert
-      - title: Clock
-        url: /emdk-for-android/4-0/guide/profiles/clock
-      - title: Component Manager 
-        url: /emdk-for-android/4-0/guide/profiles/component
+      - title: MX 4.4
+        items: 
+          - title: Application Management
+            url: /emdk-for-android/4-0/mx/4-4/app-management
+          - title: Device Configuration
+            url: /emdk-for-android/4-0/mx/4-4/device-configuration
+          - title: Security
+            url: /emdk-for-android/4-0/mx/4-4/security
+          - title: UI Configuration
+            url: /emdk-for-android/4-0/mx/4-4/ui-settings
+          - title: Wireless
+            url: /emdk-for-android/4-0/mx/4-4/wireless
+          - title: MX Framework
+            url: /emdk-for-android/4-0/mx/4-4/mx
+      - title: MX 5.0
+        items: 
+          - title: Application Management
+            url: /emdk-for-android/3-1/mx/5-0/app-management
+          - title: Device Configuration
+            url: /emdk-for-android/3-1/mx/5-0/device-configuration
+          - title: Security
+            url: /emdk-for-android/3-1/mx/5-0/security
+          - title: UI Configuration
+            url: /emdk-for-android/3-1/mx/5-0/ui-settings
+          - title: Wireless
+            url: /emdk-for-android/3-1/mx/5-0/wireless
+          - title: MX Framework
+            url: /emdk-for-android/3-1/mx/5-0/mx
       - title: Data Capture
         items:
           - title: Activity Selection
@@ -169,44 +175,6 @@ menu:
             url: /emdk-for-android/4-0/guide/profiles/profilekeystroke
           - title: Magstripe
             url: /emdk-for-android/4-0/guide/profiles/profilemsr
-      - title: Dev Admin
-        url: /emdk-for-android/4-0/guide/profiles/devadmin
-      - title: DHCP Manager 
-        url: /emdk-for-android/4-0/guide/profiles/dhcp
-      - title: Display Manager
-        url: /emdk-for-android/4-0/guide/profiles/display
-      - title: Encrypt Manager
-        url: /emdk-for-android/4-0/guide/profiles/encrypt
-      - title: GPRS Manager
-        url: /emdk-for-android/4-0/guide/profiles/gprs
-      - title: KeyMap Manager 
-        url: /emdk-for-android/4-0/guide/profiles/keymap
-      - title: Persistence Manager
-        url: /emdk-for-android/4-0/guide/profiles/persistence
-      - title: Power Manager
-        url: /emdk-for-android/4-0/guide/profiles/power
-      - title: PowerKey Manager
-        url: /emdk-for-android/4-0/guide/profiles/powerkey
-      - title: SD Card  Manager
-        url: /emdk-for-android/4-0/guide/profiles/sdcard
-      - title: Settings  Manager
-        url: /emdk-for-android/4-0/guide/profiles/settings
-      - title: Threat  Manager
-        url: /emdk-for-android/4-0/guide/profiles/threat
-      - title: Touch  Manager
-        url: /emdk-for-android/4-0/guide/profiles/touch
-      - title: UI  Manager
-        url: /emdk-for-android/4-0/guide/profiles/ui
-      - title: USB  Manager
-        url: /emdk-for-android/4-0/guide/profiles/usb
-      - title: WiFi
-        url: /emdk-for-android/4-0/guide/profiles/wifi
-      - title: Wireless  Manager
-        url: /emdk-for-android/4-0/guide/profiles/wireless
-      - title: XML  Manager
-        url: /emdk-for-android/4-0/guide/profiles/xml
-      - title: 
-        url: /emdk-for-android/4-0/
   - title: APIs
     items:
       - title: Core and ProfileManager APIs

@@ -1,5 +1,5 @@
 ---
-title: UI Manager
+title: KeyMapping Manager
 description: The KeyMappingMgr allows you to modify what behavior a given key will exhibit when pressed.
 ---
 

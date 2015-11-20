@@ -28,7 +28,7 @@ var defaultPublish = function(config) {
 
     return function(files, metalsmith, done) {
         for (var file in files) {
-            if (pattern.test(file)) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
                 var _f = files[file];
                 if (!_f.publish) {
                     _f.publish = true;
@@ -44,7 +44,7 @@ var mxversion = function(config) {
 
     return function(files, metalsmith, done) {
         for (var file in files) {
-            if (pattern.test(file)) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
                 var _f = files[file];
                 if (!_f.mxversion) {
                     _f.mxversion = config.mxversion;
@@ -60,10 +60,14 @@ var findLayout = function(config) {
 
     return function(files, metalsmith, done) {
         for (var file in files) {
-            if (pattern.test(file)) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
                 var _f = files[file];
+                // if(_f.path.dir =='emdk-for-android/3-1/mx/4-4/app-management'){
+                //     console.log(_f)
+
+                // }
                 if (!_f.layout) {
-                    // console.log('Layout: %s : %s',_f.path.dir, config.layoutName);
+                    
                     _f.layout = config.layoutName;
                 }
             }
@@ -77,7 +81,7 @@ var findProduct = function(config) {
 
     return function(files, metalsmith, done) {
         for (var file in files) {
-            if (pattern.test(file)) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
                 var _f = files[file];
                 if (!_f.product) {
                     _f.product = config.productName;
@@ -94,7 +98,7 @@ var findProductVersion = function(config) {
     return function(files, metalsmith, done) {
         for (var file in files) {
             // console.log(file);
-            if (pattern.test(file)) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
                 var _f = files[file];
                 if (!_f.productversion) {
                     _f.productversion = config.productVersionName;
@@ -164,6 +168,9 @@ var sitebuild = Metalsmith(__dirname)
 	    },
         mx: {
             pattern: 'mx/**/*.md'
+        },
+        md: {
+            pattern: '/**/**.md'
         }
 
 	}))

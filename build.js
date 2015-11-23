@@ -226,6 +226,10 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/3-1/'
     }))
     .use(foldermenu({
+        folder: 'emdk-for-android/4-0/api/',
+        automenu: true
+    }))
+    .use(foldermenu({
         folder: 'emdk-for-android/4-0/'
     }))
     .use(foldermenu({

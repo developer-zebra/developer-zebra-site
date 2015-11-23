@@ -1,0 +1,70 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3">
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h2>{{ title }}</h2>
+                                    <p>
+                                    {{#if product}}
+                                    {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                     - {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                         - MX: {{mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" id="guides">
+                            <div class="waterfall columns" data-col-min-width="550" data-default-container-width="915" data-autoresize="true" >
+                                {{#each this.contentlist}}
+                                  <div >
+                                        <a href="{{this.url}}"><h5></h5></a> 
+                                        {{#if this.items}}
+                                            <ul style="display:block;">
+                                            {{#each this.items}}
+                                                <li>
+                                                    <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                                    {{#if this.items}}
+                                                        <ul >
+                                                        {{#each this.items}}
+                                                            <li>
+                                                            <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                                            </li>
+                                                        {{/each}}                        
+                                                        </ul>
+                                                    {{/if}}
+                                                </li>
+                                            {{/each}}                        
+                                            </ul>
+                                        {{/if}}
+                                    </div>
+                                {{/each}}
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer}}
+
+

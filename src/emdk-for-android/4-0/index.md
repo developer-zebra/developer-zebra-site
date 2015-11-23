@@ -134,6 +134,7 @@ menu:
       - title: EMDK Profiles Overview
         url: /emdk-for-android/4-0/guide/profiles/usingwizard
       - title: MX 4.4
+        url: /emdk-for-android/4-0/mx/4-4
         items: 
           - title: Application Management
             url: /emdk-for-android/4-0/mx/4-4/app-management
@@ -147,7 +148,22 @@ menu:
             url: /emdk-for-android/4-0/mx/4-4/wireless
           - title: MX Framework
             url: /emdk-for-android/4-0/mx/4-4/mx
+          - title: Data Capture
+            items:
+              - title: Activity Selection
+                url: /emdk-for-android/4-0/guide/profiles/profileactivity
+              - title: Barcode
+                url: /emdk-for-android/4-0/guide/profiles/profilebarcode
+              - title: Intent Output
+                url: /emdk-for-android/4-0/guide/profiles/profileintent
+              - title: IP Output
+                url: /emdk-for-android/4-0/guide/profiles/profileIP
+              - title: Keystroke
+                url: /emdk-for-android/4-0/guide/profiles/profilekeystroke
+              - title: Magstripe
+                url: /emdk-for-android/4-0/guide/profiles/profilemsr
       - title: MX 5.0
+        url: /emdk-for-android/4-0/mx/5-0
         items: 
           - title: Application Management
             url: /emdk-for-android/3-1/mx/5-0/app-management
@@ -161,34 +177,39 @@ menu:
             url: /emdk-for-android/3-1/mx/5-0/wireless
           - title: MX Framework
             url: /emdk-for-android/3-1/mx/5-0/mx
-      - title: Data Capture
-        items:
-          - title: Activity Selection
-            url: /emdk-for-android/4-0/guide/profiles/profileactivity
-          - title: Barcode
-            url: /emdk-for-android/4-0/guide/profiles/profilebarcode
-          - title: Intent Output
-            url: /emdk-for-android/4-0/guide/profiles/profileintent
-          - title: IP Output
-            url: /emdk-for-android/4-0/guide/profiles/profileIP
-          - title: Keystroke
-            url: /emdk-for-android/4-0/guide/profiles/profilekeystroke
-          - title: Magstripe
-            url: /emdk-for-android/4-0/guide/profiles/profilemsr
+          - title: Data Capture
+            items:
+              - title: Activity Selection
+                url: /emdk-for-android/4-0/guide/profiles/profileactivity
+              - title: Barcode
+                url: /emdk-for-android/4-0/guide/profiles/profilebarcode
+              - title: Intent Output
+                url: /emdk-for-android/4-0/guide/profiles/profileintent
+              - title: IP Output
+                url: /emdk-for-android/4-0/guide/profiles/profileIP
+              - title: Keystroke
+                url: /emdk-for-android/4-0/guide/profiles/profilekeystroke
+              - title: Magstripe
+                url: /emdk-for-android/4-0/guide/profiles/profilemsr
   - title: APIs
+    url: /emdk-for-android/4-0/api
     items:
       - title: Core and ProfileManager APIs
-        url: /emdk-for-android/4-0/guide/reference/EMDKList
-      - title: Barcode APIs (Java)
-        url: /emdk-for-android/4-0/guide/reference/EMDKList#Barcode APIs
-      - title: ScanAndPair APIs (Java)
-        url: /emdk-for-android/4-0/guide/reference/EMDKList#ScanAndPair APIs
-      - title: SimulScan APIs (Java)
-        url: /emdk-for-android/4-0/guide/reference/EMDKList#SimulScan APIs
-      - title: Personal Shopper APIs (Java)
-        url: /emdk-for-android/4-0/guide/reference/EMDKList#Personal Shopper APIs
-      - title: Secure NFC APIs (Java)
-        url: /emdk-for-android/4-0/guide/reference/EMDKList#Secure NFC APIs
+        url: /emdk-for-android/4-0/api/core
+      - title: Barcode APIs
+        url: /emdk-for-android/4-0/api/barcode
+      - title: ScanAndPair APIs 
+        url: /emdk-for-android/4-0/api/scanandpair
+      - title: SimulScan APIs 
+        url: /emdk-for-android/4-0/api/simulscan
+      - title: Personal Shopper APIs 
+        url: /emdk-for-android/4-0/api/PersonalShopper
+      - title: Secure NFC APIs 
+        url: /emdk-for-android/4-0/api/securenfc
+      - title: Payment APIs
+        url: /emdk-for-android/4-0/api/payment
+      - title: Serial Comm APIs
+        url: /emdk-for-android/4-0/api/serialcomm
   - title: Platform Intents
     items:
       - title: Datawedge Intents

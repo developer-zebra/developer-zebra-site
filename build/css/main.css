@@ -327,7 +327,7 @@ ul.nostyle i {
   margin-top: 80px;
 }
 #services {
-  padding: 100px 0 75px;
+  /*padding: 100px 0 75px;*/
 }
 .media.service-box {
   margin: 25px 0;
@@ -1050,7 +1050,7 @@ ul.nostyle i {
 }
 }
 .content-with-sidebar .tree-sidebar {
-    position:relative
+    position:relative;
 }
 .content-with-sidebar .tree-sidebar ul,
 .content-with-sidebar .tree-sidebar li {
@@ -1236,7 +1236,7 @@ ul.nostyle i {
     clear: both
 }
 
-.columns.waterfall ul{
+.columns.waterfall ul,li{
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -1252,8 +1252,26 @@ ul.nostyle i {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  list-style:none;
+  padding: 0;
+    border:0;
+    margin:0;
+    font:inherit;
+    color:inherit;
 
+}
 
+.columns.waterfall li a:hover {
+    background:#ecf0f1
+}
+.columns.waterfall li a:hover {
+    background:#ecf0f1
+}
+.columns.waterfall li a{
+    display:  block;
+    padding: 0px 0px 0px 10px;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 #guides .columns .width-9 {

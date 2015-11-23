@@ -404,9 +404,9 @@
                                         <h4 class="media-heading"></h4>
                                         <p></p><h2 id="overview">Overview</h2>
 
-<p>This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing use of all cameras on your Symbol devices using <a href="/emdk-for-android/3-1/guide/profiles/camera">Camera Manager</a> feature of Mx. Basically, it will let you control whether or not to allow use of Front-Camera, Rear-Camera or both.  </p>
+<p>This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing use of all cameras on your Symbol devices using <a href="/emdk-for-android/4-0/guide/profiles/camera">Camera Manager</a> feature of Mx. Basically, it will let you control whether or not to allow use of Front-Camera, Rear-Camera or both.  </p>
 
-<p>We will now create a tutorial to disable the use of all cameras and then enable them back on your Symbol Android device using Mx <a href="/emdk-for-android/3-1/guide/profiles/camera">Camera Manager</a> feature. </p>
+<p>We will now create a tutorial to disable the use of all cameras and then enable them back on your Symbol Android device using Mx <a href="/emdk-for-android/4-0/guide/profiles/camera">Camera Manager</a> feature. </p>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -426,9 +426,9 @@
   <p>Note: 1. Provide "CameraManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4. </p>
 </blockquote>
 
-<p>If you are using Android Studio, click <a href="/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
+<p>If you are using Android Studio, click <a href="/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
 
 <h2 id="enablingtheemdk">Enabling the EMDK</h2>
 
@@ -438,12 +438,12 @@
   <p>Note: Camera Manager feature requires Symbol devices with Android KitKat 4.4. So select <code>EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)</code> as the minimum SDK for this tutorial.</p>
 </blockquote>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT">here</a> for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT">here</a> for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  </p>
 
 <h2 id="addingthecameramanagerprofilefeature">Adding The Camera Manager Profile Feature</h2>
 
 <ol>
-<li><p>Click <a href="/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
+<li><p>Click <a href="/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
 
 <li><p>Provide "CameraProfile" as the Profile Name for this tutorial.</p>
 
@@ -648,7 +648,7 @@ if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML) {
 }
 </code></pre>
 
-<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it retuns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
+<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it retuns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
 
 <blockquote>
   <p>Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.</p>
@@ -887,11 +887,11 @@ protected void onDestroy() {
 
 <p><img src="images/MxCameraManagerTutorialImages/home_screen.png" alt="img"></p></li>
 
-<li><p>Now open the Camera application and you would see that the use of Camera has been enabled back through Profile Wizard using <a href="/emdk-for-android/3-1/guide/profiles/camera">Camera Manager</a> feature of Mx.</p>
+<li><p>Now open the Camera application and you would see that the use of Camera has been enabled back through Profile Wizard using <a href="/emdk-for-android/4-0/guide/profiles/camera">Camera Manager</a> feature of Mx.</p>
 
 <p><img src="images/MxCameraManagerTutorialImages/camera_enabled.png" alt="img"> </p>
 
-<p>This is how Camera Manager lets us Enable/Disable the use of Cameras on Symbol devices through Profile Manager Wizard using <a href="/emdk-for-android/3-1/guide/profiles/camera">Camera Manager</a> feature of Mx. </p></li>
+<p>This is how Camera Manager lets us Enable/Disable the use of Cameras on Symbol devices through Profile Manager Wizard using <a href="/emdk-for-android/4-0/guide/profiles/camera">Camera Manager</a> feature of Mx. </p></li>
 </ol>
 
 <h2 id="importantprogrammingtips">Important Programming Tips</h2>

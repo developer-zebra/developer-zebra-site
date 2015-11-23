@@ -11,98 +11,98 @@ The EMDK for Android allows you to easily access various capabilities of your An
 
 EMDK Data Capture profiles allow you to access and configure a devices bar code scanner and magstripe reader, along with how the data captured should be transmitted to your application. There are typically three components that are used to make this work:
 
-* [Activity Selector](/emdk-for-android/3-1/guide/profiles/profileactivity) - Automatically activates the profile based on application & activity combinations.
-* Input Sources - Choose if [Barcode](/emdk-for-android/3-1/guide/profiles/profilebarcode) & [MSR](/emdk-for-android/3-1/guide/profiles/profilemsr) is the source of the data.
-* Output Sources - Output the input source data as a [Keystroke](/emdk-for-android/3-1/guide/profiles/profilekeystroke), [Intent](/emdk-for-android/3-1/guide/profiles/profileintent) or [IP](/emdk-for-android/3-1/guide/profiles/profileIP) output.
+* [Activity Selector](/emdk-for-android/4-0/guide/profiles/profileactivity) - Automatically activates the profile based on application & activity combinations.
+* Input Sources - Choose if [Barcode](/emdk-for-android/4-0/guide/profiles/profilebarcode) & [MSR](/emdk-for-android/4-0/guide/profiles/profilemsr) is the source of the data.
+* Output Sources - Output the input source data as a [Keystroke](/emdk-for-android/4-0/guide/profiles/profilekeystroke), [Intent](/emdk-for-android/4-0/guide/profiles/profileintent) or [IP](/emdk-for-android/4-0/guide/profiles/profileIP) output.
 
 ###Access Manager
-The [Access Manager](/emdk-for-android/3-1/guide/profiles/access) profile feature allows you to configure a set of applications that will be allowed to run on the device. When a profile with this feature is enabled, the device will only allow applications on the WhileList to be executed.
+The [Access Manager](/emdk-for-android/4-0/guide/profiles/access) profile feature allows you to configure a set of applications that will be allowed to run on the device. When a profile with this feature is enabled, the device will only allow applications on the WhileList to be executed.
 
 ###Analytics Manager
-The [Analytics Manager](/emdk-for-android/3-1/guide/profiles/analytics) profile feature allows you to configure what data about a device should be collected, and where the collected data should be stored.
+The [Analytics Manager](/emdk-for-android/4-0/guide/profiles/analytics) profile feature allows you to configure what data about a device should be collected, and where the collected data should be stored.
 
 ###App Manager
-The [App Manager](/emdk-for-android/3-1/guide/profiles/app) profile feature allows you to install, upgrade, remove, enable, disable applications from the device. It also allows you to change the current application launcher, clear recent app list and much more.
+The [App Manager](/emdk-for-android/4-0/guide/profiles/app) profile feature allows you to install, upgrade, remove, enable, disable applications from the device. It also allows you to change the current application launcher, clear recent app list and much more.
 
 ###Audio Manager
-The [Audio Manager](/emdk-for-android/3-1/guide/profiles/audio) profile feature allows you to manage enhanced audio volume control configurations like Mute/Vibrate State and Current Active Profile.
+The [Audio Manager](/emdk-for-android/4-0/guide/profiles/audio) profile feature allows you to manage enhanced audio volume control configurations like Mute/Vibrate State and Current Active Profile.
 
 ###Battery Manager
-Zebra's Device batteries store information in their internal memory, for instance, the number of charge cycles a battery has accumulated. The [Battery Manager](/emdk-for-android/3-1/guide/profiles/battery) profile feature allows the developer to modify that Decommission Threshold from its factory setting.
+Zebra's Device batteries store information in their internal memory, for instance, the number of charge cycles a battery has accumulated. The [Battery Manager](/emdk-for-android/4-0/guide/profiles/battery) profile feature allows the developer to modify that Decommission Threshold from its factory setting.
 
 ###Browser Manager
-The [Browser Manager](/emdk-for-android/3-1/guide/profiles/browser) profile feature allows you to control the web browser on the device. For example you can set the browser homepage.
+The [Browser Manager](/emdk-for-android/4-0/guide/profiles/browser) profile feature allows you to control the web browser on the device. For example you can set the browser homepage.
 
 ###Camera Manager
-The [Camera Manager](/emdk-for-android/3-1/guide/profiles/camera) profile feature allows you to control access to the cameras in a device. For example you can disable the user from using all cameras on the device.
+The [Camera Manager](/emdk-for-android/4-0/guide/profiles/camera) profile feature allows you to control access to the cameras in a device. For example you can disable the user from using all cameras on the device.
 
 ###Cellular Manager
-The [Cellular Manager](/emdk-for-android/3-1/guide/profiles/cellular) profile feature allows you to configure options of the cellular radio on your device. For example you can turn off data roaming.
+The [Cellular Manager](/emdk-for-android/4-0/guide/profiles/cellular) profile feature allows you to configure options of the cellular radio on your device. For example you can turn off data roaming.
 
 ###Cert Manager
-The [Cert Manager](/emdk-for-android/3-1/guide/profiles/cert) profile feature allows you to install or uninstall certificates that can be used identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome.
+The [Cert Manager](/emdk-for-android/4-0/guide/profiles/cert) profile feature allows you to install or uninstall certificates that can be used identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome.
 
 ###Clock
-The [Clock Manager](/emdk-for-android/3-1/guide/profiles/clock) profile feature allows you to set the devices current date, time and timezone.
+The [Clock Manager](/emdk-for-android/4-0/guide/profiles/clock) profile feature allows you to set the devices current date, time and timezone.
 
 ###Component Manager
-The [Component Manager](/emdk-for-android/3-1/guide/profiles/component) profile feature allows you to manage the state of Components, such as a device's Ethernet Port.
+The [Component Manager](/emdk-for-android/4-0/guide/profiles/component) profile feature allows you to manage the state of Components, such as a device's Ethernet Port.
 
 ###Device Admin Manager
-The [Device Admin Manager](/emdk-for-android/3-1/guide/profiles/devadmin) profile feature allows you to manage applications allowed configure settings on the device.
+The [Device Admin Manager](/emdk-for-android/4-0/guide/profiles/devadmin) profile feature allows you to manage applications allowed configure settings on the device.
 
 ###DHCP Manager
-The [DHCP Manager](/emdk-for-android/3-1/guide/profiles/dhcp) profile feature allows you to control various DHCP configuration options.
+The [DHCP Manager](/emdk-for-android/4-0/guide/profiles/dhcp) profile feature allows you to control various DHCP configuration options.
 
 ###Display Manager
-The [Display Manager](/emdk-for-android/3-1/guide/profiles/display) profile feature allows you to control the screen timeout value to conserve power.
+The [Display Manager](/emdk-for-android/4-0/guide/profiles/display) profile feature allows you to control the screen timeout value to conserve power.
 
 ###Encrypt Manager
-The [Encrypt Manager](/emdk-for-android/3-1/guide/profiles/encrypt) profile feature allows you to set encryption policies on a device through MX XML. For example a developer can create an EFS for storing application data.
+The [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) profile feature allows you to set encryption policies on a device through MX XML. For example a developer can create an EFS for storing application data.
 
 ###GPRS Manager
-The [GPRS Manager](/emdk-for-android/3-1/guide/profiles/gprs) profile feature allows you to configure GPRS APN settings for a carrier's network.
+The [GPRS Manager](/emdk-for-android/4-0/guide/profiles/gprs) profile feature allows you to configure GPRS APN settings for a carrier's network.
 
 ###KeyMap Manager
-The [KeyMap Manager](/emdk-for-android/3-1/guide/profiles/keymap) profile feature allows you remap the usage of the device's hardware keys.
+The [KeyMap Manager](/emdk-for-android/4-0/guide/profiles/keymap) profile feature allows you remap the usage of the device's hardware keys.
 
 ###Persistence Manager
-The [Persistence Manager](/emdk-for-android/3-1/guide/profiles/persistence) profile feature allows you to keep the MX features persistent on a device even after a reset.
+The [Persistence Manager](/emdk-for-android/4-0/guide/profiles/persistence) profile feature allows you to keep the MX features persistent on a device even after a reset.
 
 ###Power Key Manager
-The [PowerKey Manager](/emdk-for-android/3-1/guide/profiles/powerkey) profile feature allows you to control which options appear on the power menu on the device.
+The [PowerKey Manager](/emdk-for-android/4-0/guide/profiles/powerkey) profile feature allows you to control which options appear on the power menu on the device.
 
 ###Power Manager
-The [Power Manager](/emdk-for-android/3-1/guide/profiles/power) profile feature allows you to perform power management operations such as putting the device into Sleep mode, re-power or perform an OS Update. It also allows you to perform Enterprise Reset, Factory Reset and full device wipe. The action will be performed when the profile is enabled.
+The [Power Manager](/emdk-for-android/4-0/guide/profiles/power) profile feature allows you to perform power management operations such as putting the device into Sleep mode, re-power or perform an OS Update. It also allows you to perform Enterprise Reset, Factory Reset and full device wipe. The action will be performed when the profile is enabled.
 
 ###SD Card Manager
-The [SD Card Manager](/emdk-for-android/3-1/guide/profiles/sdcard) profile feature allows you to manage the use of the devices SD card.
+The [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) profile feature allows you to manage the use of the devices SD card.
 
 ###Settings Manager
-The [Settings Manager](/emdk-for-android/3-1/guide/profiles/settings) profile feature allows you to manage settings UI configuration by providing the ability to invoke Enterprise Reset in Settings UI of your device.
+The [Settings Manager](/emdk-for-android/4-0/guide/profiles/settings) profile feature allows you to manage settings UI configuration by providing the ability to invoke Enterprise Reset in Settings UI of your device.
 
 ###Threat Manager
-The [Threat Manager](/emdk-for-android/3-1/guide/profiles/threat) profile feature allows you to control what security threats a device actively monitors and how to respond.
+The [Threat Manager](/emdk-for-android/4-0/guide/profiles/threat) profile feature allows you to control what security threats a device actively monitors and how to respond.
 
 ###Touch Manager
-The [Touch Manager](/emdk-for-android/3-1/guide/profiles/touch) profile feature allows you to set the Touch Mode on your device in order to interact with User Interface.
+The [Touch Manager](/emdk-for-android/4-0/guide/profiles/touch) profile feature allows you to set the Touch Mode on your device in order to interact with User Interface.
 
 ###UI Manager
-The [UI Manager](/emdk-for-android/3-1/guide/profiles/ui) profile feature allows you to manage UI configurations using its UI Manager parameters.
+The [UI Manager](/emdk-for-android/4-0/guide/profiles/ui) profile feature allows you to manage UI configurations using its UI Manager parameters.
 
 ###USB Manager
-The [USB Manager](/emdk-for-android/3-1/guide/profiles/usb) profile feature allows you to manage USB configurations of your device.
+The [USB Manager](/emdk-for-android/4-0/guide/profiles/usb) profile feature allows you to manage USB configurations of your device.
 
 ###Wi-FI
-The [Wi-Fi](/emdk-for-android/3-1/guide/profiles/wifi) profile feature allows you to manage Wi-Fi profiles available on the device as wells Wi-Fi settings Band and Channel selection, 802.11d / country configuration, and Disable / Enable, etc.
+The [Wi-Fi](/emdk-for-android/4-0/guide/profiles/wifi) profile feature allows you to manage Wi-Fi profiles available on the device as wells Wi-Fi settings Band and Channel selection, 802.11d / country configuration, and Disable / Enable, etc.
 
 ###Wireless Manager
-The [Wireless Manager](/emdk-for-android/3-1/guide/profiles/wireless) profile feature allows you to configure wireless devices such as Bluetooth, and NFC.
+The [Wireless Manager](/emdk-for-android/4-0/guide/profiles/wireless) profile feature allows you to configure wireless devices such as Bluetooth, and NFC.
 
 > The Wifi radio is configured through Wi-Fi Manager profile not this Wireless Manager Profile
 
 ###XML Manager
-The [XML Manager](/emdk-for-android/3-1/guide/profiles/xml) profile feature allows you to specify various XML processing modes to be used.
+The [XML Manager](/emdk-for-android/4-0/guide/profiles/xml) profile feature allows you to specify various XML processing modes to be used.
 
 
 ##Using the EMDK Profile Manager
@@ -206,7 +206,7 @@ Profile Manager is an exclusive EMDK technology offered within your IDE, providi
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
 
 ##Using the Profile Manager API
-Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/3-1/guide/reference/EMDKList). These profiles will NOT be applied on the device until it is processed using these APIs.
+Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/4-0/guide/reference/EMDKList). These profiles will NOT be applied on the device until it is processed using these APIs.
 
 ### Multiple Ways to Access
 In the ProfileManager API, you will see three methods for `processProfile`. Essentially the last parameter, `extraData`, is one of three types:
@@ -285,7 +285,7 @@ To modify a profile, you would:
 ## Usage Notes
 
 ### Getting Started with Tutorial
-This is an overview of how you can create and integrate Profiles using EMDK Profile Manager. Click [here](/emdk-for-android/3-1/tutorial/tutdatacaptureprofile) to get started with a detailed tutorial on Data Capture Profiles to understand better.  
+This is an overview of how you can create and integrate Profiles using EMDK Profile Manager. Click [here](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile) to get started with a detailed tutorial on Data Capture Profiles to understand better.  
 
 ### Multiple Instance of Features
 There should only be one instance of the DataCapture feature. The EMDK Profile Manager will not allow you to add multiple DataCapture features, but may happen if you are manually editing the EMDKConfig.xml. Other profile features can have multiple instances and may be required in some cases. For example, you may need two 'Certificate Manager' features. The first one to initialize the certificate store and the second one to install a new certificate.

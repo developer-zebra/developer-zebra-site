@@ -44,7 +44,7 @@ You may choose to install the Battery Sample Application.apk or to run the proje
 
 
 ## How This Sample Was Built 
-A [Tutorial](/emdk-for-android/3-1/tutorial/tutbatteryintent) walks through how this sample application was built. 
+A [Tutorial](/emdk-for-android/4-0/tutorial/tutbatteryintent) walks through how this sample application was built. 
 
 ## Download
 The project [source](https://s3.amazonaws.com/emdk/Tutorials/BatterySampleApplication.zip) and [application](https://s3.amazonaws.com/emdk/Tutorials/BatterySampleApplication.apk.zip) to this tutorial can be downloaded (Internet Connection Required).

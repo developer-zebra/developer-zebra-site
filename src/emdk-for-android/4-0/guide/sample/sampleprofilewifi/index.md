@@ -21,13 +21,13 @@ The available actions are:
 This sample application will allow you to perform all the above mentioned Wi-Fi actions on Symbol device.
 
 ##Prerequisites
-[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
 
 ##Using This Sample
 

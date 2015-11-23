@@ -6,7 +6,7 @@ title:  Creating Project using Eclipse with ADT
 This tutorial helps you creating a new Android application project using Eclipse ADT. This is going to be a common step for all the tutorials that use [EMDK for Android](https://developer.motorolasolutions.com/community/android/emdk) API.
 
 > Note:
-> If you have been using Eclipse with ADT, be aware that [Android Studio](http://developer.android.com/sdk/index.html) is now the official IDE for Android, so you should migrate to [Android Studio](http://developer.android.com/sdk/index.html) to receive all the latest IDE updates. Click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio) to create a new Android application project using Android Studio.
+> If you have been using Eclipse with ADT, be aware that [Android Studio](http://developer.android.com/sdk/index.html) is now the official IDE for Android, so you should migrate to [Android Studio](http://developer.android.com/sdk/index.html) to receive all the latest IDE updates. Click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio) to create a new Android application project using Android Studio.
 
 
 ## Creating The Project

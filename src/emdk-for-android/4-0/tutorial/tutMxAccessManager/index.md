@@ -4,7 +4,7 @@ title:  Controlling Application Access using Access Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on controlling access to the device's applications using [Access Manager](/emdk-for-android/3-1/guide/profiles/access) feature of Mx. The [Access Manager](/emdk-for-android/3-1/guide/profiles/access) feature allows you to configure a set of applications that will be allowed to run and install on the device. When a profile with this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select "Single User Without Whitelist". Overall, the Access Manager supports following features.
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on controlling access to the device's applications using [Access Manager](/emdk-for-android/4-0/guide/profiles/access) feature of Mx. The [Access Manager](/emdk-for-android/4-0/guide/profiles/access) feature allows you to configure a set of applications that will be allowed to run and install on the device. When a profile with this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select "Single User Without Whitelist". Overall, the Access Manager supports following features.
 
    > Note: "Enable Whitelist" refers to "Single User Mode with Whitelist". "Disable Whitelist" refers to "Single User Mode without Whitelist" options in the wizard.
 
@@ -46,17 +46,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxAccessManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The Access Manager Profile Feature
-1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "AccessManagerProfile" as the Profile Name for this tutorial.
 
@@ -244,13 +244,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
 		   }
 		}
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
 	> Note: 2. If the status is other than `CHECK_XML`, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.
 
-	Now we will call a method `handleEMDKResult` in case of `CHECK_XML` status to handle this [EMDKResults](/emdk-for-android/3-1/api/EMDKResults), which we will create in the next step.
+	Now we will call a method `handleEMDKResult` in case of `CHECK_XML` status to handle this [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), which we will create in the next step.
 
 		:::java
 		// Method call to handle EMDKResult
@@ -260,7 +260,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
     
     ![img](images/MxAccessManagerTutorialImages/on_opened_method.jpg)
 
-4. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/3-1/api/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
+4. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
 
 		:::java
 		// Method to handle EMDKResult by extracting response and parsing it
@@ -799,7 +799,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
 
     ![img](images/MxAccessManagerTutorialImages/on_click_listener.jpg)
 
-16. Finally, we will implement `modifyAccessManagerProfileXML` method. This is the method that actually implements Access Manager configurations set by the user. It prepares an xml input for the `processProfile` method based on "value" attribute of different Access Manager configurations. It then calls the `handleEMDKResult` method that we have already created to handle the [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) and display the output.
+16. Finally, we will implement `modifyAccessManagerProfileXML` method. This is the method that actually implements Access Manager configurations set by the user. It prepares an xml input for the `processProfile` method based on "value" attribute of different Access Manager configurations. It then calls the `handleEMDKResult` method that we have already created to handle the [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) and display the output.
 
     > Note: Please refer to code comments of `modifyAccessManagerProfileXML` method to understand more about "value" attribute.
     > The global integres hold these "value" attributes based on user selection of various Access Manager features (Enable/Disable Whitelist, System Settings, Add/Delete Packages to/from whitelist etc.).

@@ -34,16 +34,16 @@ Installing Java Development Kit (JDK) 7
 ###Android Studio
 Android studio is now Google's official IDE for Android development. Using Android Studio will give you access to the latest IDE updates.
 
-**Windows** - Follow this [**guide**](/emdk-for-android/3-1/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
+**Windows** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
 
-**Mac** - Follow this [**guide**](/emdk-for-android/3-1/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
+**Mac** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
 
 
 
 ###Eclipse-ADT bundle
 Since the 1.0 release of Android Studio, Google no longer offers the Eclipse based ADT bundle. However, the Eclipse IDE can be downloaded separately and the ADT can be installed as a plugin. The EMDK installer still supports the use of Eclipse to develop "EMDK for Android" applications.
 
-**Windows** - Follow this [**guide**](/emdk-for-android/3-1/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
+**Windows** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
 
 **Mac** - EMDK for android development in Eclipse on Mac, is not supported.
 

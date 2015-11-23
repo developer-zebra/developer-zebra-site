@@ -6,13 +6,13 @@ title: Clock Profile Feature Sample#
 One of the features of the EMDK for Android is the ability to set the system clock. This sample application will show you how you can create a custom application for setting the system time. 
 
 ##Prerequisites
-[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
+[See Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
 
 ##Deploying The Sample Application
-[Using the EMDK Samples](/emdk-for-android/3-1/guide/sample/emdksamples)
+[Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
 
 ##Using This Sample
 1. When the application starts it should look like the following.  

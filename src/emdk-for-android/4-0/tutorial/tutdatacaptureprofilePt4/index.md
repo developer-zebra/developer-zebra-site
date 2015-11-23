@@ -3,18 +3,18 @@ title:  Using Broadcast Intent in DataCapture Profiles
 ---
 ## Developing an EMDK for Android Application Part 4
 
-This guide will walk you through adding broadcast intent support to the Android application you made using [Developing an EMDK for Android Application Part 3](/emdk-for-android/3-1/tutorial/tutdatacaptureprofilePt3).
+This guide will walk you through adding broadcast intent support to the Android application you made using [Developing an EMDK for Android Application Part 3](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt3).
 
 ###Prerequisites
 
 * Java Development Kit (JDK)
 * Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
 * EMDK for Android 
-* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/3-1/guide/tutorial/tutdatacaptureprofile)
-* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/3-1/guide/tutorial/tutdatacaptureprofilePt2)
-* Completion of [Developing an EMDK for Android Application Part 3](/emdk-for-android/3-1/guide/tutorial/tutdatacaptureprofilePt3)
+* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofile)
+* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofilePt2)
+* Completion of [Developing an EMDK for Android Application Part 3](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofilePt3)
  
-For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/3-1/guide/setup).
+For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/4-0/guide/setup).
 
 ##Using EMDK Wizard and EMDK for Android Broadcast Intents.
 

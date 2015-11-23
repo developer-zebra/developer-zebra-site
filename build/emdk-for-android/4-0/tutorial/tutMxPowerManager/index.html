@@ -404,7 +404,7 @@
                                         <h4 class="media-heading"></h4>
                                         <p></p><h2 id="overview">Overview</h2>
 
-<p>This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on <a href="/emdk-for-android/3-1/guide/profiles/power">Power Manager</a> API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:</p>
+<p>This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on <a href="/emdk-for-android/4-0/guide/profiles/power">Power Manager</a> API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:</p>
 
 <p><strong>1. Sleep Mode:</strong></p>
 
@@ -458,9 +458,9 @@
   <p>Note: Provide "MxPowerManagerTutorial" as the project name for this tutorial.</p>
 </blockquote>
 
-<p>If you are using Android Studio, click <a href="/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
+<p>If you are using Android Studio, click <a href="/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
 
 <h2 id="enablingtheemdk">Enabling the EMDK</h2>
 
@@ -469,7 +469,7 @@
 <h2 id="addingthepowermanagerprofilefeature">Adding The Power Manager Profile Feature</h2>
 
 <ol>
-<li><p>Click <a href="/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
+<li><p>Click <a href="/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
 
 <li><p>Provide "PowerManagerProfile" as the Profile Name for this tutorial.</p>
 
@@ -731,7 +731,7 @@ if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML) {
 }
 </code></pre>
 
-<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it returns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
+<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it returns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
 
 <blockquote>
   <p>Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.</p>
@@ -739,7 +739,7 @@ if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML) {
   <p>Note: 2. If the status is other than <code>CHECK_XML</code>, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.</p>
 </blockquote>
 
-<p>In case of <code>CHECK_XML</code> status, We retrieve  XML response string from the result using <code>getStatusString</code> method. So we will call a method <code>handleEMDKResult</code> to handle this <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a>, which we will create in the next step.</p>
+<p>In case of <code>CHECK_XML</code> status, We retrieve  XML response string from the result using <code>getStatusString</code> method. So we will call a method <code>handleEMDKResult</code> to handle this <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a>, which we will create in the next step.</p>
 
 <pre class="prettyprint"><code>
 // Method call to handle EMDKResult
@@ -750,7 +750,7 @@ handleEMDKResult(results);
 
 <p><img src="images/MxPowerManagerTutorialImages/on_opened_method.jpg" alt="img"></p></li>
 
-<li><p>It shows error as we have not yet declared <code>handleEMDKResult</code> method. So let us create this method, which would get the XML String response from <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a>, call the <code>parseXML</code> method to parse it and eventually call <code>displayResults</code> method to display output in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>, which we would be declaring in coming steps. </p>
+<li><p>It shows error as we have not yet declared <code>handleEMDKResult</code> method. So let us create this method, which would get the XML String response from <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a>, call the <code>parseXML</code> method to parse it and eventually call <code>displayResults</code> method to display output in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>, which we would be declaring in coming steps. </p>
 
 <pre class="prettyprint"><code>
 // Method to handle EMDKResult by extracting response and parsing it

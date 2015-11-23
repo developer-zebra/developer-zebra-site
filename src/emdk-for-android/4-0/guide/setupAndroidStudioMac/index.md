@@ -71,7 +71,7 @@ The following items can be found in [EMDK 3.1 for Mac installation zip file](htt
 - EMDK device runtime
 	- \Device Update\EmdkOSUpdateApp_v3.1.32.apk
 
->NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in [Device Setup](/emdk-for-android/3-1/guide/setupDevice).
+>NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in [Device Setup](/emdk-for-android/4-0/guide/setupDevice).
 
 ###EMDK SDK add-on Integration
 To add the EMDK 3.1 APIs to the Android SDK please refer the following instructions:
@@ -141,7 +141,7 @@ The following items can be found in [EMDK 3.1 Update1 for Mac installation zip f
 - EMDK device runtime
 	- \Device Update\EmdkOSUpdateApp_v3.1.36.apk
 
->NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in [Device Setup](/emdk-for-android/3-1/guide/setupDevice).
+>NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in [Device Setup](/emdk-for-android/4-0/guide/setupDevice).
 
 ###Manual Installation
 

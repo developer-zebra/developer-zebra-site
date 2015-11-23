@@ -416,9 +416,9 @@
                                         <h4 class="media-heading"></h4>
                                         <p></p><h2 id="overview">Overview</h2>
 
-<p>This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using <a href="/emdk-for-android/3-1/guide/profiles/display">Display Manager</a> feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -&gt; Display of your Symbol device. </p>
+<p>This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using <a href="/emdk-for-android/4-0/guide/profiles/display">Display Manager</a> feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -&gt; Display of your Symbol device. </p>
 
-<p>So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx <a href="/emdk-for-android/3-1/guide/profiles/display">Display Manager</a> feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.</p>
+<p>So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx <a href="/emdk-for-android/4-0/guide/profiles/display">Display Manager</a> feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -438,20 +438,20 @@
   <p>Note: Provide "DisplayManagerTutorial" as the project name for this tutorial.</p>
 </blockquote>
 
-<p>If you are using Android Studio, click <a href="/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
+<p>If you are using Android Studio, click <a href="/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
 
 <h2 id="enablingtheemdk">Enabling the EMDK</h2>
 
 <p>If you are using Android Studio, you have already completed this step while creating the project by selecting <code>EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)</code> or <code>EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)</code> as the minimum SDK.</p>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT">here</a> for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT">here</a> for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  </p>
 
 <h2 id="addingthedisplaymanagerprofilefeature">Adding The Display Manager Profile Feature</h2>
 
 <ol>
-<li><p>Click <a href="/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
+<li><p>Click <a href="/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
 
 <li><p>Provide "DisplayProfile" as the Profile Name for this tutorial.</p>
 
@@ -654,7 +654,7 @@ if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML) {
 }
 </code></pre>
 
-<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it retuns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
+<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it retuns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
 
 <blockquote>
   <p>Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.</p>

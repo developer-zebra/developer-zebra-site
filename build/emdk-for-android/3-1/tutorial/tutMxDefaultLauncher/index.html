@@ -481,20 +481,20 @@
   <p>Note: Provide "MxDefaultLauncherTutorial" as the project name for this tutorial.</p>
 </blockquote>
 
-<p>If you are using Android Studio, click <a href="/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
+<p>If you are using Android Studio, click <a href="/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio">here</a>.</p>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT">here</a>.  </p>
 
 <h2 id="enablingtheemdk">Enabling the EMDK</h2>
 
 <p>If you are using Android Studio, you have already completed this step while creating the project by selecting <code>EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)</code> or <code>EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)</code> as the minimum SDK.</p>
 
-<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT">here</a> for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. </p>
+<p>If you are using Eclipse with ADT, click <a href="/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT">here</a> for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. </p>
 
 <h2 id="addingtheappmanagerprofile">Adding The AppManager Profile</h2>
 
 <ol>
-<li><p>Click <a href="/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
+<li><p>Click <a href="/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature">here</a> to see how to add a specific feature to the Profile Manager.</p></li>
 
 <li><p>Provide "DefaultLauncherProfile" as the Profile Name for this tutorial.</p>
 
@@ -698,7 +698,7 @@ if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML) {
 }
 </code></pre>
 
-<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it retuns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
+<p>This <code>processProfile</code> method returns the result of applying a particular profile that we set using EMDK Profile Wizard in <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a> reference. If the profile is successfully processed, it retuns the status as <code>CHECK_XML</code> and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>.</p>
 
 <blockquote>
   <p>Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.</p>
@@ -706,7 +706,7 @@ if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML) {
   <p>Note: 2. If the status is other than <code>CHECK_XML</code>, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.</p>
 </blockquote>
 
-<p>In case of <code>CHECK_XML</code> status, We retrieve  XML response string from the result using <code>getStatusString</code> method. So we will call a method <code>handleEMDKResult</code> to handle this <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a>, which we will create in the next step.</p>
+<p>In case of <code>CHECK_XML</code> status, We retrieve  XML response string from the result using <code>getStatusString</code> method. So we will call a method <code>handleEMDKResult</code> to handle this <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a>, which we will create in the next step.</p>
 
 <pre class="prettyprint"><code>
 // Method call to handle EMDKResult
@@ -717,7 +717,7 @@ handleEMDKResult(results);
 
 <p><img src="images/MxDefaultLauncherTutorialImages/on_opened_method.jpg" alt="img"></p></li>
 
-<li><p>It shows error as we have not yet declared <code>handleEMDKResult</code> method. So let us create this method, which would get the XML String response from <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a>, call the <code>parseXML</code> method to parse it and eventually call <code>displayResults</code> method to display output in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>, which we would be declaring in coming steps. </p>
+<li><p>It shows error as we have not yet declared <code>handleEMDKResult</code> method. So let us create this method, which would get the XML String response from <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a>, call the <code>parseXML</code> method to parse it and eventually call <code>displayResults</code> method to display output in a <a href="http://developer.android.com/reference/android/app/AlertDialog.html">dialog</a>, which we would be declaring in coming steps. </p>
 
 <pre class="prettyprint"><code>
 // Method to handle EMDKResult by extracting response and parsing it
@@ -960,7 +960,7 @@ setDefaultLauncherButton = (Button) findViewById(R.id.btn_set_default_launcher);
 
 <li><p>In this step, we will write a function that takes package name of the launcher application as input parameter and programmatically sets that application as the default launcher application.</p>
 
-<p>This method prepares the xml input for the <code>processProfile</code> method by accepting the package name of the launcher application provided by the user. It then calls the <code>handleEMDKResult</code> method that we have already created to handle the <a href="/emdk-for-android/3-1/api/EMDKResults">EMDKResults</a> and display the output.</p>
+<p>This method prepares the xml input for the <code>processProfile</code> method by accepting the package name of the launcher application provided by the user. It then calls the <code>handleEMDKResult</code> method that we have already created to handle the <a href="/emdk-for-android/4-0/api/EMDKResults">EMDKResults</a> and display the output.</p>
 
 <p>The <code>processProfile</code> method then sets the changes to <code>Profile Manager</code> and returns the result to the <code>EMDKResults</code> as follows:</p>
 

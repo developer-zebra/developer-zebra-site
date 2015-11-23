@@ -4,9 +4,9 @@ title:  Advanced Scanning Tutorial using Barcode API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/3-1/guide/reference/EMDKList) introduced in EMDK V 3.0, to perform some of the additional options along with Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/3-1/api/BarcodeManager), which is the primary object to access barcode scanning feature. 
+This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0, to perform some of the additional options along with Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager), which is the primary object to access barcode scanning feature. 
 
-In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/3-1/guide/reference/EMDKList) by using some of its features for developing an advanced application that will scan barcodes. The application focuses on scanning the barcodes using soft scan trigger, which would be a button that we are going to use in the application itself and not the hard scan trigger on the device.
+In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/4-0/guide/reference/EMDKList) by using some of its features for developing an advanced application that will scan barcodes. The application focuses on scanning the barcodes using soft scan trigger, which would be a button that we are going to use in the application itself and not the hard scan trigger on the device.
 
 > Note: You don't need the Profile Wizard while using the Barcode/Scanning APIs as everything could be configured programmatically through code.
 
@@ -15,15 +15,15 @@ We will be configuring following features:
 * **Device Types:**
 Using this feature, we will get the scanning devices supported by a specific Symbol device (Ex. Serial SSI Scanner, Camera Scanner etc.)
 
-* **[Decoder Params](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams):**
+* **[Decoder Params](/emdk-for-android/4-0/api/ScannerConfig-DecoderParams):**
 This feature will be used to configure various types of decoders through our applications for scanning specific type of decoder scanner. (Ex. Code 11, Code 39, UPCA etc.)
 
-* **[Reader Params](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams):**
+* **[Reader Params](/emdk-for-android/4-0/api/ScannerConfig-ReaderParams):**
 Reader params are used to configure reader specific options of a particular scanning device. In this tutorial, we will configure Illumination Mode for "Camera Scanner".
 
 > Note: "Illumination Mode" is available only for Camera Scanner device.
 
-* **[Scan Params](/emdk-for-android/3-1/api/ScannerConfig-ScanParams):**
+* **[Scan Params](/emdk-for-android/4-0/api/ScannerConfig-ScanParams):**
 ScanParams class provides access to scanning parameters that are available for all decoders.
 In this tutorial we will configure following Scanning Params:
   1. Vibration: This Scan Param is used to configure Vibration of the scanner device when scanning barcodes.
@@ -41,14 +41,14 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "AdvancedScanningTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).   
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).   
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.   
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.   
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
@@ -134,7 +134,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
 	> 
 	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.      
 
-    We will now create some global variables to hold the instance objects of EMDKManager, [BarcodeManager](/emdk-for-android/3-1/api/BarcodeManager) and [Scanner](/emdk-for-android/3-1/api/Scanner). These variables would be used throughout the code.
+    We will now create some global variables to hold the instance objects of EMDKManager, [BarcodeManager](/emdk-for-android/4-0/api/BarcodeManager) and [Scanner](/emdk-for-android/4-0/api/Scanner). These variables would be used throughout the code.
 
     It will have some UI elements such as [Checkboxes](http://developer.android.com/reference/android/widget/CheckBox.html) to  
 
@@ -661,7 +661,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
      
     ![img](images/AdvancedScanningTutorialImages/de_init_method.jpg)
 
-7. Next, we will write a method `initializeScanner` to initialize and enable the scanner and its listeners such as status, data etc. by using [Barcode Manager](/emdk-for-android/3-1/api/BarcodeManager) object. The `enable` method enables the scanner hardware. This method does not make the scanner to scan or turn on the laser. Basically it will make the scanner device available for your application. If the same of scanner is enabled by other applications, this will throws ScannerExceptions. You must call `disable()` when you are done the scanning, otherwise it will remain locked and be unavailable to other applications.
+7. Next, we will write a method `initializeScanner` to initialize and enable the scanner and its listeners such as status, data etc. by using [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager) object. The `enable` method enables the scanner hardware. This method does not make the scanner to scan or turn on the laser. Basically it will make the scanner device available for your application. If the same of scanner is enabled by other applications, this will throws ScannerExceptions. You must call `disable()` when you are done the scanning, otherwise it will remain locked and be unavailable to other applications.
 
 	In case of any errors, the `statusTextView` will display a failure message to notify user.
 
@@ -698,7 +698,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
      
     ![img](images/AdvancedScanningTutorialImages/initialize_scanner_method.jpg)
 
-8. Now, we will add `setProfile` method. This method will create an instance of [ScannerConfig](/emdk-for-android/3-1/api/ScannerConfig), which will allow us to modify scanner properties (Ex. [Decoder Params](/emdk-for-android/3-1/api/ScannerConfig-DecoderParams), [Reader Params](/emdk-for-android/3-1/api/ScannerConfig-ReaderParams), [Scan Params](/emdk-for-android/3-1/api/ScannerConfig-ScanParams) etc.) and set the changes back to the scanner instance. Here, we will read the checkboxes and spinner values and set them accordingly to the scanner instance through [ScannerConfig](/emdk-for-android/3-1/api/ScannerConfig). `config` is name of [ScannerConfig](/emdk-for-android/3-1/api/ScannerConfig) instance.
+8. Now, we will add `setProfile` method. This method will create an instance of [ScannerConfig](/emdk-for-android/4-0/api/ScannerConfig), which will allow us to modify scanner properties (Ex. [Decoder Params](/emdk-for-android/4-0/api/ScannerConfig-DecoderParams), [Reader Params](/emdk-for-android/4-0/api/ScannerConfig-ReaderParams), [Scan Params](/emdk-for-android/4-0/api/ScannerConfig-ScanParams) etc.) and set the changes back to the scanner instance. Here, we will read the checkboxes and spinner values and set them accordingly to the scanner instance through [ScannerConfig](/emdk-for-android/4-0/api/ScannerConfig). `config` is name of [ScannerConfig](/emdk-for-android/4-0/api/ScannerConfig) instance.
 
 	Initially we will cancel any pending asynchronous read calls before applying profile and reading barcodes using `cancelRead` method on the `scanner` instance.  
 
@@ -821,7 +821,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
      
     ![img](images/AdvancedScanningTutorialImages/on_checked_change_method.jpg)
 
-10. Now we need to use the `onOpened` method to get a reference to the [EMDKManager](/emdk-for-android/3-1/api/EMDKManager). The [EMDKListener](/emdk-for-android/3-1/api/EMDKManager-EMDKListener) interface will trigger this event when the EMDK is ready to be used. The [EMDKListener](/emdk-for-android/3-1/api/EMDKManager-EMDKListener) interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance of [Barcode Manager](/emdk-for-android/3-1/api/BarcodeManager) to enable scanning.
+10. Now we need to use the `onOpened` method to get a reference to the [EMDKManager](/emdk-for-android/4-0/api/EMDKManager). The [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener) interface will trigger this event when the EMDK is ready to be used. The [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener) interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance of [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager) to enable scanning.
 
     Once that is done, we need to get all the scanner devices that a Symbol Android device supports with the default one selected first using `enumerateScannerDevices()` that we will declare in the next step. We are not calling `initializeScanner()` and `setProfile` methods here as we have already called them in the device selection spinner listener.
 
@@ -891,7 +891,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
 
 9. As mentioned earlier that whenever a barcode is scanned, its data will be received in a callback `onData` method upon data availability. So we need to get that data, process it in the format we want and populate in the [EditText](http://developer.android.com/reference/android/widget/EditText.html) of UI.
 
-    The received data should be processed on a background thread not to block the UI thread. Hence we will use Android's own [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) to process the scanned data on background thread. So we create AsyncTask `AsyncDataUpdate` that takes [ScanDataCollection](/emdk-for-android/3-1/api/ScanDataCollection), which has the scanned data. It then processes this object in `doInBackground` method to filter the barcode data and label type in strings, which is then passed to the UI thread in `onPostExecute` method of AsyncTask to Populate.
+    The received data should be processed on a background thread not to block the UI thread. Hence we will use Android's own [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) to process the scanned data on background thread. So we create AsyncTask `AsyncDataUpdate` that takes [ScanDataCollection](/emdk-for-android/4-0/api/ScanDataCollection), which has the scanned data. It then processes this object in `doInBackground` method to filter the barcode data and label type in strings, which is then passed to the UI thread in `onPostExecute` method of AsyncTask to Populate.
 
         :::java
         // Update the scan data on UI
@@ -966,7 +966,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
   
 10. Whether we scan the barcode by pressing the hard scan key or keep it idle, it returns the status of the scanner at specific point of time in the overridden `onStatus` method of implemented `StatusListener` interface. Since we are also displaying the status along with barcode data, we will make use of this method and populate the status.
 
-    Just like scanned data, we are also processing the scanner status on a background thread. Hence we will create another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) named `AsyncStatusUpdate` that takes [StatusData](/emdk-for-android/3-1/api/StatusData) and processes it in `doInBackground` method to retrieve state in string format which is populated in status Text View on UI thread in `onPostExecute` method of the AsyncTask.              
+    Just like scanned data, we are also processing the scanner status on a background thread. Hence we will create another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) named `AsyncStatusUpdate` that takes [StatusData](/emdk-for-android/4-0/api/StatusData) and processes it in `doInBackground` method to retrieve state in string format which is populated in status Text View on UI thread in `onPostExecute` method of the AsyncTask.              
 
         :::java
         // AsyncTask that configures the current state of scanner on background
@@ -1083,7 +1083,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
 
     ![img](images/AdvancedScanningTutorialImages/on_closed_method.jpg)
 	
-That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/3-1/guide/reference/EMDKList) introduced in EMDK V 3.0. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0. Now let us run the application.
  
 ## Running the Application
 
@@ -1124,7 +1124,7 @@ It will display a success toast when the changes are applied each time you chang
 
 	![img](images/AdvancedScanningTutorialImages/final_scan.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/3-1/guide/reference/EMDKList) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Symbol devices without using Profile Wizard. 
+    This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Symbol devices without using Profile Wizard. 
 
 ##Important Programming Tips##
 

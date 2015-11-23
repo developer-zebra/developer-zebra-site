@@ -4,11 +4,11 @@ title:  Disable Airplane Mode Menu Option using Power Key Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Power Key Manager parameters such as Airplane Mode, Touch Panel, Safe Mode and Auto Screen Lock using [Power Key Manager](/emdk-for-android/3-1/guide/profiles/powerkey) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Power Key Manager parameters such as Airplane Mode, Touch Panel, Safe Mode and Auto Screen Lock using [Power Key Manager](/emdk-for-android/4-0/guide/profiles/powerkey) feature of Mx.
 
 The PowerKey Manager feature allows your application to control which options appear on the power menu on the device. Out of different available power key parameters, we would control Airplane Mode in this tutorial.  
 
-So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using Mx [Power Key Manager](/emdk-for-android/3-1/guide/profiles/powerkey) feature on your Symbol Android device. 
+So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using Mx [Power Key Manager](/emdk-for-android/4-0/guide/profiles/powerkey) feature on your Symbol Android device. 
         
 ###Prerequisites
 
@@ -22,20 +22,20 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: 1. Provide "PowerKeyManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4.
 
-If you are using Android Studio, click [here](/emdk-for-android/3-1/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
 > Note: Power Key Manager feature requires Symbol devices with Android KitKat 4.4. So select `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK for this tutorial.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
 
  
 ## Adding The Power Key Manager Profile Feature
-1. Click [here](/emdk-for-android/3-1/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "PowerKeyProfile" as the Profile Name for this tutorial.
 
@@ -226,7 +226,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/3-1/guide/tuto
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/3-1/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

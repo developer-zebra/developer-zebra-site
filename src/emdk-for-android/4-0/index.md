@@ -1,6 +1,6 @@
 ---
 title: EMDK For Android
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+layout: list-mx.html
 menu:
   - title: Home
     url: /emdk-for-android/4-0/guide/about

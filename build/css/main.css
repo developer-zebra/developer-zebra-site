@@ -1065,7 +1065,7 @@ ul.nostyle i {
 .content-with-sidebar .tree-sidebar .sidebar-container {
     padding-top:40px;
     padding-bottom:40px;
-    max-height:100vh;
+    /*max-height:100vh;*/
     overflow:auto;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;

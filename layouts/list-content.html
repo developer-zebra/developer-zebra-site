@@ -33,26 +33,34 @@
                         <div class="col-sm-12">
 
                             <section id="services" >
-                                <div class="container">
+                                <div class="">
                                 <!-- Start of content list -->
                                 {{#each contentlist}}
-                                    <div class="row">
-                                        <div class="features">
-                                            <a href="{{url}}">
-                                            <div class="col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                                                <div class="media service-box">
-                                                    <div class="pull-left">
-                                                        <i class="fa fa-line-chart"></i>
+                                    {{#if this.visible}}
+                                    <div class="section-header">
+                                        <h2 class="section-title text-center wow fadeInDown">{{this.heading}}</h2>
+                                        <p class="text-center wow fadeInDown">{{this.description}}</p>
+                                    </div>  
+                                    {{/if}}
+                                    {{#each this.items}}                                  
+                                        <div class="row">
+                                            <div class="features">
+                                                <a href="{{this.url}}">
+                                                <div class="col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                                                    <div class="media service-box">
+                                                        <div class="pull-left">
+                                                            <i class="fa fa-line-chart"></i>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4 class="media-heading">{{this.title}}</h4>
+                                                            <p>{{this.description}}</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">{{title}}</h4>
-                                                        <p>{{description}}</p>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.col-md-4-->
-                                            </a>
-                                        </div>
-                                    </div><!--/.row-->  
+                                                </div><!--/.col-md-4-->
+                                                </a>
+                                            </div>
+                                        </div><!--/.row-->  
+                                    {{/each}}
                                 {{/each}}  
                                 </div><!--/.container-->
                             </section><!--/#services-->

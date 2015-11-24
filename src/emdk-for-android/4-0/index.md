@@ -133,64 +133,22 @@ menu:
     items:
       - title: EMDK Profiles Overview
         url: /emdk-for-android/4-0/guide/profiles/usingwizard
-      - title: MX 4.4
-        url: /emdk-for-android/4-0/mx/4-4
-        items: 
-          - title: Application Management
-            url: /emdk-for-android/4-0/mx/4-4/app-management
-          - title: Device Configuration
-            url: /emdk-for-android/4-0/mx/4-4/device-configuration
-          - title: Security
-            url: /emdk-for-android/4-0/mx/4-4/security
-          - title: UI Configuration
-            url: /emdk-for-android/4-0/mx/4-4/ui-settings
-          - title: Wireless
-            url: /emdk-for-android/4-0/mx/4-4/wireless
-          - title: MX Framework
-            url: /emdk-for-android/4-0/mx/4-4/mx
-          - title: Data Capture
-            items:
-              - title: Activity Selection
-                url: /emdk-for-android/4-0/guide/profiles/profileactivity
-              - title: Barcode
-                url: /emdk-for-android/4-0/guide/profiles/profilebarcode
-              - title: Intent Output
-                url: /emdk-for-android/4-0/guide/profiles/profileintent
-              - title: IP Output
-                url: /emdk-for-android/4-0/guide/profiles/profileIP
-              - title: Keystroke
-                url: /emdk-for-android/4-0/guide/profiles/profilekeystroke
-              - title: Magstripe
-                url: /emdk-for-android/4-0/guide/profiles/profilemsr
-      - title: MX 5.0
-        url: /emdk-for-android/4-0/mx/5-0
-        items: 
-          - title: Application Management
-            url: /emdk-for-android/3-1/mx/5-0/app-management
-          - title: Device Configuration
-            url: /emdk-for-android/3-1/mx/5-0/device-configuration
-          - title: Security
-            url: /emdk-for-android/3-1/mx/5-0/security
-          - title: UI Configuration
-            url: /emdk-for-android/3-1/mx/5-0/ui-settings
-          - title: Wireless
-            url: /emdk-for-android/3-1/mx/5-0/wireless
-          - title: MX Framework
-            url: /emdk-for-android/3-1/mx/5-0/mx
-          - title: Data Capture
-            items:
-              - title: Activity Selection
-                url: /emdk-for-android/4-0/guide/profiles/profileactivity
-              - title: Barcode
-                url: /emdk-for-android/4-0/guide/profiles/profilebarcode
-              - title: Intent Output
-                url: /emdk-for-android/4-0/guide/profiles/profileintent
-              - title: IP Output
-                url: /emdk-for-android/4-0/guide/profiles/profileIP
-              - title: Keystroke
-                url: /emdk-for-android/4-0/guide/profiles/profilekeystroke
-              - title: Magstripe
-                url: /emdk-for-android/4-0/guide/profiles/profilemsr
+      - title: Profile Features
+        url: /emdk-for-android/4-0/mx
+      - title: Application Management
+        url: /emdk-for-android/4-0/mx/app-management
+      - title: Device Configuration
+        url: /emdk-for-android/4-0/mx/device-configuration
+      - title: Security
+        url: /emdk-for-android/4-0/mx/security
+      - title: UI Configuration
+        url: /emdk-for-android/4-0/mx/ui-settings
+      - title: Wireless
+        url: /emdk-for-android/4-0/mx/wireless
+      - title: MX Framework
+        url: /emdk-for-android/4-0/mx/mx
+      - title: Data Capture
+        url: /emdk-for-android/4-0/mx/data-capture
   - title: APIs
     url: /emdk-for-android/4-0/api
     items:

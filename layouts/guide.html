@@ -14,7 +14,16 @@
                             <section id="cta" class="wow fadeIn">
                                 <div class="">
                                     <h2>{{ title }}</h2>
-                                    <p>{{ product }} - {{ productversion }}
+                                    <p>
+                                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                        MX: {{ mxversion}}
+                                    {{/if}}
                                     </p>
                                 </div>
                             </section>                    

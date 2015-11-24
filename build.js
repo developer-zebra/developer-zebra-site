@@ -215,6 +215,10 @@ var sitebuild = Metalsmith(__dirname)
         productVersionName: '1.0'
     }))
     .use(mxversion({
+        pattern: 'mx/4-2/',
+        mxversion: '4.2'
+    }))
+    .use(mxversion({
         pattern: 'mx/4-4/',
         mxversion: '4.4'
     }))
@@ -274,6 +278,14 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'mx/4-4/',
+        automenu: true
+    }))
+    .use(foldermenu({
+        folder: 'mx/5-0/',
+        automenu: true
+    }))
+    .use(foldermenu({
+        folder: 'mx/4-2/',
         automenu: true
     }))
     .use(showdown({}))

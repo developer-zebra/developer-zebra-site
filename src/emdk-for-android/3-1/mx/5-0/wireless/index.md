@@ -10,7 +10,7 @@ contentlist:
         url: /mx/4-4/wireless/cellularmgr
         description: The CellularMgr allows you to control how a device's Cellular data connection is used.
       - title: DHCP Manager
-        url: /mx/4-4/wireless/dhcpmgr
+        url: /mx/4-4/wireless/dhcp
         description: The DhcpOptionMgr allows you to configure DHCP Options.
       - title: GPRS Manager
         url: /mx/4-4/wireless/gprsmgr

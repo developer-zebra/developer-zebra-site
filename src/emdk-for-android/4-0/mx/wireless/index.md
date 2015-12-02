@@ -15,13 +15,13 @@ contentlist:
           - title: "5.0"
             url: /mx/5-0/wireless/cellularmgr
       - title: DHCP Manager
-        url: /mx/5-0/wireless/dhcpmgr
+        url: /mx/5-0/wireless/dhcp
         description: The DhcpOptionMgr allows you to configure DHCP Options.
         urls:
           - title: "4.4"
-            url: /mx/4-4/wireless/dhcpmgr
+            url: /mx/4-4/wireless/dhcp
           - title: "5.0"
-            url: /mx/5-0/wireless/dhcpmgr
+            url: /mx/5-0/wireless/dhcp
       - title: GPRS Manager
         url: /mx/5-0/wireless/gprsmgr
         description: The GprsMgr allows you to manage APN settings for the devices GPRS network.

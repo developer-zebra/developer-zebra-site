@@ -77,11 +77,25 @@ The DhcpOptionMgr Feature Type allows you to configure those DHCP Options that a
 	<td>Read</td>
   </tr>
   <tr>
+    <td>43</td>
+    <td>Vendor Encapsulated </td>
+  <td>Off</td>
+    <td>Yes</td>
+  <td>Read</td>
+  </tr>
+  <tr>
     <td>51</td>
     <td>Lease Time</td>
 	<td>On</td>
     <td>No</td>
 	<td>Read</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Vendor Class ID</td>
+  <td>Off</td>
+    <td>Yes</td>
+  <td>Write</td>
   </tr>
   <tr>
     <td>66</td>
@@ -117,6 +131,20 @@ The DhcpOptionMgr Feature Type allows you to configure those DHCP Options that a
 	<td>Off</td>
     <td>Yes</td>
 	<td>Read</td>
+  </tr>
+  <tr>
+    <td>186</td>
+    <td>Vendor Specific1 </td>
+  <td>Off</td>
+    <td>Yes</td>
+  <td>Read</td>
+  </tr>
+  <tr>
+    <td>188</td>
+    <td>Vendor Specific2 </td>
+  <td>Off</td>
+    <td>Yes</td>
+  <td>Read</td>
   </tr>
 </table>
 </div>	
@@ -501,7 +529,7 @@ Parm name: VendorEncapsulatedState
 
 Description: 
 
->TBD
+>Vendor Encapsulated, also referred to as Vendor Specific, is a DHCP option that can be requested by the DHCP Client. The value of this option is determined by the specific vendor of the DHCP server. In complex network environments where they may be multiple vendors, this option is often used with option 60 so that the correct DHCP server is used for the given device.
 
 <div class="parm-table">
  <table>
@@ -518,12 +546,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-  <td>This value will cause this DHCP Option to be turned on and hence will .</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will cause the Vendor Specific option 43 to be requested by the DHCP Client in the DHCP Request.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-  <td>This value will cause this DHCP Option to be turned off and hence will .</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will not cause the Vendor Specific option 43 to be requested by the DHCP Client in the DHCP Request.</td>
   </tr>
 </table>
 </div>
@@ -535,7 +563,7 @@ Parm name: VendorSpecific1State
 
 Description: 
 
->TBD
+>Similar to Option 43, Vendor Specific1 (Option 186) can be requested by the DHCP client. The potential returned value of this request is determined by the vendor of the DHCP server.
 
 <div class="parm-table">
  <table>
@@ -552,12 +580,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-  <td>This value will cause this DHCP Option to be turned on and hence will .</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will cause the Vendor Specific1 option 186 to be requested by the DHCP Client in the DHCP Request.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-  <td>This value will cause this DHCP Option to be turned off and hence will .</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will not cause the Vendor Specific1 option 186 to be requested by the DHCP Client in the DHCP Request.</td>
   </tr>
 </table>
 </div>
@@ -569,7 +597,7 @@ Parm name: VendorSpecific1State
 
 Description: 
 
->TBD
+>Similar to Option 186, Vendor Specific2 (Option 188) can be requested by the DHCP client. The potential returned value of this request is determined by the vendor of the DHCP server.
 
 <div class="parm-table">
  <table>
@@ -586,12 +614,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-  <td>This value will cause this DHCP Option to be turned on and hence will .</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will cause the Vendor Specific2 option 188 to be requested by the DHCP Client in the DHCP Request.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-  <td>This value will cause this DHCP Option to be turned off and hence will .</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will not cause the Vendor Specific2 option 188 to be requested by the DHCP Client in the DHCP Request.</td>
   </tr>
 </table>
 </div>

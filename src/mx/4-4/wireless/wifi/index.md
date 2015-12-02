@@ -63,8 +63,6 @@ The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as
 * Disable ScanAssist
 * Enable Coverage Hole Detection
 * Disable Coverage Hole Detection
-* Enable Sub-Net Roam
-* Disable Sub-Net Roam
 * Enable WANCountry
 * Disable WANCountry
 * Add a Wi-Fi Network
@@ -790,24 +788,6 @@ Parm value input rules:
 		* https://en.wikipedia.org/wiki/List_of_WLAN_channels
 * The minimum length is 0 characters and the maximum length is 64 characters.
 * Comma separated and may contain a range specified with a dash '-'. Example: 36-60
-
-### Specify Diagnostic Options
-Pivotal parm: Yes
-
-Description: 
->Specify whether Diagnostic Options will be used. When turned on, Fusion Advanced Logging can also be turned on. This option can be used to collect additional information for troubleshooting but can impact the performance of a device.
-
-> **Note:** In most cases, this option should not be used except under the direction of Zebra support staff.
-
-#### Fusion Advanced Logging
-Settable if: The "Specify Diagnostic Options" box is checked
-
-Pivotal parm: No
-
-Parm name: FusionAdvancedLogging
-
-Description: 
->Specify whether Fusion Advanced Logging will be used
 
 ### Specify Advanced Options
 

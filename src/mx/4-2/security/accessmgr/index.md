@@ -24,7 +24,6 @@ The AccessMgr Feature Type also provides the option to control whether the devic
 
 * Turn Whitelisting on or off
 * Manage the "white" list of applications that a device user can install and that can be launched
-* Turn verification of application signatures on or off
 * Control which applications are allowed to submit XML
 * Select whether the device user can use Full or Reduced Settings
 * Set Application Verification Mode to Verify All App Signature
@@ -90,50 +89,6 @@ Description:
 </table>
 </div>	
 
-###Application Verification Signing Mode
-Settable if: The Operation Mode is "Single User With Whitelist"
-
-Pivotal parm: Yes
-
-Description: 
-
->This parm allows you to control whether Whitelisting will verify the signatures of applications, and if so, which application signatures will be verified. Signature verification is turned off by default.
-
->When Whitelisting is turned on but Signature verification is turned off, the determination of whether an application is on the "white" list is made solely by comparing the Android Package Name. This is insecure since it cannot prevent a potentially rogue application from setting it's Package Name to be one that is known to be on the "white" list, and hence circumvent Whitelisting by impersonating a trusted application.
-
->To increase security, Signature verification can be turned on. When Signature verification is turned on, the determination of whether an application is on the "white" list will be based on both its Package Name and its Signature. For that to work, the Signature must be provided for every application that is added to the "white" list so it can be compared against the actual Signature of that application.
-
->Signature verification is more secure since only a specific "authentic" version, as identified by its Signature, of a given application, whose Package Name is on the "white" list, will be allowed to be installed and launched.  Turning on Signature verification also complicates the process of deploying applications since a unique Signature will need to be configured for each application as part of adding that application to the "white" list.
-
-<div class="parm-table">
- <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td>Do nothing</td>
-    <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no change to whether Signature verification will occur or for which applications.</td>
-  </tr>
-  <tr>
-    <td>Do not verify app signature</td>
-    <td>"1"</td>
-	<td>This value will cause Signature verification to be turned off, thus causing Package Names alone to be used in to determine if an application is on the "white" list.</td>
-  </tr>
-  <tr>
-    <td>Verify user app signature</td>
-    <td>"2"</td>
-	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if a user, or "installable", application is on the "white" list.</td>
-  </tr>
-  <tr>
-    <td>Verify all apps signature</td>
-    <td>"3"</td>
-	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if any application, "built-in" or "installable", is on the "white" list.</td>
-  </tr>
-</table>
-</div>	
 
 ### Delete Packages
 Settable if: The Operation Mode is "Single User With Whitelist"

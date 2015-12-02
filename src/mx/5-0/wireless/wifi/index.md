@@ -1521,10 +1521,26 @@ Parm value input rules:
 Pivotal parm: Yes
 
 Description: 
->When selected, a Proxy is used for network connections. A proxy is a an intermediary service that routes HTTP requests and responses between clients on a device and another network (typically the internet or an intranet). When there is a proxy between the Wi-Fi network and some outer network, then HTTP-based applications, such as a Web Browser, may need to negotiate with that proxy to access the services of that outer network.
+>When selected, a Proxy is used for network connections. You can either manually configure the proxy settings or select the location of a PAC file for automatic configuration. A proxy is a an intermediary service that routes HTTP requests and responses between clients on a device and another network (typically the internet or an intranet). When there is a proxy between the Wi-Fi network and some outer network, then HTTP-based applications, such as a Web Browser, may need to negotiate with that proxy to access the services of that outer network.
+
+##### **URL of PAC file**
+Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" is set to Proxy Auto-Config.
+
+Pivotal parm: No
+
+Parm name: PROXYPAC
+
+Description: 
+>Provide the Host Name or IP Address of the location of where the proxy PAC file is located. This can be used only if the network provides suitable name resolution. Otherwise, an IP Address would need to be provided.
+
+>Since different Wi-Fi networks may have different proxies connecting them to different outer networks, proxy information, if needed, must be configured for each network.
+
+Parm value input rules: 
+
+* String with a minimum of 1 characters and a maximum of 64 characters
 
 ##### **Proxy Host Name**
-Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
+Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" is set to manual.
 
 Pivotal parm: No
 
@@ -1540,7 +1556,7 @@ Parm value input rules:
 * String with a minimum of 1 characters and a maximum of 64 characters
 
 ##### **Proxy Port**
-Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
+Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" is set to manual.
 
 Pivotal parm: No
 
@@ -1550,7 +1566,7 @@ Description:
 >Provide the port number of the proxy server on the computer on which the proxy is running on which the proxy is listening.
 
 ##### **Bypass Proxy**
-Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
+Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" is set to manual.
 
 Pivotal parm: No
 

@@ -109,10 +109,10 @@
                                                     <a href="/mx/4-2/security/"><span>Security</span></a> 
                                                         <ul style="display:block;">
                                                             <li>
-                                                                <a href="/mx/4-2/security/accessmgr/"><span>Access Manager</span></a>
+                                                                <a href="/mx/4-2/security/certmgr/"><span>Certificate Manager</span></a>
                                                             </li>
                                                             <li>
-                                                                <a href="/mx/4-2/security/certmgr/"><span>Certificate Manager</span></a>
+                                                                <a href="/mx/4-2/security/accessmgr/"><span>Access Manager</span></a>
                                                             </li>
                                                             <li>
                                                                 <a href="/mx/4-2/security/usbmgr/"><span>USB Manager</span></a>
@@ -163,24 +163,11 @@
 
 <p>Android devices often support a variety of wireless communication interfaces, including bidirectional interfaces, such as Wireless Wide Area Network (WWAN/cellular data), Bluetooth, and Near Field Communications (NFC), and including unidirectional (receive only) interfaces, such as the Global Positioning System (GPS). Wireless radios that can transmit may significantly affect battery life if turned on unnecessarily and may also need to be turned off in certain situations (e.g. when on an airplane or in "incendiary" environments). Wireless radios that can only receive may affect battery life if turned on unnecessarily.</p>
 
-<p>The WirelessMgr Feature Type allows you to turn various wireless radios On or Off, thus allowing them to use battery power only when they are needed and allowing you to prevent radios from transmitting when it would be undesirable or unsafe to do so. The WirelessMgr Feature Type also allows you to prevent the state of various wireless radios from being changed, this providing a sort of "lock" to prevent the state from being changed by the device user.</p>
+<p>The WirelessMgr Feature allows you to prevent the state of various wireless radios from being changed, this providing a sort of "lock" to prevent the state from being changed by the device user.</p>
 
 <h3 id="mainfunctionality">Main Functionality</h3>
 
 <ul>
-<li>Turn selected wireless radios On or Off
-
-
-<ul>
-<li>Bluetooth</li>
-
-<li>Near Field Communication (NFC)</li>
-
-<li>Global Positioning System (GPS)</li>
-
-<li>Wireless Wide Area Network (WWAN/cellular data)</li></ul>
-</li>
-
 <li>Enable or Disable changing the state (on/off) of various wireless radios
 
 
@@ -230,156 +217,6 @@
 </tbody></table>
 </div>    
 
-<h3 id="turnonoffbluetooth">Turn On/Off Bluetooth</h3>
-
-<p>Pivotal parm: No</p>
-
-<p>Parm name: BluetoothState</p>
-
-<p>Description: </p>
-
-<blockquote>
-  <p>This parm allows you to change the state of the Bluetooth radio by Turning it On or Off. Turning the Bluetooth radio On would allow the device to connect to other to other Bluetooth devices that have previously been paired or would allow the setup of a new pairing.</p>
-  
-  <p><strong>Note:</strong> This parm is only available from KitKat onwards. It is not supported on JellyBean devices.</p>
-</blockquote>
-
-<div class="parm-table">
- <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
-  <tr>
-    <td>Do not change</td>
-    <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to the state (On/Off) of the Bluetooth radio.</td>
-  </tr>
-  <tr>
-    <td>Turn On</td>
-    <td>"1"</td>
-    <td>This value will cause the Bluetooth radio to be Turned On.</td>
-  </tr>
-  <tr>
-    <td>Turn Off</td>
-    <td>"2"</td>
-    <td>This value will cause the Bluetooth radio to be Turned Off.</td>
-  </tr>
-</tbody></table>
-</div>    
-
-<h3 id="turnonoffnfc">Turn On/Off NFC</h3>
-
-<p>Pivotal parm: No</p>
-
-<p>Parm name: NFCState</p>
-
-<p>Description: </p>
-
-<blockquote>
-  <p>This parm allows you to change the state of the Near Field Communications (NFC) radio by Turning it On or Off. Turning the NFC radio On would allow the device to communicate with NFC tags by reading or writing them when they are in near proximity to the device.</p>
-</blockquote>
-
-<div class="parm-table">
- <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
-  <tr>
-    <td>Do not change</td>
-    <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the NFC radio.</td>
-  </tr>
-  <tr>
-    <td>Turn On</td>
-    <td>"1"</td>
-    <td>This value will cause the NFC radio to be Turned On.</td>
-  </tr>
-  <tr>
-    <td>Turn Off</td>
-    <td>"2"</td>
-    <td>This value will cause the NFC radio to be Turned Off.</td>
-  </tr>
-</tbody></table>
-</div>    
-
-<h3 id="turnonoffgps">Turn On/Off GPS</h3>
-
-<p>Pivotal parm: No</p>
-
-<p>Parm name: GPSState</p>
-
-<p>Description: </p>
-
-<blockquote>
-  <p>This parm allows you to change the state of the Global Positioning System (GPS) radio by Turning it On or Off. Turning the GPS radio On would allow the device to receive information from GPS satellites and thereby determine the position of the device.</p>
-</blockquote>
-
-<div class="parm-table">
- <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
-  <tr>
-    <td>Do not change</td>
-    <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the GPS radio.</td>
-  </tr>
-  <tr>
-    <td>Turn On</td>
-    <td>"1"</td>
-    <td>This value will cause the GPS radio to be Turned On.</td>
-  </tr>
-  <tr>
-    <td>Turn Off</td>
-    <td>"2"</td>
-    <td>This value will cause the GPS radio to be Turned Off.</td>
-  </tr>
-</tbody></table>
-</div>    
-
-<h3 id="turnonoffwwan">Turn On/Off WWAN</h3>
-
-<p>Pivotal parm: No</p>
-
-<p>Parm name: WWANState</p>
-
-<p>Description: </p>
-
-<blockquote>
-  <p>This parm allows you to change the state of the Wireless Wide Area Network (WWAN) cellular radio by Turning it On or Off. Turning the WWAN radio On would allow the device to establish a cellular data connection and would also enable cellular voice connections, if supported.</p>
-</blockquote>
-
-<div class="parm-table">
- <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
-  <tr>
-    <td>Do not change</td>
-    <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the WWAN radio.</td>
-  </tr>
-  <tr>
-    <td>Turn On</td>
-    <td>"1"</td>
-    <td>This value will cause the WWAN radio to be Turned On.</td>
-  </tr>
-  <tr>
-    <td>Turn Off</td>
-    <td>"2"</td>
-    <td>This value will cause the WWAN radio to be Turned Off.</td>
-  </tr>
-</tbody></table>
-</div>    
-
 <h2 id="examplexml">Example XML</h2>
 
 <h3 id="enablechangestobemadetobluetoothstate">Enable Changes to be made to Bluetooth State</h3>
@@ -406,58 +243,6 @@
 &lt;wap-provisioningdoc&gt;
     &lt;characteristic type="WirelessMgr" version="4.3" &gt;
         &lt;parm name="Bluetooth" value="2"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
-</code></pre>
-
-<h3 id="turnonallradiosforjellybeandevices">Turn On All Radios (For JellyBean Devices)</h3>
-
-<pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="WirelessMgr" version="4.3" &gt;
-        &lt;parm name="Bluetooth" value="1"/&gt;
-        &lt;parm name="NFCState" value="1"/&gt;
-        &lt;parm name="GPSState" value="1"/&gt;
-        &lt;parm name="WWANState" value="1"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
-</code></pre>
-
-<h3 id="turnoffallradiosforjellybeandevices">Turn Off All Radios (For JellyBean Devices)</h3>
-
-<pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="WirelessMgr" version="4.3" &gt;
-        &lt;parm name="Bluetooth" value="2"/&gt;
-        &lt;parm name="NFCState" value="2"/&gt;
-        &lt;parm name="GPSState" value="2"/&gt;
-        &lt;parm name="WWANState" value="2"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
-</code></pre>
-
-<h3 id="turnonallradiosforkitkatdevices">Turn On All Radios (For KitKat Devices)</h3>
-
-<pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="WirelessMgr" version="4.3" &gt;
-        &lt;parm name="BluetoothState" value="1"/&gt;
-        &lt;parm name="NFCState" value="1"/&gt;
-        &lt;parm name="GPSState" value="1"/&gt;
-        &lt;parm name="WWANState" value="1"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
-</code></pre>
-
-<h3 id="turnoffallradiosforkitkatdevices">Turn Off All Radios (For KitKat Devices)</h3>
-
-<pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="WirelessMgr" version="4.3" &gt;
-        &lt;parm name="BluetoothState" value="2"/&gt;
-        &lt;parm name="NFCState" value="2"/&gt;
-        &lt;parm name="GPSState" value="2"/&gt;
-        &lt;parm name="WWANState" value="2"/&gt;
     &lt;/characteristic&gt;
 &lt;/wap-provisioningdoc&gt;
 </code></pre><p></p>

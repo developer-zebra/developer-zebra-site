@@ -13,13 +13,13 @@ The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurat
 ### Main Functionality
 
 * Enable or Disable use of the following:
-	* The Clipboard function that allows a device user to copy and paste information between applications
-	* The Auto Correct function that stores commonly entered words and allows them to be entered instead of similar words that were mistyped
-	* The Home Key function which leaves the context of the currently running application and presents the current Home Screen Application
-	* The Disable Bluetooth Paring Popup feature that requests device user involvement even if an application has supplied all required pairing information
+  * The Clipboard function that allows a device user to copy and paste information between applications
+  * The Auto Correct function that stores commonly entered words and allows them to be entered instead of similar words that were mistyped
+  * The Home Key function which leaves the context of the currently running application and presents the current Home Screen Application
+  * The Disable Bluetooth Paring Popup feature that requests device user involvement even if an application has supplied all required pairing information
 * Configure localization settings
-	* Set the Current Locale to switch to a desired language + region
-	* Set the Default Input Method to enhance entry of localized data
+  * Set the Current Locale to switch to a desired language + region
+  * Set the Default Input Method to enhance entry of localized data
 * Clear the Clipboard to discard any prior data that might have been copied
 
 ##Parameter Notes
@@ -34,28 +34,28 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Clipboard function can be used.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Clipboard function can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause use of the Clipboard function to be allowed.</td>
+  <td>This value will cause use of the Clipboard function to be allowed.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td><p>This value will cause use of the Clipboard function to be prevented.</p><p><b>Note:</b> This will disallow the user from being able to copy and paste data to or from the clipboard. An attempt to use the clipboard when its use is prevented will result in a toast message to inform the device user that the use of the clipboard is not currently allowed.</p></td>
+  <td><p>This value will cause use of the Clipboard function to be prevented.</p><p><b>Note:</b> This will disallow the user from being able to copy and paste data to or from the clipboard. An attempt to use the clipboard when its use is prevented will result in a toast message to inform the device user that the use of the clipboard is not currently allowed.</p></td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ###Clear Clipboard?
 Pivotal parm: No
@@ -68,23 +68,23 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>True</td>
     <td>"true"</td>
-	<td>This value will cause the clipboard to be cleared, thus erasing any content that was previously copied into the clipboard and hence preventing such content from thereafter being pasted.</td>
+  <td>This value will cause the clipboard to be cleared, thus erasing any content that was previously copied into the clipboard and hence preventing such content from thereafter being pasted.</td>
   </tr>
   <tr>
     <td>False</td>
     <td>"false"</td>
-	<td>This value will cause no change to be made to the contents of the clipboard.</td>
+  <td>This value will cause no change to be made to the contents of the clipboard.</td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ###Enable/Disable AutoCorrect
 Pivotal parm: No
@@ -97,28 +97,28 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Auto Correct function is allowed to be used.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Auto Correct function is allowed to be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td><p>This value will cause use of the Auto Correct function to be allowed.</p><p><b>Note:</b> This value does not specify that the Auto Correct function will be enabled, or any specific configuration of that function. When the function is allowed, the device user can Turn the function On or Off and configure the operation of the function via the System Settings Menu.</p></td>
+  <td><p>This value will cause use of the Auto Correct function to be allowed.</p><p><b>Note:</b> This value does not specify that the Auto Correct function will be enabled, or any specific configuration of that function. When the function is allowed, the device user can Turn the function On or Off and configure the operation of the function via the System Settings Menu.</p></td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td><p>This value will cause use of the Auto Correct function to be prevented.</p><p><b>Note:</b> This value does not change whether the Auto Correct function is Turned On or Off or any configure related the operation of the function configured via the System Settings Menu. But it does prevent the function from being used, thus making any such configuration performed by the device user irrelevant unless/until use of the feature is allowed.</p></td>
+  <td><p>This value will cause use of the Auto Correct function to be prevented.</p><p><b>Note:</b> This value does not change whether the Auto Correct function is Turned On or Off or any configure related the operation of the function configured via the System Settings Menu. But it does prevent the function from being used, thus making any such configuration performed by the device user irrelevant unless/until use of the feature is allowed.</p></td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ###Enable/Disable HomeKey
 Pivotal parm: No
@@ -131,28 +131,28 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Home Key can be used.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Home Key can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause use of the Home Key to be allowed.</td>
+  <td>This value will cause use of the Home Key to be allowed.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td><p>This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application.</p><p><b>Note:</b> Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the <a href="../edge/index.html#guide-csp-keymappingmgr">KeyMappingMgr Feature Type</a> can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).</p></td>
+  <td><p>This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application.</p><p><b>Note:</b> Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the <a href="../edge/index.html#guide-csp-keymappingmgr">KeyMappingMgr Feature Type</a> can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).</p></td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ###Enable/Disable Bluetooth Pairing Popup
 Pivotal parm: No
@@ -165,28 +165,28 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Bluetooth Pairing Popup is will be presented.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Bluetooth Pairing Popup is will be presented.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the Bluetooth Pairing Popup to be presented whenever a pairing operation is performed.</td>
+  <td>This value will cause the Bluetooth Pairing Popup to be presented whenever a pairing operation is performed.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the Bluetooth Pairing Popup to be suppressed when a pairing operation is performed.</td>
+  <td>This value will cause the Bluetooth Pairing Popup to be suppressed when a pairing operation is performed.</td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ###Set Current Locale
 Pivotal parm: No
@@ -199,123 +199,143 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td></td>
+  <td></td>
   </tr>
   <tr>
     <td>CANADA</td>
     <td>"en_CA"</td>
-	<td>English spoken in Canada</td>
+  <td>English spoken in Canada</td>
   </tr>
   <tr>
     <td>CANADA_FRENCH</td>
     <td>"fr_CA"</td>
-	<td>French spoken in Canada</td>
+  <td>French spoken in Canada</td>
   </tr>
   <tr>
     <td>CHINA</td>
     <td>"zh_CN"</td>
-	<td>Chinese spoken in China</td>
+  <td>Chinese spoken in China</td>
   </tr>
   <tr>
     <td>CHINESE</td>
     <td>"zh"</td>
-	<td>Chinese (non-region specific)</td>
+  <td>Chinese (non-region specific)</td>
   </tr>
   <tr>
     <td>ENGLISH</td>
     <td>"en"</td>
-	<td>English (non-region specific)</td>
+  <td>English (non-region specific)</td>
   </tr>
   <tr>
     <td>FRANCE</td>
     <td>"fr_FR"</td>
-	<td>French spoken in France</td>
+  <td>French spoken in France</td>
   </tr>
   <tr>
     <td>FRENCH</td>
     <td>"fr"</td>
-	<td>French (non-region specific)</td>
+  <td>French (non-region specific)</td>
   </tr>
   <tr>
     <td>GERMAN</td>
     <td>"de"</td>
-	<td>German (non-region specific)</td>
+  <td>German (non-region specific)</td>
   </tr>
   <tr>
     <td>GERMANY</td>
     <td>"de_DE"</td>
-	<td>German spoken in Germany</td>
+  <td>German spoken in Germany</td>
   </tr>
   <tr>
     <td>ITALIAN</td>
     <td>"it"</td>
-	<td>Italian (non-region specific)</td>
+  <td>Italian (non-region specific)</td>
   </tr>
   <tr>
     <td>ITALY</td>
     <td>"it_IT"</td>
-	<td>Italian spoken in Italy</td>
+  <td>Italian spoken in Italy</td>
   </tr>
   <tr>
     <td>JAPAN</td>
     <td>"ja_JP"</td>
-	<td>Japanese spoken in Japan</td>
+  <td>Japanese spoken in Japan</td>
   </tr>
   <tr>
     <td>JAPANESE</td>
     <td>"ja"</td>
-	<td>Japanese (non-region specific)</td>
+  <td>Japanese (non-region specific)</td>
   </tr>
   <tr>
     <td>KOREA</td>
     <td>"ko_KR"</td>
-	<td>Korean spoken in Korea</td>
+  <td>Korean spoken in Korea</td>
   </tr>
   <tr>
     <td>KOREAN</td>
     <td>"ko"</td>
-	<td>Korean (non-region specific)</td>
+  <td>Korean (non-region specific)</td>
   </tr>
   <tr>
     <td>PRC</td>
     <td>"zh_CN"</td>
-	<td>Alternate Chinese spoken in China</td>
+  <td>Alternate Chinese spoken in China</td>
   </tr>
   <tr>
     <td>SIMPLIFIED_CHINESE</td>
     <td>"zh_CN"</td>
-	<td>Alternate Chinese spoken in China</td>
+  <td>Alternate Chinese spoken in China</td>
   </tr>
   <tr>
     <td>TAIWAN</td>
     <td>"zh_TW"</td>
-	<td>Chinese spoken in Taiwan</td>
+  <td>Chinese spoken in Taiwan</td>
   </tr>
   <tr>
     <td>TRADITIONAL_CHINESE</td>
     <td>"zh_TW"</td>
-	<td>Alternate Chinese spoken in Taiwan</td>
+  <td>Alternate Chinese spoken in Taiwan</td>
   </tr>
   <tr>
     <td>UK</td>
     <td>"en_GB"</td>
-	<td>English spoken in Great Britain/United Kingdom</td>
+  <td>English spoken in Great Britain/United Kingdom</td>
   </tr>
   <tr>
     <td>US</td>
     <td>"en_US"</td>
-	<td>English spoken in the United States of America (USA)</td>
+  <td>English spoken in the United States of America (USA)</td>
+  </tr>
+  <tr>
+    <td>SPANISH</td>
+    <td>"es_ES"</td>
+  <td>Spanish spoken in Spain</td>
+  </tr>
+  <tr>
+    <td>US SPANISH</td>
+    <td>"es_US"</td>
+  <td>Spanish spoken in the United States of America (USA)</td>
+  </tr>
+  <tr>
+    <td>BRAZILIAN PORTUGESE</td>
+    <td>"pt_BR"</td>
+  <td>Portugese spoken in Brazil</td>
+  </tr>
+  <tr>
+    <td>PORTUGESE</td>
+    <td>"pt_PT"</td>
+  <td>Portugese spoken in Portugal</td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ###Set Default Input Method?
 Pivotal parm: Yes
@@ -326,23 +346,23 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.</td>
   </tr>
   <tr>
     <td>Change Current Input Method</td>
     <td>"1"</td>
-	<td>This value will cause a change to be made to the Current Default Input Method.</td>
+  <td>This value will cause a change to be made to the Current Default Input Method.</td>
   </tr>
 </table>
-</div>	
+</div>  
 
 ####Select a Default Input Method Option
 Settable if: The "Set Default Input Method?" value is "Change Current Input Method"
@@ -355,33 +375,33 @@ Description:
 
 <div class="parm-table">
  <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>English(US)</td>
     <td>"1"</td>
-	<td>This value will cause the standard English Input Method to be made the new Default Input Method.</td>
+  <td>This value will cause the standard English Input Method to be made the new Default Input Method.</td>
   </tr>
   <tr>
     <td>Japanese</td>
     <td>"2"</td>
-	<td>This value will cause the standard Japanese Input Method to be made the new Default Input Method.</td>
+  <td>This value will cause the standard Japanese Input Method to be made the new Default Input Method.</td>
   </tr>
   <tr>
     <td>Chinese(China)</td>
     <td>"3"</td>
-	<td>This value will cause the standard Chinese Input Method to be made the new Default Input Method.</td>
+  <td>This value will cause the standard Chinese Input Method to be made the new Default Input Method.</td>
   </tr>
   <tr>
     <td>User defined Input Method</td>
     <td>"4"</td>
-	<td>This value will cause a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method (which must have already been installed) will need to be specified via its Android Package Name and Class Name.</td>
+  <td>This value will cause a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method (which must have already been installed) will need to be specified via its Android Package Name and Class Name.</td>
   </tr>
 </table>
-</div>	
+</div>  
 
 #####**Package name of input Method**
 Settable if: The "Set Default Input Method?" value is "Change Current Input Method" *AND* the "Select a Default Input Method Option" is "User defined Input Method"
@@ -460,20 +480,20 @@ Parm value input rules:
 
     :::XML
     <wap-provisioningdoc>
-		<characteristic type="UiMgr" version="4.3" >
-			<parm-query name="HomeKeyUsage"/>
-		</characteristic>
-	</wap-provisioningdoc>
+    <characteristic type="UiMgr" version="4.3" >
+      <parm-query name="HomeKeyUsage"/>
+    </characteristic>
+  </wap-provisioningdoc>
 
 #### Output
 
     :::XML
-	<wap-provisioningdoc>
+  <wap-provisioningdoc>
         <characteristic type="UiMgr" version="4.3" >
             <parm name="HomeKeyUsage" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
-	
+  
 ### Get Clipboard Usage
 
 #### Input 
@@ -528,7 +548,7 @@ Parm value input rules:
 #### Output
 
     :::XML
-	<wap-provisioningdoc>
+  <wap-provisioningdoc>
         <characteristic type="UiMgr" version="4.3" >
             <parm name="BluetoothPairingPopupUsage" value="1"/>
         </characteristic>
@@ -547,27 +567,27 @@ Parm value input rules:
 
 #### Output Selected Input
 
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="UiMgr" version="4.3" >
-			<parm name="InputMethodAction" value="1"/>
-			<characteristic-query type="InputMethodDetails">
-			  <parm name="InputMethodOption" value="1"/>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
-	
+  :::XML
+  <wap-provisioningdoc>
+    <characteristic type="UiMgr" version="4.3" >
+      <parm name="InputMethodAction" value="1"/>
+      <characteristic-query type="InputMethodDetails">
+        <parm name="InputMethodOption" value="1"/>
+      </characteristic>
+    </characteristic>
+  </wap-provisioningdoc>
+  
 #### Output Custom Input
 
-	:::XML
-	<characteristic type="UiMgr" version="4.3" >
-		<parm name="InputMethodAction" value="1"/>
-		<characteristic type="InputMethodDetails">
-			<parm name="InputMethodOption" value="4"/>
-			<parm name="InputMethodPackageName" value="PackageName1"/>
-			<parm name="InputMethodClassName" value="ClassName1"/>
-		</characteristic>
-	</characteristic>
+  :::XML
+  <characteristic type="UiMgr" version="4.3" >
+    <parm name="InputMethodAction" value="1"/>
+    <characteristic type="InputMethodDetails">
+      <parm name="InputMethodOption" value="4"/>
+      <parm name="InputMethodPackageName" value="PackageName1"/>
+      <parm name="InputMethodClassName" value="ClassName1"/>
+    </characteristic>
+  </characteristic>
 
 ### Get All Settings
 
@@ -582,7 +602,7 @@ Parm value input rules:
 
     :::XML
     <wap-provisioningdoc>
-	    <characteristic type="UiMgr" version="4.3" >
+      <characteristic type="UiMgr" version="4.3" >
             <parm name="CurrentLocale" value="en"/>
             <parm name="HomeKeyUsage" value="1"/>
             <parm name="ClipboardUsage" value ="1"/>
@@ -590,9 +610,9 @@ Parm value input rules:
             <parm name="InputMethodAction" value="1"/>
             <parm name="BluetoothPairingPopupUsage" value="1"/>
             <characteristic type="InputMethodDetails">
-	            <parm name="InputMethodOption" value="4"/>
-	            <parm name="InputMethodPackageName" value="PackageName1"/>
-	            <parm name="InputMethodClassName" value="ClassName1"/>
+              <parm name="InputMethodOption" value="4"/>
+              <parm name="InputMethodPackageName" value="PackageName1"/>
+              <parm name="InputMethodClassName" value="ClassName1"/>
             </characteristic>
         </characteristic>
     </wap-provisioningdoc>

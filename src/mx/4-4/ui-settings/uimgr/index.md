@@ -314,6 +314,26 @@ Description:
     <td>"en_US"</td>
 	<td>English spoken in the United States of America (USA)</td>
   </tr>
+  <tr>
+    <td>SPANISH</td>
+    <td>"es_ES"</td>
+  <td>Spanish spoken in Spain</td>
+  </tr>
+  <tr>
+    <td>US SPANISH</td>
+    <td>"es_US"</td>
+  <td>Spanish spoken in the United States of America (USA)</td>
+  </tr>
+  <tr>
+    <td>BRAZILIAN PORTUGESE</td>
+    <td>"pt_BR"</td>
+  <td>Portugese spoken in Brazil</td>
+  </tr>
+  <tr>
+    <td>PORTUGESE</td>
+    <td>"pt_PT"</td>
+  <td>Portugese spoken in Portugal</td>
+  </tr>
 </table>
 </div>	
 

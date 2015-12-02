@@ -125,7 +125,7 @@ The DhcpOptionMgr Feature Type allows you to configure those DHCP Options that a
 
 
 ##Parameter Notes
-###Host Name
+###Host Name (12)
 Pivotal parm: Yes
 
 Description: 
@@ -172,7 +172,7 @@ Parm value input rules:
 
 * String with a minimum size of 1 character and a maximum size of 91 characters
 
-###User Class
+###User Class (77)
 Pivotal parm: Yes
 
 Description: 
@@ -219,7 +219,7 @@ Parm value input rules:
 
 * String with a minimum size of 1 character and a maximum size of 91 characters
 
-###Broadcast Address
+###Broadcast Address (28)
 Pivotal parm: No
 
 Parm name: BroadcastAddrState
@@ -255,7 +255,7 @@ Description:
 </table>
 </div>
 
-###NTP Server
+###NTP Server (42)
 Pivotal parm: No
 
 Parm name: NTPServerState
@@ -293,7 +293,7 @@ Description:
 </table>
 </div>
 
-###TFTP Server Name
+###TFTP Server Name (66)
 Pivotal parm: No
 
 Parm name: TFTPSerNameState
@@ -331,7 +331,7 @@ Description:
 </table>
 </div>
 
-###Boot File Name
+###Boot File Name (67)
 Pivotal parm: No
 
 Parm name: BootFileState
@@ -369,7 +369,7 @@ Description:
 </table>
 </div>
 
-###Domain Search
+###Domain Search (119)
 Pivotal parm: No
 
 Parm name: DomainSearchState
@@ -407,7 +407,7 @@ Description:
 </table>
 </div>
 
-###TFTP Server Address
+###TFTP Server Address (150)
 Pivotal parm: No
 
 Parm name: TFTPSerAddrState
@@ -445,3 +445,153 @@ Description:
 </table>
 </div>
 
+###Vendor Class Identifier (60)
+Pivotal parm: Yes
+
+Description: 
+
+>This parm allows you to control whether a Vendor Class will be sent by the DHCP Client to the DHCP Server via the Vendor Class DHCP Option. This support allows DHCP relay to compare option 60 strings in received DHCP client packets against strings that you configure on the router. You can use the DHCP relay option 60 feature when providing converged services in your network environment—option 60 support enables DHCP relay to direct client traffic to the specific DHCP server (the vendor-option server) that provides the service that the client requires. Or, as another option, you can configure option 60 strings to direct traffic to the DHCP local server in the current virtual router.
+
+>For example, you might have an environment in which some DHCP clients require only Internet access, while other clients require IPTV service. The clients that need Internet access get their addresses assigned by the DHCP local server on the E Series router (in equal-access mode). Clients requiring IPTV must be relayed to a specific DHCP server that provides the service. To support both types of clients, you configure two option 60 strings on the DHCP relay. Now, when any DHCP client packets are received with option 60 strings configured, the strings are matched against all strings configured on the DHCP relay. If the client string matches the first string you configured, that client is directed to the DHCP local server and gains Internet access. Client traffic with an option 60 string that matches your second string is relayed to the DHCP server that provides the IPTV service. In addition, you can configure a default action, which DHCP relay performs when a client option 60 string does not match any strings you have configured—for example, you might specify that all clients with non-matching strings be dropped.
+
+<div class="parm-table">
+ <table>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"0"</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.</td>
+  </tr>
+  <tr>
+    <td>Enable</td>
+    <td>"1"</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will cause the specified Vendor Class to be sent by the DHCP Client to the DHCP Server in the DHCP Request.</td>
+  </tr>
+  <tr>
+    <td>Disable</td>
+    <td>"2"</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will prevent a Vendor Class from being to be sent by the DHCP Client to the DHCP Server.</td>
+  </tr>
+</table>
+</div>  
+
+####Vendor Class value
+Settable if: Vendor Class is "Enable"
+
+Pivotal parm: No
+
+Parm name: VendorClassIdValue
+
+Description: 
+
+>This parm allows you to specify the Vendor Class value that will be sent by the DHCP Client to the DHCP Server in the DHCP Request.
+
+Parm value input rules: 
+
+* String with a minimum size of 1 character and a maximum size of 91 characters
+
+###Vendor Encapsulated (43)
+Pivotal parm: No
+
+Parm name: VendorEncapsulatedState
+
+Description: 
+
+>TBD
+
+<div class="parm-table">
+ <table>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"0"</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.</td>
+  </tr>
+  <tr>
+    <td>Enable</td>
+    <td>"1"</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will .</td>
+  </tr>
+  <tr>
+    <td>Disable</td>
+    <td>"2"</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will .</td>
+  </tr>
+</table>
+</div>
+
+###Vendor Specific1 (186)
+Pivotal parm: No
+
+Parm name: VendorSpecific1State
+
+Description: 
+
+>TBD
+
+<div class="parm-table">
+ <table>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"0"</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.</td>
+  </tr>
+  <tr>
+    <td>Enable</td>
+    <td>"1"</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will .</td>
+  </tr>
+  <tr>
+    <td>Disable</td>
+    <td>"2"</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will .</td>
+  </tr>
+</table>
+</div>
+
+###Vendor Specific2 (188)
+Pivotal parm: No
+
+Parm name: VendorSpecific1State
+
+Description: 
+
+>TBD
+
+<div class="parm-table">
+ <table>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"0"</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.</td>
+  </tr>
+  <tr>
+    <td>Enable</td>
+    <td>"1"</td>
+  <td>This value will cause this DHCP Option to be turned on and hence will .</td>
+  </tr>
+  <tr>
+    <td>Disable</td>
+    <td>"2"</td>
+  <td>This value will cause this DHCP Option to be turned off and hence will .</td>
+  </tr>
+</table>
+</div>

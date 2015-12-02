@@ -46,7 +46,7 @@
                         <li><a href="/guides">Guides</a></li>
                         <li><a href="/tutorials">Tutorials</a></li>
                         <li><a href="/apis">APIs</a></li>
-                        <li><a href="#"><input type="text" class="st-default-search-input"></a></li>
+                        <!-- <li><a href="#"><input type="text" class="st-default-search-input"></a></li> -->
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -77,6 +77,54 @@
                                                             </li>
                                                             <li>
                                                                 <a href="/mx/5-0/app-management/licensemgr/"><span>License Manager</span></a>
+                                                            </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="active">
+                                                    <span class="arrow"></span>
+                                                    <a href="/mx/5-0/device-configuration/"><span>Device Configuration</span></a> 
+                                                        <ul style="display:block;">
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/analytics/"><span>Analytics Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/audiomgr/"><span>Audio Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/batterymgr/"><span>Battery Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/clock/"><span>Clock Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/componentmgr/"><span>Component Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/displaymgr/"><span>Display Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/powermgr/"><span>Power Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/touchmgr/"><span>Touch Manager</span></a>
+                                                            </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="active">
+                                                    <span class="arrow"></span>
+                                                    <a href="/mx/5-0/mx/"><span>MX Core</span></a> 
+                                                        <ul style="display:block;">
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/cspmgr/"><span>CSP Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/persistance/"><span>Persistence Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/versionmgr/"><span>MX Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/xmlmgr/"><span>XML Manager</span></a>
                                                             </li>
                                                         </ul>
                                                 </li>
@@ -122,54 +170,6 @@
                                                             </li>
                                                             <li>
                                                                 <a href="/mx/5-0/ui-settings/uimgr/"><span>UI Manager</span></a>
-                                                            </li>
-                                                        </ul>
-                                                </li>
-                                                <li class="active">
-                                                    <span class="arrow"></span>
-                                                    <a href="/mx/5-0/mx/"><span>MX Core</span></a> 
-                                                        <ul style="display:block;">
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/cspmgr/"><span>CSP Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/persistance/"><span>Persistence Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/versionmgr/"><span>MX Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/xmlmgr/"><span>XML Manager</span></a>
-                                                            </li>
-                                                        </ul>
-                                                </li>
-                                                <li class="active">
-                                                    <span class="arrow"></span>
-                                                    <a href="/mx/5-0/device-configuration/"><span>Device Configuration</span></a> 
-                                                        <ul style="display:block;">
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/analytics/"><span>Analytics Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/audiomgr/"><span>Audio Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/batterymgr/"><span>Battery Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/clock/"><span>Clock Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/componentmgr/"><span>Component Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/displaymgr/"><span>Display Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/powermgr/"><span>Power Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/touchmgr/"><span>Touch Manager</span></a>
                                                             </li>
                                                         </ul>
                                                 </li>
@@ -224,12 +224,14 @@
 
 <h3 id="overview">Overview</h3>
 
-<p>The DisplayMgr Feature Type allows you to control the display screen on the device. At present, the only option is to configure the timeout value after which the display turns off to conserve battery power. Future versions of the DisplayMgr Feature Type may provide the ability to control other aspects of the display screen.</p>
+<p>The DisplayMgr Feature Type allows you to control the screen timeout interval and screen capture ability on the device. Configuring the timeout value after which the display turns off will conserve battery power. </p>
 
 <h3 id="mainfunctionality">Main Functionality</h3>
 
 <ul>
 <li>Set the Display Screen Timeout Interval</li>
+
+<li>Enable or Disable Screen Shot usage</li>
 </ul>
 
 <h2 id="parameternotes">Parameter Notes</h2>
@@ -298,6 +300,43 @@
 </tbody></table>
 </div>
 
+<h3 id="screenshotusage">Screen Shot Usage</h3>
+
+<p>Pivotal parm: No</p>
+
+<p>Parm name: ScreenShotUsage</p>
+
+<p>Description: </p>
+
+<blockquote>
+  <p>This parm will allow you to block or allow the usage of screen capture ability available in Android.</p>
+</blockquote>
+
+<div class="parm-table">
+ <table>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"0"</td>
+  <td>This value (or the absence of this parm from the XML) will not cause any changes to the current behavior.</td>
+  </tr>
+  <tr>
+    <td>Enable</td>
+    <td>"1"</td>
+  <td>This value will enable the ability to use the Android screen capture feature.</td>
+  </tr>
+  <tr>
+    <td>Disable</td>
+    <td>"2"</td>
+  <td>This value will disable the ability to use the Android screen capture feature.</td>
+  </tr>
+</tbody></table>
+</div>
+
 <h2 id="examplexml">Example XML</h2>
 
 <h3 id="setbacklighttimeout">Set Backlight Timeout</h3>
@@ -306,6 +345,16 @@
 &lt;wap-provisioningdoc&gt;
     &lt;characteristic type="DisplayMgr" version="4.3" &gt;
         &lt;parm name="TimeoutInterval" value="60"/&gt;
+    &lt;/characteristic&gt;
+&lt;/wap-provisioningdoc&gt;
+</code></pre>
+
+<h3 id="disablescreencapture">Disable Screen Capture</h3>
+
+<pre class="prettyprint"><code>
+&lt;wap-provisioningdoc&gt;
+    &lt;characteristic type="DisplayMgr" version="4.3" &gt;
+        &lt;parm name="ScreenShotUsage" value="2"/&gt;
     &lt;/characteristic&gt;
 &lt;/wap-provisioningdoc&gt;
 </code></pre><p></p>

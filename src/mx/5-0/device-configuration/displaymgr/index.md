@@ -7,11 +7,12 @@ description: The DisplayMgr allows you to control the display screen on the devi
 
 ### Overview
 
-The DisplayMgr Feature Type allows you to control the display screen on the device. At present, the only option is to configure the timeout value after which the display turns off to conserve battery power. Future versions of the DisplayMgr Feature Type may provide the ability to control other aspects of the display screen.
+The DisplayMgr Feature Type allows you to control the screen timeout interval and screen capture ability on the device. Configuring the timeout value after which the display turns off will conserve battery power. 
 
 ### Main Functionality
 
 * Set the Display Screen Timeout Interval
+* Enable or Disable Screen Shot usage
  
 ##Parameter Notes
 ###Set the Screen Off Timeout Interval
@@ -75,6 +76,42 @@ Description:
 </table>
 </div>
 
+###Screen Shot Usage
+Pivotal parm: No
+
+Parm name: ScreenShotUsage
+
+Description: 
+
+>This parm will allow you to block or allow the usage of screen capture ability available in Android.
+
+<div class="parm-table">
+ <table>
+  <tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"0"</td>
+  <td>This value (or the absence of this parm from the XML) will not cause any changes to the current behavior.</td>
+  </tr>
+  <tr>
+    <td>Enable</td>
+    <td>"1"</td>
+  <td>This value will enable the ability to use the Android screen capture feature.</td>
+  </tr>
+  <tr>
+    <td>Disable</td>
+    <td>"2"</td>
+  <td>This value will disable the ability to use the Android screen capture feature.</td>
+  </tr>
+</table>
+</div>
+
+
+
 ##Example XML
 ### Set Backlight Timeout
 
@@ -85,4 +122,12 @@ Description:
         </characteristic>
     </wap-provisioningdoc>
 
+### Disable Screen Capture
+
+    :::XML
+    <wap-provisioningdoc>
+        <characteristic type="DisplayMgr" version="4.3" >
+            <parm name="ScreenShotUsage" value="2"/>
+        </characteristic>
+    </wap-provisioningdoc>
 

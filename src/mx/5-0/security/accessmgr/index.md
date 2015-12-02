@@ -113,7 +113,7 @@ Description:
 		<th>Description</th>
 	</tr>
   <tr>
-    <td>Do nothing</td>
+    <td>Do not change</td>
     <td>"0"</td>
 	<td>This value (or the absence of this parm from the XML) will cause no change to whether Signature verification will occur or for which applications.</td>
   </tr>

@@ -46,7 +46,7 @@
                         <li><a href="/guides">Guides</a></li>
                         <li><a href="/tutorials">Tutorials</a></li>
                         <li><a href="/apis">APIs</a></li>
-                        <li><a href="#"><input type="text" class="st-default-search-input"></a></li>
+                        <!-- <li><a href="#"><input type="text" class="st-default-search-input"></a></li> -->
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -77,6 +77,54 @@
                                                             </li>
                                                             <li>
                                                                 <a href="/mx/5-0/app-management/licensemgr/"><span>License Manager</span></a>
+                                                            </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="active">
+                                                    <span class="arrow"></span>
+                                                    <a href="/mx/5-0/device-configuration/"><span>Device Configuration</span></a> 
+                                                        <ul style="display:block;">
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/analytics/"><span>Analytics Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/audiomgr/"><span>Audio Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/batterymgr/"><span>Battery Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/clock/"><span>Clock Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/componentmgr/"><span>Component Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/displaymgr/"><span>Display Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/powermgr/"><span>Power Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/device-configuration/touchmgr/"><span>Touch Manager</span></a>
+                                                            </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="active">
+                                                    <span class="arrow"></span>
+                                                    <a href="/mx/5-0/mx/"><span>MX Core</span></a> 
+                                                        <ul style="display:block;">
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/cspmgr/"><span>CSP Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/persistance/"><span>Persistence Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/versionmgr/"><span>MX Manager</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/mx/5-0/mx/xmlmgr/"><span>XML Manager</span></a>
                                                             </li>
                                                         </ul>
                                                 </li>
@@ -122,54 +170,6 @@
                                                             </li>
                                                             <li>
                                                                 <a href="/mx/5-0/ui-settings/uimgr/"><span>UI Manager</span></a>
-                                                            </li>
-                                                        </ul>
-                                                </li>
-                                                <li class="active">
-                                                    <span class="arrow"></span>
-                                                    <a href="/mx/5-0/mx/"><span>MX Core</span></a> 
-                                                        <ul style="display:block;">
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/cspmgr/"><span>CSP Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/persistance/"><span>Persistence Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/versionmgr/"><span>MX Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/mx/xmlmgr/"><span>XML Manager</span></a>
-                                                            </li>
-                                                        </ul>
-                                                </li>
-                                                <li class="active">
-                                                    <span class="arrow"></span>
-                                                    <a href="/mx/5-0/device-configuration/"><span>Device Configuration</span></a> 
-                                                        <ul style="display:block;">
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/analytics/"><span>Analytics Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/audiomgr/"><span>Audio Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/batterymgr/"><span>Battery Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/clock/"><span>Clock Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/componentmgr/"><span>Component Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/displaymgr/"><span>Display Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/powermgr/"><span>Power Manager</span></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/mx/5-0/device-configuration/touchmgr/"><span>Touch Manager</span></a>
                                                             </li>
                                                         </ul>
                                                 </li>
@@ -272,28 +272,28 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Clipboard function can be used.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Clipboard function can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-    <td>This value will cause use of the Clipboard function to be allowed.</td>
+  <td>This value will cause use of the Clipboard function to be allowed.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-    <td><p>This value will cause use of the Clipboard function to be prevented.</p><p><b>Note:</b> This will disallow the user from being able to copy and paste data to or from the clipboard. An attempt to use the clipboard when its use is prevented will result in a toast message to inform the device user that the use of the clipboard is not currently allowed.</p></td>
+  <td><p>This value will cause use of the Clipboard function to be prevented.</p><p><b>Note:</b> This will disallow the user from being able to copy and paste data to or from the clipboard. An attempt to use the clipboard when its use is prevented will result in a toast message to inform the device user that the use of the clipboard is not currently allowed.</p></td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h3 id="clearclipboard">Clear Clipboard?</h3>
 
@@ -309,23 +309,23 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>True</td>
     <td>"true"</td>
-    <td>This value will cause the clipboard to be cleared, thus erasing any content that was previously copied into the clipboard and hence preventing such content from thereafter being pasted.</td>
+  <td>This value will cause the clipboard to be cleared, thus erasing any content that was previously copied into the clipboard and hence preventing such content from thereafter being pasted.</td>
   </tr>
   <tr>
     <td>False</td>
     <td>"false"</td>
-    <td>This value will cause no change to be made to the contents of the clipboard.</td>
+  <td>This value will cause no change to be made to the contents of the clipboard.</td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h3 id="enabledisableautocorrect">Enable/Disable AutoCorrect</h3>
 
@@ -341,28 +341,28 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Auto Correct function is allowed to be used.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Auto Correct function is allowed to be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-    <td><p>This value will cause use of the Auto Correct function to be allowed.</p><p><b>Note:</b> This value does not specify that the Auto Correct function will be enabled, or any specific configuration of that function. When the function is allowed, the device user can Turn the function On or Off and configure the operation of the function via the System Settings Menu.</p></td>
+  <td><p>This value will cause use of the Auto Correct function to be allowed.</p><p><b>Note:</b> This value does not specify that the Auto Correct function will be enabled, or any specific configuration of that function. When the function is allowed, the device user can Turn the function On or Off and configure the operation of the function via the System Settings Menu.</p></td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-    <td><p>This value will cause use of the Auto Correct function to be prevented.</p><p><b>Note:</b> This value does not change whether the Auto Correct function is Turned On or Off or any configure related the operation of the function configured via the System Settings Menu. But it does prevent the function from being used, thus making any such configuration performed by the device user irrelevant unless/until use of the feature is allowed.</p></td>
+  <td><p>This value will cause use of the Auto Correct function to be prevented.</p><p><b>Note:</b> This value does not change whether the Auto Correct function is Turned On or Off or any configure related the operation of the function configured via the System Settings Menu. But it does prevent the function from being used, thus making any such configuration performed by the device user irrelevant unless/until use of the feature is allowed.</p></td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h3 id="enabledisablehomekey">Enable/Disable HomeKey</h3>
 
@@ -378,28 +378,28 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Home Key can be used.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Home Key can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-    <td>This value will cause use of the Home Key to be allowed.</td>
+  <td>This value will cause use of the Home Key to be allowed.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-    <td><p>This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application.</p><p><b>Note:</b> Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the <a href="../edge/index.html#guide-csp-keymappingmgr">KeyMappingMgr Feature Type</a> can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).</p></td>
+  <td><p>This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application.</p><p><b>Note:</b> Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the <a href="../edge/index.html#guide-csp-keymappingmgr">KeyMappingMgr Feature Type</a> can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).</p></td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h3 id="enabledisablebluetoothpairingpopup">Enable/Disable Bluetooth Pairing Popup</h3>
 
@@ -415,28 +415,28 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Bluetooth Pairing Popup is will be presented.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Bluetooth Pairing Popup is will be presented.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-    <td>This value will cause the Bluetooth Pairing Popup to be presented whenever a pairing operation is performed.</td>
+  <td>This value will cause the Bluetooth Pairing Popup to be presented whenever a pairing operation is performed.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-    <td>This value will cause the Bluetooth Pairing Popup to be suppressed when a pairing operation is performed.</td>
+  <td>This value will cause the Bluetooth Pairing Popup to be suppressed when a pairing operation is performed.</td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h3 id="setcurrentlocale">Set Current Locale</h3>
 
@@ -452,123 +452,143 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-    <td></td>
+  <td></td>
   </tr>
   <tr>
     <td>CANADA</td>
     <td>"en_CA"</td>
-    <td>English spoken in Canada</td>
+  <td>English spoken in Canada</td>
   </tr>
   <tr>
     <td>CANADA_FRENCH</td>
     <td>"fr_CA"</td>
-    <td>French spoken in Canada</td>
+  <td>French spoken in Canada</td>
   </tr>
   <tr>
     <td>CHINA</td>
     <td>"zh_CN"</td>
-    <td>Chinese spoken in China</td>
+  <td>Chinese spoken in China</td>
   </tr>
   <tr>
     <td>CHINESE</td>
     <td>"zh"</td>
-    <td>Chinese (non-region specific)</td>
+  <td>Chinese (non-region specific)</td>
   </tr>
   <tr>
     <td>ENGLISH</td>
     <td>"en"</td>
-    <td>English (non-region specific)</td>
+  <td>English (non-region specific)</td>
   </tr>
   <tr>
     <td>FRANCE</td>
     <td>"fr_FR"</td>
-    <td>French spoken in France</td>
+  <td>French spoken in France</td>
   </tr>
   <tr>
     <td>FRENCH</td>
     <td>"fr"</td>
-    <td>French (non-region specific)</td>
+  <td>French (non-region specific)</td>
   </tr>
   <tr>
     <td>GERMAN</td>
     <td>"de"</td>
-    <td>German (non-region specific)</td>
+  <td>German (non-region specific)</td>
   </tr>
   <tr>
     <td>GERMANY</td>
     <td>"de_DE"</td>
-    <td>German spoken in Germany</td>
+  <td>German spoken in Germany</td>
   </tr>
   <tr>
     <td>ITALIAN</td>
     <td>"it"</td>
-    <td>Italian (non-region specific)</td>
+  <td>Italian (non-region specific)</td>
   </tr>
   <tr>
     <td>ITALY</td>
     <td>"it_IT"</td>
-    <td>Italian spoken in Italy</td>
+  <td>Italian spoken in Italy</td>
   </tr>
   <tr>
     <td>JAPAN</td>
     <td>"ja_JP"</td>
-    <td>Japanese spoken in Japan</td>
+  <td>Japanese spoken in Japan</td>
   </tr>
   <tr>
     <td>JAPANESE</td>
     <td>"ja"</td>
-    <td>Japanese (non-region specific)</td>
+  <td>Japanese (non-region specific)</td>
   </tr>
   <tr>
     <td>KOREA</td>
     <td>"ko_KR"</td>
-    <td>Korean spoken in Korea</td>
+  <td>Korean spoken in Korea</td>
   </tr>
   <tr>
     <td>KOREAN</td>
     <td>"ko"</td>
-    <td>Korean (non-region specific)</td>
+  <td>Korean (non-region specific)</td>
   </tr>
   <tr>
     <td>PRC</td>
     <td>"zh_CN"</td>
-    <td>Alternate Chinese spoken in China</td>
+  <td>Alternate Chinese spoken in China</td>
   </tr>
   <tr>
     <td>SIMPLIFIED_CHINESE</td>
     <td>"zh_CN"</td>
-    <td>Alternate Chinese spoken in China</td>
+  <td>Alternate Chinese spoken in China</td>
   </tr>
   <tr>
     <td>TAIWAN</td>
     <td>"zh_TW"</td>
-    <td>Chinese spoken in Taiwan</td>
+  <td>Chinese spoken in Taiwan</td>
   </tr>
   <tr>
     <td>TRADITIONAL_CHINESE</td>
     <td>"zh_TW"</td>
-    <td>Alternate Chinese spoken in Taiwan</td>
+  <td>Alternate Chinese spoken in Taiwan</td>
   </tr>
   <tr>
     <td>UK</td>
     <td>"en_GB"</td>
-    <td>English spoken in Great Britain/United Kingdom</td>
+  <td>English spoken in Great Britain/United Kingdom</td>
   </tr>
   <tr>
     <td>US</td>
     <td>"en_US"</td>
-    <td>English spoken in the United States of America (USA)</td>
+  <td>English spoken in the United States of America (USA)</td>
+  </tr>
+  <tr>
+    <td>SPANISH</td>
+    <td>"es_ES"</td>
+  <td>Spanish spoken in Spain</td>
+  </tr>
+  <tr>
+    <td>US SPANISH</td>
+    <td>"es_US"</td>
+  <td>Spanish spoken in the United States of America (USA)</td>
+  </tr>
+  <tr>
+    <td>BRAZILIAN PORTUGESE</td>
+    <td>"pt_BR"</td>
+  <td>Portugese spoken in Brazil</td>
+  </tr>
+  <tr>
+    <td>PORTUGESE</td>
+    <td>"pt_PT"</td>
+  <td>Portugese spoken in Portugal</td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h3 id="setdefaultinputmethod">Set Default Input Method?</h3>
 
@@ -582,23 +602,23 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-    <td>This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.</td>
+  <td>This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.</td>
   </tr>
   <tr>
     <td>Change Current Input Method</td>
     <td>"1"</td>
-    <td>This value will cause a change to be made to the Current Default Input Method.</td>
+  <td>This value will cause a change to be made to the Current Default Input Method.</td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h4 id="selectadefaultinputmethodoption">Select a Default Input Method Option</h4>
 
@@ -614,33 +634,33 @@
 
 <div class="parm-table">
  <table>
-    <tbody><tr>
-        <th>Parm Option Name</th>
-        <th>Parm Value</th>
-        <th>Description</th>
-    </tr>
+  <tbody><tr>
+    <th>Parm Option Name</th>
+    <th>Parm Value</th>
+    <th>Description</th>
+  </tr>
   <tr>
     <td>English(US)</td>
     <td>"1"</td>
-    <td>This value will cause the standard English Input Method to be made the new Default Input Method.</td>
+  <td>This value will cause the standard English Input Method to be made the new Default Input Method.</td>
   </tr>
   <tr>
     <td>Japanese</td>
     <td>"2"</td>
-    <td>This value will cause the standard Japanese Input Method to be made the new Default Input Method.</td>
+  <td>This value will cause the standard Japanese Input Method to be made the new Default Input Method.</td>
   </tr>
   <tr>
     <td>Chinese(China)</td>
     <td>"3"</td>
-    <td>This value will cause the standard Chinese Input Method to be made the new Default Input Method.</td>
+  <td>This value will cause the standard Chinese Input Method to be made the new Default Input Method.</td>
   </tr>
   <tr>
     <td>User defined Input Method</td>
     <td>"4"</td>
-    <td>This value will cause a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method (which must have already been installed) will need to be specified via its Android Package Name and Class Name.</td>
+  <td>This value will cause a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method (which must have already been installed) will need to be specified via its Android Package Name and Class Name.</td>
   </tr>
 </tbody></table>
-</div>    
+</div>  
 
 <h5 id="packagenameofinputmethod"><strong>Package name of input Method</strong></h5>
 
@@ -734,21 +754,23 @@
 
 <pre class="prettyprint"><code>
 &lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="UiMgr" version="4.3" &gt;
-        &lt;parm-query name="HomeKeyUsage"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
+&lt;characteristic type="UiMgr" version="4.3" &gt;
+  &lt;parm-query name="HomeKeyUsage"/&gt;
+&lt;/characteristic&gt;
 </code></pre>
+
+<p></p>
 
 <h4 id="output-1">Output</h4>
 
 <pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="UiMgr" version="4.3" &gt;
-        &lt;parm name="HomeKeyUsage" value="1"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
 </code></pre>
+
+<p><wap-provisioningdoc>
+        <characteristic type="UiMgr" version="4.3">
+            <parm name="HomeKeyUsage" value="1">
+        </parm></characteristic>
+    </wap-provisioningdoc></p>
 
 <h3 id="getclipboardusage">Get Clipboard Usage</h3>
 
@@ -809,12 +831,13 @@
 <h4 id="output-4">Output</h4>
 
 <pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="UiMgr" version="4.3" &gt;
-        &lt;parm name="BluetoothPairingPopupUsage" value="1"/&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
 </code></pre>
+
+<p><wap-provisioningdoc>
+        <characteristic type="UiMgr" version="4.3">
+            <parm name="BluetoothPairingPopupUsage" value="1">
+        </parm></characteristic>
+    </wap-provisioningdoc></p>
 
 <h3 id="getinputmethods">Get Input Methods</h3>
 
@@ -830,29 +853,27 @@
 
 <h4 id="outputselectedinput">Output Selected Input</h4>
 
-<pre class="prettyprint"><code>
-&lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="UiMgr" version="4.3" &gt;
-        &lt;parm name="InputMethodAction" value="1"/&gt;
-        &lt;characteristic-query type="InputMethodDetails"&gt;
-          &lt;parm name="InputMethodOption" value="1"/&gt;
-        &lt;/characteristic&gt;
-    &lt;/characteristic&gt;
-&lt;/wap-provisioningdoc&gt;
-</code></pre>
+<p>:::XML
+  <wap-provisioningdoc>
+    <characteristic type="UiMgr" version="4.3">
+      <parm name="InputMethodAction" value="1">
+      <characteristic-query type="InputMethodDetails">
+        <parm name="InputMethodOption" value="1">
+      </parm></characteristic-query></parm></characteristic>
+    
+  </wap-provisioningdoc></p>
 
 <h4 id="outputcustominput">Output Custom Input</h4>
 
-<pre class="prettyprint"><code>
-&lt;characteristic type="UiMgr" version="4.3" &gt;
-    &lt;parm name="InputMethodAction" value="1"/&gt;
-    &lt;characteristic type="InputMethodDetails"&gt;
-        &lt;parm name="InputMethodOption" value="4"/&gt;
-        &lt;parm name="InputMethodPackageName" value="PackageName1"/&gt;
-        &lt;parm name="InputMethodClassName" value="ClassName1"/&gt;
-    &lt;/characteristic&gt;
-&lt;/characteristic&gt;
-</code></pre>
+<p>:::XML
+  <characteristic type="UiMgr" version="4.3">
+    <parm name="InputMethodAction" value="1">
+    <characteristic type="InputMethodDetails">
+      <parm name="InputMethodOption" value="4">
+      <parm name="InputMethodPackageName" value="PackageName1">
+      <parm name="InputMethodClassName" value="ClassName1">
+    </parm></parm></parm></characteristic>
+  </parm></characteristic></p>
 
 <h3 id="getallsettings">Get All Settings</h3>
 
@@ -868,7 +889,7 @@
 
 <pre class="prettyprint"><code>
 &lt;wap-provisioningdoc&gt;
-    &lt;characteristic type="UiMgr" version="4.3" &gt;
+  &lt;characteristic type="UiMgr" version="4.3" &gt;
         &lt;parm name="CurrentLocale" value="en"/&gt;
         &lt;parm name="HomeKeyUsage" value="1"/&gt;
         &lt;parm name="ClipboardUsage" value ="1"/&gt;
@@ -876,9 +897,9 @@
         &lt;parm name="InputMethodAction" value="1"/&gt;
         &lt;parm name="BluetoothPairingPopupUsage" value="1"/&gt;
         &lt;characteristic type="InputMethodDetails"&gt;
-            &lt;parm name="InputMethodOption" value="4"/&gt;
-            &lt;parm name="InputMethodPackageName" value="PackageName1"/&gt;
-            &lt;parm name="InputMethodClassName" value="ClassName1"/&gt;
+          &lt;parm name="InputMethodOption" value="4"/&gt;
+          &lt;parm name="InputMethodPackageName" value="PackageName1"/&gt;
+          &lt;parm name="InputMethodClassName" value="ClassName1"/&gt;
         &lt;/characteristic&gt;
     &lt;/characteristic&gt;
 &lt;/wap-provisioningdoc&gt;

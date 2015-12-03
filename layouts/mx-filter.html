@@ -1,0 +1,65 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3">
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h2>{{ title }}</h2>
+                                    <p>
+                                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                        MX: {{ mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <!-- Start of guide -->
+                                <div class="media service-box wow fadeInRight">
+                                    <div class="media-body">
+                                        <h4 class="media-heading"></h4>
+                                        <p>{{{ contents }}}</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer}}
+
+<script type="text/javascript">
+    var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
+
+    console.log(params);
+    if(params.mxfilter){
+        mxversions = params.mxfilter.split(',');
+        console.log(mxversions);
+        alert('Received params to filter MX versions: ');
+        for (var i = 0; i < mxversions.length; i++) {
+            alert(mxversions[i]);
+        };
+    }
+</script>

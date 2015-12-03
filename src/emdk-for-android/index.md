@@ -136,6 +136,10 @@ menu:
       - title: Profile Features
         url: /emdk-for-android/4-0/mx
         items: 
+          - title: MX Overview
+            url: /emdk-for-android/mx/overview
+          - title: Choosing a Version
+            url: /emdk-for-android/mx/choosing-a-version
           - title: Application Management
             url: /emdk-for-android/mx/4-4/app-management
           - title: Device Configuration

@@ -1,17 +1,6 @@
 ---
 title: Choosing an MX Version
 layout: mx-filter.html
-menu:
-  - title: MX Overview
-    url: /mx/overview
-  - title: MX For Developers
-    url: /mx/for-developers
-  - title: MX For Adminstrators
-    url: /mx/for-admins
-  - title: Feature Compatibility
-    url: /mx/compatibility
-  - title: Checking Device MX Version
-    url: /mx/mx-version-on-device
 
 ---
 

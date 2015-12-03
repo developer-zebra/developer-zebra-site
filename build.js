@@ -288,6 +288,10 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'mx/4-2/',
         automenu: true
     }))
+    .use(foldermenu({
+        folder: 'mx/',
+        automenu: false
+    }))
     .use(showdown({}))
     .use(snippet({
       maxLength: 250,

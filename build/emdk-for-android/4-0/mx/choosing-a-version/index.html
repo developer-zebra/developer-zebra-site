@@ -453,7 +453,7 @@
     if(params.mxfilter){
         mxversions = params.mxfilter.split(',');
         console.log(mxversions);
-        alert('Received params to filter MX versions: ');
+        alert('Received params to filter MX versions for product: ' + params.product);
         for (var i = 0; i < mxversions.length; i++) {
             alert(mxversions[i]);
         };

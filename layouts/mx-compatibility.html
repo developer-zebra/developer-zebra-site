@@ -1,0 +1,85 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                               
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h2>{{ title }}</h2>
+                                    <p>
+                                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                        MX: {{ mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="main">
+                                <div class="panel panel-default" id="panelMain">
+                                    <div id="panelMainHeader">
+                                        <div class="pull-left">
+                                            <div id="mxTitle" class="headerItem" >
+                                                MX: <span id="mxSpan" class="headerSelect"></span>
+                                            </div>
+                                            <div id="cspTitle" class="headerItem">
+                                                Feature: <span id="cspSpan" class="headerSelect"></span>
+                                            </div>
+                                        </div>
+                                        <span id="openInNewTab" class="pull-right" data-toggle="tooltip" data-placement="left" title="Open In New Tab"><a href="#" id="openInNewTabLink" target="_blank"><i class="fa fa-external-link"></i></a></span> 
+                                        <div class="pull-right">
+                                            <div id="osTitle" class="headerItem">
+                                                OS: <span id="osSpan" class="headerSelect"></span> 
+                                            </div>
+                                            <div id="deviceTitle" class="headerItem">
+                                                Device: <span id="deviceSpan" class="headerSelect"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="panelMainTable">
+                                        
+                                    </div>
+                                    <div id="panelMainfooter">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer}}
+
+<script type="text/javascript">
+    var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
+
+    console.log(params);
+    if(params.mxfilter){
+        mxversions = params.mxfilter.split(',');
+        console.log(mxversions);
+        // alert('Received params to filter MX versions for product: ' + params.product);
+        for (var i = 0; i < mxversions.length; i++) {
+            // alert(mxversions[i]);
+        };
+    }
+</script>
+        <script type="text/javascript" src="/js/mx.js"></script>       
+        <script type="text/javascript" src="/js/compare.js"></script>        

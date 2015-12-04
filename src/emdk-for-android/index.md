@@ -141,17 +141,17 @@ menu:
           - title: Choosing a Version
             url: /emdk-for-android/mx/choosing-a-version
           - title: Application Management
-            url: /emdk-for-android/mx/4-4/app-management
+            url: /emdk-for-android/4-0/mx/app-management
           - title: Device Configuration
-            url: /emdk-for-android/mx/4-4/device-configuration
+            url: /emdk-for-android/4-0/mx/device-configuration
           - title: Security
-            url: /emdk-for-android/mx/4-4/security
+            url: /emdk-for-android/4-0/mx/security
           - title: UI Configuration
-            url: /emdk-for-android/mx/4-4/ui-settings
+            url: /emdk-for-android/4-0/mx/ui-settings
           - title: Wireless
-            url: /emdk-for-android/mx/4-4/wireless
+            url: /emdk-for-android/4-0/mx/wireless
           - title: MX Framework
-            url: /emdk-for-android/mx/4-4/mx
+            url: /emdk-for-android/4-0/mx/mx
           - title: Data Capture
             url: /emdk-for-android/4-0/mx/data-capture
   - title: APIs

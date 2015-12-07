@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "hexo-server": "^0.1.2",
+    "metalsmith-broken-link-checker": "^0.1.8",
     "metalsmith-snippet": "^1.0.1"
   }
 }

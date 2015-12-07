@@ -18,6 +18,7 @@ var Metalsmith = require('metalsmith'),
     imagemin = require('metalsmith-imagemin'),
     paths = require('metalsmith-paths'),
     codehighlight = require('metalsmith-code-highlight'),
+    blc = require('metalsmith-broken-link-checker'),
 	Swag = require('swag');
 
 

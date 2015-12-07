@@ -7,7 +7,7 @@ source: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/Profi
 features: 
   - Profile Manager
   - WiFi Manager
-  devices: 
+devices: 
   - MC18KK
   - MC32N0JB
   - MC40JB

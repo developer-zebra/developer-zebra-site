@@ -30,7 +30,7 @@ var defaultPublish = function(config) {
         for (var file in files) {
             if (pattern.test(file) && files[file].path.ext == '.md') {
                 var _f = files[file];
-                if (!_f.publish) {
+                if (typeof(_f.publish) =='undefined' ) {
                     _f.publish = true;
                 }
             }

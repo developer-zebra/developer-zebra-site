@@ -7,13 +7,9 @@ menu:
     url: /mx/overview
   - title: MX Features
     url: /mx
-  - title: MX For Developers
-    url: /mx/for-developers
-  - title: MX For Adminstrators
-    url: /mx/for-admins
   - title: Feature Compatibility
     url: /mx/compatibility
-  - title: Choosing a version
+  - title: Choosing a MX Version
     url: /mx/choosing-a-version
   - title: Checking Device MX Version
     url: /mx/mx-version-on-device

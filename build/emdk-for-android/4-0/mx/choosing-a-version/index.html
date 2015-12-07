@@ -445,13 +445,14 @@
 <script type="text/javascript">
     var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
 
-    console.log(params);
+    // for future use
+    // console.log(params);
     if(params.mxfilter){
         mxversions = params.mxfilter.split(',');
         console.log(mxversions);
-        alert('Received params to filter MX versions for product: ' + params.product);
+        // alert('Received params to filter MX versions for product: ' + params.product);
         for (var i = 0; i < mxversions.length; i++) {
-            alert(mxversions[i]);
+            // alert(mxversions[i]);
         };
     }
 </script></body></html>

@@ -15,6 +15,9 @@
                 <div class="col-sm-12 ">
                     <i class="fa fa-3x fa-th-large pull-right" id="tile-view"></i>
                     <i class="fa fa-3x fa-th-list pull-right hidden" id="list-view"></i>
+                    {{#if download}}
+                        <a class="pull-right" href="{{{download.url}}}"><i class="fa fa-3x fa-download"  data-toggle="tooltip" data-placement="bottom" title="{{{download.title}}}"></i> </a>
+                    {{/if}}
                 </div>
 
             </div>

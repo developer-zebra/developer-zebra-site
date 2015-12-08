@@ -66,6 +66,9 @@ jQuery(function($) {'use strict';
 	$(document).ready(function() {
 		// make all images use img-responsove class from bootstrap
 		$('img').addClass('img-responsive');
+
+		//enable all tooltips
+		$('[data-toggle="tooltip"]').tooltip();
 		
 		prettyPrint();
 		var time = 7; // time in seconds

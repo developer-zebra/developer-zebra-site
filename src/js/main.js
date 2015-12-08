@@ -64,6 +64,9 @@ jQuery(function($) {'use strict';
 
 	//Slider
 	$(document).ready(function() {
+		// make all images use img-responsove class from bootstrap
+		$('img').addClass('img-responsive');
+		
 		prettyPrint();
 		var time = 7; // time in seconds
 

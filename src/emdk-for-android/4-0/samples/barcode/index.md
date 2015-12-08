@@ -44,18 +44,22 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/4-0/guide/
 This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/4-0/api/ScannerConfig-DecoderParams).
 
 ##Prerequisites
-[See Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
+- Java JDK 
+- Eclipse with ADT plugin or  Android Studio
+- EMDK for Android  
+- An EMDK supported Android device
+
+For more information about setting up the EMDK please see the [EMDK Overview](/emdk-for-android/4-0/guide/about).
 
 ##Loading the Sample Application
-[See Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
+The following guide will walk you through setting up the EMDK samples in your IDE.
 
-##Deploying The Sample Application
-[Using the EMDK Samples](/emdk-for-android/4-0/guide/sample/emdksamples)
+* [Android Studio](/emdk-for-android/4-0/guide/sample/emdksamples_androidstudio)
 
 ##Using This Sample
 1. When the application starts it should look like the following.
   
-  ![img](images/samples/barcode_1.png)
+  ![img](barcode_1.png)
   
 2. Set scanner to "Serial SSI Scanner", which is the default one". 
 
@@ -63,13 +67,13 @@ This sample application will allow you to scan barcodes based on selected scanne
 
 3. Set Trigger Type to "HARD".
 
-  ![img](images/samples/barcode_3.png)
+  ![img](barcode_3.png)
 
   > Note: Trigger Type "HARD" lets you scan the barcode using device's hard scan key whereas "SOFT" allows you to scan without using devic's hard scan key.
 
 4. Keep all checkboxes checked for decoder params and this is how it should look after setting all fields.
     
-  ![img](images/samples/barcode_4.png)    
+  ![img](barcode_4.png)    
 
 5. Click "Start" button and the status will be updated.
 
@@ -77,6 +81,6 @@ This sample application will allow you to scan barcodes based on selected scanne
  
 6. Since we selected Trigger Type as "HARD", press the hard scan key of Symbol device and scan a particular barcode. It will get the scanned barcode data in "Data" field of UI.
    
-  ![img](images/samples/barcode_6.png)  
+  ![img](barcode_6.png)  
   
 

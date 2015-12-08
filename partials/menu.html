@@ -8,7 +8,13 @@
                                 {{#if this.items}}
                                 <span class="arrow"></span>
                                 {{/if}}
-                                <a href="{{this.url}}"><span>{{this.title}}</span></a> 
+                                {{#if this.url}}
+                                <a href="{{this.url}}">
+                                {{else}}
+                                <a>
+                                {{/if}}
+                                <span class="arrow-li">{{this.title}}</span>
+                                </a> 
                                 {{#if this.items}}
                                     <ul style="">
                                     {{#each this.items}}
@@ -16,7 +22,13 @@
                                             {{#if this.items}}
                                             <span class="arrow"></span>
                                             {{/if}}
-                                            <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                            {{#if this.url}}
+                                            <a href="{{this.url}}">
+                                            {{else}}
+                                            <a>
+                                            {{/if}}
+                                            <span class="arrow-li">{{this.title}}</span>
+                                            </a> 
                                             {{#if this.items}}
                                                 <ul >
                                                 {{#each this.items}}
@@ -57,7 +69,10 @@
             parentarrow.click();
         }
 
-        itemarrow.click();
+        if(menulevel>1){
+            itemarrow.click();
+
+        }
         $(menuitem).addClass('sidebar-selected');
 
 

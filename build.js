@@ -315,15 +315,6 @@ var sitebuild = Metalsmith(__dirname)
     .use(serve({
         cache: 0
     }))
-    .use(
-        watch({
-          paths: {
-            "${source}/**/*": true,
-            "layouts/**/*": "**/*",
-            "partials/**/*": "**/*",
-          },
-          livereload: true,
-    }))
     .build(function (err) {
     if (err) {
       console.log(err);

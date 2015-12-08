@@ -121,6 +121,8 @@ menu:
         url: /emdk-for-android/4-0/samples/personal-shopper
   - title: Guides
     items:
+      - title: Barcode Scanner
+        url: /emdk-for-android/4-0/guide/scanner
       - title: SimulScan API
         url: /emdk-for-android/4-0/guide/simulscan_guide
       - title: Name-Value Pair

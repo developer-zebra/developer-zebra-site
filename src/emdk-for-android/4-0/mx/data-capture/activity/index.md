@@ -11,6 +11,9 @@ The name field is used by the EMDK to identify this particular feature parameter
 
 ##Activity Selection
 
+![img](activity-selection.png)
+
+
 ###Applications
 In the **Applications** section of the Activity Selection configuration screen, you would enter an **application name** and then click the **Apply** button to add that application to the application list.  **Applications names** are the formal package definition of the application. For example "com.symbol.profiledatacapturesample1". 
 

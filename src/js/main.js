@@ -317,4 +317,15 @@ function bindTreeEvents(li) {
         li.trigger('tree_toggle');
         recalcSidebar();
     });
+    $('.sidebar-container li .arrow-li').on('click', function(e) {
+        var li = $(e.target).parent().parent();
+        var arrow = li.find('.arrow').first()[0];
+
+        console.log('need to click associated arrow');
+        console.log(arrow);
+        arrow.click();
+        // li.trigger('tree_toggle');
+        // recalcSidebar();
+    });
+
 }

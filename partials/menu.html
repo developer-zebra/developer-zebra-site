@@ -4,13 +4,13 @@
                     <div class="sidebar-container">
                         <ul  class="" >
                         {{#each this.menu}}
-                            <li class="active">
+                            <li class="">
                                 {{#if this.items}}
                                 <span class="arrow"></span>
                                 {{/if}}
                                 <a href="{{this.url}}"><span>{{this.title}}</span></a> 
                                 {{#if this.items}}
-                                    <ul style="display:block;">
+                                    <ul style="">
                                     {{#each this.items}}
                                         <li>
                                             {{#if this.items}}
@@ -37,3 +37,32 @@
                 </div>
             </div>
 </aside>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        var pathname = window.location.pathname.slice(0, -1);
+        // console.log(pathname);
+        var menuitem = $('.sidebar-container').find('a[href^="' + pathname + '"]').first()[0];
+        var menulevel = $(menuitem).parents('ul').length;
+        // console.log(menuitem);
+        // console.log(menulevel);
+        var parentLI = $(menuitem).parent().parent().parent();
+        var itemarrow = parentLI.find('.arrow').first()[0];
+
+        //now check for higher level
+        if(menulevel==3){
+
+            var parentFirstLevel = $(parentLI).parent().parent().first()[0];
+            var parentarrow = $(parentFirstLevel).find('.arrow').first()[0];
+            parentarrow.click();
+        }
+
+        itemarrow.click();
+        $(menuitem).addClass('sidebar-selected');
+
+
+    });
+
+
+
+</script>

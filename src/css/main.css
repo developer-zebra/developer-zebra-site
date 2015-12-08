@@ -1074,6 +1074,9 @@ ul.nostyle i {
     -ms-box-sizing:border-box;
     margin-left:-20px
 }
+.sidebar-selected {
+  background-color: #ccc;
+}
 .content-with-sidebar .tree-sidebar a {
     display:block;
     padding:6px 16px 6px 10px;

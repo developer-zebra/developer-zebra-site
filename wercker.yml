@@ -33,5 +33,5 @@ deploy:
   steps:
     - uetchy/gh-pages:
         token: $GITHUB_TOKEN
-        repo: Zebra/wercker
+        repo: zebra/zebra.github.io
         path: build

@@ -34,6 +34,8 @@ deploy:
     - script:
         name: push to production
         code: |
+          git config user.email "pleasemailus@wercker.com"
+          git config user.name "werckerbot"
           echo "adding remote"
           git remote add -f prod https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git
           echo "preparing merge"

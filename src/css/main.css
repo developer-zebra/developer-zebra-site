@@ -1240,7 +1240,7 @@ ul.nostyle i {
     clear: both
 }
 
-.columns.waterfall ul,li{
+.columns.waterfall ul, .columns.waterfall li{
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
   word-wrap: break-word;

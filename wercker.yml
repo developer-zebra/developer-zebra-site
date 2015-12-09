@@ -29,3 +29,9 @@ build:
         name: echo node generate
         code: |
           node generate
+deploy:
+  steps:
+    - uetchy/gh-pages:
+        token: $GITHUB_TOKEN
+        repo: rZebra/wercker
+        path: build

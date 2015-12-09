@@ -30,6 +30,7 @@ build:
         code: |
           node generate
 deploy:
+  steps:
     - script:
         name: push to production
         code: |

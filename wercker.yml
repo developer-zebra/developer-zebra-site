@@ -36,14 +36,14 @@ deploy:
         code: |
           git config user.email "pleasemailus@wercker.com"
           git config user.name "werckerbot"
+          echo "commit changes"
+          git add -A
+          git commit -m "Deploy from $WERCKER_STARTED_BY"
           echo "adding remote"
           git remote add -f prod https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git
           echo "preparing merge"
           git merge -s ours --no-commit prod/master
           echo "reading subtree build"
           git read-tree --prefix=build/ -u prod/master
-          echo "commit changes"
-          git add -A
-          git commit -m "Deploy from $WERCKER_STARTED_BY"
           echo "pushing subtree"
           git push -s subtree prod master

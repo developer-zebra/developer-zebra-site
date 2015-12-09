@@ -34,16 +34,18 @@ deploy:
     - script:
         name: push to production
         code: |
-          git config user.email "pleasemailus@wercker.com"
-          git config user.name "werckerbot"
-          echo "commit changes"
-          git add -A
-          git commit -m "Deploy from $WERCKER_STARTED_BY"
+          cd build
+          rm -rf .git
+          git init
           echo "adding remote"
-          git remote add -f prod https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git
-          echo "preparing merge"
-          git merge -s ours --no-commit prod/master
-          echo "reading subtree build"
-          git read-tree --prefix=build/ -u prod/master
-          echo "pushing subtree"
-          git push -s subtree prod master
+          git remote add origin https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git
+          echo 'fetching origin'
+          git fetch origin
+          echo 'branch track naster'
+          git branch --track master origin/master
+          echo 'adding changes'
+          git add -A
+          echo 'commiting'
+          git commit -m "Deploy from $WERCKER_STARTED_BY"
+          echo 'pushing'
+          git push https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git master:master

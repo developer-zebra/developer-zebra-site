@@ -26,12 +26,18 @@ build:
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
-        name: echo node generate
+        name: node generate
         code: |
           node generate
 deploy:
-  steps:
-    - uetchy/gh-pages:
-        token: $GITHUB_TOKEN
-        repo: zebra/zebra.github.io
-        path: build
+    - script:
+        name: push to production
+        code: |
+          cd build
+          rm -rf .git
+          git init
+          git remote add origin "https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git"
+          git fetch origin
+          git add -A
+          git commit -m "Deploy from $WERCKER_STARTED_BY"
+          git push

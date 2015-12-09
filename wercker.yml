@@ -43,4 +43,4 @@ deploy:
           git fetch origin
           git add -A
           git commit -m "Deploy from $WERCKER_STARTED_BY"
-          git push
+          git push "https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git" master:master

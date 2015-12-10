@@ -3,35 +3,17 @@ title: Using the EMDK Samples with Android Studio
 ---
 
 ##Loading the Sample Application
-Sample Applications are installed along with the EMDK and can be found in your start bar. 
 
-1. Select Start 
-2. Select "EMDK for Android v2.0"
-3. Select "Samples"
+1. Then click the **Download** button.
 
-      ![img](images/sample/1.jpg)
-4. Your browser should open with a list of included samples
+    ![img](download-sample.png)
 
-      ![img](images/sample/2.jpg)
-5. Select "ADTSamples" from the web page   
+2. When the download completes, extract the sample zip file.
+3. Now launch Android Studio and click 
 
-      ![img](images/sample/3.jpg)
-6. Copy the path to the directory on your computer    
-      ![img](images/sample/4.jpg)
 
-7. In the Android Studio Quick Start pane, select **Import project(Eclipse ADT,Gradle,etc.)**
-  ![img](images/sample/as_import_samples_1.png)
+      
 
-8. Paste the path copied from step 6, into the import dialog, and click OK.
-  ![img](images/sample/as_import_samples_2.png)
-
-9. Accept the default options on the following six dialogs by clicking **Next**, then select **Finish** on the last dialog
-  ![img](images/sample/as_import_samples_9.png)
-
-10. When the projects are imported, the run configuration for each App is defaulted to run in the android emulator. Lets change that by clicking on the run configuration drop down and select **Edit Configurations**. 
-  ![img](images/sample/as_import_samples_12.png)
-11. Select the configuration you want to edit in the left pane, select the **USB device** radio button under target device, and then click **OK**
-  ![img](images/sample/as_import_samples_13.png)
 
 
   

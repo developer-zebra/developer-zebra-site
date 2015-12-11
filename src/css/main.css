@@ -336,6 +336,11 @@ ul.nostyle i {
 .media.service-box .pull-left {
   margin-right: 20px;
 }
+.media.service-box .pull-left img{
+    top: 20px;
+    left: 20px;
+    position: relative;
+}
 .media.service-box .pull-left > i {
   font-size: 24px;
   height: 64px;

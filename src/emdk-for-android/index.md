@@ -133,29 +133,28 @@ menu:
         url: /emdk-for-android/4-0/guide/securenfc
   - title: Profile Manager
     items:
-      - title: EMDK Profiles Overview
-        url: /emdk-for-android/4-0/guide/profiles/usingwizard
+      - title: Using Profile Manager
+        url: /emdk-for-android/4-0/guide/profile-manager
       - title: Profile Features
         url: /emdk-for-android/4-0/mx
-        items: 
-          - title: MX Overview
-            url: /emdk-for-android/mx/overview
-          - title: Choosing a Version
-            url: /emdk-for-android/mx/choosing-a-version
-          - title: Application Management
-            url: /emdk-for-android/4-0/mx/app-management
-          - title: Device Configuration
-            url: /emdk-for-android/4-0/mx/device-configuration
-          - title: Security
-            url: /emdk-for-android/4-0/mx/security
-          - title: UI Configuration
-            url: /emdk-for-android/4-0/mx/ui-settings
-          - title: Wireless
-            url: /emdk-for-android/4-0/mx/wireless
-          - title: MX Framework
-            url: /emdk-for-android/4-0/mx/mx
-          - title: Data Capture
-            url: /emdk-for-android/4-0/mx/data-capture
+      - title: MX Overview
+        url: /mx/overview
+      - title: Choosing a Version
+        url: /mx/choosing-a-version
+      - title: Application Management
+        url: /emdk-for-android/4-0/mx/app-management
+      - title: Device Configuration
+        url: /emdk-for-android/4-0/mx/device-configuration
+      - title: Security
+        url: /emdk-for-android/4-0/mx/security
+      - title: UI Configuration
+        url: /emdk-for-android/4-0/mx/ui-settings
+      - title: Wireless
+        url: /emdk-for-android/4-0/mx/wireless
+      - title: MX Framework
+        url: /emdk-for-android/4-0/mx/mx
+      - title: Data Capture
+        url: /emdk-for-android/4-0/mx/data-capture
   - title: APIs
     url: /emdk-for-android/4-0/api
     items:

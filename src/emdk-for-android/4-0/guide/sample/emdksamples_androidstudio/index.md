@@ -4,13 +4,15 @@ title: Using the EMDK Samples with Android Studio
 
 ##Loading the Sample Application
 
-1. Then click the **Download** button.
+1. Click the **Download** button to download a zip archive of the sample project.
 
     ![img](download-sample.png)
 
-2. When the download completes, extract the sample zip file.
-3. Now launch Android Studio and click 
+2. When the download completes, extract the zip archive.
+3. Launch Android Studio and click **Import project (Eclipse ADT, Gradle, etc.)**
 
+    ![img](sample-import1.png)
+4. 
 
       
 

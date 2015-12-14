@@ -24,16 +24,9 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectEclipseADT).  
 
-## Enabling the EMDK
-If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-> Note: SD Card Manager feature requires Symbol devices with Android KitKat 4.4. So select `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK for this tutorial.
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
-
- 
 ## Adding The SD Card Manager Profile Feature
 1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 

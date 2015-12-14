@@ -19,7 +19,7 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 4.0 (API 16) (Symbol Technologies LLC) (API 16)` or `EMDK 4.0 (API 19) (Symbol Technologies LLC) (API 19)` as the minimum SDK.

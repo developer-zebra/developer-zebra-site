@@ -11,11 +11,11 @@ To create a Wipe a Device profile:
 
 3. Select the Wipe a Device Wizard, and select Create.
 
-    ![img](images/profiles/WipeDevice_name.jpg)
+    ![img](../../images/profiles/WipeDevice_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/WipeDevice_method.jpg)
+    ![img](../../images/profiles/WipeDevice_method.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
@@ -24,7 +24,7 @@ To create a Wipe a Device profile:
     * Select Enterprise Reset to destroy device-specific data and return the device to its persistent default state. All non-persistent data is discarded.
     * Select Factory Reset to destroy all data and return the device to its factory defaults. No user content persists.
 
-   ![img](images/profiles/WipeDevice_setting.jpg)
+   ![img](../../images/profiles/WipeDevice_setting.jpg)
 
 6. Select the required information, and then select Continue. See [Setting Types / Power](/stagenow/2-2/csp/power) for more information.
 

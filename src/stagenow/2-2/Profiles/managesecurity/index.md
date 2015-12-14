@@ -11,11 +11,11 @@ To create a Manage Device Security profile:
 
 3. Select the Manage Device Security Wizard, and select Create.
 
-    ![img](images/profiles/managesecurity_name.jpg)
+    ![img](../../images/profiles/managesecurity_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/managesecurity_whitelist.jpg)
+    ![img](../../images/profiles/managesecurity_whitelist.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
@@ -31,7 +31,7 @@ To create a Manage Device Security profile:
 
 10. Select whether or not to control the contents of the Power Key Menu. If you select Yes, see [Setting Types / PowerKeyMgr](/stagenow/2-2/csp/powerkey) for instructions.
 
-    ![img](images/profiles/managesecurity_powerkey.jpg)
+    ![img](../../images/profiles/managesecurity_powerkey.jpg)
 
 11. Select whether or not to control what the Settings UI can accomplish. If you select Yes, see [Setting Types / SettingsMgr](/stagenow/2-2/csp/settings) for instructions.
 
@@ -47,7 +47,7 @@ To create a Manage Device Security profile:
 
 17. Select whether or not to encrypt the SD Card. If you select Yes, select the method for providing the Encryption Key.
 
-   ![img](images/profiles/managesecurity_encryptSDcard.jpg)
+   ![img](../../images/profiles/managesecurity_encryptSDcard.jpg)
 
 
     Then see [Setting Types / EncryptMgr](/stagenow/2-2/csp/encrypt) for instructions.

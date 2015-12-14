@@ -11,7 +11,7 @@ To create a Perform OS Update profile:
 
 3. Select the Perform OS Update Wizard, and select Create.
 
-    ![img](images/profiles/OSupdate_name.jpg)
+    ![img](../../images/profiles/OSupdate_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
@@ -23,7 +23,7 @@ To create a Perform OS Update profile:
 
 7. If you selected Yes, choose whether to set up Wi-Fi options and/or Wi-Fi profiles. See [Setting Types / Wifi mgr](/stagenow/2-2/csp/wifi).
 
-    ![img](images/profiles/OSupdate_deploy1.jpg)
+    ![img](../../images/profiles/OSupdate_deploy1.jpg)
 
 8. Choose a method for performing the OS update, and then select Continue.
 
@@ -34,20 +34,20 @@ To create a Perform OS Update profile:
 
     a. Select whether or not to prevent Wi-Fi from turning off while downloading. See [Setting Types / Wi-Fi](/stagenow/2-2/csp/wifi) for information.
 
-    ![img](images/profiles/OSupdate_sleep.jpg)
+    ![img](../../images/profiles/OSupdate_sleep.jpg)
 
     b. Enter the information for the ZIP file. See [Setting Types / File](/stagenow/2-2/csp/file) for more information on the File Manager.
 
-    ![img](images/profiles/OSupdate_setting.jpg)
+    ![img](../../images/profiles/OSupdate_setting.jpg)
 
     c. Select whether or not to allow Wi-Fi to turn off after downloading. See [Setting Types / Wi-Fi](/stagenow/2-2/csp/wifi) for information.
 
-    ![img](images/profiles/OSupdate_sleep2.jpg)
+    ![img](../../images/profiles/OSupdate_sleep2.jpg)
 
 
 10. Enter the information for the ZIP file. See [Setting Types / Power](/stagenow/2-2/csp/power) for more information on the Power Manager.
 
-   ![img](images/profiles/OSupdate_sourcefile.jpg)
+   ![img](../../images/profiles/OSupdate_sourcefile.jpg)
 
 11. Select Continue to apply the update and proceed to the [Review window](/stagenow/2-2/stagingprofiles?Review).
 

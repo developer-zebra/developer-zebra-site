@@ -15,7 +15,7 @@ See the [Setting Types](/stagenow/2-2/CSPreference) section for all setting type
 ## All Settings
 Select All Settings from the options on the left to open a list of created Settings. Note that this lists includes all Save for Re-Use settings;  settings not saved for re-use during profile creation do not appear in this window.
 
-![img](images/settings_home.jpg)
+![img](../images/settings_home.jpg)
 
 This window includes the following fields:
 
@@ -31,9 +31,9 @@ This window includes the following fields:
 
 * Actions - Offers the following actions to perform on the setting:
 
-    * Copy ![img](images/icon_copy.jpg) - Copy the setting to create a similar setting with a different name.
+    * Copy ![img](../images/icon_copy.jpg) - Copy the setting to create a similar setting with a different name.
 
-    * Delete ![img](images/icon_trash.jpg) - Delete the setting. Note that you CAN NOT delete settings used in one or more profiles. 
+    * Delete ![img](../images/icon_trash.jpg) - Delete the setting. Note that you CAN NOT delete settings used in one or more profiles. 
 
 
 ## Creating a Setting
@@ -44,7 +44,7 @@ To create a setting for use in profiles:
  
 2. Select Create Setting to open the Create New Setting window. 
 
-    ![img](images/Settings_createnew_wifi.jpg)
+    ![img](../images/Settings_createnew_wifi.jpg)
 
 3. Select the device MX version from the drop-down menu. The tool retains this selection when configuring future settings.
 
@@ -57,12 +57,12 @@ To create a setting for use in profiles:
 ### Save for Reuse
 After completing a Setting screen within a Profile Wizard, select the Save Setting for Re-use check box to make this setting available for subsequent profile creation in the same or other Wizards. Enter a Name for the setting. This is useful when creating multiple profiles that will use the same setting, e.g., if many profiles need to access the same network (Wi-Fi setting). This avoids unnecessary re-entry, as well as eliminates mistakes, and if the definition of the setting changes, the administrator can change it in one place instead of many.
 
-![img](images/SaveforReuse.jpg)
+![img](../images/SaveforReuse.jpg)
 
 
 During subsequent profile creations, select the Re-Use Saved Setting tab to select the existing (saved) setting for that Setting Type.
 
-![img](images/ReuseSavedSetting.jpg)
+![img](../images/ReuseSavedSetting.jpg)
 
 ## Copying a Setting
 
@@ -74,11 +74,11 @@ To copy a setting:
 
 1. Select All Settings.
 
-2. Select the Copy icon next to the setting to copy. ![img](images/icon_copy.jpg)
+2. Select the Copy icon next to the setting to copy. ![img](../images/icon_copy.jpg)
 
 3. Enter a new name for the setting, and select Save. 
 
-    ![img](images/setting_copy_name.jpg)
+    ![img](../images/setting_copy_name.jpg)
 
 4. See the next section for instructions on editing the new setting.
 
@@ -89,7 +89,7 @@ To edit a setting:
 1. Select the setting from the Setting list. If the setting is used in one or more published profiles, these profiles are listed at the bottom of the screen. Selecting any setting field invokes a pop-up requesting that you unpublish the associated profile in order to edit the setting.
 
 
-    ![img](images/Settings_Edit_Unpublish.jpg)
+    ![img](../images/Settings_Edit_Unpublish.jpg)
 
 2. Select OK, then Unpublish All in order to edit the setting. 
 
@@ -101,11 +101,11 @@ If the setting is part of a tested profile, the associated profile changes its s
 
 To delete a setting:
 
-1. Select the trash icon next to the setting. ![img](images/icon_trash.jpg)  Note that you CAN NOT delete settings used in one or more profiles.
+1. Select the trash icon next to the setting. ![img](../images/icon_trash.jpg)  Note that you CAN NOT delete settings used in one or more profiles.
 
 2. Select OK to continue with the deletion.
 
-    ![img](images/setting_delete.jpg)
+    ![img](../images/setting_delete.jpg)
 
 3. A window indicates that the setting was successfully deleted. Select OK.
 
@@ -115,15 +115,15 @@ To export all settings:
 
 1. Select All Settings.
 
-    ![img](images/AllSettings.jpg)
+    ![img](../images/AllSettings.jpg)
 
 2. Select the Export All button.
 
-    ![img](images/Export_allsettings.jpg)
+    ![img](../images/Export_allsettings.jpg)
 
 3. The default name for the zip file containing all settings is AllSettings.zip. Select a location for the settings and select Save. A window indicates that the settings were exported successfully.
 
-    ![img](images/Export_allsettings_success.jpg)
+    ![img](../images/Export_allsettings_success.jpg)
 
 4. Select OK.
 
@@ -133,11 +133,11 @@ To import all settings:
 
 1. Select All Settings.
 
-    ![img](images/AllSettings.jpg)
+    ![img](../images/AllSettings.jpg)
 
 2. Select the Import All button.
 
-    ![img](images/importsettings1.jpg)
+    ![img](../images/importsettings1.jpg)
 
 3. Select a file using the browse button, and select Open.
 

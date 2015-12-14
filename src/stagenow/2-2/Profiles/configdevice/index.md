@@ -11,11 +11,11 @@ To create a Configure Device profile:
 
 3. Select the Configure a Device Wizard, and select Create.
 
-    ![img](images/profiles/configdevice_name.jpg)
+    ![img](../../images/profiles/configdevice_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/configdevice_connectSN.jpg)
+    ![img](../../images/profiles/configdevice_connectSN.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
@@ -41,7 +41,7 @@ To create a Configure Device profile:
 
 14. Select whether or not to reboot the device or update the OS. 
 
-    ![img](images/profiles/configdevice_reboot.jpg)
+    ![img](../../images/profiles/configdevice_reboot.jpg)
 
 15. If you select Yes, select either Update OS or Reboot Device.
 

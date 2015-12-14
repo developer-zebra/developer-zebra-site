@@ -15,4 +15,4 @@ The drop-down offers three MX versions for profile creation:
 Once you select the MX version, the selection is saved for subsequent profile creation.
 
 
-![img](images/WizardList_MXdropdown.jpg)
+![img](../images/WizardList_MXdropdown.jpg)

@@ -11,11 +11,11 @@ To create a Manage Applications profile:
 
 3. Select the Manage Applications Wizard, and select Create.
 
-    ![img](images/profiles/manageapps_name.jpg)
+    ![img](../../images/profiles/manageapps_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/manageapps_connectSN.jpg)
+    ![img](../../images/profiles/manageapps_connectSN.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
@@ -29,7 +29,7 @@ To create a Manage Applications profile:
 
 8. If you selected Yes, choose whether to set up Wi-Fi options and/or Wi-Fi profiles. See [Setting Types / Wifi mgr](/stagenow/2-2/csp/wifi).
 
-    ![img](images/profiles/manageapps_uninstall.jpg)
+    ![img](../../images/profiles/manageapps_uninstall.jpg)
 
 9. Select whether or not to uninstall an application. If you select Yes, see [Setting Types / AppMgr](/stagenow/2-2/csp/app) for information on uninstall options. 
 

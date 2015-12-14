@@ -11,7 +11,7 @@ To create an Enroll in an MDM profile:
 
 3. Select the Enroll in an MDM Wizard, and select Create.
 
-    ![img](images/profiles/enrollmdm_name.jpg)
+    ![img](../../images/profiles/enrollmdm_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
@@ -19,7 +19,7 @@ To create an Enroll in an MDM profile:
 
 5. To choose to connect to this network using StageNow bar codes, select Yes, and then select the type of network. Select Continue. See [Profiles / Connect Network](/stagenow/2-2/Profiles/ConnectNetwork) for instructions on connecting to a network and populating the settings window.
 
-    ![img](images/profiles/enrollmdm2.jpg)
+    ![img](../../images/profiles/enrollmdm2.jpg)
 
     Note: This wizard includes a Deployment section. Deployment requires that the host computer and the device(s) are on the same network. 
 
@@ -31,7 +31,7 @@ To create an Enroll in an MDM profile:
 * For No, I want to Download the file to my device, see [Setting Types / File mgr](/stagenow/2-2/csp/file) for instructions.
 * For Yes, I want to Install the file, see [Setting Types / AppMgr](/stagenow/2-2/csp/app) for instructions, and skip to Step 10.
 
-    ![img](images/profiles/enrollmdm_method.jpg)
+    ![img](../../images/profiles/enrollmdm_method.jpg)
 
 9. Select whether or not to download an MDM agent support APK. If you select Yes, see [Setting Types / File mgr](/stagenow/2-2/csp/file) for instructions. 
 

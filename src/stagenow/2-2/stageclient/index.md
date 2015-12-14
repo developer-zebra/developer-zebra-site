@@ -12,7 +12,7 @@ To select a profile with which to stage the device:
 
 1. On the host computer, select the StageNow icon from the Start menu to open the Workstation Tool. The Staging Operator home screen appears. See [Home Screen](/stagenow/2-2/gettingstarted?Home%20Screen) for field descriptions.
 
-    ![img](images/operator_home2.jpg)
+    ![img](../images/operator_home2.jpg)
 
 2. Select a profile with which to stage the device(s).
 
@@ -23,7 +23,7 @@ This method of staging writes the configuration information from the selected pr
 
 1. Select the Barcode or NFC tab.
 
-   ![img](images/operator2.jpg)
+   ![img](../images/operator2.jpg)
 
 2. If desired, enter operator comments in the My Comments field.
 
@@ -31,7 +31,7 @@ This method of staging writes the configuration information from the selected pr
 
 4. Select Stage to generate a PDF of the staging material.
 
-   ![img](images/operator3.jpg)
+   ![img](../images/operator3.jpg)
 
 ### Selecting an Audio File for Staging
 This method of staging writes the configuration information from the selected profile into an audio file. Play the audio file in the vicinity of the client devices in order to initiate staging on these devices. 
@@ -40,15 +40,15 @@ This method of staging writes the configuration information from the selected pr
 
 2. Progress through the instruction screens and select OK to dismiss the tour.
 
-   ![img](images/operator2b.jpg)
+   ![img](../images/operator2b.jpg)
 
 3. Select Play Audio to play the audio staging material in order to stage the devices. See [Audio Staging](/stagenow/2-2/stageclient?Audio%20Staging) for information on preparing the client to receive the audio file.
 
-   ![img](images/operator3b.jpg)
+   ![img](../images/operator3b.jpg)
 
 If desired, select the Download icon to download the audio file to the host computer.
 
-![img](images/operator4b.jpg)
+![img](../images/operator4b.jpg)
 
 Navigate to the folder in which to place the audio file and select Save.
 
@@ -59,14 +59,14 @@ On the device, select the StageNow icon to launch the StageNow Client.
 Note: The StageNow Client requires the DataWedge profile to read bar code data, however restoring DataWedge discards the current StageNow configuration. If StageNow can not scan bar codes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
 
 
-![img](images/Client_SNicon.jpg)
+![img](../images/Client_SNicon.jpg)
 
 
 
 The application lists the available staging methods.
 
 
-![img](images/Client_Staging_Menu.jpg)
+![img](../images/Client_Staging_Menu.jpg)
 
 
 ### Bar Code Staging
@@ -74,18 +74,18 @@ To deploy the selected profile to the device via staging bar codes:
 
 1. The Barcode Staging option is always on. Scan the bar code(s) printed from the StageNow Workstation Tool.
 
-   ![img](images/Client_StageBarcode2.jpg)
+   ![img](../images/Client_StageBarcode2.jpg)
 
 
 2. The screen indicates the number of bar codes left to scan. Continue scanning all staging bar codes.
 
 Upon successful deployment, the device displays the following screen.
 
-![img](images/Client_StageBarcode_Success.jpg)
+![img](../images/Client_StageBarcode_Success.jpg)
 
 If errors occur during deployment, see [Log Settings](/stagenow/2-2/stageclient?Log%20Settings) for troubleshooting.
 
-![img](images/stagingfailed.png)
+![img](../images/stagingfailed.png)
 
 
 ### Audio Staging
@@ -93,7 +93,7 @@ To deploy the selected profile to the device via an audio file:
 
 1. On the client devices to stage, set the Audio Staging option to On.
 
-   ![img](images/Client_Staging_Menu.jpg)
+   ![img](../images/Client_Staging_Menu.jpg)
 
 2. Place the devices near the speaker of the host computer that will play the audio .wav file. 
 
@@ -102,11 +102,11 @@ To deploy the selected profile to the device via an audio file:
 
 3. Play the audio .wav file to initiate staging on the devices.
 
-   ![img](images/Client_Audio.jpg)
+   ![img](../images/Client_Audio.jpg)
 
 The client attempts up to 5 times to stage. If staging does not occur after the fifth attempt, select Cancel to cancel staging, Try Again to continue the staging attempts, or Help for audio staging tips.
 
-   ![img](images/Client_Audio_Failure.jpg)
+   ![img](../images/Client_Audio_Failure.jpg)
 
 Upon successful deployment, the device displays the success screen.
 
@@ -120,7 +120,7 @@ To deploy the selected profile to the device via NFC tag:
 
 1. On the client devices to stage, set the NFC Staging option to On.
 
-    ![img](images/Client_NFCdisabled.jpg)
+    ![img](../images/Client_NFCdisabled.jpg)
 
 2. Read the NFC tag containing the exported profile data. Refer to the NFC documentation for the appropriate method. The client device returns to the previous application while it processes the tag.
 
@@ -135,42 +135,42 @@ The following pop-up screens can appear during staging, indicating the device is
 
 Upon a device reboot, MX Framework requires up to 2 minutes to initialize in order to prepare for staging. If staging is initiated during this time, the StageNow Client indicates this via the following pop-up.
 
-![img](images/initializing_popup.png)
+![img](../images/initializing_popup.png)
 
 
 #### Acquiring IP
 
 The following pop-up appears when the device is acquiring an IP address. This is typically seen during scan-and-dock, when the operator scans a bar code and places the device in an Ethernet cradle. Staging pauses until the device acquires the IP address while it performs network operations, such as downloading a file from the StageNow staging server.
 
-![img](images/acquiring_ip_popup.png)
+![img](../images/acquiring_ip_popup.png)
 
 
 #### Downloading
 
 The following pop-up indicates that the client is processing a staging profile that contains a setting to download some content from the staging server (particularly an OS update package).
 
-![img](images/file_download.png)
+![img](../images/file_download.png)
 
 ## StageNow Client Menu
 In the StageNow application, select the three vertical dots at the top right of the window to open the StageNow menu.
 
-![img](images/Client_Menu.jpg)
+![img](../images/Client_Menu.jpg)
 
 
 ### Log Settings
 If staging fails, a screen appears indicating this.
 
-![img](images/Client_staging_failed2.jpg)
+![img](../images/Client_staging_failed2.jpg)
 
 To review the log to determine the cause of the error:
 
 1. Select Yes from the staging failure screen, or from the StageNow Client menu, select Log Settings.
 
-    ![img](images/Client_LogSettings.jpg)
+    ![img](../images/Client_LogSettings.jpg)
 
 2. Select View Current Logs.
 
-    ![img](images/Client_StageBarcode_LogSettings_View.jpg)
+    ![img](../images/Client_StageBarcode_LogSettings_View.jpg)
 
 Locate the error(s) in the log. Refer to the characteristic-error or parm-error in the log contents.
 
@@ -178,13 +178,13 @@ Locate the error(s) in the log. Refer to the characteristic-error or parm-error 
 
 To clear the log, select the menu icon, and select Clear Log.
 
-![img](images/ClearLog.jpg)
+![img](../images/ClearLog.jpg)
 
 
 ### View Client Info
 Select View Client Info to view software version information for the device.
 
-![img](images/viewclientinfo.jpg)
+![img](../images/viewclientinfo.jpg)
 
 Use this screen to determine whether your device has full or partial StageNow feature functionality.
 
@@ -198,11 +198,11 @@ Use this screen to determine whether your device has full or partial StageNow fe
 Select Audio Staging Help for tips for successful audio staging.
 Select Dismiss on any screen to dismiss the help.
 
-![img](images/AudioHelp1.jpg)
+![img](../images/AudioHelp1.jpg)
 
-![img](images/AudioHelp2.jpg)
+![img](../images/AudioHelp2.jpg)
 
-![img](images/AudioHelp3.jpg)
+![img](../images/AudioHelp3.jpg)
 
 
 ## Rapid Deployment Client
@@ -216,5 +216,5 @@ Specifically, to stage a device that includes RD Client:
 
 3. The device reboots, and then StageNow Client automatically launches and completes the staging process in order to apply the profile settings. 
 
-![img](images/Client_RDclient.png)
+![img](../images/Client_RDclient.png)
 

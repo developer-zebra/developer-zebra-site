@@ -14,17 +14,17 @@ To create a Connect Wi-Fi Network profile:
 
 3. Select the Connect Network Wizard, and select Create.
 
-    ![img](images/profiles/connectnetwork_name.jpg)
+    ![img](../../images/profiles/connectnetwork_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/Profile_SNConfig1.jpg)
+    ![img](../../images/profiles/Profile_SNConfig1.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
 5. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section (if available).
 
-    ![img](images/profiles/Profile_SNConfig2.jpg)
+    ![img](../../images/profiles/Profile_SNConfig2.jpg)
 
 6. Select the Wi-Fi network type from the drop-down menu, and select Continue.
 
@@ -36,13 +36,13 @@ To create a Connect Wi-Fi Network profile:
 
     d. Select whether or not to add a Wi-Fi network. 
 
-    ![img](images/profiles/connectnetwork_addnetwork.jpg)
+    ![img](../../images/profiles/connectnetwork_addnetwork.jpg)
 
     e. Select whether or not to enable an existing Wi-Fi network.
 
     f. The Wizards prompts you to connect to a Wi-Fi network. This setting window is pre-populated with certain information that you can not change. Other options are available for selection if desired. See [Setting Types / Wi-Fi](/stagenow/2-2/csp/wifi) for instructions.
 
-    ![img](images/profiles/connectnetwork_connectsetting.jpg)
+    ![img](../../images/profiles/connectnetwork_connectsetting.jpg)
 
     g. Select Continue.
 
@@ -66,35 +66,35 @@ To create a Connect GPRS Network profile:
 
 3. Select the Connect Network Wizard, and select Create.
 
-    ![img](images/profiles/connectnetwork_name2.jpg)
+    ![img](../../images/profiles/connectnetwork_name2.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/Profile_SNConfig3.jpg)
+    ![img](../../images/profiles/Profile_SNConfig3.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
 5. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section, if available.
 
-    ![img](images/profiles/Profile_SNConfig4.jpg)
+    ![img](../../images/profiles/Profile_SNConfig4.jpg)
 
 6. Select the GPRS network type from the drop-down menu, and select Continue.
 
     a. Select whether to remove all GPRS APNs, and select Continue.
 
-    ![img](images/profiles/connectnetwork_GPRSremoveAPNs.jpg)
+    ![img](../../images/profiles/connectnetwork_GPRSremoveAPNs.jpg)
 
     b. Select whether to add a GPRS APN.
 
     c. The setting window that appears is pre-populated with certain information that you can not change. Other options are available for selection if desired. See [Setting Types / Gprs](/stagenow/2-2/csp/gprs) for instructions on using the GPRS manager.
 
-    ![img](images/profiles/connectnetwork_gprssetting.jpg)
+    ![img](../../images/profiles/connectnetwork_gprssetting.jpg)
 
     d. Select Continue.
 
 7. If offered, select whether to connect to this network using the Rapid Deployment (RD) Client. Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](/stagenow/2-2/gettingstarted?Settings) screen. Select Yes for  devices that don't include the StageNow Client. See [Rapid Deployment (RD) Client](/stagenow/2-2/stageclient?Rapid%20Deployment%20Client) for more information.
 
-    ![img](images/profiles/connectnetwork_RD2.jpg)
+    ![img](../../images/profiles/connectnetwork_RD2.jpg)
 
 8. If you selected Yes, choose whether to set up Wi-Fi options and/or Wi-Fi profiles. See [Setting Types / Wifi mgr](/stagenow/2-2/csp/wifi).
 
@@ -112,21 +112,21 @@ To create a Connect Ethernet Network profile:
 
 3. Select the Connect Network Wizard, and select Create.
 
-    ![img](images/profiles/connectnetwork_ethernet_name.jpg)
+    ![img](../../images/profiles/connectnetwork_ethernet_name.jpg)
 
 4. Enter a name for the profile and select Start.
 
-    ![img](images/profiles/connectnetwork_ethernet_SN.jpg)
+    ![img](../../images/profiles/connectnetwork_ethernet_SN.jpg)
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
 5. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section (if available).
 
-    ![img](images/profiles/connectnetwork_ethernet_selectethernet.jpg)
+    ![img](../../images/profiles/connectnetwork_ethernet_selectethernet.jpg)
 
 6. Select Ethernet from the drop-down menu, and select Continue.
 
-    ![img](images/profiles/connectnetwork_ethernet_enabling.jpg)
+    ![img](../../images/profiles/connectnetwork_ethernet_enabling.jpg)
 
 7. Select Continue to enable Ethernet on the device.
 

@@ -36463,7 +36463,7 @@ var mxVersions = [
         ]
     },
     {
-        version: '4.5',
+        version: '5.0',
         csps: [
             {
                 name: 'AccessMgr',

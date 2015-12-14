@@ -10,7 +10,9 @@
         <p>{{ description }}</p>
         <p><a class="btn btn-primary btn-lg" href="{{ url }}">{{btn-text}}</a></p>
         <ul class="social-icons">
+            {{#if versions}}
             <li>Versions: </li>
+            {{/if}}
             {{#each versions}}
             <li><a href="{{this.url}}">{{this.menu}}</a> </li>
             {{/each}}

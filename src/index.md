@@ -11,7 +11,10 @@ products:
     versions:
       - url: /emdk-for-android/4-0/samples
         menu: "4.0"
-      - url: /emdk-for-android/3-1/samples
-        menu: "3.1"
+  - title: StageNow
+    description: The easy way to stage Zebra Technologies' Android-based mobile computers.
+    url: /stagenow/2-2/about
+    btn-text: Latest Guides
+    image: /images/products/stagenow.png
 
 ---

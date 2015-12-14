@@ -36,17 +36,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Encrypt Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/MxEncryptManagerTutorialImages/encrypt_feature.jpg)   
+    ![img](/img/MxEncryptManagerTutorialImages/encrypt_feature.jpg)   
 
 4. Provide some name in the "Name" field (Ex. MyEncryptManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
     So as discussed, we will create an Encrypted File System (EFS) that uses a newly installed Encryption Key. Click Install Key drop-down under Install Key section and select option "Install Key". Provide Install Key Name (Ex. SampleKey). When installing a key, the value is optional. A provided key value should be a HEX string with a length of 64 bytes. If a value is not provided, a random key will be generated for a given key name. Let's keep the "Install Key Value" field empty for this tutorial.
 
-	![img](images/MxEncryptManagerTutorialImages/install_key.jpg)
+	![img](/img/MxEncryptManagerTutorialImages/install_key.jpg)
 
 5. Now, select "Create EFS" drop-down and select field "Create EFS" and you would see something like this:
 
-	![img](images/MxEncryptManagerTutorialImages/create_efs_option.jpg)
+	![img](/img/MxEncryptManagerTutorialImages/create_efs_option.jpg)
 
 6. Provide "EFS Name" (Ex. SampleEFS). Provide "EFS encryption Key Name" with the same name we are using to install (Ex. Sample Key). Select the "EFS Location" to "SD Card" Storage as we would be creating EFS on the external SD Card. Provide the "Mount Path for EFS" where EFS should be mounted (Ex. "/external"). This path belongs to external SD Card storage in this tutorial since we selected the "EFS Location" as "SDCard". Provide size of the EFS in MB (Ex. 5MB).
 
@@ -54,15 +54,15 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The Profile Wizard for Encrypt Manager should now look like:
 
-    ![img](images/MxEncryptManagerTutorialImages/efs_profile.jpg)       
+    ![img](/img/MxEncryptManagerTutorialImages/efs_profile.jpg)       
  
 5. Click Apply to apply the settings we provided    
   
-    ![img](images/MxEncryptManagerTutorialImages/encrypt_profile_created.jpg)
+    ![img](/img/MxEncryptManagerTutorialImages/encrypt_profile_created.jpg)
 
 6. Click Finish and your Encrypt profile for creating an Encrypted File System (EFS) on the SD Card (External Storage) of Symbol device would be created.
 
-    ![img](images/MxEncryptManagerTutorialImages/encrypt_manager_profile_created.jpg) 
+    ![img](/img/MxEncryptManagerTutorialImages/encrypt_manager_profile_created.jpg) 
   
 7. Click "Close".
 
@@ -72,12 +72,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 8. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxEncryptManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](/img/MxEncryptManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxEncryptManagerTutorialImages/manifest_file.jpg)
+    ![img](/img/MxEncryptManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -91,7 +91,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxEncryptManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](/img/MxEncryptManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -169,9 +169,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-    ![img](images/MxEncryptManagerTutorialImages/variables_added.jpg)
+    ![img](/img/MxEncryptManagerTutorialImages/variables_added.jpg)
 
-	![img](images/MxEncryptManagerTutorialImages/on_create_added.jpg)
+	![img](/img/MxEncryptManagerTutorialImages/on_create_added.jpg)
 	 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -255,9 +255,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxEncryptManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](/img/MxEncryptManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxEncryptManagerTutorialImages/on_opened_method_2.jpg) 
+    ![img](/img/MxEncryptManagerTutorialImages/on_opened_method_2.jpg) 
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -304,8 +304,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxEncryptManagerTutorialImages/parse_xml_1.jpg) 
-	![img](images/MxEncryptManagerTutorialImages/parse_xml_2.jpg)
+    ![img](/img/MxEncryptManagerTutorialImages/parse_xml_1.jpg) 
+	![img](/img/MxEncryptManagerTutorialImages/parse_xml_2.jpg)
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -335,7 +335,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxEncryptManagerTutorialImages/build_failure_message.jpg)
+    ![img](/img/MxEncryptManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -375,7 +375,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](images/MxEncryptManagerTutorialImages/display_results.jpg)
+    ![img](/img/MxEncryptManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.
            
@@ -393,7 +393,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxEncryptManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](/img/MxEncryptManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us create an encrypted file system (EFS) of 5MB with an encryption key on the SD Card (External Storage) of Symbol device using [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) feature of Mx. Now let's run the application.
  
@@ -406,7 +406,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 2. Run the application.
 
-    ![img](images/MxEncryptManagerTutorialImages/home_screen.png)
+    ![img](/img/MxEncryptManagerTutorialImages/home_screen.png)
 
 	> Note: The process of creating the EFS takes time. Access to the EFS will be denied during the creation process.
 
@@ -418,11 +418,11 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	So go to File Browser -> EFS Path. In our tutorial, EFS path is "/external". You will see a directory called "efsstorage".
 
-    ![img](images/MxEncryptManagerTutorialImages/efs_directory.png)
+    ![img](/img/MxEncryptManagerTutorialImages/efs_directory.png)
 
 4. Open this directory and you would see the Encrypted File System of size 5MB that we created (SampleEFS) through Profile Wizard.
 
-	![img](images/MxEncryptManagerTutorialImages/efs_created.png)
+	![img](/img/MxEncryptManagerTutorialImages/efs_created.png)
 
 
     This is how you can create Encrypted File System (EFS) along with the installation of Encryption Key on the internal/external SD Card storage using [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) feature on Symbol devices through Profile Wizard. 

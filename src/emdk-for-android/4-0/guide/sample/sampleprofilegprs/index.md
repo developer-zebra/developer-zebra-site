@@ -25,15 +25,15 @@ This sample application will allow you to Add/Replace named APN and remove exist
 ##Using This Sample
 1. When the application starts it should look like the following.
   
-	![img](images/samples/gprs_1.png)
+	![img](/img/samples/gprs_1.png)
   
 2. Select Add/Remove named APN
   
-	![img](images/samples/gprs_2.png)  	
+	![img](/img/samples/gprs_2.png)  	
 
 3. Provide APN Name (Ex. "Test_APN") and check the checkbox "Replace if exist".
 
-	![img](images/samples/gprs_3.png)
+	![img](/img/samples/gprs_3.png)
 
 4. Provide the applicable APN details such as:
 
@@ -43,10 +43,10 @@ This sample application will allow you to Add/Replace named APN and remove exist
 
 	Password: CINGULAR1
 
-	![img](images/samples/gprs_4.png)
+	![img](/img/samples/gprs_4.png)
   
 5. Click "Apply" button.
 
 6. Check the status field.   
-	![img](images/samples/gprs_5.png)  
+	![img](/img/samples/gprs_5.png)  
 	

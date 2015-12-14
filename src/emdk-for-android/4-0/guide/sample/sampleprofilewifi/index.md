@@ -33,25 +33,25 @@ This sample application will allow you to perform all the above mentioned Wi-Fi 
 
 1. When the application starts it should look like the following.
   
-	![img](images/samples/wifi_1.png)
+	![img](/img/samples/wifi_1.png)
   
 2. Select the Wi-Fi operation you want (Enable/Disable).
    
-	![img](images/samples/wifi_2.png)  	
+	![img](/img/samples/wifi_2.png)  	
 
 3. Select the Network action you want to execute from the Network Action drop-down. 
 	Let us select "Add(Default Open Network)" option.
 
-	![img](images/samples/wifi_3.png)
+	![img](/img/samples/wifi_3.png)
 
 	> Note: You could also add Personal Network with Passphrase and Enterprise Network with required certificate, which is not in the scope of this sample. 
 4. Provide some SSID to the network you want to add in SSID field (Ex. Test_Network).
 
-	![img](images/samples/wifi_4.png)
+	![img](/img/samples/wifi_4.png)
 
 5. Click "Apply" button.
 
 6. Check the status field.
    
-	![img](images/samples/wifi_5.png)  
+	![img](/img/samples/wifi_5.png)  
 	

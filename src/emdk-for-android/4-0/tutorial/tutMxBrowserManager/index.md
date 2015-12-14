@@ -34,7 +34,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Browser Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/MxBrowserManagerTutorialImages/browser_feature.jpg)
+    ![img](/img/MxBrowserManagerTutorialImages/browser_feature.jpg)
 
 4. Provide some name in the "Name" field (Ex. MyBrowserManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -42,13 +42,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	We had also discussed about turning the "Save Form Data" feature OFF. By turning this feature OFF, the forms of your browser will no longer remember the data you type in them. Click on "Turn on/off Save Form Data" drop-down and select the option "Turn off".
 
-    ![img](images/MxBrowserManagerTutorialImages/browser_manager_details.jpg)
+    ![img](/img/MxBrowserManagerTutorialImages/browser_manager_details.jpg)
 
-    ![img](images/MxBrowserManagerTutorialImages/browser_manager_details_selected.jpg)
+    ![img](/img/MxBrowserManagerTutorialImages/browser_manager_details_selected.jpg)
 
 5. Click **Apply** to apply the settings we provided, then click **Finish**.
 
-  ![img](images/MxBrowserManagerTutorialImages/BrowserManagerStep5.png)
+  ![img](/img/MxBrowserManagerTutorialImages/BrowserManagerStep5.png)
 
 6. Click **Close**
 
@@ -58,7 +58,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
   >NOTE: It is advised that this file not be manually modified, if further changes need to be made, please use the Profile Manager.
 
-  ![img](images/MxBrowserManagerTutorialImages/BrowserManagerStep7.png)
+  ![img](/img/MxBrowserManagerTutorialImages/BrowserManagerStep7.png)
 
 ##Enabling Android Permissions
 
@@ -76,7 +76,7 @@ Then you must enable the EMDK library:
 
 When done, your AndroidManifest.xml should resemble the following:
 
-![img](images/MxBrowserManagerTutorialImages/ModifyManifest.png)
+![img](/img/MxBrowserManagerTutorialImages/ModifyManifest.png)
 
 ##Adding Some Code
 1. Now we will start to add some code.
@@ -169,9 +169,9 @@ When done, your AndroidManifest.xml should resemble the following:
 
     So far your code should look like:
 
-    ![img](images/MxBrowserManagerTutorialImages/variables_added.jpg)
+    ![img](/img/MxBrowserManagerTutorialImages/variables_added.jpg)
 
-	![img](images/MxBrowserManagerTutorialImages/on_create_added.jpg)
+	![img](/img/MxBrowserManagerTutorialImages/on_create_added.jpg)
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -255,9 +255,9 @@ When done, your AndroidManifest.xml should resemble the following:
 
     Your complete `onOpened` method should now look like:
 
-    ![img](images/MxBrowserManagerTutorialImages/on_opened_method_1.jpg)
+    ![img](/img/MxBrowserManagerTutorialImages/on_opened_method_1.jpg)
 
-    ![img](images/MxBrowserManagerTutorialImages/on_opened_method_2.jpg)
+    ![img](/img/MxBrowserManagerTutorialImages/on_opened_method_2.jpg)
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -390,7 +390,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
   Run the application from your development envroment by pressing the play icon, or install the apk and run from application tray.
 
-  ![img](images/MxBrowserManagerTutorialImages/runApp1.png)
+  ![img](/img/MxBrowserManagerTutorialImages/runApp1.png)
 
   You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message.
 
@@ -400,7 +400,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Click **Ok**, then exit the application.
 
 3. Launch the devices browser, and see that the browser's homepage has been set to **youtube.com**
-  ![img](images/MxBrowserManagerTutorialImages/runApp2.png)
+  ![img](/img/MxBrowserManagerTutorialImages/runApp2.png)
 
 
 ##Important Programming Tips##

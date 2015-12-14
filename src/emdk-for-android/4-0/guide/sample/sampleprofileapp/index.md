@@ -25,13 +25,13 @@ This sample application will allow you to install, upgrade, and uninstall an app
 
 ##Using This Sample
 1. When the application starts it should look like the following.  
-	![img](images/samples/2_1.png)  
+	![img](/img/samples/2_1.png)  
 2. Enter the path to an APK file that you have placed on your device.  /sdcard/Battery Sample Application.apk
-	![img](images/samples/2_2.png)  	
+	![img](/img/samples/2_2.png)  	
 	>Note:  
 	>To place an APK file on the device connect the device to to you computer over USB as a "Medea Device" and copy an APK to your device.  
 3.  Click "Set" 
 4.  Check the status field.   
-	![img](images/samples/2_3.png)  
+	![img](/img/samples/2_3.png)  
 	
 

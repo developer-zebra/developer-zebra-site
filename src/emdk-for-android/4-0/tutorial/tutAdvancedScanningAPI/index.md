@@ -48,7 +48,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
   
-    ![img](images/AdvancedScanningTutorialImages/manifest_file.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK': 
    
@@ -62,7 +62,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](images/AdvancedScanningTutorialImages/manifest_permissions_added.jpg) 
+    ![img](/img/AdvancedScanningTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -203,11 +203,11 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The code till here looks like:
 
-    ![img](images/AdvancedScanningTutorialImages/variables_added.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/variables_added.jpg)
 
 	and the remaining part looks like:
 
-	![img](images/AdvancedScanningTutorialImages/variables_added_remaining.jpg)
+	![img](/img/AdvancedScanningTutorialImages/variables_added_remaining.jpg)
 
 	> Note: Due to more variables, it has been divided into multiple screen captures. 
 
@@ -436,7 +436,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The code till here looks like:
 
-    ![img](images/AdvancedScanningTutorialImages/ui_layout.jpg)      
+    ![img](/img/AdvancedScanningTutorialImages/ui_layout.jpg)      
  
 3. In the `onCreate` method, we take reference of UI elements that are declared in `res/layout/activity_main.xml` in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We would then set `OnCheckedChangeListener` for all the checkboxes followed by `setOnTouchListener` for the "Scan" button that we have declared in UI.
 
@@ -499,7 +499,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So the complete `onCreate` method looks like:
      
-     ![img](images/AdvancedScanningTutorialImages/on_create_added.jpg)
+     ![img](/img/AdvancedScanningTutorialImages/on_create_added.jpg)
 
 4. You will see some errors, which we need to get rid of. So first, we need to provide `scan_tone_array` to the spinner data adapter. So create `arrays.xml` file under `res/values` folder and write following code of array in `<resources>` tag. This will remove the adapter error.
 
@@ -517,7 +517,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So the complete `arrays.xml` code looks like:
      
-     ![img](images/AdvancedScanningTutorialImages/arrays_code.jpg)
+     ![img](/img/AdvancedScanningTutorialImages/arrays_code.jpg)
 
 5. Next, We need to add listeners for `Scanner Devices` and `Scan Tone` spinners. The listener for scanner devices spinner will disable the scanner if there is any using `deInitScanner` method and create new scanner instance of scanner device selected from this spinner with the help of index stored in `scannerIndex` using `initializeScanner` method. It will then call `setProfile` method which will set whatever the parameters are enabled in the User interface for various features.
 
@@ -584,9 +584,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     This is how it looks like:
      
-	![img](images/AdvancedScanningTutorialImages/device_and_tone_listeners.jpg)
+	![img](/img/AdvancedScanningTutorialImages/device_and_tone_listeners.jpg)
 
-	![img](images/AdvancedScanningTutorialImages/device_and_tone_listeners_1.jpg)
+	![img](/img/AdvancedScanningTutorialImages/device_and_tone_listeners_1.jpg)
 
 6. We will now add the `setOnTouchListener` for Scan button. The purpose behind this is to scan barcodes by calling `read` method when user presses the Scan button and stop scanning by canceling any pending asynchronous read calls using `cancelRead` method when user releases the Scan button. The `read` method will not turn ON the scanner. It will, however, put the scanner in a state in which the scanner can be turned ON either by pressing a hardware trigger or can be turned ON automatically. This is determined by the `Scanner.TriggerType`. In order to scan barcodes using button through our application, we need to set the trigger type to `TriggerType.SOFT_ONCE` where the scan beam will come up automatically without having to press the hard scan trigger on the device after issuing the read call.
 
@@ -628,7 +628,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 			});
 		}
 
-	![img](images/AdvancedScanningTutorialImages/scan_touch_listener.jpg) 
+	![img](/img/AdvancedScanningTutorialImages/scan_touch_listener.jpg) 
 
 7. It will still show few errors as we have not specified the required methods yet. So first we will add `deInitScanner()` method that cancels any pending read operations, removes all status and data listeners, disables the existing scanner instance and sets the scanner instance to `NULL`.
 
@@ -654,7 +654,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     This is how `deInitScanner` method looks like:
      
-    ![img](images/AdvancedScanningTutorialImages/de_init_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/de_init_method.jpg)
 
 7. Next, we will write a method `initializeScanner` to initialize and enable the scanner and its listeners such as status, data etc. by using [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager) object. The `enable` method enables the scanner hardware. This method does not make the scanner to scan or turn on the laser. Basically it will make the scanner device available for your application. If the same of scanner is enabled by other applications, this will throws ScannerExceptions. You must call `disable()` when you are done the scanning, otherwise it will remain locked and be unavailable to other applications.
 
@@ -691,7 +691,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     This is how `initializeScanner` method looks like:
      
-    ![img](images/AdvancedScanningTutorialImages/initialize_scanner_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/initialize_scanner_method.jpg)
 
 8. Now, we will add `setProfile` method. This method will create an instance of [ScannerConfig](/emdk-for-android/4-0/api/ScannerConfig), which will allow us to modify scanner properties (Ex. [Decoder Params](/emdk-for-android/4-0/api/ScannerConfig-DecoderParams), [Reader Params](/emdk-for-android/4-0/api/ScannerConfig-ReaderParams), [Scan Params](/emdk-for-android/4-0/api/ScannerConfig-ScanParams) etc.) and set the changes back to the scanner instance. Here, we will read the checkboxes and spinner values and set them accordingly to the scanner instance through [ScannerConfig](/emdk-for-android/4-0/api/ScannerConfig). `config` is name of [ScannerConfig](/emdk-for-android/4-0/api/ScannerConfig) instance.
 
@@ -805,7 +805,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The `setProfile` method looks like:
      
-    ![img](images/AdvancedScanningTutorialImages/set_profile_method.jpg)  
+    ![img](/img/AdvancedScanningTutorialImages/set_profile_method.jpg)  
     
 9. Whenever the user checks or unchecks any checkbox, we update the settings to the scanner instance at runtime by calling `setProfile()` method through `onCheckedChanged` method of the `OnCheckedChangeListener` that we implemented earlier. So add the method call in `onCheckedChanged()` method.
 
@@ -814,7 +814,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     This looks like:
      
-    ![img](images/AdvancedScanningTutorialImages/on_checked_change_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/on_checked_change_method.jpg)
 
 10. Now we need to use the `onOpened` method to get a reference to the [EMDKManager](/emdk-for-android/4-0/api/EMDKManager). The [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener) interface will trigger this event when the EMDK is ready to be used. The [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener) interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance of [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager) to enable scanning.
 
@@ -835,7 +835,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like this:
     
-    ![img](images/AdvancedScanningTutorialImages/on_opened_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/on_opened_method.jpg)
     	                        
 11. To get rid of error, we will create `enumerateScannerDevices` that will get all the scanner devices that a Symbol Android device supports with the default one selected first. It uses `getSupportedDevicesInfo` method on `barcodeManager` instance that returns a list of supported scanner devices for that particular Symbol device. We will then iterate through this list, get the friendly names of each scanner device and add them to our list with those names to show user in Device Spinner.
 
@@ -882,7 +882,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	Your complete `enumerateScannerDevices` method should now look like this:
     
-    ![img](images/AdvancedScanningTutorialImages/enumerate_scanner_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/enumerate_scanner_method.jpg)
 
 9. As mentioned earlier that whenever a barcode is scanned, its data will be received in a callback `onData` method upon data availability. So we need to get that data, process it in the format we want and populate in the [EditText](http://developer.android.com/reference/android/widget/EditText.html) of UI.
 
@@ -957,7 +957,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 		new AsyncDataUpdate().execute(scanDataCollection);
 
     So the `onData` method and `AsyncDataUpdate` looks like:
-    ![img](images/AdvancedScanningTutorialImages/async_data_update.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/async_data_update.jpg)
   
 10. Whether we scan the barcode by pressing the hard scan key or keep it idle, it returns the status of the scanner at specific point of time in the overridden `onStatus` method of implemented `StatusListener` interface. Since we are also displaying the status along with barcode data, we will make use of this method and populate the status.
 
@@ -1025,7 +1025,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 		new AsyncStatusUpdate().execute(statusData);
 
     So the `onStatus` method and `AsyncStatusUpdate` looks like:
-    ![img](images/AdvancedScanningTutorialImages/async_status_update.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/async_status_update.jpg)
 
 11. Now let's override the `onDestroy` method so we can release the EMDKManager and BarcodeManager resources:  
 
@@ -1047,7 +1047,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your `onDestroy` method should now look like this:  
 
-    ![img](images/AdvancedScanningTutorialImages/on_destroy_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/on_destroy_method.jpg)
 
 12. When we are done with scanning, we must release the scanner hardware resources for other applications to use. So override `onStop` method and disable the scanner by calling `deInitScanner` method to release it.
 
@@ -1061,7 +1061,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your `onStop` method should now look like this:  
 
-    ![img](images/AdvancedScanningTutorialImages/on_stop_method.jpg) 
+    ![img](/img/AdvancedScanningTutorialImages/on_stop_method.jpg) 
 
 13. Finally, Clean up the objects created by EMDK manager in `onClosed` method, if EMDK closed abruptly.
 
@@ -1076,7 +1076,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your `onClosed` method should now look like this:  
 
-    ![img](images/AdvancedScanningTutorialImages/on_closed_method.jpg)
+    ![img](/img/AdvancedScanningTutorialImages/on_closed_method.jpg)
 	
 That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0. Now let us run the application.
  
@@ -1089,35 +1089,35 @@ That's it!!! We are done with all the coding part that will let us perform some 
  
 2. Run the application.
 
-    ![img](images/AdvancedScanningTutorialImages/home_screen.png)
+    ![img](/img/AdvancedScanningTutorialImages/home_screen.png)
 
     You can see a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html), which indicates that the Scanner has been enabled and you can start scanning by pressing hard scan button of the device.
   
 3. Now if you press and hold the Scan button on the UI, the status listener in the code starts working and current status of Scanner is displayed in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Scanning`. The "Scanner Device Type" Spinner shows Serial SSI Scanner as it is the default scanner for Symbol TC55 device. All the decoders are checked, which means current configuration scan supports all of these decoder types. But Scan Tone is `NONE`, which means there won't be any tone/sound while scanning a barcode.   
 
-    ![img](images/AdvancedScanningTutorialImages/status_scanning.png)
+    ![img](/img/AdvancedScanningTutorialImages/status_scanning.png)
 
     The scanner status is always updated on the status text view below the Edit Text at the bottom.
 
 4. Lets us change some configurations starting with the device type. We will change it to Camera Scanner.
 
-	![img](images/AdvancedScanningTutorialImages/device_list.png)
+	![img](/img/AdvancedScanningTutorialImages/device_list.png)
 
-	![img](images/AdvancedScanningTutorialImages/camera_scanner.png)
+	![img](/img/AdvancedScanningTutorialImages/camera_scanner.png)
 
 It will display a success toast when the changes are applied each time you change any scanner configuration just for your knowledge.
 
 5. Next check the Vibration checkbox and select some scan tone from the Select Scan Tone spinner.
 
-	![img](images/AdvancedScanningTutorialImages/tone_list.png)
+	![img](/img/AdvancedScanningTutorialImages/tone_list.png)
 
-	![img](images/AdvancedScanningTutorialImages/tone_selected.png)
+	![img](/img/AdvancedScanningTutorialImages/tone_selected.png)
 
 4. Now once again scan a barcode and this time it will open your device's camera to scan the barcode.
 
-    ![img](images/AdvancedScanningTutorialImages/camera_opened.png)
+    ![img](/img/AdvancedScanningTutorialImages/camera_opened.png)
 
-	![img](images/AdvancedScanningTutorialImages/final_scan.png)  
+	![img](/img/AdvancedScanningTutorialImages/final_scan.png)  
 
     This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Symbol devices without using Profile Wizard. 
 

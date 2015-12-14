@@ -22,23 +22,23 @@ You may choose to install the Battery Sample Application.apk or to run the proje
 4. Import the sample application. 
 	>How to import:  
  	>1. Go to "File" -> "Import"  
- 	>![img](images/FileImport.jpg)   
+ 	>![img](/img/FileImport.jpg)   
  	>2. Select "Android" -> "Existing Android Code Into Workspace" -> "Next"   
- 	>![img](images/ImportNext.jpg)   
+ 	>![img](/img/ImportNext.jpg)   
  	>3. Select "Browse" and navigate to your unzipped battery sample application folder.  
- 	>![img](images/Browse.jpg)  
+ 	>![img](/img/Browse.jpg)  
  	>4. Select "Finish".  
- 	>![img](images/Finish.jpg)  
+ 	>![img](/img/Finish.jpg)  
 
 5. Run the sample application. 
 	>How to run the sample application:   
  	>1. Select the sample application folder in "Package Explorer".      
  	>2. Right click and select "Run As" -> "Android Application"  
- 	>![img](images/RunAs.jpg)   
+ 	>![img](/img/RunAs.jpg)   
 
 6. The battery sample application should look like the following:  
 
-![img](images/BatterySampleApplication.jpg)  
+![img](/img/BatterySampleApplication.jpg)  
 
 7. The information on the screen will update each time a battery intent is received. To force the intent you may change power state of the device by charging or unplugging it from a power source.
 

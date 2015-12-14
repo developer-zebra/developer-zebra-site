@@ -20,7 +20,7 @@ In order to develop Android applications with Android Studio or Eclipse, you mus
 Installing Java for OS X 2014-00x:
 
 1. Go to https://support.apple.com/kb/dl1572?locale=en_US.
-	![img](images/setup/mac/image1.png)
+	![img](/img/setup/mac/image1.png)
 
 2. Download and install Java for OS X 2014 (ex: JavaForOSX2014-001.dmg).
 

@@ -34,7 +34,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "UI Manager" feature from the list and click "Right Arrow".
 
-	![img](images/MxUIManagerTutorialImages/new_features_4.3.jpg)
+	![img](/img/MxUIManagerTutorialImages/new_features_4.3.jpg)
 
     Provide some name in the "Name" field (Ex. MyUIManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -42,17 +42,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	You can also see some additional sub-features under "UI Manager" such as Enabling/Disabling AutoCorrect, HomeKey, Bluetooth Pairing Popup, setting current locale, default input method etc which could be configured as well.    
 
-    ![img](images/MxUIManagerTutorialImages/ui_manager_details.jpg)
+    ![img](/img/MxUIManagerTutorialImages/ui_manager_details.jpg)
 
-    ![img](images/MxUIManagerTutorialImages/ui_manager_details_selected.jpg)    
+    ![img](/img/MxUIManagerTutorialImages/ui_manager_details_selected.jpg)    
  
 4. Click Apply to apply the settings we provided    
   
-    ![img](images/MxUIManagerTutorialImages/ui_profile_created.jpg)
+    ![img](/img/MxUIManagerTutorialImages/ui_profile_created.jpg)
 
 5. Click Finish and your Wireless profile for configuring Bluetooth is created.
 
-    ![img](images/MxUIManagerTutorialImages/ui_manager_profile_created.jpg) 
+    ![img](/img/MxUIManagerTutorialImages/ui_manager_profile_created.jpg) 
   
 6. Click "Close".
 
@@ -61,12 +61,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 7. You can inspect the "EMDKConfig.xml" created under "\assets" folder to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxUIManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](/img/MxUIManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxUIManagerTutorialImages/manifest_file.jpg)
+    ![img](/img/MxUIManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -80,7 +80,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxUIManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](/img/MxUIManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -158,7 +158,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-     ![img](images/MxUIManagerTutorialImages/on_create_added.jpg) 
+     ![img](/img/MxUIManagerTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -242,9 +242,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxUIManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](/img/MxUIManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxUIManagerTutorialImages/on_opened_method_2.jpg)
+    ![img](/img/MxUIManagerTutorialImages/on_opened_method_2.jpg)
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -291,7 +291,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxUIManagerTutorialImages/parse_xml.jpg) 
+    ![img](/img/MxUIManagerTutorialImages/parse_xml.jpg) 
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -321,7 +321,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxUIManagerTutorialImages/build_failure_message.jpg)
+    ![img](/img/MxUIManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -361,7 +361,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](images/MxUIManagerTutorialImages/display_results.jpg)
+    ![img](/img/MxUIManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.  
     
@@ -378,7 +378,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxUIManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](/img/MxUIManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us enable the Clipboard first and then clear it of our Symbol Android device. Now let us run the application.
  
@@ -393,11 +393,11 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Go to device's Messages and copy any text on the clipboard.
 
-    ![img](images/MxUIManagerTutorialImages/copy_text_to_clipboard.png) 
+    ![img](/img/MxUIManagerTutorialImages/copy_text_to_clipboard.png) 
 
 2. Run the application.
 
-    ![img](images/MxUIManagerTutorialImages/home_screen.png)
+    ![img](/img/MxUIManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message. It means the Clipboard has been enabled and cleared.
 
@@ -407,9 +407,9 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Since the Clipboard has been cleared using UI Manager, it will not paste anything. 
 
-    ![img](images/MxUIManagerTutorialImages/paste_data.png)
+    ![img](/img/MxUIManagerTutorialImages/paste_data.png)
 
-    ![img](images/MxUIManagerTutorialImages/no_data.png)
+    ![img](/img/MxUIManagerTutorialImages/no_data.png)
 
     This is how UI Manager lets us enable, disable and clear Clipboard of the Symbol Android device using Profile Wizard. 
 

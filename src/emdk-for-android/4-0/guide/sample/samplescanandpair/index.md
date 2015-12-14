@@ -20,13 +20,13 @@ For this sample, you will need two Android Bluetooth devices, one must be an EMD
 
 1.  When the application starts it should look like the following. Leave the **Always Scan** and **Hard Trigger** check boxes selected, and insure the **ScanData Type** spinner is set to **MAC ADDRESS**.  
 
-	![img](images/samples/scanandpair1.png)  
+	![img](/img/samples/scanandpair1.png)  
 
 2. Press the **Pair** button. The Status label will update, stating that the Scan and Pair process has started, and then prompt the user to press the hard scan trigger.
 
-	![img](images/samples/scanandpair3.png)  	
+	![img](/img/samples/scanandpair3.png)  	
 
 3. Now place the Pairing Barcode in view of the devices scan window, and then press the devices Hard Scan Trigger. The Scan and Pair sample app will retrieve MAC address from the barcode and place it in the **Bluetooth Address** field, then it will initiate the pairing and connection process. Press **Pair** in the Pairing Request dialog, to complete the pairing process. 
 After pairing is complete, the status label will display "Bluetooth device is paired successfully".
 
-	![img](images/samples/scanandpair4.png) 
+	![img](/img/samples/scanandpair4.png) 

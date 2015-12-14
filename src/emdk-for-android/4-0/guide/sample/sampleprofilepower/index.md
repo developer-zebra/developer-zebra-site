@@ -24,10 +24,10 @@ This sample application will allow you to set the power state of "Suspend" (slee
 
 ##Using This Sample
 1. When the application starts it should look like the following.  
-	![img](images/samples/1_1.png)  
+	![img](/img/samples/1_1.png)  
 2. Select the power mode you would like to set.  
-	![img](images/samples/1_2.png)  	
+	![img](/img/samples/1_2.png)  	
 3.  Click "Set" 
 4.  Check the status field.   
-	![img](images/samples/1_3.png)  
+	![img](/img/samples/1_3.png)  
 	

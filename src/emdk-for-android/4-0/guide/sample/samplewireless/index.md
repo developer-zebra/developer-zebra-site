@@ -16,10 +16,10 @@ This sample application will show you how to enable or disable the bluetooth rad
 
 ##Using This Sample
 1. When the application starts it should look like the following.  
-	![img](images/samples/wireless1.png)  
+	![img](/img/samples/wireless1.png)  
 2. Select Enable or Disable, then click **Set**
 	
 	The Status field will update after submitting the profile.
-	![img](images/samples/wireless2.png)  	
+	![img](/img/samples/wireless2.png)  	
 
 

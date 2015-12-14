@@ -63,7 +63,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 	Click on the Wi-Fi feature. The parameter list will be populated.  
   
-    ![img](images/MxWiFiManagerTutorialImages/select_wifi_feature.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/select_wifi_feature.jpg)
 
 4. You can see various settings of Wi-Fi feature in the wizard as mentioned initially. You can configure all these settings the way you want in the wizard as well as programmatically.
 
@@ -71,33 +71,33 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
     
     So lets start implementing the settings one by one as mentioned earlier. Currently, the Wi-Fi of the device is disabled. Before configuring any settings, we must enable the Wi-Fi first. So we will start with the first step by enabling Wi-Fi. Select Wi-Fi Enable drop-down and click "Enable" option. This will enable your device's Wi-Fi.  
 
-    ![img](images/MxWiFiManagerTutorialImages/wifi_enable_dropdown.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/wifi_enable_dropdown.jpg)
 
-    ![img](images/MxWiFiManagerTutorialImages/wifi_enabled.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/wifi_enabled.jpg)
     
 5. Now we will add a new Wi-Fi network. In order to do that, select "Network Action" drop-down in the "Manage Wi-Fi Radio-Specific Settings" section. This drop-down will display various network operations that could be performed on your device's Wi-Fi.
 
     > Note: Keep other settings unchanged. Although you can configure any settings if you wish to.
 
-    ![img](images/MxWiFiManagerTutorialImages/network_action_dropdown.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/network_action_dropdown.jpg)
 
     Click on "Add a New Network" option and it will show configurable settings related to this option.  
 
-    ![img](images/MxWiFiManagerTutorialImages/add_new_network.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/add_new_network.jpg)
     
 6. You can select different types of "Security Mode" (Open, Personal, Enterprise) and configure settings associated with each type. For this tutorial, we will keep the "Security Mode" as "Personal".  
   
-    ![img](images/MxWiFiManagerTutorialImages/personal_network.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/personal_network.jpg)
 
     Now enter the details for the fields provided. Provide SSID as "rholink-ap". Select "WPA Mode" as WPA. Enter the passphrase, which is the password for authentication on your network. Check the "Protect Key?" checkbox so that the passphrase is protected. Keep the other settings unchanged. 
 
     > Note: The configurations may very depending on the network you add.
 
-    ![img](images/MxWiFiManagerTutorialImages/personal_network_details_added.jpg)  
+    ![img](/img/MxWiFiManagerTutorialImages/personal_network_details_added.jpg)  
   
 7.  Click Apply and Finish. 
 
-    ![img](images/MxWiFiManagerTutorialImages/wifi_profile_created.jpg)  
+    ![img](/img/MxWiFiManagerTutorialImages/wifi_profile_created.jpg)  
 
 8. Click "Close".   
 
@@ -106,12 +106,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
     
 9. You can inspect the "EMDKConfig.xml" created under "\assets" folder to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager. So you can see the entry of all elements in EMDKConfig.xml file that we configured.
 
-    ![img](images/MxWiFiManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](/img/MxWiFiManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxWiFiManagerTutorialImages/manifest_file.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -125,7 +125,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxWiFiManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](/img/MxWiFiManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -203,7 +203,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-     ![img](images/MxWiFiManagerTutorialImages/on_create_added.jpg) 
+     ![img](/img/MxWiFiManagerTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -289,9 +289,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxWiFiManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](/img/MxWiFiManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxWiFiManagerTutorialImages/on_opened_method_2.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/on_opened_method_2.jpg)
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -338,7 +338,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxWiFiManagerTutorialImages/parse_xml.jpg) 
+    ![img](/img/MxWiFiManagerTutorialImages/parse_xml.jpg) 
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -368,7 +368,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxWiFiManagerTutorialImages/build_failure_message.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -408,7 +408,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](images/MxWiFiManagerTutorialImages/display_results.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.  
     
@@ -425,7 +425,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxWiFiManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](/img/MxWiFiManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will allow us to Enable the Wi-Fi and add a network specified in the EMDK Profile Wizard.
  
@@ -438,11 +438,11 @@ That's it!!! We are done with all the coding and configuration part that will al
 
 2. Before running the application, We will make sure that Wi-Fi is disabled. Go to "Settings" and disable the Wi-Fi by toggling the status. 
   
-	![img](images/MxWiFiManagerTutorialImages/disable_wifi.png)
+	![img](/img/MxWiFiManagerTutorialImages/disable_wifi.png)
   
 4. Run the application. If the configurations in the wizard are successfully applied, the app will display a success [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html).
 
-    ![img](images/MxWiFiManagerTutorialImages/home_screen.png)
+    ![img](/img/MxWiFiManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) displayed with a success message. It means it enabled the Wi-Fi and added a network named "rholink-ap" that we had configured in the wizard earlier in this tutorial.
 
@@ -450,75 +450,75 @@ That's it!!! We are done with all the coding and configuration part that will al
 
     To verify, go to Settings. You can see the Wi-Fi is enabled now. 
   
-	![img](images/MxWiFiManagerTutorialImages/wifi_on.png)
+	![img](/img/MxWiFiManagerTutorialImages/wifi_on.png)
 
     Tap on Wi-Fi option and you can see that the "rholink-ap" network has been successfully added in the list of available networks. The lock icon near Wi-Fi image indicates that it is a secured password protected network.
 
-    ![img](images/MxWiFiManagerTutorialImages/rho_link_added.png)
+    ![img](/img/MxWiFiManagerTutorialImages/rho_link_added.png)
 
     > Note: This setting has just added a new network. We are not yet connected to this new network that we added.  
 
 5. Now we will connect to an existing Wi-Fi network. You can connect to any of the existing Wi-Fi network but we will connect to the one we just added (rholink-ap). So open the profile manager by selecting our project just like we did earlier for adding a network. 
  
-	![img](images/MxWiFiManagerTutorialImages/wifi_profile_created.jpg)
+	![img](/img/MxWiFiManagerTutorialImages/wifi_profile_created.jpg)
 
     Click on "Edit" button and it will display profile editor window to edit previous configurations.
 
-    ![img](images/MxWiFiManagerTutorialImages/edit_profile.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/edit_profile.jpg)
 
     Choose "Network Action" as "Connect to an Existing Network" from the drop-down.
 
-    ![img](images/MxWiFiManagerTutorialImages/connect_existing_network.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/connect_existing_network.jpg)
 
     Enter SSID of the network you want to connect to. In this tutorial we will connect to network with SSID "rholink-ap" that we created earlier.
  
-    ![img](images/MxWiFiManagerTutorialImages/ssid_provided.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/ssid_provided.jpg)
 
     Click Apply, Finish and Close to save the configurations.  
 
 6. Run the application again.
 
-    ![img](images/MxWiFiManagerTutorialImages/home_screen.png)
+    ![img](/img/MxWiFiManagerTutorialImages/home_screen.png)
 
     The app displayed a success message. So to verify, go to Settings -> Wi-Fi. You can see that Wi-Fi is successfully connected to the network with SSID "rholink-ap", which we provided in the wizard.
    
-    ![img](images/MxWiFiManagerTutorialImages/wifi_connected.png)
+    ![img](/img/MxWiFiManagerTutorialImages/wifi_connected.png)
 
 7. We will now disconnect the Wi-Fi from an existing network through wizard. Go to Profile Manager and click Edit button just like we did in previous operations.
 
     This time select the "Network Action" as "Disconnect from an Existing Network". Enter the SSID of the network you wish to disconnect from. In this tutorial we will enter the SSID as "rholink-ap" to which we are currently connected.
 
-    ![img](images/MxWiFiManagerTutorialImages/disconnect_from_network.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/disconnect_from_network.jpg)
 
     Click Apply, Finish and Close.
 
 8. Run the application. 
 
-    ![img](images/MxWiFiManagerTutorialImages/home_screen.png)
+    ![img](/img/MxWiFiManagerTutorialImages/home_screen.png)
 
     The success [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) indicates that the operation was successful.
 
     Let us verify that. Go to Settings -> Wi-Fi and you will see that the device has successfully disconnected from the network "rholink-ap".
 
-    ![img](images/MxWiFiManagerTutorialImages/disconnected_from_network.png)
+    ![img](/img/MxWiFiManagerTutorialImages/disconnected_from_network.png)
 
 9. Finally, we will remove an existing network through the EMDK Profile wizard. So again go to Profile Manager and click on "Edit" button. Select "Network Action" as "Remove an Existing Network". This time we will provide some other SSID just for variation. 
 
-    ![img](images/MxWiFiManagerTutorialImages/ssid_to_remove.png)
+    ![img](/img/MxWiFiManagerTutorialImages/ssid_to_remove.png)
 
     In the above screen, you can see a network with SSID "Deven". Let us remove this network from the list by providing SSID "Deven" in the wizard.
 
-    ![img](images/MxWiFiManagerTutorialImages/remove_existing_network.jpg)
+    ![img](/img/MxWiFiManagerTutorialImages/remove_existing_network.jpg)
 
     Click Apply, Finish and Close.
 
 10. Run the application. 
 
-    ![img](images/MxWiFiManagerTutorialImages/home_screen.png)
+    ![img](/img/MxWiFiManagerTutorialImages/home_screen.png)
 
     The success message indicates that the network was removed successfully. So go to Settings -> Wi-Fi and you will not see the network with SSID "Deven" in the list of available networks.
 
-    ![img](images/MxWiFiManagerTutorialImages/network_removed.png)
+    ![img](/img/MxWiFiManagerTutorialImages/network_removed.png)
 
     > Note: If the network is within the range then it might appear again in the list as device scans periodically.
 

@@ -245,7 +245,7 @@ One way you can see how this XML string should be structured is to use the Profi
 4. Click Finish when you are done with your selections.
 5. Look in the `assets` folder and open `EMDKConfig.xml`
 
-	![img](images/MxAppManagerTutorialImages/emdk_config_file_entries.jpg)
+	![img](/img/MxAppManagerTutorialImages/emdk_config_file_entries.jpg)
 6. Notice the XML structure that is shown. This complete structure is to be passed in the extraData parameter as a string. You can choose to copy and paste this into your code to be used.
 
 > WARNING!: XML parm names and values may not be the same as what is presented in the Profile Manager wizard. Pay close attention to the fields of interest. It is not recommended to manually edit this XML, use the Profile Manager Wizard to ensure proper formation of the XML structure and values.

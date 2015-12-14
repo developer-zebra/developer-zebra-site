@@ -16,11 +16,11 @@ One of the features of the EMDK for Android is the ability to set the system clo
 
 ##Using This Sample
 1. When the application starts it should look like the following.  
-	![img](images/samples/3_1.png)  
+	![img](/img/samples/3_1.png)  
 2. Enter the time you would like to set.  
-	![img](images/samples/3_2.png)  	
+	![img](/img/samples/3_2.png)  	
 3.  Click "Set" 
 4.  Check the status field.   
-	![img](images/samples/3_3.png)  
+	![img](/img/samples/3_3.png)  
 	
 

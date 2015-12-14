@@ -63,7 +63,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
   
 2. Set scanner to "Serial SSI Scanner", which is the default one". 
 
-  ![img](images/samples/barcode_2.png)
+  ![img](/img/samples/barcode_2.png)
 
 3. Set Trigger Type to "HARD".
 
@@ -77,7 +77,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
 
 5. Click "Start" button and the status will be updated.
 
-  ![img](images/samples/barcode_5.png) 
+  ![img](/img/samples/barcode_5.png) 
  
 6. Since we selected Trigger Type as "HARD", press the hard scan key of Symbol device and scan a particular barcode. It will get the scanned barcode data in "Data" field of UI.
    

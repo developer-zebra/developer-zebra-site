@@ -36,23 +36,23 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "SD Card Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_feature.jpg)   
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_feature.jpg)   
 
 4. Provide some name in the "Name" field (Ex. MySDCardManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
     So as discussed, we will disable the use of SD Card in the Symbol device using SD Card Manager feature of Mx through Profile Manager wizard. So click on "Enable or Disable use of SdCard" drop-down in the wizard and select the option "Disable".    
 
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_manager_details.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_manager_details.jpg)
 
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_manager_details_selected.jpg)    
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_manager_details_selected.jpg)    
  
 5. Click Apply to apply the settings we provided    
   
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_profile_created.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_profile_created.jpg)
 
 6. Click Finish and your SD Card profile for disabling the use of SD Card is created.
 
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_manager_profile_created.jpg) 
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_manager_profile_created.jpg) 
   
 7. Click "Close".
 
@@ -62,12 +62,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 8. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxSDCardManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](/img/MxSDCardManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxSDCardManagerTutorialImages/manifest_file.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -81,7 +81,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxSDCardManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](/img/MxSDCardManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -159,9 +159,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-    ![img](images/MxSDCardManagerTutorialImages/variables_added.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/variables_added.jpg)
 
-	![img](images/MxSDCardManagerTutorialImages/on_create_added.jpg)
+	![img](/img/MxSDCardManagerTutorialImages/on_create_added.jpg)
 	 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -245,9 +245,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxSDCardManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](/img/MxSDCardManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxSDCardManagerTutorialImages/on_opened_method_2.jpg) 
+    ![img](/img/MxSDCardManagerTutorialImages/on_opened_method_2.jpg) 
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -294,8 +294,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxSDCardManagerTutorialImages/parse_xml_1.jpg) 
-	![img](images/MxSDCardManagerTutorialImages/parse_xml_2.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/parse_xml_1.jpg) 
+	![img](/img/MxSDCardManagerTutorialImages/parse_xml_2.jpg)
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -325,7 +325,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxSDCardManagerTutorialImages/build_failure_message.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -365,7 +365,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](images/MxSDCardManagerTutorialImages/display_results.jpg)
+    ![img](/img/MxSDCardManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.
            
@@ -383,7 +383,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxSDCardManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](/img/MxSDCardManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us disable external SD Card using [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) feature of Mx. Now let's run the application.
  
@@ -398,11 +398,11 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Go to device's File Browser -> external, and you would see that SD Card is enabled at this stage.
 
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_enabled.png) 
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_enabled.png) 
 
 2. Run the application.
 
-    ![img](images/MxSDCardManagerTutorialImages/home_screen.png)
+    ![img](/img/MxSDCardManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message.
 
@@ -410,21 +410,21 @@ That's it!!! We are done with all the coding and configuration part that will le
   
 3. We will now see the status of external SD Card by again going into device's File Browser -> external directory.
 
-    ![img](images/MxSDCardManagerTutorialImages/sd_card_disabled.png)
+    ![img](/img/MxSDCardManagerTutorialImages/sd_card_disabled.png)
 
 4. You will see an empty "external" directory. It means the SD card has been successfully disabled. Now lets enable the SD Card in order to view the content in "external" directory of device's File Browser. So open the Profile Manager and Click "Edit" button.
 
-	![img](images/MxSDCardManagerTutorialImages/edit_profile_manager.jpg)
+	![img](/img/MxSDCardManagerTutorialImages/edit_profile_manager.jpg)
 
 5. Click on "Enable or Disable use of SDCard" drop-down and select option "Enable".
 
-	![img](images/MxSDCardManagerTutorialImages/sd_card_re_enabled.jpg)
+	![img](/img/MxSDCardManagerTutorialImages/sd_card_re_enabled.jpg)
 
 	Click "Apply", "Finish" and "Close".
 
 6. Now Run the application again and this time you will see that the SD Card has been successfully enabled back by checking File Browser -> external directory of the device.
 
-	![img](images/MxSDCardManagerTutorialImages/sd_card_enabled.png)
+	![img](/img/MxSDCardManagerTutorialImages/sd_card_enabled.png)
 
     This is how you can Enable/Disable the use of SD Card using [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) on Symbol devices using Profile Wizard. 
 

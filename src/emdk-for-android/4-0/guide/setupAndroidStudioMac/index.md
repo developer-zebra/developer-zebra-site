@@ -7,7 +7,7 @@ title: EMDK For Android Setup on Mac
 1. Go to http://developer.android.com/sdk/index.html.
 
 
-	![img](images/setup/mac/image3.png)
+	![img](/img/setup/mac/image3.png)
 
 2. Click on the "Download Android Studio for Mac" button.
 3. Accept the License Agreement and click the "Download Android Studio for Mac" button.
@@ -39,7 +39,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 3. Check that the status of Android 4.1.2 (API 16) and Android 4.4.2 (API 19) SDK Platforms is "Installed".
 4. If either SDK platform is not installed check the SDK check mark, click Install Packages, and follow the on screen instructions. When the install is complete, restart Android Studio.
 
-	![img](images/setup/mac/image4.png)
+	![img](/img/setup/mac/image4.png)
 
 
 ###How to determine which Build-tools is installed in Android Studio
@@ -49,7 +49,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 3. Check the status of Android SDK Build-tools 21.1.x or newer is "Installed".
 4. If Android SDK Build-tools 21.1.x or newer is not installed check the SDK check mark, click Install Packages, and follow the on screen instructions. When the install is complete, restart Android Studio.
 
-	![img](images/setup/mac/image5.png)
+	![img](/img/setup/mac/image5.png)
 
 ##Installing EMDK v3.1
 
@@ -78,17 +78,17 @@ To add the EMDK 3.1 APIs to the Android SDK please refer the following instructi
 
 1. Navigate to the /Users/**username**/Library/Android/sdk/add-ons directory.
 
-	![img](images/setup/mac/image6.png)
+	![img](/img/setup/mac/image6.png)
 
 2. Copy the addon-symbol-emdk_v3.1_API-16 and addon-symbol-emdk_v3.1_API-19 folders into the add-ons directory.
 
-	![img](images/setup/mac/image7.png)
+	![img](/img/setup/mac/image7.png)
 
 3. Exit & Launch Android Studio
 4. Go to Tools > Android > SDK Manager
 
 Now the integrated EMDK add-ons should appear in the SDK Manager
-	![img](images/setup/mac/image8.png)
+	![img](/img/setup/mac/image8.png)
 
 ###EMDK Wizard plug-in Integration
 
@@ -96,35 +96,35 @@ Configuring Mac OS X with EMDK Wizard core components
 
 1. Locate the /Users/Shared folder.
 
-	![img](images/setup/mac/image10.png)
+	![img](/img/setup/mac/image10.png)
 
 2. Copy Symbol EMDK for Android folder into the /Users/Shared folder.
 
-	![img](images/setup/mac/image11.png)
+	![img](/img/setup/mac/image11.png)
 
 EMDK Wizard plug-in integration into Android Studio
 
 1. Launch Finder and go to Applications (on the left side panel)
 
-	![img](images/setup/mac/image12.png)
+	![img](/img/setup/mac/image12.png)
 
 2. Locate Android Studio.app, right click and select Show Package Contents.
 
-	![img](images/setup/mac/image13.png)
+	![img](/img/setup/mac/image13.png)
 
 3. Locate the Contents\plugins directory.
 
-	![img](images/setup/mac/image14.png)
+	![img](/img/setup/mac/image14.png)
 
 5. Copy the com.symbol.emdk.wizard.intellijIdea_3.1.xx folder into the plugins directory.
 
-	![img](images/setup/mac/image15.png)
+	![img](/img/setup/mac/image15.png)
 
 6. Exit & Launch Android Studio.
 
 Now the “EMDK” menu should appear in the Android Studio menu bar:
 
-![img](images/setup/mac/image16.png)
+![img](/img/setup/mac/image16.png)
 
 
 ##Installing EMDK v3.1 Update1
@@ -163,11 +163,11 @@ Android Studio 1.1.0 is configured with **JDK 6**. Once the EMDK Wizard plug-in 
 
 Notification stating an internal IDE error.
 
-![img](images/setup/mac/image18.png)
+![img](/img/setup/mac/image18.png)
 
 Empty EMDK Wizard menu
 
-![img](images/setup/mac/image19.png)
+![img](/img/setup/mac/image19.png)
 
 
 
@@ -175,11 +175,11 @@ If these symptoms are observed check the JRE version used by the Android studio.
 
 1. Click on Android Studio > About Android Studio
 
-	![img](images/setup/mac/image20.png)
+	![img](/img/setup/mac/image20.png)
 
 2. Check the JRE version
 
-	![img](images/setup/mac/image21.png)
+	![img](/img/setup/mac/image21.png)
 
 
 
@@ -187,32 +187,32 @@ If the JRE version is 1.6.x the EMDK Wizard plug-in for Android studio will fail
 
 1. Launch Finder > click on Applications on the left side pane > locate the Android Studio.app
 
-	![img](images/setup/mac/image22.png)
+	![img](/img/setup/mac/image22.png)
 
 
 2. Right click on the Android Studio.app > select Show Package Contents
 
-	![img](images/setup/mac/image23.png)
+	![img](/img/setup/mac/image23.png)
 
 3. Expand the Contents directory > create a backup copy of the Info.plist > open the Info.plist using a text editor
 
-	![img](images/setup/mac/image24.png)
+	![img](/img/setup/mac/image24.png)
 
-	![img](images/setup/mac/image25.png)
+	![img](/img/setup/mac/image25.png)
 
 
 4. Search and locate the <key>JVMVersion</key> entry > change the 1.6* to 1.6+ > Save the file and exit the editor.
 
-	![img](images/setup/mac/image26.png)
+	![img](/img/setup/mac/image26.png)
 
 
 5. Exit and launch the Android Studio IDE and check the EMDK Wizard menu item, it should be visible now.
 
-	![img](images/setup/mac/image27.png)
+	![img](/img/setup/mac/image27.png)
 
 6. Additionally check the JRE version of the Android Studio; it should now be 1.7.x.
 
-	![img](images/setup/mac/image28.png)
+	![img](/img/setup/mac/image28.png)
 
 
 

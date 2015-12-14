@@ -13,13 +13,10 @@ products:
         menu: "4.0"
       - url: /emdk-for-android/3-1/guide/about
         menu: "3.1"
-  - title: EMDK For Xamarin
-    description: C# Xamarin developer guides using EMDK API's, Data Capture, Profile Manager, etc.
-    url: /emdk-for-xamarin/1-0/guide
+  - title: StageNow
+    description: The easy way to stage Zebra Technologies' Android-based mobile computers.
+    url: /stagenow/2-2/about
     btn-text: Latest Guides
-    image: /images/products/emdk-for-xamarin.jpg
-    versions:
-      - url: /emdk-for-xamarin/1-0/guide
-        menu: "1.0"
+    image: /images/products/stagenow.png
 
 ---

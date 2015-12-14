@@ -195,9 +195,17 @@ var sitebuild = Metalsmith(__dirname)
         pattern: '[^/]+/[^/]+/tutorial',
         layoutName: 'tutorial.html'
     }))
+    .use(findLayout({
+        pattern: 'stagenow',
+        layoutName: 'guide.html'
+    }))
     .use(findProduct({
         pattern: 'emdk-for-android',
         productName: 'EMDK For Android'
+    }))
+    .use(findProduct({
+        pattern: 'stagenow',
+        productName: 'Stagenow'
     }))
     .use(findProductVersion({
         pattern: 'emdk-for-android/3-1',
@@ -214,6 +222,10 @@ var sitebuild = Metalsmith(__dirname)
     .use(findProductVersion({
         pattern: 'emdk-for-xamarin/1-0',
         productVersionName: '1.0'
+    }))
+    .use(findProductVersion({
+        pattern: 'stagenow/2-2',
+        productVersionName: '2.2'
     }))
     .use(mxversion({
         pattern: 'mx/4-2/',
@@ -292,6 +304,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'mx/',
         automenu: false
+    }))
+    .use(foldermenu({
+        folder: 'stagenow/2-2/'
     }))
     .use(showdown({}))
     .use(snippet({

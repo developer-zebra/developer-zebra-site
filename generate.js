@@ -1,6 +1,6 @@
 var Metalsmith = require('metalsmith'),
     branch = require('metalsmith-branch'),
-  	showdown   = require('metalsmith-showdown'),
+    showdown   = require('metalsmith-showdown'),
     snippet   = require('metalsmith-snippet'),
     templates  = require('metalsmith-templates')
     Handlebars = require('handlebars'),
@@ -10,8 +10,8 @@ var Metalsmith = require('metalsmith'),
     multimatch = require('multimatch'),
     inplace = require('metalsmith-in-place'),
     layouts = require('metalsmith-layouts'),
-	fs         = require('fs'),
-	Handlebars = require('handlebars'),
+    fs         = require('fs'),
+    Handlebars = require('handlebars'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
     foldermenu = require('metalsmith-folder-menu'),
@@ -19,7 +19,7 @@ var Metalsmith = require('metalsmith'),
     paths = require('metalsmith-paths'),
     codehighlight = require('metalsmith-code-highlight'),
     blc = require('metalsmith-broken-link-checker'),
-	Swag = require('swag');
+    Swag = require('swag');
 
 
 Swag.registerHelpers(Handlebars);
@@ -114,16 +114,16 @@ var findProductVersion = function(config) {
 
 
 var metaUrl = function(config) {
-	var pattern = config.pattern;
+    var pattern = config.pattern;
 
     return function(files, metalsmith, done) {
         Object.keys(files).forEach(function (filepath) {
         // parent folder name
-        	// if (pattern.test(files[filepath])) {
-        		// console.log(filepath);
-	        	files[filepath]['url'] = "/" + filepath.replace("index.md","");
-        	// }
-    	});
+            // if (pattern.test(files[filepath])) {
+                // console.log(filepath);
+                files[filepath]['url'] = "/" + filepath.replace("index.md","");
+            // }
+        });
         done();
     };
 };
@@ -141,32 +141,32 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 });
 
 var sitebuild = Metalsmith(__dirname)
-	.metadata({
-	    site: {
-	      title: 'Zebra Technologies - EMDK Samples',
-	      url: 'http://zebratechnologies.github.io/samples'
-	    }
-	  })
+    .metadata({
+        site: {
+          title: 'Zebra Technologies - EMDK Samples',
+          url: 'http://zebratechnologies.github.io/samples'
+        }
+      })
     .use(paths({
         property: "path"
     }))    
-	.use(metaUrl({
-		pattern: '*.md'
-	}))
+    .use(metaUrl({
+        pattern: '*.md'
+    }))
     .use(defaultPublish({
         pattern: '.*'
     }))
-	.use(inplace({
-	  engine: 'handlebars',
-	  partials: 'partials',
-	  pattern: '**/*.md'
-	}))	
-	.use(collections({
-	    samples: {
-	        pattern: '**/samples/**',
-	        sortBy: 'date',
-	        reverse: true
-	    },
+    .use(inplace({
+      engine: 'handlebars',
+      partials: 'partials',
+      pattern: '**/*.md'
+    })) 
+    .use(collections({
+        samples: {
+            pattern: '**/samples/**',
+            sortBy: 'date',
+            reverse: true
+        },
         mx: {
             pattern: 'mx/**/*.md'
         },
@@ -174,7 +174,7 @@ var sitebuild = Metalsmith(__dirname)
             pattern: '/**/**.md'
         }
 
-	}))
+    }))
     .use(findLayout({
         pattern: 'mx',
         layoutName: 'guide.html'
@@ -195,9 +195,17 @@ var sitebuild = Metalsmith(__dirname)
         pattern: '[^/]+/[^/]+/tutorial',
         layoutName: 'tutorial.html'
     }))
+    .use(findLayout({
+        pattern: 'stagenow',
+        layoutName: 'guide.html'
+    }))
     .use(findProduct({
         pattern: 'emdk-for-android',
         productName: 'EMDK For Android'
+    }))
+    .use(findProduct({
+        pattern: 'stagenow',
+        productName: 'Stagenow'
     }))
     .use(findProductVersion({
         pattern: 'emdk-for-android/3-1',
@@ -214,6 +222,10 @@ var sitebuild = Metalsmith(__dirname)
     .use(findProductVersion({
         pattern: 'emdk-for-xamarin/1-0',
         productVersionName: '1.0'
+    }))
+    .use(findProductVersion({
+        pattern: 'stagenow/2-2',
+        productVersionName: '2.2'
     }))
     .use(mxversion({
         pattern: 'mx/4-2/',
@@ -293,21 +305,24 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'mx/',
         automenu: false
     }))
+    .use(foldermenu({
+        folder: 'stagenow/2-2/'
+    }))
     .use(showdown({}))
     .use(snippet({
       maxLength: 250,
       suffix: '...'
     }))
     
-	// .use(permalinks())
+    // .use(permalinks())
     // .use(templates('handlebars'))
-	.use(layouts({
-	  directory: 'layouts',
-	  default: 'index.html',
-	  engine: 'handlebars',
-	  // partials: 'partials',
-	  pattern: '**/*.html'
-	}))
+    .use(layouts({
+      directory: 'layouts',
+      default: 'index.html',
+      engine: 'handlebars',
+      // partials: 'partials',
+      pattern: '**/*.html'
+    }))
     .use(codehighlight({
 
     }))

@@ -1072,74 +1072,7 @@ com.symbol.emdk.payment.PaymentException
 
 will be thrown if any error occurs.
 
-### downloadFile
 
-**public PaymentResults downloadFile(PaymentDevice.DownloadType downloadType, java.lang.String filePath)**
-
-downloadFile is an asynchronous call. The method allows the application to download the file such as EMV Params file,
- payment device firmware.The result status will be returned through the registered callback.Any other payment API call 
- cannot  disturb downloading file , if done PREVIOUS_COMMAND_PENDING is returned.
-
-**Parameters:**
-
-`downloadType` - This indicates the type of File to download either DownloadType.EMVPARA or DownloadType.FIRMARE  file.
-
-`filePath` - This is  file location accepted for downloading files.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	paymentDevice.downloadFile(DownloadType.EMVPARAM, "//Sdcard//Payment//EmvParam");
-
-
-**Returns:**
-
-com.symbol.emdk.payment.PaymentResults - Returns PaymentResults.
- 
-         Possible Error codes: SUCCESS, FAILURE, DEVICE_NOT_ENABLED,
-         COMMUNICATION_ERROR, CONNECTION_ERROR, INVALID_OBJECT,
-         NULL_POINTER,PREVIOUS_COMMAND_PENDING
-
-### downloadFile
-
-**public PaymentResults downloadFile(PaymentDevice.DownloadType downloadType, byte fileData)**
-
-downloadFile is an asynchronous call. The application must be able to download or update the file such as EMV parameter,Firmware file or font file to the payment Device.
- The  downloadFile status will be returned through the registered callback.Once application starts download, other requests are not allowed and the PREVIOUS_COMMAND_PENDING 
- will be returned until download completes.
-
-**Parameters:**
-
-`downloadType` - The type of File to download such as  EMV parameter ,Firmware file, etc.
-
-`fileData` - The  complete download data.The partial data is not allowed.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	
-	
-	
-	
-	in = new FileInputStream("//sdcard//Payment//EmvParam");
-	int bufferSize = in.available();
-	byte[] emvParamBuffer = new byte[bufferSize];
-	
-	while ((byteread = in.read(emvParamBuffer)) != -1) 
-	result = paymentDevice.downloadFile(DownloadType.EMVPARA, emvParamBuffer));
-
-
-**Returns:**
-
-com.symbol.emdk.payment.PaymentResults - Returns PaymentResults.
- 
-         Possible Error codes: SUCCESS, FAILURE, DEVICE_NOT_ENABLED,
-         COMMUNICATION_ERROR, CONNECTION_ERROR, INVALID_OBJECT,
-         NULL_POINTER,PREVIOUS_COMMAND_PENDING
 
 ### getDateTime
 

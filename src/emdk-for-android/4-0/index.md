@@ -119,10 +119,8 @@ menu:
         url: /emdk-for-android/4-0/samples/simulscan
       - title: PersonalShopper Sample
         url: /emdk-for-android/4-0/samples/personal-shopper
-  - title: Guides
+  - title: Programming Guides
     items:
-      - title: Barcode Scanner
-        url: /emdk-for-android/4-0/guide/scanner
       - title: SimulScan API
         url: /emdk-for-android/4-0/guide/simulscan_guide
       - title: Name-Value Pair
@@ -131,6 +129,8 @@ menu:
         url: /emdk-for-android/4-0/guide/personalshopper
       - title: Secure NFC API
         url: /emdk-for-android/4-0/guide/securenfc
+      - title: Barcode Scanner States
+        url: /emdk-for-android/4-0/guide/scanner
   - title: Profile Manager
     items:
       - title: Using Profile Manager

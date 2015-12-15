@@ -24,6 +24,32 @@ var Metalsmith = require('metalsmith'),
 
 Swag.registerHelpers(Handlebars);
 
+var fileinsert = function(config) {
+    var pattern = new RegExp(config.pattern);
+
+    return function(files, metalsmith, done) {
+        for (var file in files) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
+                var _f = files[file];
+                if (typeof(_f.insert) !='undefined' ) {
+                    //console.log('trying to insert' + _f.insert.file + ':' + _f.url);
+                    if(typeof(files[_f.insert.file]) =='undefined'){
+                        console.log('ERROR INSERTING:' + _f.insert.file + ' INTO:' + _f.url)
+                    }
+                    else{
+                        _f.contents = files[_f.insert.file].contents;
+                        _f.title = files[_f.insert.file].title;
+                        
+                    }
+                    // console.log(_f);
+                }
+            }
+        }
+        done();
+    };
+};
+
+
 var defaultPublish = function(config) {
     var pattern = new RegExp(config.pattern);
 
@@ -154,6 +180,9 @@ var sitebuild = Metalsmith(__dirname)
 		pattern: '*.md'
 	}))
     .use(defaultPublish({
+        pattern: '.*'
+    }))
+    .use(fileinsert({
         pattern: '.*'
     }))
 	.use(inplace({

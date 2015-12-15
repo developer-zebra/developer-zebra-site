@@ -7,24 +7,24 @@ contentlist:
     visible: false
     items: 
       - title: App Manager
-        url: /mx/5-0/app-management/appmgr
+        url: appmgr/5-0
         icon: /mx/icons/app_manager.png
         description: The AppMgr allows you manage the set of user applications that are installed on the device.
         urls:
           - title: "4.2"
-            url: /mx/4-2/app-management/appmgr
+            url: appmgr/4-2
           - title: "4.4"
-            url: /mx/4-4/app-management/appmgr
+            url: appmgr/4-4
           - title: "5.0"
-            url: /mx/5-0/app-management/appmgr
+            url: appmgr/5-0
       - title: Browser Manager
-        url: /mx/4-4/app-management/browsermgr
+        url: browsermgr/5-0
         description: The Browser Manager allows you to configure browser settings like the default home page.
         icon: /mx/icons/browsermgr.png
         urls:
           - title: "4.4"
-            url: /mx/4-4/app-management/browsermgr
+            url: browsermgr/4-4
           - title: "5.0"
-            url: /mx/5-0/app-management/browsermgr
+            url: browsermgr/5-0
 
 ---

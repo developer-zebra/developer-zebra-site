@@ -37,7 +37,7 @@ Provide access to set the camera specific settings if the scanner device is came
 **Example Usage:**
 	
 	:::java	
-	if (scanner.getScannerInfo().getDeviceType() == DeviceType.IMAGER) {
+	if (scanner.getScannerInfo().getDeviceType() == DeviceType.CAMERA) {
 	readerParams.readerSpecific.cameraSpecific.illuminationMode = IlluminationMode.ON;
 	}
 

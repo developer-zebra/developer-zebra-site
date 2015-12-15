@@ -674,7 +674,7 @@ Query the battery level of the payment device.
 com.symbol.emdk.payment.BatteryData - Returns the BatteryData object which contains battery level of
          the requested device and the PaymentResults.
  
-	
+
          Possible Error codes: SUCCESS, FAILURE, DEVICE_NOT_ENABLED,
          COMMUNICATION_ERROR, CONNECTION_ERROR, INVALID_OBJECT
 

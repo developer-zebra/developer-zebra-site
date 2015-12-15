@@ -4,10 +4,16 @@ title: EMDKBase
 
 This is the base class for all the EMDK manager classes derived from.<br><br>
 
-##Constructors
+##Public Methods
 
-###EMDKBase
+### getType
 
+**public FEATURE_TYPE getType()**
 
+Return the feature type of the object.
+
+**Returns:**
+
+com.symbol.emdk.EMDKManager.FEATURE_TYPE
 
 

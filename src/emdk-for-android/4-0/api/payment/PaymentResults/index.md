@@ -114,14 +114,6 @@ Defines all the error codes the payment API returns.
 
 * **ACCOUNT_NUMBER_MISMATCH** -The account does not match account number of card used.
 
-* **UPDATE_FILE_TOO_LARGE** -Update file too large to update.
-
-* **UPDATE_FILE_SIGNATURE_ERROR** -Update file signature error.
-
-* **UPDATE_FILE_WRITE_ERROR** -Failed to update or flash the file sent.
-
-* **INCOMPETE_DATA** -The sent data is incomplete or incorrect.
-
 * **DISABLED** -New state when PD40 disconnects or goes out of range
 
 * **CANNOT_ABORT** -Abort does not support aborting the previously requested command
@@ -136,13 +128,7 @@ Defines all the error codes the payment API returns.
 
 * **REPETITIVE_OPERATION** -Same command is repeated
 
-* **FILE_NOT_FOUND** -The file specified in the file downLoad does not exists.
-
-* **DOWNLOAD_TIMEOUT** -The download file specified does not exists.
-
 * **DEVICE_UPDATE_IN_PROGRESS** -The PD40 Device Upadate is in progress.
-
-* **FILE_VERIFICATION_FAILED** -The download file format is not valid.
 
 * **UNDEFINED** -Error code not defined.
 

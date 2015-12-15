@@ -56,6 +56,42 @@ This method returns an object instance which has derived from EMDKBase. Based on
 
 com.symbol.emdk.EMDKBase
 
+### getInstanceAsync
+
+**public void getInstanceAsync(EMDKManager.FEATURE_TYPE featureType, EMDKManager.StatusListener statusListener)**
+
+This method is an asynchronous call and requests object instance for the specified feature type and object
+ is returned through the status listener callback when the feature is initialized and ready to use. 
+ Ex:The Profile Manager related components will take few seconds to initialize for it to be used after device booted.
+ If the application tries to use the  EMDKManager#getInstance to get the profile manager object and
+ sets the profile during the device boot will result in error because the underlying Profile manager is not ready. 
+ 
+ 
+
+**Example Usage:**
+	
+	:::java	try {
+	
+	emdkManager.getInstanceAsync(EMDKManager.FEATURE_TYPE.PROFILE, statusListener);
+	
+
+
+**Parameters:**
+
+`featureType` - The  EMDKManager.FEATURE_TYPE the object to be created.
+
+`statusListener` - The callback will returned on  EMDKManager.StatusListener when the feature is ready to use.
+
+**Returns:**
+
+void
+
+**Throws:**
+
+com.symbol.emdk.EMDKException
+
+The exception will be thrown when the error occurs during this request.
+
 ### release
 
 **public void release()**

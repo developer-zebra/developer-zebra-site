@@ -140,21 +140,6 @@ com.symbol.emdk.payment.PaymentException
 
 
 
-### isPaymentDeviceInUse
-
-**public String isPaymentDeviceInUse(DeviceInfo.DeviceType deviceType)**
-
-This method checks  whether the payment device is in use and which POS application is using the payment device
- The input parameter is payment device type. This method returns the POS Application name if the payment is used.
-
-**Parameters:**
-
-`deviceType`
-
-**Returns:**
-
-java.lang.String - The return value is empty string if the payment device is not used by any POS app else returns 
- 			the POS App name if the payment is used.
 
 ##Public Enums
 

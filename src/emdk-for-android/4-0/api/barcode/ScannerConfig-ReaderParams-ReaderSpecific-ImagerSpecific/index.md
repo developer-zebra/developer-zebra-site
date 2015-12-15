@@ -141,4 +141,38 @@ This is the time (in seconds) when an external scanner is idle in a particular s
 
 int
 
+###illuminationMode
+
+Turns imager illumination on and off. 
+ Use enum  ScannerConfig.IlluminationMode.
+ 
+ 
+
+**Example Usage:**
+	
+	:::java	
+	readerParams.imagerSpecific.illuminationMode = IlluminationMode.ON;
+
+
+**Type:**
+
+com.symbol.emdk.barcode.ScannerConfig.IlluminationMode
+
+###aimingPattern
+
+Type of aiming pattern to be used for barcode scanning. 
+ Use enum  ScannerConfig.AimingPattern.
+ 
+ 
+
+**Example Usage:**
+	
+	:::java	
+	readerParams.imagerSpecific.aimingPattern = AimingPattern.OFF;
+
+
+**Type:**
+
+com.symbol.emdk.barcode.ScannerConfig.AimingPattern
+
 

@@ -123,6 +123,8 @@ The exception will be thrown if it fails to disable the tag.
 
 **public void authenticate(MifareDesfire.AuthenticateType authType, int cardKeyNum, SamKey samkey, SamDiverseParams samDiverseParams)**
 
+>NOTE:  The application ID must be selected using the selectApplication() method before calling the authenticate() with SAM.
+
 Authenticates card master key and application key by using SAM This is an
  I/O operation and will block until complete. It must not be called from
  the main application thread. A blocked call will be canceled with

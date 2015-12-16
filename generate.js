@@ -19,10 +19,37 @@ var Metalsmith = require('metalsmith'),
     paths = require('metalsmith-paths'),
     codehighlight = require('metalsmith-code-highlight'),
     blc = require('metalsmith-broken-link-checker'),
+    headingsidentifier = require("metalsmith-headings-identifier"),
     Swag = require('swag');
 
 
 Swag.registerHelpers(Handlebars);
+
+var fileinsert = function(config) {
+    var pattern = new RegExp(config.pattern);
+
+    return function(files, metalsmith, done) {
+        for (var file in files) {
+            if (pattern.test(file) && files[file].path.ext == '.md') {
+                var _f = files[file];
+                if (typeof(_f.insert) !='undefined' ) {
+                    //console.log('trying to insert' + _f.insert.file + ':' + _f.url);
+                    if(typeof(files[_f.insert.file]) =='undefined'){
+                        console.log('ERROR INSERTING:' + _f.insert.file + ' INTO:' + _f.url)
+                    }
+                    else{
+                        _f.contents = files[_f.insert.file].contents;
+                        _f.title = files[_f.insert.file].title;
+                        
+                    }
+                    // console.log(_f);
+                }
+            }
+        }
+        done();
+    };
+};
+
 
 var defaultPublish = function(config) {
     var pattern = new RegExp(config.pattern);
@@ -156,6 +183,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(defaultPublish({
         pattern: '.*'
     }))
+    .use(fileinsert({
+        pattern: '.*'
+    }))
     .use(inplace({
       engine: 'handlebars',
       partials: 'partials',
@@ -262,10 +292,11 @@ var sitebuild = Metalsmith(__dirname)
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-0/api/PersonalShopper',
+        folder: 'emdk-for-android/4-0/api/personalshopper',
         automenu: true,
         ascontent: true
     }))
+    
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/scanandpair',
         automenu: true,
@@ -309,6 +340,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-2/'
     }))
     .use(showdown({}))
+    .use(headingsidentifier({
+        headingClass: "anchor"
+    }))
     .use(snippet({
       maxLength: 250,
       suffix: '...'

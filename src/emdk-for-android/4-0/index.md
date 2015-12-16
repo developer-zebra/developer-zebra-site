@@ -140,7 +140,9 @@ menu:
       - title: MX Overview
         url: /emdk-for-android/4-0/mx/overview
       - title: Choosing a Version
-        url: /emdk-for-android/4-0//mx/choosing-a-version
+        url: /emdk-for-android/4-0/mx/choosing-a-version
+      - title: Feature Compatibility
+        url: /emdk-for-android/4-0/mx/compatibility
       - title: Application Management
         url: /emdk-for-android/4-0/mx/app-management
         items:

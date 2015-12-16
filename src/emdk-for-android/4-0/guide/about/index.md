@@ -10,9 +10,23 @@ It also includes an exclusive Profile Manager Technology within the your IDE, pr
 ## Requirements
 The following software must be installed prior to using the EMDK for Android.
 
+**Windows:**
 * Microsoft Windows 7 (32-bit and 64-bit)  or Microsoft&copy; Windows 8 (32-bit and 64-bit) or Microsoft&copy; Windows 8.1 (32-bit and 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
 * Android Developer Tools (ADT) v22.3.0-887826 or higher
+* Android Studio 1.1.x or higher
+* Android Developer Tools (ADT) v22.3.0-887826 or higher - `support deprecated`
+* Installed via Android SDK manager
+	* The Android 4.1.2 (API 16) and the Android 4.4.2 (API 19) packages
+	* The Android SDK Build-tools rev.21.1.x or higher
+ 
+**Mac OS X:**
+* Yosemite (10.10.x) | (64-bit)  or El Capitan (10.11.x) | (64-bit)
+* Java for OS X 2014-00x or higher
+* Java Development Kit (JDK) v7u75 or higher
+* Installed via Android SDK manager 
+	* The Android 4.1.2 (API 16) and the Android 4.4.2 (API 19) packages
+	* The Android SDK Build-tools rev.21.1.x or higher
 
 
 ## Devices Supported
@@ -27,6 +41,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * TC55 - OS Update image v01.74.00 or higher (JellyBean)
 * TC55 - OS Update image v02.52.02 or higher (KitKat)
 * TC70 - OS Update image v11.24.14 or higher (KitKat)
+* TC70 - KitKat Rev B
 * TC75 - KitKat
 
 
@@ -78,7 +93,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * [SimulScan APIs](/emdk-for-android/4-0/api?SimulScan%20APIs) - data capture solution to extract critical data from documents
 * [Scan and Pair APIs](/emdk-for-android/4-0/api?ScanAndPair%20APIs) - easily pair to a bluetooth device through barcode scanning
 * [Continuous Trigger mode](/emdk-for-android/4-0/api/ScannerConfig?ScannerConfig.AimType) - new aim type supported for continuous trigger
-* [Name Value Pair API](/emdk-for-android/4-0/api/ProfileManager?CreateNameValuePair%28java.lang.String%2520emdkName%2C%2520java.lang.String%2520paramName%2C%2520java.lang.String%2520paramValue%29) - new method for ProfileManager
+* [Name Value Pair API](/emdk-for-android/4-0/api/ProfileManager?CreateNameValuePair) - new method for ProfileManager
 * [Extended EMDK Results Enum](/emdk-for-android/4-0/api/EMDKResults?EMDKResults.%E2%80%8BEXTENDED_STATUS_CODE) - Further details available when processing profiles
 * New Profile Manager Features
 	* [Browser Manager](/emdk-for-android/4-0/guide/profiles/browser)- configures web browser behavior

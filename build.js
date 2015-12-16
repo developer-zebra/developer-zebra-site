@@ -292,10 +292,11 @@ var sitebuild = Metalsmith(__dirname)
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-0/api/PersonalShopper',
+        folder: 'emdk-for-android/4-0/api/personalshopper',
         automenu: true,
         ascontent: true
     }))
+    
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/scanandpair',
         automenu: true,

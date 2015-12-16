@@ -3,7 +3,7 @@ title:  About EMDK For Android
 ---
 
 ## Overview
-The EMDK for Android provides developers with a comprehensive set of tools to easily create powerful line of business applications for enterprise mobile computing devices and is designed for use with Google's Android SDK and Android Development Tools (ADT). The EMDK for Android includes class libraries, sample applications with source code, as well as all of the associated documentation to help your applications take full advantage of what our devices have to offer.
+The EMDK for Android provides developers with a comprehensive set of tools to easily create powerful line of business applications for enterprise mobile computing devices and is designed for use with Google's Android SDK and Android Studio. The EMDK for Android includes class libraries, sample applications with source code, as well as all of the associated documentation to help your applications take full advantage of what our devices have to offer.
 
 It also includes an exclusive Profile Manager Technology within the your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.
 
@@ -67,45 +67,48 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* [Mobile Payment](/emdk-for-android/4-0/api/payment) - Provides API's to perform EMV and Magstripe Payment transactions when using the PD40 Payment device with MC40 JB, TC70 KK, TC75 KK and TC55 KK devices.
 	* [Serial Communication](/emdk-for-android/4-0/api/serialcomm) - Allows you to add DEX support in your application.
 
+* New Guides
+	* [Barcode Scanner States](/emdk-for-android/4-0/guide/scanner)
+
 **EMDK for Android v3.1 Update 1**
 
 * New Profile Manager Features
-	* [Audio Manager](/emdk-for-android/4-0/guide/profiles/audio)-  allows you to manage enhanced audio volume control configurations
-	* [Battery Manager](/emdk-for-android/4-0/guide/profiles/battery)- allows the developer to modify that Decommission Threshold from its factory setting
-	* [Component Manager](/emdk-for-android/4-0/guide/profiles/component)- allows you to manage the state of Components, such as a devices Ethernet Port
-	* [DHCP Manager](/emdk-for-android/4-0/guide/profiles/dhcp)- allows you to control various DHCP configuration options.
-	* [KeyMap Manager](/emdk-for-android/4-0/guide/profiles/keymap)- allows you to remap functionality of keys.
+	* Audio Manager -  allows you to manage enhanced audio volume control configurations
+	* Battery Manager - allows the developer to modify that Decommission Threshold from its factory setting
+	* Component Manager - allows you to manage the state of Components, such as a devices Ethernet Port
+	* DHCP Manager - allows you to control various DHCP configuration options.
+	* KeyMap Manager - allows you to remap functionality of keys.
 * New Device Support
 	* MC18 - KitKat
 	* MC40 - KitKat
 	* MC92 - KitKat
 * New API's
-	* [PersonalShopper APIs](/emdk-for-android/4-0/api?PersonalShopper) for MC18
-	* [NFC APIs](/emdk-for-android/4-0/api?SecureNfcManager)
+	* PersonalShopper APIs for MC18
+	* SecureNFC APIs
 * New Guides
-	* [Personal Shopper](/emdk-for-android/4-0/guide/personalshopper)
-	* [Secure NFC](/emdk-for-android/4-0/guide/securenfc)
+	* Personal Shopper](/emdk-for-android/4-0/guide/personalshopper)
+	* Secure NFC](/emdk-for-android/4-0/guide/securenfc)
 
 **EMDK for Android v3.1**
 
 * TC55 KitKat and TC75 KitKat are now supported
-* [Android Studio](/emdk-for-android/4-0/guide/setupAndroidStudio) - EMDK for Android is now fully supported in Android Studio
-* [SimulScan APIs](/emdk-for-android/4-0/api?SimulScan%20APIs) - data capture solution to extract critical data from documents
-* [Scan and Pair APIs](/emdk-for-android/4-0/api?ScanAndPair%20APIs) - easily pair to a bluetooth device through barcode scanning
-* [Continuous Trigger mode](/emdk-for-android/4-0/api/ScannerConfig?ScannerConfig.AimType) - new aim type supported for continuous trigger
-* [Name Value Pair API](/emdk-for-android/4-0/api/ProfileManager?CreateNameValuePair) - new method for ProfileManager
-* [Extended EMDK Results Enum](/emdk-for-android/4-0/api/EMDKResults?EMDKResults.%E2%80%8BEXTENDED_STATUS_CODE) - Further details available when processing profiles
+* Android Studio  - EMDK for Android is now fully supported in Android Studio
+* SimulScan APIs  - data capture solution to extract critical data from documents
+* Scan and Pair APIs  - easily pair to a bluetooth device through barcode scanning
+* Continuous Trigger mode  - new aim type supported for continuous trigger
+* Name Value Pair API  - new method for ProfileManager
+* Extended EMDK Results Enum  - Further details available when processing profiles
 * New Profile Manager Features
-	* [Browser Manager](/emdk-for-android/4-0/guide/profiles/browser)- configures web browser behavior
-	* [Camera Manager](/emdk-for-android/4-0/guide/profiles/camera)- control access to the cameras in the device
-	* [Cellular Manager](/emdk-for-android/4-0/guide/profiles/cellular)- configure options of the  cellular radio on your device
-	* [DevAdmin Manager](/emdk-for-android/4-0/guide/profiles/devadmin)-  manage configuration settings on the device
-	* [Display Manager](/emdk-for-android/4-0/guide/profiles/display)-  control the screen timeout value to conserve power
-	* [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt)-  set encryption policies
-	* [Powerkey Manager](/emdk-for-android/4-0/guide/profiles/powerkey)-  control which options appear on the power menu
-	* [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard)-  manage the use of the devices SD card
-	* [Threat Manager](/emdk-for-android/4-0/guide/profiles/threat)-  Control what security threats a device actively monitors
-* Support for Bluetooth scanners (RS507) in [Barcode API's](/emdk-for-android/4-0/api/BarcodeInterfaceConfig) 
+	* Browser Manager - configures web browser behavior
+	* Camera Manager - control access to the cameras in the device
+	* Cellular Manager - configure options of the  cellular radio on your device
+	* DevAdmin Manager -  manage configuration settings on the device
+	* Display Manager -  control the screen timeout value to conserve power
+	* Encrypt Manager -  set encryption policies
+	* Powerkey Manager -  control which options appear on the power menu
+	* SD Card Manager -  manage the use of the devices SD card
+	* Threat Manager -  Control what security threats a device actively monitors
+* Support for Bluetooth scanners (RS507) in Barcode API's 
 
 **EMDK For Android v3.0 Update 1**
 
@@ -115,25 +118,25 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 **EMDK For Android v3.0**
 
-* Native [Java Barcode Scanning APIs](/emdk-for-android/4-0/api)
-* New [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager) features:
-	* [Settings Manager](/emdk-for-android/4-0/guide/profiles/settings) - turn on/off ability to invoke Enterprise Reset in settings UI
-	* [Touch Manager](/emdk-for-android/4-0/guide/profiles/touch) - set the device's touch mode
-	* [UI Manager](/emdk-for-android/4-0/guide/profiles/ui) - configure clipboard behavior
-	* [USB Manager](/emdk-for-android/4-0/guide/profiles/usb) - manage USB configurations behavior
-	* [Wireless Manager](/emdk-for-android/4-0/guide/profiles/wireless) - enable or disable Bluetooth
-* Updated [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager) features:
-	* [Access Manager](/emdk-for-android/4-0/guide/profiles/access) - new Whitelist features
-	* [App Manager](/emdk-for-android/4-0/guide/profiles/app) - new Dynamic Protected List ability
-	* [Clock](/emdk-for-android/4-0/guide/profiles/clock) - new NTP server synchronization
+* Native Java Barcode Scanning APIs
+* New EMDK Profiles  features:
+	* Settings Manager  - turn on/off ability to invoke Enterprise Reset in settings UI
+	* Touch Manager  - set the device's touch mode
+	* UI Manager  - configure clipboard behavior
+	* USB Manager  - manage USB configurations behavior
+	* Wireless Manager - enable or disable Bluetooth
+* Updated EMDK Profiles  features:
+	* Access Manager  - new Whitelist features
+	* App Manager  - new Dynamic Protected List ability
+	* Clock - new NTP server synchronization
 * New Tutorials
-	* [Barcode Scanning API (Basic)](/emdk-for-android/4-0/tutorial/tutBasicScanningAPI)
-	* [Barcode Scanning API (Advanced)](/emdk-for-android/4-0/tutorial/tutAdvancedScanningAPI)
-	* [Invoke Enterprise Reset in Settings UI](/emdk-for-android/4-0/tutorial/tutMxSettingsManager)
-	* [Specify Touch Mode using Mx Touch Manager](/emdk-for-android/4-0/tutorial/tutMxTouchManager)
-	* [Configure Clipboard using Mx UI Manager](/emdk-for-android/4-0/tutorial/tutMxUIManager)
-	* [Manage USB Configurations](/emdk-for-android/4-0/tutorial/tutMxUSBManager)
-	* [Configure Bluetooth using Mx Wireless Manager](/emdk-for-android/4-0/tutorial/tutMxWirelessManager)
+	* Barcode Scanning API (Basic) 
+	* Barcode Scanning API (Advanced) 
+	* Invoke Enterprise Reset in Settings UI 
+	* Specify Touch Mode using Mx Touch Manager 
+	* Configure Clipboard using Mx UI Manager 
+	* Manage USB Configurations 
+	* Configure Bluetooth using Mx Wireless Manager 
 
 ## Components
 

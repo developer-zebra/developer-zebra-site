@@ -17,14 +17,14 @@ In order to develop Android applications with Android Studio or Eclipse, you mus
 
 ### Installing Java Development Kit (JDK) for Mac
 
-Installing Java for OS X 2014-00x:
+**Installing Java for OS X 2014-00x:**
 
 1. Go to https://support.apple.com/kb/dl1572?locale=en_US.
 	![img](/img/setup/mac/image1.png)
 
 2. Download and install Java for OS X 2014 (ex: JavaForOSX2014-001.dmg).
 
-Installing Java Development Kit (JDK) 7
+**Installing Java Development Kit (JDK) 7:**
 
 1. Go to http://www.oracle.com/technetwork/java/javase/downloads/index.html.
 
@@ -40,8 +40,11 @@ Android studio is now Google's official IDE for Android development. Using Andro
 
 
 
-###Eclipse-ADT bundle
-Since the 1.0 release of Android Studio, Google no longer offers the Eclipse based ADT bundle. However, the Eclipse IDE can be downloaded separately and the ADT can be installed as a plugin. The EMDK installer still supports the use of Eclipse to develop "EMDK for Android" applications.
+###Eclipse/ADT
+**Support for ADT/Eclipse has been deprecated**. Future versions of the EMDK for Android will only support Android Studio for development.
+Refer to this document( [Migrating to Android Studio](http://developer.android.com/sdk/installing/migrate.html) ) for more information on migrating your projects to Android Studio
+
+Although support has been deprecated, this version of the EMDK will integrate with Eclipse/ADT. 
 
 **Windows** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
 

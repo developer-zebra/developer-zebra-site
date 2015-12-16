@@ -2,6 +2,24 @@
 title: EMDK For Android Setup on Mac
 ---
 
+
+##Removing previous EMDK installations
+
+**Removing SDK add-ons**
+1. Navigate to the /Users/<user>/Library/Android/sdk/add-ons directory.
+2.Remove addon-symbol-emdk_v3.1_API-16/ addon-symbol-emdk_v3.1_API-19 folders.
+
+**Removing Wizard Core**
+1. Navigate to /Users/Shared directory.
+2. Remove Symbol EMDK for Android folder.
+
+**Removing Wizard plug-in**
+1. Launch Finder and go to Applications (on the left side panel)
+2. Locate Android Studio.app right click and select Show Package Contents.
+2. Locate the Contents\plugins directory.
+4. Remove the com.symbol.emdk.wizard.intellijIdea_3.1.xx folder.
+
+
 ##Installing Android Studio 1.1.x
 
 1. Go to http://developer.android.com/sdk/index.html.

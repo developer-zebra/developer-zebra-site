@@ -4,15 +4,15 @@ title:  Pairing with Bluetooth Scanning device using Bluetooth Scanner API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [Bluetooth Scanner API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs) introduced in EMDK V 3.1, to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of Bluetooth Scanner API.
+This guide will walk you through creating an EMDK For Android application that will use [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode) introduced in EMDK V 3.1, to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of Bluetooth Scanner API.
 
-> Note: The Bluetooth Scanner API is a part of [Barcode API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs).  
+> Note: The Bluetooth Scanner API is a part of [Barcode API](/emdk-for-android/4-0/api/barcode).  
 
 Initially, the Bluetooth Scanner is not connected to the device. So the Bluetooth Pairing Utility would turn ON the Bluetooth of the device where the app is running (Ex. TC55) if not already turned ON. Once that is done, the utility will ask you to scan a Barcode in the app using Bluetooth Scanner (Ex. RS507). After scanning the Barcode, the utility will start pairing process and pair the Bluetooth Scanning device (Ex. RS507) with your device where the app is running (Ex. TC55). 
 
-In this tutorial, we will explore the [Bluetooth Scanner API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs) by using it for developing a basic application that will pair the device with Bluetooth Scanner by allowing Bluetooth Scanner to scan the Barcode in the app through Bluetooth Pairing Utility.
+In this tutorial, we will explore the [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode) by using it for developing a basic application that will pair the device with Bluetooth Scanner by allowing Bluetooth Scanner to scan the Barcode in the app through Bluetooth Pairing Utility.
 
-> Note: The [Bluetooth Scanner API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs) does not use Profile Wizard to pair with Bluetooth Scanner and everything needs to be configured programmatically through code.   
+> Note: The [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode) does not use Profile Wizard to pair with Bluetooth Scanner and everything needs to be configured programmatically through code.   
         
 ###Prerequisites
 
@@ -387,7 +387,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 	![img](/img/BluetoothScannerTutorialImages/on_closed.jpg)
   
       	
-That's it!!! We are done with all the coding part that will let us perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs) introduced in EMDK V 3.1. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode) introduced in EMDK V 3.1. Now let us run the application.
  
 ## Running the Application
 
@@ -426,7 +426,7 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 
 	![img](/img/BluetoothScannerTutorialImages/devices_paired.png)
 
-9. You can see RS507 under Paired devices that further confirms pairing. This is how we can perform pairing of Mobile device (Ex. TC55) with Bluetooth Scanning device (Ex. RS507) using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs)   
+9. You can see RS507 under Paired devices that further confirms pairing. This is how we can perform pairing of Mobile device (Ex. TC55) with Bluetooth Scanning device (Ex. RS507) using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode)   
 
 ##Important Programming Tips##
 
@@ -448,7 +448,7 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 
 
 ## What's Next
-Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/guide/reference/EMDKList?Barcode%20APIs), in the next tutorial we would concentrate on [ScanAndPair APIs]((../guide/reference/EMDKList?ScanAndPair%20APIs)) and develop an application to demonstrate its use. 
+Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode), in the next tutorial we would concentrate on [ScanAndPair APIs]((../api/scanandpair)) and develop an application to demonstrate its use. 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)]().

@@ -143,7 +143,6 @@ In the ProfileManager API, you will see three methods for `processProfile`. Esse
 * **String** - data will be handled as a raw string.
 * **ProfileConfig** - data will be handled as a ProfileConfig class.
 
->WARNING!: The preferred way is to use the `ProfileConfig` option and the examples below present using such option. Using the Document or String methods may not work if the XML is not structured properly. See usage notes below for more information about using these methods.
 
 ###Creating or Activating a Profile
 A profile is created or activated with using the PROFILE_FLAG.SET option. If the profileFlag is set to SET, and if the given profile is not available, it will look for a valid profile in the extraData argument and if present, the profile  will be added to the internal XML volatile repository and also applied to the device.  If the profile is present, then it will be applied to the device.

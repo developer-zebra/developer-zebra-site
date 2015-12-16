@@ -4,15 +4,15 @@ title:  Capture critical data from documents using SimulScan API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [SimulScan APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) introduced in EMDK V 3.1, to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
+This guide will walk you through creating an EMDK For Android application that will use [SimulScan APIs](/emdk-for-android/4-0/api/simulscan) introduced in EMDK V 3.1, to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
 
-Different ways of capturing data from documents using [SimulScan API](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) are:
+Different ways of capturing data from documents using [SimulScan API](/emdk-for-android/4-0/api/simulscan) are:
 
 * **Barcode** - Productivity gain by decoding multiple bar codes read with a single trigger pull.
 * **OCR (Optical Character Recognition)** - Automated data entry with character recognition [OCR].
 * **OMR (Optical Mark Recognition)** - Simplified workflow exceptions with checked mark recognition [OMR] and Signature presence detection.
 
-We discussed [SimulScan API](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) is used to capture above mentioned different types of data from documents. But what types of documents are these? Well, these documents are treated as templates where you know the position of the data that you need to capture. You mark positions of the data of your interest on a template and once you capture the document, SimulScan API would access to data at the positions you mentioned on the template.
+We discussed [SimulScan API](/emdk-for-android/4-0/api/simulscan) is used to capture above mentioned different types of data from documents. But what types of documents are these? Well, these documents are treated as templates where you know the position of the data that you need to capture. You mark positions of the data of your interest on a template and once you capture the document, SimulScan API would access to data at the positions you mentioned on the template.
 
 **Templates:**
 
@@ -36,7 +36,7 @@ If the required number of fields are more, it could be painful to capture each a
 
 **Solution:**
 
-[SimulScan API](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) could come really handy here as it captures upto 10 barcodes in less than one second. So we will now create a tutorial that would use above form image to create a template and use this template to capture marked fields from that document populating on UI using [SimulScan APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs). This will let you know how to create your own template for capturing different fields from any particular document.
+[SimulScan API](/emdk-for-android/4-0/api/simulscan) could come really handy here as it captures upto 10 barcodes in less than one second. So we will now create a tutorial that would use above form image to create a template and use this template to capture marked fields from that document populating on UI using [SimulScan APIs](/emdk-for-android/4-0/api/simulscan). This will let you know how to create your own template for capturing different fields from any particular document.
  
         
 ###Prerequisites
@@ -739,7 +739,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	![img](/img/SimulScanTutorialImages/on_closed.jpg)  	       
       	
-	That's it!!! We are done with all the coding and configuration part that will let us scan the template stored in sdcard and display fields that we marked in the template, on Symbol device UI using [SimulScan APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) introduced in EMDK V 3.1. Now let us run the application.
+	That's it!!! We are done with all the coding and configuration part that will let us scan the template stored in sdcard and display fields that we marked in the template, on Symbol device UI using [SimulScan APIs](/emdk-for-android/4-0/api/simulscan) introduced in EMDK V 3.1. Now let us run the application.
  
 ## Running the Application
 
@@ -780,7 +780,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	![img](/img/SimulScanTutorialImages/parsed_data.png)
 
-	This illustrates how to access critical fields from a document using [SimulScan APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) by creating its template from the [Template Builder](https://simulscan.zebra.com).
+	This illustrates how to access critical fields from a document using [SimulScan APIs](/emdk-for-android/4-0/api/simulscan) by creating its template from the [Template Builder](https://simulscan.zebra.com).
 
 
 ##Important Programming Tips##

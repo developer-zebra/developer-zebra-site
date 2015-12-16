@@ -13,7 +13,7 @@ title:  Configuring A Device
 4.	This process will deploy the device runtime and reboot automatically to finish the OS update.
 
 ###MAC
-1. Open finder and copy EmdkOSUpdateApp_v3.1.xx.apk into the ADB directory.
+1. Open finder and copy EmdkOSUpdateApp_v4.0.2.apk into the ADB directory.
 
 	`/Users/<user>/Library/Android/sdk/platform-tools/`
 
@@ -29,7 +29,7 @@ title:  Configuring A Device
 
 4. Install EMDK OS Update App.
 
-	`./adb install EmdkOSUpdateApp_v3.1.xx.apk`
+	`./adb install EmdkOSUpdateApp_v4.0.2.apk`
 
 5. Run EMDK OS Update App.
 

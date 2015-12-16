@@ -45,7 +45,7 @@ and the Intent category must be:
 ## EMDK Intent Output
 Allows configuration of the Intent Feature for the profile. The Intent Output Feature allows the captured data to be sent to an application in the form of an implicit Intent. Refer to the Android Developer web site for more information, http://developer.android.com.
 
-* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/4-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/4-0/guide/profiles/usingwizard) for more information.
+* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/4-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/4-0/guide/profile-manager) for more information.
 * Enabled - Enables or disables this feature. 
 * Intent action - Enter the Intent Action name (required). The Intent Filter action must match this.
 * Intent category - Enter the Intent Category name (required). The Intent Filter category must match this.

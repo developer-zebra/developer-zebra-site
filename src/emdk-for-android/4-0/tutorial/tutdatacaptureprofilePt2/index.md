@@ -12,7 +12,7 @@ The tutorial uses EMDK V 2.1 that has organized existing features as well as got
 * Java Development Kit (JDK)
 * Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
 * EMDK for Android 
-* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofile)
+* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile)
 
 For more information about setting up the EMDK please see the EMDK Overview.
 
@@ -216,7 +216,7 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 
 ## What's Next
-The [next tutorial](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
+The [next tutorial](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCaptureProfiles-Using+Intent+Output.zip).

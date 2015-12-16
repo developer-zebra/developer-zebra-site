@@ -4,9 +4,9 @@ title:  Advanced Scanning Tutorial using Barcode API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0, to perform some of the additional options along with Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager), which is the primary object to access barcode scanning feature. 
+This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0, to perform some of the additional options along with Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager), which is the primary object to access barcode scanning feature. 
 
-In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/4-0/guide/reference/EMDKList) by using some of its features for developing an advanced application that will scan barcodes. The application focuses on scanning the barcodes using soft scan trigger, which would be a button that we are going to use in the application itself and not the hard scan trigger on the device.
+In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/4-0/api) by using some of its features for developing an advanced application that will scan barcodes. The application focuses on scanning the barcodes using soft scan trigger, which would be a button that we are going to use in the application itself and not the hard scan trigger on the device.
 
 > Note: You don't need the Profile Wizard while using the Barcode/Scanning APIs as everything could be configured programmatically through code.
 
@@ -1078,7 +1078,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     ![img](/img/AdvancedScanningTutorialImages/on_closed_method.jpg)
 	
-That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0. Now let us run the application.
  
 ## Running the Application
 
@@ -1119,7 +1119,7 @@ It will display a success toast when the changes are applied each time you chang
 
 	![img](/img/AdvancedScanningTutorialImages/final_scan.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Symbol devices without using Profile Wizard. 
+    This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Symbol devices without using Profile Wizard. 
 
 ##Important Programming Tips##
 

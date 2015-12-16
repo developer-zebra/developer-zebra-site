@@ -4,9 +4,9 @@ title:  Basic Scanning Tutorial using Barcode API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0, to perform Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager), which is the primary object to access barcode scanning feature. 
+This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0, to perform Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/4-0/api/BarcodeManager), which is the primary object to access barcode scanning feature. 
 
-In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/4-0/guide/reference/EMDKList) by using it for developing a basic application that will scan barcodes.
+In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/4-0/api) by using it for developing a basic application that will scan barcodes.
 
 > Note: You don't need the Profile Wizard while using the Barcode/Scanning APIs as everything could be configured programmatically through code.   
         
@@ -484,7 +484,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     ![img](/img/BasicScanningTutorialImages/on_closed_method.jpg)
 	
-That's it!!! We are done with all the coding part that will let us scan the barcodes of configured decoder params on Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us scan the barcodes of configured decoder params on Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0. Now let us run the application.
  
 ## Running the Application
 
@@ -507,7 +507,7 @@ That's it!!! We are done with all the coding part that will let us scan the barc
 
     ![img](/img/BasicScanningTutorialImages/status_idle.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) introduced in EMDK V 3.0 can be used to perform Basic Scanning operations on your Symbol devices without using Profile Wizard. We will see the [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) in depth to perform advanced scanning operations in the next tutorial. 
+    This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0 can be used to perform Basic Scanning operations on your Symbol devices without using Profile Wizard. We will see the [Barcode/Scanning APIs](/emdk-for-android/4-0/api) in depth to perform advanced scanning operations in the next tutorial. 
 
 ##Important Programming Tips##
 
@@ -530,7 +530,7 @@ That's it!!! We are done with all the coding part that will let us scan the barc
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList) in depth and use it to perform advanced scanning operations by creating a tutorial.
+Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/4-0/api) in depth and use it to perform advanced scanning operations by creating a tutorial.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BasicScanningTutorial.zip).

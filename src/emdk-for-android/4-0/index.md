@@ -13,7 +13,7 @@ menu:
       - title: Build Hello EMDK
         url: /emdk-for-android/4-0/tutorial/tutdatacaptureprofile
       - title: EMDK Profiles Overview
-        url: /emdk-for-android/4-0/guide/profiles/usingwizard
+        url: /emdk-for-android/4-0/guide/profile-manager
   - title: Tutorials
     items:
       - title: Profile Manager
@@ -138,7 +138,7 @@ menu:
       - title: Profile Features
         url: /emdk-for-android/4-0/mx
       - title: MX Overview
-        url: /emdk-for-android/4-0//mx/overview
+        url: /emdk-for-android/4-0/mx/overview
       - title: Choosing a Version
         url: /emdk-for-android/4-0//mx/choosing-a-version
       - title: Application Management

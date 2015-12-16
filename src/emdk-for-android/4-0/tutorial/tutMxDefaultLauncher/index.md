@@ -63,7 +63,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 
 ## Adding The AppManager Profile 
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/4-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "DefaultLauncherProfile" as the Profile Name for this tutorial.
 

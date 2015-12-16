@@ -14,8 +14,6 @@ The following software must be installed prior to using the EMDK for Android.
 * Java Development Kit (JDK) v7u45 or higher
 * Android Developer Tools (ADT) v22.3.0-887826 or higher
 
-###Android Studio
-Since Google released Android Studio, the ADT bundle is no longer available for download. You can still however use the ADT plugin for Eclipse with full EMDK For Android integration.  Users of Android Studio now have full access to the EMDK features as well. Check the [Setup Guide](/emdk-for-android/4-0/guide/setup) for more details on how to use the EMDK in your preferred IDE.
 
 ## Devices Supported
 Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
@@ -33,6 +31,26 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 
 ## What's New
+**EMDK for Android v4.0**
+
+* IDE Support
+	* **Support for ADT/Eclipse has been deprecated**. Future versions of the EMDK for Android will only support Android Studio for development. 
+
+* New Profile Manager Features
+	* [Multipule MX version support](/emdk-for-android/4-0/guide/profile-manager) - Profile manager now supports multiple MX versions. You can now choose between  MX 4.2, 4.4 and 5.0 when creating a new profile.
+	* [Profile Upgrade](/emdk-for-android/4-0/guide/profile-manager) - Profile manager now provides a method to upgrade an existing profile to use a higher version of MX.
+	* [Data Capture Activity Selection Wildcard](/emdk-for-android/4-0/mx/data-capture/activity) - When using an Activity Selector in a Data Capture profile and wish to include all activities in an application package, you no longer have to manually enter each activity. You can now enter a single asterisk ( \* ) and all activities in that package will be selected. 
+	* New MX 4.4 features
+		* Additional Locale support for SPANISH, US_SPANISH, BRAZILIAN PORTUGUESE and PORTUGUESE.
+		* Password Masking / Encryption for sensitive values in Certificate Manager and GPRS Manager.
+	* New MX 5.0 features
+		* PAC File – Allows the central control of proxy settings for KitKat devices
+		* Screen Capture Control – Enable / Disable ability to perform a screen capture
+		* Vendor Specific DHCP Options – Supports vendor specific options for granular configuration control
+
+* New API's
+	* [Mobile Payment](/emdk-for-android/4-0/api/payment) - Provides API's to perform EMV and Magstripe Payment transactions when using the PD40 Payment device with MC40 JB, TC70 KK, TC75 KK and TC55 KK devices.
+	* [Serial Communication](/emdk-for-android/4-0/api/serialcomm) - Allows you to add DEX support in your application.
 
 **EMDK for Android v3.1 Update 1**
 
@@ -47,8 +65,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* MC40 - KitKat
 	* MC92 - KitKat
 * New API's
-	* [PersonalShopper APIs](/emdk-for-android/4-0/guide/reference/EMDKList?PersonalShopper) for MC18
-	* [NFC APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SecureNfcManager)
+	* [PersonalShopper APIs](/emdk-for-android/4-0/api?PersonalShopper) for MC18
+	* [NFC APIs](/emdk-for-android/4-0/api?SecureNfcManager)
 * New Guides
 	* [Personal Shopper](/emdk-for-android/4-0/guide/personalshopper)
 	* [Secure NFC](/emdk-for-android/4-0/guide/securenfc)
@@ -57,8 +75,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 * TC55 KitKat and TC75 KitKat are now supported
 * [Android Studio](/emdk-for-android/4-0/guide/setupAndroidStudio) - EMDK for Android is now fully supported in Android Studio
-* [SimulScan APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) - data capture solution to extract critical data from documents
-* [Scan and Pair APIs](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs) - easily pair to a bluetooth device through barcode scanning
+* [SimulScan APIs](/emdk-for-android/4-0/api?SimulScan%20APIs) - data capture solution to extract critical data from documents
+* [Scan and Pair APIs](/emdk-for-android/4-0/api?ScanAndPair%20APIs) - easily pair to a bluetooth device through barcode scanning
 * [Continuous Trigger mode](/emdk-for-android/4-0/api/ScannerConfig?ScannerConfig.AimType) - new aim type supported for continuous trigger
 * [Name Value Pair API](/emdk-for-android/4-0/api/ProfileManager?CreateNameValuePair%28java.lang.String%2520emdkName%2C%2520java.lang.String%2520paramName%2C%2520java.lang.String%2520paramValue%29) - new method for ProfileManager
 * [Extended EMDK Results Enum](/emdk-for-android/4-0/api/EMDKResults?EMDKResults.%E2%80%8BEXTENDED_STATUS_CODE) - Further details available when processing profiles
@@ -78,42 +96,43 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 * TC70 Support - Our first KitKat supported device
 * EMDK for Android Device Runtime Update v3.0.4
-* [Help Update](/emdk-for-android/4-0/guide/abouthelp) - Instructions for updating your local documentation
+
 
 **EMDK For Android v3.0**
 
-* Native [Java Barcode Scanning APIs](/emdk-for-android/4-0/guide/reference/EMDKList)
-* New [EMDK Profiles](/emdk-for-android/4-0/guide/profiles/usingwizard) features:
+* Native [Java Barcode Scanning APIs](/emdk-for-android/4-0/api)
+* New [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager) features:
 	* [Settings Manager](/emdk-for-android/4-0/guide/profiles/settings) - turn on/off ability to invoke Enterprise Reset in settings UI
 	* [Touch Manager](/emdk-for-android/4-0/guide/profiles/touch) - set the device's touch mode
 	* [UI Manager](/emdk-for-android/4-0/guide/profiles/ui) - configure clipboard behavior
 	* [USB Manager](/emdk-for-android/4-0/guide/profiles/usb) - manage USB configurations behavior
 	* [Wireless Manager](/emdk-for-android/4-0/guide/profiles/wireless) - enable or disable Bluetooth
-* Updated [EMDK Profiles](/emdk-for-android/4-0/guide/profiles/usingwizard) features:
+* Updated [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager) features:
 	* [Access Manager](/emdk-for-android/4-0/guide/profiles/access) - new Whitelist features
 	* [App Manager](/emdk-for-android/4-0/guide/profiles/app) - new Dynamic Protected List ability
 	* [Clock](/emdk-for-android/4-0/guide/profiles/clock) - new NTP server synchronization
 * New Tutorials
 	* [Barcode Scanning API (Basic)](/emdk-for-android/4-0/tutorial/tutBasicScanningAPI)
-	* [Barcode Scanning API (Advanced)](/emdk-for-android/4-0/guide/tutorial/tutAdvancedScanningAPI)
-	* [Invoke Enterprise Reset in Settings UI](/emdk-for-android/4-0/guide/tutorial/tutMxSettingsManager)
-	* [Specify Touch Mode using Mx Touch Manager](/emdk-for-android/4-0/guide/tutorial/tutMxTouchManager)
-	* [Configure Clipboard using Mx UI Manager](/emdk-for-android/4-0/guide/tutorial/tutMxUIManager)
-	* [Manage USB Configurations](/emdk-for-android/4-0/guide/tutorial/tutMxUSBManager)
-	* [Configure Bluetooth using Mx Wireless Manager](/emdk-for-android/4-0/guide/tutorial/tutMxWirelessManager)
+	* [Barcode Scanning API (Advanced)](/emdk-for-android/4-0/tutorial/tutAdvancedScanningAPI)
+	* [Invoke Enterprise Reset in Settings UI](/emdk-for-android/4-0/tutorial/tutMxSettingsManager)
+	* [Specify Touch Mode using Mx Touch Manager](/emdk-for-android/4-0/tutorial/tutMxTouchManager)
+	* [Configure Clipboard using Mx UI Manager](/emdk-for-android/4-0/tutorial/tutMxUIManager)
+	* [Manage USB Configurations](/emdk-for-android/4-0/tutorial/tutMxUSBManager)
+	* [Configure Bluetooth using Mx Wireless Manager](/emdk-for-android/4-0/tutorial/tutMxWirelessManager)
 
 ## Components
 
 ### Profile Manager
-The EMDK's exclusive [Profile Manager](/emdk-for-android/4-0/guide/profiles/usingwizard) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.   
+The EMDK's exclusive [Profile Manager](/emdk-for-android/4-0/guide/profile-manager) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.   
+
 ### EMDK Device Runtime
-In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Programmers Guide](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofile) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
+In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Setup Guide](/emdk-for-android/4-0/guide/setupDevice) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
 
 ### Samples & Programmer's Guide
-There are sample projects that are included as part of the EMDK For Android installation. You can import the project into Eclipse and run on your device. Look at the [Sample Guide](/emdk-for-android/4-0/guide/sample/sampledatacaptureprofile) for more details on using these samples. You can also reference the [Programmers Guide](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofile) for a complete walk-through of building your first EMDK For Android application.
+There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](/emdk-for-android/4-0/samples/) for more details on using these samples. You can also reference the [Programmers Guide](/emdk-for-android/4-0/tutorial/) for a complete walk-through of building your first EMDK For Android application.
 
 ### Java APIs
-The EMDK for Android offers access to the device's Barcode capabilities through [traditional native Java Barcode APIs](/emdk-for-android/4-0/guide/reference/EMDKList). Be sure to look at the [Barcode Scanning API tutorial.](/emdk-for-android/4-0/guide/tutorial/tutBasicScanningAPI)
+The EMDK for Android offers access to the device's Barcode capabilities through [traditional native Java Barcode APIs](/emdk-for-android/4-0/api). Be sure to look at the [Barcode Scanning API tutorial.](/emdk-for-android/4-0/tutorial/tutBasicScanningAPI)
 
 ### Intent APIs
 The EMDK for Android will continue to support the [DataCapture](/emdk-for-android/4-0/guide/reference/refdatacaptureintent) and [Battery Intent](/emdk-for-android/4-0/guide/reference/refbatteryintent) APIs that were previously available on individual device types. 

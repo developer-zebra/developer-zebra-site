@@ -46,6 +46,9 @@ Please read the terms of this "End User License Agreement" (the "Agreement") car
 -->
 
 ## Latest Release
+
+
+## Previous Releases
 <ul>
 <li><a href='https://s3.amazonaws.com/emdk/EMDK-A-030109-UP1B.exe'>EMDK 3.1 Update 1 - Windows Installation</a></li>
 <li><a href="https://s3.amazonaws.com/emdk/ReleaseNotesEMDKforAndroidv3.1.html">Release Notes</a></li>
@@ -53,8 +56,6 @@ Please read the terms of this "End User License Agreement" (the "Agreement") car
 <li><a href='https://s3.amazonaws.com/emdk/EMDK.Docs.Latest.zip'>Offline Help Docs</a></li>
 
 </ul>
-
-## Previous Releases
 <ul>
 <li><a href='https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-030109.exe'>EMDK 3.1</a></li>
 <li><a href='https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-030004-UP1B.exe'>EMDK 3.0 - Update 1</a></li>

@@ -14,7 +14,7 @@ title:  Configuring A Device
 
 ###MAC
 >Note: Please substitute the current version of the EmdkOSUpdateApp APK when EmdkOSUpdateApp_vX.X.X.apk is referenced.
-
+d
 1. Open finder and copy EmdkOSUpdateApp_vX.X.X.apk  into the ADB directory.
 
 	`/Users/<user>/Library/Android/sdk/platform-tools/`

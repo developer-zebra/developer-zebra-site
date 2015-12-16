@@ -33,7 +33,7 @@ This tutorial helps you creating a new Android application project using [Androi
 	![img](/img/CreatingProjectAndroidStudioImages/app_name.jpg)
 
 
-5. Select `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` depending on the project/EMDK feature requirement and click "Next".
+5. Select `EMDK 4.0 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 4.0 (API 19) (Symbol Technologies, Inc.) (API 19)` depending on the project/EMDK feature requirement and click "Next".
 
 	![img](/img/CreatingProjectAndroidStudioImages/select_minimum_sdk.jpg)
 

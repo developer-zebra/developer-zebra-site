@@ -51,13 +51,12 @@ To check which API's you have installed:
 
 
 ### Installing EMDK for Android
->NOTE: Before installing EMDK For Android Update 1, you must first install the full version, EMDK for Android v3.1 [EMDK-A-030109.exe]. To Obtain v3.1, go to [http://portal.zebra.com/Support/US-EN](http://portal.zebra.com/Support/US-EN), and search for `EMDK for Android` using Search Support. Download Version 3.1. Then follow the steps below:
 
-###Install version 3.1
+###Install version 4.0
 
 `If you already have v3.1 installed, skip to Install version 3.1 Update 1 below.`
 
-1. Run the EMDK 3.1 Installer as Administrator, Then Click Next.
+1. Run the EMDK 4.0 Installer as Administrator, Then Click Next.
 
 	![img](/img/setup/emdkInstall01.png)
 
@@ -78,7 +77,7 @@ To check which API's you have installed:
 > NOTE: If you are installing the EMDK into a standalone version of Eclipse that has the ADT plugin installed Skip to STEP #7
 
 	![img](/img/setup/emdkInstall09.png)
-6. Select the root folder of your ADT Bundle installation buy clicking Browse, then Click Install.
+6. Select the root folder of your ADT Bundle installation b clicking Browse, then Click Install.
 
 	![img](/img/setup/emdkInstall10.png)
 
@@ -90,27 +89,7 @@ To check which API's you have installed:
 
 	![img](/img/setup/emdkInstall12.png)
 
-###Install version 3.1 Update 1
 
-1. Run the EMDK 3.1 Update 1 Installer as Administrator, Then Click **Next >**.
-
-	![img](/img/setup/install31UD1_AS_1.png)
-
-2. Backup your samples, or select **Next >** to Continue.
-
-	![img](/img/setup/install31UD1_AS_2.png)
-
-3. Click **I Agree** after reading the License Agreement to continue the installation.
-
-	![img](/img/setup/install31UD1_AS_3.png)
-
-4. When instalation completes, select **Next >**
-
-	![img](/img/setup/install31UD1_AS_5.png)
-
-5. Then select **Finish**
-
-	![img](/img/setup/install31UD1_AS_6.png)
 
 ## Verifying EMDK for Android Development Environment
 

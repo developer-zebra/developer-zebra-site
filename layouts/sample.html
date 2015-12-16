@@ -9,8 +9,49 @@
                     </p>
                 </div>
                 <div class="col-sm-3 text-right">
-        			<a class="btn btn-primary" href="{{{ download }}}"><i class="fa fa-download"></i> Download</a>
-        			<a class="btn btn-primary" href="{{{ source }}}"><i class="fa fa-github"></i> Source</a>
+		            {{#if download}}
+		            <a class="btn btn-primary" href="{{{ download }}}"><i class="fa fa-download"></i> Download</a>
+		            {{/if}}
+		            {{#if downloads}}
+		            <a class="btn btn-primary" data-html="true" data-popover-content="#download"
+		            data-placement="bottom" data-toggle="popover" >
+    				<i class="fa fa-download"></i> Download</a>
+		            {{/if}}
+		            {{#if source}}
+		            <a class="btn btn-primary" href="{{{ source }}}"><i class="fa fa-github"></i> Source</a>
+		            {{/if}}
+		            {{#if sources}}
+		            <a class="btn btn-primary" data-html="true" data-popover-content="#source"
+		            data-placement="bottom" data-toggle="popover" >
+    				<i class="fa fa-github"></i> Source</a>
+		            {{/if}}
+
+					<div class="hidden" id="download">
+						<div class="popover-heading">
+						    Available Downloads
+						</div>
+
+						<div class="popover-body">
+						<ul class="nav nav-pills">
+						{{#each downloads}}
+  							<li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
+						{{/each}}
+						</ul>
+						</div>
+					</div>
+					<div class="hidden" id="source">
+						<div class="popover-heading">
+						    Available Source 
+						</div>
+
+						<div class="popover-body">
+						<ul class="nav nav-pills">
+						{{#each sources}}
+  							<li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
+						{{/each}}
+						</ul>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
@@ -70,5 +111,20 @@
             </div>
         </div>
     </section>    
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("[data-toggle=popover]").popover({
+	        html : true,
+	        content: function() {
+	          var content = $(this).attr("data-popover-content");
+	          return $(content).children(".popover-body").html();
+	        },
+	        title: function() {
+	          var title = $(this).attr("data-popover-content");
+	          return $(title).children(".popover-heading").html();
+	        }
+	    });
+	});
+</script>
 {{> footer}}
 

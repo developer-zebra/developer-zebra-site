@@ -19,6 +19,7 @@ var Metalsmith = require('metalsmith'),
     paths = require('metalsmith-paths'),
     codehighlight = require('metalsmith-code-highlight'),
     blc = require('metalsmith-broken-link-checker'),
+    headingsidentifier = require("metalsmith-headings-identifier"),
 	Swag = require('swag');
 
 
@@ -338,6 +339,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-2/'
     }))
     .use(showdown({}))
+    .use(headingsidentifier())
     .use(snippet({
       maxLength: 250,
       suffix: '...'

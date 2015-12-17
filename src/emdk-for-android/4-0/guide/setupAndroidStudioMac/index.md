@@ -20,7 +20,7 @@ title: EMDK For Android Setup on Mac
 4. Remove the com.symbol.emdk.wizard.intellijIdea_3.1.xx folder.
 
 
-##Installing Android Studio 1.1.x
+##Installing Android Studio 
 
 1. Go to http://developer.android.com/sdk/index.html.
 
@@ -52,7 +52,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 
 ###How to determine which API platforms are installed in Android Studio
 
-1. Launch Android Studio from Start Programs
+1. Launch Android Studio from Applications
 2. Go to Tools / Android / SDK Manager
 3. Check that the status of Android 4.1.2 (API 16) and Android 4.4.2 (API 19) SDK Platforms is "Installed".
 4. If either SDK platform is not installed check the SDK check mark, click Install Packages, and follow the on screen instructions. When the install is complete, restart Android Studio.

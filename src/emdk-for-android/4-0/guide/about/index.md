@@ -13,7 +13,6 @@ The following software must be installed prior to using the EMDK for Android.
 **Windows:**
 * Microsoft Windows 7 (32-bit and 64-bit)  or Microsoft&copy; Windows 8 (32-bit and 64-bit) or Microsoft&copy; Windows 8.1 (32-bit and 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
-* Android Developer Tools (ADT) v22.3.0-887826 or higher
 * Android Studio 1.1.x or higher
 * Android Developer Tools (ADT) v22.3.0-887826 or higher - `support deprecated`
 * Installed via Android SDK manager

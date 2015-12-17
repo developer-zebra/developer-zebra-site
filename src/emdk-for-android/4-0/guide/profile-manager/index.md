@@ -136,7 +136,7 @@ Profile Manager is an exclusive EMDK technology offered within your IDE, providi
 ##Using the Profile Manager API
 Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/4-0/api/core). These profiles will NOT be applied on the device until it is processed using these APIs.
 
-### Multiple Ways to Access
+## Multiple Ways to Access
 In the ProfileManager API, you will see three methods for `processProfile`. Essentially the last parameter, `extraData`, is one of three types:
 
 * **Document** - data will be handled as a XML Document.
@@ -144,7 +144,7 @@ In the ProfileManager API, you will see three methods for `processProfile`. Esse
 * **ProfileConfig** - data will be handled as a ProfileConfig class.
 
 
-###Creating or Activating a Profile
+##Creating or Activating a Profile
 A profile is created or activated with using the PROFILE_FLAG.SET option. If the profileFlag is set to SET, and if the given profile is not available, it will look for a valid profile in the extraData argument and if present, the profile  will be added to the internal XML volatile repository and also applied to the device.  If the profile is present, then it will be applied to the device.
 
 > Note: The following example uses ProfileConfig object, which is currently only available for DataCapture profile features.
@@ -163,7 +163,7 @@ A profile is created or activated with using the PROFILE_FLAG.SET option. If the
         EMDKResults results = profileManager.processProfile("ProfileName", ProfileManager.PROFILE_FLAG.SET, profileConfigObj);
     }  
 
-###Getting a Profile
+##Getting a Profile
 If profileFlag is set to GET and if the profile is present in the internal repository, it will be returned in the extraData object.
 
 > Note: The following example uses ProfileConfig object, which is currently only available for DataCapture profile features.
@@ -182,7 +182,7 @@ If profileFlag is set to GET and if the profile is present in the internal repos
         EMDKResults results = profileManager.processProfile("ProfileName", ProfileManager.PROFILE_FLAG.GET, profileConfigObj);
     }  
 
-###Modifying a Profile
+##Modifying a Profile
 To modify a profile, you would:
 
 * Use the PROFILE_FLAG.GET option to retrieve the profile (if it exists).
@@ -211,16 +211,16 @@ To modify a profile, you would:
 
 ## Usage Notes
 
-### Getting Started with Tutorial
+## Getting Started with Tutorial
 This is an overview of how you can create and integrate Profiles using EMDK Profile Manager. Click [here](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile) to get started with a detailed tutorial on Data Capture Profiles to understand better.  
 
-### Multiple Instance of Features
+## Multiple Instance of Features
 There should only be one instance of the DataCapture feature. The EMDK Profile Manager will not allow you to add multiple DataCapture features, but may happen if you are manually editing the EMDKConfig.xml. Other profile features can have multiple instances and may be required in some cases. For example, you may need two 'Certificate Manager' features. The first one to initialize the certificate store and the second one to install a new certificate.
 
-### Order of Features
+## Order of Features
 The profile features will be applied synchronously in the order they appear. For example, you may want to set the clock before you attempt to connect to a Wi-Fi network.
 
-### extraData as XML String
+## extraData as XML String
 The processProfile method has an overload method that allows sending XML content in the `extraData` parameter as a String.  
 
 Method Signature:
@@ -235,7 +235,7 @@ Method Signature:
 2. `[profileName]/[featureType]/[feature friendly name in profile parameters]` to just edit part of the profile. For example, if my profile is called 'Profile1' and the name I gave to the Clock feature is 'ckEST'. Passing 'profileName' as 'Profile1/Clock/ckEST' will just process this part of the profile.
 	* Valid `[featureType]`:	ActivitySelection, Barcode, MSR, Intent, Keystroke, IP, Clock, PowerMgr, PersistMgr, CertMgr, AppMgr, AccessMgr, Wi-Fi, GprsMgr
 
-#### XML String Structure
+## XML String Structure
 One way you can see how this XML string should be structured is to use the Profile Manager in Eclipse.
 
 1. Open any project in Eclipse that does not have a EMDK profile defined already (so you get just the parameters you want to change).
@@ -249,7 +249,7 @@ One way you can see how this XML string should be structured is to use the Profi
 
 > WARNING!: XML parm names and values may not be the same as what is presented in the Profile Manager wizard. Pay close attention to the fields of interest. It is not recommended to manually edit this XML, use the Profile Manager Wizard to ensure proper formation of the XML structure and values.
 
-#### Profile Name Usage Notes
+## Profile Name Usage Notes
 If the ProfileName node is given in extraData and the ProfileFlag is SET, ProfileName in ExtraData should match with the first parameter passed to processProfile.
 
 Example:
@@ -276,7 +276,7 @@ Example:
 
 * DataCapture content (Activity Selection, Barcode, MSR, Intent, Keystroke, IP) is considered as a whole and setting any individual feature will set as a whole. In other words, setting "EmdkSampleProfile-1/Keystroke" will push all the DataCapture features to the device.
 
-#### Feature Name Usage Notes
+## Feature Name Usage Notes
 Each specific profile feature can be named so that only that portion of the profile can be referenced. This can be accomplished by:
 
 1. Specifying a name for the specific feature within a profile.
@@ -321,7 +321,7 @@ Example:
 
 	emdkStatus = mProfileManager.processProfile("EMDKProfile1/Clock", ProfileManager.PROFILE_FLAG.SET, extraData);
 
-#### PROFILE_FLAG.SET Usage Summary
+## PROFILE_FLAG.SET Usage Summary
 Here is a summary of the above scenarios when using PROFILE_FLAG.SET and XML in the extraData parameter:
 
 <table>

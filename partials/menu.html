@@ -74,8 +74,17 @@
 
         }
         $(menuitem).addClass('sidebar-selected');
+        $(menuitem).parent().append('<ul style="display:block" id="indoc"></ul>')
+        $('h2').each(function(index, value){
+              if($(this).attr('id')){
+                var anchor = "#" + $(this).attr('id');
+                var text = $(this).text();
+                var li = "<li><a href='" + anchor + "'>" + text + "</a>" ;
+                $('#indoc').append(li);               
+              }
 
-
+              
+        });
     });
 
 

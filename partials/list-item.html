@@ -16,7 +16,7 @@
             <li><a href="{{{source}}}"><i class="fa fa-github"></i> </a></li>
             <li class="pull-right">{{product}} {{productversion}}</li>
         </ul>
-        
+
     </div>
 </div>
 
@@ -27,7 +27,14 @@
                     <article class="media clearfix">
                         <div class="entry-thumbnail pull-left">
                             <img class="img-responsive" src="{{ url }}/{{ image }}" alt="">
-                            <span class="post-format post-format-gallery"><a href="{{{download}}}"><i class="fa fa-3x fa-download"></i> </a></span>
+                            <span class="post-format post-format-gallery">
+                                {{#if downloads}}
+
+                                    <a data-html="true" data-container="body" data-popover-content="#download{{@index}}" data-placement="bottom" data-toggle="popover" ><i class="fa fa-3x fa-download"></i> </a>
+                                {{else}}
+                                    <a href="{{{download}}}"><i class="fa fa-3x fa-download"></i> </a>
+                                {{/if}}
+                            </span>
                         </div>
                         <div class="media-body">
                             <header class="entry-header">
@@ -42,9 +49,43 @@
 
                             <footer class="entry-meta">
                                 
-                                <span class="entry-author"><a href="{{{source}}}"><i class="fa fa-github "></i> Source</span></a>
+                                <span class="entry-author">
+                                    {{#if sources}}
+                                        <a data-html="true" data-container="body" data-popover-content="#source{{@index}}" data-placement="bottom" data-toggle="popover"><i class="fa fa-github ">
+                                    {{else}}
+                                        <a href="{{{source}}}"><i class="fa fa-github ">
+                                    {{/if}}
+                                        
+                                    </i> Source</span></a>
                             </footer>
                         </div>
+                    <div class="hidden" id="download{{@index}}">
+                        <div class="popover-heading">
+                            Available Downloads
+                        </div>
+
+                        <div class="popover-body">
+                        <ul class="nav nav-pills nav-stacked">
+                        {{#each downloads}}
+                            <li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
+                        {{/each}}
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="hidden" id="source{{@index}}">
+                        <div class="popover-heading">
+                            Available Source 
+                        </div>
+
+                        <div class="popover-body">
+                        <ul class="nav nav-pills nav-stacked">
+                        {{#each sources}}
+                            <li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
+                        {{/each}}
+                        </ul>
+                        </div>
+                    </div>
+
                     </article>
 
 

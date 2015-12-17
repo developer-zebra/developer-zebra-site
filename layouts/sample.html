@@ -13,7 +13,7 @@
 		            <a class="btn btn-primary" href="{{{ download }}}"><i class="fa fa-download"></i> Download</a>
 		            {{/if}}
 		            {{#if downloads}}
-		            <a class="btn btn-primary" data-html="true" data-popover-content="#download"
+		            <a class="btn btn-primary" data-html="true" data-container="body" data-popover-content="#download"
 		            data-placement="bottom" data-toggle="popover" >
     				<i class="fa fa-download"></i> Download</a>
 		            {{/if}}
@@ -21,7 +21,7 @@
 		            <a class="btn btn-primary" href="{{{ source }}}"><i class="fa fa-github"></i> Source</a>
 		            {{/if}}
 		            {{#if sources}}
-		            <a class="btn btn-primary" data-html="true" data-popover-content="#source"
+		            <a class="btn btn-primary" data-html="true" data-container="body" data-popover-content="#source"
 		            data-placement="bottom" data-toggle="popover" >
     				<i class="fa fa-github"></i> Source</a>
 		            {{/if}}
@@ -32,7 +32,7 @@
 						</div>
 
 						<div class="popover-body">
-						<ul class="nav nav-pills">
+						<ul class="nav nav-pills nav-stacked">
 						{{#each downloads}}
   							<li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
 						{{/each}}
@@ -45,7 +45,7 @@
 						</div>
 
 						<div class="popover-body">
-						<ul class="nav nav-pills">
+						<ul class="nav nav-pills nav-stacked">
 						{{#each sources}}
   							<li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
 						{{/each}}

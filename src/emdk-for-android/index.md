@@ -12,7 +12,7 @@ menu:
         url: /emdk-for-android/4-0/guide/setupDevice
       - title: Build Hello EMDK
         url: /emdk-for-android/4-0/tutorial/tutdatacaptureprofile
-      - title: EMDK Profiles Overview
+      - title: Using Profile Manager
         url: /emdk-for-android/4-0/guide/profile-manager
   - title: Tutorials
     items:

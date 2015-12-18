@@ -1,5 +1,5 @@
 ---
-title: EMDK For Android Setup on Mac
+title: EMDK For Android Setup on Mac (Android Studio)
 ---
 
 

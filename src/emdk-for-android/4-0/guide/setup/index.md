@@ -18,16 +18,11 @@ In order to develop Android applications with Android Studio or Eclipse, you mus
 ### Installing Java Development Kit (JDK) for Mac
 
 **Installing Java for OS X 2014-00x:**
-
 1. Go to https://support.apple.com/kb/dl1572?locale=en_US.
-	![img](/img/setup/mac/image1.png)
-
 2. Download and install Java for OS X 2014 (ex: JavaForOSX2014-001.dmg).
 
 **Installing Java Development Kit (JDK) 7:**
-
 1. Go to http://www.oracle.com/technetwork/java/javase/downloads/index.html.
-
 2. Download and install JDK 7 (v7u75 – the JRE alone is not sufficient) or newer for Mac OS X x64 (ex: jdk-7u75-macosx-x64.dmg).  
 
 ##Choosing a Development Environment

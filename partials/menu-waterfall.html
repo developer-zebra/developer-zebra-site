@@ -1,3 +1,14 @@
+{{#if this.menu.title}}
+<div class="row">
+    <div class="col-sm-12" id="guides">
+        {{#if this.menu.img}}
+            <img src="{{this.menu.img}}" alt="logo" style="max-height:42px" class="img-responsive"> 
+        {{/if}}
+        <strong>{{this.menu.title}}</strong>
+    </div>
+</div>
+{{/if}}
+
 <div class="row">
     <div class="col-sm-12" id="guides">
         <div class="waterfall columns" data-col-min-width="350" data-default-container-width="915" data-autoresize="true" >

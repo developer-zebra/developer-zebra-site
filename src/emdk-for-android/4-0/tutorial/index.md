@@ -2,7 +2,7 @@
 title: Tutorials
 layout: list-mx.html
 menu:
-  title: EMDK For Android 4.0
+  title: EMDK For Android 4.0 Tutorials
   img: /emdk-for-android/images/logo.png
   items:
     - title: Profile Manager

@@ -11,13 +11,5 @@ products:
     versions:
       - url: /emdk-for-android/4-0/tutorial
         menu: "4.0"
-  - title: EMDK For Xamarin
-    description: C# Xamarin tutorials using EMDK API's, Data Capture, Profile Manager, etc.
-    url: /emdk-for-xamarin/1-0/tutorial
-    btn-text: Latest Tutorials
-    image: /images/products/emdk-for-xamarin.jpg
-    versions:
-      - url: /emdk-for-xamarin/1-0/tutorial
-        menu: "1.0"
 
 ---

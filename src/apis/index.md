@@ -11,13 +11,5 @@ products:
     versions:
       - url: /emdk-for-android/4-0/api
         menu: "4.0"
-  - title: EMDK For Xamarin
-    description: C# Xamarin API's for Data Capture, Profile Manager, etc.
-    url: /emdk-for-xamarin/1-0/api
-    btn-text: Latest Docs
-    image: /images/products/emdk-for-xamarin.jpg
-    versions:
-      - url: /emdk-for-xamarin/1-0/api
-        menu: "1.0"
 
 ---

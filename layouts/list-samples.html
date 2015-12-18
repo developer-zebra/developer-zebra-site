@@ -18,7 +18,23 @@
                     {{#if download}}
                         <a class="pull-right" href="{{{download.url}}}"><i class="fa fa-3x fa-download"  data-toggle="tooltip" data-placement="bottom" title="{{{download.title}}}"></i> </a>
                     {{/if}}
+                    {{#if downloads}}
+                        <a class="pull-right" data-html="true" data-container="body" data-popover-content="#downloadAll" data-placement="bottom" data-toggle="popover" ><i class="fa fa-3x fa-download"></i> </a>
+                    {{/if}}
                 </div>
+                    <div class="hidden" id="downloadAll">
+                        <div class="popover-heading">
+                            Available Downloads
+                        </div>
+
+                        <div class="popover-body">
+                        <ul class="nav nav-pills nav-stacked">
+                        {{#each downloads}}
+                            <li role="presentation" ><a href="{{{this.url}}}">{{this.title}}</a></li>
+                        {{/each}}
+                        </ul>
+                        </div>
+                    </div>
 
             </div>
             <div class="row">

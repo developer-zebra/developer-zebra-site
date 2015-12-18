@@ -1076,7 +1076,7 @@ ul.nostyle i {
     line-height:normal
 }
 .content-with-sidebar .tree-sidebar .sidebar-container {
-    padding-top:40px;
+    padding-top:20px;
     padding-bottom:40px;
     /*max-height:100vh;*/
     overflow:auto;

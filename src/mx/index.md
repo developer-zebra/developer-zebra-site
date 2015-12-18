@@ -3,16 +3,17 @@ title: MX Feature Reference
 publish: false
 layout: list-content.html
 menu:
-  - title: MX Overview
-    url: /mx/overview
-  - title: MX Features
-    url: /mx
-  - title: Feature Compatibility
-    url: /mx/compatibility
-  - title: Choosing a MX Version
-    url: /mx/choosing-a-version
-  - title: Checking Device MX Version
-    url: /mx/mx-version-on-device
+  items:
+    - title: MX Overview
+      url: /mx/overview
+    - title: MX Features
+      url: /mx
+    - title: Feature Compatibility
+      url: /mx/compatibility
+    - title: Choosing a MX Version
+      url: /mx/choosing-a-version
+    - title: Checking Device MX Version
+      url: /mx/mx-version-on-device
 contentlist:
   - heading: Application Management
     description: Manage application white-listing and browser settings.

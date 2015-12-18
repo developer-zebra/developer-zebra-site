@@ -3,11 +3,15 @@ publish: true
 title: Barcode APIs
 description: This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.
 downloads:
+  - title: Android Studio Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/BarcodeSample1.zip    
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/BarcodeSample1.zip
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/BarcodeSample1.zip       
 sources:
-  - title: ADT Eclipse Project
+  - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/BarcodeSample1
+  - title: ADT Eclipse Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/BarcodeSample1
 
 features: 
   - Profile Manager

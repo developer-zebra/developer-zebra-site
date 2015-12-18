@@ -2,8 +2,17 @@
 publish: true
 title: Scan and Pair
 description: This sample application will show how the Scan and Pair API can be used to pair two bluetooth devices programmatically.
-download: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ScanAndPairSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ScanAndPairSample1
+downloads:
+  - title: Android Studio Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ScanAndPairSample1.zip  
+  - title: ADT Eclipse Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ScanAndPairSample1.zip    
+sources:
+  - title: Android Studio Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ScanAndPairSample1
+  - title: ADT Eclipse Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ScanAndPairSample1
+
 features: 
   - Profile Manager
   - Scan and Pair

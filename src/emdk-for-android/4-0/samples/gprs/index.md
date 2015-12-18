@@ -2,8 +2,17 @@
 publish: true
 title: GPRS Settings
 description: This sample application will allow you to Add/Replace named APN and remove existing named APN.
-download: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileGprsMgrSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileGprsMgrSample1
+downloads:
+  - title: Android Studio Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileGprsMgrSample1.zip   
+  - title: ADT Eclipse Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileGprsMgrSample1.zip      
+sources:
+  - title: Android Studio Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileGprsMgrSample1
+  - title: ADT Eclipse Project
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfileGprsMgrSample1
+
 features: 
   - Profile Manager
   - GPRS Manager

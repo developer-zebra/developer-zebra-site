@@ -12,8 +12,7 @@ title: Using the EMDK Samples with Android Studio
 3. Launch Android Studio and click **Import project (Eclipse ADT, Gradle, etc.)**
 
     ![img](sample-import1.png)
-4. 
-
+4.  
       
 
 

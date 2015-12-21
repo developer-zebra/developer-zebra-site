@@ -10,6 +10,7 @@ The version of MX on a device is a factor in determining if certain settings wil
 * Manually using the Settings UI
 * From application code at runtime using the EMDK
 * Submitting XML using the MX CSP
+* Using ADB
 
 ## Using the Settings UI 
 
@@ -67,3 +68,22 @@ System Administrators and MDMs can submit XML using the `MX` CSP
 			<parm name="MXMFVersion" value="4.4.3.6"/>
 		</characteristic>
 	</wap-provisioningdoc>
+    
+## Using ADB
+The version of MX can also be obtained by using an `adb shell command`
+
+    $ adb shell getprop
+    
+The output will need to be filtered using something like `grep`. If the device is considered to be `rebranded` to Zebra Technologies then `ro.symbol.osx.version` should be used:
+
+    $ adb shell getprop | grep ro.symbol.osx.version
+    [ro.symbol.osx.version]: [QC_OSX_4.4-3]
+
+> The above device has MX version `4.4` on it. The hypen 3 is merely a patch release that has been applied.
+
+On legacy Motorola Solutions branded devices, `ro.motosln.enterprise.version` should be used:
+
+    $ adb shell getprop | grep ro.motosln.enterprise.version
+    [ro.motosln.enterprise.version]: [MX_TI4AJ.1.1_3.5.1-1]
+
+ > The above device has MX version `1.1` on it.

@@ -47,7 +47,7 @@ The following topics are added or updated for StageNow 2.2:
 
 * [MX 5.0 Support](/stagenow/2-2/stagingprofiles/#configure)
 
-* [Manage Enterprise Home Screen (EHS)](/stagenow/2-2/Profiles/xpertmode/#manageenterprisehomescreen(EHS))
+* [Manage Enterprise Home Screen (EHS)](/stagenow/2-2/Profiles/xpertmode/#manageenterprisehomescreenehs)
 
 * [Exporting All Profiles](/stagenow/2-2/stagingprofiles/#exportingallprofiles)
 

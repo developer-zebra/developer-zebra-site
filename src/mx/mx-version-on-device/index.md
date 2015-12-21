@@ -19,23 +19,23 @@ The version of MX on a Zebra Android KitKat device you can visually look in the 
 
 1. Open the `Settings` application in the list of applications
     
-    ![img](settings.jpg)
+    ![img](/mx/mx-version-on-device/settings.jpg)
 
 2. Select `About Phone`
 
-    ![img](aboutphone.jpg)
+    ![img](/mx/mx-version-on-device/aboutphone.jpg)
     
 3. Select `SW Components`
 
-    ![img](software.jpg)
+    ![img](/mx/mx-version-on-device/software.jpg)
     
 4. Inspect the `OSX` item
 
-    ![img](osx.jpg)
+    ![img](/mx/mx-version-on-device/osx.jpg)
     
 5. In the below example the version that is installed is `4.4.2`
 
-    ![img](osx-highlighted.jpg)
+    ![img](/mx/mx-version-on-device/osx-highlighted.jpg)
     
 ## Using EMDK For Android
 

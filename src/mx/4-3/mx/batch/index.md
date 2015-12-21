@@ -1,10 +1,10 @@
 ---
-title: App Manager
-description: The AppMgr allows you manage the set of user applications that are installed on the device.
+title: Batch
+description: The Batch setting type is used to execute one Profile (which may contain any number of settings) from within another Profile.
 publish: true
 ---
 
-## About AppMgr
+## About Batch
 
 ### Overview
 

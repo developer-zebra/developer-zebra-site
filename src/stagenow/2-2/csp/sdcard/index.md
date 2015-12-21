@@ -8,11 +8,9 @@ title:  SdCard
 
 The SdCard Manager setting type allows your application to manage the use of the device SD card.
 
-### Main Functionality
+### Versions
 
-* Enable/Disable SdCard
-
-
-## Feature Compatibility
-<iframe src="compare.html#mx=4.3&csp=SdCardMgr&os=All&embed=true"></iframe> 
+* [4.3](4-3)
+* [4.4](4-4)
+* [5-0](5-0)
 

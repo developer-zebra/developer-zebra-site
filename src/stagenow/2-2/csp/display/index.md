@@ -8,16 +8,9 @@ title:  Display
 
 The Display Manager setting type controls the screen timeout value to conserve power. 
 
-### Main Functionality
+### Versions
 
-* Set the Screen Timeout Interval
-
-##Parameter Notes
-
-###Screen Timeout Interval
-This feature sets how many seconds a device can be inactive before the screen turns off.
-
-
-## Feature Compatibility
-<iframe src="compare.html#mx=4.3&csp=DisplayMgr&os=All&embed=true"></iframe> 
+* [4.3](4-3)
+* [4.4](4-4)
+* [5-0](5-0)
 

@@ -1,10 +1,11 @@
 ---
-title: App Manager
-description: The AppMgr allows you manage the set of user applications that are installed on the device.
+title: File Manager
+description: The File Manager setting type allows your application to manage files on the device. For example you can download a file from an ftp server and it save on the device.
+
 publish: true
 ---
 
-## About AppMgr
+## About File Manager
 
 ### Overview
 

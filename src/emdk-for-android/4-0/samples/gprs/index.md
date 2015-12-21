@@ -33,7 +33,7 @@ screenshots:
 ---
 
 ##Overview
-The EMDK for Android allows you to allows you to add or remove APNs to a Symbol device. 
+The EMDK for Android allows you to add or remove APNs to a Symbol device. 
 
 The available actions are:
   

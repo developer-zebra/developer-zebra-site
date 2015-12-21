@@ -27,4 +27,4 @@ screenshots:
 
 
 ##Overview
-SecureNFCSample1
+This sample demonstrates the EMDK Secure NFC API's which allow your application to securely communicate with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM)

@@ -27,4 +27,4 @@ screenshots:
 
 
 ##Overview
-PaymentSample1
+This sample demonstrates the EMDK Mobile Payment APIs allowing your application to perform EMV and Mag-stripe Payment transactions when using the PD40 Payment device.

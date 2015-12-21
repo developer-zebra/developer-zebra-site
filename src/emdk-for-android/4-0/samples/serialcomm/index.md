@@ -16,9 +16,13 @@ sources:
 features: 
 
 devices: 
-
-image: 
+  - TC75KK
+  - TC70KK RevB
+  
+image: 1.png
 screenshots: 
+  - 1.png
+
 
 ---
 

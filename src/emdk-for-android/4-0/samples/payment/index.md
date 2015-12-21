@@ -16,9 +16,12 @@ sources:
 features: 
 
 devices: 
-
-image: 
+  - MC40 KK
+  - MC40 JB
+  
+image: 1.png
 screenshots: 
+  - 1.png
 
 ---
 

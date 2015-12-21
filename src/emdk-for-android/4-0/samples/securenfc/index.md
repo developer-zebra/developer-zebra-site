@@ -16,9 +16,12 @@ sources:
 features: 
 
 devices: 
+  - TC75 KK 
 
-image: 
+  
+image: 1.png
 screenshots: 
+  - 1.png
 
 ---
 

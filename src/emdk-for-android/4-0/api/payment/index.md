@@ -3,4 +3,6 @@ title: Payment APIs
 layout: list-content-api.html
 ---
 
-> Note: The following apis are only available blah blah
+>Supported Devices:
+* MC40 JB
+* MC40 KK

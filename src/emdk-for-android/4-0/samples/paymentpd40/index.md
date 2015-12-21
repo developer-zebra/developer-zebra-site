@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Update Payment Device Firmware
-description: PD40FWUpdateSample
+description: This sample demonstrates how to update firmware in the PD40 Mobile Payment device
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/PD40FWUpdateSample.zip  
@@ -28,3 +28,9 @@ screenshots:
 
 ##Overview
 This sample demonstrates how to update firmware in the PD40 Mobile Payment device
+
+##Loading the Sample Application
+The following guide will walk you through setting up the EMDK samples in your IDE.
+
+* [Android Studio](/emdk-for-android/4-0/samples/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-0/samples/emdksamples_eclipse)

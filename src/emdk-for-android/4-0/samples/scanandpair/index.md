@@ -50,8 +50,8 @@ For this sample, you will need two Android Bluetooth devices, one must be an EMD
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/sample/emdksamples_androidstudio)
-
+* [Android Studio](/emdk-for-android/4-0/samples/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-0/samples/emdksamples_eclipse)
 ##Using This Sample
 
 1.  When the application starts it should look like the following. Leave the **Always Scan** and **Hard Trigger** check boxes selected, and insure the **ScanData Type** spinner is set to **MAC ADDRESS**.  

@@ -51,8 +51,8 @@ Follow the template generation and device licensing sections of the [SimulScan A
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/sample/emdksamples_androidstudio)
-
+* [Android Studio](/emdk-for-android/4-0/samples/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-0/samples/emdksamples_eclipse)
 
 ##Using This Sample
 

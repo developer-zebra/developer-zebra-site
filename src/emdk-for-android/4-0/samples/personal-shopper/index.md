@@ -44,8 +44,8 @@ For more information about setting up the EMDK please see the [EMDK Overview](/e
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/sample/emdksamples_androidstudio)
-
+* [Android Studio](/emdk-for-android/4-0/samples/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-0/samples/emdksamples_eclipse)
 ##Using This Sample
 
 1.  With the MC18 seated in the cradle. Launch the PersonalShopper API sample.

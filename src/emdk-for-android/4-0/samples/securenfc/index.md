@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Secure NFC
-description: SecureNFCSample1
+description: This sample demonstrates the EMDK Secure NFC API's which allow your application to securely communicate with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM)
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SecureNFCSample1.zip  
@@ -28,3 +28,9 @@ screenshots:
 
 ##Overview
 This sample demonstrates the EMDK Secure NFC API's which allow your application to securely communicate with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM)
+
+##Loading the Sample Application
+The following guide will walk you through setting up the EMDK samples in your IDE.
+
+* [Android Studio](/emdk-for-android/4-0/samples/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-0/samples/emdksamples_eclipse)

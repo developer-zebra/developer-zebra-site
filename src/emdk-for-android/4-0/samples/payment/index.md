@@ -16,12 +16,15 @@ sources:
 features: 
 
 devices: 
-
-image: 
+  - MC40 KK
+  - MC40 JB
+  
+image: 1.png
 screenshots: 
+  - 1.png
 
 ---
 
 
 ##Overview
-PaymentSample1
+This sample demonstrates the EMDK Mobile Payment APIs allowing your application to perform EMV and Mag-stripe Payment transactions when using the PD40 Payment device.

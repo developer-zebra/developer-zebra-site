@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Update Payment Device
+title: Update Payment Device Firmware
 description: PD40FWUpdateSample
 downloads:
   - title: Android Studio Project
@@ -16,12 +16,15 @@ sources:
 features: 
 
 devices: 
-
-image:
+  - MC40 KK
+  - MC40 JB
+  
+image: 1.png
 screenshots: 
+  - 1.png
 
 ---
 
 
 ##Overview
-PD40FWUpdateSample
+This sample demonstrates how to update firmware in the PD40 Mobile Payment device

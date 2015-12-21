@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Serial Comm
+title: Serial Communication
 description: SerialCommSample1
 downloads:
   - title: Android Studio Project
@@ -16,12 +16,16 @@ sources:
 features: 
 
 devices: 
-
-image: 
+  - TC75KK
+  - TC70KK RevB
+  
+image: 1.png
 screenshots: 
+  - 1.png
+
 
 ---
 
 
 ##Overview
-SerialCommSample1
+This sample demonstrates the EMDK Serial Communication API to enable support for DEX in your application. DEX (data exchange) is a format for collecting audit and event data from vending machines.

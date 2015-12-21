@@ -1,8 +1,10 @@
 ---
-title:  About This Help
+title: StageNow 2.2
 ---
 
-StageNow 2.2 User Guide, Revision .2
+# About This Help
+
+StageNow 2.2 User Guide, Revision .3
 
 P/N MN-002672-01
 
@@ -35,26 +37,26 @@ Topics covered in this guide are as follows:
 ## What's New
 The following topics are added or updated for StageNow 2.2:
 
-* [Change Password](/stagenow/2-2/gettingstarted?Change%20Password)
+* [Xpert Mode](/stagenow/2-2/Profiles/xpertmode)
 
-* [MX 5.0 Support](/stagenow/2-2/stagingprofiles?Configure)
+* [Staging an Audio Profile (Administrator)](/stagenow/2-2/stagingprofiles/#staginganaudioprofile)
 
-* [Staging an Audio Profile](/stagenow/2-2/stagingprofiles?Staging%20an%20Audio%20Profile)
+* [Selecting an Audio File for Staging (Operator)](/stagenow/2-2/stageclient/#selectinganaudiofileforstaging)
 
-* [Exporting All Profiles](/stagenow/2-2/stagingprofiles?Exporting%20All%20Profiles)
+* [Audio Staging Help](/stagenow/2-2/stageclient/#audiostaginghelp)
 
-* [Xpert Mode](/stagenow/2-2/Profiles/xpertmode?Xpert%20Mode)
+* [MX 5.0 Support](/stagenow/2-2/stagingprofiles/#configure)
 
-* [Manage Enterprise Home Screen (EHS)](/stagenow/2-2/Profiles/xpertmode?Manage%20Enterprise%20Home%20Screen%20(EHS))
+* [Manage Enterprise Home Screen (EHS)](/stagenow/2-2/Profiles/xpertmode/#manageenterprisehomescreen(EHS))
 
-* [Exporting Settings](/stagenow/2-2/settingconfig?Exporting%20Settings)
+* [Exporting All Profiles](/stagenow/2-2/stagingprofiles/#exportingallprofiles)
 
-* [Importing Settings](/stagenow/2-2/settingconfig?Importing%20Settings)
+* [Exporting Settings](/stagenow/2-2/settingconfig/#exportingsettings)
 
-* [Selecting an Audio File for Staging](/stagenow/2-2/stageclient?Selecting%20an%20Audio%20File%20for%20Staging)
+* [Importing Settings](/stagenow/2-2/settingconfig/#importingsettings)
 
-* [Device Staging](/stagenow/2-2/stageclient?Device%20Staging)
+* [Device Staging](/stagenow/2-2/stageclient/#devicestaging)
 
-* [StageNow Client Menu](/stagenow/2-2/stageclient?StageNow%20Client%20Menu)
+* [StageNow Client Menu](/stagenow/2-2/stageclient/#stagenowclientmenu)
 
-* [Audio Staging Help](/stagenow/2-2/stageclient?Audio%20Staging%20Help)s
+* [Change Password](/stagenow/2-2/gettingstarted/#changepassword)

@@ -1,6 +1,7 @@
 ---
 title: Xpert Mode
 ---
+#Xpert Mode
 Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles.
 
 In this mode, the administrator can use any settings and/or any Wizards offered in the StageNow tool, in any order.  For example, an administrator can use the Configure a Device Wizard within the Expert Mode Wizard, but include additional settings as well as those offered in the standard Wizard. In this manner, administrators who are experts can take advantage of the flexibility offered by StageNow to use features not covered in the existing Wizards. Note that this does not apply in the RD section of the Xpert Wizard, which still restricts the administrator to selecting certain settings.
@@ -32,7 +33,7 @@ To create an Xpert Mode profile:
 
    ![img](../../images/profiles/XpertMode_AddSettings.jpg)
 
-8. Select Add to move through the Profile Wizard and create the new Xpert Mode profile as described in [Creating a Staging Profile](/stagenow/2-2/stagingprofiles?Creating%20a%20Staging%20Profile).
+8. Select Add to move through the Profile Wizard and create the new Xpert Mode profile as described in [Creating a Staging Profile](../stagingprofiles?Creating%20a%20Staging%20Profile).
 
    ![img](../../images/profiles/XpertMode_AddSettings_Settings1.jpg)
    
@@ -48,17 +49,19 @@ During profile creation, select the ADD / EDIT button at any time to return to t
 
 
 ## Manage Enterprise Home Screen (EHS)
-Enterprise Home Screen defines which applications appear on enterprise devices so only certain features are available to users. The Enterprise Home Screen (EHS) Wizard is available within Xpert Mode. 
+Enterprise Home Screen defines which applications appear on enterprise devices so only certain features are available to users. StageNow 2.2 allows you to easily configure Enterprise Home Screen on a Zebra Enterprise device via the Manage Enterprise Home Screen sub-wizard. Simply include this sub-wizard in an Xpert mode profile and follow the steps on the screen. Refer to the EHS user guide for information on the EHS configuration file and EHS APKs available as part of the EHS distribution. 
 
-To create an EHS profile:
+Include the EHS sub-wizard as any step of an Xpert mode profile, among other settings and sub-wizards. The following example uses the EHS sub-wizard only for simplicity. Before using this sub-wizard, obtain and extract the EHS distribution, which includes the EHS_L and EHS_R APKs, onto the workstation.
+
+To configure EHS via the Xpert Mode Wizard:
 
 1. Select Create New Profile.
 
-2. Select the MX version from the drop-down menu.
+2. Select either MX 4.4 or MX 5.0 version from the drop-down menu.
 
 3. Select the Xpert Mode Wizard, and select Create.
 
-    ![img](../../images/profiles/xpertmode_name2.jpg)
+    ![img](../../images/profiles/xpertmode_EHS.jpg)
 
 4. Enter a name for the profile and select Start.
 
@@ -70,26 +73,29 @@ To create an EHS profile:
 
 7. Select Add.
 
-8. On the Download EHS Config window, select Yes to download an EHS config file to the device to stage.
+8. On the Download EHS Config window, select Yes to download an EHS configuration file to the device to stage. Refer to the EHS documentation for more information on creating this file.
 
     ![img](../../images/profiles/xpertmode_settings_EHS_Download.jpg)
 
-9. Select a source file location and select Continue.
+9. Browse to and select the file from the workstation and select Continue. The device path is pre-configured for ease. 
 
     ![img](../../images/profiles/xpertmode_settings_EHS_apk.jpg)
 
-10. Select the type of apk to install and select Continue.
+10. Select the type of APK to install and select Continue. Refer to the EHS documentation for device and EHS APK mappings. 
 
     ![img](../../images/profiles/xpertmode_settings_EHS_configsetting.jpg)
 
-11. Ener the target path and file name to download to the device, and then enter the source file location, and then select Continue.
+11. Select the location of the EHS_L (or EHS_R) APK to push to the device, and then select Continue.
 
-12. Enter the APK path and name, and select Continue.
+    ![img](../../images/profiles/xpertmode_settings_EHS_installAPK.jpg)
 
-13. Select Continue to acknowledge using EHS as the default launch screen on the device.
+12. Install the pushed APK on the device, ensuring the path is correct, and then select Continue.
 
-14. See [Review](/stagenow/2-2/stagingprofiles?Review) to continue creating the EHS profile.
+    ![img](../../images/profiles/xpertmode_settings_EHS_set.jpg)
 
+13. Select Continue to set EHS as the default launch screen on the device.
+
+14. See [Review](../stagingprofiles?Review) to continue creating the EHS profile.
 
 
 

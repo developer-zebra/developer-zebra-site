@@ -34,5 +34,5 @@ This sample demonstrates the EMDK Serial Communication API to enable support for
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/samples/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-0/samples/emdksamples_eclipse)
+* [Android Studio](/emdk-for-android/4-0/guide/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)

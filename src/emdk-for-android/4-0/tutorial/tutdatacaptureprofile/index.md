@@ -21,11 +21,6 @@ If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tut
 
 If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectEclipseADT).  
 
-## Enabling the EMDK
-If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 4.0 (API 16) (Symbol Technologies LLC) (API 16)` or `EMDK 4.0 (API 19) (Symbol Technologies LLC) (API 19)` as the minimum SDK.
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
-
 ## Adding a DataCapture Profile
 1. Click [here](/emdk-for-android/4-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 

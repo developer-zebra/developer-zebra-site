@@ -33,7 +33,6 @@ menu:
     - title: Settings
       url: /stagenow/2-2/settingconfig
     - title: Setting Types
-      url: /stagenow/2-2/CSPreference
       items: 
         - title: Access
           url: /stagenow/2-2/csp/access

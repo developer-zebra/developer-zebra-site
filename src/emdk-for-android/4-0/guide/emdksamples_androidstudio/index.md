@@ -29,6 +29,6 @@ When the import process is complete, the project load in the IDE, ready to deplo
  
  Android studio will push the application to your device via USB and start the main activity.
 
- ![img](/img/sample/BarcodeSample1_screen.png)
+ ![img](profileWifiSample1.png)
 
 

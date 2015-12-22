@@ -1,5 +1,7 @@
 ---
 title: Using the EMDK Samples with Eclipse
+layout: guide.html
+
 ---
 
 ##Loading the Sample Application

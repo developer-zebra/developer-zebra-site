@@ -1,5 +1,6 @@
 ---
 title: Using the EMDK Samples with Android Studio
+layout: guide.html
 ---
 
 ##Loading the Sample Application

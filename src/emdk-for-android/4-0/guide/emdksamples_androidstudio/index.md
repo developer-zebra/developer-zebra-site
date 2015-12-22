@@ -4,7 +4,6 @@ layout: guide.html
 ---
 
 ##Loading the Sample Application
-Sample Applications are installed along with the EMDK and can be found in your start bar. 
 
 1. Choose a sample and click the **See Details** button.
     ![img](select_a_sample.png)

@@ -3,7 +3,7 @@ title:  Creating Project using Android Studio
 ---
 ## Overview
 
-This tutorial helps you creating a new Android application project using [Android Studio](http://developer.android.com/sdk/index.html). This is going to be a common step for all the tutorials that use [EMDK for Android](https://developer.motorolasolutions.com/community/android/emdk) API.
+This tutorial will aid  you creating a new Android application project using [Android Studio](http://developer.android.com/sdk/index.html). This is going to be a common step for all the tutorials that use [EMDK for Android](https://developer.motorolasolutions.com/community/android/emdk) API.
 
 
 ## Creating The Project

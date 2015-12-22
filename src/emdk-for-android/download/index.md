@@ -3,9 +3,6 @@ title: EMDK for Android Downloads
 layout: guide.html
 ---
 
-# EMDK For Android Downloads
-
-
 ## Latest Release
 <ul>
 <li><a href='https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-030109-UP1B.exe'>EMDK 3.1 Update 1 - Windows Installation</a></li>

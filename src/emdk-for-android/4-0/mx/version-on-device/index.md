@@ -3,11 +3,6 @@ title: How to Check a Device's MX Version
 
 ---
 
----
-title: How to Check a Device's MX Version
-
----
-
 ## Overview
 
 The version of MX on a device is a factor in determining if certain settings will be supported. There are a few ways that you can determine the version that is installed:

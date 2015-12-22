@@ -9,6 +9,8 @@ menu:
       url: /emdk-for-android/4-0/guide/about
     - title: Getting Started
       items:
+        - title: Download
+          url: /emdk-for-android/download
         - title: EMDK For Android Setup
           url: /emdk-for-android/4-0/guide/setup
         - title: Configuring A Device

@@ -19,13 +19,7 @@ Using this feature, a user can perform various App Management operations such as
 
     > Note: Please refer the compatibility matrix to check availability these features across various symbol devices [here](/emdk-for-android/4-0/guide/profiles/app).   
 
-###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

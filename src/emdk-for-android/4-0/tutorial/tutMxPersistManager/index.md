@@ -45,16 +45,10 @@ So now we will create a tutorial to demonstrate how the configuration XML's are 
 * Finally we will ensure how the persisted Clock and App Manager settings are re-applied automatically. It means you would see the Clock is reset to the time you had set and the application installed back to the device from the path provided.     
    
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
 * Download the APK for sample App from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
 * Download the respective Enterprise Reset package (zip file) according to your device OS version from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) and copy that file in SD card/Internal memory of the device.
 
     > Note: This above link provides the Update Packages of TC55 device only, which we have used in this tutorial. If you are using some other Symbol Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

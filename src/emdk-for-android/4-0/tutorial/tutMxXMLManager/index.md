@@ -15,13 +15,6 @@ The XML Manager supports following XML processing Modes:
 
 Let us create a tutorial and configure the XML processing mode on your Symbol Android device using Mx [XML Manager](/emdk-for-android/4-0/guide/profiles/xml) feature. 
         
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 3.0 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

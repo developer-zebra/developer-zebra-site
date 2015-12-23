@@ -17,16 +17,6 @@ Initially, we will configure EHS (Enterprise Home Screen) launcher application a
 Once the EHS has been set as the default launcher application, we will modify this setting by setting another application as default launcher through the code using App Manager API for default launcher. You can use any applicable launcher application. We will use [Galaxy Launcher](http://www.appsapk.com/galaxy-launcher/) application to set  as default launcher application through code in this tutorial.
 
 This allows you to understand how to configure parameters using Profile Manager and modify it using App Manager API.   
-	
- 
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
-* Download and install the required launcher applications before getting started with the tutorial. 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Downloading required Launcher Applications:
 As discussed above, we will now download and install the two launcher applications ([EHS](https://developer.motorolasolutions.com/docs/DOC-1875) and [Galaxy Launcher](http://www.appsapk.com/galaxy-launcher/)).

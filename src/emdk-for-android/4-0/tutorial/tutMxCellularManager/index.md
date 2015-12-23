@@ -8,13 +8,6 @@ This guide will walk you through creating an EMDK For Android application that w
 
 So now we will create a tutorial to turn the state of Data Roaming ON using Mx [Cellular Manager](/emdk-for-android/4-0/guide/profiles/cellular) feature on your Symbol Android device. 
         
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.0 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

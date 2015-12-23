@@ -10,13 +10,6 @@ The PowerKey Manager feature allows your application to control which options ap
 
 So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using Mx [Power Key Manager](/emdk-for-android/4-0/guide/profiles/powerkey) feature on your Symbol Android device. 
         
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.0 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

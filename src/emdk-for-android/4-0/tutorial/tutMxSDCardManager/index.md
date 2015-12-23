@@ -9,13 +9,7 @@ This guide will walk you through creating an EMDK For Android application that w
 So now we will create a tutorial to disable the use of external SD Card and then enable it back using Mx [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) feature through Profile Wizard on your Symbol device. 
         
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.1 and above 
 * Make sure you have an external SD Card in the device
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

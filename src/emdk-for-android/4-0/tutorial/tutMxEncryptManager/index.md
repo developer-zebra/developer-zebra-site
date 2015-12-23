@@ -10,12 +10,7 @@ So now we will create a tutorial to install a new Encryption Key and use this ke
         
 ###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.1 and above
 * Make sure you have an external SD Card in the device if you are using external storage option for creating EFS.
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

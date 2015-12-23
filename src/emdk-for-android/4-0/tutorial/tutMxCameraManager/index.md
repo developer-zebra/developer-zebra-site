@@ -8,13 +8,6 @@ This guide will walk you through creating an EMDK For Android application that w
 
 We will now create a tutorial to disable the use of all cameras and then enable them back on your Symbol Android device using Mx [Camera Manager](/emdk-for-android/4-0/guide/profiles/camera) feature. 
         
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.0 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

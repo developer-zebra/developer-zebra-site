@@ -36,13 +36,7 @@ The tutorial will be designed to configure Wi-Fi settings with following feature
 * Remove an existing Network
    
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
-* Wi-Fi of your Symbol Android device must be enabled.
-
-For more information about setting up the EMDK please see the EMDK Overview.
+* Wi-Fi on your Symbol Android device must be enabled.
 
 ## Creating The Project
 

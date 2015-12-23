@@ -33,15 +33,14 @@ Next we will update "MainActivity", adding a button to launch our "BroadcastInte
 2. Add the following Button to "activity_main.xml". This Button will be used for opening "BroadcastIntentActivity".  
 
 		:::xml
-		<Button  
-		     
-		    android:id="@+id/buttonBroadcastIntent"  
-		    android:layout_width="wrap_content"  
-		    android:layout_height="wrap_content"  
-		    android:layout_alignParentBottom="true"  
-		    android:layout_marginBottom="50dp"  
-		    android:layout_marginLeft="120dp"  
-		    android:text="Broadcast Intent" " /> 
+		<Button 
+		android:id="@+id/buttonBroadcastIntent"  
+		android:layout_width="wrap_content"  
+		 android:layout_height="wrap_content"  
+		android:layout_alignParentBottom="true"  
+		android:layout_marginBottom="50dp"  
+		android:layout_marginLeft="120dp"  
+		android:text="Broadcast Intent" " /> 
 
 	![img](/img/setup/image171.jpg)  
 3. Select "MainActivity.java" from "Package Explorer" in Eclipse. 

@@ -41,14 +41,9 @@ If the required number of fields are more, it could be painful to capture each a
         
 ###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 3.1 and above
 * SimulScan is currently supported on TC55 Rev B KitKat and TC75.
 
-> Note: As SimulScan is built into the OS image in the above devices, download the latest OS from either the extranet or SupportCentral. 
-
-For more information about setting up the EMDK please see the EMDK Overview.
+> Note: As SimulScan is built into the OS image in the above devices, download the latest OS from  [SupportCentral](http://support.zebra.com). 
 
 ## Creating a Template
 

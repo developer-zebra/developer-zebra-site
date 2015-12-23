@@ -10,15 +10,7 @@ You can use these installed digital certificates to identify your device for a v
 
 >Note:  
 >We can install different types of certificates (Ex. .PEM, .PFX, .P12 etc. ) but for this tutorial, we will install a sample CA certificate (.PEM file). 
-        
-###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 3.0 and above
-* Download the sample CA Certificate from [here]() and put it on the SD card of Symbol Android device to refer it later in this tutorial.  
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

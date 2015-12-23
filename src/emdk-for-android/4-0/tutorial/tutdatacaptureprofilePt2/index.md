@@ -8,13 +8,8 @@ This tutorial will walk you through adding [Intent Output](/emdk-for-android/4-0
 The tutorial uses EMDK V 2.1 that has organized existing features as well as got some new features that would be discussed later in the tutorial.
 
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android 
 * Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile)
 
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Adding Intents to the DataCapture Profile
 1. Select "EMDKSample" project from Package Explorer.    

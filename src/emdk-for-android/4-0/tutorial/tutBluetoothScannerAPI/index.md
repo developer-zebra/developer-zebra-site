@@ -14,13 +14,7 @@ In this tutorial, we will explore the [Bluetooth Scanner API](/emdk-for-android/
 
 > Note: The [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode) does not use Profile Wizard to pair with Bluetooth Scanner and everything needs to be configured programmatically through code.   
         
-###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 3.1 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

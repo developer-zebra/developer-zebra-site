@@ -12,13 +12,6 @@ This feature expects following attributes from user to set Clock on the symbol A
 * **Time:** - UTC Time to set on Symbol device.
 * **AutoTime:** - Select this feature to use network provided time on the symbol device. 
 
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

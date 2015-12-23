@@ -35,7 +35,7 @@ In this tutorial we will configure following Scanning Params:
 * Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
 * EMDK for Android V 3.0 and above 
 
-For more information about setting up the EMDK please see the EMDK Overview.
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup/).
 
 ## Creating The Project
 

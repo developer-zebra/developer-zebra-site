@@ -3,15 +3,8 @@ title:  Modifying Profiles With ProfileConfig API
 ---
 
 ## Overview
-This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/4-0/api/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/4-0/guide/profiles/profilekeystroke) feature of [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager).
+This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/4-0/api/core/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/4-0/guide/profiles/profilekeystroke) feature of [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager).
 
-###Prerequisites###
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android 2.0 and above
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

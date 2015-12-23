@@ -53,7 +53,7 @@ So let us create a tutorial and Configure the Mx App Manager Profile to install 
 * Download APK file for the application to install from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
 * Once downloaded, copy the APK file to SD Card of the device. 
 
-For more information about setting up the EMDK please see the EMDK Overview.
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup/).
 
 ## Creating The Project
 

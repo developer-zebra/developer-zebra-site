@@ -25,14 +25,6 @@ So now we will create a tutorial to demonstrate how to configure Access Points i
 
    > Note: The device should have network carrier to test GPRS Manager Tutorial.     
    
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
-* Symbol Android Device should have Network Carrier. 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

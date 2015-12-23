@@ -8,13 +8,6 @@ This guide will walk you through creating an EMDK For Android application that w
 
 So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx [Display Manager](/emdk-for-android/4-0/guide/profiles/display) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
         
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.0 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 

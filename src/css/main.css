@@ -1373,7 +1373,7 @@ ul.nostyle i {
 }
 
 .fixed-column-right{
-    height: calc(100% - 200px);
+    height: calc(100% - 255px);
     position: fixed;
     top: 135px;
     overflow: auto;

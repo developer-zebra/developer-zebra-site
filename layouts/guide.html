@@ -4,11 +4,11 @@
         <div class="">
             <section class="content-with-sidebar">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 fixed-column-left" >
                     {{> menu}}
 
                 </div>                
-                <div class="col-sm-9">
+                <div class="col-sm-9 fixed-column-right">
                     <div class="row">
                         <div class="col-sm-12">
                             <section id="cta" class="wow fadeIn">
@@ -48,5 +48,11 @@
             </section>
         </div>
     </section>    
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('footer').addClass("fixed-footer");
+    });
+</script>
+
 {{> footer}}
 

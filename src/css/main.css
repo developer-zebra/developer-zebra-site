@@ -1362,3 +1362,25 @@ ul.nostyle i {
         position: relative!important
     }
 }
+
+
+.fixed-column-left{
+    height: calc(100% - 255px);
+    position: fixed;
+    top: 135px;
+    overflow: auto;
+    left: 0;
+}
+
+.fixed-column-right{
+    height: calc(100% - 200px);
+    position: fixed;
+    top: 135px;
+    overflow: auto;
+    right: 0;
+}
+
+.fixed-footer{
+    position: fixed;
+    bottom: 0;
+}

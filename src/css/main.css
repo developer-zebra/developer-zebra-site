@@ -46,7 +46,7 @@ hr {
 
 }
 
-h1:target, h2:target, h3:target, h4:target{padding-top:150px}
+h1:target, h2:target, h3:target, h4:target{padding-top:10px}
 
 .gradiant {
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);

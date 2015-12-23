@@ -53,9 +53,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
         import com.symbol.emdk.EMDKManager;
 		import com.symbol.emdk.barcode.BarcodeManager;  
 
-    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
+    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-0/api/barcode/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
 
-    After that you also need to implement [BarcodeManager.​ScannerConnectionListener](/emdk-for-android/4-0/api/BarcodeManager-ScannerConnectionListener), which is an interface to notify the client when the scanner device (Ex. RS507) has been connected or disconnected to the mobile device (Ex. TC55). Override its `onConnectionChange` method, which would be called when the scanner gets connected or disconnected to the mobile device. 
+    After that you also need to implement [BarcodeManager.​ScannerConnectionListener](/emdk-for-android/4-0/api/barcode/BarcodeManager-ScannerConnectionListener), which is an interface to notify the client when the scanner device (Ex. RS507) has been connected or disconnected to the mobile device (Ex. TC55). Override its `onConnectionChange` method, which would be called when the scanner gets connected or disconnected to the mobile device. 
 
 	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
 	> 
@@ -169,7 +169,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
      
     ![img](/img/BluetoothScannerTutorialImages/on_create_added.jpg)
 
-4. Get the [EMDK Manager](/emdk-for-android/4-0/api/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
+4. Get the [EMDK Manager](/emdk-for-android/4-0/api/barcode/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
 
 		:::java
 		// Update status view with EMDK Open Success message

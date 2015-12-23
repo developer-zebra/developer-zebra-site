@@ -4,7 +4,7 @@ title:  Configure Access Points using Mx GPRS Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Access Points of the mobile networks present in your Symbol Android device using [GPRS Manager](/emdk-for-android/4-0/guide/profiles/gprs) feature of Mx. [GPRS Manager](/emdk-for-android/4-0/guide/profiles/gprs) allows you to perform following operations on Access Points of your device's mobile network: 
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Access Points of the mobile networks present in your Symbol Android device using [GPRS Manager](/emdk-for-android/4-0/mx/wireless/gprsmgr/5-0) feature of Mx. [GPRS Manager](/emdk-for-android/4-0/mx/wireless/gprsmgr/5-0) allows you to perform following operations on Access Points of your device's mobile network: 
 
 **1. Add/Replace named APN:**
 

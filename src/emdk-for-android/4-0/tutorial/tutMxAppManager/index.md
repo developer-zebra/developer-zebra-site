@@ -4,7 +4,7 @@ title:  Application Management with AppManger Profile Feature
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](/emdk-for-android/4-0/guide/profiles/app) feature of EMDK Profiles. 
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](/emdk-for-android/4-0/mx/app-management/appmgr/5-0) feature of EMDK Profiles. 
 
 Using this feature, a user can perform various App Management operations such as:
  
@@ -17,7 +17,7 @@ Using this feature, a user can perform various App Management operations such as
 * **Manage Protected List:** - You can manage which applications are on the protected list by adding and removing application from protected list.
 * **Enable and Disable App Info:** - The application info dialog shows detailed information about the application as well as allow you to perform actions like: Force Stop, Enable/Disable, Clear Data, Clear Cache. Specify the application's package name that you would like to enable or disable this feature for. 
 
-    > Note: Please refer the compatibility matrix to check availability these features across various symbol devices [here](/emdk-for-android/4-0/guide/profiles/app).   
+    > Note: Please refer the compatibility matrix to check availability these features across various symbol devices [here](/emdk-for-android/4-0/mx/app-management/appmgr/5-0).   
 
 
 

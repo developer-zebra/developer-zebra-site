@@ -1,15 +1,15 @@
 ---
 title: Power Manager
-description: The PowerMgr allows you to perform power-related actions on the device, such as putting it into Sleep mode.
+description: The PowerMgr enables power-related actions on the device, such as putting it into Sleep mode.
 ---
 
 ## About PowerMgr
 
 ### Overview
 
-The PowerMgr Feature Type allows you to perform power-related actions on the device, such as putting it into Sleep mode, rebooting the device, or performing an OS Update. The action will be performed when the configuration is set.
+The PowerMgr enables power-related actions on the device, such as putting it into Sleep mode, rebooting the device, or performing an OS Update. The action will be performed when the configuration is set.
 
-Since this Feature Type only performs actions, there are currently no queries supported other than the ability to query the version of the CSP that implements this Feature Type.
+Since PowerMgr performs only actions, there are currently no queries supported other than the ability to query the version of the CSP that implements the feature.
 
 ### Main Functionality
 
@@ -86,14 +86,14 @@ Description:
 
 >**Note:** The specified OS Update file must already exist in a location in the device file system within the device that is suitable for performing OS Updates. The set of locations that can be used for OS Updates is determined based on the following set of rules. Since different devices have different characteristics, the set of locations that meet these rules, and hence the set of locations that can be used for OS Updates will vary by device.
 
->* In Zebra devices running any version of Android, a location that is not accessible cannot be used for OS Updates. For example, a Storage Card to which access has been blocked, using the SdCardMgr Feature Types, cannot be used for OS Updates. Similarly, a Storage Card that is implemented via physically removable media would not be accessible if there was no media physically present.
+>* In Zebra devices running any version of Android, a location that is not accessible cannot be used for OS Updates. For example, a Storage Card to which access has been blocked, using the SdCardMgr, cannot be used for OS Updates. Similarly, a Storage Card that is implemented via physically removable media would not be accessible if there was no media physically present.
 >* In Zebra devices running any version of Android, a location that is encrypted cannot be used for OS Updates. For example, if a Full Storage Card Encryption is enabled for a Storage Card, then no locations on that Storage Card could be used for OS Updates. Similarly, if an Encrypted File System was mounted on a Storage Card, then no locations within that Encrypted File System could be used for OS Updates.
 >* In Zebra devices running any version of Android, a location that cannot be written to by the entity wishing to perform the OS Update cannot be used for OS Updates unless the entity can somehow acquire the permissions necessary to write the OS Update ZIP file to that location.
 >* In Zebra devices running the Jelly Bean version of Android, a Storage Card that is emulated cannot be used for OS Updates. This limitation has been removed from devices running the Kit Kat version of Android.
 
-> To perform an OS Update, an appropriate OS Update ZIP file should be transferred to the device and stored in a suitable location in the device file system. The location to which the OS Update ZIP file is stored must be one of the locations supported for OS Update on that device. Once the OS Update ZIP file is stored in a suitable location in the device file system, the PowerMgr Feature Type can be used to initiate the update.
+> To perform an OS Update, an appropriate OS Update ZIP file should be transferred to the device and stored in a suitable location in the device file system. The location to which the OS Update ZIP file is stored must be one of the locations supported for OS Update on that device. Once the OS Update ZIP file is stored in a suitable location in the device file system, the PowerMgr can be used to initiate the update.
 
->**Note:** The path specified to the PowerMgr Feature Type would normally be the same as the path to which the file was written when it was transferred to the device, but it doesn't always need to be the same. There may be multiple paths that can be used to store the file, all of which may cause the file to be stored in the identical location. But not all such paths may work to initiate the OS Update when specified via the PowerMgr Feature Type. So, it is strongly recommended to store the files using one of the paths defined in the following table and then to specify the same path to the PowerMgr Feature Type.
+>**Note:** The path specified to the PowerMgr would normally be the same as the path to which the file was written when it was transferred to the device, but it doesn't always need to be the same. There may be multiple paths that can be used to store the file, all of which may cause the file to be stored in the identical location. But not all such paths may work to initiate the OS Update when specified via the PowerMgr. So, it is strongly recommended to store the files using one of the paths defined in the following table and then to specify the same path to the PowerMgr.
 
 <div class="parm-table">
  <table>

@@ -1,10 +1,12 @@
 ---
 title: GPRS Manager
-description: The GprsMgr allows you to manage APN settings for the devices GPRS network.
+description: The GprsMgr administers APN settings for the GPRS network used by the device.
 ---
 ## About GprsMgr
 
 ### Overview
+
+The GprsMgr administers APN settings for the GPRS network used by the device.
 
 Devices equipped with Wireless Wide Area Networks (WWAN or Cellular Data) modems can support one or more of the following WWAN technology types:
 
@@ -16,7 +18,7 @@ As noted above, devices that are operating on GSM networks, and that need to use
 
 A GPRS-equipped Android device must generally have a suitable APN defined for each GPRS cellular data network that will be used. If only one GPRS cellular data network will be used, then only one APN will need to be defined. But if multiple GPRS cellular data network will need to be used (e.g. to support roaming amongst multiple geographical locations), then multiple APNs would need to be defined.
 
-The GprsMgr Feature Type allows you to Add or Remove APNs from the set of defined APNs and set which APN is the default APN to which the device will automatically connect.
+The GprsMgr allows you to Add or Remove APNs from the set of defined APNs and set which APN is the default APN to which the device will automatically connect.
 
 ### Main Functionality
 

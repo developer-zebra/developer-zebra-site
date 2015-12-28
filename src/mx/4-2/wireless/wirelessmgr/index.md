@@ -1,10 +1,12 @@
 ---
 title: Wireless Manager
-description: The WirelessMgr allows you to turn various wireless radios On or Off, like Bluetooth, GPRS, NFC, etc.
+description: The WirelessMgr turns wireless radios On or Off, including Bluetooth, GPRS, NFC, etc.
 ---
 ## About WirelessMgr
 
 ### Overview
+
+The WirelessMgr turns wireless radios On or Off, including Bluetooth, GPRS, NFC, etc.
 
 Android devices often support a variety of wireless communication interfaces, including bidirectional interfaces, such as Wireless Wide Area Network (WWAN/cellular data), Bluetooth, and Near Field Communications (NFC), and including unidirectional (receive only) interfaces, such as the Global Positioning System (GPS). Wireless radios that can transmit may significantly affect battery life if turned on unnecessarily and may also need to be turned off in certain situations (e.g. when on an airplane or in "incendiary" environments). Wireless radios that can only receive may affect battery life if turned on unnecessarily.
 

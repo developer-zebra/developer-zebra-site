@@ -1,37 +1,39 @@
 ---
 title: Persistence Manager
-description: The PersistMgr allows you to manage the Request XML Documents that are persistent on a device.
+description: The PersistMgr administers the Request XML Documents commands persistent on a device.
 ---
 
 ## About PersistMgr
 
 ### Overview
 
-In the context of the MDM Tool Kit and its Feature Types, Persistence is defined as the ability of some configuration performed by a Request XML Document, containing XML created in accordance with one or more Feature Types, to persist across an Enterprise Reset or an OS Update that results in an Enterprise Reset.
+The PersistMgr administers the Request XML Documents persistent on a device.
+
+In the context of the MDM Tool Kit, Persistence is defined as the ability of some configuration performed by a Request XML Document (which contains XML created in accordance with one or more CSP features) to persist across an Enterprise Reset or an OS Update that results in an Enterprise Reset.
 
 On Zebra Android devices, an Enterprise Reset is the same as a Factory Reset with the exception that the /enterprise partition is preserved (whereas it would be destroyed on a Factory Reset). The purpose of an Enterprise Reset is to return the device to an Enterprise-defined default state, generally as determined by the contents of the /enterprise partition. When using the MDM Tool Kit, an MDM Agent can control the Enterprise-defined default state, and hence what will persist across an Enterprise Reset. This is done by directly controlling which MDM-deployed content is stored in the /enterprise folder, so it will survive an Enterprise Reset, and by controlling which Request XML Documents are persistent.
 
-The PersistMgr Feature Type allows you to manage the Request XML Documents that are persistent on a device. There are several common use cases for the PersistMgr Feature Type:
+There are several common use cases for the PersistMgr:
 
 * Making an Request XML Document Persistent
 
 	This is the most common use case. When submitting an Request XML Document to the MXMF for processing, if a PersistMgr Feature Type is included, the entire Request XML Document can be saved by the PersistMgr to its protected folder under /enterprise. Following an Enterprise Reset, the PersistMgr will resubmit to the MXMS all Request XML Documents that were Persistent at the time the Enterprise Reset occurred. Using the PersistMgr Feature Type, you assign a name and version to the Request XML Document to identify it and an order to control when it is resubmitted, relative to other Request XML Documents that are Persistent. In addition, you can specify whether the Request XML Document should be made Persistent only if there are no errors when it was originally submitted or always, regardless of whether or not there were any errors when it was submitted.
 
-	For example, let's assume that you download an APK file to a Persistent location, such as /enterprise/usr/mymdm. Then a Request XML Document is submitted that causes the APK file to be installed and launched. If the Request XML Document that installed and launched the APK file also used the PersistMgr Feature Type to make itself Persistent, then that APK file will become part of the Enterprise-defined default state, and hence would persist across an Enterprise Reset, by virtue of being automatically re-installed and re-launched following the Enterprise Reset.
+	For example, let's assume that you download an APK file to a Persistent location, such as /enterprise/usr/mymdm. Then a Request XML Document is submitted that causes the APK file to be installed and launched. If the Request XML Document that installed and launched the APK file also used the PersistMgr to make itself Persistent, then that APK file will become part of the Enterprise-defined default state, and hence would persist across an Enterprise Reset by virtue of being automatically re-installed and re-launched following the Enterprise Reset.
 
 * Making a Persistent Request XML Document Non-persistent
 
 	This use case is used when a Request XML Document was previously made Persistent and you don't want it to be Persistent anymore. If an APK file was made Persistent as described in the prior use case, and you wanted to uninstall that APK file from the device, you might also want that APK file to cease being Persistent on that device. If you simply uninstalled the APK file and did nothing to make it Non-persistent, then the APK file would reappear after the next Enterprise Reset.
 
-	By using the PersistMgr Feature Type, you can direct PersistMgr to remove the Request XML Document for a specific name that you previously directed it to save to its protected folder under /enterprise. After a subsequent Enterprise Reset, since that Request XML Document will no longer be present, PersistMgr will no longer resubmit it and hence the APK file will cease to be Persistent. In such a case, you might also choose to remove the APK file from its Persistent location to complete the clean-up and return the device to its state prior to the original installation of the APK.
+	PersistMgr can be directed to remove the Request XML Document for a specific name that was previously directed to save to its protected folder under /enterprise.  Since that Request XML Document will no longer be present after a subsequent Enterprise Reset, PersistMgr will no longer resubmit it and hence the APK file will cease to be Persistent. In such a case, you might also choose to remove the APK file from its Persistent location to complete the clean-up and return the device to its state prior to the original installation of the APK.
 
 * Querying which Request XML Documents are Persistent.
 
-	This is a less common use case, but one which may be of special interest to MDMs. By using the PersistMgr Feature Type, you can query the names, versions, and order for all Request XML Document that are currently save by PersistMgr in its protected folder under /enterprise. This can be especially useful to determine whether a particular bit of configuration has been made Persistent on a device and, if so, which version. It can also be useful for troubleshooting interactions between multiple Request XML Documents that are Persistent or to get their names so they can be made Non-persistent, if needed.
+	This is a less common use case, but one which may be of special interest to MDMs. By using the PersistMgr, you can query the names, versions, and order for all Request XML Document that are currently saved by PersistMgr in its protected folder under /enterprise. This can be especially useful to determine whether a particular part of a configuration has been made Persistent on a device and, if so, which version. It also can be useful for troubleshooting interactions between multiple Request XML Documents that are Persistent or to get their names so they can be made Non-persistent, if needed.
 
 * Enabling or Disabling a Persistent Request XML Document
 
-	This is a less common use case, but one which may be of interest to some MDMs. By using the PersistMgr Feature Type, you can Disable a Persistent Request XML Document or Enable it once it has been Disabled. When a Request XML Document is made Persistent, it is initially Enabled. When a Persistent Request XML Document is Enabled, it is resubmitted to MXMS automatically by PersistMgr, following an Enterprise Reset. If a Persistent Request XML Document is Disabled, it will remain Persistent, but it will not be resubmitted by PersistMgr following an Enterprise Reset.
+	This is a less common use case, but one which may be of interest to some MDMs. By using the PersistMgr, you can Disable a Persistent Request XML Document or Enable it once it has been Disabled. When a Request XML Document is made Persistent, it is initially Enabled. When a Persistent Request XML Document is Enabled, it is resubmitted to MXMS automatically by PersistMgr, following an Enterprise Reset. If a Persistent Request XML Document is Disabled, it will remain Persistent, but it will not be resubmitted by PersistMgr following an Enterprise Reset.
 
 	Disabling a Persistent Request XML Document may be a convenient way to temporarily make a Request XML Document Non-persistent without requiring its removal and re-application. It may also be useful when troubleshooting Persistence issues by selecting Disabling and Enabling Request XML Documents and Enterprise Resetting, until the cause of a conflict is discovered.
 
@@ -235,7 +237,7 @@ The Request XML Document below uses PersistMgr to Disable the Request XML Docume
 	
 ##Queries
 
->**Note:** The following queries are supported in by the PersistMgr Feature Type. However, they have not been indicated in the PersistMgr DSD. Therefore, the following queries cannot be generated with the DSD tool and will need to be created manually.
+>**Note:** The following queries are supported in by the PersistMgr. However, they have not been indicated in the PersistMgr DSD. Therefore, the following queries cannot be generated with the DSD tool and will need to be created manually.
 
 ###Get the List of All of the Persistent Request XML Documents
 

@@ -170,7 +170,7 @@ ul.nostyle i {
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  height: auto;
+  /*height: auto;*/
   padding: 22px 15px 21px;
 }
 @media only screen and (min-width: 768px) {
@@ -959,7 +959,7 @@ ul.nostyle i {
   padding-bottom: 10px;
   color: #fff;
   background: #2e2e2e;
-  font-size: 8px;
+  font-size: 10px;
 }
 #footer a {
   color: #fff;

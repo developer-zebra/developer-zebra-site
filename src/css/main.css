@@ -1366,17 +1366,17 @@ ul.nostyle i {
 
 
 .fixed-column-left{
-    height: calc(100% - 255px);
+    height: calc(100% - 200px);
     position: fixed;
-    top: 135px;
+    top: 108px;
     overflow: auto;
     left: 0;
 }
 
 .fixed-column-right{
-    height: calc(100% - 255px);
+    height: calc(100% - 200px);
     position: fixed;
-    top: 135px;
+    top: 108px;
     overflow: auto;
     right: 0;
 }

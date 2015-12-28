@@ -955,10 +955,11 @@ ul.nostyle i {
 ********* Footer ******
 ************************/
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
   background: #2e2e2e;
+  font-size: 8px;
 }
 #footer a {
   color: #fff;

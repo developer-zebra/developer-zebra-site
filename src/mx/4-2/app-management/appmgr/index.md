@@ -8,9 +8,9 @@ publish: true
 
 ### Overview
 
-The AppMgr is used to administer applications installed on the device programmatically and with no need for user interaction. On consumer Android devices, application management generally requires a device user to interact with a management UI presented on the device. Scenarios in which a device is being managed by an MDM, it is often important for the MDM to tightly control which user applications are installed without the need to involve a device user and without the user's consent or approval. This enables an MDM to take full control of the set of user applications that are installed on the device.
+The AppMgr is used to administer the user applications installed on the device programmatically and with no need for user interaction. The AppMgr can Install, Uninstall, Upgrade and Turn On and Off the launching of applications. It also allows the designation of an application as the Default Launcher (invoked when pressing the HOME Key), and can perform other tasks related to the management of applications.
 
-The AppMgr can Install, Uninstall, Upgrade and Turn On and Off the launching of applications. It also allows the designation of an application as the Default Launcher (invoked when pressing the HOME Key), and can perform other tasks related to the management of applications.
+On consumer Android devices, application management generally requires a device user to interact with a management UI presented on the device. Scenarios in which a device is being managed by an MDM often require the MDM to tightly control which user applications are installed without user consent or approval. This enables an MDM to take full control of user applications installed on the device.
 
 When considering the capabilities of AppMgr, it is important to understand that applications can be divided into two classes: System applications and User applications. System applications are built into the device and hence are always installed. User applications are not built in, and hence must be installed onto a device before they can be used. Some AppMgr functions apply only to System applications, some only to User applications, and some apply to both. Each function will identify the classes of applications to which it applies.
 

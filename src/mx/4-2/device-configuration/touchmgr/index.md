@@ -1,6 +1,6 @@
 ---
 title: Touch Manager
-description: The TouchMgr sets the Touch Mode on a device (ex. Finger or Stylus)
+description: The TouchMgr sets the Touch Mode on a device (ex. Finger or Stylus).
 ---
 
 ## About TouchMgr

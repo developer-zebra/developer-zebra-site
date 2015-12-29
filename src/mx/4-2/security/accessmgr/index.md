@@ -8,11 +8,11 @@ description: The AccessMgr enables the configuration of a device to control whic
 
 The AccessMgr enables the configuration of a device to control which user, or "installable" application(s) can be used on a given device as well as what the application(s) can do.
 
-A key concept within the AccessMgr is the ability to turn Whitelisting on or off. By default, Whitelisting is turned off. When Whitelisting is turned off, no restrictions are imposed. When Whitelisting is turned on various restrictions can be imposed using the AccessMgr.
+A key concept within the AccessMgr is the ability to turn Whitelisting on or off. Whitelisting is off by default, and imposes no restrictions. When Whitelisting is turned on, various restrictions can be imposed using the AccessMgr.
 
-Whitelisting is a process that allows to run only those applications explicitly specified in a list, which is called the "white" list. All other applications are prohibited from running. The AccessMgr allows whitelist applications to be installed, launched and maintained. The AccessMgr also allows control of which applications are allowed to submit XML for all CSPs, including the AccessMgr itself.
+Whitelisting is a process that allows only those applications explicitly specified in a list to run. Applications not included in the "whitelist" are prohibited from running. The AccessMgr allows whitelist applications to be installed, launched and maintained. The AccessMgr also allows control of which applications are allowed to submit XML for all CSPs, including the AccessMgr itself.
 
-Whitelisting only applies to user applications and will never have an effect on System applications. System applications are those applications that are built into the device and hence are always installed. Some control of System applications can be accomplished by using the AppMgr.
+Whitelisting applies only to user applications and will never have an effect on System applications. System applications are those applications that are built into the device and hence are always installed. Some control of System applications can be accomplished by using the AppMgr.
 
 User applications are those applications that are not built into the device and hence must be installed onto a device before they can be used. Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using the AppMgr. Whitelisting also can be used to control whether a user application can be launched (by any means) once it is installed.
 

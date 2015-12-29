@@ -7,11 +7,11 @@ description: The Clock Manager allows the setting of Date, Time, and Time Zone o
 
 ### Overview
 
+The Clock Manager allows the setting of Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.
+
 Zebra Android devices contain Clock functionality that tracks the current Date and Time on the device in Coordinated Universal Time (UTC), and that can calculate the current Date and Time in Local Time Coordinates (LTC), for a device's configured location. UTC is effectively the same as the LTC at the Prime Meridian in Greenwich, England. LTC is computed from UTC by using an offset based on a configured Time Zone that us suitable for the location where the device is being used and any Daylight Saving Time offset that is required for that Time Zone.
 
-The Clock allows theprogrammatic setting of the Date, Time, and Time Zone or to configure the device to automatically acquire the Date and Time from a Network Time Protocol (NTP) Server. To avoid complications related to LTC, all Date and Time values used by the Clock must be represented as UTC.
-
-Using UTC reduces complexity and ensures a deterministic result when setting the Date and Time, regardless of the configured Time Zone or any Daylight Saving Time offset that might apply. For example, if the Date and Time were set in LTC, then the order of setting Date, Time, and Time Zone could affect the actual results. Also, if LTC were used, then certain combinations would become invalid such as the times "skipped" during adjustment for Daylight Saving Time.
+To avoid complications related to LTC, all Date and Time values used by the Clock must be represented as UTC. Using UTC reduces complexity and ensures a deterministic result when setting the Date and Time, regardless of the configured Time Zone or any Daylight Saving Time offset that might apply. For example, if the Date and Time were set in LTC, then the order of setting Date, Time, and Time Zone could affect the actual results. Also, if LTC were used, then certain combinations would become invalid such as the times "skipped" during adjustment for Daylight Saving Time.
 
 ### Main Functionality
 

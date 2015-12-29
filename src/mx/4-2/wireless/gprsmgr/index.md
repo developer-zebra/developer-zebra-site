@@ -1,12 +1,12 @@
 ---
 title: GPRS Manager
-description: The GprsMgr administers APN settings for the GPRS network used by the device.
+description: The GprsMgr administers Access Point Name (APN) settings for the GPRS network used by the device.
 ---
 ## About GprsMgr
 
 ### Overview
 
-The GprsMgr administers APN settings for the GPRS network used by the device.
+The GprsMgr administers Access Point Name (APN) settings for the GPRS network used by the device.
 
 Devices equipped with Wireless Wide Area Networks (WWAN or Cellular Data) modems can support one or more of the following WWAN technology types:
 

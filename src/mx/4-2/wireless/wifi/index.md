@@ -1,12 +1,12 @@
 ---
 title: WiFi Manager
-description: The Wi-Fi Manager permits management of a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
+description: The Wi-Fi Manager administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
 ---
 ## About Wi-Fi
 
 ### Overview
 
-The Wi-Fi Manager permits management of a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
+The Wi-Fi Manager  administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
 
 > **Note:** In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off."
 

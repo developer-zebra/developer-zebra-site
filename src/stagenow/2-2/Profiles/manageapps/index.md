@@ -7,7 +7,7 @@ To create a Manage Applications profile:
 
 1. Select Create New Profile.
 
-2. Select the MX version from the drop-down menu. Note that MX 4.4 doesn’t support installing licenses and configuring simulscan, so select MX 4.3 if these options are required.
+2. Select the MX version from the drop-down menu. Note that MX 4.4 does not support installing licenses and configuring simulscan, so select MX 4.3 if these options are required.
 
 3. Select the Manage Applications Wizard, and select Create.
 

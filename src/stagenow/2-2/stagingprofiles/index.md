@@ -263,6 +263,9 @@ To edit a profile:
 
 ## Exporting Staging Profiles
 
+>Note:  
+>In-progress profiles created in StageNow 2.0 may not function after upgrading to the latest StageNow Tool.
+
 To export a single profile for other administrators to use:
 
 1. Select the Export icon next to the profile. ![img](../images/icon_export.jpg)

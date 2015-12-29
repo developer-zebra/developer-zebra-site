@@ -139,7 +139,7 @@ To import all settings:
 
     ![img](../images/importsettings1.jpg)
 
-3. Select a file using the browse button, and select Open.
+3. Select a zip file using the browse button, and select Open.
 
 4. Select Import. A window indicates that the settings were imported successfully and the settings appear in the settings list.
 

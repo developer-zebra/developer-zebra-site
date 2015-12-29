@@ -115,7 +115,7 @@ Upon successful deployment, the device displays the success screen.
 
 If errors occur during deployment, the following pop-up appears. Select Yes to view Logs for troubleshooting.
   
-   ![img](images/Client_Audio_Error.jpg)
+   ![img](../images/Client_Audio_Error.jpg)
 
 
 ### NFC Staging
@@ -133,7 +133,7 @@ Upon successful deployment, the device displays the success screen.
 
 If errors occur during deployment, the following pop-up appears. Select Yes to view Logs for troubleshooting.
 
-   ![img](images/Client_NFC_Error.jpg)
+   ![img](../images/Client_NFC_Error.jpg)
 
 
 ### Staging Wait Conditions

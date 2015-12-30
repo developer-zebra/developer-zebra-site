@@ -1,27 +1,29 @@
 ---
 title: Intent Manager
-description: The Intent Manager allows you to communicate to other applications using Android intents.
+description: The Intent Manager allows an application to communicate with other applications using Android Intents.
 ---
 
 ## About Intent
 
 ### Overview
 
-In Android, an Intent is an abstract description of an operation to be performed. An Intent must first be created and then must be sent using one of the following APIs:
+The Intent Manager allows an application to communicate with other applications using Android Intents.
+
+In Android, an Intent is an abstract description of an operation to be performed. An Intent must first be created and then sent using one of the following APIs:
 
 * **startActivity** can be used to launch a Activity within an application, usually to perform some User Interface function.
 * **broadcastIntent** can be used to notify one or more listener applications about the occurrence of some event.
 * **startService** can be used to communicate with a background Service.
 
-Android Intents provide a facility for performing late runtime binding between applications. The most common use of Intents is to launch of application Activities. An Intent is basically a data structure that specifies an operation to be performed and any data required to perform that operation.  An Intent may consist of an action, to specify the operation to be performed, data to be operated upon, and extra data items, of various types, to qualify the operation to be performed.
+Android Intents provide a facility for performing late runtime binding between applications. The most common use of Intents is to launch application Activities. An Intent can be defined as a data structure that specifies an operation to be performed, and the data required to perform that operation. An Intent may consist of an action to specify the operation to be performed, data to be operated upon, and extra data items of various types to qualify the operation to be performed.
 
-The Intent Feature Type allows you to define an Intent by indicating how the Intent should be sent, specifying an Android action name, specifying a URI and MIME type of the primary data, and by attaching extra data items.
+Intents are defined by indicating how the Intent should be sent, specifying an Android action name, URI and MIME type of the primary data, and by attaching extra data items.
 
-Android Intents are a very general purpose mechanism and a rich set of methods are provided in the Android Intent Class to customize an Intent to meet the requirements of the application to which it is being sent. Very complex Intents can be created using Java code, but it would be impractical for the Intent Feature Type to attempt to describe every possible Intent. Instead, the most common use case of launching an application Activities is supported, along with a modest ability to attach data items to cover other common use cases.
+Android Intents are a general-purpose mechanism, and a rich set of methods is provided in the Android Intent Class to customize an Intent to meet the requirements of the application to which it is being sent. Highly complex Intents can be created using Java code, but it would be impractical for the Intent to attempt to describe every possible Intent. Instead, the most common use case of launching application Activities is supported, along with a modest capability to attach data items to cover other common use cases.
 
->**Note:** The Intent Feature Type is not designed to create and send very complex Intents, especially those that require numerous extra data items or extra data items with complex data types. If you need to send very complex Intents, you can do so by writing Java code, packaging it as an application, and then launching that application using a simpler Intent.
+>**Note:** The Intent feature is not designed to create and send very complex Intents, especially those that require numerous extra data items or extra data items with complex data types. If hightly complex Intents are required, do so by writing Java code, packaging it as an application, and launching that application using a simpler Intent.
 
-Every Android Intent of one of two types:
+Every Android Intent is one of two types:
 
 * **Explicit Intents**
 
@@ -98,7 +100,7 @@ Description:
 
 >This parm will allow you to specify the name of the action to be performed by the receiver(s) of the Intent. Many standard Android action names are predefined, but new action names can be added, making the set of possible action names effectively unlimited. A given receiver will likely honor only a small set of action names, so the action name to be used should be chosen from amongst those supported by the intended receiver(s).
 
->**Note:** Since the set of possible action names is extensible, the Intent Feature Type does not put any specific restrictions on the action names that can be specified. However, Android rejects an Intent for which there is no suitable receiver. In addition, certain receivers may require certain permissions to be held by an application in order to send Intents with certain action names. If an attempt is made to send an Intent and that Intent is rejected by the Android system or by a specific receiver, then an error will be returned in the Result XML.
+>**Note:** Since the set of possible action names is extensible, the Intent does not put any specific restrictions on the action names that can be specified. However, Android rejects an Intent for which there is no suitable receiver. In addition, certain receivers may require certain permissions to be held by an application in order to send Intents with certain action names. If an attempt is made to send an Intent and that Intent is rejected by the Android system or by a specific receiver, then an error will be returned in the Result XML.
 
 Parm value input rules: 
 
@@ -179,7 +181,7 @@ Parm value input rules:
 
 ###Extra Data Items
 
-As previously explained, the Intent Feature Type allows you to specify up to 5 extra data items to attach to the Intent to be sent. The set prompts and parm names used to specify each of the 5 extra data items are similar and documented below.
+As previously explained, the Intent allows you to specify up to five (5) extra data items to attach to the Intent to be sent. The set prompts and parm names used to specify each of the 5 extra data items are similar and documented below.
 
 ####Extra Types:
 ####(Extra 0 Type, Extra 1 Type, Extra 2 Type, Extra 3 Type, and Extra 4 Type)
@@ -268,7 +270,7 @@ Description:
 
 >These parms allow you to specify the extra data item name to be attached for any extra data item for which a data type other than "none" was specified.
 
->**Note:** The Intent Feature Type does not impose any specific restrictions on names that can be specified for extra data items to be attached to an Intent. But to achieve the desired result be sure to specify the exact name for a extra data item that the receiver of the Intent is expecting.
+>**Note:** The Intent does not impose any specific restrictions on names that can be specified for extra data items to be attached to an Intent. But to achieve the desired result be sure to specify the exact name for a extra data item that the receiver of the Intent is expecting.
 
 Parm value input rules: 
 

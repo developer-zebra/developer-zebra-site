@@ -1,6 +1,6 @@
 ---
 title: File Manager
-description: The File Manager setting type allows your application to manage files on the device. For example you can download a file from an ftp server and it save on the device.
+description: The File Manager allows an application to download, save and otherwise manage files on the device.
 
 publish: true
 ---
@@ -9,7 +9,7 @@ publish: true
 
 ### Overview
 
-The File Manager setting type allows your application to manage files on the device. For example you can download a file from an ftp server and it save on the device.
+The File Manager allows an application to manage files on the device, for example to download a file from an FTP server and it save on the device.
 
 ### Main Functionality
 

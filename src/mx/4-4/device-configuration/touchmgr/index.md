@@ -1,15 +1,15 @@
 ---
 title: Touch Manager
-description: The TouchMgr allows you configure the Touch Mode on your device (ex. Finger or Stylus)
+description: The TouchMgr sets the Touch Mode on a device (ex. Finger or Stylus).
 ---
 
 ## About TouchMgr
 
 ### Overview
 
-Most Android devices have touch panels which allow device users to interact with the device via a rich User Interface (UI). Some Zebra Android devices have the ability to adjust the sensitivity of the touch panel to suit different usage scenarios. For example, in a situation where a device user sometime might use their ungloved finger to interact with the touch panel and other times might use a stylus, the touch panel might need to be configured differently from how it would need to be configured to handle a situation where the user always uses their finger but might or might not be wearing gloves.
+The TouchMgr sets the Touch Mode on a device to control the sensitivity of the touch panel and thus to prepare the device for different usage scenarios.
 
-The TouchMgr Feature Type allows you configure the Touch Mode on your device to control the sensitivity of the touch panel and thus to prepare the device for different usage scenarios.
+Most Android devices have touch panels that allow interaction with the device and its applications. Some Zebra Android devices have the ability to adjust the sensitivity of the touch panel to suit different usage scenarios. For example, when a device might sometimes be controlled with an ungloved finger and at other times with a stylus, the touch panel might need to be configured differently than for accepting finger input that alternates between gloved and ungloved.
 
 ### Main Functionality
 

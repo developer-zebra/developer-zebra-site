@@ -7,7 +7,7 @@ description: The Browser Manager allows you to configure browser settings like t
 
 ### Overview
 
-Many Zebra Android devices include a default Web Browser that is derived from the stock Android Open Source Project (AOSP) Web Browser source code. The key changes made are to enable configurability of selected settings. The BrowserMgr Feature Type is used to configure these settings.
+Many Zebra Android devices include a default Web Browser that contains modifications to the stock Android Open Source Project (AOSP) Web Browser source code. The key changes enable configurability of selected settings, and the BrowserMgr is used to configure those settings.
 
 ### Main Functionality
 

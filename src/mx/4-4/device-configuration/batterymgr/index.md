@@ -1,17 +1,18 @@
 ---
 title: Battery Manager
-description: The BatteryMgr allows you to configure the thresholds that will be used to determine when a battery needs to be decommissioned.
+description: The BatteryMgr allows configuration of the thresholds used to determine when a battery needs to be decommissioned.
 ---
 
 ## About BatteryMgr
 
 ### Overview
+The BatteryMgr allows configuration of the thresholds used to determine when a battery needs to be decommissioned.
 
-Zebra Android devices can support three classes of batteries: Regular (dumb), Smart, and Gifted. Regular batteries provide only basic support for battery level. Smart Batteries add capabilities to identify batteries uniquely and to track battery provenance and usage history. Gifted Batteries add capabilities that can be used to provide more accurate gas gauging, monitor battery charging, and track battery health.
+Zebra Android devices can support three classes of batteries: Regular (dumb), Smart, and Gifted. Regular batteries provide only basic support for battery level. Smart Batteries add capabilities to identify batteries uniquely, and to track battery provenance and usage history. Gifted batteries add capabilities that can be used to provide more accurate gas gauging, monitor battery charging and track battery health.
 
-A key capability that is lacking for Regular batteries but is provided for both Smart and Gifted Batteries is the ability to determine when a battery is nearing the end of its useful lifetime and needs to be decommissioned (replaced). In the case of Smart Batteries, decommissioning must be based strictly on the charge history of the device. In the case of Gifted Batteries, which have more robust capabilities to track battery health, decommissioning can be based on the actual condition of the battery. In either case, the determination of when a battery needs to be decommissioned is configurable, to account for different demands that are likely to be placed batteries in different environments.
+A key capability that is lacking for Regular batteries but is provided for both Smart and Gifted batteries is the ability to determine when a battery is nearing the end of its useful lifetime and needs to be decommissioned (replaced). In the case of Smart batteries, decommissioning must be based strictly on the charge history of the device. In the case of Gifted batteries, which are more capable of tracking battery health, decommissioning can be based on the actual condition of the battery. In either case, the determination of when a battery needs to be decommissioned is configurable, to account for different demands that are likely to be placed on batteries in different environments.
 
-The BatteryMgr Feature Type allows you to configure the thresholds that will be used to determine when a battery needs to be decommissioned. These values, once configured, will be used by battery management software, along with other battery parameters, to determine the value of the decommission flag that will be stored in, and that will thereafter be carried with, a Smart or Gifted Battery.
+The BatteryMgr allows configuration of the thresholds used to determine when a battery needs to be decommissioned. Once configured, these values (along with other battery parameters) will be used by battery management software to determine the value of the decommission flag that will be stored in a Smart or Gifted battery and carried with it thereafter.
 
 The supported thresholds are:
 

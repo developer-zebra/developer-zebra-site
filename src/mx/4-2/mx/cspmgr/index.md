@@ -9,9 +9,9 @@ description: The CspMgr allows a query of the system to determine the CSPs prese
 
 The CspMgr allows a query of the system to determine the CSP sets present on a given device.
 
-The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML Documents to the MXMF, which will route sections of the XML to appropriate CSPs.  Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
+The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML Documents to the MXMF, which will route sections of the XML to appropriate CSPs. Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
 
-The capabilities of a CSP present on a given device can be accessed by using the corresponding CSP feature set via the MDM Toolkit. For example, the CameraMgr can be used to access the functionality of the CameraMgr CSP. The MXMS present on a given device will include many CSPs. Different device models or devices with different versions of Android may include different sets of available CSPs. This allows you to determine which MDM Toolkit features that can be used on that device.
+The capabilities of a CSP present on a given device can be accessed by using the corresponding feature via the MDM Toolkit. For example, the CameraMgr can be used to access the functionality of the CameraMgr CSP. The MXMS present on a given device will include many CSPs. Different device models, or devices with different versions of Android, may include different sets of available CSPs. The CspMgr allows an app to determine the CSPs present and thereby to determine which MDM Toolkit features can be used on that device.
 
 ### Main Functionality
 

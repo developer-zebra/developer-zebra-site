@@ -1,6 +1,6 @@
 ---
 title: App Manager
-description: The AppMgr facilitates managment of user applications installed on the device.
+description: The AppMgr administers the user applications installed on the device.
 publish: true
 ---
 

@@ -1,11 +1,12 @@
 ---
 title: Browser Manager
-description: The Browser Manager allows you to configure browser settings like the default home page.
+description: The Browser Manager permits the configuration of browser settings such as the default home page.
 ---
 
 ## About BrowserMgr
 
 ### Overview
+The Browser Manager permits the configuration of browser settings such as the default home page.
 
 Many Zebra Android devices include a default Web Browser that contains modifications to the stock Android Open Source Project (AOSP) Web Browser source code. The key changes enable configurability of selected settings, and the BrowserMgr is used to configure those settings.
 

@@ -6,7 +6,6 @@ description: The Intent Manager allows an application to communicate with other 
 ## About Intent
 
 ### Overview
-
 The Intent Manager allows an application to communicate with other applications using Android Intents.
 
 In Android, an Intent is an abstract description of an operation to be performed. An Intent must first be created and then sent using one of the following APIs:

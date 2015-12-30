@@ -1,6 +1,6 @@
 ---
 title: App Manager
-description: The AppMgr allows you manage the set of user applications that are installed on the device.
+description: The AppMgr administers the user applications installed on the device.
 publish: true
 ---
 
@@ -8,11 +8,11 @@ publish: true
 
 ### Overview
 
-The AppMgr Feature Type allows you manage the set of user applications that are installed on the device. On consumer Android devices, application management requires a device user to interact with UI presented on the device. In scenarios where a device is being managed by an MDM, it is often important for the MDM to tightly control which user applications are installed, without the need to involve a device user and without the consent or approval of a device user. The primary purpose of the AppMgr Feature Type is to manage user applications programmatically and silently. This enables an MDM to take full control of the set of user applications that are installed on the device.
+The AppMgr is used to administer the user applications installed on the device. The AppMgr can programmatically Install, Uninstall, Upgrade and Turn On and Off the launching of applications, all with no need for user interaction. It also allows the designation of an application as the Default Launcher (invoked when pressing the HOME Key), and can perform other tasks related to the management of applications.
 
-The AppMgr Feature Type allows you to Install, Uninstall, Upgrade, and Turn On and Off the launching of applications. It also allows you to designate an application as the Default Launcher, which is the application that is invoked when the device user presses the HOME Key, and perform other tasks related to the management of applications.
+On consumer Android devices, application management generally requires a device user to interact with a management UI presented on the device. Scenarios in which a device is being managed by an MDM often require the MDM to tightly control which user applications are installed without user consent or approval. This enables an MDM to take full control of user applications installed on the device.
 
-When considering the capabilities of the AppMgr Feature Type, it is important to understand that applications can be divided into two classes: System applications and User applications. System applications are those applications that are built-into the device and hence are always installed. User applications are those applications that are not built-into the device and hence must be installed onto a device before they can be used. Some functions of the AppMgr Feature Type apply only to System applications, some apply only to User applications, and some apply to both. Each function will identify the classes of applications to which it applies.
+When considering the capabilities of AppMgr, it is important to understand that applications can be divided into two classes: System applications and User applications. System applications are built into the device and hence are always installed. User applications are not built in, and hence must be installed onto a device before they can be used. Some AppMgr functions apply only to System applications, some only to User applications, and some apply to both. Each function will identify the classes of applications to which it applies.
 
 ### Main Functionality
 
@@ -142,7 +142,7 @@ Description:
 >* Not be terminated when a device user logs out
 >* Have only one copy of its data for all users, even if Multi-User Data Separation is enabled
 
->**Note:** Multi-User Mode is supported on all Zebra Android devices that support Zebra MX functionality, but the AccessMgr Feature Type currently does not support enabling Multi-User Mode. Multi-User Mode can be enabled on devices that support it, but only using unsupported tools or mechanisms that do not scale to large deployments. For this reason, the ability to use the AppMgr Feature Type to manage the Protected List may provide little or no immediate benefit. In the future, when the AccessMgr Feature Type is enhanced to support enabling Multi-User Mode, the ability to use the AppMgr Feature Type to manage the Protected List will likely be more meaningful.
+>**Note:** Multi-User Mode is supported on all Zebra Android devices that support Zebra MX functionality, but the AccessMgr currently does not support enabling Multi-User Mode. Multi-User Mode can be enabled on devices that support it, but only using unsupported tools or mechanisms that do not scale to large deployments. For this reason, the ability to use the AppMgr to manage the Protected List may provide little or no immediate benefit. In the future, when the AccessMgr is enhanced to support enabling Multi-User Mode, the ability to use the AppMgr to manage the Protected List will likely be more meaningful.
 
 <div class="parm-table">
  <table>
@@ -199,11 +199,11 @@ Parm name: AccessAppInfoAction
 
 Description: 
 
->Since the AppMgr Feature Type allows control of which applications are installed, it may be of concern that a device user can use the App Info section of the in-device System Settings Menu to impact an installed application.  A device user might terminate an application (Force Stop), remove application data (Clear Data), etc.  A device user might also Uninstall the application completely.  If an MDM is being used to tightly control the set of installed applications on a device, such activities by a device user might be undesirable.
+>Since the AppMgr allows control of which applications are installed, it may be of concern that a device user can use the App Info section of the in-device System Settings Menu to impact an installed application.  A device user might terminate an application (Force Stop), remove application data (Clear Data), etc.  A device user might also Uninstall the application completely.  If an MDM is being used to tightly control the set of installed applications on a device, such activities by a device user might be undesirable.
 
 >This may be compounded by the fact that the App Info section of the System Settings Menu may be reached from a variety of places in the device UI, not just from the main System Settings Menu.  For example, App Info can be reached for an application from the Android Recent Applications List or from a notification related to the application in the Android Notification Area.
 
->To prevent device users from using App Info to alter the configured set of installed applications, it may be desirable to prevent the device user from accessing App Info altogether.  Of course, you could use the AppMgr Feature Type to disable launching of the System Settings Menu application, which would prevent access to App Info.  But that would also prevent access to all other aspects of the System Settings Menu.  A more targeted approach would be to block only App Info.
+>To prevent device users from using App Info to alter the configured set of installed applications, it may be desirable to prevent the device user from accessing App Info altogether.  Of course, you could use the AppMgr to disable launching of the System Settings Menu application, which would prevent access to App Info.  But that would also prevent access to all other aspects of the System Settings Menu.  A more targeted approach would be to block only App Info.
 
 >This allows you to enable or disable all access to App Info for all applications without blocking access to other parts of the System Settings Menu.  By disabling App Info, you can prevent the device user from getting to App Info and using it to interfere with the configured set of installed applications.
 

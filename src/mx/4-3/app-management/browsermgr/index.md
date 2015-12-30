@@ -1,13 +1,12 @@
 ---
 title: Browser Manager
-description: The Browser Manager allows for configuration of browser settings such as the default home page.
+description: The Browser Manager permits the configuration of browser settings such as the default home page.
 ---
 
 ## About BrowserMgr
 
 ### Overview
-
-The Browser Manager allows for configuration of browser settings such as the default home page.
+The Browser Manager permits the configuration of browser settings such as the default home page.
 
 ### Main Functionality
 

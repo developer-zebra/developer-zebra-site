@@ -1,24 +1,24 @@
 ---
 title: Access Manager
-description: The AccessMgr enables the configuration of a device to control which user or applications can be used on a given device as well as what those applications can do.
+description: The AccessMgr enables the configuration of a device to control which user or application(s) can be used on a given device as well as what the application(s) can do.
 ---
 ## About AccessMgr
 
 ### Overview
 
-The AccessMgr Feature Type enables the configuration of a device to control which user, or "installable", applications can be used on a given device as well as what those applications can do.
+The AccessMgr enables the configuration of a device to control which user, or "installable" application(s) can be used on a given device as well as what the application(s) can do.
 
-A key concept within the AccessMgr Feature Type is the ability to turn Whitelisting on or off. By default, Whitelisting is turned off. When Whitelisting is turned off, no restrictions are imposed. When Whitelisting is turned on, using the AccessMgr Feature Type, various restrictions can be imposed.
+A key concept within the AccessMgr is the ability to turn Whitelisting on or off. Whitelisting is off by default, imposing no restrictions. When Whitelisting is turned on, various restrictions can be applied using the AccessMgr.
 
-Whitelisting is a process which allows only applications to run which are explicitly specified in a list, which is called the "white" list. All other applications are prohibited from running. The AccessMgr Feature Type allows the "white" list of applications that are allowed to be installed and/or launched to be maintained. The AccessMgr Feature Type also allows control of which applications are allowed to submit XML for all of the Feature Types, including the AccessMgr Feature Type.
+Whitelisting is a process that allows only those applications explicitly specified in a list to run. Applications not included in the "whitelist" are prohibited from running. The AccessMgr allows whitelist applications to be installed, launched and maintained. The AccessMgr also allows control of which applications are allowed to submit XML for all CSPs, including the AccessMgr itself.
 
-Whitelisting only applies to user applications and will never have any effect on System applications. System applications are those applications that are built into the device and hence are always installed. Some control of System applications can be accomplished by using the AppMgr Feature Type.
+Whitelisting applies only to user applications and will never have an effect on System applications. System applications are those applications that are built into the device and hence are always installed. Some control of System applications can be accomplished by using the AppMgr.
 
-User applications are those applications that are not built into the device and hence must be installed onto a device before they can be used. Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using the AppMgr Feature Type. Whitelisting can also be used to control whether a user application can be launched, via any means, once it is installed.
+User applications are those applications that are not built into the device and hence must be installed onto a device before they can be used. Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using the AppMgr. Whitelisting also can be used to control whether a user application can be launched (by any means) once it is installed.
 
->**Note:** It is important to understand that if a user application uses the AccessMgr Feature Type to turn on Whitelisting, then that application will become subject to Whitelisting. If the application does not add itself to the "white" list, then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
+>**Note:** It is important to understand that if a user application uses the AccessMgr to turn on Whitelisting, then that application will become subject to Whitelisting. If the application does not add itself to the "white" list, then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
 
-The AccessMgr Feature Type also provides the option to control whether the device user can access a full or reduced version of in-device System Settings Menu.
+The AccessMgr also provides the option to control whether the device user can access a full or reduced version of in-device System Settings Menu.
 
 ### Main Functionality
 
@@ -215,7 +215,7 @@ Description:
 
 >Select whether or not to add Packages to the "white" list. Adding an application to the "white" list using this parm does not allow the application to submit XML, that must be done using the separate parm "Add Packages and Allow to Submit XML".
 
->**Note:** It is important to understand that if an application uses the AccessMgr Feature Type to turn on Whitelisting, then that application will become subject to Whitelisting. If the application does not add itself to the "white" list, then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
+>**Note:** It is important to understand that if an application uses the AccessMgr to turn on Whitelisting, then that application will become subject to Whitelisting. If the application does not add itself to the "white" list, then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
 
 <div class="parm-table">
  <table>

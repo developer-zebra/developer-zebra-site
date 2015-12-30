@@ -1,12 +1,12 @@
 ---
 title: Audio Manager
-description: The AudioVolUIMgr allows you to add, delete and replace Audio Profiles, and to select the current Audio Profile that will be in effect on the device.
+description: The AudioVolUIMgr can add, delete and replace Audio Profiles, and can select the current Audio Profile that will be in effect on the device.
 ---
 
 ## About AudioVolUIMgr
 
 ### Overview
-The AudioVolUIMgr allows you to add, delete, and replace Audio Profiles, and to select the current Audio Profile that will be in effect on the device. It also allows you to modify the "Factory Preset" Audio Profile (which cannot be deleted), and to directly control the Mute and Vibrate states of the device, which are independent of all Audio Streams and Audio Profiles.
+The AudioVolUIMgr can add, delete and replace Audio Profiles, and can select the current Audio Profile that will be in effect on the device. It also allows you to modify the "Factory Preset" Audio Profile (which cannot be deleted), and to directly control the Mute and Vibrate states of the device, which are independent of all Audio Streams and Audio Profiles.
 
 Many Zebra Android devices contains a Zebra Audio Volume Control UI (ZVC) that allows a device user to adjust the volumes of various Audio Streams in the device. An Audio Stream is a channel via which audio can generated and physically output (e.g. to a speaker, headset, etc.). The number of Audio Streams that can be supported by an Android device is generally fixed. But the number of possible purposes for which audio could be generated is theoretically unlimited. As a result, a particular Audio Stream might be used for a purpose other than that for which that Audio Stream is normally used in Android or a given Audio Stream might need to be used for multiple purposes.
 
@@ -16,7 +16,9 @@ The ZVC allows configuration of the manner in which Audio Streams are identified
 
 The ZVC also provides support for Audio Profiles which define different scenarios or use cases in which one or more Audio Streams can be used. Each Audio Profile can configure the behavior of ZVC for some or all of the available Audio Streams. By selecting a defined Audio Profile, the configuration of ZVC for multiple Audio Streams can be configured in a single operation. For example, there might be one Audio Profile for working in a quiet office and another for working in a noisy warehouse.
 
-The ZVC can be invoked by a device user by pressing the physical volume control buttons on a device (when available) or by selecting the Sound->Volumes screen from the Android System Settings Menu. The UI presented by the ZVC when it is invoked by the device user will be determined based on the most recent configuration applied to ZVC using the AudioVolUIMgr, in particular the set of defined Audio Profiles and the currently selected Audio Profile. The following Audio Streams are supported:
+The ZVC can be invoked by a device user by pressing the physical volume control buttons on a device (when available) or by selecting the Sound->Volumes screen from the Android System Settings Menu. The UI presented by the ZVC when it is invoked by the device user will be determined based on the most recent configuration applied to ZVC using the AudioVolUIMgr, in particular the set of defined Audio Profiles and the currently selected Audio Profile. 
+
+The following Audio Streams are supported:
 
 * STREAM_MUSIC - The Android audio stream typically used for music playback.
 * STREAM_RING - The Android audio stream typically used for the incoming call notification.

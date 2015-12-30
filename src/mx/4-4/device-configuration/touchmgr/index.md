@@ -6,7 +6,6 @@ description: The TouchMgr sets the Touch Mode on a device (ex. Finger or Stylus)
 ## About TouchMgr
 
 ### Overview
-
 The TouchMgr sets the Touch Mode on a device to control the sensitivity of the touch panel and thus to prepare the device for different usage scenarios.
 
 Most Android devices have touch panels that allow interaction with the device and its applications. Some Zebra Android devices have the ability to adjust the sensitivity of the touch panel to suit different usage scenarios. For example, when a device might sometimes be controlled with an ungloved finger and at other times with a stylus, the touch panel might need to be configured differently than for accepting finger input that alternates between gloved and ungloved.

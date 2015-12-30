@@ -10,7 +10,6 @@ publish: true
 
 The ScanMode Manager sets the Scan Mode to Normal, Scan 1, or Scan 2.
 
-
 ##Parameter Notes
 ### Scan Mode Action
 Pivotal parm: No

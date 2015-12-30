@@ -1,17 +1,18 @@
 ---
 title: Camera Manager
-description: The CameraMgr allows you to control what cameras, if any, will be allowed to be used.
+description: The CameraMgr controls access to the device camera(s).
 ---
 
 ## About CameraMgr
 
 ### Overview
+The CameraMgr controls access to the device camera(s).
 
 Many Zebra Android devices are equipped with mechanisms that may be used to take pictures, scan barcodes, and/or capture documents. Some Zebra Android devices may also be equipped with special-purpose mechanisms, such as lasers or imagers, which are optimized to scan barcodes. In some sensitive environments, it may be necessary to restrict the use of devices from taking pictures or capturing documents to avoid potential security risks.
 
-The CameraMgr Feature Type allows you to control which of the mechanisms supported by a device can be used by the device user to take pictures or capture documents, and hence are considered to be cameras. For example you could prevent the device user from using all cameras on the device or selectively control which cameras the device user can use.
+The CameraMgr controls which of the mechanisms supported by a device can be used by the device user to take pictures or capture documents, and hence are considered to be cameras. CameraMgr can prevent the use of all cameras on the device or selectively control which cameras can be used.
 
-**Note:** If a device is equipped with a mechanism that can be used to take pictures or capture documents, then that mechanism will be considered to be a camera, for the purposes of the CameraMgr Feature Type. For example, if a device is equipped with a CCD-based imager that is primarily designed to scan barcodes but also supports the ability to take pictures or capture documents, then that imager will be considered to be a camera and hence will need to support enable and disable. But if no method was available to use that imager to take pictures or capture documents, then it would not be considered a cameras, since it would not introduce the same camera-oriented security risks.
+**Note:** If a device is equipped with a mechanism that can be used to take pictures or capture documents, then that mechanism will be considered to be a camera, for the purposes of the CameraMgr. For example, if a device is equipped with a CCD-based imager that is primarily designed to scan barcodes but also supports the ability to take pictures or capture documents, then that imager will be considered to be a camera and hence will need to support enable and disable. But if no method was available to use that imager to take pictures or capture documents, then it would not be considered a camera, since it would not introduce the same camera-oriented security risks.
 
 ### Main Functionality
 
@@ -27,7 +28,7 @@ Description:
 
 >This parm will enable or disable use of all of the cameras that are on the device, which may affect cameras that are not explicitly listed. In other words, this will globally allow or disallow all camera support.
 
->**Note:** Enabling or disabling all cameras will affect all mechanism that are considered cameras that are supported on a device. This will be the case even if that device has more cameras than can be individually controlled on that device using the CameraMgr Feature Type. For example, if a device had a front facing camera, a rear facing, and a side-facing imager that can capture documents, all three would be considered cameras would be enabled or disabled together. This would be the cases even the side facing imager could not be enabled or disabled individually. Enabling or disabling all cameras may override prior enabling or disabling of individual cameras using the CameraMgr Feature Type or may be overridden for individual cameras by subsequent use of the CameraMgr Feature Type.
+>**Note:** Enabling or disabling all cameras will affect all mechanism that are considered cameras that are supported on a device. This will be the case even if that device has more cameras than can be individually controlled on that device using the CameraMgr. For example, if a device had a front facing camera, a rear facing, and a side-facing imager that can capture documents, all three would be considered cameras would be enabled or disabled together. This would be the cases even the side facing imager could not be enabled or disabled individually. Enabling or disabling all cameras may override prior enabling or disabling of individual cameras using the CameraMgr or may be overridden for individual cameras by subsequent use of the CameraMgr.
 
 <div class="parm-table">
  <table>

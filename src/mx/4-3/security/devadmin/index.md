@@ -1,16 +1,17 @@
 ---
 title: Device Admin 
-description: The DevAdmin allows you to perform certain device administration tasks directly like Screen-Lock timeout interval.
+description: The DevAdmin provides direct access to certain device administration tasks such as the Screen-Lock timeout interval.
 ---
 ## About DevAdmin
 
 ### Overview
+The DevAdmin provides direct access to certain device administration tasks such as the Screen-Lock timeout interval.
 
-Android defines some APIs called the Device Administration APIs, as implemented within the DevicePolicyManager class. These APIs enable certain applications to perform various tasks that can affect the security of the device.  Since the use of these APIs can impact device security, they are restricted to use by specially approved applications, called Device Administrators. If an application is written to conform to the DeviceAdminReceiver model and is approved to become a Device Administrator, then it can use some or all of the Device Administration APIs.
+Android defines some APIs as Device Administration APIs, as implemented within the DevicePolicyManager class. These APIs enable certain applications to perform various tasks that can affect the security of the device. As such, they are restricted to specially approved applications, called Device Administrators. If an application is written to conform to the DeviceAdminReceiver model and is approved to become a Device Administrator, then it can use some or all of the Device Administration APIs.
 
-In standard Android devices, an application that is written to conform to the DeviceAdminReceiver model must explicitly request the device user to approve it as a Device Administrator. This is based on the assumption that the device user is knowledgeable and is in the best position to make a determination. For a device that is owned or used by a single device user, that assumption may be reasonable. For an Enterprise-owned device that may be shared amongst multiple device users, that assumption may be a poor one.
+In standard Android devices, an application that is written to conform to the DeviceAdminReceiver model must explicitly request the device user to approve it as a Device Administrator. This is based on the assumption that the device user is knowledgeable enough to make this determination. For a device that is owned and/or used by a single user, that assumption might be reasonable. For an Enterprise-owned device that might be shared among multiple device users, that assumption may be a poor one.
 
-The DevAdmin Feature Type allows you to perform certain device administration tasks directly. It also allows you to programmatically approve an application that is written to conform to the DeviceAdminReceiver model as a Device Administrator, without involving or notifying the device user. This allows an Enterprise to grant access to the Device Administration APIs to trusted applications, and thus enable those applications to perform device administration tasks.
+The DevAdmin provides direct access to certain device administration tasks directly and allows programmatic approval as Device Administrator of applications written to conform to the DeviceAdminReceiver model without involving or notifying the device user. This allows an Enterprise to grant their trusted applications with access to the Device Administration APIs, thus enabling those applications to perform device administration tasks.
 
 ### Main Functionality
 
@@ -26,7 +27,7 @@ Parm name: ScreenLockTimeoutInterval
 
 Description: 
 
->Android devices support two levels of inactivity timeout that can be controlled independently. The Display Screen Timeout, which can be controlled via the DisplayMgr Feature Type, controls the amount of device user inactivity that must elapse before the device display screen is automatically turned off. The Screen Lock Timeout, which can be controlled by the DevAdmin Feature Type, controls how long the device screen must remain off before a screen lock will occur.
+>Android devices support two levels of inactivity timeout that can be controlled independently. The Display Screen Timeout, which can be controlled via the DisplayMgr, controls the amount of device user inactivity that must elapse before the device display screen is automatically turned off. The Screen Lock Timeout, which can be controlled by the DevAdmin, controls how long the device screen must remain off before a screen lock will occur.
 
 >When the device screen is turned back on, manually by some sort of device user activity, or programmatically due to some device event, the result will depend on how long the device screen was off and the value set for the Screen Lock Timeout. If the display screen was off for less than the Screen Lock Timeout, then the screen will not be locked (and hence will not need to be unlocked by the device user). If the display screen was off for at least the Screen Lock Timeout, then the screen will be locked (and hence will need to be unlocked by the device user).
 
@@ -109,7 +110,7 @@ Description:
 
 >For devices that do not have GMS, turning off the Unknown Sources Option would prevent device users from loading applications at all, since they do not have support for Google Play. Zebra devices that do not have GMS will typically default the Unknown Sources Option on by default so device users will have at least some method to install applications. The Unknown Sources Option can then be turned off to disallow device users from loading applications at all.
 
->**Note:** The Unknown Sources Option only affects whether device users are allowed to install applications. It does not have any effect on whether applications can be programmatically installed, such as using the AppMgr Feature Type. The presumption is that any application that can be trusted to install other applications without involving or notifying the device user can be trusted to install only suitable applications and therefore whether those applications come from the Google Play Store or not is immaterial.
+>**Note:** The Unknown Sources Option only affects whether device users are allowed to install applications. It does not have any effect on whether applications can be programmatically installed, such as using the AppMgr. The presumption is that any application that can be trusted to install other applications without involving or notifying the device user can be trusted to install only suitable applications and therefore whether those applications come from the Google Play Store or not is immaterial.
 
 >This parm allows you to turn the Unknown Sources Option on or off, both on devices that have GMS and those that do not have GMS.
 
@@ -149,7 +150,7 @@ Description:
 
 >When an application that is written to conform to the DeviceAdminReceiver model is approved to be a Device Administrator, it will be notified so it can begin using the Device Administration APIs. When Device Administrator approval is removed from such an application, it will be notified that it must stop using the Device Administration APIs.
 
->**Note:** The ability to control approve or remove approval for an application using the DevAdmin Feature Type does not prevent the device user from approving or removing approval for an application from the System Settings Menu. The effect on an application of approval or removal of approval is the same whether initiated by the device user or by the DevAdmin Feature Type.
+>**Note:** The ability to control approve or remove approval for an application using the DevAdmin does not prevent the device user from approving or removing approval for an application from the System Settings Menu. The effect on an application of approval or removal of approval is the same whether initiated by the device user or by the DevAdmin.
 
 <div class="parm-table">
  <table>

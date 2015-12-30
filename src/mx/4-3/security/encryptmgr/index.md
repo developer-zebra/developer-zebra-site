@@ -1,11 +1,12 @@
 ---
 title: Encryption Manager
-description: The EncryptMgr allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
+description: The EncryptMgr allows apps to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
 ---
 
 ## About EncryptMgr
 
 ### Overview
+The EncryptMgr allows apps to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete Encrypted File Systems (EFSes).
 
 To configure encryption, certain questions must be answered:
 
@@ -33,7 +34,7 @@ Zebra Android devices support encrypting data that is stored in the device file 
 
 Zebra Android devices have a Key Storage Database of named encryption keys.  Each Named Key has an associated Key Value that can be used to encrypt a Full Storage Card and/or to encrypt any number of EFSes.  When activating Full Storage Card Encryption or creating an EFS, a Named Key must be specified and must exist in the Key Storage Database.  If a Named Key is removed from the Key Storage Database, Full Storage Card Encryption and/or EFSes that are encrypted using that Named Key will become inaccessible.  Adding the Named Key (with the same Key Value) will restore accessibility.
 
-The EncryptMgr Feature Type allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
+The EncryptMgr allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
 
 ### Main Functionality
 

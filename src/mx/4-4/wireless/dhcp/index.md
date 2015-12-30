@@ -1,18 +1,17 @@
 ---
 title: DHCP Manager
-description: The DhcpOptionMgr allows you to configure DHCP Options.
+description: The DhcpOptionMgr allows an app to configure DHCP options.
 ---
 ## About DhcpOptionMgr
 
 ### Overview
+The DhcpOptionMgr allows an app to configure DHCP options.
 
 The Dynamic Host Configuration Protocol (DHCP) is a standardized network protocol used on Internet Protocol (IP) networks for dynamically distributing network configuration parameters, such as IP addresses for interfaces and services, thus reducing the need for a network administrator or a user to configure these settings manually.
 
 When using DHCP on a device, a DHCP Client on the device sends a DHCP Request to a DHCP Server and receives back a DHCP Acknowledgment. A DHCP Request sent by a device can contain information about the device or the DHCP Client or can contain additional requests for additional from the DHCP Server. A DHCP Acknowledgment sent by the DHCP Server contains the IP Address assigned to the device by the DHCP Server, along with any additional information requested by the device in the DHCP Request.
 
 DHCP Options are variable length strings that are identified by DHCP Options Numbers that can be included in a DHCP Request or a DHCP Acknowledgment to convey information between a DHCP Client and a DHCP Server. From the point of view of the device where the DHCP Client is running, a DHCP Option can support a mode of Write (if the DHCP Client sends the option to the DHCP Server in the DHCP Request) or Read (if the DHCP Client receives information from the DHCP Server in the DHCP Acknowledgment). DHCP can support a wide variety of DHCP Options, including custom options that can be defined by equipment vendors or end customers.
-
-The DhcpOptionMgr Feature Type allows you to configure those DHCP Options that are configurable on Zebra Android devices.
 
 ### Main Functionality
 
@@ -121,7 +120,7 @@ The DhcpOptionMgr Feature Type allows you to configure those DHCP Options that a
 </table>
 </div>	
 
->**Note:**  DHCP Options that are shown as not configurable in the above table are supported on Zebra Android devices, but are always enabled and their operation cannot be altered in any way using the DhcpOptionMgr Feature Type.
+>**Note:**  DHCP Options that are shown as not configurable in the above table are supported on Zebra Android devices, but are always enabled and their operation cannot be altered in any way using the DhcpOptionMgr.
 
 
 ##Parameter Notes
@@ -266,7 +265,7 @@ Description:
 
 >This parm allows you to control whether a request for a NTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the NTP Server Address to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the value returned by this DHCP Option to configure the device to acquire the Date and Time from the returned NTP Server. To configure a device to acquire the Date and Time from the NTP Server, the value of the returned NTP Server Address would need to be obtained using the DhcpOptionMgr Feature Type and then used to configure AutoTime via the Clock Feature Type.
+>**Note:** The DHCP Client does not automatically use the value returned by this DHCP Option to configure the device to acquire the Date and Time from the returned NTP Server. To configure a device to acquire the Date and Time from the NTP Server, the value of the returned NTP Server Address would need to be obtained using the DhcpOptionMgr and then used to configure AutoTime via the Clock.
 
 <div class="parm-table">
  <table>
@@ -304,7 +303,7 @@ Description:
 
 >This parm allows you to control whether a request for a TFTP Server Name will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Name to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the TFTP Server Name to perform any file transfers or configuration. To configure a device using TFTP, the TFTP Server Name would need to be acquired using the DhcpOptionMgr Feature Type and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
+>**Note:** The DHCP Client does not automatically use the TFTP Server Name to perform any file transfers or configuration. To configure a device using TFTP, the TFTP Server Name would need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
 
 <div class="parm-table">
  <table>
@@ -342,7 +341,7 @@ Description:
 
 >This parm allows you to control whether a request for a Boot File name will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Boot File name to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the Boot File name to perform any file transfers or configuration. To configure a device, a Boot File name and a TFTP Server Name would both be need to be acquired using the DhcpOptionMgr Feature Type and then provided to a TFTP Client that could perform the transfer of the Boot File and then perform any desired configuration using that file.
+>**Note:** The DHCP Client does not automatically use the Boot File name to perform any file transfers or configuration. To configure a device, a Boot File name and a TFTP Server Name would both be need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of the Boot File and then perform any desired configuration using that file.
 
 <div class="parm-table">
  <table>
@@ -380,7 +379,7 @@ Description:
 
 >This parm allows you to control whether a request for the Domain Search list will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Domain Search list for the network to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the Domain Search List to configure the DNS Client to resolve names based on the list. This may be a future enhancement, when the DNS Client provides a way to configure it to use such a list. In the meantime, if name resolution needs to be performed based on this list, it would have to be implemented at an application level. An application would need to acquire the Domain Search List using the DhcpOptionMgr Feature Type and then utilize the information provided in that list to drive an explicit process of requesting name resolution from the DNS Servers for the listed domains
+>**Note:** The DHCP Client does not automatically use the Domain Search List to configure the DNS Client to resolve names based on the list. This may be a future enhancement, when the DNS Client provides a way to configure it to use such a list. In the meantime, if name resolution needs to be performed based on this list, it would have to be implemented at an application level. An application would need to acquire the Domain Search List using the DhcpOptionMgr and then utilize the information provided in that list to drive an explicit process of requesting name resolution from the DNS Servers for the listed domains
 
 <div class="parm-table">
  <table>
@@ -418,7 +417,7 @@ Description:
 
 >This parm allows you to control whether a request for a TFTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the TFTP Server Address to perform any file transfers or configuration.  To configure a device using TFTP, the TFTP Server Address would need to be acquired using the DhcpOptionMgr Feature Type and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
+>**Note:** The DHCP Client does not automatically use the TFTP Server Address to perform any file transfers or configuration.  To configure a device using TFTP, the TFTP Server Address would need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
 
 <div class="parm-table">
  <table>

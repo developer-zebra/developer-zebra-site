@@ -9,7 +9,7 @@ description: The CspMgr allows a query of the system to determine the CSPs prese
 
 The CspMgr allows a query of the system to determine the CSPs present on a given device.
 
-The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML Documents to the MXMF, which will route sections of the XML to appropriate CSPs. Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
+The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML documents to the MXMF, which will route sections of the XML to appropriate CSPs. Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
 
 The capabilities of a CSP present on a given device can be accessed by using the corresponding feature via the MDM Toolkit. For example, the CameraMgr can be used to access the functionality of the CameraMgr CSP. The MXMS present on a given device will include many CSPs. Different device models, or devices with different versions of Android, may include different sets of available CSPs. The CspMgr allows an app to determine the CSPs present and thereby to determine which MDM Toolkit features can be used on that device.
 
@@ -25,10 +25,9 @@ Description:
 
 > This parm will contain the CSP name of each CSP that is available for use on the device. Since there is a one-to-one correspondence between CSP names and features in the MDM Toolkit, this is also the list of features that can be successfully used on the device.
 
->Knowing the set of CSPs that are available on a device can be useful for an MDM Agent to avoid submitting Request XML Documents that would fail due to features that are not supported by that device. It may be preferable to perform a pre-check and avoid generating XML that uses unsupported features rather that submitting XML and detecting and handling failures due to unsupported features.
+>Knowing the set of CSPs that are available on a device can be useful for an MDM Agent to avoid submitting Request XML documents that would fail due to features that are not supported by that device. It may be preferable to perform a pre-check and avoid generating XML that uses unsupported features rather than submitting XML and detecting and handling failures due to unsupported features.
 
 >Knowing the set of CSPs that are available on a device can be useful for an MDM Server to better understand the capabilities of a given device. The MDM Server might use this information to determine which optional features to expose to an Administrator via the Management Console. Or, the MDM Server might display this information to an Administrator to help determine which operations make sense to perform on which devices.
-
 
 ###Package
 Parm name: package

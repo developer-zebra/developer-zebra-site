@@ -1,15 +1,17 @@
 ---
 title: CSP Manager
-description: The CspMgr allows you to query the system to determine the set of CSPs that are present on a given device.
+description: The CspMgr allows a query of the system to determine the CSPs present on a given device.
 ---
 
 ## About CspMgr
 
 ### Overview
 
-The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML Documents to the MXMF, which will route sections of the XML to appropriate CSPs.  Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
+The CspMgr allows a query of the system to determine the CSPs present on a given device.
 
-The capabilities of a CSP that is present on a given device can be accessed by using the corresponding Feature Type via the MDM Toolkit. For example, the CameraMgr Feature type can be used to access the functionality of the CameraMgr CSP. The MXMS that is present on a given device will include many CSPs.  Different device models, or devices with different versions of Android, may include different sets of available CSPs. The CspMgr Feature Type allows you to query the CspMgr CSP and thereby determine the set of CSPs that are present on a given device. This allows you to determine which MDM Toolkit Feature Types can be used on that device.
+The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML documents to the MXMF, which will route sections of the XML to appropriate CSPs. Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
+
+The capabilities of a CSP present on a given device can be accessed by using the corresponding feature via the MDM Toolkit. For example, the CameraMgr can be used to access the functionality of the CameraMgr CSP. The MXMS present on a given device will include many CSPs. Different device models, or devices with different versions of Android, may include different sets of available CSPs. The CspMgr allows an app to determine the CSPs present and thereby to determine which MDM Toolkit features can be used on that device.
 
 ### Main Functionality
 
@@ -21,26 +23,25 @@ Parm name: characteristic
 
 Description:
 
-> This parm will contain the CSP name of each CSP that is available for use on the device. Since there is a one-to-one correspondence between CSP names and Feature Types in the MDM Toolkit, this is also the list of Feature Types that can be successfully used on the device.
+> This parm will contain the CSP name of each CSP that is available for use on the device. Since there is a one-to-one correspondence between CSP names and features in the MDM Toolkit, this is also the list of features that can be successfully used on the device.
 
->Knowing the set of CSPs that are available on a device can be useful for an MDM Agent to avoid submitting Request XML Documents that would fail due to Feature Types that are not supported by that device. It may be preferable to perform a pre-check and avoid generating XML that uses unsupported Feature Type rather that submitting XML and detecting and handling failures due to unsupported Feature Types.
+>Knowing the set of CSPs that are available on a device can be useful for an MDM Agent to avoid submitting Request XML documents that would fail due to features that are not supported by that device. It may be preferable to perform a pre-check and avoid generating XML that uses unsupported features rather than submitting XML and detecting and handling failures due to unsupported features.
 
 >Knowing the set of CSPs that are available on a device can be useful for an MDM Server to better understand the capabilities of a given device. The MDM Server might use this information to determine which optional features to expose to an Administrator via the Management Console. Or, the MDM Server might display this information to an Administrator to help determine which operations make sense to perform on which devices.
-
 
 ###Package
 Parm name: package
 
 Description: 
 
->This parm will contain the Android Package Name of each of the registered Feature Types. This parm is generally less useful to an MDM but may be useful in some circumstances, such as when troubleshooting problems with management functionality.
+>This parm will contain the Android Package Name of each of the registered CSP. This parm is generally less useful to an MDM but may be useful in some circumstances, such as when troubleshooting problems with management functionality.
 
 ###Class
 Parm name: class
 
 Description: 
 
->This parm will contain the Android Class Name of each of the registered Feature Types. This parm is generally less useful to an MDM but may be useful in some circumstances, such as when troubleshooting problems with management functionality.
+>This parm will contain the Android Class Name of each of the registered CSP. This parm is generally less useful to an MDM but may be useful in some circumstances, such as when troubleshooting problems with management functionality.
 
 ##Queries
 

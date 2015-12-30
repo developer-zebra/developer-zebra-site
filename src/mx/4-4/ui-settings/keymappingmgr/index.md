@@ -1,15 +1,14 @@
 ---
 title: KeyMapping Manager
-description: The KeyMappingMgr allows you to modify what behavior a given key will exhibit when pressed.
+description: The KeyMappingMgr allows an app to modify the behavior of a given key when pressed.
 ---
 
 ## About KeyMappingMgr
 
 ### Overview
+The KeyMappingMgr allows an app to modify the behavior of a given key when pressed.
 
-The KeyMappingMgr Feature Type allows you to modify what behavior a given key will exhibit when pressed.
-
-Key Mapping is a capability offered by Zebra Android devices allows you to define the Key Behavior associated with a given Key, when that Key is pressed in a given Key State. The Current Key State consists of one or more Key State Modifiers that may have been applied as the result of previous presses of Modifier Keys. For example, a device with a Blue Key may set/clear the Blue Key State Modifier in the Current Key State each time the Blue Key is pressed. Some devices may support having multiple Key State Modifiers set in the Current Key State and other may not.
+Key Mapping is a capability offered by Zebra Android devices that allows you to define the Key Behavior associated with a given Key when that Key is pressed in a given Key State. The Current Key State consists of one or more Key State Modifiers that may have been applied as the result of previous presses of Modifier Keys. For example, a device with a Blue Key may set/clear the Blue Key State Modifier in the Current Key State each time the Blue Key is pressed. Some devices may support having multiple Key State Modifiers set in the Current Key State and other may not.
 
 The Key Behavior desired for a particular Key when it is pressed in a particular Key State can be defined by a Key Mapping in the Key Mapping Table. There are Key Mapping Tables associated with specific Key State Modifier that can be set within the Current Key State. A Key Mapping for a Key that is defined in a given Key Mapping Table will only be used when the Key is pressed while the associated Key Modifier associated with that Key Mapping Table is set in the Current Key State. For example, when a Key is pressed while the Blue Key State Modifier is set in the Current Key State, the Blue Key Mapping Table would be searched to find a Key Mapping for that pressed Key.
 
@@ -19,7 +18,7 @@ Key processing begins by checking the Current Key State at the time the Key was 
 
 If all Key Mapping Tables associated with Key State Modifiers are searched without finding a Key Mapping for the pressed Key, then the Base Key State Key Mapping Table is searched. If no Key Mapping can for the pressed Key can be found during searching, then the default Android Key Behavior will be performed for the pressed Key, but this will seldom be the case, since most devices will have Default Key Mappings for all Keys defined in the Base Key State Mapping Table.
 
-Not all devices will support all Key State Modifiers and hence not all devices will support all Key Mapping Tables. Some devices may support multiple Key State Modifiers and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports.  All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. The Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State:
+Not all devices will support all Key State Modifiers and hence not all devices will support all Key Mapping Tables. Some devices may support multiple Key State Modifiers and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports. All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. The Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State:
 
 1. Blue Key State Modifier and Blue Key Mapping Table
 
@@ -53,11 +52,11 @@ Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be
 
 * Graphically Labeled Key
 
-	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key.  For example, a Key that is physically labeled with an icon of a house, would be identified by the text description "HOME".
+	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key. For example, a Key that is physically labeled with an icon of a house, would be identified by the text description "HOME".
 	
 * Color Labeled Key
 
-	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key.  For example, a Key that is physically colored blue would be identified by the text description "BLUE".
+	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key. For example, a Key that is physically colored blue would be identified by the text description "BLUE".
 	
 * Unlabeled Key
 
@@ -79,7 +78,7 @@ Each Key Mapping specifies a single Key Behavior that should be performed for a 
 
 	A fixed set of eight (8) Triggers are supported and these are designated as Trigger 1 through Trigger 8. Triggers are most commonly used to provide a low-latency notification so that high priority events can be initiated. Various System applications on a device may register to be notified when various Triggers are sent. For example, the Scanning Subsystem on most devices uses Trigger 1 to initiate Barcode Scanning.
 
-	Normal (non-System) applications cannot perform registration for Triggers and hence cannot utilize the "Sent trigger" Key Behavior to invoke their application functionality. Such applications should use the "Launch application or "Send Intent" Key Behaviors instead. But using the KeyMappingMgr Feature Type, a non-System application can determine what Key(s), pressed in what Key State(s) will produce Triggers for which System applications are registered.
+	Normal (non-System) applications cannot perform registration for Triggers and hence cannot utilize the "Sent trigger" Key Behavior to invoke their application functionality. Such applications should use the "Launch application or "Send Intent" Key Behaviors instead. But using the KeyMappingMgr, a non-System application can determine what Key(s), pressed in what Key State(s) will produce Triggers for which System applications are registered.
 	
 * Launch application
 
@@ -89,11 +88,11 @@ Each Key Mapping specifies a single Key Behavior that should be performed for a 
 
 	This Key Behavior indicates that the Key pressed should send an Intent, which could be sent to an application using startActivity or sendBroadcast. Supporting both types of Intents provides flexibility so you can launch a variety of applications. In addition, you can configure various parameters for constructing the Intent to match it to the needs of an application, including attaching an extra data value to communicate information about the desired action the application should perform.
 
-	Since Intents are extremely flexible, an existing application might require an Intent that cannot be described via the rather simplistic capabilities inside the KeyMappingMgr Feature Type. While it may be possible to meet the needs of some existing applications, the "Send Intent" Key Behavior is really designed to send Intents that are specifically designed and added to applications for this purpose.
+	Since Intents are extremely flexible, an existing application might require an Intent that cannot be described via the rather simplistic capabilities inside the KeyMappingMgr. While it may be possible to meet the needs of some existing applications, the "Send Intent" Key Behavior is really designed to send Intents that are specifically designed and added to applications for this purpose.
 	
 * Suppress key
 
-	This Key Behavior indicates that the Key pressed should be completely ignored and should produce no result. In essence, this results in  essentially identical results as if the Key was never pressed.
+	This Key Behavior indicates that the Key pressed should be completely ignored and should produce no result. In essence, this results in essentially identical results as if the Key was never pressed.
 	
 * Reset to default
 
@@ -143,7 +142,7 @@ Description:
 
 >This parm allows you to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, you must specify a parm value that contains a Key Identifier that is listed in the following table.
 
->**Note:** Not all devices physically support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, you can query the KeyMappingMgr Feature Type to acquire a list of all Key Identifiers that are supported on that device.
+>**Note:** Not all devices physically support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, you can query the KeyMappingMgr to acquire a list of all Key Identifiers that are supported on that device.
 
 <div class="parm-table">
  <table>
@@ -939,7 +938,7 @@ Description:
 
 >This value allows you to specify which Key Code will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The value must be selected from the following table.
 
->**Note:** If an attempt is made to specify a Key Behavior for a Key Mapping Table that is not supported on a given device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Key Mapping Tables supported on that device. Alternately, you can query the KeyMappingMgr Feature Type to acquire a list of all Key Mapping Tables that are supported on that device.
+>**Note:** If an attempt is made to specify a Key Behavior for a Key Mapping Table that is not supported on a given device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Key Mapping Tables supported on that device. Alternately, you can query the KeyMappingMgr to acquire a list of all Key Mapping Tables that are supported on that device.
 
 <div class="parm-table">
  <table>
@@ -2573,7 +2572,7 @@ Parm value input rules:
 
 ###Key Swap Example
 
-The first feature of the following Request XML Document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
+The first feature of the following Request XML document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
 
 Input
 

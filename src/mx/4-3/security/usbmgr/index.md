@@ -1,14 +1,13 @@
 ---
 title: USB Manager
-description: The UsbMgr allows you to control which USB functions can be used on the device.
+description: The UsbMgr controls which USB functions can be used on the device.
 ---
 ## About UsbMgr
 
 ### Overview
+The UsbMgr controls which USB functions can be used on the device.
 
-Android devices generally have one or more Universal Serial Bus (USB) ports that can be used for various purposes. A given USB port could implement "Host" mode, which is used to connect various USB peripherals (e.g. mice, keyboards, USB storage devices) to the Android device. A given USB port could implement "Peripheral" mode, which is used to connect the Android device to a Host, such as a PC.  A given USB port could implement On The Go (OTG) support, which can act in either "Host" or "Peripheral" mode, based on the cable connected.
-
-The UsbMgr Feature Type allows you to control which USB functions can be used on the device.
+Android devices generally have one or more Universal Serial Bus (USB) ports that can be used for various purposes. A given USB port could implement "Host" mode, which is used to connect various USB peripherals (e.g. mice, keyboards, USB storage devices) to the Android device. A given USB port could implement "Peripheral" mode, which is used to connect the Android device to a Host, such as a PC. A given USB port could implement On The Go (OTG) support, which can act in either "Host" or "Peripheral" mode, based on the type of cable connected.
 
 ### Main Functionality
 

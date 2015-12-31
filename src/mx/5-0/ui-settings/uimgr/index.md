@@ -1,14 +1,15 @@
 ---
 title: UI Manager
-description: The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurations, like Clipboard behavior.
+description: The UiMgr provides control of miscellaneous UI configuration settings, such as Clipboard behavior.
 ---
 ## About UiMgr
 
 ### Overview
+The UiMgr provides control of miscellaneous UI configuration settings, such as Clipboard behavior.
 
-Android devices contain a variety of UI elements spread throughout the OS and many different System Applications. In some cases, one or more of these "standard" UI elements may be unacceptable for devices used in Enterprise situations or just may hinder the productivity of device users attempting to use devices for specific business tasks.
+Android devices contain a variety of UI elements spread throughout the OS and many different System Applications. In some cases, one or more of these "standard" UI elements may be undesireable for devices deployed in Enterprise situations or may be thought to hinder the productivity of device users engaged in specific business tasks.
 
-The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurations that have been requested by various customers because the default Android behaviors were unacceptable or less than optimal.
+The UiMgr provides control over these various UI elements as requested by various customers because the default Android behaviors were deemed unacceptable or less than optimal.
 
 ### Main Functionality
 
@@ -149,7 +150,7 @@ Description:
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-  <td><p>This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application.</p><p><b>Note:</b> Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the <a href="../edge/index.html#guide-csp-keymappingmgr">KeyMappingMgr Feature Type</a> can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).</p></td>
+  <td><p>This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application.</p><p><b>Note:</b> Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the <a href="../edge/index.html#guide-csp-keymappingmgr">KeyMappingMgr</a> can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).</p></td>
   </tr>
 </table>
 </div>  

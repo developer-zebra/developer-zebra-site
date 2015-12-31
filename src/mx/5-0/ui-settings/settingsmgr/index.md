@@ -1,16 +1,17 @@
 ---
 title: Settings Manager
-description: The SettingsMgr allows you to control access to items on the System Settings Menu.
+description: The SettingsMgr controls access to specific items in the System Settings Menu.
 ---
 ## About SettingsMgr
 
 ### Overview
+The SettingsMgr controls access to specific items in the System Settings Menu.
 
-All Android devices provide an in-device System Settings Menu that presents a user interface that a device user can use to configure a variety of Setting Settings. Some of these System Settings may be sensitive in nature and could lead to undesired consequences if a device user changed them inappropriately.
+All Android devices provide an in-device System Settings Menu that a device user can access to configure a variety of System Settings. Some of these System Settings may be sensitive in nature and could lead to undesired consequences if a device user changed them inappropriately.
 
-Zebra Android devices provide a few ways to prevent a device user from making unwanted changes via the System Settings Menu. The [AppMgr Feature Type](../guide/csp/app) could be used to disable launching of the System Settings Menu application altogether. Or, the [AccessMgr Feature Type](../guide/csp/access) could be used to restrict the device user to a very limited version of the System Settings Menu with a reduced set of the capabilities (e.g. Display, Volume, About). But in some cases, it may be important to allow the device user to configure more System Settings while preventing configuration of especially sensitive ones.
+Zebra Android devices provide a few ways to prevent a device user from making unwanted changes via the System Settings Menu. The [AppMgr](../guide/csp/app) can be used to disable launching of the System Settings Menu application altogether. The [AccessMgr](../guide/csp/access) can restrict the device user to a limited version of the System Settings Menu with a reduced set of capabilities (e.g. Display, Volume, About). In some cases it may be important to allow the device user to configure more System Settings while preventing configuration of especially sensitive ones.
 
-The SettingsMgr Feature Type allows you to individually control whether the user can use selected especially sensitive System Settings via the System Settings Menu.
+The SettingsMgr provides individual control over access to select System Settings in the System Settings Menu.
 
 ### Main Functionality
 

@@ -48,19 +48,19 @@ Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be
 
 * Text Labeled Key
 
-	For a Key that is physically labeled with a text legend, the label is used to identify the Key. For example, a Key that is physically labeled with the letter "A" would be identified by that letter. In some cases, a Key might be physically labeled with an abbreviated text legend. For example, a Key that is physically labeled "BKSP" would be identified by the text description "BACKSPACE".
+	For a Key that is physically labeled with a text legend, the label is used to identify the Key. For example, a Key that is physically labeled with the letter "A" would be identified by that letter. In some cases, a Key might be physically labeled with an abbreviated text legend. For example, a Key that is physically labeled "BKSP" would be identified as "BACKSPACE" by the text description. 
 
 * Graphically Labeled Key
 
-	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key. For example, a Key that is physically labeled with an icon of a house, would be identified by the text description "HOME".
+	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key. For example, a Key that is physically labeled with an icon of a house, would be identified as "HOME by the text description.
 	
 * Color Labeled Key
 
-	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key. For example, a Key that is physically colored blue would be identified by the text description "BLUE".
+	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key. For example, a Key that is physically colored blue would be identified as "BLUE by the text description.
 	
 * Unlabeled Key
 
-	For a Key that is not physically labeled in a unique manner, a textual description may be used to identify the Key. For example, the second of two Keys that are used as a triggers that are physically located on the left side of the device would be identified by the text description "LEFT_TRIGGER_2".
+	For a Key that is not physically labeled in a unique manner, a textual description may be used to identify the Key. For example, the second of two Keys that are used as a triggers that are physically located on the left side of the device would be identified as "LEFT_TRIGGER_2" by the text description.
 
 >**Note:** Different devices have different numbers and combinations of physical Keys. Not all devices will have Keys that need to be identified using all of the above rules.
 
@@ -2539,7 +2539,7 @@ Parm value input rules:
 * String containing a valid flag
 	* The list of valid flags would be the Constant Values, which can be found on this page: http://developer.android.com/reference/android/content/Intent.html
 	* For example, the value for the FLAG_ACTIVITY_NEW_TASK flag would be "0x10000000"
-	* Also, if more than one flag should be used, the flags will need to be OR'ed together. For example, if you want to use the FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_SINGLE_TOP flags, their values ("0x10000000" and "0x20000000") would be OR'ed together to produce the value "0x30000000", which would be used as the parm value.
+	* Also, if more than one flag should be used, the flags will need to be OR'ed together. For example, if you want to use the FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_SINGLE_TOP flags, their values ("0x10000000" and "0x20000000") would be OR'ed together to produce the value "0x30000000" that would be used as the parm value.
 
 ###Application Launch
 

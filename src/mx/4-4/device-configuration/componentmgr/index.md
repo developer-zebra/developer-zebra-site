@@ -11,6 +11,8 @@ The ComponentMgr is used to configure the state and usage of subsystems such as 
 
 The state defines whether a subsystem is On (active) or Off (inactive). Usage enables or disables the subsystem and controls whether its state can be changed (turned On or Off) by the device user through the System Settings Menu or programmatically using the ComponentMgr. If an attempt is made to use the ComponentMgr to control the state of a subsystem for which usage is currently disabled, an error will be returned in the Result XML document.
 
+An option's "State" can be thought of as an "On/Off" switch; the feature is available to programs or the device user to enable or disable at will. To extend the example, "Usage" would be like a cover over the switch, usurping all access. When Usage of an option has been set, the cover is closed, and the position of the switch cannot be changed.
+
 >**Note:** Not every device will support every subsystem. For example, some devices have no support for Ethernet. If you try to use the ComponentMgr to control the state or usage of a subsystem that is not supported on a given device, then an error will be returned in the Result XML document.
 
 ### Main Functionality

@@ -1,6 +1,6 @@
 ---
 title: GPRS Manager
-description: The GprsMgr administers (APN) settings for the GPRS network used by the device.
+description: The GprsMgr administers Access Point Name settings for the GPRS network used by the device.
 ---
 ## About GprsMgr
 
@@ -198,7 +198,7 @@ Parm name: CustomUserName
 
 Description: 
 
->This parm value allows you to specify the User Name that will be used to authenticate to the APN being added.  The value is generally obtained from the GPRS carrier that provides the APN (e.g. "WAP.CINGULARGPRS.COM" is the User Name used to authenticate to an APN that is commonly used by AT&T). This is only relevant when the value chosen for GPRS Carrier was "Custom" since otherwise the APN values for the pre-defined APN will be provided automatically based on the selected GPRS carrier.
+>This parm value allows you to specify the User Name that will be used to authenticate to the APN being added. The value is generally obtained from the GPRS carrier that provides the APN (e.g. "WAP.CINGULARGPRS.COM" is the User Name used to authenticate to an APN that is commonly used by AT&T). This is only relevant when the value chosen for GPRS Carrier was "Custom" since otherwise the APN values for the pre-defined APN will be provided automatically based on the selected GPRS carrier.
 
 >**Note:** If an empty (length of 0) value is specified, then no User Name will be used. This should only generally only be done if the GPRS carrier indicates that authentication using a User Name is not required for a given APN.
 

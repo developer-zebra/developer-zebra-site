@@ -13,7 +13,6 @@ In standard Android devices, an application that is written to conform to the De
 
 The DevAdmin provides direct access to certain device administration tasks directly and allows programmatic approval as Device Administrator of applications written to conform to the DeviceAdminReceiver model without involving or notifying the device user. This allows an Enterprise to grant their trusted applications with access to the Device Administration APIs, thus enabling those applications to perform device administration tasks.
 
-
 ### Main Functionality
 
 * Set Screen-Lock Timeout Interval
@@ -32,7 +31,7 @@ Description:
 
 >When the device screen is turned back on, manually by some sort of device user activity, or programmatically due to some device event, the result will depend on how long the device screen was off and the value set for the Screen Lock Timeout. If the display screen was off for less than the Screen Lock Timeout, then the screen will not be locked (and hence will not need to be unlocked by the device user). If the display screen was off for at least the Screen Lock Timeout, then the screen will be locked (and hence will need to be unlocked by the device user).
 
->This behavior can be modified in two ways, based on other aspects of the device that may be configured. First, if no lock behavior is set for the device (e.g. no pin or password), then "unlocking", if required, may only require a swipe, not any actual data entry by the device user. Second, if the device is configured to lock automatically when the display screen is turned off by the power key, then a screen lock will always occur when the display screen is turned back on after being turned off via the power key, regardless of how much time the display screen was off.
+>This behavior can be modified in two ways, based on other aspects of the device that may be configured. First, if no lock behavior is set for the device (e.g. no pin or password), then "unlocking" (if required) may require only a swipe, and not any actual data entry by the device user. Second, if the device is configured to lock automatically when the display screen is turned off by the power key, then a screen lock will always occur when the display screen is turned back on after being turned off via the power key, regardless of how much time the display screen was off.
 
 >This parm will allow you to set the Screen Lock Timeout.
 
@@ -105,7 +104,7 @@ Parm name: UnknownSourcesStatus
 
 Description: 
 
->Android devices have a feature called the Unknown Sources Option that controls whether the device user is allowed to install applications (APK files) that originate from "unknown" sources, by which is meant "anywhere other than the Google Play Store". The primary purpose for this feature is to block "side loading" of APKs that may be risky since they did not go through the vetting process associated with posting applications on the Google Play Store.
+>Android devices have a feature called the Unknown Sources Option that controls whether the device user is allowed to install applications (APK files) that originate from "unknown" sources, by which is meant "anywhere other than the Google Play Store." The primary purpose for this feature is to block "side loading" of APKs that may be risky since they did not go through the vetting process associated with posting applications on the Google Play Store.
 
 >For devices that have GMS (Google Mobile Services), the Android CDD (Compatibility Definition Document) requires that the Unknown Sources Option be turned off by default. That makes sense for such devices, since they have support for Google Play (which is part of GMS) and hence have a viable way for device users to load applications. Zebra Android devices that have GMS will all default the Unknown Sources Option off by default to comply with this requirement. The Unknown Sources Option can then be turned on to allow device users the option of side-loading applications as an alternative to using Google Play.
 

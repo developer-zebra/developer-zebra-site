@@ -1,6 +1,6 @@
 ---
-title:  Threat Manager
-description: The Threat Manager feature allows an application to control the security threats a device actively monitors and how it responds.
+title: Threat Manager
+description: The Threat Manager allows an application to control the security threats a device actively monitors and how it responds.
 ---
 
 ## Overview
@@ -18,7 +18,7 @@ This profile feature will allow an application to enable or disable Threat detec
 ##Detectable threats:
 * **Max Password Attempts** - User tries to login with the wrong password
 * **MDM Client Removal** - MDM client has been removed from the device
-  * MDM Client Package Name - Provide the package name of the MDM client to be observed (System app only)
+* **MDM Client Package Name** - Provide the package name of the MDM client to be observed (System app only)
 * **Externally Detected** - An intent has been received that signifies a custom threat
 * **Exchange Active Sync Command** - While syncing with Exchange, and threat event occurred
 * **Device is Rooted** - Device has detected that it is rooted
@@ -37,4 +37,4 @@ This profile feature will allow an application to enable or disable Threat detec
 * **Unsolicited Alert** - This counter measure would send an explicit intent to an application. Provide and alert message, and the package and class name of the application you would like to notify.
 
 * **Signal Occurrence of Threat** - Select whether the occurrence of an externally detected Threat should be signaled.
-  * Send threat message - Provide a message to be sent, stating what custom threat has occurred. 
+* **Send Threat message** - Provide a message to be sent, stating what custom threat has occurred. 

@@ -125,12 +125,12 @@ Description:
   <tr>
     <td>Verify user app signature</td>
     <td>"2"</td>
-	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if a user, or "installable", application is on the "white" list.</td>
+	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if a user, or "installable," application is on the "white" list.</td>
   </tr>
   <tr>
     <td>Verify all apps signature</td>
     <td>"3"</td>
-	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if any application, "built-in" or "installable", is on the "white" list.</td>
+	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if any application, "built-in" or "installable," is on the "white" list.</td>
   </tr>
 </table>
 </div>	
@@ -159,17 +159,17 @@ Description:
   <tr>
     <td>Delete specified Packages(s)</td>
     <td>"1"</td>
-	<td>This value will cause one or more selected Package Names to be deleted from the "white list", thus blocking user, or "installable", applications with those Package Names from being installed by the device user or launched.</td>
+	<td>This value will cause one or more selected Package Names to be deleted from the "white list," thus blocking user, or "installable," applications with those Package Names from being installed by the device user or launched.</td>
   </tr>
   <tr>
     <td>Delete ALL Packages</td>
     <td>"2"</td>
-	<td>This value will cause all Package Names to be deleted from the "white list", thus blocking all user, or "installable",  applications from being installed by the device user or launched.</td>
+	<td>This value will cause all Package Names to be deleted from the "white list," thus blocking all user, or "installable," applications from being installed by the device user or launched.</td>
   </tr>  
   <tr>
     <td>Delete specified Signature(s)</td>
     <td>"3"</td>
-	<td>This value is meaningful only with Signature verification is turned on, in which case it deletes one or more Signatures from the "white list", thus blocking user, or "installable", applications with those Signatures from being installed by the device user or launched.</td>
+	<td>This value is meaningful only with Signature verification is turned on, in which case it deletes one or more Signatures from the "white list," thus blocking user, or "installable," applications with those Signatures from being installed by the device user or launched.</td>
   </tr>  
 </table>
 </div>	
@@ -191,7 +191,7 @@ Parm value input rules:
 * Package names must be separated by commas, such as "com.mycompany.mypackage,com.mycompany2.mypackage2" 
 
 #### Delete Package Signature(s)
-Settable if: Delete Packages is "Delete specified Signature(s)" *AND* the Application Verification Signing Mode is "Do not verify app signature", "Verify user app signature", or "Verify all apps signature"
+Settable if: Delete Packages is "Delete specified Signature(s)" *AND* the Application Verification Signing Mode is "Do not verify app signature," "Verify user app signature," or "Verify all apps signature"
 
 Pivotal parm: No
 
@@ -213,7 +213,7 @@ Pivotal parm: Yes
 
 Description: 
 
->Select whether or not to add Packages to the "white" list. Adding an application to the "white" list using this parm does not allow the application to submit XML, that must be done using the separate parm "Add Packages and Allow to Submit XML".
+>Select whether or not to add Packages to the "white" list. Adding an application to the "white" list using this parm does not allow the application to submit XML, that must be done using the separate parm "Add Packages and Allow to Submit XML."
 
 >**Note:** It is important to understand that if an application uses the AccessMgr to turn on Whitelisting, then that application will become subject to Whitelisting. If the application does not add itself to the "white" list, then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
 
@@ -310,7 +310,7 @@ Parm value input rules:
 * Package names must be separated by commas, such as "com.mycompany.mypackage,com.mycompany2.mypackage2" 
 
 ####Add Package Signature(s)
-Settable if: The Operation Mode is "Single User With Whitelist" *AND* Add Packages and Allow to Submit XML is "Allow specified application(s)" *AND* Application Verification Signing Mode is "Do not verify app signature", "Verify user app signature", or "Verify all apps signature"
+Settable if: The Operation Mode is "Single User With Whitelist" *AND* Add Packages and Allow to Submit XML is "Allow specified application(s)" *AND* Application Verification Signing Mode is "Do not verify app signature," "Verify user app signature," or "Verify all apps signature"
 
 Pivotal parm: No
 

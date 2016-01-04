@@ -1367,7 +1367,7 @@ ul.nostyle i {
 
 
 .fixed-column-left{
-    height: calc(100% - 200px);
+    height: calc(100% - 100px);
     position: fixed;
     top: 108px;
     overflow: auto;
@@ -1375,7 +1375,7 @@ ul.nostyle i {
 }
 
 .fixed-column-right{
-    height: calc(100% - 200px);
+    height: calc(100% - 100px);
     position: fixed;
     top: 108px;
     overflow: auto;

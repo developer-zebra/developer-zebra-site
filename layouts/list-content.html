@@ -4,11 +4,11 @@
         <div class="">
             <section class="content-with-sidebar">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 fixed-column-left"  >
                     {{> menu}}
 
                 </div>                
-                <div class="col-sm-9">
+                <div class="col-sm-9 fixed-column-right">
                     <div class="row">
                         <div class="col-sm-12">
                             <section id="cta" class="wow fadeIn">
@@ -38,15 +38,15 @@
                                 {{#each contentlist}}
                                     {{#if this.visible}}
                                     <div class="">
-                                        <h2 class="wow fadeInDown">{{this.heading}}</h2>
-                                        <p class="wow fadeInDown">{{this.description}}</p>
+                                        <h2 class="">{{this.heading}}</h2>
+                                        <p class="">{{this.description}}</p>
                                     </div>  
                                     {{/if}}
                                     {{#each this.items}}                                  
                                         <div class="row">
                                             <div class="features">
                                                 
-                                                <div class="col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                                                <div class="col-sm-12">
                                                     <div class="media service-box">
                                                         <div class="pull-left">
                                                             <i class="fa "><img src="{{this.icon}}"/></i>
@@ -66,6 +66,7 @@
                                     {{/each}}
                                 {{/each}}  
                                 </div><!--/.container-->
+                                <div>{{> footer-markup}}</div>
                             </section><!--/#services-->
                         </div>
                     </div>
@@ -74,6 +75,6 @@
             </section>
         </div>
     </section>    
-{{> footer}}
+{{> footer hide=true}}
 
 

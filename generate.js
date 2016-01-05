@@ -1,4 +1,5 @@
 var Metalsmith = require('metalsmith'),
+    lunr = require('metalsmith-lunr')
     branch = require('metalsmith-branch'),
     showdown   = require('metalsmith-showdown'),
     snippet   = require('metalsmith-snippet'),
@@ -60,6 +61,7 @@ var defaultPublish = function(config) {
                 var _f = files[file];
                 if (typeof(_f.publish) =='undefined' ) {
                     _f.publish = true;
+                    _f.lunr = true;
                 }
             }
         }
@@ -173,6 +175,7 @@ var sitebuild = Metalsmith(__dirname)
           title: 'Zebra Technologies - EMDK Samples',
           url: 'http://zebratechnologies.github.io/samples'
         }
+        
       })
     .use(paths({
         property: "path"
@@ -340,9 +343,6 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-2/'
     }))
     .use(showdown({}))
-    .use(headingsidentifier({
-        headingClass: "anchor"
-    }))
     .use(snippet({
       maxLength: 250,
       suffix: '...'
@@ -356,6 +356,9 @@ var sitebuild = Metalsmith(__dirname)
       engine: 'handlebars',
       // partials: 'partials',
       pattern: '**/*.html'
+    }))
+    .use(headingsidentifier({
+        headingClass: "anchor"
     }))
     .use(codehighlight({
 

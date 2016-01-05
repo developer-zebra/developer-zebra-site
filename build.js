@@ -340,9 +340,6 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-2/'
     }))
     .use(showdown({}))
-    .use(headingsidentifier({
-        headingClass: "anchor"
-    }))
     .use(snippet({
       maxLength: 250,
       suffix: '...'
@@ -357,6 +354,9 @@ var sitebuild = Metalsmith(__dirname)
 	  // partials: 'partials',
 	  pattern: '**/*.html'
 	}))
+    .use(headingsidentifier({
+        headingClass: "anchor"
+    }))
     .use(codehighlight({
 
     }))

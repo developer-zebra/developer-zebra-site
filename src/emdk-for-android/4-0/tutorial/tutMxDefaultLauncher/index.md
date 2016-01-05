@@ -17,16 +17,6 @@ Initially, we will configure EHS (Enterprise Home Screen) launcher application a
 Once the EHS has been set as the default launcher application, we will modify this setting by setting another application as default launcher through the code using App Manager API for default launcher. You can use any applicable launcher application. We will use [Galaxy Launcher](http://www.appsapk.com/galaxy-launcher/) application to set  as default launcher application through code in this tutorial.
 
 This allows you to understand how to configure parameters using Profile Manager and modify it using App Manager API.   
-	
- 
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
-* Download and install the required launcher applications before getting started with the tutorial. 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Downloading required Launcher Applications:
 As discussed above, we will now download and install the two launcher applications ([EHS](https://developer.motorolasolutions.com/docs/DOC-1875) and [Galaxy Launcher](http://www.appsapk.com/galaxy-launcher/)).
@@ -238,13 +228,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 			}
 		}
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
 	> Note: 2. If the status is other than `CHECK_XML`, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.
 
-	In case of `CHECK_XML` status, We retrieve  XML response string from the result using `getStatusString` method. So we will call a method `handleEMDKResult` to handle this [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), which we will create in the next step.
+	In case of `CHECK_XML` status, We retrieve  XML response string from the result using `getStatusString` method. So we will call a method `handleEMDKResult` to handle this [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults), which we will create in the next step.
 
 		:::java
 		// Method call to handle EMDKResult
@@ -254,7 +244,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
     
     ![img](/img/MxDefaultLauncherTutorialImages/on_opened_method.jpg)
 
-3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
+3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
 
 		:::java
 		// Method to handle EMDKResult by extracting response and parsing it
@@ -479,7 +469,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 12. In this step, we will write a function that takes package name of the launcher application as input parameter and programmatically sets that application as the default launcher application.
 
-    This method prepares the xml input for the `processProfile` method by accepting the package name of the launcher application provided by the user. It then calls the `handleEMDKResult` method that we have already created to handle the [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) and display the output.
+    This method prepares the xml input for the `processProfile` method by accepting the package name of the launcher application provided by the user. It then calls the `handleEMDKResult` method that we have already created to handle the [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) and display the output.
 
     The `processProfile` method then sets the changes to `Profile Manager` and returns the result to the `EMDKResults` as follows:
 

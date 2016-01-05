@@ -3,7 +3,7 @@ title:  Setting The Clock With ProfileManager
 ---
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will configure the device's date and time using the [Mx Clock](/emdk-for-android/4-0/guide/profiles/clock) feature through Profile Manager of the EMDK for Android.
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will configure the device's date and time using the [Mx Clock](/emdk-for-android/4-0/mx/device-configuration/clock/5-0) feature through Profile Manager of the EMDK for Android.
 
 This feature expects following attributes from user to set Clock on the symbol Android device:
 
@@ -12,13 +12,6 @@ This feature expects following attributes from user to set Clock on the symbol A
 * **Time:** - UTC Time to set on Symbol device.
 * **AutoTime:** - Select this feature to use network provided time on the symbol device. 
 
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 
@@ -207,7 +200,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

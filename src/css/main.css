@@ -46,7 +46,7 @@ hr {
 
 }
 
-h1:target, h2:target, h3:target, h4:target{padding-top:150px}
+h1:target, h2:target, h3:target, h4:target{padding-top:10px}
 
 .gradiant {
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -170,7 +170,7 @@ ul.nostyle i {
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  height: auto;
+  /*height: auto;*/
   padding: 22px 15px 21px;
 }
 @media only screen and (min-width: 768px) {
@@ -301,7 +301,7 @@ ul.nostyle i {
   background: rgba(0, 0, 0, 0.1);
 }
 #cta {
-  padding: 50px 0;
+  padding: 25px 0;
   background-color: #eeeeee;
   padding-left: 15px;
 }
@@ -955,10 +955,12 @@ ul.nostyle i {
 ********* Footer ******
 ************************/
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
   background: #2e2e2e;
+  font-size: 10px;
+  width: 100%;
 }
 #footer a {
   color: #fff;
@@ -1361,4 +1363,26 @@ ul.nostyle i {
         transform: none!important;
         position: relative!important
     }
+}
+
+
+.fixed-column-left{
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 108px;
+    overflow: auto;
+    left: 0;
+}
+
+.fixed-column-right{
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 108px;
+    overflow: auto;
+    right: 0;
+}
+
+.fixed-footer{
+    position: fixed;
+    bottom: 0;
 }

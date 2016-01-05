@@ -4,11 +4,11 @@
         <div class="">
             <section class="content-with-sidebar">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 fixed-column-left" >
                     {{> menu}}
 
                 </div>                
-                <div class="col-sm-9">
+                <div class="col-sm-9 fixed-column-right">
                     <div class="row">
                         <div class="col-sm-12">
                             <section id="cta" class="wow fadeIn">
@@ -37,16 +37,20 @@
                                     <div class="">
                                         <h4 class=""></h4>
                                         <p>{{{ contents }}}</p>
+                                        <div>{{> footer-markup}}</div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+
                 </div><!--/.col-sm-6-->
             </div>
             </section>
         </div>
     </section>    
-{{> footer}}
+
+
+{{> footer hide=true}}
 

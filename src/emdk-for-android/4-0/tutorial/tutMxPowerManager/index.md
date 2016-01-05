@@ -4,7 +4,7 @@ title:  Power Management using Power Manager API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](/emdk-for-android/4-0/guide/profiles/power) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](/emdk-for-android/4-0/mx/device-configuration/powermgr/5-0) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
 
 **1. Sleep Mode:**
 
@@ -28,15 +28,9 @@ This Power Manager feature allows you to update the operating system of your Sym
 In this tutorial, We would be implementing all three features of Power Manager to understand how they work. 
  
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
 * Download the respective OS update/Factory Reset/Enterprise Reset package (zip file) from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) and copy that file to external SD card of the device.
 
     > Note: This above link provides the Update Packages of TC55 device only, which we have used in this tutorial. If you are using some other Symbol Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 
@@ -270,13 +264,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 			}
 		}
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
 	> Note: 2. If the status is other than `CHECK_XML`, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.
 
-	In case of `CHECK_XML` status, We retrieve  XML response string from the result using `getStatusString` method. So we will call a method `handleEMDKResult` to handle this [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), which we will create in the next step.
+	In case of `CHECK_XML` status, We retrieve  XML response string from the result using `getStatusString` method. So we will call a method `handleEMDKResult` to handle this [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults), which we will create in the next step.
 
 		:::java
 		// Method call to handle EMDKResult
@@ -286,7 +280,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
     
     ![img](/img/MxPowerManagerTutorialImages/on_opened_method.jpg)
 
-3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
+3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
 
 		:::java
 		// Method to handle EMDKResult by extracting response and parsing it

@@ -4,7 +4,7 @@ title:  Application Management with AppManger Profile Feature
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](/emdk-for-android/4-0/guide/profiles/app) feature of EMDK Profiles. 
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](/emdk-for-android/4-0/mx/app-management/appmgr/5-0) feature of EMDK Profiles. 
 
 Using this feature, a user can perform various App Management operations such as:
  
@@ -17,15 +17,9 @@ Using this feature, a user can perform various App Management operations such as
 * **Manage Protected List:** - You can manage which applications are on the protected list by adding and removing application from protected list.
 * **Enable and Disable App Info:** - The application info dialog shows detailed information about the application as well as allow you to perform actions like: Force Stop, Enable/Disable, Clear Data, Clear Cache. Specify the application's package name that you would like to enable or disable this feature for. 
 
-    > Note: Please refer the compatibility matrix to check availability these features across various symbol devices [here](/emdk-for-android/4-0/guide/profiles/app).   
+    > Note: Please refer the compatibility matrix to check availability these features across various symbol devices [here](/emdk-for-android/4-0/mx/app-management/appmgr/5-0).   
 
-###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 
@@ -200,7 +194,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

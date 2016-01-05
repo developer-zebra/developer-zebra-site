@@ -4,7 +4,6 @@ layout: guide.html
 ---
 
 ##Loading the Sample Application
-Sample Applications are installed along with the EMDK and can be found in your start bar. 
 
 1. Choose a sample and click the **See Details** button.
     ![img](select_a_sample.png)
@@ -29,6 +28,6 @@ When the import process is complete, the project load in the IDE, ready to deplo
  
  Android studio will push the application to your device via USB and start the main activity.
 
- ![img](/img/sample/BarcodeSample1_screen.png)
+ ![img](profileWifiSample1.png)
 
 

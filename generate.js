@@ -223,7 +223,7 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/tutorial',
-        layoutName: 'tutorial.html'
+        layoutName: 'guide.html'
     }))
     .use(findLayout({
         pattern: 'stagenow',

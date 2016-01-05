@@ -3,18 +3,13 @@ title:  Using Intent Output With DataCapture Profiles
 ---
 ## Developing an EMDK for Android Application Part 2
 
-This tutorial will walk you through adding [Intent Output](/emdk-for-android/4-0/guide/profiles/profileintent) support to the EMDK For Android application you made using [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile). This tutorial will assume your project is at the state of the end of that tutorial and build on top of it. You can follow the tutorial in the previous step of download the source from the previous step and start from there.
+This tutorial will walk you through adding [Intent Output](/emdk-for-android/4-0/mx/data-capture/intent) support to the EMDK For Android application you made using [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile). This tutorial will assume your project is at the state of the end of that tutorial and build on top of it. You can follow the tutorial in the previous step of download the source from the previous step and start from there.
 
 The tutorial uses EMDK V 2.1 that has organized existing features as well as got some new features that would be discussed later in the tutorial.
 
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android 
 * Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-0/tutorial/tutdatacaptureprofile)
 
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Adding Intents to the DataCapture Profile
 1. Select "EMDKSample" project from Package Explorer.    

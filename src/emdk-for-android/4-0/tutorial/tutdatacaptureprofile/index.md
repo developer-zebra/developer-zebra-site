@@ -3,15 +3,8 @@ title:  Data Capture Profile Feature Tutorial
 ---
 ## Developing an EMDK for Android Application Part 1
 
-This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/4-0/guide/profiles/profilebarcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/4-0/guide/profiles/profilekeystroke) feature of [EMDK Profiles](/emdk-for-android/4-0/guide/profile-manager).
+This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/4-0/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/4-0/mx/data-capture/keystroke) feature of [EMDK Profiles](/emdk-for-android/4-0/mx/).
 
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android 
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 
@@ -21,13 +14,8 @@ If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tut
 
 If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectEclipseADT).  
 
-## Enabling the EMDK
-If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 4.0 (API 16) (Symbol Technologies LLC) (API 16)` or `EMDK 4.0 (API 19) (Symbol Technologies LLC) (API 19)` as the minimum SDK.
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
-
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/4-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/4-0/guide/profile-manager/) to see how to add a specific feature to A profile with the Profile Manager.
 
 2. Provide "DataCaptureProfile" as the Profile Name for this tutorial.
 
@@ -44,15 +32,15 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 5. Click "ActivitySelection" under parameters.
   
-    ![img](/img/setup/image055.jpg)  
+   
 
 6. Specify the applications package name and click "Apply".
   
-    ![img](/img/setup/image057.jpg)
+    
   
 7. Specify an Activity inside the application and click "Apply".
   
-    ![img](/img/setup/image059.jpg)
+    
   
 8. Click "OK".
   
@@ -266,7 +254,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/4-0/guide/profiles/profileintent) feature of EMDK Profiles to handle Data Capture output programmatically.
+Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/4-0/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCapture-ProfileManagerTutorial.zip).

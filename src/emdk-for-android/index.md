@@ -9,6 +9,8 @@ menu:
       url: /emdk-for-android/4-0/guide/about
     - title: Getting Started
       items:
+        - title: Download
+          url: /emdk-for-android/download
         - title: EMDK For Android Setup
           url: /emdk-for-android/4-0/guide/setup
         - title: Configuring A Device
@@ -100,6 +102,10 @@ menu:
     - title: Samples
       url: /emdk-for-android/4-0/samples
       items:
+        - title: Importing Samples ( Android Studio )
+          url: /emdk-for-android/4-0/guide/emdksamples_androidstudio
+        - title: Importing Samples ( Eclipse/ADT )
+          url: /emdk-for-android/4-0/guide/emdksamples_eclipse
         - title: Barcode Sample
           url: /emdk-for-android/4-0/samples/barcode
         - title: DataCapture Profile Sample

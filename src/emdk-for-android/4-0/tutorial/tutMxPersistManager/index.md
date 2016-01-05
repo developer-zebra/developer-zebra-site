@@ -4,7 +4,7 @@ title:  Persist MX configurations using Persist Manager API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](/emdk-for-android/4-0/guide/profiles/persistence) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](/emdk-for-android/4-0/mx/mx/persistence/5-0) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
 
 **1. Adding XML to be Persisted:**
 
@@ -45,16 +45,10 @@ So now we will create a tutorial to demonstrate how the configuration XML's are 
 * Finally we will ensure how the persisted Clock and App Manager settings are re-applied automatically. It means you would see the Clock is reset to the time you had set and the application installed back to the device from the path provided.     
    
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
 * Download the APK for sample App from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
 * Download the respective Enterprise Reset package (zip file) according to your device OS version from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) and copy that file in SD card/Internal memory of the device.
 
     > Note: This above link provides the Update Packages of TC55 device only, which we have used in this tutorial. If you are using some other Symbol Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 
@@ -285,7 +279,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

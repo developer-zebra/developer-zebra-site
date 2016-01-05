@@ -4,18 +4,13 @@ title:  Creating Encrypted File System (EFS) using Encrypt Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. This tutorial will focus on creating Encrypted File System (EFS) for storing application data on the internal/external storage using [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) feature of Mx. Encrypted File System (EFS) enables files to be transparently encrypted to protect confidential data from attackers with physical access to the device. On the other hand [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) enables you, as a developer to set encryption policies on device through MX XML.   
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. This tutorial will focus on creating Encrypted File System (EFS) for storing application data on the internal/external storage using [Encrypt Manager](/emdk-for-android/4-0/mx/security/encryptmgr/5-0) feature of Mx. Encrypted File System (EFS) enables files to be transparently encrypted to protect confidential data from attackers with physical access to the device. On the other hand [Encrypt Manager](/emdk-for-android/4-0/mx/security/encryptmgr/5-0) enables you, as a developer to set encryption policies on device through MX XML.   
 
-So now we will create a tutorial to install a new Encryption Key and use this key while creating Encrypted File System (EFS) on the external storage of your Symbol device using Mx [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) feature through Profile Wizard.
+So now we will create a tutorial to install a new Encryption Key and use this key while creating Encrypted File System (EFS) on the external storage of your Symbol device using Mx [Encrypt Manager](/emdk-for-android/4-0/mx/security/encryptmgr/5-0) feature through Profile Wizard.
         
 ###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html)) 
-* EMDK for Android V 3.1 and above
 * Make sure you have an external SD Card in the device if you are using external storage option for creating EFS.
-
-For more information about setting up the EMDK please see the EMDK Overview.
 
 ## Creating The Project
 
@@ -217,7 +212,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
@@ -395,7 +390,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     ![img](/img/MxEncryptManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us create an encrypted file system (EFS) of 5MB with an encryption key on the SD Card (External Storage) of Symbol device using [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) feature of Mx. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us create an encrypted file system (EFS) of 5MB with an encryption key on the SD Card (External Storage) of Symbol device using [Encrypt Manager](/emdk-for-android/4-0/mx/security/encryptmgr/5-0) feature of Mx. Now let's run the application.
  
 ## Running the Application
 
@@ -425,7 +420,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 	![img](/img/MxEncryptManagerTutorialImages/efs_created.png)
 
 
-    This is how you can create Encrypted File System (EFS) along with the installation of Encryption Key on the internal/external SD Card storage using [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) feature on Symbol devices through Profile Wizard. 
+    This is how you can create Encrypted File System (EFS) along with the installation of Encryption Key on the internal/external SD Card storage using [Encrypt Manager](/emdk-for-android/4-0/mx/security/encryptmgr/5-0) feature on Symbol devices through Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -448,7 +443,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to create Encrypted File System (EFS) on the internal/external storage of SD Card using [Encrypt Manager](/emdk-for-android/4-0/guide/profiles/encrypt) on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Threat Manager" feature of Mx and try to explore this feature by creating a tutorial.
+Now that you have learned how to create Encrypted File System (EFS) on the internal/external storage of SD Card using [Encrypt Manager](/emdk-for-android/4-0/mx/security/encryptmgr/5-0) on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Threat Manager" feature of Mx and try to explore this feature by creating a tutorial.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EncryptManagerTutorial.zip).

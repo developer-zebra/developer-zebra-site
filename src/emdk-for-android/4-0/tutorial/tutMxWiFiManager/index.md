@@ -4,7 +4,7 @@ title:  Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi:
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](/emdk-for-android/4-0/guide/profiles/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](/emdk-for-android/4-0/mx/wireless/wifi/5-0) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
 
 * **[Wi-Fi Enable/Disable](https://developer.motorolasolutions.com/docs/DOC-2290#wifi-enable)**
 * **[Country Selection Auto/Manual](https://developer.motorolasolutions.com/docs/DOC-2290#country-selection-automanual)**
@@ -36,13 +36,7 @@ The tutorial will be designed to configure Wi-Fi settings with following feature
 * Remove an existing Network
    
 ###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
-* Wi-Fi of your Symbol Android device must be enabled.
-
-For more information about setting up the EMDK please see the EMDK Overview.
+* Wi-Fi on your Symbol Android device must be enabled.
 
 ## Creating The Project
 
@@ -251,7 +245,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

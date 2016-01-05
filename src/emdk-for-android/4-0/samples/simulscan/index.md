@@ -38,7 +38,7 @@ This sample application will show how the Simulscan API's can be used to capture
 - EMDK for Android  
 - An EMDK supported Android device
 
-For more information about setting up the EMDK please see the [EMDK Overview](/emdk-for-android/4-0/guide/about).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup).
 
 You will also need:
 

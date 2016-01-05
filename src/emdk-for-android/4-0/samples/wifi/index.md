@@ -55,7 +55,7 @@ This sample application will allow you to perform all the above mentioned Wi-Fi 
 - EMDK for Android  
 - An EMDK supported Android device
 
-For more information about setting up the EMDK please see the [EMDK Overview](/emdk-for-android/4-0/guide/about).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup).
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

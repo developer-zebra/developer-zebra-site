@@ -1,13 +1,13 @@
 ---
 title: Display Manager
-description: The DisplayMgr allows you to control the display screen on the device.
+description: The DisplayMgr provides control of the display screen on the device.
 ---
 
 ## About DisplayMgr
 
 ### Overview
+The DisplayMgr provides control of the display screen on the device. At present, the only option is to configure the timeout value after which the display turns off to conserve battery power. Future versions of the DisplayMgr may provide control of other aspects of the display screen.
 
-The DisplayMgr Feature Type allows you to control the display screen on the device. At present, the only option is to configure the timeout value after which the display turns off to conserve battery power. Future versions of the DisplayMgr Feature Type may provide the ability to control other aspects of the display screen.
 
 ### Main Functionality
 

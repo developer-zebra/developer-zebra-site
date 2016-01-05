@@ -1,11 +1,12 @@
 ---
 title: Encryption Manager
-description: The EncryptMgr allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
+description: The EncryptMgr allows apps to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete Encrypted File Systems.
 ---
 
 ## About EncryptMgr
 
 ### Overview
+The EncryptMgr allows apps to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete Encrypted File Systems (EFSes).
 
 To configure encryption, certain questions must be answered:
 
@@ -16,7 +17,7 @@ To configure encryption, certain questions must be answered:
 
 Zebra Android devices support encrypting data that is stored in the device file system using two modes of operation:
 
-* Full Storage Card Encryption Mode allows a single Storage Card, usually the one that is physically removable (e.g. a Micro SD Card) to be formatted as one single encrypted file system.  This mode is particularly useful, from a security point of view, because it protects all data stored on the Storage Card from being accessed externally if the card is physically removed from the device.  In this mode, the entire card is encrypted, and the key used to perform the encryption is not stored on the card.  Since data is encrypted and decrypted transparently, applications running on the device can access all the data on the Storage Card as if it were not encrypted.  Applications access an encrypted Storage Card using the same paths they would use if the Storage Card was not encrypted. 
+* Full Storage Card Encryption Mode allows a single Storage Card, usually the one that is physically removable (e.g. a Micro SD Card) to be formatted as one single encrypted file system. This mode is particularly useful, from a security point of view, because it protects all data stored on the Storage Card from being accessed externally if the card is physically removed from the device. In this mode, the entire card is encrypted, and the key used to perform the encryption is not stored on the card. Since data is encrypted and decrypted transparently, applications running on the device can access all the data on the Storage Card as if it were not encrypted. Applications access an encrypted Storage Card using the same paths they would use if the Storage Card was not encrypted. 
 
 	Different kinds of devices can respond differently when "Full Storage Card Encryption Mode" is turned on, such as:
 	
@@ -25,15 +26,13 @@ Zebra Android devices support encrypting data that is stored in the device file 
 
 >**Note:** If "Full Storage Card Encryption Mode" is turned on while a removable Storage Card is in the slot, the removable Storage Card will be encrypted. It will remain encrypted after being removed from the device and will behave accordingly, such as if this card is inserted into a PC, it will not mount. Also, if it is inserted into another device, it will not mount since there would not be a corresponding key available on this device. 
 
->**Note:** Changing a Storage Card from unencrypted to encrypted or encrypted to unencrypted requires reformatting the card and hence causes the loss of all data on the card.  If there is data that must be preserved, it would have to be copied to another location before activating or deactivating encryption and then copied back after the card is reformatted.
+>**Note:** Changing a Storage Card from unencrypted to encrypted or encrypted to unencrypted requires reformatting the card and hence causes the loss of all data on the card. If there is data that must be preserved, it would have to be copied to another location before activating or deactivating encryption and then copied back after the card is reformatted.
 
-* Folder Encryption Mode allows any number of Encrypted File Systems (EFS) to be created.  The data for each EFS resides in a single file that must be stored on some non-encrypted file system.  This file is called the Backing Storage File (BSF).  A BSF can be located on internal storage (e.g. /data) or on the Primary Storage Card.  The BSF is named based on the name of the EFS.  An EFS is mounted at a virtual path, called its Mount Point.  The Mount Point for an EFS could specify a path on the same non-encrypted file system where the BSF is located or could specify a path on a different file system.  Since data is encrypted and decrypted transparently, applications running on the device can access all the data on an EFS as if it was not encrypted.  Applications must access an EFS using the Mount Point path that is established when the EFS is created.
+* Folder Encryption Mode allows any number of Encrypted File Systems (EFS) to be created. The data for each EFS resides in a single file that must be stored on some non-encrypted file system. This file is called the Backing Storage File (BSF). A BSF can be located on internal storage (e.g. /data) or on the Primary Storage Card. The BSF is named based on the name of the EFS. An EFS is mounted at a virtual path, called its Mount Point. The Mount Point for an EFS could specify a path on the same non-encrypted file system where the BSF is located or could specify a path on a different file system. Since data is encrypted and decrypted transparently, applications running on the device can access all the data on an EFS as if it was not encrypted. Applications must access an EFS using the Mount Point path that is established when the EFS is created.
 
->**Note:** While the BSF for an EFS can be stored on a Storage Card that is removable, it cannot be stored on a Storage Card that is encrypted using Full Storage Card Encryption Mode.  If an attempt is made to create an EFS, whose BSF is on a Storage Card that is encrypted using Full Storage Card Encryption, then an error will be returned in the Result XML.
+>**Note:** While the BSF for an EFS can be stored on a Storage Card that is removable, it cannot be stored on a Storage Card that is encrypted using Full Storage Card Encryption Mode. If an attempt is made to create an EFS, whose BSF is on a Storage Card that is encrypted using Full Storage Card Encryption, then an error will be returned in the Result XML.
 
-Zebra Android devices have a Key Storage Database of named encryption keys.  Each Named Key has an associated Key Value that can be used to encrypt a Full Storage Card and/or to encrypt any number of EFSes.  When activating Full Storage Card Encryption or creating an EFS, a Named Key must be specified and must exist in the Key Storage Database.  If a Named Key is removed from the Key Storage Database, Full Storage Card Encryption and/or EFSes that are encrypted using that Named Key will become inaccessible.  Adding the Named Key (with the same Key Value) will restore accessibility.
-
-The EncryptMgr Feature Type allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
+Zebra Android devices have a Key Storage Database of named encryption keys. Each Named Key has an associated Key Value that can be used to encrypt a Full Storage Card and/or to encrypt any number of EFSes. When activating Full Storage Card Encryption or creating an EFS, a Named Key must be specified and must exist in the Key Storage Database. If a Named Key is removed from the Key Storage Database, Full Storage Card Encryption and/or EFSes that are encrypted using that Named Key will become inaccessible. Adding the Named Key (with the same Key Value) will restore accessibility.
 
 ### Main Functionality
 
@@ -109,7 +108,7 @@ Parm value input rules:
 
 * HEX string that is empty (length of zero) or must be exactly 64 bytes that encode a 128 bit binary value that will be used as an AES encryption Key Value.
 
->**Note:** The generation of Key Values can be accomplished using any desired mechanism since any 128 bit value can be used as an AES encryption Key Value.  For best results, Key Values should be generated randomly, to make them hard to predict.  Once generated, Key Values should be managed carefully since, if disclosed, a Key Value could be used to compromise the security of any data that is protected using that key.
+>**Note:** The generation of Key Values can be accomplished using any desired mechanism since any 128 bit value can be used as an AES encryption Key Value. For best results, Key Values should be generated randomly, to make them hard to predict. Once generated, Key Values should be managed carefully since, if disclosed, a Key Value could be used to compromise the security of any data that is protected using that key.
 
 ###Revoke Key?
 Pivotal parm: Yes
@@ -168,11 +167,11 @@ Description:
 
 >This parm allows you to choose whether or not to create an Encrypted File System on the device.
 
->**Note:** The process of Creating an Encrypted File System takes time since it must create the Backing Storage File and mount the EFS on its designated Mount Point. As a result, applications will not be able to access an EFS via its Mount Point until it is successfully mounted.  Further, an EFS could later be un-mounted if the Key Name it is using is Removed from the Key Storage Database. Applications that use an EFS should thus include error handling logic that can deal with situations where the EFS is not mounted and hence cannot be accessed.
+>**Note:** The process of Creating an Encrypted File System takes time since it must create the Backing Storage File and mount the EFS on its designated Mount Point. As a result, applications will not be able to access an EFS via its Mount Point until it is successfully mounted. Further, an EFS could later be un-mounted if the Key Name it is using is Removed from the Key Storage Database. Applications that use an EFS should thus include error handling logic that can deal with situations where the EFS is not mounted and hence cannot be accessed.
 
 >An attempt to Create an Encrypted File System creation may fail for various reasons, including:
 
->* A BSF with the specified EFS name already exists in the specified storage location.  Only one EFS of a given name can created on each storage location.
+>* A BSF with the specified EFS name already exists in the specified storage location. Only one EFS of a given name can created on each storage location.
 >* The storage location specified for the BSF is not accessible (e.g. is not mounted) or is not writable.
 >* The storage location specified for the BSF has insufficient free space to create the BSF of the specified size.
 >* The storage location specified for the BSF is a Storage Card for which Full Storage Card Encryption has been activated.

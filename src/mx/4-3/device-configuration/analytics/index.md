@@ -1,15 +1,17 @@
 ---
 title: Analytics Manager
-description: The AnalyticsMgr allows you enable or disable collection of data, in the form of groups of metrics, by the Analytics Engine
+description: The AnalyticsMgr controls collection of data by the Analytics Engine in the form of groups of metrics.
 ---
 
 ## About AnalyticsMgr
 
 ### Overview
 
-Zebra Android devices are equipped with an Analytics Engine that can collect information pertaining to the operation and health of a device. Collected data can be sent to the Cloud or stored locally on the device. Such data can be used to detect devices that need attention or potentially could be used to detect trends that could allow problems to be prevented through preventative action.
+The AnalyticsMgr controls collection of data by the Analytics Engine in the form of groups of metrics.
 
-The AnalyticsMgr Feature Type allows you enable or disable collection of data, in the form of groups of metrics, by the Analytics Engine. It also allows you to control whether collected data is stored on the device or sent to the Cloud, and also provides some control over which data is collected and how often.
+Zebra Android devices are equipped with an Analytics Engine that can collect information pertaining to the operation and health of a device. Such data can be used to detect devices that need attention or potentially could be used to detect trends that could allow problems to be prevented through preventative action.
+
+AnalyticsMgr also controls which data is collected and how often, and whether collected data is stored on the device or in the Cloud.
 
 ### Main Functionality
  

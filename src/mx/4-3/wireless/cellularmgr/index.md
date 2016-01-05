@@ -1,16 +1,17 @@
 ---
 title: Cellular Manager
-description: The CellularMgr allows you to control how a device's Cellular data connection is used.
+description: The CellularMgr controls the way a device's Cellular data connection is used.
 ---
 ## About CellularMgr
 
 ### Overview
+The CellularMgr controls the way a device's Cellular data connection is used.
 
-The CellularMgr Feature Type allows you to control how a device's Cellular data connection is used. The CellularMgr Feature Type is supported only on Zebra Android devices that are equipped with Wireless Wide Area Network (WWAN) network adapters that enable access to a Cellular data network.
+The CellularMgr is supported only on Zebra Android devices that are equipped with Wireless Wide Area Network (WWAN) adapters that enable access to a Cellular data network.
 
-**Note:** If a device does not have a Wireless Wide Area Network (WWAN) network adapter, then it will not support the Cellular data connections and hence will not support the CellularMgr Feature Type. Attempting to use the CellularMgr Feature Type on such a device will cause an error to be returned in the Result XML document.
+**Note:** If a device does not have a Wireless Wide Area Network (WWAN) network adapter, it will not support the Cellular data connections and hence will not support the CellularMgr. Attempting to use the CellularMgr on such a device will cause an error to be returned in the Result XML document.
 
-The CellularMgr Feature Type provides the ability to change the state of various options On or Off, thus controlling whether the capability is operational. The CellularMgr Feature Type also provides the ability to enable or disable use of the same options. Disabling an option means that the option cannot be turned On or Off by the device user or programmatically, using the CellularMgr Feature Type. Enabling an option means that the option can be turned On or Off by the device user or programmatically, using the CellularMgr Feature Type. You can think of Turn On/Off as being like a switch and the Enable/Disable as being like a cover over the switch. When the cover is closed, the position of the switch cannot be changed.
+The CellularMgr provides the ability to change the state of various options On or Off, thus controlling whether the capability is operational. The CellularMgr also provides the ability to enable or disable use of the same options. Disabling an option means that the option cannot be turned On or Off by the device user or programmatically, using the CellularMgr. Enabling an option means that the option can be turned On or Off by the device user or programmatically, using the CellularMgr. You can think of Turn On/Off as being like a switch and the Enable/Disable as being like a cover over the switch. When the cover is closed, the position of the switch cannot be changed.
 
 In Android, the Data Roaming Option determines whether a device is allowed to communicate over Cellular data networks other than the one provided by its configured "home" mobile operator. Communicating over such "foreign" networks is called roaming and can be quite convenient, allowing a device user to operate seamlessly in many different locations.  But, depending on the networks involved and the terms of a specific Cellular data service plan, turning on the Data Roaming Option significantly increase telecom expenses. Turning off the Data Roaming Option can help limit such costs but limiting Cellular data connections to the "home" network.
 
@@ -116,12 +117,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the state of the Data Roaming Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr Feature Type.</td>
+	<td>This value will cause the state of the Data Roaming Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the state of the Data Roaming Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr Feature Type.</td>
+	<td>This value will cause the state of the Data Roaming Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr.</td>
   </tr>
 </table>
 </div>	
@@ -150,12 +151,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the state of the Background Data Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr Feature Type.</td>
+	<td>This value will cause the state of the Background Data Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the state of the Background Data Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr Feature Type.</td>
+	<td>This value will cause the state of the Background Data Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr.</td>
   </tr>
 </table>
 </div>	

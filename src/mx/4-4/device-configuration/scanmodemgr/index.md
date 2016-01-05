@@ -1,6 +1,6 @@
 ---
 title: ScanMode Manager
-description: The ScanMode Manager setting type sets the Scan Mode to Normal, Scan 1, or Scan 2.
+description: The ScanMode Manager sets the Scan Mode to Normal, Scan 1, or Scan 2.
 publish: true
 ---
 
@@ -8,8 +8,7 @@ publish: true
 
 ### Overview
 
-The ScanMode Manager setting type sets the Scan Mode to Normal, Scan 1, or Scan 2.
-
+The ScanMode Manager sets the Scan Mode to Normal, Scan 1, or Scan 2.
 
 ##Parameter Notes
 ### Scan Mode Action

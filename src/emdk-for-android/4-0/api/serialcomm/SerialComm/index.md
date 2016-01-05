@@ -1,11 +1,12 @@
 ---
 title: SerialComm
+description: 
 ---
 
 This is the primary object to access the serial communication feature to communicate with remote device wither via USB/Serial.
  This class design allows to communicate with only remote device at time.
  
- 
+ >Note: In order to use Serial **Read** functionality, you must first apply a patch provided in [SPR-28877](https://spr.motorolasolutions.com/ViewSPR.aspx?sprID=28877). To obtain this patch, contact Zebra Support.
 
 ##Public Methods
 

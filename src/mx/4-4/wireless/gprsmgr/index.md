@@ -1,10 +1,12 @@
 ---
 title: GPRS Manager
-description: The GprsMgr allows you to manage APN settings for the devices GPRS network.
+description: The GprsMgr administers Access Point Name settings for the GPRS network used by the device.
 ---
 ## About GprsMgr
 
 ### Overview
+
+The GprsMgr administers Access Point Name (APN) settings for the GPRS network used by the device.
 
 Devices equipped with Wireless Wide Area Networks (WWAN or Cellular Data) modems can support one or more of the following WWAN technology types:
 
@@ -16,7 +18,7 @@ As noted above, devices that are operating on GSM networks, and that need to use
 
 A GPRS-equipped Android device must generally have a suitable APN defined for each GPRS cellular data network that will be used. If only one GPRS cellular data network will be used, then only one APN will need to be defined. But if multiple GPRS cellular data network will need to be used (e.g. to support roaming amongst multiple geographical locations), then multiple APNs would need to be defined.
 
-The GprsMgr Feature Type allows you to Add or Remove APNs from the set of defined APNs and set which APN is the default APN to which the device will automatically connect.
+The GprsMgr allows you to Add or Remove APNs from the set of defined APNs and set which APN is the default APN to which the device will automatically connect.
 
 ### Main Functionality
 
@@ -196,7 +198,7 @@ Parm name: CustomUserName
 
 Description: 
 
->This parm value allows you to specify the User Name that will be used to authenticate to the APN being added.  The value is generally obtained from the GPRS carrier that provides the APN (e.g. "WAP.CINGULARGPRS.COM" is the User Name used to authenticate to an APN that is commonly used by AT&T). This is only relevant when the value chosen for GPRS Carrier was "Custom" since otherwise the APN values for the pre-defined APN will be provided automatically based on the selected GPRS carrier.
+>This parm value allows you to specify the User Name that will be used to authenticate to the APN being added. The value is generally obtained from the GPRS carrier that provides the APN (e.g. "WAP.CINGULARGPRS.COM" is the User Name used to authenticate to an APN that is commonly used by AT&T). This is only relevant when the value chosen for GPRS Carrier was "Custom" since otherwise the APN values for the pre-defined APN will be provided automatically based on the selected GPRS carrier.
 
 >**Note:** If an empty (length of 0) value is specified, then no User Name will be used. This should only generally only be done if the GPRS carrier indicates that authentication using a User Name is not required for a given APN.
 

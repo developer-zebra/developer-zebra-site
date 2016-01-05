@@ -1,13 +1,12 @@
 ---
 title: KeyMapping Manager
-description: The KeyMappingMgr allows you to modify what behavior a given key will exhibit when pressed.
+description: The KeyMappingMgr allows an app to modify the behavior of a given key when pressed.
 ---
 
 ## About KeyMappingMgr
 
 ### Overview
-
-The KeyMappingMgr Feature Type allows you to modify what behavior a given key will exhibit when pressed.
+The KeyMappingMgr allows an app to modify the behavior of a given key when pressed.
 
 Key Mapping is a capability offered by Zebra Android devices allows you to define the Key Behavior associated with a given Key, when that Key is pressed in a given Key State. The Current Key State consists of one or more Key State Modifiers that may have been applied as the result of previous presses of Modifier Keys. For example, a device with a Blue Key may set/clear the Blue Key State Modifier in the Current Key State each time the Blue Key is pressed. Some devices may support having multiple Key State Modifiers set in the Current Key State and other may not.
 
@@ -19,7 +18,7 @@ Key processing begins by checking the Current Key State at the time the Key was 
 
 If all Key Mapping Tables associated with Key State Modifiers are searched without finding a Key Mapping for the pressed Key, then the Base Key State Key Mapping Table is searched. If no Key Mapping can for the pressed Key can be found during searching, then the default Android Key Behavior will be performed for the pressed Key, but this will seldom be the case, since most devices will have Default Key Mappings for all Keys defined in the Base Key State Mapping Table.
 
-Not all devices will support all Key State Modifiers and hence not all devices will support all Key Mapping Tables. Some devices may support multiple Key State Modifiers and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports.  All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. The Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State:
+Not all devices will support all Key State Modifiers and hence not all devices will support all Key Mapping Tables. Some devices may support multiple Key State Modifiers and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports. All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. The Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State:
 
 1. Blue Key State Modifier and Blue Key Mapping Table
 
@@ -49,19 +48,19 @@ Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be
 
 * Text Labeled Key
 
-	For a Key that is physically labeled with a text legend, the label is used to identify the Key. For example, a Key that is physically labeled with the letter "A" would be identified by that letter. In some cases, a Key might be physically labeled with an abbreviated text legend. For example, a Key that is physically labeled "BKSP" would be identified by the text description "BACKSPACE".
+	For a Key that is physically labeled with a text legend, the label is used to identify the Key. For example, a Key that is physically labeled with the letter "A" would be identified by that letter. In some cases, a Key might be physically labeled with an abbreviated text legend. For example, a Key that is physically labeled "BKSP" would be identified as "BACKSPACE" by the text description. 
 
 * Graphically Labeled Key
 
-	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key.  For example, a Key that is physically labeled with an icon of a house, would be identified by the text description "HOME".
+	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key. For example, a Key that is physically labeled with an icon of a house, would be identified as "HOME by the text description.
 	
 * Color Labeled Key
 
-	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key.  For example, a Key that is physically colored blue would be identified by the text description "BLUE".
+	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key. For example, a Key that is physically colored blue would be identified as "BLUE by the text description.
 	
 * Unlabeled Key
 
-	For a Key that is not physically labeled in a unique manner, a textual description may be used to identify the Key. For example, the second of two Keys that are used as a triggers that are physically located on the left side of the device would be identified by the text description "LEFT_TRIGGER_2".
+	For a Key that is not physically labeled in a unique manner, a textual description may be used to identify the Key. For example, the second of two Keys that are used as a triggers that are physically located on the left side of the device would be identified as "LEFT_TRIGGER_2" by the text description.
 
 >**Note:** Different devices have different numbers and combinations of physical Keys. Not all devices will have Keys that need to be identified using all of the above rules.
 
@@ -79,7 +78,7 @@ Each Key Mapping specifies a single Key Behavior that should be performed for a 
 
 	A fixed set of eight (8) Triggers are supported and these are designated as Trigger 1 through Trigger 8. Triggers are most commonly used to provide a low-latency notification so that high priority events can be initiated. Various System applications on a device may register to be notified when various Triggers are sent. For example, the Scanning Subsystem on most devices uses Trigger 1 to initiate Barcode Scanning.
 
-	Normal (non-System) applications cannot perform registration for Triggers and hence cannot utilize the "Sent trigger" Key Behavior to invoke their application functionality. Such applications should use the "Launch application or "Send Intent" Key Behaviors instead. But using the KeyMappingMgr Feature Type, a non-System application can determine what Key(s), pressed in what Key State(s) will produce Triggers for which System applications are registered.
+	Normal (non-System) applications cannot perform registration for Triggers and hence cannot utilize the "Sent trigger" Key Behavior to invoke their application functionality. Such applications should use the "Launch application or "Send Intent" Key Behaviors instead. But using the KeyMappingMgr, a non-System application can determine what Key(s), pressed in what Key State(s) will produce Triggers for which System applications are registered.
 	
 * Launch application
 
@@ -89,11 +88,11 @@ Each Key Mapping specifies a single Key Behavior that should be performed for a 
 
 	This Key Behavior indicates that the Key pressed should send an Intent, which could be sent to an application using startActivity or sendBroadcast. Supporting both types of Intents provides flexibility so you can launch a variety of applications. In addition, you can configure various parameters for constructing the Intent to match it to the needs of an application, including attaching an extra data value to communicate information about the desired action the application should perform.
 
-	Since Intents are extremely flexible, an existing application might require an Intent that cannot be described via the rather simplistic capabilities inside the KeyMappingMgr Feature Type. While it may be possible to meet the needs of some existing applications, the "Send Intent" Key Behavior is really designed to send Intents that are specifically designed and added to applications for this purpose.
+	Since Intents are extremely flexible, an existing application might require an Intent that cannot be described via the rather simplistic capabilities inside the KeyMappingMgr. While it may be possible to meet the needs of some existing applications, the "Send Intent" Key Behavior is really designed to send Intents that are specifically designed and added to applications for this purpose.
 	
 * Suppress key
 
-	This Key Behavior indicates that the Key pressed should be completely ignored and should produce no result. In essence, this results in  essentially identical results as if the Key was never pressed.
+	This Key Behavior indicates that the Key pressed should be completely ignored and should produce no result. In essence, this results in essentially identical results as if the Key was never pressed.
 	
 * Reset to default
 
@@ -143,7 +142,7 @@ Description:
 
 >This parm allows you to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, you must specify a parm value that contains a Key Identifier that is listed in the following table.
 
->**Note:** Not all devices physically support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, you can query the KeyMappingMgr Feature Type to acquire a list of all Key Identifiers that are supported on that device.
+>**Note:** Not all devices physically support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, you can query the KeyMappingMgr to acquire a list of all Key Identifiers that are supported on that device.
 
 <div class="parm-table">
  <table>
@@ -939,7 +938,7 @@ Description:
 
 >This value allows you to specify which Key Code will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The value must be selected from the following table.
 
->**Note:** If an attempt is made to specify a Key Behavior for a Key Mapping Table that is not supported on a given device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Key Mapping Tables supported on that device. Alternately, you can query the KeyMappingMgr Feature Type to acquire a list of all Key Mapping Tables that are supported on that device.
+>**Note:** If an attempt is made to specify a Key Behavior for a Key Mapping Table that is not supported on a given device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Key Mapping Tables supported on that device. Alternately, you can query the KeyMappingMgr to acquire a list of all Key Mapping Tables that are supported on that device.
 
 <div class="parm-table">
  <table>
@@ -2540,7 +2539,7 @@ Parm value input rules:
 * String containing a valid flag
 	* The list of valid flags would be the Constant Values, which can be found on this page: http://developer.android.com/reference/android/content/Intent.html
 	* For example, the value for the FLAG_ACTIVITY_NEW_TASK flag would be "0x10000000"
-	* Also, if more than one flag should be used, the flags will need to be OR'ed together. For example, if you want to use the FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_SINGLE_TOP flags, their values ("0x10000000" and "0x20000000") would be OR'ed together to produce the value "0x30000000", which would be used as the parm value.
+	* Also, if more than one flag should be used, the flags will need to be OR'ed together. For example, if you want to use the FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_SINGLE_TOP flags, their values ("0x10000000" and "0x20000000") would be OR'ed together to produce the value "0x30000000" that would be used as the parm value.
 
 ###Application Launch
 
@@ -2573,7 +2572,7 @@ Parm value input rules:
 
 ###Key Swap Example
 
-The first feature of the following Request XML Document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
+The first feature of the following Request XML document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
 
 Input
 

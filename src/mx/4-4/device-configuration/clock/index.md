@@ -1,17 +1,17 @@
 ---
 title: Clock Manager
-description: The Clock Manager allows you to set the Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.
+description: The Clock Manager allows the setting of Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.
 ---
 
 ## About Clock
 
 ### Overview
 
+The Clock Manager allows the setting of Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.
+
 Zebra Android devices contain Clock functionality that tracks the current Date and Time on the device, in Coordinated Universal Time (UTC), and that can calculate the current Date and Time, in Local Time Coordinates (LTC), for a device's configured location. UTC is effectively the same as the LTC at the Prime Meridian in Greenwich, England. LTC is computed from UTC by using an offset determined based on a configured Time Zone that us suitable for the location where the device is being used and any Daylight Saving Time offset that is required for that Time Zone.
 
-The Clock Feature Type allows you to programmatically set the Date, Time, and Time Zone or to configure the device to automatically acquire the Date and Time from a Network Time Protocol (NTP) Server. To avoid complications related to LTC, all Date and Time values used by the Clock Feature Type must be represented as UTC.
-
-Using UTC reduce complexity and ensures a deterministic result when setting the Date and Time, regardless of the configured Time Zone or any Daylight Saving Time offset that might apply. For example, if the Date and Time were set in LTC, then the order of setting Date, Time, and Time Zone could affect the actual results. Also, if LTC were used, then certain combinations would become invalid such as the times "skipped" during adjustment for Daylight Saving Time.
+To avoid complications related to LTC, all Date and Time values used by the Clock must be represented as UTC. Using UTC reduces complexity and ensures a deterministic result when setting the Date and Time, regardless of the configured Time Zone or any Daylight Saving Time offset that might apply. For example, if the Date and Time were set in LTC, then the order of setting Date, Time, and Time Zone could affect the actual results. Also, if LTC were used, then certain combinations would become invalid such as the times "skipped" during adjustment for Daylight Saving Time.
 
 ### Main Functionality
 
@@ -178,7 +178,7 @@ We can then make the following observations:
 * The GMT offset for that Time Zone is -5 hours
 * That Time Zone does not observe Daylight Time on that Date
 
-The values specified to the Clock Feature Type would therefore be:
+The values specified to the Clock would therefore be:
 
 * TimeZone = "America/New_York"
 * Date = "2010-01-15"
@@ -207,7 +207,7 @@ We can then make the following observations:
 * The GMT offset for that Time Zone is +5 1/2 hours (+05:00)
 * That Time Zone does not observe Daylight Time
 
-The values specified to the Clock Feature Type would therefore be:
+The values specified to the Clock would therefore be:
 
 * TimeZone = "Asia/Calcutta"
 * Date = "2010-07-10"

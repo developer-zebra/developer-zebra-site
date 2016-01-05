@@ -1,15 +1,17 @@
 ---
 title: Component Manager
-description: The ComponentMgr allows you to configure the state and usage of specific subsystems on the device, such as Ethernet.
+description: The ComponentMgr is used to configure the state and usage of specific subsystems on the device.
 ---
 
 ## About ComponentMgr
 
 ### Overview
 
-The ComponentMgr Feature Type allows you to configure the state and usage of specific subsystems on the device, such as Ethernet. State allows you to control whether the subsystem is On (active) or Off (inactive). Usage allows you to control (enable or disable) whether the state of a subsystem can be changed (turned On or Off) by the device user using the System Settings Menu or programmatically using the ComponentMgr Feature Type. If you try to use the ComponentMgr Feature Type to control the state of a subsystem for which usage is currently disabled, then an error will be returned in the Result XML document.
+The ComponentMgr is used to configure the state and usage of subsystems such as Ethernet on the device.
 
->**Note:** Not every device will support every subsystem. For example, some devices have no support for Ethernet. If you try to use the ComponentMgr Feature Type to control the state or usage of a subsystem that is not supported on a given device, then an error will be returned in the Result XML document.
+The state defines whether a subsystem is On (active) or Off (inactive). Usage enables or disables the subsystem and controls whether its state can be changed (turned On or Off) by the device user through the System Settings Menu or programmatically using the ComponentMgr. If an attempt is made to use the ComponentMgr to control the state of a subsystem for which usage is currently disabled, an error will be returned in the Result XML document.
+
+>**Note:** Not every device will support every subsystem. For example, some devices have no support for Ethernet. If you try to use the ComponentMgr to control the state or usage of a subsystem that is not supported on a given device, then an error will be returned in the Result XML document.
 
 ### Main Functionality
 
@@ -44,12 +46,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the state of the Ethernet Option to be unlocked, allowing it to be changed, either by the device user or by the ComponentMgr Feature Type.</td>
+	<td>This value will cause the state of the Ethernet Option to be unlocked, allowing it to be changed, either by the device user or by the ComponentMgr.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the state of the Ethernet Option to be locked, preventing it from being changed, either by the device user or by the ComponentMgr Feature Type.</td>
+	<td>This value will cause the state of the Ethernet Option to be locked, preventing it from being changed, either by the device user or by the ComponentMgr.</td>
   </tr>
 </table>
 </div>	

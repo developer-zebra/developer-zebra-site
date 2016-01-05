@@ -1,12 +1,14 @@
 ---
 title: Certificate Manager
-description: The CertMgr allows you to manage certificates and the Android Keystore on a device
+description: The CertMgr provides management of certificates and the Android Keystore on a device.
 ---
 ## About CertMgr
 
 ### Overview
 
-A Digital Certificate is an electronic document that can be used to prove an asserted identity. By possessing a valid Public Certificate and its matching Private Key, an entity can assert an identity and then, through Certificate Validation, prove to other entities that it is entitled to assert that identity. Certificate Validation is based on verification that an entity possesses the Private Key that is associated with the valid Public Certificate for the asserted identity and that was issued by a trusted Certificate Authority (CA).
+The CertMgr provides management of certificates and the Android Keystore on a device.
+
+A Digital Certificate is an electronic document that can be used to prove an asserted identity. By possessing a valid Public Certificate and its matching Private Key, an entity can assert an identity and then through Certificate Validation prove to other entities that it is entitled to assert that identity. Certificate Validation is based on verification that an entity possesses the Private Key that is associated with the valid Public Certificate for the asserted identity and that was issued by a trusted Certificate Authority (CA).
 
 To acquire a Public Certificate, an entity first generates a Public/Private Key pair. The entity then submits the Public Key along with identity information to a Certificate Authority (CA). The CA verifies the identity information provided by the requestor, issues a Public Certificate that contains the submitted Public Key and identity information, and signs the Public Certificate using its own Private Key. By signing a Public Certificate with its own Private Key, the CA enables other entities that trust that CA to trust the Public Certificate once they verify that it was signed by that CA. Signing also enables entities to verify that the Public Certificate is genuine and has not been modified since it was signed by the CA.
 
@@ -26,7 +28,7 @@ Digital Certificates are commonly acquired in the form of Certificate Files of v
 
 Private Keys are commonly generated or acquired in the form of a text Key File encoded according to the PEM standard. A common practice for Client Certificates is to combine a Public Certificate and a matching Private Key into a Container Files using the Public-Key Cryptography Standards (PKCS) standard PKCS12. PKCS12 is an archive file format for storing multiple cryptography objects as a single binary file, usually with a file extension of .PKCS12, .P12, or .PFX. Container Files constructed according to the PKCS12 standard are typically encrypted based on a password to protect the Private Key contained therein. Encrypted Container Files would require the original password to be supplied before they could be processed.
 
-The CertMgr Feature Type allows you to initialize the Android Keystore, install or uninstall CA Certificates to the Trusted Store and Android Keystore and the install or uninstalled CA and/or Client Certificates to the Android Keystore.
+The CertMgr can initialize the Android Keystore, install or uninstall CA Certificates to the Trusted Store and Android Keystore and the install or uninstalled CA and/or Client Certificates to the Android Keystore.
 
 ### Main Functionality
 
@@ -62,7 +64,7 @@ Description:
   <tr>
     <td>Initialize Android Keystore</td>
     <td>"4"</td>
-	<td><p>This value will cause a new Android Keystore to be initialized.</p><b>Note:</b> Initializing the Android Keystore can only be done once. If an attempt is made to Initialize the Android Keystore when it has previously been initialized, via the CertMgr Feature Type or by the device user via the System Settings Menu, then an error will be returned in the Result XML. No method is currently provided, aside from an Enterprise Reset (which can be performed using the PowerMgr Feature Type) to return the Android Keystore to an uninitialized state or to re-initialize the Android Keystore.</p></td>
+	<td><p>This value will cause a new Android Keystore to be initialized.</p><b>Note:</b> Initializing the Android Keystore can only be done once. If an attempt is made to Initialize the Android Keystore when it has previously been initialized, via the CertMgr or by the device user via the System Settings Menu, then an error will be returned in the Result XML. No method is currently provided, aside from an Enterprise Reset (which can be performed using the PowerMgr) to return the Android Keystore to an uninitialized state or to re-initialize the Android Keystore.</p></td>
   </tr>
 </table>
 </div>	
@@ -91,7 +93,7 @@ Description:
 
 >This parm is used to specify the type of Certificate to be installed.
 
->**Note:** The Android Keystore must be initialized exactly once before the CertMgr Feature Type can be used to Install or Uninstall Certificates. The Android Keystore may be initialized using the CertMgr Feature Type or by a device user via the System Settings Menu.
+>**Note:** The Android Keystore must be initialized exactly once before the CertMgr can be used to Install or Uninstall Certificates. The Android Keystore may be initialized using the CertMgr or by a device user via the System Settings Menu.
 
 <div class="parm-table">
  <table>
@@ -182,7 +184,7 @@ Description:
 
 >This parm allows you to specify whether or not to the device clock should be adjusted automatically when the Certificate is installed if the current date on the device is outside of the Validity Window for the Certificate.
 
->**Note:** This option allows you to solve the issue where a device may be unable to use a Certificate to get on a network (e.g. EAP-TLS) because the date on the device is not set properly (as it may not be on a fresh-out-of-the-box device) and hence the Certificate appears to be invalid (expired or not yet valid). If this parm has a value of "true", then if the date is outside the Validity Window for a Certificate that is being installed, the date of the device will be changed to the start date of the Validity Window for a Certificate. A common use case is to use this option to allow a Certificate to be used to join a network and then acquire the real date and time via that network (see [Clock Feature Type](../guide/csp/clock)).
+>**Note:** This option allows you to solve the issue where a device may be unable to use a Certificate to get on a network (e.g. EAP-TLS) because the date on the device is not set properly (as it may not be on a fresh-out-of-the-box device) and hence the Certificate appears to be invalid (expired or not yet valid). If this parm has a value of "true", then if the date is outside the Validity Window for a Certificate that is being installed, the date of the device will be changed to the start date of the Validity Window for a Certificate. A common use case is to use this option to allow a Certificate to be used to join a network and then acquire the real date and time via that network (see [Clock](../guide/csp/clock)).
 
 Parm value input rules:
 
@@ -216,7 +218,7 @@ Description:
 
 >This parm allows you to specify the password that will be used to Initialize the Android Keystore. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause a random password to be generated to Initialize the Android Keystore.
 
->**Note:** This password will never need to be supplied again to the CertMgr Feature Type once the Android Keystore has been successfully initialized since it will be able Install and Uninstall Certificates without needing this password. But the device user might need to know this password to perform management of Certificates using the System Settings Menu. If the password is lost or if a random password is generated, then the device user could not be supplied with the password and hence could never perform such management. This is generally not a problem since management of Certificates is generally a feature best left to MDMs and it is better to prevent the device user from performing such functions.
+>**Note:** This password will never need to be supplied again to the CertMgr once the Android Keystore has been successfully initialized since it will be able Install and Uninstall Certificates without needing this password. But the device user might need to know this password to perform management of Certificates using the System Settings Menu. If the password is lost or if a random password is generated, then the device user could not be supplied with the password and hence could never perform such management. This is generally not a problem since management of Certificates is generally a feature best left to MDMs and it is better to prevent the device user from performing such functions.
 
 Parm value input rules: 
 
@@ -225,7 +227,7 @@ Parm value input rules:
 ##Example XML
 ###Initialize the Android Keystore
 
-The Android Keystore must be initialized exactly once before Certificates can be installed or uninstalled. If the device user has not initialized the Android Keystore via the System Settings Menu, and the CertMgr Feature Type has not previously been used to initialize the Android Keystore, then the CertMgr Feature Type should be used to initialize the Android Keystore, as shown below:
+The Android Keystore must be initialized exactly once before Certificates can be installed or uninstalled. If the device user has not initialized the Android Keystore via the System Settings Menu, and the CertMgr has not previously been used to initialize the Android Keystore, then the CertMgr should be used to initialize the Android Keystore, as shown below:
 
 Without a password:
 

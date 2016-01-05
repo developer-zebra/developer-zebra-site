@@ -1,18 +1,19 @@
 ---
 title: XML Manager
-description: The XmlMgr allows you to specify the Error Handling Mode the MXMS should use when processing a Request XML document.
+description: The XmlMgr specifies the Error Handling Mode the MXMS will use when processing a Request XML document.
 ---
 
 ## About XmlMgr
 
 ### Overview
+The XmlMgr specifies the Error Handling Mode the MXMS will use when processing a Request XML document.
 
-The MXMS processes a Request XML document which contains one or more Features, where each Feature is of one of the defined Feature Types. Each Feature is represented by a top-level characteristic tag in the Request XML document, whose type matches the Feature Type. For example, a Feature of Feature Type "XmlMgr" in XML would begin with:
+The MXMS processes a Request XML document that contains one or more Features as defined in the CSP. Each Feature is represented by a top-level characteristic tag in the Request XML document, whose type matches that CSP Feature. For example, a Feature of "XmlMgr" CSP in XML would begin with:
 
 	:::XML
 	<characteristic type="XmlMgr" ...
 
-The MXMS executes Features, by passing them to the corresponding CSPs, in the order they appear in the Request XML document, by passing the characteristic to the corresponding CSP. When a Feature is executed by a CSP, the CSP returns Result XML. A characteristic tag is returned by the CSP to indicate that the Feature succeeded. A characteristic-error tag is returned by the CSP  to indicate that the Feature failed. The MXMS aggregates the Result XML returned by the CSPs in the order the Features are executed, to create the final Result XML.
+The MXMS executes Features, by passing them to the corresponding CSPs, in the order they appear in the Request XML document, by passing the characteristic to the corresponding CSP. When a Feature is executed by a CSP, the CSP returns Result XML. A characteristic tag is returned by the CSP to indicate that the Feature succeeded. A characteristic-error tag is returned by the CSP to indicate that the Feature failed. The MXMS aggregates the Result XML returned by the CSPs in the order the Features are executed, to create the final Result XML.
 
 For the purposes of discussing MXMS Error-Handling, any Feature that can be executed at all is considered a success and any Feature that cannot be executed at all is considered a failure. Errors are handled by the MXMS based on the Error Handling Mode that is in effect. The MXMS has a Default Error Handling Mode that is always in effect at the beginning of each new Request XML document that is processed. The Error Handling Mode can be left as the default or can be changed one or more times within a single Request XML document.
 
@@ -20,7 +21,7 @@ When the Default Error-Handling Mode, "Execute all to end", is in effect, the MX
 
 The MXMS supports an additional Error-Handling Mode, "Execute until error, then stop", where it stops executing Features on the first failure and returns Result XML that contains only the characteristic tags for the Features that succeeded plus the characteristic-error tag for the Feature that failed. This mode can be beneficial when Features are dependent on each other since it avoids the "domino effect" where one failure causes a whole sequence of failures and also allows execution to be terminating sooner, without attempting Features that are doomed to fail.
 
-The XmlMgr Feature Type allows you to specify the Error Handling Mode the MXMS should use when processing a Request XML document. If no XmlMgr Features are present in a Request XML document, then the entire document is processed using the Default Error Handling Mode. If an XmlMgr Feature is present in a Request XML document, then the Error Handling Mode specified by that XmlMgr Feature will be used by the MXMS when executing subsequent Features up until the next XmlMgr Feature or the end of the Request XML document, whichever comes first.
+The XmlMgr allows you to specify the Error Handling Mode the MXMS should use when processing a Request XML document. If no XmlMgr Features are present in a Request XML document, then the entire document is processed using the Default Error Handling Mode. If an XmlMgr Feature is present in a Request XML document, then the Error Handling Mode specified by that XmlMgr Feature will be used by the MXMS when executing subsequent Features up until the next XmlMgr Feature or the end of the Request XML document, whichever comes first.
 
 ### Main Functionality
  

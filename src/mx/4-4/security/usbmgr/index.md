@@ -1,14 +1,14 @@
 ---
 title: USB Manager
-description: The UsbMgr allows you to control which USB functions can be used on the device.
+description: The UsbMgr controls which USB functions can be used on the device.
 ---
 ## About UsbMgr
 
 ### Overview
 
-Android devices generally have one or more Universal Serial Bus (USB) ports that can be used for various purposes. A given USB port could implement "Host" mode, which is used to connect various USB peripherals (e.g. mice, keyboards, USB storage devices) to the Android device. A given USB port could implement "Peripheral" mode, which is used to connect the Android device to a Host, such as a PC.  A given USB port could implement On The Go (OTG) support, which can act in either "Host" or "Peripheral" mode, based on the cable connected.
+The UsbMgr controls which USB functions can be used on the device.
 
-The UsbMgr Feature Type allows you to control which USB functions can be used on the device.
+Android devices generally have one or more Universal Serial Bus (USB) ports that can be used for various purposes. A given USB port could implement "Host" mode, which is used to connect various USB peripherals (e.g. mice, keyboards, USB storage devices) to the Android device. A given USB port could implement "Peripheral" mode, which is used to connect the Android device to a Host, such as a PC. A given USB port could implement On The Go (OTG) support, which can act in either "Host" or "Peripheral" mode, based on the type of cable connected.
 
 ### Main Functionality
 
@@ -39,17 +39,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the USB module can be used.  This value will also cause other parms to be presented to allow individual USB functions to be controlled.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the USB module can be used. This value will also cause other parms to be presented to allow individual USB functions to be controlled.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause usage of the USB module to be allowed.  This value will also cause other parms to be presented to allow individual USB functions to be controlled.</td>
+	<td>This value will cause usage of the USB module to be allowed. This value will also cause other parms to be presented to allow individual USB functions to be controlled.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause all usage of the USB module to be prevented.  This value will also prevent other parms from being presented since individual USB functions cannot be used if all usage of the USB module is being prevented.</td>
+	<td>This value will cause all usage of the USB module to be prevented. This value will also prevent other parms from being presented since individual USB functions cannot be used if all usage of the USB module is being prevented.</td>
   </tr>
 </table>
 </div>	
@@ -99,7 +99,7 @@ Parm name: UsbADBUsage
 
 Description: 
 
->This parm allows you to control whether the use of the Android Debug Bridge (ADB) Mode will be allowed. When allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port.  ADB is a line tool that allows communication between the PC and the Android device and can be used to copy files, install apps, run shell commands, etc. Use of ADB could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to remove or modify the operation of important applications on a device.
+>This parm allows you to control whether the use of the Android Debug Bridge (ADB) Mode will be allowed. When allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. ADB is a line tool that allows communication between the PC and the Android device and can be used to copy files, install apps, run shell commands, etc. Use of ADB could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to remove or modify the operation of important applications on a device.
 
 <div class="parm-table">
  <table>
@@ -145,12 +145,12 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not all of the methods to access device storage from a PC via USB can be used.  This value will also cause other parms to be presented to allow individual modes to be controlled.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not all of the methods to access device storage from a PC via USB can be used. This value will also cause other parms to be presented to allow individual modes to be controlled.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause all of the methods to access device storage from a PC via USB to be allowed.  This value will also prevent other parms from being presented since individual modes cannot be controlled if all modes are being allowed.</td>
+	<td>This value will cause all of the methods to access device storage from a PC via USB to be allowed. This value will also prevent other parms from being presented since individual modes cannot be controlled if all modes are being allowed.</td>
   </tr>
   <tr>
     <td>Disable</td>
@@ -169,7 +169,7 @@ Parm name: UsbUMSAccessDeviceStorageUsage
 
 Description: 
 
->This parm allows you to control whether the use of USB Mass Storage (UMS) is allowed.  When this mode is allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, delete files, or even format an entire storage volume.  Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
+>This parm allows you to control whether the use of USB Mass Storage (UMS) is allowed. When this mode is allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, delete files, or even format an entire storage volume. Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
 
 <div class="parm-table">
  <table>
@@ -241,7 +241,7 @@ Parm name: UsbPTPAccessDeviceStorageUsage
 
 Description: 
 
->This parm allows you to control whether the use of Picture Transfer Protocol (PTP) is allowed.  When this mode is allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, or delete files. Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
+>This parm allows you to control whether the use of Picture Transfer Protocol (PTP) is allowed. When this mode is allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, or delete files. Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
 
 <div class="parm-table">
  <table>

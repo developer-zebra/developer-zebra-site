@@ -1,15 +1,14 @@
 ---
 title: WiFi Manager
-description: The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
+description: The Wi-Fi Manager administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
 ---
 ## About Wi-Fi
 
 ### Overview
 
-The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
+The Wi-Fi Manager administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
 
-> **Note:** In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
-
+> **Note:** The terms "enable" and "disable" in this CSP are equivalent to "turn on" and "turn off." Those terms in other CSPs refer to the feature's Usage setting, which is the ability of the device user to access the feature at all.
 
 ### Main Functionality
 
@@ -812,7 +811,7 @@ Description:
 ### Specify Advanced Options
 
 Description: 
->Specify whether Advanced Options will be used. In most cases, these options should not be used except under the direction of Zebra support staff. More information about the Advanced Options that can be set, please see [this page.](../guide/csp/wifiAdvancedOptions)
+>Specify whether Advanced Options will be used. In most cases, these options should not be used except under the direction of Zebra support staff. More information about the Advanced Options that can be set, please refer to the [Wi-Fi Advanced Options page](../guide/csp/wifiAdvancedOptions).
 
 ### Network Action
 Pivotal parm: Yes
@@ -950,7 +949,7 @@ Description:
   <tr>
     <td>WPA2</td>
     <td>"2"</td>
-	<td>This indicates that the network requires encryption using the Wi-Fi Protected Access version 2 (WPA2) standard. WPA2 supports encryption using either the Temporal Key Integrity Protocol (TKIP) for backward compatibility with WPA, or the more secure Advanced Encryption Standard (AES) algorithm.  A decision about whether to use TKIP or AES (or auto-select) will need to be made and then a TKIP or AES-compatible key will need to be specified.</td>
+	<td>This indicates that the network requires encryption using the Wi-Fi Protected Access version 2 (WPA2) standard. WPA2 supports encryption using either the Temporal Key Integrity Protocol (TKIP) for backward compatibility with WPA, or the more secure Advanced Encryption Standard (AES) algorithm. A decision about whether to use TKIP or AES (or auto-select) will need to be made and then a TKIP or AES-compatible key will need to be specified.</td>
   </tr>
   <tr>
     <td>WPA/WPA2</td>
@@ -991,49 +990,49 @@ Description:
   <tr>
     <td>EAP-FAST-GTC</td>
     <td>"13"</td>
-	<td>This indicates that the network requires authentication using a token generated using a Generic Token Card (GTC) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422). EAP-FAST-GTC requires a device identity to be specified and requires that a token value (typically obtained from a physical token device) be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using a token generated using a Generic Token Card (GTC) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422). EAP-FAST-GTC requires a device identity to be specified and requires that a token value (typically obtained from a physical token device) be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr>
   <tr>
     <td>EAP-FAST-MSCHAPV2</td>
     <td>"11"</td>
-	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422). EAP-FAST-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422). EAP-FAST-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr>
   <tr>
     <td>EAP-TTLS-PAP</td>
     <td>"8"</td>
-	<td>This indicates that the network requires authentication using the Password Authentication Protocol (PAP) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-PAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using the Password Authentication Protocol (PAP) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-PAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr>
    <tr>
     <td>EAP-TTLS-MSCHAP</td>
     <td>"6"</td>
-	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol (MSCHAP) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-MSCHAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol (MSCHAP) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-MSCHAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr>
   <tr>
     <td>EAP-TTLS-MSCHAPV2</td>
     <td>"7"</td>
-	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr>
   <tr>
     <td>LEAP</td>
     <td>"4"</td>
-	<td>This indicates that the network requires authentication using the Lightweight Extensible Authentication Protocol (LEAP) defined by Cisco.  LEAP uses a modified version of MSCHAP without a secure tunnel and hence can be easily compromised. LEAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. Unlike standard EAP modes, LEAP does not support an optional certificate to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using the Lightweight Extensible Authentication Protocol (LEAP) defined by Cisco. LEAP uses a modified version of MSCHAP without a secure tunnel and hence can be easily compromised. LEAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. Unlike standard EAP modes, LEAP does not support an optional certificate to help verify the identity of the authentication server.
 </td>
   </tr>
   <tr>
     <td>PEAP-MSCHAPV2</td>
     <td>"2"</td>
-	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within a secure TLS tunnel established using the Protected Extensible Authentication Protocol, (PEAP) defined by Cisco Systems, Microsoft, and RSA Security. PEAP-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within a secure TLS tunnel established using the Protected Extensible Authentication Protocol, (PEAP) defined by Cisco Systems, Microsoft, and RSA Security. PEAP-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr> 
   <tr>
     <td>PEAP-GTC</td>
     <td>"10"</td>
-	<td>This indicates that the network requires authentication using a token generated using a Generic Token Card (GTC) within a secure TLS tunnel established using the Protected Extensible Authentication Protocol, (PEAP) defined by Cisco Systems, Microsoft, and RSA Security. PEAP-GTC requires a device identity to be specified and requires that a token value (typically obtained from a physical token device) be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+	<td>This indicates that the network requires authentication using a token generated using a Generic Token Card (GTC) within a secure TLS tunnel established using the Protected Extensible Authentication Protocol, (PEAP) defined by Cisco Systems, Microsoft, and RSA Security. PEAP-GTC requires a device identity to be specified and requires that a token value (typically obtained from a physical token device) be specified to prove the authenticity of that device identity. An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
 </td>
   </tr>
 </table>
@@ -1573,7 +1572,7 @@ Pivotal parm: No
 Parm name: BypassProxy
 
 Description: 
->Once a proxy is configured for a given network, all HTTP traffic will generally be routed to the outer network via that proxy.  
+>Once a proxy is configured for a given network, all HTTP traffic will generally be routed to the outer network via that proxy.
 
 >In some cases, it may be desirable to avoid routing selected Host Names or IP Addresses through the proxy. For example, you might want to access a local Web Server. This can be accomplished by listing the Host Names or IP Addresses for which the Proxy should be bypassed. To specify multiple Host Names or IP Addresses, separate them with commas.
 

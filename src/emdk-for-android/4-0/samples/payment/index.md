@@ -52,7 +52,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
 * [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)
 
 ##Using This Sample
-1. Bluetooth pair your Android device to the PD40 payment module.
+1. Bluetooth pair your Android device with the PD40 payment module.
 2. Launch the payment API sample. The initial screen should resemble the following.
     ![img](1.png) 
     

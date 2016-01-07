@@ -59,8 +59,14 @@ The following guide will walk you through setting up the EMDK samples in your ID
 2. Press the **Enable** button. You should see a message in the sample application stating that the connection to the payment device was successful. 
 
   ![img](2.png)    
-3. Press the **Do Transaction** button. You should see a message stating that the sample app has send a message prompt to the payment device.
-
-  ![img](3.png) 
-
-4. 
+3. Press the **Do Transaction** button in the sample application.  Now the Payment device should display a message prompting user input. Press the **Enter** key to begin the payment transaction.
+  
+  ![img](pd40-1.png)
+  
+  5. Now press the **1** button to pay with cash.
+  
+  ![img](pd40-2.png)
+  
+  The payment transaction is now complete.
+  
+    ![img](3.png) 

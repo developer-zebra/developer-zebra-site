@@ -142,7 +142,7 @@ The exception will be thrown if it fails to retrieve version
 
 ### process
 
-**public byte process(byte cmdApdu, short expectedRespLength, boolean userFormattedProtocolFrame)**
+**public byte process(byte[] cmdApdu, short expectedRespLength, boolean userFormattedProtocolFrame)**
 
 Sends the Command APDU (C-APDU) (Application Protocol Data Unit) and
  receives Response APDU (R-APDU) from connected contactless smart cards.

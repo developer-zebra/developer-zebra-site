@@ -24,7 +24,7 @@ The ScanData object gives information on the barcode data scanned.
 **public byte getRawData()**
 
 Returns the raw decoded data as byte array.
- The can application can use this raw data directly or 
+ The application can use this raw data directly or 
  can convert the byte array to a string using the named charset as shown below
  String encodeString =  new String(rawData, charset);
 

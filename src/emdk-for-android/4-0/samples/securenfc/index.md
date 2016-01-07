@@ -22,6 +22,8 @@ devices:
 image: 1.png
 screenshots: 
   - 1.png
+  - 1.png
+  - 1.png
 
 ---
 

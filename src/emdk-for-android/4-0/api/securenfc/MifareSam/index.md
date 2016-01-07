@@ -114,7 +114,7 @@ The exception will be thrown if it fails to
 
 ### authenticateSam
 
-**public void authenticateSam(byte authKey, SamKey samKey, MifareSam.AdditionalAuthData additionalAuthData)**
+**public void authenticateSam(byte[] authKey, SamKey samKey, MifareSam.AdditionalAuthData additionalAuthData)**
 
 Performs the SAM authentication. If the SAM is in AV1 mode, performs
  mutual 3-pass authentication between host system and MIFARE SAM AV1 or

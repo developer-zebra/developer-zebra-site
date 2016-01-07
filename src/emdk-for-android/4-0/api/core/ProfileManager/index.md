@@ -24,7 +24,7 @@ This method tells whether the previous process profile request is pending or not
 
 **Returns:**
 
-boolean
+boolean - Returns whether the previous process profile request is pending or not.
 
 ### CreateNameValuePair
 
@@ -39,15 +39,15 @@ This function creates a name value pair string according to the
 
 **Parameters:**
 
-`emdkName`
+`emdkName` - emdk name String
 
-`paramName`
+`paramName` - Parameter name String
 
-`paramValue`
+`paramValue` - Parameter value String
 
 **Returns:**
 
-java.lang.String - - Name value pair string
+java.lang.String - Returned in the format: emdkName.paramName=paramValue
 
 ### processProfile
 
@@ -70,7 +70,11 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Parameters:**
 
-`profileName` - Name of the profile.
+`profileName` - Name of the profile. ex: '<b>Profile1</b>'. </br>
+ <ul>
+	<li>You can also specify just part of the profile when a fully qualified name of the following format is given: [profileName][featureType][name in profile parameter] to just edit part of the profile. For example, if my profile is called 'Profile1' and the name in profile parameter is 'myName'. Passing 'profileName' as 'Profile1/ActivitySelection/myName' will just process this part of the profile.</li>
+ <li>Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP.</li>
+ </ul>
 
 `profileFlag` -  ProfileManager.PROFILE_FLAG <br><br>
  
@@ -90,7 +94,7 @@ com.symbol.emdk.EMDKResults
 
 ### processProfile
 
-**public EMDKResults processProfile(java.lang.String profileName, ProfileManager.PROFILE_FLAG profileFlag, java.lang.String extraData)**
+**public EMDKResults processProfile(java.lang.String profileName, ProfileManager.PROFILE_FLAG profileFlag, java.lang.String[] extraData)**
 
 Processes the given profile based on the data provided and the flag and return status of the action. 
  
@@ -104,7 +108,11 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Parameters:**
 
-`profileName` - Name of the profile.
+`profileName` - Name of the profile. ex: '<b>Profile1</b>'
+ <ul>
+ <li>You can also specify just part of the profile when a fully qualified name of the following format is given: [profileName][featureType][name in profile parameter] to just edit part of the profile. For example, if my profile is called ‘EmdkSampleProfile-1’ and the name I gave to the Clock feature is 'clock1'. Passing 'profileName' as ' EmdkSampleProfile-1/Clock/clock1’ will just process this part of the profile.</li>
+ <li>Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP, Clock, PowerMgr, PersistMgr, CertMgr, AppMgr, AccessMgr, Wi-Fi, GprsMgr</li>
+ </ul>
 
 `profileFlag` -  ProfileManager.PROFILE_FLAG <br><br>
  
@@ -138,7 +146,11 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Parameters:**
 
-`profileName` - Name of the profile.
+`profileName` - Name of the profile. ex: '<b>Profile1</b>'
+ <ul>
+ <li>You can also specify just part of the profile when a fully qualified name of the following format is given: [profileName][featureType][name in profile parameter] to just edit part of the profile. For example, if my profile is called 'Profile1' and the name in profile parameter is 'myName'. Passing 'profileName' as 'Profile1/ActivitySelection/myName' will just process this part of the profile.</li>
+ <li>Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP</li>
+ </ul>
 
 `profileFlag` -  ProfileManager.PROFILE_FLAG <br><br>
  
@@ -150,7 +162,7 @@ Processes the given profile based on the data provided and the flag and return s
  If profileFlag is set to GET and if the profile is present in the internal repository, it will be 
  returned in extraData.
 
-`extraData` -  ProfileConfig This can be used to provide data for processing action.
+`extraData` -  ProfileConfig This can be used to provide data for processing action. This parameter is only supported for DataCapture profile features.
 
 **Returns:**
 
@@ -189,7 +201,7 @@ com.symbol.emdk.EMDKResults
 
 ### processProfileAsync
 
-**public EMDKResults processProfileAsync(java.lang.String profileName, ProfileManager.PROFILE_FLAG profileFlag, java.lang.String extraData)**
+**public EMDKResults processProfileAsync(java.lang.String profileName, ProfileManager.PROFILE_FLAG profileFlag, java.lang.String[] extraData)**
 
 Processes the given profile based on the data provided and the flag and return status of the request. 
  This is an asynchronous method and result will be returned through the registered callback.
@@ -238,7 +250,7 @@ Processes the given profile based on the data provided and the flag and return s
  If profileFlag is set to GET and if the profile is present in the internal repository, it will be 
  returned via data listener callback..
 
-`extraData` -  ProfileConfig This can be used to provide data for processing action.
+`extraData` -  ProfileConfig This can be used to provide data for processing action. This parameter is only supported for DataCapture profile features.
 
 **Returns:**
 

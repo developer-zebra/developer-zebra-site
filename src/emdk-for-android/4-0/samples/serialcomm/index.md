@@ -56,6 +56,6 @@ The following guide will walk you through setting up the EMDK samples in your ID
   ![img](3.png)  
 2. Press the **Write** button. The application should display a message that it has sent the text from the edit field in number of bytes sent in the status area.
   ![img](2.png)    
-3.  Press the **Read** button.  The appliction will continue to read for 10 seconds and then display the read data in the status area.
+3.  Press the **Read** button.  The application will continue to read for 10 seconds and then display the read data in the status area.
     ![img](4.png) 
   

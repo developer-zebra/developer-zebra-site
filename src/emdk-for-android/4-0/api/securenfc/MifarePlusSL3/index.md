@@ -58,7 +58,7 @@ The exception will be thrown if it fails to disable the tag.
 
 ### firstAuthentication
 
-**public byte firstAuthentication(short keyBlockNo, SamKey samkey, byte samDiverseParams, byte pcdCap2)**
+**public byte firstAuthentication(short keyBlockNo, SamKey samkey, byte[] samDiverseParams, byte[] pcdCap2)**
 
 Performs 'First authentication' on specified block number using SAM key.
  
@@ -116,7 +116,7 @@ The exception will be thrown if it fails to perform firstAuthentication on the t
 
 ### followingAuthentication
 
-**public void followingAuthentication(short keyBlockNo, SamKey samkey, byte samDiverseParams)**
+**public void followingAuthentication(short keyBlockNo, SamKey samkey, byte[] samDiverseParams)**
 
 Performs 'Following authentication' on specified block number using SAM
  key. This authentication should be performed after successful First
@@ -257,7 +257,7 @@ The exception will be thrown if it fails to read the data from the block.
 
 ### writeBlock
 
-**public void writeBlock(boolean encrypted, boolean macOnResponse, short blockNo, byte blockData)**
+**public void writeBlock(boolean encrypted, boolean macOnResponse, short blockNo, byte[] blockData)**
 
 Writes specified number of blocks starting from specified block number.
 

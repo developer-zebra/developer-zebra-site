@@ -1,0 +1,54 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 fixed-column-left"  >
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9 fixed-column-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p>
+                                    {{#if product}}
+                                    {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                     - {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                         - MX: {{mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <section id="services" >
+                                <div class="">
+                                <!-- Start of content list -->
+                                {{#each content-items}}
+                                    {{> content-selector}}
+                                    
+                                {{/each}}  
+                                </div><!--/.container-->
+                                <div>{{> footer-markup}}</div>
+                            </section><!--/#services-->
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer hide=true}}
+
+

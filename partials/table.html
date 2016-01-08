@@ -1,0 +1,30 @@
+<div class="">
+    <table class="table">
+        {{#if this.headings}}
+            <tr>
+            {{#each this.headings}}
+                {{#if @first}}
+                    <th class="col-md-4">{{this.text}}</th>
+                {{else}}
+                    <th>{{this.text}}</th>
+                {{/if}}
+            {{/each}}  
+            </tr>    
+        {{/if}}
+        {{#each this.rows}}
+            <tr>
+            {{#each this.cols}}
+                
+                <td>
+                    {{#is this.content "checked"}}
+                        <i class="fa fa-check-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="{{notes}}"></i>
+                    {{/is}}
+                    {{#is this.content "text"}}
+                        {{text}}
+                    {{/is}}
+                </td>
+            {{/each}}  
+            </tr>    
+        {{/each}}  
+    </table>
+</div> 

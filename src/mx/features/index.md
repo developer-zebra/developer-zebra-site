@@ -1425,7 +1425,7 @@ content-items:
     title: Intent Manager 
     items:
       - type: subsection
-        title: Intent Types	
+        title: Intent Types
         items:
           - type: table
             headings:
@@ -1453,7 +1453,7 @@ content-items:
                   - content: checked
                   - content: checked
       - type: subsection
-        title: Intent Details	
+        title: Intent Details
         items:
           - type: table
             headings:
@@ -1499,7 +1499,7 @@ content-items:
                   - content: checked
                   - content: checked
       - type: subsection
-        title: Intent Extras Types	
+        title: Intent Extras Types
         items:
           - type: table
             headings:
@@ -1572,7 +1572,7 @@ content-items:
     title: KeyMapping Manager 
     items:
       - type: subsection
-        title: Add	
+        title: Add
         items:
           - type: table
             headings:
@@ -1600,7 +1600,7 @@ content-items:
                   - content: checked
                   - content: checked
       - type: subsection
-        title: Remove	
+        title: Remove
         items:
           - type: table
             headings:
@@ -1627,19 +1627,19 @@ content-items:
           rows:
             - cols:
                 - content: text
-                text: Add License from BLOB
+                  text: Add License from BLOB
                 - content: none
                 - content: checked
                 - content: checked
             - cols:
                 - content: text
-                text: Add License from referenced File
+                  text: Add License from referenced File
                 - content: none
                 - content: checked
                 - content: checked
             - cols:
                 - content: text
-                text: Remove License by name
+                  text: Remove License by name
                 - content: none
                 - content: checked
                 - content: checked
@@ -1684,7 +1684,7 @@ content-items:
     title: PowerKey Manager 
     items:
       - type: subsection
-        title: Airplane Mode Power Key Menu Option	
+        title: Airplane Mode Power Key Menu Option
         items:
           - type: table
             headings:
@@ -1706,7 +1706,7 @@ content-items:
                   - content: checked
                   - content: checked
       - type: subsection
-        title: Touch Panel Power Key Menu Option	
+        title: Touch Panel Power Key Menu Option
         items:
           - type: table
             headings:
@@ -1728,7 +1728,7 @@ content-items:
                   - content: checked
                   - content: checked
       - type: subsection
-        title: Safe Mode Power Key Menu Option	
+        title: Safe Mode Power Key Menu Option
         items:
           - type: table
             headings:
@@ -1750,7 +1750,7 @@ content-items:
                   - content: checked
                   - content: checked
       - type: subsection
-        title: Auto Screen Lock	
+        title: Auto Screen Lock
         items:
           - type: table
             headings:
@@ -1775,7 +1775,7 @@ content-items:
     title: Power Manager 
     items:
       - type: subsection
-        title: Device Action	
+        title: Device Action
         items:
           - type: table
             headings:

@@ -66,21 +66,21 @@ In addition to the battery information Android returns by default, which can be 
 * **partnumber** - Part Number for Battery
 * **ratedcapacity** - Rated Capacity of the Battery
 * **cycle** - Charge Cycle count of the Battery
-* **battery_decommission** 
-* **battery_usage_numb**   
+* **battery\_decommission** 
+* **battery\_usage_numb**   
 
 ### Additional MC40 Extras 
-* **base_cumulative_charge**
+* **base\_cumulative\_charge**
    
 ### Additional MC18 Extras
-* **health_percentage**
-* **present_capacity**
-* **base_cumulative_charge**       
-* **total_cumulative_charge**      
-* **present_charge**     
-* **time_to_empty**       
-* **time_to_full**    
-* **seconds_since_first_use**      
+* **health\_percentage**
+* **present\_capacity**
+* **base\_cumulative\_charge**       
+* **total\_cumulative\_charge**      
+* **present\_charge**     
+* **time\_to\_empty**       
+* **time\_to\_full**    
+* **seconds\_since\_first\_use**      
 
 
 #### Example

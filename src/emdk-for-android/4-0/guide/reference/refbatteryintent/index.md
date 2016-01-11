@@ -13,9 +13,9 @@ Knowledge of Android programming and familiarity with the Android intent mechani
 * Devices:	
 	* Symbol Android devices, such as the ET1 rev D, MC40 rev A.
  
- 
 ## Features
 On Symbol devices like the MC40, extra battery information can be retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html). Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information like:
+
 
 * Backup Battery Voltage
 * Battery Manufacture Date
@@ -24,7 +24,24 @@ On Symbol devices like the MC40, extra battery information can be retrieved usin
 * Unique ID for Battery
 * Rated Capacity of the Battery
 * Charge Cycle count of the Battery
- 
+* Battery Decommission status
+* Battery Usage number
+
+In addition to the information listed above the following devices return a few extra values
+### MC40
+* Base Cumulative Charge
+
+### MC18
+* Battery Present Capacity
+* Battery Health Percentage
+* Battery Present Charge
+* Time to Empty  
+* Time to Full
+* Base Cumulative charge
+* Total Cumulative charge
+* Seconds Since First Use 
+
+
 ## Programming Interface
  
 #### Function Prototype
@@ -47,9 +64,24 @@ In addition to the battery information Android returns by default, which can be 
 * **mfd**  - Battery Manufacture Date
 * **serialnumber** - Battery Serial Number
 * **partnumber** - Part Number for Battery
-* **uniqueid** - Unique ID for Battery
 * **ratedcapacity** - Rated Capacity of the Battery
 * **cycle** - Charge Cycle count of the Battery
+* **battery_decommission** 
+* **battery_usage_numb**   
+
+### Additional MC40 Extras 
+* **base_cumulative_charge**
+   
+### Additional MC18 Extras
+* **health_percentage**
+* **present_capacity**
+* **base_cumulative_charge**       
+* **total_cumulative_charge**      
+* **present_charge**     
+* **time_to_empty**       
+* **time_to_full**    
+* **seconds_since_first_use**      
+
 
 #### Example
 
@@ -60,8 +92,7 @@ In addition to the battery information Android returns by default, which can be 
 			int bkvoltage = intent.getExtras().getInt("bkvoltage");  
 			String mfd = intent.getExtras().getString("mfd");  
 			String serialnumber = intent.getExtras().getString("serialnumber");  
-			String partnumber = intent.getExtras().getString("partnumber");  
-			String uniqueid = intent.getExtras().getString("uniqueid");  
+			String partnumber = intent.getExtras().getString("partnumber");    
 			int ratedcapacity = intent.getExtras().getInt("ratedcapacity");  
 			int cycle = intent.getExtras().getInt("cycle");  
 		     

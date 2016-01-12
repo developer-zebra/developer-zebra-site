@@ -47,8 +47,7 @@ Please read the terms of this "End User License Agreement" (the "Agreement") car
 
 ## Latest Release
 <ul>
-<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100998&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%204.0'>EMDK 4.0 - Windows Installation</a></li>
-
+<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100998&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%204.0'>EMDK 4.0 </a></li>
 </ul>
 
 ## Previous Releases

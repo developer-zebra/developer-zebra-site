@@ -80,7 +80,7 @@ h1:target, h2:target, h3:target, h4:target{padding-top:10px}
   background: #ebebeb;
 }
 .section-header .section-title:after {
-  content: "";
+  /*content: "";
   position: absolute;
   width: 24px;
   height: 24px;
@@ -89,7 +89,7 @@ h1:target, h2:target, h3:target, h4:target{padding-top:10px}
   margin-left: -12px;
   border: 5px solid #fff;
   border-radius: 20px;
-  background: #45aed6;
+  background: #45aed6;*/
 }
 .btn {
   border-width: 0;

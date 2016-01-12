@@ -1,6 +1,6 @@
 ---
 publish: false
-title: Developers
+title: Available Product Documentation
 layout: list-products.html
 products:
   - title: EMDK For Android

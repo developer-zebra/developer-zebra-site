@@ -1,0 +1,21 @@
+---
+title: StatusData
+---
+
+    
+
+**Type** - Java.Lang.Object
+
+##Properties
+
+###FriendlyName
+Friendlyname of scanner
+
+**Type** - System.String
+###State
+Scanner State - check class StatusData.ScannerStates
+
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
+
+
+

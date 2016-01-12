@@ -34,6 +34,7 @@ deploy:
     - script:
         name: push to production
         code: |
+          git checkout stage
           cd build
           rm -rf .git
           git init

@@ -40,7 +40,7 @@ deploy:
           git config user.email "pleasemailus@wercker.com"
           git config user.name "werckerbot"
           echo "adding remote"
-          git remote add origin https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git
+          git remote add origin https://$GITHUB_TOKEN@github.com/zebra-stage/zebra-stage.github.io.git
           echo 'fetching origin'
           git fetch origin
           echo 'branch track naster'
@@ -50,4 +50,4 @@ deploy:
           echo 'commiting'
           git commit -m "Deploy from $WERCKER_STARTED_BY"
           echo 'pushing'
-          git push https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git master:master
+          git push https://$GITHUB_TOKEN@github.com/zebra-stage/zebra-stage.github.io.git master:master

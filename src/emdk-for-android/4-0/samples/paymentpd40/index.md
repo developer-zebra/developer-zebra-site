@@ -17,9 +17,7 @@ features:
 
 devices: 
   - MC40 KK
-  - TC70 KK
-  - TC75 KK 
-  - TC55 KK 
+  - MC40 JB 
   
 image: 1-info.png
 screenshots: 

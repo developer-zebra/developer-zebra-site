@@ -46,21 +46,20 @@ Please read the terms of this "End User License Agreement" (the "Agreement") car
 -->
 
 ## Latest Release
-
-
-## Previous Releases
 <ul>
-<li><a href='https://s3.amazonaws.com/emdk/EMDK-A-030109-UP1B.exe'>EMDK 3.1 Update 1 - Windows Installation</a></li>
-<li><a href="https://s3.amazonaws.com/emdk/ReleaseNotesEMDKforAndroidv3.1.html">Release Notes</a></li>
-
-<li><a href='https://s3.amazonaws.com/emdk/EMDK.Docs.Latest.zip'>Offline Help Docs</a></li>
+<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100998&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%204.0'>EMDK 4.0 - Windows Installation</a></li>
 
 </ul>
+
+## Previous Releases
+
 <ul>
-<li><a href='https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-030109.exe'>EMDK 3.1</a></li>
-<li><a href='https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-030004-UP1B.exe'>EMDK 3.0 - Update 1</a></li>
-<li><a href='https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-030004.exe'>EMDK 3.0 - Full Installation</a></li>
-<li><a href="https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-020104.exe">EMDK 2.1</a></li>
-<li><a href="https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-020004.exe">EMDK 2.0</a></li>
+<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=99183&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%203.1'>EMDK 3.1 and Update 1 - Windows Installation</a></li>
+
+<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=96851&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%203.0'>EMDK 3.0 and Update 1</a></li>
+
+<li><a href="https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=96126&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%202.1">EMDK 2.1</a></li>
+
+<li><a href="https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=95455&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%202.0">EMDK 2.0</a></li>
 </ul>
 

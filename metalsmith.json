@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "metalsmith-sitemap": {
+      "hostname": "http://zebra.github.io"
+    }
+  }
+}

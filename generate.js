@@ -21,6 +21,7 @@ var Metalsmith = require('metalsmith'),
     codehighlight = require('metalsmith-code-highlight'),
     blc = require('metalsmith-broken-link-checker'),
     headingsidentifier = require("metalsmith-headings-identifier"),
+    sitemap = require('metalsmith-sitemap'),
     Swag = require('swag');
 
 
@@ -364,6 +365,9 @@ var sitebuild = Metalsmith(__dirname)
 
     }))
     .destination('./build')
+    .use(sitemap({
+        hostname: 'http://zebra.github.io'
+    }))
     .build(function (err) {
     if (err) {
       console.log(err);

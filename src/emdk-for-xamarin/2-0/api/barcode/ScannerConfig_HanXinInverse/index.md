@@ -44,4 +44,3 @@ Enables decoding of only inverse HanXin symbologies.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse
 
 
-

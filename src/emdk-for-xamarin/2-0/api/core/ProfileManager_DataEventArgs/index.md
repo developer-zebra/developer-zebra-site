@@ -18,4 +18,3 @@ Used internally, not for development use.
 **Type** - Symbol.XamarinEMDK.ProfileManager.ResultData
 
 
-

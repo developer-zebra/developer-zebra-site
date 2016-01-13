@@ -40,4 +40,3 @@ Illumination turned on during scanning.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode
 
 
-

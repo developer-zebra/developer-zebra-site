@@ -58,4 +58,3 @@ Returns list of supported scanner devices information.
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.ScannerInfo>
 
 
-

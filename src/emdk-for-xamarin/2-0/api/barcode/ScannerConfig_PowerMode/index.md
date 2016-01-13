@@ -48,4 +48,3 @@ Power level adjusts with scanning usage.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
 
 
-

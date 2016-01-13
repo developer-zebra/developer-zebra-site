@@ -44,4 +44,3 @@ Scanner will read only the old coupon format
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport
 
 
-

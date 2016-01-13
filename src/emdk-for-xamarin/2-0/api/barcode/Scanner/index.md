@@ -119,4 +119,3 @@ Specifies the trigger type for the scanner. It is set to HARD by default.
 **Type** - Symbol.XamarinEMDK.Barcode.Scanner.TriggerTypes
 
 
-

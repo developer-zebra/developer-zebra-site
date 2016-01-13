@@ -134,4 +134,3 @@ View finder error.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 
 
-

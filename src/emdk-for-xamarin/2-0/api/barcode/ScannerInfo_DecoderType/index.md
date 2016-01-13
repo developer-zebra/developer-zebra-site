@@ -44,4 +44,3 @@ Decoder type not defined.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType
 
 
-

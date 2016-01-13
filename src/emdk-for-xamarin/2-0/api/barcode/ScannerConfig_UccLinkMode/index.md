@@ -44,4 +44,3 @@ the digital scanner determines if there is a 2D portion, then transmits the 1D c
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.UccLinkMode
 
 
-

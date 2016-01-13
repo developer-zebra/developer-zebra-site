@@ -44,4 +44,3 @@ System character preamble
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble
 
 
-

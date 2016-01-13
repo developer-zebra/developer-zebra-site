@@ -40,4 +40,3 @@ Lists the Bookland formats
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat
 
 
-

@@ -29,4 +29,3 @@ Set scanner power mode. Use enum ScannerConfig.PowerMode.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
 
 
-

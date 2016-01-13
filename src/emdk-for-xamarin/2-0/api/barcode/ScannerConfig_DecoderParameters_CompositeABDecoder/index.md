@@ -13,4 +13,3 @@ Gets and Sets UCC Link Mode using ScannerConfig.UccLinkMode enum.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.UccLinkMode
 
 
-

@@ -33,4 +33,3 @@ Configures the Viewfinder modes supported for camera scanning. Use class Scanner
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ViewFinderMode
 
 
-

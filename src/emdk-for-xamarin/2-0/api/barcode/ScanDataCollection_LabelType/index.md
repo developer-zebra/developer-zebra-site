@@ -237,4 +237,3 @@ The US POSTNET symbology.
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection.LabelType
 
 
-

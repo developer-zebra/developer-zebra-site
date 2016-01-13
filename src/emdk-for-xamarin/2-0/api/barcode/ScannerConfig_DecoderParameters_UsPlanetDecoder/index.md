@@ -13,4 +13,3 @@ Flag to enable reporting the bar code check digit..
 **Type** - System.Boolean
 
 
-

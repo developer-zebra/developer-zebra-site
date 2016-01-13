@@ -18,4 +18,3 @@ This class is used internally and not meant for developer applications.
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection
 
 
-

@@ -33,4 +33,3 @@ Decode LED ON duration upon successful decode in milliseconds. This value can be
 **Type** - System.Int32
 
 
-

@@ -7,4 +7,3 @@ The Gs1DatabarLim class provides access to parameters that are available for the
 
 
 
-

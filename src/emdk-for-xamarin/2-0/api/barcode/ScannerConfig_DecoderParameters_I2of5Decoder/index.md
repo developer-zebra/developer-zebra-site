@@ -37,4 +37,3 @@ The check digit type to verify. Use enum ScannerConfig.CheckDigitType.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType
 
 
-

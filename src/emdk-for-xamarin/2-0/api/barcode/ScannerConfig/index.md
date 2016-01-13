@@ -48,4 +48,3 @@ This flag to tells whether to skip the unsupported parameter/values and continue
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SkipOnUnSupported
 
 
-

@@ -181,4 +181,3 @@ The USPostNet class provides access to parameters that are available for the USP
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UsPostNetDecoder
 
 
-

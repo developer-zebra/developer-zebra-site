@@ -44,4 +44,3 @@ Bar code contains two check digits.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit
 
 
-

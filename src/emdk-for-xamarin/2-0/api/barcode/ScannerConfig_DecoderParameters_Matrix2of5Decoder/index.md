@@ -29,4 +29,3 @@ Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verif
 **Type** - System.Boolean
 
 
-

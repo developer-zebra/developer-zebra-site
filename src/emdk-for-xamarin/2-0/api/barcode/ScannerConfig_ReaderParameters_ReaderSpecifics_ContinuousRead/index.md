@@ -25,4 +25,3 @@ This setting is used to prevent the scanner driver from decoding the same symbol
 **Type** - System.Int32
 
 
-

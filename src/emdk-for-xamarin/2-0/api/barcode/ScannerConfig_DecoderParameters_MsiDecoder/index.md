@@ -33,4 +33,3 @@ Transmit MSI data with or without the check digit.
 **Type** - System.Boolean
 
 
-

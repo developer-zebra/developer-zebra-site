@@ -13,4 +13,3 @@ ReaderSpecificParams provides access to the reader specific parameters.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters.ReaderSpecifics
 
 
-

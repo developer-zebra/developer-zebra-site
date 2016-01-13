@@ -18,4 +18,3 @@ Scanner State - check class StatusData.ScannerStates
 **Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
 
 
-

@@ -40,4 +40,3 @@ First check digit is MOD 11 and second check digit is MOD 10.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitScheme
 
 
-

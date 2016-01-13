@@ -29,4 +29,3 @@ Class for holding status of processProfileAsync method.
 **Type** - Symbol.XamarinEMDK.EMDKResults
 
 
-

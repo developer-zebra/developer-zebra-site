@@ -41,4 +41,3 @@ MX framework version
 **Type** - Symbol.XamarinEMDK.VersionManager.VERSION_TYPE
 
 
-

@@ -13,4 +13,3 @@ Returns the ScannerResults enum value
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 
 
-

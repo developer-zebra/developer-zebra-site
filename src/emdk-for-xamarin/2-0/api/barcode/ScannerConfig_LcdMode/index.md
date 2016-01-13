@@ -40,4 +40,3 @@ Enables LCD mode
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.LcdMode
 
 
-

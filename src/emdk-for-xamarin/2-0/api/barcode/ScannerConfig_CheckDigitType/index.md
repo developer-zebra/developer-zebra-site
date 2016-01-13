@@ -44,4 +44,3 @@ Select to check the integrity of all Interleaved 2 of 5 symbols to verify the da
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType
 
 
-

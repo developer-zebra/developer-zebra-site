@@ -25,4 +25,3 @@ Provide access to set the laser specific settings if the scanner device is laser
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters.ReaderSpecifics.LaserSpecifics
 
 
-

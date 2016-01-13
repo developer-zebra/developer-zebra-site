@@ -65,4 +65,3 @@ Enables smart supplementals. In this mode the decoder returns the decoded value 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SupplementalMode
 
 
-

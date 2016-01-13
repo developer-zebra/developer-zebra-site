@@ -23,4 +23,3 @@ used internally by BarcodeManager - not to be used in applications.
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState
 
 
-

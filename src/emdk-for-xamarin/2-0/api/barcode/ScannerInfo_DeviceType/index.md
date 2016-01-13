@@ -48,4 +48,3 @@ The scanner device class is not defined.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType
 
 
-

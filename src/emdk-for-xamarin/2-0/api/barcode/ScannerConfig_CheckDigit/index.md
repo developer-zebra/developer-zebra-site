@@ -40,4 +40,3 @@ Verify two check digits.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit
 
 
-

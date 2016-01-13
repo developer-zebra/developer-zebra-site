@@ -21,4 +21,3 @@ The timestamp when the barcode was scanned.
 **Type** - System.String
 
 
-

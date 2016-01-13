@@ -45,4 +45,3 @@ The scanner of fers four levels of decode security for Code 128 bar codes. Selec
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SecurityLevel
 
 
-

@@ -18,4 +18,3 @@ Used by EMDKManager internally, not for development use.
 **Type** - Symbol.XamarinEMDK.EMDKManager
 
 
-

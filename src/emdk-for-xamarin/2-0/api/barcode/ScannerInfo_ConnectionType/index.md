@@ -52,4 +52,3 @@ The scanner device connected via USB to the mobile device.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType
 
 
-

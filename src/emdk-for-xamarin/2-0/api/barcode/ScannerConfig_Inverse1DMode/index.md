@@ -44,4 +44,3 @@ Enables decoding of only inverse 1D symbologies.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Inverse1DMode
 
 
-

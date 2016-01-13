@@ -109,4 +109,3 @@ The profile not found in extraData. Returned in: com.symbol.emdk.emdkservice.Pro
 **Type** - Symbol.XamarinEMDK.EMDKResults.EXTENDED_STATUS_CODE
 
 
-

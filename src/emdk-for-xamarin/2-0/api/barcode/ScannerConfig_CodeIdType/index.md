@@ -44,4 +44,3 @@ A Symbol defined single character prefix.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType
 
 
-

@@ -52,4 +52,3 @@ Laser barcode scanner.
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 
 
-

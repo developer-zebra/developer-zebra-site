@@ -44,4 +44,3 @@ Ringer and Notifications.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType
 
 
-

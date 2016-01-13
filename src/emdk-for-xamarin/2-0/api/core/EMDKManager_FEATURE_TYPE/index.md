@@ -44,4 +44,3 @@ EMDK feature type version
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 
 
-

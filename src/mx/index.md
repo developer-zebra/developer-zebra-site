@@ -7,8 +7,6 @@ menu:
     - title: MX Overview
       url: /mx/overview
     - title: MX Features
-      url: /mx
-    - title: Revision History
       url: /mx/features
     - title: Feature Compatibility
       url: /mx/compatibility

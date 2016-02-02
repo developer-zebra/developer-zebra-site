@@ -321,8 +321,21 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/4-0/'
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-0/api/',
+        folder: 'emdk-for-xamarin/1-0/api/',
         automenu: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/1-0/api/barcode',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/1-0/api/core',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/1-0/'
     }))
     .use(foldermenu({
         folder: 'mx/4-4/',
@@ -374,6 +387,7 @@ var sitebuild = Metalsmith(__dirname)
     }
     else {
       console.log('Site build complete!');
+      console.log('\u0007');//System bell to alert when build is complete
     }
   });
 

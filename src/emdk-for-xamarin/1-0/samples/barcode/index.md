@@ -47,7 +47,14 @@ This sample application will allow you to scan barcodes based on selected scanne
 ## Opening The Component Sample
 This sample is also included with the EMDK Component, follow this guide to [open Sample included in Component](./component-sample).
 
+##Loading the Sample Application
 
+1. Choose a sample and click the **See Details** button.
+2. Now click the **Download** button 
+3. Extract the downloaded project zip file.
+4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project will load in the default IDE for that file type.
+
+Alternatively, you can Launch your prefered IDE ( Visual Studio or Xamarin Studio ) and load the project via the File > Open menu.  
 
 ##Running The Sample
 ###Visual Studio

@@ -45,7 +45,7 @@ This sample application will allow you to scan barcodes based on selected scanne
 
 
 ## Opening The Component Sample
-This sample is also included with the EMDK Component, follow this guide to [open Sample included in Component](./component-sample).
+This sample is also included with the EMDK Component, follow this guide to [open Sample included in Component](../../guide/component-sample).
 
 ##Loading the Sample Application
 

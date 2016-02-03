@@ -294,7 +294,7 @@ Example:
     :::xml
     <?xml version="1.0" encoding="utf-8"?>
 
-    <wap-provisioningdoc&gt;
+    <wap-provisioningdoc>
     
     <!—Sample characteristic node to update firmware -->
     
@@ -417,7 +417,7 @@ Example:
 
     <characteristic-error type=“PaymentMgr” version="0.1"
     desc=”REMOTE_DEVICE_NOT_PAIRED:Bluetooth remote device is not
-    paired with mobile device.”&gt;
+    paired with mobile device.”>
 
     < parm name =“DeviceAddress” value=“MPOS-12345001”/>
 

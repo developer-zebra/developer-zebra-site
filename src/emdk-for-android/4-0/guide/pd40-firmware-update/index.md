@@ -57,9 +57,9 @@ the tasks specified the profile XML.
 The Payment Manager Service package name and class details are below:
 
     :::java
-     String PAYMENT\_SERVICE\_PACKAG\_NAME = "com.symbol.paymentmgr"; 
+     String PAYMENT_SERVICE_PACKAG_NAME = "com.symbol.paymentmgr"; 
      
-     String PAYMENT\_SERVICE\_CLASS\_NAME =
+     String PAYMENT_SERVICE_CLASS_NAME =
      "com.symbol.paymentmgr.PaymentMgrService";
 
 **Code snippet**
@@ -68,11 +68,11 @@ The Payment Manager Service package name and class details are below:
     Intent bindSvcIntent = new Intent();
     
     bindSvcIntent.setComponent(new
-    ComponentName(PAYMENT\_SERVICE\_PACKAG\_NAME,
-    PAYMENT\_SERVICE\_CLASS\_NAME )); 
+    ComponentName(PAYMENT_SERVICE_PACKAG_NAME,
+    PAYMENT_SERVICE_CLASS_NAME )); 
     
     bindService(bindSvcIntent, paymentMgrServiceConnObj,
-    Context.BIND\_AUTO\_CREATE);
+    Context.BIND_AUTO_CREATE);
     
     IPaymentManager paymentMgr = null;
     
@@ -111,20 +111,20 @@ at the end of completion of the tasks specified in the profile.
     :::java
     Intents to start the payment service:
     
-    String PAYMENT\_SERVICE\_PACKAG\_NAME = "com.symbol.paymentmgr"; 
+    String PAYMENT_SERVICE_PACKAG_NAME = "com.symbol.paymentmgr"; 
     
-    String PAYMENT\_SERVICE\_CLASS\_NAME  =
+    String PAYMENT_SERVICE_CLASS_NAME  =
     "com.symbol.paymentmgr.PaymentMgrService";
     
-    String PAYMENT\_SERVICE\_PROFILE\_EX\_DATA\_NAME  =
-    "com.symbol.paymentmgr.PROFILE\_XML”;
+    String PAYMENT_SERVICE_PROFILE_EX_DATA_NAME  =
+    "com.symbol.paymentmgr.PROFILE_XML”;
     
     Intents to receive the result from the payment service:
     
-    String PAYMENT\_SERVICE\_RESULT\_INTENT\_NAME =
+    String PAYMENT_SERVICE_RESULT_INTENT_NAME =
     "com.symbol.paymentmgr.RESULT”;
     
-    String PAYMENT\_SERVICE\_ RESULT\_EX\_DATA\_NAME =
+    String PAYMENT_SERVICE_ RESULT_EX_DATA_NAME =
     "com.symbol.paymentmgr.RESPONSE”;
 
 **Code Snippet:**
@@ -137,11 +137,11 @@ Option 1: 
     :::java
     Intent intent = new Intent();
     
-    intent.setAction(PAYMENT\_SERVICE\_PACKAG\_NAME);
+    intent.setAction(PAYMENT_SERVICE_PACKAG_NAME);
                                                     
                             
     
-    intent.putExtra(PAYMENT\_SERVICE\_PROFILE\_EX\_DATA\_NAME,
+    intent.putExtra(PAYMENT_SERVICE_PROFILE_EX_DATA_NAME,
     profileXmlString);
     
     startService(intent);                         
@@ -152,10 +152,10 @@ Option 2:      
     Intent intent = new Intent();                                                          
          
     intent.setComponent(new
-    ComponentName(PAYMENT\_SERVICE\_PACKAG\_NAME,
-    PAYMENT\_SERVICE\_CLASS\_NAME ));     
+    ComponentName(PAYMENT_SERVICE_PACKAG_NAME,
+    PAYMENT_SERVICE_CLASS_NAME ));     
     
-    intent.putExtra(PAYMENT\_SERVICE\_PROFILE\_EX\_DATA\_NAME,
+    intent.putExtra(PAYMENT_SERVICE_PROFILE_EX_DATA_NAME,
     profileXmlString);
     
     startService(intent);           
@@ -165,7 +165,7 @@ Register for the intent to receive result from the payment service:
     :::java
     IntentFilter filter = new IntentFilter();
     
-    filter.addAction(INTENT\_PAYMNT\_SERVICE\_RESULT);       
+    filter.addAction(INTENT_PAYMNT_SERVICE_RESULT);       
     
     appContext.registerReceiver(broadcastReceiver, filter);
     
@@ -177,10 +177,10 @@ Register for the intent to receive result from the payment service:
     public void onReceive(Context context, Intent intent) {
         
     if
-    (intent.getAction().equals(INTENT\_PAYMNT\_SERVICE\_RESULT)) {
+    (intent.getAction().equals(INTENT_PAYMNT_SERVICE_RESULT)) {
         
                      String responseString =
-    intent.getStringExtra(PAYMENT\_SERVICE\_ RESULT\_EX\_DATA\_NAME);
+    intent.getStringExtra(PAYMENT_SERVICE_ RESULT_EX_DATA_NAME);
     
                 }
     
@@ -232,7 +232,7 @@ Profiles.
                                  
                                  The Battery level response values will be separated by | when queried for multiple devices.</td></tr>
 
-<tr><td>Version</td><td>This returns version of the PD40 firmware and application in the format “F&lt;version&gt;\_A&lt;version&gt;”. This is required only to query the version.
+<tr><td>Version</td><td>This returns version of the PD40 firmware and application in the format “F&lt;version&gt;_A&lt;version&gt;”. This is required only to query the version.
                                  
                                  Example:
                                  
@@ -240,7 +240,7 @@ Profiles.
                                  
                                  Response:
                                  
-                                 *&lt;parm name=“Version” Value=“F1.09\_A1.2.0”&gt; *
+                                 *&lt;parm name=“Version” Value=“F1.09_A1.2.0”&gt; *
                                  
                                  The versions will be separated by | for multiple devices.</td></tr>
 
@@ -250,17 +250,17 @@ Profiles.
                                  
                                  *&lt;parm name=“DownloadType” value=“FIRMWARE”/&gt;*</td></tr>
 
-<tr><td>DownloadFile</td><td>Name of the download file and its path. This is mandatory to update the device. The Firmware update file name format must be “D180\_F&lt;&lt;version&gt;\_A&lt;&lt;version&gt;&gt;.bin or PD40\_F&lt;&lt;version&gt;\_A&lt;&lt;version&gt;&gt;.bin
+<tr><td>DownloadFile</td><td>Name of the download file and its path. This is mandatory to update the device. The Firmware update file name format must be “D180_F&lt;&lt;version&gt;_A&lt;&lt;version&gt;&gt;.bin or PD40_F&lt;&lt;version&gt;_A&lt;&lt;version&gt;&gt;.bin
                                  
                                  Example:
                                  
-                                 “D180\_F1.07\_A1.1.6.bin”
+                                 “D180_F1.07_A1.1.6.bin”
                                  
-                                 The EMV Param update file name may look like emvpara or emvpara\_&lt;&lt;n&gt;&gt; or any other name.
+                                 The EMV Param update file name may look like emvpara or emvpara_&lt;&lt;n&gt;&gt; or any other name.
                                  
                                  Example:
                                  
-                                 *&lt;parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/&gt;*
+                                 *&lt;parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.1.6.bin”/&gt;*
                                  
                                  *&lt;parm name=“DownloadFile” value=“/sdcard/emvpara”/&gt;*</td></tr>
 
@@ -306,7 +306,7 @@ Example:
     <parm name=“DownloadType” value=“FIRMWARE”/>
     
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/>
+    value=“/sdcard/D180_F1.07_A1.1.6.bin”/>
     
     </characteristic>
     
@@ -319,7 +319,7 @@ Example:
     <parm name=“DownloadType” value=“ FIRMWARE”/>
     
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/>
+    value=“/sdcard/D180_F1.07_A1.1.6.bin”/>
     
     </characteristic>
     
@@ -368,8 +368,8 @@ The response xml characteristic node will be like:
 
     :::xml
     characteristic-error type=“PaymentMgr” version="0.1"
-    desc=“REMOTE\_DEVICE\_NOT\_PAIRED: Bluetooth remote device is not paired
-    with mobile device.|SUCCESS| REMOTE\_DEVICE\_BATTERY\_LOW: Remote device
+    desc=“REMOTE_DEVICE_NOT_PAIRED: Bluetooth remote device is not paired
+    with mobile device.|SUCCESS| REMOTE_DEVICE_BATTERY_LOW: Remote device
     has low battery and operation can't be performed.”>
 
 ### Not Supported Case
@@ -389,7 +389,7 @@ The response xml parm node will like:
 
     :::xml
     <parm-error name="TimeZone1" value="GMT+05:30"
-    desc="FEATURE\_NOT\_SUPPORTED:The feature or parameters or its value is
+    desc="FEATURE_NOT_SUPPORTED:The feature or parameters or its value is
     not supported."/>
 
 Example:
@@ -409,14 +409,14 @@ Example:
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/>
+    value=“/sdcard/D180_F1.07_A1.1.6.bin”/>
 
     </characteristic>
 
     <!— Firmware update response -->
 
     <characteristic-error type=“PaymentMgr” version="0.1"
-    desc=”REMOTE\_DEVICE\_NOT\_PAIRED:Bluetooth remote device is not
+    desc=”REMOTE_DEVICE_NOT_PAIRED:Bluetooth remote device is not
     paired with mobile device.”&gt;
 
     < parm name =“DeviceAddress” value=“MPOS-12345001”/>
@@ -424,7 +424,7 @@ Example:
     <parm name=“DownloadType” value=” FIRMWARE”/>
 
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/>
+    value=“/sdcard/D180_F1.07_A1.1.6.bin”/>
 
     </characteristic>
 
@@ -434,7 +434,7 @@ Example:
 
     <parm name =“DeviceAddress” value=“MPOS-12345000”/>
 
-    < parm name =“Version” value=”F1.09\_A1.2.0”/>
+    < parm name =“Version” value=”F1.09_A1.2.0”/>
 
     </characteristic>
 
@@ -447,35 +447,35 @@ Example:
 <tr><td>SUCCESS</td><td>Success</td></tr>
 <tr><td>FAILURE</td><td>Failure</td></tr>
 <tr><td>UNDEFINED</td><td>Unknown error occurred</td></tr>
-<tr><td>NULL\_POINTER</td><td>Null pointer</td></tr>
-<tr><td>EMPTY\_PROFILE\_XML</td><td>Profile XML is empty</td></tr>
-<tr><td>INVALID\_PROFILE\_XML</td><td>The profile xml syntax is incorrect or not supported.</td></tr>
-<tr><td>INVALID\_VALUE</td><td>Value is not valid.</td></tr>
+<tr><td>NULL_POINTER</td><td>Null pointer</td></tr>
+<tr><td>EMPTY_PROFILE_XML</td><td>Profile XML is empty</td></tr>
+<tr><td>INVALID_PROFILE_XML</td><td>The profile xml syntax is incorrect or not supported.</td></tr>
+<tr><td>INVALID_VALUE</td><td>Value is not valid.</td></tr>
 <tr><td>BUSY</td><td>Processing the other request. Try later...</td></tr>
-<tr><td>XML\_SYNTAX\_ERROR</td><td>XML syntax error</td></tr>
-<tr><td>FEATURE\_NOT\_SUPPORTED</td><td>The feature or parameters or its value is not supported.</td></tr>
-<tr><td>REMOTE\_DEVICE\_NOT\_PAIRED</td><td>Bluetooth remote device is not paired with mobile device.</td></tr>
-<tr><td>FILE\_NOT\_EXISTS</td><td>The file specified in the profile xml does not exist.</td></tr>
-<tr><td>INITIALIZATION\_ERROR</td><td>Error occurred during Initialization.</td></tr>
-<tr><td>UNINITIALIZATION\_ERROR</td><td>Error occurred during un- Initialization.</td></tr>
-<tr><td>INVALID\_FIRMWARE\_FILE\_NAME\_FORMAT</td><td>The firmware file name format is invalid</td></tr>
-<tr><td>REMOTE\_DEVICE\_IN\_USE</td><td>The remote device is used by other application.</td></tr>
-<tr><td>FAILED\_ENABLE\_REMOTE\_DEVICE</td><td>Failed to open connection with remote device.</td></tr>
-<tr><td>FAILED\_DISABLE\_REMOTE\_DEVICE</td><td>Failed to close connection with the remote device.</td></tr>
-<tr><td>FAILED\_CONNECT\_TO\_REMOTE\_DEVICE</td><td>Failed to establish Bluetooth connection with remote device.</td></tr>
-<tr><td>FIRMWARE\_DOWNGRADE\_NOT\_ALLOWED</td><td>Downgrading the Firmware is not allowed. Set isUpgradeOnly=false in profile and try.</td></tr>
-<tr><td>REMOTE\_DEVICE\_BATTERY\_LOW</td><td>Remote device has low battery and operation can't be performed.</td></tr>
-<tr><td>MOBILE\_DEVICE\_BATTERY\_LOW</td><td>Mobile device battery level is low and operation can't be performed.</td></tr>
-<tr><td>REMOTE\_DEVICE\_DISCONNECTED</td><td>The remote device is got disconnected from mobile device.</td></tr>
-<tr><td>UPDATE\_FILE\_SIGNATURE\_ERROR</td><td>The update file signature is not valid.</td></tr>
-<tr><td>REMOTE\_DEVICE\_TIME\_OUT\_ERROR</td><td>Remote device timed out during update process. Try again</td></tr>
-<tr><td>AUTHENTICATION\_FAILED</td><td>Remote device failed to authenticate with mobile device.</td></tr>
-<tr><td>COMMUNICATION\_ERROR</td><td>Error occurred during communication with the remote device.</td></tr>
-<tr><td>INCOMPLETE\_UPDATE\_FILE</td><td>The update file is incomplete or incorrect.</td></tr>
-<tr><td>UPDATE\_FILE\_TOO\_LARGE</td><td>The update file passed is too large for remote device to update.</td></tr>
-<tr><td>DOWNLOAD\_TIMEOUT</td><td>The download file request on payment device is timed out.</td></tr>
-<tr><td>BLUETOOTH\_OFF</td><td>Bluetooth is OFF on host mobile device.</td></tr>
-<tr><td>FILE\_VERIFICATION\_FAILED</td><td>The download file format is not valid.</td></tr>
+<tr><td>XML_SYNTAX_ERROR</td><td>XML syntax error</td></tr>
+<tr><td>FEATURE_NOT_SUPPORTED</td><td>The feature or parameters or its value is not supported.</td></tr>
+<tr><td>REMOTE_DEVICE_NOT_PAIRED</td><td>Bluetooth remote device is not paired with mobile device.</td></tr>
+<tr><td>FILE_NOT_EXISTS</td><td>The file specified in the profile xml does not exist.</td></tr>
+<tr><td>INITIALIZATION_ERROR</td><td>Error occurred during Initialization.</td></tr>
+<tr><td>UNINITIALIZATION_ERROR</td><td>Error occurred during un- Initialization.</td></tr>
+<tr><td>INVALID_FIRMWARE_FILE_NAME_FORMAT</td><td>The firmware file name format is invalid</td></tr>
+<tr><td>REMOTE_DEVICE_IN_USE</td><td>The remote device is used by other application.</td></tr>
+<tr><td>FAILED_ENABLE_REMOTE_DEVICE</td><td>Failed to open connection with remote device.</td></tr>
+<tr><td>FAILED_DISABLE_REMOTE_DEVICE</td><td>Failed to close connection with the remote device.</td></tr>
+<tr><td>FAILED_CONNECT_TO_REMOTE_DEVICE</td><td>Failed to establish Bluetooth connection with remote device.</td></tr>
+<tr><td>FIRMWARE_DOWNGRADE_NOT_ALLOWED</td><td>Downgrading the Firmware is not allowed. Set isUpgradeOnly=false in profile and try.</td></tr>
+<tr><td>REMOTE_DEVICE_BATTERY_LOW</td><td>Remote device has low battery and operation can't be performed.</td></tr>
+<tr><td>MOBILE_DEVICE_BATTERY_LOW</td><td>Mobile device battery level is low and operation can't be performed.</td></tr>
+<tr><td>REMOTE_DEVICE_DISCONNECTED</td><td>The remote device is got disconnected from mobile device.</td></tr>
+<tr><td>UPDATE_FILE_SIGNATURE_ERROR</td><td>The update file signature is not valid.</td></tr>
+<tr><td>REMOTE_DEVICE_TIME_OUT_ERROR</td><td>Remote device timed out during update process. Try again</td></tr>
+<tr><td>AUTHENTICATION_FAILED</td><td>Remote device failed to authenticate with mobile device.</td></tr>
+<tr><td>COMMUNICATION_ERROR</td><td>Error occurred during communication with the remote device.</td></tr>
+<tr><td>INCOMPLETE_UPDATE_FILE</td><td>The update file is incomplete or incorrect.</td></tr>
+<tr><td>UPDATE_FILE_TOO_LARGE</td><td>The update file passed is too large for remote device to update.</td></tr>
+<tr><td>DOWNLOAD_TIMEOUT</td><td>The download file request on payment device is timed out.</td></tr>
+<tr><td>BLUETOOTH_OFF</td><td>Bluetooth is OFF on host mobile device.</td></tr>
+<tr><td>FILE_VERIFICATION_FAILED</td><td>The download file format is not valid.</td></tr>
 </table>
 
 ##Use Cases with Sample XML
@@ -520,7 +520,7 @@ firmware/application versions.
 
     <parm name =“DeviceAddress” value=“MPOS-12345000”/>
 
-    <parm name =“Version” value=”F1.09\_A1.2.0”/>
+    <parm name =“Version” value=”F1.09_A1.2.0”/>
 
     </characteristic>
 
@@ -557,7 +557,7 @@ firmware/application versions.
     <parm name =“DeviceAddress”
     value=“MPOS-12345000|MPOS-123457865”/>
 
-    <parm name =“Version” value=”F1.09\_A1.2.0|F1.09\_A1.1.9”/>
+    <parm name =“Version” value=”F1.09_A1.2.0|F1.09_A1.1.9”/>
 
     </characteristic>
 
@@ -592,7 +592,7 @@ firmware/application versions.
     <parm name =“DeviceAddress”
     value=“MPOS-12345000|MPOS-123457865”/>
 
-    <parm name =“Version” value=”F1.09\_A1.2.0|F1.09\_A1.1.9”/>
+    <parm name =“Version” value=”F1.09_A1.2.0|F1.09_A1.1.9”/>
 
     </characteristic>
 
@@ -731,7 +731,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.0.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.0.bin”/>
 
     </characteristic>
 
@@ -749,7 +749,7 @@ The application should be able to update the payment device firmware.
     <parm name =“DeviceAddress” value=“MPOS-12345000”/>
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.0.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.0.bin”/>
 
     </characteristic>
 
@@ -771,7 +771,7 @@ The application should be able to update the payment device firmware.
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -790,7 +790,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -809,7 +809,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -826,7 +826,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -848,7 +848,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -858,7 +858,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.0.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.0.bin”/>
 
     </characteristic>
 
@@ -877,7 +877,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -887,7 +887,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.0.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.0.bin”/>
 
     </characteristic>
 
@@ -910,7 +910,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -937,7 +937,7 @@ The application should be able to update the payment device firmware.
 
     <parm name=“DownloadType” value=“FIRMWARE”/>
 
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A1.2.1.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.2.1.bin”/>
 
     </characteristic>
 
@@ -945,7 +945,7 @@ The application should be able to update the payment device firmware.
 
     <parm name =“DeviceAddress” value=“MPOS-12345002|MPOS-123457822”/>
 
-    <parm name =“Version” value=”F1.09\_A1.2.0| F1.09\_A1.1.9”/>
+    <parm name =“Version” value=”F1.09_A1.2.0| F1.09_A1.1.9”/>
 
     </characteristic>
 
@@ -972,14 +972,14 @@ The response for the profile input XML with
     <parm name=“DownloadType” value=“FIRMWARE”/>
     
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/>
+    value=“/sdcard/D180_F1.07_A1.1.6.bin”/>
     
     </characteristic>
     
     <! –Update failed Node - ->
     
     <characteristic-error type=“PaymentMgr” version="0.1"
-    desc=“REMOTE\_DEVICE\_NOT\_PAIRED:Bluetooth remote device is not
+    desc=“REMOTE_DEVICE_NOT_PAIRED:Bluetooth remote device is not
     paired with mobile device.”>
     
     < parm name =“DeviceAddress” value=“MPOS-12345678”/>
@@ -987,19 +987,19 @@ The response for the profile input XML with
     <parm name=“DownloadType” value=“FIRMWARE”/>
     
     <parm name=“DownloadFile”
-    value=“/sdcard/D180\_F1.07\_A1.1.6.bin”/>
+    value=“/sdcard/D180_F1.07_A1.1.6.bin”/>
     
     </characteristic-error>
     
     <! –Invalid parameter Node ->
     
-    <characteristic-error type=“PaymentMgr” version="0.1” desc=“INVALID\_VALUE: The download type is missing”>
+    <characteristic-error type=“PaymentMgr” version="0.1” desc=“INVALID_VALUE: The download type is missing”>
     
     < parm name =“DeviceAddress” value=“ MPOS-12345123”>
     
-    <parm -error name=“DownloadType” value=“” desc =“INVALID\_VALUE:The download type is missing”/>
+    <parm -error name=“DownloadType” value=“” desc =“INVALID_VALUE:The download type is missing”/>
     
-    <parm name=“DownloadFile” value=“/sdcard/D180\_F1.07\_A10.5.0.bin”/>
+    <parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A10.5.0.bin”/>
     
     </characteristic-error>
     
@@ -1020,11 +1020,11 @@ device error for the version query.
     
     <characteristic-error type=“PaymentMgr” version="0.1"
     
-    desc=“SUCCESS|FAILED\_CONNECT\_TO\_REMOTE\_DEVICE:Failed to establish Bluetooth connection with remote device|SUCCESS”>
+    desc=“SUCCESS|FAILED_CONNECT_TO_REMOTE_DEVICE:Failed to establish Bluetooth connection with remote device|SUCCESS”>
     
     <parm name =“DeviceAddress” value=“MPOS-12345678|MPOS-12000002|MPOS-12300001”>
     
-    <parm name=“Version” value=“F1.07\_A1.1.6||F1.07\_A1.2.0/>
+    <parm name=“Version” value=“F1.07_A1.1.6||F1.07_A1.2.0/>
     
     </characteristic-error>
     

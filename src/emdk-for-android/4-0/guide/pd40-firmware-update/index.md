@@ -23,7 +23,7 @@ The application must include the permission to access Payment Manager
 Service in application’s AndroidManifest.xml as below:
 
     :::xml
-    <uses-permission android:name="com.symbol.permission.PAYMENTMGR"/>;*
+    <uses-permission android:name="com.symbol.permission.PAYMENTMGR"/>;
 
 The application must write a code start the Payment Manager Service and
 this can be achieved in two ways:
@@ -224,11 +224,11 @@ Profiles.
                                  
                                  Example:
                                  
-                                 *&lt;parm-query name=“BatteryLevel”&gt;*
+                                 &lt;parm-query name=“BatteryLevel”&gt;
                                  
                                  Response:
                                  
-                                 *&lt;parm name=“BatteryLevel” Value=“3”&gt;*
+                                 &lt;parm name=“BatteryLevel” Value=“3”&gt;
                                  
                                  The Battery level response values will be separated by | when queried for multiple devices.</td></tr>
 
@@ -236,11 +236,11 @@ Profiles.
                                  
                                  Example:
                                  
-                                 *&lt;parm-query name=“Version”&gt;*
+                                 &lt;parm-query name=“Version”&gt;
                                  
                                  Response:
                                  
-                                 *&lt;parm name=“Version” Value=“F1.09_A1.2.0”&gt; *
+                                 &lt;parm name=“Version” Value=“F1.09_A1.2.0”&gt; 
                                  
                                  The versions will be separated by | for multiple devices.</td></tr>
 
@@ -248,7 +248,7 @@ Profiles.
                                  
                                  Example:
                                  
-                                 *&lt;parm name=“DownloadType” value=“FIRMWARE”/&gt;*</td></tr>
+                                 &lt;parm name=“DownloadType” value=“FIRMWARE”/&gt;</td></tr>
 
 <tr><td>DownloadFile</td><td>Name of the download file and its path. This is mandatory to update the device. The Firmware update file name format must be “D180_F&lt;&lt;version&gt;_A&lt;&lt;version&gt;&gt;.bin or PD40_F&lt;&lt;version&gt;_A&lt;&lt;version&gt;&gt;.bin
                                  
@@ -260,25 +260,25 @@ Profiles.
                                  
                                  Example:
                                  
-                                 *&lt;parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.1.6.bin”/&gt;*
+                                 &lt;parm name=“DownloadFile” value=“/sdcard/D180_F1.07_A1.1.6.bin”/&gt;
                                  
-                                 *&lt;parm name=“DownloadFile” value=“/sdcard/emvpara”/&gt;*</td></tr>
+                                 &lt;parm name=“DownloadFile” value=“/sdcard/emvpara”/&gt;</td></tr>
 
 <tr><td>NumberOfRetries</td><td>Re-tries when connection failure or error occurs to update PD40 device. The default value is “1”. The range is 1 to 5. This is optional field in the XML. The Payment Manager will re-try after 500 ms if error any occurs and number of re-tries is greater than 1.
                                  
                                  Example:
                                  
-                                 *&lt;parm name=“* *NumberOfRetries” value=“2”/&gt;*</td></tr>
+                                 &lt;parm name=“ NumberOfRetries” value=“2”/&gt;</td></tr>
 
 <tr><td>MinPaymentDeviceBatteryLevel</td><td>Minimum Payment Device battery level to start the update process. If this field is not set, the payment device defined default value is used. This is optional field in the XML. Range is 0 to 4.
                                  
                                  Example:
                                  
-                                 *&lt;parm name=“* *MinPaymentDeviceBatteryLevel” value=“1”/&gt;*</td></tr>
+                                 &lt;parm name=“ MinPaymentDeviceBatteryLevel” value=“1”/&gt;</td></tr>
 
 <tr><td>MinMobileDeviceBatteryLevel</td><td>Minimum Mobile Device battery level to start the update process. If this field is not set, 30% is considered as default. This is optional field in the XML.
                                  
-                                 *&lt;parm name=“* *MinMobileDeviceBatteryLevel” value=“40”/&gt;*</td></tr>
+                                 &lt;parm name=“ MinMobileDeviceBatteryLevel” value=“40”/&gt;</td></tr>
 </table>
 
 ###Profile XML input

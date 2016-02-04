@@ -7,7 +7,7 @@ title: EMDK For Android Setup on Mac (Android Studio)
 >Note: Prevous versions of the EMDK for Android should be removed before installing v4.0
 
 **Removing SDK add-ons**
-1. Navigate to the /Users/<user>/Library/Android/sdk/add-ons directory.
+1. Navigate to the /Users/[user]/Library/Android/sdk/add-ons directory.
 2. Remove addon-symbol-emdk_v3.1_API-16/ addon-symbol-emdk_v3.1_API-19 folders.
 
 **Removing Wizard Core**
@@ -80,7 +80,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 	
 ###Download the EMDK for Android 4.0 MAC install files
 
-1. Download the [EMDK for Android 4.0 MAC install files]()
+1. Download the [EMDK for Android 4.0 MAC install files](/emdk-for-android/download)
 2. Extract the downloaded zip file and make note of the path to the extracted files. This path will be refered to as **EMDK_FILES** for the rest of this guide.
 
 The extracted folder will contain the following files

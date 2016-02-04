@@ -140,6 +140,10 @@ menu:
           url: /emdk-for-android/4-0/guide/securenfc
         - title: Barcode Scanner States
           url: /emdk-for-android/4-0/guide/scanner
+        - title: Payment API
+          url: /emdk-for-android/4-0/guide/payment-api
+        - title: PD40 Firmware Update
+          url: /emdk-for-android/4-0/guide/pd40-firmware-update
     - title: Profile Manager
       items:
         - title: Using Profile Manager

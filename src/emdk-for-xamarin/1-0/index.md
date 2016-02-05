@@ -14,7 +14,7 @@ menu:
         - title: Configuring A Device
           url: /emdk-for-xamarin/1-0/guide/deviceupdate
         - title: Build Hello EMDK
-          url: /emdk-for-xamarin/1-0/guide/tutorial/helloXamarin
+          url: /emdk-for-xamarin/1-0/guide/tutorial/helloxamarin
         - title: Using Profile Manager
           url: /emdk-for-xamarin/1-0/guide/profiles/about
     - title: Tutorials
@@ -22,7 +22,7 @@ menu:
         - title: Profile Manager
           items:
             - title: Clock
-              url: /emdk-for-xamarin/1-0/guide/tutorial/helloXamarin
+              url: /emdk-for-xamarin/1-0/guide/tutorial/helloxamarin
         - title: Scanning APIs
           items:
             - title: Basic Scanning Tutorial

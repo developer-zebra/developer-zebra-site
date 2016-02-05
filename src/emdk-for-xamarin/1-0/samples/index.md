@@ -1,5 +1,5 @@
 ---
 publish: false
-title: EMDK For Xamarin 1.0 Samples
+title: Samples
 layout: list-samples.html
 ---

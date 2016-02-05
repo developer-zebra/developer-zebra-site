@@ -1,0 +1,37 @@
+---
+csp: keymapmgr
+title:  Alt State
+type: parm
+order: 10
+sincemx: 4.4
+parm:
+  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send key-code" *AND* Advanced is "True"
+  pivotal: No
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.4
+      name: Use existing state
+      description: This value (or the absence of this parm from the XML) will cause the ALT Key State Modifier to be left unchanged, thus making it the same as when the Key was pressed.
+    - code: 1
+      name: Force On
+      sincemx: 4.4
+      description: This value will set the ALT Key State Modifier, thus forcing the Key Code sent to be interpreted as ALT.
+    - code: 2
+      name: Force Off
+      sincemx: 4.4
+      description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-ALT.
+---
+
+Parm names:
+
+* For Base Key State Table: BaseKeyCodeAltState
+* For Blue Key State Table: BlueKeyCodeAltState
+* For Orange Key State Table: OrangeKeyCodeAltState
+* For Grey Key State Table: GreyKeyCodeAltState
+* For Shift Key State Table: ShiftKeyCodeAltState
+* For Control Key State Table: ControlKeyCodeAltState
+
+Description: 
+
+These parms allow you to control the ALT Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. If an attempt is made to set a Key State Modifier that is not supported on a given device, then no error will be returned in the Result XML. When the Key Code is sent, the specified Key State Modifier will be set into the Current Key State, but since the Key State Modifier is not supported by the device, and hence has no associated Key Mapping Table, there will be no noticeable effect produced by setting that Key State Modifier.

@@ -1,0 +1,20 @@
+---
+csp: batchmgr
+title: Require Specific Encodings
+type: parm
+order: 6
+parm:
+  pivotal: No
+  presentif: File Access method is batch file type is binary.
+  name: BinFileRequireEncodings
+  type: list
+  list:
+    - code: 0
+      name: False
+      description: Binary file does not require encoding.
+    - code: 1
+      name: True
+      description: Binary file requires to be encoded.
+---
+
+Specify the type of file to be processed. 

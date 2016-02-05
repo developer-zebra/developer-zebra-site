@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: FT
+type: parm
+order: 53
+sincemx: 4.2
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: FT
+  type: string
+---
+
+This is to enable / disable Fast Transition roam algorithm (802.11r).

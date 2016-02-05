@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: Subnet Roam
+type: parm
+order: 68
+sincemx: 4.4
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: SubNetRoam
+  type: string
+---
+
+Specify whether to enable subnet roaming.

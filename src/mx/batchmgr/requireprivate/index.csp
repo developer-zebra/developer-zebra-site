@@ -1,0 +1,20 @@
+---
+csp: batchmgr
+title: Require Private
+type: parm
+order: 10
+parm:
+  pivotal: No
+  presentif:  Determines whether private encryption is required.
+  name: RequirePrivate
+  type: list
+  list:
+    - code: 0
+      name: False
+      description: 
+    - code: 1
+      name: True
+      description: Sets private encryption to be required.
+---
+
+Determines whether private encryption is required.

@@ -4,9 +4,11 @@ publish: false
 layout: list-content.html
 menu:
   items:
-    - title: MX Overview
+    - title: Overview
+      url: /mx
+    - title: Architecture
       url: /mx/overview
-    - title: MX Features
+    - title: Feature Version Matrix
       url: /mx/features
     - title: Feature Compatibility
       url: /mx/compatibility
@@ -14,6 +16,78 @@ menu:
       url: /mx/choosing-a-version
     - title: Checking Device MX Version
       url: /mx/mx-version-on-device
+    - title: Access Manager
+      url: /mx/accessmgr
+    - title: Analytics Manager
+      url: /mx/analyticsmgr
+    - title: App Manager
+      url: /mx/appmgr
+    - title: Audio Volume Manager
+      url: /mx/audiovoluimgr
+    - title: Batch Manager
+      url: /mx/batchmgr
+    - title: Battery Manager
+      url: /mx/batterymgr
+    - title: Browser Manager
+      url: /mx/browsermgr
+    - title: Camera Manager
+      url: /mx/cameramgr
+    - title: Cellular Manager
+      url: /mx/cellularmgr
+    - title: Certificate Manager
+      url: /mx/certmgr
+    - title: Clock
+      url: /mx/clock
+    - title: Component Manager
+      url: /mx/componentmgr
+    - title: Condition Manager
+      url: /mx/conditionmgr
+    - title: DevAdmin Manager
+      url: /mx/devadminmgr
+    - title: DHCP Options Manager
+      url: /mx/dhcpoptionmgr
+    - title: Display Manager
+      url: /mx/displaymgr
+    - title: Encrypt Manager
+      url: /mx/encryptmgr
+    - title: File Manager
+      url: /mx/filemgr
+    - title: GPRS Manager
+      url: /mx/gprsmgr
+    - title: Intent
+      url: /mx/intent
+    - title: Key Mapping Manager
+      url: /mx/keymappingmgr
+    - title: License Manager
+      url: /mx/licensemgr
+    - title: Persist Manager
+      url: /mx/persistmgr
+    - title: Power Key Manager
+      url: /mx/powerkeymgr
+    - title: Power Manager
+      url: /mx/powermgr
+    - title: Scan Mode Manager
+      url: /mx/scanmodemgr
+    - title: SD Card Manager
+      url: /mx/sdcardmgr
+    - title: Settings Manager
+      url: /mx/settingsmgr
+    - title: Status Manager
+      url: /mx/statusmgr
+    - title: Threat Manager
+      url: /mx/threatmgr
+    - title: Touch Manager
+      url: /mx/touchmgr
+    - title: UI Manager
+      url: /mx/uimgr
+    - title: USB Manager
+      url: /mx/usbsmgr
+    - title: WiFi
+      url: /mx/wifi
+    - title: Wireless Manager
+      url: /mx/wirelessmgr
+    - title: XML Manager
+      url: /mx/xmlmgr
 contentlist:
   - heading: Application Management
     description: Manage application white-listing and browser settings.

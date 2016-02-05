@@ -1,0 +1,35 @@
+---
+csp: analyticsmgr
+title: WWAN Performance
+type: parm
+order: 6
+sincemx: 4.3
+parm:
+  presentif: Group Action is "Configure Levels for Multiple Groups"
+  pivotal: No
+  name: WWANPerf
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.
+    - code: 1
+      sincemx: 4.3
+      name: None
+      description: This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.
+    - code: 2
+      sincemx: 4.3
+      name: Low
+      description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.
+    - code: 3
+      sincemx: 4.3
+      name: Medium
+      description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval
+    - code: 4
+      sincemx: 4.3
+      name: High
+      description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.
+---
+
+This parm allows you to control whether the Analytics Engine collects data for the metrics in the WWAN Performance Group and, if so, at what frequency.

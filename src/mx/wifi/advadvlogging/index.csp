@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: Advanced Logging
+type: parm
+order: 59
+sincemx: 4.2
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: AdvancedLogging
+  type: string
+---
+
+Start or Stop advanced Wi-Fi logging.

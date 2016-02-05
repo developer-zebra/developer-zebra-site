@@ -1,0 +1,28 @@
+---
+csp: analyticsmgr
+title: Overview
+type: text
+order: 1
+---
+
+The AnalyticsMgr controls collection of data by the Analytics Engine in the form of groups of metrics.
+
+Zebra Android devices are equipped with an Analytics Engine that can collect information pertaining to the operation and health of a device. Such data can be used to detect devices that need attention or potentially could be used to detect trends that could allow problems to be prevented through preventative action.
+
+AnalyticsMgr also controls which data is collected and how often, and whether collected data is stored on the device or in the Cloud.
+
+### Main Functionality
+ 
+* Enable or Disable all data collection by the Analytics Engine
+* Control whether data is stored locally on the device or is sent to the Cloud
+* Control which data is collected by groups of metrics:
+	* WWAN Performance
+	* WLAN Performance
+	* Battery and CPU Status
+	* System Information
+	* GPS Information
+* Control the frequency of data collection by levels:
+	* None
+	* Low
+	* Medium
+	* High

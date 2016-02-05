@@ -1,0 +1,22 @@
+---
+csp: filemgr
+title: Source Access
+type: parm
+order: 6
+parm:
+  pivotal: Yes
+  name: SourceAccessMethod
+  type: list
+  list:
+    - code: 1
+      name: File on remote server
+      description: The source file will be located on a remote server.
+    - code: 2
+      name: File on device file system
+      description: The source file will be located on the device.
+    - code: 3
+      name: File embedded in XML
+      description: The source file will be embedded in the xml.
+---
+
+Specify where the source of te transfer\copy will be located.

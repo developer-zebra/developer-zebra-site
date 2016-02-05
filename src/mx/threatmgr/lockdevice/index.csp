@@ -1,0 +1,23 @@
+---
+csp: threatmgr
+title: Lock Device Countermeasure
+type: parm
+order: 7
+sincemx: 4.3
+parm:
+  presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected.
+  pivotal: No
+  name: LockDevice
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not perform
+      description: This countermeasure will not be executed.
+    - code: 1
+      name: Perform
+      sincemx: 4.3
+      description: This countermeasure will be executed upon threat detection.
+---
+
+This counter measure would lock the device, requiring the user to perform any device unlock procedure configured for the device.

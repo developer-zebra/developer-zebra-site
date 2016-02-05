@@ -206,7 +206,11 @@ var sitebuild = Metalsmith(__dirname)
         },
         md: {
             pattern: '/**/**.md'
-        }
+        },
+        csp: {
+            pattern: 'mx/**/*.csp',
+            sortBy: 'order'
+        },
 
     }))
     .use(findLayout({

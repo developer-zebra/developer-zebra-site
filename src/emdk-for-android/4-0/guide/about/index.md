@@ -63,7 +63,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 		* Vendor Specific DHCP Options – Supports vendor specific options for granular configuration control
 
 * New API's
-	* [Mobile Payment](/emdk-for-android/4-0/api/payment) - Provides API's to perform EMV and Magstripe Payment transactions when using the PD40 Payment device with MC40 JB, MC40 KK devices.
+	* [Mobile Payment](/emdk-for-android/4-0/api/payment) - Provides API's to perform EMV and Magstripe Payment transactions when using the PD40 Payment device with MC40 JB and MC40 KK devices.
 	* [Serial Communication](/emdk-for-android/4-0/api/serialcomm) - Allows you to add DEX support in your application.
     
         >Note: In order to use Serial **Read** functionality, you must first apply a patch provided in [SPR-28877](https://spr.motorolasolutions.com/ViewSPR.aspx?sprID=28877). To obtain this patch, contact Zebra Support.

@@ -1,0 +1,151 @@
+
+{{> header}}
+
+
+
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <aside class="tree-sidebar">            
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <div class="sidebar-container" >
+                                    <ul class="nav nav-pills nav-stacked"  id="facets">
+
+                                    </ul>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </aside>                   
+
+                </div>                
+                <div class="col-sm-9 " >
+                    <div class="row">
+                        <div class="col-sm-12">
+                         <script>
+                            (function() {
+                                var cx = '012400514916880945137:ldi-bfnckbu';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                    '//cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                            </script>
+                            <gcse:search></gcse:search>  
+                        </div>
+                    </div>                        
+                    <div class="row">
+                        <div class="col-sm-12" id="hits">
+                            
+                        </div>
+                    </div>                        
+
+
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+
+
+
+    
+    
+<script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var refinements = {};
+        var $inputfield = $('#q');
+        // Replace the following values by your ApplicationID and ApiKey.
+        var client = algoliasearch('I6UDKR7DQP', '66ee28e42494ee8ba2d978262f303dba');
+        // Replace the following value by the name of the index you want to query.
+        var index = client.initIndex('prod');
+         $('#btnSearch').click(function() {
+          search();
+        }).focus();
+        window.toggleRefine = function(refinement) {
+          refinements[refinement] = !refinements[refinement];
+          search();
+        };
+        function search() {
+          var filters = [];
+          for (var refinement in refinements) {
+            if (refinements[refinement]) {
+              filters.push(refinement);
+            }
+          }
+          index.search($inputfield.val(), {
+            facets: '*', 
+            facetFilters: filters,
+            advancedSyntax: true,
+            hitsPerPage: 50,
+            attributesToSnippet : [
+                'contents: 100'
+            ]
+          }, searchCallback);
+        }
+        function searchCallback(err, content) {
+          if (err) {
+            // error
+            return;
+          }
+          if (content.query != $inputfield.val()) {
+            // do not consider out-dated queries
+            return;
+          }
+          if (content.hits.length == 0 || $.trim(content.query) === '') {
+            // no results
+            $('#hits').empty();
+            $('#facets').empty();
+            return;
+          }
+          // Scan all hits and display them
+          var hits = '';
+          for (var i = 0; i < content.hits.length; ++i) {
+            var hit = content.hits[i];
+            console.log(hit);
+            hits += '<div class="row">';
+            hits += '           <div class="col-sm-12">';
+            hits += '                    <div class="">';
+            hits += '                        <h4><a href="' + hit.url + '">' + hit.title +'</a></h4>';
+            hits += '                        <p>';
+            hits += hit._snippetResult.contents.value;
+            hits += '                        </p>';
+            hits += '                        <p class="productTag">';
+            hits += hit.product + " " + hit.version
+            hits += '                        </p>';
+            hits += '                    </div>';
+            hits += '            </div>';
+            hits += '</div>';
+            
+          }
+          console.log(hits);
+          $('#hits').html(hits);
+          // Scan all facets and display them
+          var facets = '';
+          for (var facet in content.facets) {
+            facets += '<li>' + facet + '</li>';
+            facets += '<ul>';
+            var values = content.facets[facet];
+            for (var value in values) {
+              var refinement = facet + ':' + value;
+              facets += '<li class="' + (refinements[refinement] ? 'refined' : '') + '">' +
+                  '<a href="#" onclick="toggleRefine(\'' + refinement + '\'); return false">' + value + ' (' + values[value] + ')</a> ' +
+                '</li>';
+            }
+            facets += '</ul>';
+          }
+          $('#facets').html(facets);
+        }
+      });
+    </script>
+
+{{> footer}}
+

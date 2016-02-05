@@ -19,84 +19,84 @@ contentlist:
           - title: "5.0"
             url: app-management/appmgr/5-0
       - title: Browser Manager
-        url: browsermgr/5-0
+        url: app-management/browsermgr/5-0
         description: The Browser Manager allows you to configure browser settings like the default home page.
         icon: /mx/icons/browsermgr.png
         urls:
           - title: "4.4"
-            url: browsermgr/4-4
+            url: app-management/browsermgr/4-4
           - title: "5.0"
-            url: browsermgr/5-0
+            url: app-management/browsermgr/5-0
   - heading: Data Capture
     description: Use profiles to obtain barcode and MSR data into your application.
     visible: true
     items:
       - title: Activity Selection
         description: Select the application's activity where data capture is active.
-        url: /emdk-for-android/4-0/mx/data-capture/activity
+        url: data-capture/activity
         icon: /mx/icons/activity.png
         urls:
           - title: "4.2"
-            url: /emdk-for-android/4-0/mx/data-capture/activity
+            url: data-capture/activity
           - title: "4.4"
-            url: /emdk-for-android/4-0/mx/data-capture/activity
+            url: data-capture/activity
           - title: "5.0"
-            url: /emdk-for-android/4-0/mx/data-capture/activity
+            url: data-capture/activity
       - title: Barcode
         description: Set and configure barcode as the input source.
-        url: /emdk-for-android/4-0/mx/data-capture/barcode
+        url: data-capture/barcode
         icon: /mx/icons/barcode.png
         urls:
           - title: "4.2"
-            url: /emdk-for-android/4-0/mx/data-capture/barcode
+            url: data-capture/barcode
           - title: "4.4"
-            url: /emdk-for-android/4-0/mx/data-capture/barcode
+            url: data-capture/barcode
           - title: "5.0"
-            url: /emdk-for-android/4-0/mx/data-capture/barcode
+            url: data-capture/barcode
       - title: Intent Output
         description: Output the data captured as an intent.
         icon: /mx/icons/intent.png
-        url: /emdk-for-android/4-0/mx/data-capture/intent
+        url: data-capture/intent
         urls:
           - title: "4.2"
-            url: /emdk-for-android/4-0/mx/data-capture/intent
+            url: data-capture/intent
           - title: "4.4"
-            url: /emdk-for-android/4-0/mx/data-capture/intent
+            url: data-capture/intent
           - title: "5.0"
-            url: /emdk-for-android/4-0/mx/data-capture/intent
+            url: data-capture/intent
       - title: IP Output
         description: Output the data captured over IP communications.
         icon: /mx/icons/ip.png
-        url: /emdk-for-android/4-0/mx/data-capture/IP
+        url: data-capture/IP
         urls:
           - title: "4.2"
-            url: /emdk-for-android/4-0/mx/data-capture/IP
+            url: data-capture/IP
           - title: "4.4"
-            url: /emdk-for-android/4-0/mx/data-capture/IP
+            url: data-capture/IP
           - title: "5.0"
-            url: /emdk-for-android/4-0/mx/data-capture/IP
+            url: data-capture/IP
       - title: Keystroke
         description: Output data captured as keystrokes.
         icon: /mx/icons/keystroke.png
-        url: /emdk-for-android/4-0/mx/data-capture/keystroke
+        url: data-capture/keystroke
         urls:
           - title: "4.2"
-            url: /emdk-for-android/4-0/mx/data-capture/keystroke
+            url: data-capture/keystroke
           - title: "4.4"
-            url: /emdk-for-android/4-0/mx/data-capture/keystroke
+            url: data-capture/keystroke
           - title: "5.0"
-            url: /emdk-for-android/4-0/mx/data-capture/keystroke
+            url: data-capture/keystroke
       - title: Magstripe
         description: Set and configure mag stripe as the input source
         icon: /mx/icons/msr.png
-        url: /emdk-for-android/4-0/mx/data-capture/msr
+        url: data-capture/msr
         urls:
           - title: "4.2"
-            url: /emdk-for-android/4-0/mx/data-capture/msr
+            url: data-capture/msr
           - title: "4.4"
-            url: /emdk-for-android/4-0/mx/data-capture/msr
+            url: data-capture/msr
           - title: "5.0"
-            url: /emdk-for-android/4-0/mx/data-capture/msr
+            url: data-capture/msr
   - heading: Device Configuration
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
     visible: true
@@ -120,7 +120,7 @@ contentlist:
           - title: "5.0"
             url: device-configuration/audiomgr/5-0
       - title: Battery Manager
-        url: batterymgr/5-0
+        url: device-configuration/batterymgr/5-0
         description: The BatteryMgr allows you to configure the thresholds that will be used to determine when a battery needs to be decommissioned.
         icon: /mx/icons/battery_threshold.png
         urls:
@@ -290,41 +290,41 @@ contentlist:
     visible: true
     items: 
       - title: KeyMap Manager
-        url: keymappingmgr/5-0
+        url: ui-settings/keymappingmgr/5-0
         description: The KeyMappingMgr allows you to modify what behavior a given key will exhibit when pressed.
         icon: /mx/icons/key_mapping.png
         urls:
           - title: "4.4"
-            url: keymappingmgr/4-4
+            url: ui-settings/keymappingmgr/4-4
           - title: "5.0"
-            url: keymappingmgr/5-0
+            url: ui-settings/keymappingmgr/5-0
       - title: Power Key Manager
-        url: powerkeymgr/5-0
+        url: ui-settings/powerkeymgr/5-0
         description: The PowerKeyMgrallows you to control whether the user will be allowed to use certain menu options that are supported on the Power Key Menu.
         icon: /mx/icons/powerkeymgr.png
         urls:
           - title: "4.4"
-            url: powerkeymgr/4-4
+            url: ui-settings/powerkeymgr/4-4
           - title: "5.0"
-            url: powerkeymgr/5-0
+            url: ui-settings/powerkeymgr/5-0
       - title: Settings Manager
-        url: settingsmgr/5-0
+        url: ui-settings/settingsmgr/5-0
         description: The SettingsMgr allows you to control access to items on the System Settings Menu.
         icon: /mx/icons/settingsmgr.png
         urls:
           - title: "4.4"
-            url: settingsmgr/4-4
+            url: ui-settings/settingsmgr/4-4
           - title: "5.0"
-            url: settingsmgr/5-0
+            url: ui-settings/settingsmgr/5-0
       - title: UI Manager
-        url: uimgr/5-0
+        url: ui-settings/uimgr/5-0
         description: The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurations, like Clipboard behavior.
         icon: /mx/icons/uimgr.png
         urls:
           - title: "4.4"
-            url: uimgr/4-4
+            url: ui-settings/uimgr/4-4
           - title: "5.0"
-            url: uimgr/5-0
+            url: ui-settings/uimgr/5-0
   - heading: Wireless
     description: Manage wireless settings like WiFi and GPRS for your device.
     visible: true

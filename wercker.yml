@@ -34,7 +34,7 @@ deploy:
     - script:
         name: push to production
         code: |
-          git checkout stage
+          echo 'updating production repo'
           cd build
           rm -rf .git
           git init
@@ -51,4 +51,5 @@ deploy:
           echo 'commiting'
           git commit -m "Deploy from $WERCKER_STARTED_BY"
           echo 'pushing'
-          git push https://$GITHUB_TOKEN@github.com/zebra-stage/zebra-stage.github.io.git master:master
+          git push https://$GITHUB_TOKEN@github.com/zebra/zebra.github.io.git master:master
+          

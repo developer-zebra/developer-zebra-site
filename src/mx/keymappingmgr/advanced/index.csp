@@ -1,0 +1,24 @@
+---
+csp: keymapmgr
+title:  Advanced
+type: parm
+order: 8
+sincemx: 4.4
+parm:
+  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior for the Mapping Table is "Send key-code"
+  pivotal: Yes
+  type: list
+  list:
+    - code: 1
+      sincemx: 4.4
+      name: True
+      description: This value indicates that Advanced section will be specified.
+    - code: 2
+      name: False
+      sincemx: 4.4
+      description: This value (or the absence of this parm from the XML) indicates that the Advanced section will not be specified.
+---
+
+Each Key State Mapping Table has its own Advanced Section via which you can specify Key State Modifiers that will be set into the Current Key State when a Key Code is sent as the Key Behavior for the specified Key in that Key State Mapping Table.
+
+>This parm allows you to choose whether or not to use the Advanced section for a Key Mapping Table. All Advanced parms use the same values shown in the following table of values.

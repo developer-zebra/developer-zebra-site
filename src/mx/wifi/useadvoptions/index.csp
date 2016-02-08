@@ -1,0 +1,22 @@
+---
+csp: wifi
+title: Specify Advanced Options 
+type: parm
+order: 12
+sincemx: 4.2
+parm:
+  pivotal: True
+  name: UseAdvancedOptions
+  type: list
+  list:
+    - code: true
+      sincemx: 4.2
+      name: True
+      description:
+    - code: false
+      sincemx: 4.2
+      name: False
+      description: 
+---
+
+Specify whether Advanced Options will be used. In most cases, these options should not be used except under the direction of Zebra support staff.

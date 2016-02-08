@@ -1,0 +1,26 @@
+---
+csp: uimgr
+title: Enable/Disable AutoCorrect
+type: parm
+order: 4
+sincemx: 4.3
+parm:
+  pivotal: No
+  name: AutoCorrectUsage
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Auto Correct function is allowed to be used.
+    - code: 1
+      name: Enable 
+      sincemx: 4.3
+      description: This value will cause use of the Auto Correct function to be allowed. **Note:** This value does not specify that the Auto Correct function will be enabled, or any specific configuration of that function. When the function is allowed, the device user can Turn the function On or Off and configure the operation of the function via the System Settings Menu.
+    - code: 2
+      name: Disable
+      sincemx: 4.3
+      description: This value will cause use of the Auto Correct function to be prevented. **Note:** This value does not change whether the Auto Correct function is Turned On or Off or any configure related the operation of the function configured via the System Settings Menu. But it does prevent the function from being used, thus making any such configuration performed by the device user irrelevant unless/until use of the feature is allowed.
+---
+
+This parm allows you to control whether the Auto Correct function can be used to save commonly entered words and offer them as corrections to potentially mistyped words. Saving previously entered words and offering them as replacements for mistyped words could be seen as a security risk since it could expose sensitive information to visible inspection or re-entry by device users that are not authorized to possess or enter that information.

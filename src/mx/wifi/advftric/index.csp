@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: FTRIC
+type: parm
+order: 54
+sincemx: 4.2
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: FTRIC
+  type: string
+---
+
+This is to enable / disable Fast Transition Resource Request (802.11r).

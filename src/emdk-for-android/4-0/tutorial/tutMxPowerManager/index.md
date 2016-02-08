@@ -4,7 +4,7 @@ title:  Power Management using Power Manager API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](/emdk-for-android/4-0/mx/device-configuration/powermgr/5-0) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](/emdk-for-android/4-0/mx/device-configuration/powermgr) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
 
 **1. Sleep Mode:**
 

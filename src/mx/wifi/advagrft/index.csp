@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: AggregatedFT
+type: parm
+order: 66
+sincemx: 4.3
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: AggregatedFT
+  type: string
+---
+
+Specify whether to enable AggregatedFT.

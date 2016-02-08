@@ -1,0 +1,28 @@
+---
+csp: wifi
+title: Select your band preference
+type: parm
+order: 64
+sincemx: 4.3
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: BandPreference
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: No Preference
+    - code: 1
+      sincemx: 4.3
+      name: Prefer 2.4GHz
+    - code: 2
+      sincemx: 4.3
+      name: Prefer 5.0GHz
+    - code: 3
+      sincemx: 4.3
+      name: Do not change
+---
+
+
+Specify the band preference

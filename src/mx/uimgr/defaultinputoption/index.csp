@@ -1,0 +1,31 @@
+---
+csp: uimgr
+title: Select a Default Input Method Option
+type: parm
+order: 9
+sincemx: 4.3
+parm:
+  pivotal: Yes
+  presentif: The "Set Default Input Method?" value is "Change Current Input Method"
+  name: InputMethodOption
+  type: list
+  list:
+    - code: 1
+      sincemx: 4.3
+      name: English
+      description: This value will cause the standard English Input Method to be made the new Default Input Method.
+    - code: 2
+      name: Japanese 
+      sincemx: 4.3
+      description: This value will cause the standard Japanese Input Method to be made the new Default Input Method.
+    - code: 3
+      name: Chinese(China) 
+      sincemx: 4.3
+      description: This value will cause the standard Chinese Input Method to be made the new Default Input Method.
+    - code: 4
+      name: User defined Input Method 
+      sincemx: 4.3
+      description: This value will cause a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method (which must have already been installed) will need to be specified via its Android Package Name and Class Name.
+---
+
+This parm value allows you to select a desired Input Method to become the new Default Input Method. This will cause the selected Input Method to be enabled, if it is not already enabled, before it is set as the new default.

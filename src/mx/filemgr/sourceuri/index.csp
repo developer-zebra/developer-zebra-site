@@ -1,0 +1,13 @@
+---
+csp: filemgr
+title: Source URI
+type: parm
+order: 6
+parm:
+  presentif: File Action is transfer\copy and source is remote server
+  pivotal: No
+  name: SourceURI
+  type: string
+---
+
+Enter a URI of the location of the file on the server.

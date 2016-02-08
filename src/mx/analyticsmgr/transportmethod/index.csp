@@ -1,0 +1,26 @@
+---
+csp: analyticsmgr
+title: Transport Method
+type: parm
+sincemx: 4.3
+order: 3
+parm:
+  pivotal: No
+  name: TransportMethod
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to whether data is stored on the device or sent to the Cloud by the Analytics Engine.
+    - code: 1
+      sincemx: 4.3
+      name: Select Cloud Transport
+      description: This value will cause the Analytics Engine to send data to the Cloud. A corresponding client capable of performing the transport must be present on the device for this option to function properly.
+    - code: 2
+      sincemx: 4.3
+      name: Select File Transport
+      description: This value will cause the Analytics Engine to store data locally on the device in a file in the device file system.
+---
+
+This parm allows you to control whether data collected by the Analytics Engine is stored on the device or sent to the Cloud. 

@@ -1,0 +1,23 @@
+---
+csp: threatmgr
+title: Uninstall Application Countermeasure
+type: parm
+order: 8
+sincemx: 4.3
+parm:
+  presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected.
+  pivotal: Yes
+  name: UninstallApplication
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not perform
+      description: This countermeasure will not be executed.
+    - code: 1
+      name: Perform
+      sincemx: 4.3
+      description: This countermeasure will be executed upon threat detection.
+---
+
+This counter measure would silently remove an application from the device. Provide the package name of the application to uninstall. 

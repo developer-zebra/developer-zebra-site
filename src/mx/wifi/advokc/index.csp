@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: OKC
+type: parm
+order: 55
+sincemx: 4.2
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: OKC
+  type: string
+---
+
+This is to enable / disable Opportunistic Key Caching (OKC).

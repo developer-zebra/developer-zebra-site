@@ -1,0 +1,26 @@
+---
+csp: settingsmgr
+title: Ability to Turn UnknownSources On/Off in Settings UI
+type: parm
+order: 4
+sincemx: 4.3
+parm:
+  pivotal: No
+  name: UnknownSources
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to Turn "Unknown Sources" On or Off from the System Settings Menu.
+    - code: 1
+      name: Enable
+      sincemx: 4.3
+      description: This value will cause the device user to be allowed to Turn "Unknown Sources" On or Off from the System Settings Menu.
+    - code: 2
+      name: Disable
+      sincemx: 4.3
+      description: This value will cause the device user to be prevented from Turning "Unknown Sources" On or Off from the System Settings Menu.
+---
+
+This parm allows you to specify whether or not the device user will be allowed to Turn On or Off the ability to install applications from "Unknown Sources" on or off from the "Security" section of the System Settings Menu.

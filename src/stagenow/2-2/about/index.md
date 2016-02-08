@@ -57,7 +57,7 @@ The following topics are added or updated for StageNow 2.2:
 
 * [Device Staging](/stagenow/2-2/stageclient/#devicestaging)
 
-* [File Manager Archive/Unarchive Feature](../csp/file)
+* [File Manager Archive/Unarchive Feature](../csp/file/#archive-target-path-and-folder-name)
 
 * [StageNow Client Menu](/stagenow/2-2/stageclient/#stagenowclientmenu)
 

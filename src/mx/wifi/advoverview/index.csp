@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: Advanced Options
+type: parm
+order: 50
+sincemx: 4.2
+parm:
+  type: string
+---
+
+>Note: The following steps must be followed in order to use the Advanced Options under the WiFi feature:
+>
+>* PMKID must be turned on in order to enable PreAuth (PreAuth =1 and PMKID =1)
+>* FT must be turned on in order to enable FTRIC (FT=1 and FTRIC =1)
+>* OKC must be turned off (OKC =0 and PMKID =1) in order to use PMKID caching
+>
+> Important Note: The default "Fast Power Savings" value must be used for the "Power Save" parameter under the Advanced Options. Using the "Do Not Change" value will result in failure.
+

@@ -4,7 +4,7 @@ title:  Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi:
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](/emdk-for-android/4-0/mx/wireless/wifi/5-0) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](/emdk-for-android/4-0/mx/wireless/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
 
 * **[Wi-Fi Enable/Disable](https://developer.motorolasolutions.com/docs/DOC-2290#wifi-enable)**
 * **[Country Selection Auto/Manual](https://developer.motorolasolutions.com/docs/DOC-2290#country-selection-automanual)**

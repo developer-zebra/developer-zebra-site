@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: Radio Resource Measurement(802.11K)
+type: parm
+order: 62
+sincemx: 4.3
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: 802.11K
+  type: string
+---
+
+Specify whether to enable Radio Resource Measurement.

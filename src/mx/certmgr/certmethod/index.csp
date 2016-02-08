@@ -1,0 +1,19 @@
+---
+csp: certmgr
+title: Certificate Method
+type: parm
+order: 5
+sincemx: 4.2
+parm:
+  presentif: The Certificate Action is "Install certificate"
+  pivotal: Yes
+  name: CertMethod
+  type: list
+  list:
+    - code: 2
+      name: Reference certificate file
+      sincemx: 4.2
+      description: This value indicates that the data for the Certificate to be Installed is contained with a file that exists in the device file system.
+---
+
+This parm is used to specify the method to use to install the certificate.

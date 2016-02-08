@@ -4,9 +4,9 @@ title:  Configure Clipboard using Mx UI Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Clipboard of your Symbol Android device using [UI Manager](/emdk-for-android/4-0/mx/ui-settings/uimgr/5-0) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Clipboard of your Symbol Android device using [UI Manager](/emdk-for-android/4-0/mx/ui-settings/uimgr) feature of Mx. 
 
-So now we will create a tutorial and configure the Clipboard (Enable/Disable and clear Clipboard) of your Symbol Android device using Mx [UI Manager](/emdk-for-android/4-0/mx/ui-settings/uimgr/5-0) feature. 
+So now we will create a tutorial and configure the Clipboard (Enable/Disable and clear Clipboard) of your Symbol Android device using Mx [UI Manager](/emdk-for-android/4-0/mx/ui-settings/uimgr) feature. 
         
 
 ## Creating The Project

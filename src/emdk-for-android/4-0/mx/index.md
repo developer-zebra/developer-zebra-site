@@ -23,68 +23,26 @@ contentlist:
         description: Select the application's activity where data capture is active.
         url: data-capture/activity
         icon: /mx/icons/activity.png
-        urls:
-          - title: "4.2"
-            url: data-capture/activity
-          - title: "4.4"
-            url: data-capture/activity
-          - title: "5.0"
-            url: data-capture/activity
       - title: Barcode
         description: Set and configure barcode as the input source.
         url: data-capture/barcode
         icon: /mx/icons/barcode.png
-        urls:
-          - title: "4.2"
-            url: data-capture/barcode
-          - title: "4.4"
-            url: data-capture/barcode
-          - title: "5.0"
-            url: data-capture/barcode
       - title: Intent Output
         description: Output the data captured as an intent.
         icon: /mx/icons/intent.png
         url: data-capture/intent
-        urls:
-          - title: "4.2"
-            url: data-capture/intent
-          - title: "4.4"
-            url: data-capture/intent
-          - title: "5.0"
-            url: data-capture/intent
       - title: IP Output
         description: Output the data captured over IP communications.
         icon: /mx/icons/ip.png
         url: data-capture/IP
-        urls:
-          - title: "4.2"
-            url: data-capture/IP
-          - title: "4.4"
-            url: data-capture/IP
-          - title: "5.0"
-            url: data-capture/IP
       - title: Keystroke
         description: Output data captured as keystrokes.
         icon: /mx/icons/keystroke.png
         url: data-capture/keystroke
-        urls:
-          - title: "4.2"
-            url: data-capture/keystroke
-          - title: "4.4"
-            url: data-capture/keystroke
-          - title: "5.0"
-            url: data-capture/keystroke
       - title: Magstripe
         description: Set and configure mag stripe as the input source
         icon: /mx/icons/msr.png
         url: data-capture/msr
-        urls:
-          - title: "4.2"
-            url: data-capture/msr
-          - title: "4.4"
-            url: data-capture/msr
-          - title: "5.0"
-            url: data-capture/msr
   - heading: Device Configuration
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
     visible: true

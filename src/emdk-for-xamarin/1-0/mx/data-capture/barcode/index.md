@@ -6,7 +6,7 @@ title:  Barcode Profile Feature Reference
 In order to get Barcode data in your application, you must create a profile with two profile features selected:
 
 * Barcode
-* [Keystroke](/emdk-for-android/4-0/guide/profiles/profilekeystroke),[Intent](/emdk-for-android/4-0/guide/profiles/profileintent),[IP](/emdk-for-android/4-0/guide/profiles/profileIP) (Output)
+* [Keystroke](../keystroke),[Intent](../intent),[IP](../IP) (Output)
 
 The `Barcode` feature in the Profile Manager is responsible for reading data from the device's integrated bar code scanner and supports different types of bar code readers including laser, imager and internal camera. It also contains detailed parameters for scanner behavior as well as individual barcode symbology parameters.
 
@@ -19,7 +19,7 @@ The `Intent`, `Keystroke` or `IP` feature in the Profile Manager is used to defi
 * IP - IP Output allows DataWedge to send captured data to a host computer via a network connection. Captured data can be sent over an IP network to a specified IP address and port using either TCP or UDP transport protocols.
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/4-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/4-0/guide/profile-manager) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK ProfileManager API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. 
 
 ## Enabled
 Enables or disables this feature. Default is enabled.
@@ -360,7 +360,7 @@ Allows the configuration of Code Id and decode feedback options.
 ## Output Data
 In order for your application to receive the barcode data, you must specify one or more Output features. Please  refer to their reference documentation for more information.
 
-* [Intent](/emdk-for-android/4-0/guide/profiles/profileintent)
-* [Keystroke](/emdk-for-android/4-0/guide/profiles/profilekeystroke)
-* [IP](/emdk-for-android/4-0/guide/profiles/profileIP)
+* [Intent](../intent)
+* [Keystroke](../keystroke)
+* [IP](../IP)
 

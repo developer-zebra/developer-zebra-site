@@ -4,9 +4,9 @@ title:  Invoke Enterprise Reset in Settings UI
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on the ability to configure Enterprise Reset option in Settings UI on your Symbol device using [Settings Manager](/emdk-for-android/4-0/mx/ui-settings/settingsmgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on the ability to configure Enterprise Reset option in Settings UI on your Symbol device using [Settings Manager](../../mx/settingsmgr) feature of Mx. 
 
-So now we will create a tutorial and disable the ability to invoke Enterprise Reset in Settings UI of your Symbol Android device using Mx [Settings Manager](/emdk-for-android/4-0/mx/ui-settings/settingsmgr) feature. A typical use case for this could be to prevent user by accidentally pressing "Enterprise Reset" option.  
+So now we will create a tutorial and disable the ability to invoke Enterprise Reset in Settings UI of your Symbol Android device using Mx [Settings Manager](../../mx/settingsmgr) feature. A typical use case for this could be to prevent user by accidentally pressing "Enterprise Reset" option.  
         
 
 ## Creating The Project

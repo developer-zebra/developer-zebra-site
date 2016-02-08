@@ -3,7 +3,7 @@ title:  Setting The Clock With ProfileManager
 ---
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will configure the device's date and time using the [Mx Clock](/emdk-for-android/4-0/mx/device-configuration/clock) feature through Profile Manager of the EMDK for Android.
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will configure the device's date and time using the [Mx Clock](../../mx/clock) feature through Profile Manager of the EMDK for Android.
 
 This feature expects following attributes from user to set Clock on the symbol Android device:
 

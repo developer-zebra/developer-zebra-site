@@ -1,0 +1,37 @@
+---
+csp: keymapmgr
+title: Key behavior
+type: parm
+order: 5
+sincemx: 4.4
+parm:
+  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None"
+  pivotal: Yes
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.4
+      name: No change
+      description: This value (or the absence of this parm from the XML) will not make any change to the Key Behavior of the specified Key in the Base Key State Mapping Table.
+    - code: 1
+      name: Send trigger
+      description: This value will cause the Key Behavior for the specified Key in the Base Key State Mapping Table to be changed such that the Key will act as a one of the pre-defined Triggers and hence will cause whatever applications are registered for the selected Trigger to be notified.
+    - code: 2
+      name: Send key-code
+      sincemx: 4.4
+      description: This value will cause the Key Behavior for the specified Key in the Base Key State Mapping Table to be changed such that the Key acts like a different specified Key.
+    - code: 3
+      name: Send Intent
+      description: This value will cause the Key Behavior for the Key in the Base Key State Mapping Table to be changed such that the Key will send an Intent with specified attributes.
+    - code: 4
+      name: Launch application
+      description: This value will cause the Key Behavior for the Key in the Base Key State Mapping Table to be changed such that the Key will launch a specified application.
+    - code: 5
+      name: Suppress key
+      description: This value will cause the Key Behavior for the Key in the Base Key State Mapping Table to be changed such that the Key will be ignored and to act as if the Key was never pressed.
+    - code: 7
+      name: Reset to default
+      description: This value will cause the Key Behavior for the Key in the Base Key State Mapping Table to be changed such that the Default Key Behavior is restored.
+---
+
+This parm allows you to select the Key Behavior that should be defined in the Base Key State Mapping Table for the Key Mapping for a specified Key.

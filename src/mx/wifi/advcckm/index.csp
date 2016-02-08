@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: CKM
+type: parm
+order: 53
+sincemx: 4.2
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: CCKM
+  type: string
+---
+
+This parm is to enable / disable CCX roam algorithm (CCKM).

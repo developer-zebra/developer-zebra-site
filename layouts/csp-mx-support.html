@@ -1,0 +1,123 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 fixed-column-left"  >
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9 fixed-column-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p>MX Release History</p>
+                                    <p>
+                                    {{#if product}}
+                                    {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                     - {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                         - MX: {{mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    {{#each this.csps}}
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <section id="services" >
+                                <h2><a href="{{this.url}}">{{this.title}}</a></h2>
+                                <div class="">
+                                <!-- Start of content list -->
+                                    <div class="parm-table">
+                                        <table class="table">
+                                            <tr>
+                                                <th></th>
+                                                {{#each ../mxversions}}
+                                                    <th class="MX-{{this.value}}">{{this.text}}</th>
+                                                {{/each}}
+                                            </tr>
+                                            {{#each ../collections.csp}}
+                                            {{#is ../csp this.csp}}
+                                                 {{#isnt this.type "text"}}
+                                                    {{#if this.sincemx}}
+                                                    <tr class = "MX-{{this.sincemx}}">
+                                                    {{else}}
+                                                        {{#each ../../mxversions}}
+                                                            {{#if @first}}
+                                                                <tr class = "MX-{{this.value}}">
+                                                            {{/if}}
+                                                        {{/each}}
+                                                    {{/if}}
+                                                        <td class="col-md-3">{{this.title}}</td>
+                                                        {{#each ../../mxversions}}
+                                                            {{#if ../sincemx}}
+                                                                {{#gte this.value ../sincemx }}
+                                                                <td><i class="fa fa-check-circle"></i></td>
+                                                                {{else}}
+                                                                <td></td>
+                                                                {{/gte}}
+                                                            {{else}}
+                                                                <td><i class="fa fa-check-circle"></i></td>
+                                                            {{/if}}
+                                                        {{/each}}
+                                                    </tr>                                                          
+
+                                                {{#is this.parm.type "list"}}
+                                                    {{#each this.parm.list}}
+                                                    {{#if this.sincemx}}
+                                                    <tr class = "MX-{{this.sincemx}}">
+                                                    {{else}}
+                                                        {{#each ../../../mxversions}}
+                                                            {{#if @first}}
+                                                                <tr class = "MX-{{this.value}}">
+                                                            {{/if}}
+                                                        {{/each}}
+                                                    {{/if}}
+                                                        <td  class="col-md-3"><span style="padding-left:15px"><i>{{this.name}}</i></span></td>
+                                                        {{#each ../../../mxversions}}
+                                                            {{#if ../sincemx}}
+                                                                {{#gte this.value ../sincemx }}
+                                                                <td><i class="fa fa-check-circle"></i></td>
+                                                                {{else}}
+                                                                <td></td>
+                                                                {{/gte}}
+                                                            {{else}}
+                                                                <td><i class="fa fa-check-circle"></i></td>
+                                                            {{/if}}
+                                                        {{/each}}
+                                                    </tr>
+                                                    
+                                                    {{/each}}
+                                                    
+                                                    
+                                                {{/is}}
+                                                {{/isnt}}
+                                            {{/is}} 
+                                            {{/each}}  
+                                        </table>
+                                    </div>	
+                                </div><!--/.container-->
+                                
+                            </section><!--/#services-->
+                        </div>
+                    </div>
+                    {{/each}} <!-- csp loop -->
+                    <div>{{> footer-markup}}</div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer hide=true}}
+
+

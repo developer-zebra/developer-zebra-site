@@ -4,9 +4,9 @@ title:  Manage USB Configurations
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](/emdk-for-android/4-0/mx/security/usbmgr/5-0) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](/emdk-for-android/4-0/mx/security/usbmgr) feature of Mx.
  
-So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](/emdk-for-android/4-0/mx/security/usbmgr/5-0) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
+So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](/emdk-for-android/4-0/mx/security/usbmgr) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
         
 
 ## Creating The Project

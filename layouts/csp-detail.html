@@ -1,0 +1,127 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 fixed-column-left"  >
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9 fixed-column-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p>
+                                    {{#if product}}
+                                    {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                     - {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                         - MX: {{mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <section id="services" >
+                                <div class="">
+                                    {{{contents}}}
+                                </div>
+                                <div class="">
+                                <!-- Start of content list -->
+                                
+                                {{#each collections.csp}}
+                                {{#is ../csp this.csp}}
+                                <div class="">
+                                    <h2 class="">{{this.title}}</h2>
+                                    <p class="">{{{this.contents}}}</p>
+                                    {{#is this.type "parm"}}
+                                        <blockquote>
+                                        {{#if this.parm.presentif}}
+                                        <p><b>Shown if:</b> {{this.parm.presentif}}</p>
+                                        {{/if}}
+                                        {{#if this.parm.name}}
+                                        <p><b>Parm Name:</b> {{this.parm.name}}</p>
+                                        {{/if}}
+                                        {{#if this.parm.pivotal}}
+                                        <p><b>Pivotal Parm:</b> {{this.parm.pivotal}}</p>
+                                        {{/if}}
+                                         <p><b>Versions:</b>
+                                        {{#each ../mxversions}}
+                                            {{#if ../sincemx}}
+                                                {{#is this.value ../sincemx }}
+                                                    <span class="label label-default">{{this.text}} +</span>
+                                                {{/is}}
+                                            {{else}}
+                                                {{#if @first}}
+                                                 <span class="label label-default">{{this.text}} +</span>
+                                                {{/if}}
+                                            {{/if}}
+                                        {{/each}}   
+                                        </p>                                     
+                                        </blockquote>
+                                    {{/is}}
+                                    
+                                    
+                                    {{#is this.parm.type "list"}}
+                                    <div >
+                                        <table class="table">
+                                            <tr>
+                                                <th>Option</th>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Versions</th>
+                                            </tr>
+                                            {{#each this.parm.list}}
+                                            <tr>
+                                                <td>{{this.code}}</td>
+                                                <td>{{this.name}}</td>
+                                                <td>{{this.description}}</td>
+                                                <td>
+                                                {{#each ../../mxversions}}
+                                                    {{#if ../sincemx}}
+                                                        {{#is this.value ../sincemx }}
+                                                            {{this.text}}+
+                                                        {{/is}}
+                                                    {{else}}
+                                                        {{#if @first}}
+                                                            {{this.text}}+
+                                                        {{/if}}
+                                                    {{/if}}
+                                                {{/each}}  
+                                                </td> 
+                                                
+                                            </tr>
+                                            
+                                            {{/each}}
+                                            
+                                        </table>
+                                    </div>	
+                                    {{/is}}
+                                    
+                                </div> 
+                                {{/is}}
+                                    
+                                {{/each}}  
+                                </div><!--/.container-->
+                                <div>{{> footer-markup}}</div>
+                            </section><!--/#services-->
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+{{> footer hide=true}}
+
+

@@ -1,0 +1,376 @@
+---
+csp: wifi
+title: Country 
+type: parm
+order: 6
+sincemx: 4.2
+parm:
+  presentif: The "Configure Country (Auto/Manual)" box is not checked
+  pivotal: No
+  name: Country
+  type: list
+  list:
+    - name: AUTO (Use 802.11d) 
+      code: AUTO
+      sincemx: 4.2
+    - name: Algeria 
+      code: DZ
+      sincemx: 4.2
+    - name: Anguilla 
+      code: AI
+      sincemx: 4.2
+    - name: Argentina 
+      code: AR
+      sincemx: 4.2
+    - name: Australia 
+      code: AU
+      sincemx: 4.2
+    - name: Austria 
+      code: AT
+      sincemx: 4.2
+    - name: Bahamas 
+      code: BS
+      sincemx: 4.2
+    - name: Bahrain 
+      code: BH
+      sincemx: 4.2
+    - name: Barbados 
+      code: BB
+      sincemx: 4.2
+    - name: Belarus 
+      code: BY
+      sincemx: 4.2
+    - name: Belgium 
+      code: BE
+      sincemx: 4.2
+    - name: Bermuda 
+      code: BM
+      sincemx: 4.2
+    - name: Bolivia 
+      code: BO
+      sincemx: 4.2
+    - name: Bonaire 
+      code: BQ
+      sincemx: 4.2
+    - name: Bosnia and Herzegovina 
+      code: BA
+      sincemx: 4.2
+    - name: Brazil 
+      code: BR
+      sincemx: 4.2
+    - name: Bulgaria 
+      code: BG
+      sincemx: 4.2
+    - name: Canada 
+      code: CA
+      sincemx: 4.2
+    - name: Cayman Islands 
+      code: KY
+      sincemx: 4.2
+    - name: Chile 
+      code: CL
+      sincemx: 4.2
+    - name: China 
+      code: CN
+      sincemx: 4.2
+    - name: Christmas Island 
+      code: CX
+      sincemx: 4.2
+    - name: Columbia 
+      code: CO
+      sincemx: 4.2
+    - name: Costa Rica 
+      code: CR
+      sincemx: 4.2
+    - name: Croatia 
+      code: HR
+      sincemx: 4.2
+    - name: Curacao 
+      code: CW
+      sincemx: 4.2
+    - name: Cyprus 
+      code: CY
+      sincemx: 4.2
+    - name: Czech Republic 
+      code: CZ
+      sincemx: 4.2
+    - name: Denmark 
+      code: DK
+      sincemx: 4.2
+    - name: Dominican Republic 
+      code: DO
+      sincemx: 4.2
+    - name: Ecuador 
+      code: EC
+      sincemx: 4.2
+    - name: Egypt 
+      code: EG
+      sincemx: 4.2
+    - name: El Salvador 
+      code: SV
+      sincemx: 4.2
+    - name: Estonia 
+      code: EE
+      sincemx: 4.2
+    - name: Falkland Islands(Malvinas) 
+      code: FK
+      sincemx: 4.2
+    - name: Finland 
+      code: FI
+      sincemx: 4.2
+    - name: France 
+      code: FR
+      sincemx: 4.2
+    - name: French Guiana 
+      code: GF
+      sincemx: 4.2
+    - name: Germany 
+      code: DE
+      sincemx: 4.2
+    - name: Greece 
+      code: GR
+      sincemx: 4.2
+    - name: Guadelope 
+      code: GP
+      sincemx: 4.2
+    - name: Guam 
+      code: GU
+      sincemx: 4.2
+    - name: Guatemala 
+      code: GT
+      sincemx: 4.2
+    - name: Guyana 
+      code: GY
+      sincemx: 4.2
+    - name: Haiti 
+      code: HT
+      sincemx: 4.2
+    - name: Honduras 
+      code: HN
+      sincemx: 4.2
+    - name: Hong Kong 
+      code: HK
+      sincemx: 4.2
+    - name: Hungary 
+      code: HU
+      sincemx: 4.2
+    - name: Iceland 
+      code: IS
+      sincemx: 4.2
+    - name: India 
+      code: IN
+      sincemx: 4.2
+    - name: Indonesia 
+      code: ID
+      sincemx: 4.2
+    - name: Ireland 
+      code: IE
+      sincemx: 4.2
+    - name: Israel 
+      code: IL
+      sincemx: 4.2
+    - name: Italy 
+      code: IT
+      sincemx: 4.2
+    - name: Jamaica 
+      code: JM
+      sincemx: 4.2
+    - name: Japan 
+      code: JP
+      sincemx: 4.2
+    - name: Jordan 
+      code: JO
+      sincemx: 4.2
+    - name: Kazakhstan 
+      code: KZ
+      sincemx: 4.2
+    - name: Kenya 
+      code: KE
+      sincemx: 4.2
+    - name: Korea Republic 
+      code: KR
+      sincemx: 4.2
+    - name: Kuwait 
+      code: KW
+      sincemx: 4.2
+    - name: Latvia 
+      code: LV
+      sincemx: 4.2
+    - name: Lebanon 
+      code: LB
+      sincemx: 4.2
+    - name: Liechtenstein 
+      code: LI
+      sincemx: 4.2
+    - name: Lithuania 
+      code: LT
+      sincemx: 4.2
+    - name: Luxembourg 
+      code: LU
+      sincemx: 4.2
+    - name: Macedonia, Former Yugoslav Republic 
+      code: MK
+      sincemx: 4.2
+    - name: Malaysia 
+      code: MY
+      sincemx: 4.2
+    - name: Malta 
+      code: MT
+      sincemx: 4.2
+    - name: Martinique 
+      code: MQ
+      sincemx: 4.2
+    - name: Mexico 
+      code: MX
+      sincemx: 4.2
+    - name: Montenegro 
+      code: ME
+      sincemx: 4.2
+    - name: Morocco 
+      code: MA
+      sincemx: 4.2
+    - name: Netherlands, Antilles 
+      code: AN
+      sincemx: 4.2
+    - name: Netherlands 
+      code: NL
+      sincemx: 4.2
+    - name: New Zealand 
+      code: NZ
+      sincemx: 4.2
+    - name: Nicaragua 
+      code: NI
+      sincemx: 4.2
+    - name: Nigeria 
+      code: NG
+      sincemx: 4.2
+    - name: Niue 
+      code: NU
+      sincemx: 4.2
+    - name: Norfolk Islands 
+      code: NF
+      sincemx: 4.2
+    - name: Northern Marina Islands 
+      code: MP
+      sincemx: 4.2
+    - name: Norway 
+      code: NO
+      sincemx: 4.2
+    - name: Oman 
+      code: OM
+      sincemx: 4.2
+    - name: Pakistan 
+      code: PK
+      sincemx: 4.2
+    - name: Panama 
+      code: PA
+      sincemx: 4.2
+    - name: Paraguay 
+      code: PY
+      sincemx: 4.2
+    - name: Peru 
+      code: PE
+      sincemx: 4.2
+    - name: Philippines 
+      code: PH
+      sincemx: 4.2
+    - name: Poland 
+      code: PL
+      sincemx: 4.2
+    - name: Portugal 
+      code: PT
+      sincemx: 4.2
+    - name: Puerto Rico 
+      code: PR
+      sincemx: 4.2
+    - name: Qatar 
+      code: QA
+      sincemx: 4.2
+    - name: Romania 
+      code: RO
+      sincemx: 4.2
+    - name: Russian Federation 
+      code: RU
+      sincemx: 4.2
+    - name: St. Maarten 
+      code: SX
+      sincemx: 4.2
+    - name: Saudi Arabia 
+      code: SA
+      sincemx: 4.2
+    - name: Serbia 
+      code: RS
+      sincemx: 4.2
+    - name: Singapore 
+      code: SG
+      sincemx: 4.2
+    - name: Slovakia 
+      code: SK
+      sincemx: 4.2
+    - name: Slovenia 
+      code: SI
+      sincemx: 4.2
+    - name: South Africa 
+      code: ZA
+      sincemx: 4.2
+    - name: Spain 
+      code: ES
+      sincemx: 4.2
+    - name: Sri Lanka 
+      code: LK
+      sincemx: 4.2
+    - name: Sweden 
+      code: SE
+      sincemx: 4.2
+    - name: Switzerland 
+      code: CH
+      sincemx: 4.2
+    - name: Taiwan, Province of China 
+      code: TW
+      sincemx: 4.2
+    - name: Thailand 
+      code: TH
+      sincemx: 4.2
+    - name: Trinidad and Tobago 
+      code: TT
+      sincemx: 4.2
+    - name: Tunisia 
+      code: TN
+      sincemx: 4.2
+    - name: Turkey 
+      code: TR
+      sincemx: 4.2
+    - name: Ukraine 
+      code: UA
+      sincemx: 4.2
+    - name: United Arab Emirates 
+      code: AE
+      sincemx: 4.2
+    - name: United Kingdom 
+      code: GB
+      sincemx: 4.2
+    - name: U.S.A. 
+      code: US
+      sincemx: 4.2
+    - name: Uruguay 
+      code: UY
+      sincemx: 4.2
+    - name: Venezuela 
+      code: VE
+      sincemx: 4.2
+    - name: Vietnam 
+      code: VN
+      sincemx: 4.2
+    - name: Virgin Islands(British) 
+      code: VG
+      sincemx: 4.2
+    - name: Virgin Islands(US) 
+      code: VI
+      sincemx: 4.2
+---
+
+Sets the country to use for Wi-Fi regulatory setting. 
+
+When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 802.11d is a mode where the device will listen for a country-specific beacon. It also will not transmit unless it can auto-detect the country, which can be beneficial because the device cannot transmit with a frequency that is inconsistent with the Wi-Fi infrastructure and is therefore less likely to violate country-specific regulations.
+
+If a Wi-Fi infrastructure does not support, 802.11d, then the country that is used by this infrastructure will need to be selected so that the device can connect to it.

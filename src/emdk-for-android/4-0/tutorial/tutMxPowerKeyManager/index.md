@@ -4,11 +4,11 @@ title:  Disable Airplane Mode Menu Option using Power Key Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Power Key Manager parameters such as Airplane Mode, Touch Panel, Safe Mode and Auto Screen Lock using [Power Key Manager](/emdk-for-android/4-0/mx/ui-settings/powerkeymgr/5-0) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Power Key Manager parameters such as Airplane Mode, Touch Panel, Safe Mode and Auto Screen Lock using [Power Key Manager](/emdk-for-android/4-0/mx/ui-settings/powerkeymgr) feature of Mx.
 
 The PowerKey Manager feature allows your application to control which options appear on the power menu on the device. Out of different available power key parameters, we would control Airplane Mode in this tutorial.  
 
-So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using Mx [Power Key Manager](/emdk-for-android/4-0/mx/ui-settings/powerkeymgr/5-0) feature on your Symbol Android device. 
+So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using Mx [Power Key Manager](/emdk-for-android/4-0/mx/ui-settings/powerkeymgr) feature on your Symbol Android device. 
         
 
 ## Creating The Project

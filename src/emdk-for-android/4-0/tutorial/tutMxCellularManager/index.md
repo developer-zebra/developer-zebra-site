@@ -4,9 +4,9 @@ title:  Set the Roaming State using Cellular Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring roaming state of your Symbol Android device (Ex. Turn ON/OFF state of Data Roaming) using [Cellular Manager](/emdk-for-android/4-0/mx/wireless/cellularmgr/5-0) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring roaming state of your Symbol Android device (Ex. Turn ON/OFF state of Data Roaming) using [Cellular Manager](/emdk-for-android/4-0/mx/wireless/cellularmgr) feature of Mx. 
 
-So now we will create a tutorial to turn the state of Data Roaming ON using Mx [Cellular Manager](/emdk-for-android/4-0/mx/wireless/cellularmgr/5-0) feature on your Symbol Android device. 
+So now we will create a tutorial to turn the state of Data Roaming ON using Mx [Cellular Manager](/emdk-for-android/4-0/mx/wireless/cellularmgr) feature on your Symbol Android device. 
         
 
 ## Creating The Project

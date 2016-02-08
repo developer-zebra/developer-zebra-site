@@ -158,78 +158,78 @@ menu:
           url: /emdk-for-android/4-0/mx/app-management
           items:
             - title: App Manager
-              url: /emdk-for-android/4-0/mx/app-management/appmgr/5-0
+              url: /emdk-for-android/4-0/mx/app-management/appmgr
             - title: Browser Manager
-              url: /emdk-for-android/4-0/mx/app-management/browsermgr/5-0
+              url: /emdk-for-android/4-0/mx/app-management/browsermgr
         - title: Device Configuration
           url: /emdk-for-android/4-0/mx/device-configuration
           items:
             - title: Analytics Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/analytics/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/analytics
             - title: Audio Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/audiomgr/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/audiomgr
             - title: Battery Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/batterymgr/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/batterymgr
             - title: Clock
-              url: /emdk-for-android/4-0/mx/device-configuration/clock/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/clock
             - title: Component Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/componentmgr/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/componentmgr
             - title: Display Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/displaymgr/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/displaymgr
             - title: Power Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/powermgr/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/powermgr
             - title: Touch Manager
-              url: /emdk-for-android/4-0/mx/device-configuration/touchmgr/5-0
+              url: /emdk-for-android/4-0/mx/device-configuration/touchmgr
         - title: Security
           url: /emdk-for-android/4-0/mx/security
           items:
             - title: Access Manager
-              url: /emdk-for-android/4-0/mx/security/accessmgr/5-0
+              url: /emdk-for-android/4-0/mx/security/accessmgr
             - title: Camera Manager
-              url: /emdk-for-android/4-0/mx/security/cameramgr/5-0
+              url: /emdk-for-android/4-0/mx/security/cameramgr
             - title: Cert Manager
-              url: /emdk-for-android/4-0/mx/security/certmgr/5-0
+              url: /emdk-for-android/4-0/mx/security/certmgr
             - title: DevAdmin 
-              url: /emdk-for-android/4-0/mx/security/devadmin/5-0
+              url: /emdk-for-android/4-0/mx/security/devadmin
             - title: Encrypt Manager
-              url: /emdk-for-android/4-0/mx/security/encryptmgr/5-0
+              url: /emdk-for-android/4-0/mx/security/encryptmgr
             - title: SD Card Manager
-              url: /emdk-for-android/4-0/mx/security/sdcardmgr/5-0
+              url: /emdk-for-android/4-0/mx/security/sdcardmgr
             - title: Threat Manager
-              url: /emdk-for-android/4-0/mx/security/threatmgr/5-0
+              url: /emdk-for-android/4-0/mx/security/threatmgr
             - title: USB Manager
-              url: /emdk-for-android/4-0/mx/security/usbmgr/5-0
+              url: /emdk-for-android/4-0/mx/security/usbmgr
         - title: UI Configuration
           url: /emdk-for-android/4-0/mx/ui-settings
           items:
             - title: KeyMap Manager
-              url: /emdk-for-android/4-0/mx/ui-settings/keymappingmgr/5-0   
+              url: /emdk-for-android/4-0/mx/ui-settings/keymappingmgr
             - title: PowerKey Manager
-              url: /emdk-for-android/4-0/mx/ui-settings/powerkeymgr/5-0   
+              url: /emdk-for-android/4-0/mx/ui-settings/powerkeymgr
             - title: Settings Manager
-              url: /emdk-for-android/4-0/mx/ui-settings/settingsmgr/5-0   
+              url: /emdk-for-android/4-0/mx/ui-settings/settingsmgr
             - title: UI Manager
-              url: /emdk-for-android/4-0/mx/ui-settings/uimgr/5-0   
+              url: /emdk-for-android/4-0/mx/ui-settings/uimgr 
         - title: Wireless
           url: /emdk-for-android/4-0/mx/wireless
           items:
             - title: Cellular Manager
-              url: /emdk-for-android/4-0/mx/wireless/cellularmgr/5-0   
+              url: /emdk-for-android/4-0/mx/wireless/cellularmgr
             - title: DHCP Options Manager
-              url: /emdk-for-android/4-0/mx/wireless/dhcpmgr/5-0   
+              url: /emdk-for-android/4-0/mx/wireless/dhcpmgr   
             - title: GPRS Manager
-              url: /emdk-for-android/4-0/mx/wireless/gprsmgr/5-0   
+              url: /emdk-for-android/4-0/mx/wireless/gprsmgr
             - title: WiFi Manager
-              url: /emdk-for-android/4-0/mx/wireless/wifi/5-0   
+              url: /emdk-for-android/4-0/mx/wireless/wifi   
             - title: Wireless Manager
-              url: /emdk-for-android/4-0/mx/wireless/wirelessmgr/5-0   
+              url: /emdk-for-android/4-0/mx/wireless/wirelessmgr
         - title: MX Framework
           url: /emdk-for-android/4-0/mx/mx
           items:
             - title: Persistance Manager
-              url: /emdk-for-android/4-0/mx/mx/persistance/5-0   
+              url: /emdk-for-android/4-0/mx/mx/persistance 
             - title: XML Manager
-              url: /emdk-for-android/4-0/mx/mx/xml/5-0   
+              url: /emdk-for-android/4-0/mx/mx/xml
         - title: Data Capture
           url: /emdk-for-android/4-0/mx/data-capture
           items:

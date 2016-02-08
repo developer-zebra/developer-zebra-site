@@ -1,0 +1,26 @@
+---
+csp: usbmgr
+title: USB Module Usage
+type: parm
+order: 2
+sincemx: 4.2
+parm:
+  pivotal: No
+  name: UsbModuleUsage
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.2
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the USB module can be used.  This value will also cause other parms to be presented to allow individual USB functions to be controlled.
+    - code: 1
+      name: Enable 
+      sincemx: 4.2
+      description: This value will cause usage of the USB module to be allowed.  This value will also cause other parms to be presented to allow individual USB functions to be controlled.
+    - code: 2
+      name: Disable
+      sincemx: 4.2
+      description: This value will cause all usage of the USB module to be prevented.  This value will also prevent other parms from being presented since individual USB functions cannot be used if all usage of the USB module is being prevented.
+---
+
+This parm allows you to specify whether the use of USB module will be allowed. Setting this parm would cause all of the USB features to be enabled or disabled.

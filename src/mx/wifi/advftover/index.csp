@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: FTOverTheDS
+type: parm
+order: 65
+sincemx: 4.3
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: FTOverTheDS
+  type: string
+---
+
+Specify whether to enable FTOverTheDS

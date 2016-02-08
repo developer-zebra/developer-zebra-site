@@ -4,11 +4,11 @@ title:  Allow installation of apps from unknown sources using DevAdmin Manager.
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on  whether to allow or not the installation of apps from unknown sources on your Symbol Android device using [DevAdmin Manager](/emdk-for-android/4-0/mx/security/devadmin/5-0) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on  whether to allow or not the installation of apps from unknown sources on your Symbol Android device using [DevAdmin Manager](/emdk-for-android/4-0/mx/security/devadmin) feature of Mx.
 
 > Note: Your phone and personal data are more vulnerable to attack by apps from unknown sources. You agree that you are solely responsible for any damage to your phone or loss of data that may result from using these apps. 
 
-So we will now create a tutorial to allow the installation of apps from unknown sources on Symbol devices using Mx [DevAdmin Manager](/emdk-for-android/4-0/mx/security/devadmin/5-0) feature.
+So we will now create a tutorial to allow the installation of apps from unknown sources on Symbol devices using Mx [DevAdmin Manager](/emdk-for-android/4-0/mx/security/devadmin) feature.
         
 
 ## Creating The Project

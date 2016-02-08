@@ -1,0 +1,14 @@
+---
+csp: wifi
+title: PMKID
+type: parm
+order: 56
+sincemx: 4.2
+parm:
+  presentif: The "Specify Advanced Options" box is enabled.
+  pivotal: False
+  name: PMKID
+  type: string
+---
+
+This is to enable / disable PMKID Caching. We need to disable OKC and enable PMKID for PMKID caching to work.

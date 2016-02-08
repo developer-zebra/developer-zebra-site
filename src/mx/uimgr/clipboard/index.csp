@@ -1,0 +1,26 @@
+---
+csp: uimgr
+title: Clipboard
+type: parm
+order: 2
+sincemx: 4.3
+parm:
+  pivotal: No
+  name: ClipBoardUsage
+  type: list
+  list:
+    - code: 0
+      sincemx: 4.3
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Clipboard function can be used.
+    - code: 1
+      name: Enable 
+      sincemx: 4.3
+      description: This value will cause use of the Clipboard function to be allowed.
+    - code: 2
+      name: Disable
+      sincemx: 4.3
+      description: This value will cause use of the Clipboard function to be prevented. **Note:** This will disallow the user from being able to copy and paste data to or from the clipboard. An attempt to use the clipboard when its use is prevented will result in a toast message to inform the device user that the use of the clipboard is not currently allowed.
+---
+
+This parm allows you to control whether or not the use of the Clipboard function will be allowed.

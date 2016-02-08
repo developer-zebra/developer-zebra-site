@@ -1,15 +1,15 @@
 ---
-title:  Power
+title: Power Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: powermgr
 ---
-
-## About Power
-
-### Overview
-
-This setting type puts the device into Sleep mode, re-power or perform an OS Update. The action is performed when the configuration is set.
-
-### Versions
-
-* [4.3](4-3)
-* [4.4](4-4)
-* [5-0](5-0)

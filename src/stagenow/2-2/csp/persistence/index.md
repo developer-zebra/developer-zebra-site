@@ -1,16 +1,15 @@
 ---
-title:  Persist
+title: Persist Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: persistmgr
 ---
-
-## About Persist
-
-### Overview
-
-The Persist Manager setting type creates and removes persistent profile settings. These settings and their parameters survive and are automatically applied after a 'Enterprise Reset'. 
-
-
-### Versions
-
-* [4.3](4-3)
-* [4.4](4-4)
-* [5-0](5-0)

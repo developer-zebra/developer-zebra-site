@@ -1,19 +1,15 @@
 ---
-title:  Condition
+title: Condition Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: conditionmgr
 ---
-
-## About Condition
-
-### Overview
-The Condition Manager makes decisions based on the condition set in the input XML.
-
-### Main Functionality
-
-* Validate a condition described in the input XML request, repeat the condition if required, and present the status of the validated condition. 
-* Condition validation includes verifying that the device has a valid IP address.
-* Condition validation includes verifying the device battery level. 
-
-
-## Feature Compatibility
-Condition Manager is supported by KitKat and Jelly Bean versions of all devices.
-

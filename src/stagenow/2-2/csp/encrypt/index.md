@@ -1,15 +1,15 @@
 ---
-title:  Encrypt
+title: Encrypt Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: encryptmgr
 ---
-
-## About Encrypt
-
-### Overview
-
-The Encrypt Manager setting type sets encryption policies on a device through MX XML. For example a developer can create an EFS for storing application data.  
-
-### Versions
-
-* [4.3](4-3)
-* [4.4](4-4)
-* [5-0](5-0)

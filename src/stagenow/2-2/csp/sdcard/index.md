@@ -1,16 +1,15 @@
 ---
-title:  SdCard
+title: SD Card Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: sdcardmgr
 ---
-
-## About SdCard
-
-### Overview
-
-The SdCard Manager setting type allows your application to manage the use of the device SD card.
-
-### Versions
-
-* [4.3](4-3)
-* [4.4](4-4)
-* [5-0](5-0)
-

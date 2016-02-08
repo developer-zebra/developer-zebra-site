@@ -1,15 +1,15 @@
 ---
-title:  Analytics
+title: Analytics Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: analyticsmgr
 ---
-
-## About Analytics
-
-### Overview
-
-The Analytics Manager setting type configures the device data to collect, and indicates where to store the collected data.
-
-### Versions
-
-* [4.3](4-3)
-* [4.4](4-4)
-* [5-0](5-0)

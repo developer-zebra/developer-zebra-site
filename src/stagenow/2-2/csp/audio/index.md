@@ -1,13 +1,15 @@
 ---
-title:  Audio
+title: Audio Volume UI Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: audiovoluimgr
 ---
-
-## About Audio
-
-### Overview
-The Audio Volume UI Manager feature allows you to manage enhanced audio volume control configurations.
-
-### Versions
-
-* [4.4](4-4)
-* [5-0](5-0)

@@ -1,16 +1,15 @@
 ---
-title:  File
+title: File Manager
+layout: csp-detail.html
+mxversions:
+  - text: MX 4.2
+    value: 4.2
+  - text: MX 4.3
+    value: 4.3
+  - text: MX 4.4
+    value: 4.4
+  - text: MX 5.0
+    value: 5.0
+    
+csp: filemgr
 ---
-
-## About File
-
-### Overview
-
-The File Manager setting type allows your application to manage files on the device. For example you can download a file from an ftp server and it save on the device.
-
-### Versions
-
-* [4.3](4-3)
-* [4.4](4-4)
-* [5-0](5-0)
-

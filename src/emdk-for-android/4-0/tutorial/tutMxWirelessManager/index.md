@@ -4,9 +4,9 @@ title:  Configure Bluetooth using Mx Wireless Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring wireless configurations on your Symbol Android device (Ex. Configure device's Bluetooth) using [Wireless Manager](/emdk-for-android/4-0/mx/wireless/wirelessmgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring wireless configurations on your Symbol Android device (Ex. Configure device's Bluetooth) using [Wireless Manager](../../mx/wirelessmgr) feature of Mx. 
 
-So now we will create a tutorial and configure (Enable/Disable) the Bluetooth of your Symbol Android device using Mx [Wireless Manager](/emdk-for-android/4-0/mx/wireless/wirelessmgr) feature. 
+So now we will create a tutorial and configure (Enable/Disable) the Bluetooth of your Symbol Android device using Mx [Wireless Manager](../../mx/wirelessmgr) feature. 
 
 ## Creating The Project
 

@@ -4,7 +4,7 @@ title:  Manage MX Processing Behavior
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing the XML processing by specifying the XML processing mode to use on your Symbol Android device using [XML Manager](/emdk-for-android/4-0/mx/mx/xml) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing the XML processing by specifying the XML processing mode to use on your Symbol Android device using [XML Manager](../../mx/xml) feature of Mx.
 
 The XML Manager supports following XML processing Modes:
 

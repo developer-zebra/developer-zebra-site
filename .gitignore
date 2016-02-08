@@ -10,4 +10,4 @@ Thumbs.db
 build/
 import/
 export/
-werker.yml
+wercker.yml

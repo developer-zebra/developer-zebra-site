@@ -256,31 +256,6 @@ menu:
           url: /emdk-for-android/4-0/guide/reference/refdatacaptureintent
         - title: Battery Intent
           url: /emdk-for-android/4-0/guide/reference/refbatteryintent
-    - title: APIs
-      url: /emdk-for-android/4-0/api
-      items:
-        - title: Core and ProfileManager APIs
-          url: /emdk-for-android/4-0/api/core
-        - title: Barcode APIs
-          url: /emdk-for-android/4-0/api/barcode
-        - title: ScanAndPair APIs 
-          url: /emdk-for-android/4-0/api/scanandpair
-        - title: SimulScan APIs 
-          url: /emdk-for-android/4-0/api/simulscan
-        - title: Personal Shopper APIs 
-          url: /emdk-for-android/4-0/api/PersonalShopper
-        - title: Secure NFC APIs 
-          url: /emdk-for-android/4-0/api/securenfc
-        - title: Payment APIs
-          url: /emdk-for-android/4-0/api/payment
-        - title: Serial Comm APIs
-          url: /emdk-for-android/4-0/api/serialcomm
-    - title: Platform Intents
-      items:
-        - title: Datawedge Intents
-          url: /emdk-for-android/4-0/guide/reference/refdatacaptureintent
-        - title: Battery Intent
-          url: /emdk-for-android/4-0/guide/reference/refbatteryintent
 
 ---
 

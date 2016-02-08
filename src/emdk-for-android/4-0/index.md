@@ -243,7 +243,7 @@ menu:
         - title: SimulScan APIs 
           url: /emdk-for-android/4-0/api/simulscan
         - title: Personal Shopper APIs 
-          url: /emdk-for-android/4-0/api/PersonalShopper
+          url: /emdk-for-android/4-0/api/personalshopper
         - title: Secure NFC APIs 
           url: /emdk-for-android/4-0/api/securenfc
         - title: Payment APIs

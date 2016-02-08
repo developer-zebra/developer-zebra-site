@@ -3,7 +3,7 @@ title: EMDK For Xamarin API List
 ---
 
 ## Core and ProfileManager APIs
-The following APIs are to be used to process EMDK features and profiles using the [Profile Manager](/emdk-for-xamarin/1-0/guide/profiles/usingwizard) as well as getting information about the EMDK.
+The following APIs are to be used to process EMDK features and profiles using the [Profile Manager](/emdk-for-xamarin/1-0/guide/profilemanager/about) as well as getting information about the EMDK.
 
 ###EMDKBase
 
@@ -41,7 +41,7 @@ The following APIs are to be used to process EMDK features and profiles using th
 
 
 ## Barcode APIs
-The following APIs are used when you wish to handle all barcode scanning entirely in Java. These API's work independently of any [Data Capture profiles.](/emdk-for-xamarin/1-0/guide/profiles/profilebarcode)
+The following APIs are used when you wish to handle all barcode scanning entirely in Java. These API's work independently of any [Data Capture profiles.](/emdk-for-xamarin/1-0/mx/data-capture)
 
 
 ###BarcodeManager

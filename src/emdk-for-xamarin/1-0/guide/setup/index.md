@@ -49,7 +49,7 @@ A sample is included as part of the Xamarin Component package to help get you st
 ### 4) Understand Profile Manager
 One unique feature to EMDK for Xamarin is to control device behavior and configuration through the use of *profiles*. The EMDK Profile Manager lets you create profiles right from your IDE using a GUI interface for selecting the features and settings that your application wishes to use. Then in your application you would simply apply the profile when needed. This results in a simple approach and minimal lines of code required to accomplish tasks
 
-- [Read the Profile Manager Overview Guide](/emdk-for-xamarin/1-0/guide/profiles/about)
+- [Read the Profile Manager Overview Guide](/emdk-for-xamarin/1-0/guide/profilemanager/about)
 
 ### 5) Build a Simple Application
 Now that you have your environment setup and have an overview of the EMDK for Xamarin, let's walk through and build an application from scratch.

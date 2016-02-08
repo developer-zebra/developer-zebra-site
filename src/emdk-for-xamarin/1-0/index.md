@@ -14,9 +14,9 @@ menu:
         - title: Configuring A Device
           url: /emdk-for-xamarin/1-0/guide/deviceupdate
         - title: Build Hello EMDK
-          url: /emdk-for-xamarin/1-0tutorial/helloxamarin
+          url: /emdk-for-xamarin/1-0/tutorial/helloxamarin
         - title: Using Profile Manager
-          url: /emdk-for-xamarin/1-0/guide/profiles/about
+          url: /emdk-for-xamarin/1-0/guide/profilemanager/about
     - title: Tutorials
       items:
         - title: Profile Manager
@@ -27,23 +27,21 @@ menu:
           items:
             - title: Basic Scanning Tutorial
               url: /emdk-for-xamarin/1-0/tutorial/barcodeapitutorial
-              
     - title: Samples
       url: /emdk-for-xamarin/1-0/samples
       items:
         - title: Barcode Sample
           url: /emdk-for-xamarin/1-0/samples/barcode
         - title: DataCapture Profile Sample
-          url: /emdk-for-xamarin/1-0/samples/data-captures
+          url: /emdk-for-xamarin/1-0/samples/data-capture
         - title: PowerManager Sample
           url: /emdk-for-xamarin/1-0/samples/power
         - title: Wi-Fi Manager Sample
           url: /emdk-for-xamarin/1-0/samples/wifi
-           
     - title: Profile Manager
       items:
         - title: Using Profile Manager
-          url: /emdk-for-xamarin/1-0/guide/profile-manager/
+          url: /emdk-for-xamarin/1-0/guide/profilemanager/about
         - title: Profile Features
           url: /emdk-for-xamarin/1-0/mx
         - title: MX Overview
@@ -54,82 +52,28 @@ menu:
           url: /emdk-for-xamarin/1-0/mx/compatibility
         - title: Getting Device MX Version
           url: /emdk-for-xamarin/1-0/mx/version-on-device
-        - title: Application Management
-          url: /emdk-for-xamarin/1-0/mx/app-management
-          items:
-            - title: App Manager
-              url: /emdk-for-xamarin/1-0/mx/app-management/appmgr/5-0
-            - title: Browser Manager
-              url: /emdk-for-xamarin/1-0/mx/app-management/browsermgr/5-0
-        - title: Device Configuration
-          url: /emdk-for-xamarin/1-0/mx/device-configuration
-          items:
-            - title: Analytics Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/analytics/5-0
-            - title: Audio Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/audiomgr/5-0
-            - title: Battery Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/batterymgr/5-0
-            - title: Clock
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/clock/5-0
-            - title: Component Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/componentmgr/5-0
-            - title: Display Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/displaymgr/5-0
-            - title: Power Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/powermgr/5-0
-            - title: Touch Manager
-              url: /emdk-for-xamarin/1-0/mx/device-configuration/touchmgr/5-0
-        - title: Security
-          url: /emdk-for-xamarin/1-0/mx/security
-          items:
-            - title: Access Manager
-              url: /emdk-for-xamarin/1-0/mx/security/accessmgr/5-0
-            - title: Camera Manager
-              url: /emdk-for-xamarin/1-0/mx/security/cameramgr/5-0
-            - title: Cert Manager
-              url: /emdk-for-xamarin/1-0/mx/security/certmgr/5-0
-            - title: DevAdmin 
-              url: /emdk-for-xamarin/1-0/mx/security/devadmin/5-0
-            - title: Encrypt Manager
-              url: /emdk-for-xamarin/1-0/mx/security/encryptmgr/5-0
-            - title: SD Card Manager
-              url: /emdk-for-xamarin/1-0/mx/security/sdcardmgr/5-0
-            - title: Threat Manager
-              url: /emdk-for-xamarin/1-0/mx/security/threatmgr/5-0
-            - title: USB Manager
-              url: /emdk-for-xamarin/1-0/mx/security/usbmgr/5-0
-        - title: UI Configuration
-          url: /emdk-for-xamarin/1-0/mx/ui-settings
-          items:
-            - title: KeyMap Manager
-              url: /emdk-for-xamarin/1-0/mx/ui-settings/keymappingmgr/5-0   
-            - title: PowerKey Manager
-              url: /emdk-for-xamarin/1-0/mx/ui-settings/powerkeymgr/5-0   
-            - title: Settings Manager
-              url: /emdk-for-xamarin/1-0/mx/ui-settings/settingsmgr/5-0   
-            - title: UI Manager
-              url: /emdk-for-xamarin/1-0/mx/ui-settings/uimgr/5-0   
-        - title: Wireless
-          url: /emdk-for-xamarin/1-0/mx/wireless
-          items:
-            - title: Cellular Manager
-              url: /emdk-for-xamarin/1-0/mx/wireless/cellularmgr/5-0   
-            - title: DHCP Options Manager
-              url: /emdk-for-xamarin/1-0/mx/wireless/dhcpmgr/5-0   
-            - title: GPRS Manager
-              url: /emdk-for-xamarin/1-0/mx/wireless/gprsmgr/5-0   
-            - title: WiFi Manager
-              url: /emdk-for-xamarin/1-0/mx/wireless/wifi/5-0   
-            - title: Wireless Manager
-              url: /emdk-for-xamarin/1-0/mx/wireless/wirelessmgr/5-0   
-        - title: MX Framework
-          url: /emdk-for-xamarin/1-0/mx/mx
-          items:
-            - title: Persistance Manager
-              url: /emdk-for-xamarin/1-0/mx/mx/persistance/5-0   
-            - title: XML Manager
-              url: /emdk-for-xamarin/1-0/mx/mx/xml/5-0   
+        - title: Access Manager
+          url: /emdk-for-xamarin/1-0/mx/accessmgr
+        - title: Analytics Manager
+          url: /emdk-for-xamarin/1-0/mx/analytics
+        - title: App Manager
+          url: /emdk-for-xamarin/1-0/mx/appmgr
+        - title: Audio Manager
+          url: /emdk-for-xamarin/1-0/mx/audiomgr
+        - title: Battery Manager
+          url: /emdk-for-xamarin/1-0/mx/batterymgr
+        - title: Browser Manager
+          url: /emdk-for-xamarin/1-0/mx/browsermgr
+        - title: Camera Manager
+          url: /emdk-for-xamarin/1-0/mx/cameramgr
+        - title: Cellular Manager
+          url: /emdk-for-xamarin/1-0/mx/cellularmgr
+        - title: Cert Manager
+          url: /emdk-for-xamarin/1-0/mx/certmgr
+        - title: Clock
+          url: /emdk-for-xamarin/1-0/mx/clock
+        - title: Component Manager
+          url: /emdk-for-xamarin/1-0/mx/componentmgr
         - title: Data Capture
           url: /emdk-for-xamarin/1-0/mx/data-capture
           items:
@@ -145,6 +89,42 @@ menu:
               url: /emdk-for-xamarin/1-0/mx/data-capture/keystroke
             - title: MSR Input
               url: /emdk-for-xamarin/1-0/mx/data-capture/msr   
+        - title: DevAdmin 
+          url: /emdk-for-xamarin/1-0/mx/devadmin
+        - title: DHCP Options Manager
+          url: /emdk-for-xamarin/1-0/mx/dhcp
+        - title: Display Manager
+          url: /emdk-for-xamarin/1-0/mx/displaymgr
+        - title: Encrypt Manager
+          url: /emdk-for-xamarin/1-0/mx/encryptmgr
+        - title: GPRS Manager
+          url: /emdk-for-xamarin/1-0/mx/gprsmgr
+        - title: KeyMap Manager
+          url: /emdk-for-xamarin/1-0/mx/keymappingmgr
+        - title: Persistance Manager
+          url: /emdk-for-xamarin/1-0/mx/persistance
+        - title: Power Manager
+          url: /emdk-for-xamarin/1-0/mx/powermgr
+        - title: PowerKey Manager
+          url: /emdk-for-xamarin/1-0/mx/powerkeymgr
+        - title: Settings Manager
+          url: /emdk-for-xamarin/1-0/mx/settingsmgr
+        - title: SD Card Manager
+          url: /emdk-for-xamarin/1-0/mx/sdcardmgr
+        - title: Touch Manager
+          url: /emdk-for-xamarin/1-0/mx/touchmgr
+        - title: Threat Manager
+          url: /emdk-for-xamarin/1-0/mx/threatmgr
+        - title: USB Manager
+          url: /emdk-for-xamarin/1-0/mx/usbmgr
+        - title: UI Manager
+          url: /emdk-for-xamarin/1-0/mx/uimgr
+        - title: WiFi Manager
+          url: /emdk-for-xamarin/1-0/mx/wifi
+        - title: Wireless Manager
+          url: /emdk-for-xamarin/1-0/mx/wirelessmgr
+        - title: XML Manager
+          url: /emdk-for-xamarin/1-0/mx/xml
     - title: APIs
       url: /emdk-for-xamarin/1-0/api
       items:

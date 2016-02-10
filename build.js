@@ -155,6 +155,9 @@ var metaUrl = function(config) {
     };
 };
 
+
+
+
 Handlebars.registerHelper("debug", function(optionalValue) {
   console.log("Current Context");
   console.log("====================");
@@ -219,7 +222,7 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/api',
-        layoutName: 'api.html'
+        layoutName: 'guide.html'
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/guide',
@@ -293,7 +296,7 @@ var sitebuild = Metalsmith(__dirname)
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-0/api/personalshopper',
+        folder: 'emdk-for-android/4-0/api/PersonalShopper',
         automenu: true,
         ascontent: true
     }))

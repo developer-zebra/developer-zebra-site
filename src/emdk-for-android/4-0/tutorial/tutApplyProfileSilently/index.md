@@ -1,5 +1,6 @@
 ---
-title:  Apply Mx Profile Silently in a Non-Blocking way:
+title:  Apply Mx Profile Silently in a Non-Blocking way
+
 ---
 
 ## Overview

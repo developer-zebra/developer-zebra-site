@@ -1,19 +1,35 @@
+<!-- <nav id="automenu"   >
+    {{#if this.automenu}}
+    <ul id="sidebar" class="nav nav-stacked">
+        {{#each this.automenu.items}}
+            <li class="active">
+                <a href="{{this.url}}">{{this.title}}</a>
+                {{#if this.items}}
+                <ul class="nav nav-stacked">
+                    {{#each this.items}}
+                    <li><a href="{{this.url}}">{{this.title}}</a></li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+        {{/each}}
+        </ul>
+    {{/if}}
+
+</nav> -->
+{{#if this.automenu}}
 <aside class="tree-sidebar">            
 
             <div class="row">
                 <div class="col-sm-12">
 
                     <div class="sidebar-container" >
-                        <!-- <ul  class="" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> -->
+                        
+                        
+
                         <ul  class="">
-                            {{#if this.menu.title}}
-                            <li>
-                                  {{#if this.menu.img}}<img src="{{this.menu.img}}" alt="logo" style="max-height:42px" class="img-responsive"> 
-                                  {{/if}}
-                                  <strong>{{this.menu.title}}</strong>
-                            </li>
-                            {{/if}}
-                        {{#each this.menu.items}}
+                            
+                        {{#each this.automenu.items}}
                             <li class="">
                                 {{#if this.items}}
                                 <span class="arrow"></span>
@@ -55,48 +71,80 @@
                             </li>
                         {{/each}}
                         </ul>
+                        
                     </div>
                 </div>
             </div>
 </aside>
 
+{{else}}
+<nav id="toc"  data-spy="affix" data-toggle="toc">
+    <ul class="nav">
+        <li><strong>{{this.title}}</strong></li>
+    </ul>
+</nav>
+<!-- <div class="row">
+    <nav class="col-xs-3 bs-docs-sidebar">
+        <ul id="sidebar" class="nav nav-stacked fixed">
+            {{#each this.menu.items}}
+            <li>
+                <a href="{{this.url}}">{{this.title}}</a>
+                {{#if this.items}}
+                <ul class="nav nav-stacked">
+                    {{#each this.items}}
+                    <li><a href="{{this.url}}">{{this.title}}</a></li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+    </nav>
+</div> -->
+
+{{/if}}
+<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.js"></script>
 <script type="text/javascript">
-    $(window).load(function() {
-        var pathname = window.location.pathname.slice(0, -1);
-        // console.log(pathname);
-        var menuitem = $('.sidebar-container').find('a[href^="' + pathname + '"]').first()[0];
-        var menulevel = $(menuitem).parents('ul').length;
-        // console.log(menuitem);
-        // console.log(menulevel);
-        var parentLI = $(menuitem).parent().parent().parent();
-        var itemarrow = parentLI.find('.arrow').first()[0];
+    // $(window).load(function() {
+    //     var pathname = window.location.pathname.slice(0, -1);
+    //     // console.log(pathname);
+    //     var menuitem = $('.sidebar-container').find('a[href^="' + pathname + '"]').first()[0];
+    //     var menulevel = $(menuitem).parents('ul').length;
+    //     // console.log(menuitem);
+    //     // console.log(menulevel);
+    //     var parentLI = $(menuitem).parent().parent().parent();
+    //     var itemarrow = parentLI.find('.arrow').first()[0];
 
-        //now check for higher level
-        if(menulevel==3){
+    //     //now check for higher level
+    //     if(menulevel==3){
 
-            var parentFirstLevel = $(parentLI).parent().parent().first()[0];
-            var parentarrow = $(parentFirstLevel).find('.arrow').first()[0];
-            parentarrow.click();
-        }
+    //         var parentFirstLevel = $(parentLI).parent().parent().first()[0];
+    //         var parentarrow = $(parentFirstLevel).find('.arrow').first()[0];
+    //         parentarrow.click();
+    //     }
 
-        if(menulevel>1){
-            itemarrow.click();
+    //     if(menulevel>1){
+    //         itemarrow.click();
 
-        }
-        $(menuitem).addClass('sidebar-selected');
-        $(menuitem).parent().append('<ul style="display:block" id="indoc"></ul>')
-        $('h2').each(function(index, value){
-              if($(this).attr('id')){
-                var anchor = "#" + $(this).attr('id');
-                var text = $(this).text();
-                var li = "<li><a href='" + anchor + "'>" + text + "</a>" ;
-                $('#indoc').append(li);               
-              }
+    //     }
+    //     $(menuitem).addClass('sidebar-selected');
+    //     $(menuitem).parent().append('<ul style="display:block" id="indoc"></ul>')
+    //     $('h2').each(function(index, value){
+    //           if($(this).attr('id')){
+    //             var anchor = "#" + $(this).attr('id');
+    //             var text = $(this).text();
+    //             var li = "<li><a href='" + anchor + "'>" + text + "</a>" ;
+    //             $('#indoc').append(li);               
+    //           }
 
               
-        });
-    });
-
+    //     });
+    // });
+  var $myNav = $('#toc');
+  $('body').scrollspy({
+    target: $myNav
+  });
     function affix() {
         
         // Fit affix width to its parent's width
@@ -120,9 +168,9 @@
         }
     };
 
-    $(window).on('scroll resize', function() {
-        affix();
+    // $(window).on('scroll resize', function() {
+    //     affix();
  
-    });
+    // });
 
 </script>

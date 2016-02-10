@@ -7,7 +7,8 @@
     <meta name="author" content="Zebra Technologies">
     <meta name="google-site-verification" content="i4B78BrWnNy8ShJwe5feRW3jO3HE6gfYlYqYbxfl8yY" />
     <meta name="msvalidate.01" content="6B651B00161BCE79B8950AC09D5C4C75" />
-    <title>(Staging)- {{title}} - Zebra Technologies Online Documentation</title>
+    <meta title="{{title}}"/>
+    <title>{{title}} - Zebra Technologies Online Documentation</title>
     <!-- core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +28,7 @@
 </head><!--/head-->
 <script src="/js/jquery.js"></script>
 
-<body id="home" class="homepage">
+<body id="home" class="homepage" data-spy="scroll" data-target="#toc">
 
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
@@ -39,17 +40,30 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><span class="navbar-text"><img src="/images/logo.png" alt="logo" style="max-height:42px;float: inherit;
-    padding-right: 3px;"/> <strong>Online Documentation</strong></span></a>
+                    <span class="navbar-text"><a class="navbar-brand" href="/"><img src="/images/logo.png" alt="logo" style="max-height:42px;float: inherit;
+    padding-right: 3px;"/></a> <strong>Online Documentation</strong>
+                    <p>
+                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        {{ productversion }}
+                                    {{/if}}
+                    </p>
+    </span>
+                   
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li ><a href="/products">SDKs</a></li>
+                        {{#each this.menu.items}}
+                        <li ><a href="{{this.url}}">{{this.title}}</a></li>
+                        {{/each}}
+                        <!-- <li ><a href="/products">SDKs</a></li>
                         <li ><a href="/samples">Samples</a></li>
                         <li ><a href="/guides">Guides</a></li>
                         <li ><a href="/tutorials">Tutorials</a></li>
-                        <li ><a href="/apis">APIs</a></li>
+                        <li ><a href="/apis">APIs</a></li> -->
                         <!-- <li><a href="#"><input type="text" class="st-default-search-input"></a></li> -->
                     </ul>
                 </div>

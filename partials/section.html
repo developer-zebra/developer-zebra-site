@@ -1,5 +1,17 @@
 <div class="">
-    <h2 class="">{{this.title}}</h2>
+	{{#if this.level}}
+	    <h{{this.level}} class="">
+			{{#if this.url}}<a href="{{this.url}}">{{/if}}
+                {{this.title}}
+            {{#if this.url}}</a>{{/if}}
+   	    </h{{this.level}}>
+    {{else}}
+	    <h2 class="">
+			{{#if this.url}}<a href="{{this.url}}">{{/if}}
+                {{this.title}}
+            {{#if this.url}}</a>{{/if}}
+   	    </h2>
+    {{/if}}
     <p class="">{{this.text}}</p>
     {{#each items}}
         {{> content-selector}}

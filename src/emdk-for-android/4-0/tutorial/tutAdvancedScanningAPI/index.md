@@ -1,5 +1,6 @@
 ---
 title:  Advanced Scanning Tutorial using Barcode API
+
 ---
 
 ## Overview

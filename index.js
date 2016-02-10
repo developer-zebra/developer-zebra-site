@@ -29,13 +29,28 @@ for (var i = 0; i < folders.length; i++) {
             filename = files[i];
             console.log("reading:" + filename);
             var html = fs.readFileSync(filename);
-            var md = fs.readFileSync(filename.replace("build/","src/").replace(".html",".md"));
-            console.log(md)
-            var yaml = yamlFront.loadFront(md);
-            //get just text
             data = unfluff(html, 'en');
+            var mdfile= filename.replace("build/","src/").replace(".html",".md");
+            var md = fs.readFileSync(mdfile).toString();
+            var md_contents = md.replace(/\A---(.|\n)*?---/,'');
+            console.log(md_contents);
+            if(md_contents==""){
+                console.log("--------------> EMPTY MD USING HTML")
+                md_contents = data.text;
+            }
+            var yaml;
+            try {
+                yaml = yamlFront.loadFront(md);
+            }
+            catch(err) {
+                console.log("****** CHECK YAML: " + mdfile) + err.message;
+                yaml = {
+                    title: data.title
+                }
+            } 
+            //get just text
             console.log("Generating Keywords: " + yaml.title );
-            var keywords = keyword_extractor.extract(data.text,
+            var keywords = keyword_extractor.extract(md_contents,
                 {
                     language:"english",
                     remove_digits: true,
@@ -56,7 +71,15 @@ for (var i = 0; i < folders.length; i++) {
                 url: filename.replace("build/","").replace("/index.html","")
 
             }
-            json.push(index_item);          
+            if(index_item.keywords==""){
+                console.log('\u0007')
+                console.log("*** EMPTY FILE");
+                console.log(data.text);
+            }
+            else{
+                json.push(index_item);          
+
+            }
         };
         var json_file = folder+'/index.json';
         console.log("Writing to: " + json_file);

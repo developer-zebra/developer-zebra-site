@@ -1,54 +1,40 @@
 
 {{> header}}
+
+
     <section id="blog">
-        <div class="">
-            <section class="content-with-sidebar">
+        <div class="container">
+
+            {{#if this.title}}
             <div class="row">
-                <div class="col-sm-3 fixed-column-left"  >
-                    {{> menu}}
-
-                </div>                
-                <div class="col-sm-9 fixed-column-right">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <section id="cta" class="wow fadeIn">
-                                <div class="">
-                                    <h1>{{ title }}</h1>
-                                    <p>
-                                    {{#if product}}
-                                    {{ product }}
-                                    {{/if}}
-                                    {{#if productversion}}
-                                     - {{ productversion }}
-                                    {{/if}}
-                                    {{#if mxversion}}
-                                         - MX: {{mxversion}}
-                                    {{/if}}
-                                    </p>
-                                </div>
-                            </section>                    
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            <section id="services" >
-                                <div class="">
-                                <!-- Start of content list -->
-                                {{#each content-items}}
-                                    {{> content-selector}}
-                                    
-                                {{/each}}  
-                                </div><!--/.container-->
-                                <div>{{> footer-markup}}</div>
-                            </section><!--/#services-->
-                        </div>
-                    </div>
-                </div><!--/.col-sm-6-->
+                <div class="col-sm-12" id="guides">
+                    {{#if this.img}}
+                        <!-- <img src="{{this.menu.img}}" alt="logo" style="max-height:42px" class="img-responsive">  -->
+                    {{/if}}
+                    <H1>{{this.title}}</H1>
+                    <p>{{this.description}}
+                </div>
             </div>
-            </section>
+            {{/if}}
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <section id="services" >
+                        <div class="">
+                        <!-- Start of content list -->
+                        {{#each content-items}}
+                            {{> content-selector}}
+                            
+                        {{/each}}  
+                        </div><!--/.container-->
+                        <div>{{> footer-markup}}</div>
+                    </section><!--/#services-->
+                </div>
+            </div>
+
         </div>
-    </section>    
+    </section>
+
 {{> footer hide=true}}
 
 

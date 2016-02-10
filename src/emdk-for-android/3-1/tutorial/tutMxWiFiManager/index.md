@@ -4,20 +4,20 @@ title:  Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi:
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](/emdk-for-android/4-0/guide/profiles/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](../../guide/profiles/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
 
-* **[Wi-Fi Enable/Disable](https://developer.motorolasolutions.com/docs/DOC-2290#wifi-enable)**
-* **[Country Selection Auto/Manual](https://developer.motorolasolutions.com/docs/DOC-2290#country-selection-automanual)**
-* **[Country to use for Wi-Fi regulatory setting](https://developer.motorolasolutions.com/docs/DOC-2290#country)**
-* **[RF Bands to use](https://developer.motorolasolutions.com/docs/DOC-2290#rf-band)**
-* **[Wi-Fi Channels](https://developer.motorolasolutions.com/docs/DOC-2290#wifi-channel)**
-* **[Wi-Fi Sleep Policy](https://developer.motorolasolutions.com/docs/DOC-2290#sleep-policy)**
-* **[Network Notification](https://developer.motorolasolutions.com/docs/DOC-2290#network-notification)**
-* **[Network Action](https://developer.motorolasolutions.com/docs/DOC-2290#network-action)**
-* **[Wi-Fi Profiles](https://developer.motorolasolutions.com/docs/DOC-2290#wifi-profiles)**
-* **[Encryption Details](https://developer.motorolasolutions.com/docs/DOC-2290#encryption-details)**
-* **[Authentication Details](https://developer.motorolasolutions.com/docs/DOC-2290#authentication-details)**
-* **[Advanced Options](https://developer.motorolasolutions.com/docs/DOC-2290#advanced-options)**
+* **[Wi-Fi Enable/Disable](../../guide/profiles/wifi#wifienable)**
+* **[Country Selection Auto/Manual](../../guide/profiles/wifi#countryselectionautomanual)**
+* **[Country to use for Wi-Fi regulatory setting](../../guide/profiles/wifi#country)**
+* **[RF Bands to use](../../guide/profiles/wifi#rfband)**
+* **[Wi-Fi Channels](../../guide/profiles/wifi#wifichannel)**
+* **[Wi-Fi Sleep Policy](../../guide/profiles/wifi#sleeppolicy)**
+* **[Network Notification](../../guide/profiles/wifi#networknotification)**
+* **[Network Action](../../guide/profiles/wifi#networkaction)**
+* **[Wi-Fi Profiles](../../guide/profiles/wifi#wifiprofiles)**
+* **[Encryption Details](../../guide/profiles/wifi#encryptiondetails)**
+* **[Authentication Details](../../guide/profiles/wifi#authenticationdetails)**
+* **[Advanced Options](../../guide/profiles/wifi#advancedoptions)**
 
 
 > Note: In order to apply these settings, Wi-Fi must be enabled. If you do not specify Wi-Fi Enable in the profile you will get an error when attempting to apply other settings if the device's Wi-Fi is not already enabled.
@@ -256,7 +256,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

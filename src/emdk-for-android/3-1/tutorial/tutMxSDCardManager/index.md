@@ -4,9 +4,9 @@ title:  Configure the use of SD Card using SD Card Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. This tutorial will focus on configuring SD Card by allowing you to Enable/Disable the use of it using [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. This tutorial will focus on configuring SD Card by allowing you to Enable/Disable the use of it using [SD Card Manager](../../guide/profiles/sdcard) feature of Mx. 
 
-So now we will create a tutorial to disable the use of external SD Card and then enable it back using Mx [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) feature through Profile Wizard on your Symbol device. 
+So now we will create a tutorial to disable the use of external SD Card and then enable it back using Mx [SD Card Manager](../../guide/profiles/sdcard) feature through Profile Wizard on your Symbol device. 
         
 ###Prerequisites
 
@@ -214,7 +214,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
@@ -392,7 +392,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
     ![img](../../images/MxSDCardManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us disable external SD Card using [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) feature of Mx. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us disable external SD Card using [SD Card Manager](../../guide/profiles/sdcard) feature of Mx. Now let's run the application.
  
 ## Running the Application
 
@@ -433,7 +433,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	![img](../../images/MxSDCardManagerTutorialImages/sd_card_enabled.png)
 
-    This is how you can Enable/Disable the use of SD Card using [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) on Symbol devices using Profile Wizard. 
+    This is how you can Enable/Disable the use of SD Card using [SD Card Manager](../../guide/profiles/sdcard) on Symbol devices using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -456,7 +456,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure the use of SD Card (Enable/Disable) using [SD Card Manager](/emdk-for-android/4-0/guide/profiles/sdcard) on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Encrypt Manager" feature of Mx and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure the use of SD Card (Enable/Disable) using [SD Card Manager](../../guide/profiles/sdcard) on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Encrypt Manager" feature of Mx and try to explore this feature by creating a tutorial.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/SDCardManagerTutorial.zip).

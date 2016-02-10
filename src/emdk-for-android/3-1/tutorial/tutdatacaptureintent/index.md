@@ -447,5 +447,4 @@ In this article, we covered:
 * Defining intent filters
 * Configuring DataWedge to send intents to our application
 
-## Sample Code
-Download the source for this project in the [associated sample](../../guide/sample/sampledatacaptureintent).
+

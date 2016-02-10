@@ -165,9 +165,9 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 		import com.symbol.emdk.simulscan.SimulScanStatusData;  
 
     Then you must make the activity to implement following interfaces: 
-	* Implement [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener) for using EMDKManager. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`. 
-	* Implement [SimulScanReader.DataListerner](/emdk-for-android/4-0/api/SimulScanReader-DataListerner), which is an interface for notifying client applications when the scan data is available. Override its `onData` method to receive the scanned data.
-	* Implement [SimulScanReader.StatusListerner](/emdk-for-android/4-0/api/SimulScanReader-StatusListerner), which is an interface for notifying client applications to notify scan events. Override its `onStatus` method to receive status of any SimulScan operation that would be performed in the application.
+	* Implement [EMDKListener](../../api/core/EMDKManager-EMDKListener) for using EMDKManager. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`. 
+	* Implement [SimulScanReader.DataListerner](../../api/SimulScanReader-DataListerner), which is an interface for notifying client applications when the scan data is available. Override its `onData` method to receive the scanned data.
+	* Implement [SimulScanReader.StatusListerner](../../api/SimulScanReader-StatusListerner), which is an interface for notifying client applications to notify scan events. Override its `onStatus` method to receive status of any SimulScan operation that would be performed in the application.
 	* Implement [View.OnClickListener](http://developer.android.com/reference/android/view/View.OnClickListener.html) and override its `onClick` method to handle on click of buttons.
 	* Implement [AdapterView.OnItemSelectedListener](http://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html) and override its `onItemSelected` and `onNothingSelected` methods for handling spinner.
 
@@ -214,7 +214,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
           
         }      
     
-	We will now create some global variables to hold the instance objects of [EMDKManager](/emdk-for-android/4-0/api/EMDKManager), [SimulScanManager](/emdk-for-android/4-0/api/SimulScanManager) and [SimulScanReader](/emdk-for-android/4-0/api/SimulScanReader). These variables would be used throughout the code.
+	We will now create some global variables to hold the instance objects of [EMDKManager](../../api/core/EMDKManager), [SimulScanManager](../../api/SimulScanManager) and [SimulScanReader](../../api/SimulScanReader). These variables would be used throughout the code.
 
     We will then add some UI elements starting with a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of SimulScan operation. The UI would have a [Spinner](http://developer.android.com/guide/topics/ui/controls/spinner.html) that would contain a list of SimulScan supported devices. The UI would also have two [Buttons](http://developer.android.com/guide/topics/ui/controls/button.html) to start and stop reading template.
 
@@ -341,7 +341,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
     ![img](../../images/SimulScanTutorialImages/on_create_added.jpg)
 	
 
-4. Get [EMDK Manager](/emdk-for-android/4-0/api/EMDKManager) and [SimulScanManager](/emdk-for-android/4-0/api/SimulScanManager) objects in the `onOpened` method and update the `StatusView` TextView.
+4. Get [EMDK Manager](../../api/core/EMDKManager) and [SimulScanManager](../../api/SimulScanManager) objects in the `onOpened` method and update the `StatusView` TextView.
 
 	Now get the list of SimulScan supported devices, iterate over it and set this list to the spinner that we have added in the UI followed by adding listener for this spinner.
 
@@ -393,9 +393,9 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 	![img](../../images/SimulScanTutorialImages/add_items_on_spinner_method.jpg)
 
-6. The user would select any SimulScan supported device from the list in spinner. So we need get that [SimulScanReader](/emdk-for-android/4-0/api/SimulScanReader) and initiate it. Since the user would select it from the spinner, we need to add our code in `onItemSelected` method of the spinner that we have already overridden.
+6. The user would select any SimulScan supported device from the list in spinner. So we need get that [SimulScanReader](../../api/SimulScanReader) and initiate it. Since the user would select it from the spinner, we need to add our code in `onItemSelected` method of the spinner that we have already overridden.
 
-	So this code would get user selected [SimulScanReaderInfo](/emdk-for-android/4-0/api/SimulScanReaderInfo) from the spinner and pass it to `simulScanManager.get` to get the user selected [SimulScanReader](/emdk-for-android/4-0/api/SimulScanReader) object. This [SimulScanReader](/emdk-for-android/4-0/api/SimulScanReader) object represents the current SimulScan Reader device selected by user from the spinner of simulscan supported devices. We would then initialize or deinitialize this [SimulScanReader](/emdk-for-android/4-0/api/SimulScanReader) using respective methods. 
+	So this code would get user selected [SimulScanReaderInfo](../../api/SimulScanReaderInfo) from the spinner and pass it to `simulScanManager.get` to get the user selected [SimulScanReader](../../api/SimulScanReader) object. This [SimulScanReader](../../api/SimulScanReader) object represents the current SimulScan Reader device selected by user from the spinner of simulscan supported devices. We would then initialize or deinitialize this [SimulScanReader](../../api/SimulScanReader) using respective methods. 
 
 		:::java
 		// Initialize the selected Simul Scan device
@@ -573,7 +573,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 	
 	![img](../../images/SimulScanTutorialImages/set_current_config_method_2.jpg)
 
-10. In this step, we would add methods that would actually start (`readCurrentScanner`) and stop (`stopReadCurrentScanner`) reading templates with the help of [SimulScanReader](/emdk-for-android/4-0/api/SimulScanReader) instance for the current scanner that we created.
+10. In this step, we would add methods that would actually start (`readCurrentScanner`) and stop (`stopReadCurrentScanner`) reading templates with the help of [SimulScanReader](../../api/SimulScanReader) instance for the current scanner that we created.
  
 	So lets add `readCurrentScanner` method first.
 
@@ -648,7 +648,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 12. Once we start scanning a template, we would get the template data in `onData` and status while executing scanning operations in `onStatus` methods respectively that have been overridden already but not handled yet.
 
-	So lets handle them starting with `onData` method, which is a callback method upon data availability. `onData` method contains [SimulScanData](/emdk-for-android/4-0/api/SimulScanData) object that has the scanned data of a template. We would add this object to simulScanDataList that we had created to use it while displaying data.
+	So lets handle them starting with `onData` method, which is a callback method upon data availability. `onData` method contains [SimulScanData](../../api/SimulScanData) object that has the scanned data of a template. We would add this object to simulScanDataList that we had created to use it while displaying data.
 
 		:::java
 		// clear the SimulScanDataList before adding new scanned data
@@ -679,7 +679,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 14. You can see an error as we have not created a class `StatusDataRunnable` implementing runnable to update "StatusView" on UI thread.
 
-	Lets do that by creating a class implementing runnable and taking [SimulScanStatusData](/emdk-for-android/4-0/api/SimulScanStatusData) as an argument in constructor. `simulScanStatusData.getState()` would return you the current status of scanner, which would be updated on "StatusView" TextView.
+	Lets do that by creating a class implementing runnable and taking [SimulScanStatusData](../../api/SimulScanStatusData) as an argument in constructor. `simulScanStatusData.getState()` would return you the current status of scanner, which would be updated on "StatusView" TextView.
 
 	Following is the code for `StatusDataRunnable` class:
 

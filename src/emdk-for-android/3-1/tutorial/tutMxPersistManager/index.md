@@ -4,7 +4,7 @@ title:  Persist MX configurations using Persist Manager API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](/emdk-for-android/4-0/guide/profiles/persistence) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](../../guide/profiles/persistence) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
 
 **1. Adding XML to be Persisted:**
 
@@ -290,7 +290,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

@@ -4,9 +4,9 @@ title:  Configure Device Browser using Browser Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](/emdk-for-android/4-0/guide/profiles/browser) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](/emdk-for-android/4-0/guide/profiles/browser) through Profile Wizard.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](../../guide/profiles/browser) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](../../guide/profiles/browser) through Profile Wizard.
 
-So now we will create a tutorial using Mx [Browser Manager](/emdk-for-android/4-0/guide/profiles/browser) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
+So now we will create a tutorial using Mx [Browser Manager](../../guide/profiles/browser) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
 
 ###Prerequisites
 
@@ -224,7 +224,7 @@ When done, your AndroidManifest.xml should resemble the following:
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

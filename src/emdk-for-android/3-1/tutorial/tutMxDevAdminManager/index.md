@@ -4,11 +4,11 @@ title:  Allow installation of apps from unknown sources using DevAdmin Manager.
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on  whether to allow or not the installation of apps from unknown sources on your Symbol Android device using [DevAdmin Manager](/emdk-for-android/4-0/guide/profiles/devadmin) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on  whether to allow or not the installation of apps from unknown sources on your Symbol Android device using [DevAdmin Manager](../../guide/profiles/devadmin) feature of Mx.
 
 > Note: Your phone and personal data are more vulnerable to attack by apps from unknown sources. You agree that you are solely responsible for any damage to your phone or loss of data that may result from using these apps. 
 
-So we will now create a tutorial to allow the installation of apps from unknown sources on Symbol devices using Mx [DevAdmin Manager](/emdk-for-android/4-0/guide/profiles/devadmin) feature.
+So we will now create a tutorial to allow the installation of apps from unknown sources on Symbol devices using Mx [DevAdmin Manager](../../guide/profiles/devadmin) feature.
         
 ###Prerequisites
 
@@ -214,7 +214,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

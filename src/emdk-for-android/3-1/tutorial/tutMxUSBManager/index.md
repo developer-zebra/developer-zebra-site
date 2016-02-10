@@ -4,9 +4,9 @@ title:  Manage USB Configurations
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](/emdk-for-android/4-0/guide/profiles/usb) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](../../guide/profiles/usb) feature of Mx.
  
-So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](/emdk-for-android/4-0/guide/profiles/usb) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
+So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](../../guide/profiles/usb) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
         
 ###Prerequisites
 
@@ -287,7 +287,7 @@ here is the remaining part:
 
 6. Let us declare the `updateUSBSettings` method that will enable or disable ADB USB based on `value` attribute that gets updated depending on user selected option from Radio Button. This method prepares the xml input for the `processProfile` method based on `value` attribute.
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

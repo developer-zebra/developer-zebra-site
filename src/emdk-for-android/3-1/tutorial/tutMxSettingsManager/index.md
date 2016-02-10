@@ -4,9 +4,9 @@ title:  Invoke Enterprise Reset in Settings UI
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on the ability to configure Enterprise Reset option in Settings UI on your Symbol device using [Settings Manager](/emdk-for-android/4-0/guide/profiles/settings) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on the ability to configure Enterprise Reset option in Settings UI on your Symbol device using [Settings Manager](../../guide/profiles/settings) feature of Mx. 
 
-So now we will create a tutorial and disable the ability to invoke Enterprise Reset in Settings UI of your Symbol Android device using Mx [Settings Manager](/emdk-for-android/4-0/guide/profiles/settings) feature. A typical use case for this could be to prevent user by accidentally pressing "Enterprise Reset" option.  
+So now we will create a tutorial and disable the ability to invoke Enterprise Reset in Settings UI of your Symbol Android device using Mx [Settings Manager](../../guide/profiles/settings) feature. A typical use case for this could be to prevent user by accidentally pressing "Enterprise Reset" option.  
         
 ###Prerequisites
 
@@ -208,7 +208,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

@@ -4,9 +4,9 @@ title:  Configure Screen Off Timeout Interval using Display Manager.
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](/emdk-for-android/4-0/guide/profiles/display) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../guide/profiles/display) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
 
-So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx [Display Manager](/emdk-for-android/4-0/guide/profiles/display) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
+So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx [Display Manager](../../guide/profiles/display) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
         
 ###Prerequisites
 
@@ -210,7 +210,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

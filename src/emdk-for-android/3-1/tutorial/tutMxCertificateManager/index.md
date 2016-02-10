@@ -4,9 +4,9 @@ title:  Install CA Certificate using Certificate Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](/emdk-for-android/4-0/guide/profiles/cert).
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](../../guide/profiles/cert).
 
-You can use these installed digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. Let us create a tutorial using [Certificate Manager](/emdk-for-android/4-0/guide/profiles/cert) and install a sample CA certificate that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network.
+You can use these installed digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. Let us create a tutorial using [Certificate Manager](../../guide/profiles/cert) and install a sample CA certificate that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network.
 
 >Note:  
 >We can install different types of certificates (Ex. .PEM, .PFX, .P12 etc. ) but for this tutorial, we will install a sample CA certificate (.PEM file). 
@@ -249,7 +249,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

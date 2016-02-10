@@ -179,7 +179,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
      
     ![img](../../images/BluetoothScannerTutorialImages/on_create_added.jpg)
 
-4. Get the [EMDK Manager](../../api/core/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
+4. Get the [EMDK Manager](../../api/core/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](../../barcode/BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
 
 		:::java
 		// Update status view with EMDK Open Success message
@@ -450,9 +450,6 @@ That's it!!! We are done with all the coding part that will let us perform pairi
   
 2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
 
-
-## What's Next
-Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](../../api/barcode), in the next tutorial we would concentrate on [ScanAndPair APIs]((../../api/scanandpair)) and develop an application to demonstrate its use. 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)]().

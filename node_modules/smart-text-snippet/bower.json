@@ -1,0 +1,28 @@
+{
+  "name": "smart-text-snippet",
+  "description": "Create shortened or chunked text snippets from longer text while leaving sentences intact",
+  "main": "dist/smart-text-snippet-browser.js",
+  "authors": [
+    "Aaron Decker <aaron@ard.ninja>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "text",
+    "snippet",
+    "text-snippet",
+    "text-abbreviate",
+    "shorten-text",
+    "review-shortener"
+  ],
+  "homepage": "https://github.com/a-r-d/smart-text-snippet",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

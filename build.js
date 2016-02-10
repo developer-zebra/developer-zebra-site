@@ -283,7 +283,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/4-0/api/',
         automenu: true
     }))
-.use(foldermenu({
+    .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/barcode',
         automenu: true,
         ascontent: true

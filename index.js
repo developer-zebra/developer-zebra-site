@@ -1,42 +1,75 @@
-var Metalsmith = require('metalsmith'),
-    lunr = require('metalsmith-lunr')
-    branch = require('metalsmith-branch'),
-  	showdown   = require('metalsmith-showdown'),
-    snippet   = require('metalsmith-snippet'),
-    templates  = require('metalsmith-templates')
-    Handlebars = require('handlebars'),
-    collections = require('metalsmith-collections'),
-    permalinks  = require('metalsmith-permalinks'),
-    tags = require('metalsmith-tags'),
-    multimatch = require('multimatch'),
-    inplace = require('metalsmith-in-place'),
-    layouts = require('metalsmith-layouts'),
-	fs         = require('fs'),
-	Handlebars = require('handlebars'),
-    serve = require('metalsmith-serve'),
-    watch = require('metalsmith-watch'),
-    foldermenu = require('metalsmith-folder-menu'),
-    imagemin = require('metalsmith-imagemin'),
-    paths = require('metalsmith-paths'),
-    codehighlight = require('metalsmith-code-highlight'),
-    blc = require('metalsmith-broken-link-checker'),
-    headingsidentifier = require("metalsmith-headings-identifier"),
-	Swag = require('swag');
+var fs = require('fs'),
+    path = require('path'),
+    recursive = require('recursive-readdir'),
+    keyword_extractor = require("keyword-extractor"),
+    snippets = require('smart-text-snippet'),
+    yamlFront = require('yaml-front-matter'),
+    unfluff = require('unfluff');
 
 
+function ignoreFunc(file, stats) {
+  // `file` is the absolute path to the file, and `stats` is an `fs.Stats` 
+  // object returned from `fs.lstat()`. 
+  return stats.isFile() && path.extname(file) != ".html";
+}
 
-var sitebuild = Metalsmith(__dirname)
-    .use(lunr({
-        fields: {title:10, tags:100, contents: 1},
-        ref: 'title',
-        indexPath: 'index.json'
-      }))
-    .build(function (err) {
-    if (err) {
-      console.log(err);
-    }
-    else {
-      console.log('Site build complete!');
-    }
-  });
+var folders = ["emdk-for-android/4-0"];
 
+
+for (var i = 0; i < folders.length; i++) {
+    folder = "build/" + folders[i];
+    var json = [];
+    console.log('indexing: ' + folder);
+    recursive(folder, [ ignoreFunc], function (err, files) {
+      // Files is an array of filename 
+      // console.log(files);
+      
+
+        for (var i = 0; i < files.length; i++) {
+            filename = files[i];
+            console.log("reading:" + filename);
+            var html = fs.readFileSync(filename);
+            var md = fs.readFileSync(filename.replace("build/","src/").replace(".html",".md"));
+            console.log(md)
+            var yaml = yamlFront.loadFront(md);
+            //get just text
+            data = unfluff(html, 'en');
+            console.log("Generating Keywords: " + yaml.title );
+            var keywords = keyword_extractor.extract(data.text,
+                {
+                    language:"english",
+                    remove_digits: true,
+                    return_changed_case:true,
+                    remove_duplicates: true
+
+                });
+            console.log("Keywords: " + keywords.length.toString());
+            keyword_string = "";
+            for (var x = 0; x < keywords.length; x++) {
+                keyword_string += keywords[x] + " ";
+            };
+            var snippet = snippets.snip(data.text, {len: 150});
+            index_item = {
+                title: yaml.title,
+                keywords: keyword_string,
+                summary: snippet,
+                url: filename.replace("build/","").replace("/index.html","")
+
+            }
+            json.push(index_item);          
+        };
+        var json_file = folder+'/index.json';
+        console.log("Writing to: " + json_file);
+        fs.open(json_file, 'w', function(err, fd) {
+           if (err) {
+               return console.error(err);
+           }
+          console.log("Creating Index:" + json_file);     
+        });        
+        fs.writeFile(json_file, JSON.stringify(json), function(err) {
+            if(err) {
+                console.error("Could not write file" + json_file + ": %s", err);
+            }
+        });
+    })
+}

@@ -8,6 +8,7 @@ menu:
     - title: Home
       url: /emdk-for-android/4-0/guide/about
     - title: Getting Started
+      url: /emdk-for-android/4-0/guide/gettingstarted
       items:
         - title: Download
           url: /emdk-for-android/download
@@ -20,6 +21,7 @@ menu:
         - title: Using Profile Manager
           url: /emdk-for-android/4-0/guide/profile-manager
     - title: Tutorials
+      url: /emdk-for-android/4-0/tutorial/
       items:
         - title: Profile Manager
           items:
@@ -128,7 +130,8 @@ menu:
           url: /emdk-for-android/4-0/samples/simulscan
         - title: PersonalShopper Sample
           url: /emdk-for-android/4-0/samples/personal-shopper
-    - title: Programming Guides
+    - title: Guides
+      url: /emdk-for-android/4-0/guide/programming-guides
       items:
         - title: SimulScan API
           url: /emdk-for-android/4-0/guide/simulscan_guide
@@ -145,6 +148,7 @@ menu:
         - title: PD40 Firmware Update
           url: /emdk-for-android/4-0/guide/pd40-firmware-update
     - title: Profile Manager
+      url: /emdk-for-android/4-0/guide/profile-manager-guides
       items:
         - title: Using Profile Manager
           url: /emdk-for-android/4-0/guide/profile-manager/
@@ -250,12 +254,6 @@ menu:
           url: /emdk-for-android/4-0/api/payment
         - title: Serial Comm APIs
           url: /emdk-for-android/4-0/api/serialcomm
-    - title: Platform Intents
-      items:
-        - title: Datawedge Intents
-          url: /emdk-for-android/4-0/guide/reference/refdatacaptureintent
-        - title: Battery Intent
-          url: /emdk-for-android/4-0/guide/reference/refbatteryintent
 
 ---
 

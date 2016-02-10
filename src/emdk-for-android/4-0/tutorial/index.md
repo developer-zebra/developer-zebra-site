@@ -1,9 +1,8 @@
 ---
 title: Tutorials
-layout: list-mx.html
-menu:
-  title: EMDK For Android 4.0 Tutorials
-  img: /emdk-for-android/images/logo.png
+description: Walk through building an EMDK for Android application from the ground up with one of the following tutorials. Each tutorial includes step by step instructions and associate code.
+layout: list-apis.html
+automenu:
   items:
     - title: Profile Manager
       items:

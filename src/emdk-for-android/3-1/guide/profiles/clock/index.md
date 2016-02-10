@@ -7,7 +7,7 @@ title:  Clock Manager Profile Feature Reference
 Clock allows for a programmatic way to set the date and time. To account for time zone nuances including daylight saving time, Clock expects the values for date and time to be entered as normalized values to UTC (GMT) time. In other words, the date and time set as parameters for Clock must be the UTC (GMT) equivalent of the local time being set. 
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/4-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/4-0/guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../../../api/core/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../usingwizard) for more information.
 
 ### Main Functionality
 
@@ -20,7 +20,7 @@ The name field is used by the EMDK to identify this particular feature parameter
 * Set Sync Interval
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/4-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/4-0/guide/profiles/usingwizard) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../../../api/core/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../usingwizard) for more information.
 
 ## AutoTime
 Use an NTP server to automatically set the time, date and timezone. The NTP server will be synced at the specified interval.

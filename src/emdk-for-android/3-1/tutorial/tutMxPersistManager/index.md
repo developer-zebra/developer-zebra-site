@@ -4,7 +4,7 @@ title:  Persist MX configurations using Persist Manager API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](/emdk-for-android/4-0/guide/profiles/persistence) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](../../guide/profiles/persistence) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
 
 **1. Adding XML to be Persisted:**
 
@@ -60,17 +60,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxPersistManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The Persist Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "PersistManagerProfile" as the Profile Name for this tutorial.
 
@@ -78,7 +78,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
    
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. We will persist two XML's for two Mx features in this tutorial. The first feature is Clock. So select the "Clock" feature from the list and click "Right Arrow".
 
-    ![img](images/MxPersistManagerTutorialImages/clock_feature.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/clock_feature.jpg)
 
     Set the Clock details by providing Timezone, Date and Time values. All the timings need to be in UTC. It means if you want to set the Timezone to PST, you will need to set the clock to GMT time and it will automatically change it to the local time for you.
 
@@ -92,53 +92,53 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Here , we have set the Timezone as GMT-07:00. It means if we want to set the PST time of 1PM, we have to set the GMT time as 8PM (20:00:00 in 24 hour format) and it will automatically set the PST time of 1PM for us.
 
-    ![img](images/MxPersistManagerTutorialImages/clock_details.jpg)   
+    ![img](../../images/MxPersistManagerTutorialImages/clock_details.jpg)   
  
 4. Click Apply and your Clock profile is created.    
   
-    ![img](images/MxPersistManagerTutorialImages/clock_profile_created.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/clock_profile_created.jpg)
 
 5. So now we will persist the Clock settings by creating a Persist Manager for Clock. To proceed with this, select "Persistence Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/MxPersistManagerTutorialImages/persist_manager.jpg) 
+    ![img](../../images/MxPersistManagerTutorialImages/persist_manager.jpg) 
 
 6. Provide some name in the Name field (Ex. PersistClock). Select Persist Action as "Add current XML as a persistent profile". Select Persist as Name field and a Name Selector dialog will appear. If you want to remove any persisted XML, select Persist Action as "Remove the specified persistent profile". 
 
-    ![img](images/MxPersistManagerTutorialImages/name_selector_clock.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/name_selector_clock.jpg)
 
     Select Name Type as Generic/Absolute from the drop-down option and provide Generic/Absolute Name in the field (Ex. clock_profile). 
 
-    ![img](images/MxPersistManagerTutorialImages/name_selector_clock_details.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/name_selector_clock_details.jpg)
 
 7. Click OK. Enter 1 for "Persist As Version". Enter 1 for "Persist As Order". Check the "Persist if Error" field. This field will persist the XML even if Profile Creation returns error.
 
-    ![img](images/MxPersistManagerTutorialImages/persist_clock_completed.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/persist_clock_completed.jpg)
 
     Click Apply and the persist settings for the Clock feature will be added. 
 
-    ![img](images/MxPersistManagerTutorialImages/clock_profile_added.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/clock_profile_added.jpg)
 
 8. So far we have added the Persist configurations for Clock feature. Now its time to persist App Manager feature as discussed earlier. We will follow similar steps as we did for Clock. Select "App Manager" feature and Click "Right Arrow". It will show "App Manager" parameter list.
 
-    ![img](images/MxPersistManagerTutorialImages/app_manager_parameter_list.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/app_manager_parameter_list.jpg)
 
 9. Provide some name in the Name field (Ex. MxAppManager). Select Action as "Install" and Provide the APK path to the SD Card of the application that we had downloaded earlier (Ex. /storage/sdcard1/AllInstalledApps.apk). So this feature will install the app in the device from the provided APK file.
 
     > Note: The SD Card path may be different on different devices.
 
-    ![img](images/MxPersistManagerTutorialImages/app_manager_details.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/app_manager_details.jpg)
 
 10. We will add another Persist Manager to persist the App Manager settings. So select "Persistence Manager" from the feature list and click "Right Arrow".
 
-    ![img](images/MxPersistManagerTutorialImages/persist_app_manager.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/persist_app_manager.jpg)
 
 11. Provide some name in the Name field (Ex. PersistAppManager). Select Persist Action as "Add current XML as a persistent profile". If you want to remove any persisted XML, select Persist Action as "Remove Persistent the specified persistent profile". Select the "Persist As Name" field and provide Absolute/Generic path as we did earlier for the Clock (Ex. PersistAppManager). Enter 1 for "Persist As Version". Enter 1 for "Persist As Order". Check the "Persist if Error" field. This field will persist the XML even if Profile Creation returns error.
 
-    ![img](images/MxPersistManagerTutorialImages/persist_app_manager_completed.jpg)  
+    ![img](../../images/MxPersistManagerTutorialImages/persist_app_manager_completed.jpg)  
   
 12. Click Apply and Finish. 
 
-    ![img](images/MxPersistManagerTutorialImages/persist_manager_profile_created.jpg)  
+    ![img](../../images/MxPersistManagerTutorialImages/persist_manager_profile_created.jpg)  
 
 13. Click "Close". This will create our Persist Manager Profile that is ready to Persist details for Clock and App manager features of Mx.   
 
@@ -147,12 +147,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 14. You can inspect the "EMDKConfig.xml" to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxPersistManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxPersistManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxPersistManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -166,7 +166,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxPersistManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxPersistManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -244,7 +244,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-     ![img](images/MxPersistManagerTutorialImages/on_create_added.jpg) 
+     ![img](../../images/MxPersistManagerTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -290,7 +290,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
@@ -328,9 +328,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxWirelessManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](../../images/MxWirelessManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxWirelessManagerTutorialImages/on_opened_method_2.jpg)
+    ![img](../../images/MxWirelessManagerTutorialImages/on_opened_method_2.jpg)
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -377,7 +377,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxPersistManagerTutorialImages/parse_xml.jpg) 
+    ![img](../../images/MxPersistManagerTutorialImages/parse_xml.jpg) 
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -407,7 +407,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxPersistManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -447,7 +447,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The method `displayResults` should look like:
     
-    ![img](images/MxPersistManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxPersistManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.  
     
@@ -464,7 +464,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxPersistManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxPersistManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part. Now let us run the application.
  
@@ -477,25 +477,25 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
     Check the Date-Time of the phone before running the app
 
-    ![img](images/MxPersistManagerTutorialImages/before_running_app.png)
+    ![img](../../images/MxPersistManagerTutorialImages/before_running_app.png)
   
 2. Run the application. The Clock and and App Manager configurations are applied and persisted in the device. It means you can now see the Clock Date-Time has been changed to the one we had set in the wizard. You can also see that EMDK App Manager has installed the application "AllInstalledApps" whose APK path we had provided in the wizard earlier. 
   
-	![img](images/MxPersistManagerTutorialImages/xml_persisted.png)
+	![img](../../images/MxPersistManagerTutorialImages/xml_persisted.png)
 
 	> Note: In case of any errors, you will see a Failure status with respective error message in that dialog.
 
     Now check the Date-Time of the device. You could see that it has changed to the one we set in the wizard during Profile Creation.
 
-    ![img](images/MxPersistManagerTutorialImages/date_time_updated.png)
+    ![img](../../images/MxPersistManagerTutorialImages/date_time_updated.png)
 
     You can also see that APK path of the application we had provided in the wizard during Profile creation has been installed successfully on the device using App Manager's install feature.
 
-    ![img](images/MxPersistManagerTutorialImages/app_installed.png)
+    ![img](../../images/MxPersistManagerTutorialImages/app_installed.png)
   
 3. These configurations were implemented and applied by the respective Mx feature (Clock and App Manager) but the settings are persisted in the XML file by the Persist Manager. If you open the File browser of TC 55 and go to "/enterprise/usr/persist/mxframework/persistmgr", you will find the two XML's persisted that were created using Persist Manager for Clock and App Manager features of Mx. 
 
-    ![img](images/MxPersistManagerTutorialImages/persist_path.png)
+    ![img](../../images/MxPersistManagerTutorialImages/persist_path.png)
 
 5. Now we will see how these Clock and App Manager settings are re-applied automatically after performing Enterprise Reset on the device.
 
@@ -504,13 +504,13 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 6. Let us perform Enterprise Reset on the TC55 Android device. Simultaneously press the Power, Programmable and Volume Up buttons 
  
-	![img](images/MxPersistManagerTutorialImages/reset_process.jpg)
+	![img](../../images/MxPersistManagerTutorialImages/reset_process.jpg)
 
     The TC55 shuts down and then reboots. Now select the Enterprise Reset Package (Zip File) stored in the SD Card by navigating to the path. It will complete the Enterprise Reset by erasing data and reboot the device with the default configurations.
 
 6. Once the Enterprise Reset is completed, Persist Manager resends the persisted XML's to the Mx Framework, which is captured by the device. These settings are then re-applied to the device. This is how the Persist Manager works in order to Persist and apply the Mx device configuration features.
 
-    ![img](images/MxPersistManagerTutorialImages/after_reset.png)
+    ![img](../../images/MxPersistManagerTutorialImages/after_reset.png)
 
 ##Important Programming Tips##
 

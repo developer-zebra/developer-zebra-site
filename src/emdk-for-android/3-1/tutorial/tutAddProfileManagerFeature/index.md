@@ -13,17 +13,17 @@ This tutorial helps you adding different features using Profile Manager to your 
   
 3. The EMDK Profile Manager Window will appear.
   
-    ![img](images/AddProfileManagerFeatureImage/emdk_profile_manager.jpg)
+    ![img](../../images/AddProfileManagerFeatureImage/emdk_profile_manager.jpg)
 
 4. Click "Create" and assign a name for the profile (Ex: MyEMDKProfile).
   
-    ![img](images/AddProfileManagerFeatureImage/create_new_profile.jpg)
+    ![img](../../images/AddProfileManagerFeatureImage/create_new_profile.jpg)
   
 5. EMDK 3.1 provides a set of new features along with the existing features of EMDK 3.0
 
 6. Click "Create" and the Profile Editor window will appear with a set of features on its left hand side.
 
-	![img](images/AddProfileManagerFeatureImage/profile_editor_4.3.jpg) 
+	![img](../../images/AddProfileManagerFeatureImage/profile_editor_4.3.jpg) 
 
 7. The Profile Manager wizard provides various features, one of them being Data Capture for capturing Barcode, MSR data in your application and many Mx features (Ex. Wireless Manager, Clock Manager, Access Manager, Browser Manager, Encrypt Manager etc.) for configuring your Symbol device based on requirements.
 

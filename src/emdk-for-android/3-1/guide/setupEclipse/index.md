@@ -59,58 +59,58 @@ To check which API's you have installed:
 
 1. Run the EMDK 3.1 Installer as Administrator, Then Click Next.
 
-	![img](images/setup/emdkInstall01.png)
+	![img](../../images/setup/emdkInstall01.png)
 
 2. Click I Agree after reading the License Agreement to continue the installation.
 
-	![img](images/setup/emdkInstall02.png)
+	![img](../../images/setup/emdkInstall02.png)
 
 3. Click next or select a custom install location by clicking Browse and then click next.
 
-	![img](images/setup/emdkInstall03.png)
+	![img](../../images/setup/emdkInstall03.png)
 
 4. Continue installing EMDK for Android in Eclipse by selecting the "Use Eclipse/ADT" radio button and then Click Next.
 >NOTE: If Android Studio is not installed on your computer this screen will look slightly different. Stating that you should exit the installer and install Android studio. Ignore those instructions if you are not installing the EMDK in Android studio at this time.
 
-	![img](images/setup/emdkInstall08.png)
+	![img](../../images/setup/emdkInstall08.png)
 
 5. If you are installing the EMDK into a ADT Bundle select the first radio button ( As Shown ), then click next.
 > NOTE: If you are installing the EMDK into a standalone version of Eclipse that has the ADT plugin installed Skip to STEP #7
 
-	![img](images/setup/emdkInstall09.png)
+	![img](../../images/setup/emdkInstall09.png)
 6. Select the root folder of your ADT Bundle installation buy clicking Browse, then Click Install.
 
-	![img](images/setup/emdkInstall10.png)
+	![img](../../images/setup/emdkInstall10.png)
 
 7. If you are installing the EMDK into a standalone version of Eclipse that has the ADT plugin installed, select the second radio button ( As Shown ), then click next.
 
-	![img](images/setup/emdkInstall11.png)
+	![img](../../images/setup/emdkInstall11.png)
 
 8. Browse for or manually enter paths to the root of both your Eclipse folder and Android SDK folder, then Click Install.
 
-	![img](images/setup/emdkInstall12.png)
+	![img](../../images/setup/emdkInstall12.png)
 
 ###Install version 3.1 Update 1
 
 1. Run the EMDK 3.1 Update 1 Installer as Administrator, Then Click **Next >**.
 
-	![img](images/setup/install31UD1_AS_1.png)
+	![img](../../images/setup/install31UD1_AS_1.png)
 
 2. Backup your samples, or select **Next >** to Continue.
 
-	![img](images/setup/install31UD1_AS_2.png)
+	![img](../../images/setup/install31UD1_AS_2.png)
 
 3. Click **I Agree** after reading the License Agreement to continue the installation.
 
-	![img](images/setup/install31UD1_AS_3.png)
+	![img](../../images/setup/install31UD1_AS_3.png)
 
 4. When instalation completes, select **Next >**
 
-	![img](images/setup/install31UD1_AS_5.png)
+	![img](../../images/setup/install31UD1_AS_5.png)
 
 5. Then select **Finish**
 
-	![img](images/setup/install31UD1_AS_6.png)
+	![img](../../images/setup/install31UD1_AS_6.png)
 
 ## Verifying EMDK for Android Development Environment
 
@@ -118,26 +118,26 @@ To check which API's you have installed:
 1.	Run `eclipse.exe` available under `[adt-bundle]\eclipse` (ex. \adt-bundle-windows-x86-20140321\eclipse\eclipse.exe) or `[eclipse-root]` (ex. \eclipse-standard-kepler-SR2-win32\eclipse\eclipse.exe).
 2.	The menu bar should contain a new menu called "EMDK" (see below)
 
-	![img](images/setup/image009.jpg)
+	![img](../../images/setup/image009.jpg)
 
 ### Verifying the SDK add-on integration into the ADT/Eclipse IDE
 1.	Select any existing Android application project.
 2.	Go to `File` -> `Properties`
 
-	![img](images/setup/image011.jpg)
+	![img](../../images/setup/image011.jpg)
 3.	Select `Android` from left pane.
 
-	![img](images/setup/image015.jpg)
+	![img](../../images/setup/image015.jpg)
 4.	Check the availability of `EMDK APIs` in the list of Project Build Targets.
 
-	![img](images/setup/image039.jpg)
+	![img](../../images/setup/image039.jpg)
 
 ### Verifying EMDK for Android Runtime Environment
 
 To check whether the EMDK runtime is installed on the device or not, check for the existence of `/system/framework/com.symbol.emdk.jar` on the device.
 
 
-![img](images/setup/image097.jpg)
+![img](../../images/setup/image097.jpg)
 
 
 ##Manually Remove EMDK for Android
@@ -151,9 +151,9 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 3. Each key listed under Uninstall in the left pane of Registry Editor represents a program that is currently installed. Scroll through and identify the registry key that has the name EMDK for Android (See Fig.01 or Fig.02).
 * Fig.01
-	![img](images/setup/uninstallfig1.png)
+	![img](../../images/setup/uninstallfig1.png)
 * Fig.02
-	![img](images/setup/uninstallfig2.png)
+	![img](../../images/setup/uninstallfig2.png)
 
 4. Under key EMDK for Android look for the value UninstallString in the details pane on the right and identify the EMDK for Android installation path (i.e. the parent directory where uninstall.exe resides. See Fig.01 or Fig.02).
 
@@ -214,7 +214,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 2. Select `Android` from left-pane.
 
-	![img](images/setup/emdkJarAsLib01.png)
+	![img](../../images/setup/emdkJarAsLib01.png)
 
 3. Specify the intended target (except EMDK) under `Project Build Target` and click `Apply`.
 
@@ -226,7 +226,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 7. Browse and specify the `com.symbol.emdk.jar` available under integrated EMDK sdk add-on (ex: `<adt-bundle>\sdk\add-ons\addon-symbol-emdk_v3.1_API-16\libs\com.symbol.emdk.jar`).
 
-	![img](images/setup/emdkJarAsLib02.png)
+	![img](../../images/setup/emdkJarAsLib02.png)
 
 
 
@@ -234,7 +234,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 1. Click on the arrow and expand the options of `com.symbol.emdk.jar` (above screen).
 
-	![img](images/setup/emdkJarAsLib03.png)
+	![img](../../images/setup/emdkJarAsLib03.png)
 
 
 
@@ -245,7 +245,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 4. Click `Browse` and specify the `Javadoc` available under EMDK sdk add-on (ex: `<adt-bundle>\sdk\add-ons\addon-symbol-emdk_v3.1_API-16\docs\reference\`).
 
-	![img](images/setup/emdkJarAsLib04.png)
+	![img](../../images/setup/emdkJarAsLib04.png)
 
 
 
@@ -253,7 +253,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 6. The specified Javadoc path will be validated and shows the following message if successful.
 
-	![img](images/setup/emdkJarAsLib05.png)
+	![img](../../images/setup/emdkJarAsLib05.png)
 
 7. Click `Apply` and `OK`.
 
@@ -261,5 +261,5 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 9. To verify, type any EMDK class/interface/method name (ex: EMDKListener) and press `F2`.
 
-	![img](images/setup/emdkJarAsLib06.png)
+	![img](../../images/setup/emdkJarAsLib06.png)
 

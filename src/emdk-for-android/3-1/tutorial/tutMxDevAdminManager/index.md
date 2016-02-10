@@ -22,18 +22,18 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "DevAdminTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.  
 
  
 ## Adding The DevAdmin Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "DevAdminProfile" as the Profile Name for this tutorial.
 
@@ -41,7 +41,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Dev Admin" feature from the list and click "Right Arrow".
 
-    ![img](images/MxDevAdminManagerTutorialImages/devadmin_feature.jpg)   
+    ![img](../../images/MxDevAdminManagerTutorialImages/devadmin_feature.jpg)   
 
 4. Provide some name in the "Name" field (Ex. MyDevAdminManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -49,17 +49,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So as discussed, we will allow installation of apps from unknown sources using DevAdmin feature of Mx through Profile Manager wizard. So click on "Install App from Unknown Sources" drop-down in the wizard and select the option "Turn on".    
 
-    ![img](images/MxDevAdminManagerTutorialImages/devadmin_manager_details.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/devadmin_manager_details.jpg)
 
-    ![img](images/MxDevAdminManagerTutorialImages/devadmin_manager_details_selected.jpg)    
+    ![img](../../images/MxDevAdminManagerTutorialImages/devadmin_manager_details_selected.jpg)    
  
 5. Click Apply to apply the settings we provided    
   
-    ![img](images/MxDevAdminManagerTutorialImages/devadmin_profile_created.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/devadmin_profile_created.jpg)
 
 6. Click Finish and your DevAdmin profile for allowing apps from unknown sources is created.
 
-    ![img](images/MxDevAdminManagerTutorialImages/devadmin_manager_profile_created.jpg) 
+    ![img](../../images/MxDevAdminManagerTutorialImages/devadmin_manager_profile_created.jpg) 
   
 7. Click "Close".
 
@@ -69,12 +69,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 8. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxDevAdminManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxDevAdminManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxDevAdminManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -88,7 +88,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxDevAdminManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxDevAdminManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -166,9 +166,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-    ![img](images/MxDevAdminManagerTutorialImages/variables_added.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/variables_added.jpg)
 
-	![img](images/MxDevAdminManagerTutorialImages/on_create_added.jpg)
+	![img](../../images/MxDevAdminManagerTutorialImages/on_create_added.jpg)
 	 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -252,9 +252,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxDevAdminManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](../../images/MxDevAdminManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxDevAdminManagerTutorialImages/on_opened_method_2.jpg) 
+    ![img](../../images/MxDevAdminManagerTutorialImages/on_opened_method_2.jpg) 
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -301,8 +301,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxDevAdminManagerTutorialImages/parse_xml_1.jpg) 
-	![img](images/MxDevAdminManagerTutorialImages/parse_xml_2.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/parse_xml_1.jpg) 
+	![img](../../images/MxDevAdminManagerTutorialImages/parse_xml_2.jpg)
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -332,7 +332,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxDevAdminManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -372,7 +372,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The method `displayResults` should look like:
     
-    ![img](images/MxDevAdminManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxDevAdminManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.
            
@@ -390,7 +390,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxDevAdminManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxDevAdminManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us allow installation of apps from unknown sources on Symbol device. Now let's run the application.
  
@@ -405,11 +405,11 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Go to device's Settings -> Security and see "Unknown Sources". This feature is turned OFF by default.
 
-    ![img](images/MxDevAdminManagerTutorialImages/unknown_sources_off.png) 
+    ![img](../../images/MxDevAdminManagerTutorialImages/unknown_sources_off.png) 
 
 2. Run the application.
 
-    ![img](images/MxDevAdminManagerTutorialImages/home_screen.png)
+    ![img](../../images/MxDevAdminManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message.
 
@@ -417,7 +417,7 @@ That's it!!! We are done with all the coding and configuration part that will le
   
 3. We will see the status of "Unknown Sources" in device settings. So go to device's Settings -> Security and you would now see that "Unknown Sources" that allow installation of App from unknown sources has been turned ON by DevAdmin Manager that we had set in the profile wizard. 
 
-    ![img](images/MxDevAdminManagerTutorialImages/unknown_sources_on.png)
+    ![img](../../images/MxDevAdminManagerTutorialImages/unknown_sources_on.png)
 
     This is how DevAdmin Manager allows us to install applications from Unknown Sources on Symbol device using Profile Wizard. 
 

@@ -22,17 +22,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxErrorsTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding the MX Errors Profile that includes Clock feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "MxErrorsProfile" as the Profile Name for this tutorial.
 
@@ -40,7 +40,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select "Clock" feature from the list and click "Right Arrow". The parameter list will be populated.    
   
-    ![img](images/MxErrorsTutorialImages/select_clock_feature.jpg)
+    ![img](../../images/MxErrorsTutorialImages/select_clock_feature.jpg)
 
 	Using this feature, we will configure the device clock. But we will provide incorrect values while setting Clock parameters and in the code we will parse the XML response and display the result in a dialog.
 
@@ -49,11 +49,11 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     > Note:
     > Keep the "Name" field empty and AutoTime field unchecked. 
 
-    ![img](images/MxErrorsTutorialImages/clock_features.jpg)
+    ![img](../../images/MxErrorsTutorialImages/clock_features.jpg)
   
 5.  Click Apply and Finish. 
 
-    ![img](images/MxErrorsTutorialImages/error_profile_created.jpg)  
+    ![img](../../images/MxErrorsTutorialImages/error_profile_created.jpg)  
 
 6. Click "Close".   
 
@@ -62,12 +62,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 7. You can inspect the "EMDKConfig.xml" under "\assets" folder to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager. An entry of "Clock" feature is created in EMDKConfig.xml file with the attributes that we had set while profile creation. 
 
-    ![img](images/MxErrorsTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxErrorsTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxErrorsTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxErrorsTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -81,7 +81,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxErrorsTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxErrorsTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -159,7 +159,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-     ![img](images/MxErrorsTutorialImages/on_create_added.jpg) 
+     ![img](../../images/MxErrorsTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. This must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -242,9 +242,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxErrorsTutorialImages/on_opened_method_1.jpg) 
+    ![img](../../images/MxErrorsTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxErrorsTutorialImages/on_opened_method_2.jpg)
+    ![img](../../images/MxErrorsTutorialImages/on_opened_method_2.jpg)
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -291,7 +291,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxErrorsTutorialImages/parse_xml.jpg) 
+    ![img](../../images/MxErrorsTutorialImages/parse_xml.jpg) 
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -321,7 +321,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxErrorsTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxErrorsTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -361,7 +361,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The method `displayResults` should look like:
     
-    ![img](images/MxErrorsTutorialImages/display_results.jpg)
+    ![img](../../images/MxErrorsTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.      
                             
@@ -378,7 +378,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxErrorsTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxErrorsTutorialImages/on_destroy_method.jpg) 
 
 
 That's it!!! We are done with all the coding and incorrect configuration. Now let us run the application and we should get the error in a dialog.
@@ -412,13 +412,13 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 
     Since the response contains `<parm-error>` tag, the EMDK fails to set the clock. This is because we had set an incorrect value for "TimeZone" field ("MMT" instead of something like "GMT+05:30"). So when we parsed the response we looked for this `parm-error` tag and parsed `name` and `desc` fields of this error tag. Finally we displayed these field in an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) to the user.     
   
-	![img](images/MxErrorsTutorialImages/failed_to_set_clock.png)
+	![img](../../images/MxErrorsTutorialImages/failed_to_set_clock.png)
 
 3. Now let's correct the parameters and get the valid output that can change the clock settings with the parameters that we declared during profile creation.
 
     So first we will go to profile manager and edit it with the valid "TimeZone" value ("GMT+05:30" instead of "MMT").
 
-    ![img](images/MxErrorsTutorialImages/correct_date.jpg)
+    ![img](../../images/MxErrorsTutorialImages/correct_date.jpg)
 
     Click "Apply", "Finish" and then "Close".
 
@@ -443,7 +443,7 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 
     As you can see its a valid XML response since it does not contain any `<characteristic-error>` or `<parm-error>` tag. Moreover, the clock parameters that we set during profile creation are also applied successfully to the device. 
 
-    ![img](images/MxErrorsTutorialImages/clock_settings_changed.png)
+    ![img](../../images/MxErrorsTutorialImages/clock_settings_changed.png)
 
 7. In such a way, you can use EMDKResults API with its methods to identify any kind of errors in all the MX features that you used while profile creation. This helps in debugging your application to figure out invalid parameters.            
   

@@ -1,6 +1,6 @@
 var fs = require('fs'),
     path = require('path'),
-    recursive = require('recursive-readdir'),
+    wrench = require('wrench'),
     keyword_extractor = require("keyword-extractor"),
     snippets = require('smart-text-snippet'),
     yamlFront = require('front-matter'),
@@ -14,20 +14,20 @@ function ignoreFunc(file, stats) {
   return stats.isFile() && path.extname(file) != ".html";
 }
 
-var folders = ["emdk-for-android/4-0"];
-
-
-for (var i = 0; i < folders.length; i++) {
-    folder = "build/" + folders[i];
+var index_generate = function(folder){
+    folder = "build/" + folder;
     var json = [];
-    console.log('indexing: ' + folder);
-    recursive(folder, [ ignoreFunc], function (err, files) {
+    files = wrench.readdirSyncRecursive(folder);
+    // console.log(files)
       // Files is an array of filename 
       // console.log(files);
-      
+        console.log('indexing: ' + folder);
+    
 
-        for (var i = 0; i < files.length; i++) {
-            filename = files[i];
+    for (var f = 0; f < files.length; f++) {
+        filename = folder + "/" + files[f];
+        if(path.extname(filename) == ".html"){
+            
             console.log("reading:" + filename);
             var html_file = fs.readFileSync(filename);
             html = unfluff(html_file, 'en');
@@ -70,19 +70,25 @@ for (var i = 0; i < folders.length; i++) {
                 json.push(index_item);          
 
             }
-        };
-        var json_file = folder+'/index.json';
-        console.log("Writing to: " + json_file);
-        fs.open(json_file, 'w', function(err, fd) {
-           if (err) {
-               return console.error(err);
-           }
-          console.log("Creating Index:" + json_file);     
-        });        
-        fs.writeFile(json_file, JSON.stringify(json), function(err) {
-            if(err) {
-                console.error("Could not write file" + json_file + ": %s", err);
-            }
-        });
-    })
+        }
+    };
+    var json_file = folder+'/index.json';
+    console.log("Writing to: " + json_file);
+    fs.open(json_file, 'w', function(err, fd) {
+       if (err) {
+           return console.error(err);
+       }
+      console.log("Creating Index:" + json_file);     
+    });        
+    fs.writeFile(json_file, JSON.stringify(json), function(err) {
+        if(err) {
+            console.error("Could not write file" + json_file + ": %s", err);
+        }
+    });
+    
+
 }
+
+
+      index_generate("emdk-for-android/4-0");
+      index_generate("emdk-for-xamarin/1-0");

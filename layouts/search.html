@@ -50,7 +50,7 @@
             last: false
         }
         var results = [];
-        $.getJSON( "/emdk-for-android/4-0/index.json", function( data ) {
+        $.getJSON( "{{this.index}}", function( data ) {
           json_data = data;
           console.log("got data");
           fuse = new Fuse(json_data, { keys: ["title", "keywords"] });

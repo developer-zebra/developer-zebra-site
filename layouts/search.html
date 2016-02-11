@@ -6,12 +6,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <form>
+                    <form id="search-form">
                         <fieldset>
                             <div class="input-group">
                                 <span id="btn-search" class="input-group-addon"><i class="fa fa-search"></i></span>
-                                <span id="btn-loading" class="input-group-addon" ><i class="fa fa-refresh fa-spin" ></i></span>
-                                <input type="text"  class="form-control" name="query" id="query" placeholder="">              
+                                <input type="text" class="form-control" name="query" id="query" placeholder=""> 
+                                <span id="btn-loading" class="input-group-addon"><i class="fa fa-refresh fa-spin"></i></span>
+                                             
                             </div>
                             
                         </fieldset>
@@ -20,12 +21,12 @@
             </div>
         </div>
     </section>
-    <section >
+    <section>
         <div class="container" id="search-results">
             
         </div>
     </section>
-    <section >
+    <section>
         <div class="container" id="search-controls">
             <div class="row">
                  
@@ -35,7 +36,7 @@
                   
             
         </div>
-    </section>
+    </div></section>
     <script src="/js/searchengine.js"></script>   
 
     <script type="text/javascript">
@@ -67,7 +68,16 @@
               
               displayresults(1);
             });
-            
+            $( "#search-form" ).submit(function( event ) {
+              event.preventDefault();
+             $("#btn-loading").show()
+              $("#btn-search").hide();
+              var query = $("#query").val();
+              results = fuse.search(query);
+              
+              
+              displayresults(1);
+            });
 
             
         });
@@ -140,6 +150,7 @@
                 };
 
     </script>
+
 {{> footer}}
 
 

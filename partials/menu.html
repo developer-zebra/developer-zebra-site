@@ -78,8 +78,8 @@
 </aside>
 
 {{else}}
-<nav id="toc"  data-spy="affix" data-toggle="toc">
-    <ul class="nav">
+<nav id="toc"   data-toggle="toc" data-spy="affix" style="height: 95%; overflow-y: auto; ">
+    <ul class="nav" >
         <li><strong>{{this.title}}</strong></li>
     </ul>
 </nav>
@@ -141,10 +141,12 @@
               
     //     });
     // });
-  var $myNav = $('#toc');
-  $('body').scrollspy({
-    target: $myNav
-  });
+  // var $myNav = $('#toc');
+  // $('body').scrollspy({
+  //   target: $myNav
+  // });
+
+ 
     function affix() {
         
         // Fit affix width to its parent's width

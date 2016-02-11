@@ -78,7 +78,7 @@
 </aside>
 
 {{else}}
-<nav id="toc"  data-spy="affix" data-toggle="toc">
+<nav id="toc"   data-toggle="toc" data-spy="affix" >
     <ul class="nav">
         <li><strong>{{this.title}}</strong></li>
     </ul>
@@ -145,6 +145,8 @@
   $('body').scrollspy({
     target: $myNav
   });
+
+ 
     function affix() {
         
         // Fit affix width to its parent's width

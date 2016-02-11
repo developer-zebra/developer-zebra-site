@@ -1,0 +1,14 @@
+ <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" src="{{ image }}" alt="{{ title }}" style="max-height:128px,max-width:128px">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{title}}</h4>
+        <p>{{ description }}</p>
+        {{#each sections}}
+            <a href="{{this.url}}"><span class="label label-primary">{{this.title}}</span></a>
+        {{/each}}
+      </div>
+    </div>

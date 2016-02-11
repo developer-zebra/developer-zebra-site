@@ -37,11 +37,11 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 **EMDK for Android v3.1 Update 1**
 
 * New Profile Manager Features
-	* [Audio Manager](../../guide/profiles/audio)-  allows you to manage enhanced audio volume control configurations
-	* [Battery Manager](../../guide/profiles/battery)- allows the developer to modify that Decommission Threshold from its factory setting
-	* [Component Manager](../../guide/profiles/component)- allows you to manage the state of Components, such as a devices Ethernet Port
-	* [DHCP Manager](../../guide/profiles/dhcp)- allows you to control various DHCP configuration options.
-	* [KeyMap Manager](../../guide/profiles/keymap)- allows you to remap functionality of keys.
+	* [Audio Manager](../../mx/audiomgr)-  allows you to manage enhanced audio volume control configurations
+	* [Battery Manager](../../mx/batterymgr)- allows the developer to modify that Decommission Threshold from its factory setting
+	* [Component Manager](../../mx/componentmgr)- allows you to manage the state of Components, such as a devices Ethernet Port
+	* [DHCP Manager](../../mx/dhcp)- allows you to control various DHCP configuration options.
+	* [KeyMap Manager](../../mx/keymappingmgr)- allows you to remap functionality of keys.
 * New Device Support
 	* MC18 - KitKat
 	* MC40 - KitKat
@@ -63,15 +63,15 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * [Name Value Pair API](../../api/core/ProfileManager) - new method for ProfileManager
 * [Extended EMDK Results Enum](../../api/core/EMDKResults-EXTENDED_STATUS_CODE) - Further details available when processing profiles
 * New Profile Manager Features
-	* [Browser Manager](../../guide/profiles/browser)- configures web browser behavior
-	* [Camera Manager](../../guide/profiles/camera)- control access to the cameras in the device
-	* [Cellular Manager](../../guide/profiles/cellular)- configure options of the  cellular radio on your device
-	* [DevAdmin Manager](../../guide/profiles/devadmin)-  manage configuration settings on the device
-	* [Display Manager](../../guide/profiles/display)-  control the screen timeout value to conserve power
-	* [Encrypt Manager](../../guide/profiles/encrypt)-  set encryption policies
-	* [Powerkey Manager](../../guide/profiles/powerkey)-  control which options appear on the power menu
-	* [SD Card Manager](../../guide/profiles/sdcard)-  manage the use of the devices SD card
-	* [Threat Manager](../../guide/profiles/threat)-  Control what security threats a device actively monitors
+	* [Browser Manager](../../mx/browsermgr)- configures web browser behavior
+	* [Camera Manager](../../mx/cameramgr)- control access to the cameras in the device
+	* [Cellular Manager](../../mx/cellularmgr)- configure options of the  cellular radio on your device
+	* [DevAdmin Manager](../../mx/devadmin)-  manage configuration settings on the device
+	* [Display Manager](../../mx/displaymgr)-  control the screen timeout value to conserve power
+	* [Encrypt Manager](../../mx/encryptmgr)-  set encryption policies
+	* [Powerkey Manager](../../mx/powerkeymgr)-  control which options appear on the power menu
+	* [SD Card Manager](../../mx/sdcardmgr)-  manage the use of the devices SD card
+	* [Threat Manager](../../mx/threatmgr)-  Control what security threats a device actively monitors
 * Support for Bluetooth scanners (RS507) in [Barcode API's](../../api/barcode/InterfaceConfig/) 
 
 **EMDK For Android v3.0 Update 1**
@@ -83,16 +83,16 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 **EMDK For Android v3.0**
 
 * Native [Java Barcode Scanning APIs](../../api/barcode)
-* New [EMDK Profiles](../../guide/profiles/usingwizard) features:
-	* [Settings Manager](../../guide/profiles/settings) - turn on/off ability to invoke Enterprise Reset in settings UI
-	* [Touch Manager](../../guide/profiles/touch) - set the device's touch mode
-	* [UI Manager](../../guide/profiles/ui) - configure clipboard behavior
-	* [USB Manager](../../guide/profiles/usb) - manage USB configurations behavior
-	* [Wireless Manager](../../guide/profiles/wireless) - enable or disable Bluetooth
-* Updated [EMDK Profiles](../../guide/profiles/usingwizard) features:
-	* [Access Manager](../../guide/profiles/access) - new Whitelist features
-	* [App Manager](../../guide/profiles/app) - new Dynamic Protected List ability
-	* [Clock](../../guide/profiles/clock) - new NTP server synchronization
+* New [EMDK Profiles](../profile-manager) features:
+	* [Settings Manager](../../mx/settingsmgr) - turn on/off ability to invoke Enterprise Reset in settings UI
+	* [Touch Manager](../../mx/touchmgr) - set the device's touch mode
+	* [UI Manager](../../mx/uimgr) - configure clipboard behavior
+	* [USB Manager](../../mx/usbmgr) - manage USB configurations behavior
+	* [Wireless Manager](../../mx/wirelessmgr) - enable or disable Bluetooth
+* Updated [EMDK Profiles](../profile-manager) features:
+	* [Access Manager](../../mx/accessmgr) - new Whitelist features
+	* [App Manager](../../mx/appmgr) - new Dynamic Protected List ability
+	* [Clock](../../mx/clock) - new NTP server synchronization
 * New Tutorials
 	* [Barcode Scanning API (Basic)](../../tutorial/tutBasicScanningAPI)
 	* [Barcode Scanning API (Advanced)](../../tutorial/tutAdvancedScanningAPI)
@@ -105,7 +105,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 ## Components
 
 ### Profile Manager
-The EMDK's exclusive [Profile Manager](../../guide/profiles/usingwizard) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.   
+The EMDK's exclusive [Profile Manager](../profile-manager) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.   
 ### EMDK Device Runtime
 In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Programmers Guide](../../tutorial/tutdatacaptureprofile) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
 

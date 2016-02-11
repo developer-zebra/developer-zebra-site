@@ -4,26 +4,13 @@ title:  Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi:
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](../../guide/profiles/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. Overall, Wi-Fi Manager supports following features:
-
-* **[Wi-Fi Enable/Disable](../../guide/profiles/wifi#wifienable)**
-* **[Country Selection Auto/Manual](../../guide/profiles/wifi#countryselectionautomanual)**
-* **[Country to use for Wi-Fi regulatory setting](../../guide/profiles/wifi#country)**
-* **[RF Bands to use](../../guide/profiles/wifi#rfband)**
-* **[Wi-Fi Channels](../../guide/profiles/wifi#wifichannel)**
-* **[Wi-Fi Sleep Policy](../../guide/profiles/wifi#sleeppolicy)**
-* **[Network Notification](../../guide/profiles/wifi#networknotification)**
-* **[Network Action](../../guide/profiles/wifi#networkaction)**
-* **[Wi-Fi Profiles](../../guide/profiles/wifi#wifiprofiles)**
-* **[Encryption Details](../../guide/profiles/wifi#encryptiondetails)**
-* **[Authentication Details](../../guide/profiles/wifi#authenticationdetails)**
-* **[Advanced Options](../../guide/profiles/wifi#advancedoptions)**
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](../../mx/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
 
 
 > Note: In order to apply these settings, Wi-Fi must be enabled. If you do not specify Wi-Fi Enable in the profile you will get an error when attempting to apply other settings if the device's Wi-Fi is not already enabled.
 
  
-All of the above features can be configured the way you want through EMDK Profile Wizard as well as programmatically using Wi-Fi Manager API. In this tutorial, We would be implementing some of the these features through EMDK Wizard.
+All of the [Wi-Fi Manager](../../mx/wifi) features can be configured the way you want through EMDK Profile Wizard as well as programmatically using Wi-Fi Manager API. In this tutorial, We would be implementing some of the these features through EMDK Wizard.
 
 > Note: In this tutorial, we will be implementing everything through EMDK Wizard. Programmatic change using API is not in the scope of this tutorial.
 

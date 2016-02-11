@@ -3,7 +3,7 @@ title:  Data Capture Profile Feature Tutorial
 ---
 ## Developing an EMDK for Android Application Part 1
 
-This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](../../guide/profiles/profilebarcode) to get barcode data into your application using the [KeyStroke output](../../guide/profiles/profilekeystroke) feature of [EMDK Profiles](../../guide/profiles/usingwizard).
+This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](../../mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](../../mx/data-capture/keystroke) feature of [EMDK Profiles](../../guide/profile-manager).
 
 ###Prerequisites
 
@@ -266,7 +266,7 @@ If you are using Eclipse with ADT, click [here](../../tutorial/tutEnableEMDKEcli
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned the basics of an EMDK for Android application, the [next tutorial](../../tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](../../guide/profiles/profileintent) feature of EMDK Profiles to handle Data Capture output programmatically.
+Now that you have learned the basics of an EMDK for Android application, the [next tutorial](../../tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](../../mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCapture-ProfileManagerTutorial.zip).

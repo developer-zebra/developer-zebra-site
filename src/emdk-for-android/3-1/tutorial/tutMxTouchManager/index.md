@@ -4,9 +4,9 @@ title:  Specify Touch Mode using Mx Touch Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](../../guide/profiles/touch) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](../../mx/touchmgr) feature of Mx. 
 
-So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using Mx [Touch Manager](../../guide/profiles/touch) feature. 
+So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using Mx [Touch Manager](../../mx/touchmgr) feature. 
         
 ###Prerequisites
 

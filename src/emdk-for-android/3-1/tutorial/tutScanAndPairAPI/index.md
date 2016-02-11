@@ -4,7 +4,7 @@ title:  Pairing Remote Device by Scanning its Bluetooth Name or Address using Sc
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [ScanAndPair APIs](../../api/scanandpair) introduced in EMDK V 3.1, to perform pairing of any remote Scanning device by Scanning its Bluetooth Name or Bluetooth Address. The API uses [Scan and Pair Manager](../../api/ScanAndPairManager), which is the primary object that allows pairing with remote scanning devices.
+This guide will walk you through creating an EMDK For Android application that will use [ScanAndPair APIs](../../api/scanandpair) introduced in EMDK V 3.1, to perform pairing of any remote Scanning device by Scanning its Bluetooth Name or Bluetooth Address. The API uses [Scan and Pair Manager](../../api/scanandpair/ScanAndPairManager), which is the primary object that allows pairing with remote scanning devices.
 
 In this tutorial, we will explore the [ScanAndPair APIs](../../api/scanandpair) by using it for developing a basic application that will scan Bluetooth Name/Address of a Remote Scanning device (Ex. [MC40](https://www.zebra.com/content/dam/msi-new/assets/web/Business/Products/Mobile%20Computers/Handheld%20Computers/MC40/_Documents/Static_Files/MC40_Specifications.pdf)) and pair itself with this device through bluetooth name or address scanned by discovering it.
 
@@ -62,7 +62,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
     Then you must make the activity to implement [EMDKListener](../../api/core/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
 
-    After that you also need to implement [ScanAndPairManager.StatusListener](../../api/ScanAndPairManager-StatusListener), which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
+    After that you also need to implement [ScanAndPairManager.StatusListener](../../api/scanandpair/ScanAndPairManager-StatusListener), which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
 
 	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
 	> 
@@ -285,7 +285,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 	> 
 	> If you are using Eclipse with ADT, press CTRL+SHFT+F or CMD+SHFT+F to auto indent lines     
  
-3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. We will then set the [ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html) that has a list of [Scan data types](../../api/ScanAndPairConfig?ScanAndPairConfig.ScanDataType) of the Remote Scanner device to the Spinner.
+3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. We will then set the [ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html) that has a list of [Scan data types](../../api/scanandpair/ScanAndPairConfig-ScanDataType/) of the Remote Scanner device to the Spinner.
 
 	Finally, we would add methods calls to handle buttons and check boxes events.  
 
@@ -419,7 +419,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 	![img](../../images/ScanAndPairTutorialImages/on_click_listener_scan_pair.jpg)
 
-	In case of Scan and Pair, we would get an instance of [ScanAndPairManager](../../api/ScanAndPairManager) first. On this instance, set the status listener to get the status of Scan and Pair operations.
+	In case of Scan and Pair, we would get an instance of [ScanAndPairManager](../../api/scanandpair/ScanAndPairManager) first. On this instance, set the status listener to get the status of Scan and Pair operations.
 
 		:::java
 		if(scanAndPairMgr == null) {
@@ -435,7 +435,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 	* If ScanAndPairManager.config.alwaysScan is set to true, a scan is always performed when these methods are called. By default it is set to true. So scanning a Bluetooth barcode is required by default.
 	* If ScanAndPairManager.config.alwaysScan is set to false, then scanning is skipped and the ScanAndPairMgr.config.bluetoothInfo.deviceName or scanAndPairMgr.config.bluetoothInfo.macAddress field provided by the user are directly taken for pairing.
 
-	`checkBoxAlwaysScan` checkbox determines the status of `scanAndPairMgr.config.alwaysScan`. Set the [Notification Type](../../api/ScanAndPairConfig?ScanAndPairConfig.NotificationType) to indicate the progress of `ScanAndPair` or `ScanAndUnpair` operations.
+	`checkBoxAlwaysScan` checkbox determines the status of `scanAndPairMgr.config.alwaysScan`. Set the [Notification Type](../../api/scanandpair/ScanAndPairConfig-NotificationType/) to indicate the progress of `ScanAndPair` or `ScanAndUnpair` operations.
 
 		:::java
 		scanAndPairMgr.config.alwaysScan = checkBoxAlwaysScan.isChecked();
@@ -475,7 +475,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 	> Note: We have provided "0000", which is a default value.
 
-	Finally, we would update the Status of operations in `statusView` using [ScanAndPairResults](../../api/ScanAndPairManager?ScanAndPairResults).
+	Finally, we would update the Status of operations in `statusView` using [ScanAndPairResults](../../api/scanandpair/ScanAndPairResults/).
 
 		:::java
 		if(!resultCode.equals(ScanAndPairResults.SUCCESS))

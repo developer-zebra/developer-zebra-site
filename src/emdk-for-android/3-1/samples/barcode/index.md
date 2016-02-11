@@ -30,7 +30,7 @@ screenshots:
 ---
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](../../../../api/) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](../../guide/profiles/profilebarcode).  
+The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](../../../../api/barcode) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](../../mx/profilebarcode).  
 
 The available actions in the [Barcode/Scanning API](../../../../api/) are:
   

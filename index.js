@@ -3,7 +3,8 @@ var fs = require('fs'),
     recursive = require('recursive-readdir'),
     keyword_extractor = require("keyword-extractor"),
     snippets = require('smart-text-snippet'),
-    yamlFront = require('yaml-front-matter'),
+    yamlFront = require('front-matter'),
+    removeMd = require('remove-markdown'),
     unfluff = require('unfluff');
 
 
@@ -28,29 +29,19 @@ for (var i = 0; i < folders.length; i++) {
         for (var i = 0; i < files.length; i++) {
             filename = files[i];
             console.log("reading:" + filename);
-            var html = fs.readFileSync(filename);
-            data = unfluff(html, 'en');
+            var html_file = fs.readFileSync(filename);
+            html = unfluff(html_file, 'en');
             var mdfile= filename.replace("build/","src/").replace(".html",".md");
             var md = fs.readFileSync(mdfile).toString();
-            var md_contents = md.replace(/\A---(.|\n)*?---/,'');
-            console.log(md_contents);
-            if(md_contents==""){
-                console.log("--------------> EMPTY MD USING HTML")
-                md_contents = data.text;
-            }
+            
             var yaml;
-            try {
-                yaml = yamlFront.loadFront(md);
-            }
-            catch(err) {
-                console.log("****** CHECK YAML: " + mdfile) + err.message;
-                yaml = {
-                    title: data.title
-                }
-            } 
+            yaml = yamlFront(md);
             //get just text
-            console.log("Generating Keywords: " + yaml.title );
-            var keywords = keyword_extractor.extract(md_contents,
+            console.log("Generating Keywords: " + yaml.attributes.title );
+            if(yaml.body==""){
+                yaml.body = html.text
+            }
+            var keywords = keyword_extractor.extract(yaml.body,
                 {
                     language:"english",
                     remove_digits: true,
@@ -63,18 +54,17 @@ for (var i = 0; i < folders.length; i++) {
             for (var x = 0; x < keywords.length; x++) {
                 keyword_string += keywords[x] + " ";
             };
-            var snippet = snippets.snip(data.text, {len: 150});
+            var snippet = snippets.snip(removeMd(yaml.body), {len: 150});
             index_item = {
-                title: yaml.title,
+                title: yaml.attributes.title,
                 keywords: keyword_string,
                 summary: snippet,
-                url: filename.replace("build/","").replace("/index.html","")
+                url: filename.replace("build/","/").replace("/index.html","")
 
             }
             if(index_item.keywords==""){
-                console.log('\u0007')
                 console.log("*** EMPTY FILE");
-                console.log(data.text);
+                console.log(yaml.body);
             }
             else{
                 json.push(index_item);          

@@ -254,6 +254,7 @@ menu:
           url: /emdk-for-android/4-0/api/payment
         - title: Serial Comm APIs
           url: /emdk-for-android/4-0/api/serialcomm
-
+    - icon: fa fa-search
+      url: /emdk-for-android/4-0/search
 ---
 

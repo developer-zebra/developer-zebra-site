@@ -1,5 +1,5 @@
 ---
-title:  Configure Screen Off Timeout Interval using Display Manager.
+title:  Configure Screen Off Timeout Interval using Display Manager
 ---
 
 ## Overview

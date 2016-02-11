@@ -1,5 +1,5 @@
 ---
-title:  Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi:
+title:  Configure Wi-Fi settings 
 ---
 
 ## Overview

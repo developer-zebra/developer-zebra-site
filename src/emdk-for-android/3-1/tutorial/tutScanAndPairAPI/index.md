@@ -1,5 +1,5 @@
 ---
-title:  Pairing Remote Device by Scanning its Bluetooth Name or Address using ScanAndPair APIs
+title:  Pair Bluetooth devices
 ---
 
 ## Overview

@@ -1,5 +1,5 @@
 ---
-title:  Allow installation of apps from unknown sources using DevAdmin Manager.
+title:  Allow installation of apps from unknown sources using DevAdmin Manager
 ---
 
 ## Overview

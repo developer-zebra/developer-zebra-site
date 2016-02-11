@@ -179,7 +179,7 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
      
     ![img](../../images/BluetoothScannerTutorialImages/on_create_added.jpg)
 
-4. Get the [EMDK Manager](../../api/core/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](../../barcode/BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
+4. Get the [EMDK Manager](../../api/core/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](../../api/barcode/BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
 
 		:::java
 		// Update status view with EMDK Open Success message

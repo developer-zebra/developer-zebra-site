@@ -4,9 +4,9 @@ title:  Configure Screen Off Timeout Interval using Display Manager.
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../guide/profiles/display) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../mx/displaymgr) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
 
-So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx [Display Manager](../../guide/profiles/display) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
+So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx [Display Manager](../../mx/displaymgr) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
         
 ###Prerequisites
 

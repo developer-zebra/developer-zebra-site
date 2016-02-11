@@ -8,6 +8,7 @@ menu:
     - title: Home
       url: /emdk-for-android/3-1/guide/about
     - title: Getting Started
+      url: /emdk-for-android/3-1/guide/gettingstarted
       items:
         - title: Download
           url: /emdk-for-android/download
@@ -18,8 +19,9 @@ menu:
         - title: Build Hello EMDK
           url: /emdk-for-android/3-1/tutorial/tutdatacaptureprofile
         - title: Using Profile Manager
-          url: /emdk-for-android/3-1/guide/profiles/usingwizard
+          url: /emdk-for-android/3-1/guide/profile-manager
     - title: Tutorials
+      url: /emdk-for-android/3-1/tutorial/
       items:
         - title: Profile Manager
           items:
@@ -128,7 +130,8 @@ menu:
           url: /emdk-for-android/3-1/samples/simulscan
         - title: PersonalShopper Sample
           url: /emdk-for-android/3-1/samples/personal-shopper
-    - title: Programming Guides
+    - title: Guides
+      url: /emdk-for-android/3-1/guide/programming-guides
       items:
         - title: SimulScan API
           url: /emdk-for-android/3-1/guide/simulscan_guide
@@ -138,14 +141,100 @@ menu:
           url: /emdk-for-android/3-1/guide/personalshopper
         - title: Secure NFC API
           url: /emdk-for-android/3-1/guide/securenfc
-
+        - title: Barcode Scanner States
+          url: /emdk-for-android/3-1/guide/scanner
+        - title: Payment API
+          url: /emdk-for-android/3-1/guide/payment-api
+        - title: PD40 Firmware Update
+          url: /emdk-for-android/3-1/guide/pd40-firmware-update
     - title: Profile Manager
+      url: /emdk-for-android/3-1/guide/profile-manager-guides
       items:
         - title: Using Profile Manager
-          url: /emdk-for-android/3-1/guide/profiles/usingwizard
+          url: /emdk-for-android/3-1/guide/profile-manager/
         - title: Profile Features
-          url: /emdk-for-android/3-1/guide/profiles/usingwizard/#emdkprofilefeatures
-  
+          url: /emdk-for-android/3-1/mx
+        - title: MX Overview
+          url: /emdk-for-android/3-1/mx/overview
+        - title: Choosing a Version
+          url: /emdk-for-android/3-1/mx/choosing-a-version
+        - title: Feature Compatibility
+          url: /emdk-for-android/3-1/mx/compatibility
+        - title: Getting Device MX Version
+          url: /emdk-for-android/3-1/mx/version-on-device
+        - title: Access Manager
+          url: /emdk-for-android/3-1/mx/accessmgr
+        - title: Analytics Manager
+          url: /emdk-for-android/3-1/mx/analytics/
+        - title: App Manager
+          url: /emdk-for-android/3-1/mx/appmgr
+        - title: Audio Manager
+          url: /emdk-for-android/3-1/mx/audiomgr/
+        - title: Battery Manager
+          url: /emdk-for-android/3-1/mx/batterymgr/
+        - title: Browser Manager
+          url: /emdk-for-android/3-1/mx/browsermgr
+        - title: Camera Manager
+          url: /emdk-for-android/3-1/mx/cameramgr
+        - title: Cellular Manager
+          url: /emdk-for-android/3-1/mx/cellularmgr/
+        - title: Cert Manager
+          url: /emdk-for-android/3-1/mx/certmgr
+        - title: Clock
+          url: /emdk-for-android/3-1/mx/clock/
+        - title: Component Manager
+          url: /emdk-for-android/3-1/mx/componentmgr/
+        - title: Data Capture
+          url: /emdk-for-android/3-1/mx/data-capture
+          items:
+            - title: Activity Selection
+              url: /emdk-for-android/3-1/mx/data-capture/activity   
+            - title: Barcode Input
+              url: /emdk-for-android/3-1/mx/data-capture/barcode   
+            - title: Int Output
+              url: /emdk-for-android/3-1/mx/data-capture/intent   
+            - title: IP Output
+              url: /emdk-for-android/3-1/mx/data-capture/IP
+            - title: Keystroke Output
+              url: /emdk-for-android/3-1/mx/data-capture/keystroke
+            - title: MSR Input
+              url: /emdk-for-android/3-1/mx/data-capture/msr   
+        - title: DevAdmin 
+          url: /emdk-for-android/3-1/mx/devadmin
+        - title: DHCP Options Manager
+          url: /emdk-for-android/3-1/mx/dhcp
+        - title: Display Manager
+          url: /emdk-for-android/3-1/mx/displaymgr/
+        - title: Encrypt Manager
+          url: /emdk-for-android/3-1/mx/encryptmgr
+        - title: GPRS Manager
+          url: /emdk-for-android/3-1/mx/gprsmgr/
+        - title: KeyMap Manager
+          url: /emdk-for-android/3-1/mx/keymappingmgr
+        - title: Persistance Manager
+          url: /emdk-for-android/3-1/mx/persistance
+        - title: Power Manager
+          url: /emdk-for-android/3-1/mx/powermgr/
+        - title: PowerKey Manager
+          url: /emdk-for-android/3-1/mx/powerkeymgr
+        - title: Settings Manager
+          url: /emdk-for-android/3-1/mx/settingsmgr
+        - title: SD Card Manager
+          url: /emdk-for-android/3-1/mx/sdcardmgr
+        - title: Touch Manager
+          url: /emdk-for-android/3-1/mx/touchmgr/
+        - title: Threat Manager
+          url: /emdk-for-android/3-1/mx/threatmgr
+        - title: USB Manager
+          url: /emdk-for-android/3-1/mx/usbmgr
+        - title: UI Manager
+          url: /emdk-for-android/3-1/mx/uimgr
+        - title: WiFi Manager
+          url: /emdk-for-android/3-1/mx/wifi/
+        - title: Wireless Manager
+          url: /emdk-for-android/3-1/mx/wirelessmgr/
+        - title: XML Manager
+          url: /emdk-for-android/3-1/mx/xml
     - title: APIs
       url: /emdk-for-android/3-1/api
       items:
@@ -158,15 +247,13 @@ menu:
         - title: SimulScan APIs 
           url: /emdk-for-android/3-1/api/simulscan
         - title: Personal Shopper APIs 
-          url: /emdk-for-android/3-1/api/PersonalShopper
+          url: /emdk-for-android/3-1/api/personalshopper
         - title: Secure NFC APIs 
           url: /emdk-for-android/3-1/api/securenfc
-    - title: Platform Intents
-      items:
-        - title: Datawedge Intents
-          url: /emdk-for-android/3-1/guide/reference/refdatacaptureintent
-        - title: Battery Intent
-          url: /emdk-for-android/3-1/guide/reference/refbatteryintent
+        - title: Payment APIs
+          url: /emdk-for-android/3-1/api/payment
+        - title: Serial Comm APIs
+          url: /emdk-for-android/3-1/api/serialcomm
 
 ---
 

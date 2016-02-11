@@ -22,7 +22,14 @@ var Metalsmith = require('metalsmith'),
     blc = require('metalsmith-broken-link-checker'),
     headingsidentifier = require("metalsmith-headings-identifier"),
     sitemap = require('metalsmith-sitemap'),
-    Swag = require('swag');
+    Swag = require('swag'),
+    path = require('path'),
+    wrench = require('wrench'),
+    keyword_extractor = require("keyword-extractor"),
+    snippets = require('smart-text-snippet'),
+    yamlFront = require('front-matter'),
+    removeMd = require('remove-markdown'),
+    unfluff = require('unfluff');
 
 
 Swag.registerHelpers(Handlebars);
@@ -223,7 +230,7 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/api',
-        layoutName: 'api.html'
+        layoutName: 'guide.html'
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/guide',
@@ -300,7 +307,7 @@ var sitebuild = Metalsmith(__dirname)
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-0/api/personalshopper',
+        folder: 'emdk-for-android/4-0/api/PersonalShopper',
         automenu: true,
         ascontent: true
     }))
@@ -394,7 +401,86 @@ var sitebuild = Metalsmith(__dirname)
       console.log(err);
     }
     else {
-      console.log('Site build complete!');
+      console.log('Site build complete! - going to index');
+      index_generate("emdk-for-android/4-0");
+      index_generate("emdk-for-xamarin/1-0");
+      index_generate("stagenow/2-2");
     }
   });
 
+// INDEXING CODE
+
+var index_generate = function(folder){
+    folder = "build/" + folder;
+    var json = [];
+    files = wrench.readdirSyncRecursive(folder);
+    // console.log(files)
+      // Files is an array of filename 
+      // console.log(files);
+        console.log('indexing: ' + folder);
+    
+
+    for (var f = 0; f < files.length; f++) {
+        filename = folder + "/" + files[f];
+        if(path.extname(filename) == ".html"){
+            
+            console.log("reading:" + filename);
+            var html_file = fs.readFileSync(filename);
+            html = unfluff(html_file, 'en');
+            var mdfile= filename.replace("build/","src/").replace(".html",".md");
+            var md = fs.readFileSync(mdfile).toString();
+            
+            var yaml;
+            yaml = yamlFront(md);
+            //get just text
+            console.log("Generating Keywords: " + yaml.attributes.title );
+            if(yaml.body==""){
+                yaml.body = html.text
+            }
+            var keywords = keyword_extractor.extract(yaml.body,
+                {
+                    language:"english",
+                    remove_digits: true,
+                    return_changed_case:true,
+                    remove_duplicates: true
+
+                });
+            console.log("Keywords: " + keywords.length.toString());
+            keyword_string = "";
+            for (var x = 0; x < keywords.length; x++) {
+                keyword_string += keywords[x] + " ";
+            };
+            var snippet = snippets.snip(removeMd(yaml.body), {len: 150});
+            index_item = {
+                title: yaml.attributes.title,
+                keywords: keyword_string,
+                summary: snippet,
+                url: filename.replace("build/","/").replace("/index.html","")
+
+            }
+            if(index_item.keywords==""){
+                console.log("*** EMPTY FILE");
+                console.log(yaml.body);
+            }
+            else{
+                json.push(index_item);          
+
+            }
+        }
+    };
+    var json_file = folder+'/index.json';
+    console.log("Writing to: " + json_file);
+    fs.open(json_file, 'w', function(err, fd) {
+       if (err) {
+           return console.error(err);
+       }
+      console.log("Creating Index:" + json_file);     
+    });        
+    fs.writeFile(json_file, JSON.stringify(json), function(err) {
+        if(err) {
+            console.error("Could not write file" + json_file + ": %s", err);
+        }
+    });
+    
+
+}

@@ -27,7 +27,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Camera Manager" feature from the list and click "Right Arrow".
 
-    ![img](/img/MxCameraManagerTutorialImages/camera_feature.jpg)   
+    ![img](../../images/MxCameraManagerTutorialImages/camera_feature.jpg)   
 
 4. Provide some name in the "Name" field (Ex. MyCameraManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -35,17 +35,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So click on "All Cameras" drop-down in the wizard and select the option "Disable ALL Cameras".    
 
-    ![img](/img/MxCameraManagerTutorialImages/camera_manager_details.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/camera_manager_details.jpg)
 
-    ![img](/img/MxCameraManagerTutorialImages/camera_manager_details_selected.jpg)    
+    ![img](../../images/MxCameraManagerTutorialImages/camera_manager_details_selected.jpg)    
  
 5. Click Apply to apply the settings we provided    
   
-    ![img](/img/MxCameraManagerTutorialImages/camera_profile_created.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/camera_profile_created.jpg)
 
 6. Click Finish and your Camera profile for configuring the use of all Cameras on Symbol devices is created.
 
-    ![img](/img/MxCameraManagerTutorialImages/camera_manager_profile_created.jpg) 
+    ![img](../../images/MxCameraManagerTutorialImages/camera_manager_profile_created.jpg) 
   
 7. Click "Close".
 
@@ -55,12 +55,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 8. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](/img/MxCameraManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxCameraManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](/img/MxCameraManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -74,7 +74,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](/img/MxCameraManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxCameraManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -152,9 +152,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-    ![img](/img/MxCameraManagerTutorialImages/variables_added.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/variables_added.jpg)
 
-	![img](/img/MxCameraManagerTutorialImages/on_create_added.jpg)
+	![img](../../images/MxCameraManagerTutorialImages/on_create_added.jpg)
 	 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -238,9 +238,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like:
     
-    ![img](/img/MxCameraManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](../../images/MxCameraManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](/img/MxCameraManagerTutorialImages/on_opened_method_2.jpg) 
+    ![img](../../images/MxCameraManagerTutorialImages/on_opened_method_2.jpg) 
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -287,8 +287,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](/img/MxCameraManagerTutorialImages/parse_xml_1.jpg) 
-	![img](/img/MxCameraManagerTutorialImages/parse_xml_2.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/parse_xml_1.jpg) 
+	![img](../../images/MxCameraManagerTutorialImages/parse_xml_2.jpg)
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -318,7 +318,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](/img/MxCameraManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -358,7 +358,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](/img/MxCameraManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxCameraManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.
            
@@ -376,7 +376,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](/img/MxCameraManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxCameraManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us disable the use of all cameras on Symbol device. Now let's run the application.
  
@@ -391,11 +391,11 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Click on Camera application of your Symbol device and you will see that camera is enabled by default.
 
-    ![img](/img/MxCameraManagerTutorialImages/camera_enabled.png) 
+    ![img](../../images/MxCameraManagerTutorialImages/camera_enabled.png) 
 
 2. Run the application.
 
-    ![img](/img/MxCameraManagerTutorialImages/home_screen.png)
+    ![img](../../images/MxCameraManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message.
 
@@ -403,25 +403,25 @@ That's it!!! We are done with all the coding and configuration part that will le
   
 3. We will see the status of Camera in Symbol device. So click on the Camera application and you would see that the Camera is disabled as we have disabled the Camera permission through Profile Wizard using Camera Manager feature of Mx.
 
-    ![img](/img/MxCameraManagerTutorialImages/camera_disabled.png)
+    ![img](../../images/MxCameraManagerTutorialImages/camera_disabled.png)
 
 4. We will now enable the use of Camera through Profile Wizard. So select the "Profile Manager" and click "Edit" button.
 
-	![img](/img/MxCameraManagerTutorialImages/edit_camera_profile.jpg)
+	![img](../../images/MxCameraManagerTutorialImages/edit_camera_profile.jpg)
 
 5. Click "All Cameras" drop-down and select "Enable ALL Cameras" option.
 
-	![img](/img/MxCameraManagerTutorialImages/enable_camera_wizard.jpg)
+	![img](../../images/MxCameraManagerTutorialImages/enable_camera_wizard.jpg)
 
 6. Click "Apply" and then "Finish". Close the Profile Wizard as you are done with the configurations that will enable back the use of Cameras on Symbol device.
 
 7. Run the application again. 
 
-	![img](/img/MxCameraManagerTutorialImages/home_screen.png)
+	![img](../../images/MxCameraManagerTutorialImages/home_screen.png)
 
 8. Now open the Camera application and you would see that the use of Camera has been enabled back through Profile Wizard using [Camera Manager](../../mx/cameramgr) feature of Mx.
 
-	![img](/img/MxCameraManagerTutorialImages/camera_enabled.png) 
+	![img](../../images/MxCameraManagerTutorialImages/camera_enabled.png) 
 
     This is how Camera Manager lets us Enable/Disable the use of Cameras on Symbol devices through Profile Manager Wizard using [Camera Manager](../../mx/cameramgr) feature of Mx. 
 

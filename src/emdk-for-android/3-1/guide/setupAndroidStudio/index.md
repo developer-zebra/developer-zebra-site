@@ -21,42 +21,42 @@ title: EMDK For Android Setup (Android Studio1.0.x)
 
 1. Run the EMDK 3.1 Installer as Administrator, Then Click Next.
 
-	![img](images/setup/emdkInstall01.png)
+	![img](../../images/setup/emdkInstall01.png)
 
 2. Click I Agree after reading the License Agreement to continue the installation.
 
-	![img](images/setup/emdkInstall02.png)
+	![img](../../images/setup/emdkInstall02.png)
 
 3. Click next or select a custom install location by clicking Browse and then click next.
 
-	![img](images/setup/emdkInstall03.png)
+	![img](../../images/setup/emdkInstall03.png)
 
 4. Continue installing EMDK for Android in Android studio by selecting the `Use Android Studio` radio button ( As Shown ) and select Next.
 
-	![img](images/setup/emdkInstall04.png)
+	![img](../../images/setup/emdkInstall04.png)
 
 
 ###Install version 3.1 Update 1
 
 1. Run the EMDK 3.1 Update 1 Installer as Administrator, Then Click **Next >**.
 
-	![img](images/setup/install31UD1_AS_1.png)
+	![img](../../images/setup/install31UD1_AS_1.png)
 
 2. Backup your samples, or select **Next >** to Continue.
 
-	![img](images/setup/install31UD1_AS_2.png)
+	![img](../../images/setup/install31UD1_AS_2.png)
 
 3. Click **I Agree** after reading the License Agreement to continue the installation.
 
-	![img](images/setup/install31UD1_AS_3.png)
+	![img](../../images/setup/install31UD1_AS_3.png)
 
 4. When instalation completes, select **Next >**
 
-	![img](images/setup/install31UD1_AS_5.png)
+	![img](../../images/setup/install31UD1_AS_5.png)
 
 5. Then select **Finish**
 
-	![img](images/setup/install31UD1_AS_6.png)
+	![img](../../images/setup/install31UD1_AS_6.png)
 
 
 
@@ -74,7 +74,7 @@ In order to enable EMDK development in your project, you must first add the EMDK
 
 4. Select EMDK SDK add-on (ex: "Symbol Technologies, Inc.: EMDK API (16)") as the "Minimum SDK" under Phone and Tablet.
 
-	![img](images/setup/as_image8.png)
+	![img](../../images/setup/as_image8.png)
 
 5. Complete the New project Wizard by Clicking Next \> Next \> Finish
 	>Android Studio will display your project when Gradle build process is complete.
@@ -91,14 +91,14 @@ To verify that the EMDK has been added to your project.
 
 > Symbol Technologies, Inc.:EMDK 3.0 (API 19):19
 >
->![img](images/setup/as_image12.png)
+>![img](../../images/setup/as_image12.png)
 
 
 Another method to verifiy EMDK project integration is via the build.gradle file.
 
 Open build.gradle (Module: app) from the left-pane. The compileSdkVersion should be assigned to EMDK SDK add-on.
 
-![img](images/setup/as_image14.png)
+![img](../../images/setup/as_image14.png)
 
 **Your project is now ready for EMDK development (see EMDK Help for more information on creating an EMDK app).**
 
@@ -117,23 +117,23 @@ Starting with a previously created Project with a minimum API level of 16 or 19
 
 5. Click Browse button and locate the EMDK jar file (com.symbol.emdk.jar) from the SDK add-on folder and click OK
 
-	![img](images/setup/as_image25.png)
+	![img](../../images/setup/as_image25.png)
 
 	>The new module will eventualy appear in the left-pane of the project structure window.
 
 6. Click on app in left-pane and select the dependencies tab
 
-	![img](images/setup/as_image28.png)
+	![img](../../images/setup/as_image28.png)
 
 7. Press the button marked with the "+" at top-right to add select "Module Dependency".
 
-	![img](images/setup/as_image29.png)
+	![img](../../images/setup/as_image29.png)
 
 8. Select "com.symbol.emdk" from the "Choose modules" dialog then Press OK.
 
 9. The new dependency should be listed, now Press OK
 
-	![img](images/setup/as_image31.png)
+	![img](../../images/setup/as_image31.png)
 
 **Your project is now ready for EMDK development (see EMDK Help for more information on creating an EMDK app).**
 
@@ -151,11 +151,11 @@ Starting with a previously created Project with a minimum API level of 16 or 19.
 
 	>SDK add-on (API-19) name: **Symbol Technologies, Inc.:EMDK 3.0 (API 19):19**
 
-	![img](images/setup/as_image35.png)
+	![img](../../images/setup/as_image35.png)
 
 4. Click OK then Select Yes in the resulting dialog.
 
-	![img](images/setup/as_image36.png)
+	![img](../../images/setup/as_image36.png)
 
 **Your project is now ready for EMDK development (see EMDK Help for more information on creating an EMDK app).**
 
@@ -170,7 +170,7 @@ Select "Import Non-Android Studio project"
 
 2. Select the preferred sample, and press OK.
 
-	![img](images/setup/as_image38.png)
+	![img](../../images/setup/as_image38.png)
 
 3. Click Next and then Finish to complete the import wizard.
 
@@ -178,9 +178,9 @@ Select "Import Non-Android Studio project"
 
 4. From the Build menu, select Rebuild Project.
 
-	![img](images/setup/as_image47.png)
+	![img](../../images/setup/as_image47.png)
 
 5. Connect a Symbol Android device via USB, and select Run from the Run menu.
 
-	![img](images/setup/as_image48.png)
+	![img](../../images/setup/as_image48.png)
 

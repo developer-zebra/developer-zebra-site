@@ -37,11 +37,11 @@ You can [download](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
 
 So, the Package name for EHS Launcher App is **com.motorolasolutions.enterprisehomescreen**
 
-   ![img](/img/MxDefaultLauncherTutorialImages/ehs_app.jpg) 
+   ![img](../../images/MxDefaultLauncherTutorialImages/ehs_app.jpg) 
 
 Package name for Galaxy Launcher App is **com.epic.launcher.tw**
 
-   ![img](/img/MxDefaultLauncherTutorialImages/galaxy_launcher_app.jpg) 
+   ![img](../../images/MxDefaultLauncherTutorialImages/galaxy_launcher_app.jpg) 
 
 ## Creating The Project
 
@@ -63,23 +63,23 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
  
 4. Click on the App Manager feature. The parameter list will be populated.  
   
-    ![img](/img/MxDefaultLauncherTutorialImages/select_app_manager_feature.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/select_app_manager_feature.jpg)
 
 5. Now Click on the drop-down of the action field to see the supported features by App Manager. Select "Set as Default Launcher" feature.
 
-    ![img](/img/MxDefaultLauncherTutorialImages/app_manager_features.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/app_manager_features.jpg)
 
-    ![img](/img/MxDefaultLauncherTutorialImages/feature_default_launcher.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/feature_default_launcher.jpg)
   
 6. Keep the 'Name' field empty. Now let us set earlier installed EHS launcher application as default launcher application. So provide the previously found package name of EHS application  (com.motorolasolutions.enterprisehomescreen) in the field "Package Name". Keep the last to "Action" fields as it is.
 
 	> Note: If you have a different launcher application then provide the package name accordingly.
   
-    ![img](/img/MxDefaultLauncherTutorialImages/app_manager_install_value.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/app_manager_install_value.jpg)
   
 7. Click Apply and Finish. 
 
-    ![img](/img/MxDefaultLauncherTutorialImages/app_manager_profile_created.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/app_manager_profile_created.jpg)
   
 8. Click "Close".   
     >Note:  
@@ -87,12 +87,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 9. You can inspect the "EMDKConfig.xml" to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager. So you can see the entry of the 'Set Default Launcher' feature of App Manager and the package name of the launcher application that we entered earlier in the profile creation.
 
-    ![img](/img/MxDefaultLauncherTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxDefaultLauncherTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](/img/MxDefaultLauncherTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -106,7 +106,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](/img/MxDefaultLauncherTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxDefaultLauncherTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -184,7 +184,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-     ![img](/img/MxDefaultLauncherTutorialImages/on_create_added.jpg) 
+     ![img](../../images/MxDefaultLauncherTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. This must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -242,7 +242,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onOpened method should now look like this:
     
-    ![img](/img/MxDefaultLauncherTutorialImages/on_opened_method.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/on_opened_method.jpg)
 
 3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
 
@@ -270,7 +270,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	Your `handleEMDKResult` method should now look like this:
     
-    ![img](/img/MxDefaultLauncherTutorialImages/handle_emdk_result.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/handle_emdk_result.jpg)
 
 4. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -317,7 +317,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](/img/MxDefaultLauncherTutorialImages/parse_xml.jpg) 
+    ![img](../../images/MxDefaultLauncherTutorialImages/parse_xml.jpg) 
 
 5. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -347,7 +347,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](/img/MxDefaultLauncherTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/build_failure_message.jpg)
 
 6. In this step, we will add `displayResults` method to display the result of profile operation. If the Profile is successfully applied, we will display a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) with a success message and in case of any errors, we will display a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with the corresponding error details.
 
@@ -387,7 +387,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](/img/MxDefaultLauncherTutorialImages/display_results.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.  
     
@@ -404,7 +404,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](/img/MxDefaultLauncherTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxDefaultLauncherTutorialImages/on_destroy_method.jpg) 
 
     Settings at this point would allow you to apply EHS (Enterprise Home Screen) as the default launcher of your Mototrola Android device when we run the application.
 
@@ -442,7 +442,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The layout file 'activity_main.xml' inside "res/layout/" should now look like:
 
-    ![img](/img/MxDefaultLauncherTutorialImages/activity_main.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/activity_main.jpg)
 
 10. Now, In the Main activity make an entry of these UI elements using following code:
 
@@ -455,7 +455,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far the code looks like:
 
-	![img](/img/MxDefaultLauncherTutorialImages/ui_element_reference.jpg) 
+	![img](../../images/MxDefaultLauncherTutorialImages/ui_element_reference.jpg) 
 
 11. Get the reference of these UI elements in `onCreate` method.
 
@@ -465,7 +465,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
  
      The `onCreate` method now looks like:
 
-    ![img](/img/MxDefaultLauncherTutorialImages/reference_on_create.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/reference_on_create.jpg)
 
 12. In this step, we will write a function that takes package name of the launcher application as input parameter and programmatically sets that application as the default launcher application.
 
@@ -516,7 +516,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `setLauncherApplication` method should look like: 
 
-    ![img](/img/MxDefaultLauncherTutorialImages/set_launcher_app_method.jpg) 
+    ![img](../../images/MxDefaultLauncherTutorialImages/set_launcher_app_method.jpg) 
 
 13. Let us call this method by implementing on click listener of the `setDefaultLauncherButton` button. This listener will get the package name entered by user from the Edit Text and call the `setLauncherApplication` method for a valid package name as follows:
 
@@ -546,7 +546,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Finally the `onCreate` method should look like:
 
-    ![img](/img/MxDefaultLauncherTutorialImages/final_on_create_method.jpg)
+    ![img](../../images/MxDefaultLauncherTutorialImages/final_on_create_method.jpg)
 
 That's it!!! We are done with all the coding and configuration part. Now let us run the application.
  
@@ -562,29 +562,29 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
     The default launcher of TC 55 device looks like:
 
-    ![img](/img/MxDefaultLauncherTutorialImages/default_launcher.png)
+    ![img](../../images/MxDefaultLauncherTutorialImages/default_launcher.png)
 
 2. Run the application. The app sets the EHS (Enterprise Home Screen) application as the default launcher application as we had provided its package name while profile creation.
 
     The app automatically closes by displaying a success message as the launcher is changed. 
   
-	![img](/img/MxDefaultLauncherTutorialImages/ehs_launcher.png)
+	![img](../../images/MxDefaultLauncherTutorialImages/ehs_launcher.png)
   
 4. Now we will set Galaxy Launcher as the default launcher application. In order to do that, press and hold the menu key.
 
-    ![img](/img/MxDefaultLauncherTutorialImages/device_home_key.png)
+    ![img](../../images/MxDefaultLauncherTutorialImages/device_home_key.png)
 
     Select the "MxDefaultLauncherTutorial" app and the app will open.
   
-	![img](/img/MxDefaultLauncherTutorialImages/mx_default_launcher_app.png)
+	![img](../../images/MxDefaultLauncherTutorialImages/mx_default_launcher_app.png)
 
 5. Enter the package name of Galaxy Launcher application that we had obtained previously **(com.epic.launcher.tw)**.
  
-	![img](/img/MxDefaultLauncherTutorialImages/enter_package_name.png)
+	![img](../../images/MxDefaultLauncherTutorialImages/enter_package_name.png)
 
 6. Click `Set Default Launcher` button. The app will now set Galaxy Launcher as the default launcher application. The app will close automatically displaying a success message.
 
-    ![img](/img/MxDefaultLauncherTutorialImages/galaxy_launcher.png)
+    ![img](../../images/MxDefaultLauncherTutorialImages/galaxy_launcher.png)
 
     > Note:
     > In case of failure, the app will display a failure message in an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) and no change will take place.  

@@ -4,9 +4,9 @@ title:  Install CA Certificate using Certificate Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](/emdk-for-android/4-0/guide/profiles/cert).
+This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](../../mx/certmgr).
 
-You can use these installed digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. Let us create a tutorial using [Certificate Manager](/emdk-for-android/4-0/guide/profiles/cert) and install a sample CA certificate that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network.
+You can use these installed digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. Let us create a tutorial using [Certificate Manager](../../mx/certmgr) and install a sample CA certificate that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network.
 
 >Note:  
 >We can install different types of certificates (Ex. .PEM, .PFX, .P12 etc. ) but for this tutorial, we will install a sample CA certificate (.PEM file). 
@@ -24,17 +24,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "CertManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding the Certificate Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "CertificateProfile" as the Profile Name for this tutorial.
 
@@ -42,7 +42,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Certificate Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/MxCertManagerTutorialImages/certificate_keystore.jpg)
+    ![img](../../images/MxCertManagerTutorialImages/certificate_keystore.jpg)
 
 4. Now, We have to add the feature to install our sample CA certificate on Symbol device. But, we need to make sure that before installing or uninstalling certificates, a keystore must exist. It means, we need to initialize Android Keystore on our Symbol device. When you initialize the Android keystore you create a new keystore replacing any previously existing one. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile. We will use Certificate Manager feature multiple times with the same profile in this tutorial. This Certificate Manager feature will be used to initialize Android Keystore.
 
@@ -50,15 +50,15 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 5. Click the "Certificate Action" drop-down and select "Initialize Android Keystore" option.
 
-	![img](images/MxCertManagerTutorialImages/initialize_android_keystore.jpg)
+	![img](../../images/MxCertManagerTutorialImages/initialize_android_keystore.jpg)
 
 6. Provide the password required to initialize the Android Keystore in "Keystore Password" field (Ex. 1234).
 
-	![img](images/MxCertManagerTutorialImages/keystore_password.jpg)
+	![img](../../images/MxCertManagerTutorialImages/keystore_password.jpg)
 
 7. As mentioned, we will add another Certificate Manager feature in the same profile to install our sample CA Certificate on Symbol device. Select the "Certificate Manager" feature from the list and click "Right Arrow". This Certificate Manager will be use to install CA Certificate on Symbol device.
 
-	![img](images/MxCertManagerTutorialImages/certificate_feature.jpg)  
+	![img](../../images/MxCertManagerTutorialImages/certificate_feature.jpg)  
 
     Provide some name in the "Name" field (Ex. MyCertificateManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -68,7 +68,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
  
 	* Click on "Certificate Action" drop-down in the wizard and select the option "Install Certificate".    
 
-    ![img](images/MxCertManagerTutorialImages/install_cert.jpg)
+    ![img](../../images/MxCertManagerTutorialImages/install_cert.jpg)
 
     >Note:  
     >To uninstall any installed certificate, select "Uninstall Certificate" option from "Certificate Action" drop-down and provide the appropriate alias name of certificate you want to uninstall.  
@@ -77,7 +77,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	* Click on "Certificate Type" drop-down in the wizard and select the option "CA Certificate (.PEM file)".
 
-	![img](images/MxCertManagerTutorialImages/cert_type.jpg)
+	![img](../../images/MxCertManagerTutorialImages/cert_type.jpg)
 
 	* Provide the SD Card path of the Sample CA Certificate that we put in the beginning (/storage/sdcard1/test.pem).
 
@@ -85,17 +85,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	* Keep rest of the fields as it is and your profile wizard for Certificate Manager should look like:  
  
-    ![img](images/MxCertManagerTutorialImages/cert_manager_wizard.jpg)   
+    ![img](../../images/MxCertManagerTutorialImages/cert_manager_wizard.jpg)   
  
 8. Click Apply to apply the settings we provided    
   
-    ![img](images/MxCertManagerTutorialImages/certificate_profile_created.jpg)
+    ![img](../../images/MxCertManagerTutorialImages/certificate_profile_created.jpg)
 
 	> Note: As you can see, we have added two Certificate Manager features in the same profile to Initialize Android Keystore and Install sample CA Certificate respectively on the Symbol device.
 
 9. Click Finish and your Certificate profile for initializing Android Keystore and installing CA Certificate is created.
 
-    ![img](images/MxCertManagerTutorialImages/certificate_manager_profile_created.jpg) 
+    ![img](../../images/MxCertManagerTutorialImages/certificate_manager_profile_created.jpg) 
   
 10. Click "Close".
 
@@ -104,7 +104,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 11. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxCertManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxCertManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
@@ -121,7 +121,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxCertManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxCertManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -181,7 +181,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So this is how variable declaration looks like:
 
-	![img](images/MxCertManagerTutorialImages/variables_added.jpg)
+	![img](../../images/MxCertManagerTutorialImages/variables_added.jpg)
 
     In the onCreate method, we call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. 
 
@@ -203,7 +203,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-     ![img](images/MxCertManagerTutorialImages/on_create_added.jpg) 
+     ![img](../../images/MxCertManagerTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -249,7 +249,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
@@ -287,9 +287,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `onOpened` method should now look like:
     
-    ![img](images/MxCertManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](../../images/MxCertManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](images/MxCertManagerTutorialImages/on_opened_method_2.jpg) 
+    ![img](../../images/MxCertManagerTutorialImages/on_opened_method_2.jpg) 
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -336,7 +336,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxCertManagerTutorialImages/parse_xml.jpg) 
+    ![img](../../images/MxCertManagerTutorialImages/parse_xml.jpg) 
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -366,7 +366,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxCertManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxCertManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -406,7 +406,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The method `displayResults` should look like:
     
-    ![img](images/MxCertManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxCertManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.
            
@@ -424,7 +424,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxCertManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxCertManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us install the sample CA certificate on Symbol Android device. Now let us run the application.
  
@@ -437,13 +437,13 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Before running the application, it is recommended that the key store be cleared. (Settings -> Security -> Clear Credentials) 
 
-    ![img](images/MxCertManagerTutorialImages/clear_credentials.png)
+    ![img](../../images/MxCertManagerTutorialImages/clear_credentials.png)
 
 	> Note: If "Clear Credentials" option is disabled, you don't need to clear it.  
 
 2. Run the application.
 
-    ![img](images/MxCertManagerTutorialImages/home_screen.png)
+    ![img](../../images/MxCertManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message, which indicates that the sample CA certificate with alias name "Test-Certificate" has been installed.
 
@@ -454,25 +454,25 @@ That's it!!! We are done with all the coding and configuration part that will le
 	* Navigate to Settings -> Wi-Fi. 
 	* Press "+" button to add a Wi-Fi network.
 
-	![img](images/MxCertManagerTutorialImages/add_network.png)
+	![img](../../images/MxCertManagerTutorialImages/add_network.png)
 
 	* Tap the "Security" drop-down and select "802.1x EAP" option. 
 
-    ![img](images/MxCertManagerTutorialImages/security_option.png)
+    ![img](../../images/MxCertManagerTutorialImages/security_option.png)
 
 	* Now scroll down and tap on "EAP method" drop-down. Select "TLS" option.
 
-	![img](images/MxCertManagerTutorialImages/tls.png)
+	![img](../../images/MxCertManagerTutorialImages/tls.png)
 
 	* Scroll down and tap on "CA Certificate" option and you should see the alias name (Test-Certificate) of the Sample CA certificate that we installed using Profile wizard.
 
-	![img](images/MxCertManagerTutorialImages/ca_certificate_installed.png)
+	![img](../../images/MxCertManagerTutorialImages/ca_certificate_installed.png)
 
 	The alias listed can become the value to use as the certificate when using Wi-Fi Config to configure a profile that uses EAP-TLS.
 
 4. You can also uninstall the installed certificates through Profile Manager wizard by simply selecting "Uninstall Certificate" option in the "Certificate Action" and proceed.
 
-	![img](images/MxCertManagerTutorialImages/uninstall_certificate.jpg)
+	![img](../../images/MxCertManagerTutorialImages/uninstall_certificate.jpg)
 
 5. This is how Certificate Manager lets us configure different types of certificate on the Symbol Android device using Profile Wizard. 
 

@@ -26,7 +26,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
     
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "USB Manager" feature from the list and click "Right Arrow".
 
-    ![img](/img/MxUSBManagerTutorialImages/usb_feature.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/usb_feature.jpg)
 
     Provide some name in the "Name" field (Ex. MyUSBManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -34,17 +34,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     > Note: If this option is disabled through Profile Wizard, you cannot enable this option manually by going into settings unless performed Factory Reset on it. So configure this feature programmatically to enable and disable ADB USB Usage in your application.      
 
-    ![img](/img/MxUSBManagerTutorialImages/usb_manager_details.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/usb_manager_details.jpg)
 
-    ![img](/img/MxUSBManagerTutorialImages/usb_manager_details_selected.jpg)    
+    ![img](../../images/MxUSBManagerTutorialImages/usb_manager_details_selected.jpg)    
  
 4. Click Apply to apply the settings we provided    
   
-    ![img](/img/MxUSBManagerTutorialImages/usb_profile_created.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/usb_profile_created.jpg)
 
 5. Click Finish and your USB Manager profile for configuring USB options is created.
 
-    ![img](/img/MxUSBManagerTutorialImages/usb_manager_profile_created.jpg) 
+    ![img](../../images/MxUSBManagerTutorialImages/usb_manager_profile_created.jpg) 
   
 6. Click "Close".
 
@@ -53,12 +53,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 7. You can inspect the "EMDKConfig.xml" created under "\assets" folder to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](/img/MxUSBManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxUSBManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](/img/MxUSBManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -72,7 +72,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](/img/MxUSBManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxUSBManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -132,7 +132,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	Declaration of global variables look like:
 
-	![img](/img/MxUSBManagerTutorialImages/global_variables.jpg)
+	![img](../../images/MxUSBManagerTutorialImages/global_variables.jpg)
 
 2. Let us add the required User Interface for this tutorial that will have two [Radio Buttons](http://developer.android.com/guide/topics/ui/controls/radiobutton.html) to Enable and Disable ADB USB Usage. The User Interface will also have a [Button](http://developer.android.com/reference/android/widget/Button.html) to apply changes selected by the user. 
 
@@ -189,11 +189,11 @@ So go inside "res/layout/activity_main.xml" of the project and remove all the co
 
 The layout file 'activity_main.xml' should now look like:
 
-![img](/img/MxUSBManagerTutorialImages/activity_main_1.jpg)
+![img](../../images/MxUSBManagerTutorialImages/activity_main_1.jpg)
 
 here is the remaining part:
 
-![img](/img/MxUSBManagerTutorialImages/activity_main_2.jpg)   
+![img](../../images/MxUSBManagerTutorialImages/activity_main_2.jpg)   
 	
 3. Now come back to "MainActivity.java". In  `onCreate` method, we will get the references for UI element that we created in previous step followed by the listener for "Set" button. We will then call `getEMDKManager` so that the EMDK can be initialized and checked to see if it is ready. 
 
@@ -221,7 +221,7 @@ here is the remaining part:
 
     The `onCreate` method should look like:
      
-     ![img](/img/MxUSBManagerTutorialImages/on_create_added.jpg)
+     ![img](../../images/MxUSBManagerTutorialImages/on_create_added.jpg)
 
 4. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -238,7 +238,7 @@ here is the remaining part:
 
 	Your complete `onOpened` method should now look like:
     
-    ![img](/img/MxUSBManagerTutorialImages/on_opened_method.jpg) 
+    ![img](../../images/MxUSBManagerTutorialImages/on_opened_method.jpg) 
 
 5. It displays an error as we have not added the listener method for "Set" button. So let us add `addSetButtonListener` by using following code:
 
@@ -271,7 +271,7 @@ here is the remaining part:
 
 	The `addSetButtonListener` method should look like:
      
-    ![img](/img/MxUSBManagerTutorialImages/add_set_button_listener.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/add_set_button_listener.jpg)
 
 6. Let us declare the `updateUSBSettings` method that will enable or disable ADB USB based on `value` attribute that gets updated depending on user selected option from Radio Button. This method prepares the xml input for the `processProfile` method based on `value` attribute.
 
@@ -349,11 +349,11 @@ here is the remaining part:
 
 	The `updateUSBSettings` method should look like:
      
-    ![img](/img/MxUSBManagerTutorialImages/update_usb_settings_1.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/update_usb_settings_1.jpg)
 
 	and the remaining part of this method looks like:	
 
-	![img](/img/MxUSBManagerTutorialImages/update_usb_settings_2.jpg)
+	![img](../../images/MxUSBManagerTutorialImages/update_usb_settings_2.jpg)
 
 7. It displays few errors as we have not declared them. So let us declare them one by one. Once the response is received in string, we will call `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The `parseXML` method uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -400,7 +400,7 @@ here is the remaining part:
 
 	Your complete `parseXML` method should now look like:
     
-    ![img](/img/MxUSBManagerTutorialImages/parse_xml.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/parse_xml.jpg)
 
 8. Once the response is parsed, we prepare status and error detail messages to handle errors using `buildFailureMessage` method. , in order to display to the user. 
 
@@ -430,7 +430,7 @@ here is the remaining part:
 
     `buildFailureMessage` method should look like:
     
-    ![img](/img/MxUSBManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxUSBManagerTutorialImages/build_failure_message.jpg)
 
 9. You will still see few errors as we have not yet declared `displayResults` method. So we now declare this generic method that takes two string arguments viz. `title` and `description` and displays them in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html) so that the user understands the status of its ADB USB operation. The field `title` represents the status of Profile Manager operation, which could be Success or Failure. The field `description` describes the respective status.
 
@@ -460,7 +460,7 @@ here is the remaining part:
 
 	The method `displayResults` method looks like:
     
-    ![img](/img/MxUSBManagerTutorialImages/display_results.jpg)  
+    ![img](../../images/MxUSBManagerTutorialImages/display_results.jpg)  
        
 	You can see that all the errors are gone.  
     
@@ -477,7 +477,7 @@ here is the remaining part:
 
     Your onDestroy method should now look like this:  
 
-    ![img](/img/MxUSBManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxUSBManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us configure (Enable/Disable) the USB ADB Usage on Symbol Android device. Now let us run the application.
  
@@ -490,23 +490,23 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     Before running the application, we will make sure that USB ADB mode is ON so that we can run this tutorial. So go to Settings -> Developer Options. Make sure that "USB debugging" (ADB Mode) option is ON.
 
-    ![img](/img/MxUSBManagerTutorialImages/adb_mode_on.png)
+    ![img](../../images/MxUSBManagerTutorialImages/adb_mode_on.png)
 
 2. Run the application.
 
-    ![img](/img/MxUSBManagerTutorialImages/home_screen.png)
+    ![img](../../images/MxUSBManagerTutorialImages/home_screen.png)
 
 3. Now select your USB ADB option (We will select "Disable") and press "Set" button. 
 
 	You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message, which indicates that the app has successfully disabled USB ADB Mode.
 
-	![img](/img/MxUSBManagerTutorialImages/success.png)
+	![img](../../images/MxUSBManagerTutorialImages/success.png)
 
 	> Note: In case of any errors, you will see a Failure status with respective error message in that dialog.
 
 3. In other words, the USB debugging option on your Symbol device is turned OFF and you will not be able to run any Android application on this Symbol device. 
 
-    ![img](/img/MxUSBManagerTutorialImages/adb_mode_off.png)
+    ![img](../../images/MxUSBManagerTutorialImages/adb_mode_off.png)
 
 	You can select the enable option and press "Set" button to turn USB ADB Usage ON.
 

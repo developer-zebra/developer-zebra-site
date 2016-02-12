@@ -3,7 +3,7 @@ title:  Data Capture Profile Feature Tutorial
 ---
 ## Developing an EMDK for Android Application Part 1
 
-This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/4-0/guide/profiles/profilebarcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/4-0/guide/profiles/profilekeystroke) feature of [EMDK Profiles](/emdk-for-android/4-0/guide/profiles/usingwizard).
+This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](../../mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](../../mx/data-capture/keystroke) feature of [EMDK Profiles](../../guide/profile-manager).
 
 ###Prerequisites
 
@@ -17,17 +17,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "EMDKSample" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../../tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../../tutorial/tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../../tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../../tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "DataCaptureProfile" as the Profile Name for this tutorial.
 
@@ -35,7 +35,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 3. Now, you can see all the available features on the left hand side of the Profile Editor window. Select any feature from the list and click "Right Arrow" (Ex: "ActivitySelection" has been selected. By using this feature Activities can be associated with the application. Then the data capture feature will be enabled automatically when the specified activity is in foreground).
   
-    ![img](images/setup/image051.jpg)
+    ![img](../../images/setup/image051.jpg)
   
 4. Click on the selected feature. The parameter list will be populated. 
 
@@ -44,49 +44,49 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 5. Click "ActivitySelection" under parameters.
   
-    ![img](images/setup/image055.jpg)  
+    ![img](../../images/setup/image055.jpg)  
 
 6. Specify the applications package name and click "Apply".
   
-    ![img](images/setup/image057.jpg)
+    ![img](../../images/setup/image057.jpg)
   
 7. Specify an Activity inside the application and click "Apply".
   
-    ![img](images/setup/image059.jpg)
+    ![img](../../images/setup/image059.jpg)
   
 8. Click "OK".
   
-    ![img](images/setup/image061.jpg)
+    ![img](../../images/setup/image061.jpg)
   
 9. Select any data capture feature and click Right Arrow (Ex: "Barcode" has been selected).
   
-    ![img](images/setup/image063.jpg)
+    ![img](../../images/setup/image063.jpg)
   
 10. Click on the "Barcode" feature. The parameter list will be populated.
 	> Note: 
 	> The field "Name" contains user defined name to identify a particular Barcode feature. This is required when editing any specific Barcode feature programmatically, which is outside the scope of this tutorial. So we will keep the "Name" field empty.
   
 11. Enable the feature and change some parameters.
-    ![img](images/setup/image067.jpg)
-    ![img](images/setup/image069.jpg)
-    ![img](images/setup/image071.jpg)
+    ![img](../../images/setup/image067.jpg)
+    ![img](../../images/setup/image069.jpg)
+    ![img](../../images/setup/image071.jpg)
   
 12.    Click "Apply". 
 13.    Select the Keystroke feature and click "Right Arrow" (Ex: "Keystroke" has been selected).
 	> Note:
 	> The field "Name" contains user defined name to identify a particular Keystroke feature. This is required when editing any specific Keystroke feature programmatically, which is outside the scope of this tutorial. So we will keep the "Name" field empty.
 
-    ![img](images/setup/image073.jpg)
+    ![img](../../images/setup/image073.jpg)
   
 14. Enable the feature and change some parameters.
   
-    ![img](images/setup/image075.jpg)
+    ![img](../../images/setup/image075.jpg)
   
-    ![img](images/setup/image077.jpg)
+    ![img](../../images/setup/image077.jpg)
   
 15. Click "Apply" and "Finish".
   
-    ![img](images/setup/image079.jpg)
+    ![img](../../images/setup/image079.jpg)
   
 16.    Click "Close".  
     >Note:  
@@ -94,14 +94,14 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 17. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/setup/image083.jpg)
+    ![img](../../images/setup/image083.jpg)
    
-    ![img](images/setup/image085.jpg)   
+    ![img](../../images/setup/image085.jpg)   
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/setup/image087.jpg)
+    ![img](../../images/setup/image087.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -115,7 +115,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/setup/image089.jpg)  
+    ![img](../../images/setup/image089.jpg)  
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -172,7 +172,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-     ![img](images/setup/image091.jpg) 
+     ![img](../../images/setup/image091.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. This must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `mProfileManager`. This is how we will interface with the APIs in the rest of the code:  
 
@@ -204,7 +204,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onOpened method should now look like this:
     
-    ![img](images/setup/image095.jpg)  
+    ![img](../../images/setup/image095.jpg)  
     
 3. Now let's override the "onDestroy" method so we can release the EMDKManager resources:  
 
@@ -219,7 +219,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/setup/image093.jpg)  
+    ![img](../../images/setup/image093.jpg)  
 
 4. Remove the default "TextView", inside "res/layout/activity_main.xml".
 
@@ -239,12 +239,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     >Make sure the device is in USB debug.
 7. Run the application.
   
-	![img](images/setup/image103.png)
+	![img](../../images/setup/image103.png)
   
 8. Press the trigger button and scan a barcode.
 9. The scanned data will be populated in the Edit Text field added to the UI.
   
-	![img](images/setup/image104.png)  
+	![img](../../images/setup/image104.png)  
 
 ##Important Programming Tips##
 
@@ -266,7 +266,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/4-0/guide/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/4-0/guide/profiles/profileintent) feature of EMDK Profiles to handle Data Capture output programmatically.
+Now that you have learned the basics of an EMDK for Android application, the [next tutorial](../../tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](../../mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCapture-ProfileManagerTutorial.zip).

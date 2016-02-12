@@ -1,0 +1,73 @@
+{{#if this.title}}
+<div class="row">
+    <div class="col-sm-12" id="guides">
+        {{#if this.img}}
+            <!-- <img src="{{this.menu.img}}" alt="logo" style="max-height:42px" class="img-responsive">  -->
+        {{/if}}
+        <H1>{{this.title}}</H1>
+        <p>{{this.description}}
+    </div>
+</div>
+{{/if}}
+
+<div class="row">
+    <div class="col-sm-12" id="guides">
+        <div class="waterfall columns" data-col-min-width="350" data-default-container-width="915" data-autoresize="true" >
+            {{#each this.automenu.items}}
+              <div >
+                    <h5>
+                        {{#if this.url}}<a href="{{this.url}}" style="color:inherit">{{/if}}
+                            {{this.title}}
+                        {{#if this.url}}</a>{{/if}}
+                    </h5> 
+                    {{#if this.items}}
+                        <ul style="display:block;">
+                        {{#each this.items}}
+                            <li>
+                                <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                {{#if this.items}}
+                                    <ul >
+                                    {{#each this.items}}
+                                        <li>
+                                        <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                        </li>
+                                    {{/each}}                        
+                                    </ul>
+                                {{/if}}
+                            </li>
+                        {{/each}}                        
+                        </ul>
+                    {{/if}}
+                </div>
+            {{/each}}
+            {{#each this.automenuappend.items}}
+              <div >
+                    <h5>
+                        {{#if this.url}}<a href="{{this.url}}" style="color:inherit">{{/if}}
+                            {{this.title}}
+                        {{#if this.url}}</a>{{/if}}
+                    </h5> 
+                    {{#if this.items}}
+                        <ul style="display:block;">
+                        {{#each this.items}}
+                            <li>
+                                <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                {{#if this.items}}
+                                    <ul >
+                                    {{#each this.items}}
+                                        <li>
+                                        <a href="{{this.url}}"><span>{{this.title}}</span></a>
+                                        </li>
+                                    {{/each}}                        
+                                    </ul>
+                                {{/if}}
+                            </li>
+                        {{/each}}                        
+                        </ul>
+                    {{/if}}
+                </div>
+            {{/each}}
+
+        </div>
+    </div>
+</div>

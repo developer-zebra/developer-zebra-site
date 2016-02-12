@@ -1,5 +1,5 @@
 ---
-title:  Apply Mx Profile Silently in a Non-Blocking way:
+title:  Apply Mx Profile Silently in a Non-Blocking way
 ---
 
 ## Overview
@@ -59,17 +59,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "ApplyProfileSilentlyTutorial" as the project name for this tutorial and "HandlerActivity" as the activity name while creating the project.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The App Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "AppManagerProfile" as the Profile Name for this tutorial.
 
@@ -77,7 +77,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. We want to install the downloaded APK file that is residing in the device's SD Card using App Manager. So select the "App Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/app_manager_feature.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/app_manager_feature.jpg)
 
     Provide some Name in the "Name" field to modify this feature programmatically (Ex. MyAppManager).
 
@@ -86,15 +86,15 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     Since we want to install an application, keep the Action in drop-down as "Install". 
     Provide the path and name of the Android application APK file within the device file system (Ex. /storage/sdcard1/AllInstalledApps.apk).  
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/app_manager_details.jpg)   
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/app_manager_details.jpg)   
  
 4. Click Apply to apply the settings we provided    
   
-    ![img](images/ApplyProfileSilentlyTutorialImages/app_manager_profile_created.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/app_manager_profile_created.jpg)
 
 5. Click Finish and your App Manager profile for installing an application is created.
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/app_profile_created.jpg) 
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/app_profile_created.jpg) 
   
 6. Click "Close".
 
@@ -103,12 +103,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 7. You can inspect the "EMDKConfig.xml" created under "\assets" folder to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/ApplyProfileSilentlyTutorialImages/manifest_file.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -122,7 +122,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code
 
@@ -190,7 +190,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-     ![img](images/ApplyProfileSilentlyTutorialImages/on_create_added.jpg) 
+     ![img](../../images/ApplyProfileSilentlyTutorialImages/on_create_added.jpg) 
           
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of `profileManager` and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -237,7 +237,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete onOpened method should now look like this:
     
-    ![img](images/ApplyProfileSilentlyTutorialImages/on_opened_method.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/on_opened_method.jpg)
  
 
 3. Create a Handler and retrieve the Result parameter from the Message by type casting `msg.obj` to `String` in `handleMessage` method of Handler.
@@ -258,7 +258,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The Handler created looks like::
     
-    ![img](images/ApplyProfileSilentlyTutorialImages/handler_created.jpg)  
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/handler_created.jpg)  
 
     > Note: We will not be using this result parameter as we don't have UI in this tutorial. But it could be helpful to display result for the applications that have UI.
     
@@ -289,7 +289,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your `applyProfile` method should look like:
     
-    ![img](images/ApplyProfileSilentlyTutorialImages/apply_profile.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/apply_profile.jpg)
 
 5. Now let's override the "onDestroy" method so we can release the EMDKManager resources:  
 
@@ -305,7 +305,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/on_destroy_method.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/on_destroy_method.jpg)
 
 6. Assign Null to EMDK objects in the "onClosed" method.
 
@@ -335,7 +335,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So the code for applying styles in res->values->styles.xml looks like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/styles.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/styles.jpg)
 
 8. We will now include this style in HandlerActivity to make it transparent. So go to `AndroidManifest.xml` and add the following code in the `<activity>` tag for "HandlerActivity".
 
@@ -345,7 +345,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     This will apply the styles to "HandlerActivity" and make it transparent for those few milliseconds when this Activity is displayed to the user, which will resolve the purpose of calling it Applying Profile **Silently**.
 
     So the Manifest file looks like: looks like:
-    ![img](images/ApplyProfileSilentlyTutorialImages/handler_styles.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/handler_styles.jpg)
  
 9. This completes coding and configuration part that will allow us to apply App Manager's install configuration silently in a Non-Blocking way using Handler. If you want, you can run the Application now to test but we are now going to see how the same thing is done using our second option **AsyncTask**.  
 
@@ -374,7 +374,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The code should now look like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/async_oncreate_added.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/async_oncreate_added.jpg)
 
 5. We will now create an inner class named "ConfigureProfile" in "AsyncTaskActivity" that will extend `AsyncTask`. [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) will run the operation on a background thread without blocking UI thread. It can also return the processing result on UI thread if you want.
 
@@ -431,7 +431,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The code for AsyncTask should look like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/async_task_class.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/async_task_class.jpg)
 
 6. Once the EMDK is ready, we will get the `ProfileManager` object to process the profile in `onOpened` method.
     
@@ -459,13 +459,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So the complete `onOpened` method looks like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/async_on_opened_method.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/async_on_opened_method.jpg)
 
 7. We will now write `onDestroy` and `onClosed` methods by adding the same code that we added in the Handler Activity.
 
     So `onDestroy` and `onClosed` methods look like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/on_closed_destroyed_async.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/on_closed_destroyed_async.jpg)
 
 8. But the app will still be visible to the user for small period of time (few milliseconds) before it is closed similar to the case of Handler. We want to avoid UI as it may not require for many Mx configurations. So We will make the UI invisible (basically transparent) for those few milliseconds by applying [Android Styles](http://developer.android.com/guide/topics/ui/themes.html) to the `AsyncTaskActivity`.
 
@@ -477,7 +477,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     This will apply the styles to "AsyncTaskActivity" and make it transparent for those few milliseconds when this Activity is displayed to the user, which will resolve the purpose of calling it Applying Profile **Silently**.
 
     So the Manifest file looks like: looks like:
-    ![img](images/ApplyProfileSilentlyTutorialImages/async_styles.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/async_styles.jpg)
 
 9. This completes coding and configuration part that will allow us to apply App Manager's install configuration silently in a Non-Blocking way using AsyncTask.
 
@@ -499,13 +499,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So the Manifest file should now look like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/change_lable_name.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/change_lable_name.jpg)
 
     > Note: It is not necessary to change the label name. But if we don't change, it will display the "AsyncTaskActivity" name instead of application name in the device's applications grid, when we run the application using AsyncTask.
    
     Now when we run the application, it will launch "HandlerActivity" because currently that is the Launcher Activity in "AndroidManifest.xml" file. 
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/handler_manifest_launcher.jpg) 
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/handler_manifest_launcher.jpg) 
 
     > Note: Make sure that "AllInstalledApps" is not installed on the device before running the app, else the install feature will give error.  
 
@@ -513,7 +513,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     You will not see any User Interface. The application applied the App Manager's install configuration on background thread silently using Handler and installed the "AllInstalledApps" application whose APK we had provided in the wizard.
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/handler_success.png)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/handler_success.png)
   
 3. Now we will run the application using AsyncTask. We need to set "AsyncTaskActivity" as the Launcher Activity to start the application with "AsyncTaskActivity". So remove the "Intent-Filter" code from "HandlerActivity" and add to the "AsyncTaskActivity" in the "AndroidManifest.xml" file.
 
@@ -526,7 +526,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So the AndroidManifest.xml file now looks like:
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/async_manifest_launcher.jpg)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/async_manifest_launcher.jpg)
 
     Before running the application using "AsyncTask", uninstall the "AllInstalledApps" application that we installed using Handler just now.
 
@@ -536,7 +536,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     You will not see any User Interface. The application applied the App Manager's install configuration on background thread silently using AsyncTask and installed the "AllInstalledApps" application whose APK we had provided in the wizard.  
 
-    ![img](images/ApplyProfileSilentlyTutorialImages/handler_success.png)
+    ![img](../../images/ApplyProfileSilentlyTutorialImages/handler_success.png)
 
     > Note: While running the application using both Handler and AsyncTask, you can interact with the User Interface while profile settings are being applied on background thread. It won't hang the User Interface this time.
 

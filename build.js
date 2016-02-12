@@ -155,6 +155,9 @@ var metaUrl = function(config) {
     };
 };
 
+
+
+
 Handlebars.registerHelper("debug", function(optionalValue) {
   console.log("Current Context");
   console.log("====================");
@@ -219,7 +222,7 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/api',
-        layoutName: 'api.html'
+        layoutName: 'guide.html'
     }))
     .use(findLayout({
         pattern: '[^/]+/[^/]+/guide',
@@ -274,9 +277,6 @@ var sitebuild = Metalsmith(__dirname)
         mxversion: '5.0'
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/3-1/'
-    }))
-    .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',
         automenu: true
     }))
@@ -296,7 +296,7 @@ var sitebuild = Metalsmith(__dirname)
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-0/api/personalshopper',
+        folder: 'emdk-for-android/4-0/api/PersonalShopper',
         automenu: true,
         ascontent: true
     }))
@@ -323,6 +323,44 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/'
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/',
+        automenu: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/barcode',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/core',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/personalshopper',
+        automenu: true,
+        ascontent: true
+    }))
+    
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/scanandpair',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/securenfc',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/api/simulscan',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/3-1/'
     }))
     .use(foldermenu({
         folder: 'emdk-for-xamarin/1-0/api/',

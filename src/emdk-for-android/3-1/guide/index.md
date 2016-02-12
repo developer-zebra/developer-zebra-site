@@ -15,79 +15,79 @@ menu:
   - title: Profile Manager
     items:
       - title: EMDK Profiles Overview
-        url: guide/profiles/usingwizard
+        url: mx/profile-manager-guides
       - title: Access Manager
-        url: guide/profiles/access
+        url: mx/access
       - title: Analytics Manager
-        url: guide/profiles/analytics
+        url: mx/analytics
       - title: App Manager
-        url: guide/profiles/app
+        url: mx/app
       - title: Audio Manager 
-        url: guide/profiles/audio
+        url: mx/audiomgr
       - title: Battery Manager 
-        url: guide/profiles/battery
+        url: mx/battery
       - title: Browser Manager
-        url: guide/profiles/browser
+        url: mx/browser
       - title: Camera Manager
-        url: guide/profiles/camera
+        url: mx/camera
       - title: Cellular Manager
-        url: guide/profiles/cellular
+        url: mx/cellular
       - title: Certificate Manager
-        url: guide/profiles/cert
+        url: mx/cert
       - title: Clock
-        url: guide/profiles/clock
+        url: mx/clock
       - title: Component Manager 
-        url: guide/profiles/component
+        url: mx/component
       - title: Data Capture
         items:
           - title: Activity Selection
-            url: guide/profiles/profileactivity
+            url: mx/data-capture/activity
           - title: Barcode
-            url: guide/profiles/profilebarcode
+            url: mx/data-capture/barcode
           - title: Intent Output
-            url: guide/profiles/profileintent
+            url: mx/data-capture/intent
           - title: IP Output
-            url: guide/profiles/profileIP
+            url: mx/data-capture/IP
           - title: Keystroke
-            url: guide/profiles/profilekeystroke
+            url: mx/data-capture/keystroke
           - title: Magstripe
-            url: guide/profiles/profilemsr
+            url: mx/data-capture/msr
       - title: Dev Admin
-        url: guide/profiles/devadmin
+        url: mx/devadmin
       - title: DHCP Manager 
-        url: guide/profiles/dhcp
+        url: mx/dhcp
       - title: Display Manager
-        url: guide/profiles/display
+        url: mgr
       - title: Encrypt Manager
-        url: guide/profiles/encrypt
+        url: mx/encrypt
       - title: GPRS Manager
-        url: guide/profiles/gprs
+        url: mx/gprs
       - title: KeyMap Manager 
-        url: guide/profiles/keymap
+        url: mx/keymap
       - title: Persistence Manager
-        url: guide/profiles/persistence
+        url: mx/persistence
       - title: Power Manager
-        url: guide/profiles/power
+        url: mx/power
       - title: PowerKey Manager
-        url: guide/profiles/powerkey
+        url: mx/powerkey
       - title: SD Card  Manager
-        url: guide/profiles/sdcard
+        url: mx/sdcard
       - title: Settings  Manager
-        url: guide/profiles/settings
+        url: mx/settings
       - title: Threat  Manager
-        url: guide/profiles/threat
+        url: mx/threat
       - title: Touch  Manager
-        url: guide/profiles/touch
+        url: mx/touch
       - title: UI  Manager
-        url: guide/profiles/ui
+        url: mx/ui
       - title: USB  Manager
-        url: guide/profiles/usb
+        url: mx/usb
       - title: WiFi
-        url: guide/profiles/wifi
+        url: mx/wifi
       - title: Wireless  Manager
-        url: guide/profiles/wireless
+        url: mx/wireless
       - title: XML  Manager
-        url: guide/profiles/xml
+        url: mx/xml
       - title: 
         url: 
   - title: Platform Intents

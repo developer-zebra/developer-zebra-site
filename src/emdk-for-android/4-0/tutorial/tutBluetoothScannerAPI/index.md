@@ -28,7 +28,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
   
-    ![img](/img/BluetoothScannerTutorialImages/manifest_file.jpg)
+    ![img](../../images/BluetoothScannerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -42,7 +42,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](/img/BluetoothScannerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/BluetoothScannerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -53,7 +53,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
         import com.symbol.emdk.EMDKManager;
 		import com.symbol.emdk.barcode.BarcodeManager;  
 
-    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-0/api/barcode/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
+    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-0/api/core/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
 
     After that you also need to implement [BarcodeManager.​ScannerConnectionListener](/emdk-for-android/4-0/api/barcode/BarcodeManager-ScannerConnectionListener), which is an interface to notify the client when the scanner device (Ex. RS507) has been connected or disconnected to the mobile device (Ex. TC55). Override its `onConnectionChange` method, which would be called when the scanner gets connected or disconnected to the mobile device. 
 
@@ -105,7 +105,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The code till here looks like:
 
-    ![img](/img/BluetoothScannerTutorialImages/variables_added.jpg)
+    ![img](../../images/BluetoothScannerTutorialImages/variables_added.jpg)
 	 
 
 2. Now, let us design a simple UI that has simply has a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to indicate status during pairing operation.
@@ -140,7 +140,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The layout should look like:
 
-    ![img](/img/BluetoothScannerTutorialImages/layout_added.jpg)
+    ![img](../../images/BluetoothScannerTutorialImages/layout_added.jpg)
 
     > Note: If you are using Android Studio, press CTRL+ALT+I or CMD+ALT+I to auto indent lines.
 	> 
@@ -167,9 +167,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So the complete `onCreate` method looks like:
      
-    ![img](/img/BluetoothScannerTutorialImages/on_create_added.jpg)
+    ![img](../../images/BluetoothScannerTutorialImages/on_create_added.jpg)
 
-4. Get the [EMDK Manager](/emdk-for-android/4-0/api/barcode/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
+4. Get the [EMDK Manager](/emdk-for-android/4-0/api/core/EMDKManager) in the `onOpened` method, update the `StatusView` TextView with a message and add the [ScannerConnectionListener](../../api/barcode/BarcodeManager-ScannerConnectionListener) to get the Connected/Disconnected events between Bluetooth Scanner and Mobile by adding following code in `onOpened` method.
 
 		:::java
 		// Update status view with EMDK Open Success message
@@ -189,7 +189,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The `onOpened` method should look like: 
 	
-	![img](/img/BluetoothScannerTutorialImages/on_opened_method.jpg)
+	![img](../../images/BluetoothScannerTutorialImages/on_opened_method.jpg)
 
 5. You will see error as we have not added `initScanner` method for initializing Bluetooth Scanner of our mobile device (Ex TC55). `initScanner` method gets the number of supported devices in a list.
 
@@ -244,7 +244,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	This should look like:	
 
-	![img](/img/BluetoothScannerTutorialImages/init_scanner.jpg)
+	![img](../../images/BluetoothScannerTutorialImages/init_scanner.jpg)
 
 6. Now, we will add a method to de-initialize the Scanner named `deInitScanner`. This method will perform following operations in the same sequence.
 
@@ -277,7 +277,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The method should look like:	
 
-	![img](/img/BluetoothScannerTutorialImages/de_init_scanner.jpg)
+	![img](../../images/BluetoothScannerTutorialImages/de_init_scanner.jpg)
 
 7.  Let's add an [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) for asynchronously updating the StatusView. This would be useful in the `onConnectionChange` callback method that updates the status to Connected/Disconnected depending upon the result. So `AsyncStatusUpdate` is an [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) that would simply update the Status View with following code.
 
@@ -299,7 +299,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The `AsyncStatusUpdate` should look like:
 
-	![img](/img/BluetoothScannerTutorialImages/async_status_update.jpg) 
+	![img](../../images/BluetoothScannerTutorialImages/async_status_update.jpg) 
 
 8. We would now add the code to update `statusView` in `onConnectionChange` callback method. This method would be invoked when the scanner device has been connected or disconnected to the mobile device. 
 
@@ -355,7 +355,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The `onConnectionChange` method should look like:
 
-	![img](/img/BluetoothScannerTutorialImages/on_connection_change.jpg)
+	![img](../../images/BluetoothScannerTutorialImages/on_connection_change.jpg)
 
 9. Finally, release all the resources in `onClosed` method. So it would remove the `ScannerConnectionListener` and release the `EMDKManager` using following code.
 
@@ -378,7 +378,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 	The `onClosed` method should look like:
 
-	![img](/img/BluetoothScannerTutorialImages/on_closed.jpg)
+	![img](../../images/BluetoothScannerTutorialImages/on_closed.jpg)
   
       	
 That's it!!! We are done with all the coding part that will let us perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode) introduced in EMDK V 3.1. Now let us run the application.
@@ -394,31 +394,31 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 
 	> Note: Initially the bluetooth of the device is turned OFF.
 
-    ![img](/img/BluetoothScannerTutorialImages/home_screen.png)
+    ![img](../../images/BluetoothScannerTutorialImages/home_screen.png)
 
 	So it displays a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) saying bluetooth scanner is not connected, which would start Bluetooth Pairing Utility to pair devices.
 
 3. It will first ask you to enable the Bluetooth of the device.
 
-	![img](/img/BluetoothScannerTutorialImages/enable_bluetooth.png)
+	![img](../../images/BluetoothScannerTutorialImages/enable_bluetooth.png)
 
 4. Click "Allow" and the Bluetooth Scanning Utility would turn your device's Bluetooth ON.
 
-	![img](/img/BluetoothScannerTutorialImages/turning_on_bluetooth.png)
+	![img](../../images/BluetoothScannerTutorialImages/turning_on_bluetooth.png)
 
 5. It would display a screen with a Barcode, which needs to be scanned to pair with this device.
 
-	![img](/img/BluetoothScannerTutorialImages/barcode_screen.png)
+	![img](../../images/BluetoothScannerTutorialImages/barcode_screen.png)
 
 6. You can take a Bluetooth Scanning device (Ex RS507) and scan the Barcode shown on the screen of your app (App is on TC55) and Bluetooth Scanning Utility would pair these two devices.
 
-	![img](/img/BluetoothScannerTutorialImages/bluetooth_scanner_connected.png)
+	![img](../../images/BluetoothScannerTutorialImages/bluetooth_scanner_connected.png)
 
 7. You can see a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) confirming that the two devices (TC55 & RS507) have been paired and connected to each other along with the updated status on `statusView`.
 
 8. Now, lets check under Bluetooth Settings of the Mobile device (TC55) for further confirmation. So go to device's Settings -> Bluetooth.
 
-	![img](/img/BluetoothScannerTutorialImages/devices_paired.png)
+	![img](../../images/BluetoothScannerTutorialImages/devices_paired.png)
 
 9. You can see RS507 under Paired devices that further confirms pairing. This is how we can perform pairing of Mobile device (Ex. TC55) with Bluetooth Scanning device (Ex. RS507) using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode)   
 
@@ -442,7 +442,7 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 
 
 ## What's Next
-Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode), in the next tutorial we would concentrate on [ScanAndPair APIs]((../api/scanandpair)) and develop an application to demonstrate its use. 
+Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-0/api/barcode), in the next tutorial we would concentrate on [ScanAndPair APIs](../../api/scanandpair) and develop an application to demonstrate its use. 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)]().

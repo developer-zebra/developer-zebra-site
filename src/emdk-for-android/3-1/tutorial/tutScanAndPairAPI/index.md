@@ -1,14 +1,14 @@
 ---
-title:  Pairing Remote Device by Scanning its Bluetooth Name or Address using ScanAndPair APIs
+title:  Pair Bluetooth devices
 ---
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [ScanAndPair APIs](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs) introduced in EMDK V 3.1, to perform pairing of any remote Scanning device by Scanning its Bluetooth Name or Bluetooth Address. The API uses [Scan and Pair Manager](/emdk-for-android/4-0/api/ScanAndPairManager), which is the primary object that allows pairing with remote scanning devices.
+This guide will walk you through creating an EMDK For Android application that will use [ScanAndPair APIs](../../api/scanandpair) introduced in EMDK V 3.1, to perform pairing of any remote Scanning device by Scanning its Bluetooth Name or Bluetooth Address. The API uses [Scan and Pair Manager](../../api/scanandpair/ScanAndPairManager), which is the primary object that allows pairing with remote scanning devices.
 
-In this tutorial, we will explore the [ScanAndPair APIs](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs) by using it for developing a basic application that will scan Bluetooth Name/Address of a Remote Scanning device (Ex. [MC40](https://www.zebra.com/content/dam/msi-new/assets/web/Business/Products/Mobile%20Computers/Handheld%20Computers/MC40/_Documents/Static_Files/MC40_Specifications.pdf)) and pair itself with this device through bluetooth name or address scanned by discovering it.
+In this tutorial, we will explore the [ScanAndPair APIs](../../api/scanandpair) by using it for developing a basic application that will scan Bluetooth Name/Address of a Remote Scanning device (Ex. [MC40](https://www.zebra.com/content/dam/msi-new/assets/web/Business/Products/Mobile%20Computers/Handheld%20Computers/MC40/_Documents/Static_Files/MC40_Specifications.pdf)) and pair itself with this device through bluetooth name or address scanned by discovering it.
 
-> Note: The [ScanAndPair API](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs) does not use Profile Wizard to scan and pair remote device and everything needs to be configured programmatically through code.   
+> Note: The [ScanAndPair API](../../api/scanandpair) does not use Profile Wizard to scan and pair remote device and everything needs to be configured programmatically through code.   
         
 ###Prerequisites
 
@@ -22,19 +22,19 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "ScanAndPairTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.   
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API.   
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
   
-    ![img](images/ScanAndPairTutorialImages/manifest_file.jpg)
+    ![img](../../images/ScanAndPairTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -48,7 +48,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/ScanAndPairTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/ScanAndPairTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -60,9 +60,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 		import com.symbol.emdk.scanandpair.ScanAndPairManager;
 		import com.symbol.emdk.scanandpair.StatusData;  
 
-    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-0/api/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
+    Then you must make the activity to implement [EMDKListener](../../api/core/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
 
-    After that you also need to implement [ScanAndPairManager.StatusListener](/emdk-for-android/4-0/api/ScanAndPairManager-StatusListener), which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
+    After that you also need to implement [ScanAndPairManager.StatusListener](../../api/scanandpair/ScanAndPairManager-StatusListener), which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
 
 	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
 	> 
@@ -95,7 +95,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     
 	We will now create some global variables to hold the instance objects of EMDKManager and ScanAndPairManager. These variables would be used throughout the code.
 
-    We will then add some UI elements starting with a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of Scan and Pair operation and then [EditText](http://developer.android.com/reference/android/widget/EditText.html) that will display the scanned Bluetooth Name/Address of Remote Scanning device or allow user to enter Bluetooth Name/Address of Remote Scanning device with which your Symbol device needs to be paired using [Scan and Pair APIs](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs). The UI would have a [Spinner](http://developer.android.com/guide/topics/ui/controls/spinner.html) that would specify what type of data (Bluetooth Name or Bluetooth Address) of Remote Scanning device, the client application needs to scan prior to pairing with that Remote device. The User Interface would also have two [Check Boxes](http://developer.android.com/reference/android/widget/CheckBox.html) that would be explained later while adding UI code. Of course, the UI will have [Buttons](http://developer.android.com/guide/topics/ui/controls/button.html) to apply settings and start operation of Scan and Pair or Unpair.       
+    We will then add some UI elements starting with a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of Scan and Pair operation and then [EditText](http://developer.android.com/reference/android/widget/EditText.html) that will display the scanned Bluetooth Name/Address of Remote Scanning device or allow user to enter Bluetooth Name/Address of Remote Scanning device with which your Symbol device needs to be paired using [Scan and Pair APIs](../../api/scanandpair). The UI would have a [Spinner](http://developer.android.com/guide/topics/ui/controls/spinner.html) that would specify what type of data (Bluetooth Name or Bluetooth Address) of Remote Scanning device, the client application needs to scan prior to pairing with that Remote device. The User Interface would also have two [Check Boxes](http://developer.android.com/reference/android/widget/CheckBox.html) that would be explained later while adding UI code. Of course, the UI will have [Buttons](http://developer.android.com/guide/topics/ui/controls/button.html) to apply settings and start operation of Scan and Pair or Unpair.       
  
     
         :::java
@@ -138,8 +138,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The code till here looks like:
 
-    ![img](images/ScanAndPairTutorialImages/variables_added_1.jpg)
-	![img](images/ScanAndPairTutorialImages/variables_added_2.jpg) 
+    ![img](../../images/ScanAndPairTutorialImages/variables_added_1.jpg)
+	![img](../../images/ScanAndPairTutorialImages/variables_added_2.jpg) 
 
 2. Now, let us design a simple UI that has components explained above.
 
@@ -285,7 +285,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 	> 
 	> If you are using Eclipse with ADT, press CTRL+SHFT+F or CMD+SHFT+F to auto indent lines     
  
-3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. We will then set the [ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html) that has a list of [Scan data types](/emdk-for-android/4-0/api/ScanAndPairConfig?ScanAndPairConfig.ScanDataType) of the Remote Scanner device to the Spinner.
+3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. We will then set the [ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html) that has a list of [Scan data types](../../api/scanandpair/ScanAndPairConfig-ScanDataType/) of the Remote Scanner device to the Spinner.
 
 	Finally, we would add methods calls to handle buttons and check boxes events.  
 
@@ -335,10 +335,10 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So the complete `onCreate` method looks like:
      
-    ![img](images/ScanAndPairTutorialImages/on_create_added_1.jpg)
-	![img](images/ScanAndPairTutorialImages/on_create_added_2.jpg)
+    ![img](../../images/ScanAndPairTutorialImages/on_create_added_1.jpg)
+	![img](../../images/ScanAndPairTutorialImages/on_create_added_2.jpg)
 
-4. Get the [EMDK Manager](/emdk-for-android/4-0/api/EMDKManager) in the `onOpened` method and update the `StatusView` TextView with a message by adding following code in `onOpened` method.
+4. Get the [EMDK Manager](../../api/core/EMDKManager) in the `onOpened` method and update the `StatusView` TextView with a message by adding following code in `onOpened` method.
 
 		:::java
 		// Get EMDK Manager
@@ -353,7 +353,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The `onOpened` method should look like: 
 	
-	![img](images/ScanAndPairTutorialImages/on_opened_method.jpg)
+	![img](../../images/ScanAndPairTutorialImages/on_opened_method.jpg)
 
 5. You will see few errors as we have not created the layout for ArrayAdapter and also not created onClick and onChecked listener methods. Let us resolve the errors by first creating the layout for Array Adapter.
 
@@ -371,7 +371,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	This should look like:	
 
-	![img](images/ScanAndPairTutorialImages/adapter_layout_added.jpg)
+	![img](../../images/ScanAndPairTutorialImages/adapter_layout_added.jpg)
 
 6. Lets add the `addCheckBoxListener` method that would handle check box event for "Always Scan" checkbox. If this check box is checked, we will disable the Bluetooth Name and Address EditTexts so that these two parameters can be provided by scanning Remote Scanning device and not by the user. If "Always Scan" check box is unchecked, we will enable the Bluetooth Name and Address EditTexts because user will have to enter these details of Remote Scanning device prior to pairing. This checkbox is related to `scanAndPairMgr.config.alwaysScan` field of `ScanAndPair` API that would be explained later.
 
@@ -398,7 +398,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	This method should look like:
 
-	![img](images/ScanAndPairTutorialImages/always_scan_check_box_listener.jpg)
+	![img](../../images/ScanAndPairTutorialImages/always_scan_check_box_listener.jpg)
 
 7. You can still see one error. So lets add `registerForButtonEvents` method to get rid of this error. `registerForButtonEvents` method contains onClick listener method calls of both "Pair" and "Unpair" buttons.
 
@@ -411,15 +411,15 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The method looks like:
 
-	![img](images/ScanAndPairTutorialImages/method_calls_for_both_buttons.jpg)
+	![img](../../images/ScanAndPairTutorialImages/method_calls_for_both_buttons.jpg)
 
 8. This is the most important part of this tutorial as these two methods would allow you to pair and unpair this client application with Remote Scanning device (Ex. MC40). Lets add these two methods starting with `addScanAndPairButtonEvents`.
 
 	First get the `scanAndPairButton` reference, set the onClickListener and override `onClick` method.
 
-	![img](images/ScanAndPairTutorialImages/on_click_listener_scan_pair.jpg)
+	![img](../../images/ScanAndPairTutorialImages/on_click_listener_scan_pair.jpg)
 
-	In case of Scan and Pair, we would get an instance of [ScanAndPairManager](/emdk-for-android/4-0/api/ScanAndPairManager) first. On this instance, set the status listener to get the status of Scan and Pair operations.
+	In case of Scan and Pair, we would get an instance of [ScanAndPairManager](../../api/scanandpair/ScanAndPairManager) first. On this instance, set the status listener to get the status of Scan and Pair operations.
 
 		:::java
 		if(scanAndPairMgr == null) {
@@ -435,7 +435,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 	* If ScanAndPairManager.config.alwaysScan is set to true, a scan is always performed when these methods are called. By default it is set to true. So scanning a Bluetooth barcode is required by default.
 	* If ScanAndPairManager.config.alwaysScan is set to false, then scanning is skipped and the ScanAndPairMgr.config.bluetoothInfo.deviceName or scanAndPairMgr.config.bluetoothInfo.macAddress field provided by the user are directly taken for pairing.
 
-	`checkBoxAlwaysScan` checkbox determines the status of `scanAndPairMgr.config.alwaysScan`. Set the [Notification Type](/emdk-for-android/4-0/api/ScanAndPairConfig?ScanAndPairConfig.NotificationType) to indicate the progress of `ScanAndPair` or `ScanAndUnpair` operations.
+	`checkBoxAlwaysScan` checkbox determines the status of `scanAndPairMgr.config.alwaysScan`. Set the [Notification Type](../../api/scanandpair/ScanAndPairConfig-NotificationType/) to indicate the progress of `ScanAndPair` or `ScanAndUnpair` operations.
 
 		:::java
 		scanAndPairMgr.config.alwaysScan = checkBoxAlwaysScan.isChecked();
@@ -449,7 +449,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	Notification Type has a specific beep sequence that lets you know the type of operation with the help of following table:
 
-	![img](images/ScanAndPairTutorialImages/notification_table.jpg)	 
+	![img](../../images/ScanAndPairTutorialImages/notification_table.jpg)	 
 
 	If `checkBoxAlwaysScan` checkbox is checked, we would perform a scan to get the Bluetooth Name/Address of the Remote device for pairing. So set the timeout that specifies the duration within which a Bluetooth Barcode should be scanned (Ex. 5 seconds). Later if the `checkboxHardTrigger` is checked, we would set `TriggerType.HARD` as trigger type, else set trigger type as `TriggerType.SOFT`.
 
@@ -475,7 +475,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	> Note: We have provided "0000", which is a default value.
 
-	Finally, we would update the Status of operations in `statusView` using [ScanAndPairResults](/emdk-for-android/4-0/api/ScanAndPairManager?ScanAndPairResults).
+	Finally, we would update the Status of operations in `statusView` using [ScanAndPairResults](../../api/scanandpair/ScanAndPairResults/).
 
 		:::java
 		if(!resultCode.equals(ScanAndPairResults.SUCCESS))
@@ -553,8 +553,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The complete `addScanAndPairButtonEvents` method should now look like:
 
-	![img](images/ScanAndPairTutorialImages/complete_scan_and_pair_button_event_method_1.jpg)
-	![img](images/ScanAndPairTutorialImages/complete_scan_and_pair_button_event_method_2.jpg)
+	![img](../../images/ScanAndPairTutorialImages/complete_scan_and_pair_button_event_method_1.jpg)
+	![img](../../images/ScanAndPairTutorialImages/complete_scan_and_pair_button_event_method_2.jpg)
 
 
 9. Lets write the `addScanAndUnpairButtonEvents` method to unpair the client application from your device with the Remote Scanning device (Ex. MC40). This Scan and Unpair method would perform similar steps that were performed in Scan and Pair method explained in previous step except one thing. It would call `scanAndUnpair` method to unpair device with Remote Scanning device as:
@@ -633,8 +633,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The complete `addScanAndUnpairButtonEvents` method should now look like:
 
-	![img](images/ScanAndPairTutorialImages/complete_scan_and_unpair_button_event_method_1.jpg)
-	![img](images/ScanAndPairTutorialImages/complete_scan_and_unpair_button_event_method_2.jpg)
+	![img](../../images/ScanAndPairTutorialImages/complete_scan_and_unpair_button_event_method_1.jpg)
+	![img](../../images/ScanAndPairTutorialImages/complete_scan_and_unpair_button_event_method_2.jpg)
 
 10. In this step, we would write all the possible status that could be received during ScanAndPair and ScanAndUnpair operations in the `onStatus` method. We have added status listeners in both ScanAndPair and ScanAndUnpair methods so that we can track different status when these operations are performed and display them on `statusView` to notify user. The `statusData.getState()` method provides all the states we can get during pairing and unpairing operations.
 
@@ -694,8 +694,8 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The `onStatus` method should look like:
 
-	![img](images/ScanAndPairTutorialImages/on_status_method_1.jpg)
-	![img](images/ScanAndPairTutorialImages/on_status_method_2.jpg)      
+	![img](../../images/ScanAndPairTutorialImages/on_status_method_1.jpg)
+	![img](../../images/ScanAndPairTutorialImages/on_status_method_2.jpg)      
     
 11. Display an error message on `statusView` TextView in the `onClosed` method using following code:
 
@@ -709,9 +709,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The `onClosed` method should now look like:
 
-	![img](images/ScanAndPairTutorialImages/on_closed_method.jpg)
+	![img](../../images/ScanAndPairTutorialImages/on_closed_method.jpg)
 
-12. Finally, we would clean up the objects created by [EMDK Manager](/emdk-for-android/4-0/api/EMDKManager) in `onDestroy` method using following code:
+12. Finally, we would clean up the objects created by [EMDK Manager](../../api/core/EMDKManager) in `onDestroy` method using following code:
 
 		:::java
 		if (emdkManager != null) {
@@ -722,10 +722,10 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So the `onDestroy` method should now look like:
 
-	![img](images/ScanAndPairTutorialImages/on_destroy_method.jpg)
+	![img](../../images/ScanAndPairTutorialImages/on_destroy_method.jpg)
   
       	
-That's it!!! We are done with all the coding part that will let us scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs) introduced in EMDK V 3.1. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](../../api/scanandpair) introduced in EMDK V 3.1. Now let us run the application.
  
 ## Running the Application
 
@@ -736,7 +736,7 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
  
 2. Run the application.
 
-    ![img](images/ScanAndPairTutorialImages/home_screen.png)
+    ![img](../../images/ScanAndPairTutorialImages/home_screen.png)
 
     You can see a message on the "StatusView" that indicates EMDK Manager has been successfully initialized.
   
@@ -744,39 +744,39 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
 
 4. We would scan the Bluetooth Address of Remote Scanning device. So select `MAC ADDRESS` option from "ScanData Type" spinner.     
 
-    ![img](images/ScanAndPairTutorialImages/mac_address_scan_data_type.png)
+    ![img](../../images/ScanAndPairTutorialImages/mac_address_scan_data_type.png)
 
 5. We would scan the Bluetooth Address of Remote Scanning device using Hard Scanner. So keep the "Hard Trigger" checkbox option as checked. So eventually our configuration should look like:
 
-	![img](images/ScanAndPairTutorialImages/config_before_scan.png)
+	![img](../../images/ScanAndPairTutorialImages/config_before_scan.png)
 
 6. Now press "Pair" button and it would start the pairing process by notifying the intermediate status in the "statusView" TextView.
 
-	![img](images/ScanAndPairTutorialImages/scan_and_pair_started.png)
+	![img](../../images/ScanAndPairTutorialImages/scan_and_pair_started.png)
 
-	![img](images/ScanAndPairTutorialImages/waiting_for_trigger_press.png)
+	![img](../../images/ScanAndPairTutorialImages/waiting_for_trigger_press.png)
 
 7. Now press the Hard Scan key to scan Bluetooth Address of the Remote Scanning device.
 
-	![img](images/ScanAndPairTutorialImages/beam_on_aim_barcode.png)
+	![img](../../images/ScanAndPairTutorialImages/beam_on_aim_barcode.png)
 
 8.  The following is the Barcode that has the MAC Address of Remote Scanning Device (Ex. MC40).
 
-	![img](images/ScanAndPairTutorialImages/barcode_with_mac_address.jpg)
+	![img](../../images/ScanAndPairTutorialImages/barcode_with_mac_address.jpg)
 
 9. Scan this Barcode and your device (Ex. TC55) would be successfully paired with the Remote Scanning Device (Ex. MC40).
 
-	![img](images/ScanAndPairTutorialImages/discovering_device.png)
+	![img](../../images/ScanAndPairTutorialImages/discovering_device.png)
 
-	![img](images/ScanAndPairTutorialImages/pairing_dialog.png)
+	![img](../../images/ScanAndPairTutorialImages/pairing_dialog.png)
 
 	Click "Pair" button on both devices (Mobile and Remote Scanning Device).
 
-	![img](images/ScanAndPairTutorialImages/device_paired.png)
+	![img](../../images/ScanAndPairTutorialImages/device_paired.png)
 
 10. You can see the "statusView" with a success message. Now let's confirm this by going to device's Settings -> Bluetooth.
 
-	![img](images/ScanAndPairTutorialImages/confirm_pairing.png)
+	![img](../../images/ScanAndPairTutorialImages/confirm_pairing.png)
 
 11. You can see that MC40 has been successfully paired under "PAIRED DEVICES" section of your device.
 
@@ -806,7 +806,7 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
 
 
 ## What's Next
-Now that you have learned how to scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](/emdk-for-android/4-0/guide/reference/EMDKList?ScanAndPair%20APIs), in the next tutorial we would concentrate on [SimulScan APIs](/emdk-for-android/4-0/guide/reference/EMDKList?SimulScan%20APIs) and develop an application to demonstrate its use. 
+Now that you have learned how to scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](../../api/scanandpair), in the next tutorial we would concentrate on [SimulScan APIs](../../api/simulscan) and develop an application to demonstrate its use. 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/ScanAndPairTutorial.zip).

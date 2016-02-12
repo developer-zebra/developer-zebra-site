@@ -4,7 +4,7 @@ title:  Controlling Application Access using Access Manager
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on controlling access to the device's applications using [Access Manager](/emdk-for-android/4-0/guide/profiles/access) feature of Mx. The [Access Manager](/emdk-for-android/4-0/guide/profiles/access) feature allows you to configure a set of applications that will be allowed to run and install on the device. When a profile with this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select "Single User Without Whitelist". Overall, the Access Manager supports following features.
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on controlling access to the device's applications using [Access Manager](../../mx/accessmgr) feature of Mx. The [Access Manager](../../mx/accessmgr) feature allows you to configure a set of applications that will be allowed to run and install on the device. When a profile with this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select "Single User Without Whitelist". Overall, the Access Manager supports following features.
 
    > Note: "Enable Whitelist" refers to "Single User Mode with Whitelist". "Disable Whitelist" refers to "Single User Mode without Whitelist" options in the wizard.
 
@@ -46,17 +46,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxAccessManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding The Access Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "AccessManagerProfile" as the Profile Name for this tutorial.
 
@@ -64,21 +64,21 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Access Manager" feature from the list and click "Right Arrow".
 
-    ![img](images/MxAccessManagerTutorialImages/access_manager_feature.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/access_manager_feature.jpg)
 
     As mentioned earlier you can see the drop down showing two options in the operation Mode. First one is Single user without whitelist and second is single user with whitelist. We would demonstrate both of these feature programatically using Access Manager API later in this tutorial. But for now, lets us configure one of these two operation modes from the wizard. This is to show you that we can modify any Mx feature both programmatically as well as using wizrad. Hence select Operation mode as "Single User Without Whitelist". 
 
 	Provide some name to refer this feature programmatically in order to modify it (Ex. MyAccessMgr).You can also keep the "Name" field empty.    
 
-    ![img](images/MxAccessManagerTutorialImages/access_mgr_details.jpg)   
+    ![img](../../images/MxAccessManagerTutorialImages/access_mgr_details.jpg)   
  
 4. Click Apply to apply the settings we provided. This setting would display all the applications that have not been added to the whitelist.    
   
-    ![img](images/MxAccessManagerTutorialImages/access_profile_applied.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/access_profile_applied.jpg)
 
 5. Click Finish and your Access Manager profile is created that would display all applications, which are not in the whitelist. We would configure rest of the features programmatically later in this tutorial.
 
-    ![img](images/MxAccessManagerTutorialImages/access_manager_profile_created.jpg) 
+    ![img](../../images/MxAccessManagerTutorialImages/access_manager_profile_created.jpg) 
   
 6. Click "Close".
 
@@ -87,12 +87,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 7. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](images/MxAccessManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxAccessManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxAccessManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -106,7 +106,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxAccessManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxAccessManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -184,7 +184,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far your code should look like:
      
-     ![img](images/MxAccessManagerTutorialImages/on_create_added.jpg)
+     ![img](../../images/MxAccessManagerTutorialImages/on_create_added.jpg)
 
 2. Now let's override the "onDestroy" method so we can release the EMDKManager resources:  
 
@@ -199,7 +199,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxAccessManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxAccessManagerTutorialImages/on_destroy_method.jpg) 
 
 3. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -244,13 +244,13 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 		   }
 		}
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
 	> Note: 2. If the status is other than `CHECK_XML`, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.
 
-	Now we will call a method `handleEMDKResult` in case of `CHECK_XML` status to handle this [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), which we will create in the next step.
+	Now we will call a method `handleEMDKResult` in case of `CHECK_XML` status to handle this [EMDKResults](../../api/core/EMDKResults), which we will create in the next step.
 
 		:::java
 		// Method call to handle EMDKResult
@@ -258,9 +258,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `onOpened` method should now look like this:
     
-    ![img](images/MxAccessManagerTutorialImages/on_opened_method.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/on_opened_method.jpg)
 
-4. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
+4. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](../../api/core/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
 
 		:::java
 		// Method to handle EMDKResult by extracting response and parsing it
@@ -286,7 +286,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	Your `handleEMDKResult` method should now look like this:
     
-    ![img](images/MxAccessManagerTutorialImages/handle_emdk_result.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/handle_emdk_result.jpg)
 
 5. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -333,7 +333,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxAccessManagerTutorialImages/parse_xml.jpg) 
+    ![img](../../images/MxAccessManagerTutorialImages/parse_xml.jpg) 
 
 6. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -363,7 +363,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxAccessManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/build_failure_message.jpg)
 
 7. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -403,7 +403,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The method `displayResults` should look like:
     
-    ![img](images/MxAccessManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.    
     
@@ -460,7 +460,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     So far the variables declared look like:   
 
-    ![img](images/MxAccessManagerTutorialImages/global_variables.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/global_variables.jpg)
 
 10. We will now add the layout for this application. This layout contains required View of this application. The view contains various drop downs for system settings menu, add package and drop package features. The view also contains two Radio Buttons to enable/disable white list mode. The layout also contains two Edit Texts that allow user to enter the package names to Add and Delete applications from the white list respectively when user enables the white list option from radio button. Finally the view contains a set button that implements all the changes made by the user.
 
@@ -576,15 +576,15 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     Go to "res/values" in the project of your Eclipse with ADT. Right Click on "values" and create a new Android XML file.
 
-    ![img](images/MxAccessManagerTutorialImages/right_click_value.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/right_click_value.jpg)
 
 	If you are using Android Studio, use following screen shot as a reference by right clicking on "values" to create a new Android XML file.
 
-	![img](images/MxAccessManagerTutorialImages/right_click_value_android_studio.jpg)
+	![img](../../images/MxAccessManagerTutorialImages/right_click_value_android_studio.jpg)
 
     Provide the file name (Ex. arrays)
 
-    ![img](images/MxAccessManagerTutorialImages/new_xml_file.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/new_xml_file.jpg)
 
     Click Finish and "arrays.xml" file will be created under "res/values".
 
@@ -674,7 +674,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     > Note: Please read detailed comments in the code to get significance of each attribute. 
 
-    ![img](images/MxAccessManagerTutorialImages/complete_on_create.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/complete_on_create.jpg)
 
 13. At this point, you will see few of errors. This is because we have not implemented respective on click listeners yet. Let us implement them one by one.
 
@@ -715,7 +715,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The `OnCheckedChangeListener` for Radio Group looks like:
 
-    ![img](images/MxAccessManagerTutorialImages/on_checked_change_listener.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/on_checked_change_listener.jpg)
 
 14. We have implemented a `onItemSelectedListener` for all three spinners that will take respective actions based on the spinner ID.
 
@@ -770,7 +770,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The `onItemSelectedListener` for spinners looks like:
 
-    ![img](images/MxAccessManagerTutorialImages/on_item_slected_listener.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/on_item_slected_listener.jpg)
 
 15. Now we will implement the `onClickListener` for the set Button. this listener will call method `modifyAccessManagerProfileXML` that forms an XML based on users selection and sets the changes to the Profile.
 
@@ -797,9 +797,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The `onClickListener` for set Button looks like:
 
-    ![img](images/MxAccessManagerTutorialImages/on_click_listener.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/on_click_listener.jpg)
 
-16. Finally, we will implement `modifyAccessManagerProfileXML` method. This is the method that actually implements Access Manager configurations set by the user. It prepares an xml input for the `processProfile` method based on "value" attribute of different Access Manager configurations. It then calls the `handleEMDKResult` method that we have already created to handle the [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) and display the output.
+16. Finally, we will implement `modifyAccessManagerProfileXML` method. This is the method that actually implements Access Manager configurations set by the user. It prepares an xml input for the `processProfile` method based on "value" attribute of different Access Manager configurations. It then calls the `handleEMDKResult` method that we have already created to handle the [EMDKResults](../../api/core/EMDKResults) and display the output.
 
     > Note: Please refer to code comments of `modifyAccessManagerProfileXML` method to understand more about "value" attribute.
     > The global integres hold these "value" attributes based on user selection of various Access Manager features (Enable/Disable Whitelist, System Settings, Add/Delete Packages to/from whitelist etc.).
@@ -911,7 +911,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
     The `modifyAccessManagerProfileXML` method looks like:
 
-    ![img](images/MxAccessManagerTutorialImages/modify_profile_method.jpg)
+    ![img](../../images/MxAccessManagerTutorialImages/modify_profile_method.jpg)
 
     You can see all the errors are gone now. The sample XML for "without Whitelist" feature, which is passed to `processProfile` method looks like:
 
@@ -934,7 +934,7 @@ That's it!!! We are done with all the coding and configuration part that will al
 
 2. Run the application.
 
-    ![img](images/MxAccessManagerTutorialImages/home_screen.png)
+    ![img](../../images/MxAccessManagerTutorialImages/home_screen.png)
 
 	You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message, which indicates that the app has successfully implemented settings that we had configured in the wizard. You won't see any change as we had disabled the whitelist in the wizard. 
 
@@ -944,27 +944,27 @@ That's it!!! We are done with all the coding and configuration part that will al
 
 3. Click the Radio Button Single user mode with whitelist and the respective view will be visible to user
 
-    ![img](images/MxAccessManagerTutorialImages/with_whitelist.png)
+    ![img](../../images/MxAccessManagerTutorialImages/with_whitelist.png)
 
     Now you have enabled whitelist. It means you can now add/remove applications to/from the whitelist. Let us add few applications to the whitelist. 
 
 5. Select "Add No Packages" drop-down and select "Add specified packages" option to add few applications to the whitelist.
 
-    ![img](images/MxAccessManagerTutorialImages/add_package_spinner.png)
+    ![img](../../images/MxAccessManagerTutorialImages/add_package_spinner.png)
 
     It will display an Edit Text to provide the package names of the applications that you want to add to whitelist.
    
-    ![img](images/MxAccessManagerTutorialImages/add_package_edit_text.png)
+    ![img](../../images/MxAccessManagerTutorialImages/add_package_edit_text.png)
 
     Provide package names of few applications separated by commas. (Ex. com.symbol.mxaccessmanagertutorial, com.allinstalledapps, com.symbol.mxgprstutorial).
 
-    ![img](images/MxAccessManagerTutorialImages/add_packages.png)
+    ![img](../../images/MxAccessManagerTutorialImages/add_packages.png)
 
     > Note: Make sure to add current application to the white list in order to set access restrictions on other applications. Otherwise user won't be able to access the current application that has access restrictions on other applications and eventually user has to perform Enterprise Reset on the device to get the default settings back.
 
     Keep the Full Access and press the "Set" button. 
 
-    ![img](images/MxAccessManagerTutorialImages/whitelist_mode.png)
+    ![img](../../images/MxAccessManagerTutorialImages/whitelist_mode.png)
 
     You can see that the device is in single user mode with whitelist. It shows the three applications in the whitelist whose package names we had provided in Add Package Edit Text. The other developed apps are not visible in this mode.
 
@@ -974,18 +974,18 @@ That's it!!! We are done with all the coding and configuration part that will al
 
     Go to `onOpened` method and comment the highlighted code in the following snapshot.
  
-    ![img](images/MxAccessManagerTutorialImages/commented_code.jpg) 
+    ![img](../../images/MxAccessManagerTutorialImages/commented_code.jpg) 
 
     > Note: You can uncomment this code later after verifying "Delete Package from Whitelist" feature.   
 
 7. Run the application again.
     Check the Radio Button "Single User with Whitelist" -> click "Delete No Packages" drop down -> Select "Delete Specified Packages(s)" option -> Add name of the application package in Edit Text that you want to remove from whitelist (Ex. com.allinstalledapps).
 
-    ![img](images/MxAccessManagerTutorialImages/delete_package.png)
+    ![img](../../images/MxAccessManagerTutorialImages/delete_package.png)
 
     Click "Set" button.
 
-    ![img](images/MxAccessManagerTutorialImages/delete_package.png)
+    ![img](../../images/MxAccessManagerTutorialImages/delete_package.png)
 
     You can see that the application with package name "com.allinstalledapps" has been removed from the whitelist as there are only two application whereas we had added three application previously in the whitelist.
 

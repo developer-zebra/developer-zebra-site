@@ -3,7 +3,7 @@ title:  Modifying Profiles With ProfileConfig API
 ---
 
 ## Overview
-This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/4-0/api/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/4-0/guide/profiles/profilekeystroke) feature of [EMDK Profiles](/emdk-for-android/4-0/guide/profiles/usingwizard).
+This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](../../api/core/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](../../mx/data-capture/keystroke) feature of [EMDK Profiles](../../guide/profile-manager).
 
 ###Prerequisites###
 
@@ -17,17 +17,17 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "ModifyBarcodeProfileTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK.
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
+If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for Enabling the EMDK tutorial as it would again be a common step for all of your projects that are using EMDK for Android API. 
 
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "ModifyBarcodeProfile" as the Profile Name for this tutorial.
 
@@ -35,54 +35,54 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
    
 3. Now, you can see all the available features on the left hand side of the Profile Editor window. Select any feature from the list and click "Right Arrow" (Ex: "ActivitySelection" has been selected. By using this feature Activities can be associated with the application. Then the data capture feature will be enabled automatically when the specified activity is in foreground).
   
-	![img](images/modify_profile_settings_images/activity_selection.jpg)
+	![img](../../images/modify_profile_settings_images/activity_selection.jpg)
   
 4. Provide the name to identify each feature (Ex: DataCaptureActivity). This is required while editing features programmatically.  
 
-	![img](images/modify_profile_settings_images/activity_selection_parameters.jpg)
+	![img](../../images/modify_profile_settings_images/activity_selection_parameters.jpg)
   
 5. Click "ActivitySelection" under parameters.  
 
-	![img](images/modify_profile_settings_images/activity_selection_parameter_package_name.jpg)  
+	![img](../../images/modify_profile_settings_images/activity_selection_parameter_package_name.jpg)  
 
 6. Specify the applications package name and click "Apply".  
 
-	![img](images/modify_profile_settings_images/activity_selection_parameter_activity_name.jpg) 
+	![img](../../images/modify_profile_settings_images/activity_selection_parameter_activity_name.jpg) 
  
 7. Specify an Activity inside the application and click "Apply".  
 
-	![img](images/modify_profile_settings_images/activity_selection_done.jpg)  
+	![img](../../images/modify_profile_settings_images/activity_selection_done.jpg)  
 
 8. Click "OK".  
 9. Select any data capture feature and click Right Arrow (Ex: "Barcode" has been selected).
   
-	![img](images/modify_profile_settings_images/barcode.jpg)
+	![img](../../images/modify_profile_settings_images/barcode.jpg)
   
 10. Click on the "Barcode" feature in the "Data Input" section. The parameter list will be populated. 
  
-	![img](images/modify_profile_settings_images/barcode_profile_editor.jpg)
+	![img](../../images/modify_profile_settings_images/barcode_profile_editor.jpg)
   
 11. Provide name to Barcode Scanner Input so as to modify it programmatically (Ex: DataInputBarcode). Enable the feature and change some parameters.
   
-	![img](images/modify_profile_settings_images/barcode_select_scanner_type.jpg)
+	![img](../../images/modify_profile_settings_images/barcode_select_scanner_type.jpg)
   
-	![img](images/modify_profile_settings_images/barcode_select_decoders.jpg)
+	![img](../../images/modify_profile_settings_images/barcode_select_decoders.jpg)
   
 12. Click "Apply". 
 
 13. Select the Keystroke feature in the "Data Delivery" section and click "Right Arrow" (Ex: "Keystroke" has been selected).
   
-	![img](images/modify_profile_settings_images/keystroke_editor.jpg)  
+	![img](../../images/modify_profile_settings_images/keystroke_editor.jpg)  
 
 14. Provide name to Keystroke output (Ex: DataDeliveryKeystroke). This is required when editing the features programmatically. Enable the feature and change some parameters. 
  
-	![img](images/modify_profile_settings_images/enable_keystroke.jpg)
+	![img](../../images/modify_profile_settings_images/enable_keystroke.jpg)
   
-	![img](images/modify_profile_settings_images/enable_keystroke_data_formatting.jpg)
+	![img](../../images/modify_profile_settings_images/enable_keystroke_data_formatting.jpg)
   
 15. Click "Apply" and "Finish".  
 
-	![img](images/modify_profile_settings_images/profile_editing_done.jpg) 
+	![img](../../images/modify_profile_settings_images/profile_editing_done.jpg) 
  
 16. Click "Close".  
 
@@ -91,14 +91,14 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
   
 17. You can inspect the EMDKConfig.xml to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-	![img](images/modify_profile_settings_images/emdk_config_activity_selection_changes.jpg)
+	![img](../../images/modify_profile_settings_images/emdk_config_activity_selection_changes.jpg)
    
-	![img](images/modify_profile_settings_images/emdk_config_keystroke_changes.jpg)   
+	![img](../../images/modify_profile_settings_images/emdk_config_keystroke_changes.jpg)   
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK. 
  
-	![img](images/modify_profile_settings_images/manifest_file_default.jpg)
+	![img](../../images/modify_profile_settings_images/manifest_file_default.jpg)
 
 	You must first enable permissions for 'com.symbol.emdk.permission.EMDK':
 
@@ -112,7 +112,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	When done, your manifest.xml should look like:
 
-	![img](images/modify_profile_settings_images/manifest_file_updated.jpg)  
+	![img](../../images/modify_profile_settings_images/manifest_file_updated.jpg)  
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -176,7 +176,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
     
 	So far your code should look like:
      
-	![img](images/modify_profile_settings_images/main_activity_declare_profile_name.jpg) 
+	![img](../../images/modify_profile_settings_images/main_activity_declare_profile_name.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. This must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
   
@@ -223,7 +223,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
  
 	Your onOpened method should now look like this:
     
-	![img](images/modify_profile_settings_images/onopened_method.jpg)  
+	![img](../../images/modify_profile_settings_images/onopened_method.jpg)  
     
 3. Now let's override the "onDestroy" method so we can release the EMDKManager resources:
 
@@ -239,7 +239,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	Your onDestroy method should now look like this: 
 
-	![img](images/modify_profile_settings_images/on_destroy_method.jpg) 
+	![img](../../images/modify_profile_settings_images/on_destroy_method.jpg) 
 
 4. Now lets add some of the string values in "res/values/strings.xml" that we would be using in our layout files.
 
@@ -375,7 +375,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 	
 	Your activity_main.xml file should now look like this:
 
-	![img](images/modify_profile_settings_images/create_layout.jpg)
+	![img](../../images/modify_profile_settings_images/create_layout.jpg)
     
 7. Next, we will declare these UI elements in our activity class by writing following code in "MainActivity.java" class.
   
@@ -411,7 +411,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So declaration of UI elements would look like:
 
-	![img](images/modify_profile_settings_images/declare_ui_elements.jpg)
+	![img](../../images/modify_profile_settings_images/declare_ui_elements.jpg)
 
 
 8. We will now get reference of these UI elements in the 'onCreate()' method of 'MainActivity.java' class as follows:
@@ -435,7 +435,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 		
 	The onCreate() method at this point should look like this:
 
-	![img](images/modify_profile_settings_images/references_of_ui_elements.jpg)
+	![img](../../images/modify_profile_settings_images/references_of_ui_elements.jpg)
 
 9. In the next step, we will set the list of scanning devices in the drop down [Spinner](http://developer.android.com/guide/topics/ui/controls/spinner.html)
 
@@ -486,7 +486,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
         
 	The onCreate() method should now look like this:
 
-	![img](images/modify_profile_settings_images/drop_down_details.jpg)
+	![img](../../images/modify_profile_settings_images/drop_down_details.jpg)
 
 
 10. The method 'setDeviceType()' takes the position of the user selected device type from the drop down and modifies the profile settings by accessing Profile Manager API.
@@ -507,7 +507,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	This would look like:
 
-	![img](images/modify_profile_settings_images/profile_config_declaration.jpg)
+	![img](../../images/modify_profile_settings_images/profile_config_declaration.jpg)
 
 11. In the 'setDeviceType method, we create an object of 'ProfileConfig' class. To modify a profile, we would:
   * Use the PROFILE_FLAG.GET option to retrieve the profile (if it exists)
@@ -565,7 +565,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So the method would look like:
 
-	![img](images/modify_profile_settings_images/set_device_type_method.jpg)
+	![img](../../images/modify_profile_settings_images/set_device_type_method.jpg)
 
 12. Similarly we would now use this 'profileConfig' object for modifying other parameters. one of these will be to check the status of the barcode (Enable/Disable)
 
@@ -578,7 +578,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So the complete onOpened() method looks like this:
 
-	![img](images/modify_profile_settings_images/check_barcode_status_method_call.jpg)
+	![img](../../images/modify_profile_settings_images/check_barcode_status_method_call.jpg)
 
 	The code for checkBarcodeStatus() method looks like this:
 
@@ -612,7 +612,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	The checkBarcodeStatus() method finally looks like:
 
-	![img](images/modify_profile_settings_images/check_barcode_status_method.jpg)
+	![img](../../images/modify_profile_settings_images/check_barcode_status_method.jpg)
   
 
 13. Apart from this, we have few checkboxes that represent different types of barcode and two buttons 'Barcode' and 'Update Settings'.
@@ -636,7 +636,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	This makes the onCreate() method looks like:
 
-	![img](images/modify_profile_settings_images/button_on_click_declaration.jpg)
+	![img](../../images/modify_profile_settings_images/button_on_click_declaration.jpg)
 
 	We would now write the on click listener that has the common onclick method in which we have called the respective operations based on button ID's.
 
@@ -671,7 +671,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So the on click listener would finally look like:
 
-	![img](images/modify_profile_settings_images/button_on_click_defination.jpg)
+	![img](../../images/modify_profile_settings_images/button_on_click_defination.jpg)
 
 	>Note:   
 	>We have shown Toast messages wherever necessary to inform user about the operations being performed.
@@ -732,7 +732,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	setBarcodeStatus() method would look like:
 
-	![img](images/modify_profile_settings_images/set_barcode_status_method.jpg)
+	![img](../../images/modify_profile_settings_images/set_barcode_status_method.jpg)
  
 
 15. Finally, we would implement the on click listener for 'Update Profile' by calling 'updateProfile' method. This method would update the status of all the checkboxes (Enable/Disable) that represent the various barcode types.
@@ -849,7 +849,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 	So the updateProfile method looks like:
 
-	![img](images/modify_profile_settings_images/update_profile_method.jpg)
+	![img](../../images/modify_profile_settings_images/update_profile_method.jpg)
 
 	So now we are done with the coding part. Lets test our application.
 
@@ -861,21 +861,21 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 
 2. Run the application.  
 
-	![img](images/modify_profile_settings_images/initial_screen.png)
+	![img](../../images/modify_profile_settings_images/initial_screen.png)
 
 3. Enable/Disable Barcode scanning by pressing Barcode button on top of the screen. 
 
 	>Note: If the barcode disabled, you will not be able to scan any type of barcode.
 
-	![img](images/modify_profile_settings_images/update_barcode_status.png)
+	![img](../../images/modify_profile_settings_images/update_barcode_status.png)
 
 4. Choose the specific type of barcode scanning device from the drop down.
 
-	![img](images/modify_profile_settings_images/drop_down_for_device_type.png)  
+	![img](../../images/modify_profile_settings_images/drop_down_for_device_type.png)  
 
 5. Now select the desired barcode types from the checkboxes and press the Update Settings button. This will modify the profile settings.
 
-	![img](images/modify_profile_settings_images/update_settings.png)
+	![img](../../images/modify_profile_settings_images/update_settings.png)
 
 	Now press trigger button to scan the respective types of barcodes.
 
@@ -883,7 +883,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tuto
 	>Note:
     > Only those typs of barcodes will be scanned that are checked in the checkboxes.
   
-	![img](images/modify_profile_settings_images/scan_data.png)  
+	![img](../../images/modify_profile_settings_images/scan_data.png)  
 
 ##Important Programming Tips##
 

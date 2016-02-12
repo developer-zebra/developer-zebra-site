@@ -1,19 +1,17 @@
 ---
 title: Tutorials
-layout: list-mx.html
-menu:
-  title: EMDK For Xamarin 1.0 Tutorials
-  img: /emdk-for-xamarin/images/logo.png
-  items:
-    - title: Profile Manager
-      items:
-        - title: Clock
-          url: /emdk-for-xamarin/1-0/tutorial/helloxamarin
-    - title: Java APIs
-      items:
-        - title: Basic Scanning Tutorial
-          url: /emdk-for-xamarin/1-0/tutorial/barcodeapitutorial
+description: Walk through building an EMDK for Xamarin application from the ground up with one of the following tutorials. Each tutorial includes step by step instructions and associate code.
+layout: list-content-items.html
+content-items:
+    - type: section
+      level: 4
+      title: Profile Manager
+      text: Using the profile to control device configuration and behaviors like setting the clock from your application.
+      url: /emdk-for-xamarin/1-0/tutorial/helloxamarin
+    - type: section
+      level: 4
+      title: Barcode Scanning
+      text: Using C# API's to use barcode scanning in your application.
+      url: /emdk-for-xamarin/1-0/tutorial/barcodeapitutorial
 
-
----
-
+---   

@@ -4,7 +4,7 @@ title:  Power Management using Power Manager API
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](/emdk-for-android/4-0/guide/profiles/power) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
+This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](../../mx/powermgr) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
 
 **1. Sleep Mode:**
 
@@ -42,15 +42,15 @@ For more information about setting up the EMDK please see the EMDK Overview.
 
 > Note: Provide "MxPowerManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](../tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/guide/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](../tutCreateProjectEclipseADT).  
 
 ## Enabling the EMDK
 If you are using Android Studio, you have already completed this step while creating the project by selecting `EMDK 3.1 (API 16) (Symbol Technologies, Inc.) (API 16)` or `EMDK 3.1 (API 19) (Symbol Technologies, Inc.) (API 19)` as the minimum SDK. 
 
 ## Adding The Power Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/guide/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](../tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "PowerManagerProfile" as the Profile Name for this tutorial.
 
@@ -60,24 +60,24 @@ If you are using Android Studio, you have already completed this step while crea
 
 4. Click on the Power Manager feature. The parameter list will be populated.  
   
-    ![img](images/MxPowerManagerTutorialImages/select_power_manager_feature.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/select_power_manager_feature.jpg)
 
 5. Now Click on the drop-down of the action field to see the supported features by Power Manager.
 
-    ![img](images/MxPowerManagerTutorialImages/power_manager_features.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/power_manager_features.jpg)
 
     There are different features shown in the drop down as explained earlier. As the name suggests, the feature `Do Nothing` does nothing. We would be configuring above mentioned three features from the application itself. Hence let us select the `Reset Action` in the wizard as `Do Nothing`.
 
     > Note: You could select any option you want in the wizard and the application will implement that feature on the launch.
 
-    ![img](images/MxPowerManagerTutorialImages/feature_do_nothing.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/feature_do_nothing.jpg)
 
     > Note: Provide some name in the Name field (Ex. MyPowerManager) in order to refer that specific feature of Profile.
     > You can also keep Name field empty.
   
 6.  Click Apply and Finish. 
 
-    ![img](images/MxPowerManagerTutorialImages/power_manager_profile_created.jpg)  
+    ![img](../../images/MxPowerManagerTutorialImages/power_manager_profile_created.jpg)  
 
 7. Click "Close".   
 
@@ -100,12 +100,12 @@ If you are using Android Studio, you have already completed this step while crea
 
     > Note: These values are useful when we modify Profile from the application using EMDK API, which we will see shortly in this tutorial.
 
-    ![img](images/MxPowerManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxPowerManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](images/MxPowerManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -119,7 +119,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     When done, your manifest.xml should look like:
 
-    ![img](images/MxPowerManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxPowerManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -204,7 +204,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     So the code looks like:
 
-    ![img](images/MxPowerManagerTutorialImages/global_variable_entry.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/global_variable_entry.jpg)
 
     In the onCreate method, we call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. 
 
@@ -226,7 +226,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     So far your code should look like:
      
-     ![img](images/MxPowerManagerTutorialImages/on_create_added.jpg) 
+     ![img](../../images/MxPowerManagerTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. Hence we will update the status in the `statusTextView`. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -273,13 +273,13 @@ If you are using Android Studio, you have already completed this step while crea
 			}
 		}
 
-	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+	This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](../../api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
 	> Note: 2. If the status is other than `CHECK_XML`, we are simply displaying a failure message. You can actually go ahead and check different types of status and display the appropriate message accordingly, which is not in the scope of this sample tutorial.
 
-	In case of `CHECK_XML` status, We retrieve  XML response string from the result using `getStatusString` method. So we will call a method `handleEMDKResult` to handle this [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), which we will create in the next step.
+	In case of `CHECK_XML` status, We retrieve  XML response string from the result using `getStatusString` method. So we will call a method `handleEMDKResult` to handle this [EMDKResults](../../api/core/EMDKResults), which we will create in the next step.
 
 		:::java
 		// Method call to handle EMDKResult
@@ -287,9 +287,9 @@ If you are using Android Studio, you have already completed this step while crea
 
     Your onOpened method should now look like this:
     
-    ![img](images/MxPowerManagerTutorialImages/on_opened_method.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/on_opened_method.jpg)
 
-3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](/emdk-for-android/4-0/api/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
+3. It shows error as we have not yet declared `handleEMDKResult` method. So let us create this method, which would get the XML String response from [EMDKResults](../../api/core/EMDKResults), call the `parseXML` method to parse it and eventually call `displayResults` method to display output in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html), which we would be declaring in coming steps. 
 
 		:::java
 		// Method to handle EMDKResult by extracting response and parsing it
@@ -315,7 +315,7 @@ If you are using Android Studio, you have already completed this step while crea
 
 	Your `handleEMDKResult` method should now look like this:
     
-    ![img](images/MxPowerManagerTutorialImages/handle_emdk_result.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/handle_emdk_result.jpg)
 
 4. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -362,7 +362,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     Your complete `parseXML` method should now look like:
     
-    ![img](images/MxPowerManagerTutorialImages/parse_xml.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/parse_xml.jpg)
 
 5. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -392,7 +392,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     `buildFailureMessage` method should look like:
     
-    ![img](images/MxPowerManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/build_failure_message.jpg)
 
 6. In this step, we will add `displayResults` method to display the result of profile operation. If the Profile is successfully applied, it will proceed with the respective power manager operation and in case of any errors, we will display a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with the corresponding error details.
 
@@ -429,7 +429,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     The method `displayResults` should look like:
     
-    ![img](images/MxPowerManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.  
     
@@ -446,7 +446,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     Your onDestroy method should now look like this:  
 
-    ![img](images/MxPowerManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxPowerManagerTutorialImages/on_destroy_method.jpg) 
 
 8. Let us set the required layout/View for this tutorial. Remove all the code, inside "res/layout/activity_main.xml".
 
@@ -551,7 +551,7 @@ If you are using Android Studio, you have already completed this step while crea
 
 	The layout file 'activity_main.xml' should now look like:
 
-	![img](images/MxPowerManagerTutorialImages/activity_main.jpg)
+	![img](../../images/MxPowerManagerTutorialImages/activity_main.jpg)
 
 10. Get the reference of UI elements and make a call to 'addSetButtonListener' method in 'onCreate' method. We would add this method in the next step. The method 'addSetButtonListener' creates on Click Listener for the Set Button that implements Power Manager settings selected by user. 
 
@@ -567,7 +567,7 @@ If you are using Android Studio, you have already completed this step while crea
  
      So the complete `onCreate` method looks like:
 
-    ![img](images/MxPowerManagerTutorialImages/complete_on_create.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/complete_on_create.jpg)
 
 11. It shows an error on the method call of 'addSetButtonListener' because we have not yet added this method. We would now add the 'addSetButtonListener' method that implements on click listener of the radio buttons that are assigned to each of the Power Manager feature. As explained earlier, it sets an integer code (1-Sleep, 4-Reboot or 8-OS Update) in the variable 'value' and then calls 'modifyProfile_XMLString' method that actually modifies the Profile settings based on this value and configures the device against that Power Manager feature.
 
@@ -608,7 +608,7 @@ If you are using Android Studio, you have already completed this step while crea
 
     So the method looks like:
 
-    ![img](images/MxPowerManagerTutorialImages/add_set_button_listener.jpg)
+    ![img](../../images/MxPowerManagerTutorialImages/add_set_button_listener.jpg)
    
 12. The above code would display error at the call of `modifyProfile_XMLString` method as we have not added that method yet. This is the method that actually modifies the Power Manager Profile Settings and configures the device with the user selected Power Manager feature (Sleep Mode, Reboot or OS Update). This method prepares the xml input for the `processProfile` method based on "value" attribute. If the value is 1 or 4 (Sleep Mode or Reboot), then the XML input remains the same except value attribute. If the value is 8 (OS Update), we need to add path to the OS Update package in XML input. So the XML input for this case would be different as explained in the `If-Else` condition of the code. We would capture that path from the Edit Text and store it to the `zipFilePath` variable. It then calls `handleEMDKResult` method and sets the profile by following similar steps as explained in case of `onOpened` method.
 
@@ -694,7 +694,7 @@ If you are using Android Studio, you have already completed this step while crea
     You can see that the error is gone once we add this method.
     The method `modifyProfile_XMLString` method should look like: 
 
-    ![img](images/MxPowerManagerTutorialImages/modifyProfile_XMLString.jpg) 
+    ![img](../../images/MxPowerManagerTutorialImages/modifyProfile_XMLString.jpg) 
 
 13. If the EMDK is closed abruptly, a callback method `onClosed` gets called, where you could release your `EMDKManager`.
 
@@ -710,19 +710,19 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 2. Run the application. Since we have set `Do Nothing` parameter in the Profile Manager wizard, the app just loads and performs no operations. So you can see the main page with three radio button options (Sleep Mode, Reboot and OS Update).
   
-	![img](images/MxPowerManagerTutorialImages/home_screen.png)
+	![img](../../images/MxPowerManagerTutorialImages/home_screen.png)
   
 4. Now we will select these options one by one. So select "Suspend" radio button and press the "Set" button. This will put your device into sleep mode by locking it.
 
-    ![img](images/MxPowerManagerTutorialImages/sleep_mode.png)
+    ![img](../../images/MxPowerManagerTutorialImages/sleep_mode.png)
 
     As you can see, the device has been locked. So unlock it and the app will be resumed.
   
-	![img](images/MxPowerManagerTutorialImages/sleep_mode_resumed.png)
+	![img](../../images/MxPowerManagerTutorialImages/sleep_mode_resumed.png)
 
 5. So now select second option (Reboot) and press the "Set" button. This should reboot your Symbol Android device.
  
-	![img](images/MxPowerManagerTutorialImages/reboot_mode.png)
+	![img](../../images/MxPowerManagerTutorialImages/reboot_mode.png)
 
 6. As the device was rebooted in the previous step, open the app again and select the third option (OS Update). Provide the path in the Edit Text to the external SD card where the OS Update Package is located. This package should be a zip file downloaded from [this link](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) (Ex. /sdcard/T55N0JB0VRUEN17400.zip).
 
@@ -730,18 +730,18 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
     This package could be an OS upgrade, Factory Reset or Enterprise Reset package as this feature allows you to perform all these operations. We will be using an update Package that has been downloaded from above link for TC55 device. 
 
-    ![img](images/MxPowerManagerTutorialImages/os_update_path.png)
+    ![img](../../images/MxPowerManagerTutorialImages/os_update_path.png)
 
     Once the "Set" button is pressed, the phone will shut down for performing OS update with the respective update package.
 
     > Note:
     > In case of failure due to incorrect path, the app will display a failure message in the status Text View at the bottom.
 
-    ![img](images/MxPowerManagerTutorialImages/performing_os_update.png)
+    ![img](../../images/MxPowerManagerTutorialImages/performing_os_update.png)
 
     Finally the device reboots to configure and apply the OS update changes.
 
-    ![img](images/MxPowerManagerTutorialImages/after_os_update.png)   
+    ![img](../../images/MxPowerManagerTutorialImages/after_os_update.png)   
 
 ##Important Programming Tips##
 

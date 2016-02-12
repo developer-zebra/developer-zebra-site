@@ -69,11 +69,11 @@ To check which API's you have installed:
 
 7. If you are installing the EMDK into a standalone version of Eclipse that has the ADT plugin installed, select the second radio button ( As Shown ), then click next.
 
-	![img](/img/setup/emdkInstall11.png)
+	![img](../../images/setup/emdkInstall11.png)
 
 8. Browse for or manually enter paths to the root of both your Eclipse folder and Android SDK folder, then Click Install.
 
-	![img](/img/setup/emdkInstall12.png)
+	![img](../../images/setup/emdkInstall12.png)
 
 
 
@@ -88,9 +88,9 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 3. Each key listed under Uninstall in the left pane of Registry Editor represents a program that is currently installed. Scroll through and identify the registry key that has the name EMDK for Android (See Fig.01 or Fig.02).
 * Fig.01
-	![img](/img/setup/uninstallfig1.png)
+	![img](../../images/setup/uninstallfig1.png)
 * Fig.02
-	![img](/img/setup/uninstallfig2.png)
+	![img](../../images/setup/uninstallfig2.png)
 
 4. Under key EMDK for Android look for the value UninstallString in the details pane on the right and identify the EMDK for Android installation path (i.e. the parent directory where uninstall.exe resides. See Fig.01 or Fig.02).
 
@@ -161,7 +161,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 7. Browse and specify the **com.symbol.emdk.jar** available under integrated EMDK sdk add-on (ex: **<adt-bundle>\sdk\add-ons\addon-symbol-emdk_vx.x_API-16\libs\com.symbol.emdk.jar**).
 
-	![img](/img/setup/emdkJarAsLib02.png)
+	![img](../../images/setup/emdkJarAsLib02.png)
 
 
 
@@ -169,7 +169,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 1. Click on the arrow and expand the options of **com.symbol.emdk.jar** (above screen).
 
-	![img](/img/setup/emdkJarAsLib03.png)
+	![img](../../images/setup/emdkJarAsLib03.png)
 
 
 
@@ -184,7 +184,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 6. The specified Javadoc path will be validated and shows the following message if successful.
 
-	![img](/img/setup/emdkJarAsLib05.png)
+	![img](../../images/setup/emdkJarAsLib05.png)
 
 7. Click **Apply** and **OK**.
 
@@ -192,5 +192,5 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 9. To verify, type any EMDK class/interface/method name (ex: EMDKListener) and press **F2**.
 
-	![img](/img/setup/emdkJarAsLib06.png)
+	![img](../../images/setup/emdkJarAsLib06.png)
 

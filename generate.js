@@ -437,10 +437,10 @@ var sitebuild = Metalsmith(__dirname)
     }
     else {
       console.log('Site build complete! - going to index');
-      index_generate("emdk-for-android/4-0");
-      index_generate("emdk-for-android/3-1");
-      index_generate("emdk-for-xamarin/1-0");
-      index_generate("stagenow/2-2");
+      // index_generate("emdk-for-android/4-0");
+      // index_generate("emdk-for-android/3-1");
+      // index_generate("emdk-for-xamarin/1-0");
+      // index_generate("stagenow/2-2");
     }
   });
 

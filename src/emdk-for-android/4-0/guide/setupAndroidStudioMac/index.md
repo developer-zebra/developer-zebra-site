@@ -25,7 +25,7 @@ title: EMDK For Android Setup on Mac (Android Studio)
 
 1. Go to http://developer.android.com/sdk/index.html.
 ≠
-	![img](/img/setup/mac/image3.png)
+	![img](../../images/setup/mac/image3.png)
 
 2. Click on the "Download Android Studio for Mac" button.
 3. Accept the License Agreement and click the "Download Android Studio for Mac" button.
@@ -58,7 +58,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 4. Check that the status of Android 4.1.2 (API 16) and Android 4.4.2 (API 19) SDK Platforms is "Installed".
 5. If either SDK platform is not installed check the SDK check mark, click Install Packages, and follow the on-screen instructions. When the install is complete, restart Android Studio.
 
-	![img](/img/setup/mac/image4.png)
+	![img](../../images/setup/mac/image4.png)
 
 
 ###How to determine the Build-tools version installed in Android Studio
@@ -68,7 +68,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 3. Check the status of Android SDK Build-tools 21.1.x or newer is "Installed".
 4. If Android SDK Build-tools 21.1.x or newer is not installed check the SDK check mark, click Install Packages, and follow the on screen instructions. When the install is complete, restart Android Studio.
 
-	![img](/img/setup/mac/image5.png)
+	![img](../../images/setup/mac/image5.png)
 
 ##Installing EMDK v4.0
 
@@ -96,7 +96,7 @@ The extracted folder will contain the following files
 Add EMDK 4.0 APIs to the Android SDK
 1. Navigate to the /Users/**username**/Library/Android/sdk/add-ons directory.
 
-	![img](/img/setup/mac/image6.png)
+	![img](../../images/setup/mac/image6.png)
 
 2. Copy the following EMDK sdk addon folders from **EMDK\_FILES/SDK/** into the add-ons directory.
 	- addon-symbol-emdk\_v4.0_API-16
@@ -106,7 +106,7 @@ Add EMDK 4.0 APIs to the Android SDK
 4. Go to Tools > Android > SDK Manager
 
 Now the integrated EMDK add-ons should appear in the SDK Manager
-	![img](/img/setup/mac/image8.png)
+	![img](../../images/setup/mac/image8.png)
 
 ###EMDK Wizard plug-in Integration
 
@@ -114,7 +114,7 @@ Now the integrated EMDK add-ons should appear in the SDK Manager
 
 1. Locate the /Users/Shared folder.
 
-	![img](/img/setup/mac/image10.png)
+	![img](../../images/setup/mac/image10.png)
 
 2. Copy **EMDK\_FILES/Symbol EMDK for Android** folder into the /Users/Shared folder.
 
@@ -125,11 +125,11 @@ Now the integrated EMDK add-ons should appear in the SDK Manager
 
 2. Locate Android Studio.app, right click and select Show Package Contents.
 
-	![img](/img/setup/mac/image13.png)
+	![img](../../images/setup/mac/image13.png)
 
 3. Locate the Contents\plugins directory.
 
-	![img](/img/setup/mac/image14.png)
+	![img](../../images/setup/mac/image14.png)
 
 4. Copy com.symbol.emdk.wizard.intellijIdea\_x.x.xx folder from **EMDK\_FILES/Andoid Studio** into the plugins directory.
 
@@ -137,11 +137,11 @@ Now the integrated EMDK add-ons should appear in the SDK Manager
 
 Now the “EMDK” menu should appear in the Android Studio menu bar:
 
-![img](/img/setup/mac/image16.png)
+![img](../../images/setup/mac/image16.png)
 
 7.	Launch EMDK -> About to see installed EMDK Wizard components.
 
-![img](/img/setup/mac/emdk_about.png)
+![img](../../images/setup/mac/emdk_about.png)
 
 
 ##Configuring ADB connectivity with Symbol Android devices on Mac OSX

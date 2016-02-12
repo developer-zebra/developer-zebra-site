@@ -42,31 +42,31 @@ Next we will update "MainActivity", adding a button to launch our "BroadcastInte
 		android:layout_marginLeft="120dp"  
 		android:text="Broadcast Intent" " /> 
 
-	![img](/img/setup/image171.jpg)  
+	![img](../../images/setup/image171.jpg)  
 3. Select "MainActivity.java" from "Package Explorer" in Eclipse. 
 
-	![img](/img/setup/image172.jpg) 
+	![img](../../images/setup/image172.jpg) 
 4. Declare a variable inside "MainActivity" to store "buttonBroadcastIntent". 
 
 		:::java
 		//Declare a variable to store the buttonBroadcastIntent  
 		private Button buttonBroadcastIntent = null;  
 
-	![img](/img/setup/image173.jpg)  
+	![img](../../images/setup/image173.jpg)  
 5. Inside "onCreate" get a reference to "buttonBroadcastIntent".
 
 		:::java
 		//Get the buttonBroadcastIntent  
 		buttonBroadcastIntent = (Button) findViewById(R.id.buttonBroadcastIntent); 
 
-	![img](/img/setup/image174.jpg)  
+	![img](../../images/setup/image174.jpg)  
 6. Inside "onCreate" add an "OnClickListener" for "buttonMSR".  
 
 		:::java
 		//Add an OnClickListener for buttonBroadcastIntent  
 		buttonBroadcastIntent.setOnClickListener(buttonBroadcastIntentOnClick);  
 
-	![img](/img/setup/image175.jpg)  
+	![img](../../images/setup/image175.jpg)  
 7. Add a new "OnClickListener" inside "MainActivity".  
 
 		:::java
@@ -77,7 +77,7 @@ Next we will update "MainActivity", adding a button to launch our "BroadcastInte
 		    }  
 		};  
 
-	![img](/img/setup/image176.jpg)  
+	![img](../../images/setup/image176.jpg)  
 8. Add the following code to "onClick" to launch "BroadcastIntentActivity". 
 
 		:::java
@@ -85,7 +85,7 @@ Next we will update "MainActivity", adding a button to launch our "BroadcastInte
 		Intent myIntent = new Intent(MainActivity.this, BroadcastIntentActivity.class);  
 		startActivity(myIntent);  
 
-	![img](/img/setup/image177.jpg) 
+	![img](../../images/setup/image177.jpg) 
 
 ###Creating Broadcast Intent UI
 Then we will create the UI for displaying Barcode data to the user. 
@@ -106,7 +106,7 @@ Then we will create the UI for displaying Barcode data to the user.
 		    android:text="Please Scan a Barcode."  
 		    android:textAppearance="?android:attr/textAppearanceMedium" />  
 
-	![img](/img/setup/image179.jpg) 
+	![img](../../images/setup/image179.jpg) 
 
 ###Creating our Broadcast Intent Profile
 Next will will create a Data Capture profile that will be active on "BroadcastIntentActivity" and send Barcode data using a Broadcast Intent. 
@@ -116,52 +116,52 @@ Next will will create a Data Capture profile that will be active on "BroadcastIn
   
 3. The EMDK Profile Manager Window will appear.
   
-    ![img](/img/setup/image180.jpg)
+    ![img](../../images/setup/image180.jpg)
   
 4. click "Create".
   
-    ![img](/img/setup/image181.jpg)
+    ![img](../../images/setup/image181.jpg)
   
 5. Provide "DataCaptureProfileBroadcastIntent" as the Profile Name for this tutorial.
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.
   
-    ![img](/img/setup/image182.jpg)
+    ![img](../../images/setup/image182.jpg)
   
 6. select "ActivitySelection" from the list of "Available Features" and add it to "Selected Features" using the arrow.
 
 	> Note: 
 	> The field "Name" contains user defined name to identify a particular feature. This is required when editing any specific feature programmatically, which is outside the scope of this tutorial. So we will keep the "Name" field empty.
   
-    ![img](/img/setup/image_data_capture_broadcast_activity_selection.jpg)
+    ![img](../../images/setup/image_data_capture_broadcast_activity_selection.jpg)
   
 7. Select "Activity Selection".
   
-    ![img](/img/setup/image143.jpg)
+    ![img](../../images/setup/image143.jpg)
   
 8. Enter "com.symbol.emdksample" as the application name and click apply.
   
-    ![img](/img/setup/image144.jpg)
+    ![img](../../images/setup/image144.jpg)
   
 9. Enter "BroadcastIntentActivity" as the activity name and click apply.
   
-    ![img](/img/setup/image183.jpg)  	
+    ![img](../../images/setup/image183.jpg)  	
 
 10. Click OK.  
 11. select "Barcode" from the list of "Available Features" and add it to "Selected Features" using the arrow.
  
-    ![img](/img/setup/image184.jpg)  	
+    ![img](../../images/setup/image184.jpg)  	
 
 12. Change "Barcode Scanner Input Enable" to "Enable".
 
 	> Note: 
 	> The field "Name" contains user defined name to identify a particular Barcode Scanner Input feature. This is required when editing any specific Barcode Scanner Input feature programmatically, which is outside the scope of this tutorial. So we will keep the "Name" field empty.
   
-	![img](/img/setup/image185.jpg)
+	![img](../../images/setup/image185.jpg)
   
 13. select "Intent" from the list of "Available Features" and add it to "Selected Features" using the arrow. 
 
-	![img](/img/setup/image186.jpg)
+	![img](../../images/setup/image186.jpg)
  
 14. Now we will configure the "Intent" parameters.  
 	* Switch "Intent Output Enable" to Enable". 
@@ -172,11 +172,11 @@ Next will will create a Data Capture profile that will be active on "BroadcastIn
 
 	Your Intent configuration should now look like this:
   
-	![img](/img/setup/image187.jpg)  
+	![img](../../images/setup/image187.jpg)  
 
 15. Click "Apply" and "Finish".
   
-    ![img](/img/setup/image188.jpg)
+    ![img](../../images/setup/image188.jpg)
   
 16. Click "Close".  
     >Note:  
@@ -187,7 +187,7 @@ Now will register our new Data Capture profile in "MainActivity".
 
 1. Select "MainActivity.java" from "Package Explorer" in Eclipse. 
 
-	![img](/img/setup/image189.jpg)
+	![img](../../images/setup/image189.jpg)
  
 2. Inside "MainActivity" add the following code to hold the name of our Broadcast Intent profile.  
 
@@ -195,7 +195,7 @@ Now will register our new Data Capture profile in "MainActivity".
 		//Assign the profile name used in EMDKConfig.xml  for Broadcast Intent handling  
 		private String profileNameBroadcastIntent = "DataCaptureProfileBroadcastIntent";
 	
-    ![img](/img/setup/image190.jpg)
+    ![img](../../images/setup/image190.jpg)
   
 3. Inside "onOpened" add the following code to register the Broadcast Intent EMDK profile. 
 
@@ -208,14 +208,14 @@ Now will register our new Data Capture profile in "MainActivity".
 		//Failed to set profile  
 		}  
 
-    ![img](/img/setup/image191.jpg)  
+    ![img](../../images/setup/image191.jpg)  
 
 ###Handling Broadcast Intents
 Newt we will add the code to listen for our Broadcast Intent and display the Barcode data to the user in side "BroadcastIntentActivity". 
 
 1. Select "BroadcastIntentActivity.java" from "Package Explorer" in Eclipse. 
 
-	![img](/img/setup/image192.jpg)
+	![img](../../images/setup/image192.jpg)
   
 2. Add the following imports.  
 
@@ -226,7 +226,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		import android.content.IntentFilter;  
 		import android.widget.TextView;  
 
-	![img](/img/setup/image193.jpg)
+	![img](../../images/setup/image193.jpg)
   
 3. Add a global variable for the TextView. 
 
@@ -234,7 +234,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Declare a variable to store the textViewData  
 		private TextView textViewData = null;  
 	
-	![img](/img/setup/image194.jpg)
+	![img](../../images/setup/image194.jpg)
 
 4. Add the following code to your onCreate function to get a handle on the TextView.
 
@@ -242,7 +242,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Get the textViewData  
 		textViewData = (TextView) findViewById(R.id.textViewData);  
 
-	![img](/img/setup/image195.jpg)
+	![img](../../images/setup/image195.jpg)
   
 5. Add a global variable to BroadcastIntentActivity to hold our Broadcast Receiver.
 
@@ -250,7 +250,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Declare a variable to store our Broadcast Receiver.  
 		private BroadcastReceiver EMDKReceiver;  
      
-    ![img](/img/setup/image196.jpg)
+    ![img](../../images/setup/image196.jpg)
   
 6. Override "onResume".  
 
@@ -261,7 +261,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		    super.onResume();  
 		} 
 
-    ![img](/img/setup/image197.jpg)  
+    ![img](../../images/setup/image197.jpg)  
 7. Override "onPause".  
 
 		:::java
@@ -271,7 +271,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		    super.onPause();  
 		} 
 
-    ![img](/img/setup/image198.jpg)
+    ![img](../../images/setup/image198.jpg)
    
 8. Add the following code to "onResume" to create an Intent filter.  
 
@@ -279,7 +279,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Create an Intent Filter  
 		IntentFilter intentFilter = new IntentFilter("com.symbol.emdksample.RECVRBI");
 
-	![img](/img/setup/image199.jpg)
+	![img](../../images/setup/image199.jpg)
  
 9. Add the following code to "onResume" to create a Broadcast Receiver.  
 
@@ -289,7 +289,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		  
 		};  
 
-	![img](/img/setup/image200.jpg)
+	![img](../../images/setup/image200.jpg)
    
 10. Override "onReceive" inside the Broadcast Receiver.  
 
@@ -299,7 +299,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		  
 		} 
 
-	![img](/img/setup/image201.jpg)
+	![img](../../images/setup/image201.jpg)
   
 11. Add the following code to "onReceive" to check if the data is coming from the Barcode scanner.  
 
@@ -312,7 +312,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		  
 		} 
 
-	![img](/img/setup/image202.jpg)
+	![img](../../images/setup/image202.jpg)
   
 12. Add the following code to get the data from the intent.  
 
@@ -325,7 +325,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		  
 		}
 
-	![img](/img/setup/image203.jpg)
+	![img](../../images/setup/image203.jpg)
   
 13. Add the following code to display the data to the TextView.  
 
@@ -333,7 +333,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Display the data to the text view  
 		textViewData.setText("Data = " + data);  
 
-	![img](/img/setup/image204.jpg)
+	![img](../../images/setup/image204.jpg)
   
 14. Add the following code to "onResume" to register our receiver.  
 
@@ -341,7 +341,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Register our receiver.
 		this.registerReceiver(EMDKReceiver, intentFilter);
 
-	![img](/img/setup/image205.jpg)
+	![img](../../images/setup/image205.jpg)
   
 15. Add the following code to "onPause" to unregister our receiver.  
 
@@ -349,7 +349,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 		//Register our receiver.
 		this.registerReceiver(EMDKReceiver, intentFilter);
 
-	![img](/img/setup/image206.jpg)  
+	![img](../../images/setup/image206.jpg)  
 
 ###Running the Application###
 Lastly we will run and test our application. 
@@ -361,33 +361,33 @@ Lastly we will run and test our application.
 
 2. Run the application.  
 
-	![img](/img/setup/image207.png)
+	![img](../../images/setup/image207.png)
   
 3. Press the trigger button and scan a Barcode.  
 
-	![img](/img/setup/image208.png)
+	![img](../../images/setup/image208.png)
   
 4. Like before the scanned data will be populated in the Edit Text field Through the previous Keystroke Intent and will appear on the TextView using the previous Datawedge Intent.   
 5. Press the button "Broadcast Intent".  
 
-	![img](/img/setup/image209.png)
+	![img](../../images/setup/image209.png)
   
 6. Scan a Barcode.  
 
-	![img](/img/setup/image210.png)
+	![img](../../images/setup/image210.png)
   
 8. The TextView will be populated by the Broadcast Intent.
 7. Press the back button to rerun to the main screen.  
 
-	![img](/img/setup/image208.png)
+	![img](../../images/setup/image208.png)
   
 9. Press the button "MSR", like before the MSR screen will come up.  
 
-	![img](/img/setup/image171.png)
+	![img](../../images/setup/image171.png)
 
 10. Swipe a cad through the MSR.  
 
-	![img](/img/setup/image172.png)
+	![img](../../images/setup/image172.png)
 
 11. Press return to go back to the MSR where you can swipe another card, or hit return again to go back to the main screen. 
 

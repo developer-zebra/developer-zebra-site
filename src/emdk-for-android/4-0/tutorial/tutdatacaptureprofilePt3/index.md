@@ -43,11 +43,11 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
         android:layout_marginLeft="50dp"  
         android:text="MSR" />
 
-	![img](/img/setup/image129.jpg)
+	![img](../../images/setup/image129.jpg)
   
 3. Select "MainActivity.java" from "Package Explorer" in Eclipse/Android Studio. 
 
-	![img](/img/setup/image130.jpg)
+	![img](../../images/setup/image130.jpg)
  
 4. Add the following Imports to "MainActivity.java".  
 	
@@ -56,7 +56,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
         import android.view.View;  
         import android.view.View.OnClickListener; 
 
-	![img](/img/setup/image131.jpg)
+	![img](../../images/setup/image131.jpg)
   
 5. Declare a variable inside "MainActivity" to store "buttonMSR". 
 	
@@ -64,7 +64,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
         //Declare a variable to store the buttonMSR  
         private Button buttonMSR = null;  
 
-	![img](/img/setup/image132.jpg)
+	![img](../../images/setup/image132.jpg)
   
 6. Inside "onCreate" get a reference to "buttonMSR".
 	
@@ -72,7 +72,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
         //Declare a variable to store the buttonMSR  
         private Button buttonMSR = null; 
 
-	![img](/img/setup/image133.jpg)
+	![img](../../images/setup/image133.jpg)
   
 7. Inside "onCreate" add an "OnClickListener" for "buttonMSR".  
 	
@@ -80,7 +80,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
         //Add an OnClickListener for buttonMSR  
         buttonMSR.setOnClickListener(buttonMSROnClick);     
 
-	![img](/img/setup/image134.jpg)  
+	![img](../../images/setup/image134.jpg)  
 
 8. Add a new "OnClickListener" inside "MainActivity". 
 
@@ -92,7 +92,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
             }  
         };  
 
-	![img](/img/setup/image135.jpg)
+	![img](../../images/setup/image135.jpg)
   
 9. Add the following code to "onClick" to launch "MSRActivity". 
 
@@ -101,7 +101,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
         Intent myIntent = new Intent(MainActivity.this, MSRActivity.class);  
         startActivity(myIntent);  
 
-	![img](/img/setup/image136.jpg) 
+	![img](../../images/setup/image136.jpg) 
 
 ##Creating MSR UI
 Next we will create the UI for "MSRActivity". 
@@ -122,7 +122,7 @@ Next we will create the UI for "MSRActivity".
             android:text="Please swipe a card to continue."  
             android:textAppearance="?android:attr/textAppearanceLarge" /> 
 
-	![img](/img/setup/image138.jpg) 
+	![img](../../images/setup/image138.jpg) 
 
 ##Creating our MSR Profile
 Next we will create a Data Capture profile that will activate the MSR on "MSRActivity" and send the data via a startActivity Intent to "MSRCompletedActivity".  
@@ -132,36 +132,36 @@ Next we will create a Data Capture profile that will activate the MSR on "MSRAct
   
 3. The EMDK Profile Manager Window will appear.
   
-    ![img](/img/setup/image139.jpg)
+    ![img](../../images/setup/image139.jpg)
   
 4. click "Create".
   
-    ![img](/img/setup/image140.jpg)
+    ![img](../../images/setup/image140.jpg)
   
 5. Provide "DataCaptureProfileMSR" as the Profile Name for this tutorial.
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.
   
-    ![img](/img/setup/image141.jpg)
+    ![img](../../images/setup/image141.jpg)
   
 6. select "ActivitySelection" from the list of "Available Features" and add it to "Selected Features" using the arrow.
 
 	> Note: 
 	> The field "Name" contains user defined name to identify a particular feature. This is required when editing any specific feature programmatically, which is outside the scope of this tutorial. So we will keep the "Name" field empty.
   
-    ![img](/img/setup/image142.jpg)
+    ![img](../../images/setup/image142.jpg)
   
 7. Select "Activity Selection".
   
-    ![img](/img/setup/image143.jpg)
+    ![img](../../images/setup/image143.jpg)
   
 8. Enter "com.symbol.emdksample" as the application name and click apply.
   
-    ![img](/img/setup/image144.jpg)
+    ![img](../../images/setup/image144.jpg)
   
 9. Enter "MSRActivity" as the activity name and click apply.
   
-    ![img](/img/setup/image145.jpg)  	
+    ![img](../../images/setup/image145.jpg)  	
 
 10. Click OK.  
 11. select "MSR" from the list of "Available Features" and add it to "Selected Features" using the arrow.
@@ -169,15 +169,15 @@ Next we will create a Data Capture profile that will activate the MSR on "MSRAct
 	> Note: 
 	> The field "Name" contains user defined name to identify a particular Data Input MSR feature. This is required when editing any specific Data Input MSR feature programmatically, which is outside the scope of this tutorial. So we will keep the "Name" field empty.
  
-    ![img](/img/setup/image146.jpg)  	
+    ![img](../../images/setup/image146.jpg)  	
 
 12. Change "MSR Input Enable" to "Enable".
   
-	![img](/img/setup/image147.jpg)
+	![img](../../images/setup/image147.jpg)
  
 13. select "Intent" from the list of "Available Features" and add it to "Selected Features" using the arrow.
  
-	![img](/img/setup/image148.jpg)
+	![img](../../images/setup/image148.jpg)
  
 14. Now we will configure the "Intent" parameters.  
 	* Switch "Intent Output Enable" to Enable". 
@@ -189,11 +189,11 @@ Next we will create a Data Capture profile that will activate the MSR on "MSRAct
 
 	Your Intent configuration should now look like this:
   
-	![img](/img/setup/image149.jpg)  
+	![img](../../images/setup/image149.jpg)  
 
 15. Click "Apply" and "Finish".
   
-    ![img](/img/setup/image150.jpg)
+    ![img](../../images/setup/image150.jpg)
   
 16. Click "Close".  
     >Note:  
@@ -204,7 +204,7 @@ Now will add an Intent filter to our Manifest file to allow "MSRCompletedActivit
 
 1. Open your application's "Manifest.xml" file.
   
-	![img](/img/setup/image151.jpg)
+	![img](../../images/setup/image151.jpg)
 
 2. Add the following configuration to the activity "com.symbol.emdksample.MSRCompletedActivity" to revive our MSR intent.  
 
@@ -216,7 +216,7 @@ Now will add an Intent filter to our Manifest file to allow "MSRCompletedActivit
 
     When done, your manifest.xml should look like this:
 
-    ![img](/img/setup/image152.jpg)  
+    ![img](../../images/setup/image152.jpg)  
 
 	>Note:  
 	>
@@ -228,7 +228,7 @@ Next we will register our new Data Capture profile from "MainActivity".
 
 1. Select "MainActivity.java" from "Package Explorer" in Eclipse. 
 
-	![img](/img/setup/image153.jpg)
+	![img](../../images/setup/image153.jpg)
  
 2. Inside "MainActivity" add the following code to hold the name of our MSR profile.  
 
@@ -236,7 +236,7 @@ Next we will register our new Data Capture profile from "MainActivity".
         //Assign the profile name used in EMDKConfig.xml  for MSR handling  
         private String profileNameMSR = "DataCaptureProfileMSR";  
 
-    ![img](/img/setup/image154.jpg)
+    ![img](../../images/setup/image154.jpg)
   
 3. Inside "onOpened" add the following code to register the MSR EMDK profile. 
 
@@ -249,7 +249,7 @@ Next we will register our new Data Capture profile from "MainActivity".
         //Failed to set profile MSR  
         }  
 
-    ![img](/img/setup/image155.jpg)  
+    ![img](../../images/setup/image155.jpg)  
 
 ##Creating MSR Completed UI
 Now we will create the UI for "MSRCompletedActivity". This UI will allow us to display the MSR data to the user.
@@ -270,14 +270,14 @@ Now we will create the UI for "MSRCompletedActivity". This UI will allow us to d
         android:text="Data = "  
         android:textAppearance="?android:attr/textAppearanceMedium" />  
 
-	![img](/img/setup/image157.jpg) 
+	![img](../../images/setup/image157.jpg) 
 
 ##Handling MSR Intents
 Next will will add the code to "MSRCompletedActivity" for capturing the startActivity Intent and displaying the result data to the user. 
 
 1. Select "MSRCompletedActivity.java" from "Package Explorer" in Eclipse. 
 
-	![img](/img/setup/image158.jpg)
+	![img](../../images/setup/image158.jpg)
  
 2. Add the following imports.  
 
@@ -285,7 +285,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
         import android.content.Intent;  
         import android.widget.TextView; 
 
-	![img](/img/setup/image159.jpg)
+	![img](../../images/setup/image159.jpg)
   
 3. Add the following function for processing intents.  
 
@@ -296,7 +296,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
           
         }  
      
-    ![img](/img/setup/image160.jpg)
+    ![img](../../images/setup/image160.jpg)
   
 4. Add the following code to your "onCreate" function to check for a possible intent;  
 
@@ -305,7 +305,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
         Intent i = getIntent();  
         handleDecodeData(i);
      
-    ![img](/img/setup/image161.jpg)
+    ![img](../../images/setup/image161.jpg)
   
 5. Overide "onNewIntent" to handle incoming intents.  
 
@@ -317,7 +317,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
            
         }
      
-    ![img](/img/setup/image162.jpg)
+    ![img](../../images/setup/image162.jpg)
   
 6. Add a global variable for the TextView. 
 
@@ -325,7 +325,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
         //Declare a variable to store the textViewMSRData  
         private TextView textViewMSRData = null; 
 	
-	![img](/img/setup/image163.jpg)
+	![img](../../images/setup/image163.jpg)
   
 7. Add the following code to your onCreate function to get a handle on the TextView.
  
@@ -333,7 +333,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
         //Get the textViewBarcode  
         textViewMSRData = (TextView) findViewById(R.id.textViewMSRData); 
 
-	![img](/img/setup/image164.jpg)
+	![img](../../images/setup/image164.jpg)
    
 8. Add the following code to your "handleDecodeData" function to confirm the intent was meant for us. 
 
@@ -344,7 +344,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
           
         }
     
-    ![img](/img/setup/image165.jpg)
+    ![img](../../images/setup/image165.jpg)
    
 9. Add the following code to your "handleDecodeData" function to check if the intent contains MSR data.  
 
@@ -359,7 +359,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
           
         }  
 
-	![img](/img/setup/image166.jpg)
+	![img](../../images/setup/image166.jpg)
   
 10. Add the following code to your "handleDecodeData" function to retrieve MSR data.  
 
@@ -373,7 +373,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
           
         }
 
-	![img](/img/setup/image167.jpg)
+	![img](../../images/setup/image167.jpg)
 
 11. Add the following code to your "handleDecodeData" function to populate the TextView with the revived MSR data.
 
@@ -381,7 +381,7 @@ Next will will add the code to "MSRCompletedActivity" for capturing the startAct
         //Display the data to textViewMSRData  
         textViewMSRData.setText("Data = " + data);  
 
-	![img](/img/setup/image168.jpg) 
+	![img](../../images/setup/image168.jpg) 
 
 ##Running the Application
 Lastly we will run and test our application. 
@@ -393,20 +393,20 @@ Lastly we will run and test our application.
 
 2. Run the application.  
 
-	![img](/img/setup/image169.png)
+	![img](../../images/setup/image169.png)
  
 3. Press the trigger button and scan a Barcode. 
 4. Like before the scanned data will be populated in the Edit Text field Through the previous Keystroke Intent and will appear on the Text View using the previous Datawedge Intent.   
 
-	![img](/img/setup/image170.png)
+	![img](../../images/setup/image170.png)
  
 5. Press the button "MSR".  
 
-	![img](/img/setup/image171.png)
+	![img](../../images/setup/image171.png)
 
 6. Swipe a cad through the MSR.  
 
-	![img](/img/setup/image172.png)
+	![img](../../images/setup/image172.png)
 
 7. Press return to go back to the MSR where you can swipe another card, or hit return again to go back to the main screen. 
 

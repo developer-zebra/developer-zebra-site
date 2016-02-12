@@ -28,7 +28,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Touch Manager" feature from the list and click "Right Arrow".
 
-    ![img](/img/MxTouchManagerTutorialImages/touch_feature.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/touch_feature.jpg)
 
     Provide some name in the "Name" field (Ex. MyTouchManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -36,17 +36,17 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     > Note: So if we select "Glove and Finger" option, we will not be able to use stylus to interact with the device.     
 
-    ![img](/img/MxTouchManagerTutorialImages/touch_manager_details.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/touch_manager_details.jpg)
 
-    ![img](/img/MxTouchManagerTutorialImages/touch_manager_details_selected.jpg)    
+    ![img](../../images/MxTouchManagerTutorialImages/touch_manager_details_selected.jpg)    
  
 4. Click Apply to apply the settings we provided    
   
-    ![img](/img/MxTouchManagerTutorialImages/touch_profile_created.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/touch_profile_created.jpg)
 
 5. Click Finish and your Touch Manager profile for specifying touch mode is created.
 
-    ![img](/img/MxTouchManagerTutorialImages/touch_manager_profile_created.jpg) 
+    ![img](../../images/MxTouchManagerTutorialImages/touch_manager_profile_created.jpg) 
   
 6. Click "Close".
 
@@ -55,12 +55,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
   
 7. You can inspect the "EMDKConfig.xml" created under "\assets" folder to see it is reflecting the changes made to the parameters via EMDK Profile Manager GUI earlier.  However, it is advised that this file not be manually updated and only be controlled via the Profile Manager.
 
-    ![img](/img/MxTouchManagerTutorialImages/emdk_config_file_entries.jpg)    
+    ![img](../../images/MxTouchManagerTutorialImages/emdk_config_file_entries.jpg)    
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK.
   
-    ![img](/img/MxTouchManagerTutorialImages/manifest_file.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/manifest_file.jpg)
 
     You must first enable permissions for 'com.symbol.emdk.permission.EMDK':  
    
@@ -74,7 +74,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     When done, your manifest.xml should look like:
 
-    ![img](/img/MxTouchManagerTutorialImages/manifest_permissions_added.jpg) 
+    ![img](../../images/MxTouchManagerTutorialImages/manifest_permissions_added.jpg) 
 
 ##Adding Some Code    
 1. Now we will start to add some code. 
@@ -152,7 +152,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     So far your code should look like:
      
-     ![img](/img/MxTouchManagerTutorialImages/on_create_added.jpg) 
+     ![img](../../images/MxTouchManagerTutorialImages/on_create_added.jpg) 
 
 2. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the previous steps. We then use that instance object to get an instance of ProfileManager and assign it to the global variable `profileManager`. This is how we will interface with the APIs in the rest of the code:
 
@@ -236,9 +236,9 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `onOpened` method should now look like:
     
-    ![img](/img/MxTouchManagerTutorialImages/on_opened_method_1.jpg) 
+    ![img](../../images/MxTouchManagerTutorialImages/on_opened_method_1.jpg) 
 
-    ![img](/img/MxTouchManagerTutorialImages/on_opened_method_2.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/on_opened_method_2.jpg)
 
 3. You will see few errors as we have not declared the respective methods to parse the response and display result. Lets do it one by one. In this step, we will create a method `parseXML` that uses [XML Pull Parser](http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html) to parse the XML string response and set the status and error parameters if any.
 
@@ -285,7 +285,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your complete `parseXML` method should now look like:
     
-    ![img](/img/MxTouchManagerTutorialImages/parse_xml.jpg) 
+    ![img](../../images/MxTouchManagerTutorialImages/parse_xml.jpg) 
 
 4. You will still see one error as we need to declare `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). Before displaying the results, we should form the content of the result to be shown first, specifically in case of errors. This could be done by creating `buildFailureMessage` method.
  
@@ -315,7 +315,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     `buildFailureMessage` method should look like:
     
-    ![img](/img/MxTouchManagerTutorialImages/build_failure_message.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/build_failure_message.jpg)
 
 5. In this step, we will add `displayResults` method to display the result of profile operation in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html). The dialog would display status as `Success` or `Failure` with corresponding message based on the response of profile operation.
 
@@ -355,7 +355,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     The method `displayResults` should look like:
     
-    ![img](/img/MxTouchManagerTutorialImages/display_results.jpg)
+    ![img](../../images/MxTouchManagerTutorialImages/display_results.jpg)
 
 	You can see that all the errors are gone.  
     
@@ -372,7 +372,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
     Your onDestroy method should now look like this:  
 
-    ![img](/img/MxTouchManagerTutorialImages/on_destroy_method.jpg) 
+    ![img](../../images/MxTouchManagerTutorialImages/on_destroy_method.jpg) 
 
 That's it!!! We are done with all the coding and configuration part that will let us set the touch mode to "Glove and Finger" on our Symbol Android device. Now let us run the application.
  
@@ -389,11 +389,11 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     You can see the default Touch Mode is "Stylus and Finger", which we will now change to "Glove and Finger" using Touch Manager feature of Mx. 
 
-    ![img](/img/MxTouchManagerTutorialImages/touch_mode.png) 
+    ![img](../../images/MxTouchManagerTutorialImages/touch_mode.png) 
 
 2. Run the application.
 
-    ![img](/img/MxTouchManagerTutorialImages/home_screen.png)
+    ![img](../../images/MxTouchManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message, which implies that the Touch Mode has been successfully set to "Glove and Finger".
 
@@ -401,7 +401,7 @@ That's it!!! We are done with all the coding and configuration part that will le
   
 3. We will now verify this by going into the device's Settings -> Display -> Touch Mode.
 
-    ![img](/img/MxTouchManagerTutorialImages/touch_mode_changed.png)
+    ![img](../../images/MxTouchManagerTutorialImages/touch_mode_changed.png)
 
     This is how Touch Manager is used to set the Touch Mode of your Symbol Android device using Profile Wizard. 
 

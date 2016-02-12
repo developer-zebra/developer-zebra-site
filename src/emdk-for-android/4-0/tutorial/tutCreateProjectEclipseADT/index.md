@@ -12,41 +12,41 @@ This tutorial helps you creating a new Android application project using Eclipse
 ## Creating The Project
 1.  Create new Android Application project.
   
-    ![img](/img/CreatingProjectEclipseIDEImages/create_new_app.jpg)
+    ![img](../../images/CreatingProjectEclipseIDEImages/create_new_app.jpg)
 
 2.  Assign names for the application and package specific to your tutorial of EMDK feature.
  
 3.  Set the minimum required SDK to "API 16: Android 4.1 (Jelly Bean)".
   
-    ![img](/img/CreatingProjectEclipseIDEImages/set_app_name.jpg)
+    ![img](../../images/CreatingProjectEclipseIDEImages/set_app_name.jpg)
 
 4.  Click "Next".
   
-    ![img](/img/CreatingProjectEclipseIDEImages/configure_project.jpg)
+    ![img](../../images/CreatingProjectEclipseIDEImages/configure_project.jpg)
   
 5.  Click "Next".
   
-    ![img](/img/CreatingProjectEclipseIDEImages/configure_launcher_icon.jpg)
+    ![img](../../images/CreatingProjectEclipseIDEImages/configure_launcher_icon.jpg)
   
 6.  Click "Next".  
 
 7.  Select "Empty Activity" Click "Next".  
 
-    ![img](/img/CreatingProjectEclipseIDEImages/create_activity.jpg)  
+    ![img](../../images/CreatingProjectEclipseIDEImages/create_activity.jpg)  
 
     >Note:  
     >If "Empty Activity" is not available make sure you are using "Android SDK Tools 22.6.3" and "Android SDK Platform Tools 19.0.2"
 
 7.  Click "Next".  
 
-    ![img](/img/CreatingProjectEclipseIDEImages/empty_activity.jpg)
+    ![img](../../images/CreatingProjectEclipseIDEImages/empty_activity.jpg)
   
 8.  Click "Finish".
 
     >Note:  
     >Currently there is nothing under "\assets" folder.  
     
-    ![img](/img/CreatingProjectEclipseIDEImages/main_activity.jpg)
+    ![img](../../images/CreatingProjectEclipseIDEImages/main_activity.jpg)
 
 
 

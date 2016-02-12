@@ -1,18 +1,5 @@
 ---
-title: MX Framework
-publish: false
-menu:
-  items:
-    - title: Features
-      url: /mx/features
-    - title: Architecture
-      url: /mx/overview
-    - title: Compatibility
-      url: /mx/compatibility
-    - title: Choosing a MX Version
-      url: /mx/choosing-a-version
-    - title: Checking Device MX Version
-      url: /mx/mx-version-on-device
+title: MX Features
 layout: csp-mx-support.html
 mxversions:
   - text: MX 4.2
@@ -27,148 +14,120 @@ mxversions:
 csps:
   - type: section
     title: Access Manager
-    url: /mx/accessmgr/
+    url: /emdk-for-android/4-0/mx/accessmgr/
     csp: accessmgr
   - type: section
     title: Analytics Manager
-    url: /mx/analyticsmgr
+    url: /emdk-for-android/4-0/mx/analytics
     csp: analyticsmgr
   - type: section
     title: App Manager
-    url: /mx/appmgr
+    url: /emdk-for-android/4-0/mx/appmgr
     csp: appmgr
   - type: section
     title: Audio Vol Manager
-    url: /mx/audiovoluimgr
+    url: /emdk-for-android/4-0/mx/audiomgr
     csp: audiovoluimgr
   - type: section
-    title: Batch Manager
-    url: /mx/batchmgr
-    csp: batchmgr
-  - type: section
     title: Battery Manager
-    url: /mx/batterymgr
+    url: /emdk-for-android/4-0/mx/batterymgr
     csp: batterymgr
   - type: section
     title: Browser Manager
-    url: /mx/browsermgr
+    url: /emdk-for-android/4-0/mx/browsermgr
     csp: browsermgr
   - type: section
     title: Camera Manager
-    url: /mx/cameramgr
+    url: /emdk-for-android/4-0/mx/cameramgr
     csp: cameramgr
   - type: section
     title: Cellular Manager
-    url: /mx/cellularmgr
+    url: /emdk-for-android/4-0/mx/cellularmgr
     csp: cellularmgr
   - type: section
     title: Certificate Manager
-    url: /mx/certmgr
+    url: /emdk-for-android/4-0/mx/certmgr
     csp: certmgr
   - type: section
     title: Clock
-    url: /mx/clock
+    url: /emdk-for-android/4-0/mx/clock
     csp: clock
   - type: section
     title: Component Manager
-    url: /mx/componentmgr
+    url: /emdk-for-android/4-0/mx/componentmgr
     csp: componentmgr
   - type: section
-    title: Condition Manager
-    url: /mx/conditionmgr
-    csp: conditionmgr
-  - type: section
     title: DevAdmin 
-    url: /mx/devadmin
+    url: /emdk-for-android/4-0/mx/devadmin
     csp: devadmin
   - type: section
     title: DHCP Option Manager 
-    url: /mx/dhcpoptionmgr
+    url: /emdk-for-android/4-0/mx/dhcp
     csp: dhcpoptionmgr
   - type: section
     title: Display Manager 
-    url: /mx/displaymgr
+    url: /emdk-for-android/4-0/mx/displaymgr
     csp: displaymgr
   - type: section
     title: Encrypt Manager 
-    url: /mx/encryptmgr
+    url: /emdk-for-android/4-0/mx/encryptmgr
     csp: encryptmgr
   - type: section
-    title: File Manager 
-    url: /mx/filemgr
-    csp: filemgr
-  - type: section
     title: GPRS Manager 
-    url: /mx/gprsmgr
+    url: /emdk-for-android/4-0/mx/gprsmgr
     csp: gprsmgr
   - type: section
-    title: Intent Manager 
-    url: /mx/intent
-    csp: intent
-  - type: section
     title: KeyMapping Manager 
-    url: /mx/keymappingmgr
+    url: /emdk-for-android/4-0/mx/keymappingmgr
     csp: keymapmgr
   - type: section
-    title: License Manager 
-    url: /mx/licensemgr
-    csp: licensemgr
-  - type: section
     title: Persist Manager 
-    url: /mx/persistmgr
+    url: /emdk-for-android/4-0/mx/persistence
     csp: persistmgr
   - type: section
     title: PowerKey Manager 
-    url: /mx/powerkeymgr
+    url: /emdk-for-android/4-0/mx/powerkeymgr
     csp: powerkeymgr
   - type: section
     title: Power Manager 
-    url: /mx/powermgr
+    url: /emdk-for-android/4-0/mx/powermgr
     csp: powermgr
   - type: section
-    title: Scan Mode Manager 
-    url: /mx/scanmodemgr
-    csp: scanmodemgr
-  - type: section
     title: SD Card Manager 
-    url: /mx/sdcardmgr
+    url: /emdk-for-android/4-0/mx/sdcardmgr
     csp: sdcardmgr
   - type: section
     title: Settings Manager 
-    url: /mx/settingsmgr
+    url: /emdk-for-android/4-0/mx/settingsmgr
     csp: settingsmgr
   - type: section
-    title: Status Manager 
-    url: /mx/statusmgr
-    csp: statusmgr
-  - type: section
     title: Threat Manager 
-    url: /mx/threatmgr
+    url: /emdk-for-android/4-0/mx/threatmgr
     csp: threatmgr
   - type: section
     title: Touch Manager 
-    url: /mx/touchmgr
+    url: /emdk-for-android/4-0/mx/touchmgr
     csp: touchmgr
   - type: section
     title: UI Manager 
-    url: /mx/uimgr
+    url: /emdk-for-android/4-0/mx/uimgr
     csp: uimgr
   - type: section
     title: USB Manager 
-    url: /mx/usbmgr
+    url: /emdk-for-android/4-0/mx/usbmgr
     csp: usbmgr
   - type: section
     title: WiFi 
-    url: /mx/wifi
+    url: /emdk-for-android/4-0/mx/wifi
     csp: wifi
   - type: section
     title: Wireless Manager 
-    url: /mx/wirelessmgr
+    url: /emdk-for-android/4-0/mx/wirelessmgr
     csp: wirelessmgr
   - type: section
     title: XML Manager 
-    url: /mx/xmlmgr
+    url: /emdk-for-android/4-0/mx/xml
     csp: xmlmgr
 
----                      
 ---
+ 

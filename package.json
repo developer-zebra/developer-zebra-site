@@ -32,6 +32,7 @@
     "npm": "^3.3.10"
   },
   "dependencies": {
+    "cheerio": "^0.20.0",
     "front-matter": "^2.0.5",
     "hexo-server": "^0.1.2",
     "html-stemmer": "^1.0.5",

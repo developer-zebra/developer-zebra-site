@@ -60,8 +60,8 @@ automenu:
           url: /emdk-for-android/4-0/mx/touchmgr/
     - title: Core Framework
       items:
-        - title: Persistance Manager
-          url: /emdk-for-android/4-0/mx/persistance
+        - title: Persistence Manager
+          url: /emdk-for-android/4-0/mx/persistence
         - title: XML Manager
           url: /emdk-for-android/4-0/mx/xml
     - title: Security

@@ -24,12 +24,12 @@ When the import process is complete, the project load in the IDE, ready to deplo
 
 1. Select the project.  
 2. Select "File -> Properties" or right click on the project and select "Properties".  
-    ![img](/img/setup/image033.jpg)   
-    ![img](/img/setup/image035.jpg)   
+    ![img](../../images/setup/image033.jpg)   
+    ![img](../../images/setup/image035.jpg)   
 3.    Click "Android" from the left pane.  
-    ![img](/img/setup/image037.jpg) 
+    ![img](../../images/setup/image037.jpg) 
 4. Select the "EMDK" target name from the list of Project Build Targets for the API version you require.  
-    ![img](/img/setup/image039.jpg)  
+    ![img](../../images/setup/image039.jpg)  
 
     >Note:  
     >If an "EMDK..." target name is not on the list of Build Targets, please confirm you have installed Android API 16 SDK Platform.
@@ -41,10 +41,10 @@ When the import process is complete, the project load in the IDE, ready to deplo
 7. From the Package Explorer right click on the select the sample application 
 8. Right click on the project and select "Run As" -> "Android Application"
 
-	![img](/img/sample/7.jpg)
+	![img](../../images/sample/7.jpg)
 9. Select your Android device and click "Okay". 
     
-    ![img](/img/sample/8.jpg)
+    ![img](../../images/sample/8.jpg)
 
 
 

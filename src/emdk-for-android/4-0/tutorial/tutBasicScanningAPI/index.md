@@ -429,17 +429,17 @@ That's it!!! We are done with all the coding part that will let us scan the barc
  
 2. Run the application.
 
-    ![img](/img/BasicScanningTutorialImages/home_screen.png)
+    ![img](../../images/BasicScanningTutorialImages/home_screen.png)
 
     You can see a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html), which indicates that the Scanner has been enabled and you can start scanning by pressing hard scan button of the device.
   
 3. Now if you press the hard scan button, the status listener in the code starts working and current status of Scanner is displayed in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Scanning`.  
 
-    ![img](/img/BasicScanningTutorialImages/status_scanning.png)
+    ![img](../../images/BasicScanningTutorialImages/status_scanning.png)
 
 4. Once you are done with scanning and release the hard scan button, data gets populated on [EditText](http://developer.android.com/reference/android/widget/EditText.html) and status is again updated in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Idle`.
 
-    ![img](/img/BasicScanningTutorialImages/status_idle.png)  
+    ![img](../../images/BasicScanningTutorialImages/status_idle.png)  
 
     This is how [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V 3.0 can be used to perform Basic Scanning operations on your Symbol devices without using Profile Wizard. We will see the [Barcode/Scanning APIs](/emdk-for-android/4-0/api) in depth to perform advanced scanning operations in the next tutorial. 
 

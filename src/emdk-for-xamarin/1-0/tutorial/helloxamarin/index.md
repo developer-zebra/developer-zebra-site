@@ -9,7 +9,7 @@ Before starting this tutorial you must install the following software.
 
 - Visual Studio 2013 or later
 - [Xamarin Plaform](http://xamarin.com/download)
-- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/1-0/guide/vs-setup)
+- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/1-0/guide/vs/setup/)
 
 
 ##Create a new project
@@ -20,7 +20,7 @@ Follow this [guide](/emdk-for-xamarin/1-0/guide/newprojectvisualstudio) to creat
 Follow this [guide](/emdk-for-xamarin/1-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
 
 ##Add Symbol EMDK Component
-Follow this [guide](/emdk-for-xamarin/1-0/guide/component-install) to add the needed component you your project.
+Follow this [guide](/emdk-for-xamarin/1-0/guide/component/install) to add the needed component you your project.
 
 ##Build a Profile
 In this project we will perform a simple task to demonstrate how to use the ProfileManager Wizard to create a profile

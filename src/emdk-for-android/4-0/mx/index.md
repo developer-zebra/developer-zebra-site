@@ -83,8 +83,8 @@ contentlist:
     description: Access core framework features and how XML settings are managed.
     visible: true
     items: 
-      - title: Persistance Manager
-        url: persistance
+      - title: Persistence Manager
+        url: persistence
         description: The PersistMgr allows you to manage the Request XML Documents that are persistent on a device.
         icon: /mx/icons/persistmgr.png
       - title: XML Manager

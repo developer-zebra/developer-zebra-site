@@ -12,24 +12,24 @@ Open Android Studio.  If you have a previous project open, close the project by 
 
 1. Select **Start a new Android Studio project** under **Quick Start** section.
 
-	![img](/img/CreatingProjectAndroidStudioImages/fresh_launch.jpg)
+	![img](../../images/CreatingProjectAndroidStudioImages/fresh_launch.jpg)
 
 2. In the new project wizard we need to assign Application Name specific to your tutorial of EMDK feature along with Company Domain and click "Next".
 
-	![img](/img/CreatingProjectAndroidStudioImages/app_name.jpg)
+	![img](../../images/CreatingProjectAndroidStudioImages/app_name.jpg)
 
 
 3. Select the **Minimum SDK** that supports the SDK features your project requires and click **Next**.
 
-	![img](/img/CreatingProjectAndroidStudioImages/as_select_min_sdk.png)
+	![img](../../images/CreatingProjectAndroidStudioImages/as_select_min_sdk.png)
 
 4. Select **Blank Activity** option on **Add an activity to Mobile** screen and click **Next**.
 
-	![img](/img/CreatingProjectAndroidStudioImages/as_select_blank_activity.png)
+	![img](../../images/CreatingProjectAndroidStudioImages/as_select_blank_activity.png)
 
 5. Click **Finish** and your new Android Studio project will be created.
 
-	![img](/img/CreatingProjectAndroidStudioImages/as_new_project_wizard_finish.png)
+	![img](../../images/CreatingProjectAndroidStudioImages/as_new_project_wizard_finish.png)
 
 
 	>Note: The `\assets` folder is not present in the project structure but Profile Manager will create this folder when needed.

@@ -23,11 +23,11 @@ Download and install **Android Studio** from [http://developer.android.com/sdk/i
 
 3. Click next or select a custom install location by clicking Browse and then click next.
 
-	![img](/img/setup/emdkInstall03.png)
+	![img](../../images/setup/emdkInstall03.png)
 
 4. Continue installing EMDK for Android in Android studio by selecting the **Use Android Studio** radio button ( As Shown ) and select Next.
 
-	![img](/img/setup/emdkInstall04.png)
+	![img](../../images/setup/emdkInstall04.png)
 
 5. When prompted, click **Yes** to install the ADB drivers.
 

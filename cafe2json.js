@@ -45,6 +45,9 @@ var sheets = [
             "C": {
                 heading: "Id"
             },
+            "G": {
+                heading: "MX"
+            },
             "P": {
                 heading: "Csp"
             },
@@ -84,7 +87,7 @@ sheets.forEach(function(sheet){
             if(!data[row]) data[row]={};
             if(sheet.cols[col]){
                 data[row].row = row;
-                data[row][headers[sheet.cols[col].heading]] = value;
+                data[row][headers[sheet.cols[col].heading]] = value.replace(/[\r\n]+/g," ").replace(/CAFÉ\./g,"");
             
 
             }

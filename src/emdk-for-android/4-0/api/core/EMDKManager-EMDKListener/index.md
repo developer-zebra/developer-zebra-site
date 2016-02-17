@@ -1,5 +1,6 @@
 ---
 title: EMDKManager.EMDKListener
+type: api
 ---
 
 This is the interface for the callback to notify the opening and closing status of the EMDK.
@@ -49,7 +50,7 @@ void
 **public void onClosed()**
 
 Called to notify the client that this EMDKManager object has been abruptly closed.
- The clients must call to call  EMDKManager#release() to free all the resources used by EMDKManager even after onClosed().
+ The clients must call to call [EMDKManager#release()](../EMDKManager#release()) to free all the resources used by EMDKManager even after onClosed().
  Notifies user upon a abrupt closing of EMDKManager.
  
  
@@ -67,5 +68,4 @@ Called to notify the client that this EMDKManager object has been abruptly close
 **Returns:**
 
 void
-
 

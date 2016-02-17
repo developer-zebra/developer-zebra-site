@@ -1,6 +1,8 @@
 ---
 title: SimulScanData
+type: api
 ---
+
 
 The SimulScanData object gives scanning result
  
@@ -68,5 +70,4 @@ Returns a list of scanned elements.
 **Returns:**
 
 java.util.List - Returns a List object of SimulScanElement objects
-
 

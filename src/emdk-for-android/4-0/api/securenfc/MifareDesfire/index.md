@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire
+type: api
 ---
+
 
 Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
  Tag object. This class encapsulates all the methods required for
@@ -789,71 +791,4 @@ boolean - true : if connection with the tag is enabled false : if the
 com.symbol.emdk.securenfc.MifareDesfireExpection
 
 The exception will be thrown if the emdk is not opened.
-
-##Public Enums
-
-###MifareDesfire.FileCommMode
-
-File Communication Mode. Value PLAIN and Enchipered is supported. Value
- MACED is not supported.
-
-**Values:**
-
-* **PLAIN** -Plain communication
-
-* **MACED** -Plain communication secured by MACing. This is not supported.
-
-* **ENCIPHERED** -Fully enciphered communication. This is supported for authentication
- type NATIVE (TDEA-DESFire). It is not supported for authentication
- type ISO & AES.
-
-###MifareDesfire.CreditType
-
-
-
-**Values:**
-
-* **STANDARD** -Standard credit
-
-* **LIMITED** -Limited increase of a value without having full Read&Write
- permissions to the file
-
-###MifareDesfire.FileIDType
-
-
-
-**Values:**
-
-* **NATIVE** -Native file ID: 1 byte long
-
-* **ISO7816** -ISO 7816-4 complaint file ID: 2 byte long
-
-###MifareDesfire.FileType
-
-
-
-**Values:**
-
-* **STANDARD** -Standard data file
-
-* **BACKUP** -Back up data file
-
-* **VALUE** -Value file
-
-* **LINEAR_RECORD** -Linear record file
-
-* **CYCLIC_RECORD** -Cyclic record file
-
-###MifareDesfire.AuthenticateType
-
-Authentication mode.
-
-**Values:**
-
-* **NATIVE** -Authentication Type is Native.
-
-* **ISO** -Authentication Type is ISO. Not supported.
-
-* **AES** -Authentication Type is AES. Not Supported
-
 

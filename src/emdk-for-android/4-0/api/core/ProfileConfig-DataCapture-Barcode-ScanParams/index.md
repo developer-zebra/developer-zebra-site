@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.ScanParams
+type: api
 ---
+
 
 Holds scanning configuration settings.  
  
@@ -18,7 +20,7 @@ Holds scanning configuration settings.
 
 A Code ID character identifies the code type of a scanned bar code. 
  This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol. 
- Use enum  ProfileConfig.CODE_ID_TYPE.
+ Use enum [ProfileConfig-CODE_ID_TYPE](../ProfileConfig-CODE_ID_TYPE).
  
  
 
@@ -35,7 +37,7 @@ com.symbol.emdk.ProfileConfig.CODE_ID_TYPE
 ###volume_slider_type
 
 Defines the notification type for a good decode. 
- Use enum  ProfileConfig.VOLUME_SLIDER_TYPE.
+ Use enum [ProfileConfig-VOLUME_SLIDER_TYPE](../ProfileConfig-VOLUME_SLIDER_TYPE).
  
  
 
@@ -71,7 +73,7 @@ java.lang.String
 
 ###decode_haptic_feedback
 
-Enable the device to vibrate upon a good decode (default - enabled). Use enum  ProfileConfig.ENABLED_STATE.
+Enable the device to vibrate upon a good decode (default - enabled). Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -103,7 +105,7 @@ int
 
 ###decoding_led_feedback
 
-Enable the device to blink LED upon a good decode (default - disabled). Use enum  ProfileConfig.ENABLED_STATE.
+Enable the device to blink LED upon a good decode (default - disabled). Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -119,7 +121,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 ###bt_disconnect_on_exit
 
-Bluetooth disconnect on exit. Use enum  ProfileConfig.ENABLED_STATE.
+Bluetooth disconnect on exit. Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -155,7 +157,7 @@ int
 
 If this value is set to true, the Bluetooth Pairing Utility
  Application will be opened when the enable method is called.
- Use enum  ProfileConfig.ENABLED_STATE.
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -201,5 +203,4 @@ Data Capture LED ID
 **Type:**
 
 int
-
 

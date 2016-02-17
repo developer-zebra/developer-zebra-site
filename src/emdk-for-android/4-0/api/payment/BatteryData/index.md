@@ -1,6 +1,8 @@
 ---
 title: BatteryData
+type: api
 ---
+
 
 This class holds the API status and battery level.
 
@@ -24,5 +26,4 @@ Returns the battery level retrieved by the battery related API.
 **Returns:**
 
 int
-
 

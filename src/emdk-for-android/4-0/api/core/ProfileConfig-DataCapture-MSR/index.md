@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.MSR
+type: api
 ---
+
 
 Holds MSR configuration settings
  
@@ -22,7 +24,7 @@ Holds MSR configuration settings
 
 ###msr_input_enabled
 
-Gets and Sets MSR enabled configuration enum  ProfileConfig.ENABLED_STATE.
+Gets and Sets MSR enabled configuration enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -35,5 +37,4 @@ Gets and Sets MSR enabled configuration enum  ProfileConfig.ENABLED_STATE.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

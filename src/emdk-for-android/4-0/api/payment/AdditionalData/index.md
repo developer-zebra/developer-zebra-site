@@ -1,6 +1,8 @@
 ---
 title: AdditionalData
+type: api
 ---
+
 
 This class holds additional data information.
 
@@ -35,5 +37,4 @@ Returns the surcharge value is accepted by the user or not..
 **Returns:**
 
 boolean
-
 

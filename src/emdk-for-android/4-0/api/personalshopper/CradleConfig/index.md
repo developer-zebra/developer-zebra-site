@@ -1,6 +1,8 @@
 ---
 title: CradleConfig
+type: api
 ---
+
 
 The class to access cradle configuration.
 
@@ -75,7 +77,6 @@ boolean - ChargeMode (true - fast charge enabled, false - fast charge disabled)
 **Throws:**
 
 com.symbol.emdk.personalshopper.CradleException
-
 
 
 

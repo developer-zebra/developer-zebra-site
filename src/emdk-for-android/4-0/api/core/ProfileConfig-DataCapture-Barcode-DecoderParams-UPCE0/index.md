@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE0
+type: api
 ---
+
 
 Holds UPCE0 configuration settings. 
  
@@ -18,7 +20,7 @@ Holds UPCE0 configuration settings.
 
 The check digit is the last character of the symbol used to verify the integrity of the data. 
  Enables or disables this option (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -36,7 +38,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Preamble characters are part of the UPC symbol consisting of Country Code and System Character. 
  Select the appropriate option to match the host system. 
- Use enum  ProfileConfig.PREAMBLE. 
+ Use enum [ProfileConfig-PREAMBLE](../ProfileConfig-PREAMBLE). 
  
  
 
@@ -55,7 +57,7 @@ com.symbol.emdk.ProfileConfig.PREAMBLE
 Enable to convert UPCE0 (zero suppressed) decoded data to UPC-A format before transmission. 
  After conversion, the data follows UPC-A format and is af fected by UPC-A programming selections. 
  Disable to transmit UPCE0 decoded data as UPCE0 data, without conversion (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -68,5 +70,4 @@ Enable to convert UPCE0 (zero suppressed) decoded data to UPC-A format before tr
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

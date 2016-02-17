@@ -1,6 +1,8 @@
 ---
 title: SimulScanReaderInfo
+type: api
 ---
+
 
 SimulScanReaderInfo provides information of the reader device.
  
@@ -51,27 +53,4 @@ Returns the reader device type
 
 com.symbol.emdk.simulscan.SimulScanReaderInfo.DeviceType - SimulScanDeviceType
  		Returns the SimulScanDeviceType
-
-##Public Enums
-
-###SimulScanReaderInfo.DeviceType
-
-List of supported scanner device type.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	SimulScanDeviceType.CAMERA;
-
-
-**Values:**
-
-* **CAMERA** -The Scanner device class is camera.
-
-* **IMAGER** -The scanner device class is imager.
-
-* **UNDEFINED** -The scanner device class is not defined.
-
 

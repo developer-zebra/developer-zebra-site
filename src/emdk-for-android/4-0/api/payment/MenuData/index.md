@@ -1,6 +1,8 @@
 ---
 title: MenuData
+type: api
 ---
+
 
 This class holds the menu choices selected.
 
@@ -15,5 +17,4 @@ Returns the choice string selected by the user
 **Returns:**
 
 java.lang.String - Choice string selected by the user.
-
 

@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code128
+type: api
 ---
+
 
 The Code128 class provides access to parameters that are available
  for the Code128 decoder.
@@ -104,7 +106,7 @@ boolean
 ###isbt128ConcatMode
 
 Select an option for concatenating pairs of ISBT code types. Use
- enum  ScannerConfig.Isbt128ContactMode.
+ enum [ScannerConfig-Isbt128ContactMode](../ScannerConfig-Isbt128ContactMode).
  
  
 
@@ -145,7 +147,7 @@ The scanner of fers four levels of decode security for Code 128
  levels of bar code quality. There is an inverse relationship
  between security and scanner aggressiveness, so choose only that
  level of security necessary for any given application. Use enum
-  ScannerConfig.SecurityLevel.
+ [ScannerConfig-SecurityLevel](../ScannerConfig-SecurityLevel).
  
  
 
@@ -158,5 +160,4 @@ The scanner of fers four levels of decode security for Code 128
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
-
 

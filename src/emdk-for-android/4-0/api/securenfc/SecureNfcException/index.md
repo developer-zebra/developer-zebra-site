@@ -1,6 +1,8 @@
 ---
 title: SecureNfcException
+type: api
 ---
+
 
 The methods of SecureNfcException object throw a SecureNfcException when an error
  occurs.
@@ -21,5 +23,4 @@ Returns the SecureNfcResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.SecureNfcResults
-
 

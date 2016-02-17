@@ -1,6 +1,8 @@
 ---
 title: SimulScanStatusData
+type: api
 ---
+
 
 SimulScanStatusData class provides access to reader status.
  
@@ -40,25 +42,4 @@ Returns the friendly name of the Reader from which the SimulScanStatusData
 **Returns:**
 
 java.lang.String - String
-
-##Public Enums
-
-###SimulScanStatusData.SimulScanStatus
-
-
-
-**Values:**
-
-* **DISABLED** -Disabled called successfully on reader
-
-* **ENABLED** -Enabled reader successfully
-
-* **SCANNING** -Successfully started scanning
-
-* **IDLE** -Finished scanning
-
-* **ERROR** -Error occurred
-
-* **UNKNOWN** -Unknown status
-
 

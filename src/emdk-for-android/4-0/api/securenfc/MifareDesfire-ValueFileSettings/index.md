@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire.ValueFileSettings
+type: api
 ---
+
 
 
 
@@ -45,5 +47,4 @@ Free read access to the value file false: Disabled true: Enabled
 **Type:**
 
 boolean
-
 

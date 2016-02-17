@@ -1,6 +1,8 @@
 ---
 title: Diagnostic
+type: api
 ---
+
 
 This class provides access to fetch the diagnostics information.
  
@@ -38,7 +40,6 @@ com.symbol.emdk.personalshopper.DiagnosticData - DiagnosticData : Manufacturing 
 **Throws:**
 
 com.symbol.emdk.personalshopper.DiagnosticException
-
 
 
 

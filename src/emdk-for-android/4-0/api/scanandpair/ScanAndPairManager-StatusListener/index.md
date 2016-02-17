@@ -1,6 +1,8 @@
 ---
 title: ScanAndPairManager.StatusListener
+type: api
 ---
+
 
 An interface for notifying client applications to notify scan and pair or unpair events.
  
@@ -29,5 +31,4 @@ This is the callback method upon scan and pair or unpair status event occurs.
 **Returns:**
 
 void
-
 

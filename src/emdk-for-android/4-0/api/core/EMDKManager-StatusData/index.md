@@ -1,6 +1,8 @@
 ---
 title: EMDKManager.StatusData
+type: api
 ---
+
 
 StatusData class provides access to EMDK Manager feature ready to use status.
  
@@ -33,5 +35,4 @@ Returns the feature type for which the status data is returned.
 **Returns:**
 
 com.symbol.emdk.EMDKManager.FEATURE_TYPE
-
 

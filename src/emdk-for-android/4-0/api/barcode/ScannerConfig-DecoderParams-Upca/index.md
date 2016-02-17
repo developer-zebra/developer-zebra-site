@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Upca
+type: api
 ---
+
 
 The Upca class provides access to parameters that are available for
  the Upca decoder.
@@ -22,5 +24,4 @@ Controls the preamble applied to the bar code.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.Preamble
-
 

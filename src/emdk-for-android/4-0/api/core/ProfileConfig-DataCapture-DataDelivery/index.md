@@ -1,8 +1,10 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery
+type: api
 ---
 
-Class for dealing with DataDelivery profile data  ProfileConfig.DataCapture.DataDelivery
+
+Class for dealing with DataDelivery profile data [ProfileConfig-DataCapture-DataDelivery](../ProfileConfig-DataCapture-DataDelivery)
  
  
 
@@ -16,7 +18,7 @@ Class for dealing with DataDelivery profile data  ProfileConfig.DataCapture.Data
 
 ###intent
 
-Gets and Sets Intent configuration object  ProfileConfig.DataCapture.DataDelivery.Intent.
+Gets and Sets Intent configuration object [ProfileConfig-DataCapture-DataDelivery-Intent](../ProfileConfig-DataCapture-DataDelivery-Intent).
  
  
 
@@ -32,7 +34,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.Intent
 
 ###keystroke
 
-Gets and Sets Keystroke configuration object  ProfileConfig.DataCapture.DataDelivery.Keystroke.
+Gets and Sets Keystroke configuration object [ProfileConfig-DataCapture-DataDelivery-Keystroke](../ProfileConfig-DataCapture-DataDelivery-Keystroke).
  
  
 
@@ -45,5 +47,4 @@ Gets and Sets Keystroke configuration object  ProfileConfig.DataCapture.DataDeli
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.Keystroke
-
 

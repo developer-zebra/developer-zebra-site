@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire.DFNames
+type: api
 ---
+
 
 
 
@@ -29,5 +31,4 @@ ISO/IEC 7816-4 DF name
 **Type:**
 
 byte
-
 

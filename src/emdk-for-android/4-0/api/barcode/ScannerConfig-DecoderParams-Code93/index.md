@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code93
+type: api
 ---
+
 
 The Code93 class provides access to parameters that are available for
  the Code93 decoder.
@@ -54,5 +56,4 @@ Sets the reader to read the bar code twice before accepting data.
 **Type:**
 
 boolean
-
 

@@ -1,6 +1,8 @@
 ---
 title: SimulScanReader
+type: api
 ---
+
 
 SimulScanReader class will represent and provides access to the physical Reader
  device.
@@ -276,5 +278,4 @@ The client can unregister to not get status notification via callbacks.
 **Returns:**
 
 void
-
 

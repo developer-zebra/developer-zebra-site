@@ -1,6 +1,8 @@
 ---
 title: MifarePlusSL3Exception
+type: api
 ---
+
 
 The methods of MifarePlusSL3 object throw a MifarePlusSL3Exception when an error
  occurs.
@@ -21,5 +23,4 @@ Returns the MifarePlusSL3Results.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifarePlusSL3Results
-
 

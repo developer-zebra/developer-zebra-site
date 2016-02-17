@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Msi
+type: api
 ---
+
 
 The Msi class provides access to parameters that are available for
  the Msi decoder.
@@ -59,7 +61,7 @@ boolean
 
 With MSI symbols, one check digit is mandatory and always
  verified by the reader. The second check digit is optional. Use
- enum  ScannerConfig.CheckDigit.
+ enum [ScannerConfig-CheckDigit](../ScannerConfig-CheckDigit).
  
  
 
@@ -77,7 +79,7 @@ com.symbol.emdk.barcode.ScannerConfig.CheckDigit
 
 Two algorithms are possible for the verification of the second
  MSI check digit. Select the algorithm used to encode the check
- digit. Use enum  ScannerConfig.CheckDigitScheme.
+ digit. Use enum [ScannerConfig-CheckDigitScheme](../ScannerConfig-CheckDigitScheme).
  
  
 
@@ -106,5 +108,4 @@ Transmit MSI data with or without the check digit.
 **Type:**
 
 boolean
-
 

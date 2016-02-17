@@ -1,6 +1,8 @@
 ---
 title: SimulScanReader.DataListerner
+type: api
 ---
+
 
 An interface for notifying client applications when the scan data is
  available.
@@ -30,5 +32,4 @@ This is the callback method upon data availability.
 **Returns:**
 
 void
-
 

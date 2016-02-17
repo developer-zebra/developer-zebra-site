@@ -1,6 +1,8 @@
 ---
 title: DiagnosticException
+type: api
 ---
+
 
 The methods of diagnostic API throw a DiagnosticException when an error
  occurs.
@@ -21,5 +23,4 @@ Returns the DiagnosticResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.DiagnosticResults - Error type (Diagnostic Result)
-
 

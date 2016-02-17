@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
+type: api
 ---
+
 
 LaserSpecific class provides access to the laser scanner specific parameters.
 
@@ -34,7 +36,7 @@ int
 ###linearSecurityLevel
 
 Sets the number of times a bar code is read to confirm an accurate decode.
- Use enum  ScannerConfig.LinearSecurityLevel.
+ Use enum [ScannerConfig-LinearSecurityLevel](../ScannerConfig-LinearSecurityLevel).
  
  
 
@@ -51,7 +53,7 @@ com.symbol.emdk.barcode.ScannerConfig.LinearSecurityLevel
 ###inverse1DMode
 
 This parameter allows the user to select decoding on inverse 1D bar codes.
- Use enum  ScannerConfig.Inverse1DMode.
+ Use enum [ScannerConfig-Inverse1DMode](../ScannerConfig-Inverse1DMode).
  
  
 
@@ -68,10 +70,9 @@ com.symbol.emdk.barcode.ScannerConfig.Inverse1DMode
 ###powerMode
 
 Set scanner power mode.
- Use enum  ScannerConfig.PowerMode.
+ Use enum [ScannerConfig-PowerMode](../ScannerConfig-PowerMode).
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.PowerMode
-
 

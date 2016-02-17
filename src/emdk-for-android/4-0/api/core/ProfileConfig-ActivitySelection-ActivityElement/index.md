@@ -1,8 +1,10 @@
 ---
 title: ProfileConfig.ActivitySelection.ActivityElement
+type: api
 ---
 
-Gets and Sets application's package name and its activities to the profile  ProfileConfig.ActivitySelection.ActivityElement.
+
+Gets and Sets application's package name and its activities to the profile [ProfileConfig-ActivitySelection-ActivityElement](../ProfileConfig-ActivitySelection-ActivityElement).
  
  
 
@@ -41,5 +43,4 @@ activities
 **Type:**
 
 java.lang.String
-
 

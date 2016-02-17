@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.USPostnet
+type: api
 ---
+
 
 Holds US Postnet configuration settings. 
  
@@ -17,7 +19,7 @@ Holds US Postnet configuration settings.
 ###report_check_digit
 
 Transmit USPostnet data with or without the check digit. (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE.
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -30,5 +32,4 @@ Transmit USPostnet data with or without the check digit. (default - disabled).
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

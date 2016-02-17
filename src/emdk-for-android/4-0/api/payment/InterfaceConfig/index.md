@@ -1,6 +1,8 @@
 ---
 title: InterfaceConfig
+type: api
 ---
+
 
 The InterfaceConfig class provides access to configure the payment device information required to interface with the payment device. 
  The InterfaceConfig.deviceName and PaymentDeviceConfig.macAddress must be set i.e. InterfaceConfig object must be set before calling enable().
@@ -30,5 +32,4 @@ Payment device mac address. To enable the payment device, either the payment dev
 **Type:**
 
 java.lang.String
-
 

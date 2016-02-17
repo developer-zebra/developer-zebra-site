@@ -1,6 +1,8 @@
 ---
 title: DeviceInfo
+type: api
 ---
+
 
 DeviceInfo provides information of the Payment device.
  
@@ -97,61 +99,4 @@ Returns the payment device connection type to mobile computer
 **Returns:**
 
 com.symbol.emdk.payment.DeviceInfo.ConnectionType - Returns the ConnectionType
-
-### getDeviceType
-
-**public DeviceType getDeviceType()**
-
-Returns the payment device type
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	DeviceType deviceType = paymentDevice.deviceInfo.getDeviceType();
-
-
-**Returns:**
-
-com.symbol.emdk.payment.DeviceInfo.DeviceType - Returns the DeviceType
-
-##Public Enums
-
-###DeviceInfo.DeviceType
-
-List of supported Payment device types.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	DeviceType.PD40;
-
-
-**Values:**
-
-* **PD40** -The payment device class is PD40.
-
-* **UNDEFINED** -Undefined.
-
-###DeviceInfo.ConnectionType
-
-List of supported payment connection types.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	ConnectionType.BLUETOOTH;
-
-
-**Values:**
-
-* **BLUETOOTH** -The payment device is connected via Bluetooth to the mobile device.
-
-* **UNDEFINED** -Connection type is not defined.
-
 

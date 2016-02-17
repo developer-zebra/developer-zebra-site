@@ -1,6 +1,8 @@
 ---
 title: ScanAndPairConfig.ScanInfo
+type: api
 ---
+
 
 This class is used by the ScanAndPairTool class. Specifies the scanning related information. 
  The settings provided through this class are used for scanning the barcode. It also exposes 
@@ -67,5 +69,4 @@ Specifies the type of trigger to be used. The default value is AUTO. If manual, 
 **Type:**
 
 com.symbol.emdk.scanandpair.ScanAndPairConfig.TriggerType
-
 

@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.EAN8
+type: api
 ---
+
 
 Holds EAN8 configuration settings. 
  
@@ -17,7 +19,7 @@ Holds EAN8 configuration settings.
 ###convert_to_ean13
 
 Convert EAN8 data to EAN 13. (default - disabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -30,5 +32,4 @@ Convert EAN8 data to EAN 13. (default - disabled).
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

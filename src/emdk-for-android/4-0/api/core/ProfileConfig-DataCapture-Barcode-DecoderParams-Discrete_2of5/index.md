@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5
+type: api
 ---
+
 
 Holds Discrete 2 of 5 configuration settings. 
  
@@ -49,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - enabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -62,5 +64,4 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

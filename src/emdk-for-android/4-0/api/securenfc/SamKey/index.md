@@ -1,6 +1,8 @@
 ---
 title: SamKey
+type: api
 ---
+
 
 Samkey class will be assigned with the keys present on the MifareSam and used
  for the authentication purpose.
@@ -28,5 +30,4 @@ Key version Value: 0x00 - 0xFF
 **Type:**
 
 byte
-
 

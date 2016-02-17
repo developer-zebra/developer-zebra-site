@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.Decoders
+type: api
 ---
+
 
 The Decoders class provides access to enable or disable decoder barcode symbologies. 
  
@@ -18,7 +20,7 @@ The Decoders class provides access to enable or disable decoder barcode symbolog
 ###upca
 
 Sets the Enabled State of Decoder UPCA. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -36,7 +38,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###upce0
 
 Sets the Enabled State of Decoder UPCE0. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -54,7 +56,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###ean13
 
 Sets the Enabled State of Decoder EAN-13. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -72,7 +74,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###ean8
 
 Sets the Enabled State of Decoder EAN-8. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -90,7 +92,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###code128
 
 Sets the Enabled State of Decoder Code 128. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -108,7 +110,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###code39
 
 Sets the Enabled State of Decoder Code 39. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -125,7 +127,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 ###i2of5
 
-Use enum  ProfileConfig.ENABLED_STATE. 
+Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -143,7 +145,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###gs1_databar
 
 Sets the Enabled State of Decoder Interleaved 2 of 5. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -161,7 +163,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###gs1_databar_lim
 
 Sets the Enabled State of Decoder GS1 DataBar Limited. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -179,7 +181,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###gs1_databar_exp
 
 Sets the Enabled State of Decoder GS1 DataBar Expanded. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -197,7 +199,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###datamatrix
 
 Sets the Enabled State of Decoder Data Matrix. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -215,7 +217,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###qrcode
 
 Sets the Enabled State of Decoder QR Code. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -233,7 +235,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###pdf417
 
 Sets the Enabled State of Decoder PDF417. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -251,7 +253,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###composite_ab
 
 Sets the Enabled State of Decoder Composite AB. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -269,7 +271,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###composite_c
 
 Sets the Enabled State of Decoder Composite C. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -287,7 +289,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###microqr
 
 Sets the Enabled State of Decoder Micro QR. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -305,7 +307,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###aztec
 
 Sets the Enabled State of Decoder Aztec. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -323,7 +325,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###maxicode
 
 Sets the Enabled State of Decoder Maxicode. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -341,7 +343,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###micropdf
 
 Sets the Enabled State of Decoder Micro PDF. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -359,7 +361,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###uspostnet
 
 Sets the Enabled State of Decoder US Postnet. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -377,7 +379,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###usplanet
 
 Sets the Enabled State of Decoder US Planet. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -395,7 +397,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###uk_postal
 
 Sets the Enabled State of Decoder UK Postal. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -413,7 +415,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###japanese_postal
 
 Sets the Enabled State of Decoder Japan Postal. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -431,7 +433,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###australian_postal
 
 Sets the Enabled State of Decoder Australian Postal. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -449,7 +451,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###canadian_postal
 
 Sets the Enabled State of Decoder Canadian Postal. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -467,7 +469,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###dutch_postal
 
 Sets the Enabled State of Decoder Dutch Postal. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -485,7 +487,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###us4state
 
 Sets the Enabled State of Decoder US4State. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -503,7 +505,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###us4state_fics
 
 Sets the Enabled State of Decoder US4State FICS. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -521,7 +523,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###codabar
 
 Sets the Enabled State of Decoder Codabar. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -539,7 +541,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###msi
 
 Sets the Enabled State of Decoder MSI. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -557,7 +559,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###code93
 
 Sets the Enabled State of Decoder Code 93. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -575,7 +577,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###trioptic39
 
 Sets the Enabled State of Decoder Trioptic 39. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -593,7 +595,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###d2of5
 
 Sets the Enabled State of Decoder Discrete 2 of 5. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -611,7 +613,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###chinese_2of5
 
 Sets the Enabled State of Decoder Chinese 2 of 5. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -629,7 +631,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###korean_3of5
 
 Sets the Enabled State of Decoder Korean 3 of 5. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -647,7 +649,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###code11
 
 Sets the Enabled State of Decoder Code11. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -665,7 +667,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###tlc39
 
 Sets the Enabled State of Decoder TLC 39. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -683,7 +685,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###signature
 
 Sets the Enabled State of Decoder Signature. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -701,7 +703,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###webcode
 
 Sets the Enabled State of Decoder Web Code. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -719,7 +721,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###matrix_2of5
 
 Sets the Enabled State of Decoder Matrix 2 of 5. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -737,7 +739,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###upce1
 
 Sets the Enabled State of Decoder UPCE1. 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -751,5 +753,4 @@ Sets the Enabled State of Decoder UPCE1.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

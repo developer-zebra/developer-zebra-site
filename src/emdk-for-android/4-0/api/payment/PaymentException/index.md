@@ -1,6 +1,8 @@
 ---
 title: PaymentException
+type: api
 ---
+
 
 The methods of payment object throw a PaymentException when an error
  occurs.
@@ -21,5 +23,4 @@ Returns the PaymentResults.
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults
-
 

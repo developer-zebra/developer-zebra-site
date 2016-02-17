@@ -1,6 +1,8 @@
 ---
 title: StatusData
+type: api
 ---
+
 
 StatusData class provides access to scanner status.
  
@@ -33,23 +35,4 @@ Returns the friendly name of scanner for which the status data is returned.
 **Returns:**
 
 java.lang.String - Returns scanner index to the supported devices list.
-
-##Public Enums
-
-###StatusData.ScannerStates
-
-Defines the different states of the barcode scanner.
-
-**Values:**
-
-* **IDLE** -Scanner is enabled but no reads are pending.
-
-* **WAITING** -Scanner has issued reads request and is waiting for trigger event.
-
-* **SCANNING** -Scanner beam is on and it is acquiring data.
-
-* **DISABLED** -Scanner is not enabled.
-
-* **ERROR** -An error has occurred.
-
 

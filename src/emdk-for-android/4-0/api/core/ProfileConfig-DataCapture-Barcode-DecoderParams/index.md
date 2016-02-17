@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams
+type: api
 ---
+
 
 Holds Decoder configuration settings. 
  
@@ -16,7 +18,7 @@ Holds Decoder configuration settings.
 
 ###upca
 
-Configures the UPCA Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.UPCA.
+Configures the UPCA Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-UPCA](../ProfileConfig-DataCapture-Barcode-DecoderParams-UPCA).
  
  
 
@@ -32,7 +34,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCA
 
 ###upce0
 
-Configures the UPCE0 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE0.
+Configures the UPCE0 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE0](../ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE0).
  
  
 
@@ -48,7 +50,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE0
 
 ###ean8
 
-Configures the EAN8 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.EAN8.
+Configures the EAN8 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-EAN8](../ProfileConfig-DataCapture-Barcode-DecoderParams-EAN8).
  
  
 
@@ -64,7 +66,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.EAN8
 
 ###code128
 
-Configures the Code128 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Code128.
+Configures the Code128 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Code128](../ProfileConfig-DataCapture-Barcode-DecoderParams-Code128).
  
  
 
@@ -80,7 +82,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Code128
 
 ###code39
 
-Configures the Code39 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Code39.
+Configures the Code39 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Code39](../ProfileConfig-DataCapture-Barcode-DecoderParams-Code39).
  
  
 
@@ -96,7 +98,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Code39
 
 ###interleaved_2of5
 
-Configures the Interleaved 2of5 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5.
+Configures the Interleaved 2of5 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Interleaved_2of5](../ProfileConfig-DataCapture-Barcode-DecoderParams-Interleaved_2of5).
  
  
 
@@ -112,7 +114,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5
 
 ###composite_AB
 
-Configures the Composite AB Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Composite_AB.
+Configures the Composite AB Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Composite_AB](../ProfileConfig-DataCapture-Barcode-DecoderParams-Composite_AB).
  
  
 
@@ -128,7 +130,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Composite_AB
 
 ###usPostnet
 
-Configures the US Postnet Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.USPostnet.
+Configures the US Postnet Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-USPostnet](../ProfileConfig-DataCapture-Barcode-DecoderParams-USPostnet).
  
  
 
@@ -144,7 +146,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.USPostnet
 
 ###usPlanet
 
-Configures the US Planet Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.USPlanet.
+Configures the US Planet Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-USPlanet](../ProfileConfig-DataCapture-Barcode-DecoderParams-USPlanet).
  
  
 
@@ -160,7 +162,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.USPlanet
 
 ###uk_Postal
 
-Configures the UK Postal Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.UK_Postal.
+Configures the UK Postal Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-UK_Postal](../ProfileConfig-DataCapture-Barcode-DecoderParams-UK_Postal).
  
  
 
@@ -176,7 +178,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UK_Postal
 
 ###codabar
 
-Configures the Codabar Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar.
+Configures the Codabar Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Codabar](../ProfileConfig-DataCapture-Barcode-DecoderParams-Codabar).
  
  
 
@@ -192,7 +194,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar
 
 ###msi
 
-Configures the MSI Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.MSI.
+Configures the MSI Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-MSI](../ProfileConfig-DataCapture-Barcode-DecoderParams-MSI).
  
  
 
@@ -208,7 +210,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.MSI
 
 ###code93
 
-Configures the Code93 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Code93.
+Configures the Code93 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Code93](../ProfileConfig-DataCapture-Barcode-DecoderParams-Code93).
  
  
 
@@ -224,7 +226,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Code93
 
 ###trioptic39
 
-Configures the Trioptic39 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Trioptic39.
+Configures the Trioptic39 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Trioptic39](../ProfileConfig-DataCapture-Barcode-DecoderParams-Trioptic39).
  
  
 
@@ -240,7 +242,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Trioptic39
 
 ###discrete_2of5
 
-Configures the Discrete_2of5 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5.
+Configures the Discrete_2of5 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Discrete_2of5](../ProfileConfig-DataCapture-Barcode-DecoderParams-Discrete_2of5).
  
  
 
@@ -256,7 +258,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5
 
 ###code11
 
-Configures the Code11 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Code11.
+Configures the Code11 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Code11](../ProfileConfig-DataCapture-Barcode-DecoderParams-Code11).
  
  
 
@@ -272,7 +274,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Code11
 
 ###matrix_2of5
 
-Configures the Matrix 2of5 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5.
+Configures the Matrix 2of5 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-Matrix_2of5](../ProfileConfig-DataCapture-Barcode-DecoderParams-Matrix_2of5).
  
  
 
@@ -288,7 +290,7 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5
 
 ###upce1
 
-Configures the UPCE1 Symbology object  ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1.
+Configures the UPCE1 Symbology object [ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE1](../ProfileConfig-DataCapture-Barcode-DecoderParams-UPCE1).
  
  
 
@@ -301,5 +303,4 @@ Configures the UPCE1 Symbology object  ProfileConfig.DataCapture.Barcode.Decoder
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1
-
 

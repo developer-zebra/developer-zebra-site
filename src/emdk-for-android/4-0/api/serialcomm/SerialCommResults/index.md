@@ -1,6 +1,8 @@
 ---
 title: SerialCommResults
+type: api
 ---
+
 
 Serial Communication error codes and its details.
 
@@ -31,5 +33,4 @@ Serial Communication error codes and its details.
 * **DATA_SIZE_TOO_LARGE** -The number of bytes to write can't exceed maximum limit(4096 Bytes).
 
 * **UNDEFINED** -Error code not defined.
-
 

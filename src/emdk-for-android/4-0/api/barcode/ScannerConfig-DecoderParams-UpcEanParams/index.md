@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.UpcEanParams
+type: api
 ---
+
 
 The UPCEAN class provides access to parameters that are available for the UPC/EAN decoder. 
  UPC/EAN is the family of codes which are used to identify products 
@@ -37,7 +39,7 @@ boolean
 ###booklandFormat
 
 Specifies the bookland format to use. Use enum
-  ScannerConfig.BooklandFormat.
+ [ScannerConfig-BooklandFormat](../ScannerConfig-BooklandFormat).
  
  
 
@@ -117,7 +119,7 @@ The scanner of fers four levels of decode security for UPC/EAN
  codes. There is an inverse relationship between security and
  decode speed, so be sure to choose only that level of security
  necessary for the application. Use enum
-  ScannerConfig.SecurityLevel.
+ [ScannerConfig-SecurityLevel](../ScannerConfig-SecurityLevel).
  
  
 
@@ -165,7 +167,7 @@ boolean
 
 ###supplementalMode
 
-The supplemental mode. Use enum  ScannerConfig.SupplementalMode.
+The supplemental mode. Use enum [ScannerConfig-SupplementalMode](../ScannerConfig-SupplementalMode).
  
  
 
@@ -210,7 +212,7 @@ Used to differentiate between old coupon (UPC/EAN and Code128)
  it will read old or new portion of it, depending on the report
  mode setting.
  
- Use enum  ScannerConfig.CouponReport.
+ Use enum [ScannerConfig-CouponReport](../ScannerConfig-CouponReport).
  
  
 
@@ -233,5 +235,4 @@ Enable this parameter to add five leading zeros to decoded
 **Type:**
 
 boolean
-
 

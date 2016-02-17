@@ -1,6 +1,8 @@
 ---
 title: Scanner
+type: api
 ---
+
 
 Scanner class will represent and provides access to the physical scanner
  device.
@@ -337,24 +339,4 @@ Specifies the trigger type for the scanner. It is set to HARD by default.
 **Type:**
 
 com.symbol.emdk.barcode.Scanner.TriggerType
-
-##Public Enums
-
-###Scanner.TriggerType
-
-List of supported trigger type
-
-**Values:**
-
-* **HARD** -Hard trigger. When this mode is set, the user has to manually press
- the trigger on the device after issuing the read call.
-
-* **SOFT_ONCE** -Soft trigger is used only once for a pending read or for the next
- issued read. When this mode is set, the scan beam will come up
- automatically without having to press the trigger on the device after issuing the read call.
-
-* **SOFT_ALWAYS** -Soft trigger is used for all pending scans and for future reads
- issued. When this mode is set, the scan beam will come up
- automatically without having to press the trigger on the device.
-
 

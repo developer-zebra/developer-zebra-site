@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code93
+type: api
 ---
+
 
 Holds Code93 configuration settings. 
  
@@ -49,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -62,5 +64,4 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

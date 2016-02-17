@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.CompositeAB
+type: api
 ---
+
 
 The CompositeAB class provides access to parameters that are
  available for the CompositeAB decoder.
@@ -10,7 +12,7 @@ The CompositeAB class provides access to parameters that are
 ###uccLinkMode
 
 Gets and Sets UCC Link Mode using
-  ScannerConfig.UccLinkMode enum;
+ [ScannerConfig-UccLinkMode](../ScannerConfig-UccLinkMode) enum;
  
  
 
@@ -23,5 +25,4 @@ Gets and Sets UCC Link Mode using
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.UccLinkMode
-
 

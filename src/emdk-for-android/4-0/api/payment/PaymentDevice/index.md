@@ -1,6 +1,8 @@
 ---
 title: PaymentDevice
+type: api
 ---
+
 
 PaymentDevice class will represent and provides access to the physical
  payment device.
@@ -34,25 +36,13 @@ com.symbol.emdk.payment.DeviceInfo - Returns the DeviceInfo object.
 
 **public void enable()**
 
-This is an asynchronous call and status of the enable method will be returned through the registered  PaymentDevice.DataListener.
+This is an asynchronous call and status of the enable method will be returned through the registered [PaymentDevice-DataListener](../PaymentDevice-DataListener).
  This method is used to establish communication with the payment device and enable the payment device to do transactions.
  This method does not do any transactions.
  
  The following requirements must satisfy before calling enable method:
   - The payment device must paired with the mobile device.
-  - The paired payment device name or MAC address must be set using  PaymentDevice.setInterfaceConfig(InterfaceConfig interfaceConfig).
-  - The clients must implement  PaymentDevice.DataListener and call  PaymentDevice.addDataListener(DataListener listener) 
-  
-  Only one session can be enabled at any given time.
-  The Bluetooth connection will fail if the payment device is not already paired. 
-  The application can call other methods only after successful enabling. 
-  If the same of payment device is used by other application, enable will fail and returns error.
-  If payment device shows Bluetooth connection status screen ,calling enable method will return communication error.
-  You must call disable() when you are done the payment transactions,
-  otherwise it will remain locked and be unavailable to other applications.
-  enable() returns "device is not paired" status ,when the BT is turned off or does not have any payment devices paired.
- 
- 
+  - The paired payment device name or MAC address must be set using 
 
 **Example Usage:**
 	
@@ -674,7 +664,7 @@ Query the battery level of the payment device.
 com.symbol.emdk.payment.BatteryData - Returns the BatteryData object which contains battery level of
          the requested device and the PaymentResults.
  
-
+	
          Possible Error codes: SUCCESS, FAILURE, DEVICE_NOT_ENABLED,
          COMMUNICATION_ERROR, CONNECTION_ERROR, INVALID_OBJECT
 
@@ -1072,8 +1062,6 @@ com.symbol.emdk.payment.PaymentException
 
 will be thrown if any error occurs.
 
-
-
 ### getDateTime
 
 **public String getDateTime()**
@@ -1177,89 +1165,4 @@ void
 com.symbol.emdk.payment.PaymentException
 
 Exception will be thrown if any error occurs during this call.
-
-##Public Enums
-
-###PaymentDevice.ReadMode
-
-Lists type of read mode supported by the readCardData. The read mode
- support is dependent on the payment device support. Ex: PD40-100 does not
- support read mode TOUCH.
-
-**Values:**
-
-* **SWIPE** -The card read mode is swipe only.
-
-* **INSERT** -The card read mode is insert only.
-
-* **TOUCH** -The card read mode is touch only.This is for future use.
-
-* **MANUAL** -Manual Entry, which requires entering the card information manually.
-
-* **ALL** -The card read mode is swipe, insert and touch.
-
-###PaymentDevice.DataEncryptionType
-
-Lists the type pf Encryption Algorithms applied on the data.
-
-**Values:**
-
-* **NONE** -No Encryption applied on data
-
-* **TRIPLE_DES** -3DES is an encryption Algorithm where DES applied 3 times using
- DUKPT.
-
-* **AES** -Advanced Encryption Standard Algorithm for Encryption.
-
-* **RSA_1024** -Public key Algorithm with 1024 bit key.
-
-* **RSA_2048** -Public key Algorithm with 2048 bit key.
-
-###PaymentDevice.CardEncodeType
-
-List indicates the type of encoding that was found on the card.
-
-**Values:**
-
-* **ISO_ABA** -ISO/ABA encoding type is payment card type.
-
-* **NON_ISO_ABA** -Card type is non payment cards.
-
-###PaymentDevice.DownloadType
-
-The payment Device download or update type.
-
-**Values:**
-
-* **FIRMWARE** -Firmware update.
-
-* **EMVPARAM** -EMV parameter download.
-
-* **FONT** -Download and install Fonts.
-
-###PaymentDevice.HostDecision
-
-Decision indicator from the host response.
-
-**Values:**
-
-* **HOST_AUTHORIZED**
-
-* **HOST_DECLINE**
-
-* **CONNECT_FAILED**
-
-###PaymentDevice.MerchantDecision
-
-The merchant decision notes additional handling for the EMV request based
- on required processor handling.
-
-**Values:**
-
-* **REQUEST_TC**
-
-* **FORCE_ONLINE** -This merchant decision insists the transaction to be online with the usage of PIN.
-
-* **FORCE_DECLINE**
-
 

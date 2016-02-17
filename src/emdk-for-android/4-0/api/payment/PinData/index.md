@@ -1,6 +1,8 @@
 ---
 title: PinData
+type: api
 ---
+
 
 This class is derived from the PaymentData class and this holds the PIN data.
 
@@ -35,5 +37,4 @@ Tells whether the pin is entered by the user or not.
 **Returns:**
 
 boolean
-
 

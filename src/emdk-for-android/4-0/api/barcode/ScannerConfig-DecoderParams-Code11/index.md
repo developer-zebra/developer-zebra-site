@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code11
+type: api
 ---
+
 
 The Code11 class provides access to parameters that are available for
  the Code11 decoder.
@@ -60,7 +62,7 @@ boolean
 Check the integrity of all Code 11 symbols to verify that the
  data complies with the specified check digit algorithm. This
  selects the check digit mechanism for the decoded Code 11 bar
- code. Use enum  ScannerConfig.VerifyCheckDigit.
+ code. Use enum [ScannerConfig-VerifyCheckDigit](../ScannerConfig-VerifyCheckDigit).
  
  
 
@@ -89,5 +91,4 @@ Transmit Code 11 data with or without the check digit.
 **Type:**
 
 boolean
-
 

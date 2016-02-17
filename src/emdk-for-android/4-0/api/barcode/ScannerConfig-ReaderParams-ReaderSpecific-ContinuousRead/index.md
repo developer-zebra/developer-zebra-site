@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead
+type: api
 ---
+
 
 ContinuousRead class provides access to continuous scanning related parameters.
 
@@ -52,5 +54,4 @@ This setting is used to prevent the scanner from decoding another symbol within 
 **Type:**
 
 int
-
 

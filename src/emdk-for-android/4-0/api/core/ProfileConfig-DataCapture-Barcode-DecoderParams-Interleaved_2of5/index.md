@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5
+type: api
 ---
+
 
 Holds Interleaved 2 of 5 configuration settings. 
  
@@ -49,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - enabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -66,7 +68,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###check_digit
 
 The check digit type to verify.   
- Use enum  ProfileConfig.CHECK_DIGIT_TYPE. 
+ Use enum [ProfileConfig-CHECK_DIGIT_TYPE](../ProfileConfig-CHECK_DIGIT_TYPE). 
  
  
 
@@ -83,7 +85,7 @@ com.symbol.emdk.ProfileConfig.CHECK_DIGIT_TYPE
 ###report_check_digit
 
 Transmit Interleaved 2 of 5 data with or without the check digit (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -101,7 +103,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Convert 14-character Interleaved 2 of 5 bar codes to EAN-13, and transmit as EAN-13. 
  The Interleaved 2 of 5 bar code must be enabled and must have a leading zero and a valid EAN-13 check digit (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -119,7 +121,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Specifies security level 
  
- Use enum  ProfileConfig.SECURITY_LEVEL. 
+ Use enum [ProfileConfig-SECURITY_LEVEL](../ProfileConfig-SECURITY_LEVEL). 
  
  
 
@@ -132,5 +134,4 @@ Specifies security level
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
-
 

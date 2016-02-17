@@ -1,6 +1,8 @@
 ---
 title: VersionManager
+type: api
 ---
+
 
 Version information can be captured from this class.
  
@@ -18,7 +20,7 @@ Version information can be captured from this class.
 
 **public String getVersion(VersionManager.VERSION_TYPE versionKey)**
 
-Gets the version of the specified  VersionManager.VERSION_TYPE
+Gets the version of the specified [VersionManager-VERSION_TYPE](../VersionManager-VERSION_TYPE)
  
   
 
@@ -30,32 +32,9 @@ Gets the version of the specified  VersionManager.VERSION_TYPE
 
 **Parameters:**
 
-`versionKey` -  VersionManager.VERSION_TYPE
+`versionKey` - [VersionManager-VERSION_TYPE](../VersionManager-VERSION_TYPE)
 
 **Returns:**
 
 java.lang.String - Version number
-
-##Public Enums
-
-###VersionManager.VERSION_TYPE
-
-All the version keys for  VersionManager#getVersion(VERSION_TYPE) are enumerated here.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	VERSION_TYPE.EMDK
-
-
-**Values:**
-
-* **EMDK** -EMDK version
-
-* **MX** -MX framework version
-
-* **BARCODE** -Barcode Scanner Framework version.
-
 

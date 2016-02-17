@@ -1,6 +1,8 @@
 ---
 title: PaymentManager
+type: api
 ---
+
 
 This is the primary object to access the payment feature.
  
@@ -138,29 +140,5 @@ java.util.ArrayList - Returns list of DeviceInfo objects.
 
 com.symbol.emdk.payment.PaymentException
 
-
-
-
-##Public Enums
-
-###PaymentManager.ConnectionState
-
-Connection states of a payment device.
-
-**Values:**
-
-* **CONNECTED**
-
-* **DISCONNECTED**
-
-###PaymentManager.DeviceIdentifier
-
-Defines specific payment devices of each type.
-
-**Values:**
-
-* **DEFAULT** -Default available payment device
-
-* **PD40** -PD40 payment device
 
 

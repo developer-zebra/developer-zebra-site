@@ -1,6 +1,8 @@
 ---
 title: PaymentDevice.DataListener
+type: api
 ---
+
 
 An interface for notifying client applications when the payment data and
  status available. The customer application must implement the
@@ -40,5 +42,4 @@ This is the callback method upon data or status notification.
 **Returns:**
 
 void
-
 

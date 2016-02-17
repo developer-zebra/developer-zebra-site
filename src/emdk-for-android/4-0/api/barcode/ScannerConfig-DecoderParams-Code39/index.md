@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code39
+type: api
 ---
+
 
 The Code39 class provides access to parameters that are available for
  the Code39 decoder.
@@ -145,7 +147,7 @@ boolean
 ###securityLevel
 
 Options: Security level 0 , Security Level 1 , Security Level 2
- and Security Level 3. Use enum  ScannerConfig.SecurityLevel.
+ and Security Level 3. Use enum [ScannerConfig-SecurityLevel](../ScannerConfig-SecurityLevel).
  
  
 
@@ -158,5 +160,4 @@ Options: Security level 0 , Security Level 1 , Security Level 2
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
-
 

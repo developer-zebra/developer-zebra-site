@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code128
+type: api
 ---
+
 
 Holds Code128 configuration settings. 
  
@@ -49,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - disabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -66,7 +68,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###enable_plain
 
 Flag to enable other 128 sub types (besides GS1-128 and ISBT -128).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -83,7 +85,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###enable_ean128
 
 Set the EAN128 subtype. (default - enabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -100,7 +102,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###enable_isbt128
 
 Set the ISBT128 subtype. (default - enabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -117,7 +119,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###isbt128_concat_mode
 
 Select an option for concatenating pairs of ISBT code types.
- Use enum  ProfileConfig.ISBT128_CONTACT_MODE. 
+ Use enum [ProfileConfig-ISBT128_CONTACT_MODE](../ProfileConfig-ISBT128_CONTACT_MODE). 
  
  
 
@@ -136,7 +138,7 @@ com.symbol.emdk.ProfileConfig.ISBT128_CONTACT_MODE
 The ISBT specification includes a table that lists several types of ISBT bar codes that are commonly used in pairs. 
  If ISBT128 Concat Mode is set, enable Check ISBT T able to concatenate only those pairs found in this table. 
  Other types of ISBT codes are not concatenated (default - disabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -156,7 +158,7 @@ The scanner of fers four levels of decode security for Code 128 bar codes.
  Select increasing levels of security for decreasing levels of bar code quality. 
  There is an inverse relationship between security and scanner aggressiveness, 
  so choose only that level of security necessary for any given application. 
- Use enum  ProfileConfig.SECURITY_LEVEL. 
+ Use enum [ProfileConfig-SECURITY_LEVEL](../ProfileConfig-SECURITY_LEVEL). 
  
  
 
@@ -169,5 +171,4 @@ The scanner of fers four levels of decode security for Code 128 bar codes.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
-
 

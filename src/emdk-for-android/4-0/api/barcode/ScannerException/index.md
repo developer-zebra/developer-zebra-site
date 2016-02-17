@@ -1,6 +1,8 @@
 ---
 title: ScannerException
+type: api
 ---
+
 
 The methods of barcode scanning object throw a ScannerException when an error
  occurs. 
@@ -21,5 +23,4 @@ Returns the ScannerResults enum value.
 **Returns:**
 
 com.symbol.emdk.barcode.ScannerResults
-
 

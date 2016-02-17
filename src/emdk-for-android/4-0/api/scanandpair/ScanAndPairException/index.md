@@ -1,6 +1,8 @@
 ---
 title: ScanAndPairException
+type: api
 ---
+
 
 
 
@@ -15,5 +17,4 @@ Returns the ScanAndPairResults enum value.
 **Returns:**
 
 com.symbol.emdk.scanandpair.ScanAndPairResults
-
 

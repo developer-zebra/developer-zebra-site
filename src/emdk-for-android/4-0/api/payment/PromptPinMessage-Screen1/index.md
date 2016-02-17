@@ -1,6 +1,8 @@
 ---
 title: PromptPinMessage.Screen1
+type: api
 ---
+
 
 
 
@@ -21,5 +23,4 @@ Message 2 to be displayed on the PINPad.
 **Type:**
 
 java.lang.String
-
 

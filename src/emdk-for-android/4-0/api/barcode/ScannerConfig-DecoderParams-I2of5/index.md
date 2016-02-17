@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.I2of5
+type: api
 ---
+
 
 The I2of5 class provides access to parameters that are available for
  the I2of5 decoder.
@@ -58,7 +60,7 @@ boolean
 ###verifyCheckDigit
 
 The check digit type to verify. Use enum
-  ScannerConfig.CheckDigitType.
+ [ScannerConfig-CheckDigitType](../ScannerConfig-CheckDigitType).
  
  
 
@@ -111,7 +113,7 @@ boolean
 
 Specifies security level
  
- Use enum  ScannerConfig.SecurityLevel.
+ Use enum [ScannerConfig-SecurityLevel](../ScannerConfig-SecurityLevel).
  
  
 
@@ -124,5 +126,4 @@ Specifies security level
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
-
 

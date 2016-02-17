@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.MSI
+type: api
 ---
+
 
 Holds Codabar configuration settings. 
  
@@ -49,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - enabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -67,7 +69,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 With MSI symbols, one check digit is mandatory and always verified by the reader. 
  The second check digit is optional. 
- Use enum  ProfileConfig.CHECK_DIGIT. 
+ Use enum [ProfileConfig-CHECK_DIGIT](../ProfileConfig-CHECK_DIGIT). 
  
  
 
@@ -85,7 +87,7 @@ com.symbol.emdk.ProfileConfig.CHECK_DIGIT
 
 Two algorithms are possible for the verification of the second MSI check digit. 
  Select the algorithm used to encode the check digit. 
- Use enum  ProfileConfig.CHECK_DIGIT_SCHEME. 
+ Use enum [ProfileConfig-CHECK_DIGIT_SCHEME](../ProfileConfig-CHECK_DIGIT_SCHEME). 
  
  
 
@@ -102,7 +104,7 @@ com.symbol.emdk.ProfileConfig.CHECK_DIGIT_SCHEME
 ###report_check_digit
 
 Transmit MSI data with or without the check digit (default - disabled). 
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -115,5 +117,4 @@ Transmit MSI data with or without the check digit (default - disabled).
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

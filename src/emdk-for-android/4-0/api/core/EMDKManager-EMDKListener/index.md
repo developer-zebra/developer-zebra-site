@@ -3,6 +3,7 @@ title: EMDKManager.EMDKListener
 type: api
 ---
 
+
 This is the interface for the callback to notify the opening and closing status of the EMDK.
  On a successful opening, the EMDKManager object will be returned.
  An interface for notifying clients when they the EMDKManager is ready to use or closed abruptly. 

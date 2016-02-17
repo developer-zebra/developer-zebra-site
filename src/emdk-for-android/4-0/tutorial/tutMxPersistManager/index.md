@@ -493,8 +493,6 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 6. Let us perform Enterprise Reset on the TC55 Android device. Simultaneously press the Power, Programmable and Volume Up buttons 
  
-	![img](../../images/MxPersistManagerTutorialImages/reset_process.jpg)
-
     The TC55 shuts down and then reboots. Now select the Enterprise Reset Package (Zip File) stored in the SD Card by navigating to the path. It will complete the Enterprise Reset by erasing data and reboot the device with the default configurations.
 
 6. Once the Enterprise Reset is completed, Persist Manager resends the persisted XML's to the Mx Framework, which is captured by the device. These settings are then re-applied to the device. This is how the Persist Manager works in order to Persist and apply the Mx device configuration features.

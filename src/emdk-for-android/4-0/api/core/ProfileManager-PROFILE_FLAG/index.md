@@ -4,7 +4,7 @@ type: api
 ---
 
 
-All the possible actions for [ProfileManager#processProfile(String, PROFILE_FLAG, Document)](../ProfileManager#processProfile(String, PROFILE_FLAG, Document)) 
+All the possible actions for [ ProfileManager.processProfile(String, PROFILE_FLAG, Document)](../ProfileManager#processprofile) 
  and 
 
 **Example Usage:**

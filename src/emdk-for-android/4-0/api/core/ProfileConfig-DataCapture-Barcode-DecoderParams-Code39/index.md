@@ -52,7 +52,7 @@ int
 Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. 
  The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. 
  Enable this feature only if the Code 39 symbols contain a modulo 43 check digit (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -69,7 +69,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###report_check_digit
 
 Transmit Code 39 data with or without the check digit (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -86,7 +86,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###full_ascii
 
 Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -103,7 +103,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -120,7 +120,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###convert_to_code32
 
 Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -137,7 +137,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###report_code32_prefix
 
 Scan the appropriate bar code to enable or disable adding the prefix character "A" to all Code 32 bar codes (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -154,7 +154,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###security_level
 
 Options: Security level 0 , Security Level 1 , Security Level 2 and Security Level 3 (default - Security level 1).
- Use enum [ProfileConfig-SECURITY_LEVEL](../ProfileConfig-SECURITY_LEVEL). 
+ Use enum [ ProfileConfig.SECURITY_LEVEL](../ProfileConfig-SECURITY_LEVEL). 
  
  
 

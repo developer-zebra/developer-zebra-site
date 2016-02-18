@@ -13,7 +13,7 @@ The HanXin class provides access to parameters that are available for
 
 Check the inverse of the HanXin decoder
  
- code. Use enum [ScannerConfig-HanXinInverse](../ScannerConfig-HanXinInverse).
+ code. Use enum [ ScannerConfig.HanXinInverse](../ScannerConfig-HanXinInverse).
  
  
 

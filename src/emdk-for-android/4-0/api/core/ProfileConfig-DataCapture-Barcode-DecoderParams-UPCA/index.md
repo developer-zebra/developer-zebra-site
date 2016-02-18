@@ -20,7 +20,7 @@ Holds UPCA configuration settings.
 
 Preamble characters are part of the UPC symbol consisting of Country Code and System Character. 
  Select the appropriate option to match the host system. 
- Use enum [ProfileConfig-PREAMBLE](../ProfileConfig-PREAMBLE). 
+ Use enum [ ProfileConfig.PREAMBLE](../ProfileConfig-PREAMBLE). 
  
  
 
@@ -38,7 +38,7 @@ com.symbol.emdk.ProfileConfig.PREAMBLE
 
 The check digit is the last character of the symbol used to verify the integrity of the data. 
  Enables or disables this option (default - enabled) . 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 

@@ -18,7 +18,7 @@ Holds Composite AB configuration settings.
 
 ###ucc_link_mode
 
-Gets and Sets UCC Link Mode using [ProfileConfig-UCC_LINK_MODE](../ProfileConfig-UCC_LINK_MODE) enum;
+Gets and Sets UCC Link Mode using [ ProfileConfig.UCC_LINK_MODE](../ProfileConfig-UCC_LINK_MODE) enum;
  
  
 

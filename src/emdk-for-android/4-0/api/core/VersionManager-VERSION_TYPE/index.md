@@ -4,7 +4,7 @@ type: api
 ---
 
 
-All the version keys for [VersionManager#getVersion(VERSION_TYPE)](../VersionManager#getVersion(VERSION_TYPE)) are enumerated here.
+All the version keys for [ VersionManager.getVersion(VERSION_TYPE)](../VersionManager#getversion) are enumerated here.
  
  
 

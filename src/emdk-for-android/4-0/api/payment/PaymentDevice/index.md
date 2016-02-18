@@ -36,7 +36,7 @@ com.symbol.emdk.payment.DeviceInfo - Returns the DeviceInfo object.
 
 **public void enable()**
 
-This is an asynchronous call and status of the enable method will be returned through the registered [PaymentDevice-DataListener](../PaymentDevice-DataListener).
+This is an asynchronous call and status of the enable method will be returned through the registered [ PaymentDevice.DataListener](../PaymentDevice-DataListener).
  This method is used to establish communication with the payment device and enable the payment device to do transactions.
  This method does not do any transactions.
  

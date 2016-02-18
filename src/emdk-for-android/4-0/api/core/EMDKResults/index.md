@@ -93,7 +93,7 @@ java.lang.String - XML text.
 
 ###extendedStatusCode
 
-Gets status code result from process profile as enum value of type [EMDKResults-EXTENDED_STATUS_CODE](../EMDKResults-EXTENDED_STATUS_CODE).
+Gets status code result from process profile as enum value of type [ EMDKResults.EXTENDED_STATUS_CODE](../EMDKResults-EXTENDED_STATUS_CODE).
  
  
 
@@ -109,7 +109,7 @@ com.symbol.emdk.EMDKResults.EXTENDED_STATUS_CODE
 
 ###statusCode
 
-Gets status code result from process profile as enum value of type [EMDKResults-STATUS_CODE](../EMDKResults-STATUS_CODE).
+Gets status code result from process profile as enum value of type [ EMDKResults.STATUS_CODE](../EMDKResults-STATUS_CODE).
  
  
 

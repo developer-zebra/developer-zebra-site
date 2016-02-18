@@ -19,7 +19,7 @@ Holds EAN8 configuration settings.
 ###convert_to_ean13
 
 Convert EAN8 data to EAN 13. (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 

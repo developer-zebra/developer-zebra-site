@@ -36,7 +36,7 @@ int
 ###linearSecurityLevel
 
 Sets the number of times a bar code is read to confirm an accurate decode.
- Use enum [ScannerConfig-LinearSecurityLevel](../ScannerConfig-LinearSecurityLevel).
+ Use enum [ ScannerConfig.LinearSecurityLevel](../ScannerConfig-LinearSecurityLevel).
  
  
 
@@ -55,7 +55,7 @@ com.symbol.emdk.barcode.ScannerConfig.LinearSecurityLevel
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. 
  This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and 
  only one of them is targeted for decode.
- Use enum [ScannerConfig-PickList](../ScannerConfig-PickList).
+ Use enum [ ScannerConfig.PickList](../ScannerConfig-PickList).
  
  
 
@@ -73,7 +73,7 @@ com.symbol.emdk.barcode.ScannerConfig.PickList
 
 Enables or disables LCD mode. 
  LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (imager only).
- Use enum [ScannerConfig-LcdMode](../ScannerConfig-LcdMode).
+ Use enum [ ScannerConfig.LcdMode](../ScannerConfig-LcdMode).
  
  
 
@@ -90,7 +90,7 @@ com.symbol.emdk.barcode.ScannerConfig.LcdMode
 ###inverse1DMode
 
 This parameter allows the user to select decoding on inverse 1D bar codes.
- Use enum [ScannerConfig-Inverse1DMode](../ScannerConfig-Inverse1DMode).
+ Use enum [ ScannerConfig.Inverse1DMode](../ScannerConfig-Inverse1DMode).
  
  
 
@@ -146,7 +146,7 @@ int
 ###illuminationMode
 
 Turns imager illumination on and off. 
- Use enum [ScannerConfig-IlluminationMode](../ScannerConfig-IlluminationMode).
+ Use enum [ ScannerConfig.IlluminationMode](../ScannerConfig-IlluminationMode).
  
  
 
@@ -163,7 +163,7 @@ com.symbol.emdk.barcode.ScannerConfig.IlluminationMode
 ###aimingPattern
 
 Type of aiming pattern to be used for barcode scanning. 
- Use enum [ScannerConfig-AimingPattern](../ScannerConfig-AimingPattern).
+ Use enum [ ScannerConfig.AimingPattern](../ScannerConfig-AimingPattern).
  
  
 

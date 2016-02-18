@@ -8,7 +8,7 @@ This is the interface for the callback to notify the status of the feature objec
  On a successful, the feature object will be returned and this must be type casted to the 
  corresponding feature manager class based on the type..
  An interface for notifying clients when they the feature manager is ready to use or not
- and interface will be used with [EMDKManager#getInstanceAsync()](../EMDKManager#getInstanceAsync())
+ and interface will be used with [ EMDKManager.getInstanceAsync()](../EMDKManager#getinstanceasync)
  
  
 

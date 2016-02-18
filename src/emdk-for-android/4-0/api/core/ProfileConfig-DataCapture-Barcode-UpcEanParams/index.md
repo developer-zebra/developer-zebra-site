@@ -21,7 +21,7 @@ Holds Upc Ean Params configuration settings.
 The scanner of fers four levels of decode security for UPC/EAN bar codes. 
  Select higher security levels for lower quality bar codes. 
  There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
- Use enum [ProfileConfig-SECURITY_LEVEL](../ProfileConfig-SECURITY_LEVEL). 
+ Use enum [ ProfileConfig.SECURITY_LEVEL](../ProfileConfig-SECURITY_LEVEL). 
  
  
 
@@ -38,7 +38,7 @@ com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
 ###supplemental2
 
 Flag to enable length 2 supplementals.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -55,7 +55,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###supplemental5
 
 Flag to enable length 5 supplementals.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -72,7 +72,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###supplemental_mode
 
 The supplemental mode.
- Use enum [ProfileConfig-SUPPLEMENTAL_MODE](../ProfileConfig-SUPPLEMENTAL_MODE). 
+ Use enum [ ProfileConfig.SUPPLEMENTAL_MODE](../ProfileConfig-SUPPLEMENTAL_MODE). 
  
  
 
@@ -107,7 +107,7 @@ int
 ###random_weight_check_digit
 
 Flag to enable random weight check digit verification.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -124,7 +124,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###linear_decode
 
 Flag to enable linear decode. 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -141,7 +141,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###bookland
 
 Flag to enable Bookland code decoding.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -159,7 +159,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Enables Coupon code decoding. 
  Note that in order to successfully decode Coupon codes, all of the correct decoders must be enabled.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -179,7 +179,7 @@ Used to differentiate between old coupon (UPC/EAN and Code128) and new GS1 DataB
  NOTE: There is an Interim GS1 DataBar Coupon (UPC A and the GS1 DataBar), which is meant for smooth transition of adaption from old coupon format to new coupon format. 
  If an interim coupon is presented to the scanner, it will read old or new portion of it, depending on the report mode setting.
 
- Use enum [ProfileConfig-COUPON_REPORT](../ProfileConfig-COUPON_REPORT). 
+ Use enum [ ProfileConfig.COUPON_REPORT](../ProfileConfig-COUPON_REPORT). 
  
  
 
@@ -212,7 +212,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###bookland_format
 
 Specifies the bookland format to use.  
- Use enum [ProfileConfig-BOOKLAND_FORMAT](../ProfileConfig-BOOKLAND_FORMAT). 
+ Use enum [ ProfileConfig.BOOKLAND_FORMAT](../ProfileConfig-BOOKLAND_FORMAT). 
  
  
 
@@ -230,7 +230,7 @@ com.symbol.emdk.ProfileConfig.BOOKLAND_FORMAT
 
 If this is set it converts DataBar bar codes to UPC/EAN format. 
  For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 

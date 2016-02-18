@@ -18,7 +18,7 @@ Holds Keystroke configuration settings.
 
 ###ime_output_enabled
 
-Gets and Sets keystroke ENABLED_STATE configuration enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+Gets and Sets keystroke ENABLED_STATE configuration enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -34,7 +34,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 ###keystroke_action_char
 
-Gets and Sets keystroke ACTION_KEY_CHAR configuration enum [ProfileConfig-ACTION_KEY_CHAR](../ProfileConfig-ACTION_KEY_CHAR).
+Gets and Sets keystroke ACTION_KEY_CHAR configuration enum [ ProfileConfig.ACTION_KEY_CHAR](../ProfileConfig-ACTION_KEY_CHAR).
  
  
 
@@ -50,7 +50,7 @@ com.symbol.emdk.ProfileConfig.ACTION_KEY_CHAR
 
 ###basicDataFormatting
 
-Gets and Sets keystroke basic data formatting configuration object [ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting](../ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting).
+Gets and Sets keystroke basic data formatting configuration object [ ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting](../ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting).
  
  
 

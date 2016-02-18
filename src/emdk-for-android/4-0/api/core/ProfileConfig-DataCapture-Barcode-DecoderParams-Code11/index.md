@@ -51,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - enabled). 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -69,7 +69,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. 
  This selects the check digit mechanism for the decoded Code 11 bar code.
- Use enum [ProfileConfig-VERIFY_CHECK_DIGIT](../ProfileConfig-VERIFY_CHECK_DIGIT). 
+ Use enum [ ProfileConfig.VERIFY_CHECK_DIGIT](../ProfileConfig-VERIFY_CHECK_DIGIT). 
  
  
 
@@ -86,7 +86,7 @@ com.symbol.emdk.ProfileConfig.VERIFY_CHECK_DIGIT
 ###report_check_digit
 
 Transmit Code 11 data with or without the check digit (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 

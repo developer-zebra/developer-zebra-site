@@ -4,7 +4,7 @@ type: api
 ---
 
 
-Class for dealing with data capture profile data [ProfileConfig-DataCapture](../ProfileConfig-DataCapture)
+Class for dealing with data capture profile data [ ProfileConfig.DataCapture](../ProfileConfig-DataCapture)
  
  
 

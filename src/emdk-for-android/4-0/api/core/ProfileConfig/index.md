@@ -64,7 +64,7 @@ java.lang.String
 
 ###dataCapture
 
-Gets and Sets the profiles DataCapture object [ProfileConfig#dataCapture](../ProfileConfig#dataCapture). 
+Gets and Sets the profiles DataCapture object [ ProfileConfig.dataCapture](../ProfileConfig#datacapture). 
  
  
 
@@ -80,7 +80,7 @@ com.symbol.emdk.ProfileConfig.DataCapture
 
 ###activitySelection
 
-Gets and Sets the activity selection for the profiles [ProfileConfig#activitySelection](../ProfileConfig#activitySelection). 
+Gets and Sets the activity selection for the profiles [ ProfileConfig.activitySelection](../ProfileConfig#activityselection). 
  If no activities are associated to profile, the profile will be associated to that application for that session.
  
  

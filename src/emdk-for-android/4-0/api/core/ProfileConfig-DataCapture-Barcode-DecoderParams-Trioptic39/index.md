@@ -19,7 +19,7 @@ Holds Trioptic39 configuration settings.
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data. (default - enabled). 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 

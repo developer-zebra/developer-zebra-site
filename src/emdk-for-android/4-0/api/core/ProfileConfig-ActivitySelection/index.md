@@ -4,7 +4,7 @@ type: api
 ---
 
 
-Class for dealing with ActivitySelection of profile data [ProfileConfig#activitySelection](../ProfileConfig#activitySelection)
+Class for dealing with ActivitySelection of profile data [ ProfileConfig.activitySelection](../ProfileConfig#activityselection)
  
  
 
@@ -24,7 +24,7 @@ Class for dealing with ActivitySelection of profile data [ProfileConfig#activity
 
 ###activities
 
-Gets and Sets activities to the profile [ProfileConfig-ActivitySelection#activities](../ProfileConfig-ActivitySelection#activities).
+Gets and Sets activities to the profile [ ProfileConfig.ActivitySelection.activities](../ProfileConfig-ActivitySelection#activities).
  
  
 

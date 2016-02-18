@@ -17,7 +17,7 @@ The ScanParams class provides access to scanning
 A Code ID character identifies the code type of a scanned bar code.
  This is useful when the reader is decoding more than one code type.
  Select a code ID character to insert between the prefix and the
- decoded symbol. Use enum [ScannerConfig-CodeIdType](../ScannerConfig-CodeIdType).
+ decoded symbol. Use enum [ ScannerConfig.CodeIdType](../ScannerConfig-CodeIdType).
  
  
 

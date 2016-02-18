@@ -61,7 +61,7 @@ boolean
 
 With MSI symbols, one check digit is mandatory and always
  verified by the reader. The second check digit is optional. Use
- enum [ScannerConfig-CheckDigit](../ScannerConfig-CheckDigit).
+ enum [ ScannerConfig.CheckDigit](../ScannerConfig-CheckDigit).
  
  
 
@@ -79,7 +79,7 @@ com.symbol.emdk.barcode.ScannerConfig.CheckDigit
 
 Two algorithms are possible for the verification of the second
  MSI check digit. Select the algorithm used to encode the check
- digit. Use enum [ScannerConfig-CheckDigitScheme](../ScannerConfig-CheckDigitScheme).
+ digit. Use enum [ ScannerConfig.CheckDigitScheme](../ScannerConfig-CheckDigitScheme).
  
  
 

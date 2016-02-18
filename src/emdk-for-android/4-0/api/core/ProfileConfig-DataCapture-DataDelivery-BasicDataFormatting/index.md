@@ -19,7 +19,7 @@ Holds Basic Data Formatting configuration settings.
 ###bdf_enabled
 
 Enables or disables Basic Data Formatting (default - enabled).
- Uses the [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
+ Uses the [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
  
  
 
@@ -69,7 +69,7 @@ java.lang.String
 
 Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. 
  However, the prefix and suf fix strings, if present, are still transmitted even when this option is disabled (default - enabled).
- Uses the [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
+ Uses the [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
  
  
 
@@ -86,7 +86,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###bdf_send_hex
 
 Set to send the data in hexadecimal format(default - disabled).
- Uses the [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
+ Uses the [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
  
  
 
@@ -103,7 +103,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###bdf_send_tab
 
 Set to append a tab character to the end of the processed data(default - disabled).
- Uses the [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
+ Uses the [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
  
  
 
@@ -120,7 +120,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 ###bdf_send_enter
 
 Set to append an Enter character to the end of the processed data(default - disabled).
- Uses the [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
+ Uses the [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE) enum.
  
  
 

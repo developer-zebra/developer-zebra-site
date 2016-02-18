@@ -18,7 +18,7 @@ Holds Intent configuration settings.
 
 ###output_enabled
 
-Gets and Sets intent ENABLED_STATE configuration enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+Gets and Sets intent ENABLED_STATE configuration enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
@@ -66,7 +66,7 @@ java.lang.String
 
 ###delivery
 
-Gets and Sets intent INTENT_DELIVERY configuration enum [ProfileConfig-INTENT_DELIVERY](../ProfileConfig-INTENT_DELIVERY).
+Gets and Sets intent INTENT_DELIVERY configuration enum [ ProfileConfig.INTENT_DELIVERY](../ProfileConfig-INTENT_DELIVERY).
  
  
 
@@ -82,7 +82,7 @@ com.symbol.emdk.ProfileConfig.INTENT_DELIVERY
 
 ###basicDataFormatting
 
-Gets and Sets intent INTENT_DELIVERY configuration object [ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting](../ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting).
+Gets and Sets intent INTENT_DELIVERY configuration object [ ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting](../ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting).
  
  
 

@@ -36,7 +36,7 @@ int
 ###linearSecurityLevel
 
 Sets the number of times a bar code is read to confirm an accurate decode.
- Use enum [ScannerConfig-LinearSecurityLevel](../ScannerConfig-LinearSecurityLevel).
+ Use enum [ ScannerConfig.LinearSecurityLevel](../ScannerConfig-LinearSecurityLevel).
  
  
 
@@ -54,7 +54,7 @@ com.symbol.emdk.barcode.ScannerConfig.LinearSecurityLevel
 
 Turns camera illumination on and off. 
  This option is only available when camera is selected in the Barcode input Scanner selection option.
- Use enum [ScannerConfig-IlluminationMode](../ScannerConfig-IlluminationMode).
+ Use enum [ ScannerConfig.IlluminationMode](../ScannerConfig-IlluminationMode).
  
  
 
@@ -71,7 +71,7 @@ com.symbol.emdk.barcode.ScannerConfig.IlluminationMode
 ###inverse1DMode
 
 This parameter allows the user to select decoding on inverse 1D bar codes.
- Use enum [ScannerConfig-Inverse1DMode](../ScannerConfig-Inverse1DMode).
+ Use enum [ ScannerConfig.Inverse1DMode](../ScannerConfig-Inverse1DMode).
  
  
 
@@ -88,7 +88,7 @@ com.symbol.emdk.barcode.ScannerConfig.Inverse1DMode
 ###viewfinderMode
 
 Configures the Viewfinder modes supported for camera scanning.
- Use enum [ScannerConfig-ViewFinderMode](../ScannerConfig-ViewFinderMode).
+ Use enum [ ScannerConfig.ViewFinderMode](../ScannerConfig-ViewFinderMode).
  
  
 

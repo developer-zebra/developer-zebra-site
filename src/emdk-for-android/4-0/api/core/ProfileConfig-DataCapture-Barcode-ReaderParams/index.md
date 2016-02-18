@@ -67,7 +67,7 @@ int
 ###power_mode
 
 Sets the scanner power mode.
- Use enum [ProfileConfig-POWER_MODE](../ProfileConfig-POWER_MODE).
+ Use enum [ ProfileConfig.POWER_MODE](../ProfileConfig-POWER_MODE).
  
  
 
@@ -84,7 +84,7 @@ com.symbol.emdk.ProfileConfig.POWER_MODE
 ###linear_security_level
 
 Sets the number of times a bar code is read to confirm an accurate decode.
- Use enum [ProfileConfig-LINEAR_SECURITY_LEVEL](../ProfileConfig-LINEAR_SECURITY_LEVEL).
+ Use enum [ ProfileConfig.LINEAR_SECURITY_LEVEL](../ProfileConfig-LINEAR_SECURITY_LEVEL).
  
  
 
@@ -103,7 +103,7 @@ com.symbol.emdk.ProfileConfig.LINEAR_SECURITY_LEVEL
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. 
  This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and 
  only one of them is targeted for decode.
- Use enum [ProfileConfig-PICK_LIST](../ProfileConfig-PICK_LIST).
+ Use enum [ ProfileConfig.PICK_LIST](../ProfileConfig-PICK_LIST).
  
  
 
@@ -121,7 +121,7 @@ com.symbol.emdk.ProfileConfig.PICK_LIST
 
 Turns camera illumination on and off. 
  This option is only available when camera is selected in the Barcode input Scanner selection option.
- Use enum [ProfileConfig-ILLUMINATION_MODE](../ProfileConfig-ILLUMINATION_MODE).
+ Use enum [ ProfileConfig.ILLUMINATION_MODE](../ProfileConfig-ILLUMINATION_MODE).
  
  
 
@@ -139,7 +139,7 @@ com.symbol.emdk.ProfileConfig.ILLUMINATION_MODE
 
 Enables or disables LCD mode. 
  LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (imager only).
- Use enum [ProfileConfig-LCD_MODE](../ProfileConfig-LCD_MODE).
+ Use enum [ ProfileConfig.LCD_MODE](../ProfileConfig-LCD_MODE).
  
  
 
@@ -188,7 +188,7 @@ int
 ###inverse_1d_mode
 
 This parameter allows the user to select decoding on inverse 1D bar codes.
- Use enum [ProfileConfig-INVERSE_1D_MODE](../ProfileConfig-INVERSE_1D_MODE).
+ Use enum [ ProfileConfig.INVERSE_1D_MODE](../ProfileConfig-INVERSE_1D_MODE).
  
  
 
@@ -205,7 +205,7 @@ com.symbol.emdk.ProfileConfig.INVERSE_1D_MODE
 ###viewfinder_mode
 
 Configures the Viewfinder modes supported for camera scanning.
- Use enum [ProfileConfig-VIEWFINDER_MODE](../ProfileConfig-VIEWFINDER_MODE).
+ Use enum [ ProfileConfig.VIEWFINDER_MODE](../ProfileConfig-VIEWFINDER_MODE).
  
  
 

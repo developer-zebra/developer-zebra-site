@@ -51,7 +51,7 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - enabled). 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -69,7 +69,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Enable this parameter to strip the start and stop characters and insert a space after the first, fifth, and tenth characters of a 14-character Codabar symbol. 
  Enable this feature if the host system requires this data format (default - disabled). 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
@@ -87,7 +87,7 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 Enable this parameter to strip the start and stop characters from a decoded Codabar symbol. 
  Enable this feature if the host system requires this data format (default - disabled). 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 

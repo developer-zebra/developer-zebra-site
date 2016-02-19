@@ -10,8 +10,10 @@ Class for dealing with ActivitySelection of profile data [ ProfileConfig.activit
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ActivitySelection activitySelection = profileConfig.activitySelection;
+	
 
 
 ##Constructors
@@ -30,8 +32,10 @@ Gets and Sets activities to the profile [ ProfileConfig.ActivitySelection.activi
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ActivitySelection activitySelection = profileConfig.activitySelection
+	
 
 
 **Type:**

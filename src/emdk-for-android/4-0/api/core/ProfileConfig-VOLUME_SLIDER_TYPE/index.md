@@ -10,8 +10,10 @@ Defines the notification type for a good decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	VOLUME_SLIDER_TYPE.DEFAULT;
+	
 
 
 **Values:**

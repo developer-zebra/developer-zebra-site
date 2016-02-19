@@ -17,8 +17,10 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	triOptic39.redundancy = true;
+	
 
 
 **Type:**

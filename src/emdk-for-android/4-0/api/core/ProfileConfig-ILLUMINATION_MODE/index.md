@@ -11,8 +11,10 @@ Turns camera illumination on and off.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ILLUMINATION_MODE.DEFAULT;
+	
 
 
 **Values:**

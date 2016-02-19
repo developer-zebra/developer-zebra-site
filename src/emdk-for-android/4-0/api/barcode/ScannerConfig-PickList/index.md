@@ -13,8 +13,10 @@ Allows the imager to decode only the bar code that is directly under the
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	PickList.DISABLED;
+	
 
 
 **Values:**

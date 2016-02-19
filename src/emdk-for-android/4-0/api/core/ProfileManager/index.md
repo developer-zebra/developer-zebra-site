@@ -10,8 +10,10 @@ This class handles all the profile related functions.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	private ProfileManager profileManager = (ProfileManager) EMDKManager.getInstance(EMDKManager.FEATURE_TYPE.PROFILE);
+	
 
 
 ##Public Methods
@@ -61,13 +63,14 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 	DocumentBuilder db = dbf.newDocumentBuilder();
 	Document extraData;
 	extraData = db.newDocument();
 	profileManager.processProfile("Profile1", PROFILE_FLAG.GET, extraData);
-	}
+	
 
 
 **Parameters:**
@@ -104,8 +107,10 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileManager.processProfile("Profile1", PROFILE_FLAG.GET, new String[]{""});
+	
 
 
 **Parameters:**
@@ -142,8 +147,10 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileManager.processProfile("Profile1", PROFILE_FLAG.GET, ???);
+	
 
 
 **Parameters:**

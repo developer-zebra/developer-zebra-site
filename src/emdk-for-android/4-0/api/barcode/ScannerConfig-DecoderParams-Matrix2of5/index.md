@@ -17,8 +17,10 @@ Used to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	matrix2of5.length1 = 10;
+	
 
 
 **Type:**
@@ -33,8 +35,10 @@ Used to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	matrix2of5.length2 = 0;
+	
 
 
 **Type:**
@@ -49,8 +53,10 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	matrix2of5.redundancy = false;
+	
 
 
 **Type:**
@@ -65,8 +71,10 @@ Transmit Matrix 2 of 5 data with or without the check digit.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	matrix2of5.reportCheckDigit = true;
+	
 
 
 **Type:**
@@ -82,8 +90,10 @@ Enable this feature to check the integrity of all Matrix 2 of 5
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	matrix2of5.verifyCheckDigit = true;
+	
 
 
 **Type:**

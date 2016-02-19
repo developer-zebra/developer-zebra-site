@@ -10,10 +10,12 @@ Class for holding result data.<br><br>
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ProfileConfig profileConfigObj = new ProfileConfig();
 	ProfileManager profileManager = (ProfileManager) EMDKManager.getInstance(getApplicationContext(), EMDKManager.FEATURE_TYPE.PROFILE
 	EMDKResults results = profileManager.processProfile("Profile Name", ProfileManager.PROFILE_FLAG.GET, profileConfigObj);
+	
 
 
 ##Public Methods
@@ -63,8 +65,10 @@ Gets status results from process profile as xml document.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Document document = results.getStatusDocument();
+	
 
 
 **Returns:**
@@ -81,8 +85,10 @@ Gets status results from process profile as xml string.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String xml = results.getStatusString();
+	
 
 
 **Returns:**
@@ -99,8 +105,10 @@ Gets status code result from process profile as enum value of type [ EMDKResults
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	STATUS_CODE statusCode = results.extendedErrorInfo.statusCodeEx;
+	
 
 
 **Type:**
@@ -115,8 +123,10 @@ Gets status code result from process profile as enum value of type [ EMDKResults
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	STATUS_CODE statusCode = results.statusCode;
+	
 
 
 **Type:**

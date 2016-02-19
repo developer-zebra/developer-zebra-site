@@ -10,9 +10,11 @@ The Decoders class provides access to enable or disable decoder barcode symbolog
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Decoders decoders = barcode.decoders;
 	decoders.upca = ENABLED_STATE.TRUE;
+	
 
 
 ##Public Fields
@@ -26,9 +28,10 @@ Sets the Enabled State of Decoder UPCA.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.upca = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -44,9 +47,10 @@ Sets the Enabled State of Decoder UPCE0.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.upce0 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -62,9 +66,10 @@ Sets the Enabled State of Decoder EAN-13.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.ean13 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -80,9 +85,10 @@ Sets the Enabled State of Decoder EAN-8.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.ean8 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -98,9 +104,10 @@ Sets the Enabled State of Decoder Code 128.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.code128 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -116,9 +123,10 @@ Sets the Enabled State of Decoder Code 39.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.code39 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -133,9 +141,10 @@ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.i2of5 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -151,9 +160,10 @@ Sets the Enabled State of Decoder Interleaved 2 of 5.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.gs1_databar = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -169,9 +179,10 @@ Sets the Enabled State of Decoder GS1 DataBar Limited.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.gs1_databar_lim = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -187,9 +198,10 @@ Sets the Enabled State of Decoder GS1 DataBar Expanded.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.gs1_databar_exp = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -205,9 +217,10 @@ Sets the Enabled State of Decoder Data Matrix.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.datamatrix = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -223,9 +236,10 @@ Sets the Enabled State of Decoder QR Code.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.qrcode = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -241,9 +255,10 @@ Sets the Enabled State of Decoder PDF417.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.pdf417 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -259,9 +274,10 @@ Sets the Enabled State of Decoder Composite AB.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.composite_ab = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -277,9 +293,10 @@ Sets the Enabled State of Decoder Composite C.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.composite_c = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -295,9 +312,10 @@ Sets the Enabled State of Decoder Micro QR.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.microqr = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -313,9 +331,10 @@ Sets the Enabled State of Decoder Aztec.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.aztec = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -331,9 +350,10 @@ Sets the Enabled State of Decoder Maxicode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.maxicode = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -349,9 +369,10 @@ Sets the Enabled State of Decoder Micro PDF.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.micropdf = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -367,9 +388,10 @@ Sets the Enabled State of Decoder US Postnet.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.uspostnet = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -385,9 +407,10 @@ Sets the Enabled State of Decoder US Planet.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.usplanet = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -403,9 +426,10 @@ Sets the Enabled State of Decoder UK Postal.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.uk_postal = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -421,9 +445,10 @@ Sets the Enabled State of Decoder Japan Postal.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.japanese_postal = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -439,9 +464,10 @@ Sets the Enabled State of Decoder Australian Postal.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.australian_postal = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -457,9 +483,10 @@ Sets the Enabled State of Decoder Canadian Postal.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.canadian_postal = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -475,9 +502,10 @@ Sets the Enabled State of Decoder Dutch Postal.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.dutch_postal = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -493,9 +521,10 @@ Sets the Enabled State of Decoder US4State.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.us4state = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -511,9 +540,10 @@ Sets the Enabled State of Decoder US4State FICS.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.us4state_fics = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -529,9 +559,10 @@ Sets the Enabled State of Decoder Codabar.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.codabar = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -547,9 +578,10 @@ Sets the Enabled State of Decoder MSI.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.msi = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -565,9 +597,10 @@ Sets the Enabled State of Decoder Code 93.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.code93 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -583,9 +616,10 @@ Sets the Enabled State of Decoder Trioptic 39.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.trioptic39 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -601,9 +635,10 @@ Sets the Enabled State of Decoder Discrete 2 of 5.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.d2of5 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -619,9 +654,10 @@ Sets the Enabled State of Decoder Chinese 2 of 5.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.chinese_2of5 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -637,9 +673,10 @@ Sets the Enabled State of Decoder Korean 3 of 5.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.korean_3of5 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -655,9 +692,10 @@ Sets the Enabled State of Decoder Code11.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.code11 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -673,9 +711,10 @@ Sets the Enabled State of Decoder TLC 39.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.tlc39 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -691,9 +730,10 @@ Sets the Enabled State of Decoder Signature.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.signature = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -709,9 +749,10 @@ Sets the Enabled State of Decoder Web Code.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.webcode = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -727,9 +768,10 @@ Sets the Enabled State of Decoder Matrix 2 of 5.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.matrix_2of5 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**
@@ -745,9 +787,10 @@ Sets the Enabled State of Decoder UPCE1.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	decoders.upce1 = ENABLED_STATE.DEFAULT;
-	}
+	
 
 
 **Type:**

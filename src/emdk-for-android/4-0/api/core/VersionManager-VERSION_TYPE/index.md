@@ -10,8 +10,10 @@ All the version keys for [ VersionManager.getVersion(VERSION_TYPE)](../VersionMa
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	VERSION_TYPE.EMDK
+	
 
 
 **Values:**

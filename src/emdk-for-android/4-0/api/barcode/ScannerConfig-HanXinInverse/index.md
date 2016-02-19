@@ -10,8 +10,10 @@ This parameter allows the user to select decoding on inverse HanXin bar codes.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	HanXinInverse.DISABLED;
+	
 
 
 **Values:**

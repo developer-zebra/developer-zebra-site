@@ -11,8 +11,10 @@ Allows configuration of the Intent Output Plug-in for the profile.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	INTENT_DELIVERY.SEND_VIA_STARTACTIVITY;
+	
 
 
 **Values:**

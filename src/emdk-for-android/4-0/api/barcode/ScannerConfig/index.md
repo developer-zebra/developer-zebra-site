@@ -10,11 +10,13 @@ The ScannerConfig class provides access to scanner configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ScannerConfig scannerConfig = scanner.getConfig(scannerConfig);
 	scannerConfig.scanParams.decodeHapticFeedback = true;
 	scannerConfig.decoderParams.codabar.length1 = 6;
 	scanner.setConfig(scannerConfig);
+	
 
 
 ##Public Methods
@@ -31,7 +33,8 @@ This method helps to check scanner config parameters supported
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ScannerConfig config1 = scanner.getConfig(scannerConfig);
 	if ( config1.isParamSupported("config1.scanParams.decodeHapticFeedback") ) {
 	config1.scanParams.decodeHapticFeedback = true;
@@ -40,6 +43,7 @@ This method helps to check scanner config parameters supported
 	config1.decoderParams.codabar.enabled = true;
 	}
 	scanner.setConfig(config1);
+	
 
 
 **Parameters:**

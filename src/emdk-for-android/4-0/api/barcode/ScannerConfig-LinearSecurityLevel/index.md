@@ -11,8 +11,10 @@ Sets the number of times a bar code is read to confirm an accurate
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	LinearSecurityLevel.SHORT_OR_CODABAR;
+	
 
 
 **Values:**

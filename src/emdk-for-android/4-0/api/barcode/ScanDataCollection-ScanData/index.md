@@ -10,13 +10,15 @@ The ScanData object gives information on the barcode data scanned.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ArrayList<ScanData> scanDataList = scanDataCollection.getScanData()
 	for(ScanData scanData :scanDataList) {
 	String data = scanData.getData();
 	LABEL_TYPE labelType = scanData.getLabelType();
 	String timeStamp = scanData.getTimeStamp();
 	}
+	
 
 
 ##Public Methods

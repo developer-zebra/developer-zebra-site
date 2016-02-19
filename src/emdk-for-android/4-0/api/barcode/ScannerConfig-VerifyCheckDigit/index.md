@@ -12,8 +12,10 @@ Check the integrity of all Code 11 symbols to verify that the data
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	VerifyCheckDigit.NO;
+	
 
 
 **Values:**

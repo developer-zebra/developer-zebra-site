@@ -23,8 +23,10 @@ A Code ID character identifies the code type of a scanned bar code.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.codeIdType = CODE_ID_TYPE.NONE;
+	
 
 
 **Type:**
@@ -44,11 +46,13 @@ Select an audio tone to sound upon a good decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.decodeAudioFeedbackURI = "system/media/audio/notifications/decode-short.wav";
 	scanParams.decodeAudioFeedbackUri = "sdcard/sample-audio.wav";
 	scanParams.decodeAudioFeedbackUri = "sdcard/sample-audio.ogg";
 	scanParams.decodeAudioFeedbackUri = "/sdcard/sample-audio.wav";
+	
 
 
 **Type:**
@@ -63,8 +67,10 @@ Enable the device to vibrate upon a good decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.decodeHapticFeedback = true;
+	
 
 
 **Type:**
@@ -80,8 +86,10 @@ Decode LED ON duration upon successful decode in milliseconds.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.decodeLEDTime = 75;
+	
 
 
 **Type:**
@@ -97,8 +105,10 @@ The audio stream type refers to type of streaming on which the scan beep should 
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.audioStreamType = AudioStreamType.RINGER;
+	
 
 
 **Type:**
@@ -113,8 +123,10 @@ Decoding LED Notification.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.decodeLEDFeedback = true;
+	
 
 
 **Type:**

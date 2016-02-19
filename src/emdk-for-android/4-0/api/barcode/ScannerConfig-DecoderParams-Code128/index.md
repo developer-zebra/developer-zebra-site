@@ -17,8 +17,10 @@ Use to set decode lengths. The supported range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length1 = code128.length1;
+	
 
 
 **Type:**
@@ -33,8 +35,10 @@ Use to set decode lengths. The supported range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length2 = code128.length2;
+	
 
 
 **Type:**
@@ -49,8 +53,10 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.redundancy = true;
+	
 
 
 **Type:**
@@ -65,8 +71,10 @@ Flag to enable other sub types besides GS1-128 and ISBT-128
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.enablePlain = false;
+	
 
 
 **Type:**
@@ -80,8 +88,10 @@ Flag to enable EAN128 subtype.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.enableEan128 = true;
+	
 
 
 **Type:**
@@ -95,8 +105,10 @@ Flag to enable ISBT128 .
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.enableIsbt128 = true;
+	
 
 
 **Type:**
@@ -112,8 +124,10 @@ Select an option for concatenating pairs of ISBT code types. Use
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.isbt128ConcatMode = Isbt128ContactMode.NONE;
+	
 
 
 **Type:**
@@ -132,8 +146,10 @@ The ISBT specification includes a table that lists several types
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.checkIsbtTable = true;
+	
 
 
 **Type:**
@@ -153,8 +169,10 @@ The scanner of fers four levels of decode security for Code 128
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code128.securityLevel = SecurityLevel.LEVEL_0;
+	
 
 
 **Type:**

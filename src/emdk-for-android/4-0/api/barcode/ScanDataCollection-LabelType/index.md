@@ -10,8 +10,10 @@ List of label types of the scanner data
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	LABEL_TYPE.CODE39
+	
 
 
 **Values:**

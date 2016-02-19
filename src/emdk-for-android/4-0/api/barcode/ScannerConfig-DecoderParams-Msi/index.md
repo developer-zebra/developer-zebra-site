@@ -17,8 +17,10 @@ Use to set decode lengths. The range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msi.length1 = 4;
+	
 
 
 **Type:**
@@ -33,8 +35,10 @@ Use to set decode lengths. The range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msi.length2 = 55;
+	
 
 
 **Type:**
@@ -49,8 +53,10 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msi.redundancy = true;
+	
 
 
 **Type:**
@@ -67,8 +73,10 @@ With MSI symbols, one check digit is mandatory and always
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msi.checkDigits = CheckDigit.ONE;
+	
 
 
 **Type:**
@@ -85,8 +93,10 @@ Two algorithms are possible for the verification of the second
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msi.check_digit_scheme = CheckDigitScheme.MOD_10_10;
+	
 
 
 **Type:**
@@ -101,8 +111,10 @@ Transmit MSI data with or without the check digit.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msi.reportCheckDigit = false;
+	
 
 
 **Type:**

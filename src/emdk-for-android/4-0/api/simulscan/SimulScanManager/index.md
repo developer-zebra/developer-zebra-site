@@ -10,7 +10,8 @@ This is the primary object to access the SimulScan feature.
 
 **Example Usage:**
 	
-	:::java	public class MainActivity extends Activity implements EMDKListener,
+	:::java
+	public class MainActivity extends Activity implements EMDKListener,
 	SimulScanDataEventListerner, SimulScanStatusEventListerner {
 	protected void onCreate(Bundle savedInstanceState) {
 	//..
@@ -41,6 +42,7 @@ This is the primary object to access the SimulScan feature.
 	EMDKManager.release(FEATURE_TYPE.SimulScan);
 	
 	}
+	
 
 
 ##Public Methods

@@ -10,8 +10,10 @@ Holds Keystroke configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Keystroke keystroke = profileConfig.dataCapture.dataDelivery.keystroke;
+	
 
 
 ##Public Fields
@@ -24,8 +26,10 @@ Gets and Sets keystroke ENABLED_STATE configuration enum [ ProfileConfig.ENABLED
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	keystroke.ime_output_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -40,8 +44,10 @@ Gets and Sets keystroke ACTION_KEY_CHAR configuration enum [ ProfileConfig.ACTIO
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	keystroke.keystroke_action_char = ACTION_KEY_CHAR.DEFAULT;
+	
 
 
 **Type:**
@@ -56,8 +62,10 @@ Gets and Sets keystroke basic data formatting configuration object [ ProfileConf
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	keystroke.BasicDataFormatting.bdf_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

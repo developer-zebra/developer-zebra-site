@@ -25,8 +25,10 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.beamTimer = 1500;
+	
 
 
 **Type:**
@@ -42,8 +44,10 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.linearSecurityLevel = LinearSecurityLevel.ALL_THRICE;
+	
 
 
 **Type:**
@@ -61,8 +65,10 @@ Allows the imager to decode only the bar code that is directly under the cross-h
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	imagerSpecific.picklist = PickList.DISABLED;
+	
 
 
 **Type:**
@@ -79,8 +85,10 @@ Enables or disables LCD mode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	imagerSpecific.lcdMode = LcdMode.DISABLED;
+	
 
 
 **Type:**
@@ -96,8 +104,10 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	imagerSpecific.inverse1DMode = Inverse1DMode.AUTO;
+	
 
 
 **Type:**
@@ -112,8 +122,10 @@ Illumination Brightness of the Imager. The valid range is 1 to 10.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	imagerSpecific.illuminationBrightness = 2;
+	
 
 
 **Type:**
@@ -152,8 +164,10 @@ Turns imager illumination on and off.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.imagerSpecific.illuminationMode = IlluminationMode.ON;
+	
 
 
 **Type:**
@@ -169,8 +183,10 @@ Type of aiming pattern to be used for barcode scanning.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.imagerSpecific.aimingPattern = AimingPattern.OFF;
+	
 
 
 **Type:**

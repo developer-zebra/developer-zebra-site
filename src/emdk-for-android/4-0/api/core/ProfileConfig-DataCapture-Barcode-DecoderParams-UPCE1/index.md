@@ -10,8 +10,10 @@ Holds UPCE1 configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	UPCE1 upce1 = profileConfig.dataCapture.barcode.decoderParams.upce1;
+	
 
 
 ##Public Fields
@@ -26,8 +28,10 @@ The check digit is the last character of the symbol used to verify the integrity
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	upce1.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -44,8 +48,10 @@ Preamble characters are part of the UPC symbol consisting of Country Code and Sy
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	upce1.preamble = PREAMBLE.DEFAULT;
+	
 
 
 **Type:**
@@ -63,8 +69,10 @@ Enable this to convert UPCE1 decoded data to UPC-A format before transmission.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	upce1.convert_to_upca = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

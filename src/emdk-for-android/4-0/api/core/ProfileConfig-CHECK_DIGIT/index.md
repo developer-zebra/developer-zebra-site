@@ -12,8 +12,10 @@ The number of check digits to be verified.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	CHECK_DIGIT.DEFAULT;
+	
 
 
 **Values:**

@@ -10,8 +10,10 @@ Holds Composite AB configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Composite_AB compositeAB = profileConfig.dataCapture.barcode.decoderParams.composite_AB;
+	
 
 
 ##Public Fields
@@ -24,8 +26,10 @@ Gets and Sets UCC Link Mode using [ ProfileConfig.UCC_LINK_MODE](../ProfileConfi
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	compositeAB.ucc_link_mode = UCC_LINK_MODE.DEFAULT;
+	
 
 
 **Type:**

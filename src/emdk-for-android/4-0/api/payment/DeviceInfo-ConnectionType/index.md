@@ -10,8 +10,10 @@ List of supported payment connection types.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ConnectionType.BLUETOOTH;
+	
 
 
 **Values:**

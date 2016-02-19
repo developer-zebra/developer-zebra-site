@@ -10,8 +10,10 @@ Lists the Bookland formats
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	BooklandFormat.ISBN_10;
+	
 
 
 **Values:**

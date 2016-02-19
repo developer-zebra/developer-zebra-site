@@ -18,8 +18,10 @@ Gets and Sets UCC Link Mode using
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	compositeAB.uccLinkMode = UccLinkMode.ALWAYS_LINKED;
+	
 
 
 **Type:**

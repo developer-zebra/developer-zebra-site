@@ -10,8 +10,10 @@ List of supported scanner connection types.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ConnectionType.INTERNAL;
+	
 
 
 **Values:**

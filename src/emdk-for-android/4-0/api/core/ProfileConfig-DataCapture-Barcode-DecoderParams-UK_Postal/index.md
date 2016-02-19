@@ -10,8 +10,10 @@ Holds UK Postal configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	UK_Postal ukPostal = profileConfig.dataCapture.barcode.decoderParams.uk_Postal;
+	
 
 
 ##Public Fields
@@ -25,8 +27,10 @@ Transmit UK Postal data with or without the check digit (default - disabled).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ukPostal.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

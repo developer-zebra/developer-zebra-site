@@ -14,9 +14,11 @@ This is the interface for the callback to notify the status of the feature objec
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements StatusListener
 	.. .. ..
+	
 	
 
 
@@ -32,12 +34,14 @@ Called to notify the client when the feature manager object is available and its
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Override
 	public void onStatus(EMDKBase featureManager)
 	{
 	
 	}
+	
 
 
 **Parameters:**

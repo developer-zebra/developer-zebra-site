@@ -10,8 +10,10 @@ Option for concatenating pairs of ISBT128 code types.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ISBT128_CONTACT_MODE.DEFAULT;
+	
 
 
 **Values:**

@@ -10,8 +10,10 @@ Holds UPCA configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	UPCA upca = profileConfig.dataCapture.barcode.decoderParams.upca;
+	
 
 
 ##Public Fields
@@ -26,8 +28,10 @@ Preamble characters are part of the UPC symbol consisting of Country Code and Sy
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	upca.preamble = PREAMBLE.DEFAULT;
+	
 
 
 **Type:**
@@ -44,8 +48,10 @@ The check digit is the last character of the symbol used to verify the integrity
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	upca.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

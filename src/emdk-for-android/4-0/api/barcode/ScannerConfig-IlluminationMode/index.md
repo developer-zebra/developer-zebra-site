@@ -11,8 +11,10 @@ Enable/disable illumination depending on ambient light conditions.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	IlluminationMode.OFF;
+	
 
 
 **Values:**

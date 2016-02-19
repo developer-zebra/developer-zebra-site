@@ -10,8 +10,10 @@ Verify data integrity.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	CHECK_DIGIT_TYPE.DEFAULT;
+	
 
 
 **Values:**

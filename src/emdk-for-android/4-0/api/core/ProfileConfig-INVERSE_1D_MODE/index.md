@@ -10,8 +10,10 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	INVERSE_1D_MODE.DEFAULT;
+	
 
 
 **Values:**

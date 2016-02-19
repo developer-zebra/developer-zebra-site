@@ -19,8 +19,10 @@ Check the inverse of the HanXin decoder
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	hanXin.hanXinInverse = HanXinInverse.DISABLED;
+	
 
 
 **Type:**

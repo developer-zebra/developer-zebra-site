@@ -10,8 +10,10 @@ Holds Intent configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Intent intent = profileConfig.Intent;
+	
 
 
 ##Public Fields
@@ -24,8 +26,10 @@ Gets and Sets intent ENABLED_STATE configuration enum [ ProfileConfig.ENABLED_ST
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	intent.output_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -40,8 +44,10 @@ Gets and Sets the intent action.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String action = intent.action;
+	
 
 
 **Type:**
@@ -56,8 +62,10 @@ Gets and Sets the intent category.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String category = intent.category;
+	
 
 
 **Type:**
@@ -72,8 +80,10 @@ Gets and Sets intent INTENT_DELIVERY configuration enum [ ProfileConfig.INTENT_D
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	intent.delivery = INTENT_DELIVERY.DEFAULT;
+	
 
 
 **Type:**
@@ -88,8 +98,10 @@ Gets and Sets intent INTENT_DELIVERY configuration object [ ProfileConfig.DataCa
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	intent.BasicDataFormatting.bdf_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

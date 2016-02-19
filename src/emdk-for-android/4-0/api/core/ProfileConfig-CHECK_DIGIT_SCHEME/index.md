@@ -11,8 +11,10 @@ Two algorithms are possible for the verification of the second MSI check digit.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	CHECK_DIGIT_SCHEME.DEFAULT;
+	
 
 
 **Values:**

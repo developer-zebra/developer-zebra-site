@@ -13,8 +13,10 @@ The EMDKManager class is the key class in Android EMDK. This class provides acce
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), emdkListener);
+	
 
 
 ##Public Methods
@@ -46,8 +48,10 @@ This method returns an object instance which has derived from EMDKBase. Based on
 
 **Example Usage:**
 	
-	:::java	ProfileManager mProfileManager = (ProfileManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.PROFILE);
+	:::java
+	ProfileManager mProfileManager = (ProfileManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.PROFILE);
 	VersionManager mVersionManager = (VersionManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.VERSION);
+	
 
 
 **Parameters:**
@@ -69,14 +73,6 @@ This method is an asynchronous call and requests object instance for the specifi
  sets the profile during the device boot will result in error because the underlying Profile manager is not ready. 
  
  
-
-**Example Usage:**
-	
-	:::java	try {
-	
-	emdkManager.getInstanceAsync(EMDKManager.FEATURE_TYPE.PROFILE, statusListener);
-	
-
 
 **Parameters:**
 
@@ -105,8 +101,10 @@ This method releases all the resources constructed by EMDKManager. EMDKManager c
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	emdkManager.release();
+	
 
 
 **Returns:**
@@ -123,8 +121,10 @@ This method releases resources of a given manager type. Instance variable is not
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	emdkManager.release(EMDKManager.FEATURE_TYPE.PROFILE);
+	
 
 
 **Parameters:**

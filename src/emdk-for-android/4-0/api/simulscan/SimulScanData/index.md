@@ -10,7 +10,8 @@ The SimulScanData object gives scanning result
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public void onSimulScanData(SimulScanData simulscanData) {
 	Date timestamp = new Date(simulscanData.getTimestamp());
 	List<SimulScanElement> simulscanDataElements = simulscanData.getElements();
@@ -26,6 +27,8 @@ The SimulScanData object gives scanning result
 	}
 	}
 	}
+	}
+	
 
 
 ##Constructors

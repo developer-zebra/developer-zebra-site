@@ -10,8 +10,10 @@ Configures the Viewfinder modes supported for camera scanning.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	VIEWFINDER_MODE.ENABLED;
+	
 
 
 **Values:**

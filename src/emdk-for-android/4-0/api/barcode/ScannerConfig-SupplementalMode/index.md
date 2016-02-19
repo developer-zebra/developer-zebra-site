@@ -10,8 +10,10 @@ Supplemental modes
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SupplementalMode.NO;
+	
 
 
 **Values:**

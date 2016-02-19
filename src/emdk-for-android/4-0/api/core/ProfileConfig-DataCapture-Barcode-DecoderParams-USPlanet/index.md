@@ -10,8 +10,10 @@ Holds US Planet configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	USPlanet usPlanet = profileConfig.dataCapture.barcode.decoderParams.usPlanet;
+	
 
 
 ##Public Fields
@@ -25,8 +27,10 @@ Transmit USPlanet data with or without the check digit. (default - disabled).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	usPlanet.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

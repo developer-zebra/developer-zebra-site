@@ -17,8 +17,10 @@ Transmit UK Postal data with or without the check digit.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ukPostal.reportCheckDigit = true;
+	
 
 
 **Type:**

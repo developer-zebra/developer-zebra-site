@@ -10,8 +10,10 @@ Class for dealing with data capture profile data [ ProfileConfig.DataCapture](..
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DataCapture dataCapture = profileConfig.dataCapture;
+	
 
 
 ##Public Fields
@@ -24,8 +26,10 @@ Gets and Sets MSR configuration object.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileConfig.msr.msr_input_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -40,8 +44,10 @@ Gets and Sets Barcode configuration object.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileConfig.dataCapture.barcode.decoders.code11 = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -56,8 +62,10 @@ Gets and Sets DataDelivery configuration object.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileConfig.dataCapture.dataDelivery.Keystroke.ime_output_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

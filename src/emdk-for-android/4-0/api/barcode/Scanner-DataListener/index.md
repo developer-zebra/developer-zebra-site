@@ -11,9 +11,11 @@ An interface for notifying client applications when the scan data is
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements DataListener
 	.. .. ..
+	
 	
 
 

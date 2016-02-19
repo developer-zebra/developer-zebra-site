@@ -10,10 +10,12 @@ This class provides access to fetch the diagnostics information.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	paramId
 	DiagnosticData diagnosticData =  PsObject.diagnostic.getDiagnosticData(DiagnosticParamId paramId
 	,DiagnosticConfig diagnosticconfig);
+	
 
 
 ##Public Methods

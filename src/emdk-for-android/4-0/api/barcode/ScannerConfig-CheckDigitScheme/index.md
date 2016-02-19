@@ -11,8 +11,10 @@ Two algorithms are possible for the verification of the second MSI check
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	CheckDigitScheme.MOD_11_10;
+	
 
 
 **Values:**

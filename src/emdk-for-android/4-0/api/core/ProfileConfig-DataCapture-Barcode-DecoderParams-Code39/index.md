@@ -9,8 +9,10 @@ Holds Code39 configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Code39 code39 = profileConfig.dataCapture.barcode.decoderParams.code39;
+	
 
 
 ##Public Fields
@@ -23,8 +25,10 @@ Use to set decode lengths (default - 0).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length1 = code39.length1;
+	
 
 
 **Type:**
@@ -39,8 +43,10 @@ Use to set decode lengths 4 (default - 55).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length2 = code39.length2;
+	
 
 
 **Type:**
@@ -58,8 +64,10 @@ Enable this feature to check the integrity of all Code 39 symbols to verify that
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.verify_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -75,8 +83,10 @@ Transmit Code 39 data with or without the check digit (default - disabled).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -92,8 +102,10 @@ Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the f
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.full_ascii = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -109,8 +121,10 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.redundancy = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -126,8 +140,10 @@ Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry (def
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.convert_to_code32 = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -143,8 +159,10 @@ Scan the appropriate bar code to enable or disable adding the prefix character "
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.report_code32_prefix = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -160,8 +178,10 @@ Options: Security level 0 , Security Level 1 , Security Level 2 and Security Lev
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.security_level = SECURITY_LEVEL.DEFAULT;
+	
 
 
 **Type:**

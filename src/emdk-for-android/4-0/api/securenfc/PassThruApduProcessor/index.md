@@ -18,7 +18,8 @@ This class is designed for the NFC applications to perform secure communication 
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	
 	public class MainActivity extends Activity implements EMDKListener {
@@ -71,8 +72,6 @@ This class is designed for the NFC applications to perform secure communication 
 	
 	public void onClosed() {
 	this.emdkManager.release();
-	}
-	
 	}
 	
 	}

@@ -10,8 +10,10 @@ Lists the Bookland formats
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	BOOKLAND_FORMAT.DEFAULT;
+	
 
 
 **Values:**

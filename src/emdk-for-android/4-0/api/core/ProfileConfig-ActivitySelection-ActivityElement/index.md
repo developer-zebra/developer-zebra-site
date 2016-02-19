@@ -10,8 +10,10 @@ Gets and Sets application's package name and its activities to the profile [ Pro
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ArrayList<ActivityElement> activities = profileConfig.activitySelection.activities;
+	
 
 
 ##Constructors

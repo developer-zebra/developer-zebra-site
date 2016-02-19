@@ -10,8 +10,10 @@ List of supported scanner device type.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SimulScanDeviceType.CAMERA;
+	
 
 
 **Values:**

@@ -25,8 +25,10 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.beamTimer = 1500;
+	
 
 
 **Type:**
@@ -42,8 +44,10 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.linearSecurityLevel = LinearSecurityLevel.ALL_THRICE;
+	
 
 
 **Type:**
@@ -59,8 +63,10 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.cameraSpecific.inverse_1d_mode = Inverse1DMode.AUTO;
+	
 
 
 **Type:**

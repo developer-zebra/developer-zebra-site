@@ -10,8 +10,10 @@ StatusData class provides access to EMDK Manager feature ready to use status.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	statusData.getState();
+	
 
 
 ##Public Methods

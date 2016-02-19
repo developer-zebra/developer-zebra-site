@@ -10,8 +10,10 @@ Sets the scanner power mode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	POWER_MODE.DEFAULT;
+	
 
 
 **Values:**

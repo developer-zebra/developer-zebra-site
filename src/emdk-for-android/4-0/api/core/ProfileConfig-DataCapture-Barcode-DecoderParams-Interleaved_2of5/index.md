@@ -10,8 +10,10 @@ Holds Interleaved 2 of 5 configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Interleaved_2of5 interleaved2of5 = profileConfig.dataCapture.barcode.decoderParams.interleaved_2of5;
+	
 
 
 ##Public Fields
@@ -24,8 +26,10 @@ Use to set decode lengths (default - 14).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length1 = interleaved2of5.length1;
+	
 
 
 **Type:**
@@ -40,8 +44,10 @@ Use to set decode lengths (default - 10).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length2 = interleaved2of5.length2;
+	
 
 
 **Type:**
@@ -57,8 +63,10 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	interleaved2of5.redundancy = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -74,8 +82,10 @@ The check digit type to verify.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	interleaved2of5.check_digit = CHECK_DIGIT_TYPE.DEFAULT;
+	
 
 
 **Type:**
@@ -91,8 +101,10 @@ Transmit Interleaved 2 of 5 data with or without the check digit (default - disa
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	interleaved2of5.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -109,8 +121,10 @@ Convert 14-character Interleaved 2 of 5 bar codes to EAN-13, and transmit as EAN
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	interleaved2of5.convert_itf14_to_ean13 = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -127,8 +141,10 @@ Specifies security level
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	interleaved2of5.security_level = SECURITY_LEVEL.DEFAULT;
+	
 
 
 **Type:**

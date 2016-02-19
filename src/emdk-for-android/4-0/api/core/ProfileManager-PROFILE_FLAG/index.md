@@ -9,8 +9,10 @@ All the possible actions for [ ProfileManager.processProfile(String, PROFILE_FLA
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	PROFILE_FLAG.SET
+	
 
 
 **Values:**

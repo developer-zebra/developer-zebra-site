@@ -10,8 +10,10 @@ Holds reader configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ReaderParams readerParams = profileConfig.dataCapture.barcode.readerParams;
+	
 
 
 ##Public Fields
@@ -56,8 +58,10 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int timer = readerParams.beam_timer;
+	
 
 
 **Type:**
@@ -73,8 +77,10 @@ Sets the scanner power mode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.power_mode = POWER_MODE.DEFAULT;
+	
 
 
 **Type:**
@@ -90,8 +96,10 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.linear_security_level = LINEAR_SECURITY_LEVEL.DEFAULT;
+	
 
 
 **Type:**
@@ -109,8 +117,10 @@ Allows the imager to decode only the bar code that is directly under the cross-h
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.picklist = PICK_LIST.DEFAULT;
+	
 
 
 **Type:**
@@ -127,8 +137,10 @@ Turns camera illumination on and off.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.illumination_mode = ILLUMINATION_MODE.DEFAULT;
+	
 
 
 **Type:**
@@ -145,8 +157,10 @@ Enables or disables LCD mode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.lcd_mode = LCD_MODE.DEFAULT;
+	
 
 
 **Type:**
@@ -161,8 +175,10 @@ Time in milliseconds of non-use before dropping to a low-power mode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int timeout = readerParams.low_power_timeout;
+	
 
 
 **Type:**
@@ -177,8 +193,10 @@ Sets the Illumination Brightness of the Imager. (1 - Lowest, 10 - Highest).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int illumination_brightness = readerParams.illumination_brightness;
+	
 
 
 **Type:**
@@ -194,8 +212,10 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.inverse_1d_mode = INVERSE_1D_MODE.AUTO;
+	
 
 
 **Type:**
@@ -211,8 +231,10 @@ Configures the Viewfinder modes supported for camera scanning.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.viewfinder_mode = VIEWFINDER_MODE.DEFAULT;
+	
 
 
 **Type:**

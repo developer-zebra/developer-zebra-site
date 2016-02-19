@@ -10,8 +10,10 @@ Describes the UCC link mode state.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	UCC_LINK_MODE.DEFAULT;
+	
 
 
 **Values:**

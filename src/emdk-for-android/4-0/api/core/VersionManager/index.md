@@ -10,8 +10,10 @@ Version information can be captured from this class.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	versionManager = (VersionManager) EMDKManager.getInstance(EMDKManager.FEATURE_TYPE.VERSION);
+	
 
 
 ##Public Methods
@@ -20,19 +22,21 @@ Version information can be captured from this class.
 
 **public String getVersion(VersionManager.VERSION_TYPE versionKey)**
 
-Gets the version of the specified [VersionManager-VERSION_TYPE](../VersionManager-VERSION_TYPE)
+Gets the version of the specified [ VersionManager.VERSION_TYPE](../VersionManager-VERSION_TYPE)
  
   
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	versionManager.getVersion(VERSION_TYPE.EMDK)
+	
 
 
 **Parameters:**
 
-`versionKey` - [VersionManager-VERSION_TYPE](../VersionManager-VERSION_TYPE)
+`versionKey` - [ VersionManager.VERSION_TYPE](../VersionManager-VERSION_TYPE)
 
 **Returns:**
 

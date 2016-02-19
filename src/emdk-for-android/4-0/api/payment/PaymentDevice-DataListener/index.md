@@ -12,7 +12,8 @@ An interface for notifying client applications when the payment data and
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements DataListener {
 	'@override
 	void onData(PaymentData data) {
@@ -23,6 +24,8 @@ An interface for notifying client applications when the payment data and
 	}
 	}
 	}
+	}
+	
 
 
 ##Public Methods

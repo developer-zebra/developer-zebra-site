@@ -11,8 +11,10 @@ Enable or disable LCD mode (for Blockbuster imager devices only).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	LCDMode.DISABLED;
+	
 
 
 **Values:**

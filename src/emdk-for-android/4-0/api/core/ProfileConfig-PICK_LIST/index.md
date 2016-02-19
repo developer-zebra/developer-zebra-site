@@ -11,8 +11,10 @@ Allows the imager to decode only the bar code that is directly under the cross-h
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	PICK_LIST.DEFAULT;
+	
 
 
 **Values:**

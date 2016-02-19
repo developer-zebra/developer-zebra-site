@@ -10,8 +10,10 @@ This lists all the barcode types supported by scanners
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DecoderType.ONE_DIMENSIONAL
+	
 
 
 **Values:**

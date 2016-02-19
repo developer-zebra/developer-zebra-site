@@ -17,8 +17,10 @@ Use to set decode length. The supported range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code11.length1 = 4;
+	
 
 
 **Type:**
@@ -33,8 +35,10 @@ Use to set decode length. The supported range is 0 to 55
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code11.length2 = 55;
+	
 
 
 **Type:**
@@ -49,8 +53,10 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code11.redundancy = true;
+	
 
 
 **Type:**
@@ -62,14 +68,16 @@ boolean
 Check the integrity of all Code 11 symbols to verify that the
  data complies with the specified check digit algorithm. This
  selects the check digit mechanism for the decoded Code 11 bar
- code. Use enum [ScannerConfig-VerifyCheckDigit](../ScannerConfig-VerifyCheckDigit).
+ code. Use enum [ ScannerConfig.VerifyCheckDigit](../ScannerConfig-VerifyCheckDigit).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code11.verifyCheckDigit = VerifyCheckDigit.NO;
+	
 
 
 **Type:**
@@ -84,8 +92,10 @@ Transmit Code 11 data with or without the check digit.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code11.reportCheckDigit = false;
+	
 
 
 **Type:**

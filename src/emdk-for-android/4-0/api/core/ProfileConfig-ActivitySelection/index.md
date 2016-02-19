@@ -4,14 +4,16 @@ type: api
 ---
 
 
-Class for dealing with ActivitySelection of profile data [ProfileConfig#activitySelection](../ProfileConfig#activitySelection)
+Class for dealing with ActivitySelection of profile data [ ProfileConfig.activitySelection](../ProfileConfig#activityselection)
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ActivitySelection activitySelection = profileConfig.activitySelection;
+	
 
 
 ##Constructors
@@ -24,14 +26,16 @@ Class for dealing with ActivitySelection of profile data [ProfileConfig#activity
 
 ###activities
 
-Gets and Sets activities to the profile [ProfileConfig-ActivitySelection#activities](../ProfileConfig-ActivitySelection#activities).
+Gets and Sets activities to the profile [ ProfileConfig.ActivitySelection.activities](../ProfileConfig-ActivitySelection#activities).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ActivitySelection activitySelection = profileConfig.activitySelection
+	
 
 
 **Type:**

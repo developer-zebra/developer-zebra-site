@@ -10,8 +10,10 @@ Supplemental modes
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SUPPLEMENTAL_MODE.DEFAULT;
+	
 
 
 **Values:**

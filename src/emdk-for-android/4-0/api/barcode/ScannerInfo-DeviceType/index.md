@@ -10,8 +10,10 @@ List of supported scanner device types.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DeviceType.LASER;
+	
 
 
 **Values:**

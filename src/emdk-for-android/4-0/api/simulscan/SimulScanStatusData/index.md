@@ -10,8 +10,10 @@ SimulScanStatusData class provides access to reader status.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SimulScanStatusData.getState();
+	
 
 
 ##Constructors

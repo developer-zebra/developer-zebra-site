@@ -10,8 +10,10 @@ StatusData class provides access to scanner status.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	statusData.getState();
+	
 
 
 ##Public Methods

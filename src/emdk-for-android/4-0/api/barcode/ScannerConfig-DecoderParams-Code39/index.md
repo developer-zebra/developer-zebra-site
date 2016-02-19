@@ -17,8 +17,10 @@ Use to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.length1 = 0;
+	
 
 
 **Type:**
@@ -33,8 +35,10 @@ Use to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.length2 = 55;
+	
 
 
 **Type:**
@@ -53,8 +57,10 @@ Enable this feature to check the integrity of all Code 39 symbols
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.verifyCheckDigit = false;
+	
 
 
 **Type:**
@@ -69,8 +75,10 @@ Transmit Code 39 data with or without the check digit.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.reportCheckDigit = true;
+	
 
 
 **Type:**
@@ -86,8 +94,10 @@ Code 39 Full ASCII is a variant of Code 39 that pairs characters
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.fullAscii = true;
+	
 
 
 **Type:**
@@ -102,8 +112,10 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.redundancy = true;
+	
 
 
 **Type:**
@@ -119,8 +131,10 @@ Code 32 is a variant of Code 39 used by the Italian
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.convertToCode32 = true;
+	
 
 
 **Type:**
@@ -136,8 +150,10 @@ Scan the appropriate bar code to enable or disable adding the
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.reportCode32Prefix = true;
+	
 
 
 **Type:**
@@ -147,14 +163,16 @@ boolean
 ###securityLevel
 
 Options: Security level 0 , Security Level 1 , Security Level 2
- and Security Level 3. Use enum [ScannerConfig-SecurityLevel](../ScannerConfig-SecurityLevel).
+ and Security Level 3. Use enum [ ScannerConfig.SecurityLevel](../ScannerConfig-SecurityLevel).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code39.securityLevel = SecurityLevel.LEVEL_1;
+	
 
 
 **Type:**

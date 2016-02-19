@@ -31,8 +31,10 @@ This method used to obtain the scanned result.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ScannerResults results = scanDataCollection.getResult();
+	
 
 
 **Returns:**
@@ -49,8 +51,10 @@ This method is used to obtain the scanned data list.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ArrayList<ScanData> scanDataList = scanDataCollection.getScanData()
+	
 
 
 **Returns:**

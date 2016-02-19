@@ -10,8 +10,10 @@ Describes the type of aiming to use.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	AIM_TYPE.CONTINUOUS_READ;
+	
 
 
 **Values:**

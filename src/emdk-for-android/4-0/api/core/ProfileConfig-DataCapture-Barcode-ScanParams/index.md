@@ -10,8 +10,10 @@ Holds scanning configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ScanParams scanParams = profileConfig.dataCapture.barcode.scanParams;
+	
 
 
 ##Public Fields
@@ -20,14 +22,16 @@ Holds scanning configuration settings.
 
 A Code ID character identifies the code type of a scanned bar code. 
  This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol. 
- Use enum [ProfileConfig-CODE_ID_TYPE](../ProfileConfig-CODE_ID_TYPE).
+ Use enum [ ProfileConfig.CODE_ID_TYPE](../ProfileConfig-CODE_ID_TYPE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.code_id_type = CODE_ID_TYPE.DEFAULT;
+	
 
 
 **Type:**
@@ -37,14 +41,16 @@ com.symbol.emdk.ProfileConfig.CODE_ID_TYPE
 ###volume_slider_type
 
 Defines the notification type for a good decode. 
- Use enum [ProfileConfig-VOLUME_SLIDER_TYPE](../ProfileConfig-VOLUME_SLIDER_TYPE).
+ Use enum [ ProfileConfig.VOLUME_SLIDER_TYPE](../ProfileConfig-VOLUME_SLIDER_TYPE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.volume_slider_type = VOLUME_SLIDER_TYPE.DEFAULT;
+	
 
 
 **Type:**
@@ -63,8 +69,10 @@ Select an audio tone to sound upon a good decode.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String audioFeedback = scanParams.decode_audio_feedback_uri;
+	
 
 
 **Type:**
@@ -73,14 +81,16 @@ java.lang.String
 
 ###decode_haptic_feedback
 
-Enable the device to vibrate upon a good decode (default - enabled). Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+Enable the device to vibrate upon a good decode (default - enabled). Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.decode_haptic_feedback = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -95,8 +105,10 @@ Time for which Good Decode LED Notification Runs in milliseconds.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int ledTimer = scanParams.good_decode_led_timer;
+	
 
 
 **Type:**
@@ -105,14 +117,16 @@ int
 
 ###decoding_led_feedback
 
-Enable the device to blink LED upon a good decode (default - disabled). Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+Enable the device to blink LED upon a good decode (default - disabled). Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.decoding_led_feedback = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -121,14 +135,16 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 ###bt_disconnect_on_exit
 
-Bluetooth disconnect on exit. Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+Bluetooth disconnect on exit. Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.bt_disconnect_on_exit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -145,8 +161,10 @@ If a bluetooth scanner associated application is opened, Bluetooth
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.connection_idle_time = 500;
+	
 
 
 **Type:**
@@ -157,14 +175,16 @@ int
 
 If this value is set to true, the Bluetooth Pairing Utility
  Application will be opened when the enable method is called.
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.display_bt_address_barcode = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -180,8 +200,10 @@ Timout in seconds that enable method will block before returning
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanParams.establish_connection_time = 50;
+	
 
 
 **Type:**
@@ -196,8 +218,10 @@ Data Capture LED ID
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int led = scanParams.datacapture_led_id;
+	
 
 
 **Type:**

@@ -48,7 +48,7 @@ com.symbol.emdk.scanandpair.ScanAndPairConfig.BluetoothInfo
 Specifies the notification related information. When using the ScanAndPair() and ScanAndUnPair() methods,
  notifications can be provided to the user to indicate the progress of the operation. This object provides 
  access to the settings for the notifications. The default value for NotificationType is BEEPER. 
- For more information on notifications refer to the [NotificationType](../NotificationType) class.
+ For more information on notifications refer to the [ ScanAndPairConfig.NotificationType](../ScanAndPairConfig-NotificationType) class.
 
 **Type:**
 

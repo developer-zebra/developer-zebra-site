@@ -10,8 +10,10 @@ Holds EAN8 configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	EAN8 ean8 = profileConfig.dataCapture.barcode.decoderParams.ean8;
+	
 
 
 ##Public Fields
@@ -19,14 +21,16 @@ Holds EAN8 configuration settings.
 ###convert_to_ean13
 
 Convert EAN8 data to EAN 13. (default - disabled).
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ean8.convert_to_ean13 = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

@@ -10,8 +10,10 @@ List of supported Payment device types.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DeviceType.PD40;
+	
 
 
 **Values:**

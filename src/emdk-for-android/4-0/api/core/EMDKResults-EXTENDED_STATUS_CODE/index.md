@@ -10,8 +10,10 @@ Defines all the extended status codes the library returns.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	results.extendedStatusInfo.extendedStatusCode;
+	
 
 
 **Values:**

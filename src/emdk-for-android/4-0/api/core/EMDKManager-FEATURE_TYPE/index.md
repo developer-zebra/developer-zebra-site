@@ -10,8 +10,10 @@ This lists all the features exposed by the EMDK.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	FEATURE_TYPE.PROFILE
+	
 
 
 **Values:**

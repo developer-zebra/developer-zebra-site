@@ -10,8 +10,10 @@ ScannerInfo provides information of the scanner device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanneInfo.getFriendlyName();
+	
 
 
 ##Public Methods
@@ -36,8 +38,10 @@ Returns the friendly name of the Device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String name = scanneInfo.getFriendlyName();
+	
 
 
 **Returns:**
@@ -55,8 +59,10 @@ Returns the scanner device model number. This information will be available only
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String model = scanneInfo.getModel();
+	
 
 
 **Returns:**
@@ -73,8 +79,10 @@ Returns the scanner device type
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DeviceType deviceType = scanneInfo.getDeviceType();
+	
 
 
 **Returns:**
@@ -91,8 +99,10 @@ Returns the scanner connection type to mobile computer
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ConnectionType deviceType = scanneInfo.getConnectionType();
+	
 
 
 **Returns:**
@@ -110,8 +120,10 @@ Returns the barcode scanning type supported by scanner.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DecoderType decoderType = scannerInfo.getScannerInfo().getDecoderType();
+	
 
 
 **Returns:**

@@ -10,8 +10,10 @@ Holds Code93 configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Code93 code93 = profileConfig.dataCapture.barcode.decoderParams.code93;
+	
 
 
 ##Public Fields
@@ -24,8 +26,10 @@ Use to set decode lengths (default - 0).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length1 = code93.length1;
+	
 
 
 **Type:**
@@ -40,8 +44,10 @@ Use to set decode lengths (default - 55).
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length2 = code93.length2;
+	
 
 
 **Type:**
@@ -51,14 +57,16 @@ int
 ###redundancy
 
 Sets the reader to read the bar code twice before accepting data (default - disabled). 
- Use enum [ProfileConfig-ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code93.redundancy = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**

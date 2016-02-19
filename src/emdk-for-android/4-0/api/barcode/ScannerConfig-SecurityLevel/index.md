@@ -13,8 +13,10 @@ The scanner offers four levels of decode security for UPC/EAN bar codes.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SecurityLevel.LEVEL_0;
+	
 
 
 **Values:**

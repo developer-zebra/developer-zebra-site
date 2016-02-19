@@ -10,7 +10,8 @@ This is the primary object to access the payment feature.
 
 **Example Usage:**
 	
-	:::java	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
+	:::java
+	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
 	
 	//After EMDK opened
 	paymentManager = (PaymentManager)this.emdkManager.getInstance(FEATURE_TYPE.PAYMENT);
@@ -23,6 +24,7 @@ This is the primary object to access the payment feature.
 	paymentDevice.disable();
 	
 	EMDKManager.release(FEATURE_TYPE.PAYMENT);
+	
 	
 	
 

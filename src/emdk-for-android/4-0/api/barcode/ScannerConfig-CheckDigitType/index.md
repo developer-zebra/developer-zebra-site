@@ -10,8 +10,10 @@ Verify data integrity.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	CheckDigitType.NO;
+	
 
 
 **Values:**

@@ -10,8 +10,10 @@ Describes the UCC link mode state.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	UCCLinkMode.LINK_FLAG_IGNORED;
+	
 
 
 **Values:**

@@ -11,8 +11,10 @@ Keystroke Output Action key character enables decoding of a special character em
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ACTION_KEY_CHAR.NONE;
+	
 
 
 **Values:**

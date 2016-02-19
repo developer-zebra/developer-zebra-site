@@ -10,8 +10,10 @@ Supported Coupon modes
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	CouponReport.OLD;
+	
 
 
 **Values:**

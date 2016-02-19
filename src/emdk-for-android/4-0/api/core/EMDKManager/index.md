@@ -13,8 +13,10 @@ The EMDKManager class is the key class in Android EMDK. This class provides acce
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), emdkListener);
+	
 
 
 ##Public Methods
@@ -24,7 +26,7 @@ The EMDKManager class is the key class in Android EMDK. This class provides acce
 **public EMDKResults getEMDKManager(Context context, EMDKManager.EMDKListener emdkListener)**
 
 This is static method and it is the key function to get the EMDKManager object.
- Clients must implement [EMDKManager-EMDKListener](../EMDKManager-EMDKListener) to get notified of the EMDK manager status and to get the EMDKManager object.
+ Clients must implement [ EMDKManager.EMDKListener](../EMDKManager-EMDKListener) to get notified of the EMDK manager status and to get the EMDKManager object.
 
 **Parameters:**
 
@@ -41,18 +43,20 @@ com.symbol.emdk.EMDKResults
 **public EMDKBase getInstance(EMDKManager.FEATURE_TYPE featureType)**
 
 This method returns an object instance which has derived from EMDKBase. Based on the type given, the object needs to be type-casted before used.
- Calling this method [EMDKManager-getInstance(EMDKManager-FEATURE_TYPE)](../EMDKManager-getInstance(EMDKManager-FEATURE_TYPE)) before EMDKManager opened will return null. 
+ Calling this method before EMDKManager opened will return null. 
  
 
 **Example Usage:**
 	
-	:::java	ProfileManager mProfileManager = (ProfileManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.PROFILE);
+	:::java
+	ProfileManager mProfileManager = (ProfileManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.PROFILE);
 	VersionManager mVersionManager = (VersionManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.VERSION);
+	
 
 
 **Parameters:**
 
-`featureType` - The [EMDKManager-FEATURE_TYPE](../EMDKManager-FEATURE_TYPE) the object to be created.
+`featureType` - The [ EMDKManager.FEATURE_TYPE](../EMDKManager-FEATURE_TYPE) the object to be created.
 
 **Returns:**
 
@@ -65,24 +69,16 @@ com.symbol.emdk.EMDKBase
 This method is an asynchronous call and requests object instance for the specified feature type and object
  is returned through the status listener callback when the feature is initialized and ready to use. 
  Ex:The Profile Manager related components will take few seconds to initialize for it to be used after device booted.
- If the application tries to use the [EMDKManager#getInstance](../EMDKManager#getInstance) to get the profile manager object and
+ If the application tries to use the [ EMDKManager.getInstance](../EMDKManager#getinstance) to get the profile manager object and
  sets the profile during the device boot will result in error because the underlying Profile manager is not ready. 
  
  
 
-**Example Usage:**
-	
-	:::java	try {
-	
-	emdkManager.getInstanceAsync(EMDKManager.FEATURE_TYPE.PROFILE, statusListener);
-	
-
-
 **Parameters:**
 
-`featureType` - The [EMDKManager-FEATURE_TYPE](../EMDKManager-FEATURE_TYPE) the object to be created.
+`featureType` - The [ EMDKManager.FEATURE_TYPE](../EMDKManager-FEATURE_TYPE) the object to be created.
 
-`statusListener` - The callback will returned on [EMDKManager-StatusListener](../EMDKManager-StatusListener) when the feature is ready to use.
+`statusListener` - The callback will returned on [ EMDKManager.StatusListener](../EMDKManager-StatusListener) when the feature is ready to use.
 
 **Returns:**
 
@@ -105,8 +101,10 @@ This method releases all the resources constructed by EMDKManager. EMDKManager c
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	emdkManager.release();
+	
 
 
 **Returns:**
@@ -123,13 +121,15 @@ This method releases resources of a given manager type. Instance variable is not
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	emdkManager.release(EMDKManager.FEATURE_TYPE.PROFILE);
+	
 
 
 **Parameters:**
 
-`featureType` - Type of [EMDKManager-FEATURE_TYPE](../EMDKManager-FEATURE_TYPE) to be released. Only the given feature related manager will be cleared if it has been constructed.
+`featureType` - Type of [ EMDKManager.FEATURE_TYPE](../EMDKManager-FEATURE_TYPE) to be released. Only the given feature related manager will be cleared if it has been constructed.
 
 **Returns:**
 

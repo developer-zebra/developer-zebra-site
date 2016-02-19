@@ -12,7 +12,8 @@ Provides access to MIFARE SAM properties and I/O operations on an SAM object.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	
 	public class MainActivity extends Activity implements EMDKListener {
@@ -71,6 +72,7 @@ Provides access to MIFARE SAM properties and I/O operations on an SAM object.
 	}
 	
 	}
+	
 	
 
 

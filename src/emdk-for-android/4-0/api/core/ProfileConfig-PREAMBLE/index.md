@@ -12,8 +12,10 @@ Controls the preamble applied to the bar code
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	PREAMBLE.DEFAULT;
+	
 
 
 **Values:**

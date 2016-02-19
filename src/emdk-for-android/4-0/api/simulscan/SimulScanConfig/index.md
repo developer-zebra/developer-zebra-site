@@ -10,13 +10,15 @@ The SimulScanConfig class provides access to reader configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SimulScanMultiTemplate template1 = new SimulScanMultiTemplate(fileUri);//fileUri points to the template
 	SimulScanReader reader = simulscanManager.getDevice(template1.deviceIdentifier);
 	reader.enable();
 	SimulScanConfig config = reader.getConfig(); // Reader object must be enabled before calling getConfig
 	config.audioFeedback = false;
 	reader.setConfig(config); // Reader object must be enabled and not scanning when calling setConfig
+	
 
 
 ##Public Fields

@@ -10,8 +10,10 @@ This class handles all the profile related functions.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	private ProfileManager profileManager = (ProfileManager) EMDKManager.getInstance(EMDKManager.FEATURE_TYPE.PROFILE);
+	
 
 
 ##Public Methods
@@ -61,13 +63,14 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 	DocumentBuilder db = dbf.newDocumentBuilder();
 	Document extraData;
 	extraData = db.newDocument();
 	profileManager.processProfile("Profile1", PROFILE_FLAG.GET, extraData);
-	}
+	
 
 
 **Parameters:**
@@ -78,7 +81,7 @@ Processes the given profile based on the data provided and the flag and return s
  <li>Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP.</li>
  </ul>
 
-`profileFlag` - [ProfileManager-PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
+`profileFlag` - [ ProfileManager.PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
  
  If the profileFlag is set to SET, and if the given profile is not available in 
  the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile 
@@ -104,8 +107,10 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileManager.processProfile("Profile1", PROFILE_FLAG.GET, new String[]{""});
+	
 
 
 **Parameters:**
@@ -116,7 +121,7 @@ Processes the given profile based on the data provided and the flag and return s
  <li>Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP, Clock, PowerMgr, PersistMgr, CertMgr, AppMgr, AccessMgr, Wi-Fi, GprsMgr</li>
  </ul>
 
-`profileFlag` - [ProfileManager-PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
+`profileFlag` - [ ProfileManager.PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
  
  If the profileFlag is set to SET, and if the given profile is not available in 
  the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile 
@@ -142,8 +147,10 @@ Processes the given profile based on the data provided and the flag and return s
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	profileManager.processProfile("Profile1", PROFILE_FLAG.GET, ???);
+	
 
 
 **Parameters:**
@@ -154,7 +161,7 @@ Processes the given profile based on the data provided and the flag and return s
  <li>Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP</li>
  </ul>
 
-`profileFlag` - [ProfileManager-PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
+`profileFlag` - [ ProfileManager.PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
  
  If the profileFlag is set to SET, and if the given profile is not available in 
  the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile 
@@ -164,7 +171,7 @@ Processes the given profile based on the data provided and the flag and return s
  If profileFlag is set to GET and if the profile is present in the internal repository, it will be 
  returned in extraData.
 
-`extraData` - [ProfileConfig](../ProfileConfig) This can be used to provide data for processing action. This parameter is only supported for DataCapture profile features.
+`extraData` - [ ProfileConfig](../ProfileConfig) This can be used to provide data for processing action. This parameter is only supported for DataCapture profile features.
 
 **Returns:**
 
@@ -183,7 +190,7 @@ Processes the given profile based on the data provided and the flag and return s
 
 `profileName` - Name of the profile.
 
-`profileFlag` - [ProfileManager-PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
+`profileFlag` - [ ProfileManager.PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
  
  If the profileFlag is set to SET, and if the given profile is not available in 
  the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile 
@@ -213,7 +220,7 @@ Processes the given profile based on the data provided and the flag and return s
 
 `profileName` - Name of the profile.
 
-`profileFlag` - [ProfileManager-PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
+`profileFlag` - [ ProfileManager.PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
  
  If the profileFlag is set to SET, and if the given profile is not available in 
  the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile 
@@ -242,7 +249,7 @@ Processes the given profile based on the data provided and the flag and return s
 
 `profileName` - Name of the profile.
 
-`profileFlag` - [ProfileManager-PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
+`profileFlag` - [ ProfileManager.PROFILE_FLAG](../ProfileManager-PROFILE_FLAG) <br><br>
  
  If the profileFlag is set to SET, and if the given profile is not available in 
  the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile 
@@ -252,7 +259,7 @@ Processes the given profile based on the data provided and the flag and return s
  If profileFlag is set to GET and if the profile is present in the internal repository, it will be 
  returned via data listener callback..
 
-`extraData` - [ProfileConfig](../ProfileConfig) This can be used to provide data for processing action. This parameter is only supported for DataCapture profile features.
+`extraData` - [ ProfileConfig](../ProfileConfig) This can be used to provide data for processing action. This parameter is only supported for DataCapture profile features.
 
 **Returns:**
 

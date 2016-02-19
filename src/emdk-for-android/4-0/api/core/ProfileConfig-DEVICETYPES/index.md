@@ -10,8 +10,10 @@ List of supported scanner device types
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DEVICETYPES.INTERNAL_LASER1;
+	
 
 
 **Values:**

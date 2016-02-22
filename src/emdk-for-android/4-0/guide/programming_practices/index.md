@@ -5,7 +5,7 @@ title:  EMDK for Android Programming Practices
 
 ##Creating a common Application to run on Zebra and Non-Zebra devices
 
-For those who want to write a common application that is capable of running on both Zebra dn Non-Zebra devices, care must be taken to use the EMDK components only on the Zebra devices as described below:  
+For those who want to write a common application that is capable of running on both Zebra and Non-Zebra devices, care must be taken to use the EMDK components only on the Zebra devices as described below:  
 
 1.	The common app containing the EMDK components will not install on a non-Zebra device and will result in the error “Installation error: INSTALL\_FAILED\_MISSING\_SHARED\_LIBRARY”. 
 
@@ -79,14 +79,14 @@ For those who want to write a common application that is capable of running on b
 
 ##EMDK Manager opening and closing 
 
-The application must call EMDKManager.getEMDKManager to use EMDK. It is recommended to call this method in the onCreate method to avoid the delay at a later stage.  EMDKManager will call the interface EMDKListener.onOpened when the EMDK is ready to use and this callback will be called on main thread only; therefore the application must not block the Main thread to receive EMDKListener.onOpened callback.
+The application must call EMDKManager.getEMDKManager to use the EMDK. It is recommended to call this method in the onCreate method to avoid a delay at a later stage.  EMDKManager will call the interface EMDKListener.onOpened when the EMDK is ready to use and this callback will be called on main thread only; therefore the application must not block the Main thread to receive EMDKListener.onOpened callback.
 
 The application must call the EMDKManager.release() in the below scenarios:
 
 1.	On application exit.
 2.	On EMDKListener.onClosed callback. 
 
-The EMDKListener.onClosed gets called to notify the application that the EMDKManager object has been abruptly closed due to some failures at EMDK or at the lower layer. When this occurs, the application must the release the current EMDK manager instance  and get the new EMDK Manager instance 
+The EMDKListener.onClosed gets called to notify the application that the EMDKManager object has been abruptly closed due to some failures at EMDK or a lower layer. When this occurs, the application must the release the current EMDK manager instance and get the new EMDK Manager instance 
 
 ###Refer the below code snippets for EMDKManager opening and closing
 
@@ -130,7 +130,7 @@ The EMDKListener.onClosed gets called to notify the application that the EMDKMan
 
 ##Checking EMDK Version on Device
 
-Zebra Technologies Mobile Devices running KitKat OS will have the EMDK device runtime built-in, but devices running Jelly Bean OS will not have the EMDK device runtime built-in.  The EMDK version on the device can be checked either by manually or programmatically.
+Zebra Technologies Mobile Devices running the KitKat Android OS will have the EMDK device runtime built-in, but devices running Jelly Bean Android OS will not have the EMDK device runtime built-in.  The EMDK version on the device can be checked either by manually or programmatically.
 
 ###Manual Steps
 Goto Settings > Apps > All > EMDK Service. Click on EMDK Service icon to see the version.

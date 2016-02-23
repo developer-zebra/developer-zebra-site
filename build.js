@@ -398,7 +398,7 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'stagenow/2-2/'
     }))
-    .use(showdown({}))
+    .use(showdown({literalMidWordUnderscores:true}))
     .use(snippet({
       maxLength: 250,
       suffix: '...'

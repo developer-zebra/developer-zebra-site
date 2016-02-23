@@ -1,6 +1,8 @@
 ---
 title: SimulScanData
+type: api
 ---
+
 
 The SimulScanData object gives scanning result
  
@@ -8,7 +10,8 @@ The SimulScanData object gives scanning result
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public void onSimulScanData(SimulScanData simulscanData) {
 	Date timestamp = new Date(simulscanData.getTimestamp());
 	List<SimulScanElement> simulscanDataElements = simulscanData.getElements();
@@ -24,6 +27,8 @@ The SimulScanData object gives scanning result
 	}
 	}
 	}
+	}
+	
 
 
 ##Constructors
@@ -68,5 +73,4 @@ Returns a list of scanned elements.
 **Returns:**
 
 java.util.List - Returns a List object of SimulScanElement objects
-
 

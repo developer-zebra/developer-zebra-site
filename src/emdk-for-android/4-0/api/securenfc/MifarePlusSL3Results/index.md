@@ -1,6 +1,8 @@
 ---
 title: MifarePlusSL3Results
+type: api
 ---
+
 
 
 
@@ -49,5 +51,4 @@ title: MifarePlusSL3Results
 * **PARAM_NOT_SUPPORTED** -The parameter not supported.
 
 * **UNDEFINED** -Undefined
-
 

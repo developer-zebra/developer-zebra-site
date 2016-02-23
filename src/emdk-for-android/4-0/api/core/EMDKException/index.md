@@ -1,6 +1,8 @@
 ---
 title: EMDKException
+type: api
 ---
+
 
 The methods of EMDKManager object throws EMDKException when an error
  occurs. The error could be due to:
@@ -19,5 +21,4 @@ Returns the result.
 **Returns:**
 
 com.symbol.emdk.EMDKResults.STATUS_CODE
-
 

@@ -1,6 +1,8 @@
 ---
 title: CardData
+type: api
 ---
+
 
 The card data class holds the card information.
 
@@ -166,5 +168,4 @@ Returns the type of encoding that was found on the card.
 **Returns:**
 
 com.symbol.emdk.payment.PaymentDevice.CardEncodeType - Returns Card Encoding Type.
-
 

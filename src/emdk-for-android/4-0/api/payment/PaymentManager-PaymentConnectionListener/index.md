@@ -1,6 +1,8 @@
 ---
 title: PaymentManager.PaymentConnectionListener
+type: api
 ---
+
 
 An interface for notifying client applications when the external payment device
  is connected or disconnected to the mobile device.
@@ -9,9 +11,11 @@ An interface for notifying client applications when the external payment device
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements PaymentConnectionListener
 	// .. .. ..
+	
 	
 
 
@@ -33,5 +37,4 @@ Called to notify the client when the payment device has been connected or discon
 **Returns:**
 
 void
-
 

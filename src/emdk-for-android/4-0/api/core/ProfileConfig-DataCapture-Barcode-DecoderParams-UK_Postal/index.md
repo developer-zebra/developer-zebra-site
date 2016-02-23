@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.UK_Postal
+type: api
 ---
+
 
 Holds UK Postal configuration settings. 
  
@@ -8,8 +10,10 @@ Holds UK Postal configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	UK_Postal ukPostal = profileConfig.dataCapture.barcode.decoderParams.uk_Postal;
+	
 
 
 ##Public Fields
@@ -17,18 +21,19 @@ Holds UK Postal configuration settings.
 ###report_check_digit
 
 Transmit UK Postal data with or without the check digit (default - disabled).
- Use enum  ProfileConfig.ENABLED_STATE. 
+ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE). 
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ukPostal.report_check_digit = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

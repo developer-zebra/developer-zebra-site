@@ -1,6 +1,8 @@
 ---
 title: Scanner.DataListener
+type: api
 ---
+
 
 An interface for notifying client applications when the scan data is
  available.
@@ -9,9 +11,11 @@ An interface for notifying client applications when the scan data is
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements DataListener
 	.. .. ..
+	
 	
 
 
@@ -30,5 +34,4 @@ This is the callback method upon data availability.
 **Returns:**
 
 void
-
 

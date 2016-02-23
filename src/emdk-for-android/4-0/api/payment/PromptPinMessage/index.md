@@ -1,6 +1,8 @@
 ---
 title: PromptPinMessage
+type: api
 ---
+
 
 The PromptPinMessage class provides option configure the messages displayed while reading the PIN on payment device.
 
@@ -27,5 +29,4 @@ Message title to display for PIN entry. .
 **Type:**
 
 java.lang.String
-
 

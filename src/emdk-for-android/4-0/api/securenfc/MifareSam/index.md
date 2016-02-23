@@ -1,6 +1,8 @@
 ---
 title: MifareSam
+type: api
 ---
+
 
 Provides access to MIFARE SAM properties and I/O operations on an SAM object.
  This class encapsulates all the methods required for authenticating the host
@@ -10,7 +12,8 @@ Provides access to MIFARE SAM properties and I/O operations on an SAM object.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	
 	public class MainActivity extends Activity implements EMDKListener {
@@ -69,6 +72,7 @@ Provides access to MIFARE SAM properties and I/O operations on an SAM object.
 	}
 	
 	}
+	
 	
 
 
@@ -167,31 +171,4 @@ The exception will be thrown if it fails to close the
 **Type:**
 
 java.lang.String
-
-##Public Enums
-
-###MifareSam.ProtectionMode
-
-Protection mode
-
-**Values:**
-
-* **PLAIN** -No protection
-
-* **MAC** -MAC protection. Not Supported.
-
-* **FULL** -Full protection (MACing and encryption). Not Supported.
-
-###MifareSam.SamMode
-
-SAM modes
-
-**Values:**
-
-* **AV1** -MIFARE SAM is in AV1 mode
-
-* **AV2** -MIFARE SAM is in AV2 mode
-
-* **UNDEFINED** -MIFARE SAM is in invalid mode
-
 

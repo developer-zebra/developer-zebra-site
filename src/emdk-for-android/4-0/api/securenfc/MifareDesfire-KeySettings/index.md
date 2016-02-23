@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire.KeySettings
+type: api
 ---
+
 
 
 
@@ -21,5 +23,4 @@ Application key settings
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.AppKeySettings
-
 

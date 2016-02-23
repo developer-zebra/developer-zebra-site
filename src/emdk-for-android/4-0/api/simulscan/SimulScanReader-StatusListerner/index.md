@@ -1,6 +1,8 @@
 ---
 title: SimulScanReader.StatusListerner
+type: api
 ---
+
 
 An interface for notifying client applications to notify scan events.
  
@@ -8,9 +10,11 @@ An interface for notifying client applications to notify scan events.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements StatusListerner
 	.. .. ..
+	
 	
 
 
@@ -29,5 +33,4 @@ This is the callback method upon scan status event occurs.
 **Returns:**
 
 void
-
 

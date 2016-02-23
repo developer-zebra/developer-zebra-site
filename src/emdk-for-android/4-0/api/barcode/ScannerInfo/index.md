@@ -1,6 +1,8 @@
 ---
 title: ScannerInfo
+type: api
 ---
+
 
 ScannerInfo provides information of the scanner device.
  
@@ -8,8 +10,10 @@ ScannerInfo provides information of the scanner device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	scanneInfo.getFriendlyName();
+	
 
 
 ##Public Methods
@@ -34,8 +38,10 @@ Returns the friendly name of the Device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String name = scanneInfo.getFriendlyName();
+	
 
 
 **Returns:**
@@ -53,8 +59,10 @@ Returns the scanner device model number. This information will be available only
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String model = scanneInfo.getModel();
+	
 
 
 **Returns:**
@@ -71,8 +79,10 @@ Returns the scanner device type
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DeviceType deviceType = scanneInfo.getDeviceType();
+	
 
 
 **Returns:**
@@ -89,8 +99,10 @@ Returns the scanner connection type to mobile computer
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ConnectionType deviceType = scanneInfo.getConnectionType();
+	
 
 
 **Returns:**
@@ -108,8 +120,10 @@ Returns the barcode scanning type supported by scanner.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	DecoderType decoderType = scannerInfo.getScannerInfo().getDecoderType();
+	
 
 
 **Returns:**
@@ -125,73 +139,4 @@ com.symbol.emdk.barcode.ScannerInfo.DecoderType - Returns the DECODER_TYPE
 **Returns:**
 
 boolean
-
-##Public Enums
-
-###ScannerInfo.DeviceType
-
-List of supported scanner device types.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	DeviceType.LASER;
-
-
-**Values:**
-
-* **CAMERA** -The Scanner device class is camera.
-
-* **IMAGER** -The scanner device class is imager.
-
-* **LASER** -The scanner device class is laser.
-
-* **UNDEFINED** -The scanner device class is not defined.
-
-###ScannerInfo.ConnectionType
-
-List of supported scanner connection types.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	ConnectionType.INTERNAL;
-
-
-**Values:**
-
-* **INTERNAL** -The scanner device connected internally within the mobile device.
-
-* **BLUETOOTH_SSI** -The scanner device connected via Bluetooth to the mobile device.
-
-* **SERIAL_SSI** -The scanner device connected via serial SSI to the mobile device.
-
-* **USB** -The scanner device connected via USB to the mobile device.
-
-* **UNDEFINED** -Connection type is not defined.
-
-###ScannerInfo.DecoderType
-
-This lists all the barcode types supported by scanners
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	DecoderType.ONE_DIMENSIONAL
-
-
-**Values:**
-
-* **ONE_DIMENSIONAL** -Barcode scanning is 1-D only.
-
-* **TWO_DIMENSIONAL** -Barcode scanning is 2-D. This supports both 1-D and 2-D barcode scanning.
-
-* **UNDEFINED** -Decoder type not defined.
-
 

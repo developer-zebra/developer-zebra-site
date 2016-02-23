@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire
+type: api
 ---
+
 
 Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
  Tag object. This class encapsulates all the methods required for
@@ -11,7 +13,8 @@ Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	public class MainActivity  extends Activity implements EMDKListener {
 	
@@ -20,54 +23,77 @@ Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
 	SamType samType;
 	MifareDesfire mifaredesfire;
 	MifareSam mifareSam;
-	
 	protected void onCreate(Bundle savedInstanceState) {
-	
 	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
 	}
-	
 	public void onOpened(EMDKManager emdkManager) {
-	
 	this.emdkManager = emdkManager;
-	
 	this.secureNfcManager = (secureNfcManager)
 	this.emdkManager.getInstance(FEATURE_TYPE.SECURENFC);
-	
-	if(this.secureNfcManager != null){
-	
-	try{
-	
+	if (this.secureNfcManager != null) {
+	try {
 	samType = secureNfcManager.getAvailableSam();
-	
 	} catch (SecureNfcException e) {
-	
 	e.printStackTrace();
 	}
-	
 	if (samType.equals(SamType.MIFARE)) {
-	
 	mifareSam = (MifareSam) secureNfcMgr.getSamInstance(samType);
-	
 	}
-	
-	if(mifareSam != null){
-	
+	if (mifareSam != null) {
 	try {
 	SamMode samMode = mifareSam.connect();
-	
 	SamKey samKey = new SamKey();
 	samKey.keyNum = 0x00;
 	samKey.keyVer = 0x00;
-	
-	mifareSam.authenticateSam(authKey, samKey,null);
-	
+	mifareSam.authenticateSam(authKey, samKey, null);
 	mifareSam.close();
-	
 	} catch (MifareSamException e) {
 	e.printStackTrace();
 	}
 	}
 	}
+	}
+	public void onNewIntent(Intent intent) {
+	if (intent != null)
+	tagDetection(intent);
+	}
+	private void tagDetection(Intent intent) {
+	if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction()) || NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction()) || NfcAdapter.ACTION_TECH_DISCOVERED.equals(intent.getAction())) {
+	lTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+	try {
+	TagTechType tagType = secureNfcMgr.getTagTechType(lTag);
+	if (tagType.equals(TagTechType.MIFARE_DESFIRE)) {
+	mifareDesfire = (MifareDesfire) secureNfcMgr.getTagTechInstance(tagType);
+	try {
+	if (!mifareDesfire.isEnabled()) {
+	mifareDesfire.enable(lTag);
+	}
+	} catch (MifareDesfireExpection e) {
+	e.printStackTrace();
+	}
+	}
+	} catch (SecureNfcException e) {
+	e.printStackTrace();
+	}
+	}
+	}
+	public void onDestroy() {
+	if (mifareDesfire != null) {
+	try {
+	mifareDesfire.disable();
+	} catch (MifareDesfireExpection e) {
+	e.printStackTrace();
+	}
+	}
+	if (this.emdkManager != null)
+	this.emdkManager.release();
+	}
+	public void onClosed() {
+	this.emdkManager.release();
+	}
+	}
+	}
+	
 
 
 ##Public Methods
@@ -185,7 +211,8 @@ The exception will be thrown if it fails to retrieves current
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -219,7 +246,8 @@ The exception will be thrown if it fails to retrieves AIDs of
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	int[] getAppIDs =  mifareDesfire.getApplicationIDs();
 	
@@ -268,7 +296,8 @@ The exception will be thrown if it fails to retrieves the ISO
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	DFNames dfnames[] = mifareDesfire.getDFNames();
 	
@@ -299,7 +328,8 @@ The exception will be thrown if it fails to retrieves master
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -374,7 +404,8 @@ Retrieves native file IDs or ISO 7816-4 file IDs of active files within
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	
 	mifareDesfire.selectApplication(APP_ID);
@@ -425,7 +456,8 @@ The exception will be thrown if it fails to retrieves file
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -477,7 +509,8 @@ The exception will be thrown if it fails to read the data
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -789,71 +822,4 @@ boolean - true : if connection with the tag is enabled false : if the
 com.symbol.emdk.securenfc.MifareDesfireExpection
 
 The exception will be thrown if the emdk is not opened.
-
-##Public Enums
-
-###MifareDesfire.FileCommMode
-
-File Communication Mode. Value PLAIN and Enchipered is supported. Value
- MACED is not supported.
-
-**Values:**
-
-* **PLAIN** -Plain communication
-
-* **MACED** -Plain communication secured by MACing. This is not supported.
-
-* **ENCIPHERED** -Fully enciphered communication. This is supported for authentication
- type NATIVE (TDEA-DESFire). It is not supported for authentication
- type ISO & AES.
-
-###MifareDesfire.CreditType
-
-
-
-**Values:**
-
-* **STANDARD** -Standard credit
-
-* **LIMITED** -Limited increase of a value without having full Read&Write
- permissions to the file
-
-###MifareDesfire.FileIDType
-
-
-
-**Values:**
-
-* **NATIVE** -Native file ID: 1 byte long
-
-* **ISO7816** -ISO 7816-4 complaint file ID: 2 byte long
-
-###MifareDesfire.FileType
-
-
-
-**Values:**
-
-* **STANDARD** -Standard data file
-
-* **BACKUP** -Back up data file
-
-* **VALUE** -Value file
-
-* **LINEAR_RECORD** -Linear record file
-
-* **CYCLIC_RECORD** -Cyclic record file
-
-###MifareDesfire.AuthenticateType
-
-Authentication mode.
-
-**Values:**
-
-* **NATIVE** -Authentication Type is Native.
-
-* **ISO** -Authentication Type is ISO. Not supported.
-
-* **AES** -Authentication Type is AES. Not Supported
-
 

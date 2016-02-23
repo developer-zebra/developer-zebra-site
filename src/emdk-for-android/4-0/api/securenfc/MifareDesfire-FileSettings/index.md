@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire.FileSettings
+type: api
 ---
+
 
 
 
@@ -37,5 +39,4 @@ File type specific settings
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.FileTypeSpecificSettings
-
 

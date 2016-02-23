@@ -1,6 +1,8 @@
 ---
 title: PaymentConfig
+type: api
 ---
+
 
 The PaymentConfig class provides access to configure the payment device configurations.
  The PaymentDeviceConfig.getConfig and PaymentDeviceConfig.setConfig must be called to get and set these values.
@@ -74,5 +76,4 @@ French - 1
 **Type:**
 
 int
-
 

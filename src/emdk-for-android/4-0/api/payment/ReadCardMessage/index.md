@@ -1,6 +1,8 @@
 ---
 title: ReadCardMessage
+type: api
 ---
+
 
 The ReadCardMessage class provides option configure the
  messages displayed on the payment device while reading the card data on payment device
@@ -29,5 +31,4 @@ The title message to be displayed on the card data request.
 **Type:**
 
 java.lang.String
-
 

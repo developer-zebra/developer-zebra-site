@@ -1,6 +1,8 @@
 ---
 title: SerialCommException
+type: api
 ---
+
 
 The methods of serial communication object throw a SerialCommException when an error
  occurs.
@@ -21,5 +23,4 @@ Returns the SerialCommResults enum value.
 **Returns:**
 
 com.symbol.emdk.serialcomm.SerialCommResults
-
 

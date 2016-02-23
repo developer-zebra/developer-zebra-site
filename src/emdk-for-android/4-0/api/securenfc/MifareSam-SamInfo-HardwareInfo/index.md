@@ -1,6 +1,8 @@
 ---
 title: MifareSam.SamInfo.HardwareInfo
+type: api
 ---
+
 
 Hardware information
 
@@ -45,5 +47,4 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
-
 

@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code93
+type: api
 ---
+
 
 The Code93 class provides access to parameters that are available for
  the Code93 decoder.
@@ -15,8 +17,10 @@ Use to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	int length1 = 0;
+	
 
 
 **Type:**
@@ -31,8 +35,10 @@ Use to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code93.length2 = 55;
+	
 
 
 **Type:**
@@ -47,12 +53,13 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	code93.redundancy = true;
+	
 
 
 **Type:**
 
 boolean
-
 

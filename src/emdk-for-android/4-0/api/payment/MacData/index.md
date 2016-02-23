@@ -1,6 +1,8 @@
 ---
 title: MacData
+type: api
 ---
+
 
 This class holds MAC block information.
 
@@ -15,5 +17,4 @@ Returns the MacBlock String.
 **Returns:**
 
 java.lang.String
-
 

@@ -1,6 +1,8 @@
 ---
 title: PaymentResults
+type: api
 ---
+
 
 Defines all the error codes the payment API returns.
  <br><br>
@@ -131,5 +133,4 @@ Defines all the error codes the payment API returns.
 * **DEVICE_UPDATE_IN_PROGRESS** -The PD40 Device Upadate is in progress.
 
 * **UNDEFINED** -Error code not defined.
-
 

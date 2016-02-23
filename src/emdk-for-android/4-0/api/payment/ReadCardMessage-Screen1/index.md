@@ -1,6 +1,8 @@
 ---
 title: ReadCardMessage.Screen1
+type: api
 ---
+
 
 
 
@@ -21,5 +23,4 @@ The message to be displayed on read card request in the third line.
 **Type:**
 
 java.lang.String
-
 

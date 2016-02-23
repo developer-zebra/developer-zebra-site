@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Upce0
+type: api
 ---
+
 
 The Upce0 class provides access to parameters that are available for
  the Upce0 decoder.
@@ -32,5 +34,4 @@ Flag to enable conversion from UPCE0 to UPCA bar code. If this
 **Type:**
 
 boolean
-
 

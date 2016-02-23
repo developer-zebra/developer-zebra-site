@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.MSR
+type: api
 ---
+
 
 Holds MSR configuration settings
  
@@ -8,8 +10,10 @@ Holds MSR configuration settings
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	MSR msr = profileConfig.dataCapture.msr;
+	
 
 
 ##Constructors
@@ -22,18 +26,19 @@ Holds MSR configuration settings
 
 ###msr_input_enabled
 
-Gets and Sets MSR enabled configuration enum  ProfileConfig.ENABLED_STATE.
+Gets and Sets MSR enabled configuration enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	msr.msr_input_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
 

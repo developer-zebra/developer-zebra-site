@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.Intent
+type: api
 ---
+
 
 Holds Intent configuration settings.
  
@@ -8,22 +10,26 @@ Holds Intent configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Intent intent = profileConfig.Intent;
+	
 
 
 ##Public Fields
 
 ###output_enabled
 
-Gets and Sets intent ENABLED_STATE configuration enum  ProfileConfig.ENABLED_STATE.
+Gets and Sets intent ENABLED_STATE configuration enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	intent.output_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -38,8 +44,10 @@ Gets and Sets the intent action.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String action = intent.action;
+	
 
 
 **Type:**
@@ -54,8 +62,10 @@ Gets and Sets the intent category.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String category = intent.category;
+	
 
 
 **Type:**
@@ -64,14 +74,16 @@ java.lang.String
 
 ###delivery
 
-Gets and Sets intent INTENT_DELIVERY configuration enum  ProfileConfig.INTENT_DELIVERY.
+Gets and Sets intent INTENT_DELIVERY configuration enum [ ProfileConfig.INTENT_DELIVERY](../ProfileConfig-INTENT_DELIVERY).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	intent.delivery = INTENT_DELIVERY.DEFAULT;
+	
 
 
 **Type:**
@@ -80,18 +92,19 @@ com.symbol.emdk.ProfileConfig.INTENT_DELIVERY
 
 ###basicDataFormatting
 
-Gets and Sets intent INTENT_DELIVERY configuration object  ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting.
+Gets and Sets intent INTENT_DELIVERY configuration object [ ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting](../ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	intent.BasicDataFormatting.bdf_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
-
 

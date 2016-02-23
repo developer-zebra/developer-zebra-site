@@ -1,6 +1,8 @@
 ---
 title: InterfaceConfig
+type: api
 ---
+
 
 
 
@@ -31,5 +33,4 @@ Timeout in seconds that Scanner.enable() will block before returning if an exter
 **Type:**
 
 int
-
 

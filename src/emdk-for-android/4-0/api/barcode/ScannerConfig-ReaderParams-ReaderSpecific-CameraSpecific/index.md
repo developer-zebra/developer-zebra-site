@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific
+type: api
 ---
+
 
 CameraSpecific class provides access to the camera scanner specific parameters.
 
@@ -23,8 +25,10 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.beamTimer = 1500;
+	
 
 
 **Type:**
@@ -34,14 +38,16 @@ int
 ###linearSecurityLevel
 
 Sets the number of times a bar code is read to confirm an accurate decode.
- Use enum  ScannerConfig.LinearSecurityLevel.
+ Use enum [ ScannerConfig.LinearSecurityLevel](../ScannerConfig-LinearSecurityLevel).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.linearSecurityLevel = LinearSecurityLevel.ALL_THRICE;
+	
 
 
 **Type:**
@@ -52,14 +58,16 @@ com.symbol.emdk.barcode.ScannerConfig.LinearSecurityLevel
 
 Turns camera illumination on and off. 
  This option is only available when camera is selected in the Barcode input Scanner selection option.
- Use enum  ScannerConfig.IlluminationMode.
+ Use enum [ ScannerConfig.IlluminationMode](../ScannerConfig-IlluminationMode).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.cameraSpecific.illuminationMode = IlluminationMode.ON;
+	
 
 
 **Type:**
@@ -69,14 +77,16 @@ com.symbol.emdk.barcode.ScannerConfig.IlluminationMode
 ###inverse1DMode
 
 This parameter allows the user to select decoding on inverse 1D bar codes.
- Use enum  ScannerConfig.Inverse1DMode.
+ Use enum [ ScannerConfig.Inverse1DMode](../ScannerConfig-Inverse1DMode).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.cameraSpecific.inverse_1d_mode = Inverse1DMode.AUTO;
+	
 
 
 **Type:**
@@ -86,18 +96,19 @@ com.symbol.emdk.barcode.ScannerConfig.Inverse1DMode
 ###viewfinderMode
 
 Configures the Viewfinder modes supported for camera scanning.
- Use enum  ScannerConfig.ViewFinderMode.
+ Use enum [ ScannerConfig.ViewFinderMode](../ScannerConfig-ViewFinderMode).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	readerParams.cameraSpecific.viewfinder_mode = ViewFinderMode.DISABLED;
+	
 
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ViewFinderMode
-
 

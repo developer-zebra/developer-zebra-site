@@ -1,6 +1,8 @@
 ---
 title: MifareSam.AdditionalAuthData.AV1Mode
+type: api
 ---
+
 
 Data specific to the AV1 Sam Mode. **Future use only, its not
  supported now**
@@ -44,5 +46,4 @@ samDiverseParams Diversification parameters for current key.If
 **Type:**
 
 com.symbol.emdk.securenfc.SamDiverseParams
-
 

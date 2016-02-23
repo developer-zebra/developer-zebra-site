@@ -1,6 +1,8 @@
 ---
 title: MifareSamException
+type: api
 ---
+
 
 The methods of MifareSam object throw a MifareSamException when an error
  occurs.
@@ -21,5 +23,4 @@ Returns the MifareSamResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifareSamResults
-
 

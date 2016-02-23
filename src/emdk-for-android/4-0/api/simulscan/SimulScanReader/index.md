@@ -1,6 +1,8 @@
 ---
 title: SimulScanReader
+type: api
 ---
+
 
 SimulScanReader class will represent and provides access to the physical Reader
  device.
@@ -9,7 +11,8 @@ SimulScanReader class will represent and provides access to the physical Reader
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	List<SimulScanReaderInfo> readerInfoList = simulscanManager.getSupportedDevicesInfo();
 	SimulScanReader reader = simulscanManager.getDevice(readerInfoList.get(0));
 	reader.addDataListener(callbackObj);
@@ -19,6 +22,7 @@ SimulScanReader class will represent and provides access to the physical Reader
 	reader.read();
 	reader.cancelRead();
 	reader.disable();
+	
 
 
 ##Public Methods
@@ -57,8 +61,10 @@ Enables the reader hardware. This method does not make the reader to scan.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	reader.enable();
+	
 
 
 **Returns:**
@@ -84,8 +90,10 @@ Disables the reader hardware. Any pending scanned data will be lost.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	reader.disable();
+	
 
 
 **Returns:**
@@ -120,9 +128,11 @@ Gets the current configuration settings for this reader device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	reader.enable();
 	SimulScanConfig config = reader.getConfig();
+	
 
 
 **Returns:**
@@ -147,13 +157,15 @@ Changes the settings for this reader device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	SimulScanMultiTemplate template1 = new SimulScanMultiTemplate(fileUri);//fileUri points to the template
 	SimulScanReader reader = simulscanManager.getDevice(template1.deviceIdentifier);
 	reader.enable();
 	SimulScanConfig config = reader.getConfig();
 	config.multiTemplate = template1;
 	reader.setConfig(config);
+	
 	
 
 
@@ -184,8 +196,10 @@ This method initiates a SimulScan read() request.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	reader.read();
+	
 
 
 **Returns:**
@@ -207,8 +221,10 @@ This cancels any pending read() calls
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	reader.cancelRead();
+	
 
 
 **Returns:**
@@ -276,5 +292,4 @@ The client can unregister to not get status notification via callbacks.
 **Returns:**
 
 void
-
 

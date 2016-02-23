@@ -17,92 +17,13 @@
     {{/if}}
 
 </nav> -->
-{{#if this.automenu}}
-<aside class="tree-sidebar">            
 
-            <div class="row">
-                <div class="col-sm-12">
-
-                    <div class="sidebar-container" >
-                        
-                        
-
-                        <ul  class="">
-                            
-                        {{#each this.automenu.items}}
-                            <li class="">
-                                {{#if this.items}}
-                                <span class="arrow"></span>
-                                {{/if}}
-                                {{#if this.url}}
-                                <a href="{{this.url}}">
-                                {{else}}
-                                <a>
-                                {{/if}}
-                                <span class="arrow-li">{{this.title}}</span>
-                                </a> 
-                                {{#if this.items}}
-                                    <ul style="">
-                                    {{#each this.items}}
-                                        <li>
-                                            {{#if this.items}}
-                                            <span class="arrow"></span>
-                                            {{/if}}
-                                            {{#if this.url}}
-                                            <a href="{{this.url}}">
-                                            {{else}}
-                                            <a>
-                                            {{/if}}
-                                            <span class="arrow-li">{{this.title}}</span>
-                                            </a> 
-                                            {{#if this.items}}
-                                                <ul >
-                                                {{#each this.items}}
-                                                    <li>
-                                                    <a href="{{this.url}}"><span>{{this.title}}</span></a>
-                                                    </li>
-                                                {{/each}}                        
-                                                </ul>
-                                            {{/if}}
-                                        </li>
-                                    {{/each}}                        
-                                    </ul>
-                                {{/if}}
-                            </li>
-                        {{/each}}
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-</aside>
-
-{{else}}
 <nav id="toc"   data-toggle="toc" data-spy="affix" style="height: 75%; max-width: 225px; overflow-y: auto; ">
     <ul class="nav" >
         <li><strong>{{this.title}}</strong></li>
     </ul>
 </nav>
-<!-- <div class="row">
-    <nav class="col-xs-3 bs-docs-sidebar">
-        <ul id="sidebar" class="nav nav-stacked fixed">
-            {{#each this.menu.items}}
-            <li>
-                <a href="{{this.url}}">{{this.title}}</a>
-                {{#if this.items}}
-                <ul class="nav nav-stacked">
-                    {{#each this.items}}
-                    <li><a href="{{this.url}}">{{this.title}}</a></li>
-                    {{/each}}
-                </ul>
-                {{/if}}
-            </li>
-            {{/each}}
-        </ul>
-    </nav>
-</div> -->
 
-{{/if}}
 <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.js"></script>
 <script type="text/javascript">

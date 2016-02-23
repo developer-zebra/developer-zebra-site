@@ -6,10 +6,117 @@ type: api
 
 Provides access to Mifare Plus tag in security level 3 and I/O operations on
  an IsoDep Tag object. This class encapsulates all the methods required for
- communicating with the IsoDep tag using the tag technology protocol.
- asdf 
-
+ communicating with the IsoDep tag using the tag technology protocol. 
  
+ 
+
+**Example Usage:**
+	
+	:::java	
+	
+	public class MainActivity  extends Activity implements EMDKListener {
+	
+	SecureNfcManager secureNfcManager;
+	EMDKManager emdkManager;
+	SamType samType;
+	MifarePlusSL3 mifarePlusSl3;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
+	}
+	
+	@Override
+	public void onOpened(EMDKManager emdkManager) {
+	this.emdkManager = emdkManager;
+	this.secureNfcManager = (secureNfcManager)
+	this.emdkManager.getInstance(FEATURE_TYPE.SECURENFC);
+	if(this.secureNfcManager != null){
+	try{
+	samType = secureNfcManager.getAvailableSam();
+	} catch (SecureNfcException e) {
+	e.printStackTrace();
+	}
+	
+	if (samType.equals(SamType.MIFARE)) {
+	mifareSam = (MifareSam) secureNfcMgr.getSamInstance(samType);
+	}
+	
+	if(mifareSam != null){
+	
+	try {
+	SamMode samMode = mifareSam.connect();
+	SamKey samKey = new SamKey();
+	samKey.keyNum = 0x00;
+	samKey.keyVer = 0x00;
+	mifareSam.authenticateSam(authKey, samKey,null);
+	mifareSam.close();
+	
+	} catch (MifareSamException e) {
+	e.printStackTrace();
+	}
+	}
+	}
+	}
+	
+	public void onNewIntent(Intent intent) {
+	if (intent != null)
+	tagDetection(intent);
+	}
+	
+	private void tagDetection(Intent intent) {
+	
+	if(NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction())
+	|| NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())
+	|| NfcAdapter.ACTION_TECH_DISCOVERED.equals(intent.getAction())) {
+	
+	lTag	 = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+	try {
+	
+	TagTechType tagType = secureNfcMgr.getTagTechType(lTag);
+	
+	if (tagType.equals(TagTechType.MIFARE_PLUS_SL3)) {
+	mifarePlusSl3 = (MifarePlusSL3) secureNfcMgr.getTagTechInstance(tagType);
+	try {
+	if (!mifarePlusSl3.isEnabled()) {
+	mifarePlusSl3.enable(lTag);
+	}
+	} catch (MifarePlusSL3Exception e) {
+	e.printStackTrace();
+	}
+	}
+	
+	} catch (SecureNfcException e) {
+	
+	e.printStackTrace();
+	}
+	
+	}
+	}
+	
+	@Override
+	protected void onDestroy() {
+	
+	super.onDestroy();
+	
+	if (mifarePlusSl3 != null) {
+	try {
+	mifarePlusSl3.disable();
+	
+	} catch (MifarePlusSL3Exception e) {
+	e.printStackTrace();
+	}
+	}
+	
+	if(this.emdkManager != null)
+	this.emdkManager.release();
+	}
+	
+	@Override
+	public void onClosed() {
+	this.emdkManager.release();
+	}
+	}
+
 
 ##Public Methods
 
@@ -101,6 +208,22 @@ The exception will be thrown if it fails to perform firstAuthentication on the t
  
  
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(blockNo_of_the_key,lSamKey, null, null);
+	
+	
+
+
 ### followingAuthentication
 
 **public void followingAuthentication(short keyBlockNo, SamKey samkey, byte[] samDiverseParams)**
@@ -138,6 +261,28 @@ com.symbol.emdk.securenfc.MifarePlusSL3Exception
 The exception will be thrown if it fails to perform followingAuthentication on the tag.
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	byte[] rawdata = mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	
+	mifarePlusSl3,followingAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null);
+	
+	
+	
+
 
 ### resetAuthentication
 
@@ -202,6 +347,26 @@ The exception will be thrown if it fails to read the data from the block.
  
  
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	
+	byte[] data =  mifarePlusSl3.readBlock(true, true, true,
+	BLOCK_NO, NumberOfBlocksToBeRead);
+	
+	
+
+
 ### writeBlock
 
 **public void writeBlock(boolean encrypted, boolean macOnResponse, short blockNo, byte[] blockData)**
@@ -244,6 +409,28 @@ The exception will be thrown if it fails to write the data to the block.
  
  
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	
+	mifarePlusSl3.writeBlock(true, true,
+	BLOCK_NO, dataToBeWritten);
+	
+	
+	
+
+
 ### isValueBlock
 
 **public boolean isValueBlock(boolean macOnResponse, short blockNumber)**
@@ -270,6 +457,25 @@ The exception will be thrown if it fails to perform the value block check on the
  
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	boolean value= mifarePlusSl3.isValueBlock(false,BLOCK_NO);
+	
+	
+
 
 ### readValue
 
@@ -310,6 +516,26 @@ The exception will be thrown if it fails to read the value from the block.
  
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	
+	int value = mifarePlusSl3.readValue(false, true,
+	true, VALUE_BLOCK_NO);
+	
+	
+
 
 ### writeValue
 
@@ -354,6 +580,24 @@ The exception will be thrown if it fails to write the value to the block.
  
  
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	mifarePlusSl3.writeValue(false,true, VALUE_BLOCK_NO,
+	Value_To_Be_Written);
+	
+
+
 ### increment
 
 **public void increment(boolean macOnResponse, short blockNumber, int value)**
@@ -389,6 +633,28 @@ The exception will be thrown if it fails to increment the value in the block.
  
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	
+	mifarePlusSl3.increment(true,VALUE_BLOCK_NO,
+	value);
+	
+	mifarePlusSl3.transfer(true,VALUE_BLOCK_NO);
+	
+	
+
 
 ### decrement
 
@@ -516,6 +782,24 @@ The exception will be thrown if it fails to do incrementTransfer on the block.
              value block then API will fail.
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	SamKey lSamKey = new SamKey();
+	lSamKey.keyNum = 0x10;
+	lSamKey.keyVer = 0x00;
+	
+	mifarePlusSl3.firstAuthentication(
+	blockNo_of_the_key,
+	lSamKey, null, null);
+	mifarePlusSl3.incrementTransfer(true, VALUE_BLOCK_NO, VALUE_BLOCK_NO
+	value);
+	
+
 
 ### decrementTransfer
 

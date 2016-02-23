@@ -187,7 +187,8 @@ The exception will be thrown if it fails to retrieves current
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -221,7 +222,8 @@ The exception will be thrown if it fails to retrieves AIDs of
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	int[] getAppIDs =  mifareDesfire.getApplicationIDs();
 	
@@ -270,7 +272,8 @@ The exception will be thrown if it fails to retrieves the ISO
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	DFNames dfnames[] = mifareDesfire.getDFNames();
 	
@@ -301,7 +304,8 @@ The exception will be thrown if it fails to retrieves master
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -376,7 +380,8 @@ Retrieves native file IDs or ISO 7816-4 file IDs of active files within
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	
 	mifareDesfire.selectApplication(APP_ID);
@@ -427,7 +432,8 @@ The exception will be thrown if it fails to retrieves file
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	
@@ -479,7 +485,8 @@ The exception will be thrown if it fails to read the data
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	mifareDesfire.selectApplication(APP_ID);
 	

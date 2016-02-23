@@ -93,7 +93,7 @@ Returns the PassThruApduProcessor object to securely communicate with
  
  Note: This is recommended only for the secure NFC application developers
  who is interested getting the full control on the APDU. Other can use the
- [ SecureNfcManager.getTagTechInstance](../SecureNfcManager-getTagTechInstance) which provides simple API to
+ SecureNfcManager.getTagTechInstance which provides simple API to
  securely communicate with the Smart card/tags for the supported tag
  technologies.
 

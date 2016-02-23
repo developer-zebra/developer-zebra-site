@@ -23,121 +23,75 @@ Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
 	SamType samType;
 	MifareDesfire mifaredesfire;
 	MifareSam mifareSam;
-	
 	protected void onCreate(Bundle savedInstanceState) {
-	
 	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
 	}
-	
 	public void onOpened(EMDKManager emdkManager) {
-	
 	this.emdkManager = emdkManager;
-	
 	this.secureNfcManager = (secureNfcManager)
 	this.emdkManager.getInstance(FEATURE_TYPE.SECURENFC);
-	
-	if(this.secureNfcManager != null){
-	
-	try{
-	
+	if (this.secureNfcManager != null) {
+	try {
 	samType = secureNfcManager.getAvailableSam();
-	
 	} catch (SecureNfcException e) {
-	
 	e.printStackTrace();
 	}
-	
 	if (samType.equals(SamType.MIFARE)) {
-	
 	mifareSam = (MifareSam) secureNfcMgr.getSamInstance(samType);
-	
 	}
-	
-	if(mifareSam != null){
-	
+	if (mifareSam != null) {
 	try {
 	SamMode samMode = mifareSam.connect();
-	
 	SamKey samKey = new SamKey();
 	samKey.keyNum = 0x00;
 	samKey.keyVer = 0x00;
-	
-	mifareSam.authenticateSam(authKey, samKey,null);
-	
+	mifareSam.authenticateSam(authKey, samKey, null);
 	mifareSam.close();
-	
 	} catch (MifareSamException e) {
 	e.printStackTrace();
 	}
 	}
 	}
 	}
-	
-	
 	public void onNewIntent(Intent intent) {
-	
 	if (intent != null)
 	tagDetection(intent);
 	}
-	
 	private void tagDetection(Intent intent) {
-	
-	if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction())
-	|| NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())
-	|| NfcAdapter.ACTION_TECH_DISCOVERED.equals(intent.getAction())) {
-	
-	lTag	 = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
-	
+	if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction()) || NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction()) || NfcAdapter.ACTION_TECH_DISCOVERED.equals(intent.getAction())) {
+	lTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 	try {
-	
 	TagTechType tagType = secureNfcMgr.getTagTechType(lTag);
-	
 	if (tagType.equals(TagTechType.MIFARE_DESFIRE)) {
-	
 	mifareDesfire = (MifareDesfire) secureNfcMgr.getTagTechInstance(tagType);
-	
 	try {
 	if (!mifareDesfire.isEnabled()) {
-	
 	mifareDesfire.enable(lTag);
 	}
 	} catch (MifareDesfireExpection e) {
 	e.printStackTrace();
 	}
 	}
-	
 	} catch (SecureNfcException e) {
-	
 	e.printStackTrace();
 	}
-	
-	
 	}
 	}
-	
-	
 	public void onDestroy() {
-	
 	if (mifareDesfire != null) {
 	try {
 	mifareDesfire.disable();
-	
 	} catch (MifareDesfireExpection e) {
-	
 	e.printStackTrace();
 	}
-	
 	}
-	if(this.emdkManager != null)
+	if (this.emdkManager != null)
 	this.emdkManager.release();
 	}
-	
-	
 	public void onClosed() {
 	this.emdkManager.release();
 	}
-	
-	
+	}
 	}
 	
 

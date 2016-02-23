@@ -20,12 +20,12 @@ Provides access to Mifare Plus tag in security level 3 and I/O operations on
 	EMDKManager emdkManager;
 	SamType samType;
 	MifarePlusSL3 mifarePlusSl3;
-	{@literal @}Override
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
 	}
 	
-	{@literal @}Override
+	@Override
 	public void onOpened(EMDKManager emdkManager) {
 	this.emdkManager = emdkManager;
 	this.secureNfcManager = (secureNfcManager)
@@ -93,7 +93,7 @@ Provides access to Mifare Plus tag in security level 3 and I/O operations on
 	}
 	}
 	
-	{@literal @}Override
+	@Override
 	protected void onDestroy() {
 	
 	super.onDestroy();
@@ -111,7 +111,7 @@ Provides access to Mifare Plus tag in security level 3 and I/O operations on
 	this.emdkManager.release();
 	}
 	
-	{@literal @}Override
+	@Override
 	public void onClosed() {
 	this.emdkManager.release();
 	}

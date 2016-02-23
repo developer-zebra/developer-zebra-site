@@ -255,6 +255,18 @@ The exception will be thrown if it fails to retrieves current
  
  
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	mifareDesfire.selectApplication(APP_ID);
+	
+	mifareDesfire.getKeyVersion(keynum);
+	
+	
+
+
 ### getApplicationIDs
 
 **public int getApplicationIDs()**
@@ -277,6 +289,16 @@ The exception will be thrown if it fails to retrieves AIDs of
 
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	int[] getAppIDs =  mifareDesfire.getApplicationIDs();
+	
+	
+
 
 ### getFreeMemory
 
@@ -318,6 +340,16 @@ The exception will be thrown if it fails to retrieves the ISO
              7816-4 DF names of all active card applications.
  
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	DFNames dfnames[] = mifareDesfire.getDFNames();
+	
+	
+
+
 ### getKeySettings
 
 **public KeySettings getKeySettings()**
@@ -339,6 +371,18 @@ The exception will be thrown if it fails to retrieves master
              key settings and application key settings of selected card
              application or card.
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	mifareDesfire.selectApplication(APP_ID);
+	
+	KeySettings keySettings = mifareDesfire.getKeySettings();
+	
+	
+
 
 ### selectApplication
 
@@ -404,6 +448,19 @@ Retrieves native file IDs or ISO 7816-4 file IDs of active files within
  
             
 
+**Example Usage:**
+	
+	:::java
+	
+	
+	
+	mifareDesfire.selectApplication(APP_ID);
+	
+	int[] getFileIDs= mifareDesfire.getFileIDs(FileIDType.NATIVE or FileIDType.ISO7816);
+	
+	
+
+
 **Returns:**
 
 int - Returns native file IDs or ISO 7816-4 file IDs of active files
@@ -442,6 +499,18 @@ The exception will be thrown if it fails to retrieves file
              settings (properties) of specified file.
  
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	mifareDesfire.selectApplication(APP_ID);
+	
+	FileSettings fileSettings = getFileSettings(fileID)
+	
+	
+
 
 ### readData
 
@@ -483,6 +552,28 @@ The exception will be thrown if it fails to read the data
              from the file.
              
  
+
+**Example Usage:**
+	
+	:::java
+	
+	
+	mifareDesfire.selectApplication(APP_ID);
+	
+	SamKey lSamKeyForRead = new SamKey();
+	lSamKeyForRead.keyNum = 0x03;// 0x51;//0x03;
+	lSamKeyForRead.keyVer = 0x00;
+	
+	mifareDesfire.authenticate(AuthenticateType.NATIVE,
+	CARD_KEY_FOR_READ,lSamKeyForRead , null);
+	
+	//Communication type can be either Plain or Enchipered depends on the communication type
+	assigned to the application while creating on the tag .
+	
+	byte[] rawData = mifareDesfire.readData(STD_ID,Communication_Type,
+	0, 0);
+	
+
 
 ### writeData
 

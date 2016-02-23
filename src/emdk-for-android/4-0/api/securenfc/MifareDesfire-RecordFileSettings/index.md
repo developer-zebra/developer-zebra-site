@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire.RecordFileSettings
+type: api
 ---
+
 
 
 
@@ -33,5 +35,4 @@ Current number of records present in the file
 **Type:**
 
 int
-
 

@@ -1,6 +1,8 @@
 ---
 title: SimulScanException
+type: api
 ---
+
 
 The SimulScan APIs throw a SimulScanException when an error occurs.
  
@@ -21,5 +23,4 @@ Returns the SimulScanResults object that provides additional information on the 
 **Returns:**
 
 com.symbol.emdk.simulscan.SimulScanResults - SimulScanResults
-
 

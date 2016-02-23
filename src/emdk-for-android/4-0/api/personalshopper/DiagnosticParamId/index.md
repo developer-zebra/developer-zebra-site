@@ -1,6 +1,8 @@
 ---
 title: DiagnosticParamId
+type: api
 ---
+
 
 The diagnostic parameter IDs.
 
@@ -93,5 +95,4 @@ Gets all the diagnostics parameter including Time since Reboot.
 **Type:**
 
 int
-
 

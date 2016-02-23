@@ -1,6 +1,8 @@
 ---
 title: ScanAndPairManager.StatusListener
+type: api
 ---
+
 
 An interface for notifying client applications to notify scan and pair or unpair events.
  
@@ -8,9 +10,11 @@ An interface for notifying client applications to notify scan and pair or unpair
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements StatusListener
 	.. .. ..
+	
 	
 
 
@@ -29,5 +33,4 @@ This is the callback method upon scan and pair or unpair status event occurs.
 **Returns:**
 
 void
-
 

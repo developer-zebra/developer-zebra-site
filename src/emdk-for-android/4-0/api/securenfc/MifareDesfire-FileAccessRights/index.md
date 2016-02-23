@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire.FileAccessRights
+type: api
 ---
+
 
 
 
@@ -37,5 +39,4 @@ Key no. to be used for changing access rights
 **Type:**
 
 byte
-
 

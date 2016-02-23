@@ -1,6 +1,8 @@
 ---
 title: DeviceInfo
+type: api
 ---
+
 
 DeviceInfo provides information of the Payment device.
  
@@ -8,8 +10,10 @@ DeviceInfo provides information of the Payment device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	paymentDevice.deviceInfo.getFriendlyName();
+	
 
 
 ##Public Methods
@@ -54,8 +58,10 @@ Returns the friendly name of the Device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String name = paymentDevice.deviceInfo.getFriendlyName();
+	
 
 
 **Returns:**
@@ -72,8 +78,10 @@ Returns the MacAdress of the remote device.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	String name = paymentDevice.deviceInfo.getMacAddress();
+	
 
 
 **Returns:**
@@ -90,68 +98,13 @@ Returns the payment device connection type to mobile computer
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	ConnectionType deviceType = paymentDevice.deviceInfo.getConnectionType();
+	
 
 
 **Returns:**
 
 com.symbol.emdk.payment.DeviceInfo.ConnectionType - Returns the ConnectionType
-
-### getDeviceType
-
-**public DeviceType getDeviceType()**
-
-Returns the payment device type
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	DeviceType deviceType = paymentDevice.deviceInfo.getDeviceType();
-
-
-**Returns:**
-
-com.symbol.emdk.payment.DeviceInfo.DeviceType - Returns the DeviceType
-
-##Public Enums
-
-###DeviceInfo.DeviceType
-
-List of supported Payment device types.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	DeviceType.PD40;
-
-
-**Values:**
-
-* **PD40** -The payment device class is PD40.
-
-* **UNDEFINED** -Undefined.
-
-###DeviceInfo.ConnectionType
-
-List of supported payment connection types.
- 
- 
-
-**Example Usage:**
-	
-	:::java	
-	ConnectionType.BLUETOOTH;
-
-
-**Values:**
-
-* **BLUETOOTH** -The payment device is connected via Bluetooth to the mobile device.
-
-* **UNDEFINED** -Connection type is not defined.
-
 

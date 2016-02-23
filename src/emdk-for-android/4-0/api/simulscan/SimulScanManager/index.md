@@ -1,6 +1,8 @@
 ---
 title: SimulScanManager
+type: api
 ---
+
 
 This is the primary object to access the SimulScan feature.
  
@@ -8,7 +10,8 @@ This is the primary object to access the SimulScan feature.
 
 **Example Usage:**
 	
-	:::java	public class MainActivity extends Activity implements EMDKListener,
+	:::java
+	public class MainActivity extends Activity implements EMDKListener,
 	SimulScanDataEventListerner, SimulScanStatusEventListerner {
 	protected void onCreate(Bundle savedInstanceState) {
 	//..
@@ -39,6 +42,7 @@ This is the primary object to access the SimulScan feature.
 	EMDKManager.release(FEATURE_TYPE.SimulScan);
 	
 	}
+	
 
 
 ##Public Methods
@@ -92,19 +96,4 @@ com.symbol.emdk.simulscan.SimulScanReader
 com.symbol.emdk.simulscan.SimulScanException
 
 Exception will be throw if any error occurs
-
-##Public Enums
-
-###SimulScanManager.DeviceIdentifier
-
-Defines scanner device identifier.
-
-**Values:**
-
-* **DEFAULT** -The scanner device is selected based on the template if the scanning device is specified in the template otherwise uses default scanner.
-
-* **INTERNAL_CAMERA1** -Use the internal camera
-
-* **INTERNAL_IMAGER1** -Use the internal imager
-
 

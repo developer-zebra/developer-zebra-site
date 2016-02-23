@@ -38,5 +38,9 @@ content-items:
       title: PD40 Firmware Update
       text: This guide contains information about querying and updating the PD40's firmware from your application.
       url: /emdk-for-android/4-0/guide/pd40-firmware-update
-
+    - type: section
+      level: 4
+      title: EMDK Programming Practices
+      text: This guide contains various EMDK for Android programming tips.
+      url: /emdk-for-android/4-0/guide/programming_practices
 ---           

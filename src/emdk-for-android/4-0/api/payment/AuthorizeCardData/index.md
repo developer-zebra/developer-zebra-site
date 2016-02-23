@@ -1,6 +1,8 @@
 ---
 title: AuthorizeCardData
+type: api
 ---
+
 
 This class is derived from the PaymentDataBase class and it holds the Authorize card
  response data.
@@ -36,5 +38,4 @@ Returns the EMV data list.
 **Returns:**
 
 java.util.ArrayList
-
 

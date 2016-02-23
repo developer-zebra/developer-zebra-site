@@ -1,6 +1,8 @@
 ---
 title: SimulScanTemplate
+type: api
 ---
+
 
 The Template class represents the XML template passed into the SimulScanEngine. 
  All of the recognizable tags and attributes are placed into this class.
@@ -65,5 +67,4 @@ Returns the friendly name of the template
 
 java.lang.String - String 
  			The template's name
-
 

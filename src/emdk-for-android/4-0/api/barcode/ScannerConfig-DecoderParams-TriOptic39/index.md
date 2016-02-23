@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.TriOptic39
+type: api
 ---
+
 
 The TriOptic39 class provides access to parameters that are available
  for the TriOptic39 decoder.
@@ -15,12 +17,13 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	triOptic39.redundancy = true;
+	
 
 
 **Type:**
 
 boolean
-
 

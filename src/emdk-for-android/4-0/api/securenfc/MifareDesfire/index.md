@@ -1,6 +1,8 @@
 ---
 title: MifareDesfire
+type: api
 ---
+
 
 Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
  Tag object. This class encapsulates all the methods required for
@@ -11,7 +13,8 @@ Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	
 	public class MainActivity  extends Activity implements EMDKListener {
 	
@@ -68,6 +71,75 @@ Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
 	}
 	}
 	}
+	}
+	
+	
+	public void onNewIntent(Intent intent) {
+	
+	if (intent != null)
+	tagDetection(intent);
+	}
+	
+	private void tagDetection(Intent intent) {
+	
+	if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction())
+	|| NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())
+	|| NfcAdapter.ACTION_TECH_DISCOVERED.equals(intent.getAction())) {
+	
+	lTag	 = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+	
+	try {
+	
+	TagTechType tagType = secureNfcMgr.getTagTechType(lTag);
+	
+	if (tagType.equals(TagTechType.MIFARE_DESFIRE)) {
+	
+	mifareDesfire = (MifareDesfire) secureNfcMgr.getTagTechInstance(tagType);
+	
+	try {
+	if (!mifareDesfire.isEnabled()) {
+	
+	mifareDesfire.enable(lTag);
+	}
+	} catch (MifareDesfireExpection e) {
+	e.printStackTrace();
+	}
+	}
+	
+	} catch (SecureNfcException e) {
+	
+	e.printStackTrace();
+	}
+	
+	
+	}
+	}
+	
+	
+	public void onDestroy() {
+	
+	if (mifareDesfire != null) {
+	try {
+	mifareDesfire.disable();
+	
+	} catch (MifareDesfireExpection e) {
+	
+	e.printStackTrace();
+	}
+	
+	}
+	if(this.emdkManager != null)
+	this.emdkManager.release();
+	}
+	
+	
+	public void onClosed() {
+	this.emdkManager.release();
+	}
+	
+	
+	}
+	
 
 
 ##Public Methods
@@ -183,17 +255,6 @@ The exception will be thrown if it fails to retrieves current
  
  
 
-**Example Usage:**
-	
-	:::java	
-	
-	mifareDesfire.selectApplication(APP_ID);
-	
-	mifareDesfire.getKeyVersion(keynum);
-	
-	
-
-
 ### getApplicationIDs
 
 **public int getApplicationIDs()**
@@ -216,15 +277,6 @@ The exception will be thrown if it fails to retrieves AIDs of
 
  
  
-
-**Example Usage:**
-	
-	:::java	
-	
-	int[] getAppIDs =  mifareDesfire.getApplicationIDs();
-	
-	
-
 
 ### getFreeMemory
 
@@ -266,15 +318,6 @@ The exception will be thrown if it fails to retrieves the ISO
              7816-4 DF names of all active card applications.
  
 
-**Example Usage:**
-	
-	:::java	
-	
-	DFNames dfnames[] = mifareDesfire.getDFNames();
-	
-	
-
-
 ### getKeySettings
 
 **public KeySettings getKeySettings()**
@@ -296,17 +339,6 @@ The exception will be thrown if it fails to retrieves master
              key settings and application key settings of selected card
              application or card.
  
-
-**Example Usage:**
-	
-	:::java	
-	
-	mifareDesfire.selectApplication(APP_ID);
-	
-	KeySettings keySettings = mifareDesfire.getKeySettings();
-	
-	
-
 
 ### selectApplication
 
@@ -372,18 +404,6 @@ Retrieves native file IDs or ISO 7816-4 file IDs of active files within
  
             
 
-**Example Usage:**
-	
-	:::java	
-	
-	
-	mifareDesfire.selectApplication(APP_ID);
-	
-	int[] getFileIDs= mifareDesfire.getFileIDs(FileIDType.NATIVE or FileIDType.ISO7816);
-	
-	
-
-
 **Returns:**
 
 int - Returns native file IDs or ISO 7816-4 file IDs of active files
@@ -422,17 +442,6 @@ The exception will be thrown if it fails to retrieves file
              settings (properties) of specified file.
  
  
-
-**Example Usage:**
-	
-	:::java	
-	
-	mifareDesfire.selectApplication(APP_ID);
-	
-	FileSettings fileSettings = getFileSettings(fileID)
-	
-	
-
 
 ### readData
 
@@ -474,27 +483,6 @@ The exception will be thrown if it fails to read the data
              from the file.
              
  
-
-**Example Usage:**
-	
-	:::java	
-	
-	mifareDesfire.selectApplication(APP_ID);
-	
-	SamKey lSamKeyForRead = new SamKey();
-	lSamKeyForRead.keyNum = 0x03;// 0x51;//0x03;
-	lSamKeyForRead.keyVer = 0x00;
-	
-	mifareDesfire.authenticate(AuthenticateType.NATIVE,
-	CARD_KEY_FOR_READ,lSamKeyForRead , null);
-	
-	//Communication type can be either Plain or Enchipered depends on the communication type
-	assigned to the application while creating on the tag .
-	
-	byte[] rawData = mifareDesfire.readData(STD_ID,Communication_Type,
-	0, 0);
-	
-
 
 ### writeData
 
@@ -789,71 +777,4 @@ boolean - true : if connection with the tag is enabled false : if the
 com.symbol.emdk.securenfc.MifareDesfireExpection
 
 The exception will be thrown if the emdk is not opened.
-
-##Public Enums
-
-###MifareDesfire.FileCommMode
-
-File Communication Mode. Value PLAIN and Enchipered is supported. Value
- MACED is not supported.
-
-**Values:**
-
-* **PLAIN** -Plain communication
-
-* **MACED** -Plain communication secured by MACing. This is not supported.
-
-* **ENCIPHERED** -Fully enciphered communication. This is supported for authentication
- type NATIVE (TDEA-DESFire). It is not supported for authentication
- type ISO & AES.
-
-###MifareDesfire.CreditType
-
-
-
-**Values:**
-
-* **STANDARD** -Standard credit
-
-* **LIMITED** -Limited increase of a value without having full Read&Write
- permissions to the file
-
-###MifareDesfire.FileIDType
-
-
-
-**Values:**
-
-* **NATIVE** -Native file ID: 1 byte long
-
-* **ISO7816** -ISO 7816-4 complaint file ID: 2 byte long
-
-###MifareDesfire.FileType
-
-
-
-**Values:**
-
-* **STANDARD** -Standard data file
-
-* **BACKUP** -Back up data file
-
-* **VALUE** -Value file
-
-* **LINEAR_RECORD** -Linear record file
-
-* **CYCLIC_RECORD** -Cyclic record file
-
-###MifareDesfire.AuthenticateType
-
-Authentication mode.
-
-**Values:**
-
-* **NATIVE** -Authentication Type is Native.
-
-* **ISO** -Authentication Type is ISO. Not supported.
-
-* **AES** -Authentication Type is AES. Not Supported
-
 

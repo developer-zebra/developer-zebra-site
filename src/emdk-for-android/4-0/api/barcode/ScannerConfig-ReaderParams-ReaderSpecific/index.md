@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific
+type: api
 ---
+
 
 ReaderSpecific class provides access to the reader specific parameters.
 
@@ -19,10 +21,12 @@ Provide access to set the imager specific settings if the scanner device is imag
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	if (scanner.getScannerInfo().getDeviceType() == DeviceType.IMAGER) {
 	readerParams.readerSpecific.imagerSpecific.picklist = PickList.DISABLED;
 	}
+	
 
 
 **Type:**
@@ -36,10 +40,12 @@ Provide access to set the camera specific settings if the scanner device is came
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	if (scanner.getScannerInfo().getDeviceType() == DeviceType.CAMERA) {
 	readerParams.readerSpecific.cameraSpecific.illuminationMode = IlluminationMode.ON;
 	}
+	
 
 
 **Type:**
@@ -53,5 +59,4 @@ Provide access to set the laser specific settings if the scanner device is laser
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
-
 

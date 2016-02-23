@@ -1,6 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams
+type: api
 ---
+
 
 The DecoderParams class contains decoder parameters that
  are used by multiple decoder symbologies. The property provides access to
@@ -408,5 +410,4 @@ The HanXin class provides access to parameters that are available
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.DecoderParams.HanXin
-
 

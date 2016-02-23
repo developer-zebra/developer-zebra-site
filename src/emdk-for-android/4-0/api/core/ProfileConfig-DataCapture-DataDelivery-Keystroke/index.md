@@ -1,6 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.Keystroke
+type: api
 ---
+
 
 Holds Keystroke configuration settings.
  
@@ -8,22 +10,26 @@ Holds Keystroke configuration settings.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Keystroke keystroke = profileConfig.dataCapture.dataDelivery.keystroke;
+	
 
 
 ##Public Fields
 
 ###ime_output_enabled
 
-Gets and Sets keystroke ENABLED_STATE configuration enum  ProfileConfig.ENABLED_STATE.
+Gets and Sets keystroke ENABLED_STATE configuration enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	keystroke.ime_output_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
@@ -32,14 +38,16 @@ com.symbol.emdk.ProfileConfig.ENABLED_STATE
 
 ###keystroke_action_char
 
-Gets and Sets keystroke ACTION_KEY_CHAR configuration enum  ProfileConfig.ACTION_KEY_CHAR.
+Gets and Sets keystroke ACTION_KEY_CHAR configuration enum [ ProfileConfig.ACTION_KEY_CHAR](../ProfileConfig-ACTION_KEY_CHAR).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	keystroke.keystroke_action_char = ACTION_KEY_CHAR.DEFAULT;
+	
 
 
 **Type:**
@@ -48,18 +56,19 @@ com.symbol.emdk.ProfileConfig.ACTION_KEY_CHAR
 
 ###basicDataFormatting
 
-Gets and Sets keystroke basic data formatting configuration object  ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting.
+Gets and Sets keystroke basic data formatting configuration object [ ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting](../ProfileConfig-DataCapture-DataDelivery-BasicDataFormatting).
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	keystroke.BasicDataFormatting.bdf_enabled = ENABLED_STATE.DEFAULT;
+	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
-
 

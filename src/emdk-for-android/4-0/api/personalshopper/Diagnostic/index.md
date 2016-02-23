@@ -1,6 +1,8 @@
 ---
 title: Diagnostic
+type: api
 ---
+
 
 This class provides access to fetch the diagnostics information.
  
@@ -8,10 +10,12 @@ This class provides access to fetch the diagnostics information.
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	paramId
 	DiagnosticData diagnosticData =  PsObject.diagnostic.getDiagnosticData(DiagnosticParamId paramId
 	,DiagnosticConfig diagnosticconfig);
+	
 
 
 ##Public Methods
@@ -38,7 +42,6 @@ com.symbol.emdk.personalshopper.DiagnosticData - DiagnosticData : Manufacturing 
 **Throws:**
 
 com.symbol.emdk.personalshopper.DiagnosticException
-
 
 
 

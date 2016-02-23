@@ -1,6 +1,8 @@
 ---
 title: SamDiverseParams
+type: api
 ---
+
 
 SAM diversification parameters
 
@@ -37,5 +39,4 @@ Diversification input data Data length: 8 bytes (3DES) or 16 bytes (AES)
 **Type:**
 
 byte
-
 

@@ -1,6 +1,8 @@
 ---
 title: EMDKManager.EMDKListener
+type: api
 ---
+
 
 This is the interface for the callback to notify the opening and closing status of the EMDK.
  On a successful opening, the EMDKManager object will be returned.
@@ -10,9 +12,11 @@ This is the interface for the callback to notify the opening and closing status 
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	public class MainActivity extends Activity implements EMDKListener
 	.. .. ..
+	
 	
 
 
@@ -28,12 +32,14 @@ Called to notify the client when the EMDKManager object has been opened and its 
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Override
 	public void onOpened(EMDKManager emdkManager)
 	{
 	
 	}
+	
 
 
 **Parameters:**
@@ -49,23 +55,24 @@ void
 **public void onClosed()**
 
 Called to notify the client that this EMDKManager object has been abruptly closed.
- The clients must call to call  EMDKManager#release() to free all the resources used by EMDKManager even after onClosed().
+ The clients must call to call [ EMDKManager.release()](../EMDKManager#release) to free all the resources used by EMDKManager even after onClosed().
  Notifies user upon a abrupt closing of EMDKManager.
  
  
 
 **Example Usage:**
 	
-	:::java	
+	:::java
+	
 	Override
 	public void onClosed()
 	{
 	
 	}
+	
 
 
 **Returns:**
 
 void
-
 

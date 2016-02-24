@@ -3,6 +3,9 @@ csp: appmgr
 title: Protected List Package Name
 type: parm
 order: 6
+sincemx: 4.2
+osx:
+  - 1.2
 parm:
   presentif: The Protected List Action is "Add Application to Protected List" or "Remove Application from Protected List"
   pivotal: No

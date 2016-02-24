@@ -3,6 +3,12 @@ csp: appmgr
 title: Package Name
 type: parm
 order: 4
+sincemx: 4.2
+osx: 
+  - 1.0
+  - 1.3.4-56
+apilevel:
+  - 1
 parm:
   presentif: The Action is "Uninstall", "Set as Default Launcher", "Enable Application", or "Disable Application"
   pivotal: No

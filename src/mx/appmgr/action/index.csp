@@ -5,33 +5,55 @@ type: parm
 order: 2
 parm:
   pivotal: Yes
-  name: AnalyticsAction
+  name: Action
   type: list
   list:
     - code: 0
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will not make any change to the applications on the device.
+      sincemx: 4.1
     - code: 1
       name: Install
       description: This value will cause a User application contained within an APK file in the specified path on the device to be Installed on the device. If for any reason the requested application cannot be installed, then an error will be returned in the Result XML document.</p><p><b>Note:</b> If an attempt is made to install an application with the same Package Name as an application that is already installed on the device, then an error will be returned in the Result XML document. To replace an application that is already installed on the device with a different version with the same Package Name, use the value "Upgrade" instead.
+      sincemx: 4.2
+      osx:
+        - 1.0
     - code: 2
       name: Uninstall
       description: <p>This value will cause a User application with the specified Package Name to be Uninstalled from the device. If for any reason the requested application cannot be uninstalled, then an error will be returned in the Result XML document.</p><p><b>Note:</b> If no User application with the specified Package Name is installed on the device then an error will be returned in the Result XML document.</p><p><b>Note:</b> When an application is Uninstalled, data that is stored in sandbox areas owned by that application will be automatically removed. If the application is later Installed again, it will need to recreate such data.</p>
+      sincemx: 4.1
+      osx:
+        - 1.0
     - code: 3
       name: Upgrade
       description: <p>This value will cause a User application contained within an APK file in the specified path on the device to Upgrade another version of the application with the same Package Name that is already on the device. If for any reason the requested application cannot be upgraded, then an error will be returned in the Result XML document.</p><p><b>Note:</b> If an attempt is made to upgrade an application with a Package Name that does not match any Package Names that are on the device already, then an error will be returned in the Result XML document. To install an application that is not already installed on the device, use the value "Install" instead.</p><p><b>Note:</b> When an application is upgraded, the data for that application is maintained. This allows the new version of the application to access (and possibly convert) data created by the old version.</p><p><b>Note:</b> In devices running the Jelly Bean version of Android, an Upgrade can replace any version of an application with any other version of the same application. However, in devices running the KitKat or higher version of Android, an Upgrade can only replace an application with a higher (numerically greater) version of the same application. This change was made to reduce issues where an older version of an application maybe unable to understand data produced by a newer version.</p>
+      sincemx: 4.1
+      osx:
+        - 1.0
     - code: 4
       name: Set as Default Launcher
       description: This value will cause the application with the specified Package Name to be made the new Default Launcher. The specified application must already be installed on the device and generally should be designed to be a Launcher, per relevant Android documentation. If no application with the specified Package Name is installed on the device then an error will be returned in the Result XML document.
+      sincemx: 4.1
+      osx:
+        - 1.3.4-56
     - code: 5
       name: Enable Application
       description: This value will cause the System application with the specified Package Name to be Enabled, and therefore will allow it to be launched. If no System application with the specified Package Name is built-into the device then an error will be returned in the Result XML document.
+      sincemx: 4.2
+      apilevel:
+        - 1
     - code: 6
       name: Disable Application
       description: This value will cause the System application with the specified Package Name to be Disabled, and therefore will prevent it from being launched. If no System application with the specified Package Name is built-into the device then an error will be returned in the Result XML document.
+      sincemx: 4.2
+      apilevel:
+        - 1
     - code: 7
       name: Clear Recent Apps List
       description: This value will cause the Android Recent Applications List, which allows a user to see and launch apps that have recently been used, to be cleared.
+      sincemx: 4.2
+      apilevel:
+        - 16
 ---
 
 Specify the application action to perform. 

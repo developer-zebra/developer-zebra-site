@@ -1,5 +1,6 @@
 ---
 title: Enterprise Home Screen
+img: ehs-logo.png
 layout: list-mx.html
 menu:
   title: Enterprise Home Screen

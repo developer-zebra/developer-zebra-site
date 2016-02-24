@@ -63,4 +63,18 @@ products:
         url: /stagenow/2-2/settingtypes
       - title: Device Staging
         url: /stagenow/2-2/stageclient
+  - title: Enterprise Home Screen
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    url: /ehs/2-3/guide/about
+    image: http://placehold.it/350x150
+    btn-text: Latest Docs
+    sections:
+      - title: Getting Started
+        url: /ehs/2-3/guide/gettingstarted
+      - title: Tutorials
+        url: /ehs/2-3/tutorial/
+      - title: Guides
+        url: /ehs/2-3/guide/programming-guides
+      
+
 ---

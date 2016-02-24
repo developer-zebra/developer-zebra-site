@@ -41,7 +41,7 @@
                                 
                                 {{#each collections.csp}}
                                 {{#is ../csp this.csp}}
-                                <div class="">
+                                <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}">
                                     <h2 class="">{{this.title}}</h2>
                                     <p class="">{{{this.contents}}}</p>
                                     {{#is this.type "parm"}}
@@ -53,51 +53,54 @@
                                         <p><b>Parm Name:</b> {{this.parm.name}}</p>
                                         {{/if}}
                                         {{#if this.parm.pivotal}}
-                                        <p><b>Pivotal Parm:</b> {{this.parm.pivotal}}</p>
+                                        <!-- <p><b>Pivotal Parm:</b> {{this.parm.pivotal}}</p> -->
                                         {{/if}}
-                                         <p><b>Versions:</b>
-                                        {{#each ../mxversions}}
-                                            {{#if ../sincemx}}
-                                                {{#is this.value ../sincemx }}
-                                                    <span class="label label-default">{{this.text}} +</span>
-                                                {{/is}}
-                                            {{else}}
-                                                {{#if @first}}
-                                                 <span class="label label-default">{{this.text}} +</span>
-                                                {{/if}}
+                                        {{#is this.parm.type "list"}}
+                                        {{else}}
+                                        <p><b>Requires:</b> 
+                                            <ul>
+                                            {{#if this.osx}}
+                                                <li>OSX: {{this.osx}}{{#if this.osx-specific}}{{else}}+{{/if}}
+                                                </li>
                                             {{/if}}
-                                        {{/each}}   
-                                        </p>                                     
+                                                <li>MX: {{this.mx}}+ </li>
+                                            {{#if this.apilevel}}
+                                                <li>Android API Level: {{this.apilevel}}+ </li>
+                                            {{/if}}
+                                            </ul>
+                                        </p>
+                                        {{/is}}
+                                        
+
+                                        
                                         </blockquote>
                                     {{/is}}
                                     
                                     
                                     {{#is this.parm.type "list"}}
-                                    <div >
+                                    <div data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}">
                                         <table class="table">
                                             <tr>
                                                 <th>Option</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Versions</th>
+                                                <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
-                                            <tr>
+                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}">
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
                                                 <td>
-                                                {{#each ../../mxversions}}
-                                                    {{#if ../sincemx}}
-                                                        {{#is this.value ../sincemx }}
-                                                            {{this.text}}+
-                                                        {{/is}}
-                                                    {{else}}
-                                                        {{#if @first}}
-                                                            {{this.text}}+
-                                                        {{/if}}
+                                                    
+                                                    {{#if this.osx}}
+                                                        <p>OSX: {{this.osx}}{{#if this.osx-specific}}{{else}}+{{/if}} </p>
                                                     {{/if}}
-                                                {{/each}}  
+                                                        <p>MX: {{this.mx}}+ </p>
+                                                    {{#if this.apilevel}}
+                                                        <p>Android API Level: {{this.apilevel}}+ </p>
+                                                    {{/if}}
+                                                    
                                                 </td> 
                                                 
                                             </tr>
@@ -121,7 +124,89 @@
             </div>
             </section>
         </div>
-    </section>    
+    </section>   
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var showelement = function(el){
+            el.removeClass( "not-available" )
+        }
+        var hideelement = function(el){
+            el.addClass( "not-available" )
+        }
+        var showmx = function(haveVersion){
+            $('[data-mx]').each(function() {
+                var needVersion = $(this).attr("data-mx");
+
+                if(haveVersion<needVersion){
+                    hideelement($(this));
+                }
+                else{
+                    showelement($(this));
+                }
+                
+            });
+        }
+        var showapi = function(haveVersion){
+            $('[data-api]').each(function() {
+                var needVersion = $(this).attr("data-api");
+
+                if(haveVersion<needVersion){
+                    hideelement($(this));
+                }
+                else{
+                    showelement($(this));
+                }
+                
+            });
+        }
+
+        var showosx = function(haveVersion){
+            $('[data-osx]').each(function() {
+                var needVersions = $(this).attr("data-osx").split(",");
+                var versionStrict = $(this).attr("data-osx-specific");
+                if(typeof(versionStrict)!='undefined' && versionStrict!=''){
+                    console.log('Using Strict OSX Match')
+                    var match=true;
+                    for (var i = 0; i < needVersions.length; i++) {
+                        if(needVersions[i] !=haveVersion){
+                            match=false;
+                            break;
+                        }
+                    };
+                    if(match){
+                        // $( this ).fadeTo( "slow", 0.40 )
+                        hideelement($(this));
+                    }
+                    else{
+                        showelement($(this));
+                    }
+
+                }
+                else{
+                    var match=false;
+                    for (var i = 0; i < needVersions.length; i++) {
+                        if( haveVersion < needVersions[i]){
+                            match=true;
+                            break;
+                        }
+                    };
+                    if(match){
+                        hideelement($(this));
+                    }
+                    else{
+                        showelement($(this));
+                    }
+
+                }
+                
+            });
+        }
+
+    });
+</script>
+
 {{> footer}}
 
 

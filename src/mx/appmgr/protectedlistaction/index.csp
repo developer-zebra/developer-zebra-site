@@ -3,7 +3,8 @@ csp: appmgr
 title: Protected List Action
 type: parm
 order: 5
-sincemx: 4.2
+mx: "4.2"
+osx: "1.2"
 parm:
   pivotal: Yes
   name: ProtectedListAction
@@ -12,27 +13,23 @@ parm:
     - code: 0
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will not cause any changes to the Protected List.
-      sincemx: 4.2
-      osx:
-        - 1.2
+      mx: "4.2"
+      osx: "1.2"
     - code: 1
       name: Add Application to Protected List
       description: This value will cause the Package Name of an application to be Added to the Protected List.
-      sincemx: 4.2
-      osx:
-        - 1.2
+      mx: "4.2"
+      osx: "1.2"
     - code: 2
       name: Remove Application from Protected List
       description: This value will cause the Package Name of an application to be Removed from the Protected List.
-      sincemx: 4.2
-      osx:
-        - 1.2
+      mx: "4.2"
+      osx: "1.2"
     - code: 3
       name: Remove All Application from Protected List
       description: This value will cause all Package Names to be Removed from the Protected List.
-      sincemx: 4.2
-      osx:
-        - 1.2
+      mx: "4.2"
+      osx: "1.2"
 ---
 
 The Protected List is a feature that allows certain applications to be exempted from certain constraints that are imposed on applications when Multi-User Mode is enabled. In particular, applications whose Package Names are on the Protected List will:

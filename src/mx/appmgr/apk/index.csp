@@ -3,9 +3,8 @@ csp: appmgr
 title: Add Package Name(s)
 type: parm
 order: 3
-sincemx: 4.2
-osx: 
-  - 1.0
+mx: "4.2"
+osx: "1.0"
 parm:
   presentif: The Action is "Install" or "Upgrade"
   pivotal: No

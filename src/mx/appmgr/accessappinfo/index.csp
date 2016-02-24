@@ -3,7 +3,8 @@ csp: appmgr
 title: Access to App Info Action
 type: parm
 order: 7
-sincemx: 4.2
+mx: "4.2"
+osx: "4.2"
 parm:
   pivotal: No
   name: AccessAppInfoAction
@@ -12,19 +13,18 @@ parm:
     - code: 0
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to be made.
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "4.2"
     - code: 1
       name: Enable Access to App Info for all applications
       description: This value will cause access to App Info to be enabled if access to the System Settings Menu application is enabled.
-      sincemx: 4.2
-      osx: 
-        - 4.2
+      mx: "4.2"
+      osx: "4.2"
     - code: 2
       name: Disable Access to App Info for all applications
       description: This value will cause all access to App Info to be disabled.
-      sincemx: 4.2
-      osx: 
-        - 4.2
+      mx: "4.2"
+      osx: "4.2"
 ---
 
 Since the AppMgr allows control of which applications are installed, it may be of concern that a device user can use the App Info section of the in-device System Settings Menu to impact an installed application.  A device user might terminate an application (Force Stop), remove application data (Clear Data), etc.  A device user might also Uninstall the application completely.  If an MDM is being used to tightly control the set of installed applications on a device, such activities by a device user might be undesirable.

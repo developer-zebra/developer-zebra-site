@@ -89,7 +89,7 @@ The extracted folder will contain the following files
 - EMDK Wizard plug-in for Android Studio (“\EMDK_4.0_12172015_MAC\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
 - EMDK device runtime (“\EMDK_4.0_12172015_MAC\Device Update\ EmdkOSUpdateApp_v4.0.3.apk”)
 
->NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in the [Device Setup](/emdk-for-android/4-0/guide/setupDevice) guide.
+>NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in the [Device Setup](/emdk-for-android/4-1/guide/setupDevice) guide.
 
 ###EMDK SDK add-on Integration
 

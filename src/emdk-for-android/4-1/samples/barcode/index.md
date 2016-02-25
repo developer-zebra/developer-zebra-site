@@ -39,18 +39,18 @@ screenshots:
 ---
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/4-0/api) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](/emdk-for-android/4-0/mx/data-capture/barcode).  
+The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/4-1/api) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](/emdk-for-android/4-1/mx/data-capture/barcode).  
 
-The available actions in the [Barcode/Scanning API](/emdk-for-android/4-0/api) are:
+The available actions in the [Barcode/Scanning API](/emdk-for-android/4-1/api) are:
   
 * Set Scanner Device  
-* Set [TriggerType](/emdk-for-android/4-0/api/barcode/Scanner)
-* Set [Decoder Params](/emdk-for-android/4-0/api/barcode/ScannerConfig-DecoderParams)
-* Set [Reader Params](/emdk-for-android/4-0/api/barcode/ScannerConfig-ReaderParams)
-* Set [Scan Params](/emdk-for-android/4-0/api/barcode/ScannerConfig-ScanParams)
+* Set [TriggerType](/emdk-for-android/4-1/api/barcode/Scanner)
+* Set [Decoder Params](/emdk-for-android/4-1/api/barcode/ScannerConfig-DecoderParams)
+* Set [Reader Params](/emdk-for-android/4-1/api/barcode/ScannerConfig-ReaderParams)
+* Set [Scan Params](/emdk-for-android/4-1/api/barcode/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/4-0/api/barcode/ScannerConfig-DecoderParams).
+This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/4-1/api/barcode/ScannerConfig-DecoderParams).
 
 ##Prerequisites
 - Java JDK 
@@ -58,13 +58,13 @@ This sample application will allow you to scan barcodes based on selected scanne
 - EMDK for Android  
 - An EMDK supported Android device
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)
+* [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 
 ##Using This Sample

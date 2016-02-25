@@ -7,11 +7,11 @@ content-items:
       level: 4
       title: Profile Manager
       text: Using the profile to control device configuration and behaviors like setting the clock from your application.
-      url: /emdk-for-xamarin/1-0/tutorial/helloxamarin
+      url: /emdk-for-xamarin/2-0/tutorial/helloxamarin
     - type: section
       level: 4
       title: Barcode Scanning
       text: Using C# API's to use barcode scanning in your application.
-      url: /emdk-for-xamarin/1-0/tutorial/barcodeapitutorial
+      url: /emdk-for-xamarin/2-0/tutorial/barcodeapitutorial
 
 ---   

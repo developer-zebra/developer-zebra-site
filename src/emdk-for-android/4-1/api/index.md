@@ -8,8 +8,8 @@ automenuappend:
     - title: Platform Intents
       items:
         - title: Datawedge Intents
-          url: /emdk-for-android/4-0/guide/reference/refdatacaptureintent
+          url: /emdk-for-android/4-1/guide/reference/refdatacaptureintent
         - title: Battery Intent
-          url: /emdk-for-android/4-0/guide/reference/refbatteryintent
+          url: /emdk-for-android/4-1/guide/reference/refbatteryintent
 
 ---

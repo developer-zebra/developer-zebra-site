@@ -54,18 +54,18 @@ So let us create a tutorial and Configure the Mx App Manager Profile to install 
 * Download APK file for the application to install from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
 * Once downloaded, copy the APK file to SD Card of the device. 
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup/).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup/).
 
 ## Creating The Project
 
 > Note: Provide "ApplyProfileSilentlyTutorial" as the project name for this tutorial and "HandlerActivity" as the activity name while creating the project.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
 
 ## Adding The App Manager Profile Feature
-1. Click [here](/emdk-for-android/4-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/4-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "AppManagerProfile" as the Profile Name for this tutorial.
 

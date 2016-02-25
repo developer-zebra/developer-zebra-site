@@ -448,4 +448,4 @@ In this article, we covered:
 * Configuring DataWedge to send intents to our application
 
 ## Sample Code
-Download the source for this project in the [associated sample](/emdk-for-android/4-0/guide/sample/sampledatacaptureintent).
+Download the source for this project in the [associated sample](/emdk-for-android/4-1/guide/sample/sampledatacaptureintent).

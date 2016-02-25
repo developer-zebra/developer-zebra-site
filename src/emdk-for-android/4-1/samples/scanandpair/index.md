@@ -43,15 +43,15 @@ This sample application will show how the Scan and Pair API can be used to pair 
 - EMDK for Android  
 - An EMDK supported Android device
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
 
 For this sample, you will need two Android Bluetooth devices, one must be an EMDK for Android supported device. You will also need a barcode that contains the Bluetooth MAC address of the remote bluetooth device that we will be pairing with(The one not running the EMDK app).
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)
+* [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 ##Using This Sample
 
 1.  When the application starts it should look like the following. Leave the **Always Scan** and **Hard Trigger** check boxes selected, and insure the **ScanData Type** spinner is set to **MAC ADDRESS**.  

@@ -49,13 +49,13 @@ This sample application will allow you to Add/Replace named APN and remove exist
 - EMDK for Android  
 - An EMDK supported Android device
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)
+* [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 
 ##Using This Sample

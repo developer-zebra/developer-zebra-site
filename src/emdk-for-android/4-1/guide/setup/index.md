@@ -17,9 +17,9 @@ In order to develop Android applications with Android Studio or Eclipse, you mus
 
 ### Installing Java Development Kit (JDK) for Mac
 
-**Installing Java for OS X 2014-00x:**
+**Installing Java for OS X 2014-10x:**
 1. Go to https://support.apple.com/kb/dl1572?locale=en_US.
-2. Download and install Java for OS X 2014 (ex: JavaForOSX2014-001.dmg).
+2. Download and install Java for OS X 2014 (ex: JavaForOSX2014-101.dmg).
 
 **Installing Java Development Kit (JDK) 7:**
 1. Go to http://www.oracle.com/technetwork/java/javase/downloads/index.html.
@@ -29,9 +29,9 @@ In order to develop Android applications with Android Studio or Eclipse, you mus
 ###Android Studio
 Android studio is now Google's official IDE for Android development. Using Android Studio will give you access to the latest IDE updates.
 
-**Windows** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
+**Windows** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
 
-**Mac** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
+**Mac** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
 
 
 
@@ -41,7 +41,7 @@ Refer to this document( [Migrating to Android Studio](http://developer.android.c
 
 Although support has been deprecated, this version of the EMDK will integrate with Eclipse/ADT. 
 
-**Windows** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
+**Windows** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
 
 **Mac** - EMDK for android development in Eclipse on Mac, is not supported.
 

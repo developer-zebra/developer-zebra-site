@@ -21,7 +21,7 @@ The following software must be installed prior to using the EMDK for Android.
  
 **Mac OS X:**
 * Yosemite (10.10.x) | (64-bit)  or El Capitan (10.11.x) | (64-bit)
-* Java for OS X 2014-00x or higher
+* Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
 * Installed via Android SDK manager 
 	* The Android 4.1.2 (API 16) and the Android 4.4.2 (API 19) packages
@@ -45,15 +45,20 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 
 ## What's New
+**EMDK for Android v4.1**
+
+
+
+
 **EMDK for Android v4.0**
 
 * IDE Support
 	* **Support for ADT/Eclipse has been deprecated**. Future versions of the EMDK for Android will only support Android Studio for development. 
 
 * New Profile Manager Features
-	* [Multipule MX version support](/emdk-for-android/4-0/guide/profile-manager) - Profile manager now supports multiple MX versions. You can now choose between  MX 4.2, 4.4 and 5.0 when creating a new profile.
-	* [Profile Upgrade](/emdk-for-android/4-0/guide/profile-manager) - Profile manager now provides a method to upgrade an existing profile to use a higher version of MX.
-	* [Data Capture Activity Selection Wildcard](/emdk-for-android/4-0/mx/data-capture/activity) - When using an Activity Selector in a Data Capture profile and wish to include all activities in an application package, you no longer have to manually enter each activity. You can now enter a single asterisk ( \* ) and all activities in that package will be selected. 
+	* [Multipule MX version support](/emdk-for-android/4-1/guide/profile-manager) - Profile manager now supports multiple MX versions. You can now choose between  MX 4.2, 4.4 and 5.0 when creating a new profile.
+	* [Profile Upgrade](/emdk-for-android/4-1/guide/profile-manager) - Profile manager now provides a method to upgrade an existing profile to use a higher version of MX.
+	* [Data Capture Activity Selection Wildcard](/emdk-for-android/4-1/mx/data-capture/activity) - When using an Activity Selector in a Data Capture profile and wish to include all activities in an application package, you no longer have to manually enter each activity. You can now enter a single asterisk ( \* ) and all activities in that package will be selected. 
 	* New MX 4.4 features
 		* Additional Locale support for SPANISH, US_SPANISH, BRAZILIAN PORTUGUESE and PORTUGUESE.
 		* Password Masking / Encryption for sensitive values in Certificate Manager and GPRS Manager.
@@ -63,13 +68,13 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 		* Vendor Specific DHCP Options – Supports vendor specific options for granular configuration control
 
 * New API's
-	* [Mobile Payment](/emdk-for-android/4-0/api/payment) - Provides API's to perform EMV and Magstripe Payment transactions when using the PD40 Payment device with MC40 JB and MC40 KK devices.
-	* [Serial Communication](/emdk-for-android/4-0/api/serialcomm) - Allows you to add DEX support in your application.
+	* [Mobile Payment](/emdk-for-android/4-1/api/payment) - Provides API's to perform EMV and Magstripe Payment transactions when using the PD40 Payment device with MC40 JB and MC40 KK devices.
+	* [Serial Communication](/emdk-for-android/4-1/api/serialcomm) - Allows you to add DEX support in your application.
     
         >Note: In order to use Serial **Read** functionality, you must first apply a patch provided in [SPR-28877](https://spr.motorolasolutions.com/ViewSPR.aspx?sprID=28877). To obtain this patch, contact Zebra Support.
 
 * New Guides
-	* [Barcode Scanner States](/emdk-for-android/4-0/guide/scanner)
+	* [Barcode Scanner States](/emdk-for-android/4-1/guide/scanner)
 
 **EMDK for Android v3.1 Update 1**
 
@@ -87,8 +92,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* PersonalShopper APIs for MC18
 	* SecureNFC APIs
 * New Guides
-	* Personal Shopper](/emdk-for-android/4-0/guide/personalshopper)
-	* Secure NFC](/emdk-for-android/4-0/guide/securenfc)
+	* Personal Shopper](/emdk-for-android/4-1/guide/personalshopper)
+	* Secure NFC](/emdk-for-android/4-1/guide/securenfc)
 
 **EMDK for Android v3.1**
 
@@ -142,19 +147,19 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 ## Components
 
 ### Profile Manager
-The EMDK's exclusive [Profile Manager](/emdk-for-android/4-0/guide/profile-manager) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.   
+The EMDK's exclusive [Profile Manager](/emdk-for-android/4-1/guide/profile-manager) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.   
 
 ### EMDK Device Runtime
-In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Setup Guide](/emdk-for-android/4-0/guide/setupDevice) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
+In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Setup Guide](/emdk-for-android/4-1/guide/setupDevice) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
 
 ### Samples & Programmer's Guide
-There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](/emdk-for-android/4-0/samples/) for more details on using these samples. You can also reference the [Programmers Guide](/emdk-for-android/4-0/tutorial/) for a complete walk-through of building your first EMDK For Android application.
+There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](/emdk-for-android/4-1/samples/) for more details on using these samples. You can also reference the [Programmers Guide](/emdk-for-android/4-1/tutorial/) for a complete walk-through of building your first EMDK For Android application.
 
 ### Java APIs
-The EMDK for Android offers access to the device's Barcode capabilities through [traditional native Java Barcode APIs](/emdk-for-android/4-0/api). Be sure to look at the [Barcode Scanning API tutorial.](/emdk-for-android/4-0/tutorial/tutBasicScanningAPI)
+The EMDK for Android offers access to the device's Barcode capabilities through [traditional native Java Barcode APIs](/emdk-for-android/4-1/api). Be sure to look at the [Barcode Scanning API tutorial.](/emdk-for-android/4-1/tutorial/tutBasicScanningAPI)
 
 ### Intent APIs
-The EMDK for Android will continue to support the [DataCapture](/emdk-for-android/4-0/guide/reference/refdatacaptureintent) and [Battery Intent](/emdk-for-android/4-0/guide/reference/refbatteryintent) APIs that were previously available on individual device types. 
+The EMDK for Android will continue to support the [DataCapture](/emdk-for-android/4-1/guide/reference/refdatacaptureintent) and [Battery Intent](/emdk-for-android/4-1/guide/reference/refbatteryintent) APIs that were previously available on individual device types. 
 
 <a name="faqs"></a>
 <!--

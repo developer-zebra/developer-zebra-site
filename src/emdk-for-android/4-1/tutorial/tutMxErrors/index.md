@@ -14,12 +14,12 @@ The goal here is to make you understand how to find errors and correct them if t
 
 > Note: Provide "MxErrorsTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectAndroidStudio).
+If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/tutCreateProjectEclipseADT).  
+If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
 
 ## Adding the MX Errors Profile that includes Clock feature
-1. Click [here](/emdk-for-android/4-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/4-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "MxErrorsProfile" as the Profile Name for this tutorial.
 
@@ -191,7 +191,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-0/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/4-1/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 
@@ -392,7 +392,7 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 		  <characteristic type="Clock" version="4.2">
 		    <parm name="AutoTime" value="false"/>
 			<parm-error name="TimeZone" value="MMT" desc="Invalid TimeZone"/>
-			<parm name="Date" value="2014-06-27"/>
+			<parm name="Date" value="2014-16-27"/>
 			<parm name="Time" value="15:00:00"/>
 		  </characteristic>
 		</wap-provisioningdoc>
@@ -423,7 +423,7 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 		  <characteristic type="Clock" version="4.2">
 			<parm name="AutoTime" value="false"/>
 			<parm name="TimeZone" value="GMT+05:30"/>
-			<parm name="Date" value="2014-06-27"/>
+			<parm name="Date" value="2014-16-27"/>
 			<parm name="Time" value="15:00:00"/>
 		  </characteristic>
 		</wap-provisioningdoc>

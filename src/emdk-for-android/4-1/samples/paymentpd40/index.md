@@ -39,8 +39,8 @@ This sample demonstrates how to update firmware in the PD40 Mobile Payment devic
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)
+* [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 ##Prerequisites
 - Java JDK 
@@ -52,13 +52,13 @@ The following guide will walk you through setting up the EMDK samples in your ID
 * One of the approved devices listed above
 * PD40 payment device
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/4-0/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-0/guide/emdksamples_eclipse)
+* [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
+* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 ##Using This Sample
 

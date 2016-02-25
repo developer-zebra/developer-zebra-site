@@ -3,7 +3,7 @@ title: Extended Status Information User Guide
 ---
 
 ##Introduction 
-The [EMDKResults](/emdk-for-xamarin/1-0/api/EMDKResults) class exposes an Enum ( EXTENDED_STATUS_CODE ). Inspecting that Enum after a profile has been processed could provide detailed error information that may have occured while being processed. 
+The [EMDKResults](/emdk-for-xamarin/2-0/api/EMDKResults) class exposes an Enum ( EXTENDED_STATUS_CODE ). Inspecting that Enum after a profile has been processed could provide detailed error information that may have occured while being processed. 
 
 
 ### Section of EMDKConfig.xml
@@ -29,7 +29,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -80,7 +80,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -127,7 +127,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -190,7 +190,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -252,7 +252,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -299,7 +299,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -343,7 +343,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">
@@ -400,7 +400,7 @@ Feature Name.
     <parm name="emdk_name" value="Clk01"/>
     <parm name="AutoTime" value="false"/>
     <parm name="TimeZone" value="GMT+05:30"/>
-    <parm name="Date" value="2001-01-01"/>
+    <parm name="Date" value="2002-02-01"/>
     <parm name="Time" value="01:01:01"/>
     </characteristic>
     <characteristic type="Clock" version="4.2">

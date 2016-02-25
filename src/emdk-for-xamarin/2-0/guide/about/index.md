@@ -4,6 +4,10 @@ title:  EMDK For Xamarin - 1.0
 The EMDK for Xamarin v1.0 provides developers with a comprehensive set of tools to easily create powerful line of business applications for Android enterprise mobile computing devices while retaining their C# skills and tools. The EMDK for Xamarin includes class libraries, sample applications with source code, as well as all of the associated documentation to help your applications take full advantage of what Zebra Technologies devices have to offer.
 
 ##What's New
+**Version 2.0
+
+
+
 
 **Version 1.0**
 

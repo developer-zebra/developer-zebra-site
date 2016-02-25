@@ -6,19 +6,19 @@ menu:
   img: /emdk-for-xamarin/images/logo.png
   items:
     - title: Home
-      url: /emdk-for-xamarin/1-0/guide/about
+      url: /emdk-for-xamarin/2-0/guide/about
     - title: Getting Started
-      url: /emdk-for-xamarin/1-0/guide/gettingstarted
+      url: /emdk-for-xamarin/2-0/guide/gettingstarted
     - title: Tutorials
-      url: /emdk-for-xamarin/1-0/tutorial/
+      url: /emdk-for-xamarin/2-0/tutorial/
     - title: Samples
-      url: /emdk-for-xamarin/1-0/samples
+      url: /emdk-for-xamarin/2-0/samples
     - title: Profile Manager
-      url: /emdk-for-xamarin/1-0/guide/profile-manager-guides
+      url: /emdk-for-xamarin/2-0/guide/profile-manager-guides
     - title: APIs
-      url: /emdk-for-xamarin/1-0/api
+      url: /emdk-for-xamarin/2-0/api
     - icon: fa fa-search
-      url: /emdk-for-xamarin/1-0/search
+      url: /emdk-for-xamarin/2-0/search
         
 ---
 

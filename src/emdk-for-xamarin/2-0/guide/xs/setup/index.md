@@ -73,5 +73,5 @@ Mac:
 * Remove File - /Users/Shared/Symbol EMDK for Xamarin\Deployment.bat
 
 ## What's Next
-In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/1-0/guide/component/install)
+In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-0/guide/component/install)
 

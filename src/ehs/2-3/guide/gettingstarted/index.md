@@ -1,27 +1,30 @@
 ---
 title: Getting Started
-description: If you are just getting started, follow the guides below to get your development environment setup properly and understand the foundations for using Enteprise Home Screen features.
+description: If you're just getting started with Enterprise Home Screen, these guides will ensure a trouble-free experience for from proper setup through the use of advanced features.
 layout: list-content-items.html
+
 content-items:
     - type: section
       level: 4
-      title: Step 1
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      title: Setup Guide
+      text: A step-by-step guide to installation and proper configuration of Enterprise Home Screen on a device 
       url: #
     - type: section
       level: 4
-      title: Step 2
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      title: Deployment Guide
+      text: How to use your MDM to deploy Enterprise Home Screen to your company's devices
       url: #
     - type: section
       level: 4
-      title: Step 3
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      title: Advanced Settings
+      text: A complete guide to the EnterpriseHomeScreen.XML configuration file
       url: #
     - type: section
       level: 4
-      title: Step 4
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      title: Advanced Features
+      text: This section includes Kiosk mode, Secure mode, Admin mode and Certificate usage
       url: #
 
 ---    
+
+  

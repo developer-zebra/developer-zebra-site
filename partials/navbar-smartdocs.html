@@ -1,0 +1,276 @@
+<nav class="navbar  navbar-inverse" role="navigation" id="smartdocs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+      <ul class="nav navbar-nav">
+     	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
+     	<li><button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button></li>
+     	<li><p class="navbar-text"> </p></li>
+     	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-mx-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MX: All <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			  <li class="smartdocs-mx" data-value="" ><a>All</a></li>
+			  <li class="smartdocs-mx" data-value="4.0" ><a>4.0</a></li>
+			  <li class="smartdocs-mx" data-value="4.1" ><a>4.1</a></li>
+			  <li class="smartdocs-mx" data-value="4.2" ><a>4.2</a></li>
+			  <li class="smartdocs-mx" data-value="4.3" ><a>4.3</a></li>
+			  <li class="smartdocs-mx" data-value="5.0" ><a>5.0</a></li>
+          </ul>
+        </li>
+     	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-osx-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OSX: All <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			  <li class="smartdocs-osx" data-value="" ><a>All</a></li>
+			  <li class="smartdocs-osx" data-value="1.0" ><a>1.0</a></li>
+			  <li class="smartdocs-osx" data-value="1.2" ><a>1.2</a></li>
+			  <li class="smartdocs-osx" data-value="1.3.4-56" ><a>1.3.4-56</a></li>
+			  <li class="smartdocs-osx" data-value="3.4" ><a>3.4</a></li>
+			  <li class="smartdocs-osx" data-value="3.5" ><a>3.5</a></li>
+			  <li class="smartdocs-osx" data-value="3.6" ><a>3.6</a></li>
+			  <li class="smartdocs-osx" data-value="4.1" ><a>4.1</a></li>
+			  <li class="smartdocs-osx" data-value="4.2" ><a>4.2</a></li>
+			  <li class="smartdocs-osx" data-value="4.3" ><a>4.3</a></li>
+			  <li class="smartdocs-osx" data-value="4.4" ><a>4.4</a></li>
+
+          </ul>
+        </li>
+     	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-api-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Android: All <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			  <li class="smartdocs-api" data-value="" ><a>All</a></li>
+			  <li class="smartdocs-api" data-value="22"><a>5.1 Lollipop</a></li>
+			  <li class="smartdocs-api" data-value="21"><a>5.0 Lollipop</a></li>
+			  <li class="smartdocs-api" data-value="19"><a>4.4 Kitkat</a></li>
+			  <li class="smartdocs-api" data-value="18"><a>4.3 Jellybean</a></li>
+			  <li class="smartdocs-api" data-value="17"><a>4.2.x Jellybean</a></li>
+			  <li class="smartdocs-api" data-value="16"><a>4.1.x Jellybean</a></li>
+			  <li class="smartdocs-api" data-value="15"><a>4.0.3-4.0.4 Ice Cream Sandwic</h</li>
+			  <li class="smartdocs-api" data-value="14"><a>4.0-4.0.2 Ice Cream Sandwich</a></li>
+			  <li class="smartdocs-api" data-value="10"><a>2.3.3-2.3.4 Gingerbread</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<script type="text/javascript">
+
+	var smartdocOptions = {
+		enabled: false,
+		mx: "",
+		osx: "",
+		api: ""
+	}
+
+	var parseVersionFloat = function (versionString) {
+	    var versionArray = ("" + versionString)
+	            .replace("_", ".")
+	            .replace(/[^0-9.]/g, "")
+	            .split("."),
+	        sum = 0;
+	    for (var i = 0; i < versionArray.length; ++i) {
+	        sum += Number(versionArray[i]) / Math.pow(10, i * 3);
+	    }
+	    // console.log(versionString + " -> " + sum);
+	    return sum;
+	}
+	
+    var showelement = function(el){
+        el.removeClass( "not-available" )
+    }
+    var hideelement = function(el){
+        el.addClass( "not-available" )
+    }
+    var clear = function(selection){
+    	if(selection =='mx' || selection =='all'){
+	        $('[data-mx]').each(function() {
+	            showelement($(this));
+	        });
+
+    	}
+    	if(selection =='osx' || selection =='all'){
+	        $('[data-osx]').each(function() {
+	            showelement($(this));
+	        });
+    	}
+    	if(selection =='api' || selection =='all'){
+	        $('[data-api]').each(function() {
+	            showelement($(this));
+	        });
+    	}
+    }
+    var smartdocsStatus = function(enabled){
+    	if(enabled){
+				smartdocOptions.enabled = true;
+  				$("#smartdocs-status").addClass("btn-primary");
+  				$("#smartdocs-status").removeClass("btn-default");    		
+    	}
+    	else{
+				smartdocOptions.enabled = false;
+  				$("#smartdocs-status").removeClass("btn-primary");
+  				$("#smartdocs-status").addClass("btn-default");
+  				
+  				clear('all');    		
+    	}
+    }
+    var showmx = function(haveVersion){
+    	clear('mx');
+    	smartdocOptions.mx = haveVersion;
+        $('[data-mx]').each(function() {
+            var needVersion = $(this).attr("data-mx");
+            console.log("Have")
+            console.log(parseVersionFloat(haveVersion));
+            console.log("Need")
+            console.log(parseVersionFloat(needVersion));
+            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
+                hideelement($(this));
+            }
+            else{
+                // showelement($(this));
+            }
+            
+        });
+        smartdocsStatus(true);
+    }
+    var showapi = function(haveVersion){
+        clear('api');
+    	smartdocOptions.api = haveVersion;
+        $('[data-api]').each(function() {
+            var needVersion = $(this).attr("data-api");
+
+            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
+                hideelement($(this));
+            }
+            else{
+                // showelement($(this));
+            }
+            
+        });
+        smartdocsStatus(true);
+    }
+
+    var showosx = function(haveVersion){
+        clear('osx');
+    	smartdocOptions.osx = haveVersion;
+        $('[data-osx]').each(function() {
+            var needVersions = $(this).attr("data-osx").split(",");
+            var versionStrict = $(this).attr("data-osx-specific");
+            if(typeof(versionStrict)!='undefined' && versionStrict!=''){
+                console.log('Using Strict OSX Match')
+                var match=false;
+                for (var i = 0; i < needVersions.length; i++) {
+                    
+                    if(parseVersionFloat(needVersions[i]) == parseVersionFloat(haveVersion)){
+                        match=true;
+                        
+                    }
+                    else{
+                        match=false;
+                    }
+                };
+
+                if(match){
+                    // $( this ).fadeTo( "slow", 0.40 )
+                    hideelement($(this));
+                }
+                else{
+                    // showelement($(this));
+                }
+
+            }
+            else{
+                var okinlist=false;
+                for (var i = 0; i < needVersions.length; i++) {
+					// console.log("Have")
+		   //          console.log(parseVersionFloat(haveVersion));
+		   //          console.log("Need")
+		   //          console.log(parseVersionFloat(needVersions[i]));                	
+                    if( parseVersionFloat(haveVersion) >= parseVersionFloat(needVersions[i])){
+                        okinlist=true;
+                        break;
+                    }
+                };
+                if(!okinlist){
+                	console.log("Hiding: " + match)
+                    hideelement($(this));
+                }
+                else{
+                    // showelement($(this));
+                }
+
+            }
+            
+        });
+        smartdocsStatus(true);
+
+    }
+
+    $(document).ready(function() {
+		$( "#smartdocs-help" ).click(function() {
+  			console.log('Show SmartDocs help');
+  			
+		});
+		$(window).bind('scroll', function() {
+
+			var navHeight = 200; // custom nav height
+			($(window).scrollTop() > navHeight) ? $('#smartdocs').addClass('goToTop') : $('nav').removeClass('goToTop');
+
+		});
+
+		$( "#smartdocs-status" ).click(function() {
+  			console.log('Change Status');
+  			console.log(smartdocOptions);
+  			smartdocsStatus(!smartdocOptions.enabled);
+  			if(smartdocOptions.enabled){
+  				showmx(smartdocOptions.mx);
+  				showosx(smartdocOptions.osx);
+  				showapi(smartdocOptions.api);
+  			}
+		});
+
+		$( ".smartdocs-mx" ).click(function() {
+			var mx=$(this).attr("data-value");
+
+  			console.log('Setting mx');
+  			$("#smartdocs-mx-selected").html("MX: " + $(this).text() + '<span class="caret"></span>');
+  			if(mx ==""){
+  				clear('mx')
+  			}
+  			else{
+	  			showmx(mx);
+	  		}
+		});
+		$( ".smartdocs-osx" ).click(function() {
+			var osx=$(this).attr("data-value");
+  			$("#smartdocs-osx-selected").html("OSX: " + $(this).text() + '<span class="caret"></span>');
+  			console.log('Setting osx');
+  			if(osx ==""){
+  				clear('osx')
+  			}
+  			else{
+  				showosx(osx);
+  			}
+		});
+		$( ".smartdocs-api" ).click(function() {
+			var api=$(this).attr("data-value");
+  			$("#smartdocs-api-selected").html("Android: " + $(this).text() + '<span class="caret"></span>');
+  			console.log('Setting api');
+  			if(api ==""){
+  				clear('api')
+  			}
+  			else{
+  				showapi(api);
+  			}
+		});
+
+    	
+
+    });
+</script>

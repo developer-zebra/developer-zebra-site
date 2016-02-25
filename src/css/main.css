@@ -1394,3 +1394,10 @@ ul.nostyle i {
     opacity:0.4;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
+
+.goToTop {
+  position: fixed;
+  top: 100px;
+  width:inherit;
+  z-index: 1;
+}

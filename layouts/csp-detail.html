@@ -31,6 +31,11 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
+                        {{>navbar-smartdocs}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
 
                             <section id="services" >
                                 <div class="">
@@ -41,7 +46,13 @@
                                 
                                 {{#each collections.csp}}
                                 {{#is ../csp this.csp}}
-                                <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}">
+                                    {{#is this.parm.type "list"}}
+                                        <div class="" >
+                                    
+                                    {{else}}
+                                        <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
+
+                                    {{/is}}
                                     <h2 class="">{{this.title}}</h2>
                                     <p class="">{{{this.contents}}}</p>
                                     {{#is this.type "parm"}}
@@ -78,7 +89,7 @@
                                     
                                     
                                     {{#is this.parm.type "list"}}
-                                    <div data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}">
+                                    <div >
                                         <table class="table">
                                             <tr>
                                                 <th>Option</th>
@@ -87,7 +98,7 @@
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
-                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}">
+                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
@@ -126,86 +137,7 @@
         </div>
     </section>   
 
-<script type="text/javascript">
-    $(document).ready(function() {
 
-        var showelement = function(el){
-            el.removeClass( "not-available" )
-        }
-        var hideelement = function(el){
-            el.addClass( "not-available" )
-        }
-        var showmx = function(haveVersion){
-            $('[data-mx]').each(function() {
-                var needVersion = $(this).attr("data-mx");
-
-                if(haveVersion<needVersion){
-                    hideelement($(this));
-                }
-                else{
-                    showelement($(this));
-                }
-                
-            });
-        }
-        var showapi = function(haveVersion){
-            $('[data-api]').each(function() {
-                var needVersion = $(this).attr("data-api");
-
-                if(haveVersion<needVersion){
-                    hideelement($(this));
-                }
-                else{
-                    showelement($(this));
-                }
-                
-            });
-        }
-
-        var showosx = function(haveVersion){
-            $('[data-osx]').each(function() {
-                var needVersions = $(this).attr("data-osx").split(",");
-                var versionStrict = $(this).attr("data-osx-specific");
-                if(typeof(versionStrict)!='undefined' && versionStrict!=''){
-                    console.log('Using Strict OSX Match')
-                    var match=true;
-                    for (var i = 0; i < needVersions.length; i++) {
-                        if(needVersions[i] !=haveVersion){
-                            match=false;
-                            break;
-                        }
-                    };
-                    if(match){
-                        // $( this ).fadeTo( "slow", 0.40 )
-                        hideelement($(this));
-                    }
-                    else{
-                        showelement($(this));
-                    }
-
-                }
-                else{
-                    var match=false;
-                    for (var i = 0; i < needVersions.length; i++) {
-                        if( haveVersion < needVersions[i]){
-                            match=true;
-                            break;
-                        }
-                    };
-                    if(match){
-                        hideelement($(this));
-                    }
-                    else{
-                        showelement($(this));
-                    }
-
-                }
-                
-            });
-        }
-
-    });
-</script>
 
 {{> footer}}
 

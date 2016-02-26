@@ -63,6 +63,27 @@
     </div>
   </div>
 </nav>
+<div class="modal fade" id="modal-smartdocs-info" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+				<h4 class="modal-title">About <i class="fa fa-mobile fa-lg"></i> SmartDocs</h4>
+			</div>
+			<div class="modal-body">
+			<p>This document contains "SmartDocs" capabilities. This will allow you to easily see only the content that is relevant to the Zebra device you are working with.<br/><br/> MX Features will be available on a device based on a combination of factors:</p>
+			<ul>
+				<li><b>MX Version:</b> The version of MX on the device can be retrieved by <a href="/mx/mx-version-on-device/">following these instructions</a>. </li>
+				<li><b>OSX Version:</b> The version of OSX on the device can be retrieved by <a href="/mx/mx-version-on-device/">following these instructions</a>. Most features require a combination of OSX and MX in order to operate.</li>
+				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
+
+			</ul>
+			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+			</p>				
+			</div>
+	</div>
+  </div>
+</div>
 
 
 
@@ -287,6 +308,7 @@
 
 		$( "#smartdocs-help" ).click(function() {
   			console.log('Show SmartDocs help');
+  			$("#modal-smartdocs-info").modal({show: true});
   			
 		});
 		$(window).bind('scroll', function() {

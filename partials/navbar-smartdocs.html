@@ -66,7 +66,8 @@
 		enabled: false,
 		mx: "",
 		osx: "",
-		api: ""
+		api: "",
+		index: -1
 	}
 
 	var parseVersionFloat = function (versionString) {
@@ -82,27 +83,47 @@
 	    return sum;
 	}
 	
-    var showelement = function(el){
-        el.removeClass( "not-available" )
+    var showelement = function(el,filter){
+    	// console.log("Showing");
+    	// console.log(el);
+    	var filters=["mx","osx","api"];
+    	var otherhidden = false;
+    	//check if something else is hiden element
+    	for (var i = 0; i < filters.length; i++) {
+    		if(typeof(el.attr('data-filter-'+filters[i])) != 'undefined' && filters[i] != filter){
+    			otherhidden=true;
+    			break;
+    		}
+    	};
+    	if(!otherhidden){
+    		// console.log("Not Showing something else has it hidden");
+	        el.removeClass( "not-available" );
+	        el.removeAttr('data-filter');
+    	}
+        el.removeAttr('data-filter-'+filter);
     }
-    var hideelement = function(el){
-        el.addClass( "not-available" )
+    var hideelement = function(el,filter){
+    	// console.log("Hiding");
+    	// console.log(el);
+        el.addClass( "not-available" );
+        el.attr('data-filter-'+filter,"");
+        el.attr('data-filter',"");
     }
     var clear = function(selection){
     	if(selection =='mx' || selection =='all'){
 	        $('[data-mx]').each(function() {
-	            showelement($(this));
+	            showelement($(this),'mx');
 	        });
 
     	}
     	if(selection =='osx' || selection =='all'){
 	        $('[data-osx]').each(function() {
-	            showelement($(this));
+	            showelement($(this),'osx');
 	        });
     	}
     	if(selection =='api' || selection =='all'){
 	        $('[data-api]').each(function() {
-	            showelement($(this));
+	            showelement($(this),'api');
 	        });
     	}
     }
@@ -116,8 +137,6 @@
 				smartdocOptions.enabled = false;
   				$("#smartdocs-status").removeClass("btn-primary");
   				$("#smartdocs-status").addClass("btn-default");
-  				
-  				clear('all');    		
     	}
     }
     var showmx = function(haveVersion){
@@ -125,12 +144,12 @@
     	smartdocOptions.mx = haveVersion;
         $('[data-mx]').each(function() {
             var needVersion = $(this).attr("data-mx");
-            console.log("Have")
-            console.log(parseVersionFloat(haveVersion));
-            console.log("Need")
-            console.log(parseVersionFloat(needVersion));
+            // console.log("Have")
+            // console.log(parseVersionFloat(haveVersion));
+            // console.log("Need")
+            // console.log(parseVersionFloat(needVersion));
             if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
-                hideelement($(this));
+                hideelement($(this),'mx');
             }
             else{
                 // showelement($(this));
@@ -146,7 +165,7 @@
             var needVersion = $(this).attr("data-api");
 
             if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
-                hideelement($(this));
+                hideelement($(this),'api');
             }
             else{
                 // showelement($(this));
@@ -178,7 +197,7 @@
 
                 if(match){
                     // $( this ).fadeTo( "slow", 0.40 )
-                    hideelement($(this));
+                    hideelement($(this),'osx');
                 }
                 else{
                     // showelement($(this));
@@ -199,7 +218,7 @@
                 };
                 if(!okinlist){
                 	console.log("Hiding: " + match)
-                    hideelement($(this));
+                    hideelement($(this),'osx');
                 }
                 else{
                     // showelement($(this));
@@ -212,7 +231,61 @@
 
     }
 
+    var gotoNextAvailable = function() {
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+
+    	if(filtered.length>0 ){
+		    var max_index = filtered.length-1;
+		    
+		    smartdocOptions.index  = smartdocOptions.index  + 1;
+		    if(smartdocOptions.index >max_index){
+		    	smartdocOptions.index  = 0; //loop
+		    }
+		    var target = $(filtered[smartdocOptions.index ]);
+	    	$('html, body').animate({
+	            scrollTop: target.offset().top - 220
+	        }, 1000);
+	        
+
+    	}
+
+    }
+    var gotoPrevAvailable = function() {
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+    	if(filtered.length>0 ){
+		    var max_index = filtered.length-1;
+		    
+		    smartdocOptions.index  = smartdocOptions.index  - 1;
+		    if(smartdocOptions.index == -1){
+		    	smartdocOptions.index  = max_index; //loop
+		    }
+		    var target = $(filtered[smartdocOptions.index ]);
+	    	$('html, body').animate({
+	            scrollTop: target.offset().top - 220
+	        }, 1000);
+	        
+
+    	}
+    }
+    var gotoPrevAvailable = function() {
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+    	var index = smartdocOptions.index || 0;
+
+    	if(filtered.length>0 && index < (filtered.length-1)){
+	    	var target = $(filtered[index]);
+	    	$('html, body').animate({
+	            scrollTop: target.offset().top - 200
+	        }, 1000);
+	        
+
+	        smartdocOptions.index = index + 1;
+
+    	}
+
+    }
+
     $(document).ready(function() {
+
 		$( "#smartdocs-help" ).click(function() {
   			console.log('Show SmartDocs help');
   			
@@ -227,11 +300,21 @@
 		$( "#smartdocs-status" ).click(function() {
   			console.log('Change Status');
   			console.log(smartdocOptions);
-  			smartdocsStatus(!smartdocOptions.enabled);
+  			
   			if(smartdocOptions.enabled){
-  				showmx(smartdocOptions.mx);
-  				showosx(smartdocOptions.osx);
-  				showapi(smartdocOptions.api);
+  				//clear settings
+  				smartdocsStatus(!smartdocOptions.enabled);
+  				smartdocOptions = {
+					enabled: false,
+					mx: "",
+					osx: "",
+					api: ""
+				};
+				$("#smartdocs-mx-selected").html("MX: All" + '<span class="caret"></span>');
+  				$("#smartdocs-osx-selected").html("OSX: All" + '<span class="caret"></span>');
+  				$("#smartdocs-api-selected").html("Android: All" + '<span class="caret"></span>');
+  				clear('all');    		
+  				
   			}
 		});
 

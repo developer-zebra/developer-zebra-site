@@ -6,7 +6,7 @@ content-items:
     - type: section
       level: 4
       title: Download and Install
-      text: How to download the EHS app, push it to the device and install  
+      text: How to download the EHS app, push it to the device and install it 
       url: /ehs/2-3/download
     - type: section
       level: 4
@@ -21,7 +21,7 @@ content-items:
     - type: section
       level: 4
       title: Advanced Features
-      text:  Undxerstanding Kiosk mode, Secure mode, Admin mode and Certificate usage
+      text:  Understanding Kiosk mode, Secure mode, Admin mode and Certificate usage
       url: /ehs/2-3/advancedFeatures
 ---
 

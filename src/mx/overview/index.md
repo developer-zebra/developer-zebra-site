@@ -88,11 +88,11 @@ System components:
 	* Core Applications
 
 ### Overview
-![img](architecture-overview.png)
+![img](architecture-overview.PNG)
 
 ### Android Device BSP
 
-![img](architecture-bsp.png)
+![img](architecture-bsp.PNG)
 
 
 ## MX on Devices

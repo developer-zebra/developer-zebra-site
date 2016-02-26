@@ -6,7 +6,14 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-main">
       <ul class="nav navbar-nav">
      	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
-     	<li><button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button></li>
+     	<li>
+     		<div class="btn-group" role="group" aria-label="...">
+     			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+
+     			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
+     			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+     		</div>
+     	</li>
      	<li><p class="navbar-text"> </p></li>
      	<li class="dropdown">
           <a href="#" class="dropdown-toggle" id="smartdocs-mx-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MX: All <span class="caret"></span></a>
@@ -128,15 +135,22 @@
     	}
     }
     var smartdocsStatus = function(enabled){
-    	if(enabled){
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+
+    	if(enabled & filtered.length>0){
 				smartdocOptions.enabled = true;
   				$("#smartdocs-status").addClass("btn-primary");
   				$("#smartdocs-status").removeClass("btn-default");    		
+  				$("#smartdocs-prev").show();
+  				$("#smartdocs-next").show();
+  						
     	}
     	else{
 				smartdocOptions.enabled = false;
   				$("#smartdocs-status").removeClass("btn-primary");
   				$("#smartdocs-status").addClass("btn-default");
+  				$("#smartdocs-prev").hide();
+  				$("#smartdocs-next").hide();
     	}
     }
     var showmx = function(haveVersion){
@@ -267,22 +281,7 @@
 
     	}
     }
-    var gotoPrevAvailable = function() {
-    	var filtered = $('[data-smartdoc]').not('[data-filter]');
-    	var index = smartdocOptions.index || 0;
-
-    	if(filtered.length>0 && index < (filtered.length-1)){
-	    	var target = $(filtered[index]);
-	    	$('html, body').animate({
-	            scrollTop: target.offset().top - 200
-	        }, 1000);
-	        
-
-	        smartdocOptions.index = index + 1;
-
-    	}
-
-    }
+    
 
     $(document).ready(function() {
 
@@ -317,7 +316,12 @@
   				
   			}
 		});
-
+		$( "#smartdocs-next" ).click(function() {
+			gotoNextAvailable();
+		});
+		$( "#smartdocs-prev" ).click(function() {
+			gotoPrevAvailable();
+		});
 		$( ".smartdocs-mx" ).click(function() {
 			var mx=$(this).attr("data-value");
 

@@ -22,11 +22,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
 </td>
 <td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     Android name</font></b></p>
 </td>
 <td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     Android version</font></b></p>
 </td>
 </tr>
@@ -36,11 +36,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">ET1 </font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Jelly Bean</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    Jelly Bean</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
 </td>
 </tr>
 
@@ -49,10 +49,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">Jelly Bean</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">Jelly Bean</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
 </td>
 </tr>
 
@@ -61,10 +61,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
 </td>
 </tr>
 
@@ -73,10 +73,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Jelly Bean</font></b></p></td>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    Jelly Bean</font></p></td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
 </td>
 
 </tr>
@@ -85,11 +85,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    KitKat</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
 </td>
 </tr>
 
@@ -98,11 +98,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Jelly Bean</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    Jelly Bean</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
 </td>
 </tr>
 
@@ -111,11 +111,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Jelly Bean</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    Jelly Bean</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
 </td>
 </tr>
 
@@ -124,11 +124,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    KitKat</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4.2</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.2</font></p>
 </td>
 </tr>
 
@@ -137,11 +137,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    KitKat</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4.3</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.3</font></p>
 </td>
 </tr>
 
@@ -150,11 +150,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    KitKat</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
 </td>
 </tr>
 
@@ -163,11 +163,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    4.4</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    4.4</font></p>
 </td>
 </tr>
 
@@ -176,11 +176,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    4.4</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    4.4</font></p>
 </td>
 </tr>
 
@@ -189,12 +189,20 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    4.4</font></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    4.4</font></p>
 </td>
 </tr>
 </tbody>
 </table>
+
+## What's New
+
+New features in Enterprise Home Screen 2.3:
+
+* Enable/disable device reboot when EHS is first launched after installation. Disabled by default. To enable, set a value of "1" in the &lt;reboot_on_install_enabled&gt; tag. 
+* TC8000 KitKat version 4.4 support (added January, 2016)
+

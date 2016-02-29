@@ -1,5 +1,5 @@
 ---
-title: Enterprise Home Screen Downloads
+title: Download Enterprise Home Screen
 layout: guide.html
 ---
 

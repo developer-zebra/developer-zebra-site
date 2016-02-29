@@ -1,6 +1,6 @@
 ---
 title: Guides
-description: Enterprise Home Screen replaces the default Android app launcher and home screen with a secure launcher that's easy to configure and lock down. Use the following guides to   
+description: Enterprise Home Screen replaces the default Android app launcher and home screen with a secure launcher that's easy to configure and lock down. The following guides provide all the information required to customize this powerful tool for the specific needs of any enterprise or department. 
 layout: list-content-items.html
 content-items:
     - type: section
@@ -16,12 +16,12 @@ content-items:
     - type: section
       level: 4
       title: Advanced Configuration
-      text: Controlling Enterprise Home Screen through its configuration XML file
+      text: How to control Enterprise Home Screen through its XML configuration file
       url: #
     - type: section
       level: 4
-      title: Item 4
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      title: Deployment
+      text: Individual and mass deployment of Enterprise Home Screen with customized settings 
       url: #
 
 ---

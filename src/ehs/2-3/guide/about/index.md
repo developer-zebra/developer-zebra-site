@@ -9,222 +9,191 @@ Enterprise Home Screen is a free Android app from Zebra Technologies that provid
 
 EHS works by inserting itself in place of the stock Android app launcher and home screen. When first run, it presents a screen like the one above, offering a choice of which home app to open and whether to make the selection permanent. EHS also can be initially configured to be the default launcher, bypassing the selector dialog. 
 
-[Download Enterprise Homescreen](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
+[Download Enterprise Home Screen](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
 
-## Requirements
-This version of Enterprise Home Screen has been approved by Zebra for use with the Zebra Android devices listed below. The tool also works on many consumer-grade Android devices. 
+## Supported Devices
+This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below. EHS also works on many consumer Android devices. 
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
+
 <tr>
-<td style="width: 250.35pt;" width="250">
+<td style="width: 200pt;" width="250">
 <p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
 </td>
 <td style="width: 140px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_020300.apk</font></b></p>
+    Android name</font></b></p>
 </td>
 <td style="width: 140px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_L_020300.apk</font></b></p>
-</td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_R_020300.apk </font></b></p>
+    Android version</font></b></p>
 </td>
 </tr>
+
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal"><font color="#333399" size="3">ET1 Jelly Bean (Android 4.1)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">ET1 </font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
+    Jelly Bean</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
 </td>
 </tr>
+
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40 Jelly Bean (Android 4.1)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">Jelly Bean</font></b></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
 </td>
 </tr>
+
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40 KitKat (Android 4.4)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4</font></b></p>
+</td>
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    Jelly Bean</font></b></p></td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
 </td>
 
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
 </tr>
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55 Jelly Bean (Android 4.1)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p></td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+    KitKat</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4</font></b></p>
 </td>
 </tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC67 Jelly Bean (Android 4.1)</font></p>
-</td>
 
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC32 Jelly Bean (Android 4.1)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-</tr>
 <tr>
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70 KitKat (Android 4.4.2) - BSP version 112414</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
+    Jelly Bean</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
 </td>
 </tr>
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70 KitKat (Android 4.4.3) </font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
+
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC75 KitKat (Android 4.4)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
+    Jelly Bean</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.1</font></b></p>
 </td>
 </tr>
+
 <tr>
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC18 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
+    KitKat</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4.2</font></b></p>
 </td>
 </tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC92 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
+
 <tr >
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC8000 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
+    KitKat</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4.3</font></b></p>
+</td>
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    KitKat</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">4.4</font></b></p>
+</td>
+</tr>
+
+<tr>
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    4.4</font></b></p>
+</td>
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    4.4</font></b></p>
+</td>
+</tr>
+
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">KitKat</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    4.4</font></b></p>
 </td>
 </tr>
 </tbody>

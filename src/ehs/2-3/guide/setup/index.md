@@ -5,34 +5,22 @@ layout: list-content-items.html
 content-items:
     - type: section
       level: 4
-      title: Download and Install
-      text: How to download the EHS app, push it to the device and install it 
+      title: Download
+      text: Links to current and prior EHS downloads 
       url: /ehs/2-3/download
     - type: section
       level: 4
-      title: Initial Setup
-      text: What to expect when running EHS for the first time
-      url: /ehs/2-3/setup
+      title: Install
+      text: How to install EHS and what to expect when running for the first time
+      url: /ehs/2-3/guide/install
     - type: section
       level: 4
-      title: Advanced Configuration
-      text: Understanding the EnterpriseHomeScreen.XML configuration file
-      url: /ehs/2-3/advancedSettings
+      title: Configure
+      text: How to use the EnterpriseHomeScreen.XML configuration file
+      url: /ehs/2-3/guide/config
     - type: section
       level: 4
-      title: Advanced Features
-      text:  Understanding Kiosk mode, Secure mode, Admin mode and Certificate usage
-      url: /ehs/2-3/advancedFeatures
+      title: Advanced Features and Settings
+      text:  Kiosk mode, Secure mode, Admin mode and Certificate usage
+      url: /ehs/2-3/guide/advanced
 ---
-
-## Setup Guide
-
-1- Download
-2- Install
-3- Select apps
-4- Restart device
-
-
-## Supported Devices
-Enterprise Home Screen works with most Zebra Android devices and many consumer-grade Android devices. Please refer to the [About page](/about) for a complete [list of supported devices](/about?Requirements). 
-

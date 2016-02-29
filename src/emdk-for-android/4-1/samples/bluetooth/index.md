@@ -5,13 +5,10 @@ description: This sample application will show you how to enable or disable the 
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileWirelessMgrSample1.zip    
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileWirelessMgrSample1.zip      
+     
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWirelessMgrSample1
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfileWirelessMgrSample1
 
 features: 
   - Profile Manager
@@ -36,19 +33,10 @@ screenshots:
 ##Overview##
 This sample application will show you how to enable or disable the bluetooth radio on a device
 
-##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
-
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 
 ##Using This Sample

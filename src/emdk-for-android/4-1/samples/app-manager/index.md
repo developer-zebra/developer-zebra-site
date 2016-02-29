@@ -4,15 +4,11 @@ title: App Manager
 description: Shows how to use the EMDK for Android Profile APIs to manage App Manager profiles.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileAppMgrSample1.zip
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileAppMgrSample1.zip   
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileAppMgrSample1.zip 
     
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileAppMgrSample1
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfileAppMgrSample1
 features: 
   - Profile Manager
   - App Manager
@@ -46,19 +42,10 @@ The available actions are:
 
 This sample application will allow you to install, upgrade, and uninstall an application. 
 
-##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
-
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 
 ##Using This Sample

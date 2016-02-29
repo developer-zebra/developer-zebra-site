@@ -13,10 +13,7 @@ So now we will create a tutorial using Mx [Browser Manager](../../mx/browsermgr)
 
 > Note: 1. Provide "BrowserManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4.  
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
-
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding The Browser Manager Profile Feature
 1. Click [here](/emdk-for-android/4-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.

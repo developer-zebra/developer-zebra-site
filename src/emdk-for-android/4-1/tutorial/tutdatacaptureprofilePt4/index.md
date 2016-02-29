@@ -7,9 +7,6 @@ This guide will walk you through adding broadcast intent support to the Android 
 
 ###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android 
 * Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-1/tutorial/tutdatacaptureprofile)
 * Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/4-1/tutorial/tutdatacaptureprofilePt2)
 * Completion of [Developing an EMDK for Android Application Part 3](/emdk-for-android/4-1/tutorial/tutdatacaptureprofilePt3)
@@ -21,14 +18,14 @@ For more information about setting up the EMDK please see the EMDK [Setup](/emdk
 ###Adding Broadcast Intent Activity
 First we will add a new activity that will be used for listening and displaying Barcode data to the user. 
 
-1. Select "EMDKSample" from "Package Explorer" in Eclipse/Android Studio.
+1. Select "EMDKSample" from "Package Explorer" in Android Studio.
 
 2. Right click and create a new "Empty Activity" with the name "BroadcastIntentActivity"     
 
 ###Updating Main Activity
 Next we will update "MainActivity", adding a button to launch our "BroadcastIntentActivity".
 
-1. Select "activity_main.xml" from "Package Explorer" in Eclipse/Android Studio.  
+1. Select "activity_main.xml" from "Package Explorer" in Android Studio.  
 	  
 2. Add the following Button to "activity_main.xml". This Button will be used for opening "BroadcastIntentActivity".  
 
@@ -43,7 +40,7 @@ Next we will update "MainActivity", adding a button to launch our "BroadcastInte
 		android:text="Broadcast Intent" " /> 
 
 	![img](../../images/setup/image171.jpg)  
-3. Select "MainActivity.java" from "Package Explorer" in Eclipse. 
+3. Select "MainActivity.java" from "Package Explorer". 
 
 	![img](../../images/setup/image172.jpg) 
 4. Declare a variable inside "MainActivity" to store "buttonBroadcastIntent". 
@@ -90,7 +87,7 @@ Next we will update "MainActivity", adding a button to launch our "BroadcastInte
 ###Creating Broadcast Intent UI
 Then we will create the UI for displaying Barcode data to the user. 
 
-1. Select "activity_msr.xml" from "Package Explorer" in Eclipse.  
+1. Select "activity_msr.xml" from "Package Explorer".  
  
 2. Remove the default "TextView". 
 3. Add the following TextView. 
@@ -185,7 +182,7 @@ Next will will create a Data Capture profile that will be active on "BroadcastIn
 ###Registering for the Broadcast Intent profile
 Now will register our new Data Capture profile in "MainActivity".
 
-1. Select "MainActivity.java" from "Package Explorer" in Eclipse. 
+1. Select "MainActivity.java" from "Package Explorer". 
 
 	![img](../../images/setup/image189.jpg)
  
@@ -213,7 +210,7 @@ Now will register our new Data Capture profile in "MainActivity".
 ###Handling Broadcast Intents
 Newt we will add the code to listen for our Broadcast Intent and display the Barcode data to the user in side "BroadcastIntentActivity". 
 
-1. Select "BroadcastIntentActivity.java" from "Package Explorer" in Eclipse. 
+1. Select "BroadcastIntentActivity.java" from "Package Explorer". 
 
 	![img](../../images/setup/image192.jpg)
   

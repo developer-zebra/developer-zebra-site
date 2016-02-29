@@ -13,9 +13,7 @@ So now we will create a tutorial and configure the Clipboard (Enable/Disable and
 
 > Note: Provide "MxUIManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).  
 
 
 ## Adding The UI Manager Profile Feature
@@ -85,7 +83,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
         import com.symbol.emdk.EMDKManager.EMDKListener;  
 		import android.widget.Toast;    
 
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.    
+    Then you must extend the activity to implement EMDKListener. 
     
         :::java
         public class MainActivity extends Activity implements EMDKListener {  

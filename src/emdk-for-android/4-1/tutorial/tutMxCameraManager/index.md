@@ -13,10 +13,7 @@ We will now create a tutorial to disable the use of all cameras and then enable 
 
 > Note: 1. Provide "CameraManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4. 
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
-
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
  
 ## Adding The Camera Manager Profile Feature
 1. Click [here](/emdk-for-android/4-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
@@ -86,7 +83,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
         import com.symbol.emdk.EMDKManager.EMDKListener;  
 		import android.widget.Toast;    
 
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.    
+    Then you must extend the activity to implement EMDKListener.    
     
         :::java
         public class MainActivity extends Activity implements EMDKListener {  

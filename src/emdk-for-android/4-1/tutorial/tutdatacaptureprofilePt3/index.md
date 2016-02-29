@@ -7,9 +7,6 @@ This guide will walk you through adding MSR support and multiple profiles to the
 
 ###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android 
 * Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/4-1/tutorial/tutdatacaptureprofile)
 * Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/4-1/tutorial/tutdatacaptureprofilePt2)
  
@@ -29,7 +26,7 @@ Next let's create a third activity that will listen for the MSR data and display
 ##Updating Main Activity
 Now we will update "MainActivity", adding a button to launch our "MSRActivity".
 
-1. Select "activity_main.xml" from "Package Explorer" in Eclipse/Android Studio.
+1. Select "activity_main.xml" from "Package Explorer" in Android Studio.
   
 2. Add the following Button to "activity_main.xml". This Button will be used for opening "MSRActivity".  
 	
@@ -45,7 +42,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
 
 	![img](../../images/setup/image129.jpg)
   
-3. Select "MainActivity.java" from "Package Explorer" in Eclipse/Android Studio. 
+3. Select "MainActivity.java" from "Package Explorer" in Android Studio. 
 
 	![img](../../images/setup/image130.jpg)
  
@@ -106,7 +103,7 @@ Now we will update "MainActivity", adding a button to launch our "MSRActivity".
 ##Creating MSR UI
 Next we will create the UI for "MSRActivity". 
 
-1. Select "activity_msr.xml" from "Package Explorer" in Eclipse/Android Studio.
+1. Select "activity_msr.xml" from "Package Explorer" in Android Studio.
  
 2. Remove the default "TextView". 
 3. Add the following TextView. 
@@ -226,7 +223,7 @@ Now will add an Intent filter to our Manifest file to allow "MSRCompletedActivit
 ##Registering the MSR EMDK profile
 Next we will register our new Data Capture profile from "MainActivity".
 
-1. Select "MainActivity.java" from "Package Explorer" in Eclipse. 
+1. Select "MainActivity.java" from "Package Explorer".
 
 	![img](../../images/setup/image153.jpg)
  
@@ -254,7 +251,7 @@ Next we will register our new Data Capture profile from "MainActivity".
 ##Creating MSR Completed UI
 Now we will create the UI for "MSRCompletedActivity". This UI will allow us to display the MSR data to the user.
 
-1. Select "activity_msr.xml" from "Package Explorer" in Eclipse/Android Studio. 
+1. Select "activity_msr.xml" from "Package Explorer" in Android Studio. 
  
 2. Remove the default "TextView". 
 3. Add the following TextView. 
@@ -275,7 +272,7 @@ Now we will create the UI for "MSRCompletedActivity". This UI will allow us to d
 ##Handling MSR Intents
 Next will will add the code to "MSRCompletedActivity" for capturing the startActivity Intent and displaying the result data to the user. 
 
-1. Select "MSRCompletedActivity.java" from "Package Explorer" in Eclipse. 
+1. Select "MSRCompletedActivity.java" from "Package Explorer". 
 
 	![img](../../images/setup/image158.jpg)
  

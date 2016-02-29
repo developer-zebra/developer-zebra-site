@@ -108,9 +108,7 @@ This will install the license . For mass deployment, end customers would need to
 
 > Note: Provide "SimulScanTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).  
 
 
 ## Enabling Android Permissions
@@ -154,17 +152,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		import com.symbol.emdk.simulscan.SimulScanStatusData;  
 
     Then you must make the activity to implement following interfaces: 
-	* Implement [EMDKListener](/emdk-for-android/4-1/api/core/EMDKManager-EMDKListener) for using EMDKManager. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`. 
+	* Implement [EMDKListener](/emdk-for-android/4-1/api/core/EMDKManager-EMDKListener) for using EMDKManager. 
 	* Implement [SimulScanReader.DataListerner](/emdk-for-android/4-1/api/simulscan/SimulScanReader-DataListerner), which is an interface for notifying client applications when the scan data is available. Override its `onData` method to receive the scanned data.
 	* Implement [SimulScanReader.StatusListerner](/emdk-for-android/4-1/api/simulscan/SimulScanReader-StatusListerner), which is an interface for notifying client applications to notify scan events. Override its `onStatus` method to receive status of any SimulScan operation that would be performed in the application.
 	* Implement [View.OnClickListener](http://developer.android.com/reference/android/view/View.OnClickListener.html) and override its `onClick` method to handle on click of buttons.
 	* Implement [AdapterView.OnItemSelectedListener](http://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html) and override its `onItemSelected` and `onNothingSelected` methods for handling spinner.
 
-	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.
     
         :::java
         public class MainActivity extends Activity implements EMDKManager.EMDKListener,
@@ -292,11 +285,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		
 		</LinearLayout>
 
-    > Note: If you are using Android Studio, press CTRL+ALT+I or CMD+ALT+I to auto indent lines.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+F or CMD+SHFT+F to auto indent lines     
+     
  
 3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html) and add their respective onclick listeners. We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. 
 

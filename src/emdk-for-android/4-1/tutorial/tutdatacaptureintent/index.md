@@ -8,7 +8,7 @@ DataWedge on Android has the ability to output captured data via Intents. This a
 Knowledge of Android programming and familiarity with the Android intent mechanism are assumed. Also assumed is some familiarity with DataWedge and that you have read the DataWedge section in the Integrator Guide for your device.
  
 ## Application Layout
-For this article we created an Android application with a blank activity using Eclipse, to which we added the following layout.
+For this tutorial we created an Android application with a blank activity, to which we added the following layout.
 
     :::xml
     <?xml version="1.0" encoding="utf-8"?>  

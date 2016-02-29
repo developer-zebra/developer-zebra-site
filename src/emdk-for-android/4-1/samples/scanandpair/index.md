@@ -5,13 +5,10 @@ description: This sample application will show how the Scan and Pair API can be 
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ScanAndPairSample1.zip  
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ScanAndPairSample1.zip    
+   
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ScanAndPairSample1
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ScanAndPairSample1
 
 features: 
   - Profile Manager
@@ -38,12 +35,6 @@ screenshots:
 This sample application will show how the Scan and Pair API can be used to pair two bluetooth devices programmatically.
 
 ##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
 
 For this sample, you will need two Android Bluetooth devices, one must be an EMDK for Android supported device. You will also need a barcode that contains the Bluetooth MAC address of the remote bluetooth device that we will be pairing with(The one not running the EMDK app).
 
@@ -51,7 +42,7 @@ For this sample, you will need two Android Bluetooth devices, one must be an EMD
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
+
 ##Using This Sample
 
 1.  When the application starts it should look like the following. Leave the **Always Scan** and **Hard Trigger** check boxes selected, and insure the **ScanData Type** spinner is set to **MAC ADDRESS**.  

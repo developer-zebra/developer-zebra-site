@@ -4,14 +4,10 @@ title: Barcode APIs
 description: This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/BarcodeSample1.zip    
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/BarcodeSample1.zip       
+    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/BarcodeSample1.zip         
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/BarcodeSample1
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/BarcodeSample1
 
 features: 
   - Profile Manager
@@ -52,19 +48,11 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/4-1/api) a
 
 This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/4-1/api/barcode/ScannerConfig-DecoderParams).
 
-##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 
 ##Using This Sample

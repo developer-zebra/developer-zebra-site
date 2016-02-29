@@ -34,21 +34,12 @@ When the single user mode white list is enabled, user can control the behavior o
 
 So now we will create a tutorial to demonstrate how to Add/Remove applications to/from single user mode white list and observe the difference when the single user white list mode is changed (Enabled/Disabled) programmatically. 
   
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above 
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup/).
-
+  
 ## Creating The Project
 
 > Note: Provide "MxAccessManagerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
+Create a new project with Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 
 ## Adding The Access Manager Profile Feature
@@ -114,7 +105,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
         import com.symbol.emdk.EMDKManager.EMDKListener;  
 		import android.widget.Toast;    
 
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.    
+    Then you must extend the activity to implement EMDKListener.   
     
         :::java
         public class MainActivity extends Activity implements EMDKListener {  
@@ -570,7 +561,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 
 11. We have three drop-downs (spinners) in the UI for system settings, Add Package and Remove Package respectively. These spinners show arrays based on their selections. We need to declare these arrays in order to set them to array adapters, which are held by spinners in the next step.
 
-    Go to "res/values" in the project of your Eclipse with ADT. Right Click on "values" and create a new Android XML file.
+    Go to "res/values" in the project. Right Click on "values" and create a new Android XML file.
 
     ![img](../../images/MxAccessManagerTutorialImages/right_click_value.jpg)
 

@@ -48,9 +48,6 @@ So let us create a tutorial and Configure the Mx App Manager Profile to install 
    
 ###Prerequisites
 
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 2.1 and above
 * Download APK file for the application to install from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
 * Once downloaded, copy the APK file to SD Card of the device. 
 
@@ -60,9 +57,7 @@ For more information about setting up the EMDK please see the [EMDK Setup Guide]
 
 > Note: Provide "ApplyProfileSilentlyTutorial" as the project name for this tutorial and "HandlerActivity" as the activity name while creating the project.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding The App Manager Profile Feature
 1. Click [here](/emdk-for-android/4-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
@@ -131,7 +126,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
         import com.symbol.emdk.*;  
         import com.symbol.emdk.EMDKManager.EMDKListener;     
 
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.    
+    Then you must extend the activity to implement EMDKListener. 
     
         :::java
         public class MainActivity extends Activity implements EMDKListener {  

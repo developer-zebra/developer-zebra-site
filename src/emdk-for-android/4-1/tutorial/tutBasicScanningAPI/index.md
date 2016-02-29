@@ -15,10 +15,7 @@ In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/4
 
 > Note: Provide "BasicScanningTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
-
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
@@ -46,17 +43,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		import com.symbol.emdk.barcode.Scanner.StatusListener;
 		import com.symbol.emdk.barcode.StatusData;   
 
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
-
+    Then you must extend the activity to implement EMDKListener. 
+    
     After that you also need to implement StatusListener for notifying client applications to notify scan events. Override its `onStatus` function.
 
     Finally implement DataListener for notifying client applications when the scan data is available. Override its `onData` function. 
 
-	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.
     
         :::java
         public class MainActivity extends Activity implements EMDKListener, StatusListener, DataListener{  

@@ -30,21 +30,13 @@ In this tutorial we will configure following Scanning Params:
   1. Vibration: This Scan Param is used to configure Vibration of the scanner device when scanning barcodes.
   2. Scan Tone: This Scan Param is used to set Scan tone while scanning barcodes. We can apply various media, notification or alarm tones to the device while scanning barcodes. We can also keep a silent tone by not passing any parameter to this attribute. In this tutorial, we will provide a list of Scan Tones for the user to select including silent mode where we won't pass any parameter to Scan Tone attribute.      
         
-###Prerequisites
-
-* Java Development Kit (JDK)
-* Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
-* EMDK for Android V 3.0 and above 
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup/).
 
 ## Creating The Project
 
 > Note: Provide "AdvancedScanningTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
+Create a new project with Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).   
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
@@ -78,7 +70,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		import com.symbol.emdk.barcode.Scanner.StatusListener;
 		import com.symbol.emdk.barcode.StatusData;   
 
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
+    Then you must extend the activity to implement EMDKListener. 
 
     After that you also need to implement `StatusListener` for notifying client applications to notify scan events. Override its `onStatus` function.
 
@@ -124,11 +116,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
           
         }
 
-	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.      
+	> Note: To organize imports in Android Studio, press CTRL+ALT+O or CMD+ALT+O.    
 
     We will now create some global variables to hold the instance objects of EMDKManager, [BarcodeManager](/emdk-for-android/4-1/api/barcode/BarcodeManager) and [Scanner](/emdk-for-android/4-1/api/barcode/Scanner). These variables would be used throughout the code.
 
@@ -428,12 +416,6 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		    </RelativeLayout>
 		
 		</ScrollView>
-
-    > Note: If you are using Eclipse with ADT, press CTRL+SHFT+F or CMD+SHFT+F for indentation.
-    > 
-    > OR
-    > 
-    > If you are using Android Studio, press CTRL+ALT+I or CMD+ALT+I for indentation.
 
     The code till here looks like:
 

@@ -5,13 +5,10 @@ description: This sample application will show how the Simulscan API's can be us
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SimulScanSample1.zip  
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/SimulScanSample1.zip   
+
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/SimulScanSample1
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/SimulScanSample1
 
 features: 
   - Profile Manager
@@ -33,14 +30,8 @@ screenshots:
 This sample application will show how the Simulscan API's can be used to capture multiple types of data from forms, boxes and the like.
 
 ##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
-
-You will also need:
+You will need:
 
 * A SimulScan licensed device
 * A Simulscan template
@@ -52,7 +43,7 @@ Follow the template generation and device licensing sections of the [SimulScan A
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
+
 
 ##Using This Sample
 

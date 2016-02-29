@@ -10,9 +10,7 @@ This guide will walk you through creating an EMDK For Android application that w
 
 > Note: Provide "EMDKSample" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding a DataCapture Profile
 1. Click [here](/emdk-for-android/4-1/guide/profile-manager/) to see how to add a specific feature to A profile with the Profile Manager.
@@ -114,7 +112,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
         import com.symbol.emdk.*;  
         import com.symbol.emdk.EMDKManager.EMDKListener;  
     
-    Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.    
+    Then you must extend the activity to implement EMDKListener.     
     
         :::java
         public class MainActivity extends Activity implements EMDKListener {  

@@ -15,9 +15,7 @@ In this tutorial, we will explore the [ScanAndPair APIs](/emdk-for-android/4-1/a
 
 > Note: Provide "ScanAndPairTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 
 ## Enabling Android Permissions
@@ -49,15 +47,10 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		import com.symbol.emdk.scanandpair.ScanAndPairManager;
 		import com.symbol.emdk.scanandpair.StatusData;  
 
-    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-1/api/core/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
+    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-1/api/core/EMDKManager-EMDKListener). 
 
     After that you also need to implement [ScanAndPairManager.StatusListener](/emdk-for-android/4-1/api/scanandpair/ScanAndPairManager-StatusListener), which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
 
-	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.
     
         :::java
         public class MainActivity extends Activity implements EMDKManager.EMDKListener,
@@ -267,12 +260,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 		    </ScrollView>
 
 		</LinearLayout>
-
-    > Note: If you are using Android Studio, press CTRL+ALT+I or CMD+ALT+I to auto indent lines.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+F or CMD+SHFT+F to auto indent lines     
+    
  
 3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. We will then set the [ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html) that has a list of [Scan data types](/emdk-for-android/4-1/api/scanandpair/ScanAndPairConfig?ScanAndPairConfig.ScanDataType) of the Remote Scanner device to the Spinner.
 

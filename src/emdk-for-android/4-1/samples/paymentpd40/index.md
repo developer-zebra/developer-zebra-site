@@ -5,13 +5,10 @@ description: This sample demonstrates how to update firmware in the PD40 Mobile 
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/PD40FWUpdateSample.zip  
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/PD40FWUpdateSample.zip   
+ 
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/PD40FWUpdateSample
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/PD40FWUpdateSample
 
 features: 
 
@@ -40,25 +37,12 @@ This sample demonstrates how to update firmware in the PD40 Mobile Payment devic
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 ##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
 
 **Items Needed**
 * One of the approved devices listed above
 * PD40 payment device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
-
-##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
-
-* [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
 
 ##Using This Sample
 

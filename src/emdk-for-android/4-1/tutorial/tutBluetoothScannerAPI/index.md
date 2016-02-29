@@ -20,10 +20,7 @@ In this tutorial, we will explore the [Bluetooth Scanner API](/emdk-for-android/
 
 > Note: Provide "BluetoothScannerTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
-
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
@@ -53,16 +50,10 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
         import com.symbol.emdk.EMDKManager;
 		import com.symbol.emdk.barcode.BarcodeManager;  
 
-    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-1/api/core/EMDKManager-EMDKListener). Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.
+    Then you must make the activity to implement [EMDKListener](/emdk-for-android/4-1/api/core/EMDKManager-EMDKListener). 
 
     After that you also need to implement [BarcodeManager.​ScannerConnectionListener](/emdk-for-android/4-1/api/barcode/BarcodeManager-ScannerConnectionListener), which is an interface to notify the client when the scanner device (Ex. RS507) has been connected or disconnected to the mobile device (Ex. TC55). Override its `onConnectionChange` method, which would be called when the scanner gets connected or disconnected to the mobile device. 
 
-	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.
-    
         :::java
         public class MainActivity extends Activity EMDKManager.EMDKListener, BarcodeManager.ScannerConnectionListener {  
           
@@ -142,12 +133,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 
     ![img](../../images/BluetoothScannerTutorialImages/layout_added.jpg)
 
-    > Note: If you are using Android Studio, press CTRL+ALT+I or CMD+ALT+I to auto indent lines.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+F or CMD+SHFT+F to auto indent lines     
- 
+
 3. In the `onCreate` method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready.   
 
         :::java

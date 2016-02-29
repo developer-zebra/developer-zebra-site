@@ -5,12 +5,9 @@ description: This sample application demonstrate how to manage WiFi networks.
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileWifiSample1.zip 
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileWifiSample1.zip   
+ 
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1
-  - title: ADT Eclipse Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1
 
 features: 
@@ -49,19 +46,11 @@ The available actions are:
 
 This sample application will allow you to perform all the above mentioned Wi-Fi actions on Symbol device.
 
-##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
-
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
+
 
 ##Using This Sample
 

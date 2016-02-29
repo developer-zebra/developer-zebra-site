@@ -5,13 +5,10 @@ description: This sample application will allow you to set the power state to "S
 downloads:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfilePowerMgrSample1.zip   
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfilePowerMgrSample1.zip    
+   
 sources:
   - title: Android Studio Project
     url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfilePowerMgrSample1
-  - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfilePowerMgrSample1
 
 features: 
   - Profile Manager
@@ -45,19 +42,11 @@ The available actions are:
 
 This sample application will allow you to set the power state of "Suspend" (sleep mode) or "Reset" (reboot).
 
-##Prerequisites
-- Java JDK 
-- Eclipse with ADT plugin or  Android Studio
-- EMDK for Android  
-- An EMDK supported Android device
-
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup).
-
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/4-1/guide/emdksamples_androidstudio)
-* [Eclipse/ADT](/emdk-for-android/4-1/guide/emdksamples_eclipse)
+
 
 ##Using This Sample
 1. When the application starts it should look like the following.  

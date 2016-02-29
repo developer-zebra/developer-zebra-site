@@ -236,9 +236,9 @@ Method Signature:
 	* Valid `[featureType]`:	ActivitySelection, Barcode, MSR, Intent, Keystroke, IP, Clock, PowerMgr, PersistMgr, CertMgr, AppMgr, AccessMgr, Wi-Fi, GprsMgr
 
 ## XML String Structure
-One way you can see how this XML string should be structured is to use the Profile Manager in Eclipse.
+One way you can see how this XML string should be structured is to use the Profile Manager.
 
-1. Open any project in Eclipse that does not have a EMDK profile defined already (so you get just the parameters you want to change).
+1. Open any project that does not have a EMDK profile defined already (so you get just the parameters you want to change).
 2. Select EMDK / Profile Manager from the menu.
 3. Add the Profile features you want and selection the options you wish to use.
 4. Click Finish when you are done with your selections.

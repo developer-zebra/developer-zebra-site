@@ -13,11 +13,7 @@ Download and install **Android Studio** from [http://developer.android.com/sdk/i
 
 ### Installing EMDK for Android
 
-###Install version 4.0
-
-
-
-1. Run the EMDK 4.0 Installer as Administrator, Then Click Next.
+1. Run the EMDK Installer as Administrator, Then Click Next.
 
 2. Click I Agree after reading the License Agreement to continue the installation.
 

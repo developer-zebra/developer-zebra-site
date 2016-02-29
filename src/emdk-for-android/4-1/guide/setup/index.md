@@ -8,7 +8,7 @@ The EMDK for Android provides the interface to Symbol value adds such as scannin
 This document is a guide to start working the "EMDK for Android" in your preferred development environment.
 
 ##Configuring Development Environment
-In order to develop Android applications with Android Studio or Eclipse, you must first install the Java Development Kit.
+In order to develop Android applications with Android Studio you must first install the Java Development Kit.
 
 ### Installing Java Development Kit (JDK) for Windows
 
@@ -33,15 +33,4 @@ Android studio is now Google's official IDE for Android development. Using Andro
 
 **Mac** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
 
-
-
-###Eclipse/ADT
-**Support for ADT/Eclipse has been deprecated**. Future versions of the EMDK for Android will only support Android Studio for development.
-Refer to this document( [Migrating to Android Studio](http://developer.android.com/sdk/installing/migrate.html) ) for more information on migrating your projects to Android Studio
-
-Although support has been deprecated, this version of the EMDK will integrate with Eclipse/ADT. 
-
-**Windows** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
-
-**Mac** - EMDK for android development in Eclipse on Mac, is not supported.
 

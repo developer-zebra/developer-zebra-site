@@ -10,10 +10,7 @@ This guide will walk you through creating an EMDK For Android application that w
 
 > Note: Provide "ModifyBarcodeProfileTutorial" as the project name for this tutorial.
 
-If you are using Android Studio, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
-
-If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/tutCreateProjectEclipseADT).  
-
+Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding a DataCapture Profile
 1. Click [here](/emdk-for-android/4-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
@@ -112,7 +109,7 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
     	import com.symbol.emdk.*;
     	import com.symbol.emdk.EMDKManager.EMDKListener;
 
-	Then you must extend the activity to implement EMDKListener. Use Eclipse's Content Assist to implement the unimplemented functions of `onOpened` and `onClosed`.    
+	Then you must extend the activity to implement EMDKListener.
     
 	    :::java
 	    public class MainActivity extends Activity implements EMDKListener {
@@ -391,12 +388,6 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-1/tutorial/t
 	    // Button to specify current status of the Barcode.
 	    private Button barcodeStatusButton;
 		
-
-	> Note: If you are using Android Studio, press CTRL+ALT+O or CMD+ALT+O to organize imports.
-	> 
-	> OR
-	> 
-	> If you are using Eclipse with ADT, press CTRL+SHFT+O or CMD+SHFT+O to organize imports.
 
 	So declaration of UI elements would look like:
 

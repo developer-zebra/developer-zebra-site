@@ -7,28 +7,6 @@ Scanner class will represent and provides access to the physical scanner device.
 **Type** - Java.Lang.Object
 
 ##Methods
-###AddDataListener
-**public virtual void AddDataListener (Symbol.XamarinEMDK.Barcode.Scanner.IDataListener p0);**
-
-The client can register to get data notification via callbacks.
-
-**Parameters:** 
-
-* Symbol.XamarinEMDK.Barcode.Scanner.IDataListener **p0** - IDataListener object.
-
-**Returns** - System.Void
-
-###AddStatusListener
-**public virtual void AddStatusListener (Symbol.XamarinEMDK.Barcode.Scanner.IStatusListener p0);**
-
-The client can register to get status notification via callbacks.
-
-**Parameters:** 
-
-* Symbol.XamarinEMDK.Barcode.Scanner.IStatusListener **p0** - IStatusListener object
-
-**Returns** - System.Void
-
 ###CancelRead
 **public virtual void CancelRead ();**
 
@@ -53,6 +31,22 @@ Enables the scanner hardware. This method does not make the scanner scan or turn
 
 **Returns** - System.Void
 
+###GetConfig
+**public virtual Symbol.XamarinEMDK.Barcode.ScannerConfig GetConfig ();**
+
+To be added.
+
+
+**Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig
+
+###GetInterfaceConfig
+**public virtual Symbol.XamarinEMDK.Barcode.InterfaceConfig GetInterfaceConfig ();**
+
+To be added.
+
+
+**Returns** - Symbol.XamarinEMDK.Barcode.InterfaceConfig
+
 ###Read
 **public virtual void Read ();**
 
@@ -69,38 +63,30 @@ Releases the scanner object resources. The scanner object is unusable after this
 
 **Returns** - System.Void
 
-###RemoveDataListener
-**public virtual void RemoveDataListener (Symbol.XamarinEMDK.Barcode.Scanner.IDataListener p0);**
+###SetConfig
+**public virtual void SetConfig (Symbol.XamarinEMDK.Barcode.ScannerConfig p0);**
 
-Cancels any IDataListener callbacks.
+To be added.
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.Barcode.Scanner.IDataListener **p0** - IDataListener object
+* Symbol.XamarinEMDK.Barcode.ScannerConfig **p0** - To be added.
 
 **Returns** - System.Void
 
-###RemoveStatusListener
-**public virtual void RemoveStatusListener (Symbol.XamarinEMDK.Barcode.Scanner.IStatusListener p0);**
+###SetInterfaceConfig
+**public virtual void SetInterfaceConfig (Symbol.XamarinEMDK.Barcode.InterfaceConfig interfaceConfig);**
 
-Cancels any IStatusListener callbacks.
+To be added.
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.Barcode.Scanner.IStatusListener **p0** - IStatusListener object.
+* Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig** - To be added.
 
 **Returns** - System.Void
 
 ##Properties
 
-###Config
-Get or Set the ScannerConfig settings.
-
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig
-###InterfaceConfig
-Get or Set InterfaceConfig
-
-**Type** - Symbol.XamarinEMDK.Barcode.InterfaceConfig
 ###IsEnabled
 Returns scanner enabled state.
 

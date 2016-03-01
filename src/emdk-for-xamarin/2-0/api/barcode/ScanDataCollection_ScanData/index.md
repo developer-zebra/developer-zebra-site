@@ -5,6 +5,15 @@ The object contains the barcode data that has been scanned and other useful info
 
 **Type** - Java.Lang.Object
 
+##Methods
+###GetRawData
+**public virtual byte[] GetRawData ();**
+
+To be added.
+
+
+**Returns** - System.Byte[]
+
 ##Properties
 
 ###Data

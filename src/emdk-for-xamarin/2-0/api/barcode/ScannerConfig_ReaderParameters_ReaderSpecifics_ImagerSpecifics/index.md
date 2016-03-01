@@ -7,6 +7,10 @@ ImagerSpecific provides access to the imager specific parameters.
 
 ##Properties
 
+###AimingPattern
+To be added.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern
 ###BeamTimer
 Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely
 
@@ -27,6 +31,10 @@ This parameter indicates to the scan driver to disconnect any existing connectio
 Illumination Brightness of the Imager. The valid range is 1 to 10.
 
 **Type** - System.Int32
+###IlluminationMode
+To be added.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode
 ###Inverse1DMode
 This parameter allows the user to select decoding on inverse 1D bar codes. Use class ScannerConfig.Inverse1DMode.
 

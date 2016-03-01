@@ -46,6 +46,14 @@ Profile name passed Process profile was empty.
  Process profile was a failure.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
+###FeatureNotReadyToUse
+To be added.
+
+**Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
+###FeatureNotSupported
+To be added.
+
+**Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
 ###NoDataListener
 The asynchronous method (Ex: processProfileAsync) is issued without adding the data listener.
 

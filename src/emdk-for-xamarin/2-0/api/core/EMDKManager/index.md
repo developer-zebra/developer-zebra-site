@@ -32,6 +32,18 @@ This method returns an object instance which has derived from EMDKBase. Based on
 
 **Returns** - Symbol.XamarinEMDK.EMDKBase
 
+###GetInstanceAsync
+**public virtual void GetInstanceAsync (Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE p0, Symbol.XamarinEMDK.EMDKManager.IStatusListener p1);**
+
+To be added.
+
+**Parameters:** 
+
+* Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0** - To be added.
+* Symbol.XamarinEMDK.EMDKManager.IStatusListener **p1** - To be added.
+
+**Returns** - System.Void
+
 ###Release
 **public virtual void Release ();**
 

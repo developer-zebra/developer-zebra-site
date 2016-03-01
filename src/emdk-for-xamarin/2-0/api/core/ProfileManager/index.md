@@ -6,18 +6,6 @@ This class handles all the profile related functions.
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
 ##Methods
-###AddDataListener
-**public virtual void AddDataListener (Symbol.XamarinEMDK.ProfileManager.IDataListener p0);**
-
-The client can register to get data notification via callbacks.
-
-**Parameters:** 
-
-* Symbol.XamarinEMDK.ProfileManager.IDataListener **p0** - 
-        
-
-**Returns** - System.Void
-
 ###CreateNameValuePair
 **public static string CreateNameValuePair (string p0, string p1, string p2);**
 
@@ -82,18 +70,6 @@ Processes the given profile based on the data provided and the flag and return s
 * System.String[] **p2** - This can be used to provide data for processing action.
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults
-
-###RemoveDataListener
-**public virtual void RemoveDataListener (Symbol.XamarinEMDK.ProfileManager.IDataListener p0);**
-
-The client can un-register to get data notification via callbacks.
-
-**Parameters:** 
-
-* Symbol.XamarinEMDK.ProfileManager.IDataListener **p0** - 
-        
-
-**Returns** - System.Void
 
 ##Properties
 

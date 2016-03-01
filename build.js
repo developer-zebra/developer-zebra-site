@@ -332,7 +332,7 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/'
     }))
-        .use(foldermenu({
+    .use(foldermenu({
         folder: 'emdk-for-android/4-1/api/',
         automenu: true
     }))
@@ -435,7 +435,7 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-xamarin/1-0/'
     }))
-        .use(foldermenu({
+    .use(foldermenu({
         folder: 'emdk-for-xamarin/2-0/api/',
         automenu: true
     }))

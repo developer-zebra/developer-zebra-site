@@ -35,12 +35,12 @@ This method returns an object instance which has derived from EMDKBase. Based on
 ###GetInstanceAsync
 **public virtual void GetInstanceAsync (Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE p0, Symbol.XamarinEMDK.EMDKManager.IStatusListener p1);**
 
-To be added.
+This method is an asynchronous call and requests object instance for the specified feature type and object is returned through the status listener callback when the feature is initialized and ready to use. Ex:The Profile Manager related components will take few seconds to initialize for it to be used after device booted. If the application tries to use the EMDKManager.GetInstance to get the profile manager object and sets the profile during the device boot will result in error because the underlying Profile manager is not ready.
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0** - To be added.
-* Symbol.XamarinEMDK.EMDKManager.IStatusListener **p1** - To be added.
+* Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0** - The EMDKManager.FEATURE_TYPE the object to be created.
+* Symbol.XamarinEMDK.EMDKManager.IStatusListener **p1** - The callback will returned on EMDKManager.IStatusListener when the feature is ready to use.
 
 **Returns** - System.Void
 

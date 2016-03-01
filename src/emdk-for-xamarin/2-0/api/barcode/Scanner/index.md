@@ -34,7 +34,7 @@ Enables the scanner hardware. This method does not make the scanner scan or turn
 ###GetConfig
 **public virtual Symbol.XamarinEMDK.Barcode.ScannerConfig GetConfig ();**
 
-To be added.
+Gets the current configuration settings for this scanner device. If modifications are made to the returned ScannerConfig object, the Scanner.SetConfig(ScannerConfig) must be called to take effect. Scanner must be enabled before calling GetConfig().
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig
@@ -42,7 +42,7 @@ To be added.
 ###GetInterfaceConfig
 **public virtual Symbol.XamarinEMDK.Barcode.InterfaceConfig GetInterfaceConfig ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.InterfaceConfig
@@ -66,22 +66,22 @@ Releases the scanner object resources. The scanner object is unusable after this
 ###SetConfig
 **public virtual void SetConfig (Symbol.XamarinEMDK.Barcode.ScannerConfig p0);**
 
-To be added.
+Changes the settings for this scanner device. The unsupported parameters will be ignored. This method skips the unsupported parameters and continues with setting the supported values.
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.Barcode.ScannerConfig **p0** - To be added.
+* Symbol.XamarinEMDK.Barcode.ScannerConfig **p0** - The Parameters to use for this scanner device.
 
 **Returns** - System.Void
 
 ###SetInterfaceConfig
 **public virtual void SetInterfaceConfig (Symbol.XamarinEMDK.Barcode.InterfaceConfig interfaceConfig);**
 
-To be added.
+
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig** - To be added.
+* Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig** - 
 
 **Returns** - System.Void
 

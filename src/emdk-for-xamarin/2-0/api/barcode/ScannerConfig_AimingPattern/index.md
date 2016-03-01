@@ -1,7 +1,7 @@
 ---
 title: ScannerConfig.AimingPattern
 ---
-To be added.
+Describes the aiming pattern to be turned ON/OFF.
 
 **Type** - Java.Lang.Enum
 
@@ -9,18 +9,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimingPattern
 
 ###Values
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimingPattern[]
@@ -28,11 +28,11 @@ To be added.
 ##Properties
 
 ###Off
-To be added.
+iming pattern is turned off.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern
 ###On
-To be added.
+Aiming pattern is turned on.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern
 

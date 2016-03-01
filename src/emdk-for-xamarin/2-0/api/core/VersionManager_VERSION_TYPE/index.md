@@ -9,18 +9,18 @@ All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated 
 ###ValueOf
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 
 ###Values
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE[]

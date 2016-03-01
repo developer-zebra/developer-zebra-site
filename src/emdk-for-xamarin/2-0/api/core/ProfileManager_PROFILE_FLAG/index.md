@@ -9,18 +9,18 @@ All the possible actions for ProfileManager.processProfile(String, PROFILE_FLAG,
 ###ValueOf
 **public static Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG
 
 ###Values
 **public static Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG[]

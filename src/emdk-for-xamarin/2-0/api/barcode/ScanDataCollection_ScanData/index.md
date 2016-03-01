@@ -9,7 +9,7 @@ The object contains the barcode data that has been scanned and other useful info
 ###GetRawData
 **public virtual byte[] GetRawData ();**
 
-To be added.
+Returns the raw decoded data as byte array. The application can use this raw data directly or can convert the byte array to a string using the named charset.
 
 
 **Returns** - System.Byte[]

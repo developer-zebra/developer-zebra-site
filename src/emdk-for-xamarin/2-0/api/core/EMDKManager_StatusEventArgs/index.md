@@ -1,7 +1,7 @@
 ---
 title: EMDKManager.StatusEventArgs
 ---
-To be added.
+
 
 **Type** - System.EventArgs
 
@@ -12,11 +12,11 @@ To be added.
 ##Properties
 
 ###P0
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.StatusData
 ###P1
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 

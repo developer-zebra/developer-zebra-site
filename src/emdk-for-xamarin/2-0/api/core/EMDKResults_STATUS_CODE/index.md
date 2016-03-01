@@ -47,11 +47,11 @@ Profile name passed Process profile was empty.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
 ###FeatureNotReadyToUse
-To be added.
+The requested feature is not ready to use. Try later.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
 ###FeatureNotSupported
-To be added.
+The requested feature is not supported on this device.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
 ###NoDataListener

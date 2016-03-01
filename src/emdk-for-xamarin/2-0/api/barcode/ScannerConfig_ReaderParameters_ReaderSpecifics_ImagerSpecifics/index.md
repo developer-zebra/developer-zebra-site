@@ -8,7 +8,7 @@ ImagerSpecific provides access to the imager specific parameters.
 ##Properties
 
 ###AimingPattern
-To be added.
+Type of aiming pattern to be used for barcode scanning.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern
 ###BeamTimer
@@ -32,7 +32,7 @@ Illumination Brightness of the Imager. The valid range is 1 to 10.
 
 **Type** - System.Int32
 ###IlluminationMode
-To be added.
+Turns imager illumination on and off.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode
 ###Inverse1DMode

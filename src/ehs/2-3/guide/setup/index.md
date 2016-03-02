@@ -1,16 +1,16 @@
 ---
-title: Install Enterprise Home Screen
+title: Enterprise Home Screen Setup
 layout: guide.html
 ---
 
-## Setup Guide
+## Overview
 
-These instructions are designed to provide a basic understanding of the installation, usage and essential workings of EHS, and are recommended for anyone unfamiliar with first-time EHS setup. It should be noted, however, that everything detailed here also can be accomplished through the EHS config file, which is documented in the [Advanced Settings]() section.  
+These instructions provide a basic understanding of the installation, configuration, usage and essential workings of EHS, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Mobile Device Management (MDM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings]() section. 
 
-> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device with read/write access to all storage areas. If necessary, please [download EHS](/ehs/2-3/download) and [establish connectivity between the computer and device(s)](). Then resume from here. 
+> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-3/download) and [establish connectivity between the computer and device(s)](). Then resume from here. 
 
 ## Supported Devices and APKs
-Enterprise Home Screen works with most Zebra Android devices. The download package includes **all three files** indicated in the table below plus documentation and release notes. The correct APK file for a particular target device depends on the device, its operating system and some additional considerations explained below. 
+Enterprise Home Screen works with most Zebra Android devices. The EHS download package includes <b>all three files</b> indicated in the table below, plus documentation and release notes. The correct APK file for a particular target device depends on the device, its operating system and some additional considerations explained below. 
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
@@ -229,65 +229,50 @@ Enterprise Home Screen works with most Zebra Android devices. The download packa
 </table>
 
 ## Manual Installation
-These instructions apply to usage of the installer APK (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, please substitute the file name(s) where necessary in the instructions. 
+These instructions apply to direct installation (from a computer to a single device) using the installer APK (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the file name(s) where necessary in the instructions. 
 
-> <b>Note</b>: The installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to properly uninstall EHS. Read about how to [uninstall EHS](?Uninstall EHS) later in this guide. 
-
-### Manual Installation
+> <b>Note</b>: The installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
 To install EHS manually using the automatic target selection (`EHS_020300.apk`) app: 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 
-&#50;. <b>Copy the `EHS_020300.apk`</b> file from the PC to any writable device folder.
+&#50;. <b>Copy the </b>`EHS_020300.apk` <b>file</b> from the PC to any writable device folder.
 
 &#51;. On the device, <b>launch File Browser</b> from the App Drawer:
 
 <img style="height:500px" src="file_browser_in_drawer.png"/>
+<br>
 
-
-&#52;. <b>Locate and launch `EHS_020300.apk`</b>:
+&#52;. <b>Locate and launch</b> `EHS_020300.apk`:
 
 <img style="height:500px" src="file_browser_search.png"/>
-
+<br>
 
 &#53;. <b>Tap Install</b>:
 
-<img style="height:500px" src="ehs_installer.png"/>
-
+<img style="height:500px" src="EHS_installer.png"/>
+<br>
 
 &#54;. After installation, <b>tap Open</b>:
 
 <img style="height:250px" src="app_installed.png"/>
-
-> <b>Note</b>: If 'Done' was accidentally selected instead of 'Open' in this step, launch 'Enterprise Home Screen' from the App Drawer. Then proceed to step seven.
+If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home Screen' from the App Drawer and proceed.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
 
 <img style="height:250px" src="select_home_app.png"/>
+<br>
 
-&#56;. <b>Tap Enterprise Home Screen</b> and <b>'Just once'</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting 'Always' makes the selection permanent. 
+&#56;. <b>Select Enterprise Home Screen</b> and <b>tap 'Just once'</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting 'Always' makes the selection permanent. 
 
-&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Tap Enterprise Home Screen</b> and <b>Just once</b> to continue. 
+&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue. 
 
-###Automatic Settings Changes
-
-EHS is now ready to use. The next step is to select which apps to display (and which to hide) while in User Mode, and to increase (or remove completely) access to device settings, if desired. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 
+### Select Apps for User Mode 
+EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 
 
 <b>EHS User Mode</b>
 <img style="height:250px" src="user_screen.png"/>
-
-In User Mode, the following features are disabled by default:
-
-* Airplane mode
-* USB debugging
-* Access to the file system
-* Keyguard (for unlocking the screen)
-* Keyguard-screen camera and search functions
-* The Status-bar Settings icon  
-* Full access to the System Settings panel  
-
-###Select Apps for User Mode
 
 > <b>Note</b>: EHS selects apps for display in User Mode from apps installed on the device. <b>All apps intended for use must be installed on the device before proceeding</b>.
 
@@ -296,32 +281,50 @@ Enter Admin Mode and select which apps will be displayed to users:
 &#49;&#48;. <b>Tap the menu icon</b> and <b>open the Tools menu</b>:
 
 <img style="height:250px" src="user_screen_menu.png"/>
+<br>
 
 &#49;&#49;. <b>Select Admin Login</b> and tap OK (the default password is blank):
 
 <img style="height:250px" src="admin_login.png"/>
+<br>
 
 After hitting OK, the admin version of the Tools menu will be displayed. 
 
-&#49;&#50;. <b>Tap the BACK button</b> to dismiss the Tools menu. The Admin Mode screen similar to the image below will show all installed apps:  
+&#49;&#50;. <b>Tap the BACK button</b> to dismiss the Tools menu. The Admin Mode screen similar to the image below will show all apps installed on the device.  
 
 <img style="height:250px" src="admin_screen.png"/>
+<br>
 
-If an intended app is not displayed, it must be installed before proceeding. 
+> <b>Note</b>: If one or more apps intended for use is not displayed, it must be installed before proceeding. 
 
-&#49;&#51;. <b>Long-press an app</b> to alternatively display or hide it from the User Mode screen. Depending on the action, one of the following messages will appear after the app is selected: 
+&#49;&#51;. <b>Long-press an app icon</b> to alternatively display or hide it from the User Mode screen. Depending on the app's status when long-pressed, one of the following messages will appear: 
 
 <img style="height:200px" src="add_app.png"/> 
 
 <img style="height:200px" src="remove_app.png"/>
 
-Repeat this step until all desired apps are displayed and undesired apps are hidden. Switch between Admin and User Modes to confirm selections. 
+Repeat this step until desired apps are selected for display. To confirm selections, switch between Admin and User Modes by logging in and out of Admin Mode from the Tools menu. 
 
-&#49;&#52;. If necessary, <b>select Preferences</b> from the menu while in Admin Mode: 
+### User Access to Settings
+EHS provides extensive control over which device settings (such as networking) and resources (such as cameras and the file system) will be available to users when the device is in User Mode. Administrators can allow complete control of all device settings, limit access to just a few settings, or hide device settings completely. 
+
+In User Mode, the following features are disabled by default:
+
+* Airplane mode
+* USB debugging
+* Access to the file system
+* Keyguard (for unlocking the screen)
+* Keyguard-screen camera and search functions
+* The status-bar Settings icon  
+* Full access to the System Settings panel  
+
+
+&#49;&#52;. While in Admin Mode, <b>Select Preferences</b> from the menu to add or restrict user access to device settings or to modify the preferences for the User Mode display: 
 
 <img style="height:450px" src="prefs_admin_menu.png"/>
+<br>
 
-&#49;&#53;. Scroll the Preferences panel and select the desired settings: 
+&#49;&#53;. Scroll the Preferences panel and <b>elect the desired settings</b>: 
 
 <img style="height:450px" src="prefs_1.png"/>
 
@@ -329,112 +332,182 @@ Repeat this step until all desired apps are displayed and undesired apps are hid
 
 <img style="height:450px" src="prefs_3.png"/>
 
-EHS disables the following features by default:
+For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `EnterpriseHomeScreen.XML` configuration file, please refer to the [Advanced Settings]() section. 
 
-* Airplane mode
-* USB debugging
-* Access to the file system
-* Keyguard (for unlocking the screen)
-* Keyguard-screen camera and search functions
-* The Status-bar Settings icon  
-* Full access to the System Settings panel  
+## Automated Installation
+These instructions apply to remote installation from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-For details about these and other EHS settings, including a complete usage reference for the `EnterpriseHomeScreen.XML` configuration file, please refer to the [Advanced Settings]() section. 
+Applicable to either scenario, this documentation covers use of the EHS Installer (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the 'Supported Devices and APKs' table above, be sure to substitute the file name(s) where necessary in the instructions. 
 
-## Uninstall EHS
+> <b>Note</b>: The EHS Installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
->>>>>>> RESUME HERE WEDNESDAY <<<<<<<
+To install EHS using an MDM, instruct the MDM to do the following, in this order:
 
-Go to Apps under System Settings and select the EHS installer app in the app list and uninstall. Uninstalling the EHS Installer app from the device will automatically uninstall the EHS app as well. But this automatic uninstallation of EHS app will not happen unless you have followed steps seven and eight above.
+&#49;. If desired, <b>create an</b> `EnterpriseHomeScreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings]() section for detailed instructions on the creation and editing of config files. 
 
-Remote Installation using Installer APK
-Install the EHS installer (EHS_020300.apk)
+&#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the `EHS_020300.apk` (or target-specific) file and the XML file created in the previous step.
 
-Launch the EHS installer. EHS installer package/activity name is "com.symbol.ehsinstaller/.EHSinstaller"
+&#51;. <b>Launch the app</b> using the following package and activity commands: 
 
-Launching the EHS installer will install the EHS application on the device. After the installation is completed, there will be two applications in the device; EHS installer app and EHS app.
+<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 300.35pt;" width="250">
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="3">Deployed file</font></p>
+</td>
+<td style="width: 300px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="3">
+    Package name</font></p>
+</td>
+<td style="width: 300px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="3">
+    Main activity/class name</font></p>
+</td>
 
-Set EHS as the default home application in the device.
+</tr>
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="250">
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020300.apk (EHS Installer)</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller.EHSinstaller</font></p>
+</td>
+</tr>
 
-Please refer to EHS internal information for third party applications to get the package/activity name of the EHS application, depending on your device.
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020300.apk</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen.HomeScreenActivity</font></p>
+</td>
+</tr>
 
-Reboot the device. This is mandatory.
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020300.apk</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen.HomeScreenActivity</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
 
-Remote Uninstallation
-Uninstall the EHS installer. EHS installer package name is "com.symbol.ehsinstaller".
+&#52;. <b>Set Enterprise Home Screen as the default</b> home application on the device.  
 
-Uninstalling the EHS installer will automatically uninstall the EHS application as well.
+&#53;. <b>Reboot the device</b> to complete the installation. This is a <b>required step</b>. 
 
-Note    The operations such as Installing EHS, uninstalling EHS and setting EHS as the default Launcher can be done using AppMgr feature in EMDK or StageNow. For more information, refer to the EMDK or StageNow documentation. Contact your MDM to determine if this feature is supported.
-Installation using EHS_L_020300.apk or EHS_R_020300.apk
+The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
-To select the appropriate EHS APK for your device please refer to the device compatibility table under Installation.
+> <b>Note</b>: App installation, uninstallation, setting the default launcher and other operations can be achieved using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools. 
 
-Manual Installation using EHS_L_020300.apk or EHS_R_020300.apk
-The following instructions assume that you have selected the appropriate EHS APK for your device, device drivers are installed and able to read/write to the device.
+## Uninstallation
 
-Connect the device to a PC via a cradle or USB adapter cup.
+### Manual Uninstallation
+To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Installer</b>. This automatically removes both the EHS Installer and the Enterprise Home Screen app. 
 
-Copy either EHS_L_020300.apk or EHS_R_020300.apk file to any writable folder in the device. To select the appropriate EHS APK for your device please refer to the device compatibility table under Installation.
+&#49;. From the Admin Mode screen, <b>Select Settings</b>:  
+<img style="height:350px" src="app_admin_screen_settings.png"/>
+<br>
 
-Open File Browser from the Android application launcher screen.
+&#50;. <b>Tap Apps</b> to bring up the Android App Manager: 
+<img style="height:450px" src="app_settings.png"/>
+<br>
 
-Navigate to the copied folder and tap on the EHS_L_020300.apk or EHS_R_020300.apk.
+&#51;. Locate and <b>Tap EHS Installer</b>:
+<img style="height:450px" src="app_mgr.png"/>
+<br>
 
-Tap on the Install button.
+&#52;. <b>Tap the Uninstall button</b>:
+<img style="height:450px" src="app_uninstall.png"/>
+<br>
 
-Once the application is installed, tap the Open or Done button.
+&#53;. <b>Click OK</b> to confirm:
+<img style="height:450px" src="app_uninstall_confirm.png"/>
+<br>
 
-Tap the Home button.
+Manual uninstallation of EHS is now complete. 
 
-Tap Enterprise Home Screen followed by Always.
+> <b>Note</b>: Some device settings configured by EHS might not revert to their state prior to installation. Please check the device after removing EHS and configure as required. 
 
- 
+### Automated Uninstallation
+These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
- images/complete_action_using.png
+To uninstall EHS using an MDM, instruct the MDM to do the following:
 
- 
+&#49;. <b> Uninstall (remove) the EHS app</b> referencing the package and activity names as indicated in the table below. Uninstalling the EHS Installer will also remove the EHS application that it installed. If a target-specific APK (EHS_L_020300.apk or EHS_R_020300.apk) was deployed, the package/activity name specific to that APK must be referenced when uninstalling it. 
 
-Now reboot the device. This is mandatory.
+<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 300.35pt;" width="250">
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="3">Deployed file</font></p>
+</td>
+<td style="width: 300px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="3">
+    Package name</font></p>
+</td>
+<td style="width: 300px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="3">
+    Main activity/class name</font></p>
+</td>
 
-Note    If the Just once button was tapped instead of the Always button at step eight above, continue from step seven above.
-Manual Uninstallation
-Go to Apps under System Settings and select the EHS app in the app list and uninstall.
+</tr>
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="250">
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020300.apk (EHS Installer)</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller.EHSinstaller</font></p>
+</td>
+</tr>
 
-Remote Installation using EHS_L_020300.apk or EHS_R_020300.apk
-Install either EHS_L_020300.apk or EHS_R_020300.apk. To select the appropriate EHS APK for your device please refer to the device compatibility table under Installation.
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020300.apk</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen.HomeScreenActivity</font></p>
+</td>
+</tr>
 
-Set EHS as the default home application in the device.
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020300.apk</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen.HomeScreenActivity</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
 
-Please refer to EHS internal information for third party applications to get the package/activity name of the EHS application, depending on your device.
+&#50;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
-Reboot the device. This is mandatory.
+The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
-Remote Uninstallation
-Uninstall either EHS_L_020300.apk or EHS_R_020300.apk.
+Remote uninstallation of EHS is now complete. 
 
-Please refer to EHS internal information for third party applications to get the package/activity name of the EHS application, depending on your device.
-
-Warning 
-Once installed, EHS changes some system settings in the device as given below. Uninstalling EHS or switching to another Launcher (Home screen application) will not revert these settings to the previous state. So if required, make sure to set them to the original state via Preferences or configuration files, before moving away from EHS.
-
-EHS default settings:
-
-Disable Settings and Search apps
-
-Bypass device keyguard (unlock) screen
-
-Disable Airplane/Flight option under Power menu
-
-Disable USB debugging (ADB)
-
-Restrict system settings
-
-Disable status bar Settings icon
-
-Disable accessing Camera app while on keyguard (unlock) screen
-
-Disable accessing Search app while on keyguard (unlock) screen
-
-
+> <b>Note</b>: Some device settings configured by EHS might not revert to their state prior to installation. Please check the device after removing EHS and configure as required. 
 

@@ -318,13 +318,14 @@ In User Mode, the following features are disabled by default:
 * The status-bar Settings icon  
 * Full access to the System Settings panel  
 
+To select which settings will be available while the device is in User Mode and/or to modify other User Mode preferences:
 
-&#49;&#52;. While in Admin Mode, <b>Select Preferences</b> from the menu to add or restrict user access to device settings or to modify the preferences for the User Mode display: 
+&#49;&#52;. While in Admin Mode, <b>Select Preferences</b> from the menu:  
 
 <img style="height:450px" src="prefs_admin_menu.png"/>
 <br>
 
-&#49;&#53;. Scroll the Preferences panel and <b>elect the desired settings</b>: 
+&#49;&#53;. Scroll the Preferences panel and <b>select the desired settings</b>: 
 
 <img style="height:450px" src="prefs_1.png"/>
 
@@ -505,9 +506,9 @@ To uninstall EHS using an MDM, instruct the MDM to do the following:
 
 &#50;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
+> <b>Note</b>: Some device settings configured by EHS might not revert to their state prior to installation. Please check the device after removing EHS and configure as required. 
+
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
 Remote uninstallation of EHS is now complete. 
-
-> <b>Note</b>: Some device settings configured by EHS might not revert to their state prior to installation. Please check the device after removing EHS and configure as required. 
 

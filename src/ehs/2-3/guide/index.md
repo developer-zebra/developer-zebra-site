@@ -7,22 +7,22 @@ content-items:
       level: 4
       title: Installation and Setup
       text: How to download, install and quickly configure EHS for first-time use
-      url: /ehs/2-3/guide/install
+      url: /ehs/2-3/guide/setup
     - type: section
       level: 4
-      title:  EHS Modes
-      text: Understanding User mode, Admin mode, Kiosk mode, Secure mode, Unsecure mode and Certificate usage
-      url: /ehs/2-3/guide/advanced
-    - type: section
-      level: 4
-      title: Advanced Configuration
+      title:  Advanced Settings
       text: How to control Enterprise Home Screen through its XML configuration file
-      url: /ehs/2-3/guide/config
+      url: /ehs/2-3/guide/settings
     - type: section
       level: 4
-      title: Deployment
-      text: Individual and mass deployment of Enterprise Home Screen with customized settings 
-      url: /ehs/2-3/guide/deploy
+      title: Advanced Features
+      text: User mode, Admin mode, Kiosk mode, Secure mode, Unsecure mode and Certificate usage
+      url: /ehs/2-3/guide/features
+    - type: section
+      level: 4
+      title: TBD 
+      text: More Enterprise Home Screen stuff 
+      url: /ehs/2-3/about
 
 ---
 

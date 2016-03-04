@@ -4,31 +4,70 @@ layout: guide.html
 ---
 
 ## Overview
+This section assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please refer to the [About](../about) and [Setup](../setup) pages before continuing with this guide.  
+
+The behavior of Enterprise Home Screen is controlled entirely through `enterprisehomescreen.xml`, an easy-to-read file that can be modified with any text editor. Included with every EHS installation, the default version of the file contains many common device security settings, plus a few standard apps. In many instances, all that's needed to begin using EHS is to add an organization's own applications and to apply its preferred security and display settings. 
+
+This guide describes the interaction between EHS and its config file, instructions for accessing and customizing it for a company's specific requirements, and for deploying the settings to device(s). It also contains a detailed analysis of the config file itself, with explanations of each parameter and examples of how to configure it. 
+
+## Working with the Config File
+This section describes important traits of EHS and its interaction with the `enterprisehomescreen.xml` config file, and the means by which the administrator can retrieve, modify and deploy it to devices. 
+
+#### Config File Location
+
+* The config file is stored in `/enterprise/usr` and is invisible to most apps.
+* As such, <b>Windows Explorer and Android File Transfer (Mac) cannot be used</b> to retrieve the file from its default location. 
+* Deploying a config file to a device requires [ADB](http://developer.android.com/tools/help/adb.html) or an MDM system. 
+
+For help configuring a Mac or Windows PC to use ADB, please refer to the [Connectivity Guide](../connect). 
+
+#### Accessing the Config File
+
+* The `enterprisehomescreen.xml` file can be exported to an unprivileged file area. 
+* <b>Export the config file from the Tools menu of Admin Mode</b>.
+* ADB can be used to 'pull' the config file from the privileged area to the local PC. 
+* Only ADB or an MDM can 'push' the config file back to its required position for use. 
+
+Retrieve the config file using ADB: 
+
+    :::term
+    adb pull enterprisehomescreen.xml /enterprise/usr/enterprisehomescreen.xml
+
+Alternatively, 
+
+&#51;. On the device, <b>launch File Browser</b> from the App Drawer:
+
+<img style="height:500px" src="admin_menu.png"/>
+<br>
+
+<img style="height:500px" src="export_confirm.png"/>
+<br>
+
+<img style="height:500px" src="export_completed.png"/>
+<br>
 
 
-Runtime configuration settings of Enterprise Browser apps are managed through the Config.xml file. The Config.xml file is required; your app will not start without it. Config.xml determines features and behavior of the EB runtime, such as the keys that can be intercepted by an app and whether to pre-load modules on startup. A sample configuration file is provided as part of the Enterprise Browser installation, and contains defaults for many (though not all) of the most common settings. 
+#### Deploying an Edited Config File
 
-The sample Config.xml file also is displayed below, and is followed by explanations of all settings. The EB Config.xml can be edited with an ordinary text editor or with the Config Editor utility included with the installation of Enterprise Browser 1.3. For more information, please refer to the [Config Editor utility guide](../guide/ConfigEditor). 
-
-## Configuration file location
-The location of the configuration file loaded by the Enterprise Browser is dependent on a number of factors:
-
+* Once properly configured, a config file can be deployed to the device(s) with ADB or an MDM.
+* If EHS is running, the settings in a deployed config file take effect immediately. 
+* If EHS is in the background, the new settings take effect the next time EHS comes to the foreground.
 
 
+Deploy the config file using ADB:
 
+    :::term
+    adb push enterprisehomescreen.xml /enterprise/usr/enterprisehomescreen.xml
 
+To deploy using an MDM, please refer to [Setup](../setup/?Automated Installation) for special instructions. 
 
+#### Config File Must be All Lower Case
 
+* Any version of the config file that's <b>not all lower-case will be ignored</b>. 
+• If the config file is missing, EHS will spawn a new config file with default settings. 
+* If a mixed-case config file of the same name is deployed, it will overwrite a correctly cased file.
+* An incorrectly cased config file will be treated as a missing file.
 
-
-
-These instructions provide a 
-
-
-
-
-
-to the EnterpriseHomeScreen.XML configuration file
 
 basic understanding of the installation, configuration, usage and essential workings of EHS, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Mobile Device Management (MDM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings]() section. 
 

@@ -241,27 +241,27 @@ To install EHS manually using the automatic target selection (`EHS_020300.apk`) 
 
 &#51;. On the device, <b>launch File Browser</b> from the App Drawer:
 
-<img style="height:500px" src="file_browser_in_drawer.png"/>
+<img alt="" style="height:500px" src="file_browser_in_drawer.png"/>
 <br>
 
 &#52;. <b>Locate and launch</b> `EHS_020300.apk`:
 
-<img style="height:500px" src="file_browser_search.png"/>
+<img alt="" style="height:500px" src="file_browser_search.png"/>
 <br>
 
 &#53;. <b>Tap Install</b>:
 
-<img style="height:500px" src="EHS_installer.png"/>
+<img alt="" style="height:500px" src="EHS_installer.png"/>
 <br>
 
 &#54;. After installation, <b>tap Open</b>:
 
-<img style="height:250px" src="app_installed.png"/>
+<img alt="" style="height:250px" src="app_installed.png"/>
 If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home Screen' from the App Drawer and proceed.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
 
-<img style="height:250px" src="select_home_app.png"/>
+<img alt="" style="height:250px" src="select_home_app.png"/>
 <br>
 
 &#56;. <b>Select Enterprise Home Screen</b> and <b>tap 'Just once'</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting 'Always' makes the selection permanent. 
@@ -272,7 +272,7 @@ If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home S
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 
 
 <b>EHS User Mode</b>
-<img style="height:250px" src="user_screen.png"/>
+<img alt="" style="height:250px" src="user_screen.png"/>
 
 > <b>Note</b>: EHS selects apps for display in User Mode from apps installed on the device. <b>All apps intended for use must be installed on the device before proceeding</b>.
 
@@ -280,28 +280,28 @@ Enter Admin Mode and select which apps will be displayed to users:
 
 &#49;&#48;. <b>Tap the menu icon</b> and <b>open the Tools menu</b>:
 
-<img style="height:250px" src="user_screen_menu.png"/>
+<img alt="" style="height:250px" src="user_screen_menu.png"/>
 <br>
 
 &#49;&#49;. <b>Select Admin Login</b> and tap OK (the default password is blank):
 
-<img style="height:250px" src="admin_login.png"/>
+<img alt="" style="height:250px" src="admin_login.png"/>
 <br>
 
 After hitting OK, the admin version of the Tools menu will be displayed. 
 
 &#49;&#50;. <b>Tap the BACK button</b> to dismiss the Tools menu. The Admin Mode screen similar to the image below will show all apps installed on the device.  
 
-<img style="height:250px" src="admin_screen.png"/>
+<img alt="" style="height:250px" src="admin_screen.png"/>
 <br>
 
 > <b>Note</b>: If one or more apps intended for use is not displayed, it must be installed before proceeding. 
 
 &#49;&#51;. <b>Long-press an app icon</b> to alternatively display or hide it from the User Mode screen. Depending on the app's status when long-pressed, one of the following messages will appear: 
 
-<img style="height:200px" src="add_app.png"/> 
+<img alt="" style="height:200px" src="add_app.png"/> 
 
-<img style="height:200px" src="remove_app.png"/>
+<img alt="" style="height:200px" src="remove_app.png"/>
 
 Repeat this step until desired apps are selected for display. To confirm selections, switch between Admin and User Modes by logging in and out of Admin Mode from the Tools menu. 
 
@@ -322,29 +322,29 @@ To select which settings will be available while the device is in User Mode and/
 
 &#49;&#52;. While in Admin Mode, <b>Select Preferences</b> from the menu:  
 
-<img style="height:450px" src="prefs_admin_menu.png"/>
+<img alt="" style="height:450px" src="prefs_admin_menu.png"/>
 <br>
 
 &#49;&#53;. Scroll the Preferences panel and <b>select the desired settings</b>: 
 
-<img style="height:450px" src="prefs_1.png"/>
+<img alt="" style="height:450px" src="prefs_1.png"/>
 
-<img style="height:450px" src="prefs_2.png"/>
+<img alt="" style="height:450px" src="prefs_2.png"/>
 
-<img style="height:450px" src="prefs_3.png"/>
+<img alt="" style="height:450px" src="prefs_3.png"/>
 
-For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `EnterpriseHomeScreen.XML` configuration file, please refer to the [Advanced Settings]() section. 
+For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please refer to the [Advanced Settings]() section. 
 
 ## Automated Installation
-These instructions apply to remote installation from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-Applicable to either scenario, this documentation covers use of the EHS Installer (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the 'Supported Devices and APKs' table above, be sure to substitute the file name(s) where necessary in the instructions. 
+This section covers use of the EHS Installer (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version and the default config file if none is present. If installing a config file or device-specific APK from the 'Supported Devices and APKs' table above, be sure to add or substitute the file name(s) where necessary in the instructions. 
 
 > <b>Note</b>: The EHS Installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
 To install EHS using an MDM, instruct the MDM to do the following, in this order:
 
-&#49;. If desired, <b>create an</b> `EnterpriseHomeScreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings]() section for detailed instructions on the creation and editing of config files. 
+&#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings]() section for detailed instructions on the creation and editing of config files. 
 
 &#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the `EHS_020300.apk` (or target-specific) file and the XML file created in the previous step.
 
@@ -419,23 +419,23 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Installer</b>. This automatically removes both the EHS Installer and the Enterprise Home Screen app. 
 
 &#49;. From the Admin Mode screen, <b>Select Settings</b>:  
-<img style="height:350px" src="app_admin_screen_settings.png"/>
+<img alt="" style="height:350px" src="app_admin_screen_settings.png"/>
 <br>
 
 &#50;. <b>Tap Apps</b> to bring up the Android App Manager: 
-<img style="height:450px" src="app_settings.png"/>
+<img alt="" style="height:450px" src="app_settings.png"/>
 <br>
 
 &#51;. Locate and <b>Tap EHS Installer</b>:
-<img style="height:450px" src="app_mgr.png"/>
+<img alt="" style="height:450px" src="app_mgr.png"/>
 <br>
 
 &#52;. <b>Tap the Uninstall button</b>:
-<img style="height:450px" src="app_uninstall.png"/>
+<img alt="" style="height:450px" src="app_uninstall.png"/>
 <br>
 
 &#53;. <b>Click OK</b> to confirm:
-<img style="height:450px" src="app_uninstall_confirm.png"/>
+<img alt="" style="height:450px" src="app_uninstall_confirm.png"/>
 <br>
 
 Manual uninstallation of EHS is now complete. 

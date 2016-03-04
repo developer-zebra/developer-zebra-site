@@ -15,11 +15,6 @@ content-items:
       url: /stagenow/2-2/Profiles/configdevice
     - type: section
       level: 4
-      title: Configuring A Device
-      text: Use this Wizard to configure the most common device settings such as locale, security options, applications, MDM enrollment, and production network settings. 
-      url: /emdk-for-android/4-0/guide/setupDevice
-    - type: section
-      level: 4
       title: Connect Network
       text: Use this Wizard to connect to a Wi-Fi, GPRS, or Ethernet network.
       url: /stagenow/2-2/Profiles/ConnectNetwork

@@ -5,53 +5,74 @@ layout: guide.html
 
 ## Overview
 
-Here's the stuff on Kiosk Mode, Secure Mode, Unsecure Mode, etc. etc. 
+This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
-Runtime configuration settings of Enterprise Browser apps are managed through the Config.xml file. The Config.xml file is required; your app will not start without it. Config.xml determines features and behavior of the EB runtime, such as the keys that can be intercepted by an app and whether to pre-load modules on startup. A sample configuration file is provided as part of the Enterprise Browser installation, and contains defaults for many (though not all) of the most common settings. 
+## Kiosk Mode
+Kiosk Mode is designed for devices intended to run a single application, often with a touch-based UI. Examples include retail price checkers and other information look-ups, patient check-in devices and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's handheld barcode scanner. Kiosk Mode places the app in in full-screen mode and disables BACK and HOME keys to prevent users from exiting the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
 
-The sample Config.xml file also is displayed below, and is followed by explanations of all settings. The EB Config.xml can be edited with an ordinary text editor or with the Config Editor utility included with the installation of Enterprise Browser 1.3. For more information, please refer to the [Config Editor utility guide](../guide/ConfigEditor). 
+##### Kiosk Mode tags:
+<b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
 
-## Configuration file location
-The location of the configuration file loaded by the Enterprise Browser is dependent on a number of factors:
+<b>&lt;kiosk_mode_enabled&gt;</b> - Toggles the feature on and off
+<br>
 
+##### Disable Kiosk Mode
+Once Kiosk Mode is enabled it can be disabled without writing custom program code in only one of two ways:
 
+* <b>If USB Debugging was not disabled for User Mode</b>, disable Kiosk Mode by pushing to the device a config file with &lt;kiosk_mode_enabled&gt; tag set to '0'  
 
+* <b>If USB Debugging was disabled for User Mode</b>, perform a factory reset
 
+##### Control Kiosk Mode Programatically
+Kiosk Mode can be controlled from within an Android application using Android Intents. The following JavaScript code shows how to enable and disable Kiosk Mode programatically in this way:  
 
+	:::javascript
+	//Disable Kiosk Mode:
+	Intent intent = new Intent("com.symbol.enterprisehomescreen.actions.MODIFY_KIOSK_MODE");
+	Intent.putExtra("enable",false);
 
-
-
-
-
-These instructions provide a 
-
-
-
-
-
-to the EnterpriseHomeScreen.XML configuration file
-
-basic understanding of the installation, configuration, usage and essential workings of EHS, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Mobile Device Management (MDM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings]() section. 
-
-> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-3/download) and [establish connectivity between the computer and device(s)](). Then resume from here. 
-
-## Supported Devices and APKs
-Enterprise Home Screen works with most Zebra Android devices. The EHS download package includes <b>all three files</b> indicated in the table below, plus documentation and release notes. The correct APK file for a particular target device depends on the device, its operating system and some additional considerations explained below. 
+	//Enable Kiosk Mode:
+	sendBroadcast(intent); Change Intent.putExtra("enable",true);
 
 
-## Manual Installation
+> <b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
+
+------
+
+#### Kiosk Mode Enabled
+Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). 
+
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to '0' if USB Debugging is enabled. Otherwise a factory reset is required. 
+
+<b>Possible values</b>
+
+* 1
+* <b>0 (default)</b>
+
+#### Example
+
+    <kiosk_mode_enabled>0</kiosk_mode_enabled>
+    
+------
+
+### Kiosk
+
+Specifies the app to run when the device is in [Kiosk Mode](../guide/features), an optional mode under which a single app fills the screen and the BACK and HOME keys are disabled to prevent exiting. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag. 
+
+<b>Possible values</b>
+
+* Label: string 
+* Package: app package name 
+* Activity: package name of app feature to invoke when the app starts
+
+##### Example
+
+    <kiosk>
+            <application label="Calculator" package="com.android.calculator2" activity=""/>
+    </kiosk>
 
 
-> <b>Note</b>: The installer 
+------
 
-components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
-
-To install EHS manually using the automatic target selection (`EHS_020300.apk`) app: 
-
-&#49;. <b>Connect the device</b> via USB to a PC or Mac.
-
-&#50;. <b>Copy the </b>`EHS_020300.apk` <b>file</b> from the PC to any writable device folder.
-
-
-Remote uninstallation of EHS is now complete. 
+## Secure Mode
 

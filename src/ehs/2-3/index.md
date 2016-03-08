@@ -9,8 +9,8 @@ menu:
       url: /ehs/2-3/guide/about
     - title: Getting Started
       url: /ehs/2-3/guide/gettingstarted
-    - title: Tutorials
-      url: /ehs/2-3/tutorial/
+    - title: Setup
+      url: /ehs/2-3/guide/setup
     - title: Guides
       url: /ehs/2-3/guide/
     - icon: fa fa-search

@@ -4,7 +4,8 @@ layout: guide.html
 ---
 
 ## Overview
-This guide assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please refer to the [About](../about) and [Setup](../setup) pages before continuing with this guide.  
+This guide assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please refer to the [About](../about) and [Setup](../setup) pages before continuing with this guide. Refer to the [Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
+
 
 The behavior of Enterprise Home Screen is controlled entirely through `enterprisehomescreen.xml`, an easy-to-read file that can be modified with any text editor. A default version of the file contains many common device security settings plus a few standard apps, and is part of every EHS installation. In many instances, all that's needed to begin using EHS is to add an organization's own applications and to apply its preferred security and display settings. 
 
@@ -177,6 +178,13 @@ Specifies the app to run when the device is in [Kiosk Mode](../guide/features), 
 * Package: app package name 
 * Activity: package name of app feature to invoke when the app starts
 
+##### Example
+
+    <kiosk>
+            <application label="Calculator" package="com.android.calculator2" activity=""/>
+    </kiosk>
+
+
 ------
 
 ### Applications
@@ -229,16 +237,16 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes.
 ------
 
 ### Passwords
-Stores a password for logging into Admin Mode. Entered in clear text and protected by EHS with 256-bit AES encryption when stored. Blank by default. 
+Stores the encrypted password for logging into Admin Mode (blank by default). This tag accepts no human input; it is used by EHS to store the encrypted hash of the password entered through the EHS UI. Passwords are protected with 256-bit AES encryption and once created and stored in the config file, can be deployed along with all other settings.
 
 <b>Possible values</b>
 
-* string
+* Encrypted hash stored programatically by EHS (accepts no human input)
 
 #### Example
 
     <passwords>
-        <admin>IMApassw0rd</admin>
+        <admin></admin>
     </passwords>
 
 ------
@@ -259,7 +267,7 @@ Specifies the title bar text for the EHS app. Default of 'Enterprise Home Screen
 
 ------
 #### Icon Label Background
-Specifies the background color of the icon label text of applications displayed in User Mode. Default is white. 
+Specifies the background color of the icon label text of applications displayed in User Mode. Default is white (FFFFFF) with an opacity value of AA (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <b>Possible values</b>
 
@@ -267,11 +275,11 @@ Specifies the background color of the icon label text of applications displayed 
 
 #### Example
 
-    <icon_label_background_color>#FFFFFF</icon_label_background_color>
+    <icon_label_background_color>#AAFFFFFF</icon_label_background_color>
     
 ------
 #### Icon Label Text Color
-Specifies the color of the icon label text of applications in displayed User Mode. Default is black. 
+Specifies the color of the icon label text of applications displayed in User Mode. Default is black (000000) with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <b>Possible values</b>
 
@@ -279,7 +287,7 @@ Specifies the color of the icon label text of applications in displayed User Mod
 
 #### Example
 
-    <icon_label_text_color>#000000</icon_label_text_color>
+    <icon_label_text_color>#FF000000</icon_label_text_color>
     
 ------
 #### Orientation
@@ -297,7 +305,7 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
     
 ------
 #### Bypass Keyguard
-Controls whether to display the keyguard screen lock. The keyguard is disabled by default. A setting of '0' in this tag will enable the keyguard.  
+Controls whether to display the keyguard screen lock. Disabled by default. A setting of '0' in this tag will enable the keyguard.  
 
 <b>Possible values</b>
 
@@ -310,7 +318,7 @@ Controls whether to display the keyguard screen lock. The keyguard is disabled b
     
 ------
 #### Auto Launch Enable
-Enables any number of apps to be automatically launched after EHS starts up. When enabled, apps specified in the optional &lt;auto_launch&gt; section are launched after a specified delay. BACK and HOME keys remain enabled.  Refer to [Optional Tags section](#optionaltags) for more information. Disabled by default. See also: [Kiosk Mode](). 
+Enables one or more apps to be automatically launched after EHS starts up. Works with optional &lt;auto_launch&gt; section. When enabled, apps specified in the &lt;auto_launch&gt; section are launched after a specified delay. <b>BACK and HOME keys remain enabled</b>. Refer to [Optional Tags section](#optionaltags) for more information. Disabled by default. See also: [Kiosk Mode](#kiosk). 
 
 <b>Possible values</b>
 
@@ -335,7 +343,9 @@ Allows a background image to be specified for display in User Mode. If left unsp
     
 ------
 #### Kiosk Mode Enabled
-Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode when EHS starts up. Also disables BACK and HOME keys to prevent users from exiting the app. See also: [Auto-Launch](). 
+Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). 
+
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to '0' if USB Debugging is enabled. Otherwise a factory reset is required. 
 
 <b>Possible values</b>
 
@@ -469,13 +479,13 @@ Controls whether full or limited settings are available when the device when in 
 ------
 
 ## Optional Feature Tags
-This section covers optional features that to not include tags in the default config file but can be activated by adding their tags to the `enterprisehomescreen.xml` file, if desired.  
+This section covers optional features not included in the default `enterprisehomescreen.xml` file but can be activated by adding their tags to it, if desired.  
 
 ------
 #### Auto Launch
 This feature permits any number of apps to be launched when EHS starts up. Similar to Kiosk mode, auto-launch apps are specified in a separate section, can be launched with a specific app activity and the feature is activated with a tag in the Preferences section. 
 
-Auto-launch differs from Kiosk mode in that it does not disable BACK and HOME keys and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;application&gt; section</b>. 
+Auto-launch differs from [Kiosk mode](#kiosk) in that it does not disable BACK and HOME keys and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;application&gt; section</b>. 
 
 <b>Possible values</b>
 * application delay: integer (milliseconds)
@@ -488,52 +498,8 @@ Auto-launch differs from Kiosk mode in that it does not disable BACK and HOME ke
         <application delay="8000" package="com.android.calculator2" activity=""/>
         <application delay="5000" package="com.rovio.angrybirds" activity=""/>
     </auto_launch>
-<br>
 
 ------
 
->>>>>>>RESUME HERE TUESDAY <<<<<<<
+Refer to the [Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
 
-Kiosk launch (optional)
-This section specifies the application that will be launched in Kiosk mode.
-
-    <kiosk>
-            <application label="Calculator" package="com.android.calculator2" activity=""/>
-    </kiosk>
-
-Kiosk preferences
-
-Kiosk mode will allow you to specify one application to run at startup and will prevent the user from pressing BACK or HOME to exit that program.
-
-    <preferences>
-         <kiosk_mode_enabled>1</kiosk_mode_enabled>
-    </preferences>
-
-Valid node values
-0 
-disabled (default when not specified)
-
-1 
-enabled
-
-Note    <kiosk_mode_enabled> must also be set to 1 in the preferences section before EHS will lock the device into the specified application.
-Warning 
-Once you have set this setting you will not be able to exit Kiosk mode unless you do one of the following:
-
-Inside a custom developed application the Android developer has the option to write code to disable and enable Kiosk Mode. This is done through an Android specific method called intent.
-
-Send the following intent to EHS…
-
-Intent intent = new Intent("com.symbol.enterprisehomescreen.actions.MODIFY_KIOSK_MODE");
-Intent.putExtra("enable",false);
-sendBroadcast(intent);
-Change Intent.putExtra("enable",true); re-enable Kiosk mode
-
-Note    When Kiosk mode is enabled, make sure to disable the other methods of app launching such as "key remapping".
-Applications
-This section will add icons to the "User" home screen.
-
-    <applications>
-            <application label="Calculator" package="com.android.calculator2" activity=""/>
-            <link label="ET1 Video" url="http://www.youtube.com/watch?v=ERlIzLt-h6s"/>
-    </applications>

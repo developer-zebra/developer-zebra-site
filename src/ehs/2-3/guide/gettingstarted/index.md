@@ -18,7 +18,7 @@ content-items:
       level: 4
       title: Advanced Settings
       text: A complete guide to the EnterpriseHomeScreen.XML configuration file
-      url: /ehs/2-3/guide/config
+      url: /ehs/2-3/guide/settings
     - type: section
       level: 4
       title: Advanced Features

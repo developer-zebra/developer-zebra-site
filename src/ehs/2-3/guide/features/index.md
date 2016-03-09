@@ -8,7 +8,7 @@ layout: guide.html
 This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
 ## Kiosk Mode
-Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers and other information look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's handheld barcode scanner. Kiosk Mode places the app in in full-screen mode and disables BACK and HOME keys to prevent users from exiting the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
+Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's handheld barcode scanner. Kiosk Mode places the app in full-screen mode and disables BACK and HOME keys to prevent users from exiting the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
 
 ##### Kiosk Mode tags:
 <b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
@@ -20,21 +20,22 @@ Kiosk Mode is designed for devices to run a single application, often with a tou
 
 In the `enterprisehomescreen.xml` file:
 
-1. Specify the Kiosk app in the [&lt;kiosk&gt; section](../settings#kiosk) section. 
-2. Enter a value of '1' in the [&lt;kiosk_mode_enabled&gt; tag](../settings#kioskmodeenabled) in the Preferences section. 
-3. If USB Debugging is desired in Kiosk Mode, enter a value of '0' in the [USB Debugging Disabled tag](../settings#usbdebuggingdisabled). (See [Disable Kiosk Mode](#disablekioskmode) below for details). 
+1. Specify the Kiosk app in the [&lt;kiosk&gt; section](../settings#kiosk) of the config file. 
+2. Enter a value of '1' in the [&lt;kiosk_mode_enabled&gt; tag](../settings#kioskmodeenabled) in the Preferences section of the file. 
+3. If USB Debugging is desired in Kiosk Mode, enter a value of '0' in the [&lt;usb_debugging_disabled&gt; tag](../settings#usbdebuggingdisabled).<br> 
+(See [Disable Kiosk Mode](#disablekioskmode) below for details). 
 
-<b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
+<b>Security Note</b>: When using Kiosk Mode, be sure to disable 'key remapping' and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
 
 ### Disable Kiosk Mode
-Once Kiosk Mode is enabled it can be disabled without writing custom program code in only one of two ways:
+Once Kiosk Mode is enabled it can be disabled in only one of two ways (without writing custom program code):
 
-* <b>If USB Debugging was not disabled for User Mode</b>, disable Kiosk Mode by pushing to the device a config file with &lt;kiosk_mode_enabled&gt; tag set to '0'  
+* <b>If USB Debugging was not disabled for User Mode</b>, disable Kiosk Mode by pushing to the device a config file with a value of '0' in the &lt;kiosk_mode_enabled&gt; tag.
 
-* <b>If USB Debugging was disabled for User Mode</b>, perform a factory reset
+* <b>If USB Debugging was disabled for User Mode</b>, perform a factory reset. 
 
 ##### Control Kiosk Mode Programatically
-Kiosk Mode can be controlled from within an Android application using Android Intents. The following JavaScript code shows how to enable and disable Kiosk Mode programatically in this way:  
+Kiosk Mode can be controlled from within an Android application using Android Intents. The following JavaScript code shows how to enable and disable Kiosk Mode programatically:  
 
 	:::javascript
 	//Disable Kiosk Mode:
@@ -51,7 +52,7 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 ## Secure Mode
 
-In Secure Mode, EHS will accept only a signed configuration file. Secure Mode prevents unauthorized changes to the EHS configuration file (`enterprisehomescreen.xml`). To operate in Secure mode, EHS requires a signed configuration file (enterprisehomescreen.xml) and a matching signature file (enterprisehomescreen.pem). 
+In Secure Mode, EHS will accept only a signed EHS configuration file, which prevents unauthorized changes to the file. To operate in Secure mode, EHS requires a signed config file (`enterprisehomescreen.xml`) and a matching signature file (`enterprisehomescreen.pem`). 
 
 A device that is not in Secure Mode is considered to be running in Normal Mode. When in Normal Mode (the default), EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
 
@@ -111,7 +112,21 @@ To confirm, the current operating mode can be viewed in the Preferences panel wh
 
 If matching is unsuccessful, the device will go into a [Lockdown State](#lockdownstate) (see below).
 
-> <b>Note</b>: When running in Secure Mode, the configuration and signature files are no longer stored in the `/enterprise/usr` folder. To retrieve the config file when the device is in Secure Mode, use the Export Configuration File option available under Tools menu in Admin Mode.
+> <b>Note</b>: When running in Secure Mode, the configuration and signature files are no longer stored in the `/enterprise/usr` folder. To retrieve the config file when the device is in Secure Mode, use the [Export Configuration File](../settings#configfileaccess) option available under Tools menu in Admin Mode.
+
+------
+
+### Disable Secure Mode
+The first step in returning a device to Normal Mode is to disable Secure Mode. There are two ways to accomplish this. Both involve removal of EHS from the device and require administrative privileges. 
+
+To remove EHS from a device running in Secure Mode:  
+
+* Enter Admin Mode and [uninstall EHS](../setup#uninstallation), or
+* Perform an Enterprise Reset (Please refer to the device manual for details). 
+
+With Secure-Mode EHS removed, follow the [EHS Setup](../setup#manualinstallation) guide for normal installation.  
+
+------
 
 ## Lockdown State
 A device running in Secure Mode will enter Lockdown State if the signed config file (`enterprisehomescreen.xml`) and its matching signature file (`enterprisehomescreen.pem`) cannot be verified against the corresponding certificate installed on the device. When this state is reached, the device will display a screen similar to the image below along with the reason for the lockdown. 
@@ -123,7 +138,7 @@ A device running in Secure Mode will enter Lockdown State if the signed config f
 There are two ways to recover from Lockdown State and return a device to Secure Mode operation:
 
 ##### Method 1: Replace Signature Files
-Copy the valid EHS config and signature files to the `/enterprise/usr` directory on the device. This will cause EHS to exit the lock down state, import the config file and return to Secure Mode. The valid files can be copied manually via ADB or deployed using an MDM.
+Copy the valid EHS config and signature files to the `/enterprise/usr` directory on the device. This will cause EHS to exit the Lockdown State, import the config file and return to Secure Mode. The valid files can be copied manually via ADB or deployed using an MDM.
 
 ##### Method 2: Delete Signature File
 Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS will remain in Lockdown State. 
@@ -148,3 +163,152 @@ Installing OpenSSL tool on Windows PC:
 
 
 OpenSSL can now be used to sign EHS files. 
+
+------
+
+## EHS Log
+
+EHS records major activities in the `enterprisehomescreen.log` file. Some of the activities being tracked include errors, exceeding allowed admin login attempts and switching the operating mode.
+
+------
+
+## EHS File Interactions
+
+<h3 id="X812">How EHS reacts to file operations</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Current mode</p></td>
+<td align="left" valign="top"><p class="table">Operation</p></td>
+<td align="left" valign="top"><p class="table">Results</p></td>
+<td align="left" valign="top"><p class="table">Recovery</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Normal Mode</p></td>
+<td align="left" valign="top"><p class="table">Copy a new enterprisehomescreen.xml file into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">New configuration takes effect. Still the device is running in Normal Mode.</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Normal Mode</p></td>
+<td align="left" valign="top"><p class="table">Copy an invalid pem file (i.e. this pem file does not match the xml file in /enterprise/usr folder)</p></td>
+<td align="left" valign="top"><p class="table">Lock down screen shows up immediately</p></td>
+<td align="left" valign="top"><p class="table">Delete the pem file in /enterprise/usr folder via admin login to the device or remotely . Device will resume in Normal Mode with existing configuration.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Normal Mode</p></td>
+<td align="left" valign="top"><p class="table">Copy a new xml file first and then the pem file (corresponding to that new xml file) into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">Once the xml file is detected the new configuration takes effect in Normal Mode.</p>
+<p class="table">When the pem file is copied:</p>
+<p class="table"><em>If signature verification is SUCCESS :</em> Device goes to secure mode.</p>
+<p class="table"><em>If signature verification is FAIL:</em> Lock down screen shows up immediately with Error.</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Normal Mode</p></td>
+<td align="left" valign="top"><p class="table">Copy a new pem file first and then the xml file (corresponding to that new pem file) into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">As soon as pem file is copied the device will go to Lockdown State. Once the relevant xml file is copied, lock down screen will vanish and device will go to secure mode with new configuration taking effect.</p>
+<p class="table">WARNING: The recommended way is to copy the xml file first and the pem file the second</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Current mode</p></td>
+<td align="left" valign="top"><p class="table">Operation</p></td>
+<td align="left" valign="top"><p class="table">Results</p></td>
+<td align="left" valign="top"><p class="table">Recovery</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Secure mode</p></td>
+<td align="left" valign="top"><p class="table">Copy a new xml file into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">New configuration does NOT take effect, since the relevant pem file has not been copied. Hence the device remains in the previous configuration, in secure mode.</p>
+<p class="table">Note:  Device does not go to Lockdown State in this case"</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Secure mode</p></td>
+<td align="left" valign="top"><p class="table">Copy a new xml file and the pem file (corresponding to that new xml file) into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table"><em>If signature verification is SUCCESS:</em> Device remains in secure mode. New configuration takes effect.</p>
+<p class="table"><em>If signature verification is FAIL:</em> New configuration does NOT take effect.Device goes to Lockdown State."</p></td>
+<td align="left" valign="top"><p class="table">Delete the xml file and pem file in /enterprise/usr folder via admin login to the device or remotely. Device will resume in secure mode with previous configuration."</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Secure mode</p></td>
+<td align="left" valign="top"><p class="table">Copy only a pem file into /enterprise/usr folder.</p></td>
+<td align="left" valign="top"><p class="table">Lock down screen shows up immediately</p></td>
+<td align="left" valign="top"><p class="table">Option 1: Copy the xml file (corresponding to the pem file) via Admin login to the device or remotely. Lock down screen will vanish immediately and the new configuration will take effect.</p>
+<p class="table">Option 2: Delete the pem file in /enterprise/usr folder: lock down screen will vanish immediately and the device will remain in previous configuration."</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Current state</p></td>
+<td align="left" valign="top"><p class="table">Operation</p></td>
+<td align="left" valign="top"><p class="table">Results</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Lockdown State</p></td>
+<td align="left" valign="top"><p class="table">Admin logins to the device and copy a new xml file and the relevant pem file via file browser in the device.</p></td>
+<td align="left" valign="top"><p class="table"><em>If signature verification is SUCCESS:</em> Device enters into secure mode. New configuration takes effect.</p>
+<p class="table"><em>If signature verification is FAIL:</em> Lock down screen shows up again. New configuration does NOT take effect.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Lockdown State</p></td>
+<td align="left" valign="top"><p class="table">Copy a new xml file and the relevant pem file remotely.</p></td>
+<td align="left" valign="top"><p class="table"><em>If signature verification is SUCCESS:</em> Lock down screen vanishes abruptly. Device enters into secure mode. New configuration takes effect.</p>
+<p class="table"><em>If signature verification is FAIL:</em> Lock down screen remains. New configuration does NOT take effect.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Lockdown State</p></td>
+<td align="left" valign="top"><p class="table">Delete the pem file in /enterprise/usr folder via admin login to the device or remotely.</p></td>
+<td align="left" valign="top"><p class="table"><em>If the device was in secure mode previously:</em> Lock down screen vanishes and the device will resume in secure mode with previous configuration.</p>
+<p class="table"><em>If the device was in Normal Mode previously:</em> Lock down screen vanishes and the device will resume in Normal Mode with previous configuration.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Lockdown State</p></td>
+<td align="left" valign="top"><p class="table">Do not change any files in the /enterprise/usr folder. Then Uninstall EHS and Install EHS again</p></td>
+<td align="left" valign="top"><p class="table">When EHS is launched, lock down screen shows up in the device.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Lockdown State</p></td>
+<td align="left" valign="top"><p class="table">Delete the xml file and pem file in /enterprise/usr folder. Then Uninstall EHS and Install EHS again</p></td>
+<td align="left" valign="top"><p class="table">EHS is launched in Normal Mode</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+

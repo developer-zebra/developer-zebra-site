@@ -5,8 +5,8 @@ layout: list-content-items.html
 content-items:
     - type: section
       level: 4
-      title: Installation and Setup
-      text: How to download, install and quickly configure EHS for first-time use
+      title: Setup Guide
+      text: A step-by-step guide to installation and proper configuration of Enterprise Home Screen on a device
       url: /ehs/2-3/guide/setup
     - type: section
       level: 4
@@ -16,13 +16,7 @@ content-items:
     - type: section
       level: 4
       title: Advanced Features
-      text: User mode, Admin mode, Kiosk mode, Secure mode, Unsecure mode and Certificate usage
+      text: A guide to special features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State 
       url: /ehs/2-3/guide/features
-    - type: section
-      level: 4
-      title: TBD 
-      text: More Enterprise Home Screen stuff 
-      url: /ehs/2-3/about
-
 ---
 

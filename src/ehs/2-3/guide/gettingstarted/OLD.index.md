@@ -12,12 +12,14 @@ content-items:
     - type: section
       level: 4
       title: Advanced Settings
-      text: How to control Enterprise Home Screen through its XML configuration file
+      text: A complete guide to the EnterpriseHomeScreen.XML configuration file
       url: /ehs/2-3/guide/settings
     - type: section
       level: 4
       title: Advanced Features
-      text: A guide to special features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State
+      text: This section includes Kiosk mode, Secure mode, Admin mode and Certificate usage
       url: /ehs/2-3/guide/features
 
 ---    
+
+  

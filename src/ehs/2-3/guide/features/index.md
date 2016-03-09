@@ -8,7 +8,7 @@ layout: guide.html
 This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
 ## Kiosk Mode
-Kiosk Mode is designed for devices intended to run a single application, often with a touch-based UI. Examples include retail price checkers and other information look-ups, patient check-in devices and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's handheld barcode scanner. Kiosk Mode places the app in in full-screen mode and disables BACK and HOME keys to prevent users from exiting the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
+Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers and other information look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's handheld barcode scanner. Kiosk Mode places the app in in full-screen mode and disables BACK and HOME keys to prevent users from exiting the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
 
 ##### Kiosk Mode tags:
 <b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
@@ -16,7 +16,17 @@ Kiosk Mode is designed for devices intended to run a single application, often w
 <b>&lt;kiosk_mode_enabled&gt;</b> - Toggles the feature on and off
 <br>
 
-##### Disable Kiosk Mode
+### Enable Kiosk Mode
+
+In the `enterprisehomescreen.xml` file:
+
+1. Specify the Kiosk app in the [&lt;kiosk&gt; section](../settings#kiosk) section. 
+2. Enter a value of '1' in the [&lt;kiosk_mode_enabled&gt; tag](../settings#kioskmodeenabled) in the Preferences section. 
+3. If USB Debugging is desired in Kiosk Mode, enter a value of '0' in the [USB Debugging Disabled tag](../settings#usbdebuggingdisabled). (See [Disable Kiosk Mode](#disablekioskmode) below for details). 
+
+<b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
+
+### Disable Kiosk Mode
 Once Kiosk Mode is enabled it can be disabled without writing custom program code in only one of two ways:
 
 * <b>If USB Debugging was not disabled for User Mode</b>, disable Kiosk Mode by pushing to the device a config file with &lt;kiosk_mode_enabled&gt; tag set to '0'  
@@ -35,44 +45,106 @@ Kiosk Mode can be controlled from within an Android application using Android In
 	sendBroadcast(intent); Change Intent.putExtra("enable",true);
 
 
-> <b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
-
-------
-
-#### Kiosk Mode Enabled
-Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). 
-
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to '0' if USB Debugging is enabled. Otherwise a factory reset is required. 
-
-<b>Possible values</b>
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <kiosk_mode_enabled>0</kiosk_mode_enabled>
-    
-------
-
-### Kiosk
-
-Specifies the app to run when the device is in [Kiosk Mode](../guide/features), an optional mode under which a single app fills the screen and the BACK and HOME keys are disabled to prevent exiting. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag. 
-
-<b>Possible values</b>
-
-* Label: string 
-* Package: app package name 
-* Activity: package name of app feature to invoke when the app starts
-
-##### Example
-
-    <kiosk>
-            <application label="Calculator" package="com.android.calculator2" activity=""/>
-    </kiosk>
-
+<b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
 
 ------
 
 ## Secure Mode
 
+In Secure Mode, EHS will accept only a signed configuration file. Secure Mode prevents unauthorized changes to the EHS configuration file (`enterprisehomescreen.xml`). To operate in Secure mode, EHS requires a signed configuration file (enterprisehomescreen.xml) and a matching signature file (enterprisehomescreen.pem). 
+
+A device that is not in Secure Mode is considered to be running in Normal Mode. When in Normal Mode (the default), EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
+
+### Enable Secure Mode
+These instructions require ADB for communication with the device and OpenSSL for the creation of device certificate and private key files. If necessary, please install ADB and [OpenSSL for Windows]() before proceeding. 
+
+&#49;. Create a device root certificate (`caroot.pem`) and private key (`privatekey.pem`) using the following OpenSSL command: 
+
+	:::term
+	C:\OpenSSL-Win32\bin\openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout privatekey.pem -out caroot.pem
+<br>
+
+&#50;. Using a text editor, <b>create a</b> `certificate.xml` <b>file</b> as shown below: 
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<certificate>
+	        <install>
+	                <source>/sdcard/caroot.pem</source>
+	                <alias>CARootCert1</alias>
+	        </install>
+	</certificate>
+
+&#51;. <b> Copy the</b> `caroot.pem` <b>to the SD card</b> on the device. 
+
+&#52;. <b> Push</b> `certificate.xml` to the device </b> using Android File Browser or the following command ADB: 
+
+	:::term
+	adb push certificate.xml /enterprise/device/settings/mdm/autoimport/
+
+This will cause the root certificate to be installed on the device.
+
+&#53;. To confirm installation, <b> pull the</b> `Results.xml` <b>file</b> with the following command:
+
+	:::term
+	adb pull /enterprise/device/settings/mdm/autoimport/Results.xml.
+<br>
+
+&#54;. <b>Create the EHS configuration file</b> (`enterprisehomescreen.xml`) as described in the [Advanced Settings](../settings) section.
+
+&#55;. <b>Sign the config file</b> using the following OpenSSL command:
+
+	C:\OpenSSL-Win32\bin\openssl dgst -sign privatekey.pem -out enterprisehomescreen.pem enterprisehomescreen.xml
+
+If successful, the process of signing the `enterprisehomescreen.xml` file will produce a signature file called `enterprisehomescreen.pem`.
+
+> <b>Important</b>: Be sure to use the same version of OpenSSL to sign the config file as was used to generate the root certificate.
+
+&#56;. <b>Push the signed config and signature files</b> to the `/enterprise/usr` folder.
+
+&#57;. <b>Install and run the EHS APK</b> as described in the [Setup Guide](../setup). 
+
+At launch, EHS will attempt to match the config and signatures files with the device certificate. If successful, EHS will run in Secure mode and implement the settings in the signed config file. 
+
+To confirm, the current operating mode can be viewed in the Preferences panel when in Admin Mode. The image below shows that Secure Mode is OFF: 
+<img alt="" style="height:250px" src="secure_mode.png"/>
+<br>
+
+If matching is unsuccessful, the device will go into a [Lockdown State](#lockdownstate) (see below).
+
+> <b>Note</b>: When running in Secure Mode, the configuration and signature files are no longer stored in the `/enterprise/usr` folder. To retrieve the config file when the device is in Secure Mode, use the Export Configuration File option available under Tools menu in Admin Mode.
+
+## Lockdown State
+A device running in Secure Mode will enter Lockdown State if the signed config file (`enterprisehomescreen.xml`) and its matching signature file (`enterprisehomescreen.pem`) cannot be verified against the corresponding certificate installed on the device. When this state is reached, the device will display a screen similar to the image below along with the reason for the lockdown. 
+
+<img alt="" style="height:250px" src="lockdown_state.png"/>
+<br>
+
+### Recovery from Lockdown State
+There are two ways to recover from Lockdown State and return a device to Secure Mode operation:
+
+##### Method 1: Replace Signature Files
+Copy the valid EHS config and signature files to the `/enterprise/usr` directory on the device. This will cause EHS to exit the lock down state, import the config file and return to Secure Mode. The valid files can be copied manually via ADB or deployed using an MDM.
+
+##### Method 2: Delete Signature File
+Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS will remain in Lockdown State. 
+
+<b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will cause EHS to enter the Lockdown State. To exit this state, copy a valid config file (and matching signature file for Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
+
+## Install OpenSSL
+
+Installing OpenSSL tool on Windows PC: 
+
+&#49;. [Download OpenSSL 1.0.1g or above](http://slproweb.com/products/Win32OpenSSL.html) for Windows. 
+
+&#50;. Install OpenSSL on a computer with connectivity to the target device.
+
+&#51;. Dismiss the Visual C++ 2008 warning, if any, during installation and complete the installation.
+
+&#52;. At the command prompt, navigate to the OpenSSL installed folder (c:\OpenSSL-Win32\ by default)
+
+&#53;. Set the OpenSSL configuration environment variable by executing the following command:
+ 
+	C:\OpenSSL-Win32\ Set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
+
+
+OpenSSL can now be used to sign EHS files. 

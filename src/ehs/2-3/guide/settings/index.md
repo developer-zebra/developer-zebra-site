@@ -16,7 +16,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 #### Config File Location
 
-* The config file is stored in the `/enterprise/usr` directory on the device. 
+* The config file is stored in the `/enterprise/usr` directory on the device. (doesnot apply to [Secure Mode](../advanced#securemode))
 * This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> 'pull' and 'push' commands. 
@@ -114,7 +114,7 @@ The EHS config file is broken into five sections:
 * <b>Kiosk -</b> Specifies a single application to run when the device is in [Kiosk mode](). 
 * <b>Applications -</b> The apps to be displayed when the device is in [User Mode]().
 * <b>Tools -</b> The apps to be listed and launched from the User and Admin tools menus.
-* <b>Passwords -</b> The number of failed login attempts before Admin Mode is locked. 
+* <b>Passwords -</b> Stores the encrypted password for logging into Admin Mode. 
 * <b>Preferences -</b> Controls which features and settings the device will display.  
 
 ##### Default `enterprisehomescreen.xml` file:
@@ -176,7 +176,7 @@ Specifies the app to run when the device is in [Kiosk Mode](../guide/features), 
 
 * Label: string 
 * Package: app package name 
-* Activity: package name of app feature to invoke when the app starts
+* Activity: package name of app feature to invoke when the app starts (optional)
 
 ##### Example
 
@@ -188,13 +188,13 @@ Specifies the app to run when the device is in [Kiosk Mode](../guide/features), 
 ------
 
 ### Applications
-Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An activity parameter permits an app function to be invoked when the app starts up. 
+Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An optional activity parameter permits an app function to be invoked when the app starts up. 
 
 <b>Possible values</b>
 
 * Label: string
 * Package: app package name 
-* Activity: app function package name
+* Activity: app function package name (optional)
 
 #### Example app
 
@@ -207,7 +207,7 @@ Specifies the applications and/or browser links to be displayed to users while E
 <b>Possible values</b>
 
 * Label: string
-* Package: URL 
+* Package: URL (http://, https:// or file://*.html only)
 
 #### Example URL
 
@@ -224,7 +224,7 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes.
 <b>Possible values</b>
 * Label: string
 * Package: app package name 
-* Activity: app function package name
+* Activity: app function package name (optional)
 
 #### Example
 
@@ -305,7 +305,7 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
     
 ------
 #### Bypass Keyguard
-Controls whether to display the keyguard screen lock. Disabled by default. A setting of '0' in this tag will enable the keyguard.  
+Controls whether to display the keyguard screen lock. Disabled by default. A setting of '0' in this tag will enable the keyguard. <b>Note: A setting of '0' for this tag will prevent the MX multi-user login screen from being displayed</b>
 
 <b>Possible values</b>
 
@@ -479,18 +479,18 @@ Controls whether full or limited settings are available when the device when in 
 ------
 
 ## Optional Feature Tags
-This section covers optional features not included in the default `enterprisehomescreen.xml` file but can be activated by adding their tags to it, if desired.  
+This section covers optional features and tags not otherwise included in the default `enterprisehomescreen.xml` file but can be activated by adding their tags to it, if desired, or are activated by EHS as needed.  
 
 ------
 #### Auto Launch
-This feature permits any number of apps to be launched when EHS starts up. Similar to Kiosk mode, auto-launch apps are specified in a separate section, can be launched with a specific app activity and the feature is activated with a tag in the Preferences section. 
+This feature permits any number of apps to be launched when EHS starts up. Similar to Kiosk mode, auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. 
 
 Auto-launch differs from [Kiosk mode](#kiosk) in that it does not disable BACK and HOME keys and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;application&gt; section</b>. 
 
 <b>Possible values</b>
 * application delay: integer (milliseconds)
 * Package: app package name 
-* Activity: app function package name
+* Activity: app function package name (optional)
 
 #### Example
 
@@ -500,6 +500,39 @@ Auto-launch differs from [Kiosk mode](#kiosk) in that it does not disable BACK a
     </auto_launch>
 
 ------
+#### Admin Max Attempts
+The number of failed attempts to log into Admin Mode before EHS enters [Lockdown State](../features*lockdownstate). If this tag is not present or contains no value, the default of 10 will be used.
 
-Refer to the [Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
+#### Example
+
+    <preferences>
+        ...
+        <admin_max_attempts>10</admin_max_attempts>
+        ...
+    </preferences>
+
+EHS tracks the number of consecutive failed login attempts by adding the following attribute to the &lt;passwords&gt; tag: 
+
+    <passwords>
+        <admin attempts="10"></admin>
+    </passwords>
+
+------
+#### Admin Inactivity Timeout
+Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minumim period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. 
+
+<b>Possible values</b>
+
+* <b>60 (default if tag is left blank or is not present)</b>
+* 0 or negative value (disables timeout)
+* 15 (minimum, lower values are ignored)
+
+#### Example
+
+    <preferences>
+        <admin_inactivity_timeout>600</admin_inactivity_timeout>
+    </preferences>
+
+
+Refer to the [Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
 

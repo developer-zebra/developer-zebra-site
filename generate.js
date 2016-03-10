@@ -244,13 +244,25 @@ var sitebuild = Metalsmith(__dirname)
         pattern: 'stagenow',
         layoutName: 'guide.html'
     }))
+    .use(findLayout({
+        pattern: 'ehs',
+        layoutName: 'guide.html'
+    }))
     .use(findProduct({
         pattern: 'emdk-for-android',
         productName: 'EMDK For Android'
     }))
     .use(findProduct({
+        pattern: 'ehs',
+        productName: 'Enterprise Home Screen'
+    }))
+    .use(findProduct({
         pattern: 'stagenow',
         productName: 'Stagenow'
+    }))
+    .use(findProductVersion({
+        pattern: 'ehs/2-3',
+        productVersionName: '2.3'
     }))
     .use(findProductVersion({
         pattern: 'emdk-for-android/3-1',
@@ -479,6 +491,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'stagenow/2-2/'
     }))
+    .use(foldermenu({
+        folder: 'ehs/2-3/'
+    }))
     .use(showdown({literalMidWordUnderscores:true}))
     .use(snippet({
       maxLength: 250,
@@ -514,6 +529,8 @@ var sitebuild = Metalsmith(__dirname)
       index_generate("emdk-for-android/3-1");
       index_generate("emdk-for-xamarin/1-0");
       index_generate("stagenow/2-2");
+      index_generate("ehs/2-3");
+
     }
   });
 

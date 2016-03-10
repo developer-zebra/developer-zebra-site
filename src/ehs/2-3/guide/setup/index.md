@@ -251,7 +251,7 @@ To install EHS manually using the automatic target selection (`EHS_020300.apk`) 
 
 &#53;. <b>Tap Install</b>:
 
-<img alt="" style="height:500px" src="EHS_installer.png"/>
+<img alt="" style="height:500px" src="ehs_installer.png"/>
 <br>
 
 &#54;. After installation, <b>tap Open</b>:

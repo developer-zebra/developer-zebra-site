@@ -229,7 +229,7 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 </table>
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the installer APK (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the file name(s) where necessary in the instructions. 
+These instructions apply to direct installation (from a computer to a single device) using the installer APK (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the filename(s) where necessary in the instructions. 
 
 > <b>Note</b>: The installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
@@ -338,7 +338,7 @@ For scenarios that require even more security, EHS offers Secure and Kiosk modes
 ## Automated Installation
 These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-This section covers use of the EHS Installer (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version and the default config file if none is present. If installing a config file or device-specific APK from the 'Supported Devices and APKs' table above, be sure to add or substitute the file name(s) where necessary in the instructions. 
+This section covers use of the EHS Installer (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version and the default config file if none is present. If installing a config file or device-specific APK from the 'Supported Devices and APKs' table above, be sure to add or substitute the filename(s) where necessary in the instructions. 
 
 > <b>Note</b>: The EHS Installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
@@ -513,7 +513,7 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 Remote uninstallation of EHS is now complete. 
 
 ## Change the Default Launcher
-Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, progrmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
+Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, progrmmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
 
 To manually change the default launcher on a device without removing EHS: 
 

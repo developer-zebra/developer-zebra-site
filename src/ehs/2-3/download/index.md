@@ -6,7 +6,7 @@ layout: guide.html
 ## Download EHS
 Using the latest release is recommended for most cases. The download package includes separate .APKs for Jelly Bean and KitKat, plus an optional installer .APK that detects the target operating system and installs the correct EHS version automatically.
 
-After download, proceed to [Installation](/ehs/2-3/guide/install). 
+After download, proceed to [Setup](/ehs/2-3/guide/setup). 
 
 ## Latest Release
 

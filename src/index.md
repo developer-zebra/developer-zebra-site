@@ -64,17 +64,20 @@ products:
       - title: Device Staging
         url: /stagenow/2-2/stageclient
   - title: Enterprise Home Screen
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    description: A simple way to control user access to Android apps, settings and files without custom code. 
     url: /ehs/2-3/guide/about
-    image: http://placehold.it/350x150
+    image: /ehs/ehs-logo.png
     btn-text: Latest Docs
     sections:
+      - title: About
+        url: /ehs/2-3/guide/about
       - title: Getting Started
         url: /ehs/2-3/guide/gettingstarted
-      - title: Tutorials
-        url: /ehs/2-3/tutorial/
-      - title: Guides
-        url: /ehs/2-3/guide/programming-guides
-      
+      - title: Setup
+        url: /ehs/2-3/guide/setup
+      - title: Advanced Features
+        url: /ehs/2-3/guide/features
+      - title: Download
+        url: /ehs/2-3/download
 
 ---

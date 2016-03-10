@@ -21,7 +21,7 @@ This section describes important interactions between EHS and the `enterprisehom
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> 'pull' and 'push' commands. 
 
-> <b>Note</b>: Use caution when exposing File Broswer to users; it can be used to manipulate the EHS config file and change security or other settings.
+> <b>Note</b>: Use caution when exposing File Browser to users; it can be used to manipulate the EHS config file and change security or other settings.
 
 #### Config File Access
 
@@ -65,8 +65,7 @@ Important: <b>Do NOT change the file name in any way</b>.
 * Once configured, a config file is suitable for [mass-deployment using an MDM](../setup/#automatedinstallation) with or without the EHS app.
 
 ##### Exporting the Config File
-For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. 
-
+For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. <b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
 
 &#49;. In Admin Mode on the device, <b>select Export Configuration File</b> from the Tools menu:
 <img alt="" style="height:500px" src="admin_menu.png"/>
@@ -243,7 +242,7 @@ Stores the encrypted password for logging into Admin Mode (blank by default). Th
 
 <b>Possible values</b>
 
-* Encrypted hash stored programatically by EHS (accepts no human input)
+* Encrypted hash stored programmatically by EHS (accepts no human input)
 
 #### Example
 
@@ -269,7 +268,8 @@ Specifies the title bar text for the EHS app. Default of 'Enterprise Home Screen
 
 ------
 #### Icon Label Background
-Specifies the background color of the icon label text of applications displayed in User Mode. Default is #AAFFFFFF, white with an opacity value of AA (from a range of 00 to FF). 
+Specifies the background color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. Default is #AAFFFFFF, white with an opacity value of AA (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+
 
 * AA specifies the opacity 
 * RR specifies the level of RED
@@ -278,7 +278,7 @@ Specifies the background color of the icon label text of applications displayed 
 
 <b>Possible values</b>
 
-* HTML hexidecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
+* HTML hexadecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
 * Color names: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray and darkgray.
 
 #### Examples
@@ -289,10 +289,10 @@ Specifies the background color of the icon label text of applications displayed 
     <icon_label_background_color>magenta</icon_label_background_color>
 
 
-Get help [picking HTML color codes](http://www.colorpicker.com/).
 ------
 #### Icon Label Text Color
-Specifies the color of the icon label text of applications displayed in User Mode. The EHS default is #FF000000, black with an opacity value of FF (from a range of 00 to FF). 
+Specifies the color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. The EHS default is #FF000000, black with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+
 
 * AA specifies the opacity 
 * RR specifies the level of RED
@@ -301,7 +301,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 
 <b>Possible values</b>
 
-* HTML hexidecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
+* HTML hexadecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
 * Color names: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray and darkgray.
 
 #### Examples
@@ -310,8 +310,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
     <icon_label_text_color>#75A319</icon_label_text_color>
     <icon_label_text_color>#80EF671B</icon_label_text_color>
     <icon_label_text_color>magenta</icon_label_text_color>
-    
-Get help [picking HTML color codes](http://www.colorpicker.com/).
+
 ------
 #### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
@@ -328,7 +327,7 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
     
 ------
 #### Bypass Keyguard
-Controls whether to display the keyguard screen lock. Disabled by default. A setting of '0' in this tag will enable the keyguard. <b>Note: A setting of '0' for this tag will prevent the MX multi-user login screen from being displayed</b>
+Controls whether to display the keyguard screen lock. Disabled by default. A setting of 0 in this tag will enable the keyguard. <b>Note: A setting of 0 for this tag will prevent the MX multi-user login screen from being displayed</b> Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <b>Possible values</b>
 
@@ -387,7 +386,7 @@ EHS can be made to run in fullscreen mode by setting the value of this tag to 1.
 #### Kiosk Mode Enabled
 Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). 
 
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to '0' if USB Debugging is enabled. Otherwise a factory reset is required. 
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
 
 <b>Possible values</b>
 
@@ -400,7 +399,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
     
 ------
 #### Disable Status Bar Settings
-Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of '0' in this tag will enable the Status Bar Settings icon. 
+Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
 
 > Note: Changes to this setting will cause an automatic device reboot, a requirement for changes to take effect. 
 
@@ -454,7 +453,7 @@ Controls whether EHS will trigger an automatic device reboot when a setting that
     
 ------
 #### Airplane Option Disabled
-Controls whether the device can be put into 'airplane mode.' Depending on the device, this mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. 
+Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu might not be available on MC18, MC40 and MC92 devices running Android 4.4 KitKat). 
 
 <b>Possible values</b>
 
@@ -507,7 +506,7 @@ Controls whether communication via USB is permitted between the device and a com
     
 ------
 #### System Settings Restricted
-Controls whether full or limited settings are available when the device when in User Mode. A setting of '1' (default) or if left unspecified will restrict user access to device settings. <b>A setting of '0' will permit user access to all device settings</b>.
+Controls whether full or limited settings are available when the device when in User Mode. A setting of 1 (default) or if left unspecified will restrict user access to device settings. <b>A setting of 0 will permit user access to all device settings</b>.
 
 <b>Possible values</b>
 
@@ -589,7 +588,7 @@ The number of failed attempts to log into Admin Mode before EHS enters [Lockdown
     </preferences>
 
 <br>
-EHS tracks the number of consecutive failed login attempts by adding the following attribute to the &lt;passwords&gt; tag when neccessary: 
+EHS tracks the number of consecutive failed login attempts by adding the following attribute to the &lt;passwords&gt; tag when necessary: 
 
     <passwords>
         <admin attempts="10"></admin>
@@ -600,7 +599,7 @@ The counter clears after a successful login.
 ------
 
 #### Admin Inactivity Timeout
-Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minumim period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. 
+Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. 
 
 <b>Possible values</b>
 
@@ -643,6 +642,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 * The data also is saved in the &lt;Applications&gt; section of the `enterprisehomescreen.xml` file as indicated above. 
 * To remove a shortcut from user screen, delete the corresponding "link" tag from the config file. 
 * Adding duplicate shortcuts for the same local or remote application is allowed.
+* EHS does not check the validity of shortcuts; it's up to the admin to ensure that shortcuts are valid in all circumstances. 
 
 <b>Android Notes</b>:
 

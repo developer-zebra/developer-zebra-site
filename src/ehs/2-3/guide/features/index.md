@@ -34,8 +34,8 @@ Once Kiosk Mode is enabled it can be disabled in only one of two ways (without w
 
 * <b>If USB Debugging was disabled for User Mode</b>, perform a factory reset. 
 
-##### Control Kiosk Mode Programatically
-Kiosk Mode can be controlled from within an Android application using Android Intents. The following JavaScript code shows how to enable and disable Kiosk Mode programatically:  
+##### Control Kiosk Mode Programmatically
+Kiosk Mode can be controlled from within an Android application using Android Intents. The following JavaScript code shows how to enable and disable Kiosk Mode programmatically:  
 
 	:::javascript
 	//Disable Kiosk Mode:
@@ -52,7 +52,7 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 ## Secure Mode
 
-In Secure Mode, EHS will accept only a signed EHS configuration file, which prevents unauthorized changes to the file. To operate in Secure mode, EHS requires a signed config file (`enterprisehomescreen.xml`) and a matching signature file (`enterprisehomescreen.pem`). 
+In Secure Mode, EHS will accept only a signed EHS configuration file, thereby preventing unauthorized changes to the file. To operate in Secure mode, EHS requires a signed config file (`enterprisehomescreen.xml`) and a matching signature file (`enterprisehomescreen.pem`). 
 
 A device that is not in Secure Mode is considered to be running in Normal Mode. When in Normal Mode (the default), EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
 
@@ -88,7 +88,6 @@ This will cause the root certificate to be installed on the device.
 
 	:::term
 	adb pull /enterprise/device/settings/mdm/autoimport/Results.xml.
-<br>
 
 &#54;. <b>Create the EHS configuration file</b> (`enterprisehomescreen.xml`) as described in the [Advanced Settings](../settings) section.
 
@@ -117,14 +116,14 @@ If matching is unsuccessful, the device will go into a [Lockdown State](#lockdow
 ------
 
 ### Disable Secure Mode
-The first step in returning a device to Normal Mode is to disable Secure Mode. There are two ways to accomplish this. Both involve removal of EHS from the device and require administrative privileges. 
+The first step in returning a device to Normal Mode is to disable Secure Mode. This requires removal of EHS from the device and must be done by an administator.  
 
 To remove EHS from a device running in Secure Mode:  
 
 * Enter Admin Mode and [uninstall EHS](../setup#uninstallation), or
-* Perform an Enterprise Reset (Please refer to the device manual for details). 
+* Perform an Enterprise Reset (refer to the device manual for details). 
 
-With Secure-Mode EHS removed, follow the [EHS Setup](../setup#manualinstallation) guide for normal installation.  
+With Secure-Mode EHS removed, follow the [EHS Setup Guide](../setup#manualinstallation) for normal installation. 
 
 ------
 
@@ -143,26 +142,7 @@ Copy the valid EHS config and signature files to the `/enterprise/usr` directory
 ##### Method 2: Delete Signature File
 Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS will remain in Lockdown State. 
 
-<b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will cause EHS to enter the Lockdown State. To exit this state, copy a valid config file (and matching signature file for Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
-
-## Install OpenSSL
-
-Installing OpenSSL tool on Windows PC: 
-
-&#49;. [Download OpenSSL 1.0.1g or above](http://slproweb.com/products/Win32OpenSSL.html) for Windows. 
-
-&#50;. Install OpenSSL on a computer with connectivity to the target device.
-
-&#51;. Dismiss the Visual C++ 2008 warning, if any, during installation and complete the installation.
-
-&#52;. At the command prompt, navigate to the OpenSSL installed folder (c:\OpenSSL-Win32\ by default)
-
-&#53;. Set the OpenSSL configuration environment variable by executing the following command:
- 
-	C:\OpenSSL-Win32\ Set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
-
-
-OpenSSL can now be used to sign EHS files. 
+<b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will cause EHS to enter the Lockdown State. To exit this state, copy a valid config file (and its matching signature file if previously running in Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
 
 ------
 
@@ -312,3 +292,48 @@ cellspacing="0" cellpadding="4">
 </div>
 <div class="sect1">
 
+------
+## Security Notes
+This section covers important interactions between EHS and Android features that might impact device security or application behavior. 
+
+### Recent Apps List
+
+* Accessing an app from the Recent Apps list could represent a security risk. 
+* EHS does not add apps or activities to the Android Recent Apps list, but apps launched from within EHS might. 
+* To clear the Recent Apps list, reboot the device or bring up the list and manually swipe away each app. 
+* Bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears.
+* Recent apps not cleared from the list can be activated with the Back button, potentially exposing a non-EHS home screeen.
+
+### EHS and MX Multi-user
+
+* If using EHS with Zebra's MX Multi-user feature, it's important to disable the EHS Bypass Keyguard feature. Failure to do so will prevent the MX multi-user login screen from being displayed. Refer to the [Bypass Keyguard tag](../settings#bypasskeyguard) for settings instructions. 
+* MX Multi-user has the ability to override EHS-imposed restrictions on access to System Settings. Users logged in as an MX Admin will have full access to System Settings at all times. MX non-admin users by default will have access only to Sound, Display and About screens. 
+
+### Other Unintended Access
+
+* On devices running Android 4.4 KitKat, users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings menu in the Notification drop-down. This can be prevented with the [Disable Status Bar Settings tag](../settings#disablestatusbarsettings) ot through EMDK or StageNow. 
+* Taking a screenshot (by pressing the "volume-down" and "Power" buttons simultaneously) while in User Mode might expose users to the Gallery app. To prevent this, disable the Gallery app in the Disable/Enable Applications section of [Optional Feature Tags section](../settings#optionalfeaturetags).
+* If the Programmable Keys feature on the Android System Settings panel is used to program a key to launch an application, that key mapping will be available in User Mode. 
+
+------
+
+## Install OpenSSL
+
+Installing OpenSSL tool on Windows PC: 
+
+&#49;. [Download OpenSSL 1.0.1g or above](http://slproweb.com/products/Win32OpenSSL.html) for Windows. 
+
+&#50;. Install OpenSSL on a computer with connectivity to the target device.
+
+&#51;. Dismiss the Visual C++ 2008 warning, if any, during installation and complete the installation.
+
+&#52;. At the command prompt, navigate to the OpenSSL installed folder (c:\OpenSSL-Win32\ by default)
+
+&#53;. Set the OpenSSL configuration environment variable by executing the following command:
+ 
+	C:\OpenSSL-Win32\ Set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
+
+
+OpenSSL can now be used to sign EHS files. 
+
+------

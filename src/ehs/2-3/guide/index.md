@@ -10,7 +10,7 @@ content-items:
       url: /ehs/2-3/guide/setup
     - type: section
       level: 4
-      title:  Advanced Settings
+      title: Advanced Settings
       text: How to control Enterprise Home Screen through its XML configuration file
       url: /ehs/2-3/guide/settings
     - type: section

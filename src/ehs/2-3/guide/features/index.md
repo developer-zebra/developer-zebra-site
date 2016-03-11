@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Features
+title: EHS Special Features
 layout: guide.html
 ---
 

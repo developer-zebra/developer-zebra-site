@@ -4,7 +4,7 @@ layout: guide.html
 ---
 
 ## Overview
-This guide assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please refer to the [About](../about) and [Setup](../setup) pages before continuing with this guide. Refer to the [Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
+This guide assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please refer to the [About](../about) and [Setup](../setup) pages before continuing with this guide. Refer to the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
 
 
 The behavior of Enterprise Home Screen is controlled entirely through `enterprisehomescreen.xml`, an easy-to-read file that can be modified with any text editor. A default version of the file contains many common device security settings plus a few standard apps, and is part of every EHS installation. In many instances, all that's needed to begin using EHS is to add an organization's own applications and to apply its preferred security and display settings. 
@@ -238,11 +238,11 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 ------
 
 ### Passwords
-Stores the encrypted password for logging into Admin Mode (blank by default). This tag accepts no human input; it is used by EHS to store the encrypted hash of the password entered through the EHS UI. Passwords are protected with 256-bit AES encryption and once created and stored in the config file, can be deployed along with all other settings.
+Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file</b>. The administrator password will be stored here by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
 
 <b>Possible values</b>
 
-* Encrypted hash stored programmatically by EHS (accepts no human input)
+* (for EHS use only; no user input permitted)
 
 #### Example
 
@@ -324,19 +324,6 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 #### Example
 
     <orientation></orientation>
-    
-------
-#### Bypass Keyguard
-Controls whether to display the keyguard screen lock. Disabled by default. A setting of 0 in this tag will enable the keyguard. <b>Note: A setting of 0 for this tag will prevent the MX multi-user login screen from being displayed</b> Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
-
-<b>Possible values</b>
-
-* <b>1 (default) </b>
-* 0 
-
-#### Example
-
-    <bypass_keyguard>1</bypass_keyguard>
     
 ------
 #### Auto Launch Enable
@@ -440,7 +427,7 @@ Controls whether shortcuts may be added to local or remote apps through Android 
     
 ------
 #### Exit Instead of Reboot
-Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. This setting is intended to permit Mobile Device Management (MDM) systems to maintain device control after making such changes. 
+Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag will be overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
 
 <b>Possible values</b>
 
@@ -452,6 +439,22 @@ Controls whether EHS will trigger an automatic device reboot when a setting that
     <exit_instead_of_reboot>0</exit_instead_of_reboot>
     
 ------
+#### Reboot on Install Enabled
+Controls whether the device will automatically reboot when EHS is launched for the first time after a successful installation, a requirement to activate EHS. Permits Mobile Device Management (MDM) systems to maintain device control following installation. Automatic device reboot is disabled by default. <b>Note: When enabled, this tag will override any setting of the [&lt;exit_instead_of_reboot&gt;](#exitinsteadofreboot) tag</b>. 
+
+<b>Possible values</b>
+
+* 1
+* <b>0 (default, do not reboot)</b>
+
+#### Example
+
+    <preferences>
+        <reboot_on_install_enabled>0</reboot_on_install_enabled >
+    </preferences>
+
+------
+
 #### Airplane Option Disabled
 Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu might not be available on MC18, MC40 and MC92 devices running Android 4.4 KitKat). 
 
@@ -465,8 +468,27 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
     <airplane_option_disabled>1</airplane_option_disabled>
     
 ------
+#### Bypass Keyguard
+Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
+
+<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+
+<img alt="" style="height:250px" src="keyguard.png"/>
+<br>
+
+<b>Possible values</b>
+
+* <b>1 (default, Keyguard not displayed) </b>
+* 0 
+
+#### Example
+
+    <bypass_keyguard>1</bypass_keyguard>
+
+------
+
 #### Keyguard Camera Disabled
-Controls whether the device camera will be accessible from the Keyguard 'lock screen.' Camera is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
 <b>Possible values</b>
 
@@ -479,8 +501,7 @@ Controls whether the device camera will be accessible from the Keyguard 'lock sc
     
 ------
 #### Keyguard Search Disabled
-Controls whether the Search app will be accessible from the Keyguard 'lock screen.' Search is disabled if this tag has a value of 1 (default) or is left unspecified. 
-
+Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
 <b>Possible values</b>
 
@@ -530,7 +551,7 @@ This feature permits any number of apps to be launched when EHS starts up. Simil
 Auto-launch differs from Kiosk Mode in that it does not disable BACK and HOME keys and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
 
 <b>Possible values</b>
-* application delay: integer (milliseconds)
+* Application delay: integer (milliseconds)
 * Package: app package name 
 * Activity: app function package name (optional)
 
@@ -603,7 +624,7 @@ Controls the time (in seconds) that a device will remain in Admin Mode without a
 
 <b>Possible values</b>
 
-* <b>60 (default if tag is left blank or is not present)</b>
+* <b>60 (seconds; default if tag is left blank or is not present)</b>
 * 0 or negative value (disables timeout)
 * 15 (minimum, lower values are ignored)
 
@@ -652,5 +673,5 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 
 ------
 
-Refer to the [Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
+Refer to the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
 

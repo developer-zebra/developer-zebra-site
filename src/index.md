@@ -77,7 +77,7 @@ products:
         url: /ehs/2-3/guide/about
       - title: Getting Started
         url: /ehs/2-3/guide/gettingstarted
-      - title: Setup
+      - title: Basic Setup
         url: /ehs/2-3/guide/setup
       - title: Advanced Features
         url: /ehs/2-3/guide/features

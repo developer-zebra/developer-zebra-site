@@ -15,8 +15,8 @@ content-items:
       url: /ehs/2-3/guide/settings
     - type: section
       level: 4
-      title: Advanced Features
-      text: A guide to special features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State 
+      title: Special Features
+      text: A guide to advanced features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State 
       url: /ehs/2-3/guide/features
 ---
 

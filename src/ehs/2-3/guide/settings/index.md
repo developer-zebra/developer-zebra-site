@@ -35,7 +35,7 @@ From a computer connected to a target device that has EHS installed:
 
 
     :::term
-    adb pull enterprisehomescreen.xml /enterprise/usr/enterprisehomescreen.xml
+    adb pull /enterprise/usr/enterprisehomescreen.xml
 <br>
 
 &#50;. Locate, open and <b>edit the config file</b> with a text editor, saving changes.
@@ -46,7 +46,7 @@ Important: <b>Do NOT change the file name in any way</b>.
 &#51;. <b>Push the edited config file</b> to the device: 
 
     :::term
-    adb push enterprisehomescreen.xml /enterprise/usr/enterprisehomescreen.xml
+    adb push /enterprise/usr/enterprisehomescreen.xml
 <br>
 
 ##### What happens now? 
@@ -65,23 +65,26 @@ Important: <b>Do NOT change the file name in any way</b>.
 * Once configured, a config file is suitable for [mass-deployment using an MDM](../setup/#automatedinstallation) with or without the EHS app.
 
 ##### Exporting the Config File
-For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. <b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
+For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. 
+
+<b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
 
 &#49;. In Admin Mode on the device, <b>select Export Configuration File</b> from the Tools menu:
-<img alt="" style="height:500px" src="admin_menu.png"/>
+<img alt="" style="height:250px" src="admin_menu.png"/>
 <br>
 
 &#50;. <b>Tap OK</b> to confirm the action:
-<img alt="" style="height:500px" src="export_confirm.png"/>
+<img alt="" style="height:250px" src="export_confirm.png"/>
 <br>
 
 &#51;. <b>Note the location</b> in the confirmation message:
-<img alt="" style="height:500px" src="export_completed.png"/>
+<img alt="" style="height:250px" src="export_completed.png"/>
 <br>
 
 &#52;. <b>Drag the config file</b> (arrow) to a PC for editing using Windows Explorer, Android File Transfer (shown) or a similar means:
-<img alt="" style="height:341px" src="ehs_folder.png"/>
+<img alt="" style="height:300px" src="ehs_folder.png"/>
 <br>
+<b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
 
 ##### Using File Browser 
 The Android File Browser offers a fast way to get a quick view inside the config file on a device. It also permits the file to be copied, moved or shared via email, Bluetooth or any means enabled on the device. 
@@ -89,20 +92,20 @@ The Android File Browser offers a fast way to get a quick view inside the config
 To look inside the config file on a device: 
 
 &#49;. In File Browser, <b>navigate to the /enterprise/usr directory</b>:
-<img alt="" style="height:500px" src="fileBrowser_usr.png"/>
+<img alt="" style="height:250px" src="fileBrowser_usr.png"/>
 <br>
 
 &#50;. <b>Long-press the</b> `enterprisehomescreen.xml`<b> file</b> to display the File Operations menu:
-<img alt="" style="height:500px" src="long-press_menu.png"/>
+<img alt="" style="height:250px" src="long-press_menu.png"/>
 <br>
 
 &#51;. <b>Select "Open as.."</b> to select a viewer and <b>hit Launch</b>:
-<img alt="" style="height:500px" src="open_as.png"/>
+<img alt="" style="height:250px" src="open_as.png"/>
 <br>
 It may be necessary to also tap 'txt' to specify the extension type.  
 
 &#51;. The config file will open in the Android HTML Viewer:
-<img alt="" style="height:500px" src="html_viewer.png"/>
+<img alt="" style="height:250px" src="html_viewer.png"/>
 <br>
 
 ## Default Config File
@@ -169,13 +172,15 @@ This section describes all tags in the `enterprisehomescreen.xml` file and their
 
 ### Kiosk
 
-Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys are disabled to prevent exiting. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag. 
+Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys are disabled to prevent exiting. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag in the &lt;Preferences&gt; section. 
+
+<img alt="" style="height:250px" src="kiosk.png"/>
 
 <b>Possible values</b>
 
 * Label: string 
 * Package: app package name 
-* Activity: package name of app feature to invoke when the app starts (optional)
+* Activity (optional): package name of app feature to be invoked when the app starts
 
 ##### Example
 
@@ -183,17 +188,20 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
             <application label="Calculator" package="com.android.calculator2" activity=""/>
     </kiosk>
 
-
 ------
 
 ### Applications
-Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An optional activity parameter permits an app function to be invoked when the app starts up or a link to be opened in a specific app. <b>Note</b>: Package names may vary from one Android version to another. 
+Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An optional activity parameter permits an app activity to be invoked when the app starts up. <b>Some apps require an activity to be specified in order to launch</b>. 
+
+When specifying links, the package and activity parameters can be used to launch the URL with a specific app, such as Mozilla Mobile browser. If no activity is specified, EHS will launch the link using the default browser.
+
+<b>Note</b>: Package names may vary from one Android version to another. 
 
 <b>Possible values (apps)</b>
 
 * Label: string
 * Package: app package name 
-* Activity: app function package name (optional)
+* Activity (optional): package name of the activity to be invoked when the app starts
 
 #### Example (app)
 
@@ -216,16 +224,17 @@ Specifies the applications and/or browser links to be displayed to users while E
         ...
     </applications>
 
-In the example above, the activity attribute is used to launch the URL in the Mozilla Mobile browser. If the specified app is not present on the device, the URL will not be displayed. If no activity is specified, EHS will launch the link using the default browser. 
+In the example above, the package and activity attributes are used to launch the URL in the Mozilla Mobile browser. If the specified app (as defined in the package and activity parameters) is not present on the device, the URL will not be displayed. If no activity is specified, EHS will launch the link using the default browser. 
 
 ------
+
 #### Tools
 Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>Note</b>: Package names may vary from one Android version to another. 
 
 <b>Possible values</b>
 * Label: string
 * Package: app package name 
-* Activity: app function package name (optional)
+* Activity (optional): package name of the activity to be invoked when the app starts
 
 #### Example
 
@@ -240,9 +249,12 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 ### Passwords
 Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file</b>. The administrator password will be stored here by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
 
+<img alt="" style="height:250px" src="admin_password.png"/>
+The admin password <b><i>must</i></b> be entered and changed using the Admin Tools menu in the EHS GUI. 
+
 <b>Possible values</b>
 
-* (for EHS use only; no user input permitted)
+* (for EHS use only; direct user input is not supported for this tag)
 
 #### Example
 
@@ -267,9 +279,11 @@ Specifies the title bar text for the EHS app. Default of 'Enterprise Home Screen
     <title>Enterprise Home Screen</title>
 
 ------
+
 #### Icon Label Background
 Specifies the background color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. Default is #AAFFFFFF, white with an opacity value of AA (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
+<img alt="" style="height:250px" src="icon_label_bg.png"/>
 
 * AA specifies the opacity 
 * RR specifies the level of RED
@@ -290,9 +304,11 @@ Specifies the background color of the icon label text of applications displayed 
 
 
 ------
+
 #### Icon Label Text Color
 Specifies the color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. The EHS default is #FF000000, black with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
+<img alt="" style="height:250px" src="icon_label_text.png"/>
 
 * AA specifies the opacity 
 * RR specifies the level of RED
@@ -312,8 +328,11 @@ Specifies the color of the icon label text of applications displayed in User Mod
     <icon_label_text_color>magenta</icon_label_text_color>
 
 ------
+
 #### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
+
+<img alt="" style="height:250px" src="orientation.png"/>
 
 <b>Possible values</b>
 
@@ -326,8 +345,11 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
     <orientation></orientation>
     
 ------
+
 #### Auto Launch Enable
 Enables one or more apps to be automatically launched after EHS starts up. Works with optional &lt;auto_launch&gt; section. When enabled, apps specified in the &lt;auto_launch&gt; section are launched after a specified delay. <b>BACK and HOME keys remain enabled</b>. Refer to [Optional Feature Tags section](#optionalfeaturetags) for more information. Disabled by default. See also: [Kiosk Mode](#kiosk). 
+
+<img alt="" style="height:250px" src="autolaunch.png"/>
 
 <b>Possible values</b>
 
@@ -339,8 +361,11 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
     <auto_launch_enable>0</auto_launch_enable>
     
 ------
+
 #### Wallpaper
 Allows a background image to be specified for display in User Mode. If left unspecified, default image will be used. Supports only .PNG format files in the `/enterprise/usr` directory. 
+
+<img alt="" style="height:250px" src="wallpaper.png"/>
 
 <b>Possible values</b>
 
@@ -354,6 +379,8 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
 #### Fullscreen
 EHS can be made to run in fullscreen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS will behave as individually designed. Will not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
+
+<img alt="" style="height:250px" src="fullscreen.png"/>
 
 <b>Possible values</b>
 
@@ -375,6 +402,8 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 > Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
 
+<img alt="" style="height:250px" src="kiosk.png"/>
+
 <b>Possible values</b>
 
 * 1
@@ -385,8 +414,11 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
     <kiosk_mode_enabled>0</kiosk_mode_enabled>
     
 ------
+
 #### Disable Status Bar Settings
 Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
+
+<img alt="" style="height:250px" src="disable_settings_icon.png"/>
 
 > Note: Changes to this setting will cause an automatic device reboot, a requirement for changes to take effect. 
 
@@ -400,8 +432,11 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
     <disable_status_bar_settings_icon>1</disable_status_bar_settings_icon>
     
 ------
+
 #### Disable Statusbar Pulldown
 Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Statusbar Pulldown is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Statusbar Pulldown will be enabled. To disable, enter a value of 1.  
+
+<img alt="" style="height:250px" src="disable_status_bar.png"/>
 
 <b>Possible values</b>
 
@@ -413,6 +448,7 @@ Controls whether the Android Status Bar can be pulled down to reveal controls an
     <disable_statusbar_pulldown>0</disable_statusbar_pulldown>
     
 ------
+
 #### Install Shortcuts
 Controls whether shortcuts may be added to local or remote apps through Android Intents. Disabled by default. 
 
@@ -426,6 +462,7 @@ Controls whether shortcuts may be added to local or remote apps through Android 
     <install_shortcuts>0</install_shortcuts>
     
 ------
+
 #### Exit Instead of Reboot
 Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag will be overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
 
@@ -439,6 +476,7 @@ Controls whether EHS will trigger an automatic device reboot when a setting that
     <exit_instead_of_reboot>0</exit_instead_of_reboot>
     
 ------
+
 #### Reboot on Install Enabled
 Controls whether the device will automatically reboot when EHS is launched for the first time after a successful installation, a requirement to activate EHS. Permits Mobile Device Management (MDM) systems to maintain device control following installation. Automatic device reboot is disabled by default. <b>Note: When enabled, this tag will override any setting of the [&lt;exit_instead_of_reboot&gt;](#exitinsteadofreboot) tag</b>. 
 
@@ -458,6 +496,8 @@ Controls whether the device will automatically reboot when EHS is launched for t
 #### Airplane Option Disabled
 Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu might not be available on MC18, MC40 and MC92 devices running Android 4.4 KitKat). 
 
+<img alt="" style="height:250px" src="airplane_disable.png"/>
+
 <b>Possible values</b>
 
 * <b>1 (default)</b>
@@ -468,13 +508,17 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
     <airplane_option_disabled>1</airplane_option_disabled>
     
 ------
+
 #### Bypass Keyguard
 Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
 
 <b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:250px" src="keyguard.png"/>
-<br>
+The Android Keyguard (also known as the Lock Screen).  
+
+<img alt="" style="height:250px" src="bypass_keyguard.png"/>
+<br> 
 
 <b>Possible values</b>
 
@@ -490,6 +534,8 @@ Controls whether the Keyguard screen (also known as the 'Lock Screen') is displa
 #### Keyguard Camera Disabled
 Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
+<img alt="" style="height:250px" src="camera_disable.png"/>
+
 <b>Possible values</b>
 
 * <b>1 (default)</b>
@@ -500,8 +546,11 @@ Controls whether the device camera will be accessible from the Keyguard screen (
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
     
 ------
+
 #### Keyguard Search Disabled
 Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+
+<img alt="" style="height:250px" src="search_disable.png"/>
 
 <b>Possible values</b>
 
@@ -513,8 +562,11 @@ Controls whether the Search app will be accessible from the Keyguard screen (als
     <keyguard_search_disabled>1</keyguard_search_disabled>
     
 ------
+
 #### USB Debugging Disabled
 Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the device file system. This setting has no bearing on Admin Mode, in which USB communication is always enabled. 
+
+<img alt="" style="height:250px" src="usb_debug_disable.png"/>
 
 <b>Possible values</b>
 
@@ -526,8 +578,11 @@ Controls whether communication via USB is permitted between the device and a com
     <usb_debugging_disabled>1</usb_debugging_disabled>
     
 ------
+
 #### System Settings Restricted
 Controls whether full or limited settings are available when the device when in User Mode. A setting of 1 (default) or if left unspecified will restrict user access to device settings. <b>A setting of 0 will permit user access to all device settings</b>.
+
+<img alt="" style="height:250px" src="settings_restrict.png"/>
 
 <b>Possible values</b>
 
@@ -550,10 +605,12 @@ This feature permits any number of apps to be launched when EHS starts up. Simil
 
 Auto-launch differs from Kiosk Mode in that it does not disable BACK and HOME keys and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
 
+<img alt="" style="height:250px" src="autolaunch.png"/>
+
 <b>Possible values</b>
 * Application delay: integer (milliseconds)
 * Package: app package name 
-* Activity: app function package name (optional)
+* Activity (optional): package name of the activity to be invoked when the app starts
 
 #### Example
 
@@ -566,6 +623,8 @@ Auto-launch differs from Kiosk Mode in that it does not disable BACK and HOME ke
 
 #### Disable/Enable Applications
 Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. Use these tags to enable Settings and/or Search apps in User Mode. (Settings and Search apps are always enabled in Admin Mode, even if  &lt;apps_disabled&gt; tag is applied). Applies to both Admin and User Modes for all other apps. <b>Note</b>: Package names may vary from one Android version to another. 
+
+<img alt="" style="height:250px" src="disable_apps.png"/>
 
 <b>Notes</b>: 
 
@@ -600,6 +659,9 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 #### Admin Max Attempts
 The number of failed attempts to log into Admin Mode before EHS enters [Lockdown State](../features#lockdownstate). If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog). 
 
+<img alt="" style="height:250px" src="max_logins.png"/>
+
+
 #### Example
 
     <preferences>
@@ -621,6 +683,8 @@ The counter clears after a successful login.
 
 #### Admin Inactivity Timeout
 Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. 
+
+<img alt="" style="height:250px" src="admin_timeout.png"/>
 
 <b>Possible values</b>
 

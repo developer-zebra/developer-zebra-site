@@ -174,29 +174,29 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Normal Mode</p></td>
 <td align="left" valign="top"><p class="table">Copy a new enterprisehomescreen.xml file into /enterprise/usr folder</p></td>
-<td align="left" valign="top"><p class="table">New configuration takes effect. Still the device is running in Normal Mode.</p></td>
+<td align="left" valign="top"><p class="table">New configuration takes effect; device remains in Normal Mode.</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Normal Mode</p></td>
-<td align="left" valign="top"><p class="table">Copy an invalid pem file (i.e. this pem file does not match the xml file in /enterprise/usr folder)</p></td>
-<td align="left" valign="top"><p class="table">Lock down screen shows up immediately</p></td>
-<td align="left" valign="top"><p class="table">Delete the pem file in /enterprise/usr folder via admin login to the device or remotely . Device will resume in Normal Mode with existing configuration.</p></td>
+<td align="left" valign="top"><p class="table">Copy an invalid pem file (i.e. pem file does not match the xml file in /enterprise/usr folder)</p></td>
+<td align="left" valign="top"><p class="table">Lockdown Mode screen appears immediately</p></td>
+<td align="left" valign="top"><p class="table">Delete the pem file in /enterprise/usr folder remotely or through local admin login. Device resumes in Normal Mode with existing configuration.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Normal Mode</p></td>
-<td align="left" valign="top"><p class="table">Copy a new xml file first and then the pem file (corresponding to that new xml file) into /enterprise/usr folder</p></td>
-<td align="left" valign="top"><p class="table">Once the xml file is detected the new configuration takes effect in Normal Mode.</p>
+<td align="left" valign="top"><p class="table">Copy a new xml file followed by its corresponding pem file into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">Once the xml file is detected, the new configuration takes effect in Normal Mode.</p>
 <p class="table">When the pem file is copied:</p>
-<p class="table"><em>If signature verification is SUCCESS :</em> Device goes to secure mode.</p>
-<p class="table"><em>If signature verification is FAIL:</em> Lock down screen shows up immediately with Error.</p></td>
+<p class="table"><em>Signature verification SUCCESS:</em> Device enters Secure Mode.</p>
+<p class="table"><em>Signature verification FAILURE:</em> Lockdown Mode screen appears immediately with error.</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Normal Mode</p></td>
-<td align="left" valign="top"><p class="table">Copy a new pem file first and then the xml file (corresponding to that new pem file) into /enterprise/usr folder</p></td>
-<td align="left" valign="top"><p class="table">As soon as pem file is copied the device will go to Lockdown State. Once the relevant xml file is copied, lock down screen will vanish and device will go to secure mode with new configuration taking effect.</p>
-<p class="table">WARNING: The recommended way is to copy the xml file first and the pem file the second</p></td>
+<td align="left" valign="top"><p class="table">Copy a new pem file followed by the corresponding xml file into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">As soon as pem file is copied the device will enter Lockdown State. Once the relevant xml file is copied, lockdown screen will vanish and device will enter Secure Mode with new configuration taking effect.</p>
+<p class="table">WARNING: The recommended order is to copy the xml file first and the pem file second.</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 </tbody>
@@ -219,23 +219,23 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Recovery</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">Secure mode</p></td>
+<td align="left" valign="top"><p class="table">Secure Mode</p></td>
 <td align="left" valign="top"><p class="table">Copy a new xml file into /enterprise/usr folder</p></td>
-<td align="left" valign="top"><p class="table">New configuration does NOT take effect, since the relevant pem file has not been copied. Hence the device remains in the previous configuration, in secure mode.</p>
-<p class="table">Note:  Device does not go to Lockdown State in this case"</p></td>
+<td align="left" valign="top"><p class="table">New configuration does NOT take effect, since the relevant pem file has not been copied. Hence the device remains in the previous configuration, in Secure Mode.</p>
+<p class="table">Note:  Device does not go to Lockdown State in this case</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Secure mode</p></td>
-<td align="left" valign="top"><p class="table">Copy a new xml file and the pem file (corresponding to that new xml file) into /enterprise/usr folder</p></td>
-<td align="left" valign="top"><p class="table"><em>If signature verification is SUCCESS:</em> Device remains in secure mode. New configuration takes effect.</p>
-<p class="table"><em>If signature verification is FAIL:</em> New configuration does NOT take effect.Device goes to Lockdown State."</p></td>
-<td align="left" valign="top"><p class="table">Delete the xml file and pem file in /enterprise/usr folder via admin login to the device or remotely. Device will resume in secure mode with previous configuration."</p></td>
+<td align="left" valign="top"><p class="table">Copy a new xml file and the corresponding pem file into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table"><em>Signature verification SUCCESS:</em> Device remains in Secure Mode. New configuration takes effect.</p>
+<p class="table"><em>Signature verification FAILURE:</em> New configuration does NOT take effect and device enters Lockdown State."</p></td>
+<td align="left" valign="top"><p class="table">Delete the xml file and pem file in /enterprise/usr folder remotely or through local admin login. Device will resume in Secure Mode with previous configuration.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Secure mode</p></td>
-<td align="left" valign="top"><p class="table">Copy only a pem file into /enterprise/usr folder.</p></td>
-<td align="left" valign="top"><p class="table">Lock down screen shows up immediately</p></td>
+<td align="left" valign="top"><p class="table">Copy only a pem file into /enterprise/usr folder</p></td>
+<td align="left" valign="top"><p class="table">Lockdown screen appears immediately</p></td>
 <td align="left" valign="top"><p class="table">Option 1: Copy the xml file (corresponding to the pem file) via Admin login to the device or remotely. Lock down screen will vanish immediately and the new configuration will take effect.</p>
 <p class="table">Option 2: Delete the pem file in /enterprise/usr folder: lock down screen will vanish immediately and the device will remain in previous configuration."</p></td>
 </tr>
@@ -258,30 +258,30 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lockdown State</p></td>
-<td align="left" valign="top"><p class="table">Admin logins to the device and copy a new xml file and the relevant pem file via file browser in the device.</p></td>
-<td align="left" valign="top"><p class="table"><em>If signature verification is SUCCESS:</em> Device enters into secure mode. New configuration takes effect.</p>
-<p class="table"><em>If signature verification is FAIL:</em> Lock down screen shows up again. New configuration does NOT take effect.</p></td>
+<td align="left" valign="top"><p class="table">Admin logs into the device and copies a new xml file and the corresponding pem file via file browser in the device.</p></td>
+<td align="left" valign="top"><p class="table"><em>Signature verification SUCCESS:</em> Device enters into Secure Mode and new configuration takes effect.</p>
+<p class="table"><em>Signature verification FAILURE:</em> Lockdown Screen appears. New configuration does not take effect.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lockdown State</p></td>
-<td align="left" valign="top"><p class="table">Copy a new xml file and the relevant pem file remotely.</p></td>
-<td align="left" valign="top"><p class="table"><em>If signature verification is SUCCESS:</em> Lock down screen vanishes abruptly. Device enters into secure mode. New configuration takes effect.</p>
-<p class="table"><em>If signature verification is FAIL:</em> Lock down screen remains. New configuration does NOT take effect.</p></td>
+<td align="left" valign="top"><p class="table">Copy a new xml file and the corresponding pem file remotely.</p></td>
+<td align="left" valign="top"><p class="table"><em>Signature verification SUCCESS:</em> Lockdown screen vanishes, device enters Secure Mode, new configuration takes effect.</p>
+<p class="table"><em>Signature verification FAILURE:</em> Lock down screen remains, new configuration does not take effect.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lockdown State</p></td>
-<td align="left" valign="top"><p class="table">Delete the pem file in /enterprise/usr folder via admin login to the device or remotely.</p></td>
-<td align="left" valign="top"><p class="table"><em>If the device was in secure mode previously:</em> Lock down screen vanishes and the device will resume in secure mode with previous configuration.</p>
-<p class="table"><em>If the device was in Normal Mode previously:</em> Lock down screen vanishes and the device will resume in Normal Mode with previous configuration.</p></td>
+<td align="left" valign="top"><p class="table">Delete the pem file in /enterprise/usr folder remotely or through local admin login.</p></td>
+<td align="left" valign="top"><p class="table"><em>If the device was in Secure Mode previously:</em> Lockdown screen vanishes and the device resumes in Secure Mode with previous configuration.</p>
+<p class="table"><em>If the device was in Normal Mode previously:</em> Lockdown screen vanishes and the device resumes in Normal Mode with previous configuration.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lockdown State</p></td>
-<td align="left" valign="top"><p class="table">Do not change any files in the /enterprise/usr folder. Then Uninstall EHS and Install EHS again</p></td>
-<td align="left" valign="top"><p class="table">When EHS is launched, lock down screen shows up in the device.</p></td>
+<td align="left" valign="top"><p class="table">Do not change any files in the /enterprise/usr folder. Uninstall and re-install EHS.</p></td>
+<td align="left" valign="top"><p class="table">When EHS is launched, lockdown screen appears.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lockdown State</p></td>
-<td align="left" valign="top"><p class="table">Delete the xml file and pem file in /enterprise/usr folder. Then Uninstall EHS and Install EHS again</p></td>
+<td align="left" valign="top"><p class="table">Delete the xml file and pem file in /enterprise/usr folder. Then uninstall and re-install EHS.</p></td>
 <td align="left" valign="top"><p class="table">EHS is launched in Normal Mode</p></td>
 </tr>
 </tbody>

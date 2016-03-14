@@ -7,17 +7,17 @@ content-items:
     - type: section
       level: 4
       title: Setup Guide
-      text: A step-by-step guide to installation and proper configuration of Enterprise Home Screen on a device 
-      url: /ehs/2-3/guide/setup
+      text: Installation and basic configuration of Enterprise Keyboard on a device 
+      url: /enterprise-keyboard/1-0/guide/setup
     - type: section
       level: 4
-      title: Advanced Settings
-      text: How to control Enterprise Home Screen through its XML configuration file
-      url: /ehs/2-3/guide/settings
+      title: Advanced Configuration
+      text: How to control Enterprise Keyboard through its XML configuration file
+      url: /enterprise-keyboard/1-0/guide/settings
     - type: section
       level: 4
-      title: Advanced Features
-      text: A guide to special features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State
-      url: /ehs/2-3/guide/features
+      title: Special Features
+      text: A guide to special features of EKB, including industry-specific dictionaries, user-programmable keys and customizable F-key colors
+      url: /enterprise-keyboard/1-0/features
 
 ---    

@@ -3,11 +3,26 @@ title:  About Enteprise Home Screen
 ---
 
 ## Overview
-Enterprise Home Screen is a free Android app from Zebra Technologies that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS can easily limit usage to one or more specified applications, prevent changes to device settings and lock down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. 
+Enterprise Home Screen is a free Android app from Zebra Technologies that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. 
 
-<img style="height:250px" src="homePrompt.png"/>
+EHS works by inserting itself in place of the stock Android app launcher and home screen. When first run, it presents a screen like the one below, offering a choice of which home app to open and whether to make the selection permanent. EHS also can be installed as the default launcher, bypassing the selector dialog. 
 
-EHS works by inserting itself in place of the stock Android app launcher and home screen. When first run, it presents a screen like the one above, offering a choice of which home app to open and whether to make the selection permanent. EHS also can be installed as the default launcher, bypassing the selector dialog. 
+<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, progrmmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+
+The first time it's installed, EHS offers a simple choice: 
+<img style="height:150px" src="homePrompt.png"/>
+
+Selecting 'Always' locks EHS in as the default home app and locks users out of the following device features by default:
+
+* Airplane mode
+* USB debugging
+* Access to the file system
+* Keyguard (for unlocking the screen)
+* Keyguard-screen camera and search functions
+* The status-bar Settings icon  
+* Full access to the System Settings panel  
+
+Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
 [Download Enterprise Home Screen](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
 
@@ -203,6 +218,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 New features in Enterprise Home Screen 2.3:
 
-* Enable/disable device reboot when EHS is first launched after installation. Disabled by default. To enable, set a value of "1" in the &lt;reboot_on_install_enabled&gt; tag. 
+* [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)
 

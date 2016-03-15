@@ -1,6 +1,6 @@
 ---
 title: Enterprise Home Screen
-img: ekb-logo.png
+img: ekb_logo.png
 layout: list-mx.html
 menu:
   title: Enterprise Home Screen

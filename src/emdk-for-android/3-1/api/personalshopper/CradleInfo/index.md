@@ -1,5 +1,8 @@
 ---
 title: CradleInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class holds cradle information.
@@ -56,5 +59,13 @@ Return the firmware version of cradle.
 **Returns:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 
 

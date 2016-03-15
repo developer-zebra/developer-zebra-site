@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.CHECK_DIGIT
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The number of check digits to be verified.
@@ -21,5 +24,13 @@ The number of check digits to be verified.
 * **ONE** -Verify one check digit.
 
 * **TWO** -Verify two check digits.
+
+
+
+
+
+
+
+
 
 

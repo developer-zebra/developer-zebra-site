@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.DecoderParams.CodaBar
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -103,4 +106,12 @@ Enable this parameter to strip the start and stop characters from
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 

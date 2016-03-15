@@ -1,6 +1,9 @@
 ---
 title: ScanAndPairManager.StatusListener
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -33,4 +36,12 @@ This is the callback method upon scan and pair or unpair status event occurs.
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 

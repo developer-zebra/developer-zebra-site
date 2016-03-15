@@ -1,5 +1,8 @@
 ---
 title: CradleConfig
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The class to access cradle configuration.
@@ -75,6 +78,14 @@ boolean
 **Throws:**
 
 com.symbol.emdk.personalshopper.CradleException
+
+
+
+
+
+
+
+
 
 
 

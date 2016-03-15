@@ -1,7 +1,8 @@
 ---
 title: Choosing an MX Version
 layout: mx-filter.html
-
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -24,6 +25,14 @@ A given feature in a specific version of MX may or may not be supported on speci
 
 ## Verify Your Target Device
 Once you have identified the version of MX you intend to support, you need to [check your device](/emdk-for-android/4-1/mx/version-on-device) to ensure it will be running with the required MX version.  
+
+
+
+
+
+
+
+
 
 
 

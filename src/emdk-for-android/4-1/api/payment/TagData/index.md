@@ -1,6 +1,9 @@
 ---
 title: TagData
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -31,4 +34,12 @@ Returns the TLV (Tag-Length-Value) data string as per EMV specification.
 **Returns:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 

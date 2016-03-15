@@ -1,5 +1,8 @@
 ---
 title: Extended Status Information User Guide
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Introduction 
@@ -441,3 +444,11 @@ Feature Name.
 
     extendedStatusCode	= FEATURE_NOT_UNIQUE_CONFIG
     statusCode	        	= FAILURE
+
+
+
+
+
+
+
+

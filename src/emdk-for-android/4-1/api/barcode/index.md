@@ -1,6 +1,8 @@
 ---
 title: Barcode APIs
 layout: list-content-api.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 >Supported Devices:
 * MC18KK
@@ -13,3 +15,10 @@ layout: list-content-api.html
 * TC55KK
 * TC70KK
 * TC75KK
+
+
+
+
+
+
+

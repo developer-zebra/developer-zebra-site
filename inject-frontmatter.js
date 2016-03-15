@@ -13,7 +13,8 @@ function ignoreFunc(file, stats) {
 }
 
 var inject_frontMatter = function(setting){
-    var folder = "src/" + setting.path; 
+    var pattern = new RegExp(setting.path)
+    var folder = "src"; 
     var frontmatter = setting.frontmatter;
     var json = [];
     files = wrench.readdirSyncRecursive(folder);
@@ -22,7 +23,8 @@ var inject_frontMatter = function(setting){
 
     for (var f = 0; f < files.length; f++) {
         filename = folder + "/" + files[f];
-        if(path.extname(filename) == ".md"){
+        // console.log(filename);
+        if(pattern.test(files[f]) && path.extname(filename) == ".md"){
             
             console.log("reading:" + filename);
             var yaml = matter.read(filename);
@@ -31,29 +33,32 @@ var inject_frontMatter = function(setting){
                 var inject = setting.frontmatter[i];
                 var key = inject.item;
                 var value = inject.value;
-                if(yaml.data[key] && !inject.override){
+                if(yaml.data[key] && !inject.override && !inject.replace){
                     console.log("        ingnoring: " + key);
                     
                 }
                 else{
-                    yaml.data[key] = value;
-                    console.log("     adding: " + key + ": " + value)
+                    if(inject.replace){
+                        if(inject.replace.match ==yaml.data[key]){
+                            yaml.data[key] = value;
+                            console.log("     replacing: " + key + ": " + value)
+                        }
+                        else{
+                            console.log("     not replacing: " + key);
+                        }
+                    }
+                    else{
+                        yaml.data[key] = value;
+                        console.log("     adding: " + key + ": " + value)
+
+                    }
                 }
             };
 
             //create new file content
             var newfilecontent = matter.stringify(yaml.content, yaml.data);
-            fs.open(filename, 'w', function(err, fd) {
-               if (err) {
-                   return console.error(err);
-               }
-              // console.log("Writing File:" + filename);     
-            });        
-            fs.writeFile(filename, newfilecontent, function(err) {
-                if(err) {
-                    console.error("Could not write file" + filename + ": %s", err);
-                }
-            });
+                    
+            fs.writeFileSync(filename, newfilecontent);
 
         }
     };
@@ -64,15 +69,138 @@ var inject_frontMatter = function(setting){
 
 var settings = [
     {
-        "path": "emdk-for-android/4-0",
+        "path": "",
         "frontmatter": [
             {
                 "item" :  "layout",
-                "value" : "xx.html",
+                "value" : "guide.html",
                 "override": false
+                
             }
         ]
-    }
+    },
+    {
+        "path": "samples",
+        "frontmatter": [
+            {
+                "item" :  "layout",
+                "value" : "sample.html",
+                "override": true,
+            }
+        ]
+    },
+    {
+        "path": "emdk-for-xamarin",
+        "frontmatter": [
+            {
+                "item" :  "product",
+                "value" : "EMDK For Xamarin",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "emdk-for-android",
+        "frontmatter": [
+            {
+                "item" :  "product",
+                "value" : "EMDK For Android",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "ehs",
+        "frontmatter": [
+            {
+                "item" :  "product",
+                "value" : "Enteprise Home Screen",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "stagenow",
+        "frontmatter": [
+            {
+                "item" :  "product",
+                "value" : "Stagenow",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "enterprise-keyboard",
+        "frontmatter": [
+            {
+                "item" :  "product",
+                "value" : "Enterprise Keyboard",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "1-0",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "1.0",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "2-0",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "2.0",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "2-3",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "2.3",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "3-1",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "2.3",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "4-0",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "4.0",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "4-1",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "4.1",
+                "override": false,
+            }
+        ]
+    },
+
+
 ]
 
 for (var i = 0; i < settings.length; i++) {

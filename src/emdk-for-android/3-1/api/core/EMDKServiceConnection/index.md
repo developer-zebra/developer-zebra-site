@@ -1,5 +1,8 @@
 ---
 title: EMDKServiceConnection
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Helper class. EMDK internal use only
@@ -55,5 +58,13 @@ name
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 
 

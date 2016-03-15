@@ -1,6 +1,9 @@
 ---
 title: PaymentResults
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -133,4 +136,12 @@ Defines all the error codes the payment API returns.
 * **DEVICE_UPDATE_IN_PROGRESS** -The PD40 Device Upadate is in progress.
 
 * **UNDEFINED** -Error code not defined.
+
+
+
+
+
+
+
+
 

@@ -1,6 +1,9 @@
 ---
 title: VersionManager
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -41,4 +44,12 @@ Gets the version of the specified [ VersionManager.VERSION_TYPE](../VersionManag
 **Returns:**
 
 java.lang.String - Version number
+
+
+
+
+
+
+
+
 

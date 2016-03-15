@@ -1,5 +1,8 @@
 ---
 title: MifareDesfireExpection
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of MifareDesfire object throws MifareDesfireException when an error
@@ -21,4 +24,12 @@ Returns the MifareDesfireResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifareDesfireResults
+
+
+
+
+
+
+
+
 

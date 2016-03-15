@@ -1,5 +1,8 @@
 ---
-title:  SDCard Manager Profile Feature Reference
+title: SDCard Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -20,3 +23,11 @@ This profile feature will allow your application to enable or disable use of ext
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=SdCardMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+

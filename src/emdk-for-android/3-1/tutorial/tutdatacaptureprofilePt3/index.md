@@ -1,5 +1,8 @@
 ---
-title:  Using Multiple Data Capture Profiles
+title: Using Multiple Data Capture Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Developing an EMDK for Android Application Part 3
 
@@ -415,3 +418,11 @@ The [next tutorial](../tutdatacaptureprofilePt4) will show you how to use the In
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingMultipleDataCaptureProfiles.zip).
+
+
+
+
+
+
+
+

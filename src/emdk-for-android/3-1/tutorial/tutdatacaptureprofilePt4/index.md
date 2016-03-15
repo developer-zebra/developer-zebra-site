@@ -1,5 +1,8 @@
 ---
-title:  Using Broadcast Intent in DataCapture Profiles
+title: Using Broadcast Intent in DataCapture Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Developing an EMDK for Android Application Part 4
 
@@ -394,3 +397,11 @@ Lastly we will run and test our application.
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingBroadcastIntentinDataCaptureProfiles.zip).
+
+
+
+
+
+
+
+

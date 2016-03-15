@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 The DecoderParams class contains decoder parameters that are used by multiple decoder symbologies. The property provides access to such decoder parameters as Enabled and IsSupported, among others. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParams and Config.InterfaceParams) will be set automatically.
 
@@ -179,5 +182,14 @@ The USPlanet class provides access to parameters that are available for the USPl
 The USPostNet class provides access to parameters that are available for the USPostNet decoder.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UsPostNetDecoder
+
+
+
+
+
+
+
+
+
 
 

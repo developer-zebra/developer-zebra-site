@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.UsPlanetDecoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 The UsPlanet class provides access to parameters that are available for the UsPlanet decoder.
 
@@ -11,5 +14,14 @@ The UsPlanet class provides access to parameters that are available for the UsPl
 Flag to enable reporting the bar code check digit..
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
 
 

@@ -1,6 +1,9 @@
 ---
 title: PassThruApduException
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,12 @@ Returns the PassThruApduResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.PassThruApduResults
+
+
+
+
+
+
+
+
 

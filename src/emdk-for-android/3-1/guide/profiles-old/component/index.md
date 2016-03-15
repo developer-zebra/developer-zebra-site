@@ -1,5 +1,8 @@
 ---
-title:  Component Manager Profile Feature Reference
+title: Component Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -33,4 +36,12 @@ Once an Ethernet Port Usage enabled, This feature can be used to turn the Ethern
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=ComponentMgr&os=All&embed=true"></iframe>
+
+
+
+
+
+
+
+
 

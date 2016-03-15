@@ -1,5 +1,8 @@
 ---
 title: Scanner
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Scanner class will represent and provides access to the physical scanner
@@ -355,5 +358,13 @@ List of supported trigger type
 * **SOFT_ALWAYS** -Soft trigger is used for all pending scans and for future reads
  issued. When this mode is set, the scan beam will come up
  automatically without having to press the trigger on the device.
+
+
+
+
+
+
+
+
 
 

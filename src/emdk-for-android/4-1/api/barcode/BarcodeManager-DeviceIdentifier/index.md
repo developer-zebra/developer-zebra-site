@@ -1,6 +1,9 @@
 ---
 title: BarcodeManager.DeviceIdentifier
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -17,4 +20,12 @@ Defines specific scanner devices of each type.
 * **INTERNAL_LASER1**
 
 * **BLUETOOTH_IMAGER1**
+
+
+
+
+
+
+
+
 

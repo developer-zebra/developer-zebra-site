@@ -1,5 +1,8 @@
 ---
 title: Extended Status Information User Guide
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 ##Introduction 
@@ -441,3 +444,12 @@ Feature Name.
 
     extendedStatusCode	= FEATURE_NOT_UNIQUE_CONFIG
     statusCode	        	= FAILURE
+
+
+
+
+
+
+
+
+

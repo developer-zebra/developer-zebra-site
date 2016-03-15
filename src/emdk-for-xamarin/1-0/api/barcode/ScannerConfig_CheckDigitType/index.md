@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.CheckDigitType
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 Verify data integrity.
 
@@ -42,5 +45,15 @@ Select to check the integrity of all Interleaved 2 of 5 symbols to verify the da
 Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Uniform Symbology Specification (USS) check digit algorithm.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType
+
+
+
+
+
+
+
+
+
+
 
 

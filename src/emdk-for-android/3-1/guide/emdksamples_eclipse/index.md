@@ -1,7 +1,8 @@
 ---
 title: Using the EMDK Samples with Eclipse
-layout: guide.html
-
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Loading the Sample Application
@@ -45,6 +46,17 @@ When the import process is complete, the project load in the IDE, ready to deplo
 9. Select your Android device and click "Okay". 
     
     ![img](/img/sample/8.jpg)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

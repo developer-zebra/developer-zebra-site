@@ -1,5 +1,20 @@
 ---
 publish: false
 title: Samples
-layout: list-samples.html
+layout: sample.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+

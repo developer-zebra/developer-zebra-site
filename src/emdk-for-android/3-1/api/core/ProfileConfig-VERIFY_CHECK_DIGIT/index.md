@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.VERIFY_CHECK_DIGIT
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm.
@@ -22,5 +25,13 @@ Check the integrity of all Code 11 symbols to verify that the data complies with
 * **ONE** -Bar code contains one check digit.
 
 * **TWO** -Bar code contains two check digits.
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: PD40 Remote Firmware and EMV Param Update
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Overview
@@ -1029,3 +1032,11 @@ device error for the version query.
     </characteristic-error>
     
     </wap-provisioningdoc>
+
+
+
+
+
+
+
+

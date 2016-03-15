@@ -1,5 +1,8 @@
 ---
 title: SimulScanReader.DataListerner
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 An interface for notifying client applications when the scan data is
@@ -30,5 +33,13 @@ simulScanData
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 
 

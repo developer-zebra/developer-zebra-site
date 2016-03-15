@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Msi
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Msi class provides access to parameters that are available for
@@ -106,5 +109,13 @@ Transmit MSI data with or without the check digit.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
-title:  EMDK for Android Programming Practices
+title: EMDK for Android Programming Practices
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##EMDK concurrency guidelines
@@ -167,3 +170,10 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
     :::java
     LOCAL_JAVA_LIBRARIES := com.symbol.emdk
     LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libemdk:com.symbol.emdk/com.symbol.emdk.jar
+
+
+
+
+
+
+

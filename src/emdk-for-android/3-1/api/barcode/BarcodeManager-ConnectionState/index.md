@@ -1,5 +1,8 @@
 ---
 title: BarcodeManager.ConnectionState
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Connection states of a scanner device.
@@ -9,5 +12,13 @@ Connection states of a scanner device.
 * **CONNECTED**
 
 * **DISCONNECTED**
+
+
+
+
+
+
+
+
 
 

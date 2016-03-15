@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 LaserSpecific class provides access to the laser scanner specific parameters.
@@ -73,5 +76,13 @@ Set scanner power mode.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.PowerMode
+
+
+
+
+
+
+
+
 
 

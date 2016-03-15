@@ -1,5 +1,8 @@
 ---
-title: SimulScan API programmer's guide
+title: "SimulScan API programmer's guide"
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Introduction
@@ -297,4 +300,12 @@ Due to a known issue with the Symbol SimulScan framework version 1.8, the orient
 ##SimulScan Default Templates
 
 The SimulScan default templates are available under `"/enterprise/device/settings/datawedge/templates"`. Although this path is not accessible via the file browser on devices having latest images, it is possible to access the path programmatically and get templates copied to any other location preferred by the application. The application must obtain the SimulScanManager instance before attempting to copy these templates from above location.
+
+
+
+
+
+
+
+
 

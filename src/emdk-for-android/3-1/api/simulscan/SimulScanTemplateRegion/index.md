@@ -1,5 +1,8 @@
 ---
 title: SimulScanTemplateRegion
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The SimulScanTemplateRegion class represents a particular region in a Template.
@@ -55,5 +58,13 @@ Returns the Y coordinate of this template region
 **Returns:**
 
 int
+
+
+
+
+
+
+
+
 
 

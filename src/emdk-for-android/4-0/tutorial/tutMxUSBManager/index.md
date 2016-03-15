@@ -1,5 +1,8 @@
 ---
-title:  Manage USB Configurations
+title: Manage USB Configurations
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -537,3 +540,11 @@ Now that you have learned how to Manage USB configurations using USB Manager on 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxUSBManagerTutorial.zip)
+
+
+
+
+
+
+
+

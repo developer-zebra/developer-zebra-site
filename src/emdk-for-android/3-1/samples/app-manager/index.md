@@ -2,12 +2,12 @@
 publish: true
 title: App Manager
 description: Shows how to use the EMDK for Android Profile APIs to manage App Manager profiles.
-download: https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/ProfileAppMgrSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/ProfileAppMgrSample1
-features: 
+download: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/ProfileAppMgrSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/ProfileAppMgrSample1'
+features:
   - Profile Manager
   - App Manager
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -19,10 +19,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Overview
@@ -65,4 +68,15 @@ The following guide will walk you through setting up the EMDK samples in your ID
 4.  Check the status field.   
 	![img](../../images/samples/2_3.png)  
 	
+
+
+
+
+
+
+
+
+
+
+
 

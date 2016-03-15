@@ -1,5 +1,8 @@
 ---
-title:  Audio Volume UI Manager Profile Feature Reference
+title: Audio Volume UI Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -99,6 +102,14 @@ Modify the following settings to customize your new Audio UI Profile. You do **n
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=AudioMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 
 

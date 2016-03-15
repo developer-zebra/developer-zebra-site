@@ -1,6 +1,9 @@
 ---
 title: ProfileManager
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -292,4 +295,12 @@ The client can un-register to get data notification via callbacks.
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 

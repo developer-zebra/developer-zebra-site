@@ -55,7 +55,7 @@ menu:
               url: /emdk-for-android/4-0/tutorial/tutMxGPRSManager
             - title: Persistence Manager
               url: /emdk-for-android/4-0/tutorial/tutMxPersistManager
-            - title: Power Key Manager 
+            - title: Power Key Manager
               url: /emdk-for-android/4-0/tutorial/tutMxPowerKeyManager
             - title: Power Manager
               url: /emdk-for-android/4-0/tutorial/tutMxPowerManager
@@ -180,18 +180,18 @@ menu:
           url: /emdk-for-android/4-0/mx/data-capture
           items:
             - title: Activity Selection
-              url: /emdk-for-android/4-0/mx/data-capture/activity   
+              url: /emdk-for-android/4-0/mx/data-capture/activity
             - title: Barcode Input
-              url: /emdk-for-android/4-0/mx/data-capture/barcode   
+              url: /emdk-for-android/4-0/mx/data-capture/barcode
             - title: Int Output
-              url: /emdk-for-android/4-0/mx/data-capture/intent   
+              url: /emdk-for-android/4-0/mx/data-capture/intent
             - title: IP Output
               url: /emdk-for-android/4-0/mx/data-capture/IP
             - title: Keystroke Output
               url: /emdk-for-android/4-0/mx/data-capture/keystroke
             - title: MSR Input
-              url: /emdk-for-android/4-0/mx/data-capture/msr   
-        - title: DevAdmin 
+              url: /emdk-for-android/4-0/mx/data-capture/msr
+        - title: DevAdmin
           url: /emdk-for-android/4-0/mx/devadmin
         - title: DHCP Options Manager
           url: /emdk-for-android/4-0/mx/dhcp
@@ -234,13 +234,13 @@ menu:
           url: /emdk-for-android/4-0/api/core
         - title: Barcode APIs
           url: /emdk-for-android/4-0/api/barcode
-        - title: ScanAndPair APIs 
+        - title: ScanAndPair APIs
           url: /emdk-for-android/4-0/api/scanandpair
-        - title: SimulScan APIs 
+        - title: SimulScan APIs
           url: /emdk-for-android/4-0/api/simulscan
-        - title: Personal Shopper APIs 
+        - title: Personal Shopper APIs
           url: /emdk-for-android/4-0/api/personalshopper
-        - title: Secure NFC APIs 
+        - title: Secure NFC APIs
           url: /emdk-for-android/4-0/api/securenfc
         - title: Payment APIs
           url: /emdk-for-android/4-0/api/payment
@@ -252,6 +252,12 @@ menu:
           url: /emdk-for-android/4-0/guide/reference/refdatacaptureintent
         - title: Battery Intent
           url: /emdk-for-android/4-0/guide/reference/refbatteryintent
-
+product: EMDK For Android
 ---
+
+
+
+
+
+
 

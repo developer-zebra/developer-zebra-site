@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.D2of5Decoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The D2OF5 class provides access to parameters that are available for the D2OF5 decoder.
 
@@ -19,5 +22,15 @@ Used to set decode lengths. The valid range is 0 to 55.
 Sets the reader to read the bar code twice before accepting data.
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
+
 
 

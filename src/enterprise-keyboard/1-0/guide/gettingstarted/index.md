@@ -12,12 +12,12 @@ content-items:
     - type: section
       level: 4
       title: Advanced Configuration
-      text: How to control Enterprise Keyboard through its XML configuration file, if it has one 
+      text: How to control Enterprise Keyboard through its XML configuration file, if it has one
       url: /enterprise-keyboard/1-0/guide/settings
     - type: section
       level: 4
       title: Special Features
       text: A guide to special features of EKB, including industry-specific dictionaries, user-programmable keys and customizable F-key colors
-      url: /enterprise-keyboard/1-0/features
+      url: /enterprise-keyboard/1-0/guide/features
 
 ---    

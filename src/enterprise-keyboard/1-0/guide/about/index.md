@@ -1,5 +1,5 @@
 ---
-title:  About Enteprise Home Screen
+title:  About Enteprise Keyboard
 layout: guide.html
 ---
 

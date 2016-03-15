@@ -1,5 +1,5 @@
 ---
-title: EKB Special Features
+title: Enterprise Keyboard Special Features
 layout: guide.html
 ---
 

@@ -5,7 +5,7 @@ title:  About Enteprise Home Screen
 ## Overview
 Enterprise Home Screen is a free Android app from Zebra Technologies that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS can easily limit usage to one or more specified applications, prevent changes to device settings and lock down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. 
 
-<img style="height:250px" src="homePrompt.png"/>
+<img alt="" style="height:250px" src="homePrompt.png"/>
 
 EHS works by inserting itself in place of the stock Android app launcher and home screen. When first run, it presents a screen like the one above, offering a choice of which home app to open and whether to make the selection permanent. EHS also can be installed as the default launcher, bypassing the selector dialog. 
 

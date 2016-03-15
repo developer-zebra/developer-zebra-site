@@ -1,5 +1,5 @@
 ---
-title: EKB Configuration
+title: Enterprise Keyboard Configuration
 layout: guide.html
 ---
 

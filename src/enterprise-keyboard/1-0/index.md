@@ -1,20 +1,20 @@
 ---
 title: Enterprise Home Screen
-img: ehs-logo.png
+img: ekb-logo.png
 layout: list-mx.html
 menu:
   title: Enterprise Home Screen
   items:
     - title: Home
-      url: /ehs/2-3/guide/about
+      url: /enterprise-keyboard/1-0/guide/about
     - title: Getting Started
-      url: /ehs/2-3/guide/gettingstarted
+      url: /enterprise-keyboard/1-0/guide/gettingstarted
     - title: Setup
-      url: /ehs/2-3/guide/setup
+      url: /enterprise-keyboard/1-0/guide/setup
     - title: Guides
-      url: /ehs/2-3/guide/
+      url: /enterprise-keyboard/1-0/guide/
     - icon: fa fa-search
-      url: /ehs/2-3/search
+      url: /enterprise-keyboard/1-0/search
     - icon: fa fa-download
-      url: /ehs/2-3/download
+      url: /enterprise-keyboard/1-0/download
 ---

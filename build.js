@@ -239,6 +239,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(findLayout({
         pattern: 'ehs',
         layoutName: 'guide.html'
+    .use(findLayout({
+        pattern: 'enterprise-keyboard',
+        layoutName: 'guide.html'
     }))
     .use(findProduct({
         pattern: 'emdk-for-android',
@@ -249,6 +252,10 @@ var sitebuild = Metalsmith(__dirname)
         productName: 'Enterprise Home Screen'
     }))
     .use(findProduct({
+        pattern: 'enterprise-keyboard',
+        productName: 'Enterprise Keyboard'
+    }))
+    .use(findProduct({
         pattern: 'stagenow',
         productName: 'Stagenow'
     }))
@@ -256,6 +263,10 @@ var sitebuild = Metalsmith(__dirname)
         pattern: 'ehs/2-3',
         productVersionName: '2.3'
     }))
+    .use(findProductVersion({
+        pattern: 'enterprise-keyboard/1-0',
+        productVersionName: '1.0'
+    }))    
     .use(findProductVersion({
         pattern: 'emdk-for-android/3-1',
         productVersionName: '3.1'
@@ -486,6 +497,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
+    .use(foldermenu({
+        folder: 'enterprise-keyboard/1-0/'
+    }))
     .use(showdown({literalMidWordUnderscores:true}))
     .use(snippet({
       maxLength: 250,
@@ -520,4 +534,3 @@ var sitebuild = Metalsmith(__dirname)
       console.log('\u0007');//System bell to alert when build is complete
     }
   });
-

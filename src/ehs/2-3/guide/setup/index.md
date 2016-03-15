@@ -1,6 +1,8 @@
 ---
 title: Enterprise Home Screen Setup
 layout: guide.html
+product: Enteprise Home Screen
+productversion: '2.3'
 ---
 
 ## Overview
@@ -527,4 +529,12 @@ To manually change the default launcher on a device without removing EHS:
 <img alt="" style="height:450px" src="home_selector.png"/>
 
 <b>Note</b>: The trash can icon seen here offers an alternative means of uninstalling EHS and restoring the Android Launcher. 
+
+
+
+
+
+
+
+
 

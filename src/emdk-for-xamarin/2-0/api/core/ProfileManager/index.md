@@ -1,5 +1,8 @@
 ---
 title: ProfileManager
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 This class handles all the profile related functions.
 
@@ -77,5 +80,14 @@ Processes the given profile based on the data provided and the flag and return s
 This method tells whether the previous process profile request is pending or not. If the previous request is pending, you can't submit the next request till the current request completes and calling the process profile method will return error.
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
 
 

@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.BOOKLAND_FORMAT
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -23,4 +26,12 @@ Lists the Bookland formats
 * **ISBN_10** -978 reported in 10 digit mode
 
 * **ISBN_13** -978/979 transmitted as EAN13 as per 2007 ISBN-13 protocol
+
+
+
+
+
+
+
+
 

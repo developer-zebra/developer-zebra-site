@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.Decoders
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Decoders class provides access to enable or disable decoder barcode symbologies.
@@ -751,5 +754,13 @@ Sets the Enabled State of Decoder UPCE1.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Upca
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Upca class provides access to parameters that are available for
@@ -22,5 +25,13 @@ Controls the preamble applied to the bar code.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.Preamble
+
+
+
+
+
+
+
+
 
 

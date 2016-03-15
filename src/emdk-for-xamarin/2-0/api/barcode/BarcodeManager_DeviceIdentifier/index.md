@@ -1,5 +1,8 @@
 ---
 title: BarcodeManager.DeviceIdentifier
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 Defines the specific scanner devices of each type.
 
@@ -50,5 +53,14 @@ Imager or 2D barcode scanner.
 Laser barcode scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
+
+
+
+
+
+
+
+
+
 
 

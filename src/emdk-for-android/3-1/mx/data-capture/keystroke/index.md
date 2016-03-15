@@ -1,5 +1,8 @@
 ---
-title:  KeyStroke Profile Feature Reference
+title: KeyStroke Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -40,5 +43,13 @@ Allows the configuration of any data formatting. When disabled, any data is pass
 * Send as hex - Set to send the data in hexadecimal format. 
 * Send TAB key - Set to append a tab character to the end of the processed data. 
 * Send ENTER key - Set to append an Enter character to the end of the processed data. 
+
+
+
+
+
+
+
+
 
 

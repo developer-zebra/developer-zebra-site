@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Ean8
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Ean8 class provides access to parameters that are available for
@@ -14,5 +17,13 @@ Flag to convert EAN8 to EAN13.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 
 

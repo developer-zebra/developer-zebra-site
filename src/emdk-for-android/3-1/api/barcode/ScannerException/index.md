@@ -1,5 +1,8 @@
 ---
 title: ScannerException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of barcode scanning object throws ScannerException when an error
@@ -20,4 +23,12 @@ Returns the ScannerResults enum value.
 **Returns:**
 
 com.symbol.emdk.barcode.ScannerResults
+
+
+
+
+
+
+
+
 

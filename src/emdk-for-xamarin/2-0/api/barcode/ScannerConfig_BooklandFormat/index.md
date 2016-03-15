@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.BooklandFormat
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 Lists the Bookland formats
 
@@ -38,5 +41,14 @@ Lists the Bookland formats
 978/979 transmitted as EAN13 as per 2007 ISBN-13 protocol
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat
+
+
+
+
+
+
+
+
+
 
 

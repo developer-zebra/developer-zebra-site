@@ -1,5 +1,8 @@
 ---
-title:  Using Profile Manager
+title: Using Profile Manager
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 Profile Manager is an exclusive EMDK technology offered within your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.  
@@ -310,4 +313,13 @@ Here is a summary of the above scenarios when using PROFILE_FLAG.SET and XML in 
 		<td>FAILURE is returned</td>
 	</tr>
 </table>
+
+
+
+
+
+
+
+
+
 

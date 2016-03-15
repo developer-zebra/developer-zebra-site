@@ -1,5 +1,8 @@
 ---
-title:  Battery Intent API Reference
+title: Battery Intent API Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -98,4 +101,12 @@ In addition to the battery information Android returns by default, which can be 
 		     
 		}  
 	} 
+
+
+
+
+
+
+
+
 

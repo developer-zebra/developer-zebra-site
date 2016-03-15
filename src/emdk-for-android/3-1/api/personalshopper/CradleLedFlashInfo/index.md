@@ -1,5 +1,8 @@
 ---
 title: CradleLedFlashInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The class to hold the LED Flash settings.
@@ -55,5 +58,13 @@ Enable or disable the smooth effect of the LED blinking
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
-title:  Pairing with Bluetooth Scanning device using Bluetooth Scanner API
+title: Pairing with Bluetooth Scanning device using Bluetooth Scanner API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -433,3 +436,11 @@ Now that you have learned how to perform pairing with Bluetooth Scanning device 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)]().
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BluetoothScannerTutorial.zip).
+
+
+
+
+
+
+
+

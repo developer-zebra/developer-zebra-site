@@ -1,6 +1,9 @@
 ---
 title: SimulScanTemplateElement
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -34,4 +37,12 @@ Returns the region number of the element
 
 int - int
  			The element's region number
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
-title:  About EMDK For Android
+title: About EMDK For Android
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -339,6 +342,14 @@ The intent of the EMDK is to provide developers with commonly required programma
 </table>
 
 -->
+
+
+
+
+
+
+
+
 
 
 

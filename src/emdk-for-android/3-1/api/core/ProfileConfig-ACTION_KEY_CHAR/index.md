@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.ACTION_KEY_CHAR
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Keystroke Output Action key character enables decoding of a special character embedded within a bar code or MSR data for use in native Android applications.
@@ -27,5 +30,13 @@ Keystroke Output Action key character enables decoding of a special character em
 
 * **CARRIAGERETURN** -Carriage return character code in a bar code is processed.
  When DataWedge detects this character code in a bar code, move the focus to the next field.
+
+
+
+
+
+
+
+
 
 

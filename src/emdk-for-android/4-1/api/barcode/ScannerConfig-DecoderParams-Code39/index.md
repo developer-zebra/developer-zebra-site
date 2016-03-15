@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.DecoderParams.Code39
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -178,4 +181,12 @@ Options: Security level 0 , Security Level 1 , Security Level 2
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
+
+
+
+
+
+
+
+
 

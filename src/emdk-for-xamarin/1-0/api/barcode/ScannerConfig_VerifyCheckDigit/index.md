@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.VerifyCheckDigit
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 bar code.
 
@@ -42,5 +45,15 @@ Bar code contains one check digit.
 Bar code contains two check digits.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit
+
+
+
+
+
+
+
+
+
+
 
 

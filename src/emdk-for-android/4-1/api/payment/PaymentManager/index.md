@@ -1,6 +1,9 @@
 ---
 title: PaymentManager
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -141,6 +144,14 @@ java.util.ArrayList - Returns list of DeviceInfo objects.
 **Throws:**
 
 com.symbol.emdk.payment.PaymentException
+
+
+
+
+
+
+
+
 
 
 

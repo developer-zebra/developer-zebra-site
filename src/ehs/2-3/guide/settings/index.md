@@ -1,6 +1,8 @@
 ---
 title: EHS Advanced Settings
 layout: guide.html
+product: Enteprise Home Screen
+productversion: '2.3'
 ---
 
 ## Overview
@@ -739,4 +741,12 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ------
 
 Refer to the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
+
+
+
+
+
+
+
+
 

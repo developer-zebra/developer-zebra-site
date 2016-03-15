@@ -1,6 +1,9 @@
 ---
 title: MifareSam.SamInfo.SoftwareInfo
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -47,4 +50,12 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 

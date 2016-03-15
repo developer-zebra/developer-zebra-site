@@ -1,5 +1,8 @@
 ---
-title:  Using Profile Manager
+title: Using Profile Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -404,4 +407,12 @@ Here is a summary of the above scenarios when using PROFILE_FLAG.SET and XML in 
 		<td>FAILURE is returned</td>
 	</tr>
 </table>
+
+
+
+
+
+
+
+
 

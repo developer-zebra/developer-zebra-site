@@ -1,6 +1,8 @@
 ---
 title: EHS Special Features
 layout: guide.html
+product: Enteprise Home Screen
+productversion: '2.3'
 ---
 
 ## Overview
@@ -339,3 +341,11 @@ Installing OpenSSL tool on Windows PC:
 OpenSSL can now be used to sign EHS files. 
 
 ------
+
+
+
+
+
+
+
+

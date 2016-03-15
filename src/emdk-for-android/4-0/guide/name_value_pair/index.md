@@ -1,5 +1,8 @@
 ---
-title: Name Value Pair Functionality Programmer's Guide
+title: "Name Value Pair Functionality Programmer's Guide"
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Introduction
@@ -119,4 +122,12 @@ CreateNameValuePair is a static function of the ProfileManager class. This funct
 	
 	//This function returns the String in <emdk_name>.<param_name>=<param_value> format.
 	//For instance, "clock1.date=2014-10-10";
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: EMDK Mobile Payment Programmers Guide
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 The EMDK for Android provides developers with a comprehensive set of
@@ -398,3 +401,11 @@ address/friendly name via interface config**
      paymentDevice.setInterfaceConfig(interfaceConfig);
      
      device.enable();
+
+
+
+
+
+
+
+

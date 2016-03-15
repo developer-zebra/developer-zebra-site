@@ -1,5 +1,8 @@
 ---
-title:  Allow installation of apps from unknown sources using DevAdmin Manager.
+title: Allow installation of apps from unknown sources using DevAdmin Manager.
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -431,3 +434,11 @@ Now that you have learned how to allow installation of applications from unknown
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/DevAdminTutorial.zip).
+
+
+
+
+
+
+
+

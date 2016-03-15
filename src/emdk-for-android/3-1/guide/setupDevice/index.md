@@ -1,5 +1,8 @@
 ---
-title:  Configuring A Device
+title: Configuring A Device
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 >NOTE: Devices will need to be updated with the latest EMDK for Android Device Runtime
@@ -90,4 +93,12 @@ Removes the EMDK OS Update application on successful update.
 4. Launch installed EmdkOSUpdateApp application.
 
 >NOTE: If the update succeeds, the EmdkOSUpdateApp will be un-installed (if the default settings have not overridden) and device will be rebooted. If the update fails, the EmdkOSUpdateApp application will not be un-installed. The update results will be available at  `/enterprise/usr/emdkosupdateresults.xml`
+
+
+
+
+
+
+
+
 

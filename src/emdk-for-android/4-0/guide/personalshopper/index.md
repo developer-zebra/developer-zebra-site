@@ -1,5 +1,8 @@
 ---
-title: Personal Shopper Programmer's Guide
+title: "Personal Shopper Programmer's Guide"
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Introduction
@@ -176,4 +179,12 @@ To get Diagnostic Parameters like Battery state of health, State of charge , Tim
     }catch (DiagnosticException e) {
            e.printStackTrace();
     }
+
+
+
+
+
+
+
+
 

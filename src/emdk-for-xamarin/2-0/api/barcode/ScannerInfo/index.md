@@ -1,5 +1,8 @@
 ---
 title: ScannerInfo
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 ScannerInfo provides information of the scanner device.
 
@@ -49,5 +52,14 @@ Returns true if it is a default scanner else false.
 Returns the scanner device model number. This information will be available only after the scanner is enabled. Note: The model number is supported on the Scanner Framework version 3.0.11 or later.
 
 **Type** - System.String
+
+
+
+
+
+
+
+
+
 
 

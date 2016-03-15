@@ -1,5 +1,8 @@
 ---
-title:  Power Management using Power Manager API
+title: Power Management using Power Manager API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -759,3 +762,11 @@ Now that you have learned how to configure and perform Power Management operatio
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxPowerManagerTutorial.zip).
+
+
+
+
+
+
+
+

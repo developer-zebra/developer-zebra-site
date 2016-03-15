@@ -1,5 +1,8 @@
 ---
-title:  About EMDK For Android
+title: About EMDK For Android
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -161,6 +164,14 @@ The EMDK for Android offers access to the device's Barcode capabilities through 
 The EMDK for Android will continue to support the [DataCapture](/emdk-for-android/4-1/guide/reference/refdatacaptureintent) and [Battery Intent](/emdk-for-android/4-1/guide/reference/refbatteryintent) APIs that were previously available on individual device types. 
 
 <a name="faqs"></a>
+
+
+
+
+
+
+
+
 
 
 

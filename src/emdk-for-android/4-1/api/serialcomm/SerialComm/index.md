@@ -1,6 +1,9 @@
 ---
 title: SerialComm
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -106,6 +109,14 @@ byte - Read data buffer. Null will be returned if no data available.
 **Throws:**
 
 com.symbol.emdk.serialcomm.SerialCommException
+
+
+
+
+
+
+
+
 
 
 

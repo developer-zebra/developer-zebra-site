@@ -1,5 +1,8 @@
 ---
 title: SimulScanTemplate
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Template class represents the XML template passed into the SimulScanEngine. 
@@ -60,5 +63,13 @@ Returns the friendly name of the template
 **Returns:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 
 

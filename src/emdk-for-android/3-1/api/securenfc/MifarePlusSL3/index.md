@@ -1,5 +1,8 @@
 ---
 title: MifarePlusSL3
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Provides access to Mifare Plus tag in security level 3 and I/O operations on
@@ -675,5 +678,13 @@ boolean
 com.symbol.emdk.securenfc.MifarePlusSL3Exception
 
 The exception will be thrown if the emdk is not opened.
+
+
+
+
+
+
+
+
 
 

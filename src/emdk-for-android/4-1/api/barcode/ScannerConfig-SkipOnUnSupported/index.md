@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.SkipOnUnSupported
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -15,4 +18,12 @@ Describes what to do when the scanner config fields are not supported for the sp
 * **UNSUPPORTED_VALUE** -Skips the only unsupported values and continues with next.
 
 * **ALL** -Skips both unsupported paramters and values and continues with next.
+
+
+
+
+
+
+
+
 

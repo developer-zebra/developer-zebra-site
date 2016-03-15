@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.Decoders
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -796,4 +799,12 @@ Sets the Enabled State of Decoder UPCE1.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
 

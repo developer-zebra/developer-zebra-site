@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.CheckDigitType
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Verify data integrity.
@@ -23,5 +26,13 @@ Verify data integrity.
 * **OPCC** -Select to check the integrity of all Interleaved 2 of 5 symbols to
  verify the data complies with either the Optical Product Code Council
  (OPCC) check digit algorithm.
+
+
+
+
+
+
+
+
 
 

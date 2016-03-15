@@ -1,5 +1,8 @@
 ---
-title:  EMDK For Android Downloads
+title: EMDK For Android Downloads
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 <!--
 Please read the terms of this "End User License Agreement" (the "Agreement") carefully. The Agreement is a legal agreement between you (either an individual or a single entity) and Zebra Technologies International, LLC ("Zebra") for the Zebra computer software and/or firmware accompanying this End User License Agreement, and any associated media, printed materials and any "online" or electronic documentation (collectively, "Software"). By installing or using the Software, you agree to be bound by the terms of this Agreement. If you do not agree to the terms of this Agreement, you may not install or use the Software.
@@ -62,4 +65,12 @@ Please read the terms of this "End User License Agreement" (the "Agreement") car
 <li><a href="https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-020104.exe">EMDK 2.1</a></li>
 <li><a href="https://atgsupportcentral.motorolasolutions.com/ewa/pub/getFile.do?fileName=ssi/emb/downloads/EMDK-A-020004.exe">EMDK 2.0</a></li>
 </ul>
+
+
+
+
+
+
+
+
 

@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.DecoderParams.BaseDecoder
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -22,4 +25,12 @@ Returns whether or not the Decoder is currently enabled.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 

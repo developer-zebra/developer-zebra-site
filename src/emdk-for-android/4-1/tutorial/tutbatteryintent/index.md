@@ -1,5 +1,8 @@
 ---
-title:  Battery Intent Tutorial
+title: Battery Intent Tutorial
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -39,3 +42,11 @@ In the below code we are getting the Symbol specific battery information provide
 
 ## Downloading the Sample
 Download the source for this project in the [associated sample](/emdk-for-android/4-1/guide/sample/samplebatteryintent).
+
+
+
+
+
+
+
+

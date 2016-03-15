@@ -12,7 +12,7 @@ content-items:
     - type: section
       level: 4
       title: Advanced Configuration
-      text: How to control Enterprise Keyboard through its XML configuration file
+      text: How to control Enterprise Keyboard through its XML configuration file, if it has one 
       url: /enterprise-keyboard/1-0/guide/settings
     - type: section
       level: 4

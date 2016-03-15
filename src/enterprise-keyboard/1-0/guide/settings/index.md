@@ -5,7 +5,7 @@ layout: guide.html
 
 ## Overview
 
-This is how to set up Enterprise Keyboard 
+This is how to set up Enterprise Keyboard. And how it works. 
 
 
 ------

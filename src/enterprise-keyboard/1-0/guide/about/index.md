@@ -4,33 +4,35 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Keyboard is a replacement keyboard for Android. 
+Enterprise Keyboard is a alternative keyboard for Android devices with specialized capabilities designed specifically for the workplace. In addition to the features of stock Android keyboard, EKB has the ability to add industry-specific dictionaries, user-programmable function keys, switch quickly between languages and collect and input scanned data directly into an application.  
+
+Some of the Enterprise Keyboard's specialized capabilities include:  
+
+A row of tabs along the top of EKB makes it easy to switch between input modes:
+<img alt="" style="height:350px" src="sample_1.png"/>
+<br>
+
+The <b>Language tab</b> instantly switched among the installed languages:  
+<img alt="" style="height:350px" src="sample_2.png"/>
+<br>
+
+The <b>Numerical tab</b> provides sub-tabs for symbols and custom function keys: 
+<img alt="" style="height:350px" src="sample_3.png"/>
+<br>
+
+<b>Programmable function keys</b> can mimic the hardware keyboards found on some Zebra devices. 
+<img alt="" style="height:350px" src="sample_4.png"/>
+<br>
+
+The <b>Barcode tab</b> permits scanned data to be collected and input precisely where and when it's needed:
+<img alt="" style="height:350px" src="sample_5.png"/>
+<br>
 
 
-EHS works by inserting itself in place of the stock Android keyboard
-
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, progrmmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
-
-The first time it's installed, EKB presents the following screens:
-
-<img style="height:150px" src="homePrompt.png"/>
-
-Selecting 'Always' locks EHS in as the default home app and locks users out of the following device features by default:
-
-* Airplane mode
-* USB debugging
-* Access to the file system
-* Keyguard (for unlocking the screen)
-* Keyguard-screen camera and search functions
-* The status-bar Settings icon  
-* Full access to the System Settings panel  
-
-Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
-
-[Download Enterprise Keyboard]()
+[Download Enterprise Keyboard](../download)
 
 ## Supported Devices
-This version of Enterprise Keyboard has been approved for use with the Zebra Android devices listed below. It also works on non-Zebra many devices running Android. 
+This version of Enterprise Keyboard has been approved for use with the Zebra Android devices listed below. It also works on non-Zebra many devices running Android Jelly Bean, KitKat and Lollipop. 
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
@@ -221,6 +223,4 @@ This version of Enterprise Keyboard has been approved for use with the Zebra And
 
 New features in Enterprise Keybord 1.0:
 
-* [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
-* TC8000 KitKat version 4.4 support (added January, 2016)
-
+* This is Enterprise Keyboard 1.0; The whole thing is new!!  

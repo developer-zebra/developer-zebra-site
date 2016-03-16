@@ -18,17 +18,17 @@ To install Enterprise Keyboard manually:
 &#50;. <b>Copy the </b>`FILE_NAME_TBD.apk` <b>file</b> from the PC to any writable device folder.
 
 &#51;. On the device, <b>launch File Browser</b> from the App Drawer:
-<img alt="" style="height:500px" src="fb_appdrawer.png"/>
+<img alt="" style="height:250px" src="fb_appdrawer.png"/>
 <br>
 
 &#52;. <b>Locate and launch</b> `FILE_NAME_TBD.apk`:
-<img alt="" style="height:500px" src="ekb_file_browser.png"/>
+<img alt="" style="height:250px" src="ekb_file_browser.png"/>
 <br>
 
 &#53;. <b>Tap Install</b> after reading the privacy warnings: 
-<img alt="" style="height:500px" src="access_1.png"/>
-<img alt="" style="height:500px" src="access_2.png"/>
-<img alt="" style="height:500px" src="access_3.png"/>
+<img alt="" style="height:250px" src="access_1.png"/>
+<img alt="" style="height:250px" src="access_2.png"/>
+<img alt="" style="height:250px" src="access_3.png"/>
 <br>
 
 After installation, a wizard semi-automates the steps for activating EKB. 
@@ -79,26 +79,21 @@ Enterprise Keyboard can be installed from an organization's own MDM server to mu
 ### Manual Uninstallation
 To remove EKB, simply use the Android App Manager to <b>uninstall EBK</b>. This automatically removes EKB and all associated data. 
 
-FIXXXXXXXXXXX for EKBBBB
-
 &#49;. <b>Tap Apps</b> to bring up the Android App Manager: 
-<img alt="" style="height:450px" src="app_settings.png"/>
+<img alt="" style="height:250px" src="app_settings.png"/>
 <br>
 
 &#50;. Locate and <b>Tap EHS Installer</b>:
-<img alt="" style="height:450px" src="uninstall_select ekb.png"/>
+<img alt="" style="height:250px" src="uninstall_select ekb.png"/>
 <br>
 
 &#51;. <b>Tap the Uninstall button</b>:
-<img alt="" style="height:450px" src="uninstall_ekb.png"/>
+<img alt="" style="height:250px" src="uninstall_ekb.png"/>
 <br>
 
 &#52;. <b>Click OK</b> to confirm:
-<img alt="" style="height:450px" src="uninstall_confirm.png"/>
+<img alt="" style="height:250px" src="uninstall_confirm.png"/>
 <br>
-
-&#53;. 
-
 
 Manual uninstallation of EKB is complete. 
 

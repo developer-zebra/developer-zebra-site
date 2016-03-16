@@ -4,40 +4,27 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Keyboard is delivered as an APK and installs in much the same way as other Android apps. Its settings can be configured locally or remotely using a mobile device management (MDM) system. EKB also can be installed and configured programmatically through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) tools and the [App Manager](/mx/#app-manager) service.
+Enterprise Keyboard is delivered as part of the operating system on Zebra devices, but is not enabled. To make it available to users, it must be activated and should also be set as the default input method (optional). 
+
+Activation can be accomplished manually at the device(s), programmatically through Zebra's [EMDK](/emdk-for-android/4-0/guide/about), or remotely using [StageNow](/stagenow/2-2/about/) and the [UI Manager](/mx/uimgr#setdefaultinputmethod) services. or an existing mobile device management (MDM) system (if supported by that system). 
+
+also need App Manager to install it? 
+
+## Manual Activation
+
+The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate multiple managed devices, please refer to the [Automated Installation section](#automatedinstallation) later in this guide. 
+
+To activate Enterprise Keyboard on a device: 
+
+&#49;. <b>Open the Settings panel</b> on the device:
 
 
-## Manual Installation
 
-These instructions apply to direct installation (from a computer to a single device) using the installer APK (`FILE_NAME_TBD.apk`). If installing from an MDM, please refer to the [Automated Installation section](#automatedinstallation) below. 
-
-To install Enterprise Keyboard manually: 
-
-&#49;. <b>Connect the device</b> via USB to a PC or Mac.
-
-&#50;. <b>Copy the </b>`FILE_NAME_TBD.apk` <b>file</b> from the PC to any writable device folder.
-
-&#51;. On the device, <b>launch File Browser</b> from the App Drawer:
-<img alt="" style="height:350px" src="appdrawer.png"/>
-<br>
-
-&#52;. <b>Locate and launch</b> `FILE_NAME_TBD.apk`:
-<img alt="" style="height:350px" src="ekb_file_browser.png"/>
-<br>
-
-&#53;. <b>Tap Install</b> after reading the privacy warnings: 
-<img alt="" style="height:350px" src="access_1.png"/>
-
-<img alt="" style="height:350px" src="access_2.png"/>
-
-<img alt="" style="height:350px" src="access_3.png"/>
-<br>
-
-&#54;. <b>Tap Open</b> to launch the configuration wizard, which  semi-automates the steps for activating EKB. 
+&#54;. <b>Tap Open</b> to launch the configuration wizard, which  semi-automates the steps for activating Enterprise Keyboard. 
 <img alt="" style="height:350px" src="ekb_installed_open.png"/>
 <br>
 
-<b>Note</b>: If "Done" was accidentally selected instead of "Open," tap Enterprise Keyboard from the App Drawer (shown below) to launch the configuration wizard (subsequent launches from the App Drawer will open the EKB Settings panel).
+<b>Note</b>: If "Done" was accidentally selected instead of "Open," tap Enterprise Keyboard from the App Drawer (shown below) to launch the configuration wizard (subsequent launches from the App Drawer will open the Enterprise Keyboard Settings panel).
 <img alt="" style="height:350px" src="ekb_appdrawer.png"/>
 <br>
 
@@ -61,6 +48,7 @@ Place a <b>check in Enterprise Keyboard</b> in the screen above to enable it on 
 
 &#49;&#48;. <b>Tap Enterprise Keyboard</b> to make it the default keyboard. 
 <img alt="" style="height:350px" src="2a_choose_input_ekb.png"/>
+<b>Note</b>: Following installation, this selector can be invoked directly by long-pressing the spacebar from the Android or Zebra keyboards.
 <br> 
 
 &#49;&#49;. <B>Tap the HOME key</b> to exit the Settings panel.  
@@ -68,7 +56,7 @@ Place a <b>check in Enterprise Keyboard</b> in the screen above to enable it on 
 Enterprise Keyboard setup is now complete. 
 
 ### Automated Installation
-Enterprise Keyboard can be installed from an organization's own MDM server to multiple managed devices in the same way as other Android apps. Alternatively, remote deployment and management--including the configuration of EKB settings--can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+Enterprise Keyboard can be installed from an organization's own MDM server to multiple managed devices in the same way as other Android apps. Alternatively, remote deployment and management--including the configuration of Enterprise Keyboard settings--can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
 In the Android Settings panel:
 1. <b>Open Language and input</b> 
@@ -81,7 +69,7 @@ In the Android Settings panel:
 ## Uninstallation
 
 ### Manual Uninstallation
-To remove EKB, simply use the Android App Manager to <b>uninstall EBK</b>. This automatically removes EKB and all associated data. 
+To remove Enterprise Keyboard, simply use the Android App Manager to <b>uninstall EBK</b>. This automatically removes Enterprise Keyboard and all associated data. 
 
 &#49;. <b>Tap Apps</b> to bring up the Android App Manager: 
 <img alt="" style="height:350px" src="app_settings.png"/>
@@ -99,7 +87,7 @@ To remove EKB, simply use the Android App Manager to <b>uninstall EBK</b>. This 
 <img alt="" style="height:350px" src="uninstall_confirm.png"/>
 <br>
 
-Manual uninstallation of EKB is complete. 
+Manual uninstallation of Enterprise Keyboard is complete. 
 
 ### Automated Uninstallation
 Enterprise Keyboard can be uninstalled from an organization's own MDM server to multiple managed devices in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 

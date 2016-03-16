@@ -4,11 +4,11 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Keyboard is a alternative keyboard for Android devices with specialized capabilities designed specifically for the workplace. In addition to the features of stock Android keyboard, EKB has the ability to add industry-specific dictionaries, user-programmable function keys, switch quickly between languages and collect and input scanned data directly into an application.  
+Enterprise Keyboard is a alternative keyboard for Android devices with specialized capabilities designed specifically for the workplace. In addition to the features of stock Android keyboard, Enterprise Keyboard has the ability to add industry-specific dictionaries, user-programmable function keys, switch quickly between languages and collect and input scanned data directly into an application.  
 
 Some of the Enterprise Keyboard's specialized capabilities include:  
 
-A row of tabs along the top of EKB makes it easy to switch between input modes:
+A row of tabs along the top of Enterprise Keyboard simplifies switching between input modes:
 <img alt="" style="height:350px" src="sample_1.png"/>
 <br>
 
@@ -29,7 +29,7 @@ The <b>Barcode tab</b> permits scanned data to be collected and input precisely 
 <br>
 
 
-[Download Enterprise Keyboard](../download)
+[Download Enterprise Keyboard](../../download)
 
 ## Supported Devices
 This version of Enterprise Keyboard has been approved for use with the Zebra Android devices listed below. It also works on non-Zebra many devices running Android Jelly Bean, KitKat and Lollipop. 
@@ -223,4 +223,4 @@ This version of Enterprise Keyboard has been approved for use with the Zebra And
 
 New features in Enterprise Keybord 1.0:
 
-* This is Enterprise Keyboard 1.0; The whole thing is new!!  
+* This is version 1.0--the whole thing is new!!  

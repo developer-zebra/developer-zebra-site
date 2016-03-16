@@ -84,7 +84,7 @@ products:
       - title: Download
         url: /ehs/2-3/download
   - title: Enterprise Keyboard
-    description: A keyboard that's customizable for enterprise apps and tasks 
+    description: A customizable keyboard made specifically for the workplace.  
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs

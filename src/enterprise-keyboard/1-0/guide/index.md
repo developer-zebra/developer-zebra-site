@@ -18,5 +18,7 @@ content-items:
       title: Advanced Features
       text: A guide to special features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State 
       url: /enterprise-keyboard/1-0/guide/features
+
+
 ---
 

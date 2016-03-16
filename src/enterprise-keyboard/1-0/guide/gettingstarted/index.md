@@ -19,5 +19,6 @@ content-items:
       title: Special Features
       text: A guide to special features of EKB, including industry-specific dictionaries, user-programmable keys and customizable F-key colors
       url: /enterprise-keyboard/1-0/guide/features
+      
 
 ---    

@@ -71,4 +71,37 @@ If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Keyboa
  
 Enterprise Keyboard setup is complete. 
 
+### Automated Installation
+Enterprise Keyboard can be installed from an organization's own MDM server to multiple managed devices in the same way as other Android apps. Alternatively, remote deployment and management--including the configuration of EKB settings--can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+
+## Uninstallation
+
+### Manual Uninstallation
+To remove EKB, simply use the Android App Manager to <b>uninstall EBK</b>. This automatically removes EKB and all associated data. 
+
+FIXXXXXXXXXXX for EKBBBB
+
+&#49;. <b>Tap Apps</b> to bring up the Android App Manager: 
+<img alt="" style="height:450px" src="app_settings.png"/>
+<br>
+
+&#50;. Locate and <b>Tap EHS Installer</b>:
+<img alt="" style="height:450px" src="uninstall_select ekb.png"/>
+<br>
+
+&#51;. <b>Tap the Uninstall button</b>:
+<img alt="" style="height:450px" src="uninstall_ekb.png"/>
+<br>
+
+&#52;. <b>Click OK</b> to confirm:
+<img alt="" style="height:450px" src="uninstall_confirm.png"/>
+<br>
+
+&#53;. 
+
+
+Manual uninstallation of EKB is complete. 
+
+### Automated Installation
+Enterprise Keyboard can be uninstalled from an organization's own MDM server to multiple managed devices in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 

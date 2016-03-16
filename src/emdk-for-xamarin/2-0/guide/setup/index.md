@@ -1,5 +1,8 @@
 ---
-title:  EMDK for Xamarin Setup
+title: EMDK for Xamarin Setup
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 ##Before you get started
@@ -67,3 +70,12 @@ We have a lot more resources for you to benefit from:
 - More Samples
 - [More docs online](http://emdk.github.io/xamarin-docs/edge)
 </div>
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 ---
-title:  Application Management with AppManger Profile Feature
+title: Application Management with AppManger Profile Feature
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -414,3 +417,11 @@ Now that you have learned how to configure applications in the device using Mx A
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDKMxAppManagerTutorial.zip).
+
+
+
+
+
+
+
+

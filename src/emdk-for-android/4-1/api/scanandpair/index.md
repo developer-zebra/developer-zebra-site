@@ -1,6 +1,8 @@
 ---
 title: Scan And Pair APIs
 layout: list-content-api.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 >Supported Devices:
@@ -14,3 +16,10 @@ layout: list-content-api.html
 * TC55KK
 * TC70KK
 * TC75KK
+
+
+
+
+
+
+

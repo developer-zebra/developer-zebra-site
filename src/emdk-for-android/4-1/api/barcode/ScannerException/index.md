@@ -1,6 +1,9 @@
 ---
 title: ScannerException
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -23,4 +26,12 @@ Returns the ScannerResults enum value.
 **Returns:**
 
 com.symbol.emdk.barcode.ScannerResults
+
+
+
+
+
+
+
+
 

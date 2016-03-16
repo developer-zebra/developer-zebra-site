@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.PowerMode
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -15,4 +18,12 @@ Set laser scanner power mode
 * **HIGH** -High power, and excellent performance.
 
 * **ALWAYS_ON** -Highest power, fastest performance.
+
+
+
+
+
+
+
+
 

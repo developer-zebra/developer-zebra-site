@@ -1,5 +1,8 @@
 ---
-title:  Basic Scanning Tutorial using Barcode API
+title: Basic Scanning Tutorial using Barcode API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -468,3 +471,11 @@ Now that you have learned how to perform Basic Scanning operations on your Symbo
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BasicScanningTutorial.zip).
+
+
+
+
+
+
+
+

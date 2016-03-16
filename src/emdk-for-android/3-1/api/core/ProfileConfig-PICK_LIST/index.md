@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.PICK_LIST
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern.
@@ -27,5 +30,13 @@ Allows the imager to decode only the bar code that is directly under the cross-h
  This is most useful when used in conjunction with the static and dynamic reticle viewfinder modes.
  Note: This mode is only valid for decoder modules that supports a viewfinder.
  If one tries to set this for a unsupported decoder then the device would issue an error. (Camera scanner only)
+
+
+
+
+
+
+
+
 
 

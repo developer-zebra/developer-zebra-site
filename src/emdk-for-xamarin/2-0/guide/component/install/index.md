@@ -1,5 +1,8 @@
 ---
 title: Xamarin Component Install
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 The Xamarin Component part of the EMDK includes the API libraries that you will use in your Android application. You must install the component and add it to your android project before being able to use the APIs.
 
@@ -96,4 +99,13 @@ Each project will cache the version of the component you have added within your 
 
 ## What's Next
 Try the Sample included with in Component[ Sample ](/emdk-for-xamarin/2-0/guide/sample/about)
+
+
+
+
+
+
+
+
+
 

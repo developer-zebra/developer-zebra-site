@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.DecoderParams.UsPostNet
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -16,4 +19,12 @@ Flag to enable reporting the bar code check digit.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: ScannerInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ScannerInfo provides information of the scanner device.
@@ -193,5 +196,13 @@ This lists all the barcode types supported by scanners
 * **TWO_DIMENSIONAL** -Barcode scanning is 2-D. This supports both 1-D and 2-D barcode scanning.
 
 * **UNDEFINED** -Decoder type not defined.
+
+
+
+
+
+
+
+
 
 

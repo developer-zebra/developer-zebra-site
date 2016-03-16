@@ -1,5 +1,8 @@
 ---
-title:  Configure Screen Off Timeout Interval using Display Manager.
+title: Configure Screen Off Timeout Interval using Display Manager.
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -433,3 +436,11 @@ Now that you have learned how to configure Screen Off Timeout Interval of Symbol
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/DisplayManagerTutorial.zip).
+
+
+
+
+
+
+
+

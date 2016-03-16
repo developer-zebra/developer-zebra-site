@@ -1,5 +1,8 @@
 ---
 title: Using the EMDK Samples with Eclipse
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Loading the Sample Application
@@ -54,6 +57,17 @@ Sample Applications are installed along with the EMDK and can be found in your s
 9. Select your Android device and click "Okay". 
     
     ![img](../../images/sample/8.jpg)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

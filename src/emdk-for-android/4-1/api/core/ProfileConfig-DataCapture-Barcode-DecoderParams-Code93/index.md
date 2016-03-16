@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code93
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -72,4 +75,12 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
 

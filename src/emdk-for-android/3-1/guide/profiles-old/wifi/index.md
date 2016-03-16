@@ -1,5 +1,8 @@
 ---
-title:  Wi-Fi Manager Profile Feature Reference
+title: Wi-Fi Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -190,6 +193,14 @@ A device can be used to capture the alias being used for the certificate being i
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=Wi-Fi&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 
 

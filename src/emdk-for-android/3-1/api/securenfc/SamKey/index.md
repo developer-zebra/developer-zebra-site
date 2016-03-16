@@ -1,5 +1,8 @@
 ---
 title: SamKey
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Samkey class will be assigned with the keys present on the MifareSam and used
@@ -28,5 +31,13 @@ Key version Value: 0x00 - 0xFF
 **Type:**
 
 byte
+
+
+
+
+
+
+
+
 
 

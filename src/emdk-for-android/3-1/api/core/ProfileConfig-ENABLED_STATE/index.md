@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.ENABLED_STATE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Enable states
@@ -19,5 +22,13 @@ Enable states
 * **FALSE** -Disabled
 
 * **TRUE** -Enabled
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.RecordFileSettings
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -33,5 +36,13 @@ Current number of records present in the file
 **Type:**
 
 int
+
+
+
+
+
+
+
+
 
 

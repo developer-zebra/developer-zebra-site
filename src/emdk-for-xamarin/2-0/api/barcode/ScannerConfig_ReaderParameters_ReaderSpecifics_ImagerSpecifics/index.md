@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.ImagerSpecifics
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 ImagerSpecific provides access to the imager specific parameters.
 
@@ -51,5 +54,14 @@ Sets the number of times a bar code is read to confirm an accurate decode. Use c
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode. Use class ScannerConfig.PickList.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList
+
+
+
+
+
+
+
+
+
 
 

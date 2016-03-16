@@ -1,7 +1,6 @@
 ---
 title: Choosing an MX Version
 layout: mx-filter.html
-
 ---
 
 ## Overview
@@ -26,6 +25,9 @@ A given feature in a specific version of MX may or may not be supported on speci
 
 ## Verify Your Target Device
 Once you have identified the version of MX you intend to support, you need to [check your device](/mx/mx-version-on-device) to ensure it will be running with the required MX version.  
+
+
+
 
 
 

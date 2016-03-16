@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.UccLinkMode
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Describes the UCC link mode state.
@@ -23,5 +26,13 @@ Describes the UCC link mode state.
 * **AUTO_DISCRIMINATE** -the digital scanner determines if there is a 2D portion, then
  transmits the 1D component, as well as the 2D portion if present
  (default). (default).
+
+
+
+
+
+
+
+
 
 

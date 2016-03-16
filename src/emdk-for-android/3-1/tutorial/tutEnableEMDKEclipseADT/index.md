@@ -1,5 +1,8 @@
 ---
-title:  Enabling the EMDK in Eclipse with ADT
+title: Enabling the EMDK in Eclipse with ADT
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Overview
 
@@ -42,3 +45,11 @@ This tutorial helps you enabling the EMDK API in your project created in Eclipse
     > * Select 1.6 for Compiler compliance level
     
     ![img](../../images/setup/image101.jpg)
+
+
+
+
+
+
+
+

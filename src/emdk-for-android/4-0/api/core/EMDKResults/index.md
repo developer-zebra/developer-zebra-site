@@ -1,6 +1,9 @@
 ---
 title: EMDKResults
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -132,4 +135,12 @@ Gets status code result from process profile as enum value of type [ EMDKResults
 **Type:**
 
 com.symbol.emdk.EMDKResults.STATUS_CODE
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds Interleaved 2 of 5 configuration settings.
@@ -132,5 +135,13 @@ Specifies security level
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
+
+
+
+
+
+
+
+
 
 

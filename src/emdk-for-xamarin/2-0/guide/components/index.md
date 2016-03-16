@@ -1,5 +1,8 @@
 ---
 title: Xamarin Components
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 few sentences on what they are and what they provide
@@ -29,6 +32,15 @@ explain instructions on adding components to Visual Studio projects
 
 ### Xamarin Studio
 explain instructions on adding components to Xamarin Studio projects
+
+
+
+
+
+
+
+
+
 
 
 

@@ -9,8 +9,7 @@ mxversions:
   - text: MX 4.4
     value: 4.4
   - text: MX 5.0
-    value: 5.0
-
+    value: 5
 csps:
   - type: section
     title: Access Manager
@@ -65,96 +64,98 @@ csps:
     url: /mx/conditionmgr
     csp: conditionmgr
   - type: section
-    title: DevAdmin 
+    title: DevAdmin
     url: /mx/devadmin
     csp: devadmin
   - type: section
-    title: DHCP Option Manager 
+    title: DHCP Option Manager
     url: /mx/dhcpoptionmgr
     csp: dhcpoptionmgr
   - type: section
-    title: Display Manager 
+    title: Display Manager
     url: /mx/displaymgr
     csp: displaymgr
   - type: section
-    title: Encrypt Manager 
+    title: Encrypt Manager
     url: /mx/encryptmgr
     csp: encryptmgr
   - type: section
-    title: File Manager 
+    title: File Manager
     url: /mx/filemgr
     csp: filemgr
   - type: section
-    title: GPRS Manager 
+    title: GPRS Manager
     url: /mx/gprsmgr
     csp: gprsmgr
   - type: section
-    title: Intent Manager 
+    title: Intent Manager
     url: /mx/intent
     csp: intent
   - type: section
-    title: KeyMapping Manager 
+    title: KeyMapping Manager
     url: /mx/keymappingmgr
     csp: keymapmgr
   - type: section
-    title: License Manager 
+    title: License Manager
     url: /mx/licensemgr
     csp: licensemgr
   - type: section
-    title: Persist Manager 
+    title: Persist Manager
     url: /mx/persistmgr
     csp: persistmgr
   - type: section
-    title: PowerKey Manager 
+    title: PowerKey Manager
     url: /mx/powerkeymgr
     csp: powerkeymgr
   - type: section
-    title: Power Manager 
+    title: Power Manager
     url: /mx/powermgr
     csp: powermgr
   - type: section
-    title: Scan Mode Manager 
+    title: Scan Mode Manager
     url: /mx/scanmodemgr
     csp: scanmodemgr
   - type: section
-    title: SD Card Manager 
+    title: SD Card Manager
     url: /mx/sdcardmgr
     csp: sdcardmgr
   - type: section
-    title: Settings Manager 
+    title: Settings Manager
     url: /mx/settingsmgr
     csp: settingsmgr
   - type: section
-    title: Status Manager 
+    title: Status Manager
     url: /mx/statusmgr
     csp: statusmgr
   - type: section
-    title: Threat Manager 
+    title: Threat Manager
     url: /mx/threatmgr
     csp: threatmgr
   - type: section
-    title: Touch Manager 
+    title: Touch Manager
     url: /mx/touchmgr
     csp: touchmgr
   - type: section
-    title: UI Manager 
+    title: UI Manager
     url: /mx/uimgr
     csp: uimgr
   - type: section
-    title: USB Manager 
+    title: USB Manager
     url: /mx/usbmgr
     csp: usbmgr
   - type: section
-    title: WiFi 
+    title: WiFi
     url: /mx/wifi
     csp: wifi
   - type: section
-    title: Wireless Manager 
+    title: Wireless Manager
     url: /mx/wirelessmgr
     csp: wirelessmgr
   - type: section
-    title: XML Manager 
+    title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
+---
+           
 
----           
+

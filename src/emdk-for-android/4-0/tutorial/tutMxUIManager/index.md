@@ -1,5 +1,8 @@
 ---
-title:  Configure Clipboard using Mx UI Manager
+title: Configure Clipboard using Mx UI Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -431,3 +434,11 @@ Now that you have learned how to configure Clipboard using Wireless Manager on y
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxUIManagerTutorial.zip)
+
+
+
+
+
+
+
+

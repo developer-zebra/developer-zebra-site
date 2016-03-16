@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Upce1
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Upce1 class provides access to parameters that are available for
@@ -32,5 +35,13 @@ Flag to enable conversion from UPCE1 to UPCA bar code. If this
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 
 

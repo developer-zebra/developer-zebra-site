@@ -1,28 +1,29 @@
 ---
 publish: true
 title: Document Capture
-description: This sample application will show how the Simulscan API's can be used to capture multiple types of data from paper forms.
+description: "This sample application will show how the Simulscan API's can be used to capture multiple types of data from paper forms."
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SimulScanSample1.zip  
-
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SimulScanSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/SimulScanSample1
-
-features: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/SimulScanSample1'
+features:
   - Profile Manager
   - Simulscan
   - Java APIs
-devices: 
+devices:
   - TC55KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
-  - 3.png 
-  - 4.png 
+  - 3.png
+  - 4.png
+layout: sample.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -67,3 +68,13 @@ The following guide will walk you through setting up the EMDK samples in your ID
 4. Press the "Accept" button. The sample app will then display a screen showing how long simulscan took to capture and decode the template fields. Press the devices "Back" hardware button to return to the main screen.
 
 	![img](simulscanSample4.png) 
+
+
+
+
+
+
+
+
+
+

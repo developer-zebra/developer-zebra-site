@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Ean8Decoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The Ean8 class provides access to parameters that are available for the Ean8 decoder.
 
@@ -11,5 +14,15 @@ The Ean8 class provides access to parameters that are available for the Ean8 dec
 Flag to convert EAN8 to EAN13.
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
+
 
 

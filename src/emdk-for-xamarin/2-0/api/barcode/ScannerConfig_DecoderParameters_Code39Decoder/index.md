@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Code39Decoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 The Code39 class provides access to parameters that are available for the Code39 decoder.
 
@@ -43,5 +46,14 @@ Options: Security level 0 , Security Level 1 , Security Level 2 and Security Lev
 Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
 
 

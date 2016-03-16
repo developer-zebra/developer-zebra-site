@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.Keystroke
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -71,4 +74,12 @@ Gets and Sets keystroke basic data formatting configuration object [ ProfileConf
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
+
+
+
+
+
+
+
+
 

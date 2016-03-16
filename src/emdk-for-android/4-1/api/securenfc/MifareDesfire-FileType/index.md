@@ -1,6 +1,9 @@
 ---
 title: MifareDesfire.FileType
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -17,4 +20,12 @@ type: api
 * **LINEAR_RECORD** -Linear record file
 
 * **CYCLIC_RECORD** -Cyclic record file
+
+
+
+
+
+
+
+
 

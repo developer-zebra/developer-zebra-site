@@ -4,27 +4,26 @@ title: Serial Communication
 description: This sample demonstrates the EMDK Serial Communication API to enable support for DEX in your application. DEX (data exchange) is a format for collecting audit and event data from vending machines.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SerialCommSample1.zip  
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SerialCommSample1.zip'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/SerialCommSample1.zip   
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/SerialCommSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/SerialCommSample1
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/SerialCommSample1'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/SerialCommSample1
-
-features: 
-
-devices: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/SerialCommSample1'
+features: null
+devices:
   - TC75KK
   - TC70KK RevB
-  
 image: 1.png
-screenshots: 
+screenshots:
   - 2.png
   - 3.png
   - 4.png
- 
+layout: sample.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -59,3 +58,14 @@ The following guide will walk you through setting up the EMDK samples in your ID
 3.  Press the **Read** button.  The application will continue to read for 10 seconds and then display the read data in the status area.
     ![img](4.png) 
   
+
+
+
+
+
+
+
+
+
+
+

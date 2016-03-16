@@ -1,3 +1,6 @@
+---
+layout: guide.html
+---
 <div class="row">
     <!--Nav Bar -->
     <nav class="col-xs-3 bs-docs-sidebar">
@@ -56,3 +59,5 @@
         </section>    
     </div>
 </div>
+
+

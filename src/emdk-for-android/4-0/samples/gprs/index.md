@@ -4,32 +4,33 @@ title: GPRS Settings
 description: This sample application will allow you to Add/Replace named APN and remove existing named APN.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileGprsMgrSample1.zip   
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileGprsMgrSample1.zip'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileGprsMgrSample1.zip      
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileGprsMgrSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileGprsMgrSample1
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileGprsMgrSample1'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfileGprsMgrSample1
-
-features: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfileGprsMgrSample1'
+features:
   - Profile Manager
   - GPRS Manager
-devices: 
+devices:
   - MC67JB
   - TC55JB
   - TC55KK
   - TC70KK
   - TC75KK
-
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
   - 4.png
-  - 5.png 
+  - 5.png
+layout: sample.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Overview
@@ -85,3 +86,13 @@ The following guide will walk you through setting up the EMDK samples in your ID
 
 6. Check the status field.   
   ![img](gprs_5.png)  
+
+
+
+
+
+
+
+
+
+

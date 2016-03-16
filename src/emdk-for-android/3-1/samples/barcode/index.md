@@ -1,14 +1,14 @@
 ---
 publish: true
 title: Barcode APIs
-description: This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.
-download: https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/BarcodeSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/BarcodeSample1
-features: 
+description: 'This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.'
+download: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/BarcodeSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/BarcodeSample1'
+features:
   - Profile Manager
   - Barcode
   - Java APIs
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -20,13 +20,16 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
   - 4.png
   - 5.png
   - 6.png
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Overview
@@ -79,3 +82,14 @@ This sample application will allow you to scan barcodes based on selected scanne
    
 	![img](../../images/samples/barcode_6.png)  
 	
+
+
+
+
+
+
+
+
+
+
+

@@ -1,13 +1,13 @@
 ---
 publish: true
 title: Rebooting The Device
-description: This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).
-download: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/archive/ProfilePowerMgrSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/ProfilePowerMgrSample1
-features: 
+description: 'This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).'
+download: 'https://github.com/developer-zebra/samples-emdkforxamarin-1_0/archive/ProfilePowerMgrSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/ProfilePowerMgrSample1'
+features:
   - Profile Manager
   - Power Manager
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -19,10 +19,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
+layout: sample.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 ##Overview
@@ -74,3 +77,15 @@ Now press the "Play" button. The IDE will build, deploy and start the sample app
 3.  Click "Set" 
 4.  Check the status field.   
 	![img](../../images/samples/1_3.png)  
+
+
+
+
+
+
+
+
+
+
+
+

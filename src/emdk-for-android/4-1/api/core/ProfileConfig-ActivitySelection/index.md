@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.ActivitySelection
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -41,4 +44,12 @@ Gets and Sets activities to the profile [ ProfileConfig.ActivitySelection.activi
 **Type:**
 
 java.util.ArrayList
+
+
+
+
+
+
+
+
 

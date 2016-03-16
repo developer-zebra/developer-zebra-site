@@ -1,5 +1,8 @@
 ---
-title:  Configure Device Browser using Browser Manager
+title: Configure Device Browser using Browser Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -417,4 +420,12 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BrowserManagerTutorial.zip).
+
+
+
+
+
+
+
+
 

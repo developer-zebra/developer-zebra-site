@@ -1,5 +1,8 @@
 ---
 title: EMDKManager.EMDKListener
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This is the interface for the callback to notify the opening and closing status of the EMDK.
@@ -67,5 +70,13 @@ Called to notify the client that this EMDKManager object has been abruptly close
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: Scanner.StatusEventArgs
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 This class is used internally and not meant for developer applications.
 
@@ -16,5 +19,15 @@ This class is used internally and not meant for developer applications.
         
 
 **Type** - Symbol.XamarinEMDK.Barcode.StatusData
+
+
+
+
+
+
+
+
+
+
 
 

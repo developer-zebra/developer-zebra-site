@@ -2,13 +2,13 @@
 publish: true
 title: Scan and Pair
 description: This sample application will show how the Scan and Pair API can be used to pair two bluetooth devices programmatically.
-download: https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/ScanAndPairSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/ScanAndPairSample1
-features: 
+download: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/ScanAndPairSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/ScanAndPairSample1'
+features:
   - Profile Manager
   - Scan and Pair
   - Java APIs
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -20,9 +20,12 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Overview##
@@ -53,3 +56,14 @@ For this sample, you will need two Android Bluetooth devices, one must be an EMD
 After pairing is complete, the status label will display "Bluetooth device is paired successfully".
 
 	![img](../../images/samples/scanandpair4.png) 
+
+
+
+
+
+
+
+
+
+
+

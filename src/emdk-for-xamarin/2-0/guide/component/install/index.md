@@ -10,6 +10,7 @@ The Xamarin Component part of the EMDK includes the API libraries that you will 
 ![yt:jDZlBYd8qPk](../../../images/video.png)
 
 
+
 ## Installing the Xamarin Component v1.0.3
 After adding the [Visual Studio Extension](/emdk-for-xamarin/2-0/guide/vs/setup) or [Xamarin Studio Add-in](/emdk-for-xamarin/2-0/guide/xs/setup), you must install the EMDK for Xamarin component so it can be accessible from your projects.
 
@@ -37,8 +38,12 @@ Once the Xamarin Component has been installed to the IDE, you need to add it to 
 	![img](../../../images/component/login-complete.png)
 
 5. Choose `Add to Project` in the `EMDK For Xamarin` item of the `Installed on this machine` section. Be sure to pay attention to the version number you are adding, you may have multiple versions of the component installed. See the section below for instructions how to remove components.
-
+    >NOTE: When running both Xamarin Studio and Visual Studio on the same Windows system and differing EMDK for Xamarin component versions are installed in each IDE, all versions of the component will be visible in the **Edit Components** screen for your project.
+    
 	![img](../../../images/component/add.jpg)
+
+
+
 
 6. The EMDK Component is now installed and listed in the projects `Component` folder.
 

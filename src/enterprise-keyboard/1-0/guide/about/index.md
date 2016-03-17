@@ -4,7 +4,7 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Keyboard is a alternative keyboard for Android devices with specialized capabilities designed specifically for the workplace. In addition to the features of stock Android keyboard, Enterprise Keyboard has the ability to add industry-specific dictionaries, user-programmable function keys, switch quickly between languages and collect and input scanned data directly into an application.  
+Enterprise Keyboard is a alternative keyboard for Android devices with specialized capabilities designed specifically for the workplace. Adding on features provided by the stock Android keyboard, Enterprise Keyboard enhancements include the ability to add industry-specific dictionaries of terms, program keys, switch quickly between languages and collect and input scanned data directly into an application.  
 
 Some of the Enterprise Keyboard's specialized capabilities include:  
 
@@ -33,6 +33,12 @@ The <b>Barcode tab</b> permits scanned data to be collected and input precisely 
 
 ## Supported Devices
 This version of Enterprise Keyboard has been approved for use with the Zebra Android devices listed below. It also works on non-Zebra many devices running Android Jelly Bean, KitKat and Lollipop. 
+
+FROM BERNAKE:
+We tested on MC40, TC55, TC70, Frenzy and TC8000
+@Nader, implied support of derivative products based on the representative products
+KitKat and Lollipop
+
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>

@@ -87,13 +87,12 @@ To change Enterprise Keyboard settings:
 <img alt="" style="height:350px" src="ekb_settings_button.png"/>
 <br>
 
-&#53;. <b>Tap the setting(s)</b> that require change:
+&#53;. On the Enterprise Keyboard Preferences panel, <b>tap the setting(s) that require change</b>:
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-For further information about Enterprise Keyboard settings, please refer to the [Customization section](../settings). 
-
+For further information about Enterprise Keyboard settings, please refer to the [Customize section](../settings). 
 
 ### Automated Installation
-Enterprise Keyboard can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr#setdefaultinputmethod) service or an organization's own MDM server. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 
+Enterprise Keyboard can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr#setdefaultinputmethod) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 
 
 In the Android Settings panel:
 1. <b>Open Language and input</b> 
@@ -104,9 +103,10 @@ In the Android Settings panel:
 Please refer to the respective tool of choice for more information. 
 
 ## Uninstallation
+<b>Warning: This action will remove the Enterprise Keyboard app and all associated data, including custom dictionaries, if any</b>. 
 
 ### Manual Uninstallation
-To remove Enterprise Keyboard, simply use the Android App Manager to <b>uninstall EBK</b>. This automatically removes Enterprise Keyboard and all associated data. 
+To remove Enterprise Keyboard, simply use the Android App Manager to <b>uninstall Enterprise Keyboard</b>. 
 
 &#49;. <b>Tap Apps</b> to bring up the Android App Manager: 
 <img alt="" style="height:350px" src="app_settings.png"/>
@@ -127,5 +127,5 @@ To remove Enterprise Keyboard, simply use the Android App Manager to <b>uninstal
 Manual uninstallation of Enterprise Keyboard is complete. 
 
 ### Automated Uninstallation
-Enterprise Keyboard can be uninstalled from an organization's own MDM server to multiple managed devices in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+Enterprise Keyboard can be uninstalled from multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 

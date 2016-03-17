@@ -3,21 +3,8 @@ title: Download Enterprise Keyboard
 layout: guide.html
 ---
 
+## Download Enterprise Keyboard
 
+Enterprise Keyboard is included with as part of the operating system of Zebra Android devices. It is not yet available as a separate download. 
 
-## Download EKB
-Using the latest release is recommended for most cases. 
-
-After download, proceed to [Setup](/enterprise-keyboard/1-0/guide/setup). 
-
-## Latest Release
-
-[Download Enterprise Keyboard 1.0]()
-
-
-## Previous Releases
-
-[Enterprise Keyboard 0.9]()
-
-
-
+For devices already in deployment, Enterprise Keyboard might be available in the form of an OS patch. Please contact your Zebra rep for more information. 

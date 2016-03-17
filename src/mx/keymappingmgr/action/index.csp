@@ -3,18 +3,18 @@ csp: keymapmgr
 title:  Action
 type: parm
 order: 2
-sincemx: 4.4
+mx: "4.4"
 parm:
   pivotal: Yes
   type: list
   list:
     - code: 1
-      sincemx: 4.4
+      mx: "4.4"
       name: Remap a key
       description: This value will allow you to add or modify Override Key Mappings for a single Key for one or more Key Mapping Tables. Each Override Key Mapping that is added or modified will alter the Behavior of exactly one Key, in one or more Key States.
     - code: 2
       name: Default all key mappings
-      sincemx: 4.4
+      mx: "4.4"
       description: This value cause all of the Override Key Mappings to be removed from all Key Mapping Tables. This will result in all Key Mapping being set back to the default for the device since it will leave only the Default Key Mappings, which cannot be removed and which will no longer be overridden.
 ---
 

@@ -3,7 +3,7 @@ csp: dhcpoptionmgr
 title: Host Name Option value
 type: parm
 order: 3
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: Host Name is "Enable"
   pivotal: Yes

@@ -3,19 +3,22 @@ csp: threatmgr
 title: Signal Occurence
 type: parm
 order: 15
-sincemx: 4.3
+mx: "4.3"
+osx: "3.5"
 parm:
   pivotal: No
   name: SignalOccurrenceOfThreat
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       name: Do nothing
       description: Do nothing
     - code: 1
       name: Signal Occurence
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: Select whether the occurrence of an externally detected Threat should be signaled.
 ---
 

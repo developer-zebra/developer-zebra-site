@@ -3,7 +3,8 @@ csp: clock
 title: TimeZone 
 type: parm
 order: 5
-sincemx: 4.2
+mx: "4.1"
+apilevel: "1"
 parm:
   presentif: AutoTime is "false"
   pivotal: No

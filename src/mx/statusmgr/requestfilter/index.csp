@@ -3,6 +3,7 @@ csp: statusmgr
 title: Request Status Filter
 type: parm
 order: 3
+mx: "5.0"
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request"

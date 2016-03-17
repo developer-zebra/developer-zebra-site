@@ -50,7 +50,7 @@
                                         <div class="" >
                                     
                                     {{else}}
-                                        <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
+                                        <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
 
                                     {{/is}}
                                     <h2 class="">{{this.title}}</h2>
@@ -71,7 +71,15 @@
                                         <p><b>Requires:</b> 
                                             <ul>
                                             {{#if this.osx}}
-                                                <li>OSX: {{this.osx}}{{#if this.osx-specific}}{{else}}+{{/if}}
+                                                <li>OSX: {{this.osx}}+
+                                                </li>
+                                            {{/if}}
+                                            {{#if this.osx-specific}}
+                                                <li>OSX: {{this.osx-specific}}+ <span class="label">ONLY</span>
+                                                </li>
+                                            {{/if}}
+                                            {{#if this.osx-exclude}}
+                                                <li class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
                                                 </li>
                                             {{/if}}
                                                 <li>MX: {{this.mx}}+ </li>
@@ -98,15 +106,24 @@
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
-                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
                                                 <td>
                                                     
                                                     {{#if this.osx}}
-                                                        <p>OSX: {{this.osx}}{{#if this.osx-specific}}{{else}}+{{/if}} </p>
+                                                        <p>OSX: {{this.osx}}+ </p>
                                                     {{/if}}
+                                                    {{#if this.osx-specific}}
+                                                        <p>OSX: {{this.osx-specific}}+ <span class="label">ONLY</span>
+                                                        </p>
+                                                    {{/if}}
+                                                    {{#if this.osx-exclude}}
+                                                        <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                        </p>
+                                                    {{/if}}
+
                                                         <p>MX: {{this.mx}}+ </p>
                                                     {{#if this.apilevel}}
                                                         <p>Android API Level: {{this.apilevel}}+ </p>

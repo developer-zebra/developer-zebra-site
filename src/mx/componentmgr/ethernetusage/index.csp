@@ -3,23 +3,27 @@ csp: componentmgr
 title: Ethernet Usage
 type: parm
 order: 3
-sincemx: 4.4
+mx: "4.4"
+osx: "4.4"
 parm:
   pivotal: No
   name: EthernetUsage
   type: list
   list:
     - code: 0
-      sincemx: 4.4
+      mx: "4.4"
+      osx: "4.4"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the Ethernet can be used.
     - code: 1
       name: Enable
-      sincemx: 4.4
+      mx: "4.4"
+      osx: "4.4"
       description: This value will cause the state of the Ethernet Option to be unlocked, allowing it to be changed, either by the device user or by the ComponentMgr.
     - code: 2
       name: Disable
-      sincemx: 4.4
+      mx: "4.4"
+      osx: "4.4"
       description: This value will cause the state of the Ethernet Option to be locked, preventing it from being changed, either by the device user or by the ComponentMgr.
 ---
 

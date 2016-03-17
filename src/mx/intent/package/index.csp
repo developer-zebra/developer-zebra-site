@@ -2,6 +2,8 @@
 csp: intent
 title: Package
 type: parm
+mx: "4.1"
+apilevel: "1"
 order: 7
 parm:
   presentif: The Action is "StartActivity" or "StartService"

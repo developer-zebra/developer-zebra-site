@@ -3,7 +3,8 @@ csp: clock
 title: Time 
 type: parm
 order: 6
-sincemx: 4.2
+mx: "4.1"
+apilevel: "8"
 parm:
   presentif: AutoTime is "false"
   pivotal: No

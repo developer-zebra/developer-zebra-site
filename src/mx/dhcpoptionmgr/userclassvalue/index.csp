@@ -3,7 +3,7 @@ csp: dhcpoptionmgr
 title: User Class value
 type: parm
 order: 5
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: User Class is "Enable"
   pivotal: Yes

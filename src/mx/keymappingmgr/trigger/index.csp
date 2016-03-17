@@ -3,42 +3,42 @@ csp: keymapmgr
 title:  Trigger
 type: parm
 order: 12
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior for the corresponding Key Table is "Send trigger"
   pivotal: No
   type: list
   list:
     - code: 10016
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 1
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** The Trigger designated as Trigger 1 is commonly used by the data acquisition subsystem on devices to initiate Barcode Scanning.
     - code: 10017
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 2
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger. Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
     - code: 10018
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 3
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger. Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
     - code: 10019
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 4
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger. Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
     - code: 10020
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 5
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger. Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
     - code: 10021
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 6
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger. Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
     - code: 10022
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 7
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger.  Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
     - code: 10023
-      sincemx: 4.4
+      mx: "4.4"
       name: Trigger 8
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. **Note:** There is currently no standard usage for this Trigger.  Please consult the documentation for a specific device to determine what, if any, standard System applications may register for notification of this Trigger.
 ---

@@ -3,6 +3,7 @@ csp: licensemgr
 title: Verification Method
 type: parm
 order: 3
+mx: "4.3"
 parm:
   pivotal: Yes
   presentif: The "Specify license action to perform" is "Apply"
@@ -11,12 +12,15 @@ parm:
   list:
     - code: 0
       name: Do not verify feature name
+      mx: "4.3"
       description: This value (or the absence of this parm from the XML) will not cause any verification of the Licensed Feature Name contained within the specified Software License File.
     - code: 1
       name: Verify against a standard feature name
+      mx: "4.3"
       description: This value will cause the Licensed Feature Name contained within the specified Software License File to be verified as matching a specified Standard Licensed Feature Name.
     - code: 2
       name: Verify against a custom feature name
+      mx: "4.3"
       description: This value will cause the Licensed Feature Name contained within the specified Software License File to be verified as matching a specified Custom Licensed Feature Name.
 ---
 

@@ -1,6 +1,9 @@
 ---
 title: PaymentDevice.DataListener
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -45,4 +48,12 @@ This is the callback method upon data or status notification.
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
-title:  Pair Bluetooth devices
+title: Pair Bluetooth devices
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -810,3 +813,11 @@ Now that you have learned how to scan the Bluetooth Name/Address of Remote Scann
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/ScanAndPairTutorial.zip).
+
+
+
+
+
+
+
+

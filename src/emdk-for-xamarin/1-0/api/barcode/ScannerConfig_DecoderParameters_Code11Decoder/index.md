@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Code11Decoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The Code11 class provides access to parameters that are available for the Code11 decoder..
 
@@ -27,5 +30,15 @@ Transmit Code 11 data with or without the check digit.
 Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 bar code. Use enum ScannerConfig.VerifyCheckDigit.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit
+
+
+
+
+
+
+
+
+
+
 
 

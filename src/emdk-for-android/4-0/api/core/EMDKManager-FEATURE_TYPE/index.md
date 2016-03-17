@@ -1,6 +1,9 @@
 ---
 title: EMDKManager.FEATURE_TYPE
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -35,4 +38,12 @@ This lists all the features exposed by the EMDK.
 * **SECURENFC** -EMDK feature type to access the Secure Nfc
 
 * **SERIALCOMM** -EMDK feature type for Serial Communication
+
+
+
+
+
+
+
+
 

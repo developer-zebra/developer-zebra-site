@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.AIM_TYPE
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,12 @@ Describes the type of aiming to use.
 * **TRIGGER** -Standard Trigger Mode
 
 * **CONTINUOUS_READ** -In this mode once the trigger is pulled the user can continue scanning barcodes without releasing the trigger. This mode is useful when the user wants to perform rapid scanning.
+
+
+
+
+
+
+
+
 

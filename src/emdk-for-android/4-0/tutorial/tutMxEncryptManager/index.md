@@ -1,5 +1,8 @@
 ---
-title:  Creating Encrypted File System (EFS) using Encrypt Manager
+title: Creating Encrypted File System (EFS) using Encrypt Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -447,3 +450,11 @@ Now that you have learned how to create Encrypted File System (EFS) on the inter
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EncryptManagerTutorial.zip).
+
+
+
+
+
+
+
+

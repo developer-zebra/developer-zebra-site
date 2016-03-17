@@ -2,12 +2,12 @@
 publish: true
 title: Data Capture
 description: Shows how to use the EMDK for Android Profile APIs to manage Data Capture profiles.
-download: https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/ProfileDataCaptureSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/ProfileDataCaptureSample1
-features: 
+download: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/ProfileDataCaptureSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/ProfileDataCaptureSample1'
+features:
   - Profile Manager
   - Data Capture
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -19,11 +19,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
-
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Overview
@@ -105,4 +107,15 @@ Now when you scan the same Barcode, you will still see the barcode aimer but the
 
 ## Next Steps
 Now that you have played with a pre-built sample application, it is time to try and build your own application from scratch. Follow the steps in the [DataCapture Profile Manager Tutorial](../../tutorial/tutdatacaptureprofile).
+
+
+
+
+
+
+
+
+
+
+
 

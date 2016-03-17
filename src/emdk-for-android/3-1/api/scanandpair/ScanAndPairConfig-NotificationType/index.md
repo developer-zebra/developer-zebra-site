@@ -1,5 +1,8 @@
 ---
 title: ScanAndPairConfig.NotificationType
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This enum is used by the ScanAndPairTool class. When using PowerTools, notifications 
@@ -12,5 +15,13 @@ This enum is used by the ScanAndPairTool class. When using PowerTools, notificat
  an audible alert when specific operations are performed.
 
 * **NONE** -Disable notification. Do not raise notification for any type of operations.
+
+
+
+
+
+
+
+
 
 

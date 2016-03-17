@@ -1,5 +1,8 @@
 ---
-title:  Apply Mx Profile Silently in a Non-Blocking way
+title: Apply Mx Profile Silently in a Non-Blocking way
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -565,3 +568,11 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/ApplyProfileSilentlyTutorial.zip).
+
+
+
+
+
+
+
+

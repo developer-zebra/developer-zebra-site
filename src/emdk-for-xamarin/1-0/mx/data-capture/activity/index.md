@@ -1,5 +1,8 @@
 ---
-title:  Activity Selection Profile Feature Reference
+title: Activity Selection Profile Feature Reference
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ## Overview
@@ -28,3 +31,13 @@ After selecting an application from the Applications list, you would enter an **
 **Activity Class Names** in the list must have the complete application name prefixed to the Activity class name ( i.e. **com.symbol.profiledatacapturesampe1**.MainActivity).  If all the Activities you wish to add to the list belong to the same application, then you can simply check the "Auto prefix application name" check box and then enter only the **Activity Class Name**.  If however, you wish to add a mix of Activities that belong to specified application and Activities that belong to other applications, then you must manually prefix the **application name** to the **Activity Class Name** before clicking apply
 
 If you wish to enable all activities in selected application you could enter an **Activity Selection wildcard**  ( &#42; ) instead of specifying each individually.  Just enter an Asterisk and click the **Apply** button.
+
+
+
+
+
+
+
+
+
+

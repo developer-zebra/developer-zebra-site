@@ -1,5 +1,8 @@
 ---
 title: Scanner States
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Introduction
@@ -13,4 +16,12 @@ This guide provides diagrams to illustrate the states that a barcode scanner wil
 ###Software Trigger
 
 ![img](software-trigger.png)
+
+
+
+
+
+
+
+
 

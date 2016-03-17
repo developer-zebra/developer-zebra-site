@@ -1,7 +1,15 @@
 ---
-title:  EMDK for Android Programming Practices
+title: EMDK for Android Programming Practices
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
+##EMDK concurrency guidelines
+
+Currently the EMDK is **not** thread safe, API calls such as Barcode and SimulScan are designed to be called sequentially. If called within separate threads, such as from AsyncTasks, some kind of synchronization mechanism should be employed in order to prevent multiple EMDK API calls getting called simultaneously. No single instance of a feature manger object should be shared among multiple threads, even in a single application unless the calls are made sequentially. 
+
+Parallel execution is not supported, with the exception that Barcode Manager object and Profile Manger objects can be used simultaneously.
 
 ##Creating a common Application to run on Zebra and Non-Zebra devices
 
@@ -162,3 +170,10 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
     :::java
     LOCAL_JAVA_LIBRARIES := com.symbol.emdk
     LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libemdk:com.symbol.emdk/com.symbol.emdk.jar
+
+
+
+
+
+
+

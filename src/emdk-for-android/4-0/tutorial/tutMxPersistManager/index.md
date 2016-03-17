@@ -1,5 +1,8 @@
 ---
-title:  Persist MX configurations using Persist Manager API
+title: Persist MX configurations using Persist Manager API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -524,3 +527,11 @@ Now that you have learned how to configure and persist device configuration XML'
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxPersistManagerTutorial.zip).
+
+
+
+
+
+
+
+

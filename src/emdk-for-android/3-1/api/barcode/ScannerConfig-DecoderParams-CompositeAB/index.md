@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.CompositeAB
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The CompositeAB class provides access to parameters that are
@@ -23,5 +26,13 @@ Gets and Sets UCC Link Mode using
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.UccLinkMode
+
+
+
+
+
+
+
+
 
 

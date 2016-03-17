@@ -1,6 +1,9 @@
 ---
 title: PassThruApduResults
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -71,4 +74,12 @@ APDU Service errors
 * **EMDK_NOT_OPENED** -EMDK is not opened.
 
 * **UNDEFINED** -Error code not defined.
+
+
+
+
+
+
+
+
 

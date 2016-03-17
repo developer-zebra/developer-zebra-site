@@ -1,5 +1,8 @@
 ---
 title: SimulScanResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines all the error codes the SimulScan API returns.
@@ -43,5 +46,13 @@ Defines all the error codes the SimulScan API returns.
 * **UNDEFINED** -Undefined
 
 * **FAILURE** -Failure
+
+
+
+
+
+
+
+
 
 

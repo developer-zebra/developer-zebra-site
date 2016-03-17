@@ -1,5 +1,8 @@
 ---
 title: Scanner.StatusListener
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 An interface for notifying client applications to notify scan events.
@@ -29,5 +32,13 @@ statusData - StatusData object.
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
 
 

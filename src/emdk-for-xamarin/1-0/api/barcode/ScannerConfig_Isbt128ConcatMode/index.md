@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.Isbt128ConcatMode
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 Option for concatenating pairs of ISBT128 code types.
 
@@ -42,5 +45,15 @@ Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT 
 Will ignore the barcode pair and only output decode data for only one of the barcodes
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Isbt128ConcatMode
+
+
+
+
+
+
+
+
+
+
 
 

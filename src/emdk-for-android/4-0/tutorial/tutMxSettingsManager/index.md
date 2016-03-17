@@ -1,5 +1,8 @@
 ---
-title:  Invoke Enterprise Reset in Settings UI
+title: Invoke Enterprise Reset in Settings UI
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -424,3 +427,11 @@ Now that you have learned how to configure Settings UI with Enterprise Reset opt
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxSettingsManagerTutorial.zip)
+
+
+
+
+
+
+
+

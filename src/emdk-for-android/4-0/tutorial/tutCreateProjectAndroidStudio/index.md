@@ -1,5 +1,8 @@
 ---
-title:  Creating Project using Android Studio
+title: Creating Project using Android Studio
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 ## Overview
 
@@ -77,3 +80,10 @@ After completing the steps in **Creating The Project**
 3. Now rebuild your project by selecting **Make Project** from the **Build** menu.
 
 **Your project is now ready to use the EMDK for Android APIs**
+
+
+
+
+
+
+

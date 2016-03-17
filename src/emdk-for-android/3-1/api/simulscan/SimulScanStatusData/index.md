@@ -1,5 +1,8 @@
 ---
 title: SimulScanStatusData
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 SimulScanStatusData class provides access to reader status.
@@ -60,5 +63,13 @@ java.lang.String
 * **ERROR** -Error occurred
 
 * **UNKNOWN** -Unknown status
+
+
+
+
+
+
+
+
 
 

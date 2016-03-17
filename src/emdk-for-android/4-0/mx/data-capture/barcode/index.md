@@ -1,5 +1,8 @@
 ---
-title:  Barcode Profile Feature Reference
+title: Barcode Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -363,4 +366,12 @@ In order for your application to receive the barcode data, you must specify one 
 * [Intent](/emdk-for-android/4-0/guide/profiles/profileintent)
 * [Keystroke](/emdk-for-android/4-0/guide/profiles/profilekeystroke)
 * [IP](/emdk-for-android/4-0/guide/profiles/profileIP)
+
+
+
+
+
+
+
+
 

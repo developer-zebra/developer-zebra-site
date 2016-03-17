@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.ILLUMINATION_MODE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Turns camera illumination on and off.
@@ -20,5 +23,13 @@ Turns camera illumination on and off.
 * **OFF** -External illumination is always is off
 
 * **ON** -External illumination is always on
+
+
+
+
+
+
+
+
 
 

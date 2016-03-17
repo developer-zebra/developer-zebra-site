@@ -1,6 +1,8 @@
 ---
 title: Core APIs
 layout: list-content-api.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 >Supported Devices:
@@ -14,3 +16,12 @@ layout: list-content-api.html
 * TC55KK
 * TC70KK
 * TC75KK
+
+
+
+
+
+
+
+
+

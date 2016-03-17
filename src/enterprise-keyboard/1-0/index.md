@@ -9,7 +9,7 @@ menu:
       url: /enterprise-keyboard/1-0/guide/about
     - title: Setup
       url: /enterprise-keyboard/1-0/guide/setup
-    - title: Configuration
+    - title: Customize
       url: /enterprise-keyboard/1-0/guide/settings
     - icon: fa fa-search
       url: /enterprise-keyboard/1-0/search

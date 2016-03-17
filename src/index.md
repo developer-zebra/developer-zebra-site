@@ -95,8 +95,8 @@ products:
         url: /enterprise-keyboard/1-0/guide/gettingstarted
       - title: Setup
         url: /enterprise-keyboard/1-0/guide/setup
-      - title: Advanced Features
-        url: /enterprise-keyboard/1-0/guide/features
+      - title: Customize
+        url: /enterprise-keyboard/1-0/guide/settings
       - title: Download
         url: /enterprise-keyboard/1-0/download
 

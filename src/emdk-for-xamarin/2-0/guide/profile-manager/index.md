@@ -261,7 +261,7 @@ Example:
 	"</characteristic>"+
 	"</characteristic>";
 
-	emdkStatus = mProfileManager.processProfile("EMDKProfile1/Clock", ProfileManager.PROFILE_FLAG.SET, extraData);
+	emdkStatus = mProfileManager.ProcessProfile("EMDKProfile1/Clock", ProfileManager.PROFILE_FLAG.SET, extraData);
 
 #### PROFILE_FLAG.SET Usage Summary
 Here is a summary of the above scenarios when using PROFILE_FLAG.SET and XML in the extraData parameter:

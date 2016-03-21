@@ -5,38 +5,49 @@ product: EMDK For Xamarin
 productversion: '2.0'
 ---
 
+
 Profile Manager is an exclusive EMDK technology offered within your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.  
 
 ###Accessing the Profile Manager
-1. Inside your IDE select an open Android Application.
-2. Select "EMDK" -> "Profile Manager" on the toolbar.  
-    ![img](../../../images/menu-emdk.jpg)
+1. Inside your IDE, select an open Xamarin.Android project.
+
+	NOTE: Profile manager will create a profile xml file and add it to your project. Selecting and open project will tell profile manager which project you want the profile added to. 
+
+2. Select "EMDK" -> "Profile Manager" on the tool bar. 
+ 
+    ![img](open-profile-manager.png)
 
 ###Creating a Profile
 
 1. Open the "EMDK Profile Manager".  
 2. Click "Create".  
 
-    ![img](../../../images/profiles/image002.jpg)
-3. Enter a Profile Name and click "Create".  This name is how the profile will be identified by the EMDK.
+    ![img](open-new-profile-dialog.png)
+3. Enter a name for your new Profile.  This name is how the profile will be identified by the EMDK. 
 
-	![img](../../../images/profiles/image003.jpg)  
-4. Select the features you would like to enable by selecting the item from the list of "Available Features" and clicking the right arrow button.
+	![img](enter-name-for-profile.png)  
+4. Select the **MX** version you would like to use in your profile.
+	
+	Use the [Choosing a MX Version](/mx/choosing-a-version/) Guide as an aid to decide which MX version to use.
+
+	![img](select-mx-version-for-profile.png)
+
+5. Select the features you would like to enable by selecting the item from the list of "Available Features" and clicking the right arrow button.
 	>Note:  
 	>
 	> You must enable both a Data Capture Delivery Feature and a Data Capture Input Feature for the profile to send data to your application. For example "Barcode" and "Intent".
 	>
 	> You can remove a feature from the "Selected Features" list by clicking the left arrow button.
 
-	![img](../../../images/profiles/image004.jpg)  
+	![img](select-profile-features.png)  
 
-5. Select a "Selected Features" and the list of parameters will populate on the right hand side of the dialog. When you click on a parameter a description with populate on the lower left hand corner of the dialog.  
+6. Select a "Selected Features" and the list of parameters will populate on the right hand side of the dialog. When you click on a parameter a description with populate on the lower left hand corner of the dialog.  
 
-	![img](../../../images/profiles/image005.jpg)  
-6. When complete click "Finish".
-7. Click "Close".  
+	![img](modify-profile-feature-params.png)  
+7. When complete click "Finish".
+8. Click "Close".  
 
-	![img](../../../images/profiles/image006.jpg)
+	![img](profile-create-complete.png)
 	>Note:  
 	>The profile XML will be generated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
 
@@ -45,12 +56,12 @@ Profile Manager is an exclusive EMDK technology offered within your IDE, providi
 1. Open the EMDK Profile Manager.
 2. Select a Profile to modify and click "Edit".  
 
-	![img](../../../images/profiles/image007.jpg)  
+	![img](profile-create-complete.png)  
 3. Edit the profile using the Profile Manager in the same way you would when creating a new profile.
 4. When complete click "Finish".
 5. Click "Close".  
 
-	![img](../../../images/profiles/image008.jpg)
+	![img](profile-create-complete.png)
 
 	>Note:  
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
@@ -60,13 +71,13 @@ Profile Manager is an exclusive EMDK technology offered within your IDE, providi
 1. Open the EMDK Profile Manager.
 2. Select a Profile to rename and click "Rename".  
 
-	![img](../../../images/profiles/image009.jpg)  
+	![img](profile-create-complete.png)  
 3. Enter the new name and click "Rename";  
 
-	![img](../../../images/profiles/image010.jpg)  
+	![img](profile-rename-enter-new-name.png)  
 4. Click "Close".  
 
-	![img](../../../images/profiles/image011.jpg)  
+	![img](profile-renamed.png)  
 
 	>Note:  
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
@@ -76,29 +87,51 @@ Profile Manager is an exclusive EMDK technology offered within your IDE, providi
 1. Open the EMDK Profile Manager.
 2. Select a Profile to copy and click "Copy".  
 
-	![img](../../../images/profiles/image012.jpg)  
+	![img](profile-before-copy.png)  
 3. Enter the a name profile name to uses and click "Copy";  
 
-	![img](../../../images/profiles/image013.jpg)  
+	![img](profile-copy.png)  
 4. Click "Close".  
 
-	![img](../../../images/profiles/image014.jpg)  
+	![img](profile-after-copy.png)  
 
 	>Note:  
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
+
+###Upgrading a Profile
+
+>Note: The Profile Manager does not provide a method to downgrade a profile, so the upgrade process is not reversible.  It is advised that you make a copy of your profile before upgrading.
+
+1. Open the EMDK Profile Manager.
+2. Select a Profile to upgrade and click "Upgrade".  
+
+	![img](profile-after-copy.png)  
+3. Select the **MX** version you would like to upgrade to and click "Upgrade";  
+	Use the [Choosing a MX Version](/mx/choosing-a-version/) Guide as an aid to decide which MX version to use.
+
+	![img](profile-upgrade-select-mx-version.png)  
+
+
+	  
+
+4. Edit the profile using the Profile Manager in the same way you would when creating a new profile.
+
+6. When complete click "Finish". 
+
+	![img](profile-upgrade-after.png)
 
 
 ###Deleting a Profile
 1. Open the EMDK Profile Manager.
 2. Select a Profile to delete and click "Delete".  
 
-	![img](../../../images/profiles/image015.jpg)  
+	![img](profile-delete-before.png)  
 3. Confirm delete by clicking "Delete";  
 
-	![img](../../../images/profiles/image016.jpg)  
+	![img](profile-delete-confirm.png)  
 4. Click "Close".  
 
-	![img](../../../images/profiles/image017.jpg)  
+	![img](profile-delete-after.png)  
 
 	>Note:  
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.

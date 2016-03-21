@@ -3,6 +3,8 @@ csp: accessmgr
 title: Add Package Name(s)
 type: parm
 order: 9
+mx: "4.1"
+osx: "1.0"
 parm:
   presentif: The Operation Mode is "Single User With Whitelist" *AND* Add Packages is "Add Specified Package(s)"
   pivotal: No

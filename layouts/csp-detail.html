@@ -31,6 +31,11 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
+                        {{>navbar-smartdocs}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
 
                             <section id="services" >
                                 <div class="">
@@ -41,7 +46,13 @@
                                 
                                 {{#each collections.csp}}
                                 {{#is ../csp this.csp}}
-                                <div class="">
+                                    {{#is this.parm.type "list"}}
+                                        <div class="" >
+                                    
+                                    {{else}}
+                                        <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
+
+                                    {{/is}}
                                     <h2 class="">{{this.title}}</h2>
                                     <p class="">{{{this.contents}}}</p>
                                     {{#is this.type "parm"}}
@@ -53,21 +64,34 @@
                                         <p><b>Parm Name:</b> {{this.parm.name}}</p>
                                         {{/if}}
                                         {{#if this.parm.pivotal}}
-                                        <p><b>Pivotal Parm:</b> {{this.parm.pivotal}}</p>
+                                        <!-- <p><b>Pivotal Parm:</b> {{this.parm.pivotal}}</p> -->
                                         {{/if}}
-                                         <p><b>Versions:</b>
-                                        {{#each ../mxversions}}
-                                            {{#if ../sincemx}}
-                                                {{#is this.value ../sincemx }}
-                                                    <span class="label label-default">{{this.text}} +</span>
-                                                {{/is}}
-                                            {{else}}
-                                                {{#if @first}}
-                                                 <span class="label label-default">{{this.text}} +</span>
-                                                {{/if}}
+                                        {{#is this.parm.type "list"}}
+                                        {{else}}
+                                        <p><b>Requires:</b> 
+                                            <ul>
+                                            {{#if this.osx}}
+                                                <li>OSX: {{this.osx}}+
+                                                </li>
                                             {{/if}}
-                                        {{/each}}   
-                                        </p>                                     
+                                            {{#if this.osx-specific}}
+                                                <li>OSX: {{this.osx-specific}}+ <span class="label">ONLY</span>
+                                                </li>
+                                            {{/if}}
+                                            {{#if this.osx-exclude}}
+                                                <li class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                </li>
+                                            {{/if}}
+                                                <li>MX: {{this.mx}}+ </li>
+                                            {{#if this.apilevel}}
+                                                <li>Android API Level: {{this.apilevel}}+ </li>
+                                            {{/if}}
+                                            </ul>
+                                        </p>
+                                        {{/is}}
+                                        
+
+                                        
                                         </blockquote>
                                     {{/is}}
                                     
@@ -79,25 +103,32 @@
                                                 <th>Option</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Versions</th>
+                                                <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
-                                            <tr>
+                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
                                                 <td>
-                                                {{#each ../../mxversions}}
-                                                    {{#if ../sincemx}}
-                                                        {{#is this.value ../sincemx }}
-                                                            {{this.text}}+
-                                                        {{/is}}
-                                                    {{else}}
-                                                        {{#if @first}}
-                                                            {{this.text}}+
-                                                        {{/if}}
+                                                    
+                                                    {{#if this.osx}}
+                                                        <p>OSX: {{this.osx}}+ </p>
                                                     {{/if}}
-                                                {{/each}}  
+                                                    {{#if this.osx-specific}}
+                                                        <p>OSX: {{this.osx-specific}}+ <span class="label">ONLY</span>
+                                                        </p>
+                                                    {{/if}}
+                                                    {{#if this.osx-exclude}}
+                                                        <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                        </p>
+                                                    {{/if}}
+
+                                                        <p>MX: {{this.mx}}+ </p>
+                                                    {{#if this.apilevel}}
+                                                        <p>Android API Level: {{this.apilevel}}+ </p>
+                                                    {{/if}}
+                                                    
                                                 </td> 
                                                 
                                             </tr>
@@ -121,7 +152,64 @@
             </div>
             </section>
         </div>
-    </section>    
+    </section>   
+
+<script type="text/javascript">
+    var mxJSON = {
+        csp: "{{csp}}",
+        name: "{{title}}",
+        parms: [
+            {{#each collections.csp}}
+                {{#is ../csp this.csp}}
+                {{#if this.parm.name}}
+                    {
+                        {{#is this.parm.type "list"}}
+                        {{else}}
+                        requires: {
+                            osx: "{{this.osx}}",
+                            mx: "{{this.mx}}",
+                            api: "{{this.apilevel}}",
+                            osxSpecific: "{{this.osx-specific}}"
+                        },
+
+                        {{/is}}
+                        {{#is this.type "parm"}}
+                            presentif: "{{this.parm.presentif}}",
+                            name: "{{this.parm.name}}",
+                            pivotal: "{{this.parm.pivotal}}",
+                        {{/is}}
+                        
+                        
+                        {{#is this.parm.type "list"}}
+                        listitems: [
+                                {{#each this.parm.list}}
+                                {
+                                    code: "{{this.code}}",
+                                    name: "{{this.name}}",
+                                    description: "{{this.description}}",
+                                    requires: {
+                                        osx: "{{this.osx}}",
+                                        mx: "{{this.mx}}",
+                                        api: "{{this.apilevel}}",
+                                        osxSpecific: "{{this.osx-specific}}"
+                                    },
+
+                                },
+                        
+                                {{/each}}
+                        ]
+                        {{/is}}
+                    },
+                    {{/if}}    
+                {{/is}}
+                    
+            {{/each}}
+        ]
+    }
+
+    console.log(JSON.stringify(mxJSON))
+</script>
+
 {{> footer}}
 
 

@@ -3,7 +3,8 @@ csp: certmgr
 title: Certificate File CA
 type: parm
 order: 6
-sincemx: 4.2
+mx: "4.1"
+osx: "1.0"
 parm:
   presentif: If the Certificate Action is "Install certificate" AND the Certificate Method is "Reference certificate file" AND the Certificate Type is "Client Certificate (.PEM file)" or "Client Certificate and Private Key (.PFX file)" or "Client Certificate and Private Key (.P12 file)" or "Client Certificate and Private Key (.PKCS12 file)"
   pivotal: No

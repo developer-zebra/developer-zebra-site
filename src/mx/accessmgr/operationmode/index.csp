@@ -3,15 +3,21 @@ csp: accessmgr
 title: Operation Mode
 type: parm
 order: 2
+mx: "4.1"
+osx: "1.0"
 parm:
   pivotal: Yes
   name: OperationMode
   type: list
   list:
     - code: 1
+      mx: "4.1"
+      osx: "1.0"
       name: Single User without Whitelist
       description: This value will cause Whitelisting to be turned off and hence disable all Whitelisting functionality.
     - code: 2
+      mx: "4.1"
+      osx: "1.0"
       name: Single User with Whitelist
       description: This value will cause Whitelisting to be turned on and hence enable Whitelisting functionality. The exact behavior of Whitelisting will depend on the configuration of the other parms.
 ---

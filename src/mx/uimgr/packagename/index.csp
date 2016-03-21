@@ -3,7 +3,8 @@ csp: uimgr
 title: Package name of input Method
 type: parm
 order: 10
-sincemx: 4.3
+mx: "4.3"
+apilevel: "16"
 parm:
   pivotal: No
   presentif: The "Set Default Input Method?" value is "Change Current Input Method" *AND* the "Select a Default Input Method Option" is "User defined Input Method"

@@ -3,23 +3,27 @@ csp: uimgr
 title: Enable/Disable Bluetooth Pairing Popup
 type: parm
 order: 6
-sincemx: 4.3
+mx: "4.3"
+osx: "4.3"
 parm:
   pivotal: No
   name: BluetoothPairingPopupUsage
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "4.3"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Bluetooth Pairing Popup is will be presented.
     - code: 1
       name: Enable 
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "4.3"
       description: This value will cause the Bluetooth Pairing Popup to be presented whenever a pairing operation is performed.
     - code: 2
       name: Disable
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "4.3"
       description: This value will cause the Bluetooth Pairing Popup to be suppressed when a pairing operation is performed.
 ---
 

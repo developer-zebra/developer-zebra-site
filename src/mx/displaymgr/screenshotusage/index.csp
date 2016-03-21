@@ -3,23 +3,31 @@ csp: displaymgr
 title: Screen Shot Usage
 type: parm
 order: 4
-sincemx: 5.0
+mx: "5.0"
+osx-specific: "3.6,4.5"
+osx-exclude: "4.0-4.4"
 parm:
   pivotal: No
   name: ScreenShotUsage
   type: list
   list:
     - code: 0
-      sincemx: 5.0
+      mx: "5.0"
+      osx-specific: "3.6,4.5"
+      osx-exclude: "4.0-4.4"
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will not cause any changes to the current behavior.
     - code: 1
       name: Enable
-      sincemx: 5.0
+      mx: "5.0"
+      osx-specific: "3.6,4.5"
+      osx-exclude: "4.0-4.4"
       description: This value will enable the ability to use the Android screen capture feature.
     - code: 2
       name: Disable
-      sincemx: 5.0
+      mx: "5.0"
+      osx-specific: "3.6,4.5"
+      osx-exclude: "4.0-4.4"
       description: This value will disable the ability to use the Android screen capture feature.
 ---
 

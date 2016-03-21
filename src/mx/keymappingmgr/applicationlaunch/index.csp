@@ -3,7 +3,7 @@ csp: keymapmgr
 title:  Application Launch
 type: parm
 order: 18
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Launch application"
   pivotal: No

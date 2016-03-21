@@ -3,7 +3,7 @@ csp: keymapmgr
 title: Key Code
 type: parm
 order: 7
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send key-code" 
   pivotal: No
@@ -11,601 +11,601 @@ parm:
   list:
     - name: 0
       code: 7
-      sincemx: 4.4
+      mx: "4.4"
     - name: 1
       code: 8
-      sincemx: 4.4
+      mx: "4.4"
     - name: 2
       code: 9
-      sincemx: 4.4
+      mx: "4.4"
     - name: 3
       code: 10
-      sincemx: 4.4
+      mx: "4.4"
     - name: 4
       code: 11
-      sincemx: 4.4
+      mx: "4.4"
     - name: 5
       code: 12
-      sincemx: 4.4
+      mx: "4.4"
     - name: 6
       code: 13
-      sincemx: 4.4
+      mx: "4.4"
     - name: 7
       code: 14
-      sincemx: 4.4
+      mx: "4.4"
     - name: 8
       code: 15
-      sincemx: 4.4
+      mx: "4.4"
     - name: 9
       code: 16
-      sincemx: 4.4
+      mx: "4.4"
     - name: A
       code: 29
-      sincemx: 4.4
+      mx: "4.4"
     - name: B
       code: 30
-      sincemx: 4.4
+      mx: "4.4"
     - name: C
       code: 31
-      sincemx: 4.4
+      mx: "4.4"
     - name: D
       code: 32
-      sincemx: 4.4
+      mx: "4.4"
     - name: E
       code: 33
-      sincemx: 4.4
+      mx: "4.4"
     - name: F
       code: 34
-      sincemx: 4.4
+      mx: "4.4"
     - name: G
       code: 35
-      sincemx: 4.4
+      mx: "4.4"
     - name: H
       code: 36
-      sincemx: 4.4
+      mx: "4.4"
     - name: I
       code: 37
-      sincemx: 4.4
+      mx: "4.4"
     - name: J
       code: 38
-      sincemx: 4.4
+      mx: "4.4"
     - name: K
       code: 39
-      sincemx: 4.4
+      mx: "4.4"
     - name: L
       code: 40
-      sincemx: 4.4
+      mx: "4.4"
     - name: M
       code: 41
-      sincemx: 4.4
+      mx: "4.4"
     - name: N
       code: 42
-      sincemx: 4.4
+      mx: "4.4"
     - name: O
       code: 43
-      sincemx: 4.4
+      mx: "4.4"
     - name: P
       code: 44
-      sincemx: 4.4
+      mx: "4.4"
     - name: Q
       code: 45
-      sincemx: 4.4
+      mx: "4.4"
     - name: R
       code: 46
-      sincemx: 4.4
+      mx: "4.4"
     - name: S
       code: 47
-      sincemx: 4.4
+      mx: "4.4"
     - name: T
       code: 48
-      sincemx: 4.4
+      mx: "4.4"
     - name: U
       code: 49
-      sincemx: 4.4
+      mx: "4.4"
     - name: V
       code: 50
-      sincemx: 4.4
+      mx: "4.4"
     - name: W
       code: 51
-      sincemx: 4.4
+      mx: "4.4"
     - name: X.
       code: 52
-      sincemx: 4.4
+      mx: "4.4"
     - name: Y
       code: 53
-      sincemx: 4.4
+      mx: "4.4"
     - name: Z
       code: 54
-      sincemx: 4.4
+      mx: "4.4"
     - name: Enter
       code: 66
-      sincemx: 4.4
+      mx: "4.4"
     - name: Tab
       code: 61
-      sincemx: 4.4
+      mx: "4.4"
     - name: Space
       code: 62
-      sincemx: 4.4
+      mx: "4.4"
     - name: Escape
       code: 111
-      sincemx: 4.4
+      mx: "4.4"
     - name: Delete
       code: 67
-      sincemx: 4.4
+      mx: "4.4"
     - name: F1
       code: 131
-      sincemx: 4.4
+      mx: "4.4"
     - name: F2
       code: 132
-      sincemx: 4.4
+      mx: "4.4"
     - name: F3
       code: 133
-      sincemx: 4.4
+      mx: "4.4"
     - name: F4
       code: 134
-      sincemx: 4.4
+      mx: "4.4"
     - name: F5
       code: 135
-      sincemx: 4.4
+      mx: "4.4"
     - name: F6
       code: 136
-      sincemx: 4.4
+      mx: "4.4"
     - name: F7
       code: 137
-      sincemx: 4.4
+      mx: "4.4"
     - name: F8
       code: 138
-      sincemx: 4.4
+      mx: "4.4"
     - name: F9
       code: 139
-      sincemx: 4.4
+      mx: "4.4"
     - name: F10
       code: 140
-      sincemx: 4.4
+      mx: "4.4"
     - name: F11
       code: 141
-      sincemx: 4.4
+      mx: "4.4"
     - name: F12
       code: 142
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 0
       code: 144
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 1
       code: 145
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 2
       code: 146
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 3
       code: 147
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 4
       code: 148""
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 5
       code: 149
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 6
       code: 150
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 7
       code: 151
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 8
       code: 152
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD 9
       code: 153
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Divide
       code: 154
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Multiply
       code: 155
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Subtract
       code: 156
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Add
       code: 157
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Period
       code: 158
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Comma
       code: 159
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Enter
       code: 160
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Equals
       code: 161
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Left Parenthesis
       code: 162
-      sincemx: 4.4
+      mx: "4.4"
     - name: NUMPAD Right Parenthesis
       code: 163
-      sincemx: 4.4
+      mx: "4.4"
     - name: DPAD Up
       code: 19
-      sincemx: 4.4
+      mx: "4.4"
     - name: DPAD Down
       code: 20
-      sincemx: 4.4
+      mx: "4.4"
     - name: DPAD Left
       code: 21
-      sincemx: 4.4
+      mx: "4.4"
     - name: DPAD Right
       code: 22
-      sincemx: 4.4
+      mx: "4.4"
     - name: DPAD Center
       code: 23
-      sincemx: 4.4
+      mx: "4.4"
     - name: Move Home
       code: 122
-      sincemx: 4.4
+      mx: "4.4"
     - name: Move End
       code: 123
-      sincemx: 4.4
+      mx: "4.4"
     - name: Page Up
       code: 92
-      sincemx: 4.4
+      mx: "4.4"
     - name: Page Down
       code: 93
-      sincemx: 4.4
+      mx: "4.4"
     - name: Insert
       code: 124
-      sincemx: 4.4
+      mx: "4.4"
     - name: Forward Delete
       code: 112
-      sincemx: 4.4
+      mx: "4.4"
     - name: Clear
       code: 28
-      sincemx: 4.4
+      mx: "4.4"
     - name: Blue
       code: 10027
-      sincemx: 4.4
+      mx: "4.4"
     - name: Orange
       code: 10028
-      sincemx: 4.4
+      mx: "4.4"
     - name: Grey
       code: 10029
-      sincemx: 4.4
+      mx: "4.4"
     - name: Alt
       code: 10030
-      sincemx: 4.4
+      mx: "4.4"
     - name: Control
       code: 10031
-      sincemx: 4.4
+      mx: "4.4"
     - name: Shift
       code: 10032
-      sincemx: 4.4
+      mx: "4.4"
     - name: Left Shift
       code: 59
-      sincemx: 4.4
+      mx: "4.4"
     - name: Right Shift
       code: 60
-      sincemx: 4.4
+      mx: "4.4"
     - name: Left Alt
       code: 57
-      sincemx: 4.4
+      mx: "4.4"
     - name: Right Alt
       code: 58
-      sincemx: 4.4
+      mx: "4.4"
     - name: Left Control
       code: 113
-      sincemx: 4.4
+      mx: "4.4"
     - name: Right Control
       code: 114
-      sincemx: 4.4
+      mx: "4.4"
     - name: Meta Left
       code: 117
-      sincemx: 4.4
+      mx: "4.4"
     - name: Meta Right
       code: 118
-      sincemx: 4.4
+      mx: "4.4"
     - name: Caps Lock
       code: 115
-      sincemx: 4.4
+      mx: "4.4"
     - name: Num Lock
       code: 143
-      sincemx: 4.4
+      mx: "4.4"
     - name: Scroll Lock
       code: 116
-      sincemx: 4.4
+      mx: "4.4"
     - name: SysRq
       code: 120
-      sincemx: 4.4
+      mx: "4.4"
     - name: Break
       code: 121
-      sincemx: 4.4
+      mx: "4.4"
     - name: Function
       code: 119
-      sincemx: 4.4
+      mx: "4.4"
     - name: Plus
       code: 81
-      sincemx: 4.4
+      mx: "4.4"
     - name: Minus
       code: 69
-      sincemx: 4.4
+      mx: "4.4"
     - name: Equals
       code: 70
-      sincemx: 4.4
+      mx: "4.4"
     - name: Left Bracket
       code: 71
-      sincemx: 4.4
+      mx: "4.4"
     - name: Right Bracket
       code: 72
-      sincemx: 4.4
+      mx: "4.4"
     - name: Grave
       code: 68
-      sincemx: 4.4
+      mx: "4.4"
     - name: Slash
       code: 76
-      sincemx: 4.4
+      mx: "4.4"
     - name: Backslash
       code: 73
-      sincemx: 4.4
+      mx: "4.4"
     - name: Semicolon
       code: 74
-      sincemx: 4.4
+      mx: "4.4"
     - name: Apostrophe
       code: 75
-      sincemx: 4.4
+      mx: "4.4"
     - name: Comma
       code: 55
-      sincemx: 4.4
+      mx: "4.4"
     - name: Period
       code: 56
-      sincemx: 4.4
+      mx: "4.4"
     - name: Star
       code: 17
-      sincemx: 4.4
+      mx: "4.4"
     - name: Pound
       code: 18
-      sincemx: 4.4
+      mx: "4.4"
     - name: At
       code: 77
-      sincemx: 4.4
+      mx: "4.4"
     - name: Back
       code: 4
-      sincemx: 4.4
+      mx: "4.4"
     - name: Forward
       code: 125
-      sincemx: 4.4
+      mx: "4.4"
     - name: Home
       code: 3
-      sincemx: 4.4
+      mx: "4.4"
     - name: Menu
       code: 82
-      sincemx: 4.4
+      mx: "4.4"
     - name: Settings
       code: 176
-      sincemx: 4.4
+      mx: "4.4"
     - name: Application Switch
       code: 187
-      sincemx: 4.4
+      mx: "4.4"
     - name: Calculator
       code: 210
-      sincemx: 4.4
+      mx: "4.4"
     - name: Explorer
       code: 64
-      sincemx: 4.4
+      mx: "4.4"
     - name: Envelope
       code: 65
-      sincemx: 4.4
+      mx: "4.4"
     - name: Bookmark
       code: 174
-      sincemx: 4.4
+      mx: "4.4"
     - name: Music
       code: 209
-      sincemx: 4.4
+      mx: "4.4"
     - name: Call
       code: 5
-      sincemx: 4.4
+      mx: "4.4"
     - name: End Call
       code: 6
-      sincemx: 4.4
+      mx: "4.4"
     - name: Microphone Mute
       code: 91
-      sincemx: 4.4
+      mx: "4.4"
     - name: Camera
       code: 27
-      sincemx: 4.4
+      mx: "4.4"
     - name: Search
       code: 84
-      sincemx: 4.4
+      mx: "4.4"
     - name: Contacts
       code: 207
-      sincemx: 4.4
+      mx: "4.4"
     - name: Calendar
       code: 208
-      sincemx: 4.4
+      mx: "4.4"
     - name: Volume Up
       code: 24
-      sincemx: 4.4
+      mx: "4.4"
     - name: Volume Down
       code: 25
-      sincemx: 4.4
+      mx: "4.4"
     - name: Volume Mute
       code: 164
-      sincemx: 4.4
+      mx: "4.4"
     - name: Brightness Up
       code: 221
-      sincemx: 4.4
+      mx: "4.4"
     - name: Brightness Down
       code: 220
-      sincemx: 4.4
+      mx: "4.4"
     - name: Power
       code: 26
-      sincemx: 4.4
+      mx: "4.4"
     - name: Sleep
       code: 223
-      sincemx: 4.4
+      mx: "4.4"
     - name: Wakeup
       code: 224
-      sincemx: 4.4
+      mx: "4.4"
     - name: Headset
       code: 79
-      sincemx: 4.4
+      mx: "4.4"
     - name: Push-to-talk
       code: 228
-      sincemx: 4.4
+      mx: "4.4"
     - name: Camera Focus
       code: 80
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Play/Pause
       code: 85
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Stop
       code: 86
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Next
       code: 87
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Previous
       code: 88
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Rewind
       code: 89
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Fast-Forward
       code: 90
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Play
       code: 126
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Pause
       code: 127
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Close
       code: 128
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Eject
       code: 129
-      sincemx: 4.4
+      mx: "4.4"
     - name: Media Record
       code: 130
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button L1
       code: 102
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button R1
       code: 103
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button L2"
       code: 104
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button R2
       code: 105
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button A
       code: 96
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button B
       code: 97
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button C
       code: 98
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button X
       code: 99
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button Y
       code: 100
-      sincemx: 4.4
+      mx: "4.4"
     - name: Button Z
       code: 101
-      sincemx: 4.4
+      mx: "4.4"
     - name: Left Thumb Button
       code: 106
-      sincemx: 4.4
+      mx: "4.4"
     - name: Right Thumb Button
       code: 107
-      sincemx: 4.4
+      mx: "4.4"
     - name: Start Button
       code: 108
-      sincemx: 4.4
+      mx: "4.4"
     - name: Select Button
       code: 109
-      sincemx: 4.4
+      mx: "4.4"
     - name: Mode Button
       code: 110
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 1
       code: 188
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 2
       code: 189
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 3
       code: 190
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 4
       code: 191
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 5
       code: 192
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 6
       code: 193
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 7
       code: 194
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 8
       code: 195
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 9
       code: 196
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 10
       code: 197
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 11
       code: 198
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 12
       code: 199
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 13
       code: 200
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 14
       code: 201
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 15
       code: 202
-      sincemx: 4.4
+      mx: "4.4"
     - name: Gamepad Button 16
       code: 203
-      sincemx: 4.4
+      mx: "4.4"
     - name: Zenkaku/Hankaku
       code: 211
-      sincemx: 4.4
+      mx: "4.4"
     - name: Eisu
       code: 212
-      sincemx: 4.4
+      mx: "4.4"
     - name: Muhenkan
       code: 213
-      sincemx: 4.4
+      mx: "4.4"
     - name: Henkan
       code: 214
-      sincemx: 4.4
+      mx: "4.4"
     - name: Katakana/Hiragana
       code: 215
-      sincemx: 4.4
+      mx: "4.4"
     - name: Yen
       code: 216
-      sincemx: 4.4
+      mx: "4.4"
     - name: Ro
       code: 217
-      sincemx: 4.4
+      mx: "4.4"
     - name: Kana
       code: 218
-      sincemx: 4.4
+      mx: "4.4"
 ---
 
 These parms allow you to specify which Key Code will be sent as the Key Behavior for the specified Key in various Key State Mapping Tables. All of these parms use the same values shown in the table of values provided for the Base Key State Mapping Table.

@@ -3,6 +3,8 @@ csp: intent
 title: Class Name
 type: parm
 order: 8
+mx: "4.1"
+apilevel: "1"
 parm:
   presentif: The Action is "StartActivity" or "StartService"
   pivotal: No

@@ -3,7 +3,9 @@ csp: browsermgr
 title: Set Default Home Page
 type: parm
 order: 2
-sincemx: 4.3
+mx: "4.3"
+osx-specific: "1.3.4-56 through 3.x"
+osx-exclude: "4.0"
 parm:
   pivotal: No
   name: SetDefaultHomepage

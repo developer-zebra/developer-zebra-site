@@ -3,7 +3,7 @@ csp: filemgr
 title: Archive Source URI
 type: parm
 order: 14
-sincemx: 5.0
+mx: "5.0"
 parm:
   presentif: File Action is Download and Expand Archive
   pivotal: No

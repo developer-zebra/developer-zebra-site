@@ -3,112 +3,139 @@ csp: uimgr
 title: Set Current Locale
 type: parm
 order: 7
-sincemx: 4.3
+mx: "4.3"
+osx: "1.3.4-56"
 parm:
   pivotal: No
   name: CurrentLocale
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       name: Do not change
     - code: en_CA
       name: CANADA 
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
     - code: fr_CA
       name: CANADA_FRENCH
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
     - name: CHINA
       code: zh_CN 
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Chinese spoken in China
     - name: CHINESE
       code: zh
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Chinese (non-region specific)
     - name: ENGLISH
       code: en
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: English (non-region specific)
     - name: FRANCE
       code: fr_FR
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: French spoken in France
     - name: FRENCH
       code: fr
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: French (non-region specific)
     - name: GERMAN
       code: de
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: German (non-region specific)
     - name: GERMANY
       code: de_DE
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: German spoken in Germany
     - name: ITALIAN
       code: it
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Italian (non-region specific)
     - name: ITALY
       code: it_IT
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Italian spoken in Italy
     - name: JAPAN
       code: ja_JP
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Japanese spoken in Japan
     - name: JAPANESE
       code: ja
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Japanese (non-region specific)
     - name: KOREA
       code: ko_KR
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Korean spoken in Korea
     - name: KOREAN
       code: ko
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Korean (non-region specific)
     - name: PRC
       code: zh_CN
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Alternate Chinese spoken in China
     - name: SIMPLIFIED_CHINESE
       code: zh_CN
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Alternate Chinese spoken in China
     - name: TAIWAN
       code: zh_TW
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Chinese spoken in Taiwan
     - name: TRADITIONAL_CHINESE
       code: zh_TW
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: Alternate Chinese spoken in Taiwan
     - name: UK
       code: en_GB
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: English spoken in Great Britain/United Kingdom
     - name: US
       code: en_US
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3.4-56"
       description: English spoken in the United States of America (USA)
     - name: SPANISH
       code: es_ES
-      sincemx: 5.0
+      mx: "5.0"
+      osx: "1.3.4-56"
       description: Spanish spoken in Spain
     - name: US SPANISH
       code: es_US
-      sincemx: 5.0
+      mx: "5.0"
+      osx: "1.3.4-56"
       description: Spanish spoken in the United States of America (USA)
     - name: BRAZILIAN PORTUGESE
       code: pt_BR
-      sincemx: 5.0
+      mx: "5.0"
+      osx: "1.3.4-56"
       description: Portugese spoken in Brazil
     - name: PORTUGESE
       code: pt_PT
-      sincemx: 5.0
+      mx: "5.0"
+      osx: "1.3.4-56"
       description: Portugese spoken in Portugal
 ---
 

@@ -3,19 +3,19 @@ csp: keymapmgr
 title:  Add key event
 type: parm
 order: 14
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
   pivotal: Yes
   type: list
   list:
     - code: 0
-      sincemx: 4.4
+      mx: "4.4"
       name: True
       description: This value causes Key Event that occurred when the Key was pressed or released to be attached to the Intent. This would generally be valuable only when an application was written specifically to receive such an Intent since it would require the application to understand and interpret the data format used to encode a Key Event.
     - code: 2
       name: False
-      sincemx: 4.4
+      mx: "4.4"
       description: This value causes Key Event that occurred when the Key was pressed or released to not be attached to the Intent.
 ---
 

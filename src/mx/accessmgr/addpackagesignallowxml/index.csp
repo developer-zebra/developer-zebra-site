@@ -8,7 +8,9 @@ parm:
   pivotal: Yes
   name: AddPackageSignAllowXML
   type: string
-sincemx: 4.3
+mx: "4.3"
+osx: "3.4"
+
 ---
 
 Provide the Signatures that should be added to the "white" list. 

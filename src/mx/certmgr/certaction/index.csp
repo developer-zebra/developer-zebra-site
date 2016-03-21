@@ -3,7 +3,8 @@ csp: certmgr
 title: Certificate Action
 type: parm
 order: 2
-sincemx: 4.2
+mx: "4.1"
+osx: "1.0"
 parm:
   pivotal: Yes
   name: CertAction
@@ -11,15 +12,18 @@ parm:
   list:
     - code: 1
       name: Install certificate
-      sincemx: 4.2
+      mx: "4.1"
+      osx: "1.0"
       description: This value will cause a specified certificate to be installed on the device.
     - code: 2
       name: Uninstall certificate
-      sincemx: 4.2
+      mx: "4.1"
+      osx: "1.0"
       description: This value will cause a specified certificate to be uninstalled from the device.
     - code: 3
       name: Initialize Android Keystore
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "1.0"
       description: <p>This value will cause a new Android Keystore to be initialized.</p><b>Note:</b> Initializing the Android Keystore can only be done once. If an attempt is made to Initialize the Android Keystore when it has previously been initialized, via the CertMgr or by the device user via the System Settings Menu, then an error will be returned in the Result XML. No method is currently provided, aside from an Enterprise Reset (which can be performed using the PowerMgr) to return the Android Keystore to an uninitialized state or to re-initialize the Android Keystore.</p>
 ---
 

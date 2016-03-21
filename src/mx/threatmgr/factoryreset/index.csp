@@ -3,7 +3,8 @@ csp: threatmgr
 title: Factory Reset Countermeasure
 type: parm
 order: 6
-sincemx: 4.3
+mx: "4.3"
+osx: "3.5"
 parm:
   presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected.
   pivotal: No
@@ -11,12 +12,14 @@ parm:
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       name: Do not perform
       description: This countermeasure will not be executed.
     - code: 1
       name: Perform
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: This countermeasure will be executed upon threat detection.
 ---
 

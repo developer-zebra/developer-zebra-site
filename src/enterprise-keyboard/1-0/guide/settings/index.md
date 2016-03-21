@@ -5,17 +5,9 @@ layout: guide.html
 
 ## Overview
 
-Enterprise Keyboard is designed to provide Zebra customers and partners with the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds industry-specific dictionaries, programmable keys, quick switching between languages and the ability to scan and collect scanned data directly into an application. 
+Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks.  
 
-
-numerical
-language
-medical
-industrial
-custom 
-
-specialized terms
-
+Enterprise Keyboard also can use of Android's Personal dictionary for spelling suggestions and corrections, letting it store industry-specific terms to help improve speed and accuracy of keyboard input. Saved terms can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
 
 ## Customizing Keyboard Settings
 
@@ -33,7 +25,7 @@ Enterprise Keyboard Settings are accessed through the Android Settings panel:
 <img alt="" style="height:350px" src="ekb_settings_button.png"/>
 <br>
 
-&#53;. <b>Tap the setting(s) to change</b>:
+&#53;. <b>Tap the setting(s) to be changed</b>:
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
 
 ------
@@ -50,7 +42,7 @@ To switch from the system-selected language to a language pack provided with Ent
 This version of Enterprise Keyboard includes Dutch, English (US and UK), French, Italian, German, Spanish and Russian. 
 <br>
 
-&#50;. <b>Uncheck Use system language</b>. 
+&#50;. <b>Uncheck Use system language</b>: 
 <img alt="" style="height:350px" src="pref_language.png"/>
 <br>
 
@@ -69,61 +61,93 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ### Preferences
 The Preferences section controls keypress feedback and other productivity aids. 
 
-<img alt="" style="height:350px" src="pref_preferences.png"/>
-Set preferences as desired. 
+<img alt="" style="height:350px" src="pref_scan.png"/>
 <br>
 
-<b>Auto-capitalization</b> automatically capitalizes the first word of each sentence following a period. 
+##### Set preferences as desired: 
 
-<b>Double-space period</b> automatically inserts a period and space when double-tapping the spacebar. 
+* <b>Auto-capitalization</b> automatically capitalizes the first word of each sentence following a period. 
 
-<b>Vibration on keypress</b> sets the device to vibrate when a key is pressed. Duration is configurable in the [Advanced settings](#advanced) section. 
+* <b>Double-space period</b> automatically inserts a period and space when double-tapping the spacebar. 
 
-<b>Sound on keypress</b> plays a sound when a key is pressed. Volume is configurable in the [Advanced settings](#advanced) section.
+* <b>Vibration on keypress</b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
 
-<b>Popup on keypress</b> displays a pop-up of the key being pressed. A delay can be added in the [Advanced settings](#advanced) section.
+* <b>Sound on keypress</b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
+
+* <b>Popup on keypress</b> displays a pop-up of the key being pressed. A delay can be added in [Advanced settings](#advanced).
+
+* <b>Show scan tab</b> displays a tab for switching to the scanner for collecting barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
 ------
 
 ### Text Correction
-This is where it gets interesting. 
-
-Text Correction controls
-
-<img alt="" style="height:350px" src="pref_text_1.png"/>
+Text Correction controls automatic corrections to typed text based the predefined parameters explained below. In addition, the Personal dictionary feature allows a list of custom or industry-specific terms to be stored and presented as spelling suggestions along with those of the selected language(s).
 
 <img alt="" style="height:350px" src="pref_text_2.png"/>
+<br>
 
-Use this format to define these: 
+##### Set preferences as desired: 
 
-<b>Block offensive words</b> automatically capitalizes the first word of each sentence following a period. 
+<b>Block offensive words</b> prevents display of spelling suggestions that might be deemed offensive or insensitive as determined by external standards of decency.
 
-<b>Auto-correction</b> USES THE SHORTCUTS YOU CREATED? (what is meant by "spacebar and punctuation automatically correct mistyped words")
+<b>Auto-correction</b> automatically replaces misspelled words with those found in the Add-on and Personal dictionaries (see below). Replacements are executed by pressing the spacebar. 
 
-<b>Show correction suggestions</b> displays suggested words while typing (like google does?). 
+<b>Show correction suggestions</b> displays suggested words while typing but does not replace them when the spacebar is pressed unless Auto-correction is also enabled.
 
+<b>Personalized suggestions</b> learns from communications and typed data to improve suggestions.
 
-<b>Personalized suggestions</b> TAKES YOUR SHORTCUTS? or learns or populates over time? 
+<b>Suggest Contact names</b> automatically displays contacts from the contact list when typing names. 
 
-<b>Suggest Contact names</b> automatically gets your contacts into the act. 
+<b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next.
 
-<b>Next-word suggestions</b> looks at the previous word and take a guess at what might come next. 
+#### Personal dictionary
+The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of input from the keyboard. For example, if configured for a medical device, typing 'met' might present the word 'metastasize' and similar medical terms that begin with the same letters. 
 
-Personal dictionary
+<img alt="" style="height:350px" src="pref_text_1.png"/>
+<br>
+
+<b>Notes</b>:
+
+* Terms must be added to the Personal dictionary one at a time. 
+* There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
+* Longer terms and phrases may be truncated and appended with an ellipsis (...) when displayed. 
+* Once populated, a Personal dictionary may be mass-deployed using Zebra's [StageNow](/stagenow/2-2/about/) tool. 
+
+To add a term to the Personal dictionary: 
+
+&#49;. <b>Tap Personal dictionary</b> in the Text correction Preference panel: 
+<img alt="" style="height:350px" src="personal_dic.png"/>
+<br>
+
+&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select 'For all languages' to display Personal dictionary terms with every language pack:  
 <img alt="" style="height:350px" src="pref_dic.png"/>
 <br>
 
-Add words to the person dictionary. Words must be added one at a time. 
+&#51;. <b>Tap the plus sign (+)</b> to define a new word or phrase: 
 <img alt="" style="height:350px" src="pref_dic_add.png"/>
 <br>
 
-Enter word (or phrase?) 
-
-An optional shortcut can be entered that will substitute for the word when typed. For example, "sw" can be the shortcut for "software." 
-<img alt="" style="height:350px" src="pref_dic_add_word.png"/>
+&#51;. <b>Enter the word or phrase</b> (and shortcut, if desired), then <b>tap the gear icon to save</b>. 
+<img alt="" style="height:350px" src="enter_term.png"/>
+<b>Note</b>: When a shortcut is typed as input, its associated term will appear in a list of spelling corrections.
 <br>
 
-Are these the language packs? (looks like the same list as the supported languages)
+&#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed (see below). 
+<br>
+
+&#53;. To edit or delete a term, <b>tap the term</b> in the terms list:
+<img alt="" style="height:350px" src="term_list.png"/>
+<br>
+
+&#54;. <b>Edit the term</b> or tap the trashcan icon to delete: 
+<img alt="" style="height:350px" src="enter_term.png"/>
+<br>
+
+#### Add-on dictionaries
+Add-on dictionaries by default contain a full set predefined word corrections and suggested words for each language installed on the device. As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time. Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. 
+
+From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting individual entries. No further actions are permitted. 
+
 <img alt="" style="height:350px" src="pref_dic_addon_1.png"/>
 
 <img alt="" style="height:350px" src="pref_dic_addon_2.png"/>
@@ -133,8 +157,10 @@ Are these the language packs? (looks like the same list as the supported languag
 ------
 
 ### Advanced 
-The Advanced panel controls the duration of keypress feedback if that feedback is enabled in the Preferences panel. The image below shows sound feedback disabled (by default):  
+The Advanced panel allows the setting of keypress feedback parameters for feedback types that are enabled in the Preferences panel. The image below shows sound feedback disabled (by default):  
 <img alt="" style="height:350px" src="pref_advanced.png"/>
+<br>
+
 Tap on a setting to bring up a panel for adjusting that setting: 
 
 <b>Key Popup dismiss delay</b> controls whether to delay when dismissing the key popup. 
@@ -172,119 +198,26 @@ To remap a key, bring up the Remapping panel and <b>tap on the key to be remappe
 
 ------
 
-Refer to the OTHER PARTS ODF THIS GUIDE 
+## DataWedge
+The scan tab in Enterprise Keyboard uses scanning services provided by Zebra's DataWedge app, which is included on every Zebra device. <b>DataWedge must therefore be enabled on the device for the Scan tab to be operational</b>. 
 
-[Advanced Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
-
-
-5. Enterprise Keyboard main icon created and added to the project.
-
-3. Showing the Scan tab is now a configurable option in the CSP.
-
-7. Added Swipe left/right to navigate between keyboard layouts.
-
-8. Established Zebra color scheme as well as fine tuning various keyboard layouts (visual and keys presented).
-
-9. Added Keyboard metrics for usage statistics via the Zebra Analytics engine (USER ACCESSIBLE?).
-
-10. Addressed issues with the use of the Personal dictionary and short-cuts.
-
-11. Scanning layout programmatically hidden/visible based on version of DCP (Data Capture Plus) installed for compatibility support.
-
-12. Missing keyboard preferences available via the settings UI have been added to the CSP for completeness.
-
-15. Words added to the personal dictionary with a defined shortcut now appear in the suggestions bar when the shortcut is typed.
-
-24. Key remapping available on four keys in the numeric keyboard layout.
-16. The remappable keys available in the numeric layout now set to the following defaults; P1= “/”, P2=”:”, P3=”#”, P4=”$”
-
-17. Custom dictionary mass deployable. Not available for Voalte initial release (5-Feb-16)
-
-19. Gesture parameters removed from keyboard settings as gesturing is not supported.
-
-20. “Prototype” watermark included on QWERTY spacebar to indicate keyboard is not intended for production use.
-
-22. Proper layout presented based on input field type.
-
-23. Barcode scanning layout (tab) added. Not available for Voalte initial release (5-Feb-16)
-
-25. “Flick” feature added to select alternate character on keyboard.
-
-26. Long press behavior reestablished to be consistent with Google keyboard.
-
-27. Mass deployable keyboard settings feature added. Not available for Voalte initial release (5-Feb-16)
-
-Dictionary words are displayed when associated shortcut word is typed.
-
-Key layouts
-QWERTY
-Numeric
-Symbol
-Phone
-Emoji
-Scan
-
-Accessing alternate keys
-Press
-Shift-press
-Long-press
-Flick
+Locate and <b>tap the DataWedge icon</b> on the device. 
+<img alt="" style="height:350px" src="scan_tab.png"/>
+<br>
 
 
-Languages available today
-English
-UK-English
-French
-German
-Italian
-Spanish
-Dutch
-Russian
-Selectable via long press on spacebar (language or keyboard?)
-Toggle between multi-languages “world” button
+To enable DataWedge on a device (or confirm that it's enabled): 
 
+&#49;. Locate and <b>tap the DataWedge icon</b> on the device. 
+<img alt="" style="height:350px" src="datawedge_home_screen.png"/>
+<br>
 
-Key-press feedback
-Haptic on keypress (system setting)
-Sound on keypress (system setting)
-Visual color change on selected key
-Key preview above selected key
+&#50;. Tap the DataWedge menu (arrow), then <b>Tap Settings</b>. 
+<img alt="" style="height:350px" src="datawedge_settings.png"/>
+<br>
 
-Correction
-Auto-capitalization enable/disable
-Show correction suggestions –enable/disable
-Personalized suggestions (learned) – enable/disable
-Next word suggestion – enable/disable
-Personal dictionary – add/delete words
+&#51;. Confirm that <b>DataWedge enabled</b> box is checked. 
+<img alt="" style="height:350px" src="datawedge_enabled.png"/>
+<br>
 
-
-
-
-
-Unique to Zebra: 
-Scan key
-
-Layout switching
-Integrated tab for layout switching
-Swipe left-right for layout switching
-Preservation of shift-lock when switching layouts
-Automatic based on field type
-
-Provisioning: 
-General preferences and settings via CSP
-Personal dictionary add/delete words via CSP
-
-Input methods
-Touch
-Flick
-Voice (GMS-enabled devices only)
-Scanner
-
-
-<b>Note</b>: Following installation, the default keyboard selector can be invoked directly by long-pressing the spacebar from the Android or Zebra keyboards.
-<img alt="" style="height:350px" src="choose_input.png"/>
-
-
-
-Known Limitations
-Shift lock inadvertently locks after performing a shift lock, typing one letter, switching to another layout to enter some characters; returning to the QWERTY layout and engaging the Shift lock again.  With the intent of typing only a single capitalized letter the Shift lock remains engaged.
+For more information, please refer to [Enterprise Keyboard Setup](../setup).

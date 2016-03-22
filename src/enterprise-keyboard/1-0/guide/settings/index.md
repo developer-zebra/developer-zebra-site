@@ -5,9 +5,9 @@ layout: guide.html
 
 ## Overview
 
-Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks.  
+Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing shift-key characters and swiping to switch key layouts. 
 
-Enterprise Keyboard also can use of Android's Personal dictionary for spelling suggestions and corrections, letting it store industry-specific terms to help improve speed and accuracy of keyboard input. Saved terms can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard adds to Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Saved terms can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
 
 ## Customizing Keyboard Settings
 
@@ -39,8 +39,16 @@ To switch from the system-selected language to a language pack provided with Ent
 
 &#49;. <b>Tap on Languages</b> in the Enterprise Keyboard Preferences panel: 
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-This version of Enterprise Keyboard includes Dutch, English (US and UK), French, Italian, German, Spanish and Russian. 
-<br>
+This version of Enterprise Keyboard includes the following languages: 
+
+* Dutch
+* English (UK)
+* English (US) 
+* French
+* Italian
+* German
+* Spanish
+* Russian
 
 &#50;. <b>Uncheck Use system language</b>: 
 <img alt="" style="height:350px" src="pref_language.png"/>
@@ -59,7 +67,7 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ------
 
 ### Preferences
-The Preferences section controls keypress feedback and other productivity aids. 
+The Preferences section controls keypress feedback and other aids to productivity. Default settings are shown here:  
 
 <img alt="" style="height:350px" src="pref_scan.png"/>
 <br>
@@ -110,7 +118,8 @@ The Personal dictionary can be used to store terms specific to a particular indu
 
 * Terms must be added to the Personal dictionary one at a time. 
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
-* Longer terms and phrases may be truncated and appended with an ellipsis (...) when displayed. 
+* Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
+* Spelling suggestions do not appear with all field types.  
 * Once populated, a Personal dictionary may be mass-deployed using Zebra's [StageNow](/stagenow/2-2/about/) tool. 
 
 To add a term to the Personal dictionary: 
@@ -129,17 +138,22 @@ To add a term to the Personal dictionary:
 
 &#51;. <b>Enter the word or phrase</b> (and shortcut, if desired), then <b>tap the gear icon to save</b>. 
 <img alt="" style="height:350px" src="enter_term.png"/>
-<b>Note</b>: When a shortcut is typed as input, its associated term will appear in a list of spelling corrections.
+<br>
+
+When a shortcut is typed as input, its associated term will appear in a list of spelling corrections: 
+<img alt="" style="height:350px" src="autocorrected_mz.png"/>
 <br>
 
 &#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed (see below). 
 <br>
 
-&#53;. To edit or delete a term, <b>tap the term</b> in the terms list:
+To edit or delete a term: 
+
+&#49;. <b>tap the term</b> in the terms list:
 <img alt="" style="height:350px" src="term_list.png"/>
 <br>
 
-&#54;. <b>Edit the term</b> or tap the trashcan icon to delete: 
+&#50;. <b>Edit the term</b> or tap the trashcan icon to delete: 
 <img alt="" style="height:350px" src="enter_term.png"/>
 <br>
 
@@ -182,19 +196,29 @@ Tap on a setting to bring up a panel for adjusting that setting:
 ------
 
 ### Remapping Keys
-Enterprise Keyboard designates five keys as user-programmable. These are in addition to the 16 programmable Function keys invoked by the Function key sub-tab in the Numerical keypad. 
+Enterprise Keyboard designates five keys as user-programmable: one in the alpha-key layout and four in the numerical layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the Alpha P1 key mapped to display the EMOJI panel. 
 
-The remapping panel shows the current character and Unicode mappings for each key. The image below shows default settings, including the Alpha P1 key mapped to display the EMOJI panel. 
+One key can be remapped in the alpha-key layout: 
+<img alt="" style="height:150px" src="keyboard_alone.png"/>
 
+Four keys can be remapped in the numerical layout: 
+<img alt="" style="height:150px" src="keyboard_numerical.png"/>
+
+Remapping panel shows current settings of remappable keys: 
 <img alt="" style="height:350px" src="pref_remap.png"/>
+<br>
 
-To remap a key, bring up the Remapping panel and <b>tap on the key to be remapped</b>:
+To remap a key: 
+
+&#49;. Bring up the Remapping panel and <b>tap on the key to be remapped</b>:
 <img alt="" style="height:350px" src="remap.png"/>
 <br>
 
-<b>Specify a Unicode value or alternative character</b> to associate with that key and tap OK. 
+&#50;. <b>Specify a Unicode value or alternative character</b> to associate with that key:  
 <img alt="" style="height:350px" src="remap_keypad.png"/>
 <br>
+
+&#51;. <b>Tap OK</b> to store the setting. Changes take effect immediately. 
 
 ------
 

@@ -4,7 +4,7 @@ layout: guide.html
 ---
 
 ## Overview
-The Zebra Enterprise Keyboard is delivered as part of the operating system on new Zebra Android Lollipop devices or installed as an OS patch on older KitKat devices. To make it available to users, it must be activated and optionally can be set as the default input method, if desired. This guide covers activation of Enterprise Keyboard and the steps for setting it as the default input device. 
+The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on KitKat devices. To make it available to users, it must be activated and optionally can be set as the default input method, if desired. This guide covers activation of Enterprise Keyboard and the steps for setting it as the default input device. 
 
 Activation and configuration can be done in one of three ways: 
 
@@ -14,10 +14,10 @@ Activation and configuration can be done in one of three ways:
     * Using [StageNow](/stagenow/2-2/about/) and the [UI Manager](/mx/uimgr/) service 
     * Through a company's own mobile device management (MDM) system (if supported by that system) 
 
-## Manual Configuration
-The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Installation section](#automatedinstallation) later in this guide. 
+## Manual Activation
+The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Activation section](#automatedactivation) later in this guide. 
 
-To enable Enterprise Keyboard on a device: 
+To activate Enterprise Keyboard on a device: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
@@ -41,7 +41,9 @@ To enable Enterprise Keyboard on a device:
 
 &#54;. <B>Tap the HOME key</b> to exit the Settings panel.  
 
-Enterprise Keyboard setup is now complete. 
+Enterprise Keyboard is now ready to use with default settings. 
+
+------
 
 ### Change Settings
 Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
@@ -64,6 +66,8 @@ To change Enterprise Keyboard settings:
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
 Refer to the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
 
+------
+
 ### Automated Activation
 Enterprise Keyboard can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 
 
@@ -75,11 +79,16 @@ Actions to be executed on the Android Settings panel:
 
 Please refer to the respective tool of choice for more information. 
 
+------
+
 ## Deactivation
-<b>Warning: This action will make Enterprise Keyboard inaccessible, including and all associated features data and custom dictionaries</b>. 
+Enterprise Keyboard cannot be removed if it was included with the device operating system. However, it can be deactivated by reversing the activation process described in the Activation section. To deactivate Enterprise Keyboard, follow the steps below for using the Android Settings panel. 
+
+<b>Warning: This action renders Enterprise Keyboard inaccessible, including its scanning and other capabilities</b>. 
 
 ### Manual Deactivation
-If Enterprise Keyboard was included with the device operating system, it cannot be removed, but it can be deactivated. To deactivate Enterprise Keyboard, simply use the Android Settings panel to reverse the activation process above: 
+
+To deactivate Enterprise Keyboard: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>

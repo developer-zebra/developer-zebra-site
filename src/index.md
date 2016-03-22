@@ -91,8 +91,6 @@ products:
     sections:
       - title: About
         url: /enterprise-keyboard/1-0/guide/about
-      - title: Getting Started
-        url: /enterprise-keyboard/1-0/guide/gettingstarted
       - title: Setup
         url: /enterprise-keyboard/1-0/guide/setup
       - title: Customize

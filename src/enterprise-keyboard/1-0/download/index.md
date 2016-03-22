@@ -5,6 +5,8 @@ layout: guide.html
 
 ## Download Enterprise Keyboard
 
-Enterprise Keyboard is included with as part of the operating system of Zebra Android devices. It is not yet available as a separate download. 
+Enterprise Keyboard will be included with Zebra Lollipop devices beginning in Q2 2016. 
 
-For devices already in deployment, Enterprise Keyboard might be available in the form of an OS patch. Please contact your Zebra rep for more information. 
+It will be available as an OS patch for KitKat devices at a later date. 
+
+Please contact your Zebra rep for more information. 

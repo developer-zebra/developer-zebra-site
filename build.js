@@ -171,7 +171,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 });
 
 var sitebuild = Metalsmith(__dirname)
-    .clean(true)
+    .clean(false)
     .concurrency(1000)
 	.metadata({
 	    site: {

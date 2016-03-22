@@ -14,8 +14,6 @@ automenu:
           url: /emdk-for-android/4-0/mx/overview
         - title: Choosing a Version
           url: /emdk-for-android/4-0/mx/choosing-a-version
-        - title: Feature Version Matrix
-          url: /emdk-for-android/4-0/mx/feature-version-matrix
         - title: Feature Compatibility
           url: /emdk-for-android/4-0/mx/compatibility
         - title: Getting Device MX Version

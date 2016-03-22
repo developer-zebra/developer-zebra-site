@@ -1,6 +1,9 @@
 ---
 title: Diagnostic
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -42,6 +45,14 @@ com.symbol.emdk.personalshopper.DiagnosticData - DiagnosticData : Manufacturing 
 **Throws:**
 
 com.symbol.emdk.personalshopper.DiagnosticException
+
+
+
+
+
+
+
+
 
 
 

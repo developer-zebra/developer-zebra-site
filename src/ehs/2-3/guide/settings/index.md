@@ -1,6 +1,8 @@
 ---
 title: EHS Advanced Settings
 layout: guide.html
+product: Enteprise Home Screen
+productversion: '2.3'
 ---
 
 ## Overview
@@ -173,7 +175,7 @@ This section describes all tags in the `enterprisehomescreen.xml` file and their
 
 ### Kiosk
 
-Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys are disabled to prevent exiting. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag in the &lt;Preferences&gt; section. 
+Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys cannot be used to exit the app. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag in the &lt;Preferences&gt; section. 
 
 <img alt="" style="height:250px" src="kiosk.png"/>
 
@@ -181,7 +183,7 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
 
 * Label: string 
 * Package: app package name 
-* Activity (optional): package name of app feature to be invoked when the app starts
+* Activity (optional): name of the activity to be invoked when the app starts
 
 ##### Example
 
@@ -202,7 +204,7 @@ When specifying links, the package and activity parameters can be used to launch
 
 * Label: string
 * Package: app package name 
-* Activity (optional): package name of the activity to be invoked when the app starts
+* Activity (optional): name of the activity to be invoked when the app starts
 
 #### Example (app)
 
@@ -235,7 +237,7 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 <b>Possible values</b>
 * Label: string
 * Package: app package name 
-* Activity (optional): package name of the activity to be invoked when the app starts
+* Activity (optional): name of the activity to be invoked when the app starts
 
 #### Example
 
@@ -348,7 +350,7 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 ------
 
 #### Auto Launch Enable
-Enables one or more apps to be automatically launched after EHS starts up. Works with optional &lt;auto_launch&gt; section. When enabled, apps specified in the &lt;auto_launch&gt; section are launched after a specified delay. <b>BACK and HOME keys remain enabled</b>. Refer to [Optional Feature Tags section](#optionalfeaturetags) for more information. Disabled by default. See also: [Kiosk Mode](#kiosk). 
+Enables one or more apps to be automatically launched after EHS starts up. Works with optional &lt;auto_launch&gt; section. When enabled, apps specified in the &lt;auto_launch&gt; section are launched after a specified delay. <b>BACK and HOME keys can be used to exit the app</b>. Refer to [Optional Feature Tags section](#optionalfeaturetags) for more information. Disabled by default. See also: [Kiosk Mode](#kiosk). 
 
 <img alt="" style="height:250px" src="autolaunch.png"/>
 
@@ -452,6 +454,8 @@ Controls whether the Android Status Bar can be pulled down to reveal controls an
 
 #### Install Shortcuts
 Controls whether shortcuts may be added to local or remote apps through Android Intents. Disabled by default. 
+
+<img alt="" style="height:250px" src="install_shortcuts.png"/>
 
 <b>Possible values</b>
 
@@ -565,7 +569,7 @@ Controls whether the Search app will be accessible from the Keyguard screen (als
 ------
 
 #### USB Debugging Disabled
-Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the device file system. This setting has no bearing on Admin Mode, in which USB communication is always enabled. 
+Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. 
 
 <img alt="" style="height:250px" src="usb_debug_disable.png"/>
 
@@ -581,7 +585,7 @@ Controls whether communication via USB is permitted between the device and a com
 ------
 
 #### System Settings Restricted
-Controls whether full or limited settings are available when the device when in User Mode. A setting of 1 (default) or if left unspecified will restrict user access to device settings. <b>A setting of 0 will permit user access to all device settings</b>.
+Controls whether full or limited settings are available when the device is in User Mode. A setting of 1 (default) or if left unspecified will restrict user access to device settings. <b>A setting of 0 will permit user access to all device settings</b>.
 
 <img alt="" style="height:250px" src="settings_restrict.png"/>
 
@@ -604,14 +608,14 @@ This section covers optional features and tags not otherwise included in the def
 #### Auto Launch
 This feature permits any number of apps to be launched when EHS starts up. Similar to [Kiosk Mode](#kiosk), auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. <b>Note</b>: Package names may vary from one Android version to another. 
 
-Auto-launch differs from Kiosk Mode in that it does not disable BACK and HOME keys and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
+Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
 
 <img alt="" style="height:250px" src="autolaunch.png"/>
 
 <b>Possible values</b>
 * Application delay: integer (milliseconds)
 * Package: app package name 
-* Activity (optional): package name of the activity to be invoked when the app starts
+* Activity (optional): name of the activity to be invoked when the app starts
 
 #### Example
 
@@ -658,7 +662,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 ------
 
 #### Admin Max Attempts
-The number of failed attempts to log into Admin Mode before EHS enters [Lockdown State](../features#lockdownstate). If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog). 
+The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog). The counter is cleared after a successful login. 
 
 <img alt="" style="height:250px" src="max_logins.png"/>
 
@@ -689,9 +693,12 @@ Controls the time (in seconds) that a device will remain in Admin Mode without a
 
 <b>Possible values</b>
 
-* <b>60 (seconds; default if tag is left blank or is not present)</b>
-* 0 or negative value (disables timeout)
-* 15 (minimum, lower values are ignored)
+* integer (in seconds) 
+
+Notes: 
+* 15 is the minimum value; lower values are ignored
+* <b>60 seconds is the default if tag is left blank or is not present</b>
+* 0 or negative value will disable the timeout function
 
 #### Example
 
@@ -739,4 +746,12 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ------
 
 Refer to the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: About EMDK For Android Help
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Overview
@@ -76,3 +79,11 @@ When clicking on a link that is an external website, the url will be opened in a
 * Firefox 29 or newer
 * Google Chrome 35 or newer 
 * Internet Explore 9 or newer
+
+
+
+
+
+
+
+

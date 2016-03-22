@@ -1,6 +1,9 @@
 ---
 title: CradleLedFlashInfo
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -57,4 +60,12 @@ Enable or disable the smooth effect of the LED blinking
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 

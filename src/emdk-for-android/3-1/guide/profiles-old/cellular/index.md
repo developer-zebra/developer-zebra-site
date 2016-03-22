@@ -1,5 +1,8 @@
 ---
-title:  Cellular Manager Profile Feature Reference
+title: Cellular Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -24,3 +27,11 @@ This feature will allow your application to control background data usage on dev
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=CellularMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+

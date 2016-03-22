@@ -1,5 +1,8 @@
 ---
-title:  Display Manager Profile Feature Reference
+title: Display Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -19,3 +22,11 @@ This profile feature will allow your application to set how many seconds a devic
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=DisplayMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+

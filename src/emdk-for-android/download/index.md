@@ -1,6 +1,7 @@
 ---
 title: EMDK for Android Downloads
 layout: guide.html
+product: EMDK For Android
 ---
 
 ## Latest Release
@@ -24,3 +25,8 @@ layout: guide.html
 
 <li><a href="https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=95455&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%202.0">EMDK 2.0</a></li>
 </ul>
+
+
+
+
+

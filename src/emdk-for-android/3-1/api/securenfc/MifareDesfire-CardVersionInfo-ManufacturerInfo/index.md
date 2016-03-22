@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.CardVersionInfo.ManufacturerInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Manufacturer information
@@ -37,5 +40,13 @@ Production Month
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 
 

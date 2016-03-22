@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ImagerSpecific provides access to the imager specific parameters.
@@ -140,5 +143,13 @@ This is the time (in seconds) when an external scanner is idle in a particular s
 **Type:**
 
 int
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
-title:  USB Manager Profile Feature Reference
+title: USB Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -44,6 +47,14 @@ Enabling the PTP protocol would allow an external workstation to access a device
 ## Feature Compatibility
 
 <iframe src="compare.html#mx=4.3&csp=UsbMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 
 

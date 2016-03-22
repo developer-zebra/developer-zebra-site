@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: EMDK For Android
-    description: Java sample projects using EMDK API's, Data Capture, Profile Manager, etc.
+    description: "Java sample projects using EMDK API's, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/4-1/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
@@ -23,13 +23,13 @@ products:
         url: /emdk-for-android/4-1/api
     versions:
       - url: emdk-for-android/4-1/guide/about/
-        menu: "4.1"
+        menu: '4.1'
       - url: emdk-for-android/4-0/guide/about/
-        menu: "4.0"
+        menu: '4.0'
       - url: /emdk-for-android/3-1/guide/about/
-        menu: "3.1"
+        menu: '3.1'
   - title: EMDK For Xamarin
-    description: Use C# API's like Data Capture, Profile Manager to build Android applications for Zebra Devices.
+    description: "Use C# API's like Data Capture, Profile Manager to build Android applications for Zebra Devices."
     url: /emdk-for-xamarin/2-0/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.jpg
@@ -46,16 +46,16 @@ products:
         url: /emdk-for-xamarin/2-0/api
     versions:
       - url: emdk-for-xamarin/1-0/guide/about/
-        menu: "1.0"
+        menu: '1.0'
       - url: emdk-for-xamarin/2-0/guide/about/
-        menu: "2.0"
+        menu: '2.0'
   - title: StageNow
-    description: The easy way to stage Zebra Technologies' Android-based mobile computers.
+    description: "The easy way to stage Zebra Technologies' Android-based mobile computers."
     url: /stagenow/2-2/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
-      - title: Getting Started 
+      - title: Getting Started
         url: /stagenow/2-2/gettingstarted
       - title: Profiles
         url: /stagenow/2-2/stagingprofiles
@@ -68,7 +68,7 @@ products:
       - title: Device Staging
         url: /stagenow/2-2/stageclient
   - title: Enterprise Home Screen
-    description: A simple way to control user access to Android apps, settings and files without custom code. 
+    description: 'A simple way to control user access to Android apps, settings and files without custom code.'
     url: /ehs/2-3/guide/about
     image: /ehs/ehs-logo.png
     btn-text: Latest Docs
@@ -79,9 +79,26 @@ products:
         url: /ehs/2-3/guide/gettingstarted
       - title: Basic Setup
         url: /ehs/2-3/guide/setup
-      - title: Special Features
+      - title: Advanced Features
         url: /ehs/2-3/guide/features
       - title: Download
         url: /ehs/2-3/download
+  - title: Enterprise Keyboard
+    description: A customizable keyboard made specifically for the workplace.  
+    url: /enterprise-keyboard/1-0/guide/about
+    image: /enterprise-keyboard/ekb_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /enterprise-keyboard/1-0/guide/about
+      - title: Getting Started
+        url: /enterprise-keyboard/1-0/guide/gettingstarted
+      - title: Setup
+        url: /enterprise-keyboard/1-0/guide/setup
+      - title: Customize
+        url: /enterprise-keyboard/1-0/guide/settings
+      - title: Download
+        url: /enterprise-keyboard/1-0/download
 
----
+
+

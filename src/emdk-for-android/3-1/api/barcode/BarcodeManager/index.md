@@ -1,5 +1,8 @@
 ---
 title: BarcodeManager
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This is the primary object to access the barcode scanning feature.
@@ -105,5 +108,13 @@ Defines specific scanner devices of each type.
 * **INTERNAL_LASER1**
 
 * **BLUETOOTH_IMAGER1**
+
+
+
+
+
+
+
+
 
 

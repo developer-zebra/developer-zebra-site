@@ -1,5 +1,8 @@
 ---
 title: SimulScanTemplateGroup
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The SimulScanTemplateGroup class is a grouping of multiple SimulScanTemplateRegion items.
@@ -16,5 +19,13 @@ Returns a list of SimulScanTemplateRegion objects that represents a collection o
 **Returns:**
 
 java.util.List
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
-title:  Encrypt Manager Profile Feature Reference
+title: Encrypt Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -78,6 +81,14 @@ This profile feature will allow your application format an SDCard.
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=EncryptMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 
 

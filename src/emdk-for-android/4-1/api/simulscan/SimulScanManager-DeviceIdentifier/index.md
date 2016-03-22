@@ -1,6 +1,9 @@
 ---
 title: SimulScanManager.DeviceIdentifier
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -13,4 +16,12 @@ Defines scanner device identifier.
 * **INTERNAL_CAMERA1** -Use the internal camera
 
 * **INTERNAL_IMAGER1** -Use the internal imager
+
+
+
+
+
+
+
+
 

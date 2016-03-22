@@ -1,6 +1,8 @@
 ---
-title:  Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi
-
+title: Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -531,3 +533,11 @@ Now that you have learned how to configure your device's Wi-Fi settings as well 
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/WiFiManagerTutorial.zip).
+
+
+
+
+
+
+
+

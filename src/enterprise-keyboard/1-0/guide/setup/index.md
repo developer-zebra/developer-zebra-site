@@ -65,7 +65,7 @@ To change Enterprise Keyboard settings:
 For further information about Enterprise Keyboard settings, please refer to the [Customize section](../settings). 
 
 ### Automated Installation
-Enterprise Keyboard can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 
+Enterprise Keyboard can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 
 
 Actions to be executed on the Android Settings panel:
 1. <b>Open Language and input</b> 

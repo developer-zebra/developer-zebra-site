@@ -19,6 +19,16 @@ menu:
       url: /emdk-for-xamarin/2-0/api
     - icon: fa fa-search
       url: /emdk-for-xamarin/2-0/search
-        
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
+
+
 

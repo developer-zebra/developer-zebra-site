@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Provides access to MIFARE DESFire properties and I/O operations on an IsoDep
@@ -802,5 +805,13 @@ Authentication mode.
 * **ISO** -Authentication Type is ISO. Not supported.
 
 * **AES** -Authentication Type is AES. Not Supported
+
+
+
+
+
+
+
+
 
 

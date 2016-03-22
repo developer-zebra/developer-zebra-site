@@ -1,6 +1,9 @@
 ---
 title: ReadCardMessage
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -31,4 +34,12 @@ The title message to be displayed on the card data request.
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 

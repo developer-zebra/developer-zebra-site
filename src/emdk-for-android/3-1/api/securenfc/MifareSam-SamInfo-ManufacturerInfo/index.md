@@ -1,5 +1,8 @@
 ---
 title: MifareSam.SamInfo.ManufacturerInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Manufacturer information
@@ -29,5 +32,13 @@ Production Date
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 
 

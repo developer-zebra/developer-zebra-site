@@ -1,5 +1,8 @@
 ---
 title: VersionManager.VERSION_TYPE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 All the version keys for  VersionManager#getVersion(VERSION_TYPE) are enumerated here.
@@ -19,5 +22,13 @@ All the version keys for  VersionManager#getVersion(VERSION_TYPE) are enumerated
 * **MX** -MX framework version
 
 * **BARCODE** -Barcode Scanner Framework version.
+
+
+
+
+
+
+
+
 
 

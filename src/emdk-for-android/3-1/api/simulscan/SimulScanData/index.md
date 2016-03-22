@@ -1,5 +1,8 @@
 ---
 title: SimulScanData
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The SimulScanData object gives scanning result
@@ -68,5 +71,13 @@ Returns a list of scanned elements.
 **Returns:**
 
 java.util.List
+
+
+
+
+
+
+
+
 
 

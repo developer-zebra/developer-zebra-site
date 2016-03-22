@@ -1,6 +1,9 @@
 ---
 title: SimulScanData
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -73,4 +76,12 @@ Returns a list of scanned elements.
 **Returns:**
 
 java.util.List - Returns a List object of SimulScanElement objects
+
+
+
+
+
+
+
+
 

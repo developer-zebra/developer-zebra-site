@@ -1,5 +1,8 @@
 ---
-title:  Install CA Certificate using Certificate Manager
+title: Install CA Certificate using Certificate Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -488,3 +491,11 @@ Now that you have learned how to configure various types of certificates using C
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/CertManagerTutorial.zip).
+
+
+
+
+
+
+
+

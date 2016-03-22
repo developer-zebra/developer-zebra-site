@@ -1,5 +1,8 @@
 ---
 title: PassThruApduException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of PassThruApduProcessor object throws PassThruApduException when an error
@@ -21,4 +24,12 @@ Returns the PassThruApduResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.PassThruApduResults
+
+
+
+
+
+
+
+
 

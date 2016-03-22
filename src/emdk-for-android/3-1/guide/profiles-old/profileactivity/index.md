@@ -1,5 +1,8 @@
 ---
-title:  Activity Selection Profile Feature Reference
+title: Activity Selection Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -15,3 +18,11 @@ The name field is used by the EMDK to identify this particular feature parameter
 	* Applications names are the formal package definition of the application. For example "com.symbol.profiledatacapturesample1". 
 * Activities -  List of activities within the selected application that a profile should be active for. 
 	*  For Example "MainActivity".
+
+
+
+
+
+
+
+

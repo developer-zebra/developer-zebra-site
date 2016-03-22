@@ -1,5 +1,8 @@
 ---
-title:  Battery Manager Profile Feature Reference
+title: Battery Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -26,4 +29,12 @@ This setting would be used to modify the Decommissioned Threshold for Zebra Gift
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=BatteryMgr&os=All&embed=true"></iframe>
+
+
+
+
+
+
+
+
 

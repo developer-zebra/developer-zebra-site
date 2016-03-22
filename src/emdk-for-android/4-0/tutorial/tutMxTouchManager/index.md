@@ -1,5 +1,8 @@
 ---
-title:  Specify Touch Mode using Mx Touch Manager
+title: Specify Touch Mode using Mx Touch Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -430,3 +433,11 @@ Now that you have learned how to configure Touch Mode using Touch Manager on you
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxTouchManagerTutorial.zip)
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 ---
-title:  Errors When Processing Profiles
+title: Errors When Processing Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -456,4 +459,12 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxErrorsTutorial.zip).
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: MifareDesfireResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -85,5 +88,13 @@ title: MifareDesfireResults
 * **PARAM_NOT_SUPPORTED** -The parameter not supported.
 
 * **UNDEFINED** -Error code not defined.
+
+
+
+
+
+
+
+
 
 

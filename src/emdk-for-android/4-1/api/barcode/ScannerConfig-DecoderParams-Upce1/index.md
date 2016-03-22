@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.DecoderParams.Upce1
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -34,4 +37,12 @@ Flag to enable conversion from UPCE1 to UPCA bar code. If this
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
 

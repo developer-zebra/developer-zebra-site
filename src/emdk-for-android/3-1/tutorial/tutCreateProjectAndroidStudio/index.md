@@ -1,5 +1,8 @@
 ---
-title:  Creating Project using Android Studio
+title: Creating Project using Android Studio
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Overview
 
@@ -56,4 +59,12 @@ This tutorial helps you creating a new Android application project using [Androi
 	Click "Finish" and this is how `\assets` folder can be manually added to the project structure.
 
 	![img](../../images/CreatingProjectAndroidStudioImages/assets_folder_created.jpg)
+
+
+
+
+
+
+
+
 

@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -341,4 +344,12 @@ Configures the UPCE1 Symbology object [ ProfileConfig.DataCapture.Barcode.Decode
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1
+
+
+
+
+
+
+
+
 

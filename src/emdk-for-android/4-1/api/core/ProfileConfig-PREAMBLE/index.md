@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.PREAMBLE
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -27,4 +30,12 @@ Controls the preamble applied to the bar code
 * **SYS_CHAR** -System character preamble
 
 * **COUNTRY_AND_SYS_CHAR** -Both country and system code preamble
+
+
+
+
+
+
+
+
 

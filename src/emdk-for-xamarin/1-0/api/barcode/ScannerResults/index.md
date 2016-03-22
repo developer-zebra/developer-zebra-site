@@ -1,5 +1,8 @@
 ---
 title: ScannerResults
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 Defines all the error codes the barcode scanning API returns.
 
@@ -132,5 +135,15 @@ Error code not defined.
 View finder error.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
+
+
+
+
+
+
+
+
+
+
 
 

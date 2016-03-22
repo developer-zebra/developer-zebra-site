@@ -1,5 +1,8 @@
 ---
 title: StatusData
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 StatusData class provides access to scanner status.
@@ -51,5 +54,13 @@ Defines the different states of the barcode scanner.
 * **DISABLED** -Scanner is not enabled.
 
 * **ERROR** -An error has occurred.
+
+
+
+
+
+
+
+
 
 

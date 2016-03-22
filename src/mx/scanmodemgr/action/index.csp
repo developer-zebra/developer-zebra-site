@@ -3,6 +3,7 @@ csp: scanmodemgr
 title: Scan Mode Action
 type: parm
 order: 2
+mx: "4.3"
 parm:
   pivotal: No
   name: ScanModeAction
@@ -10,15 +11,19 @@ parm:
   list:
     - code: 0
       name: Do Not Change
+      mx: "4.3"
       description: The Scan Mode is not altered.
     - code: 1
       name: Normak Mode
+      mx: "4.3"
       description: The Scan Mode is changed to normal default operations.
     - code: 2
       name: Scan 1 (Power is side key)
+      mx: "4.3"
       description: This Scan Mode is set where the trigger is the side key.
     - code: 3
       name: Scan 2 (Power is front key)
+      mx: "4.3"
       description: This Scan Mode is set where the trigger is the front key.
 ---
 

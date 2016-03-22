@@ -3,7 +3,9 @@ csp: batterymgr
 title: Percentage Decommissioned Threshold
 type: parm
 order: 3
-sincemx: 4.4
+mx: "4.4"
+osx: "4.4"
+apilevel: "16"
 parm:
   pivotal: No
   name: SetPercentDecommissionThreshold

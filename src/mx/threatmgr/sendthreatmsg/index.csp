@@ -3,7 +3,8 @@ csp: threatmgr
 title: Send Threat message
 type: parm
 order: 16
-sincemx: 4.3
+mx: "4.3"
+osx: "3.5"
 parm:
   pivotal: No
   name: SendThreatMsg

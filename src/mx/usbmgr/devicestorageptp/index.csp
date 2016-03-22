@@ -3,7 +3,8 @@ csp: usbmgr
 title: Access device storage from PC via USB PTP
 type: parm
 order: 9
-sincemx: 4.2
+mx: "4.2"
+osx: "4.1"
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" *AND* the "Access device storage from PC via USB" value is not "Enable" or "Disable"  
   pivotal: No
@@ -11,16 +12,19 @@ parm:
   type: list
   list:
     - code: 0
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "4.1"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause changes to be made as to whether or not access to the device storage from a PC via USB PTP can be used.
     - code: 1
       name: Enable 
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "4.1"
       description: This value will cause access to the device storage from a PC via USB PTP to be allowed.
     - code: 2
       name: Disable
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "4.1"
       description: This value will cause access to the device storage from a PC via USB PTP to be prevented.
 ---
 

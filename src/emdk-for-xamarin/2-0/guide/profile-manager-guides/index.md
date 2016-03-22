@@ -7,7 +7,7 @@ automenu:
     - title: Getting Started
       items:
         - title: Using Profile Manager
-          url: /emdk-for-xamarin/2-0/guide/profilemanager/about
+          url: /emdk-for-xamarin/2-0/guide/profile-manager
         - title: Profile Features
           url: /emdk-for-xamarin/2-0/mx
         - title: MX Overview

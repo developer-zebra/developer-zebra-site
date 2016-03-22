@@ -3,7 +3,8 @@ csp: powermgr
 title: OS Update ZIP File
 type: parm
 order: 3
-sincemx: 4.2
+mx: "4.1"
+apilevel: "16"
 parm:
   presentif: The Reset Action is "OS Update"
   pivotal: No

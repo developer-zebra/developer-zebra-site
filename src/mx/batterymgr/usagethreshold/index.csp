@@ -3,7 +3,9 @@ csp: batterymgr
 title: Usage Decommissioned Threshold
 type: parm
 order: 2
-sincemx: 4.4
+mx: "4.4"
+osx: "4.4"
+apilevel: "16"
 parm:
   pivotal: No
   name: SetBatteryUsageDecommissionThreshold

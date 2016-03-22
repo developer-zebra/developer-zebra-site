@@ -3,7 +3,8 @@ csp: encryptmgr
 title: Install Key Name
 type: parm
 order: 3
-sincemx: 4.3
+mx: "4.3"
+osx: "1.0"
 parm:
   presentif: The Install Key action is "Install key"
   pivotal: No

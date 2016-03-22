@@ -3,7 +3,8 @@ csp: gprsmgr
 title: GPRS Carrier
 type: parm
 order: 3
-sincemx: 4.2
+mx: "4.1.1"
+apilevel: "16"
 parm:
   pivotal: Yes
   name: GprsCarrier
@@ -11,15 +12,18 @@ parm:
   list:
     - code: 0
       name: Custom
-      sincemx: 4.2
+      mx: "4.1.1"
+      apilevel: "16"
       description: This value indicates that the APN is not one of the pre-defined carrier APNs and should be configured by providing custom values provided by the GPRS carrier
     - code: 1
-      sincemx: 4.2
       name: ATT
+      mx: "4.1.1"
+      apilevel: "16"
       description: <p>This value indicates that AT&T is the GPRS carrier and that the standard public APN used by AT&T should be used.</p><p><b>Note:</b> If you want to use an AT&T APN other than the standard AT&T public APN, then you should choose "Custom" and supply the values for the desired AT&T APN that must be obtained from AT&T.</p>
     - code: 2
       name: T-Mobile
-      sincemx: 4.2
+      mx: "4.1.1"
+      apilevel: "16"
       description: <p>This value indicates that T-Mobile is the GPRS carrier and that the standard public APN used by T-Mobile should be used.</p><p><b>Note:</b> If you want to use a T-Mobile APN other than the standard T-Mobile public APN, then you should choose "Custom" and supply the values for the desired T-Mobile APN that must be obtained from T-Mobile.</p>
 ---
 

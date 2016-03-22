@@ -3,23 +3,27 @@ csp: settingsmgr
 title: Ability to Turn Wifi On/Off in Settings UI
 type: parm
 order: 3
-sincemx: 4.3
+mx: "4.3"
+osx: "4.3"
 parm:
   pivotal: No
   name: WifiSettingsUI
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "4.3"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to make changes to the Wi-Fi configuration from the System Settings Menu and the Quick Settings.
     - code: 1
       name: Enable
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "4.3"
       description: This value will cause the device user to be allowed to make changes to the Wi-Fi configuration from the System Settings Menu and the Quick Settings.
     - code: 2
       name: Disable
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "4.3"
       description: This value will cause the device user to be prevented from making changes to the Wi-Fi configuration from the System Settings Menu and the Quick Settings.
 ---
 

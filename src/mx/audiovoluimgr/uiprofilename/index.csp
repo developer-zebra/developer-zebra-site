@@ -3,7 +3,8 @@ csp: audiovoluimgr
 title: Name of the Audio UI Profile
 type: parm
 order: 7
-sincemx: 4.4
+mx: "4.4"
+osx: "4.4"
 parm:
   presentif: The Audio UI Profile Action is "Add an Audio UI Profile" or "Remove an Audio UI Profile"
   pivotal: No

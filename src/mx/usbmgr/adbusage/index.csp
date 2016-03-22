@@ -3,7 +3,8 @@ csp: usbmgr
 title: USB ADB Usage
 type: parm
 order: 4
-sincemx: 4.2
+mx: "4.2"
+osx: "1.3.4-56"
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" 
   pivotal: No
@@ -11,16 +12,19 @@ parm:
   type: list
   list:
     - code: 0
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "1.3.4-56"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not USB ADB mode can be used.
     - code: 1
       name: Enable 
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "1.3.4-56"
       description: This value will cause use of USB ADB mode to be allowed.
     - code: 2
       name: Disable
-      sincemx: 4.2
+      mx: "4.2"
+      osx: "1.3.4-56"
       description: This value will cause use of USB ADB mode to be prevented.
 ---
 

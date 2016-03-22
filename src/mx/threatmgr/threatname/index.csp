@@ -3,7 +3,8 @@ csp: threatmgr
 title: Threat Name
 type: parm
 order: 3
-sincemx: 4.3
+mx: "4.3"
+osx: "3.5"
 parm:
   presentif: Shown when the Threat Action is "Turn On" or "Turn Off"
   pivotal: Yes
@@ -11,24 +12,29 @@ parm:
   type: list
   list:
     - code: 1
-      sincemx: 4.3
       name: Max Password Attempts
+      mx: "4.3"
+      osx: "3.5"
       description: Use this option to detect when the device has hit the maxminum password attempts.
     - code: 2
       name: MDM Client Removal 
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: Use this option to detect when a MDM Client has been removed.
     - code: 3
       name: Externally Detected
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: A custom threat defined by an intent that can be triggered from an application
     - code: 4
       name: Exchange Active Sync Command 
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: Use this option to detect when a threat has been detected while synching with Exchange
     - code: 5
       name: Device is Rooted 
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: Use this option to detect when a device has been rooted.
 ---
 

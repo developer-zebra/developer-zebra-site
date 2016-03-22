@@ -8,7 +8,8 @@ parm:
   pivotal: No
   name: DeletePackageSign
   type: string
-sincemx: 4.3
+mx: "4.3"
+osx: "3.4"
 ---
 
 Provide the package signatures to be deleted. 

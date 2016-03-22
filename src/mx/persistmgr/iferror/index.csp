@@ -3,7 +3,7 @@ csp: persistmgr
 title: Persist If Error
 type: parm
 order: 6
-sincemx: 4.2
+mx: "4.2"
 parm:
   presentif: Persist Action is "Add current XML as a persistent profile"
   pivotal: Yes
@@ -11,12 +11,12 @@ parm:
   type: list
   list:
     - code: true
-      sincemx: 4.2
+      mx: "4.2"
       name: True
       description: This value will cause the Request XML document in which this PersistMgr Feature is contained to be made Persistent even if top-level characteristic errors are reported in the Result XML returned when the Request XML document is submitted.
     - code: false
       name: False
-      sincemx: 4.2
+      mx: "4.2"
       description: This value will cause the Request XML document in which this PersistMgr Feature is contained to not be made Persistent if any top-level characteristic errors are reported in the Result XML returned when the Request XML document is submitted.
 ---
 

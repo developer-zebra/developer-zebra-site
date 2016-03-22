@@ -3,7 +3,8 @@ csp: threatmgr
 title: Alert Package Name
 type: parm
 order: 11
-sincemx: 4.3
+mx: "4.3"
+osx: "3.5"
 parm:
   presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected and countermeasure is 'Unsolicited Alert'
   pivotal: No

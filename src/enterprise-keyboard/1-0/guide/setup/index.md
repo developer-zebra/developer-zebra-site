@@ -4,7 +4,7 @@ layout: guide.html
 ---
 
 ## Overview
-The Zebra Enterprise Keyboard is delivered as part of the operating system on new Zebra Android Lollipop devices or installed as an OS patch on older KitKat devices. To make it available to users, it must be activated and optionally can be set as the default input method, if desired. This guide covers activation of Enterprise Keyboard and the steps for setting it as the default input device. 
+The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on KitKat devices. To make it available to users, it must be activated and optionally can be set as the default input method, if desired. This guide covers activation of Enterprise Keyboard and the steps for setting it as the default input device. 
 
 Activation and configuration can be done in one of three ways: 
 
@@ -14,16 +14,16 @@ Activation and configuration can be done in one of three ways:
     * Using [StageNow](/stagenow/2-2/about/) and the [UI Manager](/mx/uimgr/) service 
     * Through a company's own mobile device management (MDM) system (if supported by that system) 
 
-## Manual Configuration
-The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Installation section](#automatedinstallation) later in this guide. 
+## Manual Activation
+The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Activation section](#automatedactivation) later in this guide. 
 
-To enable Enterprise Keyboard on a device: 
+To activate Enterprise Keyboard on a device: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. Scroll to and <b>Tap Language and input</b>:
+&#50;. Scroll to and <b>tap Language and input</b>:
 <img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
@@ -41,7 +41,9 @@ To enable Enterprise Keyboard on a device:
 
 &#54;. <B>Tap the HOME key</b> to exit the Settings panel.  
 
-Enterprise Keyboard setup is now complete. 
+Enterprise Keyboard is now ready to use with default settings. 
+
+------
 
 ### Change Settings
 Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
@@ -62,9 +64,11 @@ To change Enterprise Keyboard settings:
 
 &#52;. On the Enterprise Keyboard Preferences panel, <b>tap the setting(s) that require change</b>:
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-For further information about Enterprise Keyboard settings, please refer to the [Customize section](../settings). 
+Refer to the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
 
-### Automated Installation
+------
+
+### Automated Activation
 Enterprise Keyboard can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 
 
 Actions to be executed on the Android Settings panel:
@@ -75,27 +79,29 @@ Actions to be executed on the Android Settings panel:
 
 Please refer to the respective tool of choice for more information. 
 
-## Uninstallation
-<b>Warning: This action will remove the Enterprise Keyboard app and all associated data, including custom dictionaries, if any</b>. 
+------
 
-### Manual Uninstallation
-To remove Enterprise Keyboard, simply use the Android App Manager to <b>uninstall Enterprise Keyboard</b>. 
+## Deactivation
+Enterprise Keyboard cannot be removed if it was included with the device operating system. However, it can be deactivated by reversing the activation process described in the Activation section. To deactivate Enterprise Keyboard, follow the steps below for using the Android Settings panel. 
 
-&#49;. <b>Tap Apps</b> to bring up the Android App Manager: 
-<img alt="" style="height:350px" src="app_settings.png"/>
+<b>Warning: This action renders Enterprise Keyboard inaccessible, including its scanning and other capabilities</b>. 
+
+### Manual Deactivation
+
+To deactivate Enterprise Keyboard: 
+
+&#49;. <b>Open the Settings panel</b> on the device:
+<img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. Locate and <b>Tap EHS Installer</b>:
-<img alt="" style="height:350px" src="uninstall_select ekb.png"/>
+&#50;. Scroll to and <b>tap Language and input</b>:
+<img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
-&#51;. <b>Tap the Uninstall button</b>:
-<img alt="" style="height:350px" src="uninstall_ekb.png"/>
-<br>
+&#51;. <b>Remove the check next to Enterprise Keyboard</b> to disable it on the device. If the Android keyboard is the only other input device, it will automatically become the default input devices and cannot be disabled. 
+<img alt="" style="height:350px" src="panel_default.png"/>
+<br> 
 
-&#52;. <b>Click OK</b> to confirm:
-<img alt="" style="height:350px" src="uninstall_confirm.png"/>
-<br>
 
 Manual uninstallation of Enterprise Keyboard is complete. 
 

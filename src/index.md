@@ -79,11 +79,24 @@ products:
         url: /ehs/2-3/guide/gettingstarted
       - title: Basic Setup
         url: /ehs/2-3/guide/setup
-      - title: Special Features
+      - title: Advanced Features
         url: /ehs/2-3/guide/features
       - title: Download
         url: /ehs/2-3/download
----
+  - title: Enterprise Keyboard
+    description: A customizable keyboard made specifically for the workplace.  
+    url: /enterprise-keyboard/1-0/guide/about
+    image: /enterprise-keyboard/ekb_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /enterprise-keyboard/1-0/guide/about
+      - title: Setup
+        url: /enterprise-keyboard/1-0/guide/setup
+      - title: Customize
+        url: /enterprise-keyboard/1-0/guide/settings
+      - title: Download
+        url: /enterprise-keyboard/1-0/download
 
 
 

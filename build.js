@@ -404,6 +404,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
+    .use(foldermenu({
+        folder: 'enterprise-keyboard/1-0/'
+    }))
     .use(showdown({literalMidWordUnderscores:true}))
     .use(snippet({
       maxLength: 250,
@@ -438,4 +441,3 @@ var sitebuild = Metalsmith(__dirname)
       console.log('\u0007');//System bell to alert when build is complete
     }
   });
-

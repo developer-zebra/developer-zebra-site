@@ -50,7 +50,7 @@
                                         <div class="" >
                                     
                                     {{else}}
-                                        <div class="" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
+                                        <div class="" data-osx="{{this.osx}}" data-osx-end="{{this.osx-end}}" data-osx-specific-list="{{this.osx-specific-list}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-osx-exclude-end="{{this.osx-exclude-end}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
 
                                     {{/is}}
                                     <h2 class="">{{this.title}}</h2>
@@ -71,15 +71,24 @@
                                         <p><b>Requires:</b> 
                                             <ul>
                                             {{#if this.osx}}
-                                                <li>OSX: {{this.osx}}+
+                                                <li>OSX: {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
+                                                </li>
+                                            {{/if}}
+                                            {{#if this.osx-specific-list}}
+                                                <li>OSX: {{this.osx-specific-list}} 
+                                                
+                                                <span class="label">ONLY</span>
                                                 </li>
                                             {{/if}}
                                             {{#if this.osx-specific}}
-                                                <li>OSX: {{this.osx-specific}} <span class="label">ONLY</span>
+                                                <li>OSX: {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}} 
+
+                                                <span class="label">ONLY</span>
                                                 </li>
                                             {{/if}}
                                             {{#if this.osx-exclude}}
-                                                <li class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                <li class="text-danger">NOT IN OSX: {{this.osx-exclude}}
+                                                    {{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
                                                 </li>
                                             {{/if}}
                                                 <li>MX: {{this.mx}}+ </li>
@@ -106,21 +115,30 @@
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
-                                            <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                            <tr data-osx="{{this.osx}}" data-osx-end="{{this.osx-end}}" data-osx-specific-list="{{this.osx-specific-list}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-osx-exclude-end="{{this.osx-exclude-end}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
                                                 <td>
                                                     
                                                     {{#if this.osx}}
-                                                        <p>OSX: {{this.osx}}+ </p>
+                                                        <p>OSX: {{this.osx}}{{#if this.osx-end}} - {{this.osx-end}}{{else}}+{{/if}}   
+                                                        </p>
+                                                    {{/if}}
+                                                    {{#if this.osx-specific-list}}
+                                                        <p>OSX: {{this.osx-specific-list}}
+                                                         <span class="label">ONLY</span>
+                                                        </p>
                                                     {{/if}}
                                                     {{#if this.osx-specific}}
-                                                        <p>OSX: {{this.osx-specific}}+ <span class="label">ONLY</span>
+                                                        <p>OSX: {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}} 
+
+
+                                                         <span class="label">ONLY</span>
                                                         </p>
                                                     {{/if}}
                                                     {{#if this.osx-exclude}}
-                                                        <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                        <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}} 
                                                         </p>
                                                     {{/if}}
 
@@ -167,9 +185,13 @@
                         {{else}}
                         requires: {
                             osx: "{{this.osx}}",
+                            osxEnd: "{{this.osx-end}}",
                             mx: "{{this.mx}}",
                             api: "{{this.apilevel}}",
-                            osxSpecific: "{{this.osx-specific}}"
+                            osxSpecific: "{{this.osx-specific}}",
+                            osxSpecificList: "{{this.osx-specific-list}}",
+                            osxExclude: "{{this.osx-exclude}}",
+                            osxExcludeEnd: "{{this.osx-exclude-end}}"
                         },
 
                         {{/is}}
@@ -189,9 +211,14 @@
                                     description: "{{this.description}}",
                                     requires: {
                                         osx: "{{this.osx}}",
+                                        osxEnd: "{{this.osx-end}}",
                                         mx: "{{this.mx}}",
                                         api: "{{this.apilevel}}",
-                                        osxSpecific: "{{this.osx-specific}}"
+                                        osxSpecific: "{{this.osx-specific}}",
+                                        osxSpecificList: "{{this.osx-specific-list}}",
+                                        osxExclude: "{{this.osx-exclude}}",
+                                        osxExcludeEnd: "{{this.osx-exclude-end}}"
+
                                     },
 
                                 },

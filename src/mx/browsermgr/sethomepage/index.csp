@@ -4,7 +4,7 @@ title: Set Default Home Page
 type: parm
 order: 2
 mx: "4.3"
-osx: "1.3.4-56"
+osx: "1.3"
 osx-end: "3.9"
 osx-exclude: "4.0"
 parm:

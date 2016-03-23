@@ -4,7 +4,7 @@ title: Class Name
 type: parm
 order: 6
 mx: "4.3"
-osx: "1.3.4-56"
+osx: "1.3"
 parm:
   pivotal: No
   presentif: Device Administration Action is "Turn On as Device Administrator" or "Turn Off as Device Administrator"

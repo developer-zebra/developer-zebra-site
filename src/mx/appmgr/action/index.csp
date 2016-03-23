@@ -4,7 +4,7 @@ title: Action
 type: parm
 order: 2
 mx: "4.1"
-osx: "1.0,1.3.4-56"
+osx: "1.0,1.3"
 apilevel: "1"
 parm:
   pivotal: Yes
@@ -34,7 +34,7 @@ parm:
       name: Set as Default Launcher
       description: This value will cause the application with the specified Package Name to be made the new Default Launcher. The specified application must already be installed on the device and generally should be designed to be a Launcher, per relevant Android documentation. If no application with the specified Package Name is installed on the device then an error will be returned in the Result XML document.
       mx: "4.1"
-      osx: "1.3.4-56"
+      osx: "1.3"
     - code: 5
       name: Enable Application
       description: This value will cause the System application with the specified Package Name to be Enabled, and therefore will allow it to be launched. If no System application with the specified Package Name is built-into the device then an error will be returned in the Result XML document.

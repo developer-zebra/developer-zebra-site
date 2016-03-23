@@ -4,7 +4,7 @@ title: Enable/Disable Data Roaming Option
 type: parm
 order: 5
 mx: "4.4"
-osx: 4.4"
+osx: "4.4"
 parm:
   pivotal: No
   name: DataRoamingUsage
@@ -12,18 +12,18 @@ parm:
   list:
     - code: 0
       mx: "4.4"
-      osx: 4.4"
+      osx: "4.4"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether the state of the Data Roaming Option can be changed.
     - code: 1
       name: Enable
       mx: "4.4"
-      osx: 4.4"
+      osx: "4.4"
       description: This value will cause the state of the Data Roaming Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr.
     - code: 2
       name: Disable
       mx: "4.4"
-      osx: 4.4"
+      osx: "4.4"
       description: This value will cause the state of the Data Roaming Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr.
 ---
 

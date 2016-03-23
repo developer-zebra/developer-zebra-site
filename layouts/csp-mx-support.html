@@ -58,17 +58,23 @@
                                                     <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                         <td><span ><i>{{this.title}}</i></td>
                                                         <td class="col-md-2">
+
                                                             {{#if this.osx}}
-                                                                {{this.osx}}+
+                                                                {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
                                                             {{else}}
-                                                                All
-                                                                
+                                                                {{#if this.osx-specific}}
+                                                                    {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}}
+                                                                     ONLY
+                                                                {{else}}
+                                                                    {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
+                                                                    ONLY
+                                                                    {{else}}ALL
+                                                                    {{/if}}
+                                                                {{/if}}
                                                             {{/if}}
-                                                            {{#if this.osx-specific}}
-                                                                {{this.osx-specific}} ONLY
-                                                            {{/if}}
+                                                            
                                                             {{#if this.osx-exclude}}
-                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
                                                                 </p>
                                                             {{/if}}
                                                         </td>
@@ -94,16 +100,21 @@
                                                         <td class="col-md-4"><span style="padding-left:15px"><i>{{this.name}}</i></td>
                                                         <td class="col-md-2">
                                                             {{#if this.osx}}
-                                                                {{this.osx}}+
+                                                                {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
                                                             {{else}}
-                                                                All
-                                                                
+                                                                {{#if this.osx-specific}}
+                                                                    {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}}
+                                                                     ONLY
+                                                                {{else}}
+                                                                    {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
+                                                                    ONLY
+                                                                    {{else}}ALL
+                                                                    {{/if}}
+                                                                {{/if}}
                                                             {{/if}}
-                                                            {{#if this.osx-specific}}
-                                                                {{this.osx-specific}} ONLY
-                                                            {{/if}}
+                                                            
                                                             {{#if this.osx-exclude}}
-                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}+ 
+                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
                                                                 </p>
                                                             {{/if}}
                                                         </td>

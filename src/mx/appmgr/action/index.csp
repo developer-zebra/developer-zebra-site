@@ -50,6 +50,10 @@ parm:
       description: This value will cause the Android Recent Applications List, which allows a user to see and launch apps that have recently been used, to be cleared.
       mx: "4.2"
       apilevel: "16"
+    - code: 8
+      name: Launch an Application
+      description: Allows an application to be launched by its simple name instead of its package name.
+      mx: "5.1"
 ---
 
 Specify the application action to perform. 

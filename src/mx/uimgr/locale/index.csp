@@ -15,14 +15,16 @@ parm:
       osx: "1.3"
       name: Do not change
     - code: en_CA
-      name: CANADA 
+      name: CANADA_ENGLISH
       mx: "4.3"
       osx: "1.3"
+      description: English spoken in Canada
     - code: fr_CA
       name: CANADA_FRENCH
       mx: "4.3"
       osx: "1.3"
-    - name: CHINA
+      description: French spoken in Canada
+    - name: CHINA_CHINESE
       code: zh_CN 
       mx: "4.3"
       osx: "1.3"
@@ -37,7 +39,7 @@ parm:
       mx: "4.3"
       osx: "1.3"
       description: English (non-region specific)
-    - name: FRANCE
+    - name: FRANCE_FRENCH
       code: fr_FR
       mx: "4.3"
       osx: "1.3"
@@ -52,7 +54,7 @@ parm:
       mx: "4.3"
       osx: "1.3"
       description: German (non-region specific)
-    - name: GERMANY
+    - name: GERMANY_GERMAN
       code: de_DE
       mx: "4.3"
       osx: "1.3"
@@ -62,12 +64,12 @@ parm:
       mx: "4.3"
       osx: "1.3"
       description: Italian (non-region specific)
-    - name: ITALY
+    - name: ITALY_ITALIAN
       code: it_IT
       mx: "4.3"
       osx: "1.3"
       description: Italian spoken in Italy
-    - name: JAPAN
+    - name: JAPAN_JAPANESE
       code: ja_JP
       mx: "4.3"
       osx: "1.3"
@@ -77,7 +79,7 @@ parm:
       mx: "4.3"
       osx: "1.3"
       description: Japanese (non-region specific)
-    - name: KOREA
+    - name: KOREA_KOREAN
       code: ko_KR
       mx: "4.3"
       osx: "1.3"
@@ -97,7 +99,7 @@ parm:
       mx: "4.3"
       osx: "1.3"
       description: Alternate Chinese spoken in China
-    - name: TAIWAN
+    - name: TAIWAN_CHINESE
       code: zh_TW
       mx: "4.3"
       osx: "1.3"
@@ -107,36 +109,36 @@ parm:
       mx: "4.3"
       osx: "1.3"
       description: Alternate Chinese spoken in Taiwan
-    - name: UK
+    - name: UK_ENGLISH
       code: en_GB
       mx: "4.3"
       osx: "1.3"
       description: English spoken in Great Britain/United Kingdom
-    - name: US
+    - name: US_ENGLISH
       code: en_US
       mx: "4.3"
       osx: "1.3"
       description: English spoken in the United States of America (USA)
-    - name: SPANISH
+    - name: SPAIN_SPANISH
       code: es_ES
       mx: "5.0"
       osx: "1.3"
       description: Spanish spoken in Spain
-    - name: US SPANISH
+    - name: US_SPANISH
       code: es_US
       mx: "5.0"
       osx: "1.3"
       description: Spanish spoken in the United States of America (USA)
-    - name: BRAZILIAN PORTUGESE
+    - name: BRAZIL_PORTUGUESE
       code: pt_BR
       mx: "5.0"
       osx: "1.3"
-      description: Portugese spoken in Brazil
-    - name: PORTUGESE
+      description: Portuguese spoken in Brazil
+    - name: PORTUGAL_PORTUGUESE
       code: pt_PT
       mx: "5.0"
       osx: "1.3"
-      description: Portugese spoken in Portugal
+      description: Portuguese spoken in Portugal
 ---
 
-This parm value allows you to set the device's current locale. A locale is a combination of a language and a region where that language is spoken. Languages are identified by two lower cases letters and regions are identified by two upper case letters. The language and region are separated by an underscore ("_") character. For example, "en_US" is the locale specification for "English spoken in the United States of America" and "fr_FR" is the locale specification for "French spoken in France".
+This parm value allows you to set the device's current locale. A locale is the combination of a language and a region where that language is spoken. Languages are identified by two lower-case letters and regions are identified by two upper-case letters joined by an underscore ("_") character. For example, "en_US" is the locale specification for "English spoken in the United States of America" and "fr_FR" is the locale specification for "French spoken in France".

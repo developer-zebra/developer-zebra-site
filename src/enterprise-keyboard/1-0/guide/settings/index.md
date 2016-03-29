@@ -5,9 +5,9 @@ layout: guide.html
 
 ## Overview
 
-Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing shift-key characters and swiping to switch key layouts. 
+Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard adds to Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Saved terms can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
 
 ## Customizing Keyboard Settings
 
@@ -41,7 +41,6 @@ To switch from the system-selected language to a language pack provided with Ent
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
 This version of Enterprise Keyboard includes the following languages: 
 
-* Dutch
 * English (UK)
 * English (US) 
 * French
@@ -50,19 +49,21 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-&#50;. <b>Uncheck Use system language</b>: 
+&#50;. <b>Uncheck "Use system language" checkbox</b>: 
 <img alt="" style="height:350px" src="pref_language.png"/>
 <br>
 
-With Use system language preference unchecked, language packs become available for selection. 
+With the "Use system language" preference unchecked, language packs become available for selection. 
 
 &#51;. <b>Tap one or more languages</b> to select them: 
 <img alt="" style="height:350px" src="pref_language_2.png"/>
 <br>
 
+<!--
 Selected languages will appear in the language  menu in the Enterprise Keyboard: 
 <img alt="" style="height:350px" src="sample_2.png"/>
 <br>
+-->
 
 ------
 
@@ -82,9 +83,12 @@ The Preferences section controls keypress feedback and other aids to productivit
 
 * <b>Sound on keypress</b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
 
+<!--
 * <b>Popup on keypress</b> displays a pop-up of the key being pressed. A delay can be added in [Advanced settings](#advanced).
-
+-->
 * <b>Show scan tab</b> displays a tab for switching to the scanner for collecting barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+
+* <b>Show microphone tab</b> option will appear on GMS-enabled devices, and if checked will display a tab for allowing Enterprise Keyboard to accept spoken input using the Android mic or headset. 
 
 ------
 
@@ -120,7 +124,7 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
 * Spelling suggestions do not appear with all field types.  
-* Once populated, a Personal dictionary may be mass-deployed using Zebra's [StageNow](/stagenow/2-2/about/) tool. 
+* For mass deployment, the Personal dictionary must be populated using Zebra's [StageNow](/stagenow/2-2/about/) tool before being mass-deployed. 
 
 To add a term to the Personal dictionary: 
 
@@ -158,16 +162,14 @@ To edit or delete a term:
 <br>
 
 #### Add-on dictionaries
-Add-on dictionaries by default contain a full set predefined word corrections and suggested words for each language installed on the device. As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time. Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. 
-
-From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting individual entries. No further actions are permitted. 
+Add-on dictionaries contain predefined word corrections and suggested words for each language installed on the device. <!--As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time.Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. -->From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting/reinstalling them. No further actions are permitted. 
 
 <img alt="" style="height:350px" src="pref_dic_addon_1.png"/>
-
+<!--
 <img alt="" style="height:350px" src="pref_dic_addon_2.png"/>
 
 <img alt="" style="height:350px" src="pref_dic_addon_3.png"/>
-
+-->
 ------
 
 ### Advanced 
@@ -176,10 +178,10 @@ The Advanced panel allows the setting of keypress feedback parameters for feedba
 <br>
 
 Tap on a setting to bring up a panel for adjusting that setting: 
-
+<!--
 <b>Key Popup dismiss delay</b> controls whether to delay when dismissing the key popup. 
 <img alt="" style="height:150px" src="adv_popup.png"/>
-<br>
+<br>-->
 
 <b>Keypress vibration duration</b> sets the length of time (from 0 to 100ms) the device will vibrate to indicate that a key was pressed (default = 0ms). 
 <img alt="" style="height:150px" src="adv_vibrate.png"/>

@@ -53,7 +53,7 @@ The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function ke
 <img alt="" style="height:150px" src="keyboard_alpha.png"/>
 
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>
-_Shown here with the Emoji key (top) and other default key assignments_. 
+_Shown here with the EMOJI key (top) and other default key assignments_. 
 <br>
 
 <b>A specially designed color scheme</b> permits easy viewing indoors and out: 

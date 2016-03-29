@@ -1,0 +1,26 @@
+---
+csp: uimgr
+title: Notification Settings
+type: parm
+order: 13
+mx: "5.1"
+apilevel: "16"
+parm:
+  pivotal: Yes
+  name: NotificationSettings
+  type: list
+  list:
+    - code: 0
+      name: Do not change
+      mx: "4.3"
+      apilevel: "16"
+      description: This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.
+    - code: 1
+      name: Change Current Input Method 
+      mx: "4.3"
+      apilevel: "16"
+      description: This value will cause a change to be made to the Current Default Input Method.
+---
+
+Notification Settings desc
+

@@ -1,16 +1,15 @@
 ---
-title:  About Enteprise Keyboard
+title:  About Enterprise Keyboard
 layout: guide.html
 ---
 
 ## Overview
 Enterprise Keyboard is designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and has the ability to scan data directly into an application. 
 
-Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve speed and accuracy of keyboard input. Once populated with terms, the Personal dictionary can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve speed and accuracy of keyboard input. A populated Personal dictionary can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).
 
 This version of Enterprise Keyboard includes the following languages: 
 
-* Dutch
 * English (UK)
 * English (US) 
 * French
@@ -22,36 +21,47 @@ This version of Enterprise Keyboard includes the following languages:
 ### Unique features  
 The Enterprise Keyboard offers the following unique capabilities to help improve speed and accuracy of input:  
 
-<b>Tabs and swipes</b> can be used to switch key layouts:  
+<b>Taps or swipes</b> can be used to switch between key-layout tabs:  
 <img alt="" style="height:350px" src="sample_1.png"/>
-<br>
-
-The <b>Language tab</b> quickly selects languages to include:  
-<img alt="" style="height:350px" src="sample_2.png"/>
-<br>
-
-The <b>Globe icon</b> pages through included languages:  
-<img alt="" style="height:150px" src="keyboard_globe.png"/>
-<br>
-
-The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
-<img alt="" style="height:350px" src="sample_3.png"/>
-<br>
-
-<b>Five remappable keys</b> can be configured for custom input: 
-<img alt="" style="height:150px" src="keyboard_alpha.png"/>
-
-<img alt="" style="height:150px" src="keyboard_numerical.png"/>
 <br>
 
 The <b>Barcode tab</b> permits scanned data to be collected precisely where and when it's needed:
 <img alt="" style="height:350px" src="sample_5.png"/>
 <br>
 
-<b>A specially designed color scheme</b> permits easy viewing indoors and out; <b>finger-flicks</b> input 'shift-key' characters (black) faster than by tapping the shift key.
+<b>Finger-flicks</b> can be used to input the characters (black) otherwise accessed using a long-press:
+<img alt="" style="height:350px" src="emailAddress.png"/>
+<br>
+
+<!--
+The <b>Language tab</b> quickly selects languages to include:  
+<img alt="" style="height:350px" src="sample_2.png"/>
+<br>
+-->
+
+When more than one language is selected in the Preferences panel, the <b>Globe icon</b> appears for quickly switching between languages:  
+<img alt="" style="height:150px" src="keyboard_globe.png"/>
+<br>
+
+<!--
+The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
+<img alt="" style="height:350px" src="sample_3.png"/>
+<br>
+-->
+
+<b>Five remappable keys</b> can be configured to easily create custom key layouts: 
+<img alt="" style="height:150px" src="keyboard_alpha.png"/>
+
+<img alt="" style="height:150px" src="keyboard_numerical.png"/>
+_Shown here with the Emoji key (top) and other default key assignments_. 
+<br>
+
+<b>A specially designed color scheme</b> permits easy viewing indoors and out: 
+<br>
+_Enterprise Keyboard_:
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
 
-Stock Android keyboard:
+_Stock Android keyboard_:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
 

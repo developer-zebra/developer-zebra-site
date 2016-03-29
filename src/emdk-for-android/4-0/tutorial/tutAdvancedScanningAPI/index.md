@@ -1,6 +1,8 @@
 ---
-title:  Advanced Scanning Tutorial using Barcode API
-
+title: Advanced Scanning Tutorial using Barcode API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -1145,3 +1147,11 @@ It will display a success toast when the changes are applied each time you chang
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/AdvancedScanningTutorial.zip).
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 ---
 title: InterfaceConfig
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -32,4 +35,12 @@ Payment device mac address. To enable the payment device, either the payment dev
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
 

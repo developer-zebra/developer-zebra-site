@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.PickList
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -28,4 +31,12 @@ Allows the imager to decode only the bar code that is directly under the
  under the cross-hair (reticle) is decoded. This is useful when used
  in conjunction with the static and dynamic reticle viewfinder modes.
  (Scan Module Only)
+
+
+
+
+
+
+
+
 

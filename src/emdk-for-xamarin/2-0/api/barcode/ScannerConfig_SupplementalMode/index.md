@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.SupplementalMode
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
     
@@ -63,5 +66,14 @@ Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 
 Enables smart supplementals. In this mode the decoder returns the decoded value of the main block right away if it does not belong to one of the following supplemental types: 378, 379, 977, 978, 979, 414, 419, 434 or 439. If the bar code starts with one of the prefixes it searches the image more aggressively for a supplemental. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SupplementalMode
+
+
+
+
+
+
+
+
+
 
 

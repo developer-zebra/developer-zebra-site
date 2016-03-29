@@ -2,7 +2,8 @@
 csp: analyticsmgr
 title: Group Action
 type: parm
-sincemx: 4.3
+mx: "4.3"
+apilevel: "19"
 order: 4
 parm:
   pivotal: Yes
@@ -10,11 +11,13 @@ parm:
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to which groups of metrics are collected by the Analytics Engine or how often they are collected.
     - code: 1
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Configure Levels for Multiple Groups
       description: This value will allow configuration of the groups of metrics to be collected by the Analytics Engine. Each group can configured independently of other groups, but all metrics in a group must be collected or not collected as a set. If collected, all metrics in a group have the same frequency.
 ---

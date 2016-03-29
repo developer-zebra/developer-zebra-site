@@ -3,7 +3,8 @@ csp: encryptmgr
 title: Mount path for EFS
 type: parm
 order: 11
-sincemx: 4.3
+mx: "4.3"
+osx: "1.0"
 parm:
   presentif: The Create EFS action is "Create EFS"
   pivotal: No

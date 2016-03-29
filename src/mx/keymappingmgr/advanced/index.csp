@@ -3,19 +3,19 @@ csp: keymapmgr
 title:  Advanced
 type: parm
 order: 8
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior for the Mapping Table is "Send key-code"
   pivotal: Yes
   type: list
   list:
     - code: 1
-      sincemx: 4.4
+      mx: "4.4"
       name: True
       description: This value indicates that Advanced section will be specified.
     - code: 2
       name: False
-      sincemx: 4.4
+      mx: "4.4"
       description: This value (or the absence of this parm from the XML) indicates that the Advanced section will not be specified.
 ---
 

@@ -1,5 +1,8 @@
 ---
-title:  Wireless Manager Profile Feature Reference
+title: Wireless Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -38,6 +41,14 @@ This profile feature allows your application to turn on or off a devices WAN (Wi
 ## Feature Compatibility
 
 <iframe src="compare.html#mx=4.3&csp=WirelessMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 
 

@@ -171,6 +171,8 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 });
 
 var sitebuild = Metalsmith(__dirname)
+    .clean(false)
+    .concurrency(1000)
 	.metadata({
 	    site: {
 	      title: 'Zebra Technologies - EMDK Samples',
@@ -212,78 +214,6 @@ var sitebuild = Metalsmith(__dirname)
         },
 
 	}))
-    .use(findLayout({
-        pattern: 'mx',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: 'samples',
-        layoutName: 'sample.html'
-    }))
-    .use(findLayout({
-        pattern: '[^/]+/[^/]+/api',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: '[^/]+/[^/]+/guide',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: '[^/]+/[^/]+/tutorial',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: 'stagenow',
-        layoutName: 'guide.html'
-    }))
-    .use(findProduct({
-        pattern: 'emdk-for-android',
-        productName: 'EMDK For Android'
-    }))
-    .use(findProduct({
-        pattern: 'stagenow',
-        productName: 'Stagenow'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-android/3-1',
-        productVersionName: '3.1'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-android/4-0',
-        productVersionName: '4.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-android/4-1',
-        productVersionName: '4.1'
-    }))
-    .use(findProduct({
-        pattern: 'emdk-for-xamarin',
-        productName: 'EMDK For Xamarin'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-xamarin/1-0',
-        productVersionName: '1.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-xamarin/2-0',
-        productVersionName: '2.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'stagenow/2-2',
-        productVersionName: '2.2'
-    }))
-    .use(mxversion({
-        pattern: 'mx/4-2/',
-        mxversion: '4.2'
-    }))
-    .use(mxversion({
-        pattern: 'mx/4-4/',
-        mxversion: '4.4'
-    }))
-    .use(mxversion({
-        pattern: 'mx/5-0/',
-        mxversion: '5.0'
-    }))
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',
         automenu: true
@@ -470,6 +400,9 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'stagenow/2-2/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-3/'
     }))
     .use(showdown({literalMidWordUnderscores:true}))
     .use(snippet({

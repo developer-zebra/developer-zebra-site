@@ -3,6 +3,7 @@ csp: statusmgr
 title: Status Request Action
 type: parm
 order: 2
+mx: "5.0"
 parm:
   pivotal: Yes
   name: RequestAction
@@ -10,12 +11,15 @@ parm:
   list:
     - code: 1
       name: Add/Replace Status Request
+      mx: "5.0"
       description: Add or replace the a status request
     - code: 2
       name: Remove Status Request
+      mx: "5.0"
       description: Remove a status request
     - code: 3
       name: Notify Status
+      mx: "5.0"
       description: Set the notification state
 ---
 

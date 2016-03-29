@@ -3,6 +3,8 @@ csp: intent
 title: MIME Type
 type: parm
 order: 6
+mx: "4.1"
+apilevel: "1"
 parm:
   pivotal: No
   name: Type

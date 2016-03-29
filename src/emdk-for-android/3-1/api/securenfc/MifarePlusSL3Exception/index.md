@@ -1,5 +1,8 @@
 ---
 title: MifarePlusSL3Exception
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of MifarePlusSL3 object throws MifarePlusSL3Exception when an error
@@ -21,4 +24,12 @@ Returns the MifarePlusSL3Results.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifarePlusSL3Results
+
+
+
+
+
+
+
+
 

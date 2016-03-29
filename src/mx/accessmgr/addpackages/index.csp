@@ -3,6 +3,8 @@ csp: accessmgr
 title: Add Packages
 type: parm
 order: 8
+mx: "4.1"
+osx: "1.0"
 parm:
   presentif: The Operation Mode is "Single User With Whitelist"
   pivotal: Yes
@@ -12,9 +14,13 @@ parm:
     - code: 0
       name: Add No Packages
       description: This value will not cause any Package Names to be added to the "white" list.
+      mx: "4.1"
+      osx: "1.0"
     - code: 1
       name: Add Specified Package(s)
       description: This value will cause the specified Package Names to be added the "white" list.
+      mx: "4.1"
+      osx: "1.0"
 ---
 
 Select whether or not to add Packages to the "white" list. Adding an application to the "white" list using this parm does not allow the application to submit XML, that must be done using the separate parm "Add Packages and Allow to Submit XML."

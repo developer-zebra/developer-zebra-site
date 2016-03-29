@@ -1,5 +1,8 @@
 ---
 title: DiagnosticConfig
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The diagnostic configuration class has to be configured before calling the get diagnostics parameter data.
@@ -44,5 +47,13 @@ The shopping trip duration in minutes.
 **Type:**
 
 int
+
+
+
+
+
+
+
+
 
 

@@ -3,7 +3,8 @@ csp: certmgr
 title: Adjust Clock
 type: parm
 order: 8
-sincemx: 4.2
+mx: "4.2"
+apilevel: "1.0"
 parm:
   pivotal: No
   name: CertAdjustClock

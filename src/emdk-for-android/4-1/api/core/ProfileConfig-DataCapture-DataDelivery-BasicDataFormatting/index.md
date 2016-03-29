@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -149,4 +152,12 @@ Set to append an Enter character to the end of the processed data(default - disa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
 

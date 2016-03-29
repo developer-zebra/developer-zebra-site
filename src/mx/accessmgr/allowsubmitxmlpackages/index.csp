@@ -3,6 +3,8 @@ csp: accessmgr
 title: Allow Package Name(s) to Submit XML
 type: parm
 order: 15
+mx: "4.2"
+osx: "4.1"
 parm:
   presentif: Allow the Application To Submit XML is "Allow specified application(s)"
   pivotal: Yes

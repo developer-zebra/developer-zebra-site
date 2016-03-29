@@ -4,16 +4,14 @@ title: Data Capture
 description: Shows how to use the EMDK for Android Profile APIs to manage Data Capture profiles.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileDataCaptureSample1.zip   
-
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileDataCaptureSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileDataCaptureSample1
-
-features: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileDataCaptureSample1'
+features:
   - Profile Manager
   - Data Capture
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -25,10 +23,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
+layout: sample.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ##Overview
@@ -104,4 +105,15 @@ When you uncheck the checkboxes in the application, the DataCaptureProfile-1 is 
 ![img](19.png)
 
 Now when you scan the same Barcode, you will still see the barcode aimer but the data will not be decoded and you will not see the data displayed in the text area.
+
+
+
+
+
+
+
+
+
+
+
 

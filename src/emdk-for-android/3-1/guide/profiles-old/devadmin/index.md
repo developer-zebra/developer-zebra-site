@@ -1,5 +1,8 @@
 ---
-title:  Device Admin Profile Feature Reference
+title: Device Admin Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -41,5 +44,13 @@ An Android application that uses Android Device Admin API's must also be added t
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=DevAdmin&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 

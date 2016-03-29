@@ -1,5 +1,8 @@
 ---
 title: DiagnosticException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of diagnostic API throws DiagnosticException when an error
@@ -20,4 +23,12 @@ Returns the DiagnosticResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.DiagnosticResults
+
+
+
+
+
+
+
+
 

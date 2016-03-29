@@ -3,7 +3,7 @@ csp: persistmgr
 title: Persist As Name
 type: parm
 order: 3
-sincemx: 4.2
+mx: "4.1"
 parm:
   pivotal: No
   name: PersistAsName

@@ -1,5 +1,8 @@
 ---
-title:  EMDK for Xamarin Setup
+title: EMDK for Xamarin Setup
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 ##Before you get started
@@ -41,6 +44,10 @@ Download and install the Xamarin Studio Add-in using the Add-in Manager.
 
 - [Read the Xamarin Component Install Guide](/emdk-for-xamarin/2-0/guide/component/install)
 
+>NOTE: When running both Xamarin Studio and Visual Studio on the same Windows system and differing EMDK for Xamarin component versions are installed in each IDE, all versions of the component will be visible in the **Edit Components** screen for your project.
+![img](../../images/setup/both_components_visible.png)
+
+
 ### 3) Try the Sample
 A sample is included as part of the Xamarin Component package to help get you started. Click on the **samples** tab on the component details page to add it to your solution project.
 
@@ -67,3 +74,12 @@ We have a lot more resources for you to benefit from:
 - More Samples
 - [More docs online](http://emdk.github.io/xamarin-docs/edge)
 </div>
+
+
+
+
+
+
+
+
+

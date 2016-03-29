@@ -1,6 +1,9 @@
 ---
 title: SecureNfcException
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,12 @@ Returns the SecureNfcResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.SecureNfcResults
+
+
+
+
+
+
+
+
 

@@ -3,23 +3,27 @@ csp: cellularmgr
 title: Set the state of Data Roaming
 type: parm
 order: 2
-sincemx: 4.3
+mx: "4.3"
+apilevel: "17"
 parm:
   pivotal: No
   name: DataRoamingState
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "17"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current state of the Data Roaming Option.
     - code: 1
       name: Turn On
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "17"
       description: This value will cause the Data Roaming Option to be turned On, thus allowing Cellular data connections when roaming.
     - code: 2
       name: Turn Off
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "17"
       description: This value will cause the Data Roaming Option to be turned Off, thus disallowing Cellular data connections when roaming.
 ---
 

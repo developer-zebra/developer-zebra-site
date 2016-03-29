@@ -1,5 +1,8 @@
 ---
-title:  Touch Manager Profile Feature Reference
+title: Touch Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -24,6 +27,14 @@ Specify Touch Mode to interact with User Interface on the device.
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=TouchMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
 
 
 

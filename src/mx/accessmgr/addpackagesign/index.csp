@@ -8,7 +8,8 @@ parm:
   pivotal: Yes
   name: AddPackageSign
   type: string
-sincemx: 4.3
+mx: "4.3"
+osx: "3.4"
 ---
 
 Provide the Signatures that should be added to the "white" list. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no package signatures to be added.

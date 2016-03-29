@@ -3,19 +3,22 @@ csp: uimgr
 title: Clear Clipboard
 type: parm
 order: 3
-sincemx: 4.3
+mx: "4.2"
+osx: "4.2"
 parm:
   pivotal: No
   name: ClipBoardClear
   type: list
   list:
     - code: true
-      sincemx: 4.3
+      mx: "4.2"
+      osx: "4.2"
       name: True
       description: This value will cause the clipboard to be cleared, thus erasing any content that was previously copied into the clipboard and hence preventing such content from thereafter being pasted.
     - code: false
       name: False 
-      sincemx: 4.3
+      mx: "4.2"
+      osx: "4.2"
       description: This value will cause no change to be made to the contents of the clipboard.
 ---
 

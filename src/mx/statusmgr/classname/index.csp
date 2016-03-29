@@ -3,6 +3,7 @@ csp: statusmgr
 title: Class Name
 type: parm
 order: 6
+mx: "5.0"
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request" or "Remove State Request"

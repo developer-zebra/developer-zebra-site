@@ -1,5 +1,8 @@
 ---
-title:  EMDK For Android Setup
+title: EMDK For Android Setup
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -32,5 +35,13 @@ Android studio is now Google's official IDE for Android development. Using Andro
 **Windows** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
 
 **Mac** - Follow this [**guide**](/emdk-for-android/4-1/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
+
+
+
+
+
+
+
+
 
 

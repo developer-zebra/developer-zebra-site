@@ -1,5 +1,8 @@
 ---
 title: ScanAndPairConfig
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The ScanAndPairConfig class provides a way to configure the settings to use it in scanAndPair() or scanAnUnpair() methods.
@@ -116,5 +119,13 @@ Provides the list of supported trigger types.
 * **SOFT** -Scanner is turned ON automatically and no need to press any triggers
 
 * **HARD** -Hardware trigger needs to be manually pressed to turn ON the scanner
+
+
+
+
+
+
+
+
 
 

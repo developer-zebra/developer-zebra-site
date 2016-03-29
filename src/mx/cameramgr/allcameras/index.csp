@@ -3,23 +3,27 @@ csp: cameramgr
 title: All Cameras
 type: parm
 order: 3
-sincemx: 4.3
+mx: "4.3"
+osx: "3.5"
 parm:
   pivotal: Yes
   name: UseAllCameras
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       name: Control Individual Cameras
       description: This value (or the absence of this parm from the XML) will cause no changes to whether any of the device's cameras can be used.
     - code: 1
       name: Enable ALL Cameras
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: This value will cause use of all the device's cameras to be enabled, thus allowing the device user to use any of those cameras to take pictures, if an application exists on the device to do so.
     - code: 2
       name: Disable ALL Cameras
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "3.5"
       description: This value will cause use of all the device's cameras to be disabled, thus preventing the device user from using any of those cameras to take pictures, even if an application exists on the device to do so.
 ---
 

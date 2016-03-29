@@ -3,23 +3,23 @@ csp: keymapmgr
 title:  FN state
 type: parm
 order: 11
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send key-code" *AND* Advanced is "True"
   pivotal: No
   type: list
   list:
     - code: 0
-      sincemx: 4.4
+      mx: "4.4"
       name: Use existing state
       description: This value (or the absence of this parm from the XML) will cause the Function Key State Modifier to be left unchanged, thus making it the same as when the Key was pressed.
     - code: 1
       name: Force On
-      sincemx: 4.4
+      mx: "4.4"
       description: This value will set the Control Key State Modifier, thus forcing the Key Code sent to be interpreted as Function.
     - code: 2
       name: Force Off
-      sincemx: 4.4
+      mx: "4.4"
       description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Function.
 ---
 

@@ -1,5 +1,8 @@
 ---
-title:  Setting The Clock With ProfileManager
+title: Setting The Clock With ProfileManager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 ## Overview
 
@@ -421,3 +424,11 @@ Now that you have learned how to configure date and time using Mx feature, let u
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDKMxClockTutorial.zip).
+
+
+
+
+
+
+
+

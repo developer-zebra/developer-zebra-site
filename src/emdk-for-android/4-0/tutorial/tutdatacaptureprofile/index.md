@@ -1,5 +1,8 @@
 ---
-title:  Data Capture Profile Feature Tutorial
+title: Data Capture Profile Feature Tutorial
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 ## Developing an EMDK for Android Application Part 1
 
@@ -258,3 +261,11 @@ Now that you have learned the basics of an EMDK for Android application, the [ne
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCapture-ProfileManagerTutorial.zip).
+
+
+
+
+
+
+
+

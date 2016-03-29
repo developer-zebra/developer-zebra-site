@@ -3,23 +3,23 @@ csp: dhcpoptionmgr
 title: TFTP Server Address (150)
 type: parm
 order: 10
-sincemx: 4.4
+mx: "4.4"
 parm:
   pivotal: No
   name: TFTPServerAddrState
   type: list
   list:
     - code: 0
-      sincemx: 4.4
+      mx: "4.4"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
     - code: 1
       name: Enable
-      sincemx: 4.4
+      mx: "4.4"
       description: This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.
     - code: 2
       name: Disable
-      sincemx: 4.4
+      mx: "4.4"
       description: This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.
 ---
 

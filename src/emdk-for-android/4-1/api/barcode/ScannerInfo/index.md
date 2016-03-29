@@ -1,6 +1,9 @@
 ---
 title: ScannerInfo
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 
@@ -139,4 +142,12 @@ com.symbol.emdk.barcode.ScannerInfo.DecoderType - Returns the DECODER_TYPE
 **Returns:**
 
 boolean
+
+
+
+
+
+
+
+
 

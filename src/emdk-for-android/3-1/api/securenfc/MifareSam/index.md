@@ -1,5 +1,8 @@
 ---
 title: MifareSam
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Provides access to MIFARE SAM properties and I/O operations on an SAM object.
@@ -190,5 +193,13 @@ SAM modes
 * **AV2** -MIFARE SAM is in AV2 mode
 
 * **UNDEFINED** -MIFARE SAM is in invalid mode
+
+
+
+
+
+
+
+
 
 

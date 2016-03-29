@@ -1,6 +1,9 @@
 ---
 title: SamKey
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -30,4 +33,12 @@ Key version Value: 0x00 - 0xFF
 **Type:**
 
 byte
+
+
+
+
+
+
+
+
 

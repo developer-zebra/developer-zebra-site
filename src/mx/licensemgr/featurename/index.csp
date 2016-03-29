@@ -3,6 +3,7 @@ csp: licensemgr
 title: Standard Feature Name
 type: parm
 order: 4
+mx: "4.3"
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Apply" *AND* "Specify verification method to use" is "Verify against a standard feature name"
@@ -11,6 +12,7 @@ parm:
   list:
     - code: SIMULDC1_0_0
       name: SimulScan OCR/OMR
+      mx: "4.3"
       description: This value will cause Licensed Feature Name contained within the Software License File to be verified as matching the Standard Licensed Feature Name of the SimulScan Software Component.
 ---
 

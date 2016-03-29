@@ -1,5 +1,8 @@
 ---
-title:  Set Default Launcher Application Using App Manager 
+title: Set Default Launcher Application Using App Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -610,4 +613,12 @@ Now that you have learned how to configure applications in the device using Mx A
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDKMxDefaultLauncherTutorial.zip). You can also [download](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk) the Package Name helper application and install it - or modify the [source](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps-Source.zip) to your liking.
+
+
+
+
+
+
+
+
 

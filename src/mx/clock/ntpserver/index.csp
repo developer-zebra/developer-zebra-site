@@ -3,7 +3,8 @@ csp: clock
 title: NTPServer
 type: parm
 order: 3
-sincemx: 4.2
+mx: "4.2"
+apilevel: "19"
 parm:
   presentif: AutoTime is "true"
   pivotal: No

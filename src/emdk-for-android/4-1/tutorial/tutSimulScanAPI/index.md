@@ -1,5 +1,8 @@
 ---
-title:  Capture critical data from documents using SimulScan API
+title: Capture critical data from documents using SimulScan API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.1'
 ---
 
 ## Overview
@@ -791,3 +794,11 @@ Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/
 
 ## Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/SimulScanTutorial.zip).
+
+
+
+
+
+
+
+

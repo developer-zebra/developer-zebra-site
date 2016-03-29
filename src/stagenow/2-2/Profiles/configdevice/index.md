@@ -1,5 +1,7 @@
 ---
 title: Configure a Device
+layout: guide.html
+product: Stagenow
 ---
 Use this Wizard to configure the most common device settings such as locale, security options, applications, MDM enrollment, and production network settings.  This Wizard also allows you to connect to a staging and/or production network, reboot the device, or update the OS. 
 
@@ -50,4 +52,10 @@ To create a Configure Device profile:
 
 
 16. Select Continue to proceed to the [Review window](/stagenow/2-2/stagingprofiles?Review).
+
+
+
+
+
+
 

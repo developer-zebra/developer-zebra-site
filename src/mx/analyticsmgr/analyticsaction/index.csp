@@ -3,22 +3,26 @@ csp: analyticsmgr
 title: Analytics Action
 type: parm
 order: 2
-sincemx: 4.3
+mx: "4.3"
+apilevel: "19"
 parm:
   pivotal: No
   name: AnalyticsAction
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Engine collects data on the device.
     - code: 1
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Enable
       description: This value will cause the Analytics Engine to be enabled and hence to collect data on the device.
     - code: 2
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Disable
       description: This value will cause the Analytics Engine to be disabled and hence to not collect data on the device.
 ---

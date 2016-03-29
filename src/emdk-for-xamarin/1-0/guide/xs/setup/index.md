@@ -1,5 +1,8 @@
 ---
 title: Xamarin Studio Setup
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ## Watch This Guide
@@ -74,4 +77,14 @@ Mac:
 
 ## What's Next
 In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/1-0/guide/component/install)
+
+
+
+
+
+
+
+
+
+
 

@@ -3,7 +3,8 @@ csp: certmgr
 title: Certificate File Client
 type: parm
 order: 7
-sincemx: 4.2
+mx: "4.1"
+osx: "1.0"
 parm:
   pivotal: No
   name: CertFileClient

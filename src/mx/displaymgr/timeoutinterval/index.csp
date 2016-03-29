@@ -3,42 +3,51 @@ csp: displaymgr
 title: Set the Screen Off Timeout Interval
 type: parm
 order: 3
-sincemx: 4.4
+mx: "4.3"
+apilevel: "1"
 parm:
   pivotal: No
   name: TimeoutInterval
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       name: Do not cThis value (or the absence of this parm from the XML) will not cause any changes to the current display screen timeout interval.
     - code: 15
       name: 15 seconds after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after 15 seconds with no device user interactions
     - code: 30
       name: 30 seconds after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after 30 seconds with no device user interactions.
     - code: 60
       name: 1 minute after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after 1 minute with no device user interactions.
     - code: 120
       name: 2 minutes after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after 2 minutes with no device user interactions.
     - code: 300
       name: 5 minutes after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after 5 minutes with no device user interactions.
     - code: 600
       name: 10 minutes after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after 10 minutes with no device user interactions.
     - code: 1800
       name: 30 minutes after Display Timeout
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "1"
       description: This value will cause the display screen to timeout after half an hour with no device user interactions.
 ---
 

@@ -1,5 +1,8 @@
 ---
-title:  Barcode Profile Feature Reference
+title: Barcode Profile Feature Reference
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.0'
 ---
 
 ## Overview
@@ -363,4 +366,13 @@ In order for your application to receive the barcode data, you must specify one 
 * [Intent](../intent)
 * [Keystroke](../keystroke)
 * [IP](../IP)
+
+
+
+
+
+
+
+
+
 

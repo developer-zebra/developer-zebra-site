@@ -1,5 +1,8 @@
 ---
 title: BarcodeManager.ScannerConnectionListener.ConnectionStatus
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The ConnectionStatus class provides the information about status of scanner connection changes.
@@ -22,3 +25,11 @@ Returns the ScannerInfo obj of scanner for which the data is returned.
 **Returns:**
 
 [ScannerInfo](ScannerInfo): Returns ScannerInfo obj of the pluggable scanner.
+
+
+
+
+
+
+
+

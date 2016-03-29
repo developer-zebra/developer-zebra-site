@@ -22,9 +22,9 @@ menu:
         url: mx/analytics
       - title: App Manager
         url: mx/app
-      - title: Audio Manager 
+      - title: Audio Manager
         url: mx/audiomgr
-      - title: Battery Manager 
+      - title: Battery Manager
         url: mx/battery
       - title: Browser Manager
         url: mx/browser
@@ -36,7 +36,7 @@ menu:
         url: mx/cert
       - title: Clock
         url: mx/clock
-      - title: Component Manager 
+      - title: Component Manager
         url: mx/component
       - title: Data Capture
         items:
@@ -54,7 +54,7 @@ menu:
             url: mx/data-capture/msr
       - title: Dev Admin
         url: mx/devadmin
-      - title: DHCP Manager 
+      - title: DHCP Manager
         url: mx/dhcp
       - title: Display Manager
         url: mgr
@@ -62,7 +62,7 @@ menu:
         url: mx/encrypt
       - title: GPRS Manager
         url: mx/gprs
-      - title: KeyMap Manager 
+      - title: KeyMap Manager
         url: mx/keymap
       - title: Persistence Manager
         url: mx/persistence
@@ -88,14 +88,22 @@ menu:
         url: mx/wireless
       - title: XML  Manager
         url: mx/xml
-      - title: 
-        url: 
+      - title: null
+        url: null
   - title: Platform Intents
     items:
       - title: Datawedge Intents
         url: guide/reference/refdatacaptureintent
       - title: Battery Intent
         url: guide/reference/refbatteryintent
-
-
+product: EMDK For Android
+productversion: '2.3'
 ---
+
+
+
+
+
+
+
+

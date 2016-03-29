@@ -1,6 +1,9 @@
 ---
 title: MifareDesfire.CardVersionInfo
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -31,4 +34,12 @@ Manufacturer information
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.CardVersionInfo.ManufacturerInfo
+
+
+
+
+
+
+
+
 

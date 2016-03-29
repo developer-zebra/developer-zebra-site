@@ -8,6 +8,8 @@ parm:
   pivotal: Yes
   name: DeletePackageNames
   type: string
+mx: "4.1"
+osx: "1.0"
 ---
 
 Provide the Package Names to be deleted from the "white" list.

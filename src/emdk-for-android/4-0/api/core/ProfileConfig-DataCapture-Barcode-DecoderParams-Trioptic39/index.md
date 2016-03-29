@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Trioptic39
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -36,4 +39,12 @@ Sets the reader to read the bar code twice before accepting data. (default - ena
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
 

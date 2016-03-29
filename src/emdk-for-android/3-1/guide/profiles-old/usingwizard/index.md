@@ -1,5 +1,8 @@
 ---
-title:  Using EMDK for Android Profiles
+title: Using EMDK for Android Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ##EMDK Profiles Overview
 
@@ -477,4 +480,12 @@ Here is a summary of the above scenarios when using PROFILE_FLAG.SET and XML in 
 		<td>FAILURE is returned</td>
 	</tr>
 </table>
+
+
+
+
+
+
+
+
 

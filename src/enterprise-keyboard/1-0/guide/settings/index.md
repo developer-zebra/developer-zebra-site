@@ -17,7 +17,7 @@ Enterprise Keyboard Settings are accessed through the Android Settings panel:
 <img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. <b>Tap Language and input</b>:
+&#50;. <b>Tap the "Language and input" control</b>:
 <img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
@@ -37,7 +37,7 @@ By default, Enterprise Keyboard uses the language selected in the 'Language and 
 
 To switch from the system-selected language to a language pack provided with Enterprise Keyboard: 
 
-&#49;. <b>Tap on Languages</b> in the Enterprise Keyboard Preferences panel: 
+&#49;. <b>Tap on "Languages"</b> in the Enterprise Keyboard Preferences panel: 
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
 This version of Enterprise Keyboard includes the following languages: 
 
@@ -128,7 +128,7 @@ The Personal dictionary can be used to store terms specific to a particular indu
 
 To add a term to the Personal dictionary: 
 
-&#49;. <b>Tap Personal dictionary</b> in the Text correction Preference panel: 
+&#49;. <b>Tap "Personal dictionary"</b> in the Text correction Preference panel: 
 <img alt="" style="height:350px" src="personal_dic.png"/>
 <br>
 
@@ -220,7 +220,7 @@ To remap a key:
 <img alt="" style="height:350px" src="remap_keypad.png"/>
 <br>
 
-&#51;. <b>Tap OK</b> to store the setting. Changes take effect immediately. 
+&#51;. <b>Tap "OK"</b> to store the setting. Changes take effect immediately. 
 
 ------
 
@@ -238,11 +238,11 @@ To enable DataWedge on a device (or confirm that it's enabled):
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>
 <br>
 
-&#50;. Tap the DataWedge menu (arrow), then <b>Tap Settings</b>. 
+&#50;. Tap the DataWedge menu (arrow), then <b>Tap the "Settings" menu item</b>: 
 <img alt="" style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. Confirm that <b>DataWedge enabled</b> box is checked. 
+&#51;. Confirm that <b>"DataWedge enabled"</b> box is checked. 
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 

@@ -5,9 +5,9 @@ layout: guide.html
 
 ## Overview
 
-Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing shift-key characters and swiping to switch key layouts. 
+Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard adds to Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Saved terms can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
 
 ## Customizing Keyboard Settings
 
@@ -17,7 +17,7 @@ Enterprise Keyboard Settings are accessed through the Android Settings panel:
 <img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. <b>Tap Language and input</b>:
+&#50;. <b>Tap the "Language and input" control</b>:
 <img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
@@ -31,17 +31,16 @@ Enterprise Keyboard Settings are accessed through the Android Settings panel:
 ------
 
 ### Languages
-By default, Enterprise Keyboard uses the language selected in the 'Language and input' part of the Android Settings panel: 
+By default, Enterprise Keyboard uses the language selected in the "Language and input" part of the Android Settings panel: 
 
 <img alt="" style="height:350px" src="android_lang.png"/>
 
-To switch from the system-selected language to a language pack provided with Enterprise Keyboard: 
+#####Switch from system-selected language to one provided with Enterprise Keyboard: 
 
-&#49;. <b>Tap on Languages</b> in the Enterprise Keyboard Preferences panel: 
+&#49;. <b>Tap on "Languages"</b> in the Enterprise Keyboard Preferences panel: 
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
 This version of Enterprise Keyboard includes the following languages: 
 
-* Dutch
 * English (UK)
 * English (US) 
 * French
@@ -50,26 +49,28 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-&#50;. <b>Uncheck Use system language</b>: 
+&#50;. <b>Uncheck "Use system language" checkbox</b>: 
 <img alt="" style="height:350px" src="pref_language.png"/>
 <br>
 
-With Use system language preference unchecked, language packs become available for selection. 
+With the "Use system language" preference unchecked, language packs become available for selection. 
 
 &#51;. <b>Tap one or more languages</b> to select them: 
 <img alt="" style="height:350px" src="pref_language_2.png"/>
 <br>
 
+<!--
 Selected languages will appear in the language  menu in the Enterprise Keyboard: 
 <img alt="" style="height:350px" src="sample_2.png"/>
 <br>
+-->
 
 ------
 
 ### Preferences
 The Preferences section controls keypress feedback and other aids to productivity. Default settings are shown here:  
 
-<img alt="" style="height:350px" src="pref_scan.png"/>
+<img alt="" style="height:350px" src="ekb_prefs.png"/>
 <br>
 
 ##### Set preferences as desired: 
@@ -82,9 +83,12 @@ The Preferences section controls keypress feedback and other aids to productivit
 
 * <b>Sound on keypress</b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
 
+<!--
 * <b>Popup on keypress</b> displays a pop-up of the key being pressed. A delay can be added in [Advanced settings](#advanced).
-
+-->
 * <b>Show scan tab</b> displays a tab for switching to the scanner for collecting barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+
+* <b>Voice input key</b> option will appear on GMS-enabled devices only. When checked, will display a key for allowing Enterprise Keyboard to accept spoken input using the mic. 
 
 ------
 
@@ -109,7 +113,7 @@ Text Correction controls automatic corrections to typed text based the predefine
 <b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next.
 
 #### Personal dictionary
-The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of input from the keyboard. For example, if configured for a medical device, typing 'met' might present the word 'metastasize' and similar medical terms that begin with the same letters. 
+The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of input from the keyboard. For example, if configured for a medical device, typing "gerd" might present the phrase "gastroesophageal reflux disease" and similar medical terms that begin with the same letters. 
 
 <img alt="" style="height:350px" src="pref_text_1.png"/>
 <br>
@@ -120,15 +124,15 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
 * Spelling suggestions do not appear with all field types.  
-* Once populated, a Personal dictionary may be mass-deployed using Zebra's [StageNow](/stagenow/2-2/about/) tool. 
+* For mass deployment, the Personal dictionary must be populated using Zebra's [StageNow](/stagenow/2-2/about/) tool beforehand. 
 
-To add a term to the Personal dictionary: 
+#####Add a term to the Personal dictionary: 
 
-&#49;. <b>Tap Personal dictionary</b> in the Text correction Preference panel: 
+&#49;. <b>Tap "Personal dictionary"</b> in the Text correction Preference panel: 
 <img alt="" style="height:350px" src="personal_dic.png"/>
 <br>
 
-&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select 'For all languages' to display Personal dictionary terms with every language pack:  
+&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select "For all languages" to display Personal dictionary terms with every language pack:  
 <img alt="" style="height:350px" src="pref_dic.png"/>
 <br>
 
@@ -137,37 +141,37 @@ To add a term to the Personal dictionary:
 <br>
 
 &#51;. <b>Enter the word or phrase</b> (and shortcut, if desired), then <b>tap the gear icon to save</b>. 
-<img alt="" style="height:350px" src="enter_term.png"/>
+<img alt="" style="height:350px" src="enter_term_gerd.png"/>
+<br>
+
+&#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed: 
+<img alt="" style="height:350px" src="term_list_gerd.png"/>
 <br>
 
 When a shortcut is typed as input, its associated term will appear in a list of spelling corrections: 
-<img alt="" style="height:350px" src="autocorrected_mz.png"/>
+<img alt="" style="height:350px" src="autocorrected_gerd.png"/>
+Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
 <br>
 
-&#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed (see below). 
-<br>
+#####Edit or delete a term: 
 
-To edit or delete a term: 
-
-&#49;. <b>tap the term</b> in the terms list:
-<img alt="" style="height:350px" src="term_list.png"/>
+&#49;. Bring up the terms list and <b>tap the term</b>  to be edited:
+<img alt="" style="height:350px" src="term_list_gerd.png"/>
 <br>
 
 &#50;. <b>Edit the term</b> or tap the trashcan icon to delete: 
-<img alt="" style="height:350px" src="enter_term.png"/>
+<img alt="" style="height:350px" src="enter_term_gerd.png"/>
 <br>
 
 #### Add-on dictionaries
-Add-on dictionaries by default contain a full set predefined word corrections and suggested words for each language installed on the device. As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time. Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. 
-
-From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting individual entries. No further actions are permitted. 
+Add-on dictionaries contain predefined word corrections and suggested words for each language installed on the device. <!--As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time.Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. -->From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting/reinstalling them. No further actions are permitted. 
 
 <img alt="" style="height:350px" src="pref_dic_addon_1.png"/>
-
+<!--
 <img alt="" style="height:350px" src="pref_dic_addon_2.png"/>
 
 <img alt="" style="height:350px" src="pref_dic_addon_3.png"/>
-
+-->
 ------
 
 ### Advanced 
@@ -176,10 +180,10 @@ The Advanced panel allows the setting of keypress feedback parameters for feedba
 <br>
 
 Tap on a setting to bring up a panel for adjusting that setting: 
-
+<!--
 <b>Key Popup dismiss delay</b> controls whether to delay when dismissing the key popup. 
 <img alt="" style="height:150px" src="adv_popup.png"/>
-<br>
+<br>-->
 
 <b>Keypress vibration duration</b> sets the length of time (from 0 to 100ms) the device will vibrate to indicate that a key was pressed (default = 0ms). 
 <img alt="" style="height:150px" src="adv_vibrate.png"/>
@@ -208,17 +212,17 @@ Remapping panel shows current settings of remappable keys:
 <img alt="" style="height:350px" src="pref_remap.png"/>
 <br>
 
-To remap a key: 
+#####Remap a key: 
 
 &#49;. Bring up the Remapping panel and <b>tap on the key to be remapped</b>:
 <img alt="" style="height:350px" src="remap.png"/>
 <br>
 
-&#50;. <b>Specify a Unicode value or alternative character</b> to associate with that key:  
+&#50;. <b>Specify a Unicode value or type an alternative character</b> to associate with that key:  
 <img alt="" style="height:350px" src="remap_keypad.png"/>
 <br>
 
-&#51;. <b>Tap OK</b> to store the setting. Changes take effect immediately. 
+&#51;. <b>Tap "OK"</b> to store the setting. Changes take effect immediately. 
 
 ------
 
@@ -230,17 +234,17 @@ Locate and <b>tap the DataWedge icon</b> on the device.
 <br>
 
 
-To enable DataWedge on a device (or confirm that it's enabled): 
+#####Enable DataWedge on a device (or confirm that it's enabled): 
 
 &#49;. Locate and <b>tap the DataWedge icon</b> on the device. 
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>
 <br>
 
-&#50;. Tap the DataWedge menu (arrow), then <b>Tap Settings</b>. 
+&#50;. Tap the DataWedge menu (arrow), then <b>Tap the "Settings" menu item</b>: 
 <img alt="" style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. Confirm that <b>DataWedge enabled</b> box is checked. 
+&#51;. Confirm that <b>"DataWedge enabled"</b> box is checked. 
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 

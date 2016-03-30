@@ -1,16 +1,15 @@
 ---
-title:  About Enteprise Keyboard
+title:  About Enterprise Keyboard
 layout: guide.html
 ---
 
 ## Overview
-Enterprise Keyboard is designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and has the ability to scan data directly into an application. 
+Enterprise Keyboard is designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
 
-Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve speed and accuracy of keyboard input. Once populated with terms, the Personal dictionary can be mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).
 
 This version of Enterprise Keyboard includes the following languages: 
 
-* Dutch
 * English (UK)
 * English (US) 
 * French
@@ -20,38 +19,49 @@ This version of Enterprise Keyboard includes the following languages:
 * Russian
 
 ### Unique features  
-The Enterprise Keyboard offers the following unique capabilities to help improve speed and accuracy of input:  
+The Enterprise Keyboard offers the following unique capabilities to help improve input speed and accuracy:  
 
-<b>Tabs and swipes</b> can be used to switch key layouts:  
+<b>Switch layouts with taps or swipes</b>:  
 <img alt="" style="height:350px" src="sample_1.png"/>
 <br>
 
-The <b>Language tab</b> quickly selects languages to include:  
-<img alt="" style="height:350px" src="sample_2.png"/>
-<br>
-
-The <b>Globe icon</b> pages through included languages:  
-<img alt="" style="height:150px" src="keyboard_globe.png"/>
-<br>
-
-The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
-<img alt="" style="height:350px" src="sample_3.png"/>
-<br>
-
-<b>Five remappable keys</b> can be configured for custom input: 
-<img alt="" style="height:150px" src="keyboard_alpha.png"/>
-
-<img alt="" style="height:150px" src="keyboard_numerical.png"/>
-<br>
-
-The <b>Barcode tab</b> permits scanned data to be collected precisely where and when it's needed:
+<b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
 <img alt="" style="height:350px" src="sample_5.png"/>
 <br>
 
-<b>A specially designed color scheme</b> permits easy viewing indoors and out; <b>finger-flicks</b> input 'shift-key' characters (black) faster than by tapping the shift key.
+<b>Input long-press characters with a finger-flick</b>:
+<img alt="" style="height:350px" src="emailAddress.png"/>
+<br>
+
+<!--
+The <b>Language tab</b> quickly selects languages to include:  
+<img alt="" style="height:350px" src="sample_2.png"/>
+<br>
+-->
+
+<b>The Globe key quickly pages through selected languages</b>:  
+<img alt="" style="height:150px" src="keyboard_globe.png"/>
+<br>
+
+<!--
+The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
+<img alt="" style="height:350px" src="sample_3.png"/>
+<br>
+-->
+
+<b>Remappable keys easily enable custom key layouts</b>: 
+<img alt="" style="height:150px" src="keyboard_alpha.png"/>
+
+<img alt="" style="height:150px" src="keyboard_numerical.png"/>
+_Shown here with the EMOJI key (top) and other default key assignments_. 
+<br>
+
+<b>A specially designed color scheme</b> permits easy viewing indoors and out: 
+<br>
+_Enterprise Keyboard_:
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
 
-Stock Android keyboard:
+_Stock Android keyboard_:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
 

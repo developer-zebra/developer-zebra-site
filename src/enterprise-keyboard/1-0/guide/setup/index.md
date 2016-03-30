@@ -4,7 +4,7 @@ layout: guide.html
 ---
 
 ## Overview
-The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on KitKat devices. To make it available to users, it must be activated and optionally can be set as the default input method, if desired. This guide covers activation of Enterprise Keyboard and the steps for setting it as the default input device. 
+The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, please see the [Customize section](../settings). 
 
 Activation and configuration can be done in one of three ways: 
 
@@ -17,21 +17,30 @@ Activation and configuration can be done in one of three ways:
 ## Manual Activation
 The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Activation section](#automatedactivation) later in this guide. 
 
-To activate Enterprise Keyboard on a device: 
+
+<b>To quickly determine whether Enterprise Keyboard has been activated</b>: 
+1. Bring up the Android keyboard and long-press the spacebar. 
+2. If "Enterprise Keyboard" appears in a screen like the one below, tap its radio button (arrow) to set it as the default input device:
+<img alt="" style="height:150px" src="2a_choose_input.png"/>
+<br>
+
+If the Enterprise Keyboard does not appear, proceed to the steps below. 
+
+#####Activate Enterprise Keyboard: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. Scroll to and <b>tap Language and input</b>:
+&#50;. Scroll to and <b>tap the "Language and input" control</b>:
 <img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
-&#51;. <b>Place a check next to Enterprise Keyboard</b> to enable it on the device. Uncheck other input devices to disable them, if desired. If Enterprise Keyboard was included with the device by default (and not downloaded as an OS patch), this step should have already been done. 
+&#51;. <b>Place a check next to "Enterprise Keyboard"</b> to enable it on the device. Uncheck other input devices to disable them, if desired. If Enterprise Keyboard was included with the device by default (and not downloaded as an OS patch), this step might not be neccessary. 
 <img alt="" style="height:350px" src="panel_default.png"/>
 <br> 
 
-&#52;. <b>Tap Default</b> to set the default input device:
+&#52;. <b>Tap "Default"</b> to set the default input device:
 <img alt="" style="height:350px" src="default_input.png"/>
 
 &#53;. <b>Tap the Enterprise Keyboard radio button</b> to set it as default input device:
@@ -48,13 +57,13 @@ Enterprise Keyboard is now ready to use with default settings.
 ### Change Settings
 Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
 
-To change Enterprise Keyboard settings:
+#####Change Enterprise Keyboard settings:
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. <b>Tap Language and input</b>:
+&#50;. <b>Tap the "Language and input" control</b>:
 <img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
@@ -73,9 +82,9 @@ Enterprise Keyboard can be configured remotely on multiple managed devices using
 
 Actions to be executed on the Android Settings panel:
 1. <b>Open Language and input</b> 
-2. Add a check for <b>'Enterprise Keyboard'</b> to enable it on the device
+2. Add a check for <b>"Enterprise Keyboard"</b> to enable it on the device
 3. <b>Select Enterprise Keyboard</b> as the default input device
-4. <b>Select a language</b> if other than English (default)
+4. <b>Select a language</b> (if other than the system default)
 
 Please refer to the respective tool of choice for more information. 
 
@@ -88,23 +97,23 @@ Enterprise Keyboard cannot be removed if it was included with the device operati
 
 ### Manual Deactivation
 
-To deactivate Enterprise Keyboard: 
+#####Deactivate Enterprise Keyboard on a device: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
 <br>
 
-&#50;. Scroll to and <b>tap Language and input</b>:
+&#50;. Scroll to and <b>tap the "Language and input" control</b>:
 <img alt="" style="height:350px" src="input_in_settings.png"/>
 <br>
 
-&#51;. <b>Remove the check next to Enterprise Keyboard</b> to disable it on the device. If the Android keyboard is the only other input device, it will automatically become the default input devices and cannot be disabled. 
+&#51;. <b>Remove the check next to "Enterprise Keyboard"</b> to disable it on the device. If the Android keyboard is the only other input device, it will automatically become the default input devices and cannot be disabled. 
 <img alt="" style="height:350px" src="panel_default.png"/>
 <br> 
 
 
-Manual uninstallation of Enterprise Keyboard is complete. 
+Manual deactivation of Enterprise Keyboard is complete. 
 
-### Automated Uninstallation
-Enterprise Keyboard can be uninstalled from multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+### Automated Deactivation
+Enterprise Keyboard can be deactivated from multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 

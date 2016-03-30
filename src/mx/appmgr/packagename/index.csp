@@ -13,12 +13,13 @@ parm:
   type: string
 ---
 
->**Note:** To perform the above listed Actions on an application, the Package Name of that application must be known and specified. The Package Name can be acquired from the application developer, by looking up the Package Name on a device, or using developer tools to extract the Package Name from the APK file.
+>**Note:** To perform the above listed Actions on an application, the Package Name or Simple Name of that application must be known and specified. The Package Name can be acquired from the application developer, by looking up the Package Name on a device, or using developer tools to extract the Package Name from the APK file. The Simple Name is the name that accompanies the application icon in the Android Launcher and App Drawer or is specified in the `app_name` field of the `strings.xml` file. 
 
-Provide the Package Name of the application for the application action.
+Provide the Package Name or Simple Name of the application for the application action.
 
 Parm value input rules: 
 
-* String containing the valid name of the package. For example, 'com.mycompany.mypackage'.
-* The minimum length is 1 character and the maximum length is 255 characters
-* The package names must be separated by commas
+* String containing the valid name of the package. For example: `com.mycompany.mypackage`
+* String containing the Simple Name of the application 
+* The minimum length is 1 character; the maximum length is 255 characters
+* Package Names must be separated by commas

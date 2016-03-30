@@ -24,7 +24,9 @@ The section covers direct activation of Enterprise Keyboard on a single device. 
 <img alt="" style="height:150px" src="2a_choose_input.png"/>
 <br>
 
-If the Enterprise Keyboard does not appear, follow these steps to activate it on the device: 
+If the Enterprise Keyboard does not appear, proceed to the steps below. 
+
+#####Activate Enterprise Keyboard: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
@@ -55,7 +57,7 @@ Enterprise Keyboard is now ready to use with default settings.
 ### Change Settings
 Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
 
-To change Enterprise Keyboard settings:
+#####Change Enterprise Keyboard settings:
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
@@ -95,7 +97,7 @@ Enterprise Keyboard cannot be removed if it was included with the device operati
 
 ### Manual Deactivation
 
-To deactivate Enterprise Keyboard: 
+#####Deactivate Enterprise Keyboard on a device: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>

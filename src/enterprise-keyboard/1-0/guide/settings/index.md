@@ -31,11 +31,11 @@ Enterprise Keyboard Settings are accessed through the Android Settings panel:
 ------
 
 ### Languages
-By default, Enterprise Keyboard uses the language selected in the 'Language and input' part of the Android Settings panel: 
+By default, Enterprise Keyboard uses the language selected in the "Language and input" part of the Android Settings panel: 
 
 <img alt="" style="height:350px" src="android_lang.png"/>
 
-To switch from the system-selected language to a language pack provided with Enterprise Keyboard: 
+#####Switch from system-selected language to one provided with Enterprise Keyboard: 
 
 &#49;. <b>Tap on "Languages"</b> in the Enterprise Keyboard Preferences panel: 
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
@@ -70,7 +70,7 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ### Preferences
 The Preferences section controls keypress feedback and other aids to productivity. Default settings are shown here:  
 
-<img alt="" style="height:350px" src="pref_scan.png"/>
+<img alt="" style="height:350px" src="ekb_prefs.png"/>
 <br>
 
 ##### Set preferences as desired: 
@@ -88,7 +88,7 @@ The Preferences section controls keypress feedback and other aids to productivit
 -->
 * <b>Show scan tab</b> displays a tab for switching to the scanner for collecting barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
-* <b>Show microphone tab</b> option will appear on GMS-enabled devices, and if checked will display a tab for allowing Enterprise Keyboard to accept spoken input using the Android mic or headset. 
+* <b>Voice input key</b> option will appear on GMS-enabled devices only. When checked, will display a key for allowing Enterprise Keyboard to accept spoken input using the mic. 
 
 ------
 
@@ -113,7 +113,7 @@ Text Correction controls automatic corrections to typed text based the predefine
 <b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next.
 
 #### Personal dictionary
-The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of input from the keyboard. For example, if configured for a medical device, typing 'met' might present the word 'metastasize' and similar medical terms that begin with the same letters. 
+The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of input from the keyboard. For example, if configured for a medical device, typing "gerd" might present the phrase "gastroesophageal reflux disease" and similar medical terms that begin with the same letters. 
 
 <img alt="" style="height:350px" src="pref_text_1.png"/>
 <br>
@@ -124,15 +124,15 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
 * Spelling suggestions do not appear with all field types.  
-* For mass deployment, the Personal dictionary must be populated using Zebra's [StageNow](/stagenow/2-2/about/) tool before being mass-deployed. 
+* For mass deployment, the Personal dictionary must be populated using Zebra's [StageNow](/stagenow/2-2/about/) tool beforehand. 
 
-To add a term to the Personal dictionary: 
+#####Add a term to the Personal dictionary: 
 
 &#49;. <b>Tap "Personal dictionary"</b> in the Text correction Preference panel: 
 <img alt="" style="height:350px" src="personal_dic.png"/>
 <br>
 
-&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select 'For all languages' to display Personal dictionary terms with every language pack:  
+&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select "For all languages" to display Personal dictionary terms with every language pack:  
 <img alt="" style="height:350px" src="pref_dic.png"/>
 <br>
 
@@ -141,24 +141,26 @@ To add a term to the Personal dictionary:
 <br>
 
 &#51;. <b>Enter the word or phrase</b> (and shortcut, if desired), then <b>tap the gear icon to save</b>. 
-<img alt="" style="height:350px" src="enter_term.png"/>
+<img alt="" style="height:350px" src="enter_term_gerd.png"/>
+<br>
+
+&#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed: 
+<img alt="" style="height:350px" src="term_list_gerd.png"/>
 <br>
 
 When a shortcut is typed as input, its associated term will appear in a list of spelling corrections: 
-<img alt="" style="height:350px" src="autocorrected_mz.png"/>
+<img alt="" style="height:350px" src="autocorrected_gerd.png"/>
+Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
 <br>
 
-&#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed (see below). 
-<br>
+#####Edit or delete a term: 
 
-To edit or delete a term: 
-
-&#49;. <b>tap the term</b> in the terms list:
-<img alt="" style="height:350px" src="term_list.png"/>
+&#49;. Bring up the terms list and <b>tap the term</b>  to be edited:
+<img alt="" style="height:350px" src="term_list_gerd.png"/>
 <br>
 
 &#50;. <b>Edit the term</b> or tap the trashcan icon to delete: 
-<img alt="" style="height:350px" src="enter_term.png"/>
+<img alt="" style="height:350px" src="enter_term_gerd.png"/>
 <br>
 
 #### Add-on dictionaries
@@ -210,13 +212,13 @@ Remapping panel shows current settings of remappable keys:
 <img alt="" style="height:350px" src="pref_remap.png"/>
 <br>
 
-To remap a key: 
+#####Remap a key: 
 
 &#49;. Bring up the Remapping panel and <b>tap on the key to be remapped</b>:
 <img alt="" style="height:350px" src="remap.png"/>
 <br>
 
-&#50;. <b>Specify a Unicode value or alternative character</b> to associate with that key:  
+&#50;. <b>Specify a Unicode value or type an alternative character</b> to associate with that key:  
 <img alt="" style="height:350px" src="remap_keypad.png"/>
 <br>
 
@@ -232,7 +234,7 @@ Locate and <b>tap the DataWedge icon</b> on the device.
 <br>
 
 
-To enable DataWedge on a device (or confirm that it's enabled): 
+#####Enable DataWedge on a device (or confirm that it's enabled): 
 
 &#49;. Locate and <b>tap the DataWedge icon</b> on the device. 
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>

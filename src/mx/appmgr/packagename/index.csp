@@ -7,15 +7,15 @@ mx: "4.2"
 osx: "1.0,1.3"
 apilevel: 1
 parm:
-  presentif: The Action is "Uninstall", "Set as Default Launcher", "Enable Application", or "Disable Application"
+  presentif: The Action is "Uninstall," "Set as Default Launcher," "Enable Application," or "Disable Application"
   pivotal: No
   name: Package
   type: string
 ---
 
->**Note:** To perform the above listed Actions on an application, the Package Name or Simple Name of that application must be known and specified. The Package Name can be acquired from the application developer, by looking up the Package Name on a device, or using developer tools to extract the Package Name from the APK file. The Simple Name is the name that accompanies the application icon in the Android Launcher and App Drawer or is specified in the `app_name` field of the `strings.xml` file. 
+>**Note:** To perform the above listed Actions on an application, the Package Name of that application must be known and specified. The Package Name can be acquired from the application developer, by looking up the Package Name on a device, or using developer tools to extract the Package Name from the APK file. 
 
-Provide the Package Name or Simple Name of the application for the application action.
+Provide the Package Name of the application for the application action.
 
 Parm value input rules: 
 

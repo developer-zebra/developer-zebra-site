@@ -10,16 +10,147 @@ parm:
   name: BluetoothPairingPopupUsage
   type: list
   list:
-    - code: 0
-      name: Do not change
-      mx: "4.3"
-      apilevel: "16"
-      description: This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.
-    - code: 1
-      name: Change Current Input Method 
-      mx: "4.3"
-      apilevel: "16"
-      description: This value will cause a change to be made to the Current Default Input Method.
+    - code: en_AU 
+      name: AUSTRALIA_ENGLISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: fr_FR 
+      name: FRANCE_FRENCH
+      mx: "5.1"
+      osx: "1.3"
+    - code: es_MX 
+      name: MEXICO_SPANISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: es_AR 
+      name: ARGENTINA_SPANISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: en_IN 
+      name: INDIA_ENGLISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: hi_IN 
+      name: INDIA_HINDI
+      mx: "5.1"
+      osx: "1.3"
+    - code: se_SE 
+      name: SWEDEN_SWEDISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: nb_NO 
+      name: NORWAY_NORWEGIAN(BOKMAL)
+      mx: "5.1"
+      osx: "1.3"
+    - code: fi_FI 
+      name: FINLAND_FINISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: da_DK 
+      name: DENMARK_DANISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: cs_CZ 
+      name: CZECH REPUBLIC_CZECH
+      mx: "5.1"
+      osx: "1.3"
+    - code: uk_UA 
+      name: UKRAINE_UKRANIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: ru_RU 
+      name: RUSSIA_RUSSIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: ro_RO 
+      name: ROMANIA_ROMANIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: tr_TR 
+      name: TURKEY_TURKISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: bg_BG 
+      name: BULGARIA_BULGARIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: pl_PL 
+      name: POLAND_POLISH
+      mx: "5.1"
+      osx: "1.3"
+    - code: be_BY 
+      name: BELARUS_BELARUSIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: ka_GE 
+      name: GEORGIA_GEORGIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: kk_KZ 
+      name: KAZAHKSTAN_KAZAK(CYRILLIC)
+      mx: "5.1"
+      osx: "1.3"
+    - code: sk_SK 
+      name: SLOVAKIA_SLOVAK
+      mx: "5.1"
+      osx: "1.3"
+    - code: sr_RS 
+      name: SERBIA_SERBIAN(CYRILLIC)
+      mx: "5.1"
+      osx: "1.3"
+    - code: hu_HU 
+      name: HUNGARY_HUNGARIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: hr_HR 
+      name: CROATIA_CROATIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: hr_BA 
+      name: BOSNIA_CROATIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: hr_BA 
+      name: HERZEGOVINA_CROATIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: az_AZ 
+      name: AZERBAIJAN_AZERBAIJANI(LATIN)
+      mx: "5.1"
+      osx: "1.3"
+    - code: de_AT 
+      name: AUSTRIA_GERMAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: sl_SI 
+      name: SLOVENIA_SLOVENIAN
+      mx: "5.1"
+      osx: "1.3"
+    - code: he_IL 
+      name: ISRAEL_HEBREW
+      mx: "5.1"
+      osx: "1.3"
+    - code: nl_BE 
+      name: BELGIUM_DUTCH
+      mx: "5.1"
+      osx: "1.3"
+    - code: nl_NL 
+      name: NETHERLANDS_DUTCH
+      mx: "5.1"
+      osx: "1.3"
+    - code: ar_SA 
+      name: SAUDI_ARABIA_ARABIC
+      mx: "5.1"
+      osx: "1.3"
+    - code: ar_AE 
+      name: UNITED_ARAB_EMIRATES_ARABIC
+      mx: "5.1"
+      osx: "1.3"
+    - code: ar_QA 
+      name: QATAR_ARABIC
+      mx: "5.1"
+      osx: "1.3"
 ---
 
-This parm value allows you to determine whether or not to change the current Default Input Method that will be used when entry via the Input Method is requested programmatically or manually by the device user. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time. When changing the Current Locale, it may desirable to change the Default Input Method to one that is suitable for entry of non-standard characters that are important in the language associated with the selected Locale.
+This parm value controls whether to change the current Default Input Method that will be used when entry via the Input Method is requested programmatically or manually by the device user. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time. When changing the Current Locale, it may desirable to change the Default Input Method to one that is suitable for entry of non-standard characters that are important in the language associated with the selected Locale.
+

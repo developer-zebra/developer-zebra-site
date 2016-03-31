@@ -2,7 +2,7 @@
 csp: uimgr
 title: Package name of input Method
 type: parm
-order: 10
+order: 11
 mx: "4.3"
 apilevel: "16"
 parm:

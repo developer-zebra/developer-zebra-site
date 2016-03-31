@@ -2,7 +2,7 @@
 csp: uimgr
 title: Control Notification Pulldown
 type: parm
-order: 14
+order: 15
 mx: "5.1"
 apilevel: "16"
 parm:
@@ -14,7 +14,7 @@ parm:
       name: Do not change
       mx: "4.3"
       apilevel: "16"
-      description: This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.
+      description: This value (or the absence of this parm from the XML) will cause no changes to the Current Default Input Method.
     - code: 1
       name: TBD 
       mx: "4.3"

@@ -2,7 +2,7 @@
 csp: uimgr
 title: Notification Settings
 type: parm
-order: 13
+order: 14
 mx: "5.1"
 apilevel: "16"
 parm:

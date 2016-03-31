@@ -2,7 +2,7 @@
 csp: uimgr
 title: Overview
 type: text
-order: 0
+order: 1
 ---
 
 The UiMgr provides control of miscellaneous UI configuration settings, such as locale and language settings, input device and Clipboard behavior.

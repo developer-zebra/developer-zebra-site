@@ -1,13 +1,13 @@
 ---
 csp: uimgr
-title: Set Default Input Method
+title: Select an Extended Locale
 type: parm
-order: 8
+order: 9
 mx: "4.3"
 apilevel: "16"
 parm:
   pivotal: Yes
-  name: BluetoothPairingPopupUsage
+  name: ExtendedLocale
   type: list
   list:
     - code: en_AU 
@@ -152,5 +152,6 @@ parm:
       osx: "1.3"
 ---
 
-This parm value controls whether to change the current Default Input Method that will be used when entry via the Input Method is requested programmatically or manually by the device user. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time. When changing the Current Locale, it may desirable to change the Default Input Method to one that is suitable for entry of non-standard characters that are important in the language associated with the selected Locale.
+This parm value permits the selection of the device's locale from the list of Extended Locales. A locale is the combination of a language and a region in which that language is spoken. Languages are identified by two lower-case letters; regions are identified by two upper-case letters. The locale joins the two letter-pairs with an underscore ("_") character. For example, "en_US" is the locale specification for "English spoken in the United States," and "fr_CA" is the locale specification for "French spoken in Canada."
 
+When changing the Locale, it also might be desirable to change the Default Input Method to one that is suitable for entry of characters for the language associated with the selected Locale. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time that parm is invoked. 

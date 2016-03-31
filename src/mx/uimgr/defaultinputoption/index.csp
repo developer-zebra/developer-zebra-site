@@ -2,7 +2,7 @@
 csp: uimgr
 title: Select a Default Input Method Option
 type: parm
-order: 12
+order: 13
 mx: "4.3"
 apilevel: "16"
 parm:

@@ -16,12 +16,11 @@ parm:
     - code: 1
       name: Enable
       mx: "5.1"
-      description: Enables Bluetooth pairing on the device.
+      description: Enables the device to pair with new Bluetooth devices.
     - code: 2
       name: Disable
       mx: "5.1"
-      description: Disables Bluetooth pairing on the device.
+      description: Disables the device to pair with new Bluetooth devices.
 ---
 
-This parm controls whether the device will be permitted to pair with Bluetooth devices such as headsets and printers that come into range. 
-
+This parm controls whether the device will be permitted to pair with Bluetooth devices that come into range. 

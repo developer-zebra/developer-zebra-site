@@ -1,0 +1,13 @@
+---
+csp: bluetoothmgr
+title: Overview
+type: text
+order: 0
+---
+
+BluetoothMgr controls whether the device will be allowed to pair with Bluetooth devices that come into range. 
+
+### Main Functionality
+
+* Enable and Disable Bluetooth Pairing 
+

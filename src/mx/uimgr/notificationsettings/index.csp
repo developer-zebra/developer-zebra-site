@@ -12,15 +12,16 @@ parm:
   list:
     - code: 0
       name: Do not change
-      mx: "4.3"
-      apilevel: "16"
-      description: This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method.
+      mx: "5.1"
+      description: This value (or the absence of this parm from the XML) will cause no change to visibility of the Settings icon in the Notifications panel.
     - code: 1
-      name: Change Current Input Method 
-      mx: "4.3"
-      apilevel: "16"
-      description: This value will cause a change to be made to the Current Default Input Method.
+      name: Show 
+      mx: "5.1"
+      description: Shows the Settings icon in the Notifications panel. 
+    - code: 2
+      name: Hide 
+      mx: "5.1"
+      description: Hides the Settings icon in the Notifications panel. 
 ---
 
-Notification Settings desc
-
+This parm value controls visibility of the Settings icon in the Android Notifications panel, which can be accessed from most applications by dragging downward from the Notification/Status bar at the top of the Android screen. Hiding the Settings icon can be used to prevent a device user from accessing the Settings panel and changing device behavior. 

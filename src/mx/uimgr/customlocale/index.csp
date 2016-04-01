@@ -5,6 +5,7 @@ type: parm
 order: 8
 mx: "5.1"
 parm:
+  presentif: Current Locale value is "Custom" (99)
   pivotal: No
   name: CustomLocale
   type: string
@@ -12,13 +13,20 @@ parm:
     - code: ll
       name: Language
       mx: "5.1"
-      description: This value accepts the two lower-case letters corresponding to the language to be selected for input (see table, above).
+      description: Selects the language to be used on the device.
     - code: ll_RR
       name: Language and Region 
       mx: "5.1"
-      description: Accepts a two-letter (lower-case) language code and two-letter (upper-case) region code joined by an underscore character (see table, above).
+      description: Selects the language and the region that language is used for the device. 
 ---
 
-This parm value permits the selection of the device's Custom Locale. A locale is the combination of a language and a region in which that language is spoken. Languages are identified by two lower-case letters; regions are identified by two upper-case letters. The locale joins the two letter-pairs with an underscore ("_") character. For example, "en_US" is the locale specification for "English spoken in the United States," and "fr_CA" is the locale specification for "French spoken in Canada."
+This parm value permits the selection of the device's Custom Locale. A locale is the combination of a language and a region in which that language is spoken. Languages are identified by two lower-case letters; regions are identified by two upper-case letters. The locale joins the two letter-pairs with an underscore ("_") character. For example, "en_US" is the locale specification for "English spoken in the United States," and "fr_CA" is the locale specification for "French spoken in Canada." 
 
-When changing the Locale, it also might be desirable to change the Default Input Method to one that is suitable for entry of characters for the language associated with the selected Locale. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time that parm is invoked. 
+When changing the Locale, it also might be desirable to change the Default Input Method to one that is suitable for entry of characters associated with the language of the selected Locale. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time that parm is invoked. 
+
+Parm value input rules: 
+
+* String containing two lower-case letters corresponding to the language
+* Optionally may contain two upper-case letters designating a region code 
+* When a region code is used, letter pairs are joined by an underscore ("_") character. For example: `en_US`
+* The minimum length is 2 characters; the maximum length is 5 characters

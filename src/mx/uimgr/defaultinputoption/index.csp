@@ -15,22 +15,22 @@ parm:
       name: English
       mx: "4.3"
       apilevel: "16"
-      description: This value will cause the standard English Input Method to be made the new Default Input Method.
+      description: Cause the standard English Input Method to be made the Default Input Method.
     - code: 2
       name: Japanese 
       mx: "4.3"
       apilevel: "16"
-      description: This value will cause the standard Japanese Input Method to be made the new Default Input Method.
+      description: Causes the standard Japanese Input Method to be made the new Default Input Method.
     - code: 3
       name: Chinese(China) 
       mx: "4.3"
       apilevel: "16"
-      description: This value will cause the standard Chinese Input Method to be made the new Default Input Method.
+      description: Cause the standard Chinese Input Method to be made the new Default Input Method.
     - code: 4
       name: User defined Input Method 
       mx: "4.3"
       apilevel: "16"
-      description: This value will cause a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method must have been previously installed must be specified via its Android Package Name and Class Name.
+      description: Causes a non-standard user-defined Input Method to be made the new Default Input Method. The desired Input Method must have been previously installed must be specified via its Android Package Name and Class Name.
 ---
 
-This parm value allows the selection of the default Input Method. If the selected Input Method is not already enabled, this parm will first enable it and then set it as the new default.
+This parm value allows the selection of the Default Input Method. If the selected Input Method is not already enabled, this parm will first enable it and then set it as the new default.

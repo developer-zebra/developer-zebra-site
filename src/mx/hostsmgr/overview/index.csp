@@ -1,0 +1,16 @@
+---
+csp: hostsmgr
+title: Overview
+type: text
+order: 0
+---
+The HostsMgr allows the device to be assigned a Host Name, which binds the device's friendly name (i.e. “MyDevice”) to its IP address. 
+
+### Main Functionality
+
+* Accepts a string of between 0 and 255 characters to be set as the device Host Name
+
+Parm value rules
+
+* Accepts a string in field HostName
+* Minimum size is 0 characters (skipped); maximum size is 255 characters

@@ -133,7 +133,7 @@ order: 99
 
 #### Output Selected Input
 
-  :::XML
+    :::XML
   <wap-provisioningdoc>
     <characteristic type="UiMgr" version="4.3" >
       <parm name="InputMethodAction" value="1"/>
@@ -145,7 +145,7 @@ order: 99
   
 #### Output Custom Input
 
-  :::XML
+    :::XML
   <characteristic type="UiMgr" version="4.3" >
     <parm name="InputMethodAction" value="1"/>
     <characteristic type="InputMethodDetails">

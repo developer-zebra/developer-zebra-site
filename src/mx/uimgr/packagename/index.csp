@@ -1,6 +1,6 @@
 ---
 csp: uimgr
-title: Package Name of Input Method
+title: Input Method Package Name
 type: parm
 order: 11
 mx: "4.3"

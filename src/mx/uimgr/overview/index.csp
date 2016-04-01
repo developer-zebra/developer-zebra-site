@@ -15,7 +15,7 @@ The UiMgr provides control over these various UI elements as requested by variou
 
 * Enable or Disable use of the following:
   * The Clipboard function, which allows a device user to copy and paste information between applications
-  * The Auto Correct function, which stores commonly entered words and allows them to be entered instead of similar words that were mistyped
+  * The AutoCorrect function, which stores commonly entered words and allows them to be entered instead of similar words that were mistyped
   * The Home Key function, which exits current application and presents the Home Screen application
   * The Bluetooth Paring Popup feature, which requests device-user involvement even if an application has supplied all required pairing information
 * Configure localization settings to:

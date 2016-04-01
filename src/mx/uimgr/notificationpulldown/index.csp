@@ -1,6 +1,6 @@
 ---
 csp: uimgr
-title: Control Notification Pulldown
+title: Notification Pulldown Enable/Disable
 type: parm
 order: 15
 mx: "5.1"
@@ -27,4 +27,4 @@ parm:
       description: Prevents the Notifications panel from being pulled down. 
 ---
 
-This parm value controls whether a device user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. Depending on the Android version, the Notifications panel displays application alerts, text messages, widgets and other notifications, as well as access to device Settings. Preventing access to the Notification Pulldown can be used to prevent a device user from accessing a device's Settings and changing its behavior. 
+This parm value controls whether a device user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. Depending on the Android version, the Notifications panel displays application alerts, text messages, widgets and other notifications, and provides access to device Settings. Preventing access to the Notification Pulldown can prevent a device user from accessing device Settings and other system objects that might allow a user to change system behavior or navigate away from the current application. 

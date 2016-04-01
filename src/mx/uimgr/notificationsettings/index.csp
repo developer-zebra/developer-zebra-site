@@ -13,14 +13,17 @@ parm:
     - code: 0
       name: Do not change
       mx: "5.1"
+      osx: "5.1"
       description: This value (or the absence of this parm from the XML) will cause no change to visibility of the Settings icon in the Notifications panel.
     - code: 1
       name: Show 
       mx: "5.1"
+      osx: "5.1"
       description: Shows the Settings icon in the Notifications panel. 
     - code: 2
       name: Hide 
       mx: "5.1"
+      osx: "5.1"
       description: Hides the Settings icon in the Notifications panel. 
 ---
 

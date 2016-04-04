@@ -1,6 +1,6 @@
 ---
 csp: statsmgr
-title: Set Path for storing the Statistics File
+title: Set Path for Statistics File Storage
 type: parm
 order: 4
 mx: "5.1"

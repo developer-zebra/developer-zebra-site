@@ -13,8 +13,8 @@ parm:
       mx: "5.1"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change; the statistics file will not be cleared.
-    - code: 1
-      name: Clear Statistics file
+    - code: True
+      name: Clear Stats file
       mx: "5.1"
       description: This will clear the Statistics file.
 ---

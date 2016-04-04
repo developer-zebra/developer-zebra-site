@@ -1,5 +1,5 @@
 ---
-csp: componentmgr
+csp: statsmgr
 title: Examples
 type: text
 order: 99

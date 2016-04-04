@@ -1,27 +1,20 @@
 ---
 csp: statsmgr
-title: Statistics Enable/Disable 
+title: Reporting Interval  
 type: parm
-order: 2
+order: 7
 mx: "5.1"
 parm:
+  presentif: Statistics gathering is Enabled (EnableStats = True)
   pivotal: No
-  name: EnableStats
-  type: list
-  list:
-    - code: 0
-      mx: "5.1"
-      name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes and retain the previously selected option.
-    - code: 1
-      name: Enable
-      mx: "5.1"
-      description: Enables the device to collect usage statistics. 
-    - code: 2
-      name: Disable
-      mx: "5.1"
-      description: Disables the collection of usage statistics on the device.
+  name: ReportInterval
+  type: string
 ---
 
-This parm controls whether device usage statistics will be collected and reported.
+This parm controls wait-time interval (in seconds) after which the statistics file will be reported to Analytics Manager for processing. Data will be sent only if new activity has occurred. A setting of zero (0) disables reporting. 
 
+#####Parm value rules
+
+* Accepts a String representing wait time (in seconds) between reports
+* Minimum length is 1 character; maximum length is 255 characters
+* A setting of zero (0) disables reporting 

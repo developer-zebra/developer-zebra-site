@@ -1,15 +1,16 @@
 ---
-csp: filemgr
-title: Archive Target Path and Folder Name
+csp: statsmgr
+title: Set Path for storing the Statistics File
 type: parm
-order: 14
-mx: "5.0'
+order: 4
+mx: "5.1"
 parm:
-  presentif: File Action is Download and Expand Archive
+  presentif: Statistics gathering is enabled (EnableStats = True)
   pivotal: No
-  name: ArchiveTargetPathAndFolderName
+  name: SetStatsFilePath
   type: string
 
 ---
 
-Specify the path and folder name of where the downloaded archive file should be expanded. Max length: 255 characters.
+Specify the local (on-device) path of the file for storage of MX usage statistics. Max length: 255 characters. The path `/storage/sdcard0/Stats/` will be used if none is specified. 
+

@@ -1,6 +1,6 @@
 ---
 title: Stats Manager
-description: The StatsMgr controls device usage statistics, storage and reporting.
+description: The StatsMgr controls the gathering, storage and reporting of MXMF usage statistics. 
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

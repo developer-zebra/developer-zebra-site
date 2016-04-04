@@ -1,15 +1,15 @@
 ---
-csp: filemgr
-title: Archive Target Path and Folder Name
+csp: statsmgr
+title: Set Statistics File Name
 type: parm
-order: 14
-mx: "5.0'
+order: 3
+mx: "5.1"
 parm:
-  presentif: File Action is Download and Expand Archive
+  presentif: Statistics gathering is enabled (EnableStats = True)
   pivotal: No
-  name: ArchiveTargetPathAndFolderName
+  name: StatsFileName
   type: string
 
 ---
 
-Specify the path and folder name of where the downloaded archive file should be expanded. Max length: 255 characters.
+Specify the name of the file for storage of MX usage statistics. Max length: 255 characters. The file name `mxStats.xml` will be used if no file name is specified. 

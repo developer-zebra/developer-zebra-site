@@ -9,19 +9,15 @@ parm:
   name: EnableStats
   type: list
   list:
-    - code: 0
-      mx: "5.1"
-      name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes and retain the previously selected option.
-    - code: 1
+    - code: True
       name: Enable
       mx: "5.1"
-      description: Enables the device to collect usage statistics. 
-    - code: 2
+      description: Enables the device to collect statistics on XML submitted to the MXMF. 
+    - code: False
       name: Disable
       mx: "5.1"
-      description: Disables the collection of usage statistics on the device.
+      description: Disables the collection of statistics on XML submitted to the MXMF.
 ---
 
-This parm controls whether device usage statistics will be collected and reported.
+This parm controls whether statistics on XML submitted to the MXMF will be collected and reported to the AnalyticsMgr. 
 

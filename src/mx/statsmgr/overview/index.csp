@@ -1,0 +1,16 @@
+---
+csp: statsmgr
+title: Overview
+type: text
+order: 0
+---
+
+The StatsMgr is used to control the gathering of device usage statistics, set the name and location of the statistics file and its reporting interval, and clear saved data. 
+
+### Main Functionality
+
+* Enable/Disable usage statistics
+* Set the Reporting Interval
+* Set the name and location of the statistics file 
+* Clear data saved in the statistics file
+

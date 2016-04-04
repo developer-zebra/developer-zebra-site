@@ -1,0 +1,27 @@
+---
+csp: statsmgr
+title: Statistics Enable/Disable 
+type: parm
+order: 2
+mx: "5.1"
+parm:
+  pivotal: No
+  name: EnableStats
+  type: list
+  list:
+    - code: 0
+      mx: "5.1"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes and retain the previously selected option.
+    - code: 1
+      name: Enable
+      mx: "5.1"
+      description: Enables the device to collect usage statistics. 
+    - code: 2
+      name: Disable
+      mx: "5.1"
+      description: Disables the collection of usage statistics on the device.
+---
+
+This parm controls whether device usage statistics will be collected and reported.
+

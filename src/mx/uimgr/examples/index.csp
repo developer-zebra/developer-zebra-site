@@ -54,7 +54,7 @@ order: 99
 #### Output
 
     :::XML
-  <wap-provisioningdoc>
+    <wap-provisioningdoc>
         <characteristic type="UiMgr" version="4.3" >
             <parm name="HomeKeyUsage" value="1"/>
         </characteristic>
@@ -114,7 +114,7 @@ order: 99
 #### Output
 
     :::XML
-  <wap-provisioningdoc>
+    <wap-provisioningdoc>
         <characteristic type="UiMgr" version="4.3" >
             <parm name="BluetoothPairingPopupUsage" value="1"/>
         </characteristic>
@@ -134,26 +134,26 @@ order: 99
 #### Output Selected Input
 
     :::XML
-  <wap-provisioningdoc>
-    <characteristic type="UiMgr" version="4.3" >
-      <parm name="InputMethodAction" value="1"/>
-      <characteristic-query type="InputMethodDetails">
-        <parm name="InputMethodOption" value="1"/>
-      </characteristic>
-    </characteristic>
+     <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="4.3" >
+            <parm name="InputMethodAction" value="1"/>
+            <characteristic-query type="InputMethodDetails">
+                <parm name="InputMethodOption" value="1"/>
+            </characteristic>
+        </characteristic>
   </wap-provisioningdoc>
   
 #### Output Custom Input
 
     :::XML
-  <characteristic type="UiMgr" version="4.3" >
-    <parm name="InputMethodAction" value="1"/>
-    <characteristic type="InputMethodDetails">
-      <parm name="InputMethodOption" value="4"/>
-      <parm name="InputMethodPackageName" value="PackageName1"/>
-      <parm name="InputMethodClassName" value="ClassName1"/>
+    <characteristic type="UiMgr" version="4.3" >
+        <parm name="InputMethodAction" value="1"/>
+        <characteristic type="InputMethodDetails">
+            <parm name="InputMethodOption" value="4"/>
+            <parm name="InputMethodPackageName" value="PackageName1"/>
+            <parm name="InputMethodClassName" value="ClassName1"/>
+        </characteristic>
     </characteristic>
-  </characteristic>
 
 ### Get All Settings
 

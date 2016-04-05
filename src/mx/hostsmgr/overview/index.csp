@@ -8,11 +8,6 @@ The HostsMgr allows the device to be assigned a Host Name by which the device ca
 
 ### Main Functionality
 
-* Can Set and Get the device Host Name as a string between 0 and 255 characters
-* Reports the Version number of the CSP or DSD itself
-
-Parm value rules
-
-* Accepts a string in field HostName
-* Minimum size is 0 characters (skipped); maximum size is 255 characters
+* Can Set and display the device Host Name as a string between 0 and 255 characters
+* Reports the Version number of the CSP itself
 

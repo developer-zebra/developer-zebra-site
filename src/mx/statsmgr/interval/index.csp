@@ -11,10 +11,10 @@ parm:
   type: string
 ---
 
-This parm controls wait-time interval (in seconds) after which the statistics file will be reported to Analytics Manager for processing. Data will be sent only if new activity has occurred. A setting of zero (0) disables reporting. 
+This parm controls wait-time interval (in minutes) after which the statistics file will be reported to Analytics Manager for processing. Data will be sent only if new activity has occurred. A setting of zero (0) disables reporting. 
 
 #####Parm value rules
 
-* Accepts a String representing wait time (in seconds) between reports
+* Accepts a String representing wait time (in minutes) between reports
 * Minimum length is 1 character; maximum length is 255 characters
 * A setting of zero (0) disables reporting 

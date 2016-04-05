@@ -47,6 +47,10 @@ csps:
     url: /mx/batterymgr
     csp: batterymgr
   - type: section
+    title: Bluetooth Manager
+    url: /mx/bluetoothmgr
+    csp: bluetoothmgr  
+  - type: section
     title: Browser Manager
     url: /mx/browsermgr
     csp: browsermgr
@@ -99,6 +103,10 @@ csps:
     url: /mx/gprsmgr
     csp: gprsmgr
   - type: section
+    title: Hosts Manager
+    url: /mx/hostsmgr
+    csp: hostsmgr    
+  - type: section
     title: Intent Manager
     url: /mx/intent
     csp: intent
@@ -134,6 +142,10 @@ csps:
     title: Settings Manager
     url: /mx/settingsmgr
     csp: settingsmgr
+  - type: section
+    title: Stats Manager
+    url: /mx/statsmgr
+    csp: statsmgr
   - type: section
     title: Status Manager
     url: /mx/statusmgr

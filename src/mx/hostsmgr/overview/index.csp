@@ -9,5 +9,3 @@ The HostsMgr allows the device to be assigned a Host Name by which the device ca
 ### Main Functionality
 
 * Can Set and display the device Host Name as a string between 0 and 255 characters
-* Reports the Version number of the CSP itself
-

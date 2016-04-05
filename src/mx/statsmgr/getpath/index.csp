@@ -12,4 +12,4 @@ parm:
 
 ---
 
-Displays the path of the stored MX usage statistics file. The file will be stored in `/storage/sdcard0/Stats/` if no path was specified. 
+Displays the path of the stored MX usage statistics file. If no custom path was specified, the default path is `/storage/sdcard0/Stats/`. 

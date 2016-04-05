@@ -5,14 +5,14 @@ type: text
 order: 0
 ---
 
-The StatsMgr controls whether the MX Management Framework (MXMF) will collect statistics on XML submitted to it. StatsMgr also can set the name and location of the statistics file, change its reporting interval, and clear saved data. Statistics are reported to the [Analytics Manager](../analyticsmgr) for processing according to the specified interval. 
+The StatsMgr controls whether the device will collect statistics on XML submitted to the MX Management Framework (MXMF), and can set the name and location of the statistics file, change its reporting interval, and clear saved data. Collected statistics are reported to the [Analytics Manager](../analyticsmgr) for processing and distribution. 
 
-Central to the MXMF are Configuration Service Providers (CSPs), which control Android capabilities by submitting XML documents with desired settings and behaviors to the framework. StatsMgr controls whether these activities are captured, how often they're reported to the AnalyticsMgr for processing, and where on the device and by what name they're stored (if values other than the default are desired). 
+The MXMF works through Configuration Service Providers (CSPs), which implement and control Android capabilities by submitting to the framework XML documents containing the desired device settings and behaviors. StatsMgr controls whether these XML submissions are tracked, what they're called, where they're stored and the minimum wait time between reports. 
 
 ### Main Functionality
 
 * Enable/Disable usage statistics
-* Set the Reporting Interval
+* Set the Reporting Interval minimum wait time
 * Set the name and location of the statistics file 
 * Clear data saved in the statistics file
 

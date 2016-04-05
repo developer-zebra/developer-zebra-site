@@ -12,4 +12,4 @@ parm:
 
 ---
 
-Specify the name of the file for storage of MX usage statistics. Max length: 255 characters. The file name `mxStats.xml` will be used if no file name is specified. 
+Use this parm to specify the name of the file for storage of MX usage statistics. Max length: 255 characters. If no file name is specified, stats will be stored using the name `mxStats.xml`. 

@@ -11,10 +11,14 @@ parm:
   type: string
 ---
 
-This parm controls wait-time interval (in minutes) after which the statistics file will be reported to Analytics Manager for processing. Data will be sent only if new activity has occurred. A setting of zero (0) disables reporting. 
+Use this parm to set the minimum wait time (in minutes) after which the statistics file will be reported to Analytics Manager for processing and distribution. Data will be sent only when new activity has occurred _and_ the Report Interval has been satisfied. For example, if the Report Interval is 1440 (24 hours) and a new activity occurs 10 hours after the last report was sent, the next report will be sent 14 hours later. 
+
+The default Report Interval value of 2880 (48 hours). A setting of zero (0) disables reporting. 
 
 #####Parm value rules
 
-* Accepts a String representing wait time (in minutes) between reports
+* Accepts a numeric String representing wait time (in minutes) between reports
 * Minimum length is 1 character; maximum length is 255 characters
-* A setting of zero (0) disables reporting 
+* Default value is 2880 (48 hours)
+* A setting of zero (0) disables reporting (but collection continues to 10,000 node cap)
+* Submission of non-numeric characters will place an error in the Return XML  

@@ -19,5 +19,5 @@ parm:
       description: This will clear the Statistics file.
 ---
 
-This parm causes the statistics file on the device to be cleared. If a custom name and/or path was given to the file, that named file will be cleared. Otherwise, the default file `myStats.XML` and/or default path `/storage/sdcard0/Stats/` will be cleared. 
+Use this parm to clear the statistics file on the device. If a custom name and/or path was specified, the stats file of that name/path will be cleared. Otherwise, the default file `myStats.XML` in the default path `/storage/sdcard0/Stats/` will be cleared. 
 

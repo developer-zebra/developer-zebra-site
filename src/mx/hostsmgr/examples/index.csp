@@ -27,7 +27,7 @@ order: 99
         </wap-provisioningdoc>
 
 <br>
-### Get Version and Host Name
+### Get Current Host Name (and CSP version)
 
 ####Input 
 

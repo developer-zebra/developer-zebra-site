@@ -19,5 +19,5 @@ parm:
       description: Disables the collection of statistics on XML submitted to the MXMF.
 ---
 
-This parm controls whether statistics on XML submitted to the MXMF will be collected and reported to the AnalyticsMgr. 
+This parm controls whether to collect statistics about XML submissions to the MX Management Framework. The collection file can contain a maximum of 10,000 nodes (XML submission events).  
 

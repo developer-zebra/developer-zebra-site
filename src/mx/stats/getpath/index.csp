@@ -1,5 +1,5 @@
 ---
-csp: statsmgr
+csp: stats
 title: Display the Path of the Statistics File
 type: parm
 order: 5

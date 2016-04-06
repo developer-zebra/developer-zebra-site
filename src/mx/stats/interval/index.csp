@@ -1,5 +1,5 @@
 ---
-csp: statsmgr
+csp: stats
 title: Reporting Interval  
 type: parm
 order: 7
@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Use this parm to set the minimum wait time (in minutes) after which the statistics file will be reported to Analytics Manager for processing and distribution. Data will be sent only when new activity has occurred _and_ the Report Interval has been satisfied. For example, if the Report Interval is 1440 (24 hours) and a new activity occurs 10 hours after the last report was sent, a report containing the new activity will be sent 14 hours later. However, if new activity occurs 25 hours after the last report, that activity will be reported immediately.  
+Use this parm to set the minimum wait time (in minutes) after which the statistics file will be reported to Analytics Manager for processing and distribution. Data will be sent only when a new activity has occurred _after_ the Report Interval has been satisfied. For example, if the Report Interval is 1440 (24 hours) and a new activity occurs 10 hours after the last report was sent, the new activity will not be reported until another new activity occurs at least 14 later. However, if new activity occurs 25 hours after the last report, that activity will be reported immediately. 
 
 The default Report Interval value is 2880 (48 hours). A setting of zero (0) disables reporting but stat collections will continue until the cap of 10,000 XML nodes has been reached.  
 

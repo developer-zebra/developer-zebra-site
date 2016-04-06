@@ -1,5 +1,5 @@
 ---
-csp: statsmgr
+csp: stats
 title: Clear Statistics File 
 type: parm
 order: 6

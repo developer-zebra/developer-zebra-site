@@ -1,6 +1,6 @@
 ---
-title: Stats Manager
-description: The StatsMgr controls the gathering, storage and reporting of MXMF usage statistics. 
+title: Stats
+description: Stats controls the gathering, storage and reporting of MXMF usage statistics. 
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,5 +11,5 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: statsmgr
+csp: stats
 ---

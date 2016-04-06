@@ -132,9 +132,9 @@ csps:
     url: /mx/settingsmgr
     csp: settingsmgr
   - type: section
-    title: Stats Manager
-    url: /mx/statsmgr
-    csp: statsmgr 
+    title: Stats
+    url: /mx/stats
+    csp: stats
   - type: section
     title: Status Manager
     url: /mx/statusmgr

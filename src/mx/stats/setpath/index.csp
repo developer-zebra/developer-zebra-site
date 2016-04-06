@@ -1,5 +1,5 @@
 ---
-csp: statsmgr
+csp: stats
 title: Set Path for Statistics File Storage
 type: parm
 order: 4

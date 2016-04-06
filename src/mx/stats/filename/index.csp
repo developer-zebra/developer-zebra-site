@@ -1,5 +1,5 @@
 ---
-csp: statsmgr
+csp: stats
 title: Set Statistics File Name
 type: parm
 order: 3

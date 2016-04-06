@@ -21,10 +21,6 @@ parm:
       sincemx: 4.2
       name: Remove an Existing Network
       description: This value will remove the a network profile based on the SSID
-    - code: Remove
-      sincemx: 4.2
-      name: Remove an Existing Network
-      description: This value will remove the a network profile based on the SSID
     - code: Connect
       sincemx: 4.2
       name: Connect to an Existing Network

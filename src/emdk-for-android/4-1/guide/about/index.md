@@ -48,9 +48,14 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 ## What's New
 **EMDK for Android v4.1**
-
-
-
+* Profile Manager Updates
+	* [Hosts Manager](/emdk-for-android/4-1/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
+	* [Launch application by simple name](/emdk-for-android/4-1/mx/appmgr/#application-simple-name) - new action for [App Manager](/emdk-for-android/4-1/mx/appmgr).
+	* [UI Manager](/emdk-for-android/4-1/mx/uimgr) updates
+		* [Extended Locale Options](/emdk-for-android/4-1/mx/uimgr/#set-an-extended-locale) - 4 new options for existing param "ExtendedLocale": SWEDEN_SWEDISH, NORWAY_NORWEGIAN-BOKMAL, FINLAND_FINISH, DENMARK_DANISH
+		* [Custom Locale](/emdk-for-android/4-1/mx/uimgr/#set-a-custom-locale) - This parm value permits the selection of the device's Custom Locale. A locale is the combination of a language and a region in which that language is spoken.
+		* [Notification Pulldown Enable/Disable](/emdk-for-android/4-1/mx/uimgr/#notification-pulldown-enabledisable) - controls whether a user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. 
+		* [Quick Settings Show/Hide](/emdk-for-android/4-1/mx/uimgr/#quick-settings-icons-showhide) -  controls whether Quick Settings icons will be displayed in the Android Notifications panel.
 
 **EMDK for Android v4.0**
 

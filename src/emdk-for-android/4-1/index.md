@@ -4,6 +4,11 @@ layout: list-mx.html
 menu:
   title: EMDK For Android 4.1
   img: /emdk-for-android/images/logo.png
+  versions:
+    - versionto: 4-0
+      versionfrom: 4-1
+      default: /emdk-for-android/4-0/guide/about
+      label: "4.0"
   items:
     - title: Home
       url: /emdk-for-android/4-1/guide/about

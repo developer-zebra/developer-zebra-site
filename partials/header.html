@@ -43,20 +43,34 @@
                     </button>
                     <span class="navbar-text"><a class="navbar-brand" href="/"><img src="/images/logo.png" alt="logo" style="max-height:42px;float: inherit;
     padding-right: 3px;"/></a> <strong>Online Documentation</strong>
-                    <p style="padding-left:50px;">
-                    {{#if product}}
-                                        {{ product }}
-                                    {{/if}}
-                                    {{#if productversion}}
-                                        {{ productversion }}
-                                    {{/if}}
-                    </p>
-    </span>
+                    </span>
                    
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
+                    {{#if this.menu.versions}}
+                        <li class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> {{ product }} {{ productversion }}
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            {{#each this.menu.versions}}
+                                <li><a onclick="changeVersion('{{this.versionfrom}}','{{this.versionto}}','{{this.default}}')">{{ ../product }} {{ this.label }}</a></li>
+                            {{/each}}
+                          </ul>
+                        </li>                    
+                    {{else}}
+                        <p class="navbar-text">
+                                        {{#if product}}
+                                            {{ product }}
+                                        {{/if}}
+                                        {{#if productversion}}
+                                            {{ productversion }}
+                                        {{/if}}
+                        </p>
+
+                    {{/if}}
+
                         {{#each this.menu.items}}
                         <li >
                             <a href="{{this.url}}">

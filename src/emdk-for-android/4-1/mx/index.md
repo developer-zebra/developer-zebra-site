@@ -147,7 +147,7 @@ contentlist:
         url: uimgr
         description: 'The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurations, like Clipboard behavior.'
         icon: /mx/icons/uimgr.png
-  - heading: Wireless
+  - heading: Network
     description: Manage wireless settings like WiFi and GPRS for your device.
     visible: true
     items:
@@ -163,6 +163,10 @@ contentlist:
         url: gprsmgr
         description: The GprsMgr allows you to manage APN settings for the devices GPRS network.
         icon: /mx/icons/gprsmgr.png
+      - title: Hosts Manager
+        url: hostsmgr
+        description: "The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks."
+        icon: /mx/icons/wifi.png
       - title: WiFi Manager
         url: wifi
         description: "The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks."

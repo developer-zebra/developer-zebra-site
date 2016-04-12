@@ -71,6 +71,10 @@ csps:
     url: /mx/gprsmgr
     csp: gprsmgr
   - type: section
+    title: Hosts Manager
+    url: /mx/hostsmgr
+    csp: hostsmgr
+  - type: section
     title: KeyMapping Manager
     url: /mx/keymappingmgr
     csp: keymapmgr

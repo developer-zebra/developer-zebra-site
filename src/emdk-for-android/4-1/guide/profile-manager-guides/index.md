@@ -90,7 +90,7 @@ automenu:
           url: /emdk-for-android/4-1/mx/settingsmgr
         - title: UI Manager
           url: /emdk-for-android/4-1/mx/uimgr
-    - title: Wireless
+    - title: Network
       items:
         - title: Cellular Manager
           url: /emdk-for-android/4-1/mx/cellularmgr/
@@ -98,6 +98,8 @@ automenu:
           url: /emdk-for-android/4-1/mx/dhcp
         - title: GPRS Manager
           url: /emdk-for-android/4-1/mx/gprsmgr/
+        - title: Hosts Manager
+          url: /emdk-for-android/4-1/mx/hostsmgr/
         - title: WiFi Manager
           url: /emdk-for-android/4-1/mx/wifi/
         - title: Wireless Manager

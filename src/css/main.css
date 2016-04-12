@@ -606,7 +606,7 @@ ul.nostyle i {
   border: 2px solid #eeeeee;
   transition: border-color 400ms;
   -webkit-transition: border-color 400ms;
-  height: 420px;
+  height: 160px;
 }
 
 #meet-team .team-description {
@@ -617,7 +617,7 @@ ul.nostyle i {
 }
 
 #meet-team .team-member .team-img {
-  height: 200px;
+  height: 137px;
   border: 2px solid #2A95BE;
   border-radius: 10px;
   /* scale bg image proportionately */

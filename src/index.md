@@ -32,7 +32,7 @@ products:
     description: "Use C# API's like Data Capture, Profile Manager to build Android applications for Zebra Devices."
     url: /emdk-for-xamarin/2-0/guide/about
     btn-text: Latest Docs
-    image: /images/products/emdk-for-xamarin.jpg
+    image: /images/products/emdk-for-xamarin.png
     sections:
       - title: Getting Started
         url: /emdk-for-xamarin/2-0/guide/gettingstarted

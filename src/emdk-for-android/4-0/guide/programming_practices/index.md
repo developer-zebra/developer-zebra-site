@@ -7,9 +7,15 @@ productversion: '4.0'
 
 ##EMDK concurrency guidelines
 
-Currently the EMDK is **not** thread safe, API calls such as Barcode and SimulScan are designed to be called sequentially. If called within separate threads, such as from AsyncTasks, some kind of synchronization mechanism should be employed in order to prevent multiple EMDK API calls getting called simultaneously. No single instance of a feature manger object should be shared among multiple threads, even in a single application unless the calls are made sequentially. 
+1. The EMDKManager instance will always provide only one object (singleton object) of each feature like BarcodeManager, ProfileManager etc.  Any attempt to request a new object of the same feature will return the object that is already initiated.  
+2. It is highly recommended to release one instance of the EMDKManager before creating another instance.
+3. BarcodeManager, SimulScanManager, ProfileManager and Scan&PairManager objects can be created simultaneously but cannot be accessed at the same time.
 
-Parallel execution is not supported, with the exception that Barcode Manager object and Profile Manger objects can be used simultaneously.
+For example:
+* If the BarcodeManager has enabled any one of the barcode device, then no other barcode devices can be enabled at the same time.  If camera is used as the barcode device, even the Android Camera APIs cannot be used at that time.
+* Also, the SimulScanManager and Scan&PairManager objects cannot enable the respective devices either. 
+* However, once the BarcodeManager is disabled and released, then the SimulScanManager can enable the SimulScan device. 
+* An app should either use the DataCapture feature of the ProfileManager or barcode APIs for scanning barcodes but not both.
 
 ##Creating a common Application to run on Zebra and Non-Zebra devices
 

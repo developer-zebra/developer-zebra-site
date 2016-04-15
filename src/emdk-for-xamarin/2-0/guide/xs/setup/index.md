@@ -5,8 +5,7 @@ product: EMDK For Xamarin
 productversion: '2.0'
 ---
 
-## Watch This Guide
-![yt:qYPOWP8UKN4](../../../images/video.png)
+
 
 
 ##Installing the Add-in

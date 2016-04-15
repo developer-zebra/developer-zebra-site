@@ -1,5 +1,5 @@
 ---
-title: EMDK For Xamarin - 1.0
+title: EMDK For Xamarin - 2.0
 layout: guide.html
 product: EMDK For Xamarin
 productversion: '2.0'
@@ -54,7 +54,7 @@ Xamarin Studio Add-in **v1.0.5**: (Provides EMDK menu in Xamarin Studio )
 * EMDK for Xamarin Component **v1.0.3** ( Provides C# EMDK API's )
 
 ##Devices Supported
-Currently only Zebra Android KitKat devices are supported. Be sure to run the [device update](/emdk-for-xamarin/1-0/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
+Currently only Zebra Android KitKat devices are supported. Be sure to run the [device update](/emdk-for-xamarin/2-0/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
 
 
 

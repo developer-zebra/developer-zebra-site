@@ -5,11 +5,7 @@ product: EMDK For Xamarin
 productversion: '2.0'
 ---
 
-The device runtime update included with this release should be applied to any Zebra Android device in order to provide the documented features. The specific version included with this release is:
-
-* EmdkOSUpdateApp_v3.1.38
-
-If the device has not been updated to at least this version, features like Profile Manager may not perform as expected.
+The device runtime update included with this release should be applied to any Zebra Android device in order to provide the documented features. If the device has not been updated to at least this version, features like Profile Manager may not perform as expected.
 
 ##	Device Update from IDE
 

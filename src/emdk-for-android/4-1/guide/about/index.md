@@ -33,17 +33,16 @@ The following software must be installed prior to using the EMDK for Android.
 ## Devices Supported
 Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
 
-* MC18 - KitKat
-* MC32 - OS Update image v00002 or higher (JellyBean)
-* MC40 - OS Update image v02.08.0520 or higher (JellyBean)
-* MC40 - KitKat
-* MC67 - OS Update image v01.28.14 or higher (JellyBean)
-* MC92 - KitKat
-* TC55 - OS Update image v01.74.00 or higher (JellyBean)
-* TC55 - OS Update image v02.52.02 or higher (KitKat)
-* TC70 - OS Update image v11.24.14 or higher (KitKat)
-* TC70 - KitKat Rev B
-* TC75 - KitKat
+* MC18 - KitKat (4.4.4)
+* MC32 - JellyBean (4.1.1)
+* MC40 - KitKat (4.4.4), JellyBean(4.1.1)
+* MC67 - KitKat (4.4.4)
+* MC92 - KitKat (4.4.4)
+* TC55 - KitKat (4.4.3), JellyBean (4.1.2)
+* TC70 - KitKat (4.4.2,4.4.3)
+* TC75 - KitKat (4.4.3)
+* TC8000 - KitKat (4.4.3)
+* WT6000 - Lollipop (5.1.1)
 
 
 ## What's New

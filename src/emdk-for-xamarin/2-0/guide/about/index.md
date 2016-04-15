@@ -6,6 +6,21 @@ productversion: '2.0'
 ---
 The EMDK for Xamarin v1.0 provides developers with a comprehensive set of tools to easily create powerful line of business applications for Android enterprise mobile computing devices while retaining their C# skills and tools. The EMDK for Xamarin includes class libraries, sample applications with source code, as well as all of the associated documentation to help your applications take full advantage of what Zebra Technologies devices have to offer.
 
+
+## Devices Supported
+Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
+
+* MC18 - KitKat (4.4.4)
+* MC32 - JellyBean (4.1.1)
+* MC40 - KitKat (4.4.4), JellyBean(4.1.1)
+* MC67 - KitKat (4.4.4)
+* MC92 - KitKat (4.4.4)
+* TC55 - KitKat (4.4.3), JellyBean (4.1.2)
+* TC70 - KitKat (4.4.2,4.4.3)
+* TC75 - KitKat (4.4.3)
+* TC8000 - KitKat (4.4.3)
+* WT6000 - Lollipop (5.1.1)
+
 ##What's New
 **Version 2.0
 

@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: GPS Information
 type: parm
-order: 8
+order: 9
 mx: "4.3"
 apilevel: "19"
 parm:

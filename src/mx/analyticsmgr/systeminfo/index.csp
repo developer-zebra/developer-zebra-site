@@ -4,7 +4,7 @@ title: System Information
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 9
+order: 2
 parm:
   presentif: Group Action is "Configure Levels for Multiple Groups"
   pivotal: No
@@ -38,4 +38,4 @@ parm:
       description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.
 ---
 
-This parm allows you to control whether the Analytics Engine collects data for the metrics in the System Information Group and, if so, at what frequency.
+Control whether the Analytics Engine collects data for the metrics in the System Information Group and, if so, at what frequency.

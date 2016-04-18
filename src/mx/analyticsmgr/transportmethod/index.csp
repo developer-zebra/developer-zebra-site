@@ -27,4 +27,4 @@ parm:
       description: This value will cause the Analytics Engine to store data locally on the device in a file in the device file system.
 ---
 
-This parm allows you to control whether data collected by the Analytics Engine is stored on the device or sent to the Cloud. 
+Control whether data collected by the Analytics Engine is stored on the device or sent to the Cloud. 

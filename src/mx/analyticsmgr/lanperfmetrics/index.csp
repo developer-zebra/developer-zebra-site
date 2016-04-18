@@ -1,51 +1,91 @@
 ---
 csp: analyticsmgr
-title: WWAN Performance Metrics
+title: WLAN Performance Metrics
 type: parm
-order: 6
+order: 7
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Group Action is "Configure Levels for Single Group" and Group Name is "WWAN Performance"
+  presentif: Group Action is "Configure Levels for Single Group" and Group Name is "WLAN Performance"
   pivotal: No
-  name: WWANPerfMetrics
+  name: WLANPerfMetrics
   type: list
   list:
+    - code: 99
+      mx: "5.1"
+      apilevel: "19"
+      name: Unused
+      description: This value causes the metrics of this Performance Group to be ignored.
     - code: 0
       mx: "5.1"
       apilevel: "19"
-      name: WWAN Signal Quality
-      description: This collection API returns the current WWAN signal quality on the device as a percentage of the best possible signal quality. The value returned can range from 0% to 100%. If the device does not have WWAN support or it is not possible to track the operation of the WWAN on the device, then no value will be returned.
+      name: WLAN Receive Packet Delta
+      description: Returns the number of packets that have been received as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
     - code: 1
       mx: "5.1"
       apilevel: "19"
-      name: Outgoing Call Attempts
-      description: This collection API returns the number of outgoing call attempts that have been made since the last time this Collection API was called for the same named Collection Group. Since this Collection API is intended to acquire Collection Samples for Quantity Metrics, the name of the Collection Group must be passed as the first parameter. No other parameters are supported. If the device does not have WWAN support or if it is not possible to track the operation of the WWAN on the device, no value will be returned. On some Android phones, support for trapping outgoing calls may not be available. On such phones, this metric may report no information (i.e. values of zero).
+      name: WLAN Signal Quality
+      description: Teturns the current WLAN signal quality on the device as a percentage of the best possible signal quality. The value returned can range from 0% to 100%. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
     - code: 2
       mx: "5.1"
       apilevel: "19"
-      name: WAN Radio On Time
-      description: This Collection API returns the amount of elapsed time in seconds that the WWAN radio on the device has been powered on since the last time this Collection API was called for the same named Collection Group. Since this Collection API is intended to acquire Collection Samples for Quantity Metrics, the name of the Collection Group must be passed as the first parameter. No other parameters are supported. If the device does not have a WWAN radio, has more than one, or it is not possible to track the operation of the WWAN on the device, no value will be returned.
+      name: WLAN Transmit Package Delta
+      description: Returns the number of packets that have been transmitted as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
     - code: 3
       mx: "5.1"
       apilevel: "19"
-      name: Incoming Call Duration
-      description: This Collection API returns the amount of elapsed time in seconds that incoming calls have been in progress since the last time this Collection API was called for the same named Collection Group. Since this Collection API is intended to acquire Collection Samples for Quantity Metrics, the name of the Collection Group must be passed as the first parameter. No other parameters are supported. If the device does not have WWAN support or it is not possible to track the operation of the WWAN on the device, no value will be returned.
+      name: WLAN Receive Byte Delta
+      description: Returns the number of bytes that have been received as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
     - code: 4
       mx: "5.1"
       apilevel: "19"
-      name: Success Incoming Call
-      description: This Collection API returns the number of incoming calls that have been successfully connected since the last time this Collection API was called for the same named Collection Group. Since this Collection API is intended to acquire Collection Samples for Quantity Metrics, the name of the Collection Group must be passed as the first parameter. No other parameters are supported. If the device does not have WWAN support or it is not possible to track the operation of the WWAN on the device, no value will be returned.
+      name: WLAN Transmit Byte Delta
+      description: Returns the number of bytes that have been transmitted as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
     - code: 5
       mx: "5.1"
       apilevel: "19"
-      name: Success Incoming Calls
-      description: This Collection API returns the number of incoming calls that have been successfully connected since the last time this Collection API was called for the same named Collection Group. Since this Collection API is intended to acquire Collection Samples for Quantity Metrics, the name of the Collection Group must be passed as the first parameter. No other parameters are supported. If the device does not have WWAN support or it is not possible to track the operation of the WWAN on the device, no value will be returned.
+      name: WLAN Radio On Time
+      description: Returns the elapsed time (in seconds) that the WLAN radio on the device has been powered on since the last collection. If the device does not have a WLAN radio, has more than one, or it is not possible to track the operation of the WLAN on the device, no value will be returned. 
     - code: 6
       mx: "5.1"
       apilevel: "19"
-      name: WWAN Error Rate
-      description: This Collection API returns the bit error rate (in hundreths of a percent) as of the time the call is made. If the device does not have WWAN support or it is not possible to track the operation of the WWAN on the device, no value will be returned. Note that this is not supported in CDMA-based Android phones. In GSM based phones, this metric will be reported only if supported by that specific model.
+      name: WLAN Wi-Fi Enabled Disabled
+      description: Indicates whether Wi-Fi is enabled or disabled.
+    - code: 7
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN Wi-Fi Not Connected
+      description: Indicates whether network connectivity exists and whether it is possible to establish connections and pass data.
+    - code: 8
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN IP Address Change
+      description: Return a boolean value (true or false) when the IP Address has been changed. 
+    - code: 9
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN Static DHCP IP
+      description: Returns the IP address.
+    - code: 10
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN BSSID
+      description: Returns the basic service set identifier (BSSID) of the current access point in the form of a six-byte MAC address: XX:XX:XX:XX:XX:XX. If no network currently connected, the BSSID might be null. 
+    - code: 11
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN RSSI
+      description: Returns (in dBm) the received signal strength indicator (RSSI) of the current 802.11 network.
+    - code: 12
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN Roam Event
+      description: Returns the detailed state of the supplicant's negotiation with an access point in the form of a SupplicantState object: ASSOCIATED - Association completed; ASSOCIATING - Trying to associate with a BSS/SSID; AUTHENTICATING - Trying to authenticate with a BSS/SSID. This state is entered when wpa_supplicant has found a suitable BSS to authenticate with and the driver is configured to try to authenticate with this BSS; COMPLETED - All authentication completed; DISCONNECTED - This state indicates that client is not associated, but is likely to start looking for an access point; DORMANT - An Android-added state that is reported when a client issues an explicit DISCONNECT command; FOUR_WAY_HANDSHAKE - WPA 4-Way Key Handshake in progress; GROUP_HANDSHAKE - WPA Group Key Handshake in progress; INACTIVE - Inactive state (wpa_supplicant disabled); INTERFACE_DISABLED - Interface is disabled. This state is entered if the network interface is disabled; INVALID - A pseudo-state that should normally never be seen; SCANNING - Scanning for a network; UNINITIALIZED - No connection to wpa_supplicant.
+    - code: 13
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN DNS Name
+      description: Returns the DNS number.
     - code: 999
       mx: "5.1"
       apilevel: "19"
@@ -53,4 +93,4 @@ parm:
       description: This Collection API provides for input of a custom threshold to determine the conditions necessary to enable collection of this metric.
 ---
 
-This parm controls detailed metrics collected by the Analytics Engine for the WWAN Performance Group.
+This parm controls detailed metrics collected by the Analytics Engine for the WLAN Performance Group.

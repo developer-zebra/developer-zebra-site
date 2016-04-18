@@ -11,6 +11,11 @@ parm:
   name: WWANPerfMetrics
   type: list
   list:
+    - code: 99
+      mx: "5.1"
+      apilevel: "19"
+      name: Unused
+      description: This value causes the metrics of this Performance Group to be ignored.
     - code: 0
       mx: "5.1"
       apilevel: "19"

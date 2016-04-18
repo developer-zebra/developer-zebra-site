@@ -4,7 +4,7 @@ title: System Information
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 2
+order: 1
 parm:
   presentif: Group Action is "Configure Levels for Multiple Groups"
   pivotal: No

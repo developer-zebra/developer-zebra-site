@@ -4,7 +4,7 @@ title: Battery and CPU Status
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 8
+order: 4
 parm:
   presentif: Group Action is "Configure Levels for Multiple Groups"
   pivotal: No

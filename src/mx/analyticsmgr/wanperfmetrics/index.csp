@@ -2,9 +2,9 @@
 csp: analyticsmgr
 title: WWAN Performance Metrics
 type: parm
-order: 6
 mx: "5.1"
 apilevel: "19"
+order: 12
 parm:
   presentif: Group Action is "Configure Levels for Single Group" and Group Name is "WWAN Performance"
   pivotal: No
@@ -29,7 +29,7 @@ parm:
     - code: 2
       mx: "5.1"
       apilevel: "19"
-      name: WAN Radio On Time
+      name: WAN Radio On-Time
       description: This Collection API returns the amount of elapsed time in seconds that the WWAN radio on the device has been powered on since the last time this Collection API was called for the same named Collection Group. Since this Collection API is intended to acquire Collection Samples for Quantity Metrics, the name of the Collection Group must be passed as the first parameter. No other parameters are supported. If the device does not have a WWAN radio, has more than one, or it is not possible to track the operation of the WWAN on the device, no value will be returned.
     - code: 3
       mx: "5.1"

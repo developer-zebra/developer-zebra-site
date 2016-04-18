@@ -2,9 +2,9 @@
 csp: analyticsmgr
 title: GPS Information
 type: parm
-order: 9
 mx: "4.3"
 apilevel: "19"
+order: 5
 parm:
   presentif: Group Action is "Configure Levels for Multiple Groups"
   pivotal: No

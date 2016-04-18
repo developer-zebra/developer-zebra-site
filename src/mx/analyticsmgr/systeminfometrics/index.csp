@@ -1,0 +1,57 @@
+---
+csp: analyticsmgr
+title: System Information Metrics
+type: parm
+mx: "4.3"
+apilevel: "19"
+order: 2
+parm:
+  presentif: Group Action is "Configure Levels for Single Group" and Group Name is "System Information"
+  pivotal: No
+  name: SystemInfoMetrics
+  type: list
+  list:
+    - code: 99
+      mx: "5.1"
+      apilevel: "19"
+      name: Unused
+      description: Unused.
+    - code: 0
+      mx: "5.1"
+      apilevel: "19"
+      name: Available (free) Storage Memory
+      description: Returns the amount of Storage Memory (in bytes) that is currently available for the storage of files and that is not currently allocated to holding existing files. In an Android device, this is the sum total of available storage in the SD card (if any) and the device itself. 
+    - code: 1
+      mx: "5.1"
+      apilevel: "19"
+      name: Available (free) Physical Memory
+      description: Returns the amount (in bytes) of Physical Memory (RAM) that is currently available for running an application and is not currently allocated to a program already running.
+    - code: 2
+      mx: "5.1"
+      apilevel: "19"
+      name: MISSING NAME
+      description: MISSING NUMBER. The number two (2) is missing from the DSD. 
+    - code: 3
+      mx: "5.1"
+      apilevel: "19"
+      name: Total (installed) Storage Memory
+      description: Returns the total amount of Storage Memory (in bytes) that is present in the device for the storage of files, regardless of whether it is currently available or in use. In an Android device, this total includes the SD card (if any) and the device itself.
+    - code: 4 
+      mx: "5.1"
+      apilevel: "19"
+      name: Total (installed) Physical Memory
+      description: Returns the total amount (in bytes) of Physical Memory (RAM) that is present in the device, whether it is currently available for running an application or allocated to a program already running.
+    - code: 5
+      mx: "5.1"
+      apilevel: "19"
+      name: Total (installed) Memory
+      description: Returns the total amount of memory present in the device, which generally is the sum of the values of TotalPhysicalMemory and TotalStorageMemory. 
+    - code: 999
+      mx: "5.1"
+      apilevel: "19"
+      name: High
+      description: This Collection API provides for input of a custom threshold to determine the conditions necessary to enable collection of this metric.
+
+---
+
+Controls detailed metrics collected by the Analytics Engine for the System Information Group.

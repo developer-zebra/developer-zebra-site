@@ -17,14 +17,14 @@ Parallel execution is not supported, with the exception that **Barcode Manager**
 
 For those who want to write a common application that is capable of running on both Zebra and Non-Zebra devices, care must be taken to use the EMDK components only on the Zebra devices as described below:  
 
-1.	The common app containing the EMDK components will not install on a non-Zebra device and will result in the error “Installation error: INSTALL\_FAILED\_MISSING\_SHARED\_LIBRARY”. 
+1.	The common app containing the EMDK components will not install on a non-Zebra device and will result in the error “Installation error: INSTALL\_FAILED\_MISSING\_SHARED\_LIBRARY". 
 
  To overcome this problem, the application manifest file must be modified as shown below: 
  
                 :::xml
                 <uses-library android:name="com.symbol.emdk" android:required="false" />
 
-2.	When the common app is launched on a non-Zebra device, the “ClassNotFoundException” exception may occur.  To overcome this problem, do not implement the EMDK interfaces in the MainActivity.  Instead, create a separate class (ex: EMDKAPIWrapper or any other name) and implement the EMDK related calls in that. When the activity starts, create the EMDKAPIWrapper object during the run time only if you are using the Zebra device.
+2.	When the common app is launched on a non-Zebra device, the "ClassNotFoundException" exception may occur.  To overcome this problem, do not implement the EMDK interfaces in the MainActivity.  Instead, create a separate class (ex: EMDKAPIWrapper or any other name) and implement the EMDK related calls in that. When the activity starts, create the EMDKAPIWrapper object during the run time only if you are using the Zebra device.
 
 
         :::java
@@ -32,10 +32,10 @@ For those who want to write a common application that is capable of running on b
         private EMDKWrapper emdkWrapper = null;
             @Override
             protected void onCreate(Bundle savedInstanceState) {
-                /* Rebranded Zebra devices are set to “Zebra Technologies”*/
-                /* Motorola devices are set to “Motorola Solutions” */
+                /* Rebranded Zebra devices are set to "Zebra Technologies"*/
+                /* Motorola devices are set to "Motorola Solutions" */
                 
-                if(android.os.Build.MANUFACTURER.contains("Zebra Technologies") || android.os.Build.MANUFACTURER.contains("Motorola Solutions”) ){
+                if(android.os.Build.MANUFACTURER.contains("Zebra Technologies") || android.os.Build.MANUFACTURER.contains("Motorola Solutions") ){
                 emdkWrapper  = new EMDKWrapper();
             }
             }

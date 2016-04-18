@@ -1,14 +1,16 @@
 ---
 title: EMDK For Xamarin
-layout: list-mx.html
+insert:
+    file: emdk-for-xamarin/2-0/guide/about/index.md
+layout: guide.html
 menu:
   title: EMDK For Xamarin 2.0
   img: /emdk-for-xamarin/images/logo.png
   versions:
     - versionto: 1-0
       versionfrom: 2-0
-      default: /emdk-for-xamarin/2-0/guide/about
-      label: "2.0"
+      default: /emdk-for-xamarin/1-0/guide/about
+      label: "1.0"
   items:
     - title: Home
       url: /emdk-for-xamarin/2-0/guide/about

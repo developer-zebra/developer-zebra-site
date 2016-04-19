@@ -20,7 +20,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN Signal Quality
-      description: Teturns the current WLAN signal quality on the device as a percentage of the best possible signal quality. The value returned can range from 0% to 100%. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
+      description: Teturns the current WLAN signal quality on the device (from 0% to 100%) as a percentage of the best possible signal quality. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
     - code: 2
       mx: "5.1"
       apilevel: "19"
@@ -88,7 +88,7 @@ parm:
       description: Allows for a custom metric to be monitored. This slot is reserved fpr future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 ---
 
-This parm controls detailed metrics collected by the Analytics Engine for the WLAN Performance Group. 
+Controls the selection of detailed metrics collected by the Analytics Engine for the WLAN Performance Group. Data colleciton of WLAN Roam Events offers the following metric options:
 
 #### WLAN Roam Event Options
 * ASSOCIATED - Association completed

@@ -4,7 +4,7 @@ title: Group Action
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 4
+order: 3
 parm:
   pivotal: Yes
   name: GroupAction

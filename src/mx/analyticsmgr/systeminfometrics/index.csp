@@ -44,4 +44,4 @@ parm:
 
 ---
 
-Controls detailed metrics collected by the Analytics Engine for the System Information Group.
+Controls the selection of detailed metrics collected by the Analytics Engine for the System Information Group.

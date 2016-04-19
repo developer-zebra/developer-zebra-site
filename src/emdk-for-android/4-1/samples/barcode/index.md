@@ -51,6 +51,8 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/4-1/api) a
 This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/4-1/api/barcode/ScannerConfig-DecoderParams).
 
 
+>Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 

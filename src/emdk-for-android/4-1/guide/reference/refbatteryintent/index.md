@@ -47,8 +47,8 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<th>Constant name</th>
 		<th>Data type </th>
 		<th>Format</th>
-		<th>Power Precision Plus</th>
 		<th>Power Precision</th>
+		<th>Power Precision Plus</th>
 		<th>Backup Battery</th>
 	</tr>
 	<tr>

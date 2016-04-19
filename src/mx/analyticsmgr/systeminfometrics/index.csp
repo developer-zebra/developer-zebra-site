@@ -6,16 +6,11 @@ mx: "4.3"
 apilevel: "19"
 order: 2
 parm:
-  presentif: Group Action is "Configure Levels for Single Group" and Group Name is "System Information"
+  presentif: Group Action is "Configure Details for Single Group" and Group Name is "System Information"
   pivotal: No
   name: SystemInfoMetrics
   type: list
   list:
-    - code: 99
-      mx: "5.1"
-      apilevel: "19"
-      name: Unused
-      description: Unused.
     - code: 0
       mx: "5.1"
       apilevel: "19"
@@ -26,11 +21,6 @@ parm:
       apilevel: "19"
       name: Available (free) Physical Memory
       description: Returns the amount (in bytes) of Physical Memory (RAM) that is currently available for running an application and is not currently allocated to a program already running.
-    - code: 2
-      mx: "5.1"
-      apilevel: "19"
-      name: MISSING NAME
-      description: MISSING NUMBER. The number two (2) is missing from the DSD. 
     - code: 3
       mx: "5.1"
       apilevel: "19"
@@ -49,8 +39,8 @@ parm:
     - code: 999
       mx: "5.1"
       apilevel: "19"
-      name: High
-      description: This Collection API provides for input of a custom threshold to determine the conditions necessary to enable collection of this metric.
+      name: Custom Metric
+      description: Allows for a custom metric to be monitored. This slot is reserved fpr future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 
 ---
 

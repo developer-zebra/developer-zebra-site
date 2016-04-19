@@ -15,14 +15,15 @@ AnalyticsMgr also controls which data is collected and how often, and whether co
  
 * Enable or Disable all data collection by the Analytics Engine
 * Control whether data is stored locally on the device or is sent to the Cloud
-* Control which data is collected by groups of metrics:
+* Control data collected by group metric and by level of detail:
 	* Battery and CPU Status
 	* GPS Information
 	* System Information
-	* WLAN Performance
+	* WLAN Performance 
 	* WWAN Performance
-* Control the frequency of data collection by levels:
-	* None
-	* Low
-	* Medium
-	* High
+* Control the frequency of data collection:
+	* Never
+	* Low (infrequent)
+	* Medium (moderate frequency)
+	* High (very often)
+	* Custom intervals (by minutes, hours, days, etc.)

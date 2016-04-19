@@ -4,7 +4,7 @@ title: Transport Method
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 2
+order: 1
 parm:
   pivotal: No
   name: TransportMethod
@@ -14,17 +14,17 @@ parm:
       mx: "4.3"
       apilevel: "19"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to whether data is stored on the device or sent to the Cloud by the Analytics Engine.
+      description: This value (or the absence of this parm from the XML) will cause no change to the Transport Method used by the Analytics Engine; any previous setting will be retained. 
     - code: 1
       mx: "4.3"
       apilevel: "19"
       name: Select Cloud Transport
-      description: This value will cause the Analytics Engine to send data to the Cloud. A corresponding client capable of performing the transport must be present on the device for this option to function properly.
+      description: Causes the Analytics Engine to send data to the Cloud. A corresponding client application capable of performing the transport must be present on the device for this option to function properly.
     - code: 2
       mx: "4.3"
       apilevel: "19"
       name: Select File Transport
-      description: This value will cause the Analytics Engine to store data locally on the device in a file in the device file system.
+      description: Causes the Analytics Engine to store data locally on the device in a file in the device file system. Refer to the "Stats" parameter to control the name and location of this file. 
 ---
 
-Control whether data collected by the Analytics Engine is stored on the device or sent to the Cloud. 
+Controls whether data collected by the Analytics Engine is stored on the device or sent to the Cloud. When stored on the device, the name and location of the data file is controlled by the [Stats CSP](../stats). 

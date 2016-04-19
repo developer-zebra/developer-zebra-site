@@ -1,0 +1,56 @@
+---
+csp: analyticsmgr
+title: Group Name
+type: parm
+mx: "5.1"
+apilevel: "19"
+order: 5
+parm:
+  presentif: Group Action is "Configure Details for Single Group"
+  pivotal: Yes
+  name: GroupName
+  type: list
+  list:
+    - code: 1
+      mx: "5.1"
+      apilevel: "19"
+      name: WWAN Performance
+      description: Permits collection of WWAN stats such as signal quality, outgoing call attempts, successful incoming calls and duration, radio on-time and WWAN error rates.
+    - code: 2
+      mx: "5.1"
+      apilevel: "19"
+      name: WLAN Performance
+      description: Permits collection of WLAN stats such as signal quality, transmit and receive packet and byte deltas, Wi-Fi status, IP address, DNS name, BSSID and RSSI info, roam events and radio on-time.
+    - code: 3
+      mx: "5.1"
+      apilevel: "19"
+      name: Smart Battery Status
+      description: Permits collection of battery and CPU stats, including (but not limited to) battery status, temperature, charge count and cumulative charge, level, serial and part number, manufacture date, voltage, backup voltage, on time and rated capacity. CPU stats include process and device CPU time delta, device model and serial number, Android version and build number and DataAnalytics version.     
+    - code: 4
+      mx: "5.1"
+      apilevel: "19"
+      name: System Information
+      description: Permits collection of system information such as available and total device RAM and storage space.
+    - code: 5
+      mx: "5.1"
+      apilevel: "19"
+      name: GPS Information
+      description: Permits collection of GPS stats such as GPS device state, GPS on-time, current location, altitude and course heading, current GPS time and ground speed, position dilution of precision and current and maximum satellite count.   
+
+---
+
+The Analytics Engine in MX 5.1 can now collect detailed metrics on individual feature groups as identified by the Group Names listed below. 
+
+EXPLAIN EXPLAIN EXPLAIN EXPLAIN EXPLAIN
+
+For exah 
+
+EXPLAIN HOW SINGLE GROUPS WORK
+
+from above
+This value will allow configuration of the groups of metrics to be collected by the Analytics Engine. Each group can configured independently of other groups, but all metrics in a group must be collected or not collected as a set. If collected, all metrics in a group have the same frequency.
+
+This parm allows you to decide whether you want to configure which groups of metrics will be collected by the Analytics Engine and how frequently they are collected.
+
+The setting of one or more groups would not affect any other group that is not selected. Also, previously selected settings would be retained on the device. For example, the Analytics CSP could be used to collect WWAN Performance metrics and the other groups could be set to "Do not change". Then at another time, the CSP could be used to collect WLAN Performance metrics and the other groups could be set to "Do not change". Both WWAN and WLAN Performance metrics would then be set to collect data.
+

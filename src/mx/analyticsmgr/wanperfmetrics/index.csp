@@ -6,16 +6,11 @@ mx: "5.1"
 apilevel: "19"
 order: 12
 parm:
-  presentif: Group Action is "Configure Levels for Single Group" and Group Name is "WWAN Performance"
+  presentif: Group Action is "Configure Details for a Single Group" and Group Name is "WWAN Performance"
   pivotal: No
   name: WWANPerfMetrics
   type: list
   list:
-    - code: 99
-      mx: "5.1"
-      apilevel: "19"
-      name: Unused
-      description: This value causes the metrics of this Performance Group to be ignored.
     - code: 0
       mx: "5.1"
       apilevel: "19"
@@ -55,7 +50,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Custom Metric
-      description: This Collection API provides for input of a custom threshold to determine the conditions necessary to enable collection of this metric.
+      description: Allows for a custom metric to be monitored. This slot is reserved fpr future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 ---
 
 This parm controls detailed metrics collected by the Analytics Engine for the WWAN Performance Group.

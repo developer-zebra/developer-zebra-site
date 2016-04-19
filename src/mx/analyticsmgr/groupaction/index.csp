@@ -14,7 +14,7 @@ parm:
       mx: "4.3"
       apilevel: "19"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to which groups of metrics are collected by the Analytics Engine or how often they are collected.
+      description: This value (or the absence of this parm from the XML) will cause no change to which groups of metrics are collected by the Analytics Engine or how often they are collected; any previous setting will be retained. 
     - code: 1
       mx: "4.3"
       apilevel: "19"
@@ -22,6 +22,6 @@ parm:
       description: This value will allow configuration of the groups of metrics to be collected by the Analytics Engine. Each group can configured independently of other groups, but all metrics in a group must be collected or not collected as a set. If collected, all metrics in a group have the same frequency.
 ---
 
-This parm allows you to decide whether you want to configure which groups of metrics will be collected by the Analytics Engine and how frequently they are collected.
+Controls whether to configure data collection by the Analytics Engine on metrics groups and how frequently the data will be collected. 
 
-The setting of one or more groups would not affect any other group that is not selected. Also, previously selected settings would be retained on the device. For example, the Analytics CSP could be used to collect WWAN Performance metrics and the other groups could be set to "Do not change". Then at another time, the CSP could be used to collect WLAN Performance metrics and the other groups could be set to "Do not change". Both WWAN and WLAN Performance metrics would then be set to collect data.
+Metrics groups are configured separately; the setting of one group has no affect the others. For example, the Analytics Manager in one instance could be configured to collect WWAN Performance metrics with other groups set to "Do not change." At a later time, the CSP could be called upon to collect GPS Performance metrics with all other groups set to "Do not change." This scenario would allow collection of both WWAN **_and_** GPS Performance metrics. Unless explicitly changed, any previously configured settings are retained. 

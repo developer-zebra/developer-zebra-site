@@ -6,16 +6,11 @@ mx: "5.1"
 apilevel: "19"
 order: 10
 parm:
-  presentif: Group Action is "Configure Levels for a Single Group" and Group Name is "WLAN Performance"
+  presentif: Group Action is "Configure Details for a Single Group" and Group Name is "WLAN Performance"
   pivotal: No
   name: WLANPerfMetrics
   type: list
   list:
-    - code: 99
-      mx: "5.1"
-      apilevel: "19"
-      name: Unused
-      description: This value causes the metrics of this Performance Group to be ignored.
     - code: 0
       mx: "5.1"
       apilevel: "19"
@@ -80,7 +75,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN Roam Event
-      description: Returns the detailed state of the supplicant's negotiation with an access point in the form of a SupplicantState object from the following list. ASSOCIATED - Association completed; ASSOCIATING - Trying to associate with a BSS/SSID; AUTHENTICATING - Trying to authenticate with a BSS/SSID. This state is entered when wpa_supplicant has found a suitable BSS to authenticate with and the driver is configured to try to authenticate with that BSS; COMPLETED - All authentication completed; DISCONNECTED - This state indicates that client is not associated, but is likely to start looking for an access point; DORMANT - An Android-specific state that is reported when a client issues an explicit DISCONNECT command; FOUR_WAY_HANDSHAKE - WPA 4-Way Key Handshake in progress; GROUP_HANDSHAKE - WPA Group Key Handshake in progress; INACTIVE - Inactive state (wpa_supplicant disabled); INTERFACE_DISABLED - The network interface is disabled; INVALID - A pseudo-state that should normally never be seen; SCANNING - Scanning for a network; UNINITIALIZED - No connection to wpa_supplicant.
+      description: Returns the detailed state of the supplicant's negotiation with an access point in the form of a SupplicantState object from the list above. 
     - code: 13
       mx: "5.1"
       apilevel: "19"
@@ -90,7 +85,22 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Custom Metric
-      description: This Collection API provides for input of a custom threshold to determine the conditions necessary to enable collection of this metric.
+      description: Allows for a custom metric to be monitored. This slot is reserved fpr future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 ---
 
-This parm controls detailed metrics collected by the Analytics Engine for the WLAN Performance Group.
+This parm controls detailed metrics collected by the Analytics Engine for the WLAN Performance Group. 
+
+#### WLAN Roam Event Options
+* ASSOCIATED - Association completed
+* ASSOCIATING - Attempting to associate with a BSS/SSID
+* AUTHENTICATING - Attempting to authenticate with a BSS/SSID. This state is entered when wpa_supplicant has found a suitable BSS and the driver is configured to authenticate accordingly. 
+* COMPLETED - All authentication completed
+* DISCONNECTED - The client is not associated but is likely to start looking for an access point
+* DORMANT - An Android-specific state that is reported when a client issues an explicit DISCONNECT command
+* FOUR_WAY_HANDSHAKE - WPA 4-Way Key Handshake in progress
+* GROUP_HANDSHAKE - WPA Group Key Handshake in progress
+* INACTIVE - Inactive state (wpa_supplicant disabled)
+* INTERFACE_DISABLED - The network interface is disabled
+* INVALID - A pseudo-state that should normally never be seen
+* SCANNING - Scanning for a network
+* UNINITIALIZED - No connection to wpa_supplicant

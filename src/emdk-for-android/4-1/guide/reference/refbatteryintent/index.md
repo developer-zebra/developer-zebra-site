@@ -40,7 +40,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 
 
 ##Battery Extras:
-<table>
+<table border="1">
 	<tr>
 		<th>#</th>
 		<th>Data Definitions</th>
@@ -69,8 +69,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td>String</td>
 		<td>Prefix-5 or 6 #s-suffix revision</td>
 		<td>X</td>
-		<td>X</td>
-		<td> </td>	
+		<td>X</td>	
 	</tr>
 	<tr>
 		<td>3</td>
@@ -133,6 +132,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td> </td>
 		<td>X</td>
 		<td> </td>	
+		<td> </td>
 	</tr>
 	<tr>
 		<td>9</td>

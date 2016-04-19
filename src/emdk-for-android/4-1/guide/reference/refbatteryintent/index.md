@@ -40,7 +40,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 
 
 ##Battery Extras:
-<table border="1">
+<table class="table table-striped">
 	<tr>
 		<th>#</th>
 		<th>Data Definitions</th>
@@ -63,13 +63,13 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>Part Number for Battery</td>
-		<td>Prefix is ’21-” or “82-”.  Sample: 21-xxxxx-01 Rev. X</td>
+		<td>Part Number for Battery Prefix is ’21-” or “82-”.  Sample: 21-xxxxx-01 Rev. X</td>
 		<td>partnumber</td>
 		<td>String</td>
 		<td>Prefix-5 or 6 #s-suffix revision</td>
 		<td>X</td>
-		<td>X</td>	
+		<td>X</td>
+		<td> </td>	
 	</tr>
 	<tr>
 		<td>3</td>
@@ -107,9 +107,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td>Decommission status of the battery</td>
 		<td>battery_decommission</td>
 		<td>Int</td>
-		<td>0: Battery good
-		1: Decommissioned Battery
-		2: Status Unknown</td>
+		<td>0=Battery good 1=Decommissioned Battery 2=Status Unknown</td>
 		<td>X</td>
 		<td>X</td>
 		<td> </td>	

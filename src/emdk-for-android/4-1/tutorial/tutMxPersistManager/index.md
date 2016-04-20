@@ -48,7 +48,7 @@ So now we will create a tutorial to demonstrate how the configuration XML's are 
 * Finally we will ensure how the persisted Clock and App Manager settings are re-applied automatically. It means you would see the Clock is reset to the time you had set and the application installed back to the device from the path provided.     
    
 ###Prerequisites
-* Download the APK for sample App from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
+* Download the APK for sample App from [here](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip)
 * Download the respective Enterprise Reset package (zip file) according to your device OS version from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) and copy that file in SD card/Internal memory of the device.
 
     > Note: This above link provides the Update Packages of TC55 device only, which we have used in this tutorial. If you are using some other Symbol Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
@@ -522,11 +522,6 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 ## What's Next
 Now that you have learned how to configure and persist device configuration XML's using Persist Manager on your Symbol devices through applications, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "GPRS Manager" Mx feature and try to explore this feature by creating a tutorial.
-
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxPersistManagerTutorial.zip).
-
-
 
 
 

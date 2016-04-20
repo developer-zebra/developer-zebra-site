@@ -433,9 +433,7 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 ## What's Next
 Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/4-1/api/barcode), in the next tutorial we would concentrate on [ScanAndPair APIs](../../api/scanandpair) and develop an application to demonstrate its use. 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)]().
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BluetoothScannerTutorial.zip).
+
 
 
 

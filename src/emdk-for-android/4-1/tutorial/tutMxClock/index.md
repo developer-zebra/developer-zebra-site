@@ -420,13 +420,6 @@ Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/
 ## What's Next
 Now that you have learned how to configure date and time using Mx feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "App Manager" feature and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDKMxClockTutorial.zip).
-
-
-
-
-
 
 
 

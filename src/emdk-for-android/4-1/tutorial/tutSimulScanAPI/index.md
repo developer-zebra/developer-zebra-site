@@ -334,7 +334,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/
 
         // Get the SimulScanManager object
         simulscanManager = (SimulScanManager) emdkManager
-                .getInstance(EMDKManager.FEATURE_TYPE.SimulScan);
+                .getInstance(EMDKManager.FEATURE_TYPE.SIMULSCAN);
 
         if (null == simulscanManager) {
             textViewStatus.setText("Status: "
@@ -793,7 +793,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/
  
 
 ## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/SimulScanTutorial.zip).
+The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/Zebra/tutorials-emdk/archive/SimulScanTutorial.zip).
 
 
 

@@ -50,7 +50,7 @@ So let us create a tutorial and Configure the Mx App Manager Profile to install 
    
 ###Prerequisites
 
-* Download APK file for the application to install from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
+* Download APK file for the application to install from [here](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip)
 * Once downloaded, copy the APK file to SD Card of the device. 
 
 For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-1/guide/setup/).
@@ -556,8 +556,6 @@ Start by creating a new Android Studio [project](/emdk-for-android/4-1/tutorial/
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/ApplyProfileSilentlyTutorial.zip).
 
 
 

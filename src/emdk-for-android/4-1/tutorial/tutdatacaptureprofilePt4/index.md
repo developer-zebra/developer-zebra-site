@@ -391,9 +391,6 @@ Lastly we will run and test our application.
 
 11. Press return to go back to the MSR where you can swipe another card, or hit return again to go back to the main screen. 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingBroadcastIntentinDataCaptureProfiles.zip).
-
 
 
 

@@ -20,8 +20,15 @@ parm:
       apilevel: "19"
       name: Configure Levels for Multiple Groups
       description: This value will allow configuration of the groups of metrics to be collected by the Analytics Engine. Each group can configured independently of other groups, but all metrics in a group must be collected or not collected as a set. If collected, all metrics in a group have the same frequency.
+    - code: 2
+      mx: "5.1"
+      apilevel: "19"
+      name: Configure Levels for a Single Group
+      description: This value will allow configuration of individual metrics within a group to be collected by the Analytics Engine. The metrics within each group are configured independently of other groups, and not all metrics need be collected within in a group. Metrics collected in a single group will be governed by that group's frequency, but each metric can be assigned a collection threshold.
+
 ---
 
-Controls whether to configure data collection by the Analytics Engine on metrics groups and how frequently the data will be collected. 
+Controls whether to configure data collection by the Analytics Engine on all metrics groups, or one or more individual groups, and how frequently the data will be collected. 
 
 Metrics groups are configured separately; the setting of one group has no affect the others. For example, the Analytics Manager in one instance could be configured to collect WWAN Performance metrics with other groups set to "Do not change." At a later time, the CSP could be called upon to collect GPS Performance metrics with all other groups set to "Do not change." This scenario would allow collection of both WWAN **_and_** GPS Performance metrics. Unless explicitly changed, any previously configured settings are retained. 
+

@@ -6,6 +6,7 @@ order: 5
 mx: "5.1"
 apilevel: "19"
 parm:
+presentif: Analytics Client Settings is "Enable"
   pivotal: No
   name: DataThrottling
   type: list

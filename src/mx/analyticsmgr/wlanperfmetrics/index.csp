@@ -60,12 +60,12 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN Static DHCP IP
-      description: Returns the IP address.
+      description: Returns the current IP address of the device.
     - code: 10
       mx: "5.1"
       apilevel: "19"
       name: WLAN BSSID
-      description: Returns the basic service set identifier (BSSID) of the current access point in the form of a six-byte MAC address (XX XX XX XX XX XX). If no network currently connected, the BSSID might be null. 
+      description: Returns the basic service set identifier (BSSID) of the current access point in the form of a six-byte MAC address (XX XX XX XX XX XX). If no network currently connected, the BSSID will be null. 
     - code: 11
       mx: "5.1"
       apilevel: "19"
@@ -80,7 +80,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN DNS Name
-      description: Returns the DNS number.
+      description: Returns the DNS of the access point to which the device is connected.
     - code: 999
       mx: "5.1"
       apilevel: "19"

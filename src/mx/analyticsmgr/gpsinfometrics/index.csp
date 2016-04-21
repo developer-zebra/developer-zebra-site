@@ -20,7 +20,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Device State
-      description: Returns the state of the GPS device.
+      description: Returns the state of the GPS device (1=enabled; 0=disabled).
     - code: 2
       mx: "5.1"
       apilevel: "19"
@@ -60,7 +60,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: GPS Accuracy
-      description: description to come. 
+      description: Returns an estimate of the location accuracy (in meters).   
     - code: 10
       mx: "5.1"
       apilevel: "19"

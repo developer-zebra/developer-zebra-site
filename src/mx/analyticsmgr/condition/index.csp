@@ -1,6 +1,6 @@
 ---
 csp: analyticsmgr
-title: Metric Action
+title: Condition
 type: parm
 order: 5
 mx: "5.1"

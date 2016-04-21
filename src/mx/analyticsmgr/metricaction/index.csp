@@ -1,0 +1,26 @@
+---
+csp: analyticsmgr
+title: Metric Action
+type: parm
+order: 4
+mx: "5.1"
+apilevel: "19"
+parm:
+  pivotal: No
+  name: MetricAction
+  type: list
+  list:
+    - code: 0
+      mx: "5.1"
+      apilevel: "19"
+      name: Disable
+      description: Disables data collection for a given metric. 
+    - code: 1
+      mx: "5.1"
+      apilevel: "19"
+      name: Enable
+      description: Enables data collection for a given metric.
+
+---
+
+This parm is the on-off switch for a given metric. The value selected here determines whether to perform data collection on the given metric for the Group Name under which it is selected.

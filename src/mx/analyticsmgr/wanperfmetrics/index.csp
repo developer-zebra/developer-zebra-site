@@ -4,7 +4,7 @@ title: WWAN Performance Metrics
 type: parm
 mx: "5.1"
 apilevel: "19"
-order: 12
+order: 16
 parm:
   presentif: Group Action is "Configure Details for a Single Group" and Group Name is "WWAN Performance"
   pivotal: No

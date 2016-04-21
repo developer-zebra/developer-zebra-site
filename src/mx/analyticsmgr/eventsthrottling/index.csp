@@ -1,0 +1,51 @@
+---
+csp: analyticsmgr
+title: Events Throttling
+type: parm
+order: 5
+mx: "5.1"
+apilevel: "19"
+parm:
+  pivotal: No
+  name: EventsThrottling
+  type: list
+  list:
+    - code: 0
+      mx: "5.1"
+      apilevel: "19"
+      name: Do Not Change
+      description: This value (or the absence of this parm from the XML) will cause no change to the Events throttling setting; any previously selected setting will be retained.  
+    - code: 1
+      mx: "5.1"
+      apilevel: "19"
+      name: 1
+      description: Sets the events upload limit to 1 per day.
+    - code: 2
+      mx: "5.1"
+      apilevel: "19"
+      name: 5
+      description: Sets the events upload limit to 5 per day.
+    - code: 3
+      mx: "5.1"
+      apilevel: "19"
+      name: 10
+      description: Sets the events upload limit to 10 per day.
+    - code: 4
+      mx: "5.1"
+      apilevel: "19"
+      name: 50
+      description: Sets the events upload limit to 50 per day.
+    - code: 5
+      mx: "5.1"
+      apilevel: "19"
+      name: 100
+      description: Sets the events upload limit to 100 per day.
+    - code: 6
+      mx: "5.1"
+      apilevel: "19"
+      name: Custom Events Limit
+      description: Sets the daily events upload limit to a specified number.
+
+---
+
+This parm controls the maximum number of events that the Analytics Engine on a device will be allowed to upload each day without generating "threshold crossed" events. 

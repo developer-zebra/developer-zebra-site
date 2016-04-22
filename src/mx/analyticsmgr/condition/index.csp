@@ -45,7 +45,7 @@ parm:
 
 ---
 
-This parm determines whether data will be collected according to a given value for the metric or regardless of its condition (Unconditional). In any event, data will be collected at the frequency selected for the Group Name under which the metric is listed, and only after its selected condition (if any) is met. 
+Determines whether data will always be collected for the metric (Unconditional) or will be collected only when a user-defined value (Condition) has been satisfied. In either case, data will be collected at the frequency selected for the Group Name under which the metric is listed. When a threshold is in place, data will be collected at the group frequency only after the threshhold has been satisfied. 
 
 For example, if an organization wishes to begin collecting data about device batteries only after its batteries have exceeded the optimal number of charge cycles, that number would be entered here under the Condition of "Greater Than or Equal to a Threshold Value." Once that number is reached, data about that battery would begin at the frequency selected for that feature group. 
 

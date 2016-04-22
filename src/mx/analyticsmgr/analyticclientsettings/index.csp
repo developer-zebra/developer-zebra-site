@@ -28,4 +28,4 @@ parm:
       description: Disables the ability to configure Analytics Client Settings for controlling data and events uploaded from the device.
 ---
 
-This parm controls the ability to configure Analytics Client Settings that can limit the amount of data (in MB) and number of events that can be uploaded from the device each day before the Analytics Engine begins to generate "threshold crossed" events. 
+The on-off switch for Analytics Client Settings, which can limit the amount of data (in MB) and number of events that can be uploaded from the device each day before the Analytics Engine begins to generate "threshold crossed" events. 

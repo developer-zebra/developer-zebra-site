@@ -4,7 +4,7 @@ title: Battery and CPU Metrics
 type: parm
 mx: "5.1"
 apilevel: "19"
-order: 10
+order: 21
 parm:
   presentif: Group Action is "Configure Level for a Single Group" and Group Name is "Smart Battery Status"
   pivotal: No

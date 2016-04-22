@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Analytics Client Settings
 type: parm
-order: 2
+order: 3
 mx: "5.1"
 apilevel: "19"
 parm:

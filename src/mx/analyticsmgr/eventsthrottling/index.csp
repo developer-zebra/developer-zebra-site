@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Events Throttling
 type: parm
-order: 8
+order: 9
 mx: "5.1"
 apilevel: "19"
 parm:

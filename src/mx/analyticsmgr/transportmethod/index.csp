@@ -2,9 +2,9 @@
 csp: analyticsmgr
 title: Transport Method
 type: parm
+order: 11
 mx: "4.3"
 apilevel: "19"
-order: 10
 parm:
   pivotal: No
   name: TransportMethod

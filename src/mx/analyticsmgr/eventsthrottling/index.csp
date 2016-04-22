@@ -20,32 +20,32 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: 1
-      description: Sets the events upload limit to 1 per day.
+      description: Sets the events upload limit to 1 event per day.
     - code: 2
       mx: "5.1"
       apilevel: "19"
       name: 5
-      description: Sets the events upload limit to 5 per day.
+      description: Sets the events upload limit to 5 events per day.
     - code: 3
       mx: "5.1"
       apilevel: "19"
       name: 10
-      description: Sets the events upload limit to 10 per day.
+      description: Sets the events upload limit to 10 events per day.
     - code: 4
       mx: "5.1"
       apilevel: "19"
       name: 50
-      description: Sets the events upload limit to 50 per day.
+      description: Sets the events upload limit to 50 events per day.
     - code: 5
       mx: "5.1"
       apilevel: "19"
       name: 100
-      description: Sets the events upload limit to 100 per day.
+      description: Sets the events upload limit to 100 events per day.
     - code: 6
       mx: "5.1"
       apilevel: "19"
       name: Custom Events Limit
-      description: Sets the daily events upload limit to a specified number.
+      description: Accepts an integer to set the daily events upload limit to a specified number of events per day.
 
 ---
 

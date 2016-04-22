@@ -14,32 +14,32 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: 5 minutes
-      description: This value sets the data collection inteval at five minutes.  
+      description: Sets the data collection interval at five minutes.  
     - code: 10
       mx: "5.1"
       apilevel: "19"
       name: 10 minutes
-      description: This value sets the data collection inteval at 10 minutes.
+      description: Sets the data collection interval at 10 minutes.
     - code: 15
       mx: "5.1"
       apilevel: "19"
       name: 15 minutes
-      description: This value sets the data collection inteval at 15 minutes.
+      description: Sets the data collection interval at 15 minutes.
     - code: 30
       mx: "5.1"
       apilevel: "19"
       name: 30 minutes
-      description: This value sets the data collection inteval at 30 minutes.
+      description: Sets the data collection interval at 30 minutes.
     - code: 60
       mx: "5.1"
       apilevel: "19"
       name: 1 hour
-      description: This value sets the data collection inteval at one hour (60 minutes).
+      description: Sets the data collection interval at one hour (60 minutes).
     - code: 9999
       mx: "5.1"
       apilevel: "19"
       name: Custom
-      description: This value sets allows a custom data collection inteval (in minutes) to be specified.
+      description: Accepts an integer as the custom data collection interval (in minutes).
 
 ---
 

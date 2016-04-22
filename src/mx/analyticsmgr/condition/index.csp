@@ -15,7 +15,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Unconditional
-      description: This value causes data to be collected according to the selected frequency for the Group regardless of data condition. 
+      description: Causes data to be collected according to the selected frequency for the Group regardless of data condition. 
     - code: 1
       mx: "5.1"
       apilevel: "19"

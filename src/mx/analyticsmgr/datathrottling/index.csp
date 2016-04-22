@@ -45,7 +45,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Custom Data Limit in MB
-      description: Sets the daily data upload limit to a specified amount.
+      description: Accepts an integer to set a custom daily data upload limit (in MB).
 
 ---
 

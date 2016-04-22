@@ -40,7 +40,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Positional Dilution Of Precision
-      description: This field returns the degree to which the overall position is affected by positional dilution of position (PDOP). PDOP is caused by the location of the satellites providing the GPS fix.  Lower numbers indicate a more accurate position. A value of 1.0 indicates the least dilution (and highest accuracy); a value of 50.0 indicates the most dilution (and least accuracy).
+      description: This field returns the degree to which the overall position is affected by positional dilution of position (PDOP), which results from the position of the satellites providing the fix. A PDOP of 1.0 indicates the least dilution (and highest accuracy); and a 50.0 represents the most dilution (and least accuracy).
     - code: 6
       mx: "5.1"
       apilevel: "19"
@@ -50,17 +50,17 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Speed
-      description: Returns the speed of travel (in knots) expressed in nautical miles per hour.
+      description: Returns the travel speed (in knots) of the GPS receiver.
     - code: 8
       mx: "5.1"
       apilevel: "19"
       name: UTC Time
-      description: Returns the time of the sample as reported by the GPS in the fixed format “MM/DD/YYYY HH MM SS” with each pair of time figures separated by a colon.
+      description: Returns the time of the sample as reported by the GPS in the fixed format “MM/DD/YYYY HH MM SS” (with time figure pairs separated by colons).
     - code: 9
       mx: "5.1"
       apilevel: "19"
       name: GPS Accuracy
-      description: Returns an estimate of the location accuracy (in meters).   
+      description: Returns an estimate (in meters) of the location accuracy.   
     - code: 10
       mx: "5.1"
       apilevel: "19"

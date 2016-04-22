@@ -19,12 +19,12 @@ parm:
       mx: "4.3"
       apilevel: "19"
       name: Select Cloud Transport
-      description: Causes the Analytics Engine to send data to the Cloud. A corresponding client application capable of performing the transport must be present on the device for this option to function properly.
+      description: Causes the Analytics Engine to send data to the cloud. A corresponding client application capable of performing the transport must be present on the device for this option to function properly.
     - code: 2
       mx: "4.3"
       apilevel: "19"
       name: Select File Transport
-      description: Causes the Analytics Engine to store data locally on the device in a file in the device file system. Refer to the "Stats" parameter to control the name and location of this file. 
+      description: Causes the Analytics Engine to store data locally on the device in a file in the device file system. Refer to the "Stats" CSP to control the name and location of this file. 
 ---
 
-Controls whether data collected by the Analytics Engine is stored on the device or sent to the Cloud. When stored on the device, the name and location of the data file is controlled by the [Stats CSP](../stats). 
+Controls whether data collected by the Analytics Engine is stored on the device or sent to the cloud. When stored on the device, the name and location of the data file is controlled by the [Stats CSP](../stats). 

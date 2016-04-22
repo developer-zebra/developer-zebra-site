@@ -43,4 +43,4 @@ parm:
 
 ---
 
-This parm permits the data collection interval to be set. Data will be collected by the Analytics Engine on the device at the given interval for a paramter that has met its threshold or has no condition assigned. This setting will apply to all metrics under a given Group Name. 
+Allows the data collection interval to be set. Data will be collected by the Analytics Engine on the device at the given interval for a parameter that has met its threshold or has no condition assigned. This setting will apply to all metrics under a given Group Name. 

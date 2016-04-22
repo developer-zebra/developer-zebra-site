@@ -49,4 +49,4 @@ parm:
 
 ---
 
-This parm controls the maximum amount of data per day (in MB) that the Analytics Engine on a device will be allowed to upload each day without generating "threshold crossed" events. 
+Controls the maximum amount of data per day (in MB) that the Analytics Engine on a device will be allowed to upload each day without generating "threshold crossed" events. 

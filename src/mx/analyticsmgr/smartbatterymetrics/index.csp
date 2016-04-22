@@ -74,7 +74,7 @@ parm:
     - code: 12
       mx: "5.1"
       apilevel: "19"
-      name: Battery Serial Number
+      name: Battery Serial
       description: Returns the battery serial number as a string.
     - code: 13
       mx: "5.1"
@@ -124,8 +124,8 @@ parm:
     - code: 22
       mx: "5.1"
       apilevel: "19"
-      name: Device Serial Number
-      description: Returns serial number (as a string) of the device.
+      name: Device Serial
+      description: Returns the device serial number (as a string).
     - code: 23
       mx: "5.1"
       apilevel: "19"

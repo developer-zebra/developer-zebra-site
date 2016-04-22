@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Condition
 type: parm
-order: 7
+order: 10
 mx: "5.1"
 apilevel: "19"
 parm:

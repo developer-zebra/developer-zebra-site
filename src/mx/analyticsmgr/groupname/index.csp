@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Group Name
 type: parm
-order: 5
+order: 7
 mx: "5.1"
 apilevel: "19"
 parm:

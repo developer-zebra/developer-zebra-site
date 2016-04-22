@@ -15,13 +15,13 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Do not clear
-      description: This value (or the absence of this parm from the XML) will not clear saved data created by the Analytics Engine or AnalyticsMgr CSP when analytics is disabled on the device; any previously selected setting will be retained. 
+      description: This value (or the absence of this parm from the XML) will not cause data stored on the device by the Analytics Engine and/or AnalyticsMgr CSP to be cleared (erased) when analytics is disabled on the device; any previously selected setting will be retained. 
     - code: 1
       mx: "5.1"
       apilevel: "19"
       name: Clear Data
-      description: This value will clear (erase) any saved data created by the Analytics Engine or AnalyticsMgr CSP when analytics is disabled on the device.
+      description: Causes any saved data stored on the device by the Analytics Engine or AnalyticsMgr CSP to be cleared (erased) when analytics is disabled on the device.
 
 ---
 
-Controls whether saved data created by the Analytics Engine or AnalyticsMgr CSP is erased when analytics is disabled on the device. 
+Controls whether saved data stored on the device by the Analytics Engine and/or AnalyticsMgr CSP is cleared (erased) when analytics is disabled on the device. 

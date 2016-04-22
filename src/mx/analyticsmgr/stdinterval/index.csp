@@ -6,6 +6,7 @@ order: 11
 mx: "5.1"
 apilevel: "19"
 parm:
+  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for a Single Group"
   pivotal: No
   name: StdInterval
   type: list
@@ -43,4 +44,4 @@ parm:
 
 ---
 
-Allows the data collection interval to be set. Data will be collected by the Analytics Engine on the device at the given interval for a parameter that has met its threshold or has no condition assigned. This setting will apply to all metrics under a given Group Name. 
+Allows the data collection interval to be set. Data will be collected by the Analytics Engine on the device at the given interval for a parameter that has met its threshold or has no condition assigned. This setting will apply to all metrics under a given Group Name when detailed metrics are configured for a single group. Otherwise, the collection interval will default to Low (every 60 minutes), Medium (every 30 minutes) and High (every 10 minutes). 

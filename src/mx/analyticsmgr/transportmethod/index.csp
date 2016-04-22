@@ -4,7 +4,7 @@ title: Transport Method
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 6
+order: 10
 parm:
   pivotal: No
   name: TransportMethod

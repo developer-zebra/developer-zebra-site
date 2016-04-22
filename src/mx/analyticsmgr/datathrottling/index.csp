@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Data Throttling
 type: parm
-order: 5
+order: 7
 mx: "5.1"
 apilevel: "19"
 parm:
@@ -15,7 +15,7 @@ presentif: Analytics Client Settings is "Enable"
       mx: "5.1"
       apilevel: "19"
       name: Do Not Change
-      description: This value (or the absence of this parm from the XML) will cause no change to the Data throttling setting; any previously selected setting will be retained.  
+      description: This value (or the absence of this parm from the XML) will cause no change to the Data Throttling setting; any previously selected setting will be retained.  
     - code: 1
       mx: "5.1"
       apilevel: "19"

@@ -2,9 +2,9 @@
 csp: analyticsmgr
 title: Analytics Command
 type: parm
-order: 5
 mx: "5.1"
 apilevel: "19"
+order: 11
 parm:
   pivotal: No
   name: AnalyticsCommand

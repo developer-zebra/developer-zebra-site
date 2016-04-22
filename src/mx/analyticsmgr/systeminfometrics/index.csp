@@ -4,7 +4,7 @@ title: System Information Metrics
 type: parm
 mx: "4.3"
 apilevel: "19"
-order: 8
+order: 16
 parm:
   presentif: Group Action is "Configure Details for Single Group" and Group Name is "System Information"
   pivotal: No

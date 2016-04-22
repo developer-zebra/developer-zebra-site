@@ -70,7 +70,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Custom Metric
-      description: Allows for a custom metric to be monitored. This slot is reserved fpr future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
+      description: Allows for a custom metric to be monitored. This slot is reserved for future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 ---
 
 This parm controls the collection of GPS device info. 

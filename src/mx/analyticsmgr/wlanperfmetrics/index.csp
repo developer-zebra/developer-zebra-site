@@ -85,7 +85,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Custom Metric
-      description: Allows for a custom metric to be monitored. This slot is reserved fpr future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
+      description: Allows for a custom metric to be monitored. This slot is reserved for future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 ---
 
 Controls the selection of detailed metrics collected by the Analytics Engine for the WLAN Performance Group. Data colleciton of WLAN Roam Events offers the following metric options:

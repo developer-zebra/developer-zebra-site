@@ -80,7 +80,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN DNS Name
-      description: Returns the DNS of the access point to which the device is connected.
+      description: Polls the access point to which the device is currently connected and returns the IP address of its DNS.
     - code: 999
       mx: "5.1"
       apilevel: "19"

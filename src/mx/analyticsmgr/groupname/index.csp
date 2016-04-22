@@ -6,7 +6,7 @@ order: 5
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for Single Group"
+  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for a Single Group"
   pivotal: Yes
   name: GroupName
   type: list
@@ -25,7 +25,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Smart Battery Status
-      description: Permits collection of battery and CPU stats, including (but not limited to) battery status, temperature, charge count and cumulative charge, level, serial and part number, manufacture date, voltage, backup voltage, on time and rated capacity. CPU stats include process and device CPU time delta, device model and serial number, Android version and build number and DataAnalytics version.     
+      description: Permits collection of battery and CPU stats, including (but not limited to) battery status, temperature, charge count and cumulative charge, level, serial and part numbers, manufacture date, voltage, backup voltage, on time and rated capacity. CPU stats include process and device CPU time deltas, device model and serial numbers, Android version and build numbers and the DataAnalytics version.     
     - code: 4
       mx: "5.1"
       apilevel: "19"
@@ -35,7 +35,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: GPS Information
-      description: Permits collection of GPS stats such as GPS device state, GPS on-time, current location, altitude and course heading, current GPS time and ground speed, position dilution of precision and current and maximum satellite count.   
+      description: Permits collection of GPS stats such as GPS device state, GPS on-time, current location, altitude and course heading, current GPS time and ground speed, position dilution of precision and current and maximum satellite counts.   
 
 ---
 

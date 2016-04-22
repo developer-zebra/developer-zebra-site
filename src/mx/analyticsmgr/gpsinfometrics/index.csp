@@ -15,17 +15,17 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Altitude
-      description: Returns the height (in meters) relative to mean sea level (MSL) detected by the GPS in the device.
+      description: Returns the height (in meters) relative to mean sea level (MSL) detected by the GPS receiver in the device.
     - code: 1
       mx: "5.1"
       apilevel: "19"
       name: Device State
-      description: Returns the state of the GPS device (1=enabled; 0=disabled).
+      description: Returns the state of the GPS receiver in the device (1=enabled; 0=disabled).
     - code: 2
       mx: "5.1"
       apilevel: "19"
       name: GPS State On-Time Delta
-      description: Returns the length of time (in seconds) the GPS in the device has been powered on. If the GPS has been powered off and on within a given time interval, the accumulated active time will be reported.
+      description: Returns the length of time (in seconds) the GPS receiver in the device has been powered on. If the GPS has been powered off and on within a given time interval, the accumulated active time will be reported.
     - code: 3
       mx: "5.1"
       apilevel: "19"
@@ -65,7 +65,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Max Satellite Count
-      description: Returns the number of satellites used to calculate the position.
+      description: Reports the maximum number of satellites that were used to calculate the position. 
     - code: 999
       mx: "5.1"
       apilevel: "19"
@@ -73,5 +73,4 @@ parm:
       description: Allows for a custom metric to be monitored. This slot is reserved for future plug-in analytics capabilities. Consult Zebra Professional Services for availability and usage information.
 ---
 
-This parm controls the collection of GPS device info. 
-
+Controls the collection of status and location information from the GPS receiver in the device. 

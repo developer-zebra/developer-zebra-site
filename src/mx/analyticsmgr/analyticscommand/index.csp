@@ -34,4 +34,4 @@ parm:
 
 ---
 
-Sends pre-set or custom commands from a remote location to the Analytics Engine on a device with instructions to perform specific actions. **Upload commands require a setting of "2" (enabled) in the EnableFileUpload parameter**. 
+Sends pre-set or custom commands from a remote location to the Analytics Engine on a device with instructions to perform specific actions. The **EnableFileUpload parameter must be set to "2" (enabled)** to perform upload commands. Please refer to the "Enable File/Events Upload" parm for details. 

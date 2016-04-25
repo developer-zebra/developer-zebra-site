@@ -24,4 +24,4 @@ parm:
 
 ---
 
-Controls whether saved data stored on the device by the Analytics Engine and/or AnalyticsMgr CSP is cleared (erased) when analytics is disabled on the device. 
+Controls whether saved data stored on the device by the Analytics Engine and/or AnalyticsMgr CSP is cleared (erased) when analytics is disabled on the device. **This feature has no effect on data stored in the cloud**. 

@@ -11,10 +11,10 @@ Zebra Android devices are equipped with an Analytics Engine that can collect inf
 
 ### Main Functionality
  
-* Enable or Disable all data collection by the Analytics Engine
+* Enable or disable data collection by the Analytics Engine
 * Set data collection thresholds for individual metrics
 * Control whether data is stored on the device or in the cloud
-* Automatically Clear on-device data when Analytics Engine is disabled 
+* Automatically clear on-device data when Analytics Engine is disabled 
 * Control collection of detailed data metrics in these groups:
 	* Battery and CPU Status
 	* GPS Information

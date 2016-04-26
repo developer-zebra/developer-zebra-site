@@ -28,4 +28,6 @@ parm:
       description: Disables the ability to configure Analytics Client Settings for throttling, or controlling data and events uploaded from the device.
 ---
 
-The on-off switch for Analytics Client Settings, which controls events and data throttling and the ability to upload events and data to the cloud. Throttling can be used to limit the amount of data (in MB) and number of events that can be uploaded from the device each day before the Analytics Engine begins to generate "threshold crossed" events. 
+The on-off switch for Analytics Client Settings, which controls data and events throttling and the ability to Enable and Disable the uploading of collected data and events to the cloud. Throttling can be used to limit the amount of data (in MB) and number of events that can be uploaded from the device each day before the Analytics Engine begins to generate "threshold crossed" events.
+
+It's important to note that throttling controls only the **uploading** of data and events, not the data collection itself. Collection parameters are controlled by the frequency assigned to each collection group (i.e. WWAN Performance) and any optional threshold placed on an individual metric. 

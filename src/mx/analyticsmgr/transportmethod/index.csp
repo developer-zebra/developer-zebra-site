@@ -20,12 +20,12 @@ parm:
       mx: "4.3"
       apilevel: "19"
       name: Select Cloud Transport
-      description: Causes the Analytics Engine to send data to the cloud. A corresponding client application capable of performing the transport must be present on the device for this option to function properly.
+      description: Causes the Analytics Engine to send data to the cloud.
     - code: 2
       mx: "4.3"
       apilevel: "19"
       name: Select File Transport
-      description: Causes the Analytics Engine to store data locally on the device in a file in the device file system. 
+      description: Causes the Analytics Engine to store data locally on the device. 
 ---
 
-Controls whether data collected by the Analytics Engine is stored on the device or sent to the cloud. 
+Controls whether data collected by the Analytics Engine is stored on the device or in the cloud. Cloud transport is provided on Zebra devices by the Elemez B2M client, which is switched on whenever the Analytics Engine is enabled.

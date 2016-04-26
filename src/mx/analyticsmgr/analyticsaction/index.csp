@@ -27,4 +27,4 @@ parm:
       description: This value will cause the Analytics Engine to be disabled and cease collecting data on the device.
 ---
 
-This parm is the on-off switch for the Analytics Engine, which performs data collection on the device when enabled.
+This parm is the on-off switch for the Analytics Engine, which performs data collection on the device when enabled. Enabling the Analytics Engine also enables the Elemez B2M client, which is included with Zebra devices to provide cloud transport services.

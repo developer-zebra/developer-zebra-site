@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Enable File/Events Upload
 type: parm
-order: 9
+order: 6
 mx: "5.1"
 apilevel: "19"
 parm:

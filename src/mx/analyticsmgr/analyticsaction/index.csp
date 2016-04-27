@@ -19,7 +19,7 @@ parm:
       mx: "4.3"
       apilevel: "19"
       name: Enable
-      description: Enable Analytics Engine to collect data on the device and the Elemez B2M client to transport data to the cloud.
+      description: Enable Analytics Engine to collect data on the device.
     - code: 2
       mx: "4.3"
       apilevel: "19"
@@ -27,4 +27,4 @@ parm:
       description: Stop the Analytics Engine from collecting data and the Elemez B2M client from providing cloud transportation services.
 ---
 
-This parm is the on-off switch for the Analytics Engine, which performs data collection on the device when enabled. Enabling the Analytics Engine also enables the Elemez B2M client, which Zebra includes with its devices for cloud transportation services.
+This parm is the on-off switch for the Analytics Engine, which performs data collection on the device when enabled. Enabling the Analytics Engine also enables the Elemez B2M client, which provides cloud transportation services for Zebra devices (See Enable File/Events Upload and Transport Method). 

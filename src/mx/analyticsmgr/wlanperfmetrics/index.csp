@@ -15,32 +15,32 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN Receive Packet Delta
-      description: Enables data collection of the number of packets that have been received as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
+      description: Enables data collection of the number of packets that have been received as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, collected value will be null.
     - code: 1
       mx: "5.1"
       apilevel: "19"
       name: WLAN Signal Quality
-      description: Enables data collection of the current WLAN signal quality on the device (from 0% to 100%) as a percentage of the best possible signal quality. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
+      description: Enables data collection of the current WLAN signal quality on the device (from 0% to 100%) as a percentage of the best possible signal quality. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, collected value will be null.
     - code: 2
       mx: "5.1"
       apilevel: "19"
       name: WLAN Transmit Package Delta
-      description: Enables data collection of the number of packets that have been transmitted as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
+      description: Enables data collection of the number of packets that have been transmitted as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, collected value will be null.
     - code: 3
       mx: "5.1"
       apilevel: "19"
       name: WLAN Receive Byte Delta
-      description: Enables data collection of the number of bytes that have been received as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
+      description: Enables data collection of the number of bytes that have been received as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, collected value will be null.
     - code: 4
       mx: "5.1"
       apilevel: "19"
       name: WLAN Transmit Byte Delta
-      description: Enables data collection of the number of bytes that have been transmitted as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, no value will be returned.
+      description: Enables data collection of the number of bytes that have been transmitted as part of WLAN communications on the device since the last collection. If the device does not have WLAN support or it is not possible to track the operation of the WLAN on the device, collected value will be null.
     - code: 5
       mx: "5.1"
       apilevel: "19"
       name: WLAN Radio On-Time
-      description: Enables data collection of the elapsed time (in seconds) that the WLAN radio on the device has been powered on since the last collection. If the device does not have a WLAN radio, has more than one, or it is not possible to track the operation of the WLAN on the device, no value will be returned. 
+      description: Enables data collection of the elapsed time (in seconds) that the WLAN radio on the device has been powered on since the last collection. If the device does not have a WLAN radio, has more than one, or it is not possible to track the operation of the WLAN on the device, collected value will be null.
     - code: 6
       mx: "5.1"
       apilevel: "19"
@@ -55,7 +55,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN IP Address Change
-      description: Return a boolean value (true or false) when the IP Address has been changed. 
+      description: Enables data collection of a boolean value (true or false) to indicate whether the IP address has been changed. 
     - code: 9
       mx: "5.1"
       apilevel: "19"
@@ -65,7 +65,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN BSSID
-      description: Enables data collection of the basic service set identifier (BSSID) of the current access point in the form of a six-byte MAC address (XX XX XX XX XX XX). If no network currently connected, the BSSID will be null. 
+      description: Enables data collection of the basic service set identifier (BSSID) of the current access point in the form of a six-byte MAC address (XX XX XX XX XX XX). If no network currently connected, the collected BSSID info will be null. 
     - code: 11
       mx: "5.1"
       apilevel: "19"
@@ -75,7 +75,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: WLAN Roam Event
-      description: Enables data collection of the detailed state of the supplicant's negotiation with an access point in the form of a SupplicantState object from the list above. 
+      description: Enables data collection of the detailed state of the supplicant's negotiation with an access point in the form of a SupplicantState static object from the "Roam Event Options" list (above). 
     - code: 13
       mx: "5.1"
       apilevel: "19"

@@ -49,4 +49,4 @@ parm:
 
 ---
 
-Controls the maximum amount of data (in MB) that the Analytics Engine on a device will be allowed to upload in any 24-hour period without generating "threshold crossed" events. 
+Controls the maximum amount of data (in MB) that the AnalyticsMgr on a device will accept from client components (such as [Stats](../stats)) for processing and transport in any 24-hour period before generating "threshold crossed" events. It's important to note that throttling does not govern data collection itself, but only the **transfer** of data from client components to the AnalyticsMgr. 

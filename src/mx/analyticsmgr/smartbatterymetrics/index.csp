@@ -20,7 +20,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Battery Level
-      description: Enables data collection of the current battery level (from 0% to 100%) as a percentage of the total capacity of the battery. If the device does not have a battery or the level of the battery cannot be determined, no value will be returned.
+      description: Enables data collection of the current battery level (from 0% to 100%) as a percentage of the total capacity of the battery. If the device does not have a battery or the level of the battery cannot be determined, collected value will be null.
     - code: 2
       mx: "5.1"
       apilevel: "19"
@@ -30,7 +30,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Display On-time
-      description: Enables data collection of the length of elapsed time (in seconds) that the display on the device has been on since the last time this collection API was called for the same collection Group Name. If the device does not have a display or it is not possible to track the state of the display on the device, no value will be returned.
+      description: Enables data collection of the length of elapsed time (in seconds) that the display on the device has been on since the last time this collection API was called for the same collection Group Name. If the device does not have a display or it is not possible to track the state of the display on the device, collected value will be null.
     - code: 4
       mx: "5.1"
       apilevel: "19"
@@ -45,12 +45,12 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Process CPU Time Delta
-      description: Enables data collection of the length of CPU time (in seconds) elapsed for all processes or for a selected process since the last time this collection API was called for the same process and the same Group Name. To acquire the CPU time for all processes, no additional parameters should be provided. To acquire the CPU time for a specific process, an additional parameter must be provided to supply the executable file name (with file extension but without path) for the process. For example, “Process=30agent.exe” would request the CPU time for the MSP Agent process. If the CPU time for a specified process is requested and that process is not running, no value will be returned.
+      description: Enables data collection of the length of CPU time (in seconds) elapsed for all processes or for a selected process since the last time this collection API was called for the same process and the same Group Name. To acquire the CPU time for all processes, no additional parameters should be provided. To acquire the CPU time for a specific process, an additional parameter must be provided to supply the executable file name (with file extension but without path) for the process. For example, “Process=30agent.exe” would request the CPU time for the MSP Agent process. If the CPU time for a specified process is requested and that process is not running, collected value will be null.
     - code: 7
       mx: "5.1"
       apilevel: "19"
       name: Device CPU Time Delta
-      description: Enables data collection of the change in the amount of CPU time (in seconds) that has been accrued since the last collection. The value returned can range from 0 to the collection frequency of the named collection Group. If the amount of accrued CPU time cannot be measured, no value will be returned
+      description: Enables data collection of the change in the amount of CPU time (in seconds) that has been accrued since the last collection. The value returned can range from 0 to the collection frequency of the named collection Group. If the amount of accrued CPU time cannot be measured, collected value will be null.
     - code: 8
       mx: "5.1"
       apilevel: "19"

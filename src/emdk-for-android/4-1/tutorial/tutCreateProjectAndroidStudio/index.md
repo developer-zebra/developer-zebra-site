@@ -40,20 +40,6 @@ Open Android Studio.  If you have a previous project open, close the project by 
 
 ## Enable the EMDK for Android in your project
 
-
-### Set EMDK API 19 as Compile SDK in Project Structure
-
->Note: At the time of this writing, Android Studio's New project wizard scaffolds new projects with dependencies that prohibit setting the **Compile SDK Version** below API 19. See the sections below for alternative methods of enabling the EMDK API in your project should your project require a compile SDK below API 19.
-
-After completing the steps in **Creating The Project**
-
-1. Select **Project Structure** from the **File** menu.
-2. In the Project Structure window select **app** from the left pane under **Modules**.
-3. Now select **EMDK x.x (API 19) (Symbol Technologies LLC) (API 19)** in from the **Compile Sdk Version drop-down box.
-4. Now click the **OK** button.
-
-**Your project is now ready to use the EMDK for Android APIs**
-
 ###  EMDK as a dependency in gradle.build
 Use this method to make use of the EMDK 16 or 19 APIs in a project with a Compile SDK set above API 19.
 
@@ -66,14 +52,14 @@ After completing the steps in **Creating The Project**
 
 		:::
 		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol-emdk_v4.0_API-19\\libs')
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol-emdk_v4.1_API-19\\libs')
 		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
     **Mac**
 
 		:::
 		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.0_API-19/libs')
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.1_API-19/libs')
 		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
 

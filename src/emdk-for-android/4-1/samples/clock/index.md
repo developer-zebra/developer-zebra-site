@@ -35,6 +35,7 @@ productversion: '4.1'
 ##Overview##
 One of the features of the EMDK for Android is the ability to set the system clock. This sample application will show you how you can create a custom application for setting the system time. 
 
+>Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

@@ -40,6 +40,8 @@ The available actions are:
 
 This sample application will allow you to Add/Replace named APN and remove existing named APN.
 
+>Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 

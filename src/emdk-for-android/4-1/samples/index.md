@@ -1,6 +1,6 @@
 ---
 publish: false
-title: EMDK For Android 4.0 Samples
+title: EMDK For Android 4.1 Samples
 layout: list-samples.html
 downloads:
   - title: Android Studio Projects

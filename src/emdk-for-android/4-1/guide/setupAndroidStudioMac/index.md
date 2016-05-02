@@ -7,7 +7,7 @@ productversion: '4.1'
 
 
 ##Removing previous EMDK installations
->Note: Prevous versions of the EMDK for Android should be removed before installing v4.0
+>Note: Before upgrading, previous versions of the EMDK for Android should be removed.
 
 **Removing SDK add-ons**
 1. Navigate to the /Users/[user]/Library/Android/sdk/add-ons directory.
@@ -73,7 +73,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 
 	![img](../../images/setup/mac/image5.png)
 
-##Installing EMDK v4.0
+##Installing EMDK
 
 ###Prerequisites
 
@@ -81,29 +81,29 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 	- Android API 16, API 19 platforms
 	- Android SDK Build-tools 21.1.x or newer	
 	
-###Download the EMDK for Android 4.0 MAC install files
+###Download the EMDK for Android MAC install files
 
-1. Download the [EMDK for Android 4.0 MAC install files](/emdk-for-android/download)
+1. Download the [EMDK for Android MAC install files](/emdk-for-android/download)
 2. Extract the downloaded zip file and make note of the path to the extracted files. This path will be refered to as **EMDK_FILES** for the rest of this guide.
 
 The extracted folder will contain the following files
-- EMDK add-ons (“\EMDK_4.0_12172015_MAC\SDK\addon-symbol-emdk_v4.0_API-16/ “addon-symbol-emdk_v4.0_API-19”)
-- EMDK Wizard core components (“\EMDK_4.0_12172015_MAC\Symbol EMDK for Android”)
-- EMDK Wizard plug-in for Android Studio (“\EMDK_4.0_12172015_MAC\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
-- EMDK device runtime (“\EMDK_4.0_12172015_MAC\Device Update\ EmdkOSUpdateApp_v4.0.3.apk”)
+- EMDK add-ons (“\EMDK_X.X_12172015_MAC\SDK\addon-symbol-emdk_vX.X_API-16/ “addon-symbol-emdk_vX.X_API-19”)
+- EMDK Wizard core components (“\EMDK_X.X_12172015_MAC\Symbol EMDK for Android”)
+- EMDK Wizard plug-in for Android Studio (“\EMDK_X.X_12172015_MAC\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
+- EMDK device runtime (“\EMDK_X.X_12172015_MAC\Device Update\ EmdkOSUpdateApp_vX.X.X.apk”)
 
 >NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in the [Device Setup](/emdk-for-android/4-1/guide/setupDevice) guide.
 
 ###EMDK SDK add-on Integration
 
-Add EMDK 4.0 APIs to the Android SDK
+Add EMDK APIs to the Android SDK
 1. Navigate to the /Users/**username**/Library/Android/sdk/add-ons directory.
 
 	![img](../../images/setup/mac/image6.png)
 
 2. Copy the following EMDK sdk addon folders from **EMDK\_FILES/SDK/** into the add-ons directory.
-	- addon-symbol-emdk\_v4.0_API-16
-	- addon-symbol-emdk\_v4.0_API-19 
+	- addon-symbol-emdk\_vX.X_API-16
+	- addon-symbol-emdk\_vX.X_API-19 
 
 3. Exit & Launch Android Studio
 4. Go to Tools > Android > SDK Manager

@@ -430,9 +430,6 @@ That's it!!! We are done with all the coding and configuration part that will le
 ## What's Next
 Now that you have learned how to configure Clipboard using Wireless Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Touch Manager" Mx feature and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxUIManagerTutorial.zip)
-
 
 
 

@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Analytics Action
 type: parm
-order: 2
+order: 1
 mx: "4.3"
 apilevel: "19"
 parm:
@@ -14,17 +14,17 @@ parm:
       mx: "4.3"
       apilevel: "19"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Engine collects data on the device.
+      description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Engine collects data on the device; any previously selected setting will be retained. 
     - code: 1
       mx: "4.3"
       apilevel: "19"
       name: Enable
-      description: This value will cause the Analytics Engine to be enabled and hence to collect data on the device.
+      description: Enable Analytics Engine to collect data on the device.
     - code: 2
       mx: "4.3"
       apilevel: "19"
       name: Disable
-      description: This value will cause the Analytics Engine to be disabled and hence to not collect data on the device.
+      description: Stop the Analytics Engine from collecting data and the Elemez B2M client from providing cloud transportation services.
 ---
 
-This parm allows you to enable or disable the collection of data on the device by the Analytics Engine. 
+This parm is the on-off switch for the Analytics Engine, which performs data collection on the device when enabled. Enabling the Analytics Engine also enables the Elemez B2M client, which provides cloud transportation services for Zebra devices (See Enable File/Events Upload and Transport Method). 

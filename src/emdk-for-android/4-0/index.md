@@ -1,6 +1,8 @@
 ---
 title: EMDK For Android
-layout: list-mx.html
+insert:
+    file: emdk-for-android/4-0/guide/about/index.md
+layout: guide.html
 menu:
   title: EMDK For Android 4.0
   img: /emdk-for-android/images/logo.png

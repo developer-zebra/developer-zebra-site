@@ -3,6 +3,19 @@ publish: false
 title: Available Product Documentation
 layout: list-products.html
 products:
+  - title: Link-OS SDK
+    description: "The Link-OS SDK makes creating powerful printer apps simple and straightforward."
+    image: /images/products/link-os.png
+    sections:
+      - title: Android
+        url: /link-os/android
+      - title: iOS
+        url: /link-os/ios
+      - title: PC
+        url: /link-os/pc
+      - title: Web Services
+        url: /link-os/webservices
+
   - title: EMDK For Android
     description: "Java sample projects using EMDK API's, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/4-1/guide/about

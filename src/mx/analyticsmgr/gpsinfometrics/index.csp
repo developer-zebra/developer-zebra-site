@@ -65,7 +65,7 @@ parm:
       mx: "5.1"
       apilevel: "19"
       name: Max Satellite Count
-      description: Reports the maximum number of satellites that were used to calculate the position. 
+      description: Enables data collection on the maximum number of satellites that the device can maintain in its satellites list. 
     - code: 999
       mx: "5.1"
       apilevel: "19"

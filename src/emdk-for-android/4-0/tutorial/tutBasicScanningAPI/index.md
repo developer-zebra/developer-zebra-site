@@ -469,10 +469,6 @@ That's it!!! We are done with all the coding part that will let us scan the barc
 ## What's Next
 Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/4-0/api) in depth and use it to perform advanced scanning operations by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BasicScanningTutorial.zip).
-
-
 
 
 

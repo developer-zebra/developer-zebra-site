@@ -1013,9 +1013,6 @@ That's it!!! We are done with all the coding and configuration part that will al
 ## What's Next
 Now that you have learned how to configure access to different applications on your device through your application using Mx Access Manager, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Certificate Manager" Mx feature and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxAccessManagerTutorial.zip).
-
 
 
 

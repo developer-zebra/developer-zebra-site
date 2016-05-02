@@ -531,10 +531,6 @@ That's it!!! We are done with all the coding and configuration part that will al
 ## What's Next
 Now that you have learned how to configure your device's Wi-Fi settings as well as network profiles on your Symbol Android devices through applications using Mx Wi-Fi feature, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Certificate Manager" feature and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/WiFiManagerTutorial.zip).
-
-
 
 
 

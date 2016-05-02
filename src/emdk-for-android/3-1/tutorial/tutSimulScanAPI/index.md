@@ -814,12 +814,6 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 3. Place the template in the SD Card before accessing it from the application.
  
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/SimulScanTutorial.zip).
-
-
-
-
 
 
 

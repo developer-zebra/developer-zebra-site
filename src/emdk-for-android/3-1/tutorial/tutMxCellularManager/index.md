@@ -447,9 +447,6 @@ That's it!!! We are done with all the coding and configuration part that will le
 ## What's Next
 Now that you have learned how to set Roaming State using Cellular Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Display Manager" feature of Mx and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/CellularManagerTutorial.zip).
-
 
 
 

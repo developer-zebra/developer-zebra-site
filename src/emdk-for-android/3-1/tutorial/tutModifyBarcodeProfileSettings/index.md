@@ -909,8 +909,6 @@ If you are using Eclipse with ADT, click [here](../tutEnableEMDKEclipseADT) for 
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-ModifyBarcodeProfileTutorial.zip).
 
 
 

@@ -44,9 +44,9 @@ The App Manager API requires the Android *package name* of the application that 
    >Note:
    >Android device does not provide package names of the installed applications.
 
-So we have [created an application](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps-Source.zip) that finds all the installed applications programmatically and displays their package names along with the application name in a list.
+So we have [created an application](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip) that finds all the installed applications programmatically and displays their package names along with the application name in a list.
 
-You can [download](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk) the application and install it - or modify the [source](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps-Source.zip) to your liking. Once installed, open the app and you can find the package names of both the applications.
+You can [download](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip) the application and install it - or modify the [source](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip) to your liking. Once installed, open the app and you can find the package names of both the applications.
 
 So, the Package name for EHS Launcher App is **com.motorolasolutions.enterprisehomescreen**
 
@@ -627,12 +627,6 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 ## What's Next
 Now that you have learned how to configure applications in the device using Mx App Manager feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "Power Manager" feature and try to explore this feature by creating a tutorial.
-
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDKMxDefaultLauncherTutorial.zip). You can also [download](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk) the Package Name helper application and install it - or modify the [source](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps-Source.zip) to your liking.
-
-
-
 
 
 

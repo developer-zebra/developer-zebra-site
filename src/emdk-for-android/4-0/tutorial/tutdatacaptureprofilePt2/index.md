@@ -216,8 +216,6 @@ The tutorial uses EMDK V 2.1 that has organized existing features as well as got
 ## What's Next
 The [next tutorial](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCaptureProfiles-Using+Intent+Output.zip).
 
 
 

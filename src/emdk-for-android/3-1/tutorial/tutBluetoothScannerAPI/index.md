@@ -454,9 +454,7 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)]().
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/BluetoothScannerTutorial.zip).
+
 
 
 

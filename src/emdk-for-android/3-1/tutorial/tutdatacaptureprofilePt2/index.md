@@ -221,9 +221,6 @@ For more information about setting up the EMDK please see the EMDK Overview.
 ## What's Next
 The [next tutorial](../tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCaptureProfiles-Using+Intent+Output.zip).
-
 
 
 

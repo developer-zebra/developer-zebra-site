@@ -416,9 +416,6 @@ Lastly we will run and test our application.
 ## What's Next
 The [next tutorial](../tutdatacaptureprofilePt4) will show you how to use the Intent Output as a Broadcast instead of starting an activity.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingMultipleDataCaptureProfiles.zip).
-
 
 
 

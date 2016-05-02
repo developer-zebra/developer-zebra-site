@@ -259,8 +259,6 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 ## What's Next
 Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/4-0/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCapture-ProfileManagerTutorial.zip).
 
 
 

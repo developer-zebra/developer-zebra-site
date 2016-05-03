@@ -5,7 +5,7 @@ type: parm
 order: 11
 mx: "4.4"
 parm:
-  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send key-code" *AND* Advanced is "True"
+  presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send key-code" and Advanced is "True"
   pivotal: No
   type: list
   list:
@@ -23,7 +23,7 @@ parm:
       description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Control.
 ---
 
-Control the Control Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML. When the Key Code is sent, the specified Key State Modifier will be set into the Current Key State, but since the Key State Modifier is not supported by the device, and hence has no associated Key Mapping Table, there will be no noticeable effect produced by setting that Key State Modifier.
+Controls the Control Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML. When the Key Code is sent, the specified Key State Modifier will be set into the Current Key State, but since the Key State Modifier is not supported by the device, and hence has no associated Key Mapping Table, there will be no noticeable effect produced by setting that Key State Modifier.
 
 Parm names:
 

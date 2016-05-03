@@ -19,6 +19,8 @@ parm:
       description: Prevents Key Event that occurred when the Key was pressed or released from being attached to the Intent.
 ---
 
+These parms control whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+
 Parm name:
 
 * For Base Key State Table: BaseIntentAddKeyState
@@ -27,7 +29,3 @@ Parm name:
 * For Grey Key State Table: GreyIntentAddKeyState
 * For Shift Key State Table: ShiftIntentAddKeyState
 * For Control Key State Table: ControlIntentAddKeyState
-
-Description: 
-
-Controls whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.

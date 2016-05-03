@@ -10,7 +10,7 @@ parm:
   type: string
 ---
 
-Used to specify the attributes of an Intent that will be sent as the Key Behavior for the specified Key in various Key State Mapping Tables.
+These parms are used to specify the attributes of an Intent that will be sent as the Key Behavior for the specified Key in various Key State Mapping Tables.
 
 Parm name:
 
@@ -21,7 +21,7 @@ Parm name:
 * For Shift Key State Table: ShiftSendIntent
 * For Control Key State Table: ControlSendIntent
 
-Used to specify the conditions under which an Intent will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+These parms are used to specify the conditions under which an Intent will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
 
 <div class="parm-table">
  <table>

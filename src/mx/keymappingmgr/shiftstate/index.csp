@@ -23,7 +23,7 @@ parm:
       description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Shifted.
 ---
 
-Used to control the Shift Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML. When the Key Code is sent, the specified Key State Modifier will be set into the Current Key State. However, since the Key State Modifier is not supported by the device, and hence has no associated Key Mapping Table, there will be no noticeable effect produced by setting that Key State Modifier.
+These parms are used to control the Shift Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML. When the Key Code is sent, the specified Key State Modifier will be set into the Current Key State. However, since the Key State Modifier is not supported by the device, and hence has no associated Key Mapping Table, there will be no noticeable effect produced by setting that Key State Modifier.
 
 Parm names:
 

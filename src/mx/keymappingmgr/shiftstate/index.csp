@@ -27,9 +27,9 @@ These parms are used to control the Shift Key State Modifier when the Key Code i
 
 Parm names:
 
-* For Base Key State Table: BaseKeyCodeShiftState
-* For Blue Key State Table: BlueKeyCodeShiftState
-* For Orange Key State Table: OrangeKeyCodeShiftState
-* For Grey Key State Table: GreyKeyCodeShiftState
-* For Shift Key State Table: ShiftKeyCodeShiftState
-* For Control Key State Table: ControlKeyCodeShiftState
+* For Base Key State Table: <b>BaseKeyCodeShiftState</b>
+* For Blue Key State Table: <b>BlueKeyCodeShiftState</b>
+* For Orange Key State Table: <b>OrangeKeyCodeShiftState</b>
+* For Grey Key State Table: <b>GreyKeyCodeShiftState</b>
+* For Shift Key State Table: <b>ShiftKeyCodeShiftState</b>
+* For Control Key State Table: <b>ControlKeyCodeShiftState</b>

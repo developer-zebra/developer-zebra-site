@@ -14,12 +14,12 @@ Used to specify the Application Name of the application whose main Activity shou
 
 Parm names:
 
-* For Base Key State Table: BaseLaunchActivityName
-* For Blue Key State Table: BlueLaunchActivityName
-* For Orange Key State Table: OrangeLaunchActivityName
-* For Grey Key State Table: GreyLaunchActivityName
-* For Shift Key State Table: ShiftLaunchActivityName
-* For Control Key State Table: ControlLaunchActivityName
+* For Base Key State Table: <b>BaseLaunchActivityName</b>
+* For Blue Key State Table: <b>BlueLaunchActivityName</b>
+* For Orange Key State Table: <b>OrangeLaunchActivityName</b>
+* For Grey Key State Table: <b>GreyLaunchActivityName</b>
+* For Shift Key State Table: <b>ShiftLaunchActivityName</b>
+* For Control Key State Table: <b>ControlLaunchActivityName</b>
 
 Parm value input rules: 
 

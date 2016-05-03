@@ -1,6 +1,6 @@
 ---
 csp: keymapmgr
-title:  FN state
+title:  FN State
 type: parm
 order: 11
 mx: "4.4"
@@ -27,9 +27,9 @@ These parms allow you to control the Function Key State Modifier when the Key Co
 
 Parm names:
 
-* For Base Key State Table: BaseKeyCodeFnState
-* For Blue Key State Table: BlueKeyCodeFnState
-* For Orange Key State Table: OrangeKeyCodeFnState
-* For Grey Key State Table: GreyKeyCodeFnState
-* For Shift Key State Table: ShiftKeyCodeFnState
-* For Control Key State Table: ControlKeyCodeFnState
+* For Base Key State Table: <b>BaseKeyCodeFnState</b>
+* For Blue Key State Table: <b>BlueKeyCodeFnState</b>
+* For Orange Key State Table: <b>OrangeKeyCodeFnState</b>
+* For Grey Key State Table: <b>GreyKeyCodeFnState</b>
+* For Shift Key State Table: <b>ShiftKeyCodeFnState</b>
+* For Control Key State Table: <b>ControlKeyCodeFnState</b>

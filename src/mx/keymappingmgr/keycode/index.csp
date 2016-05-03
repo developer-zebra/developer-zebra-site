@@ -614,9 +614,9 @@ Used to specify which Key Code will be sent as the Key Behavior for the specifie
 
 Parm names:
 
-* For Base Key State Table: BaseKeyCode
-* For Blue Key State Table: BlueKeyCode
-* For Orange Key State Table: OrangeKeyCode
-* For Grey Key State Table: GreyKeyCode
-* For Shift Key State Table: ShiftKeyCode
-* For Control Key State Table: ControlKeyCode
+* For Base Key State Table: <b>BaseKeyCode</b>
+* For Blue Key State Table: <b>BlueKeyCode</b>
+* For Orange Key State Table: <b>OrangeKeyCode</b>
+* For Grey Key State Table: <b>GreyKeyCode</b>
+* For Shift Key State Table: <b>ShiftKeyCode</b>
+* For Control Key State Table: <b>ControlKeyCode</b>

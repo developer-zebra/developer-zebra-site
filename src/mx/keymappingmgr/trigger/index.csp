@@ -46,10 +46,10 @@ These parms are used you to specify which Triggers will be performed as the Key 
 
 Parm names:
 
-* For Base Key State Table: BaseTrigger
-* For Blue Key State Table: BlueTrigger
-* For Orange Key State Table: OrangeTrigger
-* For Grey Key State Table: GreyTrigger
-* For Shift Key State Table: ShiftTrigger
-* For Control Key State Table: ControlTrigger
+* For Base Key State Table: <b>BaseTrigger</b>
+* For Blue Key State Table: <b>BlueTrigger</b>
+* For Orange Key State Table: <b>OrangeTrigger</b>
+* For Grey Key State Table: <b>GreyTrigger</b>
+* For Shift Key State Table: <b>ShiftTrigger</b>
+* For Control Key State Table: <b>ControlTrigger</b>
 

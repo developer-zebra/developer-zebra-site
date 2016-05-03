@@ -12,11 +12,11 @@ parm:
     - code: 0
       mx: "4.4"
       name: True
-      description: This value causes Key Event that occurred when the Key was pressed or released to be attached to the Intent. This would generally be valuable only when an application was written specifically to receive such an Intent since it would require the application to understand and interpret the data format used to encode a Key Event.
+      description: Causes Key Event that occurred when the Key was pressed or released to be attached to the Intent. This would generally be valuable only when an application was written specifically to receive such an Intent since it would require the application to understand and interpret the data format used to encode a Key Event.
     - code: 2
       name: False
       mx: "4.4"
-      description: This value causes Key Event that occurred when the Key was pressed or released to not be attached to the Intent.
+      description: Prevents Key Event that occurred when the Key was pressed or released from being attached to the Intent.
 ---
 
 Parm name:
@@ -30,4 +30,4 @@ Parm name:
 
 Description: 
 
-This parm allows you to choose whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+Controls whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.

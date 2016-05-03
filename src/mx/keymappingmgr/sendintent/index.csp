@@ -12,7 +12,7 @@ parm:
 
 These parms are used to specify the attributes of an Intent that will be sent as the Key Behavior for the specified Key in various Key State Mapping Tables.
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseSendIntent
 * For Blue Key State Table: BlueSendIntent
@@ -49,13 +49,11 @@ These parms are used to specify the conditions under which an Intent will be sen
 </div>	
 
 ####Intent type
+>Used to specify how the Intent should be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: Yes
-
-Description: 
-
->This parm allows you to specify how the Intent should be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
 
 <div class="parm-table">
  <table>
@@ -78,11 +76,13 @@ Description:
 </div>	
 
 ####Action
+>Used to specify the Action Name attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Action Name attribute of an Intent generally tells the receiver of the Intent what to do. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. The requirement of a value for this attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentAction
 * For Blue Key State Table: BlueIntentAction
@@ -91,20 +91,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentAction
 * For Control Key State Table: ControlIntentAction
 
-Description: 
-
->This parm allows you to specify the Action Name attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Action Name attribute of an Intent generally tells the receiver of the Intent what to do. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. Whether a value for this attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid Action Name for the Intent
 
 ####Category
+>Used to specify the Category attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Category attribute of an Intent generally tells the system what types of receivers to send the Intent to. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. The requirement of a value for this attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentCategory
 * For Blue Key State Table: BlueIntentCategory
@@ -113,20 +111,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentCategory
 * For Control Key State Table: ControlIntentCategory
 
-Description: 
-
->This parm allows you to specify the Category attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Category attribute of an Intent generally tells the system what types of receivers to send the Intent to. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. Whether a value for this attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid category for the Intent
 
 ####Package
+>Used to specify the Package Name attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Package Name attribute of an Intent generally tells the system exactly which application to send the Intent to. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. The requirement of a value for this attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent" and the Intent Type is "Start activity"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentPackage
 * For Blue Key State Table: BlueIntentPackage
@@ -135,20 +131,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentPackage
 * For Control Key State Table: ControlIntentPackage
 
-Description: 
-
->This parm allows you to specify the Package Name attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Package Name attribute of an Intent generally tells the system exactly which application to send the Intent to. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. Whether a value for this attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid Package Name
 
 ####Class
+>Used to specify the Class Name attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Class Name attribute of an Intent generally tells the system exactly which class within an application to send the Intent to. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. The requirement of a value for this attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent" and the Intent Type is "Start activity"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentClass
 * For Blue Key State Table: BlueIntentClass
@@ -157,20 +151,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentClass
 * For Control Key State Table: ControlIntentClass
 
-Description: 
-
->This parm allows you to specify the Class Name attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Class Name attribute of an Intent generally tells the system exactly which class within an application to send the Intent to. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. Whether a value for this attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid Class Name
 
 ####Data URI
+>Used to specify the Data URI attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Data URI attribute of an Intent generally provides a reference to the data (if any) that should be processed by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. The requirement of a value for this attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentUri
 * For Blue Key State Table: BlueIntentUri
@@ -179,20 +171,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentUri
 * For Control Key State Table: ControlIntentUri
 
-Description: 
-
->This parm allows you to specify the Data URI attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The Data URI attribute of an Intent generally provides a reference to the data (if any) that should be processed by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. Whether a value for this attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid URI value
 
 ####MIME type
+>Used to specify the MIME Type attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The MIME Type attribute of an Intent generally provides information about the type of data referenced by the Data URI attribute (if any) that helps qualify the action that should be taken by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. The requirement for a value for this attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentMimeType
 * For Blue Key State Table: BlueIntentMimeType
@@ -201,20 +191,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentMimeType
 * For Control Key State Table: ControlIntentMimeType
 
-Description: 
-
->This parm allows you to specify the MIME Type attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. The MIME Type attribute of an Intent generally provides information about the type of data referenced by the Data URI attribute (if any) that helps qualify the action that should be taken by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent. Whether a value for this attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid MIME type value
 
 ####Extra parameter name
+>Used to specify the Name of an Extra Data attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. An Extra Data attribute of an Intent generally provides auxiliary information that helps qualify the action that should be taken on the data by the application to which the Intent is sent. An Extra Data attribute must be specified using both an Extra Name and an Extra Value since both are required to add an Extra Data attribute to an Intent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no Extra Data attribute to be set in the Intent. The requirement for an Extra Data attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentStringExtraName
 * For Blue Key State Table: BlueIntentStringExtraName
@@ -223,20 +211,18 @@ Parm name:
 * For Shift Key State Table: ShiftIntentStringExtraName
 * For Control Key State Table: ControlIntentStringExtraName
 
-Description: 
-
->This parm allows you to specify the Name of an Extra Data attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. An Extra Data attribute of an Intent generally provides auxiliary information that helps qualify the action that should be taken on the data by the application to which the Intent is sent. An Extra Data attribute must be specified using both an Extra Name and an Extra Value since both are required to add an Extra Data attribute to an Intent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no Extra Data attribute to be set in the Intent. Whether an Extra Data attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
-
 Parm value input rules: 
 
 * String containing a valid extra value name
 
 ####Extra parameter value
+>Used to specify the Value of an Extra Data attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. An Extra Data attribute of an Intent generally provides auxiliary information that helps qualify the action that should be taken on the data by the application to which the Intent is sent. An Extra Data attribute must be specified using both an Extra Name and an Extra Value since both are required to add an Extra Data attribute to an Intent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no Extra Data attribute to be set in the Intent. The requirement of an Extra Data attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
+
 Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
 Pivotal parm: No
 
-Parm name:
+Parm names:
 
 * For Base Key State Table: BaseIntentStringExtraValue
 * For Blue Key State Table: BlueIntentStringExtraValue
@@ -244,10 +230,6 @@ Parm name:
 * For Grey Key State Table: GreyIntentStringExtraValue
 * For Shift Key State Table: ShiftIntentStringExtraValue
 * For Control Key State Table: ControlIntentStringExtraValue
-
-Description: 
-
->This parm allows you to specify the Value of an Extra Data attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. An Extra Data attribute of an Intent generally provides auxiliary information that helps qualify the action that should be taken on the data by the application to which the Intent is sent. An Extra Data attribute must be specified using both an Extra Name and an Extra Value since both are required to add an Extra Data attribute to an Intent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no Extra Data attribute to be set in the Intent. Whether an Extra Data attribute for a given Intent is required or not will depend on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
 
 Parm value input rules: 
 

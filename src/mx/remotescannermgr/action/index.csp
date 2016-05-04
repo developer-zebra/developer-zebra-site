@@ -1,0 +1,43 @@
+---
+csp: remotescannermgr
+title: Remote Scanner Actions
+type: parm
+order: 2
+mx: "5.2"
+parm:
+  pivotal: No
+  name: Action
+  type: list
+  list:
+    - code: 0
+      name: Do Nothing
+      mx: "5.2"
+      description: .
+    - code: 1
+      name: Apply 123Scan configuration package
+      mx: "5.2"
+      description: Apply 123Scan configuration package.
+    - code: 2
+      name: Update Scanner Firmware
+      mx: "5.2"
+      description: Updates the Scanner Firmware.
+    - code: 3
+      name: Reset Scanner
+      mx: "5.2"
+      description: Reset Scanner.
+    - code: 4
+      name: Page Scanner
+      mx: "5.2"
+      description: Page Scanner.
+    - code: 5
+      name: Disconnect Bluetooth Scanner
+      mx: "5.2"
+      description: Disconnect Bluetooth Scanner.
+    - code: 6
+      name: Unpair Bluetooth Scanner
+      mx: "5.2"
+      description: Unpair Bluetooth Scanner.
+---
+
+
+Used to specify the action to take on the selected remote scanner(s).

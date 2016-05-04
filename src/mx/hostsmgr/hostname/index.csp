@@ -16,4 +16,5 @@ Parm value rules
 
 * Accepts a string in field HostName
 * Minimum size is 0 characters (no name assigned); maximum size is 255 characters
+* Does not accept the ampersand (&) character; other special characters allowed 
 

@@ -21,6 +21,10 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * TC8000 - KitKat (4.4.3)
 * WT6000 - Lollipop (5.1.1)
 
+>Note: Be sure to run the [device update](/emdk-for-xamarin/2-0/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
+
+
+
 ##What's New
 **Version 2.0**
 * API Updates
@@ -69,12 +73,6 @@ Microsoft Visual Studio Extension **v1.0.4**: ( Provides EMDK menu in Visual Stu
 Xamarin Studio Add-in **v1.0.5**: (Provides EMDK menu in Xamarin Studio )
 
 * EMDK for Xamarin Component **v1.0.3** ( Provides C# EMDK API's )
-
-##Devices Supported
-Currently only Zebra Android KitKat devices are supported. Be sure to run the [device update](/emdk-for-xamarin/2-0/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
-
-
-
 
 
 

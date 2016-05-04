@@ -2,6 +2,7 @@
 title: StageNow 2.2
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 
 # About This Help
@@ -64,6 +65,9 @@ The following topics are added or updated for StageNow 2.2:
 * [StageNow Client Menu](/stagenow/2-2/stageclient/#stagenowclientmenu)
 
 * [Change Password](/stagenow/2-2/gettingstarted/#changepassword)
+
+
+
 
 
 

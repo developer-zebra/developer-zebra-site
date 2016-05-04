@@ -42,3 +42,6 @@ com.symbol.emdk.securenfc.MifareSam.AdditionalAuthData.AV2Mode
 
 
 
+
+
+

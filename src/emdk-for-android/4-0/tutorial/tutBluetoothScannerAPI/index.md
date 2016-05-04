@@ -454,3 +454,6 @@ Now that you have learned how to perform pairing with Bluetooth Scanning device 
 
 
 
+
+
+

@@ -17,3 +17,6 @@ The Gs1Databar class provides access to parameters that are available
 
 
 
+
+
+

@@ -56,3 +56,6 @@ Will ignore the barcode pair and only output decode data for only one of the bar
 
 
 
+
+
+

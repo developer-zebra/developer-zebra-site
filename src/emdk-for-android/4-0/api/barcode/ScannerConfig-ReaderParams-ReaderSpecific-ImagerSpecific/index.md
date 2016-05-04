@@ -204,3 +204,6 @@ com.symbol.emdk.barcode.ScannerConfig.AimingPattern
 
 
 
+
+
+

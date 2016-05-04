@@ -137,3 +137,6 @@ com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
 
 
 
+
+
+

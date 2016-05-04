@@ -263,3 +263,5 @@ In addition to the battery information Android returns by default, which can be 
 		     
 		}  
 	} 
+
+

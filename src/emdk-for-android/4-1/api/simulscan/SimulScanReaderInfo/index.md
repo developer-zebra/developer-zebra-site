@@ -71,3 +71,6 @@ com.symbol.emdk.simulscan.SimulScanReaderInfo.DeviceType - SimulScanDeviceType
 
 
 
+
+
+

@@ -1,7 +1,7 @@
 ---
 title: EMDK For Android
 insert:
-    file: emdk-for-android/3-1/guide/about/index.md
+  file: emdk-for-android/3-1/guide/about/index.md
 layout: guide.html
 menu:
   title: EMDK For Android 3.1
@@ -259,6 +259,9 @@ menu:
 product: EMDK For Android
 productversion: '2.3'
 ---
+
+
+
 
 
 

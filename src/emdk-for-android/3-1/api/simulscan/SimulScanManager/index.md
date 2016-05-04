@@ -119,3 +119,6 @@ Defines scanner device identifier.
 
 
 
+
+
+

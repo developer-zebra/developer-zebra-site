@@ -23,3 +23,6 @@ Defines specific payment devices of each type.
 
 
 
+
+
+

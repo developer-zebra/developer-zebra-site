@@ -2,6 +2,7 @@
 title: Xpert Mode
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 #Xpert Mode
 Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles.
@@ -110,6 +111,9 @@ The following items force a device reboot, and list equivalent StageNow settings
 * Disable Airplane mode ON/OFF in the quick settings panel:  Use Settings Manager to manage Airplane mode.
 
 * Clear the recent app list:  Reboot using Power Manager (make this the last step in the profile).
+
+
+
 
 
 

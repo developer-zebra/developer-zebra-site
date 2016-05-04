@@ -25,3 +25,6 @@ This guide provides diagrams to illustrate the states that a barcode scanner wil
 
 
 
+
+
+

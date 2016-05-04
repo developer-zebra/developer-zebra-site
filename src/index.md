@@ -4,7 +4,8 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: Link-OS SDK
-    description: "The Link-OS SDK makes creating powerful printer apps simple and straightforward."
+    description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
+    url: /link-os
     image: /images/products/link-os.png
     sections:
       - title: Android
@@ -15,7 +16,6 @@ products:
         url: /link-os/pc
       - title: Web Services
         url: /link-os/webservices
-
   - title: EMDK For Android
     description: "Java sample projects using EMDK API's, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/4-1/guide/about
@@ -64,22 +64,22 @@ products:
         menu: '2.0'
   - title: StageNow
     description: "The easy way to stage Zebra Technologies' Android-based mobile computers."
-    url: /stagenow/2-2/about
+    url: /stagenow/2-3/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: Getting Started
-        url: /stagenow/2-2/gettingstarted
+        url: /stagenow/2-3/gettingstarted
       - title: Profiles
-        url: /stagenow/2-2/stagingprofiles
+        url: /stagenow/2-3/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-2/ProfileWizards
+        url: /stagenow/2-3/ProfileWizards
       - title: Settings
-        url: /stagenow/2-2/settingconfig
+        url: /stagenow/2-3/settingconfig
       - title: Setting Types
-        url: /stagenow/2-2/settingtypes
+        url: /stagenow/2-3/settingtypes
       - title: Device Staging
-        url: /stagenow/2-2/stageclient
+        url: /stagenow/2-3/stageclient
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to Android apps, settings and files without custom code.'
     url: /ehs/2-3/guide/about
@@ -97,7 +97,7 @@ products:
       - title: Download
         url: /ehs/2-3/download
   - title: Enterprise Keyboard
-    description: A customizable keyboard made specifically for the workplace.  
+    description: A customizable keyboard made specifically for the workplace.
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
@@ -110,6 +110,5 @@ products:
         url: /enterprise-keyboard/1-0/guide/settings
       - title: Download
         url: /enterprise-keyboard/1-0/download
-
-
+---
 

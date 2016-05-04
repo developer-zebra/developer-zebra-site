@@ -71,3 +71,6 @@ Returns list of supported scanner devices information.
 
 
 
+
+
+

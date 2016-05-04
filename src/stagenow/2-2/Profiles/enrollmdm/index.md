@@ -2,6 +2,7 @@
 title: Enroll in an MDM
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 Use this Wizard to enroll a device for management by an MDM.  This downloads, installs, configures, and launches an MDM agent.  This Wizard also allows you to connect to a staging and/or production network and reboot the device. 
 
@@ -48,6 +49,9 @@ To create an Enroll in an MDM profile:
 14. Select whether or not to reboot a device. If you select Yes, see [Setting Types / Power](/stagenow/2-2/csp/power) for instructions.
 
 15. Select Continue to proceed to the [Review window](/stagenow/2-2/stagingprofiles?Review).
+
+
+
 
 
 

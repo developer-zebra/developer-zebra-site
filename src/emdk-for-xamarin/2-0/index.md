@@ -1,7 +1,7 @@
 ---
 title: EMDK For Xamarin
 insert:
-    file: emdk-for-xamarin/2-0/guide/about/index.md
+  file: emdk-for-xamarin/2-0/guide/about/index.md
 layout: guide.html
 menu:
   title: EMDK For Xamarin 2.0
@@ -10,7 +10,7 @@ menu:
     - versionto: 1-0
       versionfrom: 2-0
       default: /emdk-for-xamarin/1-0/guide/about
-      label: "1.0"
+      label: '1.0'
   items:
     - title: Home
       url: /emdk-for-xamarin/2-0/guide/about
@@ -29,6 +29,9 @@ menu:
 product: EMDK For Xamarin
 productversion: '2.0'
 ---
+
+
+
 
 
 

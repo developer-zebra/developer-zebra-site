@@ -25,3 +25,6 @@ Gets and Sets UCC Link Mode using ScannerConfig.UccLinkMode enum.
 
 
 
+
+
+

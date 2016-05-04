@@ -119,3 +119,7 @@ Now when you scan the same Barcode, you will still see the barcode aimer but the
 
 
 
+
+
+
+

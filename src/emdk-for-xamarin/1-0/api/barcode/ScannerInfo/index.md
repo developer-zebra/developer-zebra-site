@@ -64,3 +64,6 @@ Returns the scanner device model number. This information will be available only
 
 
 
+
+
+

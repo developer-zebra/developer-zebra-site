@@ -81,3 +81,6 @@ com.symbol.emdk.scanandpair.ScanAndPairConfig.TriggerType
 
 
 
+
+
+

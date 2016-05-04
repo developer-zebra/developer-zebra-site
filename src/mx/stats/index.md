@@ -1,6 +1,6 @@
 ---
 title: Stats
-description: Stats controls the gathering, storage and reporting of MXMF usage statistics. 
+description: 'Stats controls the gathering, storage and reporting of MXMF usage statistics.'
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -13,3 +13,4 @@ mxversions:
     value: 5
 csp: stats
 ---
+

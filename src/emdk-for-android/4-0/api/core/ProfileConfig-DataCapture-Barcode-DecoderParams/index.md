@@ -353,3 +353,6 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1
 
 
 
+
+
+

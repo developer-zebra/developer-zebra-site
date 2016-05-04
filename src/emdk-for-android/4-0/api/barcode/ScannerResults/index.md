@@ -66,3 +66,6 @@ Defines all the error codes the barcode scanning API returns.
 
 
 
+
+
+

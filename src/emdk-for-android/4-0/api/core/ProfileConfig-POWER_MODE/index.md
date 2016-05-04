@@ -39,3 +39,6 @@ Sets the scanner power mode.
 
 
 
+
+
+

@@ -32,3 +32,6 @@ Called to notify the client when the scanner device has been connected or discon
 
 
 
+
+
+

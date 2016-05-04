@@ -122,7 +122,12 @@ csps:
     title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
+product: EMDK For Android
+productversion: '2.3'
 ---
            
+
+
+
 
 

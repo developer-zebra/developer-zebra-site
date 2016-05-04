@@ -39,3 +39,6 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 
 
 
+
+
+

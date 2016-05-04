@@ -65,3 +65,6 @@ The scanner device connected via USB to the mobile device.
 
 
 
+
+
+

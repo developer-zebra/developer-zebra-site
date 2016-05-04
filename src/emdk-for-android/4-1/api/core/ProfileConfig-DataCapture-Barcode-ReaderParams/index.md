@@ -252,3 +252,6 @@ com.symbol.emdk.ProfileConfig.VIEWFINDER_MODE
 
 
 
+
+
+

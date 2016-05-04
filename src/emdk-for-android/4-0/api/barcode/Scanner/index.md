@@ -365,3 +365,6 @@ com.symbol.emdk.barcode.Scanner.TriggerType
 
 
 
+
+
+

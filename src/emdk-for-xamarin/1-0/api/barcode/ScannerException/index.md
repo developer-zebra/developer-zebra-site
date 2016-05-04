@@ -26,3 +26,6 @@ Returns the ScannerResults enum value
 
 
 
+
+
+

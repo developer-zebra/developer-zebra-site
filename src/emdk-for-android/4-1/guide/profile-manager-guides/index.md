@@ -92,6 +92,8 @@ automenu:
           url: /emdk-for-android/4-1/mx/uimgr
     - title: Network
       items:
+        - title: Bluetooth Manager
+          url: /emdk-for-android/4-1/mx/bluetoothmgr/
         - title: Cellular Manager
           url: /emdk-for-android/4-1/mx/cellularmgr/
         - title: DHCP Options Manager
@@ -107,6 +109,9 @@ automenu:
 product: EMDK For Android
 productversion: '4.1'
 ---
+
+
+
 
 
 

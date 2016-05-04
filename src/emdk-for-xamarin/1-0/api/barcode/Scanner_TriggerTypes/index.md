@@ -57,3 +57,6 @@ Soft trigger is used only once for a pending read or for the next issued read. W
 
 
 
+
+
+

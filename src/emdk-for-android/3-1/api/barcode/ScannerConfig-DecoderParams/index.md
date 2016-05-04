@@ -421,3 +421,6 @@ com.symbol.emdk.barcode.ScannerConfig.DecoderParams.HanXin
 
 
 
+
+
+

@@ -38,7 +38,7 @@ csps:
   - type: section
     title: Bluetooth Manager
     url: /mx/bluetoothrmgr
-    csp: bluetoothmgr  
+    csp: bluetoothmgr
   - type: section
     title: Browser Manager
     url: /mx/browsermgr
@@ -169,5 +169,6 @@ csps:
     csp: xmlmgr
 ---
            
+
 
 

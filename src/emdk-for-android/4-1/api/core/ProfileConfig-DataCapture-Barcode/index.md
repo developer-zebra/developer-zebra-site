@@ -155,3 +155,6 @@ com.symbol.emdk.ProfileConfig.DataCapture.Barcode.UpcEanParams
 
 
 
+
+
+

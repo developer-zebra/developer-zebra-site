@@ -33,3 +33,6 @@ Sets the reader to read the bar code twice before accepting data.
 
 
 
+
+
+

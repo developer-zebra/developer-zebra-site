@@ -89,3 +89,4 @@ On legacy Motorola Solutions branded devices, `ro.motosln.enterprise.version` sh
  > The above device has MX version `1.1` on it.
 
 
+

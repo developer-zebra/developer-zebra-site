@@ -2,6 +2,7 @@
 title: Getting Started
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 
 ## Introduction
@@ -297,6 +298,9 @@ StageNow offers the following Wizards for creating profiles to configure mobile 
 * [Wipe a Device](/stagenow/2-2/Profiles/wipedevice) - Destroy device data using Enterprise or Factory Reset. 
 
 * [Xpert Mode](/stagenow/2-2/Profiles/xpertmode) - Configure any available settings for a device. Use this Wizard to create any combination of settings in any sequence.
+
+
+
 
 
 

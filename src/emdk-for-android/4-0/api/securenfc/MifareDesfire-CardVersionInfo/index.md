@@ -43,3 +43,6 @@ com.symbol.emdk.securenfc.MifareDesfire.CardVersionInfo.ManufacturerInfo
 
 
 
+
+
+

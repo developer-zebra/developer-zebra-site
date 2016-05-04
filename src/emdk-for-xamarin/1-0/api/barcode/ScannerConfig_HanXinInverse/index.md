@@ -57,3 +57,6 @@ Enables decoding of only inverse HanXin symbologies.
 
 
 
+
+
+

@@ -23,3 +23,6 @@ The enum to get the Smart Card stack and connected Smart Card versions.
 
 
 
+
+
+

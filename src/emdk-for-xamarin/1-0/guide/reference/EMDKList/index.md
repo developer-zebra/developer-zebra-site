@@ -208,3 +208,6 @@ The following APIs are used when you wish to handle all barcode scanning entirel
 
 
 
+
+
+

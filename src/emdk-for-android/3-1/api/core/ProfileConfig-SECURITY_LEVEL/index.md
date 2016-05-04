@@ -42,3 +42,6 @@ The scanner offers four levels of decode security for UPC/EAN bar codes.
 
 
 
+
+
+

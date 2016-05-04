@@ -199,6 +199,26 @@ var settings = [
             }
         ]
     },
+    {
+        "path": "2-2",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "2.1",
+                "override": false,
+            }
+        ]
+    },
+    {
+        "path": "2-3",
+        "frontmatter": [
+            {
+                "item" :  "productversion",
+                "value" : "2.3",
+                "override": false,
+            }
+        ]
+    },
 
 
 ]

@@ -48,3 +48,6 @@ In the below code we are getting the Symbol specific battery information provide
 
 
 
+
+
+

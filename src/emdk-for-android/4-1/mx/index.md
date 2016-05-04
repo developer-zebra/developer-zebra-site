@@ -151,6 +151,10 @@ contentlist:
     description: Manage wireless settings like WiFi and GPRS for your device.
     visible: true
     items:
+      - title: Bluetooth Manager
+        url: bluetoothmgr
+        description: "The BluetoothMgr allows you to control whether a device will be allowed to pair with Bluetooth devices such as headsets and printers that come into range."
+        icon: /mx/icons/wirelessmgr.png
       - title: Cellular Manager
         url: cellularmgr
         description: "The CellularMgr allows you to control how a device's Cellular data connection is used."
@@ -165,7 +169,7 @@ contentlist:
         icon: /mx/icons/gprsmgr.png
       - title: Hosts Manager
         url: hostsmgr
-        description: "The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks."
+        description: 'The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.'
         icon: /mx/icons/wifi.png
       - title: WiFi Manager
         url: wifi
@@ -178,6 +182,9 @@ contentlist:
 product: EMDK For Android
 productversion: '4.1'
 ---
+
+
+
 
 
 

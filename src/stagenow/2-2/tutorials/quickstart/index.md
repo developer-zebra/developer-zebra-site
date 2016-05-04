@@ -2,6 +2,7 @@
 title: Getting Started
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 
 ## Introduction
@@ -38,6 +39,9 @@ Following are the StageNow users:
 Following are the staging methods available via StageNow. See Device Staging on page 4-1 for details:
 * Bar Code Profile - The operator prints the bar code(s) containing profile information and scans with the device to configure that device.
 * NFC Tag - The operator exports profile data to an NFC tag, then reads the tag with the device within a certain proximity to deploy the profile to the device.
+
+
+
 
 
 

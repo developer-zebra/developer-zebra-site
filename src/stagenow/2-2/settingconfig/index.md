@@ -2,6 +2,7 @@
 title: Settings
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 
 ## Introduction
@@ -144,6 +145,9 @@ To import all settings:
 3. Select a zip file using the browse button, and select Open.
 
 4. Select Import. A window indicates that the settings were imported successfully and the settings appear in the settings list.
+
+
+
 
 
 

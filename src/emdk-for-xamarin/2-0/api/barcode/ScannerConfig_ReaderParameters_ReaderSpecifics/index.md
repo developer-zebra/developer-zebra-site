@@ -37,3 +37,6 @@ Provide access to set the laser specific settings if the scanner device is laser
 
 
 
+
+
+

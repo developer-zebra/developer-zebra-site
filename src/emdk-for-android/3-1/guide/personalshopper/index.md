@@ -188,3 +188,6 @@ To get Diagnostic Parameters like Battery state of health, State of charge , Tim
 
 
 
+
+
+

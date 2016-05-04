@@ -222,3 +222,6 @@ The [next tutorial](/emdk-for-android/4-1/tutorial/tutdatacaptureprofilePt3) wil
 
 
 
+
+
+

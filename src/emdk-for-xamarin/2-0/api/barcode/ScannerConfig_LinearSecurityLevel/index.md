@@ -60,3 +60,6 @@ Two times read redundancy if short bar code or Codabar.
 
 
 
+
+
+

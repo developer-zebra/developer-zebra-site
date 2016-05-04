@@ -56,3 +56,6 @@ Enables decoding of only inverse 1D symbologies.
 
 
 
+
+
+

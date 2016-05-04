@@ -35,3 +35,6 @@ com.symbol.emdk.simulscan.SimulScanResults - SimulScanResults
 
 
 
+
+
+

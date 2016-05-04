@@ -41,3 +41,6 @@ Set scanner power mode. Use enum ScannerConfig.PowerMode.
 
 
 
+
+
+

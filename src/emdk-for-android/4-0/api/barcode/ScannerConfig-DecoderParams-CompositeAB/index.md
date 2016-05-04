@@ -39,3 +39,6 @@ com.symbol.emdk.barcode.ScannerConfig.UccLinkMode
 
 
 
+
+
+

@@ -31,3 +31,6 @@ com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific
 
 
 
+
+
+

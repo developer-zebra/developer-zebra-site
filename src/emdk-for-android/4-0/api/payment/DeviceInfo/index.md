@@ -119,3 +119,6 @@ com.symbol.emdk.payment.DeviceInfo.ConnectionType - Returns the ConnectionType
 
 
 
+
+
+

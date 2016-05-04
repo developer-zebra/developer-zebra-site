@@ -53,3 +53,6 @@ Enables the Picklist mode so that only the bar code that is directly under the c
 
 
 
+
+
+

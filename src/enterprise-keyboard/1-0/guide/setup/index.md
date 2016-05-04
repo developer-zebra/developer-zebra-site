@@ -1,6 +1,8 @@
 ---
 title: Enterprise Keyboard Setup
 layout: guide.html
+product: Enterprise Keyboard
+productversion: '1.0'
 ---
 
 ## Overview
@@ -116,4 +118,7 @@ Manual deactivation of Enterprise Keyboard is complete.
 
 ### Automated Deactivation
 Enterprise Keyboard can be deactivated from multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+
+
+
 

@@ -50,3 +50,6 @@ The check digit type to verify. Use enum ScannerConfig.CheckDigitType.
 
 
 
+
+
+

@@ -206,3 +206,6 @@ This lists all the barcode types supported by scanners
 
 
 
+
+
+

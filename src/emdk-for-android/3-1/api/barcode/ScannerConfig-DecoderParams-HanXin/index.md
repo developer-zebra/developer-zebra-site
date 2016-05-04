@@ -37,3 +37,6 @@ com.symbol.emdk.barcode.ScannerConfig.HanXinInverse
 
 
 
+
+
+

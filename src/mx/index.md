@@ -49,7 +49,7 @@ csps:
   - type: section
     title: Bluetooth Manager
     url: /mx/bluetoothmgr
-    csp: bluetoothmgr  
+    csp: bluetoothmgr
   - type: section
     title: Browser Manager
     url: /mx/browsermgr
@@ -105,7 +105,7 @@ csps:
   - type: section
     title: Hosts Manager
     url: /mx/hostsmgr
-    csp: hostsmgr    
+    csp: hostsmgr
   - type: section
     title: Intent Manager
     url: /mx/intent
@@ -181,5 +181,6 @@ csps:
 ---
                       
 ---
+
 
 

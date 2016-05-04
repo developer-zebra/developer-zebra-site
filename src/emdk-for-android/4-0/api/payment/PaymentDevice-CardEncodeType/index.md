@@ -23,3 +23,6 @@ List indicates the type of encoding that was found on the card.
 
 
 
+
+
+

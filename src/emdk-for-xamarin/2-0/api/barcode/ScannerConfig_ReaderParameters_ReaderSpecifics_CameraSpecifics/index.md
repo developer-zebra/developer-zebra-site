@@ -45,3 +45,6 @@ Configures the Viewfinder modes supported for camera scanning. Use class Scanner
 
 
 
+
+
+

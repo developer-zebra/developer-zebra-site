@@ -32,3 +32,6 @@ com.symbol.emdk.barcode.ScannerResults
 
 
 
+
+
+

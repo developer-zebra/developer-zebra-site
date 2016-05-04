@@ -93,3 +93,6 @@ com.symbol.emdk.barcode.ScannerConfig.PowerMode
 
 
 
+
+
+

@@ -2,6 +2,7 @@
 title: Profiles
 layout: guide.html
 product: Stagenow
+productversion: '2.1'
 ---
 
 ## Introduction
@@ -348,6 +349,9 @@ To delete a profile:
 2. Select OK to confirm the deletion.
 
 3. A window indicates that the profile was successfully deleted. Select OK.
+
+
+
 
 
 

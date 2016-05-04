@@ -30,3 +30,6 @@ When using Bluetooth (Imager) scanners, the pairing process between the mobile c
 
 
 
+
+
+

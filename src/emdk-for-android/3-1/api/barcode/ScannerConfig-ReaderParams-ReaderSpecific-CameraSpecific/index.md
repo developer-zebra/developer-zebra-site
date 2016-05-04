@@ -112,3 +112,6 @@ com.symbol.emdk.barcode.ScannerConfig.ViewFinderMode
 
 
 
+
+
+

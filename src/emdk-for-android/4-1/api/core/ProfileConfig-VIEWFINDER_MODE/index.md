@@ -38,3 +38,6 @@ Configures the Viewfinder modes supported for camera scanning.
 
 
 
+
+
+

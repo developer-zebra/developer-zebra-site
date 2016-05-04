@@ -58,3 +58,6 @@ com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.Keystroke
 
 
 
+
+
+

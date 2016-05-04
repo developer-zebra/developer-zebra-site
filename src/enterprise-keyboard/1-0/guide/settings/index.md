@@ -1,6 +1,8 @@
 ---
 title: Enterprise Keyboard Customization
 layout: guide.html
+product: Enterprise Keyboard
+productversion: '1.0'
 ---
 
 ## Overview
@@ -249,3 +251,5 @@ Locate and <b>tap the DataWedge icon</b> on the device.
 <br>
 
 For more information, please refer to [Enterprise Keyboard Setup](../setup).
+
+

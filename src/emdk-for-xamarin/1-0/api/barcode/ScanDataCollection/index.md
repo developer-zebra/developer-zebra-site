@@ -39,3 +39,6 @@ This method used to obtain the scanned result in the form of a ScannerResults ob
 
 
 
+
+
+

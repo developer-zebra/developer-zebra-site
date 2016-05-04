@@ -1,6 +1,6 @@
 ---
 title: Hosts Manager
-description: The HostsMgr sets the device's Host Name.
+description: "The HostsMgr sets the device's Host Name."
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -13,3 +13,4 @@ mxversions:
     value: 5
 csp: hostsmgr
 ---
+

@@ -25,3 +25,6 @@ Defines scanner device identifier.
 
 
 
+
+
+

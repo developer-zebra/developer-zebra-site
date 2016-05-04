@@ -28,3 +28,6 @@ Defines the different states of the barcode scanner.
 
 
 
+
+
+

@@ -36,3 +36,6 @@ com.symbol.emdk.barcode.ScannerConfig.Preamble
 
 
 
+
+
+

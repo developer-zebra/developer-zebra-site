@@ -434,3 +434,6 @@ Now that you have learned how to configure Bluetooth using Wireless Manager on y
 
 
 
+
+
+

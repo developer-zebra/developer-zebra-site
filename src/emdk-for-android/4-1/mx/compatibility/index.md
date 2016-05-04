@@ -19,6 +19,10 @@ csps:
     url: /mx/batterymgr
     csp: batterymgr
   - type: section
+    title: Bluetooth Manager
+    url: /mx/bluetoothmgr
+    csp: bluetoothmgr
+  - type: section
     title: Browser Manager
     url: /mx/browsermgr
     csp: browsermgr
@@ -126,7 +130,12 @@ csps:
     title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
+product: EMDK For Android
+productversion: '4.1'
 ---
            
+
+
+
 
 

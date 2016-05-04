@@ -25,3 +25,6 @@ Provides the different types of barcode data to be scanned.
 
 
 
+
+
+

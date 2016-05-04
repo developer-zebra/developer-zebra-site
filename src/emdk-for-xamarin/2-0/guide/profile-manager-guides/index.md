@@ -92,12 +92,16 @@ automenu:
           url: /emdk-for-xamarin/2-0/mx/uimgr
     - title: Wireless
       items:
+        - title: Bluetooth Manager
+          url: /emdk-for-xamarin/2-0/mx/bluetoothmgr/
         - title: Cellular Manager
           url: /emdk-for-xamarin/2-0/mx/cellularmgr/
         - title: DHCP Options Manager
           url: /emdk-for-xamarin/2-0/mx/dhcp
         - title: GPRS Manager
           url: /emdk-for-xamarin/2-0/mx/gprsmgr/
+        - title: Hosts Manager
+          url: /emdk-for-xamarin/2-0/mx/hostsmgr/
         - title: WiFi Manager
           url: /emdk-for-xamarin/2-0/mx/wifi/
         - title: Wireless Manager

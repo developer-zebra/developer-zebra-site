@@ -32,6 +32,10 @@ csps:
     url: /emdk-for-xamarin/2-0/mx/batterymgr
     csp: batterymgr
   - type: section
+    title: Bluetooth Manager
+    url: /emdk-for-xamarin/2-0/mx/bluetoothmgr
+    csp: bluetoothmgr
+  - type: section
     title: Browser Manager
     url: /emdk-for-xamarin/2-0/mx/browsermgr
     csp: browsermgr

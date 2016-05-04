@@ -30,6 +30,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* [Multipule MX version support](/emdk-for-xamarin/2-0/guide/profile-manager) - Profile manager now supports multiple MX versions. You can now choose between  MX 4.2, 4.4 and 5.0 when creating a new profile.
 	* [Profile Upgrade](/emdk-for-xamarin/2-0/guide/profile-manager) - Profile manager now provides a method to upgrade an existing profile to use a higher version of MX.
 	* [Data Capture Activity Selection Wildcard](/emdk-for-xamarin/2-0/mx/data-capture/activity) - When using an Activity Selector in a Data Capture profile and wish to include all activities in an application package, you no longer have to manually enter each activity. You can now enter a single asterisk ( \* ) and all activities in that package will be selected. 
+	* [Bluetooth Manager](/emdk-for-xamarin/2-0/mx/bluetoothmgr/) - The BluetoothMgr controls whether to allow new devices to pair.
 	* [Hosts Manager](/emdk-for-xamarin/2-0/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
 	* [Launch application by simple name](/emdk-for-xamarin/2-0/mx/appmgr/#application-simple-name) - new action for [App Manager](/emdk-for-xamarin/2-0/mx/appmgr).
 	* [UI Manager](/emdk-for-xamarin/2-0/mx/uimgr) updates

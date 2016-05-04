@@ -27,6 +27,10 @@ content-items:
     type: section
     level: 5
     url: /stagenow/2-3/csp/battery
+  - title: Bluetooth
+    type: section
+    level: 5
+    url: /stagenow/2-3/csp/bluetoothmgr
   - title: Browser
     type: section
     level: 5
@@ -79,6 +83,10 @@ content-items:
     type: section
     level: 5
     url: /stagenow/2-3/csp/gprs
+  - title: Hosts
+    type: section
+    level: 5
+    url: /stagenow/2-3/csp/hostsmgr
   - title: Intent
     type: section
     level: 5

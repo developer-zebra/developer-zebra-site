@@ -48,6 +48,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 ## What's New
 **EMDK for Android v4.1**
 * Profile Manager Updates
+	* [Bluetooth Manager](/emdk-for-android/4-1/mx/bluetoothmgr/) - The BluetoothMgr controls whether to allow new devices to pair.
 	* [Hosts Manager](/emdk-for-android/4-1/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
 	* [Launch application by simple name](/emdk-for-android/4-1/mx/appmgr/#application-simple-name) - new action for [App Manager](/emdk-for-android/4-1/mx/appmgr).
 	* [UI Manager](/emdk-for-android/4-1/mx/uimgr) updates

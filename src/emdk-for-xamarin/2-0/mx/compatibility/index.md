@@ -19,6 +19,10 @@ csps:
     url: /mx/batterymgr
     csp: batterymgr
   - type: section
+    title: Bluetooth Manager
+    url: /mx/bluetoothmgr
+    csp: bluetoothmgr
+  - type: section
     title: Browser Manager
     url: /mx/browsermgr
     csp: browsermgr
@@ -70,6 +74,10 @@ csps:
     title: GPRS Manager
     url: /mx/gprsmgr
     csp: gprsmgr
+  - type: section
+    title: Hosts Manager
+    url: /mx/hostsmgr
+    csp: hostsmgr
   - type: section
     title: KeyMapping Manager
     url: /mx/keymappingmgr

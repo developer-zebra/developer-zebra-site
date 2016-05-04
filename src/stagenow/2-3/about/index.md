@@ -56,5 +56,7 @@ The following topics are added or updated for StageNow 2.3:
 
 * [Intent Manager](/stagenow/2-3/csp/intent) no longer requires a package name (com.package.name), only an application name, e.g., Enterprise Home Screen
 
+* [Bluetooth Manager](/stagenow/2-3/csp/bluetoothmgr) The BluetoothMgr controls whether to allow new devices to pair.
 
+* [Hosts Manager](/stagenow/2-3/csp/hostsmgr) The HostsMgr sets the device's Host Name.
 

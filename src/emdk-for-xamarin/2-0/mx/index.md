@@ -151,6 +151,10 @@ contentlist:
     description: Manage wireless settings like WiFi and GPRS for your device.
     visible: true
     items:
+      - title: Bluetooth Manager
+        url: bluetoothmgr
+        description: "The BluetoothMgr allows you to control whether a device will be allowed to pair with Bluetooth devices such as headsets and printers that come into range."
+        icon: /mx/icons/wirelessmgr.png
       - title: Cellular Manager
         url: cellularmgr
         description: "The CellularMgr allows you to control how a device's Cellular data connection is used."
@@ -159,6 +163,10 @@ contentlist:
         url: dhcp
         description: The DhcpOptionMgr allows you to configure DHCP Options.
         icon: /mx/icons/DHCP.png
+      - title: Hosts Manager
+        url: hostsmgr
+        description: 'The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.'
+        icon: /mx/icons/wifi.png
       - title: GPRS Manager
         url: gprsmgr
         description: The GprsMgr allows you to manage APN settings for the devices GPRS network.

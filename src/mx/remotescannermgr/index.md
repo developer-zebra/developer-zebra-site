@@ -1,6 +1,6 @@
 ---
-title: ScanMode Manager
-description: 'The ScanMode Manager sets the Scan Mode to Normal, Scan 1, or Scan 2.'
+title: Remote Scanner Manager
+description: 'The Remote Scanner Manager monitors, configures and can trigger firmware updates on RSM-capable Bluetooth scanners.'
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,9 +11,6 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: scanmodemgr
+csp: remotescannermgr
 ---
-
-
-
 

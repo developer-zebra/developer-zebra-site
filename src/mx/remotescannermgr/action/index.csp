@@ -12,32 +12,43 @@ parm:
     - code: 0
       name: Do Nothing
       mx: "5.2"
-      description: .
+      description: This value (or the absence of this parm from the XML) will cause no scanner management action to be performed.
     - code: 1
       name: Apply 123Scan configuration package
       mx: "5.2"
-      description: Apply 123Scan configuration package.
+      description: Applies the 123Scan configuration package ("scncfg" downloaded separately) specified in the corresponding field to configure the scanner. 
     - code: 2
       name: Update Scanner Firmware
       mx: "5.2"
-      description: Updates the Scanner Firmware.
+      description: Applies the firmware (.dat file downloaded separately) specified in the corresponding field, usually to update the scanner firmware.
     - code: 3
       name: Reset Scanner
       mx: "5.2"
-      description: Reset Scanner.
+      description: Resets the connected scanner to clear its memory and other volatile settings.
     - code: 4
       name: Page Scanner
       mx: "5.2"
-      description: Page Scanner.
+      description: Activates a beep sound on all paired scanners in range of the device to help locate a misplaced device. 
     - code: 5
       name: Disconnect Bluetooth Scanner
       mx: "5.2"
-      description: Disconnect Bluetooth Scanner.
+      description: Disconnects the currently connected Bluetooth scanner.
     - code: 6
       name: Unpair Bluetooth Scanner
       mx: "5.2"
-      description: Unpair Bluetooth Scanner.
+      description: Removes the pairing information for the selected Bluetooth scanner.
 ---
 
+Used to initiate management functions on remote Bluetooth scanners regardless of whether they are connected to and/or paired with the device. This parm does not provide functionality for the acquisition of files, as are required for applying device settings or firmware updates. Files for these operations must be acquired separately using [FileMgr](../filemgr), StageNow, an MDM solution or by another means. 
 
-Used to specify the action to take on the selected remote scanner(s).
+initially developed for the WT6000 (Android Lollipop 5.1) and
+the RS6000 scanner.
+The CSP will support any Android device that supports the RS6000 and the
+new scanner framework that contains the new management interface (see
+data capture team for device support information)
+
+(Stretch goal) The CSP will support any RSM capable Bluetooth SSI scanner
+as long as the above conditions are met.
+
+page: "An operator who has misplaced a ring scanner (that is still paired) may want to page it so they can find it" 
+

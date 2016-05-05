@@ -15,5 +15,5 @@ Used to specify the path and file name for the 123Scan configuration file, which
 
 **Parm value input rules**
 
-* Accepts a string of characters matching the path and name of the 123Scan configuration file
+* Accepts a string of characters for the path and name of the 123Scan configuration file
 * Minimum length is 1 character; maximum length is 255 characters

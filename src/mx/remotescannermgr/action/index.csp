@@ -28,7 +28,7 @@ parm:
     - code: 4
       name: Page Scanner
       mx: "5.2"
-      description: Activates a short beep sound on the paired scanner to help locate a misplaced device.  
+      description: Activates a device-location sequence on the paired scanner consisting of beep sounds, LED flashes and vibration to help locate a misplaced device.  
     - code: 5
       name: Disconnect Bluetooth Scanner
       mx: "5.2"
@@ -39,4 +39,4 @@ parm:
       description: Removes the pairing information from the device for the selected Bluetooth scanner.
 ---
 
-Actions initiate management functions on remote Bluetooth scanners connected to and paired with the device. This parm does not provide functionality for the acquisition of files, as are required for applying device settings or firmware updates. Such files must be acquired separately using [FileMgr](../filemgr), StageNow, an MDM solution or by another means. 
+Actions initiate management functions on remote Bluetooth scanners paired with and connected to with the device. This parm does not provide functionality for the acquisition of files, as are required for applying device settings or firmware updates. Such files must be acquired separately using [FileMgr](../filemgr), StageNow, an MDM solution or by another means. 

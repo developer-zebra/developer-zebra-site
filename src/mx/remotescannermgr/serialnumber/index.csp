@@ -17,4 +17,4 @@ Used to specify the Serial Number of the Scanner on which to perform an Action i
 
 * Accepts a string of characters matching the scanner serial number
 * Minimum length is 1 character; maximum length is 255 characters
-* If no string is input, Action will take place on the currently connected scanner
+* If no string is input, the Action will apply to the currently connected scanner

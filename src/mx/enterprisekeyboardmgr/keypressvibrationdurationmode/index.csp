@@ -1,0 +1,30 @@
+---
+csp: enterprisekeyboardmgr
+title: Keypress Vibration Duration Mode Enable/Disable
+type: parm
+order: 2
+mx: "6.0"
+parm:
+  pivotal: No
+  name: KeypressVibrationDurationMode
+  type: list
+  list:
+    - code: 
+      mx: "6.0"
+      name: No change
+      description: A blank value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 0
+      name: Yes
+      mx: "6.0"
+      description: Enables a vibration duration (in ms) to be specified for each keypress.
+    - code: 1
+      name: No
+      mx: "6.0"
+      description: Accepts the System default for the keypress vibration duration.
+---
+
+Controls whether a given Enterprise Keyboard feature will be enabled. 
+
+**Parm input rules**
+
+* Accepts a string

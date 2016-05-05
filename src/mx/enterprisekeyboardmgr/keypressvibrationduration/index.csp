@@ -1,12 +1,13 @@
 ---
 csp: enterprisekeyboardmgr
-title: ShowScanTab Enable/Disable
+title: Keypress Vibration Duration
 type: parm
-order: 15
+order: 2
 mx: "6.0"
 parm:
+  presentif: Keypress Vibration Duration Mode is "Enable" 
   pivotal: No
-  name: ShowScanTab
+  name: KeypressVibrationDuration
   type: list
   list:
     - code: 0
@@ -16,11 +17,15 @@ parm:
     - code: 1
       name: Yes
       mx: "6.0"
-      description: Shows the Scan Tab for activating the device scanner.
+      description: Enables a vibration duration (in ms) to be specified for each keypress.
     - code: 2
       name: No
       mx: "6.0"
-      description: Hides the Scan Tab.
+      description: Accepts the System default for the keypress vibration duration.
 ---
 
 Controls whether a given Enterprise Keyboard feature will be enabled. 
+
+**Parm input rules**
+
+* Accepts a string

@@ -1,0 +1,24 @@
+---
+csp: enterprisekeyboardmgr
+title: Overview
+type: text
+order: 0
+---
+Enterprise Keyboard Manager controls the settings of Zebra's Enterprise Keyboard, which provides the most efficient means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
+
+Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).
+
+
+### Main Functionality
+
+* Enable and Disable: 
+
+
+* English (UK)
+* English (US) 
+* French
+* Italian
+* German
+* Spanish
+* Russian
+

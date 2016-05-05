@@ -1,0 +1,26 @@
+---
+csp: enterprisekeyboardmgr
+title: Block Offensive Words Enable/Disable
+type: parm
+order: 2
+mx: "6.0"
+parm:
+  pivotal: No
+  name: BlockOffensiveWords
+  type: list
+  list:
+    - code: 0
+      mx: "6.0"
+      name: No change
+      description: This value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 1
+      name: Yes
+      mx: "6.0"
+      description: Activates Google's routines for  Keyboard to perform .
+    - code: 2
+      name: No
+      mx: "6.0"
+      description: Disables the  feature.
+---
+
+Controls whether a given Enterprise Keyboard feature will be enabled. 

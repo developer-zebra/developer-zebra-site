@@ -84,6 +84,10 @@ csps:
     url: /mx/encryptmgr
     csp: encryptmgr
   - type: section
+    title: Enterprise Keyboard Manager
+    url: /mx/enterprisekeyboardmgr
+    csp: enterprisekeyboardmgr
+  - type: section
     title: File Manager
     url: /mx/filemgr
     csp: filemgr

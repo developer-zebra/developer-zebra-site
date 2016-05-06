@@ -1,6 +1,6 @@
 ---
-title: Bluetooth Manager
-description: The BluetoothMgr controls whether to allow new devices to pair.
+title: Enterprise Keyboard Manager
+description: EnterpriseKeyboardMgr controls the settings of Zebra's soft input device for Android.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,7 +11,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: bluetoothmgr
+csp: enterprisekeyboardmgr
 ---
 
 

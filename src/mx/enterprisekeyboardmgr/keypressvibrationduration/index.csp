@@ -29,3 +29,7 @@ Controls whether a given Enterprise Keyboard feature will be enabled.
 **Parm input rules**
 
 * Accepts a string
+
+<b>Keypress vibration duration</b> sets the length of time (from 0 to 100ms) the device will vibrate to indicate that a key was pressed (default = 0ms). 
+<img alt="" style="height:150px" src="adv_vibrate.png"/>
+<br>

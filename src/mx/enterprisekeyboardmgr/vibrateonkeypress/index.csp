@@ -5,6 +5,7 @@ type: parm
 order: 22
 mx: "6.0"
 parm:
+  presentif: Vibrate on Keypress is "Enable"
   pivotal: No
   name: VibrateOnKeypress
   type: list
@@ -16,11 +17,11 @@ parm:
     - code: 1
       name: Yes
       mx: "6.0"
-      description: Enables Vibrate On Keypress feature.
+      description: Enables vibration (haptic feedback) when a key is pressed.
     - code: 2
       name: No
       mx: "6.0"
-      description: Disables the Vibrate On Keypress feature.
+      description: Disables vibration (haptic feedback) when a key is pressed.
 ---
 
-Controls whether a given Enterprise Keyboard feature will be enabled. 
+Controls whether to activate device vibration (haptic feedback) when a key is pressed. To control the length of time the device will vibrate, refer to Keypress Vibration Duration. 

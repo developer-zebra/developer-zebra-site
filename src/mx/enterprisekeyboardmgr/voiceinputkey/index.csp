@@ -23,4 +23,5 @@ parm:
       description: Hides the Voice Input Key (mic).
 ---
 
-Controls whether a given Enterprise Keyboard feature will be enabled. 
+Controls whether to display the voice input key, which contains a microphone icon. When enabled, will display a key for allowing Enterprise Keyboard to accept spoken input using the device microphone. **This option is available on GMS-enabled devices only**. 
+

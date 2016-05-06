@@ -22,5 +22,4 @@ parm:
       mx: "6.0"
       description: Disables the Double-Space Period feature.
 ---
-
-Controls whether a given Enterprise Keyboard feature will be enabled. 
+Controls whether to automatically insert a period and space when double-tapping the spacebar.

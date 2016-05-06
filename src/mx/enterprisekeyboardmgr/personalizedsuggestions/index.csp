@@ -23,4 +23,4 @@ parm:
       description: Disables suggestions for spelling corrections from the Personal Dictionary.
 ---
 
-Controls whether a given Enterprise Keyboard feature will be enabled. 
+Controls whether Enterprise Keyboard will suggest words and terms that have been previously entered and stored in the Personal Dictionary. 

@@ -23,4 +23,4 @@ parm:
       description: Disables the Sound On Keypress feature.
 ---
 
-Controls whether a given Enterprise Keyboard feature will be enabled. 
+Controls whether to play a sound when a key is pressed. To control volume of Keypress sound, refer to Keypress Sound Volume.

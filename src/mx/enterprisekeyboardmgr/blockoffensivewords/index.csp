@@ -23,4 +23,4 @@ parm:
       description: Disables the Block Offensive Words feature, allowing all spelling suggestions to be shown.
 ---
 
-Controls whether a given Enterprise Keyboard feature will be enabled. 
+Controls whether to the display as spelling suggestions words that might be deemed offensive or insensitive as determined by external standards of decency.

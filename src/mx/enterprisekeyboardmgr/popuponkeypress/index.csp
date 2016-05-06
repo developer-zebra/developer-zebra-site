@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Popup On Keypress Enable/Disable
 type: parm
-order: 10
+order: 14
 mx: "6.0"
 parm:
   pivotal: No
@@ -16,7 +16,7 @@ parm:
     - code: 1
       name: Yes
       mx: "6.0"
-      description: Enables Popup On Keypress feature .
+      description: Enables Popup On Keypress feature.
     - code: 2
       name: No
       mx: "6.0"

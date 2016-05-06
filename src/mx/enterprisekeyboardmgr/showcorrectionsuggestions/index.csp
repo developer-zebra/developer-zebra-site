@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Show Correction Suggestions Enable/Disable
 type: parm
-order: 12
+order: 15
 mx: "6.0"
 parm:
   pivotal: No

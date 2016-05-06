@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Personalized Suggestions Enable/Disable
 type: parm
-order: 9
+order: 13
 mx: "6.0"
 parm:
   pivotal: No

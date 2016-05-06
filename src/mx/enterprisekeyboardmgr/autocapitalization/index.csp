@@ -1,6 +1,6 @@
 ---
 csp: enterprisekeyboardmgr
-title: Auto Capitalization Enable/Disable Feature
+title: Auto-capitalization Enable/Disable
 type: parm
 order: 2
 mx: "6.0"
@@ -16,11 +16,11 @@ parm:
     - code: 1
       name: Yes
       mx: "6.0"
-      description: Enables Enterprise Keyboard to perform Auto Capitalization.
+      description: Enables Enterprise Keyboard to perform Auto-capitalization.
     - code: 2
       name: No
       mx: "6.0"
-      description: Disables the Auto Capitalization feature.
+      description: Disables the Auto-capitalization feature.
 ---
 
 Controls whether to capitalize the first word of each sentence following a period. 

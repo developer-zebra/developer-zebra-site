@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Show Scan Tab Enable/Disable
 type: parm
-order: 15
+order: 16
 mx: "6.0"
 parm:
   pivotal: No

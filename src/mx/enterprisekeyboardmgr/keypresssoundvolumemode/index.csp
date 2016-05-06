@@ -1,12 +1,12 @@
 ---
 csp: enterprisekeyboardmgr
-title: Keypress Vibration Duration Mode
+title: Keypress Sound Volume Mode
 type: parm
-order: 10
+order: 8
 mx: "6.0"
 parm:
   pivotal: No
-  name: KeypressVibrationDurationMode
+  name: KeypressSoundVolumeMode
   type: list
   list:
     - code: 
@@ -16,11 +16,11 @@ parm:
     - code: 0
       name: Specify duration
       mx: "6.0"
-      description: Enables a vibration duration (in ms) to be specified for each keypress.
+      description: Enables keypress sound volume (as a percentage of the maximum) to be specified for each keypress.
     - code: 1
       name: System default
       mx: "6.0"
-      description: Accepts the System default for the keypress vibration duration.
+      description: Accepts the System default for the keypress sound volume.
 ---
 
-Controls whether to specify the length of time (in ms) to operate device vibration when a key is pressed or to accept the System default value. 
+Controls whether to specify the sound volume (as a percentage of the maximum) for each keypress or to accept the System default value. 

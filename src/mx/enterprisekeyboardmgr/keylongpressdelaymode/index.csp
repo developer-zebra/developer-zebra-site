@@ -1,0 +1,23 @@
+---
+csp: enterprisekeyboardmgr
+title: Key Long-Press Delay Mode
+type: parm
+order: 6
+mx: "6.0"
+parm:
+  pivotal: No
+  name: KeyLongPressDelayMode
+  type: list
+  list:
+    - code: 
+      mx: "6.0"
+      name: No change
+      description: A null value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 0
+      name: Specify duration
+      mx: "6.0"
+      description: Enables specification of the length of time (in ms) that a key must be held before being considered a long press.
+
+---
+
+Controls whether to specify the length of time (in ms) a key must be held down before being considered a long-press (default = 300ms), or to leave the setting unchanged and accept the System default value. 

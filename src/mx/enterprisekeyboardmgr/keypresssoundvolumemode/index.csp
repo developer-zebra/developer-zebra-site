@@ -16,11 +16,11 @@ parm:
     - code: 0
       name: Specify duration
       mx: "6.0"
-      description: Enables keypress sound volume (as a percentage of the maximum) to be specified for each keypress.
+      description: Enables keypress sound volume (as a percentage of the maximum) to be specified.
     - code: 1
       name: System default
       mx: "6.0"
       description: Accepts the System default for the keypress sound volume.
 ---
 
-Controls whether to specify the sound volume (as a percentage of the maximum) for each keypress or to accept the System default value. 
+Controls whether to specify the sound volume (as a percentage of the maximum) or to accept the System default value. 

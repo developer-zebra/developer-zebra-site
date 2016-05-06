@@ -5,6 +5,7 @@ type: parm
 order: 9
 mx: "6.0"
 parm:
+  presentif: Keypress Sound Volume Mode is set to "Specify duration" 
   pivotal: No
   name: KeypressSoundVolume
   type: string

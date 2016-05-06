@@ -23,4 +23,4 @@ parm:
       description: Disables the PopupOnKeypress feature.
 ---
 
-Controls whether to display a pop-up image of the key being pressed. 
+Controls whether Enterprise Keyboard will display a pop-up image of the key being pressed. 

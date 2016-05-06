@@ -5,13 +5,13 @@ type: parm
 order: 11
 mx: "6.0"
 parm:
-  presentif: Keypress Vibration Duration Mode is "Enable" 
+  presentif: Keypress Vibration Duration Mode is set to "Specify duration" 
   pivotal: No
   name: KeypressVibrationDuration
   type: string
 ---
 
-Used to specify the Keypress Vibration Duration, the length of time (from 0 to 100ms) that the device will vibrate to indicate that a key has been pressed (default = 0ms). 
+Used to specify the length of time (from 0 to 100ms) that the device will vibrate to indicate that a key has been pressed (default = 0ms). 
 
 **Parm input rules**
 

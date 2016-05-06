@@ -23,4 +23,4 @@ parm:
       description: Prevents Enterprise Keyboard from suggesting spelling corrections.
 ---
 
-Controls whether Enterprise Keyboard will display spelling correction suggestions for words being typed. **Will not automatically replace words unless Auto-correction is enabled**.
+Controls whether Enterprise Keyboard will display spelling correction suggestions for words being typed. **Enable Auto-correction to accept suggested words by pressing the space bar**. 

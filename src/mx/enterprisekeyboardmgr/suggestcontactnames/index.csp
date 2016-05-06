@@ -23,4 +23,4 @@ parm:
       description: Disables the suggestion of contact names from contacts stored on the device as they're being typed.
 ---
 
-Controls whether to automatically display contacts from the device contact list when typing names. **This feature works only with certain field types**. 
+Controls whether to automatically display contacts from the device contact list when typing names. **This feature works only with specific field types**. 

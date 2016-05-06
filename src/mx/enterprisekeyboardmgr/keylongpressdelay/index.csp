@@ -5,6 +5,7 @@ type: parm
 order: 7
 mx: "6.0"
 parm:
+  presentif: Key Long-Press Delay Mode is set to "Specify duration" 
   pivotal: No
   name: KeyLongPressDelay
   type: string

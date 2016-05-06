@@ -1,0 +1,19 @@
+---
+csp: enterprisekeyboardmgr
+title: Remap Numeric Key P2
+type: parm
+order: 32
+mx: "6.0"
+parm:
+  pivotal: No
+  name: RemapNumericP2
+  type: string
+---
+
+Used to specify a character, UNICODE value or EMOJI panel for substitution with the default key on the Numeric Keypad Row 2, Column 1. *If this field is left empty, it makes no change and retains any previuously selected value. 
+
+**Parm input rules**
+
+* A string of between 0 and 8 characters
+* A UNICODE value corresponding to the desired key
+* The actual character to be substituted

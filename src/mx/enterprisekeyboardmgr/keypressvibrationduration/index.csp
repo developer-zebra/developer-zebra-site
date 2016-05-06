@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Sopecifies the Keypress Vibration Duration, the length of time (from 0 to 100ms) that the device will vibrate to indicate that a key has been pressed (default = 0ms). 
+Used to specify the Keypress Vibration Duration, the length of time (from 0 to 100ms) that the device will vibrate to indicate that a key has been pressed (default = 0ms). 
 
 **Parm input rules**
 

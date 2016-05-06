@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Keypress Vibration Duration
 type: parm
-order: 2
+order: 7
 mx: "6.0"
 parm:
   presentif: Keypress Vibration Duration Mode is "Enable" 

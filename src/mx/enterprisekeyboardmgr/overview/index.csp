@@ -4,16 +4,32 @@ title: Overview
 type: text
 order: 0
 ---
-Enterprise Keyboard Manager controls the settings of Zebra's Enterprise Keyboard, which provides the most efficient means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
+Enterprise Keyboard Manager controls the settings of Enterprise Keyboard, Zebra's soft input device for Android that provides an efficient means of hand-inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and can scan data directly into an application. 
 
-Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).
+Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
 
+Learn more [about the Personal Dictionary](../personaldictionarymgr).
 
 ### Main Functionality
 
-* Enable and Disable: 
+####Enable and Disable: 
+* Auto-capitalization
+* Auto-correction
+* Blocking of Offensive Words
+* Keypress Vibration, Sound and Popup
+* Suggest Corrections, Personalized Terms and Contacts
+* Display of Scan Tab and Voice Input Key
 
+#### Unique Features
+* Swipe to input long-press keys
+* Direct scanning of barcodes 
+* Swipe to switch keyboard layouts
+* Single-tap to switch languages
+* Remap keys to create custom layouts
+* Color scheme easily readable indoors and out
+* Auto-hide suggestion bar for optimal screen usage
 
+####Included languages
 * English (UK)
 * English (US) 
 * French

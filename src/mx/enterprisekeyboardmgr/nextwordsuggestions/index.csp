@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Next Word Suggestions Enable/Disable
 type: parm
-order: 6
+order: 8
 mx: "6.0"
 parm:
   pivotal: No

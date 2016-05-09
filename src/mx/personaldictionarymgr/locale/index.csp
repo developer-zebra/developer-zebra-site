@@ -5,14 +5,14 @@ type: parm
 order: 11
 mx: "6.0"
 parm:
-  presentif: Use Current Locale is 
+  presentif: Use Current Locale is "UNCHECKED?!?!?!?"
   pivotal: No
   name: Locale
   type: string
 ---
 
-Used to enter a specific Locale on which to take Action. 
+Used to enter a specific Locale on which to perform an Action, such as Add Word. 
 
-**Parm input rules**
+**Parm input rules:**
 
 * A string of between 2 and 10 characters

@@ -13,6 +13,6 @@ parm:
 
 Used to remove a word or phrase from the Personal dictionary. 
 
-**Parm input rules**
+**Parm input rules:**
 
 * A string of between 1 and 64 characters

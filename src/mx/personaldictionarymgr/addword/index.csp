@@ -11,8 +11,8 @@ parm:
   type: string
 ---
 
-Used to enter the word or phrase to be added to the Personal dictionary. 
+Used to enter a word or phrase to be added to the Personal dictionary. 
 
-**Parm input rules**
+**Parm input rules:**
 
-* A string of between 1 and 64 characters
+* Accepts a string of between 1 and 64 characters

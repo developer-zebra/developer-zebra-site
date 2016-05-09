@@ -1,0 +1,18 @@
+---
+csp: personaldictionarymgr
+title: Locale
+type: parm
+order: 11
+mx: "6.0"
+parm:
+  presentif: Use Current Locale is 
+  pivotal: No
+  name: Locale
+  type: string
+---
+
+Used to enter a specific Locale on which to take Action. 
+
+**Parm input rules**
+
+* A string of between 2 and 10 characters

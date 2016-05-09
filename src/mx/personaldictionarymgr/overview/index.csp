@@ -1,0 +1,18 @@
+---
+csp: personaldictionarymgr
+title: Overview
+type: text
+order: 0
+---
+
+Personal dictionary Manager handles additions and deletions of words and phrases to the custom word repository. Words and phrases entered in the Personal dictionary can be set to appear as spelling corrections for words as they are being typed. 
+
+Each word or phrase also can be assigned a shortcut of one or more letters. When typed, the shortcut is automatically replaced with the corresponding word or phrase. This can be useful for storing industry terms to help improve the speed and accuracy of keyboard input. For example, if configuring for a medical device, the phrase "gastroesophageal reflux disease" could be assigned the shortcut "gerd," which would be replaced with the longer term any time it was typed. 
+
+### Main Functionality
+
+* Add a word or phrase
+* Delete a word or phrase
+* Assign a shortcut to a word or phrase  
+* Delete all words and phrases from the dictionary
+* Change the current locale

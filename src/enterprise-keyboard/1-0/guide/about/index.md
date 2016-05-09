@@ -25,6 +25,7 @@ The Enterprise Keyboard offers the following unique capabilities to help improve
 
 <b>Switch layouts with taps or swipes</b>:  
 <img alt="" style="height:350px" src="sample_1.png"/>
+_The Tab bar automatically hides away when spelling suggestions appear, maximizing screen space for applications_. 
 <br>
 
 <b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:

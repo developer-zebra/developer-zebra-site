@@ -16,10 +16,10 @@ parm:
     - code: 1
       name: Yes
       mx: "6.0"
-      description: Enables Enterprise Keyboard to perform Double-Space Period feature.
+      description: Enables Enterprise Keyboard to perform Double-Space Period function.
     - code: 2
       name: No
       mx: "6.0"
-      description: Disables the Double-Space Period feature.
+      description: Disables the Double-Space Period function.
 ---
 Controls whether to automatically insert a period and space when double-tapping the spacebar.

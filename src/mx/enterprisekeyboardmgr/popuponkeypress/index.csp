@@ -20,7 +20,7 @@ parm:
     - code: 2
       name: No
       mx: "6.0"
-      description: Disables the PopupOnKeypress feature.
+      description: Disables the Popup On Keypress feature.
 ---
 
-Controls whether Enterprise Keyboard will display a pop-up image of the key being pressed. 
+Controls whether a "big character bubble" will pop up when a key on the Enteprise Keyboard is pressed. 

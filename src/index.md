@@ -9,13 +9,17 @@ products:
     image: /images/products/link-os.png
     sections:
       - title: Android
-        url: /link-os/android
+        url: /link-os/latest/android
+      - title: Xamarin
+        url: /link-os/latest/xamarin
       - title: iOS
-        url: /link-os/ios
+        url: /link-os/latest/ios
       - title: PC
-        url: /link-os/pc
+        url: /link-os/latest/pc
       - title: Web Services
-        url: /link-os/webservices
+        url: /link-os/latest/webservices
+      - title: Samples
+        url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
   - title: EMDK For Android
     description: "Java sample projects using EMDK API's, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/4-1/guide/about

@@ -7,7 +7,7 @@ mx: "4.3"
 apilevel: "16"
 parm:
   pivotal: Yes
-  name: InputMethodPackageName
+  name: InputMethodAction
   type: list
   list:
     - code: 0

@@ -7,6 +7,7 @@ mx: "4.4"
 parm:
   pivotal: Yes
   type: list
+  name: Action
   list:
     - code: 1
       mx: "4.4"

@@ -7,6 +7,7 @@ mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
   pivotal: No
+  name: BaseSendIntent,BlueSendIntent,OrangeSendIntent,GreySendIntent,ShiftSendIntent,ControlSendIntent
   type: string
 ---
 

@@ -8,6 +8,7 @@ parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send key-code" *AND* Advanced is "True"
   pivotal: No
   type: list
+  name: BaseKeyCodeShiftState,BlueKeyCodeShiftState,OrangeKeyCodeShiftState,GreyKeyCodeShiftState,ShiftKeyCodeShiftState,ControlKeyCodeShiftState
   list:
     - code: 0
       mx: "4.4"

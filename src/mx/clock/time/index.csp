@@ -8,7 +8,7 @@ apilevel: "8"
 parm:
   presentif: AutoTime is "false"
   pivotal: No
-  name: TimeZone
+  name: Time
   type: string
 ---
 

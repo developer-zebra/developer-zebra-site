@@ -1,6 +1,6 @@
 ---
 title: Personal Dictionary Manager
-description: The Personal Dictionary Manager handles words and phrases in the custom word bank.
+description: The Personal Dictionary Manager adds to and deletes from the custom word repository on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

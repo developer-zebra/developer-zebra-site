@@ -12,7 +12,7 @@ parm:
 
 Used to specify a character, UNICODE value or EMOJI panel for substitution with the default key on the Numeric Keypad Row 1, Column 1. **If this field is left empty, it makes no change and retains any previously selected value**. 
 
-**Parm input rules**
+**Parm input rules:**
 
 * A string of between 0 and 8 characters
 * A UNICODE value corresponding to the desired key

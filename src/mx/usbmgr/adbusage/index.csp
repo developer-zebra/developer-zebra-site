@@ -8,7 +8,7 @@ osx: "1.3"
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" 
   pivotal: No
-  name: UsbExternalStorageUsage
+  name: UsbADBUsage
   type: list
   list:
     - code: 0

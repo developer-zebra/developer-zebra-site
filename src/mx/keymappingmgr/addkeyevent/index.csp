@@ -8,6 +8,7 @@ parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
   pivotal: Yes
   type: list
+  name: BaseIntentAddKeyState,BlueIntentAddKeyState,OrangeIntentAddKeyState,GreyIntentAddKeyState,ShiftIntentAddKeyState,ControlIntentAddKeyState
   list:
     - code: 0
       mx: "4.4"

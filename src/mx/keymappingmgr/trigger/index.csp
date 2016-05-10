@@ -8,6 +8,7 @@ parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior for the corresponding Key Table is "Send trigger"
   pivotal: No
   type: list
+  name: BaseTrigger,BlueTrigger,OrangeTrigger,GreyTrigger,ShiftTrigger,ControlTrigger
   list:
     - code: 10016
       mx: "4.4"

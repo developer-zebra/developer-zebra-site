@@ -8,6 +8,7 @@ parm:
   presentif: The Action value is "Remap a key"
   pivotal: Yes
   type: list
+  name: KeyIdentifier
   list:
     - code: 
       mx: "4.4"

@@ -20,21 +20,23 @@ Knowledge of Android programming and familiarity with the Android intent mechani
 ## Features
 On Symbol devices, extra battery information can be retrieved using the standard Android Battery Intent. Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information provided by power precision and power precision plus batteries:
 
-<table>
-<tr>
-<th>Battery Type </th><th>Devices</th>
-</tr>
-<tr>
-<td>Power Precision </td><td>MC40, MC92, TC55, TC75, TC70</td>
-</tr>
-</tr>
-<tr>
-<td>Power Precision Plus </td><td>MC18, TC8000</td>
-</tr>
-</tr>
-<tr>
-<td>Backup Battery< /td><td>TC8000, MC92, MC40</td>
-</tr>
+<table class="table table-striped">
+	<tr>
+		<th>Battery Type </th>
+		<th>Devices</th>
+	</tr>
+	<tr>
+		<td>Power Precision </td>
+		<td>MC40, MC92, TC55, TC75, TC70</td>
+	</tr>
+	<tr>
+		<td>Power Precision Plus </td>
+		<td>MC18, TC8000</td>
+	</tr>
+	<tr>
+		<td>Backup Battery</td>
+		<td>TC8000, MC92, MC40</td>
+	</tr>
 </table>
 
 
@@ -243,7 +245,7 @@ In addition to the battery information Android returns by default, which can be 
 * **present_charge**      
 * **time_to_empty**        
 * **time_to_full**     
-* **seconds_since_first_use **      
+* **seconds_since_first_use**      
 
 
 

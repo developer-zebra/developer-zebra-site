@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "4.4"
 parm:
-  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior for the Mapping Table is "Send key-code"
+  presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior for the Mapping Table is "Send key-code"
   pivotal: Yes
   name: BaseKeyCodeAdvanced,BlueKeyCodeAdvanced,OrangeKeyCodeAdvanced,GreyKeyCodeAdvanced,ShiftKeyCodeAdvanced,ControlKeyCodeAdvanced
   type: list
@@ -20,6 +20,7 @@ parm:
       description: This value (or the absence of this parm from the XML) indicates that the Advanced section will not be specified.
 ---
 
-Each Key State Mapping Table has its own Advanced Section via which you can specify Key State Modifiers that will be set into the Current Key State when a Key Code is sent as the Key Behavior for the specified Key in that Key State Mapping Table.
+Controls whether to use the Advanced section for a Key Mapping Table. All Advanced parms use the values shown in the table below.
 
->This parm allows you to choose whether or not to use the Advanced section for a Key Mapping Table. All Advanced parms use the same values shown in the following table of values.
+Each Key State Mapping Table has its own Advanced Section via which can be used to specify Key State Modifiers that will be set into the Current Key State when a Key Code is sent as the Key Behavior for the specified Key in that Key State Mapping Table.
+

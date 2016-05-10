@@ -14,7 +14,7 @@ parm:
       mx: "4.3"
       apilevel: "1"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the AutoCorrect function is allowed to be used.
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the AutoCorrect function is allowed to be used; any previously selected setting will be retained. 
     - code: 1
       name: Enable 
       mx: "4.3"
@@ -28,4 +28,4 @@ parm:
 
 ---
 
-This parm controls whether the AutoCorrect function is accessible by the device user. AutoCorrect can be used to save commonly entered words or industry-specific words or phrases and offer them as corrections to potentially mistyped words. This function could present a security risk since it could expose sensitive information to subsequent device users that are not authorized to view or reuse that information.
+Controls whether the AutoCorrect function is accessible by the device user. AutoCorrect can be used to save commonly entered words or industry-specific words or phrases and offer them as corrections to potentially mistyped words. This function could present a security risk since it could expose sensitive information to subsequent device users that are not authorized to view or reuse that information.

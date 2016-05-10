@@ -14,7 +14,7 @@ parm:
       name: Do not change
       mx: "5.1"
       osx: "5.1"
-      description: This value (or the absence of this parm from the XML) will cause no change to ability of the device user to pull down the Notifications panel.
+      description: This value (or the absence of this parm from the XML) will cause no change to ability of the device user to pull down the Notifications panel; any previously selected setting will be retained.
     - code: 1
       name: Enable
       mx: "5.1"
@@ -27,4 +27,4 @@ parm:
       description: Prevents the Notifications panel from being pulled down. 
 ---
 
-This parm value controls whether a device user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. Depending on the Android version, the Notifications panel displays application alerts, text messages, widgets and other notifications, and provides access to device Settings. Preventing access to the Notification Pulldown can prevent a device user from accessing device Settings and other system objects that might allow a user to change system behavior or navigate away from the current application. 
+Controls whether a device user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. Depending on the Android version, the Notifications panel displays application alerts, text messages, widgets and other notifications, and provides access to device Settings. Preventing access to the Notification Pulldown can prevent a device user from accessing device Settings and other system objects that might allow a user to change system behavior or navigate away from the current application. 

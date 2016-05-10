@@ -14,7 +14,7 @@ parm:
       mx: "4.3"
       osx: "4.3"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the Bluetooth Pairing Popup is will be presented.
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the Bluetooth Pairing Popup is will be presented; any previously selected setting will be retained. 
     - code: 1
       name: Enable 
       mx: "4.3"
@@ -27,4 +27,4 @@ parm:
       description: Causes the Bluetooth Pairing Popup to be suppressed when a pairing operation is performed.
 ---
 
-This parm controls whether to present the Bluetooth Pairing Popup during a pairing operation. The Bluetooth Pairing Popup is of most use when the device user will be left in charge of pairing of Bluetooth peripheral devices with an Android device. If one or more applications are expected to completely control all pairings of Bluetooth peripheral devices, the Bluetooth Pairing Popup may be seen as an unnecessary and confusing intrusion on the device user and/or as introducing the potential for the device user to mistakenly interfere with the pairing process.
+Controls whether to present the Bluetooth Pairing Popup during a pairing operation. The Bluetooth Pairing Popup is of most use when the device user will be left in charge of pairing of Bluetooth peripheral devices with an Android device. If one or more applications are expected to completely control all pairings of Bluetooth peripheral devices, the Bluetooth Pairing Popup may be seen as an unnecessary and confusing intrusion on the device user and/or as introducing the potential for the device user to mistakenly interfere with the pairing process.

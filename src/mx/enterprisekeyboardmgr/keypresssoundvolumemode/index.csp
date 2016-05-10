@@ -20,7 +20,7 @@ parm:
     - code: 1
       name: System default
       mx: "6.0"
-      description: Accepts the System default for the keypress sound volume.
+      description: Accepts the System setting for the keypress sound volume.
 ---
 
-Controls whether to specify the sound volume (as a percentage of the maximum) or to accept the System default value. 
+Controls whether to specify the sound volume (as a percentage of the maximum) or to accept the System setting (default). 

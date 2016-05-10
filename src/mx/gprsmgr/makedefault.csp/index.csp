@@ -8,7 +8,7 @@ apilevel: "16"
 parm:
   presentif: The APN Action is "Add/replace named APN"
   pivotal: No
-  name: ReplaceIfExisting
+  name: MakeDefault
   type: list
   list:
     - code: 1

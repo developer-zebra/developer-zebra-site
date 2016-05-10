@@ -8,7 +8,7 @@ apilevel: "19"
 parm:
   presentif: Analytics Action is "Enable"
   pivotal: No
-  name: AnalyticsClientSettings
+  name: DASettings
   type: list
   list:
     - code: 0

@@ -20,7 +20,7 @@ parm:
     - code: 3
       name: Delete all words
       mx: "6.0"
-      description: Remove all words and phrases from the dictionary; clear all custom data.
+      description: Remove all words and phrases from the dictionary. WARNING: This action clears all saved data.
 ---
 
 Controls the addition and deletion of individual words and/or phrases into and out of the Personal dictionary. 

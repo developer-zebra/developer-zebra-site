@@ -6,6 +6,7 @@ order: 18
 mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Launch application"
+  name: BaseLaunchActivityName,BlueLaunchActivityName,OrangeLaunchActivityName,GreyLaunchActivityName,ShiftLaunchActivityName,ControlLaunchActivityName
   pivotal: No
   type: string
 ---

@@ -7,6 +7,7 @@ mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" 
   pivotal: Yes
+  name: BlueBehavior,OrangeBehavior,GreyBehavior,ShiftBehavior,ControlBehavior
   type: list
   list:
     - code: 0

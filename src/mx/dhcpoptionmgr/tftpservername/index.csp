@@ -6,7 +6,7 @@ order: 8
 mx: "4.4"
 parm:
   pivotal: No
-  name: TFTPServerNameState
+  name: TFTPSerNameState
   type: list
   list:
     - code: 0

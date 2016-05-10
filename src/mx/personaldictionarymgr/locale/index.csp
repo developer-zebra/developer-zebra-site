@@ -5,7 +5,7 @@ type: parm
 order: 11
 mx: "6.0"
 parm:
-  presentif: Use Current Locale is "UNCHECKED?!?!?!?"
+  presentif: Use Current Locale is "Unchecked" (value=0) 
   pivotal: No
   name: Locale
   type: string
@@ -16,3 +16,4 @@ Used to enter a specific Locale on which to perform an Action, such as Add Word.
 **Parm input rules:**
 
 * A string of between 2 and 10 characters
+* Must correspond to a locale installed on the device 

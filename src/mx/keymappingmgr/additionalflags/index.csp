@@ -5,7 +5,7 @@ type: parm
 order: 16
 mx: "4.4"
 parm:
-  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
+  presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
   name: BaseIntentIncludeFlags,BlueIntentIncludeFlags,OrangeIntentIncludeFlags,GreyIntentIncludeFlags,ShiftIntentIncludeFlags,ControlIntentIncludeFlags
   pivotal: No
   type: string

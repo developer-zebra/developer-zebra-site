@@ -4,7 +4,7 @@ title: Turn On/Off GPS
 type: parm
 order: 5
 mx: "4.3"
-apilevel; "1"
+apilevel: "1"
 parm:
   pivotal: No
   name: GPSState
@@ -12,18 +12,18 @@ parm:
   list:
     - code: 0
       mx: "4.3"
-      apilevel; "1"
+      apilevel: "1"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the GPS radio.
     - code: 1
       name: Turn On 
       mx: "4.3"
-      apilevel; "1"
+      apilevel: "1"
       description: This value will cause the GPS radio to be Turned On.
     - code: 2
       name: Turn Off
       mx: "4.3"
-      apilevel; "1"
+      apilevel: "1"
       description: This value will cause the GPS radio to be Turned Off.
 ---
 

@@ -5,8 +5,17 @@ type: parm
 order: 16
 mx: "4.4"
 parm:
+<<<<<<< HEAD
+<<<<<<< HEAD
+  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
+  name: BaseIntentIncludeFlags,BlueIntentIncludeFlags,OrangeIntentIncludeFlags,GreyIntentIncludeFlags,ShiftIntentIncludeFlags,ControlIntentIncludeFlags
+=======
+  presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
+>>>>>>> TUT-8004
+=======
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
   name: BaseIntentIncludeFlags,BlueIntentIncludeFlags,OrangeIntentIncludeFlags,GreyIntentIncludeFlags,ShiftIntentIncludeFlags,ControlIntentIncludeFlags
+>>>>>>> MX-JSON
   pivotal: No
   type: string
 ---

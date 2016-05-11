@@ -14,7 +14,7 @@ parm:
       name: False
       mx: "4.2"
       osx: "1.3"
-      description:This value (or the absence of this parm from the XML) will turn AutoTime Off, thus preventing the automatic contacting of an NTP Server and automatic setting of the Date and Time of the device.
+      description: This value (or the absence of this parm from the XML) will turn AutoTime Off, thus preventing the automatic contacting of an NTP Server and automatic setting of the Date and Time of the device.
     - code: true
       name: True
       mx: "4.2"

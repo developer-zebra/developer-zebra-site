@@ -3,7 +3,7 @@ csp: wifi
 title: 2.4GHz Channels 
 type: parm
 order: 8
-sincemx: 4.2
+mx: "4.2"
 parm:
   presentif: The RF Band that is selected is either 2.4GHz or Auto
   pivotal: No

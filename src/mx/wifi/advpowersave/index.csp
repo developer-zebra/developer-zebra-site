@@ -3,7 +3,7 @@ csp: wifi
 title: Power Save Mode 
 type: parm
 order: 56
-sincemx: 4.2
+mx: "4.2"
 parm:
   presentif: The "Specify Advanced Options" box is enabled.
   pivotal: False
@@ -12,24 +12,24 @@ parm:
   list:
     - code: 0
       name:  Do not change
-      sincemx: 4.2
+      mx: "4.2"
     - code: 1
       name: Always Active
-      sincemx: 4.2
+      mx: "4.2"
     - code: 2
       name: Fast Power Save (Deprecated)
-      sincemx: 4.2
+      mx: "4.2"
     - code: 3
       name: Max Power Save (Deprecated)
-      sincemx: 4.2
+      mx: "4.2"
     - code: 4
       name: WMM-PS
-      sincemx: 4.4
+      mx: "4.4"
     - code: 5
       name: Null Data Power Save
-      sincemx: 4.4
+      mx: "4.4"
     - code: 6
-      sincemx: 4.4
+      mx: "4.4"
       name: PS-POLL
 ---
 

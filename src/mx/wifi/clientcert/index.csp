@@ -3,7 +3,7 @@ csp: wifi
 title: Mandatory Client Certificate Name
 type: parm
 order: 30
-sincemx: 4.2
+mx: "4.2"
 parm:
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "EAP-TLS"
   name: MandatoryClientCertificate 

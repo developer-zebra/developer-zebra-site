@@ -3,7 +3,7 @@ csp: wifi
 title: HFSR
 type: parm
 order: 52
-sincemx: 4.2
+mx: "4.2"
 parm:
   presentif: The "Specify Advanced Options" box is enabled.
   pivotal: False

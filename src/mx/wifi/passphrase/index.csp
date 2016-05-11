@@ -3,7 +3,7 @@ csp: wifi
 title: Passphrase 
 type: parm
 order: 38
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: No
   name: PassphraseWEPClear, PassphraseWEPEncrypted, PassphraseWPAClear, PassphraseWPAEncrypted

@@ -3,7 +3,7 @@ csp: wifi
 title: Server Certificate Name 
 type: parm
 order: 29
-sincemx: 4.2
+mx: "4.2"
 parm:
   presentif: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is "EAP-TLS", "PEAP-MSCHAPV2", "EAP-TTLS-MSCHAP", "EAP-FAST-MSCHAPV2", "EAP-TTLS-PAP", "PEAP-GTC", "EAP-FAST-MSCHAPV2", "EAP-FAST-GTC", or "PEAP-NONE"
   name: OptionalServerCertificate 

@@ -3,7 +3,7 @@ csp: wifi
 title: Coverage Hole Detection
 type: parm
 order: 67
-sincemx: 4.3
+mx: "4.3"
 parm:
   presentif: The "Specify Advanced Options" box is enabled.
   pivotal: False

@@ -3,22 +3,22 @@ csp: wifi
 title: Wi-Fi Enable 
 type: parm
 order: 3
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: No
   name: WiFiAction
   type: list
   list:
     - code: 0
-      sincemx: 4.2
+      mx: "4.2"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will not make any change to the whether the Wi-Fi radio is on or off.
     - code: enable
-      sincemx: 4.2
+      mx: "4.2"
       name: Enable
       description: This value will cause the Wi-Fi radio to be turned on.
     - code: disable
-      sincemx: 4.2
+      mx: "4.2"
       name: Disable
       description: This value will cause the Wi-Fi radio to be turned off.
 ---

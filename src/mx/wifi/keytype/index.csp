@@ -3,7 +3,7 @@ csp: wifi
 title: Key Type 
 type: parm
 order: 35
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Personal"
@@ -11,11 +11,11 @@ parm:
   type: list
   list:
     - code: HexKey
-      sincemx: 4.2
+      mx: "4.2"
       name: Hex Key
       description: This indicates that the actual key used by the network to perform encryption will be specified.
     - code: Passphrase
-      sincemx: 4.2
+      mx: "4.2"
       name: Passphrase
       description: This indicates that a passphrase will be specified from which the actual key used by the network to perform encryption can be derived.
 ---

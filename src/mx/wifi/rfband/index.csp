@@ -3,26 +3,26 @@ csp: wifi
 title: RF Band 
 type: parm
 order: 7
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: Yes
   name: BandSelection
   type: list
   list:
     - code: 
-      sincemx: 4.2
+      mx: "4.2"
       name: Unchanged
       description: This value (or the absence of this parm from the XML) will not make any change to the current selected band on the device.
     - code: 2.4GHZ
-      sincemx: 4.2
+      mx: "4.2"
       name: 2.4GHZ
       description: TThis value will enable 2.4GHz band.
     - code: 5.0GHZ
-      sincemx: 4.2
+      mx: "4.2"
       name: 5.0GHZ
       description: This value will enable 5.0GHz band.
     - code: Auto
-      sincemx: 4.2
+      mx: "4.2"
       name: Auto
       description: This value will enable both bands and connect automatically to either.
 ---

@@ -3,46 +3,46 @@ csp: wifi
 title: Network Action 
 type: parm
 order: 20
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: Yes
   name: NetworkAction
   type: list
   list:
     - code: 
-      sincemx: 4.2
+      mx: "4.2"
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will not cause any Network Actions to be performed.
     - code: add
-      sincemx: 4.2
+      mx: "4.2"
       name: Add a New Network
       description: This value will add a new profile with the provided profile settings. For the options that will be presented when choosing to add a new network, please see the following "SSID" parm and the "Add a New Network Options" section below
     - code: Remove
-      sincemx: 4.2
+      mx: "4.2"
       name: Remove an Existing Network
       description: This value will remove the a network profile based on the SSID
     - code: Connect
-      sincemx: 4.2
+      mx: "4.2"
       name: Connect to an Existing Network
       description: This value will initiate a connection to the network based on the SSID
     - code: Disconnect
-      sincemx: 4.2
+      mx: "4.2"
       name: Disconnect from an Existing Network
       description: This value will disconnect from a network based on the SSID
     - code: Enable
-      sincemx: 4.2
+      mx: "4.2"
       name: Enable an Existing Network
       description: This value will enable a network profile based on the SSID
     - code: Disable
-      sincemx: 4.2
+      mx: "4.2"
       name: Disable an Existing Network
       description: This value will disable a network profile based on the SSID
     - code: DisableAll
-      sincemx: 4.2
+      mx: "4.2"
       name: Disable All Existing Networks
       description: This value will disable all network profiles
     - code: RemoveAll
-      sincemx: 4.2
+      mx: "4.2"
       name: Remove All Existing Networks
       description: This value will remove all network profiles
 ---

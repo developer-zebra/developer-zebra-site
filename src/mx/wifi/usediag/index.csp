@@ -3,18 +3,18 @@ csp: wifi
 title: Specify Diagnostic Options 
 type: parm
 order: 10
-sincemx: 4.4
+mx: "4.4"
 parm:
   pivotal: No
   name: UseDiagnosticOptions
   type: list
   list:
     - code: true
-      sincemx: 4.4
+      mx: "4.4"
       name: True
       description:
     - code: false
-      sincemx: 4.4
+      mx: "4.4"
       name: False
       description: 
 ---

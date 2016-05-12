@@ -3,7 +3,7 @@ csp: wifi
 title: Static IP Address
 type: parm
 order: 42
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: Yes
   presentif: The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked

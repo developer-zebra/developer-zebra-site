@@ -8,7 +8,7 @@ osx: "4.4"
 parm:
   presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
   pivotal: No
-  name:STREAM_ALARM_Label
+  name: STREAM_ALARM_Label
   type: string
 ---
 

@@ -3,7 +3,7 @@ csp: wifi
 title: Password
 type: parm
 order: 28
-sincemx: 4.2
+mx: "4.2"
 parm:
   name: PasswordClear, PasswordEncrypted
   pivotal: Yes

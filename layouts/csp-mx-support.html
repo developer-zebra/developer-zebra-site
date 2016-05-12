@@ -5,8 +5,11 @@
             <section class="content-with-sidebar">
             <div class="row">
                 <div class="col-sm-3 fixed-column-left"  >
-                    {{> menu}}
-
+                    <ul class="nav">
+                        {{#each this.csps}}
+                            <li class="csp-select" data-id="{{this.csp}}"><a>{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
                 </div>                
                 <div class="col-sm-9 fixed-column-right">
                     <div class="row">
@@ -40,7 +43,7 @@
                     <div class="row">
                         <div class="col-sm-12">
 
-                            <section id="services" >
+                            <section id="{{this.csp}}" class="csp">
                                 <h2><a href="{{this.url}}">{{this.title}}</a></h2>
                                 <div class="">
                                 <!-- Start of content list -->
@@ -153,7 +156,20 @@
             </div>
             </section>
         </div>
-    </section>    
+    </section>   
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log('ready');
+        $('.csp-select').click(function(e) { 
+            console.log('click');
+             var csp = $(this).attr("data-id");
+             $(".csp").hide();
+             $(".csp-select").removeClass("active");
+             $("#"+csp).show();
+             $(this).addClass("active");
+        }); 
+    });
+</script>
 {{> footer }}
 
 

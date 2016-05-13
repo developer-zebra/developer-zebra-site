@@ -1,13 +1,13 @@
 ---
 csp: clock
-title: UTC/LTC Conversion Examples 
+title: UTC-LTC Conversion Examples 
 type: text
 order: 80
 ---
 
-**Date and Time values used by the Clock must be initially represented as UTC**. This ensures an accurate result when calculating the Date and Time based on Time Zone and Daylight Saving Time offsets. If LTC were used as a starting point, the order in which the Date, Time, and Time Zone were set could effect the resulting values. The examples below explain how the calculations are made by the Clock. 
+**Date and Time values given to the Clock must be represented as UTC**. This ensures an accurate result when calculating the local date and time for the device based on offsets for Time Zone and Daylight Saving Time, if any. If local time is used as a starting point, the order in which the Date, Time, and Time Zone are set could effect the resulting values. The examples below explain how to make these calculations correctly. 
 
-In essence, LTC is calculated by taking the UTC plus or minus the Time Zone corresponding to the location of the device being used, plus or minus any Daylight Saving Time offset that is required for that Time Zone and time of year. Threfore, UTC is the equivilent of LTC at the Prime Meridian in Greenwich, England, where no offsets apply.  
+In essence, LTC is calculated by taking the UTC plus or minus the Time Zone corresponding to the location of the device being used, plus or minus any Daylight Saving Time offset that is required for that Time Zone and time of year. Threfore, UTC is the equivilent of LTC at the Prime Meridian in Greenwich, England, where no offsets apply. 
 
 For more information, refer to these reference sites: 
 * [Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
@@ -23,7 +23,7 @@ For more information, refer to these reference sites:
 &#50;. Make the following observations about device location:
 
 * The device is located in the Eastern USA Time Zone
-* The GMT offset for that Time Zone is -5 hours
+* The GMT offset for that Time Zone is -5 hours (5 hours behind GMT)
 * The Time Zone does not observe Daylight Saving Time on that Date
 
 &#51;. Convert the UTC values to LTC:
@@ -49,17 +49,17 @@ When converted by the Clock, these UTC values would appear as the correct LTC va
 
 * Device Location = Bangalore, India
 * Date = July 11, 2010
-* Time = 2:55AM (02:55:00)
+* Time = 2:55 a.m. (02:55:00)
 
 &#50;. Make the following observations about device location:
 
-* The Device Location is in the India Time Zone
-* The GMT offset for that Time Zone is +5 1/2 hours (+05:30)
+* The device is located in the India Time Zone
+* The GMT offset for that Time Zone is +05:30 (+5 1/2 hours ahead of GMT)
 * That Time Zone does not observe Daylight Saving Time
 
 &#51;. Convert the UTC values to LTC:
 
-* Applying the GMT offset for the selected Time Zone, which is +5 1/2 hours (+05:30)
+* Apply the GMT offset (+05:30) for the selected Time Zone
 	* 21:25:00 + 05:30 = 26:55:00 = 02:55:00 + 1 day
 * Applying no Daylight Saving Time offset
 	* India does not observe Daylight Saving Time
@@ -72,4 +72,6 @@ When converted by the Clock, these UTC values would appear as the correct LTC va
 * Date = "2010-07-10"
 * Time = "21:25:00"
 
-When converted by the Clock, these UTC values would appear as the correct LTC values on the device.
+Note the Date of July 10, 2010, one day _before_ the desired local time. That is because when when it's at 2:55 a.m. on Sun., July 11, 2010, in India, it's 5 1/2 hours earlier and still July 10 in Greenwich, England, where UTC originates. 
+
+When converted by the Clock, these UTC values would appear as the correct LTC values on a device in Bangalore.

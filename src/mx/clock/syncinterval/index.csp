@@ -2,7 +2,7 @@
 csp: clock
 title: SyncInterval
 type: parm
-order: 4
+order: 6
 mx: "4.2"
 apilevel: "16"
 parm:
@@ -33,4 +33,4 @@ parm:
       description: Causes the device to attempt to contact the NTP server every 24 hours.
 ---
 
-Use to specify the interval at which a device will attempt to contact the specified NTP server to acquire the Date, Time and Time Zone and automatically set the acquired values on the device. 
+Used to specify the interval at which a device will attempt to contact the specified NTP server to acquire the Date, Time and Time Zone and automatically set the acquired values on the device. 

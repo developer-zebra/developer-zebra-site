@@ -1,62 +1,63 @@
 ---
 csp: clock
-title: Clock Usage Notes
+title: UTC/LTC Conversion Examples 
 type: text
 order: 80
 ---
 
-**Launching Through "Recent Apps"** 
-The Auto Time Zone Enable/Disable function of Clock will fail if the Settings panel is launched using the Android Recent Apps feature. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in the profile created to set the clock. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in any profile created to set the clock. 
+**Date and Time values used by the Clock must be initially represented as UTC**. This ensures an accurate result when calculating the Date and Time based on Time Zone and Daylight Saving Time offsets. If LTC were used as a starting point, the order in which the Date, Time, and Time Zone were set could effect the resulting values. The examples below explain how the calculations are made by the Clock. 
+
+In essence, LTC is calculated by taking the UTC plus or minus the Time Zone corresponding to the location of the device being used, plus or minus any Daylight Saving Time offset that is required for that Time Zone and time of year. Threfore, UTC is the equivilent of LTC at the Prime Meridian in Greenwich, England, where no offsets apply.  
+
+For more information, refer to these reference sites: 
+* [Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+* [Daylight Saving Time Calculator](http://www.timeanddate.com/time/change/usa/new-york?year=2017)
 
 ###Example #1
-We want to set local time of the device as follows:
+&#49;. Note the desired local time for the device:
 
 * Device Location = New York, New York, USA
 * Date = January 15, 2010
-* Time = 2:15PM (14:15:00)
+* Time = 2:15 p.m. (14:15:00)
 
-We can then make the following observations:
+&#50;. Make the following observations about device location:
 
-* The Device Location is in the Eastern USA Time Zone
+* The device is located in the Eastern USA Time Zone
 * The GMT offset for that Time Zone is -5 hours
-* That Time Zone does not observe Daylight Time on that Date
+* The Time Zone does not observe Daylight Saving Time on that Date
 
-The values specified to the Clock would therefore be:
+&#51;. Convert the UTC values to LTC:
+
+* Apply the GMT offset (-05:00) for the selected Time Zone:
+	* 19:15:00 - 05:00 = 14:15:00
+* Consider Daylight Saving Time offset (not in effect on that date):
+	* Daylight Saving Time began March 14, 2010
+	* Daylight Saving Time ended November 7, 2010
+* Applying no Date offset, since the Time offset did not cause "roll over" or "roll under"
+
+&#52;. The values specified to the Clock would therefore be:
 
 * TimeZone = "America/New_York"
 * Date = "2010-01-15"
 * Time = "19:15:00"
 
-The above UTC values would be converted to the desired LTC by:
-
-* Applying the GMT offset for the selected Time Zone, which is -5 hours (-5 or -05:00)
-	* 19:15:00 - 05:00 = 14:15:00
-* Applying Daylight Saving Time offset, since it is not in effect in that Time Zone on that Date
-	* Daylight Saving Time began March 14, 2010
-	* Daylight Saving Time ended November 7, 2019
-* Applying no Date offset, since the Time offset did not cause "roll over" or "roll under"
+When converted by the Clock, these UTC values would appear as the correct LTC values on the device.   
 
 ###Example #2
 
-We want to set the local time of the device as follows:
+&#49;. Note the desired local time for the device:
 
 * Device Location = Bangalore, India
-* Date = July 11, 2014
-* Time = 2:55AM (02:00:00)
+* Date = July 11, 2010
+* Time = 2:55AM (02:55:00)
 
-We can then make the following observations:
+&#50;. Make the following observations about device location:
 
 * The Device Location is in the India Time Zone
-* The GMT offset for that Time Zone is +5 1/2 hours (+05:00)
-* That Time Zone does not observe Daylight Time
+* The GMT offset for that Time Zone is +5 1/2 hours (+05:30)
+* That Time Zone does not observe Daylight Saving Time
 
-The values specified to the Clock would therefore be:
-
-* TimeZone = "Asia/Calcutta"
-* Date = "2010-07-10"
-* Time = "21:25:00"
-
-The above UTC values would be converted to the desired LTC by:
+&#51;. Convert the UTC values to LTC:
 
 * Applying the GMT offset for the selected Time Zone, which is +5 1/2 hours (+05:30)
 	* 21:25:00 + 05:30 = 26:55:00 = 02:55:00 + 1 day
@@ -65,3 +66,10 @@ The above UTC values would be converted to the desired LTC by:
 * Applying a +1 day Date offset, since the Time offset caused a "roll over"
 	* 26:55:00 = 02:55:00 +1 day
 
+&#52;. The values specified to the Clock would therefore be:
+
+* TimeZone = "Asia/Calcutta"
+* Date = "2010-07-10"
+* Time = "21:25:00"
+
+When converted by the Clock, these UTC values would appear as the correct LTC values on the device.

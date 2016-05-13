@@ -12,8 +12,10 @@ parm:
   type: string
 ---
 
-Used to specify the URL of the NTP server that will be contacted according to the interval specified in BLAH BLAH 
+Used to specify the URL of the NTP server that the device will contact to acquire Date and Time settings according to the specified interval when AutoTime is enabled. **For devices operating on a cellular network, AutoTime typically acquires the Date, Time and Time Zone from the carrier network**. 
 
-to acquire the Date and Time and set them on the device. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause a default NTP server to be used.
+**Parm input rules**:
 
->**Note:** For devices operating on Cellular networks, the Date and Time may be obtained directly from the carrier network and may not require contacting an NTP server. On such devices, the Time Zone may also be automatically acquired from the carrier network and set onto the device.
+* Accepts a string containing a valid URL or IP address for the NTP server
+* If left empty (or parm is absent from the XML), a default NTP server will be used
+

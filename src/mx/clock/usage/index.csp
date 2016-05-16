@@ -46,7 +46,7 @@ This example inverts the UTC offset. Since UTC time is _later_ than Eastern time
 When converted by the Clock, these UTC values would appear as the correct LTC values on the device.   
 
 ###Example #2
-This example also inverts the UTC offset. Since UTC time is _earlier_ than India time, hours are subtracted from the desired Bangalore time to calculate its UTC equivalent, which results in a (backward) cross of the Prime Meridian (dateline). When this figure is put into the device, the Clock will recalculate the value to arrive at the desired local time and day for display and program use. 
+This example inverts the UTC offset. Since UTC time is _earlier_ than India time, hours are subtracted from the desired Bangalore time to calculate its UTC equivalent, which results in a (backward) cross of the Prime Meridian (dateline). When this figure is put into the device, the Clock will recalculate the value to arrive at the desired local time and day for display and program use. 
 
 &#49;. Note the desired local time for the device:
 
@@ -74,6 +74,6 @@ This example also inverts the UTC offset. Since UTC time is _earlier_ than India
 * Date = "2010-07-10"
 * Time = "21:25:00"
 
-Note the Date of July 10, 2010, one day _before_ the desired local time. That is because at 2:55 a.m. on Sun., July 11, 2010, in India, in Greenwich, England (where UTC originates) it's 5 1/2 hours earlier, and the date is still July 10. 
+Note the Date is July 10, 2010, one day _before_ the desired local time. That is because when it's 2:55 a.m. on July 11 in India, it's 9:25 p.m. (5 1/2 hours earlier) in Greenwich, England (where UTC originates), and the date is still July 10. 
 
 When converted by the Clock, these UTC values would appear as the correct LTC values on a device in Bangalore.

@@ -22,6 +22,6 @@ parm:
       description: Enables the device to automatically acquire its Time Zone.
 ---
 
-Enables a cellular-equipped device to acquire the Time Zone in which it is located from the carrier network (if supported by the carrier network). The Time Zone is used by Clock to calculate the local time on the device. When AutoTimeZone is Disabled, the Time Zone can be set manually. 
+Enables a cellular-equipped device to acquire the Time Zone in which it is located from the carrier network (if supported by that network). The Time Zone is used by Clock to calculate the local time on the device. When AutoTimeZone is Disabled, the Time Zone can be set manually. **This feature applies only to cellular devices**. 
 
 **Important**: The Auto Time Zone Enable/Disable function of Clock will fail if the Settings panel is launched using the Android Recent Apps feature. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in the profile created to set the clock. 

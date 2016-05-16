@@ -1,29 +1,35 @@
 ---
-title: About Enteprise Home Screen
+title: DataWedge
 layout: guide.html
-product: Enteprise Home Screen
-productversion: '2.3'
+product: DataWedge
+productversion: '3.1'
 ---
 
 ## Overview
-Enterprise Home Screen is a free Android app from Zebra Technologies that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. 
 
-EHS works by inserting itself in place of the stock Android app launcher and home screen. When first run, it presents a screen like the one below, offering a choice of which home app to open and whether to make the selection permanent. EHS also can be installed as the default launcher, bypassing the selector dialog. 
+DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This enables device apps to scan and acquire barcode data without using scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched. 
 
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+Important: Control of barcode scanning hardware is exclusive. When DataWedge is active, Scanner and Barcode APIs of Enterprise Browser and other apps will be inoperative. Likewise, an Enterprise Browser app that uses Barcode APIs will prevent other apps (including DataWedge) from using the scanner. This guide includes instructions for taking control of a device's scanner hardware and releasing it to other apps when scanning operations are complete.
 
-The first time it's installed, EHS offers a simple choice: 
-<img style="height:150px" src="homePrompt.png"/>
 
-Selecting 'Always' locks EHS in as the default home app and locks users out of the following device features by default:
+###Is DataWedge Installed?
+To physically verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
+<img style="height:350px" src="datawedge_launcher.png"/>
 
-* Airplane mode
-* USB debugging
-* Access to the file system
-* Keyguard (for unlocking the screen)
-* Keyguard-screen camera and search functions
-* The status-bar Settings icon  
-* Full access to the System Settings panel  
+To programmatically verify that DataWedge is present, 
+
+###Main Functionality
+DataWedge provides the following primary functionality: 
+
+* Scan and process numerous barcode symbologies (see table below)
+* Enable/Disable symbology decoding based on need
+* Associate with one or more apps to become the default scanner
+* Format output according to custom rules
+* Accept plug-ins for input, output and processing
+* Import and export settings 
+* Restore settings to factory defaults
+* Remote configuration and mass-deployment via MDM  
+* Automatically imports and applies new settings at each launch 
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 

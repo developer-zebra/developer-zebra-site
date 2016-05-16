@@ -1,0 +1,27 @@
+---
+csp: clock
+title: Auto Time Zone Enable/Disable
+type: parm
+order: 6
+mx: "6.0"
+osx: "1.3"
+parm:
+  pivotal: Yes
+  name: AutoTimeZone
+  type: list
+  list:
+    - code: false
+      name: False
+      mx: "6.0"
+      osx: "1.3"
+      description: This value (or the absence of this parm from the XML) disables Auto Time Zone, preventing the device from automatically acquiring the Time Zone from the carrier network.
+    - code: true
+      name: True
+      mx: "6.0"
+      osx: "1.3"
+      description: Enables the device to automatically acquire its Time Zone.
+---
+
+Enables a cellular-equipped device to acquire the Time Zone in which it is located from the carrier network (if supported by that network). The Time Zone is used by Clock to calculate the local time on the device. When AutoTimeZone is Disabled, the Time Zone can be set manually. **This feature applies only to cellular devices**. 
+
+**Important**: The Auto Time Zone Enable/Disable function of Clock will fail if the Settings panel is launched using the Android Recent Apps feature. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in the profile created to set the clock. 

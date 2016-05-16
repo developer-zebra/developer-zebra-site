@@ -2,7 +2,7 @@
 csp: clock
 title: Set Sync Interval
 type: parm
-order: 6
+order: 5
 mx: "4.2"
 apilevel: "16"
 parm:

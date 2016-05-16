@@ -52,7 +52,7 @@ parm:
       apilevel: "16"
     - code: 8
       name: Launch an Application
-      description: Allows an application to be launched by its Simple Name rather than by its package name. To use this value, the app and its icon or widget must be visible in the Launcher screen and launchable using that icon or widget with its main activity. If the app is not present, does not have an icon or widget, cannot be launched using its main activity or contains only services and receivers, an error will be returned in the Result XML document. Not case sensitive.
+      description: Allows an application to be launched by its visible Name rather than by its package name. This refers to the app name as it appears in Launcher, App Drawer, Application Manager or `app_name` field of the `strings.xml` file (i.e. "Calculator"). To use this value, the app and its icon or widget must be visible in the Launcher screen and launchable using that icon or widget with its main activity. If the app is not present, does not have an icon or widget, cannot be launched using its main activity or contains only services and receivers, an error will be returned in the Result XML document. Not case sensitive.
       mx: "5.1"
       apilevel: "1"
 ---

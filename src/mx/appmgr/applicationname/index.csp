@@ -1,6 +1,6 @@
 ---
 csp: appmgr
-title: Application (Simple) Name
+title: Application Name
 type: parm
 order: 5
 mx: "5.1"
@@ -17,6 +17,6 @@ Provide the Simple Name of the application for the application action.
 
 Parm value input rules: 
 
-* String containing the Simple Name of the application as it appears in the Launcher, App Drawer or `app_name` field of the `strings.xml` file. For example: "Calculator" 
+* String containing the Name of the application as it appears in the Launcher, App Drawer, Application Manager or `app_name` field of the `strings.xml` file  (i.e. "Calculator") 
 * The minimum length is 1 character and the maximum length is 255 characters
 * The simple application names are not case sensitive

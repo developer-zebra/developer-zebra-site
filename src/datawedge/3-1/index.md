@@ -3,7 +3,7 @@ title: DataWedge
 img: datawedge-logo.png
 layout: list-mx.html
 menu:
-  title: Enterprise Home Screen
+  title: DataWedge
   items:
     - title: About
       url: /datawedge/3-1/guide/about

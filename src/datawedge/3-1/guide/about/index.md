@@ -7,21 +7,22 @@ productversion: '3.1'
 
 ## Overview
 
-DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This enables device apps to scan and acquire barcode data without the modifications necessary to use scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched. 
+DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool enables device apps to acquire barcode data without the modifications necessary to use scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched. 
 
 **Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of Enterprise Browser and other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It's therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. This guide includes instructions for such activities. 
 
 ###Main Functionality
-DataWedge provides the following primary capabilities: 
+DataWedge provides the following primary functions: 
 
 * Scan and process numerous barcode symbologies (see table below)
+* Set DataWedge to become the default scanner for one or more apps
+* Create Profiles to implement specific DataWedge features for individual apps 
 * Enable/Disable decoding of individual symbologies based on need
-* Associate DataWedge with one or more apps to become the default scanner
 * Format output according to custom rules
 * Accept plug-ins for input, output and processing
 * Import and export settings 
 * Restore settings to factory defaults
-* Remote configuration and mass-deployment via MDM  
+* Remotely configure and mass-deploy via MDM  
 * Option to import and apply new settings at each launch 
 
 ###Is DataWedge Installed?
@@ -29,7 +30,7 @@ To verify that DataWedge is installed on a device, look for its icon in the Laun
 <img style="height:350px" src="datawedge_launcher.png"/>
 
 ###Decoders
-DataWedge decodes all major barcode symbologies. Most are shown on the table below, with the most popular formats enabled by default (*). To help improve scanning performance, the tool permits individual symbologies to be enabled and disabled based on the needs of a specific app or usage profile. See "Profiles" below. 
+DataWedge decodes all major barcode symbologies. Most are shown on the table below; popular formats are enabled by default (*). To help improve scanning performance, individual symbologies can be enabled and disabled based on the needs of a specific app or usage profile. See "Profiles" below. 
 
 <div class="tableblock">
 <table rules="none"
@@ -116,7 +117,7 @@ cellspacing="0" cellpadding="4">
 &#42; _Enabled by default_
 
 ###Profiles
-DataWedge Profiles permit custom groups of settings to be created to match the needs of specific apps, users or scanning scenarios. For example, any number of Profiles can be created for different applications that require the same data processed in different ways. Whenever an app comes to the foreground, that app's Profile can be set to output the scanned data in the format required for the app. Profiles also can enable one or more individual barcode symbologies to help improve performance and reduce input errors or delays. 
+DataWedge Profiles permit custom groups of settings to be created to match the needs of specific apps, users or scanning scenarios. Profiles can be created for different applications that require the same data processed in different ways. A Profile can be set to output scanned data in the format required for a particular app whenever that app comes to the foreground. Profiles also can enable one or more individual barcode symbologies to help improve performance and reduce input errors and delays. 
 
 **Refer to the Setup section** for more information. 
 

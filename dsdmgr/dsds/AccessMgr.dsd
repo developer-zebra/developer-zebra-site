@@ -1,0 +1,292 @@
+<wap-semanticsdoc version="4.3" revision="2">
+
+	<prompt name="OperationMode" lang="en" value="Operation Mode:"/> 
+
+	<prompt name="DeletePackagesAction" lang="en" value="Delete Packages?"/>
+	<prompt name="DeletePackageNames" lang="en" value="Delete Package Name(s):"/>
+
+	<prompt name="AddPackagesAction" lang="en" value="Add Packages?"/>
+	<prompt name="AddPackageNames" lang="en" value="Add Package Name(s):"/>
+	<prompt name="AddPackagesActionAllowXML" lang="en" value="Add Packages and allow to submit XML?"/>
+	<prompt name="AddPackageNamesAllowXML" lang="en" value="Add Package Name(s):"/>
+	<prompt name="AddPackageSignAllowXML" lang="en" value="Add Package Signature(s):"/>
+
+	<prompt name="AllowSubmitXMLAction" lang="en" value="Allow the application to submit XML?"/>
+	<prompt name="AllowSubmitXMLPackageNames" lang="en" value="Allow Package Name(s):"/>
+	
+
+	<prompt name="DisallowSubmitXMLPackageNames" lang="en" value="Disallow Package Name(s):"/>
+
+	
+	<prompt name="SystemSettings" lang="en" value="System Settings Access:" />
+	<prompt name="AppVerifySignMode" lang="en" value="Application verification signing mode:" />
+	<prompt name="AddPackageSign" lang="en" value="Add package signature(s):" />	
+	<prompt name="DeletePackageSign" lang="en" value="Delete package signature(s):"/>
+
+	<help name="OperationMode" lang="en" value="Select the desired Operation Mode"/>
+
+	<help name="DeletePackagesAction" lang="en" value="Select whether or not to delete Packages from the Whitelist"/>
+	<help name="DeletePackageNames" lang="en" value="Provide the Package Names to delete from the Whitelist (separated by commas)"/>
+
+	<help name="AddPackagesAction" lang="en" value="Select whether or not to add Packages to the Whitelist (with NO permission to submit XML)"/>
+	<help name="AddPackageNames" lang="en" value="Provide the Package Names to add to the Whitelist (separated by commas)"/>
+	
+	<help name="AddPackagesActionAllowXML" lang="en" value="Select whether or not to add Packages to the Whitelist and allow to submit XML"/>
+	<help name="AddPackageNamesAllowXML" lang="en" value="Provide the Package Names to add to the Whitelist and allow to submit XML(separated by commas)"/>
+	<help name="AddPackageSignAllowXML" lang="en" value="Provide the Package Signature to add to app verification signature list(separated by commas)"/>
+
+	<help name="AllowSubmitXMLAction" lang="en" value="Select whether or not to allow the application to submit XML"/>
+	<help name="AllowSubmitXMLPackageNames" lang="en" value="Provide the Package Names to allow to submit XML (separated by commas)"/>
+	
+	<help name="DisallowSubmitXMLPackageNames" lang="en" value="Provide the Package Names to disallow to submit XML (separated by commas)"/>
+
+	<help name="SystemSettings" lang="en" value="Select the level of system settings access to be allowed" />
+	<help name="AppVerifySignMode" lang="en" value="Select the level of application verification signing mode" />
+	<help name="AddPackageSign" lang="en" value="Provide the Package signatures to add app signature(separated by commas)"/>
+	<help name="DeletePackageSign" lang="en" value="Provide the package signatures to delete app signature (separated by commas)"/>
+
+	<list name="OperationMode"> 
+		<item code="1" text="Single User without Whitelist"/>
+		<item code="2" text="Single User with Whitelist"/>
+	</list>
+	
+	<list name="SystemSettings">
+		<item code="1" text="Full Access" />
+		<item code="2" text="Reduced Access" />
+	</list>
+	<list name="AppVerifySignMode">
+		<item code="0" text="Do not change" />	
+		<item code="1" text="Do not verify app signature" />
+		<item code="2" text="Verify user app signature" />
+		<item code="3" text="Verify all apps signature" />
+	</list>
+	
+	<list name="DeletePackagesAction">
+		<item code="0" text="Delete NO Packages"/>
+		<item code="1" text="Delete specified Packages(s)"/>
+		<item code="2" text="Delete ALL Packages"/>
+		<item code="3" text="Delete specified Signature(s)"/>
+	</list>
+
+	<list name="AddPackagesAction">
+		<item code="0" text="Add NO Packages"/>
+		<item code="1" text="Add specified Packages(s)"/>
+	</list>
+
+	<list name="AllowSubmitXMLAction">
+		<item code="0" text="Allow NO applications"/>
+		<item code="1" text="Allow specified application(s)"/>
+		<item code="2" text="Allow ALL applications that are permitted to be executed"/>
+	</list>
+
+	<list name="DisallowSubmitXMLPackageNames">
+		<item code="0" text="Add NO Packages"/>
+		<item code="1" text="Add specified Packages(s)"/>
+	</list>
+	
+	
+	<encode code="1" name="OperationMode" codesize="1" method="integer" datasize="1"/> 
+
+	<encode code="11" name="DeletePackagesAction" codesize="1" method="integer" datasize="1"/> 
+	<encode code="12" name="DeletePackageNames" codesize="1" method="string"/> 
+
+	<encode code="21" name="AddPackagesAction" codesize="1" method="integer" datasize="1"/> 
+	<encode code="22" name="AddPackageNames" codesize="1" method="string"/> 
+	<encode code="23" name="AddPackagesActionAllowXML" codesize="1" method="integer" datasize="1"/> 
+	<encode code="24" name="AddPackageNamesAllowXML" codesize="1" method="string"/> 
+	<encode code="25" name="AddPackageSignAllowXML" codesize="1" method="string"/> 
+
+	<encode code="51" name="AllowSubmitXMLAction" codesize="1" method="integer" datasize="1"/> 
+	<encode code="52" name="AllowSubmitXMLPackageNames" codesize="1" method="string"/> 
+	
+	<encode code="62" name="DisallowSubmitXMLPackageNames" codesize="1" method="string"/> 
+
+	
+	<encode code="210" name="SystemSettings" codesize="1" method="integer" datasize="1" />
+	
+	<encode code="111" name="AppVerifySignMode" codesize="1" method="integer" datasize="1" />
+	<encode code="112" name="AddPackageSign" codesize="1" method="string" />	
+	<encode code="113" name="DeletePackageSign" codesize="1" method="string" />
+
+	<characteristic  type="AccessMgr"
+		doc="Perform Management of Access features (e.g. Authentication, Whitelist, etc.)"
+	>
+		<prompt name="Version" lang="en" value="Version:" />
+		<help name="Version" lang="en" value="Version of the CSP" />
+		<parm name="Version" 
+			datatype="String"
+			promptref="Version"			
+			helpref="Version"
+			query="1"
+			set="0"
+		/>	
+		
+		<parm name="OperationMode"
+			promptref="OperationMode"
+			default="[.code]='0'"
+			helpref="OperationMode"
+			listref="OperationMode"
+			encoderef="OperationMode"
+			doc="Supported actions are:"
+		/>
+
+		<parm name="SystemSettings"
+			presentif="[OperationMode.code] in (2)"
+			promptref="SystemSettings"
+			default="[.code]='0'"
+			helpref="SystemSettings"
+			listref="SystemSettings"
+			encoderef="SystemSettings"
+			doc="Supported actions are:"
+		/>
+		
+		<parm name="AppVerifySignMode"
+			presentif="[OperationMode.code] in (2)"
+			promptref="AppVerifySignMode"
+			default="[.code]='0'"
+			helpref="AppVerifySignMode"
+			listref="AppVerifySignMode" 
+			encoderef="AppVerifySignMode"
+			skipif="[.code] in (0)"
+			doc="Supported actions are:"
+		/>
+		
+		<parm name="DeletePackagesAction"
+			presentif="[OperationMode.code] in (2)"
+			promptref="DeletePackagesAction"
+			default="[.code]='0'"
+			skipif="[.code] in (0)"
+			helpref="DeletePackagesAction"
+			listref="DeletePackagesAction"
+			encoderef="DeletePackagesAction"
+			doc="Supported actions are:"
+		/>
+
+		<parm name="DeletePackageNames"
+			presentif="[OperationMode.code] in (2) and [DeletePackagesAction.code] in (1)"
+			datatype="String"
+			minsize="1"
+			promptref="DeletePackageNames"
+			helpref="DeletePackageNames"
+			encoderef="DeletePackageNames"
+			doc="String length must be:"
+		/>
+		<parm name="DeletePackageSign"
+			presentif="[DeletePackagesAction.code] in (3) and [AppVerifySignMode.code] in (2,3)"
+			datatype="String"
+			minsize="1"	
+			promptref="DeletePackageSign"
+			helpref="DeletePackageSign"
+			encoderef="DeletePackageSign"
+			skipif="[.text]==''"
+			doc="If specified, must have a length of"
+			/>
+		<parm name="AddPackagesAction"
+			presentif="[OperationMode.code] in (2)"
+			promptref="AddPackagesAction"
+			default="[.code]='0'"
+			skipif="[.code] in (0)"
+			helpref="AddPackagesAction"
+			listref="AddPackagesAction"
+			encoderef="AddPackagesAction"
+			doc="Supported actions are:"
+		/>
+		
+		<parm name="AddPackageNames"
+			presentif="[OperationMode.code] in (2) and [AddPackagesAction.code] in (1)"
+			datatype="String"
+			minsize="1"
+			promptref="AddPackageNames"
+			helpref="AddPackageNames"
+			encoderef="AddPackageNames"
+			doc="String length must be:"
+		/>
+		<parm name="AddPackageSign"
+			presentif="[AddPackagesAction.code] in (1) and [AppVerifySignMode.code] in (2,3)"
+			datatype="string"
+			promptref="AddPackageSign"
+			helpref="AddPackageSign"
+			encoderef="AddPackageSign"
+			doc="If specified, must have a length of"
+			skipif="[.text]==''"
+		/>		
+
+		<parm name="AddPackagesActionAllowXML"
+			presentif="[OperationMode.code] in (2)"
+			promptref="AddPackagesActionAllowXML"
+			default="[.code]='0'"
+			helpref="AddPackagesActionAllowXML"
+			listref="AddPackagesAction"
+			encoderef="AddPackagesActionAllowXML"
+			skipif="[.code] in (0)"
+			doc="Supported actions are:"
+		/>
+		
+		<parm name="AddPackageNamesAllowXML"
+			presentif="[OperationMode.code] in (2) and [AddPackagesActionAllowXML.code] in (1)"
+			datatype="String"
+			minsize="1"
+			promptref="AddPackageNamesAllowXML"
+			helpref="AddPackageNamesAllowXML"
+			encoderef="AddPackageNamesAllowXML"
+			skipif="[.text]==''"
+			doc="String length must be:"			
+		/>
+		<parm name="AddPackageSignAllowXML"
+			presentif="[OperationMode.code] in (2) and [AddPackagesActionAllowXML.code] in (1) and [AppVerifySignMode.code] in (2,3) "
+			datatype="String"
+			minsize="1"
+			promptref="AddPackageSignAllowXML"
+			helpref="AddPackageSignAllowXML"
+			encoderef="AddPackageSignAllowXML"
+			skipif="[.text]==''"
+			doc="String length must be:"			
+		/>
+		
+		<parm name="AllowSubmitXMLAction"
+			presentif="[OperationMode.code] in (2)"
+			promptref="AllowSubmitXMLAction"
+			default="[.code]='0'"
+			helpref="AllowSubmitXMLAction"
+			listref="AllowSubmitXMLAction"
+			encoderef="AllowSubmitXMLAction"
+			skipif="[.code] in (0)"
+			doc="Supported actions are:"			
+		/>
+
+		<parm name="AllowSubmitXMLPackageNames"
+			presentif="[AllowSubmitXMLAction.code] in (1)"
+			datatype="String"
+			minsize="0"
+			promptref="AllowSubmitXMLPackageNames"
+			helpref="AllowSubmitXMLPackageNames"
+			encoderef="AllowSubmitXMLPackageNames"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+		
+<!--		<parm name="DisallowSubmitXMLAction"
+			presentif="[AllowSubmitXMLAction.code] in (1,2)"
+			promptref="DisallowSubmitXMLAction"
+			default="[.code]='0'"
+			helpref="DisallowSubmitXMLAction"
+			listref="DisallowSubmitXMLAction"
+			encoderef="DisallowSubmitXMLAction"
+			doc="Supported actions are:"
+		/>
+-->
+		<parm name="DisallowSubmitXMLPackageNames"
+			presentif="[AllowSubmitXMLAction.code] in (1,2)"
+			datatype="String"
+			minsize="0"
+			promptref="DisallowSubmitXMLPackageNames"
+			helpref="DisallowSubmitXMLPackageNames"
+			encoderef="DisallowSubmitXMLPackageNames"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+
+	</characteristic>
+
+</wap-semanticsdoc>
+

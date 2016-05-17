@@ -1,0 +1,42 @@
+<wap-semanticsdoc version = "4.4" >
+
+<prompt name="SetBatteryUsageDecommissionThreshold" lang="en" value="Battery Usage Decommissioned Threshold:" />
+<prompt name="SetPercentDecommissionThreshold" lang="en" value="Battery Percentage Decommissioned Threshold:" />
+
+<help name="SetBatteryUsageDecommissionThreshold" lang="en" value="For Smart Battery: Set the threshold value of the Battery Usage Number as an Integer ranging from 0 to 65535 (value 0 for no change or not applicable)"  />
+<help name="SetPercentDecommissionThreshold" lang="en" value="For Gifted Battery: Set the threshold value of the Battery Health Percentage as an Integer ranging from 0 to 100 (value 0 for no change or not applicable)" />
+
+<encode code ="1" name="SetBatteryUsageDecommissionThreshold" codesize="1" method="integer" datasize="2"/>
+<encode code ="2" name="SetPercentDecommissionThreshold" codesize="1" method="integer" datasize="1"/>
+
+    <characteristic  type="BatteryMgr"
+        doc="Manage Battery Operational Settings"
+    >
+
+        <parm name="SetBatteryUsageDecommissionThreshold"
+            promptref="SetBatteryUsageDecommissionThreshold"
+            helpref="SetBatteryUsageDecommissionThreshold"
+            encoderef="SetBatteryUsageDecommissionThreshold"
+            datatype="integer"
+            mininteger="0"
+            maxinteger="65535"
+            skipif="[.text]=='0'"
+            doc="Integer value must be:"
+        />
+
+        <parm name="SetPercentDecommissionThreshold"
+            promptref="SetPercentDecommissionThreshold"
+            helpref="SetPercentDecommissionThreshold"
+            encoderef="SetPercentDecommissionThreshold"
+            datatype="integer"
+            mininteger="0"
+            maxinteger="100"
+            skipif="[.text]=='0'"
+            doc="Integer value must be:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>
+
+

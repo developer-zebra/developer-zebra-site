@@ -1,0 +1,63 @@
+<wap-semanticsdoc version="4.3" revision="1" >
+
+    <prompt name="UseAllCameras" lang="en" value="All Cameras:" />
+    <prompt name="UseFrontCamera" lang="en" value="Front Camera:" />
+    <prompt name="UseRearCamera" lang="en" value="Rear Camera:" />
+
+    <help name="UseAllCameras" lang="en" value="Enable/Disable use of ALL cameras (may affect cameras not explicitly listed)" />
+    <help name="UseFrontCamera" lang="en" value="Enable/Disable use of front facing camera" />
+    <help name="UseRearCamera" lang="en" value="Enable/Disable use of rear facing camera" />
+
+    <list name ="AllCamerasChoiceList" >
+        <item code="0" text="Control Individual Cameras" />
+        <item code="1" text="Enable ALL Cameras" />
+        <item code="2" text="Disable ALL Cameras" />
+    </list>
+
+    <list name ="SingleCameraChoiceList" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <encode code="10" name="UseAllCameras" codesize="1" method="integer" datasize="1" />
+    <encode code="11" name="UseFrontCamera" codesize="1" method="integer" datasize="1" />
+    <encode code="12" name="UseRearCamera" codesize="1" method="integer" datasize="1" />
+
+    <characteristic type="CameraMgr" doc="Perform camera management operations" >
+
+        <parm name="UseAllCameras"
+            promptref="UseAllCameras"
+            value="[.code]"
+            helpref="UseAllCameras"
+            listref="AllCamerasChoiceList"
+            encoderef="UseAllCameras"
+            skipif="[.code] in (0)"
+            doc="Supported selections are:"
+        />
+
+        <parm name="UseFrontCamera"
+            presentif="[UseAllCameras.code] not in (1,2)"
+            promptref="UseFrontCamera"
+            value="[.code]"
+            helpref="UseFrontCamera"
+            listref="SingleCameraChoiceList"
+            encoderef="UseFrontCamera"
+            skipif="[.code] in (0)"
+            doc="Supported selections are:"
+        />
+
+        <parm name="UseRearCamera"
+            presentif="[UseAllCameras.code] not in (1,2)"
+            promptref="UseRearCamera"
+            value="[.code]"
+            helpref="UseRearCamera"
+            listref="SingleCameraChoiceList"
+            encoderef="UseRearCamera"
+            skipif="[.code] in (0)"
+            doc="Supported selections are:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>

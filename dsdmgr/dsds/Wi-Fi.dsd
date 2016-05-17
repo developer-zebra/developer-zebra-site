@@ -1,0 +1,1536 @@
+<wap-semanticsdoc version="4.5" revision="4">
+
+    <prompt name="TargetOS" lang="en" value="Target OS:" />
+
+    <prompt name="UseRegulatory" lang="en" value="Configure Country (Auto/Manual)?" />
+    <prompt name="Country" lang="en" value="Country:" />
+
+    <prompt name="BandSelection" lang="en" value="RF Band:" />
+    <prompt name="2.4GHzChannels" lang="en" value="2.4GHz Channels:" />
+    <prompt name="5.0GHzChannels" lang="en" value="5.0GHz Channels:" />
+
+    <prompt name="WifiSleepPolicy" lang="en" value="Sleep Policy:" />
+    <prompt name="NetworkNotification" lang="en" value="Network Notification:" />
+    <prompt name="WiFiAction" lang="en" value="Wi-Fi Enable:" />
+
+    <prompt name="UseAdvancedOptions" lang="en" value="Specify Advanced Options?" />
+    <prompt name="UseDiagnosticOptions" lang="en" value="Specify Diagnostic Options ?" />
+    <prompt name="UseHotspot" lang="en" value="Specify Hotspot Options?" />
+    <prompt name="HotspotSSID" lang="en" value="Hotspot SSID:" />
+    <prompt name="HotspotAPChannel" lang="en" value="Hotspot AP Channel:" />
+    <prompt name="HotspotSecurityMode" lang="en" value="Hotspot Security Mode:" />
+    <prompt name="ProtectHotspotPassphrase" lang="en" value="Protect Hotspot Passphrase?" />
+    <prompt name="HotspotPassphrase" lang="en" value="Hotspot Passphrase:" />
+    <prompt name="AutoTimeConfig" lang="en" value="Auto Time Config?" />
+    <prompt name="ProfileRoaming" lang="en" value="Profile Roaming?" />
+    <prompt name="HFSR" lang="en" value="HFSR?" />
+    <prompt name="CCKM" lang="en" value="CCKM?" />
+    <prompt name="FT" lang="en" value="FT?" />
+    <prompt name="FTRIC" lang="en" value="FTRIC?" />
+    <prompt name="OKC" lang="en" value="OKC?" />
+    <prompt name="PMKID" lang="en" value="PMKID?" />
+    <prompt name="PreAuth" lang="en" value="Pre-Auth?" />
+    <prompt name="PowerSave" lang="en" value="Power Save Mode:" />
+    <prompt name="WLANPowerSave" lang="en" value="WLAN Power Save Mode (Deprecated):" />
+    <prompt name="AdvancedLogging" lang="en" value="Advanced Logging?" />
+    <prompt name="FusionAdvancedLogging" lang="en" value="Fusion Advanced Logging?" />
+    <prompt name="FIPS" lang="en" value="FIPS?" />
+    <prompt name="EnableRestrictedSettingsUI" lang="en" value="Enable Restricted Settings UI:" />
+    <prompt name="802.11K" lang="en" value="Radio Resource Measurement(802.11K):" />
+    <prompt name="802.11w" lang="en" value="Management Frame Protection Mode(802.11w):" />
+    <prompt name="BandPreference" lang="en" value="Select your band preference:" />
+    <prompt name="FTOverTheDS" lang="en" value="Enable FTOverTheDS?" />
+    <prompt name="AggregatedFT" lang="en" value="Enable AggregatedFT?" />
+    <prompt name="ScanAssist" lang="en" value="Enable ScanAssist?" />
+    <prompt name="CHD" lang="en" value="Enable Coverage Hole Detection?" />
+    <prompt name="SubNetRoam" lang="en" value="Enable Sub-Net Roam?" />
+    <prompt name="WANCountry" lang="en" value="WANCountry:" />
+
+
+    <prompt name="NetworkAction" lang="en" value="Network Action:" />
+    <prompt name="SSID" lang="en" value="SSID:" />
+
+    <prompt name="SecurityMode" lang="en" value="Security Mode:" />
+    <prompt name="WPAMode" lang="en" value="WPA Mode:" />
+    <prompt name="Authentication" lang="en" value="Authentication:" />
+
+    <prompt name="UseUserProfile" lang="en" value="Use User Profile?" />
+    <prompt name="EnableCredPrompt" lang="en" value="Enable Credentials Prompting?" />
+    <prompt name="CredTimeout" lang="en" value="Credentials Timeout:" />
+    <prompt name="UserProfMode" lang="en" value="User Profile Mode:" />
+    <prompt name="Identity" lang="en" value="Identity:" />
+    <prompt name="ProtectPassword" lang="en" value="Protect Password?" />
+    <prompt name="Password" lang="en" value="Password:" />
+    <prompt name="AnonymousIdentity" lang="en" value="Anonymous Identity:" />
+    <prompt name="MandatoryServerCertificate" lang="en" value="Server Certificate Name (mandatory):" />
+    <prompt name="OptionalServerCertificate" lang="en" value="Server Certificate Name (optional):" />
+    <prompt name="MandatoryClientCertificate" lang="en" value="Client Certificate Name (mandatory):" />
+    <prompt name="OptionalClientCertificate" lang="en" value="Client Certificate Name (optional):" />
+
+    <prompt name="Encryption" lang ="en" value="Encryption Type:" />
+    <prompt name="ProtectKey" lang="en" value="Protect Key?" />
+    <prompt name="KeyType" lang="en" value="Key Type:" />
+    <prompt name="Passphrase" lang="en" value="Passphrase:" />
+    <prompt name="HexKey" lang="en" value="Hex Key:" />
+    <prompt name="WepKeyIndex" lang="en" value="WEP Key Index:" />
+
+    <prompt name="UseDHCP" lang="en" value="Use DHCP?" />
+    <prompt name="IpAddress" lang="en" value="Static IP Address:" />
+    <prompt name="IpGateway1" lang="en" value="Gateway 1 IP Address:" />
+    <prompt name="IpGateway2" lang="en" value="Gateway 2 IP Address:" />
+    <prompt name="IpMask" lang="en" value="Subnet Mask:" />
+    <prompt name="IpDns1" lang="en" value="DNS Server 1 IP Address:" />
+    <prompt name="IpDns2" lang="en" value="DNS Server 2 IP Address:" />
+
+    <prompt name="UseProxy" lang="en" value="Use Proxy?" />
+    <prompt name="ProxyHostName" lang="en" value="Proxy Host Name:" />
+    <prompt name="ProxyPort" lang="en" value="Proxy Port:" />
+    <prompt name="BypassProxy" lang="en" value="Bypass Proxy:" />
+    <prompt name="ProxyPAC" lang="en" value="URL of PAC file:" />
+
+    <help name="TargetOS" lang="en" value="Specify the target OS of the device" />
+    <help name="UseRegulatory" lang="en" value="Specify whether Regulatory will be used" />
+    <help name="Country" lang="en" value="Specify the country of operation" />
+
+    <help name="BandSelection" lang="en" value="Specify the RF Band(s) to use" />
+    <help name="2.4GHzChannels" lang="en" value="Specify channels(s) to use, separate by commas and/or as high/low pair(s) separated by dash" />
+    <help name="5.0GHzChannels" lang="en" value="Specify channels(s) to use, separate by commas and/or as high/low pair(s) separated by dash" />
+
+    <help name="WifiSleepPolicy" lang="en" value="Specify the Wi-Fi sleep policy to use" />
+    <help name="NetworkNotification" lang="en" value="Specify whether network notification should occur" />
+    <help name="WiFiAction" lang="en" value="Specify the Wi-Fi action to perform" />
+
+    <help name="ProtectPassword" lang="en" value="Specify whether the Password should be protected" />
+
+    <help name="UseAdvancedOptions" lang="en" value="Specify whether Advanced Options will be used" />
+    <help name="UseDiagnosticOptions" lang="en" value="Specify whether Diagnostic Options will be used" />
+    <help name="UseHotspot" lang="en" value="Specify whether Hotspot Options will be used" />
+    <help name="HotspotSSID" lang="en" value="Provide the SSID to use for Hotspot mode" />
+    <help name="HotspotAPChannel" lang="en" value="Provide the AP Channel to use for Hotspot mode" />
+    <help name="HotspotSecurityMode" lang="en" value="Specify the Security Mode to use for Hotspot mode" />
+    <help name="ProtectHotspotPassphrase" lang="en" value="Specify whether the Passphrase to use for Hotspot mode should be protected" />
+    <help name="HotspotPassphrase" lang="en" value="Provide the Passphrase to use for Hotspot mode" />
+    <help name="AutoTimeConfig" lang="en" value="Specify whether to set Device Time based on AP Time" />
+    <help name="ProfileRoaming" lang="en" value="Specify whether to enable roaming between Wi-Fi Profiles" />
+    <help name="HFSR" lang="en" value="Specify whether to enable HFSR (MOVE OP)" />
+    <help name="CCKM" lang="en" value="Specify whether to enable CCKM" />
+    <help name="FT" lang="en" value="Specify whether to enable Fast Transition (802.11r)" />
+    <help name="FTRIC" lang="en" value="Specify whether to enable FTRIC" />
+    <help name="OKC" lang="en" value="Specify whether to enable OKC" />
+    <help name="PMKID" lang="en" value="Specify whether to enable PMKID" />
+    <help name="PreAuth" lang="en" value="Specify whether to enable PreAuth" />
+    <help name="PowerSave" lang="en" value="Specify the Power Save mode" />
+    <help name="WLANPowerSave" lang="en" value="Specify the WLAN Power Save Mode (Deprecated):" />
+    <help name="FusionAdvancedLogging" lang="en" value="Specify whether to enable Fusion Advanced Logging" />
+    <help name="AdvancedLogging" lang="en" value="Specify whether to enable Advanced Logging" />
+    <help name="FIPS" lang="en" value="Specify whether to enable FIPS 140-2 Level 1 Compliance" />
+    <help name="EnableRestrictedSettingsUI" lang="en" value="Specify whether to restrict WLAN UI" />
+    <help name="802.11K" lang="en" value="Specify whether to enable Radio Resource Measurement" />
+    <help name="802.11w" lang="en" value="Specify the Management Frame Protection Mode" />
+    <help name="BandPreference" lang="en" value="Specify the band preference:" />
+    <help name="FTOverTheDS" lang="en" value="Specify whether to enable FTOverTheDS:" />
+    <help name="AggregatedFT" lang="en" value="Specify whether to enable AggregatedFT:" />
+    <help name="ScanAssist" lang="en" value="Specify whether to enable ScanAssist:" />
+    <help name="CHD" lang="en" value="Specify whether to enable Coverage Hole Detection:" />
+    <help name="SubNetRoam" lang="en" value="Specify whether to enable Sub-Net Roam:" />
+    <help name="WANCountry" lang="en" value="Specify whether to enable WanCountry:" />
+
+    <help name="NetworkAction" lang="en" value="Specify the network action to be performed" />
+    <help name="SSID" lang="en" value="Provide the SSID that identifies the network" />
+
+    <help name="SecurityMode" lang="en" value="Specify the security mode used by the network" />
+    <help name="WPAMode" lang="en" value="Specify the WPA mode used by the network" />
+    <help name="Authentication" lang="en" value="Specify the type of Authentication used by the network"  />
+    <help name="UseUserProfile" lang="en" value="Specify whether a User Profile will be used for the network" />
+    <help name="EnableCredPrompt" lang="en" value="Specify whether to Prompt for User Credentials" />
+    <help name="CredTimeout" lang="en" value="Provide the timeout when Prompting for User Credentials" />
+    <help name="UserProfMode" lang="en" value="Provide the User Profile Mode" />
+    <help name="Identity" lang="en" value="Provide the identity (i.e. user name, etc.) that should be used to join the network" />
+    <help name="Password" lang="en" value="Provide the Password that should be used to join the network" />
+    <help name="AnonymousIdentity" lang="en" value="Provide the anonymous identity that should be used to join the network" />
+    <help name="MandatoryServerCertificate" lang="en" value="Provide the name of the certificate that should be used to verify the server" />
+    <help name="OptionalServerCertificate" lang="en" value="Provide the name of the certificate that should be used to verify the server" />
+    <help name="MandatoryClientCertificate" lang="en" value="Provide the name of the certificate that should be used to join the network" />
+    <help name="OptionalClientCertificate" lang="en" value="Provide the name of the certificate that should be used to join the network" />
+
+    <help name="Encryption" lang="en"  value="Specify the Encryption Type used by the network" />
+    <help name="KeyType" lang="en" value="Specify whether the type of Encryption Key to be used by the network" />
+    <help name="ProtectKey" lang="en" value="Specify whether the Key should be protected" />
+    <help name="Passphrase" lang="en" value="Provide the Passphrase used by the network" />
+    <help name="HexKey" lang="en" value="Provide the hex key (64 hex chars) used by network" />
+    <help name="HexKeyWep40" lang="en" value="Provide the shared secret WEP-40 key (10 hex chars) used by the network" />
+    <help name="HexKeyWep104" lang="en" value="Provide the shared secret WEP-104 key (26 hex chars) used by the network" />
+    <help name="WepKeyIndex" lang="en" value="Provide the index (1-4) of the WEP key used by the network" />
+
+    <help name="UseDHCP" lang="en" value="Specify whether DHCP will be used to assign IP Addresses on the network" />
+    <help name="IpAddress" lang="en" value="Provide the static IP Address to be assigned to the device on the network" />
+    <help name="IpGateway1" lang="en" value="Provide the IP Address of the first Gateway to the network" />
+    <help name="IpGateway2" lang="en" value="Provide the IP Address of the second Gateway to the network" />
+    <help name="IpMask" lang="en" value="Provide the Subnet Mask to be used on the network" />
+    <help name="IpDns1" lang="en" value="Provide the IP Address of the first Gateway to the network" />
+    <help name="IpDns2" lang="en" value="Provide the IP Address of the second Gateway to the network" />
+
+    <help name="UseProxy" lang="en" value="Specify whether a Proxy will be used for the network" />
+    <help name="ProxyHostName" lang="en" value="Provide the Host Name of the Proxy Server" />
+    <help name="ProxyPort" lang="en" value="Provide the Port Number of the Proxy Server" />
+    <help name="BypassProxy" lang="en" value="Provide addresses for which the Proxy Server should be bypassed" />
+    <help name="ProxyPAC" lang="en" value="Provide address for automatic proxy config PAC file" />
+
+    <list name ="TargetOS" hint="radiobuttons" >
+        <item code="2" text="Android"  ui="Android" />
+    </list>
+
+    <list name ="Country" >
+        <item code="AUTO" text="AUTO" ui="AUTO (Use 802.11d)" />
+        <item code="DZ"   text="DZ"   ui="Algeria" />
+        <item code="AI"   text="AI"   ui="Anguilla" />
+        <item code="AR"   text="AR"   ui="Argentina" />
+        <item code="AU"   text="AU"   ui="Australia" />
+        <item code="AT"   text="AT"   ui="Austria" />
+        <item code="BS"   text="BS"   ui="Bahamas" />
+        <item code="BH"   text="BH"   ui="Bahrain" />
+        <item code="BB"   text="BB"   ui="Barbados" />
+        <item code="BY"   text="BY"   ui="Belarus" />
+        <item code="BE"   text="BE"   ui="Belgium" />
+        <item code="BM"   text="BM"   ui="Bermuda" />
+        <item code="BO"   text="BO"   ui="Bolivia" />
+        <item code="BQ"   text="BQ"   ui="Bonaire" />
+        <item code="BA"   text="BA"   ui="Bosnia and Herzegovina" />
+        <item code="BR"   text="BR"   ui="Brazil" />
+        <item code="BG"   text="BG"   ui="Bulgaria" />
+        <item code="CA"   text="CA"   ui="Canada" />
+        <item code="KY"   text="KY"   ui="Cayman Islands" />
+        <item code="CL"   text="CL"   ui="Chile" />
+        <item code="CN"   text="CN"   ui="China" />
+        <item code="CX"   text="CX"   ui="Christmas Island" />
+        <item code="CO"   text="CO"   ui="Columbia" />
+        <item code="CR"   text="CR"   ui="Costa Rica" />
+        <item code="HR"   text="HR"   ui="Croatia" />
+        <item code="CW"   text="CW"   ui="Curacao" />
+        <item code="CY"   text="CY"   ui="Cyprus" />
+        <item code="CA"   text="CZ"   ui="Czech Republic" />
+        <item code="DK"   text="DK"   ui="Denmark" />
+        <item code="DO"   text="DO"   ui="Dominican Republic" />
+        <item code="EC"   text="EC"   ui="Ecuador" />
+        <item code="EG"   text="EG"   ui="Egypt" />
+        <item code="SV"   text="SV"   ui="El Salvador" />
+        <item code="EE"   text="EE"   ui="Estonia" />
+        <item code="FK"   text="FK"   ui="Falkland Islands(Malvinas)" />
+        <item code="FI"   text="FI"   ui="Finland" />
+        <item code="FR"   text="FR"   ui="France" />
+        <item code="GF"   text="GF"   ui="French Guiana" />
+        <item code="DE"   text="DE"   ui="Germany" />
+        <item code="GR"   text="GR"   ui="Greece" />
+        <item code="GP"   text="GP"   ui="Guadelope" />
+        <item code="GU"   text="GU"   ui="Guam" />
+        <item code="GT"   text="GT"   ui="Guatemala" />
+        <item code="GY"   text="GY"   ui="Guyana" />
+        <item code="HT"   text="HT"   ui="Haiti" />
+        <item code="HN"   text="HN"   ui="Honduras" />
+        <item code="HK"   text="HK"   ui="HongKong" />
+        <item code="HU"   text="HU"   ui="Hungary" />
+        <item code="IS"   text="IS"   ui="Iceland" />
+        <item code="IN"   text="IN"   ui="India" />
+        <item code="ID"   text="ID"   ui="Indonesia" />
+        <item code="IE"   text="IE"   ui="Ireland" />
+        <item code="IL"   text="IL"   ui="Israel" />
+        <item code="IT"   text="IT"   ui="Italy" />
+        <item code="JM"   text="JM"   ui="Jamaica" />
+        <item code="JP"   text="JP"   ui="Japan" />
+        <item code="JO"   text="JO"   ui="Jordan" />
+        <item code="KZ"   text="KZ"   ui="Kazakhstan" />
+        <item code="KE"   text="KE"   ui="Kenya" />
+        <item code="KR"   text="KR"   ui="Korea Republic" />
+        <item code="KW"   text="KW"   ui="Kuwait" />
+        <item code="LV"   text="LV"   ui="Latvia" />
+        <item code="LB"   text="LB"   ui="Lebanon" />
+        <item code="LI"   text="LI"   ui="Liechtenstein" />
+        <item code="LT"   text="LT"   ui="Lithuania" />
+        <item code="LU"   text="LU"   ui="Luxembourg" />
+        <item code="MK"   text="MK"   ui="Macedonia, Former Yugoslav Republic" />
+        <item code="MY"   text="MY"   ui="Malaysia" />
+        <item code="MT"   text="MT"   ui="Malta" />
+        <item code="MQ"   text="MQ"   ui="Martinique" />
+        <item code="MX"   text="MX"   ui="Mexico" />
+        <item code="ME"   text="ME"   ui="Montenegro" />
+        <item code="MA"   text="MA"   ui="Morocco" />
+        <item code="AN"   text="AN"   ui="Netherlands, Antilles" />
+        <item code="NL"   text="NL"   ui="Netherlands" />
+        <item code="NZ"   text="NZ"   ui="NewZeaLand" />
+        <item code="NI"   text="NI"   ui="Nicaragua" />
+        <item code="NG"   text="NG"   ui="Nigeria" />
+        <item code="NU"   text="NU"   ui="Niue" />
+        <item code="NF"   text="NF"   ui="Norfolk Islands" />
+        <item code="MP"   text="MP"   ui="Northern Marina Islands" />
+        <item code="NO"   text="NO"   ui="Norway" />
+        <item code="OM"   text="OM"   ui="Oman" />
+        <item code="PK"   text="PK"   ui="Pakistan" />
+        <item code="PA"   text="PA"   ui="Panama" />
+        <item code="PY"   text="PY"   ui="Paraguay" />
+        <item code="PE"   text="PE"   ui="Peru" />
+        <item code="PH"   text="PH"   ui="Philippines" />
+        <item code="PL"   text="PL"   ui="Poland" />
+        <item code="PT"   text="PT"   ui="Portugal" />
+        <item code="PR"   text="PR"   ui="Puerto Rico" />
+        <item code="QA"   text="QA"   ui="Qatar" />
+        <item code="RO"   text="RO"   ui="Romania" />
+        <item code="RU"   text="RU"   ui="Russian Federation" />
+        <item code="SX"   text="SX"   ui="St. Maarten" />
+        <item code="SA"   text="SA"   ui="Saudi Arabia" />
+        <item code="RS"   text="RS"   ui="Serbia" />
+        <item code="SG"   text="SG"   ui="Singapore" />
+        <item code="SK"   text="SK"   ui="Slovakia" />
+        <item code="SI"   text="SI"   ui="Slovenia" />
+        <item code="ZA"   text="ZA"   ui="South Africa" />
+        <item code="ES"   text="ES"   ui="Spain" />
+        <item code="LK"   text="LK"   ui="Sri Lanka" />
+        <item code="SE"   text="SE"   ui="Sweden" />
+        <item code="CH"   text="CH"   ui="Switzerland" />
+        <item code="TW"   text="TW"   ui="Taiwan, Province of China" />
+        <item code="TH"   text="TH"   ui="Thailand" />
+        <item code="TT"   text="TT"   ui="Trinidad and Tobago" />
+        <item code="TN"   text="TN"   ui="Tunisia" />
+        <item code="TR"   text="TR"   ui="Turkey" />
+        <item code="UA"   text="UA"   ui="Ukraine" />
+        <item code="AE"   text="AE"   ui="United Arab Emirates" />
+        <item code="GB"   text="GB"   ui="United Kingdom" />
+        <item code="US"   text="US"   ui="U.S.A." />
+        <item code="UY"   text="UY"   ui="Uruguay" />
+        <item code="VE"   text="VE"   ui="Venezuela" />
+        <item code="VN"   text="VN"   ui="Vietnam" />
+        <item code="VG"   text="VG"   ui="Virgin Islands(British)" />
+        <item code="VI"   text="VI"   ui="Virgin Islands(US)" />
+    </list>
+
+    <list  name ="BandSelection" >
+        <item code="0" ui="Unchanged" text="" />
+        <item code="1" ui="2.4GHz"    text="2.4GHz" />
+        <item code="2" ui="5.0GHz"    text="5.0GHz" />
+        <item code="3" ui="Auto"       text="Auto" />
+    </list>
+
+    <list  name ="WifiSleepPolicy" >
+        <item code="4" text=""          ui="Do not change" />
+        <item code="0" text="AlwaysOn"  ui="Never Sleep" />
+        <item code="1" text="PluggedIn" ui="Never Sleep When Plugged" />
+        <item code="2" text="NeverOn"   ui="Always Sleep" />
+    </list>
+
+    <list  name ="NetworkNotification" >
+        <item code="2" text=""      ui="Do not change" />
+        <item code="1" text="true"  ui="Use network notification" />
+        <item code="0" text="false" ui="Do not use network notification" />
+    </list>
+
+    <list  name ="WiFiAction" >
+        <item code="0" ui="Do not change" text="" />
+        <item code="1" ui="Enable"        text="enable" />
+        <item code="2" ui="Disable"       text="disable" />
+    </list>
+
+    <list  name ="HotspotSecurityMode" >
+        <item code="0" text="Open" />
+        <item code="1" text="WPA2/PSK" />
+    </list>
+
+    <list  name ="PowerSave" >
+        <item code="0" ui="Do not change"                               text="" />
+        <item code="1" ui="Always Active"                               text="Active" />
+        <item code="2" ui="Fast Power Save (Deprecated)"                text="FPS" />
+        <item code="3" ui="Max Power Save (Deprecated)"                 text="MPS" />
+        <item code="4" ui="WMM-PS"                                      text="WMM-PS" />
+        <item code="5" ui="Null Data Power Save"                        text="NDP" />
+        <item code="6" ui="PS-POLL"                                     text="PS-POLL " />
+    </list>
+
+    <list  name ="WLANPowerSave" >
+        <item code="0" ui="WMM-PS"                text="WMM-PS" />
+        <item code="1" ui="Null Data Power Save"  text="NDP" />
+        <item code="2" ui="PS-POLL"               text="PS-POLL " />
+        <item code="3" ui="Do not change"         text="" />
+    </list>
+
+    <list  name ="EnableRestrictedSettingsUI" >
+        <item code="0" ui="Do not change"                        text="" />
+        <item code="1" ui="Disable Restricted WLAN Settings UI"  text="0" />
+        <item code="2" ui="Enable Restricted WLAN Settings UI"   text="1" />
+    </list>
+
+    <list  name ="BandPreference" >
+        <item code="0" ui="No Preference"         text="Band Preference disabled" />
+        <item code="1" ui="Prefer 2.4GHz"         text="2.4GHz" />
+        <item code="2" ui="Prefer 5.0GHz"         text="5.0GHz " />
+        <item code="3" ui="Do not change"         text="" />
+    </list>
+
+    <list  name ="802.11w" >
+        <item code="0" ui="No MFP"                text="Disable" />
+        <item code="1" ui="Capable"               text="Capable" />
+        <item code="2" ui="Mandatory"             text="Mandatory" />
+        <item code="3" ui="Do not change"         text="" />
+    </list>
+
+    <list  name ="NetworkAction" >
+        <item code="0" text=""           ui="Do Nothing" />
+        <item code="1" text="Add"        ui="Add a New Network" />
+        <item code="2" text="Remove"     ui="Remove an Existing Network" />
+        <item code="3" text="Connect"    ui="Connect to an Existing Network" />
+        <item code="4" text="Disconnect" ui="Disconnect from an Existing Network" />
+        <item code="5" text="Enable"     ui="Enable an Existing Network" />
+        <item code="6" text="Disable"    ui="Disable an Existing Network" />
+        <item code="7" text="DisableAll" ui="Disable All Existing Networks" />
+        <item code="8" text="RemoveAll"  ui="Remove All Existing Networks" />
+    </list>
+
+    <list name="SecurityMode" >
+        <item code="0" text="Open" />
+        <item code="1" text="Personal" />
+        <item code="2" text="Enterprise" />
+    </list>
+
+    <list name="UseProxy" >
+        <item code="0" text="None" />
+        <item code="1" text="Manual" />
+        <item code="3" text="Proxy Auto-Config" />
+    </list>
+
+    <list name="WPAMode" >
+        <item code="1"  text="WPA" />
+        <item code="2"  text="WPA2" />
+        <item code="3"  text="WPA/WPA2" />
+        <item code="4"  text="WEP" />
+    </list>
+
+    <list name="EncryptionWPA" >
+        <item code="0" text="Default"       ui="Do not change" />
+        <item code="1" text="TKIP"          ui="TKIP" />
+    </list>
+
+    <list name="EncryptionWPA2" >
+        <item code="0" text="Default"       ui="Do not change" />
+        <item code="1" text="AES-CCMP"      ui="AES-CCMP" />
+        <item code="2" text="TKIP"          ui="TKIP" />
+        <item code="3" text="AES-CCMP/TKIP" ui="AES-CCMP/TKIP" />
+    </list>
+
+    <list name="EncryptionWEP" >
+        <item code="1" text="WEP-40"  ui="WEP-40" />
+        <item code="2" text="WEP-104" ui="WEP-104" />
+    </list>
+
+    <list name="KeyType" >
+        <item code="1" text="HexKey"     ui="Hex Key" />
+        <item code="2" text="Passphrase" ui="Passphrase" />
+    </list>
+
+    <list name="Authentication" >
+        <item code="1"  text="EAP-TLS" />
+        <item code="2"  text="PEAP-MSCHAPV2" />
+        <item code="4"  text="LEAP" />
+        <item code="6"  text="EAP-TTLS-MSCHAP" />
+        <item code="7"  text="EAP-TTLS-MSCHAPV2" />
+        <item code="8"  text="EAP-TTLS-PAP" />
+        <item code="10" text="PEAP-GTC" />
+        <item code="11" text="EAP-FAST-MSCHAPV2" />
+        <item code="13" text="EAP-FAST-GTC" />
+        <item code="14" text="PEAP-NONE" />
+    </list>
+
+    <list name="WepKeyIndex" >
+        <item code="1" text="wep[0]" />
+        <item code="2" text="wep[1]" />
+        <item code="3" text="wep[2]" />
+        <item code="4" text="wep[3]" />
+    </list>
+
+    <encode code="10" name="TargetOS" codesize="1" method="integer" datasize="1" />
+
+    <encode code="11" name="UseRegulatory" codesize="1" method="boolean" />
+    <encode code="12" name="Country" codesize="1" method="string" />
+
+    <encode code="21" name="BandSelection" codesize="1" method="integer" datasize="1" />
+    <encode code="22" name="2.4GHzChannels" codesize="1" method="string" />
+    <encode code="23" name="5.0GHzChannels" codesize="1" method="string" />
+
+    <encode code="31" name="WifiSleepPolicy" codesize="1" method="integer" datasize="1" />
+    <encode code="32" name="NetworkNotification" codesize="1" method="integer" datasize="1" />
+    <encode code="33" name="WiFiAction" codesize="1" method="integer" datasize="1" />
+
+    <encode code="40" name="UseAdvancedOptions" codesize="1" method="boolean" />
+    <encode code="41" name="UseHotspot" codesize="1" method="boolean" />
+    <encode code="42" name="HotspotSSID" codesize="1" method="string" />
+    <encode code="43" name="HotspotAPChannel" codesize="1" method="integer" datasize="1" />
+    <encode code="44" name="HotspotSecurityMode" codesize="1" method="integer" datasize="1" />
+    <encode code="45" name="ProtectHotspotPassphrase" codesize="1" method="boolean"/>
+    <encode code="46" name="HotspotPassphraseClear" codesize="1" method="string"/>
+    <encode code="47" name="HotspotPassphraseEncrypted" codesize="1" method="string"/>
+    <encode code="48" name="UseDiagnosticOptions" codesize="1" method="boolean" />
+
+    <encode code="51" name="AutoTimeConfig" codesize="1" method="boolean" />
+    <encode code="52" name="ProfileRoaming" codesize="1" method="boolean" />
+    <encode code="53" name="HFSR" codesize="1" method="boolean" />
+    <encode code="54" name="CCKM" codesize="1" method="boolean" />
+    <encode code="55" name="FT" codesize="1" method="boolean" />
+    <encode code="56" name="FTRIC" codesize="1" method="boolean" />
+    <encode code="57" name="OKC" codesize="1" method="boolean" />
+    <encode code="58" name="PMKID" codesize="1" method="boolean" />
+    <encode code="59" name="PreAuth" codesize="1" method="boolean" />
+    <encode code="60" name="PowerSave" codesize="1" method="integer" datasize="1" />
+    <encode code="66" name="WLANPowerSave" codesize="1" method="integer" datasize="1" />
+    <encode code="61" name="FusionAdvancedLogging" codesize="1" method="boolean" />
+    <encode code="62" name="FIPS" codesize="1" method="boolean" />
+    <encode code="63" name="EnableRestrictedSettingsUI" codesize="1" method="string" />
+    <encode code="64" name="802.11K" codesize="1" method="boolean" />
+    <encode code="65" name="BandPreference" codesize="1" method="integer" datasize="1" />
+    <encode code="67" name="802.11w" codesize="1" method="integer" datasize="1" />
+    <encode code="68" name="FTOverTheDS" codesize="1" method="boolean" />
+    <encode code="69" name="AggregatedFT" codesize="1" method="boolean" />
+    <encode code="70" name="ScanAssist" codesize="1" method="boolean" />
+    <encode code="71" name="CHD" codesize="1" method="boolean" />
+    <encode code="72" name="SubNetRoam" codesize="1" method="boolean" />
+    <encode code="73" name="WANCountry" codesize="1" method="boolean" />
+    <encode code="74" name="AdvancedLogging" codesize="1" method="boolean" />
+
+    <encode code="101" name="NetworkAction" codesize="1" method="integer" datasize="1" />
+    <encode code="102" name="SSID" codesize="1" method="string" />
+
+    <encode code="111" name="SecurityMode" codesize="1" method="integer" datasize="1" />
+    <encode code="112" name="WPAMode" codesize="1" method="integer" datasize="1" />
+    <encode code="113" name="Authentication" codesize="1" method="integer" datasize="1" />
+
+    <encode code="121" name="UseUserProfile" codesize="1" method="boolean" />
+    <encode code="122" name="EnableCredPrompt" codesize="1" method="boolean" />
+    <encode code="123" name="CredTimeout" codesize="1" method="integer" datasize="2" />
+    <encode code="124" name="UserProfMode" codesize="1" method="integer" datasize="1" />
+    <encode code="125" name="Identity" codesize="1" method="string" />
+    <encode code="126" name="ProtectPassword" codesize="1" method="boolean" />
+    <encode code="127" name="PasswordClear" codesize="1" method="string" />
+    <encode code="128" name="PasswordEncrypted" codesize="1" method="string" />
+    <encode code="129" name="AnonymousIdentity" codesize="1" method="string" />
+    <encode code="130" name="MandatoryServerCertificate" codesize="1" method="string" />
+    <encode code="131" name="OptionalServerCertificate" codesize="1" method="string" />
+    <encode code="132" name="MandatoryClientCertificate" codesize="1" method="string" />
+    <encode code="133" name="OptionalClientCertificate" codesize="1" method="string" />
+
+    <encode code="141" name="EncryptionWPA" codesize="1" method="integer" datasize="1" />
+    <encode code="142" name="EncryptionWPA2" codesize="1" method="integer" datasize="1" />
+    <encode code="143" name="EncryptionWEP" codesize="1" method="integer" datasize="1" />
+
+    <encode code="151" name="KeyType" codesize="1" method="integer" datasize="1" />
+    <encode code="152" name="ProtectKey" codesize="1" method="boolean" />
+
+    <encode code="161" name="PassphraseWEPClear" codesize="1" method="string" />
+    <encode code="162" name="PassphraseWEPEncrypted" codesize="1" method="string" />
+    <encode code="163" name="PassphraseWPAClear" codesize="1" method="string" />
+    <encode code="164" name="PassphraseWPAEncrypted" codesize="1" method="string" />
+
+    <encode code="171" name="HexKeyClear" codesize="1" method="string" />
+    <encode code="172" name="HexKeyEncrypted" codesize="1" method="string" />
+    <encode code="173" name="HexKeyWep40Clear" codesize="1" method="string" />
+    <encode code="174" name="HexKeyWep40Encrypted" codesize="1" method="string" />
+    <encode code="175" name="HexKeyWep104Clear" codesize="1" method="string" />
+    <encode code="176" name="HexKeyWep104Encrypted" codesize="1" method="string" />
+    <encode code="177" name="WepKeyIndex" codesize="1" method="integer" datasize="1" />
+
+    <encode code="181" name="UseDHCP" codesize="1" method="boolean" />
+    <encode code="182" name="IpAddress" codesize="1" method="ipv4" />
+    <encode code="183" name="IpGateway1" codesize="1" method="ipv4" />
+    <encode code="184" name="IpGateway2" codesize="1" method="ipv4" />
+    <encode code="185" name="IpMask" codesize="1" method="ipv4" />
+    <encode code="186" name="IpDns1" codesize="1" method="ipv4" />
+    <encode code="187" name="IpDns2" codesize="1" method="ipv4" />
+
+    <encode code="191" name="UseProxy" codesize="1" method="integer" datasize="1"/>
+    <encode code="192" name="ProxyHostName" codesize="1" method="string" />
+    <encode code="193" name="ProxyPort" codesize="1" method="integer" datasize="2" />
+    <encode code="194" name="BypassProxy" codesize="1" method="string" />
+    <encode code="195" name="ProxyPAC" codesize="1" method="string" />
+
+    <characteristic  type="Wi-Fi" doc="Manage Wi-Fi configuration" >
+
+        <parm name="TargetOS"
+            promptref="TargetOS"
+            default="[.code]='2'"
+            helpref="TargetOS"
+            listref="TargetOS"
+            encoderef="TargetOS"
+            doc="Supported OSes are:"
+            skipif="[.code] in (2)"
+        />
+
+        <characteristic type ="System" doc="Wi-Fi System settings" >
+
+            <parm name="WiFiAction"
+                promptref="WiFiAction"
+                value="[.text]"
+                helpref="WiFiAction"
+                listref="WiFiAction"
+                encoderef="WiFiAction"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+            <parm name="WifiSleepPolicy"
+                promptref="WifiSleepPolicy"
+                default="[.code]='4'"
+                value="[.text]"
+                helpref="WifiSleepPolicy"
+                listref="WifiSleepPolicy"
+                encoderef="WifiSleepPolicy"
+                skipif="[.code]=='4'"
+                doc="Supported selections are:"
+            />
+
+            <parm name="NetworkNotification"
+                promptref="NetworkNotification"
+                value="[.text]"
+                helpref="NetworkNotification"
+                listref="NetworkNotification"
+                encoderef="NetworkNotification"
+                skipif="[.code]=='2'"
+                doc="Supported selections are:"
+            />
+
+        </characteristic>
+
+        <parm name="UseRegulatory"
+            datatype="Boolean"
+            default="[.code]='0'"
+            promptref="UseRegulatory"
+            helpref="UseRegulatory"
+            encoderef="UseRegulatory"
+            doc="Supported values are:"
+        />
+
+        <characteristic type="Regulatory"
+            presentif="[UseRegulatory.code] not in (0)"
+            doc="Manage Wi-Fi Regulatory settings"
+        >
+            <parm name="Country"
+                promptref="Country"
+                helpref="Country"
+                listref="Country"
+                encoderef="Country"
+                doc="Supported country codes are:"
+            />
+
+        </characteristic>
+
+        <characteristic type="Radio"
+            doc="Manage Wi-Fi Radio-specific settings"
+        >
+
+            <parm name="BandSelection"
+                promptref="BandSelection"
+                value="[.text]"
+                helpref="BandSelection"
+                listref="BandSelection"
+                encoderef="BandSelection"
+                skipif="[.code]=='0'"
+                doc="Supported selections are:"
+            />
+
+            <characteristic type ="ChannelSelection" doc="Manage Wi-Fi Channel-specific Settings"
+                presentif="[BandSelection.code] not in (0)"
+            >
+
+                <parm name="2.4GHzChannels"
+                    presentif="[BandSelection.code] in (1,3)"
+                    promptref="2.4GHzChannels"
+                    datatype="String"
+                    minsize="0"
+                    maxsize="64"
+                    helpref="2.4GHzChannels"
+                    encoderef="2.4GHzChannels"
+                    doc="Example: 3,6,7-9,11-13   String length must be:"
+                />
+
+                <parm name="5.0GHzChannels"
+                    presentif="[BandSelection.code] in (2,3)"
+                    promptref="5.0GHzChannels"
+                    datatype="String"
+                    minsize="0"
+                    maxsize="64"
+                    helpref="5.0GHzChannels"
+                    encoderef="5.0GHzChannels"
+                    doc="Example: 3,6,7-9,11-13   String length must be:"
+                />
+
+            </characteristic>
+
+        </characteristic>
+
+        <parm name="UseDiagnosticOptions"
+            datatype="Boolean"
+            default="[.code]='0'"
+            promptref="UseDiagnosticOptions"
+            helpref="UseDiagnosticOptions"
+            encoderef="UseDiagnosticOptions"
+            doc="Supported values are:"
+        />
+
+        <characteristic type ="DiagnosticOptions" doc="Wi-Fi Advanced Options Without Radio Cycle"
+            presentif="[UseDiagnosticOptions.code] not in (0)"
+        >
+
+            <parm name="FusionAdvancedLogging"
+                    promptref="FusionAdvancedLogging"
+                    datatype="Boolean"
+                    value="[.code]"
+                    helpref="FusionAdvancedLogging"
+                    encoderef="FusionAdvancedLogging"
+                    default="[.code]='0'"
+                />
+
+        </characteristic>
+
+        <parm name="UseAdvancedOptions"
+            datatype="Boolean"
+            default="[.code]='0'"
+            promptref="UseAdvancedOptions"
+            helpref="UseAdvancedOptions"
+            encoderef="UseAdvancedOptions"
+            doc="Supported values are:"
+        />
+
+
+
+        <characteristic type ="AdvancedOptions" doc="Wi-Fi Advanced Options"
+            presentif="[UseAdvancedOptions.code] not in (0)"
+            indent ="1"
+        >
+
+
+            <characteristic type ="Hotspot" doc="Wi-Fi Advanced Options - Hotspot settings"
+                presentif="[UseAdvancedOptions.code] not in (0,1)"
+            >
+
+                <parm name="HotspotSSID"
+                    promptref="HotspotSSID"
+                    datatype="String"
+                    helpref="HotspotSSID"
+                    encoderef="HotspotSSID"
+                    minsize="1"
+                    maxsize="32"
+                    doc="String length must be:"
+                />
+
+                <parm name="HotspotAPChannel"
+                    promptref="HotspotAPChannel"
+                    datatype="Integer"
+                    default="[.text]='1'"
+                    mininteger="1"
+                    maxinteger="11"
+                    helpref="HotspotAPChannel"
+                    encoderef="HotspotAPChannel"
+                />
+
+                <parm name="HotspotSecurityMode"
+                    promptref="HotspotSecurityMode"
+                    datatype="Integer"
+                    listref="HotspotSecurityMode"
+                    helpref="HotspotSecurityMode"
+                    encoderef="HotspotSecurityMode"
+                />
+
+                <parm name="ProtectHotspotPassphrase"
+                    presentif="[HotspotSecurityMode.code] in (1)"
+                    datatype ="Boolean"
+                    promptref="ProtectHotspotPassphrase"
+                    helpref="ProtectHotspotPassphrase"
+                    encoderef="ProtectHotspotPassphrase"
+                />
+
+                <parm name="HotspotPassphraseClear"
+                    presentif="[HotspotSecurityMode.code] in (1) and [ProtectHotspotPassphrase.code] in (0)"
+                    promptref="HotspotPassphrase"
+                    datatype="String"
+                    helpref="HotspotPassphrase"
+                    encoderef="HotspotPassphraseClear"
+                    encrypt="0"
+                    minsize="1"
+                    maxsize="32"
+                    doc="String length must be:"
+                />
+
+                <parm name="HotspotPassphraseEncrypted"
+                    presentif="[HotspotSecurityMode.code] in (1) and [ProtectHotspotPassphrase.code] in (1)"
+                    promptref="HotspotPassphrase"
+                    datatype="String"
+                    helpref="HotspotPassphrase"
+                    encoderef="HotspotPassphraseEncrypted"
+                    encrypt="1"
+                    minsize="1"
+                    maxsize="32"
+                    doc="String length must be:"
+                />
+
+            </characteristic>
+
+            <parm name="AutoTimeConfig"
+                promptref="AutoTimeConfig"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="AutoTimeConfig"
+                encoderef="AutoTimeConfig"
+                default="[.code]='0'"
+            />
+
+            <parm name="ProfileRoaming"
+                promptref="ProfileRoaming"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="ProfileRoaming"
+                encoderef="ProfileRoaming"
+                presentif="[TargetOS.code] in (1)"
+            />
+
+            <parm name="HFSR"
+                promptref="HFSR"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="HFSR"
+                encoderef="HFSR"
+                default="[.code]='1'"
+            />
+
+            <parm name="CCKM"
+                promptref="CCKM"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="CCKM"
+                encoderef="CCKM"
+                default="[.code]='1'"
+            />
+
+            <parm name="FT"
+                promptref="FT"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="FT"
+                encoderef="FT"
+                default="[.code]='1'"
+            />
+
+            <parm name="FTRIC"
+                promptref="FTRIC"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="FTRIC"
+                encoderef="FTRIC"
+                default="[.code]='0'"
+            />
+
+            <parm name="OKC"
+                promptref="OKC"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="OKC"
+                encoderef="OKC"
+                default="[.code]='1'"
+            />
+
+            <parm name="PMKID"
+                promptref="PMKID"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="PMKID"
+                encoderef="PMKID"
+                default="[.code]='1'"
+            />
+
+            <parm name="PreAuth"
+                promptref="PreAuth"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="PreAuth"
+                encoderef="PreAuth"
+                default="[.code]='0'"
+            />
+
+            <parm name="PowerSave"
+                promptref="PowerSave"
+                datatype="Integer"
+                value="[.code]"
+                helpref="PowerSave"
+                encoderef="PowerSave"
+                listref="PowerSave"
+                skipif="[.code]=='0'"
+                default="[.code]='0'"
+                doc="Supported modes are:"
+            />
+
+            <parm name="WLANPowerSave"
+                promptref="WLANPowerSave"
+                datatype="Integer"
+                value="[.code]"
+                helpref="WLANPowerSave"
+                encoderef="WLANPowerSave"
+                listref="WLANPowerSave"
+                skipif="[.code]=='3'"
+                default="[.code]='3'"
+                doc="Supported modes are:"
+            />
+
+            <parm name="AdvancedLogging"
+                promptref="AdvancedLogging"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="AdvancedLogging"
+                encoderef="AdvancedLogging"
+                default="[.code]='0'"
+            />
+
+            <parm name="FIPS"
+                promptref="FIPS"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="FIPS"
+                encoderef="FIPS"
+                default="[.code]='0'"
+            />
+
+            <parm name="EnableRestrictedSettingsUI"
+                promptref="EnableRestrictedSettingsUI"
+                datatype="String"
+                value="[.text]"
+                helpref="EnableRestrictedSettingsUI"
+                encoderef="EnableRestrictedSettingsUI"
+                listref="EnableRestrictedSettingsUI"
+                skipif="[.code]=='0'"
+                doc="Supported types are:"
+                default="[.code]='0'"
+            />
+
+            <parm name="802.11K"
+                promptref="802.11K"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="802.11K"
+                encoderef="802.11K"
+                default="[.code]='0'"
+            />
+
+            <parm name="802.11w"
+                promptref="802.11w"
+                datatype="Integer"
+                value="[.code]"
+                helpref="802.11w"
+                encoderef="802.11w"
+                listref="802.11w"
+                skipif="[.code]=='3'"
+                default="[.code]='3'"
+                doc="Supported modes are:"
+            />
+
+            <parm name="BandPreference"
+                promptref="BandPreference"
+                datatype="Integer"
+                value="[.code]"
+                helpref="BandPreference"
+                encoderef="BandPreference"
+                listref="BandPreference"
+                skipif="[.code]=='3'"
+                default="[.code]='3'"
+                doc="Supported modes are:"
+            />
+
+            <parm name="FTOverTheDS"
+                promptref="FTOverTheDS"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="FTOverTheDS"
+                encoderef="FTOverTheDS"
+                default="[.code]='0'"
+            />
+
+            <parm name="AggregatedFT"
+                promptref="AggregatedFT"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="AggregatedFT"
+                encoderef="AggregatedFT"
+                default="[.code]='0'"
+            />
+
+            <parm name="ScanAssist"
+                promptref="ScanAssist"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="ScanAssist"
+                encoderef="ScanAssist"
+                default="[.code]='0'"
+            />
+
+            <parm name="CHD"
+                promptref="CHD"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="CHD"
+                encoderef="CHD"
+                default="[.code]='0'"
+            />
+
+            <parm name="SubNetRoam"
+                promptref="SubNetRoam"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="SubNetRoam"
+                encoderef="SubNetRoam"
+                default="[.code]='1'"
+            />
+
+            <parm name="WANCountry"
+                promptref="WANCountry"
+                datatype="Boolean"
+                value="[.code]"
+                helpref="WANCountry"
+                encoderef="WANCountry"
+                default="[.code]='0'"
+            />
+
+        </characteristic>
+
+        <parm name="NetworkAction"
+            default="[.code]='0'"
+            promptref="NetworkAction"
+            value="[.text]"
+            helpref="NetworkAction"
+            listref="NetworkAction"
+            encoderef="NetworkAction"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <characteristic type ="network-profile" doc="Manage Wi-Fi Profiles"
+            presentif="[NetworkAction.code] not in (0)"
+        >
+
+            <parm name="SSID"
+                presentif="[NetworkAction.code] not in (0,7,8)"
+                datatype="String"
+                promptref="SSID"
+                helpref="SSID"
+                encoderef="SSID"
+                minsize="1"
+                maxsize="32"
+                doc="String length must be:"
+            />
+
+            <parm name="SecurityMode"
+                presentif="[NetworkAction.code] in (1)"
+                datatype="Integer"
+                promptref="SecurityMode"
+                helpref ="SecurityMode"
+                listref="SecurityMode"
+                encoderef="SecurityMode"
+                doc="Supported modes are:"
+            />
+
+            <parm name="WPAMode"
+                presentif="[NetworkAction.code] in (1) and [SecurityMode.code] in (1,2)"
+                datatype="Integer"
+                promptref="WPAMode"
+                helpref ="WPAMode"
+                listref="WPAMode"
+                encoderef="WPAMode"
+                doc="Supported modes are:"
+            />
+
+            <parm name="Authentication"
+                presentif="[NetworkAction.code] in (1) and [SecurityMode.code] in (2)"
+                promptref="Authentication"
+                helpref="Authentication"
+                listref="Authentication"
+                encoderef="Authentication"
+                doc="Supported modes are:"
+            />
+
+            <characteristic type="auth-details" doc="Authentication details"
+                presentif="[NetworkAction.code] in (1) and [SecurityMode.code] in (2) and [Authentication.code] not in (0)"
+                indent ="1"
+            >
+
+                <parm name="UseUserProfile"
+                    presentif="[TargetOS.code] in (1) and [NetworkAction.code] in (1)"
+                    datatype="Boolean"
+                    default="[.code]='0'"
+                    promptref="UseUserProfile"
+                    helpref="UseUserProfile"
+                    encoderef="UseUserProfile"
+                    doc="Supported values are:"
+                />
+
+                <characteristic type="user-profile" doc="User Profile"
+                    presentif="[TargetOS.code] in (1) and [NetworkAction.code] in (1) and [UseUserProfile.code] in (1)"
+                    indent="1"
+                >
+
+                    <parm name="EnableCredPrompt"
+                        promptref="EnableCredPrompt"
+                        datatype="Boolean"
+                        helpref="EnableCredPrompt"
+                        encoderef="EnableCredPrompt"
+                        doc="Supported values are:"
+                    />
+
+                    <parm name="CredTimeout"
+                        promptref="CredTimeout"
+                        datatype="Integer"
+                        helpref="CredTimeout"
+                        encoderef="CredTimeout"
+                    />
+
+                    <parm name="UserProfMode"
+                        promptref="UserProfMode"
+                        datatype="Integer"
+                        helpref="UserProfMode"
+                        encoderef="UserProfMode"
+                    />
+
+                </characteristic>
+
+                <characteristic type="encryption-details" doc="Encryption details"
+                    presentif="[NetworkAction.code] in (1) and [SecurityMode.code] in (1,2)"
+                    indent="1"
+                >
+
+                    <parm name="EncryptionWPA"
+                        presentif="[WPAMode.code] in (1)"
+                        promptref ="Encryption"
+                        listref ="EncryptionWPA"
+                        helpref="Encryption"
+                        encoderef="EncryptionWPA"
+                        skipif="[.code]=='0'"
+                        doc="Supported encryption types are:"
+                    />
+
+                    <parm name="EncryptionWPA2"
+                        presentif="[WPAMode.code] in (2,3)"
+                        promptref ="Encryption"
+                        listref ="EncryptionWPA2"
+                        helpref="Encryption"
+                        encoderef="EncryptionWPA2"
+                        skipif="[.code]=='0'"
+                        doc="Supported encryption types are:"
+                    />
+
+                    <parm name="EncryptionWEP"
+                        presentif="[WPAMode.code] in (4)"
+                        promptref ="Encryption"
+                        listref ="EncryptionWEP"
+                        helpref="Encryption"
+                        encoderef="EncryptionWEP"
+                        skipif="[.code]=='0'"
+                        doc="Supported encryption types are:"
+                    />
+
+                </characteristic>
+
+                <characteristic type="user-credentials" doc="User Credentials"
+                    presentif="[NetworkAction.code] in (1) and [SecurityMode.code] in (2) and ( ( [TargetOS.code] in (1) and [UseUserProfile.code] in (0) ) or [TargetOS.code] in (2,3) ) "
+                    indent="1"
+                >
+                    <parm name="Identity"
+                        presentif="[Authentication.code] in (1:14)"
+                        datatype ="String"
+                        minsize="0"
+                        maxsize="64"
+                        promptref="Identity"
+                        encoderef="Identity"
+                        skipif="[.text]==''"
+                        helpref="Identity"
+                        doc="String length must be:"
+                    />
+
+                    <parm name="AnonymousIdentity"
+                        presentif="[Authentication.code] not in (1,4)"
+                        datatype ="String"
+                        minsize="1"
+                        maxsize="64"
+                        promptref="AnonymousIdentity"
+                        encoderef="AnonymousIdentity"
+                        skipif="[.text]==''"
+                        helpref="AnonymousIdentity"
+                        doc="String length must be:"
+                    />
+
+                    <parm name="ProtectPassword"
+                        presentif ="[Authentication.code] not in (1,3,12)"
+                        datatype ="Boolean"
+                        promptref="ProtectPassword"
+                        helpref="ProtectPassword"
+                        encoderef="ProtectPassword"
+                    />
+
+                    <parm name="PasswordClear"
+                        presentif="[Authentication.code] not in (1,3,12) and [ProtectPassword.code] in (0)"
+                        datatype ="String"
+                        minsize="1"
+                        maxsize="64"
+                        promptref="Password"
+                        encoderef="PasswordClear"
+                        encrypt="0"
+                        doc="String length must be:"
+                    />
+
+                    <parm name="PasswordEncrypted"
+                        presentif="[Authentication.code] not in (1,3,12) and [ProtectPassword.code] in (1)"
+                        datatype ="String"
+                        minsize="1"
+                        maxsize="64"
+                        promptref="Password"
+                        encoderef="PasswordEncrypted"
+                        encrypt="1"
+                        doc="String length must be:"
+                    />
+
+                </characteristic>
+
+                <parm name="OptionalServerCertificate"
+                    presentif="[Authentication.code] in (1,2,3,5,6,7,8,9,10,11,13,14)"
+                    datatype ="String"
+                    default="[.text]=''"
+                    minsize="0"
+                    maxsize="64"
+                    promptref="OptionalServerCertificate"
+                    encoderef="OptionalServerCertificate"
+                    helpref="OptionalServerCertificate"
+                    doc="String length must be:"
+                    skipif="[.text]==''"
+                />
+
+                <parm name="MandatoryServerCertificate"
+                    presentif="[Authentication.code] in (12)"
+                    datatype ="String"
+                    minsize="0"
+                    maxsize="64"
+                    promptref="MandatoryServerCertificate"
+                    encoderef="MandatoryServerCertificate"
+                    helpref="MandatoryServerCertificate"
+                    doc="String length must be:"
+                />
+
+                <parm name="MandatoryClientCertificate"
+                    presentif="[Authentication.code] in (1,3,12)"
+                    datatype ="String"
+                    minsize="1"
+                    maxsize="64"
+                    promptref="MandatoryClientCertificate"
+                    encoderef="MandatoryClientCertificate"
+                    helpref="MandatoryClientCertificate"
+                    doc="String length must be:"
+                />
+
+                <parm name="OptionalClientCertificate"
+                    presentif="[Authentication.code] in (2,5,6,7,8,9,10,11,13,14)"
+                    datatype ="String"
+                    default="[.text]=''"
+                    minsize="0"
+                    maxsize="64"
+                    promptref="OptionalClientCertificate"
+                    encoderef="OptionalClientCertificate"
+                    helpref="OptionalClientCertificate"
+                    doc="String length must be:"
+                    skipif="[.text]==''"
+                />
+
+            </characteristic>
+
+            <characteristic type="key-details" doc="Encryption Key details"
+                presentif="[NetworkAction.code] in (1) and [SecurityMode.code] in (1)"
+                indent="1"
+            >
+
+                <parm name="KeyType"
+                    promptref="KeyType"
+                    default="[.code]='2'"
+                    value="[.text]"
+                    helpref="KeyType"
+                    listref="KeyType"
+                    encoderef="KeyType"
+                    doc="Supported selections are:"
+                />
+
+                <parm name="ProtectKey"
+                    datatype ="Boolean"
+                    promptref="ProtectKey"
+                    helpref="ProtectKey"
+                    encoderef="ProtectKey"
+                />
+
+                <parm name="HexKeyClear"
+                    presentif ="[KeyType.code] in (1) and [WPAMode.code] not in (4) and [ProtectKey.code] in (0)"
+                    datatype ="String"
+                    minsize="64"
+                    maxsize="64"
+                    dynamic ="[?]"
+                    promptref="HexKey"
+                    helpref="HexKey"
+                    encoderef="HexKeyClear"
+                    encrypt="0"
+                    doc="String length must be:"
+                />
+
+                <parm name="HexKeyEncrypted"
+                    presentif ="[KeyType.code] in (1) and [WPAMode.code] not in (4) and [ProtectKey.code] in (1)"
+                    datatype ="String"
+                    minsize="64"
+                    maxsize="64"
+                    dynamic ="[?]"
+                    promptref="HexKey"
+                    helpref="HexKey"
+                    encoderef="HexKeyEncrypted"
+                    encrypt="1"
+                    doc="String length must be:"
+                />
+
+                <parm name="PassphraseWEPClear"
+                    presentif ="[KeyType.code] in (2) and [WPAMode.code] in (4) and [ProtectKey.code] in (0)"
+                    datatype ="String"
+                    minsize="4"
+                    maxsize="32"
+                    dynamic ="[?]"
+                    promptref="Passphrase"
+                    helpref="Passphrase"
+                    encoderef="PassphraseWEPClear"
+                    encrypt="0"
+                    doc="String length must be:"
+                />
+
+                <parm name="PassphraseWEPEncrypted"
+                    presentif ="[KeyType.code] in (2) and [WPAMode.code] in (4) and [ProtectKey.code] in (1)"
+                    datatype ="String"
+                    minsize="4"
+                    maxsize="32"
+                    dynamic ="[?]"
+                    promptref="Passphrase"
+                    helpref="Passphrase"
+                    encoderef="PassphraseWEPEncrypted"
+                    encrypt="1"
+                    doc="String length must be:"
+                />
+
+                <parm name="PassphraseWPAClear"
+                    presentif ="[KeyType.code] in (2) and [WPAMode.code] not in (4) and [ProtectKey.code] in (0)"
+                    datatype ="String"
+                    minsize="8"
+                    maxsize="63"
+                    dynamic ="[?]"
+                    promptref="Passphrase"
+                    helpref="Passphrase"
+                    encoderef="PassphraseWPAClear"
+                    encrypt="0"
+                    doc="String length must be:"
+                />
+
+                <parm name="PassphraseWPAEncrypted"
+                    presentif ="[KeyType.code] in (2) and [WPAMode.code] not in (4) and [ProtectKey.code] in (1)"
+                    datatype ="String"
+                    minsize="8"
+                    maxsize="63"
+                    dynamic ="[?]"
+                    promptref="Passphrase"
+                    helpref="Passphrase"
+                    encoderef="PassphraseWPAEncrypted"
+                    encrypt="1"
+                    doc="String length must be:"
+                />
+
+                <parm name="HexKeyWep40Clear"
+                    presentif="[KeyType.code] in (1) and [WPAMode.code] in (4) and [EncryptionWEP.code] in (1) and [ProtectKey.code] in (0)"
+                    datatype="String"
+                    minsize ="10"
+                    maxsize ="10"
+                    promptref="HexKey"
+                    helpref="HexKeyWep40"
+                    encoderef="HexKeyWep40Clear"
+                    encrypt="0"
+                    doc="String length must be:"
+                />
+
+                <parm name="HexKeyWep40Encrypted"
+                    presentif="[KeyType.code] in (1) and [WPAMode.code] in (4) and [EncryptionWEP.code] in (1) and [ProtectKey.code] in (1)"
+                    datatype="String"
+                    minsize ="10"
+                    maxsize ="10"
+                    promptref="HexKey"
+                    helpref="HexKeyWep40"
+                    encoderef="HexKeyWep40Encrypted"
+                    encrypt="1"
+                    doc="String length must be:"
+                />
+
+                <parm name="HexKeyWep104Clear"
+                    presentif="[KeyType.code] in (1) and [WPAMode.code] in (4) and [EncryptionWEP.code] in (2) and [ProtectKey.code] in (0)"
+                    datatype="String"
+                    minsize ="26"
+                    maxsize ="26"
+                    promptref="HexKey"
+                    helpref="HexKeyWep104"
+                    encoderef="HexKeyWep104Clear"
+                    encrypt="0"
+                    doc="String length must be:"
+                />
+
+                <parm name="HexKeyWep104Encrypted"
+                    presentif="[KeyType.code] in (1) and [WPAMode.code] in (4) and [EncryptionWEP.code] in (2) and [ProtectKey.code] in (1)"
+                    datatype="String"
+                    minsize ="26"
+                    maxsize ="26"
+                    promptref="HexKey"
+                    helpref="HexKeyWep104"
+                    encoderef="HexKeyWep104Encrypted"
+                    encrypt="1"
+                    doc="String length must be:"
+                />
+
+                <parm name="WepKeyIndex"
+                    presentif="[WPAMode.code] in (4)"
+                    promptref="WepKeyIndex"
+                    helpref="WepKeyIndex"
+                    encoderef="WepKeyIndex"
+                    listref="WepKeyIndex"
+                    doc="Supported selections are:"
+                />
+
+            </characteristic>
+
+            <parm name="UseDHCP"
+                presentif="[NetworkAction.code] in (1)"
+                datatype="Boolean"
+                default="[.code]='1'"
+                promptref="UseDHCP"
+                helpref="UseDHCP"
+                encoderef="UseDHCP"
+                doc="Supported selections are:"
+            />
+
+            <characteristic type="ip-details" doc="Static IP address details"
+                presentif="[NetworkAction.code] in (1) and [UseDHCP.code] in (0)"
+                indent="1"
+            >
+
+                <parm name="IpAddress"
+                    datatype="IPV4"
+                    default="[.text]='127.0.0.1'"
+                    promptref="IpAddress"
+                    helpref="IpAddress"
+                    encoderef="IpAddress"
+                    doc="Must be a valid IPV4 address, example: 191.168.0.1"
+                />
+
+                <parm name="IpGateway1"
+                    datatype="IPV4"
+                    default="[.text]='127.0.0.1'"
+                    promptref="IpGateway1"
+                    helpref="IpGateway1"
+                    encoderef="IpGateway1"
+                    doc="Must be a valid IPV4 address, example: 191.168.0.1"
+                />
+
+                <parm name="IpGateway2"
+                    datatype="IPV4"
+                    default="[.text]='127.0.0.1'"
+                    promptref="IpGateway2"
+                    helpref="IpGateway2"
+                    encoderef="IpGateway2"
+                    presentif="[TargetOS.code] in (1) and [NetworkAction.code] in (1)"
+                    doc="Must be a valid IPV4 address, example: 191.168.0.1"
+                />
+
+                <parm name="IpMask"
+                    datatype="IPV4"
+                    default="[.text]='255.255.255.0'"
+                    promptref="IpMask"
+                    helpref="IpMask"
+                    encoderef="IpMask"
+                    doc="Must be a valid IPV4 subnet mask, example: 255.255.255.0"
+                />
+
+                <parm name="IpDns1"
+                    datatype="IPV4"
+                    default="[.text]='127.0.0.1'"
+                    promptref="IpDns1"
+                    helpref="IpDns1"
+                    encoderef="IpDns1"
+                    doc="Must be a valid IPV4 address, example: 191.168.0.1"
+                />
+
+                <parm name="IpDns2"
+                    datatype="IPV4"
+                    default="[.text]=''"
+                    promptref="IpDns2"
+                    helpref="IpDns2"
+                    encoderef="IpDns2"
+                    skipif="[.text]==''"
+                    doc="Must be a valid IPV4 address, example: 191.168.0.1"
+                />
+
+            </characteristic>
+
+            <parm name="UseProxy"
+                presentif="[NetworkAction.code] in (1)"
+                datatype="Integer"
+                default="[.code]='0'"
+                promptref="UseProxy"
+                helpref="UseProxy"
+                listref="UseProxy"
+                encoderef="UseProxy"
+                doc="Supported values are:"
+            />
+
+
+            <characteristic type="proxy-details" doc="Proxy Server details"
+                presentif="[NetworkAction.code] in (1)"
+                indent="1"
+            >
+
+                <parm name="ProxyHostName"
+                    presentif="[UseProxy.code] in (1)"
+                    promptref="ProxyHostName"
+                    datatype="String"
+                    minsize ="1"
+                    maxsize ="64"
+                    helpref="ProxyHostName"
+                    encoderef="ProxyHostName"
+                    doc="String length must be:"
+                />
+
+                <parm name="ProxyPort"
+                    presentif="[UseProxy.code] in (1)"
+                    promptref="ProxyPort"
+                    datatype="Integer"
+                    helpref="ProxyPort"
+                    encoderef="ProxyPort"
+                />
+
+                <parm name="BypassProxy"
+                    presentif="[UseProxy.code] in (1)"
+                    promptref="BypassProxy"
+                    default="[.text]=''"
+                    datatype="String"
+                    maxsize ="256"
+                    helpref="BypassProxy"
+                    encoderef="BypassProxy"
+                    skipif="[.text]==''"
+                    doc="String length must be:"
+                />
+                <parm name="PROXYPAC"
+                    presentif="[UseProxy.code] in (3)"
+                    promptref="ProxyPAC"
+                    datatype="String"
+                    maxsize ="256"
+                    helpref="ProxyPAC"
+                    encoderef="ProxyPAC"
+                    doc="String length must be:"
+                />
+
+            </characteristic>
+
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

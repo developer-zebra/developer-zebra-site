@@ -1,0 +1,269 @@
+<wap-semanticsdoc version="4.3" revision="3">
+
+    <prompt name="InstallKeyAction" lang="en" value="Install Key?: "/>
+    <prompt name="InstallKeyName" lang="en" value="Install Key Name: "/>
+    <prompt name="InstallKeyValue" lang="en" value="Install Key Value: "/>
+
+    <prompt name="RevokeKeyAction" lang="en" value="Revoke Key?: "/>
+    <prompt name="RevokeKeyName" lang="en" value="Revoke Key Name(s): "/>
+
+    <prompt name="CreateEFSAction" lang="en" value="Create EFS?: "/>
+    <prompt name="EFSName" lang="en" value="EFS Name: "/>
+    <prompt name="EFSKeyName" lang="en" value="EFS encryption Key Name: "/>
+    <prompt name="EFSLocation" lang="en" value="EFS Location (internal/SDcard): "/>
+    <prompt name="MountPath" lang="en" value="Mount path for EFS: "/>
+    <prompt name="VolumeSize" lang="en" value="Size of EFS in MB: "/>
+
+    <prompt name="DeleteEFSAction" lang="en" value="Delete EFS?: "/>
+    <prompt name="DeleteEFSLocation" lang="en" value="EFS Location (internal/SDcard): "/>
+    <prompt name="DeleteEFSName" lang="en" value="Delete EFS Name: "/>
+
+    <prompt name="SdCardOperation" lang="en" value="SDcard Operation: "/>
+    <prompt name="SdCardKeyName" lang="en" value="Key to encrypt SDcard: "/>
+
+    <help name="InstallKeyAction" lang="en" value="Select whether or not to Install an Encryption Key"/>
+    <help name="InstallKeyName" lang="en" value="Provide the Key Names to install an Encryption Key"/>
+    <help name="InstallKeyValue" lang="en" value="Provide the hex Key Values (64 hex chars) to install an Encryption Key"/>
+
+    <help name="RevokeKeyAction" lang="en" value="Select whether or not to Revoke an Encryption Key"/>
+    <help name="RevokeKeyName" lang="en" value="Provide the Key Names to Revoke an Encryption Key(separated by commas)"/>
+
+    <help name="CreateEFSAction" lang="en" value="Select whether or not create encrypted file system"/>
+    <help name="EFSName" lang="en" value="Provide the EFS name to create encrypted file system"/>
+    <help name="EFSKeyName" lang="en" value="Provide the encryption Key Name to create encrypted file system"/>
+    <help name="EFSLocation" lang="en" value="Select the location of EFS, e.g. internal or SD card"/>
+    <help name="MountPath" lang="en" value="Provide the mount path to create encrypted file system"/>
+    <help name="VolumeSize" lang="en" value="Provide the size of EFS in MB(1 to 4095)"/>
+
+    <help name="DeleteEFSAction" lang="en" value="Select whether or not delete encrypted file system"/>
+    <help name="DeleteEFSLocation" lang="en" value="Select the location of EFS, e.g. internal or SD card"/>
+    <help name="DeleteEFSName" lang="en" value="Provide the EFS name to delete encrypted file system"/>
+
+    <help name="SdCardOperation" lang="en" value="Select the desired SDcard Operation "/>
+    <help name="SdCardKeyName" lang="en" value="Provide the Key Name to encrypt SDcard"/>
+
+    <list name="InstallKeyAction">
+        <item code="0" text="Do nothing"/>
+        <item code="1" text="Install key"/>
+    </list>
+
+
+    <list name="RevokeKeyAction">
+        <item code="0" text="Do nothing"/>
+        <item code="1" text="Revoke key"/>
+    </list>
+
+    <list name="CreateEFSAction">
+        <item code="0" text="Do nothing" />
+        <item code="1" text="Create EFS" />
+    </list>
+    <list name="EFSLocation">
+        <item code="0" text="Internal" />
+        <item code="1" text="SDcard" />
+    </list>
+    <list name="DeleteEFSAction">
+        <item code="0" text="Do nothing" />
+        <item code="1" text="Delete EFS" />
+    </list>
+    <list name="DeleteEFSLocation">
+        <item code="0" text="Internal" />
+        <item code="1" text="SDcard" />
+    </list>
+
+    <list name="SdCardOperation">
+        <item code="0" text="Do nothing" />
+        <item code="1" text="Encrypt SDcard" />
+        <item code="2" text="Format SDcard" />
+    </list>
+
+
+    <encode code="1" name="InstallKeyAction" codesize="1" method="integer" datasize="1"/>
+    <encode code="2" name="InstallKeyName" codesize="1" method="string"/>
+    <encode code="3" name="InstallKeyValue" codesize="1" method="string"/>
+
+    <encode code="11" name="RevokeKeyAction" codesize="1" method="string"/>
+    <encode code="12" name="RevokeKeyName" codesize="1" method="string"/>
+
+    <encode code="21" name="CreateEFSAction" codesize="1" method="integer" datasize="1"/>
+    <encode code="22" name="EFSName" codesize="1" method="string"/>
+    <encode code="24" name="EFSLocation" codesize="1" method="integer" datasize="1"/>
+    <encode code="23" name="EFSKeyName" codesize="1" method="string"/>
+    <encode code="25" name="MountPath" codesize="1" method="string"/>
+    <encode code="26" name="VolumeSize" codesize="1" method="string"/>
+
+    <encode code="31" name="DeleteEFSAction" codesize="1" method="integer" datasize="1"/>
+    <encode code="32" name="DeleteEFSLocation" codesize="1" method="integer" datasize="1"/>
+    <encode code="33" name="DeleteEFSName" codesize="1" method="string"/>
+
+    <encode code="41" name="SdCardOperation" codesize="1" method="integer" datasize="1"/>
+    <encode code="42" name="SdCardKeyName" codesize="1" method="string"/>
+
+    <characteristic  type="EncryptMgr"
+        doc="Perform security storage features (e.g. Install/revoke Key, Create/delete EFS, etc.)"
+    >
+        <characteristic type ="InstallKey" doc="Install key">
+            <parm name="InstallKeyAction"
+                promptref="InstallKeyAction"
+                default="[.code]='0'"
+                helpref="InstallKeyAction"
+                listref="InstallKeyAction"
+                encoderef="InstallKeyAction"
+                skipif="[.code]==0"
+                doc="Supported actions are:"
+            />
+            <characteristic type ="InstallKeyDetails" doc="Details of the key to be installed"
+                presentif="[InstallKeyAction.code] in (1)"
+            >
+                <parm name="InstallKeyName"
+                    presentif="[InstallKeyAction.code] in (1)"
+                    datatype="string"
+                    minsize="1"
+                    promptref="InstallKeyName"
+                    helpref="InstallKeyName"
+                    encoderef="InstallKeyName"
+                    doc="If specified, must have a length of"
+                />
+
+                <parm name="InstallKeyValue"
+                    presentif="[InstallKeyAction.code] in (1)"
+                    datatype="hex"
+                    minsize="64"
+                    maxsize="64"
+                    promptref="InstallKeyValue"
+                    helpref="InstallKeyValue"
+                    encoderef="InstallKeyValue"
+                    encrypt="1"
+                    skipif="[.text]==''"
+                    doc="Must consist of a fixed set of hex characters of length"
+                />
+            </characteristic>
+        </characteristic>
+        <parm name="RevokeKeyAction"
+            promptref="RevokeKeyAction"
+            default="[.code]='0'"
+            helpref="RevokeKeyAction"
+            listref="RevokeKeyAction"
+            encoderef="RevokeKeyAction"
+            skipif="[.code]==0"
+            doc="Supported actions are:"
+        />
+        <parm name="RevokeKeyName"
+            presentif="[RevokeKeyAction.code] in (1)"
+            datatype="string"
+            minsize="1"
+            promptref="RevokeKeyName"
+            helpref="RevokeKeyName"
+            encoderef="RevokeKeyName"
+            doc="If specified, must have a length of"
+        />
+
+        <characteristic type ="CreateEFS" doc="Create EFS">
+            <parm name="CreateEFSAction"
+                promptref="CreateEFSAction"
+                default="[.code]='0'"
+                helpref="CreateEFSAction"
+                listref="CreateEFSAction"
+                encoderef="CreateEFSAction"
+                skipif="[.code]==0"
+                doc="Supported actions are:"
+            />
+            <characteristic type ="CreateEFSDetails" doc="Details for the EFS to be created"
+                presentif="[CreateEFSAction.code] in (1)"
+            >
+                <parm name="EFSName"
+                    datatype="string"
+                    promptref="EFSName"
+                    helpref="EFSName"
+                    encoderef="EFSName"
+                    minsize="1"
+                    doc="If specified, must have a length of"
+                />
+
+                <parm name="EFSKeyName"
+                    datatype="string"
+                    minsize="1"
+                    promptref="EFSKeyName"
+                    helpref="EFSKeyName"
+                    encoderef="EFSKeyName"
+                    doc="If specified, must have a length of"
+                />
+                <parm name="EFSLocation"
+                    promptref="EFSLocation"
+                    default="[.code]='0'"
+                    helpref="EFSLocation"
+                    listref="EFSLocation"
+                    encoderef="EFSLocation"
+                    doc="Supported actions are:"
+                />
+                <parm name="MountPath"
+                    datatype="string"
+                    promptref="MountPath"
+                    helpref="MountPath"
+                    encoderef="MountPath"
+                    minsize="1"
+                    doc="If specified, must have a length of"
+                />
+                <parm name="VolumeSize"
+                    datatype="string"
+                    promptref="VolumeSize"
+                    helpref="VolumeSize"
+                    encoderef="VolumeSize"
+                    minsize="1"
+                    doc="If specified, must have a length of"
+                />
+            </characteristic>
+        </characteristic>
+
+        <parm name="DeleteEFSAction"
+            promptref="DeleteEFSAction"
+            default="[.code]='0'"
+            helpref="DeleteEFSAction"
+            listref="DeleteEFSAction"
+            encoderef="DeleteEFSAction"
+            doc="Supported actions are:"
+            skipif="[.code]==0"
+        />
+        <characteristic type ="DeleteEFSDetails" doc="Delete an EFS"
+                presentif="[DeleteEFSAction.code] in (1,2)"
+            >
+            <parm name="DeleteEFSName"
+                datatype="string"
+                promptref="DeleteEFSName"
+                helpref="DeleteEFSName"
+                encoderef="DeleteEFSName"
+                minsize="1"
+                doc="If specified, must have a length of"
+            />
+
+            <parm name="DeleteEFSLocation"
+                promptref="DeleteEFSLocation"
+                default="[.code]='0'"
+                helpref="DeleteEFSLocation"
+                listref="DeleteEFSLocation"
+                encoderef="DeleteEFSLocation"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <parm name="SdCardOperation"
+            promptref="SdCardOperation"
+            default="[.code]='0'"
+            helpref="SdCardOperation"
+            listref="SdCardOperation"
+            encoderef="SdCardOperation"
+            skipif="[.code]==0"
+            doc="Supported actions are:"
+        />
+        <parm name="SdCardKeyName"
+            presentif="[SdCardOperation.code] in (1)"
+            datatype="string"
+            promptref="SdCardKeyName"
+            helpref="SdCardKeyName"
+            encoderef="SdCardKeyName"
+            minsize="1"
+            doc="If specified, must have a length of"
+            />
+    </characteristic>
+
+</wap-semanticsdoc>
+

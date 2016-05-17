@@ -1,0 +1,56 @@
+<wap-semanticsdoc version="4.2" >
+<!-- PowerMgr.DSD for V2 release -->
+
+    <prompt name="ResetAction" lang="en" value="Reset Action:" />
+    <prompt name="ZipFile" lang="en" value="OS Update ZIP File:" />
+
+    <help name="ResetAction" lang="en" value="Specify the reset action to perform" />
+    <help name="ZipFile" lang="en" value="Specify the path and name of the ZIP file in the device file system" />
+
+    <list name="ResetAction" >
+        <item code="0" text="Do Nothing" />
+        <item code="1" text="Sleep Mode" />
+        <item code="4" text="Reboot" />
+        <item code="5" text="Enterprise Reset" />
+        <item code="6" text="Factory Reset" />
+        <item code="7" text="Full Device Wipe" />
+        <item code="8" text="OS Update" />
+    </list>
+
+    <encode code="101" name="ResetAction" codesize="1" method="integer" datasize="1" />
+    <encode code="102" name="ZipFile" codesize="1" method="string" />
+
+    <characteristic  type="PowerMgr"
+        doc="Perform power management operations"
+    >
+        <parm name="ResetAction"
+            promptref="ResetAction"
+            default="[.code]=4"
+            helpref="ResetAction"
+            listref="ResetAction"
+            encoderef="ResetAction"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <characteristic  type="file-details"
+            presentif="[ResetAction.code] in (8)"
+            doc="Perform power management operations"
+        >
+
+            <parm name="ZipFile"
+                promptref="ZipFile"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                helpref="ZipFile"
+                encoderef="ZipFile"
+                doc="String length must be:"
+            />
+
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

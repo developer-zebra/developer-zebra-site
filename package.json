@@ -32,7 +32,11 @@
     "npm": "^3.3.10"
   },
   "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "firebase": "^2.4.2",
     "front-matter": "^2.0.5",
+    "glob": "^7.0.3",
     "hexo-server": "^0.1.2",
     "html-stemmer": "^1.0.5",
     "keyword-extractor": "0.0.12",

@@ -1,0 +1,31 @@
+<wap-semanticsdoc version="4.2" >
+
+    <prompt name="TouchAction" lang="en" value="TouchAction:" />
+
+    <help name="TouchAction" lang="en" value="Specify the Touch Mode" />
+
+    <list name="TouchAction" >
+        <item code="0" text="Do not change" ui="Do not change" />
+        <item code="1" text="Stylus and Finger" ui="Stylus and Finger" />
+        <item code="2" text="Glove and Finger" ui="Glove and Finger" />
+    </list>
+
+    <encode code="101" name="TouchAction" codesize="1" method="integer" datasize="1" />
+
+    <characteristic  type="TouchMgr"
+        doc="Set Touch Mode"
+    >
+
+        <parm name="TouchAction"
+            promptref="TouchAction"
+            default="[.code]='1'"
+            value="[.text]"
+            helpref="TouchAction"
+            listref="TouchAction"
+            encoderef="TouchAction"
+            skipif="[.code] in (0)"
+            doc="Supported actions are:"
+        />
+    </characteristic>
+
+</wap-semanticsdoc>

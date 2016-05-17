@@ -1,0 +1,65 @@
+<wap-semanticsdoc version="5.0" >
+
+<prompt name="TimeoutInterval" lang="en" value="Set the Screen Off Timeout Interval:" />
+<prompt name="ScreenShotUsage" lang="en" value="ScreenShot Usage:" />
+
+<help name="TimeoutInterval" lang="en" value="Select the Timeout Interval after which the Screen turns off" />
+<help name="ScreenShotUsage" lang="en" value="Select whether to enable or disable usage of screen shot" />
+
+<encode code ="1" name="TimeoutInterval" codesize="1" method="integer" datasize="2"/>
+<encode code="2" name="ScreenShotUsage" codesize="1" method="integer" datasize="1" />
+
+
+<list name="TimeoutInterval" >
+    <item code="0"    text="Do not change" />
+    <item code="15"   text="15 seconds" />
+    <item code="30"   text="30 seconds" />
+    <item code="60"   text="1 minute" />
+    <item code="120"  text="2 minutes" />
+    <item code="300"  text="5 minutes" />
+    <item code="600"  text="10 minutes" />
+    <item code="1800" text="30 minutes" />
+</list>
+
+<list name ="UsageList" >
+    <item code="0" text="Do not change" />
+    <item code="1" text="Enable" />
+    <item code="2" text="Disable" />
+</list>
+
+    <characteristic  type="DisplayMgr"
+        doc="Sets display related configurations"
+    >
+
+        <prompt name="Version" lang="en" value="Version:" />
+        <help name="Version" lang="en" value="Version of the CSP" />
+        <parm name="Version" datatype="String" promptref="Version" helpref="Version" query="1" set="0" />
+
+        <parm name="TimeoutInterval"
+            datatype="integer"
+            promptref="TimeoutInterval"
+            default="[.code]=0"
+            helpref="TimeoutInterval"
+            encoderef="TimeoutInterval"
+            listref="TimeoutInterval"
+            skipif="[.code] in (0)"
+            query="3"
+            doc="Supported intervals are:"
+        />
+
+        <parm name="ScreenShotUsage"
+            promptref="ScreenShotUsage"
+            value="[.code]"
+            helpref="ScreenShotUsage"
+            encoderef="ScreenShotUsage"
+            listref="UsageList"
+            default="[.code]=0"
+            skipif="[.code] in (0)"
+            query="3"
+            doc="Supported actions are:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

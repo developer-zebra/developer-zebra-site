@@ -1,0 +1,102 @@
+<wap-semanticsdoc version="4.4" >
+
+    <prompt name="InvokeEnterpriseReset" lang="en" value="Ability to invoke Enterprise Reset in Settings UI:" />
+    <prompt name="WifiSettingsUI" lang="en" value="Ability to Turn Wifi On/Off in Settings UI:" />
+    <prompt name="UnknownSources" lang="en" value="Ability to Turn UnknownSources On/Off in Settings UI:" />
+    <prompt name="AirplaneMode" lang="en" value="Ability to Turn Airplane Mode On/Off in Settings UI:" />
+    <prompt name="AccessAppsSection" lang="en" value="Ability to Access Apps Section in Settings UI:" />
+
+    <help name="InvokeEnterpriseReset" lang="en" value="Specify whether ability to invoke Enterprise Reset in Settings UI will be allowed" />
+    <help name="WifiSettingsUI" lang="en" value="Specify whether ability to Turn Wifi On/Off in Settings UI will be allowed" />
+    <help name="UnknownSources" lang="en" value="Specify whether ability to Turn Unknown Sources On/Off in Settings UI will be allowed" />
+    <help name="AirplaneMode" lang="en" value="Specify whether ability to Turn Airplane Mode On/Off in Settings UI will be allowed" />
+    <help name="AccessAppsSection" lang="en" value="Specify whether ability to Access Apps Section in Settings UI will be allowed" />
+
+    <list name ="Usage" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <encode code="2" name="InvokeEnterpriseReset" codesize="1" method="integer" datasize="1" />
+    <encode code="1" name="WifiSettingsUI" codesize="1" method="integer" datasize="1" />
+    <encode code="3" name="UnknownSources" codesize="1" method="integer" datasize="1" />
+    <encode code="4" name="AirplaneMode" codesize="1" method="integer" datasize="1" />
+    <encode code="5" name="AccessAppsSection" codesize="1" method="integer" datasize="1" />
+
+    <prompt name="Version" lang="en" value="Version:" />
+    <help name="Version" lang="en" value="Version of the CSP" />
+
+    <characteristic  type="SettingsMgr" doc="Manage Settings UI configuration"
+    >
+        <parm name="Version"
+            datatype="String"
+            promptref="Version"
+            helpref="Version"
+            query="1"
+            set="0"
+        />
+
+        <parm name="InvokeEnterpriseReset"
+            datatype="integer"
+            promptref="InvokeEnterpriseReset"
+            default="[.code]=0"
+            helpref="InvokeEnterpriseReset"
+            listref="Usage"
+            encoderef="InvokeEnterpriseReset"
+            skipif="[.code]=='0'"
+            query="3"
+            doc="Supported actions are:"
+        />
+
+        <parm name="WifiSettingsUI"
+            datatype="integer"
+            promptref="WifiSettingsUI"
+            default="[.code]=0"
+            helpref="WifiSettingsUI"
+            listref="Usage"
+            encoderef="WifiSettingsUI"
+            skipif="[.code] in (0)"
+            query="3"
+            doc="Supported actions are:"
+        />
+
+        <parm name="UnknownSources"
+            datatype="integer"
+            promptref="UnknownSources"
+            default="[.code]=0"
+            helpref="UnknownSources"
+            listref="Usage"
+            encoderef="UnknownSources"
+            skipif="[.code] in (0)"
+            query="3"
+            doc="Supported actions are:"
+        />
+
+        <parm name="AirplaneMode"
+            datatype="integer"
+            promptref="AirplaneMode"
+            default="[.code]=0"
+            helpref="AirplaneMode"
+            listref="Usage"
+            encoderef="AirplaneMode"
+            skipif="[.code] in (0)"
+            query="3"
+            doc="Supported actions are:"
+        />
+
+        <parm name="AccessAppsSection"
+            datatype="integer"
+            promptref="AccessAppsSection"
+            default="[.code]=0"
+            helpref="AccessAppsSection"
+            listref="Usage"
+            encoderef="AccessAppsSection"
+            skipif="[.code] in (0)"
+            query="3"
+            doc="Supported actions are:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>

@@ -1,0 +1,223 @@
+<wap-semanticsdoc version="4.2" revision="1">
+
+    <prompt name="GprsAction" lang="en" value="APN Action:" />
+    <prompt name="ApnName" lang="en" value="APN Name:" />
+    <prompt name="ReplaceIfExisting" lang="en" value="Replace If Exists?:" />
+    <prompt name="ConnectWaitTime" lang="en" value="Wait Time:" />
+    <prompt name="MakeDefault" lang="en" value="Make Default APN?:" />
+    <prompt name="GprsCarrier" lang="en" value="GPRS Carrier:" />
+    <prompt name="AccessPoint" lang="en" value="Access Point:" />
+    <prompt name="UserName" lang="en" value="User Name:" />
+    <prompt name="Password" lang="en" value="Password:" />
+
+    <help name="GprsAction" lang="en" value="Specify the APN action to perform" />
+    <help name="ApnName" lang="en" value="Provide the unique name of the APN" />
+    <help name="ReplaceIfExisting" lang="en" value="Specify whether the APN should be replaced if it already exists" />
+    <help name="MakeDefault" lang="en" value="Specify whether the APN should become the new default APN" />
+    <help name="GprsCarrier" lang="en" value="Select the name of the GPRS carrier for the APN" />
+    <help name="AccessPoint" lang="en" value="Provide the access point information for the APN" />
+    <help name="UserName" lang="en" value="Provide the user name for the APN" />
+    <help name="Password" lang="en" value="Provide the password for the APN" />
+
+    <list name="GprsAction" >
+        <item code="1" text="Add/replace named APN" />
+        <item code="2" text="Remove existing named APN" />
+        <item code="3" text="Remove all existing APNs" />
+    </list>
+
+    <list name="GprsCarrier" >
+        <item code="1" text="ATT" />
+        <item code="2" text="T-Mobile" />
+        <item code="0" text="Custom" />
+    </list>
+
+    <encode code="101" name="GprsAction" codesize="1" method="integer" datasize="1" />
+    <encode code="102" name="ReplaceIfExisting" codesize="1" method="boolean" />
+    <encode code="103" name="ApnName" codesize="1" method="string"/>
+    <encode code="104" name="MakeDefault" codesize="1" method="boolean" />
+    <encode code="105" name="GprsCarrier" codesize="1" method="integer" datasize="1" />
+    <encode code="106" name="AccessPoint" codesize="1" method="string" />
+    <encode code="107" name="UserName" codesize="1" method="string" />
+    <encode code="108" name="Password" codesize="1" method="string" />
+
+    <characteristic  type="GprsMgr"
+        doc="Manage XML Gprsence"
+    >
+
+        <parm name="GprsAction"
+            promptref="GprsAction"
+            default="[.code]='1'"
+            helpref="GprsAction"
+            listref="GprsAction"
+            encoderef="GprsAction"
+            doc="Supported actions are:"
+        />
+
+        <parm name="GprsCarrier"
+            presentif="[GprsAction.code] in (1)"
+            promptref="GprsCarrier"
+            default="[.code]='0'"
+            helpref="GprsCarrier"
+            listref="GprsCarrier"
+            encoderef="GprsCarrier"
+            doc="Supported values are:"
+        />
+
+        <characteristic type="gprs-details"
+            doc="Supply details about a specific Gprs action to be performed"
+        >
+
+            <parm name="ApnName"
+                presentif="[GprsAction.code] in (1,2)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="ApnName"
+                helpref="ApnName"
+                encoderef="ApnName"
+                doc="String length must be:"
+            />
+
+            <parm name="ReplaceIfExisting"
+                presentif="[GprsAction.code] in (1)"
+                datatype="Boolean"
+                promptref="ReplaceIfExisting"
+                helpref="ReplaceIfExisting"
+                encoderef="ReplaceIfExisting"
+                doc="Supported values are:"
+            />
+
+            <parm name="MakeDefault"
+                presentif="[GprsAction.code] in (1)"
+                datatype="Boolean"
+                promptref="MakeDefault"
+                helpref="MakeDefault"
+                encoderef="MakeDefault"
+                doc="Supported values are:"
+        />
+
+        </characteristic>
+
+        <characteristic type="att-details"
+                presentif="[GprsAction.code] in (1) and [GprsCarrier.code] in (1)"
+            doc="Supply details about an APN for ATT"
+        >
+
+            <parm name="AttAccessPoint"
+                datatype="String"
+                default="[.text]='wap.cingular'"
+                minsize="1"
+                maxsize="255"
+                promptref="AccessPoint"
+                helpref="AccessPoint"
+                encoderef="AccessPoint"
+                doc="String length must be:"
+            />
+
+            <parm name="AttUserName"
+                datatype="String"
+                default="[.text]='WAP@CINGULARGPRS.COM'"
+                minsize="1"
+                maxsize="255"
+                promptref="UserName"
+                helpref="UserName"
+                encoderef="UserName"
+                doc="String length must be:"
+            />
+
+            <parm name="AttPassword"
+                datatype="String"
+                default="[.text]='CINGULAR1'"
+                minsize="1"
+                maxsize="255"
+                promptref="Password"
+                helpref="Password"
+                encoderef="Password"
+                encrypt="1"
+                doc="String length must be:"
+            />
+
+            </characteristic>
+
+        <characteristic type="tmobile-details"
+                presentif="[GprsAction.code] in (1) and [GprsCarrier.code] in (2)"
+            doc="Supply details about an APN for T-Mobile"
+        >
+
+            <parm name="TmobileAccessPoint"
+                datatype="String"
+                default="[.text]='internet3.voicestream.com'"
+                minsize="1"
+                maxsize="255"
+                promptref="AccessPoint"
+                helpref="AccessPoint"
+                encoderef="AccessPoint"
+                doc="String length must be:"
+            />
+
+            <parm name="TmobileUserName"
+                datatype="String"
+                minsize="0"
+                maxsize="255"
+                promptref="UserName"
+                helpref="UserName"
+                encoderef="UserName"
+                doc="String length must be:"
+            />
+
+            <parm name="TmobilePassword"
+                datatype="String"
+                minsize="0"
+                maxsize="255"
+                promptref="Password"
+                helpref="Password"
+                encoderef="Password"
+                encrypt="1"
+                doc="String length must be:"
+            />
+
+            </characteristic>
+
+        <characteristic type="custom-details"
+            presentif="[GprsAction.code] in (1) and [GprsCarrier.code] in (0)"
+            doc="Supply details about an APN"
+        >
+
+            <parm name="CustomAccessPoint"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="AccessPoint"
+                helpref="AccessPoint"
+                encoderef="AccessPoint"
+                doc="String length must be:"
+            />
+
+            <parm name="CustomUserName"
+                datatype="String"
+                minsize="0"
+                maxsize="255"
+                promptref="UserName"
+                helpref="UserName"
+                encoderef="UserName"
+                doc="String length must be:"
+            />
+
+            <parm name="CustomPassword"
+                datatype="String"
+                minsize="0"
+                maxsize="255"
+                promptref="Password"
+                helpref="Password"
+                encoderef="Password"
+                encrypt="1"
+                doc="String length must be:"
+            />
+
+            </characteristic>
+
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

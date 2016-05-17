@@ -1,0 +1,85 @@
+<wap-semanticsdoc version="4.4" >
+
+    <prompt name="DataRoamingState" lang="en" value="Set the state of Data Roaming:" />
+    <prompt name="BackgroundDataState" lang="en" value="Set the state of Background Data:" />
+    <prompt name="DataRoamingUsage" lang="en" value="Enable/Disable Data Roaming:" />
+    <prompt name="BackgroundDataUsage" lang="en" value="Enable/Disable Background Data:" />
+
+    <list name ="State" >
+            <item code="0" text="Do not change" />
+            <item code="1" text="Turn On" />
+            <item code="2" text="Turn Off" />
+    </list>
+
+    <list name ="Usage" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <help name="DataRoamingState" lang="en" value="Specify whether to turn on or off Data Roaming" />
+    <help name="BackgroundDataState" lang="en" value="Specify whether to turn on or off Background Data" />
+    <help name="DataRoamingUsage" lang="en" value="Specify whether to allow the usage of Data Roaming" />
+    <help name="BackgroundDataUsage" lang="en" value="Specify whether to allow the usage of Background Data" />
+
+    <encode code="2" name="DataRoamingState" codesize="1" method="integer" datasize="1" />
+    <encode code="1" name="BackgroundDataState" codesize="1" method="integer" datasize="1" />
+    <encode code="4" name="DataRoamingUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="3" name="BackgroundDataUsage" codesize="1" method="integer" datasize="1" />
+
+    <prompt name="Version" lang="en" value="Version:" />
+    <help name="Version" lang="en" value="Version of the CSP" />
+    <characteristic  type="CellularMgr" doc="Manage Cellular Data configuration">
+
+            <parm name="Version"
+                datatype="String"
+                promptref="Version"
+                helpref="Version"
+                query="1"
+                set="0"
+            />
+
+            <parm name="DataRoamingState"
+                promptref="DataRoamingState"
+                value="[.code]"
+                helpref="DataRoamingState"
+                listref="State"
+                encoderef="DataRoamingState"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+            <parm name="BackgroundDataState"
+                promptref="BackgroundDataState"
+                value="[.code]"
+                helpref="BackgroundDataState"
+                listref="State"
+                encoderef="BackgroundDataState"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+            <parm name="DataRoamingUsage"
+                promptref="DataRoamingUsage"
+                value="[.code]"
+                helpref="DataRoamingUsage"
+                listref="Usage"
+                encoderef="DataRoamingUsage"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+            <parm name="BackgroundDataUsage"
+                promptref="BackgroundDataUsage"
+                value="[.code]"
+                helpref="BackgroundDataUsage"
+                listref="Usage"
+                encoderef="BackgroundDataUsage"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

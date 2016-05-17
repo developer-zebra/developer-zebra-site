@@ -1,0 +1,231 @@
+<wap-semanticsdoc version="4.4">
+
+    <prompt name="RequestAction" lang="en" value="Status Request Action:"/>
+    <help name="RequestAction" lang="en" value="Select the Request Action to be performed"/>
+    <encode code="100" name="RequestAction" codesize="1" method="integer" datasize="1"/>
+    <list name="RequestAction">
+        <!--<item code="0" text="Do nothing"/>-->
+        <item code="1" text="Add/Replace Status Request"/>
+        <item code="2" text="Remove Status Request"/>
+        <item code="3" text="Notify Status"/>
+    </list>
+
+    <prompt name="RequestId" lang="en" value="Request Status ID:"/>
+    <help name="RequestId" lang="en" value="Enter an ID for the Status being Requested"/>
+    <encode code="102" name="RequestId" codesize="1" method="string"/>
+
+    <prompt name="RequestFilter" lang="en" value="Request Status Filter:"/>
+    <help name="RequestFilter" lang="en" value="Select the Type of Status to Request"/>
+    <encode code="103" name="RequestFilter" codesize="1" method="integer" datasize="1"/>
+    <list name="RequestFilter">
+        <item code="0" text="Request ALL Status"/>
+        <item code="1" text="Request Completion Status"/>
+    </list>
+
+    <prompt name="ActionName" lang="en" value="Android Action Name:"/>
+    <help name="ActionName" lang="en" value="Enter the Android Action Name"/>
+    <encode code="104" name="ActionName" codesize="1" method="string"/>
+
+    <!--<prompt name="MimeType" lang="en" value="Dispatch Intent MIME Type:"/>
+    <help name="MimeType" lang="en" value="Enter an optional MIME Type to include in the intent"/>
+    <encode code="105" name="MimeType" codesize="1" method="string"/>-->
+
+    <prompt name="PackageName" lang="en" value="Package Name:"/>
+    <encode code="106" name="PackageName" codesize="1" method="string"/>
+    <help name="PackageName" lang="en" value="Enter the Android Application Package Name"/>
+
+    <prompt name="ClassName" lang="en" value="Class Name:"/>
+    <help name="ClassName" lang="en" value="Enter the Android Application Class Name"/>
+    <encode code="107" name="ClassName" codesize="1" method="string"/>
+
+    <prompt name="NotifyAction" lang="en" value="Status Notify Action:"/>
+    <help name="NotifyAction" lang="en" value="Select the Notify Action to be performed"/>
+    <encode code="200" name="NotifyAction" codesize="1" method="integer" datasize="1"/>
+    <list name="NotifyAction">
+        <item code="0" text="Do nothing"/>
+        <item code="1" text="Notify Status"/>
+    </list>
+
+    <prompt name="NotifySourceId" lang="en" value="Notify Source ID:"/>
+    <help name="NotifySourceId" lang="en" value="Specify an Identifier for the Source of the Notification"/>
+    <encode code="202" name="NotifySourceId" codesize="1" method="string"/>
+
+    <prompt name="NotifyState" lang="en" value="Notify State:"/>
+    <help name="NotifyState" lang="en" value="Specify the State for the Notification"/>
+    <encode code="203" name="NotifyState" codesize="1" method="string"/>
+    <list name="NotifyState">
+        <item code="0" text="None"/>
+        <item code="1" text="Inprogress"/>
+        <item code="2" text="Complete"/>
+    </list>
+
+    <prompt name="NotifyHeader" lang="en" value="Notify Header:"/>
+    <help name="NotifyHeader" lang="en" value="Enter an optional Text Header for the Notification"/>
+    <encode code="204" name="NotifyHeader" codesize="1" method="string"/>
+
+    <prompt name="NotifyBody" lang="en" value="Notify Body:"/>
+    <help name="NotifyBody" lang="en" value="Enter the Text Body for the Notification"/>
+    <encode code="205" name="NotifyBody" codesize="1" method="string"/>
+
+    <prompt name="NotifyFooter" lang="en" value="Notify Footer:"/>
+    <help name="NotifyFooter" lang="en" value="Enter an optional Text Footer for the Notification"/>
+    <encode code="206" name="NotifyFooter" codesize="1" method="string"/>
+
+    <prompt name="NotifyPercent" lang="en" value="Notify Percentage:"/>
+    <help name="NotifyPercent" lang="en" value="Enter an optional Percentage Complete value for the Notification"/>
+    <encode code="207" name="NotifyPercent" codesize="1" method="integer" datasize="1"/>
+
+    <characteristic type="StatusMgr" doc="Request Status notification while processing an XML Stream">
+
+        <parm name="RequestAction"
+            promptref="RequestAction"
+            datatype="Integer"
+            default="[.code]='1'"
+            listref="RequestAction"
+            helpref="RequestAction"
+            encoderef="RequestAction"
+            skipif="[.code]=='0'"
+            doc="Supported Actioms are:"
+        />
+
+        <characteristic type="request-details" doc="Details about the notification request" presentif="[RequestAction.code] not in (0)">
+
+            <!--<parm name="RequestId"
+                promptref="RequestId"
+                datatype="String"
+                helpref="RequestId"
+                encoderef="RequestId"
+                presentif="[RequestAction.code] not in (0,3)"
+                minsize="1"
+                doc="Minimum identifier length must be:"
+            />-->
+
+            <parm name="RequestFilter"
+                presentif="[RequestAction.code] in (1)"
+                promptref="RequestFilter"
+                datatype="Integer"
+                listref="RequestFilter"
+                helpref="RequestFilter"
+                encoderef="RequestFilter"
+                doc="Supported Filters are:"
+            />
+
+        </characteristic>
+
+        <characteristic type="dispatch-details" doc="Details about the notification dispatch" presentif="[RequestAction.code] in (1,2)">
+
+            <parm name="ActionName"
+                datatype="String"
+                presentif="[RequestAction.code] in (1)"
+                promptref="ActionName"
+                helpref="ActionName"
+                encoderef="ActionName"
+                doc="Action Name length must be:"
+            />
+
+            <!--<parm name="MimeType"
+                datatype="String"
+                minsize="0"
+                promptref="MimeType"
+                helpref="MimeType"
+                encoderef="MimeType"
+                skipif="[.text]==''"
+                doc="MIME Type is optional:"
+            />-->
+
+            <parm name="PackageName"
+                datatype="String"
+                minsize="1"
+                promptref="PackageName"
+                helpref="PackageName"
+                encoderef="PackageName"
+                doc="Package Name:"
+            />
+
+            <parm name="ClassName"
+                datatype="String"
+                minsize="1"
+                promptref="ClassName"
+                helpref="ClassName"
+                encoderef="ClassName"
+                doc="Class Name:"
+            />
+
+        </characteristic>
+
+        <!--<parm name="NotifyAction"
+            promptref="NotifyAction"
+            datatype="Integer"
+            listref="NotifyAction"
+            helpref="NotifyAction"
+            encoderef="NotifyAction"
+            skipif="[.code]=='0'"
+            doc="Supported Actioms are:"
+        />-->
+
+        <characteristic type="notify-details" doc="Details about Status to be notified" presentif="[RequestAction.code] in (3)">
+
+            <parm name="NotifySourceId"
+                promptref="NotifySourceId"
+                datatype="String"
+                helpref="NotifySourceId"
+                encoderef="NotifySourceId"
+                minsize="1"
+                doc="Minimum identifier length must be:"
+            />
+
+            <parm name="NotifyState"
+                promptref="NotifyState"
+                datatype="String"
+                listref="NotifyState"
+                helpref="NotifyState"
+                encoderef="NotifyState"
+                doc="State:"
+            />
+
+            <!--<parm name="NotifyHeader"
+                promptref="NotifyHeader"
+                datatype="String"
+                helpref="NotifyHeader"
+                encoderef="NotifyHeader"
+                skipif="[.text]==''"
+                doc="Text header is optional:"
+            />-->
+
+            <parm name="NotifyBody"
+                promptref="NotifyBody"
+                datatype="String"
+                minsize="1"
+                maxsize="100"
+                helpref="NotifyBody"
+                encoderef="NotifyBody"
+                doc="Text body:"
+            />
+
+            <!--<parm name="NotifyFooter"
+                promptref="NotifyFooter"
+                datatype="String"
+                helpref="NotifyFooter"
+                encoderef="NotifyFooter"
+                skipif="[.text]==''"
+                doc="Text footer is optional:"
+            />
+
+            <parm name="NotifyPercent"
+                promptref="NotifyPercent"
+                datatype="Integer"
+                helpref="NotifyPercent"
+                encoderef="NotifyPercent"
+                mininteger="-1"
+                maxinteger="100"
+                default="[.code]='-1'"
+                skipif="[.code] == '-1'"
+                doc="Integer value must be:"
+            />-->
+
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

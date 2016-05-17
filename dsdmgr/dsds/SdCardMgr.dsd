@@ -1,0 +1,30 @@
+<wap-semanticsdoc version="4.3">
+<!-- SdCardMgr.DSD for V3 release -->
+
+    <prompt name="SdCardUsage" lang="en" value="Enable or Disable use of SdCard:" />
+
+    <help name="SdCardUsage" lang="en" value="Select the action to control usage of SdCard" />
+
+    <encode code="2" name="SdcardUsage" codesize="1" method="integer" datasize="1" />
+
+    <list name ="EnableDisableUsage" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <characteristic  type="SdCardMgr" doc="Manage SdCard Configuration" >
+
+                <parm name="SdCardUsage"
+                    promptref="SdCardUsage"
+                    value="[.code]"
+                    helpref="SdCardUsage"
+                    encoderef="SdCardUsage"
+                    listref="EnableDisableUsage"
+                    skipif="[.code] in (0)"
+                    doc="Supported actions are:"
+                />
+
+
+    </characteristic>
+</wap-semanticsdoc>

@@ -1,0 +1,762 @@
+<wap-semanticsdoc version = "4.4">
+
+<prompt name="DataType" lang="en" value="Data Type:"/>
+<help name="DataType" lang="en" value="Select the Data Type of the Condition to Test"/>
+<encode code ="1" name="DataType" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="BooleanSourceType" lang="en" value="Boolean Data Source:"/>
+<help name="BooleanSourceType" lang="en" value="Select the Boolean Data Source of the Condition to Test"/>
+<encode code ="11" name="BooleanSourceType" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="BooleanSystemProperty" lang="en" value="Boolean System Property:"/>
+<help name="BooleanSystemProperty" lang="en" value="Select the Boolean System Property to Test"/>
+<encode code ="111" name="BooleanSystemProperty" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="BooleanSystemValue" lang="en" value="Boolean System Value:"/>
+<help name="BooleanSystemValue" lang="en" value="Select the Boolean System Value to Test"/>
+<encode code ="112" name="BooleanSystemValue" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="BooleanSystemSetting" lang="en" value="Boolean System Setting:"/>
+<help name="BooleanSystemSetting" lang="en" value="Select the Boolean System Setting to Test"/>
+<encode code ="113" name="BooleanSystemSetting" codesize="1" method="string"/>
+
+<prompt name="BooleanCustomClass" lang="en" value="Boolean Custom Class Name:"/>
+<help name="BooleanCustomClass" lang="en" value="Enter the Class Name from which to Acquire a Boolean Value"/>
+<encode code ="114" name="BooleanCustomClass" codesize="1" method="string"/>
+
+<prompt name="BooleanCustomMember" lang="en" value="Boolean Custom Member Name:"/>
+<help name="BooleanCustomMember" lang="en" value="Enter the Member Name for which to Acquire a Boolean Value"/>
+<encode code ="115" name="BooleanCustomMember" codesize="1" method="string"/>
+
+<prompt name="BooleanCustomArgs" lang="en" value="Boolean Custom Arguments:"/>
+<help name="BooleanCustomArgs" lang="en" value="Select the Method Arguments to Pass to the Member (if a method)"/>
+<encode code ="116" name="BooleanCustomArgs" codesize="1" method="string"/>
+
+<prompt name="BooleanSystemFunction" lang="en" value="Boolean System Function:"/>
+<help name="BooleanSystemFunction" lang="en" value="Select the Boolean System Function to Test"/>
+<encode code ="117" name="BooleanSystemFunction" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="ArgFilePathAndName" lang="en" value="File Path and Name:"/>
+<help name="ArgFilePathAndName" lang="en" value="Select the Path and Name of the File to Check"/>
+<encode code ="1171" name="ArgFilePathAndName" codesize="2" method="string"/>
+
+<prompt name="ArgIpAddress" lang="en" value="IP Address:"/>
+<help name="ArgIpAddress" lang="en" value="Select the IP Address to Ping"/>
+<encode code ="1172" name="ArgIpAddress" codesize="2" method="ipv4"/>
+
+<prompt name="ArgStorageSpace" lang="en" value="Enter required storage space(in MBs) to validate:"/>
+<help name="ArgStorageSpace" lang="en" value="Enter required storage(in MBs) space to validate"/>
+<encode code ="1173" name="ArgStorageSpace" codesize="2" method="integer" datasize="2"/>
+
+<prompt name="ArgStorageSpaceDir" lang="en" value="Select the root directory:"/>
+<help name="ArgStorageSpaceDir" lang="en" value="Select the root directory"/>
+<encode code ="1174" name="ArgStorageSpaceDir" codesize="2" method="integer" datasize="1"/>
+<list name="ArgStorageSpaceDir">
+    <item code="1" ui="internal" text="internal"/>
+    <item code="2" ui="sdcard" text="sdcard"/>
+    <item code="3" ui="enterprise" text="enterprise"/>
+    <item code="4" ui="data" text="data"/>
+    <item code="5" ui="system" text="system"/>
+</list>
+
+<prompt name="BooleanConditionTest" lang="en" value="Boolean Condition Test:"/>
+<help name="BooleanConditionTest" lang="en" value="Select the Boolean Condition Test to Perform"/>
+<encode code ="21" name="BooleanConditionTest" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="IntegerSourceType" lang="en" value="Integer Data Source:"/>
+<help name="IntegerSourceType" lang="en" value="Select the Integer Data Source of the Condition to Test"/>
+<encode code ="12" name="IntegerSourceType" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="IntegerSystemProperty" lang="en" value="Integer System Property:"/>
+<help name="IntegerSystemProperty" lang="en" value="Select the Integer System Property to Test"/>
+<encode code ="121" name="IntegerSystemProperty" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="IntegerSystemValue" lang="en" value="Integer System Value:"/>
+<help name="IntegerSystemValue" lang="en" value="Select the Boolean System Value to Test"/>
+<encode code ="122" name="IntegerSystemValue" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="IntegerSystemSetting" lang="en" value="Integer System Setting:"/>
+<help name="IntegerSystemSetting" lang="en" value="Select the Boolean System Setting to Test"/>
+<encode code ="123" name="IntegerSystemSetting" codesize="1" method="string"/>
+
+<prompt name="IntegerCustomClass" lang="en" value="Integer Custom Class Name:"/>
+<help name="IntegerCustomClass" lang="en" value="Enter the Class Name from which to Acquire a Boolean Value"/>
+<encode code ="124" name="IntegerCustomClass" codesize="1" method="string"/>
+
+<prompt name="IntegerCustomMember" lang="en" value="Integer Custom Member Name:"/>
+<help name="IntegerCustomMember" lang="en" value="Enter the Member Name for which to Acquire a Boolean Value"/>
+<encode code ="125" name="IntegerCustomMember" codesize="1" method="string"/>
+
+<prompt name="IntegerCustomArgs" lang="en" value="Integer Custom Arguments:"/>
+<help name="IntegerCustomArgs" lang="en" value="Select the Method Arguments to Pass to the Member (if a method)"/>
+<encode code ="126" name="IntegerCustomArgs" codesize="1" method="string"/>
+
+<prompt name="IntegerConditionTest" lang="en" value="Integer Condition Test:"/>
+<help name="IntegerConditionTest" lang="en" value="Select the Integer Condition Test to Perform"/>
+<encode code ="22" name="IntegerConditionTest" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="IntegerConstantValue" lang="en" value="Integer Constant Value:"/>
+<help name="IntegerConstantValue" lang="en" value="Select the Integer Constant Value to Test"/>
+<encode code ="32" name="IntegerConstantValue" codesize="1" method="integer" datasize="2"/>
+
+<prompt name="StringSourceType" lang="en" value="String Data Source:"/>
+<help name="StringSourceType" lang="en" value="Select the String Data Source of the Condition to Test"/>
+<encode code ="13" name="StringSourceType" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="StringSystemProperty" lang="en" value="String System Property:"/>
+<help name="StringSystemProperty" lang="en" value="Select the String System Property to Test"/>
+<encode code ="131" name="StringSystemProperty" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="StringSystemValue" lang="en" value="String System Value:"/>
+<help name="StringSystemValue" lang="en" value="Select the Boolean System Value to Test"/>
+<encode code ="132" name="StringSystemValue" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="StringSystemSetting" lang="en" value="String System Setting:"/>
+<help name="StringSystemSetting" lang="en" value="Select the Boolean System Setting to Test"/>
+<encode code ="133" name="StringSystemSetting" codesize="1" method="string"/>
+
+<prompt name="StringCustomClass" lang="en" value="String Custom Class Name:"/>
+<help name="StringCustomClass" lang="en" value="Enter the Class Name from which to Acquire a Boolean Value"/>
+<encode code ="134" name="StringCustomClass" codesize="1" method="string"/>
+
+<prompt name="StringCustomMember" lang="en" value="String Custom Member Name:"/>
+<help name="StringCustomMember" lang="en" value="Enter the Member Name for which to Acquire a Boolean Value"/>
+<encode code ="135" name="StringCustomMember" codesize="1" method="string"/>
+
+<prompt name="StringCustomArgs" lang="en" value="String Custom Arguments:"/>
+<help name="StringCustomArgs" lang="en" value="Select the Method Arguments to Pass to the Member (if a method)"/>
+<encode code ="136" name="StringCustomArgs" codesize="1" method="string"/>
+
+<prompt name="StringConditionTest" lang="en" value="String Condition Test:"/>
+<help name="StringConditionTest" lang="en" value="Select the String Condition Test to Perform"/>
+<encode code ="23" name="StringConditionTest" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="StringConstantValue" lang="en" value="String Constant Value:"/>
+<help name="StringConstantValue" lang="en" value="Select the String Constant Value to Test"/>
+<encode code ="33" name="StringConstantValue" codesize="1" method="string"/>
+
+<prompt name="StringIgnoreCase" lang="en" value="String Ignore Case:"/>
+<help name="StringIgnoreCase" lang="en" value="Select whether to ignore case during String Comparison"/>
+<encode code ="3" name="StringIgnoreCase" codesize="1" method="boolean"/>
+
+<prompt name="ConditionRepeatCount" lang="en" value="Condition Repeat Count:"/>
+<help name="ConditionRepeatCount" lang="en" value="Select the Repeat Count for Testing the Condition"/>
+<encode code ="41" name="ConditionRepeatCount" codesize="1" method="integer" datasize="2"/>
+
+<prompt name="ConditionRepeatInterval" lang="en" value="Condition Repeat Interval:"/>
+<help name="ConditionRepeatInterval" lang="en" value="Select the Time (in seconds) between Tests of the Condition"/>
+<encode code ="42" name="ConditionRepeatInterval" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="ConditionStorage" lang="en" value="Condition Storage:"/>
+<help name="ConditionStorage" lang="en" value="Select where to Store the Condition Result"/>
+<encode code ="50" name="ConditionStorage" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="ConditionMetAction" lang="en" value="Condition Met Action:"/>
+<help name="ConditionMetAction" lang="en" value="Select the Action to Perform if the Condition is Met"/>
+<encode code ="51" name="ConditionMetAction" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="ConditionNotMetAction" lang="en" value="Condition Not Met Action:"/>
+<help name="ConditionNotMetAction" lang="en" value="Select the Action to Perform if the Condition is Not Met"/>
+<encode code ="52" name="ConditionNotMetAction" codesize="1" method="integer" datasize="1"/>
+
+<prompt name="ConditionFailMessage" lang="en" value="Condition Fail Message:"/>
+<help name="ConditionFailMessage" lang="en" value="Select the Message to Return if the Condition Fails"/>
+<encode code ="53" name="ConditionFailMessage" codesize="1" method="string"/>
+
+<prompt name="ConditionWaitMessage" lang="en" value="Condition Wait Message:"/>
+<help name="ConditionWaitMessage" lang="en" value="Select the Message to Return if the Condition Waits"/>
+<encode code ="54" name="ConditionWaitMessage" codesize="1" method="string"/>
+
+<list name="DataType">
+    <item code="1" text="Boolean"/>
+    <item code="2" text="Integer"/>
+    <item code="3" text="String"/>
+</list>
+
+<list name="BooleanSourceType">
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item code="1" text="Boolean System Property"/>-->
+    <item code="2" text="Pre-defined System Boolean Value"/>
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item code="3" text="Boolean System Setting"/>
+    <item code="4" text="Custom Class Boolean Member"/>-->
+    <item code="5" text="Pre-defined System Boolean Function"/>
+</list>
+
+<list name="BooleanSystemProperty">
+    <item code="1" text="ro.config.bsp.gms"   ui="GMS Build"/>
+    <item code="2" text="ro.config.bsp.fips"  ui="FIPS Build"/>
+    <item code="3" text="ro.config.bsp.beta"  ui="BETA Build"/>
+</list>
+
+<list name="BooleanSystemValue">
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item  code="1" text="" ui="Battery is Charging"/>-->
+    <item  code="2" text="" ui="Have any valid IP Address"/>
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item  code="3" text="" ui="USB ADB is connected"/>
+    <item  code="4" text="" ui="Wi-Fi is ON"/>
+    <item  code="5" text="" ui="Have a valid Wi-Fi IP Address"/>
+    <item  code="6" text="" ui="Cellular is ON"/>
+    <item  code="7" text="" ui="Have a valid Cellular IP Address"/>
+    <item  code="8" text="" ui="Ethernet is ON"/>
+    <item  code="9" text="" ui="Have a valid Ethernet IP Address"/>
+    <item code="10" text="" ui="Bluetooth is ON"/>
+    <item code="11" text="" ui="GPS is ON"/>
+    <item code="12" text="" ui="NFC is ON"/>
+    <item code="13" text="" ui="Accumulator 1"/>
+    <item code="14" text="" ui="Accumulator 2"/>-->
+</list>
+
+<list name="BooleanConditionTest">
+    <item code="0" text="None"/>
+    <item code="1" text="OR with Accumulator 1"/>
+    <item code="2" text="OR with Accumulator 2"/>
+    <item code="3" text="AND with Accumulator 1"/>
+    <item code="4" text="AND with Accumulator 2"/>
+</list>
+
+<list name="BooleanSystemFunction">
+    <item code="1" text="Check for File Existence"/>
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item code="2" text="Attempt to Ping IP Address"/>-->
+</list>
+
+<list name="IntegerSourceType">
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item code="1" text="Integer System Property"/>-->
+    <item code="2" text="Pre-defined System Integer Value"/>
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item code="3" text="Integer System Setting"/>
+    <item code="4" text="Custom Class Integer Member"/>-->
+</list>
+
+<list name="IntegerSystemProperty">
+    <item code="1" text="ro.build.version.sdk" ui="Platform SDK Version"/>
+    <item code="2" text="ro.config.bsp.major"  ui="BSP Major Version"/>
+    <item code="3" text="ro.config.bsp.minor"  ui="BSP Minor Version"/>
+    <item code="4" text="ro.config.bsp.build"  ui="BSP Build Number"/>
+</list>
+
+<list name="IntegerSystemValue">
+    <item  code="1" text="" ui="Battery Level"/>
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item  code="2" text="" ui="Battery Health"/>
+    <item  code="3" text="" ui="Wi-Fi Signal Quality"/>
+    <item  code="4" text="" ui="WWAN Signal Quality"/>-->
+    <item code="5" text="Available Storage Space"/>
+</list>
+
+<list name="IntegerConditionTest">
+    <item code="1" text="Equal-to a Constant Integer"/>
+    <item code="2" text="Not-Equal-to a Constant Integer"/>
+    <item code="3" text="Greater-than a Constant Integer"/>
+    <item code="4" text="Less-than a Constant Integer"/>
+    <item code="5" text="Greater-than-or-equal-to a Constant Integer"/>
+    <item code="6" text="Less-than-or-equal-to a Constant Integer"/>
+</list>
+
+<list name="StringSourceType">
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item code="1" text="String System Property"/>-->
+    <item code="2" text="Pre-defined System String Value"/>
+    <!--<item code="3" text="String System Setting"/>
+    <item code="4" text="Custom Class String Member"/>-->
+</list>
+
+<list name="StringSystemProperty">
+    <item  code="1" text="ro.product.name"              ui="Product Name"/>
+    <item  code="2" text="ro.product.model"             ui="Product Model"/>
+    <item  code="3" text="ro.product.device"            ui="Product Device"/>
+    <item  code="4" text="ro.product.manufacturer"      ui="Product Device"/>
+    <item  code="5" text="ro.product.locale.language"   ui="Product Language"/>
+    <item  code="6" text="ro.product.locale.region"     ui="Product Region"/>
+    <item  code="7" text="ro.build.date.utc"            ui="UTC Date and Time"/>
+    <item  code="8" text="ro.build.type"                ui="Build Type"/>
+    <item  code="9" text="ro.build.id"                  ui="Build ID"/>
+    <item code="10" text="ro.build.tags"                ui="Build Tags"/>
+    <item code="11" text="ro.build.version.release"     ui="Platform Version"/>
+    <item code="12" text="ro.build.version.incremental" ui="Build Number"/>
+    <item code="13" text="ro.serialno"                  ui="Serial Number"/>
+    <item code="14" text="ro.config.bsp.hwrev"          ui="Hardware Revision(s)"/>
+</list>
+
+<list name="StringSystemValue">
+    <!-- Not required for StageNow 2.1 -->
+    <!--<item  code="1" text="" ui="Wi-Fi IP Address"/>
+    <item  code="2" text="" ui="Wi-Fi MAC Address"/>
+    <item  code="3" text="" ui="Cellular IP Address"/>
+    <item  code="4" text="" ui="Cellular MAC Address"/>
+    <item  code="5" text="" ui="Ethernet IP Address"/>
+    <item  code="6" text="" ui="Ethernet MAC Address"/>
+    <item  code="7" text="" ui="Blutooth Address"/>
+    <item  code="8" text="" ui="Unique Hardware ID"/>
+    <item  code="9" text="" ui="Host Name"/>
+    <item code="10" text="" ui="Logged-in User"/>
+    <item code="11" text="" ui="Logged-in User Group(s)"/>-->
+    <item code="12" text="" ui="MX Version"/>
+    <item code="13" text="" ui="OSX Version"/>
+</list>
+
+<list name="StringConditionTest">
+    <item  code="1" text="Equal-to null"/>
+    <item  code="2" text="Not-Equal-to null"/>
+    <item  code="3" text="Equal-to empty-string"/>
+    <item  code="4" text="Not-Equal-to empty-string"/>
+    <item  code="5" text="Equal-to a Constant String"/>
+    <item  code="6" text="Not-Equal-to a Constant String"/>
+    <item  code="7" text="Contains a Constant String"/>
+    <item  code="8" text="Does-not-contain a Constant String"/>
+    <item  code="9" text="Starts-with a Constant String"/>
+    <item code="10" text="Does-not-start-with a Constant String"/>
+    <item code="11" text="Ends-with a Constant String"/>
+    <item code="12" text="Does-not-end-with a Constant String"/>
+</list>
+
+<list name="ConditionStorage">
+    <item code="0" text="Do not Store Condition Result"/>
+    <item code="1" text="Store in Accumulator 1"/>
+    <item code="2" text="Store in Accumulator 2"/>
+</list>
+
+<list name="ConditionAction">
+    <item code="0" text="Success"/>
+    <item code="1" text="Fail with characteristic-error"/>
+    <item code="2" text="Retry (up to specified times) then Fail"/>
+</list>
+
+<characteristic type="ConditionMgr" doc="Manage Testing of Device Conditions">
+
+    <parm name="DataType"
+        promptref="DataType"
+        helpref="DataType"
+        listref="DataType"
+        encoderef="DataType"
+        datatype="integer"
+        doc="Supported Types are:"
+    />
+
+    <characteristic type="BooleanDetails" presentif="[DataType.code] in (1)" doc="Details for Boolean Data Type">
+
+        <parm name="BooleanSourceType"
+            promptref="BooleanSourceType"
+            helpref="BooleanSourceType"
+            listref="BooleanSourceType"
+            encoderef="BooleanSourceType"
+            datatype="integer"
+            doc="Supported Types are:"
+        />
+
+        <parm name="BooleanSystemProperty"
+            presentif="[BooleanSourceType.code] in (1)"
+            promptref="BooleanSystemProperty"
+            helpref="BooleanSystemProperty"
+            listref="BooleanSystemProperty"
+            encoderef="BooleanSystemProperty"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported Properties are:"
+        />
+
+        <parm name="BooleanSystemValue"
+            presentif="[BooleanSourceType.code] in (2)"
+            promptref="BooleanSystemValue"
+            helpref="BooleanSystemValue"
+            listref="BooleanSystemValue"
+            encoderef="BooleanSystemValue"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported System Values are:"
+        />
+
+        <parm name="BooleanSystemSetting"
+            presentif="[BooleanSourceType.code] in (3)"
+            promptref="BooleanSystemSetting"
+            helpref="BooleanSystemSetting"
+            encoderef="BooleanSystemSetting"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="System Setting name length must be:"
+        />
+
+        <parm name="BooleanCustomClass"
+            presentif="[BooleanSourceType.code] in (4)"
+            promptref="BooleanCustomClass"
+            helpref="BooleanCustomClass"
+            encoderef="BooleanCustomClass"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="Class name length must be:"
+        />
+
+        <parm name="BooleanCustomMember"
+            presentif="[BooleanSourceType.code] in (4)"
+            promptref="BooleanCustomMember"
+            helpref="BooleanCustomMember"
+            encoderef="BooleanCustomMember"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="Member name length must be:"
+        />
+
+        <parm name="BooleanCustomArgs"
+            presentif="[BooleanSourceType.code] in (4)"
+            promptref="BooleanCustomArgs"
+            helpref="BooleanCustomArgs"
+            encoderef="BooleanCustomArgs"
+            datatype="string"
+            value="[.text]"
+            doc="Leave empty if no arguments"
+        />
+
+        <parm name="BooleanSystemFunction"
+            presentif="[BooleanSourceType.code] in (5)"
+            promptref="BooleanSystemFunction"
+            helpref="BooleanSystemFunction"
+            listref="BooleanSystemFunction"
+            encoderef="BooleanSystemFunction"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported System Functions are:"
+        />
+
+        <parm name="ArgFilePathAndName"
+            presentif="[BooleanSourceType.code] in (5) and [BooleanSystemFunction.code] in (1)"
+            promptref="ArgFilePathAndName"
+            helpref="ArgFilePathAndName"
+            encoderef="ArgFilePathAndName"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="String length must be:"
+        />
+
+        <parm name="ArgIpAddress"
+            presentif="[BooleanSourceType.code] in (5) and [BooleanSystemFunction.code] in (2)"
+            promptref="ArgIpAddress"
+            helpref="ArgIpAddress"
+            encoderef="ArgIpAddress"
+            datatype="IPV4"
+            doc="Value must be a valid IPV4 Address"
+        />
+
+        <!-- Not required for Stagenow 2.1 -->
+        <!--<parm name="BooleanConditionTest"
+            promptref="BooleanConditionTest"
+            helpref="BooleanConditionTest"
+            listref="BooleanConditionTest"
+            encoderef="BooleanConditionTest"
+            datatype="integer"
+            doc="Supported Tests are:"
+        />-->
+
+    </characteristic>
+
+    <characteristic type="IntegerDetails" presentif="[DataType.code] in (2)" doc="Details for Integer Data Type">
+
+        <parm name="IntegerSourceType"
+            promptref="IntegerSourceType"
+            helpref="IntegerSourceType"
+            listref="IntegerSourceType"
+            encoderef="IntegerSourceType"
+            datatype="integer"
+            doc="Supported Types are:"
+        />
+
+        <parm name="IntegerSystemProperty"
+            presentif="[IntegerSourceType.code] in (1)"
+            promptref="IntegerSystemProperty"
+            helpref="IntegerSystemProperty"
+            listref="IntegerSystemProperty"
+            encoderef="IntegerSystemProperty"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported Properties are:"
+        />
+
+        <parm name="IntegerSystemValue"
+            presentif="[IntegerSourceType.code] in (2)"
+            promptref="IntegerSystemValue"
+            helpref="IntegerSystemValue"
+            listref="IntegerSystemValue"
+            encoderef="IntegerSystemValue"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported System Values are:"
+        />
+
+        <parm name="IntegerSystemSetting"
+            presentif="[IntegerSourceType.code] in (3)"
+            promptref="IntegerSystemSetting"
+            helpref="IntegerSystemSetting"
+            encoderef="IntegerSystemSetting"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="System Setting name length must be:"
+        />
+
+        <parm name="IntegerCustomClass"
+            presentif="[IntegerSourceType.code] in (4)"
+            promptref="IntegerCustomClass"
+            helpref="IntegerCustomClass"
+            encoderef="IntegerCustomClass"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="Class name length must be:"
+        />
+
+        <parm name="IntegerCustomMember"
+            presentif="[IntegerSourceType.code] in (4)"
+            promptref="IntegerCustomMember"
+            helpref="IntegerCustomMember"
+            encoderef="IntegerCustomMember"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="Member name length must be:"
+        />
+
+        <parm name="IntegerCustomArgs"
+            presentif="[IntegerSourceType.code] in (4)"
+            promptref="IntegerCustomArgs"
+            helpref="IntegerCustomArgs"
+            encoderef="IntegerCustomArgs"
+            datatype="string"
+            value="[.text]"
+            doc="Leave empty if no arguments"
+        />
+
+        <parm name="ArgStorageSpaceDir"
+            presentif="[IntegerSourceType.code] in (2) and [IntegerSystemValue.code] in (5)"
+            promptref="ArgStorageSpaceDir"
+            helpref="ArgStorageSpaceDir"
+            listref="ArgStorageSpaceDir"
+            encoderef="ArgStorageSpaceDir"
+            datatype="integer"
+            doc="Supported storage space directories are:"
+        />
+
+
+        <parm name="IntegerConditionTest"
+            promptref="IntegerConditionTest"
+            helpref="IntegerConditionTest"
+            listref="IntegerConditionTest"
+            encoderef="IntegerConditionTest"
+            datatype="integer"
+            doc="Supported Tests are:"
+        />
+
+        <parm name="IntegerConstantValue"
+            presentif="[IntegerSystemValue.code] in (1)"
+            promptref="IntegerConstantValue"
+            helpref="IntegerConstantValue"
+            encoderef="IntegerConstantValue"
+            datatype="integer"
+            mininteger="-32768"
+            maxinteger="32767"
+            doc="Support values must be:"
+        />
+
+        <parm name="ArgStorageSpace"
+            presentif="[IntegerSourceType.code] in (2) and [IntegerSystemValue.code] in (5)"
+            mininteger="1"
+            maxinteger="1024"
+            promptref="ArgStorageSpace"
+            helpref="ArgStorageSpace"
+            encoderef="ArgStorageSpace"
+            datatype="integer"
+            doc="Value must be a valid integer"
+        />
+
+
+    </characteristic>
+
+    <characteristic type="StringDetails" presentif="[DataType.code] in (3)" doc="Details for String Data Type">
+
+        <parm name="StringSourceType"
+            promptref="StringSourceType"
+            helpref="StringSourceType"
+            listref="StringSourceType"
+            encoderef="StringSourceType"
+            datatype="integer"
+            doc="Supported Types are:"
+        />
+
+        <parm name="StringSystemProperty"
+            presentif="[StringSourceType.code] in (1)"
+            promptref="StringSystemProperty"
+            helpref="StringSystemProperty"
+            listref="StringSystemProperty"
+            encoderef="StringSystemProperty"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported Properties are:"
+        />
+
+        <parm name="StringSystemValue"
+            presentif="[StringSourceType.code] in (2)"
+            promptref="StringSystemValue"
+            helpref="StringSystemValue"
+            listref="StringSystemValue"
+            encoderef="StringSystemValue"
+            datatype="integer"
+            value="[.code]"
+            doc="Supported System Values are:"
+        />
+
+        <parm name="StringSystemSetting"
+            presentif="[StringSourceType.code] in (3)"
+            promptref="StringSystemSetting"
+            helpref="StringSystemSetting"
+            encoderef="StringSystemSetting"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="System Setting name length must be:"
+        />
+
+        <parm name="StringCustomClass"
+            presentif="[StringSourceType.code] in (4)"
+            promptref="StringCustomClass"
+            helpref="StringCustomClass"
+            encoderef="StringCustomClass"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="Class name length must be:"
+        />
+
+        <parm name="StringCustomMember"
+            presentif="[StringSourceType.code] in (4)"
+            promptref="StringCustomMember"
+            helpref="StringCustomMember"
+            encoderef="StringCustomMember"
+            datatype="string"
+            value="[.text]"
+            minsize="1"
+            doc="Member name length must be:"
+        />
+
+        <parm name="StringCustomArgs"
+            presentif="[StringSourceType.code] in (4)"
+            promptref="StringCustomArgs"
+            helpref="StringCustomArgs"
+            encoderef="StringCustomArgs"
+            datatype="string"
+            value="[.text]"
+            doc="Leave empty if no arguments"
+        />
+
+        <parm name="StringConditionTest"
+            promptref="StringConditionTest"
+            helpref="StringConditionTest"
+            listref="StringConditionTest"
+            encoderef="StringConditionTest"
+            datatype="integer"
+            doc="Supported Tests are:"
+        />
+
+        <parm name="StringConstantValue"
+            presentif="[StringConditionTest.code] >= 5"
+            promptref="StringConstantValue"
+            helpref="StringConstantValue"
+            encoderef="StringConstantValue"
+            datatype="string"
+            doc="No string length constraints:"
+        />
+
+        <parm name="StringIgnoreCase"
+            presentif="[StringConditionTest.code] >= 5"
+            promptref="StringIgnoreCase"
+            helpref="StringIgnoreCase"
+            encoderef="StringIgnoreCase"
+            datatype="boolean"
+            doc="Supported values are:"
+        />
+
+    </characteristic>
+
+    <!-- Not required for Stagenow 2.1-->
+    <!--<parm name="ConditionStorage"
+        promptref="ConditionStorage"
+        helpref="ConditionStorage"
+        listref="ConditionStorage"
+        encoderef="ConditionStorage"
+        datatype="integer"
+        doc="Supported Actions are:"
+    />-->
+
+    <parm name="ConditionMetAction"
+        promptref="ConditionMetAction"
+        helpref="ConditionMetAction"
+        listref="ConditionAction"
+        encoderef="ConditionMetAction"
+        datatype="integer"
+        doc="Supported Actions are:"
+    />
+
+    <parm name="ConditionNotMetAction"
+        promptref="ConditionNotMetAction"
+        helpref="ConditionNotMetAction"
+        listref="ConditionAction"
+        encoderef="ConditionNotMetAction"
+        datatype="integer"
+        default="[.code]='1'"
+        doc="Supported Actions are:"
+    />
+
+    <parm name="ConditionRepeatCount"
+        presentif="[ConditionMetAction.code] in (2) or [ConditionNotMetAction.code] in (2)"
+        promptref="ConditionRepeatCount"
+        helpref="ConditionRepeatCount"
+        encoderef="ConditionRepeatCount"
+        datatype="integer"
+        mininteger="2"
+        maxinteger="500"
+        default="[.code]=2"
+        doc="Support values must be:"
+    />
+
+    <parm name="ConditionRepeatInterval"
+        presentif="[ConditionMetAction.code] in (2) or [ConditionNotMetAction.code] in (2)"
+        promptref="ConditionRepeatInterval"
+        helpref="ConditionRepeatInterval"
+        encoderef="ConditionRepeatInterval"
+        datatype="integer"
+        mininteger="1"
+        maxinteger="60"
+        default="[.code]=1"
+        doc="Support values must be:"
+    />
+
+    <parm name="ConditionFailMessage"
+        presentif="[ConditionMetAction.code] >= 1 or [ConditionNotMetAction.code] >= 1"
+        promptref="ConditionFailMessage"
+        helpref="ConditionFailMessage"
+        encoderef="ConditionFailMessage"
+        datatype="string"
+        minsize="1"
+        maxsize="250"
+        doc="Message length must be:"
+    />
+
+    <parm name="ConditionWaitMessage"
+        presentif="[ConditionMetAction.code] in (2) or [ConditionNotMetAction.code] in (2)"
+        promptref="ConditionWaitMessage"
+        helpref="ConditionWaitMessage"
+        encoderef="ConditionWaitMessage"
+        datatype="string"
+        maxsize="250"
+        doc="Message length must be:"
+    />
+
+</characteristic>
+
+</wap-semanticsdoc>
+
+

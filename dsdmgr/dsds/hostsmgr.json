@@ -1,0 +1,1 @@
+{"name":"hostsmgr","parms":[{"name":"Version","label":"Version:"},{"name":"HostName","label":"Host name:","requires":{"osx":"","osxEnd":"","mx":"5.1","api":"","osxSpecific":"","osxSpecificList":"","osxExclude":"","osxExcludeEnd":""}}]}

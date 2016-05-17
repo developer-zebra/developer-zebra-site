@@ -1,0 +1,101 @@
+<wap-semanticsdoc version="4.4" revision="1" >
+<!-- Stats.DSD for V2 release -->
+
+    <prompt name="EnableStats" lang="en" value="Statistics Collection:" />
+    <prompt name="StatsFileName" lang="en" value="File Name:" />
+    <prompt name="SetStatsFilePath" lang="en" value="Set File Path?" />
+    <prompt name="StatsFilePath" lang="en" value="File path:" />
+    <prompt name="ClearStats" lang="en" value="Clear statistics file?" />
+    <prompt name="ReportInterval" lang="en" value="Minimum delay between reports in minutes" />
+
+    <help name="EnableStats" lang="en" value="Select whether MXMF should collect statistics on XML submiited to it" />
+    <help name="StatsFileName" lang="en" value="Enter the Name of File into which Statistics should be stored" />
+    <help name="SetStatsFilePath" lang="en" value="Set to specify a custom statistics file path (leave unchecked to use default path)" />
+    <help name="StatsFilePath" lang="en" value="Enter Path of File into which Statistics should be stored" />
+    <help name="ClearStats" lang="en" value="Select whether statistics file should be cleared" />
+    <help name="ReportInterval" lang="en" value="Minimum time to wait after sending statistics to Analytics Service; Data will be sent only if new activity occured; Set to 0 to disable reporting" />
+
+    <list name="EnableStats">
+        <item code="0" text="False" ui="Do not collect statistics on submitted XML"/>
+        <item code="1" text="True" ui="Collect statistics on submitted XML"/>
+    </list>
+
+    <list name="ClearStats">
+        <item code="0" text="" ui="Do nothing"/>
+        <item code="1" text="True" ui="Clear statistics file"/>
+    </list>
+
+
+    <characteristic type="Stats" doc="Collect MX Stats">
+
+        <parm name="EnableStats"
+            promptref="EnableStats"
+            helpref="EnableStats"
+            encoderef="EnableStats"
+            listref="EnableStats"
+            value="[.text]"
+            default="[.code]='1'"
+            doc="Supported options are:"
+        />
+
+        <parm name="StatsFileName" presentif="[EnableStats.code] in (1)"
+            promptref="StatsFileName"
+            helpref="StatsFileName"
+            encoderef="StatsFileName"
+            datatype="String"
+            default="[.text]='mxStats.xml'"
+            minsize="1"
+            maxsize="255"
+            doc="String length must be:"
+        />
+
+        <parm name="SetStatsFilePath" presentif="[EnableStats.code] in (1)"
+            promptref="SetStatsFilePath"
+            helpref="SetStatsFilePath"
+            encoderef="SetStatsFilePath"
+            datatype="Boolean"
+            skipif="[.code] in (0)"
+            doc="Supported values are:"
+        />
+
+        <parm name="StatsFilePath" presentif="[EnableStats.code] in (1) and [SetStatsFilePath.code] in (1)"
+            promptref="StatsFilePath"
+            helpref="StatsFilePath"
+            encoderef="StatsFilePath"
+            datatype="String"
+            default="[.text]='/storage/sdcard0/Stats/'"
+            minsize="1"
+            maxsize="255"
+            doc="String length must be:"
+        />
+
+        <parm name="ClearStats"
+            promptref="ClearStats"
+            helpref="ClearStats"
+            encoderef="ClearStats"
+            listref="ClearStats"
+            datatype="String"
+            value="[.text]"
+            skipif="[.code] in (0)"
+            doc="Supported options are:"
+        />
+
+        <parm name="ReportInterval" presentif="[EnableStats.code] in (1)"
+            promptref="ReportInterval"
+            helpref="ReportInterval"
+            encoderef="ReportInterval"
+            datatype="String"
+            default="[.text]='2880'"
+            minsize="1"
+            maxsize="255"
+            doc="String length must be:"
+        />
+
+
+
+
+
+
+    </characteristic>
+
+</wap-semanticsdoc>

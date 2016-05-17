@@ -1,0 +1,71 @@
+{{ctr.dsds}}: {{ctr.dsds_processed}}
+
+<form class="form-inline">
+  <div class="form-group">
+    <label >DSD</label>
+	<select class="form-control" ng-change="selectDSD()" ng-model="selectedDSD" ng-options="dsd as dsd.name for dsd in dsds">
+	  
+	</select>
+  </div>
+  <div class="form-group">
+    <label >OSX</label>
+    <input type="text" class="form-control" ng-model="requires.osx">
+  </div>
+  <div class="form-group">
+    <label >osxEnd</label>
+    <input type="text" class="form-control" ng-model="requires.osxEnd">
+  </div>
+  <div class="form-group">
+    <label >mx</label>
+    <input type="text" class="form-control" ng-model="requires.mx">
+  </div>
+  <div class="form-group">
+    <label >api</label>
+    <input type="text" class="form-control" ng-model="requires.api">
+  </div>
+  <div class="form-group">
+    <label >osxSpecific</label>
+    <input type="text" class="form-control" ng-model="requires.osxSpecific">
+  </div>
+  <div class="form-group">
+    <label >osxSpecificList</label>
+    <input type="text" class="form-control" ng-model="requires.osxSpecificList">
+  </div>
+  <div class="form-group">
+    <label >osxExclude</label>
+    <input type="text" class="form-control" ng-model="requires.osxExclude">
+  </div>
+  <div class="form-group">
+    <label >osxExcludeEnd</label>
+    <input type="text" class="form-control" ng-model="requires.osxExcludeEnd">
+  </div>
+  <button type="button" class="btn btn-default" ng-click="setRequires()">Set Requires</button>
+  <button type="button" class="btn btn-danger" ng-click="selectMissing()">Select All Missing</button>
+
+</form>
+
+
+	<h2>{{selectedDSD.name}}</h2>
+	<div class="panel panel-default" ng-repeat="parm in selectedDSD.parms">
+	  <div class="panel-body">
+	  	<div class="row"  ng-class="parm.requires || parm.listitems ? '' : 'bg-danger'">
+	  		<div class="col-md-1"><input type="checkbox" ng-model="parm.selected"></div>
+	  		<div class="col-md-3">{{parm.name}}</div>
+	  		<div class="col-md-2">{{parm.label}}</div>
+	  		<div class="col-md-2">{{parm.requires | json}}</div>
+	  		<div class="col-md-2"></div>
+	  		<div class="col-md-2"></div>
+	  	</div>
+	  	<div class="row" ng-repeat="listitem in parm.listitems" ng-class="listitem.requires ? '' : 'bg-danger'">
+	  		<div class="col-md-1"><input type="checkbox" ng-model="listitem.selected"></div>
+	  		<div class="col-md-3"></div>
+	  		<div class="col-md-2"></div>
+	  		<div class="col-md-2"></div>
+	  		<div class="col-md-2">{{listitem.code}} : {{listitem.text}}</div>
+	  		<div class="col-md-2">{{listitem.requires | json}}</div>
+	  	</div>
+
+	  </div>
+	</div>
+
+<pre>{{selectedDSD | json}}</pre>

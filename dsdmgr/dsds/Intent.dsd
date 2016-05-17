@@ -1,0 +1,380 @@
+<wap-semanticsdoc version="4.3">
+
+	<prompt name="Action" lang="en" value="Action:" /> 
+	<prompt name="ActionName" lang="en" value="Android Action Name:" />
+	<prompt name="Package" lang="en" value="Package Name:" />
+	<prompt name="Class" lang="en" value="Class Name:" />
+	<prompt name="Type" lang="en" value="MIME Type:" />
+	<prompt name="URI" lang="en" value="URI:" />
+	<prompt name="File" lang="en" value="File:" />
+	<prompt name="ExtraName" lang="en" value="Extra 0 Name:" />
+	<prompt name="ExtraType" lang="en" value="Extra 0 Type:" />
+	<prompt name="ExtraValue" lang="en" value="Extra 0 Value:" />
+	<prompt name="Extra1Name" lang="en" value="Extra 1 Name:" />
+	<prompt name="Extra1Type" lang="en" value="Extra 1 Type:" />
+	<prompt name="Extra1Value" lang="en" value="Extra 1 Value:" />
+	<prompt name="Extra2Name" lang="en" value="Extra 2 Name:" />
+	<prompt name="Extra2Type" lang="en" value="Extra 2 Type:" />
+	<prompt name="Extra2Value" lang="en" value="Extra 2 Value:" />
+	<prompt name="Extra3Name" lang="en" value="Extra 3 Name:" />
+	<prompt name="Extra3Type" lang="en" value="Extra 3 Type:" />
+	<prompt name="Extra3Value" lang="en" value="Extra 3 Value:" />
+	<prompt name="Extra4Name" lang="en" value="Extra 4 Name:" />
+	<prompt name="Extra4Type" lang="en" value="Extra 4 Type:" />
+	<prompt name="Extra4Value" lang="en" value="Extra 4 Value:" />
+
+
+
+	<help name="Action" lang="en" value="Specify the intent action to perform" />
+	<help name="ActionName" lang="en" value="Provide the name of the Android action to specify in the intent" />
+	<help name="Package" lang="en" value="Provide the target Android Package Name to specify in the intent" />
+	<help name="Class" lang="en" value="Provide the target Android Class Name to specify in the intent" />
+	<help name="Type" lang="en" value="Provide the content MIME Type to specify in the intent" />
+	<help name="URI" lang="en" value="Set the data Uri for the explicit MIME type for the intent" />
+	<help name="File" lang="en" value="Set the data file for the explicit MIME type for the intent" />
+	<help name="ExtraName" lang="en" value="Provide the Name of Extra 0 to attach to the intent" />
+	<help name="ExtraType" lang="en" value="Specify the Type of Extra 0 to attach to the intent" />
+	<help name="ExtraValue" lang="en" value="Provide the Value of Extra 0 to attach to the intent" />
+	<help name="Extra1Name" lang="en" value="Provide the Name of Extra 1 to attach to the intent" />
+	<help name="Extra1Type" lang="en" value="Specify the Type of Extra 1 to attach to the intent" />
+	<help name="Extra1Value" lang="en" value="Provide the Value of Extra 1 to attach to the intent" />
+	<help name="Extra2Name" lang="en" value="Provide the Name of Extra 2 to attach to the intent" />
+	<help name="Extra2Type" lang="en" value="Specify the Type of Extra 2 to attach to the intent" />
+	<help name="Extra2Value" lang="en" value="Provide the Value of Extra 2 to attach to the intent" />
+	<help name="Extra3Name" lang="en" value="Provide the Name of Extra 3 to attach to the intent" />
+	<help name="Extra3Type" lang="en" value="Specify the Type of Extra 3 to attach to the intent" />
+	<help name="Extra3Value" lang="en" value="Provide the Value of Extra 3 to attach to the intent" />
+	<help name="Extra4Name" lang="en" value="Provide the Name of Extra 4 to attach to the intent" />
+	<help name="Extra4Type" lang="en" value="Specify the Type of Extra 4 to attach to the intent" />
+	<help name="Extra4Value" lang="en" value="Provide the Value of Extra 4 to attach to the intent" />
+
+	
+	<list name="Action" > 
+		<item code="1" text="StartActivity" />
+		<item code="2" text="StartService" />
+		<item code="3" text="Broadcast" />
+	</list>
+
+	<list name="ExtraType" > 
+		<item code="none" text="None" />
+		<item code="int" text="Standard Integer" />
+		<item code="char" text="Character" />
+		<item code="charsequence" text="Character Sequence" />
+		<item code="float" text="Floating Point" />
+		<item code="long" text="Long Integer" />
+		<item code="boolean" text="Boolean" />
+		<item code="short" text="Short" />
+		<item code="double" text="Double Precision Floating Point" />
+		<item code="string" text="String" />
+		<item code="byte" text="Single Byte Integer" />
+	</list>
+
+	<encode code="1" name="Action" codesize="1" method="integer" datasize="1" /> 
+	<encode code="2" name="ActionName" codesize="1" method="string"/> 
+	<encode code="3" name="Package" codesize="1" method="string"/> 
+	<encode code="4" name="Class" codesize="1" method="string" /> 
+	<encode code="5" name="Type" codesize="1" method="string" /> 
+	<encode code="6" name="Uri" codesize="1" method="string" />
+	<encode code="7" name="File" codesize="1" method="string" />
+	<encode code="1001" name="ExtraName" codesize="2" method="string" /> 
+	<encode code="1002" name="ExtraType" codesize="2" method="string" /> 
+	<encode code="1003" name="ExtraValue" codesize="2" method="string" /> 
+	<encode code="1011" name="Extra1Name" codesize="2" method="string" /> 
+	<encode code="1012" name="Extra1Type" codesize="2" method="string" /> 
+	<encode code="1013" name="Extra1Value" codesize="2" method="string" /> 
+	<encode code="1021" name="Extra2Name" codesize="2" method="string" /> 
+	<encode code="1022" name="Extra2Type" codesize="2" method="string" /> 
+	<encode code="1023" name="Extra2Value" codesize="2" method="string" /> 
+	<encode code="1031" name="Extra3Name" codesize="2" method="string" /> 
+	<encode code="1032" name="Extra3Type" codesize="2" method="string" /> 
+	<encode code="1033" name="Extra3Value" codesize="2" method="string" /> 
+	<encode code="1041" name="Extra4Name" codesize="2" method="string" /> 
+	<encode code="1042" name="Extra4Type" codesize="2" method="string" /> 
+	<encode code="1043" name="Extra4Value" codesize="2" method="string" />
+
+	<characteristic  type="Intent"
+		doc="Send an intent to an activity or service"
+	>
+
+		<parm name="Action"
+			promptref="Action"
+			default="[.code]='1'"
+			value="[.text]"
+			helpref="Action"
+			listref="Action"
+			encoderef="Action"
+			doc="Supported actions are:"
+		/>
+
+		<parm name="ActionName"
+			datatype="String"
+			minsize="1"
+			maxsize="255"
+			promptref="ActionName"
+			helpref="ActionName"
+			encoderef="ActionName"
+			doc="String length must be:"
+		/>
+
+		<parm name="Type"
+			datatype="String"
+			minsize="0"
+			maxsize="255"
+			promptref="Type"
+			helpref="Type"
+			encoderef="Type"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+
+		<parm name="Package"
+			presentif="[Action.code] in (1,2)"
+			datatype="String"
+			minsize="0"
+			maxsize="255"
+			promptref="Package"
+			helpref="Package"
+			encoderef="Package"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+
+		<parm name="Class"
+			presentif="[Action.code] in (1,2)"
+			datatype="String"
+			minsize="0"
+			maxsize="255"
+			promptref="Class"
+			helpref="Class"
+			encoderef="Class"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+		
+		<parm name="Uri"
+			presentif="[Action.code] in (1,2)"
+			datatype="String"
+			minsize="0"
+			maxsize="255"
+			promptref="Uri"
+			helpref="Uri"
+			encoderef="Uri"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+
+		<parm name="File"
+			presentif="[Action.code] in (1,2)"
+			datatype="String"
+			minsize="0"
+			maxsize="255"
+			promptref="File"
+			helpref="File"
+			encoderef="File"
+			skipif="[.text]==''"
+			doc="String length must be:"
+		/>
+
+		<characteristic  type="Extra"
+			doc="Specify extra data to attach to the intent"
+		>
+
+			<parm name="ExtraType"
+				datatype="String"
+				promptref="ExtraType"
+				helpref="ExtraType"
+				listref="ExtraType"
+				encoderef="ExtraType"
+				skipif="[.code]=='none'"
+				doc="Supported options are:"
+			/>
+
+			<parm name="ExtraName"
+				presentif="[ExtraType.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="ExtraName"
+				helpref="ExtraName"
+				encoderef="ExtraName"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+			<parm name="ExtraValue"
+				presentif="[ExtraType.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="ExtraValue"
+				helpref="ExtraValue"
+				encoderef="ExtraValue"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+		</characteristic>
+
+		<characteristic  type="Extra1"
+			doc="Specify extra data to attach to the intent"
+		>
+
+			<parm name="Extra1Type"
+				datatype="String"
+				promptref="Extra1Type"
+				helpref="Extra1Type"
+				listref="ExtraType"
+				encoderef="Extra1Type"
+				skipif="[.code]=='none'"
+				doc="Supported options are:"
+			/>
+
+			<parm name="Extra1Name"
+				presentif="[Extra1Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra1Name"
+				helpref="Extra1Name"
+				encoderef="Extra1Name"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+			<parm name="Extra1Value"
+				presentif="[Extra1Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra1Value"
+				helpref="Extra1Value"
+				encoderef="Extra1Value"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+		</characteristic>
+
+		<characteristic  type="Extra2"
+			doc="Specify extra data to attach to the intent"
+		>
+
+			<parm name="Extra2Type"
+				datatype="String"
+				promptref="Extra2Type"
+				helpref="Extra2Type"
+				listref="ExtraType"
+				encoderef="Extra2Type"
+				skipif="[.code]=='none'"
+				doc="Supported options are:"
+			/>
+
+			<parm name="Extra2Name"
+				presentif="[Extra2Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra2Name"
+				helpref="Extra2Name"
+				encoderef="Extra2Name"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+			<parm name="Extra2Value"
+				presentif="[Extra2Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra2Value"
+				helpref="Extra2Value"
+				encoderef="Extra2Value"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+		</characteristic>
+
+		<characteristic  type="Extra3"
+			doc="Specify extra data to attach to the intent"
+		>
+
+			<parm name="Extra3Type"
+				datatype="String"
+				promptref="Extra3Type"
+				helpref="Extra3Type"
+				listref="ExtraType"
+				encoderef="Extra3Type"
+				skipif="[.code]=='none'"
+				doc="Supported options are:"
+			/>
+
+			<parm name="Extra3Name"
+				presentif="[Extra3Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra3Name"
+				helpref="Extra3Name"
+				encoderef="Extra3Name"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+			<parm name="Extra3Value"
+				presentif="[Extra3Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra3Value"
+				helpref="Extra3Value"
+				encoderef="Extra3Value"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+		</characteristic>
+
+		<characteristic  type="Extra4"
+			doc="Specify extra data to attach to the intent"
+		>
+
+			<parm name="Extra4Type"
+				datatype="String"
+				promptref="Extra4Type"
+				helpref="Extra4Type"
+				listref="ExtraType"
+				encoderef="Extra4Type"
+				skipif="[.code]=='none'"
+				doc="Supported options are:"
+			/>
+
+			<parm name="Extra4Name"
+				presentif="[Extra4Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra4Name"
+				helpref="Extra4Name"
+				encoderef="Extra4Name"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+			<parm name="Extra4Value"
+				presentif="[Extra4Type.code]!='none'"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="Extra4Value"
+				helpref="Extra4Value"
+				encoderef="Extra4Value"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+
+		</characteristic>
+	</characteristic>
+
+</wap-semanticsdoc>
+

@@ -1,0 +1,112 @@
+<wap-semanticsdoc version="4.3" revision="2">
+
+    <prompt name="ScreenLockTimeoutInterval" lang="en" value="Screen-Lock Timeout Interval:" />
+    <prompt name="UnknownSourcesStatus" lang="en" value="Install App from Unknown Sources:" />
+    <prompt name="DevAdminAction" lang="en" value="Device Administration Action:" />
+    <prompt name="DevAdminPkg" lang="en" value="Device Administrator Package Name:" />
+    <prompt name="DevAdminClass" lang="en" value="Device Administrator Class Name:" />
+
+    <help name="ScreenLockTimeoutInterval" lang="en" value="Select the Interval (after Display Timeout) when Screen-Lock will occur" />
+    <help name="UnknownSourcesStatus" lang="en" value="Select the status of App installation from Unknown Sources" />
+    <help name="DevAdminAction" lang="en" value="Select the Device Administration action to perform" />
+    <help name="DevAdminPkg" lang="en" value="Provide the Package Name for the Device Administration Action" />
+    <help name="DevAdminClass" lang="en" value="Provide the Class Name for the Device Administration Action " />
+
+    <list name ="ScreenLockTimeoutInterval" >
+           <item code="0"    text="Do not change" />
+           <item code="1"    text="Immediately after Display Timeout" />
+           <item code="5"    text="5 seconds after Display Timeout" />
+           <item code="15"   text="15 seconds after Display Timeout" />
+           <item code="30"   text="30 seconds after Display Timeout" />
+           <item code="60"   text="1 minute after Display Timeout" />
+           <item code="120"  text="2 minutes after Display Timeout" />
+           <item code="300"  text="5 minutes after Display Timeout" />
+           <item code="600"  text="10 minutes after Display Timeout" />
+           <item code="1800" text="30 minutes after Display Timeout" />
+    </list>
+
+
+    <list name ="UnknownSourcesStatus" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Turn On" />
+        <item code="2" text="Turn Off" />
+    </list>
+
+
+    <list name ="DevAdminAction" >
+        <item code="0" text="Do nothing" />
+        <item code="1" text="Turn On as Device Administrator" />
+        <item code="2" text="Turn Off as Device Administrator" />
+    </list>
+
+    <encode code ="100" name="ScreenLockTimeoutInterval" codesize="1" method="integer" datasize="2"/>
+    <encode code="101" name="UnknownSourcesStatus" codesize="1" method="integer" datasize="2"/>
+    <encode code="102" name="DevAdminAction" codesize="1" method="integer" datasize="2" />
+    <encode code="103" name="DevAdminPkg" codesize="1" method="string"/>
+    <encode code="104" name="DevAdminClass" codesize="1" method="string"/>
+
+    <characteristic  type="DevAdmin" doc= "Manage Device Administration"
+    >
+
+        <parm name="ScreenLockTimeoutInterval"
+            datatype="Integer"
+            promptref="ScreenLockTimeoutInterval"
+            default="[.code]=0"
+            helpref="ScreenLockTimeoutInterval"
+            listref="ScreenLockTimeoutInterval"
+            encoderef="ScreenLockTimeoutInterval"
+            skipif="[.code] in (0)"
+            doc="Supported Intervals are:"
+        />
+
+        <parm name="UnknownSourcesStatus"
+            datatype="Integer"
+            promptref="UnknownSourcesStatus"
+            default="[.code]=0"
+            helpref="UnknownSourcesStatus"
+            listref="UnknownSourcesStatus"
+            encoderef="UnknownSourcesStatus"
+            skipif="[.code] in (0)"
+            doc="Supported actions are:"
+        />
+
+        <characteristic type ="AppAsDevAdmin" doc="Configure an app as Device Admin">
+            <parm name="DevAdminAction"
+                datatype="Integer"
+                promptref="DevAdminAction"
+                default="[.code]=0"
+                helpref="DevAdminAction"
+                listref="DevAdminAction"
+                encoderef="DevAdminAction"
+                skipif="[.code] in (0)"
+                doc="Supported actions are:"
+            />
+
+            <characteristic type ="DevAdminDetails" doc="Details for an app to be configured as Device Admin"
+                    presentif="[DevAdminAction.code] in (1,2)"
+                >
+                <parm name="DevAdminPkg"
+                    datatype="String"
+                    minsize="1"
+                    maxsize="255"
+                    promptref="DevAdminPkg"
+                    helpref="DevAdminPkg"
+                    encoderef="DevAdminPkg"
+                    doc="String length must be:"
+                />
+
+                <parm name="DevAdminClass"
+                    datatype="String"
+                    minsize="1"
+                    maxsize="255"
+                    promptref="DevAdminClass"
+                    helpref="DevAdminClass"
+                    encoderef="DevAdminClass"
+                    doc="String length must be:"
+                />
+            </characteristic>
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>

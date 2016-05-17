@@ -1,0 +1,28 @@
+<wap-semanticsdoc version="4.4">
+
+	<prompt name="Version" lang="en" value="CSP Version:" />
+	<help name="Version" lang="en" value="Version of the CSP" />
+	
+	<prompt name="MXMFVersion" lang="en" value="MXMF Version:" />
+	<help name="MXMFVersion" lang="en" value="Version of the MXMF" />
+	
+  <characteristic type="MX"	query="1" promptref="MXMFVersion" helpref="MXMFVersion"
+	doc="Manage MXMF version"
+	>
+    <parm name="Version" 
+		datatype="String" 
+		promptref="Version"			
+		helpref="Version"
+		query="1"
+		set="0"
+	/>
+	
+	 <parm name="MXMFVersion" 
+		datatype="String" 
+		promptref="MXMFVersion"			
+		helpref="MXMFVersion"
+		query="2"
+		set="0"
+	/>
+  </characteristic>
+</wap-semanticsdoc>

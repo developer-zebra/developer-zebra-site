@@ -1,0 +1,95 @@
+<wap-semanticsdoc version="4.2" >
+<!-- PersistMgr.DSD for V2 release -->
+
+	<prompt name="PersistAction" lang="en" value="Persist Action:" /> 
+	<prompt name="PersistAsName" lang="en" value="Persist As Name:" />
+	<prompt name="PersistAsVersion" lang="en" value="Persist As Version:" />
+	<prompt name="PersistAsOrder" lang="en" value="Persist As Order:" />
+	<prompt name="PersistIfError" lang="en" value="Persist If Error?:" />
+
+	<help name="PersistAction" lang="en" value="Specify the persist action to perform" />
+	<help name="PersistAsName" lang="en" value="Provide the Name by which the XML will be identified when persisted" />
+	<help name="PersistAsVersion" lang="en" value="Provide the Version of the XML to be associated with the specified Name" />
+	<help name="PersistAsOrder" lang="en" value="Provide the optional Order in which the XML with the specified Name will be persisted" />
+	<help name="PersistIfError" lang="en" value="Specify whether the XML will be persisted if any errors occur" />
+
+	<list name="PersistAction" > 
+		<item code="1" text="Add persistent XML" ui = "Add current XML as a persistent profile"/>
+		<item code="2" text="Remove persistent XML" ui = "Remove the specified persistent profile"/>
+		<item code="3" text="Enable persistent XML" ui = "Enable the specified persistent profile"/>
+		<item code="4" text="Disable persistent XML" ui = "Disable the specified persistent profile"/>
+	</list>
+
+	<ident name="PersistAsName" type="name" />
+	<ident name="PersistAsVersion" type="version" />
+
+	<encode code="101" name="PersistAction" codesize="1" method="integer" datasize="1" /> 
+	<encode code="102" name="PersistAsName" codesize="1" method="string"/> 
+	<encode code="103" name="PersistAsVersion" codesize="1" method="string"/> 
+	<encode code="104" name="PersistAsOrder" codesize="1" method="integer" datasize="2" /> 
+	<encode code="105" name="PersistIfError" codesize="1" method="boolean" /> 
+
+	<characteristic  type="PersistMgr"
+		doc="Manage XML Persistence"
+	>
+
+		<parm name="PersistAction"
+			promptref="PersistAction"
+			default="[.code]='1'"
+			helpref="PersistAction"
+			listref="PersistAction"
+			encoderef="PersistAction"
+			doc="Supported actions are:"
+		/>
+
+		<characteristic type ="persist-details"
+			doc="Supply details about a specific persist action to be performed"
+		>
+
+			<parm name="PersistAsName"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="PersistAsName"
+				helpref="PersistAsName"
+				identref="PersistAsName"
+				encoderef="PersistAsName"
+				doc="String length must be:"
+			/>
+
+			<parm name="PersistAsVersion"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="PersistAsVersion"
+				helpref="PersistAsVersion"
+				identref="PersistAsVersion"
+				encoderef="PersistAsVersion"
+				doc="String length must be:"
+			/>
+
+			<parm name="PersistAsOrder"
+				datatype="Integer"
+				promptref="PersistAsOrder"
+				helpref="PersistAsOrder"
+				encoderef="PersistAsOrder"
+				skipif="[.text]=='0'"
+				doc="String length must be:"
+			/>
+
+			<parm name="PersistIfError" 
+				presentif="[PersistAction.code] == 1"
+				datatype="Boolean"
+				value="[.text]"
+				promptref="PersistIfError"
+				helpref="PersistIfError"
+				encoderef="PersistIfError"
+				doc="Supported values are:"
+			/>
+
+		</characteristic>
+
+	</characteristic>
+
+</wap-semanticsdoc>
+

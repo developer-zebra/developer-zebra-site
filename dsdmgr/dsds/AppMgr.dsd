@@ -1,0 +1,142 @@
+<wap-semanticsdoc version="5.1" >
+
+	<prompt name="Action" lang="en" value="Action:" /> 
+	<prompt name="APK" lang="en" value="APK Path and Name:" />
+	<prompt name="Package" lang="en" value="Package Name:" />
+	<prompt name="Class" lang="en" value="Class Name:" />
+	<prompt name="ProtecetedListAction" lang="en" value="Protected List Action:" /> 
+	<prompt name="AppInfoAction" lang="en" value="Access to App Info Action:" /> 
+	<prompt name="ApplicationName" lang="en" value="Application Name:" />
+	
+	<help name="Action" lang="en" value="Specify the application action to perform" />
+	<help name="APK" lang="en" value="Provide the path and name of the Android application APK file within the device file system" />
+	<help name="Package" lang="en" value="Provide the Android Package Name of the application for the application action(separated by commas)" />
+	<help name="Class" lang="en" value="Provide the Android Class Name of the application" />
+	<help name="ApplicationName" lang="en" value="Provide the Android Application Name for the application action" />
+	
+	
+	<help name="ProtectedListAction" lang="en" value="Specify the Protected List action to perform" />
+	<help name="ProtectedListPackage" lang="en" value="Provide the Android Package Name of the application for the Protected List action(separated by commas)" />
+	
+	<help name="AccessAppInfoAction" lang="en" value="Specify the application info access action to perform" />
+	<help name="AccessAppInfoPackage" lang="en" value="Provide the Android Package Name of the application for the application info access action(separated by commas)" />
+
+	<list name="Action" > 
+		<item code="0" text="Do nothing" ui="Do nothing" />
+		<item code="1" text="Install" ui="Install" />
+		<item code="2" text="Uninstall" ui="Uninstall" />
+		<item code="3" text="Upgrade" ui = "Upgrade" />
+		<item code="4" text="SetDefaultLauncher" ui = "Set as Default Launcher" />
+		<item code="5" text="EnableApplication" ui = "Enable Application" />
+		<item code="6" text="DisableApplication" ui = "Disable Application" />
+		<item code="7" text="ClearRecentApps" ui = "Clear Recent Apps List" />
+		<item code="8" text="LaunchApplication" ui = "Launch an application" />
+	</list>
+	
+	<list name="ProtectedListAction" > 
+		<item code="0" text="Do nothing" ui="Do nothing" />
+		<item code="1" text="AddAppToProtectedList" ui = "Add Application to Protected List" />
+		<item code="2" text="RemoveAppFromProtectedList" ui = "Remove Application from Protected List" />
+		<item code="3" text="ClearProtectedList" ui = "Remove All Application from Protected List" />
+	</list>
+	
+	<list name="AccessAppInfoAction" > 
+		<item code="0" text="Do nothing" ui="Do nothing" />
+		<item code="1" text="EnableAccessAllInfo" ui = "Enable Access to App Info for all applications" />
+		<item code="2" text="DisableAccessAllInfo" ui = "Disable Access to App Info for all applications" />
+	</list>
+
+	<encode code="101" name="Action" codesize="1" method="integer" datasize="1" /> 
+	<encode code="111" name="ProtectedListAction" codesize="1" method="integer" datasize="1" /> 
+	<encode code="121" name="AccessAppInfoAction" codesize="1" method="integer" datasize="1" /> 
+	<encode code="102" name="APK" codesize="1" method="string"/> 
+	<encode code="103" name="Package" codesize="1" method="string"/> 
+	<encode code="113" name="ProtectedListPackage" codesize="1" method="string"/> 
+	<encode code="123" name="AccessAppInfoPackage" codesize="1" method="string"/> 
+	<encode code="104" name="Class" codesize="1" method="string" /> 
+	<encode code="125" name="ApplicationName" codesize="1" method="string"/> 
+
+	<characteristic  type="AppMgr"
+		doc="Perform application (APK) management"
+	>
+
+		<parm name="Action"
+			promptref="Action"
+			default="[.code]='1'"
+			value="[.text]"
+			helpref="Action"
+			listref="Action"
+			encoderef="Action"
+			skipif="[.code] in (0)"
+			doc="Supported actions are:"
+		/>
+
+		<parm name="APK"
+			presentif="[Action.code] in (1,3)"
+			datatype="String"
+			minsize="1"
+			maxsize="255"
+			promptref="APK"
+			helpref="APK"
+			encoderef="APK"
+			doc="String length must be:"
+		/>
+
+		<parm name="Package"
+			presentif="[Action.code] in (2,4,5,6)"
+			datatype="String"
+			minsize="1"
+			maxsize="255"
+			promptref="Package"
+			helpref="Package"
+			encoderef="Package"
+			doc="String length must be:"
+		/>
+
+		<parm name="ApplicationName"
+			presentif="[Action.code] in (8)"
+			datatype="String"
+			minsize="1"
+			maxsize="255"
+			promptref="ApplicationName"
+			helpref="ApplicationName"
+			encoderef="ApplicationName"
+			doc="String length must be:"
+		/>
+
+		<parm name="ProtectedListAction"
+			promptref="ProtecetedListAction"
+			default="[.code]='0'"
+			value="[.text]"
+			helpref="ProtectedListAction"
+			listref="ProtectedListAction"
+			encoderef="ProtectedListAction"
+			skipif="[.code] in (0)"
+			doc="Supported actions are:"
+		/>
+		
+		<parm name="ProtectedListPackage"
+			presentif="[ProtectedListAction.code] in (1,2)"
+			datatype="String"
+			minsize="1"
+			maxsize="255"
+			promptref="Package"
+			helpref="ProtectedListPackage"
+			encoderef="ProtectedListPackage"
+			doc="String length must be:"
+		/>
+		
+		<parm name="AccessAppInfoAction"
+			promptref="AppInfoAction"
+			default="[.code]='0'"
+			value="[.text]"
+			helpref="AccessAppInfoAction"
+			listref="AccessAppInfoAction"
+			encoderef="AccessAppInfoAction"
+			skipif="[.code] in (0)"
+			doc="Supported actions are:"
+		/>
+							
+	</characteristic>
+
+</wap-semanticsdoc>

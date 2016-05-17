@@ -1,0 +1,239 @@
+<wap-semanticsdoc version="4.3" revision="1">
+<!-- ThreatMgr.DSD for V3 release -->
+    <prompt name="ThreatAction" lang="en" value="Configure handling of a threat:" />
+    <prompt name="ThreatName" lang="en" value="Name of the threat to detect :" />
+    <prompt name="MDMPackage" lang="en" value="MDM Client Package Name:" />
+    <prompt name="FormatSdcard" lang="en" value="Counter Measure - Format Sdcard :" />
+    <prompt name="FactoryReset" lang="en" value="Counter Measure - Factory Reset :" />
+    <prompt name="WipeSecureStorageKeys" lang="en" value="Counter Measure - Wipe Secure Storage Keys :" />
+    <prompt name="LockDevice" lang="en" value="Counter Measure - Lock Device :" />
+    <prompt name="UninstallApplication" lang="en" value="Counter Measure - Uninstall Application :" />
+    <prompt name="UnsolicitedAlert" lang="en" value="Counter Measure - Unsolicited Alert :" />
+    <prompt name="UninstallPackage" lang="en" value="Uninstall Package :" />
+    <prompt name="AlertClass" lang="en" value="Class for Unsolicited Alert :" />
+    <prompt name="AlertPackage" lang="en" value="Package for Unsolicited Alert:" />
+    <prompt name="AlertMsg" lang="en" value="Msg for Unsolicited Alert:" />
+    <prompt name="SignalOccurrenceOfThreat" lang="en" value="Signal occurrence of a threat:" />
+    <prompt name="SendThreatMsg" lang="en" value="Send threat message:" />
+
+    <help name="ThreatAction" lang="en" value="Select whether a Threat should be detected and, if so, how it should be mitigated" />
+    <help name="ThreatName" lang="en" value="Specify the name of Threat" />
+    <help name="MDMPackage" lang="en" value="Specify package name of MDM Client to be observed(System app only)" />
+    <help name="FormatSdcard" lang="en" value="Specify whether Format Sdcard should be performed " />
+    <help name="FactoryReset" lang="en" value="Specify whether Factory Reset should be performed" />
+    <help name="WipeSecureStorageKeys" lang="en" value="Specify whether Wipe Secure Storage Keys should be performed" />
+    <help name="LockDevice" lang="en" value="Specify whether Lock Device should be performed" />
+    <help name="UninstallApplication" lang="en" value="Specify whether Uninstall Application should be performed" />
+    <help name="UnsolicitedAlert" lang="en" value="Specify whether Unsolicited Alert should be performed" />
+    <help name="UninstallPackage" lang="en" value="Specify Package for Uninstall Application (separated by commas)" />
+    <help name="AlertClass" lang="en" value="Specify Class for Unsolicited Alert (separated by commas)" />
+    <help name="AlertPackage" lang="en" value="Specify Package for Unsolicited Alert (separated by commas)" />
+    <help name="AlertMsg" lang="en" value="Specify Alert Msg for Unsolicited Alert (separated by commas)" />
+    <help name="SignalOccurrenceOfThreat" lang="en" value="Select whether the occurrence of an externally detected Threat should be signaled" />
+    <help name="SendThreatMsg" lang="en" value="Send a message when signal the occurrence of threat" />
+
+    <list name ="ThreatNameList" >
+        <item code="1" text="MaxPasswordAttempts" ui = "Max Password Attempts"/>
+        <item code="2" text="MDMClientRemoval" ui = "MDM Client Removal"/>
+        <item code="3" text="ExternallyDetected" ui = "Externally Detected"/>
+        <item code="4" text="ExchangeActiveSyncCommand" ui = "Exchange Active Sync Command"/>
+        <item code="5" text="DeviceisRooted" ui = "Device is Rooted"/>
+    </list>
+
+    <list name ="StateOnOff" >
+        <item code="0" text="Do Nothing" />
+        <item code="1" text="Turn On" />
+        <item code="2" text="Turn Off" />
+    </list>
+
+    <list name ="CounterMeasureState" >
+        <item code="0" text="Do Not Perform" />
+        <item code="1" text="Perform" />
+    </list>
+
+    <list name ="ThreatSignalList" >
+        <item code="0" text="Do Nothing" />
+        <item code="1" text="Signal Occurrence" />
+    </list>
+
+    <encode code="1" name="ThreatAction" codesize="1" method="integer" datasize="1" />
+    <encode code="2" name="ThreatName" codesize="1" method="string"/>
+    <encode code="3" name="MDMPackage" codesize="1" method="string"/>
+    <encode code="4" name="FormatSdcard" codesize="1" method="integer" datasize="1" />
+    <encode code="5" name="FactoryReset" codesize="1" method="integer" datasize="1" />
+    <encode code="6" name="WipeSecureStorageKeys" codesize="1" method="integer" datasize="1"/>
+    <encode code="7" name="LockDevice" codesize="1" method="integer" datasize="1" />
+    <encode code="8" name="UninstallApplication" codesize="1" method="integer" datasize="1"/>
+    <encode code="9" name="UnsolicitedAlert" codesize="1" method="integer" datasize="1"/>
+    <encode code="10" name="UninstallPackage" codesize="1" method="string"/>
+    <encode code="11" name="AlertClass" codesize="1" method="string"/>
+    <encode code="12" name="AlertPackage" codesize="1" method="string"/>
+    <encode code="13" name="AlertMsg" codesize="1" method="string"/>
+    <encode code="14" name="SignalOccurrenceOfThreat" codesize="1" method="integer" datasize="1" />
+    <encode code="15" name="SendThreatMsg" codesize="1" method="string"/>
+
+
+    <characteristic  type="ThreatMgr" doc="Manage Threat Manager configuration">
+
+        <parm name="ThreatAction"
+            promptref="ThreatAction"
+            value="[.code]"
+            helpref="ThreatAction"
+            listref="StateOnOff"
+            encoderef="ThreatAction"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="ThreatName"
+            presentif="[ThreatAction.code] in (1, 2)"
+            promptref="ThreatName"
+            value="[.text]"
+            helpref="ThreatName"
+            listref="ThreatNameList"
+            encoderef="ThreatName"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="MDMPackage"
+            presentif="[ThreatName.code] in (2) and [ThreatAction.code] in (1)"
+            datatype="String"
+            minsize="1"
+            maxsize="255"
+            promptref="MDMPackage"
+            encoderef="MDMPackage"
+            helpref="MDMPackage"
+            doc="String length must be:"
+        />
+
+        <characteristic  type="CounterMeasure" doc="Perform Counter Measure">
+
+            <parm name="FormatSdcard"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1)"
+                promptref="FormatSdcard"
+                listref="CounterMeasureState"
+                helpref="FormatSdcard"
+                encoderef="FormatSdcard"
+                skipif="[.code] in (0)"
+                doc="String length must be:"
+            />
+            <parm name="FactoryReset"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1)"
+                promptref="FactoryReset"
+                listref="CounterMeasureState"
+                helpref="FactoryReset"
+                encoderef="FactoryReset"
+                skipif="[.code] in (0)"
+                doc="String length must be:"
+            />
+            <parm name="WipeSecureStorageKeys"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1)"
+                promptref="WipeSecureStorageKeys"
+                listref="CounterMeasureState"
+                helpref="WipeSecureStorageKeys"
+                encoderef="WipeSecureStorageKeys"
+                skipif="[.code] in (0)"
+                doc="String length must be:"
+            />
+
+            <parm name="LockDevice"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1)"
+                promptref="LockDevice"
+                listref="CounterMeasureState"
+                helpref="LockDevice"
+                encoderef="LockDevice"
+                skipif="[.code] in (0)"
+                doc="String length must be:"
+            />
+
+            <parm name="UninstallApplication"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1)"
+                promptref="UninstallApplication"
+                listref="CounterMeasureState"
+                helpref="UninstallApplication"
+                encoderef="UninstallApplication"
+                skipif="[.code] in (0)"
+                doc="String length must be:"
+            />
+
+            <parm name="UninstallPackage"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1) and [UninstallApplication.code] in (1)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="UninstallPackage"
+                helpref="UninstallPackage"
+                encoderef="UninstallPackage"
+                doc="String length must be:"
+            />
+
+            <parm name="UnsolicitedAlert"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1)"
+                promptref="UnsolicitedAlert"
+                listref="CounterMeasureState"
+                helpref="UnsolicitedAlert"
+                encoderef="UnsolicitedAlert"
+                skipif="[.code] in (0)"
+                doc="String length must be:"
+            />
+
+            <parm name="AlertPackage"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1) and [UnsolicitedAlert.code] in (1)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="AlertPackage"
+                helpref="AlertPackage"
+                encoderef="AlertPackage"
+                doc="String length must be:"
+            />
+
+            <parm name="AlertClass"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1) and [UnsolicitedAlert.code] in (1)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="AlertClass"
+                helpref="AlertClass"
+                encoderef="AlertClass"
+                doc="String length must be:"
+            />
+
+            <parm name="AlertMsg"
+                presentif="[ThreatName.code] in (1, 2, 3, 4, 5) and [ThreatAction.code] in (1) and [UnsolicitedAlert.code] in (1)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="AlertMsg"
+                helpref="AlertMsg"
+                encoderef="AlertMsg"
+                doc="String length must be:"
+            />
+
+        </characteristic>
+
+        <parm name="SignalOccurrenceOfThreat"
+            promptref="SignalOccurrenceOfThreat"
+            value="[.code]"
+            helpref="SignalOccurrenceOfThreat"
+            listref="ThreatSignalList"
+            encoderef="SignalOccurrenceOfThreat"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="SendThreatMsg"
+            presentif="[SignalOccurrenceOfThreat.code] in (1)"
+            datatype="String"
+            minsize="1"
+            maxsize="255"
+            promptref="SendThreatMsg"
+            helpref="SendThreatMsg"
+            encoderef="SendThreatMsg"
+            doc="String length must be:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>

@@ -1,0 +1,843 @@
+<wap-semanticsdoc version="4.4" revision="2">
+    <prompt name="Version" lang="en" value="Version:" />
+    <prompt name="QueryAvailableKeys" lang="en" value="Query available keys:"/>
+    <prompt name="QueryAvailableTables" lang="en" value="Query available tables:"/>
+    <prompt name="QueryDefaultKeyMapping" lang="en" value="Query default mappings for key:"/>
+    <prompt name="QueryChangedKeyMapping" lang="en" value="Query changed mappings for key:"/>
+    <prompt name="QueryCurrentKeyMapping" lang="en" value="Query current mappings for key:"/>
+    <prompt name="QueryDefaultKeyMappings" lang="en" value="Query default key mappings:"/>
+    <prompt name="QueryChangedKeyMappings" lang="en" value="Query changed key mappings:"/>
+    <prompt name="QueryCurrentKeyMappings" lang="en" value="Query current key mappings:"/>
+
+    <prompt name="Action" lang="en" value="Action:"/>
+    <prompt name="KeyIdentifier" lang="en" value="Choose a key to modify:"/>
+    <prompt name="KeyIdentifierQuery" lang="en" value="Choose a key to query:"/>
+
+    <prompt name="BaseBehavior" lang="en" value="Key behavior:"/>
+    <prompt name="BlueBehavior" lang="en" value="Key behavior in Blue mode:"/>
+    <prompt name="OrangeBehavior" lang="en" value="Key behavior in Orange mode:"/>
+    <prompt name="GreyBehavior" lang="en" value="Key behavior in Grey mode:"/>
+    <prompt name="ShiftBehavior" lang="en" value="Key behavior in Shift mode:"/>
+    <prompt name="ControlBehavior" lang="en" value="Key behavior in Control mode:"/>
+
+    <prompt name="Trigger" lang="en" value="Trigger:"/>
+    <prompt name="KeyCode" lang="en" value="Key-code:"/>
+    <prompt name="KeyCodeAdvanced" lang="en" value="Advanced:"/>
+    <prompt name="KeyCodeShiftState" lang="en" value="SHIFT state:"/>
+    <prompt name="KeyCodeAltState" lang="en" value="ALT state:"/>
+    <prompt name="KeyCodeCtrlState" lang="en" value="CTRL state:"/>
+    <prompt name="KeyCodeFnState" lang="en" value="FN state:"/>
+    <prompt name="SendIntent" lang="en" value="Send Intent:"/>
+    <prompt name="IntentType" lang="en" value="Intent type:"/>
+    <prompt name="IntentAction" lang="en" value="Action:"/>
+    <prompt name="IntentCategory" lang="en" value="Category:"/>
+    <prompt name="IntentPackage" lang="en" value="Package:"/>
+    <prompt name="IntentClass" lang="en" value="Class:"/>
+    <prompt name="IntentUri" lang="en" value="Data URI:"/>
+    <prompt name="IntentMimeType" lang="en" value="MIME type:"/>
+    <prompt name="IntentStringExtraName" lang="en" value="Extra parameter name:"/>
+    <prompt name="IntentStringExtraValue" lang="en" value="Extra parameter value:"/>
+    <prompt name="IntentAddKeyState" lang="en" value="Add key event?"/>
+    <prompt name="IntentIncludeFlags" lang="en" value="Include additional flags:"/>
+    <prompt name="LaunchActivityName" lang="en" value="Application name:"/>
+
+    <help name="Version" lang="en" value="Version of the CSP" />
+    <help name="QueryAvailableKeys" lang="en" value="Query keys available on the device"/>
+    <help name="QueryAvailableTables" lang="en" value="Query modifier tables available on the device"/>
+    <help name="QueryDefaultKeyMapping" lang="en" value="Query default key mappings for a specific key"/>
+    <help name="QueryChangedKeyMapping" lang="en" value="Query non-default mappings for a specific key"/>
+    <help name="QueryCurrentKeyMapping" lang="en" value="Query current (default and changed) mappings for a specific key"/>
+    <help name="QueryDefaultKeyMappings" lang="en" value="Query default key mappings for all tables"/>
+    <help name="QueryChangedKeyMappings" lang="en" value="Query changed key mappings for all tables"/>
+    <help name="QueryCurrentKeyMappings" lang="en" value="Query current key mappings for all tables"/>
+
+    <help name="Action" lang="en" value="Select the action to perform"/>
+    <help name="KeyIdentifier" lang="en" value="Select the key that will be re-mapped"/>
+    <help name="KeyIdentifierQuery" lang="en" value="Select the key that will be queried"/>
+
+    <help name="Behavior" lang="en" value="Select the behavior of the key"/>
+    <help name="Trigger" lang="en" value="Select the trigger to map to the key"/>
+    <help name="KeyCode" lang="en" value="Select the key-code to map to the key"/>
+    <help name="KeyCodeAdvanced" lang="en" value="Set advanced key-code options"/>
+    <help name="KeyCodeShiftState" lang="en" value="The state of SHIFT when the key-code is sent"/>
+    <help name="KeyCodeAltState" lang="en" value="The state of ALT when the key-code is sent"/>
+    <help name="KeyCodeCtrlState" lang="en" value="The state of CTRL when the key-code is sent"/>
+    <help name="KeyCodeFnState" lang="en" value="The state of FN when the key-code is sent"/>
+    <help name="SendIntent" lang="en" value="Select when the Intent should be sent for the key"/>
+    <help name="IntentType" lang="en" value="Select the type of Intent the key should send"/>
+    <help name="IntentAction" lang="en" value="Enter the action name for the Intent"/>
+    <help name="IntentCategory" lang="en" value="Enter the category for the Intent"/>
+    <help name="IntentPackage" lang="en" value="Enter the package name for the Intent"/>
+    <help name="IntentClass" lang="en" value="Enter the class name for the Intent"/>
+    <help name="IntentUri" lang="en" value="Enter the data URI for the Intent. This must be a valid URI format."/>
+    <help name="IntentMimeType" lang="en" value="Enter the MIME type for the Intent"/>
+    <help name="IntentStringExtraName" lang="en" value="Enter the extra parameter name to be attached to the Intent"/>
+    <help name="IntentStringExtraValue" lang="en" value="Enter the extra parameter string value to be attached to the Intent"/>
+    <help name="IntentAddKeyState" lang="en" value="Select whether the key event should be added to the Intent"/>
+    <help name="IntentIncludeFlags" lang="en" value="Enter flag bits in hex that should be set for the Intent"/>
+    <help name="LaunchActivityName" lang="en" value="Enter the name of the application to launch"/>
+
+    <list name="Action">
+        <item code="1" text="Remap a key"/>
+        <item code="2" text="Default all key mappings"/>
+    </list>
+
+    <list name="Behavior">
+        <item code="0" text="No change"/>
+        <item code="2" text="Send key-code"/>
+        <item code="1" text="Send trigger"/>
+        <item code="4" text="Launch application"/>
+        <item code="3" text="Send intent"/>
+        <item code="5" text="Suppress key"/>
+        <item code="7" text="Reset to default"/>
+    </list>
+
+    <list name="Trigger">
+        <item text="10016"              ui="Trigger 1"/>
+        <item text="10017"              ui="Trigger 2"/>
+        <item text="10018"              ui="Trigger 3"/>
+        <item text="10019"              ui="Trigger 4"/>
+        <item text="10020"              ui="Trigger 5"/>
+        <item text="10021"              ui="Trigger 6"/>
+        <item text="10022"              ui="Trigger 7"/>
+        <item text="10023"              ui="Trigger 8"/>
+    </list>
+
+    <list name="KeyIdentifier">
+        <item text=""                   ui="None" />
+        <item text="0"                  ui="0" />
+        <item text="1"                  ui="1" />
+        <item text="2"                  ui="2" />
+        <item text="3"                  ui="3" />
+        <item text="4"                  ui="4" />
+        <item text="5"                  ui="5" />
+        <item text="6"                  ui="6" />
+        <item text="7"                  ui="7" />
+        <item text="8"                  ui="8" />
+        <item text="9"                  ui="9" />
+        <item text="A"                  ui="A" />
+        <item text="B"                  ui="B" />
+        <item text="C"                  ui="C" />
+        <item text="D"                  ui="D" />
+        <item text="E"                  ui="E" />
+        <item text="F"                  ui="F" />
+        <item text="G"                  ui="G" />
+        <item text="H"                  ui="H" />
+        <item text="I"                  ui="I" />
+        <item text="J"                  ui="J" />
+        <item text="K"                  ui="K" />
+        <item text="L"                  ui="L" />
+        <item text="M"                  ui="M" />
+        <item text="N"                  ui="N" />
+        <item text="O"                  ui="O" />
+        <item text="P"                  ui="P" />
+        <item text="Q"                  ui="Q" />
+        <item text="R"                  ui="R" />
+        <item text="S"                  ui="S" />
+        <item text="T"                  ui="T" />
+        <item text="U"                  ui="U" />
+        <item text="V"                  ui="V" />
+        <item text="W"                  ui="W" />
+        <item text="X"                  ui="X" />
+        <item text="Y"                  ui="Y" />
+        <item text="Z"                  ui="Z" />
+        <item text="F1"                 ui="F1" />
+        <item text="F2"                 ui="F2" />
+        <item text="F3"                 ui="F3" />
+        <item text="F4"                 ui="F4" />
+        <item text="F5"                 ui="F5" />
+        <item text="F6"                 ui="F6" />
+        <item text="F7"                 ui="F7" />
+        <item text="F8"                 ui="F8" />
+        <item text="F9"                 ui="F9" />
+        <item text="F10"                ui="F10" />
+        <item text="F11"                ui="F11" />
+        <item text="F12"                ui="F12" />
+        <item text="ENTER"              ui="Enter" />
+        <item text="UP"                 ui="Up" />
+        <item text="DOWN"               ui="Down" />
+        <item text="LEFT"               ui="Left" />
+        <item text="RIGHT"              ui="Right" />
+        <item text="ESC"                ui="Escape" />
+        <item text="BACKSPACE"          ui="Backspace" />
+        <item text="DOT"                ui="Period" />
+        <item text="STAR"               ui="Star" />
+        <item text="POUND"              ui="Pound" />
+        <item text="SPACE"              ui="Space" />
+        <item text="RETURN"             ui="Return" />
+        <item text="CLR"                ui="Clear" />
+        <item text="FIELD_EXIT"         ui="Field Exit" />
+        <item text="ALT"                ui="Alt" />
+        <item text="CTRL"               ui="Control" />
+        <item text="SHIFT"              ui="Shift" />
+        <item text="BLUE"               ui="Blue" />
+        <item text="ORANGE"             ui="Orange" />
+        <item text="GREEN"              ui="Green Dot" />
+        <item text="RED"                ui="Red Dot" />
+        <item text="VOLUMEUP"           ui="Volume Up" />
+        <item text="VOLUMEDOWN"         ui="Volume Down" />
+        <item text="SCAN"               ui="Scan" />
+        <item text="GRIP_TRIGGER"       ui="Grip Trigger" />
+        <item text="LEFT_TRIGGER_1"     ui="Button L1" />
+        <item text="LEFT_TRIGGER_2"     ui="Button L2" />
+        <item text="RIGHT_TRIGGER_1"    ui="Button R1" />
+        <item text="RIGHT_TRIGGER_2"    ui="Button R2" />
+        <item text="HEADSET_HOOK"       ui="Headset Button" />
+        <item text="BACK"               ui="Back" />
+        <item text="HOME"               ui="Home" />
+        <item text="MENU"               ui="Menu" />
+        <item text="RECENT"             ui="Recent" />
+        <item text="SEARCH"             ui="Search" />
+        <item text="KEYLIGHT"           ui="Keyboard Backlight" />
+        <item text="LAMP"               ui="Display Backlight" />
+        <item text="POWER"              ui="Power" />
+    </list>
+
+    <list name="KeyCode">
+        <item text="7"                  ui="0" />
+        <item text="8"                  ui="1" />
+        <item text="9"                  ui="2" />
+        <item text="10"                 ui="3" />
+        <item text="11"                 ui="4" />
+        <item text="12"                 ui="5" />
+        <item text="13"                 ui="6" />
+        <item text="14"                 ui="7" />
+        <item text="15"                 ui="8" />
+        <item text="16"                 ui="9" />
+        <item text="29"                 ui="A" />
+        <item text="30"                 ui="B" />
+        <item text="31"                 ui="C" />
+        <item text="32"                 ui="D" />
+        <item text="33"                 ui="E" />
+        <item text="34"                 ui="F" />
+        <item text="35"                 ui="G" />
+        <item text="36"                 ui="H" />
+        <item text="37"                 ui="I" />
+        <item text="38"                 ui="J" />
+        <item text="39"                 ui="K" />
+        <item text="40"                 ui="L" />
+        <item text="41"                 ui="M" />
+        <item text="42"                 ui="N" />
+        <item text="43"                 ui="O" />
+        <item text="44"                 ui="P" />
+        <item text="45"                 ui="Q" />
+        <item text="46"                 ui="R" />
+        <item text="47"                 ui="S" />
+        <item text="48"                 ui="T" />
+        <item text="49"                 ui="U" />
+        <item text="50"                 ui="V" />
+        <item text="51"                 ui="W" />
+        <item text="52"                 ui="X" />
+        <item text="53"                 ui="Y" />
+        <item text="54"                 ui="Z" />
+        <item text="66"                 ui="Enter" />
+        <item text="61"                 ui="Tab" />
+        <item text="62"                 ui="Space" />
+        <item text="111"                ui="Escape" />
+        <item text="67"                 ui="Delete" />
+        <item text="131"                ui="F1" />
+        <item text="132"                ui="F2" />
+        <item text="133"                ui="F3" />
+        <item text="134"                ui="F4" />
+        <item text="135"                ui="F5" />
+        <item text="136"                ui="F6" />
+        <item text="137"                ui="F7" />
+        <item text="138"                ui="F8" />
+        <item text="139"                ui="F9" />
+        <item text="140"                ui="F10" />
+        <item text="141"                ui="F11" />
+        <item text="142"                ui="F12" />
+        <item text="144"                ui="NUMPAD 0" />
+        <item text="145"                ui="NUMPAD 1" />
+        <item text="146"                ui="NUMPAD 2" />
+        <item text="147"                ui="NUMPAD 3" />
+        <item text="148"                ui="NUMPAD 4" />
+        <item text="149"                ui="NUMPAD 5" />
+        <item text="150"                ui="NUMPAD 6" />
+        <item text="151"                ui="NUMPAD 7" />
+        <item text="152"                ui="NUMPAD 8" />
+        <item text="153"                ui="NUMPAD 9" />
+        <item text="154"                ui="NUMPAD Divide" />
+        <item text="155"                ui="NUMPAD Multiply" />
+        <item text="156"                ui="NUMPAD Subtract" />
+        <item text="157"                ui="NUMPAD Add" />
+        <item text="158"                ui="NUMPAD Period" />
+        <item text="159"                ui="NUMPAD Comma" />
+        <item text="160"                ui="NUMPAD Enter" />
+        <item text="161"                ui="NUMPAD Equals" />
+        <item text="162"                ui="NUMPAD Left Parenthesis" />
+        <item text="163"                ui="NUMPAD Right Parenthesis" />
+        <item text="19"                 ui="DPAD Up" />
+        <item text="20"                 ui="DPAD Down" />
+        <item text="21"                 ui="DPAD Left" />
+        <item text="22"                 ui="DPAD Right" />
+        <item text="23"                 ui="DPAD Center" />
+        <item text="122"                ui="Move Home" />
+        <item text="123"                ui="Move End" />
+        <item text="92"                 ui="Page Up" />
+        <item text="93"                 ui="Page Down" />
+        <item text="124"                ui="Insert" />
+        <item text="112"                ui="Forward Delete" />
+        <item text="28"                 ui="Clear" />
+        <item text="10027"              ui="Blue" />
+        <item text="10028"              ui="Orange" />
+        <item text="10029"              ui="Grey" />
+        <item text="10030"              ui="Alt" />
+        <item text="10031"              ui="Control" />
+        <item text="10032"              ui="Shift" />
+        <item text="59"                 ui="Left Shift" />
+        <item text="60"                 ui="Right Shift" />
+        <item text="57"                 ui="Left Alt" />
+        <item text="58"                 ui="Right Alt" />
+        <item text="113"                ui="Left Control" />
+        <item text="114"                ui="Right Control" />
+        <item text="117"                ui="Meta Left" />
+        <item text="118"                ui="Meta Right" />
+        <item text="115"                ui="Caps Lock" />
+        <item text="143"                ui="Num Lock" />
+        <item text="116"                ui="Scroll Lock" />
+        <item text="120"                ui="SysRq" />
+        <item text="121"                ui="Break" />
+        <item text="119"                ui="Function" />
+        <item text="81"                 ui="Plus" />
+        <item text="69"                 ui="Minus" />
+        <item text="70"                 ui="Equals" />
+        <item text="71"                 ui="Left Bracket" />
+        <item text="72"                 ui="Right Bracket" />
+        <item text="68"                 ui="Grave" />
+        <item text="76"                 ui="Slash" />
+        <item text="73"                 ui="Backslash" />
+        <item text="74"                 ui="Semicolon" />
+        <item text="75"                 ui="Apostrophe" />
+        <item text="55"                 ui="Comma" />
+        <item text="56"                 ui="Period" />
+        <item text="17"                 ui="Star" />
+        <item text="18"                 ui="Pound" />
+        <item text="77"                 ui="At" />
+        <item text="4"                  ui="Back" />
+        <item text="125"                ui="Forward" />
+        <item text="3"                  ui="Home" />
+        <item text="82"                 ui="Menu" />
+        <item text="176"                ui="Settings" />
+        <item text="187"                ui="Application Switch" />
+        <item text="210"                ui="Calculator" />
+        <item text="64"                 ui="Explorer" />
+        <item text="65"                 ui="Envelope" />
+        <item text="174"                ui="Bookmark" />
+        <item text="209"                ui="Music" />
+        <item text="5"                  ui="Call" />
+        <item text="6"                  ui="End Call" />
+        <item text="91"                 ui="Microphone Mute" />
+        <item text="27"                 ui="Camera" />
+        <item text="84"                 ui="Search" />
+        <item text="207"                ui="Contacts" />
+        <item text="208"                ui="Calendar" />
+        <item text="24"                 ui="Volume Up" />
+        <item text="25"                 ui="Volume Down" />
+        <item text="164"                ui="Volume Mute" />
+        <item text="221"                ui="Brightness Up" />
+        <item text="220"                ui="Brightness Down" />
+        <item text="26"                 ui="Power" />
+        <item text="223"                ui="Sleep" />
+        <item text="224"                ui="Wakeup" />
+        <item text="79"                 ui="Headset" />
+        <item text="228"                ui="Push-to-talk" />
+        <item text="80"                 ui="Camera Focus" />
+        <item text="85"                 ui="Media Play/Pause" />
+        <item text="86"                 ui="Media Stop" />
+        <item text="87"                 ui="Media Next" />
+        <item text="88"                 ui="Media Previous" />
+        <item text="89"                 ui="Media Rewind" />
+        <item text="90"                 ui="Media Fast-Forward" />
+        <item text="126"                ui="Media Play" />
+        <item text="127"                ui="Media Pause" />
+        <item text="128"                ui="Media Close" />
+        <item text="129"                ui="Media Eject" />
+        <item text="130"                ui="Media Record" />
+        <item text="102"                ui="Button L1" />
+        <item text="103"                ui="Button R1" />
+        <item text="104"                ui="Button L2" />
+        <item text="105"                ui="Button R2" />
+        <item text="96"                 ui="Button A" />
+        <item text="97"                 ui="Button B" />
+        <item text="98"                 ui="Button C" />
+        <item text="99"                 ui="Button X" />
+        <item text="100"                ui="Button Y" />
+        <item text="101"                ui="Button Z" />
+        <item text="106"                ui="Left Thumb Button" />
+        <item text="107"                ui="Right Thumb Button" />
+        <item text="108"                ui="Start Button" />
+        <item text="109"                ui="Select Button" />
+        <item text="110"                ui="Mode Button" />
+        <item text="188"                ui="Gamepad Button 1" />
+        <item text="189"                ui="Gamepad Button 2" />
+        <item text="190"                ui="Gamepad Button 3" />
+        <item text="191"                ui="Gamepad Button 4" />
+        <item text="192"                ui="Gamepad Button 5" />
+        <item text="193"                ui="Gamepad Button 6" />
+        <item text="194"                ui="Gamepad Button 7" />
+        <item text="195"                ui="Gamepad Button 8" />
+        <item text="196"                ui="Gamepad Button 9" />
+        <item text="197"                ui="Gamepad Button 10" />
+        <item text="198"                ui="Gamepad Button 11" />
+        <item text="199"                ui="Gamepad Button 12" />
+        <item text="200"                ui="Gamepad Button 13" />
+        <item text="201"                ui="Gamepad Button 14" />
+        <item text="202"                ui="Gamepad Button 15" />
+        <item text="203"                ui="Gamepad Button 16" />
+        <item text="211"                ui="Zenkaku/Hankaku" />
+        <item text="212"                ui="Eisu" />
+        <item text="213"                ui="Muhenkan" />
+        <item text="214"                ui="Henkan" />
+        <item text="215"                ui="Katakana/Hiragana" />
+        <item text="216"                ui="Yen" />
+        <item text="217"                ui="Ro" />
+        <item text="218"                ui="Kana" />
+    </list>
+
+    <list name="ModifierChangesList">
+        <item code="0" text="Use existing state" />
+        <item code="1" text="Force ON" />
+        <item code="2" text="Force OFF" />
+    </list>
+
+    <list name="ModifierChangesListFn">
+        <item code="0" text="Use existing state" />
+        <item code="1" text="Force ON" />
+    </list>
+
+    <list name="SendIntent">
+        <item code="1" text="On key down"/>
+        <item code="2" text="On key up"/>
+        <item code="3" text="On both key down and up"/>
+    </list>
+
+    <list name="IntentType">
+        <item code="1" text="Start activity"/>
+        <item code="2" text="Broadcast"/>
+    </list>
+
+    <encode code="1" name="Action" codesize="2" method="integer" datasize="1"/>
+    <encode code="99" name="KeyIdentifier" codesize="2" method="string"/>
+
+    <encode code="101" name="BaseBehavior" codesize="2" method="integer" datasize="1"/>
+    <encode code="102" name="BaseTrigger" codesize="2" method="integer" datasize="4"/>
+    <encode code="103" name="BaseKeyCode" codesize="2" method="integer" datasize="4"/>
+    <encode code="104" name="BaseKeyCodeAdvanced" codesize="2" method="boolean" datasize="1"/>
+    <encode code="105" name="BaseKeyCodeShiftState" codesize="2" method="integer" datasize="1"/>
+    <encode code="106" name="BaseKeyCodeAltState" codesize="2" method="integer" datasize="1"/>
+    <encode code="107" name="BaseKeyCodeCtrlState" codesize="2" method="integer" datasize="1"/>
+    <encode code="108" name="BaseKeyCodeFnState" codesize="2" method="integer" datasize="1"/>
+    <encode code="120" name="BaseSendIntent" codesize="2" method="integer" datasize="1"/>
+    <encode code="121" name="BaseIntentType" codesize="2" method="integer" datasize="1"/>
+    <encode code="122" name="BaseIntentAction" codesize="2" method="string" />
+    <encode code="123" name="BaseIntentCategory" codesize="2" method="string" />
+    <encode code="124" name="BaseIntentPackage" codesize="2" method="string" />
+    <encode code="125" name="BaseIntentClass" codesize="2" method="string" />
+    <encode code="126" name="BaseIntentUri" codesize="2" method="string" />
+    <encode code="127" name="BaseIntentMimeType" codesize="2" method="string" />
+    <encode code="128" name="BaseIntentStringExtraName" codesize="2" method="string" />
+    <encode code="129" name="BaseIntentStringExtraValue" codesize="2" method="string" />
+    <encode code="130" name="BaseIntentAddKeyState" codesize="2" method="boolean" />
+    <encode code="131" name="BaseIntentIncludeFlags" codesize="2" method="hex" datasize="4"/>
+    <encode code="132" name="BaseLaunchActivityName" codesize="2" method="string" />
+
+    <encode code="201" name="BlueBehavior" codesize="2" method="integer" datasize="1"/>
+    <encode code="202" name="BlueTrigger" codesize="2" method="integer" datasize="4"/>
+    <encode code="203" name="BlueKeyCode" codesize="2" method="integer" datasize="4"/>
+    <encode code="204" name="BlueKeyCodeAdvanced" codesize="2" method="boolean" datasize="1"/>
+    <encode code="205" name="BlueKeyCodeShiftState" codesize="2" method="integer" datasize="1"/>
+    <encode code="206" name="BlueKeyCodeAltState" codesize="2" method="integer" datasize="1"/>
+    <encode code="207" name="BlueKeyCodeCtrlState" codesize="2" method="integer" datasize="1"/>
+    <encode code="208" name="BlueKeyCodeFnState" codesize="2" method="integer" datasize="1"/>
+    <encode code="220" name="BlueSendIntent" codesize="2" method="integer" datasize="1"/>
+    <encode code="221" name="BlueIntentType" codesize="2" method="integer" datasize="1"/>
+    <encode code="222" name="BlueIntentAction" codesize="2" method="string" />
+    <encode code="223" name="BlueIntentCategory" codesize="2" method="string" />
+    <encode code="224" name="BlueIntentPackage" codesize="2" method="string" />
+    <encode code="225" name="BlueIntentClass" codesize="2" method="string" />
+    <encode code="226" name="BlueIntentUri" codesize="2" method="string" />
+    <encode code="227" name="BlueIntentMimeType" codesize="2" method="string" />
+    <encode code="228" name="BlueIntentStringExtraName" codesize="2" method="string" />
+    <encode code="229" name="BlueIntentStringExtraValue" codesize="2" method="string" />
+    <encode code="230" name="BlueIntentAddKeyState" codesize="2" method="boolean" />
+    <encode code="231" name="BlueIntentIncludeFlags" codesize="2" method="hex" datasize="4"/>
+    <encode code="232" name="BlueLaunchActivityName" codesize="2" method="string" />
+
+    <encode code="301" name="OrangeBehavior" codesize="2" method="integer" datasize="1"/>
+    <encode code="302" name="OrangeTrigger" codesize="2" method="integer" datasize="4"/>
+    <encode code="303" name="OrangeKeyCode" codesize="2" method="integer" datasize="4"/>
+    <encode code="304" name="OrangeKeyCodeAdvanced" codesize="2" method="boolean" datasize="1"/>
+    <encode code="305" name="OrangeKeyCodeShiftState" codesize="2" method="integer" datasize="1"/>
+    <encode code="306" name="OrangeKeyCodeAltState" codesize="2" method="integer" datasize="1"/>
+    <encode code="307" name="OrangeKeyCodeCtrlState" codesize="2" method="integer" datasize="1"/>
+    <encode code="308" name="OrangeKeyCodeFnState" codesize="2" method="integer" datasize="1"/>
+    <encode code="320" name="OrangeSendIntent" codesize="2" method="integer" datasize="1"/>
+    <encode code="321" name="OrangeIntentType" codesize="2" method="integer" datasize="1"/>
+    <encode code="322" name="OrangeIntentAction" codesize="2" method="string" />
+    <encode code="323" name="OrangeIntentCategory" codesize="2" method="string" />
+    <encode code="324" name="OrangeIntentPackage" codesize="2" method="string" />
+    <encode code="325" name="OrangeIntentClass" codesize="2" method="string" />
+    <encode code="326" name="OrangeIntentUri" codesize="2" method="string" />
+    <encode code="327" name="OrangeIntentMimeType" codesize="2" method="string" />
+    <encode code="328" name="OrangeIntentStringExtraName" codesize="2" method="string" />
+    <encode code="329" name="OrangeIntentStringExtraValue" codesize="2" method="string" />
+    <encode code="330" name="OrangeIntentAddKeyState" codesize="2" method="boolean" />
+    <encode code="331" name="OrangeIntentIncludeFlags" codesize="2" method="hex" datasize="4"/>
+    <encode code="332" name="OrangeLaunchActivityName" codesize="2" method="string" />
+
+    <encode code="401" name="GreyBehavior" codesize="2" method="integer" datasize="1"/>
+    <encode code="402" name="GreyTrigger" codesize="2" method="integer" datasize="4"/>
+    <encode code="403" name="GreyKeyCode" codesize="2" method="integer" datasize="4"/>
+    <encode code="404" name="GreyKeyCodeAdvanced" codesize="2" method="boolean" datasize="1"/>
+    <encode code="405" name="GreyKeyCodeShiftState" codesize="2" method="integer" datasize="1"/>
+    <encode code="406" name="GreyKeyCodeAltState" codesize="2" method="integer" datasize="1"/>
+    <encode code="407" name="GreyKeyCodeCtrlState" codesize="2" method="integer" datasize="1"/>
+    <encode code="408" name="GreyKeyCodeFnState" codesize="2" method="integer" datasize="1"/>
+    <encode code="420" name="GreySendIntent" codesize="2" method="integer" datasize="1"/>
+    <encode code="421" name="GreyIntentType" codesize="2" method="integer" datasize="1"/>
+    <encode code="422" name="GreyIntentAction" codesize="2" method="string" />
+    <encode code="423" name="GreyIntentCategory" codesize="2" method="string" />
+    <encode code="424" name="GreyIntentPackage" codesize="2" method="string" />
+    <encode code="425" name="GreyIntentClass" codesize="2" method="string" />
+    <encode code="426" name="GreyIntentUri" codesize="2" method="string" />
+    <encode code="427" name="GreyIntentMimeType" codesize="2" method="string" />
+    <encode code="428" name="GreyIntentStringExtraName" codesize="2" method="string" />
+    <encode code="429" name="GreyIntentStringExtraValue" codesize="2" method="string" />
+    <encode code="430" name="GreyIntentAddKeyState" codesize="2" method="boolean" />
+    <encode code="431" name="GreyIntentIncludeFlags" codesize="2" method="hex" datasize="4"/>
+    <encode code="432" name="GreyLaunchActivityName" codesize="2" method="string" />
+
+    <encode code="501" name="ShiftBehavior" codesize="2" method="integer" datasize="1"/>
+    <encode code="502" name="ShiftTrigger" codesize="2" method="integer" datasize="4"/>
+    <encode code="503" name="ShiftKeyCode" codesize="2" method="integer" datasize="4"/>
+    <encode code="504" name="ShiftKeyCodeAdvanced" codesize="2" method="boolean" datasize="1"/>
+    <encode code="505" name="ShiftKeyCodeShiftState" codesize="2" method="integer" datasize="1"/>
+    <encode code="506" name="ShiftKeyCodeAltState" codesize="2" method="integer" datasize="1"/>
+    <encode code="507" name="ShiftKeyCodeCtrlState" codesize="2" method="integer" datasize="1"/>
+    <encode code="508" name="ShiftKeyCodeFnState" codesize="2" method="integer" datasize="1"/>
+    <encode code="520" name="ShiftSendIntent" codesize="2" method="integer" datasize="1"/>
+    <encode code="521" name="ShiftIntentType" codesize="2" method="integer" datasize="1"/>
+    <encode code="522" name="ShiftIntentAction" codesize="2" method="string" />
+    <encode code="523" name="ShiftIntentCategory" codesize="2" method="string" />
+    <encode code="524" name="ShiftIntentPackage" codesize="2" method="string" />
+    <encode code="525" name="ShiftIntentClass" codesize="2" method="string" />
+    <encode code="526" name="ShiftIntentUri" codesize="2" method="string" />
+    <encode code="527" name="ShiftIntentMimeType" codesize="2" method="string" />
+    <encode code="528" name="ShiftIntentStringExtraName" codesize="2" method="string" />
+    <encode code="529" name="ShiftIntentStringExtraValue" codesize="2" method="string" />
+    <encode code="530" name="ShiftIntentAddKeyState" codesize="2" method="boolean" />
+    <encode code="531" name="ShiftIntentIncludeFlags" codesize="2" method="hex" datasize="4"/>
+    <encode code="532" name="ShiftLaunchActivityName" codesize="2" method="string" />
+
+    <encode code="601" name="ControlBehavior" codesize="2" method="integer" datasize="1"/>
+    <encode code="602" name="ControlTrigger" codesize="2" method="integer" datasize="4"/>
+    <encode code="603" name="ControlKeyCode" codesize="2" method="integer" datasize="4"/>
+    <encode code="604" name="ControlKeyCodeAdvanced" codesize="2" method="boolean" datasize="1"/>
+    <encode code="605" name="ControlKeyCodeShiftState" codesize="2" method="integer" datasize="1"/>
+    <encode code="606" name="ControlKeyCodeAltState" codesize="2" method="integer" datasize="1"/>
+    <encode code="607" name="ControlKeyCodeCtrlState" codesize="2" method="integer" datasize="1"/>
+    <encode code="608" name="ControlKeyCodeFnState" codesize="2" method="integer" datasize="1"/>
+    <encode code="620" name="ControlSendIntent" codesize="2" method="integer" datasize="1"/>
+    <encode code="621" name="ControlIntentType" codesize="2" method="integer" datasize="1"/>
+    <encode code="622" name="ControlIntentAction" codesize="2" method="string" />
+    <encode code="623" name="ControlIntentCategory" codesize="2" method="string" />
+    <encode code="624" name="ControlIntentPackage" codesize="2" method="string" />
+    <encode code="625" name="ControlIntentClass" codesize="2" method="string" />
+    <encode code="626" name="ControlIntentUri" codesize="2" method="string" />
+    <encode code="627" name="ControlIntentMimeType" codesize="2" method="string" />
+    <encode code="628" name="ControlIntentStringExtraName" codesize="2" method="string" />
+    <encode code="629" name="ControlIntentStringExtraValue" codesize="2" method="string" />
+    <encode code="630" name="ControlIntentAddKeyState" codesize="2" method="boolean" />
+    <encode code="631" name="ControlIntentIncludeFlags" codesize="2" method="hex" datasize="4"/>
+    <encode code="632" name="ControlLaunchActivityName" codesize="2" method="string" />
+
+    <characteristic type="KeyMappingMgr" doc="Manage key mappings" >
+
+        <!--
+        <parm name="Version" set="0" query="1" promptref="Version" helpref="Version" datatype="string" />
+        <characteristic type="QueryAvailableKeys" set="0" query="1" promptref="QueryAvailableKeys" helpref="QueryAvailableKeys" />
+        <characteristic type="QueryAvailableTables" set="0" query="1" promptref="QueryAvailableTables" helpref="QueryAvailableTables" />
+        <characteristic type="QueryDefaultKeyMapping" set="0" query="1" queryindex="QueryDefaultKeyIdentifier" promptref="QueryDefaultKeyMapping" helpref="QueryDefaultKeyMapping" >
+            <parm name="QueryDefaultKeyIdentifier" set="0" query="2" promptref="KeyIdentifierQuery" listref="KeyIdentifier" helpref="KeyIdentifierQuery" datatype="integer" doc="Supported values are:" />
+        </characteristic>
+        <characteristic type="QueryChangedKeyMapping" set="0" query="1" queryindex="QueryChangedKeyIdentifier" promptref="QueryChangedKeyMapping" helpref="QueryChangedKeyMapping" >
+            <parm name="QueryChangedKeyIdentifier" set="0" query="2" promptref="KeyIdentifierQuery" listref="KeyIdentifier" helpref="KeyIdentifierQuery" datatype="integer" doc="Supported values are:" />
+        </characteristic>
+        <characteristic type="QueryCurrentKeyMapping" set="0" query="1" queryindex="QueryCurrentKeyIdentifier" promptref="QueryCurrentKeyMapping" helpref="QueryCurrentKeyMapping" >
+            <parm name="QueryCurrentKeyIdentifier" set="0" query="2" promptref="KeyIdentifierQuery" listref="KeyIdentifier" helpref="KeyIdentifierQuery" datatype="integer" doc="Supported values are:" />
+        </characteristic>
+        <characteristic type="QueryDefaultKeyMappings" set="0" query="1" promptref="QueryDefaultKeyMappings" helpref="QueryDefaultKeyMappings" />
+        <characteristic type="QueryChangedKeyMappings" set="0" query="1" promptref="QueryChangedKeyMappings" helpref="QueryChangedKeyMappings" />
+        <characteristic type="QueryCurrentKeyMappings" set="0" query="1" promptref="QueryCurrentKeyMappings" helpref="QueryCurrentKeyMappings" />
+        -->
+
+        <parm name="Action" promptref="Action" encoderef="Action" listref="Action" helpref="Action" doc="Supported Actions are:" />
+
+        <characteristic type="KeyMapping" presentif="[Action.code]==1" doc="Set a key mapping" >
+
+            <parm name="KeyIdentifier" promptref="KeyIdentifier" encoderef="KeyIdentifier" listref="KeyIdentifier" helpref="KeyIdentifier" skipif="[.text]==''" doc="Supported values are:" />
+
+            <characteristic type="BaseTable" presentif="[Action.code]==1 and [KeyIdentifier.text]!=''" skipif="[BaseBehavior.code]==0" doc="Set base table key behavior" >
+
+                <parm name="BaseBehavior" promptref="BaseBehavior" encoderef="BaseBehavior" listref="Behavior" helpref="Behavior" skipif="[.code]==0" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseTrigger" promptref="Trigger" encoderef="BaseTrigger" listref="Trigger" helpref="Trigger" presentif="[BaseBehavior.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseKeyCode" promptref="KeyCode" encoderef="BaseKeyCode" listref="KeyCode" helpref="KeyCode" presentif="[BaseBehavior.code]==2" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseKeyCodeAdvanced" promptref="KeyCodeAdvanced" encoderef="BaseKeyCodeAdvanced" helpref="KeyCodeAdvanced" presentif="[BaseBehavior.code]==2" skipif="[.code]==0" datatype="boolean" />
+
+                <parm name="BaseKeyCodeShiftState" promptref="KeyCodeShiftState" encoderef="BaseKeyCodeShiftState" listref="ModifierChangesList" helpref="KeyCodeShiftState" skipif="[.code]==0" presentif="[BaseBehavior.code]==2 and [BaseKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseKeyCodeAltState" promptref="KeyCodeAltState" encoderef="BaseKeyCodeAltState" listref="ModifierChangesList" helpref="KeyCodeAltState" skipif="[.code]==0" presentif="[BaseBehavior.code]==2 and [BaseKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseKeyCodeCtrlState" promptref="KeyCodeCtrlState" encoderef="BaseKeyCodeCtrlState" listref="ModifierChangesList" helpref="KeyCodeCtrlState" skipif="[.code]==0" presentif="[BaseBehavior.code]==2 and [BaseKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseKeyCodeFnState" promptref="KeyCodeFnState" encoderef="BaseKeyCodeFnState" listref="ModifierChangesListFn" helpref="KeyCodeFnState" skipif="[.code]==0" presentif="[BaseBehavior.code]==2 and [BaseKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseSendIntent" promptref="SendIntent" encoderef="BaseSendIntent" listref="SendIntent" helpref="SendIntent" presentif="[BaseBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseIntentType" promptref="IntentType" encoderef="BaseIntentType" listref="IntentType" helpref="IntentType" presentif="[BaseBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BaseIntentAction" promptref="IntentAction" encoderef="BaseIntentAction" helpref="IntentAction" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="string" />
+
+                <parm name="BaseIntentCategory" promptref="IntentCategory" encoderef="BaseIntentCategory" helpref="IntentCategory" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="string" />
+
+                <parm name="BaseIntentPackage" promptref="IntentPackage" encoderef="BaseIntentPackage" helpref="IntentPackage" skipif="[.text]==''" presentif="[BaseBehavior.code]==3 and [BaseIntentType.code]==1" datatype="string" />
+
+                <parm name="BaseIntentClass" promptref="IntentClass" encoderef="BaseIntentClass" helpref="IntentClass" skipif="[.text]==''" presentif="[BaseBehavior.code]==3 and [BaseIntentType.code]==1" datatype="string" />
+
+                <parm name="BaseIntentUri" promptref="IntentUri" encoderef="BaseIntentUri" helpref="IntentUri" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="string" />
+
+                <parm name="BaseIntentMimeType" promptref="IntentMimeType" encoderef="BaseIntentMimeType" helpref="IntentMimeType" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="string" />
+
+                <parm name="BaseIntentStringExtraName" promptref="IntentStringExtraName" encoderef="BaseIntentStringExtraName" helpref="IntentStringExtraName" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="string" />
+
+                <parm name="BaseIntentStringExtraValue" promptref="IntentStringExtraValue" encoderef="BaseIntentStringExtraValue" helpref="IntentStringExtraValue" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="string" />
+
+                <parm name="BaseIntentAddKeyState" promptref="IntentAddKeyState" encoderef="BaseIntentAddKeyState" helpref="IntentAddKeyState" presentif="[BaseBehavior.code]==3" datatype="boolean" />
+
+                <parm name="BaseIntentIncludeFlags" promptref="IntentIncludeFlags" default="[.text]='00000000'" encoderef="BaseIntentIncludeFlags" helpref="IntentIncludeFlags" skipif="[.text]==''" presentif="[BaseBehavior.code]==3" datatype="hex" datasize="4" />
+
+                <parm name="BaseLaunchActivityName" promptref="LaunchActivityName" encoderef="BaseLaunchActivityName" helpref="LaunchActivityName" skipif="[.text]==''" presentif="[BaseBehavior.code]==4" datatype="string" />
+            </characteristic>
+            <characteristic type="BlueTable" presentif="[Action.code]==1 and [KeyIdentifier.text]!=''" skipif="[BlueBehavior.code]==0" doc="Set blue table key behavior" >
+                <parm name="BlueBehavior" promptref="BlueBehavior" encoderef="BlueBehavior" listref="Behavior" helpref="Behavior" skipif="[.code]==0" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueTrigger" promptref="Trigger" encoderef="BlueTrigger" listref="Trigger" helpref="Trigger" presentif="[BlueBehavior.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueKeyCode" promptref="KeyCode" encoderef="BlueKeyCode" listref="KeyCode" helpref="KeyCode" presentif="[BlueBehavior.code]==2" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueKeyCodeAdvanced" promptref="KeyCodeAdvanced" encoderef="BlueKeyCodeAdvanced" helpref="KeyCodeAdvanced" presentif="[BlueBehavior.code]==2" skipif="[.code]==0" datatype="boolean" />
+
+                <parm name="BlueKeyCodeShiftState" promptref="KeyCodeShiftState" encoderef="BlueKeyCodeShiftState" listref="ModifierChangesList" helpref="KeyCodeShiftState" skipif="[.code]==0" presentif="[BlueBehavior.code]==2 and [BlueKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueKeyCodeAltState" promptref="KeyCodeAltState" encoderef="BlueKeyCodeAltState" listref="ModifierChangesList" helpref="KeyCodeAltState" skipif="[.code]==0" presentif="[BlueBehavior.code]==2 and [BlueKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueKeyCodeCtrlState" promptref="KeyCodeCtrlState" encoderef="BlueKeyCodeCtrlState" listref="ModifierChangesList" helpref="KeyCodeCtrlState" skipif="[.code]==0" presentif="[BlueBehavior.code]==2 and [BlueKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueKeyCodeFnState" promptref="KeyCodeFnState" encoderef="BlueKeyCodeFnState" listref="ModifierChangesListFn" helpref="KeyCodeFnState" skipif="[.code]==0" presentif="[BlueBehavior.code]==2 and [BlueKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueSendIntent" promptref="SendIntent" encoderef="BlueSendIntent" listref="SendIntent" helpref="SendIntent" presentif="[BlueBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueIntentType" promptref="IntentType" encoderef="BlueIntentType" listref="IntentType" helpref="IntentType" presentif="[BlueBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="BlueIntentAction" promptref="IntentAction" encoderef="BlueIntentAction" helpref="IntentAction" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="string" />
+
+                <parm name="BlueIntentCategory" promptref="IntentCategory" encoderef="BlueIntentCategory" helpref="IntentCategory" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="string" />
+
+                <parm name="BlueIntentPackage" promptref="IntentPackage" encoderef="BlueIntentPackage" helpref="IntentPackage" skipif="[.text]==''" presentif="[BlueBehavior.code]==3 and [BlueIntentType.code]==1" datatype="string" />
+
+                <parm name="BlueIntentClass" promptref="IntentClass" encoderef="BlueIntentClass" helpref="IntentClass" skipif="[.text]==''" presentif="[BlueBehavior.code]==3 and [BlueIntentType.code]==1" datatype="string" />
+
+                <parm name="BlueIntentUri" promptref="IntentUri" encoderef="BlueIntentUri" helpref="IntentUri" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="string" />
+
+                <parm name="BlueIntentMimeType" promptref="IntentMimeType" encoderef="BlueIntentMimeType" helpref="IntentMimeType" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="string" />
+
+                <parm name="BlueIntentStringExtraName" promptref="IntentStringExtraName" encoderef="BlueIntentStringExtraName" helpref="IntentStringExtraName" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="string" />
+
+                <parm name="BlueIntentStringExtraValue" promptref="IntentStringExtraValue" encoderef="BlueIntentStringExtraValue" helpref="IntentStringExtraValue" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="string" />
+
+                <parm name="BlueIntentAddKeyState" promptref="IntentAddKeyState" encoderef="BlueIntentAddKeyState" helpref="IntentAddKeyState" presentif="[BlueBehavior.code]==3" datatype="boolean" />
+
+                <parm name="BlueIntentIncludeFlags" promptref="IntentIncludeFlags" default="[.text]='00000000'" encoderef="BlueIntentIncludeFlags" helpref="IntentIncludeFlags" skipif="[.text]==''" presentif="[BlueBehavior.code]==3" datatype="hex" datasize="4" />
+
+                <parm name="BlueLaunchActivityName" promptref="LaunchActivityName" encoderef="BlueLaunchActivityName" helpref="LaunchActivityName" skipif="[.text]==''" presentif="[BlueBehavior.code]==4" datatype="string" />
+            </characteristic>
+            <characteristic type="OrangeTable" presentif="[Action.code]==1 and [KeyIdentifier.text]!=''" skipif="[OrangeBehavior.code]==0" doc="Set orange table key behavior" >
+                <parm name="OrangeBehavior" promptref="OrangeBehavior" encoderef="OrangeBehavior" listref="Behavior" helpref="Behavior" skipif="[.code]==0" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeTrigger" promptref="Trigger" encoderef="OrangeTrigger" listref="Trigger" helpref="Trigger" presentif="[OrangeBehavior.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeKeyCode" promptref="KeyCode" encoderef="OrangeKeyCode" listref="KeyCode" helpref="KeyCode" presentif="[OrangeBehavior.code]==2" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeKeyCodeAdvanced" promptref="KeyCodeAdvanced" encoderef="OrangeKeyCodeAdvanced" helpref="KeyCodeAdvanced" presentif="[OrangeBehavior.code]==2" skipif="[.code]==0" datatype="boolean" />
+
+                <parm name="OrangeKeyCodeShiftState" promptref="KeyCodeShiftState" encoderef="OrangeKeyCodeShiftState" listref="ModifierChangesList" helpref="KeyCodeShiftState" skipif="[.code]==0" presentif="[OrangeBehavior.code]==2 and [OrangeKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeKeyCodeAltState" promptref="KeyCodeAltState" encoderef="OrangeKeyCodeAltState" listref="ModifierChangesList" helpref="KeyCodeAltState" skipif="[.code]==0" presentif="[OrangeBehavior.code]==2 and [OrangeKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeKeyCodeCtrlState" promptref="KeyCodeCtrlState" encoderef="OrangeKeyCodeCtrlState" listref="ModifierChangesList" helpref="KeyCodeCtrlState" skipif="[.code]==0" presentif="[OrangeBehavior.code]==2 and [OrangeKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeKeyCodeFnState" promptref="KeyCodeFnState" encoderef="OrangeKeyCodeFnState" listref="ModifierChangesListFn" helpref="KeyCodeFnState" skipif="[.code]==0" presentif="[OrangeBehavior.code]==2 and [OrangeKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeSendIntent" promptref="SendIntent" encoderef="OrangeSendIntent" listref="SendIntent" helpref="SendIntent" presentif="[OrangeBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeIntentType" promptref="IntentType" encoderef="OrangeIntentType" listref="IntentType" helpref="IntentType" presentif="[OrangeBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="OrangeIntentAction" promptref="IntentAction" encoderef="OrangeIntentAction" helpref="IntentAction" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="string" />
+
+                <parm name="OrangeIntentCategory" promptref="IntentCategory" encoderef="OrangeIntentCategory" helpref="IntentCategory" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="string" />
+
+                <parm name="OrangeIntentPackage" promptref="IntentPackage" encoderef="OrangeIntentPackage" helpref="IntentPackage" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3 and [OrangeIntentType.code]==1" datatype="string" />
+
+                <parm name="OrangeIntentClass" promptref="IntentClass" encoderef="OrangeIntentClass" helpref="IntentClass" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3 and [OrangeIntentType.code]==1" datatype="string" />
+
+                <parm name="OrangeIntentUri" promptref="IntentUri" encoderef="OrangeIntentUri" helpref="IntentUri" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="string" />
+
+                <parm name="OrangeIntentMimeType" promptref="IntentMimeType" encoderef="OrangeIntentMimeType" helpref="IntentMimeType" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="string" />
+
+                <parm name="OrangeIntentStringExtraName" promptref="IntentStringExtraName" encoderef="OrangeIntentStringExtraName" helpref="IntentStringExtraName" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="string" />
+
+                <parm name="OrangeIntentStringExtraValue" promptref="IntentStringExtraValue" encoderef="OrangeIntentStringExtraValue" helpref="IntentStringExtraValue" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="string" />
+
+                <parm name="OrangeIntentAddKeyState" promptref="IntentAddKeyState" encoderef="OrangeIntentAddKeyState" helpref="IntentAddKeyState" presentif="[OrangeBehavior.code]==3" datatype="boolean" />
+
+                <parm name="OrangeIntentIncludeFlags" promptref="IntentIncludeFlags" default="[.text]='00000000'" encoderef="OrangeIntentIncludeFlags" helpref="IntentIncludeFlags" skipif="[.text]==''" presentif="[OrangeBehavior.code]==3" datatype="hex" datasize="4" />
+
+                <parm name="OrangeLaunchActivityName" promptref="LaunchActivityName" encoderef="OrangeLaunchActivityName" helpref="LaunchActivityName" skipif="[.text]==''" presentif="[OrangeBehavior.code]==4" datatype="string" />
+            </characteristic>
+            <characteristic type="GreyTable" presentif="[Action.code]==1 and [KeyIdentifier.text]!=''" skipif="[GreyBehavior.code]==0" doc="Set grey table key behavior" >
+                <parm name="GreyBehavior" promptref="GreyBehavior" encoderef="GreyBehavior" listref="Behavior" helpref="Behavior" skipif="[.code]==0" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyTrigger" promptref="Trigger" encoderef="GreyTrigger" listref="Trigger" helpref="Trigger" presentif="[GreyBehavior.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyKeyCode" promptref="KeyCode" encoderef="GreyKeyCode" listref="KeyCode" helpref="KeyCode" presentif="[GreyBehavior.code]==2" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyKeyCodeAdvanced" promptref="KeyCodeAdvanced" encoderef="GreyKeyCodeAdvanced" helpref="KeyCodeAdvanced" presentif="[GreyBehavior.code]==2" skipif="[.code]==0" datatype="boolean" />
+
+                <parm name="GreyKeyCodeShiftState" promptref="KeyCodeShiftState" encoderef="GreyKeyCodeShiftState" listref="ModifierChangesList" helpref="KeyCodeShiftState" skipif="[.code]==0" presentif="[GreyBehavior.code]==2 and [GreyKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyKeyCodeAltState" promptref="KeyCodeAltState" encoderef="GreyKeyCodeAltState" listref="ModifierChangesList" helpref="KeyCodeAltState" skipif="[.code]==0" presentif="[GreyBehavior.code]==2 and [GreyKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyKeyCodeCtrlState" promptref="KeyCodeCtrlState" encoderef="GreyKeyCodeCtrlState" listref="ModifierChangesList" helpref="KeyCodeCtrlState" skipif="[.code]==0" presentif="[GreyBehavior.code]==2 and [GreyKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyKeyCodeFnState" promptref="KeyCodeFnState" encoderef="GreyKeyCodeFnState" listref="ModifierChangesListFn" helpref="KeyCodeFnState" skipif="[.code]==0" presentif="[GreyBehavior.code]==2 and [GreyKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreySendIntent" promptref="SendIntent" encoderef="GreySendIntent" listref="SendIntent" helpref="SendIntent" presentif="[GreyBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyIntentType" promptref="IntentType" encoderef="GreyIntentType" listref="IntentType" helpref="IntentType" presentif="[GreyBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="GreyIntentAction" promptref="IntentAction" encoderef="GreyIntentAction" helpref="IntentAction" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="string" />
+
+                <parm name="GreyIntentCategory" promptref="IntentCategory" encoderef="GreyIntentCategory" helpref="IntentCategory" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="string" />
+
+                <parm name="GreyIntentPackage" promptref="IntentPackage" encoderef="GreyIntentPackage" helpref="IntentPackage" skipif="[.text]==''" presentif="[GreyBehavior.code]==3 and [GreyIntentType.code]==1" datatype="string" />
+
+                <parm name="GreyIntentClass" promptref="IntentClass" encoderef="GreyIntentClass" helpref="IntentClass" skipif="[.text]==''" presentif="[GreyBehavior.code]==3 and [GreyIntentType.code]==1" datatype="string" />
+
+                <parm name="GreyIntentUri" promptref="IntentUri" encoderef="GreyIntentUri" helpref="IntentUri" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="string" />
+
+                <parm name="GreyIntentMimeType" promptref="IntentMimeType" encoderef="GreyIntentMimeType" helpref="IntentMimeType" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="string" />
+
+                <parm name="GreyIntentStringExtraName" promptref="IntentStringExtraName" encoderef="GreyIntentStringExtraName" helpref="IntentStringExtraName" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="string" />
+
+                <parm name="GreyIntentStringExtraValue" promptref="IntentStringExtraValue" encoderef="GreyIntentStringExtraValue" helpref="IntentStringExtraValue" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="string" />
+
+                <parm name="GreyIntentAddKeyState" promptref="IntentAddKeyState" encoderef="GreyIntentAddKeyState" helpref="IntentAddKeyState" presentif="[GreyBehavior.code]==3" datatype="boolean" />
+
+                <parm name="GreyIntentIncludeFlags" promptref="IntentIncludeFlags" default="[.text]='00000000'" encoderef="GreyIntentIncludeFlags" helpref="IntentIncludeFlags" skipif="[.text]==''" presentif="[GreyBehavior.code]==3" datatype="hex" datasize="4" />
+
+                <parm name="GreyLaunchActivityName" promptref="LaunchActivityName" encoderef="GreyLaunchActivityName" helpref="LaunchActivityName" skipif="[.text]==''" presentif="[GreyBehavior.code]==4" datatype="string" />
+            </characteristic>
+            <characteristic type="ShiftTable" presentif="[Action.code]==1 and [KeyIdentifier.text]!=''" skipif="[ShiftBehavior.code]==0" doc="Set shift table key behavior" >
+                <parm name="ShiftBehavior" promptref="ShiftBehavior" encoderef="ShiftBehavior" listref="Behavior" helpref="Behavior" skipif="[.code]==0" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftTrigger" promptref="Trigger" encoderef="ShiftTrigger" listref="Trigger" helpref="Trigger" presentif="[ShiftBehavior.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftKeyCode" promptref="KeyCode" encoderef="ShiftKeyCode" listref="KeyCode" helpref="KeyCode" presentif="[ShiftBehavior.code]==2" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftKeyCodeAdvanced" promptref="KeyCodeAdvanced" encoderef="ShiftKeyCodeAdvanced" helpref="KeyCodeAdvanced" presentif="[ShiftBehavior.code]==2" skipif="[.code]==0" datatype="boolean" />
+
+                <parm name="ShiftKeyCodeShiftState" promptref="KeyCodeShiftState" encoderef="ShiftKeyCodeShiftState" listref="ModifierChangesList" helpref="KeyCodeShiftState" skipif="[.code]==0" presentif="[ShiftBehavior.code]==2 and [ShiftKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftKeyCodeAltState" promptref="KeyCodeAltState" encoderef="ShiftKeyCodeAltState" listref="ModifierChangesList" helpref="KeyCodeAltState" skipif="[.code]==0" presentif="[ShiftBehavior.code]==2 and [ShiftKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftKeyCodeCtrlState" promptref="KeyCodeCtrlState" encoderef="ShiftKeyCodeCtrlState" listref="ModifierChangesList" helpref="KeyCodeCtrlState" skipif="[.code]==0" presentif="[ShiftBehavior.code]==2 and [ShiftKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftKeyCodeFnState" promptref="KeyCodeFnState" encoderef="ShiftKeyCodeFnState" listref="ModifierChangesListFn" helpref="KeyCodeFnState" skipif="[.code]==0" presentif="[ShiftBehavior.code]==2 and [ShiftKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftSendIntent" promptref="SendIntent" encoderef="ShiftSendIntent" listref="SendIntent" helpref="SendIntent" presentif="[ShiftBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftIntentType" promptref="IntentType" encoderef="ShiftIntentType" listref="IntentType" helpref="IntentType" presentif="[ShiftBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ShiftIntentAction" promptref="IntentAction" encoderef="ShiftIntentAction" helpref="IntentAction" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="string" />
+
+                <parm name="ShiftIntentCategory" promptref="IntentCategory" encoderef="ShiftIntentCategory" helpref="IntentCategory" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="string" />
+
+                <parm name="ShiftIntentPackage" promptref="IntentPackage" encoderef="ShiftIntentPackage" helpref="IntentPackage" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3 and [ShiftIntentType.code]==1" datatype="string" />
+
+                <parm name="ShiftIntentClass" promptref="IntentClass" encoderef="ShiftIntentClass" helpref="IntentClass" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3 and [ShiftIntentType.code]==1" datatype="string" />
+
+                <parm name="ShiftIntentUri" promptref="IntentUri" encoderef="ShiftIntentUri" helpref="IntentUri" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="string" />
+
+                <parm name="ShiftIntentMimeType" promptref="IntentMimeType" encoderef="ShiftIntentMimeType" helpref="IntentMimeType" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="string" />
+
+                <parm name="ShiftIntentStringExtraName" promptref="IntentStringExtraName" encoderef="ShiftIntentStringExtraName" helpref="IntentStringExtraName" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="string" />
+
+                <parm name="ShiftIntentStringExtraValue" promptref="IntentStringExtraValue" encoderef="ShiftIntentStringExtraValue" helpref="IntentStringExtraValue" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="string" />
+
+                <parm name="ShiftIntentAddKeyState" promptref="IntentAddKeyState" encoderef="ShiftIntentAddKeyState" helpref="IntentAddKeyState" presentif="[ShiftBehavior.code]==3" datatype="boolean" />
+
+                <parm name="ShiftIntentIncludeFlags" promptref="IntentIncludeFlags" default="[.text]='00000000'" encoderef="ShiftIntentIncludeFlags" helpref="IntentIncludeFlags" skipif="[.text]==''" presentif="[ShiftBehavior.code]==3" datatype="hex" datasize="4" />
+
+                <parm name="ShiftLaunchActivityName" promptref="LaunchActivityName" encoderef="ShiftLaunchActivityName" helpref="LaunchActivityName" skipif="[.text]==''" presentif="[ShiftBehavior.code]==4" datatype="string" />
+            </characteristic>
+            <characteristic type="ControlTable" presentif="[Action.code]==1 and [KeyIdentifier.text]!=''" skipif="[ControlBehavior.code]==0" doc="Set control table key behavior" >
+                <parm name="ControlBehavior" promptref="ControlBehavior" encoderef="ControlBehavior" listref="Behavior" helpref="Behavior" skipif="[.code]==0" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlTrigger" promptref="Trigger" encoderef="ControlTrigger" listref="Trigger" helpref="Trigger" presentif="[ControlBehavior.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlKeyCode" promptref="KeyCode" encoderef="ControlKeyCode" listref="KeyCode" helpref="KeyCode" presentif="[ControlBehavior.code]==2" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlKeyCodeAdvanced" promptref="KeyCodeAdvanced" encoderef="ControlKeyCodeAdvanced" helpref="KeyCodeAdvanced" presentif="[ControlBehavior.code]==2" skipif="[.code]==0" datatype="boolean" />
+
+                <parm name="ControlKeyCodeShiftState" promptref="KeyCodeShiftState" encoderef="ControlKeyCodeShiftState" listref="ModifierChangesList" helpref="KeyCodeShiftState" skipif="[.code]==0" presentif="[ControlBehavior.code]==2 and [ControlKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlKeyCodeAltState" promptref="KeyCodeAltState" encoderef="ControlKeyCodeAltState" listref="ModifierChangesList" helpref="KeyCodeAltState" skipif="[.code]==0" presentif="[ControlBehavior.code]==2 and [ControlKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlKeyCodeCtrlState" promptref="KeyCodeCtrlState" encoderef="ControlKeyCodeCtrlState" listref="ModifierChangesList" helpref="KeyCodeCtrlState" skipif="[.code]==0" presentif="[ControlBehavior.code]==2 and [ControlKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlKeyCodeFnState" promptref="KeyCodeFnState" encoderef="ControlKeyCodeFnState" listref="ModifierChangesListFn" helpref="KeyCodeFnState" skipif="[.code]==0" presentif="[ControlBehavior.code]==2 and [ControlKeyCodeAdvanced.code]==1" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlSendIntent" promptref="SendIntent" encoderef="ControlSendIntent" listref="SendIntent" helpref="SendIntent" presentif="[ControlBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlIntentType" promptref="IntentType" encoderef="ControlIntentType" listref="IntentType" helpref="IntentType" presentif="[ControlBehavior.code]==3" datatype="integer" doc="Supported values are:" />
+
+                <parm name="ControlIntentAction" promptref="IntentAction" encoderef="ControlIntentAction" helpref="IntentAction" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="string" />
+
+                <parm name="ControlIntentCategory" promptref="IntentCategory" encoderef="ControlIntentCategory" helpref="IntentCategory" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="string" />
+
+                <parm name="ControlIntentPackage" promptref="IntentPackage" encoderef="ControlIntentPackage" helpref="IntentPackage" skipif="[.text]==''" presentif="[ControlBehavior.code]==3 and [ControlIntentType.code]==1" datatype="string" />
+
+                <parm name="ControlIntentClass" promptref="IntentClass" encoderef="ControlIntentClass" helpref="IntentClass" skipif="[.text]==''" presentif="[ControlBehavior.code]==3 and [ControlIntentType.code]==1" datatype="string" />
+
+                <parm name="ControlIntentUri" promptref="IntentUri" encoderef="ControlIntentUri" helpref="IntentUri" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="string" />
+
+                <parm name="ControlIntentMimeType" promptref="IntentMimeType" encoderef="ControlIntentMimeType" helpref="IntentMimeType" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="string" />
+
+                <parm name="ControlIntentStringExtraName" promptref="IntentStringExtraName" encoderef="ControlIntentStringExtraName" helpref="IntentStringExtraName" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="string" />
+
+                <parm name="ControlIntentStringExtraValue" promptref="IntentStringExtraValue" encoderef="ControlIntentStringExtraValue" helpref="IntentStringExtraValue" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="string" />
+
+                <parm name="ControlIntentAddKeyState" promptref="IntentAddKeyState" encoderef="ControlIntentAddKeyState" helpref="IntentAddKeyState" presentif="[ControlBehavior.code]==3" datatype="boolean" />
+
+                <parm name="ControlIntentIncludeFlags" promptref="IntentIncludeFlags" default="[.text]='00000000'" encoderef="ControlIntentIncludeFlags" helpref="IntentIncludeFlags" skipif="[.text]==''" presentif="[ControlBehavior.code]==3" datatype="hex" datasize="4" />
+
+                <parm name="ControlLaunchActivityName" promptref="LaunchActivityName" encoderef="ControlLaunchActivityName" helpref="LaunchActivityName" skipif="[.text]==''" presentif="[ControlBehavior.code]==4" datatype="string" />
+            </characteristic>
+        </characteristic>
+    </characteristic>
+</wap-semanticsdoc>
+

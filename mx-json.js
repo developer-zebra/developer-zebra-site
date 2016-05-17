@@ -103,7 +103,15 @@ var index_generate = function(folder){
                       
         }
     };
-    var json_file = folder.replace('src','build')+'/mx.json';
+    // var json_file = folder.replace('src','build')+'/mx.json';
+    //rename so that it is same same as actual  CSP name in DSD
+    if(json.csp =="keymapmgr"){
+      json.csp = "keymappingmgr"
+    }
+    if(json.csp =="wifi"){
+      json.csp = "wi-fi"
+    }
+    var json_file = 'dsdmgr/dsds/' + json.csp + '.extra';
     console.log("Writing to: " + json_file);
     fs.open(json_file, 'w', function(err, fd) {
        if (err) {
@@ -146,6 +154,7 @@ var index_generate = function(folder){
       index_generate("persistmgr");
       index_generate("powerkeymgr");
       index_generate("powermgr");
+      index_generate("remotescannermgr");
       index_generate("scanmodemgr");
       index_generate("sdcardmgr");
       index_generate("settingsmgr");

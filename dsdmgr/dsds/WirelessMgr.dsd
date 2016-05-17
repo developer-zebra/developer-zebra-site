@@ -1,0 +1,90 @@
+<wap-semanticsdoc version="4.3" >
+<!-- WirelessMgr.DSD for V3 release -->
+
+    <prompt name="Bluetooth" lang="en" value="Enable/Disable Bluetooth:" />
+    <prompt name="BluetoothState" lang="en" value="Turn On/Off Bluetooth:" />
+    <prompt name="NFCState" lang="en" value="Turn On/Off NFC:" />
+    <prompt name="GPSState" lang="en" value="Turn On/Off GPS:" />
+    <prompt name="WWANState" lang="en" value="Turn On/Off WWAN:" />
+
+    <help name="Bluetooth" lang="en" value="Specify whether the use of Bluetooth will be allowed" />
+    <help name="BluetoothState" lang="en" value="Specify whether to Turn On/Off the Bluetooth" />
+    <help name="NFCState" lang="en" value="Specify whether to Turn On/Off the NFC" />
+    <help name="GPSState" lang="en" value="Specify whether to Turn On/Off the GPS" />
+    <help name="WWANState" lang="en" value="Specify whether to Turn On/Off the WWAN" />
+
+    <list name ="EnableDisableUsage" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <list name ="StateOnOff" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Turn On" />
+        <item code="2" text="Turn Off" />
+    </list>
+
+    <encode code="1" name="Bluetooth" codesize="1" method="integer" datasize="1" />
+    <encode code="2" name="BluetoothState" codesize="1" method="integer" datasize="1" />
+    <encode code="3" name="NFCState" codesize="1" method="integer" datasize="1" />
+    <encode code="4" name="GPSState" codesize="1" method="integer" datasize="1" />
+    <encode code="5" name="WWANState" codesize="1" method="integer" datasize="1" />
+
+    <characteristic  type="WirelessMgr" doc="Manage Wireless configuration"
+    >
+
+        <parm name="Bluetooth"
+            promptref="Bluetooth"
+            value="[.code]"
+            helpref="Bluetooth"
+            listref="EnableDisableUsage"
+            encoderef="Bluetooth"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="BluetoothState"
+            promptref="BluetoothState"
+            value="[.code]"
+            helpref="BluetoothState"
+            listref="StateOnOff"
+            encoderef="BluetoothState"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="NFCState"
+            promptref="NFCState"
+            value="[.code]"
+            helpref="NFCState"
+            listref="StateOnOff"
+            encoderef="NFCState"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="GPSState"
+            promptref="GPSState"
+            value="[.code]"
+            helpref="GPSState"
+            listref="StateOnOff"
+            encoderef="GPSState"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="WWANState"
+            promptref="WWANState"
+            value="[.code]"
+            helpref="WWANState"
+            listref="StateOnOff"
+            encoderef="WWANState"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

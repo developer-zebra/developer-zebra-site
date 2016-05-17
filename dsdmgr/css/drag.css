@@ -1,0 +1,12 @@
+        [ng-drag].drag-over {
+            border: solid 1px red;
+        }
+
+        [ng-drag].dragging {
+            opacity: 0.5;
+        }
+
+
+        [ng-drop].drag-enter {
+            border: solid 1px green;
+        }

@@ -1,0 +1,875 @@
+<wap-semanticsdoc version="4.4" >
+
+	
+	<prompt name="UIProfileAction" lang="en" value="Audio UI Profile Action:" />
+	<prompt name="MuteVibrateState" lang="en" value="Mute/Vibrate State:" />
+	<prompt name="CurrentProfileAction" lang="en" value="Current Active Profile Action:" />
+
+	<help name="UIProfileAction" lang="en" value="Specify the Audio UI Profile action to perform" />
+	<help name="MuteVibrateState" lang="en" value="Select whether to mute the device or set the device to vibrate" />
+	<help name="CurrentProfileAction" lang="en" value="Specify the Current Profile action to perform" />
+		
+	<list name="UIProfileAction" > 
+		<item code="0" text="Do nothing" />
+		<item code="1" text="Add an Audio UI Profile" />
+		<item code="2" text="Remove an Audio UI Profile" />
+<!--		<item code="5" text="Change an existing UI profile" /> -->
+	</list>
+	
+	<list name="CurrentProfileAction" > 
+		<item code="0" text="Do nothing" />
+		<item code="1" text="Set an Audio UI Profile as the current Profile" />
+		<item code="2" text="Adjust to the Preset volume level of the current Profile" />
+		<item code="3" text="Set the FactoryPreset Profile as the current Profile" />
+	</list>
+	
+	<list name="MuteVibrateState" > 
+		<item code="0" text="Do not change" />
+		<item code="1" text="Mute - Turn off audible sounds" />
+		<item code="2" text="Vibrate - Turn off audible sounds and turn on vibrate" />
+		<item code="3" text="UnMute - Turn on audible sounds" />
+	</list>
+	
+	<list name="SetCurrentProfileOption" > 
+		<item code="1" text="Do not adjust the volume level" />
+		<item code="2" text="Adjust the volume level" />
+	</list>			
+	
+	<encode code="2" name="UIProfileAction" codesize="1" method="integer" datasize="1" /> 
+	<encode code="3" name="MuteVibrateState" codesize="1" method="integer" datasize="1" /> 
+	<encode code="4" name="CurrentProfileAction" codesize="1" method="integer" datasize="1" /> 
+	
+	<encode code="201" name="ProfileName" codesize="1" method="string" /> 
+	<encode code="202" name="SetCurrentProfileOption" codesize="1" method="integer" datasize="1" /> 
+	<encode code="203" name="CurrentProfileName" codesize="1" method="string" /> 
+	
+	<encode code="111" name="STREAM_MUSIC_Label" codesize="1" method="string" /> 
+	<encode code="112" name="STREAM_MUSIC_Icon" codesize="1" method="string" /> 
+	<encode code="113" name="STREAM_MUSIC_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="114" name="STREAM_MUSIC_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="115" name="STREAM_MUSIC_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="116" name="STREAM_MUSIC_BTHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="117" name="STREAM_MUSIC_Ctrl" codesize="1" method="string" /> 
+	
+	
+	<encode code="121" name="STREAM_RING_Label" codesize="1" method="string" /> 
+	<encode code="122" name="STREAM_RING_Icon" codesize="1" method="string" /> 
+	<encode code="123" name="STREAM_RING_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="124" name="STREAM_RING_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="125" name="STREAM_RING_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="126" name="STREAM_RING_BTHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="127" name="STREAM_RING_Ctrl" codesize="1" method="string" /> 
+	
+	<encode code="131" name="STREAM_NOTIFICATION_Label" codesize="1" method="string" /> 
+	<encode code="132" name="STREAM_NOTIFICATION_Icon" codesize="1" method="string" /> 
+	<encode code="133" name="STREAM_NOTIFICATION_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="134" name="STREAM_NOTIFICATION_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="135" name="STREAM_NOTIFICATION_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="136" name="STREAM_NOTIFICATION_BTHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="137" name="STREAM_NOTIFICATION_Ctrl" codesize="1" method="string" /> 
+	
+	<encode code="141" name="STREAM_SYSTEM_Label" codesize="1" method="string" /> 
+	<encode code="142" name="STREAM_SYSTEM_Icon" codesize="1" method="string" /> 
+	<encode code="143" name="STREAM_SYSTEM_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="144" name="STREAM_SYSTEM_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="145" name="STREAM_SYSTEM_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="146" name="STREAM_SYSTEM_BTHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="147" name="STREAM_SYSTEM_Ctrl" codesize="1" method="string" /> 
+	
+	<encode code="151" name="STREAM_ALARM_Label" codesize="1" method="string" /> 
+	<encode code="152" name="STREAM_ALARM_Icon" codesize="1" method="string" /> 
+	<encode code="153" name="STREAM_ALARM_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="154" name="STREAM_ALARM_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="155" name="STREAM_ALARM_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="156" name="STREAM_ALARM_BTHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="157" name="STREAM_ALARM_Ctrl" codesize="1" method="string" /> 
+	
+	<encode code="161" name="STREAM_VOICECALL_Label" codesize="1" method="string" /> 
+	<encode code="162" name="STREAM_VOICECALL_Icon" codesize="1" method="string" /> 
+	<encode code="163" name="STREAM_VOICECALL_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="164" name="STREAM_VOICECALL_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="165" name="STREAM_VOICECALL_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="166" name="STREAM_VOICECALL_BTHS_LEVEL" codesize="1" method="string" />
+	<encode code="167" name="STREAM_VOICECALL_Ctrl" codesize="1" method="string" /> 
+
+	<encode code="171" name="STREAM_VVS_Label" codesize="1" method="string" /> 
+	<encode code="172" name="STREAM_VVS_Icon" codesize="1" method="string" /> 
+	<encode code="173" name="STREAM_VVS_SPK_LEVEL" codesize="1" method="string" /> 
+	<encode code="174" name="STREAM_VVS_RCVR_LEVEL" codesize="1" method="string" /> 
+	<encode code="175" name="STREAM_VVS_WHS_LEVEL" codesize="1" method="string" /> 
+	<encode code="176" name="STREAM_VVS_BTHS_LEVEL" codesize="1" method="string" />
+	<encode code="177" name="STREAM_VVS_Ctrl" codesize="1" method="string" /> 
+	
+	
+	
+	<characteristic type="AudioVolUIMgr" doc="Manage enhanced audio volume control configurations"
+	>
+		
+		<prompt name="Version" lang="en" value="Version:" />
+		<help name="Version" lang="en" value="Version of the CSP" />
+		<parm name="Version" 
+			datatype="String"
+			promptref="Version"			
+			helpref="Version"
+			query="1"
+			set="0"
+		/>			
+		
+		<parm name="MuteVibrateState"
+			promptref="MuteVibrateState"
+			default="[.code]='0'"
+			helpref="MuteVibrateState"
+			listref="MuteVibrateState"
+			encoderef="MuteVibrateState"
+			skipif="[.code]=='0'"
+			doc="Supported actions are:"
+		/>
+		
+			
+		<parm name="CurrentProfileAction"
+			promptref="CurrentProfileAction"
+			default="[.code]='0'"
+			helpref="CurrentProfileAction"
+			listref="CurrentProfileAction"
+			encoderef="CurrentProfileAction"
+			skipif="[.code]=='0'"
+			doc="Supported actions are:"
+		/>
+		
+		<prompt name="CurrentUIProfile" lang="en" value="Current Profile:"/>
+		<help name="CurrentUIProfile" lang="en" value="Get name of the current active Profile"/>		
+		<characteristic type ="CurrentUIProfile" presentif="[CurrentProfileAction.code] in (1)" doc="Supply details about an Audio UI Profile"
+			query="3" promptref="CurrentUIProfile" helpref="CurrentUIProfile"
+		>
+			<prompt name="CurrentProfileName" lang="en" value="Name of the Current Audio UI Profile:" />
+			<help name="CurrentProfileName" lang="en" value="Provide the name of the Current Audio UI Profile" />
+			<parm name="CurrentProfileName" 
+				datatype="string"
+				value="[.text]"
+				minsize="1"
+				maxsize="255"
+				promptref="CurrentProfileName"
+				helpref="CurrentProfileName"
+				encoderef="CurrentProfileName"
+				query="2"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="SetCurrentProfileOption" lang="en" value="Adjust current audio volume?" />
+			<help name="SetCurrentProfileOption" lang="en" value="Select whether to adjust the current audio volume or not" />
+			<parm name="SetCurrentProfileOption" 
+				presentif="[CurrentProfileAction.code] in (1) "
+				promptref="SetCurrentProfileOption"
+				default="[.code]='1'"
+				helpref="SetCurrentProfileOption"
+				listref="SetCurrentProfileOption"
+				encoderef="SetCurrentProfileOption"
+			/>
+		
+		</characteristic>
+		
+		<parm name="UIProfileAction"
+			promptref="UIProfileAction"
+			default="[.code]='0'"
+			helpref="UIProfileAction"
+			listref="UIProfileAction"
+			encoderef="UIProfileAction"
+			skipif="[.code]=='0'"
+			doc="Supported actions are:"
+		/>
+		
+		<characteristic type ="UIProfile" presentif="[UIProfileAction.code] not in (0)" doc="Supply details about an Audio UI Profile"
+		>
+			<prompt name="ProfileName" lang="en" value="Name of the Audio UI Profile:" />
+			<help name="ProfileName" lang="en" value="Provide the name of the Audio UI Profile definition" />
+			<parm name="ProfileName"
+				presentif="[UIProfileAction.code] in (1,2)"
+				datatype="string"
+				value="[.text]"
+				minsize="1"
+				maxsize="255"
+				promptref="ProfileName"
+				helpref="ProfileName"
+				encoderef="ProfileName"
+				query="2"
+				doc="String length must be:"
+			/>
+			
+		<characteristic type ="UIProfile-streamconfig" presentif="[UIProfileAction.code] in (1)" doc="Supply stream configuration details about an Audio UI Profile"
+			query="2" 
+		>	
+		<!-- ************************ STREAM_MUSIC *************************** -->
+			<prompt name="STREAM_MUSIC_Label" lang="en" value="UI Label of STREAM_MUSIC:" />
+			<help name="STREAM_MUSIC_Label" lang="en" value="Provide the UI label for the music stream" />
+			<parm name="STREAM_MUSIC_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_MUSIC_Label"
+				helpref="STREAM_MUSIC_Label"
+				encoderef="STREAM_MUSIC_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_MUSIC_Icon" lang="en" value="UI Icon of STREAM_MUSIC:" />
+			<help name="STREAM_MUSIC_Icon" lang="en" value="Provide the URL to the icon image for the music stream" />
+			<parm name="STREAM_MUSIC_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_MUSIC_Icon"
+				helpref="STREAM_MUSIC_Icon"
+				encoderef="STREAM_MUSIC_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_MUSIC_Ctrl" lang="en" value="Control Parameters of STREAM_MUSIC:" />
+			<help name="STREAM_MUSIC_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_MUSIC_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_MUSIC_Ctrl"
+				helpref="STREAM_MUSIC_Ctrl"
+				encoderef="STREAM_MUSIC_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_MUSIC_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_MUSIC_SPK_LEVEL" lang="en" value="Specify the volume levels for music stream in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_MUSIC_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_MUSIC_SPK_LEVEL"
+				helpref="STREAM_MUSIC_SPK_LEVEL"
+				encoderef="STREAM_MUSIC_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_MUSIC_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_MUSIC_RCVR_LEVEL" lang="en" value="Specify the volume levels for music stream in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_MUSIC_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_MUSIC_RCVR_LEVEL"
+				helpref="STREAM_MUSIC_RCVR_LEVEL"
+				encoderef="STREAM_MUSIC_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_MUSIC_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_MUSIC_WHS_LEVEL" lang="en" value="Specify the volume levels for music stream in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_MUSIC_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_MUSIC_WHS_LEVEL"
+				helpref="STREAM_MUSIC_WHS_LEVEL"
+				encoderef="STREAM_MUSIC_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_MUSIC_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_MUSIC_BTHS_LEVEL" lang="en" value="Specify the volume levels for music stream in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_MUSIC_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_MUSIC_BTHS_LEVEL"
+				helpref="STREAM_MUSIC_BTHS_LEVEL"
+				encoderef="STREAM_MUSIC_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+			
+		<!-- ************************ STREAM_RING *************************** -->
+			<prompt name="STREAM_RING_Label" lang="en" value="UI Label of STREAM_RING:" />
+			<help name="STREAM_RING_Label" lang="en" value="Provide the UI label for the ring stream" />
+			<parm name="STREAM_RING_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_RING_Label"
+				helpref="STREAM_RING_Label"
+				encoderef="STREAM_RING_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_RING_Icon" lang="en" value="UI Icon of STREAM_RING:" />
+			<help name="STREAM_RING_Icon" lang="en" value="Provide the URL to the icon image for the ring stream" />
+			<parm name="STREAM_RING_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_RING_Icon"
+				helpref="STREAM_RING_Icon"
+				encoderef="STREAM_RING_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_RING_Ctrl" lang="en" value="Control Parameters of STREAM_RING:" />
+			<help name="STREAM_RING_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_RING_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_RING_Ctrl"
+				helpref="STREAM_RING_Ctrl"
+				encoderef="STREAM_RING_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_RING_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_RING_SPK_LEVEL" lang="en" value="Specify the volume levels for ring stream in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_RING_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_RING_SPK_LEVEL"
+				helpref="STREAM_RING_SPK_LEVEL"
+				encoderef="STREAM_RING_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_RING_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_RING_RCVR_LEVEL" lang="en" value="Specify the volume levels for ring stream in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_RING_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_RING_RCVR_LEVEL"
+				helpref="STREAM_RING_RCVR_LEVEL"
+				encoderef="STREAM_RING_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_RING_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_RING_WHS_LEVEL" lang="en" value="Specify the volume levels for ring stream in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_RING_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_RING_WHS_LEVEL"
+				helpref="STREAM_RING_WHS_LEVEL"
+				encoderef="STREAM_RING_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_RING_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_RING_BTHS_LEVEL" lang="en" value="Specify the volume levels for ring stream in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_RING_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_RING_BTHS_LEVEL"
+				helpref="STREAM_RING_BTHS_LEVEL"
+				encoderef="STREAM_RING_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>	
+			
+		<!-- ************************ STREAM_NOTIFICATION *************************** -->
+			<prompt name="STREAM_NOTIFICATION_Label" lang="en" value="UI Label of STREAM_NOTIFICATION:" />
+			<help name="STREAM_NOTIFICATION_Label" lang="en" value="Provide the UI label for the NOTIFICATION stream" />
+			<parm name="STREAM_NOTIFICATION_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_NOTIFICATION_Label"
+				helpref="STREAM_NOTIFICATION_Label"
+				encoderef="STREAM_NOTIFICATION_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_NOTIFICATION_Icon" lang="en" value="UI Icon of STREAM_NOTIFICATION:" />
+			<help name="STREAM_NOTIFICATION_Icon" lang="en" value="Provide the URL to the icon image for the NOTIFICATION stream" />
+			<parm name="STREAM_NOTIFICATION_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_NOTIFICATION_Icon"
+				helpref="STREAM_NOTIFICATION_Icon"
+				encoderef="STREAM_NOTIFICATION_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_NOTIFICATION_Ctrl" lang="en" value="Control Parameters of STREAM_NOTIFICATION:" />
+			<help name="STREAM_NOTIFICATION_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_NOTIFICATION_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_NOTIFICATION_Ctrl"
+				helpref="STREAM_NOTIFICATION_Ctrl"
+				encoderef="STREAM_NOTIFICATION_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_NOTIFICATION_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_NOTIFICATION_SPK_LEVEL" lang="en" value="Specify the volume levels for NOTIFICATION stream in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_NOTIFICATION_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_NOTIFICATION_SPK_LEVEL"
+				helpref="STREAM_NOTIFICATION_SPK_LEVEL"
+				encoderef="STREAM_NOTIFICATION_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_NOTIFICATION_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_NOTIFICATION_RCVR_LEVEL" lang="en" value="Specify the volume levels for NOTIFICATION stream in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_NOTIFICATION_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_NOTIFICATION_RCVR_LEVEL"
+				helpref="STREAM_NOTIFICATION_RCVR_LEVEL"
+				encoderef="STREAM_NOTIFICATION_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_NOTIFICATION_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_NOTIFICATION_WHS_LEVEL" lang="en" value="Specify the volume levels for NOTIFICATION stream in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_NOTIFICATION_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_NOTIFICATION_WHS_LEVEL"
+				helpref="STREAM_NOTIFICATION_WHS_LEVEL"
+				encoderef="STREAM_NOTIFICATION_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_NOTIFICATION_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_NOTIFICATION_BTHS_LEVEL" lang="en" value="Specify the volume levels for NOTIFICATION stream in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_NOTIFICATION_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_NOTIFICATION_BTHS_LEVEL"
+				helpref="STREAM_NOTIFICATION_BTHS_LEVEL"
+				encoderef="STREAM_NOTIFICATION_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>	
+			
+		<!-- ************************ STREAM_SYSTEM *************************** -->
+			<prompt name="STREAM_SYSTEM_Label" lang="en" value="UI Label of STREAM_SYSTEM:" />
+			<help name="STREAM_SYSTEM_Label" lang="en" value="Provide the UI label for the SYSTEM stream" />
+			<parm name="STREAM_SYSTEM_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_SYSTEM_Label"
+				helpref="STREAM_SYSTEM_Label"
+				encoderef="STREAM_SYSTEM_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_SYSTEM_Icon" lang="en" value="UI Icon of STREAM_SYSTEM:" />
+			<help name="STREAM_SYSTEM_Icon" lang="en" value="Provide the URL to the icon image for the SYSTEM stream" />
+			<parm name="STREAM_SYSTEM_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_SYSTEM_Icon"
+				helpref="STREAM_SYSTEM_Icon"
+				encoderef="STREAM_SYSTEM_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_SYSTEM_Ctrl" lang="en" value="Control Parameters of STREAM_SYSTEM:" />
+			<help name="STREAM_SYSTEM_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_SYSTEM_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_SYSTEM_Ctrl"
+				helpref="STREAM_SYSTEM_Ctrl"
+				encoderef="STREAM_SYSTEM_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_SYSTEM_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_SYSTEM_SPK_LEVEL" lang="en" value="Specify the volume levels for SYSTEM stream in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_SYSTEM_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_SYSTEM_SPK_LEVEL"
+				helpref="STREAM_SYSTEM_SPK_LEVEL"
+				encoderef="STREAM_SYSTEM_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_SYSTEM_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_SYSTEM_RCVR_LEVEL" lang="en" value="Specify the volume levels for SYSTEM stream in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_SYSTEM_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_SYSTEM_RCVR_LEVEL"
+				helpref="STREAM_SYSTEM_RCVR_LEVEL"
+				encoderef="STREAM_SYSTEM_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_SYSTEM_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_SYSTEM_WHS_LEVEL" lang="en" value="Specify the volume levels for SYSTEM stream in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_SYSTEM_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_SYSTEM_WHS_LEVEL"
+				helpref="STREAM_SYSTEM_WHS_LEVEL"
+				encoderef="STREAM_SYSTEM_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_SYSTEM_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_SYSTEM_BTHS_LEVEL" lang="en" value="Specify the volume levels for SYSTEM stream in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_SYSTEM_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_SYSTEM_BTHS_LEVEL"
+				helpref="STREAM_SYSTEM_BTHS_LEVEL"
+				encoderef="STREAM_SYSTEM_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>	
+			
+		<!-- ************************ STREAM_ALARM *************************** -->
+			<prompt name="STREAM_ALARM_Label" lang="en" value="UI Label of STREAM_ALARM:" />
+			<help name="STREAM_ALARM_Label" lang="en" value="Provide the UI label for the ALARM stream" />
+			<parm name="STREAM_ALARM_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_ALARM_Label"
+				helpref="STREAM_ALARM_Label"
+				encoderef="STREAM_ALARM_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_ALARM_Icon" lang="en" value="UI Icon of STREAM_ALARM:" />
+			<help name="STREAM_ALARM_Icon" lang="en" value="Provide the URL to the icon image for the ALARM stream" />
+			<parm name="STREAM_ALARM_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_ALARM_Icon"
+				helpref="STREAM_ALARM_Icon"
+				encoderef="STREAM_ALARM_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_ALARM_Ctrl" lang="en" value="Control Parameters of STREAM_ALARM:" />
+			<help name="STREAM_ALARM_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_ALARM_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_ALARM_Ctrl"
+				helpref="STREAM_ALARM_Ctrl"
+				encoderef="STREAM_ALARM_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_ALARM_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_ALARM_SPK_LEVEL" lang="en" value="Specify the volume levels for ALARM stream in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_ALARM_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_ALARM_SPK_LEVEL"
+				helpref="STREAM_ALARM_SPK_LEVEL"
+				encoderef="STREAM_ALARM_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_ALARM_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_ALARM_RCVR_LEVEL" lang="en" value="Specify the volume levels for ALARM stream in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_ALARM_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_ALARM_RCVR_LEVEL"
+				helpref="STREAM_ALARM_RCVR_LEVEL"
+				encoderef="STREAM_ALARM_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_ALARM_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_ALARM_WHS_LEVEL" lang="en" value="Specify the volume levels for ALARM stream in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_ALARM_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_ALARM_WHS_LEVEL"
+				helpref="STREAM_ALARM_WHS_LEVEL"
+				encoderef="STREAM_ALARM_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_ALARM_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_ALARM_BTHS_LEVEL" lang="en" value="Specify the volume levels for ALARM stream in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_ALARM_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_ALARM_BTHS_LEVEL"
+				helpref="STREAM_ALARM_BTHS_LEVEL"
+				encoderef="STREAM_ALARM_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>	
+			
+			
+		<!-- ************************ STREAM_VOICE_CALL *************************** -->
+			<prompt name="STREAM_VOICECALL_Label" lang="en" value="UI Label of STREAM_VOICECALL:" />
+			<help name="STREAM_VOICECALL_Label" lang="en" value="Provide the UI label for the VOICECALL stream" />
+			<parm name="STREAM_VOICECALL_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_VOICECALL_Label"
+				helpref="STREAM_VOICECALL_Label"
+				encoderef="STREAM_VOICECALL_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_VOICECALL_Icon" lang="en" value="UI Icon of STREAM_VOICECALL:" />
+			<help name="STREAM_VOICECALL_Icon" lang="en" value="Provide the URL to the icon image for the VOICECALL stream" />
+			<parm name="STREAM_VOICECALL_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_VOICECALL_Icon"
+				helpref="STREAM_VOICECALL_Icon"
+				encoderef="STREAM_VOICECALL_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_VOICECALL_Ctrl" lang="en" value="Control Parameters of STREAM_VOICECALL:" />
+			<help name="STREAM_VOICECALL_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_VOICECALL_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_VOICECALL_Ctrl"
+				helpref="STREAM_VOICECALL_Ctrl"
+				encoderef="STREAM_VOICECALL_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_VOICECALL_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_VOICECALL_SPK_LEVEL" lang="en" value="Specify the volume levels for VOICECALL stream in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VOICECALL_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_VOICECALL_SPK_LEVEL"
+				helpref="STREAM_VOICECALL_SPK_LEVEL"
+				encoderef="STREAM_VOICECALL_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_VOICECALL_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_VOICECALL_RCVR_LEVEL" lang="en" value="Specify the volume levels for VOICECALL stream in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VOICECALL_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_VOICECALL_RCVR_LEVEL"
+				helpref="STREAM_VOICECALL_RCVR_LEVEL"
+				encoderef="STREAM_VOICECALL_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_VOICECALL_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_VOICECALL_WHS_LEVEL" lang="en" value="Specify the volume levels for VOICECALL stream in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VOICECALL_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_VOICECALL_WHS_LEVEL"
+				helpref="STREAM_VOICECALL_WHS_LEVEL"
+				encoderef="STREAM_VOICECALL_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_VOICECALL_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_VOICECALL_BTHS_LEVEL" lang="en" value="Specify the volume levels for VOICECALL stream in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VOICECALL_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_VOICECALL_BTHS_LEVEL"
+				helpref="STREAM_VOICECALL_BTHS_LEVEL"
+				encoderef="STREAM_VOICECALL_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>	
+			
+		<!-- ************************ STREAM_VVS *************************** -->
+			<prompt name="STREAM_VVS_Label" lang="en" value="UI Label of Decode Beep Virtual Volume Scale:" />
+			<help name="STREAM_VVS_Label" lang="en" value="Provide the UI label for Decode Beep Virtual Volume Scale" />
+			<parm name="STREAM_VVS_Label" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_VVS_Label"
+				helpref="STREAM_VVS_Label"
+				encoderef="STREAM_VVS_Label"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_VVS_Icon" lang="en" value="UI Icon of Decode Beep Virtual Volume Scale:" />
+			<help name="STREAM_VVS_Icon" lang="en" value="Provide the URL to the icon image for Decode Beep Virtual Volume Scale" />
+			<parm name="STREAM_VVS_Icon" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_VVS_Icon"
+				helpref="STREAM_VVS_Icon"
+				encoderef="STREAM_VVS_Icon"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+			<prompt name="STREAM_VVS_Ctrl" lang="en" value="Control Parameters of STREAM_VVS:" />
+			<help name="STREAM_VVS_Ctrl" lang="en" value="Specify whether the stream is visible (1) or not (0) to the user" />
+			<parm name="STREAM_VVS_Ctrl" 
+				datatype="string"
+				value="[.text]"
+				minsize="0"
+				maxsize="255"
+				promptref="STREAM_VVS_Ctrl"
+				helpref="STREAM_VVS_Ctrl"
+				encoderef="STREAM_VVS_Ctrl"
+				query="2"
+				skipif="[.text]==''"
+				doc="String length must be:"
+			/>
+			
+		<!-- MODE Speaker -->
+			<prompt name="STREAM_VVS_SPK_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Speaker Mode:" />
+			<help name="STREAM_VVS_SPK_LEVEL" lang="en" value="Specify the volume levels for Decode Beep Virtual Volume Scale in speaker mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VVS_SPK_LEVEL"
+				datatype="string"
+				promptref="STREAM_VVS_SPK_LEVEL"
+				helpref="STREAM_VVS_SPK_LEVEL"
+				encoderef="STREAM_VVS_SPK_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Receiver -->
+			<prompt name="STREAM_VVS_RCVR_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Receiver Mode:" />
+			<help name="STREAM_VVS_RCVR_LEVEL" lang="en" value="Specify the volume levels for Decode Beep Virtual Volume Scale in receiver mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VVS_RCVR_LEVEL"
+				datatype="string"
+				promptref="STREAM_VVS_RCVR_LEVEL"
+				helpref="STREAM_VVS_RCVR_LEVEL"
+				encoderef="STREAM_VVS_RCVR_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE Wired headset -->
+			<prompt name="STREAM_VVS_WHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Wired Headset Mode:" />
+			<help name="STREAM_VVS_WHS_LEVEL" lang="en" value="Specify the volume levels for Decode Beep Virtual Volume Scale in Wired Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VVS_WHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_VVS_WHS_LEVEL"
+				helpref="STREAM_VVS_WHS_LEVEL"
+				encoderef="STREAM_VVS_WHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>
+		<!-- MODE BT headset -->
+			<prompt name="STREAM_VVS_BTHS_LEVEL" lang="en" value="Minimum, Maximum and Preset Volume Level for Bluetooth Headset Mode:" />
+			<help name="STREAM_VVS_BTHS_LEVEL" lang="en" value="Specify the volume levels for Decode Beep Virtual Volume Scale in Bluetooth Headset mode (in the order of &quot;min, max, preset&quot; separated by comma and as positive integers less than 256, e.g. &quot;10, 1, 5&quot;)" />
+			<parm name="STREAM_VVS_BTHS_LEVEL"
+				datatype="string"
+				promptref="STREAM_VVS_BTHS_LEVEL"
+				helpref="STREAM_VVS_BTHS_LEVEL"
+				encoderef="STREAM_VVS_BTHS_LEVEL"
+				query="2"
+				skipif="[.text]==''"
+				doc=":"
+			/>		
+		</characteristic>
+		
+		</characteristic>
+
+	
+	</characteristic>
+
+</wap-semanticsdoc>
+

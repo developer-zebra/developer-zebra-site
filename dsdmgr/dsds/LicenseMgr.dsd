@@ -1,0 +1,168 @@
+<wap-semanticsdoc version="4.3" revision="4">
+  <file name="LicenseBlob" extension=".xml"/>
+  <prompt name="LicenseAction" lang="en" value="Specify license action to perform :"/>
+  <prompt name="VerifyMethod" lang="en" value="Specify verification method to use :"/>
+  <prompt name="StandardFeatureName" lang="en" value="Specify standard feature name :"/>
+  <prompt name="CustomFeatureName" lang="en" value="Enter custom feature name :"/>
+  <prompt name="LicenseMethod" lang="en" value="Specify licensing method :"/>
+  <prompt name="LicenseBlob" lang="en" value="License file :"/>
+  <prompt name="LicensePathAndFileName" lang="en" value="Specify file name and path to the license file :"/>
+  <prompt name="SelectMethod" lang="en" value="Specify selection method to use :"/>
+
+  <help name="LicenseAction" lang="en" value="Specify the action to be taken on the feature, ex: apply or remove "/>
+  <help name="VerifyMethod" lang="en" value="Specify how to verify the feature name within in the input file"/>
+  <help name="StandardFeatureName" lang="en" value="Specify the desired standard feature name"/>
+  <help name="CustomFeatureName" lang="en" value="Enter the custom feature name (obtained from license server)"/>
+  <help name="LicenseMethod" lang="en" value="Specify the method that will be used to supply the license blob"/>
+  <help name="LicenseBlob" lang="en" value="Pick the licensing file whose data should be embedded in the XML"/>
+  <help name="LicensePathAndFileName" lang="en" value="Specify the path and file name of the licensing file in the device"/>
+  <help name="SelectMethod" lang="en" value="Specify the method that will be used to select an existing feature in the device"/>
+
+  <list name="LicenseAction">
+    <item code="0" text="" ui="Do nothing"/>
+    <item code="1" text="apply" ui="Apply"/>
+    <item code="2" text="remove" ui="Remove"/>
+  </list>
+  <list name="VerifyMethod">
+    <item code="0" text="" ui="Do not verify feature name"/>
+    <item code="1" text="" ui="Verify against a standard feature name"/>
+    <item code="2" text="" ui="Verify against a custom feature name"/>
+  </list>
+
+  <list name="SelectMethod">
+    <item code="1" text="" ui="Select using a standard feature name"/>
+    <item code="2" text="" ui="Select using a custom feature name"/>
+  </list>
+
+  <!-- This list contains the list of built-in licenseable features.
+       Please update this list with each new licenseable feature -->
+  <list name="StandardFeatureName">
+    <item code="1" text="SIMULDC1_0_0" ui="SimulScan OCR/OMR"/>
+  </list>
+
+  <list name="LicenseMethod">
+    <item code="1" text="embed" ui="Embed the license blob from the license file into the XML"/>
+    <item code="2" text="reference" ui="Reference a license file already on the mobile device"/>
+  </list>
+
+  <list name="LicenseTypes">
+    <item code="1" text="serial" ui="License is associated with a specific model_serial number of a device"/>
+    <item code="2" text="uuid" ui="License is associated with a specific UUDI of a device"/>
+    <item code="3" text="enterprise" ui="License is an enterprise-wide license"/>
+  </list>
+
+  <encode code="10" name="LicenseAction" codesize="1" method="integer" datasize="1"/>
+  <encode code="11" name="VerifyMethod" codesize="1" method="integer" datasize="1"/>
+  <encode code="12" name="SelectStandardFeatureName" codesize="1" method="string"/>
+  <encode code="13" name="StandardFeatureName" codesize="1" method="string"/>
+  <encode code="14" name="CustomFeatureName" codesize="1" method="string"/>
+  <encode code="15" name="LicenseMethod" codesize="1" method="integer" datasize="1"/>
+  <encode code="16" name="LicenseBlob" codesize="1" method="binary"/>
+  <encode code="17" name="LicensePathAndFileName" codesize="1" method="string"/>
+  <encode code="18" name="VerifyStandardFeatureName" codesize="1" method="string"/>
+  <encode code="19" name="VerifyCustomFeatureName" codesize="1" method="string"/>
+  <encode code="20" name="SelectMethod" codesize="1" method="integer" datasize="1"/>
+  <encode code="21" name="SelectCustomFeatureName" codesize="1" method="string"/>
+
+  <characteristic type="LicenseMgr" doc="Perform license management operations">
+    <parm name="LicenseAction"
+          promptref="LicenseAction"
+          default="[.code]=1"
+          value="[.text]"
+          helpref="LicenseAction"
+          listref="LicenseAction"
+          encoderef="LicenseAction"
+          doc="Supported selections are:"
+    />
+
+    <characteristic type="NewLicense" presentif="[LicenseAction.code] in (1)">
+      <parm name="VerifyMethod"
+            skipif="[.code] in (0)"
+            promptref="VerifyMethod"
+            value="[.code]"
+            helpref="VerifyMethod"
+            listref="VerifyMethod" encoderef="VerifyMethod" doc="Supported selections are:"
+      />
+      <parm name="VerifyStandardFeatureName"
+            presentif="[VerifyMethod.code] in (1)"
+            promptref="StandardFeatureName"
+            value="[.text]"
+            helpref="StandardFeatureName"
+            listref="StandardFeatureName"
+            encoderef="VerifyStandardFeatureName"
+            doc="Supported selections are:"
+      />
+      <parm name="VerifyCustomFeatureName"
+            presentif="[VerifyMethod.code] in (2)"
+            promptref="CustomFeatureName"
+            value="[.text]"
+            helpref="CustomFeatureName"
+            encoderef="VerifyCustomFeatureName"
+            doc="String length must be:"
+      />
+      <parm name="LicenseMethod"
+            presentif="[LicenseAction.code] in (1)"
+            promptref="LicenseMethod" value="[.text]"
+            helpref="LicenseMethod"
+            listref="LicenseMethod"
+            encoderef="LicenseMethod"
+            doc="Supported selections are:"
+      />
+
+      <parm name="LicenseBlob"
+            presentif="[LicenseAction.code] in (1) and [LicenseMethod.code] in (1)"
+            datatype="String" minsize="1"
+            promptref="LicenseBlob"
+            fileref="LicenseBlob"
+            helpref="LicenseBlob"
+            encoderef="LicenseBlob"
+            doc="Data must be base64 encoded and of length:"
+      />
+      <parm name="LicensePathAndFileName"
+            presentif="[LicenseAction.code] in (1) and [LicenseMethod.code] in (2)"
+            datatype="String"
+            minsize="1"
+            promptref="LicensePathAndFileName"
+            helpref="LicensePathAndFileName"
+            encoderef="LicensePathAndFileName"
+            doc="String length must be:"/>
+    </characteristic>
+
+    <characteristic type="ExistingLicense" presentif="[LicenseAction.code] in (2)">
+      <parm name="SelectMethod"
+            skipif="[.code] in (0)"
+            promptref="SelectMethod"
+            value="[.code]"
+            helpref="SelectMethod"
+            listref="SelectMethod"
+            encoderef="SelectMethod"
+            doc="Supported selections are:"
+      />
+      <parm name="SelectStandardFeatureName"
+            presentif="[SelectMethod.code] in (1)"
+            skipif="[.code] in (0)"
+            promptref="StandardFeatureName"
+            value="[.text]"
+            helpref="StandardFeatureName"
+            listref="StandardFeatureName"
+            encoderef="SelectStandardFeatureName"
+            default="[.code]=1"
+            doc="Supported selections are:"
+      />
+      <parm name="SelectCustomFeatureName"
+            presentif="[SelectMethod.code] in (2)"
+            promptref="CustomFeatureName"
+            value="[.text]"
+            helpref="CustomFeatureName"
+            encoderef="SelectCustomFeatureName"
+            doc="String length must be:"/>
+
+      <!-- User does not input these values. "CompanyName" and "LicesenType" are parms returned by the characteristic-query.
+           Included here only for the sake of completion -->
+      <parm name="CompanyName"/>
+      <parm name="LicenseType"
+            listref="LicenseTypes"/>
+
+    </characteristic>
+  </characteristic>
+</wap-semanticsdoc>

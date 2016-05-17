@@ -1,0 +1,119 @@
+<wap-semanticsdoc version="4.2" revision="1">
+<!-- UsbMgr.DSD for V2 release -->
+
+    <prompt name="UsbModuleUsage" lang="en" value="USB Module Usage:" />
+    <prompt name="UsbExternalStorageUsage" lang="en" value="USB External Storage Usage:" />
+    <prompt name="UsbAllAccessDeviceStorageUsage" lang="en" value="Access device storage from PC via USB:" />
+    <prompt name="UsbADBUsage" lang="en" value="USB ADB Usage:" />
+    <prompt name="UsbUMSAccessDeviceStorageUsage" lang="en" value="Access device storage from PC via USB UMS:" />
+    <prompt name="UsbMTPAccessDeviceStorageUsage" lang="en" value="Access device storage from PC via USB MTP:" />
+    <prompt name="UsbPTPAccessDeviceStorageUsage" lang="en" value="Access device storage from PC via USB PTP:" />
+
+    <help name="UsbModuleUsage" lang="en" value="Specify whether the use of USB module will be allowed" />
+    <help name="UsbExternalStorageUsage" lang="en" value="Specify whether the use of USB external storage will be allowed" />
+    <help name="UsbAllAccessDeviceStorageUsage" lang="en" value="Specify whether all methods to access device storage from PC via USB (e.g. UMS, MTP, PTP) will be allowed" />
+    <help name="UsbADBUsage" lang="en" value="Specify whether the use of ADB Mode will be allowed" />
+    <help name="UsbUMSAccessDeviceStorageUsage" lang="en" value="Specify whether access device storage from PC via USB UMS will be allowed" />
+    <help name="UsbMTPAccessDeviceStorageUsage" lang="en" value="Specify whether access device storage from PC via USB MTP will be allowed" />
+    <help name="UsbPTPAccessDeviceStorageUsage" lang="en" value="Specify whether access device storage from PC via USB PTP will be allowed" />
+
+    <list name ="Usage" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <encode code="7" name="UsbModuleUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="1" name="UsbExternalStorageUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="2" name="UsbADBUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="3" name="UsbAllAccessDeviceStorageUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="4" name="UsbUMSAccessDeviceStorageUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="5" name="UsbMTPAccessDeviceStorageUsage" codesize="1" method="integer" datasize="1" />
+    <encode code="6" name="UsbPTPAccessDeviceStorageUsage" codesize="1" method="integer" datasize="1" />
+
+    <characteristic  type="UsbMgr" doc="Manage USB configuration"
+    >
+        <parm name="UsbModuleUsage"
+            promptref="UsbModuleUsage"
+            value="[.code]"
+            helpref="UsbModuleUsage"
+            listref="Usage"
+            encoderef="UsbModuleUsage"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="UsbExternalStorageUsage"
+            presentif="[UsbModuleUsage.code] not in (2)"
+            promptref="UsbExternalStorageUsage"
+            value="[.code]"
+            helpref="UsbExternalStorageUsage"
+            listref="Usage"
+            encoderef="UsbExternalStorageUsage"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="UsbADBUsage"
+            presentif="[UsbModuleUsage.code] not in (2)"
+            promptref="UsbADBUsage"
+            value="[.code]"
+            helpref="UsbADBUsage"
+            listref="Usage"
+            encoderef="UsbADBUsage"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="UsbAllAccessDeviceStorageUsage"
+            presentif="[UsbModuleUsage.code] not in (2)"
+            promptref="UsbAllAccessDeviceStorageUsage"
+            value="[.code]"
+            helpref="UsbAllAccessDeviceStorageUsage"
+            listref="Usage"
+            encoderef="UsbAllAccessDeviceStorageUsage"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <characteristic  type="SelectedAccessDeviceStorageUsage"
+                presentif="[UsbModuleUsage.code] not in (2) and [UsbAllAccessDeviceStorageUsage.code] not in (1,2)"
+        >
+                <parm name="UsbUMSAccessDeviceStorageUsage"
+                presentif="[UsbAllAccessDeviceStorageUsage.code] not in (2)"
+                promptref="UsbUMSAccessDeviceStorageUsage"
+                value="[.code]"
+                helpref="UsbUMSAccessDeviceStorageUsage"
+                listref="Usage"
+                encoderef="UsbUMSAccessDeviceStorageUsage"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+            <parm name="UsbMTPAccessDeviceStorageUsage"
+                presentif="[UsbAllAccessDeviceStorageUsage.code] not in (2)"
+                promptref="UsbMTPAccessDeviceStorageUsage"
+                value="[.code]"
+                helpref="UsbMTPAccessDeviceStorageUsage"
+                listref="Usage"
+                encoderef="UsbMTPAccessDeviceStorageUsage"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+
+            <parm name="UsbPTPAccessDeviceStorageUsage"
+                presentif="[UsbAllAccessDeviceStorageUsage.code] not in (2)"
+                promptref="UsbPTPAccessDeviceStorageUsage"
+                value="[.code]"
+                helpref="UsbPTPAccessDeviceStorageUsage"
+                listref="Usage"
+                encoderef="UsbPTPAccessDeviceStorageUsage"
+                skipif="[.code]=='0'"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

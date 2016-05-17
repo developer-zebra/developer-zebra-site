@@ -1,0 +1,226 @@
+<wap-semanticsdoc version="4.2" revision="2">
+
+
+	<prompt name="CertAction" lang="en" value="Certificate Action:" /> 
+	<prompt name="CertAlias" lang="en" value="Certificate Alias:" /> 
+	<prompt name="CertType"  lang="en" value="Certificate Type:" /> 
+	<prompt name="CertMethod" lang="en" value="Certificate Method:" />
+	<prompt name="Cert" lang="en" value="Certificate Data:" />
+	<prompt name="CertFile" lang="en" value="Certificate File:" />	
+	<prompt name="CertAdjustClock" lang="en" value="Adjust Clock?:" />
+	<prompt name="KeystorePassword" lang="en" value="Keystore Password:" />
+	<prompt name="PrivateKeyPassword" lang="en" value="Private Key Password:" />
+
+	<help name="CertAction" lang="en" value="Specify the certificate action to perform" />
+	<help name="CertAlias" lang="en" value="Provide the name(alias) that will uniquely identify the certificate" />
+	<help name="CertType" lang="en" value="Specify the type of certificate to be installed" />
+	<help name="CertMethod" lang="en" value="Specify the method to use to install the certifcate" />
+	<help name="Cert" lang="en" value="Specify the file containing the desired certificate data" />
+	<help name="CertFile" lang="en" value="Provide the path and name of the (in-device) file containing the desired certificate data" />
+	<help name="CertAdjustClock" lang="en" value="Specify whether to adjust device clock if current date is outside certificate validity window" />
+	<help name="KeystorePassword" lang="en" value="Provide the password required to initialize the Android Keystore" />
+	<help name="PrivateKeyPassword" lang="en" value="Provide the password required to decrypt the private key" />
+
+	
+	<list name="CertAction" hint="dropdown" > 
+		<item code="1" text="Install certificate" />
+		<item code="2" text="Uninstall certificate" />		
+		<item code="4" text="Initialize Android Keystore" />
+	</list>
+
+	<list name="CertType" hint="dropdown" > 
+		<item code="5"  text="CA Certificate (.PEM file)" />
+		<item code="6"  text="Client Certificate (.PEM file)" />
+		<item code="8"  text="Client Certificate and Private Key (.PFX file)" />
+		<item code="9"  text="Client Certificate and Private Key (.P12 file)" />
+		<item code="10" text="Client Certificate and Private Key (.PKCS12 file)" />
+	</list>
+
+	<list name="CertMethod" hint="dropdown" > 
+		<item code="2" text="Reference certificate file" />
+	</list>
+
+	<file name="PemFile" extension=".pem" />
+	<file name="KeyFile" extension=".key" />
+	<file name="PfxFile" extension=".pfx" />
+	<file name="P12File" extension=".p12" />
+	<file name="Pkcs12File" extension=".pkcs12" />
+
+	<encode code="101" name="CertAction" codesize="1" method="integer" datasize="1" /> 
+	<encode code="102" name="CertAlias" codesize="1" method="string" /> 
+	<encode code="103" name="CertType" codesize="1" method="integer" datasize="1" /> 
+	<encode code="104" name="CertMethod" codesize="1" method="integer" datasize="1" /> 
+	<encode code="105" name="Cert" codesize="1" method="string"/> 
+	<encode code="106" name="CertFile" codesize="1" method="string"/>
+	<encode code="108" name="CertAdjustClock" codesize="1" method="boolean" datasize="1" /> 
+	<encode code="109" name="KeystorePassword" codesize="1" method="string" /> 
+	<encode code="110" name="PrivateKeyPassword" codesize="1" method="string" /> 
+	
+	<characteristic  type="CertMgr"
+		doc="Perform certificate management operations"
+	>
+
+		<parm name="CertAction"
+			promptref="CertAction"
+			default="[.code]='1'"
+			helpref="CertAction"
+			listref="CertAction"
+			encoderef="CertAction"
+			doc="Supported actions are:"
+		/>
+
+		<characteristic type ="cert-details"
+			doc="Supply details about a specific certificate to be managed"
+		>
+
+			<parm name="CertAlias"
+				presentif="[CertAction.code] in (1:2)"
+				datatype="String"
+				minsize="1"
+				promptref="CertAlias"
+				helpref="CertAlias"
+				encoderef="CertAlias"
+				doc="String length must be:"
+			/>
+
+			<parm name="CertType" 
+				presentif="[CertAction.code] in (1)"
+				promptref="CertType"
+				helpref="CertType"
+				listref="CertType"
+				encoderef="CertType"
+				doc="Supported types are:"
+			/>
+
+			<parm name="CertMethod" 
+				presentif="[CertAction.code] in (1)"
+				default="[.code]='2'"
+				promptref="CertMethod"
+				helpref="CertMethod"
+				listref="CertMethod"
+				encoderef="CertMethod"
+				doc="Supported methods are:"
+			/>
+
+			
+			<parm name="PemFileCA"
+				presentif="[CertAction.code] in (1) and [CertType.code]=='5' and [CertMethod.code]in (1)"
+				datatype ="String"
+				minsize="1"
+				promptref="Cert"
+				fileref="PemFile"
+				helpref="Cert"
+				encoderef="Cert"
+				doc="Data must be base64 encoded and of length:"
+			/>
+
+			<parm name="PemFileClient"
+				presentif="[CertAction.code] in (1) and [CertType.code]=='6' and [CertMethod.code]in (1)"
+				datatype ="String"
+				minsize="1"
+				promptref="Cert"
+				fileref="PemFile"
+				helpref="Cert"
+				encoderef="Cert"
+				doc="Data must be base64 encoded and of length:"
+			/>
+
+			<parm name="PfxFile"
+				presentif="[CertAction.code] in (1) and [CertType.code]=='8' and [CertMethod.code]in (1)"
+				datatype ="String"
+				minsize="1"
+				promptref="Cert"
+				fileref="PfxFile"
+				helpref="Cert"
+				encoderef="Cert"
+				doc="Data must be base64 encoded and of length:"
+			/>
+
+			<parm name="P12File"
+				presentif="[CertAction.code] in (1) and [CertType.code]=='9' and [CertMethod.code]in (1)"
+				datatype ="String"
+				minsize="1"
+				promptref="Cert"
+				fileref="P12File"
+				helpref="Cert"
+				encoderef="Cert"
+				doc="Data must be base64 encoded and of length:"
+			/>
+
+			<parm name="Pkcs12File"
+				presentif="[CertAction.code] in (1) and [CertType.code]=='10' and [CertMethod.code]in (1)"
+				datatype ="String"
+				minsize="1"
+				promptref="Cert"
+				fileref="Pkcs12File"
+				helpref="Cert"
+				encoderef="Cert"
+				doc="Data must be base64 encoded and of length:"
+			/>
+
+			<parm name="CertFileCA"
+				presentif="[CertAction.code] in (1) and [CertType.code] in (5) and [CertMethod.code]in (2)"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="CertFile"
+				helpref="CertFile"
+				encoderef="CertFile"
+				doc="String length must be:"
+			/>
+
+			<parm name="CertFileClient"
+				presentif="[CertAction.code] in (1) and [CertType.code] in (6,8,9,10) and [CertMethod.code]in (2)"
+				datatype="String"
+				minsize="1"
+				maxsize="255"
+				promptref="CertFile"
+				helpref="CertFile"
+				encoderef="CertFile"
+				doc="String length must be:"
+			/>
+
+			<parm name="CertAdjustClock" 
+				presentif="[CertAction.code] in (1,3)"
+				promptref="CertAdjustClock"
+				datatype="Boolean"
+				value="[.text]"
+				helpref="CertAdjustClock"
+				encoderef="CertAdjustClock"
+				doc="Supported values are:"
+			/>
+			
+			<parm name="PrivateKeyPassword"
+				presentif="[CertAction.code] in (1,3) and [CertType.code] in (7:10)"
+				datatype="String"
+				minsize="1"
+				maxsize="32"
+				promptref="PrivateKeyPassword"
+				helpref="PrivateKeyPassword"
+				encoderef="PrivateKeyPassword"
+				encrypt="1"
+				doc="String length must be:"
+			/>
+		</characteristic>
+		
+		<characteristic type ="keystore-details"
+			doc="Supply details for managing the keystore"
+		>
+			<parm name="KeystorePassword"
+				presentif="[CertAction.code] in (4)"
+				datatype="String"
+				minsize="0"
+				maxsize="32"
+				promptref="KeystorePassword"
+				helpref="KeystorePassword"
+				encoderef="KeystorePassword"
+				skipif="[.text]==''"
+				encrypt="1"
+				doc="String length must be:"
+			/>
+		</characteristic>
+
+	</characteristic>
+
+</wap-semanticsdoc>
+

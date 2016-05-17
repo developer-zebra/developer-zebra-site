@@ -1,0 +1,79 @@
+<wap-semanticsdoc version="4.3" revision="1">
+
+
+    <prompt name="AirPlaneMode" lang="en" value="Airplane Mode Power Key Menu Option:" />
+    <prompt name="SafeMode" lang="en" value="Safe Mode Power Key Menu Option:" />
+    <prompt name="AutoScreenLockOption" lang="en" value="Automatic Screen Lock on Power Key Option:" />
+    <prompt name="AutoScreenLockState" lang="en" value="Automatic Screen Lock on Power Key State:" />
+
+
+    <help name="AirPlaneMode" lang="en" value="Select whether the Airplane Mode Option should appear on the Power Key Menu" />
+    <help name="SafeMode" lang="en" value="Select whether the Safe Mode Option should appear on the Power Key Menu" />
+    <help name="AutoScreenLockOption" lang="en" value="Select whether Power Button Instantly Locks option should appear on Settings UI" />
+    <help name="AutoScreenLockState" lang="en" value="Select whether screen instantly locks when the device is turned off using the power key" />
+
+    <encode code="2" name="AirPlaneMode" codesize="1" method="integer" datasize="1" />
+    <encode code="4" name="SafeMode" codesize="1" method="integer" datasize="1" />
+    <encode code="5" name="AutoScreenLockOption" codesize="1" method="integer" datasize="1" />
+    <encode code="6" name="AutoScreenLockState" codesize="1" method="integer" datasize="1" />
+
+    <list name ="EnableDisableMenuOption" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Show Menu Option" />
+        <item code="2" text="Do not show Menu Option" />
+    </list>
+    <list name ="EnableDisableAutoScreenLockOption" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Show option" />
+        <item code="2" text="Do not show option" />
+    </list>
+    <list name ="AutoScreenLock" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Turn on" />
+        <item code="2" text="Turn Off" />
+    </list>
+
+    <characteristic  type="PowerKeyMgr" doc="Manage Power Key Configuration" >
+
+                <parm name="AirPlaneMode"
+                    promptref="AirPlaneMode"
+                    value="[.code]"
+                    helpref="AirPlaneMode"
+                    encoderef="AirPlaneMode"
+                    listref="EnableDisableMenuOption"
+                    skipif="[.code] in (0)"
+                    doc="Supported actions are:"
+                />
+        <parm name="SafeMode"
+                    promptref="SafeMode"
+                    value="[.code]"
+                    helpref="SafeMode"
+                    encoderef="SafeMode"
+                    listref="EnableDisableMenuOption"
+                    skipif="[.code] in (0)"
+                    doc="Supported actions are:"
+                />
+        <parm name="AutoScreenLockOption"
+                    promptref="AutoScreenLockOption"
+                    value="[.code]"
+                    helpref="AutoScreenLockOption"
+                    encoderef="AutoScreenLockOption"
+                    listref="EnableDisableAutoScreenLockOption"
+                    skipif="[.code] in (0)"
+                    doc="Supported actions are:"
+                />
+        <parm name="AutoScreenLockState"
+                    promptref="AutoScreenLockState"
+                    value="[.code]"
+                    helpref="AutoScreenLockState"
+                    encoderef="AutoScreenLockState"
+                    listref="AutoScreenLock"
+                    skipif="[.code] in (0)"
+                    doc="Supported actions are:"
+                />
+
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

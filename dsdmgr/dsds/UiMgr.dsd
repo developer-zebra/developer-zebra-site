@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wap-semanticsdoc version="5.1" revision="1">
+  <prompt name="ClipBoardUsage" lang="en" value="Clipboard:" />
+  <prompt name="ClipBoardClear" lang="en" value="Clear Clipboard?" />
+  <prompt name="AutoCorrectUsage" lang="en" value="Enable/Disable AutoCorrect:" />
+  <prompt name="HomeKeyUsage" lang="en" value="Enable/Disable HomeKey:" />
+  <prompt name="CurrentLocale" lang="en" value="Set Current Locale:" />
+  <prompt name="ExtendedLocale" lang="en" value="Extended Locale:" />
+  <prompt name="CustomLocale" lang="en" value="Custom Locale:" />
+  <prompt name="InputMethodAction" lang="en" value="Set Default Input Method?:" />
+  <prompt name="InputMethodOption" lang="en" value="Select a Default Input Method Option:" />
+  <prompt name="InputMethodPackageName" lang="en" value="Package name of input Method:" />
+  <prompt name="InputMethodClassName" lang="en" value="Class name of input Method:" />
+  <prompt name="BluetoothPairingPopupUsage" lang="en" value="Enable/Disable Bluetooth Pairing Popup:" />
+  <prompt name="NotificationPullDown" lang="en" value="Pull Down of Notification Panel:" />
+  <prompt name="NotificationSettings" lang="en" value="Settings Icon on Notification Panel:" />
+  <help name="ClipBoardUsage" lang="en" value="Specify whether the use of clipboard will be allowed" />
+  <help name="ClipBoardClear" lang="en" value="Specify whether to clear clipboard" />
+  <help name="AutoCorrectUsage" lang="en" value="Specify whether auto correction of mistyped words will be allowed" />
+  <help name="HomeKeyUsage" lang="en" value="Specify whether the use of HomeKey will be allowed" />
+  <help name="CurrentLocale" lang="en" value="Select &quot;Extended&quot; or &quot;Custom&quot; for additional locales" />
+  <help name="ExtendedLocale" lang="en" value="Select the desired extended locale (NOTE: extended locales may not be supported on all devices)" />
+  <help name="CustomLocale" lang="en" value="Enter the desired custom locale in the format LANG or LANG_REGION (en or en_IN)" />
+  <help name="InputMethodAction" lang="en" value="Select the action for input method" />
+  <help name="InputMethodOption" lang="en" value="Select the desired input method" />
+  <help name="InputMethodPackageName" lang="en" value="Provide package name to set default input method" />
+  <help name="InputMethodClassName" lang="en" value="Provide class name to set default input method" />
+  <help name="BluetoothPairingPopupUsage" lang="en" value="Specify whether the use of Bluetooth Pairing Popup will be allowed" />
+  <help name="NotificationPullDown" lang="en" value="Specify whether the pull down of the Notification Panel will be allowed" />
+  <help name="NotificationSettings" lang="en" value="Specify whether the icon to invoke Settings from the Notification Panel will be shown" />
+  <list name="EnableDisableUsage">
+    <item code="0" text="Do not change" />
+    <item code="1" text="Enable" />
+    <item code="2" text="Disable" />
+  </list>
+  <list name="ShowHide">
+    <item code="0" text="Do not change" />
+    <item code="1" text="Show" />
+    <item code="2" text="Hide" />
+  </list>
+  <list name="CurrentLocale">
+    <item code="0" text="Do not change" />
+    <item code="98" text="Extended" />
+    <item code="99" text="Custom" />
+    <item code="en_CA" text="CANADA" />
+    <item code="fr_CA" text="CANADA_FRENCH" />
+    <item code="zh_CN" text="CHINA" />
+    <item code="zh" text="CHINESE" />
+    <item code="en" text="ENGLISH" />
+    <item code="fr_FR" text="FRANCE" />
+    <item code="fr" text="FRENCH" />
+    <item code="de" text="GERMAN" />
+    <item code="de_DE" text="GERMANY" />
+    <item code="it" text="ITALIAN" />
+    <item code="it_IT" text="ITALY" />
+    <item code="ja_JP" text="JAPAN" />
+    <item code="ja" text="JAPANESE" />
+    <item code="ko_KR" text="KOREA" />
+    <item code="ko" text="KOREAN" />
+    <item code="zh_CN" text="PRC" />
+    <item code="zh_CN" text="SIMPLIFIED_CHINESE" />
+    <item code="zh_TW" text="TAIWAN" />
+    <item code="zh_TW" text="TRADITIONAL_CHINESE" />
+    <item code="en_GB" text="UK" />
+    <item code="en_US" text="US" />
+    <item code="es_ES" text="SPANISH" />
+    <item code="es_US" text="US_SPANISH" />
+    <item code="pt_BR" text="BRAZIL_PORTUGUESE" />
+    <item code="pt_PT" text="PORTUGUESE" />
+  </list>
+  <list name="ExtendedLocale">
+    <item code="en_AU" text="AUSTRALIA_ENGLISH" />
+    <item code="en_IN" text="INDIA_ENGLISH" />
+    <item code="se_SE" text="SWEDEN_SWEDISH" />
+    <item code="nb_NO" text="NORWAY_NORWEGIAN-BOKMÅL" />
+    <item code="fi_FI" text="FINLAND_FINISH" />
+    <item code="da_DK" text="DENMARK_DANISH" />
+  </list>
+  <list name="InputMethodAction">
+    <item code="0" text="Do not change" />
+    <item code="1" text="Change Current Input Method" />
+  </list>
+  <list name="InputMethodOption">
+    <item code="1" text="English(US)" />
+    <item code="2" text="Japanese" />
+    <item code="3" text="Chinese(China)" />
+    <item code="4" text="User defined Input Method" />
+  </list>
+  <encode code="1" name="ClipBoardUsage" codesize="1" method="integer" datasize="1" />
+  <encode code="2" name="ClipBoardClear" codesize="1" method="boolean" datasize="1" />
+  <encode code="3" name="AutoCorrectUsage" codesize="1" method="integer" datasize="1" />
+  <encode code="4" name="HomeKeyUsage" codesize="1" method="integer" datasize="1" />
+  <encode code="5" name="CurrentLocale" codesize="1" method="string" />
+  <encode code="6" name="InputMethodAction" codesize="1" method="integer" datasize="1" />
+  <encode code="7" name="InputMethodPackageName" codesize="1" method="string" />
+  <encode code="8" name="InputMethodClassName" codesize="1" method="string" />
+  <encode code="9" name="BluetoothPairingPopupUsage" codesize="1" method="integer" datasize="1" />
+  <encode code="10" name="InputMethodOption" codesize="1" method="integer" datasize="1" />
+  <encode code="11" name="ExtendedLocale" codesize="1" method="string" />
+  <encode code="12" name="CustomLocale" codesize="1" method="string" />
+  <encode code="13" name="NotificationPullDown" codesize="1" method="integer" datasize="1" />
+  <encode code="14" name="NotificationSettings" codesize="1" method="integer" datasize="1" />
+  <characteristic type="UiMgr" doc="Manage UI configuration">
+    <parm name="ClipBoardUsage" promptref="ClipBoardUsage" value="[.code]" helpref="ClipBoardUsage" listref="EnableDisableUsage" encoderef="ClipBoardUsage" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <parm name="ClipBoardClear" promptref="ClipBoardClear" datatype="Boolean" value="[.text]" helpref="ClipBoardClear" encoderef="ClipBoardClear" skipif="[.text]=='false'" doc="Supported actions are:" />
+    <parm name="AutoCorrectUsage" promptref="AutoCorrectUsage" value="[.code]" helpref="AutoCorrectUsage" listref="EnableDisableUsage" encoderef="AutoCorrectUsage" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <parm name="HomeKeyUsage" promptref="HomeKeyUsage" value="[.code]" helpref="HomeKeyUsage" listref="EnableDisableUsage" encoderef="HomeKeyUsage" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <parm name="BluetoothPairingPopupUsage" promptref="BluetoothPairingPopupUsage" value="[.code]" helpref="BluetoothPairingPopupUsage" listref="EnableDisableUsage" encoderef="BluetoothPairingPopupUsage" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <parm name="CurrentLocale" promptref="CurrentLocale" value="[.code]" helpref="CurrentLocale" listref="CurrentLocale" encoderef="CurrentLocale" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <parm name="ExtendedLocale" presentif="[CurrentLocale.text]=='Extended'" promptref="ExtendedLocale" datatype="String" minsize="2" maxsize="5" helpref="ExtendedLocale" listref="ExtendedLocale" encoderef="ExtendedLocale" doc="String value must be of the form ll or ll_RR, e.g. en or en_US and with length:" />
+    <parm name="CustomLocale" presentif="[CurrentLocale.text]=='Custom'" promptref="CustomLocale" datatype="String" minsize="2" maxsize="5" helpref="CustomLocale" encoderef="CustomLocale" doc="String value must be of the form ll or ll_RR, e.g. en or en_US and with length:" />
+    <parm name="InputMethodAction" promptref="InputMethodAction" value="[.code]" helpref="InputMethodAction" listref="InputMethodAction" encoderef="InputMethodAction" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <characteristic type="InputMethodDetails" doc="Details of the input method to be set" presentif="[InputMethodAction.code] in (1)">
+      <parm name="InputMethodOption" promptref="InputMethodOption" value="[.code]" helpref="InputMethodOption" listref="InputMethodOption" encoderef="InputMethodOption" doc="Supported options are:" />
+      <parm name="InputMethodPackageName" presentif="[InputMethodOption.code] in (4)" datatype="string" minsize="1" promptref="InputMethodPackageName" helpref="InputMethodPackageName" encoderef="InputMethodPackageName" doc="If specified, must have a length of" />
+      <parm name="InputMethodClassName" presentif="[InputMethodOption.code] in (4)" datatype="string" minsize="1" promptref="InputMethodClassName" helpref="InputMethodClassName" encoderef="InputMethodClassName" doc="If specified, must have a length of" />
+    </characteristic>
+    <parm name="NotificationPullDown" promptref="NotificationPullDown" value="[.code]" helpref="NotificationPullDown" listref="EnableDisableUsage" encoderef="NotificationPullDown" skipif="[.code]=='0'" doc="Supported actions are:" />
+    <parm name="NotificationSettings" promptref="NotificationSettings" value="[.code]" helpref="NotificationSettings" listref="ShowHide" encoderef="NotificationSettings" skipif="[.code]=='0'" doc="Supported actions are:" />
+  </characteristic>
+</wap-semanticsdoc>

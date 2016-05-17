@@ -1,0 +1,58 @@
+<wap-semanticsdoc version="4.3" >
+<!-- BrowserMgr.DSD for V3 release -->
+
+    <prompt name="SetDefaultHomepage" lang="en" value="Set Default Home Page:" />
+    <prompt name="SetRememberPasswords" lang="en" value="Turn On/Off Remember Passwords:" />
+    <prompt name="SetSaveFormData" lang="en" value="Turn On/Off Save Form Data:" />
+
+    <help name="SetDefaultHomepage" lang="en" value="Enter the page that will be set as the default home page in the browser" />
+    <help name="SetRememberPasswords" lang="en" value="Set if passwords should be remembered in the browser" />
+    <help name="SetSaveFormData" lang="en" value="Set if the form data should be saved in the browser" />
+
+    <list name ="State" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Turn on" />
+        <item code="2" text="Turn off" />
+    </list>
+
+    <encode code="1" name="SetDefaultHomepage" codesize="1" method="string" />
+    <encode code="2" name="SetRememberPasswords" codesize="1" method="integer" datasize="1" />
+    <encode code="3" name="SetSaveFormData" codesize="1" method="integer" datasize="1" />
+
+    <characteristic  type="BrowserMgr" doc="Manage settings for the web browser"
+    >
+        <parm name="SetDefaultHomepage"
+            datatype="String"
+            minsize="0"
+            maxsize="2000"
+            promptref="SetDefaultHomepage"
+            helpref="SetDefaultHomepage"
+            identref="SetDefaultHomepage"
+            encoderef="SetDefaultHomepage"
+            skipif="[.text]==''"
+            doc="String length must be:"
+        />
+
+        <parm name="SetRememberPasswords"
+            promptref="SetRememberPasswords"
+            value="[.code]"
+            helpref="SetRememberPasswords"
+            listref="State"
+            encoderef="SetRememberPasswords"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+        <parm name="SetSaveFormData"
+            promptref="SetSaveFormData"
+            value="[.code]"
+            helpref="SetSaveFormData"
+            listref="State"
+            encoderef="SetSaveFormData"
+            skipif="[.code]=='0'"
+            doc="Supported actions are:"
+        />
+
+    </characteristic>
+
+</wap-semanticsdoc>

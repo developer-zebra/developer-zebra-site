@@ -1,0 +1,304 @@
+<wap-semanticsdoc version="5.0" >
+
+    <prompt name="FileAction" lang="en" value="File Action:" />
+    <prompt name="TargetAccessMethod" lang="en" value="Target Access Method:" />
+    <prompt name="TargetURI" lang="en" value="Target File URI:" />
+    <prompt name="TargetPathAndFileName" lang="en" value="Target Path and File Name:" />
+    <prompt name="OwnerPermissions" lang="en" value="Target Owner Permissions:" />
+    <prompt name="GroupPermissions" lang="en" value="Target Group Permissions:" />
+    <prompt name="OtherPermissions" lang="en" value="Target Group Permissions:" />
+    <prompt name="Permissions" lang="en" value="Target Owner Permissions:" />
+    <prompt name="SourceAccessMethod" lang="en" value="Source Access Method:" />
+    <prompt name="SourceType"  lang="en" value="File Type:" />
+    <prompt name="SourceURI" lang="en" value="Source File URI:" />
+    <prompt name="ArchiveSourceURI" lang="en" value="Source Archive URI:" />
+    <prompt name="SourcePathAndFileName" lang="en" value="Source Path and File Name:" />
+    <prompt name="SourceData" lang="en" value="Source File Data:" />
+    <prompt name="TargetPathAndFolderName" lang="en" value="Target Path and File Name:" />
+    <prompt name="ArchiveTargetPathAndFolderName" lang="en" value="Archive Target Path and Folder Name:" />
+
+    <help name="FileAction" lang="en" value="Specify the file action to perform" />
+    <help name="SourceType" lang="en" value="Specify the type of file to be managed" />
+    <help name="FileAccessMethod" lang="en" value="Specify the method that will be used to access the file" />
+    <help name="TargetPathAndFileName" lang="en" value="Provide the Target Path and File Name of the file within the device file system" />
+    <help name="OwnerPermissions" lang="en" value="Provide the owner permissions to be applied" />
+    <help name="GroupPermissions" lang="en" value="Provide the group permissions to be applied" />
+    <help name="OtherPermissions" lang="en" value="Provide the other permissions to be applied" />
+    <help name="FileURI" lang="en" value="Provide the URI to the file in the remote server" />
+    <help name="SourcePathAndFileName" lang="en" value="Provide the Source Path and File Name of the file within the device file system" />
+    <help name="SourceData" lang="en" value="Provide the source file data to be embedded in the XML" />
+    <help name="TargetPathAndFolderName" lang="en" value="Provide the Target Path and File Name within the device file system" />
+    <help name="ArchiveTargetPathAndFolderName" lang="en" value="Provide the Path and Folder Name within the device file system into which the Archive File will be expanded" />
+    <help name="ArchiveSourceURI" lang="en" value="Provide the URI to the Archive File in the remote server" />
+
+    <list name="FileAction" >
+        <item code="1" text="Transfer/Copy File" />
+        <item code="4" text="Delete File" />
+        <item code="9" text="Download and Expand Archive File" />
+    </list>
+
+    <list name="TargetAccessMethod" >
+        <item code="2" text="File in the device file system" />
+    </list>
+
+    <list name="Permissions" >
+        <item code="0" text="(0) No access" />
+        <item code="1" text="(1) Execute only" />
+        <item code="2" text="(2) Write only" />
+        <item code="3" text="(3) Execute and Write" />
+        <item code="4" text="(4) Read only" />
+        <item code="5" text="(5) Execute and Read" />
+        <item code="6" text="(6) Write and Read" />
+        <item code="7" text="(7) Execute, Write, and Read" />
+    </list>
+
+    <list name="SourceAccessMethod" >
+        <item code="1" text="File on a remote server" />
+        <item code="2" text="File in the device file system" />
+        <item code="3" text="File embedded in XML" />
+    </list>
+
+    <list name="SourceType" >
+        <item code="1"  text="General data file (any extension)" />
+        <item code="2"  text="Android Application Package (.APK file)" />
+        <item code="3"  text="Android OS Update (.ZIP file)" />
+    </list>
+
+    <uri name="PartsURI" type="parts" />
+    <uri name="InternalURI" type="internal" />
+
+    <file name="AnyFile" extension=".*" />
+    <file name="ApkFile" extension=".apk" />
+    <file name="ZipFile" extension=".zip" />
+    <file name="CabFile" extension=".cab" />
+    <file name="RegFile" extension=".reg" />
+
+    <encode code="101" name="FileAction" codesize="1" method="integer" datasize="1" />
+    <encode code="112" name="TargetAccessMethod" codesize="1" method="integer" datasize="1" />
+    <encode code="113" name="TargetPathAndFileName" codesize="1" method="string"/>
+    <encode code="114" name="OwnerPermissions" codesize="1" method="integer" datasize="2" />
+    <encode code="115" name="GroupPermissions" codesize="1" method="integer" datasize="2" />
+    <encode code="116" name="OtherPermissions" codesize="1" method="integer" datasize="2" />
+    <encode code="117" name="TargetURI" codesize="1" method="string"/>
+    <encode code="121" name="SourceType" codesize="1" method="integer" datasize="1" />
+    <encode code="122" name="SourceAccessMethod" codesize="1" method="integer" datasize="1" />
+    <encode code="123" name="SourcePathAndFileName" codesize="1" method="string" />
+    <encode code="124" name="SourceURI" codesize="1" method="string"/>
+    <encode code="125" name="ArchiveSourceURI" codesize="1" method="string"/>
+    <encode code="131" name="SourceData" codesize="1" method="string"/>
+    <encode code="132" name="TargetPathAndFolderName" codesize="1" method="string"/>
+    <encode code="133" name="ArchiveTargetPathAndFolderName" codesize="1" method="string"/>
+
+
+    <characteristic  type="FileMgr" doc="Perform file management operations">
+
+        <parm name="FileAction"
+            promptref="FileAction"
+            default="[.code]='1'"
+            helpref="FileAction"
+            listref="FileAction"
+            encoderef="FileAction"
+            doc="Supported actions are:"
+        />
+
+        <characteristic type ="file-details"
+            doc="Supply details about a specific file to be managed"
+        >
+
+            <parm name="TargetAccessMethod"
+                presentif="[FileAction.code] in (1)"
+                promptref="TargetAccessMethod"
+                default="[.code]=2"
+                helpref="FileAccessMethod"
+                listref="TargetAccessMethod"
+                encoderef="TargetAccessMethod"
+                doc="Supported methods are:"
+            />
+
+            <parm name="TargetURI"
+                presentif="[FileAction.code] in (1) and [TargetAccessMethod.code] in (1)"
+                datatype="String"
+                promptref="TargetURI"
+                uriref="PartsURI"
+                helpref="FileURI"
+                encoderef="TargetURI"
+                doc="String length must be:"
+            />
+
+            <parm name="TargetPathAndFileName"
+                presentif="([FileAction.code] in (1) and [TargetAccessMethod.code] in (2)) or [FileAction.code] in (2,3)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="TargetPathAndFileName"
+                helpref="TargetPathAndFileName"
+                encoderef="TargetPathAndFileName"
+                doc="String length must be:"
+            />
+
+            <parm name="ArchiveTargetPathAndFolderName"
+                presentif="[FileAction.code] in (9)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="ArchiveTargetPathAndFolderName"
+                helpref="ArchiveTargetPathAndFolderName"
+                encoderef="ArchiveTargetPathAndFolderName"
+                doc="String length must be:"
+            />
+
+            <parm name="SourceAccessMethod"
+                presentif="[FileAction.code] in (1)"
+                promptref="SourceAccessMethod"
+                helpref="FileAccessMethod"
+                listref="SourceAccessMethod"
+                encoderef="SourceAccessMethod"
+                doc="Supported methods are:"
+            />
+
+            <parm name="SourceURI"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (1)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="SourceURI"
+                uriref="InternalURI"
+                helpref="FileURI"
+                encoderef="SourceURI"
+                doc="String length must be:"
+            />
+
+            <parm name="ArchiveSourceURI"
+                presentif="[FileAction.code] in (9)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="ArchiveSourceURI"
+                uriref="InternalURI"
+                helpref="ArchiveSourceURI"
+                encoderef="ArchiveSourceURI"
+                doc="String length must be:"
+            />
+
+            <parm name="SourcePathAndFileName"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (2)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="SourcePathAndFileName"
+                helpref="SourcePathAndFileName"
+                encoderef="SourcePathAndFileName"
+                doc="String length must be:"
+            />
+
+            <parm name="SourceType"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (3)"
+                promptref="SourceType"
+                helpref="SourceType"
+                listref="SourceType"
+                encoderef="SourceType"
+                doc="Supported types are:"
+            />
+
+            <parm name="SourceDataAny"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (3) and [SourceType.code] in (1)"
+                datatype="String"
+                minsize="1"
+                promptref="SourceData"
+                fileref="AnyFile"
+                helpref="SourceData"
+                encoderef="SourceData"
+                doc="Data length must be:"
+            />
+
+            <parm name="SourceDataApk"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (3) and [SourceType.code] in (2)"
+                datatype="String"
+                minsize="1"
+                promptref="SourceData"
+                fileref="ApkFile"
+                helpref="SourceData"
+                encoderef="SourceData"
+                doc="Data length must be:"
+            />
+
+            <parm name="SourceDataZip"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (3) and [SourceType.code] in (3)"
+                datatype="String"
+                minsize="1"
+                promptref="SourceData"
+                fileref="ZipFile"
+                helpref="SourceData"
+                encoderef="SourceData"
+                doc="Data length must be:"
+            />
+
+            <parm name="SourceDataCab"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (3) and [SourceType.code] in (4)"
+                datatype="String"
+                minsize="1"
+                promptref="SourceData"
+                fileref="CabFile"
+                helpref="SourceData"
+                encoderef="SourceData"
+                doc="Data length must be:"
+            />
+
+            <parm name="SourceDataReg"
+                presentif="[FileAction.code] in (1) and [SourceAccessMethod.code] in (3) and [SourceType.code] in (5)"
+                datatype="String"
+                minsize="1"
+                promptref="SourceData"
+                fileref="RegFile"
+                helpref="SourceData"
+                encoderef="SourceData"
+                doc="Data length must be:"
+            />
+
+            <parm name="TargetPathAndFolderName"
+                presentif="[FileAction.code] in (4,6,7,8)"
+                datatype="String"
+                minsize="1"
+                maxsize="255"
+                promptref="TargetPathAndFolderName"
+                helpref="TargetPathAndFolderName"
+                encoderef="TargetPathAndFolderName"
+                doc="String length must be:"
+            />
+
+            <parm name="OwnerPermissions"
+                presentif="[FileAction.code] in (5,8)"
+                datatype="Integer"
+                promptref="OwnerPermissions"
+                helpref="OwnerPermissions"
+                listref="Permissions"
+                encoderef="OwnerPermissions"
+                doc="Supported methods are:"
+            />
+
+            <parm name="GroupPermissions"
+                presentif="[FileAction.code] in (5,8)"
+                datatype="Integer"
+                promptref="GroupPermissions"
+                helpref="GroupPermissions"
+                listref="Permissions"
+                encoderef="GroupPermissions"
+                doc="Supported methods are:"
+            />
+
+            <parm name="OtherPermissions"
+                presentif="[FileAction.code] in (5,8)"
+                datatype="Integer"
+                promptref="OtherPermissions"
+                helpref="OtherPermissions"
+                listref="Permissions"
+                encoderef="OtherPermissions"
+                doc="Supported methods are:"
+            />
+
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

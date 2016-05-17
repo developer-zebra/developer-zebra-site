@@ -1,0 +1,168 @@
+<wap-semanticsdoc version="0.5" >
+
+    <prompt name="BatchFileType" lang="en" value="Batch File Type:" />
+    <prompt name="BatchFileAccessMethod" lang="en" value="Batch File Access Method:" />
+    <prompt name="XmlFilePathAndName" lang="en" value="XML File Path and Name:" />
+    <prompt name="XmlFileData" lang="en" value="XML File Data:" />
+    <prompt name="BinFileRequireEncodings" lang="en" value="Require specific Encodings?" />
+    <prompt name="RequireOpaque" lang="en" value="Require Opaque Encryption?" />
+    <prompt name="RequireImmutable" lang="en" value="Require Immutable Encryption?" />
+    <prompt name="RequirePrivate" lang="en" value="Require Private Encryption?" />
+    <prompt name="BinFilePassword" lang="en" value="Security Password:" />
+    <prompt name="BinFilePathAndName" lang="en" value="Binary File Path and Name:" />
+    <prompt name="BinFileData" lang="en" value="Binary File Data:" />
+
+    <help name="BatchFileType" lang="en" value="Specify the Type of the Batch File" />
+    <help name="BatchFileAccessMethod" lang="en" value="Specify the method to be used to supply the Batch File" />
+    <help name="XmlFilePathAndName" lang="en" value="Provide the Path and Name of the XML Batch File" />
+    <help name="XmlFileData" lang="en" value="Provide the XML Batch File data to be embedded" />
+    <help name="BinFileRequireEncodings" lang="en" value="Select whether any specific Binary File Encodings are required" />
+    <help name="RequireOpaque" lang="en" value="Select whether Opaque Encryption is required" />
+    <help name="RequireImmutable" lang="en" value="Select whether Immutable Encryption is required" />
+    <help name="RequirePrivate" lang="en" value="Select whether Private Encryption is required" />
+    <help name="BinFilePassword" lang="en" value="Provide the Security Password (empty = none) to decrypt the Binary Batch File" />
+    <help name="BinFilePathAndName" lang="en" value="Provide the Path and Name of the Binary Batch File" />
+    <help name="BinFileData" lang="en" value="Provide the Binary Batch File data to be embedded" />
+
+    <list name="BatchFileType" hint="radiobuttons" >
+        <item code="1" text="XML File" />
+        <item code="2" text="Binary File" />
+    </list>
+
+    <list name="BatchFileAccessMethod" hint="radiobuttons" >
+        <item code="2" text="File in the device file system" />
+        <item code="3" text="File embedded in XML" />
+    </list>
+
+    <file name="XmlFileData" extension=".xml" />
+    <file name="BinFileData" extension=".bin" />
+
+    <encode code="101" name="BatchFileType" codesize="1" method="integer" datasize="1" />
+    <encode code="102" name="BatchFileAccessMethod" codesize="1" method="integer" datasize="1" />
+    <encode code="111" name="XmlFilePathAndName" codesize="1" method="string" />
+    <encode code="112" name="XmlFileData" codesize="1" method="binary" />
+    <encode code="121" name="BinFileRequireEncodings" codesize="1" method="integer" datasize="1" />
+    <encode code="122" name="RequireOpaque" codesize="1" method="integer" datasize="1" />
+    <encode code="123" name="RequireImmutable" codesize="1" method="integer" datasize="1" />
+    <encode code="124" name="RequirePrivate" codesize="1" method="integer" datasize="1" />
+    <encode code="125" name="BinFilePassword" codesize="1" method="string" />
+    <encode code="126" name="BinFilePathAndName" codesize="1" method="string" />
+    <encode code="127" name="BinFileData" codesize="1" method="binary" />
+
+    <characteristic  type="Batch"
+        doc="Process a Batch File containing a stream of XML or XML encoded as Binary"
+    >
+
+        <parm name="BatchFileType"
+            promptref="BatchFileType"
+            default="[.code]='1'"
+            helpref="BatchFileType"
+            listref="BatchFileType"
+            encoderef="BatchFileType"
+            doc="Supported types are:"
+        />
+
+        <parm name="BatchFileAccessMethod"
+            promptref="BatchFileAccessMethod"
+            default="[.code]='3'"
+            helpref="BatchFileAccessMethod"
+            listref="BatchFileAccessMethod"
+            encoderef="BatchFileAccessMethod"
+            doc="Supported methods are:"
+        />
+
+        <characteristic type ="file-details"
+            doc="Supply details about a specific file to be managed"
+        >
+
+            <parm name="XmlFilePathAndName"
+                presentif="[BatchFileType.code] in (1) and [BatchFileAccessMethod.code] in (2)"
+                datatype="String"
+                minsize="1"
+                promptref="XmlFilePathAndName"
+                helpref="XmlFilePathAndName"
+                encoderef="XmlFilePathAndName"
+                doc="Data length must be:"
+            />
+
+            <parm name="XmlFileData"
+                presentif="[BatchFileType.code] in (1) and [BatchFileAccessMethod.code] in (3)"
+                datatype="String"
+                minsize="1"
+                promptref="XmlFileData"
+                fileref="XmlFileData"
+                helpref="XmlFileData"
+                encoderef="XmlFileData"
+                doc="Data length must be:"
+            />
+
+            <parm name="BinFileRequireEncodings"
+                presentif="[BatchFileType.code] in (2)"
+                datatype="Boolean"
+                promptref="BinFileRequireEncodings"
+                helpref="BinFileRequireEncodings"
+                encoderef="BinFileRequireEncodings"
+            />
+
+            <parm name="RequireOpaque"
+                presentif="[BatchFileType.code] in (2) and [BinFileRequireEncodings.code] in (1)"
+                datatype="Boolean"
+                promptref="RequireOpaque"
+                helpref="RequireOpaque"
+                encoderef="RequireOpaque"
+            />
+
+            <parm name="RequireImmutable"
+                presentif="[BatchFileType.code] in (2) and [BinFileRequireEncodings.code] in (1)"
+                datatype="Boolean"
+                promptref="RequireImmutable"
+                helpref="RequireImmutable"
+                encoderef="RequireImmutable"
+            />
+
+            <parm name="RequirePrivate"
+                presentif="[BatchFileType.code] in (2) and [BinFileRequireEncodings.code] in (1)"
+                datatype="Boolean"
+                promptref="RequirePrivate"
+                helpref="RequirePrivate"
+                encoderef="RequirePrivate"
+            />
+
+            <parm name="BinFilePassword"
+                presentif="[BatchFileType.code] in (2)"
+                datatype="String"
+                promptref="BinFilePassword"
+                encrypt="1"
+                helpref="BinFilePassword"
+                encoderef="BinFilePassword"
+                skipif="[.text]==''"
+                doc="Data length must be:"
+            />
+
+            <parm name="BinFilePathAndName"
+                presentif="[BatchFileType.code] in (2) and [BatchFileAccessMethod.code] in (2)"
+                datatype="String"
+                minsize="1"
+                promptref="BinFilePathAndName"
+                helpref="BinFilePathAndName"
+                encoderef="BinFilePathAndName"
+                doc="Data length must be:"
+            />
+
+            <parm name="BinFileData"
+                presentif="[BatchFileType.code] in (2) and [BatchFileAccessMethod.code] in (3)"
+                datatype="String"
+                minsize="1"
+                promptref="BinFileData"
+                fileref="BinFileData"
+                helpref="BinFileData"
+                encoderef="BinFileData"
+                doc="Data length must be:"
+            />
+
+        </characteristic>
+
+    </characteristic>
+
+</wap-semanticsdoc>
+

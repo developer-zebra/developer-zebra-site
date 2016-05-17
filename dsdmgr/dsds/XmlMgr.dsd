@@ -1,0 +1,32 @@
+<wap-semanticsdoc version="4.2" >
+
+	<prompt name="ProcessingMode" lang="en" value="XML Processing Mode:" /> 
+
+	<help name="ProcessingMode" lang="en" value="Specify the XML processing mode to use" />
+
+	<list name="ProcessingMode" > 
+		<item code="1" text="Execute all to end" />
+		<item code="2" text="Execute until error, then stop" />
+		<item code="3" text="Try until error, then Skip to Catch" />
+		<item code="4" text="Catch error, Execute remainder" />
+	</list>
+
+	<encode code="101" name="ProcessingMode" codesize="1" method="integer" datasize="1" /> 
+
+	<characteristic  type="XmlMgr"
+		doc="Manage XML Processing"
+	>
+
+		<parm name="ProcessingMode"
+			promptref="ProcessingMode"
+			default="[.code]='1'"
+			helpref="ProcessingMode"
+			listref="ProcessingMode"
+			encoderef="ProcessingMode"
+			doc="Supported actions are:"
+		/>
+
+	</characteristic>
+
+</wap-semanticsdoc>
+

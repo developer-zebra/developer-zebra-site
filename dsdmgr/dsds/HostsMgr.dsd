@@ -1,0 +1,22 @@
+<wap-semanticsdoc version="5.1" >
+<prompt name="HostName" lang="en" value="Host name:" />
+<help name="HostName" lang="en" value="Enter the desired Host Name (friendly device name)" />
+<encode code="1" name="HostName" codesize="1" method="string"/>
+    <characteristic  type="HostsMgr"
+        doc="Manage device and network host names"
+    >
+	<prompt name="Version" lang="en" value="Version:" />
+		<help name="Version" lang="en" value="Version of the CSP" />
+		<parm name="Version" datatype="String" promptref="Version" helpref="Version" query="1" set="0" />
+                <parm name="HostName"
+                datatype="String"
+				minsize="0"
+				maxsize="255"
+                promptref="HostName"
+                helpref="HostName"
+                encoderef="HostName"
+				skipif="[.text]==''" 
+				query="3" 
+                />
+    </characteristic>
+</wap-semanticsdoc>

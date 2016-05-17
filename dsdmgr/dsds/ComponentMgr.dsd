@@ -1,0 +1,33 @@
+<wap-semanticsdoc version="4.4">
+
+    <list name ="UsageList" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <list name ="StateList" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Turn On" />
+        <item code="2" text="Turn Off" />
+    </list>
+
+    <characteristic  type="ComponentMgr" doc="Manage Use and State of Components" >
+
+        <prompt name="Version" lang="en" value="Version:" />
+        <help name="Version" lang="en" value="Version of the CSP" />
+        <parm name="Version" datatype="String" promptref="Version" helpref="Version" query="1" set="0" />
+
+        <prompt name="EthernetUsage" lang="en" value="Ethernet Usage:" />
+        <help name="EthernetUsage" lang="en" value="Select whether to enable or disable usage of the Ethernet Component" />
+        <encode code="1" name="EthernetUsage" codesize="1" method="integer" datasize="1" />
+        <parm name="EthernetUsage" promptref="EthernetUsage" value="[.code]" helpref="EthernetUsage" encoderef="EthernetUsage" listref="UsageList" skipif="[.code] in (0)" query="3"  doc="Supported actions are:" />
+
+        <prompt name="EthernetState" lang="en" value="Ethernet State:" />
+        <help name="EthernetState" lang="en" value="Select whether to enable or disable State of the Ethernet Component" />
+        <encode code="2" name="EthernetState" codesize="1" method="integer" datasize="1" />
+        <parm name="EthernetState" promptref="EthernetState" value="[.code]" helpref="EthernetState" encoderef="EthernetState" listref="StateList" skipif="[.code] in (0)" query="3"  doc="Supported actions are:" />
+
+    </characteristic>
+
+</wap-semanticsdoc>

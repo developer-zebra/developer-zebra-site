@@ -1,0 +1,293 @@
+<wap-semanticsdoc version="5.0">
+    <prompt name="HostNameState" lang="en" value="Send Host Name:" />
+    <prompt name="HostNameValue" lang="en" value="Host Name Option value:" />
+    <prompt name="UserClassState" lang="en" value="Send User Class:" />
+    <prompt name="UserClassValue" lang="en" value="User Class value:" />
+    <prompt name="BroadcastAddrState" lang="en" value="Request Broadcast Address:" />
+    <prompt name="NTPServerState" lang="en" value="Request NTP Server:" />
+    <prompt name="TFTPSerNameState" lang="en" value="@Deprecated - Request TFTP Server Name:" />
+    <prompt name="TFTPServerNameState" lang="en" value="Request TFTP Server Name:" />
+    <prompt name="BootFileState" lang="en" value="Request Boot File Name:" />
+    <prompt name="DomainSearchState" lang="en" value="Request Domain Search:" />
+    <prompt name="TFTPSerAddrState" lang="en" value="@Deprecated - Request TFTP Server Address:" />
+    <prompt name="TFTPServerAddrState" lang="en" value="Request TFTP Server Address:" />
+    <prompt name="VendorClassIdState" lang="en" value="Send Vendor Class Identifier:" />
+    <prompt name="VendorClassIdValue" lang="en" value="Vendor Class Identifier Value:" />
+    <prompt name="VendorEncapsulatedState" lang="en" value="Request Vendor Encapsulated Option:" />
+    <prompt name="VendorSpecific1State" lang="en" value="Request Vendor Specific1 Option(186):" />
+    <prompt name="VendorSpecific2State" lang="en" value="Request Vendor Specific2 Option(188):" />
+    <prompt name="Version" lang="en" value="Version:" />
+    <prompt name="DhcpOptionMgr" lang="en" value="DhcpOptionMgr:" />
+
+    <help name="HostNameState" lang="en" value="Enable or Disable sending of Host Name to DHCP Server" />
+    <help name="HostNameValue" lang="en" value="Specify Host Name value" />
+    <help name="UserClassState" lang="en" value="Enable or Disable sending of User Class to DHCP Server" />
+    <help name="UserClassValue" lang="en" value="Specify User Class value" />
+    <help name="BroadcastAddrState" lang="en" value="Enable or Disable Requesting of Broadcast Address from DHCP Server" />
+    <help name="NTPServerState" lang="en" value="Enable or Disable Requesting of NTP Server from DHCP Server" />
+    <help name="TFTPSerNameState" lang="en" value="@Deprecated - Enable or Disable Requesting of TFTP Server Name from DHCP Server"/>
+    <help name="TFTPServerNameState" lang="en" value="Enable or Disable Requesting of TFTP Server Name from DHCP Server"/>
+    <help name="BootFileState" lang="en" value="Enable or Disable Requesting of Boot File Name from DHCP Server"/>
+    <help name="DomainSearchState" lang="en" value="Enable or Disable Requesting of Domain Search from DHCP Server"/>
+    <help name="TFTPSerAddrState" lang="en" value="@Deprecated - Enable or Disable Requesting of TFTP Server Address from DHCP Server"/>
+    <help name="TFTPServerAddrState" lang="en" value="Enable or Disable Requesting of TFTP Server Address from DHCP Server"/>
+    <help name="VendorClassIdValue" lang="en" value="Specify Vendor Class Identifier value"/>
+    <help name="VendorClassIdState" lang="en" value="Enable or Disable Requesting of Vendor Class Identifier from DHCP Server"/>
+    <help name="VendorEncapsulatedState" lang="en" value="Enable or Disable Requesting of Vendor Encapsulated Option from DHCP Server"/>
+    <help name="VendorSpecific1State" lang="en" value="Enable or Disable Requesting of Vendor Specific1(186) from DHCP Server"/>
+    <help name="VendorSpecific2State" lang="en" value="Enable or Disable Requesting of Vendor Specific2(188) from DHCP Server"/>
+    <help name="Version" lang="en" value="Version of the CSP" />
+    <help name="DhcpOptionMgr" lang="en" value="DHCP Options" />
+
+    <encode code="1" name="HostNameState" codesize="1" method="integer" datasize="1" />
+    <encode code="2" name="HostNameValue" codesize="1" method="string" />
+    <encode code="3" name="UserClassState" codesize="1" method="integer" datasize="1" />
+    <encode code="4" name="UserClassValue" codesize="1" method="string" />
+    <encode code="5" name="BroadcastAddrState" codesize="1" method="integer" datasize="1" />
+    <encode code="6" name="NTPServerState" codesize="1" method="integer" datasize="1" />
+    <encode code="7" name="TFTPSerNameState" codesize="1" method="integer" datasize="1" />
+    <encode code="8" name="BootFileState" codesize="1" method="integer" datasize="1" />
+    <encode code="9" name="DomainSearchState" codesize="1" method="integer" datasize="1" />
+    <encode code="10" name="TFTPSerAddrState" codesize="1" method="integer" datasize="1" />
+    <encode code="11" name="VendorClassIdState" codesize="1" method="integer" datasize="1" />
+    <encode code="12" name="VendorClassIdValue" codesize="1" method="String"  />
+    <encode code="13" name="VendorEncapsulatedState" codesize="1" method="integer" datasize="1" />
+    <encode code="14" name="VendorSpecific1State" codesize="1" method="integer" datasize="1" />
+    <encode code="15" name="VendorSpecific2State" codesize="1" method="integer" datasize="1" />
+    <encode code="16" name="TFTPServerNameState" codesize="1" method="integer" datasize="1" />
+    <encode code="17" name="TFTPServerAddrState" codesize="1" method="integer" datasize="1" />
+
+    <list name ="EnableDisableUsage" >
+        <item code="0" text="Do not change" />
+        <item code="1" text="Enable" />
+        <item code="2" text="Disable" />
+    </list>
+
+    <characteristic  type="DhcpOptionMgr" promptref="DhcpOptionMgr" helpref="DhcpOptionMgr" query="1" doc="Manage DHCP Configuration" >
+        <parm name="Version"
+            datatype="String"
+            promptref="Version"
+            helpref="Version"
+            query="1"
+            set="0"
+        />
+
+        <characteristic type ="HostName" query="2" doc="Option code 12" >
+            <parm name="HostNameState"
+                promptref="HostNameState"
+                value="[.code]"
+                helpref="HostNameState"
+                encoderef="HostNameState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+
+            <parm name="HostNameValue"
+                promptref="HostNameValue"
+                datatype="String"
+                minsize="1"
+                maxsize="91"
+                helpref="HostNameValue"
+                encoderef="HostNameValue"
+                presentif="[HostNameState.code] in (1)"
+                query="2"
+                doc="String length must be:"
+            />
+        </characteristic>
+
+        <characteristic type ="UserClass" doc="Option code 77" >
+            <parm name="UserClassState"
+                promptref="UserClassState"
+                value="[.code]"
+                helpref="UserClassState"
+                encoderef="UserClassState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+             />
+
+            <parm name="UserClassValue"
+                promptref="UserClassValue"
+                datatype="String"
+                minsize="1"
+                maxsize="91"
+                helpref="UserClassValue"
+                encoderef="UserClassValue"
+                presentif="[UserClassState.code] in (1)"
+                query="2"
+                doc="String length must be:"
+            />
+        </characteristic>
+
+        <characteristic type ="BroadcastAddr" doc="Option code 28" >
+            <parm name="BroadcastAddrState"
+                promptref="BroadcastAddrState"
+                value="[.code]"
+                helpref="BroadcastAddrState"
+                encoderef="BroadcastAddrState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="NTPServer" doc="Option code 42" >
+            <parm name="NTPServerState"
+                promptref="NTPServerState"
+                value="[.code]"
+                helpref="NTPServerState"
+                encoderef="NTPServerState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="TFTPSerName" doc="Option code 66" >
+            <parm name="TFTPSerNameState"
+                promptref="TFTPSerNameState"
+                value="[.code]"
+                helpref="TFTPSerNameState"
+                encoderef="TFTPSerNameState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="TFTPServerName" doc="Option code 66" >
+            <parm name="TFTPServerNameState"
+                promptref="TFTPServerNameState"
+                value="[.code]"
+                helpref="TFTPServerNameState"
+                encoderef="TFTPServerNameState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="BootFile" doc="Option code 67" >
+            <parm name="BootFileState"
+                promptref="BootFileState"
+                value="[.code]"
+                helpref="BootFileState"
+                encoderef="BootFileState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="DomainSearch" doc="Option code 119" >
+            <parm name="DomainSearchState"
+                promptref="DomainSearchState"
+                value="[.code]"
+                helpref="DomainSearchState"
+                encoderef="DomainSearchState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="TFTPSerAddr" doc="Option code 150" >
+            <parm name="TFTPSerAddrState"
+                promptref="TFTPSerAddrState"
+                value="[.code]"
+                helpref="TFTPSerAddrState"
+                encoderef="TFTPSerAddrState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="TFTPServerAddr" doc="Option code 150" >
+            <parm name="TFTPServerAddrState"
+                promptref="TFTPServerAddrState"
+                value="[.code]"
+                helpref="TFTPServerAddrState"
+                encoderef="TFTPServerAddrState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="VendorClassId" doc="Option code 60" >
+            <parm name="VendorClassIdState"
+                promptref="VendorClassIdState"
+                value="[.code]"
+                helpref="VendorClassIdState"
+                encoderef="VendorClassIdState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+            <parm name="VendorClassIdValue"
+                promptref="VendorClassIdValue"
+                datatype="String"
+                minsize="1"
+                maxsize="91"
+                helpref="VendorClassIdValue"
+                encoderef="VendorClassIdValue"
+                presentif="[VendorClassIdState.code] in (1)"
+                query="2"
+                doc="String length must be less than or equal to:"
+            />
+        </characteristic>
+
+        <characteristic type ="VendorEncapsulated" query="2" doc="Option code 43" >
+            <parm name="VendorEncapsulatedState"
+                promptref="VendorEncapsulatedState"
+                value="[.code]"
+                helpref="VendorEncapsulatedState"
+                encoderef="VendorEncapsulatedState"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="VendorSpecific1" query="2" doc="Option code 186" >
+            <parm name="VendorSpecific1State"
+                promptref="VendorSpecific1State"
+                value="[.code]"
+                helpref="VendorSpecific1State"
+                encoderef="VendorSpecific1State"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+        <characteristic type ="VendorSpecific2" query="2" doc="Option code 188" >
+            <parm name="VendorSpecific2State"
+                promptref="VendorSpecific2State"
+                value="[.code]"
+                helpref="VendorSpecific2State"
+                encoderef="VendorSpecific2State"
+                listref="EnableDisableUsage"
+                skipif="[.code] in (0)"
+                query="2"
+                doc="Supported actions are:"
+            />
+        </characteristic>
+
+    </characteristic>
+</wap-semanticsdoc>

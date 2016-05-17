@@ -1,0 +1,1365 @@
+<wap-semanticsdoc version="5.0">
+
+	<prompt name="AnalyticsAction" lang="en" value="Analytics Action:"/>
+	<prompt name="TransportMethod" lang="en" value="Transport Method"/>
+	<prompt name="GroupAction" lang="en" value="Group Action:"/>
+	<prompt name="DASettings" lang="en" value="Analytics Client Settings:"/>
+	
+	<prompt name="EnableFileUpload" lang="en" value="Enable File/Events Upload :"/>
+	<prompt name="ClearData" lang="en" value="Clear DAE And CSP Data :"/>
+	<prompt name="DataThrottling" lang="en" value="Data Upload Limit :"/>
+	<prompt name="EventsThrottling" lang="en" value="Max Events Upload :"/>
+	<prompt name="AnalyticsCommand" lang="en" value="Select Command:"/>
+	<prompt name="CustomCommand" lang="en" value="Custom Command (dca_name.command):"/>
+	<prompt name="CustomDataThrottling" lang="en" value="Custom Data Limit :"/>
+	<prompt name="CustomEventsThrottling" lang="en" value="Custom Events Limit :"/>
+	
+	<prompt name="WWANPerf" lang="en" value="WWAN Performance:"/>
+	<prompt name="WLANPerf" lang="en" value="WLAN Performance:"/>
+	<prompt name="SmartBattery" lang="en" value="Smart Battery Status:"/>
+	<prompt name="SystemInfo" lang="en" value="System Information:"/>
+	<prompt name="GPSInfo" lang="en" value="GPS Information:"/>
+
+	<prompt name="GroupLevel" lang="en" value="Collection Level:"/>
+	<prompt name="StdInterval" lang="en" value="Standard Interval:"/>
+	<prompt name="CustomInterval" lang="en" value="Custom Interval:"/>
+	<prompt name="GroupName" lang="en" value="Group Name:"/>
+	<prompt name="StdMetricName" lang="en" value="Standard Metric Name:"/>
+	<prompt name="CustomMetricName" lang="en" value="Custom Metric Name:"/>
+	<prompt name="MetricAction" lang="en" value="Metric Action:"/>
+	<prompt name="Condition" lang="en" value="Condition:"/>
+	<prompt name="Threshold" lang="en" value="Threshold Value:"/>
+
+	<help name="AnalyticsAction" lang="en" value="Select whether to allow analytics on the device"/>
+	<help name="TransportMethod" lang="en" value="Select the Data Transport Method to be used"/>
+	<help name="GroupAction" lang="en" value="Select the Configuration Action to be performed"/>
+	<help name="DASettings" lang="en" value="Select Analytics Client Settings"/>
+	
+	<help name="EnableFileUpload" lang="en" value="Select whether applications can able upload its files and events to cloud  "/>
+	<help name="ClearData" lang="en" value="Select whether to clear DAE and CSP data when analytics is disabled"/>
+	<help name="DataThrottling" lang="en" value="Maximum amount of data per day engine can upload without generating threshold crossed events"/>
+	<help name="EventsThrottling" lang="en" value="Maximum number of events per day engine can upload without generating threshold crossed events"/>
+	<help name="AnalyticsCommand" lang="en" value="If enabled, you may incur additional data charges"/>
+	<help name="CustomCommand" lang="en" value="Enter command in dca_name.command formate"/>
+	<help name="CustomDataThrottling" lang="en" value="Enter Custom Data Limit"/>
+	<help name="CustomEventsThrottling" lang="en" value="Enter Custom Events Limit :"/>
+
+	<help name="WWANPerf" lang="en" value="Select the Level of Collection for the WWAN Performance Group"/>
+	<help name="WLANPerf" lang="en" value="Select the Level of Collection for the WLAN Performance Group"/>
+	<help name="SmartBattery" lang="en" value="Select the Level of Collection for the Smart Battery Status Group"/>
+	<help name="SystemInfo" lang="en" value="Select the Level of Collection for the System Information Group"/>
+	<help name="GPSInfo" lang="en" value="Select the Level of Collection for The GPS Information Group"/>
+
+	<help name="GroupName" lang="en" value="Select the name of the Group to Configure"/>
+	<help name="StdInterval" lang="en" value="Select the Standard Interval for all Metrics in the Group"/>
+	<help name="CustomInterval" lang="en" value="Enter the Custom Interval (in minutes) for all Metrics in the Group"/>
+	<help name="StdMetricName" lang="en" value="Select the name of the Standard Metric to enable"/>
+	<help name="CustomMetricName" lang="en" value="Enter the name of the Custom Metric to enable"/>
+	<help name="MetricAction" lang="en" value="Select the Action to perform for the Metric"/>
+	<help name="Condition" lang="en" value="Select when to collect the StandardMetric"/>
+	<help name="Threshold" lang="en" value="Enter the Threshold Value for the Condition"/>
+
+	<list name="AnalyticsAction">
+		<item code="0" text="Do not change"/>
+		<item code="1" text="Enable"/>
+		<item code="2" text="Disable"/>
+	</list>
+	<list name="DataThrottling">
+		<item code="0" text="Do not change"/>
+		<item code="1" text="1 MB"/>
+		<item code="2" text="5 MB"/>
+		<item code="3" text="10 MB"/>
+		<item code="4" text="50 MB"/>
+		<item code="5" text="100 MB"/>
+		<item code="6" text="Custom Data Limit In MB"/>
+	</list>
+	<list name="EventsThrottling">
+		<item code="0" text="Do not change"/>
+		<item code="1" text="1"/>
+		<item code="2" text="5"/>
+		<item code="3" text="10"/>
+		<item code="4" text="50"/>
+		<item code="5" text="100"/>
+		<item code="6" text="Custom Events Limit"/>
+	</list>
+	<list name="AnalyticsCommand">
+		<item code="0" text="No Command"/>
+		<item code="1" text="Engine.UploadCurrentLogFile"/>
+		<item code="2" text="Engine.UploadAllLogFiles"/>
+		<item code="3" text="Custom Command"/>
+	</list>
+	<list name="TransportMethod">
+		<item code="0" text="Do not change"/>
+		<item code="1" text="Select Cloud Transport"/>
+		<item code="2" text="Select File Transport"/>
+	</list>
+	<list name="GroupAction">
+		<item code="0" text="Do not change"/>
+		<item code="1" text="Configure Levels for Multiple Groups"/>
+		<item code="2" text="Configure Details for a Single Group"/>
+	</list>
+	<list name="GroupLevel">
+		<item code="0" text="Do not change"/>
+		<item code="1" text="None"/>
+		<item code="2" text="Low"/>
+		<item code="3" text="Medium"/>
+		<item code="4" text="High"/>
+	</list>
+	<list name="StdInterval">
+		<item code="5" text="5 minutes"/>
+		<item code="10" text="10 minutes"/>
+		<item code="15" text="15 minutes"/>
+		<item code="30" text="30 minutes"/>
+		<item code="60" text="1 hour"/>
+		<item code="9999" text="Custom"/>
+	</list>
+	<list name="GroupName">
+		<item code="1" text="WWANPerf" ui="WWAN Performance"/>
+		<item code="2" text="WLANPerf" ui="WLAN Performance"/>
+		<item code="3" text="SmartBattery" ui="Smart Battery Status"/>
+		<item code="4" text="SystemInfo" ui="System Information"/>
+		<item code="5" text="GPSInfo" ui="GPS Information"/>
+	</list>
+	<list name="WWANPerfStdMetricName">
+		<item code="99" text="" ui="Unused" />
+		<item code="0" text="WwanSignalQuality" ui="WWAN Signal Quality"/>
+		<item code="1" text="OutgoingCallAttempt" ui="Outgoing Call Attempts"/>
+		<item code="2" text="WwanRadioOnTime" ui="WWAN Radio On Time"/>
+		<item code="3" text="IncomingCallDuration" ui="Incoming Call Duration"/>
+		<item code="4" text="SuccessIncomingCall" ui="Successful Incoming Calls"/>
+		<item code="5" text="IncomingCallAttempt" ui="Incoming Call Attempts"/>
+		<item code="6" text="WwanErrorRate" ui="WWAN Error Rate"/>
+		<item code="999" text="Custom" ui="Custom Metric" />
+	</list>
+	<list name="WLANPerfStdMetricName">
+		<item code="99" text="" ui="Unused" />
+		<item code="0" text="WlanReceivePacketDelta" ui="WLAN Receive Packet Delta"/>
+		<item code="1" text="WlanSignalQuality" ui="WLAN Signal Quality"/>
+		<item code="2" text="WlanTransmitPacketDelta" ui="WLAN Transmit Package Delta"/>
+		<item code="3" text="WlanReceiveByteDelta" ui="WLAN Receive Byte Delta"/>
+		<item code="4" text="WlanTransmitByteDelta" ui="WLAN Transmit Byte Delta"/>
+		<item code="5" text="WlanRadioOnTime" ui="WLAN Radio On Time"/>
+		<item code="6" text="WlanWiFiEnabledDisabled" ui="WLAN WiFi Enabled Disabled"/>
+		<item code="7" text="WlanWiFiNotConnected" ui="WLAN WiFi Not Connected"/>
+		<item code="8" text="WlanIPAddressChange" ui="WLAN IP Address Change"/>
+		<item code="9" text="WlanStaticDHCPIP" ui="WLAN Static DHCP IP"/>
+		<item code="10" text="WlanBSSID" ui="WLAN BSSID"/>
+		<item code="11" text="WlanRSSI" ui="WLAN RSSI"/>
+		<item code="12" text="WlanRoamEvent" ui="WLAN Roam Event"/>
+		<item code="13" text="WlanDNSName" ui="WLAN DNS Name"/>
+		<item code="999" text="Custom" ui="Custom Metric" />
+	</list>
+	<list name="SmartBatteryStdMetricName">
+		<item code="99" text="" ui="Unused" />
+		<item code="0" text="BatteryStatus" ui="Battery Status"/>
+		<item code="1" text="BatteryLevel" ui="Battery Level"/>
+		<item code="2" text="AcChargeCount" ui="AC Charge Count"/>
+		<item code="3" text="DisplayOnTime" ui="Display On Time"/>
+		<item code="4" text="AcChargeTime" ui="AC Charge Time"/>
+		<item code="5" text="AcLineStatus" ui="AC Line Status"/>
+		<item code="6" text="ProcessCpuTimeDelta" ui="Process CPU Time Delta"/>
+		<item code="7" text="DeviceCpuTimeDelta" ui="Device CPU Time Delta"/>
+		<item code="8" text="BatteryHealthPercentage" ui="Battery Health Percentage (Gifted Battery)"/>
+		<item code="9" text="BatteryDecommission" ui="Battery Decommission"/>
+		<item code="10" text="BatteryUsageDecommissionThreshold" ui="Battery Usage Decommission Threshold (Smart Battery)"/>
+		<item code="11" text="BatteryPercentDecommissionThreshold" ui="Battery Percent Decommission Threshold (Gifted Battery)"/>
+		<item code="12" text="BatterySerial" ui="Battery Serial"/>
+		<item code="13" text="BatteryPartNumber" ui="Battery Part Number"/>
+		<item code="14" text="BatteryManufactureDate" ui="Battery Manufacture Date"/>
+		<item code="15" text="BatteryTemperature" ui="Battery Temperature"/>
+		<item code="16" text="BatteryVoltage" ui="Battery Voltage"/>
+		<item code="17" text="BatteryBackupVoltage" ui="Battery Backup Voltage"/>
+		<item code="18" text="BatteryRatedCapacity" ui="Battery Rated Capacity"/>
+		<item code="19" text="BatteryUsageNumber" ui="Battery Usage Number (Smart Battery)"/>
+		<item code="20" text="DataAnalyticsVersion" ui="DataAnalytics Version"/>
+		<item code="21" text="DeviceModel" ui="Device Model"/>
+		<item code="22" text="DeviceSerial" ui="Device Serial"/>
+		<item code="23" text="AndroidVersion" ui="Android Version"/>
+		<item code="24" text="BuildNumber" ui="Build Number"/>
+		<item code="25" text="BatteryPropertyCapacity" ui="Battery Property Capacity"/>
+		<item code="26" text="BatteryPropertyCurrentAverage" ui="Battery Property Current Average"/>
+		<item code="27" text="BatteryExtraTemperature" ui="Battery Extra Temperature"/>
+		<item code="28" text="BatteryCumulativeCharge" ui="Battery Cumulative Charge"/>
+		<item code="999" text="Custom" ui="Custom Metric" />
+		
+	</list>
+	<list name="SystemInfoStdMetricName">
+		<item code="99" text="" ui="Unused" />
+		<item code="0" text="AvailableStorageMemory" ui="Available (free) Storage Memory"/>
+		<item code="1" text="AvailablePhysicalMemory" ui="Available (free) Physical Memory"/>
+		<item code="3" text="TotalStorageMemory" ui="Total (installed) Storage Memory"/>
+		<item code="4" text="TotalPhysicalMemory" ui="Total (installed) Physical Memory"/>
+		<item code="5" text="TotalMemory" ui="Total (installed) Memory"/>
+		<item code="999" text="Custom" ui="Custom Metric" />
+	</list>
+	<list name="GPSInfoStdMetricName">
+		<item code="99" text="" ui="Unused" />
+		<item code="0" text="AltitudeWRTSeaLevel" ui="Current Altitude (in meters) from Sea Level"/>
+		<item code="1" text="DeviceState" ui="GPS Device State"/>
+		<item code="2" text="DeviceStateOnTimeDelta" ui="GPS On Time Delta"/>
+		<item code="3" text="Heading" ui="Current Course Heading (in degrees)"/>
+		<item code="4" text="GPSLocation" ui="Current Location (lat/long)"/>
+		<item code="5" text="PositionalDilutionOfPrecision" ui="Position Dilution of Precision"/>
+		<item code="6" text="SatellitesCount" ui="Current Satellite Count"/>
+		<item code="7" text="Speed" ui="Current Ground Speed (in knots)"/>
+		<item code="8" text="UTCTime" ui="Current GPS Time (in UTC)"/>
+		<item code="9" text="GPSAccuracy" ui="GPS Accuracy"/>
+		<item code="10" text="MaxSatellitesCount" ui="Max Satellites Count"/>
+		<item code="999" text="Custom" ui="Custom Metric" />
+	</list>
+	
+	<list name="ClearData">
+		<item code="0" text="DoNotClear" ui="Do Not Clear"/>
+		<item code="1" text="Clear" ui="Clear"/>	
+	</list>
+	
+	<list name="MetricAction">
+		<item code="0" text="Disable" ui="Disable the Metric"/>
+		<item code="1" text="Enable" ui="Enable the Metric"/>
+	</list>
+	<list name="Condition">
+		<item code="0" text="" ui="Unconditional"/>
+		<item code="1" text="eq" ui="Equal to a Threshold Value"/>
+		<item code="2" text="lt" ui="Less Than a Threshold Value"/>
+		<item code="3" text="gt" ui="Greater Than a Threshold Value"/>
+		<item code="4" text="le" ui="Less Than Or Equal to a Threshold Value"/>
+		<item code="5" text="ge" ui="Greater Than Or Equal to a Threshold Value"/>
+	</list>
+
+	<encode code="1" name="AnalyticsAction" codesize="1" method="integer" datasize="1"/>
+	<encode code="2" name="TransportMethod" codesize="1" method="integer" datasize="1"/>
+	<encode code="3" name="GroupAction" codesize="1" method="integer" datasize="1"/>
+	<encode code="4" name="BatteryCPU" codesize="1" method="integer" datasize="1"/>
+	<!-- below value is deprecated in 5.0 onwards -->
+	<encode code="5" name="EnableLogUpload" codesize="1" method="integer" datasize="1"/>
+	<encode code="6" name="DataThrottling" codesize="1" method="integer" datasize="1"/>
+	<encode code="7" name="EventsThrottling" codesize="1" method="integer" datasize="1"/>	
+	<encode code="8" name="DASettings" codesize="1" method="integer" datasize="1"/>
+	<encode code="9" name="ClearData" codesize="1" method="integer" datasize="1"/>
+	<encode code="10" name="EnableFileUpload" codesize="1" method="integer" datasize="1"/>
+	<encode code="11" name="CustomCommand" codesize="2" method="string"/>
+	<encode code="12" name="CustomDataThrottling" codesize="1" method="integer" datasize="2"/>
+	<encode code="13" name="CustomEventsThrottling" codesize="1" method="integer" datasize="2"/>
+	<encode code="14" name="AnalyticsCommand" codesize="1" method="integer" datasize="1"/>
+	
+	
+
+	<encode code="100" name="WWANPerf" codesize="1" method="integer" datasize="1"/>
+	<encode code="101" name="WLANPerf" codesize="1" method="integer" datasize="1"/>
+	<encode code="102" name="SmartBattery" codesize="1" method="integer" datasize="1"/>
+	<encode code="103" name="SystemInfo" codesize="1" method="integer" datasize="1"/>
+	<encode code="104" name="GPSInfo" codesize="1" method="integer" datasize="1"/>
+	
+
+	<encode code="200" name="GroupName" codesize="1" method="string"/>
+	<encode code="201" name="StdInterval" codesize="1" method="integer" datasize="2"/>
+	<encode code="202" name="CustomInterval" codesize="1" method="integer" datasize="2"/>
+
+	<encode code="22100" name="WWANPerfSlot0StdMetricName" codesize="2" method="string"/>
+	<encode code="22101" name="WWANPerfSlot0CustomMetricName" codesize="2" method="string"/>
+	<encode code="22102" name="WWANPerfSlot0MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22103" name="WWANPerfSlot0Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22104" name="WWANPerfSlot0Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22110" name="WWANPerfSlot1StdMetricName" codesize="2" method="string"/>
+	<encode code="22111" name="WWANPerfSlot1CustomMetricName" codesize="2" method="string"/>
+	<encode code="22112" name="WWANPerfSlot1MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22113" name="WWANPerfSlot1Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22114" name="WWANPerfSlot1Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22120" name="WWANPerfSlot2StdMetricName" codesize="2" method="string"/>
+	<encode code="22121" name="WWANPerfSlot2CustomMetricName" codesize="2" method="string"/>
+	<encode code="22122" name="WWANPerfSlot2MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22123" name="WWANPerfSlot2Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22124" name="WWANPerfSlot2Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22130" name="WWANPerfSlot3StdMetricName" codesize="2" method="string"/>
+	<encode code="22131" name="WWANPerfSlot3CustomMetricName" codesize="2" method="string"/>
+	<encode code="22132" name="WWANPerfSlot3MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22133" name="WWANPerfSlot3Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22134" name="WWANPerfSlot3Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22140" name="WWANPerfSlot4StdMetricName" codesize="2" method="string"/>
+	<encode code="22141" name="WWANPerfSlot4CustomMetricName" codesize="2" method="string"/>
+	<encode code="22142" name="WWANPerfSlot4MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22143" name="WWANPerfSlot4Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22144" name="WWANPerfSlot4Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22150" name="WWANPerfSlot5StdMetricName" codesize="2" method="string"/>
+	<encode code="22151" name="WWANPerfSlot5CustomMetricName" codesize="2" method="string"/>
+	<encode code="22152" name="WWANPerfSlot5MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22153" name="WWANPerfSlot5Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22154" name="WWANPerfSlot5Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22160" name="WWANPerfSlot6StdMetricName" codesize="2" method="string"/>
+	<encode code="22161" name="WWANPerfSlot6CustomMetricName" codesize="2" method="string"/>
+	<encode code="22162" name="WWANPerfSlot6MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22163" name="WWANPerfSlot6Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22164" name="WWANPerfSlot6Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22170" name="WWANPerfSlot7StdMetricName" codesize="2" method="string"/>
+	<encode code="22171" name="WWANPerfSlot7CustomMetricName" codesize="2" method="string"/>
+	<encode code="22172" name="WWANPerfSlot7MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22173" name="WWANPerfSlot7Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22174" name="WWANPerfSlot7Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	
+	<encode code="22200" name="WLANPerfSlot0StdMetricName" codesize="2" method="string"/>
+	<encode code="22201" name="WLANPerfSlot0CustomMetricName" codesize="2" method="string"/>
+	<encode code="22202" name="WLANPerfSlot0MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22203" name="WLANPerfSlot0Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22204" name="WLANPerfSlot0Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22210" name="WLANPerfSlot1StdMetricName" codesize="2" method="string"/>
+	<encode code="22211" name="WLANPerfSlot1CustomMetricName" codesize="2" method="string"/>
+	<encode code="22212" name="WLANPerfSlot1MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22213" name="WLANPerfSlot1Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22214" name="WLANPerfSlot1Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22220" name="WLANPerfSlot2StdMetricName" codesize="2" method="string"/>
+	<encode code="22221" name="WLANPerfSlot2CustomMetricName" codesize="2" method="string"/>
+	<encode code="22222" name="WLANPerfSlot2MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22223" name="WLANPerfSlot2Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22224" name="WLANPerfSlot2Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22230" name="WLANPerfSlot3StdMetricName" codesize="2" method="string"/>
+	<encode code="22231" name="WLANPerfSlot3CustomMetricName" codesize="2" method="string"/>
+	<encode code="22232" name="WLANPerfSlot3MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22233" name="WLANPerfSlot3Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22234" name="WLANPerfSlot3Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22240" name="WLANPerfSlot4StdMetricName" codesize="2" method="string"/>
+	<encode code="22241" name="WLANPerfSlot4CustomMetricName" codesize="2" method="string"/>
+	<encode code="22242" name="WLANPerfSlot4MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22243" name="WLANPerfSlot4Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22244" name="WLANPerfSlot4Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22250" name="WLANPerfSlot5StdMetricName" codesize="2" method="string"/>
+	<encode code="22251" name="WLANPerfSlot5CustomMetricName" codesize="2" method="string"/>
+	<encode code="22252" name="WLANPerfSlot5MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22253" name="WLANPerfSlot5Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22254" name="WLANPerfSlot5Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22260" name="WLANPerfSlot6StdMetricName" codesize="2" method="string"/>
+	<encode code="22261" name="WLANPerfSlot6CustomMetricName" codesize="2" method="string"/>
+	<encode code="22262" name="WLANPerfSlot6MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22263" name="WLANPerfSlot6Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22264" name="WLANPerfSlot6Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22265" name="WLANPerfSlot7StdMetricName" codesize="2" method="string"/>
+	<encode code="22266" name="WLANPerfSlot7CustomMetricName" codesize="2" method="string"/>
+	<encode code="22267" name="WLANPerfSlot7MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22268" name="WLANPerfSlot7Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22269" name="WLANPerfSlot7Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22270" name="WLANPerfSlot8StdMetricName" codesize="2" method="string"/>
+	<encode code="22271" name="WLANPerfSlot8CustomMetricName" codesize="2" method="string"/>
+	<encode code="22305" name="WLANPerfSlot8MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22273" name="WLANPerfSlot8Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22274" name="WLANPerfSlot8Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22275" name="WLANPerfSlot9StdMetricName" codesize="2" method="string"/>
+	<encode code="22276" name="WLANPerfSlot9CustomMetricName" codesize="2" method="string"/>
+	<encode code="22277" name="WLANPerfSlot9MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22278" name="WLANPerfSlot9Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22279" name="WLANPerfSlot9Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22280" name="WLANPerfSlot10StdMetricName" codesize="2" method="string"/>
+	<encode code="22281" name="WLANPerfSlot10CustomMetricName" codesize="2" method="string"/>
+	<encode code="22282" name="WLANPerfSlot10MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22283" name="WLANPerfSlot10Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22284" name="WLANPerfSlot10Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22285" name="WLANPerfSlot11StdMetricName" codesize="2" method="string"/>
+	<encode code="22286" name="WLANPerfSlot11CustomMetricName" codesize="2" method="string"/>
+	<encode code="22287" name="WLANPerfSlot11MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22288" name="WLANPerfSlot11Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22289" name="WLANPerfSlot11Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22290" name="WLANPerfSlot12StdMetricName" codesize="2" method="string"/>
+	<encode code="22291" name="WLANPerfSlot12CustomMetricName" codesize="2" method="string"/>
+	<encode code="22292" name="WLANPerfSlot12MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22293" name="WLANPerfSlot12Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22294" name="WLANPerfSlot12Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22295" name="WLANPerfSlot13StdMetricName" codesize="2" method="string"/>
+	<encode code="22296" name="WLANPerfSlot13CustomMetricName" codesize="2" method="string"/>
+	<encode code="22297" name="WLANPerfSlot13MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22298" name="WLANPerfSlot13Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22299" name="WLANPerfSlot13Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22300" name="SmartBatterySlot0StdMetricName" codesize="2" method="string"/>
+	<encode code="22301" name="SmartBatterySlot0CustomMetricName" codesize="2" method="string"/>
+	<encode code="22302" name="SmartBatterySlot0MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22303" name="SmartBatterySlot0Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22304" name="SmartBatterySlot0Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22310" name="SmartBatterySlot1StdMetricName" codesize="2" method="string"/>
+	<encode code="22311" name="SmartBatterySlot1CustomMetricName" codesize="2" method="string"/>
+	<encode code="22312" name="SmartBatterySlot1MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22313" name="SmartBatterySlot1Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22314" name="SmartBatterySlot1Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22320" name="SmartBatterySlot2StdMetricName" codesize="2" method="string"/>
+	<encode code="22321" name="SmartBatterySlot2CustomMetricName" codesize="2" method="string"/>
+	<encode code="22322" name="SmartBatterySlot2MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22323" name="SmartBatterySlot2Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22324" name="SmartBatterySlot2Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22330" name="SmartBatterySlot3StdMetricName" codesize="2" method="string"/>
+	<encode code="22331" name="SmartBatterySlot3CustomMetricName" codesize="2" method="string"/>
+	<encode code="22332" name="SmartBatterySlot3MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22333" name="SmartBatterySlot3Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22334" name="SmartBatterySlot3Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22340" name="SmartBatterySlot4StdMetricName" codesize="2" method="string"/>
+	<encode code="22341" name="SmartBatterySlot4CustomMetricName" codesize="2" method="string"/>
+	<encode code="22342" name="SmartBatterySlot4MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22343" name="SmartBatterySlot4Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22344" name="SmartBatterySlot4Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22350" name="SmartBatterySlot5StdMetricName" codesize="2" method="string"/>
+	<encode code="22351" name="SmartBatterySlot5CustomMetricName" codesize="2" method="string"/>
+	<encode code="22352" name="SmartBatterySlot5MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22353" name="SmartBatterySlot5Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22354" name="SmartBatterySlot5Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22360" name="SmartBatterySlot6StdMetricName" codesize="2" method="string"/>
+	<encode code="22361" name="SmartBatterySlot6CustomMetricName" codesize="2" method="string"/>
+	<encode code="22362" name="SmartBatterySlot6MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22363" name="SmartBatterySlot6Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22364" name="SmartBatterySlot6Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22371" name="SmartBatterySlot7StdMetricName" codesize="2" method="string"/>
+	<encode code="22372" name="SmartBatterySlot7CustomMetricName" codesize="2" method="string"/>
+	<encode code="22373" name="SmartBatterySlot7MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22374" name="SmartBatterySlot7Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22375" name="SmartBatterySlot7Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22365" name="SmartBatterySlot8StdMetricName" codesize="2" method="string"/>
+	<encode code="22367" name="SmartBatterySlot8CustomMetricName" codesize="2" method="string"/>
+	<encode code="22368" name="SmartBatterySlot8MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22369" name="SmartBatterySlot8Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22370" name="SmartBatterySlot8Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22381" name="SmartBatterySlot9StdMetricName" codesize="2" method="string"/>
+	<encode code="22382" name="SmartBatterySlot9CustomMetricName" codesize="2" method="string"/>
+	<encode code="22383" name="SmartBatterySlot9MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22384" name="SmartBatterySlot9Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22385" name="SmartBatterySlot9Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22376" name="SmartBatterySlot10StdMetricName" codesize="2" method="string"/>
+	<encode code="22377" name="SmartBatterySlot10CustomMetricName" codesize="2" method="string"/>
+	<encode code="22378" name="SmartBatterySlot10MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22379" name="SmartBatterySlot10Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22380" name="SmartBatterySlot10Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22391" name="SmartBatterySlot11StdMetricName" codesize="2" method="string"/>
+	<encode code="22392" name="SmartBatterySlot11CustomMetricName" codesize="2" method="string"/>
+	<encode code="22393" name="SmartBatterySlot11MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22394" name="SmartBatterySlot11Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22395" name="SmartBatterySlot11Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22386" name="SmartBatterySlot12StdMetricName" codesize="2" method="string"/>
+	<encode code="22387" name="SmartBatterySlot12CustomMetricName" codesize="2" method="string"/>
+	<encode code="22388" name="SmartBatterySlot12MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22389" name="SmartBatterySlot12Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22390" name="SmartBatterySlot12Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22600" name="SmartBatterySlot13StdMetricName" codesize="2" method="string"/>
+	<encode code="22601" name="SmartBatterySlot13CustomMetricName" codesize="2" method="string"/>
+	<encode code="22602" name="SmartBatterySlot13MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22603" name="SmartBatterySlot13Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22604" name="SmartBatterySlot13Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22610" name="SmartBatterySlot14StdMetricName" codesize="2" method="string"/>
+	<encode code="22611" name="SmartBatterySlot14CustomMetricName" codesize="2" method="string"/>
+	<encode code="22612" name="SmartBatterySlot14MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22613" name="SmartBatterySlot14Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22614" name="SmartBatterySlot14Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22620" name="SmartBatterySlot15StdMetricName" codesize="2" method="string"/>
+	<encode code="22621" name="SmartBatterySlot15CustomMetricName" codesize="2" method="string"/>
+	<encode code="22622" name="SmartBatterySlot15MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22623" name="SmartBatterySlot15Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22624" name="SmartBatterySlot15Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22630" name="SmartBatterySlot16StdMetricName" codesize="2" method="string"/>
+	<encode code="22631" name="SmartBatterySlot16CustomMetricName" codesize="2" method="string"/>
+	<encode code="22632" name="SmartBatterySlot16MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22633" name="SmartBatterySlot16Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22634" name="SmartBatterySlot16Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22640" name="SmartBatterySlot17StdMetricName" codesize="2" method="string"/>
+	<encode code="22641" name="SmartBatterySlot17CustomMetricName" codesize="2" method="string"/>
+	<encode code="22642" name="SmartBatterySlot17MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22643" name="SmartBatterySlot17Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22644" name="SmartBatterySlot17Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22650" name="SmartBatterySlot18StdMetricName" codesize="2" method="string"/>
+	<encode code="22651" name="SmartBatterySlot18CustomMetricName" codesize="2" method="string"/>
+	<encode code="22652" name="SmartBatterySlot18MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22653" name="SmartBatterySlot18Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22654" name="SmartBatterySlot18Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22660" name="SmartBatterySlot19StdMetricName" codesize="2" method="string"/>
+	<encode code="22661" name="SmartBatterySlot19CustomMetricName" codesize="2" method="string"/>
+	<encode code="22662" name="SmartBatterySlot19MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22663" name="SmartBatterySlot19Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22664" name="SmartBatterySlot19Threshold" codesize="2" method="integer" datasize="4"/>
+	                
+	<encode code="22671" name="SmartBatterySlot20StdMetricName" codesize="2" method="string"/>
+	<encode code="22672" name="SmartBatterySlot20CustomMetricName" codesize="2" method="string"/>
+	<encode code="22673" name="SmartBatterySlot20MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22674" name="SmartBatterySlot20Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22675" name="SmartBatterySlot20Threshold" codesize="2" method="integer" datasize="4"/>
+	                
+	<encode code="22665" name="SmartBatterySlot21StdMetricName" codesize="2" method="string"/>
+	<encode code="22667" name="SmartBatterySlot21CustomMetricName" codesize="2" method="string"/>
+	<encode code="22668" name="SmartBatterySlot21MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22669" name="SmartBatterySlot21Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22670" name="SmartBatterySlot21Threshold" codesize="2" method="integer" datasize="4"/>
+	                
+	<encode code="22681" name="SmartBatterySlot22StdMetricName" codesize="2" method="string"/>
+	<encode code="22682" name="SmartBatterySlot22CustomMetricName" codesize="2" method="string"/>
+	<encode code="22683" name="SmartBatterySlot22MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22684" name="SmartBatterySlot22Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22685" name="SmartBatterySlot22Threshold" codesize="2" method="integer" datasize="4"/>
+	                
+	<encode code="22676" name="SmartBatterySlot23StdMetricName" codesize="2" method="string"/>
+	<encode code="22677" name="SmartBatterySlot23CustomMetricName" codesize="2" method="string"/>
+	<encode code="22678" name="SmartBatterySlot23MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22679" name="SmartBatterySlot23Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22680" name="SmartBatterySlot23Threshold" codesize="2" method="integer" datasize="4"/>
+	                
+	<encode code="22691" name="SmartBatterySlot24StdMetricName" codesize="2" method="string"/>
+	<encode code="22692" name="SmartBatterySlot24CustomMetricName" codesize="2" method="string"/>
+	<encode code="22693" name="SmartBatterySlot24MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22694" name="SmartBatterySlot24Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22695" name="SmartBatterySlot24Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22696" name="SmartBatterySlot25StdMetricName" codesize="2" method="string"/>
+	<encode code="22697" name="SmartBatterySlot25CustomMetricName" codesize="2" method="string"/>
+	<encode code="22698" name="SmartBatterySlot25MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22699" name="SmartBatterySlot25Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22700" name="SmartBatterySlot25Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22701" name="SmartBatterySlot26StdMetricName" codesize="2" method="string"/>
+	<encode code="22702" name="SmartBatterySlot26CustomMetricName" codesize="2" method="string"/>
+	<encode code="22703" name="SmartBatterySlot26MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22704" name="SmartBatterySlot26Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22705" name="SmartBatterySlot26Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22706" name="SmartBatterySlot27StdMetricName" codesize="2" method="string"/>
+	<encode code="22707" name="SmartBatterySlot27CustomMetricName" codesize="2" method="string"/>
+	<encode code="22708" name="SmartBatterySlot27MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22709" name="SmartBatterySlot27Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22710" name="SmartBatterySlot27Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22711" name="SmartBatterySlot28StdMetricName" codesize="2" method="string"/>
+	<encode code="22712" name="SmartBatterySlot28CustomMetricName" codesize="2" method="string"/>
+	<encode code="22713" name="SmartBatterySlot28MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22714" name="SmartBatterySlot28Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22715" name="SmartBatterySlot28Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22716" name="SmartBatterySlot29StdMetricName" codesize="2" method="string"/>
+	<encode code="22717" name="SmartBatterySlot29CustomMetricName" codesize="2" method="string"/>
+	<encode code="22718" name="SmartBatterySlot29MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22719" name="SmartBatterySlot29Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22720" name="SmartBatterySlot29Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22721" name="SmartBatterySlot30StdMetricName" codesize="2" method="string"/>
+	<encode code="22722" name="SmartBatterySlot30CustomMetricName" codesize="2" method="string"/>
+	<encode code="22723" name="SmartBatterySlot30MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22724" name="SmartBatterySlot30Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22725" name="SmartBatterySlot30Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22400" name="SystemInfoSlot0StdMetricName" codesize="2" method="string"/>
+	<encode code="22401" name="SystemInfoSlot0CustomMetricName" codesize="2" method="string"/>
+	<encode code="22402" name="SystemInfoSlot0MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22403" name="SystemInfoSlot0Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22404" name="SystemInfoSlot0Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22410" name="SystemInfoSlot1StdMetricName" codesize="2" method="string"/>
+	<encode code="22411" name="SystemInfoSlot1CustomMetricName" codesize="2" method="string"/>
+	<encode code="22412" name="SystemInfoSlot1MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22413" name="SystemInfoSlot1Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22414" name="SystemInfoSlot1Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22420" name="SystemInfoSlot2StdMetricName" codesize="2" method="string"/>
+	<encode code="22421" name="SystemInfoSlot2CustomMetricName" codesize="2" method="string"/>
+	<encode code="22422" name="SystemInfoSlot2MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22423" name="SystemInfoSlot2Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22424" name="SystemInfoSlot2Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22430" name="SystemInfoSlot3StdMetricName" codesize="2" method="string"/>
+	<encode code="22431" name="SystemInfoSlot3CustomMetricName" codesize="2" method="string"/>
+	<encode code="22432" name="SystemInfoSlot3MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22433" name="SystemInfoSlot3Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22434" name="SystemInfoSlot3Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22440" name="SystemInfoSlot4StdMetricName" codesize="2" method="string"/>
+	<encode code="22441" name="SystemInfoSlot4CustomMetricName" codesize="2" method="string"/>
+	<encode code="22442" name="SystemInfoSlot4MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22443" name="SystemInfoSlot4Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22444" name="SystemInfoSlot4Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22450" name="SystemInfoSlot5StdMetricName" codesize="2" method="string"/>
+	<encode code="22451" name="SystemInfoSlot5CustomMetricName" codesize="2" method="string"/>
+	<encode code="22452" name="SystemInfoSlot5MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22453" name="SystemInfoSlot5Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22454" name="SystemInfoSlot5Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22460" name="SystemInfoSlot6StdMetricName" codesize="2" method="string"/>
+	<encode code="22461" name="SystemInfoSlot6CustomMetricName" codesize="2" method="string"/>
+	<encode code="22462" name="SystemInfoSlot6MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22463" name="SystemInfoSlot6Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22464" name="SystemInfoSlot6Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<encode code="22500" name="GPSInfoSlot0StdMetricName" codesize="2" method="string"/>
+	<encode code="22501" name="GPSInfoSlot0CustomMetricName" codesize="2" method="string"/>
+	<encode code="22502" name="GPSInfoSlot0MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22503" name="GPSInfoSlot0Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22504" name="GPSInfoSlot0Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22510" name="GPSInfoSlot1StdMetricName" codesize="2" method="string"/>
+	<encode code="22511" name="GPSInfoSlot1CustomMetricName" codesize="2" method="string"/>
+	<encode code="22512" name="GPSInfoSlot1MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22513" name="GPSInfoSlot1Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22514" name="GPSInfoSlot1Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22520" name="GPSInfoSlot2StdMetricName" codesize="2" method="string"/>
+	<encode code="22521" name="GPSInfoSlot2CustomMetricName" codesize="2" method="string"/>
+	<encode code="22522" name="GPSInfoSlot2MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22523" name="GPSInfoSlot2Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22524" name="GPSInfoSlot2Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22530" name="GPSInfoSlot3StdMetricName" codesize="2" method="string"/>
+	<encode code="22531" name="GPSInfoSlot3CustomMetricName" codesize="2" method="string"/>
+	<encode code="22532" name="GPSInfoSlot3MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22533" name="GPSInfoSlot3Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22534" name="GPSInfoSlot3Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22540" name="GPSInfoSlot4StdMetricName" codesize="2" method="string"/>
+	<encode code="22541" name="GPSInfoSlot4CustomMetricName" codesize="2" method="string"/>
+	<encode code="22542" name="GPSInfoSlot4MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22543" name="GPSInfoSlot4Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22544" name="GPSInfoSlot4Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22550" name="GPSInfoSlot5StdMetricName" codesize="2" method="string"/>
+	<encode code="22551" name="GPSInfoSlot5CustomMetricName" codesize="2" method="string"/>
+	<encode code="22552" name="GPSInfoSlot5MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22553" name="GPSInfoSlot5Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22554" name="GPSInfoSlot5Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22560" name="GPSInfoSlot6StdMetricName" codesize="2" method="string"/>
+	<encode code="22561" name="GPSInfoSlot6CustomMetricName" codesize="2" method="string"/>
+	<encode code="22562" name="GPSInfoSlot6MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22563" name="GPSInfoSlot6Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22564" name="GPSInfoSlot6Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22570" name="GPSInfoSlot7StdMetricName" codesize="2" method="string"/>
+	<encode code="22571" name="GPSInfoSlot7CustomMetricName" codesize="2" method="string"/>
+	<encode code="22572" name="GPSInfoSlot7MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22573" name="GPSInfoSlot7Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22574" name="GPSInfoSlot7Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22580" name="GPSInfoSlot8StdMetricName" codesize="2" method="string"/>
+	<encode code="22581" name="GPSInfoSlot8CustomMetricName" codesize="2" method="string"/>
+	<encode code="22582" name="GPSInfoSlot8MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22583" name="GPSInfoSlot8Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22584" name="GPSInfoSlot8Threshold" codesize="2" method="integer" datasize="4"/>
+	<encode code="22590" name="GPSInfoSlot9StdMetricName" codesize="2" method="string"/>
+	<encode code="22591" name="GPSInfoSlot9CustomMetricName" codesize="2" method="string"/>
+	<encode code="22592" name="GPSInfoSlot9MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22593" name="GPSInfoSlot9Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22594" name="GPSInfoSlot9Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22505" name="GPSInfoSlot10StdMetricName" codesize="2" method="string"/>
+	<encode code="22506" name="GPSInfoSlot10CustomMetricName" codesize="2" method="string"/>
+	<encode code="22507" name="GPSInfoSlot10MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22508" name="GPSInfoSlot10Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22509" name="GPSInfoSlot10Threshold" codesize="2" method="integer" datasize="4"/>
+	
+	<encode code="22515" name="GPSInfoSlot11StdMetricName" codesize="2" method="string"/>
+	<encode code="22516" name="GPSInfoSlot11CustomMetricName" codesize="2" method="string"/>
+	<encode code="22517" name="GPSInfoSlot11MetricAction" codesize="2" method="integer" datasize="1"/>
+	<encode code="22518" name="GPSInfoSlot11Condition" codesize="2" method="integer" datasize="1"/>
+	<encode code="22519" name="GPSInfoSlot11Threshold" codesize="2" method="integer" datasize="4"/>
+
+	<characteristic type="AnalyticsMgr" doc="Configure Analytics data collection operations">
+
+		<parm name="AnalyticsAction" listref="AnalyticsAction" promptref="AnalyticsAction" helpref="AnalyticsAction" encoderef="AnalyticsAction" skipif="[.code] in (0)" doc="Supported actions are:"/>
+		<parm name="ClearData" presentif="[AnalyticsAction.code] in (2)" listref="ClearData" promptref="ClearData" helpref="ClearData" encoderef="ClearData" skipif="[.code] in (0)" doc="Supported ClearData are:"/>
+
+		<parm name="TransportMethod" presentif="[AnalyticsAction.code] not in (2)" listref="TransportMethod" promptref="TransportMethod" helpref="TransportMethod" encoderef="TransportMethod" skipif="[.code] in (0)" doc="Supported actions are:"/>
+		<parm name="AnalyticsCommand" presentif="[AnalyticsAction.code] not in (2)" listref="AnalyticsCommand" promptref="AnalyticsCommand" helpref="AnalyticsCommand" encoderef="AnalyticsCommand" skipif="[.code] in (0)" doc="Supported actions are:"/>
+		<parm name="CustomCommand" presentif="[AnalyticsCommand.code] in (3)" promptref="CustomCommand" helpref="CustomCommand" encoderef="CustomCommand"  datatype="String" minsize="1" maxsize="64" doc="Custom Command length must be:"/>
+		
+		<parm name="DASettings" presentif="[AnalyticsAction.code] not in (2)" listref="AnalyticsAction" promptref="DASettings" helpref="DASettings" encoderef="DASettings" skipif="[.code] in (0)" doc="Supported Settings are:"/>
+		<parm name="EnableFileUpload" presentif="[DASettings.code] in (1) and [AnalyticsAction.code] not in (2)" listref="AnalyticsAction" promptref="EnableFileUpload" helpref="EnableFileUpload" encoderef="EnableFileUpload" skipif="[.code] in (0)" doc="Supported EnableFileUpload are:"/>
+		<parm name="DataThrottling" presentif="[DASettings.code] in (1) and [AnalyticsAction.code] not in (2)" listref="DataThrottling" promptref="DataThrottling" helpref="DataThrottling" encoderef="DataThrottling" skipif="[.code] in (0)" doc="Supported DataThrottling are:"/>
+		<parm name="CustomDataThrottling" presentif="[DASettings.code] in (1) and [DataThrottling.code] in (6) and [AnalyticsAction.code] not in (2)" promptref="CustomDataThrottling" helpref="CustomDataThrottling" datatype="integer" mininteger="1" maxinteger="9999" encoderef="CustomDataThrottling" doc="Value must be an integer that is:"/>
+		<parm name="EventsThrottling" presentif="[DASettings.code] in (1) and [AnalyticsAction.code] not in (2)" listref="EventsThrottling" promptref="EventsThrottling" helpref="EventsThrottling" encoderef="EventsThrottling" skipif="[.code] in (0)" doc="Supported EventsThrottling are:"/>
+		<parm name="CustomEventsThrottling" presentif="[DASettings.code] in (1) and [EventsThrottling.code] in (6) and [AnalyticsAction.code] not in (2)" promptref="CustomEventsThrottling" helpref="CustomEventsThrottling" datatype="integer" mininteger="1" maxinteger="9999" encoderef="CustomEventsThrottling" doc="Value must be an integer that is:"/>
+		
+		<parm name="GroupAction" presentif="[AnalyticsAction.code] not in (2)" listref="GroupAction" promptref="GroupAction" helpref="GroupAction" encoderef="GroupAction" skipif="[.code] in (0)" doc="Supported actions are:"/>
+		<characteristic type="GroupLevels" presentif="[GroupAction.code] in (1)" doc="Configure Levels for Multiple Groups">
+
+			<parm name="WWANPerf" listref="GroupLevel" promptref="WWANPerf" helpref="WWANPerf" encoderef="WWANPerf" skipif="[.code] in (0)"  doc="Supported levels are:"/>
+			<parm name="WLANPerf" listref="GroupLevel" promptref="WLANPerf" helpref="WLANPerf" encoderef="WLANPerf" skipif="[.code] in (0)"  doc="Supported levels are:"/>
+			<parm name="SmartBattery" listref="GroupLevel" promptref="SmartBattery" helpref="SmartBattery" encoderef="SmartBattery" skipif="[.code] in (0)" doc="Supported levels are:"/>
+			<parm name="SystemInfo" listref="GroupLevel" promptref="SystemInfo" helpref="SystemInfo" encoderef="SystemInfo" skipif="[.code] in (0)"  doc="Supported levels are:"/>
+			<parm name="GPSInfo" listref="GroupLevel" promptref="GPSInfo" helpref="GPSInfo" encoderef="GPSInfo" skipif="[.code] in (0)" doc="Supported levels are:"/>
+			
+
+		</characteristic>
+		<characteristic type="GroupDetails" presentif="[GroupAction.code] in (2)" doc="Configure Details for a Single Group">
+
+			<parm name="GroupName" listref="GroupName" promptref="GroupName" helpref="GroupName" encoderef="GroupName" doc="Supported group names are:"/>
+
+			<parm name="StdInterval" promptref="StdInterval" helpref="StdInterval" listref="StdInterval" encoderef="StdInterval" skipif="[.code] in (0)" doc="Supported standard intervals are:"/>
+
+			<parm name="CustomInterval" presentif="[StdInterval.code] in (9999)" promptref="CustomInterval" helpref="CustomInterval" datatype="integer" mininteger="1" maxinteger="9999" encoderef="CustomInterval" doc="Value must be an integer that is:"/>
+
+			<characteristic type="WWANPerf.Details" presentif="[GroupAction.code] in (2) and [GroupName.code] in (1)" doc="Information about WWAN Performance Metrics">
+
+
+				<parm name="WWANPerfSlot0StdMetricName" 
+				listref="WWANPerfStdMetricName" 
+				promptref="StdMetricName" 
+				value="[.text]" 
+				helpref="StdMetricName" 
+				encoderef="WWANPerfSlot0StdMetricName" 
+				skipif="[.code] in (99)" 
+				doc="Supported metric names are:"/>
+				
+				<parm name="WWANPerfSlot0CustomMetricName" presentif="[WWANPerfSlot0StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot0CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot0MetricAction" presentif="[WWANPerfSlot0StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot0MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot0Condition" presentif="[WWANPerfSlot0StdMetricName.code] not in (99) and [WWANPerfSlot0MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot0Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot0Threshold" presentif="[WWANPerfSlot0StdMetricName.code] not in (99) and [WWANPerfSlot0Condition.code] not in (0) and [WWANPerfSlot0MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot0Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot1StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot1StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot1CustomMetricName" presentif="[WWANPerfSlot1StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot1CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot1MetricAction" presentif="[WWANPerfSlot1StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot1MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot1Condition" presentif="[WWANPerfSlot1StdMetricName.code] not in (99) and [WWANPerfSlot1MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot1Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot1Threshold" presentif="[WWANPerfSlot1StdMetricName.code] not in (99) and [WWANPerfSlot1Condition.code] not in (0) and [WWANPerfSlot1MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot1Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot2StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot2StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot2CustomMetricName" presentif="[WWANPerfSlot2StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot2CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot2MetricAction" presentif="[WWANPerfSlot2StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot2MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot2Condition" presentif="[WWANPerfSlot2StdMetricName.code] not in (99) and [WWANPerfSlot2MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot2Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot2Threshold" presentif="[WWANPerfSlot2StdMetricName.code] not in (99) and [WWANPerfSlot2Condition.code] not in (0) and [WWANPerfSlot2MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot2Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot3StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot3StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot3CustomMetricName" presentif="[WWANPerfSlot3StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot3CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot3MetricAction" presentif="[WWANPerfSlot3StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot3MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot3Condition" presentif="[WWANPerfSlot3StdMetricName.code] not in (99) and [WWANPerfSlot3MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot3Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot3Threshold" presentif="[WWANPerfSlot3StdMetricName.code] not in (99) and [WWANPerfSlot3Condition.code] not in (0) and [WWANPerfSlot3MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot3Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot4StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot4StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot4CustomMetricName" presentif="[WWANPerfSlot4StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot4CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot4MetricAction" presentif="[WWANPerfSlot4StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot4MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot4Condition" presentif="[WWANPerfSlot4StdMetricName.code] not in (99) and [WWANPerfSlot4MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot4Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot4Threshold" presentif="[WWANPerfSlot4StdMetricName.code] not in (99) and [WWANPerfSlot4Condition.code] not in (0) and [WWANPerfSlot4MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot4Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot5StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot5StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot5CustomMetricName" presentif="[WWANPerfSlot5StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot5CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot5MetricAction" presentif="[WWANPerfSlot5StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot5MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot5Condition" presentif="[WWANPerfSlot5StdMetricName.code] not in (99) and [WWANPerfSlot5MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot5Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot5Threshold" presentif="[WWANPerfSlot5StdMetricName.code] not in (99) and [WWANPerfSlot5Condition.code] not in (0) and [WWANPerfSlot5MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot5Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot6StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot6StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot6CustomMetricName" presentif="[WWANPerfSlot6StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot6CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot6MetricAction" presentif="[WWANPerfSlot6StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot6MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot6Condition" presentif="[WWANPerfSlot6StdMetricName.code] not in (99) and [WWANPerfSlot6MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot6Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot6Threshold" presentif="[WWANPerfSlot6StdMetricName.code] not in (99) and [WWANPerfSlot6Condition.code] not in (0) and [WWANPerfSlot6MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot6Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="WWANPerfSlot7StdMetricName" listref="WWANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WWANPerfSlot7StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WWANPerfSlot7CustomMetricName" presentif="[WWANPerfSlot7StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WWANPerfSlot7CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WWANPerfSlot7MetricAction" presentif="[WWANPerfSlot7StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WWANPerfSlot7MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WWANPerfSlot7Condition" presentif="[WWANPerfSlot7StdMetricName.code] not in (99) and [WWANPerfSlot7MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WWANPerfSlot7Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WWANPerfSlot7Threshold" presentif="[WWANPerfSlot7StdMetricName.code] not in (99) and [WWANPerfSlot7Condition.code] not in (0) and [WWANPerfSlot7MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WWANPerfSlot7Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+			</characteristic>
+			
+			<characteristic type="WLANPerf.Details" presentif="[GroupAction.code] in (2) and [GroupName.code] in (2)" doc="Information about WLAN Performance Metrics">
+
+				<parm name="WLANPerfSlot0StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot0StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot0CustomMetricName" presentif="[WLANPerfSlot0StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot0CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot0MetricAction" presentif="[WLANPerfSlot0StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot0MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot0Condition" presentif="[WLANPerfSlot0StdMetricName.code] not in (99) and [WLANPerfSlot0MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot0Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot0Threshold" presentif="[WLANPerfSlot0StdMetricName.code] not in (99) and [WLANPerfSlot0Condition.code] not in (0) and [WLANPerfSlot0MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot0Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot1StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot1StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot1CustomMetricName" presentif="[WLANPerfSlot1StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot1CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot1MetricAction" presentif="[WLANPerfSlot1StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot1MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot1Condition" presentif="[WLANPerfSlot1StdMetricName.code] not in (99) and [WLANPerfSlot1MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot1Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot1Threshold" presentif="[WLANPerfSlot1StdMetricName.code] not in (99) and [WLANPerfSlot1Condition.code] not in (0) and [WLANPerfSlot1MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot1Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot2StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot2StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot2CustomMetricName" presentif="[WLANPerfSlot2StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot2CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot2MetricAction" presentif="[WLANPerfSlot2StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot2MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot2Condition" presentif="[WLANPerfSlot2StdMetricName.code] not in (99) and [WLANPerfSlot2MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot2Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot2Threshold" presentif="[WLANPerfSlot2StdMetricName.code] not in (99) and [WLANPerfSlot2Condition.code] not in (0) and [WLANPerfSlot2MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot2Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot3StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot3StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot3CustomMetricName" presentif="[WLANPerfSlot3StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot3CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot3MetricAction" presentif="[WLANPerfSlot3StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot3MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot3Condition" presentif="[WLANPerfSlot3StdMetricName.code] not in (99) and [WLANPerfSlot3MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot3Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot3Threshold" presentif="[WLANPerfSlot3StdMetricName.code] not in (99) and [WLANPerfSlot3Condition.code] not in (0) and [WLANPerfSlot3MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot3Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot4StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot4StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot4CustomMetricName" presentif="[WLANPerfSlot4StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot4CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot4MetricAction" presentif="[WLANPerfSlot4StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot4MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot4Condition" presentif="[WLANPerfSlot4StdMetricName.code] not in (99) and [WLANPerfSlot4MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot4Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot4Threshold" presentif="[WLANPerfSlot4StdMetricName.code] not in (99) and [WLANPerfSlot4Condition.code] not in (0) and [WLANPerfSlot4MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot4Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot5StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot5StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot5CustomMetricName" presentif="[WLANPerfSlot5StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot5CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot5MetricAction" presentif="[WLANPerfSlot5StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot5MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot5Condition" presentif="[WLANPerfSlot5StdMetricName.code] not in (99) and [WLANPerfSlot5MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot5Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot5Threshold" presentif="[WLANPerfSlot5StdMetricName.code] not in (99) and [WLANPerfSlot5Condition.code] not in (0) and [WLANPerfSlot5MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot5Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot6StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot6StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot6CustomMetricName" presentif="[WLANPerfSlot6StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot6CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot6MetricAction" presentif="[WLANPerfSlot6StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot6MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot6Condition" presentif="[WLANPerfSlot6StdMetricName.code] not in (99) and [WLANPerfSlot6MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot6Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot6Threshold" presentif="[WLANPerfSlot6StdMetricName.code] not in (99) and [WLANPerfSlot6Condition.code] not in (0) and [WLANPerfSlot6MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot6Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot7StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot7StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot7CustomMetricName" presentif="[WLANPerfSlot7StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot7CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot7MetricAction" presentif="[WLANPerfSlot7StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot7MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot7Condition" presentif="[WLANPerfSlot7StdMetricName.code] not in (99) and [WLANPerfSlot7MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot7Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot7Threshold" presentif="[WLANPerfSlot7StdMetricName.code] not in (99) and [WLANPerfSlot7Condition.code] not in (0) and [WLANPerfSlot7MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot7Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot8StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot8StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot8CustomMetricName" presentif="[WLANPerfSlot8StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot8CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot8MetricAction" presentif="[WLANPerfSlot8StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot8MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot8Condition" presentif="[WLANPerfSlot8StdMetricName.code] not in (99) and [WLANPerfSlot8MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot8Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot8Threshold" presentif="[WLANPerfSlot8StdMetricName.code] not in (99) and [WLANPerfSlot8Condition.code] not in (0) and [WLANPerfSlot8MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot8Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot9StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot9StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot9CustomMetricName" presentif="[WLANPerfSlot9StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot9CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot9MetricAction" presentif="[WLANPerfSlot9StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot9MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot9Condition" presentif="[WLANPerfSlot9StdMetricName.code] not in (99) and [WLANPerfSlot9MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot9Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot9Threshold" presentif="[WLANPerfSlot9StdMetricName.code] not in (99) and [WLANPerfSlot9Condition.code] not in (0) and [WLANPerfSlot9MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot9Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot10StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot10StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot10CustomMetricName" presentif="[WLANPerfSlot10StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot10CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot10MetricAction" presentif="[WLANPerfSlot10StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot10MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot10Condition" presentif="[WLANPerfSlot10StdMetricName.code] not in (99) and [WLANPerfSlot10MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot10Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot10Threshold" presentif="[WLANPerfSlot10StdMetricName.code] not in (99) and [WLANPerfSlot10Condition.code] not in (0) and [WLANPerfSlot10MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot10Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot11StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot11StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot11CustomMetricName" presentif="[WLANPerfSlot11StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot11CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot11MetricAction" presentif="[WLANPerfSlot11StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot11MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot11Condition" presentif="[WLANPerfSlot11StdMetricName.code] not in (99) and [WLANPerfSlot11MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot11Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot11Threshold" presentif="[WLANPerfSlot11StdMetricName.code] not in (99) and [WLANPerfSlot11Condition.code] not in (0) and [WLANPerfSlot11MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot11Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot12StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot12StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot12CustomMetricName" presentif="[WLANPerfSlot12StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot12CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot12MetricAction" presentif="[WLANPerfSlot12StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot12MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot12Condition" presentif="[WLANPerfSlot12StdMetricName.code] not in (99) and [WLANPerfSlot12MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot12Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot12Threshold" presentif="[WLANPerfSlot12StdMetricName.code] not in (99) and [WLANPerfSlot12Condition.code] not in (0) and [WLANPerfSlot12MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot12Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+
+				<parm name="WLANPerfSlot13StdMetricName" listref="WLANPerfStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="WLANPerfSlot13StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="WLANPerfSlot13CustomMetricName" presentif="[WLANPerfSlot13StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="WLANPerfSlot13CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="WLANPerfSlot13MetricAction" presentif="[WLANPerfSlot13StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="WLANPerfSlot13MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="WLANPerfSlot13Condition" presentif="[WLANPerfSlot13StdMetricName.code] not in (99) and [WLANPerfSlot13MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="WLANPerfSlot13Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="WLANPerfSlot13Threshold" presentif="[WLANPerfSlot13StdMetricName.code] not in (99) and [WLANPerfSlot13Condition.code] not in (0) and [WLANPerfSlot13MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="WLANPerfSlot13Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+			</characteristic>
+
+			<characteristic type="SmartBattery.Details" presentif="[GroupAction.code] in (2) and [GroupName.code] in (3)" doc="Information about Smart Battery Metrics">
+
+				<parm name="SmartBatterySlot0StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot0StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot0CustomMetricName" presentif="[SmartBatterySlot0StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot0CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot0MetricAction" presentif="[SmartBatterySlot0StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot0MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot0Condition" presentif="[SmartBatterySlot0StdMetricName.code] not in (99) and [SmartBatterySlot0MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot0Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot0Threshold" presentif="[SmartBatterySlot0StdMetricName.code] not in (99) and [SmartBatterySlot0Condition.code] not in (0) and [SmartBatterySlot0MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot0Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot1StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot1StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot1CustomMetricName" presentif="[SmartBatterySlot1StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot1CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot1MetricAction" presentif="[SmartBatterySlot1StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot1MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot1Condition" presentif="[SmartBatterySlot1StdMetricName.code] not in (99) and [SmartBatterySlot1MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot1Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot1Threshold" presentif="[SmartBatterySlot1StdMetricName.code] not in (99) and [SmartBatterySlot1Condition.code] not in (0) and [SmartBatterySlot1MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot1Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot2StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot2StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot2CustomMetricName" presentif="[SmartBatterySlot2StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot2CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot2MetricAction" presentif="[SmartBatterySlot2StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot2MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot2Condition" presentif="[SmartBatterySlot2StdMetricName.code] not in (99) and [SmartBatterySlot2MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot2Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot2Threshold" presentif="[SmartBatterySlot2StdMetricName.code] not in (99) and [SmartBatterySlot2Condition.code] not in (0) and [SmartBatterySlot2MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot2Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot3StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot3StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot3CustomMetricName" presentif="[SmartBatterySlot3StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot3CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot3MetricAction" presentif="[SmartBatterySlot3StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot3MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot3Condition" presentif="[SmartBatterySlot3StdMetricName.code] not in (99) and [SmartBatterySlot3MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot3Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot3Threshold" presentif="[SmartBatterySlot3StdMetricName.code] not in (99) and [SmartBatterySlot3Condition.code] not in (0) and [SmartBatterySlot3MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot3Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot4StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot4StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot4CustomMetricName" presentif="[SmartBatterySlot4StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot4CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot4MetricAction" presentif="[SmartBatterySlot4StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot4MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot4Condition" presentif="[SmartBatterySlot4StdMetricName.code] not in (99) and [SmartBatterySlot4MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot4Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot4Threshold" presentif="[SmartBatterySlot4StdMetricName.code] not in (99) and [SmartBatterySlot4Condition.code] not in (0) and [SmartBatterySlot4MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot4Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot5StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot5StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot5CustomMetricName" presentif="[SmartBatterySlot5StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot5CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot5MetricAction" presentif="[SmartBatterySlot5StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot5MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot5Condition" presentif="[SmartBatterySlot5StdMetricName.code] not in (99) and [SmartBatterySlot5MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot5Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot5Threshold" presentif="[SmartBatterySlot5StdMetricName.code] not in (99) and [SmartBatterySlot5Condition.code] not in (0) and [SmartBatterySlot5MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot5Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot6StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot6StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot6CustomMetricName" presentif="[SmartBatterySlot6StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot6CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot6MetricAction" presentif="[SmartBatterySlot6StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot6MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot6Condition" presentif="[SmartBatterySlot6StdMetricName.code] not in (99) and [SmartBatterySlot6MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot6Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot6Threshold" presentif="[SmartBatterySlot6StdMetricName.code] not in (99) and [SmartBatterySlot6Condition.code] not in (0) and [SmartBatterySlot6MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot6Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+				
+				<parm name="SmartBatterySlot7StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot7StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot7CustomMetricName" presentif="[SmartBatterySlot7StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot7CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot7MetricAction" presentif="[SmartBatterySlot7StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot7MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot7Condition" presentif="[SmartBatterySlot7StdMetricName.code] not in (99) and [SmartBatterySlot7MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot7Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot7Threshold" presentif="[SmartBatterySlot7StdMetricName.code] not in (99) and [SmartBatterySlot7Condition.code] not in (0) and [SmartBatterySlot7MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot7Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot8StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot8StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot8CustomMetricName" presentif="[SmartBatterySlot8StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot8CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot8MetricAction" presentif="[SmartBatterySlot8StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot8MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot8Condition" presentif="[SmartBatterySlot8StdMetricName.code] not in (99) and [SmartBatterySlot8MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot8Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot8Threshold" presentif="[SmartBatterySlot8StdMetricName.code] not in (99) and [SmartBatterySlot8Condition.code] not in (0) and [SmartBatterySlot8MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot8Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot9StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot9StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot9CustomMetricName" presentif="[SmartBatterySlot9StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot9CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot9MetricAction" presentif="[SmartBatterySlot9StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot9MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot9Condition" presentif="[SmartBatterySlot9StdMetricName.code] not in (99) and [SmartBatterySlot9MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot9Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot9Threshold" presentif="[SmartBatterySlot9StdMetricName.code] not in (99) and [SmartBatterySlot9Condition.code] not in (0) and [SmartBatterySlot9MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot9Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot10StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot10StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot10CustomMetricName" presentif="[SmartBatterySlot10StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot10CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot10MetricAction" presentif="[SmartBatterySlot10StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot10MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot10Condition" presentif="[SmartBatterySlot10StdMetricName.code] not in (99) and [SmartBatterySlot10MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot10Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot10Threshold" presentif="[SmartBatterySlot10StdMetricName.code] not in (99) and [SmartBatterySlot10Condition.code] not in (0) and [SmartBatterySlot10MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot10Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot11StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot11StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				
+				<parm name="SmartBatterySlot11CustomMetricName" presentif="[SmartBatterySlot11StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot11CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot11MetricAction" presentif="[SmartBatterySlot11StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot11MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot11Condition" presentif="[SmartBatterySlot11StdMetricName.code] not in (99) and [SmartBatterySlot11MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot11Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot11Threshold" presentif="[SmartBatterySlot11StdMetricName.code] not in (99) and [SmartBatterySlot11Condition.code] not in (0) and [SmartBatterySlot11MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot11Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot12StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot12StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot12CustomMetricName" presentif="[SmartBatterySlot12StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot12CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot12MetricAction" presentif="[SmartBatterySlot12StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot12MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot12Condition" presentif="[SmartBatterySlot12StdMetricName.code] not in (99) and [SmartBatterySlot12MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot12Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot12Threshold" presentif="[SmartBatterySlot12StdMetricName.code] not in (99) and [SmartBatterySlot12Condition.code] not in (0) and [SmartBatterySlot12MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot12Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot13StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot13StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot13CustomMetricName" presentif="[SmartBatterySlot13StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot13CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot13MetricAction" presentif="[SmartBatterySlot13StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot13MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot13Condition" presentif="[SmartBatterySlot13StdMetricName.code] not in (99) and [SmartBatterySlot13MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot13Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot13Threshold" presentif="[SmartBatterySlot13StdMetricName.code] not in (99) and [SmartBatterySlot13Condition.code] not in (0) and [SmartBatterySlot13MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot13Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot14StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot14StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot14CustomMetricName" presentif="[SmartBatterySlot14StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot14CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot14MetricAction" presentif="[SmartBatterySlot14StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot14MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot14Condition" presentif="[SmartBatterySlot14StdMetricName.code] not in (99) and [SmartBatterySlot14MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot14Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot14Threshold" presentif="[SmartBatterySlot14StdMetricName.code] not in (99) and [SmartBatterySlot14Condition.code] not in (0) and [SmartBatterySlot14MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot14Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot16StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot16StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot16CustomMetricName" presentif="[SmartBatterySlot16StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot16CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot16MetricAction" presentif="[SmartBatterySlot16StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot16MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot16Condition" presentif="[SmartBatterySlot16StdMetricName.code] not in (99) and [SmartBatterySlot16MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot16Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot16Threshold" presentif="[SmartBatterySlot16StdMetricName.code] not in (99) and [SmartBatterySlot16Condition.code] not in (0) and [SmartBatterySlot16MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot16Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot17StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot17StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot17CustomMetricName" presentif="[SmartBatterySlot17StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot17CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot17MetricAction" presentif="[SmartBatterySlot17StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot17MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot17Condition" presentif="[SmartBatterySlot17StdMetricName.code] not in (99) and [SmartBatterySlot17MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot17Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot17Threshold" presentif="[SmartBatterySlot17StdMetricName.code] not in (99) and [SmartBatterySlot17Condition.code] not in (0) and [SmartBatterySlot17MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot17Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot18StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot18StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot18CustomMetricName" presentif="[SmartBatterySlot18StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot18CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot18MetricAction" presentif="[SmartBatterySlot18StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot18MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot18Condition" presentif="[SmartBatterySlot18StdMetricName.code] not in (99) and [SmartBatterySlot18MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot18Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot18Threshold" presentif="[SmartBatterySlot18StdMetricName.code] not in (99) and [SmartBatterySlot18Condition.code] not in (0) and [SmartBatterySlot18MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot18Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot19StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot19StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot19CustomMetricName" presentif="[SmartBatterySlot19StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot19CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot19MetricAction" presentif="[SmartBatterySlot19StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot19MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot19Condition" presentif="[SmartBatterySlot19StdMetricName.code] not in (99) and [SmartBatterySlot19MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot19Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot19Threshold" presentif="[SmartBatterySlot19StdMetricName.code] not in (99) and [SmartBatterySlot19Condition.code] not in (0) and [SmartBatterySlot19MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot19Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot20StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot20StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot20CustomMetricName" presentif="[SmartBatterySlot20StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot20CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot20MetricAction" presentif="[SmartBatterySlot20StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot20MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot20Condition" presentif="[SmartBatterySlot20StdMetricName.code] not in (99) and [SmartBatterySlot20MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot20Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot20Threshold" presentif="[SmartBatterySlot20StdMetricName.code] not in (99) and [SmartBatterySlot20Condition.code] not in (0) and [SmartBatterySlot20MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot20Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot21StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot21StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot21CustomMetricName" presentif="[SmartBatterySlot21StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot21CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot21MetricAction" presentif="[SmartBatterySlot21StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot21MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot21Condition" presentif="[SmartBatterySlot21StdMetricName.code] not in (99) and [SmartBatterySlot21MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot21Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot21Threshold" presentif="[SmartBatterySlot21StdMetricName.code] not in (99) and [SmartBatterySlot21Condition.code] not in (0) and [SmartBatterySlot21MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot21Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot22StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot22StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot22CustomMetricName" presentif="[SmartBatterySlot22StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot22CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot22MetricAction" presentif="[SmartBatterySlot22StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot22MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot22Condition" presentif="[SmartBatterySlot22StdMetricName.code] not in (99) and [SmartBatterySlot22MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot22Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SmartBatterySlot22Threshold" presentif="[SmartBatterySlot22StdMetricName.code] not in (99) and [SmartBatterySlot22Condition.code] not in (0) and [SmartBatterySlot22MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot22Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SmartBatterySlot23StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot23StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SmartBatterySlot23CustomMetricName" presentif="[SmartBatterySlot23StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot23CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot23MetricAction" presentif="[SmartBatterySlot23StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot23MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SmartBatterySlot23Condition" presentif="[SmartBatterySlot23StdMetricName.code] not in (99) and [SmartBatterySlot23MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot23Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot23Threshold" presentif="[SmartBatterySlot23StdMetricName.code] not in (99) and [SmartBatterySlot23Condition.code] not in (0) and [SmartBatterySlot23MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot23Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot24StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot24StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot24CustomMetricName" presentif="[SmartBatterySlot24StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot24CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot24MetricAction" presentif="[SmartBatterySlot24StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot24MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot24Condition" presentif="[SmartBatterySlot24StdMetricName.code] not in (99) and [SmartBatterySlot24MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot24Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot24Threshold" presentif="[SmartBatterySlot24StdMetricName.code] not in (99) and [SmartBatterySlot24Condition.code] not in (0) and [SmartBatterySlot24MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot24Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot25StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot25StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot25CustomMetricName" presentif="[SmartBatterySlot25StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot25CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot25MetricAction" presentif="[SmartBatterySlot25StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot25MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot25Condition" presentif="[SmartBatterySlot25StdMetricName.code] not in (99) and [SmartBatterySlot25MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot25Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot25Threshold" presentif="[SmartBatterySlot25StdMetricName.code] not in (99) and [SmartBatterySlot25Condition.code] not in (0) and [SmartBatterySlot25MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot25Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SmartBatterySlot26StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot26StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot26CustomMetricName" presentif="[SmartBatterySlot26StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot26CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot26MetricAction" presentif="[SmartBatterySlot26StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot26MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot26Condition" presentif="[SmartBatterySlot26StdMetricName.code] not in (99) and [SmartBatterySlot26MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot26Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot26Threshold" presentif="[SmartBatterySlot26StdMetricName.code] not in (99) and [SmartBatterySlot26Condition.code] not in (0) and [SmartBatterySlot26MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot26Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+				<parm name="SmartBatterySlot27StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot27StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot27CustomMetricName" presentif="[SmartBatterySlot27StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot27CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot27MetricAction" presentif="[SmartBatterySlot27StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot27MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot27Condition" presentif="[SmartBatterySlot27StdMetricName.code] not in (99) and [SmartBatterySlot27MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot27Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot27Threshold" presentif="[SmartBatterySlot27StdMetricName.code] not in (99) and [SmartBatterySlot27Condition.code] not in (0) and [SmartBatterySlot27MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot27Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+				<parm name="SmartBatterySlot28StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot28StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot28CustomMetricName" presentif="[SmartBatterySlot28StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot28CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot28MetricAction" presentif="[SmartBatterySlot28StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot28MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot28Condition" presentif="[SmartBatterySlot28StdMetricName.code] not in (99) and [SmartBatterySlot28MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot28Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot28Threshold" presentif="[SmartBatterySlot28StdMetricName.code] not in (99) and [SmartBatterySlot28Condition.code] not in (0) and [SmartBatterySlot28MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot28Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+				<parm name="SmartBatterySlot29StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot29StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot29CustomMetricName" presentif="[SmartBatterySlot29StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot29CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot29MetricAction" presentif="[SmartBatterySlot29StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot29MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot29Condition" presentif="[SmartBatterySlot29StdMetricName.code] not in (99) and [SmartBatterySlot29MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot29Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot29Threshold" presentif="[SmartBatterySlot29StdMetricName.code] not in (99) and [SmartBatterySlot29Condition.code] not in (0) and [SmartBatterySlot29MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot29Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+				<parm name="SmartBatterySlot30StdMetricName" listref="SmartBatteryStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SmartBatterySlot30StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+				<parm name="SmartBatterySlot30CustomMetricName" presentif="[SmartBatterySlot30StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SmartBatterySlot30CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SmartBatterySlot30MetricAction" presentif="[SmartBatterySlot30StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SmartBatterySlot30MetricAction" doc="Supported actions are:"/>
+
+				<parm name="SmartBatterySlot30Condition" presentif="[SmartBatterySlot30StdMetricName.code] not in (99) and [SmartBatterySlot30MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SmartBatterySlot30Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+				<parm name="SmartBatterySlot30Threshold" presentif="[SmartBatterySlot30StdMetricName.code] not in (99) and [SmartBatterySlot30Condition.code] not in (0) and [SmartBatterySlot30MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SmartBatterySlot30Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+			</characteristic>
+
+			<characteristic type="SystemInfo.Details" presentif="[GroupAction.code] in (2) and [GroupName.code] in (4)" doc="Information about System Information Metrics">
+
+
+				<parm name="SystemInfoSlot0StdMetricName" listref="SystemInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SystemInfoSlot0StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SystemInfoSlot0CustomMetricName" presentif="[SystemInfoSlot0StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SystemInfoSlot0CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SystemInfoSlot0MetricAction" presentif="[SystemInfoSlot0StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SystemInfoSlot0MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SystemInfoSlot0Condition" presentif="[SystemInfoSlot0StdMetricName.code] not in (99) and [SystemInfoSlot0MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SystemInfoSlot0Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SystemInfoSlot0Threshold" presentif="[SystemInfoSlot0StdMetricName.code] not in (99) and [SystemInfoSlot0Condition.code] not in (0) and [SystemInfoSlot0MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SystemInfoSlot0Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SystemInfoSlot1StdMetricName" listref="SystemInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SystemInfoSlot1StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SystemInfoSlot1CustomMetricName" presentif="[SystemInfoSlot1StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SystemInfoSlot1CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SystemInfoSlot1MetricAction" presentif="[SystemInfoSlot1StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SystemInfoSlot1MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SystemInfoSlot1Condition" presentif="[SystemInfoSlot1StdMetricName.code] not in (99) and [SystemInfoSlot1MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SystemInfoSlot1Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SystemInfoSlot1Threshold" presentif="[SystemInfoSlot1StdMetricName.code] not in (99) and [SystemInfoSlot1Condition.code] not in (0) and [SystemInfoSlot1MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SystemInfoSlot1Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SystemInfoSlot2StdMetricName" listref="SystemInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SystemInfoSlot2StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SystemInfoSlot2CustomMetricName" presentif="[SystemInfoSlot2StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SystemInfoSlot2CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SystemInfoSlot2MetricAction" presentif="[SystemInfoSlot2StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SystemInfoSlot2MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SystemInfoSlot2Condition" presentif="[SystemInfoSlot2StdMetricName.code] not in (99) and [SystemInfoSlot2MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SystemInfoSlot2Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SystemInfoSlot2Threshold" presentif="[SystemInfoSlot2StdMetricName.code] not in (99) and [SystemInfoSlot2Condition.code] not in (0) and [SystemInfoSlot2MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SystemInfoSlot2Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SystemInfoSlot3StdMetricName" listref="SystemInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SystemInfoSlot3StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SystemInfoSlot3CustomMetricName" presentif="[SystemInfoSlot3StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SystemInfoSlot3CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SystemInfoSlot3MetricAction" presentif="[SystemInfoSlot3StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SystemInfoSlot3MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SystemInfoSlot3Condition" presentif="[SystemInfoSlot3StdMetricName.code] not in (99) and [SystemInfoSlot3MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SystemInfoSlot3Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SystemInfoSlot3Threshold" presentif="[SystemInfoSlot3StdMetricName.code] not in (99) and [SystemInfoSlot3Condition.code] not in (0) and [SystemInfoSlot3MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SystemInfoSlot3Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="SystemInfoSlot4StdMetricName" listref="SystemInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SystemInfoSlot4StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SystemInfoSlot4CustomMetricName" presentif="[SystemInfoSlot4StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SystemInfoSlot4CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SystemInfoSlot4MetricAction" presentif="[SystemInfoSlot4StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SystemInfoSlot4MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SystemInfoSlot4Condition" presentif="[SystemInfoSlot4StdMetricName.code] not in (99) and [SystemInfoSlot4MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SystemInfoSlot4Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SystemInfoSlot4Threshold" presentif="[SystemInfoSlot4StdMetricName.code] not in (99) and [SystemInfoSlot4Condition.code] not in (0) and [SystemInfoSlot4MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SystemInfoSlot4Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="SystemInfoSlot5StdMetricName" listref="SystemInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="SystemInfoSlot5StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="SystemInfoSlot5CustomMetricName" presentif="[SystemInfoSlot5StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="SystemInfoSlot5CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="SystemInfoSlot5MetricAction" presentif="[SystemInfoSlot5StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="SystemInfoSlot5MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="SystemInfoSlot5Condition" presentif="[SystemInfoSlot5StdMetricName.code] not in (99) and [SystemInfoSlot5MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="SystemInfoSlot5Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="SystemInfoSlot5Threshold" presentif="[SystemInfoSlot5StdMetricName.code] not in (99) and [SystemInfoSlot5Condition.code] not in (0) and [SystemInfoSlot5MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="SystemInfoSlot5Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+			</characteristic>
+
+			<characteristic type="GPSInfo.Details" presentif="[GroupAction.code] in (2) and [GroupName.code] in (5)" doc="Information about GPS Information Metrics">
+
+				<parm name="GPSInfoSlot0StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot0StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot0CustomMetricName" presentif="[GPSInfoSlot0StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot0CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot0MetricAction" presentif="[GPSInfoSlot0StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot0MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot0Condition" presentif="[GPSInfoSlot0StdMetricName.code] not in (99) and [GPSInfoSlot0MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot0Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot0Threshold" presentif="[GPSInfoSlot0StdMetricName.code] not in (99) and [GPSInfoSlot0Condition.code] not in (0) and [GPSInfoSlot0MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot0Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot1StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot1StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot1CustomMetricName" presentif="[GPSInfoSlot1StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot1CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot1MetricAction" presentif="[GPSInfoSlot1StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot1MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot1Condition" presentif="[GPSInfoSlot1StdMetricName.code] not in (99) and [GPSInfoSlot1MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot1Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot1Threshold" presentif="[GPSInfoSlot1StdMetricName.code] not in (99) and [GPSInfoSlot1Condition.code] not in (0) and [GPSInfoSlot1MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot1Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot2StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot2StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot2CustomMetricName" presentif="[GPSInfoSlot2StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot2CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot2MetricAction" presentif="[GPSInfoSlot2StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot2MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot2Condition" presentif="[GPSInfoSlot2StdMetricName.code] not in (99) and [GPSInfoSlot2MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot2Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot2Threshold" presentif="[GPSInfoSlot2StdMetricName.code] not in (99) and [GPSInfoSlot2Condition.code] not in (0) and [GPSInfoSlot2MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot2Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot3StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot3StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot3CustomMetricName" presentif="[GPSInfoSlot3StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot3CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot3MetricAction" presentif="[GPSInfoSlot3StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot3MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot3Condition" presentif="[GPSInfoSlot3StdMetricName.code] not in (99) and [GPSInfoSlot3MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot3Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot3Threshold" presentif="[GPSInfoSlot3StdMetricName.code] not in (99) and [GPSInfoSlot3Condition.code] not in (0) and [GPSInfoSlot3MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot3Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot4StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot4StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot4CustomMetricName" presentif="[GPSInfoSlot4StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot4CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot4MetricAction" presentif="[GPSInfoSlot4StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot4MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot4Condition" presentif="[GPSInfoSlot4StdMetricName.code] not in (99) and [GPSInfoSlot4MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot4Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot4Threshold" presentif="[GPSInfoSlot4StdMetricName.code] not in (99) and [GPSInfoSlot4Condition.code] not in (0) and [GPSInfoSlot4MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot4Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot5StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot5StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot5CustomMetricName" presentif="[GPSInfoSlot5StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot5CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot5MetricAction" presentif="[GPSInfoSlot5StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot5MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot5Condition" presentif="[GPSInfoSlot5StdMetricName.code] not in (99) and [GPSInfoSlot5MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot5Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot5Threshold" presentif="[GPSInfoSlot5StdMetricName.code] not in (99) and [GPSInfoSlot5Condition.code] not in (0) and [GPSInfoSlot5MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot5Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot6StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot6StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot6CustomMetricName" presentif="[GPSInfoSlot6StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot6CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot6MetricAction" presentif="[GPSInfoSlot6StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot6MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot6Condition" presentif="[GPSInfoSlot6StdMetricName.code] not in (99) and [GPSInfoSlot6MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot6Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot6Threshold" presentif="[GPSInfoSlot6StdMetricName.code] not in (99) and [GPSInfoSlot6Condition.code] not in (0) and [GPSInfoSlot6MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot6Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot7StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot7StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot7CustomMetricName" presentif="[GPSInfoSlot7StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot7CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot7MetricAction" presentif="[GPSInfoSlot7StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot7MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot7Condition" presentif="[GPSInfoSlot7StdMetricName.code] not in (99) and [GPSInfoSlot7MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot7Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot7Threshold" presentif="[GPSInfoSlot7StdMetricName.code] not in (99) and [GPSInfoSlot7Condition.code] not in (0) and [GPSInfoSlot7MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot7Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot8StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot8StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot8CustomMetricName" presentif="[GPSInfoSlot8StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot8CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot8MetricAction" presentif="[GPSInfoSlot8StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot8MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot8Condition" presentif="[GPSInfoSlot8StdMetricName.code] not in (99) and [GPSInfoSlot8MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot8Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot8Threshold" presentif="[GPSInfoSlot8StdMetricName.code] not in (99) and [GPSInfoSlot8Condition.code] not in (0) and [GPSInfoSlot8MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot8Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot9StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot9StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot9CustomMetricName" presentif="[GPSInfoSlot9StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot9CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot9MetricAction" presentif="[GPSInfoSlot9StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot9MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot9Condition" presentif="[GPSInfoSlot9StdMetricName.code] not in (99) and [GPSInfoSlot9MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot9Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot9Threshold" presentif="[GPSInfoSlot9StdMetricName.code] not in (99) and [GPSInfoSlot9Condition.code] not in (0) and [GPSInfoSlot9MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot9Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				
+				<parm name="GPSInfoSlot10StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot10StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot10CustomMetricName" presentif="[GPSInfoSlot10StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot10CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot10MetricAction" presentif="[GPSInfoSlot10StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot10MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot10Condition" presentif="[GPSInfoSlot10StdMetricName.code] not in (99) and [GPSInfoSlot10MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot10Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot10Threshold" presentif="[GPSInfoSlot10StdMetricName.code] not in (99) and [GPSInfoSlot10Condition.code] not in (0) and [GPSInfoSlot10MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot10Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+				<parm name="GPSInfoSlot11StdMetricName" listref="GPSInfoStdMetricName" promptref="StdMetricName" value="[.text]" helpref="StdMetricName" encoderef="GPSInfoSlot11StdMetricName" skipif="[.code] in (99)" doc="Supported metric names are:"/>
+
+				<parm name="GPSInfoSlot11CustomMetricName" presentif="[GPSInfoSlot11StdMetricName.code] in (999)" promptref="CustomMetricName" helpref="CustomMetricName" encoderef="GPSInfoSlot11CustomMetricName" skipif="[.code] in (99)" datatype="String" minsize="1" maxsize="64" doc="Custom Metric names length must be:"/>
+
+				<parm name="GPSInfoSlot11MetricAction" presentif="[GPSInfoSlot11StdMetricName.code] not in (99)" listref="MetricAction" promptref="MetricAction" helpref="MetricAction" encoderef="GPSInfoSlot11MetricAction" doc="Supported actions are:"/>
+ 
+				<parm name="GPSInfoSlot11Condition" presentif="[GPSInfoSlot11StdMetricName.code] not in (99) and [GPSInfoSlot11MetricAction.code] in (1)" listref="Condition" promptref="Condition" helpref="Condition" encoderef="GPSInfoSlot11Condition" skipif="[.code] in (0)" doc="Supported conditions are:"/>
+
+				<parm name="GPSInfoSlot11Threshold" presentif="[GPSInfoSlot11StdMetricName.code] not in (99) and [GPSInfoSlot11Condition.code] not in (0) and [GPSInfoSlot11MetricAction.code] in (1)" promptref="Threshold"  mininteger="-2147483648" maxinteger="2147483647" helpref="Threshold" encoderef="GPSInfoSlot11Threshold" datatype="integer" doc="Value must be an integer that is:"/>
+
+			</characteristic>
+
+		</characteristic>
+		
+	</characteristic>
+
+</wap-semanticsdoc>

@@ -1,0 +1,62 @@
+
+<div class="panel panel-default" data-characteristic="{{characteristic.type}}" data-characteristic="{{characteristic.type}}" data-present="{{characteristic.presentif}}" ng-show="characteristic && checkPresentIf(characteristic,null)">
+  <div class="panel-heading">{{characteristic.doc}}</div>
+  <div class="panel-body">
+    <div class="form-group" ng-repeat="parm in characteristic.parm" ng-if="isSetable(parm)" data-characteristic="{{characteristic.type}}" data-parm="{{parm.name}}" data-present="{{parm.presentif}}" ng-show="checkPresentIf(characteristic,parm)"
+      ng-class="{ 'has-error' : errors[parm.name] }"
+    >
+      <label ng-repeat="prompt in dsd['wap-semanticsdoc'].prompt" ng-if="(parm.promptref |lowercase)==(prompt.name | lowercase)">{{prompt.value}} 
+
+
+        <i class="fa fa-question-circle pull-right text-muted" ng-show="help[parm.name]" popover="{{help[parm.name]}}" popover-trigger="mouseenter" popover-placement="right"></i> 
+        </label>
+      <label ng-repeat="prompt in characteristic.prompt" ng-if="(parm.promptref |lowercase)==(prompt.name | lowercase)">{{prompt.value}} 
+
+
+        <i class="fa fa-question-circle pull-right text-muted" ng-show="help[parm.name]"  popover="{{help[parm.name]}}" popover-trigger="mouseenter" popover-placement="right"></i>
+        
+      </label>
+      
+      <button type="button" name="{{parm.name}}" class="btn btn-link" 
+        dynamic-model="parm.name"/ ng-if="(parm.datatype | lowercase)=='boolean' && !parm.listref"  ng-change="checkDeviceExtras()" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'" >
+        <i class="fa fa-lg fa-square-o" ng-show="q.parms[parm.name] === '0'"></i><i class="fa fa-lg fa-check-square-o" ng-show="q.parms[parm.name] === '1'"></i>
+        
+
+      </button>
+
+
+      <input type="number" name="{{parm.name}}" class="form-control" dynamic-model="parm.name"/ ng-if="(parm.datatype | lowercase)=='integer'  && !parm.listref " ng-change="checkDeviceExtras()">
+      <input type="text"  name="{{parm.name}}" class="form-control" dynamic-model="parm.name"/ ng-if="!parm.datatype  && !parm.listref" ng-change="checkDeviceExtras()">
+      
+      <input type="text" name="{{parm.name}}" class="form-control" dynamic-model="parm.name"/ ng-if="(parm.datatype | lowercase)=='string'  && !parm.listref" ng-change="checkDeviceExtras()">
+      <input type="text"  name="{{parm.name}}"class="form-control" dynamic-model="parm.name"/ ng-if="(parm.datatype | lowercase)=='date'  && !parm.listref" ng-change="checkDeviceExtras()">
+      <input type="text" name="{{parm.name}}" class="form-control" dynamic-model="parm.name"/ ng-if="(parm.datatype | lowercase)=='time'  && !parm.listref" ng-change="checkDeviceExtras()">
+      <input type="text"  name="{{parm.name}}" class="form-control" dynamic-model="parm.name"/ ng-if="((parm.datatype | lowercase)=='ipv4' || (parm.datatype | lowercase)=='ipv6')  && !parm.listref" ng-change="checkDeviceExtras()">
+      
+      <span ng-repeat="list in dsd['wap-semanticsdoc'].list" ng-if="parm.listref" >
+        
+          <select class="form-control"  name="{{parm.name}}" dynamic-model="parm.name"/ ng-if="list.name==parm.listref" ng-change="checkDeviceExtras()">
+            <option  ng-repeat="item in list.item" value="{{item.code}}" >
+              {{item.ui ? item.ui : item.text}}
+              
+            </option>
+          </select>
+          
+      </span>
+      <div class="help-block" ng-if="formQueueItem[parm.name].$touched ">
+          <p class="text-error">{{errors[parm.name]}}</p>
+      </div>      
+      <span id="helpBlock" class="help-block">
+        <!-- <span class="text-muted" ng-bind-html="help[parm.name] | rawHtml"></span> -->
+        <span  ng-bind-html="warnings[parm.name] | rawHtml"></span>
+      </span>
+                    
+    </div>
+    <!-- <pre>{{characteristic | json}}</pre> -->
+  </div>
+
+</div>
+
+<span ng-repeat="characteristic in characteristic.characteristic">
+    <div data-ng-include data-src="'views/characteristic.html'"></div>
+</span>

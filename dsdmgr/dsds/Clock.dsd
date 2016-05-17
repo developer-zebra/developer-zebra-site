@@ -1,0 +1,105 @@
+<wap-semanticsdoc version="4.2" revision="1">
+<!-- clock.DSD for V2 release -->
+
+	<prompt name="TimeZone" lang="en" value="TimeZone:" />
+	<prompt name="Date" lang="en" value="Date:" />
+	<prompt name="Time" lang="en" value="Time:" />
+	<prompt name="AutoTime" lang="en" value="AutoTime:" />
+	<prompt name="NTPServer" lang="en" value="NTPServer:" />
+	<prompt name="SyncInterval" lang="en" value="SyncInterval:" />
+
+	<help name="TimeZone" lang="en" value="Provide the Time Zone to set on the device in Android supported format (for example: GMT-5 or America/New_York)" />
+	<help name="Date" lang="en" value="Provide the UTC Date to set on the device in the format yyyy-MM-dd (for example: 2013-12-31)" />
+	<help name="Time" lang="en" value="Provide the UTC Time to set on the device in the format HH:mm:ss (for example: 23:59:59)" />
+	<help name="AutoTime" lang="en" value="Select to use network-provided time on the device" />
+	<help name="NTPServer" lang="en" value="Provide the NTP server to set on the device" />
+	<help name="SyncInterval" lang="en" value="Provide the sync interval of automatic time update to set on the device" />
+	
+	<list name="SyncInterval" > 
+		<item text="00:30:00" ui="30 minutes" />
+		<item text="00:60:00" ui="60 minutes" />
+		<item text="06:00:00" ui="6 hours" />
+		<item text="24:00:00" ui="24 hours" />
+	</list>
+
+	<encode code="101" name="TimeZone" codesize="1" method="string"/> 
+	<encode code="102" name="Date" codesize="1" method="string"/> 
+	<encode code="103" name="Time" codesize="1" method="string" /> 
+	<encode code="104" name="AutoTime" codesize="1" method="boolean"/> 
+	<encode code="105" name="NTPServer" codesize="1" method="string"/> 
+	<encode code="106" name="SyncInterval" codesize="1" method="string" /> 
+
+	<characteristic  type="Clock"
+		doc="Manage date, time, and time zone"
+	>
+
+		<parm name="AutoTime"
+			datatype="boolean"
+			promptref="AutoTime"
+			value="[.text]"
+			helpref="AutoTime"
+			encoderef="AutoTime"
+			doc="Supported values are:"
+			skipif="[.text]==''"
+		/>
+		
+		<parm name="TimeZone"
+			presentif="[AutoTime.code] not in (1)"
+			datatype="String"
+			maxsize="255"
+			promptref="TimeZone"
+			helpref="TimeZone"
+			encoderef="TimeZone"
+			doc="If specified, must have a length of"
+			skipif="[.text]==''"
+		/>
+
+		<parm name="Date"
+			presentif="[AutoTime.code] not in (1)"
+			datatype="Date"
+			promptref="Date"
+			helpref="Date"
+			encoderef="Date"
+			doc="If specified, must have a length of 10 and must be of the format: yyyy-MM-dd (for example: 2013-12-31)"
+			skipif="[.text]==''"
+		/>
+
+		<parm name="Time"
+			presentif="[AutoTime.code] not in (1)"
+			datatype="Time"
+			promptref="Time"
+			helpref="Time"
+			encoderef="Time"
+			doc="If specified, must have a length of 8 and must be of the format: HH:mm:ss (for example: 23:59:59)"
+			skipif="[.text]==''"
+		/>
+		
+		<characteristic type ="AutoTimeDetails" doc="Auto Time Options"
+				presentif="[AutoTime.code] == '1'"
+			>
+		
+			<parm name="NTPServer"
+				datatype="string"
+				promptref="NTPServer"
+				helpref="NTPServer"
+				encoderef="NTPServer"
+				doc="If specified, must have a length of"
+				skipif="[.text]==''"
+			/>
+			
+			<parm name="SyncInterval"
+				datatype="string"
+				promptref="SyncInterval"
+				helpref="SyncInterval"
+				encoderef="SyncInterval"
+				listref="SyncInterval"
+				doc="If specified, must have a length of 8 and must be of the format: HH:mm:ss (for example: 23:59:59)"
+				skipif="[.text]==''"
+			/>
+			
+		</characteristic>
+
+	</characteristic>
+
+</wap-semanticsdoc>
+

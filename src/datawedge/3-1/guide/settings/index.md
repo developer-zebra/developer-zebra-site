@@ -1,747 +1,637 @@
 ---
-title: EHS Advanced Settings
+title: DataWedge Decoders
 layout: guide.html
-product: Enteprise Home Screen
-productversion: '2.3'
+product: DataWedge
+productversion: '3.1'
 ---
 
-## Overview
-This guide assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please refer to the [About](../about) and [Setup](../setup) pages before continuing with this guide. Refer to the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
+## Decoders
 
-The behavior of Enterprise Home Screen is controlled entirely through `enterprisehomescreen.xml`, an easy-to-read file that can be modified with any text editor. A default version of the file contains many common device security settings plus a few standard apps, and is part of every EHS installation. In many instances, all that's needed to begin using EHS is to add an organization's own applications and to apply its preferred security and display settings. 
+Intro to decoders. 
 
-This guide describes the how to add apps and configure settings using the config file alone (if the setting also can be configured through the GUI, a screenshot is shown). It details the interaction between EHS and the config file, and provides instructions for accessing and customizing the file for a company's specific requirements, and for deploying the settings to device(s). A detailed analysis of the config file follows, with explanations of each of the parameters and examples of how to configure them. 
+Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders.
 
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+Touch Decoders. The Barcode input screen appears. A check in the checkbox indicates that the decoder is enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
+<h4 id="_decoders">Decoders</h4>
+<div class="paragraph"><p>Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary
+decoders.</p></div>
+<div class="paragraph"><p>Touch <strong>Decoders</strong>. The <strong>Barcode input</strong> screen appears. A check in the checkbox indicates that the decoder is
+enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The
+supported decoders are:</p></div>
 
-## Working with the Config File
-This section describes important interactions between EHS and the `enterprisehomescreen.xml` config file, and instructions for retrieving, modifying and deploying the file to devices. 
+### Decoders
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default (*). To help improve scanning performance, individual symbologies can be enabled and disabled as needed for a specific app or usage profile. To modify decoder parameters, see Decoder Paramaters section following table. 
 
-#### Config File Location
+<div class="tableblock">
+<table rules="none"
+width="100%"
+frame="void"
+cellspacing="0" cellpadding="4">
 
-* The config file is stored in the `/enterprise/usr` directory on the device. (does not apply to [Secure Mode](../features#securemode))
-* This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
-* The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
-* The file is <b>accessible via Android Debug Bridge (ADB)</b> 'pull' and 'push' commands. 
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">UPC-E0<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">UPC-E1</p></td>
+<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MSI</p></td>
+<td align="left" valign="top"><p class="table">EAN-8<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Codabar<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">Code 39<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">Discrete 2 of 5</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Interleaved 2 of 5</p></td>
+<td align="left" valign="top"><p class="table">Code 11</p></td>
+<td align="left" valign="top"><p class="table">Code 93</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Code 128<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">Trioptic 39</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MicroPDF<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">MacromicroPDF<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
+<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
+<td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Composite AB<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">Webcode</p></td>
+<td align="left" valign="top"><p class="table">Composite C<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">USPostnet</p></td>
+<td align="left" valign="top"><p class="table">USPlanet</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">UK Postal</p></td>
+<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
+<td align="left" valign="top"><p class="table">Australian Postal</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Canadian Postal</p></td>
+<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
+<td align="left" valign="top"><p class="table">Chinese 2 of 5</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">MicroQR</p></td>
+<td align="left" valign="top"><p class="table">Korean 3 of 5</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">US4state</p></td>
+<td align="left" valign="top"><p class="table">US4state FICS</p></td>
+<td align="left" valign="top"><p class="table">Matrix 2 of 5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+&#42; _Enabled by default_
 
-> <b>Note</b>: Use caution when exposing File Browser to users; it can be used to manipulate the EHS config file and change security or other settings.
+### Decoder Params
 
-#### Config File Access
-
-##### Using ADB
-
-The Android Debug Bridge (ADB) is by far the most efficient way to work through the 'pull-edit-push-test' cycle for configuring and testing changes to EHS settings through the `enterprisehomescreen.xml` file. The process requires a Mac or Windows PC that's connected via USB to a device with EHS installed. For help with software setup, please refer to [Setup Guide](../setup). 
-
-From a computer connected to a target device that has EHS installed: 
-
-&#49;. <b>Use ADB to pull the config file</b> from its default location to the local PC: 
-
-
-    :::term
-    adb pull /enterprise/usr/enterprisehomescreen.xml
-<br>
-
-&#50;. Locate, open and <b>edit the config file</b> with a text editor, saving changes.
-
-Important: <b>Do NOT change the file name in any way</b>. 
-<br>
-
-&#51;. <b>Push the edited config file</b> to the device: 
-
-    :::term
-    adb push /enterprise/usr/enterprisehomescreen.xml
-<br>
-
-##### What happens now? 
-
-* Pushing a new version of the config file overwrites the old one. 
-* If EHS is running, the new settings will take effect immediately. 
-* If EHS is in the background, the new settings take effect the next time EHS comes to the foreground.
-
-##### Other Notes
-
-* Config file name must be '`enterprisehomescreen.xml`' in lower-case letters.  
-* A file with any other spelling or letter case will be ignored.
-* If the config file is deleted at any time, EHS will spawn a new config file with default settings.
-* If a mixed-case config file of the same name is deployed, it will overwrite a correctly cased file.
-* An incorrectly cased config file will be treated as missing file or cause unpredictable results.
-* Once configured, a config file is suitable for [mass-deployment using an MDM](../setup/#automatedinstallation) with or without the EHS app.
-
-##### Exporting the Config File
-For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. 
-
-<b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
-
-&#49;. In Admin Mode on the device, <b>select Export Configuration File</b> from the Tools menu:
-<img alt="" style="height:250px" src="admin_menu.png"/>
-<br>
-
-&#50;. <b>Tap OK</b> to confirm the action:
-<img alt="" style="height:250px" src="export_confirm.png"/>
-<br>
-
-&#51;. <b>Note the location</b> in the confirmation message:
-<img alt="" style="height:250px" src="export_completed.png"/>
-<br>
-
-&#52;. <b>Drag the config file</b> (arrow) to a PC for editing using Windows Explorer, Android File Transfer (shown) or a similar means:
-<img alt="" style="height:300px" src="ehs_folder.png"/>
-<br>
-<b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
-
-##### Using File Browser 
-The Android File Browser offers a fast way to get a quick view inside the config file on a device. It also permits the file to be copied, moved or shared via email, Bluetooth or any means enabled on the device. 
-
-To look inside the config file on a device: 
-
-&#49;. In File Browser, <b>navigate to the /enterprise/usr directory</b>:
-<img alt="" style="height:250px" src="fileBrowser_usr.png"/>
-<br>
-
-&#50;. <b>Long-press the</b> `enterprisehomescreen.xml`<b> file</b> to display the File Operations menu:
-<img alt="" style="height:250px" src="long-press_menu.png"/>
-<br>
-
-&#51;. <b>Select "Open as.."</b> to select a viewer and <b>hit Launch</b>:
-<img alt="" style="height:250px" src="open_as.png"/>
-<br>
-It may be necessary to also tap 'txt' to specify the extension type.  
-
-&#51;. The config file will open in the Android HTML Viewer:
-<img alt="" style="height:250px" src="html_viewer.png"/>
-<br>
-
-## Default Config File
-This section explains the `enterprisehomescreen.xml` config file, which controls all aspects of EHS behavior. The default version is shown below, followed by an explanation of the file's XML tags and the configuration options for each. 
-
-The EHS config file is broken into five sections: 
-
-* <b>Kiosk -</b> Specifies a single application to run when the device is in [Kiosk mode](). 
-* <b>Applications -</b> The apps to be displayed when the device is in [User Mode]().
-* <b>Tools -</b> The apps to be listed and launched from the User and Admin tools menus.
-* <b>Passwords -</b> Stores the encrypted password for logging into Admin Mode. 
-* <b>Preferences -</b> Controls which features and settings the device will display.  
-
-##### Default `enterprisehomescreen.xml` file:
-
-    :::xml
-    <?xml version="1.0" encoding="utf-8"?>
-     <kiosk>
-        <application label="Calculator" package="com.android.calculator2" activity=""/>
-    </kiosk>
-
-    <config>
-    <applications>
-        <application label="Rapid Deployment" package="com.symbol.msp" activity="com.symbol.msp.client.RDMenu"/>
-        <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
-        <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>
-        <link label="ET1 Video" url="http://www.youtube.com/watch?v=ERlIzLt-h6s"/>
-    </applications>
-
-    <tools>
-        <application label="Calculator" package="com.android.calculator2" activity=""/>
-        <application label="Rapid Deployment" package="com.symbol.msp" activity="com.symbol.msp.client.RDMenu"/>
-    </tools>
-
-    <passwords>
-        <admin></admin>
-    </passwords>
-
-    <preferences>
-        <title>Enterprise Home Screen</title>
-        <icon_label_background_color>#AAFFFFFF</icon_label_background_color>
-        <icon_label_text_color>#FF000000</icon_label_text_color>
-        <orientation></orientation>
-        <bypass_keyguard>1</bypass_keyguard>
-        <auto_launch_enable>0</auto_launch_enable>
-        <wallpaper></wallpaper>
-        <kiosk_mode_enabled>0</kiosk_mode_enabled>
-        <disable_status_bar_settings_icon>1</disable_status_bar_settings_icon>
-        <disable_statusbar_pulldown>0</disable_statusbar_pulldown>
-        <install_shortcuts>0</install_shortcuts>
-        <exit_instead_of_reboot>0</exit_instead_of_reboot>
-        <airplane_option_disabled>1</airplane_option_disabled>
-        <keyguard_camera_disabled>1</keyguard_camera_disabled>
-        <keyguard_search_disabled>1</keyguard_search_disabled>
-        <usb_debugging_disabled>1</usb_debugging_disabled>
-        <system_settings_restricted>1</system_settings_restricted>
-    </preferences>
-    </config>
-
-## Config Tags
-This section describes all tags in the `enterprisehomescreen.xml` file and their possible values. They're shown below in the same order they appear in the default file, and are followed by optional tags. Tags can appear in any order, but must appear within the &lt;config&gt; &lt;/config&gt; tag set. 
+Use Decode Params to configure individual decoder parameters. Touch Decode Params. The Decode params screen appears. Touch the decoder parameter to modify.
 
 ------
 
-### Kiosk
+### UPCE0
 
-Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys cannot be used to exit the app. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag in the &lt;Preferences&gt; section. 
+Report Check Digit - The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
 
-<img alt="" style="height:250px" src="kiosk.png"/>
+**Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE0 preamble:
 
-<b>Possible values</b>
+**Preamble Sys Char -** Transmit System Character only.
 
-* Label: string 
-* Package: app package name 
-* Activity (optional): name of the activity to be invoked when the app starts
+**Preamble Country and Sys Char -** Transmit System Character and Country Code ("0" for USA).
 
-##### Example
+**Preamble None -** Transmit no preamble.
 
-    <kiosk>
-            <application label="Calculator" package="com.android.calculator2" activity=""/>
-    </kiosk>
+Select the appropriate option to match the host system.
+
+**Convert UPCE0 To UPCA -** Enable to convert UPCE0 (zero suppressed) decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable to transmit UPCE0 decoded data as UPCE0 data, without conversion (default - disabled).
 
 ------
 
-### Applications
-Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An optional activity parameter permits an app activity to be invoked when the app starts up. <b>Some apps require an activity to be specified in order to launch</b>. 
+### UPCE1
 
-When specifying links, the package and activity parameters can be used to launch the URL with a specific app, such as Mozilla Mobile browser. If no activity is specified, EHS will launch the link using the default browser.
+**Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
 
-<b>Note</b>: Package names may vary from one Android version to another. 
+**Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE1 preamble:
 
-<b>Possible values (apps)</b>
+**Preamble Sys Char -** Transmit System Character only.
 
-* Label: string
-* Package: app package name 
-* Activity (optional): name of the activity to be invoked when the app starts
+**Preamble Country and Sys Char -** Transmit System Character and Country Code ("0" for USA).
 
-#### Example (app)
+**Preamble None -** Transmit no preamble.
 
-    <applications>
-        ...
-        <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
-        ...
-    </applications>
+Select the appropriate option to match the host system.
 
-<b>Possible values (URLs)</b>
-
-* Label: string
-* Package: URL (http://, https:// or file://*.html only)
-
-#### Example (URL)
-
-    <applications>
-        ...
-        <link label="Mozilla Mobile" url="http://www.mozilla.org/en-US/mobile/" package="org.mozilla.firefox" activity="org.mozilla.firefox.App" />
-        ...
-    </applications>
-
-In the example above, the package and activity attributes are used to launch the URL in the Mozilla Mobile browser. If the specified app (as defined in the package and activity parameters) is not present on the device, the URL will not be displayed. If no activity is specified, EHS will launch the link using the default browser. 
+**Convert UPCE1 To UPCA -** Enable this to convert UPCE1 decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable this to transmit UPCE1 decoded data as UPCE1 data, without conversion.
 
 ------
 
-#### Tools
-Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>Note</b>: Package names may vary from one Android version to another. 
+### UPCA
 
-<b>Possible values</b>
-* Label: string
-* Package: app package name 
-* Activity (optional): name of the activity to be invoked when the app starts
+**Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
 
-#### Example
+**Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCA preamble:
 
-    <tools>
-        ...
-        <application label="Calculator" package="com.android.calculator2" activity=""/>
-        ...   
-    </tools>
+**Preamble Sys Char -** Transmit System Character only.
+
+**Preamble Country and Sys Char -** Transmit System Character and Country Code ("0" for USA).
+
+**Preamble None -** Transmit no preamble.
+
+Select the appropriate option to match the host system.
 
 ------
 
-### Passwords
-Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file</b>. The administrator password will be stored here by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
+### MSI
 
-<img alt="" style="height:250px" src="admin_password.png"/>
-The admin password <b><i>must</i></b> be entered and changed using the Admin Tools menu in the EHS GUI. 
+**Length 1 [endnote1] -** To decode a MSI symbol with a specific length range set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, set this value to 4.
 
-<b>Possible values</b>
+**Length 2 [endnote1] -** To decode a MSI symbol with a specific length range set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, set this value to 12.
 
-* (for EHS use only; direct user input is not supported for this tag)
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
-#### Example
+**Check Digit -** With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
 
-    <passwords>
-        <admin></admin>
-    </passwords>
+**One Check Digit -** Verify one check digit.
 
-------
+**Two Check Digits -** Verify two check digits.
 
-### Preferences
-These tags control various aspects of EHS behavior, security and display settings. Tags can appear in any order between the &lt;preferences&gt; &lt;/preferences&gt; tags. 
+**Check Digit Scheme -** Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
-#### Title
-Specifies the title bar text for the EHS app. Default of 'Enterprise Home Screen' can be changed to any string of characters. 
+**Mod-11-10 -** First check digit is MOD 11 and second check digit is MOD 10.
 
-<b>Possible values</b>
+**Mod-10-10 -** Both check digits are MOD 10.
 
-* character string
-
-#### Example
-
-    <title>Enterprise Home Screen</title>
+**Report Check Digit -** Transmit MSI data with or without the check digit. A check in the checkbox indicates to send MSI data with check digit.
 
 ------
 
-#### Icon Label Background
-Specifies the background color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. Default is #AAFFFFFF, white with an opacity value of AA (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+### EAN8
 
-<img alt="" style="height:250px" src="icon_label_bg.png"/>
-
-* AA specifies the opacity 
-* RR specifies the level of RED
-* GG specifies the level of GREEN
-* BB specifies the level of BLUE
-
-<b>Possible values</b>
-
-* HTML hexadecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
-* Color names: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray and darkgray.
-
-#### Examples
-
-    <icon_label_background_color>#AAFFFFFF</icon_label_background_color>
-    <icon_label_background_color>#75A319</icon_label_background_color>
-    <icon_label_background_color>#80EF671B</icon_label_background_color>
-    <icon_label_background_color>magenta</icon_label_background_color>
-
+**Convert EAN8 To EAN13 -** Convert EAN8 data to EAN 13. A check in the checkbox indicates that the option is enabled.
 
 ------
 
-#### Icon Label Text Color
-Specifies the color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. The EHS default is #FF000000, black with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+### Codabar
 
-<img alt="" style="height:250px" src="icon_label_text.png"/>
+**Length1 [endnote1] -** To decode a Codabar symbol with a specific length range set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, set this value to 8..
 
-* AA specifies the opacity 
-* RR specifies the level of RED
-* GG specifies the level of GREEN
-* BB specifies the level of BLUE
+**Length2 [endnote1] -** To decode a Codabar symbol with a specific length range set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, set this value to 24.
 
-<b>Possible values</b>
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
-* HTML hexadecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
-* Color names: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray and darkgray.
+**Clsi Editing -** Enable this parameter to strip the start and stop characters and insert a space after the first, fifth, and tenth characters of a 14-character Codabar symbol. Enable this feature if the host system requires this data format.
 
-#### Examples
-
-    <icon_label_text_color>#AAFFFFFF</icon_label_text_color>
-    <icon_label_text_color>#75A319</icon_label_text_color>
-    <icon_label_text_color>#80EF671B</icon_label_text_color>
-    <icon_label_text_color>magenta</icon_label_text_color>
+**Notis Editing -** Enable this parameter to strip the start and stop characters from a decoded Codabar symbol. Enable this feature if the host system requires this data format.
 
 ------
 
-#### Orientation
-Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
+### Code39
 
-<img alt="" style="height:250px" src="orientation.png"/>
+**Length1 [endnote1] -** To decode a Code 39 symbol with a specific length range set this value to the lower limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, set this value to 8.
 
-<b>Possible values</b>
+**Length2 [endnote1] -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, set this value to 24.
 
-* landscape
-* portrait
-* <b>&lt;blank&gt; (default)</b>
+**Verify Check Digit -** Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.
 
-#### Example
+**Report Check Digit -** Transmit Code 39 data with or without the check digit. A check in the checkbox indicates to send Code 39 data with check digit.
 
-    <orientation></orientation>
-    
-------
+**Full Ascii -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. To enable or disable Code 39 Full ASCII.
 
-#### Auto Launch Enable
-Enables one or more apps to be automatically launched after EHS starts up. Works with optional &lt;auto_launch&gt; section. When enabled, apps specified in the &lt;auto_launch&gt; section are launched after a specified delay. <b>BACK and HOME keys can be used to exit the app</b>. Refer to [Optional Feature Tags section](#optionalfeaturetags) for more information. Disabled by default. See also: [Kiosk Mode](#kiosk). 
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
-<img alt="" style="height:250px" src="autolaunch.png"/>
+**Convert Code39 To Code32 -** Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry. Scan the appropriate bar code below to enable or disable converting Code 39 to Code 32.
 
-<b>Possible values</b>
+**Report Code32 Prefix -** Scan the appropriate bar code to enable or disable adding the prefix character "A" to all Code 32 bar codes.
 
-* 1
-* <b>0 (default)</b>
+**Security Level -** Options: Security level 0, Security Level 1, Security Level 2 and Security Level 3.
 
-#### Example
+### Discrete 2 of 5
 
-    <auto_launch_enable>0</auto_launch_enable>
-    
-------
+**Length1 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range set this value to the lower limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, set this value to 4.
 
-#### Wallpaper
-Allows a background image to be specified for display in User Mode. If left unspecified, default image will be used. Supports only .PNG format files in the `/enterprise/usr` directory. 
+**Length2 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range set this value to the upper limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, set this value to 12.
 
-<img alt="" style="height:250px" src="wallpaper.png"/>
-
-<b>Possible values</b>
-
-* fully qualified path to local (on-device) file
-
-#### Example
-
-    <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
-    
-------
-
-#### Fullscreen
-EHS can be made to run in fullscreen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS will behave as individually designed. Will not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
-
-<img alt="" style="height:250px" src="fullscreen.png"/>
-
-<b>Possible values</b>
-
-* 1 (sets EHS to run in full screen mode)
-* <b>0 (default)</b>
-
-#### Example
-
-
-    <preferences>
-        <fullscreen>1</fullscreen>
-    </preferences>
-
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
 ------
 
-#### Kiosk Mode Enabled
-Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). 
+### Interleaved 2 of 5
 
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
+**Length1 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range set this value to the lower limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, set this value to 4.
 
-<img alt="" style="height:250px" src="kiosk.png"/>
+**Length2 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range set this value to the upper limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, set this value to 12.
 
-<b>Possible values</b>
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <kiosk_mode_enabled>0</kiosk_mode_enabled>
-    
-------
-
-#### Disable Status Bar Settings
-Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
-
-<img alt="" style="height:250px" src="disable_settings_icon.png"/>
-
-> Note: Changes to this setting will cause an automatic device reboot, a requirement for changes to take effect. 
-
-<b>Possible values</b>
-
-* <b>1 (default)</b>
-* 0
-
-#### Example
-
-    <disable_status_bar_settings_icon>1</disable_status_bar_settings_icon>
-    
-------
-
-#### Disable Statusbar Pulldown
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Statusbar Pulldown is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Statusbar Pulldown will be enabled. To disable, enter a value of 1.  
-
-<img alt="" style="height:250px" src="disable_status_bar.png"/>
-
-<b>Possible values</b>
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <disable_statusbar_pulldown>0</disable_statusbar_pulldown>
-    
-------
-
-#### Install Shortcuts
-Controls whether shortcuts may be added to local or remote apps through Android Intents. Disabled by default. 
-
-<img alt="" style="height:250px" src="install_shortcuts.png"/>
-
-<b>Possible values</b>
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <install_shortcuts>0</install_shortcuts>
-    
-------
-
-#### Exit Instead of Reboot
-Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag will be overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
-
-<b>Possible values</b>
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <exit_instead_of_reboot>0</exit_instead_of_reboot>
-    
-------
-
-#### Reboot on Install Enabled
-Controls whether the device will automatically reboot when EHS is launched for the first time after a successful installation, a requirement to activate EHS. Permits Mobile Device Management (MDM) systems to maintain device control following installation. Automatic device reboot is disabled by default. <b>Note: When enabled, this tag will override any setting of the [&lt;exit_instead_of_reboot&gt;](#exitinsteadofreboot) tag</b>. 
-
-<b>Possible values</b>
-
-* 1
-* <b>0 (default, do not reboot)</b>
-
-#### Example
-
-    <preferences>
-        <reboot_on_install_enabled>0</reboot_on_install_enabled >
-    </preferences>
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
 ------
 
-#### Airplane Option Disabled
-Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu might not be available on MC18, MC40 and MC92 devices running Android 4.4 KitKat). 
+### Check Digit
 
-<img alt="" style="height:250px" src="airplane_disable.png"/>
+**No Check Digit -** A check digit is not used..
 
-<b>Possible values</b>
+**USS Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Uniform Symbology Specification (USS) check digit algorithm.
 
-* <b>1 (default)</b>
-* 0 
+**OPCC Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Optical Product Code Council (OPCC) check digit algorithm.
 
-#### Example
+**Report Check Digit -** Transmit Interleaved 2 of 5 data with or without the check digit. A check in the checkbox indicates to send I2of5 data with check digit.
 
-    <airplane_option_disabled>1</airplane_option_disabled>
-    
-------
-
-#### Bypass Keyguard
-Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
-
-<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
-
-<img alt="" style="height:250px" src="keyguard.png"/>
-The Android Keyguard (also known as the Lock Screen).  
-
-<img alt="" style="height:250px" src="bypass_keyguard.png"/>
-<br> 
-
-<b>Possible values</b>
-
-* <b>1 (default, Keyguard not displayed) </b>
-* 0 
-
-#### Example
-
-    <bypass_keyguard>1</bypass_keyguard>
+**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2 of 5 bar codes to EAN-13, and transmit as EAN-13. The Interleaved 2 of 5 bar code must be enabled and must have a leading zero and a valid EAN-13 check digit. A check in the checkbox indicates that the option is enabled.
 
 ------
 
-#### Keyguard Camera Disabled
-Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+### Code11
 
-<img alt="" style="height:250px" src="camera_disable.png"/>
+**Length1 [endnote1] -** To decode a Code 11 symbol with a specific length range set this value to the lower limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, set this value to 4.
 
-<b>Possible values</b>
+**Length2 [endnote1] -** To decode a Code 11 symbol with a specific length range set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, set this value to 12.
 
-* <b>1 (default)</b>
-* 0 
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
-#### Example
+**Verify Check Digit -** Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 bar code.
 
-    <keyguard_camera_disabled>1</keyguard_camera_disabled>
-    
-------
+**No Check Digit -** Do not verify check digit.
 
-#### Keyguard Search Disabled
-Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+**One Check Digit -** Bar code contains one check digit.
 
-<img alt="" style="height:250px" src="search_disable.png"/>
+**Two Check Digits -** bar code contains two check digits.
 
-<b>Possible values</b>
+**Report Check Digit -** Transmit Code 11 data with or without the check digit. A check in the checkbox indicates to send Code 11 data with check digit.
 
-* <b>1 (default)</b>
-* 0 
+### Code93
 
-#### Example
+**Length1 [endnote1] -** To decode a Code 93 symbol with a specific length range set this value to the lower limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, set this value to 4.
 
-    <keyguard_search_disabled>1</keyguard_search_disabled>
-    
-------
+**Length2 [endnote1] -** To decode a Code 93 symbol with a specific length range set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, set this value to 12.
 
-#### USB Debugging Disabled
-Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. 
-
-<img alt="" style="height:250px" src="usb_debug_disable.png"/>
-
-<b>Possible values</b>
-
-* <b>1 (default)</b>
-* 0 
-
-#### Example
-
-    <usb_debugging_disabled>1</usb_debugging_disabled>
-    
-------
-
-#### System Settings Restricted
-Controls whether full or limited settings are available when the device is in User Mode. A setting of 1 (default) or if left unspecified will restrict user access to device settings. <b>A setting of 0 will permit user access to all device settings</b>.
-
-<img alt="" style="height:250px" src="settings_restrict.png"/>
-
-<b>Possible values</b>
-
-* <b>1 (default)</b>
-* 0 
-
-#### Example
-
-    <system_settings_restricted>1</system_settings_restricted>
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
 ------
 
-## Optional Feature Tags
-This section covers optional features and tags not otherwise included in the default `enterprisehomescreen.xml` file but can be activated by adding their tags to it, if desired, or are activated by EHS as needed.
+### Code128
+
+**Length1 [endnote1] -** To decode a Code 128 symbol with a specific length range set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, set this value to 4.
+
+**Length2 [endnote1] -** To decode a Code 128 symbol with a specific length range set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, set this value to 12.
+
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+
+**Enable EAN128 -** Set the EAN128 subtype. A check in the checkbox indicates that the option is enabled.
+
+**Enable ISBT128 -** Set the ISBT128 subtype. A check in the checkbox indicates that the option is enabled.
+
+**Enable Plain Code128 -** Enables other (non EAN or ISBT) Code 128 subtypes. A check in the checkbox indicates that redundancy is enabled.
+
+**ISBT128 Concat Mode -** Select an option for concatenating pairs of ISBT code types:
+
+**Concat Mode Never -** Do not concatenate pairs of ISBT codes encountered.
+
+**Concat Mode Always -** There must be two ISBT codes in order to decode and perform concatenation. Does not decode single ISBT symbols.
+
+**Concat Mode Auto -** Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT symbol is present, the device must decode the symbol the number of times set via Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
+
+**Check ISBT Table -** The ISBT specification includes a table that lists several types of ISBT bar codes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable Check ISBT Table to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated. A check in the checkbox indicates that redundancy is enabled.
+
+**Security Level -** The scanner offers four levels of decode security for Code 128 bar codes. Select increasing levels of security for decreasing levels of bar code quality. There is an inverse relationship between security and scanner aggressiveness, so choose only that level of security necessary for any given application.
+
+**Security Level 0 -** This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" bar codes.
+
+**Security Level 1 -** This setting eliminates most misdecodes.
+
+**Security Level 2 -** Select this option if Security level 1 fails to eliminate misdecodes.
+
+**Security Level 3 -** If Security Level 2 is selected and misdecodes still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out of spec bar codes. Selecting this level of security significantly impairs the decoding ability of the scanner. If this level of security is needed, try to improve the quality of the bar codes.
 
 ------
 
-#### Auto Launch
-This feature permits any number of apps to be launched when EHS starts up. Similar to [Kiosk Mode](#kiosk), auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. <b>Note</b>: Package names may vary from one Android version to another. 
+### Trioptic39
 
-Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
-
-<img alt="" style="height:250px" src="autolaunch.png"/>
-
-<b>Possible values</b>
-* Application delay: integer (milliseconds)
-* Package: app package name 
-* Activity (optional): name of the activity to be invoked when the app starts
-
-#### Example
-
-    <auto_launch>
-        <application delay="8000" package="com.android.calculator2" activity=""/>
-        <application delay="5000" package="com.rovio.angrybirds" activity=""/>
-    </auto_launch>
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
 
 ------
 
-#### Disable/Enable Applications
-Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. Use these tags to enable Settings and/or Search apps in User Mode. (Settings and Search apps are always enabled in Admin Mode, even if  &lt;apps_disabled&gt; tag is applied). Applies to both Admin and User Modes for all other apps. <b>Note</b>: Package names may vary from one Android version to another. 
+### MicroPDF
 
-<img alt="" style="height:250px" src="disable_apps.png"/>
+**Code 128 Emulation -** Enable this option to transmit data from certain MicroPDF417 symbols as Code 128. AIM Code ID Character must be enabled for this option to work.
 
-<b>Notes</b>: 
+**Enable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
 
-* Settings defined by these tags override EHS defaults and settings applied with other tags.
-* If one of these tags is present without the other, Settings and Search apps will be disabled in User Mode.
-* If the same package name is present under both tags, that app will be disabled.
-* Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag.  
-* To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag. 
-* These tags cannot be used to disable DataWedge or other services. 
+]C1 if the first codeword is 903 - 905
 
-<b>Possible values</b>
+]C2 if the first codeword is 908 or 909
 
-* Package: app package name 
+]C0 if the first codeword is 910 or 911
 
-#### Example
+**Disable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
 
-    <preferences>
-        ...
-        <apps_disabled>
-            <application package="com.android.settings"/>
-            <application package="com.android.quicksearchbox"/>
-        </apps_disabled>
+]L3 if the first codeword is 903-905
 
-        <apps_enabled>
-            <application package="com.android.gallery3d"/>
-        </apps_enabled>
-        ...
-    </preferences>
+]L4 if the first codeword is 908 or 909
+
+]L5 if the first codeword is 910 or 911.
 
 ------
 
-#### Admin Max Attempts
-The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog). The counter is cleared after a successful login. 
+### Webcode
 
-<img alt="" style="height:250px" src="max_logins.png"/>
-
-
-#### Example
-
-    <preferences>
-        ...
-        <admin_max_attempts>10</admin_max_attempts>
-        ...
-    </preferences>
-
-<br>
-EHS tracks the number of consecutive failed login attempts by adding the following attribute to the &lt;passwords&gt; tag when necessary: 
-
-    <passwords>
-        <admin attempts="10"></admin>
-    </passwords>
-
-The counter clears after a successful login.
+Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the checkbox indicates that the option is enabled.
 
 ------
 
-#### Admin Inactivity Timeout
-Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. 
+### Composite AB
 
-<img alt="" style="height:250px" src="admin_timeout.png"/>
+**UCC Link Mode -**
 
-<b>Possible values</b>
+Link Flag ignored
 
-* integer (in seconds) 
+Always Linked
 
-Notes: 
-* 15 is the minimum value; lower values are ignored
-* <b>60 seconds is the default if tag is left blank or is not present</b>
-* 0 or negative value will disable the timeout function
+Auto Discriminate
 
-#### Example
+**MultiPacket Mode -**
 
-    <preferences>
-        <admin_inactivity_timeout>600</admin_inactivity_timeout>
-    </preferences>
+Multi Part Single Packet
+
+Mutli independent Reads
+
+Use UPC Preamble Check Digit - Use the UPC rules specified in the UPC-EAN parameters when reporting composite decode data.
 
 ------
 
-#### Adding Apps/Shortcuts With Intents
-When shortcuts that link to local or remote applications are added using Android Intents, EHS will add a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names may vary from one Android version to another. 
+### Composite C
 
-##### Label
-Represents the shortcut name; equivalent to the `Intent.EXTRA_SHORTCUT_NAME` value. 
+**MultiPacket Mode -**
 
-##### URI
-Represents the intent in text format; equivalent to the URI representation of the `Intent.EXTRA_SHORTCUT_INTENT` intent data.
+Multi Part Single Packet
 
-##### Icon
-Specifies the the path of the icon file stored in the device. If the extra data `Intent.EXTRA_SHORTCUT_ICON` is available in the received broadcast intent, the icon will be stored in the device as an image file.
+Mutli independent Reads
 
-##### icon_ref
-Specifies the package name to retrieve the icon later. If the extra data `Intent.EXTRA_SHORTCUT_ICON_RESOURCE` is available in the received broadcast intent, the icon will be generated at runtime using the package name (and there is therefore no need to store the icon image in the device).
+------
 
-##### Example 
-A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver would be represented by the following link node: 
+### USPostnet
 
-    <link label="Microsoft Excel" icon="/enterprise/usr/ehs_data/images/MicrosoftExcel.png" uri="citrixreceiver://launchapp?pid=1&inname=citrixcloud%3AMicrosoft+Excel+MS&fname=Microsoft+Excel&shortcutCookie=681181718&mobile=0&unikey=0#Intent;action=android.intent.action.VIEW;launchFlags=0x14000000;end" />
+**Report Check Digit -** Transmit USPostnet data with or without the check digit. A check in the checkbox indicates to send USPostnet data with check digit.
 
-<b>EHS Notes</b>:
+------
 
-* When Install Shortcuts is enabled, EHS listens for the Android broadcast intent `com.android.launcher.action.INSTALL_SHORTCUT`.
-* When an intent is received, EHS creates the shortcut on the user screen using data carried within the intent. 
-* The data also is saved in the &lt;Applications&gt; section of the `enterprisehomescreen.xml` file as indicated above. 
-* To remove a shortcut from user screen, delete the corresponding "link" tag from the config file. 
-* Adding duplicate shortcuts for the same local or remote application is allowed.
-* EHS does not check the validity of shortcuts; it's up to the admin to ensure that shortcuts are valid in all circumstances. 
+### USPlanet
 
-<b>Android Notes</b>:
+**Report Check Digit -** Transmit USPlanet data with or without the check digit. A check in the checkbox indicates to send USPlanet data with check digit.
 
-* The Android Launcher monitors the same broadcast intent as EHS, and therefore also receives shortcuts sent to EHS. 
-* If the Android Home screen space limit is reached, Android Launcher displays an error message in EHS. 
-* To elimiate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
+------
+
+### UK Postal
+
+**Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox indicates to send UK Postal data with check digit.
+
+------
+
+### Korean 3of5
+
+**Length1 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, set this value to 4.
+
+**Length2 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, set this value to 12.
+
+**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+
+------
+
+### Decode Lengths
+
+The allowable decode lengths are specified by Length1 and Length2 as follows:
+
+* Variable length: Decode symbols containing any number of characters.
+* Set both Length1 and Length2 to 0.
+* Range: Decode a symbol with a specific length range (from a to b, including a and b).
+* Set Length1 to a and set Length2 to b.
+* Two Discrete Lengths: Decode only symbols containing either of two selected lengths.
+* Set Length1 to b and Length2 to a where a is less than b.
+* One Discrete Length: Decode only symbols containing a specific length.
+* Set both Length1 and Length2 to the non zero value.
+
+------
+
+## UPC EAN Params
+
+Allows the configuration of the parameters that apply to more than one UPC or EAN decoder.
+
+**Security Level -** The scanner offers four levels of decode security for UPC/EAN bar codes. Select higher security levels for lower quality bar codes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
+
+**Level 0 -** This setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN bar codes.
+
+**Level 1 -** As bar code quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed bar codes, and the misdecodes are limited to these characters, select this security level.
+
+**Level 2 -** If the scanner is misdecoding poorly printed bar codes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
+
+**Level 3 -** If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out of spec bar codes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try to improve the quality of the bar codes.
+
+**Supplemental2 -** Enables or disables this option. A check in the checkbox indicates that the option is enabled.
+
+**Supplemental5 -** Enables or disables this option. A check in the checkbox indicates that the option is enabled.
+
+### Supplemental Mode
+
+**No Supplementals -** the scanner is presented with a UPC/EAN plus supplemental symbol, the scanner decodes UPC/EAN and ignores the supplemental characters.
+
+**Supplemental Always -** the scanner only decodes UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
+
+**Supplements Auto -** the scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the bar code the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
+
+**Supplemental Smart -** Enables smart supplementals. In this mode the decoder returns the decoded value of the main block right away if it does not belong to one of the following supplemental types: 378, 379, 977, 978, 979, 414, 419, 434 or 439. If the bar code starts with one of the prefixes it searches the image more aggressively for a supplemental. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+
+**Supplemental 378-379 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN bar code not starting with 378 or 379. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+
+**Supplemental 978-979 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 979. Disables reading of supplementals for another UPC/EAN bar code not starting with 978 or 979. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main barcode is returned.
+
+**Supplemental 414-419-434-439 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN bar code not starting with 414, 419, 434 or 439. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+
+**Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+
+**Retry Count -** Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
+
+**Random Check Digit -** Enables random weight check digit verification. A check in the checkbox indicates that the option is enabled.
+
+### Linear Decode - Not in use. Deprecated.
+
+**Bookland -** Enable or disable this option. A check in the checkbox indicates that the option is enabled.
+
+**Coupon -** Enables Coupon code decoding. Note that in order to successfully decode Coupon codes, all of the correct decoders must be enabled. A check in the checkbox indicates that the option is enabled.
+
+**Bookland Format -** If Bookland option is enabled, select one of the following formats for Bookland data:
+
+**Format ISBN-10 -** The scanner reports Bookland data starting with 978 in traditional 10-digit format with the special Bookland check digit for backward-compatibility. Data starting with 979 is not considered Bookland in this mode.
+
+**Format ISBN-13 -** The scanner reports Bookland data (starting with either 978 or 979) as EAN-13 in 13-digit format to meet the 2007 ISBN-13 protocol.
+
+**Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
+
+### Reader Params
+
+Allows the configuration of parameters specific to the selected bar code reader.
+
+Illumination mode - Turns illumination on and off.
+
+On - Illumination is on.
+
+Off - Illumination is off.
+
+Aiming Pattern - Turns aim pattern on and off.
+
+Aim Type - This parameter allows to enable or disable continuous scanning.
+
+Trigger - For each trigger press a single barcode can be scanned.
+
+**Timed Hold –** Once trigger is pressed an aiming session is started for a time specified by Aim Timer, when this time expires a decode session is started and scan beam will be visible. The decode session will remain active until the Beam Timer expires, the trigger is released or a barcode is decoded.
+
+**Timed Release -** Once pressed an aiming session is started and will continue until the trigger is released. If the Aim Timer is expired when the trigger is released then a decode session will be started with scan beam visible for a remaining time equal to Beam Timer or a barcode is decoded.
+
+**Press and Release -** Scan beam starts when trigger is pressed and released. The decode session will remain active until the Beam Timer expired or a barcode is decoded.
+
+**Continuous Read -** Press and hold the scan trigger will continuously scan barcodes. Note: Continuous scanning is not supported with the RS507 Bluetooth scanner.
+
+**Beam Timer -** Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
+
+**Aim Timer -** Sets the duration in milliseconds for timed aim modes (0 - 60,000 ms in increments of 100 ms).
+
+**Image Capture Mode -** Set image capture mode in the barcode scanner.
+
+------
+
+### None - No image capturing.
+
+**Single Image Capture on Decode -** Captures an image with decoded data.
+**Image Capture Only -** Only captures and image and no barcode data will be dispatched.
+
+> **Note**: No image data will be processed by DataWedge and it is not recommend to change this parameter when barcode scanning is used with DataWedge.
+
+**Linear Security Level -** Sets the number of times a bar code is read to confirm an accurate decode.
+
+**Security Redundancy and Length -** Two times read redundancy based on redundancy flags and code length.
+
+**Security Short or Codabar -** Two times read redundancy if short bar code or Codabar.
+
+**Security All Twice -** Two times read redundancy for all bar codes.
+
+**Security Long and Short -** Two times read redundancy for long bar codes, three times for short bar codes.
+
+**Security All Thrice -** Three times read redundancy for all bar codes.
+
+**Picklist -** This parameter allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is most useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode.
+
+**Disable -** Disables Picklist mode, so any bar code within the field of view can be decoded.
+
+**Hardware Picklist -** Picklist mode is enabled by sending a command to hardware.
+
+**Software Picklist -** Picklist feature is handled in the software. No commands are sent to Hardware.
+
+>**Note**: When both hardware and software picklists are supported hardware picklist is better in performance.
+Same Symbol Timeout - This parameter is used to prevent the scanner from decoding the same symbol within this time interval (applicable only when Aim Type to Continuous Read). A value of 0 means no interval is required between two successive reads.
+
+**Different Symbol Timeout -** This prameter is used to prevent the scanner from decoding another symbol within this time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 means no interval is required between two successive reads.
+
+**LCD Mode -** Enables or disables LCD mode. LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (Scan Module Only).
+
+**Disable -** Disables the LCD mode
+
+**Enable -** Enables LCD mode.
+
+>**Note**: When using the LCD mode, a degradation in performance may be observed and the aiming crosshair may blink until the bar code is decoded.
+HW Engine Low Power Timeout - Time in milliseconds of non-use before scanner turns to a low-power mode.
+
+**Inverse 1D Mode -** Allows the user to select decoding on inverse 1D bar codes.
+
+**Disabled -** Disables decoding of inverse 1D symbologies.
+
+**Enabled -** Enables decoding of only inverse 1D symbologies.
+
+**Auto -** Allows decoding of both positive as well as inverse 1D symbologies.
+
+**1D Quiet Zone Level -** Sets the effort the decoder performs to decode marginless barcodes.
+
+**Level 0 -** The decoder will perform margin stuff as usual.
+
+**Level 1 -** The decoder will perform more aggressively.
+
+**Level 2 -** decoder only requires one side end of barcode.
+
+**Level 3 -** The decoder can decode anything .
+
+>**Note**: Since higher marginless levels will increase the mis-decode risk and decoding time, we strongly recommend the user only enable the symbologies which needs to choose higher marginless level, and leave all other symbologies at default level 1
+
+**Poor Quality Decode Effort -** Trigger poor quality barcode decoding enhancement feature.
+
+**Effort Level 0 -** Decoding performance on regular 1D and 2D barcodes is not affected.
+
+**Effort Level 1 -** the scanner performance on regular 2-D barcodes is impacted while decoding performance on Tesco Thailand barcode and Suppository barcode is improved.
+
+**Effort Level 2 -** same as Level 1.
+
+**Effort Level 3 -** same as Level 1.
+
+>**Note:** Same performance from Effort Level 1 to Effort Level 3.
+Character Set Selection - Allows the user to convert the barcode data if different from default encoding type. UTF-8 is the default value. Other options are ISO-8859-1 and Shift_JIS.
+
+**Viewfinder Mode -** This setting displays the Viewfinder modes supported for scanning.
+
+**Viewfinder Enabled -** Enables only the viewfinder.
+
+**Static Reticle -** Enables the viewfinder and a red reticle in the center of the screen which helps selecting the bar code.
+
+>**Note:** This parameter supported in Camera scanner only.
+Scan Params
+
+Allows the configuration of Code Id and decode feedback options.
+
+**Code ID Type -** A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
+
+**Code ID Type None -** No prefix.
+
+**Code ID Type Aim -** A standards based three character prefix.
+
+**Code ID Type Symbol -** A Symbol defined single character prefix.
+
+>**Note**: Not all ringtones are fully supported as decode tones. Ringtones of longer length may be truncated when used as a decode tone. The recommendation is to test the selected tone for operation before deployment to a customer site.
+
+**Volume Type -** Defines which volume setting to be used to play the Decode Audio Feedback.
+
+**Ringer and Notifications -** Uses Ringer and Notifications volume settings for audio feedback.
+
+**Music and Media -** Uses Music and Media volume settings for audio feedback.
+
+**Alarms -** Uses Alarms volume settings for audio feedback.
+
+**Decode Audio Feedback -** Select an audio tone to sound upon a good decode.
+
+**Decode Haptic Feedback -** Enable the mobile computer to vibrate upon a good decode.
+
+**Decode Feedback LED Timer -** Green LED flash time (in milliseconds) upon a good decode.
+
+**Decoding LED Notification -** When enabled flashes the Red LED when trigger is pressed to scan a barcode.
+
+>**Note**: Some of the parameters are not supported in all devices.
 
 ------
 

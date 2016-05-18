@@ -9,9 +9,9 @@ productversion: '3.1'
 
 This guide covers the basic usage of DataWedge, an application included with Zebra devices running Android and Windows that provides barcode scanning and processing services to other apps. DataWedge sits between a user app and the device scanning hardware, acquiring and processing barcode data and handing the data to the app in a generic format or by rules specified in advance using a DataWedge Profile. 
 
-Profiles and Plug-ins are the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins allow input, output and processing capabilities to be added to DataWedge. 
+Profiles and Plug-ins are the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins allow input, output and processing capabilities to be added to DataWedge. Several Plug-ins are included with DataWedge that can be modified to suit individual needs. 
 
-DataWedge functions covered in this guide: 
+<!-- DataWedge functions covered in this guide: 
 
 * Using DataWedge with default settings
 * Setting DataWedge as the default scanner for an app
@@ -24,13 +24,14 @@ DataWedge functions covered in this guide:
 * Remotely configuring DataWedge 
 * Deploying DataWedge via MDM
 * Importing and applying new settings at each launch 
+--> 
 
 Other DataWedge guides: 
 * [DataWedge IP Output](../ipoutput)
 * [DataWedge API for Android](../androidapi)
 * [DataWedge Capture API](../capture)
 
-**Note: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore critical to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. This guide includes instructions for such operations. 
+**Note: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. This guide includes instructions for such operations. 
 
 &#50;. <b>Bold text for command</b> then the rest of the instruction here.  
 <img alt="DataWedge App in the Android Launcher" style="height:450px" src="datawedge_launcher.png"/>
@@ -39,7 +40,7 @@ Other DataWedge guides:
 
 ##Profiles
 
-Profiles and Plug-ins are at the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins  
+Profiles contain information about how DataWedge should behave when providing scanning services for a particular application. 
 
 Profile information consists of:
 
@@ -57,23 +58,23 @@ DataWedge includes the following visible and hidden pre-configured profiles whic
 
 Visible profiles:
 
-### Profile0 - created automatically the first time DataWedge runs. Generic profile used when there are no user created profiles associated with an application.
+**Profile0 -** created automatically the first time DataWedge runs. Generic profile used when there are no user created profiles associated with an application.
 
-Launcher - DataWedge configuration to be loaded when Launcher screen in the foreground.
+**Launcher -** DataWedge configuration to be loaded when Launcher screen in the foreground.
 
-### DWDemo - This profile gets loaded when DataWedge Demo (DWDemo) application comes to the foreground. User can capture data to the DWDemo application.
+**DWDemo -** This profile gets loaded when DataWedge Demo (DWDemo) application comes to the foreground. User can capture data to the DWDemo application.
 
 Hidden profiles (not shown to the device):
 
-RD Client - provides support for MSP.
+**RD Client -** provides support for MSP.
 
-MSP Agent - provides support for MSP.
+**MSP Agent -** provides support for MSP.
 
-MspUserAttribute - provides support for MSP.
+**MspUserAttribute -** provides support for MSP.
 
-Camera - disables scanning when the default camera application is in foreground.
+**Camera -** disables scanning when the default camera application is in foreground.
 
-RhoElements - disables scanning when RhoElements is in foreground.
+**RhoElements -** disables scanning when RhoElements is in foreground.
 
 Profile0
 Profile0 can be edited but cannot be associated with an application. That is, DataWedge allows manipulation of plug-in settings for Profile0 but it does not allow assignment of a foreground application. This configuration allows DataWedge to send output data to any foreground application other than applications associated with user-defined profiles when Profile0 is enabled.
@@ -302,7 +303,7 @@ Camera Scanner - Scanning is performed with the rear-facing camera.
 
 2D Imager - Scanning is performed using the installed Scan or Scan/MSR module.
 
-Decoders
+## Decoders
 
 Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders.
 

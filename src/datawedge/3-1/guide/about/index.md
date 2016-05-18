@@ -114,7 +114,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-&#42; _Enabled by default_
+    
 
 ###Profiles
 DataWedge Profiles permit custom groups of settings to be created to match the needs of specific apps, users or scanning scenarios. Profiles can be created for different applications that require the same data processed in different ways. A Profile can be set to output scanned data in the format required for a particular app whenever that app comes to the foreground. Profiles also can enable one or more individual barcode symbologies to help improve performance and reduce input errors and delays. 

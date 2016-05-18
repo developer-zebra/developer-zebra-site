@@ -7,7 +7,9 @@ productversion: '3.1'
 
 ## Overview
 
-This guide covers the basic usage of DataWedge, an application included with Zebra devices running Android and Windows that provides barcode scanning and processing services. DataWedge sits between a user app and the device scanning hardware, acquiring and processing barcode data and handing the data to the app in a generic format or by rules specified in advance using a DataWedge Profile. 
+This guide covers the basic usage of DataWedge, an application included with Zebra devices running Android and Windows that provides barcode scanning and processing services to other apps. DataWedge sits between a user app and the device scanning hardware, acquiring and processing barcode data and handing the data to the app in a generic format or by rules specified in advance using a DataWedge Profile. 
+
+Profiles and Plug-ins are the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins allow input, output and processing capabilities to be added to DataWedge. 
 
 DataWedge functions covered in this guide: 
 
@@ -28,24 +30,16 @@ Other DataWedge guides:
 * [DataWedge API for Android](../androidapi)
 * [DataWedge Capture API](../capture)
 
-**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of Enterprise Browser and other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It's therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. This guide includes instructions for such activities. 
-
+**Note: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore critical to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. This guide includes instructions for such operations. 
 
 &#50;. <b>Bold text for command</b> then the rest of the instruction here.  
-<img alt="HTML image link coding with height control" style="height:450px" src="home_selector.png"/>
+<img alt="DataWedge App in the Android Launcher" style="height:450px" src="datawedge_launcher.png"/>
 
 <b>Note</b>: Formatting of how it's been done in other docs. 
 
-
-DATAWEDGE CONFIGURATION
-
-Introduction
-
-DataWedge is an application that reads data, processes the data and sends the data to an application.
-
 ##Profiles
 
-DataWedge is based on profiles and plug-ins. A profile contains information on how DataWedge should behave with different applications.
+Profiles and Plug-ins are at the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins  
 
 Profile information consists of:
 

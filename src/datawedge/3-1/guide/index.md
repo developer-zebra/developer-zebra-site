@@ -1,6 +1,6 @@
 ---
-title: Guides
-description: "DataWedge does this and that."
+title: DataWedge 3.1
+description: "DataWedge does this and that. MENUS! "
 layout: list-content-items.html
 content-items:
   - type: section

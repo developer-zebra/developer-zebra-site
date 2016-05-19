@@ -3,16 +3,16 @@ title: DataWedge
 img: datawedge-logo.png
 layout: list-mx.html
 menu:
-  title: DataWedge
+  title: DataWedge 3.1
   items:
-    - title: About
+    - title: Introduction
       url: /datawedge/3-1/guide/about
-    - title: Setup
-      url: /datawedge/3-1/guide/setup
+    - title: Profiles
+      url: /datawedge/3-1/guide/profiles
+    - title: Decoders
+      url: /datawedge/3-1/guide/decoders
     - title: Advanced Settings
-      url: /datawedge/3-1/guide/settings
-    - title: Special Features
-      url: /datawedge/3-1/guide/features
+      url: /datawedge/3-1/guide/advanced
     - icon: fa fa-search
       url: /datawedge/3-1/search
     - icon: fa fa-download
@@ -20,15 +20,3 @@ menu:
 product: DataWedge
 productversion: '3.1'
 ---
-
-
-
-
-
-
-
-
-
-
-
-

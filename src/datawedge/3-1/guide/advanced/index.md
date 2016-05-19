@@ -482,7 +482,6 @@ Note    DataWedge will try to consume the “.db” files as soon as they are co
     }
 
 
-
 ## Programming Notes
 
 Overriding Trigger Key in an Application

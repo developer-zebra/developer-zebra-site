@@ -7,9 +7,11 @@ productversion: '3.1'
 
 ## Overview
 
-This guide covers the basic usage of DataWedge, an application included with Zebra devices running Android and Windows that provides barcode scanning and processing services to other apps. DataWedge sits between a user app and the device scanning hardware, acquiring and processing barcode data and handing the data to the app in a generic format or by rules specified in advance using a DataWedge Profile. 
+This guide covers the basic usage of DataWedge, which provides barcode scanning and processing services on Zebra devices. DataWedge sits between a user app and scanning hardware of a device, acquiring and processing barcode data and handing the data to the app in a generic format or by rules specified in advance using a DataWedge Profile. 
 
-Profiles and Plug-ins are the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins allow input, output and processing capabilities to be added to DataWedge. Several Plug-ins are included with DataWedge that can be modified to suit individual needs. 
+Profiles and Plug-ins are the basis for most DataWedge operations. A Profile contains information about how DataWedge should behave when providing scanning services for a particular application. Plug-ins allow input, output and processing capabilities to be added and controlled. Several Plug-ins are included with DataWedge that can be modified to suit individual needs. 
+
+This guide covers DataWedge for Android; Windows features and usage may vary.  
 
 <!-- DataWedge functions covered in this guide: 
 

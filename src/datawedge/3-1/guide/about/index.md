@@ -5,11 +5,11 @@ product: DataWedge
 productversion: '3.1'
 ---
 
-## Overview
+## Introduction
 
 DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool enables device apps to acquire barcode data without the modifications necessary to use scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched. 
 
-**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of Enterprise Browser and other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It's therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. This guide includes instructions for such activities. 
+**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Scanner and Barcode APIs of Enterprise Browser and those of other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It's therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. Refer to the [DataWedge Guides](../gettingstarted) for further instructions. 
 
 ###Main Functionality
 DataWedge provides the following primary functions: 
@@ -28,6 +28,9 @@ DataWedge provides the following primary functions:
 ###Is DataWedge Installed?
 To verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
 <img style="height:350px" src="datawedge_launcher.png"/>
+<br>
+
+**Refer to the [DataWedge download page](../../download) for version information**. 
 
 ###Decoders
 DataWedge decodes all major barcode symbologies. Most are shown on the table below; popular formats are enabled by default (*). To help improve scanning performance, individual symbologies can be enabled and disabled based on the needs of a specific app or usage profile. See "Profiles" below. 

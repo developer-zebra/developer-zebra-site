@@ -15,12 +15,12 @@ After download, proceed to [Setup](/datawedge/3-1/guide/setup).
 
 ## Latest Release
 
-[Download DataWedge](https://url.com)
+[Download DataWedge](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge)
 
 
 ## Previous Releases
 
-[Download DataWedge](https://url.com)
+[Download DataWedge](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge)
 
 
 

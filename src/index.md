@@ -3,6 +3,22 @@ publish: false
 title: Available Product Documentation
 layout: list-products.html
 products:
+  - title: DataWedge
+    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
+    url: /datawedge/3-1/guide/about
+    image: /datawedge/datawedge_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /datawedge/3-1/guide/about
+      - title: Getting Started
+        url: /datawedge/3-1/gettingstarted
+      - title: Basic Setup
+        url: /datawedge/3-1/guide/setup
+      - title: Advanced Features
+        url: /datawedge/3-1/guide/advanced
+      - title: Download
+        url: /datawedge/3-1/download
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to Android apps, settings and files without custom code.'
     url: /ehs/2-3/guide/about

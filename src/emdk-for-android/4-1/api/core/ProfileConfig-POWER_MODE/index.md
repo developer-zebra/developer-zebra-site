@@ -3,7 +3,7 @@ title: ProfileConfig.POWER_MODE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Sets the scanner power mode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	POWER_MODE.DEFAULT;
-	
 
 
 **Values:**
@@ -30,15 +28,4 @@ Sets the scanner power mode.
 * **HIGH** -High power, and excellent performance.
 
 * **ALWAYS_ON** -Highest power, fastest performance.
-
-
-
-
-
-
-
-
-
-
-
 

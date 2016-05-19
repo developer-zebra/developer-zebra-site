@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.UpcEanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Upc Ean Params configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	UpcEanParams upcEanParams = profileConfig.dataCapture.barcode.upcEanParams;
-	
 
 
 ##Public Fields
@@ -32,10 +30,8 @@ The scanner of fers four levels of decode security for UPC/EAN bar codes.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.security_level = SECURITY_LEVEL.DEFAULT;
-	
 
 
 **Type:**
@@ -51,10 +47,8 @@ Flag to enable length 2 supplementals.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.supplemental2 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -70,10 +64,8 @@ Flag to enable length 5 supplementals.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.supplemental5 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -89,10 +81,8 @@ The supplemental mode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.supplemental_mode = SUPPLEMENTAL_MODE.DEFAULT;
-	
 
 
 **Type:**
@@ -109,10 +99,8 @@ Retry count for auto-discriminating for supplementals. Possible values are 2 to 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int retry = upcEanParams.retry_count;
-	
 
 
 **Type:**
@@ -128,10 +116,8 @@ Flag to enable random weight check digit verification.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.random_weight_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -147,10 +133,8 @@ Flag to enable linear decode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.linear_decode = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -166,10 +150,8 @@ Flag to enable Bookland code decoding.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.bookland = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -186,10 +168,8 @@ Enables Coupon code decoding.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.coupon = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -208,10 +188,8 @@ Used to differentiate between old coupon (UPC/EAN and Code128) and new GS1 DataB
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.coupon_report = COUPON_REPORT.DEFAULT;
-	
 
 
 **Type:**
@@ -226,10 +204,8 @@ When enabled, this parameter adds five leading zeros to decoded EAN-8 symbols to
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.ean_zero_extend = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -245,10 +221,8 @@ Specifies the bookland format to use.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.bookland_format = BOOKLAND_FORMAT.DEFAULT;
-	
 
 
 **Type:**
@@ -265,24 +239,11 @@ If this is set it converts DataBar bar codes to UPC/EAN format.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEanParams.databar_to_upc_ean = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

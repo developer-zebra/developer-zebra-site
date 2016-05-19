@@ -3,123 +3,16 @@ title: MifarePlusSL3
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
 Provides access to Mifare Plus tag in security level 3 and I/O operations on
  an IsoDep Tag object. This class encapsulates all the methods required for
- communicating with the IsoDep tag using the tag technology protocol. 
+ communicating with the IsoDep tag using the tag technology protocol.
  
  
-
-**Example Usage:**
-	
-	:::java	
-	
-	public class MainActivity  extends Activity implements EMDKListener {
-	
-	SecureNfcManager secureNfcManager;
-	EMDKManager emdkManager;
-	SamType samType;
-	MifarePlusSL3 mifarePlusSl3;
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
-	}
-	
-	@Override
-	public void onOpened(EMDKManager emdkManager) {
-	this.emdkManager = emdkManager;
-	this.secureNfcManager = (secureNfcManager)
-	this.emdkManager.getInstance(FEATURE_TYPE.SECURENFC);
-	if(this.secureNfcManager != null){
-	try{
-	samType = secureNfcManager.getAvailableSam();
-	} catch (SecureNfcException e) {
-	e.printStackTrace();
-	}
-	
-	if (samType.equals(SamType.MIFARE)) {
-	mifareSam = (MifareSam) secureNfcMgr.getSamInstance(samType);
-	}
-	
-	if(mifareSam != null){
-	
-	try {
-	SamMode samMode = mifareSam.connect();
-	SamKey samKey = new SamKey();
-	samKey.keyNum = 0x00;
-	samKey.keyVer = 0x00;
-	mifareSam.authenticateSam(authKey, samKey,null);
-	mifareSam.close();
-	
-	} catch (MifareSamException e) {
-	e.printStackTrace();
-	}
-	}
-	}
-	}
-	
-	public void onNewIntent(Intent intent) {
-	if (intent != null)
-	tagDetection(intent);
-	}
-	
-	private void tagDetection(Intent intent) {
-	
-	if(NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction())
-	|| NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())
-	|| NfcAdapter.ACTION_TECH_DISCOVERED.equals(intent.getAction())) {
-	
-	lTag	 = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
-	try {
-	
-	TagTechType tagType = secureNfcMgr.getTagTechType(lTag);
-	
-	if (tagType.equals(TagTechType.MIFARE_PLUS_SL3)) {
-	mifarePlusSl3 = (MifarePlusSL3) secureNfcMgr.getTagTechInstance(tagType);
-	try {
-	if (!mifarePlusSl3.isEnabled()) {
-	mifarePlusSl3.enable(lTag);
-	}
-	} catch (MifarePlusSL3Exception e) {
-	e.printStackTrace();
-	}
-	}
-	
-	} catch (SecureNfcException e) {
-	
-	e.printStackTrace();
-	}
-	
-	}
-	}
-	
-	@Override
-	protected void onDestroy() {
-	
-	super.onDestroy();
-	
-	if (mifarePlusSl3 != null) {
-	try {
-	mifarePlusSl3.disable();
-	
-	} catch (MifarePlusSL3Exception e) {
-	e.printStackTrace();
-	}
-	}
-	
-	if(this.emdkManager != null)
-	this.emdkManager.release();
-	}
-	
-	@Override
-	public void onClosed() {
-	this.emdkManager.release();
-	}
-	}
-
+ 
 
 ##Public Methods
 
@@ -855,15 +748,4 @@ boolean - true : if connection with the tag is enabled false : if the
 com.symbol.emdk.securenfc.MifarePlusSL3Exception
 
 The exception will be thrown if the emdk is not opened.
-
-
-
-
-
-
-
-
-
-
-
 

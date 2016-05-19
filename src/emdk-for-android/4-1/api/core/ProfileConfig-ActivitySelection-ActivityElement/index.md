@@ -3,7 +3,7 @@ title: ProfileConfig.ActivitySelection.ActivityElement
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Gets and Sets application's package name and its activities to the profile [ Pro
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ArrayList<ActivityElement> activities = profileConfig.activitySelection.activities;
-	
 
 
 ##Constructors
@@ -48,15 +46,4 @@ activities
 **Type:**
 
 java.lang.String
-
-
-
-
-
-
-
-
-
-
-
 

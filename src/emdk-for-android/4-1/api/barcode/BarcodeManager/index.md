@@ -3,7 +3,7 @@ title: BarcodeManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -82,15 +82,4 @@ Remove ScannerConnectionListener to receive scanner connection changes
 **Returns:**
 
 void
-
-
-
-
-
-
-
-
-
-
-
 

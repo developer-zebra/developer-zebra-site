@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.EAN8
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds EAN8 configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	EAN8 ean8 = profileConfig.dataCapture.barcode.decoderParams.ean8;
-	
 
 
 ##Public Fields
@@ -30,24 +28,11 @@ Convert EAN8 data to EAN 13. (default - disabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ean8.convert_to_ean13 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

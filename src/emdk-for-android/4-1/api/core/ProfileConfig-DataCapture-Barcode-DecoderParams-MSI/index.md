@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.MSI
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Codabar configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	MSI msi = profileConfig.dataCapture.barcode.decoderParams.msi;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Use to set decode lengths (default - 4).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = msi.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Use to set decode lengths (default - 55).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = msi.length2
-	
 
 
 **Type:**
@@ -66,10 +60,8 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	msi.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -86,10 +78,8 @@ With MSI symbols, one check digit is mandatory and always verified by the reader
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	msi.check_digit = CHECK_DIGIT.DEFAULT;
-	
 
 
 **Type:**
@@ -106,10 +96,8 @@ Two algorithms are possible for the verification of the second MSI check digit.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	msi.check_digit_scheme = CHECK_DIGIT_SCHEME.DEFAULT;
-	
 
 
 **Type:**
@@ -125,24 +113,11 @@ Transmit MSI data with or without the check digit (default - disabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	msi.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

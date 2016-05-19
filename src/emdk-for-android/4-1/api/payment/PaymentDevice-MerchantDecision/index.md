@@ -3,7 +3,7 @@ title: PaymentDevice.MerchantDecision
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -17,15 +17,4 @@ The merchant decision notes additional handling for the EMV request based
 * **FORCE_ONLINE** -This merchant decision insists the transaction to be online with the usage of PIN.
 
 * **FORCE_DECLINE**
-
-
-
-
-
-
-
-
-
-
-
 

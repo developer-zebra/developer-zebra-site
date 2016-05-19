@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.CodaBar
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -20,10 +20,8 @@ Use to set decode lengths. The supported range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.length1 = 6;
-	
 
 
 **Type:**
@@ -38,10 +36,8 @@ Use to set decode lengths. The supported range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.length2 = 55;
-	
 
 
 **Type:**
@@ -56,10 +52,8 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.redundancy = true;
-	
 
 
 **Type:**
@@ -77,10 +71,8 @@ Enable this parameter to strip the start and stop characters and
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.clsi_editing = true;
-	
 
 
 **Type:**
@@ -97,24 +89,11 @@ Enable this parameter to strip the start and stop characters from
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.notis_editing = true;
-	
 
 
 **Type:**
 
 boolean
-
-
-
-
-
-
-
-
-
-
-
 

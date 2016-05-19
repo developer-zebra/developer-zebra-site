@@ -3,7 +3,7 @@ title: Scanner.StatusListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,11 +13,9 @@ An interface for notifying client applications to notify scan events.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	public class MainActivity extends Activity implements StatusListener
 	.. .. ..
-	
 	
 
 
@@ -36,15 +34,4 @@ This is the callback method upon scan status event occurs.
 **Returns:**
 
 void
-
-
-
-
-
-
-
-
-
-
-
 

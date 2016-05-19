@@ -3,7 +3,7 @@ title: MifareSam.SamMode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -16,15 +16,4 @@ SAM modes
 * **AV2** -MIFARE SAM is in AV2 mode
 
 * **UNDEFINED** -MIFARE SAM is in invalid mode
-
-
-
-
-
-
-
-
-
-
-
 

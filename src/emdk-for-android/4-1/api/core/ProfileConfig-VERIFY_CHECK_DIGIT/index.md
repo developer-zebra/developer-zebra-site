@@ -3,7 +3,7 @@ title: ProfileConfig.VERIFY_CHECK_DIGIT
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -14,10 +14,8 @@ Check the integrity of all Code 11 symbols to verify that the data complies with
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	VERIFY_CHECK_DIGIT.DEFAULT;
-	
 
 
 **Values:**
@@ -29,15 +27,4 @@ Check the integrity of all Code 11 symbols to verify that the data complies with
 * **ONE** -Bar code contains one check digit.
 
 * **TWO** -Bar code contains two check digits.
-
-
-
-
-
-
-
-
-
-
-
 

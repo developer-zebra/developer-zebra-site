@@ -3,7 +3,7 @@ title: StatusData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ StatusData class provides access to scanner status.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	statusData.getState();
-	
 
 
 ##Public Methods
@@ -40,15 +38,4 @@ Returns the friendly name of scanner for which the status data is returned.
 **Returns:**
 
 java.lang.String - Returns scanner index to the supported devices list.
-
-
-
-
-
-
-
-
-
-
-
 

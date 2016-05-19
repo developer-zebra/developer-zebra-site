@@ -3,7 +3,7 @@ title: MifareDesfire.CreditType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -15,15 +15,4 @@ productversion: '4.1'
 
 * **LIMITED** -Limited increase of a value without having full Read&Write
  permissions to the file
-
-
-
-
-
-
-
-
-
-
-
 

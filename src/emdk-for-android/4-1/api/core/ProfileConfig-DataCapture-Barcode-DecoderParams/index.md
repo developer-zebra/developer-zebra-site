@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Decoder configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	DecoderParams decoderParams = profileConfigdataCapture.barcode.decoderParams;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Configures the UPCA Symbology object [ ProfileConfig.DataCapture.Barcode.Decoder
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.upca.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Configures the UPCE0 Symbology object [ ProfileConfig.DataCapture.Barcode.Decode
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.upce0.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -65,10 +59,8 @@ Configures the EAN8 Symbology object [ ProfileConfig.DataCapture.Barcode.Decoder
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.ean8.convert_to_ean13 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -83,10 +75,8 @@ Configures the Code128 Symbology object [ ProfileConfig.DataCapture.Barcode.Deco
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.code128.enable_ean128 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -101,10 +91,8 @@ Configures the Code39 Symbology object [ ProfileConfig.DataCapture.Barcode.Decod
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.code39.full_ascii = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -119,10 +107,8 @@ Configures the Interleaved 2of5 Symbology object [ ProfileConfig.DataCapture.Bar
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.interleaved_2of5.check_digit = CHECK_DIGIT_TYPE.DEFAULT;
-	
 
 
 **Type:**
@@ -137,10 +123,8 @@ Configures the Composite AB Symbology object [ ProfileConfig.DataCapture.Barcode
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.composite_AB.ucc_link_mode = UCC_LINK_MODE.ALWAYS_LINKED;
-	
 
 
 **Type:**
@@ -155,10 +139,8 @@ Configures the US Postnet Symbology object [ ProfileConfig.DataCapture.Barcode.D
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.usPostnet.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -173,10 +155,8 @@ Configures the US Planet Symbology object [ ProfileConfig.DataCapture.Barcode.De
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.usPlanet.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -191,10 +171,8 @@ Configures the UK Postal Symbology object [ ProfileConfig.DataCapture.Barcode.De
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.uk_Postal.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -209,10 +187,8 @@ Configures the Codabar Symbology object [ ProfileConfig.DataCapture.Barcode.Deco
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.codabar.clsi_editing = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -227,10 +203,8 @@ Configures the MSI Symbology object [ ProfileConfig.DataCapture.Barcode.DecoderP
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.msi.check_digit = CHECK_DIGIT.DEFAULT;
-	
 
 
 **Type:**
@@ -245,10 +219,8 @@ Configures the Code93 Symbology object [ ProfileConfig.DataCapture.Barcode.Decod
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.code93.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -263,10 +235,8 @@ Configures the Trioptic39 Symbology object [ ProfileConfig.DataCapture.Barcode.D
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.trioptic39.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -281,10 +251,8 @@ Configures the Discrete_2of5 Symbology object [ ProfileConfig.DataCapture.Barcod
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.discrete_2of5.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -299,10 +267,8 @@ Configures the Code11 Symbology object [ ProfileConfig.DataCapture.Barcode.Decod
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.code11.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -317,10 +283,8 @@ Configures the Matrix 2of5 Symbology object [ ProfileConfig.DataCapture.Barcode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.matrix_2of5.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -335,24 +299,11 @@ Configures the UPCE1 Symbology object [ ProfileConfig.DataCapture.Barcode.Decode
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	decoderParams.upce1.convert_to_upca = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1
-
-
-
-
-
-
-
-
-
-
-
 

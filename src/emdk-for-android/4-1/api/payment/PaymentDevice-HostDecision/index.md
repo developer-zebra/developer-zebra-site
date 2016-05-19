@@ -3,7 +3,7 @@ title: PaymentDevice.HostDecision
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -16,15 +16,4 @@ Decision indicator from the host response.
 * **HOST_DECLINE**
 
 * **CONNECT_FAILED**
-
-
-
-
-
-
-
-
-
-
-
 

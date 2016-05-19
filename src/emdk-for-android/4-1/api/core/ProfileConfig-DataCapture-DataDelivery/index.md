@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.DataDelivery
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Class for dealing with DataDelivery profile data [ ProfileConfig.DataCapture.Dat
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	DataDelivery dataDelivery = profileConfig.dataCapture.dataDelivery;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Gets and Sets Intent configuration object [ ProfileConfig.DataCapture.DataDelive
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	profileConfig.dataCapture.dataDelivery.intent.output_enabled = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -47,24 +43,11 @@ Gets and Sets Keystroke configuration object [ ProfileConfig.DataCapture.DataDel
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	profileConfig.Keystroke.ime_output_enabled = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.Keystroke
-
-
-
-
-
-
-
-
-
-
-
 

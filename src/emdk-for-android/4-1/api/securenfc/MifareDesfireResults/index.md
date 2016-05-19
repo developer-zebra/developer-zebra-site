@@ -3,7 +3,7 @@ title: MifareDesfireResults
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -90,15 +90,4 @@ productversion: '4.1'
 * **PARAM_NOT_SUPPORTED** -The parameter not supported.
 
 * **UNDEFINED** -Error code not defined.
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Matrix 2 of 5 configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Matrix_2of5 matrix2of5 = profileConfig.dataCapture.barcode.decoderParams.matrix_2of5;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Used to set decode lengths (default - 10).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = matrix2of5.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Used to set decode lengths (default - 0).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = matrix2of5.length2;
-	
 
 
 **Type:**
@@ -66,10 +60,8 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	matrix2of5.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -85,10 +77,8 @@ Transmit Matrix 2 of 5 data with or without the check digit(default - enabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	matrix2of5.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -105,24 +95,11 @@ Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verif
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	matrix2of5.verify_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

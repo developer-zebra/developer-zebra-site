@@ -3,7 +3,7 @@ title: EMDKResults.STATUS_CODE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Defines all the status codes the library returns.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	results.statusCode.SUCCESS;
-	
 
 
 **Values:**
@@ -45,15 +43,4 @@ Defines all the status codes the library returns.
 * **FEATURE_NOT_READY_TO_USE** -The requested feature is not ready to use. Try later.
 
 * **FEATURE_NOT_SUPPORTED** -The requested feature is not supported on this device.
-
-
-
-
-
-
-
-
-
-
-
 

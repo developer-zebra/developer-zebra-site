@@ -3,7 +3,7 @@ title: ScannerInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ ScannerInfo provides information of the scanner device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanneInfo.getFriendlyName();
-	
 
 
 ##Public Methods
@@ -41,10 +39,8 @@ Returns the friendly name of the Device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String name = scanneInfo.getFriendlyName();
-	
 
 
 **Returns:**
@@ -62,10 +58,8 @@ Returns the scanner device model number. This information will be available only
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String model = scanneInfo.getModel();
-	
 
 
 **Returns:**
@@ -82,10 +76,8 @@ Returns the scanner device type
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	DeviceType deviceType = scanneInfo.getDeviceType();
-	
 
 
 **Returns:**
@@ -102,15 +94,31 @@ Returns the scanner connection type to mobile computer
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ConnectionType deviceType = scanneInfo.getConnectionType();
-	
 
 
 **Returns:**
 
 com.symbol.emdk.barcode.ScannerInfo.ConnectionType - Returns the ConnectionType
+
+### getDeviceIdentifier
+
+**public DeviceIdentifier getDeviceIdentifier()**
+
+Returns the Device Identifier.
+ Note: DeviceIdentifier.DEFAULT will not be returned for any scanner.
+ 
+
+**Example Usage:**
+	
+	:::java	
+	DeviceIdentifier deviceIdentifier = scannerInfo.getDeviceIdentifier();
+
+
+**Returns:**
+
+com.symbol.emdk.barcode.BarcodeManager.DeviceIdentifier - Returns the DeviceIdentifier
 
 ### getDecoderType
 
@@ -123,10 +131,8 @@ Returns the barcode scanning type supported by scanner.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	DecoderType decoderType = scannerInfo.getScannerInfo().getDecoderType();
-	
 
 
 **Returns:**
@@ -142,15 +148,4 @@ com.symbol.emdk.barcode.ScannerInfo.DecoderType - Returns the DECODER_TYPE
 **Returns:**
 
 boolean
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: BarcodeManager.ScannerConnectionListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -14,11 +14,9 @@ An interface for notifying client applications when the external scanner
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	public class MainActivity extends Activity implements ScannerConnectionListener
 	.. .. ..
-	
 	
 
 
@@ -39,15 +37,4 @@ Called to notify the client when the scanner device has been connected or discon
 **Returns:**
 
 void
-
-
-
-
-
-
-
-
-
-
-
 

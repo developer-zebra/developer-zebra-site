@@ -3,7 +3,7 @@ title: Diagnostic
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,12 +13,10 @@ This class provides access to fetch the diagnostics information.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	paramId
 	DiagnosticData diagnosticData =  PsObject.diagnostic.getDiagnosticData(DiagnosticParamId paramId
 	,DiagnosticConfig diagnosticconfig);
-	
 
 
 ##Public Methods
@@ -45,17 +43,6 @@ com.symbol.emdk.personalshopper.DiagnosticData - DiagnosticData : Manufacturing 
 **Throws:**
 
 com.symbol.emdk.personalshopper.DiagnosticException
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -3,7 +3,7 @@ title: PaymentManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,8 +13,7 @@ This is the primary object to access the payment feature.
 
 **Example Usage:**
 	
-	:::java
-	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
+	:::java	EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
 	
 	//After EMDK opened
 	paymentManager = (PaymentManager)this.emdkManager.getInstance(FEATURE_TYPE.PAYMENT);
@@ -27,7 +26,6 @@ This is the primary object to access the payment feature.
 	paymentDevice.disable();
 	
 	EMDKManager.release(FEATURE_TYPE.PAYMENT);
-	
 	
 	
 
@@ -144,17 +142,6 @@ java.util.ArrayList - Returns list of DeviceInfo objects.
 **Throws:**
 
 com.symbol.emdk.payment.PaymentException
-
-
-
-
-
-
-
-
-
-
-
 
 
 

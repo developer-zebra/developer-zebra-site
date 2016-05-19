@@ -3,7 +3,7 @@ title: StatusData.ScannerStates
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -20,15 +20,4 @@ Defines the different states of the barcode scanner.
 * **DISABLED** -Scanner is not enabled.
 
 * **ERROR** -An error has occurred.
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ScannerConfig.ReaderParams.ReaderSpecific
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -24,12 +24,10 @@ Provide access to set the imager specific settings if the scanner device is imag
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	if (scanner.getScannerInfo().getDeviceType() == DeviceType.IMAGER) {
 	readerParams.readerSpecific.imagerSpecific.picklist = PickList.DISABLED;
 	}
-	
 
 
 **Type:**
@@ -43,12 +41,10 @@ Provide access to set the camera specific settings if the scanner device is came
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	if (scanner.getScannerInfo().getDeviceType() == DeviceType.CAMERA) {
 	readerParams.readerSpecific.cameraSpecific.illuminationMode = IlluminationMode.ON;
 	}
-	
 
 
 **Type:**
@@ -62,15 +58,4 @@ Provide access to set the laser specific settings if the scanner device is laser
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
-
-
-
-
-
-
-
-
-
-
-
 

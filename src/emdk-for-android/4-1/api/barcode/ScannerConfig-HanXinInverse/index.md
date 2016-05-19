@@ -3,7 +3,7 @@ title: ScannerConfig.HanXinInverse
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ This parameter allows the user to select decoding on inverse HanXin bar codes.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	HanXinInverse.DISABLED;
-	
 
 
 **Values:**
@@ -26,15 +24,4 @@ This parameter allows the user to select decoding on inverse HanXin bar codes.
 * **ENABLED** -Enables decoding of only inverse HanXin symbologies.
 
 * **AUTO** -Allows decoding of both positive as well as inverse HanXin symbologies.
-
-
-
-
-
-
-
-
-
-
-
 

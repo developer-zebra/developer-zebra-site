@@ -3,7 +3,7 @@ title: SimulScanGroup
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -31,15 +31,4 @@ Returns additional processed data as an object of type Object
 **Returns:**
 
 java.lang.Object
-
-
-
-
-
-
-
-
-
-
-
 

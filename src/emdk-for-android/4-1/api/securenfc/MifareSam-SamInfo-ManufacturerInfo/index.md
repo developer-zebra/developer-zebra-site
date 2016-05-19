@@ -3,7 +3,7 @@ title: MifareSam.SamInfo.ManufacturerInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -34,15 +34,4 @@ Production Date
 **Type:**
 
 java.lang.String
-
-
-
-
-
-
-
-
-
-
-
 

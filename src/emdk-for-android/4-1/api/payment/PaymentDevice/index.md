@@ -3,7 +3,7 @@ title: PaymentDevice
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -49,12 +49,10 @@ This is an asynchronous call and status of the enable method will be returned th
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	PaymentDevice paymentDevice = paymentManager.getDevice(DeviceIdentifer.DEFAULT);
 	paymentDevice.addDataListener(this);
 	paymentDevice.enable();
-	
 
 
 **Returns:**
@@ -85,10 +83,8 @@ Disables the the payment device for transactions. This method closes the
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	paymentDevice.disable();
-	
 
 
 **Returns:**
@@ -118,14 +114,9 @@ Gets payment device configuration settings. On success the results will
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	try{
 	PaymentConfig config = paymentDevice.getConfig();
-	}catch (PaymentException e) {
-	responseString.append(e.getResult().getDescription());
-	}
-	
 
 
 **Returns:**
@@ -153,8 +144,7 @@ Sets payment device configuration settings. This method sets the modified
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	try {
 	PaymentConfig config = paymentDevice.getConfig();
 	
@@ -166,7 +156,6 @@ Sets payment device configuration settings. This method sets the modified
 	}catch (PaymentException e) {
 	responseString.append(e.getResult().getDescription());
 	}
-	
 
 
 **Parameters:**
@@ -202,10 +191,8 @@ This method enables the keypad on the payment device. The keypad must be explici
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	paymentDevice.enableKeypad();
-	
 
 
 **Returns:**
@@ -234,6 +221,12 @@ This method enables the keypad on the payment device. The keypad must be explici
  
  
 
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.enableKeypad(12000);
+
+
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults - Returns the PaymentResults.
@@ -252,10 +245,8 @@ Disables the keypad on the payment device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	paymentDevice.disableKeypad();
-	
 
 
 **Returns:**
@@ -294,6 +285,16 @@ Reads the card data from the PAYMENT device. This is asynchronous call
 `readCardMessage` - The  ReadCardMessage class provides option configure the messages
             displayed on payment device while reading the card data on payment device
  
+
+**Example Usage:**
+	
+	:::java	
+	readCardMessage = new ReadCardMessage();
+	readCardMessage.messageTitle ="MessageTitle";
+	readCardMessage.screen1.message1 = "$2000.00";
+	readCardMessage.screen1.message2 = "Transaction...";
+	paymentDevice.readCardData(1, 4, ReadMode.ALL, 2000, readCardMessage);
+
 
 **Returns:**
 
@@ -381,6 +382,16 @@ Requests for a PIN and gets the encrypted PIN block. The encrypted data
             messages displayed on the payment device while reading the PIN.
 
  
+
+**Example Usage:**
+	
+	:::java	
+	promptPINMessage = new PromptPinMessage();
+	promptPINMessage.messageTitle ="MessageTitle";
+	promptPINMessage.screen1.message1 = "Sale $1,000.00";
+	promptPINMessage.screen1.message2 = "Transaction..";
+	paymentDevice.promptPin("0123456789012345", 4, 12, true, 2000, promptPinMessage);
+
 
 **Returns:**
 
@@ -484,6 +495,12 @@ Displays two lines of messages on the PAYMENT device and provides a menu
  
  
 
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.promptMenu("messageLine1","messageLine2","choice1","choice2","choice3","choice4",timeOut);
+
+
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults - Returns the PaymentResults.
@@ -528,6 +545,12 @@ Requests the user to confirm the amount and surcharge passed by the
             within threshold set by the payment device.
  
 
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.promptAdditionalInfo(1.25, 0,true, true,1.25, 60000);
+
+
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults - PaymentResults Returns the PaymentResults.
@@ -570,6 +593,12 @@ Displays a maximum of 4 lines of messages on the payment device. This
  
  
 
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.promptMessage("messageLine1","messageLine2","messageLine3","messageLine4",true, timeOut);
+
+
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults - PaymentResults Returns the PaymentResults.
@@ -596,10 +625,8 @@ Abort or cancel previously issued request to device and display welcome
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	paymentDevice.abort();
-	
 
 
 **Returns:**
@@ -630,11 +657,9 @@ Query the battery level of the payment device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	BatteryData data = paymentDevice.getBatteryLevel();
 	String batteryLevel = String.valueOf(data.getValue());
-	
 
 
 **Returns:**
@@ -660,6 +685,12 @@ This is a required transaction for Canada. Accepts a String of data to be
 `u8MacData` - String of data to be MAC'ed. The length of the key should be
             16/32/48 bytes in HEX format.
  
+
+**Example Usage:**
+	
+	:::java	
+	MacData data = paymentDevice.createMac("1112131415161718");
+
 
 **Returns:**
 
@@ -700,6 +731,12 @@ Validates the response MAC and displays any authorization messages
 `u8MacData` - Buffer to hold all data to be MAC'ed
  
 
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.validateMac("u8MacBlock", 0, "", "", "message1", "message2","1112131415161718");
+
+
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults - Returns the PaymentResults after the request is successfully
@@ -730,6 +767,14 @@ Completes an online EMV transaction for PIN management. The application
 `tagData` - List of EMV data which contains EMV tag and its values.
  
  
+
+**Example Usage:**
+	
+	:::java	
+	ArrayList<TagData> emvDataList = new ArrayList<TagData>();
+	emvDataList.add(new TagData("5A085413330089601075"));
+	paymentDevice.completeOnlineEmv(HostDecision.HOST_AUTHORIZED, true, emvDataList );
+
 
 **Returns:**
 
@@ -786,6 +831,15 @@ Sets tag information for the inserted card. Valid EMV tag IDs and tag
            
             
  
+
+**Example Usage:**
+	
+	:::java	
+	ArrayList<TagData> emvTagData = new ArrayList<TagData>();
+	TagData data = new TagData("5A085413330089601075");
+	emvTagData.add(data);
+	paymentDevice.setEmvTags(emvTagData);
+
 
 **Returns:**
 
@@ -853,11 +907,9 @@ Gets the acceptable low battery level. If the battery drops below this
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	BatteryData data = paymentDevice.getLowBatteryThreshold();
 	String batteryLevel = String.valueOf(data.getValue());
-	
 
 
 **Returns:**
@@ -899,6 +951,12 @@ Sets the acceptable low battery level. If the battery drops below this
 		7.	setEmvTags
 		8.	authorizeCard	            
  
+
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.setLowBatteryThreshold(2,"The power is in battery grid2");
+
 
 **Returns:**
 
@@ -952,13 +1010,11 @@ This method provides access to set the interface configurations like connect to 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	InterfaceConfig interfaceConfig = paymentDevice.getInterfaceConfig();
 	interfaceConfig.macAddress = "8CDE520FE2FE";
 	paymentDevice.setInterfaceConfig(interfaceConfig);
 	payment.enable();
-	
 
 
 **Parameters:**
@@ -992,6 +1048,12 @@ Instruct the user to remove the EMV card inserted in the payment device. This is
 `message2` - the message which gives instructions to user for the removal of the card.
  
  
+
+**Example Usage:**
+	
+	:::java	
+	paymentDevice.removeCard("EMVCard", "please remove the Card");
+
 
 **Returns:**
 
@@ -1106,15 +1168,4 @@ void
 com.symbol.emdk.payment.PaymentException
 
 Exception will be thrown if any error occurs during this call.
-
-
-
-
-
-
-
-
-
-
-
 

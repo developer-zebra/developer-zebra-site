@@ -3,7 +3,7 @@ title: DiagnosticData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -86,15 +86,4 @@ The manufacture date of the battery in the format year/mm/date.  Empty string is
 **Type:**
 
 java.lang.String
-
-
-
-
-
-
-
-
-
-
-
 

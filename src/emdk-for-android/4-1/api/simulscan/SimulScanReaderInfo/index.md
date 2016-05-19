@@ -3,7 +3,7 @@ title: SimulScanReaderInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ SimulScanReaderInfo provides information of the reader device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerInfo.getFriendlyName();
-	
 
 
 ##Public Methods
@@ -31,10 +29,8 @@ Returns the friendly name of the Device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String name = readerInfo.getFriendlyName();
-	
 
 
 **Returns:**
@@ -52,25 +48,12 @@ Returns the reader device type
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	SimulScanDeviceType deviceType = readerInfo.getDeviceType();
-	
 
 
 **Returns:**
 
 com.symbol.emdk.simulscan.SimulScanReaderInfo.DeviceType - SimulScanDeviceType
  		Returns the SimulScanDeviceType
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: InterfaceConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -36,15 +36,4 @@ Timeout in seconds that Scanner.enable() will block before returning if an exter
 **Type:**
 
 int
-
-
-
-
-
-
-
-
-
-
-
 

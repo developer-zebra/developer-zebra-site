@@ -3,7 +3,7 @@ title: ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -28,10 +28,8 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.beamTimer = 1500;
-	
 
 
 **Type:**
@@ -47,10 +45,8 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.linearSecurityLevel = LinearSecurityLevel.ALL_THRICE;
-	
 
 
 **Type:**
@@ -68,10 +64,8 @@ Allows the imager to decode only the bar code that is directly under the cross-h
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	imagerSpecific.picklist = PickList.DISABLED;
-	
 
 
 **Type:**
@@ -88,10 +82,8 @@ Enables or disables LCD mode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	imagerSpecific.lcdMode = LcdMode.DISABLED;
-	
 
 
 **Type:**
@@ -107,10 +99,8 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	imagerSpecific.inverse1DMode = Inverse1DMode.AUTO;
-	
 
 
 **Type:**
@@ -125,10 +115,8 @@ Illumination Brightness of the Imager. The valid range is 1 to 10.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	imagerSpecific.illuminationBrightness = 2;
-	
 
 
 **Type:**
@@ -153,6 +141,8 @@ boolean
 This is the time (in seconds) when an external scanner is idle in a particular state (ScannerStates.IDLE to 
  ScannerStates.WAITING) after which the connection between the terminal and the scanner is severed to conserve
  power. This is currently applicable to Bluetooth scanners only.
+ 
+ For Android L and above the valid range start from 0. When time is set to 0, BT scanner will remain connected with terminal.
 
 **Type:**
 
@@ -167,10 +157,8 @@ Turns imager illumination on and off.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.imagerSpecific.illuminationMode = IlluminationMode.ON;
-	
 
 
 **Type:**
@@ -186,24 +174,11 @@ Type of aiming pattern to be used for barcode scanning.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.imagerSpecific.aimingPattern = AimingPattern.OFF;
-	
 
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.AimingPattern
-
-
-
-
-
-
-
-
-
-
-
 

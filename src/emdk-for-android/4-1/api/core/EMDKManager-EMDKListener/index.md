@@ -3,7 +3,7 @@ title: EMDKManager.EMDKListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -15,11 +15,9 @@ This is the interface for the callback to notify the opening and closing status 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	public class MainActivity extends Activity implements EMDKListener
 	.. .. ..
-	
 	
 
 
@@ -35,14 +33,12 @@ Called to notify the client when the EMDKManager object has been opened and its 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Override
 	public void onOpened(EMDKManager emdkManager)
 	{
 	
 	}
-	
 
 
 **Parameters:**
@@ -65,28 +61,15 @@ Called to notify the client that this EMDKManager object has been abruptly close
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Override
 	public void onClosed()
 	{
 	
 	}
-	
 
 
 **Returns:**
 
 void
-
-
-
-
-
-
-
-
-
-
-
 

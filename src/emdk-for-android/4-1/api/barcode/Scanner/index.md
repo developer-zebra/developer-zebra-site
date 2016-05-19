@@ -3,7 +3,7 @@ title: Scanner
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -14,15 +14,13 @@ Scanner class will represent and provides access to the physical scanner
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Scanner scanner = barcodeManager.getDevice(DeviceIdentifer.DEFAULT);
 	scanner.enable();
 	scanner.addDataListener(this);
 	scanner.read();
 	scanner.cancelRead();
 	scanner.disable();
-	
 
 
 ##Public Methods
@@ -68,11 +66,9 @@ Gets the current configuration settings for this scanner device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanner.enable();
 	ScannerConfig config = scanner.getConfig();
-	
 
 
 **Returns:**
@@ -96,12 +92,10 @@ Changes the settings for this scanner device. The unsupported parameters will be
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ScannerConfig scannerConfig = scanner.getConfig();
 	scannerConfig.scanParams.decodeLEDTime = 10;
 	scanner.setConfig(scannerConfig);
-	
 
 
 **Parameters:**
@@ -130,10 +124,8 @@ Enables the scanner hardware. This method does not make the scanner to scan or t
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanner.enable();
-	
 
 
 **Returns:**
@@ -158,10 +150,8 @@ Disables the scanner hardware. Any pending scanned data will be lost.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanner.disable();
-	
 
 
 **Returns:**
@@ -213,10 +203,8 @@ Starts an asynchronous Scan. The method will not turn on the scanner. It
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanner.read();
-	
 
 
 **Returns:**
@@ -238,10 +226,8 @@ This Cancels any pending asynchronous read() calls
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanner.cancelRead();
-	
 
 
 **Returns:**
@@ -356,15 +342,4 @@ Specifies the trigger type for the scanner. It is set to HARD by default.
 **Type:**
 
 com.symbol.emdk.barcode.Scanner.TriggerType
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: PassThruApduProcessor.ProtocolType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -21,15 +21,4 @@ Communication protocol between a SAM and tag.
 * **T0** -T-0 byte-oriented half duplex transmission protocol
 
 * **T1** -T-1 block-oriented half duplex transmission protocol
-
-
-
-
-
-
-
-
-
-
-
 

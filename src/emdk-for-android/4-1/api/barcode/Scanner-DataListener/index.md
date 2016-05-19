@@ -3,7 +3,7 @@ title: Scanner.DataListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -14,11 +14,9 @@ An interface for notifying client applications when the scan data is
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	public class MainActivity extends Activity implements DataListener
 	.. .. ..
-	
 	
 
 
@@ -37,15 +35,4 @@ This is the callback method upon data availability.
 **Returns:**
 
 void
-
-
-
-
-
-
-
-
-
-
-
 

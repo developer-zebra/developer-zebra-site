@@ -3,7 +3,7 @@ title: DeviceInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ DeviceInfo provides information of the Payment device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	paymentDevice.deviceInfo.getFriendlyName();
-	
 
 
 ##Public Methods
@@ -61,10 +59,8 @@ Returns the friendly name of the Device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String name = paymentDevice.deviceInfo.getFriendlyName();
-	
 
 
 **Returns:**
@@ -81,10 +77,8 @@ Returns the MacAdress of the remote device.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String name = paymentDevice.deviceInfo.getMacAddress();
-	
 
 
 **Returns:**
@@ -101,24 +95,11 @@ Returns the payment device connection type to mobile computer
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ConnectionType deviceType = paymentDevice.deviceInfo.getConnectionType();
-	
 
 
 **Returns:**
 
 com.symbol.emdk.payment.DeviceInfo.ConnectionType - Returns the ConnectionType
-
-
-
-
-
-
-
-
-
-
-
 

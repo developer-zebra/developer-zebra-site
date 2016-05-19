@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: For beginners with DataWedge, these guides will ensure a trouble-free experience from setting up the tool with basic features through advanced configuration and mass deployment.
+description: DataWedge beginners can explore these subjects from top to bottom for a trouble-free experience. Advanced users can skip directly to the features they need.
 layout: list-content-items.html
 content-items:
   - type: section
@@ -16,15 +16,25 @@ content-items:
   - type: section
     level: 4
     title: Decoders
-    text: Covers how to enable and disable Decoders and set custom parameters for maximum scanning accuracy and efficiency. 
+    text: How to enable and disable Decoders and set custom parameters for maximum scanning accuracy and efficiency. 
     url: /datawedge/3-1/guide/decoders
   - type: section
     level: 4
     title: Advanced Settings
     text: Advanced Data Formatting, Settings Import/Export, Mass Deployment and other advanced DataWedge settings and options. 
     url: /datawedge/3-1/guide/advanced
-product: DataWedge
-productversion: '3.1'
+  - type: section
+    level: 4
+    title: DataWedge IP
+    text: How to scan locally and store the acquired data on a server. 
+    url: /datawedge/3-1/guide/ipoutput
+  - type: section
+    level: 4
+    title: DataWedge APIs
+    text: Access the DataWedge data capture API programatically by broadcasting an Android intent. 
+    url: /datawedge/3-1/guide/api
+    product: DataWedge
+	productversion: '3.1'
 ---
     
 

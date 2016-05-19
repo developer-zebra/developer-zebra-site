@@ -1,36 +1,32 @@
 ---
 title: DataWedge 3.1
-description: "DataWedge does this and that. MENUS! "
-layout: list-content-items.html
-content-items:
-  - type: section
-    level: 4
-    title: Setup Guide
-    text: A step-by-step guide to installation and proper configuration of DataWedge on a device
-    url: /datawedge/3-1/guide/setup
-  - type: section
-    level: 4
-    title: Advanced Settings
-    text: How to control DataWedge 
-    url: /datawedge/3-1/guide/settings
-  - type: section
-    level: 4
-    title: Special Features
-    text: A guide to advanced features of DataWedge 
-    url: /datawedge/3-1/guide/features
+layout: list-mx.html
+menu: 
+    title: DataWedge 3.1
+    img: ../datawedge_logo.png
+
+versions:
+    - versionto: 3-1
+      versionfrom: 3-1
+      default: /datawedge/3-1/about
+      label: '3.1'
+  items:
+    - title: About
+      url: /datawedge/3-1/about
+    - title: Getting Started
+      url: /datawedge/3-1/gettingstarted
+    - title: Profiles
+      url: /datawedge/3-1/stagingprofiles
+    - title: Profile Wizards
+      url: /datawedge/3-1/ProfileWizards
+    - title: Settings
+      url: /datawedge/3-1/settingconfig
+    - title: Setting Types
+      url: /datawedge/3-1/settingtypes
+    - title: Device Staging
+      url: /datawedge/3-1/stageclient
+    - icon: fa fa-search
+      url: /datawedge/3-1/search
 product: DataWedge
 productversion: '3.1'
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-

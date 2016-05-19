@@ -6,7 +6,7 @@ order: 16
 mx: "5.0"
 parm:
   pivotal: No
-  name: VendorSpecific1State
+  name: VendorSpecific2State
   type: list
   list:
     - code: 0

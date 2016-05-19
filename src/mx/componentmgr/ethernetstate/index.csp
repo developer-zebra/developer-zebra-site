@@ -7,7 +7,7 @@ mx: "4.4"
 osx: "4.4"
 parm:
   pivotal: No
-  name: EthernetUsage
+  name: EthernetState
   type: list
   list:
     - code: 0

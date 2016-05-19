@@ -131,6 +131,10 @@ csps:
     url: /mx/powermgr
     csp: powermgr
   - type: section
+    title: Remote Scanner Manager
+    url: /mx/remotescannermgr
+    csp: remotescannermgr
+  - type: section
     title: Scan Mode Manager
     url: /mx/scanmodemgr
     csp: scanmodemgr

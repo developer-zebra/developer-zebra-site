@@ -3,24 +3,23 @@ csp: wifi
 title: Use Proxy
 type: parm
 order: 46
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: Yes
-  the "Use DHCP" box is not checked
   name: UseProxy
   type: list
   list:
     - code: 0
       name: None
-      sincemx: 5.0
+      mx: "5.0"
       description: Since MX 5.0 the use of a code over a boolean value was implemented. This value was unaffected.
     - code: 1
       name: Manual
-      sincemx: 5.0
+      mx: "5.0"
       description: Since MX 5.0 the use of a code over a boolean was implemented. This value indicates a Manual Proxy.
     - code: 3
       name: Proxy Auto-Config
-      sincemx: 5.0
+      mx: "5.0"
       description: Automatically use a proxy. This value was instroduced in MX 5.0.
 ---
 

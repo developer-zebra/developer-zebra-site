@@ -6,23 +6,23 @@ content-items:
   - type: section
     level: 4
     title: Introduction
-    text: For DataWedge first-timers, this page provides a quick overview of how DataWedge works and what it can do for any app.
+    text: First time using DataWedge? Go here for a quick overview of how DataWedge works and what it can do for any app.
     url: /datawedge/3-1/guide/about
   - type: section
     level: 4
     title: Profiles
-    text: Profiles and Plug-ins form the basis of all DataWedge functionality. This guide is for anyone that needs to create or modify Profiles or Plug-ins. 
+    text: Use this guide for help creating or modifying Profiles or Plug-ins, which are the basis of all DataWedge functionality. 
     url: /datawedge/3-1/guide/setup
   - type: section
     level: 4
     title: Decoders
-    text: DataWedge supports all major decoders, and many are enabled by default. This guide shows how to enable, disable and customize them. 
-    url: /datawedge/3-1/guide/settings
+    text: This guide shows how to enable and disable Decoders and set custom parameters for maximum scanning accuracy and efficiency. 
+    url: /datawedge/3-1/guide/decoders
   - type: section
     level: 4
-    title: Special Features
-    text: A guide to the advanced features of DataWedge 
-    url: /datawedge/3-1/guide/features
+    title: Advanced Settings
+    text: A guide to Advanced Data Formatting, Settings Import/Export, Mass Deployment and other advanced DataWedge settings and options. 
+    url: /datawedge/3-1/guide/advanced
 product: DataWedge
 productversion: '3.1'
 ---

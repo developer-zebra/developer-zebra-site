@@ -6,21 +6,7 @@ productversion: '3.1'
 ---
 
 ## Decoders
-
-Intro to decoders. 
-
-Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders.
-
-Touch Decoders. The Barcode input screen appears. A check in the checkbox indicates that the decoder is enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
-<h4 id="_decoders">Decoders</h4>
-<div class="paragraph"><p>Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary
-decoders.</p></div>
-<div class="paragraph"><p>Touch <strong>Decoders</strong>. The <strong>Barcode input</strong> screen appears. A check in the checkbox indicates that the decoder is
-enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The
-supported decoders are:</p></div>
-
-### Decoders
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default (*). To help improve scanning performance, individual symbologies can be enabled and disabled as needed for a specific app or usage profile. To modify decoder parameters, see Decoder Paramaters section following table. 
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default as indicated by an (*) in the table below. To help improve scanning performance, individual symbologies can be enabled and disabled as needed for a specific app or usage profile. To modify decoder parameters, see Decoder Paramaters section following table. 
 
 <div class="tableblock">
 <table rules="none"
@@ -106,6 +92,21 @@ cellspacing="0" cellpadding="4">
 </table>
 </div>
 &#42; _Enabled by default_
+
+
+Intro to decoders. 
+
+Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders.
+
+Touch Decoders. The Barcode input screen appears. A check in the checkbox indicates that the decoder is enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
+<h4 id="_decoders">Decoders</h4>
+<div class="paragraph"><p>Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary
+decoders.</p></div>
+<div class="paragraph"><p>Touch <strong>Decoders</strong>. The <strong>Barcode input</strong> screen appears. A check in the checkbox indicates that the decoder is
+enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The
+supported decoders are:</p></div>
+
+### Decoders
 
 ### Decoder Params
 

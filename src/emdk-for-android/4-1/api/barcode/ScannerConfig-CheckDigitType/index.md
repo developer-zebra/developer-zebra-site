@@ -3,7 +3,7 @@ title: ScannerConfig.CheckDigitType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Verify data integrity.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	CheckDigitType.NO;
-	
 
 
 **Values:**
@@ -30,15 +28,4 @@ Verify data integrity.
 * **OPCC** -Select to check the integrity of all Interleaved 2 of 5 symbols to
  verify the data complies with either the Optical Product Code Council
  (OPCC) check digit algorithm.
-
-
-
-
-
-
-
-
-
-
-
 

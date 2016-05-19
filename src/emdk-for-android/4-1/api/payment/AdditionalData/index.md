@@ -3,7 +3,7 @@ title: AdditionalData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -40,15 +40,4 @@ Returns the surcharge value is accepted by the user or not..
 **Returns:**
 
 boolean
-
-
-
-
-
-
-
-
-
-
-
 

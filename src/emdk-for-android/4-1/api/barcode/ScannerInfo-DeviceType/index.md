@@ -3,7 +3,7 @@ title: ScannerInfo.DeviceType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ List of supported scanner device types.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	DeviceType.LASER;
-	
 
 
 **Values:**
@@ -28,15 +26,4 @@ List of supported scanner device types.
 * **LASER** -The scanner device class is laser.
 
 * **UNDEFINED** -The scanner device class is not defined.
-
-
-
-
-
-
-
-
-
-
-
 

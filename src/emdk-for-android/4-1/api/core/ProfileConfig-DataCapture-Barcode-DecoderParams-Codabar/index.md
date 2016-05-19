@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Codabar
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Codabar configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Codabar codabar = profileConfig.Barcode.DecoderParams.Codabar;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Use to set decode lengths (default - 6).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = codabar.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Use to set decode lengths (default - 55).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = codabar.length2;
-	
 
 
 **Type:**
@@ -66,10 +60,8 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -86,10 +78,8 @@ Enable this parameter to strip the start and stop characters and insert a space 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.clsi_editing = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -106,24 +96,11 @@ Enable this parameter to strip the start and stop characters from a decoded Coda
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	codabar.notis_editing = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

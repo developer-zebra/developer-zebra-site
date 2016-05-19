@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Discrete 2 of 5 configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Discrete_2of5 discrete_2of5 = profileConfig.dataCapture.barcode.decoderParams.discrete_2of5;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Used to set decode lengths (default - 0).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = discrete_2of5.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Used to set decode lengths (default - 14).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = discrete_2of5.length2;
-	
 
 
 **Type:**
@@ -66,24 +60,11 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	discrete_2of5.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

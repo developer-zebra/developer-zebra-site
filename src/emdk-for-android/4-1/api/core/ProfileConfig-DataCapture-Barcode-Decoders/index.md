@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.Decoders
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,11 +13,9 @@ The Decoders class provides access to enable or disable decoder barcode symbolog
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Decoders decoders = barcode.decoders;
 	decoders.upca = ENABLED_STATE.TRUE;
-	
 
 
 ##Public Fields
@@ -34,7 +32,7 @@ Sets the Enabled State of Decoder UPCA.
 	:::java
 	
 	decoders.upca = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -53,7 +51,7 @@ Sets the Enabled State of Decoder UPCE0.
 	:::java
 	
 	decoders.upce0 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -72,7 +70,7 @@ Sets the Enabled State of Decoder EAN-13.
 	:::java
 	
 	decoders.ean13 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -91,7 +89,7 @@ Sets the Enabled State of Decoder EAN-8.
 	:::java
 	
 	decoders.ean8 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -110,7 +108,7 @@ Sets the Enabled State of Decoder Code 128.
 	:::java
 	
 	decoders.code128 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -129,7 +127,7 @@ Sets the Enabled State of Decoder Code 39.
 	:::java
 	
 	decoders.code39 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -147,7 +145,7 @@ Use enum [ ProfileConfig.ENABLED_STATE](../ProfileConfig-ENABLED_STATE).
 	:::java
 	
 	decoders.i2of5 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -166,7 +164,7 @@ Sets the Enabled State of Decoder Interleaved 2 of 5.
 	:::java
 	
 	decoders.gs1_databar = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -185,7 +183,7 @@ Sets the Enabled State of Decoder GS1 DataBar Limited.
 	:::java
 	
 	decoders.gs1_databar_lim = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -204,7 +202,7 @@ Sets the Enabled State of Decoder GS1 DataBar Expanded.
 	:::java
 	
 	decoders.gs1_databar_exp = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -223,7 +221,7 @@ Sets the Enabled State of Decoder Data Matrix.
 	:::java
 	
 	decoders.datamatrix = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -242,7 +240,7 @@ Sets the Enabled State of Decoder QR Code.
 	:::java
 	
 	decoders.qrcode = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -261,7 +259,7 @@ Sets the Enabled State of Decoder PDF417.
 	:::java
 	
 	decoders.pdf417 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -280,7 +278,7 @@ Sets the Enabled State of Decoder Composite AB.
 	:::java
 	
 	decoders.composite_ab = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -299,7 +297,7 @@ Sets the Enabled State of Decoder Composite C.
 	:::java
 	
 	decoders.composite_c = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -318,7 +316,7 @@ Sets the Enabled State of Decoder Micro QR.
 	:::java
 	
 	decoders.microqr = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -337,7 +335,7 @@ Sets the Enabled State of Decoder Aztec.
 	:::java
 	
 	decoders.aztec = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -356,7 +354,7 @@ Sets the Enabled State of Decoder Maxicode.
 	:::java
 	
 	decoders.maxicode = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -375,7 +373,7 @@ Sets the Enabled State of Decoder Micro PDF.
 	:::java
 	
 	decoders.micropdf = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -394,7 +392,7 @@ Sets the Enabled State of Decoder US Postnet.
 	:::java
 	
 	decoders.uspostnet = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -413,7 +411,7 @@ Sets the Enabled State of Decoder US Planet.
 	:::java
 	
 	decoders.usplanet = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -432,7 +430,7 @@ Sets the Enabled State of Decoder UK Postal.
 	:::java
 	
 	decoders.uk_postal = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -451,7 +449,7 @@ Sets the Enabled State of Decoder Japan Postal.
 	:::java
 	
 	decoders.japanese_postal = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -470,7 +468,7 @@ Sets the Enabled State of Decoder Australian Postal.
 	:::java
 	
 	decoders.australian_postal = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -489,7 +487,7 @@ Sets the Enabled State of Decoder Canadian Postal.
 	:::java
 	
 	decoders.canadian_postal = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -508,7 +506,7 @@ Sets the Enabled State of Decoder Dutch Postal.
 	:::java
 	
 	decoders.dutch_postal = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -527,7 +525,7 @@ Sets the Enabled State of Decoder US4State.
 	:::java
 	
 	decoders.us4state = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -546,7 +544,7 @@ Sets the Enabled State of Decoder US4State FICS.
 	:::java
 	
 	decoders.us4state_fics = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -565,7 +563,7 @@ Sets the Enabled State of Decoder Codabar.
 	:::java
 	
 	decoders.codabar = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -584,7 +582,7 @@ Sets the Enabled State of Decoder MSI.
 	:::java
 	
 	decoders.msi = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -603,7 +601,7 @@ Sets the Enabled State of Decoder Code 93.
 	:::java
 	
 	decoders.code93 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -622,7 +620,7 @@ Sets the Enabled State of Decoder Trioptic 39.
 	:::java
 	
 	decoders.trioptic39 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -641,7 +639,7 @@ Sets the Enabled State of Decoder Discrete 2 of 5.
 	:::java
 	
 	decoders.d2of5 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -660,7 +658,7 @@ Sets the Enabled State of Decoder Chinese 2 of 5.
 	:::java
 	
 	decoders.chinese_2of5 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -679,7 +677,7 @@ Sets the Enabled State of Decoder Korean 3 of 5.
 	:::java
 	
 	decoders.korean_3of5 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -698,7 +696,7 @@ Sets the Enabled State of Decoder Code11.
 	:::java
 	
 	decoders.code11 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -717,7 +715,7 @@ Sets the Enabled State of Decoder TLC 39.
 	:::java
 	
 	decoders.tlc39 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -736,7 +734,7 @@ Sets the Enabled State of Decoder Signature.
 	:::java
 	
 	decoders.signature = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -755,7 +753,7 @@ Sets the Enabled State of Decoder Web Code.
 	:::java
 	
 	decoders.webcode = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -774,7 +772,7 @@ Sets the Enabled State of Decoder Matrix 2 of 5.
 	:::java
 	
 	decoders.matrix_2of5 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
@@ -793,21 +791,10 @@ Sets the Enabled State of Decoder UPCE1.
 	:::java
 	
 	decoders.upce1 = ENABLED_STATE.DEFAULT;
-	
+	}
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Barcode configuration settings
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Barcode barcode = profileConfig.dataCapture.barcode;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Gets and Sets scanner enabled state  [ ProfileConfig.ENABLED_STATE](../ProfileCo
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.scanner_input_enabled = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Gets and Sets scanner selection [ ProfileConfig.DEVICETYPES](../ProfileConfig-DE
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.scannerSelection = DEVICETYPES.DEFAULT;
-	
 
 
 **Type:**
@@ -65,10 +59,8 @@ Gets and Sets Decoders configuration object [ ProfileConfig.DataCapture.Barcode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.decoders.codabar = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -83,10 +75,8 @@ Gets and Sets DecoderParams configuration object [ ProfileConfig.DataCapture.Bar
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.decoderParams.upca.preamble = PREAMBLE.SYS_CHAR;
-	
 
 
 **Type:**
@@ -101,10 +91,8 @@ Gets and Sets ReaderParams configuration object [ ProfileConfig.DataCapture.Barc
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.readerParams.illumination_mode = ILLUMINATION_MODE.DEFAULT;
-	
 
 
 **Type:**
@@ -119,10 +107,8 @@ Gets and Sets ScanParams configuration object [ ProfileConfig.DataCapture.Barcod
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.ScanParams.decode_haptic_feedback = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -137,24 +123,11 @@ Gets and Sets UpcEanParams configuration object [ ProfileConfig.DataCapture.Barc
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	barcode.upcEanParams.linear_decode = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.Barcode.UpcEanParams
-
-
-
-
-
-
-
-
-
-
-
 

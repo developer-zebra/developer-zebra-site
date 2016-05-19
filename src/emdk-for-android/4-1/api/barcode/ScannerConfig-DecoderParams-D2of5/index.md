@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.D2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -20,10 +20,8 @@ Used to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	d2of5.length1 = 0;
-	
 
 
 **Type:**
@@ -38,10 +36,8 @@ Used to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	d2of5.length2 = 14;
-	
 
 
 **Type:**
@@ -56,24 +52,11 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	d2of5.redundancy = true;
-	
 
 
 **Type:**
 
 boolean
-
-
-
-
-
-
-
-
-
-
-
 

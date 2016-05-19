@@ -3,7 +3,7 @@ title: ProfileConfig.CODE_ID_TYPE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -15,10 +15,8 @@ A Code ID character identifies the code type of a scanned bar code.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	CODE_ID_TYPE.DEFAULT;
-	
 
 
 **Values:**
@@ -30,15 +28,4 @@ A Code ID character identifies the code type of a scanned bar code.
 * **AIM** -A standards based three character prefix.
 
 * **SYMBOL** -A Symbol defined single character prefix.
-
-
-
-
-
-
-
-
-
-
-
 

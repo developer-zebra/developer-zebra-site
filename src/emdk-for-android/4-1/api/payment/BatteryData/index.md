@@ -3,7 +3,7 @@ title: BatteryData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -29,15 +29,4 @@ Returns the battery level retrieved by the battery related API.
 **Returns:**
 
 int
-
-
-
-
-
-
-
-
-
-
-
 

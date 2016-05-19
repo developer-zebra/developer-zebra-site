@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.I2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -20,10 +20,8 @@ Use to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.length1 = 14;
-	
 
 
 **Type:**
@@ -38,10 +36,8 @@ Use to set decode lengths. The valid range is 0 to 55.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.length2 = 10;
-	
 
 
 **Type:**
@@ -56,10 +52,8 @@ Sets the reader to read the bar code twice before accepting data.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.redundancy = true;
-	
 
 
 **Type:**
@@ -75,10 +69,8 @@ The check digit type to verify. Use enum
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.verifyCheckDigit = CHECK_DIGIT_TYPE.NO;
-	
 
 
 **Type:**
@@ -93,10 +85,8 @@ Transmit Interleaved 2 of 5 data with or without the check digit.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.reportCheckDigit = true;
-	
 
 
 **Type:**
@@ -114,10 +104,8 @@ Convert 14-character Interleaved 2 of 5 bar codes to EAN-13, and
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.convertToEan13 = true;
-	
 
 
 **Type:**
@@ -134,24 +122,11 @@ Specifies security level
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	i2of5.securityLevel = SecurityLevel.LEVEL_1;
-	
 
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code93
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Code93 configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Code93 code93 = profileConfig.dataCapture.barcode.decoderParams.code93;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Use to set decode lengths (default - 0).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = code93.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Use to set decode lengths (default - 55).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = code93.length2;
-	
 
 
 **Type:**
@@ -66,24 +60,11 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code93.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

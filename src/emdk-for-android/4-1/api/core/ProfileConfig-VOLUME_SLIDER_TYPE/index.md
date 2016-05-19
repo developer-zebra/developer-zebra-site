@@ -3,7 +3,7 @@ title: ProfileConfig.VOLUME_SLIDER_TYPE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Defines the notification type for a good decode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	VOLUME_SLIDER_TYPE.DEFAULT;
-	
 
 
 **Values:**
@@ -28,15 +26,4 @@ Defines the notification type for a good decode.
 * **MUSIC_AND_MEDIA** -Music and Media.
 
 * **ALARM** -Alarms.
-
-
-
-
-
-
-
-
-
-
-
 

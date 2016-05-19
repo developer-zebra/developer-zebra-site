@@ -3,7 +3,7 @@ title: ScanDataCollection
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -34,10 +34,8 @@ This method used to obtain the scanned result.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ScannerResults results = scanDataCollection.getResult();
-	
 
 
 **Returns:**
@@ -54,24 +52,11 @@ This method is used to obtain the scanned data list.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ArrayList<ScanData> scanDataList = scanDataCollection.getScanData()
-	
 
 
 **Returns:**
 
 java.util.ArrayList - Returns the collection of scan data.
-
-
-
-
-
-
-
-
-
-
-
 

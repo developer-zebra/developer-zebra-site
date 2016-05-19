@@ -3,7 +3,7 @@ title: SimulScanStatusData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ SimulScanStatusData class provides access to reader status.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	SimulScanStatusData.getState();
-	
 
 
 ##Constructors
@@ -47,15 +45,4 @@ Returns the friendly name of the Reader from which the SimulScanStatusData
 **Returns:**
 
 java.lang.String - String
-
-
-
-
-
-
-
-
-
-
-
 

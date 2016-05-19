@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.ScanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds scanning configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ScanParams scanParams = profileConfig.dataCapture.barcode.scanParams;
-	
 
 
 ##Public Fields
@@ -31,10 +29,8 @@ A Code ID character identifies the code type of a scanned bar code.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.code_id_type = CODE_ID_TYPE.DEFAULT;
-	
 
 
 **Type:**
@@ -50,10 +46,8 @@ Defines the notification type for a good decode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.volume_slider_type = VOLUME_SLIDER_TYPE.DEFAULT;
-	
 
 
 **Type:**
@@ -72,10 +66,8 @@ Select an audio tone to sound upon a good decode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String audioFeedback = scanParams.decode_audio_feedback_uri;
-	
 
 
 **Type:**
@@ -90,10 +82,8 @@ Enable the device to vibrate upon a good decode (default - enabled). Use enum [ 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.decode_haptic_feedback = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -108,10 +98,8 @@ Time for which Good Decode LED Notification Runs in milliseconds.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int ledTimer = scanParams.good_decode_led_timer;
-	
 
 
 **Type:**
@@ -126,10 +114,8 @@ Enable the device to blink LED upon a good decode (default - disabled). Use enum
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.decoding_led_feedback = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -144,10 +130,8 @@ Bluetooth disconnect on exit. Use enum [ ProfileConfig.ENABLED_STATE](../Profile
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.bt_disconnect_on_exit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -164,10 +148,8 @@ If a bluetooth scanner associated application is opened, Bluetooth
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.connection_idle_time = 500;
-	
 
 
 **Type:**
@@ -184,10 +166,8 @@ If this value is set to true, the Bluetooth Pairing Utility
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.display_bt_address_barcode = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -203,10 +183,8 @@ Timout in seconds that enable method will block before returning
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	scanParams.establish_connection_time = 50;
-	
 
 
 **Type:**
@@ -221,24 +199,11 @@ Data Capture LED ID
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int led = scanParams.datacapture_led_id;
-	
 
 
 **Type:**
 
 int
-
-
-
-
-
-
-
-
-
-
-
 

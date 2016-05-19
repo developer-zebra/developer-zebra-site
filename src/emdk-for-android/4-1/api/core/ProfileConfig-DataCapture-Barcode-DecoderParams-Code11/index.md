@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code11
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Code 11 configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Code11 code11 = profileConfig.dataCapture.barcode.decoderParams.code11;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Use to set decode lengths (default - 4).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = code11.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Use to set decode lengths (default - 55).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = code11.length2;
-	
 
 
 **Type:**
@@ -66,10 +60,8 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code11.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -86,10 +78,8 @@ Check the integrity of all Code 11 symbols to verify that the data complies with
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code11.verify_check_digit = VERIFY_CHECK_DIGIT.DEFAULT;
-	
 
 
 **Type:**
@@ -105,24 +95,11 @@ Transmit Code 11 data with or without the check digit (default - disabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code11.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

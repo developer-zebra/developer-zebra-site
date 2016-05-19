@@ -3,7 +3,7 @@ title: ScanAndPairConfig.NotificationType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -63,15 +63,4 @@ This enum is used by the ScanAndPair APIs to set the notification type.
  an audible alert when specific operations are performed.
 
 * **NONE** -Disable notification. Do not raise notification for any type of operations.
-
-
-
-
-
-
-
-
-
-
-
 

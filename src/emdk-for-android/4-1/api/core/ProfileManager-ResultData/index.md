@@ -3,7 +3,7 @@ title: ProfileManager.ResultData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -70,15 +70,4 @@ Returns the profile data as ProfileConfig object.
 **Returns:**
 
 com.symbol.emdk.ProfileConfig
-
-
-
-
-
-
-
-
-
-
-
 

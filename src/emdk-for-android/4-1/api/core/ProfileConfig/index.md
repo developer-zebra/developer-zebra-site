@@ -3,7 +3,7 @@ title: ProfileConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Class for dealing with profile data
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ProfileConfig profileConfig = new ProfileConfig();
-	
 
 
 ##Constructors
@@ -29,10 +27,8 @@ Creates a new instance of ProfileConfig.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ProfileConfig profileConfig = new ProfileConfig();
-	
 
 
 ##Public Fields
@@ -45,10 +41,8 @@ Gets and Sets the profile name.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String profileName =  profileConfig.profileName;
-	
 
 
 **Type:**
@@ -63,10 +57,8 @@ Gets and Sets the profiles modified date string.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String profileDate = profileConfig.modifiedDate;
-	
 
 
 **Type:**
@@ -81,10 +73,8 @@ Gets and Sets the profiles DataCapture object [ ProfileConfig.dataCapture](../Pr
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	DataCapture dataCapture = profileConfig.dataCapture;
-	
 
 
 **Type:**
@@ -100,24 +90,11 @@ Gets and Sets the activity selection for the profiles [ ProfileConfig.activitySe
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ActivitySelection activitySelection = profileConfig.activitySelection;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ActivitySelection
-
-
-
-
-
-
-
-
-
-
-
 

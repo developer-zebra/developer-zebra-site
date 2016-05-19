@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.MSR
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds MSR configuration settings
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	MSR msr = profileConfig.dataCapture.msr;
-	
 
 
 ##Constructors
@@ -35,24 +33,11 @@ Gets and Sets MSR enabled configuration enum [ ProfileConfig.ENABLED_STATE](../P
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	msr.msr_input_enabled = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: EMDKManager.FEATURE_TYPE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ This lists all the features exposed by the EMDK.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	FEATURE_TYPE.PROFILE
-	
 
 
 **Values:**
@@ -39,14 +37,5 @@ This lists all the features exposed by the EMDK.
 
 * **SERIALCOMM** -EMDK feature type for Serial Communication
 
-
-
-
-
-
-
-
-
-
-
+* **NOTIFICATION** -EMDK feature type for Notification
 

@@ -3,7 +3,7 @@ title: MifareSam
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -15,8 +15,7 @@ Provides access to MIFARE SAM properties and I/O operations on an SAM object.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	
 	
 	public class MainActivity extends Activity implements EMDKListener {
@@ -75,7 +74,6 @@ Provides access to MIFARE SAM properties and I/O operations on an SAM object.
 	}
 	
 	}
-	
 	
 
 
@@ -174,15 +172,4 @@ The exception will be thrown if it fails to close the
 **Type:**
 
 java.lang.String
-
-
-
-
-
-
-
-
-
-
-
 

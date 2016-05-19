@@ -3,7 +3,7 @@ title: SimulScanReaderInfo.DeviceType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ List of supported scanner device type.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	SimulScanDeviceType.CAMERA;
-	
 
 
 **Values:**
@@ -26,15 +24,4 @@ List of supported scanner device type.
 * **IMAGER** -The scanner device class is imager.
 
 * **UNDEFINED** -The scanner device class is not defined.
-
-
-
-
-
-
-
-
-
-
-
 

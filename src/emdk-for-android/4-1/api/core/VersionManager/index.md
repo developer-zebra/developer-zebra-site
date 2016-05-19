@@ -3,7 +3,7 @@ title: VersionManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Version information can be captured from this class.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	versionManager = (VersionManager) EMDKManager.getInstance(EMDKManager.FEATURE_TYPE.VERSION);
-	
 
 
 ##Public Methods
@@ -31,10 +29,8 @@ Gets the version of the specified [ VersionManager.VERSION_TYPE](../VersionManag
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	versionManager.getVersion(VERSION_TYPE.EMDK)
-	
 
 
 **Parameters:**
@@ -44,15 +40,4 @@ Gets the version of the specified [ VersionManager.VERSION_TYPE](../VersionManag
 **Returns:**
 
 java.lang.String - Version number
-
-
-
-
-
-
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.UpcEanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -15,10 +15,8 @@ The UPCEAN class provides access to parameters that are available for the UPC/EA
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	config.upcEanParams.booklandCode = true;
-	
 
 
 ##Public Fields
@@ -33,10 +31,8 @@ Flag to enable Bookland code decoding.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.booklandCode = true;
-	
 
 
 **Type:**
@@ -52,10 +48,8 @@ Specifies the bookland format to use. Use enum
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.booklandFormat = BooklandFormat.ISBN_10;
-	
 
 
 **Type:**
@@ -72,10 +66,8 @@ If this is set it converts DataBar bar codes to UPC/EAN format.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.convertDataBarToUPCEAN = true;
-	
 
 
 **Type:**
@@ -91,10 +83,8 @@ Enables Coupon code decoding. Note that in order to successfully
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.couponCode = true;
-	
 
 
 **Type:**
@@ -117,10 +107,8 @@ Flag to enable random weight check digit verification.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.randomWeightCheckDigit = true;
-	
 
 
 **Type:**
@@ -140,10 +128,8 @@ The scanner of fers four levels of decode security for UPC/EAN
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.securityLevel = SecurityLevel.LEVEL_0;
-	
 
 
 **Type:**
@@ -158,10 +144,8 @@ Flag to enable length 2 supplementals.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.supplemental2 = false;
-	
 
 
 **Type:**
@@ -176,10 +160,8 @@ Flag to enable length 5 supplementals.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.supplemental5 = false;
-	
 
 
 **Type:**
@@ -194,10 +176,8 @@ The supplemental mode. Use enum [ ScannerConfig.SupplementalMode](../ScannerConf
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.supplementalMode = SupplementalMode.S_378_379;
-	
 
 
 **Type:**
@@ -217,10 +197,8 @@ Retry count for auto-discriminating for supplementals. Possible
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.supplementalRetries = 10;
-	
 
 
 **Type:**
@@ -243,10 +221,8 @@ Used to differentiate between old coupon (UPC/EAN and Code128)
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	upcEan.couponReport = CouponReport.OLD;
-	
 
 
 **Type:**
@@ -262,15 +238,4 @@ Enable this parameter to add five leading zeros to decoded
 **Type:**
 
 boolean
-
-
-
-
-
-
-
-
-
-
-
 

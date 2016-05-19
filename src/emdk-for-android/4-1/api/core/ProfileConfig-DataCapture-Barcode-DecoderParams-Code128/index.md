@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code128
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Code128 configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Code128 code128 = profileConfig.dataCapture.barcode.decoderParams.code128;
-	
 
 
 ##Public Fields
@@ -29,10 +27,8 @@ Use to set decode lengths (default - 0).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length1 = code128.length1;
-	
 
 
 **Type:**
@@ -47,10 +43,8 @@ Use to set decode lengths (default - 55).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	int length2 = code128.length2;
-	
 
 
 **Type:**
@@ -66,10 +60,8 @@ Sets the reader to read the bar code twice before accepting data (default - disa
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.redundancy = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -85,10 +77,8 @@ Flag to enable other 128 sub types (besides GS1-128 and ISBT -128).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.enable_plain = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -104,10 +94,8 @@ Set the EAN128 subtype. (default - enabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.enable_ean128 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -123,10 +111,8 @@ Set the ISBT128 subtype. (default - enabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.enable_isbt128 = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -142,10 +128,8 @@ Select an option for concatenating pairs of ISBT code types.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.isbt128_concat_mode = ISBT128_CONTACT_MODE.DEFAULT;
-	
 
 
 **Type:**
@@ -163,10 +147,8 @@ The ISBT specification includes a table that lists several types of ISBT bar cod
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.check_isbt_table = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -185,24 +167,11 @@ The scanner of fers four levels of decode security for Code 128 bar codes.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	code128.security_level = SECURITY_LEVEL.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
-
-
-
-
-
-
-
-
-
-
-
 

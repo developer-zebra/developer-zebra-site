@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds Basic Data Formatting configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	BasicDataFormatting basicDataFormatting = profileConfig.dataCapture.dataDelivery.intent.basicDataFormatting;
-	
 
 
 ##Public Fields
@@ -30,10 +28,8 @@ Enables or disables Basic Data Formatting (default - enabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	basicDataFormatting.bdf_enabled = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -48,10 +44,8 @@ Add characters to the beginning of the data when sent.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String prefix = basicDataFormatting.bdf_prefix;
-	
 
 
 **Type:**
@@ -66,10 +60,8 @@ Add characters to the end of the data when sent.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String suffix = basicDataFormatting.bdf_suffix;
-	
 
 
 **Type:**
@@ -86,10 +78,8 @@ Set to transfer the captured data to the foreground application. Disabling this 
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	basicDataFormatting.bdf_send_data = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -105,10 +95,8 @@ Set to send the data in hexadecimal format(default - disabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	basicDataFormatting.bdf_send_hex = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -124,10 +112,8 @@ Set to append a tab character to the end of the processed data(default - disable
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	basicDataFormatting.bdf_send_tab = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
@@ -143,24 +129,11 @@ Set to append an Enter character to the end of the processed data(default - disa
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	basicDataFormatting.bdf_send_enter = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

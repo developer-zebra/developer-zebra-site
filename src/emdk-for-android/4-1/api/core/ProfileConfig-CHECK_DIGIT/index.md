@@ -3,7 +3,7 @@ title: ProfileConfig.CHECK_DIGIT
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -15,10 +15,8 @@ The number of check digits to be verified.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	CHECK_DIGIT.DEFAULT;
-	
 
 
 **Values:**
@@ -28,15 +26,4 @@ The number of check digits to be verified.
 * **ONE** -Verify one check digit.
 
 * **TWO** -Verify two check digits.
-
-
-
-
-
-
-
-
-
-
-
 

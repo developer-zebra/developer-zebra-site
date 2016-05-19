@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.Upca
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -27,15 +27,4 @@ Controls the preamble applied to the bar code.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.Preamble
-
-
-
-
-
-
-
-
-
-
-
 

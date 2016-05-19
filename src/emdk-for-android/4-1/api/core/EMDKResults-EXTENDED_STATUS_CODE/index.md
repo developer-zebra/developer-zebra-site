@@ -3,7 +3,7 @@ title: EMDKResults.EXTENDED_STATUS_CODE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,17 +13,15 @@ Defines all the extended status codes the library returns.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	results.extendedStatusInfo.extendedStatusCode;
-	
 
 
 **Values:**
 
 * **NONE** -There is no extended status code.
 
-* **PROFILE_NOT_FOUND_IN_CONFIG** -Profile name not found in current EMDKConfig.xml. 
+* **PROFILE_NOT_FOUND_IN_CONFIG** -Profile name not found in current EMDKConfig.xml.
  <ul>
  <li>Returned in: com.symbol.emdk.emdkservice.ProfileService.setProfile(String, String) when changing profile using Name Value pair, Document or ProfileConfig or when switching or activating profile</li>
  </ul>
@@ -45,7 +43,7 @@ Defines all the extended status codes the library returns.
  </ul>
  </br>
 
-* **PROFILE_NOT_FOUND_IN_EXTRADATA** -The profile not found in extraData.
+* **PROFILE_NOT_FOUND_IN_EXTRADATA** -The profile not found in extraData.. 
  <ul>
  <li>Returned in: com.symbol.emdk.emdkservice.ProfileService.setProfile(String, String) when merging profiles.</li>
  </ul>
@@ -59,7 +57,8 @@ Defines all the extended status codes the library returns.
  </ul>
  </br>
 
-* **FEATURE_NOT_UNIQUE_IN_EXTRADATA** -The Feature and Feature name combination is not unique in provided extraData. 
+* **FEATURE_NOT_UNIQUE_IN_EXTRADATA** -The Feature and Feature name combination is not unique in provided 
+extraData. 
  <ul>
  <li>Returned in: com.symbol.emdk.emdkservice.ProfileService.setProfile(String, String) when feature merging</li>
  </ul>
@@ -108,15 +107,4 @@ profileName is not in that format.
  </br>
 
 * **APP_NOT_ALLOWED_TO_SUBMIT_XML** -Permission error. Application is not allowed to submit xml.
-
-
-
-
-
-
-
-
-
-
-
 

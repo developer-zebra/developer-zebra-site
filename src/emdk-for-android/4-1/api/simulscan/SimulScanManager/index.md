@@ -3,7 +3,7 @@ title: SimulScanManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,8 +13,7 @@ This is the primary object to access the SimulScan feature.
 
 **Example Usage:**
 	
-	:::java
-	public class MainActivity extends Activity implements EMDKListener,
+	:::java	public class MainActivity extends Activity implements EMDKListener,
 	SimulScanDataEventListerner, SimulScanStatusEventListerner {
 	protected void onCreate(Bundle savedInstanceState) {
 	//..
@@ -45,7 +44,6 @@ This is the primary object to access the SimulScan feature.
 	EMDKManager.release(FEATURE_TYPE.SimulScan);
 	
 	}
-	
 
 
 ##Public Methods
@@ -99,15 +97,4 @@ com.symbol.emdk.simulscan.SimulScanReader
 com.symbol.emdk.simulscan.SimulScanException
 
 Exception will be throw if any error occurs
-
-
-
-
-
-
-
-
-
-
-
 

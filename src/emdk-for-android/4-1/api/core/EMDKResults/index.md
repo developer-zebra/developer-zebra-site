@@ -3,7 +3,7 @@ title: EMDKResults
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,12 +13,10 @@ Class for holding result data.<br><br>
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ProfileConfig profileConfigObj = new ProfileConfig();
 	ProfileManager profileManager = (ProfileManager) EMDKManager.getInstance(getApplicationContext(), EMDKManager.FEATURE_TYPE.PROFILE
 	EMDKResults results = profileManager.processProfile("Profile Name", ProfileManager.PROFILE_FLAG.GET, profileConfigObj);
-	
 
 
 ##Public Methods
@@ -32,7 +30,7 @@ Return the extended status information string.
 
 **Returns:**
 
-java.lang.String - Extended status information String.
+java.lang.String
 
 ### getTotalFeaturesCount
 
@@ -68,10 +66,8 @@ Gets status results from process profile as xml document.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	Document document = results.getStatusDocument();
-	
 
 
 **Returns:**
@@ -88,10 +84,8 @@ Gets status results from process profile as xml string.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	String xml = results.getStatusString();
-	
 
 
 **Returns:**
@@ -108,10 +102,8 @@ Gets status code result from process profile as enum value of type [ EMDKResults
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	STATUS_CODE statusCode = results.extendedErrorInfo.statusCodeEx;
-	
 
 
 **Type:**
@@ -126,24 +118,11 @@ Gets status code result from process profile as enum value of type [ EMDKResults
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	STATUS_CODE statusCode = results.statusCode;
-	
 
 
 **Type:**
 
 com.symbol.emdk.EMDKResults.STATUS_CODE
-
-
-
-
-
-
-
-
-
-
-
 

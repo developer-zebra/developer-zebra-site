@@ -3,7 +3,7 @@ title: ProfileConfig.ENABLED_STATE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Enable states
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ENABLED_STATE.FALSE;
-	
 
 
 **Values:**
@@ -26,15 +24,4 @@ Enable states
 * **FALSE** -Disabled
 
 * **TRUE** -Enabled
-
-
-
-
-
-
-
-
-
-
-
 

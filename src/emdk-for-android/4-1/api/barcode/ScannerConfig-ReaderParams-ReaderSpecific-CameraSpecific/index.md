@@ -3,7 +3,7 @@ title: ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -28,10 +28,8 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.beamTimer = 1500;
-	
 
 
 **Type:**
@@ -47,10 +45,8 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.linearSecurityLevel = LinearSecurityLevel.ALL_THRICE;
-	
 
 
 **Type:**
@@ -67,10 +63,8 @@ Turns camera illumination on and off.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.cameraSpecific.illuminationMode = IlluminationMode.ON;
-	
 
 
 **Type:**
@@ -86,10 +80,8 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.cameraSpecific.inverse_1d_mode = Inverse1DMode.AUTO;
-	
 
 
 **Type:**
@@ -105,24 +97,11 @@ Configures the Viewfinder modes supported for camera scanning.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	readerParams.cameraSpecific.viewfinder_mode = ViewFinderMode.DISABLED;
-	
 
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ViewFinderMode
-
-
-
-
-
-
-
-
-
-
-
 

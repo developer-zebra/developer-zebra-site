@@ -3,7 +3,7 @@ title: PromptPinMessage.Screen1
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -26,15 +26,4 @@ Message 2 to be displayed on the PINPad.
 **Type:**
 
 java.lang.String
-
-
-
-
-
-
-
-
-
-
-
 

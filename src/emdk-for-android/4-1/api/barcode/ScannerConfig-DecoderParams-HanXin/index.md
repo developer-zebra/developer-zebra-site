@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.HanXin
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -22,24 +22,11 @@ Check the inverse of the HanXin decoder
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	hanXin.hanXinInverse = HanXinInverse.DISABLED;
-	
 
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.HanXinInverse
-
-
-
-
-
-
-
-
-
-
-
 

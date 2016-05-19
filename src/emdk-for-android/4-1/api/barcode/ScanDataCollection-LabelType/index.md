@@ -3,7 +3,7 @@ title: ScanDataCollection.LabelType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ List of label types of the scanner data
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	LABEL_TYPE.CODE39
-	
 
 
 **Values:**
@@ -124,15 +122,4 @@ List of label types of the scanner data
 * **HANXIN** -The HANXIN symbology.
 
 * **UNDEFINED** -The Symbology is unknown or not defined.
-
-
-
-
-
-
-
-
-
-
-
 

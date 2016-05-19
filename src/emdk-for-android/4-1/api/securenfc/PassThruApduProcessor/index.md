@@ -3,7 +3,7 @@ title: PassThruApduProcessor
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -75,6 +75,8 @@ This class is designed for the NFC applications to perform secure communication 
 	
 	public void onClosed() {
 	this.emdkManager.release();
+	}
+	
 	}
 	
 	}
@@ -180,15 +182,4 @@ com.symbol.emdk.securenfc.PassThruApduException
 
 The exception will be thrown if it fails to process the given
              APDU.
-
-
-
-
-
-
-
-
-
-
-
 

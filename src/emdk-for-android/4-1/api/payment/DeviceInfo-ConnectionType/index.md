@@ -3,7 +3,7 @@ title: DeviceInfo.ConnectionType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ List of supported payment connection types.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	ConnectionType.BLUETOOTH;
-	
 
 
 **Values:**
@@ -24,15 +22,4 @@ List of supported payment connection types.
 * **BLUETOOTH** -The payment device is connected via Bluetooth to the mobile device.
 
 * **UNDEFINED** -Connection type is not defined.
-
-
-
-
-
-
-
-
-
-
-
 

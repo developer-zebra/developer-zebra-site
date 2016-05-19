@@ -3,7 +3,7 @@ title: ScannerResults
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -40,6 +40,8 @@ Defines all the error codes the barcode scanning API returns.
 
 * **SCANNER_NOT_ENABLED** -The scanner device is not enabled.
 
+* **SCANNER_NOT_CONNECTED** -The scanner device is not connected.
+
 * **SCANNER_TIMED_OUT** -The timer out error occurred.
 
 * **INVALID_OBJECT** -The object is not valid.
@@ -57,15 +59,4 @@ Defines all the error codes the barcode scanning API returns.
 * **SCANNER_DEINIT_FAILURE** -Scanner de-initialization failed.
 
 * **UNDEFINED** -Error code not defined.
-
-
-
-
-
-
-
-
-
-
-
 

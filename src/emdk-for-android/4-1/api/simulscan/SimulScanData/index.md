@@ -3,7 +3,7 @@ title: SimulScanData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,8 +13,7 @@ The SimulScanData object gives scanning result
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	public void onSimulScanData(SimulScanData simulscanData) {
 	Date timestamp = new Date(simulscanData.getTimestamp());
 	List<SimulScanElement> simulscanDataElements = simulscanData.getElements();
@@ -30,8 +29,6 @@ The SimulScanData object gives scanning result
 	}
 	}
 	}
-	}
-	
 
 
 ##Constructors
@@ -76,15 +73,4 @@ Returns a list of scanned elements.
 **Returns:**
 
 java.util.List - Returns a List object of SimulScanElement objects
-
-
-
-
-
-
-
-
-
-
-
 

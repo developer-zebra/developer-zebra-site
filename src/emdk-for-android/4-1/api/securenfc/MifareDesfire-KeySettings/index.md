@@ -3,7 +3,7 @@ title: MifareDesfire.KeySettings
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -26,15 +26,4 @@ Application key settings
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.AppKeySettings
-
-
-
-
-
-
-
-
-
-
-
 

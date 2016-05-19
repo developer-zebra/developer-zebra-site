@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.CompositeAB
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -21,24 +21,11 @@ Gets and Sets UCC Link Mode using
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	compositeAB.uccLinkMode = UccLinkMode.ALWAYS_LINKED;
-	
 
 
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.UccLinkMode
-
-
-
-
-
-
-
-
-
-
-
 

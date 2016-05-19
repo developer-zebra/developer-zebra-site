@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.USPostnet
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,8 @@ Holds US Postnet configuration settings.
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	USPostnet usPostnet = profileConfig.dataCapture.barcode.decoderParams.usPostnet;
-	
 
 
 ##Public Fields
@@ -30,24 +28,11 @@ Transmit USPostnet data with or without the check digit. (default - disabled).
 
 **Example Usage:**
 	
-	:::java
-	
+	:::java	
 	usPostnet.report_check_digit = ENABLED_STATE.DEFAULT;
-	
 
 
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
-
-
-
-
-
-
-
-
-
-
-
 

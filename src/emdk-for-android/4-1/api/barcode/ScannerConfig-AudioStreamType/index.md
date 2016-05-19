@@ -3,7 +3,7 @@ title: ScannerConfig.AudioStreamType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 
@@ -16,15 +16,4 @@ Volume slider type for decode audio feedback.
 * **MEDIA** -Music and Media.
 
 * **ALARAMS** -Alarms.
-
-
-
-
-
-
-
-
-
-
-
 

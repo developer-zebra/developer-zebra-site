@@ -1,5 +1,8 @@
 ---
 title: MifarePlusSL3Results
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -49,5 +52,16 @@ title: MifarePlusSL3Results
 * **PARAM_NOT_SUPPORTED** -The parameter not supported.
 
 * **UNDEFINED** -Undefined
+
+
+
+
+
+
+
+
+
+
+
 
 

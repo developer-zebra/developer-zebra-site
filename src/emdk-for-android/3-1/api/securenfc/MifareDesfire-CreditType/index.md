@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.CreditType
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -10,5 +13,16 @@ title: MifareDesfire.CreditType
 
 * **LIMITED** -Limited increase of a value without having full Read&Write
  permissions to the file
+
+
+
+
+
+
+
+
+
+
+
 
 

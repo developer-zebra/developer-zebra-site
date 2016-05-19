@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.MSR
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds MSR configuration settings
@@ -35,5 +38,16 @@ Gets and Sets MSR enabled configuration enum  ProfileConfig.ENABLED_STATE.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: ScanAndPairConfig.BluetoothInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class is used by the ScanAndPairTool class. Specifies the Bluetooth related 
@@ -48,5 +51,16 @@ User supplied pin for bluetooth pairing. Passed as an argument during scanAndPai
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: SimulScanManager
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This is the primary object to access the SimulScan feature.
@@ -106,5 +109,16 @@ Defines scanner device identifier.
 * **INTERNAL_CAMERA1** -Use the internal camera
 
 * **INTERNAL_IMAGER1** -Use the internal imager
+
+
+
+
+
+
+
+
+
+
+
 
 

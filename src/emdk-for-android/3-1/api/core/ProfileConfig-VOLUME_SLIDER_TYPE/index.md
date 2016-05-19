@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.VOLUME_SLIDER_TYPE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines the notification type for a good decode.
@@ -21,5 +24,16 @@ Defines the notification type for a good decode.
 * **MUSIC_AND_MEDIA** -Music and Media.
 
 * **ALARM** -Alarms.
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,6 +1,9 @@
 ---
 title: ScanDataCollection.ScanData
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -66,4 +69,15 @@ Returns the time at which the barcode was scanned.
 **Returns:**
 
 java.lang.String - Returns time stamp string
+
+
+
+
+
+
+
+
+
+
+
 

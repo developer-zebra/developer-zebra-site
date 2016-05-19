@@ -1,5 +1,8 @@
 ---
-title:  Camera Manager Profile Feature Reference
+title: Camera Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -26,3 +29,14 @@ This option will allow you to enable/disable the rear camera.
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=CameraMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+

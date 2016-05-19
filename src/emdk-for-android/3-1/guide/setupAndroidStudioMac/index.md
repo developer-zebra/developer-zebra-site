@@ -1,5 +1,8 @@
 ---
 title: EMDK For Android Setup on Mac
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Installing Android Studio 1.1.x
@@ -228,4 +231,15 @@ To add the Symbol Vendor ID to ADB:
 3. Stop the the adb service if it is running: `./adb kill-server`
 3. Connect a Symbol Android device and enter the following command verify the list of attached devices:
 	`./adb devices`
+
+
+
+
+
+
+
+
+
+
+
 

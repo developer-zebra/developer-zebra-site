@@ -1,5 +1,8 @@
 ---
 title: ScannerResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines all the error codes the barcode scanning API returns.
@@ -52,5 +55,16 @@ Defines all the error codes the barcode scanning API returns.
 * **SCANNER_DEINIT_FAILURE** -Scanner de-initialization failed.
 
 * **UNDEFINED** -Error code not defined.
+
+
+
+
+
+
+
+
+
+
+
 
 

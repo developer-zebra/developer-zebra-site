@@ -1,5 +1,8 @@
 ---
 title: DiagnosticResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines all the error codes the diagnostic API returns.
@@ -18,5 +21,16 @@ Defines all the error codes the diagnostic API returns.
 * **INVALID_OBJECT** -Invalid Object
 
 * **UNDEFINED** -Error code not defined.
+
+
+
+
+
+
+
+
+
+
+
 
 

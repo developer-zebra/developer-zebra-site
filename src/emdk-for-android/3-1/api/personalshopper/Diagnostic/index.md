@@ -1,5 +1,8 @@
 ---
 title: Diagnostic
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class provides access to fetch the diagnostics information.
@@ -35,6 +38,17 @@ com.symbol.emdk.personalshopper.DiagnosticData
 **Throws:**
 
 com.symbol.emdk.personalshopper.DiagnosticException
+
+
+
+
+
+
+
+
+
+
+
 
 
 

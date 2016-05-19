@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.CodaBar
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The CodaBar class provides access to parameters that are available
@@ -91,5 +94,16 @@ Enable this parameter to strip the start and stop characters from
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

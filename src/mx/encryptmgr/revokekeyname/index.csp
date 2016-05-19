@@ -3,7 +3,8 @@ csp: encryptmgr
 title: Revoke Key Name(s)
 type: parm
 order: 6
-sincemx: 4.3
+mx: "4.3"
+osx: "1.0"
 parm:
   presentif: The Revoke Key action is "Revoke key"
   pivotal: No

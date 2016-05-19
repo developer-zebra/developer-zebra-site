@@ -3,7 +3,7 @@ csp: wifi
 title: Fusion Advanced Logging 
 type: parm
 order: 11
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The "Specify Diagnostic Options" box is checked
   pivotal: No
@@ -11,11 +11,11 @@ parm:
   type: list
   list:
     - code: true
-      sincemx: 4.4
+      mx: "4.4"
       name: True
       description:
     - code: false
-      sincemx: 4.4
+      mx: "4.4"
       name: False
       description: 
 ---

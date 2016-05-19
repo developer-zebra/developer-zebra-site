@@ -1,5 +1,8 @@
 ---
-title:  Pair Bluetooth devices
+title: Pair Bluetooth devices
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -808,5 +811,12 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
 ## What's Next
 Now that you have learned how to scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](../../api/scanandpair), in the next tutorial we would concentrate on [SimulScan APIs](../../api/simulscan) and develop an application to demonstrate its use. 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/ScanAndPairTutorial.zip).
+
+
+
+
+
+
+
+
+

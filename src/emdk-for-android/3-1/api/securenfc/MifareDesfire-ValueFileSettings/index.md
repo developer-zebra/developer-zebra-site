@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.ValueFileSettings
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -45,5 +48,16 @@ Free read access to the value file false: Disabled true: Enabled
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

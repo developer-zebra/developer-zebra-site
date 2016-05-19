@@ -1,5 +1,8 @@
 ---
 title: SimulScanRegion
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The SimulScanRegion class represents a processed SimulScanTemplateRegion.
@@ -57,5 +60,16 @@ Returns the processed data.
 **Returns:**
 
 java.lang.Object
+
+
+
+
+
+
+
+
+
+
+
 
 

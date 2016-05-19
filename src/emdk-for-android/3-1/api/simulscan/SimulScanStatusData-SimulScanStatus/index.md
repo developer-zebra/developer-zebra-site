@@ -1,5 +1,8 @@
 ---
 title: SimulScanStatusData.SimulScanStatus
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -17,5 +20,16 @@ title: SimulScanStatusData.SimulScanStatus
 * **ERROR** -Error occurred
 
 * **UNKNOWN** -Unknown status
+
+
+
+
+
+
+
+
+
+
+
 
 

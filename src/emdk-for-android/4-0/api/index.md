@@ -1,7 +1,7 @@
 ---
 title: APIs
 publish: false
-description: 
+description: null
 layout: list-apis.html
 automenuappend:
   items:
@@ -11,5 +11,17 @@ automenuappend:
           url: /emdk-for-android/4-0/guide/reference/refdatacaptureintent
         - title: Battery Intent
           url: /emdk-for-android/4-0/guide/reference/refbatteryintent
-
+product: EMDK For Android
+productversion: '4.0'
 ---
+
+
+
+
+
+
+
+
+
+
+

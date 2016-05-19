@@ -1,5 +1,8 @@
 ---
 title: EMDK For Xamarin API List
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ## Core and ProfileManager APIs
@@ -187,6 +190,19 @@ The following APIs are used when you wish to handle all barcode scanning entirel
 
 * [StatusData](/emdk-for-xamarin/1-0/api/StatusData)
 * [StatusData_ScannerStates](/emdk-for-xamarin/1-0/api/StatusData_ScannerStates)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

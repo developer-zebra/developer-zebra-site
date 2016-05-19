@@ -1,6 +1,9 @@
 ---
 title: ScannerInfo.ConnectionType
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -27,4 +30,15 @@ List of supported scanner connection types.
 * **USB** -The scanner device connected via USB to the mobile device.
 
 * **UNDEFINED** -Connection type is not defined.
+
+
+
+
+
+
+
+
+
+
+
 

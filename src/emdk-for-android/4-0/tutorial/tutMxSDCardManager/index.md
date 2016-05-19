@@ -1,5 +1,8 @@
 ---
-title:  Configure the use of SD Card using SD Card Manager
+title: Configure the use of SD Card using SD Card Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -445,5 +448,12 @@ That's it!!! We are done with all the coding and configuration part that will le
 ## What's Next
 Now that you have learned how to configure the use of SD Card (Enable/Disable) using [SD Card Manager](../../mx/sdcardmgr) on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Encrypt Manager" feature of Mx and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/SDCardManagerTutorial.zip).
+
+
+
+
+
+
+
+
+

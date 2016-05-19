@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.ActivitySelection.ActivityElement
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Gets and Sets application's package name and its activities to the profile  ProfileConfig.ActivitySelection.ActivityElement.
@@ -41,5 +44,16 @@ activities
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
+
+
+
 
 

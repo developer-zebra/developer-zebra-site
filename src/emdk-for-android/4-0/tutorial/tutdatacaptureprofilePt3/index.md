@@ -1,5 +1,8 @@
 ---
-title:  Using Multiple Data Capture Profiles
+title: Using Multiple Data Capture Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 ## Developing an EMDK for Android Application Part 3
 
@@ -413,5 +416,13 @@ Lastly we will run and test our application.
 ## What's Next
 The [next tutorial](/emdk-for-android/4-0/tutorial/tutdatacaptureprofilePt4) will show you how to use the Intent Output as a Broadcast instead of starting an activity.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingMultipleDataCaptureProfiles.zip).
+
+
+
+
+
+
+
+
+
+

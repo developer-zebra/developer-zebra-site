@@ -3,7 +3,8 @@ csp: certmgr
 title: Certificate Method
 type: parm
 order: 5
-sincemx: 4.2
+mx: "4.1"
+osx: "1.0"
 parm:
   presentif: The Certificate Action is "Install certificate"
   pivotal: Yes
@@ -12,7 +13,8 @@ parm:
   list:
     - code: 2
       name: Reference certificate file
-      sincemx: 4.2
+      mx: "4.1"
+      osx: "1.0"
       description: This value indicates that the data for the Certificate to be Installed is contained with a file that exists in the device file system.
 ---
 

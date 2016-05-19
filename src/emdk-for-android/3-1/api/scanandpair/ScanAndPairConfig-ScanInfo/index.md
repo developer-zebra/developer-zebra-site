@@ -1,5 +1,8 @@
 ---
 title: ScanAndPairConfig.ScanInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class is used by the ScanAndPairTool class. Specifies the scanning related information. 
@@ -67,5 +70,16 @@ Specifies the type of trigger to be used. The default value is AUTO. If manual, 
 **Type:**
 
 com.symbol.emdk.scanandpair.ScanAndPairConfig.TriggerType
+
+
+
+
+
+
+
+
+
+
+
 
 

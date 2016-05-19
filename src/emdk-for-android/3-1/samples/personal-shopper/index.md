@@ -2,23 +2,26 @@
 publish: true
 title: Personal Shopper
 description: This sample application will show how the Personal Shopper APIs can be used to interact with the MC18 Cradle programmatically.
-download: https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/PersonalShopperSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/PersonalShopperSample1
-features: 
+download: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/archive/PersonalShopperSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforandroid-3_1/tree/PersonalShopperSample1'
+features:
   - Profile Manager
   - Simulscan
   - Java APIs
-devices: 
+devices:
   - MC18KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
-  - 3.png 
-  - 4.png 
+  - 3.png
+  - 4.png
   - 5.png
-  - 6.png 
-  - 7.png 
+  - 6.png
+  - 7.png
+layout: sample.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Overview##
@@ -66,4 +69,19 @@ For this sample, you will need an MC18 and cradle( 1 or 3 bay ).
 LED's fade in and out, instead of an abrupt on/off state change.
 
 	![img](../../images/samples/personalShopperSampleSmoothEffect.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

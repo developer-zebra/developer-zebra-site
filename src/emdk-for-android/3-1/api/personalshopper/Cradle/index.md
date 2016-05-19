@@ -1,5 +1,8 @@
 ---
 title: Cradle
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Class to communicate with the MC18 cradle.
@@ -127,5 +130,16 @@ The field to access Cradle configuration.
 **Type:**
 
 com.symbol.emdk.personalshopper.CradleConfig
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -4,30 +4,32 @@ title: Personal Shopper
 description: This sample application will show how the Personal Shopper APIs can be used to interact with the MC18 Cradle programmatically.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/PersonalShopperSample1.zip   
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/PersonalShopperSample1.zip'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/PersonalShopperSample1.zip     
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/PersonalShopperSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/PersonalShopperSample1
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/PersonalShopperSample1'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/PersonalShopperSample1
-
-features: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/PersonalShopperSample1'
+features:
   - Profile Manager
   - Simulscan
   - Java APIs
-devices: 
+devices:
   - MC18KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
-  - 3.png 
-  - 4.png 
+  - 3.png
+  - 4.png
   - 5.png
-  - 6.png 
-  - 7.png 
+  - 6.png
+  - 7.png
+layout: sample.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Overview
@@ -77,3 +79,17 @@ The following guide will walk you through setting up the EMDK samples in your ID
 LED's fade in and out, instead of an abrupt on/off state change.
 
   ![img](personalShopperSampleSmoothEffect.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 ---
 title: CradleException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of cradle API throws CradleException when an error
@@ -21,4 +24,15 @@ Returns the CradleResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.CradleResults
+
+
+
+
+
+
+
+
+
+
+
 

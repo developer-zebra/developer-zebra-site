@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code11
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Code11 class provides access to parameters that are available for
@@ -89,5 +92,16 @@ Transmit Code 11 data with or without the check digit.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

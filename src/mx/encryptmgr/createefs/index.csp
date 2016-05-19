@@ -3,19 +3,22 @@ csp: encryptmgr
 title: Create EFS
 type: parm
 order: 7
-sincemx: 4.3
+mx: "4.3"
+osx: "1.0"
 parm:
   pivotal: Yes
   name: CreateEFSAction
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.0"
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will cause no Encrypted File System to be created.
     - code: 1
       name: Create EFS
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.0"
       description: This value will cause an Encrypted File System to be created.
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE0
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds UPCE0 configuration settings.
@@ -68,5 +71,16 @@ Enable to convert UPCE0 (zero suppressed) decoded data to UPC-A format before tr
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

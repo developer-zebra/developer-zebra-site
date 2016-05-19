@@ -3,144 +3,160 @@ csp: keymapmgr
 title: Choose a key to modify
 type: parm
 order: 3
-sincemx: 4.4
+mx: "4.4"
 parm:
   presentif: The Action value is "Remap a key"
   pivotal: Yes
   type: list
+  name: KeyIdentifier
   list:
     - code: 
-      sincemx: 4.4
+      mx: "4.4"
       name: None
-      description: This value indicates that no Key Mapping will be added or removed for any Key from any Key Mapping Table.
+      description: No Key Mapping will be added or removed for any Key from any Key Mapping Table.
     - code: 0-9
-      sincemx: 4.4
+      mx: "4.4"
       name: Number Keys
-      description: Use the number of the number key, ex: "0" for the "0" key
+      description: Use the number of the number key. For example, use "0" for the "0" key.
     - code: A-Z
-      sincemx: 4.4
+      mx: "4.4"
       name: Alpha Keys
-      description: Use the letter of the alpha key, ex: "A" for the "A" key
+      description: Use the letter of the alpha key. For example, use "A" for the "A" key.
     - code: F1-F12
-      sincemx: 4.4
+      mx: "4.4"
       name: Function Keys
-      description: Use "F#" of the function key, ex: "F10" for the "F10" key
+      description: Use "F" and the number of the function key. For example, use "F10" for the "F10" key.
     - code: Enter
-      sincemx: 4.4
+      mx: "4.4"
       name: ENTER
     - code: Up
-      sincemx: 4.4
+      mx: "4.4"
       name: UP
     - code: Down
-      sincemx: 4.4
+      mx: "4.4"
       name: DOWN
     - code: Left
-      sincemx: 4.4
+      mx: "4.4"
       name: LEFT
     - code: Right
-      sincemx: 4.4
+      mx: "4.4"
       name: RIGHT
     - code: Escape
-      sincemx: 4.4
+      mx: "4.4"
       name: ESC
     - code: Backspace
-      sincemx: 4.4
+      mx: "4.4"
       name: BACKSPACE
     - code: Period
-      sincemx: 4.4
+      mx: "4.4"
       name: DOT
     - code: Star
-      sincemx: 4.4
+      mx: "4.4"
       name: Star
     - code: Pound
-      sincemx: 4.4
+      mx: "4.4"
       name: POUND
     - code: Space
-      sincemx: 4.4
+      mx: "4.4"
       name: SPACE
     - code: Return
-      sincemx: 4.4
+      mx: "4.4"
       name: RETURN
     - code: Clear
-      sincemx: 4.4
+      mx: "4.4"
       name: CLR
     - code: Field Exit
-      sincemx: 4.4
+      mx: "4.4"
       name: FIELD_EXIT
     - code: Alt
-      sincemx: 4.4
+      mx: "4.4"
       name: ALT
     - code: Control
-      sincemx: 4.4
+      mx: "4.4"
       name: CTRL
     - code: Shift
-      sincemx: 4.4
+      mx: "4.4"
       name: SHIFT
     - code: Blue
-      sincemx: 4.4
+      mx: "4.4"
       name: BLUE
     - code: Orange
-      sincemx: 4.4
+      mx: "4.4"
       name: ORANGE
     - code: Green Dot
-      sincemx: 4.4
+      mx: "4.4"
       name: GREEN
     - code: Red Dot
-      sincemx: 4.4
+      mx: "4.4"
       name: RED
     - code: Volume Up
-      sincemx: 4.4
+      mx: "4.4"
       name: VOLUMEUP
     - code: Volume Down
-      sincemx: 4.4
+      mx: "4.4"
       name: VOLUMEDOWN
     - code: Scan
-      sincemx: 4.4
+      mx: "4.4"
       name: SCAN
     - code: Grip Trigger
-      sincemx: 4.4
+      mx: "4.4"
       name: GRIP_TRIGGER
     - code: Button L1
-      sincemx: 4.4
+      mx: "4.4"
       name: LEFT_TRIGGER_1
     - code: Button L2
-      sincemx: 4.4
+      mx: "4.4"
       name: LEFT_TRIGGER_2
     - code: Button R1
-      sincemx: 4.4
+      mx: "4.4"
       name: RIGHT_TRIGGER_1
     - code: Button R2
-      sincemx: 4.4
+      mx: "4.4"
       name: RIGHT_TRIGGER_2
     - code: Headset Button
-      sincemx: 4.4
+      mx: "4.4"
       name: HEADSET_HOOK
     - code: Back
-      sincemx: 4.4
+      mx: "4.4"
       name: BACK
     - code: Home
-      sincemx: 4.4
+      mx: "4.4"
       name: HOME
     - code: Menu
-      sincemx: 4.4
+      mx: "4.4"
       name: MENU
     - code: Recent
-      sincemx: 4.4
+      mx: "4.4"
       name: RECENT
     - code: Search
-      sincemx: 4.4
+      mx: "4.4"
       name: SEARCH
     - code: Keyboard Backlight
-      sincemx: 4.4
+      mx: "4.4"
       name: KEYLIGHT
     - code: Display Backlight
-      sincemx: 4.4
+      mx: "4.4"
       name: LAMP
     - code: Power
-      sincemx: 4.4
+      mx: "4.4"
       name: POWER
+    - code: P1
+      mx: "5.2"
+      name: P1 Button
+    - code: P2
+      mx: "5.2"
+      name: P2 Button
+    - code: P3
+      mx: "5.2"
+      name: P3 Button
+    - code: LEFT_EXTERNAL_TRIGGER
+      mx: "5.2"
+      name: Left External Trigger
+    - code: RIGHT_EXTERNAL_TRIGGER
+      mx: "5.2"
+      name: Right External Trigger
 ---
 
-This parm allows you to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, you must specify a parm value that contains a Key Identifier that is listed in the following table.
+Used to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, a parm value must be specified that contains a Key Identifier that is listed in the following table.
 
->**Note:** Not all devices physically support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, you can query the KeyMappingMgr to acquire a list of all Key Identifiers that are supported on that device.
+>**Note** Not all devices support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, query the KeyMappingMgr to acquire a list of all Key Identifiers that are supported on that device.

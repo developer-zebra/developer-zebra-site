@@ -1,5 +1,8 @@
 ---
-title:  Battery Intent Tutorial
+title: Battery Intent Tutorial
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -36,4 +39,15 @@ In the below code we are getting the Symbol specific battery information provide
 			int cycle = intent.getExtras().getInt("cycle");  
 		}  
 	} 
+
+
+
+
+
+
+
+
+
+
+
 

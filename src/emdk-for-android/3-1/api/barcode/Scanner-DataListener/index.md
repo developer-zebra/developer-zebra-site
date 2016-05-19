@@ -1,5 +1,8 @@
 ---
 title: Scanner.DataListener
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 An interface for notifying client applications when the scan data is
@@ -30,5 +33,16 @@ scanDataCollection - Collection of scan data.
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
+
+
+
 
 

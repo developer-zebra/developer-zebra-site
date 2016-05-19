@@ -3,22 +3,22 @@ csp: wifi
 title: Network Notification 
 type: parm
 order: 5
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: No
   name: NetworkNotification
   type: list
   list:
     - code: 
-      sincemx: 4.2
+      mx: "4.2"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will not make any change to the current network notification setting.
     - code: true
-      sincemx: 4.2
+      mx: "4.2"
       name: Use network notification
       description: This value will cause the user to be notified when an unknown, open network comes into range.
     - code: false
-      sincemx: 4.2
+      mx: "4.2"
       name: Do not use network notification
       description: This value will cause the user to not be notified when an unknown, open network comes into range.
 ---

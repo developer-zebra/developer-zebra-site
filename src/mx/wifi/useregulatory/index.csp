@@ -3,18 +3,18 @@ csp: wifi
 title: Country Selection Auto/Manual 
 type: parm
 order: 5
-sincemx: 4.2
+mx: "4.2"
 parm:
   pivotal: No
   name: UseRegulatory
   type: list
   list:
     - code: true
-      sincemx: 4.2
+      mx: "4.2"
       name: True
       description: Manually select the country.
     - code: false
-      sincemx: 4.2
+      mx: "4.2"
       name: False
       description: Country determined by the router.
 ---

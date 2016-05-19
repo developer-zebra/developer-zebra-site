@@ -1,5 +1,8 @@
 ---
 title: Create a new project in Visual Studio
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ##Prerequisites
@@ -20,4 +23,17 @@ Before creating a project in Visual Studio you must have installed the following
 Visual studio will then create and then load your new project.
 
 > Navigate **Back** in your browser to continue this tutorial
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -3,19 +3,22 @@ csp: encryptmgr
 title: Install Key
 type: parm
 order: 2
-sincemx: 4.3
+mx: "4.3"
+osx: "1.0"
 parm:
   pivotal: Yes
   name: InstallKeyAction
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.0"
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will not cause a Named Key to be added to the Key Storage Database.
     - code: 1
       name: Install Key
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.0"
       description: This value will cause a Named Key, along with an associated Key Value, to be added to the Key Storage Database.
 ---
 

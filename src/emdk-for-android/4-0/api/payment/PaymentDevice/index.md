@@ -1,6 +1,9 @@
 ---
 title: PaymentDevice
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -1103,4 +1106,15 @@ void
 com.symbol.emdk.payment.PaymentException
 
 Exception will be thrown if any error occurs during this call.
+
+
+
+
+
+
+
+
+
+
+
 

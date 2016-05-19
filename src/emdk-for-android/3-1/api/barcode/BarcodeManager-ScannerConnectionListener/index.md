@@ -1,5 +1,8 @@
 ---
 title: BarcodeManager.ScannerConnectionListener
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 An interface for notifying client applications when the external scanner
@@ -32,5 +35,16 @@ connectionState - The new connection state.
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
+
+
+
 
 

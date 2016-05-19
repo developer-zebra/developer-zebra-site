@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.Isbt128ContactMode
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -30,4 +33,15 @@ Option for concatenating pairs of ISBT128 code types.
  number of times set via DataWedge Configuration 4 - 1 1 Redundancy -
  Code128 before transmitting its data to confirm that there is no
  additional ISBT symbol.
+
+
+
+
+
+
+
+
+
+
+
 

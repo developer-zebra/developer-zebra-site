@@ -3,7 +3,8 @@ csp: certmgr
 title: Certificate Alias
 type: parm
 order: 3
-sincemx: 4.2
+mx: "4.1"
+osx: "1.0"
 parm:
   pivotal: No
   name: CertAlias

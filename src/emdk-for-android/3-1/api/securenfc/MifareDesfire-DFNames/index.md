@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.DFNames
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -29,5 +32,16 @@ ISO/IEC 7816-4 DF name
 **Type:**
 
 byte
+
+
+
+
+
+
+
+
+
+
+
 
 

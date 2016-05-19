@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code39
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -187,4 +190,15 @@ Options: Security level 0 , Security Level 1 , Security Level 2 and Security Lev
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
+
+
+
+
+
+
+
+
+
+
+
 

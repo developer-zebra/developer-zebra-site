@@ -1,5 +1,8 @@
 ---
-title:  PowerKey Manager Profile Feature Reference
+title: PowerKey Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -36,3 +39,14 @@ This profile feature will allow your application to control the visibility of th
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=PowerKeyMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+

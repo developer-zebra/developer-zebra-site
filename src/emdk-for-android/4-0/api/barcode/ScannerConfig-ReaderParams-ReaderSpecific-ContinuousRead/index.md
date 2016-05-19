@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -54,4 +57,15 @@ This setting is used to prevent the scanner from decoding another symbol within 
 **Type:**
 
 int
+
+
+
+
+
+
+
+
+
+
+
 

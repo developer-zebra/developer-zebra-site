@@ -3,23 +3,27 @@ csp: settingsmgr
 title: Ability to invoke Enterprise Reset in Settings UI
 type: parm
 order: 2
-sincemx: 4.3
+mx: "4.2"
+osx: "4.2"
 parm:
   pivotal: No
   name: InvokeEnterpriseReset
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.2"
+      osx: "4.2"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.
     - code: 1
       name: Enable
-      sincemx: 4.3
+      mx: "4.2"
+      osx: "4.2"
       description: This value will cause the device user to be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.
     - code: 2
       name: Disable
-      sincemx: 4.3
+      mx: "4.2"
+      osx: "4.2"
       description: This value will cause the device user to be prevented from invoking the "Enterprise data reset" function from the System Settings Menu.
 ---
 

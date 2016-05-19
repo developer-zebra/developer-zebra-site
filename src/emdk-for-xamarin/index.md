@@ -78,18 +78,18 @@ menu:
           url: /emdk-for-xamarin/1-0/mx/data-capture
           items:
             - title: Activity Selection
-              url: /emdk-for-xamarin/1-0/mx/data-capture/activity   
+              url: /emdk-for-xamarin/1-0/mx/data-capture/activity
             - title: Barcode Input
-              url: /emdk-for-xamarin/1-0/mx/data-capture/barcode   
+              url: /emdk-for-xamarin/1-0/mx/data-capture/barcode
             - title: Int Output
-              url: /emdk-for-xamarin/1-0/mx/data-capture/intent   
+              url: /emdk-for-xamarin/1-0/mx/data-capture/intent
             - title: IP Output
               url: /emdk-for-xamarin/1-0/mx/data-capture/IP
             - title: Keystroke Output
               url: /emdk-for-xamarin/1-0/mx/data-capture/keystroke
             - title: MSR Input
-              url: /emdk-for-xamarin/1-0/mx/data-capture/msr   
-        - title: DevAdmin 
+              url: /emdk-for-xamarin/1-0/mx/data-capture/msr
+        - title: DevAdmin
           url: /emdk-for-xamarin/1-0/mx/devadmin
         - title: DHCP Options Manager
           url: /emdk-for-xamarin/1-0/mx/dhcp
@@ -132,7 +132,15 @@ menu:
           url: /emdk-for-xamarin/1-0/api/core
         - title: Barcode APIs
           url: /emdk-for-xamarin/1-0/api/barcode
-        - title: ScanAndPair APIs 
-        
+        - title: ScanAndPair APIs
+product: EMDK For Xamarin
 ---
+
+
+
+
+
+
+
+
 

@@ -1,14 +1,14 @@
 ---
 publish: true
 title: Barcode APIs
-description: This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.
-download: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/archive/BarcodeSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/BarcodeSample1
-features: 
+description: 'This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.'
+download: 'https://github.com/developer-zebra/samples-emdkforxamarin-1_0/archive/BarcodeSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/BarcodeSample1'
+features:
   - Profile Manager
   - Barcode
-  - C# APIs
-devices: 
+  - 'C# APIs'
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -20,13 +20,16 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
   - 4.png
   - 5.png
   - 6.png
+layout: sample.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ##Overview
@@ -100,3 +103,20 @@ Now press the "Play" button. The IDE will build, deploy and start the sample app
 6. Since we selected Trigger Type as "HARD", press the hard scan key of Symbol device and scan a particular barcode. It will get the scanned barcode data in "Data" field of UI.
    
 	![img](../../images/samples/barcode_6.png) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

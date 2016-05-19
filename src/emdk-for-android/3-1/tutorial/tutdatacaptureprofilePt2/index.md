@@ -1,5 +1,8 @@
 ---
-title:  Using Intent Output With DataCapture Profiles
+title: Using Intent Output With DataCapture Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Developing an EMDK for Android Application Part 2
 
@@ -218,5 +221,13 @@ For more information about setting up the EMDK please see the EMDK Overview.
 ## What's Next
 The [next tutorial](../tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-DataCaptureProfiles-Using+Intent+Output.zip).
+
+
+
+
+
+
+
+
+
+

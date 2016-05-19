@@ -3,6 +3,7 @@ csp: licensemgr
 title: Custom Feature Name
 type: parm
 order: 5
+mx: "4.3"
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Apply" *AND* "Specify verification method to use" is "Verify against a custom feature name"

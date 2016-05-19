@@ -6,7 +6,7 @@ contentlist:
   - heading: Application Management
     description: Manage application white-listing and browser settings.
     visible: true
-    items: 
+    items:
       - title: App Manager
         url: appmgr
         icon: /mx/icons/app_manager.png
@@ -20,7 +20,7 @@ contentlist:
     visible: true
     items:
       - title: Activity Selection
-        description: Select the application's activity where data capture is active.
+        description: "Select the application's activity where data capture is active."
         url: data-capture/activity
         icon: /mx/icons/activity.png
       - title: Barcode
@@ -44,16 +44,16 @@ contentlist:
         icon: /mx/icons/msr.png
         url: data-capture/msr
   - heading: Device Configuration
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
     visible: true
-    items: 
+    items:
       - title: Analytics
         url: analytics
-        description: The AnalyticsMgr allows you enable or disable collection of data, in the form of groups of metrics, by the Analytics Engine
+        description: 'The AnalyticsMgr allows you enable or disable collection of data, in the form of groups of metrics, by the Analytics Engine'
         icon: /mx/icons/analyticsmgr.png
       - title: Audio Manager
         url: audiomgr
-        description: The AudioVolUIMgr allows you to add, delete, and replace Audio Profiles and to select the current Audio Profile that will be in effect on the device.
+        description: 'The AudioVolUIMgr allows you to add, delete, and replace Audio Profiles and to select the current Audio Profile that will be in effect on the device.'
         icon: /mx/icons/audio.png
       - title: Battery Manager
         url: batterymgr
@@ -61,11 +61,11 @@ contentlist:
         icon: /mx/icons/battery_threshold.png
       - title: Clock Manager
         url: clock
-        description: The Clock Manager allows you to set the Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.
+        description: 'The Clock Manager allows you to set the Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.'
         icon: /mx/icons/clock.png
       - title: Component Manager
         url: componentmgr
-        description: The ComponentMgr allows you to configure the state and usage of specific subsystems on the device, such as Ethernet.
+        description: 'The ComponentMgr allows you to configure the state and usage of specific subsystems on the device, such as Ethernet.'
         icon: /mx/icons/ethernet.png
       - title: Display Manager
         url: displaymgr
@@ -73,7 +73,7 @@ contentlist:
         icon: /mx/icons/displaymgr.png
       - title: Power Manager
         url: powermgr
-        description: The PowerMgr allows you to perform power-related actions on the device, such as putting it into Sleep mode.
+        description: 'The PowerMgr allows you to perform power-related actions on the device, such as putting it into Sleep mode.'
         icon: /mx/icons/power_manager.png
       - title: Touch Manager
         url: touchmgr
@@ -82,7 +82,7 @@ contentlist:
   - heading: MX Core Framework
     description: Access core framework features and how XML settings are managed.
     visible: true
-    items: 
+    items:
       - title: Persistance Manager
         url: persistance
         description: The PersistMgr allows you to manage the Request XML Documents that are persistent on a device.
@@ -94,14 +94,14 @@ contentlist:
   - heading: Security Features
     visible: true
     description: Manage security settings for the device and access to applications.
-    items: 
+    items:
       - title: Access Manager
         url: accessmgr
         description: The AccessMgr enables the configuration of a device to control which user or applications can be used on a given device as well as what those applications can do.
         icon: /mx/icons/accessmgr.png
       - title: Camera Manager
         url: cameramgr
-        description: The CameraMgr allows you to control what cameras, if any, will be allowed to be used.
+        description: 'The CameraMgr allows you to control what cameras, if any, will be allowed to be used.'
         icon: /mx/icons/cameramgr.png
       - title: Certificate Manager
         url: certmgr
@@ -113,7 +113,7 @@ contentlist:
         icon: /mx/icons/devadmin.png
       - title: Encrypt Manager
         url: encryptmgr
-        description: The EncryptMgr allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
+        description: 'The EncryptMgr allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.'
         icon: /mx/icons/encryptmgr.png
       - title: SD Card Manager
         url: sdcardmgr
@@ -130,7 +130,7 @@ contentlist:
   - heading: UI Settings
     description: Control device settings behavior and remap keys.
     visible: true
-    items: 
+    items:
       - title: KeyMap Manager
         url: keymappingmgr
         description: The KeyMappingMgr allows you to modify what behavior a given key will exhibit when pressed.
@@ -145,15 +145,15 @@ contentlist:
         icon: /mx/icons/settingsmgr.png
       - title: UI Manager
         url: uimgr
-        description: The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurations, like Clipboard behavior.
+        description: 'The UiMgr Feature Type allows you to manage a miscellaneous set of UI configurations, like Clipboard behavior.'
         icon: /mx/icons/uimgr.png
   - heading: Wireless
     description: Manage wireless settings like WiFi and GPRS for your device.
     visible: true
-    items: 
+    items:
       - title: Cellular Manager
         url: cellularmgr
-        description: The CellularMgr allows you to control how a device's Cellular data connection is used.
+        description: "The CellularMgr allows you to control how a device's Cellular data connection is used."
         icon: /mx/icons/cellularmgr.png
       - title: DHCP Manager
         url: dhcp
@@ -165,10 +165,25 @@ contentlist:
         icon: /mx/icons/gprsmgr.png
       - title: WiFi Manager
         url: wifi
-        description: The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
+        description: "The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks."
         icon: /mx/icons/wifi.png
       - title: Wireless Manager
         url: wirelessmgr
-        description: The WirelessMgr allows you to turn various wireless radios On or Off, like Bluetooth, GPRS, NFC, etc.
+        description: 'The WirelessMgr allows you to turn various wireless radios On or Off, like Bluetooth, GPRS, NFC, etc.'
         icon: /mx/icons/wirelessmgr.png
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+

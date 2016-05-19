@@ -1,33 +1,32 @@
 ---
 csp: keymapmgr
-title:  Add key event
+title:  Add Key Event
 type: parm
 order: 14
-sincemx: 4.4
+mx: "4.4"
 parm:
-  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
+  presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
   pivotal: Yes
   type: list
+  name: BaseIntentAddKeyState,BlueIntentAddKeyState,OrangeIntentAddKeyState,GreyIntentAddKeyState,ShiftIntentAddKeyState,ControlIntentAddKeyState
   list:
     - code: 0
-      sincemx: 4.4
+      mx: "4.4"
       name: True
-      description: This value causes Key Event that occurred when the Key was pressed or released to be attached to the Intent. This would generally be valuable only when an application was written specifically to receive such an Intent since it would require the application to understand and interpret the data format used to encode a Key Event.
+      description: Causes Key Event that occurred when the Key was pressed or released to be attached to the Intent. This would generally be valuable only when an application was written specifically to receive such an Intent since it would require the application to understand and interpret the data format used to encode a Key Event.
     - code: 2
       name: False
-      sincemx: 4.4
-      description: This value causes Key Event that occurred when the Key was pressed or released to not be attached to the Intent.
+      mx: "4.4"
+      description: Prevents Key Event that occurred when the Key was pressed or released from being attached to the Intent.
 ---
 
-Parm name:
+These parms control whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
 
-* For Base Key State Table: BaseIntentAddKeyState
-* For Blue Key State Table: BlueIntentAddKeyState
-* For Orange Key State Table: OrangeIntentAddKeyState
-* For Grey Key State Table: GreyIntentAddKeyState
-* For Shift Key State Table: ShiftIntentAddKeyState
-* For Control Key State Table: ControlIntentAddKeyState
+Parm names:
 
-Description: 
-
-This parm allows you to choose whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+* For Base Key State Table: <b>BaseIntentAddKeyState</b>
+* For Blue Key State Table: <b>BlueIntentAddKeyState</b>
+* For Orange Key State Table: <b>OrangeIntentAddKeyState</b>
+* For Grey Key State Table: <b>GreyIntentAddKeyState</b>
+* For Shift Key State Table: <b>ShiftIntentAddKeyState</b>
+* For Control Key State Table: <b>ControlIntentAddKeyState</b>

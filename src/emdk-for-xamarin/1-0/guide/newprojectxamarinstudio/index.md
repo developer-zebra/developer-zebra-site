@@ -1,5 +1,8 @@
 ---
 title: Create a new project in Xamarin Studio
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ##Prerequisites
@@ -20,4 +23,17 @@ Before creating a project in Xamarin Studio you must have installed the followin
 Xamarin studio will then create and then load your new project.
 
 > Navigate **Back** in your browser to continue this tutorial
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -5,8 +5,11 @@
             <section class="content-with-sidebar">
             <div class="row">
                 <div class="col-sm-3 fixed-column-left"  >
-                    {{> menu}}
-
+                    <ul class="nav">
+                        {{#each this.csps}}
+                            <li class="csp-select" data-id="{{this.csp}}"><a>{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
                 </div>                
                 <div class="col-sm-9 fixed-column-right">
                     <div class="row">
@@ -14,7 +17,7 @@
                             <section id="cta" class="wow fadeIn">
                                 <div class="">
                                     <h1>{{ title }}</h1>
-                                    <p>MX Release History</p>
+                                    <p</p>
                                     <p>
                                     {{#if product}}
                                     {{ product }}
@@ -30,11 +33,17 @@
                             </section>                    
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                        {{>navbar-smartdocs}}
+                        </div>
+                    </div>
+
                     {{#each this.csps}}
                     <div class="row">
                         <div class="col-sm-12">
 
-                            <section id="services" >
+                            <section id="{{this.csp}}" class="csp">
                                 <h2><a href="{{this.url}}">{{this.title}}</a></h2>
                                 <div class="">
                                 <!-- Start of content list -->
@@ -42,61 +51,91 @@
                                         <table class="table">
                                             <tr>
                                                 <th></th>
-                                                {{#each ../mxversions}}
-                                                    <th class="MX-{{this.value}}">{{this.text}}</th>
-                                                {{/each}}
+                                                <th> OSX</th>
+                                                <th> MX </th>
+                                                <th> Android API Level </th>
                                             </tr>
                                             {{#each ../collections.csp}}
                                             {{#is ../csp this.csp}}
                                                  {{#isnt this.type "text"}}
-                                                    {{#if this.sincemx}}
-                                                    <tr class = "MX-{{this.sincemx}}">
-                                                    {{else}}
-                                                        {{#each ../../mxversions}}
-                                                            {{#if @first}}
-                                                                <tr class = "MX-{{this.value}}">
-                                                            {{/if}}
-                                                        {{/each}}
-                                                    {{/if}}
-                                                        <td class="col-md-3">{{this.title}}</td>
-                                                        {{#each ../../mxversions}}
-                                                            {{#if ../sincemx}}
-                                                                {{#gte this.value ../sincemx }}
-                                                                <td><i class="fa fa-check-circle"></i></td>
-                                                                {{else}}
-                                                                <td></td>
-                                                                {{/gte}}
+                                                    <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                                        <td><span ><i>{{this.title}}</i></td>
+                                                        <td class="col-md-2">
+
+                                                            {{#if this.osx}}
+                                                                {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
                                                             {{else}}
-                                                                <td><i class="fa fa-check-circle"></i></td>
+                                                                {{#if this.osx-specific}}
+                                                                    {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}}
+                                                                     ONLY
+                                                                {{else}}
+                                                                    {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
+                                                                    ONLY
+                                                                    {{else}}ALL
+                                                                    {{/if}}
+                                                                {{/if}}
                                                             {{/if}}
-                                                        {{/each}}
+                                                            
+                                                            {{#if this.osx-exclude}}
+                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
+                                                                </p>
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.mx}}
+                                                                {{this.mx}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.apilevel}}
+                                                                {{this.apilevel}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
                                                     </tr>                                                          
 
                                                 {{#is this.parm.type "list"}}
                                                     {{#each this.parm.list}}
-                                                    {{#if this.sincemx}}
-                                                    <tr class = "MX-{{this.sincemx}}">
-                                                    {{else}}
-                                                        {{#each ../../../mxversions}}
-                                                            {{#if @first}}
-                                                                <tr class = "MX-{{this.value}}">
-                                                            {{/if}}
-                                                        {{/each}}
-                                                    {{/if}}
-                                                        <td  class="col-md-3"><span style="padding-left:15px"><i>{{this.name}}</i></span></td>
-                                                        {{#each ../../../mxversions}}
-                                                            {{#if ../sincemx}}
-                                                                {{#gte this.value ../sincemx }}
-                                                                <td><i class="fa fa-check-circle"></i></td>
-                                                                {{else}}
-                                                                <td></td>
-                                                                {{/gte}}
+                                                    <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                                        <td class="col-md-4"><span style="padding-left:15px"><i>{{this.name}}</i></td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.osx}}
+                                                                {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
                                                             {{else}}
-                                                                <td><i class="fa fa-check-circle"></i></td>
+                                                                {{#if this.osx-specific}}
+                                                                    {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}}
+                                                                     ONLY
+                                                                {{else}}
+                                                                    {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
+                                                                    ONLY
+                                                                    {{else}}ALL
+                                                                    {{/if}}
+                                                                {{/if}}
                                                             {{/if}}
-                                                        {{/each}}
-                                                    </tr>
-                                                    
+                                                            
+                                                            {{#if this.osx-exclude}}
+                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
+                                                                </p>
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.mx}}
+                                                                {{this.mx}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.apilevel}}
+                                                                {{this.apilevel}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                    </tr>                                                                                     
                                                     {{/each}}
                                                     
                                                     
@@ -117,7 +156,20 @@
             </div>
             </section>
         </div>
-    </section>    
+    </section>   
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log('ready');
+        $('.csp-select').click(function(e) { 
+            console.log('click');
+             var csp = $(this).attr("data-id");
+             $(".csp").hide();
+             $(".csp-select").removeClass("active");
+             $("#"+csp).show();
+             $(this).addClass("active");
+        }); 
+    });
+</script>
 {{> footer }}
 
 

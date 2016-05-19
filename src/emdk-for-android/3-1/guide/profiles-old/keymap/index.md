@@ -1,5 +1,8 @@
 ---
-title:  Key Mapping Manager Profile Feature Reference
+title: Key Mapping Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -302,4 +305,15 @@ Select this behavior to reset any custom key mapping for the selected key. After
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=KeyMapMgr&os=All&embed=true"></iframe>
+
+
+
+
+
+
+
+
+
+
+
 

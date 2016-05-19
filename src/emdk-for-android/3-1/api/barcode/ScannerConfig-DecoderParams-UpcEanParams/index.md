@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.UpcEanParams
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The UPCEAN class provides access to parameters that are available for the UPC/EAN decoder.
@@ -233,5 +236,16 @@ Enable this parameter to add five leading zeros to decoded
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

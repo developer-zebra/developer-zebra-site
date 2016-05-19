@@ -1,5 +1,8 @@
 ---
 title: SimulScanConfig
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The SimulScanConfig class provides access to reader configuration settings.
@@ -93,5 +96,16 @@ Amount of time in milliseconds to wait before timing out processing.
 **Type:**
 
 int
+
+
+
+
+
+
+
+
+
+
+
 
 

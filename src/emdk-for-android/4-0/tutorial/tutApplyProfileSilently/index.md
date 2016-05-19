@@ -1,6 +1,8 @@
 ---
-title:  Apply Mx Profile Silently in a Non-Blocking way
-
+title: Apply Mx Profile Silently in a Non-Blocking way
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -51,7 +53,7 @@ So let us create a tutorial and Configure the Mx App Manager Profile to install 
 * Java Development Kit (JDK)
 * Android Developer Tools (ADT) ([Android Studio](http://developer.android.com/sdk/index.html)/[Eclipse with ADT](http://developer.android.com/tools/sdk/eclipse-adt.html))
 * EMDK for Android V 2.1 and above
-* Download APK file for the application to install from [here](https://s3.amazonaws.com/emdk/Tutorials/AllInstalledApps.apk)
+* Download APK file for the application to install from [here](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip)
 * Once downloaded, copy the APK file to SD Card of the device. 
 
 For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/4-0/guide/setup/).
@@ -559,5 +561,12 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/ApplyProfileSilentlyTutorial.zip).
+
+
+
+
+
+
+
+
+

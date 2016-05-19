@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.UpcEanParameters
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The UPCEAN class provides access to parameters that are available for the UPC/EAN decoder. UPC/EAN is the family of codes which are used to identify products and UPC EAN Params are the params common to these codes
 
@@ -55,5 +58,18 @@ The supplemental mode. Use enum ScannerConfig.SupplementalMode.
 Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode - UPC EAN is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379 , Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20, default 10).
 
 **Type** - System.Int32
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

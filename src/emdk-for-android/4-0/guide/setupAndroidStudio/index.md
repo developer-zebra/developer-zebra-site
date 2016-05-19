@@ -1,5 +1,8 @@
 ---
 title: EMDK For Android Setup (Android Studio)
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Installing EMDK for Android Studio
@@ -36,3 +39,14 @@ Download and install **Android Studio** from [http://developer.android.com/sdk/i
 After reboot the EMDK will be fully installed.
 
 >If you decided to select **No** in step 5, complete the installation by click **Next**, then **Finish**
+
+
+
+
+
+
+
+
+
+
+

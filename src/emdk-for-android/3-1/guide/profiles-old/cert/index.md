@@ -1,5 +1,8 @@
 ---
-title:  Certificate Manager Profile Feature Reference
+title: Certificate Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -77,4 +80,15 @@ Provide the name(alias) that will uniquely identify the certificate. The key sto
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=CertMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 

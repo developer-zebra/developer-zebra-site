@@ -3,7 +3,7 @@ csp: wifi
 title: PAC File Url
 type: parm
 order: 49
-sincemx: 5.0
+mx: "5.0"
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" *AND* "Use Proxy" is set to Proxy Auto-Config.

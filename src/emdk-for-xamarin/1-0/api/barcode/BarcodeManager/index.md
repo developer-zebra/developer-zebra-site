@@ -1,5 +1,8 @@
 ---
 title: BarcodeManager
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 This is the primary object to access the barcode scanning feature.
 
@@ -56,5 +59,18 @@ Remove ScannerConnectionListener to receive scanner connection changes via callb
 Returns list of supported scanner devices information.
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.ScannerInfo>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

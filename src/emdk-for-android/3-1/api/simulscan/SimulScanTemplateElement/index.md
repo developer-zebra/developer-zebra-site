@@ -1,5 +1,8 @@
 ---
 title: SimulScanTemplateElement
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The TemplateElement class represents elements nested directly under the tag in 
@@ -30,5 +33,16 @@ Returns the region number of the element
 **Returns:**
 
 int
+
+
+
+
+
+
+
+
+
+
+
 
 

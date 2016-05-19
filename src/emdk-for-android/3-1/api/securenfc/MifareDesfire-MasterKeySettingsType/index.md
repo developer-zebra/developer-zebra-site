@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.MasterKeySettingsType
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Master key setting type
@@ -54,5 +57,16 @@ Access rights for changing application keys (ChangeKey command) 00:
 **Type:**
 
 byte
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: ScanDataCollection.ScanData
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The ScanData object gives information on the barcode data scanned.
@@ -49,5 +52,16 @@ Returns the time at which the barcode was scanned.
 **Returns:**
 
 java.lang.String
+
+
+
+
+
+
+
+
+
+
+
 
 

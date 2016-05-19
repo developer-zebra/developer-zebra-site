@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ScanParams
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The ScanParams class provides access to scanning
@@ -120,4 +123,15 @@ Decoding LED Notification.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 

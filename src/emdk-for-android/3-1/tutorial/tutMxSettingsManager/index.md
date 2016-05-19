@@ -1,5 +1,8 @@
 ---
-title:  Invoke Enterprise Reset in Settings UI
+title: Invoke Enterprise Reset in Settings UI
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -434,5 +437,13 @@ This is how Settings Manager is used to configure Enterprise Reset option in Set
 ## What's Next
 Now that you have learned how to configure Settings UI with Enterprise Reset option using Settings Manager on your Symbol Android devices through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "USB Manager" Mx feature and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxSettingsManagerTutorial.zip)
+
+
+
+
+
+
+
+
+
+

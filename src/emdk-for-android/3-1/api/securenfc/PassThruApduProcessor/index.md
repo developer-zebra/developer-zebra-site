@@ -1,5 +1,8 @@
 ---
 title: PassThruApduProcessor
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class is designed for the NFC applications to perform secure communication with the
@@ -203,5 +206,16 @@ Communication protocol between a SAM and tag.
 * **T0** -T-0 byte-oriented half duplex transmission protocol
 
 * **T1** -T-1 block-oriented half duplex transmission protocol
+
+
+
+
+
+
+
+
+
+
+
 
 

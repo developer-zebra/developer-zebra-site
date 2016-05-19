@@ -1,5 +1,8 @@
 ---
-title:  Data Capture Intents Tutorial
+title: Data Capture Intents Tutorial
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -449,3 +452,14 @@ In this article, we covered:
 
 ## Sample Code
 Download the source for this project in the [associated sample](/emdk-for-android/4-0/guide/sample/sampledatacaptureintent).
+
+
+
+
+
+
+
+
+
+
+

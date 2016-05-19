@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Code39
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Code39 class provides access to parameters that are available for
@@ -158,5 +161,16 @@ Options: Security level 0 , Security Level 1 , Security Level 2
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
+
+
+
+
+
+
+
+
+
+
+
 
 

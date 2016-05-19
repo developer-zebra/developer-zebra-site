@@ -3,23 +3,23 @@ csp: dhcpoptionmgr
 title: Vendor Class Identifier (60)
 type: parm
 order: 12
-sincemx: 5.0
+mx: "5.0"
 parm:
   pivotal: No
-  name: TFTPSerAddrState
+  name: VendorClassIdState
   type: list
   list:
     - code: 0
-      sincemx: 5.0
+      mx: "5.0"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
     - code: 1
       name: Enable
-      sincemx: 5.0
+      mx: "5.0"
       description: This value will cause this DHCP Option to be turned on and hence will cause the specified Vendor Class to be sent by the DHCP Client to the DHCP Server in the DHCP Request.
     - code: 2
       name: Disable
-      sincemx: 5.0
+      mx: "5.0"
       description: This value will cause this DHCP Option to be turned off and hence will prevent a Vendor Class from being to be sent by the DHCP Client to the DHCP Server.
 ---
 

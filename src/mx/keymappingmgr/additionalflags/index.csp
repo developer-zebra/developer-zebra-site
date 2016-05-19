@@ -1,27 +1,26 @@
 ---
 csp: keymapmgr
-title:  Include additional flags
+title:  Include Additional Flags
 type: parm
 order: 16
-sincemx: 4.4
+mx: "4.4"
 parm:
-  presentif: The Action value is "Remap a key" *AND* Choose a key to modify is not "None" *AND* the Key Behavior is "Send intent"
+  presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
+  name: BaseIntentIncludeFlags,BlueIntentIncludeFlags,OrangeIntentIncludeFlags,GreyIntentIncludeFlags,ShiftIntentIncludeFlags,ControlIntentIncludeFlags
   pivotal: No
   type: string
 ---
 
-Parm name:
+Used to specify the Intent Flags that should be included in the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. Intent Flags specify information about how an Intent should be processed by the Android system and/or by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent.
 
-* For Base Key State Table: BaseIntentIncludeFlags
-* For Blue Key State Table: BlueIntentIncludeFlags
-* For Orange Key State Table: OrangeIntentIncludeFlags
-* For Grey Key State Table: GreyIntentIncludeFlags
-* For Shift Key State Table: ShiftIntentIncludeFlags
-* For Control Key State Table: ControlIntentIncludeFlags
+Parm names:
 
-Description: 
-
-This parm allows you to specify the Intent Flags that should be included in the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. Intent Flags specify information about how an Intent should be processed by the Android system and/or by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no value for this attribute to be set in the Intent.
+* For Base Key State Table: <b>BaseIntentIncludeFlags</b>
+* For Blue Key State Table: <b>BlueIntentIncludeFlags</b>
+* For Orange Key State Table: <b>OrangeIntentIncludeFlags</b>
+* For Grey Key State Table: <b>GreyIntentIncludeFlags</b>
+* For Shift Key State Table: <b>ShiftIntentIncludeFlags</b>
+* For Control Key State Table: <b>ControlIntentIncludeFlags</b>
 
 Parm value input rules: 
 

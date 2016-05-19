@@ -1,5 +1,8 @@
 ---
-title:  Errors When Processing Profiles
+title: Errors When Processing Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -467,6 +470,14 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 2. Installing the EMDK for Android application without deploying the EMDK runtime on a Symbol device will fail because of missing shared library on the device. 
 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxErrorsTutorial.zip).
+
+
+
+
+
+
+
+
+
+
 

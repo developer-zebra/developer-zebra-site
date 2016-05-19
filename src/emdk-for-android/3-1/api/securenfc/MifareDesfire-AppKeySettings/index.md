@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.AppKeySettings
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -32,5 +35,16 @@ Cryptography method of whole application CRYPTO_DES_2K3DES (0x00)
 **Type:**
 
 byte
+
+
+
+
+
+
+
+
+
+
+
 
 

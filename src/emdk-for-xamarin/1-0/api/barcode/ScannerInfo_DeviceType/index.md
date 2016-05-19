@@ -1,5 +1,8 @@
 ---
 title: ScannerInfo.DeviceType
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 List of supported scanner device types.
 
@@ -46,5 +49,18 @@ The scanner device class is laser.
 The scanner device class is not defined.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

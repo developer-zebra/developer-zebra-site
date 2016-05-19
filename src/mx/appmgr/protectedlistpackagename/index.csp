@@ -2,7 +2,9 @@
 csp: appmgr
 title: Protected List Package Name
 type: parm
-order: 6
+order: 7
+mx: "4.2"
+osx: "1.2"
 parm:
   presentif: The Protected List Action is "Add Application to Protected List" or "Remove Application from Protected List"
   pivotal: No
@@ -14,6 +16,6 @@ Provide the Package Name of the application that should be Added to or Removed f
 
 Parm value input rules: 
 
-* String containing the valid name of the package. For example, 'com.mycompany.mypackage'.
-* The minimum length is 1 character and the maximum length is 255 characters
-* The package names must be separated by commas
+* String containing the valid name of the package. For example: `com.mycompany.mypackage`
+* The minimum length is 1 character; the maximum length is 255 characters
+* Package names must be separated by commas

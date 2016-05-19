@@ -1,6 +1,9 @@
 ---
 title: DiagnosticException
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,15 @@ Returns the DiagnosticResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.DiagnosticResults - Error type (Diagnostic Result)
+
+
+
+
+
+
+
+
+
+
+
 

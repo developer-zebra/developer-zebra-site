@@ -1,26 +1,30 @@
 ---
 csp: uimgr
-title: Enable/Disable HomeKey
+title: HomeKey Enable/Disable
 type: parm
 order: 5
-sincemx: 4.3
+mx: "4.3"
+osx: "1.0"
 parm:
   pivotal: No
   name: HomeKeyUsage
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.0"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the Home Key can be used.
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the HOME key can be used; any previously selected setting will be retained.
     - code: 1
       name: Enable 
-      sincemx: 4.3
-      description: This value will cause use of the Home Key to be allowed.
+      mx: "4.3"
+      osx: "1.0"
+      description: Allows use of the HOME Key.
     - code: 2
       name: Disable
-      sincemx: 4.3
-      description: This value will cause use of the Home Key to be prevented, thus preventing the Home Key from being used to navigate away from the currently running application to the Current Home Screen Application. **Note:** Preventing use of the Home Key does not affect the "long press" behavior of the Home Key. To completely prevent all functionality of the Home Key, the KeyMappingMgr can be used (on supported devices) to remap the Home Key to some other behavior (or to no behavior).
+      mx: "4.3"
+      osx: "1.0"
+      description: Prevents use of the HOME key, thus preventing it from being used to navigate to the current Home Screen application and away from the currently running application. Note- Preventing use of the HOME key does not affect its "long press" behavior. To completely prevent all HOME key functionality, the KeyMappingMgr can be used (on supported devices) to remap the HOME key to some other behavior (or no behavior).
 ---
 
-This parm allows you to control whether use of the use of Home Key is allowed. Preventing use of the Home Key may be desirable when using an application that should normally not be left.  By preventing the use of the Home Key, a common method of navigating away from the application (inadvertently or intentionally) can be eliminated.
+Can be used to prevent use of the HOME key. This might be desirable when using an application that should normally not be exited, such as that of a kiosk. By preventing the use of the HOME key, a common method of navigating away from the application (whether intentional or not) can be eliminated.

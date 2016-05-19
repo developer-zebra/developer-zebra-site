@@ -1,5 +1,8 @@
 ---
-title:  MSR Profile Feature Reference
+title: MSR Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -32,4 +35,15 @@ In order for your application to receive the barcode data, you must specify one 
 * [Intent](../profileintent) 
 * [Keystroke](../profilekeystroke)
 * [IP](../profileIP)
+
+
+
+
+
+
+
+
+
+
+
 

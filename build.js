@@ -171,6 +171,8 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 });
 
 var sitebuild = Metalsmith(__dirname)
+    .clean(false)
+    .concurrency(1000)
 	.metadata({
 	    site: {
 	      title: 'Zebra Technologies - EMDK Samples',
@@ -212,78 +214,6 @@ var sitebuild = Metalsmith(__dirname)
         },
 
 	}))
-    .use(findLayout({
-        pattern: 'mx',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: 'samples',
-        layoutName: 'sample.html'
-    }))
-    .use(findLayout({
-        pattern: '[^/]+/[^/]+/api',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: '[^/]+/[^/]+/guide',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: '[^/]+/[^/]+/tutorial',
-        layoutName: 'guide.html'
-    }))
-    .use(findLayout({
-        pattern: 'stagenow',
-        layoutName: 'guide.html'
-    }))
-    .use(findProduct({
-        pattern: 'emdk-for-android',
-        productName: 'EMDK For Android'
-    }))
-    .use(findProduct({
-        pattern: 'stagenow',
-        productName: 'Stagenow'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-android/3-1',
-        productVersionName: '3.1'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-android/4-0',
-        productVersionName: '4.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-android/latest',
-        productVersionName: '4.0'
-    }))
-    .use(findProduct({
-        pattern: 'emdk-for-xamarin',
-        productName: 'EMDK For Xamarin'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-xamarin/1-0',
-        productVersionName: '1.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'emdk-for-xamarin/latest',
-        productVersionName: '1.0'
-    }))
-    .use(findProductVersion({
-        pattern: 'stagenow/2-2',
-        productVersionName: '2.2'
-    }))
-    .use(mxversion({
-        pattern: 'mx/4-2/',
-        mxversion: '4.2'
-    }))
-    .use(mxversion({
-        pattern: 'mx/4-4/',
-        mxversion: '4.4'
-    }))
-    .use(mxversion({
-        pattern: 'mx/5-0/',
-        mxversion: '5.0'
-    }))
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',
         automenu: true
@@ -333,52 +263,52 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/4-0/'
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/',
+        folder: 'emdk-for-android/4-1/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/barcode',
+        folder: 'emdk-for-android/4-1/api/barcode',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/core',
+        folder: 'emdk-for-android/4-1/api/core',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/payment',
+        folder: 'emdk-for-android/4-1/api/payment',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/PersonalShopper',
+        folder: 'emdk-for-android/4-1/api/PersonalShopper',
         automenu: true,
         ascontent: true
     }))
     
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/scanandpair',
+        folder: 'emdk-for-android/4-1/api/scanandpair',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/securenfc',
+        folder: 'emdk-for-android/4-1/api/securenfc',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/serialcomm',
+        folder: 'emdk-for-android/4-1/api/serialcomm',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/api/simulscan',
+        folder: 'emdk-for-android/4-1/api/simulscan',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/latest/'
+        folder: 'emdk-for-android/4-1/'
     }))
     .use(foldermenu({
         folder: 'emdk-for-android/3-1/api/',
@@ -436,21 +366,21 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-xamarin/1-0/'
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/latest/api/',
+        folder: 'emdk-for-xamarin/2-0/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/latest/api/barcode',
+        folder: 'emdk-for-xamarin/2-0/api/barcode',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/latest/api/core',
+        folder: 'emdk-for-xamarin/2-0/api/core',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/latest/'
+        folder: 'emdk-for-xamarin/2-0/'
     }))
     .use(foldermenu({
         folder: 'mx/4-4/',
@@ -470,6 +400,15 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'stagenow/2-2/'
+    }))
+    .use(foldermenu({
+        folder: 'stagenow/2-3/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-3/'
+    }))
+    .use(foldermenu({
+        folder: 'enterprise-keyboard/1-0/'
     }))
     .use(showdown({literalMidWordUnderscores:true}))
     .use(snippet({
@@ -505,4 +444,3 @@ var sitebuild = Metalsmith(__dirname)
       console.log('\u0007');//System bell to alert when build is complete
     }
   });
-

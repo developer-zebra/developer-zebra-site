@@ -1,5 +1,8 @@
 ---
-title:  Clock Manager Profile Feature Reference
+title: Clock Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -69,4 +72,15 @@ Note the change of date as well as time. In this case, as the device converts th
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=Clock&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 

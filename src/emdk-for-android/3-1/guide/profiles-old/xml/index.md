@@ -1,5 +1,8 @@
 ---
-title:  XML Manager Profile Feature Reference
+title: XML Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -28,6 +31,17 @@ Specify the XML processing mode to use
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=XmlMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

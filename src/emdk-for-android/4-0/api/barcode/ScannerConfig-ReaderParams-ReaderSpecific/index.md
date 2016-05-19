@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -59,4 +62,15 @@ Provide access to set the laser specific settings if the scanner device is laser
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific
+
+
+
+
+
+
+
+
+
+
+
 

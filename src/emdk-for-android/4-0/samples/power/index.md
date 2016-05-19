@@ -1,22 +1,21 @@
 ---
 publish: true
 title: Rebooting The Device
-description: This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).
+description: 'This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).'
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfilePowerMgrSample1.zip   
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfilePowerMgrSample1.zip'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfilePowerMgrSample1.zip    
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfilePowerMgrSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfilePowerMgrSample1
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfilePowerMgrSample1'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfilePowerMgrSample1
-
-features: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/ProfilePowerMgrSample1'
+features:
   - Profile Manager
   - Power Manager
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -28,10 +27,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
+layout: sample.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Overview
@@ -68,3 +70,18 @@ The following guide will walk you through setting up the EMDK samples in your ID
 4.  Check the status field.   
   ![img](1_3.png)  
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

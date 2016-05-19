@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.UPCE1
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds UPCE1 configuration settings.
@@ -68,5 +71,16 @@ Enable this to convert UPCE1 decoded data to UPC-A format before transmission.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

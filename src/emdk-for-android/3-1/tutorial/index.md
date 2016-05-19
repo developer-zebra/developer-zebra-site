@@ -38,7 +38,7 @@ automenu:
           url: /emdk-for-android/3-1/tutorial/tutMxGPRSManager
         - title: Persistence Manager
           url: /emdk-for-android/3-1/tutorial/tutMxPersistManager
-        - title: Power Key Manager 
+        - title: Power Key Manager
           url: /emdk-for-android/3-1/tutorial/tutMxPowerKeyManager
         - title: Power Manager
           url: /emdk-for-android/3-1/tutorial/tutMxPowerManager
@@ -82,6 +82,18 @@ automenu:
           url: /emdk-for-android/3-1/tutorial/tutScanAndPairAPI
         - title: Capture critical data from documents using SimulScan API
           url: /emdk-for-android/3-1/tutorial/tutSimulScanAPI
-
+product: EMDK For Android
+productversion: '2.3'
 ---
+
+
+
+
+
+
+
+
+
+
+
 

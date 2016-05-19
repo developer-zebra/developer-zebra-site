@@ -1,5 +1,8 @@
 ---
 title: ProfileManager.ResultData
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class provides the Status detail of processProfileAsync method.
@@ -65,5 +68,16 @@ Returns the profile data as ProfileConfig object.
 **Returns:**
 
 com.symbol.emdk.ProfileConfig
+
+
+
+
+
+
+
+
+
+
+
 
 

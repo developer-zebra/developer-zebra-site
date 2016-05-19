@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.CODE_ID_TYPE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 A Code ID character identifies the code type of a scanned bar code.
@@ -23,5 +26,16 @@ A Code ID character identifies the code type of a scanned bar code.
 * **AIM** -A standards based three character prefix.
 
 * **SYMBOL** -A Symbol defined single character prefix.
+
+
+
+
+
+
+
+
+
+
+
 
 

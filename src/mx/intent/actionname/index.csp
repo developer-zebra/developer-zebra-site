@@ -3,6 +3,8 @@ csp: intent
 title: Android Action Name
 type: parm
 order: 3
+mx: "4.1"
+apilevel: "1"
 parm:
   pivotal: No
   name: ActionName

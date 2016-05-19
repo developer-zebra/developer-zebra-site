@@ -1,6 +1,9 @@
 ---
 title: ScannerConfig.DecoderParams.Code11
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -101,4 +104,15 @@ Transmit Code 11 data with or without the check digit.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 

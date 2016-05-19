@@ -1,5 +1,8 @@
 ---
 title: PersonalShopper
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This is the primary class to access the cradle and diagnostics API and this class is extends the EMDKBase class.  
@@ -24,5 +27,16 @@ The field to access the diagnostics feature.
 **Type:**
 
 com.symbol.emdk.personalshopper.Diagnostic
+
+
+
+
+
+
+
+
+
+
+
 
 

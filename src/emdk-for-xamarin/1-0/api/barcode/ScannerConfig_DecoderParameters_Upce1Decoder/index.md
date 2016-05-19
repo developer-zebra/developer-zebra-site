@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Upce1Decoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The Upce1 class provides access to parameters that are available for the Upce1 decoder.
 
@@ -19,5 +22,18 @@ Controls the preamble applied to the bar code.
 Flag to enable reporting the bar code check digit.
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

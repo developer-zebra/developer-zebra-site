@@ -2,30 +2,40 @@
 csp: appmgr
 title: Protected List Action
 type: parm
-order: 5
+order: 6
+mx: "4.2"
+osx: "1.2"
 parm:
   pivotal: Yes
-  name: AnalyticsAction
+  name: ProtectedListAction
   type: list
   list:
     - code: 0
       name: Do nothing
-      description: This value (or the absence of this parm from the XML) will not cause any changes to the Protected List.
+      description: This value (or the absence of this parm from the XML) will cause no changes to the Protected List.
+      mx: "4.2"
+      osx: "1.2"
     - code: 1
       name: Add Application to Protected List
-      description: This value will cause the Package Name of an application to be Added to the Protected List.
+      description: Adds the Package Name of an application to the Protected List.
+      mx: "4.2"
+      osx: "1.2"
     - code: 2
       name: Remove Application from Protected List
-      description: This value will cause the Package Name of an application to be Removed from the Protected List.
+      description: Removes the Package Name of an application from the Protected List.
+      mx: "4.2"
+      osx: "1.2"
     - code: 3
-      name: Remove All Application from Protected List
-      description: This value will cause all Package Names to be Removed from the Protected List.
+      name: Remove All Applications from Protected List
+      description: Removes all Package Names from the Protected List.
+      mx: "4.2"
+      osx: "1.2"
 ---
 
-The Protected List is a feature that allows certain applications to be exempted from certain constraints that are imposed on applications when Multi-User Mode is enabled. In particular, applications whose Package Names are on the Protected List will:
+The Protected List allows specified applications to be exempted from certain constraints imposed on applications when Multi-User Mode is enabled. Applications with Package Names on the Protected List will:
 
 * Be allowed to launch when no device user is logged in
 * Not be terminated when a device user logs out
-* Have only one copy of its data for all users, even if Multi-User Data Separation is enabled
+* Maintain a single copy of data for use by all users, even if Multi-User Data Separation is enabled
 
->**Note:** Multi-User Mode is supported on all Zebra Android devices that support Zebra MX functionality, but the AccessMgr currently does not support enabling Multi-User Mode. Multi-User Mode can be enabled on devices that support it, but only using unsupported tools or mechanisms that do not scale to large deployments. For this reason, the ability to use the AppMgr to manage the Protected List may provide little or no immediate benefit. In the future, when the AccessMgr is enhanced to support enabling Multi-User Mode, the ability to use the AppMgr to manage the Protected List will likely be more meaningful.
+>**Note:** Multi-User Mode is supported on all Zebra Android devices that support Zebra MX functionality, but the AccessMgr cannot currently enable it. Enabling Multi-User Mode currently is done using unsupported tools or mechanisms that might not scale to large deployments. For this reason, the ability to use the AppMgr to manage the Protected List provides limited benefit. 

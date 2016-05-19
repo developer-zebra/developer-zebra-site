@@ -1,6 +1,8 @@
 ---
 title: Using the EMDK Samples with Android Studio
-layout: guide.html
+layout: sample.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ##Loading the Sample Application
@@ -29,5 +31,22 @@ When the import process is complete, the project load in the IDE, ready to deplo
  Android studio will push the application to your device via USB and start the main activity.
 
  ![img](profileWifiSample1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

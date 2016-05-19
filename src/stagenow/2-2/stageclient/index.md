@@ -1,5 +1,8 @@
 ---
-title:  Device Staging
+title: Device Staging
+layout: guide.html
+product: Stagenow
+productversion: '2.1'
 ---
 
 ## Introduction
@@ -223,4 +226,13 @@ Specifically, to stage a device that includes RD Client:
 3. The device reboots, and then StageNow Client automatically launches and completes the staging process in order to apply the profile settings. 
 
 ![img](../images/Client_RDclient.png)
+
+
+
+
+
+
+
+
+
 

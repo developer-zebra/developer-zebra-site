@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.CheckDigit
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The number of check digits to be verified. With MSI symbols, one check
@@ -19,5 +22,16 @@ The number of check digits to be verified. With MSI symbols, one check
 * **ONE** -Verify one check digit.
 
 * **TWO** -Verify two check digits.
+
+
+
+
+
+
+
+
+
+
+
 
 

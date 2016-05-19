@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.CardVersionInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -29,5 +32,16 @@ Manufacturer information
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.CardVersionInfo.ManufacturerInfo
+
+
+
+
+
+
+
+
+
+
+
 
 

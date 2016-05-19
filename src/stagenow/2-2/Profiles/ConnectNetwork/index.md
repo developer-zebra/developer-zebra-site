@@ -1,5 +1,8 @@
 ---
 title: Connect Network
+layout: guide.html
+product: Stagenow
+productversion: '2.1'
 ---
 Use this Wizard to connect to a Wi-Fi, GPRS, or Ethernet network. 
 
@@ -139,3 +142,12 @@ To create a Connect Ethernet Network profile:
 11. If you selected Yes, choose whether to set up Wi-Fi options and/or Wi-Fi profiles. See [Setting Types / Wifi mgr](/stagenow/2-2/csp/wifi).
 
 12. Select Continue to proceed to the [Review window](/stagenow/2-2/stagingprofiles?Review).
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The ReaderParams class holds the parameters for a
@@ -18,5 +21,16 @@ ReaderSpecificParams provides access to the reader specific parameters.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific
+
+
+
+
+
+
+
+
+
+
+
 
 

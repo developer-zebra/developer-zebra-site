@@ -1,6 +1,9 @@
 ---
 title: VersionManager.VERSION_TYPE
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,15 @@ All the version keys for [ VersionManager.getVersion(VERSION_TYPE)](../VersionMa
 * **MX** -MX framework version
 
 * **BARCODE** -Barcode Scanner Framework version.
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: Manage Device Security
+layout: guide.html
+product: Stagenow
+productversion: '2.1'
 ---
 Use this Wizard to configure security options and policies for a device.  This can whitelist and blacklist applications, control screen time-outs, and enable or disable an SD card, camera, GPRS, Bluetooth, GPS, or USB. This can also encrypt SD cards and control the PowerKey menu, settings UI, unknown sources, and threat management. 
 
@@ -53,3 +56,12 @@ To create a Manage Device Security profile:
     Then see [Setting Types / EncryptMgr](/stagenow/2-2/csp/encrypt) for instructions.
 
 18. Select Continue to proceed to the [Review window](/stagenow/2-2/stagingprofiles?Review).
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 ---
 title: MifareSamException
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,15 @@ Returns the MifareSamResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifareSamResults
+
+
+
+
+
+
+
+
+
+
+
 

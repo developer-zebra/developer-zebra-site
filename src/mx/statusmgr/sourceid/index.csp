@@ -3,6 +3,7 @@ csp: statusmgr
 title: Source ID
 type: parm
 order: 7
+mx: "5.0"
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Notify Status"

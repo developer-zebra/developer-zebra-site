@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.LCD_MODE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Enable or disable LCD mode (for Blockbuster imager devices only).
@@ -20,5 +23,16 @@ Enable or disable LCD mode (for Blockbuster imager devices only).
 * **DISABLED** -Disables LCD mode
 
 * **ENABLED** -Enables LCD mode.
+
+
+
+
+
+
+
+
+
+
+
 
 

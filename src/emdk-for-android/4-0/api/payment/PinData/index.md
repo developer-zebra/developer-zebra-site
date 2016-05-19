@@ -1,6 +1,9 @@
 ---
 title: PinData
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -37,4 +40,15 @@ Tells whether the pin is entered by the user or not.
 **Returns:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 

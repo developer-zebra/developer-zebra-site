@@ -1,5 +1,8 @@
 ---
-title:  EMDK For Android Setup
+title: EMDK For Android Setup
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -44,4 +47,15 @@ Although support has been deprecated, this version of the EMDK will integrate wi
 **Windows** - Follow this [**guide**](/emdk-for-android/4-0/guide/setupEclipse) to setup "EMDK for Android" in Eclipse.
 
 **Mac** - EMDK for android development in Eclipse on Mac, is not supported.
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: MifareSam.SamInfo.HardwareInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Hardware information
@@ -45,5 +48,16 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
+
+
+
 
 

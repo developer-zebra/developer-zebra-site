@@ -1,6 +1,6 @@
 ---
 title: Profile Manager
-description: Profile Manager is an exclusive EMDK technology offered within your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.
+description: 'Profile Manager is an exclusive EMDK technology offered within your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.'
 layout: list-apis.html
 automenu:
   items:
@@ -14,8 +14,6 @@ automenu:
           url: /emdk-for-android/4-0/mx/overview
         - title: Choosing a Version
           url: /emdk-for-android/4-0/mx/choosing-a-version
-        - title: Feature Version Matrix
-          url: /emdk-for-android/4-0/mx/feature-version-matrix
         - title: Feature Compatibility
           url: /emdk-for-android/4-0/mx/compatibility
         - title: Getting Device MX Version
@@ -29,17 +27,17 @@ automenu:
     - title: Data Capture
       items:
         - title: Activity Selection
-          url: /emdk-for-android/4-0/mx/data-capture/activity   
+          url: /emdk-for-android/4-0/mx/data-capture/activity
         - title: Barcode Input
-          url: /emdk-for-android/4-0/mx/data-capture/barcode   
+          url: /emdk-for-android/4-0/mx/data-capture/barcode
         - title: Int Output
-          url: /emdk-for-android/4-0/mx/data-capture/intent   
+          url: /emdk-for-android/4-0/mx/data-capture/intent
         - title: IP Output
           url: /emdk-for-android/4-0/mx/data-capture/IP
         - title: Keystroke Output
           url: /emdk-for-android/4-0/mx/data-capture/keystroke
         - title: MSR Input
-          url: /emdk-for-android/4-0/mx/data-capture/msr   
+          url: /emdk-for-android/4-0/mx/data-capture/msr
     - title: Device Configuration
       items:
         - title: Analytics Manager
@@ -72,7 +70,7 @@ automenu:
           url: /emdk-for-android/4-0/mx/cameramgr
         - title: Cert Manager
           url: /emdk-for-android/4-0/mx/certmgr
-        - title: DevAdmin 
+        - title: DevAdmin
           url: /emdk-for-android/4-0/mx/devadmin
         - title: Encrypt Manager
           url: /emdk-for-android/4-0/mx/encryptmgr
@@ -83,7 +81,7 @@ automenu:
         - title: USB Manager
           url: /emdk-for-android/4-0/mx/usbmgr
     - title: UI Settings
-      items: 
+      items:
         - title: KeyMap Manager
           url: /emdk-for-android/4-0/mx/keymappingmgr
         - title: PowerKey Manager
@@ -104,6 +102,18 @@ automenu:
           url: /emdk-for-android/4-0/mx/wifi/
         - title: Wireless Manager
           url: /emdk-for-android/4-0/mx/wirelessmgr/
-
+product: EMDK For Android
+productversion: '4.0'
 ---
+
+
+
+
+
+
+
+
+
+
+
 

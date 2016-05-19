@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Composite_AB
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -35,4 +38,15 @@ Gets and Sets UCC Link Mode using [ ProfileConfig.UCC_LINK_MODE](../ProfileConfi
 **Type:**
 
 com.symbol.emdk.ProfileConfig.UCC_LINK_MODE
+
+
+
+
+
+
+
+
+
+
+
 

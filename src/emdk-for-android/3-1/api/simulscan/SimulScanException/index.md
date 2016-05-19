@@ -1,5 +1,8 @@
 ---
 title: SimulScanException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The SimulScan APIs throws SimulScanException when an error occurs.
@@ -21,4 +24,15 @@ Returns the SimulScanResults object that provides additional information on the 
 **Returns:**
 
 com.symbol.emdk.simulscan.SimulScanResults
+
+
+
+
+
+
+
+
+
+
+
 

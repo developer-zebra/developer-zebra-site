@@ -1,5 +1,8 @@
 ---
-title:  Access Manager Profile Feature Reference
+title: Access Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Overview
 
@@ -77,4 +80,15 @@ You can specify and restrict specific applications the ability to submit changes
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=AccessMgr&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 

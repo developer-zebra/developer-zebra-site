@@ -2,12 +2,12 @@
 publish: true
 title: Data Capture
 description: Shows how to use the EMDK for Android Profile APIs to manage Data Capture profiles.
-download: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/archive/ProfileDataCaptureSample1.zip
-source: https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/ProfileDataCaptureSample1
-features: 
+download: 'https://github.com/developer-zebra/samples-emdkforxamarin-1_0/archive/ProfileDataCaptureSample1.zip'
+source: 'https://github.com/developer-zebra/samples-emdkforxamarin-1_0/tree/ProfileDataCaptureSample1'
+features:
   - Profile Manager
   - Data Capture
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -19,10 +19,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
+layout: sample.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 
 ##Overview
@@ -75,3 +78,20 @@ The Status message should change, stating that the profile was successfully modi
 ![img](../../images/samples/ProfileDataCaptureScreen3.png)
 
 To test that your settings have taken effect, scan a barcode type that was disabled previously, the barcode should not scan. Now scan a barcode that was previously disabled, the user interface should update with the decoded barcode data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

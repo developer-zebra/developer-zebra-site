@@ -1,6 +1,9 @@
 ---
 title: MifareSam.SamInfo
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -47,4 +50,15 @@ byte
 **Type:**
 
 com.symbol.emdk.securenfc.MifareSam.SamMode
+
+
+
+
+
+
+
+
+
+
+
 

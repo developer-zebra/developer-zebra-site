@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.Matrix2of5
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The Matrix2of5 class provides access to parameters that are
@@ -87,5 +90,16 @@ Enable this feature to check the integrity of all Matrix 2 of 5
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

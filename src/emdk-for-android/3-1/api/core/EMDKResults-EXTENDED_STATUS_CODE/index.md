@@ -1,5 +1,8 @@
 ---
 title: EMDKResults.EXTENDED_STATUS_CODE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines all the extended status codes the library returns.
@@ -54,5 +57,16 @@ profileName is not in that format.
 * **INVALID_VALUE** -The parameters given are invalid.
 
 * **APP_NOT_ALLOWED_TO_SUBMIT_XML** -Permission error. Application is not allowed to submit xml.
+
+
+
+
+
+
+
+
+
+
+
 
 

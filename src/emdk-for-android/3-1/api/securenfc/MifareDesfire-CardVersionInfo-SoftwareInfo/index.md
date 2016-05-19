@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.CardVersionInfo.SoftwareInfo
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Software information
@@ -45,5 +48,16 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,8 +1,6 @@
 ---
 title: EMDK For Xamarin
-insert:
-    file: emdk-for-xamarin/1-0/guide/about/index.md
-layout: guide.html
+layout: list-mx.html
 menu:
   title: EMDK For Xamarin 1.0
   img: /emdk-for-xamarin/images/logo.png
@@ -21,6 +19,20 @@ menu:
       url: /emdk-for-xamarin/1-0/api
     - icon: fa fa-search
       url: /emdk-for-xamarin/1-0/search
-        
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
 

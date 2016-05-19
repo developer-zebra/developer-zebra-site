@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.ActivitySelection
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Class for dealing with ActivitySelection of profile data  ProfileConfig#activitySelection
@@ -35,5 +38,16 @@ Gets and Sets activities to the profile  ProfileConfig.ActivitySelection#activit
 **Type:**
 
 java.util.ArrayList
+
+
+
+
+
+
+
+
+
+
+
 
 

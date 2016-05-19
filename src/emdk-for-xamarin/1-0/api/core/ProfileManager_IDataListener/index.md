@@ -1,5 +1,8 @@
 ---
 title: ProfileManager.IDataListener
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 An interface for notifying client applications to notify processProfileAsync result.
 
@@ -16,6 +19,19 @@ This is the callback method to be called upon the processProfileAsync task compl
 * Symbol.XamarinEMDK.ProfileManager.ResultData **p0** - ResultData object.
 
 **Returns** - System.Void
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

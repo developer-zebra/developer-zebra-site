@@ -1,5 +1,8 @@
 ---
-title:  Intent Profile Feature Reference
+title: Intent Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -94,5 +97,16 @@ track separators are included as configured.
 * `com.motorolasolutions.emdk.datawedge.msr_track1_hashed`: MSR track 1 hashed data is returned as a byte array.
 * `com.motorolasolutions.emdk.datawedge.msr_track2_hashed`: MSR track 2 hashed data is returned as a byte array.
 * `com.motorolasolutions.emdk.datawedge.msr_track3_hashed`: MSR track 3 hashed data is returned as a byte array.
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Discrete_2of5
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds Discrete 2 of 5 configuration settings.
@@ -62,5 +65,16 @@ Sets the reader to read the bar code twice before accepting data (default - enab
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: Secure NFC Programmer’s
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ##Introduction
@@ -308,4 +311,15 @@ The APIs provided by this class is used to enable the connection with the tag ,a
 			    } catch (MifarePlusSL3Exception e) {
 			   e.printStackTrace();
 		 	  }
+
+
+
+
+
+
+
+
+
+
+
 

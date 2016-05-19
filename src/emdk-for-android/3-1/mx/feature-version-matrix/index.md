@@ -9,8 +9,7 @@ mxversions:
   - text: MX 4.4
     value: 4.4
   - text: MX 5.0
-    value: 5.0
-
+    value: 5
 csps:
   - type: section
     title: Access Manager
@@ -57,77 +56,88 @@ csps:
     url: /emdk-for-android/3-1/mx/componentmgr
     csp: componentmgr
   - type: section
-    title: DevAdmin 
+    title: DevAdmin
     url: /emdk-for-android/3-1/mx/devadmin
     csp: devadmin
   - type: section
-    title: DHCP Option Manager 
+    title: DHCP Option Manager
     url: /emdk-for-android/3-1/mx/dhcp
     csp: dhcpoptionmgr
   - type: section
-    title: Display Manager 
+    title: Display Manager
     url: /emdk-for-android/3-1/mx/displaymgr
     csp: displaymgr
   - type: section
-    title: Encrypt Manager 
+    title: Encrypt Manager
     url: /emdk-for-android/3-1/mx/encryptmgr
     csp: encryptmgr
   - type: section
-    title: GPRS Manager 
+    title: GPRS Manager
     url: /emdk-for-android/3-1/mx/gprsmgr
     csp: gprsmgr
   - type: section
-    title: KeyMapping Manager 
+    title: KeyMapping Manager
     url: /emdk-for-android/3-1/mx/keymappingmgr
     csp: keymapmgr
   - type: section
-    title: Persist Manager 
+    title: Persist Manager
     url: /emdk-for-android/3-1/mx/persistence
     csp: persistmgr
   - type: section
-    title: PowerKey Manager 
+    title: PowerKey Manager
     url: /emdk-for-android/3-1/mx/powerkeymgr
     csp: powerkeymgr
   - type: section
-    title: Power Manager 
+    title: Power Manager
     url: /emdk-for-android/3-1/mx/powermgr
     csp: powermgr
   - type: section
-    title: SD Card Manager 
+    title: SD Card Manager
     url: /emdk-for-android/3-1/mx/sdcardmgr
     csp: sdcardmgr
   - type: section
-    title: Settings Manager 
+    title: Settings Manager
     url: /emdk-for-android/3-1/mx/settingsmgr
     csp: settingsmgr
   - type: section
-    title: Threat Manager 
+    title: Threat Manager
     url: /emdk-for-android/3-1/mx/threatmgr
     csp: threatmgr
   - type: section
-    title: Touch Manager 
+    title: Touch Manager
     url: /emdk-for-android/3-1/mx/touchmgr
     csp: touchmgr
   - type: section
-    title: UI Manager 
+    title: UI Manager
     url: /emdk-for-android/3-1/mx/uimgr
     csp: uimgr
   - type: section
-    title: USB Manager 
+    title: USB Manager
     url: /emdk-for-android/3-1/mx/usbmgr
     csp: usbmgr
   - type: section
-    title: WiFi 
+    title: WiFi
     url: /emdk-for-android/3-1/mx/wifi
     csp: wifi
   - type: section
-    title: Wireless Manager 
+    title: Wireless Manager
     url: /emdk-for-android/3-1/mx/wirelessmgr
     csp: wirelessmgr
   - type: section
-    title: XML Manager 
+    title: XML Manager
     url: /emdk-for-android/3-1/mx/xml
     csp: xmlmgr
-
+product: EMDK For Android
+productversion: '2.3'
 ---
  
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 ---
 title: SecureNfcException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of SecureNfcException object throws SecureNfcException when an error
@@ -21,4 +24,15 @@ Returns the SecureNfcResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.SecureNfcResults
+
+
+
+
+
+
+
+
+
+
+
 

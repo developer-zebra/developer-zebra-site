@@ -1,5 +1,8 @@
 ---
-title:  Data Capture Intents Tutorial
+title: Data Capture Intents Tutorial
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -446,5 +449,16 @@ In this article, we covered:
 * Toggling of the soft scan trigger
 * Defining intent filters
 * Configuring DataWedge to send intents to our application
+
+
+
+
+
+
+
+
+
+
+
 
 

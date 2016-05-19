@@ -1,5 +1,8 @@
 ---
 title: CradleResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines all the error codes the cradle API returns.
@@ -28,5 +31,16 @@ Defines all the error codes the cradle API returns.
 * **INVALID_OBJECT** -Invalid Object
 
 * **UNDEFINED** -Error code not defined.
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
-title:  Using Broadcast Intent in DataCapture Profiles
+title: Using Broadcast Intent in DataCapture Profiles
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 ## Developing an EMDK for Android Application Part 4
 
@@ -392,5 +395,13 @@ Lastly we will run and test our application.
 
 11. Press return to go back to the MSR where you can swipe another card, or hit return again to go back to the main screen. 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-UsingBroadcastIntentinDataCaptureProfiles.zip).
+
+
+
+
+
+
+
+
+
+

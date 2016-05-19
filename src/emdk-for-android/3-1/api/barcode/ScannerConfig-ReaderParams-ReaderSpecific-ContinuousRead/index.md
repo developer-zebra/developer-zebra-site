@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ContinuousRead class provides access to continuous scanning related parameters.
@@ -52,5 +55,16 @@ This setting is used to prevent the scanner from decoding another symbol within 
 **Type:**
 
 int
+
+
+
+
+
+
+
+
+
+
+
 
 

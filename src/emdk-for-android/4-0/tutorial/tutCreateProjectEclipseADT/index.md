@@ -1,5 +1,8 @@
 ---
-title:  Creating Project using Eclipse with ADT
+title: Creating Project using Eclipse with ADT
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 ## Overview
 
@@ -47,6 +50,17 @@ This tutorial helps you creating a new Android application project using Eclipse
     >Currently there is nothing under "\assets" folder.  
     
     ![img](../../images/CreatingProjectEclipseIDEImages/main_activity.jpg)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

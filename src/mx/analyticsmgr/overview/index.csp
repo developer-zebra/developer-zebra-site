@@ -2,27 +2,28 @@
 csp: analyticsmgr
 title: Overview
 type: text
-order: 1
+order: 0
 ---
 
-The AnalyticsMgr controls collection of data by the Analytics Engine in the form of groups of metrics.
+The AnalyticsMgr controls data collection on Zebra devices running Android. Data is organized and collected according to feature groups and individual metrics within those groups. The AnalyticsMgr controls which data metrics are collected, how often and under what conditions, and whether collected data is stored on the device or in the Zebra Cloud.
 
-Zebra Android devices are equipped with an Analytics Engine that can collect information pertaining to the operation and health of a device. Such data can be used to detect devices that need attention or potentially could be used to detect trends that could allow problems to be prevented through preventative action.
-
-AnalyticsMgr also controls which data is collected and how often, and whether collected data is stored on the device or in the Cloud.
+Central to Zebra Analytics is the Analytics Engine, which collects information about the operation and health of a device and its battery, radios and other components. Such data can be used to detect devices in need of maintenance, are vulnerable to a security threat, or require other attention or preventative action to maintain optimal performance and avoid failures. 
 
 ### Main Functionality
  
-* Enable or Disable all data collection by the Analytics Engine
-* Control whether data is stored locally on the device or is sent to the Cloud
-* Control which data is collected by groups of metrics:
-	* WWAN Performance
-	* WLAN Performance
+* Enable or disable data collection by the Analytics Engine
+* Set data collection thresholds for individual metrics
+* Control whether data is stored on the device or in the Zebra Cloud
+* Automatically clear on-device data when Analytics Engine is disabled 
+* Control collection of detailed data metrics in these groups:
 	* Battery and CPU Status
-	* System Information
 	* GPS Information
-* Control the frequency of data collection by levels:
-	* None
-	* Low
-	* Medium
-	* High
+	* System Information
+	* WLAN Performance 
+	* WWAN Performance
+* Control the frequency of data collection by group:
+	* Never
+	* Low (infrequent)
+	* Medium (moderate frequency)
+	* High (very often)
+	* Custom intervals (in minutes)

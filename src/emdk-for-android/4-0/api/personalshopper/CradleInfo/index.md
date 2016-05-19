@@ -1,6 +1,9 @@
 ---
 title: CradleInfo
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -58,4 +61,15 @@ Return the firmware version of cradle.
 **Returns:**
 
 java.lang.String - Returns firmware version of the Cradle (null if not available)
+
+
+
+
+
+
+
+
+
+
+
 

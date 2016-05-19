@@ -3,23 +3,27 @@ csp: encryptmgr
 title: SDcard Operation
 type: parm
 order: 14
-sincemx: 4.3
+mx: "4.3"
+osx: "1.3"
 parm:
   pivotal: Yes
   name: SdCardOperation
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3"
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to whether Full Storage Card Encryption is activated or deactivated.
     - code: 1
       name: Encrypt SDcard
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3"
       description: This value will cause Full Storage Card Encryption to be activated, thus causing the Storage Card to be reformatted as encrypted.
     - code: 2
       name: Format SDcard
-      sincemx: 4.3
+      mx: "4.3"
+      osx: "1.3"
       description: This value will cause Full Storage Card Encryption to be deactivated, thus causing the Storage Card to be reformatted as unencrypted.
 ---
 

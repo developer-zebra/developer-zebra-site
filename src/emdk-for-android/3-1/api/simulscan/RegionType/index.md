@@ -1,5 +1,8 @@
 ---
 title: RegionType
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The data type contained within the region
@@ -15,5 +18,16 @@ The data type contained within the region
 * **BARCODE** -Data type is Barcode.
 
 * **PICTURE** -Data type is picture.
+
+
+
+
+
+
+
+
+
+
+
 
 

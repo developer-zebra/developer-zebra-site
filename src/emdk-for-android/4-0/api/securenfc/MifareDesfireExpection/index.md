@@ -1,6 +1,9 @@
 ---
 title: MifareDesfireExpection
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,15 @@ Returns the MifareDesfireResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifareDesfireResults
+
+
+
+
+
+
+
+
+
+
+
 

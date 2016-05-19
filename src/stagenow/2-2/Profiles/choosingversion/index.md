@@ -1,5 +1,8 @@
 ---
-title:  Profile Wizards
+title: Profile Wizards
+layout: guide.html
+product: Stagenow
+productversion: '2.1'
 ---
 
 This window displays the Wizard templates available for creating profiles and allows a Wizard for profile creation. 
@@ -16,3 +19,12 @@ Once you select the MX version, the selection is saved for subsequent profile cr
 
 
 ![img](../../images/WizardList_MXdropdown.jpg)
+
+
+
+
+
+
+
+
+

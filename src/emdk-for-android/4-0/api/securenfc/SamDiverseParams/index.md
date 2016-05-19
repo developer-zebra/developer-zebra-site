@@ -1,6 +1,9 @@
 ---
 title: SamDiverseParams
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -39,4 +42,15 @@ Diversification input data Data length: 8 bytes (3DES) or 16 bytes (AES)
 **Type:**
 
 byte
+
+
+
+
+
+
+
+
+
+
+
 

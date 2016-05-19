@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Code93Decoder
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The Code93 class provides access to parameters that are available for the Code93 decoder.
 
@@ -19,5 +22,18 @@ Use to set decode lengths. The valid range is 0 to 55.
 Sets the reader to read the bar code twice before accepting data.
 
 **Type** - System.Boolean
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

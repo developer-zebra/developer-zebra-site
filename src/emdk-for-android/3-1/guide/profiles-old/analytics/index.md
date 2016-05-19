@@ -1,5 +1,8 @@
 ---
-title:  Analytics Manager Profile Feature Reference
+title: Analytics Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -88,4 +91,15 @@ This profile feature allows your application to select where collected data logs
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=AnalyticsMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.SkipOnUnSupported
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -13,5 +16,16 @@ title: ScannerConfig.SkipOnUnSupported
 * **UNSUPPORTED_VALUE** -Skips the only unsupported values and continues with next.
 
 * **ALL** -Skips both unsupported paramters and values and continues with next.
+
+
+
+
+
+
+
+
+
+
+
 
 

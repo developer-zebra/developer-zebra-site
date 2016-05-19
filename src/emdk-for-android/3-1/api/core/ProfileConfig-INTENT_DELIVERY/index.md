@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.INTENT_DELIVERY
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Allows configuration of the Intent Output Plug-in for the profile.
@@ -22,5 +25,16 @@ Allows configuration of the Intent Output Plug-in for the profile.
 * **SEND_VIA_STARTSERVICE** -Send output via startService.
 
 * **BROADCAST_INTENT** -Send output via Broadcast intent.
+
+
+
+
+
+
+
+
+
+
+
 
 

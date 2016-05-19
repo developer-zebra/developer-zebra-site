@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Class for dealing with data capture profile data  ProfileConfig.DataCapture
@@ -61,5 +64,16 @@ Gets and Sets DataDelivery configuration object.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery
+
+
+
+
+
+
+
+
+
+
+
 
 

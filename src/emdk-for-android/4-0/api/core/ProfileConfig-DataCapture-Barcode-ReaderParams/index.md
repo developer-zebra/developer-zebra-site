@@ -1,6 +1,9 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.ReaderParams
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -240,4 +243,15 @@ Configures the Viewfinder modes supported for camera scanning.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.VIEWFINDER_MODE
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 ---
 title: EMDKResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 Class for holding EMDK result data.
 
@@ -190,4 +193,15 @@ Defines all the extended status codes the library returns.
 		* com.symbol.emdk.emdkservice.ProfileService.setProfile(String, String)
 
 * **APP_NOT_ALLOWED_TO_SUBMIT_XML** - Permission error. Application is not allowed to submit xml.
+
+
+
+
+
+
+
+
+
+
+
 

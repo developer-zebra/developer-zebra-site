@@ -1,6 +1,9 @@
 ---
 title: ProfileManager.DataListener
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -23,4 +26,15 @@ This is the callback method to be called upon the processProfileAsync task compl
 **Returns:**
 
 void
+
+
+
+
+
+
+
+
+
+
+
 

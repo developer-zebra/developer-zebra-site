@@ -1,6 +1,9 @@
 ---
 title: ProfileManager.PROFILE_FLAG
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -29,4 +32,15 @@ All the possible actions for [ ProfileManager.processProfile(String, PROFILE_FLA
 * **CHECK_COMPATIBILITY** -Validates the characteristic feature version in the existing profile if extraData is null, otherwise extra data profiles characteristic feature version.
  This validates only the profile version of the each feature (characteristic node version in the profile data), but not the individual fields.
  Calling process profile with this flag internally gets version of the different DSDs, the time required depends on numbers of characteristic features in a profile.
+
+
+
+
+
+
+
+
+
+
+
 

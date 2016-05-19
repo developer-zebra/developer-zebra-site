@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds Matrix 2 of 5 configuration settings.
@@ -97,5 +100,16 @@ Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verif
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

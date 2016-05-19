@@ -1,5 +1,8 @@
 ---
 title: CradleConfig.CradleLocation
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The class for provides access to the cradle location. 
@@ -56,5 +59,16 @@ The column identification number.
 **Type:**
 
 int
+
+
+
+
+
+
+
+
+
+
+
 
 

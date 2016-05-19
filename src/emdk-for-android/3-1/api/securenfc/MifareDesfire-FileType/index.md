@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.FileType
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -15,5 +18,16 @@ title: MifareDesfire.FileType
 * **LINEAR_RECORD** -Linear record file
 
 * **CYCLIC_RECORD** -Cyclic record file
+
+
+
+
+
+
+
+
+
+
+
 
 

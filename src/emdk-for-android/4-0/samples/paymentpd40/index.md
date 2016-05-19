@@ -4,23 +4,20 @@ title: Update Payment Device Firmware
 description: This sample demonstrates how to update firmware in the PD40 Mobile Payment device
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/PD40FWUpdateSample.zip  
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/PD40FWUpdateSample.zip'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/PD40FWUpdateSample.zip   
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/PD40FWUpdateSample.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/PD40FWUpdateSample
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/PD40FWUpdateSample'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/PD40FWUpdateSample
-
-features: 
-
-devices: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/tree/PD40FWUpdateSample'
+features: null
+devices:
   - MC40 KK
-  - MC40 JB 
-  
+  - MC40 JB
 image: 1-info.png
-screenshots: 
+screenshots:
   - 1-info.png
   - 2-info.png
   - 3-info.png
@@ -28,8 +25,9 @@ screenshots:
   - 1-update.png
   - 2-update.png
   - 3-update.png
-  
-
+layout: sample.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -88,3 +86,17 @@ The following guide will walk you through setting up the EMDK samples in your ID
 4.  Press teh **Browse** button and select the PD40 Firmware file you would like to use, then press the **OK** button.
 
     ![img](3-update.png) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

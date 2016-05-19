@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.ScanParameters
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The ScanParams class provides access to scanning parameters that are available for all decoders. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParams and Config.InterfaceParams) will be set automatically.
 
@@ -31,5 +34,18 @@ Decoding LED Notification.
 Decode LED ON duration upon successful decode in milliseconds. This value can be from 0ms to 1000ms with a step of 25ms
 
 **Type** - System.Int32
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

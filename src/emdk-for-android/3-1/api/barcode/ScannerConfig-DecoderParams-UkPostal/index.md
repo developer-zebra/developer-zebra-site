@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.UkPostal
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The UkPostal class provides access to parameters that are available
@@ -22,5 +25,16 @@ Transmit UK Postal data with or without the check digit.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

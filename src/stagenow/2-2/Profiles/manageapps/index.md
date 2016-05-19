@@ -1,5 +1,8 @@
 ---
 title: Manage Applications
+layout: guide.html
+product: Stagenow
+productversion: '2.1'
 ---
 Use this Wizard to manage applications on a device. This downloads, installs, uninstalls and launches any applications. This Wizard  also allows you to connect to a staging and/or production network, install licenses, configure simulScan, download data files, and reboot the device. 
 
@@ -50,3 +53,12 @@ To create a Manage Applications profile:
 12. Select whether or not to reboot the device. If you select Yes, see [Setting Types / PowerMgr](/stagenow/2-2/csp/power) for information on reboot options.
 
 13. Select Continue to proceed to the [Review window](/stagenow/2-2/stagingprofiles?Review).
+
+
+
+
+
+
+
+
+

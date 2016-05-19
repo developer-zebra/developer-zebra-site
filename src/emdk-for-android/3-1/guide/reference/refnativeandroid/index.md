@@ -1,5 +1,8 @@
 ---
-title:  Using Native Android APIs
+title: Using Native Android APIs
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -55,4 +58,15 @@ Depending on the feature your application requires, you my want to consider alte
 * Play Store
 	* Consider MDM solutions for application distribution.
 	* Consider cross-platform solutions like RhoGallery.
+
+
+
+
+
+
+
+
+
+
+
 

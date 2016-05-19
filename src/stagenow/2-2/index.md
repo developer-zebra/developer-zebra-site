@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /stagenow/2-2/about
-    - title: Getting Started 
+    - title: Getting Started
       url: /stagenow/2-2/gettingstarted
     - title: Profiles
       url: /stagenow/2-2/stagingprofiles
@@ -21,5 +21,15 @@ menu:
       url: /stagenow/2-2/stageclient
     - icon: fa fa-search
       url: /stagenow/2-2/search
-      
+product: Stagenow
+productversion: '2.2'
 ---
+
+
+
+
+
+
+
+
+

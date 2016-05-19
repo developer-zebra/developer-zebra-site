@@ -1,5 +1,8 @@
 ---
 title: DiagnosticParamId
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The diagnostic parameter IDs.
@@ -93,5 +96,16 @@ Gets all the diagnostics parameter including Time since Reboot.
 **Type:**
 
 int
+
+
+
+
+
+
+
+
+
+
+
 
 

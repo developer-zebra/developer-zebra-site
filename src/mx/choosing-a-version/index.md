@@ -1,7 +1,6 @@
 ---
 title: Choosing an MX Version
 layout: mx-filter.html
-
 ---
 
 ## Overview
@@ -10,22 +9,18 @@ The MX Management System (MXMS) provides a common interface to Zebra Android dev
 ### Evaluation Steps
 The following steps should be taken to determine what version of MX you should be targeting.
 
-1. Identify Features Needed
-2. Identify Device Compatibility
-3. Verify your target Device
-
-## Identifying Features Needed
-Each version of MX contains a set of services that include individual features. Review each version's reference documentation to identify what version of MX that feature is included in.
-
-* [MX 4.2](/mx/4-2)
-* [MX 4.4](/mx/4-4)
-* [MX 5.0](/mx/5-0)
+1. Identify Device Compatibility
+2. Verify your target Device
 
 ## Identify Device Compatibility
 A given feature in a specific version of MX may or may not be supported on specific devices. Once you have identified the version of MX you are looking to use, you can then consult the [device compatibility table](/mx/compatibility) to see if it is supported for your device.
 
 ## Verify Your Target Device
 Once you have identified the version of MX you intend to support, you need to [check your device](/mx/mx-version-on-device) to ensure it will be running with the required MX version.  
+
+
+
+
 
 
 

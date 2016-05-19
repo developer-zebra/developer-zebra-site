@@ -1,5 +1,8 @@
 ---
-title:  GPRS Manager Profile Feature Reference
+title: GPRS Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -56,6 +59,17 @@ Provide the password that the APN should be set to.
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=GprsMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

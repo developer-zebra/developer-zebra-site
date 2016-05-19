@@ -1,6 +1,9 @@
 ---
 title: Scanner
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -353,4 +356,15 @@ Specifies the trigger type for the scanner. It is set to HARD by default.
 **Type:**
 
 com.symbol.emdk.barcode.Scanner.TriggerType
+
+
+
+
+
+
+
+
+
+
+
 

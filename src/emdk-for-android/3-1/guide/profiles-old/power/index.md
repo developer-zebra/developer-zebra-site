@@ -1,5 +1,8 @@
 ---
-title:  Power Manager Profile Feature Reference
+title: Power Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -53,6 +56,17 @@ Will initiate an OS Update using the provided OS Update Zip File
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=PowerMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

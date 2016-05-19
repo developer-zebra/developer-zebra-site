@@ -1,5 +1,8 @@
 ---
 title: EMDKResults.STATUS_CODE
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Defines all the status codes the library returns.
@@ -34,5 +37,16 @@ Defines all the status codes the library returns.
 * **PROCESSING** -The processing of profile started, the result will be returned through the data listener callback registered.
 
 * **NO_DATA_LISTENER** -The asynchronous method (Ex: processProfileAsync) is issued without adding the data listener.
+
+
+
+
+
+
+
+
+
+
+
 
 

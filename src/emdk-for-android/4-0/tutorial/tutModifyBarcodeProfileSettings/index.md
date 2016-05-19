@@ -1,5 +1,8 @@
 ---
-title:  Modifying Profiles With ProfileConfig API
+title: Modifying Profiles With ProfileConfig API
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -895,5 +898,14 @@ If you are using Eclipse with ADT, click [here](/emdk-for-android/4-0/tutorial/t
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/EMDK-ModifyBarcodeProfileTutorial.zip).
+
+
+
+
+
+
+
+
+
+
+

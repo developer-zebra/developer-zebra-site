@@ -1,6 +1,9 @@
 ---
 title: EMDKResults.STATUS_CODE
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -42,4 +45,15 @@ Defines all the status codes the library returns.
 * **FEATURE_NOT_READY_TO_USE** -The requested feature is not ready to use. Try later.
 
 * **FEATURE_NOT_SUPPORTED** -The requested feature is not supported on this device.
+
+
+
+
+
+
+
+
+
+
+
 

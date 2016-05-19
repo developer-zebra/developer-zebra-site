@@ -2,34 +2,40 @@
 csp: analyticsmgr
 title: Battery and CPU Status
 type: parm
-sincemx: 4.3
-order: 8
+mx: "4.3"
+apilevel: "19"
+order: 20
 parm:
-  presentif: Group Action is "Configure Levels for Multiple Groups"
+  presentif: Analytics Action is "Enable" and Group Action is "Configure Levels for Multiple Groups"
   pivotal: No
   name: SmartBattery
   type: list
   list:
     - code: 0
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.
+      description: This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected; any previously selected setting will be retained.
     - code: 1
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: None
-      description: This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.
+      description: Disables Battery and CPU Status data collection.
     - code: 2
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Low
-      description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.
+      description: Sets Battery and CPU Status data to be collected every 60 minutes.
     - code: 3
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: Medium
-      description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval
+      description: Sets Battery and CPU Status data to be collected every 30 minutes.
     - code: 4
-      sincemx: 4.3
+      mx: "4.3"
+      apilevel: "19"
       name: High
-      description: This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.
+      description: Sets Battery and CPU Status data to be collected every 10 minutes.
 ---
 
-This parm allows you to control whether the Analytics Engine collects data for the metrics in the Battery and CPU Status Group and, if so, at what frequency.
+Controls whether the Analytics Engine collects data for metrics in the Battery and CPU Status Group and if so, at what frequency.

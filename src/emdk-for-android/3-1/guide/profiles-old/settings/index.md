@@ -1,5 +1,8 @@
 ---
-title:  Settings Manager Profile Feature Reference
+title: Settings Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -36,6 +39,17 @@ Enable or disable the ability to access the `Applications` option in the Setting
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=SettingsMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

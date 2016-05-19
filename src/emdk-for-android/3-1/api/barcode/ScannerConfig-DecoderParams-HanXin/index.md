@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.HanXin
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The HanXin class provides access to parameters that are available for
@@ -24,5 +27,16 @@ Check the inverse of the HanXin decoder
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.HanXinInverse
+
+
+
+
+
+
+
+
+
+
+
 
 

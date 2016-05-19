@@ -1,5 +1,8 @@
 ---
-title:  Power Management using Power Manager API
+title: Power Management using Power Manager API
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -766,5 +769,13 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 ## What's Next
 Now that you have learned how to configure and perform Power Management operations on your Symbol Android devices through applications using Mx Power Manager feature, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Persist Manager" feature and try to explore this feature by creating a tutorial.
 
-## Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://s3.amazonaws.com/emdk/Tutorials/MxPowerManagerTutorial.zip).
+
+
+
+
+
+
+
+
+
+

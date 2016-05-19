@@ -7,7 +7,7 @@ contentlist:
     visible: false
     items:
       - title: Activity Selection
-        description: Select the application's activity where data capture is active.
+        description: "Select the application's activity where data capture is active."
         url: activity
         icon: activity.png
       - title: Barcode
@@ -30,4 +30,17 @@ contentlist:
         description: Set and configure mag stripe as the input source
         icon: msr.png
         url: msr
+product: EMDK For Android
+productversion: '2.3'
 ---
+
+
+
+
+
+
+
+
+
+
+

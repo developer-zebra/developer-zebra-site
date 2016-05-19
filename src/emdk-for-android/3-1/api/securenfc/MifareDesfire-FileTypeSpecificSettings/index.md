@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.FileTypeSpecificSettings
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -29,5 +32,16 @@ Linear or Cyclic record file specific settings
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.RecordFileSettings
+
+
+
+
+
+
+
+
+
+
+
 
 

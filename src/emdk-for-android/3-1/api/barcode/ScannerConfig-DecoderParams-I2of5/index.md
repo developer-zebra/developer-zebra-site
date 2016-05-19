@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.I2of5
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The I2of5 class provides access to parameters that are available for
@@ -124,5 +127,16 @@ Specifies security level
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.SecurityLevel
+
+
+
+
+
+
+
+
+
+
+
 
 

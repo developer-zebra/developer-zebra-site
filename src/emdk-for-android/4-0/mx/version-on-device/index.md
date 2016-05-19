@@ -1,6 +1,8 @@
 ---
-title: How to Check a Device's MX Version
-
+title: "How to Check a Device's MX Version"
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -67,3 +69,13 @@ On legacy Motorola Solutions branded devices, `ro.motosln.enterprise.version` sh
     [ro.motosln.enterprise.version]: [MX_TI4AJ.1.1_3.5.1-1]
 
  > The above device has MX version `1.1` on it.
+
+
+
+
+
+
+
+
+
+

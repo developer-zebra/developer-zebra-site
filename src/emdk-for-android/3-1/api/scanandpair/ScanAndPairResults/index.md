@@ -1,5 +1,8 @@
 ---
 title: ScanAndPairResults
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Provides list of result codes for ScanAndPair class.
@@ -49,5 +52,16 @@ Provides list of result codes for ScanAndPair class.
 * **PREVIOUS_COMMAND_PENDING** -Previously requested command is in progress, wait for it to complete.
 
 * **INPROGRESS** -The operation requested is in progress.
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: MifareSam.AdditionalAuthData.AV1Mode
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Data specific to the AV1 Sam Mode. **Future use only, its not
@@ -44,5 +47,16 @@ samDiverseParams Diversification parameters for current key.If
 **Type:**
 
 com.symbol.emdk.securenfc.SamDiverseParams
+
+
+
+
+
+
+
+
+
+
+
 
 

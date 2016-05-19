@@ -4,19 +4,18 @@ title: WiFi Configuration
 description: This sample application demonstrate how to manage WiFi networks.
 downloads:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileWifiSample1.zip 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileWifiSample1.zip'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileWifiSample1.zip   
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0-ADT/archive/ProfileWifiSample1.zip'
 sources:
   - title: Android Studio Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1'
   - title: ADT Eclipse Project
-    url: https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1
-
-features: 
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWifiSample1'
+features:
   - Profile Manager
   - WiFi Manager
-devices: 
+devices:
   - MC18KK
   - MC32N0JB
   - MC40JB
@@ -25,10 +24,13 @@ devices:
   - TC70KK
   - TC75KK
 image: 1.png
-screenshots: 
+screenshots:
   - 1.png
   - 2.png
   - 3.png
+layout: sample.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ##Overview
@@ -89,3 +91,18 @@ The following guide will walk you through setting up the EMDK samples in your ID
    
   ![img](wifi_5.png)  
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

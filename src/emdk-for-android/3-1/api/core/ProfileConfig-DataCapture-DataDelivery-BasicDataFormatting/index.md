@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds Basic Data Formatting configuration settings.
@@ -131,5 +134,16 @@ Set to append an Enter character to the end of the processed data(default - disa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

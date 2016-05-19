@@ -1,5 +1,8 @@
 ---
 title: EMDKManager
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '1.0'
 ---
 The EMDKManager class is the key class in Android EMDK. This class provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.
   
@@ -52,6 +55,19 @@ This method releases resources of a given manager type. Instance variable is not
 * Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0** - Type of EMDKManager.FEATURE_TYPE to be released. Only the given feature related manager will be cleared if it has been constructed.
 
 **Returns** - System.Void
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

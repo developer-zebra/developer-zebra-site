@@ -1,5 +1,8 @@
 ---
 title: MifareDesfire.FileSettings
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 
@@ -37,5 +40,16 @@ File type specific settings
 **Type:**
 
 com.symbol.emdk.securenfc.MifareDesfire.FileTypeSpecificSettings
+
+
+
+
+
+
+
+
+
+
+
 
 

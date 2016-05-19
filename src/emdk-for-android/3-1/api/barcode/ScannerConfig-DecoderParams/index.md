@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The DecoderParams class contains decoder parameters that
@@ -408,5 +411,16 @@ The HanXin class provides access to parameters that are available
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.DecoderParams.HanXin
+
+
+
+
+
+
+
+
+
+
+
 
 

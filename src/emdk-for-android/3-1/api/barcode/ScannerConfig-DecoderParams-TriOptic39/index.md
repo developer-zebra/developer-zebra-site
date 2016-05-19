@@ -1,5 +1,8 @@
 ---
 title: ScannerConfig.DecoderParams.TriOptic39
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The TriOptic39 class provides access to parameters that are available
@@ -22,5 +25,16 @@ Sets the reader to read the bar code twice before accepting data.
 **Type:**
 
 boolean
+
+
+
+
+
+
+
+
+
+
+
 
 

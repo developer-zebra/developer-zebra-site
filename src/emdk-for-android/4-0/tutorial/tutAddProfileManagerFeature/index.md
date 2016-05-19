@@ -1,5 +1,8 @@
 ---
-title:  Adding features to Profile Manager
+title: Adding features to Profile Manager
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 ## Overview
@@ -26,4 +29,15 @@ This tutorial helps you adding different features using Profile Manager to your 
 	![img](../../images/AddProfileManagerFeatureImage/profile_editor_4.3.jpg) 
 
 7. The Profile Manager wizard provides various features, one of them being Data Capture for capturing Barcode, MSR data in your application and many Mx features (Ex. Wireless Manager, Clock Manager, Access Manager, Browser Manager, Encrypt Manager etc.) for configuring your Symbol device based on requirements.
+
+
+
+
+
+
+
+
+
+
+
 

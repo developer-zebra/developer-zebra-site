@@ -1,9 +1,10 @@
 ---
 csp: clock
-title: SyncInterval
+title: Set Sync Interval
 type: parm
-order: 4
-sincemx: 4.2
+order: 5
+mx: "4.2"
+apilevel: "16"
 parm:
   presentif: AutoTime is "true"
   pivotal: No
@@ -12,20 +13,24 @@ parm:
   list:
     - code: 00:30:00
       name: 30 minutes
-      sincemx: 4.2
-      description: This value will cause the device to attempt to contact the NTP server every 30 minutes.
+      mx: "4.2"
+      apilevel: "16"
+      description: Sets the device to contact the NTP server every 30 minutes.
     - code: 00:60:00
       name: 60 minutes
-      sincemx: 4.2
-      description: This value will cause the device to attempt to contact the NTP server every 60 minutes.
+      mx: "4.2"
+      apilevel: "16"
+      description: Sets the device to contact the NTP server every 60 minutes.
     - code: 06:00:00
       name: 6 hours
-      sincemx: 4.2
-      description: This value will cause the device to attempt to contact the NTP server every 6 hours.
-    - code: 24:00:00
+      mx: "4.2"
+      apilevel: "16"
+      description: Sets the device to contact the NTP server every 6 hours.
+    - code: '24:00:00'
       name: 24 hours
-      sincemx: 4.2
-      description: This value will cause the device to attempt to contact the NTP server every 24 hours.
+      mx: "4.2"
+      apilevel: "16"
+      description: Sets the device to contact the NTP server every 24 hours.
 ---
 
-This parm allows you to specify the interval at which an NTP server will automatically be contacted to acquire the Date and Time to set on the device.
+Used to specify the interval at which a device will attempt to contact the specified NTP server to acquire the Date and Time when AutoTime is enabled. **For devices operating on a cellular network, AutoTime typically acquires the Date and Time from the carrier network**.

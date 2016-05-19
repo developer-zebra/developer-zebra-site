@@ -1,5 +1,8 @@
 ---
 title: MifareSam.AdditionalAuthData.AV2Mode
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Data specific to the AV2 Sam Mode. **Future use only, its not
@@ -21,5 +24,16 @@ Protection mode to be used and only PLAIN mode is supported.MAC
 **Type:**
 
 com.symbol.emdk.securenfc.MifareSam.ProtectionMode
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: SecureNfcManager
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 This class provides access to obtain the object to communicate with the
@@ -130,5 +133,16 @@ NFC tag types.
 * **FELICA** -Felica Tag
 
 * **UNDEFINED** -Tag category is undefined
+
+
+
+
+
+
+
+
+
+
+
 
 

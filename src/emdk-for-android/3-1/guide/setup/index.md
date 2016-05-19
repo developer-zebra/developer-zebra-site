@@ -1,5 +1,8 @@
 ---
-title:  EMDK For Android Setup
+title: EMDK For Android Setup
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -46,4 +49,15 @@ Since the 1.0 release of Android Studio, Google no longer offers the Eclipse bas
 **Windows** - Follow this [**guide**](../setupEclipse) to setup "EMDK for Android" in Eclipse.
 
 **Mac** - EMDK for android development in Eclipse on Mac, is not supported.
+
+
+
+
+
+
+
+
+
+
+
 

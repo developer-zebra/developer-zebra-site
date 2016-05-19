@@ -1,6 +1,9 @@
 ---
 title: MifareSam.AdditionalAuthData
 type: api
+layout: guide.html
+product: EMDK For Android
+productversion: '4.0'
 ---
 
 
@@ -31,4 +34,15 @@ Data specific to the AV2 Sam Mode. **Future use only, its not
 **Type:**
 
 com.symbol.emdk.securenfc.MifareSam.AdditionalAuthData.AV2Mode
+
+
+
+
+
+
+
+
+
+
+
 

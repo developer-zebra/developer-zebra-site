@@ -1,7 +1,7 @@
 ---
 title: EMDK For Android
 insert:
-    file: emdk-for-android/4-0/guide/about/index.md
+  file: emdk-for-android/4-0/guide/about/index.md
 layout: guide.html
 menu:
   title: EMDK For Android 4.0
@@ -23,5 +23,18 @@ menu:
       url: /emdk-for-android/4-0/api
     - icon: fa fa-search
       url: /emdk-for-android/4-0/search
+product: EMDK For Android
+productversion: '4.0'
 ---
+
+
+
+
+
+
+
+
+
+
+
 

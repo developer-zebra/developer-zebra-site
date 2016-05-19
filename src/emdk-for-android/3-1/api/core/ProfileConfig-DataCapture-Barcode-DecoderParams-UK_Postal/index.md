@@ -1,5 +1,8 @@
 ---
 title: ProfileConfig.DataCapture.Barcode.DecoderParams.UK_Postal
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 Holds UK Postal configuration settings.
@@ -30,5 +33,16 @@ Transmit UK Postal data with or without the check digit (default - disabled).
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,8 @@
 ---
 title: MifareSamException
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 The methods of MifareSam object throws MifareSamException when an error
@@ -21,4 +24,15 @@ Returns the MifareSamResults.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifareSamResults
+
+
+
+
+
+
+
+
+
+
+
 

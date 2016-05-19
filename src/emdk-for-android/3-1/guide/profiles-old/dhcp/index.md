@@ -1,5 +1,8 @@
 ---
-title:  DHCP Option Manager Profile Feature Reference
+title: DHCP Option Manager Profile Feature Reference
+layout: guide.html
+product: EMDK For Android
+productversion: '2.3'
 ---
 
 ## Overview
@@ -41,6 +44,17 @@ The name field is used by the EMDK to identify this particular feature parameter
 
 ## Feature Compatibility
 <iframe src="compare.html#mx=4.3&csp=DHCPMgr&os=All&embed=true"></iframe> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

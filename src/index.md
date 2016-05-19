@@ -15,7 +15,7 @@ products:
         url: /datawedge/3-1/gettingstarted
       - title: Basic Setup
         url: /datawedge/3-1/guide/setup
-      - title: Advanced Features
+      - title: Advanced Settings
         url: /datawedge/3-1/guide/advanced
       - title: Download
         url: /datawedge/3-1/download

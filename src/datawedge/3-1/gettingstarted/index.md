@@ -26,7 +26,7 @@ content-items:
   - type: section
     level: 4
     title: DataWedge IP
-    text: How to scan locally and store the acquired data on a server. 
+    text: A tool for storing locally scanned data on a server. 
     url: /datawedge/3-1/guide/ipoutput
   - type: section
     level: 4

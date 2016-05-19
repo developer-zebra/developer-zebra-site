@@ -1,11 +1,11 @@
 ---
 title: DataWedge
-img: datawedge-logo.png
+img: datawedge_logo.png
 layout: list-mx.html
 menu:
-  title: DataWedge 3.1
+  title: DataWedge
   items:
-    - title: Introduction
+    - title: About
       url: /datawedge/3-1/guide/about
     - title: Profiles
       url: /datawedge/3-1/guide/profiles
@@ -20,3 +20,4 @@ menu:
 product: DataWedge
 productversion: '3.1'
 ---
+

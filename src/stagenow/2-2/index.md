@@ -4,11 +4,6 @@ layout: list-mx.html
 menu:
   title: StageNow 2.2
   img: /images/products/stagenow.png
-  versions:
-    - versionto: 2-3
-      versionfrom: 2-2
-      default: /stagenow/2-3/about
-      label: '2.3 '
   items:
     - title: About
       url: /stagenow/2-2/about

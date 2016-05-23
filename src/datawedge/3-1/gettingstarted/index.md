@@ -10,7 +10,7 @@ content-items:
     url: /datawedge/3-1/guide/about
   - type: section
     level: 4
-    title: Profiles
+    title: Profiles and Plug-Ins
     text: Profiles and Plug-ins are the basis of all DataWedge functionality. This guide covers their basic use and default settings. 
     url: /datawedge/3-1/guide/setup
   - type: section

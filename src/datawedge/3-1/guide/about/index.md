@@ -7,12 +7,12 @@ productversion: '3.1'
 
 ## Introduction
 
-DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool enables device apps to acquire barcode data without the modifications necessary to use scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched. 
+DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool enables device apps to acquire barcode data without the modifications necessary to use scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched, and format the acquired data according to need. 
 
-**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Scanner and Barcode APIs of Enterprise Browser and those of other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It's therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. Refer to the [DataWedge Guides](../../gettingstarted) for further instructions. 
+**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Scanner and Barcode APIs of Enterprise Browser and other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. Refer to the [DataWedge Guides](../../gettingstarted) for further instructions. 
 
 ###Main Functionality
-DataWedge provides the following primary functions: 
+DataWedge provides the following primary functions and options: 
 
 * Scan and process numerous barcode symbologies (see table below)
 * Set DataWedge to become the default scanner for one or more apps
@@ -23,7 +23,7 @@ DataWedge provides the following primary functions:
 * Import and export settings 
 * Restore settings to factory defaults
 * Remotely configure and mass-deploy via MDM  
-* Option to import and apply new settings at each launch 
+* Import and apply new settings at each launch 
 
 ###Is DataWedge Installed?
 To verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
@@ -120,7 +120,7 @@ cellspacing="0" cellpadding="4">
     
 
 ###Profiles
-DataWedge Profiles permit custom groups of settings to be created to match the needs of specific apps, users or scanning scenarios. Profiles can be created for different applications that require the same data processed in different ways. A Profile can be set to output scanned data in the format required for a particular app whenever that app comes to the foreground. Profiles also can enable one or more individual barcode symbologies to help improve performance and reduce input errors and delays. 
+DataWedge Profiles permit custom groups of settings to be created to match the needs of specific apps, users or scanning scenarios. Profiles can be created for different applications that require the same data processed in different ways. A Profile can be set to output scanned data in the format required for a particular app whenever that app comes to the foreground. Profiles also can enable just the barcode symbologies needed by the app to help improve performance and reduce input errors and delays. 
 
 **Refer to the [Setup section](../setup)** for more information. 
 

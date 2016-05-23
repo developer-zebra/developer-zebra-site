@@ -17,17 +17,18 @@ Each Profile generally contains four elements:
 
 When associated with an app, DataWedge can be invoked to scan and acquire (input) the data, format or append (process) it in a specified way, and pass (output) it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any application currently in the foreground and contains baseline settings that can be tailored to individual needs. This allows DataWedge to be used out of the box with no little or no pre-configuration required. 
  
->**Note: This guide describes DataWedge for Android. Features and usage of Windows verions may vary slightly**.
+**Note: This guide describes DataWedge for Android. Features and usage of Windows verions may vary slightly**.
 
 ##Profiles
-Profiles contain information about how DataWedge should behave with the associated application, and allow each app to be associated with a specific set of DataWedge behaviors. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. 
+Profiles contain information about how DataWedge should behave with the associated application, and provide a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. 
 
-DataWedge includes a number of pre-configured Profiles for general needs or to support specific apps that are built into every device. Some of these, such as Profile0, are visible to the user and can be edited as needed. Others contain fixed parameters and are not visible to the user. 
+DataWedge includes a number of pre-configured Profiles for general needs or to support specific apps that are built into every device. Some of these, such as Profile0, are visible to the user and can be edited as needed. Others contain fixed parameters and are not visible or configurable. 
 
 #### Visible Profiles
-* **Profile0 -** a generic that takes effect for any unassociated foreground app. 
-* **Launcher -** used when tne Launcher screen is in the foreground.
-* **DWDemo -** used with DWDemo, the [DataWedge Demo app](../demo) app. When DWDemo comes to the foreground, data captured with DataWedge is handed to the DWDemo application.
+* **Profile0 -** is a generic that takes effect for any unassociated foreground app. 
+* **Launcher -** is used when the Launcher screen is in the foreground.
+* **DWDemo -** is used with DWDemo, the [DataWedge Demo app](../demo) app. When DWDemo comes to the foreground, data captured with DataWedge is handed to the DWDemo application.
+* **User-defined -** profiles are always visible and available for editing. 
 
 #### Hidden Profiles
 * **RD Client -** provides support for Zebra's Rapid Deploy app and third-party MDM solutions.
@@ -85,88 +86,59 @@ Output Plug-ins send the processed data to the associated application or server.
 **The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipoutput) for further information. 
 
 ## Create a Profile
-This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, and an association with an app. These steps are required for every app that's intended to use DataWedge as its scanning services provider. 
+This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge as its scanning services provider. 
 
 ### Quick Steps
-To enable DataWedge scanning services for an app, perform the following steps* on the device:
+To enable DataWedge scanning services for an app, perform the following steps on an Android device:
 
 1. **Install the app** that will use DataWedge for scanning. 
-2. **Start DataWedge** app. 
-3. In DataWedge, select **Menu->New Profile**. 
-4. **Enter a name and tap OK**. The new profile will appear in the Profiles list. 
+2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
+3. Tap on the Profiles screen's "hamburger" menu and **select -> New profile**. 
+4. **Enter a name for the Profile and tap OK**. The new profile will appear in the Profiles list. 
 5. Tap on the new profile.
 6. **Select Associated Apps** from the Applications section.
-7. Select **Menu->New app/activity**. A list of installed apps will appear. 
+7. In the Hamburger menu, **select -> New app/activity**. A list of installed apps will appear. 
 8. Select your app's package name (scrolling down, if necessary).
 9. **Tap the asterisk** (*) to associate all of your app's activities with DataWedge. 
 10. Tap the device's Back button until the new Profile's Settings screen appears.
 11. Confirm that the 'Profile enabled' checkbox is checked. 
-12. **Uncheck the 'Enabled' checkboxes of the Barcode Input, Keystroke Output and Intent Output sections**. 
+12. **Confirm that the Barcode Input and Keystroke Output checkboxes are 'Enabled'**. 
 
-The app is now associated with DataWedge for scanning. Test and adjust input, processing and output parameters as necessary. 
+The app is now associated with DataWedge for scanning. Test and adjust input, processing and output parameters as necessary.
 
-&#42; *Steps shown are for Android; corresponding steps on Windows devices will vary slightly*.
-
-To launch DataWedge, touch  Home > DataWedge. The DataWedge Profiles screen appears. By default, three profiles appear:
+### Detailed Steps
 
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
 <img style="height:350px" src="datawedge_launcher.png"/>
 <br>
 
-The DataWedge Profiles screen will appear similar to the image below: 
+On newly installed devices, the DataWedge Profiles screen will appear, showing the three default Profiles similar to the image below: 
 <img style="height:350px" src="Figure_1_ProfilesScreen.png"/>
+The white text of three default Profiles (Profile0, Launcher and DWDemo) indicates that all are enabled. The grey text of "MyAppProfile" shows that it's disabled. 
+
+**Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
 <br>
 
+&#50;. **Tap the "hamburger" menu and select New profile**.  
+<img style="height:350px" src="Figure_3_OptionsMenu.png"/>
+<br>
 
-Profiles contain information about how DataWedge should behave when providing scanning services for a particular application. 
+&#51;.  **Enter a new** for the new Profile. 
+<img style="height:350px" src="Figure_4_NewProfileNameDialog.png"/>
+<br>
 
-Profile information consists of:
+&#52;. 
+<img style="height:350px" src="Figure_5_ProfileConfigScreen.png"/>
+<br>
 
-Associated application
+&#53;. 
 
-Input plug-in configurations
+&#54;. 
 
-Output plug-in configurations
+&#55;. 
 
-Process plug-in configurations
+&#56;. 
 
-
-
-## Launcher
-
-DWDemo
-
-Profile0 is the default profile and is used when no other profile can be applied.
-
-DataWedge Profiles Screen
-Figure 1. DataWedge Profiles Screen
-Profile names are color coded. Enabled profiles are white and disabled profiles are gray.
-
-To configure a profile touch the profile name.
-
-Profile Context Menu
-Touch and hold a profile to open a context menu that allows additional actions to be performed on the selected profile.
-
-Profile Context Menu
-Figure 2. Profile Context Menu
-The profile context menu allows the profile to be edited (same as just touching a profile), renamed, deleted or cloned.
-
-Note    When a profile is cloned the application association will be empty in the new profile. This is according to the rule that two profiles cannot be associated with same application. All other settings will be identical.
-Options Menu
-Touch  Menu to open the options menu.
-
-DataWedge Options Menu
-Figure 3. DataWedge Options Menu
-The menu provides options to create a new profiles, access to general DataWedge settings and DataWedge version information.
-
-Disabling DataWedge
-To disable DataWedge:
-
-Touch  Home > DataWedge
-
-Touch  Menu > Settings
-
-Touch DataWedge enabled. The green check disappears from the checkbox indicating that DataWedge is disabled.
 
 Create a New Profile
 
@@ -587,4 +559,42 @@ Other DataWedge guides:
 * [DataWedge IP Output](../ipoutput)
 * [DataWedge API for Android](../androidapi)
 * [DataWedge Capture API](../capture)
+
+FROM ABOVE:
+
+## Launcher
+
+DWDemo
+
+Profile0 is the default profile and is used when no other profile can be applied.
+
+DataWedge Profiles Screen
+Figure 1. DataWedge Profiles Screen
+Profile names are color coded. Enabled profiles are white and disabled profiles are gray.
+
+To configure a profile touch the profile name.
+
+Profile Context Menu
+Touch and hold a profile to open a context menu that allows additional actions to be performed on the selected profile.
+
+Profile Context Menu
+Figure 2. Profile Context Menu
+The profile context menu allows the profile to be edited (same as just touching a profile), renamed, deleted or cloned.
+
+Note    When a profile is cloned the application association will be empty in the new profile. This is according to the rule that two profiles cannot be associated with same application. All other settings will be identical.
+Options Menu
+Touch  Menu to open the options menu.
+
+DataWedge Options Menu
+Figure 3. DataWedge Options Menu
+The menu provides options to create a new profiles, access to general DataWedge settings and DataWedge version information.
+
+Disabling DataWedge
+To disable DataWedge:
+
+Touch  Home > DataWedge
+
+Touch  Menu > Settings
+
+Touch DataWedge enabled. The green check disappears from the checkbox indicating that DataWedge is disabled.
 

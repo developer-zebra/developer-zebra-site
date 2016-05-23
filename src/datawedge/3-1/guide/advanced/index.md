@@ -1,11 +1,13 @@
 ---
-title: DataWedge Advanced Settings
+title: Advanced Settings
 layout: guide.html
 product: DataWedge
 productversion: '3.1'
 ---
 
-## DataWedge Advanced Settings
+## Advanced DataWedge Settings
+WHAT THEY ARE GOES HERE
+
 
 The DataWedge Settings screen provides access to most settings and options that are not related to Profiles and Plug-ins. 
 

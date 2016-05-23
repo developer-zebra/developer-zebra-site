@@ -11,12 +11,18 @@ products:
     sections:
       - title: About
         url: /datawedge/3-1/guide/about
-      - title: Getting Started
-        url: /datawedge/3-1/gettingstarted
-      - title: Basic Setup
+      - title: Setup
         url: /datawedge/3-1/guide/setup
-      - title: Advanced Settings
+      - title: Advanced
         url: /datawedge/3-1/guide/advanced
+      - title: Decoders
+        url: /datawedge/3-1/guide/decoders
+      - title: IP Output
+        url: /datawedge/3-1/guide/ipoutput
+      - title: APIs
+        url: /datawedge/3-1/guide/api
+      - title: Demo
+        url: /datawedge/3-1/guide/demo
       - title: Download
         url: /datawedge/3-1/download
   - title: Enterprise Home Screen
@@ -36,7 +42,7 @@ products:
       - title: Download
         url: /ehs/2-3/download
   - title: Enterprise Keyboard
-    description: A customizable keyboard made specifically for the workplace.
+    description: A customizable keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs

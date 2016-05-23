@@ -1,5 +1,5 @@
 ---
-title: DataWedge Advanced Settings
+title: DWDemo DataWedge Demo App
 layout: guide.html
 product: DataWedge
 productversion: '3.1'

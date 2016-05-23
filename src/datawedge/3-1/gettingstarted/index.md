@@ -5,12 +5,12 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Intro
+    title: About
     text: First time using DataWedge? Go here for a quick overview of how DataWedge works and what it can do for any app.
     url: /datawedge/3-1/guide/about
   - type: section
     level: 4
-    title: Profiles and Plug-Ins
+    title: Setup
     text: Profiles and Plug-ins are the basis of all DataWedge functionality. This guide covers their basic use and default settings. 
     url: /datawedge/3-1/guide/setup
   - type: section

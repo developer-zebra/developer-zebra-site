@@ -9,13 +9,13 @@ productversion: '3.1'
 
 **Profiles and Plug-ins** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
 
-Each Profile **must** contain four elements: 
+Each Profile generally contains four elements: 
 * **An Input Plug-in -** to determine how data will be acquired (i.e. a barcode scanner)
 * **A Process Plug-in -** to specify how the acquired data should be manipulated 
 * **An Output Plug-in -** to control the passing of data to an application
 * **An Associated application -** (or activity) with which to link DataWedge actions
 
-When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any application currently in the foreground and contains baseline settings that can be tailored to individual needs. This allows DataWedge to be used out of the box with no little or no pre-configuration required. 
+When associated with an app, DataWedge can be invoked to scan and acquire (input) the data, format or append (process) it in a specified way, and pass (output) it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any application currently in the foreground and contains baseline settings that can be tailored to individual needs. This allows DataWedge to be used out of the box with no little or no pre-configuration required. 
  
 >**Note: This guide describes DataWedge for Android. Features and usage of Windows verions may vary slightly**.
 
@@ -27,7 +27,7 @@ DataWedge includes a number of pre-configured Profiles for general needs or to s
 #### Visible Profiles
 * **Profile0 -** a generic that takes effect for any unassociated foreground app. 
 * **Launcher -** used when tne Launcher screen is in the foreground.
-* **DWDemo -** used with the DataWedge Demo (DWDemo) app. When DWDemo comes to the foreground, data captured with DataWedge is handed to the DWDemo application.
+* **DWDemo -** used with DWDemo, the [DataWedge Demo app](../demo) app. When DWDemo comes to the foreground, data captured with DataWedge is handed to the DWDemo application.
 
 #### Hidden Profiles
 * **RD Client -** provides support for Zebra's Rapid Deploy app and third-party MDM solutions.
@@ -39,7 +39,7 @@ DataWedge includes a number of pre-configured Profiles for general needs or to s
 ### Profile0
 Profile0 is a generic Profile that automatically takes effect for any app that comes to the foreground that has not been associated with DataWedge. This can be useful for quickly acquiring data using an app that has just been installed, for example, or when using an app that has not yet been configured by an administrator for use with DataWedge. All parameters of Profile0 can be edited except its association. 
 
-**Profile0 also can be disabled within a Profile**. This provides a measure of security by restricting output to applications (or servers; see IP Output) to which DataWedge has been specifically associated.
+**Profile0 also can be disabled within a Profile**. This provides a measure of security by restricting output to applications or servers to which DataWedge has been specifically associated. 
 
 ## Plug-ins
 Plug-ins extend DataWedge functionality to support device hardware, peripherals, data processing and transport. Plug-ins are used to configure how data will be acquired by DataWedge, manipulated or altered for an app, and output to an app or server.
@@ -53,48 +53,59 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 * Advanced data formatting (rules-based data manipulation)
 
 **Output Plug-ins specify**:
-* Keystroke (like typing into a field)
-* Intent (programmatic hand-off)
-* IP Output (saving to a server)
-
+* Keystrokes (emulates manual keyboard input)
+* Intent (programmatic hand-off of data)
+* IP Output (saving data to a server)
 
 ### Input Plug-ins
-Input Plug-ins determine which device will acquire the data. 
+Input Plug-ins specify the device hardware to be used to acquire the data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides beep sounds and other feedback to alert the user of scanning results and barcode type. Refer to Scanner Parameters section for more information**. 
 
-#### Barcode Scanner Input Plug-in 
-The Barcode Scanner Input Plug-in reads data from the integrated barcode scanner built into the device, attached by cable or implemented as a snap-on module. This Plug-in supports laser, imager and internal cameras. Raw barcode data can be processed or formatted using Process Plug-ins as required. DataWedge has built-in feedback functionality for the barcode scanner to issue user alerts. The feedback settings can be configured according to user requirement.
+**The Barcode Scanner Input Plug-in** reads data from the integrated barcode scanner built into the device, attached by cable or implemented as a snap-on module. This Plug-in supports laser, imager and internal cameras. The raw barcode data that's acquired is processed or formatted as required using Process Plug-ins. 
 
-#### MSR Input Plug-in
-For magnetic stripe reader modules, the MSR Input Plug-in reads data from an integrated MSR reader or attached Scan/MSR Module. Raw data from the reader can be processed or formatted using Process Plug-ins as required.
+**The MSR Input Plug-in** is for magnetic stripe reader modules. This plug-in reads data from an integrated MSR reader or attached Scan/MSR Module, after which the raw data from the reader can be processed or formatted as required using Process Plug-ins.
 
-#### SimulScan Input Plug-in
-Zebra SimulScan permits the simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted using Process Plug-ins as required.
+**The SimulScan Input Plug-in** permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins.
 
 **Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string.
 
 ### Process Plug-ins
-Process Plug-ins manipulate the acquired data in a specified way before sending to the associated application via the Output Plug-in.
+Process Plug-ins manipulate the acquired data in a specified way before sending to the associated application or server via the Output Plug-in. Those included with DataWedge are explained below. 
 
-#### Basic Format Process Plug-in
-The Basic Format Plug-in allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes as well as conversion of data to hex. 
+**The Basic Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes as well as conversion of data to hex. 
 
-#### Advanced Format Process Plug-in
-
-The Advanced Format Plug-in allows DataWedge to add a prefix and/or a suffix to the captured data before passing it to an Output Plug-in.
+**The Advanced Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to the captured data before passing it to an Output Plug-in.
 
 ### Output Plug-ins
-Output Plug-ins send the processed data from to the associated application.
+Output Plug-ins send the processed data to the associated application or server. Those included with DataWedge are explained below. 
 
-#### Keystroke Output Plug-in
-The Keystroke Output Plug-in collects the processed data and sends it to the associated application by emulating keystrokes.
+**The Keystroke Output Plug-in** collects the processed data and sends it to the associated application as a series of keystrokes, emulating the actions of a user pressing the keys.
 
-#### Intent Output Plug-in
-The Intent Output Plug-in collects the processed data the associated foreground application as payload within an Android Intent.
+**The Intent Output Plug-in** sends the processed data to the associated foreground application as payload within an Android Intent.
 
-#### IP Outut Plug-in
-The IP Output Plug-in allows captured data to be sent over an IP network to a specified IP address and port using either TCP or UDP transport protocols.
+**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipoutput) for further information. 
 
 ## Create a Profile
+This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, and an association with an app. These steps are required for every app that's intended to use DataWedge as its scanning services provider. 
+
+### Quick Steps
+To enable DataWedge scanning services for an app, perform the following steps* on the device:
+
+1. **Install the app** that will use DataWedge for scanning. 
+2. **Start DataWedge** app. 
+3. In DataWedge, select **Menu->New Profile**. 
+4. **Enter a name and tap OK**. The new profile will appear in the Profiles list. 
+5. Tap on the new profile.
+6. **Select Associated Apps** from the Applications section.
+7. Select **Menu->New app/activity**. A list of installed apps will appear. 
+8. Select your app's package name (scrolling down, if necessary).
+9. **Tap the asterisk** (*) to associate all of your app's activities with DataWedge. 
+10. Tap the device's Back button until the new Profile's Settings screen appears.
+11. Confirm that the 'Profile enabled' checkbox is checked. 
+12. **Uncheck the 'Enabled' checkboxes of the Barcode Input, Keystroke Output and Intent Output sections**. 
+
+The app is now associated with DataWedge for scanning. Test and adjust input, processing and output parameters as necessary. 
+
+&#42; *Steps shown are for Android; corresponding steps on Windows devices will vary slightly*.
 
 To launch DataWedge, touch  Home > DataWedge. The DataWedge Profiles screen appears. By default, three profiles appear:
 

@@ -101,22 +101,23 @@ To enable DataWedge scanning services for an app, perform the following steps on
 8. Select your app's package name (scrolling down, if necessary).
 9. **Tap the asterisk** (*) to associate all of your app's activities with DataWedge. 
 10. Tap the device's Back button until the new Profile's Settings screen appears.
-11. Confirm that the 'Profile enabled' checkbox is checked. 
+11. Confirm that the "Profile enabled" checkbox is checked. 
 12. As needed, **confirm that the Barcode Input and Keystroke Output checkboxes are checked**. 
 
-Test and adjust input, processing and output parameters as necessary. 
+Test and adjust input, processing (data formatting) and output parameters as necessary. 
 
-The app is now associated with DataWedge for barcode data acquisition. 
+The app will now use DataWedge for barcode data acquisition. 
 
 ### Detailed Steps
 
-#### I. Create a New Profile: 
+####Create a New Profile:
+
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
-<img style="height:350px" src="00_datawedge_launcher.png"/>
+<img style="height:350px" src="01_datawedge_launcher.png"/>
 <br>
 
 On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text). 
-<img style="height:350px" src="01_ProfilesScreen.png"/>
+<img style="height:350px" src="01a_ProfilesScreen.png"/>
 
 **Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
 <br>
@@ -126,62 +127,65 @@ On newly installed devices, the DataWedge Profiles screen similar to the image b
 <br>
 
 &#51;.  **Enter a name** for the new Profile and **tap OK**. The Profiles list appears, similar to the image in Step 4, below.  
-<img style="height:350px" src="06_name_profile.png"/>
+<img style="height:350px" src="03_name_profile.png"/>
+Zebra recommends that Profile names be unique and made up of alpha-numeric characters only.
 <br>
 
-#### II. Associate the Profile with App(s) and/or Activities 
+#### Associate the Profile with App(s) and/or Activities: 
+
 &#52;. **Tap the Profile** to be associated: 
-<img style="height:350px" src="06a_profile_list.png"/>
+<img style="height:350px" src="04_profile_list.png"/>
 <br>
 
 &#53;. In the Profile screen, **tap the "Profile enabled" checkbox** to enable it, then **tap "Associated apps"** to link it with an app or activity:
-<img style="height:350px" src="07_enable_profile.png"/>
+<img style="height:350px" src="05_enable_profile.png"/>
 <br>
 
 &#54;. **Tap the menu** and **select -> New app/activity**. A list appears with all apps and activities installed on the device. 
-<img style="height:350px" src="09_associate_menu.png"/>
+<img style="height:350px" src="06_associate_menu.png"/>
 <br>
 
 &#55;. From the device apps/activities list, **select the app or activity to associate** with the Profile being edited. When an app is selected, its activities list appears (see Step 8). 
-<img style="height:350px" src="10_select_app_to_associate.png"/>
+<img style="height:350px" src="07_select_app_to_associate.png"/>
 <br>
 
-&#56;. From the app activities list, **tap the asterisk to associate all app activities** with the Profile or tap on an indvidual activity to associate only that activity:
-<img style="height:350px" src="11_pick_asterisk.png"/>
+&#56;. From the app activities list, **tap the asterisk to associate all app activities** with the Profile, or tap on an indvidual activity to use DataWedge for **that specific activity only**:
+<img style="height:350px" src="08_pick_asterisk.png"/>
 <br>
 
 &#57;. The app now appears in the Profile associations list. **Repeat Steps 6-8** until all desired apps and/or activities are associated. 
-<img style="height:350px" src="12_confirm_association.png"/>
+<img style="height:350px" src="09_confirm_association.png"/>
 When finished adding associations, **Tap the BACK button** to return to the Profile screen. 
 <br>
-
-#### III. Configure Input, Processing and Output Plug-ins
-
-&#49;&#48;. In the Profile screen, **select the desired Input Plug-In** (scroll down as necessary). 
-<img style="height:350px" src="13_enable_new_profile.png"/>
 <br>
 
-&#49;&#49;. 
-<img style="height:350px" src="14_select_input.png"/>
+#### Configure Plug-ins for Input, Processing and Output:
+
+&#49;&#48;. From the Profile screen, **enable the desired Input Plug-in** (scrolling down as necessary). For example, the Barcode Input displays an option for Scanner selection: 
+<img style="height:350px" src="10_enable_new_profile.png"/>
 <br>
 
-&#49;&#50;. 
-<img style="height:350px" src="15_select_decoders.png"/>
+&#49;&#49;. From the Scanner selection screen, **select the desired scanner** or imager. **Tap BACK** to return to the Input Plug-in screen. 
+<img style="height:350px" src="11_select_input.png"/>
+**Note: Lists such as the one above display only devices that are present on (or connected to) the unit being configured**. 
 <br>
 
-&#49;&#51;. 
-<img style="height:350px" src="16_show_dcp.png"/>
+&#49;&#50;. From the Decoders screen (accessible from the Input Plug-in screen), **select only the decoders required by the application** to optimize scanning performance. **Tap BACK** to return to the Input Plug-in screen. 
+<img style="height:350px" src="12_select_decoders.png"/>
+For more information about configuring Decoder parameters, see the [Decoder Guide](../decoders). 
 <br>
 
-
-&#49;&#52;. 
-<img style="height:350px" src="17_select_output.png"/>
+&#49;&#51;. From the Profile screen, **select the desired Output Plug-in** (scrolling down as necessary). For example, the image below shows that the Keystroke Output Plug-in is enabled: 
+<img style="height:350px" src="13_select_output.png"/>
+**Note**: Output Plug-in sections contain selectors for configuring "Basic data formatting" and "Advanced data formatting"; **these are the Process Plug-ins**.  
 <br>
 
+&#49;&#52;. **Select the Basic data formatting** options** for inserting special keystrokes or adding text before (prefix) and/or after (suffix) the collected data:  
+<img style="height:350px" src="14_basic_data_formatting.png"/>
+See Basic data formatting elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced)
+<br>
 
 &#49;&#53;. 
-<img style="height:350px" src="18_other_profiles_disabled.png"/>
-<br>
 
 &#49;&#54;. 
 
@@ -190,148 +194,32 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 &#49;&#56;. 
 
 
-Create a New Profile
-
-To create a new profile:
-
-Touch  Home > DataWedge. The DataWedge Profiles window appears.
-
-Touch  Menu > New profile.
-
-In the dialog box, enter a name for the new profile. It is recommended that profile names be unique and made up of only alpha-numeric characters (A-Z, a-z, 0-9).
-
-New Profile Name Dialog Box
-Figure 4. New Profile Name Dialog Box
-Touch OK. The new profile name appears in the DataWedge profiles screen.
-
-Configuring a Profile
-
-To configure the Profile0 or a user-created profile, touch the profile name. The Profile configuration screen appears.
-
-Profile Configuration Screen
-Figure 5. Profile Configuration Screen
-Profile enabled - Enables or disables this profile. A check in the checkbox indicates that the profile is enabled.
-
-Applications
-Use the Applications option to associate applications with this profile.
-
-Associated Apps
-
-User created profiles should be associated with one or more applications and its activities.
-
-Touch Associated apps. A list of applications/activities associated with the profile displays. Initially the list does not contain any applications/activities.
-
-Associated Apps Screen
-Figure 6. Associated Apps Screen
-Touch  Menu > New app/activity. The Select application menu appears.
-
-Select Application Menu
-Figure 7. Select Application Menu
-Select the desired application from the list. The Select activity menu appears.
-
-Select Activity Menu
-Figure 8. Select Activity Menu
-Selecting the activity adds that application/activity combination to the associated application list for that profile. Selecting * as the activity results in all activities within that application being associated to the profile. During operation, DataWedge will try to match the specific application/activity combinations with the foreground application/activity before trying to match the general application/* combinations.
-
-Touch  Back .
-
-Selected Application/Activity
-Figure 9. Selected Application/Activity
-
-## Data Capture Plus (DCP)
-Data Capture Plus (DCP) is a DataWedge feature that enables the users to trigger the scanner by clicking on a designated part of the device screen. DataWedge will respond to the click in a similar manner as it responds to the hardware trigger button press.
-
-The DataWedge profile configuration screen allows the user to configure how the DCP should appear on the screen once the particular profile is loaded. The DCP is in the disabled status by default. If the user checks the option to enable the DCP it will add five additional parameters to the preference screen for configuring the DCP as shown in following figure.
-
-DCP Preferences
-Figure 10. DCP Preferences
-Following are the configurable parameters for the profile:
-
-Dock button on - Allowed floating DCP docking policy. Restricted to the right hand side, to the left hand side or allowed in both sides of the screen are the available options.
-
-Start in - Initial DCP appearance mode. Button mode, full screen mode or button only mode are the available options.
-
-Top of button range - The top of the range the user is allowed to move the DCP, given as a percent of the screen height.
-
-Bottom of button range - The bottom of the range the user is allowed to move the DCP, given as a percent of the screen height.
-
-Drag Detect Time - The DCP wait interval in milliseconds before firing the scanner. This allows the user to drag the button without firing the trigger.
-
-These parameters can be customized to change the look and feel of the DCP.
-
-Note    
-For the users who are familiar with the Data Capture Panel in previous DataWedge versions, the corresponding new parameters of Data Capture Plus are shown in the below table. Some parameters are not migrated to the new component.
-
-Table 1. Mapping
-<caption class="title">Table 1. Mapping</caption>
-<col width="50%" />
-<col width="50%" />
-<thead>
-<tr>
-<th align="left" valign="top">Old Parameter</th>
-<th align="left" valign="top">New Parameter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left" valign="top"><p class="table">Show</p></td>
-<td align="left" valign="top"><p class="table">Enabled</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Start state</p></td>
-<td align="left" valign="top"><p class="table">Start in</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr></table>
-</div>
-
-Note    The DCP will not appear during the profile load if the scanner is disabled for the profile even though the enabled option is set.
-Minimized DCP in DataWedge Demo app
-Figure 11. Minimized DCP in DataWedge Demo app
-Changing Settings At Runtime
-
-The DCP can be maximized by dragging if it is pre-configured to minimized state. Changing the state at runtime does not save it to the profile. Also the vertical position and the docking side in device screen can be adjusted by dragging the minimized DCP. Note that these two settings will be saved for the given profile when changed at the runtime.
-
-Maximized DCP in DataWedge Demo app
-Figure 12. Maximized DCP in DataWedge Demo app
-Start scanning with DCP
-To scan a barcode DCP should be touched and hold to emit the scan beam or start the camera viewfinder. Releasing the DCP will stop the scan beam or close the viewfinder.
-
-Note    When using camera scanner in some instances quick touch and release on the DCP could start the viewfinder. Press the back button could close the viewfinder if it was not intended.
-Barcode Input
-Use the Bar Code Input options to configure the Bar Code Scanner Input Plug-in for the profile.
-
-Enabled
-
-Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled.
-
 ## Scanner Selection
+For the Input Plug-in, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
+<img style="height:350px" src="11_select_input.png"/>
+<br>
+The "Auto" option will automatically determine the best scanning device from the list of installed devices based on the rules below. 
 
-Configures which scanning device to use for data capture.
+**Auto Scanner Selection Rules**:
+* If a Zebra Scan Module or Scan/MSR Module is installed, the 2D imager will be selected. 
+* If no Scan Module is installed, the camera will be selected. 
+* When the camera is selected, scanning is performed with the rear-facing camera.
+* When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
-Auto - Automatically determines the best scanning device. If a Scan Module or Scan/MSR Module is installed on the mobile computer, then the 2D imager is selected. Otherwise the camera is selected.
+#### Bluetooth Scanners
+DataWedge supports the Zebra RS507 Cordless Bluetooth Ring Scanner according to the following rules:
 
-Camera Scanner - Scanning is performed with the rear-facing camera.
+* To initially configure RS507 in a Profile, the scanner must be paired and connected.
+* After initial configuration, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
+* DataWedge will not automatically recorrect to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
 
-2D Imager - Scanning is performed using the installed Scan or Scan/MSR module.
+#### Auto Scanner Selection and Battery Swap
 
+* If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery swap. If the RS507 does not get connected with the mobile computer after the battery swap, DataWedge will continue to work with the current default scanner.
 
-## Supporting Bluetooth Scanner
+#### Keep Enabled on Suspend
 
-DataWedge supports the RS507 Bluetooth Scanner. To configure RS507 in DataWedge profile, it must be paired and connected with the mobile computer. After the first connection the Bluetooth Scanner can be enabled and disabled in the profile configuration even if it is disconnected with the device. But it must be connected with the device to configure other scanner settings such as decoders, Reader params etc…
-
-While DataWedge was working in auto scanner selection mode, and internal scanner is working at the time of RS507 get connected, DataWedge will continue to work with the currently enabled scanner. In the next profile change RS507 gets enabled if profile has auto or Bluetooth Scanner as the scanner selection.
-
-Auto Scanner Selection and Battery Swap
-
-If the Scanner Selection is set to auto and RS507 was enabled prior to the battery swap, once the RS507 gets re-connected with the device after the battery swap it starts working with DataWedge. If RS507 does not get connected with the mobile computer after the battery swap the current default scanner will continue to work with DataWedge.
-
-Keep Enabled on Suspend
-
-This feature is enabled only for the RS507 scanner. If enabled DataWedge will keep it enabled during the device suspend. If the feature is not supported for the selected scanner the option will be disabled. When the RS507 trigger is pressed the device will wake from the suspend.
+This feature is enabled only for the RS507 scanner. If enabled, DataWedge will keep it enabled during the device suspend. If the feature is not supported for the selected scanner the option will be disabled. When the RS507 trigger is pressed the device will wake from the suspend.
 
 Note    
 Enabling this option could drain the device battery faster when device is in the suspended mode.
@@ -611,6 +499,78 @@ Other DataWedge guides:
 * [DataWedge Capture API](../capture)
 
 FROM ABOVE:
+
+
+## Data Capture Plus (DCP)
+Data Capture Plus (formerly "Data Capture Panel") enables scanner triggering by tapping on a designated part of the device screen. DataWedge will respond as it would to a button-press or other hardware trigger.
+
+The DataWedge Profile configuration screen allows the user to configure how the DCP should appear on the screen once the particular profile is loaded. The DCP is in the disabled status by default. If the user checks the option to enable the DCP it will add five additional parameters to the preference screen for configuring the DCP as shown in following figure.
+
+DCP Preferences
+Figure 10. DCP Preferences
+Following are the configurable parameters for the profile:
+
+Dock button on - Allowed floating DCP docking policy. Restricted to the right hand side, to the left hand side or allowed in both sides of the screen are the available options.
+
+Start in - Initial DCP appearance mode. Button mode, full screen mode or button only mode are the available options.
+
+Top of button range - The top of the range the user is allowed to move the DCP, given as a percent of the screen height.
+
+Bottom of button range - The bottom of the range the user is allowed to move the DCP, given as a percent of the screen height.
+
+Drag Detect Time - The DCP wait interval in milliseconds before firing the scanner. This allows the user to drag the button without firing the trigger.
+
+These parameters can be customized to change the look and feel of the DCP.
+
+Note    
+For the users who are familiar with the Data Capture Panel in previous DataWedge versions, the corresponding new parameters of Data Capture Plus are shown in the below table. Some parameters are not migrated to the new component.
+
+Table 1. Mapping
+<caption class="title">Table 1. Mapping</caption>
+<col width="50%" />
+<col width="50%" />
+<thead>
+<tr>
+<th align="left" valign="top">Old Parameter</th>
+<th align="left" valign="top">New Parameter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Show</p></td>
+<td align="left" valign="top"><p class="table">Enabled</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Start state</p></td>
+<td align="left" valign="top"><p class="table">Start in</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr></table>
+</div>
+
+Note    The DCP will not appear during the profile load if the scanner is disabled for the profile even though the enabled option is set.
+Minimized DCP in DataWedge Demo app
+Figure 11. Minimized DCP in DataWedge Demo app
+Changing Settings At Runtime
+
+The DCP can be maximized by dragging if it is pre-configured to minimized state. Changing the state at runtime does not save it to the profile. Also the vertical position and the docking side in device screen can be adjusted by dragging the minimized DCP. Note that these two settings will be saved for the given profile when changed at the runtime.
+
+Maximized DCP in DataWedge Demo app
+Figure 12. Maximized DCP in DataWedge Demo app
+Start scanning with DCP
+To scan a barcode DCP should be touched and hold to emit the scan beam or start the camera viewfinder. Releasing the DCP will stop the scan beam or close the viewfinder.
+
+Note    When using camera scanner in some instances quick touch and release on the DCP could start the viewfinder. Press the back button could close the viewfinder if it was not intended.
+Barcode Input
+Use the Bar Code Input options to configure the Bar Code Scanner Input Plug-in for the profile.
+
+Enabled
+
+Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled.
+
 
 ## Launcher
 

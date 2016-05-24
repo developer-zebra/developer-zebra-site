@@ -20,7 +20,7 @@ When associated with an app, DataWedge can be invoked to scan and acquire (input
 **Note: This guide describes DataWedge for Android. Features and usage of Windows verions may vary slightly**.
 
 ##Profiles
-Profiles contain information about how DataWedge should behave with the associated application, and provide a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. 
+Profiles contain information about how DataWedge should behave with an associated application, and provide a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. A single Profile also can be created to handle data in the same way for a group of applications. 
 
 DataWedge includes a number of pre-configured Profiles for general needs or to support specific apps that are built into every device. Some of these, such as Profile0, are visible to the user and can be edited as needed. Others contain fixed parameters and are not visible or configurable. 
 
@@ -86,7 +86,7 @@ Output Plug-ins send the processed data to the associated application or server.
 **The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipoutput) for further information. 
 
 ## Create a Profile
-This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge as its scanning services provider. 
+This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge for scanning services. 
 
 ### Quick Steps
 To enable DataWedge scanning services for an app, perform the following steps on an Android device:
@@ -94,50 +94,100 @@ To enable DataWedge scanning services for an app, perform the following steps on
 1. **Install the app** that will use DataWedge for scanning. 
 2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
 3. Tap on the Profiles screen's "hamburger" menu and **select -> New profile**. 
-4. **Enter a name for the Profile and tap OK**. The new profile will appear in the Profiles list. 
+4. **Enter a name for the Profile and tap OK**. The new Profile appears in the Profiles list. 
 5. Tap on the new profile.
 6. **Select Associated Apps** from the Applications section.
-7. In the Hamburger menu, **select -> New app/activity**. A list of installed apps will appear. 
+7. In the Hamburger menu, **select -> New app/activity**. A list of installed apps appears. 
 8. Select your app's package name (scrolling down, if necessary).
 9. **Tap the asterisk** (*) to associate all of your app's activities with DataWedge. 
 10. Tap the device's Back button until the new Profile's Settings screen appears.
 11. Confirm that the 'Profile enabled' checkbox is checked. 
-12. **Confirm that the Barcode Input and Keystroke Output checkboxes are 'Enabled'**. 
+12. As needed, **confirm that the Barcode Input and Keystroke Output checkboxes are checked**. 
 
-The app is now associated with DataWedge for scanning. Test and adjust input, processing and output parameters as necessary.
+Test and adjust input, processing and output parameters as necessary. 
+
+The app is now associated with DataWedge for barcode data acquisition. 
 
 ### Detailed Steps
 
+#### I. Create a New Profile: 
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
-<img style="height:350px" src="datawedge_launcher.png"/>
+<img style="height:350px" src="00_datawedge_launcher.png"/>
 <br>
 
-On newly installed devices, the DataWedge Profiles screen will appear, showing the three default Profiles similar to the image below: 
-<img style="height:350px" src="Figure_1_ProfilesScreen.png"/>
-The white text of three default Profiles (Profile0, Launcher and DWDemo) indicates that all are enabled. The grey text of "MyAppProfile" shows that it's disabled. 
+On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text). 
+<img style="height:350px" src="01_ProfilesScreen.png"/>
 
 **Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
 <br>
 
-&#50;. **Tap the "hamburger" menu and select New profile**.  
-<img style="height:350px" src="Figure_3_OptionsMenu.png"/>
+&#50;. **Tap the "hamburger"** menu and **select -> New profile**.  
+<img style="height:350px" src="02_OptionsMenu.png"/>
 <br>
 
-&#51;.  **Enter a new** for the new Profile. 
-<img style="height:350px" src="Figure_4_NewProfileNameDialog.png"/>
+&#51;.  **Enter a name** for the new Profile and **tap OK**. The Profiles list appears, similar to the image in Step 4, below.  
+<img style="height:350px" src="06_name_profile.png"/>
 <br>
 
-&#52;. 
-<img style="height:350px" src="Figure_5_ProfileConfigScreen.png"/>
+#### II. Associate the Profile with App(s) and/or Activities 
+&#52;. **Tap the Profile** to be associated: 
+<img style="height:350px" src="06a_profile_list.png"/>
 <br>
 
-&#53;. 
+&#53;. In the Profile screen, **tap the "Profile enabled" checkbox** to enable it, then **tap "Associated apps"** to link it with an app or activity:
+<img style="height:350px" src="07_enable_profile.png"/>
+<br>
 
-&#54;. 
+&#54;. **Tap the menu** and **select -> New app/activity**. A list appears with all apps and activities installed on the device. 
+<img style="height:350px" src="09_associate_menu.png"/>
+<br>
 
-&#55;. 
+&#55;. From the device apps/activities list, **select the app or activity to associate** with the Profile being edited. When an app is selected, its activities list appears (see Step 8). 
+<img style="height:350px" src="10_select_app_to_associate.png"/>
+<br>
 
-&#56;. 
+&#56;. From the app activities list, **tap the asterisk to associate all app activities** with the Profile or tap on an indvidual activity to associate only that activity:
+<img style="height:350px" src="11_pick_asterisk.png"/>
+<br>
+
+&#57;. The app now appears in the Profile associations list. **Repeat Steps 6-8** until all desired apps and/or activities are associated. 
+<img style="height:350px" src="12_confirm_association.png"/>
+When finished adding associations, **Tap the BACK button** to return to the Profile screen. 
+<br>
+
+#### III. Configure Input, Processing and Output Plug-ins
+
+&#49;&#48;. In the Profile screen, **select the desired Input Plug-In** (scroll down as necessary). 
+<img style="height:350px" src="13_enable_new_profile.png"/>
+<br>
+
+&#49;&#49;. 
+<img style="height:350px" src="14_select_input.png"/>
+<br>
+
+&#49;&#50;. 
+<img style="height:350px" src="15_select_decoders.png"/>
+<br>
+
+&#49;&#51;. 
+<img style="height:350px" src="16_show_dcp.png"/>
+<br>
+
+
+&#49;&#52;. 
+<img style="height:350px" src="17_select_output.png"/>
+<br>
+
+
+&#49;&#53;. 
+<img style="height:350px" src="18_other_profiles_disabled.png"/>
+<br>
+
+&#49;&#54;. 
+
+&#49;&#55;. 
+
+&#49;&#56;. 
 
 
 Create a New Profile

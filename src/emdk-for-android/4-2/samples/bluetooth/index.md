@@ -4,10 +4,10 @@ title: Controlling Bluetooth
 description: This sample application will show you how to enable or disable the bluetooth radio on a device.
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/ProfileWirelessMgrSample1.zip'
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_2/archive/ProfileWirelessMgrSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/ProfileWirelessMgrSample1'
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_2/tree/ProfileWirelessMgrSample1'
 features:
   - Profile Manager
   - Clock

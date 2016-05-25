@@ -10,7 +10,7 @@ menu:
     - versionto: 4-0
       versionfrom: 4-2
       default: /emdk-for-android/4-0/guide/about
-      label: '4.0 '
+      label: '4.0'
   items:
     - title: Home
       url: /emdk-for-android/4-2/guide/about

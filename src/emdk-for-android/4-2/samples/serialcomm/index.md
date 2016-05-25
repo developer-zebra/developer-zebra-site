@@ -4,10 +4,10 @@ title: Serial Communication
 description: This sample demonstrates the EMDK Serial Communication API to enable support for DEX in your application. DEX (data exchange) is a format for collecting audit and event data from vending machines.
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/archive/SerialCommSample1.zip'
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_2/archive/SerialCommSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_0/tree/SerialCommSample1'
+    url: 'https://github.com/developer-zebra/samples-emdkforandroid-4_2/tree/SerialCommSample1'
 features: null
 devices:
   - TC75KK

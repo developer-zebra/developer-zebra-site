@@ -17,7 +17,9 @@ Each Profile generally contains four elements:
 
 When associated with an app, DataWedge can be invoked to scan and acquire (input) the data, format or append (process) it in a specified way, and pass (output) it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any application currently in the foreground and contains baseline settings that can be tailored to individual needs. This allows DataWedge to be used out of the box with no little or no pre-configuration required. 
  
-**Note: This guide describes DataWedge for Android. Features and usage of Windows verions may vary slightly**.
+**Important**: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
+
+_**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
 
 ##Profiles
 Profiles contain information about how DataWedge should behave with an associated application, and provide a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. A single Profile also can be created to handle data in the same way for a group of applications. 
@@ -65,16 +67,16 @@ Input Plug-ins specify the device hardware to be used to acquire the data before
 
 **The MSR Input Plug-in** is for magnetic stripe reader modules. This plug-in reads data from an integrated MSR reader or attached Scan/MSR Module, after which the raw data from the reader can be processed or formatted as required using Process Plug-ins.
 
-**The SimulScan Input Plug-in** permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins.
+**The SimulScan Input Plug-in** permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins. 
 
-**Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string.
+**Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string. **See SimulScan** section later in this guide. 
 
 ### Process Plug-ins
-Process Plug-ins manipulate the acquired data in a specified way before sending to the associated application or server via the Output Plug-in. Those included with DataWedge are explained below. 
+Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated application or server via the Output Plug-in. Process Plug-ins are grouped with each Output Plug-in, and appear as "Basic Data Formatting" and "Advanced Data Formatting." They are explained below. 
 
-**The Basic Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes as well as conversion of data to hex. 
+**The Basic Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes as well as conversion of data to hex. For example, if the acquired barcode data is 012345, this option would cause the hex equivalent data of 30**31**32**33**34**35** to be sent. 
 
-**The Advanced Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to the captured data before passing it to an Output Plug-in.
+**The Advanced Format Process Plug-in** allows for acquired data to be customized  to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. For more information, please see the [Advanced Data Formatting Guide](../advanced). 
 
 ### Output Plug-ins
 Output Plug-ins send the processed data to the associated application or server. Those included with DataWedge are explained below. 
@@ -107,6 +109,20 @@ To enable DataWedge scanning services for an app, perform the following steps on
 Test and adjust input, processing (data formatting) and output parameters as necessary. 
 
 The app will now use DataWedge for barcode data acquisition. 
+
+**Important**: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
+
+To disable DataWedge and release scanner hardware to other apps: 
+
+1. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).
+2. Tap on the Profiles screen's "hamburger" menu and **select -> Settings**.
+
+<img style="height:350px" src="datawedge_settings.png"/>
+<br>
+
+3. **Uncheck the "DataWedge enabled" checkbox** to disable it and release control of scanner hardware. 
+<img style="height:350px" src="datawedge_enable-disable.png"/>
+<br>
 
 ### Detailed Steps
 
@@ -182,23 +198,26 @@ For more information about configuring Decoder parameters, see the [Decoder Guid
 
 &#49;&#52;. **Select the Basic data formatting** options** for inserting special keystrokes or adding text before (prefix) and/or after (suffix) the collected data:  
 <img style="height:350px" src="14_basic_data_formatting.png"/>
-See Basic data formatting elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced)
 <br>
 
-&#49;&#53;. 
+See Basic data formatting elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced).
+<br>
 
-&#49;&#54;. 
+### Edit, Rename or Delete a Profile
+**To edit, rename or delete a profile**: 
 
-&#49;&#55;. 
-
-&#49;&#56;. 
-
+1. **Long-press the Profile name** to bring up its Context menu.
+2. **Tap on the desired action**: 
+<img style="height:350px" src="profile_context_menu.png"/>
+<br>
+Editing a Profile also can be started by tapping the Profile name in the Profile list. 
 
 ## Scanner Selection
-For the Input Plug-in, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
+For the Barcode Input Plug-in, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
 <img style="height:350px" src="11_select_input.png"/>
 <br>
-The "Auto" option will automatically determine the best scanning device from the list of installed devices based on the rules below. 
+
+The "Auto" option will automatically determine the best scanning device from the list of available devices based on the rules below. 
 
 **Auto Scanner Selection Rules**:
 * If a Zebra Scan Module or Scan/MSR Module is installed, the 2D imager will be selected. 
@@ -207,296 +226,249 @@ The "Auto" option will automatically determine the best scanning device from the
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
 #### Bluetooth Scanners
-DataWedge supports the Zebra RS507 Cordless Bluetooth Ring Scanner according to the following rules:
+**DataWedge currently supports only the Zebra RS507 Cordless Bluetooth Ring Scanner**. 
 
-* To initially configure RS507 in a Profile, the scanner must be paired and connected.
-* After initial configuration, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
-* DataWedge will not automatically recorrect to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
+Bluetooth scanners are supported according to the following rules:
 
-#### Auto Scanner Selection and Battery Swap
+* **To initially configure the RS507** in a Profile, the scanner must be paired and connected.
+* **After initial configuration**, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
+* **DataWedge will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
+* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataWedge will revert to the current default scanner.
+* **Keep Enabled on Suspend -** This mode is supported only on the RS507. When the RS507 trigger is pressed, the device will wake from suspend mode. **Note: This option could cause faster device battery drain while in suspended mode**.
 
-* If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery swap. If the RS507 does not get connected with the mobile computer after the battery swap, DataWedge will continue to work with the current default scanner.
+## SimulScan Input 
+The SimulScan Input Plug-in permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins. 
 
-#### Keep Enabled on Suspend
+<img style="height:350px" src="Figure_13_SimulScan_prefs.png"/>
+_SimulScan Input Plug-in options_.
+<br>
 
-This feature is enabled only for the RS507 scanner. If enabled, DataWedge will keep it enabled during the device suspend. If the feature is not supported for the selected scanner the option will be disabled. When the RS507 trigger is pressed the device will wake from the suspend.
+SimulScan Capture Rules: 
+* **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that single string.
+* **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled. 
 
-Note    
-Enabling this option could drain the device battery faster when device is in the suspended mode.
+**Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
 
-MSR Input
-Use MSR Input options to configure the MSR Input Plug-in for the profile.
+**Template selection -** sets a SimulScan template for the Profile being configured. Four templates are included with DataWedge: 
 
-Enabled
+* **Default-DocCap+Optional-Barcode.xml -** Captures the form as a picture and optionally decodes a barcode if available in the form. **This is the default form if none is selected**.
+* **Default-DocCap+Required-Barcode.xml -** Captures the form and decodes available barcode.
+* **Default-One-Barcode.xml -** Decodes a single barcode in the form and returns a single data region as the output.
+* **Default-Two-Barcodes.xml -** Decodes two barcodes in a form and returns the data as two data regions.
 
-Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled.
+Custom template XML files copied to the following device directory will be available for selection using this option:
 
-SimulScan Input
-SimulScan Input plug-in can be used to capture data in documents using SimulScan capability available in the Symbol Technologies devices. Use the SimulScan Input options to configure the SimulScan Input Plug-in for the profile.
+`/enterprise/device/settings/datawedge/` 
 
-SimulScan Preferences
-Figure 13. SimulScan Preferences
-Enabled
+Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Creator](https://simulscan.zebra.com/). 
 
-Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled. When SimulScan plug-in enabled Barcode Input plug-in gets disabled if it is already enabled in the profile configuration.
+**Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
 
-Template selection
+Possible values:
+* None (default)
+* Tab
+* Line feed 
+* Carriage return 
 
-Template selection option can be use to set the required SimulScan template for the profile configuration. There will be four templates included with DataWedge. Default template for SimulScan input plug-in is "Default Default-DocCap+Optional-Barcode.xml".
+**Notes**: 
+* **Barcode, OCR and OMR regions** are considered as text regions. When using keystroke output and IP output, only text-region data will be dispatched to the foreground application or the remote server.
+* **Picture-region data** can be retrieved only through the Intent Output Plug-in.
 
-Default-DocCap+Optional-Barcode.xml(default) - Capture the form as a picture and optionally decode a barcode if available in the form.
+## Keystroke Output
+The Keystroke Output Plug-in collects the processed data and sends it to the associated application as a series of keystrokes, emulating the actions of a user pressing the keys. 
 
-Default-DocCap+Required-Barcode.xml - Capture the form and decode available barcode.
+<img style="height:350px" src="keystroke_output.png"/>
+_Keystroke Output Plug-in options_. 
+<br>
 
-Default-One-Barcode.xml - Decode a single barcode in the form and returns a single data region as the output.
+**Action key character -** enables injection of a special character embedded within barcode or MSR data.
 
-Default-Two-Barcodes.xml - Decode two barcodes in a form and return the data as two data regions.
+Possible values:
 
-To use customized templates, template xmls must be copied to the /enterprise/device/settings/datawedge/templates directory. Templates modified after the configuration is done.
+* **None -** inject no action key
+* **Tab -** inject action key in place of a ASCII Tab (0x09) character
+* **Line feed -** inject action key in place of ASCII LF (0x0A) character
+* **Carriage return -** inject action key in place of ASCII CR (0x0D) character
 
-Region separator
+<!-- Multi-byte character delay - Inter-character delay (in ms) for multi-byte characters. This parameter can help avoid problems that arise while sending Unicode and multi-byte characters to the Android browser. The value is set to zero by default. If you see any errors in the delivery of keystrokes adjust the delay to a higher value e.g. 100 ms.
 
-Region separator option can be used to configure a separator character for SimulScan region data. When there are multiple text regions the region separator will be inserted between two data strings. By default no separator will be set. Possible values for region separator are None, Tab, Line feed and Carriage return. Region separator can be used with the Keystrokes plug-in Action key character setting to dispatch SimulScan region data to separate text fields.
+Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).-->
 
-Note    Barcode, OCR and OMR regions are considered as text regions in DataWedge. When using keystroke output and IP output, only text region data will get dispatched to the foreground application and the remote server respectively.
-Note    Picture region data can only be retrieved through Intent output plug-in.
-Keystroke Output
-Use to configure the Keystroke Output Plug-in for the profile.
+## Basic Data Formatting
+The Basic Format Process Plug-in provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to an Output Plug-in. It also permits the conversion of data to hexadecimal format. If the Basic Formatting Plug-in is not enabled, captured data is passed to the selected Output Plug-in without modification.
 
-Enabled - Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled.
+<img style="height:350px" src="basic_data_formatting.png"/>
+_Basic Data Formatting Output Plug-in options_. 
+<br>
 
-Action key character - Enabled decoding a special characters embedded within a bar code or MSR data.
+**Prefix to data -** adds (prepends) the specified characters(s) to the beginning of the acquired before sending.
 
-Multi byte character delay - Inter character delay for multi byte characters specified in milliseconds. This parameter is introduced to avoid some problems occurred while sending Unicode and multi byte characters to Android web browser. The value is set to zero by default. If you see any errors in the delivery of keystrokes adjust the delay to a higher value e.g. 100 ms.
+**Suffix to data -** adds (appends)  the specified characters(s) to the end of the acquired data before sending.
 
-None - action key not injected
+**Send data -** enables transfer of the captured data to the associated application when it comes to the foreground. Disabling this option prevents the captured data from being transmitted but prefix and suffix strings are still transmitted even when this option is disabled (enabled by default).
 
-Tab - inject action key in place of a ASCII Tab (0x09) character
+**Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option would send the hex equivalent of 30**31**32**33**34**35**. 
 
-Line feed - inject action key in place of ASCII LF (0x0A) character
+**Send TAB key -** appends a TAB character to the processed data. 
 
-Carriage return - inject action key in place of ASCII CR (0x0D) character
+**Send ENTER key -** appends an Enter character to the processed data. 
 
-Advanced data formatting - is a way to customizing data before transmission. Use advanced data formatting (ADF) to edit scan data to suit requirements.
+## Advanced Data Formatting
+The Advanced Data Format Process Plug-in allows for acquired data to be customized to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. For more information, please see the [Advanced Data Formatting Guide](../advanced). 
 
-Enable - Enables or disables ADF. A check in the checkbox indicates that ADF is enabled (default - disabled).
+## Intent Output
+The Intent Output Plug-in allows acquired data to be passed programmatically to an application using the Android Intent mechanism. The core components of an application (its activities, services, and broadcast receivers) are activated by Intents. An Intent is a bundle of information (known as an Intent object) that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and some other pertinent instructions. Android locates an appropriate component to respond to the Intent, launches a new instance of the component (if needed), and passes the Intent object to it.
 
-Rules - ADF uses rules to customize data. These rules perform detailed actions when the data meets certain criteria. One rule may consist of single or multiple criteria applied to single or multiple actions. See Generating Advanced Data Formatting Rules below for more information.
+Components advertise the kinds of Intents they can handle through Intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component may have any number of filters, each describing a different capability. 
 
-Basic data formatting - allows configuration of any data formatting for the related Output Plug-in for the profile. When the plug-in is disabled any data is passed on without modification.
+<img style="height:350px" src="intent_output.png"/>
+_Intent Output Plug-in options_. 
+<br>
 
-Enabled - Enables or disables Basic Data Formatting. A check in the checkbox indicates that it is enabled (default - enabled).
+DataWedge invokes an Intent though an **Intent Action** in an **Intent Category** as described in its `AndroidManifest.xml` file. For example, if the manifest contains the lines...
 
-Prefix to data - Add characters to the beginning of the data when sent.
-
-Suffix to data - Add characters to the end of the data when sent.
-
-Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).
-
-Send as hex - Set to send the data in hexadecimal format. A check in the checkbox indicates that this setting is enabled (default - disabled).
-
-Send TAB key - Set to append a tab character to the end of the processed data. A check in the checkbox indicates that this setting is enabled (default - disabled).
-
-Send ENTER key - Set to append an Enter character to the end of the processed data. A check in the checkbox indicates that this setting is enabled (default - disabled).
-
-Intent Output
-Allows configuration of the Intent Output Plug-in for the profile. The Intent Output Plug-in allows the captured data to be sent to an application in the form of an implicit Intent. Refer to the Android Developer web site for more information, http://developer.android.com.
-
-Enabled - Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled (default - disabled).
-
-Intent action - Enter the Intent Action name (required).
-
-Intent category - Enter the Intent Category name (required).
-
-Intent delivery - Select the method by which the intent is delivered:
-
-Send via StartActivity
-
-Send via startService
-
-Broadcast intent
-
-Receiver foreground flag - Set receiver foreground flag (Intent.FLAG_RECEIVER_FOREGROUND) in the broadcast intent. This flag can be set only when Intent delivery is set to Broadcast intent. NOTE: This flag needs to be enabled when broadcast intents are not received to the application for sometime after rebooting the device.
-
-Advanced data formatting - is a way to customizing data before transmission. Use advanced data formatting (ADF) to edit scan data to suit requirements.
-
-Enable - Enables or disables ADF. A check in the checkbox indicates that ADF is enabled (default - disabled).
-
-Rules - ADF uses rules to customize data. These rules perform detailed actions when the data meets certain criteria. One rule may consist of single or multiple criteria applied to single or multiple actions. See Generating Advanced Data Formatting Rules below for more information.
-
-Basic data formatting - allows configuration of any data formatting for the related Output Plug-in for the profile. When the plug-in is disabled any data is passed on without modification.
-
-Enabled - Enables or disables Basic Data Formatting. A check in the checkbox indicates that it is enabled (default - enabled).
-
-Prefix to data - Add characters to the beginning of the data when sent.
-
-Suffix to data - Add characters to the end of the data when sent.
-
-Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).
-
-Send as hex - Set to send the data in hexadecimal format. A check in the checkbox indicates that this setting is enabled (default - disabled).
-
-Send TAB key - Set to append a tab character to the end of the processed data. A check in the checkbox indicates that this setting is enabled (default - disabled).
-
-Send ENTER key - Set to append an Enter character to the end of the processed data. A check in the checkbox indicates that this setting is enabled (default - disabled).
-
-Intent Overview
-
-The core components of an application (its activities, services, and broadcast receivers) are activated by intents. An intent is a bundle of information (an Intent object) describing a desired action - including the data to be acted upon, the category of component that should perform the action, and other pertinent instructions. Android locates an appropriate component to respond to the intent, launches a new instance of the component if one is needed, and passes it the Intent object.
-
-Components advertise their capabilities, the kinds of intents they can respond to, through intent filters. Since the Android system must learn which intents a component can handle before it launches the component, intent filters are specified in the manifest as <intent-filter> elements. A component may have any number of filters, each one describing a different capability.
-
-For example, if the manifest contains the following:
-
-<intent-filter . . . >
+    <intent-filter>
+        ...
         <action android:name="android.intent.action.DEFAULT" />
         <category android:name="android.intent.category.MAIN" />
-          . . .
-</intent-filter>
-In the Intent output plug-in configuration, the Intent action would be:
+        ...
+    </intent-filter>
 
-android.intent.category.DEFAULT
-and the Intent category would be:
+...then the **Intent Action** in the Intent Output Plug-in would be **android.intent.category.DEFAULT**
 
-android.intent.category.MAIN
-The Intent delivery option allows the method by which the intent is delivered to be specified. The delivery mechanisms are Send via startActivity, Send via startService or Broadcast intent.
+and the **Intent Category** would be **android.intent.category.MAIN**.
 
-The decode related data added to the Intent's bundle can be retrieved using the Intent.geStringtExtra() and Intent.getSerializableExtra() calls, using the following String tags:
+The Intent Delivery option allows the method by which the Intent is delivered to be specified. Intent-based data is delivered through one of three delivery mechanisms:  
 
-String LABEL_TYPE_TAG = "com.symbol.datawedge.label_type";
-String contains the label type of the bar code.
+* **Send via startActivity** 
 
-String DATA_STRING_TAG = "com.symbol.datawedge.data_string";
-String contains the output data as a String. In the case of concatenated barcodes, the decode data is concatenated and sent out as a single string.
+* **Send via startService** 
 
-String DECODE_DATA_TAG = "com.symbol.datawedge.decode_data";
-Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation e.g. Codabar, Code128, MicroPDF, etc., the decoded data is stored in multiple byte arrays (one byte array per bar code). Clients can get data in each byte array by passing an index.
+* **Broadcast Intent** 
 
-The MSR related data added to the Intent’s bundle can be retrieved using the Intent.getStringtExtra() and Intent.getSerializableExtra() calls, using the following String tags:
+When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. 
 
-String MSR_DATA_TAG = "com.symbol.datawedge.msr_data";
+**NOTE**: This flag must be enabled when broadcast Intents are not received to the application for sometime after rebooting the device.
+
+####Decode-related data
+The decode-related data added to an Intent bundle can be retrieved using the followng calls: 
+
+* `Intent.getStringtExtra()`
+* `Intent.getSerializableExtra()` 
+
+The calls above can be used with the following String tags:
+
+* **String LABEL_TYPE_TAG = "com.symbol.datawedge.label_type"**; String contains the barcode label type
+
+* **String DATA_STRING_TAG = "com.symbol.datawedge.data_string"**; String contains the output data as a String. In the case of concatenated barcodes, the decode data is concatenated and sent out as a single string.
+
+* **String DECODE_DATA_TAG = "com.symbol.datawedge.decode_data"**; Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array, per bar code). Clients can get data in each byte array by passing an index.
+
+####MSR-related data
+The MSR-related data added to an Intent bundle can be retrieved using the following calls: 
+
+* `Intent.getStringtExtra()`
+* `Intent.getSerializableExtra()` 
+
+The calls above can be used with the following String tags:
+
+* **String MSR_DATA_TAG = "com.symbol.datawedge.msr_data"**;
 The data from the MSR tracks is concatenated and sent out as a byte array. The Start/end sentinels and track separators are included as configured.
 
-String MSR_TRACK1_TAG = "com.symbol.datawedge.msr_track1";
-MSR track 1 data is returned as a byte array.
+* **String MSR_TRACK1_TAG = "com.symbol.datawedge.msr_track1"**; MSR track 1 data is returned as a byte array.
 
-String MSR_TRACK2_TAG = "com.symbol.datawedge.msr_track2";
-MSR track 2 data is returned as a byte array.
+* **String MSR_TRACK2_TAG = "com.symbol.datawedge.msr_track2"**; MSR track 2 data is returned as a byte array.
 
-String MSR_TRACK3_TAG = "com.symbol.datawedge.msr_track3";
-MSR track 3 data is returned as a byte array.
+* **String MSR_TRACK3_TAG = "com.symbol.datawedge.msr_track3"**; MSR track 3 data is returned as a byte array.
 
-String MSR_TRACK1_STATUS_TAG = "com.symbol.datawedge.msr_track1_status";
-MSR track 1 decode status as an Integer where 0 indicates a successful decode.
+* **String MSR_TRACK1_STATUS_TAG = "com.symbol.datawedge.msr_track1_status"**; MSR track 1 decode status as an Integer where 0 indicates a successful decode.
 
-String MSR_TRACK2_STATUS_TAG = "com.symbol.datawedge.msr_track2_status";
-MSR track 2 decode status as an Integer where 0 indicates a successful decode.
+* **String MSR_TRACK2_STATUS_TAG = "com.symbol.datawedge.msr_track2_status"**; MSR track 2 decode status as an Integer where 0 indicates a successful decode.
 
-String MSR_TRACK3_STATUS_TAG = "com.symbol.datawedge.msr_track3_status";
-MSR track 3 decode status as an Integer where 0 indicates a successful decode.
+* **String MSR_TRACK3_STATUS_TAG = "com.symbol.datawedge.msr_track3_status"**; MSR track 3 decode status as an Integer where 0 indicates a successful decode.
 
-The SimulScan related data added to the Intent’s bundle can be retrieved using the Intent.getStringtExtra(), Intent.getSerializableExtra(), Intent. getParcelableArrayListExtra(), Bundle.getInt(), Bundle.getString(), and Bundle.getByteArray() calls, using the following String tags:
+####SimulScan-related Data
+The SimulScan-related data added to an Intent bundle can be retrieved using the following calls: 
 
-String SIMULSCAN_TEMPLATE_NAME_TAG = "com.symbol.datawedge.simulscan_template_name";
-The name of the template which used by SimulScan to capture the form.
+* `Intent.getStringtExtra()`
+* `Intent.getSerializableExtra()`
+* `Intent. getParcelableArrayListExtra()`
+* `Bundle.getInt()`
+* `Bundle.getString()`
+* `Bundle.getByteArray()`
 
-String SIMULSCAN_REGIONS_BUNDLE_TAG= "com.symbol.datawedge.simulscan_region_data";
-Return an array of Bundles where each bundle contains data and information about a region and the form.
+The calls above can use the following String tags:
 
-String SIMULSCAN_REGION_NAME_TAG = "com.symbol.datawedge.simulscan_region_name";
-Returns the region name of the bundle object for reach region. To get the region name Bundle.getString() should be called.
+* **String SIMULSCAN_TEMPLATE_NAME_TAG = "com.symbol.datawedge.simulscan_template_name"**; The name of the template which used by SimulScan to capture the form.
 
-String SIMULSCAN_REGION_ID_TAG = "com.symbol.datawedge.simulscan_region_id";
-Returns the region id of the bundle object for reach region. Region id is an integer and can be retrieved by calling Bundle.getInt ().
+* **String SIMULSCAN_REGIONS_BUNDLE_TAG= "com.symbol.datawedge.simulscan_region_data"**; Return an array of Bundles where each bundle contains data and information about a region and the form.
 
-String SIMULSCAN_REGION_TYPE_TAG = "com.symbol.datawedge.simulscan_region_type";
-Returns the region type of the bundle object for reach region. Region type is an string and can be retrieved by calling Bundle.getString (). Possible return values are barcode, ocr, omr, picture and form.
+* **String SIMULSCAN_REGION_NAME_TAG = "com.symbol.datawedge.simulscan_region_name"**; Returns the region name of the bundle object for reach region. To get the region name `Bundle.getString()` should be called.
 
-barcode - region is a barcode
+* **String SIMULSCAN_REGION_ID_TAG = "com.symbol.datawedge.simulscan_region_id"**; Returns the region id of the bundle object for reach region. Region id is an integer and can be retrieved by calling `Bundle.getInt ()`.
 
-ocr - region is an OCR (Optical Character Recognition) region. i.e name or address
+* **String SIMULSCAN_REGION_STRING_DATA= "com.symbol.datawedge.simulscan_region_string_data"**; Returns the string data of the region. String data comes with barcode, OCR and OMR data.
 
-omr - region is an OMR (Optical Mark Recognition ) region. i.e checkbox, radio button.
-
-picture - region is a picture. Picture data will be in the JPEG format.
-
-form - form type specify that the bundle contains the picture of the captured form. Form image will be in the JPEG format.
-
-String SIMULSCAN_REGION_STRING_DATA= "com.symbol.datawedge.simulscan_region_string_data";
-Returns the string data of the region. String data comes with barcode, ocr and omr data.
-
-String SIMULSCAN_REGION_BINARY_DATA= "com.symbol.datawedge.simulscan_region_string_data";
+* **String SIMULSCAN_REGION_BINARY_DATA= "com.symbol.datawedge.simulscan_region_string_data"**;
 Returns the data of the region in the form of byte array. Binary data comes only for picture regions and the form image. Both picture and form data can be load in to a bitmap and display in the application.
 
-Most scanning applications might want the user to be able to decode data and for that decode data to be sent to the current activity but not necessarily displayed. If this is the case, then the activity needs to be marked as "singleTop" in its AndroidManifest.xml file. If your activity is not defined as singleTop, then on every decode, the system will create another copy of your Activity and send the decode data to this second copy.
+* **String SIMULSCAN_REGION_TYPE_TAG = "com.symbol.datawedge.simulscan_region_type"**; Returns the region type of the bundle object for reach region. Region type is a string and can be retrieved by calling `Bundle.getString ()`. 
 
-Finally there will be a configuration option for each process plug-in so that the process plug-in can be configured specifically for the intent output, which in this case is the basic data formatting process plug-in.
+Possible return values for the region type:
 
-IP Output
-Use the IP Output options to configure the IP Output Plug-in for the profile.
+* **Barcode -** Region is a barcode.
+* **OCR -** Region is an Optical Character Recognition (OCR) region (i.e name or address). 
+* **OMR -** Region is an Optical Mark Recognition (OMR) region (i.e checkbox, radio button).
+* **Picture -** Region is a picture; data will be in the JPEG format.
+* **Form -** Form type to specify that the bundle contains a picture of the captured form. Form image will be in the JPEG format.
 
-Enabled - Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled (default - disabled).
+**Important**: For some scanning applications, it might be preferable for decoded data to be sent directly to the current activity and not necessarily displayed. For such instances, the activity must be designated  as "singleTop" in its AndroidManifest.xml file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned copy. 
 
-Remote Wedge - Enables this plug-in to be used with IPWedge. Make sure this option is unchecked when not using IPWedge. See IPWedge below. (default - enabled).
+Finally there will be a configuration option for each process plug-in so that the process plug-in can be configured specifically for the Intent output, which in this case is the basic data formatting process plug-in.
 
-Protocol - Select the transport protocol (default - TCP)
+For more information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
 
-TCP
+## IP Output
+The IP Output Plug-in enables captured data to be transferred to a server running a component for Windows called Zebra IPWedge. Before configuring a device to communicate with a server, it's often helpful to first set up the server. For server set-up instructions, please see the [IPWedge Guide](../ipoutput), then resume from here.
 
-UDP
+#### Setting up a device to use the IP Output Plug-in:  
 
-IP address - Enter the IP address of the host (default - 0.0.0.0)
+<img style="height:350px" src="ip_output.png"/>
+_IP Output Plug-in options_. 
+<br>
 
-Port - Enter the port number (default - 58627)
+**From the Profile in which to activate the IP Output Plug-in**:  
 
-IPWedge
+1. Locate the IP Output section of the Profile.  
+2. **Check "Enabled" and "Remote Wedge" boxes** to enable IP Output and communication with the IPWedge server component.
+3. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+4. **Enter the IP address** of the server running IPWedge software.
+5. **Enter the Port number** if other than the default of 58627. 
 
-IPWedge is a PC application that can be easily configured to retrieve data sent over a network by the DataWedge IP Output Plug-in on a Symbol device.
+### Using IP Output Plug-in without IPWedge
+it is possible to use the IP Output Plug-in to send captured data to a remote device without IPWedge. At the data receiving end, the PC or Mobile device should have a client application that listens to TCP or UDP data coming from the configured port and IP address in IP Output Plug-in. To get IP output plug-in configured to send captured data to a remote computer or device, follow these steps.
 
-If you intend to use IP output in conjunction with IPWedge, download the IPWedge installation package from Symbol’s Enterprise Mobility support site at http://support.symbol.com/support/product/DEV_SW_TOOLS.html to the host PC.
+1. Locate the IP Output section of the Profile.  
+2. **Check "Enabled" box** and _**uncheck**_ the "Remote Wedge" box**.
+3. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+4. **Enter the IP address** of the server running IPWedge software.
+5. **Enter the Port number** if other than the default of 58627. 
 
-Please see the IPWedge user manual on how to install and configure on a PC.
-
-Using IP output with IPWedge
-
-In order to get IP output to send captured data to a remote computer that is installed with IPWedge configure following items:
-
-Touch  Home > DataWedge.
-
-Touch a DataWedge profile.
-
-In IP output, touch Enabled.
-
-Touch Protocol. Select the desired transport protocol.
-
-Touch IP address. Enter the IP address of the host computer and then touch OK.
-
-Touch Port. Enter the port number and then touch OK.
-
-Using IP Output Plug-in without IPWedge
-
-IP output plug-in can be used to send captured data from DataWedge application to remote device or PC without IPWedge. At the data receiving end, the PC or Mobile device should have a client application, that listens to TCP or UDP data comes from configured port and IP address in IP Output plug-in. In order to get IP output plug-in configured to send captured data to a remote computer or device, follow these steps.
-
-Touch  Home > DataWedge.
-
-Touch a DataWedge profile.
-
-In IP output, touch Enabled.
-
-Touch Remote Wedge to disable the Remote Wedge option.
-
-Touch Protocol. Select the desired transport protocol.
-
-Touch IP address. Enter the IP address of the host computer and then touch OK.
-
-Touch Port. Enter the port number and then touch OK.
-
-**Note: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. This guide includes instructions for such operations. 
 
 Other DataWedge guides: 
 * [DataWedge IP Output](../ipoutput)
 * [DataWedge API for Android](../androidapi)
 * [DataWedge Capture API](../capture)
+
+
+
+
+
+
+
+>>>>>>>RESUME HERE 
+
+
 
 FROM ABOVE:
 
@@ -510,20 +482,19 @@ DCP Preferences
 Figure 10. DCP Preferences
 Following are the configurable parameters for the profile:
 
-Dock button on - Allowed floating DCP docking policy. Restricted to the right hand side, to the left hand side or allowed in both sides of the screen are the available options.
+**Dock button on -** Allowed floating DCP docking policy. Restricted to the right hand side, to the left hand side or allowed in both sides of the screen are the available options.
 
-Start in - Initial DCP appearance mode. Button mode, full screen mode or button only mode are the available options.
+**Start in -** Initial DCP appearance mode. Button mode, full screen mode or button only mode are the available options.
 
-Top of button range - The top of the range the user is allowed to move the DCP, given as a percent of the screen height.
+**Top of button range -** The top of the range the user is allowed to move the DCP, given as a percent of the screen height.
 
-Bottom of button range - The bottom of the range the user is allowed to move the DCP, given as a percent of the screen height.
+**Bottom of button range -** The bottom of the range the user is allowed to move the DCP, given as a percent of the screen height.
 
-Drag Detect Time - The DCP wait interval in milliseconds before firing the scanner. This allows the user to drag the button without firing the trigger.
+**Drag Detect Time -** The DCP wait interval in milliseconds before firing the scanner. This allows the user to drag the button without firing the trigger.
 
 These parameters can be customized to change the look and feel of the DCP.
 
-Note    
-For the users who are familiar with the Data Capture Panel in previous DataWedge versions, the corresponding new parameters of Data Capture Plus are shown in the below table. Some parameters are not migrated to the new component.
+**Note**: For the users who are familiar with the Data Capture Panel in previous DataWedge versions, the corresponding new parameters of Data Capture Plus are shown in the below table. Some parameters are not migrated to the new component.
 
 Table 1. Mapping
 <caption class="title">Table 1. Mapping</caption>
@@ -571,29 +542,6 @@ Enabled
 
 Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled.
 
-
-## Launcher
-
-DWDemo
-
-Profile0 is the default profile and is used when no other profile can be applied.
-
-DataWedge Profiles Screen
-Figure 1. DataWedge Profiles Screen
-Profile names are color coded. Enabled profiles are white and disabled profiles are gray.
-
-To configure a profile touch the profile name.
-
-Profile Context Menu
-Touch and hold a profile to open a context menu that allows additional actions to be performed on the selected profile.
-
-Profile Context Menu
-Figure 2. Profile Context Menu
-The profile context menu allows the profile to be edited (same as just touching a profile), renamed, deleted or cloned.
-
-Note    When a profile is cloned the application association will be empty in the new profile. This is according to the rule that two profiles cannot be associated with same application. All other settings will be identical.
-Options Menu
-Touch  Menu to open the options menu.
 
 DataWedge Options Menu
 Figure 3. DataWedge Options Menu

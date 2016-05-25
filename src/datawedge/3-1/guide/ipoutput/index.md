@@ -5,6 +5,17 @@ product: DataWedge
 productversion: '3.1'
 ---
 
+IPWedge
+
+IPWedge is a PC application that can be easily configured to retrieve data sent over a network by the DataWedge IP Output Plug-in on a Symbol device.
+
+If you intend to use IP output in conjunction with IPWedge, download the IPWedge installation package from Symbol’s Enterprise Mobility support site at http://support.symbol.com/support/product/DEV_SW_TOOLS.html to the host PC.
+
+LINK TO IPWedge
+https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge%20ip
+
+
+
 DATAWEDGE ANDROID IP OUTPUT USER GUIDE
 
 INTRODUCTION

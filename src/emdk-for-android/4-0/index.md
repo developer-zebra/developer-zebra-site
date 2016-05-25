@@ -7,10 +7,10 @@ menu:
   title: EMDK For Android 4.0
   img: /emdk-for-android/images/logo.png
   versions:
-    - versionto: 4-1
+    - versionto: 4-2
       versionfrom: 4-0
-      default: /emdk-for-android/4-1/guide/about
-      label: '4.1'
+      default: /emdk-for-android/4-2/guide/about
+      label: '4.2'
   items:
     - title: Home
       url: /emdk-for-android/4-0/guide/about

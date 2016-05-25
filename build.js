@@ -263,52 +263,52 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/4-0/'
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/',
+        folder: 'emdk-for-android/4-2/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/barcode',
+        folder: 'emdk-for-android/4-2/api/barcode',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/core',
+        folder: 'emdk-for-android/4-2/api/core',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/payment',
+        folder: 'emdk-for-android/4-2/api/payment',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/PersonalShopper',
+        folder: 'emdk-for-android/4-2/api/PersonalShopper',
         automenu: true,
         ascontent: true
     }))
     
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/scanandpair',
+        folder: 'emdk-for-android/4-2/api/scanandpair',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/securenfc',
+        folder: 'emdk-for-android/4-2/api/securenfc',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/serialcomm',
+        folder: 'emdk-for-android/4-2/api/serialcomm',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/api/simulscan',
+        folder: 'emdk-for-android/4-2/api/simulscan',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-android/4-1/'
+        folder: 'emdk-for-android/4-2/'
     }))
     .use(foldermenu({
         folder: 'emdk-for-android/3-1/api/',

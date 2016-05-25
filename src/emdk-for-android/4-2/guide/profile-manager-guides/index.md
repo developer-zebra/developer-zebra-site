@@ -56,6 +56,8 @@ automenu:
           url: /emdk-for-android/4-2/mx/powermgr/
         - title: Touch Manager
           url: /emdk-for-android/4-2/mx/touchmgr/
+        - title: Remote Scanner Manager
+          url: /emdk-for-android/4-2/mx/remotescannermgr/
     - title: Core Framework
       items:
         - title: Persistence Manager

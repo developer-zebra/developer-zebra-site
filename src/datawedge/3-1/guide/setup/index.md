@@ -13,18 +13,18 @@ Each Profile generally contains four elements:
 * **An Input Plug-in -** to determine how data will be acquired (i.e. a barcode scanner)
 * **A Process Plug-in -** to specify how the acquired data should be manipulated 
 * **An Output Plug-in -** to control the passing of data to an application
-* **An Associated application -** (or activity) with which to link DataWedge actions
+* **An associated application -** (or activity) with which to link DataWedge actions
 
-When associated with an app, DataWedge can be invoked to scan and acquire (input) the data, format or append (process) it in a specified way, and pass (output) it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any application currently in the foreground and contains baseline settings that can be tailored to individual needs. This allows DataWedge to be used out of the box with no little or no pre-configuration required. 
+When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any unassociated application that comes to the foreground. Profile0 contains baseline settings that can be tailored to suit individual needs. This allows DataWedge to be used out of the box with no little or no setup. 
  
-**Important**: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
+**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see **Disable DataWedge** section. 
 
 _**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
 
 ##Profiles
-Profiles contain information about how DataWedge should behave with an associated application, and provide a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. A single Profile also can be created to handle data in the same way for a group of applications. 
+Profiles contain information about how DataWedge should behave with an associated application, and provide a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. Alternatively, a **single** Profile can be created and associated with **many applications**, acquiring and processing data in exactly the same way for all. 
 
-DataWedge includes a number of pre-configured Profiles for general needs or to support specific apps that are built into every device. Some of these, such as Profile0, are visible to the user and can be edited as needed. Others contain fixed parameters and are not visible or configurable. 
+Any number of Profiles can be created to suit all the needs of an enterprise. DataWedge also includes several pre-configured Profiles to support general needs or for specific apps that are built into every device. Some of these, such as Profile0, are visible to the user and can be edited as needed. Others contain fixed parameters and are not visible or configurable. 
 
 #### Visible Profiles
 * **Profile0 -** is a generic that takes effect for any unassociated foreground app. 
@@ -69,7 +69,7 @@ Input Plug-ins specify the device hardware to be used to acquire the data before
 
 **The SimulScan Input Plug-in** permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins. 
 
-**Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string. **See SimulScan** section later in this guide. 
+**Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string. See **SimulScan section** later in this guide. 
 
 ### Process Plug-ins
 Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated application or server via the Output Plug-in. Process Plug-ins are grouped with each Output Plug-in, and appear as "Basic Data Formatting" and "Advanced Data Formatting." They are explained below. 
@@ -139,7 +139,7 @@ Zebra recommends that Profile names be unique and made up of alpha-numeric chara
 <img style="height:350px" src="04_profile_list.png"/>
 <br>
 
-&#53;. In the Profile screen, **tap the "Profile enabled" checkbox** to enable it, then **tap "Associated apps"** to link it with an app or activity:
+&#53;. From the Profile screen, **tap the "Profile enabled" checkbox** to enable it, then **tap "Associated apps"** to link it with an app or activity:
 <img style="height:350px" src="05_enable_profile.png"/>
 <br>
 
@@ -155,7 +155,7 @@ Zebra recommends that Profile names be unique and made up of alpha-numeric chara
 <img style="height:350px" src="08_pick_asterisk.png"/>
 <br>
 
-&#57;. The app now appears in the Profile associations list. **Repeat Steps 6-8** until all desired apps and/or activities are associated. 
+&#57;. The app now appears in the Profile associations list as below. **Repeat Steps 6-8** until all desired apps and/or activities are associated. 
 <img style="height:350px" src="09_confirm_association.png"/>
 When finished adding associations, **Tap the BACK button** to return to the Profile screen. 
 <br>
@@ -169,7 +169,7 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 
 &#49;&#49;. From the Scanner selection screen, **select the desired scanner** or imager. **Tap BACK** to return to the Input Plug-in screen. 
 <img style="height:350px" src="11_select_input.png"/>
-**Note: Lists such as the one above display only devices that are present on (or connected to) the unit being configured**. 
+**Note: Lists such as the one above display only devices that are present on (or connected to) the unit being configured**. For related information, see **Scanner Selection** section. 
 <br>
 
 &#49;&#50;. From the Decoders screen (accessible from the Input Plug-in screen), **select only the decoders required by the application** to optimize scanning performance. **Tap BACK** to return to the Input Plug-in screen. 
@@ -179,21 +179,21 @@ For more information about configuring Decoder parameters, see the [Decoder Guid
 
 &#49;&#51;. From the Profile screen, **select the desired Output Plug-in** (scrolling down as necessary). For example, the image below shows that the Keystroke Output Plug-in is enabled: 
 <img style="height:350px" src="13_select_output.png"/>
-**Note**: Output Plug-in sections contain selectors for configuring "Basic data formatting" and "Advanced data formatting"; **these are the Process Plug-ins**.  
+**Note**: Output Plug-in sections contain selectors for configuring "Basic data formatting" and "Advanced data formatting." **These are the Process Plug-ins**.  
 <br>
 
-&#49;&#52;. **Select the Basic data formatting** options** for inserting special keystrokes or adding text before (prefix) and/or after (suffix) the collected data:  
+&#49;&#52;. **Select the Basic data formatting** for options on inserting special keystrokes or adding text before (prefix) and/or after (suffix) the collected data:  
 <img style="height:350px" src="14_basic_data_formatting.png"/>
 <br>
 
-See Basic data formatting elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced).
+See **Basic data formatting** elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced).
 <br>
 
 ### Edit, Rename or Delete a Profile
 **To edit, rename or delete a profile**: 
 
-1. **Long-press the Profile name** to bring up its Context menu.
-2. **Tap on the desired action**: 
+&#49;. **Long-press the Profile name** to bring up its Context menu.
+&#50;. **Tap on the desired action**: 
 <img style="height:350px" src="profile_context_menu.png"/>
 <br>
 Editing a Profile also can be started by tapping the Profile name in the Profile list. 
@@ -201,18 +201,17 @@ Editing a Profile also can be started by tapping the Profile name in the Profile
 ### Disable DataWedge
 **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
 
-**To disable DataWedge**:: 
+**To disable DataWedge**:
 
-&#49;. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).
+&#49;. **Start DataWedge** and navigate to the Profiles list (if not shown by default).
 
 &#50;. Tap on the "hamburger" menu and **select -> Settings**:
 <img style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. **Uncheck the "DataWedge enabled" checkbox** to disable it and release control of scanner hardware. 
+&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is now returned to the system. 
 <img style="height:350px" src="datawedge_enable-disable.png"/>
-_The DataWedge Settings panel controls Profile_ <br>
-_import/export, logging and other general functions_. 
+_The DataWedge Settings panel controls Profile import/export, logging and other general functions_. 
 <br>
 
 For more information about functions of the DataWedge Settings panel, please see the [Advanced Guide](../advanced).
@@ -249,7 +248,7 @@ _SimulScan Input Plug-in options_.
 <br>
 
 SimulScan Capture Rules: 
-* **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that single string.
+* **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that string.
 * **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled. 
 
 **Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
@@ -322,15 +321,15 @@ _Basic Data Formatting Output Plug-in options_.
 The Advanced Data Format Process Plug-in allows for acquired data to be customized to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. For more information, please see the [Advanced Data Formatting Guide](../advanced). 
 
 ## Intent Output
-The Intent Output Plug-in allows acquired data to be passed programmatically to an application using the Android Intent mechanism. The core components of an application (its activities, services, and broadcast receivers) are activated by Intents. An Intent is a bundle of information (known as an Intent object) that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and some other pertinent instructions. Android locates an appropriate component to respond to the Intent, launches a new instance of the component (if needed), and passes the Intent object to it.
+The Intent Output Plug-in allows acquired data to be passed programmatically to an application using the Android Intent mechanism. The core components of an application (its activities, services, and broadcast receivers) are activated by Intents. An Intent Object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and some other pertinent instructions. When an Intent is initiated, Android locates an appropriate component to respond to the Intent, launches a new instance of the component (if needed), and passes the Intent Object to it.
 
-Components advertise the kinds of Intents they can handle through Intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component may have any number of filters, each describing a different capability. 
+Components advertise the kinds of Intents they can handle through Intent Filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component may have any number of Intent Filters, each describing a different capability. 
 
 <img style="height:350px" src="intent_output.png"/>
 _Intent Output Plug-in options_. 
 <br>
 
-DataWedge invokes an Intent though an **Intent Action** in an **Intent Category** as described in its `AndroidManifest.xml` file. For example, if the manifest contains the lines...
+DataWedge invokes an Intent though an **Intent Action** in an **Intent Category** as described in its `AndroidManifest.xml` file. For example, if the DataWedge manifest contains the lines...
 
     <intent-filter>
         ...
@@ -339,9 +338,9 @@ DataWedge invokes an Intent though an **Intent Action** in an **Intent Category*
         ...
     </intent-filter>
 
-...then the **Intent Action** in the Intent Output Plug-in would be **android.intent.category.DEFAULT**
+...then the **Intent Action** in the Intent Output Plug-in would be `android.intent.category.DEFAULT`
 
-and the **Intent Category** would be **android.intent.category.MAIN**.
+and the `Intent Category** would be **android.intent.category.MAIN`.
 
 The Intent Delivery option allows the method by which the Intent is delivered to be specified. Intent-based data is delivered through one of three delivery mechanisms:  
 
@@ -351,9 +350,7 @@ The Intent Delivery option allows the method by which the Intent is delivered to
 
 * **Broadcast Intent** 
 
-When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. 
-
-**NOTE**: This flag must be enabled when broadcast Intents are not received to the application for sometime after rebooting the device.
+When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. **Note: Use this flag only if delays are seen in delivery of Intents immediately following device boot-up**.
 
 ####Decode-related data
 The decode-related data added to an Intent bundle can be retrieved using the followng calls: 
@@ -428,8 +425,6 @@ Possible return values for the region type:
 * **Form -** Form type to specify that the bundle contains a picture of the captured form. Form image will be in the JPEG format.
 
 **Important**: For some scanning applications, it might be preferable for decoded data to be sent directly to the current activity and not necessarily displayed. For such instances, the activity must be designated  as "singleTop" in its AndroidManifest.xml file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned copy. 
-
-Finally there will be a configuration option for each process plug-in so that the process plug-in can be configured specifically for the Intent output, which in this case is the basic data formatting process plug-in.
 
 For more information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
 

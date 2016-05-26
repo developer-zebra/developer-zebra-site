@@ -429,30 +429,34 @@ Possible return values for the region type:
 For more information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
 
 ## IP Output
-The IP Output Plug-in enables captured data to be transferred to a server running a component for Windows called Zebra IPWedge. Before configuring a device to communicate with a server, it's often helpful to first set up the server. For server set-up instructions, please see the [IPWedge Guide](../ipoutput), then resume from here.
+The IP Output Plug-in enables captured data to be transferred over a network to a computer running IPWedge, a small Windows app made by Zebra. The PC receives the data as keystrokes or in its Clipboard, in essence turning the device into a wireless scanner for the PC. 
 
-#### Setting up a device to use the IP Output Plug-in:  
+To configure a device to use the IP Output Plug-in, it's necessary to know the IP address of the PC as well as the port number to which the PC will be listening. To set up the PC first, see the [IPWedge Guide](../ipoutput) for IPWedge download and set-up instructions. Then resume from here.
+
+#### Set up the IP Output Plug-in: 
+
+**From the Profile in which to activate the IP Output Plug-in**:  
+
+&#49;. Locate the IP Output section of the Profile.  
+&#50;. **Check "Enabled" and "Remote Wedge" boxes** to enable IP Output and communication with the IPWedge server component.
 
 <img style="height:350px" src="ip_output.png"/>
 _IP Output Plug-in options_. 
 <br>
 
-**From the Profile in which to activate the IP Output Plug-in**:  
-
-1. Locate the IP Output section of the Profile.  
-2. **Check "Enabled" and "Remote Wedge" boxes** to enable IP Output and communication with the IPWedge server component.
-3. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
-4. **Enter the IP address** of the server running IPWedge software.
-5. **Enter the Port number** if other than the default of 58627. 
+&#51;. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+&#52;. **Enter the IP address** of the server running IPWedge software.
+&#53;. **Enter the Port number** if other than the default of 58627. 
 
 ### Using IP Output Plug-in without IPWedge
 it is possible to use the IP Output Plug-in to send captured data to a remote device without IPWedge. At the data receiving end, the PC or Mobile device should have a client application that listens to TCP or UDP data coming from the configured port and IP address in IP Output Plug-in. To get IP output plug-in configured to send captured data to a remote computer or device, follow these steps.
 
-1. Locate the IP Output section of the Profile.  
-2. **Check "Enabled" box** and **_uncheck_ the "Remote Wedge" box**.
-3. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
-4. **Enter the IP address** of the server running IPWedge software.
-5. **Enter the Port number** if other than the default of 58627. 
+&#49;. Locate the IP Output section of the Profile.  
+&#50;. **Check "Enabled" box** and **_uncheck_ the "Remote Wedge" box**.
+&#51;. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+&#52;. **Enter the IP address** of the server running IPWedge software.
+&#53;. **Enter the Port number** if other than the default of 58627. 
+**Warning: Zebra does not support this usage scenario**.
 
 ## Data Capture Plus (DCP)
 Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on a designated screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger.

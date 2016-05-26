@@ -110,20 +110,6 @@ Test and adjust input, processing (data formatting) and output parameters as nec
 
 The app will now use DataWedge for barcode data acquisition. 
 
-**Important**: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
-
-To disable DataWedge and release scanner hardware to other apps: 
-
-1. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).
-2. Tap on the Profiles screen's "hamburger" menu and **select -> Settings**.
-
-<img style="height:350px" src="datawedge_settings.png"/>
-<br>
-
-3. **Uncheck the "DataWedge enabled" checkbox** to disable it and release control of scanner hardware. 
-<img style="height:350px" src="datawedge_enable-disable.png"/>
-<br>
-
 ### Detailed Steps
 
 ####Create a New Profile:
@@ -211,6 +197,25 @@ See Basic data formatting elsewhere in this guide for more information. For Adva
 <img style="height:350px" src="profile_context_menu.png"/>
 <br>
 Editing a Profile also can be started by tapping the Profile name in the Profile list. 
+
+### Disable DataWedge
+**Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
+
+**To disable DataWedge**:: 
+
+&#49;. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).
+
+&#50;. Tap on the "hamburger" menu and **select -> Settings**:
+<img style="height:350px" src="datawedge_settings.png"/>
+<br>
+
+&#51;. **Uncheck the "DataWedge enabled" checkbox** to disable it and release control of scanner hardware. 
+<img style="height:350px" src="datawedge_enable-disable.png"/>
+_The DataWedge Settings panel controls Profile_ <br>
+_import/export, logging and other general functions_. 
+<br>
+
+For more information about functions of the DataWedge Settings panel, please see the [Advanced Guide](../advanced).
 
 ## Scanner Selection
 For the Barcode Input Plug-in, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
@@ -449,110 +454,68 @@ _IP Output Plug-in options_.
 it is possible to use the IP Output Plug-in to send captured data to a remote device without IPWedge. At the data receiving end, the PC or Mobile device should have a client application that listens to TCP or UDP data coming from the configured port and IP address in IP Output Plug-in. To get IP output plug-in configured to send captured data to a remote computer or device, follow these steps.
 
 1. Locate the IP Output section of the Profile.  
-2. **Check "Enabled" box** and _**uncheck**_ the "Remote Wedge" box**.
+2. **Check "Enabled" box** and **_uncheck_ the "Remote Wedge" box**.
 3. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
 4. **Enter the IP address** of the server running IPWedge software.
 5. **Enter the Port number** if other than the default of 58627. 
 
+## Data Capture Plus (DCP)
+Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on a designated screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger.
+
+DCP is disabled by default. The DataWedge Profile configuration screen allows an app user to configure the appearance of DCP on the screen once a particular Profile is loaded. If the user checks the option to enable the DCP, the five parameters shown below appear on the preference screen and can be configured as desired.
+
+**Note: The DCP will not appear if the scanner is disabled in the current Profile**.
+
+<img style="height:350px" src="dcp_settings.png"/>
+_Data Capture Plus options for setting scan triggers_. 
+<br>
+
+Data Capture Plus offers these configurable parameters:
+
+**Dock button on -** Sets the initial docking location of the floating DCP button. Changes by the user at runtime are saved to the active Profile. Docking options:  
+* Right side only
+* Left side only
+* Either side
+
+**Start in -** Sets the mode that DCP will startup with. If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. Start-in options: 
+* Button mode (floating button)
+* Full-screen mode
+* Button-only mode
+
+**Button highest position -** Sets a ceiling for button position expressed as a percent of screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen. 
+
+**Bottom lowest position -** Sets a floor for button position expressed as a percent of screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.
+
+**Drag Detect Time -** The wait time (in ms) that DCP should wait after a screen tap before triggering a scanner action. This can help prevent accidental triggers when dragging the DCP button to a new location.
+
+**Note**: A quick touch and release of the DCP can sometimes start the viewfinder when using camera as a scanner. To exit, press the back button.
+
+<img style="height:350px" src="dcp_minimized.png"/>
+_Data Capture Plus shown in minimized mode_. 
+<br>
+
+**Note**: If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. However, runtime changes to the vertical position and the docking side of device screen _**will**_ be saved to the active Profile.
+
+<img style="height:350px" src="dcp_maximized.png"/>
+_Data Capture Plus shown in maximized mode_. 
+<br>
+
+### Scanning with DCP
+
+**To scan a barcode with DCP**: 
+
+&#49;. With DCP enabled, **tap and hold the area of the screen designated for DCP**. The scan beam (or camera viewfinder) will be active while the tap is held. 
+
+&#50;. **Aim the scan beam or camera reticle at the barcode** to be scanned. DCP will use the preferences configured in the Barcode Input Plug-in for the current Profile.
+
+&#51;. * **Release finger to stop scanning** or to close the camera viewfinder.
+
+**Note**: A quick touch and release of the DCP control sometimes will start the viewfinder when using camera as a scanner. To exit, press the BACK button.
+
+------
 
 Other DataWedge guides: 
-* [DataWedge IP Output](../ipoutput)
-* [DataWedge API for Android](../androidapi)
+* [IPWedge Guide](../ipoutput)
+* [DataWedge API for Android](../api)
 * [DataWedge Capture API](../capture)
-
-
-
-
-
-
-
->>>>>>>RESUME HERE 
-
-
-
-FROM ABOVE:
-
-
-## Data Capture Plus (DCP)
-Data Capture Plus (formerly "Data Capture Panel") enables scanner triggering by tapping on a designated part of the device screen. DataWedge will respond as it would to a button-press or other hardware trigger.
-
-The DataWedge Profile configuration screen allows the user to configure how the DCP should appear on the screen once the particular profile is loaded. The DCP is in the disabled status by default. If the user checks the option to enable the DCP it will add five additional parameters to the preference screen for configuring the DCP as shown in following figure.
-
-DCP Preferences
-Figure 10. DCP Preferences
-Following are the configurable parameters for the profile:
-
-**Dock button on -** Allowed floating DCP docking policy. Restricted to the right hand side, to the left hand side or allowed in both sides of the screen are the available options.
-
-**Start in -** Initial DCP appearance mode. Button mode, full screen mode or button only mode are the available options.
-
-**Top of button range -** The top of the range the user is allowed to move the DCP, given as a percent of the screen height.
-
-**Bottom of button range -** The bottom of the range the user is allowed to move the DCP, given as a percent of the screen height.
-
-**Drag Detect Time -** The DCP wait interval in milliseconds before firing the scanner. This allows the user to drag the button without firing the trigger.
-
-These parameters can be customized to change the look and feel of the DCP.
-
-**Note**: For the users who are familiar with the Data Capture Panel in previous DataWedge versions, the corresponding new parameters of Data Capture Plus are shown in the below table. Some parameters are not migrated to the new component.
-
-Table 1. Mapping
-<caption class="title">Table 1. Mapping</caption>
-<col width="50%" />
-<col width="50%" />
-<thead>
-<tr>
-<th align="left" valign="top">Old Parameter</th>
-<th align="left" valign="top">New Parameter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left" valign="top"><p class="table">Show</p></td>
-<td align="left" valign="top"><p class="table">Enabled</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Start state</p></td>
-<td align="left" valign="top"><p class="table">Start in</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr></table>
-</div>
-
-Note    The DCP will not appear during the profile load if the scanner is disabled for the profile even though the enabled option is set.
-Minimized DCP in DataWedge Demo app
-Figure 11. Minimized DCP in DataWedge Demo app
-Changing Settings At Runtime
-
-The DCP can be maximized by dragging if it is pre-configured to minimized state. Changing the state at runtime does not save it to the profile. Also the vertical position and the docking side in device screen can be adjusted by dragging the minimized DCP. Note that these two settings will be saved for the given profile when changed at the runtime.
-
-Maximized DCP in DataWedge Demo app
-Figure 12. Maximized DCP in DataWedge Demo app
-Start scanning with DCP
-To scan a barcode DCP should be touched and hold to emit the scan beam or start the camera viewfinder. Releasing the DCP will stop the scan beam or close the viewfinder.
-
-Note    When using camera scanner in some instances quick touch and release on the DCP could start the viewfinder. Press the back button could close the viewfinder if it was not intended.
-Barcode Input
-Use the Bar Code Input options to configure the Bar Code Scanner Input Plug-in for the profile.
-
-Enabled
-
-Enables or disables this plug-in. A check in the checkbox indicates that the plug-in is enabled.
-
-
-DataWedge Options Menu
-Figure 3. DataWedge Options Menu
-The menu provides options to create a new profiles, access to general DataWedge settings and DataWedge version information.
-
-Disabling DataWedge
-To disable DataWedge:
-
-Touch  Home > DataWedge
-
-Touch  Menu > Settings
-
-Touch DataWedge enabled. The green check disappears from the checkbox indicating that DataWedge is disabled.
 

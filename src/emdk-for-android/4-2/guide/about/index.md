@@ -42,7 +42,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * TC70 - KitKat (4.4.2,4.4.3)
 * TC75 - KitKat (4.4.3)
 * TC8000 - KitKat (4.4.3)
-* WT6000 - Lollipop (5.1.1)
+
 
 
 ## What's New
@@ -51,8 +51,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * [Barcode API Updates](../../api/barcode)
 	* Support added for RS6000 and RS4000 Ring Scanners
 	* New scanner configurations parameters in ScannerConfig.ScanParams:
-		* [decodeAudioFeedbackMode](../../api/barcode/ScannerConfig-ScanParams/#decodeaudiofeedbackmode) - Controls the Audio feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
-		* [decodeLEDFeedbackMode](../../api/barcode/ScannerConfig-ScanParams/#decodeaudiofeedbackmode) - Controls the LED feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
+		* [decodeAudioFeedbackMode](../../api/barcode/ScannerConfig-ScanParams/#decodeaudiofeedbackmode) - Controls the Audio feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
+		* [decodeLEDFeedbackMode](../../api/barcode/ScannerConfig-ScanParams/#decodeaudiofeedbackmode) - Controls the LED feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
 		* Connection idle timeout value 0 is supported. Device will not get disconnected when set to 0.
 	* Enhanced to support the scanner selection:
 		* Added new method [getDeviceIdentifier()](../../api/barcode/ScannerInfo/#getdeviceidentifier) in ScannerInfo class to query the scanner type. - This can be used to identify specific scanner from the enumerated devices list.
@@ -72,8 +72,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* Updates to [DataCapture](../../mx/data-capture/) feature:
 		* Added support for choosing the remote scanners such as RS507, RS4000 and RS6000.
 		* Added support for controlling the barcode decode notifications
-			* Decode Audio Feedback Mode - Controls the Audio feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
-			* Decode LED Feedback Mode - Controls the LED feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
+			* Decode Audio Feedback Mode - Controls the Audio feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
+			* Decode LED Feedback Mode - Controls the LED feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
 			* Aim Mode - Enable/Disable scanner aim during scanning.
 			* Illumination Brightness - Controls illumination brightness of the imager.
 

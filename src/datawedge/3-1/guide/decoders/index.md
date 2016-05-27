@@ -5,8 +5,34 @@ product: DataWedge
 productversion: '3.1'
 ---
 
-## Decoders
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default as indicated by an (*) in the table below. To help improve scanning performance, individual symbologies can be enabled and disabled as needed for a specific app or usage profile. To modify decoder parameters, see Decoder Paramaters section following table. 
+## Overview
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles as indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile, as shown in the image below. 
+<br>
+<img style="height:350px" src="decoder_menu.png"/>
+Decoders and Decoder params selectors in the Barcode Input Plug-in menu. 
+<br>
+
+This guide includes details for each Decoder  
+
+See the Decoder Paramaters section below for more information. 
+
+Each DataWedge Profile can be assigned a unique group of Decoders to use with its associated application(s). 
+
+
+
+When editing a Profile screen (accessible from the Input Plug-in screen), **select only the decoders required by the application** to optimize scanning performance. 
+
+**Tap BACK** to return to the Input Plug-in screen. 
+
+
+<br>
+
+
+<img style="height:350px" src="decoder_selection.png"/>
+The interface for selecting Decoders in a Profile. 
+<br>
+
+For further instructions, see "Create a Profile" in the [Setup Guide](..setup). 
 
 <div class="tableblock">
 <table rules="none"
@@ -96,7 +122,7 @@ cellspacing="0" cellpadding="4">
 
 Intro to decoders. 
 
-Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders.
+Configures which bar code decoders are enabled. For best performance disable all unnecessary decoders.
 
 Touch Decoders. The Barcode input screen appears. A check in the checkbox indicates that the decoder is enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
 <h4 id="_decoders">Decoders</h4>

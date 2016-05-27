@@ -172,9 +172,8 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 **Note: Lists such as the one above display only devices that are present on (or connected to) the unit being configured**. For related information, see **Scanner Selection** section. 
 <br>
 
-&#49;&#50;. From the Decoders screen (accessible from the Input Plug-in screen), **select only the decoders required by the application** to optimize scanning performance. **Tap BACK** to return to the Input Plug-in screen. 
+&#49;&#50;. From the Decoders screen (accessible from the Input Plug-in screen), **select only the decoders required by the application** to optimize scanning performance. **Tap BACK** to return to the Input Plug-in screen. For more information about configuring Decoder parameters, see the [Decoder Guide](../decoders).
 <img style="height:350px" src="12_select_decoders.png"/>
-For more information about configuring Decoder parameters, see the [Decoder Guide](../decoders). 
 <br>
 
 &#49;&#51;. From the Profile screen, **select the desired Output Plug-in** (scrolling down as necessary). For example, the image below shows that the Keystroke Output Plug-in is enabled: 

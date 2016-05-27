@@ -85,7 +85,7 @@ Output Plug-ins send the processed data to the associated application or server.
 
 **The Intent Output Plug-in** sends the processed data to the associated foreground application as payload within an Android Intent.
 
-**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipoutput) for further information. 
+**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipwedge) for further information. 
 
 ## Create a Profile
 This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge for scanning services. 
@@ -431,7 +431,7 @@ For more information about Android Intents, please refer to the [Android Develop
 ## IP Output
 The IP Output Plug-in enables captured data to be transferred over a network to a computer running IPWedge, a small Windows app made by Zebra. The PC receives the data as keystrokes or in its Clipboard, in essence turning the device into a wireless scanner for the PC. 
 
-To configure a device to use the IP Output Plug-in, it's necessary to know the IP address of the PC as well as the port number to which the PC will be listening. To set up the PC first, see the [IPWedge Guide](../ipoutput) for IPWedge download and set-up instructions. Then resume from here.
+To configure a device to use the IP Output Plug-in, it's necessary to know the IP address of the PC as well as the port number to which the PC will be listening. To set up the PC first, see the [IPWedge Guide](../ipwedge) for IPWedge download and set-up instructions. Then resume from here.
 
 #### Set up the IP Output Plug-in: 
 
@@ -514,7 +514,7 @@ _Data Capture Plus shown in maximized mode_.
 ------
 
 Other DataWedge guides: 
-* [IPWedge Guide](../ipoutput)
+* [IPWedge Guide](../ipwedge)
 * [DataWedge API for Android](../api)
 * [DataWedge Capture API](../capture)
 

@@ -14,7 +14,7 @@ menu:
     - title: Decoders
       url: /datawedge/3-1/guide/decoders
     - title: IP Output
-      url: /datawedge/3-1/guide/ipoutput
+      url: /datawedge/3-1/guide/ipwedge
     - title: APIs
       url: /datawedge/3-1/guide/api
     - title: Demo

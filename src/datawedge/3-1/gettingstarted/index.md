@@ -27,7 +27,7 @@ content-items:
     level: 4
     title: DataWedge IP
     text: A tool for storing locally scanned data on a server. 
-    url: /datawedge/3-1/guide/ipoutput
+    url: /datawedge/3-1/guide/ipwedge
   - type: section
     level: 4
     title: DataWedge APIs

@@ -5,14 +5,16 @@ product: DataWedge
 productversion: '3.1'
 ---
 
-IPWedge is a small Windows app that monitors a network port and receives scanned data sent by devices using the DataWedge IP Output Plug-in. The receiving PC places the data as keystrokes into the foreground application or the Windows Clipboard, essentially using the device as a wireless scanner. 
+## Overview
 
-## Set up IPWedge
+IPWedge is a small Windows app that monitors a network port and receives scanned data sent by devices using the DataWedge IP Output Plug-in. The receiving PC inserts the data as keystrokes into the foreground application or the Windows Clipboard, essentially using the device as a wireless scanner. 
+
+## IPWedge Set-up 
 
 ### Prerequisites
 To use IPWedge, start with the following: 
 
-* Windows XP, Vista, 7 or 8
+* A PC with Windows XP, Vista, 7 or 8
 * Microsoft .NET Framework 3.5 Service Pack 1 (or later)
 * A Zebra device running Android 4.1 Jelly Bean (or later)
 * DataWedge for Android 1.5 (or later)
@@ -28,10 +30,9 @@ _IPWedge System Tray menu_.
 
 > **Note: This default port number is the same as that of the IP Output Plug-in**.
 
-&#52;. **Open the IPWedge app** from the Windows Start menu or tap on the IPWedge icon in the System Tray.
+&#52;. **Open the IPWedge app** from the Windows Start menu or tap on the IPWedge icon in the System Tray and select Options. 
 
-&#53;. **Select Options** from the menu. The IPWedge Options panel appears similar to the image(s) below. 
-
+The IPWedge Options panel appears similar to the image(s) below. 
 <img style="height:250px" src="01_ipwedge.jpg"/>
 _General Options_. 
 <br>
@@ -44,7 +45,7 @@ _Keystroke Options_.
 _Clipboard Options_. 
 <br>
 
-&#54;.**Make any required changes** to Options in the General, Keystroke and Clipboard tabs. **Click OK on each tab** to save settings. 
+&#53;. **Make any required changes** to Options in the General, Keystroke and Clipboard tabs. **Click OK on each tab** to save settings. 
 
 The PC is now ready to receive data from devices running DataWedge that are configured to use the IP Output Plug-in with IP address and port settings that match those of the PC. To set up a device, see "IP Output" in the [DataWedge Setup Guide](../setup). 
 

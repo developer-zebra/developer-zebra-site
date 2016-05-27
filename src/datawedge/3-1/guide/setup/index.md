@@ -40,7 +40,7 @@ Any number of Profiles can be created to suit all the needs of an enterprise. Da
 * **RhoElements -** disables scanning when RhoElements is in the foreground.
 
 ### Profile0
-Profile0 is a generic Profile that automatically takes effect for any app that comes to the foreground that has not been associated with DataWedge. This can be useful for quickly acquiring data using an app that has just been installed, for example, or when using an app that has not yet been configured by an administrator for use with DataWedge. All parameters of Profile0 can be edited except its association. 
+Profile0 is a generic Profile that automatically takes effect for any app that comes to the foreground that has not been associated with DataWedge. This can be useful for quickly acquiring data using an app that has just been installed, for example, or when using an app that has not yet been configured by an administrator for use with DataWedge. All parameters of Profile0 can be edited except its association. **Note: Profile0 cannot be used with IPWedge**.
 
 **Profile0 also can be disabled within a Profile**. This provides a measure of security by restricting output to applications or servers to which DataWedge has been specifically associated. 
 
@@ -85,7 +85,7 @@ Output Plug-ins send the processed data to the associated application or server.
 
 **The Intent Output Plug-in** sends the processed data to the associated foreground application as payload within an Android Intent.
 
-**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipwedge) for further information. 
+**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipwedge) for further information. **Note: Profile0 cannot be used with IPWedge**.
 
 ## Create a Profile
 This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge for scanning services. 

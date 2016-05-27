@@ -13,7 +13,7 @@ menu:
       url: /datawedge/3-1/guide/advanced
     - title: Decoders
       url: /datawedge/3-1/guide/decoders
-    - title: IP Output
+    - title: IPWedge
       url: /datawedge/3-1/guide/ipwedge
     - title: APIs
       url: /datawedge/3-1/guide/api

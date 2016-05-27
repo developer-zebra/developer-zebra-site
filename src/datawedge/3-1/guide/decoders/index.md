@@ -6,35 +6,10 @@ productversion: '3.1'
 ---
 
 ## Overview
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles as indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile, as shown in the image below. 
-<br>
-<img style="height:350px" src="decoder_menu.png"/>
-Decoders and Decoder params selectors in the Barcode Input Plug-in menu. 
-<br>
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles as indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters to use with its associated application(s). This guide covers Decoder selection and includes details of each Decoder's parameters. 
 
-This guide includes details for each Decoder  
-
-See the Decoder Paramaters section below for more information. 
-
-Each DataWedge Profile can be assigned a unique group of Decoders to use with its associated application(s). 
-
-
-
-When editing a Profile screen (accessible from the Input Plug-in screen), **select only the decoders required by the application** to optimize scanning performance. 
-
-**Tap BACK** to return to the Input Plug-in screen. 
-
-
-<br>
-
-
-<img style="height:350px" src="decoder_selection.png"/>
-The interface for selecting Decoders in a Profile. 
-<br>
-
-For further instructions, see "Create a Profile" in the [Setup Guide](..setup). 
-
-<div class="tableblock">
+### Default Decoders 
+<div class="table-striped">
 <table rules="none"
 width="100%"
 frame="void"
@@ -119,30 +94,37 @@ cellspacing="0" cellpadding="4">
 </div>
 &#42; _Enabled by default_
 
+### Enable/Disable Decoders
 
-Intro to decoders. 
+**To enable or disable Decoders**: 
 
-Configures which bar code decoders are enabled. For best performance disable all unnecessary decoders.
+&#49;. **From the Profile being edited, tap Decoders** as highlighted below. A list of Decoders appears similar to the image in Step 2, below.  
+<img style="height:350px" src="select_decoders.png"/>
+The Decoders and Decoder params selectors in the Barcode Input Plug-in menu. 
+<br>
 
-Touch Decoders. The Barcode input screen appears. A check in the checkbox indicates that the decoder is enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
-<h4 id="_decoders">Decoders</h4>
-<div class="paragraph"><p>Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary
-decoders.</p></div>
-<div class="paragraph"><p>Touch <strong>Decoders</strong>. The <strong>Barcode input</strong> screen appears. A check in the checkbox indicates that the decoder is
-enabled. By default the most commonly used decoders are enabled (shown below with an asterisk). The
-supported decoders are:</p></div>
+&#50;. **Select the desired Decoders** by checking the corresponding checkbox. **Deselect any that are not required** for the app associated with the Profile. 
+<img style="height:350px" src="decoder_selection.png"/>
+The interface for selecting Decoders in a Profile. 
+<br>
 
-### Decoders
+### Edit Decoder Parameters
 
-### Decoder Params
+**To edit Decoder parameters**:
 
-Use Decode Params to configure individual decoder parameters. Touch Decode Params. The Decode params screen appears. Touch the decoder parameter to modify.
+&#49;. **From the Profile being edited, tap Decoder params** as highlighted below. A list of Decoders appears similar to the image in Step 2, below.
+<img style="height:350px" src="decoder_params.png"/>
+<br>
 
-------
+&#50;. **From the Decoder list, tap a Decoder to edit its parameters**. 
+<img style="height:350px" src="edit_decoder_params.png"/>
+<br>
 
+Decoder parameters are explained below. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup). 
+
+## Decoder Parameters
 ### UPCE0
-
-Report Check Digit - The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
+**Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
 
 **Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE0 preamble:
 
@@ -194,13 +176,13 @@ Select the appropriate option to match the host system.
 
 ### MSI
 
-**Length 1 [endnote1] -** To decode a MSI symbol with a specific length range set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, set this value to 4.
+**Length 1 [endnote1] -** To decode an MSI symbol with a specific length range, set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length 2 [endnote1] -** To decode a MSI symbol with a specific length range set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, set this value to 12.
+**Length 2 [endnote1] -** To decode an MSI symbol with a specific length range, set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
-**Check Digit -** With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
+**Check Digit -** With MSI symbols, one check digit is required, and is always verified by the reader. The second check digit is optional.
 
 **One Check Digit -** Verify one check digit.
 
@@ -208,27 +190,27 @@ Select the appropriate option to match the host system.
 
 **Check Digit Scheme -** Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
-**Mod-11-10 -** First check digit is MOD 11 and second check digit is MOD 10.
+**Mod-11-10 -** First check digit is MOD 11; the second check digit is MOD 10.
 
 **Mod-10-10 -** Both check digits are MOD 10.
 
-**Report Check Digit -** Transmit MSI data with or without the check digit. A check in the checkbox indicates to send MSI data with check digit.
+**Report Check Digit -** Transmit MSI data with or without the check digit. A check in this checkbox will send MSI data with a check digit.
 
 ------
 
 ### EAN8
 
-**Convert EAN8 To EAN13 -** Convert EAN8 data to EAN 13. A check in the checkbox indicates that the option is enabled.
+**Convert EAN8 To EAN13 -** Converts EAN8 data to EAN 13 format. A check in the checkbox enables this conversion.
 
 ------
 
 ### Codabar
 
-**Length1 [endnote1] -** To decode a Codabar symbol with a specific length range set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, set this value to 8..
+**Length1 [endnote1] -** To decode a Codabar symbol with a specific length range, set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 8.
 
-**Length2 [endnote1] -** To decode a Codabar symbol with a specific length range set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, set this value to 24.
+**Length2 [endnote1] -** To decode a Codabar symbol with a specific length range, set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 24.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
 **Clsi Editing -** Enable this parameter to strip the start and stop characters and insert a space after the first, fifth, and tenth characters of a 14-character Codabar symbol. Enable this feature if the host system requires this data format.
 
@@ -238,153 +220,153 @@ Select the appropriate option to match the host system.
 
 ### Code39
 
-**Length1 [endnote1] -** To decode a Code 39 symbol with a specific length range set this value to the lower limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, set this value to 8.
+**Length1 [endnote1] -** To decode a Code 39 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 8.
 
-**Length2 [endnote1] -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, set this value to 24.
+**Length2 [endnote1] -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 24.
 
 **Verify Check Digit -** Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.
 
-**Report Check Digit -** Transmit Code 39 data with or without the check digit. A check in the checkbox indicates to send Code 39 data with check digit.
+**Report Check Digit -** Transmit Code 39 data with or without the check digit. A check in the checkbox will send Code 39 data with a check digit.
 
-**Full Ascii -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. To enable or disable Code 39 Full ASCII.
+**Full Ascii -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. Check this checkbox to enable Code 39 Full ASCII.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
-**Convert Code39 To Code32 -** Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry. Scan the appropriate bar code below to enable or disable converting Code 39 to Code 32.
+**Convert Code39 To Code32 -** Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry. Scan the appropriate barcode below to enable or disable converting Code 39 to Code 32.
 
-**Report Code32 Prefix -** Scan the appropriate bar code to enable or disable adding the prefix character "A" to all Code 32 bar codes.
+**Report Code32 Prefix -** Scan the appropriate barcode to enable or disable adding the prefix character "A" to all Code 32 barcodes.
 
 **Security Level -** Options: Security level 0, Security Level 1, Security Level 2 and Security Level 3.
 
 ### Discrete 2 of 5
 
-**Length1 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range set this value to the lower limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, set this value to 4.
+**Length1 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range set this value to the upper limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, set this value to 12.
+**Length2 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
 
 ### Interleaved 2 of 5
 
-**Length1 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range set this value to the lower limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, set this value to 4.
+**Length1 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range set this value to the upper limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, set this value to 12.
+**Length2 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
 
 ### Check Digit
 
-**No Check Digit -** A check digit is not used..
+**No Check Digit -** A check digit is not used.
 
-**USS Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Uniform Symbology Specification (USS) check digit algorithm.
+**USS Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Uniform Symbology Specification (USS) check digit algorithm.
 
-**OPCC Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Optical Product Code Council (OPCC) check digit algorithm.
+**OPCC Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
 
-**Report Check Digit -** Transmit Interleaved 2 of 5 data with or without the check digit. A check in the checkbox indicates to send I2of5 data with check digit.
+**Report Check Digit -** Transmit Interleaved 2 of 5 data with or without the check digit. A check in the checkbox sends I2of5 data with check digit.
 
-**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2 of 5 bar codes to EAN-13, and transmit as EAN-13. The Interleaved 2 of 5 bar code must be enabled and must have a leading zero and a valid EAN-13 check digit. A check in the checkbox indicates that the option is enabled.
+**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2 of 5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2 of 5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
 
 ------
 
 ### Code11
 
-**Length1 [endnote1] -** To decode a Code 11 symbol with a specific length range set this value to the lower limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, set this value to 4.
+**Length1 [endnote1] -** To decode a Code 11 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Code 11 symbol with a specific length range set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, set this value to 12.
+**Length2 [endnote1] -** To decode a Code 11 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
-**Verify Check Digit -** Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 bar code.
+**Verify Check Digit -** Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 barcode.
 
 **No Check Digit -** Do not verify check digit.
 
-**One Check Digit -** Bar code contains one check digit.
+**One Check Digit -** Barcode contains one check digit.
 
-**Two Check Digits -** bar code contains two check digits.
+**Two Check Digits -** Barcode contains two check digits.
 
-**Report Check Digit -** Transmit Code 11 data with or without the check digit. A check in the checkbox indicates to send Code 11 data with check digit.
+**Report Check Digit -** Transmit Code 11 data with or without the check digit. A check in the checkbox sends Code 11 data with a check digit.
 
 ### Code93
 
-**Length1 [endnote1] -** To decode a Code 93 symbol with a specific length range set this value to the lower limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, set this value to 4.
+**Length1 [endnote1] -** To decode a Code 93 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Code 93 symbol with a specific length range set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, set this value to 12.
+**Length2 [endnote1] -** To decode a Code 93 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
 
 ### Code128
 
-**Length1 [endnote1] -** To decode a Code 128 symbol with a specific length range set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, set this value to 4.
+**Length1 [endnote1] -** To decode a Code 128 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Code 128 symbol with a specific length range set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, set this value to 12.
+**Length2 [endnote1] -** To decode a Code 128 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
 **Enable EAN128 -** Set the EAN128 subtype. A check in the checkbox indicates that the option is enabled.
 
 **Enable ISBT128 -** Set the ISBT128 subtype. A check in the checkbox indicates that the option is enabled.
 
-**Enable Plain Code128 -** Enables other (non EAN or ISBT) Code 128 subtypes. A check in the checkbox indicates that redundancy is enabled.
+**Enable Plain Code128 -** Enables other (non-EAN or ISBT) Code 128 subtypes. 
 
 **ISBT128 Concat Mode -** Select an option for concatenating pairs of ISBT code types:
 
-**Concat Mode Never -** Do not concatenate pairs of ISBT codes encountered.
+* **Concat Mode Never -** Do not concatenate pairs of ISBT codes encountered.
 
-**Concat Mode Always -** There must be two ISBT codes in order to decode and perform concatenation. Does not decode single ISBT symbols.
+* **Concat Mode Always -** There must be two ISBT codes in order to decode and perform concatenation. Does not decode single ISBT symbols.
 
-**Concat Mode Auto -** Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT symbol is present, the device must decode the symbol the number of times set via Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
+* **Concat Mode Auto -** Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT symbol is present, the device must decode the symbol the number of times set via Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
 
-**Check ISBT Table -** The ISBT specification includes a table that lists several types of ISBT bar codes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable Check ISBT Table to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated. A check in the checkbox indicates that redundancy is enabled.
+**Check ISBT Table -** The ISBT specification includes a table that lists several types of ISBT barcodes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable "Check ISBT Table" to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated.
 
-**Security Level -** The scanner offers four levels of decode security for Code 128 bar codes. Select increasing levels of security for decreasing levels of bar code quality. There is an inverse relationship between security and scanner aggressiveness, so choose only that level of security necessary for any given application.
+**Security Level -** The scanner offers four levels of decode security for Code 128 barcodes. There is an inverse relationship between scanner aggressiveness and security; increasing levels of security lead to decreasing levels of barcode read accuracy. Zebra therefore recommends choosing carefully the level of security necessary for any given application: 
 
-**Security Level 0 -** This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" bar codes.
+* **Security Level 0 -** This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" barcodes.
 
-**Security Level 1 -** This setting eliminates most misdecodes.
+* **Security Level 1 -** This setting eliminates most misdecodes.
 
-**Security Level 2 -** Select this option if Security level 1 fails to eliminate misdecodes.
+* **Security Level 2 -** Select this option if Security level 1 fails to eliminate misdecodes.
 
-**Security Level 3 -** If Security Level 2 is selected and misdecodes still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out of spec bar codes. Selecting this level of security significantly impairs the decoding ability of the scanner. If this level of security is needed, try to improve the quality of the bar codes.
+* **Security Level 3 -** If Security Level 2 is selected and misdecodes still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out-of-spec barcodes. Selecting this security level significantly impairs the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
 
 ------
 
 ### Trioptic39
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
 ------
 
 ### MicroPDF
 
-**Code 128 Emulation -** Enable this option to transmit data from certain MicroPDF417 symbols as Code 128. AIM Code ID Character must be enabled for this option to work.
+**Code 128 Emulation -** Enable this option to transmit data from certain MicroPDF417 symbols as Code 128. **This option requires that AIM Code ID Character be enabled**.
 
 **Enable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
 
-]C1 if the first codeword is 903 - 905
+* ]C1 if the first codeword is 903 - 905
 
-]C2 if the first codeword is 908 or 909
+* ]C2 if the first codeword is 908 or 909
 
-]C0 if the first codeword is 910 or 911
+* ]C0 if the first codeword is 910 or 911
 
 **Disable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
 
-]L3 if the first codeword is 903-905
+* ]L3 if the first codeword is 903-905
 
-]L4 if the first codeword is 908 or 909
+* ]L4 if the first codeword is 908 or 909
 
-]L5 if the first codeword is 910 or 911.
+* ]L5 if the first codeword is 910 or 911.
 
 ------
 
 ### Webcode
 
-Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the checkbox indicates that the option is enabled.
+Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the checkbox enables this option.
 
 ------
 
@@ -392,19 +374,19 @@ Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the
 
 **UCC Link Mode -**
 
-Link Flag ignored
+* Link Flag ignored
 
-Always Linked
+* Always Linked
 
-Auto Discriminate
+* Auto Discriminate
 
 **MultiPacket Mode -**
 
-Multi Part Single Packet
+* Multi Part Single Packet
 
-Mutli independent Reads
+* Mutli independent Reads
 
-Use UPC Preamble Check Digit - Use the UPC rules specified in the UPC-EAN parameters when reporting composite decode data.
+**Use UPC Preamble Check Digit -** Use the UPC rules specified in the UPC-EAN parameters when reporting composite decode data.
 
 ------
 
@@ -412,37 +394,37 @@ Use UPC Preamble Check Digit - Use the UPC rules specified in the UPC-EAN parame
 
 **MultiPacket Mode -**
 
-Multi Part Single Packet
+* Multi Part Single Packet
 
-Mutli independent Reads
+* Mutli independent Reads
 
 ------
 
 ### USPostnet
 
-**Report Check Digit -** Transmit USPostnet data with or without the check digit. A check in the checkbox indicates to send USPostnet data with check digit.
+**Report Check Digit -** Transmit USPostnet data with or without the check digit. A check in the checkbox sends USPostnet data with a check digit.
 
 ------
 
 ### USPlanet
 
-**Report Check Digit -** Transmit USPlanet data with or without the check digit. A check in the checkbox indicates to send USPlanet data with check digit.
+**Report Check Digit -** Transmit USPlanet data with or without the check digit. A check in the checkbox sends USPlanet data with a check digit.
 
 ------
 
 ### UK Postal
 
-**Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox indicates to send UK Postal data with check digit.
+**Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox sends UK Postal data with a check digit.
 
 ------
 
 ### Korean 3of5
 
-**Length1 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, set this value to 4.
+**Length1 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, set this value to 12.
+**Length2 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-**Redundancy -** Sets the reader to read the bar code twice before accepting data. A check in the checkbox indicates that redundancy is enabled.
+**Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
 
@@ -451,162 +433,182 @@ Mutli independent Reads
 The allowable decode lengths are specified by Length1 and Length2 as follows:
 
 * Variable length: Decode symbols containing any number of characters.
-* Set both Length1 and Length2 to 0.
+	* Set both Length1 and Length2 to 0.
 * Range: Decode a symbol with a specific length range (from a to b, including a and b).
-* Set Length1 to a and set Length2 to b.
+	* Set Length1 to a and set Length2 to b.
 * Two Discrete Lengths: Decode only symbols containing either of two selected lengths.
-* Set Length1 to b and Length2 to a where a is less than b.
+	* Set Length1 to b and Length2 to a where a is less than b.
 * One Discrete Length: Decode only symbols containing a specific length.
-* Set both Length1 and Length2 to the non zero value.
+	* Set both Length1 and Length2 to the non zero value.
 
 ------
 
 ## UPC EAN Params
+<img style="height:350px" src="upc_params.png"/>
+<br>
 
 Allows the configuration of the parameters that apply to more than one UPC or EAN decoder.
 
-**Security Level -** The scanner offers four levels of decode security for UPC/EAN bar codes. Select higher security levels for lower quality bar codes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
+**Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. There is an inverse relationship between scanner aggressiveness and security; increasing levels of security lead to decreasing barcode read accuracy. Zebra therefore recommends choosing carefully the level of security necessary for any given application: 
 
-**Level 0 -** This setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN bar codes.
+* **Level 0 -** This setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN barcodes.
 
-**Level 1 -** As bar code quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed bar codes, and the misdecodes are limited to these characters, select this security level.
+* **Level 1 -** As barcode quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed barcodes, and the misdecodes are limited to these characters, select this security level.
 
-**Level 2 -** If the scanner is misdecoding poorly printed bar codes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
+* **Level 2 -** If the scanner is misdecoding poorly printed barcodes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
 
-**Level 3 -** If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out of spec bar codes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try to improve the quality of the bar codes.
+* **Level 3 -** If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out-of-spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
 
-**Supplemental2 -** Enables or disables this option. A check in the checkbox indicates that the option is enabled.
+**Supplemental2 -** A check in the checkbox enables this option.
 
-**Supplemental5 -** Enables or disables this option. A check in the checkbox indicates that the option is enabled.
+**Supplemental5 -** A check in the checkbox enables this option.
 
 ### Supplemental Mode
 
-**No Supplementals -** the scanner is presented with a UPC/EAN plus supplemental symbol, the scanner decodes UPC/EAN and ignores the supplemental characters.
+**No Supplementals -** The scanner is presented with a UPC/EAN plus supplemental symbol, the scanner decodes UPC/EAN and ignores the supplemental characters.
 
-**Supplemental Always -** the scanner only decodes UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
+**Supplemental Always -** The scanner decodes only UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
 
-**Supplements Auto -** the scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the bar code the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
+**Supplements Auto -** The scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the barcode the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
 
-**Supplemental Smart -** Enables smart supplementals. In this mode the decoder returns the decoded value of the main block right away if it does not belong to one of the following supplemental types: 378, 379, 977, 978, 979, 414, 419, 434 or 439. If the bar code starts with one of the prefixes it searches the image more aggressively for a supplemental. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+**Supplemental Smart -** Enables smart supplementals. In this mode, the decoder returns the decoded value of the main block immediately unless it belongs to one of the following supplemental types: 
+* 378
+* 379
+* 977
+* 978
+* 979
+* 414
+* 419
+* 434
+* 439
 
-**Supplemental 378-379 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN bar code not starting with 378 or 379. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+If the barcode is preceeded by one of the prefixes above, the image is searched more aggressively for a supplemental and attempts to scan it. If the supplemental scanning fails, only the main barcode is returned.
 
-**Supplemental 978-979 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 979. Disables reading of supplementals for another UPC/EAN bar code not starting with 978 or 979. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main barcode is returned.
+**Supplemental 378-379 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN barcode not starting with 378 or 379. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
 
-**Supplemental 414-419-434-439 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN bar code not starting with 414, 419, 434 or 439. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+**Supplemental 978-979 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 979. Disables reading of supplementals for another UPC/EAN barcode not starting with 978 or 979. Tries to scan the supplemental if present. If the supplemental scanning fails, only then the main barcode is returned.
 
-**Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+**Supplemental 414-419-434-439 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN barcode not starting with 414, 419, 434 or 439. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
+
+**Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
 
 **Retry Count -** Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
 
-**Random Check Digit -** Enables random weight check digit verification. A check in the checkbox indicates that the option is enabled.
+**Random Check Digit -** Enables random weight check digit verification. 
 
-### Linear Decode - Not in use. Deprecated.
+**Linear Decode -** Not in use. Deprecated.
 
-**Bookland -** Enable or disable this option. A check in the checkbox indicates that the option is enabled.
+**Bookland -** A check in the checkbox enables this option.
 
-**Coupon -** Enables Coupon code decoding. Note that in order to successfully decode Coupon codes, all of the correct decoders must be enabled. A check in the checkbox indicates that the option is enabled.
+**Coupon -** Enables Coupon code decoding. To successfully decode any Coupon codes, all appropriate decoders must be enabled. 
 
 **Bookland Format -** If Bookland option is enabled, select one of the following formats for Bookland data:
 
-**Format ISBN-10 -** The scanner reports Bookland data starting with 978 in traditional 10-digit format with the special Bookland check digit for backward-compatibility. Data starting with 979 is not considered Bookland in this mode.
+* **Format ISBN-10 -** The scanner reports Bookland data starting with 978 in traditional 10-digit format with the special Bookland check digit for backward-compatibility. Data starting with 979 is not considered Bookland in this mode.
 
-**Format ISBN-13 -** The scanner reports Bookland data (starting with either 978 or 979) as EAN-13 in 13-digit format to meet the 2007 ISBN-13 protocol.
+* **Format ISBN-13 -** The scanner reports Bookland data (starting with either 978 or 979) as EAN-13 in 13-digit format to meet the 2007 ISBN-13 protocol.
 
-**Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
+* **Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
 
 ### Reader Params
+<img style="height:350px" src="reader_params.png"/>
+<br>
 
-Allows the configuration of parameters specific to the selected bar code reader.
+Allows the configuration of parameters specific to the selected barcode reader.
 
-Illumination mode - Turns illumination on and off.
+**Illumination mode -**  Turns illumination on and off.
 
-On - Illumination is on.
+* On - Illumination is on.
 
-Off - Illumination is off.
+* Off - Illumination is off.
 
-Aiming Pattern - Turns aim pattern on and off.
+**Aiming Pattern -** Turns aim pattern on and off.
 
-Aim Type - This parameter allows to enable or disable continuous scanning.
+**Aim Type -** Enables continuous scanning.
 
-Trigger - For each trigger press a single barcode can be scanned.
+* **Trigger -** For each trigger press, a single barcode can be scanned.
 
-**Timed Hold –** Once trigger is pressed an aiming session is started for a time specified by Aim Timer, when this time expires a decode session is started and scan beam will be visible. The decode session will remain active until the Beam Timer expires, the trigger is released or a barcode is decoded.
+* **Timed Hold –** Once trigger is pressed, an aiming session is started for a time specified by Aim Timer. When this time expires, a decode session is started and scan beam will be visible. The decode session will remain active until the Beam Timer expires, the trigger is released or a barcode is decoded.
 
-**Timed Release -** Once pressed an aiming session is started and will continue until the trigger is released. If the Aim Timer is expired when the trigger is released then a decode session will be started with scan beam visible for a remaining time equal to Beam Timer or a barcode is decoded.
+* **Timed Release -** Once the trigger is pressed, an aiming session is started and will continue until the trigger is released. If the Aim Timer is expired when the trigger is released, a decode session will be started with scan beam visible for a remaining time equal to Beam Timer or a barcode is decoded.
 
-**Press and Release -** Scan beam starts when trigger is pressed and released. The decode session will remain active until the Beam Timer expired or a barcode is decoded.
+* **Press and Release -** The scan beam starts when the trigger is pressed and released. The decode session will remain active until the Beam Timer expires or a barcode is decoded.
 
-**Continuous Read -** Press and hold the scan trigger will continuously scan barcodes. Note: Continuous scanning is not supported with the RS507 Bluetooth scanner.
+* **Continuous Read -** A press and hold of the scan trigger will continuously scan barcodes. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
-**Beam Timer -** Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
+**Beam Timer -** Sets the maximum amount of time (in ms) that the reader remains on. Supports a range from 0 - 60,000 ms in increments of 100 ms. A value of 0 sets the reader to stay on indefinitely.
 
-**Aim Timer -** Sets the duration in milliseconds for timed aim modes (0 - 60,000 ms in increments of 100 ms).
+**Aim Timer -** Sets the duration (in ms) for timed aim modes. Supports a range from 0 - 60,000 ms in increments of 100 ms.
 
-**Image Capture Mode -** Set image capture mode in the barcode scanner.
+**Image Capture Mode -** Sets the barcode scanner to image capture mode.
+
+* **None -** No image capturing.
+
+* **Single Image Capture on Decode -** Captures an image with decoded data.
+
+* **Image Capture Only -** Only captures and image and no barcode data will be dispatched.
+
+**Note: Zebra does not recommend changing this parameter when barcode scanning is used with DataWedge. No image data will be processed by DataWedge**.
+
+**Linear Security Level -** Sets the number of times a barcode is read to confirm an accurate decode.
+
+* **Security Redundancy and Length -** Two times read redundancy based on redundancy flags and code length.
+
+* **Security Short or Codabar -** Two times read redundancy if short barcode or Codabar.
+
+* **Security All Twice -** Two times read redundancy for all barcodes.
+
+* **Security Long and Short -** Two times read redundancy for long barcodes, three times for short barcodes.
+
+* **Security All Thrice -** Three times read redundancy for all barcodes.
+
+**Picklist -** This parameter allows the imager to decode only the barcode that is directly under the cross-hair/reticle (+) part of the pattern. This feature is most useful in applications in which multiple barcodes may appear in the field of view during a decode session but only one is desired for decode.
+
+* **Disable -** Disables Picklist mode; any barcode within the field of view can be decoded.
+
+* **Hardware Picklist -** Picklist mode is enabled by sending a command to hardware.
+
+* **Software Picklist -** Picklist feature is handled in the software. No commands are sent to hardware.
+
+**Note: The hardware picklist offers better performance**.
+
+**Same Symbol Timeout -** This parameter is used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+
+**Different Symbol Timeout -** This prameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+
+**LCD Mode -** LCD mode enhances the ability of the imager to read barcodes from LCD displays such as cellphones (applies to Scan Module only).
+
+* **Disable -** Disables the LCD mode
+
+* **Enable -** Enables LCD mode.
+
+**Note: Use of LCD mode might lead to performance degradation and a blinking reticle until the barcode is decoded**.
 
 ------
 
-### None - No image capturing.
+**HW Engine Low Power Timeout -** Time in milliseconds of non-use before scanner turns to a low-power mode.
 
-**Single Image Capture on Decode -** Captures an image with decoded data.
-**Image Capture Only -** Only captures and image and no barcode data will be dispatched.
+**Inverse 1D Mode -** Allows the user to select decoding on inverse 1D barcodes.
 
-> **Note**: No image data will be processed by DataWedge and it is not recommend to change this parameter when barcode scanning is used with DataWedge.
+* **Disabled -** Disables decoding of inverse 1D symbologies.
 
-**Linear Security Level -** Sets the number of times a bar code is read to confirm an accurate decode.
+* **Enabled -** Enables decoding of inverse 1D symbologies only.
 
-**Security Redundancy and Length -** Two times read redundancy based on redundancy flags and code length.
+* **Auto -** Allows decoding of positive and inverse 1D symbologies.
 
-**Security Short or Codabar -** Two times read redundancy if short bar code or Codabar.
+**1D Quiet Zone Level -** Sets the effort at which the decoder will perform to decode marginless barcodes.
 
-**Security All Twice -** Two times read redundancy for all bar codes.
+* **Level 0 -** The decoder will perform margin decoding as usual.
 
-**Security Long and Short -** Two times read redundancy for long bar codes, three times for short bar codes.
+* **Level 1 -** The decoder will perform more aggressively.
 
-**Security All Thrice -** Three times read redundancy for all bar codes.
+* **Level 2 -** The decoder requires only one side end of barcode.
 
-**Picklist -** This parameter allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is most useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode.
+* **Level 3 -** The decoder can decode anything.
 
-**Disable -** Disables Picklist mode, so any bar code within the field of view can be decoded.
+**Note: Since higher marginless levels will increase the mis-decode risk and decoding time, we strongly recommend the user only enable the symbologies which needs to choose higher marginless level, and leave all other symbologies at default level 1**. 
 
-**Hardware Picklist -** Picklist mode is enabled by sending a command to hardware.
-
-**Software Picklist -** Picklist feature is handled in the software. No commands are sent to Hardware.
-
->**Note**: When both hardware and software picklists are supported hardware picklist is better in performance.
-Same Symbol Timeout - This parameter is used to prevent the scanner from decoding the same symbol within this time interval (applicable only when Aim Type to Continuous Read). A value of 0 means no interval is required between two successive reads.
-
-**Different Symbol Timeout -** This prameter is used to prevent the scanner from decoding another symbol within this time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 means no interval is required between two successive reads.
-
-**LCD Mode -** Enables or disables LCD mode. LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (Scan Module Only).
-
-**Disable -** Disables the LCD mode
-
-**Enable -** Enables LCD mode.
-
->**Note**: When using the LCD mode, a degradation in performance may be observed and the aiming crosshair may blink until the bar code is decoded.
-HW Engine Low Power Timeout - Time in milliseconds of non-use before scanner turns to a low-power mode.
-
-**Inverse 1D Mode -** Allows the user to select decoding on inverse 1D bar codes.
-
-**Disabled -** Disables decoding of inverse 1D symbologies.
-
-**Enabled -** Enables decoding of only inverse 1D symbologies.
-
-**Auto -** Allows decoding of both positive as well as inverse 1D symbologies.
-
-**1D Quiet Zone Level -** Sets the effort the decoder performs to decode marginless barcodes.
-
-**Level 0 -** The decoder will perform margin stuff as usual.
-
-**Level 1 -** The decoder will perform more aggressively.
-
-**Level 2 -** decoder only requires one side end of barcode.
-
-**Level 3 -** The decoder can decode anything .
-
->**Note**: Since higher marginless levels will increase the mis-decode risk and decoding time, we strongly recommend the user only enable the symbologies which needs to choose higher marginless level, and leave all other symbologies at default level 1
+------
 
 **Poor Quality Decode Effort -** Trigger poor quality barcode decoding enhancement feature.
 
@@ -625,24 +627,27 @@ Character Set Selection - Allows the user to convert the barcode data if differe
 
 **Viewfinder Enabled -** Enables only the viewfinder.
 
-**Static Reticle -** Enables the viewfinder and a red reticle in the center of the screen which helps selecting the bar code.
+**Static Reticle -** Enables the viewfinder and a red reticle in the center of the screen which helps selecting the barcode.
 
 >**Note:** This parameter supported in Camera scanner only.
-Scan Params
 
-Allows the configuration of Code Id and decode feedback options.
+## Scan Params
+<img style="height:350px" src="scan_params.png"/>
+<br>
 
-**Code ID Type -** A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
+Allows the configuration of Code ID and scanner-specific decoding feedback options.
 
-**Code ID Type None -** No prefix.
+**Code ID Type -** A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
-**Code ID Type Aim -** A standards based three character prefix.
+* **Code ID Type None -** Insert no prefix.
 
-**Code ID Type Symbol -** A Symbol defined single character prefix.
+* **Code ID Type Aim -** Inserts a standards-based three character prefix.
 
->**Note**: Not all ringtones are fully supported as decode tones. Ringtones of longer length may be truncated when used as a decode tone. The recommendation is to test the selected tone for operation before deployment to a customer site.
+* **Code ID Type Symbol -** Inserts a Zebra-defined single character prefix.
 
-**Volume Type -** Defines which volume setting to be used to play the Decode Audio Feedback.
+**Note: Not all ringtones are supported as decode tones; some ringtones might be truncated when used as a decode tone. Zebra recommends testing all selected tones before deployment**.
+
+**Volume Type -** Defines the volume setting to be used to play the Decode Audio Feedback.
 
 **Ringer and Notifications -** Uses Ringer and Notifications volume settings for audio feedback.
 
@@ -658,7 +663,7 @@ Allows the configuration of Code Id and decode feedback options.
 
 **Decoding LED Notification -** When enabled flashes the Red LED when trigger is pressed to scan a barcode.
 
->**Note**: Some of the parameters are not supported in all devices.
+**Note: Some parameters are device-dependant**.
 
 ------
 

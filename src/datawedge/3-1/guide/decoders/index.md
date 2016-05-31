@@ -174,9 +174,11 @@ Select the appropriate option to match the host system.
 
 ### MSI
 
-**Length 1 [endnote1] -** To decode an MSI symbol with a specific length range, set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode an MSI symbol with a specific length range, set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length 2 [endnote1] -** To decode an MSI symbol with a specific length range, set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode an MSI symbol with a specific length range, set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -204,9 +206,11 @@ Select the appropriate option to match the host system.
 
 ### Codabar
 
-**Length1 [endnote1] -** To decode a Codabar symbol with a specific length range, set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 8.
+**Length1&#42; -** To decode a Codabar symbol with a specific length range, set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 8.
 
-**Length2 [endnote1] -** To decode a Codabar symbol with a specific length range, set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 24.
+**Length2&#42; -** To decode a Codabar symbol with a specific length range, set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 24.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
@@ -218,9 +222,11 @@ Select the appropriate option to match the host system.
 
 ### Code39
 
-**Length1 [endnote1] -** To decode a Code 39 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 8.
+**Length1&#42; -** To decode a Code 39 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 8.
 
-**Length2 [endnote1] -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 24.
+**Length2&#42; -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 24.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Verify Check Digit -** Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.
 
@@ -238,9 +244,11 @@ Select the appropriate option to match the host system.
 
 ### Discrete 2of5
 
-**Length1 [endnote1] -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -248,9 +256,11 @@ Select the appropriate option to match the host system.
 
 ### Interleaved 2of5
 
-**Length1 [endnote1] -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -272,9 +282,11 @@ Select the appropriate option to match the host system.
 
 ### Code11
 
-**Length1 [endnote1] -** To decode a Code 11 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode a Code 11 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Code 11 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode a Code 11 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -290,9 +302,11 @@ Select the appropriate option to match the host system.
 
 ### Code93
 
-**Length1 [endnote1] -** To decode a Code 93 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode a Code 93 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Code 93 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode a Code 93 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -300,9 +314,11 @@ Select the appropriate option to match the host system.
 
 ### Code128
 
-**Length1 [endnote1] -** To decode a Code 128 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode a Code 128 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Code 128 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode a Code 128 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
@@ -418,9 +434,11 @@ Select the appropriate option to match the host system.
 
 ### Korean 3of5
 
-**Length1 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
+
+_&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -431,13 +449,13 @@ Select the appropriate option to match the host system.
 The allowable decode lengths are specified by Length1 and Length2 as follows:
 
 * **Variable length -** Decode symbols containing any number of characters.
-	* Set both Length1 and Length2 to 0.
+	* Set both Length1 and Length2 to "0" (zero)
 * **Range -** Decode a symbol with a specific length range (from a to b, including a and b).
-	* Set Length1 to a and set Length2 to b.
+	* Set Length1 to "a" and set Length2 to "b"
 * **Two Discrete Lengths -** Decode only symbols containing either of two selected lengths.
-	* Set Length1 to b and Length2 to a where a is less than b.
+	* Set Length1 to "b" and Length2 to "a" where "a" is less than "b"
 * **One Discrete Length -** Decode only symbols containing a specific length.
-	* Set both Length1 and Length2 to the non zero value.
+	* Set both Length1 and Length2 to the non-zero value
 
 ------
 
@@ -467,7 +485,7 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 
 **Supplemental Always -** The scanner decodes only UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
 
-**Supplements Auto -** The scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the barcode the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
+**Supplemental Auto -** The scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the barcode the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
 
 **Supplemental Smart -** Enables smart supplementals. In this mode, the decoder returns the decoded value of the main block immediately unless it belongs to one of the following supplemental types: 
 * 378
@@ -496,11 +514,11 @@ If the barcode is preceeded by one of the prefixes above, the image is searched 
 
 **Linear Decode -** Not in use. Deprecated.
 
-**Bookland -** A check in the checkbox enables this option.
-
 **Coupon -** Enables Coupon code decoding. To successfully decode any Coupon codes, all appropriate decoders must be enabled. 
 
-**Bookland Format -** If Bookland option is enabled, select one of the following formats for Bookland data:
+**Bookland -** When enabled, select a Bookland Format from the list below.  
+
+**Bookland Format -** When Bookland is enabled, permits selection of an option for Bookland data:
 
 * **Format ISBN-10 -** The scanner reports Bookland data starting with 978 in traditional 10-digit format with the special Bookland check digit for backward-compatibility. Data starting with 979 is not considered Bookland in this mode.
 

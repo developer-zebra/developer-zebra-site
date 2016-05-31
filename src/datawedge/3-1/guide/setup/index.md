@@ -304,11 +304,11 @@ The Basic Format Process Plug-in provides an easy way to append or prepend acqui
 _Basic Data Formatting Output Plug-in options_. 
 <br>
 
-**Prefix to data -** adds (prepends) the specified characters(s) to the beginning of the acquired before sending.
+**Prefix to data -** adds (prepends) the specified characters(s) **to the beginning** of the acquired data before sending.
 
-**Suffix to data -** adds (appends)  the specified characters(s) to the end of the acquired data before sending.
+**Suffix to data -** adds (appends) the specified characters(s) **to the end** of the acquired data before sending.
 
-**Send data -** enables transfer of the captured data to the associated application when it comes to the foreground. Disabling this option prevents the captured data from being transmitted but prefix and suffix strings are still transmitted even when this option is disabled (enabled by default).
+**Send data -** Enabled by default, this allows transfer of the captured data to the associated application when it comes to the foreground. **Note**: Disabling this option prevents only the _captured_ data from being transferred; any prefix and/or suffix strings will be handed to the associated application(s), even when this option is disabled.
 
 **Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option would send the hex equivalent of 30**31**32**33**34**35**. 
 

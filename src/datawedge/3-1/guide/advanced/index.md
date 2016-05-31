@@ -5,29 +5,131 @@ product: DataWedge
 productversion: '3.1'
 ---
 
-## Advanced DataWedge Settings
-WHAT THEY ARE GOES HERE
+## Overview
+This guide covers advanced DataWedge features such as the Import and Export of Profiles and DataWedge configuration files, mass deployment of DataWedge settings to an enterprise, and Advanced Data Formatting, which allows acquired data to be manipulated based on its contents. 
+
+For this guide, a basic knowledge of DataWedge Profiles, Plug-ins and other concepts is required. Please see the [About](..about) and [Setup](../setup) guides for more information.	
+
+## DataWedge Settings Panel
+Most of the functionality referenced here is accessed through the DataWedge Settings panel. 
+
+To access DataWedge Settings: 
+
+&49;. From the Profiles screen, **tap the "hamburger" menu and select Settings**. The DataWedge Settings panel appears as in Step 2. 
+<img style="height:350px" src="datawedge_settings.png"/>
+<br>
+
+&50;. 
+<img style="height:350px" src="datawedge_settings_panel.png"/>
+<br>
+
+**DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge and return control of scanning hardware to the system.
+
+**Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
+
+**Import -** Imports a DataWedge configuration file from device Storage, replacing the current configuration.
+
+**Export -** Exports the current DataWedge configuration to device storage.
+
+**Import Profile -** Imports an individual DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it will be replaced by the imported one. 
+
+**Export Profile -** Exports an individual DataWedge profile to device storage.
+
+**Restore -** Returns DataWedge on the device to factory default settings. 
+
+### Logging
+DataWedge provides the option of outputting system log messages to the device for viewing through the Logcat command line tool, Android Studio or another compatible viewer, usually over a USB connection. 
+
+**To Enable/Disable logging**: 
+
+&#50;. From the DataWedge Settings panel, **tap Enable Logging** to enable or disdable logging as desired. 
+<img style="height:350px" src="datawedge_logging.png"/>
+<br>
+
+### Import Configuration
+DataWedge can accept settings created on another device and distributed throughout an entperirse by importing a DataWedge Configuration file. This file contain Profiles, Plug-ins and other DataWedge settings stored on the device in a file called `datawedge.db`.  
+
+**To Import a DataWedge Confoguration file**:    
+
+&#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
+<img style="height:350px" src="datawedge_import_config.png"/>
+<br>
+
+&#50;. **Navigate to the imported file** on device storage using the interface provided:  
+<img style="height:350px" src="01_import_config.png"/>
+Imported settings take effect immediately and overwrite all prior settings.   
+<br>
+
+### Export Configuration
+Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported automatically and activated immediately (or manually, as above). 
+
+**To Export a DataWedge Configuration file**: 
+
+&#49;. From the DataWedge Settings panel, **tap Export** as highlighted below. A screen appears similar to the one in Step 2. 
+<img style="height:350px" src="datawedge_export_config.png"/>
+<br>
+
+&#50;. If more than one storage device exists, **navigate to the desired storage device and tap Export**. Only the storage device may be selected; the path will be inserted automatically.  
+<img style="height:350px" src="02_export_config.png"/>
+<br>
+
+Exported file can now be distributed to other devices manually or by using a Mobile Device Management (MDM) system. 
+
+### Import a Profile
+describe the value
 
 
-The DataWedge Settings screen provides access to most settings and options that are not related to Profiles and Plug-ins. 
+&#49;. From the
+<img style="height:350px" src="datawedge_import_profile.png"/>
+<br>
+
+&#50;. From the
+<img style="height:350px" src="03_import_profile.png"/>
+<br>
+
+
+### Export a Profile
+describe the value
+
+
+&#49;. From the
+<img style="height:350px" src="datawedge_export_profile.png"/>
+<br>
+&#50;. From the
+<img style="height:350px" src="04_export_profile.png"/>
+<br>
+
+### Export a Profile
+describe the value 
+
+**This action cannot be undone**. 
+
+
+&#49;. From the
+<img style="height:350px" src="datawedge_restore.png"/>
+<br>
+
+&#50;. From the
+<img style="height:350px" src="05_restore_defaults.png"/>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 Touch  Menu > Settings.
 
 DataWedge Settings Screen
 Figure 21. DataWedge Settings Window
-DataWedge enabled - Enables or disables DataWedge. To disable DataWedge uncheck this option.
 
-Enable logging - Enables DataWedge logging to capture additional log messages via Logcat.
-
-Import - allows import of a DataWedge configuration file from the device Storage. The imported configuration replaces the current configuration.
-
-Export - allows export of the current DataWedge configuration to the device Storage.
-
-Import Profile - allows import of an individual DataWedge profile from the On-Device Storage. If the profile already exists, the imported profile replaces it.
-
-Export Profile - allows export of an individual DataWedge profile to the On-device Storage.
-
-Restore - return the current configuration back to factory defaults.
 
 Import Configuration File
 To import a DataWedge configuration file:

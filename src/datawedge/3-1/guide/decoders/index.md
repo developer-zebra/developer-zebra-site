@@ -6,7 +6,7 @@ productversion: '3.1'
 ---
 
 ## Overview
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles as indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters to use with its associated application(s). This guide covers Decoder selection and includes details of each Decoder's parameters. 
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles as indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and details those with configurable parameters. 
 
 ### Default Decoders 
 <div class="table-striped">
@@ -32,10 +32,10 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Codabar<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">Code 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Discrete 2 of 5</p></td>
+<td align="left" valign="top"><p class="table">Discrete 2of5</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">Interleaved 2 of 5</p></td>
+<td align="left" valign="top"><p class="table">Interleaved 2of5</p></td>
 <td align="left" valign="top"><p class="table">Code 11</p></td>
 <td align="left" valign="top"><p class="table">Code 93</p></td>
 </tr>
@@ -77,7 +77,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Canadian Postal</p></td>
 <td align="left" valign="top"><p class="table">Dutch Postal</p></td>
-<td align="left" valign="top"><p class="table">Chinese 2 of 5</p></td>
+<td align="left" valign="top"><p class="table">Chinese 2of5</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
@@ -87,7 +87,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table">Matrix 2 of 5</p></td>
+<td align="left" valign="top"><p class="table">Matrix 2of5</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,12 +100,10 @@ cellspacing="0" cellpadding="4">
 
 &#49;. **From the Profile being edited, tap Decoders** as highlighted below. A list of Decoders appears similar to the image in Step 2, below.  
 <img style="height:350px" src="select_decoders.png"/>
-The Decoders and Decoder params selectors in the Barcode Input Plug-in menu. 
 <br>
 
-&#50;. **Select the desired Decoders** by checking the corresponding checkbox. **Deselect any that are not required** for the app associated with the Profile. 
+&#50;. **Select the desired Decoders** by checking the corresponding checkbox. **Deselect Decoders not required** for the app associated with the Profile. 
 <img style="height:350px" src="decoder_selection.png"/>
-The interface for selecting Decoders in a Profile. 
 <br>
 
 ### Edit Decoder Parameters
@@ -238,21 +236,21 @@ Select the appropriate option to match the host system.
 
 **Security Level -** Options: Security level 0, Security Level 1, Security Level 2 and Security Level 3.
 
-### Discrete 2 of 5
+### Discrete 2of5
 
-**Length1 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1 [endnote1] -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode a Discrete 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2 [endnote1] -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
 
-### Interleaved 2 of 5
+### Interleaved 2of5
 
-**Length1 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1 [endnote1] -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2 [endnote1] -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2 [endnote1] -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -262,13 +260,13 @@ Select the appropriate option to match the host system.
 
 **No Check Digit -** A check digit is not used.
 
-**USS Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Uniform Symbology Specification (USS) check digit algorithm.
+**USS Check Digit -** Select to check the integrity of all Interleaved 2of5 symbols to verify the data complies with the Uniform Symbology Specification (USS) check digit algorithm.
 
-**OPCC Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
+**OPCC Check Digit -** Select to check the integrity of all Interleaved 2of5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
 
-**Report Check Digit -** Transmit Interleaved 2 of 5 data with or without the check digit. A check in the checkbox sends I2of5 data with check digit.
+**Report Check Digit -** Transmit Interleaved 2of5 data with or without the check digit. A check in the checkbox sends I2of5 data with check digit.
 
-**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2 of 5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2 of 5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
+**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2of5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2of5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
 
 ------
 
@@ -344,35 +342,35 @@ Select the appropriate option to match the host system.
 
 ### MicroPDF
 
-**Code 128 Emulation -** Enable this option to transmit data from certain MicroPDF417 symbols as Code 128. **This option requires that AIM Code ID Character be enabled**.
+**Code 128 Emulation -** Enable this option to transmit data from certain MicroPDF417 symbols as Code 128. **This option requires that the AIM Code ID Character be enabled**.
 
 **Enable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
 
-* ]C1 if the first codeword is 903 - 905
+* **]C1** if the first codeword is 903, 904 or 905
 
-* ]C2 if the first codeword is 908 or 909
+* **]C2** if the first codeword is 908 or 909
 
-* ]C0 if the first codeword is 910 or 911
+* **]C0** if the first codeword is 910 or 911
 
 **Disable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
 
-* ]L3 if the first codeword is 903-905
+* **]L3** if the first codeword is 903, 904 or 905
 
-* ]L4 if the first codeword is 908 or 909
+* **]L4** if the first codeword is 908 or 909
 
-* ]L5 if the first codeword is 910 or 911.
+* **]L5** if the first codeword is 910 or 911.
 
 ------
 
 ### Webcode
 
-Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the checkbox enables this option.
+**Webcode Subtype -** Enables decoding of the GT Webcode subtype. A check in the checkbox enables this option.
 
 ------
 
 ### Composite AB
 
-**UCC Link Mode -**
+**UCC Link Mode:**
 
 * Link Flag ignored
 
@@ -380,11 +378,11 @@ Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the
 
 * Auto Discriminate
 
-**MultiPacket Mode -**
+**MultiPacket Mode:**
 
-* Multi Part Single Packet
+* Multi-Part, Single-Packet
 
-* Mutli independent Reads
+* Mutli Independent Reads
 
 **Use UPC Preamble Check Digit -** Use the UPC rules specified in the UPC-EAN parameters when reporting composite decode data.
 
@@ -392,11 +390,11 @@ Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the
 
 ### Composite C
 
-**MultiPacket Mode -**
+**MultiPacket Mode:**
 
-* Multi Part Single Packet
+* Multi-Part, Single-Packet
 
-* Mutli independent Reads
+* Mutli Independent Reads
 
 ------
 
@@ -432,22 +430,22 @@ Webcode Subtype - Enables the decoding of the GT Webcode subtype. A check in the
 
 The allowable decode lengths are specified by Length1 and Length2 as follows:
 
-* Variable length: Decode symbols containing any number of characters.
+* **Variable length -** Decode symbols containing any number of characters.
 	* Set both Length1 and Length2 to 0.
-* Range: Decode a symbol with a specific length range (from a to b, including a and b).
+* **Range -** Decode a symbol with a specific length range (from a to b, including a and b).
 	* Set Length1 to a and set Length2 to b.
-* Two Discrete Lengths: Decode only symbols containing either of two selected lengths.
+* **Two Discrete Lengths -** Decode only symbols containing either of two selected lengths.
 	* Set Length1 to b and Length2 to a where a is less than b.
-* One Discrete Length: Decode only symbols containing a specific length.
+* **One Discrete Length -** Decode only symbols containing a specific length.
 	* Set both Length1 and Length2 to the non zero value.
 
 ------
 
-## UPC EAN Params
+## UPC/EAN Params
 <img style="height:350px" src="upc_params.png"/>
 <br>
 
-Allows the configuration of the parameters that apply to more than one UPC or EAN decoder.
+The UPC/EAN Parameter allows configuration of parameters that apply to more than one UPC or EAN decoder.
 
 **Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. There is an inverse relationship between scanner aggressiveness and security; increasing levels of security lead to decreasing barcode read accuracy. Zebra therefore recommends choosing carefully the level of security necessary for any given application: 
 
@@ -514,17 +512,15 @@ If the barcode is preceeded by one of the prefixes above, the image is searched 
 <img style="height:350px" src="reader_params.png"/>
 <br>
 
-Allows the configuration of parameters specific to the selected barcode reader.
+Reader Parameters control specific configuration options for the barcode reader selected in the Profile being edited. **Not all parameters will apply to all readers**. 
 
 **Illumination mode -**  Turns illumination on and off.
 
-* On - Illumination is on.
-
-* Off - Illumination is off.
+------
 
 **Aiming Pattern -** Turns aim pattern on and off.
 
-**Aim Type -** Enables continuous scanning.
+**Aim Type -** Permits selection of reader behavior when the trigger is pressed: 
 
 * **Trigger -** For each trigger press, a single barcode can be scanned.
 
@@ -540,7 +536,7 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 **Aim Timer -** Sets the duration (in ms) for timed aim modes. Supports a range from 0 - 60,000 ms in increments of 100 ms.
 
-**Image Capture Mode -** Sets the barcode scanner to image capture mode.
+**Image Capture Mode -** Sets the barcode scanner to image capture mode: 
 
 * **None -** No image capturing.
 
@@ -550,7 +546,9 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 **Note: Zebra does not recommend changing this parameter when barcode scanning is used with DataWedge. No image data will be processed by DataWedge**.
 
-**Linear Security Level -** Sets the number of times a barcode is read to confirm an accurate decode.
+------
+
+**Linear Security Level -** Sets the number of times a barcode is read to confirm an accurate decode:
 
 * **Security Redundancy and Length -** Two times read redundancy based on redundancy flags and code length.
 
@@ -562,7 +560,9 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 * **Security All Thrice -** Three times read redundancy for all barcodes.
 
-**Picklist -** This parameter allows the imager to decode only the barcode that is directly under the cross-hair/reticle (+) part of the pattern. This feature is most useful in applications in which multiple barcodes may appear in the field of view during a decode session but only one is desired for decode.
+------
+
+**Picklist -** Permits selection of Picklist mode, which instructs the imager to decode only the barcode directly under the cross-hair/reticle. This feature is most useful for applications in which multiple barcodes may appear in the field of view during a decode session but only one is desired for decoding.
 
 * **Disable -** Disables Picklist mode; any barcode within the field of view can be decoded.
 
@@ -572,31 +572,31 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 **Note: The hardware picklist offers better performance**.
 
+------
+
 **Same Symbol Timeout -** This parameter is used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
 **Different Symbol Timeout -** This prameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
-**LCD Mode -** LCD mode enhances the ability of the imager to read barcodes from LCD displays such as cellphones (applies to Scan Module only).
+**LCD Mode -** Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones. **Applies to Scan Module only**.
 
-* **Disable -** Disables the LCD mode
-
-* **Enable -** Enables LCD mode.
-
-**Note: Use of LCD mode might lead to performance degradation and a blinking reticle until the barcode is decoded**.
+**Note: Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
 
 ------
 
-**HW Engine Low Power Timeout -** Time in milliseconds of non-use before scanner turns to a low-power mode.
+**HW Engine Low Power Timeout -** Time (in ms) of inactivity before scanner enters low-power mode.
 
-**Inverse 1D Mode -** Allows the user to select decoding on inverse 1D barcodes.
+**Inverse 1D Mode -** Permits option selection for inverse 1D barcode decoding: 
 
 * **Disabled -** Disables decoding of inverse 1D symbologies.
 
 * **Enabled -** Enables decoding of inverse 1D symbologies only.
 
-* **Auto -** Allows decoding of positive and inverse 1D symbologies.
+* **Auto -** Automatically detects and decodes positive and inverse 1D symbologies.
 
-**1D Quiet Zone Level -** Sets the effort at which the decoder will perform to decode marginless barcodes.
+------
+
+**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode marginless barcodes: 
 
 * **Level 0 -** The decoder will perform margin decoding as usual.
 
@@ -610,66 +610,71 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 ------
 
-**Poor Quality Decode Effort -** Trigger poor quality barcode decoding enhancement feature.
+**Poor Quality Decode Effort -** Permits selection of enhancement modes for deciding poor quality barcodes. Available options:
 
-**Effort Level 0 -** Decoding performance on regular 1D and 2D barcodes is not affected.
+* **Effort Level 0 -** Decoding performance on regular 1D and 2D barcodes is not affected.
 
-**Effort Level 1 -** the scanner performance on regular 2-D barcodes is impacted while decoding performance on Tesco Thailand barcode and Suppository barcode is improved.
+* **Effort Level 1 -** The scanner performance on regular 2-D barcodes is impacted while decoding performance on Tesco Thailand barcode and Suppository barcode is improved.
 
-**Effort Level 2 -** same as Level 1.
+* **Effort Level 2 -** same as Level 1.
 
-**Effort Level 3 -** same as Level 1.
+* **Effort Level 3 -** same as Level 1.
 
->**Note:** Same performance from Effort Level 1 to Effort Level 3.
-Character Set Selection - Allows the user to convert the barcode data if different from default encoding type. UTF-8 is the default value. Other options are ISO-8859-1 and Shift_JIS.
+**Note:** Same performance from Effort Level 1 to Effort Level 3.
 
-**Viewfinder Mode -** This setting displays the Viewfinder modes supported for scanning.
+------
 
-**Viewfinder Enabled -** Enables only the viewfinder.
+**Character Set Selection -** Allows the user to convert the barcode data if different from default encoding type. UTF-8 is the default value. Other options are ISO-8859-1 and Shift_JIS.
 
-**Static Reticle -** Enables the viewfinder and a red reticle in the center of the screen which helps selecting the barcode.
+------
 
->**Note:** This parameter supported in Camera scanner only.
+**Viewfinder Mode -** Permits selection of supported Viewfinder modes: 
+
+* **Viewfinder Enabled -** Enables only the viewfinder.
+
+* **Static Reticle -** Enables the viewfinder and a red reticle (crosshairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
 ## Scan Params
 <img style="height:350px" src="scan_params.png"/>
 <br>
 
-Allows the configuration of Code ID and scanner-specific decoding feedback options.
+Scan Params allows for configuration of Code ID and scanner-specific decoding feedback options. 
 
-**Code ID Type -** A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
+**Note**: Some of these parameters are device-dependant.
+
+**Code ID Type -** Permits the selection of a Code ID character to insert between the prefix and the decoded symbol. The Code ID character identifies the code type of a scanned barcode. This information can be useful to an application when multiple barcode types are being read. Available options: 
 
 * **Code ID Type None -** Insert no prefix.
 
-* **Code ID Type Aim -** Inserts a standards-based three character prefix.
+* **Code ID Type Aim -** Inserts a standards-based three-character prefix.
 
-* **Code ID Type Symbol -** Inserts a Zebra-defined single character prefix.
-
-**Note: Not all ringtones are supported as decode tones; some ringtones might be truncated when used as a decode tone. Zebra recommends testing all selected tones before deployment**.
-
-**Volume Type -** Defines the volume setting to be used to play the Decode Audio Feedback.
-
-**Ringer and Notifications -** Uses Ringer and Notifications volume settings for audio feedback.
-
-**Music and Media -** Uses Music and Media volume settings for audio feedback.
-
-**Alarms -** Uses Alarms volume settings for audio feedback.
-
-**Decode Audio Feedback -** Select an audio tone to sound upon a good decode.
-
-**Decode Haptic Feedback -** Enable the mobile computer to vibrate upon a good decode.
-
-**Decode Feedback LED Timer -** Green LED flash time (in milliseconds) upon a good decode.
-
-**Decoding LED Notification -** When enabled flashes the Red LED when trigger is pressed to scan a barcode.
-
-**Note: Some parameters are device-dependant**.
+* **Code ID Type Symbol -** Inserts a Zebra-defined single-character prefix.
 
 ------
 
-Refer to the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
+**Volume Type -** Permits selection of the volume setting to be used when playing the Decode Audio Feedback. Available options: 
 
+* **Ringer and Notifications -** Uses Ringer and Notifications volume setting for audio feedback.
 
+* **Music and Media -** Uses Music and Media volume setting for audio feedback.
+
+* **Alarms -** Uses the Alarms volume setting for audio feedback.
+
+* **Decode Audio Feedback -** Select an audio tone to play to indicate a successful decode.
+
+**Note**: Not all ringtones are supported as decode tones; some ringtones might be truncated when used as a decode tone. Zebra recommends testing all selected tones before deployment.
+
+------
+
+**Decode Haptic Feedback -** Enable the mobile computer to vibrate to indicate a successful decode.
+
+**Decode Feedback LED Timer -** Defines the length of time (in ms) to flash the Green LED to indicate a successful decode.
+
+**Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
+
+------
+
+Refer to the [Advanced Settings Guide](../advanced) for information about Advanced Data Formatting, Profile Import/Export, Configuration File Management and Mass Deployment. 
 
 
 

@@ -118,10 +118,10 @@ If more than one Profile is to be created, exported and distributed at the same 
 <br>
 
 The default path and filename of an exported Profile is:
-`/storage/sdcard0/Android/data/com.symbol.datawedge/files/dwprofile_[profilename].db` 
+`/storage/sdcard0/Android/data/com.symbol.datawedge/files/dwprofile_profilename.db` 
 
 If an external SD card is installed, an alternate path can be selected: 
-`/storage/sdcard1/Android/data/com.symbol.datawedge/files/dwprofile_[profilename].db`
+`/storage/sdcard1/Android/data/com.symbol.datawedge/files/dwprofile_profilename.db`
 
 &#51;. **Retrieve the exported file from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
 
@@ -149,8 +149,18 @@ Through Advanced Data Formatting, DataWedge permits data acquired from barcode s
 
 **Actions -** A set of procedures defined to format data. There are four types of actions which are for formatting cursor movement, data modification, data sending and delay specifications. An action can be defined to send the first number of characters to the Output plug-in, pad the output data with spaces or zeros, remove spaces in data, etc.
 
-### Configuring ADF Plug-in
-Configuring the ADF plug-in consists of creating a rule, defining the criteria and defining the actions.
+### Configuring the ADF Plug-in
+Configuring the ADF plug-in consists of creating a rule, defining the criteria for the rule and defining the actions for the rule. All three steps are done within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see the Plug-ins section of the [DataWedge Setup Guide](../setup).
+
+**To Create an ADF rule**: 
+
+&#49;. In the Profile that requires ADF, **tap on Advanced data formatting** as highlighted below. A screen appears similar to the image in Step 2.
+<img style="height:350px" src="adf_intent_output.png"/>
+<br>
+
+&#50;. **Tap the "hamburger" menu, select New rule** and enter a name for the rule. 
+<img style="height:350px" src="Figure_14_Adv_DataFormattingScreen.png"/>
+<br>
 
 Touch  Home > DataWedge.
 
@@ -161,6 +171,33 @@ In Keystroke output, touch Advanced data formatting.
 Advanced Data Formatting Screen
 Figure 14. Advanced Data Formatting Screen
 Touch the Enable checkbox to enable ADF.
+
+
+
+
+Figure_15_RuleScreen
+&#50;. **Tap Yes to Restore factory defaults** or No to cancel. 
+<img style="height:350px" src="Figure_15_RuleScreen.png"/>
+<br>
+
+
+Figure_16_CriteriaScreen
+&#51;. **Tap Yes to Restore factory defaults** or No to cancel. 
+<img style="height:350px" src="Figure_16_CriteriaScreen.png"/>
+<br>
+
+
+Figure_17_BarcodeInputScreen
+&#52;. **Tap Yes to Restore factory defaults** or No to cancel. 
+<img style="height:350px" src="Figure_17_BarcodeInputScreen.png"/>
+<br>
+
+
+Figure_18_ADF_SampleScreen
+&#53;. **Tap Yes to Restore factory defaults** or No to cancel. 
+<img style="height:350px" src="Figure_18_ADF_SampleScreen.png"/>
+<br>
+
 
 Creating a Rule
 

@@ -89,10 +89,17 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
 <td align="left" valign="top"><p class="table">Matrix 2of5</p></td>
 </tr>
+<tr>
+<td align="left" valign="top"><p class="table">HAN XIN</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
 </tbody>
 </table>
 </div>
 &#42; _Enabled by default_
+
+_**Note**: Some Decoders do not have configurable parameters, and are therefore omitted from the Decoder Parameters section_.
 
 ### Enable/Disable Decoders
 
@@ -118,9 +125,9 @@ cellspacing="0" cellpadding="4">
 <img style="height:350px" src="edit_decoder_params.png"/>
 <br>
 
-Decoder parameters are explained below. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup). 
-
 ## Decoder Parameters
+Editable parameters of individual Decoders are explained below. **Note: Some Decoders do not have configurable parameters, and are therefore omitted from the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
+
 ### UPCE0
 **Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
 
@@ -342,17 +349,35 @@ _&#42; See **Decode Lengths** section, below_
 
 * **Security Level 0 -** This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" barcodes.
 
-* **Security Level 1 -** This setting eliminates most misdecodes.
+* **Security Level 1 -** This setting eliminates most decode failures.
 
-* **Security Level 2 -** Select this option if Security level 1 fails to eliminate misdecodes.
+* **Security Level 2 -** Select this option if Security level 1 fails to eliminate decode failures.
 
-* **Security Level 3 -** If Security Level 2 is selected and misdecodes still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out-of-spec barcodes. Selecting this security level significantly impairs the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
+* **Security Level 3 -** If Security Level 2 is selected and decode failures still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out-of-spec barcodes. Selecting this security level significantly impairs the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
 
 ------
 
 ### Trioptic39
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 
+
+------
+
+### HAN XIN
+
+**HAN XIN Inverse -** Checks the inverse of the HanXin decoder. 
+
+------
+
+### Matrix 2of5
+
+**Length1&#42; -** Used to set decode length.
+**Length2&#42; -** Used to set decode length.
+**Redundancy -** Sets the reader to read the bar code twice before accepting data.
+**Report Check Digit -** Transmit Matrix 2of5 data with or without the check digit.
+**Verify Check Digit -** Enable this feature to check the integrity of all Matrix 2of5 symbols to verify that the data complies with a specified check digit algorithm.
+
+_&#42; See **Decode Lengths** section, below_
 
 ------
 
@@ -448,13 +473,13 @@ _&#42; See **Decode Lengths** section, below_
 
 The allowable decode lengths are specified by Length1 and Length2 as follows:
 
-* **Variable length -** Decode symbols containing any number of characters.
+**Variable length -** Decode symbols containing any number of characters.
 	* Set both Length1 and Length2 to "0" (zero)
-* **Range -** Decode a symbol with a specific length range (from a to b, including a and b).
+**Range -** Decode a symbol with a specific length range (from a to b, including a and b).
 	* Set Length1 to "a" and set Length2 to "b"
-* **Two Discrete Lengths -** Decode only symbols containing either of two selected lengths.
+**Two Discrete Lengths -** Decode only symbols containing either of two selected lengths.
 	* Set Length1 to "b" and Length2 to "a" where "a" is less than "b"
-* **One Discrete Length -** Decode only symbols containing a specific length.
+**One Discrete Length -** Decode only symbols containing a specific length.
 	* Set both Length1 and Length2 to the non-zero value
 
 ------
@@ -469,11 +494,11 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 
 * **Level 0 -** This setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN barcodes.
 
-* **Level 1 -** As barcode quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed barcodes, and the misdecodes are limited to these characters, select this security level.
+* **Level 1 -** As barcode quality levels diminish, certain characters become prone to decode failures before others (i.e., 1, 2, 7, 8). If the scanner is decode failures poorly printed barcodes, and the decode failures are limited to these characters, select this security level.
 
-* **Level 2 -** If the scanner is misdecoding poorly printed barcodes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
+* **Level 2 -** If the scanner fails to decode poorly printed barcodes, and the decode failures are not limited to characters 1, 2, 7, and 8, select this security level.
 
-* **Level 3 -** If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out-of-spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
+* **Level 3 -** If the scanner is still fails to decode, select this security level. Be advised, selecting this option is an extreme measure against decode failures for severely out-of-spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
 
 **Supplemental2 -** A check in the checkbox enables this option.
 
@@ -498,7 +523,7 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 * 434
 * 439
 
-If the barcode is preceeded by one of the prefixes above, the image is searched more aggressively for a supplemental and attempts to scan it. If the supplemental scanning fails, only the main barcode is returned.
+If the barcode is preceded by one of the prefixes above, the image is searched more aggressively for a supplemental and attempts to scan it. If the supplemental scanning fails, only the main barcode is returned.
 
 **Supplemental 378-379 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN barcode not starting with 378 or 379. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
 
@@ -527,14 +552,13 @@ If the barcode is preceeded by one of the prefixes above, the image is searched 
 * **Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
 
 ### Reader Params
+Reader Parameters control specific configuration options for the barcode reader selected in the Profile being edited. **Not all parameters will apply to all readers**. 
+
 <img style="height:350px" src="reader_params.png"/>
 <br>
 
-Reader Parameters control specific configuration options for the barcode reader selected in the Profile being edited. **Not all parameters will apply to all readers**. 
-
-**Illumination mode -**  Turns illumination on and off.
-
 ------
+**Illumination mode -**  Turns illumination on and off.
 
 **Aiming Pattern -** Turns aim pattern on and off.
 
@@ -594,7 +618,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 **Same Symbol Timeout -** This parameter is used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
-**Different Symbol Timeout -** This prameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+**Different Symbol Timeout -** This parameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
 **LCD Mode -** Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones. **Applies to Scan Module only**.
 
@@ -614,7 +638,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 ------
 
-**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode marginless barcodes: 
+**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode margin-less barcodes: 
 
 * **Level 0 -** The decoder will perform margin decoding as usual.
 
@@ -624,7 +648,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Level 3 -** The decoder can decode anything.
 
-**Note: Since higher marginless levels will increase the mis-decode risk and decoding time, we strongly recommend the user only enable the symbologies which needs to choose higher marginless level, and leave all other symbologies at default level 1**. 
+**Note: Since higher margin-less levels will increase the mis-decode risk and decoding time, we strongly recommend the user only enable the symbologies which needs to choose higher margin-less level, and leave all other symbologies at default level 1**. 
 
 ------
 
@@ -650,15 +674,15 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Viewfinder Enabled -** Enables only the viewfinder.
 
-* **Static Reticle -** Enables the viewfinder and a red reticle (crosshairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
+* **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
 ## Scan Params
+Scan Parameters allow for configuration of Code ID and scanner-specific decoding feedback options for the scanner selected in the Profile being edited. 
+
+**Note: Some parameters are device-dependent**.
+
 <img style="height:350px" src="scan_params.png"/>
 <br>
-
-Scan Params allows for configuration of Code ID and scanner-specific decoding feedback options. 
-
-**Note**: Some of these parameters are device-dependant.
 
 **Code ID Type -** Permits the selection of a Code ID character to insert between the prefix and the decoded symbol. The Code ID character identifies the code type of a scanned barcode. This information can be useful to an application when multiple barcode types are being read. Available options: 
 

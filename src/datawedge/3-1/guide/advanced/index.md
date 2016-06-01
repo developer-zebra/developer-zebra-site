@@ -6,50 +6,55 @@ productversion: '3.1'
 ---
 
 ## Overview
-This guide covers advanced DataWedge features such as the Import and Export of Profiles and DataWedge configuration files, mass deployment of DataWedge settings to an enterprise, and Advanced Data Formatting, which allows acquired data to be manipulated based on its contents. 
+This guide covers advanced DataWedge features such as Profile and Config-file Import/Export, mass deployment of DataWedge settings, and Advanced Data Formatting, which allows acquired data to be manipulated based on its contents. 
 
-For this guide, a basic knowledge of DataWedge Profiles, Plug-ins and other concepts is required. Please see the [About](..about) and [Setup](../setup) guides for more information.	
+For this guide, a basic knowledge of DataWedge Profiles, Plug-ins and other concepts is required. If necessary, please see the [About](../about) and [Setup](../setup) guides for more information. 
 
-## DataWedge Settings Panel
+## DataWedge Settings
 Most of the functionality referenced here is accessed through the DataWedge Settings panel. 
 
-To access DataWedge Settings: 
+**To access DataWedge Settings**: 
 
-&49;. From the Profiles screen, **tap the "hamburger" menu and select Settings**. The DataWedge Settings panel appears as in Step 2. 
+&#49;. From the Profiles screen, **tap the "hamburger" menu and select Settings**. The DataWedge Settings panel appears as in Step 2, below. 
 <img style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&50;. 
+&#50;. **Tap the desired feature** to invoke or change its status. 
 <img style="height:350px" src="datawedge_settings_panel.png"/>
+_The DataWedge Settings panel_. 
 <br>
 
-**DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge and return control of scanning hardware to the system.
+**Functions of the DataWedge Settings panel**: 
 
-**Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
+* **DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge and return control of scanning hardware to the system.
 
-**Import -** Imports a DataWedge configuration file from device Storage, replacing the current configuration.
+* **Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
 
-**Export -** Exports the current DataWedge configuration to device storage.
+* **Import -** Invokes navigation to a DataWedge configuration file to import from device storage, replacing the current configuration.
 
-**Import Profile -** Imports an individual DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it will be replaced by the imported one. 
+* **Export -** Exports the current DataWedge configuration to device storage. 
 
-**Export Profile -** Exports an individual DataWedge profile to device storage.
+* **Import Profile -** Invokes navigation to a DataWedge Profile to import from device storage. If a Profile of the same name already exists in DataWedge, it will be replaced by the imported one. 
 
-**Restore -** Returns DataWedge on the device to factory default settings. 
+* **Export Profile -** Exports an individual DataWedge profile to device storage.
+
+* **Restore -** Returns DataWedge on the device to factory default settings. 
 
 ### Logging
-DataWedge provides the option of outputting system log messages to the device for viewing through the Logcat command line tool, Android Studio or another compatible viewer, usually over a USB connection. 
+DataWedge provides the option of outputting system log messages for viewing through the Logcat command line tool, Android Studio or another compatible viewer, usually over a USB connection. 
 
 **To Enable/Disable logging**: 
 
-&#50;. From the DataWedge Settings panel, **tap Enable Logging** to enable or disdable logging as desired. 
+From the DataWedge Settings panel, **tap Enable Logging** to enable or disdable logging as desired. 
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
 
 ### Import Configuration
-DataWedge can accept settings created on another device and distributed throughout an entperirse by importing a DataWedge Configuration file. This file contain Profiles, Plug-ins and other DataWedge settings stored on the device in a file called `datawedge.db`.  
+DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and other DataWedge settings stored on the device. 
 
-**To Import a DataWedge Confoguration file**:    
+The DataWedge configuration file is always called `datawedge.db`.  
+
+**To Import a DataWedge Configuration file**:    
 
 &#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
 <img style="height:350px" src="datawedge_import_config.png"/>
@@ -61,7 +66,7 @@ Imported settings take effect immediately and overwrite all prior settings.
 <br>
 
 ### Export Configuration
-Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported automatically and activated immediately (or manually, as above). 
+Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
 
 **To Export a DataWedge Configuration file**: 
 
@@ -69,128 +74,82 @@ Once DataWedge is set up and configured as desired on a device, its settings fil
 <img style="height:350px" src="datawedge_export_config.png"/>
 <br>
 
-&#50;. If more than one storage device exists, **navigate to the desired storage device and tap Export**. Only the storage device may be selected; the path will be inserted automatically.  
+&#50;. If more than one storage device exists, **tap the desired storage device, then tap Export**. Only the storage device may be selected; the path will be inserted automatically.  
 <img style="height:350px" src="02_export_config.png"/>
 <br>
 
-Exported file can now be distributed to other devices manually or by using a Mobile Device Management (MDM) system. 
+The default path and filename of an exported configuration file is:
+`/storage/sdcard0/Android/data/com.symbol.datawedge/files/datawedge.db` 
+
+If an external SD card is installed, an alternate path can be selected: 
+`/storage/sdcard1/Android/data/com.symbol.datawedge/files/datawedge.db`
+
+&#51;. **Retrieve the file `datawedge.db` from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
 
 ### Import a Profile
-describe the value
+Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field. For more information, see Export a Profile, below.  
 
+While the Profile importing _process_ is similar to that of the Configuration file, and both replace what came before, the Profile _itself_ is very different. A Profile contains settings that control how DataWedge will behave with one or more specific applications. A Config file might contain numerous Profiles as well as other DataWedge settings, and when imported, **overwrites all previous DataWedge settings and Profiles**. 
 
-&#49;. From the
+**To Import a DataWedge Profile**:  
+
+&#49;. From the DataWedge Settings panel, **tap Import Profile** as highlighted below. A screen appears similar to the one in Step 2. 
 <img style="height:350px" src="datawedge_import_profile.png"/>
 <br>
 
-&#50;. From the
+&#50;. **Navigate to the file being imported** from device storage using the interface provided: 
 <img style="height:350px" src="03_import_profile.png"/>
+**Warning**: If a Profile of the same name already exists on the device, it will be replaced by the imported one. 
 <br>
-
 
 ### Export a Profile
-describe the value
+Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propogate those settings to others in the organization.  
 
+If more than one Profile is to be created, exported and distributed at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file. 
 
-&#49;. From the
+**To Export a Profile**: 
+
+&#49;. From the DataWedge Settings panel, **tap Export Profile** as highlighted below. A list of Profiles on the device appears similar to the image in Step 2.
 <img style="height:350px" src="datawedge_export_profile.png"/>
 <br>
-&#50;. From the
+
+&#50;. If more than one storage device exists, **tap the desired storage device, then the name of the Profile to be exported, then tap Export**. Only the storage device and Profile may be selected; the path will be inserted automatically.
 <img style="height:350px" src="04_export_profile.png"/>
 <br>
 
-### Export a Profile
-describe the value 
+The default path and filename of an exported Profile is:
+`/storage/sdcard0/Android/data/com.symbol.datawedge/files/dwprofile_[profilename].db` 
 
-**This action cannot be undone**. 
+If an external SD card is installed, an alternate path can be selected: 
+`/storage/sdcard1/Android/data/com.symbol.datawedge/files/dwprofile_[profilename].db`
 
+&#51;. **Retrieve the exported file from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
 
-&#49;. From the
+**Warning: If a Profile exists on the device with the same name as one being imported, the existing profile will be overwritten by the imported one**. 
+
+### Restore (defaults)
+DataWedge has the ability to reset all user-configured settings and restore them to their original factory defaults. **This action cannot be undone**. 
+
+**To Restore DataWedge to its factory-default settings**:
+
+&#49;. From the DataWedge Settings panel, **tap Restore** as highlighted below. A confirmation screen appears similar to the image in Step 2.
 <img style="height:350px" src="datawedge_restore.png"/>
 <br>
 
-&#50;. From the
+&#50;. **Tap Yes to Restore factory defaults** or No to cancel. 
 <img style="height:350px" src="05_restore_defaults.png"/>
 <br>
 
+## Advanced Data Formatting
+Through Advanced Data Formatting, DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on the data content. To determine how and whether the data should be altered, the ADF Plug-in applies rules that perform actions on data based on specific criteria relating to the data itself. For example, a rule might be created to check the first four digits of any 16-digit number to determine if it's a credit card affiliated with a specific bank.
 
+**Rules -** The ADF process plug-in consists of one or more rules. DataWedge formats the output data according to the first matching rule. A rule is a combination of criteria and a set of actions to be performed, upon fulfillment of the criteria set in the rule.
 
+**Criteria -** Criteria can be set according to Input plug-in, symbology, matching string within the data (at the specified position) and/or data length. Received data must match the defined criteria in order for the data to be processed.
 
+**Actions -** A set of procedures defined to format data. There are four types of actions which are for formatting cursor movement, data modification, data sending and delay specifications. An action can be defined to send the first number of characters to the Output plug-in, pad the output data with spaces or zeros, remove spaces in data, etc.
 
-
-
-
-
-
-
-
-
-Touch  Menu > Settings.
-
-DataWedge Settings Screen
-Figure 21. DataWedge Settings Window
-
-
-Import Configuration File
-To import a DataWedge configuration file:
-
-Copy the configuration file to a location in the file system.
-
-Touch  Home > DataWedge.
-
-Touch  Menu > Settings > Import.
-
-Select "datawedge.db" file if it is exist in the files browser dialog. Use ., .. and folder entries to browse and select the required DataWedge configuration file. The configuration file (datawedge.db) is imported and replaces the current configuration.
-
-Export Configuration File
-To export a DataWedge configuration file:
-
-Touch  Home > DataWedge.
-
-Touch  Menu > Settings > Export.
-
-Touch Export button to export the DataWedge configuration file to the predefined location(s) in the device. Default location is /storage/sdcard0/Android/data/com.symbol.datawedge/files. If the external SD card is available the second location will be listed: /storage/sdcard1/Android/data/com.symbol.datawedge/files.
-
-Import Profile Configuration File
-To import a DataWedge profile configuration file:
-
-Copy the profile configuration file to the root of the mobile computer device Storage.
-
-Touch  Home > DataWedge.
-
-Touch  Menu > Settings > Import Profile.
-
-Select the profile configuration file (dwprofile_xxx.db) in the file selection dialog. Use ., .., and Folder entries to browse to the required file in the file system. button to export the DataWedge configuration file (datawedge.db) to to the selected location in the folder browser dialog. Select ., .. and Folders list to select the desired folder to export the configuration.
-
-Note    Profile configuration file must have the dwprofile_ prefix followed by the profile name and the file extention should .db.
-Export Profile Configuration File
-To export a DataWedge profile configuration file:
-
-Touch  Home > DataWedge.
-
-Touch  Menu > Settings > Export Profile.
-
-Select the profile from the profile list and press Export button to export the profile file to the predefined location(s) in the device. Default location is /storage/sdcard0/Android/data/com.symbol.datawedge/files. If the external SD card is available the second location will be listed: /storage/sdcard1/Android/data/com.symbol.datawedge/files. The profile configuration will be exported to the selected location with the file name dwprofile_profilename.db.
-
-Restore DataWedge
-To restore DataWedge to the factory default configuration:
-
-Touch  Home > DataWedge >  Menu > Settings > Restore.
-
-Touch Yes.
-
-
-## Generating Advanced Data Formatting Rules
-
-The ADF plug-in applies rules (actions to be performed based on defined criteria) to the data received via the Input plug-in before sending it to the Output plug-in.
-
-Rules - The ADF process plug-in consists of one or more rules. DataWedge formats the output data according to the first matching rule. A rule is a combination of criteria and a set of actions to be performed, upon fulfillment of the criteria set in the rule.
-
-Criteria - Criteria can be set according to Input plug-in, symbology, matching string within the data (at the specified position) and/or data length. Received data must match the defined criteria in order for the data to be processed.
-
-Actions - A set of procedures defined to format data. There are four types of actions which are for formatting cursor movement, data modification, data sending and delay specifications. An action can be defined to send the first number of characters to the Output plug-in, pad the output data with spaces or zeros, remove spaces in data, etc.
-
-Configuring ADF Plug-in
+### Configuring ADF Plug-in
 Configuring the ADF plug-in consists of creating a rule, defining the criteria and defining the actions.
 
 Touch  Home > DataWedge.

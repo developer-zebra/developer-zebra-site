@@ -243,9 +243,9 @@ _&#42; See **Decode Lengths** section, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
-**Convert Code39 To Code32 -** Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry. Scan the appropriate barcode below to enable or disable converting Code 39 to Code 32.
+**Convert Code39 To Code32 -** Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry. 
 
-**Report Code32 Prefix -** Scan the appropriate barcode to enable or disable adding the prefix character "A" to all Code 32 barcodes.
+**Report Code32 Prefix -** Enables the addition of the prefix character "A" to all Code 32 barcodes.
 
 **Security Level -** Options: Security level 0, Security Level 1, Security Level 2 and Security Level 3.
 

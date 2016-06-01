@@ -143,7 +143,9 @@ DataWedge has the ability to reset all user-configured settings and restore them
 ## Advanced Data Formatting
 Through Advanced Data Formatting, DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on the data content. To determine how and whether the data should be altered, the ADF Plug-in applies rules that perform actions on data based on specific criteria relating to the data itself. For example, a rule might be created to check the first four digits of any 16-digit number to determine if it's a credit card affiliated with a specific bank.
 
-**Rules -** The ADF process plug-in consists of one or more rules. DataWedge formats the output data according to the first matching rule. A rule is a combination of criteria and a set of actions to be performed, upon fulfillment of the criteria set in the rule.
+>>> EDIT THESE: 
+
+**Rules -** The ADF Process Plug-in consists of one or more rules. DataWedge formats the output data according to the first matching rule. A rule is a combination of criteria and a set of actions to be performed, upon fulfillment of the criteria set in the rule.
 
 **Criteria -** Criteria can be set according to Input plug-in, symbology, matching string within the data (at the specified position) and/or data length. Received data must match the defined criteria in order for the data to be processed.
 

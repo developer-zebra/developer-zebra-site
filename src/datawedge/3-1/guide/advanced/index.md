@@ -144,13 +144,18 @@ DataWedge has the ability to reset all user-configured settings and restore them
 ## Advanced Data Formatting
 DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on the data content. The Advanced Data Formatting (ADF) Process Plug-in can be configured to determine whether and how the data should be altered according to rules that perform actions based on specific criteria relating to the data itself. For example, a rule might be created to check the first four digits of any 16-digit number to determine if it's from a credit card affiliated with a specific bank. 
 
->>> EDIT THESE: 
+**ADF Components**:
 
-**Rules -** The ADF Process Plug-in consists of one or more rules. DataWedge formats the output data according to the first matching rule. A rule is a combination of criteria and a set of actions to be performed, upon fulfillment of the criteria set in the rule.
+**Rules -** The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Criteria -** Criteria can be set according to Input plug-in, symbology, matching string within the data (at the specified position) and/or data length. Received data must match the defined criteria in order for the data to be processed.
+**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), symbology (i.e. only Code39 data), and a specified string within the data (optionally at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
 
-**Actions -** A set of procedures defined to format data. There are four types of actions which are for formatting cursor movement, data modification, data sending and delay specifications. An action can be defined to send the first number of characters to the Output plug-in, pad the output data with spaces or zeros, remove spaces in data, etc.
+**Actions -** A set of procedures for analyzing, identifying and processing acquired data. There are four types of actions: 
+
+	* **Cursor movement** (i.e. skip the first 10 characters)
+	* **Data modification** (i.e remove all spaces; pad the left side with four zeros)
+	* **Data sending** (i.e. output the last four digits)
+	* **Delay** (i.e. wait 50 ms before doing something)
 
 ### Configuring the ADF Plug-in
 Setting up Advanced Data Formatting is done in three basic steps: 
@@ -187,9 +192,9 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 
 * **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data.
 
-* **String position -** An optional parameter that allows a character offset (+ or -) to be entered before or after which the "String to check for" must be present. For example, the target String "text" with a String position offset of +2 would invoke action(s) only if a string such as "00text" was acquired. 
+* **String position -** An optional parameter that allows a character offset from the starting position (0) to be entered after which the "String to check for" must be present. For example, the target String "text" with a String position offset of 2 would invoke action(s) only if a string such as "00text" was acquired. 
 
-* **String length -**  An optional parameter that allows a specific length (in characters) to be entered before action(s) will be invoked. For example, if scanning Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
+* **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
 
 * **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which specific decoders can be further selected or excluded), or through SimulScan. 
 
@@ -329,18 +334,18 @@ _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
 
-## ADF Example
+## ADF Sample Rule
 The following is an example of the creation process for an Advanced Data Formatting Rule that might be typical for data processing scenarios. 
 
 **Barcode scanning criteria**:
 * Barcode: Code39
 * Decoded Length: 12 characters
-* Start Position contents: "129" 
+* Starting Position contents: "129" 
 
-**DataWedge format the data**:
+**How DataWedge should format the data**:
 * Pad all sends with zeros to a length of 8
 * Send all data up to character X
-* Send a space character.
+* Send a space character
 
 **To create an ADF rule for this example**:
 1. Tap **HOME -> DataWedge -> Profile0**.
@@ -356,14 +361,14 @@ The following is an example of the creation process for an Advanced Data Formatt
 1. Tap **All decoders enabled** to uncheck and disable all decoders.
 1. Tap **Code39** to enable the Code39 decoder only. 
 1. Tap **BACK** three times.
-1. Tap and hold the **Send remaining rule** until a menu appears.
+1. Tap and hold the **Send remaining** until a menu appears.
 1. Tap **Delete action**.
-1. Tap **Menu -> New action**. Select Pad with zeros. The Pad with zeros rule appears in the Actions list.
-1. Tap the **Pad with zeros** rule.
-1. Tap **How many**. Change value to 8 and Tap OK.
+1. Tap **Menu -> New action**. Select **Pad with zeros**. The Pad with zeros Action appears in the Actions list.
+1. Tap the **Pad with zeros** Action.
+1. Tap **How many**. Change value to 8 and **Tap OK**.
 1. Tap **BACK**.
-1. Tap **Menu -> New action**. Select **Send up to**. The Send up to rule appears in the Action list.
-1. Tap **Send up to** rule.
+1. Tap **Menu -> New action**. Select **Send up to**. The Send up to Action appears in the Action list.
+1. Tap **Send up to** Action.
 1. Tap **String**. In the text box, **enter X** and **Tap OK**.
 1. Tap **BACK**.
 1. Tap **Menu -> New action**. Select **Send char**. The Send char Action appears in the Action list.
@@ -375,62 +380,31 @@ The Rule0 screen should appear similar to the image below.
 <img style="height:350px" src="Figure_18_ADF_SampleScreen.png"/>
 <br>
 
-To test the new ADF rule, open any app on the device that has a text field capable of accepting input and click in the field. Then scan the barcode below: 
- 
-<img style="height:350px" src="Figure_19_BarcodeSample.png"/>
-A Code39 barcode with "129" in the starting position. 
-<br>
-
-Figure_20_FormattedData
-<img style="height:350px" src="Figure_20_FormattedData.png"/>
-<br>
-
-
-
-
-Aim the exit window at the bar code.
-
-Sample Barcode
-Figure 19. Sample Barcode
-Press and hold the Right Scan/Action button. The red laser aiming pattern turns on to assist in aiming. Ensure that the bar code is within the area formed by the aiming pattern. The Left and Right LEDs light red to indicate that data capture is in process.
-
-The Left and Right LEDs light green, a beep sounds and the mobile computer vibrates, by default, to indicate the bar code was decoded successfully. The formatted data 000129X<space> appears in the text field. Scanning a Code 39 bar code of 1299X15598 does not transmit data (rule is ignored) because the bar code data did not meet the length criteria.
-
-Formatted Data
-Figure 20. Formatted Data
-Note    
-When ADF data processing needs to find or replace non printable characters such as control characters or extended ASCII characters \xNN can be used to specify hex value of the character or \uNNNN can be used to specify the Unicode value of the character to be processed by the ADF. Ex: If the captured data contains the GS character (\x1D) and data needs to be separated by the GS character following ADF actions can be added to the ADF rule.
-
-Data :
-8100712345(GS)2112345678
-
-Actions :
-Send upto (\x1D)
-
-Skip ahead (1)
-
-Send remaining.
-
-
-
 ## Configuration File Management
 
 The configuration settings for DataWedge can be saved to a file for distribution to other mobile computers.
 
-After making configuration changes, export the new configuration to the root of the On-device Storage. The file created is automatically named datawedge.db. This datawedge.db file can then the copied to the On-device Storage of other devices and imported into DataWedge on those devices. Importing a configuration replaces the existing configuration.
+After making configuration changes, export the new configuration to the root of the on-device Storage. The file created is automatically named datawedge.db. This datawedge.db file can then the copied to the on-device storage of other devices and imported into DataWedge on those devices. Importing a configuration replaces the existing configuration.
 
-Enterprise Folder
+### Enterprise Folder
 Internal storage contains the Enterprise folder (/enterprise). The Enterprise folder is persistent and maintains data after an Enterprise reset. After an Enterprise Reset, DataWedge checks folder /enterprise/device/settings/datawedge/enterprisereset/ for a configuration file, datawedge.db. If the file is found, it imports the file to replace any existing configuration. Additionally if there are any DataWedge profile configuration files they also get imported to DataWedge configuration.
 
-Note    A DataWedge Restore operation will delete the working db file and if a datawedge.db file exists in enterprisereset folder DataWedge will copy it as the new working db.
-Note    A Factory Reset deletes all files in the Enterprise folder.
-Auto Import
+**Notes** 
+* A DataWedge Restore operation will delete the working .db file.
+* If a datawedge.db file exists in `/enterprisereset` folder DataWedge will copy it as the new working .db file.
+* A _**Factory**_ Reset **deletes all files** in the `/enterprise` folder.
+
+### Auto Import
 DataWedge supports remote deployment of a configuration to the mobile computer, using tools such as MSP. DataWedge monitors the /enterprise/device/settings/datawedge/autoimport folder for the DataWedge configuration file datawedge.db file or profile configuration files dwprofile_profilename.db. When DataWedge launches it checks the folder. If a datawedge.db or profile configuration files are found, it imports the files to replace any existing configuration. Once files are imported they are deleted from the folder.
 
 While DataWedge is running it receives a notification from the system that a datawedge.db or DataWedge profile configuration (dwprofile_profilename.db) file is placed into the /enterprise/device/settings/datawedge/autoimport folder. When this occurs, DataWedge imports this new configuration, replacing the existing one and delete the datawedge.db or the DataWedge profile configuration file (dwprofile_profilename.db). DataWedge begins using the imported configuration immediately.
 
-Note    It is strongly recommended that the user exits DataWedge before remotely deploying any configuration. Devices which does not show contents under enterprise folder user may have to programatically write files to enterprisereset folder and to autoimport folder.
-Note    DataWedge will try to consume the “.db” files as soon as they are copied to the autoimport folder. Therefore it is possible that DataWedge and the application which copies the db file trying to access the file at the same time. To avoid such race condition it is recommended to write the file with a different extension such as ".tmp" and once the file copy is completed rename it back to the correct extension. It is also recommended to apply file permission explicitly to the file such that the DataWedge will be able to consume the file.
+**Notes**
+* Zebra strongly recommends that the user exits DataWedge before remotely deploying any configuration. Devices which does not show contents under enterprise folder user may have to programatically write files to enterprisereset folder and to autoimport folder.
+
+* DataWedge will try to consume the “.db” files as soon as they are copied to the autoimport folder. It is therefore possible that DataWedge and an application trying to copy the .db file are trying to access the file at the same time. To avoid this condition, Zebra recommends initially storing the file with a different extension such as ".tmp" and changing the extension to .db once writing is complete. 
+
+* Zebra also recommends applying explicit file permissions to the file so that DataWedge will not be impeded from consuming the file.
 
     //NOTE: Below code is for demo purpose only, has no error checks
     InputStream fis = null;
@@ -475,8 +449,8 @@ Note    DataWedge will try to consume the “.db” files as soon as they are co
 
 ## Programming Notes
 
-Overriding Trigger Key in an Application
-To override the trigger key in an application, create a profile for the application that disables the Barcode input. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
+### Overriding the Trigger Key
+It is sometimes necessary to override the trigger key in an application. DataWedge allows this by creating a profile that disables the Barcode input and associating one or more applications with it. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
 
 Capture Data and Taking a Photo in the Same Application
 To be able to capture bar code data and take a photo in the same application:
@@ -496,6 +470,28 @@ Export the DataWedge configuration. See Export Configuration File above for inst
 
 See Configuration File Management above for instructions for using the auto import feature.
 
+
+-----
+
+>>UNDER CONSTRUCTION 
+
+To test the new ADF rule, open any app on the device that has a text field capable of accepting input and click in the field. Then scan the barcode below: 
+<img style="height:150px" src="Figure_19_BarcodeSample.png"/>
+A Code39 barcode with "129" in the starting position. 
+<br>
+
+&#49;. To scan, press and hold the device's Scan/Action button. Depending on the configuration, the red laser aiming pattern turns on to assist in aiming. Ensure that the barcode is within the area formed by the aiming pattern. The Left and Right LEDs light red to indicate that data capture is in process. The Left and Right LEDs light green, a beep sounds and the mobile computer vibrates, by default, to indicate the bar code was decoded successfully. 
+
+The formatted data "000129X " (with a trailing space) appears in the text field. Scanning a Code 39 bar code of 1299X15598 does not transmit data (rule is ignored) because the bar code data did not meet the length criteria.
+<img style="height:350px" src="Figure_20_FormattedData.png"/>
+<br>
+
+**Note**: When ADF data processing needs to find or replace non-printable characters such as control characters or extended ASCII characters, \xNN can be used to specify hex value of the character, or \uNNNN can be used to specify the Unicode value of the character to be processed by the ADF. For example, if the captured data contains the GS character (\x1D) and data needs to be separated by the GS character, the following ADF actions can be added to the ADF rule:
+
+* **Data**: 8100712345(GS)2112345678
+* **Actions**: Send upto (\x1D)
+* **Skip ahead (1)**
+* **Send remaining**
 
 
 

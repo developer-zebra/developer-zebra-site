@@ -201,86 +201,16 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 <img style="height:350px" src="adf_18_new_action.png"/>
 <br>
 
-&#56;. **Select an Action from the Actions list**, scrolling if necessary. **Tap BACK** to save and return to the Rule screen.  
+&#56;. **Select an Action from the Actions list**, scrolling as necessary. **Tap BACK** to save and return to the Rule screen. For more information about Actions, see the table below. 
 <img style="height:350px" src="adf_19_actions1.png"/>
-<!-- 
-<img style="height:350px" src="adf_20_actions2.png"/>
-<img style="height:350px" src="adf_21_actions3.png"/> 
--->
-<br>
 
-&#56;. **Repeat Step 8 until all required Actions are created**. 
-<img style="height:350px" src="adf_22_actions_list.png"/>
-<br>
+_**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINEFEED or TAB characters._
 
-**Action Notes**: 
-
-* Unless repositioned, Actions will execute in the order created. 
-* To reposition an Action, drag the Action by its handle (to the right of its name). To delete, long-press the Action name. 
-
-
-Once a Rule is enabled (with a checkmark in its Rule screen), a Rule will apply whenever its parent Profile is used. All data acquired through the Profile will be processed according to the Actions defined in this Rule before being tranferred to the selected Output Plug-in. 
-
-
-
-Touch the + or - to change the value.
-
-Touch OK.
-
-Touch String length option to specify a length for the received data. The ADF rule only applies to the bar code data with that specified length.
-
-Touch the + or - to change the value.
-
-Touch OK.
-
-Touch Source criteria option to associate an input device to an ADF rule. The ADF rule only applies to data received from associated input devices.
-
-Touch Barcode input or MSR input. Options vary depending upon the device configuration.
-
-Touch the Source enabled checkbox to accept data from this source.
-
-ADF Barcode Input Screen
-Figure 17. Barcode Input Screen
-For Barcode inputs, touch the All decoders enabled checkbox to select all bar code symbologies. Deselect the All decoders enabled checkbox and then individually select the symbologies.
-
-Touch  Back until the Rule screen appears.
-
-If required, repeat steps to create another rule.
-
-Touch  Back until the Rule screen appears.
-
-Define an Action
-
-By default the Send remaining action is in the Actions list. To add an action:
-
-Touch  Menu > New action.
-
-In the New action menu, select an action to add to the Actions list. The table below lists the supported ADF actions.
-
-Some Actions require additional information. Touch the Action to display additional information fields.
-
-Repeat steps to create more actions.
-
-Touch  Back .
-
-
-
-Touch  Back .
-
-Delete a Rule
-
-To delete an existing rule:
-
-Touch and hold on a rule until the context menu appears.
-
-Touch Delete to delete the rule from the Rules list.
-
-Note    When there is no rule available for ADF plug-in or all rules are disabled, DataWedge passes decoded data to the output plug-in without processing the data.
-Order Rules List
-
-Rules are processed in top-down order. The rules that are on top of the list are processed first. Use the icon next to the rule to move it to another position in the list.
-
-<caption class="title">Table 2. ADF Supported Actions</caption>
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title">ADF Supported Actions</caption>
 <col width="22%" />
 <col width="22%" />
 <col width="55%" />
@@ -295,11 +225,11 @@ Rules are processed in top-down order. The rules that are on top of the list are
 <tr>
 <td rowspan="5" align="left" valign="top"><p class="table">Cursor Movement</p></td>
 <td align="left" valign="top"><p class="table">Skip ahead</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor forward by a specified number of characters. Enter the number of characters to move the cursor ahead.</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor forward by the specified number of characters.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Skip back</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor back by a specified number of characters. Enter the number of characters to move the cursor back.</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor back by the specified number of characters.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Skip to start</p></td>
@@ -307,20 +237,20 @@ Rules are processed in top-down order. The rules that are on top of the list are
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Move to</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor forward until the specified string is found. Enter the string in the data field.</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor forward until the string specified in the data field is found.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Move past</p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the specified string. Enter the string in the data field.</p></div></div></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the string specified in the data field.</p></div></div></td>
 </tr>
 <tr>
 <td rowspan="10" align="left" valign="top"><p class="table">Data Modification</p></td>
 <td align="left" valign="top"><p class="table">Crunch spaces</p></td>
-<td align="left" valign="top"><p class="table">Remove spaces between words to one and remove all spaces at the beginning and end of the data.</p></td>
+<td align="left" valign="top"><p class="table">Reduce spaces between words to one and remove all spaces at the beginning and end of the data.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Stop space crunch</p></td>
-<td align="left" valign="top"><p class="table">Stops space crunching. This disables the last <strong>Crunch spaces</strong> action.</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>Crunch spaces</strong> action.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Remove all spaces</p></td>
@@ -328,7 +258,7 @@ Rules are processed in top-down order. The rules that are on top of the list are
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Stop space removal</p></td>
-<td align="left" valign="top"><p class="table">Stop removing spaces. This disables the last <strong>Remove all spaces</strong> action.</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>Remove all spaces</strong> action.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Remove leading zeros</p></td>
@@ -336,19 +266,19 @@ Rules are processed in top-down order. The rules that are on top of the list are
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Stop zero removal</p></td>
-<td align="left" valign="top"><p class="table">Stop removing zeros at the beginning of data. This disables the previous <strong>Remove leading zeros</strong> action.</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>Remove leading zeros</strong> action.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Pad with zeros</p></td>
-<td align="left" valign="top"><p class="table">Left pad data with zeros to meet the specified length. Enter the number zeros to pad.</p></td>
+<td align="left" valign="top"><p class="table">Left-pad data with the specified number of zeros.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Stop pad zeros</p></td>
-<td align="left" valign="top"><p class="table">Stop padding with zeros. This disables the previous <strong>Pad with zeros</strong> action.</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>Pad with zeros</strong> action.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Replace string</p></td>
-<td align="left" valign="top"><p class="table">Replaces a specified string with a new string. Enter the string to replace and the string to replace it with.</p></td>
+<td align="left" valign="top"><p class="table">Replaces a specified string with a new specified string. Both must be specified.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Stop all replace string</p></td>
@@ -357,7 +287,7 @@ Rules are processed in top-down order. The rules that are on top of the list are
 <tr>
 <td rowspan="6" align="left" valign="top"><p class="table">Data Sending</p></td>
 <td align="left" valign="top"><p class="table">Send next</p></td>
-<td align="left" valign="top"><p class="table">Sends the specified number of characters from the current cursor position. Enter the number of characters to send.</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified number of characters from the current cursor position.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send remaining</p></td>
@@ -365,127 +295,98 @@ Rules are processed in top-down order. The rules that are on top of the list are
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send up to</p></td>
-<td align="left" valign="top"><p class="table">Sends all data up to a specified string. Enter the string.</p></td>
+<td align="left" valign="top"><p class="table">Sends all data up to the specified string.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send pause</p></td>
-<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before continuing the next action. Enter the amount of time in milliseconds.</p></td>
+<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before continuing the next action.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send string</p></td>
-<td align="left" valign="top"><p class="table">Sends a specified string. Enter the string to send.</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified string.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send char</p></td>
-<td align="left" valign="top"><p class="table">Sends a specified ASCII/ Unicode character. Enter a character value. The maximum Unicode character value can be entered is U-10FFFF (= 1114111 in decimal).</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified ASCII/ Unicode character. The maximum Unicode character value can be entered is U-10FFFF (= 1114111 in decimal).</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+_**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINE FEED or TAB characters._
+
+&#56;. **Repeat Step 8 until all required Actions are created**. 
+<img style="height:350px" src="adf_22_actions_list.png"/>
+<br>
+
+**Action Notes**: 
+* Actions are processed from the top of the list downward to the bottom. 
+* To reposition an Action, drag the Action by its handle (to the right of its name). 
+* To delete an Action, long-press the Action name. 
+
+**Rules Notes**: 
+* Once a Rule is enabled (with a checkmark in its Rule screen), a Rule will apply whenever its parent Profile is used. 
+* All data acquired through the Profile will be processed according to the Actions defined in the Rule before being tranferred to the selected Output Plug-in. 
+* If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
 
-Note    It is recommended to add Send pause action with 50ms after Send string or Send char actions were used to send enter, line feed or tab characters to avoid any data loss.
-Delete an Action
+## ADF Example
+The following is an example of the creation process for an Advanced Data Formatting Rule that might be typical for data processing scenarios. 
 
-To delete an action from the Actions list, touch and hold the action name and select Delete action from the context menu.
+**Barcode scanning criteria**:
+* Barcode: Code39
+* Decoded Length: 12 characters
+* Start Position contents: "129" 
 
-ADF Example
+**DataWedge format the data**:
+* Pad all sends with zeros to a length of 8
+* Send all data up to character X
+* Send a space character.
 
-The following illustrates an example of creating advanced data formatting:
+**To create an ADF rule for this example**:
+1. Tap **HOME -> DataWedge -> Profile0**.
+1. Tap **Advanced data formatting**.
+1. Tap **Enable**.
+1. Tap **Rule0**.
+1. Tap **Criteria**.
+1. Tap **String to check for**. In the text box, **enter 129** and **Tap OK**.
+1. Tap **String position**. Change value to 0 and **Tap OK**.
+1. Tap **String length**. Change value to 12 and **Tap OK**.
+1. Tap **Source criteria**.
+1. Tap **Barcode input**.
+1. Tap **All decoders enabled** to uncheck and disable all decoders.
+1. Tap **Code39** to enable the Code39 decoder only. 
+1. Tap **BACK** three times.
+1. Tap and hold the **Send remaining rule** until a menu appears.
+1. Tap **Delete action**.
+1. Tap **Menu -> New action**. Select Pad with zeros. The Pad with zeros rule appears in the Actions list.
+1. Tap the **Pad with zeros** rule.
+1. Tap **How many**. Change value to 8 and Tap OK.
+1. Tap **BACK**.
+1. Tap **Menu -> New action**. Select **Send up to**. The Send up to rule appears in the Action list.
+1. Tap **Send up to** rule.
+1. Tap **String**. In the text box, **enter X** and **Tap OK**.
+1. Tap **BACK**.
+1. Tap **Menu -> New action**. Select **Send char**. The Send char Action appears in the Action list.
+1. Tap **Send char** Action.
+1. Tap **Character code**. In the text box, **enter 32** and **Tap OK**.
+1. Tap **BACK**.
 
-When a user scans a bar code with the following criteria:
+The Rule0 screen should appear similar to the image below. 
+<img style="height:350px" src="Figure_18_ADF_SampleScreen.png"/>
+<br>
 
-Code 39 bar code
+To test the new ADF rule, open any app on the device that has a text field capable of accepting input and click in the field. Then scan the barcode below: 
+ 
+<img style="height:350px" src="Figure_19_BarcodeSample.png"/>
+A Code39 barcode with "129" in the starting position. 
+<br>
 
-length of 12 characters
+Figure_20_FormattedData
+<img style="height:350px" src="Figure_20_FormattedData.png"/>
+<br>
 
-contains 129 at the start position
 
-DataWedge format the data:
 
-Pad all sends with zeros to length 8
-
-send all data up to character X
-
-send a space character.
-
-To create an ADF rule for the above example:
-
-Touch  Home > DataWedge > Profile0.
-
-Touch Advanced data formatting.
-
-Touch Enable.
-
-Touch Rule0.
-
-Touch Criteria.
-
-Touch String to check for.
-
-In the Enter the string to check for text box, enter 129 and then touch OK.
-
-Touch String position.
-
-Change value to 0 and then touch OK.
-
-Touch String length.
-
-Change value to 12 and then touch OK.
-
-Touch Source criteria.
-
-Touch Barcode input.
-
-Touch All decoders enabled to disable all decoders.
-
-Touch Code 39.
-
-Touch  Back three times.
-
-Touch and hold on the Send remaining rule until a menu appears.
-
-Touch Delete action.
-
-Touch  Menu > New action.
-
-Select Pad with zeros. The Pad with zeros rule appears in the Actions list.
-
-Touch the Pad with zeros rule.
-
-Touch How many.
-
-Change value to 8 and then touch OK.
-
-Touch  Back .
-
-Touch  Menu > New action.
-
-Select Send up to. The Send up to rule appears in the Action list.
-
-Touch Send up to rule.
-
-Touch String.
-
-In the Enter a string text box, enter X and then touch OK.
-
-Touch  Back .
-
-Touch  Menu > New action.
-
-Select Send char. The Send char to rule appears in the Action list.
-
-Touch Send char rule.
-
-Touch Character code.
-
-In the Enter character code text box, enter 32 and then touch OK.
-
-Touch  Back .
-
-ADF Sample Screen
-Figure 18. ADF Sample Screen
-Ensure that an application is open on the mobile computer and a text field is in focus (text cursor in text field).
 
 Aim the exit window at the bar code.
 

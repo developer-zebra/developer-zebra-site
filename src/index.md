@@ -3,6 +3,28 @@ publish: false
 title: Available Product Documentation
 layout: list-products.html
 products:
+  - title: DataWedge
+    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
+    url: /datawedge/3-1/guide/about
+    image: /datawedge/datawedge_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /datawedge/3-1/guide/about
+      - title: Setup
+        url: /datawedge/3-1/guide/setup
+      - title: Advanced
+        url: /datawedge/3-1/guide/advanced
+      - title: Decoders
+        url: /datawedge/3-1/guide/decoders
+      - title: IP Output
+        url: /datawedge/3-1/guide/ipoutput
+      - title: APIs
+        url: /datawedge/3-1/guide/api
+      - title: Demo
+        url: /datawedge/3-1/guide/demo
+      - title: Download
+        url: /datawedge/3-1/download
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to Android apps, settings and files without custom code.'
     url: /ehs/2-3/guide/about
@@ -20,7 +42,7 @@ products:
       - title: Download
         url: /ehs/2-3/download
   - title: Enterprise Keyboard
-    description: A customizable keyboard made specifically for the workplace.
+    description: A customizable keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs

@@ -1,9 +1,9 @@
 ---
-title: Enterprise Home Screen
+title: Enterprise Keyboard
 img: ekb_logo.png
 layout: list-mx.html
 menu:
-  title: Enterprise Home Screen
+  title: Enterprise Keyboard
   items:
     - title: About
       url: /enterprise-keyboard/1-0/guide/about

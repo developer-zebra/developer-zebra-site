@@ -50,10 +50,10 @@ From the DataWedge Settings panel, **tap Enable Logging** to enable or disdable 
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
 
-### Import Configuration
+### Import a Config File
 DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and other DataWedge settings stored on the device. 
 
-The DataWedge configuration file is always called `datawedge.db`.  
+The DataWedge configuration file is always named `datawedge.db`.  
 
 **To Import a DataWedge Configuration file**:    
 
@@ -66,8 +66,10 @@ The DataWedge configuration file is always called `datawedge.db`.
 Imported settings take effect immediately and overwrite all prior settings.   
 <br>
 
-### Export Configuration
+### Export a Config File
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
+
+**See Configuration File Management section of this guide for other important information**.  
 
 **To Export a DataWedge Configuration file**: 
 
@@ -157,7 +159,7 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 	* **Data sending** (i.e. output the last four digits)
 	* **Delay** (i.e. wait 50 ms before doing something)
 
-### Configuring the ADF Plug-in
+### Creating ADF Rules
 Setting up Advanced Data Formatting is done in three basic steps: 
 
 1. Create a Rule
@@ -206,16 +208,17 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 <img style="height:350px" src="adf_18_new_action.png"/>
 <br>
 
-&#56;. **Select an Action from the Actions list**, scrolling as necessary. **Tap BACK** to save and return to the Rule screen. For more information about Actions, see the table below. 
+&#56;. **Select an Action from the Actions list**, scrolling as necessary. **Tap BACK** to save and return to the Rule screen. 
 <img style="height:350px" src="adf_19_actions1.png"/>
+For more information about Actions, see the table below. 
+<br>
 
-_**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINEFEED or TAB characters._
-
+### Supported ADF Actions
 <table rules="all"
 width="100%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<caption class="title">ADF Supported Actions</caption>
+<caption class="title"></caption>
 <col width="22%" />
 <col width="22%" />
 <col width="55%" />
@@ -327,14 +330,14 @@ _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action
 * Actions are processed from the top of the list downward to the bottom. 
 * To reposition an Action, drag the Action by its handle (to the right of its name). 
 * To delete an Action, long-press the Action name. 
+* A Pause Action of 50 ms after sending ENTER, LINE FEED or TAB can help minimize data loss.
 
 **Rules Notes**: 
 * Once a Rule is enabled (with a checkmark in its Rule screen), a Rule will apply whenever its parent Profile is used. 
 * All data acquired through the Profile will be processed according to the Actions defined in the Rule before being tranferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
-
-## ADF Sample Rule
+## Sample ADF Rule
 The following is an example of the creation process for an Advanced Data Formatting Rule that might be typical for data processing scenarios. 
 
 **Barcode scanning criteria**:
@@ -381,97 +384,119 @@ The Rule0 screen should appear similar to the image below.
 <br>
 
 ## Configuration File Management
+Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. For further information and specific instructions, see **Export a Config File** and **Import a Config File** sections, above. 
 
-The configuration settings for DataWedge can be saved to a file for distribution to other mobile computers.
+The DataWedge Configuration File is always named `datawedge.db`. 
 
-After making configuration changes, export the new configuration to the root of the on-device Storage. The file created is automatically named datawedge.db. This datawedge.db file can then the copied to the on-device storage of other devices and imported into DataWedge on those devices. Importing a configuration replaces the existing configuration.
+DataWedge Profiles are always named `dwprofile_profilename.db`.  
 
 ### Enterprise Folder
-Internal storage contains the Enterprise folder (/enterprise). The Enterprise folder is persistent and maintains data after an Enterprise reset. After an Enterprise Reset, DataWedge checks folder /enterprise/device/settings/datawedge/enterprisereset/ for a configuration file, datawedge.db. If the file is found, it imports the file to replace any existing configuration. Additionally if there are any DataWedge profile configuration files they also get imported to DataWedge configuration.
+On Zebra devices, internal storage contains a directory named `/enterprise` that persists (is not erased) after an Enterprise reset is performed on the device. DataWedge stores its files in several directories below `/enterprise`, which allows them to persist after an Enterprise reset as well.
 
-**Notes** 
+**Directory Behavior**:
+
+* `/enterprise/device/settings/datawedge/enterprisereset/` - DataWedge checks this folder following an Enterprise reset and imports a configuration file and Profile(s), if present. 
+
+* `/enterprise/device/settings/datawedge/autoimport` - DataWedge monitors this folder whenever it's running and immediately imports and activates any configuration file placed here, overwriting prior settings. See Auto Import, below.   
+
+**Notes:** 
 * A DataWedge Restore operation will delete the working .db file.
-* If a datawedge.db file exists in `/enterprisereset` folder DataWedge will copy it as the new working .db file.
-* A _**Factory**_ Reset **deletes all files** in the `/enterprise` folder.
+* A _**Factory**_ reset **deletes all files** in the `/enterprise` folder.
+* If a `datawedge.db` file exists in the `/enterprisereset` directory, DataWedge will activate it as the new working config file.
 
 ### Auto Import
-DataWedge supports remote deployment of a configuration to the mobile computer, using tools such as MSP. DataWedge monitors the /enterprise/device/settings/datawedge/autoimport folder for the DataWedge configuration file datawedge.db file or profile configuration files dwprofile_profilename.db. When DataWedge launches it checks the folder. If a datawedge.db or profile configuration files are found, it imports the files to replace any existing configuration. Once files are imported they are deleted from the folder.
+DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files, and if found, performes the following in this order:
 
-While DataWedge is running it receives a notification from the system that a datawedge.db or DataWedge profile configuration (dwprofile_profilename.db) file is placed into the /enterprise/device/settings/datawedge/autoimport folder. When this occurs, DataWedge imports this new configuration, replacing the existing one and delete the datawedge.db or the DataWedge profile configuration file (dwprofile_profilename.db). DataWedge begins using the imported configuration immediately.
+1. Import the new file(s) 
+2. Replace the existing Configuration File and like-named Profile(s) (if any) 
+3. Delete the imported files
+4. Put new settings immediately into effect
 
-**Notes**
-* Zebra strongly recommends that the user exits DataWedge before remotely deploying any configuration. Devices which does not show contents under enterprise folder user may have to programatically write files to enterprisereset folder and to autoimport folder.
+While DataWedge is running, it receives a system notification whenever a config file or Profile is placed in the `/autoimport` folder and follows the above procedure. 
 
-* DataWedge will try to consume the “.db” files as soon as they are copied to the autoimport folder. It is therefore possible that DataWedge and an application trying to copy the .db file are trying to access the file at the same time. To avoid this condition, Zebra recommends initially storing the file with a different extension such as ".tmp" and changing the extension to .db once writing is complete. 
+**Notes**:
+* **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. Devices that do not show contents under the `/enterprise` folder user may have to programatically write files to `/enterprisereset` folder and to `/autoimport' folder.
 
-* Zebra also recommends applying explicit file permissions to the file so that DataWedge will not be impeded from consuming the file.
+* DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport' folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 
-    //NOTE: Below code is for demo purpose only, has no error checks
-    InputStream fis = null;
-    FileOutputStream fos = null;
-    String autoImportDir = "/enterprise/device/settings/datawedge/autoimport/"
-    String temporaryFileName = "datawedge.tmp";
-    String finalFileName = "datawedge.db";
-    // Open your db as the input stream
-    fis = context.getAssets().open("datawedge.db");
-    // create a File object for the parent directory
-    File outputDirectory = new File(autoImportDir);
-    // create a temporary File object for the output file
-    File outputFile = new File(outputDirectory,temporaryFileName);
-    File finalFile = new File(outputDirectory, finalFileName);
-    // attach the OutputStream to the file object
-    fos = new FileOutputStream(outputFile);
-    // transfer bytes from the input file to the output file
-    byte[] buffer = new byte[1024];
-    int length;
-    int tot = 0;
-    while ((length = fis.read(buffer)) > 0) {
-            fos.write(buffer, 0, length);
-            tot+= length;
-    }
-    Log.d("DEMO",tot+" bytes copied");
-    //flush the buffers
-    fos.flush();
-    //release resources
-    try {
-            fos.close();
-    }catch (Exception e){
-    }finally {
-            fos = null;
-            //set permission to the file to read, write and exec.
-            outputFile.setExecutable(true, false);
-            outputFile.setReadable(true, false);
-            outputFile.setWritable(true, false);
-            //rename the file
-            outputFile.renameTo(finalFile);
-    }
+* **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.
+
+## Sample Code 
+The following sample JavaScript can be modified to suit individual needs. 
+
+
+	    //NOTE: Below code is for demo purpose only, has no error checks
+	    InputStream fis = null;
+	    FileOutputStream fos = null;
+	    String autoImportDir = "/enterprise/device/settings/datawedge/autoimport/"
+	    String temporaryFileName = "datawedge.tmp";
+	    String finalFileName = "datawedge.db";
+	    // Open your db as the input stream
+	    fis = context.getAssets().open("datawedge.db");
+	    // create a File object for the parent directory
+	    File outputDirectory = new File(autoImportDir);
+	    // create a temporary File object for the output file
+	    File outputFile = new File(outputDirectory,temporaryFileName);
+	    File finalFile = new File(outputDirectory, finalFileName);
+	    // attach the OutputStream to the file object
+	    fos = new FileOutputStream(outputFile);
+	    // transfer bytes from the input file to the output file
+	    byte[] buffer = new byte[1024];
+	    int length;
+	    int tot = 0;
+	    while ((length = fis.read(buffer)) > 0) {
+	            fos.write(buffer, 0, length);
+	            tot+= length;
+	    }
+	    Log.d("DEMO",tot+" bytes copied");
+	    //flush the buffers
+	    fos.flush();
+	    //release resources
+	    try {
+	            fos.close();
+	    }catch (Exception e){
+	    }finally {
+	            fos = null;
+	            //set permission to the file to read, write and exec.
+	            outputFile.setExecutable(true, false);
+	            outputFile.setReadable(true, false);
+	            outputFile.setWritable(true, false);
+	            //rename the file
+	            outputFile.renameTo(finalFile);
+	    }
 
 
 ## Programming Notes
 
 ### Overriding the Trigger Key
-It is sometimes necessary to override the trigger key in an application. DataWedge allows this by creating a profile that disables the Barcode input and associating one or more applications with it. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
+It is sometimes necessary to override the scan trigger key in an application. DataWedge can do this by creating a Profile that disables the barcode input and associate the Profile it with one or more applications. Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1` presses.
 
-Capture Data and Taking a Photo in the Same Application
-To be able to capture bar code data and take a photo in the same application:
+### Capture Data and Photos in the Same App
+To capture barcode data and take a photo in the same application:
 
-Add two Activities in your application for barcode scanning and picture taking actions respectively. Create a DataWedge profile associated to the picture taking Activity in your application and disable scanning and use standard Android SDK APIs to control the Camera.
+1. Add two Activities in the application: one for barcode scanning and another for picture taking. 
+2. Create a DataWedge Profile associated with the picture-taking Activity, disable scanning and use standard Android SDK APIs to control the camera.
 
-The default DataWedge profile takes care of the scanning when other activities in your application comes foreground. You might want to create another DataWedge profile that caters to any specific scanning needs, and associate it to the barcode scanning activity of your application.
+The default DataWedge profile takes care of the scanning when other activities in the app come foreground. It might be useful to create another DataWedge Profile that caters to any specific scanning needs and associate it with the barcode scanning activity of the app.
 
-Disable DataWedge on mobile computer and Mass Deploy
-To disable DataWedge and deploy onto multiple mobile computers:
+### Disable DataWedge
+**Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
 
-Touch  Home > DataWedge >  Menu > Settings.
+**To disable DataWedge**:
 
-Unselect the DataWedge enabled check box.
+&#49;. **Start DataWedge** and navigate to the Profiles list (if not shown by default).
 
-Export the DataWedge configuration. See Export Configuration File above for instructions.
+&#50;. Tap on the "hamburger" menu and **select -> Settings**:
+<img style="height:350px" src="datawedge_settings.png"/>
+<br>
 
-See Configuration File Management above for instructions for using the auto import feature.
+&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is now returned to the system. 
+<img style="height:350px" src="datawedge_enable-disable.png"/>
+_The DataWedge Settings panel controls Profile import/export, logging and other general functions_. 
+<br>
 
 
------
+<!--
 
 >>UNDER CONSTRUCTION 
 
@@ -493,6 +518,6 @@ The formatted data "000129X " (with a trailing space) appears in the text field.
 * **Skip ahead (1)**
 * **Send remaining**
 
-
+-->
 
 

@@ -6,17 +6,18 @@ productversion: '3.1'
 ---
 
 ## Overview
-This guide covers advanced DataWedge features such as Profile and Config-file Import/Export, mass deployment of DataWedge settings, and Advanced Data Formatting, which allows acquired data to be manipulated based on its contents. 
+This guide covers advanced DataWedge features such as the importing and exporting of Profiles and Configuration files, mass deployment of those files, and Advanced Data Formatting, which allows acquired data to be manipulated based on its contents. 
 
-For this guide, a basic knowledge of DataWedge Profiles, Plug-ins and other concepts is required. If necessary, please see the [About](../about) and [Setup](../setup) guides for more information. 
+For this guide, a basic knowledge of DataWedge Profiles, Plug-ins and other concepts is required. If necessary, please see the [About](../about) and [Setup](../setup) guides for additional information. 
 
 ## DataWedge Settings
-Most of the functionality referenced here is accessed through the DataWedge Settings panel. 
+Most of the functionality referenced in this guide will be accessed through the DataWedge Settings panel. 
 
 **To access DataWedge Settings**: 
 
-&#49;. From the Profiles screen, **tap the "hamburger" menu and select Settings**. The DataWedge Settings panel appears as in Step 2, below. 
+&#49;. From the Profiles screen, **tap the "hamburger" menu** and **select Settings** as hightlighted below. The DataWedge Settings panel appears similar to the image in Step 2. 
 <img style="height:350px" src="datawedge_settings.png"/>
+_Access the DataWedge Settings panel from the Profiles screen_. 
 <br>
 
 &#50;. **Tap the desired feature** to invoke or change its status. 
@@ -30,11 +31,11 @@ _The DataWedge Settings panel_.
 
 * **Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
 
-* **Import -** Invokes navigation to a DataWedge configuration file to import from device storage, replacing the current configuration.
+* **Import -** Invokes navigation for importing a DataWedge configuration file from device storage. This action replaces the current configuration.
 
 * **Export -** Exports the current DataWedge configuration to device storage. 
 
-* **Import Profile -** Invokes navigation to a DataWedge Profile to import from device storage. If a Profile of the same name already exists in DataWedge, it will be replaced by the imported one. 
+* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it     will be replaced by the imported one. 
 
 * **Export Profile -** Exports an individual DataWedge profile to device storage.
 
@@ -141,7 +142,7 @@ DataWedge has the ability to reset all user-configured settings and restore them
 <br>
 
 ## Advanced Data Formatting
-Through Advanced Data Formatting, DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on the data content. To determine how and whether the data should be altered, the ADF Plug-in applies rules that perform actions on data based on specific criteria relating to the data itself. For example, a rule might be created to check the first four digits of any 16-digit number to determine if it's a credit card affiliated with a specific bank.
+DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on the data content. The Advanced Data Formatting (ADF) Process Plug-in can be configured to determine whether and how the data should be altered according to rules that perform actions based on specific criteria relating to the data itself. For example, a rule might be created to check the first four digits of any 16-digit number to determine if it's from a credit card affiliated with a specific bank. 
 
 >>> EDIT THESE: 
 
@@ -152,88 +153,75 @@ Through Advanced Data Formatting, DataWedge permits data acquired from barcode s
 **Actions -** A set of procedures defined to format data. There are four types of actions which are for formatting cursor movement, data modification, data sending and delay specifications. An action can be defined to send the first number of characters to the Output plug-in, pad the output data with spaces or zeros, remove spaces in data, etc.
 
 ### Configuring the ADF Plug-in
-Configuring the ADF plug-in consists of creating a rule, defining the criteria for the rule and defining the actions for the rule. All three steps are done within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see the Plug-ins section of the [DataWedge Setup Guide](../setup).
+Setting up Advanced Data Formatting is done in three basic steps: 
 
-**To Create an ADF rule**: 
+1. Create a Rule
+2. Define Criteria to activate the Rule
+3. Define the Action(s) to be executed by the Rule
+
+These steps are all carried out within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see the Plug-ins section of the [DataWedge Setup Guide](../setup). 
+
+**To Create an ADF Rule**: 
 
 &#49;. In the Profile that requires ADF, **tap on Advanced data formatting** as highlighted below. A screen appears similar to the image in Step 2.
 <img style="height:350px" src="adf_intent_output.png"/>
 <br>
 
-&#50;. **Tap the "hamburger" menu, select New rule** and enter a name for the rule. 
+&#50;. **Tap the "hamburger" menu, select New rule** and enter a name for the rule. The new Rule appears with other Rules in the Output Plug-in screen similar to the image in Step 3, below.   
 <img style="height:350px" src="Figure_14_Adv_DataFormattingScreen.png"/>
 <br>
 
-Touch  Home > DataWedge.
-
-Touch a DataWedge profile.
-
-In Keystroke output, touch Advanced data formatting.
-
-Advanced Data Formatting Screen
-Figure 14. Advanced Data Formatting Screen
-Touch the Enable checkbox to enable ADF.
-
-
-
-
-Figure_15_RuleScreen
-&#50;. **Tap Yes to Restore factory defaults** or No to cancel. 
-<img style="height:350px" src="Figure_15_RuleScreen.png"/>
+&#51;. **Tap the new Rule** to access its settings. A screen appears similar to the image in Step 4.  
+<img style="height:350px" src="adf_15_rules_list.png"/>
 <br>
 
-
-Figure_16_CriteriaScreen
-&#51;. **Tap Yes to Restore factory defaults** or No to cancel. 
-<img style="height:350px" src="Figure_16_CriteriaScreen.png"/>
+&#52;. **Tap Criteria** as highlighted below to enter the criteria that will activate the Rule.  
+<img style="height:350px" src="adf_16_add_criteria.png"/>
 <br>
 
-
-Figure_17_BarcodeInputScreen
-&#52;. **Tap Yes to Restore factory defaults** or No to cancel. 
-<img style="height:350px" src="Figure_17_BarcodeInputScreen.png"/>
+&#53;. From the Criteria screen, **enter the criteria that will activate the Rule** based on the options below.  
+<img style="height:350px" src="adf_23_source_criteria.png"/>
 <br>
 
+**Action Criteria**:
 
-Figure_18_ADF_SampleScreen
-&#53;. **Tap Yes to Restore factory defaults** or No to cancel. 
-<img style="height:350px" src="Figure_18_ADF_SampleScreen.png"/>
+* **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data.
+
+* **String position -** An optional parameter that allows a character offset (+ or -) to be entered before or after which the "String to check for" must be present. For example, the target String "text" with a String position offset of +2 would invoke action(s) only if a string such as "00text" was acquired. 
+
+* **String length -**  An optional parameter that allows a specific length (in characters) to be entered before action(s) will be invoked. For example, if scanning Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
+
+* **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which specific decoders can be further selected or excluded), or through SimulScan. 
+
+&#54;. **Tap the BACK button** to save and return to the Rule screen.
+<img style="height:350px" src="adf_17_criteria_list.png"/>
 <br>
 
+&#55;. From the Rule screen, **tap the "hamburger" menu and select New action** as highlighted below. A  scrollable list of Actions appears similar to the image in Step 8.
+<img style="height:350px" src="adf_18_new_action.png"/>
+<br>
 
-Creating a Rule
+&#56;. **Select an Action from the Actions list**, scrolling if necessary. **Tap BACK** to save and return to the Rule screen.  
+<img style="height:350px" src="adf_19_actions1.png"/>
+<!-- 
+<img style="height:350px" src="adf_20_actions2.png"/>
+<img style="height:350px" src="adf_21_actions3.png"/> 
+-->
+<br>
 
-By default, Rule0, is the only rule in the Rules list. To add a new rule:
+&#56;. **Repeat Step 8 until all required Actions are created**. 
+<img style="height:350px" src="adf_22_actions_list.png"/>
+<br>
 
-Touch  Menu > New rule.
+**Action Notes**: 
 
-Touch the Enter rule name text box. In the text box, enter a name for the new rule and then touch Done.
+* Unless repositioned, Actions will execute in the order created. 
+* To reposition an Action, drag the Action by its handle (to the right of its name). To delete, long-press the Action name. 
 
-Touch OK.
 
-To define the rule:
+Once a Rule is enabled (with a checkmark in its Rule screen), a Rule will apply whenever its parent Profile is used. All data acquired through the Profile will be processed according to the Actions defined in this Rule before being tranferred to the selected Output Plug-in. 
 
-Touch the newly created rule in the Rules List.
 
-Rule Screen
-Figure 15. Rule Screen
-Touch the Rule enabled checkbox to enable the current rule.
-
-Defining Criteria
-
-To define a criteria:
-
-Touch Criteria. The Criteria screen appears.
-
-Criteria Screen
-Figure 16. Criteria Screen
-Touch String to check for option to specify the string that must be present in the data.
-
-In the Enter the string to check for dialog box, enter the string and then touch Done.
-
-Touch OK.
-
-Touch String position option to specify the position of the string specified in the String to check for option. The ADF rule is only applied if the specific string in String to check for is found at the specified String position location.
 
 Touch the + or - to change the value.
 

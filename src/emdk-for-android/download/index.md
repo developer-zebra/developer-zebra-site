@@ -6,7 +6,7 @@ product: EMDK For Android
 
 ## Latest Release
 <ul>
-<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100998&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Demdk%20for%20android%204.1'>EMDK 4.1 </a></li>
+<li><a href='https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=emdk%20for%20android%204.2'>EMDK 4.2</a></li>
 </ul>
 
 ## Previous Releases

@@ -21,8 +21,6 @@ menu:
       url: /datawedge/5-0/guide/demo
     - icon: fa fa-search
       url: /datawedge/5-0/search
-    - icon: fa fa-download
-      url: /datawedge/5-0/download
 product: DataWedge
 productversion: '5.0'
 ---

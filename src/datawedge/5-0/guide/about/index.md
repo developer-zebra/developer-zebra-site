@@ -7,139 +7,64 @@ productversion: '5.0'
 
 ## Introduction
 
-DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool, included with every Zebra device, enables all apps on the device (whether stock or added later) to acquire barcode data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched, and to manipulate the acquired data according to simple options or complex rules. 
-
-**Important**: Since DataWedge is included with the device's OS image, it cannot be downloaded separately or updated like most apps. Changing the DataWedge version on a device requires a completely new OS, which can sometimes result in loss of data, apps or both.  
-
-
-_**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
-
-
-
-### Which Version is Installed? 
-To determine which verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
-<img style="height:350px" src="datawedge_launcher.png"/>
-
-<br>
-
-
-
-**Refer to the [Zebra Support Portal](../../download) for version information**. 
+DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
 ###Main Functionality
-DataWedge provides the following primary functions and options: 
+The version of DataWedge documented in this guide provides the following primary functions and options: 
 
-* Scan and process numerous barcode symbologies (see table below)
+* Scan and process all [major barcode symbologies](../decoders)
 * Acquire barcodes, images, text, phone numbers, mag-stripe and other data
-* Set DataWedge as the default scanner for one or more apps
+* Set DataWedge to acquire scanned data for one or more apps
 * Create Profiles to implement specific DataWedge features for individual apps 
 * Enable/Disable decoding of individual symbologies to improve speed
+* Set parameters for individual barcodes, scanners and readers
 * Format output according to simple or custom rules
-* Uses plug-ins for data input, output and processing
+* Use plug-ins for data input, output and processing
 * Import and export settings 
 * Remotely configure and mass-deploy via MDM  
 * Restore settings to factory defaults
-* Import and apply new settings at each launch 
+* Apply remote settings changes immediately 
+
+Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
+
+_**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
 
 > Ready to get started? Go to the [DataWedge Setup Guide](../setup).
 
+### Which Version is Installed? 
 
-> Want to learn more? Check out the [DataWedge Demo app](../demo). 
+**To determine which DataWedge version is installed on a device**:
 
-###Decoders
-DataWedge decodes all major barcode symbologies. Most are shown on the table below; popular formats are enabled by default (*). To help improve scanning performance, individual symbologies can be enabled and disabled based on the needs of a specific app or usage profile. See "Profiles" below. 
+&#49;. On the device, locate and **tap the DataWedge icon** in the Launcher screen or App Drawer: 
+<img style="height:350px" src="01_datawedge_launcher.png"/>
+<br>
 
-<div class="tableblock">
-<table rules="none"
-width="100%"
-frame="void"
-cellspacing="0" cellpadding="4">
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<tbody>
-<tr>
-<td align="left" valign="top"><p class="table">UPC-E0<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">UPC-E1</p></td>
-<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">MSI</p></td>
-<td align="left" valign="top"><p class="table">EAN-8<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Codabar<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Code 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Discrete 2 of 5</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Interleaved 2 of 5</p></td>
-<td align="left" valign="top"><p class="table">Code 11</p></td>
-<td align="left" valign="top"><p class="table">Code 93</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Code 128<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Trioptic 39</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">MicroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MacromicroPDF<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Composite AB<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Webcode</p></td>
-<td align="left" valign="top"><p class="table">Composite C<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">USPostnet</p></td>
-<td align="left" valign="top"><p class="table">USPlanet</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">UK Postal</p></td>
-<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
-<td align="left" valign="top"><p class="table">Australian Postal</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Canadian Postal</p></td>
-<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
-<td align="left" valign="top"><p class="table">Chinese 2 of 5</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">Korean 3 of 5</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">US4state</p></td>
-<td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table">Matrix 2 of 5</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-    
+&#50;. **Tap the "hamburger" menu**. The DataWedge menu appears: 
+<img style="height:350px" src="02_datawedge_settings_menu.png"/>
+<br>
 
-###Profiles
-DataWedge Profiles permit custom groups of settings to be created to match the needs of specific apps, users or scanning scenarios. Profiles can be created for different applications that require the same data processed in different ways. A Profile can be set to output scanned data in the format required for a particular app whenever that app comes to the foreground. Profiles also can enable just the barcode symbologies needed by the app to help improve performance and reduce input errors and delays. 
+&#51;. **Tap About**. The "About DataWedge" screen appears. The version number is highlighted in the image below:  
+<img style="height:350px" src="03_datawedge_about_screen.png"/>
+_The 'About DataWedge' box showing version 3.1.10_. 
+<br>
 
-**Refer to the [Setup section](../setup)** for more information. 
+&#52;. If the DataWedge version on the device is different than that of this guide, consider these options: 
 
-### Which Version Do I Have?
+* **Download the device-specific Integrator Guide** as an additional reference.
+* **Upgrade the device OS** to one with a newer version of DataWedge (Windows only). 
 
+#### Download an Integrator Guide
+For each Zebra device, the company publishes an Integrator Guide containing information specific to that device. For products that include DataWedge, **the Integrator Guide includes a chapter covering only those DataWedge capabilities available on the device**. A search for the term "integrator" at the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=integrator) yields a result similar to the image below. Narrow the seach by adding the device model. 
+<img style="height:450px" src="support_central_guides.png"/>
+_The Zebra Support Central site showing search results for "integrator_." 
+<br>
+
+#### Update DataWedge (Windows only)
+**DataWedge is part of the device OS image** and relies on specific components built into that image. It cannot be downloaded separately or updated without also updating the entire device. This can sometimes result in loss of user data, user-installed applications or both. It should therefore be considered only after all other options have been eliminated. Only Windows versions can be updated at this time. 
+
+**For a list of available DataWedge versions available as OS image updates for Windows devices, visit the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=)** or consult a Zebra partner. DataWedge updates for Android are not currently offered.
+
+> Need to learn more about DataWedge? Check out the [DataWedge Setup Guide](../setup) or the [DataWedge Demo app](../demo). 
 
 
 

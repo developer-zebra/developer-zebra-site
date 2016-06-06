@@ -2,7 +2,7 @@
 title: Advanced Settings
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## Overview

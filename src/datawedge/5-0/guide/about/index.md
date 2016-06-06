@@ -2,16 +2,26 @@
 title: About DataWedge
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## Introduction
 
-DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool, included with every device, enables all apps on the device (whether stock or added later) to acquire barcode data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched, and to manipulate the acquired data according to simple options or complex rules. 
+DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool, included with every Zebra device, enables all apps on the device (whether stock or added later) to acquire barcode data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched, and to manipulate the acquired data according to simple options or complex rules. 
 
-Since DataWedge is included with the device's OS image, it cannot be downloaded separately or updated like other apps. Installing a new version requires a completely new OS, which sometimes can result in loss of data, apps or both. 
+**Important**: Since DataWedge is included with the device's OS image, it cannot be downloaded separately or updated like most apps. Changing the DataWedge version on a device requires a completely new OS, which can sometimes result in loss of data, apps or both.  
+
 
 _**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
+
+
+
+### Which Version is Installed? 
+To determine which verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
+<img style="height:350px" src="datawedge_launcher.png"/>
+
+<br>
+
 
 
 **Refer to the [Zebra Support Portal](../../download) for version information**. 
@@ -33,11 +43,6 @@ DataWedge provides the following primary functions and options:
 
 > Ready to get started? Go to the [DataWedge Setup Guide](../setup).
 
-###Is DataWedge Installed?
-To verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
-<img style="height:350px" src="datawedge_launcher.png"/>
-
-<br>
 
 > Want to learn more? Check out the [DataWedge Demo app](../demo). 
 

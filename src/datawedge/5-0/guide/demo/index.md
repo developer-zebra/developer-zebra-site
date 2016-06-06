@@ -2,7 +2,7 @@
 title: DWDemo DataWedge Demo App
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## DW Demo

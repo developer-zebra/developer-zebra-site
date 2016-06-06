@@ -239,7 +239,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Report Check Digit -** Transmit Code 39 data with or without the check digit. A check in the checkbox will send Code 39 data with a check digit.
 
-**Full Ascii -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. Check this checkbox to enable Code 39 Full ASCII.
+**Full ASCII -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. Check this checkbox to enable Code 39 Full ASCII.
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -281,7 +281,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **OPCC Check Digit -** Select to check the integrity of all Interleaved 2of5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
 
-**Report Check Digit -** Transmit Interleaved 2of5 data with or without the check digit. A check in the checkbox sends I2of5 data with check digit.
+**Report Check Digit -** Transmit Interleaved 2of5 data with or without the check digit. A check in the checkbox sends Interleaved 2of5 data with check digit.
 
 **Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2of5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2of5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
 

@@ -15,7 +15,7 @@ Most of the functionality referenced in this guide will be accessed through the 
 
 **To access DataWedge Settings**: 
 
-&#49;. From the Profiles screen, **tap the "hamburger" menu** and **select Settings** as hightlighted below. The DataWedge Settings panel appears similar to the image in Step 2. 
+&#49;. From the Profiles screen, **tap the "hamburger" menu** and **select Settings** as highlighted below. The DataWedge Settings panel appears similar to the image in Step 2. 
 <img style="height:350px" src="datawedge_settings.png"/>
 _Access the DataWedge Settings panel from the Profiles screen_. 
 <br>
@@ -46,7 +46,7 @@ DataWedge provides the option of outputting system log messages for viewing thro
 
 **To Enable/Disable logging**: 
 
-From the DataWedge Settings panel, **tap Enable Logging** to enable or disdable logging as desired. 
+From the DataWedge Settings panel, **tap Enable Logging** to enable or disable logging as desired. 
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
 
@@ -106,7 +106,7 @@ While the Profile importing _process_ is similar to that of the Configuration fi
 <br>
 
 ### Export a Profile
-Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propogate those settings to others in the organization.  
+Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propagate those settings to others in the organization.  
 
 If more than one Profile is to be created, exported and distributed at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file. 
 
@@ -150,14 +150,15 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 
 **Rules -** The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), symbology (i.e. only Code39 data), and a specified string within the data (optionally at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
+**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (optionally at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
 
-**Actions -** A set of procedures for analyzing, identifying and processing acquired data. There are four types of actions: 
+**Actions -** A set of procedures for analyzing, identifying and processing acquired data. 
 
-	* **Cursor movement** (i.e. skip the first 10 characters)
-	* **Data modification** (i.e remove all spaces; pad the left side with four zeros)
-	* **Data sending** (i.e. output the last four digits)
-	* **Delay** (i.e. wait 50 ms before doing something)
+**The four Action types**: 
+* **Cursor movement** (i.e. skip the first 10 characters)
+* **Data modification** (i.e remove all spaces; pad the left side with four zeros)
+* **Data sending** (i.e. output the last four digits)
+* **Delay** (i.e. wait 50 ms before doing something)
 
 ### Creating ADF Rules
 Setting up Advanced Data Formatting is done in three basic steps: 
@@ -322,7 +323,7 @@ cellspacing="0" cellpadding="4">
 </div>
 _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINE FEED or TAB characters._
 
-&#56;. **Repeat Step 8 until all required Actions are created**. 
+&#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes, below**.  
 <img style="height:350px" src="adf_22_actions_list.png"/>
 <br>
 
@@ -330,11 +331,11 @@ _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action
 * Actions are processed from the top of the list downward to the bottom. 
 * To reposition an Action, drag the Action by its handle (to the right of its name). 
 * To delete an Action, long-press the Action name. 
-* A Pause Action of 50 ms after sending ENTER, LINE FEED or TAB can help minimize data loss.
+* A Pause Action of 50 ms after sending ENTER, LINE FEED or TAB Actions can help minimize data loss.
 
 **Rules Notes**: 
-* Once a Rule is enabled (with a checkmark in its Rule screen), a Rule will apply whenever its parent Profile is used. 
-* All data acquired through the Profile will be processed according to the Actions defined in the Rule before being tranferred to the selected Output Plug-in. 
+* Once a Rule is enabled (with a check mark in its Rule screen), a Rule will apply whenever its parent Profile is used. 
+* All data acquired through the Profile will be processed according to the Actions defined in the Rule before being transferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
 ## Sample ADF Rule
@@ -405,7 +406,7 @@ On Zebra devices, internal storage contains a directory named `/enterprise` that
 * If a `datawedge.db` file exists in the `/enterprisereset` directory, DataWedge will activate it as the new working config file.
 
 ### Auto Import
-DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files, and if found, performes the following in this order:
+DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files, and if found, performs the following in this order:
 
 1. Import the new file(s) 
 2. Replace the existing Configuration File and like-named Profile(s) (if any) 
@@ -415,7 +416,7 @@ DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and
 While DataWedge is running, it receives a system notification whenever a config file or Profile is placed in the `/autoimport` folder and follows the above procedure. 
 
 **Notes**:
-* **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. Devices that do not show contents under the `/enterprise` folder user may have to programatically write files to `/enterprisereset` folder and to `/autoimport' folder.
+* **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. Devices that do not show contents under the `/enterprise` folder user may have to programmatically write files to `/enterprisereset` folder and to `/autoimport' folder.
 
 * DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport' folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 

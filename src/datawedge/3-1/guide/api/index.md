@@ -87,7 +87,7 @@ The received API commands are not queued; API commands are processed immediately
 ------
 
 ### ScannerInputPlugin
-The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in in the currently active profile. Disabling the scanner plug-in effectively disables scanning in that profile (associated or un-associated).
+The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in in the currently active profile. Disabling the scanner plug-in effectively disables scanning in that profile (associated or unassociated).
 
 ####FUNCTION PROTOTYPE
 
@@ -382,7 +382,7 @@ For example, let’s say that ProfileA is one such unassociated profile and Prof
 
 ####Notes
 * Because DataWedge will automatically switch profile when your activity is paused, it is recommended that this API function be called from the onResume method of your activity.
-* After switching to a profile, this un-associated profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
+* After switching to a profile, this unassociated profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
 * DataWedge automatic profile switching
 For backward compatibility, DataWedge’s automatic profile switching is not affected by the above API commands, and this also why the above API commands only work with unassociated profiles and apps.
 

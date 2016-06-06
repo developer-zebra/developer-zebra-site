@@ -7,9 +7,14 @@ productversion: '3.1'
 
 ## Introduction
 
-DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool enables device apps to acquire barcode data without the modifications necessary to use scanner APIs. DataWedge is included with all Zebra devices and can be easily configured to automatically provide scanning services whenever a particular app is launched, and manipulate the acquired data according to simple options or complex rules. 
+DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. This useful tool, included with every device, enables all apps on the device (whether stock or added later) to acquire barcode data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched, and to manipulate the acquired data according to simple options or complex rules. 
 
-**Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Scanner and Barcode APIs of Enterprise Browser and other apps will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and release it when scanning operations are complete. 
+Since DataWedge is included with the device's OS image, it cannot be downloaded separately or updated like other apps. Installing a new version requires a completely new OS, which sometimes can result in loss of data, apps or both. 
+
+_**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
+
+
+**Refer to the [Zebra Support Portal](../../download) for version information**. 
 
 ###Main Functionality
 DataWedge provides the following primary functions and options: 
@@ -31,7 +36,7 @@ DataWedge provides the following primary functions and options:
 ###Is DataWedge Installed?
 To verify that DataWedge is installed on a device, look for its icon in the Launcher screen or App Drawer of the device: 
 <img style="height:350px" src="datawedge_launcher.png"/>
-**Refer to the [DataWedge download page](../../download) for version information**. 
+
 <br>
 
 > Want to learn more? Check out the [DataWedge Demo app](../demo). 
@@ -128,208 +133,9 @@ DataWedge Profiles permit custom groups of settings to be created to match the n
 
 **Refer to the [Setup section](../setup)** for more information. 
 
-<!-- To programmatically verify that DataWedge is present,
+### Which Version Do I Have?
 
 
-[Download Enterprise Home Screen](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
--->
-
-<!-- ## Supported Devices
-This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
-
-<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
-<tbody>
-
-<tr>
-<td style="width: 200pt;" width="250">
-<p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
-</td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Android name</font></b></p>
-</td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Android version</font></b></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal"><font color="#333399" size="3">ET1 </font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">Jelly Bean</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p></td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.2</font></p>
-</td>
-</tr>
-
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.3</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
-</td>
-</tr>
-
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-## What's New
-
-New features in Enterprise Home Screen 2.3:
-
-* [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
-* TC8000 KitKat version 4.4 support (added January, 2016)
-
--->
 
 
 

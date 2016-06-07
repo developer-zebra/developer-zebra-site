@@ -476,7 +476,9 @@ The following sample JavaScript can be modified to suit individual needs.
 ## Programming Notes
 
 ### Overriding the Trigger Key
-It is sometimes necessary to override the scan trigger key in an application. DataWedge can do this by creating a Profile that disables the barcode input and associate the Profile it with one or more applications. Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1` presses.
+If it becomes necessary to override the scan trigger key in one or more applications, this can be accomplished by creating a DataWedge Profile that disables barcode input and associating the Profile with one or more applications. 
+
+Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1` and `KEYCODE_BUTTON_R1` presses.
 
 ### Capture Data and Photos in the Same App
 To capture barcode data and take a photo in the same application:
@@ -524,6 +526,35 @@ The formatted data "000129X " (with a trailing space) appears in the text field.
 * **Actions**: Send upto (\x1D)
 * **Skip ahead (1)**
 * **Send remaining**
+
+-------- 
+
+COPIED (PARTIALLY EDITED) FROM FROM DEMO PAGE
+
+## Programming Notes
+
+###Overriding the Trigger Key
+To override the trigger key in an application, create a profile for the application that disables the Barcode input. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
+
+Capture Data and Taking a Photo in the Same Application
+To be able to capture bar code data and take a photo in the same application:
+
+Add two Activities in your application for barcode scanning and picture taking actions respectively. Create a DataWedge profile associated to the picture taking Activity in your application and disable scanning and use standard Android SDK APIs to control the Camera.
+
+The default DataWedge profile takes care of the scanning when other activities in your application comes foreground. You might want to create another DataWedge profile that caters to any specific scanning needs, and associate it to the barcode scanning activity of your application.
+
+Disable DataWedge on mobile computer and Mass Deploy
+To disable DataWedge and deploy onto multiple mobile computers:
+
+Touch  Home > DataWedge >  Menu > Settings.
+
+Unselect the DataWedge enabled check box.
+
+Export the DataWedge configuration. See Export Configuration File above for instructions.
+
+See Configuration File Management above for instructions for using the auto import feature.
+
+
 
 -->
 

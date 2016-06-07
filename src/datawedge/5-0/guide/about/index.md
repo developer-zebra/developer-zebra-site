@@ -64,8 +64,10 @@ _The Zebra Support Central site showing search results for "integrator_."
 ------
 
 #### Update DataWedge (Windows only)
-**DataWedge is part of the device OS image** and relies on specific components built into that image. It cannot be downloaded separately or updated without also updating the entire device, a process that **can result in loss of user data and/or user-installed applications**. It should therefore be considered only after all other options have been eliminated. **This option is not available for Android devices**. 
+**DataWedge is part of the device OS image** and relies on specific components built into that image. It cannot be downloaded separately or updated without also updating the entire device, a process that **can result in loss of user data and/or user-installed applications**. It should therefore be considered only after all other options have been eliminated. **Zebra recommends consulting with a Zebra partner before upgrading a device OS image**. 
 
-**The Zebra Support Portal contains DataWedge updates available as OS images for Windows devices**. A search for the term "DataWedge" at the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge)** yields a result similar to the image below. **Zebra recommends consulting with a Zebra partner before upgrading a device OS image**. 
+**This option is not available for Android devices**. 
 
-> Want to learn more about DataWedge? See the [DataWedge Setup Guide](../setup) or the [DataWedge Demo app](../demo). 
+------
+
+> Want to learn more about DataWedge? See the [DataWedge Setup Guide](../setup) and the [DataWedge Demo app](../demo). 

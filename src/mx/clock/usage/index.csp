@@ -1,21 +1,19 @@
 ---
 csp: clock
-title: LTC Calculation Examples 
+title: UTC-LTC Conversion Examples 
 type: text
 order: 80
 ---
 
 **Date and Time values given to the Clock must be represented as UTC**. This ensures an accurate result when calculating the local date and time for the device based on offsets for Time Zone and Daylight Saving Time, if any. If local time is used as a starting point, the order in which the Date, Time, and Time Zone are set could effect the resulting values. The examples below explain how to make these calculations correctly. 
 
-UTC is the equivilent of LTC at the Prime Meridian in Greenwich, England, where no offsets apply. For most other places, LTC is calculated starting with the UTC and adding or subtracting time based on the Time Zone in which the device being used, plus or minus the Daylight Saving Time offset, if any.
+In essence, LTC is calculated by taking the UTC plus or minus the Time Zone corresponding to the location of the device being used, plus or minus any Daylight Saving Time offset that is required for that Time Zone and time of year. Threfore, UTC is the equivilent of LTC at the Prime Meridian in Greenwich, England, where no offsets apply. 
 
 For more information, refer to these reference sites: 
 * [Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 * [Daylight Saving Time Calculator](http://www.timeanddate.com/time/change/usa/new-york?year=2017)
 
 ###Example #1
-This example inverts the UTC offset. Since UTC time is _later_ than Eastern time, hours are added to the desired Eastern time to calculate its UTC equivilent. When this figure is put into the device, the Clock will reacalculate the value to arrive at the desired local time for display and program use.  
-
 &#49;. Note the desired local time for the device:
 
 * Device Location = New York, New York, USA
@@ -25,13 +23,13 @@ This example inverts the UTC offset. Since UTC time is _later_ than Eastern time
 &#50;. Make the following observations about device location:
 
 * The device is located in the Eastern USA Time Zone
-* The GMT offset for that Time Zone is -5 hours (5 hours earlier than UTC)
+* The GMT offset for that Time Zone is -5 hours (5 hours behind GMT)
 * The Time Zone does not observe Daylight Saving Time on that Date
 
-&#51;. Calculate the UTC value from the desired LTC:
+&#51;. Convert the UTC values to LTC:
 
-* Apply the UTC offset (-05:00) for the selected Time Zone:
-	* 14:15:00 + 05:00 = 19:15:00 (adding time because UTC is later than Eastern USA time) 
+* Apply the GMT offset (-05:00) for the selected Time Zone:
+	* 19:15:00 - 05:00 = 14:15:00
 * Consider Daylight Saving Time offset (not in effect on that date):
 	* Daylight Saving Time began March 14, 2010
 	* Daylight Saving Time ended November 7, 2010
@@ -46,7 +44,6 @@ This example inverts the UTC offset. Since UTC time is _later_ than Eastern time
 When converted by the Clock, these UTC values would appear as the correct LTC values on the device.   
 
 ###Example #2
-This example also inverts the UTC offset. Since UTC time is _earlier_ than India time, hours are subtracted from the desired Bangalore time to calculate its UTC equivilent, which results in a (backward) cross of the Prime Meridian (dateline). When this figure is put into the device, the Clock will reacalculate the value to arrive at the desired local time and day for display and program use. 
 
 &#49;. Note the desired local time for the device:
 
@@ -60,13 +57,14 @@ This example also inverts the UTC offset. Since UTC time is _earlier_ than India
 * The GMT offset for that Time Zone is +05:30 (+5 1/2 hours ahead of GMT)
 * That Time Zone does not observe Daylight Saving Time
 
-&#51;. Calculate the UTC value from the desired LTC:
+&#51;. Convert the UTC values to LTC:
 
 * Apply the GMT offset (+05:30) for the selected Time Zone
-	* 02:55:00 - 05:30 = 21:25:00 (rolls backward over 00:00; subtract 1 day)
+	* 21:25:00 + 05:30 = 26:55:00 = 02:55:00 + 1 day
 * Applying no Daylight Saving Time offset
 	* India does not observe Daylight Saving Time
-* Applying a 1-day negative Date offset since the Time offset caused a "roll under"
+* Applying a +1 day Date offset, since the Time offset caused a "roll over"
+	* 26:55:00 = 02:55:00 +1 day
 
 &#52;. The values specified to the Clock would therefore be:
 
@@ -74,6 +72,6 @@ This example also inverts the UTC offset. Since UTC time is _earlier_ than India
 * Date = "2010-07-10"
 * Time = "21:25:00"
 
-Note the Date of July 10, 2010, one day _before_ the desired local time. That is because at 2:55 a.m. on Sun., July 11, 2010, in India, in Greenwich, England (where UTC originates) it's 5 1/2 hours earlier, and the date is still July 10. 
+Note the Date of July 10, 2010, one day _before_ the desired local time. That is because when when it's at 2:55 a.m. on Sun., July 11, 2010, in India, it's 5 1/2 hours earlier and still July 10 in Greenwich, England, where UTC originates. 
 
 When converted by the Clock, these UTC values would appear as the correct LTC values on a device in Bangalore.

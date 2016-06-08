@@ -9,7 +9,7 @@ Clock allows an administrator to manually set the Date, Time and Time Zone on a 
 
 Zebra Android devices track the current Date and Time using the Coordinated Universal Time (UTC) standard. Using that information, the Clock can accurately calculate the current Date and Time, expressed as the Local Time Coordinate (LTC) according to a device's configured location. LTC is calculated by taking the UTC plus or minus the Time Zone corresponding to the location of the device being used, plus or minus any Daylight Saving Time offset that is required for that Time Zone and time of year. In essence, UTC is the equivilent of LTC at the Prime Meridian in Greenwich, England, where no offsets apply.  
 
-**Date and Time values given to the Clock must be represented as UTC**. This ensures an accurate result when calculating the Date and Time based on Time Zone and Daylight Saving Time offsets. If LTC were used as a starting point, the order in which the Date, Time, and Time Zone were set could effect the resulting values. For example, combinations such as the times "skipped" during adjustment for Daylight Saving Time would become invalid if starting out with LTC values. See UTC-LTC Comversion Examples elsewhere in this guide.  
+**Date and Time values used by the Clock must be initially represented as UTC**. This ensures an accurate result when calculating the Date and Time based on Time Zone and Daylight Saving Time offsets. If LTC were used as a starting point, the order in which the Date, Time, and Time Zone were set could effect the resulting values. For example, combinations such as the times "skipped" during adjustment for Daylight Saving Time would become invalid if starting out with LTC values.
 
 ### Main Functionality
 

@@ -1,28 +1,26 @@
 ---
 csp: clock
-title: Auto Time Zone 
+title: AutoTime
 type: parm
-order: 3
-mx: "6.0"
+order: 2
+mx: "4.2"
 osx: "1.3"
 parm:
   pivotal: Yes
-  name: AutoTimeZone
+  name: AutoTime
   type: list
   list:
     - code: false
       name: False
-      mx: "6.0"
+      mx: "4.2"
       osx: "1.3"
-      description: This value (or the absence of this parm from the XML) disables Auto Time Zone, preventing the device from automatically calculating and setting its Time Zone.
+      description: This value (or the absence of this parm from the XML) will turn AutoTime Off, preventing contact with an NTP Server and setting of the Date and Time based on the results of that contact.
     - code: true
       name: True
-      mx: "6.0"
+      mx: "4.2"
       osx: "1.3"
-      description: Enables Auto Time Zone, allowing the device to automatically calculate and set its Time Zone.
+      description: This value will turn AutoTime On, enabling automatic contact of an NTP Server and automatic setting of the Date and Time on the device.
 ---
-
-FIXXXXX
 
 Controls whether the Date and Time on the device will be set manually or automatically through contact with an NTP server based on the Coordinated Universal Time (UTC). When AutoTime is turned Off, the Date, Time and Time Zone can be set explicitly and will continue to count forward until changed again.
 

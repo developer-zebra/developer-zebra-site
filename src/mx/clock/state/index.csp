@@ -2,7 +2,7 @@
 csp: clock
 title: 24-Hour "Military Time" Enable/Disable
 type: parm
-order: 14
+order: 10
 mx: "6.0"
 parm:
   pivotal: No

@@ -1,12 +1,12 @@
 ---
 csp: clock
-title: Time Zone 
+title: TimeZone 
 type: parm
-order: 8
+order: 5
 mx: "4.1"
 apilevel: "1"
 parm:
-  presentif: AutoTimeZone is "false"
+  presentif: AutoTime is "false"
   pivotal: No
   name: TimeZone
   type: string

@@ -2,7 +2,7 @@
 csp: clock
 title: Set Time Zone 
 type: parm
-order: 3
+order: 4
 mx: "4.1"
 apilevel: "1"
 parm:

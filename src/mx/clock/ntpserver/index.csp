@@ -1,12 +1,12 @@
 ---
 csp: clock
-title: NTP Server Address
+title: NTP Server
 type: parm
 order: 4
 mx: "4.2"
 apilevel: "19"
 parm:
-  presentif: Auto Time is "true"
+  presentif: AutoTime is "true"
   pivotal: No
   name: NTPServer
   type: string

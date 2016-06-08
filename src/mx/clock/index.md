@@ -1,6 +1,6 @@
 ---
-title: Clock
-description: Clock can set the Date, Time and Time Zone manually and configure the device to acquire those settings via NTP.
+title: Clock Manager
+description: 'The Clock Manager allows the setting of Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.'
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

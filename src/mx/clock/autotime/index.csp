@@ -1,6 +1,6 @@
 ---
 csp: clock
-title: Auto Time Enable/Disable
+title: AutoTime
 type: parm
 order: 2
 mx: "4.2"

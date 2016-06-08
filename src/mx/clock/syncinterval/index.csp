@@ -1,6 +1,6 @@
 ---
 csp: clock
-title: Set Sync Interval
+title: SyncInterval
 type: parm
 order: 6
 mx: "4.2"

@@ -1,12 +1,9 @@
 ---
 csp: clock
-title: Clock Usage Notes
+title: Usage Notes
 type: text
 order: 80
 ---
-
-FIXXXXX: 
-Turn on/off Auto Time Zone will not reflect the changes if we launch settings through recent app. If the user wants to clear the settings application from recent app after setting this feature, then they can include the XML for clearing the recent app in the same Profile as the one to set the clock.
 
 ###Example #1
 We want to set local time of the device as follows:

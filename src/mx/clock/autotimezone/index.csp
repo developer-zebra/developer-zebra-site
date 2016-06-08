@@ -1,6 +1,6 @@
 ---
 csp: clock
-title: Auto Time Zone Enable/Disable
+title: Auto Time Zone 
 type: parm
 order: 3
 mx: "6.0"

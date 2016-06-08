@@ -435,7 +435,7 @@ The following sample Java code can be modified to suit individual needs.
 	    String temporaryFileName = "datawedge.tmp";
 	    String finalFileName = "datawedge.db";
 
-	    // Open your db as the input stream
+	    // Open the db as the input stream
 	    fis = context.getAssets().open("datawedge.db");
 	    
 	    // create a File object for the parent directory

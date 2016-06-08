@@ -16,7 +16,7 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 
 **DataWedge APIs covered in this guide**: 
 
-* **SoftScanTrigger -** used to start, stop or toggle the soft scan trigger
+* **SoftScanTrigger -** used to start, stop or toggle a software scanning button
 * **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
 * **enumerateScanners -** returns a list of scanners available on the device
 * **setDefaultProfile -** sets the specified Profile as the default Profile

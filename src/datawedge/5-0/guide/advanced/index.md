@@ -475,18 +475,16 @@ The following sample JavaScript can be modified to suit individual needs.
 
 ## Programming Notes
 
-### Overriding the Trigger Key
-If it becomes necessary to override the scan trigger key in one or more applications, this can be accomplished by creating a DataWedge Profile that disables barcode input and associating the Profile with one or more applications. 
-
-Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1` and `KEYCODE_BUTTON_R1` presses.
-
-### Capture Data and Photos in the Same App
-To capture barcode data and take a photo in the same application:
+### Data and Photos in One App
+It is possible to capture barcode data and take photos using the same application. 
 
 1. Add two Activities in the application: one for barcode scanning and another for picture taking. 
-2. Create a DataWedge Profile associated with the picture-taking Activity, disable scanning and use standard Android SDK APIs to control the camera.
-
-The default DataWedge profile takes care of the scanning when other activities in the app come foreground. It might be useful to create another DataWedge Profile that caters to any specific scanning needs and associate it with the barcode scanning activity of the app.
+2. Create a DataWedge Profile with the following settings: 
+	* Associate the Profile with the picture-taking Activity
+	* Disable scanning in the Profile
+3. Use the standard Android-SDK APIs to control the camera
+4. When scanning, the default DataWedge profile will come into effect. 
+5. It might sometimes be necessary to create second DataWedge Profile and associate it with the barcode scanning activity of the app. This will handle any specific scanning needs.
 
 ### Disable DataWedge
 **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
@@ -499,9 +497,8 @@ The default DataWedge profile takes care of the scanning when other activities i
 <img style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is now returned to the system. 
+&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is returned to the system. 
 <img style="height:350px" src="datawedge_enable-disable.png"/>
-_The DataWedge Settings panel controls Profile import/export, logging and other general functions_. 
 <br>
 
 
@@ -533,8 +530,14 @@ COPIED (PARTIALLY EDITED) FROM FROM DEMO PAGE
 
 ## Programming Notes
 
+### Overriding the Trigger Key
+
+MY RE_WRITE: If it becomes necessary to override the scan trigger key in one or more applications, this can be accomplished by creating a DataWedge Profile that disables barcode input and associating the Profile with one or more applications. 
+
+Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1` and `KEYCODE_BUTTON_R1` presses.
+
 ###Overriding the Trigger Key
-To override the trigger key in an application, create a profile for the application that disables the Barcode input. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
+ORIGINAL: To override the trigger key in an application, create a profile for the application that disables the Barcode input. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
 
 Capture Data and Taking a Photo in the Same Application
 To be able to capture bar code data and take a photo in the same application:

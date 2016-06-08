@@ -14,7 +14,7 @@ Staging is the process where a device administrator or operator configures a dev
 An administrator can stage all devices within an enterprise, devices in a particular store or site, or on-site/per user.
 
 ## StageNow Staging Solution
-StageNow is Zebra's next generation Android Staging Solution, supporting Lollipop, KitKat, and Jelly Bean and built on the MX 4.3/4.4/5.0/5.1 platform. It allows simple profile creation, and easy device deployment with a simple bar code scan, tag read, or audio file play.
+StageNow is Zebra's next generation Android Staging Solution, supporting Lollipop, KitKat, and Jelly Bean and built on the MX 4.3/4.4/5.x platform. It allows simple profile creation, and easy device deployment with a simple bar code scan, tag read, or audio file play.
 
 The StageNow Staging Solution includes the following components:
 

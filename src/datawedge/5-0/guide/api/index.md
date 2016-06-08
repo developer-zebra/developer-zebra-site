@@ -2,7 +2,7 @@
 title: DataWedge Data Capture API 
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## Overview
@@ -16,7 +16,7 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 
 **DataWedge APIs covered in this guide**: 
 
-* **SoftScanTrigger -** used to start, stop or toggle the soft scan trigger
+* **SoftScanTrigger -** used to start, stop or toggle a software scanning trigger
 * **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
 * **enumerateScanners -** returns a list of scanners available on the device
 * **setDefaultProfile -** sets the specified Profile as the default Profile
@@ -26,7 +26,7 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 ------
 
 ### SoftScanTrigger
-The SoftScanTrigger API command can be used to start, stop or toggle the soft scan trigger.
+The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger.
 
 ####FUNCTION PROTOTYPE
 
@@ -87,7 +87,7 @@ The received API commands are not queued; API commands are processed immediately
 ------
 
 ### ScannerInputPlugin
-The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in in the currently active profile. Disabling the scanner plug-in effectively disables scanning in that profile (associated or un-associated).
+The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in in the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile (associated or unassociated).
 
 ####FUNCTION PROTOTYPE
 
@@ -133,11 +133,11 @@ Error messages will be logged for invalid actions and parameters
 	}
 
 ####COMMENTS
-This Data Capture API intent will allow the scanner plug-in for the current Profile to be enabled or disabled. For example, let’s say that activity A launches and uses the Data Capture API intent to switch to profileA in which the scanner plug-in is enabled, then at some point it uses the Data Capture API to disable the scanner plug-in. Activity B is launched. In DataWedge, profileB is associated with activity B. DataWedge switches to profileB. When activity A comes back to the foreground, in the onResume method, activity A will need to use the Data Capture API intent to switch back to profileA, then use the Data Capture API intent again to disable the scanner plug-in, to return back to the state it was in.
+This Data Capture API intent will allow the scanner plug-in for the current Profile to be enabled or disabled. For example, let’s say that activity A launches and uses the Data Capture API intent to switch to ProfileA in which the scanner plug-in is enabled, then at some point it uses the Data Capture API to disable the scanner plug-in. Activity B is launched. In DataWedge, ProfileB is associated with activity B. DataWedge switches to ProfileB. When activity A comes back to the foreground, in the onResume method, activity A will need to use the Data Capture API intent to switch back to ProfileA, then use the Data Capture API intent again to disable the scanner plug-in, to return back to the state it was in.
 
 ####NOTE
-The above assumes that profileA is not associated to any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to profileA therefore activity A must switch back to profileA in its onResume method.
-Because DataWedge will automatically switch profile when your activity is paused, it is recommended that this API function be called from the onResume method of your activity.
+The above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA therefore activity A must switch back to ProfileA in its onResume method.
+Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the onResume method of the activity.
 
 ------
 
@@ -194,26 +194,26 @@ Error messages will be logged for invalid actions and parameters
 	};
 
 ####COMMENTS
-The scanner and its parameters are set based on the currently active profile.
+The scanner and its parameters are set based on the currently active Profile.
 
 ------
 
 ### setDefaultProfile
-The setDefaultProfile API function can be used to set the specified profile as the default profile.
+The setDefaultProfile API function can be used to set the specified Profile as the default Profile.
 
 ####DEFAULT PROFILE RECAP
-Profile0 is the generic profile used when there are no user created profiles associated with an application.	
+Profile0 is the generic Profile used when there are no user created Profiles associated with an application.	
 
-Profile0 can be edited but cannot be associated with an application. That is, DataWedge allows manipulation of plug-in settings for Profile0 but it does not allow assignment of a foreground application. This configuration allows DataWedge to send output data to any foreground application other than applications associated with user-defined profiles when Profile0 is enabled.
+Profile0 can be edited but cannot be associated with an application. That is, DataWedge allows manipulation of plug-in settings for Profile0 but it does not allow assignment of a foreground application. This configuration allows DataWedge to send output data to any foreground application other than applications associated with user-defined Profiles when Profile0 is enabled.
 
-Profile0 can be disabled to allow DataWedge to only send output data to those applications which are associated in user-defined profiles. For example, create a profile associating a specific application, disable Profile0 and then scan. DataWedge only sends data to the application specified in the user-created profile. This adds additional security to DataWedge enabling the sending of data only to specified applications.
+Profile0 can be disabled to allow DataWedge to only send output data to those applications which are associated in user-defined Profiles. For example, create a Profile associating a specific application, disable Profile0 and then scan. DataWedge only sends data to the application specified in the user-created Profile. This adds additional security to DataWedge enabling the sending of data only to specified applications.
 
 ####USAGE SCENARIO
-Let’s say a launcher application has a list of apps that a user can launch and that none of the listed apps has an associated DataWedge profile. Once the user has selected an app, the launcher needs to set the appropriate DataWedge profile for the selected app. This could be done by using setDefaultProfile to set the default profile to the required profile. Then when the user selected app is launched, DataWedge auto profile switching will switch to the default profile (which is now the required profile for that app).
+Let’s say a launcher application has a list of apps that a user can launch and that none of the listed apps has an associated DataWedge Profile. Once the user has selected an app, the launcher needs to set the appropriate DataWedge Profile for the selected app. This could be done by using setDefaultProfile to set the default Profile to the required Profile. Then when the user selected app is launched, DataWedge auto Profile switching will switch to the default Profile (which is now the required Profile for that app).
 
-If, for some reason, the launched app has an associated DataWedge profile then that will override the set default profile.
+If, for some reason, the launched app has an associated DataWedge Profile then that will override the set default Profile.
 
-When control is returned to the launcher application, resetDefaultProfile can be used to reset the default profile.
+When control is returned to the launcher application, resetDefaultProfile can be used to reset the default Profile.
 
 ####FUNCTION PROTOTYPE
 	Intent i = new Intent();
@@ -225,7 +225,7 @@ When control is returned to the launcher application, resetDefaultProfile can be
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
-**&lt;profile name**&gt;: The profile name to set as the default profile as a string (case-sensitive).
+**&lt;profile name**&gt;: The Profile name to set as the default Profile as a string (case-sensitive).
 
 ####RETURN VALUES
 None.
@@ -234,7 +234,7 @@ Error and debug messages will be logged to the Android logging system which then
 
 	$ adb logcat -s DWAPI
 
-Error messages will be logged for invalid actions, parameters and failures (e.g. profile not found or associated to an application).
+Error messages will be logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
 ####EXAMPLE
 
@@ -254,21 +254,21 @@ Error messages will be logged for invalid actions, parameters and failures (e.g.
 	}
 
 ####COMMENTS
-The API command will have no effect if the specified profile does not exist or if the specified profile is already associated to an application. DataWedge will automatically switch profiles when the activity is paused, so it is recommended that this API function be called from the onResume method of the activity.
+The API command will have no effect if the specified Profile does not exist or if the specified Profile is already associated with an application. DataWedge will automatically switch Profiles when the activity is paused, so it is recommended that this API function be called from the onResume method of the activity.
 
-Zebra recommends that this profile be created to cater to all applications/activities that would otherwise default to using Profile0. This will ensure that these applications/activities continue to work with a consistent configuration. For example, let’s say that initially Profile0 is the default profile using the camera as the barcode scanner. Using the Browser application and scanning a barcode with the camera, DataWedge enters the data into the Browser. Now you launch an application that changes the default profile to a profile using the blockbuster as the barcode scanner. When you go back to the Browser application, since it is using the default profile, scanning will now be via the blockbuster not the camera as previously. To ensure that the Browser continues to use the camera as the barcode scanner a profile should be created and associated to the Browser that specifies the camera as the barcode scanner.
+Zebra recommends that this Profile be created to cater to all applications/activities that would otherwise default to using Profile0. This will ensure that these applications/activities continue to work with a consistent configuration. For example, let’s say that initially Profile0 is the default Profile using the camera as the barcode scanner. Using the Browser application and scanning a barcode with the camera, DataWedge enters the data into the Browser. Now launch an application that changes the default Profile to a Profile using the blockbuster as the barcode scanner. When returning to the Browser application, since it is using the default Profile, scanning will now be via the blockbuster not the camera as previously. To ensure that the Browser continues to use the camera as the barcode scanner a Profile should be created and associated with the Browser that specifies the camera as the barcode scanner.
 
 ------
 
 ### resetDefaultProfile
-The resetDefaultProfile API function can be used to reset the default profile back to Profile0.
+The resetDefaultProfile API function can be used to reset the default Profile back to Profile0.
 
 ####FUNCTION PROTOTYPE
 
 	Intent i = new Intent();
 
 	i.setAction(ACTION);
-	i.putExtra(EXTRA_DATA, "<profile name>");
+	i.putExtra(EXTRA_DATA, "<Profile name>");
 
 ####PARAMETERS
 
@@ -276,7 +276,7 @@ The resetDefaultProfile API function can be used to reset the default profile ba
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
-**&lt;profile name**&gt;: The profile name to set as the default profile as a string (case-sensitive).
+**&lt;Profile name**&gt;: The Profile name to set as the default Profile as a string (case-sensitive).
 
 ####RETURN VALUES
 None.
@@ -285,7 +285,7 @@ Error and debug messages will be logged to the Android logging system which then
 
 	$ adb logcat -s DWAPI
 
-Error messages will be logged for invalid actions, parameters and failures (e.g. profile not found or associated to an application).
+Error messages will be logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
 ####EXAMPLE
 
@@ -306,10 +306,10 @@ None.
 ------
 
 ### SwitchToProfile
-The SwitchToProfile API action can be used to switch to the specified profile.
+The SwitchToProfile API action can be used to switch to the specified Profile.
 
 ####PROFILES RECAP
-DataWedge is based on profiles and plug-ins. A profile contains information on how DataWedge should behave with different applications.
+DataWedge is based on Profiles and plug-ins. A Profile contains information on how DataWedge should behave with different applications.
 
 Profile information consists of:
 
@@ -318,19 +318,19 @@ Profile information consists of:
 * Output plug-in configurations
 * Process plug-in configurations
 
-DataWedge includes a default profile, Profile0, that is created automatically the first time DataWedge runs.
+DataWedge includes a default Profile, Profile0, that is created automatically the first time DataWedge runs.
 
-Using profiles, each application can have a specific DataWedge configuration. For example, each user application can have a profile which outputs scanned data in the required format when that application comes to the foreground. DataWedge can be configured to process the same set of captured data differently based on the requirements of each application.
+Using Profiles, each application can have a specific DataWedge configuration. For example, each user application can have a Profile which outputs scanned data in the required format when that application comes to the foreground. DataWedge can be configured to process the same set of captured data differently based on the requirements of each application.
 
 ####NOTE
-A single profile may be associated with one or many activities/apps, however, given an activity, only one profile may be associated to it.
+A single Profile may be associated with one or many activities/apps, however, given an activity, only one Profile may be associated with it.
 
 ####USAGE SCENARIO
 Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses SwitchToProfile to activate ProfileB. Similarly, when ActivityB launches it uses switchToProfile to activate ProfileM.
 
-If another activity/app comes to the foreground, DataWedge auto profile switching will set the DataWedge profile accordingly either to the default profile or to an associated profile.
+If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
 
-When ActivityA (or ActivityB) comes back to the foreground it will use switchToProfile to reset the profile back to ProfileB (or ProfileM).
+When ActivityA (or ActivityB) comes back to the foreground it will use switchToProfile to reset the Profile back to ProfileB (or ProfileM).
 
 ####FUNCTION PROTOTYPE
 
@@ -343,7 +343,7 @@ When ActivityA (or ActivityB) comes back to the foreground it will use switchToP
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
-**&lt;profile name**&gt;: The profile name to switch to as a string (case-sensitive).
+**&lt;profile name**&gt;: The Profile name to switch to as a string (case-sensitive).
 
 ####RETURN VALUES
 None.
@@ -352,7 +352,7 @@ Error and debug messages will be logged to the Android logging system which then
 
 	$ adb logcat -s DWAPI
 
-Error messages will be logged for invalid actions, parameters and failures (e.g. profile not found or associated to an application).
+Error messages will be logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
 ####EXAMPLE
 	// define action and data strings
@@ -372,38 +372,31 @@ Error messages will be logged for invalid actions, parameters and failures (e.g.
 	}
 
 ####COMMENTS
-This API function will have no effect if the specified profile does not exist or if the specified profile is associated to an application.
+This API function will have no effect if the specified Profile does not exist or is already associated with an application.
 
-DataWedge has a one-to-one relationship between profiles and activities, i.e. only one profile can be associated to any given activity. When a profile is initially created, it is not associated to any application. Until this profile is associated to an activity it will never be activated. In this way it is possible to create multiple profiles that are unassociated.
+DataWedge has a one-to-one relationship between Profiles and activities; a Profile can be associated only with a single activity. When a Profile is first created, it's not associated with any application, and will not be activated until associated. This makes it possible to create multiple unassociated Profiles.
 
-This API function allows you to switch to one such unassociated profile.
+This API function activates such Profiles.
 
-For example, let’s say that ProfileA is one such unassociated profile and ProfileB is associated with activity B. Now, activity A is launched and uses this Data Capture API intent to switch to profileA. ProfileA will be active whilst activity A is in foreground. When another activity, say activity B, comes to the foreground DataWedge will automatically switch profile (to profileB which is associated to activity B for example). Then when activity A comes back to the foreground again, the app will need to use this Data Capture API intent to switch back to profileA. This would be done in the onResume method of activity A.
+For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses `SwitchToProfile` function to switch to ProfileA, then ProfileA will be active ehenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
+
+When activity A returns to the foreground, the app must use `SwitchToProfile` again to switch back to ProfileA. This would be done in the `onResume` method of activity A.
 
 ####Notes
-* Because DataWedge will automatically switch profile when your activity is paused, it is recommended that this API function be called from the onResume method of your activity.
-* After switching to a profile, this un-associated profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
-* DataWedge automatic profile switching
-For backward compatibility, DataWedge’s automatic profile switching is not affected by the above API commands, and this also why the above API commands only work with unassociated profiles and apps.
+* Because DataWedge will automatically switch Profile when the activity is paused, Zebra recommends that this API function be called from the onResume method of the activity.
+* After switching to a Profile, this unassociated Profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
+* For backward compatibility, DataWedge’s automatic Profile switching is not affected by the above API commands. This why the commands work only with unassociated Profiles and apps.
 
-DataWedge auto profile switching works as follows: 
+DataWedge auto Profile switching works as follows: 
 
-Every second…
-Set newProfileId to the associated profile id of the current foreground activity
-
-If no associated profile found then set newProfileId to the associated profile id of the current foreground app
-
-if no associated profile found then set newProfileId to the current default profile (note: this may not be Profile0)
-
-Check the newProfileId against the currentProfileId
-
-If they are different then…
-
-deactivate current profile
-
-activate new profile (newProfileId)
-
-set currentProfileId = newProfileId
+**Every second…**
+* Sets newProfileId to the associated Profile ID of the current foreground activity. 
+* If no associated Profile is found, sets newProfileId to the associated Profile ID of the current foreground app. 
+* If no associated Profile is found, sets newProfileId to the current default Profile (which  MAY NOT be Profile0). 
+* Checks the newProfileId against the currentProfileId. If they are different: 
+	* deactivates current Profile
+	* activates new Profile (newProfileId)
+	* sets currentProfileId = newProfileId
 
 ------
 
@@ -413,9 +406,8 @@ LINKS
 
 [LaunchPad](https://developer.zebra.com/welcome) - Zebra Developer Center
 
-[Intent](http://developer.android.com/reference/android/content/intent.html) | Android Developers
+[Intent](https://developer.android.com/reference/android/content/Intent.html) | Android Developers
 
 [Intents and Intent Filters](http://developer.android.com/guide/components/intents-filters.html) | Android Developers
 
-[Android Intents](http://www.vogella.com/acticles/AndroidIntent/article.html) - Tutorial
-
+[Android Intents](http://www.vogella.com/tutorials/AndroidIntent/article.html) - Tutorial

@@ -2,7 +2,7 @@
 title: DataWedge Decoders
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## Overview
@@ -99,7 +99,7 @@ cellspacing="0" cellpadding="4">
 </div>
 &#42; _Enabled by default_
 
-_**Note**: Some Decoders do not have configurable parameters, and are therefore omitted from the Decoder Parameters section_.
+_**Note**: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section.
 
 ### Enable/Disable Decoders
 
@@ -126,7 +126,7 @@ _**Note**: Some Decoders do not have configurable parameters, and are therefore 
 <br>
 
 ## Decoder Parameters
-Editable parameters of individual Decoders are explained below. **Note: Some Decoders do not have configurable parameters, and are therefore omitted from the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
+Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
 
 ### UPCE0
 **Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
@@ -239,7 +239,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Report Check Digit -** Transmit Code 39 data with or without the check digit. A check in the checkbox will send Code 39 data with a check digit.
 
-**Full Ascii -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. Check this checkbox to enable Code 39 Full ASCII.
+**Full ASCII -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. Check this checkbox to enable Code 39 Full ASCII.
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -281,7 +281,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **OPCC Check Digit -** Select to check the integrity of all Interleaved 2of5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
 
-**Report Check Digit -** Transmit Interleaved 2of5 data with or without the check digit. A check in the checkbox sends I2of5 data with check digit.
+**Report Check Digit -** Transmit Interleaved 2of5 data with or without the check digit. A check in the checkbox sends Interleaved 2of5 data with check digit.
 
 **Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2of5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2of5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
 
@@ -345,7 +345,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Check ISBT Table -** The ISBT specification includes a table that lists several types of ISBT barcodes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable "Check ISBT Table" to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated.
 
-**Security Level -** The scanner offers four levels of decode security for Code 128 barcodes. There is an inverse relationship between scanner aggressiveness and security; increasing levels of security lead to decreasing levels of barcode read accuracy. Zebra therefore recommends choosing carefully the level of security necessary for any given application: 
+**Security Level -** The scanner offers four levels of decode security for Code 128 barcodes. As the quality of barcodes decreases, implementing an increased level of security will compensate and help improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends choosing carefully the level of security necessary for any given application: 
 
 * **Security Level 0 -** This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" barcodes.
 
@@ -490,7 +490,7 @@ The allowable decode lengths are specified by Length1 and Length2 as follows:
 
 The UPC/EAN Parameter allows configuration of parameters that apply to more than one UPC or EAN decoder.
 
-**Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. There is an inverse relationship between scanner aggressiveness and security; increasing levels of security lead to decreasing barcode read accuracy. Zebra therefore recommends choosing carefully the level of security necessary for any given application: 
+**Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. As the quality of barcodes decreases, implementing an increased level of security will compensate and help improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends choosing carefully the level of security necessary for any given application: 
 
 * **Level 0 -** This setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN barcodes.
 
@@ -652,7 +652,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 ------
 
-**Poor Quality Decode Effort -** Permits selection of enhancement modes for deciding poor quality barcodes. Available options:
+**Poor Quality Decode Effort -** Permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Available options:
 
 * **Effort Level 0 -** Decoding performance on regular 1D and 2D barcodes is not affected.
 

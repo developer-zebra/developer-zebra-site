@@ -10,21 +10,19 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/3-1/guide/about
+        url: /datawedge/5-0/guide/about
       - title: Setup
-        url: /datawedge/3-1/guide/setup
+        url: /datawedge/5-0/guide/setup
       - title: Advanced
-        url: /datawedge/3-1/guide/advanced
+        url: /datawedge/5-0/guide/advanced
       - title: Decoders
-        url: /datawedge/3-1/guide/decoders
+        url: /datawedge/5-0/guide/decoders
       - title: IP Output
-        url: /datawedge/3-1/guide/ipoutput
+        url: /datawedge/5-0/guide/ipwedge
       - title: APIs
-        url: /datawedge/3-1/guide/api
+        url: /datawedge/5-0/guide/api
       - title: Demo
-        url: /datawedge/3-1/guide/demo
-      - title: Download
-        url: /datawedge/3-1/download
+        url: /datawedge/5-0/guide/demo
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to Android apps, settings and files without custom code.'
     url: /ehs/2-3/guide/about

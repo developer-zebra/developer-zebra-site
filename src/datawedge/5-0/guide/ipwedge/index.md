@@ -2,7 +2,7 @@
 title: IPWedge 
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## Overview
@@ -18,6 +18,8 @@ Using IPWedge requires the following:
 * Microsoft .NET Framework 3.5 Service Pack 1 (or later) installed
 * A Zebra device running Android 4.1 Jelly Bean (or later)
 * DataWedge for Android 1.5 (or later)
+
+### Set up IPWedge
 
 &#49;. [Visit the Zebra Solutions Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge%20ip) and **download the latest version of IPWedge**. 
 

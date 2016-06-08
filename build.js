@@ -408,7 +408,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({
-        folder: 'datawedge/3-1/'
+        folder: 'datawedge/5-0/'
     }))
     .use(foldermenu({
         folder: 'enterprise-keyboard/1-0/'

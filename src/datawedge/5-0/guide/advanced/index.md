@@ -2,7 +2,7 @@
 title: Advanced Settings
 layout: guide.html
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 ## Overview
@@ -15,7 +15,7 @@ Most of the functionality referenced in this guide will be accessed through the 
 
 **To access DataWedge Settings**: 
 
-&#49;. From the Profiles screen, **tap the "hamburger" menu** and **select Settings** as hightlighted below. The DataWedge Settings panel appears similar to the image in Step 2. 
+&#49;. From the Profiles screen, **tap the "hamburger" menu** and **select Settings** as highlighted below. The DataWedge Settings panel appears similar to the image in Step 2. 
 <img style="height:350px" src="datawedge_settings.png"/>
 _Access the DataWedge Settings panel from the Profiles screen_. 
 <br>
@@ -46,12 +46,12 @@ DataWedge provides the option of outputting system log messages for viewing thro
 
 **To Enable/Disable logging**: 
 
-From the DataWedge Settings panel, **tap Enable Logging** to enable or disdable logging as desired. 
+From the DataWedge Settings panel, **tap Enable Logging** to enable or disable logging as desired. 
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
 
 ### Import a Config File
-DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and other DataWedge settings stored on the device. 
+DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
 
 The DataWedge configuration file is always named `datawedge.db`.  
 
@@ -106,7 +106,7 @@ While the Profile importing _process_ is similar to that of the Configuration fi
 <br>
 
 ### Export a Profile
-Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propogate those settings to others in the organization.  
+Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propagate those settings to others in the organization.  
 
 If more than one Profile is to be created, exported and distributed at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file. 
 
@@ -150,14 +150,15 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 
 **Rules -** The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), symbology (i.e. only Code39 data), and a specified string within the data (optionally at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
+**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (optionally at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
 
-**Actions -** A set of procedures for analyzing, identifying and processing acquired data. There are four types of actions: 
+**Actions -** A set of procedures for analyzing, identifying and processing acquired data. 
 
-	* **Cursor movement** (i.e. skip the first 10 characters)
-	* **Data modification** (i.e remove all spaces; pad the left side with four zeros)
-	* **Data sending** (i.e. output the last four digits)
-	* **Delay** (i.e. wait 50 ms before doing something)
+**The four Action types**: 
+* **Cursor movement** (i.e. skip the first 10 characters)
+* **Data modification** (i.e remove all spaces; pad the left side with four zeros)
+* **Data sending** (i.e. output the last four digits)
+* **Delay** (i.e. wait 50 ms before doing something)
 
 ### Creating ADF Rules
 Setting up Advanced Data Formatting is done in three basic steps: 
@@ -199,18 +200,19 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 * **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
 
 * **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which specific decoders can be further selected or excluded), or through SimulScan. 
+<br>
 
 &#54;. **Tap the BACK button** to save and return to the Rule screen.
 <img style="height:350px" src="adf_17_criteria_list.png"/>
 <br>
 
-&#55;. From the Rule screen, **tap the "hamburger" menu and select New action** as highlighted below. A  scrollable list of Actions appears similar to the image in Step 8.
+&#55;. From the Rule screen, **tap the "hamburger" menu and select New action** as highlighted below. A scrollable list of Actions appears similar to the image in Step 8.
 <img style="height:350px" src="adf_18_new_action.png"/>
 <br>
 
-&#56;. **Select an Action from the Actions list**, scrolling as necessary. **Tap BACK** to save and return to the Rule screen. 
+&#56;. **Tap the desired Action in the Actions list**, scrolling as necessary. After tapping an Action, the Rule screen reappears with that Action added to the bottom of the Actions list. 
 <img style="height:350px" src="adf_19_actions1.png"/>
-For more information about Actions, see the table below. 
+For a description of each Action, see the table below. 
 <br>
 
 ### Supported ADF Actions
@@ -322,7 +324,7 @@ cellspacing="0" cellpadding="4">
 </div>
 _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINE FEED or TAB characters._
 
-&#56;. **Repeat Step 8 until all required Actions are created**. 
+&#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes, below**.  
 <img style="height:350px" src="adf_22_actions_list.png"/>
 <br>
 
@@ -330,11 +332,11 @@ _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action
 * Actions are processed from the top of the list downward to the bottom. 
 * To reposition an Action, drag the Action by its handle (to the right of its name). 
 * To delete an Action, long-press the Action name. 
-* A Pause Action of 50 ms after sending ENTER, LINE FEED or TAB can help minimize data loss.
+* A Pause Action of 50 ms after sending ENTER, LINE FEED or TAB Actions can help minimize data loss.
 
 **Rules Notes**: 
-* Once a Rule is enabled (with a checkmark in its Rule screen), a Rule will apply whenever its parent Profile is used. 
-* All data acquired through the Profile will be processed according to the Actions defined in the Rule before being tranferred to the selected Output Plug-in. 
+* Once a Rule is enabled (with a check mark in its Rule screen), a Rule will apply whenever its parent Profile is used. 
+* All data acquired through the Profile will be processed according to the Actions defined in the Rule before being transferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
 ## Sample ADF Rule
@@ -405,41 +407,47 @@ On Zebra devices, internal storage contains a directory named `/enterprise` that
 * If a `datawedge.db` file exists in the `/enterprisereset` directory, DataWedge will activate it as the new working config file.
 
 ### Auto Import
-DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files, and if found, performes the following in this order:
+DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files. If any are found, it executes the functions below.  
 
+**DataWedge Auto-Import routine**:
 1. Import the new file(s) 
 2. Replace the existing Configuration File and like-named Profile(s) (if any) 
 3. Delete the imported files
 4. Put new settings immediately into effect
 
-While DataWedge is running, it receives a system notification whenever a config file or Profile is placed in the `/autoimport` folder and follows the above procedure. 
+While DataWedge is running, it receives a system notification whenever a config file or Profile is placed in the `/autoimport` folder and executes the same four functions. 
 
 **Notes**:
-* **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. Devices that do not show contents under the `/enterprise` folder user may have to programatically write files to `/enterprisereset` folder and to `/autoimport' folder.
-
-* DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport' folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
-
+* For the best experience, **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. 
+* On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
+* DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.
 
 ## Sample Code 
-The following sample JavaScript can be modified to suit individual needs. 
+The following sample Java code can be modified to suit individual needs. 
 
 
-	    //NOTE: Below code is for demo purpose only, has no error checks
+	    //NOTE: This Java code is for demo purposes only; it has not been checked for errors.
+	    
 	    InputStream fis = null;
 	    FileOutputStream fos = null;
 	    String autoImportDir = "/enterprise/device/settings/datawedge/autoimport/"
 	    String temporaryFileName = "datawedge.tmp";
 	    String finalFileName = "datawedge.db";
-	    // Open your db as the input stream
+
+	    // Open the db as the input stream
 	    fis = context.getAssets().open("datawedge.db");
+	    
 	    // create a File object for the parent directory
 	    File outputDirectory = new File(autoImportDir);
+	    
 	    // create a temporary File object for the output file
 	    File outputFile = new File(outputDirectory,temporaryFileName);
 	    File finalFile = new File(outputDirectory, finalFileName);
+	    
 	    // attach the OutputStream to the file object
 	    fos = new FileOutputStream(outputFile);
+	    
 	    // transfer bytes from the input file to the output file
 	    byte[] buffer = new byte[1024];
 	    int length;
@@ -449,8 +457,10 @@ The following sample JavaScript can be modified to suit individual needs.
 	            tot+= length;
 	    }
 	    Log.d("DEMO",tot+" bytes copied");
+	    
 	    //flush the buffers
 	    fos.flush();
+	    
 	    //release resources
 	    try {
 	            fos.close();
@@ -468,16 +478,16 @@ The following sample JavaScript can be modified to suit individual needs.
 
 ## Programming Notes
 
-### Overriding the Trigger Key
-It is sometimes necessary to override the scan trigger key in an application. DataWedge can do this by creating a Profile that disables the barcode input and associate the Profile it with one or more applications. Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1` presses.
+### Capture Data, Photos in One App
+It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
 
-### Capture Data and Photos in the Same App
-To capture barcode data and take a photo in the same application:
-
-1. Add two Activities in the application: one for barcode scanning and another for picture taking. 
-2. Create a DataWedge Profile associated with the picture-taking Activity, disable scanning and use standard Android SDK APIs to control the camera.
-
-The default DataWedge profile takes care of the scanning when other activities in the app come foreground. It might be useful to create another DataWedge Profile that caters to any specific scanning needs and associate it with the barcode scanning activity of the app.
+1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
+2. Create a DataWedge Profile with the following settings: 
+	* Associate the Profile with the picture-taking Activity
+	* Disable scanning in the Profile
+3. Use the standard Android-SDK APIs to control the camera
+4. When the app is used for scanning, the default DataWedge profile will come into effect. 
+5. For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
 
 ### Disable DataWedge
 **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
@@ -490,15 +500,19 @@ The default DataWedge profile takes care of the scanning when other activities i
 <img style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is now returned to the system. 
+&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is returned to the system. 
 <img style="height:350px" src="datawedge_enable-disable.png"/>
-_The DataWedge Settings panel controls Profile import/export, logging and other general functions_. 
 <br>
 
+For imformation about accessing DataWedge programmatically, see the [Data Capture API Guide](../api). 
 
 <!--
 
 >>UNDER CONSTRUCTION 
+
+ANSWER:
+Data will be sent upto X. (1299)
+Since pad with zeros is set as 8, the length of the sending data will be adjusted to 8 by adding 0s to the beginning. (00001299). A space will be added at the end. Since it is a space you dont see it. I know we could have added a visible character there
 
 To test the new ADF rule, open any app on the device that has a text field capable of accepting input and click in the field. Then scan the barcode below: 
 <img style="height:150px" src="Figure_19_BarcodeSample.png"/>
@@ -517,6 +531,41 @@ The formatted data "000129X " (with a trailing space) appears in the text field.
 * **Actions**: Send upto (\x1D)
 * **Skip ahead (1)**
 * **Send remaining**
+
+-><><<M><>><-
+
+COPIED (PARTIALLY EDITED) FROM FROM DEMO PAGE
+
+## Programming Notes
+
+### Overriding the Trigger Key
+
+MY RE_WRITE: If it becomes necessary to override the scan trigger key in one or more applications, this can be accomplished by creating a DataWedge Profile that disables barcode input and associating the Profile with one or more applications. 
+
+Use standard APIs such as `onKeyDown()` in the application to listen for the `KEYCODE_BUTTON_L1` and `KEYCODE_BUTTON_R1` presses.
+
+###Overriding the Trigger Key
+ORIGINAL: To override the trigger key in an application, create a profile for the application that disables the Barcode input. In the application, use standard APIs, such as onKeyDown() to listen for the KEYCODE_BUTTON_L1 and KEYCODE_BUTTON_R1 presses.
+
+Capture Data and Taking a Photo in the Same Application
+To be able to capture bar code data and take a photo in the same application:
+
+Add two Activities in your application for barcode scanning and picture taking actions respectively. Create a DataWedge profile associated to the picture taking Activity in your application and disable scanning and use standard Android SDK APIs to control the Camera.
+
+The default DataWedge profile takes care of the scanning when other activities in your application comes foreground. You might want to create another DataWedge profile that caters to any specific scanning needs, and associate it to the barcode scanning activity of your application.
+
+Disable DataWedge on mobile computer and Mass Deploy
+To disable DataWedge and deploy onto multiple mobile computers:
+
+Touch  Home > DataWedge >  Menu > Settings.
+
+Unselect the DataWedge enabled check box.
+
+Export the DataWedge configuration. See Export Configuration File above for instructions.
+
+See Configuration File Management above for instructions for using the auto import feature.
+
+
 
 -->
 

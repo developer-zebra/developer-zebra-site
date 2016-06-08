@@ -1,9 +1,9 @@
 ---
 title: Search
 layout: search.html
-index: /datawedge/3-1/index.json
+index: /datawedge/5-0/index.json
 product: DataWedge
-productversion: '3.1'
+productversion: '5.0'
 ---
 
 

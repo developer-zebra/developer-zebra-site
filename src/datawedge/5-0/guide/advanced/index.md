@@ -475,8 +475,8 @@ The following sample JavaScript can be modified to suit individual needs.
 
 ## Programming Notes
 
-### Capturing Data and Photos in One App
-It is possible to take pictures and capture barcode data using the same application, provided the application is designed with this in mind. 
+### Capture Data, Photos in One App
+It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
 
 1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
 2. Create a DataWedge Profile with the following settings: 
@@ -501,6 +501,7 @@ It is possible to take pictures and capture barcode data using the same applicat
 <img style="height:350px" src="datawedge_enable-disable.png"/>
 <br>
 
+For imformation about accessing DataWedge programmatically, see the [Data Capture API Guide](../api). 
 
 <!--
 

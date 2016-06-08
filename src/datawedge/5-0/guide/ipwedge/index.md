@@ -19,6 +19,8 @@ Using IPWedge requires the following:
 * A Zebra device running Android 4.1 Jelly Bean (or later)
 * DataWedge for Android 1.5 (or later)
 
+### Set up IPWedge
+
 &#49;. [Visit the Zebra Solutions Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge%20ip) and **download the latest version of IPWedge**. 
 
 &#50;. **Install the .zip file** on the system to which the scanned data will be sent. 

@@ -51,7 +51,7 @@ From the DataWedge Settings panel, **tap Enable Logging** to enable or disable l
 <br>
 
 ### Import a Config File
-DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and other DataWedge settings stored on the device. 
+DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
 
 The DataWedge configuration file is always named `datawedge.db`.  
 
@@ -200,18 +200,19 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 * **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
 
 * **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which specific decoders can be further selected or excluded), or through SimulScan. 
+<br>
 
 &#54;. **Tap the BACK button** to save and return to the Rule screen.
 <img style="height:350px" src="adf_17_criteria_list.png"/>
 <br>
 
-&#55;. From the Rule screen, **tap the "hamburger" menu and select New action** as highlighted below. A  scrollable list of Actions appears similar to the image in Step 8.
+&#55;. From the Rule screen, **tap the "hamburger" menu and select New action** as highlighted below. A scrollable list of Actions appears similar to the image in Step 8.
 <img style="height:350px" src="adf_18_new_action.png"/>
 <br>
 
-&#56;. **Select an Action from the Actions list**, scrolling as necessary. **Tap BACK** to save and return to the Rule screen. 
+&#56;. **Tap the desired Action in the Actions list**, scrolling as necessary. After tapping an Action, the Rule screen reappears with that Action added to the bottom of the Actions list. 
 <img style="height:350px" src="adf_19_actions1.png"/>
-For more information about Actions, see the table below. 
+For a description of each Action, see the table below. 
 <br>
 
 ### Supported ADF Actions
@@ -418,35 +419,35 @@ While DataWedge is running, it receives a system notification whenever a config 
 
 **Notes**:
 * For the best experience, **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. 
-* Devices running Android KitKat or later are unable to view contents of the `/enterprise` folder with File Explorer or other user-level tools. Therefore, <finish> <<<<<<<<<<<---------
-
-Due to this the only possible way of copying configuration files to /autoimport or /enterprisereset folder is by copying using a staging client or programmatically by a user app.
-
-Devices that do not show contents under the `/enterprise` folder user may have to programmatically write files to `/enterprisereset` folder and to `/autoimport' folder.
-
+* On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
 * DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
-
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.
 
 ## Sample Code 
-The following sample JavaScript can be modified to suit individual needs. 
+The following sample Java code can be modified to suit individual needs. 
 
 
-	    //NOTE: Below code is for demo purpose only, has no error checks
+	    //NOTE: This Java code is for demo purposes only; it has not been checked for errors.
+	    
 	    InputStream fis = null;
 	    FileOutputStream fos = null;
 	    String autoImportDir = "/enterprise/device/settings/datawedge/autoimport/"
 	    String temporaryFileName = "datawedge.tmp";
 	    String finalFileName = "datawedge.db";
+
 	    // Open your db as the input stream
 	    fis = context.getAssets().open("datawedge.db");
+	    
 	    // create a File object for the parent directory
 	    File outputDirectory = new File(autoImportDir);
+	    
 	    // create a temporary File object for the output file
 	    File outputFile = new File(outputDirectory,temporaryFileName);
 	    File finalFile = new File(outputDirectory, finalFileName);
+	    
 	    // attach the OutputStream to the file object
 	    fos = new FileOutputStream(outputFile);
+	    
 	    // transfer bytes from the input file to the output file
 	    byte[] buffer = new byte[1024];
 	    int length;
@@ -456,8 +457,10 @@ The following sample JavaScript can be modified to suit individual needs.
 	            tot+= length;
 	    }
 	    Log.d("DEMO",tot+" bytes copied");
+	    
 	    //flush the buffers
 	    fos.flush();
+	    
 	    //release resources
 	    try {
 	            fos.close();
@@ -507,6 +510,10 @@ For imformation about accessing DataWedge programmatically, see the [Data Captur
 
 >>UNDER CONSTRUCTION 
 
+ANSWER:
+Data will be sent upto X. (1299)
+Since pad with zeros is set as 8, the length of the sending data will be adjusted to 8 by adding 0s to the beginning. (00001299). A space will be added at the end. Since it is a space you dont see it. I know we could have added a visible character there
+
 To test the new ADF rule, open any app on the device that has a text field capable of accepting input and click in the field. Then scan the barcode below: 
 <img style="height:150px" src="Figure_19_BarcodeSample.png"/>
 A Code39 barcode with "129" in the starting position. 
@@ -525,7 +532,7 @@ The formatted data "000129X " (with a trailing space) appears in the text field.
 * **Skip ahead (1)**
 * **Send remaining**
 
--------- 
+-><><<M><>><-
 
 COPIED (PARTIALLY EDITED) FROM FROM DEMO PAGE
 

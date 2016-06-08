@@ -21,7 +21,7 @@ The version of DataWedge documented in this guide provides the following primary
 * Format output according to simple or custom rules
 * Use plug-ins for data input, output and processing
 * Import and export settings 
-* Remotely configure and mass-deploy via MDM  
+* Remotely configure and mass-deploy settings via MDM  
 * Restore settings to factory defaults
 * Apply remote settings changes immediately 
 
@@ -48,7 +48,7 @@ _**This guide describes DataWedge for Android. Features and usage of Windows ver
 _The 'About DataWedge' box showing version 3.1.10_. 
 <br>
 
-&#52;. If the DataWedge version on the device is different than that of this guide, consider the following options. Each is explained in further detail below.  
+&#52;. If the DataWedge version on the device is different than that of this guide, consider the following options, explained further below.  
 
 * **Download the device-specific Integrator Guide** as an additional reference.
 * **Upgrade the device OS** to one with a newer version of DataWedge (Windows only). 
@@ -56,7 +56,7 @@ _The 'About DataWedge' box showing version 3.1.10_.
 ------
 
 #### Download an Integrator Guide
-For each Zebra device, the company publishes an Integrator Guide containing information specific to that device. For products that include DataWedge, **the Integrator Guide includes a chapter covering only those DataWedge capabilities available on the device**. A search for the term "integrator" at the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=integrator) yields a result similar to the image below. Narrow the seach by adding the device model. 
+For each of its devices, Zebra publishes an Integrator Guide containing information specific to that device. For products that include DataWedge, **the Integrator Guide includes a chapter covering only those DataWedge capabilities available on the device**. A search for the term "integrator" at the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=integrator) yields a result similar to the image below. Narrow the seach by adding the device model. 
 <img style="height:450px" src="support_central_guides.png"/>
 _The Zebra Support Central site showing search results for "integrator_." 
 <br>
@@ -70,4 +70,4 @@ _The Zebra Support Central site showing search results for "integrator_."
 
 ------
 
-> Want to learn more about DataWedge? See the [DataWedge Setup Guide](../setup) and the [DataWedge Demo app](../demo). 
+> Learn more about DataWedge. See the [DataWedge Setup Guide](../setup) and the [DataWedge Demo app](../demo). 

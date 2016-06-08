@@ -16,7 +16,7 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 
 **DataWedge APIs covered in this guide**: 
 
-* **SoftScanTrigger -** used to start, stop or toggle a software scanning button
+* **SoftScanTrigger -** used to start, stop or toggle a software scanning trigger
 * **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
 * **enumerateScanners -** returns a list of scanners available on the device
 * **setDefaultProfile -** sets the specified Profile as the default Profile
@@ -26,7 +26,7 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 ------
 
 ### SoftScanTrigger
-The SoftScanTrigger API command can be used to start, stop or toggle the soft scan trigger.
+The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger.
 
 ####FUNCTION PROTOTYPE
 
@@ -413,9 +413,8 @@ LINKS
 
 [LaunchPad](https://developer.zebra.com/welcome) - Zebra Developer Center
 
-[Intent](http://developer.android.com/reference/android/content/intent.html) | Android Developers
+[Intent](https://developer.android.com/reference/android/content/Intent.html) | Android Developers
 
 [Intents and Intent Filters](http://developer.android.com/guide/components/intents-filters.html) | Android Developers
 
-[Android Intents](http://www.vogella.com/acticles/AndroidIntent/article.html) - Tutorial
-
+[Android Intents](http://www.vogella.com/tutorials/AndroidIntent/article.html) - Tutorial

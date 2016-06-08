@@ -475,16 +475,16 @@ The following sample JavaScript can be modified to suit individual needs.
 
 ## Programming Notes
 
-### Data and Photos in One App
-It is possible to capture barcode data and take photos using the same application. 
+### Capturing Data and Photos in One App
+It is possible to take pictures and capture barcode data using the same application, provided the application is designed with this in mind. 
 
-1. Add two Activities in the application: one for barcode scanning and another for picture taking. 
+1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
 2. Create a DataWedge Profile with the following settings: 
 	* Associate the Profile with the picture-taking Activity
 	* Disable scanning in the Profile
 3. Use the standard Android-SDK APIs to control the camera
-4. When scanning, the default DataWedge profile will come into effect. 
-5. It might sometimes be necessary to create second DataWedge Profile and associate it with the barcode scanning activity of the app. This will handle any specific scanning needs.
+4. When the app is used for scanning, the default DataWedge profile will come into effect. 
+5. For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
 
 ### Disable DataWedge
 **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 

@@ -14,14 +14,14 @@ parm:
       name: False
       mx: "6.0"
       osx: "1.3"
-      description: This value (or the absence of this parm from the XML) disables Auto Time Zone, preventing the device from automatically calculating acquiring its Time Zone.
+      description: This value (or the absence of this parm from the XML) disables Auto Time Zone, preventing the device from automatically calculating and setting its Time Zone.
     - code: true
       name: True
       mx: "6.0"
       osx: "1.3"
-      description: Enables the device to automatically acquire its Time Zone.
+      description: Enables Auto Time Zone, allowing the device to automatically calculate and set its Time Zone.
 ---
 
 Controls whether the Time Zone on the device will be set manually or automatically through contact with an NTP server. When AutoTimeZone is Enabled, the device will attempt to contact the specified NTP server at the specified interval to acquire and set the Time Zone. For devices operating on a cellular network, AutoTime will typically accept the Time Zone from the carrier network. When AutoTimeZone is disabled, the Time Zone can be set manually. 
 
-**Important**: The Auto Time Zone Enable/Disable function of Clock will fail if the Settings panel is launched using the Android Recent Apps feature. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in the profile created to set the clock. 
+**Note**: The Auto Time Zone Enable/Disable function of Clock will fail if the Settings panel is launched using the Android Recent Apps feature. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in the profile created to set the clock. It is therefore recommended that the Settings app be cleared from the Recent Apps list by adding the relevant XML from the [AppMgr](../appmgr) in any profile created to set the clock. 

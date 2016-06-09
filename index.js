@@ -88,9 +88,13 @@ var index_generate = function(folder){
     
 
 }
+      index_generate("datawedge/5-0");
       index_generate("emdk-for-android/4-2");
       index_generate("emdk-for-android/4-0");
       index_generate("emdk-for-android/3-1");
       index_generate("emdk-for-xamarin/1-0");
+      index_generate("emdk-for-xamarin/2-0");
       index_generate("stagenow/2-2");
+      index_generate("stagenow/2-3");
       index_generate("ehs/2-3");
+      index_generate("enterprise-keyboard/1-0");

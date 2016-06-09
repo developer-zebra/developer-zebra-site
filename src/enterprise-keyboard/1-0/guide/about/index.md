@@ -6,7 +6,7 @@ layout: guide.html
 ## Overview
 Enterprise Keyboard is designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
 
-Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).
+Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. <!-- A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).-->
 
 This version of Enterprise Keyboard includes the following languages: 
 
@@ -187,6 +187,8 @@ KitKat and Lollipop
 
 ## How to Get It
 
-Enterprise Keyboard will be included with Zebra Lollipop devices beginning in Q2 2016. 
+Enterprise Keyboard is currently available as an OS patch **only for Zebra MC40 devices running Android KitKat**. To download, visit [Zebra Support Central](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=).
 
-It will be available as an OS patch for KitKat devices at a later date. 
+Enterprise Keyboard will be included with all Zebra devices running Android 5.0 Lollipop beginning in the second half of 2016. 
+
+Please contact a Zebra representative or partner for more information. 

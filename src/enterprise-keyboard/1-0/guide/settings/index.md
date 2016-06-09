@@ -7,7 +7,7 @@ layout: guide.html
 
 Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. <!--Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. -->
 
 ## Customizing Keyboard Settings
 
@@ -124,7 +124,7 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
 * Spelling suggestions do not appear with all field types.  
-* For mass deployment, the Personal dictionary must be populated using Zebra's [StageNow](/stagenow/2-2/about/) tool beforehand. 
+* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool (not available in v1.0). 
 
 #####Add a term to the Personal dictionary: 
 

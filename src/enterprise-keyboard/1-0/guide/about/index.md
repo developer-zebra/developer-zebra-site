@@ -23,7 +23,7 @@ The Enterprise Keyboard offers the following unique capabilities to help improve
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:350px" src="sample_1.png"/>
-To save screen real estate, the spelling suggestions bar shares space with the keypad Navigation Tab bar (highlighted); the nav bar fades out temporarily when suggestions are available.
+To maximize screen space for apps, the spelling suggestions bar shares space with the keypad Navigation Tab bar (highlighted); the nav bar fades out temporarily when suggestions are available.
 <br>
 
 <b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
@@ -57,7 +57,7 @@ The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function ke
 _Shown here with the EMOJI key (top) and other default key assignments_. 
 <br>
 
-<b>View the keyboard in any lighting conditions</b> thanks to a specially designed color scheme: 
+<b>View the keyboard indoors or out</b> thanks to a specially designed color scheme: 
 <br>
 _Enterprise Keyboard_:
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
@@ -188,8 +188,10 @@ KitKat and Lollipop
 
 ## How to Get It
 
-Enterprise Keyboard is currently available **only for Zebra MC40 devices running Android KitKat**. To download the OS patch for MC40, visit [Zebra Support Central](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=).
+Enterprise Keyboard is currently available **only for Zebra MC40 devices running Android KitKat**. 
 
-Enterprise Keyboard will be included with all Zebra devices running Android 5.0 Lollipop beginning in the second half of 2016. 
+Download the **OS patch for MC40** at [Zebra Support Central](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=).
+
+Enterprise Keyboard will be **included with all Zebra devices running Android 5.0** Lollipop beginning in the **second half of 2016**. 
 
 Please contact a Zebra representative or partner for more information. 

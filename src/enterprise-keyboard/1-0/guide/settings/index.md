@@ -153,7 +153,7 @@ When a shortcut is typed as input, its associated term will appear in a list of 
 Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
 <br>
 
-**Note**: The Suggestion Bar and Layout Navigation Tab bar share the same space. When a correction is suggested, the tab bar fades out to reveal the suggestions.     
+**Note**: To maximize screen space for apps, the spelling Suggestion Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when suggestions are available.
 
 #####Edit or delete a term: 
 

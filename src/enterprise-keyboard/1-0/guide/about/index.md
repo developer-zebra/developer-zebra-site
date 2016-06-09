@@ -13,23 +13,24 @@ This version of Enterprise Keyboard includes the following languages:
 * English (UK)
 * English (US) 
 * French
-* Italian
 * German
+* Italian
 * Spanish
 * Russian
 
 ### Unique features  
 The Enterprise Keyboard offers the following unique capabilities to help improve input speed and accuracy:  
 
-<b>Switch layouts with taps or swipes</b>:  
+<b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:350px" src="sample_1.png"/>
+To save screen real estate, the spelling suggestions bar shares space with the keypad Navigation Tab bar (highlighted); the nav bar fades out temporarily when suggestions are available.
 <br>
 
 <b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
 <img alt="" style="height:350px" src="sample_5.png"/>
 <br>
 
-<b>Input long-press characters with a finger-flick</b>:
+<b>Input long-press characters with a finger-flick</b> of the main key:
 <img alt="" style="height:350px" src="emailAddress.png"/>
 <br>
 
@@ -39,7 +40,7 @@ The <b>Language tab</b> quickly selects languages to include:
 <br>
 -->
 
-<b>The Globe key quickly pages through selected languages</b>:  
+<b>Quickly page through selected languages</b> using the "globe" key:  
 <img alt="" style="height:150px" src="keyboard_globe.png"/>
 <br>
 
@@ -49,14 +50,14 @@ The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function ke
 <br>
 -->
 
-<b>Remappable keys easily enable custom key layouts</b>: 
+<b>Design custom key layouts easily</b> with five remappable keys: 
 <img alt="" style="height:150px" src="keyboard_alpha.png"/>
 
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>
 _Shown here with the EMOJI key (top) and other default key assignments_. 
 <br>
 
-<b>A specially designed color scheme</b> permits easy viewing indoors and out: 
+<b>View the keyboard in any lighting conditions</b> thanks to a specially designed color scheme: 
 <br>
 _Enterprise Keyboard_:
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
@@ -187,7 +188,7 @@ KitKat and Lollipop
 
 ## How to Get It
 
-Enterprise Keyboard is currently available as an OS patch **only for Zebra MC40 devices running Android KitKat**. To download, visit [Zebra Support Central](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=).
+Enterprise Keyboard is currently available **only for Zebra MC40 devices running Android KitKat**. To download the OS patch for MC40, visit [Zebra Support Central](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=).
 
 Enterprise Keyboard will be included with all Zebra devices running Android 5.0 Lollipop beginning in the second half of 2016. 
 

@@ -153,6 +153,8 @@ When a shortcut is typed as input, its associated term will appear in a list of 
 Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
 <br>
 
+**Note**: The Suggestion Bar and Layout Navigation Tab bar share the same space. When a correction is suggested, the tab bar fades out to reveal the suggestions.     
+
 #####Edit or delete a term: 
 
 &#49;. Bring up the terms list and <b>tap the term</b>  to be edited:
@@ -227,7 +229,7 @@ Remapping panel shows current settings of remappable keys:
 ------
 
 ## DataWedge
-The scan tab in Enterprise Keyboard uses scanning services provided by Zebra's DataWedge app, which is included on every Zebra device. <b>DataWedge must therefore be enabled on the device for the Scan tab to be operational</b>. 
+The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](/datawedge/5-0/guide/about), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
 
 Locate and <b>tap the DataWedge icon</b> on the device. 
 <img alt="" style="height:350px" src="scan_tab.png"/>
@@ -248,4 +250,5 @@ Locate and <b>tap the DataWedge icon</b> on the device.
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 
-For more information, please refer to [Enterprise Keyboard Setup](../setup).
+For more information, see to [Enterprise Keyboard Setup](../setup) and the [DataWedge User Guide](/datawedge/5-0/guide/about).
+

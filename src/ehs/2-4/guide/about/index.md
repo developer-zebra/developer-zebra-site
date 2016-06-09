@@ -12,10 +12,10 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
-The first time it's installed, EHS offers a simple choice: 
+The first time it's installed, EHS presents the admin with this simple choice: 
 <img style="height:150px" src="homePrompt.png"/>
 
-Selecting 'Always' locks EHS in as the default home app and locks users out of the following device features by default:
+Selecting 'Always' locks EHS in as the default home app and **locks users out of the following** device features by default:
 
 * Airplane mode
 * USB debugging
@@ -27,7 +27,7 @@ Selecting 'Always' locks EHS in as the default home app and locks users out of t
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-[Download Enterprise Home Screen](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
+> Ready to get started? [Download Enterprise Home Screen](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -221,6 +221,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 New features in Enterprise Home Screen 2.4:
 
+
+
+New features added in v2.3:
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)
 

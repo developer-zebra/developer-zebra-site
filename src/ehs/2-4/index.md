@@ -18,7 +18,7 @@ menu:
     - icon: fa fa-download
       url: /ehs/2-4/download
 product: Enteprise Home Screen
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 

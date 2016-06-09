@@ -2,7 +2,7 @@
 title: About Enteprise Home Screen
 layout: guide.html
 product: Enteprise Home Screen
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## Overview
@@ -223,7 +223,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## What's New
 
-New features in Enterprise Home Screen 2.3:
+New features in Enterprise Home Screen 2.4:
 
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)

@@ -24,7 +24,7 @@ content-items:
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
 product: Enteprise Home Screen
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 

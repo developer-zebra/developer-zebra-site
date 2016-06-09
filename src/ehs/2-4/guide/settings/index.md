@@ -2,7 +2,7 @@
 title: EHS Advanced Settings
 layout: guide.html
 product: Enteprise Home Screen
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## Overview

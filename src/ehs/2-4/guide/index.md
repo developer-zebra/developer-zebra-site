@@ -19,7 +19,7 @@ content-items:
     text: 'A guide to advanced features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State'
     url: /ehs/2-4/guide/features
 product: Enteprise Home Screen
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 

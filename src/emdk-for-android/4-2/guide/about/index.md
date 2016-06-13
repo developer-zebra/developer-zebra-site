@@ -47,35 +47,28 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 ## What's New
 **EMDK for Android v4.2**
-* [Notification API](../../api/notification) - Send notifications to remote devices such as the RS6000 Ring Scanner.
+
 * [Barcode API Updates](../../api/barcode)
-	* Support added for RS6000 and RS4000 Ring Scanners
-	* New scanner configurations parameters in ScannerConfig.ScanParams:
-		* [decodeAudioFeedbackMode](../../api/barcode/ScannerConfig-ScanParams/#decodeaudiofeedbackmode) - Controls the Audio feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
-		* [decodeLEDFeedbackMode](../../api/barcode/ScannerConfig-ScanParams/#decodeaudiofeedbackmode) - Controls the LED feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
-		* Connection idle timeout value 0 is supported. Device will not get disconnected when set to 0.
 	* Enhanced to support the scanner selection:
 		* Added new method [getDeviceIdentifier()](../../api/barcode/ScannerInfo/#getdeviceidentifier) in ScannerInfo class to query the scanner type. - This can be used to identify specific scanner from the enumerated devices list.
 		* Added new enum value "UNDEFINED" to [BarcodeManager.DeviceIdentifier](../../api/barcode/BarcodeManager-DeviceIdentifier/) to return for any unknown type of scanners.
 * Profile Manager Updates
 	* [Bluetooth Manager](../../mx/bluetoothmgr/) - The BluetoothMgr controls whether to allow new devices to pair.
 	* [Hosts Manager](/emdk-for-android/4-2/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
-	* [Launch application by simple name](../../mx/appmgr/#application-name) - new action for [App Manager](../../mx/appmgr).
+	* [Launch application by Application Name](../../mx/appmgr/#application-name) - new action for [App Manager](../../mx/appmgr).
 	* [UI Manager](../../mx/uimgr) updates
 		* [Extended Locale Options](../../mx/uimgr/#set-an-extended-locale) - 4 new options for existing param "ExtendedLocale": SWEDEN_SWEDISH, NORWAY_NORWEGIAN-BOKMAL, FINLAND_FINISH, DENMARK_DANISH
 		* [Custom Locale](../../mx/uimgr/#set-a-custom-locale) - This parm value permits the selection of the device's Custom Locale. A locale is the combination of a language and a region in which that language is spoken.
 		* [Notification Pulldown Enable/Disable](../../mx/uimgr/#notification-pulldown-enabledisable) - controls whether a user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. 
 		* [Quick Settings Show/Hide](../../mx/uimgr/#notification-quick-settings-icons-showhide) -  controls whether Quick Settings icons will be displayed in the Android Notifications panel.
-	* [Remote Scanner Manager](../../mx/remotescannermgr/) - Ability to manage the remote scanners (tasks such as query the remote scanner information, update firmware, reset, etc). This feature currently supports RS6000 only.
 	* [Analytics Manager](../../mx/analytics/) - Added new capability to control the data captured by the analytics engine such as data transportation, what information can be collected, scheduling time for analytic engine to capture data, etc.
 	* [Key Mapping Manager](../../mx/keymappingmgr/) -  Updated to support P1, P2, P3 and Left/ Right Trigger buttons.
 	* Updates to [DataCapture](../../mx/data-capture/) feature:
-		* Added support for choosing the remote scanners such as RS507, RS4000 and RS6000.
 		* Added support for controlling the barcode decode notifications
-			* Decode Audio Feedback Mode - Controls the Audio feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
-			* Decode LED Feedback Mode - Controls the LED feedback mode to be given by a host device and remote scanner (RS6000) upon barcode decode.
 			* Aim Mode - Enable/Disable scanner aim during scanning.
 			* Illumination Brightness - Controls illumination brightness of the imager.
+
+
 
 **EMDK for Android v4.0**
 

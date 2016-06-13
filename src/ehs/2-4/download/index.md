@@ -17,6 +17,8 @@ After download, proceed to [Setup](/ehs/2-4/guide/setup).
 
 ## Previous Releases
 
+[Download Enterprise Home Screen 2.3](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
+
 [Enterprise Home Screen 2.0](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=99110&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
 
 [Enterprise Home Screen 1.6](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=97863&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)

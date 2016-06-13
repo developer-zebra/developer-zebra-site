@@ -219,8 +219,19 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## What's New
 
-New features in Enterprise Home Screen 2.4:
+### New in EHS 2.4:
 
+* **[Bundle Data](../settings#bundledata) -** allows app parameters, user data or other key-value pairs to be injected via XML into an app when it launches. 
+
+* **Custom User-Screen Icons -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
+
+* **Adjustable Icon Size -** provides five pre-set sizes for User-mode application icons. 
+
+* **[Service Auto Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
+
+* **Single View for Battery and Wi-Fi -** displays these often-viewed, user-critical parameters on a single screen. 
+
+* **Support for Wildcard Character-** to display multiple User-screen apps with a single line of XML code.  
 
 
 New features added in v2.3:

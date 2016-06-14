@@ -221,11 +221,13 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ### New in EHS 2.4:
 
-* **[Bundle Data](../settings#bundledata) -** allows app parameters, user data or other key-value pairs to be injected via XML into an app when it launches. 
+* **[Bundle Data](../settings#bundle) -** allows app parameters, user data or other key-value pairs to be injected via XML into an app when it launches. 
 
 * **[Service Auto Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
 
-* **Custom User-Screen Icons -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
+* **[Custom User-Screen Icons](../settings#icon) -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
+
+* **Wildcard Character in [&lt;applications&gt; Section](../settings#applications)-** reduces the lines of code required in the EHS config file for displaying User-Mode apps.
 
 * **Adjustable Icon Size -** provides five pre-set sizes for User-mode application icons: 
 <img alt="" style="height:350px" src="2-4_icon_size.png"/>
@@ -233,12 +235,10 @@ _The icon size UI is accessible from Admin or User Modes (default shown)_.
 <img alt="" style="height:350px" src="2-4_xxl_icons.png"/>
 _The User Mode screen with XXL icons_. 
 
-* **Single View for Battery and Wi-Fi -** displays these oft-viewed parameters on a single screen:
+* **Single View for Battery and Wi-Fi -** displays status of both on a single screen in real time:
 <img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
 The Battery and Wi-Fi "Quick View" screen is accessed using a new "Info" control: 
 <img alt="" style="height:350px" src="2-4_info_icon.png"/>
-
-* **Wildcard Character in &lt;applications&gt; Section(../settings#applications)-** allows display multiple User-Mode apps with a single line of XML code.  
 
 ------
 

@@ -207,7 +207,7 @@ When specifying links, the package and activity parameters can be used to launch
 
 * Label: string
 * Package: app package name 
-* &#42;: (asterisk) used as a wildcard to specify multiple packages with the same prefix 
+* &#42;(asterisk): used as a wildcard to specify multiple packages with the same prefix 
 * Activity (optional): name of the activity to be invoked when the app starts
 
 ####Sample XML (conventional)

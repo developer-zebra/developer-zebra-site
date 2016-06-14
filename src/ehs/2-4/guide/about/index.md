@@ -223,16 +223,24 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **[Bundle Data](../settings#bundledata) -** allows app parameters, user data or other key-value pairs to be injected via XML into an app when it launches. 
 
-* **Custom User-Screen Icons -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
-
-* **Adjustable Icon Size -** provides five pre-set sizes for User-mode application icons. 
-
 * **[Service Auto Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
 
-* **Single View for Battery and Wi-Fi -** displays these often-viewed, user-critical parameters on a single screen. 
+* **Custom User-Screen Icons -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
 
-* **Support for Wildcard Character-** to display multiple User-screen apps with a single line of XML code.  
+* **Adjustable Icon Size -** provides five pre-set sizes for User-mode application icons: 
+<img alt="" style="height:350px" src="2-4_icon_size.png"/>
+_The icon size UI is accessible from Admin or User Modes (default shown)_.  
+<img alt="" style="height:350px" src="2-4_xxl_icons.png"/>
+_The User Mode screen with XXL icons_. 
 
+* **Single View for Battery and Wi-Fi -** displays these oft-viewed parameters on a single screen:
+<img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
+The Battery and Wi-Fi "Quick View" screen is accessed using a new "Info" control: 
+<img alt="" style="height:350px" src="2-4_info_icon.png"/>
+
+* **Wildcard Character in &lt;applications&gt; Section(../settings#applications)-** allows display multiple User-Mode apps with a single line of XML code.  
+
+------
 
 New features added in v2.3:
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 

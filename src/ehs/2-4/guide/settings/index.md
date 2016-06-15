@@ -203,11 +203,11 @@ When specifying links, the package and activity parameters can be used to launch
 
 #### Application Example 
 
-<b>Possible values (apps)</b>
+<b>Possible values (apps)</b>:
 
 * Label: string
 * Package: app package name 
-* &#42;(asterisk): used as a wildcard to specify multiple packages with the same prefix 
+* &#42; (asterisk): used as a wildcard to specify multiple packages with the same prefix 
 * Activity (optional): name of the activity to be invoked when the app starts
 
 ####Sample XML (conventional)
@@ -231,6 +231,9 @@ When specifying links, the package and activity parameters can be used to launch
         //...could be replaced with this single line using the wildcard character:
             <application package="com.inditex.mobility.*"/>
 
+        //...applying a label will apply to all qualifying apps:
+            <application label="inditex" package="com.inditex.mobility.*"/>
+
         //To exclude one or more apps from the wildcard set above: 
             <application package="com.inditex.mobility.*" exclude=”com.inditex.mobility.inventory”/> 
             <application package="com.inditex.mobility.*" exclude=”com.inditex.mobility.inventory; com.inditex. mobility.25online”/>
@@ -238,24 +241,31 @@ When specifying links, the package and activity parameters can be used to launch
 
 **Wildcard rules**:
 
-* Each group of apps selected by wildcard will be displayed on the User-Mode screen in alphabetical order relative to that group.
-* Zebra apps always will be displayed before wildcard-selected apps.
+* Zebra apps always display on the User-Mode screen before wildcard-selected apps.
+* Each group of apps selected by wildcard will be displayed in alphabetical order relative to that group.
+* Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
+* If &lt;bundle&gt; and &lt;icon&gt; tags are used, the same specified attributes apply to all wildcard-selected apps. 
+* Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 
 * Apps selected by wildcard cannot be removed using the long-press feature in Admin Mode. 
 * Apps excluded from a wildcard search cannot be added using the long-press feature in Admin Mode.
 * The exclude command does not support the wildcard character; apps must be excluded one at a time.  
-* If left undefined in XML, application labels will be applied to icons from the manifest file.  
-* The wildcard character may only appear once per line and **must** appear at the end. 
-* The following wildcard searches have been blocked as a security measure: 
-    * com.android.*
-    * com.android*
-    * com.androi*
-    * com.andro*
-    * com.andr*
-    * com.and*
-    * com.an*
-    * com.a*
-    * com.*
-
+* If an app that is individually specified in the :lt;applications&gt; section also qualifies in a separate wildcard search, it is immune to the "exclude" command.
+* If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).  
+* Labels longer than 18 characters will be truncated at the 18th character and appended with an ellipsis (...).
+* The label specified in a wildcard search will apply to all apps identified by the search. 
+* The wildcard character may appear only once per line and **only at the end of the line**. 
+* The following wildcard searches have been blocked by EHS as a security measure, avoiding the accidental inclusion of all standard Android apps: 
+    * com.android.&#42;
+    * com.android&#42;
+    * com.androi&#42;
+    * com.andro&#42;
+    * com.andr&#42;
+    * com.and&#42;
+    * com.an&#42;
+    * com.a&#42;
+    * com.&#42;
+* Check the `enterprisehomescreen.log` file for error messages might result from invalid wildcard use. 
+* The EHS app and EHS installer always are excluded from any filtered app list. 
 
 #### URL Example
 
@@ -496,7 +506,7 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 ------
 
 ### Service Auto Launch Enable
-Enables one or more services to be automatically launched after EHS starts up. Works with optional &lt;service_auto_launch&gt; section. When enabled, apps specified in the &lt;service_auto_launch&gt; section are launched after a delay, if specified. The Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or admin UI; Services must be specified in the config file. See the [Optional Feature Tags section](#optionalfeaturetags) for details. Disabled by default. 
+Enables one or more services to be automatically launched after EHS starts up. Works with optional &lt;service_auto_launch&gt; section. When enabled, apps specified in the &lt;service_auto_launch&gt; section are launched after a delay, if specified. The Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or Admin-Mode UI; Services must be specified in the config file. See the [Optional Feature Tags section](#optionalfeaturetags) for details. Disabled by default. 
 
 <img alt="" style="height:350px" src="2-4_service_auto-launch.png"/>
 
@@ -527,7 +537,7 @@ Allows a background image to be specified for display in User Mode. If left unsp
 ------
 
 ### Fullscreen
-EHS can be made to run in fullscreen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS will behave as individually designed. Will not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
+EHS can be made to run in full-screen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS will behave as individually designed. Will not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
 
 <img alt="" style="height:350px" src="fullscreen.png"/>
 
@@ -582,8 +592,8 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
     
 ------
 
-### Disable Statusbar Pulldown
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Statusbar Pulldown is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Statusbar Pulldown will be enabled. To disable, enter a value of 1.  
+### Disable Status bar Pull-down
+Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status bar Pull-down will be enabled. To disable, enter a value of 1.  
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
@@ -835,24 +845,29 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 
 ------
 ### Bundle
-Allows a set of key-value pairs to be injected via XML into an app when it launches. Bundled data can include application parameters, user data or any other information consumable by the application. 
+Permits the option of injecting key-value pairs via XML into an app when it launches. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file and cannot be used with links. 
 
-This feature can be used with any EHS app, including Kiosk apps, auto-launch apps and those appearing in user Mode and the Tools menu. 
+The key and value portions of the bundle are separated by an equal sign (=), and multiple bundles are separated by a semi-colon (;). 
 
+<b>Possible values</b>:
+* character string (format: "field_1=data;field_2=more_data")
 
 #### Example
 
     <applications> 
         <application label="TestAppBundle" package="com.example.testappbundledata" activity="com.example.testappbundledata.MainActivity" 
-        bundle="name=John;code=2000;country=SL;date=090615"/>   
+        bundle="name=John Brown;code=2000;country=US;date=090615"/>   
     </applications>
 
+**Bundle Notes**:
 
-
+* Bundled data is handled as a character string; app is responsible for converting data type as needed.  
+* Apps that include bundled data will behave the same in Admin Mode as in User Mode. 
+ 
 ------
 
 ### Icon
-Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. Supports .jpg and .png image formats. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon will be used if tag is left blank or specified icon is missing or invalid. **Compatible with EHS Secure Mode**.  
+Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. Supports .jpg and .png image formats. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon will be used if tag is left blank or specified icon is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. **Compatible with EHS Secure Mode**.  
 
 #### Examples
 
@@ -973,13 +988,13 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 * The data also is saved in the &lt;Applications&gt; section of the `enterprisehomescreen.xml` file as indicated above. 
 * To remove a shortcut from user screen, delete the corresponding "link" tag from the config file. 
 * Adding duplicate shortcuts for the same local or remote application is allowed.
-* EHS does not check the validity of shortcuts; it's up to the admin to ensure that shortcuts are valid in all circumstances. 
+* EHS does not check the validity of shortcuts; it's up to the administrator to ensure that shortcuts are valid in all circumstances. 
 
 <b>Android Notes</b>:
 
 * The Android Launcher monitors the same broadcast intent as EHS, and therefore also receives shortcuts sent to EHS. 
 * If the Android Home screen space limit is reached, Android Launcher displays an error message in EHS. 
-* To elimiate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
+* To eliminate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
 
 ------
 

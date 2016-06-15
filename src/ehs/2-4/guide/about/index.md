@@ -12,6 +12,10 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
+
+[What's new in EHS 2.4](#what'snew)? 
+------
+
 The first time it's installed, EHS presents the admin with this simple choice: 
 <img style="height:150px" src="homePrompt.png"/>
 
@@ -237,6 +241,8 @@ _The icon size UI is accessible from Admin or User Modes (default shown)_.
 _The User Mode screen with XXL icons_. -->
 * **Single View for Battery and Wi-Fi -** displays real-time status of both on a single screen:
 <img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
+<br>
+
 The Battery and Wi-Fi "Quick View" screen is accessed using a new "Info" control: 
 <img alt="" style="height:350px" src="2-4_info_icon.png"/>
 

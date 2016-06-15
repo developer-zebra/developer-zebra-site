@@ -221,21 +221,21 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ### New in EHS 2.4:
 
-* **[Bundle Data](../settings#bundle) -** allows app parameters, user data or other key-value pairs to be injected via XML into an app when it launches. 
+* **[Bundle Data](../settings#bundle) -** option to inject app parameters, user data or other key-value pairs into an app when it launches. 
 
 * **[Service Auto Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
 
-* **[Custom User-Screen Icons](../settings#icon) -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
+* **[Custom App Icons](../settings#icon) -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
 
-* **[Wildcard Character](../settings#applications) in &lt;applications&gt; Section-** reduces the lines of code required in the EHS config file for displaying User-Mode apps.
+* **[Wildcard Character](../settings#applications) -** reduces the lines of code required for EHS config file to specify apps for display in User Mode.
 
-* **[App Icon Size](../settings#appiconsize) -** provides five pre-set sizes for User-mode application icons: 
-<img alt="" style="height:350px" src="2-4_icon_size.png"/>
+* **[App Icon Size](../settings#appiconsize) -** provides pre-set sizes for User-mode application icons: 
+
+<!-- <img alt="" style="height:350px" src="2-4_icon_size.png"/>
 _The icon size UI is accessible from Admin or User Modes (default shown)_.  
 <img alt="" style="height:350px" src="2-4_xxl_icons.png"/>
-_The User Mode screen with XXL icons_. 
-
-* **Single View for Battery and Wi-Fi -** displays status of both on a single screen in real time:
+_The User Mode screen with XXL icons_. -->
+* **Single View for Battery and Wi-Fi -** displays real-time status of both on a single screen:
 <img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
 The Battery and Wi-Fi "Quick View" screen is accessed using a new "Info" control: 
 <img alt="" style="height:350px" src="2-4_info_icon.png"/>

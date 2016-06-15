@@ -337,7 +337,11 @@ _Icon size is accessible from Admin or User Modes_.
 _Medium (shown) is the default icon size_. 
 <br>
 
-**To set through the** `enterprisehomescreen.xml` **file**: 
+<img alt="" style="height:350px" src="app_icon_sizes.png"/>
+_App icons can be displayed in any of these five sizes_. 
+<br>
+
+**To set icon size through the** `enterprisehomescreen.xml` **file**: 
 
 <b>Possible values</b>:
 
@@ -847,10 +851,14 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 ### Bundle
 Permits the option of injecting key-value pairs via XML into an app when it launches. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file and cannot be used with links. 
 
-The key and value portions of the bundle are separated by an equal sign (=), and multiple bundles are separated by a semi-colon (;). 
+**Bundle Notes**:
+* Bundled data is handled as a character string; app is responsible for converting data type as needed.  
+* The key and value portions of the bundle are separated by an equal sign (=). 
+* Bundles are separated by a semi-colon (;). 
+* Apps that include bundled data will behave the same in Admin Mode as in User Mode. 
 
 <b>Possible values</b>:
-* character string (format: "field_1=data;field_2=more_data")
+* character string
 
 #### Example
 
@@ -859,11 +867,7 @@ The key and value portions of the bundle are separated by an equal sign (=), and
         bundle="name=John Brown;code=2000;country=US;date=090615"/>   
     </applications>
 
-**Bundle Notes**:
 
-* Bundled data is handled as a character string; app is responsible for converting data type as needed.  
-* Apps that include bundled data will behave the same in Admin Mode as in User Mode. 
- 
 ------
 
 ### Icon

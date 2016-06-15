@@ -179,7 +179,7 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * Label: string 
 * Package: app package name 
@@ -238,10 +238,24 @@ When specifying links, the package and activity parameters can be used to launch
 
 **Wildcard rules**:
 
-* Apps selected by wildcard will be displayed on the User-Mode screen in alphabetical order.
+* Each group of apps selected by wildcard will be displayed on the User-Mode screen in alphabetical order relative to that group.
+* Zebra apps always will be displayed before wildcard-selected apps.
 * Apps selected by wildcard cannot be removed using the long-press feature in Admin Mode. 
 * Apps excluded from a wildcard search cannot be added using the long-press feature in Admin Mode.
+* The exclude command does not support the wildcard character; apps must be excluded one at a time.  
 * If left undefined in XML, application labels will be applied to icons from the manifest file.  
+* The wildcard character may only appear once per line and **must** appear at the end. 
+* The following wildcard searches have been blocked as a security measure: 
+    * com.android.*
+    * com.android*
+    * com.androi*
+    * com.andro*
+    * com.andr*
+    * com.and*
+    * com.an*
+    * com.a*
+    * com.*
+
 
 #### URL Example
 
@@ -265,7 +279,7 @@ In the example above, the package and activity attributes are used to launch the
 ### Tools
 Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>Note</b>: Package names may vary from one Android version to another. 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 * Label: string
 * Package: app package name 
 * Activity (optional): name of the activity to be invoked when the app starts
@@ -286,7 +300,7 @@ Stores the encrypted password for logging into Admin Mode (blank by default). <b
 <img alt="" style="height:350px" src="admin_password.png"/>
 The admin password <b><i>must</i></b> be entered and changed using the Admin Tools menu in the EHS GUI. 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * (for EHS use only; direct user input is not supported for this tag)
 
@@ -298,19 +312,97 @@ The admin password <b><i>must</i></b> be entered and changed using the Admin Too
 
 ------
 
+### App Icon Size
+Permits the size of application icons to be set to Small, Medium, Large, Extra Large and Extra Extra Large . Icon size can be controlled through the `enterprisehomescreen.xml` file or through the device UI while in Admin or User Modes. 
+
+**To change the icon size through the UI**:
+
+In Admin or User Mode, **tap the "hamburger" menu** and **select Icon settings**: 
+<img alt="" style="height:350px" src="2-4_icon_menu.png"/>
+_Icon size is accessible from Admin or User Modes_.
+<br>
+
+**Tap on the desired icon size**, then tap OK. Selected size is immediately applied. 
+<img alt="" style="height:350px" src="2-4_icon_size.png"/>
+_Medium (shown) is the default icon size_. 
+<br>
+
+**To set through the** `enterprisehomescreen.xml` **file**: 
+
+<b>Possible values</b>:
+
+* S = Small icons
+* M = Medium-sized icons
+* L = Large icons
+* XL = Extra large icons
+* XXL = Extra extra large icons
+
+#### Example
+
+    <user_options>   
+        <app_icon_size>XL</app_icon_size>   
+    <user_options>
+
+
+------
+
 ### Preferences
-These tags control various aspects of EHS behavior, security and display settings. Tags can appear in any order between the &lt;preferences&gt; &lt;/preferences&gt; tags. 
+Control various aspects of EHS behavior, security and display settings. Preferences tags can appear in any order between the &lt;preferences&gt; &lt;/preferences&gt; tags. 
+
+------
 
 #### Title
-Specifies the title bar text for the EHS app. Default of 'Enterprise Home Screen' can be changed to any string of characters. 
+Specifies the title bar text for the EHS app. The default title "Enterprise Home Screen" can be changed to any string of characters. 
 
-<b>Possible values</b>
+<img alt="" style="height:350px" src="title_bar_1.png"/>
+
+<b>Possible values</b>:
 
 * character string
 
 #### Example
 
-    <title>Enterprise Home Screen</title>
+    <title>MetaCorp Home Screen</title>
+
+------
+
+#### Title Bar Icon Disabled
+Controls whether an icon will be displayed in the Title Bar. **A value of 0 (false) will allow EHS to display a custom icon**. 
+
+<img alt="" style="height:350px" src="title_bar_2.png"/>
+
+<b>Possible values</b>:
+
+* <b>1 (disabled by default)</b>
+* 0 
+
+#### Example
+    <preferences>
+    ...
+        <title_bar_icon>
+            <title_bar_icon_disabled>0</title_bar_icon_disabled>
+            <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
+        </title_bar_icon >
+    ...
+
+------
+
+#### Title Bar Icon File
+Allows an image to be specified for display in the EHS Title Bar. <!-- Supports .jpg and .png image formats.--> Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled to 204 x 204 pixels using the aspect ratio of the image. Default EHS icon will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
+
+<img alt="" style="height:350px" src="title_bar_3.png"/>
+
+<b>Possible values</b>:
+
+* fully qualified path to local (on-device) file
+
+#### Example
+
+    <title_bar_icon>
+        <title_bar_icon_disabled>0</title_bar_icon_disabled>
+        <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
+    </title_bar_icon >
+
 
 ------
 
@@ -318,13 +410,16 @@ Specifies the title bar text for the EHS app. Default of 'Enterprise Home Screen
 Specifies the background color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. Default is #AAFFFFFF, white with an opacity value of AA (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_bg.png"/>
+<br>
+
+**Code Key**:
 
 * AA specifies the opacity 
 * RR specifies the level of RED
 * GG specifies the level of GREEN
 * BB specifies the level of BLUE
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * HTML hexadecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
 * Color names: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray and darkgray.
@@ -343,13 +438,16 @@ Specifies the background color of the icon label text of applications displayed 
 Specifies the color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. The EHS default is #FF000000, black with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_text.png"/>
+<br>
+
+**Code Key**:
 
 * AA specifies the opacity 
 * RR specifies the level of RED
 * GG specifies the level of GREEN
 * BB specifies the level of BLUE
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * HTML hexadecimal color code values with or without opacity prefix (#RRGGBB or #AARRGGBB)
 * Color names: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray and darkgray.
@@ -368,7 +466,7 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 
 <img alt="" style="height:350px" src="orientation.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * landscape
 * portrait
@@ -385,7 +483,7 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 
 <img alt="" style="height:350px" src="autolaunch.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default)</b>
@@ -402,7 +500,7 @@ Enables one or more services to be automatically launched after EHS starts up. W
 
 <img alt="" style="height:350px" src="2-4_service_auto-launch.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default)</b>
@@ -418,7 +516,7 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
 <img alt="" style="height:350px" src="wallpaper.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * fully qualified path to local (on-device) file
 
@@ -433,7 +531,7 @@ EHS can be made to run in fullscreen mode by setting the value of this tag to 1.
 
 <img alt="" style="height:350px" src="fullscreen.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1 (sets EHS to run in full screen mode)
 * <b>0 (default)</b>
@@ -455,7 +553,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default)</b>
@@ -473,7 +571,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 
 > Note: Changes to this setting will cause an automatic device reboot, a requirement for changes to take effect. 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default)</b>
 * 0
@@ -489,7 +587,7 @@ Controls whether the Android Status Bar can be pulled down to reveal controls an
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default)</b>
@@ -505,7 +603,7 @@ Controls whether shortcuts may be added to local or remote apps through Android 
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default)</b>
@@ -519,7 +617,7 @@ Controls whether shortcuts may be added to local or remote apps through Android 
 ### Exit Instead of Reboot
 Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag will be overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default)</b>
@@ -533,7 +631,7 @@ Controls whether EHS will trigger an automatic device reboot when a setting that
 ### Reboot on Install Enabled
 Controls whether the device will automatically reboot when EHS is launched for the first time after a successful installation, a requirement to activate EHS. Permits Mobile Device Management (MDM) systems to maintain device control following installation. Automatic device reboot is disabled by default. <b>Note: When enabled, this tag will override any setting of the [&lt;exit_instead_of_reboot&gt;](#exitinsteadofreboot) tag</b>. 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * 1
 * <b>0 (default, do not reboot)</b>
@@ -551,7 +649,7 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
 
 <img alt="" style="height:350px" src="airplane_disable.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default)</b>
 * 0 
@@ -573,7 +671,7 @@ The Android Keyguard (also known as the Lock Screen).
 <img alt="" style="height:350px" src="bypass_keyguard.png"/>
 <br> 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default, Keyguard not displayed) </b>
 * 0 
@@ -589,7 +687,7 @@ Controls whether the device camera will be accessible from the Keyguard screen (
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default)</b>
 * 0 
@@ -605,7 +703,7 @@ Controls whether the Search app will be accessible from the Keyguard screen (als
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default)</b>
 * 0 
@@ -621,7 +719,7 @@ Controls whether communication via USB is permitted between the device and a com
 
 <img alt="" style="height:350px" src="usb_debug_disable.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default)</b>
 * 0 
@@ -637,7 +735,7 @@ Controls whether full or limited settings are available when the device is in Us
 
 <img alt="" style="height:350px" src="settings_restrict.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * <b>1 (default)</b>
 * 0 
@@ -666,7 +764,7 @@ Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used, and 
 
 <img alt="" style="height:350px" src="autolaunch.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 * application delay: integer (milliseconds)
 * package: app package name 
 * activity (optional): name of the activity to be invoked when the app starts
@@ -780,7 +878,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 * To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag. 
 * These tags cannot be used to disable DataWedge or other services. 
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * Package: app package name 
 
@@ -831,7 +929,7 @@ Controls the time (in seconds) that a device will remain in Admin Mode without a
 
 <img alt="" style="height:350px" src="admin_timeout.png"/>
 
-<b>Possible values</b>
+<b>Possible values</b>:
 
 * integer (in seconds) 
 

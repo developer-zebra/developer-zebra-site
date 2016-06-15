@@ -227,9 +227,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **[Custom User-Screen Icons](../settings#icon) -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
 
-* **Wildcard Character in [&lt;applications&gt; Section](../settings#applications)-** reduces the lines of code required in the EHS config file for displaying User-Mode apps.
+* **[Wildcard Character](../settings#applications) in &lt;applications&gt; Section-** reduces the lines of code required in the EHS config file for displaying User-Mode apps.
 
-* **Adjustable Icon Size -** provides five pre-set sizes for User-mode application icons: 
+* **[App Icon Size](../settings#appiconsize) -** provides five pre-set sizes for User-mode application icons: 
 <img alt="" style="height:350px" src="2-4_icon_size.png"/>
 _The icon size UI is accessible from Admin or User Modes (default shown)_.  
 <img alt="" style="height:350px" src="2-4_xxl_icons.png"/>

@@ -5,7 +5,7 @@ type: parm
 order: 22
 mx: "6.0"
 parm:
-  presentif: Vibrate on Keypress is "Enable"
+  presentif: Vibrate on Keypress is set to "Enable"
   pivotal: No
   name: VibrateOnKeypress
   type: list

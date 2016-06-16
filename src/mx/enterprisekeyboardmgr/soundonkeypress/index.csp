@@ -11,14 +11,14 @@ parm:
   list:
     - code: 0
       mx: "6.0"
-      name: No change
+      name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
-      name: Yes
+      name: Turn on
       mx: "6.0"
       description: Enables Sound On Keypress feature.
     - code: 2
-      name: No
+      name: Turn off
       mx: "6.0"
       description: Disables the Sound On Keypress feature.
 ---

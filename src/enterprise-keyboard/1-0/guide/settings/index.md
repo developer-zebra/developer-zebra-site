@@ -231,24 +231,23 @@ Remapping panel shows current settings of remappable keys:
 ## DataWedge
 The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](/datawedge/5-0/guide/about), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
 
-Locate and <b>tap the DataWedge icon</b> on the device. 
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
 
-
-#####Enable DataWedge on a device (or confirm that it's enabled): 
+**To enable DataWedge on a device (or confirm that it's enabled)**: 
 
 &#49;. Locate and <b>tap the DataWedge icon</b> on the device. 
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>
 <br>
 
-&#50;. Tap the DataWedge menu (arrow), then <b>Tap the "Settings" menu item</b>: 
+&#50;. Tap the DataWedge "hamburger" menu (see arrow), then <b>Tap "Settings"</b>: 
 <img alt="" style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. Confirm that <b>"DataWedge enabled"</b> box is checked. 
+&#51;. The DataWedge Settings panel appears. Confirm that <b>"DataWedge enabled"</b> box is checked. 
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 
-For more information, see to [Enterprise Keyboard Setup](../setup) and the [DataWedge User Guide](/datawedge/5-0/guide/about).
+For more information about scanning with the Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
+Also see the [DataWedge User Guide](/datawedge/5-0/guide/about).

@@ -9,6 +9,8 @@ Personal Dictionary Manager is used to administer changes to the custom word rep
 
 Similarly, the Shortcut feature allows words or phrases to be assigned a shortcut of one or more letters that can be automatically replaced with the corresponding word or phrase. This can be useful for storing industry terms to help improve the speed and accuracy of keyboard input. For example, if configuring a medical device, the phrase "gastroesophageal reflux disease" could be added to the dictionary and assigned the shortcut "gerd," which would be replaced with the longer term any time gerd was typed. 
 
+See the [Enterprise Keyboard User Guide](../../enterprise-keyboard/1-0/guide/about/) for more information. 
+
 ### Main Functionality
 
 * Add a word or phrase

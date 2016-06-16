@@ -250,12 +250,12 @@ To install EHS manually using the automatic target selection (`EHS_020300.apk`) 
 
 &#52;. <b>Locate and launch</b> `EHS_020300.apk`:
 
-<img alt="" style="height:500px" src="file_browser_search.png"/>
+<img alt="" style="height:350px" src="file_browser_search.png"/>
 <br>
 
 &#53;. <b>Tap Install</b>:
 
-<img alt="" style="height:500px" src="ehs_installer.png"/>
+<img alt="" style="height:350px" src="ehs_installer.png"/>
 <br>
 
 &#54;. After installation, <b>tap Open</b>:
@@ -444,7 +444,7 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Instal
 
 Manual uninstallation of EHS is now complete. 
 
-> <b>Note</b>: Some device settings configured by EHS might not revert to their original state prior to installation. Please make sure to reconfigure the device as required <u>before</u> removing EHS. 
+> <b>Note</b>: Following uninstallation of EHS, some device settings configured by EHS might not revert to their original state prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
@@ -517,7 +517,7 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 Remote uninstallation of EHS is now complete. 
 
 ## Change the Default Launcher
-Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, progrmmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
+Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
 
 To manually change the default launcher on a device without removing EHS: 
 
@@ -530,15 +530,15 @@ To manually change the default launcher on a device without removing EHS:
 
 <b>Note</b>: The trash can icon seen here offers an alternative means of uninstalling EHS and restoring the Android Launcher. 
 
+## Battery and Wi-Fi Quick View
+In addition to the separate panels for viewing Battery and Wi-Fi status provided in the "hamburger" menus of Admin and User Modes, EHS provides Quick View, alternate way of accessing real-time status of these critical devices from a single screen.
 
+**To view Battery and Wi-Fi status**: 
 
+From Admin or User Mode, **tap the "i" icon** as indicated below:
+<img alt="" style="height:350px" src="2-4_info_icon.png"/>
 
-
-
-
-
-
-
-
-
+The Battery/Wi-Fi panel appears, displaying real-time status of both devices:
+<img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
+<br>
 

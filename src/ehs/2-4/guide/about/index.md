@@ -13,7 +13,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
 
-[What's new in EHS 2.4](#whatsnew)?
+**[New in EHS 2.4](#whatsnew)**
 
 ------
 
@@ -226,30 +226,27 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ### New in EHS 2.4:
 
-* **[Bundle Data](../settings#bundle) -** option to inject app parameters, user data or other key-value pairs into an app when it launches. 
+* **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 
-* **[Service Auto Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
+* **[Service Auto-Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
 
-* **[Custom App Icons](../settings#icon) -** permits customized icons to be included on the User Screen for apps and links, overriding the default system icons. 
+* **[Wildcard Character](../settings#applications) -** reduces the lines of code required in EHS config file to specify apps for display in User Mode.
 
-* **[Wildcard Character](../settings#applications) -** reduces the lines of code required for EHS config file to specify apps for display in User Mode.
+* **[Custom App Icons](../settings#icon) -** permits customized icons for apps and links, overriding the default system icons. 
 
-* **[App Icon Size](../settings#appiconsize) -** provides pre-set sizes for User-mode application icons: 
+* **[App Icon Size](../settings#appiconsize) -** provides pre-set sizes for User-mode application icons.
 
 <!-- <img alt="" style="height:350px" src="2-4_icon_size.png"/>
 _The icon size UI is accessible from Admin or User Modes (default shown)_.  
 <img alt="" style="height:350px" src="2-4_xxl_icons.png"/>
 _The User Mode screen with XXL icons_. -->
-* **Single View for Battery and Wi-Fi -** displays real-time status of both on a single screen:
-<img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
-<br>
+* **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of battery and Wi-Fi on a single screen.
 
-The Battery and Wi-Fi "Quick View" screen is accessed using a new "Info" control: 
-<img alt="" style="height:350px" src="2-4_info_icon.png"/>
+> To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen).
 
 ------
 
-New features added in v2.3:
+New in  EHS 2.3:
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)
 

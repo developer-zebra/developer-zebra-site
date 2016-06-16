@@ -305,14 +305,14 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 ------
 
 ### Passwords
-Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file</b>. The administrator password will be stored here by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
+Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file or edit it in any way</b>. The administrator password will be stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
 
 <img alt="" style="height:350px" src="admin_password.png"/>
 The admin password <b><i>must</i></b> be entered and changed using the Admin Tools menu in the EHS GUI. 
 
 <b>Possible values</b>:
 
-* (for EHS use only; direct user input is not supported for this tag)
+* (EHS USE ONLY; DO NOT ADD TO OR EDIT THE CONTENTS OF THIS TAG)
 
 #### Example
 
@@ -761,7 +761,7 @@ Controls whether full or limited settings are available when the device is in Us
 ------
 
 ## Optional Feature Tags
-This section covers optional features and tags not included in the `enterprisehomescreen.xml` file by default. These tags are added by EHS for enabled options or can be added asneeded by an administrator.
+This section covers optional features and tags not included in the `enterprisehomescreen.xml` file by default. These tags are added by EHS for enabled options or can be added as needed by an administrator.
 
 ### Auto Launch
 Permits any number of apps to be launched when EHS starts up. Similar to [Kiosk Mode](#kiosk), auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. <b>Note</b>: Package names may vary from one Android version to another. 
@@ -795,7 +795,7 @@ Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used, and 
 ### Service Auto Launch
 Permits any number of services to be launched when EHS starts up. This can be useful as a means of checking for software updates. Automatically launched services must be specified in a separate section of the `enterprisehomescreen.xml` file.The feature can be activated in the admin UI or with a tag in the Preferences section. 
 
-**Important**: The delay times for app and service auto-launch all begin at the same time--when EHS first starts up--relative to other apps or services. Delay times are cumulative for each type. For example, if App1 is given a delay of 2000 ms, App2 a delay of 4000, Service1 a delay of 3000 ms and Service2 a delay of 1000 ms, the order of execution would be: 
+**Important**: The delay times for app and service auto-launch all begin at the same time--when EHS first starts up--relative to other apps or services. Delay times are cumulative for each type. For example, if App1 is given a delay of 2000 ms, App2 a delay of 4000, Svc1 a delay of 3000 ms and Svc2 a delay of 1000 ms, the order of execution would be: 
 
 * App1 two seconds after EHS launch
 * Svc1 one second later (3000 ms after EHS launch) 

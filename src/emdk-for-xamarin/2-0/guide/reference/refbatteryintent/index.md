@@ -224,12 +224,12 @@ Please reference the Android Battery Manager [API](http://developer.android.com/
 
 In addition to the battery information Android returns by default, which can be found [here](http://developer.android.com/reference/android/os/BatteryManager.html), Symbol devices return the following additional parameters: 
 
-* **bkvoltage** - Backup Battery Voltage
-* **mfd** - Battery Manufacture Date
-* **serialnumber** - Battery Serial Number
-* **partnumber** - Part Number for Battery
-* **ratedcapacity** - Rated Capacity of the Battery
-* **cycle** - Charge Cycle count of the Battery
+* **bkvoltage**
+* **mfd**
+* **serialnumber** 
+* **partnumber**
+* **ratedcapacity**
+* **cycle**
 * **battery_decommission** 
 * **battery_usage_numb**   
 

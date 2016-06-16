@@ -236,15 +236,15 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 
 **To enable DataWedge on a device (or confirm that it's enabled)**: 
 
-&#49;. Locate and <b>tap the DataWedge icon</b> on the device. 
+&#49;. On the device, locate and <b>tap the DataWedge icon</b>: 
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>
 <br>
 
-&#50;. Tap the DataWedge "hamburger" menu (see arrow), then <b>Tap "Settings"</b>: 
+&#50;. From the DataWedge Profiles screen, tap the "hamburger" menu (see arrow), then <b>Tap "Settings"</b> on the menu: 
 <img alt="" style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. The DataWedge Settings panel appears. Confirm that <b>"DataWedge enabled"</b> box is checked. 
+&#51;. The DataWedge Settings panel appears. Confirm that the <b>"DataWedge enabled"</b> box is checked. 
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 

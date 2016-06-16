@@ -10,7 +10,7 @@ parm:
   type: string
 ---
 
-Used to specify a character, UNICODE value or EMOJI selection  panel for substitution with the default key on the Numeric Keypad Row 4, Column 1. **If this field is left empty, it makes no change and retains any previously selected value**.
+Used to specify a character, UNICODE value or EMOJI selection panel for substitution with the default key on the Numeric Keypad Row 4, Column 1. **If this field is left empty, it makes no change and retains any previously selected value**.
 
 **Parm input rules:**
 

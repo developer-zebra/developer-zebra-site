@@ -18,15 +18,15 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 
 * **SoftScanTrigger -** used to start, stop or toggle a software scanning trigger
 * **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
-* **enumerateScanners -** returns a list of scanners available on the device
-* **setDefaultProfile -** sets the specified Profile as the default Profile
-* **resetDefaultProfile -** resets the default Profile to Profile0
-* **switchToProfile -** switches to the specified Profile
+* **EnumerateScanners -** returns a list of scanners available on the device
+* **SetDefaultProfile -** sets the specified Profile as the default Profile
+* **ResetDefaultProfile -** resets the default Profile to Profile0
+* **SwitchToProfile -** switches to the specified Profile
 
 ------
 
 ### SoftScanTrigger
-The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger.
+The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
 
 ####FUNCTION PROTOTYPE
 
@@ -87,7 +87,9 @@ The received API commands are not queued; API commands are processed immediately
 ------
 
 ### ScannerInputPlugin
-The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in in the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile (associated or unassociated).
+The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in being used by the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile, regardless of whether the Profile is associated or unassociated. **Valid only when Barcode Input is enabled in the active Profile**. 
+
+**Note**: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile. 
 
 ####FUNCTION PROTOTYPE
 

@@ -1007,7 +1007,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ------
 
 ### App Launch Flags 
-EHS supports the option of setting of Android Intent flags when an application is launched. This permits the launch mode of an app to be specified, overriding any Intent flag(s) statically defined in the Android Manifest. This can be useful, for example, to allow an app to resume where it left off after an accidental press of the HOME key following a scan. 
+EHS supports the option of setting one or more Android Intent flags when an application is launched. This permits the launch mode of an app to be specified, overriding any Intent flag(s) statically defined in the Android Manifest. This can be useful, for example, to allow an app to resume where it left off after an accidental press of the HOME key following a scan. 
 
 App Launch Flags can be assigned to any EHS app or group of apps. This included Kiosk apps, apps launched manually and using the auto-launch feature. Intent flags also can be assigned to all applications in a given group, for example to all specified as Tools-menu apps. If a flag is assigned to an app in more than one node (i.e. individually and in the Tools menu), the flag(s) assigned to the individual app will take precedence. 
 
@@ -1033,15 +1033,16 @@ App Launch Flags can be assigned to any EHS app or group of apps. This included 
 
 ####Examples
 
-Flag assignment at the &lt;application&gt; level (to an individual app): 
-    <applications>
-        <application label="contacts" package="ccom.android.contacts"  activity=""/>  <application label="Manual Scanning" package="com.royalmail.pda"  activity="" app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK" />
-      
-        <application label="TestAppBundle" package="com.example.testappbundledata" activity="com.example.testappbundledata.MainActivity" icon="/sdcard/bb/pic.png" bundle="name=John alryruuuu;code=2000;country=SL;date=09042016"/>
+Flag assignment at the &lt;application&gt; level (applies to an individual app): 
+
+     <applications>
+     ...
+        <application label="Manual Scanning" package="com.royalmail.pda"  activity="" app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK" />
+      ...
     </applications>
 
 
-Flag assignment at the &lt;applications&gt; level (to all specified apps): 
+Flag assignment at the &lt;applications&gt; level (applies to all specified apps): 
 
     <applications app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
         <application label="contacts" package="ccom.android.contacts"  activity=""/>
@@ -1050,6 +1051,13 @@ Flag assignment at the &lt;applications&gt; level (to all specified apps):
         <application label="TestAppBundle" package="com.example.testappbundledata"  activity="com.example.testappbundledata.MainActivity" icon="/sdcard/bb/pic.png" bundle="name=John  Brown;code=2000;country=SL;date=09042016"/>
     </applications>
 
+Flag assignment at the &lt;tools&gt; level (applies to all apps in the Tools Menu): 
+
+    <tools app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
+        <application label="Calculator" package="com.android.calculator2" activity=""/>
+        <application label="Rapid Deployment" package="com.motorola.msp" activity="com.motorola.msp.client.RDMenu"/>
+        <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+    </tools>
 
 ------
 

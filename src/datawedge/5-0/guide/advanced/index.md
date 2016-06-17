@@ -35,7 +35,7 @@ _The DataWedge Settings panel_.
 
 * **Export -** Exports the current DataWedge configuration to device storage. 
 
-* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it     will be replaced by the imported one. 
+* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it will be modified by the imported one. 
 
 * **Export Profile -** Exports an individual DataWedge profile to device storage.
 
@@ -92,7 +92,7 @@ If an external SD card is installed, an alternate path can be selected:
 ### Import a Profile
 Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field. For more information, see Export a Profile, below.  
 
-While the Profile importing _process_ is similar to that of the Configuration file, and both replace what came before, the Profile _itself_ is very different. A Profile contains settings that control how DataWedge will behave with one or more specific applications. A Config file might contain numerous Profiles as well as other DataWedge settings, and when imported, **overwrites all previous DataWedge settings and Profiles**. 
+While the Profile importing _process_ is similar to that of the Configuration file (and both replace what came before), the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. When a Config file is imported, it **overwrites all previous DataWedge settings and Profiles**. Importing a Profile modifies the settings of any existing Profile of the same name (if such a Profile exists). If no like-named Profile is present on the device, the imported Profile is simply added to the list of available Profiles on the device. 
 
 **To Import a DataWedge Profile**:  
 
@@ -102,7 +102,7 @@ While the Profile importing _process_ is similar to that of the Configuration fi
 
 &#50;. **Navigate to the file being imported** from device storage using the interface provided: 
 <img style="height:350px" src="03_import_profile.png"/>
-**Warning**: If a Profile of the same name already exists on the device, it will be replaced by the imported one. 
+**Warning**: If a Profile of the same name already exists on the device, it will be modified by the imported one. 
 <br>
 
 ### Export a Profile

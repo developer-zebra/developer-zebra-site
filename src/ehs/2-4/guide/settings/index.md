@@ -337,7 +337,7 @@ _Icon size is accessible from Admin or User Modes_.
 _Medium (shown) is the default icon size_. 
 <br>
 
-<img alt="" style="height:350px" src="app_icon_sizes.png"/>
+<img alt="" style="height:500px" src="app_icon_sizes.png"/>
 _App icons can be displayed in any of these five sizes_. 
 <br>
 
@@ -361,7 +361,7 @@ _App icons can be displayed in any of these five sizes_.
 ------
 
 ### Preferences
-Control various aspects of EHS behavior, security and display settings. Preferences tags can appear in any order between the &lt;preferences&gt; &lt;/preferences&gt; tags. 
+Control various aspects of EHS behavior, security and display settings corresponding to options configured in the EHS Preferences UI panel. Tags of individual preferences can appear in any order, but **must be contained within the &lt;preferences&gt; &lt;/preferences&gt; node**. 
 
 ------
 
@@ -402,13 +402,13 @@ Controls whether an icon will be displayed in the Title Bar. **A value of 0 (fal
 ------
 
 #### Title Bar Icon File
-Allows an image to be specified for display in the EHS Title Bar. <!-- Supports .jpg and .png image formats.--> Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled to 204 x 204 pixels using the aspect ratio of the image. Default EHS icon will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
+Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled to 204 x 204 pixels using the aspect ratio of the image. Default EHS icon will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
 
 <img alt="" style="height:350px" src="title_bar_3.png"/>
 
 <b>Possible values</b>:
 
-* fully qualified path to local (on-device) file
+* fully qualified local (on-device) path to a .bmp, .jpg or .png file
 
 #### Example
 
@@ -532,7 +532,7 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
 <b>Possible values</b>:
 
-* fully qualified path to local (on-device) file
+* fully qualified local (on-device) path to file
 
 #### Example
 
@@ -763,6 +763,8 @@ Controls whether full or limited settings are available when the device is in Us
 ## Optional Feature Tags
 This section covers optional features and tags not included in the `enterprisehomescreen.xml` file by default. These tags are added by EHS for enabled options or can be added as needed by an administrator.
 
+------
+
 ### Auto Launch
 Permits any number of apps to be launched when EHS starts up. Similar to [Kiosk Mode](#kiosk), auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. <b>Note</b>: Package names may vary from one Android version to another. 
 
@@ -793,7 +795,7 @@ Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used, and 
 ------
 
 ### Service Auto Launch
-Permits any number of services to be launched when EHS starts up. This can be useful as a means of checking for software updates. Automatically launched services must be specified in a separate section of the `enterprisehomescreen.xml` file.The feature can be activated in the admin UI or with a tag in the Preferences section. 
+Permits any number of services to be launched when EHS starts up. This can be useful as a means of checking for software updates. Automatically launched services must be specified in a separate section of the `enterprisehomescreen.xml` file. The feature can be activated in the admin UI or with a tag in the Preferences section. <b>Auto-launch services need not be listed in the &lt;applications&gt; section</b>. 
 
 **Important**: The delay times for app and service auto-launch all begin at the same time--when EHS first starts up--relative to other apps or services. Delay times are cumulative for each type. For example, if App1 is given a delay of 2000 ms, App2 a delay of 4000, Svc1 a delay of 3000 ms and Svc2 a delay of 1000 ms, the order of execution would be: 
 
@@ -848,14 +850,16 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
     <service action="com.sample.androidserviceexample.MyService.downloadfile"/>
 
 ------
+
 ### Bundle
-Permits the option of injecting key-value pairs via XML into an app when it launches. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file and cannot be used with links. 
+Permits the option of injecting key-value pairs via XML into an app when it launches. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file. **Bundle is not supported for use with links or services**. 
 
 **Bundle Notes**:
 * Bundled data is handled as a character string; app is responsible for converting data type as needed.  
 * The key and value portions of the bundle are separated by an equal sign (=). 
 * Bundles are separated by a semi-colon (;). 
 * Apps that include bundled data will behave the same in Admin Mode as in User Mode. 
+* Bundle is not supported for use with links or services.
 
 <b>Possible values</b>:
 * character string
@@ -871,7 +875,7 @@ Permits the option of injecting key-value pairs via XML into an app when it laun
 ------
 
 ### Icon
-Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. Supports .jpg and .png image formats. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon will be used if tag is left blank or specified icon is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. **Compatible with EHS Secure Mode**.  
+Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon will be used if tag is left blank or specified icon is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. **Compatible with EHS Secure Mode**.  
 
 #### Examples
 
@@ -879,7 +883,7 @@ Permits a custom graphic to be specified in place of the system or default icon 
         
     <link label="yahoo" url="http://www.yahoo.com" package="org.mozilla.firefox" activity="org.mozilla.firefox.App" icon="/enterprise/usr/newIcon.jpg" />
 
-    <application label="WebMenu" package="com.motorolasolutions.motordp" activity="com.freerdp.freerdpcore.presentation.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.png"/>
+    <application label="WebMenu" package="com.motorolasolutions.motordp" activity="com.freerdp.freerdpcore.presentation.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.bmp"/>
 
 ------
 
@@ -1001,6 +1005,54 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 * To eliminate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
 
 ------
+
+### App Launch Flags 
+EHS supports the option of setting of Android Intent flags when an application is launched. This permits the launch mode of an app to be specified, overriding any Intent flag(s) statically defined in the Android Manifest. This can be useful, for example, to allow an app to resume where it left off after an accidental press of the HOME key following a scan. 
+
+App Launch Flags can be assigned to any EHS app or group of apps. This included Kiosk apps, apps launched manually and using the auto-launch feature. Intent flags also can be assigned to all applications in a given group, for example to all specified as Tools-menu apps. If a flag is assigned to an app in more than one node (i.e. individually and in the Tools menu), the flag(s) assigned to the individual app will take precedence. 
+
+<b>Supported flags</b>:
+
+* Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT;
+* Intent.FLAG_ACTIVITY_CLEAR_TASK;
+* Intent.FLAG_ACTIVITY_CLEAR_TOP;
+* Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET;
+* Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS;
+* Intent.FLAG_ACTIVITY_FORWARD_RESULT;
+* Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY;
+* Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
+* Intent.FLAG_ACTIVITY_NEW_TASK;
+* Intent.FLAG_ACTIVITY_NO_ANIMATION;
+* Intent.FLAG_ACTIVITY_NO_HISTORY;
+* Intent.FLAG_ACTIVITY_NO_USER_ACTION;
+* Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP;
+* Intent.FLAG_ACTIVITY_REORDER_TO_FRONT;
+* Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;
+* Intent.FLAG_ACTIVITY_SINGLE_TOP;
+* Intent.FLAG_ACTIVITY_TASK_ON_HOME;
+
+####Examples
+
+Flag assignment at the &lt;application&gt; level (to an individual app): 
+    <applications>
+        <application label="contacts" package="ccom.android.contacts"  activity=""/>  <application label="Manual Scanning" package="com.royalmail.pda"  activity="" app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK" />
+      
+        <application label="TestAppBundle" package="com.example.testappbundledata" activity="com.example.testappbundledata.MainActivity" icon="/sdcard/bb/pic.png" bundle="name=John alryruuuu;code=2000;country=SL;date=09042016"/>
+    </applications>
+
+
+Flag assignment at the &lt;applications&gt; level (to all specified apps): 
+
+    <applications app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
+        <application label="contacts" package="ccom.android.contacts"  activity=""/>
+        <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+        <application label="Calculator" package="com.android.calculator2" activity=""/>
+        <application label="TestAppBundle" package="com.example.testappbundledata"  activity="com.example.testappbundledata.MainActivity" icon="/sdcard/bb/pic.png" bundle="name=John  Brown;code=2000;country=SL;date=09042016"/>
+    </applications>
+
+
+------
+
 
 See the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode, Lockdown State and other special EHS features and behaviors. 
 

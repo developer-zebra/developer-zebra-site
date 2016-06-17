@@ -219,6 +219,18 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
     4.4</font></p>
 </td>
 </tr>
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><font color="#333399" size="4">Lollipop</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
+    5.0</font></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -241,6 +253,8 @@ _The icon size UI is accessible from Admin or User Modes (default shown)_.
 <img alt="" style="height:350px" src="2-4_xxl_icons.png"/>
 _The User Mode screen with XXL icons_. -->
 * **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of battery and Wi-Fi on a single screen.
+
+* **Supports the Zebra WT6000 -** running Android 5.0 Lollipop; EHS 2.4 is the first version to support Android 5.
 
 > To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen).
 

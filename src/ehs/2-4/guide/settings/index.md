@@ -1007,9 +1007,9 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ------
 
 ### App Launch Flags 
-EHS supports the option of setting one or more Android Intent flags when an application is launched. This permits the launch mode of an app to be specified, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used, for example, to allow an app to retain data acquired from its last scan after an accidental press of the HOME key.
+EHS supports the option of setting one or more Android Intent flags when an application is launched. This permits the launch mode of an app to be specified, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to retain data acquired from its last scan, for example, if the HOME key was accidentally pressed before the data was saved.
 
-App Launch Flags can be assigned to any EHS app, including apps launched manually, automatically or as a Kiosk. Intent flags also can be assigned to all apps in the User-Mode group or all those launched from the Tools menu. If a flag is assigned to an app in more than one node (i.e. individually and in the Tools menu node), the flag(s) assigned to the individual app will override those assigned from the group. 
+App Launch Flags can be assigned to any EHS app, including apps launched manually, automatically or as a Kiosk. Intent flags also can be assigned to all apps in the User-Mode group or all those launched from the Tools menu. If a flag is assigned to an app in more than one node (individually and in the Tools menu node, for example), the flag(s) assigned to the individual app will override those assigned to the group. 
 
 <b>Supported flags</b>:
 
@@ -1033,37 +1033,40 @@ App Launch Flags can be assigned to any EHS app, including apps launched manuall
 
 ####Examples
 
-Flag assignment at the &lt;application&gt; level (applies to an individual app): 
+At the individual application level (applies to a single app in the &lt;applications&gt; node): 
 
      <applications>
-     ...
+        ...
         <application label="Manual Scanning" package="com.royalmail.pda" activity="" app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK" />
-      ...
+        ...
     </applications>
 <br>
 
-Flag assignment at the &lt;applications&gt; level (applies to all specified apps): 
+At the applications level (applies to all apps in the &lt;applications&gt; node): 
 
     <applications app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
-        <application label="contacts" package="ccom.android.contacts"  activity=""/>
-        <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+        ...
+        <application label="contacts" package="ccom.android.contacts" activity=""/>
+        <application label="Manual Scanning" package="com.royalmail.pda" activity=""/>
         <application label="Calculator" package="com.android.calculator2" activity=""/>
-        <application label="TestAppBundle" package="com.example.testappbundledata"  activity="com.example.testappbundledata.MainActivity" icon="/sdcard/bb/pic.png" bundle="name=John Brown;code=2000;country=SL;date=09042016"/>
+        ...
     </applications>
 <br>
 
-Flag assignment at the &lt;tools&gt; level (applies to all apps in the Tools Menu): 
+For Tools Menu apps (applies to all apps in the &lt;tools&gt; node): 
 
     <tools app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
+        ...
         <application label="Calculator" package="com.android.calculator2" activity=""/>
         <application label="Rapid Deployment" package="com.motorola.msp" activity="com.motorola.msp.client.RDMenu"/>
         <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+        ...
     </tools>
 <br>
 
-Flag assignment for a &lt;kisok&gt; app: 
+For a Kiosk app: 
 
-    <kiosk app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED; FLAG_ACTIVITY_NEW_TASK"> 
+    <kiosk app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED; FLAG_ACTIVITY_NEW_TASK">     
         <application label="Calculator" package="com.android.calculator2" activity=""/>
     </kiosk>
 <br>

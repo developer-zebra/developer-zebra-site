@@ -87,10 +87,10 @@ The default path and filename of an exported configuration file is:
 If an external SD card is installed, an alternate path can be selected: 
 `/storage/sdcard1/Android/data/com.symbol.datawedge/files/datawedge.db`
 
-&#51;. **Retrieve the file `datawedge.db` from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
+&#51;. **Retrieve the file** `datawedge.db` **from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
 
 ### Import a Profile
-Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field. For more information, see Export a Profile, below.  
+Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field or across an enterprise. For more information, see Export a Profile, below.  
 
 While the Profile importing _process_ is similar to that of the Configuration file (and both replace what came before), the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. When a Config file is imported, it **overwrites all previous DataWedge settings and Profiles**. Importing a Profile modifies the settings of any existing Profile of the same name (if such a Profile exists). If no like-named Profile is present on the device, the imported Profile is simply added to the list of available Profiles on the device. 
 

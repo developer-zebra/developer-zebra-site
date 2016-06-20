@@ -933,7 +933,7 @@ Allows certain Android apps on a device to be specifically included with or excl
 **Tag Rules**:
 
 * These tags override all others.
-* They also have no apparent purpose. 
+* They provide no apparent benefit. 
 
 ------
 

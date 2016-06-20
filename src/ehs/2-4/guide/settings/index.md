@@ -248,8 +248,8 @@ When specifying links, the package and activity parameters can be used to launch
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 
 * Apps selected by wildcard cannot be removed using the long-press feature in Admin Mode. 
 * Apps excluded from a wildcard search cannot be added using the long-press feature in Admin Mode.
-* The exclude command does not support the wildcard character; apps must be excluded one at a time.  
-* If an app that is individually specified in the :lt;applications&gt; section also qualifies in a separate wildcard search, it is immune to the "exclude" command.
+* The exclude command does not support the wildcard character; apps must be excluded one at a time or with an exclude tag (see "Include/Exclude Tags" in the Optional Feature Tags section, below).  
+<!-- * If an app that is individually specified in the &lt;applications&gt; section also is included in a wildcard search, it cannot be excluded using an "exclude" command or tag.-->
 * If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).  
 * Labels longer than 18 characters will be truncated at the 18th character and appended with an ellipsis (...).
 * The label specified in a wildcard search will apply to all apps identified by the search. 
@@ -887,7 +887,7 @@ Permits a custom graphic to be specified in place of the system or default icon 
 
 ------
 
-### Enable/Disable Applications
+### Enable/Disable Apps
 Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. Use these tags to enable Settings and/or Search apps in User Mode. (Settings and Search apps are always enabled in Admin Mode, even if  &lt;apps_disabled&gt; tag is applied). Applies to both Admin and User Modes for all other apps. <b>Note</b>: Package names may vary from one Android version to another. 
 
 <img alt="" style="height:350px" src="disable_apps.png"/>
@@ -919,6 +919,21 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
         </apps_enabled>
         ...
     </preferences>
+
+------
+
+### Include/Exclude Apps
+Allows certain Android apps on a device to be specifically included with or excluded from User Mode. 
+
+* **&lt;DisplayappsStartingWithC&gt; -** is a wildcard feature that will display Android Calculator, Calendar, Camera (if a camera is present on the device) and Contacts apps on the User Screen.
+* **&lt;Excludecalculator&gt; -** when used with &lt;DisplayappsStartingWithC&gt;, will prevent the Android Calculator from being displayed in User Mode. 
+* **&lt;Excludecamera&gt; -** when used with &lt;DisplayappsStartingWithC&gt;, will prevent the Android Camera (if a camera is present on the device) from being displayed in User Mode. 
+* **&lt;ExcludecontactsAndcamera&gt; -** when used with &lt;DisplayappsStartingWithC&gt;, will prevent the Android Contacts app and Camera app (if a camera is present on the device) from being displayed in User Mode. 
+
+**Tag Rules**:
+
+* These tags override all others.
+* They also have no apparent purpose. 
 
 ------
 
@@ -1007,9 +1022,16 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ------
 
 ### App Launch Flags 
-EHS supports the option of setting one or more Android Intent flags when an application is launched. This permits the launch mode of an app to be specified, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to retain data acquired from its last scan, for example, if the HOME key was accidentally pressed before the data was saved.
+EHS supports the option of specifying one or more Android Intent flags when an application is launched, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to launch not with its main activity, for example, but with its most recent one, retaining acquired data that would otherwise have been lost after an inadvertant press of the HOME key immediately after a scan. 
 
-App Launch Flags can be assigned to any EHS app, including apps launched manually, automatically or as a Kiosk. Intent flags also can be assigned to all apps in the User-Mode group or all those launched from the Tools menu. If a flag is assigned to an app in more than one node (individually and in the Tools menu node, for example), the flag(s) assigned to the individual app will override those assigned to the group. 
+App Launch Flags can be assigned only to Kiosk apps or to those designated as part of a group. The flag will apply to all apps in groups of the following types: 
+
+* Auto-Launch apps
+* User-Mode apps
+* Tools-Menu apps
+* Kiosk apps
+
+**EHS 2.4 does not support assignment of Launch Flags to individual apps**. 
 
 <b>Supported flags</b>:
 
@@ -1033,7 +1055,7 @@ App Launch Flags can be assigned to any EHS app, including apps launched manuall
 
 ####Examples
 
-At the individual application level (applies to a single app in the &lt;applications&gt; node): 
+<!--At the individual application level (applies to a single app in the &lt;applications&gt; node): 
 
      <applications>
         ...
@@ -1041,8 +1063,8 @@ At the individual application level (applies to a single app in the &lt;applicat
         ...
     </applications>
 <br>
-
-At the applications level (applies to all apps in the &lt;applications&gt; node): 
+-->
+For User-Mode applications (applies to all apps in the &lt;applications&gt; node): 
 
     <applications app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
         ...
@@ -1052,6 +1074,14 @@ At the applications level (applies to all apps in the &lt;applications&gt; node)
         ...
     </applications>
 <br>
+
+For Auto-Launch apps (applies to all apps in the &lt;auto_launch&gt; node): 
+
+    <auto_launch app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
+        ...
+        <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+        ...
+    </auto_launch>
 
 For Tools Menu apps (applies to all apps in the &lt;tools&gt; node): 
 

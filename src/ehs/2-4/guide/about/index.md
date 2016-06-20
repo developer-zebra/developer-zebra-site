@@ -242,19 +242,19 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **[Service Auto-Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
 
-* **[Wildcard Character](../settings#applications) -** reduces the lines of code required in EHS config file to specify apps for display in User Mode.
+* **[Wildcard Character](../settings#applications) -** reduces the lines of code required in the EHS config file to specify apps for display in User Mode.
 
 * **[Custom App Icons](../settings#icon) -** permits customized icons for apps and links, overriding the default system icons. 
 
-* **[App Icon Size](../settings#appiconsize) -** provides pre-set sizes for User-mode application icons.
+* **[App Icon Size](../settings#appiconsize) -** provides five sizes for User-mode application icons.
 
 <!-- <img alt="" style="height:350px" src="2-4_icon_size.png"/>
 _The icon size UI is accessible from Admin or User Modes (default shown)_.  
 <img alt="" style="height:350px" src="2-4_xxl_icons.png"/>
 _The User Mode screen with XXL icons_. -->
-* **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of battery and Wi-Fi on a single screen.
+* **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of the device battery and Wi-Fi signal on a single screen.
 
-* **Supports the Zebra WT6000 -** running Android 5.0 Lollipop; EHS 2.4 is the first version to support Android 5.
+* **Support for the Zebra WT6000 -** wearable computer running Android 5.0 Lollipop. 
 
 > To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen).
 
@@ -263,14 +263,6 @@ _The User Mode screen with XXL icons_. -->
 New in  EHS 2.3:
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)
-
-
-
-
-
-
-
-
 
 
 

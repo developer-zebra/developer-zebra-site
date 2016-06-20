@@ -1,5 +1,6 @@
 ---
 title: Cellular Manager
+description: "The CellularMgr controls the way a device's Cellular data connection is used."
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: cellularmgr
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

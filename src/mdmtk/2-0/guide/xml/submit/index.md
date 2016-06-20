@@ -1,4 +1,9 @@
-# XML Submission
+---
+title: XML Submission
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ## Overview
 This document will describe how to send XML to MXMS for setting parameter values for CSPs:

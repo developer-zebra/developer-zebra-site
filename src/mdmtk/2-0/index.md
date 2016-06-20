@@ -1,7 +1,7 @@
 ---
 title: MDM Toolkit 2.0
 insert:
-  file: /mdmtk/2-0/guide/about/index.md
+  file: mdmtk/2-0/guide/about/index.md
 layout: guide.html
 menu:
   title: MDM Toolkit 2.0
@@ -11,6 +11,8 @@ menu:
       url: /mdmtk/2-0/guide/about
     - title: Tutorial
       url: /mdmtk/2-0/tutorial/
+    - title: Guides
+      url: /mdmtk/2-0/guide/guides/
     - title: Sample
       url: /mdmtk/2-0/samples/
     - title: MX

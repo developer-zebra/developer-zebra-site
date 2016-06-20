@@ -1,4 +1,9 @@
-# MX Management System Interface
+---
+title: MX Management System Interface
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 In order to communicate with the MXMS, you must setup a binding to the service. Once this reference is established you can then:
 

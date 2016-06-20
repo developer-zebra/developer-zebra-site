@@ -146,21 +146,21 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
-	![img](images/xml-gen/mainmenu.PNG)
+	![img](../images/xml-gen/mainmenu.PNG)
 	
 2. Click the "Create Set XML" button if you would like to create a new XML which will be used to set a feature on the device. 
 3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd". 
 
-	![img](images/xml-gen/dsd-selection.PNG)
+	![img](../images/xml-gen/dsd-selection.PNG)
 	
 4. Set the values you wish to configure via MX. For this example we will be setting Date, Time, and Time Zone.  
 
-	![img](images/xml-gen/set-parms.PNG)
+	![img](../images/xml-gen/set-parms.PNG)
 	
 5. When complete, click the button "Save Set XML". 
 6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
 	
-	![img](images/xml-gen/save-screen.PNG)
+	![img](../images/xml-gen/save-screen.PNG)
 	
 7. You can now open the file with a text or XML editor to view the generated XML. For example:
 
@@ -179,21 +179,21 @@ For more information on Result XML documents and Parm Value Extraction, please s
 ###Creating a Query XML
 1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
-	![img](images/xml-gen/mainmenu.PNG)
+	![img](../images/xml-gen/mainmenu.PNG)
 	
 2. Click the "Create Query XML" button if you would like to create a new XML which will be used to receive the status of a feature on the device. 
 3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to query and click "Open". For this example we will be using "SettingsMgr.dsd". 
 
-	![img](images/xml-gen/dsd-selection-query.PNG)
+	![img](../images/xml-gen/dsd-selection-query.PNG)
 	
 4. Select the values you wish to query via MX. For this example we will be querying the ability to invoke an enterprise reset and the ability to turn Wi-Fi on/off.  
 
-	![img](images/xml-gen/set-query.PNG)
+	![img](../images/xml-gen/set-query.PNG)
 	
 5. When complete, click the button "Save Query XML". 
 6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
 	
-	![img](images/xml-gen/save-screen-query.PNG)
+	![img](../images/xml-gen/save-screen-query.PNG)
 	
 7. You can now open the file with a text or XML editor to view the generated XML. For example:
 

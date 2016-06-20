@@ -1,4 +1,9 @@
-# MXMS XML Overview
+---
+title: MXMS XML Overview
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ## XML Schema
 

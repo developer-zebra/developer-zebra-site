@@ -1,4 +1,9 @@
-# MX Management System Overview
+---
+title: MX Management System Overview
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ## Overview
 
@@ -85,15 +90,15 @@ System components:
 	* Core Applications
 
 ### Overview
-![img](images/quick-start/architecture-overview.png)
+![img](../../images/quick-start/architecture-overview.png)
 
 ### Creating/Editing an XML Document
 
-![img](images/quick-start/architecture-createXml.png)
+![img](../../images/quick-start/architecture-createXml.png)
 
 ### Android Device BSP
 
-![img](images/quick-start/architecture-bsp.png)
+![img](../../images/quick-start/architecture-bsp.png)
 
 ## MDM Interface to MXMS
 
@@ -104,33 +109,16 @@ Since Tier 2 and Tier 3 MDM Agents will not be signed, they must perform all pri
 * Receiving a Result XML document back from MXMS
 * Parsing the Result XML document to determine what happened
 
-![img](images/quick-start/mdmInterface.png)
+![img](../../images/quick-start/mdmInterface.png)
 
-<!--
-### Configuration by MDM Server/Agent
-
-![img](images/quick-start/architecture-configServerAgent.png)
-
-### Configuration by MDM Agent
-
-![img](images/quick-start/architecture-configAgent.png)
-
--->
 ### Recommended Implementation 
 
 #### XML Created by MDM Agent
 
-<!--
-### MDM Agent Submits XML to MXMS
-
-![img](images/quick-start/architecture-submitXml.png)
-
-### MXMF routes XML to CSPs
--->
 
 In this model, the MDM Agent would submit Request XML documents to MXMS, which would then process the XML and route it to the appropriate CSPs. The CSPs would attempt to perform the requested actions and would return their own Result XML documents. These documents would be combined by the MXMF Results Handler and one complete Result XML document would then be returned to the MDM Agent. 
 
-![img](images/quick-start/architecture-routesXmls.png)
+![img](../../images/quick-start/architecture-routesXmls.png)
 
 Here, the MDM Server has no inherent understanding of the Request and Result XML documents or DSDs used by MXMS, and the MDM Agent has inherent understanding of the Request and Result XML documents.
 
@@ -142,7 +130,7 @@ Here, the MDM Server has no inherent understanding of the Request and Result XML
 6. The MDM Agent forms a proprietary response that communicates the interpreted results and delivers it to the MDM Server Agent via the Proprietary Server/Agent communications protocol.
 7. The MDM Server interprets the proprietary response and presents the results to the MDM Administrator using a Proprietary UI.
 
-![img](images/quick-start/implementation4.png)
+![img](../../images/quick-start/implementation4.png)
 
 ### Other Implementation Approaches
 
@@ -157,7 +145,7 @@ In this model, the MDM Server and MDM Agent have no inherent understanding of th
 5. The MDM Server treats the Result XML document as an opaque payload and provides it to the MDM Administrator via the MDM Server Proprietary UI. 
 6. The MDM Server interprets the Result XML document offline (using a text editor or a tool provided by Zebra) to determine the results of the request.
 
-![img](images/quick-start/implementation1.png)
+![img](../../images/quick-start/implementation1.png)
 
 #### XML Created by MDM Server
 
@@ -169,7 +157,7 @@ In this model, the MDM Server has an inherent understanding of the Request and R
 4. The MDM Agent treats the Result XML document as an opaque payload delivers it to the MDM Server Agent via the Proprietary Server/Agent communications protocol. 
 5. The MDM Server interprets the Result XML document and presents those results to the MDM Administrator using a Proprietary UI presented by the MDM Server based on a hard-coded knowledge of the XML results that can be returned by CSPs the MDM Server uses to perform management operations.
 
-![img](images/quick-start/implementation2.png)
+![img](../../images/quick-start/implementation2.png)
 
 #### XML Created by MDM Server Using DSD
 
@@ -181,7 +169,7 @@ In this model, the MDM Server has an inherent understanding of the Request and R
 4. The MDM Agent treats the Result XML document as an opaque payload delivers it to the MDM Server Agent via the Proprietary Server/Agent communications protocol. 
 5. The MDM Server interprets the Result XML document and presents those results to the MDM Administrator using a Data-Driven UI presented by the MDM Server based on the corresponding DSD.
 
-![img](images/quick-start/implementation3.png)
+![img](../../images/quick-start/implementation3.png)
 
 
 ## MX on Devices

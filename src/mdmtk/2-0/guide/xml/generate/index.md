@@ -1,4 +1,9 @@
-# XML Generation
+---
+title: XML Generation
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ## Overall Approach
 As discussed in the MX Management System Overview document, the XML format is used to submit requests to the MXMS to apply settings or to retrieve information. It also uses this same format when sending back responses to the client making the request. The XML needs to be structured in a standardized format. In order to help understand this format, we have included a DSD tool with this toolkit to be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
@@ -14,7 +19,7 @@ A typical approach to XML generation may include:
 
 DSD Files are XML documents that define the schema a CSP uses to configure settings on a device. Each CSP has a matching DSD document. Each version of the MXMS includes a set of CSPs that include a specific feature set. When generating XML for a CSP, be sure to consider the version of the MXMS that you are working with. The DSDs included with the MDM Toolkit can be found in the `MX` folder. Within the `MX` folder, there will be versions of MXMS along with a `DSD` subfolder. 
 
-![img](images/xml-gen/dsdfiles.jpg)
+![img](../../../images/xml-gen/dsdfiles.jpg)
 
 
 ### DSD-Driven Programmatic XML Generation
@@ -53,7 +58,7 @@ To perform a given management function:
 
 The DSD tool, `DsdTool.jar`, is used for generating XML configuration files and templates. It is located in the `DSD To XML` folder of the MDM Toolkit
 
-![img](images/xml-gen/dsdtoolfolder.jpg)
+![img](../../../images/xml-gen/dsdtoolfolder.jpg)
 
 ###Prerequisites
 
@@ -67,21 +72,21 @@ The DSD tool, `DsdTool.jar`, is used for generating XML configuration files and 
 
 1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
-	![img](images/xml-gen/mainmenu.PNG)
+	![img](../../../images/xml-gen/mainmenu.PNG)
 	
 2. Click the "Create Set XML" button if you would like to create a new XML which will be used to set a feature on the device. 
 3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd". 
 
-	![img](images/xml-gen/dsd-selection.PNG)
+	![img](../../../images/xml-gen/dsd-selection.PNG)
 	
 4. Set the values you wish to configure via MX. For this example we will be setting Date, Time, and Time Zone.  
 
-	![img](images/xml-gen/set-parms.PNG)
+	![img](../../../images/xml-gen/set-parms.PNG)
 	
 5. When complete, click the button "Save Set XML". 
 6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
 	
-	![img](images/xml-gen/save-screen.PNG)
+	![img](../../../images/xml-gen/save-screen.PNG)
 	
 7. You can now open the file with a text or XML editor to view the generated XML. For example:
 
@@ -100,21 +105,21 @@ The DSD tool, `DsdTool.jar`, is used for generating XML configuration files and 
 ###Creating a Query XML
 1. Start the jar file "DsdTool.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
 
-	![img](images/xml-gen/mainmenu.PNG)
+	![img](../../../images/xml-gen/mainmenu.PNG)
 	
 2. Click the "Create Query XML" button if you would like to create a new XML which will be used to receive the status of a feature on the device. 
 3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to query and click "Open". For this example we will be using "SettingsMgr.dsd". 
 
-	![img](images/xml-gen/dsd-selection-query.PNG)
+	![img](../../../images/xml-gen/dsd-selection-query.PNG)
 	
 4. Select the values you wish to query via MX. For this example we will be querying the ability to invoke an enterprise reset and the ability to turn Wi-Fi on/off.  
 
-	![img](images/xml-gen/set-query.PNG)
+	![img](../../../images/xml-gen/set-query.PNG)
 	
 5. When complete, click the button "Save Query XML". 
 6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
 	
-	![img](images/xml-gen/save-screen-query.PNG)
+	![img](../../../images/xml-gen/save-screen-query.PNG)
 	
 7. You can now open the file with a text or XML editor to view the generated XML. For example:
 
@@ -133,7 +138,7 @@ In order to make sure your XML is well structured and follows the MXMS definitio
 
 >**Note:** Notice in the example below we are using the DSD tool to generate a Wi-Fi profile to add a new Wi-Fi network. In the tool we put in placeholder text that we can replace with our MDM client code before submitting the XML to the MXMS.
 
-![img](images/xml-gen/xmlgenrelationship.jpg)
+![img](../../../images/xml-gen/xmlgenrelationship.jpg)
 
 ###Additional DSD Tool Menu Options
 
@@ -143,7 +148,7 @@ At any time while configuring the MXMS parm values, you can reset the parm value
 
 To quit the application, click the "Quit" button. 
 
-![img](images/xml-gen/dsdtool-buttons.PNG)
+![img](../../../images/xml-gen/dsdtool-buttons.PNG)
 
 >**Note:** All of the options described in this section will cause the current settings to be lost. 
 

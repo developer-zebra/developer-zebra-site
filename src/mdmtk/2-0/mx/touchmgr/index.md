@@ -1,5 +1,6 @@
 ---
 title: Touch Manager
+description: The TouchMgr sets the Touch Mode on a device (ex. Finger or Stylus).
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: touchmgr
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

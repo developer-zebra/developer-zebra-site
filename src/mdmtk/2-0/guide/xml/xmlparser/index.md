@@ -1,4 +1,9 @@
-# XML Parser 
+---
+title: XML Parser 
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ## Overview
 

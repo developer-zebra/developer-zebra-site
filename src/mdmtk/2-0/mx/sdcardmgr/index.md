@@ -1,5 +1,6 @@
 ---
 title: SD Card Manager
+description: The SdCardMgr controls whether External Storage can be used on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: sdcardmgr
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

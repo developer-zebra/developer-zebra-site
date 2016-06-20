@@ -1,4 +1,9 @@
-#Persistence
+---
+title: Persistence
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ##Overview
 

@@ -1,4 +1,9 @@
-#Updating the MDM Agent
+---
+title: Updating the MDM Agent
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 ##Overview
 

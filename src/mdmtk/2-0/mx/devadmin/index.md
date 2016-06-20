@@ -1,5 +1,6 @@
 ---
-title: DevAdmin Manager
+title: Device Admin
+description: The DevAdmin provides direct access to certain device administration tasks such as the Screen-Lock timeout interval.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: devadmin
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

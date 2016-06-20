@@ -1,5 +1,6 @@
 ---
 title: Browser Manager
+description: The Browser Manager permits the configuration of browser settings such as the default home page.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: browsermgr
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

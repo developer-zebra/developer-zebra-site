@@ -1,5 +1,6 @@
 ---
 title: Wireless Manager
+description: 'The WirelessMgr turns wireless radios On or Off, including Bluetooth, GPRS, NFC, etc.'
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: wirelessmgr
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,29 @@
+---
+csp: clock
+title: AutoTime
+type: parm
+order: 2
+mx: "4.2"
+osx: "1.3"
+parm:
+  pivotal: Yes
+  name: AutoTime
+  type: list
+  list:
+    - code: false
+      name: False
+      mx: "4.2"
+      osx: "1.3"
+      description: This value (or the absence of this parm from the XML) will turn AutoTime Off, thus preventing the automatic contacting of an NTP Server and automatic setting of the Date and Time of the device.
+    - code: true
+      name: True
+      mx: "4.2"
+      osx: "1.3"
+      description: This value will turn AutoTime On, thus enabling the automatic contacting of an NTP Server and automatic setting of the Date and Time of the device.
+---
+
+This parm allows you to control whether the Date and Time on the device should be set automatically or manually.
+
+When AutoTime is turned On, the time will be acquired automatically, if possible. For devices operating on a Cellular network, AutoTime will typically cause the Date and Time to be from the carrier network and set on the device. For other devices, AutoTime will cause a specified NTP server to be automatically contacted on a specified interval and the Date and Time of the device to be set based on the UTC received from that server.
+
+When AutoTime is turned Off, the Date, Time, and Time Zone can be set explicitly and will count forward unless/until explicitly changed again.

@@ -1,4 +1,9 @@
-# XML Responses
+---
+title: XML Responses
+layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
+---
 
 When submitting a Request XML document, knowing what happened will require at least some minimal parsing of the Result XML document. The required parsing can be simplified by taking advantage of the following aspects of MXMS XML: 
 

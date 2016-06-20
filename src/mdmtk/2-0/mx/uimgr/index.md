@@ -1,5 +1,6 @@
 ---
 title: UI Manager
+description: 'The UiMgr provides control of miscellaneous UI configuration settings, such as language settings and Clipboard behavior.'
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,16 +12,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: uimgr
-product: MDM Toolkit
-productversion: '2.0'
 ---
-
-
-
-
-
-
-
 
 
 

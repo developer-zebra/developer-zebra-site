@@ -9,7 +9,7 @@ productversion: '1.0'
 
 Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. 
+Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. <!--Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. -->
 
 ## Customizing Keyboard Settings
 
@@ -126,7 +126,7 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
 * Spelling suggestions do not appear with all field types.  
-* For mass deployment, the Personal dictionary must be populated using Zebra's [StageNow](/stagenow/2-2/about/) tool beforehand. 
+<!-- * For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool (not available in EKB 1.0).-->
 
 #####Add a term to the Personal dictionary: 
 
@@ -154,6 +154,8 @@ When a shortcut is typed as input, its associated term will appear in a list of 
 <img alt="" style="height:350px" src="autocorrected_gerd.png"/>
 Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
 <br>
+
+**Note**: To maximize screen space for apps, the spelling Suggestion Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when suggestions are available.
 
 #####Edit or delete a term: 
 
@@ -229,27 +231,25 @@ Remapping panel shows current settings of remappable keys:
 ------
 
 ## DataWedge
-The scan tab in Enterprise Keyboard uses scanning services provided by Zebra's DataWedge app, which is included on every Zebra device. <b>DataWedge must therefore be enabled on the device for the Scan tab to be operational</b>. 
+The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](/datawedge/5-0/guide/about), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
 
-Locate and <b>tap the DataWedge icon</b> on the device. 
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
 
+**To enable DataWedge on a device** (or confirm that it's enabled): 
 
-#####Enable DataWedge on a device (or confirm that it's enabled): 
-
-&#49;. Locate and <b>tap the DataWedge icon</b> on the device. 
+&#49;. On the device, locate and <b>tap the DataWedge icon</b>: 
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>
 <br>
 
-&#50;. Tap the DataWedge menu (arrow), then <b>Tap the "Settings" menu item</b>: 
+&#50;. From the DataWedge Profiles screen, tap the "hamburger" menu (see arrow), then <b>Tap "Settings"</b> on the menu: 
 <img alt="" style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#51;. Confirm that <b>"DataWedge enabled"</b> box is checked. 
+&#51;. The DataWedge Settings panel appears. Confirm that the <b>"DataWedge enabled"</b> box is checked. 
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 
-For more information, please refer to [Enterprise Keyboard Setup](../setup).
+For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
-
+Also refer to the [DataWedge User Guide](/datawedge/5-0/guide/about) for complete documentation.

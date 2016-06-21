@@ -23,12 +23,14 @@ Enterprise Keyboard 1.0 is activated and configured locally at the device, as de
 The section covers direct activation of Enterprise Keyboard on a single device. <!-- If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Activation section](#automatedactivation) later in this guide. -->
 
 <b>To quickly determine whether Enterprise Keyboard has been activated</b>: 
+
 &#49;. Bring up the Android keyboard and long-press the spacebar. 
+
 &#50;. If "Enterprise Keyboard" appears in a screen like the one below, tap its radio button (arrow) to set it as the default input device:
 <img alt="" style="height:150px" src="2a_choose_input.png"/>
 <br>
 
-If the Enterprise Keyboard does not appear, proceed to the steps below. 
+If the Enterprise Keyboard does not appear as above, it must be activated using the steps below. 
 
 #####Activate Enterprise Keyboard: 
 
@@ -46,6 +48,7 @@ If the Enterprise Keyboard does not appear, proceed to the steps below.
 
 &#52;. <b>Tap "Default"</b> to set the default input device:
 <img alt="" style="height:350px" src="default_input.png"/>
+<br>
 
 &#53;. <b>Tap the Enterprise Keyboard radio button</b> to set it as default input device:
 <img alt="" style="height:150px" src="2a_choose_input.png"/>
@@ -79,7 +82,6 @@ Following installation, Enterprise Keyboard settings can be changed through the 
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
 Refer to the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
 
-------
 <!--
 ### Automated Activation
 Later versions of Enterprise Keyboard (after v1.0) will offer the ability to be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow/2-2/about/) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](/emdk-for-android/4-0/guide/about) software development kit. 

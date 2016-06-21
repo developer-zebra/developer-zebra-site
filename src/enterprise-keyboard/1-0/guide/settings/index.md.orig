@@ -250,6 +250,12 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 
+<<<<<<< HEAD
+For more information, please refer to [Enterprise Keyboard Setup](../setup).
+
+
+=======
 For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
 Also refer to the [DataWedge User Guide](/datawedge/5-0/guide/about) for complete documentation.
+>>>>>>> enterprise-keyboard

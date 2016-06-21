@@ -1,5 +1,5 @@
 ---
-title:  About Enterprise Keyboard
+title: About Enterprise Keyboard
 layout: guide.html
 product: Enterprise Keyboard
 productversion: '1.0'
@@ -194,4 +194,10 @@ Download the **OS patch for MC40** at [Zebra Support Central](https://portal.mot
 
 Enterprise Keyboard will be **included with all Zebra devices running Android 5.0** Lollipop beginning in the **second half of 2016**. 
 
+<<<<<<< HEAD
+It will be available as an OS patch for KitKat devices at a later date. 
+
+
+=======
 Please contact a Zebra representative or partner for more information. 
+>>>>>>> enterprise-keyboard

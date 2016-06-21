@@ -4,9 +4,7 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Keyboard is designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
-
-Enterprise Keyboard also makes use of Android's Personal dictionary for spelling suggestions and corrections, permitting customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. <!-- A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).-->
+Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. Zebra's keyboard also makes use of the Android Personal Dictionary for spelling suggestions and corrections, and permits customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. <!-- A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. [Learn more](../settings#personaldictionary).-->
 
 This version of Enterprise Keyboard includes the following languages: 
 
@@ -23,7 +21,7 @@ The Enterprise Keyboard offers the following unique capabilities to help improve
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:350px" src="sample_1.png"/>
-To maximize screen space for apps, the spelling suggestions bar shares space with the keypad Navigation Tab bar (highlighted); the nav bar fades out temporarily when suggestions are available.
+_To maximize screen space for apps, the spelling Suggestions bar (not shown) shares space with the keypad Navigation Tab bar (highlighted), which fades out temporarily when suggestions are available_.
 <br>
 
 <b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:

@@ -124,7 +124,7 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
 * Spelling suggestions do not appear with all field types.  
-* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool (not available in v1.0). 
+<!-- * For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool (not available in EKB 1.0).-->
 
 #####Add a term to the Personal dictionary: 
 
@@ -234,7 +234,7 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
 
-**To enable DataWedge on a device (or confirm that it's enabled)**: 
+**To enable DataWedge on a device** (or confirm that it's enabled): 
 
 &#49;. On the device, locate and <b>tap the DataWedge icon</b>: 
 <img alt="" style="height:350px" src="datawedge_home_screen.png"/>
@@ -248,6 +248,6 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 
-For more information about scanning with the Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
+For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
-Also see the [DataWedge User Guide](/datawedge/5-0/guide/about).
+Also refer to the [DataWedge User Guide](/datawedge/5-0/guide/about) for complete documentation.

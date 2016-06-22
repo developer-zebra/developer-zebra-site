@@ -2,7 +2,7 @@
 csp: clock
 title: Time 
 type: parm
-order: 6
+order: 7
 mx: "4.1"
 apilevel: "8"
 parm:

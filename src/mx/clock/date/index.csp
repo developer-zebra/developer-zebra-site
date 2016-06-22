@@ -6,7 +6,7 @@ order: 10
 mx: "4.1"
 apilevel: "8"
 parm:
-  presentif: AutoTime is "false"
+  presentif: Auto Time is "false"
   pivotal: No
   name: Date
   type: string

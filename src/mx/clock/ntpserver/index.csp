@@ -2,7 +2,7 @@
 csp: clock
 title: NTP Server Address
 type: parm
-order: 4
+order: 5
 mx: "4.2"
 apilevel: "19"
 parm:

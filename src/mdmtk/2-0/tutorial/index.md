@@ -10,25 +10,24 @@ This quick start guide will walk through the common tasks and components that yo
 
 * **Intro To The MXMS** - The basic information that is needed for using the MX Management System.
 * **Binding to the MXMS** - All communications to the MXMS on Zebra devices, occur through a common binding interface.  
-* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSD tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
+* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. 
 * **Submitting XML** - Within the MDM client, XML will be submitted to apply settings via a simple API.
-* **Querying the MXMS** - Within the MDM client, XML will be submitted to query the MXMS to receive back information about the current settings on the device.
-* **Next Steps**
 
 ## Requirements
 
-* MDM Toolkit (XML Generator Tool, DSD Files)
+* MDM Toolkit 
+* StageNow 2.3
 * Zebra Android Device with MX
 * Java JVM Installed
-* Android ADT
+* Android IDE
 
 ## Intro To The MXMS
 
 ### MXMS Overview
 
-The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSD tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files which are included with StageNow 2.3. StageNow should be used to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
 
-For more information on the definitions of necessary terms, the MX architecture and data flow, MDM implementation approaches, CSP summaries and other information, please see [this page.](../guide/MX/overview)
+For more information on the definitions of necessary terms, the MX architecture and data flow, MDM implementation approaches, CSP summaries and other information, please see [this page.](../mx/overview)
 
 ### MXMS XML
 
@@ -38,9 +37,9 @@ For more information on the XML elements, Request and Result XML documents, DSDs
 
 ### MDM XML Creation
 
-The XML documents that are used in MX need to be structured in a standardized format. The DSD tool, which is included in this toolkit, can be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
+The XML documents that are used in MX need to be structured in a standardized format. StageNow 2.3 can be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
 
-For more information and instructions on XML generation, modifying values, and other information, please see [this page.](../guide/xml/generate)
+
 
 ### MDM Result XML Parsing
 
@@ -50,7 +49,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 ## Binding to the MXMS
 
-1. Create a new Android project with an empty activity in Eclipse.   
+1. Create a new Android project with an empty activity.   
 
 2. The following permissions needs to be added to your application's manifest file to allow it to access MXMS.
 
@@ -59,6 +58,9 @@ For more information on Result XML documents and Parm Value Extraction, please s
 		<uses-permission android:name="com.motorolasolutions.emdk.mxframework.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE"/>
 		
 3. Create two new packages in your application. One package should be named `com.symbol.mxmf` and the other package should be named `com.motorolasolutions.emdk.mxframework`. These packages will be used for holding the aidl (Android Interface Definition Language) files.
+
+	Note: When Using Android Studio, the new packages need to be created in the aidl folder of your project or the IDE will not automatically generate the necessary interface files.
+
 
 4. The SimpleMdmToolKitSample project, which is supplied in the MDM Toolkit, contains the IMxFrameworkService.aidl files that should be copied into your application. These AIDL files are located in the SimpleMdmToolKitSample's `com.symbol.mxmf` and `com.motorolasolutions.emdk.mxframework` packages. These AIDL files should be copied into the respective packages that were made in Step 3.
 
@@ -142,68 +144,10 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 ## Generating XML
 
-###Creating a Set XML
+###Creating XML
+This Toolkit does not provide the means to generate XML required to exchange data with the MXMS. XML should be generated by utilizing the **Export a Profile to an MDM** feature of StageNow 2.3. 
+Full instructions for StageNow setup, and Usage can be [found here](http://techdocs.zebra.com/stagenow/2-3/about/).
 
-1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
-
-	![img](../images/xml-gen/mainmenu.PNG)
-	
-2. Click the "Create Set XML" button if you would like to create a new XML which will be used to set a feature on the device. 
-3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd". 
-
-	![img](../images/xml-gen/dsd-selection.PNG)
-	
-4. Set the values you wish to configure via MX. For this example we will be setting Date, Time, and Time Zone.  
-
-	![img](../images/xml-gen/set-parms.PNG)
-	
-5. When complete, click the button "Save Set XML". 
-6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
-	
-	![img](../images/xml-gen/save-screen.PNG)
-	
-7. You can now open the file with a text or XML editor to view the generated XML. For example:
-
-    	:::xml
-		<wap-provisioningdoc>
-			<characteristic type="Clock" version="4.2" >
-				<parm name="AutoTime" value="false"/>
-				<parm name="TimeZone" value="GMT-5"/>
-				<parm name="Date" value="2014-12-03"/>
-				<parm name="Time" value="11:00:00"/>
-			</characteristic>
-		</wap-provisioningdoc>
-
->**Note:** Notice the relationship with the `parm` attributes and associated `value`. 
-
-###Creating a Query XML
-1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
-
-	![img](../images/xml-gen/mainmenu.PNG)
-	
-2. Click the "Create Query XML" button if you would like to create a new XML which will be used to receive the status of a feature on the device. 
-3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to query and click "Open". For this example we will be using "SettingsMgr.dsd". 
-
-	![img](../images/xml-gen/dsd-selection-query.PNG)
-	
-4. Select the values you wish to query via MX. For this example we will be querying the ability to invoke an enterprise reset and the ability to turn Wi-Fi on/off.  
-
-	![img](../images/xml-gen/set-query.PNG)
-	
-5. When complete, click the button "Save Query XML". 
-6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
-	
-	![img](../images/xml-gen/save-screen-query.PNG)
-	
-7. You can now open the file with a text or XML editor to view the generated XML. For example:
-
-		:::xml
-		<wap-provisioningdoc>
-			<characteristic type="SettingsMgr">
-				<parm-query name="InvokeEnterpriseReset"/>
-				<parm-query name="WifiSettingsUI"/>
-			</characteristic>
-		</wap-provisioningdoc>
 
 ## Submitting XML
 
@@ -258,7 +202,7 @@ In this example, the `utilizeMXMS` method is used to demonstrate how to take an 
 
 4. The modified Request XML document is used by the SymbolBrand class's `submitXml` method, which will submit this XML to the MXMS. This XML will then be sent to the Clock Feature Type, which will change the time of the device to 11:11:11. 
 
-5. The MXMS will return a Result XML document is used by the XmlParser's `formatXml` class to split the Result XML document up onto multiple lines for better readability. 
+5. The MXMS will return a Result XML document which is used by the XmlParser's `formatXml` class to split the Result XML document up onto multiple lines for better readability. 
 
 6. The XmlParser's `isEquivalent` method is then used to check that the Result XML document is equivalent to the Result XML document that was submitted, which would indicate that the device's clock was set successfully. If the XML documents were not equivalent, this indicates that there may have been an error in setting the clock and a characteristic error and/or parm error was returned. 
 
@@ -368,116 +312,3 @@ In this example, the `utilizeMXMS` method is used to demonstrate how to take an 
 			}
 		}
 
-## Querying the MXMS
-
-Submitting queries to MX follows a similar process to submitting XML that is meant to set the device or perform an action. The SimpleMdmToolKitQuery project, which is supplied in the MDM Toolkit, contains an example of how to submit queries to MX. 
-
-1. This example calls the `queryMX` method from the `onServiceConnected` instead of the `utilizeMXMS` method which was used in the previous example.
-
-		:::java
-		// This definition is mandatory to track binding to the MXMS
-		private ServiceConnection mMxFrameworkServiceConnection = new ServiceConnection()
-		{
-			// Callback to notify when binding to the MXMS has completed
-			public void onServiceConnected(ComponentName className,IBinder service)
-			{
-				// Pass the binding notification on so the helper class can know the service was bound
-				SymbolBrand.MXMS.onServiceConnected(className,service);
-
-				// For the purposes of this test application, we call this from here because this is the FIRST time it can be done
-				// In a real world situation, it might be called repeatedly from other locations, as things that need to be done are identified
-				queryMX();
-
-				// Call term 
-				SymbolBrand.MXMS.term(m_activity,mMxFrameworkServiceConnection);
-				
-				// Exit the application
-				m_activity.finish();	    		
-			}
-			
-			// Callback to notify when unbinding from the MXMS has occurred
-			public void onServiceDisconnected(ComponentName className)
-			{
-				// Pass the unbinding notification on so the helper class can know the service was unbound
-				SymbolBrand.MXMS.onServiceDisconnected(className);
-			}
-		};  
-
-2. In the `queryMX` method, if isReady returns true, the mx.in3.xml is then retrieved from the Assets folder, which will be used as the Request XML document. This XML file contains:
-
-		:::xml
-		<wap-provisioningdoc>
-			<characteristic-query type="MX"/>
-		</wap-provisioningdoc>
-		
-3. The Request XML document is used by the SymbolBrand class's `submitXml` method, which will submit this XML to the MXMS. This XML will then be sent to the MX Feature Type, which will return the version number of MXMS.
-
-5. The MXMS will return a Result XML document which is then used by the XmlParser's `fetchParm` method to retreive and output the value of the "MXMFVersion" and "Version" parms.
-
-6. This sample project also shows similar code which would let you query the CspMgr Feature Type, which would return an enumerated list of the available Feature Types. There are also examples on how to use the other XMLs in the project's Assets folder to query other Feature Types, such as the CameraMgr, DisplayMgr, DevAdmin, DhcpOptionMgr, and EncryptMgr, to receive back information about the current settings of the device. 
-
-		:::java
-		// Function to query MX version(s)
-		private void queryMX()
-		{
-			// Check to see if the MXMS is successfully bound and ready to accept XML
-			// Note: Once the binding complete notification (previous code) is passed on, this function will return true
-			//       Depending on where this code is called from, this check may or may not be required, but never hurts.
-			if ( SymbolBrand.MXMS.isReady() )
-			{
-				Log.d(m_activity.getApplicationInfo().name,"MXMS.isReady");
-
-				// Extract an XML snippet from the application assets
-				//String inXml = XmlParser.getAssetXml(m_activity,"mx.in1.xml");
-				//String inXml = XmlParser.getAssetXml(m_activity,"mx.in2.xml");
-				String inXml = XmlParser.getAssetXml(m_activity,"mx.in3.xml");
-				
-				// If the XML was successfully obtained
-				if ( inXml != null )
-				{
-					Log.d(m_activity.getApplicationInfo().name,"inXml = "+inXml);
-
-					// Submit the XML to the MXMS for processing
-					// Note: This will FAIL unless SymbolBrand.MXMS.isReady(), indicating that the binding to the MXMS has completed successfully
-					String outXml = SymbolBrand.MXMS.submitXml(inXml);
-
-					// If we got back result XML
-					// Note: A null result XML is what happens when the binding to the MXMS has NOT completed successfully
-					if ( outXml != null )
-					{
-						Log.d(m_activity.getApplicationInfo().name,"outXml = "+outXml);
-
-						String queryVersion = XmlParser.fetchParm(outXml,new ParmSelector("","MXMFVersion"));
-
-						if (queryVersion != null )
-						{
-							Log.i(m_activity.getApplicationInfo().name,"MXMF version = " + queryVersion);
-						}
-						else
-						{
-							Log.d(m_activity.getApplicationInfo().name,"MX query returned no MXMF version");
-						}
-
-						queryVersion = XmlParser.fetchParm(outXml,new ParmSelector("","Version"));
-
-						if (queryVersion != null )
-						{
-							Log.i(m_activity.getApplicationInfo().name,"Version = " + queryVersion);
-						}
-						else
-						{
-							Log.d(m_activity.getApplicationInfo().name,"MX query returned no version");
-						}
-					}
-					else
-					{
-						Log.d(m_activity.getApplicationInfo().name,"MX query returned no results");
-					}
-				}
-			}
-		}
-
-## Next Step
-Now that you have mastered the basics you will want to read about more details on the various aspects of interacting with MX.
-
-* [XML Generation](../xml/generate)

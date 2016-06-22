@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ##Overview
 
-The SimpleMdmToolkitSample test app can be used to submit Request XML Documents to the MXMS to set a feature on the device or to perform an action. The classes in this project can also be copied into another project so that the methods can be reused to bind and submit XML to MXMS, as shown in the sample code on the [Quick Start page](../guide/tutorials/quickstart).
+The SimpleMdmToolkitSample test app can be used to submit Request XML Documents to the MXMS to set a feature on the device or to perform an action. The classes in this project can also be copied into another project so that the methods can be reused to bind and submit XML to MXMS, as shown in the sample code on the [Quick Start page](../guide/tutorial/).
 
 ##Sample Location
 

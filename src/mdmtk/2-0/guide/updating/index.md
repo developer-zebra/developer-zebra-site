@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ##Overview
 
-The MDM Agent may need to be updated when new versions are released. The [AppMgr Feature Type](../guide/csp/app) can be used to upgrade this. 
+The MDM Agent may need to be updated when new versions are released. The [AppMgr Feature Type](../../mx/appmgr) can be used to upgrade this. 
 
 The AppMgr Feature that should be used for this would be its Upgrade action, instead of using its Uninstall and Install actions. This is because uninstalling the MDM Agent would cause its data to be wiped out. 
 
@@ -27,4 +27,4 @@ Therefore, the steps that would have to be taken to update the MDM Agent would b
 
 4. The new version of the MDM Agent has been updated and will be used on the device now.
 
->**Note:** The above steps are used to acheive Persistence of Manageability by the MDM, which is described in the [Persistence page](../guide/MDM/persistence).
+>**Note:** The above steps are used to acheive Persistence of Manageability by the MDM, which is described in the [Persistence page](../persistence).

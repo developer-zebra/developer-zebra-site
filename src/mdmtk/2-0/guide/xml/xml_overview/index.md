@@ -19,29 +19,15 @@ Top-Level Characteristics (TLCs) must appear at the outermost level of a documen
 
 Sub-Group Characteristic (SGCs) may appear in TLCs/SGCs. A TLC may have any number (including zero) of SGCs and an SGC may have any number (including zero) of SGCs. A Request SGC provides information about a behavior to be performed by its enclosing Result TLC. A Result SGC provides information about the behavior performed for its enclosing Result SGC.
 
-### Characteristic-Queries
-
-A Characteristic-Query is an element that appears in a Request XML document that is used to request a query of some or all of the current configurations of the features in the subsystem that are managed by a CSP.
-
-Top-Level Queries (TLQs) must appear at the outermost level of an XML document. A Request XML document may contain zero or more TLQs. A TLQ cannot contain any sub-elements. A TLQ in a Request XML document will result in a TLC or TLC error in the corresponding location in the Result XML document.
-
-Sub-Group Queries (SGQs) may appear in TLCs/SGCs. An SGQ must appear within a TLC or a SGC (never within another query). It may contain a parm to act as a query index to select which configuration to query. A request SGQ in a Request XML document will either result in a Characteristic-Query-Error or in the matching SGC in the corresponding location in the Result XML Document.
 
 ### Parms
 
 A parm is an element that appears in a Request XML document or a Result XML document and that is used to hold a single data item. Every parm must have a name that is unique within a given TLC (even across different SGCs within that TLC). A given parm can appear only once within a given TLC. It may appear more than once within an XML document as long as that XML document contains multiple TLCs and that parm appears only once within each TLC.
 
-A parm is the desired configuration and a desired action selector or action parameter value when it is a part of a Request XML document for a Set Configuration behavior. It is also used to represent the current configuration value of a feature on the device when it is part of a Result XML document for a Query Configuration behavior.
+A parm is the desired configuration and a desired action selector or action parameter value when it is a part of a Request XML document for a Set Configuration behavior. 
 
 If the processing of a parm in a Request XML document by a CSP is successful, then the Result XML document will contain a Parm element, which typically will have the same value. The Parm element may have a different value in the Result XML document if the CSP determined that the value requested was not supported but was "close enough" to a supported value that substituting the closest supported value was reasonable. In such a case, the value actually used will be returned in the parm in the Result XML document instead of the value requested.
 
-### Parm-Queries
-
-A Parm-Query is an element that appears in a Request XML document that is used to request a query of a single current configuration value of the subsystem managed by a CSP. Every Parm-Query must have a name that is unique within a given TLC, even across different SGCs within that TLC. A given Parm-Query can appear only once within a given TLC. It may appear more than once within an XML document if that XML document contains multiple TLCs and that Parm-Query appears only once within each TLC.
-
-A Parm-Query requests a value that is part of the current configuration of the subsystem managed by a CSP. It is used to request a current configuration value when sent in a Request XML document. The queried value will be returned via a Parm element in the Result XML document.
-
-If the processing of a Parm-Query in a Request XML document by a CSP is successful, then the Result XML Document will contain a Parm Element, with the current Configuration Value of that Parm. 
 
 ## Request and Result XML Documents
 
@@ -51,11 +37,8 @@ Request TLCs in Request XML Documents can be used to perform three primary types
 
 1. Set Configuration - Almost every CSP supports a Request TLC that can be used to set or modify the configuration of the subsystem that is managed by that CSP
 2. Perform Action - Some CSPs support Request TLCs that can be used to perform discrete actions upon the subsystem managed by that CSP. This is opposed to behaviors that involve changing the configuration of the subsystem. For example, an action that could be performed through a CSP is rebooting the device. 
-3. Query Configuration - Some CSPs support Request TLCs that can be used to obtain the current configuration of the subsystem managed by that CSP
 
 A CSP processes a Request TLC and returns a Result TLC or TLC Error based on the results of processing that TLC. The MXMS aggregates Request TLCs and TLC Errors into a Result XML document in the same order as the corresponding Request TLCs in the Request XML document. The MXMS returns the Result XML document to the requesting application to communicate the results of the attempt to perform the behavior(s) requested in the Request XML Document.
-
-Query Configuration behaviors are not reflexive, which means that a Result XML document has an intentionally different format than a successfully completed Request XML document. The XML that is returned from a successful Query Configuration behavior will contain the information that was returned from the query, which is in the same format as Request XML documents and Result XML documents. This means that the result of a query is able to be used as a Request XML document for a Set Configuration behavior.
 
 A characteristic (either a TLC or SGC) in a Request XML document will result in one of the following in the Result XML document:
 

@@ -14,15 +14,13 @@ automenu:
     - title: MX Management System
       items:
         - title: MXMF Overview
-          url: /mdmtk/2-0/guide/overview  
-        - title: MXMS Interface
+          url: /mdmtk/2-0/mx/overview  
+        - title: MXMF Interface
           url: /mdmtk/2-0/guide/interface
     - title: XML Handling
       items:
         - title: Overview
           url: /mdmtk/2-0/guide/xml/xml_overview
-        - title: Generate
-          url: /mdmtk/2-0/guide/xml/generate
         - title: Submit
           url: /mdmtk/2-0/guide/xml/submit
         - title: Response

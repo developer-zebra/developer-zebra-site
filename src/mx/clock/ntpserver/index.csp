@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the URL of the NTP server that the device will contact to acquire Date and Time settings according to the specified interval when AutoTime is enabled. **For devices operating on a cellular network, AutoTime typically acquires the Date, Time and Time Zone from the carrier network**. 
+Used to specify the URL or IP address of the NTP server that the device will attempt to contact at the specified Sync Interval to acquire the Date and Time when AutoTime is enabled, and the Time Zone when Auto Time Zone is enabled. **For devices operating on a cellular network, AutoTime typically acquires the Date, Time and Time Zone from the carrier network**. 
 
 **Parm input rules**:
 

@@ -1,6 +1,6 @@
 ---
 csp: clock
-title: 24-Hour "Military Time" Enable/Disable
+title: "Military Time" Enable/Disable
 type: parm
 order: 14
 mx: "6.0"
@@ -23,4 +23,4 @@ parm:
       description: Displays time in 12-hour format.
 ---
 
-Controls whether the time will be displayed on the device in 24-hour "military time" format or in standard 12-hour format.
+Controls whether to display the time on the device in 24-hour "military time" format. When military time is Off, time is displayed in standard 12-hour format.

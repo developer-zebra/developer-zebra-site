@@ -18,6 +18,9 @@ This quick start guide will walk through the common tasks and components that yo
 * MDM Toolkit 
 * StageNow 2.3
 * Zebra Android Device with MX
+
+	Note: For instructions to install or update MX on your Zebra Android Device, please see the [StageNow 2.3 - Getting Started Documentation](http://techdocs.zebra.com/stagenow/2-3/gettingstarted/).
+
 * Java JVM Installed
 * Android IDE
 

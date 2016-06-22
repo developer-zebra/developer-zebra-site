@@ -14,6 +14,9 @@ In order to communicate with the MXMS, you must setup a binding to the service. 
 ## Requirements 
 
 * Zebra Android Device with MX
+
+	Note: For instructions to install or update MX on your Zebra Android Device, please see the [StageNow 2.3 - Getting Started Documentation](http://techdocs.zebra.com/stagenow/2-3/gettingstarted/).
+
 * Android IDE
 
 ## Setup Code ###
@@ -107,106 +110,4 @@ In order to communicate with the MXMS, you must setup a binding to the service. 
 		};    
 
 
-<!--
->Note: The code and variables referenced here will be used in other documents that discuss submitting XML as well as sending queries.
 
-1. Create a new Android project with an empty activity. 
-2. Create a new package in your application with the following name `com.symbol.mxmf`. This will be used for holding the aidl (Android Interface Definition Language)file.  
-3. Create a file called `IMxFrameworkService.aidl` inside the new package.
-4. Copy the following code into your aidl file, which defines to MXMS Interface:
-
-        :::java
-	    package com.symbol.mxmf;
-     
-	    // IMxFrameworkService.aidl
-	    // Declare any non-default types here with import statements
-	
-	    /**
-	     *  MX Management Framework AIDL service interface
-	     */
-		interface IMxFrameworkService {
-	      /**
-		   * Provide Mx Framework Service(s) to process a clinet's request
-		   * @param  sRequest - request String in XML format sent by a client
-		   * @return a String from Mx Framework Service's response in XML format
-		   */
-	       String processXML(String sRequest);
-    
-	       /**
-		   * Provide Mx Framework Service(s) to process a clinet's request
-		   * @param  sRequest - request String in XML format sent by a client
-		   * @param  mapExtra - a map that contains Extra information on how the request XML should be applied
-		   * @return a String from Mx Framework Service's response in XML format
-		   */
-	       String processXmlRequest(String sRequest, in Map mapExtra);
-	
-	       /**
-		    * Get value from CSP by providing a key
-		    * @param  sKey - a key that CSP would understand, then return a value to MxFramework.
-		    * @return a value
-		    */
-	        String getValue(String sKey);
-		}
-
-5. Add the Permission `<uses-permission android:name = "com.symbol.mxmf.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE" />` to your manifest file to allow MXMS accesses. 
-6. Implement `ServiceConnection` from your MainActivity, and add unimplemented methods. You should now have methods for `onServiceConnected` and `onServiceDisconnected`. 
-7. Copy the following variables to the top of your MainActivity for holding values needed for MXMS.  
-
-        :::java
-		//Application Context for MX 
-		Context context = null;
-		
-	    //MX Framework package name
-		private static final String MX_FRAMEWORK_PKG ="com.symbol.mxmf";
-	
-		//MX Framework service class name
-		private static final String MX_FRAMEWORK_SERVICE_CLS ="com.symbol.mxmf.MxFrameworkService";
-	
-		//MX service holder
-		public IMxFrameworkService MXservice = null;
-8. Add the following method to `MainActivity` for binding to the MXMS service. 
-
-        :::java
-	    void bindService(){
-		    //Bind to Remote Service
-		    Intent bindServiceIntent = new Intent();
-		    //Set Component
-		    bindServiceIntent.setComponent(new ComponentName(MX_FRAMEWORK_PKG, MX_FRAMEWORK_SERVICE_CLS));
-		
-		    try{
-			    this.context.bindService(bindServiceIntent, this, Context.BIND_AUTO_CREATE);
-		    }
-		    catch(Exception e)
-		    {
-			    Log.e("MX", e.toString());		
-		    }
-	    }
-9. Add the following code to `onCreate` for getting the application context and calling the binding method. 
-
-        :::java
-	    //Get Application Context
-	    this.context = this.getApplicationContext();
-	
-	    // Call bindService
-		bindService();
-10. Add the following code to `onServiceConnected` to set the service reference. 
-
-        :::java
-	    //Set service
-		this.MXService = IMxFrameworkService.Stub.asInterface(service);
-11. Add the following code to `onServiceDisconnected` to set the service reference to null. 
-
-        :::java
-	    //Set service to null
-		this.MXService=null;
-
->Note:  
-> you can use the following code to close the connection to MX. 
->
->     :::java
->     //Unbind service
->     this.context.unbindService(this);
->
->     //Set service to null
->     this.MXService = null;
--->

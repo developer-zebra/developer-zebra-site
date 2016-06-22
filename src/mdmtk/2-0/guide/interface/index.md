@@ -14,10 +14,10 @@ In order to communicate with the MXMS, you must setup a binding to the service. 
 ## Requirements 
 
 * Zebra Android Device with MX
-* Android ADT
+* Android IDE
 
 ## Setup Code ###
-1. Create a new Android project with an empty activity in Eclipse.   
+1. Create a new Android project with an empty activity.   
 
 2. The following permissions needs to be added to your application's manifest file to allow it to access MXMS.
 
@@ -110,7 +110,7 @@ In order to communicate with the MXMS, you must setup a binding to the service. 
 <!--
 >Note: The code and variables referenced here will be used in other documents that discuss submitting XML as well as sending queries.
 
-1. Create a new Android project with an empty activity in Eclipse.  
+1. Create a new Android project with an empty activity. 
 2. Create a new package in your application with the following name `com.symbol.mxmf`. This will be used for holding the aidl (Android Interface Definition Language)file.  
 3. Create a file called `IMxFrameworkService.aidl` inside the new package.
 4. Copy the following code into your aidl file, which defines to MXMS Interface:

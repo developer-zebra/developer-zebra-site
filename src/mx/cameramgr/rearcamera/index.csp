@@ -28,4 +28,4 @@ parm:
       description: Disables use of the rear-facing camera on the device, preventing the device from taking pictures or otherwise acquiring documents or images, even if an application exists on the device to do so.
 ---
 
-Enables or disables use of the rear-facing camera on the device. If the device is not equipped with a rear-facing camera, an error will be returned in the Result XML document.
+Controls use of the rear-facing camera on the device. If the device is not equipped with a rear-facing camera, use of this parm will return an error in the Result XML document.

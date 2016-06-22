@@ -22,8 +22,4 @@ parm:
       description: Enables AutoTime, allowing the device to automatically contact the specified NTP Server and set its Date and Time accordingly.
 ---
 
-CHECKKKKK
-
-Controls whether the Date and Time on the device will be set manually or automatically through contact with an NTP server based on the Coordinated Universal Time (UTC). When AutoTime is turned Off, the Date, Time and Time Zone can be set explicitly and will continue to count forward until changed again.
-
-When AutoTime is On, the device will attempt to contact the specified NTP server at the specified interval to acquire and set the Time and Date. For devices operating on a cellular network, AutoTime will typically accept the Date and Time from the carrier network. 
+Controls whether the Date and Time on the device will be set manually or automatically through contact with an NTP server based on the Coordinated Universal Time (UTC). When AutoTime is Enabled, the device will attempt to contact the specified NTP server at the specified interval to acquire and set the Date and Time. For devices operating on a cellular network, AutoTime will typically accept the Date and Time from the carrier network. When AutoTime is disabled, the Date, Time and Time Zone can be set explicitly and will continue to count forward until changed again. 

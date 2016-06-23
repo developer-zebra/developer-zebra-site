@@ -6,7 +6,7 @@ order: 8
 mx: "6.0"
 apilevel: "19"
 parm:
-  presentif: Feature Switch is not set to "Unused" and Group Action is set to "Configure Details for a Single Group"
+  presentif: Feature Switch is NOT set to "Unused" and Group Action is set to "Configure Details for a Single Group"
   pivotal: No
   name: SwitchAction
   type: list

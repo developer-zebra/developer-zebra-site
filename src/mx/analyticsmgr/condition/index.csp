@@ -6,7 +6,7 @@ order: 12
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for Single Group" and Standard Metric Name is NOT "Unused" and Metric Action is "Enable the Metric"
+  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for Single Group" and Standard Metric Name is "Custom" and Metric Action is "Enable the Metric"
   pivotal: No
   name: Condition
   type: list
@@ -41,11 +41,10 @@ parm:
       apilevel: "19"
       name: Greater Than or Equal to a Threshold Value
       description: Causes data to be collected only when the threshold value is greater than or equal to the value given for the given metric.
-
-
+      
 ---
 
-Determines whether data will always be collected for the metric (Unconditional) or will be collected only when a user-defined value (Condition) has been satisfied. In either case, data will be collected at the frequency selected for the Group Name under which the metric is listed. When a threshold is in place, data will be collected at the group frequency only after the threshhold has been satisfied. 
+Determines whether data will always be collected for the metric (Unconditional) or will be collected only when a user-defined Threshold (Condition) has been satisfied. In either case, data will be collected at the frequency selected for the Group Name under which the metric is listed. When a threshold is in place, data will be collected at the group frequency only after the threshhold has been satisfied. 
 
 For example, if an organization wishes to begin collecting data about device batteries only after its batteries have exceeded the optimal number of charge cycles, that number would be entered here under the Condition of "Greater Than or Equal to a Threshold Value." Once that number is reached, data about that battery would begin at the frequency selected for that feature group. 
 

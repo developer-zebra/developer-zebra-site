@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: DataWedge
-    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
+    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for any app on the device.'
     url: /datawedge/3-1/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
@@ -24,21 +24,26 @@ products:
       - title: Demo
         url: /datawedge/5-0/guide/demo
   - title: Enterprise Home Screen
-    description: 'A simple way to control user access to Android apps, settings and files without custom code.'
-    url: /ehs/2-3/guide/about
+    description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
+    url: /ehs/2-4/guide/about
     image: /ehs/ehs-logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ehs/2-3/guide/about
+        url: /ehs/2-4/guide/about
       - title: Getting Started
-        url: /ehs/2-3/guide/gettingstarted
+        url: /ehs/2-4/guide/gettingstarted
       - title: Basic Setup
-        url: /ehs/2-3/guide/setup
+        url: /ehs/2-4/guide/setup
       - title: Advanced Features
-        url: /ehs/2-3/guide/features
+        url: /ehs/2-4/guide/features
       - title: Download
-        url: /ehs/2-3/download
+        url: /ehs/2-4/download
+    versions:
+      - url: ehs/2-4/guide/about/
+        menu: '2.4'
+      - url: ehs/2-3/guide/about/
+        menu: '2.3'
   - title: Enterprise Keyboard
     description: A customizable keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about
@@ -54,7 +59,7 @@ products:
       - title: Download
         url: /enterprise-keyboard/1-0/download
   - title: EMDK For Android
-    description: "Java sample projects using EMDK API's, Data Capture, Profile Manager, etc."
+    description: "Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/4-2/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
@@ -79,7 +84,7 @@ products:
       - url: /emdk-for-android/3-1/guide/about/
         menu: '3.1'
   - title: EMDK For Xamarin
-    description: "Use C# API's like Data Capture, Profile Manager to build Android applications for Zebra Devices."
+    description: "Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra Devices."
     url: /emdk-for-xamarin/2-0/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png

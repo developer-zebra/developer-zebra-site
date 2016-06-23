@@ -15,15 +15,14 @@ parm:
       mx: "6.0"
       apilevel: "19"
       name: Disable
-      description: Disables data collection for a given metric. 
+      description: Disables data collection for a given Feature. 
     - code: 1
       mx: "6.0"
       apilevel: "19"
       name: Enable
-      description: Enables data collection for a given metric.
+      description: Enables data collection for a given Feature.
 
 ---
 
-This is the on-off switch for a given Feature as selected in the Feature Switch. The value selected here determines whether to perform data collection on the selected Feature.
+This is the on-off switch for a given Feature as selected in the Feature Switch. The value selected here determines whether to perform data collection on a given Feature.
 
-The same values apply to all groups (0=Disable; 1=Enable).  

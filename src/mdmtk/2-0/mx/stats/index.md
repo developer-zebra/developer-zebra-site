@@ -12,5 +12,8 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: stats
+product: MDM Toolkit
+productversion: '2.0'
+
 ---
 

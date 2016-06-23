@@ -1,6 +1,5 @@
 ---
-title: DHCP Manager
-description: The DhcpOptionMgr allows an app to configure DHCP options.
+title: DHCP Option Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: dhcpoptionmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

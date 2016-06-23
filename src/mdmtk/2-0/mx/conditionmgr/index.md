@@ -1,6 +1,5 @@
 ---
 title: Condition Manager
-description: The Condition Manager makes decisions based on the condition set in the input XML.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,6 +10,8 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
+product: MDM Toolkit
+productversion: '2.0'
 csp: conditionmgr
 ---
 

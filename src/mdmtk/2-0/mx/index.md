@@ -1,190 +1,167 @@
 ---
 title: MX Framework
-publish: false
-menu:
-  items:
-    - title: Architecture
-      url: /mx/overview
-    - title: Compatibility
-      url: /mx/compatibility
-    - title: Choosing a MX Version
-      url: /mx/choosing-a-version
-    - title: Checking Device MX Version
-      url: /mx/mx-version-on-device
 layout: csp-mx-support.html
-mxversions:
-  - text: MX 4.2
-    value: 4.2
-  - text: MX 4.3
-    value: 4.3
-  - text: MX 4.4
-    value: 4.4
-  - text: MX 5.0
-    value: 5
 csps:
   - type: section
     title: Access Manager
-    url: /mx/accessmgr/
+    url: /mdmtk/2-0/mx/accessmgr/
     csp: accessmgr
   - type: section
     title: Analytics Manager
-    url: /mx/analyticsmgr
+    url: /mdmtk/2-0/mx/analyticsmgr
     csp: analyticsmgr
   - type: section
     title: App Manager
-    url: /mx/appmgr
+    url: /mdmtk/2-0/mx/appmgr
     csp: appmgr
   - type: section
     title: Audio Vol Manager
-    url: /mx/audiovoluimgr
+    url: /mdmtk/2-0/mx/audiovoluimgr
     csp: audiovoluimgr
   - type: section
     title: Batch Manager
-    url: /mx/batchmgr
+    url: /mdmtk/2-0/mx/batchmgr
     csp: batchmgr
   - type: section
     title: Battery Manager
-    url: /mx/batterymgr
+    url: /mdmtk/2-0/mx/batterymgr
     csp: batterymgr
   - type: section
     title: Bluetooth Manager
-    url: /mx/bluetoothmgr
+    url: /mdmtk/2-0/mx/bluetoothmgr
     csp: bluetoothmgr
   - type: section
     title: Browser Manager
-    url: /mx/browsermgr
+    url: /mdmtk/2-0/mx/browsermgr
     csp: browsermgr
   - type: section
     title: Camera Manager
-    url: /mx/cameramgr
+    url: /mdmtk/2-0/mx/cameramgr
     csp: cameramgr
   - type: section
     title: Cellular Manager
-    url: /mx/cellularmgr
+    url: /mdmtk/2-0/mx/cellularmgr
     csp: cellularmgr
   - type: section
     title: Certificate Manager
-    url: /mx/certmgr
+    url: /mdmtk/2-0/mx/certmgr
     csp: certmgr
   - type: section
     title: Clock
-    url: /mx/clock
+    url: /mdmtk/2-0/mx/clock
     csp: clock
   - type: section
     title: Component Manager
-    url: /mx/componentmgr
+    url: /mdmtk/2-0/mx/componentmgr
     csp: componentmgr
   - type: section
     title: Condition Manager
-    url: /mx/conditionmgr
+    url: /mdmtk/2-0/mx/conditionmgr
     csp: conditionmgr
   - type: section
     title: DevAdmin
-    url: /mx/devadmin
+    url: /mdmtk/2-0/mx/devadmin
     csp: devadmin
   - type: section
     title: DHCP Option Manager
-    url: /mx/dhcpoptionmgr
+    url: /mdmtk/2-0/mx/dhcpoptionmgr
     csp: dhcpoptionmgr
   - type: section
     title: Display Manager
-    url: /mx/displaymgr
+    url: /mdmtk/2-0/mx/displaymgr
     csp: displaymgr
   - type: section
     title: Encrypt Manager
-    url: /mx/encryptmgr
+    url: /mdmtk/2-0/mx/encryptmgr
     csp: encryptmgr
   - type: section
     title: File Manager
-    url: /mx/filemgr
+    url: /mdmtk/2-0/mx/filemgr
     csp: filemgr
   - type: section
     title: GPRS Manager
-    url: /mx/gprsmgr
+    url: /mdmtk/2-0/mx/gprsmgr
     csp: gprsmgr
   - type: section
     title: Hosts Manager
-    url: /mx/hostsmgr
+    url: /mdmtk/2-0/mx/hostsmgr
     csp: hostsmgr
   - type: section
     title: Intent Manager
-    url: /mx/intent
+    url: /mdmtk/2-0/mx/intent
     csp: intent
   - type: section
     title: KeyMapping Manager
-    url: /mx/keymappingmgr
+    url: /mdmtk/2-0/mx/keymappingmgr
     csp: keymapmgr
   - type: section
     title: License Manager
-    url: /mx/licensemgr
+    url: /mdmtk/2-0/mx/licensemgr
     csp: licensemgr
   - type: section
     title: Persist Manager
-    url: /mx/persistmgr
+    url: /mdmtk/2-0/mx/persistmgr
     csp: persistmgr
   - type: section
     title: PowerKey Manager
-    url: /mx/powerkeymgr
+    url: /mdmtk/2-0/mx/powerkeymgr
     csp: powerkeymgr
   - type: section
     title: Power Manager
-    url: /mx/powermgr
+    url: /mdmtk/2-0/mx/powermgr
     csp: powermgr
   - type: section
     title: Remote Scanner Manager
-    url: /mx/remotescannermgr
+    url: /mdmtk/2-0/mx/remotescannermgr
     csp: remotescannermgr
   - type: section
     title: Scan Mode Manager
-    url: /mx/scanmodemgr
+    url: /mdmtk/2-0/mx/scanmodemgr
     csp: scanmodemgr
   - type: section
     title: SD Card Manager
-    url: /mx/sdcardmgr
+    url: /mdmtk/2-0/mx/sdcardmgr
     csp: sdcardmgr
   - type: section
     title: Settings Manager
-    url: /mx/settingsmgr
+    url: /mdmtk/2-0/mx/settingsmgr
     csp: settingsmgr
   - type: section
     title: Stats
-    url: /mx/stats
+    url: /mdmtk/2-0/mx/stats
     csp: stats
   - type: section
     title: Status Manager
-    url: /mx/statusmgr
+    url: /mdmtk/2-0/mx/statusmgr
     csp: statusmgr
   - type: section
     title: Threat Manager
-    url: /mx/threatmgr
+    url: /mdmtk/2-0/mx/threatmgr
     csp: threatmgr
   - type: section
     title: Touch Manager
-    url: /mx/touchmgr
+    url: /mdmtk/2-0/mx/touchmgr
     csp: touchmgr
   - type: section
     title: UI Manager
-    url: /mx/uimgr
+    url: /mdmtk/2-0/mx/uimgr
     csp: uimgr
   - type: section
     title: USB Manager
-    url: /mx/usbmgr
+    url: /mdmtk/2-0/mx/usbmgr
     csp: usbmgr
   - type: section
     title: WiFi
-    url: /mx/wifi
+    url: /mdmtk/2-0/mx/wifi
     csp: wifi
   - type: section
     title: Wireless Manager
-    url: /mx/wirelessmgr
+    url: /mdmtk/2-0/mx/wirelessmgr
     csp: wirelessmgr
   - type: section
     title: XML Manager
-    url: /mx/xmlmgr
+    url: /mdmtk/2-0/mx/xmlmgr
     csp: xmlmgr
 ---
-                      
----
-
 
 

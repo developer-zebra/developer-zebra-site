@@ -6,7 +6,7 @@ order: 4
 mx: "4.3"
 osx: "3.5"
 parm:
-  presentif: The "All Cameras" parm is set to "Control Individual Cameras"
+  presentif: Use All Cameras is set to "Control Individual Cameras"
   pivotal: No
   name: UseFrontCamera
   type: list
@@ -15,19 +15,17 @@ parm:
       mx: "4.3"
       osx: "3.5"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to whether the device's front facing camera can be used.
+      description: This value (or the absence of this parm from the XML) will cause no changes to whether the front-facing camera can be used on the device; any previously selected setting will be retained.
     - code: 1
       name: Enable
       mx: "4.3"
       osx: "3.5"
-      description: This value will cause use of the device's front facing camera to be enabled, thus allowing the device user to use that camera to take pictures, if an application exists on the device to do so.
+      description: Enables use of the front-facing camera on the device, allowing that camera to take pictures or otherwise acquire documents or images if an application exists on the device to do so.
     - code: 2
       name: Disable
       mx: "4.3"
       osx: "3.5"
-      description: This value will cause use of the device's front facing camera to be disabled, thus preventing the device user from using that camera to take pictures, even if an application exists on the device to do so.
+      description: Disables use of the front-facing camera on the device, preventing the device from taking pictures or otherwise acquiring documents or images, even if an application exists on the device to do so.
 ---
 
-This parm will enable or disable the use of the device's front facing camera, which means that the user will be allowed or disallowed from using this camera.
-
-If the device does not have a front facing camera, then an error will be returned in the Result XML document.
+Controls use of the front-facing camera on the device. If the device is not equipped with a front-facing camera, use of this parm will return an error in the Result XML document.

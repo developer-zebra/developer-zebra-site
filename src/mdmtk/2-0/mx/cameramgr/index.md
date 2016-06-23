@@ -1,6 +1,5 @@
 ---
 title: Camera Manager
-description: The CameraMgr controls access to the device camera(s).
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: cameramgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

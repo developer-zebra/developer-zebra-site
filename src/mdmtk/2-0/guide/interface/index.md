@@ -15,7 +15,7 @@ In order to communicate with the MXMS, you must setup a binding to the service. 
 
 * Zebra Android Device with MX
 
-	Note: For instructions to install or update MX on your Zebra Android Device, please see the [StageNow 2.3 - Getting Started Documentation](http://techdocs.zebra.com/stagenow/2-3/gettingstarted/).
+	Note: For instructions to install or update MX on your Zebra Android Device, please see the <a href="http://techdocs.zebra.com/stagenow/2-3/gettingstarted/" target="_blank">StageNow 2.3 - Getting Started Documentation</a>
 
 * Android IDE
 

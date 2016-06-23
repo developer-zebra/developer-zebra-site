@@ -1,6 +1,5 @@
 ---
-title: KeyMapping Manager
-description: The KeyMappingMgr allows an app to modify the behavior of a given key when pressed.
+title: Keymapping Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: keymapmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

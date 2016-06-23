@@ -1,6 +1,5 @@
 ---
-title: Batch
-description: The Batch setting is used to execute one Profile (which may contain any number of settings) from within another Profile.
+title: Batch Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,8 +11,6 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: batchmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
-
-
-
-

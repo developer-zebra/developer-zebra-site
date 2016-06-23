@@ -1,6 +1,5 @@
 ---
 title: Component Manager
-description: The ComponentMgr is used to configure the state and usage of specific subsystems on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: componentmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

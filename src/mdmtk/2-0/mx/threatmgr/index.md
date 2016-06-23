@@ -1,6 +1,5 @@
 ---
 title: Threat Manager
-description: The Threat Manager allows an application to control the security threats a device actively monitors and how it responds.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: threatmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

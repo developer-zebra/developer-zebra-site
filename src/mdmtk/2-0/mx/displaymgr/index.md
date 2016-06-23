@@ -1,6 +1,5 @@
 ---
 title: Display Manager
-description: The DisplayMgr provides control of the display screen on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: displaymgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

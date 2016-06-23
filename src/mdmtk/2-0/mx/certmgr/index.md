@@ -1,6 +1,5 @@
 ---
-title: Certificate Manager
-description: The CertMgr provides management of certificates and the Android Keystore on a device.
+title: Cert Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: certmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

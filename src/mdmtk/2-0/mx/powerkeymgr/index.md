@@ -1,6 +1,5 @@
 ---
-title: PowerKey Manager
-description: The PowerKeyMgr provides control over Power Key Menu options supported on the device.
+title: Powerkey Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: powerkeymgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

@@ -1,11 +1,13 @@
 ---
 title: MX Management System Overview
 layout: guide.html
+product: MDM Toolkit
+productversion: '2.0'
 ---
 
 ## Overview
 
-The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSD tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. 
 
 ## Definitions of Terms
 
@@ -39,28 +41,11 @@ OSX is the term used to refer to changes and extensions to the standard AOSP as 
 
 MXMF is a device subsystem that provides an interface to applications that wish to set or query the configuration of device subsystems. It does not directly implement set and query functions but provides a framework to support and host CSPs that do. MXMF can be built-into a BSP or can be added to a BSP after a device is shipped (via a patch applied via the OS update process). Applications and the MXMF communicate through an interchange of XMLs that conform to the **XML.DTD**, as described in the document **MX MF XML DTD**.
 
-### Document Type Definition (DTD)
-
-A DTD is a non-XML, standards-based document that defines the syntax of a class of related XML documents. It is used to specify the elements that are allowed to appear within all XML documents that are used for a specific purpose. 
-
-The following DTDs are used by the MXMF:
-
-* **XML.DTD** (described in the document **MX MF XML DTD**)
-	* This DTD defines the syntax of XML Documents that can be consumed by CSPs that registered with the MXMF and that can be used to set and query the configuration of the device systems associated with those CSPs
-* **DSD.DTD** (described in the document **MX MF DSD DTD**)
-	* This DTD defines the syntax of DSD documents that are used to define the capabilities of CSPs
-
 ### Configuration Service Provider (CSP)
 
 A CSP is a device code module that implements the ability to set and query the configuration of a subsystem on a device (e.g. Clock, Wi-Fi, etc.). The capabilities that are supported and exposed by a CSP are defined by a corresponding DSD. 
 
 A CSP is a plug-in to the MXMF which can ship as part of the MXMF, can be included in a BSP along with the MXMF, or can be downloaded to a device as needed. Before it can be used on a device, a CSP must be registered with the MXMF on that device and all calls to a CSP must go through the MXMF. The MXMF and CSPs communicate through XMLs that conform to the **XML.DTD**, as described in the document **MX MF XML DTD**.
-
-### Document Semantics Definition (DSD)
-
-A DSD is an XML Document that conforms to the **DSD.DTD**, as described in the document **MX MF DSD DTD** and that corresponds to and describes the capabilities of a CSP. It is used by tools to enable programmatic generation of XML that can then be consumed by a CSP. Some examples of these tools are EMDK Profile Manager, Staging Tool, and MDM Console.
-
-A DSD is created and maintained by the author of a CSP and each CSP must have a corresponding DSD that must be supplied when the CSP registers with the MXMF. A CSP and its corresponding DSD should generally be produced, maintained, and distributed together.
 
 ### MX Management System (MXMS)
 
@@ -88,11 +73,11 @@ System components:
 	* Core Applications
 
 ### Overview
-![img](architecture-overview.PNG)
+![img](architecture-overview.png)
 
 ### Android Device BSP
 
-![img](architecture-bsp.PNG)
+![img](architecture-bsp.png)
 
 
 ## MX on Devices
@@ -103,6 +88,13 @@ The MX version on a specific device can be effected by:
 * EMDK for Android Device Runtime Updates
 
 With each version of MX, new CSPs can be introduced, and pre-existing CSPs can also have new behavior. It is generally not found that MX updates will remove or change pre-existing behavior unless specifically noted.
+
+
+
+
+
+
+
 
 
 

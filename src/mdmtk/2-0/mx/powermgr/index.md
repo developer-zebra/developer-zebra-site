@@ -1,6 +1,5 @@
 ---
 title: Power Manager
-description: 'The PowerMgr allows an app to perform power-related actions on the device, such as putting it into Sleep mode.'
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: powermgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

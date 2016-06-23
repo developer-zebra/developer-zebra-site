@@ -1,6 +1,5 @@
 ---
 title: XML Manager
-description: The XmlMgr specifies the Error Handling Mode the MXMS will use when processing a Request XML document.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: xmlmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

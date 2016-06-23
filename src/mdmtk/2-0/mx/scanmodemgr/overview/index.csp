@@ -1,8 +1,0 @@
----
-csp: scanmodemgr
-title: Overview
-type: text
-order: 1
----
-
-The Scan Mode Manager sets the Scan Mode to Normal, Scan 1, or Scan 2.

@@ -1,15 +1,6 @@
 ---
 title: MX Feature Compatibility
 layout: csp-mx-support.html
-mxversions:
-  - text: MX 4.2
-    value: 4.2
-  - text: MX 4.3
-    value: 4.3
-  - text: MX 4.4
-    value: 4.4
-  - text: MX 5.0
-    value: 5
 csps:
   - type: section
     title: Access Manager
@@ -24,20 +15,12 @@ csps:
     url: /mx/appmgr
     csp: appmgr
   - type: section
-    title: Audio Vol Manager
-    url: /mx/audiovoluimgr
-    csp: audiovoluimgr
-  - type: section
-    title: Batch Manager
-    url: /mx/batchmgr
-    csp: batchmgr
-  - type: section
     title: Battery Manager
     url: /mx/batterymgr
     csp: batterymgr
   - type: section
     title: Bluetooth Manager
-    url: /mx/bluetoothrmgr
+    url: /mx/bluetoothmgr
     csp: bluetoothmgr
   - type: section
     title: Browser Manager
@@ -96,17 +79,9 @@ csps:
     url: /mx/hostsmgr
     csp: hostsmgr
   - type: section
-    title: Intent Manager
-    url: /mx/intent
-    csp: intent
-  - type: section
     title: KeyMapping Manager
     url: /mx/keymappingmgr
     csp: keymapmgr
-  - type: section
-    title: License Manager
-    url: /mx/licensemgr
-    csp: licensemgr
   - type: section
     title: Persist Manager
     url: /mx/persistmgr
@@ -120,14 +95,6 @@ csps:
     url: /mx/powermgr
     csp: powermgr
   - type: section
-    title: Remote Scanner Manager
-    url: /mx/remotescannermgr
-    csp: remotescannermgr
-  - type: section
-    title: Scan Mode Manager
-    url: /mx/scanmodemgr
-    csp: scanmodemgr
-  - type: section
     title: SD Card Manager
     url: /mx/sdcardmgr
     csp: sdcardmgr
@@ -135,14 +102,6 @@ csps:
     title: Settings Manager
     url: /mx/settingsmgr
     csp: settingsmgr
-  - type: section
-    title: Stats
-    url: /mx/stats
-    csp: stats
-  - type: section
-    title: Status Manager
-    url: /mx/statusmgr
-    csp: statusmgr
   - type: section
     title: Threat Manager
     url: /mx/threatmgr
@@ -171,8 +130,12 @@ csps:
     title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
            
+
+
 
 
 

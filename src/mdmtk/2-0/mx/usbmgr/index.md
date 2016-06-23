@@ -1,6 +1,5 @@
 ---
 title: USB Manager
-description: The UsbMgr controls which USB functions can be used on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: usbmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

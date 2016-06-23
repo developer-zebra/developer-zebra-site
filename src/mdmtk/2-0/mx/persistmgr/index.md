@@ -1,6 +1,5 @@
 ---
-title: Persistence Manager
-description: "The PersistMgr administers the 'Request XML' documents persistent on a device."
+title: Persist Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: persistmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

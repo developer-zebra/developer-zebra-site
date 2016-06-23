@@ -1,6 +1,5 @@
 ---
-title: WiFi Manager
-description: "The Wi-Fi Manager administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks."
+title: Wifi Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: wifi
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

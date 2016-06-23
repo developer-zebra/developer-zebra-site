@@ -1,6 +1,5 @@
 ---
 title: Settings Manager
-description: The SettingsMgr controls access to specific items in the System Settings Menu.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -12,7 +11,16 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: settingsmgr
+product: MDM Toolkit
+productversion: '2.0'
 ---
+
+
+
+
+
+
+
 
 
 

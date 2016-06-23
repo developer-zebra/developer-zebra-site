@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Standard Interval
 type: parm
-order: 11
+order: 13
 mx: "5.1"
 apilevel: "19"
 parm:

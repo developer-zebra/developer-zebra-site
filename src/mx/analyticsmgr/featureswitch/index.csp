@@ -1,0 +1,59 @@
+---
+csp: analyticsmgr
+title: Feature Switch
+type: parm
+order: 7
+mx: "6.0"
+apilevel: "19"
+parm:
+  presentif: Analytics Client is set to "Enable" and Analytics Action is not set to "Disable"
+  pivotal: No
+  name: FeatureSwitch
+  type: list
+  list:
+    - code: 99
+      mx: "6.0"
+      apilevel: "19"
+      name: Unused
+      description: This parameter is unused.  
+    - code: 0
+      mx: "6.0"
+      apilevel: "19"
+      name: FileUpload
+      description: Enables all apps on the device to upload data to the Zebra cloud using facilities of the Analytics Engine.
+    - code: 1
+      mx: "6.0"
+      apilevel: "19"
+      name: ANR
+      description: Collects information about Applications Not Responding.
+    - code: 2
+      mx: "6.0"
+      apilevel: "19"
+      name: Ruggedness
+      description: Collects information related to device drops and other mishaps.
+    - code: 3
+      mx: "6.0"
+      apilevel: "19"
+      name: FeatureUsage
+      description: Collects usage frequency of Bluetooth, Wi-Fi, NFC and device features. 
+    - code: 4
+      mx: "6.0"
+      apilevel: "19"
+      name: RestrictSelfUpdateWiFi
+      description: Controls whether the Analytics Engine can update over Wi-Fi only or using any data connection. 
+    - code: 5
+      mx: "6.0"
+      apilevel: "19"
+      name: DeviceInfo
+      description: Collects hardware revision number, keyboard type and other hardware-related device info. 
+    - code: 999
+      mx: "6.0"
+      apilevel: "19"
+      name: Custom
+      description: Allows for a custom metric to be monitored. 
+      
+---
+
+Upload feature uses encryption and compression. 
+
+Allows the data collection interval to be set. Data will be collected by the Analytics Engine on the device at the given interval for a parameter that has met its threshold or has no condition assigned. This setting will apply to all metrics under a given Group Name when detailed metrics are configured for a single group. Otherwise, the collection interval will default to Low (every 60 minutes), Medium (every 30 minutes) and High (every 10 minutes). 

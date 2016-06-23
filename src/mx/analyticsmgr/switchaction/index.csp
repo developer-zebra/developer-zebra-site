@@ -1,0 +1,29 @@
+---
+csp: analyticsmgr
+title: Switch Action
+type: parm
+order: 8
+mx: "6.0"
+apilevel: "19"
+parm:
+  presentif: Feature Switch is not set to "Unused" and Group Action is "Configure Details for a Single Group"
+  pivotal: No
+  name: SwitchAction
+  type: list
+  list:
+    - code: 0
+      mx: "6.0"
+      apilevel: "19"
+      name: Disable
+      description: Disables data collection for a given metric. 
+    - code: 1
+      mx: "6.0"
+      apilevel: "19"
+      name: Enable
+      description: Enables data collection for a given metric.
+
+---
+
+This is the on-off switch for a given Feature as selected in the Feature Switch. The value selected here determines whether to perform data collection on the selected Feature.
+
+The same values apply to all groups (0=Disable; 1=Enable).  

@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Metric Action
 type: parm
-order: 9
+order: 11
 mx: "5.1"
 apilevel: "19"
 parm:

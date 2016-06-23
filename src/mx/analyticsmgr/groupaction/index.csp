@@ -6,7 +6,7 @@ order: 9
 mx: "4.3"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable"
+  presentif: Analytics Action is set to "Enable"
   pivotal: Yes
   name: GroupAction
   type: list

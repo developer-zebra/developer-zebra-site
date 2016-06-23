@@ -6,7 +6,7 @@ order: 12
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for Single Group" and Standard Metric Name is "Custom" and Metric Action is "Enable the Metric"
+  presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for Single Group" and Standard Metric Name is set to "Custom" and Metric Action is set to "Enable the Metric"
   pivotal: No
   name: Condition
   type: list

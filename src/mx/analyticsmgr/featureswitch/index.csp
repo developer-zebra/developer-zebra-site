@@ -6,7 +6,7 @@ order: 7
 mx: "6.0"
 apilevel: "19"
 parm:
-  presentif: Analytics Client is set to "Enable" and Analytics Action is not set to "Disable"
+  presentif: Analytics Client is set to "Enable" and Analytics Action is NOT set to "Disable"
   pivotal: No
   name: FeatureSwitch
   type: list

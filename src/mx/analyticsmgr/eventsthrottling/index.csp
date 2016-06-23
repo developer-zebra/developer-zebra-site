@@ -6,7 +6,7 @@ order: 5
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable" and Analytics Client Settings is "Enable"   
+  presentif: Analytics Action is set to "Enable" and Analytics Client Settings is set to "Enable"   
   pivotal: No
   name: EventsThrottling
   type: list

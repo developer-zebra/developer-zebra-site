@@ -210,14 +210,8 @@ When specifying links, the package and activity parameters can be used to launch
 * &#42; (asterisk): used as a wildcard to specify multiple packages with the same prefix 
 * Activity (optional): name of the activity to be invoked when the app starts
 
-####Sample XML (conventional)
-    <applications>
-        ...
-        <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
-        ...
-    </applications>
 
-####Sample XML (using wildcard)
+####Sample XML using wildcard to select several apps: 
 
     <applications>
         //The following lines:
@@ -231,18 +225,39 @@ When specifying links, the package and activity parameters can be used to launch
         //...could be replaced with this single line using the wildcard character:
             <application package="com.inditex.mobility.*"/>
 
-        //...applying a label will apply to all qualifying apps:
+        //...adding a label to line above applies the label to all apps in the wildcard set:
             <application label="inditex" package="com.inditex.mobility.*"/>
 
-        //To exclude one or more apps from the wildcard set above: 
+        //To exclude one or more apps from the wildcard set: 
             <application package="com.inditex.mobility.*" exclude=”com.inditex.mobility.inventory”/> 
             <application package="com.inditex.mobility.*" exclude=”com.inditex.mobility.inventory; com.inditex. mobility.25online”/>
+    </applications>
+<br>
+
+####Using wildcard to display all Android apps starting with the letter "c": 
+
+    <applications>
+        <application label="" package="com.android.c*"/>
+    </applications>
+<br>
+
+####Display all Android apps starting with the letter "c" except Calculator: 
+
+    <applications>
+        <application label="" package="com.android.c*" exclude="com.android.Calculator2"/>
+    </applications>
+<br>
+
+####Display all Android apps starting with the letter "c" except Contacts and Camera: 
+
+    <applications>
+        <application label="" package="com.android.c*" exclude="com.android.camera2;com.android.contacts"/>
     </applications>
 
 **Wildcard rules**:
 
 * Zebra apps always display on the User-Mode screen before wildcard-selected apps.
-* Each group of apps selected by wildcard will be displayed in alphabetical order relative to that group.
+* Each group of apps selected by wildcard will be displayed in alphabetical order relative to other apps in that group.
 * Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
 * If &lt;bundle&gt; and &lt;icon&gt; tags are used, the same specified attributes apply to all wildcard-selected apps. 
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 
@@ -255,6 +270,7 @@ When specifying links, the package and activity parameters can be used to launch
 * The label specified in a wildcard search will apply to all apps identified by the search. 
 * The wildcard character may appear only once per line and **only at the end of the line**. 
 * The following wildcard searches have been blocked by EHS as a security measure, avoiding the accidental inclusion of all standard Android apps: 
+
     * com.android.&#42;
     * com.android&#42;
     * com.androi&#42;
@@ -264,6 +280,7 @@ When specifying links, the package and activity parameters can be used to launch
     * com.an&#42;
     * com.a&#42;
     * com.&#42;
+
 * Check the `enterprisehomescreen.log` file for error messages might result from invalid wildcard use. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
@@ -919,21 +936,6 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
         </apps_enabled>
         ...
     </preferences>
-
-------
-
-### Include/Exclude Apps
-Allows certain Android apps on a device to be specifically included with or excluded from User Mode. 
-
-* **&lt;DisplayappsStartingWithC&gt; -** is a wildcard feature that will display Android Calculator, Calendar, Camera (if a camera is present on the device) and Contacts apps on the User Screen.
-* **&lt;Excludecalculator&gt; -** when used with &lt;DisplayappsStartingWithC&gt;, will prevent the Android Calculator from being displayed in User Mode. 
-* **&lt;Excludecamera&gt; -** when used with &lt;DisplayappsStartingWithC&gt;, will prevent the Android Camera (if a camera is present on the device) from being displayed in User Mode. 
-* **&lt;ExcludecontactsAndcamera&gt; -** when used with &lt;DisplayappsStartingWithC&gt;, will prevent the Android Contacts app and Camera app (if a camera is present on the device) from being displayed in User Mode. 
-
-**Tag Rules**:
-
-* These tags override all others.
-* They provide no apparent benefit. 
 
 ------
 

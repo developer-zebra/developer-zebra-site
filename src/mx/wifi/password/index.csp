@@ -21,10 +21,10 @@ Parm value input rules:
 
 If Protect Password is false:
 
-* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* Authentication is not "EAP-TLS" *AND* Protect Password is false
+* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and Authentication is not "EAP-TLS" and Protect Password is false
 * Parm name: PasswordClear
 
 If Protect Password is true:
 
-* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* Authentication is not "EAP-TLS" *AND* Protect Password is true
+* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and Authentication is not "EAP-TLS" and Protect Password is true
 * Parm name: PasswordEncrypted

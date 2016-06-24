@@ -25,6 +25,6 @@ parm:
 ---
 
 
-> **DISCLAIMER**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
+**Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
 
 This option is to configure different WLAN Power Save Modes of Radio.

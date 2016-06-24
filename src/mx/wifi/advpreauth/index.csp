@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Pre-Auth
+title: PreAuth
 type: parm
 order: 56
 mx: "4.2"

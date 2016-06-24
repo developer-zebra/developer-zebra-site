@@ -7,14 +7,11 @@ mx: "4.2"
 parm:
   type: string
 ---
-
-> **DISCLAIMER**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
-
 Use of Wi-Fi Advanced Options requires the following:
 
 * To enable PreAuth (PreAuth =1 and PMKID =1), PMKID must be turned on
 * To enable FTRIC (FT=1 and FTRIC =1), FT must be turned on
 * To use PMKID caching, OKC must be turned off (OKC =0 and PMKID =1)
 
-> **Important**: The default "Fast Power Savings" value must be used for the "Power Save" parameter under the Advanced Options. Using the "Do Not Change" value will result in failure.
+> **WARNING: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. Do not use these features unless told to do so by qualified personnel; altering advanced settings can result in undesirable results**.
 

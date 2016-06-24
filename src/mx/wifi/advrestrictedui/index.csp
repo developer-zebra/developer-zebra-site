@@ -17,8 +17,7 @@ parm:
     - code: 2
       name: Enable Restricted WLAN Settings UI
 ---
-
+Used to enable/disable read-only mode for Wi-Fi settings according to the values in the table below. _**Not supported on TC70 QC GA1/GA2 running Android KitKat**_.
 
 **Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
 
-When enabled the Wi-Fi settings will be in Read-Only mode.

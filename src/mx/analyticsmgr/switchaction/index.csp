@@ -6,7 +6,7 @@ order: 8
 mx: "6.0"
 apilevel: "19"
 parm:
-  presentif: Feature Switch is NOT set to "Unused" and Group Action is set to "Configure Details for a Single Group"
+  presentif: Group Action is set to "Configure Details for a Single Group" and Feature Switch is NOT set to "Unused"
   pivotal: No
   name: SwitchAction
   type: list
@@ -24,5 +24,5 @@ parm:
 
 ---
 
-This is the on-off switch for a given Feature as selected in the Feature Switch. The value selected here determines whether to perform data collection on a given Feature.
+This is the on-off switch for a given Feature as selected in the Feature Switch. The value selected here determines whether the Analytics Engine collects data on a given Feature.
 

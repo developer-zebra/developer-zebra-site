@@ -1,0 +1,30 @@
+---
+csp: appgallerymgr
+title: AppGallery Enable/Disable
+type: parm
+order: 3
+mx: "6.0"
+parm:
+  pivotal: No
+  name: State
+  type: list
+  list:
+    - code: 0
+      name: Do Not Change
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously selecting configured settings will be retained.
+      mx: "6.0"
+      osx: "6.0"
+    - code: 1
+      name: Turn On
+      description: Enables the AppGallery client app on the device.
+      mx: "6.0"
+      osx: "6.0"
+    - code: 2
+      name: Turn Off
+      description: Disables the AppGallery client app on the device.
+      mx: "6.0"
+      osx: "6.0"
+---
+Used to enable/disable the AppGallery client app on the device. 
+
+

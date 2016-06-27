@@ -1,9 +1,9 @@
 ---
 csp: appgallerymgr
-title: Application Name
+title: Password
 type: parm
-order: 5
-mx: "5.1"
+order: 6
+mx: "6.0"
 parm:
   presentif: The Action is "Launch an application"
   pivotal: No

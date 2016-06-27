@@ -15,6 +15,11 @@ Central to Zebra Analytics is the Analytics Engine, which collects information a
 * Set data collection thresholds for individual metrics
 * Control whether data is stored on the device or in the Zebra Cloud
 * Automatically clear on-device data when Analytics Engine is disabled 
+* Collect usage data on Bluetooth, NFC and Wi-Fi features
+* Collect device-drop and other ruggedness info
+* Collect data on a custom (user-defined) feature
+* Limit self-update to Wi-Fi connections
+* Allow other device apps to use the AnalyticsMgr cloud transport mechanism
 * Control collection of detailed data metrics in these groups:
 	* Battery and CPU Status
 	* GPS Information
@@ -26,4 +31,4 @@ Central to Zebra Analytics is the Analytics Engine, which collects information a
 	* Low (infrequent)
 	* Medium (moderate frequency)
 	* High (very often)
-	* Custom intervals (in minutes)
+	* Custom interval (in minutes)

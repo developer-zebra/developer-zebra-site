@@ -6,7 +6,7 @@ order: 2
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Disable"
+  presentif: Analytics Action is set to "Disable"
   pivotal: No
   name: ClearData
   type: list

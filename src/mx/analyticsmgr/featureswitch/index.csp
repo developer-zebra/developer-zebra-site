@@ -20,7 +20,7 @@ parm:
       mx: "6.0"
       apilevel: "19"
       name: FileUpload
-      description: Enables all apps on the device to upload data to the Zebra cloud using the Analytics Engine cloud transport mechanism.
+      description: Enables all apps on the device to upload data to the Zebra Cloud using the Analytics Engine cloud transport mechanism.
     - code: 1
       mx: "6.0"
       apilevel: "19"

@@ -167,7 +167,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 });
 
 var sitebuild = Metalsmith(__dirname)
-    .clean(true)
+    .clean(false)
     .concurrency(1000)
     .use(paths({
         property: "path"
@@ -244,15 +244,14 @@ var sitebuild = Metalsmith(__dirname)
     .use(codehighlight({
 
     }))
-    .destination('./build_mdmtk')
-    .use(serve({
-        cache: 0
-    }))
+    .destination('./electron-with-express/public')
     .build(function (err) {
     if (err) {
       console.log(err);
     }
     else {
+      fs.createReadStream('./electron-with-express/public/mdmtk/2-0/index.html').pipe(fs.createWriteStream('./electron-with-express/public/index.html'))
+      
       console.log('Site build complete!');
       console.log('\u0007');//System bell to alert when build is complete
     }

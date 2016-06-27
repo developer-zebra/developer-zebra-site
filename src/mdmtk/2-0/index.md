@@ -9,7 +9,7 @@ menu:
   items:
     - title: Home
       url: /mdmtk/2-0/guide/about
-    - title: Tutorial
+    - title: Quick Start
       url: /mdmtk/2-0/tutorial/
     - title: Guides
       url: /mdmtk/2-0/guide/guides/

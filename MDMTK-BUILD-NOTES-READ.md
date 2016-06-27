@@ -11,5 +11,5 @@
 ## Building for electron
 
 1) build mdm_mdmtk
-2) Copy /build_mdmtk -> /electron-with-express/public
-3) Copy /build_mdmtk/mdmtk/2-0/index.html -> /electron-with-express/public/index.html (so that starting point is the MDMTK starting point)
+2) cd electron-with-express
+3) electron .

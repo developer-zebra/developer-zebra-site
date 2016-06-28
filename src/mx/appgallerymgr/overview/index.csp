@@ -5,12 +5,12 @@ type: text
 order: 1
 ---
 
-AppGalleryMgr enables administrators to remotely configure the AppGallery client app on a device using Zebra StageNow or a third-party Mobile Device Management (MDM) solution using Zebra MDM Tolkit. AppGallery is an enterprise infrastructure that Zebra provides for organizations to deploy, distribute and maintain applications for internal use or for sale to the general public. 
+AppGalleryMgr enables administrators to remotely configure the AppGallery client app on a device using Zebra StageNow or a third-party Mobile Device Management (MDM) solution using Zebra MDM Toolkit. AppGallery is an enterprise infrastructure that Zebra provides for organizations to deploy, distribute and maintain applications for internal use or for sale to the general public. 
 
 ### Main Functionality
 
 * Enable or disable the AppGallery client app on a device
-* Specify a username and password
+* Specify a user name and password
 * Set or use default credentials
 * Specify an organization key
 * Enable or disable client-app notifications

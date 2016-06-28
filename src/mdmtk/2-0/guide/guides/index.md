@@ -21,7 +21,7 @@ automenu:
       items:
         - title: Overview
           url: /mdmtk/2-0/guide/xml/xml_overview
-        - title: Submit
+        - title: Generate & Submit
           url: /mdmtk/2-0/guide/xml/submit
         - title: Response
           url: /mdmtk/2-0/guide/xml/response

@@ -244,13 +244,13 @@ var sitebuild = Metalsmith(__dirname)
     .use(codehighlight({
 
     }))
-    .destination('./electron-express/public')
+    .destination('./electron-with-express/public')
     .build(function (err) {
     if (err) {
       console.log(err);
     }
     else {
-      fs.createReadStream('./electron-express/public/mdmtk/2-0/index.html').pipe(fs.createWriteStream('./electron-express/public/index.html'))
+      fs.createReadStream('./electron-with-express/public/mdmtk/2-0/index.html').pipe(fs.createWriteStream('./electron-with-express/public/index.html'))
       
       console.log('Site build complete!');
       console.log('\u0007');//System bell to alert when build is complete

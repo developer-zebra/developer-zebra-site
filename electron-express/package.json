@@ -1,0 +1,27 @@
+{
+  "name": "electron-with-express",
+  "description": "Demonstrates spawning Express from Electron and using it to serve content",
+  "version": "0.0.1",
+  "main": "main.js",
+  "authors": [
+    "Frank Hale <frankhale@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./start-electron.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.0",
+    "cookie-parser": "~1.4.1",
+    "debug": "~2.2.0",
+    "electron-open-link-in-browser": "^1.0.2",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.9"
+  }
+}

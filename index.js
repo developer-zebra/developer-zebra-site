@@ -15,7 +15,7 @@ function ignoreFunc(file, stats) {
 }
 
 var index_generate = function(folder){
-    folder = "build/" + folder;
+    folder = "electron-express/" + folder;
     var json = [];
     files = wrench.readdirSyncRecursive(folder);
     // console.log(files)
@@ -31,7 +31,7 @@ var index_generate = function(folder){
             console.log("reading:" + filename);
             var html_file = fs.readFileSync(filename);
             html = unfluff(html_file, 'en');
-            var mdfile= filename.replace("build/","src/").replace(".html",".md");
+            var mdfile= filename.replace("electron-express/public/","src/").replace(".html",".md");
             var md = fs.readFileSync(mdfile).toString();
             
             var yaml;
@@ -59,7 +59,7 @@ var index_generate = function(folder){
                 title: yaml.attributes.title,
                 keywords: keyword_string,
                 summary: snippet,
-                url: filename.replace("build/","/").replace("/index.html","")
+                url: filename.replace("electron-express/public/","/").replace("/index.html","")
 
             }
             if(index_item.keywords==""){
@@ -88,13 +88,14 @@ var index_generate = function(folder){
     
 
 }
-      index_generate("datawedge/5-0");
-      index_generate("emdk-for-android/4-2");
-      index_generate("emdk-for-android/4-0");
-      index_generate("emdk-for-android/3-1");
-      index_generate("emdk-for-xamarin/1-0");
-      index_generate("emdk-for-xamarin/2-0");
-      index_generate("stagenow/2-2");
-      index_generate("stagenow/2-3");
-      index_generate("ehs/2-3");
-      index_generate("enterprise-keyboard/1-0");
+    index_generate("public/mdmtk/2-0");
+    //   index_generate("datawedge/5-0");
+    //   index_generate("emdk-for-android/4-2");
+    //   index_generate("emdk-for-android/4-0");
+    //   index_generate("emdk-for-android/3-1");
+    //   index_generate("emdk-for-xamarin/1-0");
+    //   index_generate("emdk-for-xamarin/2-0");
+    //   index_generate("stagenow/2-2");
+    //   index_generate("stagenow/2-3");
+    //   index_generate("ehs/2-3");
+    //   index_generate("enterprise-keyboard/1-0");

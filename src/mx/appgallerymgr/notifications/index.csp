@@ -12,7 +12,7 @@ parm:
   list:
     - code: 0
       name: Do Not Change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no changes; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
       name: Turn On
@@ -23,6 +23,6 @@ parm:
       description: Disables AppGallery client Notifications on the device.
       mx: "6.0"
 ---
-Used to enable/disable AppGallery client Notifications on the device, which use beeps, vibration and/or pop-ups to alert AppGallery users of updates and other events relating to apps they use or are invited to use. 
+Used to enable/disable AppGallery client Notifications on the device. Notifications are user-configurable beeps, vibrations and/or pop-ups to alert the user of updates and other events relating to AppGallery apps they use or have been invited to use. 
 
 

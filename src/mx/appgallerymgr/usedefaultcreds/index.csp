@@ -2,7 +2,7 @@
 csp: appgallerymgr
 title: Use Default Credentials
 type: parm
-order: 4
+order: 3
 mx: "6.0"
 parm:
   presentif: AppGallery Client State is set to "Turn On"
@@ -12,7 +12,7 @@ parm:
   list:
     - code: 0
       name: Do Not Change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no changes; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
       name: Turn On
@@ -23,6 +23,5 @@ parm:
       description: Prevents the AppGallery client app from accepting default log-in credentials.
       mx: "6.0"
 ---
-Used to enable/disable the acceptance of default log-in credentials by the AppGallery client app on the device. When enabled, the user will log in automatically whenever AppGallery is launched using the default credentials.
-
+Used to enable/disable the default log-in credentials built into the AppGallery client app. **This allows access only to apps in the public marketplace**. To configure a device for access to private apps and collections, see Set Credentials and Organization Key.  
 

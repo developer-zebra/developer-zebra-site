@@ -10,7 +10,7 @@ parm:
   name: Username
   type: string
 ---
-Used to specify a User Name, which must correspond with a user account configured on the AppGallery server. The User Name (with corresponding Password) generally links the user to one or more sets of applications made available by the organization. 
+Used to specify a User Name, which must correspond with a user account configured on the AppGallery server. The User Name (with corresponding Password and Organization Key) enables AppGallery on the device to access private apps and collections made available by the organization. 
 
 **Parm value input rules**: 
 

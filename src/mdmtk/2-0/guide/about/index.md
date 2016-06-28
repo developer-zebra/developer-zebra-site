@@ -33,4 +33,4 @@ This version of the MDM toolkit supports the following devices and versions of M
 * MX
 	* Version 4.4
 
->**Note:** Certain features may not be supported on certain devices. For more information on which features are supported on which device, please see the [Feature Compatibility Matrix](mdmtk/2-0/mx/compatibility) on the Feature Type pages in the Feature Type reference.
+>**Note:** Certain features may not be supported on certain devices. For more information on which features are supported on which device, please see the [Feature Compatibility Matrix](/mdmtk/2-0/mx/compatibility) on the Feature Type pages in the Feature Type reference.

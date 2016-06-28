@@ -5,14 +5,14 @@ type: parm
 order: 4
 mx: "6.0"
 parm:
-  presentif: AppGallery Client is set to "Turn On"
+  presentif: AppGallery Client State is set to "Turn On"
   pivotal: No
   name: UseDefaultCreds
   type: list
   list:
     - code: 0
       name: Do Not Change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously configured settings will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
       name: Turn On

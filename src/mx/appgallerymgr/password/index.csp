@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "6.0"
 parm:
-  presentif: Set Credentials is set to "Enable" and use Default Credentials is set to "Disable"
+  presentif: Set Credentials is set to "Enable" and Use Default Credentials is set to "Disable"
   pivotal: No
   name: Password
   type: string
@@ -14,5 +14,5 @@ Used to specify a user Password, which must correspond with a user account confi
 
 **Parm value input rules**: 
 
-* String containing the User Name as it appears in the Admin screen 
+* String containing the Password as it appears in the Admin screen (hidden on the client) 
 * The minimum length is 8 characters

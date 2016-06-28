@@ -5,14 +5,14 @@ type: parm
 order: 3
 mx: "6.0"
 parm:
-  presentif: AppGallery Client is set to "Turn On" and Use Default Credentials is set to "Disable"
+  presentif: AppGallery Client State is set to "Turn On" and Use Default Credentials is set to "Disable"
   pivotal: No
   name: SetCredentials
   type: list
   list:
     - code: 0
       name: Do Not Change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously configured settings will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no changes to be made; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
       name: Turn On
@@ -23,5 +23,5 @@ parm:
       description: Disables the setting of log-in credentials for the device.
       mx: "6.0"
 ---
-Used to enable/disable the setting of log-in credentials for a device. Enable this parameter to provision a device with a User Name and Password.
+Used to enable/disable the setting of log-in credentials for a device. Enable this parameter to provision a device with a User Name and Password. Credentials are required for access to private app collections and the public marketplace. **User credentials will not persist following enterprise reset**.
 

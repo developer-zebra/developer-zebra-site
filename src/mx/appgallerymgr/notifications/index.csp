@@ -2,7 +2,7 @@
 csp: appgallerymgr
 title: Notifications Enable/Disable
 type: parm
-order: 8
+order: 21
 mx: "6.0"
 parm:
   presentif: AppGallery Client State is set to "Turn On"
@@ -23,6 +23,6 @@ parm:
       description: Disables AppGallery client Notifications on the device.
       mx: "6.0"
 ---
-Used to enable/disable AppGallery client Notifications on the device. Notifications are user-configurable beeps, vibrations and/or pop-ups to alert the user of updates and other events relating to AppGallery apps they use or have been invited to use. 
+Used to enable/disable AppGallery client Notifications on the device. Notifications are user-configurable beeps, vibrations and/or pop-ups that alert the user of updates and other events relating to AppGallery apps currently in use or that they have been invited to use. 
 
 

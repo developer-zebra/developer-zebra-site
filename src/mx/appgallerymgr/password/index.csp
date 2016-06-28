@@ -2,7 +2,7 @@
 csp: appgallerymgr
 title: Password
 type: parm
-order: 6
+order: 15
 mx: "6.0"
 parm:
   presentif: Set Credentials is set to "Enable" and Use Default Credentials is set to "Disable"

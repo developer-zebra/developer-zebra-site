@@ -2,7 +2,7 @@
 csp: appgallerymgr
 title: Use Default Credentials
 type: parm
-order: 3
+order: 7
 mx: "6.0"
 parm:
   presentif: AppGallery Client State is set to "Turn On"

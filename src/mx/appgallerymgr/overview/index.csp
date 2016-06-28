@@ -5,16 +5,14 @@ type: text
 order: 1
 ---
 
-AppGallery Manager provides a mechanism for remotely configuring the AppGallery client app. 
-
-AppGallery is the Zebra AppStore for the enterprise. It provides a powerful and easy-to-use infrastructure that organizations can use free of charge to deploy, distribute and maintain any number of applications for internal use and optionally to promote and offer their apps for sale to the general public.   
+AppGalleryMgr enables administrators to remotely configure the AppGallery client app on a device. AppGallery is an enterprise infrastructure that Zebra provides for organizations to deploy, distribute and maintain applications for internal use or for sale to the general public. 
 
 ### Main Functionality
 
 * Enable or disable the AppGallery client app on a device
-* Set Credentials
-* Use Default Credentials
-* Specify a Username and Password
-* Specify an Organization Key
-* Enable or disable client-app Notifications
+* Set User credentials
+* Use default credentials
+* Specify a username and password
+* Specify an organization key
+* Enable or disable client-app notifications
 

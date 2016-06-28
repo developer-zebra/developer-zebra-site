@@ -1,0 +1,17 @@
+---
+csp: appgallerymgr
+title: Organization Key
+type: parm
+order: 7
+mx: "6.0"
+parm:
+  presentif: Set Credentials is set to "Enable" and Use Default Credentials is set to "Disable"
+  pivotal: No
+  name: OrganizationKey
+  type: string
+---
+Used to specify the Organization Key, which must correspond with the key stored on the AppGallery server's Admin Profile page. The Organization Key is encrypted with the AppGallery Public Key. 
+
+**Parm value input rules**: 
+
+* String containing the Key as it appears in the Admin screen (hidden on the client)

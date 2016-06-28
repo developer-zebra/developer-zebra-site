@@ -5,18 +5,14 @@ type: parm
 order: 5
 mx: "6.0"
 parm:
-  presentif: The Action is "Launch an application"
+  presentif: Set Credentials is set to "Enable" and Use Default Credentials is set to "Disable"
   pivotal: No
-  name: UserName
+  name: Username
   type: string
 ---
+Used to specify a User Name, which must correspond with a user account configured on the AppGallery server. The User Name (with corresponding Password) generally links the user to one or more sets of applications made available by the organization. 
 
->**Note:** To perform the above listed Actions on an application, the Name of that application can be specified instead of the Package Name. The Name is defined as the name that accompanies the application icon in the Android Launcher, App Drawer or Application Manager. This name also is specified in the `app_name` field of the `strings.xml` file. 
+**Parm value input rules**: 
 
-Provide the Name of the application for the application action.
-
-Parm value input rules: 
-
-* String containing the Name of the application as it appears in the Launcher, App Drawer, Application Manager or `app_name` field of the `strings.xml` file  (i.e. "Calculator")
-* The minimum length is 1 character and the maximum length is 255 characters
-* The application names are not case sensitive
+* String containing the User Name as it appears in the Admin screen 
+* The minimum length is 1 character

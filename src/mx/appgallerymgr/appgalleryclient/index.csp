@@ -22,5 +22,5 @@ parm:
       description: Disables the AppGallery client app on the device.
       mx: "6.0"
 ---
-This is the on/off switch for the AppGallery client app on the device. Disabling AppGallery removes its icon from the Android Launcher but does not remove the app itself; it can be switched on and off as desired and will retain all prior settings. **User credentials will not persist following an enterprise reset**. 
+This is the on/off switch for the AppGallery client app on the device. Disabling AppGallery removes its icon from the Android Launcher but does not remove the app itself; it can be switched on and off as desired and will retain all prior settings. **User credentials persist following an enterprise reset**. 
 

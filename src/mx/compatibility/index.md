@@ -21,7 +21,7 @@ csps:
     title: Analytics Manager
     url: /mx/analyticsmgr
     csp: analyticsmgr
- - type: section
+  - type: section
     title: AppGallery Manager
     url: /mx/appgallerymgr
     csp: appgallerymgr

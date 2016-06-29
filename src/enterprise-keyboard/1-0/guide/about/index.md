@@ -23,7 +23,7 @@ The Enterprise Keyboard offers the following unique capabilities to help improve
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:350px" src="sample_1.png"/>
-_To maximize screen space for apps, the spelling Suggestions bar (not shown) shares space with the keypad Navigation Tab bar (highlighted), which fades out temporarily when suggestions are available_.
+_The Tab bar automatically hides away when spelling suggestions appear, maximizing screen space for applications_. 
 <br>
 
 <b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:

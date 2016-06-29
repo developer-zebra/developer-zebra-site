@@ -112,10 +112,10 @@ Text Correction controls automatic corrections to typed text based the predefine
 
 <b>Suggest Contact names</b> automatically displays contacts from the contact list when typing names. 
 
-<b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next.
+<b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next. This is sometimes referred to as "predictive text."
 
 #### Personal dictionary
-The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of input from the keyboard. For example, if configured for a medical device, typing "gerd" might present the phrase "gastroesophageal reflux disease" and similar medical terms that begin with the same letters. 
+The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of keyboard input. For example, if configured for a medical device, the acronym "gerd" could be added as a shortcut and replaced with "gastroesophageal reflux disease" whenever it was typed.
 
 <img alt="" style="height:350px" src="pref_text_1.png"/>
 <br>
@@ -124,9 +124,9 @@ The Personal dictionary can be used to store terms specific to a particular indu
 
 * Terms must be added to the Personal dictionary one at a time. 
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
-* Longer terms and phrases may be injected with an ellipsis (...) when displayed. 
+* When displayed, longer terms and phrases might be injected with an ellipsis (...) in the suggestion bar. 
 * Spelling suggestions do not appear with all field types.  
-<!-- * For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool (not available in EKB 1.0).-->
+* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool. 
 
 #####Add a term to the Personal dictionary: 
 

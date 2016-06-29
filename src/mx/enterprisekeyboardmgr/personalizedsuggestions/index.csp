@@ -1,0 +1,26 @@
+---
+csp: enterprisekeyboardmgr
+title: Personalized Suggestions Enable/Disable
+type: parm
+order: 13
+mx: "6.0"
+parm:
+  pivotal: No
+  name: PersonalizedSuggestions
+  type: list
+  list:
+    - code: 0
+      mx: "6.0"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 1
+      name: Turn on
+      mx: "6.0"
+      description: Enables Enterprise Keyboard to display personalized spelling suggestions from the Personal Dictionary.
+    - code: 2
+      name: Turn off
+      mx: "6.0"
+      description: Disables suggestions for spelling corrections from the Personal Dictionary.
+---
+
+Controls whether Enterprise Keyboard will suggest words and terms that have been previously entered and stored in the Personal Dictionary. Suggested words will appear as spelling corrections for words as they are being typed. **Enable Auto-correction to accept suggested words by pressing the space bar**. 

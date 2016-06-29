@@ -1,0 +1,27 @@
+---
+csp: enterprisekeyboardmgr
+title: Voice Input Key Enable/Disable
+type: parm
+order: 25
+mx: "6.0"
+parm:
+  pivotal: No
+  name: VoiceInputKey
+  type: list
+  list:
+    - code: 0
+      mx: "6.0"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 1
+      name: Turn on
+      mx: "6.0"
+      description: Causes the Voice Input Key (mic) to be shown.
+    - code: 2
+      name: Turn off
+      mx: "6.0"
+      description: Hides the Voice Input Key (mic).
+---
+
+Controls whether to display the voice input key, which contains a microphone icon. When enabled, will display a key for allowing Enterprise Keyboard to accept spoken input using the device microphone. **This feature is visible on GMS-enabled devices only**. 
+

@@ -531,7 +531,7 @@ To manually change the default launcher on a device without removing EHS:
 <b>Note</b>: The trash can icon seen here offers an alternative means of uninstalling EHS and restoring the Android Launcher. 
 
 ## Battery and Wi-Fi Quick View
-In addition to the separate panels for viewing Battery and Wi-Fi status provided in the "hamburger" menus of Admin and User Modes, EHS provides Quick View, an alternate way of accessing real-time status of these critical devices from a single screen.
+In addition to the separate panels for viewing Battery and Wi-Fi status provided in the menus of Admin- and User-Mode Launcher screens, EHS provides Quick View, an alternate way of accessing real-time status of these critical devices from a single screen.
 
 **To view Battery and Wi-Fi status**: 
 

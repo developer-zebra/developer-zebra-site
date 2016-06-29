@@ -5,7 +5,7 @@ layout: list-products.html
 products:
   - title: DataWedge
     description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
-    url: /datawedge/3-1/guide/about
+    url: /datawedge/5-0/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:

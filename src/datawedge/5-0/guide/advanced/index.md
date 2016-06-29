@@ -358,7 +358,7 @@ The following is an example of the creation process for an Advanced Data Formatt
 1. Tap **Enable**.
 1. Tap **Rule0**.
 1. Tap **Criteria**.
-1. Tap **String to check for**. In the text box, **enter 129** and **Tap OK**.
+1. Tap **String to check for**. In the text box, **enter "129"** and **Tap OK**.
 1. Tap **String position**. Change value to 0 and **Tap OK**.
 1. Tap **String length**. Change value to 12 and **Tap OK**.
 1. Tap **Source criteria**.
@@ -366,18 +366,18 @@ The following is an example of the creation process for an Advanced Data Formatt
 1. Tap **All decoders enabled** to uncheck and disable all decoders.
 1. Tap **Code39** to enable the Code39 decoder only. 
 1. Tap **BACK** three times.
-1. Tap and hold the **Send remaining** until a menu appears.
+1. Under Actions, **tap and hold Send remaining** until a menu appears.
 1. Tap **Delete action**.
 1. Tap **Menu -> New action**. Select **Pad with zeros**. The Pad with zeros Action appears in the Actions list.
 1. Tap the **Pad with zeros** Action.
 1. Tap **How many**. Change value to 8 and **Tap OK**.
 1. Tap **BACK**.
 1. Tap **Menu -> New action**. Select **Send up to**. The Send up to Action appears in the Action list.
-1. Tap **Send up to** Action.
-1. Tap **String**. In the text box, **enter X** and **Tap OK**.
+1. Tap the **Send up to** Action.
+1. Tap **String**. In the text box, **enter "X"** and **Tap OK**.
 1. Tap **BACK**.
 1. Tap **Menu -> New action**. Select **Send char**. The Send char Action appears in the Action list.
-1. Tap **Send char** Action.
+1. Tap the **Send char** Action.
 1. Tap **Character code**. In the text box, **enter 32** and **Tap OK**.
 1. Tap **BACK**.
 

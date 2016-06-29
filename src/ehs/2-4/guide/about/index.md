@@ -246,7 +246,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **[Custom App Icons](../settings#icon) -** permits customized icons for apps and links, overriding the default system icons. 
 
-* **[App Icon Size](../settings#appiconsize) -** provides five sizes for User-mode application icons.
+* **[Custom Title-bar Icons](../settings#titlebariconfile) -** permits a custom icon to be displayed in the EHS Title Bar, overriding the default system icon. 
+
+* **[App Icon Size](../settings#appiconsize) -** provides five sizes for Admin- and User-mode application icons.
 
 <!-- <img alt="" style="height:350px" src="2-4_icon_size.png"/>
 _The icon size UI is accessible from Admin or User Modes (default shown)_.  

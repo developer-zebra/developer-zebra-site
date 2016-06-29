@@ -208,33 +208,36 @@ When specifying links, the package and activity parameters can be used to launch
 * Label: string
 * Package: app package name 
 * &#42; (asterisk): used as a wildcard to specify multiple packages with the same prefix 
-* Activity (optional): name of the activity to be invoked when the app starts
+* Exclude: used with wildcard to omit one or more apps from a wildcard set
+* Activity (optional): name of an activity to be invoked when an app starts
 
 
 ####Sample XML using wildcard to select several apps: 
 
     <applications>
         //The following lines:
-          <application label="Labeling" package="com.inditex.mobility.labeling" activity=""/>
-          <application label="19 Online" package="com.inditex.mobility.19online" activity=""/>
-          <application label="25 Online" package="com.inditex.mobility.25online" activity=""/>
-          <application label="25R" package="com.inditex.mobility.25r" activity=""/>
-          <application label="Inventory" package="com.inditex.mobility.inventory" activity=""/>
-          <application label="Orders" package="com.inditex.mobility.orders" activity=""/>
+          <application label="Packaging" package="com.mobility.packaging" activity=""/>
+          <application label="Online" package="com.mobility.online" activity=""/>
+          <application label="Remote" package="com.mobility.remote" activity=""/>
+          <application label="Inventory" package="com.mobility.inventory" activity=""/>
+          <application label="Orders" package="com.mobility.orders" activity=""/>
 
         //...could be replaced with this single line using the wildcard character:
-            <application package="com.inditex.mobility.*"/>
+            <application package="com.mobility.*"/>
 
         //...adding a label to line above applies the label to all apps in the wildcard set:
-            <application label="inditex" package="com.inditex.mobility.*"/>
+            <application label="RetailApps" package="com.mobility.*"/>
 
         //To exclude one or more apps from the wildcard set: 
-            <application package="com.inditex.mobility.*" exclude=”com.inditex.mobility.inventory”/> 
-            <application package="com.inditex.mobility.*" exclude=”com.inditex.mobility.inventory; com.inditex. mobility.25online”/>
+            <application package="com.mobility.*" exclude=”com.mobility.inventory”/>
+
+            //The line above removes the "inventory" app. The line below removes both the "inventory" and "online" apps.  
+            
+            <application package="com.mobility.*" exclude=”com.mobility.inventory; com.mobility.online”/>
     </applications>
 <br>
 
-####Using wildcard to display all Android apps starting with the letter "c": 
+####Using wildcard to display all Android apps with "c" as their first letter:
 
     <applications>
         <application label="" package="com.android.c*"/>
@@ -259,12 +262,12 @@ When specifying links, the package and activity parameters can be used to launch
 * Zebra apps always display on the User-Mode screen before wildcard-selected apps.
 * Each group of apps selected by wildcard will be displayed in alphabetical order relative to other apps in that group.
 * Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
-* If &lt;bundle&gt; and &lt;icon&gt; tags are used, the same specified attributes apply to all wildcard-selected apps. 
+* If &lt;bundle&gt; and &lt;icon&gt; attributes are used, the same specified attributes apply to all wildcard-selected apps. 
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 
 * Apps selected by wildcard cannot be removed using the long-press feature in Admin Mode. 
 * Apps excluded from a wildcard search cannot be added using the long-press feature in Admin Mode.
-* The exclude command does not support the wildcard character; apps must be excluded one at a time or with an exclude tag (see "Include/Exclude Tags" in the Optional Feature Tags section, below).  
-<!-- * If an app that is individually specified in the &lt;applications&gt; section also is included in a wildcard search, it cannot be excluded using an "exclude" command or tag.-->
+* The exclude attribute does not support the wildcard character; apps must be excluded one at a time.  
+<!-- * If an app that is individually specified in the &lt;applications&gt; section also is included in a wildcard search, it cannot be excluded using an "exclude" attribute or tag.-->
 * If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).  
 * Labels longer than 18 characters will be truncated at the 18th character and appended with an ellipsis (...).
 * The label specified in a wildcard search will apply to all apps identified by the search. 
@@ -344,9 +347,9 @@ Permits the size of application icons to be set to Small, Medium, Large, Extra L
 
 **To change the icon size through the UI**:
 
-In Admin or User Mode, **tap the "hamburger" menu** and **select Icon settings**: 
+In Admin or User Mode, **tap the menu icon** and **select Icon settings**: 
 <img alt="" style="height:350px" src="2-4_icon_menu.png"/>
-_Icon size is accessible from Admin or User Modes_.
+_Icon size is accessible from Admin or User Modes and will apply to both_.
 <br>
 
 **Tap on the desired icon size**, then tap OK. Selected size is immediately applied. 
@@ -355,7 +358,7 @@ _Medium (shown) is the default icon size_.
 <br>
 
 <img alt="" style="height:500px" src="app_icon_sizes.png"/>
-_App icons can be displayed in any of these five sizes_. 
+_App icons can be displayed in five sizes; changes apply to both Admin and User Modes_.  
 <br>
 
 **To set icon size through the** `enterprisehomescreen.xml` **file**: 
@@ -419,7 +422,7 @@ Controls whether an icon will be displayed in the Title Bar. **A value of 0 (fal
 ------
 
 #### Title Bar Icon File
-Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled to 204 x 204 pixels using the aspect ratio of the image. Default EHS icon will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
+Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled (up or down) to fill the entire 204 x 204-pixel space using the aspect ratio of the image. Default EHS icon (shown below) will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
 
 <img alt="" style="height:350px" src="title_bar_3.png"/>
 
@@ -787,12 +790,12 @@ Permits any number of apps to be launched when EHS starts up. Similar to [Kiosk 
 
 Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used, and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
 
-**Important**: The delay times for app and service auto-launch all begin at the same time--when EHS first starts up--relative to other apps or services. For example, if App1 is given a delay of 2000 ms, App2 a delay of 4000, Service1 a delay of 3000 ms and Service2 a delay of 1000 ms, the order of execution would be: 
+**Important**: The delay times for app and service auto-launch all begin at the same time--when EHS first starts up--relative to other apps or services. For example, if App1 is given a delay of 2000 ms, App2 a delay of 4000, Svc1 a delay of 3000 ms and Svc2 a delay of 1000 ms, the order of execution would be: 
 
 * App1 two seconds after EHS launch
 * Svc1 one second later (3000 ms after EHS launch) 
-* Svc2 one second later (3000+1000 ms after EHS)
-* App2 two seconds later (2000 + 4000 after EHS)
+* Svc2 one second later (3000+1000 ms after EHS launch)
+* App2 two seconds later (2000 + 4000 after EHS launch)
 <br>
 
 <img alt="" style="height:350px" src="autolaunch.png"/>
@@ -869,25 +872,23 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 ------
 
 ### Bundle
-Permits the option of injecting key-value pairs via XML into an app when it launches. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file. **Bundle is not supported for use with links or services**. 
+Permits the option of injecting key-value pairs via XML into an app when it launches in User Mode. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file. **Bundle is not supported for Admin-mode apps or for use with links or services**. 
 
 **Bundle Notes**:
 * Bundled data is handled as a character string; app is responsible for converting data type as needed.  
 * The key and value portions of the bundle are separated by an equal sign (=). 
 * Bundles are separated by a semi-colon (;). 
-* Apps that include bundled data will behave the same in Admin Mode as in User Mode. 
-* Bundle is not supported for use with links or services.
+* Not supported for Admin-Mode apps, or for links or services.
 
 <b>Possible values</b>:
 * character string
 
 #### Example
 
-    <applications> 
-        <application label="TestAppBundle" package="com.example.testappbundledata" activity="com.example.testappbundledata.MainActivity" 
-        bundle="name=John Brown;code=2000;country=US;date=090615"/>   
+    <applications>
+        <application label="Inventory" package="com.access.inventory" activity=" com.access.inventory.Login"
+        bundle="username=John Brown;password=MyPassW0rd;country=USA;date=090615"/>  
     </applications>
-
 
 ------
 
@@ -896,11 +897,14 @@ Permits a custom graphic to be specified in place of the system or default icon 
 
 #### Examples
 
-    <application label="DWDemo" package="com.symbol.datawedge" icon="/sdcard/bb/pic.png"/>
-        
-    <link label="yahoo" url="http://www.yahoo.com" package="org.mozilla.firefox" activity="org.mozilla.firefox.App" icon="/enterprise/usr/newIcon.jpg" />
+**Replace the icon for an application**: 
+<application label="DWDemo" package="com.symbol.datawedge" icon="/sdcard/datawedge/demo.png"/>
+ 
+**Replace the icon for a link**: 
+<link label="yahoo" url="http://www.yahoo.com" package="org.mozilla.firefox" activity="org.mozilla.firefox.App" icon="/enterprise/usr/customfirefox.jpg" />
 
-    <application label="WebMenu" package="com.motorolasolutions.motordp" activity="com.freerdp.freerdpcore.presentation.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.bmp"/>
+**Replace the icon for an app launching with a specific activity**:  
+<application label="WebMenu" package="com.symbol.rdp" activity="com.symbol.rdp.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.bmp"/>
 
 ------
 

@@ -24,12 +24,16 @@ mxversions:
 csps:
   - type: section
     title: Access Manager
-    url: /mx/accessmgr/
+    url: /mx/accessmgr
     csp: accessmgr
   - type: section
     title: Analytics Manager
     url: /mx/analyticsmgr
     csp: analyticsmgr
+  - type: section
+    title: AppGallery Manager
+    url: /mx/appgallerymgr
+    csp: appgallerymgr
   - type: section
     title: App Manager
     url: /mx/appmgr
@@ -126,6 +130,10 @@ csps:
     title: Persist Manager
     url: /mx/persistmgr
     csp: persistmgr
+  - type: section
+    title: Personal Dictionary Manager
+    url: /mx/personaldictionarymgr
+    csp: personaldictionarymgr
   - type: section
     title: PowerKey Manager
     url: /mx/powerkeymgr

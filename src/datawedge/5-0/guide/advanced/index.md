@@ -206,13 +206,14 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 <img style="height:350px" src="adf_17_criteria_list.png"/>
 <br>
 
+**To Add an Action**:
+
 &#55;. From the Rule screen, **tap the "hamburger" menu and select New action** as highlighted below. A scrollable list of Actions appears similar to the image in Step 8.
 <img style="height:350px" src="adf_18_new_action.png"/>
 <br>
 
-&#56;. **Tap the desired Action in the Actions list**, scrolling as necessary. After tapping an Action, the Rule screen reappears with that Action added to the bottom of the Actions list. 
+&#56;. **Tap the desired Action in the Actions list**, scrolling as necessary. After tapping an Action, the Rule screen reappears with that Action added to the bottom of the Actions list. For a description of each Action, see the table below. 
 <img style="height:350px" src="adf_19_actions1.png"/>
-For a description of each Action, see the table below. 
 <br>
 
 ### Supported ADF Actions
@@ -324,8 +325,14 @@ cellspacing="0" cellpadding="4">
 </div>
 _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINE FEED or TAB characters._
 
-&#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes, below**.  
+&#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes and the example, below**.  
 <img style="height:350px" src="adf_22_actions_list.png"/>
+_The ADF Rule screen from Android KitKat (with several configured actions)._
+<br>
+<br>
+
+<img style="height:350px" src="rules_screen_AndroidL.png"/>
+_The ADF Rule screen from Android L (with no configured actions)._
 <br>
 
 **Action Notes**: 
@@ -339,7 +346,7 @@ _**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action
 * All data acquired through the Profile will be processed according to the Actions defined in the Rule before being transferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
-## Sample ADF Rule
+## ADF Rule Example
 The following is an example of the creation process for an Advanced Data Formatting Rule that might be typical for data processing scenarios. 
 
 **Barcode scanning criteria**:

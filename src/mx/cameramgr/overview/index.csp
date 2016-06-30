@@ -5,11 +5,11 @@ type: text
 order: 0
 ---
 
-The CameraMgr controls access to camera(s) and other mechanisms on the device that are capable of capturing images. Many Zebra Android products are equipped with devices that can be used to take pictures, scan barcodes or otherwise capture or acquire documents and images. For secure environments, CameraMgr can be used to restrict picture-taking and document capture and eliminate potential security risks posed by camera and non-camera devices.
+The CameraMgr controls access to camera(s) and other mechanisms on the device that are capable of capturing images. Many Zebra Android products are equipped with devices that can be used to take pictures, scan barcodes or otherwise capture or acquire documents and images. For secure environments, CameraMgr can be used to restrict picture-taking and document capture and eliminate potential security risks posed by cameras and non-camera devices.
 
-**Important:** Any mechanism on a device that can be used to take pictures or otherwise capture images is classified by CameraMgr as a Camera. For example, if a device is equipped with a CCD-based imager that is intended primarily to scan barcodes but also supports image capture, that imager will be treated as a camera and is **subject to commands that enable and/or disable all cameras**. Conversely, if such an imager offered only the ability to scan barcodes, it would pose less risk to image security, and would therefore not be classified as a camera. 
+**Important:** Any mechanism on a device that can be used to take pictures or otherwise capture images is treated as a camera by CameraMgr. For example, if a device is equipped with a CCD-based imager that is intended primarily to scan barcodes but also supports image capture, that imager will be treated as a camera and is **subject to commands that enable and/or disable all cameras**. Conversely, if such an imager offered only the ability to scan barcodes, it would pose less risk to image security, and would therefore not be treated as a camera. 
 
-> **Note: CameraMgr can be used to permit non-camera devices to take pictures or otherwise capture images. This function is not supported by Zebra**.
+> **Note: While CameraMgr can be used to permit non-camera devices to take pictures or otherwise capture images, this function is not supported by Zebra**.
 
 ### Main Functionality
 

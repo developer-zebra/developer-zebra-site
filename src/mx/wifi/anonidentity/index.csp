@@ -12,12 +12,14 @@ parm:
 
 ---
 
-Used to specify an Anonymous Identity for system that support it. When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it is sometimes necessary to specify an Identity outside the tunnel as well. To protect user identities from disclosure when sending outside the encryption protections of the tunnel, an Anonymous Identity can be sent outside the tunnel so as not to disclose the actual Identity, password or other verifying credentials, which always remain safely inside. **A separate Anonymous Identity can be used only if the Authentication Server is set up to support such use**.
+Used to specify an Anonymous Identity for systems that support it. 
 
-If no Anonymous Identity is specified, then the actual Identity will be sent outside the tunnel, if required. This may still be secure since the password and/or other verifying credentials are always sent inside the tunnel in modes that use a tunnel for secure credential delivery. Using the actual Identity outside the tunnel would therefore risk disclosure of only part of the information needed to authenticate. 
+When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it is sometimes necessary to specify an Identity outside the protections of the tunnel. In these cases, an Anonymous Identity can be sent so as not to disclose the actual Identity, password or other verifying credentials. **A separate Anonymous Identity can be used only if the Authentication Server is set up to support it**.
+
+If no Anonymous Identity is specified, then the actual Identity will be sent outside the tunnel, if required. This may still be secure since the password and/or other verifying credentials are always sent inside the tunnel (in modes that use a tunnel for secure credential delivery). Using the actual Identity outside the tunnel would therefore risk disclosure of only part of the information needed to authenticate. 
 
 Parm value input rules: 
 
 * String with a minimum of 0 characters and a maximum of 64 characters
 
-**Note**: Specifying an empty (length of zero) value (or the absence of this parm from the XML) will prevent the Anonymous Identity from being set.
+**Note: Specifying an empty (length of zero) value (or the absence of this parm from the XML) will prevent the Anonymous Identity from being set**.

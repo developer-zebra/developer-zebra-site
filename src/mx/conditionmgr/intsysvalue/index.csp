@@ -3,7 +3,7 @@ csp: conditionmgr
 title: Integer System Value
 type: parm
 order: 6
-sincemx: 4.4
+mx: 4.4
 parm:
   presentif: Data Type is "Integer"
   pivotal: No
@@ -11,7 +11,7 @@ parm:
   type: list
   list:
     - code: 1
-      sincemx: 4.4
+      mx: 4.4
       name: Battery Level
       description: 
 ---

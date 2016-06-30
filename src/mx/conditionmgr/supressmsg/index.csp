@@ -3,7 +3,7 @@ csp: conditionmgr
 title: Suppress Message
 type: parm
 order: 15
-sincemx: 6.0
+mx: 6.0
 parm:
   presentif: Condition Met Action or Condition Not Met Action is not "Success"
   pivotal: No

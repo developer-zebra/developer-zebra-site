@@ -12,7 +12,7 @@ parm:
 
 ---
 
-Used to specify an Anonymous Identity for systems that support it. 
+Used to specify an Anonymous Identity for systems that support separate authentication outside of a secure tunnel. 
 
 When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it is sometimes necessary to specify an Identity outside the protections of the tunnel. In these cases, an Anonymous Identity can be sent so as not to disclose the actual Identity, password or other verifying credentials. **A separate Anonymous Identity can be used only if the Authentication Server is set up to support it**.
 

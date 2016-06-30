@@ -1,0 +1,34 @@
+---
+csp: cameramgr
+title: Imager Camera Enable/Disable
+type: parm
+order: 10
+mx: "6.0"
+osx: "3.5"
+parm:
+  presentif: Use All Cameras is set to "Control Individual Cameras"
+  pivotal: No
+  name: UseImagerCamera
+  type: list
+  list:
+    - code: 0
+      mx: "6.0"
+      osx: "3.5"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to whether the device's imager camera can be used; any previously selected setting will be retained.
+    - code: 1
+      name: Enable
+      mx: "6.0"
+      osx: "3.5"
+      description: Enables use of the imager on the device, if present, allowing the imager camera to take pictures or otherwise acquire documents or images if an application exists on the device to do so.
+    - code: 2
+      name: Disable
+      mx: "6.0"
+      osx: "3.5"
+      description: Disables use of the imager camera on the device, preventing the device from taking pictures or otherwise acquiring documents or images, even if an application exists on the device to do so.
+---
+
+Controls use of the imager camera on the device, if so equipped. If the device is not equipped with an imager camera, use of this parm will return an error in the Result XML document.
+
+>**Zebra does not support the use of non-cameras for picture taking or document capture on devices running versions prior to Android M**.
+

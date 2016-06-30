@@ -10,4 +10,4 @@ parm:
   name: SuppressMessage
   type: boolean
 ---
-Used to enable/disable display of error message(s) in support of OS update functionality. 
+Used to disable error-message display in support of OS update functionality. 

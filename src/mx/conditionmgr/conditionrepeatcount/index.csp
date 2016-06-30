@@ -10,5 +10,4 @@ parm:
   name: ConditionRepeatCount
   type: string
 ---
-
-Enter the repeat count for the test condition. Min value: 2. Max value: 500
+Used to specify the number of times (from 2-500) to repeat the test condition.

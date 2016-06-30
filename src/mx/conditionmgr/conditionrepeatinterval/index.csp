@@ -10,5 +10,4 @@ parm:
   name: ConditionRepeatInterval
   type: string
 ---
-
-Enter the Time (in seconds) between Tests of the Condition. Min value: 1. Max value: 60
+Used to specify a period of time to delay (from 1-60 seconds) between tests of a Condition. 

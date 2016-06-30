@@ -12,11 +12,11 @@ parm:
     - code: 0
       mx: 4.4
       name: Success
-      description: 
+      description: Action to perform when a tested condition is successful. 
     - code: 1
       mx: 4.4
       name: Fail with characteristic-error
-      description:  
+      description: 
     - code: 2
       mx: 4.4
       name: Retry (up to specified times) then Fail

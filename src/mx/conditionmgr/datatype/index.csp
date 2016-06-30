@@ -12,10 +12,14 @@ parm:
     - code: 1
       mx: 4.4
       name: Boolean
-      description: field is of type Boolean
+      description: Field is of type Boolean
     - code: 2
       name: Integer
       mx: 4.4
-      description: field is of type Integer
+      description: Field is of type Integer
+    - code: 3
+      name: String
+      mx: 6.0
+      description: Field is of type String
 ---
 

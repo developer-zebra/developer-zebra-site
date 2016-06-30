@@ -5,10 +5,13 @@ type: text
 order: 0
 ---
 
-The Condition Manager makes decisions based on the condition set in the input XML.
+The Condition Manager allows makes decisions based on the condition set in the input XML.
+
+As a Device Administrator, I would like to be able to define pre-conditions that must be met before a series of operations will be attempted, so that I can avoid attempting operations that make no sense and are likely to fail.  This is important to avoid  attempting "dangerous" operations (e.g. wrong OS Upgrade) that might cause hard if performed on the wrong device or under the wrong circumstances.  This is also important to allow me to return a more useful failure message that tells me what pre-condition was not met, which may be much easier to consume than a failure message that told me the operation failed, since it might not be obvious that the failure resulted from the lack of the pre-condition.
 
 ### Main Functionality
 
 * Validate a condition described in the input XML request, repeat the condition if required, present the status of the validated condition.
 * Verify that the device has a valid IP address.
 * Verify the battery level of the device.
+* Specify a period of time to wait before tests of a Condition 

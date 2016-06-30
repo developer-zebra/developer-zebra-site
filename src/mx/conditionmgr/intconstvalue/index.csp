@@ -10,5 +10,4 @@ parm:
   name: BooleanSystemValue
   type: string
 ---
-
-Enter the integer value to test. Min Value: -32768, Max Value: 32767
+Used to specify the integer value (from -32768 to 32767) to test. 

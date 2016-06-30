@@ -9,6 +9,6 @@ The Condition Manager makes decisions based on the condition set in the input XM
 
 ### Main Functionality
 
-* Validate a condition described in the input XML request, repeat the condition if required, and present the status of the validated condition.
-* Condition validation includes verifying that the device has a valid IP address.
-* Condition validation includes verifying the device battery level.
+* Validate a condition described in the input XML request, repeat the condition if required, present the status of the validated condition.
+* Verify that the device has a valid IP address.
+* Verify the battery level of the device.

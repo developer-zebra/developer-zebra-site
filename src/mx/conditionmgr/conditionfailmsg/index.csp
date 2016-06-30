@@ -10,5 +10,4 @@ parm:
   name: ConditionFailMessage
   type: string
 ---
-
-Enter the message to return if the condition fails. Min length: 1. Max length: 250
+Used to specify a message when the Condition fails. Accepts a string from 1-250 characters. 

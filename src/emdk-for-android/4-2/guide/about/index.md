@@ -42,6 +42,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * TC70 - KitKat (4.4.2,4.4.3)
 * TC75 - KitKat (4.4.3)
 * TC8000 - KitKat (4.4.3)
+* WT6000 - Lollipop (5.1.1)
 
 
 
@@ -60,7 +61,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * Profile Manager Updates
 	* [Bluetooth Manager](../../mx/bluetoothmgr/) - The BluetoothMgr controls whether to allow new devices to pair.
 	* [Hosts Manager](/emdk-for-android/4-2/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
-	* [Launch application by simple name](../../mx/appmgr/#application-name) - new action for [App Manager](../../mx/appmgr).
+	* [Launch application by Application name](../../mx/appmgr/#application-name) - new action for [App Manager](../../mx/appmgr).
 	* [UI Manager](../../mx/uimgr) updates
 		* [Extended Locale Options](../../mx/uimgr/#set-an-extended-locale) - 4 new options for existing param "ExtendedLocale": SWEDEN_SWEDISH, NORWAY_NORWEGIAN-BOKMAL, FINLAND_FINISH, DENMARK_DANISH
 		* [Custom Locale](../../mx/uimgr/#set-a-custom-locale) - This parm value permits the selection of the device's Custom Locale. A locale is the combination of a language and a region in which that language is spoken.

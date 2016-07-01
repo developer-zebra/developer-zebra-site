@@ -25,7 +25,7 @@ parm:
       name: Disable
       mx: "6.0"
       osx: "3.5"
-      description: Disables use of the imager camera on the device, preventing the device from taking pictures or otherwise acquiring documents or images, even if an application exists on the device to do so.
+      description: Disables use of the imager camera, but does not effect the barcode scanner. This allows scanning to continue while preventing the device from taking pictures or otherwise acquiring documents or images, even if an application exists on the device to do so. 
 ---
 
 Controls use of the imager camera on the device, if so equipped. If the device is not equipped with an imager camera, use of this parm will return an error in the Result XML document.

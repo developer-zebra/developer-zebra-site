@@ -5,13 +5,60 @@ type: text
 order: 0
 ---
 
-The Condition Manager allows makes decisions based on the condition set in the input XML.
+The Condition Manager allows an administrator to define a set of pre-conditions that must be met by a device before one or more operations will be attempted, reducing the liklihood of failure of those operations. This helps eliminate the risks of attempting "dangerous" operations such as an OS upgrade, the failure of which can render a device unusable, severely limited or otherwise in need of service. 
 
-As a Device Administrator, I would like to be able to define pre-conditions that must be met before a series of operations will be attempted, so that I can avoid attempting operations that make no sense and are likely to fail.  This is important to avoid  attempting "dangerous" operations (e.g. wrong OS Upgrade) that might cause hard if performed on the wrong device or under the wrong circumstances.  This is also important to allow me to return a more useful failure message that tells me what pre-condition was not met, which may be much easier to consume than a failure message that told me the operation failed, since it might not be obvious that the failure resulted from the lack of the pre-condition.
+When a condition is not met, ConditionMgr optionally can repeatedly re-check a condition, wait for changes in a condition and/or return meaningful failure messages about a condition, allowing the administrator to attempt a remedy or make other decisions about how to proceed.
+
+ALLAN
+XML processing and error handling
+
+XML is always oprocessed top to bottom, in order unless errors happen. 
+errors that effect xml are top-lvel characteristic errors and 
+Input says to tghis to wifi. output said no can do to wifi
+
+Top-level char error handling modes (confirugerd thru XML mgr): 
+1- Default error (if not using XMLmgr) execute all top level chars in order and keep going areport all successes and failures. 
+
+example- 10 chars in input, output might = 8 success and 2 fails. or whatever. (one might cause others to faiul (download apk)
+
+2- stop on first error. that's always the last thing you'll seea nd the "first place where condmgr can add value. Is this an MC40,. if not, stop. If so, do these things. 
+
+3- REAL powerful way: Try-catch mode. Try to do these things and if any don't work, go here to try to fix it. If they work, go back to where you left off and keep going. 
+
+Use this by using XNL mgr multiple times. 
+
+DOC
+XML mgr set mode 3
+insert try stuff
+XML Mgr mode 4? "here's the exception handling catch"
+XMLmgr mode 1, 2 or 3 (where main line starts again)
+Mode 3 starts a new try section (if needed)
+
+Error-If 
+Condition mgr determines where to have an error
+XMLmgr is what to do about it
+
+One profile for MC40 and TC75:
+try conditionmgr myust be mc40 or error
+no error 
+load os for MC40
+if-this-then-that (there's no else)
+error- mode 3
+try TC75 or error
+no error
+load TC75 os
+
+Wizard in StageNow does all this automatically. 
+
+
 
 ### Main Functionality
 
-* Validate a condition described in the input XML request, repeat the condition if required, present the status of the validated condition.
-* Verify that the device has a valid IP address.
-* Verify the battery level of the device.
-* Specify a period of time to wait before tests of a Condition 
+* Validate a condition described in the input XML
+* Present and consume the status of the validated condition
+* Specify a number of times to repeat a validation attempt 
+* Specify a period of time to wait between tests of a condition 
+* Verify that the device has a valid IP address
+* Check the battery level of the device
+* Check for the presence of a file
+* Validate a device model (i.e. "TC70") with a string

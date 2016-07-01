@@ -22,4 +22,4 @@ parm:
       mx: 6.0
       description: Field is of type String
 ---
-
+Used to specify whether the Data Type is a Boolean, Integer or String value. 

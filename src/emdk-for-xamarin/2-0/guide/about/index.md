@@ -11,11 +11,10 @@ The EMDK for Xamarin v1.0 provides developers with a comprehensive set of tools 
 Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
 
 * MC18 - KitKat (4.4.4)
-* MC32 - JellyBean (4.1.1)
-* MC40 - KitKat (4.4.4), JellyBean(4.1.1)
+* MC40 - KitKat (4.4.4)
 * MC67 - KitKat (4.4.4)
 * MC92 - KitKat (4.4.4)
-* TC55 - KitKat (4.4.3), JellyBean (4.1.2)
+* TC55 - KitKat (4.4.3)
 * TC70 - KitKat (4.4.2,4.4.3)
 * TC75 - KitKat (4.4.3)
 * TC8000 - KitKat (4.4.3)
@@ -36,7 +35,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* [Data Capture Activity Selection Wildcard](/emdk-for-xamarin/2-0/mx/data-capture/activity) - When using an Activity Selector in a Data Capture profile and wish to include all activities in an application package, you no longer have to manually enter each activity. You can now enter a single asterisk ( \* ) and all activities in that package will be selected. 
 	* [Bluetooth Manager](/emdk-for-xamarin/2-0/mx/bluetoothmgr/) - The BluetoothMgr controls whether to allow new devices to pair.
 	* [Hosts Manager](/emdk-for-xamarin/2-0/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
-	* [Launch application by simple name](/emdk-for-xamarin/2-0/mx/appmgr/#application-simple-name) - new action for [App Manager](/emdk-for-xamarin/2-0/mx/appmgr).
+	* [Launch application by Application name](/emdk-for-xamarin/2-0/mx/appmgr/#application-simple-name) - new action for [App Manager](/emdk-for-xamarin/2-0/mx/appmgr).
 	* [UI Manager](/emdk-for-xamarin/2-0/mx/uimgr) updates
 		* [Current Locale Options](/emdk-for-xamarin/2-0//mx/uimgr/#set-current-locale) - Additional Locale support for SPANISH, US_SPANISH, BRAZILIAN PORTUGUESE and PORTUGUESE
 		* [Extended Locale Options](/emdk-for-xamarin/2-0/mx/uimgr/#set-an-extended-locale) - 4 new options for existing param "ExtendedLocale": SWEDEN_SWEDISH, NORWAY_NORWEGIAN-BOKMAL, FINLAND_FINISH, DENMARK_DANISH
@@ -46,7 +45,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* Password Masking / Encryption for sensitive values in Certificate Manager and GPRS Manager.
 	* [Wifi Manager - PAC File Support](/emdk-for-xamarin/2-0/mx/wifi/#pac-file-url) - Allows the central control of proxy settings for KitKat devices
 	* [DHCP Option Manager](/emdk-for-xamarin/2-0/mx/dhcp/) - Support for vendor specific options for granular configuration control
-	* [Display Manager / Screen Shot Usage](/emdk-for-xamarin/2-0/mx/displaymgr/#screen-shot-usage
+
+	* [Display Manager - Screen Shot Usage](/emdk-for-xamarin/2-0/mx/displaymgr/#screen-shot-usage)
 
 **Version 1.0**
 

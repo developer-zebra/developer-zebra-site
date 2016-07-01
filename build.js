@@ -313,6 +313,11 @@ var sitebuild = Metalsmith(__dirname)
         ascontent: true
     }))
     .use(foldermenu({
+        folder: 'emdk-for-android/4-2/api/notification',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
         folder: 'emdk-for-android/4-2/'
     }))
     .use(foldermenu({

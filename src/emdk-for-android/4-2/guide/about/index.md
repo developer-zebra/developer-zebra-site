@@ -42,6 +42,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * TC70 - KitKat (4.4.2,4.4.3)
 * TC75 - KitKat (4.4.3)
 * TC8000 - KitKat (4.4.3)
+* WT6000 - Lollipop (5.1.1)
 
 
 
@@ -56,9 +57,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	* [Bluetooth Manager](../../mx/bluetoothmgr/) - The BluetoothMgr controls whether to allow new devices to pair.
 	
 	* [Hosts Manager](/emdk-for-android/4-2/mx/hostsmgr/) - The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.
-	
-	* [Launch application by Application Name](../../mx/appmgr/#application-name) - new action for [App Manager](../../mx/appmgr).
-	
+	* [Launch application by Application name](../../mx/appmgr/#application-name) - new action for [App Manager](../../mx/appmgr).
+
 	* [UI Manager](../../mx/uimgr) updates
 		* [New Locale Options](../../mx/uimgr/) - Added new feature to set the language to localize the device to match the preferred language of the intended Device User.
 		* [Notification Pulldown Enable/Disable](../../mx/uimgr/#notification-pulldown-enabledisable) - controls whether a user will be allowed to "pull down" the Notifications/Status bar and access the Notifications panel. 

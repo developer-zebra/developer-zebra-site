@@ -95,6 +95,8 @@ products:
         url: /emdk-for-xamarin/2-0/tutorial/
       - title: Samples
         url: /emdk-for-xamarin/2-0/samples
+      - title: Guides
+        url: /emdk-for-xamarin/2-0/guide/programming-guides
       - title: Profile Manager
         url: /emdk-for-xamarin/2-0/guide/profile-manager-guides
       - title: APIs

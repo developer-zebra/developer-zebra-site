@@ -1,0 +1,26 @@
+---
+csp: conditionmgr
+title: String System Value
+type: parm
+order: 10
+mx: 4.4
+parm:
+  presentif: Data Type is "String" 
+  pivotal: No
+  name: StringSystemValue
+  type: list
+  list:
+    - code: 12
+      mx: 4.4
+      name: MX version
+      description: 
+    - code: 13
+      mx: 4.4
+      name: OSx version
+      description: 
+---
+
+Desc's - "MX version OR HIGHER?" "
+
+General desc.
+

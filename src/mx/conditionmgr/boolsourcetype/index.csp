@@ -1,6 +1,6 @@
 ---
 csp: conditionmgr
-title: Boolean Data Source
+title: Boolean Source Type
 type: parm
 order: 3
 mx: 4.4

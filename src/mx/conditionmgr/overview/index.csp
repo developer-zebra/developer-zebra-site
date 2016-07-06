@@ -12,9 +12,9 @@ When a condition is not met, ConditionMgr optionally can repeatedly re-check a c
 ALLAN
 XML processing and error handling
 
-XML is always oprocessed top to bottom, in order unless errors happen. 
+XML is always processed top to bottom, in order unless errors happen. 
 errors that effect xml are top-lvel characteristic errors and 
-Input says to tghis to wifi. output said no can do to wifi
+For example: Input says do this to wifi. Output said no can do to wifi
 
 Top-level char error handling modes (confirugerd thru XML mgr): 
 1- Default error (if not using XMLmgr) execute all top level chars in order and keep going areport all successes and failures. 
@@ -25,7 +25,7 @@ example- 10 chars in input, output might = 8 success and 2 fails. or whatever. (
 
 3- REAL powerful way: Try-catch mode. Try to do these things and if any don't work, go here to try to fix it. If they work, go back to where you left off and keep going. 
 
-Use this by using XNL mgr multiple times. 
+Use this by using XML mgr multiple times. 
 
 DOC
 XML mgr set mode 3

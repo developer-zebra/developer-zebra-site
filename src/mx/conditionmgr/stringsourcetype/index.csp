@@ -1,0 +1,24 @@
+---
+csp: conditionmgr
+title: String Source Type
+type: parm
+order: 9
+mx: 4.4
+parm:
+  presentif: Data Type is "String"
+  pivotal: No
+  name: StringSourceType
+  type: list
+  list:
+    - code: 1
+      mx: 4.4
+      name: String System Property
+      description: 
+    - code: 2
+      mx: 4.4
+      name: Pre-defined String System Value
+      description: 
+---
+
+NEED desc's and gen. descrition
+

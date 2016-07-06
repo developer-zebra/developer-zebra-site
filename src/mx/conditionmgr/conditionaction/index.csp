@@ -1,12 +1,12 @@
 ---
 csp: conditionmgr
-title: Condition Met Action
+title: Condition Action
 type: parm
-order: 13
+order: 14
 mx: 4.4
 parm:
   pivotal: No
-  name: ConditionMetAction
+  name: ConditionAction
   type: list
   list:
     - code: 0
@@ -15,10 +15,16 @@ parm:
       description: Action to perform when a tested condition is successful. 
     - code: 1
       mx: 4.4
-      name: Fail with characteristic-error
-      description:  
+      name: Fail with characteristic-error.
+      description: 
     - code: 2
       mx: 4.4
-      name: Retry (up to specified times) then Fail
+      name: Retry (up to specified times) then Fail.
       description: 
 ---
+
+diff from "Condition met action"
+
+individual desc's
+
+GEN DESC

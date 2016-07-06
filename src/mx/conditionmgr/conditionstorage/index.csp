@@ -1,0 +1,29 @@
+---
+csp: conditionmgr
+title: Condition Storage
+type: parm
+order: 14
+mx: 4.4
+parm:
+  pivotal: No
+  name: ConditionStorage
+  type: list
+  list:
+    - code: 0
+      mx: 4.4
+      name: Do not store condition result
+      description: 
+    - code: 1
+      mx: 4.4
+      name: Store in Accumulator 1
+      description: 
+    - code: 2
+      mx: 4.4
+      name: Store in Accumulator 2
+      description: 
+---
+
+desc's
+
+gen desc
+

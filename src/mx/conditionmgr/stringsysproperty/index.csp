@@ -1,0 +1,27 @@
+---
+csp: conditionmgr
+title: String System Property
+type: parm
+order: 11
+mx: 4.4
+parm:
+  presentif: Data Type is "String"
+  pivotal: No
+  name: StringSystemProperty
+  type: list
+  list:
+    - code: 2
+      mx: 4.4
+      name: Product Model
+      description: 
+     - code: 11
+      mx: 4.4
+      name: Android Version
+      description: 
+     - code: 12
+      mx: 4.4
+      name: Build Number
+      description: 
+---
+
+NEED DESC's and general desc. 

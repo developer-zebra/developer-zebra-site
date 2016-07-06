@@ -1,17 +1,16 @@
 ---
 csp: conditionmgr
-title: Boolean System Value
+title: Boolean System Setting
 type: parm
 order: 4
 mx: 4.4
 parm:
   presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
   pivotal: No
-  name: BooleanSystemValue
-  type: list
-  list:
-    - code: 2
-      mx: 4.4
-      name: Have any valid IP Address
-      description: 
----
+  name: BooleanSystemSetting
+  type: string
+  ---
+lower desc
+
+
+

@@ -1,0 +1,36 @@
+---
+csp: conditionmgr
+title: Boolean Condition Test
+type: parm
+order: 4
+mx: 4.4
+parm:
+  presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
+  pivotal: No
+  name: BooleanConditionTest
+  type: list
+  list:
+    - code: 0
+      mx: 4.4
+      name: None
+      description:     
+    - code: 1
+      mx: 4.4
+      name: OR Accumulator 1
+      description: 
+    - code: 2
+      mx: 4.4
+      name: OR Accumulator 2
+      description: 
+    - code: 3
+      mx: 4.4
+      name: AND with Accumulator 1
+      description: 
+    - code: 4
+      mx: 4.4
+      name: AND with Accumulator 2
+      description: 
+---
+
+upper and lower desc's
+

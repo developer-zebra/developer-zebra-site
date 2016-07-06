@@ -1,17 +1,20 @@
 ---
 csp: conditionmgr
-title: Boolean System Value
+title: Boolean System Function
 type: parm
 order: 4
 mx: 4.4
 parm:
   presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
   pivotal: No
-  name: BooleanSystemValue
+  name: BooleanSystemFunction
   type: list
   list:
-    - code: 2
+    - code: 1
       mx: 4.4
-      name: Have any valid IP Address
+      name: Check for File Existence
       description: 
 ---
+
+upper and lower desc's
+

@@ -1,0 +1,28 @@
+---
+csp: conditionmgr
+title: Boolean System Property
+type: parm
+order: 4
+mx: 4.4
+parm:
+  presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
+  pivotal: No
+  name: BooleanSystemProperty
+  type: list
+  list:
+    - code: 1
+      mx: 4.4
+      name: GMS Build
+      description: 
+    - code: 2
+      mx: 4.4
+      name: FIPS Build
+      description: 
+    - code: 3
+      mx: 4.4
+      name: BETA Build
+      description: 
+---
+
+upper and lower desc's
+

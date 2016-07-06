@@ -11,7 +11,7 @@ parm:
   type: string
   ---
 CALLS FOR...
-IntegerSourceType NOT IMPLEMENTED (4)
+StringSourceType NOT IMPLEMENTED (4)
 
 lower desc
 

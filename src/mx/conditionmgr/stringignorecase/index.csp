@@ -1,0 +1,15 @@
+---
+csp: conditionmgr
+title: String Ignore Case
+type: parm
+order: 19
+mx: 4.4
+parm:
+  presentif: Data Type is "String" 
+  pivotal: No
+  name: StringIgnoreCase
+  type: boolean
+---
+CONFIRM
+
+Check this box to ignore upper- and lower-case letters in the string.

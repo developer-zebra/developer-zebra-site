@@ -1,0 +1,18 @@
+---
+csp: conditionmgr
+title: Integer Custom Arguments
+type: parm
+order: 4
+mx: 4.4
+parm:
+  presentif: Data Type is "Integer" and Integer Source Type is "Pre-defined System Integer Value"
+  pivotal: No
+  name: IntegerCustomArgs
+  type: string
+  ---
+CALLS FOR IntegerSourceType NOT IMPLEMENTED (4)
+
+lower desc
+
+
+

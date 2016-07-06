@@ -1,0 +1,14 @@
+---
+csp: conditionmgr
+title: String Constant Value
+type: parm
+order: 8
+mx: 4.4
+parm:
+  presentif: Data Type is "String" 
+  pivotal: No
+  name: IntegerConstantValue
+  type: string
+---
+DESC
+

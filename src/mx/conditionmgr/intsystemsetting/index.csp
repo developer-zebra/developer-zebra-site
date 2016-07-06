@@ -1,0 +1,13 @@
+---
+csp: conditionmgr
+title: Integer Constant Value
+type: parm
+order: 8
+mx: 4.4
+parm:
+  presentif: Data Type is "Integer" 
+  pivotal: No
+  name: IntegerConstantValue
+  type: string
+---
+Used to specify the integer value (from -32768 to 32767) to test. 

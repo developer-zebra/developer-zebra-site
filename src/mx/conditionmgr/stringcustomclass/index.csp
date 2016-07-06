@@ -1,0 +1,19 @@
+---
+csp: conditionmgr
+title: String Custom Class
+type: parm
+order: 4
+mx: 4.4
+parm:
+  presentif: Data Type is "String" and String Source Type is "Pre-defined System String Value"
+  pivotal: No
+  name: StringCustomClass
+  type: string
+  ---
+CALLS FOR...
+IntegerSourceType NOT IMPLEMENTED (4)
+
+lower desc
+
+
+

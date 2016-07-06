@@ -1,0 +1,19 @@
+---
+csp: conditionmgr
+title: Integer Custom Class
+type: parm
+order: 4
+mx: 4.4
+parm:
+  presentif: Data Type is "Integer" and Integer Source Type is "Pre-defined System Integer Value"
+  pivotal: No
+  name: IntegerCustomClass
+  type: string
+  ---
+CALLS FOR...
+IntegerSourceType NOT IMPLEMENTED (4)
+
+lower desc
+
+
+

@@ -1,15 +1,17 @@
 ---
 csp: conditionmgr
-title: Boolean System Setting
+title: Boolean Custom Member
 type: parm
 order: 4
 mx: 4.4
 parm:
   presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
   pivotal: No
-  name: BooleanSystemSetting
+  name: BooleanCustomMember
   type: string
   ---
+CALLS FOR BooleanSourceType NOT IMPLEMENTED (4)
+
 lower desc
 
 

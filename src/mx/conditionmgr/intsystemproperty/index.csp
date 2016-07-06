@@ -1,0 +1,31 @@
+---
+csp: conditionmgr
+title: Integer System Property
+type: parm
+order: 7
+mx: 4.4
+parm:
+  presentif: Data Type is "Integer"
+  pivotal: No
+  name: IntegerSystemProperty
+  type: list
+  list:
+    - code: 1
+      mx: 4.4
+      name: Platform SDK version
+      description:
+    - code: 2
+      mx: 4.4
+      name: BSP major version
+      description:
+    - code: 3
+      mx: 4.4
+      name: BSP minor version
+      description:
+    - code: 4
+      mx: 4.4
+      name: BSP build number
+      description:
+---
+
+upper and lower descriptions

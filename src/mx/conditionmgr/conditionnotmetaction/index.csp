@@ -16,14 +16,11 @@ parm:
     - code: 1
       mx: 4.4
       name: Fail with characteristic-error
-      description: 
+      description: Action to perform when a tested condition fails. 
     - code: 2
       mx: 4.4
       name: Retry (up to specified times) then Fail
-      description: 
+      description: Repeatedly tests the condition before failing. 
 ---
-
-NEED DESCRIPTIONS
-
-Fail with characteristic-error (default)
+Used to select the action to perform when the tested condition is not met. 
 

@@ -13,14 +13,10 @@ parm:
     - code: 12
       mx: 4.4
       name: MX version
-      description: 
+      description: The version of MX installed on the device. 
     - code: 13
       mx: 4.4
-      name: OSx version
-      description: 
+      name: OSX version
+      description: The version of OSx installed on the device. 
 ---
-
-Desc's - "MX version OR HIGHER?" "
-
-General desc.
-
+Used to select a Pre-defined System String Value against which to test the specified constant value to arrive at a Boolean value. For example, to set an operation to proceed only on devices that have OSX 3.5 installed, set this value to 2 ("OSX version") and set the Constant String Value to 3.5.

@@ -13,6 +13,5 @@ parm:
     - code: 2
       mx: 4.4
       name: Pre-defined System Integer Value
-      description: 
+      description: A numeric value defined by the device operating system.  
 ---
-

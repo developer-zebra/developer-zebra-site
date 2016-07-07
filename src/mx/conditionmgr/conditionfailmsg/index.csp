@@ -10,7 +10,7 @@ parm:
   name: ConditionFailMessage
   type: string
 ---
-Used to specify a message when the Condition fails. 
+Used to specify a message when the tested Condition fails. 
 
 **Parm value input rules**:
 

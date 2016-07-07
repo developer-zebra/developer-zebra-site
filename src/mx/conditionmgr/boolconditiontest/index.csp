@@ -13,7 +13,7 @@ parm:
     - code: 0
       mx: 4.4
       name: None
-      description:     
+      description: 
     - code: 1
       mx: 4.4
       name: OR Accumulator 1
@@ -31,6 +31,4 @@ parm:
       name: AND with Accumulator 2
       description: 
 ---
-
-upper and lower desc's
-
+Used to store test results from multiple Boolean tests.   

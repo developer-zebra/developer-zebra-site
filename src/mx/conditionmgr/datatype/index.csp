@@ -12,23 +12,16 @@ parm:
     - code: 1
       mx: 4.4
       name: Boolean
-      description: Field is of type Boolean
+      description: Indicates that the tested value will be either true or false. 
     - code: 2
       name: Integer
       mx: 4.4
-      description: Field is of type Integer
+      description: Indicates that the tested value will be a number. 
     - code: 3
       name: String
       mx: 6.0
-      description: Field is of type String
+      description: Indicates that the tested value will be a string of characters.  
 ---
-Used to specify whether the condition being tested 
+Used to specify the type of data being tested on the device: Boolean, Integer or String. All condition tests, regardless of the data type, will ultimately yield a Boolean value--some result that is either true or false. Tests of Boolean data types--for example, whether a device has a valid IP address--is the simplest test and provides a direct result. Integers and Strings must include one of the relevant test conditions such as "greater-than" for numeric values or "contains" for a specified string, to arrive at a Boolean value. 
 
-integer will be some number that will untilately be a boolean. (is it greater than 50?)
-what to do. 
-
-string of characters 
-= to a constant. is it "MC40" yes or no?
- 
-
-Data Type is a Boolean, Integer or String value. Note that source, value and test condition for each will valy by Data Type. For example, while a boolean checks simply whether a condition is "true" or "false," an integer must test whether a specific value is "greater than," "less than," "equal-to" and so on. 
+For example, to test whether a device is an MC40, look for a string in the Device Model field that contains the constant "MC40" and if so, the result will be "true." Note that the source types and system values also will vary by Data Type.

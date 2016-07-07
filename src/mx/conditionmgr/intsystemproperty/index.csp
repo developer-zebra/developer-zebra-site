@@ -13,21 +13,17 @@ parm:
     - code: 1
       mx: 4.4
       name: Platform SDK version
-      description:
+      description: Indicates the Android API level.
     - code: 2
       mx: 4.4
       name: BSP major version
-      description:
+      description: The digit of the Board Support Package prior to the decimal.
     - code: 3
       mx: 4.4
       name: BSP minor version
-      description:
+      description: The digit of the Board Support Package following to the decimal.
     - code: 4
       mx: 4.4
       name: BSP build number
-      description:
+      description: The specific number of the BSP build installed.
 ---
-
-CALLS FOR IntegerSourceType (3) NOT IMPLEMENTED 
-
-upper and lower descriptions

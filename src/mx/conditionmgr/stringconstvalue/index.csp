@@ -10,5 +10,9 @@ parm:
   name: StringConstantValue
   type: string
 ---
-DESC????
+Used to specify a string value against which to compare that which is found on the device. 
+
+**Parm value input rules**:
+
+* Accepts a string of characters
 

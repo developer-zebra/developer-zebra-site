@@ -13,12 +13,9 @@ parm:
     - code: 1
       mx: 4.4
       name: String System Property
-      description: 
+      description: A string of characters not defined by the device operating system.  
     - code: 2
       mx: 4.4
       name: Pre-defined String System Value
-      description: 
+      description: A string of characters defined by the device operating system. 
 ---
-
-NEED desc's and gen. description
-

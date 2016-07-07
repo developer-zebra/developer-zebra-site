@@ -13,5 +13,5 @@ parm:
     - code: 2
       mx: 4.4
       name: Have any valid IP Address
-      description: 
+      description: Returns "True" if the device has a valid IP address at the time of testing. 
 ---

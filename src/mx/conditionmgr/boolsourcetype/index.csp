@@ -15,7 +15,4 @@ parm:
       name: Pre-defined System Boolean Value
       description: 
 ---
-
-some other parms (booleansystemsetting 3 and boolean custom class 4) call for boolean source type of 3 and 4
-
-what is up there?
+Used to specify the Boolean source. 

@@ -13,5 +13,5 @@ parm:
     - code: 1
       mx: 4.4
       name: Battery Level
-      description: 
+      description: The current percentage of battery charge from 0-100 
 ---

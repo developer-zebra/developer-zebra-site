@@ -60,23 +60,25 @@ products:
         url: /enterprise-keyboard/1-0/download
   - title: EMDK For Android
     description: "Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/4-2/guide/about
+    url: /emdk-for-android/5-0/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/4-2/guide/gettingstarted
+        url: /emdk-for-android/5-0/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/4-2/tutorial/
+        url: /emdk-for-android/5-0/tutorial/
       - title: Samples
-        url: /emdk-for-android/4-2/samples
+        url: /emdk-for-android/5-0/samples
       - title: Guides
-        url: /emdk-for-android/4-2/guide/programming-guides
+        url: /emdk-for-android/5-0/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/4-2/guide/profile-manager-guides
+        url: /emdk-for-android/5-0/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/4-2/api
+        url: /emdk-for-android/5-0/api
     versions:
+      - url: emdk-for-android/5-0/guide/about/
+        menu: '5.0'
       - url: emdk-for-android/4-2/guide/about/
         menu: '4.1'
       - url: emdk-for-android/4-0/guide/about/

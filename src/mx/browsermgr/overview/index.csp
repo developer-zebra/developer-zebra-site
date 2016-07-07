@@ -7,10 +7,10 @@ order: 0
 
 The Browser Manager permits the configuration of browser settings such as the default home page.
 
-Many Zebra Android devices include a default Web Browser that contains modifications to the stock Android Open Source Project (AOSP) Web Browser source code. The key changes enable configurability of selected settings, and the BrowserMgr is used to configure those settings.
+Many Zebra Android devices include a default web browser that contains modifications to the stock Android Open Source Project (AOSP) web browser source code that enable configurability of selected settings. BrowserMgr is used to configure those settings.
 
 ### Main Functionality
 
 * Set the Default Home Page
-* Turn the Remember Passwords Option On/Off 
-* Turn the Save Form Data Option On/Off 
+* Remember Passwords enable/disable 
+* Save Form Data enable/disable 

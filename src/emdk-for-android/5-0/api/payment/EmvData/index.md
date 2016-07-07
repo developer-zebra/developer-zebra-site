@@ -3,7 +3,7 @@ title: EmvData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -20,8 +20,4 @@ Returns EMV tag data list.
 **Returns:**
 
 java.util.ArrayList - TagData EMVData data list.
-
-
-
-
 

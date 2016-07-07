@@ -3,7 +3,7 @@ title: CradleConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -80,10 +80,6 @@ boolean - ChargeMode (true - fast charge enabled, false - fast charge disabled)
 **Throws:**
 
 com.symbol.emdk.personalshopper.CradleException
-
-
-
-
 
 
 

@@ -3,7 +3,7 @@ title: StatusData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -38,8 +38,4 @@ Returns the friendly name of scanner for which the status data is returned.
 **Returns:**
 
 java.lang.String - Returns scanner index to the supported devices list.
-
-
-
-
 

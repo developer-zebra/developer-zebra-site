@@ -3,7 +3,7 @@ title: PaymentManager.DeviceIdentifier
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -14,8 +14,4 @@ Defines specific payment devices of each type.
 * **DEFAULT** -Default available payment device
 
 * **PD40** -PD40 payment device
-
-
-
-
 

@@ -3,7 +3,7 @@ title: PersonalShopper
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -29,8 +29,4 @@ The field to access the diagnostics feature.
 **Type:**
 
 com.symbol.emdk.personalshopper.Diagnostic
-
-
-
-
 

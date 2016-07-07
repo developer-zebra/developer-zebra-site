@@ -3,7 +3,7 @@ title: EMDKException
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -24,8 +24,4 @@ Returns the result.
 **Returns:**
 
 com.symbol.emdk.EMDKResults.STATUS_CODE
-
-
-
-
 

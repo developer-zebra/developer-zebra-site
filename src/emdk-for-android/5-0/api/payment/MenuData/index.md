@@ -3,7 +3,7 @@ title: MenuData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -20,8 +20,4 @@ Returns the choice string selected by the user
 **Returns:**
 
 java.lang.String - Choice string selected by the user.
-
-
-
-
 

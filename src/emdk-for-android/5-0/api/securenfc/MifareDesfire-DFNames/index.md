@@ -3,7 +3,7 @@ title: MifareDesfire.DFNames
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -34,8 +34,4 @@ ISO/IEC 7816-4 DF name
 **Type:**
 
 byte
-
-
-
-
 

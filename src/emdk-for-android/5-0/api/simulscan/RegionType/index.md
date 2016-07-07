@@ -3,7 +3,7 @@ title: RegionType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -20,8 +20,4 @@ The data type contained within the region
 * **BARCODE** -Data type is Barcode.
 
 * **PICTURE** -Data type is picture.
-
-
-
-
 

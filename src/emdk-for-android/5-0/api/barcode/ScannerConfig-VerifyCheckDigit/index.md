@@ -3,7 +3,7 @@ title: ScannerConfig.VerifyCheckDigit
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -26,8 +26,4 @@ Check the integrity of all Code 11 symbols to verify that the data
 * **ONE** -Bar code contains one check digit.
 
 * **TWO** -Bar code contains two check digits.
-
-
-
-
 

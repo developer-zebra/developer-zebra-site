@@ -3,7 +3,7 @@ title: CardData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -171,8 +171,4 @@ Returns the type of encoding that was found on the card.
 **Returns:**
 
 com.symbol.emdk.payment.PaymentDevice.CardEncodeType - Returns Card Encoding Type.
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ScanAndPairConfig.ScanInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -72,8 +72,4 @@ Specifies the type of trigger to be used. The default value is AUTO. If manual, 
 **Type:**
 
 com.symbol.emdk.scanandpair.ScanAndPairConfig.TriggerType
-
-
-
-
 

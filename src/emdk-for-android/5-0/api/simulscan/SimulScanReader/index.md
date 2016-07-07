@@ -3,7 +3,7 @@ title: SimulScanReader
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -281,8 +281,4 @@ The client can unregister to not get status notification via callbacks.
 **Returns:**
 
 void
-
-
-
-
 

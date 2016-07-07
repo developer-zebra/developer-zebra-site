@@ -3,7 +3,7 @@ title: PaymentManager.ConnectionState
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -14,8 +14,4 @@ Connection states of a payment device.
 * **CONNECTED**
 
 * **DISCONNECTED**
-
-
-
-
 

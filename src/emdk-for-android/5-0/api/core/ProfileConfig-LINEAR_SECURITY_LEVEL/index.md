@@ -3,7 +3,7 @@ title: ProfileConfig.LINEAR_SECURITY_LEVEL
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -28,8 +28,4 @@ Sets the number of times a bar code is read to confirm an accurate decode.
 * **LONG_AND_SHORT** -Two times read redundancy for long bar codes, three times for short bar codes.
 
 * **ALL_THRICE** -Three times read redundancy for all bar codes.
-
-
-
-
 

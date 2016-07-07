@@ -3,7 +3,7 @@ title: ScannerConfig.CheckDigitScheme
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -23,8 +23,4 @@ Two algorithms are possible for the verification of the second MSI check
 * **MOD_11_10** -First check digit is MOD 11 and second check digit is MOD 10.
 
 * **MOD_10_10** -Both check digits are MOD 10.
-
-
-
-
 

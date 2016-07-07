@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.ScanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -206,8 +206,4 @@ Data Capture LED ID
 **Type:**
 
 int
-
-
-
-
 

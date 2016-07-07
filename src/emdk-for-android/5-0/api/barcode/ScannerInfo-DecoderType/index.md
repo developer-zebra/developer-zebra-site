@@ -3,7 +3,7 @@ title: ScannerInfo.DecoderType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -24,8 +24,4 @@ This lists all the barcode types supported by scanners
 * **TWO_DIMENSIONAL** -Barcode scanning is 2-D. This supports both 1-D and 2-D barcode scanning.
 
 * **UNDEFINED** -Decoder type not defined.
-
-
-
-
 

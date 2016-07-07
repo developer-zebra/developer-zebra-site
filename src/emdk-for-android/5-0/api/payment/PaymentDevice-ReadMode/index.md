@@ -3,7 +3,7 @@ title: PaymentDevice.ReadMode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -22,8 +22,4 @@ Lists type of read mode supported by the readCardData. The read mode
 * **MANUAL** -Manual Entry, which requires entering the card information manually.
 
 * **ALL** -The card read mode is swipe, insert and touch.
-
-
-
-
 

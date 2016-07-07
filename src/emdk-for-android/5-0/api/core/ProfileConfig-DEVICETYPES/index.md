@@ -3,7 +3,7 @@ title: ProfileConfig.DEVICETYPES
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -26,8 +26,4 @@ List of supported scanner device types
 * **INTERNAL_CAMERA1** -Internal camera
 
 * **INTERNAL_IMAGER1** -Internal imager
-
-
-
-
 

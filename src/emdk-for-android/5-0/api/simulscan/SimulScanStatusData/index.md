@@ -3,7 +3,7 @@ title: SimulScanStatusData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -45,8 +45,4 @@ Returns the friendly name of the Reader from which the SimulScanStatusData
 **Returns:**
 
 java.lang.String - String
-
-
-
-
 

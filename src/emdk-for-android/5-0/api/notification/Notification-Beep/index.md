@@ -3,11 +3,11 @@ title: Notification.Beep
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
-This holds the information required for the beep notifications 
+This holds the information required for the beep notifications. 
  You can use a frequency of 0 Hz to introduce quiet times between beeps.
 
 ##Constructors
@@ -22,6 +22,7 @@ This holds the information required for the beep notifications
 
 Beeping time in milliseconds. Default value assigned is 0.
  The supported values are 0ms to 2550ms. Behavior is undefined for any other value
+ The RS6000 beeper will assume the end of sequence when an entry of 0 time is set.
 
 **Type:**
 
@@ -38,8 +39,4 @@ Beeping frequency in Hz. Default value assigned is 0.
 **Type:**
 
 int
-
-
-
-
 

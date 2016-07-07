@@ -3,7 +3,7 @@ title: PromptPinMessage
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -32,8 +32,4 @@ Message title to display for PIN entry. .
 **Type:**
 
 java.lang.String
-
-
-
-
 

@@ -3,7 +3,7 @@ title: SecureNfcManager.TagTechType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -20,8 +20,4 @@ NFC tag types.
 * **FELICA** -Felica Tag
 
 * **UNDEFINED** -Tag category is undefined
-
-
-
-
 

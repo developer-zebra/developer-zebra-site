@@ -3,7 +3,7 @@ title: TagTechBase
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -13,10 +13,6 @@ TagTechBase class allows the applications to register to get the status
 ##Constructors
 
 ###TagTechBase
-
-
-
-
 
 
 

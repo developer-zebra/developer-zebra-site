@@ -3,7 +3,7 @@ title: ProfileConfig.POWER_MODE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -28,8 +28,4 @@ Sets the scanner power mode.
 * **HIGH** -High power, and excellent performance.
 
 * **ALWAYS_ON** -Highest power, fastest performance.
-
-
-
-
 

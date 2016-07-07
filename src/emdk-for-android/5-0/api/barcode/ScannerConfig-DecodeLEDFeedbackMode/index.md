@@ -3,7 +3,7 @@ title: ScannerConfig.DecodeLEDFeedbackMode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -18,8 +18,4 @@ Describes the LED Feedback mode is given by the host device and remote scanner.
 * **BOTH** -LED Feedback is given by both Device and the remote scanner.
 
 * **DISABLE** -LED Feedback is disabled on both Device and the remote scanner.
-
-
-
-
 

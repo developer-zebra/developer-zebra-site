@@ -3,7 +3,7 @@ title: MifarePlusSL3Exception
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -26,8 +26,4 @@ Returns the MifarePlusSL3Results.
 **Returns:**
 
 com.symbol.emdk.securenfc.MifarePlusSL3Results
-
-
-
-
 

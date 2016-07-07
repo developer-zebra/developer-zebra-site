@@ -3,7 +3,7 @@ title: ScannerConfig.SecurityLevel
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -39,8 +39,4 @@ The scanner offers four levels of decode security for UPC/EAN bar codes.
  security can significantly impair the decoding ability of the
  scanner. If this level of security is necessary, try to improve the
  quality of the bar codes
-
-
-
-
 

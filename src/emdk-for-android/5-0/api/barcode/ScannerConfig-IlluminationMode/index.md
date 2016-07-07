@@ -3,7 +3,7 @@ title: ScannerConfig.IlluminationMode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -23,8 +23,4 @@ Enable/disable illumination depending on ambient light conditions.
 * **OFF** -Illumination turned off during scanning.
 
 * **ON** -Illumination turned on during scanning.
-
-
-
-
 

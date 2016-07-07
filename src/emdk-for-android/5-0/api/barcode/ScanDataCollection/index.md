@@ -3,7 +3,7 @@ title: ScanDataCollection
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -59,8 +59,4 @@ This method is used to obtain the scanned data list.
 **Returns:**
 
 java.util.ArrayList - Returns the collection of scan data.
-
-
-
-
 

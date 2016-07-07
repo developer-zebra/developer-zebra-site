@@ -3,7 +3,7 @@ title: MifareSam.AdditionalAuthData.AV1Mode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -49,8 +49,4 @@ samDiverseParams Diversification parameters for current key.If
 **Type:**
 
 com.symbol.emdk.securenfc.SamDiverseParams
-
-
-
-
 

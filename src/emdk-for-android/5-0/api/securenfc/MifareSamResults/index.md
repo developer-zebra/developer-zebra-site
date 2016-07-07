@@ -3,7 +3,7 @@ title: MifareSamResults
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -55,8 +55,4 @@ Defines all the error codes the MifareSAM APIs returns. <br>
  Unknown key type.
 
 * **UNDEFINED** -Error code not defined.
-
-
-
-
 

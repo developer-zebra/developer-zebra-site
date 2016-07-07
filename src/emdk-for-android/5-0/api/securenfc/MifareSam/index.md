@@ -3,7 +3,7 @@ title: MifareSam
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -172,8 +172,4 @@ The exception will be thrown if it fails to close the
 **Type:**
 
 java.lang.String
-
-
-
-
 

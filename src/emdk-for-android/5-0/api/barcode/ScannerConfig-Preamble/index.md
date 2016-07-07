@@ -3,7 +3,7 @@ title: ScannerConfig.Preamble
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -26,8 +26,4 @@ Controls the preamble applied to the bar code Preamble characters are
 * **SYS_CHAR** -System character preamble
 
 * **COUNTRY_AND_SYS_CHAR** -Both country and system code preamble
-
-
-
-
 

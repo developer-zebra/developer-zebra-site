@@ -3,7 +3,7 @@ title: CradleException
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -26,8 +26,4 @@ Returns the CradleResults enum.
 **Returns:**
 
 com.symbol.emdk.personalshopper.CradleResults - Error type (Cradle Result)
-
-
-
-
 

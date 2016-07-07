@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -66,8 +66,4 @@ Gets and Sets DataDelivery configuration object.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery
-
-
-
-
 

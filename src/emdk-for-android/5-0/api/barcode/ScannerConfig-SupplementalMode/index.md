@@ -3,7 +3,7 @@ title: ScannerConfig.SupplementalMode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -62,8 +62,4 @@ Supplemental modes
  barcode not starting with 977. Tries to scan the supplemental if it
  is present. If the supplemental scanning failed, then the main bar
  code is returned.
-
-
-
-
 

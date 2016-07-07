@@ -3,7 +3,7 @@ title: Notification
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -40,8 +40,4 @@ com.symbol.emdk.notification.Notification.BeepParams
 **Type:**
 
 com.symbol.emdk.notification.Notification.VibrateParams
-
-
-
-
 

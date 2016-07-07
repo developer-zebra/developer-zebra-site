@@ -3,7 +3,7 @@ title: SimulScanConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -98,8 +98,4 @@ Amount of time in milliseconds to wait before timing out processing.
 **Type:**
 
 int
-
-
-
-
 

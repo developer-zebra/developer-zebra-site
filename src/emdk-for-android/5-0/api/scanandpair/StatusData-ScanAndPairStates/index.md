@@ -3,7 +3,7 @@ title: StatusData.ScanAndPairStates
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -25,8 +25,4 @@ Defines the different states of the scan and pir/unpair.
   Call StatusData .getResult() for error information.
 
 * **UNDEFINED** -Undefined. This is the initial state.
-
-
-
-
 

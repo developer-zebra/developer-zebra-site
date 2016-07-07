@@ -3,7 +3,7 @@ title: MifareDesfire.FileAccessRights
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -42,8 +42,4 @@ Key no. to be used for changing access rights
 **Type:**
 
 byte
-
-
-
-
 

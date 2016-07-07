@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.Msi
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -111,8 +111,4 @@ Transmit MSI data with or without the check digit.
 **Type:**
 
 boolean
-
-
-
-
 

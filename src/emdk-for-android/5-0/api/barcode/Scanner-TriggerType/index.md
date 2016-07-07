@@ -3,7 +3,7 @@ title: Scanner.TriggerType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -21,8 +21,4 @@ List of supported trigger type
 * **SOFT_ALWAYS** -Soft trigger is used for all pending scans and for future reads
  issued. When this mode is set, the scan beam will come up
  automatically without having to press the trigger on the device.
-
-
-
-
 

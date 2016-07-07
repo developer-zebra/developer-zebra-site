@@ -3,7 +3,7 @@ title: BarcodeManager.DeviceIdentifier
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -26,8 +26,4 @@ Defines specific scanner devices of each type.
 * **BLUETOOTH_IMAGER_RS6000** -First available Bluetooth imager RS6000 scanner
 
 * **UNDEFINED** -Scanner is undefined
-
-
-
-
 

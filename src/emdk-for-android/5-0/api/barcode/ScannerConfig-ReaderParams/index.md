@@ -3,7 +3,7 @@ title: ScannerConfig.ReaderParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -23,8 +23,4 @@ ReaderSpecificParams provides access to the reader specific parameters.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams.ReaderSpecific
-
-
-
-
 

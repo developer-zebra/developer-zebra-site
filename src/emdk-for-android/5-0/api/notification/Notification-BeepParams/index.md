@@ -3,7 +3,7 @@ title: Notification.BeepParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -25,8 +25,4 @@ Pass in an array of Beep that specifies the durations for which to turn on the b
 **Type:**
 
 com.symbol.emdk.notification.Notification.Beep
-
-
-
-
 

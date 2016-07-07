@@ -3,7 +3,7 @@ title: SimulScanReader.StatusListerner
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -34,8 +34,4 @@ This is the callback method upon scan status event occurs.
 **Returns:**
 
 void
-
-
-
-
 

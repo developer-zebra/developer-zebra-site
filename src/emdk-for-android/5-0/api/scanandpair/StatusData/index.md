@@ -3,7 +3,7 @@ title: StatusData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -37,8 +37,4 @@ When the state is ERROR, this method can be used to find out the
 **Returns:**
 
 com.symbol.emdk.scanandpair.ScanAndPairResults - ScanAndPairResults
-
-
-
-
 

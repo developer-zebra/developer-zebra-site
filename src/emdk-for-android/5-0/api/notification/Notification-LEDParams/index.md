@@ -3,7 +3,7 @@ title: Notification.LEDParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -35,8 +35,8 @@ int
 
 ###onTime
 
-The number of milliseconds for the LED to be ON while it's flashing. Default value assigned is 0. The supported values are 0ms to 2550ms.
- Behavior is undefined for any other value.
+The number of milliseconds for the LED to be ON while it's flashing. Default value assigned is 0. The supported values are 0ms to 2550ms for RS6000.
+ Note: The behavior is undefined for any other value outside the range on RS6000.
 
 **Type:**
 
@@ -44,8 +44,8 @@ int
 
 ###offTime
 
-The number of milliseconds for the LED to be OFF while it's flashing. Default value assigned is 0. The supported values are 0ms to 2550ms.
- Behavior is undefined for any other value.
+The number of milliseconds for the LED to be OFF while it's flashing. Default value assigned is 0. The supported values are 0ms to 2550ms for RS6000.
+ Note: The behavior is undefined for any other value outside the range on RS6000.
 
 **Type:**
 
@@ -53,14 +53,12 @@ int
 
 ###repeatCount
 
-The LED blinking repeat count.
- Default value assigned is 0. The supported values are 0 to 127. Setting -1 or above 127 will flash the LED infinitely.
+The LED blinking repeat count. Default value assigned is 0. The supported values are 0 to 127 for RS6000. 
+ Setting -1 or above 127 will flash the LED infinitely for RS6000. 
+ Note: The repeatCount is used for additional LED blinks. 
+ Example: Setting repeatCount = 0 will blink the LED once, setting repeatCount = 1 will blink the LED twice, etc.
 
 **Type:**
 
 int
-
-
-
-
 

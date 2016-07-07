@@ -3,7 +3,7 @@ title: ScannerInfo.ConnectionType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -30,8 +30,4 @@ List of supported scanner connection types.
 * **PLUGGABLE_SSI** -The scanner device connected via pluggable SSI to the mobile device.
 
 * **UNDEFINED** -Connection type is not defined.
-
-
-
-
 

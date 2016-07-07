@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.DataDelivery.Intent
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -98,8 +98,4 @@ Gets and Sets intent INTENT_DELIVERY configuration object [ ProfileConfig.DataCa
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.BasicDataFormatting
-
-
-
-
 

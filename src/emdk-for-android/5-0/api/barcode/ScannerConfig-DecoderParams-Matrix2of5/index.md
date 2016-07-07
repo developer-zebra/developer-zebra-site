@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.Matrix2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -92,8 +92,4 @@ Enable this feature to check the integrity of all Matrix 2 of 5
 **Type:**
 
 boolean
-
-
-
-
 

@@ -3,7 +3,7 @@ title: BarcodeManager.ScannerConnectionListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -37,8 +37,4 @@ Called to notify the client when the scanner device has been connected or discon
 **Returns:**
 
 void
-
-
-
-
 

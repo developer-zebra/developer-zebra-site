@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Interleaved_2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -137,8 +137,4 @@ Specifies security level
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
-
-
-
-
 

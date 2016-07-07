@@ -3,7 +3,7 @@ title: ScannerConfig.ViewFinderMode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -25,8 +25,4 @@ Configures the Viewfinder modes supported for camera scanning.
 * **STATIC_RECTICLE** -Viewfinder enabled with locate reticle. Displays the viewfinder as
  well as draws a red reticle in the center of the screen which helps
  with tracking the barcode.
-
-
-
-
 

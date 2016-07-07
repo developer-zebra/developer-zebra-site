@@ -3,7 +3,7 @@ title: SimulScanTemplateRegion
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -65,8 +65,4 @@ Returns the Y coordinate of this template region
 
 int - int 
  			The Y coordinate of the template region
-
-
-
-
 

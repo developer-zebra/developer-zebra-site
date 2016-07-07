@@ -3,37 +3,11 @@ title: NotificationDevice
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
 NotificationDevice  class will represent and provides access to the physical notification device instance. This can be used with a connected notification device. Once disconnected, current instances cannot be used any longer. When connected again, you must use NotificationManager.getDevice() method to get a new notification device object.
-
-##Constructors
-
-###NotificationDevice
-
-
-
-**Parameters:**
-
-deviceInfo
-
-
-
-**Type:** com.symbol.emdk.notification.DeviceInfo
-
-context
-
-
-
-**Type:** Context
-
-emdkServiceConnection
-
-
-
-**Type:** com.symbol.emdk.EMDKServiceConnection
 
 ##Public Methods
 
@@ -149,6 +123,30 @@ com.symbol.emdk.notification.NotificationException
 
 The exception will thrown if the notification device disable fails.
 
+### cancelNotification
+
+**public void cancelNotification()**
+
+This cancels the active notification from the device.
+ 
+ 
+
+**Example Usage:**
+	
+	:::java	
+	notificationDevice.cancelNotification();
+
+
+**Returns:**
+
+void
+
+**Throws:**
+
+com.symbol.emdk.notification.NotificationException
+
+The exception will thrown if the notification cancel fails.
+
 ### release
 
 **public void release()**
@@ -172,8 +170,4 @@ void
 com.symbol.emdk.notification.NotificationException
 
 The exception will thrown if the notification device release fails.
-
-
-
-
 

@@ -3,7 +3,7 @@ title: ScanAndPairConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -66,8 +66,4 @@ Specifies the scanning related information. The settings provided through this o
 **Type:**
 
 com.symbol.emdk.scanandpair.ScanAndPairConfig.ScanInfo
-
-
-
-
 

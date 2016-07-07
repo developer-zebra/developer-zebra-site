@@ -3,7 +3,7 @@ title: EMDKResults.EXTENDED_STATUS_CODE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -107,8 +107,4 @@ profileName is not in that format.
  </br>
 
 * **APP_NOT_ALLOWED_TO_SUBMIT_XML** -Permission error. Application is not allowed to submit xml.
-
-
-
-
 

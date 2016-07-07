@@ -3,7 +3,7 @@ title: NotificationManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '4.2'
 ---
 
 
@@ -89,10 +89,6 @@ com.symbol.emdk.notification.NotificationDevice - Returns the notification devic
 **Throws:**
 
 com.symbol.emdk.notification.NotificationException
-
-
-
-
 
 
 

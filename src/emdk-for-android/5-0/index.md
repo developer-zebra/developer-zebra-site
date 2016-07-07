@@ -9,8 +9,12 @@ menu:
   versions:
     - versionto: 4-2
       versionfrom: 5-0
-      default: /emdk-for-android/5-0/guide/about
-      label: '5.0'
+      default: /emdk-for-android/4-2/guide/about
+      label: '4.2'
+    - versionto: 4-0
+      versionfrom: 5-0
+      default: /emdk-for-android/4-0/guide/about
+      label: '4.0'
   items:
     - title: Home
       url: /emdk-for-android/5-0/guide/about

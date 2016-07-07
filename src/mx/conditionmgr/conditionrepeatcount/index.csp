@@ -11,3 +11,7 @@ parm:
   type: string
 ---
 Used to specify the number of times (from 2-500) to repeat the test condition.
+
+**Parm value input rules**:
+
+* Accepts an integer from 2-500

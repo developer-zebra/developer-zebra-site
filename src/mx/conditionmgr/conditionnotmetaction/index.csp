@@ -22,3 +22,8 @@ parm:
       name: Retry (up to specified times) then Fail
       description: 
 ---
+
+NEED DESCRIPTIONS
+
+Fail with characteristic-error (default)
+

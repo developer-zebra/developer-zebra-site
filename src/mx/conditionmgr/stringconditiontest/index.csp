@@ -12,11 +12,11 @@ parm:
   list:
     - code: 5
       mx: 4.4
-      name: Equal to a Constant String
+      name: Equal-to a Constant String
       description:
     - code: 6
       mx: 4.4
-      name: Not Equal to a Constant String
+      name: Not-Equal-to a Constant String
       description:
     - code: 7
       mx: 4.4
@@ -24,23 +24,23 @@ parm:
       description:
     - code: 8
       mx: 4.4
-      name: Does not contain a Constant String
+      name: Does-not-contain a Constant String
       description:
     - code: 9
       mx: 4.4
-      name: Starts with a Constant String
+      name: Starts-with a Constant String
       description:
     - code: 10
       mx: 4.4
-      name: Does not start with a Constant String
+      name: Does-not-start-with a Constant String
       description:
     - code: 11
       mx: 4.4
-      name: Ends with a Constant String
+      name: Ends-with a Constant String
       description:
     - code: 12
       mx: 4.4
-      name: Does not end with a Constant String
+      name: Does-not-end-with a Constant String
       description:
 ---
 

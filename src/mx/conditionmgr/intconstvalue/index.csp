@@ -11,3 +11,7 @@ parm:
   type: string
 ---
 Used to specify the integer value (from -32768 to 32767) to test. 
+
+**Parm value input rules**:
+
+* Accepts an integer from -32768 to 32767

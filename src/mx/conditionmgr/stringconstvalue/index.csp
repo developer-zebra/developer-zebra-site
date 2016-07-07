@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: 4.4
 parm:
-  presentif: Data Type is "String" 
+  presentif: Data Type is "String" and String Condition Test is "Equal-to a Constant String"
   pivotal: No
   name: StringConstantValue
   type: string

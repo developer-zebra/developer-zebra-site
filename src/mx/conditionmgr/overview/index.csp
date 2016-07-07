@@ -5,9 +5,49 @@ type: text
 order: 0
 ---
 
-The Condition Manager allows an administrator to define a set of pre-conditions that must be met by a device before one or more operations will be attempted, reducing the liklihood of failure of those operations. This helps eliminate the risks of attempting "dangerous" operations such as an OS upgrade, the failure of which can render a device unusable, severely limited or otherwise in need of service. 
+The Condition Manager allows an administrator to check for one or more conditions on a device before taking some action or checking for additional conditions. 
+
+Tested conditions will result in success or failure based on the condition of the device at the time the device was tested. 
+
+a condition is either met or not met and 
+
+each top-level instance of this checked for one thing- bool, int or string. 
+
+if fail, option to input the error message for himself or the person who will be seeing the error. 
+
+characteristic-error = 
+
+error handling thru XML mgr. 
+
+suppress error- is this error something I want to tell someone so they can take an action or is it an intetended outcome that helps determine my execution flow. 
+
+Stop on first error: Not MC40? fail with char error. Yes? proceed. 
+
+split into two parts: 
+1- (condition) define how to get a true or false answer- define the condition (simple = boolean, more complex = string or integer)
+2- (action) when true, do what? when false, do what? 
+3- (if on fail) provide a failure message to refine the process flow or create a rememdy (or suppress if intentional, which doesn't hide the message, it simply tells SN not to tell the user that staging failed)
+4- Option for this flow: collab with XmlMgr. not enough to say fail when this happens, sometimes it's necessary to do something else if it fails. 
+
+.1
+
+define a set of pre-conditions that must be met by a device before one or more operations will be attempted, reducing the liklihood of failure of those operations. This helps eliminate the risks of attempting "dangerous" operations such as an OS upgrade, the failure of which can render a device unusable, severely limited or otherwise in need of service. 
 
 When a condition is not met, ConditionMgr optionally can repeatedly re-check a condition, wait for changes in a condition and/or return meaningful failure messages about a condition, allowing the administrator to attempt a remedy or make other decisions about how to proceed.
+
+can be used with or without XmlMgr. 
+
+SN assumes that when scanning a barcode submits profile and gets back results based on simnple rules from SN. staging success or fail. fail= some problem happened. 
+
+If no XMLmgr is used in the staging profile, it will execute every tioop-level char and deliver some result. if any errors happen, "staging failed" per SN
+
+If it'ds dangerouns to do stuff on dev's otehr an MC40, then it makes sense to put xml;mgr in there so it can "stop on first error." 
+
+if you're bothering to use CondMgr, you probably want to use CmlMgr too. 
+
+Execute until error, then stop to halt execution if some condition is not met. If using more than one, they they're joiined with a logical "and" and will not execute unless all the conditions are met. 
+
+LAST WEEK
 
 ALLAN
 XML processing and error handling

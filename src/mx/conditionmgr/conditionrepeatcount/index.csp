@@ -8,7 +8,7 @@ parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"
   pivotal: No
   name: ConditionRepeatCount
-  type: string
+  type: integer
 ---
 Used to specify the number of times (from 2-500) to repeat the test condition.
 

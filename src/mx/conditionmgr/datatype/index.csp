@@ -22,4 +22,13 @@ parm:
       mx: 6.0
       description: Field is of type String
 ---
-Used to specify whether the Data Type is a Boolean, Integer or String value. Note that source, value and test condition for each will valy by Data Type. For example, while a boolean checks simply whether a condition is "true" or "false," an integer must test whether a specific value is "greater than," "less than," "equal-to" and so on. 
+Used to specify whether the condition being tested 
+
+integer will be some number that will untilately be a boolean. (is it greater than 50?)
+what to do. 
+
+string of characters 
+= to a constant. is it "MC40" yes or no?
+ 
+
+Data Type is a Boolean, Integer or String value. Note that source, value and test condition for each will valy by Data Type. For example, while a boolean checks simply whether a condition is "true" or "false," an integer must test whether a specific value is "greater than," "less than," "equal-to" and so on. 

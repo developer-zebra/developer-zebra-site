@@ -32,8 +32,9 @@ contentlist:
         icon: msr.png
         url: msr
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
+
 
 
 

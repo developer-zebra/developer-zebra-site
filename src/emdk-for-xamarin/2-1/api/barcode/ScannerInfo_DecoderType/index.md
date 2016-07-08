@@ -2,7 +2,7 @@
 title: ScannerInfo.DecoderType
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 This lists all the barcode types supported by scanners
 
@@ -45,6 +45,7 @@ Barcode scanning is 2-D. This supports both 1-D and 2-D barcode scanning.
 Decoder type not defined.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType
+
 
 
 

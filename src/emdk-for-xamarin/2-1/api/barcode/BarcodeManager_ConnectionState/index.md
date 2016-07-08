@@ -2,7 +2,7 @@
 title: BarcodeManager.ConnectionState
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 Connection states of a scanner device.
 
@@ -41,6 +41,7 @@ Scanner interface is connected. Ready to scan barcodes.
 Scanner interface is dis-connected. Not ready to scan barcodes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState
+
 
 
 

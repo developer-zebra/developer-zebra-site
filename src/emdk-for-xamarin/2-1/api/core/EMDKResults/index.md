@@ -2,7 +2,7 @@
 title: EMDKResults
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 Class for holding EMDK result data.
 
@@ -38,6 +38,7 @@ Return the total number of features in profile request is success. Currently the
 Return the total number of features in the profile. Currently these values will be available when the process profile is called to check profile compatibility. This will return -1 if the value is not used/set.
 
 **Type** - System.Int32
+
 
 
 

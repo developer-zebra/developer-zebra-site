@@ -2,7 +2,7 @@
 title: MX Management System Overview
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ## Overview
@@ -88,6 +88,7 @@ The MX version on a specific device can be effected by:
 * EMDK for Android Device Runtime Updates
 
 With each version of MX, new CSPs can be introduced, and pre-existing CSPs can also have new behavior. It is generally not found that MX updates will remove or change pre-existing behavior unless specifically noted.
+
 
 
 

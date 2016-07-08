@@ -2,7 +2,7 @@
 title: Configuring A Device
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 The device runtime update included with this release should be applied to any Zebra Android device in order to provide the documented features. If the device has not been updated to at least this version, features like Profile Manager may not perform as expected.
@@ -119,6 +119,7 @@ Removes the EMDK OS Update application on successful update.
 4. Launch installed EmdkOSUpdateApp application.
 
 >NOTE: If the update succeeds, the EmdkOSUpdateApp will be un-installed (if the default settings have not overridden) and device will be rebooted. If the update fails, the EmdkOSUpdateApp application will not be un-installed. The update results will be available at  `/enterprise/usr/emdkosupdateresults.xml`
+
 
 
 

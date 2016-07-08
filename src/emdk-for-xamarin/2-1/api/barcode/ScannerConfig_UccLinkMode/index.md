@@ -2,7 +2,7 @@
 title: ScannerConfig.UccLinkMode
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 Describes the UCC link mode state.
 
@@ -45,6 +45,7 @@ the digital scanner determines if there is a 2D portion, then transmits the 1D c
 1D component is transmitted regardless of whether a 2D component is detected.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.UccLinkMode
+
 
 
 

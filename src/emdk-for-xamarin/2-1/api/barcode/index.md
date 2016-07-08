@@ -2,7 +2,7 @@
 title: Barcode APIs
 layout: list-content-api.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 >Supported Devices:
 * MC18KK
@@ -15,6 +15,7 @@ productversion: '2.0'
 * TC55KK
 * TC70KK
 * TC75KK
+
 
 
 

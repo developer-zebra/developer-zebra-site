@@ -2,7 +2,7 @@
 title: EMDKManager.StatusEventArgs
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 
@@ -22,6 +22,7 @@ productversion: '2.0'
 
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
+
 
 
 

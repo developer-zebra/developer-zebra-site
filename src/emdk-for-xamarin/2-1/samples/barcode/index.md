@@ -29,22 +29,22 @@ screenshots:
   - 6.png
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ##Overview
-The Barcode API's are used when you wish to handle all barcode scanning entirely in C# using [Barcode/Scanning APIs](/emdk-for-xamarin/2-0/api/). These API's work independently of any Data Capture profiles.  
+The Barcode API's are used when you wish to handle all barcode scanning entirely in C# using [Barcode/Scanning APIs](/emdk-for-xamarin/2-1/api/). These API's work independently of any Data Capture profiles.  
 
-The available actions in the [Barcode/Scanning API](/emdk-for-xamarin/2-0/api/barcode/) are:
+The available actions in the [Barcode/Scanning API](/emdk-for-xamarin/2-1/api/barcode/) are:
   
 * Set Scanner Device  
-* Set [TriggerType](/emdk-for-xamarin/2-0/api/barcode/Scanner_TriggerTypes)
-* Set [Decoder Params](/emdk-for-xamarin/2-0/api/barcode/ScannerConfig_DecoderParameters)
-* Set [Reader Params](/emdk-for-xamarin/2-0/api/barcode/ScannerConfig_ReaderParameters)
-* Set [Scan Params](/emdk-for-xamarin/2-0/api/barcode/ScannerConfig_ScanParameters)
+* Set [TriggerType](/emdk-for-xamarin/2-1/api/barcode/Scanner_TriggerTypes)
+* Set [Decoder Params](/emdk-for-xamarin/2-1/api/barcode/ScannerConfig_DecoderParameters)
+* Set [Reader Params](/emdk-for-xamarin/2-1/api/barcode/ScannerConfig_ReaderParameters)
+* Set [Scan Params](/emdk-for-xamarin/2-1/api/barcode/ScannerConfig_ScanParameters)
 * Scan barcodes based on selected features   
 
-This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-xamarin/2-0/api/barcode/ScannerConfig_DecoderParameters).
+This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-xamarin/2-1/api/barcode/ScannerConfig_DecoderParameters).
 
 
 ## Opening The Component Sample
@@ -103,6 +103,7 @@ Now press the "Play" button. The IDE will build, deploy and start the sample app
 6. Since we selected Trigger Type as "HARD", press the hard scan key of Symbol device and scan a particular barcode. It will get the scanned barcode data in "Data" field of UI.
    
 	![img](../../images/samples/barcode_6.png) 
+
 
 
 

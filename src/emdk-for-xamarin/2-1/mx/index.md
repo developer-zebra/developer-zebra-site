@@ -153,7 +153,7 @@ contentlist:
     items:
       - title: Bluetooth Manager
         url: bluetoothmgr
-        description: "The BluetoothMgr allows you to control whether a device will be allowed to pair with Bluetooth devices such as headsets and printers that come into range."
+        description: The BluetoothMgr allows you to control whether a device will be allowed to pair with Bluetooth devices such as headsets and printers that come into range.
         icon: /mx/icons/wirelessmgr.png
       - title: Cellular Manager
         url: cellularmgr
@@ -180,8 +180,9 @@ contentlist:
         description: 'The WirelessMgr allows you to turn various wireless radios On or Off, like Bluetooth, GPRS, NFC, etc.'
         icon: /mx/icons/wirelessmgr.png
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
+
 
 
 

@@ -12,8 +12,9 @@ mxversions:
     value: 5
 csp: settingsmgr
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
+
 
 
 

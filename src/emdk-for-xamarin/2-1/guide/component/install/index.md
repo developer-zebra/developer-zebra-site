@@ -2,7 +2,7 @@
 title: Xamarin Component Install
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 The Xamarin Component part of the EMDK includes the API libraries that you will use in your Android application. You must install the component and add it to your android project before being able to use the APIs.
 
@@ -12,7 +12,7 @@ The Xamarin Component part of the EMDK includes the API libraries that you will 
 
 
 ## Installing the Xamarin Component
-After adding the [Visual Studio Extension](/emdk-for-xamarin/2-0/guide/vs/setup) or [Xamarin Studio Add-in](/emdk-for-xamarin/2-0/guide/xs/setup), you must install the EMDK for Xamarin component so it can be accessible from your projects.
+After adding the [Visual Studio Extension](/emdk-for-xamarin/2-1/gui/vs/setup) or [Xamarin Studio Add-in](/emdk-for-xamarin/2-1/guide/xs/setup), you must install the EMDK for Xamarin component so it can be accessible from your projects.
 
 > Note: This needs to only be performed once for the IDE. After the component is installed to the IDE, you must follow the steps below, in the `Enabling for Android Projects` section, for each project to enable the component.
 
@@ -50,11 +50,11 @@ Once the Xamarin Component has been installed to the IDE, you need to add it to 
 
 	![img](../../../images/component/installed.png)
 
-7. Clicking on the `Details` link in the projects `Edit Components` page will give you access to more details about the component, like version information, documentation and samples. Check the [Samples Guide](/emdk-for-xamarin/2-0/guide/sample/about) for instructions to access more sample projects.
+7. Clicking on the `Details` link in the projects `Edit Components` page will give you access to more details about the component, like version information, documentation and samples. Check the [Samples Guide](/emdk-for-xamarin/2-1/guide/sample/about) for instructions to access more sample projects.
 
 	![img](../../../images/component/details.jpg)
 
-The component and EMDK for Xamarin APIs are now accessible in your application. To understand how to use the APIs, view source of one of our [sample projects](/emdk-for-xamarin/2-0/guide/sample/about) or [follow a tutorial](/emdk-for-xamarin/2-0/tutorial/index).
+The component and EMDK for Xamarin APIs are now accessible in your application. To understand how to use the APIs, view source of one of our [sample projects](/emdk-for-xamarin/2-1/guide/sample/about) or [follow a tutorial](/emdk-for-xamarin/2-1/tutorial/index).
 
 ## Removing from Android Projects
 You can disable the EMDK for Xamarin component from a project, however please note that this does not permanently remove the component from the project cache or system. If you wish to permanently remove the component, please follow these instructions and the complete the steps in the `Uninstalling` section
@@ -104,7 +104,8 @@ Each project will cache the version of the component you have added within your 
 
 
 ## What's Next
-Try the Sample included with in Component[ Sample ](/emdk-for-xamarin/2-0/guide/sample/about)
+Try the Sample included with in Component[ Sample ](/emdk-for-xamarin/2-1/guide/sample/about)
+
 
 
 

@@ -2,7 +2,7 @@
 title: Scanner.IStatusListener
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 An interface for notifying client applications to notify scan events.
 
@@ -19,6 +19,7 @@ This is the callback method upon scan status event occurs.
 * Symbol.XamarinEMDK.Barcode.StatusData **p0** - StatusData object.
 
 **Returns** - System.Void
+
 
 
 

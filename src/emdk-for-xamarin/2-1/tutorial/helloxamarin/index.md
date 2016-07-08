@@ -2,7 +2,7 @@
 title: Your First EMDK For Xamarin Application
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 This document contains step by step instructions for using EMDK Api's in a new Xamarin application from scratch. It covers adding the component to the project, using profile manager, using basic APIs
@@ -12,18 +12,18 @@ Before starting this tutorial you must install the following software.
 
 - Visual Studio 2013 or later
 - [Xamarin Plaform](http://xamarin.com/download)
-- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-0/guide/vs/setup/)
+- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-1/guide/vs/setup/)
 
 
 ##Create a new project
 When creating a project for this tutorial use the project name **GettingStartedTutorial**
 
-Follow this [guide](/emdk-for-xamarin/2-0/guide/newprojectvisualstudio) to create a new project in Visual Studio.
+Follow this [guide](/emdk-for-xamarin/2-1/guide/newprojectvisualstudio) to create a new project in Visual Studio.
 
-Follow this [guide](/emdk-for-xamarin/2-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
+Follow this [guide](/emdk-for-xamarin/2-1/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
 
 ##Add Symbol EMDK Component
-Follow this [guide](/emdk-for-xamarin/2-0/guide/component/install) to add the needed component you your project.
+Follow this [guide](/emdk-for-xamarin/2-1/guide/component/install) to add the needed component you your project.
 
 ##Build a Profile
 In this project we will perform a simple task to demonstrate how to use the ProfileManager Wizard to create a profile
@@ -317,6 +317,7 @@ Now that we are finish with our first EMDK for Xamarin application, lets see how
 
 ##Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/GettingStartedTutorial.zip).
+
 
 
 

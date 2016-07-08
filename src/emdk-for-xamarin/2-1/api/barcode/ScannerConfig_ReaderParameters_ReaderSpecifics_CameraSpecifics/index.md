@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.CameraSpecifics
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 CameraSpecific class provides access to the camera scanner specific parameters.
 
@@ -34,6 +34,7 @@ Sets the number of times a bar code is read to confirm an accurate decode. Use c
 Configures the Viewfinder modes supported for camera scanning. Use class ScannerConfig.ViewFinderMode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ViewFinderMode
+
 
 
 

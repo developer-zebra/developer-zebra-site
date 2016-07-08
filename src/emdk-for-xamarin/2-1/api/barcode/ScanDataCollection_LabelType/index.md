@@ -2,7 +2,7 @@
 title: ScanDataCollection.LabelType
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 This class describes the barcode symbology.
 
@@ -238,6 +238,7 @@ The US PLANET symbology.
 The US POSTNET symbology.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection.LabelType
+
 
 
 

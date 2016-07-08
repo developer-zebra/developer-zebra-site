@@ -7,26 +7,27 @@ content-items:
     level: 4
     title: EMDK For Xamarin Setup
     text: Get your development environment setup
-    url: /emdk-for-xamarin/2-0/guide/setup
+    url: /emdk-for-xamarin/2-1/guide/setup
   - type: section
     level: 4
     title: Configuring A Device
     text: Update your device to provide full feature support
-    url: /emdk-for-xamarin/2-0/guide/deviceupdate
+    url: /emdk-for-xamarin/2-1/guide/deviceupdate
   - type: section
     level: 4
     title: Build Hello EMDK
     text: Follow a simple getting started tutorial
-    url: /emdk-for-xamarin/2-0/tutorial/helloxamarin
+    url: /emdk-for-xamarin/2-1/tutorial/helloxamarin
   - type: section
     level: 4
     title: Using Profile Manager
     text: Understand how to use the powerful Profile Manager
-    url: /emdk-for-xamarin/2-0/guide/profile-manager
+    url: /emdk-for-xamarin/2-1/guide/profile-manager
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
            
+
 
 
 

@@ -2,7 +2,7 @@
 title: ScannerInfo.ConnectionType
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 List of supported scanner connection types.
 
@@ -53,6 +53,7 @@ Connection type is not defined.
 The scanner device connected via USB to the mobile device.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType
+
 
 
 

@@ -2,7 +2,7 @@
 title: Xamarin Studio Setup
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 
@@ -75,7 +75,8 @@ Mac:
 * Remove File - /Users/Shared/Symbol EMDK for Xamarin\Deployment.bat
 
 ## What's Next
-In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-0/guide/component/install)
+In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-1/guide/component/install)
+
 
 
 

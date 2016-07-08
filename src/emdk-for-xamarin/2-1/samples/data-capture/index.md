@@ -25,7 +25,7 @@ screenshots:
   - 3.png
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ##Overview
@@ -78,6 +78,7 @@ The Status message should change, stating that the profile was successfully modi
 ![img](../../images/samples/ProfileDataCaptureScreen3.png)
 
 To test that your settings have taken effect, scan a barcode type that was disabled previously, the barcode should not scan. Now scan a barcode that was previously disabled, the user interface should update with the decoded barcode data.
+
 
 
 

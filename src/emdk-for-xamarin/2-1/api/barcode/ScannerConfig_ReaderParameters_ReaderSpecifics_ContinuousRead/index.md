@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.ContinuousRead
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 ContinuousRead class provides access to continuous scanning related parameters.
 
@@ -26,6 +26,7 @@ Scan continuously; In this mode once the trigger is pulled the user can continue
 This setting is used to prevent the scanner driver from decoding the same symbol within this time interval (applicable only when isContinuousScan = true). Basically in the continuous mode the user can perform rapid scan and to prevent the user from decoding the same barcode twice user can set this value to an appropriate interval (in milliseconds). A value of 0 means no interval is required between two successive reads. Boundary values are 0 to 5000 in milliseconds in 500 increments such as 0, 500, 1000' etc
 
 **Type** - System.Int32
+
 
 
 

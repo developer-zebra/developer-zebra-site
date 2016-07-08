@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.CodaBarDecoder
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 The CodaBar class provides access to parameters that are available for the CodaBar decoder.
 
@@ -30,6 +30,7 @@ Enable this parameter to strip the start and stop characters from a decoded Coda
 Sets the reader to read the bar code twice before accepting data.
 
 **Type** - System.Boolean
+
 
 
 

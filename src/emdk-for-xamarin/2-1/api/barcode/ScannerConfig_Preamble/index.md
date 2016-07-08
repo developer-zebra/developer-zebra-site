@@ -2,7 +2,7 @@
 title: ScannerConfig.Preamble
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 Controls the preamble applied to the bar code Preamble characters are part of the UPC symbol consisting of Country Code and System Character. Select the appropriate option to match the host system.
 
@@ -45,6 +45,7 @@ No preamble
 System character preamble
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble
+
 
 
 

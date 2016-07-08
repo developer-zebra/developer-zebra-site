@@ -2,7 +2,7 @@
 title: Basic Scanning Tutorial using Barcode API
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 This guide will walk you through creating an EMDK For Xamarin application that will use Barcode/Scanning APIs  to perform Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses Barcode Manager, which is the primary object to access barcode scanning feature.
@@ -12,18 +12,18 @@ Before starting this tutorial you must install the following software.
 
 - Visual Studio 2013 or later
 - [Xamarin Plaform](http://xamarin.com/download)
-- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-0/guide/vs/setup) or [Symbol EMDK for Xamarin Add-in for Xamarin Studio](/emdk-for-xamarin/2-0/guide/xs/setup)
+- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-1/guide/vs/setup) or [Symbol EMDK for Xamarin Add-in for Xamarin Studio](/emdk-for-xamarin/2-1/guide/xs/setup)
 
 
 ##Create a new project
 When creating a project for this tutorial use the project name **BasicScanningTutorial**
 
-Follow this [guide](/emdk-for-xamarin/2-0/guide/newprojectvisualstudio) to create a new project in Visual Studio.
+Follow this [guide](/emdk-for-xamarin/2-1/guide/newprojectvisualstudio) to create a new project in Visual Studio.
 
-Follow this [guide](/emdk-for-xamarin/2-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
+Follow this [guide](/emdk-for-xamarin/2-1/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
 
 ##Add Symbol EMDK Component
-Follow this [guide](/emdk-for-xamarin/2-0/guide/component/install) to add the needed component you your project.
+Follow this [guide](/emdk-for-xamarin/2-1/guide/component/install) to add the needed component you your project.
 
 
 
@@ -551,6 +551,7 @@ Now that we are finished with our Barcode API Application, lets see how it runs.
 
 ##Download the Source
 The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/BasicScanningTutorial.zip).
+
 
 
 

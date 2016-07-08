@@ -2,7 +2,7 @@
 title: EMDK for Xamarin Setup
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ##Before you get started
@@ -32,17 +32,17 @@ Learn more about [Xamarin Licensing options](https://store.xamarin.com/).
 
 Download and install the Visual Studio Extension using the online extension gallery.
 
-- [Read the Visual Studio Setup Guide](/emdk-for-xamarin/2-0/guide/vs/setup)
+- [Read the Visual Studio Setup Guide](/emdk-for-xamarin/2-1/guide/vs/setup)
 
 
 Download and install the Xamarin Studio Add-in using the Add-in Manager.
 
-- [Read the Xamarin Studio Setup Guide](/emdk-for-xamarin/2-0/guide/xs/setup)
+- [Read the Xamarin Studio Setup Guide](/emdk-for-xamarin/2-1/guide/xs/setup)
 
 
 ### 2) Install The Xamarin Component
 
-- [Read the Xamarin Component Install Guide](/emdk-for-xamarin/2-0/guide/component/install)
+- [Read the Xamarin Component Install Guide](/emdk-for-xamarin/2-1/guide/component/install)
 
     >NOTE: When multiple versions of the EMDK for Xamarin component are installed, all versions of the component will be visible in the **Edit Components** screen for your project.
     
@@ -56,12 +56,12 @@ A sample is included as part of the Xamarin Component package to help get you st
 ### 4) Understand Profile Manager
 One unique feature to EMDK for Xamarin is to control device behavior and configuration through the use of *profiles*. The EMDK Profile Manager lets you create profiles right from your IDE using a GUI interface for selecting the features and settings that your application wishes to use. Then in your application you would simply apply the profile when needed. This results in a simple approach and minimal lines of code required to accomplish tasks
 
-- [Read the Profile Manager Overview Guide](/emdk-for-xamarin/2-0/guide/profilemanager/about)
+- [Read the Profile Manager Overview Guide](/emdk-for-xamarin/2-1/guide/profile-manager)
 
 ### 5) Build a Simple Application
 Now that you have your environment setup and have an overview of the EMDK for Xamarin, let's walk through and build an application from scratch.
 
-- [Follow the Hello Xamarin tutorial](/emdk-for-xamarin/2-0/tutorial/helloxamarin)
+- [Follow the Hello Xamarin tutorial](/emdk-for-xamarin/2-1/tutorial/helloxamarin)
 
 <div style="display:none">
 <!-- this section used in Xamarin gettingstarted.md for component packaging -->
@@ -75,6 +75,7 @@ We have a lot more resources for you to benefit from:
 - More Samples
 - [More docs online](http://emdk.github.io/xamarin-docs/edge)
 </div>
+
 
 
 

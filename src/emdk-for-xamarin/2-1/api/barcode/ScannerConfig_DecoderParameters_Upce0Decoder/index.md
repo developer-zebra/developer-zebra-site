@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.Upce0Decoder
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 The Upce0 class provides access to parameters that are available for the Upce0 decoder.
 
@@ -22,6 +22,7 @@ Controls the preamble applied to the bar code..
 Flag to enable reporting the bar code check digit.
 
 **Type** - System.Boolean
+
 
 
 

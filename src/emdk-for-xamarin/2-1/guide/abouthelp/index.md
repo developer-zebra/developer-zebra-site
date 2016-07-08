@@ -2,7 +2,7 @@
 title: About EMDK For Xamarin Help
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ##Overview
@@ -62,6 +62,7 @@ When clicking on a link that is an external website, the url will be opened in a
 * Firefox 29 or newer
 * Google Chrome 35 or newer 
 * Internet Explore 9 or newer
+
 
 
 

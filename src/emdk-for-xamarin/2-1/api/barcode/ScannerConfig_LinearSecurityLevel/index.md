@@ -2,7 +2,7 @@
 title: ScannerConfig.LinearSecurityLevel
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 Sets the number of times a bar code is read to confirm an accurate decode.
 
@@ -49,6 +49,7 @@ Two times read redundancy for long bar codes, three times for short bar codes.
 Two times read redundancy if short bar code or Codabar.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.LinearSecurityLevel
+
 
 
 

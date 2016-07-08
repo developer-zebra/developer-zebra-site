@@ -2,7 +2,7 @@
 title: ProfileManager.PROFILE_FLAG
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 All the possible actions for ProfileManager.processProfile(String, PROFILE_FLAG, Document) and ProfileManager.processProfile(String, PROFILE_FLAG, String[])is enumerated here.
 
@@ -46,6 +46,7 @@ Resets the modified profile data available on the application cache to default p
 Creates a profile with given XML data. If the profile is already created, this activates the profile if it is not bound to any activity.
 
 **Type** - Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG
+
 
 
 

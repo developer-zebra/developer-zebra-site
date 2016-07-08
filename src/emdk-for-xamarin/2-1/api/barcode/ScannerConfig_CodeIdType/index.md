@@ -2,7 +2,7 @@
 title: ScannerConfig.CodeIdType
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
@@ -45,6 +45,7 @@ No prefix.
 A Symbol defined single character prefix.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType
+
 
 
 

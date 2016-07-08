@@ -2,7 +2,7 @@
 title: Visual Studio Setup
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ## Watch This Guide
@@ -57,7 +57,8 @@ The IDE extension copies support files to the your file system in order to perfo
 
 
 ## What's Next
-In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-0/guide/component/install)
+In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-1/guide/component/install)
+
 
 
 

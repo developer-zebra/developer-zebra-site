@@ -87,7 +87,7 @@ products:
         menu: '3.1'
   - title: EMDK For Xamarin
     description: "Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra Devices."
-    url: /emdk-for-xamarin/2-0/guide/about
+    url: /emdk-for-xamarin/2-1/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:

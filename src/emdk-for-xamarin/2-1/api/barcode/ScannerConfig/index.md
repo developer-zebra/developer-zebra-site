@@ -2,7 +2,7 @@
 title: ScannerConfig
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 The ScannerConfig class provides access to scanner configuration settings.
 
@@ -49,6 +49,7 @@ The ScanParams property provides access to scanning parameters that are availabl
 This flag to tells whether to skip the unsupported parameter/values and continue or stop setting the configuration. Its set to UNSUPPORTED_PARAM by default which skips the unsupported params and continues.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SkipOnUnSupported
+
 
 
 

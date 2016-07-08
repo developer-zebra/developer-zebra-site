@@ -2,7 +2,7 @@
 title: BarcodeManager
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 This is the primary object to access the barcode scanning feature.
 
@@ -37,6 +37,7 @@ This method returns the scanner object if the ScannerInfo specified is valid and
 Returns list of supported scanner devices information.
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.ScannerInfo>
+
 
 
 

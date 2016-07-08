@@ -2,7 +2,7 @@
 title: ScannerConfig.ViewFinderMode
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 Configures the Viewfinder modes supported for camera scanning.
 
@@ -41,6 +41,7 @@ Viewfinder enabled. Displays the images captured by the camera on the screen.
 Viewfinder enabled with locate reticle. Displays the viewfinder as well as draws a red reticle in the center of the screen which helps with tracking the barcode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ViewFinderMode
+
 
 
 

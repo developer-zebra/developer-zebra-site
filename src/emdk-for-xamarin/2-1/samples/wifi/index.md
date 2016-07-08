@@ -22,7 +22,7 @@ screenshots:
   - 3.png
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ##Overview
@@ -99,6 +99,7 @@ Now press the "Play" button. The IDE will build, deploy and start the sample app
 6. Check the status field.
    
 	![img](../../images/samples/wifi_5.png)  
+
 
 
 

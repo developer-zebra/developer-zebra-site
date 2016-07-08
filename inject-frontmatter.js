@@ -68,157 +68,18 @@ var inject_frontMatter = function(setting){
 }
 
 var settings = [
+
     {
-        "path": "",
+        "path": "emdk-for-android/5-0",
         "frontmatter": [
             {
-                "item" :  "layout",
-                "value" : "guide.html",
-                "override": false
-                
-            }
-        ]
-    },
-    {
-        "path": "samples",
-        "frontmatter": [
-            {
-                "item" :  "layout",
-                "value" : "sample.html",
+                "item" :  "productversion",
+                "value" : "5.0",
                 "override": true,
             }
         ]
     },
-    {
-        "path": "emdk-for-xamarin",
-        "frontmatter": [
-            {
-                "item" :  "product",
-                "value" : "EMDK For Xamarin",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "emdk-for-android",
-        "frontmatter": [
-            {
-                "item" :  "product",
-                "value" : "EMDK For Android",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "ehs",
-        "frontmatter": [
-            {
-                "item" :  "product",
-                "value" : "Enteprise Home Screen",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "stagenow",
-        "frontmatter": [
-            {
-                "item" :  "product",
-                "value" : "Stagenow",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "enterprise-keyboard",
-        "frontmatter": [
-            {
-                "item" :  "product",
-                "value" : "Enterprise Keyboard",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "1-0",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "1.0",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "2-0",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "2.0",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "2-3",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "2.3",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "3-1",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "2.3",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "4-0",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "4.0",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "4-1",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "4.1",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "2-2",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "2.1",
-                "override": false,
-            }
-        ]
-    },
-    {
-        "path": "2-3",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "2.3",
-                "override": false,
-            }
-        ]
-    },
+
 
 
 ]

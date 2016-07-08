@@ -7,6 +7,10 @@ menu:
   title: EMDK For Android 4.2
   img: /emdk-for-android/images/logo.png
   versions:
+    - versionto: 5-0
+      versionfrom: 4-2
+      default: /emdk-for-android/5-0/guide/about
+      label: '5.0'
     - versionto: 4-0
       versionfrom: 4-2
       default: /emdk-for-android/4-0/guide/about

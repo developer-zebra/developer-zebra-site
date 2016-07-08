@@ -10,13 +10,14 @@ The CameraMgr controls access to camera(s) and other mechanisms on the device th
 **Important:** Any mechanism on a device that can be used to take pictures or otherwise capture images is treated as a camera by CameraMgr. For example, if a device is equipped with a CCD-based imager that is intended primarily to scan barcodes but also supports image capture, that imager's picture-taking capabilities can be disabled with the UseAllCameras (enable/disable) parameter. Its barcode scanning capabilities will remain operational if it does not rely on the imager for that function. If such a device offers only the ability to scan barcodes, it would not be treated as a camera since it poses little risk to image security. 
 
 > **Notes:**
-* Picture-taking and image capture using non-camera devices--while sometimes possible--is not supported by Zebra on devices running versions prior to Android M.
-* Disabling "All Cameras" also might prevent scanning on some devices. 
-* Blocking the Imager Camera on Android L devices completely disables SimulScan. 
+* Picture-taking and image capture using non-camera devices, while possible on some devices currently, will be supported by Zebra only on devices running Android M and higher.
+* Disabling "All Cameras" also prevents scanning on some devices. 
+* Blocking the Imager Camera on Android L devices also disables SimulScan. 
 
 ### Main Functionality
 
-* Enable or disable the use of all cameras and image-capture devices
-* Enable or disable the use of the front-facing camera
-* Enable or disable the use of the rear-facing camera
-* Enable or disable use of the imager camera
+* Enable/disable the use of all cameras and image-capture devices
+* Enable/disable the front-facing camera
+* Enable/disable the rear-facing camera
+* Enable/disable the imager camera
+* Report which cameras and image-capture devices are enabled/disabled

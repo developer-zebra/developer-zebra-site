@@ -5,100 +5,22 @@ type: text
 order: 0
 ---
 
-The Condition Manager allows an administrator to check for one or more conditions on a device before taking some action or checking for additional conditions. 
+The Condition Manager allows an administrator to check for one or more conditions on a device before taking some action or checking for additional conditions. This can be useful for verifying that a device meets one or more requirements (i.e. "Is the device an MC40?") before operations will be attempted. This can help reduce the risks of "dangerous" operations such as OS upgrades, the failure of which can render a device unusable, severely limited or otherwise in need of service. 
 
-Tested conditions will result in success or failure based on the condition of the device at the time the device was tested. 
+Each tested condition represents an instance of ConditionMgr, independent of all others. Tested conditions are either met or not met, and indicate the condition of the device at the time of the test (i.e. "Is there a valid IP address?"). Top-level conditions can test for Boolean, Integer or String data, but ultimately must result in a Boolean (true/false) value (i.e. "Does the Device Model field contain the 'MC40' string?"). 
 
-a condition is either met or not met and 
-
-each top-level instance of this checked for one thing- bool, int or string. 
-
-if fail, option to input the error message for himself or the person who will be seeing the error. 
-
-characteristic-error = 
-
-error handling thru XML mgr. 
-
-suppress error- is this error something I want to tell someone so they can take an action or is it an intetended outcome that helps determine my execution flow. 
-
-Stop on first error: Not MC40? fail with char error. Yes? proceed. 
-
-split into two parts: 
-1- (condition) define how to get a true or false answer- define the condition (simple = boolean, more complex = string or integer)
-2- (action) when true, do what? when false, do what? 
-3- (if on fail) provide a failure message to refine the process flow or create a rememdy (or suppress if intentional, which doesn't hide the message, it simply tells SN not to tell the user that staging failed)
-4- Option for this flow: collab with XmlMgr. not enough to say fail when this happens, sometimes it's necessary to do something else if it fails. 
-
-.1
-
-define a set of pre-conditions that must be met by a device before one or more operations will be attempted, reducing the liklihood of failure of those operations. This helps eliminate the risks of attempting "dangerous" operations such as an OS upgrade, the failure of which can render a device unusable, severely limited or otherwise in need of service. 
-
-When a condition is not met, ConditionMgr optionally can repeatedly re-check a condition, wait for changes in a condition and/or return meaningful failure messages about a condition, allowing the administrator to attempt a remedy or make other decisions about how to proceed.
-
-can be used with or without XmlMgr. 
-
-SN assumes that when scanning a barcode submits profile and gets back results based on simnple rules from SN. staging success or fail. fail= some problem happened. 
-
-If no XMLmgr is used in the staging profile, it will execute every top-level char and deliver some result. if any errors happen, "staging failed" per SN
-
-If it's dangerouns to do stuff on dev's other an MC40, then it makes sense to put xml;mgr in there so it can "stop on first error." 
-
-if you're bothering to use CondMgr, you probably want to use XmlMgr too. 
-
-Execute until error, then stop to halt execution if some condition is not met. If using more than one, they they're joiined with a logical "and" and will not execute unless all the conditions are met. 
-
-LAST WEEK
-
-ALLAN
-XML processing and error handling
-
-XML is always processed top to bottom, in order unless errors happen. 
-errors that effect xml are top-lvel characteristic errors and 
-For example: Input says do this to wifi. Output said no can do to wifi
-
-Top-level char error handling modes (confirugerd thru XML mgr): 
-1- Default error (if not using XMLmgr) execute all top level chars in order and keep going areport all successes and failures. 
-
-example- 10 chars in input, output might = 8 success and 2 fails. or whatever. (one might cause others to faiul (download apk)
-
-2- stop on first error. that's always the last thing you'll seea nd the "first place where condmgr can add value. Is this an MC40,. if not, stop. If so, do these things. 
-
-3- REAL powerful way: Try-catch mode. Try to do these things and if any don't work, go here to try to fix it. If they work, go back to where you left off and keep going. 
-
-Use this by using XML mgr multiple times. 
-
-DOC
-XML mgr set mode 3
-insert try stuff
-XML Mgr mode 4? "here's the exception handling catch"
-XMLmgr mode 1, 2 or 3 (where main line starts again)
-Mode 3 starts a new try section (if needed)
-
-Error-If 
-Condition mgr determines where to have an error
-XMLmgr is what to do about it
-
-One profile for MC40 and TC75:
-try conditionmgr myust be mc40 or error
-no error 
-load os for MC40
-if-this-then-that (there's no else)
-error- mode 3
-try TC75 or error
-no error
-load TC75 os
-
-Wizard in StageNow does all this automatically. 
-
-
+When a condition is not met, ConditionMgr can optionally re-check the condition, wait for changes in a condition and/or return meaningful failure messages about a condition, allowing the administrator to attempt a remedy, perform other actions or simply stop. When used in conjunction with the sophisticated processing rules of [XML Manager](../xmlmgr), ConditionMgr can be used to create intricate sets of conditions and actions that perform countless administrative tasks and activities. 
 
 ### Main Functionality
 
 * Validate a condition described in the input XML
-* Present and consume the status of the validated condition
-* Specify a number of times to repeat a validation attempt 
-* Specify a period of time to wait between tests of a condition 
-* Verify that the device has a valid IP address
+* Present and consume the status of a validated condition
+* Repeat a validation attempt for a specified number of times 
+* Wait between tests of a condition for a specified period of time 
+* Create custom messages to display when a test fails
+* Verify that a valid IP address exists on a device 
 * Check the battery level of the device
 * Check for the presence of a file
-* Validate a device model (i.e. "TC70") with a string
+* Validate a device model (i.e. "TC70"), installed OS or other string on the device
+* Suppress display of error messages
+

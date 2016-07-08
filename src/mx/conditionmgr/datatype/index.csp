@@ -12,16 +12,14 @@ parm:
     - code: 1
       mx: 4.4
       name: Boolean
-      description: Indicates that the tested value will be either true or false. 
+      description: The tested value will be either true or false. 
     - code: 2
       name: Integer
       mx: 4.4
-      description: Indicates that the tested value will be a number. 
+      description: The tested value will be a number. 
     - code: 3
       name: String
       mx: 6.0
-      description: Indicates that the tested value will be a string of characters.  
+      description: The tested value will be a string of characters.  
 ---
-Used to specify the type of data being tested on the device: Boolean, Integer or String. All condition tests, regardless of the data type, will ultimately yield a Boolean value--some result that is either true or false. Tests of Boolean data types--for example, whether a device has a valid IP address--is the simplest test and provides a direct result. Integers and Strings must include one of the relevant test conditions such as "greater-than" for numeric values or "contains" for a specified string, to arrive at a Boolean value. 
-
-For example, to test whether a device is an MC40, look for a string in the Device Model field that contains the constant "MC40" and if so, the result will be "true." Note that the source types and system values also will vary by Data Type.
+Used to specify whether testing for Boolean, Integer or String data on the device. Regardless of the data type, all condition tests must ultimately yield a Boolean value--some result that is either true or false. The Boolean Data Type, such as whether a device has a valid IP address, provides a direct result and therefore requires no additional parameter. To arrive at a Boolean value when testing Integers and Strings requires one of the relevant condition tests such as "greater-than" for numeric values or "contains" for a specified string. For example, the test of whether a device is an MC40 would look for a string in the Device Model field that contains the constant "MC40" and if so, return a "true" result. **Note: The Source Types and System Values will vary depending on the selected Data Type**.

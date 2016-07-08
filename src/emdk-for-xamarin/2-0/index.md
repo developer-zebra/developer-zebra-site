@@ -11,6 +11,10 @@ menu:
       versionfrom: 2-0
       default: /emdk-for-xamarin/1-0/guide/about
       label: '1.0'
+    - versionto: 2-1
+      versionfrom: 2-0
+      default: /emdk-for-xamarin/2-1/guide/about
+      label: '2.1'
   items:
     - title: Home
       url: /emdk-for-xamarin/2-0/guide/about

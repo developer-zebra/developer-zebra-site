@@ -3,7 +3,7 @@ csp: conditionmgr
 title: String Constant Value
 type: parm
 order: 23
-mx: 4.4
+mx: 6.0
 parm:
   presentif: Data Type is "String" and String Condition Test is "Equal-to a Constant String"
   pivotal: No

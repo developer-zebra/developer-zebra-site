@@ -3,7 +3,7 @@ csp: conditionmgr
 title: String System Value
 type: parm
 order: 22
-mx: 4.4
+mx: 6.0
 parm:
   presentif: Data Type is "String" and String Source Type is "Pre-defined System String Value"
   pivotal: No
@@ -11,11 +11,11 @@ parm:
   type: list
   list:
     - code: 12
-      mx: 4.4
+      mx: 6.0
       name: MX version
       description: The version of MX installed on the device. 
     - code: 13
-      mx: 4.4
+      mx: 6.0
       name: OSX version
       description: The version of OSx installed on the device. 
 ---

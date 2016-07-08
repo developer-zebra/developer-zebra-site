@@ -3,7 +3,7 @@ csp: conditionmgr
 title: String Source Type
 type: parm
 order: 20
-mx: 4.4
+mx: 6.0
 parm:
   presentif: Data Type is "String"
   pivotal: No

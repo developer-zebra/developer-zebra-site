@@ -3,7 +3,7 @@ csp: conditionmgr
 title: String System Property
 type: parm
 order: 21
-mx: 4.4
+mx: 6.0
 parm:
   presentif: Data Type is "String" and String Source Type is "String System Property"
   pivotal: No
@@ -11,15 +11,15 @@ parm:
   type: list
   list:
     - code: 2
-      mx: 4.4
+      mx: 6.0
       name: Product Model
       description: The model number of the Zebra device. 
      - code: 11
-      mx: 4.4
+      mx: 6.0
       name: Android Version
       description: The version of Android running on the device. 
      - code: 12
-      mx: 4.4
+      mx: 6.0
       name: Build Number
       description: 
 ---

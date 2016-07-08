@@ -2,13 +2,16 @@
 csp: conditionmgr
 title: Condition Repeat Interval
 type: parm
-order: 13
-sincemx: 4.4
+order: 33
+mx: 4.4
 parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"
   pivotal: No
   name: ConditionRepeatInterval
-  type: string
+  type: integer
 ---
+Used to specify a period of time (in seconds) to delay between tests of a Condition. 
 
-Enter the Time (in seconds) between Tests of the Condition. Min value: 1. Max value: 60
+**Parm value input rules**:
+
+* Accepts an integer from 1-60

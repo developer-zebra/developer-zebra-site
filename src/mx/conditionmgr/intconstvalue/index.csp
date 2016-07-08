@@ -2,13 +2,16 @@
 csp: conditionmgr
 title: Integer Constant Value
 type: parm
-order: 8
-sincemx: 4.4
+order: 13
+mx: 4.4
 parm:
   presentif: Data Type is "Integer" 
   pivotal: No
-  name: BooleanSystemValue
+  name: IntegerConstantValue
   type: string
 ---
+Used to specify the integer value (from -32768 to 32767) to test. 
 
-Enter the integer value to test. Min Value: -32768, Max Value: 32767
+**Parm value input rules**:
+
+* Accepts an integer from -32768 to 32767

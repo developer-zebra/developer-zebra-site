@@ -1,0 +1,28 @@
+---
+csp: conditionmgr
+title: String System Property
+type: parm
+order: 21
+mx: 6.0
+parm:
+  presentif: Data Type is "String" and String Source Type is "String System Property"
+  pivotal: No
+  name: StringSystemProperty
+  type: list
+  list:
+    - code: 2
+      mx: 6.0
+      name: Product Model
+      description: The model number of the Zebra device. 
+     - code: 11
+      mx: 6.0
+      name: Android Version
+      description: The version of Android running on the device. 
+     - code: 12
+      mx: 6.0
+      name: Build Number
+      description: 
+---
+Used to select a string-based device value against which to test the specified constant value to arrive at a Boolean value. For example, to set an operation to proceed only on TC55 devices, set this value to 2 ("Product Model") and set the Constant String Value to TC55.
+
+  

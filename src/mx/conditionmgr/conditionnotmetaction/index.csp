@@ -2,23 +2,25 @@
 csp: conditionmgr
 title: Condition Not Met Action
 type: parm
-order: 11
-sincemx: 4.4
+order: 31
+mx: 4.4
 parm:
   pivotal: No
   name: ConditionNotMetAction
   type: list
   list:
     - code: 0
-      sincemx: 4.4
+      mx: 4.4
       name: Success
-      description: 
+      description: Action to perform when a tested condition is successful. 
     - code: 1
-      sincemx: 4.4
+      mx: 4.4
       name: Fail with characteristic-error
-      description:  
+      description: Action to perform when a tested condition fails. 
     - code: 2
-      sincemx: 4.4
+      mx: 4.4
       name: Retry (up to specified times) then Fail
-      description: 
+      description: Repeatedly tests the condition before failing. 
 ---
+Used to select the action to perform when the tested condition is not met. 
+

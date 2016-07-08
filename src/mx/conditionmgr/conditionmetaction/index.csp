@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Condition Met Action
 type: parm
-order: 13
+order: 30
 mx: 4.4
 parm:
   pivotal: No

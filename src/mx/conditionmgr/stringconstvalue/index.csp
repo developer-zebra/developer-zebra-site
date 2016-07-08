@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: String Constant Value
 type: parm
-order: 8
+order: 23
 mx: 4.4
 parm:
   presentif: Data Type is "String" and String Condition Test is "Equal-to a Constant String"

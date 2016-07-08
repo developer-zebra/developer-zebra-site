@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Integer Source Type
 type: parm
-order: 5
+order: 10
 mx: 4.4
 parm:
   presentif: Data Type is "Integer"

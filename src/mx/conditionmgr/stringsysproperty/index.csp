@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: String System Property
 type: parm
-order: 11
+order: 21
 mx: 4.4
 parm:
   presentif: Data Type is "String" and String Source Type is "String System Property"

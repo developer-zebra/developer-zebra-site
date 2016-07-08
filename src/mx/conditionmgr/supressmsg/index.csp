@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Suppress Message
 type: parm
-order: 19
+order: 36
 mx: 6.0
 parm:
   presentif: Condition Met Action or Condition Not Met Action is not "Success"
@@ -10,4 +10,4 @@ parm:
   name: SuppressMessage
   type: boolean
 ---
-Used to disable error-message display when such messages are intended as part of a process. 
+Used to disable the display of error messages when such messages are intended as part of a process. For example, a device staging process might contain a list of commands to identify devices to be targeted for staging and reject others with intended failures. Suppressing such failure messages would prevent the staging system from displaying "staging failed" or similar errors. 

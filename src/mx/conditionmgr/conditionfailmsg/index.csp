@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Condition Fail Message
 type: parm
-order: 17
+order: 34
 mx: 4.4
 parm:
   presentif: Condition Met Action or Condition Not Met Action is not "Success"

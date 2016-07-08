@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Boolean Condition Test
 type: parm
-order: 4
+order: 7
 mx: 4.4
 parm:
   presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"

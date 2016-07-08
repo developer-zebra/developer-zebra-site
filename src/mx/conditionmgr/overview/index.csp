@@ -39,11 +39,11 @@ can be used with or without XmlMgr.
 
 SN assumes that when scanning a barcode submits profile and gets back results based on simnple rules from SN. staging success or fail. fail= some problem happened. 
 
-If no XMLmgr is used in the staging profile, it will execute every tioop-level char and deliver some result. if any errors happen, "staging failed" per SN
+If no XMLmgr is used in the staging profile, it will execute every top-level char and deliver some result. if any errors happen, "staging failed" per SN
 
-If it'ds dangerouns to do stuff on dev's otehr an MC40, then it makes sense to put xml;mgr in there so it can "stop on first error." 
+If it's dangerouns to do stuff on dev's other an MC40, then it makes sense to put xml;mgr in there so it can "stop on first error." 
 
-if you're bothering to use CondMgr, you probably want to use CmlMgr too. 
+if you're bothering to use CondMgr, you probably want to use XmlMgr too. 
 
 Execute until error, then stop to halt execution if some condition is not met. If using more than one, they they're joiined with a logical "and" and will not execute unless all the conditions are met. 
 

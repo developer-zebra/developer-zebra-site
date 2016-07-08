@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Integer Constant Value
 type: parm
-order: 8
+order: 13
 mx: 4.4
 parm:
   presentif: Data Type is "Integer" 

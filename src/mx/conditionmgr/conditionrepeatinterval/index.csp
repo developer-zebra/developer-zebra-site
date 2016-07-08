@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Condition Repeat Interval
 type: parm
-order: 16
+order: 33
 mx: 4.4
 parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"

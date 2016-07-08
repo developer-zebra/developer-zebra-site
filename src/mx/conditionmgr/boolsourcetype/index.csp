@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Boolean Source Type
 type: parm
-order: 3
+order: 5
 mx: 4.4
 parm:
   presentif: Data Type is "Boolean"

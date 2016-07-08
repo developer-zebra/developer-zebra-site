@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: String System Value
 type: parm
-order: 10
+order: 22
 mx: 4.4
 parm:
   presentif: Data Type is "String" and String Source Type is "Pre-defined System String Value"

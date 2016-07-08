@@ -2,7 +2,7 @@
 csp: conditionmgr
 title: Integer System Property
 type: parm
-order: 7
+order: 11
 mx: 4.4
 parm:
   presentif: Data Type is "Integer"

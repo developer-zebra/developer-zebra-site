@@ -1,8 +1,8 @@
 ---
 title: EMDKManager.FEATURE_TYPE
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 This lists all the features exposed by the EMDK.
 
@@ -37,26 +37,21 @@ This lists all the features exposed by the EMDK.
 EMDK feature type barcode
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
+###Notification
+To be added.
+
+**Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 ###Profile
 EMDK feature type profile
+
+**Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
+###Scanandpair
+EMDK feature type for ScanAndPair
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 ###Version
 EMDK feature type version
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

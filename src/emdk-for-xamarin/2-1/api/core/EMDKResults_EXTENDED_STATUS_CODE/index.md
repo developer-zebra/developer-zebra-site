@@ -1,8 +1,8 @@
 ---
 title: EMDKResults.EXTENDED_STATUS_CODE
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Defines all the extended status codes the library returns.
 
@@ -110,18 +110,5 @@ Profile name not found in current EMDKConfig.xml. Returned in: com.symbol.emdk.e
 The profile not found in extraData. Returned in: com.symbol.emdk.emdkservice.ProfileService.setProfile(String, String) when merging profiles.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults.EXTENDED_STATUS_CODE
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

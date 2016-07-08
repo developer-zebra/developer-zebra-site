@@ -1,8 +1,8 @@
 ---
 title: ProfileManager.DataEventArgs
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Used internally, not for development use.
 
@@ -19,18 +19,5 @@ Used internally, not for development use.
         
 
 **Type** - Symbol.XamarinEMDK.ProfileManager.ResultData
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

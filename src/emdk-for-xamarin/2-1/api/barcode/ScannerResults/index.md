@@ -1,8 +1,8 @@
 ---
 title: ScannerResults
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Defines all the error codes the barcode scanning API returns.
 
@@ -82,6 +82,10 @@ Scanner initialization failed.
 Cannot enable scanner and is already in use.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
+###ScannerNotConnected
+To be added.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 ###ScannerNotEnabled
 The scanner device is not enabled.
 
@@ -135,18 +139,5 @@ Error code not defined.
 View finder error.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

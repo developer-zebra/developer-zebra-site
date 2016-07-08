@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.SkipOnUnSupported
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 
     
@@ -50,18 +50,5 @@ Skips the only unsupported paramter and continues with next.
 Skips the only unsupported values and continues with next.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SkipOnUnSupported
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

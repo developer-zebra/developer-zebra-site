@@ -1,8 +1,8 @@
 ---
 title: Scanner
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 
 Scanner class will represent and provides access to the physical scanner device.
@@ -46,6 +46,7 @@ Gets the current configuration settings for this scanner device. If modification
 **public virtual Symbol.XamarinEMDK.Barcode.InterfaceConfig GetInterfaceConfig ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.InterfaceConfig
@@ -81,10 +82,12 @@ Changes the settings for this scanner device. The unsupported parameters will be
 **public virtual void SetInterfaceConfig (Symbol.XamarinEMDK.Barcode.InterfaceConfig interfaceConfig);**
 
 
+        
 
 **Parameters:** 
 
 * Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig** - 
+        
 
 **Returns** - System.Void
 
@@ -106,18 +109,5 @@ Returns information about the scanner device.
 Specifies the trigger type for the scanner. It is set to HARD by default.
 
 **Type** - Symbol.XamarinEMDK.Barcode.Scanner.TriggerTypes
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

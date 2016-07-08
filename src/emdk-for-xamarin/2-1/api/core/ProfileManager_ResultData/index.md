@@ -1,8 +1,8 @@
 ---
 title: ProfileManager.ResultData
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 This class provides the Status detail of processProfileAsync method.
 
@@ -30,18 +30,5 @@ Returns the profile data as string requested in the processProfileAsync method.
 Class for holding status of processProfileAsync method.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

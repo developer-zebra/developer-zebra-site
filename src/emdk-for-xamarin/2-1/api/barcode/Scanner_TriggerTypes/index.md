@@ -1,8 +1,8 @@
 ---
 title: Scanner.TriggerTypes
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Types of triggers to begin barcode scanning.
 
@@ -45,18 +45,5 @@ Soft trigger is used for all pending scans and for future reads issued. When thi
 Soft trigger is used only once for a pending read or for the next issued read. When this mode is set, the scan beam will come up automatically without having to press the trigger on the device after issuing the read call.
 
 **Type** - Symbol.XamarinEMDK.Barcode.Scanner.TriggerTypes
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

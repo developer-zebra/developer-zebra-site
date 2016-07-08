@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.AimingPattern
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Describes the aiming pattern to be turned ON/OFF.
 
@@ -13,10 +13,12 @@ Describes the aiming pattern to be turned ON/OFF.
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimingPattern
 
@@ -24,6 +26,7 @@ Describes the aiming pattern to be turned ON/OFF.
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimingPattern[]
@@ -38,18 +41,5 @@ iming pattern is turned off.
 Aiming pattern is turned on.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.UpcaDecoder
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 The Upca class provides access to parameters that are available for the Upca decoder.
 
@@ -18,18 +18,5 @@ Controls the preamble applied to the bar code.
 Flag to enable reporting the bar code check digit.
 
 **Type** - System.Boolean
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

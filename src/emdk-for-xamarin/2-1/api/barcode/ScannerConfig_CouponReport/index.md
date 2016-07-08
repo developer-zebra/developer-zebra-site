@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.CouponReport
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Supported Coupon modes
 
@@ -45,18 +45,5 @@ Scanner will read only the new GS1 DataBar coupon format
 Scanner will read only the old coupon format
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

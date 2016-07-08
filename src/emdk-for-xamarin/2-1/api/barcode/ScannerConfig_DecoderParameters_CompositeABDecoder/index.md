@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.CompositeABDecoder
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 The CompositeAB class provides access to parameters that are available for the CompositeAB decoder.
 
@@ -14,18 +14,5 @@ The CompositeAB class provides access to parameters that are available for the C
 Gets and Sets UCC Link Mode using ScannerConfig.UccLinkMode enum.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.UccLinkMode
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

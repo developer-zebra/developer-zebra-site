@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.LaserSpecifics
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 LaserSpecific class provides access to the laser scanner specific parameters.
 
@@ -30,18 +30,5 @@ Sets the number of times a bar code is read to confirm an accurate decode. Use e
 Set scanner power mode. Use enum ScannerConfig.PowerMode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

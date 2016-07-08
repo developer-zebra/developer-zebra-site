@@ -1,8 +1,8 @@
 ---
 title: EMDKManager.OpenedEventArgs
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 Used by EMDKManager internally, not for development use.
 
@@ -19,18 +19,5 @@ Used by EMDKManager internally, not for development use.
         
 
 **Type** - Symbol.XamarinEMDK.EMDKManager
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

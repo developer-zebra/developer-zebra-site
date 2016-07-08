@@ -1,8 +1,8 @@
 ---
 title: VersionManager.VERSION_TYPE
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.1'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.1' 
 ---
 All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated here.
 
@@ -13,10 +13,12 @@ All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated 
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 
@@ -24,6 +26,7 @@ All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated 
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE[]
@@ -42,18 +45,5 @@ EMDK version
 MX framework version
 
 **Type** - Symbol.XamarinEMDK.VersionManager.VERSION_TYPE
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

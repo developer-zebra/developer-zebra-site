@@ -126,7 +126,7 @@ products:
       - title: Samples
         url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
   - title: MX
-    description: Zebra’s Mobility DNA - an added layer of enterprise-class security and manageability.
+    description: Zebra’s Mobility DNA - an added layer of enterprise-class security and manageability for Android devices.
     url: /mx
     image: /images/products/mx.png
     sections:

@@ -6,7 +6,7 @@ order: 11
 mx: "6.0"
 parm:
   pivotal: No
-  name: Locale
+  name: UseCurrentLocale
   type: list
   list:
     - code: 0

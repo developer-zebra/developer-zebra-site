@@ -221,6 +221,9 @@ var sitebuild = Metalsmith(__dirname)
         automenu: false
     }))
     .use(foldermenu({
+        folder: 'mdmtk/1-0/'
+    }))
+    .use(foldermenu({
         folder: 'mdmtk/2-0/'
     }))
     .use(showdown({literalMidWordUnderscores:true}))

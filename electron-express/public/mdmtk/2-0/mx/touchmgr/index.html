@@ -49,11 +49,13 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-left">
                     <ul class="nav navbar-nav">
-                        <p class="navbar-text">
-                                            MDM Toolkit
-                                            2.0
-                        </p>
-
+                        <li class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> MDM Toolkit 2.0
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                                <li><a onclick="changeVersion('2-0','1-0','/mdmtk/1-0/guide/about')">MDM Toolkit 1.0</a></li>
+                          </ul>
+                        </li>                    
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
@@ -712,7 +714,6 @@
                                     
                                     
                                     
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="touch-action"><a class="heading-anchor" href="#touch-action"><span></span></a>Touch Action</h2>
@@ -783,6 +784,7 @@
                                     </div>	
                                     
                                 </div> 
+                                    
                                     
                                     
                                     
@@ -1260,7 +1262,6 @@
                     
                     
                     
-                    
                     {
                             presentif: "",
                             name: "TouchAction",
@@ -1324,6 +1325,7 @@
                         
                         ]
                     },
+                    
                     
                     
                     

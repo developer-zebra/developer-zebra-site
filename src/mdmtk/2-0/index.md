@@ -6,6 +6,11 @@ layout: guide.html
 menu:
   title: MDM Toolkit 2.0
   img: /mdmtk/2-0/images/logo.png
+  versions:
+    - versionto: 1-0
+      versionfrom: 2-0
+      default: /mdmtk/1-0/guide/about
+      label: '1.0'
   items:
     - title: Home
       url: /mdmtk/2-0/guide/about

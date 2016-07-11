@@ -49,11 +49,13 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-left">
                     <ul class="nav navbar-nav">
-                        <p class="navbar-text">
-                                            MDM Toolkit
-                                            2.0
-                        </p>
-
+                        <li class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> MDM Toolkit 2.0
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                                <li><a onclick="changeVersion('2-0','1-0','/mdmtk/1-0/guide/about')">MDM Toolkit 1.0</a></li>
+                          </ul>
+                        </li>                    
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
@@ -801,10 +803,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="target-access-method"><a class="heading-anchor" href="#target-access-method"><span></span></a>Target Access Method</h2>
@@ -850,6 +848,19 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -938,15 +949,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="target-uri"><a class="heading-anchor" href="#target-uri"><span></span></a>Target URI</h2>
@@ -991,6 +993,8 @@
                                     
                                     
                                     
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="source-uri"><a class="heading-anchor" href="#source-uri"><span></span></a>Source URI</h2>
@@ -1017,8 +1021,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
                                     
                                     
                                         <div class="">
@@ -1116,6 +1118,17 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="source-path-and-file"><a class="heading-anchor" href="#source-path-and-file"><span></span></a>Source Path and File</h2>
@@ -1142,20 +1155,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                         <div class="">
@@ -1229,6 +1228,9 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1390,6 +1392,11 @@
                                 </div> 
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="5.0" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="archive-source-uri"><a class="heading-anchor" href="#archive-source-uri"><span></span></a>Archive Source URI</h2>
@@ -1416,11 +1423,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="5.0" data-api="" data-smartdoc="">
 
@@ -1762,10 +1764,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
                     {
                             presentif: "File Action is transfer\copy",
                             name: "TargetAccessMethod",
@@ -1793,6 +1791,19 @@
                         
                         ]
                     },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -1873,15 +1884,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -1918,6 +1920,8 @@
                     
                     
                     
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -1936,8 +1940,6 @@
                         
                         
                     },
-                    
-                    
                     
                     
                     {
@@ -2028,6 +2030,17 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -2046,20 +2059,6 @@
                         
                         
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     {
@@ -2125,6 +2124,9 @@
                         
                         ]
                     },
+                    
+                    
+                    
                     
                     
                     
@@ -2262,6 +2264,11 @@
                     },
                     
                     
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -2280,11 +2287,6 @@
                         
                         
                     },
-                    
-                    
-                    
-                    
-                    
                     
                     {
                         requires: {

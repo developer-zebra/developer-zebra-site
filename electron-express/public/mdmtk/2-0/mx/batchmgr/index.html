@@ -49,11 +49,13 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-left">
                     <ul class="nav navbar-nav">
-                        <p class="navbar-text">
-                                            MDM Toolkit
-                                            2.0
-                        </p>
-
+                        <li class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> MDM Toolkit 2.0
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                                <li><a onclick="changeVersion('2-0','1-0','/mdmtk/1-0/guide/about')">MDM Toolkit 1.0</a></li>
+                          </ul>
+                        </li>                    
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
@@ -656,6 +658,7 @@
                                     
                                     
                                     
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -760,7 +763,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
                                     
                                     
                                     
@@ -964,7 +966,6 @@
                                     
                                     
                                     
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="file-data"><a class="heading-anchor" href="#file-data"><span></span></a>File Data</h2>
@@ -991,6 +992,7 @@
                                     
                                     
                                 </div> 
+                                    
                                     
                                     
                                     
@@ -1103,18 +1105,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="require-opaque"><a class="heading-anchor" href="#require-opaque"><span></span></a>Require Opaque</h2>
@@ -1207,6 +1197,19 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="require-immutable"><a class="heading-anchor" href="#require-immutable"><span></span></a>Require Immutable</h2>
@@ -1265,7 +1268,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
                                     
                                     
                                     
@@ -1605,6 +1607,7 @@
                     
                     
                     
+                    
                     {
                             presentif: "",
                             name: "BatchFileType",
@@ -1650,7 +1653,6 @@
                         
                         ]
                     },
-                    
                     
                     
                     
@@ -1826,7 +1828,6 @@
                     
                     
                     
-                    
                     {
                         requires: {
                             osx: "",
@@ -1845,6 +1846,7 @@
                         
                         
                     },
+                    
                     
                     
                     
@@ -1944,18 +1946,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                             presentif: "File Access method is batch file type is binary and require encoding is set.",
                             name: "RequireOpaque",
@@ -2035,6 +2025,19 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "File Access method is batch file type is binary and require encoding is set.",
                             name: "RequireImmutable",
@@ -2080,7 +2083,6 @@
                         
                         ]
                     },
-                    
                     
                     
                     

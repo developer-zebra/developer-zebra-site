@@ -13,3 +13,9 @@
 1) build mdm_mdmtk
 2) cd electron-with-express
 3) electron .
+
+
+
+## Packaging electron
+
+electron-packager /Users/bhecox/Development/emdk/developer-zebra-site/electron-express "MDM Toolkit" --platform=win32 --arch=all --version=1.2.5 --out=Staging --version-string.CompanyName="Zebra Technologies Inc."  --version-string.ProductName="MDM Toolkit" --version-string.ProductVersion=2.0

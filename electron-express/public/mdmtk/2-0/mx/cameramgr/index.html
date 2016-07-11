@@ -49,11 +49,13 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-left">
                     <ul class="nav navbar-nav">
-                        <p class="navbar-text">
-                                            MDM Toolkit
-                                            2.0
-                        </p>
-
+                        <li class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> MDM Toolkit 2.0
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                                <li><a onclick="changeVersion('2-0','1-0','/mdmtk/1-0/guide/about')">MDM Toolkit 1.0</a></li>
+                          </ul>
+                        </li>                    
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
@@ -854,6 +856,11 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="front-camera"><a class="heading-anchor" href="#front-camera"><span></span></a>Front Camera</h2>
@@ -952,12 +959,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="rear-camera"><a class="heading-anchor" href="#rear-camera"><span></span></a>Rear Camera</h2>
@@ -1035,6 +1036,9 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1476,8 +1480,6 @@
                                     
                                     
                                     
-                                    
-                                    
                                 </div><!--/.container-->
                                 
                             </section><!--/#services-->
@@ -1679,6 +1681,11 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "Use All Cameras is set to &quot;Control Individual Cameras&quot;",
                             name: "UseFrontCamera",
@@ -1763,12 +1770,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                             presentif: "Use All Cameras is set to &quot;Control Individual Cameras&quot;",
                             name: "UseRearCamera",
@@ -1832,6 +1833,7 @@
                         
                         ]
                     },
+                    
                     
                     
                     

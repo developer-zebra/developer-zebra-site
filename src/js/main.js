@@ -362,15 +362,21 @@ jQuery(function($) {'use strict';
 });
 
 function changeVersion(version_from,version_to,default_url){
-	var new_url = $(location).attr('href').replace(version_from,version_to);
-	console.log(new_url);
-	var jqxhr = $.get( new_url, function() {
-	  window.location = new_url;
-	})
-	.fail(function() {
+	var current_url = $(location).attr('href');
+	console.log("Current URL: " + current_url);
+	if(current_url.indexOf(version_from) >=0){
+		var new_url = current_url.replace(version_from,version_to);
+		console.log(new_url);
+		var jqxhr = $.get( new_url, function() {
+		window.location = new_url;
+		})
+		.fail(function() {
+			window.location = default_url;
+		});
+	} else {
+		console.log("Navigating to specifed default URL");
 		window.location = default_url;
-	});
-
+	}
 
 }
 

@@ -188,9 +188,7 @@ KitKat and Lollipop
 
 ## How to Get It
 
-Enterprise Keyboard is currently available **only for Zebra MC40 devices running Android KitKat**. 
-
-Download the **OS patch for MC40** at [Zebra Support Central](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=).
+Enterprise Keyboard is currently available **only as an OS patch for Zebra MC40 devices running Android KitKat**. To download, visit the Zebra Support Central [**Enterprise Keyboard download page**](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102423&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Keyboard).
 
 Enterprise Keyboard will be **included with all Zebra devices running Android 5.0** Lollipop beginning in the **second half of 2016**. 
 

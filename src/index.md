@@ -87,27 +87,29 @@ products:
         menu: '3.1'
   - title: EMDK For Xamarin
     description: "Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra Devices."
-    url: /emdk-for-xamarin/2-0/guide/about
+    url: /emdk-for-xamarin/2-1/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
       - title: Getting Started
-        url: /emdk-for-xamarin/2-0/guide/gettingstarted
+        url: /emdk-for-xamarin/2-1/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-0/tutorial/
+        url: /emdk-for-xamarin/2-1/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-0/samples
+        url: /emdk-for-xamarin/2-1/samples
       - title: Guides
-        url: /emdk-for-xamarin/2-0/guide/programming-guides
+        url: /emdk-for-xamarin/2-1/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-0/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-1/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-0/api
+        url: /emdk-for-xamarin/2-1/api
     versions:
-      - url: emdk-for-xamarin/1-0/guide/about/
+      - url: emdk-for-xamarin/1-1/guide/about/
         menu: '1.0'
       - url: emdk-for-xamarin/2-0/guide/about/
         menu: '2.0'
+      - url: emdk-for-xamarin/2-1/guide/about/
+        menu: '2.1'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
     url: /link-os

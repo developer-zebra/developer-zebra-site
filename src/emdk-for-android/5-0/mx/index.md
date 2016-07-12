@@ -44,7 +44,7 @@ contentlist:
         icon: /mx/icons/msr.png
         url: data-capture/msr
   - heading: Device Configuration
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    description: 'Configure Device Settings'
     visible: true
     items:
       - title: Analytics
@@ -79,6 +79,10 @@ contentlist:
         url: touchmgr
         description: The TouchMgr allows you configure the Touch Mode on your device (ex. Finger or Stylus)
         icon: /mx/icons/touchmgr.png
+      - title: Remote Scanner Manger
+        url: remotescannermgr
+        description: ' '
+        icon: /mx/icons/barcode.png
   - heading: MX Core Framework
     description: Access core framework features and how XML settings are managed.
     visible: true

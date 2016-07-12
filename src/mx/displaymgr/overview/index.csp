@@ -5,10 +5,10 @@ type: text
 order: 0
 ---
 
-The DisplayMgr provides control of the display screen on the device. At present, the only option is to configure the timeout value after which the display turns off to conserve battery power. Future versions of the DisplayMgr may provide control of other aspects of the display screen.
+The DisplayMgr provides control of certain display screen features on the device.
 
 ### Main Functionality
 
-* Set the Display Screen Timeout Interval
-* Enable or Disable Screen Shot usage
+* Set the display screen timeout interval
+* Enable/disable screen shot usage
  

@@ -5,9 +5,7 @@ type: text
 order: 0
 ---
 
-The Browser Manager permits the configuration of browser settings such as the default home page.
-
-On many Zebra Android devices, the default browser is that of the Android Open Source Project (AOSP), which has been modified to allow configurability of certain settings. BrowserMgr is used to configure those settings.
+The Browser Manager permits the configuration of password retention, default home page and other settings on the Android Open Source Project (AOSP) browser, which is the default browser on many Zebra Android devices and has been modified for this purpose. 
 
 ### Main Functionality
 

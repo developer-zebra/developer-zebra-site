@@ -44,7 +44,7 @@ contentlist:
         icon: /mx/icons/msr.png
         url: data-capture/msr
   - heading: Device Configuration
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    description: 'Configure Device Settings'
     visible: true
     items:
       - title: Analytics

@@ -56,6 +56,8 @@ automenu:
           url: /emdk-for-xamarin/2-1/mx/powermgr/
         - title: Touch Manager
           url: /emdk-for-xamarin/2-1/mx/touchmgr/
+        - title: Remote Scanner Manager
+          url: /emdk-for-xamarin/2-1/mx/remotescannermgr/
     - title: Core Framework
       items:
         - title: Persistance Manager

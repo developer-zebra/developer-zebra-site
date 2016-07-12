@@ -270,7 +270,7 @@ If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home S
 
 &#56;. <b>Select Enterprise Home Screen</b> and <b>tap 'Just once'</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting 'Always' makes the selection permanent. 
 
-&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue. 
+&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue or select 'Always' to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
 
 ### Select Apps for User Mode 
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 
@@ -396,7 +396,7 @@ To install EHS using an MDM, instruct the MDM to do the following, in this order
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020300.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_R_020300.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>

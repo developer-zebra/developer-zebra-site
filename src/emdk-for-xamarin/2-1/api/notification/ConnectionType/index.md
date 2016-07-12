@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.Notification.ConnectionType ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType
 
 ###Values
 **public static Symbol.XamarinEMDK.Notification.ConnectionType[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType[]
@@ -31,15 +31,15 @@ To be added.
 ##Properties
 
 ###BluetoothSsi
-To be added.
+Bluetooth SSI
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
 ###Pluggable
-To be added.
+Pluggable
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
 ###Undefined
-To be added.
+Undefined
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
 

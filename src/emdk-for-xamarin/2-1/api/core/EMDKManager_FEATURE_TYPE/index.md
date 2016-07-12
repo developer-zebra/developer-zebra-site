@@ -38,7 +38,7 @@ EMDK feature type barcode
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 ###Notification
-To be added.
+EMDK feature type for Notification
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 ###Profile

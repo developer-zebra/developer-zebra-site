@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Provides the different types of barcode data to be scanned.
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType
 
 ###Values
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType[]
@@ -31,15 +31,15 @@ To be added.
 ##Properties
 
 ###DeviceName
-To be added.
+Scan data is a Bluetooth device name.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType
 ###MacAddress
-To be added.
+Scan data is a Bluetooth MAC address
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType
 ###Unspecified
-To be added.
+Scan data type is unknown. The ScanAndPair library will automatically attempt to determine if it is a valid address. If not, it will be considered as a Bluetooth name.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType
 

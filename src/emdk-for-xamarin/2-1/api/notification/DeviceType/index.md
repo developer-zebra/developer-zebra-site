@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.Notification.DeviceType ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Notification.DeviceType
 
 ###Values
 **public static Symbol.XamarinEMDK.Notification.DeviceType[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.DeviceType[]
@@ -31,15 +31,15 @@ To be added.
 ##Properties
 
 ###Imager
-To be added.
+Imager
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
 ###Undefined
-To be added.
+Undefined
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
 ###Vibrator
-To be added.
+Vibrator
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
 

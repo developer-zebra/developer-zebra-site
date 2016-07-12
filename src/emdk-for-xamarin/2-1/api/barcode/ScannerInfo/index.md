@@ -36,7 +36,7 @@ Returns the scanner device type
 ##Properties
 
 ###DeviceIdentifier
-To be added.
+Returns the Device Identifier. Note: DeviceIdentifier.DEFAULT will not be returned for any scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###FriendlyName

@@ -4,14 +4,18 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+The methods of notification object will throw a NotificationException when an error occurred.
+
+The error could be due to:
+1. Client using the API incorrectly
+2. Because an unexpected error occurred
 
 **Type** - Java.Lang.Exception
 
 ##Properties
 
 ###Result
-To be added.
+Returns the NotificationResults enum value.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 

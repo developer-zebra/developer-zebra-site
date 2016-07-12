@@ -34,35 +34,35 @@ Defines the specific scanner devices of each type.
 ##Properties
 
 ###BluetoothImager1
-Bluetooth Scanner
+First available Bluetooth imager scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###BluetoothImagerRs6000
-To be added.
+First available Bluetooth imager RS6000 scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###Default
-Use the device's default scanner (typically the laser or imager).
+Default scanner available on the device
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###InternalCamera1
-Rear facing camera.
+First available internal camera scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###InternalImager1
-Imager or 2D barcode scanner.
+First available internal imager scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###InternalLaser1
-Laser barcode scanner.
+First available internal laser scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###PluggableLaser1
-To be added.
+First available pluggable laser scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###Undefined
-To be added.
+Scanner is undefined
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 

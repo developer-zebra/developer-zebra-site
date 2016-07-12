@@ -4,46 +4,46 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+DeviceInfo provides information of the notification device.
 
 **Type** - Java.Lang.Object
 
 ##Properties
 
 ###ConnectionType
-To be added.
+Returns the notification device connection type to mobile computer.
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
 ###DeviceType
-To be added.
+Returns the notification device type.
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
 ###FriendlyName
-To be added.
+Returns the friendly name of the notification device.
 
 **Type** - System.String
 ###IsBeepSupported
-To be added.
+Returns true if the notification device supports Beep feature else false.
 
 **Type** - System.Boolean
 ###IsConnected
-To be added.
+Returns true if the notification device is connected to the mobile computer else false.
 
 **Type** - System.Boolean
 ###IsDefaultDevice
-To be added.
+Returns true if it is a default notification device else false.
 
 **Type** - System.Boolean
 ###IsLEDSupported
-To be added.
+Returns true if the notification device supports LED feature else false.
 
 **Type** - System.Boolean
 ###IsVibrateSupported
-To be added.
+Returns true if the notification device supports Vibrate feature else false.
 
 **Type** - System.Boolean
 ###ModelNumber
-To be added.
+Returns the notification device model number. This information will be available only after the device is enabled.
 
 **Type** - System.String
 

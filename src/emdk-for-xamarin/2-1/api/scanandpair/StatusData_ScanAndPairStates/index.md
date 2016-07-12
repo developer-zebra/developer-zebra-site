@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Defines the different states of the scan and pir/unpair.
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 
 ###Values
 **public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates[]
@@ -31,31 +31,31 @@ To be added.
 ##Properties
 
 ###Discovering
-To be added.
+Discovering the Bluetooth device to be paired.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 ###Error
-To be added.
+Error occurred during the scan and pair or unpair. Call StatusData .getResult() for error information.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 ###Paired
-To be added.
+The Bluetooth device is paired.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 ###Scanning
-To be added.
+canner beam is on and it is acquiring data.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 ###Undefined
-To be added.
+Undefined. This is the initial state.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 ###Unpaired
-To be added.
+The Bluetooth device is unpaired.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 ###Waiting
-To be added.
+Scanner is waiting for hard trigger press
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
 

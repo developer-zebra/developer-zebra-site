@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Provides the list of supported trigger types.
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType
 
 ###Values
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType[]
@@ -31,11 +31,11 @@ To be added.
 ##Properties
 
 ###Hard
-To be added.
+Hardware trigger needs to be manually pressed to turn ON the scanner
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType
 ###Soft
-To be added.
+Scanner is turned ON automatically and no need to press any triggers
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType
 

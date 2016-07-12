@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Provides list of result codes for ScanAndPair class.
 
 **Type** - Java.Lang.Enum
 
@@ -12,29 +12,29 @@ To be added.
 ###GetErrorDescription
 **public static string GetErrorDescription (Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults **p0** - To be added.
+* Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults **p0** - 
 
 **Returns** - System.String
 
 ###ValueOf
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 
 ###Values
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults[]
@@ -42,91 +42,91 @@ To be added.
 ##Properties
 
 ###BluetoothDeviceDiscoveryFailed
-To be added.
+Unable to discover Bluetooth device
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###BluetoothNotEnabled
-To be added.
+Failure in Bluetooth initialization
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###BluetoothServiceDiscoveryFailed
-To be added.
+Unable to perform Bluetooth service discovery
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###DeviceAlreadyPaired
-To be added.
+Trying to pair a Bluetooth device which is already paired.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###DeviceNotPaired
-To be added.
+Trying to unpair a Bluetooth device which is not yet paired.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###DevicePairingFailed
-To be added.
+Failure in Bluetooth pairing
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###DeviceUnpairingFailed
-To be added.
+Failure in Bluetooth unpairing
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###Failure
-To be added.
+Operation is failed.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###Inprogress
-To be added.
+Operation is failed.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###InvalidBluetoothDeviceInfo
-To be added.
+Invalid Bluetooth address or name provided
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###InvalidConfig
-To be added.
+Invalid configuration
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###InvalidObject
-To be added.
+The object is not valid.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###InvalidPairingPin
-To be added.
+Invalid Pin entered for Bluetooth pairing
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###InvalidScannedData
-To be added.
+Invalid scanned data.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###PairingTimedout
-To be added.
+Bluetooth pairing timed out
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###PreviousCommandPending
-To be added.
+Previously requested command is in progress, wait for it to complete.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###ScannerInitFailure
-To be added.
+Error in opening scanner
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###ScannerInUse
-To be added.
+Scanner is busy in performing some other operation
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###ScannerNotSupported
-To be added.
+Scanner not supported or not available
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###ScannerReadFailed
-To be added.
+Error in scanning barcode
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###ScannerUnintFailed
-To be added.
+Error in closing scanner
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 ###Success
-To be added.
+Success
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 

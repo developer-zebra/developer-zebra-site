@@ -42,7 +42,7 @@ The scanner device connected internally within the mobile device.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType
 ###PluggableSsi
-To be added.
+The scanner device connected via pluggable SSI to the mobile device.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType
 ###SerialSsi

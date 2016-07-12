@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Describes the Audio Feedback Mode is given by the host device and remote scanner.
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeAudioFeedbackMode
 
 ###Values
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeAudioFeedbackMode[]
@@ -31,19 +31,19 @@ To be added.
 ##Properties
 
 ###Both
-To be added.
+Audio Feedback is given by both Device and the remote scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode
 ###Disable
-To be added.
+Audio Feedback is disabled on both Device and the remote scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode
 ###Local
-To be added.
+Audio Feedback is given by the Device.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode
 ###Remote
-To be added.
+Audio Feedback is given by the remote scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode
 

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Defines all the error codes that Notification API returns. 
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.Notification.NotificationResults ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationResults
 
 ###Values
 **public static Symbol.XamarinEMDK.Notification.NotificationResults[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationResults[]
@@ -31,47 +31,47 @@ To be added.
 ##Properties
 
 ###Description
-To be added.
+
 
 **Type** - System.String
 ###DeviceAlreadyEnabled
-To be added.
+Notification device is already enabled.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###DeviceInvalid
-To be added.
+Notification device is invalid.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###DeviceNotConnected
-To be added.
+Notification device is not connected.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###DeviceNotEnabled
-To be added.
+Notification device is not enabled.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Failure
-To be added.
+Failure.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###FeatureNotSupported
-To be added.
+Feature not supported.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###InvalidValue
-To be added.
+The value specified is invalid.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Success
-To be added.
+Success.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Undefined
-To be added.
+Error code not defined.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Value
-To be added.
+
 
 **Type** - System.Int32
 

@@ -83,7 +83,7 @@ Cannot enable scanner and is already in use.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 ###ScannerNotConnected
-To be added.
+The scanner device is not connected.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 ###ScannerNotEnabled

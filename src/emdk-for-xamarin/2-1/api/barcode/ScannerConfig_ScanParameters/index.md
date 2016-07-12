@@ -19,7 +19,7 @@ A Code ID character identifies the code type of a scanned bar code. This is usef
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType
 ###DecodeAudioFeedbackMode
-To be added.
+Controls the audio feedback mode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode
 ###DecodeAudioFeedbackUri
@@ -35,7 +35,7 @@ Decoding LED Notification.
 
 **Type** - System.Boolean
 ###DecodeLEDFeedbackMode
-To be added.
+Controls the LED feedback mode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode
 ###DecodeLEDTime

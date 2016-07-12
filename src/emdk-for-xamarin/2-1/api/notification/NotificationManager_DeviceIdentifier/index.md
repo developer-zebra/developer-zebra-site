@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.1' 
 ---
-To be added.
+Defines specific notification devices of each type.
 
 **Type** - Java.Lang.Enum
 
@@ -12,18 +12,18 @@ To be added.
 ###ValueOf
 **public static Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:** 
 
-* System.String **p0** - To be added.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier
 
 ###Values
 **public static Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier[] Values ();**
 
-To be added.
+
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier[]
@@ -31,15 +31,15 @@ To be added.
 ##Properties
 
 ###BluetoothImagerRs6000
-To be added.
+Bluetooth Imager RS6000
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier
 ###Default
-To be added.
+Default
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier
 ###ExternalVibrator1
-To be added.
+External Vibrator
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier
 

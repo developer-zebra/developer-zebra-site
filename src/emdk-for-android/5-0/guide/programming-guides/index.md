@@ -43,6 +43,12 @@ content-items:
     title: PD40 Firmware Update
     text: "This guide contains information about querying and updating the PD40's firmware from your application."
     url: /emdk-for-android/5-0/guide/pd40-firmware-update
+  - type: section
+    level: 4
+    title: Barcode and Notification API Programmers Guide
+    text: "This guide provides an overview on design points to be considered during the development of the application to read barcode and notify users using Notification API in the business application workflow."
+    url: /emdk-for-android/5-0/guide/notification-api
+
 product: EMDK For Android
 productversion: '5.0'
 ---

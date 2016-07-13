@@ -27,7 +27,7 @@ automenu:
           url: /mdmtk/2-0/guide/xml/response
         - title: xmlParser
           url: /mdmtk/2-0/guide/xml/xmlparser
-product: MDM ToolKit
+product: MDM Toolkit
 productversion: '2.0'
 ---
 

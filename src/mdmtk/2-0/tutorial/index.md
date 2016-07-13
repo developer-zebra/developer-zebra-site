@@ -1,7 +1,7 @@
 ---
 title: Quick Start
 layout: guide.html
-product: MDM ToolKit
+product: MDM Toolkit
 productversion: '2.0'
 ---
 

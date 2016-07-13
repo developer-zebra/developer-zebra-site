@@ -1,6 +1,9 @@
 ---
 title: MX Framework
 layout: csp-mx-support.html
+product: MDM Toolkit
+productversion: '2.0'
+
 csps:
   - type: section
     title: Access Manager

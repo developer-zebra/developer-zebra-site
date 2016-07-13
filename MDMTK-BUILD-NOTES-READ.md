@@ -18,4 +18,15 @@
 
 ## Packaging electron
 
+MAC:
 electron-packager /Users/bhecox/Development/emdk/developer-zebra-site/electron-express "MDM Toolkit" --platform=win32 --arch=all --version=1.2.5 --out=Staging --version-string.CompanyName="Zebra Technologies Inc."  --version-string.ProductName="MDM Toolkit" --version-string.ProductVersion=2.0
+
+
+WIN(virtual machine):
+
+electron-packager Z:\bhecox\Development\emdk\developer-zebra-site\electron-express "MDM Toolkit" --platform=win32 --arch=all --version=1.2.5 --out=Staging --version-string.CompanyName="Zebra Technologies Inc."  --version-string.ProductName="MDM Toolkit" --version-string.ProductVersion=2.0
+
+
+
+## zip package on MAC
+zip -r foo.zip foo -x "*.DS_Store"

@@ -2,7 +2,7 @@
 title: Search
 layout: search.html
 index: ../index.json
-product: MDM ToolKit
+product: MDM Toolkit
 productversion: '2.0'
 ---
 

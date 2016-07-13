@@ -1,10 +1,10 @@
 ---
-title: MDM Toolkit 2.0
+title: MDM Toolkit
 insert:
   file: mdmtk/2-0/guide/about/index.md
 layout: guide.html
 menu:
-  title: MDM Toolkit 2.0
+  title: MDM Toolkit 
   img: /mdmtk/2-0/images/logo.png
   versions:
     - versionto: 1-0

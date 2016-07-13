@@ -57,7 +57,7 @@ This guide will cover:
     through [StageNow
     2.3](http://techdocs.zebra.com/stagenow/2-3/gettingstarted/) prior
     use with this toolkit. Features that do not work in StageNow, will
-    also not work using the MDM ToolKit
+    also not work using the MDM Toolkit
 
 <span id="binding-to-the-mxms" class="anchor"><span id="_Toc449961089" class="anchor"></span></span>Binding to the MXMS
 -----------------------------------------------------------------------------------------------------------------------

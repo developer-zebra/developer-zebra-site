@@ -14,6 +14,8 @@ This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It a
 ## Kiosk Mode
 Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode places the app in full-screen mode and prevents the BACK and HOME keys from being used to exit the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
 
+**Kiosk Mode should not be used with Screen Pinning**, a feature in Android L that works in much the same way. A prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning**. 
+
 ##### Kiosk Mode tags:
 <b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
 
@@ -302,11 +304,11 @@ This section covers important interactions between EHS and Android features that
 
 ### Recent Apps List
 
-* Accessing an app from the Recent Apps list could represent a security risk. 
+* Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the Back button, potentially exposing a non-EHS home screen.
 * EHS does not add apps or activities to the Android Recent Apps list, but apps launched from within EHS might. 
-* To clear the Recent Apps list, reboot the device or bring up the list and manually swipe away each app. 
-* Bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears.
-* Recent apps not cleared from the list can be activated with the Back button, potentially exposing a non-EHS home screen.
+* The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
+* Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system to clear the list. 
+* To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
 
 ### EHS and MX Multi-user
 

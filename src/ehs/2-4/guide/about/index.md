@@ -60,7 +60,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p>
+    Jelly Bean*</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
@@ -72,7 +72,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">Jelly Bean</font></p>
+<p class="MsoNormal" align="center"><font color="#333399" size="4">Jelly Bean*</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
@@ -97,7 +97,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p></td>
+    Jelly Bean*</font></p></td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
 </td>
@@ -122,7 +122,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p>
+    Jelly Bean*</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
@@ -135,7 +135,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean</font></p>
+    Jelly Bean*</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
@@ -233,12 +233,13 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </tr>
 </tbody>
 </table>
+&#42; _EHS 2.4 will be the last version to support Zebra devices running Android Jelly Bean_.
 
 ## What's New
 
 ### New in EHS 2.4:
 
->**End of Support for EHS on Jelly Bean:** EHS 2.4 will be the last version of Enterprise Home Screen that will be supported by Zebra on devices running Android Jelly Bean. 
+>**End of support for EHS on Jelly Bean:** EHS 2.4 will be the last version of Enterprise Home Screen that will be supported by Zebra on devices running Android Jelly Bean. 
 >**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled in with the download package.
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
@@ -271,22 +272,13 @@ _The User Mode screen with XXL icons_. -->
 
 ------
 
-New in  EHS 2.3:
-* [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
-* TC8000 KitKat version 4.4 support (added January, 2016)
+#### Android Lollipop Notes
 
-#### Lollipop Support Notes
+* **Status Bar Pull-down behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar (referred there as the Notification Pulldown) to be disabled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. 
 
-* **This**
-* **That**
-* **This**
+* **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
-Starting from Android L, EHS feature Status bar pull down does not work as expected. On those devices, Pulling down the Status bar may still be able to be disabled using UI Manager feature in EMDK or StageNow. For more information, refer to the EMDK or StageNow documentation. Contact your MDM to determine if this feature is supported."
-
-In Android L devices, recent apps are persistent even after a reboot. So use either StageNow or MDM for clearing recent app list before deploying EHS. This is mandatory.
-(can add this under ""Security notes- recent app list"" section)
-
-Screen pinning is a new feature in Lollipop that allows users to lock the screen to a certain app, so the person using it only has access to one app. Use either Screen pinning or EHS’s kiosk app, but not both at once.  If EHS’s kiosk mode is to be used, EHS will recommend disabling screen pinning in advance. 
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, the single-app feature in Android L that works in much the same way. A prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning. 
 
 In Android L devices, Device orientation can be changed through quick settings panel. By default EHS does not set an Orientation; uses the system default. 
 But if an Orientation is set in EHS, it cannot be further configured through Quick Settings panel. For example when EHS Admin has set the orientation to landscape through EHS and handed over the device to a normal User, then even though the User wants to change it to AutoRotate via quick settings panel (this shortcut is a feature in Lollipop) it’s not doable. "
@@ -299,3 +291,9 @@ EHS Disable Status bar Pull-down feature does not support in devices with Androi
 2. ""Bypass Keyguard"" feature does not bypass the key guard or the lock screen after a device reboot in Android Lollipop devices. (Ed, we don't have a solution via StageNow/EMDK currently, so we have to document this as a knwon issue in EHS on lollipop devices."
 
 Not supported on all devices. In unsupported devices, status bar settings may still be able to be disabled using UI Manager feature in EMDK or StageNow. For more information, refer to the EMDK or StageNow documentation. Contact your MDM to determine if this feature is supported."
+
+------
+
+#### New in EHS 2.3
+* [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
+* TC8000 KitKat version 4.4 support (added January, 2016)

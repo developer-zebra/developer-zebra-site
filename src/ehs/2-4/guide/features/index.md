@@ -152,7 +152,7 @@ Log into Admin Mode and delete the signature file from the `/enterprise/usr` dir
 
 ## EHS Log
 
-EHS records major activities in the `enterprisehomescreen.log` file. Some of the activities being tracked include errors, exceeding allowed admin login attempts and switching the operating mode.
+EHS records major activities in the `/enterprise/usr/enterprisehomescreen.log` file. Some of the activities being tracked include failed attempts to enter Admin Mode, switches of the operating mode and EHS errors.
 
 ------
 

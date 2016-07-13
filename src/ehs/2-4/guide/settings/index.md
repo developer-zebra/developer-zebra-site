@@ -499,13 +499,16 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
+**Android L allows screen orientation to be changed through the Quick Settings panel only when EHS is set to accept the System setting (the EHS default). If orientation is set by an EHS administrator to landscape or portrait mode, the device user will no longer be able to set the orientation manually**.  
+
+
 <img alt="" style="height:350px" src="orientation.png"/>
 
 <b>Possible values</b>:
 
 * landscape
 * portrait
-* <b>&lt;blank&gt; (default)</b>
+* <b>&lt;blank&gt; (accepts System setting; EHS default)</b>
 
 #### Example
 
@@ -618,7 +621,9 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 ------
 
 ### Disable Status bar Pull-down
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status bar Pull-down will be enabled. To disable, enter a value of 1.  
+Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status bar Pull-down will be enabled. To disable, enter a value of 1. 
+
+**For Android L devices**: A feature in [UI Manager](/mx/uimgr) for Android L allows Status Bar Pull-down (referred to there as the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. This applies only to devices with MX 6.0 and higher, which is for Lollipop and later. 
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
@@ -698,7 +703,9 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
 ### Bypass Keyguard
 Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
 
-<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+>**The Bypass Keyguard feature fails to lock screen after an Android L device is rebooted**.  
+
+<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please see to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 The Android Keyguard (also known as the Lock Screen).  

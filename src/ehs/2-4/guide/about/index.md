@@ -233,14 +233,15 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </tr>
 </tbody>
 </table>
-&#42; _EHS 2.4 will be the last version to support Zebra devices running Android Jelly Bean_.
+&#42; _EHS 2.4 will be the final version that supports Zebra devices running Android Jelly Bean_.
 
 ## What's New
 
 ### New in EHS 2.4:
 
 >**End of support for EHS on Jelly Bean:** EHS 2.4 will be the last version of Enterprise Home Screen that will be supported by Zebra on devices running Android Jelly Bean. 
->**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled in with the download package.
+<br>
+>**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled with the download package. 
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 
@@ -262,28 +263,27 @@ _The icon size UI is accessible from Admin or User Modes (default shown)_.
 _The User Mode screen with XXL icons_. -->
 * **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of the device battery and Wi-Fi signal on a single screen.
 
-* **Support for the Zebra WT6000 -** wearable computer running Android 5.0 Lollipop (see [Lollipop Support Notes](#lollipopsupportnotes). 
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable computer running Android 5.0 Lollipop. (See important [Lollipop Support Notes](#androidlollipopnotes), below.) 
 
 * **[App Icon Label Text Color](../settings#iconlabeltextcolor) -** is now white on a transparent background to improve readability. 
 
 > To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen).
 
->**End of Support for Android Jelly Bean devices -** Support for Zebra devices running Android Jelly Bean will end with EHS 2.4. Zebra will continue to support devices running EHS 2.4 and previous versions through its Support Central customer portal. 
-
 ------
 
 #### Android Lollipop Notes
 
-* **Status Bar Pull-down behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar (referred there as the Notification Pulldown) to be disabled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. 
+* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. This applies only to devices with MX 6.0 and higher, which is for Lollipop and later. 
 
 * **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, the single-app feature in Android L that works in much the same way. A prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning. 
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way. A warning prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning. 
 
-In Android L devices, Device orientation can be changed through quick settings panel. By default EHS does not set an Orientation; uses the system default. 
-But if an Orientation is set in EHS, it cannot be further configured through Quick Settings panel. For example when EHS Admin has set the orientation to landscape through EHS and handed over the device to a normal User, then even though the User wants to change it to AutoRotate via quick settings panel (this shortcut is a feature in Lollipop) it’s not doable. "
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running Kitkat and Jelly Bean. 
 
-In Android Lollipop devices, "Bypass Keyguard" feature does not bypass the key guard or the lock screen after a device reboot . (Ed, we don't have a solution currently even via StageNow/EMDK  for this issue. so we don't talk about any solution here other than giving the isssue. the issue is there only in Lollipop. Issue is NOT there in Jellybean or kitkat)
+* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** as long as EHS uses the system settings (the default setting). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to set the orientation manually.  
+
+> WAITING FOR INFORMATION:
 
 EHS Disable Status bar Pull-down feature does not support in devices with Android Lollipop and above. Deprecated EHS feature starting from Lollipop. Instead use UI Manager feature in stageNow/EMDK to disable  status bar pull down. Better to mention in launhpad as well. (FYI: the feature works fie in all JB and KK devcies)
 

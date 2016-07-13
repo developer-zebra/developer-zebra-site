@@ -128,6 +128,12 @@ _**Note**: Decoders that do not have configurable parameters do not appear in th
 ## Decoder Parameters
 Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
 
+### Reduced Quiet Zone 
+The following decoders, when used with the Reduced Quiet Zone Level (reader) parameters, will behave according to the following table: 
+<img style="height:350px" src="Marginless_C128_param_table.png"/>
+_These levels apply only to the marginless 1D reader parameters shown above_. 
+<br>
+
 ### UPCE0
 **Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
 
@@ -638,7 +644,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 ------
 
-**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode margin-less barcodes: 
+**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode marginless barcodes: 
 
 * **Level 0 -** The decoder will perform margin decoding as usual.
 
@@ -648,7 +654,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Level 3 -** The decoder can decode anything.
 
-**Note: Since higher margin-less levels will increase the mis-decode risk and decoding time, we strongly recommend the user only enable the symbologies which needs to choose higher margin-less level, and leave all other symbologies at default level 1**. 
+**Note: Higher marginless levels will increase decoding times and risk of decoding errors. Zebra therefore recommends enabling only the symbologies that need a higher marginless level, and leaving all other symbologies at the default level of 1**. 
 
 ------
 

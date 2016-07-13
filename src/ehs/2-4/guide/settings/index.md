@@ -620,10 +620,10 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
     
 ------
 
-### Disable Status bar Pull-down
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status bar Pull-down will be enabled. To disable, enter a value of 1. 
+### Disable Status Bar Pull-down
+Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
 
-**For Android L devices**: A feature in [UI Manager](/mx/uimgr) for Android L allows Status Bar Pull-down (referred to there as the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. This applies only to devices with MX 6.0 and higher, which is for Lollipop and later. 
+**On Android L devices**: A feature in [UI Manager](/mx/uimgr) for Android L allows the Status Bar Pull-down (a.k.a. Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 

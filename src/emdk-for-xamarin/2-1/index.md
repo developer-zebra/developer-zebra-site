@@ -24,6 +24,8 @@ menu:
       url: /emdk-for-xamarin/2-1/tutorial/
     - title: Samples
       url: /emdk-for-xamarin/2-1/samples
+    - title: Guides
+      url: /emdk-for-xamarin/2-1/guide/programming-guides
     - title: Profile Manager
       url: /emdk-for-xamarin/2-1/guide/profile-manager-guides
     - title: APIs

@@ -129,9 +129,9 @@ _**Note**: Decoders that do not have configurable parameters do not appear in th
 Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
 
 ### Reduced Quiet Zone 
-The following decoders, when used with the Reduced Quiet Zone Level (reader) parameters, will behave according to the following table: 
+The quiet zone is the blank space on either side of a bar code indicates where the Symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. **When margin-less decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table**: 
 <img style="height:350px" src="Marginless_C128_param_table.png"/>
-_These levels apply only to the marginless 1D reader parameters shown above_. 
+_The levels at right (above) apply to the 1D Quiet Zone Levels for the indicated decoder parameters only_. 
 <br>
 
 ### UPCE0
@@ -654,7 +654,9 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Level 3 -** The decoder can decode anything.
 
-**Note: Higher marginless levels will increase decoding times and risk of decoding errors. Zebra therefore recommends enabling only the symbologies that need a higher marginless level, and leaving all other symbologies at the default level of 1**. 
+**Behavior of these levels will vary based on the margin-less decoder selected. See the [Reduced Quiet Zone](#reducedquietzone) table for behaviors**. 
+
+>Note: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. 
 
 ------
 

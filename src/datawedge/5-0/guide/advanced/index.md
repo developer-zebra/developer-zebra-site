@@ -255,7 +255,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the string specified in the data field.</p></div></div></td>
 </tr>
 <tr>
-<td rowspan="10" align="left" valign="top"><p class="table">Data Modification</p></td>
+<td rowspan="12" align="left" valign="top"><p class="table">Data Modification</p></td>
 <td align="left" valign="top"><p class="table">Crunch spaces</p></td>
 <td align="left" valign="top"><p class="table">Reduce spaces between words to one and remove all spaces at the beginning and end of the data.</p></td>
 </tr>
@@ -294,6 +294,14 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Stop all replace string</p></td>
 <td align="left" valign="top"><p class="table">Stop all <strong>Replace string</strong> actions.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Remove characters</p></td>
+<td align="left" valign="top"><p class="table">Remove the number of characters specified in given positions when send actions are executed.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Stop remove characters</p></td>
+<td align="left" valign="top"><p class="table">Stops removing characters from subsequent send actions.</p></td>
 </tr>
 <tr>
 <td rowspan="6" align="left" valign="top"><p class="table">Data Sending</p></td>

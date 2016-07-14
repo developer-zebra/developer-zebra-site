@@ -423,7 +423,7 @@ Controls whether an icon will be displayed in the Title Bar. **A value of 0 (fal
 ------
 
 #### Title Bar Icon File
-Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled (up or down) to fill the entire 204 x 204-pixel space using the aspect ratio of the image. Default EHS icon (shown below) will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
+Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats of medium resolution** (varies by device; some hi-res images might not be displayed). Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled (up or down) using the aspect ratio of the image to fill the available space (which varies by device). Default EHS icon (shown below) will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
 
 <img alt="" style="height:350px" src="title_bar_3.png"/>
 
@@ -437,7 +437,6 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
         <title_bar_icon_disabled>0</title_bar_icon_disabled>
         <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
     </title_bar_icon >
-
 
 ------
 
@@ -499,7 +498,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
-**Android L allows screen orientation to be changed through the Quick Settings panel only when EHS is set to accept the System setting (the EHS default). If orientation is set by an EHS administrator to landscape or portrait mode, the device user will no longer be able to set the orientation manually**.  
+**On Android L devices: screen orientation can be changed through the Quick Settings panel, but only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 
 <img alt="" style="height:350px" src="orientation.png"/>
@@ -605,6 +604,8 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ### Disable Status Bar Settings
 Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
 
+**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (which UI Manager calls the Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system. **This will override any EHS setting for controlling the Status Bar Settings icon**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain.
+
 <img alt="" style="height:350px" src="disable_settings_icon.png"/>
 
 > Note: Changes to this setting will cause an automatic device reboot, a requirement for changes to take effect. 
@@ -623,7 +624,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 ### Disable Status Bar Pull-down
 Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
 
-**On Android L devices**: A feature in [UI Manager](/mx/uimgr) for Android L allows the Status Bar Pull-down (a.k.a. Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (which UI Manager calls the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 

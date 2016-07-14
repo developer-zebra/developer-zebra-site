@@ -241,7 +241,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 >**End of support for EHS on Jelly Bean:** EHS 2.4 will be the last version of Enterprise Home Screen that will be supported by Zebra on devices running Android Jelly Bean. 
 <br>
->**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled with the download package. 
+>**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled with the EHS download package. 
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 
@@ -263,7 +263,7 @@ _The icon size UI is accessible from Admin or User Modes (default shown)_.
 _The User Mode screen with XXL icons_. -->
 * **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of the device battery and Wi-Fi signal on a single screen.
 
-* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable computer running Android 5.0 Lollipop. (See important [Lollipop Support Notes](#androidlollipopnotes), below.) 
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (See important [Android Lollipop Notes](#androidlollipopnotes), below.) 
 
 * **[App Icon Label Text Color](../settings#iconlabeltextcolor) -** is now white on a transparent background to improve readability. 
 
@@ -275,22 +275,15 @@ _The User Mode screen with XXL icons_. -->
 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
+* **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
+
 * **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
 * **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way. A warning prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning. 
 
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running Kitkat and Jelly Bean. 
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 
-* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** as long as EHS uses the system settings (the default setting). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to set the orientation manually.  
-
-> WAITING FOR INFORMATION:
-
-EHS Disable Status bar Pull-down feature does not support in devices with Android Lollipop and above. Deprecated EHS feature starting from Lollipop. Instead use UI Manager feature in stageNow/EMDK to disable  status bar pull down. Better to mention in launhpad as well. (FYI: the feature works fie in all JB and KK devcies)
-
-1. ""Disable Status bar Pull-down"" feature does not support in devices with Android Lollipop and above. Instead use eiter stageNow/EMDK to disable  status bar pull down.
-2. ""Bypass Keyguard"" feature does not bypass the key guard or the lock screen after a device reboot in Android Lollipop devices. (Ed, we don't have a solution via StageNow/EMDK currently, so we have to document this as a knwon issue in EHS on lollipop devices."
-
-Not supported on all devices. In unsupported devices, status bar settings may still be able to be disabled using UI Manager feature in EMDK or StageNow. For more information, refer to the EMDK or StageNow documentation. Contact your MDM to determine if this feature is supported."
+* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel**, but only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 ------
 

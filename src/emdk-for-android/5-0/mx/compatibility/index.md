@@ -11,16 +11,28 @@ csps:
     url: /mx/analyticsmgr
     csp: analyticsmgr
   - type: section
+    title: AppGallery Manager
+    url: /mx/appgallerymgr
+    csp: appgallerymgr
+  - type: section
     title: App Manager
     url: /mx/appmgr
     csp: appmgr
+  - type: section
+    title: Audio Vol Manager
+    url: /mx/audiovoluimgr
+    csp: audiovoluimgr
+  - type: section
+    title: Batch Manager
+    url: /mx/batchmgr
+    csp: batchmgr
   - type: section
     title: Battery Manager
     url: /mx/batterymgr
     csp: batterymgr
   - type: section
     title: Bluetooth Manager
-    url: /mx/bluetoothmgr
+    url: /mx/bluetoothrmgr
     csp: bluetoothmgr
   - type: section
     title: Browser Manager
@@ -67,6 +79,10 @@ csps:
     url: /mx/encryptmgr
     csp: encryptmgr
   - type: section
+    title: Enterprise Keyboard Manager
+    url: /mx/enterprisekeyboardmgr
+    csp: enterprisekeyboardmgr
+  - type: section
     title: File Manager
     url: /mx/filemgr
     csp: filemgr
@@ -79,13 +95,25 @@ csps:
     url: /mx/hostsmgr
     csp: hostsmgr
   - type: section
+    title: Intent Manager
+    url: /mx/intent
+    csp: intent
+  - type: section
     title: KeyMapping Manager
     url: /mx/keymappingmgr
     csp: keymapmgr
   - type: section
+    title: License Manager
+    url: /mx/licensemgr
+    csp: licensemgr
+  - type: section
     title: Persist Manager
     url: /mx/persistmgr
     csp: persistmgr
+  - type: section
+    title: Personal Dictionary Manager
+    url: /mx/personaldictionarymgr
+    csp: personaldictionarymgr
   - type: section
     title: PowerKey Manager
     url: /mx/powerkeymgr
@@ -95,6 +123,14 @@ csps:
     url: /mx/powermgr
     csp: powermgr
   - type: section
+    title: Remote Scanner Manager
+    url: /mx/remotescannermgr
+    csp: remotescannermgr
+  - type: section
+    title: Scan Mode Manager
+    url: /mx/scanmodemgr
+    csp: scanmodemgr
+  - type: section
     title: SD Card Manager
     url: /mx/sdcardmgr
     csp: sdcardmgr
@@ -102,6 +138,14 @@ csps:
     title: Settings Manager
     url: /mx/settingsmgr
     csp: settingsmgr
+  - type: section
+    title: Stats
+    url: /mx/stats
+    csp: stats
+  - type: section
+    title: Status Manager
+    url: /mx/statusmgr
+    csp: statusmgr
   - type: section
     title: Threat Manager
     url: /mx/threatmgr

@@ -283,7 +283,7 @@ _The User Mode screen with XXL icons_. -->
 
 * **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 
-* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** as long as EHS uses the system settings (the default setting). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to set the orientation manually.
+* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel**, but only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 ------
 

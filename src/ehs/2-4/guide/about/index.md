@@ -245,7 +245,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 
-* **[App Launch Flags](../settings*applaunchflags) -** permit one or more Android Intent flags to be specified when an application is launched, directing launch behavior as required. 
+* **[App Launch Flags](../settings#applaunchflags) -** permit one or more Android Intent flags to be specified when an application is launched, directing launch behavior as required. 
 
 * **[Service Auto-Launch](../settings#serviceautolaunch) -** permits one or more Android services to be started whenever EHS launches. 
 
@@ -283,7 +283,7 @@ _The User Mode screen with XXL icons_. -->
 
 * **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 
-* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel**, but only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 ------
 

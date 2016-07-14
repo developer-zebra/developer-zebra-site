@@ -498,7 +498,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
-**On Android L devices: screen orientation can be changed through the Quick Settings panel, but only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+**On Android L devices**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 
 <img alt="" style="height:350px" src="orientation.png"/>
@@ -1068,6 +1068,8 @@ App Launch Flags can be assigned to individual apps, Kiosk apps or those designa
 * Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;
 * Intent.FLAG_ACTIVITY_SINGLE_TOP;
 * Intent.FLAG_ACTIVITY_TASK_ON_HOME;
+
+Refer to the [Android Developer docs](https://developer.android.com/guide/components/intents-filters.html) for more information. 
 
 ####Examples
 

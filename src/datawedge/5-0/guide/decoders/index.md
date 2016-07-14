@@ -129,9 +129,9 @@ _**Note**: Decoders that do not have configurable parameters do not appear in th
 Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
 
 ### Reduced Quiet Zone 
-The quiet zone is the blank space on either side of a bar code indicates where the Symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. **When margin-less decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table**: 
+The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When margin-less decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table: 
 <img style="height:350px" src="Marginless_C128_param_table.png"/>
-_The levels at right (above) apply to the 1D Quiet Zone Levels for the indicated decoder parameters only_. 
+_See 1D Quiet Zone Level descriptions and important warnings in the [Reader Params](#readerparams) section_. 
 <br>
 
 ### UPCE0
@@ -644,7 +644,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 ------
 
-**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode marginless barcodes: 
+**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode margin-less barcodes: 
 
 * **Level 0 -** The decoder will perform margin decoding as usual.
 
@@ -656,7 +656,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 **Behavior of these levels will vary based on the margin-less decoder selected. See the [Reduced Quiet Zone](#reducedquietzone) table for behaviors**. 
 
->Note: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. 
+>**Note**: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. 
 
 ------
 

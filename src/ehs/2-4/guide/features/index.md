@@ -63,7 +63,7 @@ In Secure Mode, EHS will accept only a signed EHS configuration file, thereby pr
 A device that is not in Secure Mode is considered to be running in Normal Mode. When in Normal Mode (the default), EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
 
 ### Enable Secure Mode
-These instructions require ADB for communication with the device and OpenSSL for the creation of device certificate and private key files. If necessary, please install ADB and [OpenSSL for Windows]() before proceeding. 
+These instructions require Android Debug Bridge (ADB) for communication with the device and OpenSSL for the creation of device certificate and private key files. If necessary, please install ADB and [OpenSSL for Windows]() before proceeding. 
 
 &#49;. Create a device root certificate (`caroot.pem`) and private key (`privatekey.pem`) using the following OpenSSL command: 
 
@@ -154,7 +154,9 @@ Log into Admin Mode and delete the signature file from the `/enterprise/usr` dir
 
 ## EHS Log
 
-EHS records major activities in the `/enterprise/usr/enterprisehomescreen.log` file. Some of the activities being tracked include failed attempts to enter Admin Mode, switches of the operating mode and EHS errors.
+EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors.
+
+The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
 
 ------
 

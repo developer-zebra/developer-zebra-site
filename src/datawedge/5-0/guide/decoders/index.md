@@ -131,7 +131,7 @@ Editable parameters of individual Decoders are explained below. **Note: Decoders
 ### Reduced Quiet Zone 
 The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When margin-less decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table: 
 <img style="height:350px" src="Marginless_C128_param_table.png"/>
-_See 1D Quiet Zone Level descriptions and important warnings in the [Reader Params](#readerparams) section_. 
+_**Descriptions of the 1D Quiet Zone Levels** shown above are in the [Reader Params](#readerparams) section along with important warnings_. 
 <br>
 
 ### UPCE0

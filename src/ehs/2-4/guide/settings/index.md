@@ -259,16 +259,16 @@ When specifying links, the package and activity parameters can be used to launch
 
 **Wildcard rules**:
 
-* Zebra apps always display on the User-Mode screen before wildcard-selected apps.
-* Each group of apps selected by wildcard will be displayed in alphabetical order relative to other apps in that group.
+* Individual apps and wildcard sets will appear in the User Mode Launcher in the same order as they are listed in the &lt;applications&gt; node. 
+* Apps within each wildcard set will be listed alphabetically by label relative to other apps in that set. 
 * Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
-* If &lt;bundle&gt; and &lt;icon&gt; attributes are used, the same specified attributes apply to all wildcard-selected apps. 
+* If **bundle** and **icon** attributes are used, the same specified attributes apply to all wildcard-selected apps. 
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 
 * Apps selected by wildcard cannot be removed using the long-press feature in Admin Mode. 
 * Apps excluded from a wildcard search cannot be added using the long-press feature in Admin Mode.
-* The exclude attribute does not support the wildcard character; apps must be excluded one at a time.  
-<!-- * If an app that is individually specified in the &lt;applications&gt; section also is included in a wildcard search, it cannot be excluded using an "exclude" attribute or tag.-->
-* If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).  
+* The exclude attribute does not support the wildcard character; apps must be excluded one at a time.
+* Apps individually specified in the &lt;applications&gt; node and included in a wildcard search cannot be excluded using an "exclude" attribute or tag.
+* If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).
 * Labels longer than 18 characters will be truncated at the 18th character and appended with an ellipsis (...).
 * The label specified in a wildcard search will apply to all apps identified by the search. 
 * The wildcard character may appear only once per line and **only at the end of the line**. 
@@ -284,7 +284,8 @@ When specifying links, the package and activity parameters can be used to launch
     * com.a&#42;
     * com.&#42;
 
-* Check the `enterprisehomescreen.log` file for error messages might result from invalid wildcard use. 
+* Wildcard searches can include "com.androidX" where X=any character except dot (.).  
+* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
 #### URL Example
@@ -441,7 +442,7 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
 ------
 
 ### Icon Label Background
-Specifies the background color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. Default is #AAFFFFFF, white with an opacity value of AA (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+Specifies the background color of the icon label text of applications displayed in User Mode. Default background is #00FFFFFF, which is transparent with an opacity value of 00 (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_bg.png"/>
 <br>
@@ -460,7 +461,7 @@ Specifies the background color of the icon label text of applications displayed 
 
 #### Examples
 
-    <icon_label_background_color>#AAFFFFFF</icon_label_background_color>
+    <icon_label_background_color>#00FFFFFF</icon_label_background_color>
     <icon_label_background_color>#75A319</icon_label_background_color>
     <icon_label_background_color>#80EF671B</icon_label_background_color>
     <icon_label_background_color>magenta</icon_label_background_color>
@@ -469,7 +470,7 @@ Specifies the background color of the icon label text of applications displayed 
 ------
 
 ### Icon Label Text Color
-Specifies the color of the icon label text of applications displayed in User Mode. This tag must be used for devices with screen resolution less than 480 pixels on any axis, for which the color picker in the Preferences UI is disabled. The EHS default is #FF000000, black with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+Specifies the color of the icon label text of applications displayed in User Mode. The EHS default icon text color is #FFFFFFFF, that is white with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_text.png"/>
 <br>
@@ -488,7 +489,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 
 #### Examples
 
-    <icon_label_text_color>#AAFFFFFF</icon_label_text_color>
+    <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
     <icon_label_text_color>#75A319</icon_label_text_color>
     <icon_label_text_color>#80EF671B</icon_label_text_color>
     <icon_label_text_color>magenta</icon_label_text_color>
@@ -498,13 +499,16 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
+**Android L allows screen orientation to be changed through the Quick Settings panel only when EHS is set to accept the System setting (the EHS default). If orientation is set by an EHS administrator to landscape or portrait mode, the device user will no longer be able to set the orientation manually**.  
+
+
 <img alt="" style="height:350px" src="orientation.png"/>
 
 <b>Possible values</b>:
 
 * landscape
 * portrait
-* <b>&lt;blank&gt; (default)</b>
+* <b>&lt;blank&gt; (accepts System setting; EHS default)</b>
 
 #### Example
 
@@ -616,8 +620,10 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
     
 ------
 
-### Disable Status bar Pull-down
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status bar Pull-down will be enabled. To disable, enter a value of 1.  
+### Disable Status Bar Pull-down
+Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
+
+**On Android L devices**: A feature in [UI Manager](/mx/uimgr) for Android L allows the Status Bar Pull-down (a.k.a. Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
@@ -679,7 +685,7 @@ Controls whether the device will automatically reboot when EHS is launched for t
 ------
 
 ### Airplane Option Disabled
-Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu might not be available on MC18, MC40 and MC92 devices running Android 4.4 KitKat). 
+Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. 
 
 <img alt="" style="height:350px" src="airplane_disable.png"/>
 
@@ -697,7 +703,9 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
 ### Bypass Keyguard
 Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
 
-<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please refer to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+>**The Bypass Keyguard feature fails to lock screen after an Android L device is rebooted**.  
+
+<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please see to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 The Android Keyguard (also known as the Lock Screen).  
@@ -944,12 +952,12 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 ------
 
 ### Admin Max Attempts
-The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog). The counter is cleared after a successful login. 
+The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. EHS keeps a count of the failed consecutive login attempts with an attribute in the password admin node as in the Example Failed Login Counter below. The counter is reset if a successful login occurs before the maximum is reached. Once disabled, can be reset only by pushing a new `enterprisehomescreen.xml` file to the device. If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog).  
 
 <img alt="" style="height:350px" src="max_logins.png"/>
 
 
-#### Example
+#### Example 
 
     <preferences>
         ...
@@ -958,13 +966,14 @@ The number of failed attempts to log into Admin Mode before EHS disables Admin M
     </preferences>
 
 <br>
-EHS tracks the number of consecutive failed login attempts by adding the following attribute to the &lt;passwords&gt; tag when necessary: 
+
+####Example Failed Login Counter:
 
     <passwords>
         <admin attempts="10"></admin>
     </passwords>
 
-The counter clears after a successful login.
+The counter clears after a successful login or when a new `enterprisehomescreen.xml` file is pushed to the device.
 
 ------
 
@@ -1030,7 +1039,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ### App Launch Flags 
 EHS supports the option of specifying one or more Android Intent flags when an application is launched, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to launch not with its main activity, for example, but with its most recent one, retaining acquired data that would otherwise have been lost after an inadvertant press of the HOME key immediately after a scan. 
 
-App Launch Flags can be assigned only to Kiosk apps or to those designated as part of a group. The flag will apply to all apps in groups of the following types: 
+App Launch Flags can be assigned to individual apps, Kiosk apps or those designated as part of a group. The flag will apply to all apps in groups of the following types: 
 
 * Auto-Launch apps
 * User-Mode apps
@@ -1065,7 +1074,7 @@ App Launch Flags can be assigned only to Kiosk apps or to those designated as pa
 
      <applications>
         ...
-        <application label="Manual Scanning" package="com.royalmail.pda" activity="" app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK" />
+        <application label="Manual Scanning" package="com.access.scanassist" activity="" app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK" />
         ...
     </applications>
 <br>
@@ -1075,7 +1084,7 @@ For User-Mode applications (applies to all apps in the &lt;applications&gt; node
     <applications app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
         ...
         <application label="contacts" package="ccom.android.contacts" activity=""/>
-        <application label="Manual Scanning" package="com.royalmail.pda" activity=""/>
+        <application label="Manual Scanning" package="com.access.scanassist" activity=""/>
         <application label="Calculator" package="com.android.calculator2" activity=""/>
         ...
     </applications>
@@ -1085,7 +1094,7 @@ For Auto-Launch apps (applies to all apps in the &lt;auto_launch&gt; node):
 
     <auto_launch app_launch_flags="FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;FLAG_ACTIVITY_NEW_TASK">
         ...
-        <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+        <application label="Manual Scanning" package="com.access.scanassist"  activity=""/>
         ...
     </auto_launch>
 
@@ -1095,7 +1104,7 @@ For Tools Menu apps (applies to all apps in the &lt;tools&gt; node):
         ...
         <application label="Calculator" package="com.android.calculator2" activity=""/>
         <application label="Rapid Deployment" package="com.motorola.msp" activity="com.motorola.msp.client.RDMenu"/>
-        <application label="Manual Scanning" package="com.royalmail.pda"  activity=""/>
+        <application label="Manual Scanning" package="com.access.scanassist"  activity=""/>
         ...
     </tools>
 <br>

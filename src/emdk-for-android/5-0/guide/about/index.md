@@ -49,7 +49,31 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 ## What's New
 **EMDK for Android v5.0**
 
-
+* The EMDK support for ADT and Eclipse is terminated. The supported development tool now is Android Studio. Therefore all the existing Eclipse and ADT projects must be migrated to Android Studio. Please refer to the [Google documentation](https://developer.android.com/studio/install.html?hl=en) Migrating to Android Studio for an overview of the migration process.
+* Enhanced the EMDKManager > ProfileManager to support simultaneous usage in multiple applications. 
+* Added support for the MX v6.0 in the Profile Manager:
+	* [Clock](../../mx/clock/)
+		* Added new feature to manage Auto Time Zone - whether to automatically acquire time zone from the network.
+		* Added new feature to manage Military Time - whether to use Military (24 hour) time format.
+		* Updated to allow Manual Time Zone setting when Auto Time is On.
+	* [Camera Manager](../../mx/cameramgr/) - Some of the latest devices can now be used to take pictures using Imager. The Camera manager is enhanced to block the Imager from taking pictures.
+	* [Analytics Manager](../../mx/analytics/) - Added new capability to enable or disable features such as File Upload, ANR (Application Not Respond) Info Collection, Ruggedness Info Collection, Feature Usage Info Collection, Restrict SelfUpdate WiFi Only, Device Info Collection and custom feature.
+* Enhanced the [Notification Manager](../../api/notification/NotificationManager/) APIs with the following features:
+	* Added support for using the pluggable External Vibrator with WT6000 device. The earlier version of EMDK Notification Manager API supported only RS6000.
+	* Added new enum value "EXTERNAL_VIBRATOR1" to NotificationManager.DeviceIdentifier to specifically select External Vibrator.
+	* Added new enum value "VIBRATOR" to DeviceType for External Vibrator.
+	* Added new enum value "PLUGGABLE" to ConnectionType for External Vibrator.
+	 Enhanced the DeviceInfo class for determining the notification capability of RS6000 and External Vibrator.
+	* Added new method isLEDSupported() to determine the support for Line Of Sight LED.
+	* Added new method isBeepSupported() to determine the support for Beeping.
+	* Added new method isVibrateSupported() to determine the support for Vibration.
+	* Enhanced the NotificationDevice class for canceling the active notifications on the remote device.
+	* Added new method cancelNotification().
+* Enhanced the Password fields in the Profile Manager to accept special characters.
+* `Fixed:` BarcodeManager.getSupportedDevicesInfo() returns outdated ScannerInfo when the remote scanner is connected and disconnected.
+* `Fixed:` NotificationManager.getSupportedDevicesInfo() returns outdated DeviceInfo when the remote scanner is connected and disconnected.
+* `Fixed:` The DISABLE state was not getting fired in the StatusListener.OnStatus() event when the RS6000 scanner is disabled using the Scanner.disable() method.
+* Fixed: Using the DataCapture > Data Delivery > Intent field in the ProfileManager is returning the unsupported error.
 
 
 

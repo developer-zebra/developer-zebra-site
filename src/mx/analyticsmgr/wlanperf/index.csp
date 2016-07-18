@@ -6,7 +6,7 @@ mx: "4.3"
 apilevel: "19"
 order: 30
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Levels for Multiple Groups"
+  presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Levels for Multiple Groups"
   pivotal: No
   name: WLANPerf
   type: list

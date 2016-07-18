@@ -1,9 +1,9 @@
 ---
 csp: conditionmgr
-title: Integer Data Source
+title: Integer Source Type
 type: parm
-order: 5
-sincemx: 4.4
+order: 10
+mx: 4.4
 parm:
   presentif: Data Type is "Integer"
   pivotal: No
@@ -11,8 +11,7 @@ parm:
   type: list
   list:
     - code: 2
-      sincemx: 4.4
+      mx: 4.4
       name: Pre-defined System Integer Value
-      description: 
+      description: A numeric value defined by the device operating system.  
 ---
-

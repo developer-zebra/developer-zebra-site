@@ -1,0 +1,58 @@
+---
+csp: analyticsmgr
+title: Feature Switch
+type: parm
+order: 7
+mx: "6.0"
+apilevel: "19"
+parm:
+  presentif: Analytics Client is set to "Enable" and Analytics Action is NOT set to "Disable"
+  pivotal: No
+  name: FeatureSwitch
+  type: list
+  list:
+    - code: 99
+      mx: "6.0"
+      apilevel: "19"
+      name: Unused
+      description: This parameter is unused.  
+    - code: 0
+      mx: "6.0"
+      apilevel: "19"
+      name: FileUpload
+      description: Enables all apps on the device to upload data to the Zebra Cloud using the Analytics Engine cloud transport mechanism.
+    - code: 1
+      mx: "6.0"
+      apilevel: "19"
+      name: ANR
+      description: Collects information about Applications Not Responding.
+    - code: 2
+      mx: "6.0"
+      apilevel: "19"
+      name: Ruggedness
+      description: Collects information related to device drops from a height of three feet or higher.
+    - code: 3
+      mx: "6.0"
+      apilevel: "19"
+      name: FeatureUsage
+      description: Collects usage frequency of Bluetooth, NFC and Wi-Fi on the device. 
+    - code: 4
+      mx: "6.0"
+      apilevel: "19"
+      name: RestrictSelfUpdateWiFi
+      description: Limits updates of the Analytics Engine and AnalyticsMgr CSP to Wi-Fi connections. 
+    - code: 5
+      mx: "6.0"
+      apilevel: "19"
+      name: DeviceInfo
+      description: Collects hardware revision number, keyboard type and other hardware-related device info. 
+    - code: 999
+      mx: "6.0"
+      apilevel: "19"
+      name: Custom
+      description: A free text field from 1-64 characters that allows a custom data collection agent to be specified. 
+
+---
+Used to select device Feature(s) about which to collect usage information. For each enabled Feature, usage data is collected and reported once per 24-hour period. Such data can include the number of times a device has been dropped from a minimum height of three feet, occurrences of an application not responding (ANR) and the frequency of access to features such as Bluetooth, NFC and Wi-Fi. 
+
+This parameter also can limit updates of the AnalyticsMgr CSP and Analytics Engine to Wi-Fi connections, and allow other apps on the device to use the Analytics Manager infrastructure to upload data to the Zebra Cloud. Prior to any transport, data to be uploaded is encrypted with an RSA-AES hybrid and compressed using gzip. The Custom field permits a user-built data collection agent from 1-64 characters to be specified. 

@@ -1,0 +1,18 @@
+---
+csp: personaldictionarymgr
+title: Shortcut
+type: parm
+order: 9
+mx: "6.0"
+parm:
+  presentif: Action is not "Delete all words"
+  pivotal: No
+  name: Shortcut
+  type: string
+---
+
+Used to add or change a Shortcut for a word or phrase currently in or being added to the Personal dictionary. When typed, the shortcut is automatically replaced with the corresponding word or phrase. This can be useful for storing industry terms to help improve input speed and accuracy. For example, if configuring for a medical device, the phrase "gastroesophageal reflux disease" could be assigned "gerd" as a shortcut.   
+
+**Parm input rules:**
+
+* A string of between 1 and 64 characters

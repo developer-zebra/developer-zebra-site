@@ -2,11 +2,11 @@
 csp: analyticsmgr
 title: Standard Interval
 type: parm
-order: 11
+order: 13
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for a Single Group"
+  presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group"
   pivotal: No
   name: StdInterval
   type: list

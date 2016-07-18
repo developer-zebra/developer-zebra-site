@@ -2,13 +2,16 @@
 csp: conditionmgr
 title: Condition Fail Message
 type: parm
-order: 14
-sincemx: 4.4
+order: 34
+mx: 4.4
 parm:
   presentif: Condition Met Action or Condition Not Met Action is not "Success"
   pivotal: No
   name: ConditionFailMessage
   type: string
 ---
+Used to specify a message to be returned when "Fail with characteristic-error” is selected as the “Condition Met Action” or “Condition Not Met Action." This message can be used to explain what went wrong and/or to communicate the reason for the failure to a user or application that is examining the Result XML document.
 
-Enter the message to return if the condition fails. Min length: 1. Max length: 250
+**Parm value input rules**:
+
+* Accepts a string from 1-250 characters

@@ -6,7 +6,7 @@ order: 4
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable" and Analytics Client Settings is "Enable" 
+  presentif: Analytics Action is set to "Enable" and Analytics Client Settings is set to "Enable" 
   pivotal: No
   name: DataThrottling
   type: list
@@ -41,12 +41,12 @@ parm:
       apilevel: "19"
       name: 100 MB
       description: Sets the data upload limit to 100 MB per day.
-    - code: 6
+    - code: 99
       mx: "5.1"
       apilevel: "19"
       name: Custom Data Limit in MB
-      description: Accepts an integer to set a custom daily data upload limit (in MB).
+      description: Accepts an integer from 1-9999 to set a custom daily data upload limit (in MB).
 
 ---
 
-Controls the maximum amount of data (in MB) that the AnalyticsMgr on a device will accept from client components (such as [Stats](../stats)) for processing and transport in any 24-hour period before generating "threshold crossed" events. It's important to note that throttling does not govern data collection itself, but only the **transfer** of data from client components to the AnalyticsMgr. 
+Controls the maximum amount of data (in MB) that the AnalyticsMgr on a device will accept from client components (such as [Stats](../stats)) for processing and transport in any 24-hour period before generating "threshold crossed" events. It's important to note that throttling does not govern data collection itself, but only the **transfer** of data from client components to the AnalyticsMgr. When selecting a Custom value, use an integer from 1-9999. 

@@ -6,7 +6,7 @@ mx: "5.1"
 apilevel: "19"
 order: 26
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for a Single Group" and Group Name is "GPS Performance"
+  presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group" and Group Name is set to "GPS Performance"
   pivotal: No
   name: GPSInfoMetrics
   type: list

@@ -2,11 +2,11 @@
 csp: analyticsmgr
 title: Transport Method
 type: parm
-order: 12
+order: 14
 mx: "4.3"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable"
+  presentif: Analytics Action is set to "Enable"
   pivotal: No
   name: TransportMethod
   type: list

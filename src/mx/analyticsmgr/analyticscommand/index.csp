@@ -2,11 +2,11 @@
 csp: analyticsmgr
 title: Analytics Command
 type: parm
-order: 13
+order: 15
 mx: "5.1"
 apilevel: "19"
 parm:
-  presentif: Analytics Action is "Enable"
+  presentif: Analytics Action is set to "Enable"
   pivotal: No
   name: AnalyticsCommand
   type: list

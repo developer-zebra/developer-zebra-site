@@ -6,18 +6,20 @@ order: 26
 mx: "4.2"
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is not "EAP-TLS" or "LEAP"
+  presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "PEAP-MSCHAPV2" or "EAP-TTLS-MSCHAP" or "EAP-TTLS-MSCHAPV2" or "EAP-TTLS-PAP" or "PEAP-GTC" or "EAP-FAST-MSCHAPV2" or "EAP-FAST-GTC" or "PEAP-NONE"
   name: AnonymousIdentity
   type: string
 
 ---
 
-When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it may be necessary to specify an Identity outside the tunnel as well as an Identity inside the tunnel. To protect the actual Identity from disclosure when sending it outside the tunnel, an Anonymous Identity can be sent outside the tunnel and the actual Identity, along with the password or other verifying credentials, can be sent inside the tunnel.
+Used to specify an Anonymous Identity for systems that support separate authentication outside of a secure tunnel. 
 
-If no Anonymous Identity is specified, then the actual Identity will be sent outside the tunnel, if required. This may not be a problem since the password or other verifying credentials is only sent inside the tunnel, in modes that use a tunnel for secure credential delivery. So, using the actual Identity outside the tunnel would only risk disclosure of part of the information needed to authenticate. A separate Anonymous Identity can only be used if the Authentication Server is set up to support such use.
+When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it is sometimes necessary to specify an Identity outside the protections of the tunnel. In these cases, an Anonymous Identity can be sent so as not to disclose the actual Identity, password or other verifying credentials. **A separate Anonymous Identity can be used only if the Authentication Server is set up to support it**.
 
-Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause the Anonymous Identity will not be set.
+If no Anonymous Identity is specified, then the actual Identity will be sent outside the tunnel, if required. This may still be secure since the password and/or other verifying credentials are always sent inside the tunnel (in modes that use a tunnel for secure credential delivery). Using the actual Identity outside the tunnel would therefore risk disclosure of only part of the information needed to authenticate. 
 
 Parm value input rules: 
 
 * String with a minimum of 0 characters and a maximum of 64 characters
+
+**Note: Specifying an empty (length of zero) value (or the absence of this parm from the XML) will prevent the Anonymous Identity from being set**.

@@ -1,0 +1,35 @@
+---
+csp: cameramgr
+title: Imager Camera Enable/Disable
+type: parm
+order: 10
+mx: "6.0"
+osx: "5.0"
+parm:
+  presentif: Use All Cameras is set to "Control Individual Cameras"
+  pivotal: No
+  name: UseImagerCamera
+  type: list
+  list:
+    - code: 0
+      mx: "6.0"
+      osx: "5.0"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to whether the device's imager can be used to take pictures; any previously selected setting will be retained.
+    - code: 1
+      name: Enable
+      mx: "6.0"
+      osx: "5.0"
+      description: Controls whether the imager on the device (if so equipped) can be used to take pictures.
+    - code: 2
+      name: Disable
+      mx: "6.0"
+      osx: "5.0"
+      description: Disables use of the imager on the device (if so equipped) for taking pictures. This allows scanning to continue while preventing the imager from taking pictures, even if an application exists on the device to do so. 
+---
+
+Controls whether the imager on the device, if so equipped, can be used to take pictures. If the device is not equipped with an imager or the ability to take pictures using the imager, use of this parm will return an error in the Result XML document.
+
+>**Notes**:
+* Limited support for picture-taking using non-camera devices may be available on devices running Android L or higher.
+* Blocking the imager on Android L devices disables SimulScan. 

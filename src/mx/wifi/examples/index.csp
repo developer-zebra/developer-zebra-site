@@ -12,7 +12,7 @@ order: 99
 
 > **Note:** This must be done for a new device before you can install certificates.
 
-Without a password
+Without a password:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -20,8 +20,10 @@ Without a password
 			<parm name="CertAction" value="4"/>
 		</characteristic>
 	</wap-provisioningdoc>
+	
+<br>
 
-With a password
+With a password:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -33,7 +35,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Remove a Certificate
+<br>
+
+#### Remove a Certificate:
 	
 	:::XML
 	<wap-provisioningdoc>
@@ -45,7 +49,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Install a CA certificate (.PEM file)
+<br>	
+
+#### Install a CA certificate (.PEM file):
 
 	:::XML
 	<wap-provisioningdoc>
@@ -61,7 +67,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Install a client certificate (.PEM file)
+<br>
+
+#### Install a client certificate (.PEM file):
 
 	:::XML
 	<wap-provisioningdoc>
@@ -77,7 +85,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Install a client certificate and private key (.PFX file)
+<br>
+
+#### Install a client certificate and private key (.PFX file):
 
 	:::XML
 	<wap-provisioningdoc>
@@ -94,7 +104,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Install a client certificate and private key (.P12 file)
+<br>
+
+#### Install a client certificate and private key (.P12 file):
 
 	:::XML
 	<wap-provisioningdoc>
@@ -111,7 +123,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Install a client certificate and private key (.PKCS12 file)
+<br>
+
+#### Install a client certificate and private key (.PKCS12 file):
 
 	:::XML
 	<wap-provisioningdoc>
@@ -127,10 +141,12 @@ With a password
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
-	
+
+<br>
+
 ### Country Selection
 
-#### Selecting a Country
+#### Selecting a Country:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -144,7 +160,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Using the Auto Option
+<br>
+
+#### Using the Auto Option:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -158,9 +176,11 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 	
+<br>
+
 ### Band Selection
 
-#### Set 2.4 GHz
+#### Set 2.4 GHz:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -177,7 +197,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Set 5.0 GHz
+<br>
+
+#### Set 5.0 GHz:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -194,7 +216,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Set Auto (both 2.4 and 5.0 GHz)
+<br>
+
+#### Set Auto (both 2.4 and 5.0 GHz):
 
 	:::XML
 	<wap-provisioningdoc>
@@ -212,10 +236,11 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-	
+<br>
+
 ### Add Wi-Fi Network
 
-#### Adding an Open Network
+#### Adding an Open Network:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -233,7 +258,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding a Personal Network with WPA
+<br>
+
+#### Adding a Personal Network with WPA:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -257,8 +284,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
+<br>
 	
-#### Adding a Personal Network with WPA and TKIP
+#### Adding a Personal Network with WPA and TKIP:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -287,7 +315,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding a Personal Network with WPA2
+<br>
+
+#### Adding a Personal Network with WPA2:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -311,7 +341,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding a Personal Network with WPA/WPA2
+<br>
+
+#### Adding a Personal Network with WPA/WPA2:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -335,7 +367,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding a Personal Network with WEP
+<br>
+
+#### Adding a Personal Network with WEP:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -364,8 +398,10 @@ With a password
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
-	
-#### Adding an Enterprise Network with WPA
+
+<br>
+
+#### Adding an Enterprise Network with WPA:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -389,7 +425,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding an Enterprise Network with WPA2
+<br>
+
+#### Adding an Enterprise Network with WPA2:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -413,7 +451,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding an Enterprise Network with WPA/WPA2
+<br>
+
+#### Adding an Enterprise Network with WPA/WPA2:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -437,7 +477,9 @@ With a password
 		</characteristic>
 	</wap-provisioningdoc>
 
-#### Adding an Enterprise Network with WEP
+<br>
+
+#### Adding an Enterprise Network with WEP:
 
 	:::XML
 	<wap-provisioningdoc>

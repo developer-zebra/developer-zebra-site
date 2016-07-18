@@ -5,7 +5,7 @@ type: text
 order: 99
 ---
 
-###Enable all cameras
+###Enable all cameras:
 
     :::XML
     <wap-provisioningdoc>
@@ -13,8 +13,9 @@ order: 99
             <parm name="UseAllCameras" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
+<br>
 
-###Disable all cameras
+###Disable all cameras:
 
     :::XML
     <wap-provisioningdoc>
@@ -22,8 +23,9 @@ order: 99
             <parm name="UseAllCameras" value="2"/>
         </characteristic>
     </wap-provisioningdoc>
+<br>
 
-###Enable the front-facing camera
+###Enable the front-facing camera:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -31,8 +33,9 @@ order: 99
 			<parm name="UseFrontCamera" value="1"/>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
-###Disable the rear-facing camera
+###Disable the rear-facing camera:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -40,8 +43,9 @@ order: 99
 			<parm name="UseRearCamera" value="2"/>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
-###Disable the front-facing camera and enable the rear-facing camera
+###Disable the front-facing camera and enable the rear-facing camera:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -50,12 +54,12 @@ order: 99
 			<parm name="UseRearCamera" value="1"/>
 		</characteristic>
 	</wap-provisioningdoc>
-
+<br>
 
 
 ## Queries
 
-### Get status of "Use All Cameras"
+### Get status of "Use All Cameras" parameter:
 
 #### Input 
 
@@ -74,8 +78,9 @@ order: 99
             <parm name="UseAllCameras" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
+<br>    
 	
-### Get status of "Use Front Camera"
+### Get status of "Use Front Camera" parameter:
 
 #### Input 
 
@@ -94,8 +99,9 @@ order: 99
             <parm name="UseFrontCamera" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
+<br>
 
-### Get status of "Use Rear Camera"
+### Get status of "Use Rear Camera" parameter:
 
 #### Input 
 

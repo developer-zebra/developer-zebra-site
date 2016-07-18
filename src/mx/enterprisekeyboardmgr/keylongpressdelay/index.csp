@@ -1,0 +1,18 @@
+---
+csp: enterprisekeyboardmgr
+title: Key Long-Press Delay 
+type: parm
+order: 7
+mx: "6.0"
+parm:
+  presentif: Key Long-Press Delay Mode is set to "Specify duration" 
+  pivotal: No
+  name: KeyLongPressDelay
+  type: string
+---
+
+Controls the length of time (in ms) a key must be held down before being considered a long-press (default = 300ms). 
+
+**Parm input rules:**
+
+* Accepts an integer between 100 and 700 (ms)

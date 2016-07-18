@@ -1,0 +1,19 @@
+---
+csp: personaldictionarymgr
+title: Add Word
+type: parm
+order: 5
+mx: "6.0"
+parm:
+  presentif: Action is "Add Word"
+  pivotal: No
+  name: AddWord
+  type: string
+---
+
+Used to enter a word or phrase to be added to the Personal dictionary. Use this parm repeatedly to pre-populate a Personal Dictionary with a set of words and/or phrases. 
+
+**Parm input rules:**
+
+* Accepts a string of between 1 and 64 characters
+* Words/phrases are accepted one at a time

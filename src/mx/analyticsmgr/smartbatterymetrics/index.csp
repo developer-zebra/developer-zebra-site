@@ -6,7 +6,7 @@ mx: "5.1"
 apilevel: "19"
 order: 21
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Level for a Single Group" and Group Name is "Smart Battery Status"
+  presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Level for a Single Group" and Group Name is set to "Smart Battery Status"
   pivotal: No
   name: SmartBatteryMetrics
   type: list

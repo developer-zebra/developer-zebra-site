@@ -1,0 +1,22 @@
+---
+csp: conditionmgr
+title: String System Value
+type: parm
+order: 22
+mx: 6.0
+parm:
+  presentif: Data Type is "String" and String Source Type is "Pre-defined System String Value"
+  pivotal: No
+  name: StringSystemValue
+  type: list
+  list:
+    - code: 12
+      mx: 6.0
+      name: MX version
+      description: The version of MX installed on the device. 
+    - code: 13
+      mx: 6.0
+      name: OSX version
+      description: The version of OSx installed on the device. 
+---
+Used to select a Pre-defined System String Value against which to test the specified constant value to arrive at a Boolean value. For example, to set an operation to proceed only on devices that have OSX 3.5 installed, set this value to 2 ("OSX version") and set the Constant String Value to 3.5.

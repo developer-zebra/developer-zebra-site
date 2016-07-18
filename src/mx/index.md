@@ -7,7 +7,7 @@ menu:
       url: /mx/overview
     - title: Compatibility
       url: /mx/compatibility
-    - title: Choosing a MX Version
+    - title: Choosing an MX Version
       url: /mx/choosing-a-version
     - title: Checking Device MX Version
       url: /mx/mx-version-on-device
@@ -21,15 +21,21 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
+  - text: MX 6.0
+    value: 6
 csps:
   - type: section
     title: Access Manager
-    url: /mx/accessmgr/
+    url: /mx/accessmgr
     csp: accessmgr
   - type: section
     title: Analytics Manager
     url: /mx/analyticsmgr
     csp: analyticsmgr
+  - type: section
+    title: AppGallery Manager
+    url: /mx/appgallerymgr
+    csp: appgallerymgr
   - type: section
     title: App Manager
     url: /mx/appmgr
@@ -95,6 +101,10 @@ csps:
     url: /mx/encryptmgr
     csp: encryptmgr
   - type: section
+    title: Enterprise Keyboard Manager
+    url: /mx/enterprisekeyboardmgr
+    csp: enterprisekeyboardmgr
+  - type: section
     title: File Manager
     url: /mx/filemgr
     csp: filemgr
@@ -122,6 +132,10 @@ csps:
     title: Persist Manager
     url: /mx/persistmgr
     csp: persistmgr
+  - type: section
+    title: Personal Dictionary Manager
+    url: /mx/personaldictionarymgr
+    csp: personaldictionarymgr
   - type: section
     title: PowerKey Manager
     url: /mx/powerkeymgr

@@ -1,9 +1,9 @@
 ---
 csp: conditionmgr
-title: Boolean Data Source
+title: Boolean Source Type
 type: parm
-order: 3
-sincemx: 4.4
+order: 5
+mx: 4.4
 parm:
   presentif: Data Type is "Boolean"
   pivotal: No
@@ -11,8 +11,8 @@ parm:
   type: list
   list:
     - code: 2
-      sincemx: 4.4
+      mx: 4.4
       name: Pre-defined System Boolean Value
       description: 
 ---
-
+Used to specify the Boolean source. 

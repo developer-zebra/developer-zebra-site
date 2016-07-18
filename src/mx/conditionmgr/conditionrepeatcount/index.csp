@@ -2,13 +2,16 @@
 csp: conditionmgr
 title: Condition Repeat Count
 type: parm
-order: 12
-sincemx: 4.4
+order: 32
+mx: 4.4
 parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"
   pivotal: No
   name: ConditionRepeatCount
-  type: string
+  type: integer
 ---
+Used to specify the number of times (from 2-500) to repeat the test condition.
 
-Enter the repeat count for the test condition. Min value: 2. Max value: 500
+**Parm value input rules**:
+
+* Accepts an integer from 2-500

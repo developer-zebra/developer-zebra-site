@@ -6,7 +6,7 @@ mx: "5.1"
 apilevel: "19"
 order: 31
 parm:
-  presentif: Analytics Action is "Enable" and Group Action is "Configure Details for a Single Group" and Group Name is "WLAN Performance"
+  presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group" and Group Name is set to "WLAN Performance"
   pivotal: No
   name: WLANPerfMetrics
   type: list

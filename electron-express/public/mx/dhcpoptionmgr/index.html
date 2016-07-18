@@ -206,10 +206,10 @@
                              	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
                              	<li>
                              		<div class="btn-group" role="group" aria-label="...">
-                             			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button></span>
                         
                              			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
-                             			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button></span>
                              		</div>
                              	</li>
                              	<li><p class="navbar-text"> Your Device:</p></li>
@@ -279,7 +279,7 @@
                         				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
                         
                         			</ul>
-                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. 
                         			</p>				
                         			</div>
                         	</div>
@@ -363,16 +363,16 @@
                         				smartdocOptions.enabled = true;
                           				$("#smartdocs-status").addClass("btn-primary");
                           				$("#smartdocs-status").removeClass("btn-default");    		
-                          				$("#smartdocs-prev").show();
-                          				$("#smartdocs-next").show();
+                          				// $("#smartdocs-prev").show();
+                          				// $("#smartdocs-next").show();
                           						
                             	}
                             	else{
                         				smartdocOptions.enabled = false;
                           				$("#smartdocs-status").removeClass("btn-primary");
                           				$("#smartdocs-status").addClass("btn-default");
-                          				$("#smartdocs-prev").hide();
-                          				$("#smartdocs-next").hide();
+                          				// $("#smartdocs-prev").hide();
+                          				// $("#smartdocs-next").hide();
                             	}
                             }
                             var showmx = function(haveVersion){
@@ -474,11 +474,11 @@
                         		    var max_index = filtered.length-1;
                         		    
                         		    smartdocOptions.index  = smartdocOptions.index  + 1;
-                        		    if(smartdocOptions.index >max_index){
+                                if(smartdocOptions.index >max_index){
                         		    	smartdocOptions.index  = 0; //loop
                         		    }
                         		    var target = $(filtered[smartdocOptions.index ]);
-                        	    	$('html, body').animate({
+                                $('html, body').animate({
                         	            scrollTop: target.offset().top - 220
                         	        }, 1000);
                         	        
@@ -603,6 +603,33 @@
                                 <div class="">
                                 <!-- Start of content list -->
                                 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -794,15 +821,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="host-name-12"><a class="heading-anchor" href="#host-name-12"><span></span></a>Host Name (12)</h2>
@@ -896,41 +914,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="host-name-option-value"><a class="heading-anchor" href="#host-name-option-value"><span></span></a>Host Name Option value</h2>
@@ -958,6 +941,47 @@
                                     
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1053,34 +1077,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="user-class-value"><a class="heading-anchor" href="#user-class-value"><span></span></a>User Class value</h2>
@@ -1118,12 +1114,46 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="broadcast-address-28"><a class="heading-anchor" href="#broadcast-address-28"><span></span></a>Broadcast Address (28)</h2>
-                                    <p class=""></p><p>The Broadcast Address for a network is the IP Address for which all devices on that network are enabled to receive messages. A message sent to the Broadcast Address for a network can therefore be received by all devices on that network, rather than a specific device.</p>
+                                    <p class="">
 
-<p>This parm allows you to control whether a request for the Broadcast Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Broadcast Address for the network to the device in the DHCP Acknowledgment.</p><p></p>
+        </p><p>The Broadcast Address for a network is the IP Address for which all devices on that network are enabled to receive messages. A message sent to the Broadcast Address for a network can therefore be received by all devices on that network, rather than a specific device.</p>
+
+<p>This parm allows you to control whether a request for the Broadcast Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Broadcast Address for the network to the device in the DHCP Acknowledgment.</p>
+
+
+<p></p>
                                         <blockquote>
                                         <p><b>Parm Name:</b> BroadcastAddrState</p>
                                         <p><b>Pivotal Parm:</b> No</p> 
@@ -1185,12 +1215,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1286,18 +1310,77 @@
                                     
                                     
                                     
+                                        <div class="">
+                                    
+                                    <h2 class="anchor" id="boot-file-name-67"><a class="heading-anchor" href="#boot-file-name-67"><span></span></a>Boot File Name (67)</h2>
+                                    <p class=""></p><p>A Boot File is a file that is typically used to configure a device when it first joins a network. A common usage scenario is to pull a Boot File of a given name from a TFTP Server and then use that Boot File to configure the device.</p>
+
+<p>This parm allows you to control whether a request for a Boot File name will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Boot File name to the device in the DHCP Acknowledgment.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> The DHCP Client does not automatically use the Boot File name to perform any file transfers or configuration. To configure a device, a Boot File name and a TFTP Server Name would both be need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of the Boot File and then perform any desired configuration using that file.</p>
+</blockquote><p></p>
+                                        <blockquote>
+                                        <p><b>Parm Name:</b> BootFileState</p>
+                                        <p><b>Pivotal Parm:</b> No</p> 
+                                        
+
+                                        
+                                        </blockquote>
                                     
                                     
+                                    <div>
+                                        <table class="table">
+                                            <tbody><tr>
+                                                <th>Option</th>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Requires</th>
+                                            </tr>
+                                            <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
+                                                <td>0</td>
+                                                <td>Do not change</td>
+                                                <td>This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.</td>
+                                                <td>
+                                                    
+
+                                                        <p>MX: 4.4+ </p>
+                                                    
+                                                </td> 
+                                                
+                                            </tr>
+                                            
+                                            <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
+                                                <td>1</td>
+                                                <td>Enable</td>
+                                                <td>This value will cause this DHCP Option to be turned on and hence will cause the Boot File name to be requested by the DHCP Client in the DHCP Request.</td>
+                                                <td>
+                                                    
+
+                                                        <p>MX: 4.4+ </p>
+                                                    
+                                                </td> 
+                                                
+                                            </tr>
+                                            
+                                            <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
+                                                <td>2</td>
+                                                <td>Disable</td>
+                                                <td>This value will cause this DHCP Option to be turned off and hence will prevent the Boot File name from being requested by the DHCP Client in the DHCP Request.</td>
+                                                <td>
+                                                    
+
+                                                        <p>MX: 4.4+ </p>
+                                                    
+                                                </td> 
+                                                
+                                            </tr>
+                                            
+                                            
+                                        </tbody></table>
+                                    </div>	
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+                                </div> 
                                     
                                     
                                     
@@ -1382,6 +1465,14 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="tftp-server-name-66-1"><a class="heading-anchor" href="#tftp-server-name-66-1"><span></span></a>TFTP Server Name (66)</h2>
@@ -1454,18 +1545,37 @@
                                     
                                 </div> 
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
-                                    <h2 class="anchor" id="boot-file-name-67"><a class="heading-anchor" href="#boot-file-name-67"><span></span></a>Boot File Name (67)</h2>
-                                    <p class=""></p><p>A Boot File is a file that is typically used to configure a device when it first joins a network. A common usage scenario is to pull a Boot File of a given name from a TFTP Server and then use that Boot File to configure the device.</p>
-
-<p>This parm allows you to control whether a request for a Boot File name will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Boot File name to the device in the DHCP Acknowledgment.</p>
+                                    <h2 class="anchor" id="tftp-server-address-150"><a class="heading-anchor" href="#tftp-server-address-150"><span></span></a>TFTP Server Address (150)</h2>
+                                    <p class=""></p><p>The TFTP Server Address DHCP Option (Option 150) is basically a Cisco-proprietary version of the standard TFTP Server Name DHCP Option (Option Number 150).</p>
 
 <blockquote>
-  <p><strong>Note:</strong> The DHCP Client does not automatically use the Boot File name to perform any file transfers or configuration. To configure a device, a Boot File name and a TFTP Server Name would both be need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of the Boot File and then perform any desired configuration using that file.</p>
+  <p>This parm allows you to control whether a request for a TFTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.</p>
+  
+  <p><strong>Note:</strong> The DHCP Client does not automatically use the TFTP Server Address to perform any file transfers or configuration. To configure a device using TFTP, the TFTP Server Address would need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.</p>
 </blockquote><p></p>
                                         <blockquote>
-                                        <p><b>Parm Name:</b> BootFileState</p>
+                                        <p><b>Parm Name:</b> TFTPServerAddrState</p>
                                         <p><b>Pivotal Parm:</b> No</p> 
                                         
 
@@ -1497,7 +1607,7 @@
                                             <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
                                                 <td>1</td>
                                                 <td>Enable</td>
-                                                <td>This value will cause this DHCP Option to be turned on and hence will cause the Boot File name to be requested by the DHCP Client in the DHCP Request.</td>
+                                                <td>This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.</td>
                                                 <td>
                                                     
 
@@ -1510,7 +1620,7 @@
                                             <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
                                                 <td>2</td>
                                                 <td>Disable</td>
-                                                <td>This value will cause this DHCP Option to be turned off and hence will prevent the Boot File name from being requested by the DHCP Client in the DHCP Request.</td>
+                                                <td>This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.</td>
                                                 <td>
                                                     
 
@@ -1525,44 +1635,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                         <div class="">
                                     
@@ -1636,77 +1708,12 @@
                                     
                                 </div> 
                                     
-                                        <div class="">
-                                    
-                                    <h2 class="anchor" id="tftp-server-address-150"><a class="heading-anchor" href="#tftp-server-address-150"><span></span></a>TFTP Server Address (150)</h2>
-                                    <p class=""></p><p>The TFTP Server Address DHCP Option (Option 150) is basically a Cisco-proprietary version of the standard TFTP Server Name DHCP Option (Option Number 150).</p>
-
-<blockquote>
-  <p>This parm allows you to control whether a request for a TFTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.</p>
-  
-  <p><strong>Note:</strong> The DHCP Client does not automatically use the TFTP Server Address to perform any file transfers or configuration. To configure a device using TFTP, the TFTP Server Address would need to be acquired using the DhcpOptionMgr and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.</p>
-</blockquote><p></p>
-                                        <blockquote>
-                                        <p><b>Parm Name:</b> TFTPServerAddrState</p>
-                                        <p><b>Pivotal Parm:</b> No</p> 
-                                        
-
-                                        
-                                        </blockquote>
                                     
                                     
-                                    <div>
-                                        <table class="table">
-                                            <tbody><tr>
-                                                <th>Option</th>
-                                                <th>Name</th>
-                                                <th>Description</th>
-                                                <th>Requires</th>
-                                            </tr>
-                                            <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
-                                                <td>0</td>
-                                                <td>Do not change</td>
-                                                <td>This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.</td>
-                                                <td>
-                                                    
-
-                                                        <p>MX: 4.4+ </p>
-                                                    
-                                                </td> 
-                                                
-                                            </tr>
-                                            
-                                            <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
-                                                <td>1</td>
-                                                <td>Enable</td>
-                                                <td>This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.</td>
-                                                <td>
-                                                    
-
-                                                        <p>MX: 4.4+ </p>
-                                                    
-                                                </td> 
-                                                
-                                            </tr>
-                                            
-                                            <tr data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.4" data-api="" data-smartdoc="">
-                                                <td>2</td>
-                                                <td>Disable</td>
-                                                <td>This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.</td>
-                                                <td>
-                                                    
-
-                                                        <p>MX: 4.4+ </p>
-                                                    
-                                                </td> 
-                                                
-                                            </tr>
-                                            
-                                            
-                                        </tbody></table>
-                                    </div>	
                                     
-                                </div> 
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1805,6 +1812,12 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="5.0" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="vendor-class-value"><a class="heading-anchor" href="#vendor-class-value"><span></span></a>Vendor Class value</h2>
@@ -1832,12 +1845,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1917,9 +1924,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="vendor-specific1-186"><a class="heading-anchor" href="#vendor-specific1-186"><span></span></a>Vendor Specific1 (186)</h2>
@@ -1985,6 +1989,9 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -2188,8 +2195,6 @@
                                     
                                     
                                     
-                                    
-                                    
                                 </div><!--/.container-->
                                 
                             </section><!--/#services-->
@@ -2206,6 +2211,24 @@
         csp: "dhcpoptionmgr",
         name: "DHCP Manager",
         parms: [
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -2342,41 +2365,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -2395,6 +2383,47 @@
                         
                         
                     },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -2488,34 +2517,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -2534,6 +2535,35 @@
                         
                         
                     },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -2627,12 +2657,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                             presentif: "",
                             name: "NTPServerState",
@@ -2700,18 +2724,69 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    {
+                            presentif: "",
+                            name: "BootFileState",
+                            pivotal: "No",
+                        
+                        
+                        listitems: [
+                                {
+                                    code: "0",
+                                    name: "Do not change",
+                                    description: "This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.",
+                                    requires: {
+                                        osx: "",
+                                        osxEnd: "",
+                                        mx: "4.4",
+                                        api: "",
+                                        osxSpecific: "",
+                                        osxSpecificList: "",
+                                        osxExclude: "",
+                                        osxExcludeEnd: ""
+
+                                    },
+
+                                },
+                        
+                                {
+                                    code: "1",
+                                    name: "Enable",
+                                    description: "This value will cause this DHCP Option to be turned on and hence will cause the Boot File name to be requested by the DHCP Client in the DHCP Request.",
+                                    requires: {
+                                        osx: "",
+                                        osxEnd: "",
+                                        mx: "4.4",
+                                        api: "",
+                                        osxSpecific: "",
+                                        osxSpecificList: "",
+                                        osxExclude: "",
+                                        osxExcludeEnd: ""
+
+                                    },
+
+                                },
+                        
+                                {
+                                    code: "2",
+                                    name: "Disable",
+                                    description: "This value will cause this DHCP Option to be turned off and hence will prevent the Boot File name from being requested by the DHCP Client in the DHCP Request.",
+                                    requires: {
+                                        osx: "",
+                                        osxEnd: "",
+                                        mx: "4.4",
+                                        api: "",
+                                        osxSpecific: "",
+                                        osxSpecificList: "",
+                                        osxExclude: "",
+                                        osxExcludeEnd: ""
+
+                                    },
+
+                                },
+                        
+                        ]
+                    },
                     
                     
                     
@@ -2784,6 +2859,14 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "",
                             name: "TFTPSerNameState",
@@ -2848,9 +2931,28 @@
                         ]
                     },
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "",
-                            name: "BootFileState",
+                            name: "TFTPServerAddrState",
                             pivotal: "No",
                         
                         
@@ -2876,7 +2978,7 @@
                                 {
                                     code: "1",
                                     name: "Enable",
-                                    description: "This value will cause this DHCP Option to be turned on and hence will cause the Boot File name to be requested by the DHCP Client in the DHCP Request.",
+                                    description: "This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.",
                                     requires: {
                                         osx: "",
                                         osxEnd: "",
@@ -2894,7 +2996,7 @@
                                 {
                                     code: "2",
                                     name: "Disable",
-                                    description: "This value will cause this DHCP Option to be turned off and hence will prevent the Boot File name from being requested by the DHCP Client in the DHCP Request.",
+                                    description: "This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.",
                                     requires: {
                                         osx: "",
                                         osxEnd: "",
@@ -2911,44 +3013,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     {
                             presentif: "",
@@ -3014,69 +3078,12 @@
                         ]
                     },
                     
-                    {
-                            presentif: "",
-                            name: "TFTPServerAddrState",
-                            pivotal: "No",
-                        
-                        
-                        listitems: [
-                                {
-                                    code: "0",
-                                    name: "Do not change",
-                                    description: "This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.",
-                                    requires: {
-                                        osx: "",
-                                        osxEnd: "",
-                                        mx: "4.4",
-                                        api: "",
-                                        osxSpecific: "",
-                                        osxSpecificList: "",
-                                        osxExclude: "",
-                                        osxExcludeEnd: ""
-
-                                    },
-
-                                },
-                        
-                                {
-                                    code: "1",
-                                    name: "Enable",
-                                    description: "This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.",
-                                    requires: {
-                                        osx: "",
-                                        osxEnd: "",
-                                        mx: "4.4",
-                                        api: "",
-                                        osxSpecific: "",
-                                        osxSpecificList: "",
-                                        osxExclude: "",
-                                        osxExcludeEnd: ""
-
-                                    },
-
-                                },
-                        
-                                {
-                                    code: "2",
-                                    name: "Disable",
-                                    description: "This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.",
-                                    requires: {
-                                        osx: "",
-                                        osxEnd: "",
-                                        mx: "4.4",
-                                        api: "",
-                                        osxSpecific: "",
-                                        osxSpecificList: "",
-                                        osxExclude: "",
-                                        osxExcludeEnd: ""
-
-                                    },
-
-                                },
-                        
-                        ]
-                    },
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -3171,6 +3178,12 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -3189,12 +3202,6 @@
                         
                         
                     },
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -3272,9 +3279,6 @@
                     
                     
                     
-                    
-                    
-                    
                     {
                             presentif: "",
                             name: "VendorSpecific1State",
@@ -3343,6 +3347,9 @@
                     
                     
                     
+                    
+                    
+                    
                     {
                             presentif: "",
                             name: "VendorSpecific2State",
@@ -3406,8 +3413,6 @@
                         
                         ]
                     },
-                    
-                    
                     
                     
                     

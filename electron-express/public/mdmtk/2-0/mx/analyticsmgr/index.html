@@ -222,10 +222,10 @@
                              	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
                              	<li>
                              		<div class="btn-group" role="group" aria-label="...">
-                             			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button></span>
                         
                              			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
-                             			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button></span>
                              		</div>
                              	</li>
                              	<li><p class="navbar-text"> Your Device:</p></li>
@@ -295,7 +295,7 @@
                         				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
                         
                         			</ul>
-                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. 
                         			</p>				
                         			</div>
                         	</div>
@@ -379,16 +379,16 @@
                         				smartdocOptions.enabled = true;
                           				$("#smartdocs-status").addClass("btn-primary");
                           				$("#smartdocs-status").removeClass("btn-default");    		
-                          				$("#smartdocs-prev").show();
-                          				$("#smartdocs-next").show();
+                          				// $("#smartdocs-prev").show();
+                          				// $("#smartdocs-next").show();
                           						
                             	}
                             	else{
                         				smartdocOptions.enabled = false;
                           				$("#smartdocs-status").removeClass("btn-primary");
                           				$("#smartdocs-status").addClass("btn-default");
-                          				$("#smartdocs-prev").hide();
-                          				$("#smartdocs-next").hide();
+                          				// $("#smartdocs-prev").hide();
+                          				// $("#smartdocs-next").hide();
                             	}
                             }
                             var showmx = function(haveVersion){
@@ -490,11 +490,11 @@
                         		    var max_index = filtered.length-1;
                         		    
                         		    smartdocOptions.index  = smartdocOptions.index  + 1;
-                        		    if(smartdocOptions.index >max_index){
+                                if(smartdocOptions.index >max_index){
                         		    	smartdocOptions.index  = 0; //loop
                         		    }
                         		    var target = $(filtered[smartdocOptions.index ]);
-                        	    	$('html, body').animate({
+                                $('html, body').animate({
                         	            scrollTop: target.offset().top - 220
                         	        }, 1000);
                         	        
@@ -629,16 +629,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -696,6 +686,15 @@
                                     
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -809,6 +808,20 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="clear-data"><a class="heading-anchor" href="#clear-data"><span></span></a>Clear Data</h2>
@@ -873,15 +886,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -973,14 +977,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1171,13 +1167,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="events-throttling"><a class="heading-anchor" href="#events-throttling"><span></span></a>Events Throttling</h2>
@@ -1347,6 +1336,9 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="enable-fileevents-upload"><a class="heading-anchor" href="#enable-fileevents-upload"><span></span></a>Enable File/Events Upload</h2>
@@ -1421,6 +1413,8 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
                                     
                                     
                                     
@@ -1514,6 +1508,12 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1649,6 +1649,9 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="metric-action"><a class="heading-anchor" href="#metric-action"><span></span></a>Metric Action</h2>
@@ -1709,19 +1712,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1861,6 +1851,16 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="standard-interval"><a class="heading-anchor" href="#standard-interval"><span></span></a>Standard Interval</h2>
@@ -1986,6 +1986,10 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="transport-method"><a class="heading-anchor" href="#transport-method"><span></span></a>Transport Method</h2>
@@ -2060,9 +2064,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -2162,12 +2163,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -2288,6 +2283,15 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                         <div class="">
                                     
@@ -2413,10 +2417,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="battery-and-cpu-status"><a class="heading-anchor" href="#battery-and-cpu-status"><span></span></a>Battery and CPU Status</h2>
@@ -2519,7 +2519,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
                                     
                                         <div class="">
                                     
@@ -2983,6 +2982,7 @@
                                     
                                     
                                     
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="gps-information"><a class="heading-anchor" href="#gps-information"><span></span></a>GPS Information</h2>
@@ -3085,7 +3085,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
                                     
                                         <div class="">
                                     
@@ -3398,6 +3397,7 @@
                                     </div>	
                                     
                                 </div> 
+                                    
                                     
                                     
                                         <div class="">
@@ -4074,7 +4074,6 @@
                     
                     
                     
-                    
                     {
                             presentif: "",
                             name: "AnalyticsAction",
@@ -4156,6 +4155,20 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "Analytics Action is &quot;Disable&quot;",
                             name: "ClearData",
@@ -4201,15 +4214,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -4290,14 +4294,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -4493,13 +4489,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Analytics Client Settings is &quot;Enable&quot;",
                             name: "EventsThrottling",
@@ -4674,6 +4663,9 @@
                     
                     
                     
+                    
+                    
+                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Analytics Client Settings is &quot;Enable&quot;",
                             name: "EnableFileUpload",
@@ -4754,6 +4746,8 @@
                     
                     
                     
+                    
+                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot;",
                             name: "GroupAction",
@@ -4817,6 +4811,12 @@
                         
                         ]
                     },
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -4945,6 +4945,9 @@
                     
                     
                     
+                    
+                    
+                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Group Action is &quot;Configure Details for a Single Group&quot;",
                             name: "MetricAction",
@@ -4990,19 +4993,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -5127,6 +5117,16 @@
                         
                         ]
                     },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -5265,6 +5265,10 @@
                     
                     
                     
+                    
+                    
+                    
+                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot;",
                             name: "TransportMethod",
@@ -5328,9 +5332,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
                     
                     
                     
@@ -5423,12 +5424,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -5546,6 +5541,15 @@
                         
                         ]
                     },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Group Action is &quot;Configure Details for Single Group&quot; and Group Name is &quot;System Information&quot;",
@@ -5672,10 +5676,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Group Action is &quot;Configure Levels for Multiple Groups&quot;",
                             name: "SmartBattery",
@@ -5775,7 +5775,6 @@
                         
                         ]
                     },
-                    
                     
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Group Action is &quot;Configure Level for a Single Group&quot; and Group Name is &quot;Smart Battery Status&quot;",
@@ -6336,6 +6335,7 @@
                     
                     
                     
+                    
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Group Action is &quot;Configure Levels for Multiple Groups&quot;",
                             name: "GPSInfo",
@@ -6435,7 +6435,6 @@
                         
                         ]
                     },
-                    
                     
                     {
                             presentif: "Analytics Action is &quot;Enable&quot; and Group Action is &quot;Configure Details for a Single Group&quot; and Group Name is &quot;GPS Performance&quot;",
@@ -6770,6 +6769,7 @@
                         
                         ]
                     },
+                    
                     
                     
                     {

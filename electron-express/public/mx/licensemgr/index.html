@@ -206,10 +206,10 @@
                              	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
                              	<li>
                              		<div class="btn-group" role="group" aria-label="...">
-                             			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button></span>
                         
                              			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
-                             			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button></span>
                              		</div>
                              	</li>
                              	<li><p class="navbar-text"> Your Device:</p></li>
@@ -279,7 +279,7 @@
                         				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
                         
                         			</ul>
-                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. 
                         			</p>				
                         			</div>
                         	</div>
@@ -363,16 +363,16 @@
                         				smartdocOptions.enabled = true;
                           				$("#smartdocs-status").addClass("btn-primary");
                           				$("#smartdocs-status").removeClass("btn-default");    		
-                          				$("#smartdocs-prev").show();
-                          				$("#smartdocs-next").show();
+                          				// $("#smartdocs-prev").show();
+                          				// $("#smartdocs-next").show();
                           						
                             	}
                             	else{
                         				smartdocOptions.enabled = false;
                           				$("#smartdocs-status").removeClass("btn-primary");
                           				$("#smartdocs-status").addClass("btn-default");
-                          				$("#smartdocs-prev").hide();
-                          				$("#smartdocs-next").hide();
+                          				// $("#smartdocs-prev").hide();
+                          				// $("#smartdocs-next").hide();
                             	}
                             }
                             var showmx = function(haveVersion){
@@ -474,11 +474,11 @@
                         		    var max_index = filtered.length-1;
                         		    
                         		    smartdocOptions.index  = smartdocOptions.index  + 1;
-                        		    if(smartdocOptions.index >max_index){
+                                if(smartdocOptions.index >max_index){
                         		    	smartdocOptions.index  = 0; //loop
                         		    }
                         		    var target = $(filtered[smartdocOptions.index ]);
-                        	    	$('html, body').animate({
+                                $('html, body').animate({
                         	            scrollTop: target.offset().top - 220
                         	        }, 1000);
                         	        
@@ -639,6 +639,13 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -659,22 +666,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                         <div class="">
                                     
@@ -741,6 +732,17 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -877,6 +879,23 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="standard-feature-name"><a class="heading-anchor" href="#standard-feature-name"><span></span></a>Standard Feature Name</h2>
@@ -946,40 +965,12 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="custom-feature-name"><a class="heading-anchor" href="#custom-feature-name"><span></span></a>Custom Feature Name</h2>
-                                    <p class=""></p><p>This parm allows you to enter a Custom Licensed Feature Name, which must match exactly the Licensed Feature Name contained within the Software License File acquired from Zebra Software License Server.</p>
+                                    <p class="">
+
+        </p><p>This parm allows you to enter a Custom Licensed Feature Name, which must match exactly the Licensed Feature Name contained within the Software License File acquired from Zebra Software License Server.</p>
 
 <blockquote>
   <p><strong>Note:</strong> You must use this option to verify any Licensed Feature Name that is not contained within the list of Standard Licensed Feature Names. Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.</p>
@@ -989,7 +980,10 @@
 
 <ul>
 <li>String with a valid Custom Licensed Feature Name that was contained within a Software License File acquired from the Zebra Software License Server.</li>
-</ul><p></p>
+</ul>
+
+
+<p></p>
                                         <blockquote>
                                         <p><b>Shown if:</b> The "Specify license action to perform" is "Apply" *AND* "Specify verification method to use" is "Verify against a custom feature name"</p>
                                         <p><b>Parm Name:</b> VerifyCustomFeatureName</p>
@@ -1007,11 +1001,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1096,6 +1085,34 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="license-file"><a class="heading-anchor" href="#license-file"><span></span></a>License File</h2>
@@ -1125,21 +1142,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1250,6 +1252,11 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="remove-by-standard-feature-name"><a class="heading-anchor" href="#remove-by-standard-feature-name"><span></span></a>Remove By Standard Feature Name</h2>
@@ -1304,10 +1311,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.3" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="remove-by-custom-feature-name"><a class="heading-anchor" href="#remove-by-custom-feature-name"><span></span></a>Remove by Custom Feature Name</h2>
@@ -1339,6 +1342,15 @@
                                     
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1564,13 +1576,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                 </div><!--/.container-->
                                 
                             </section><!--/#services-->
@@ -1587,15 +1592,6 @@
         csp: "licensemgr",
         name: "License Manager",
         parms: [
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -1734,6 +1730,17 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "The &quot;Specify license action to perform&quot; is &quot;Apply&quot;",
                             name: "VerifyMethod",
@@ -1832,6 +1839,23 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "The &quot;Specify license action to perform&quot; is &quot;Apply&quot; *AND* &quot;Specify verification method to use&quot; is &quot;Verify against a standard feature name&quot;",
                             name: "VerifyStandardFeatureName",
@@ -1884,36 +1908,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -1932,11 +1926,6 @@
                         
                         
                     },
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -2009,6 +1998,34 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -2027,21 +2044,6 @@
                         
                         
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -2140,6 +2142,11 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "The &quot;Specify license action to perform&quot; is &quot;Remove&quot; *AND* &quot;Specify selection method to use&quot; is &quot;Select using a standard feature name&quot;",
                             name: "SelectStandardFeatureName",
@@ -2181,10 +2188,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -2203,6 +2206,8 @@
                         
                         
                     },
+                    
+                    
                     
                     
                     

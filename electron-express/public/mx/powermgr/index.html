@@ -206,10 +206,10 @@
                              	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
                              	<li>
                              		<div class="btn-group" role="group" aria-label="...">
-                             			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button></span>
                         
                              			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
-                             			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button></span>
                              		</div>
                              	</li>
                              	<li><p class="navbar-text"> Your Device:</p></li>
@@ -279,7 +279,7 @@
                         				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
                         
                         			</ul>
-                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. 
                         			</p>				
                         			</div>
                         	</div>
@@ -363,16 +363,16 @@
                         				smartdocOptions.enabled = true;
                           				$("#smartdocs-status").addClass("btn-primary");
                           				$("#smartdocs-status").removeClass("btn-default");    		
-                          				$("#smartdocs-prev").show();
-                          				$("#smartdocs-next").show();
+                          				// $("#smartdocs-prev").show();
+                          				// $("#smartdocs-next").show();
                           						
                             	}
                             	else{
                         				smartdocOptions.enabled = false;
                           				$("#smartdocs-status").removeClass("btn-primary");
                           				$("#smartdocs-status").addClass("btn-default");
-                          				$("#smartdocs-prev").hide();
-                          				$("#smartdocs-next").hide();
+                          				// $("#smartdocs-prev").hide();
+                          				// $("#smartdocs-next").hide();
                             	}
                             }
                             var showmx = function(haveVersion){
@@ -474,11 +474,11 @@
                         		    var max_index = filtered.length-1;
                         		    
                         		    smartdocOptions.index  = smartdocOptions.index  + 1;
-                        		    if(smartdocOptions.index >max_index){
+                                if(smartdocOptions.index >max_index){
                         		    	smartdocOptions.index  = 0; //loop
                         		    }
                         		    var target = $(filtered[smartdocOptions.index ]);
-                        	    	$('html, body').animate({
+                                $('html, body').animate({
                         	            scrollTop: target.offset().top - 220
                         	        }, 1000);
                         	        
@@ -608,6 +608,20 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -634,31 +648,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -827,6 +816,16 @@
                                     </div>	
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1749,10 +1748,25 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="examples"><a class="heading-anchor" href="#examples"><span></span></a>Examples</h2>
-                                    <p class=""></p><h3 id="rebootthedevice" class="anchor"><a class="heading-anchor" href="#rebootthedevice"><span></span></a>Reboot the Device</h3>
+                                    <p class="">
+
+        </p><h3 id="rebootthedevice" class="anchor"><a class="heading-anchor" href="#rebootthedevice"><span></span></a>Reboot the Device</h3>
 
 <pre class="prettyprint"><code>
 &lt;wap-provisioningdoc&gt;
@@ -1803,23 +1817,14 @@
         &lt;/characteristic&gt;
     &lt;/characteristic&gt;
 &lt;/wap-provisioningdoc&gt;
-</code></pre><p></p>
+</code></pre>
+
+
+<p></p>
                                     
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                 </div><!--/.container-->
                                 
@@ -1837,17 +1842,6 @@
         csp: "powermgr",
         name: "Power Manager",
         parms: [
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -2082,6 +2076,16 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -2100,6 +2104,7 @@
                         
                         
                     },
+                    
                     
                     
                     

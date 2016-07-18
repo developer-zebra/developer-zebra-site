@@ -206,10 +206,10 @@
                              	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
                              	<li>
                              		<div class="btn-group" role="group" aria-label="...">
-                             			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button></span>
                         
                              			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
-                             			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button></span>
                              		</div>
                              	</li>
                              	<li><p class="navbar-text"> Your Device:</p></li>
@@ -279,7 +279,7 @@
                         				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
                         
                         			</ul>
-                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. 
                         			</p>				
                         			</div>
                         	</div>
@@ -363,16 +363,16 @@
                         				smartdocOptions.enabled = true;
                           				$("#smartdocs-status").addClass("btn-primary");
                           				$("#smartdocs-status").removeClass("btn-default");    		
-                          				$("#smartdocs-prev").show();
-                          				$("#smartdocs-next").show();
+                          				// $("#smartdocs-prev").show();
+                          				// $("#smartdocs-next").show();
                           						
                             	}
                             	else{
                         				smartdocOptions.enabled = false;
                           				$("#smartdocs-status").removeClass("btn-primary");
                           				$("#smartdocs-status").addClass("btn-default");
-                          				$("#smartdocs-prev").hide();
-                          				$("#smartdocs-next").hide();
+                          				// $("#smartdocs-prev").hide();
+                          				// $("#smartdocs-next").hide();
                             	}
                             }
                             var showmx = function(haveVersion){
@@ -474,11 +474,11 @@
                         		    var max_index = filtered.length-1;
                         		    
                         		    smartdocOptions.index  = smartdocOptions.index  + 1;
-                        		    if(smartdocOptions.index >max_index){
+                                if(smartdocOptions.index >max_index){
                         		    	smartdocOptions.index  = 0; //loop
                         		    }
                         		    var target = $(filtered[smartdocOptions.index ]);
-                        	    	$('html, body').animate({
+                                $('html, body').animate({
                         	            scrollTop: target.offset().top - 220
                         	        }, 1000);
                         	        
@@ -637,6 +637,10 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -741,32 +745,15 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="intent-action"><a class="heading-anchor" href="#intent-action"><span></span></a>Intent Action</h2>
-                                    <p class=""></p><p>This parm allow you to specify how the Intent will be sent one or more other applications.</p><p></p>
+                                    <p class="">
+
+        </p><p>This parm allow you to specify how the Intent will be sent one or more other applications.</p>
+
+
+<p></p>
                                         <blockquote>
                                         <p><b>Parm Name:</b> Action</p>
                                         <p><b>Pivotal Parm:</b> Yes</p> 
@@ -865,6 +852,28 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.1" data-api="1" data-smartdoc="">
 
                                     <h2 class="anchor" id="android-action-name"><a class="heading-anchor" href="#android-action-name"><span></span></a>Android Action Name</h2>
@@ -906,31 +915,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.1" data-api="1" data-smartdoc="">
 
                                     <h2 class="anchor" id="uri"><a class="heading-anchor" href="#uri"><span></span></a>URI</h2>
@@ -959,6 +943,46 @@
                                     
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1008,19 +1032,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.1" data-api="1" data-smartdoc="">
 
                                     <h2 class="anchor" id="mime-type"><a class="heading-anchor" href="#mime-type"><span></span></a>MIME Type</h2>
@@ -1048,15 +1059,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1130,26 +1132,21 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.1" data-api="1" data-smartdoc="">
 
                                     <h2 class="anchor" id="class-name"><a class="heading-anchor" href="#class-name"><span></span></a>Class Name</h2>
-                                    <p class=""></p><p>This parm allows you to specify a Class Name, within the application identified by the specified Package Name, to which the Intent will be sent. Specifying this parm makes the Intent an Explicit Intent and will result in a failure if no such Class exists within the specified application. The Package Name and Class Name parms should always be used together to specify a class within an application.</p>
+                                    <p class="">
+
+        </p><p>This parm allows you to specify a Class Name, within the application identified by the specified Package Name, to which the Intent will be sent. Specifying this parm makes the Intent an Explicit Intent and will result in a failure if no such Class exists within the specified application. The Package Name and Class Name parms should always be used together to specify a class within an application.</p>
 
 <p>Parm value input rules: </p>
 
 <ul>
 <li>String with a minimum size of 1 character and a maximum size of 255 characters</li>
-</ul><p></p>
+</ul>
+
+
+<p></p>
                                         <blockquote>
                                         <p><b>Shown if:</b> The Action is "StartActivity" or "StartService"</p>
                                         <p><b>Parm Name:</b> Type</p>
@@ -1168,6 +1165,12 @@
                                     
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -1403,6 +1406,11 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="4.1" data-api="1" data-smartdoc="">
 
                                     <h2 class="anchor" id="extra-names"><a class="heading-anchor" href="#extra-names"><span></span></a>Extra Names</h2>
@@ -1435,13 +1443,6 @@
                                     
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1632,18 +1633,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="examples"><a class="heading-anchor" href="#examples"><span></span></a>Examples</h2>
@@ -1665,6 +1654,27 @@
                                 </div> 
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                 </div><!--/.container-->
                                 
                             </section><!--/#services-->
@@ -1681,24 +1691,6 @@
         csp: "intent",
         name: "Intent Manager",
         parms: [
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     
@@ -1850,6 +1842,28 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -1878,31 +1892,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -1921,6 +1910,46 @@
                         
                         
                     },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -1960,19 +1989,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -2019,15 +2035,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -2063,16 +2070,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     {
                         requires: {
                             osx: "",
@@ -2091,6 +2088,12 @@
                         
                         
                     },
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -2356,6 +2359,40 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    {
+                        requires: {
+                            osx: "",
+                            osxEnd: "",
+                            mx: "4.1",
+                            api: "1",
+                            osxSpecific: "",
+                            osxSpecificList: "",
+                            osxExclude: "",
+                            osxExcludeEnd: ""
+                        },
+
+                            presentif: "The Extra Type is not &quot;none&quot;",
+                            name: "ExtraName",
+                            pivotal: "No",
+                        
+                        
+                    },
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     {
                         requires: {
                             osx: "",
@@ -2383,33 +2420,6 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    {
-                        requires: {
-                            osx: "",
-                            osxEnd: "",
-                            mx: "4.1",
-                            api: "1",
-                            osxSpecific: "",
-                            osxSpecificList: "",
-                            osxExclude: "",
-                            osxExcludeEnd: ""
-                        },
-
-                            presentif: "The Extra Type is not &quot;none&quot;",
-                            name: "ExtraName",
-                            pivotal: "No",
-                        
-                        
-                    },
                     
                     
                     

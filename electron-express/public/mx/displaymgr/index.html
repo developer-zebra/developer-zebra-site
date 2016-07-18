@@ -206,10 +206,10 @@
                              	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
                              	<li>
                              		<div class="btn-group" role="group" aria-label="...">
-                             			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button></span>
                         
                              			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
-                             			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+                             			<span class="smartdocs_wrap"><button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button></span>
                              		</div>
                              	</li>
                              	<li><p class="navbar-text"> Your Device:</p></li>
@@ -279,7 +279,7 @@
                         				<li><b>Android Version:</b> Some features only require a specific version of MX and a minimum version of Android. The version of Android on the device can be retrieved by checking the system settings application. </li>
                         
                         			</ul>
-                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. Clicking the back and next buttons on the SmartDocs bar will navigate to the sections that are relevant to your device.
+                        			<p>After identifying the version information for your device, simply select them in the SmartDocs bar. Any section that does not apply to your device will be greyed out. You can clear all settings by hitting the SmartDocs button. 
                         			</p>				
                         			</div>
                         	</div>
@@ -363,16 +363,16 @@
                         				smartdocOptions.enabled = true;
                           				$("#smartdocs-status").addClass("btn-primary");
                           				$("#smartdocs-status").removeClass("btn-default");    		
-                          				$("#smartdocs-prev").show();
-                          				$("#smartdocs-next").show();
+                          				// $("#smartdocs-prev").show();
+                          				// $("#smartdocs-next").show();
                           						
                             	}
                             	else{
                         				smartdocOptions.enabled = false;
                           				$("#smartdocs-status").removeClass("btn-primary");
                           				$("#smartdocs-status").addClass("btn-default");
-                          				$("#smartdocs-prev").hide();
-                          				$("#smartdocs-next").hide();
+                          				// $("#smartdocs-prev").hide();
+                          				// $("#smartdocs-next").hide();
                             	}
                             }
                             var showmx = function(haveVersion){
@@ -474,11 +474,11 @@
                         		    var max_index = filtered.length-1;
                         		    
                         		    smartdocOptions.index  = smartdocOptions.index  + 1;
-                        		    if(smartdocOptions.index >max_index){
+                                if(smartdocOptions.index >max_index){
                         		    	smartdocOptions.index  = 0; //loop
                         		    }
                         		    var target = $(filtered[smartdocOptions.index ]);
-                        	    	$('html, body').animate({
+                                $('html, body').animate({
                         	            scrollTop: target.offset().top - 220
                         	        }, 1000);
                         	        
@@ -625,11 +625,6 @@
                                     
                                     
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
                                         <div class="" data-osx="" data-osx-end="" data-osx-specific-list="" data-osx-specific="" data-osx-exclude="" data-osx-exclude-end="" data-mx="" data-api="" data-smartdoc="">
 
                                     <h2 class="anchor" id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
@@ -646,6 +641,15 @@
                                     
                                     
                                 </div> 
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
@@ -886,14 +890,24 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
                                         <div class="">
                                     
                                     <h2 class="anchor" id="screen-shot-usage"><a class="heading-anchor" href="#screen-shot-usage"><span></span></a>Screen Shot Usage</h2>
-                                    <p class=""></p><p>This parm will allow you to set the timeout interval for the device's screen. When there are no device user interactions (e.g. touch panel or key activations) within the specified time interval, then the display screen of the device will automatically turn off. Setting this interval to a lower amount of time will help to conserve power on the device, at the expense of potentially reduced convenience for the device user.</p>
+                                    <p class="">
+
+        </p><p>This parm will allow you to set the timeout interval for the device's screen. When there are no device user interactions (e.g. touch panel or key activations) within the specified time interval, then the display screen of the device will automatically turn off. Setting this interval to a lower amount of time will help to conserve power on the device, at the expense of potentially reduced convenience for the device user.</p>
 
 <blockquote>
   <p><strong>Note:</strong> The underlying Android display system only supports the selection of a fixed set of values for the display screen timeout, determined by the values supported by the System Settings Menu. This parm can only set the actual display screen timeout to one of those supported values (listed in the table below). Specifying a value that is less than the smallest value shown in the table or greater than the largest value shown in the table will cause no change to be made to the current display screen timeout interval and will cause an error to be returned in the Result XML document. Specifying a value between two supported values shown in the table will cause the closest value to the requested value to be selected, with no error returned in the Result XML document.</p>
-</blockquote><p></p>
+</blockquote>
+
+
+<p></p>
                                         <blockquote>
                                         <p><b>Parm Name:</b> ScreenShotUsage</p>
                                         <p><b>Pivotal Parm:</b> No</p> 
@@ -970,15 +984,6 @@
                                     </div>	
                                     
                                 </div> 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     
                                     
@@ -1412,6 +1417,10 @@
                     
                     
                     
+                    
+                    
+                    
+                    
                     {
                             presentif: "",
                             name: "TimeoutInterval",
@@ -1601,6 +1610,11 @@
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
                     {
                             presentif: "",
                             name: "ScreenShotUsage",
@@ -1664,15 +1678,6 @@
                         
                         ]
                     },
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     

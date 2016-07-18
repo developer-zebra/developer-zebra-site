@@ -13,9 +13,7 @@ Knowledge of Android programming and familiarity with the Android intent mechani
  
 * Android Versions:	
 	* 4.4 and later.
-* Devices:	
-	* o	Symbol Android devices, such as the MC40, MC92, MC18, TC75, TC70 and TC55
- 
+
  
 ## Features
 On Symbol devices, extra battery information can be retrieved using the standard Android Battery Intent. Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information provided by power precision and power precision plus batteries:

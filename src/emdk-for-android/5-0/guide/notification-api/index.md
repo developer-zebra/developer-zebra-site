@@ -43,6 +43,15 @@ below:
 
 *  The notification devices must be paired and connected before enabling the notification device; otherwise this will result in DEVICE\_NOT\_CONNECTED error.
 
+* The applications can enumerate the supported devices and determine its supported notification capability of the remote device to minimize the confusion on setting the unsupported features. The capabilities can be determined using the methods of enumerated DeviceInfo object such as isLEDSupported(), isBeepSupported(), isVibrateSupported(). 
+
+    The notification capabilities are:
+	1. Line of sight LED
+    2. Beeping
+    3. Vibration
+
+* When multiple pluggable External Vibrators connected to WT6000 device, the WT6000 device always chooses the first connected External Vibrator for sending the notifications.
+
 *   Only one application is allowed to enable the notification device at a time. The recommendation for the application to disable notification device object when application doesn’t need the notification devices anymore.
 
 *   The notification sent to the notification device will replace the previous notifications in progress and the applications must be designed to handle this based on the business requirements.
@@ -51,7 +60,6 @@ below:
 
 
 *   Disabling the notification device cancels the pending notification in progress and closes the session for the others applications to utilize the notification device.
-
 
 
 ### Getting Notification Manager
@@ -133,8 +141,7 @@ either an EMDK scanning app or DataWedge may change this value. If the
 behavior is not desirable, consider changing the Connection Idle Timeout
 setting in the corresponding app or DataWedge.
 
-ScannerParams.remoteDecodeHapticFeedback is being removed in this
-release.
+
 
 ##Barcode API
 
@@ -155,7 +162,9 @@ below:
 -   An app should either use the DataCapture feature of the ProfileManager or barcode APIs for scanning barcodes  but it is not allowed access the both at the same time. The EMDKManager > BarcodeManager takes precedence over the DataCapture feature of the ProfileManager.
 
 
--   The EMDKManager > BarcodeManager used in an application must be released before another application can use that feature.When the scanner such as RS6000, RS4000 is disconnected and connected back, the calling any method on the barcode object will result in INVALID_OBJECT error. The application can register for the connection notifications to know when the device gets disconnected and connected back so that applications can programmatically  re-initialize the scanner again.
+-   The EMDKManager > BarcodeManager used in an application must be released before another application can use that feature.
+
+-   When the scanner such as RS6000, RS4000 is disconnected and connected back, the calling any method on the barcode object will result in INVALID_OBJECT error. The application can register for the connection notifications to know when the device gets disconnected and connected back so that applications can programmatically  re-initialize the scanner again.
 
 
 -   Disabling the scanner cancels the pending read in progress and closes the session for the others applications to utilize the device.

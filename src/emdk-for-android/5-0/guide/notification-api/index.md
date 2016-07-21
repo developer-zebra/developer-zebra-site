@@ -41,7 +41,7 @@ to control the built-in notifications on the mobile devices.
 A list of points to be considered during application design are
 below:
 
-*  The notification devices must be paired and connected before enabling the notification device; otherwise this will result in DEVICE\_NOT\_CONNECTED error.
+*  The notification devices must be paired and connected before enabling the notification device; otherwise this will result in DEVICE_NOT_CONNECTED error.
 
 * The applications can enumerate the supported devices and determine its supported notification capability of the remote device to minimize the confusion on setting the unsupported features. The capabilities can be determined using the methods of enumerated DeviceInfo object such as isLEDSupported(), isBeepSupported(), isVibrateSupported(). 
 
@@ -80,8 +80,8 @@ There are two options here:
     
     The valid Device Identifiers are:
     
-    * BLUETOOTH\_IMAGER\_RS6000: Use the Ring Scanner “RS6000”
-    * EXTERNAL\_VIBRATOR1: Use the pluggable External Vibrator
+    * BLUETOOTH_IMAGER_RS6000: Use the Ring Scanner “RS6000”
+    * EXTERNAL_VIBRATOR1: Use the pluggable External Vibrator
     
     If the specified Device Identifier is not supported on the target platform, call to “getDevice” will return null.
 
@@ -100,22 +100,16 @@ There are two options here:
         Iterator<DeviceInfo> it = deviceList.iterator();
 
         while(it.hasNext()) {
-
             DeviceInfo devInfo = it.next();
-
             if(devInfo.getConnectionType()==BLUETOOTH_SSI&&devInfo.getDeviceType()==IMAGER){
-
                 notificationObject = notificationManager.getDevice(devInfo);
-
                 break;
-
             }
-
         }
 
 ### Using Notification Device
 
-The notification device must be enabled before sending notifications to the notification devices and this opens the session with the hardware. If the notification device is already enabled by this application, it will throw an exception with error DEVICE\_ALREADY\_ENABLED. EMDKManager > NotificationManager used in an application must be released before another application can use that feature.
+The notification device must be enabled before sending notifications to the notification devices and this opens the session with the hardware. If the notification device is already enabled by this application, it will throw an exception with error DEVICE_ALREADY_ENABLED. EMDKManager > NotificationManager used in an application must be released before another application can use that feature.
 
 
 The business application can use the NotificationDevice.notify(Notification notification) method to send the notification to remote  device to notify the users.  Passing the null object to this method throws an exception. The notification sent to the notification device will replace the previous notifications in progress and the applications must be designed to handle this based on the business requirements.

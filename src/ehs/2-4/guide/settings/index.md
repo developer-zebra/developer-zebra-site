@@ -549,7 +549,7 @@ Enables one or more services to be automatically launched after EHS starts up. W
 ------
 
 ### Wallpaper
-Allows a background image to be specified for display in User Mode. If left unspecified, default image will be used. Supports only .PNG format files in the `/enterprise/usr` directory. 
+Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image will be displayed. **Supports .PNG format files in the `/enterprise/usr` directory only. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
 <img alt="" style="height:350px" src="wallpaper.png"/>
 
@@ -584,7 +584,8 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ------
 
 ### Kiosk Mode Enabled
-Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). 
+Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that works in much the same way**.
+
 
 > Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
 
@@ -704,7 +705,7 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
 ### Bypass Keyguard
 Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
 
->**The Bypass Keyguard feature fails to lock screen after an Android L device is rebooted**.  
+>**On Android L: The Bypass Keyguard feature fails to unlock the screen after rebooting a device running Android L**.
 
 <b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please see to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
@@ -726,7 +727,7 @@ The Android Keyguard (also known as the Lock Screen).
 ------
 
 ### Keyguard Camera Disabled
-Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the camera app is enabled on the device, the camera icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
@@ -742,7 +743,7 @@ Controls whether the device camera will be accessible from the Keyguard screen (
 ------
 
 ### Keyguard Search Disabled
-Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the search app is enabled on the device, the search icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 
@@ -786,6 +787,16 @@ Controls whether full or limited settings are available when the device is in Us
 #### Example
 
     <system_settings_restricted>1</system_settings_restricted>
+
+**Notes and Warnings**: 
+
+* To make use of this setting, the **System settings app must be explicitly enabled in advance** using the [Enable/Disable Apps](#enabledisableapps) feature. 
+
+* This mode limits user access to certain features by preventing their **display** in the UI. **It does not block the features themselves**; in some situations, Android makes restricted settings available to the user. For example, if the charge in a device battery becomes critically low, Android provides access to apps in the low battery warning display so they may be stopped, disabled or uninstalled. This can be prevented only by disabling the Settings app completely.
+
+* With System settings restricted, it is still possible to add shortcuts to restricted System-settings components (i.e. apps) using a third-party shortcut creator. However, such shortcuts also will be available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
+
+* Uninstalling EHS will not revert Restricted System Settings to its original state. If required, this must be done manually before uninstalling EHS.
 
 ------
 
@@ -896,7 +907,7 @@ Permits the option of injecting key-value pairs via XML into an app when it laun
 
     <applications>
         <application label="Inventory" package="com.access.inventory" activity=" com.access.inventory.Login"
-        bundle="username=John Brown;password=MyPassW0rd;country=USA;date=090615"/>  
+        bundle="username=John Brown;country=USA;date=090615"/>  
     </applications>
 
 ------
@@ -929,7 +940,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 * If the same package name is present under both tags, that app will be disabled.
 * Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag.  
 * To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag. 
-* These tags cannot be used to disable DataWedge or other services. 
+* These tags cannot be used to [disable DataWedge](../../../../datawedge/5-0/guide/setup#disabledatawedge) or other services. 
 
 <b>Possible values</b>:
 
@@ -1027,6 +1038,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 * The data also is saved in the &lt;Applications&gt; section of the `enterprisehomescreen.xml` file as indicated above. 
 * To remove a shortcut from user screen, delete the corresponding "link" tag from the config file. 
 * Adding duplicate shortcuts for the same local or remote application is allowed.
+* Shortcuts intended for use by EHS must be added after EHS is installed and made the default launcher. 
 * EHS does not check the validity of shortcuts; it's up to the administrator to ensure that shortcuts are valid in all circumstances. 
 
 <b>Android Notes</b>:
@@ -1038,7 +1050,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ------
 
 ### App Launch Flags 
-EHS supports the option of specifying one or more Android Intent flags when an application is launched, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to launch not with its main activity, for example, but with its most recent one, retaining acquired data that would otherwise have been lost after an inadvertant press of the HOME key immediately after a scan. 
+EHS supports the option of specifying one or more Android Intent flags when an application is launched, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to launch not with its main activity, for example, but with its most recent one, retaining acquired data that would otherwise have been lost after an inadvertent press of the HOME key immediately after a scan. 
 
 App Launch Flags can be assigned to individual apps, Kiosk apps or those designated as part of a group. The flag will apply to all apps in groups of the following types: 
 
@@ -1068,6 +1080,8 @@ App Launch Flags can be assigned to individual apps, Kiosk apps or those designa
 * Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;
 * Intent.FLAG_ACTIVITY_SINGLE_TOP;
 * Intent.FLAG_ACTIVITY_TASK_ON_HOME;
+
+Refer to the [Android Intents docs](https://developer.android.com/reference/android/content/Intent.html) for information about the intended behavior of these flags. 
 
 ####Examples
 

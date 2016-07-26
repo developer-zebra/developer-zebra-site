@@ -13,9 +13,7 @@ Knowledge of Android programming and familiarity with the Android intent mechani
  
 * Android Versions:	
 	* 4.4 and later.
-* Devices:	
-	* o	Symbol Android devices, such as the MC40, MC92, MC18, TC75, TC70 and TC55
- 
+
  
 ## Features
 On Symbol devices, extra battery information can be retrieved using the standard Android Battery Intent. Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information provided by power precision and power precision plus batteries:
@@ -27,15 +25,15 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>Power Precision </td>
-		<td>MC40, MC92, TC55, TC75, TC70</td>
+		<td>MC40, MC92, TC55, TC75, TC70, MC67</td>
 	</tr>
 	<tr>
 		<td>Power Precision Plus </td>
-		<td>MC18, TC8000</td>
+		<td>MC18, TC8000, WT6000</td>
 	</tr>
 	<tr>
 		<td>Backup Battery</td>
-		<td>TC8000, MC92, MC40</td>
+		<td>TC8000, MC92, MC40, MC67, WT6000</td>
 	</tr>
 </table>
 
@@ -179,7 +177,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td>Remaining time until the device becomes unusable under current discharge conditions. If the returned value is 65535, then time_to_empty is considered to be unknown</td> 
 		<td>time_to_empty </td>
 		<td>Int</td>
-		<td>Units=</td>
+		<td>Units=mins</td>
 		<td> </td>
 		<td>X</td>
 		<td> </td>	

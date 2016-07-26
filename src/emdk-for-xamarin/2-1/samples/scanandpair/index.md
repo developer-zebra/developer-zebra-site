@@ -2,24 +2,16 @@
 publish: true
 title: Scan and Pair
 description: This sample application will show how the Scan and Pair API can be used to pair two bluetooth devices programmatically.
-downloads:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/ScanAndPairSample1.zip'
-sources:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/ScanAndPairSample1'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-2_1/archive/ScanAndPairSample1.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-2_1/tree/ScanAndPairSample1'
 features:
   - Profile Manager
   - Scan and Pair
   - Java APIs
 devices:
   - MC18KK
-  - MC32N0JB
-  - MC40JB
   - MC40KK
-  - MC67JB
   - MC92KK
-  - TC55JB
   - TC55KK
   - TC70KK
   - TC75KK
@@ -28,8 +20,8 @@ screenshots:
   - 1.png
   - 2.png
 layout: sample.html
-product: EMDK For Android
-productversion: '5.0'
+product: EMDK For Xamarin
+productversion: '2.1'
 ---
 
 ##Overview
@@ -39,12 +31,16 @@ This sample application will show how the Scan and Pair API can be used to pair 
 
 For this sample, you will need two Android Bluetooth devices, one must be an EMDK for Android supported device. You will also need a barcode that contains the Bluetooth MAC address of the remote bluetooth device that we will be pairing with(The one not running the EMDK app).
 
->Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
 
 ##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/5-0/guide/emdksamples_androidstudio)
+1. Choose a sample and click the **See Details** button.
+2. Now click the **Download** button 
+3. Extract the downloaded project zip file.
+4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project will load in the default IDE for that file type.
+
+Alternatively, you can Launch your prefered IDE ( Visual Studio or Xamarin Studio ) and load the project via the File > Open menu.  
+
 
 ##Using This Sample
 
@@ -60,9 +56,6 @@ The following guide will walk you through setting up the EMDK samples in your ID
 After pairing is complete, the status label will display "Bluetooth device is paired successfully".
 
   ![img](scanandpair4.png) 
-
-
-
 
 
 

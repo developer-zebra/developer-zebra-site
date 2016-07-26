@@ -4,10 +4,10 @@ title: Data Capture
 description: Shows how to use the EMDK for Android Profile APIs to manage Data Capture profiles.
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/developer-zebra/samples-emdkforandroid-5_0/archive/ProfileDataCaptureSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/ProfileDataCaptureSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/developer-zebra/samples-emdkforandroid-5_0/tree/ProfileDataCaptureSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/ProfileDataCaptureSample1'
 features:
   - Profile Manager
   - Data Capture

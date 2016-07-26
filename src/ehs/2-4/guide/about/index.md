@@ -32,7 +32,7 @@ Selecting 'Always' locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> Ready to get started? [Download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
+> Ready to get started? [Download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen)
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -267,7 +267,7 @@ _The User Mode screen with XXL icons_. -->
 
 * **[App Icon Label Text Color](../settings#iconlabeltextcolor) -** is now white on a transparent background to improve readability. 
 
-> To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen).
+> To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen).
 
 ------
 

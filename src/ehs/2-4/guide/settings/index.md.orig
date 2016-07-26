@@ -1081,7 +1081,11 @@ App Launch Flags can be assigned to individual apps, Kiosk apps or those designa
 * Intent.FLAG_ACTIVITY_SINGLE_TOP;
 * Intent.FLAG_ACTIVITY_TASK_ON_HOME;
 
+<<<<<<< HEAD
+Refer to the [Android Developer docs](https://developer.android.com/guide/components/intents-filters.html) for more information. 
+=======
 Refer to the [Android Intents docs](https://developer.android.com/reference/android/content/Intent.html) for information about the intended behavior of these flags. 
+>>>>>>> TUT-8235
 
 ####Examples
 

@@ -229,8 +229,24 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">WT6000 Lollipop (Android 5.0)</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">??</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    &nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">??</font></b></p>
+</td>
+</tr>
 </tbody>
 </table>
+&#42; _EHS 2.4 will be the final version that supports Zebra devices running Android Jelly Bean_.
 
 ## Manual Installation
 These instructions apply to direct installation (from a computer to a single device) using the installer APK (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the filename(s) where necessary in the instructions. 
@@ -444,7 +460,7 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Instal
 
 Manual uninstallation of EHS is now complete. 
 
-> <b>Note</b>: Following uninstallation of EHS, some device settings configured by EHS might not revert to their original state prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
+> <b>Note</b>: USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some other device settings configured by EHS might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
@@ -510,7 +526,7 @@ To uninstall EHS using an MDM, instruct the MDM to do the following:
 
 &#50;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
-> <b>Note</b>: Some device settings configured by EHS might not revert to their original state prior to installation. Please make sure to reconfigure the device as required <u>before</u> removing EHS. 
+> <b>Note</b>: USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some other device settings configured by EHS might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 

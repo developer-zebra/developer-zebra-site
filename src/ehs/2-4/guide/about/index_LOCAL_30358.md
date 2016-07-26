@@ -32,7 +32,7 @@ Selecting 'Always' locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> Ready to get started? [Download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4)
+> Ready to get started? [Download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen)
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -243,8 +243,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <br>
 >**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled with the EHS download package. 
 
-* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (See important [Android Lollipop Notes](#androidlollipopnotes), below.) 
-
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 
 * **[App Launch Flags](../settings#applaunchflags) -** permit one or more Android Intent flags to be specified when an application is launched, directing launch behavior as required. 
@@ -265,9 +263,11 @@ _The icon size UI is accessible from Admin or User Modes (default shown)_.
 _The User Mode screen with XXL icons_. -->
 * **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of the device battery and Wi-Fi signal on a single screen.
 
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (See important [Android Lollipop Notes](#androidlollipopnotes), below.) 
+
 * **[App Icon Label Text Color](../settings#iconlabeltextcolor) -** is now white on a transparent background to improve readability. 
 
-> To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4).
+> To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen).
 
 ------
 
@@ -279,7 +279,7 @@ _The User Mode screen with XXL icons_. -->
 
 * **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way.
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way. A warning prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning. 
 
 * **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 

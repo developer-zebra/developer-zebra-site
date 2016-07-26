@@ -14,7 +14,7 @@ This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It a
 ## Kiosk Mode
 Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode places the app in full-screen mode and prevents the BACK and HOME keys from being used to exit the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
 
-**Kiosk Mode should not be used with Screen Pinning, a feature in Android L that works in much the same way. A warning prompt will appear if Kiosk Mode is selected without first disabling Screen Pinning**. 
+**On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that works in much the same way**.
 
 ##### Kiosk Mode tags:
 <b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled

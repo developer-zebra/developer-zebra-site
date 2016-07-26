@@ -515,7 +515,7 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'enterprise-keyboard/1-0/'
     }))
-    .use(showdown({literalMidWordUnderscores:true}))
+    .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,
       suffix: '...'

@@ -24,7 +24,7 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 </td>
 <td style="width: 140px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_020300.apk</font></b></p>
+    EHS_020404.apk</font></b></p>
 </td>
 <td style="width: 140px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
@@ -32,7 +32,7 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 </td>
 <td style="width: 140px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_R_020300.apk </font></b></p>
+    EHS_R_020404.apk </font></b></p>
 </td>
 </tr>
 <tr bgcolor="#ccffcc" >
@@ -234,14 +234,14 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 <p class="MsoNormal"><font color="#333399" size="3">WT6000 Lollipop (Android 5.0)</font></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">??</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     &nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">??</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
 </tbody>

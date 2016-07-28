@@ -5,7 +5,7 @@ insert:
 layout: guide.html
 menu:
   title: Enterprise Browser
-  img: /enterprise-browser/images/logo.png
+  img: enterprise_browser_logo.png
   items:
     - title: Home
       url: /enterprise-browser/1-4/guide/about

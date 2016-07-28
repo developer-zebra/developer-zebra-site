@@ -1684,7 +1684,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](/
 	<NewTabPhysicalMemLimit value="50"/>
 
 ### NewTabVirtualMemLimit
-Controls whether a new Tab will be created using the [NativeTabbar.create API](/enterprise-browser/1-4api/NativeTabbar) when a virtual memory usage percentage is hit. For example, if set to 80, new tabs will stop being created when the virtual memory usage reaches or exceeds 80 percent of the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
+Controls whether a new Tab will be created using the [NativeTabbar.create API](/enterprise-browser/1-4/api/NativeTabbar) when a virtual memory usage percentage is hit. For example, if set to 80, new tabs will stop being created when the virtual memory usage reaches or exceeds 80 percent of the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
 
 **Possible Values**
 
@@ -1696,7 +1696,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](/
 
 ## ZoomKey
 ### ZoomInKey
-Controls zoom-IN behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](/enterprise-browser/1-4/guide/configreference?Remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
+Controls zoom-IN behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
 
 **Possible Values**
 
@@ -1797,14 +1797,14 @@ The table below shows the behavior of Enterprise Browser when function keys are 
 		<th>Enable Function Key = TRUE</th>
 		<td valign="top">
 			<ul>
-				<li>All Function Keys <b>can</b> be captured by the <a href="index.html#api-keycapture">Key Capture Module</a>
+				<li>All Function Keys <b>can</b> be captured by the <a href="/enterprise-browser/1-4/api/keycapture">Key Capture Module</a>
 				<li>Function Key will <b>not</b> have its default Operating system behavior
 			</ul>
 		</td>
 		<td valign="top">
 			<ul>
-				<li>Function Keys with default OS behavior <b>can not</b> be captured by the <a href="index.html#api-keycapture">Key Capture Module</a>
-				<li>Function Keys without default OS behavior <b>can</b> be captured by the <a href="index.html#api-keycapture">Key Capture Module</a>
+				<li>Function Keys with default OS behavior <b>can not</b> be captured by the <a href="/enterprise-browser/1-4/api/keycapture">Key Capture Module</a>
+				<li>Function Keys without default OS behavior <b>can</b> be captured by the <a href="/enterprise-browser/1-4/api/keycapture">Key Capture Module</a>
 				<li>Function Key <b>will</b> have its default Operating system behavior (if any)
 			</ul>
 		</td>
@@ -1814,13 +1814,13 @@ The table below shows the behavior of Enterprise Browser when function keys are 
 		<th>Enable Function Key = FALSE</th>
 		<td valign="top">
 			<ul>
-				<li>All Function Keys <b>can</b> be captured by the <a href="index.html#api-keycapture">Key Capture Module</a>
+				<li>All Function Keys <b>can</b> be captured by the <a href="/enterprise-browser/1-4/api/keycapture">Key Capture Module</a>
 				<li>Function Key will <b>not</b> have its default Operating system behavior
 			</ul>
 		</td>
 		<td valign="top">
 			<ul>
-				<li>All Function Keys <b>can not</b> be captured by the <a href="index.html#api-keycapture">Key Capture Module</a>
+				<li>All Function Keys <b>can not</b> be captured by the <a href="/enterprise-browser/1-4/api/keycapture">Key Capture Module</a>
 				<li>Function Key will <b>not</b> have its default Operating system behavior (if any)</li>
 			</ul>
 		</td>

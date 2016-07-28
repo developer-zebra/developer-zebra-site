@@ -1,5 +1,5 @@
 ---
-title: Config.XML Reference
+title: Config.xml Reference
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
@@ -49,11 +49,11 @@ The following is an example of a typical configuration file, Android edition. **
 **WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
 
 	:::xml
-	<?xml version="1.0"?>
-	<!-- Enterprise Browser 1.3 Configuration file for Android-->
+	<?xml version = "1.0"?>
+	<!-- Enterprise Browser 1.4 configuration file for Android-->
 	<!-- IMPORTANT: Differences exist in Windows Mobile/CE version--> 
 	<Configuration>
-   
+	   
 	  <DebugButtons>
 	    <DebugButtonsEnabled value="0" />
 	  </DebugButtons>
@@ -72,12 +72,10 @@ The following is an example of a typical configuration file, Android edition. **
 	  <Shortcut>
 	    <ShortcutCreationEnabled value="0"/>
 	  </Shortcut>
-
 	  <ZoomKey>
 	        <ZoomInKey value=""/> 
 	        <ZoomOutKey value=""/> 
 	   </ZoomKey>
-
 	  <Logger>
 	    <LogProtocol   value="FILE"/>
 	    <LogPort       value="80"/>
@@ -113,6 +111,10 @@ The following is an example of a typical configuration file, Android edition. **
 		<SplashScreenPath value="file://%INSTALLDIR%/rho/apps/app/loading.png"/>
 		<SplashScreenDuration value="0"/>
 	  </SplashScreen>
+	  
+	  <WakeLock>
+	    <WakeLockType value=""/>
+	  </WakeLock>
 	 
 	  <VoidConnection>
 	    <TrackConnection value="0"/>
@@ -174,7 +176,6 @@ The following is an example of a typical configuration file, Android edition. **
 	      <HTTPS_Proxy value=""/>
 	      <isWindowsKey  value="0"/>
 	      <usedwforscanning  value="0"/>
-
 	      <IntentReceiver>
 	        <EnableReceiver  value="0"/>
 	        <IntentAction  value=""/>
@@ -184,56 +185,21 @@ The following is an example of a typical configuration file, Android edition. **
 	      <General>
 	        <Name value="Menu"/>
 	        <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
-	        <UseRegularExpressions value="REGULAR_EXPRESSIONS_FLAG"/>
 	      </General>
 	      
 	      <Scanner>
 	        <DisableScannerDuringNavigation value="1"/>
 	      </Scanner>
 	      
-	      <WebDB>
-	        <WebStorageDBPath value="file://%INSTALLDIR%"/>
-	        <WebSQLDBQuota value="5000000"/>
-	        <WebSQLDBPath value="file://%INSTALLDIR%"/>
-	      </WebDB>
-
-	      <ApplicationCache>
-	        <ApplicationCachePath VALUE="file://%INSTALLDIR%"/>
-	        <ApplicationCacheQuota VALUE="5000000"/>
-	      </ApplicationCache>
-
-	      <NPAPI>
-	        <NPAPIDirectory value="file://%INSTALLDIR%/NPAPI/"/>
-	        <Preloads>
-	          <PreloadLegacyActiveX value="0"/>
-	          <PreloadLegacyGeneric value="1"/>
-	          <PreloadLegacyODAX    value="1"/>
-	          <PreloadLegacyNoSIP   value="1"/>
-	          <PreloadLegacyAirBeam value="1"/>
-	          <PreloadLegacyAPD     value="1"/>
-	          <PreloadJSObjects     value="1"/>
-	        </Preloads>
-	      </NPAPI>
-	      
-	      <Preloads>
-	        <Preload value="Hourglass"/>
-	        <Preload value="SIP"/>
-	        <Preload value="ScreenOrientation"/>
-	      </Preloads>
-		  
-		  
-		 <Authentication>
+		  <Authentication>
 			<!--  Used for Digest Access Authentication and Basic Access Authentication -->
 			<!--  Global  -->
-			<!--Username VALUE=""/-->
-			<!--Password VALUE=""/-->
+			<Username VALUE=""/>
+			<Password VALUE=""/>
 		</Authentication>
 	      
 	      <HTMLStyles>
-	        <FitToScreenEnabled    value="1" />
-	        <ClearTypeEnabled      value="1" />
 	        <JavascriptEnabled     value="1" />
-	        <TextSelectionEnabled  value="0" />
 	        <FontFamily            value="Droid Sans Fallback" />
 	      </HTMLStyles>
 	      
@@ -265,7 +231,7 @@ The following is an example of a typical configuration file, Android edition. **
 	      
 	      <Navigation>
 	        <BadLinkURI value="file://%INSTALLDIR%/badlink.html"/>
-	        <UserAgent  value="Mozilla/5.0 (AndroidWebKit; U; /%p) AppleWebKit/%w (KHTML, like Gecko) Version/%e Mobile Safari/%w" />
+	        <UserAgent  value="" />
 			    <NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
 			    <ViewportEnabled value="1"/>
 			    <VerifyPeerCertificate value="1"/>
@@ -279,16 +245,17 @@ The following is an example of a typical configuration file, Android edition. **
 	        <EnableCtrlKey_V    value="1"/>
 	        <EnableCtrlKey_O    value="0"/>
 	        <EnableCtrlKey_P    value="0"/>
-	     </DeviceKeys>
+	      </DeviceKeys>
 	  
 	      <DefaultMetaTags>
 	      </DefaultMetaTags>
 
 	      <CustomDOMElements value=""/>
 	    
-	  	  </Application>
-	 	 </Applications>
-		</Configuration>
+	    </Application>
+	  </Applications>
+	</Configuration>
+
 
 ## General
 ### StartPage
@@ -432,13 +399,14 @@ Specifies the Category under which the receiver is to be registered. There can b
 
 
 ## DebugButtons
+
 ### DebugButtonsEnabled
 When enabled, presents a set of controls useful for development and debugging purposes.
-Note: When using this feature with the IE engine on a CE device, screen distortion may be noticed when scrolling.
+Note: When using this feature with the IE engine on a CE device, screen distortion may be displayed while scrolling.
 
 **Notes**
 
-* When using this feature with the IE engine on a CE device, screen distortion may be noticed when scrolling.<br>
+* When using this feature with the IE engine on a CE device, screen distortion may be displayed while scrolling.<br>
 * When debug buttons are enabled, [Gestures](/enterprise-browser/1-4/api/Gesture) may not function as expected.<br>
 
 **Possible Values**
@@ -1146,7 +1114,7 @@ When enabled, places a settings button at the bottom right corner of all screens
 	<SettingsButtonEnabled value="1"/>
 
 ### SettingsPageProtectionEnabled 
-When enabled, prompts for a password before allowing access to the Settings page. Password is stored using the SettingsPagePassword tag. 
+When enabled, prompts for a password before allowing access to the Settings page. Password is stored using the SettingsPagePassword tag. **Default password** = "admin" if none is entered.
 
 **Possible Values**
 
@@ -1161,7 +1129,7 @@ When enabled, prompts for a password before allowing access to the Settings page
 ### SettingsPagePassword 
 **WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
 
-Contains the password for accessing the Settings page when password function is enabled using the SettingsPageProtectionEnabled tag. Can be edited only when SettingsPageProtectionEnabled tag is set to "1" and cannot be left empty. 
+Contains the password for accessing the Settings page when password function is enabled using the SettingsPageProtectionEnabled tag. Can be edited only when SettingsPageProtectionEnabled tag is set to "1" and cannot be left empty. **Default password** = "admin" if password is enabled and no password is entered.
 
 **Possible Values**
 

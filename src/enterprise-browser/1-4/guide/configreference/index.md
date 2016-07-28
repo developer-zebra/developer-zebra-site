@@ -4,20 +4,31 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-Runtime configuration settings of Enterprise Browser apps are managed through the Config.xml file. The Config.xml file is required; your app will not start without it. Config.xml determines features and behavior of the EB runtime, such as the keys that can be intercepted by an app and whether to pre-load modules on startup. A sample configuration file is provided as part of the Enterprise Browser installation, and contains defaults for many (though not all) of the most common settings. 
+Runtime configuration settings of Enterprise Browser apps are managed through the `Config.xml` file. The `Config.xml` file is required; no EB app will start without it. The `Config.xml` determines features and behavior of the EB runtime, such as the keys that can be intercepted by an app and whether to pre-load modules on startup. A sample configuration file is provided as part of the Enterprise Browser installation, and contains defaults for many (though not all) of the most common settings. 
 
-The sample Config.xml file also is displayed below, and is followed by explanations of all settings. The EB Config.xml can be edited with an ordinary text editor or with the Config Editor utility included with the installation of Enterprise Browser 1.3. For more information, please refer to the [Config Editor utility guide](/enterprise-browser/1-4/guide/ConfigEditor). 
+The sample `Config.xml` file also is displayed below, and is followed by explanations of all settings. The EB `Config.xml` can be edited with an ordinary text editor or with the Config Editor utility included with the installation of Enterprise Browser 1.3. For more information, please refer to the [Config Editor utility guide](/enterprise-browser/1-4/guide/ConfigEditor). 
 
-## Configuration file location
-The location of the configuration file loaded by the Enterprise Browser is dependent on a number of factors:
+### Config.xml Location
+The location of the configuration file depends on the target device:
 
-* When running on the Enterprise Tablet the configuration file is read from `/Android/data/com.symbol.enterprisebrowser/Config.xml`.
-* When running on all other devices the Enterprise Browser will attempt to launch the configuration file `Config.xml` located in the folder `Config` off the installation root.
-* You can change which configuration file is loaded using the /C: configuration option
+* On the Enterprise Tablet, the `Config.xml` file is read from: 
+`/Android/data/com.symbol.EnterpriseBrowser/Config.xml`
 
-For persistent installations, on cold boot the `Config.xml` file is copied from `\Application\EnterpriseBrowser\Config\Config.xml` to `\Program Files\EnterpriseBrowser\Config\Config.xml`; bear this in mind if you want your configuration to persist across cold boot. <!-- This behavior may be modified by changing `\Application\RhoElements.cpy`. --> <!-- Need to verify this -->
+* On all other devices, Enterprise Browser will attempt to read the `Config.xml` file from the `/Config` directory off the installation root, which varies by device platform: 
 
->Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+	* **Android**: `/Android/data/com.symbol.enterprisebrowser`
+	* **Windows**: `\Program Files\EnterpriseBrowser\Config`
+
+* If multiple `Config.xml` files are required for a single device, they can be configured and selected at runtime using the /C: configuration parameter or by using Shortcuts. See the [Shortcut Creator Guide](/enterprise-browser/1-4/guide/ShortcutCreator) for details.
+
+####Persistent Installations
+If a configuration must be retained after a cold boot, a persistent installation can be selected (applies to Windows devices only). In such systems: 
+
+* The `Config.xml` file is permanently stored in: `\Application\EnterpriseBrowser\Config\Config.xml` 
+* On cold boot the `Config.xml` is copied to: `\Program Files\EnterpriseBrowser\Config\Config.xml` 
+* This behavior can be modified by changing `\Application\EnterpriseBrowser.cpy` file
+
+**Note: File and directory names of operating systems are case sensitive. Zebra therefore recommends that case values of files and directories entered in the `Config.xml` file are identical to the names of the files themselves**.
 
 ## Substitution Variables
 The following substitution variables are available in the configuration file:
@@ -33,7 +44,7 @@ The following substitution variables are available in the configuration file:
 </table>
 
 ## Config.xml file format
-The following is an example of a typical configuration file, Android edition. **Important differences exist between Android and Windows Mobile/CE settings in the Config.xml file**, mainly involving directory struture and file naming. Use care when setting these values. 
+The following is an example of a typical configuration file, Android edition. **Important differences exist between Android and Windows Mobile/CE settings in the Config.xml file**, mainly involving directory structure and file naming. Use care when setting these values. 
 
 **WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
 
@@ -385,7 +396,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 ## IntentReceiver
 ### EnableReceiver
-Determines whether an Enterprise Browser app will recieve Intent actions, which work with the Intent function for interapplication communication. When enabled, the application can be called upon by other apps to perform Actions, such as capturing an image or scanning a barcode. For more information about the IntentReceiver tag, please refer to the [Remarks section](/enterprise-browser/1-4/guide/configreference?Remarks) and the [Android Developer Forum](http://developer.android.com/reference/android/content/Intent.html). 
+Determines whether an Enterprise Browser app will receive Intent actions, which work with the Intent function for inter-application communication. When enabled, the application can be called upon by other apps to perform Actions, such as capturing an image or scanning a barcode. For more information about the IntentReceiver tag, see the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) and the [Android Developer Forum](http://developer.android.com/reference/android/content/Intent.html). 
 
 **Possible values**
 
@@ -592,7 +603,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 
 **Possible Values**
 
-* Fully qualified path to plugin file.
+* Fully qualified path to plug-in file.
 
 > Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
 
@@ -707,7 +718,7 @@ Defines the amount of time (in milliseconds) the application should pause before
 
 ## WebServer
 ### Enabled
-Determines whether a web server will be running locally on the device to service the application. When multiple Webview applications are deployed, all can run from a single embedded server or use discrete servers, each running on a different port.
+Determines whether a web server will be running locally on the device to service the application. When multiple webview applications are deployed, all can run from a single embedded server or use discrete servers, each running on a different port.
 
 **Possible Values**
 
@@ -719,7 +730,7 @@ Determines whether a web server will be running locally on the device to service
 	<Enabled value="1"/>
 
 ### Port
-Specifies the port number of the web server running locally on the device (default= 8080). **Port 80 is NOT suported on Android**. 
+Specifies the port number of the web server running locally on the device (default= 8080). **Port 80 is NOT supported on Android**. 
 
 **Possible Values**
 
@@ -792,7 +803,7 @@ The list below shows the behavior of the Enterprise Browser when Function Keys a
 	<FunctionKeysCapturable value="1"/>
 
 ### EnableFunctionKey_X
-**Applies to Android and WM/CE**. This setting is used to specify which function keys (numbered F1 through F24) should be enabled in the Enterprise Browser app and **override** the system function key assignments (all function keys are assigned to the system by default). For each key to be enabled in EB, define a tag using EnableFunctionKey_X, replacing the ‘X’ with the key number being enabled. For example, to enable F1, your tag will include EnableFunctionKey_F1 as below. See the sample Config.xml in the user guide for correct branch placement. Requires a preload of the KeyCapture module.
+**Applies to Android and WM/CE**. This setting is used to specify which function keys (numbered F1 through F24) should be enabled in the Enterprise Browser app and **override** the system function key assignments (all function keys are assigned to the system by default). For each key to be enabled in EB, define a tag using EnableFunctionKey_X, replacing the ‘X’ with the key number being enabled. For example, to enable F1, your tag will include EnableFunctionKey_F1 as below. See the sample Config.xml in the user guide for correct branch placement. Requires a pre-load of the KeyCapture module.
 
 **On the Enterprise tablet**, this tag can be used to enable the 'P' keys. For compatibility with other devices, the 'P' keys are referred to as 'F' keys in the config file. To enable P2 key on the Enterprise Tablet, the tag EnableFunctionKey_F2 should be set to 1. **For WM/CE**, this setting is not specific to the current application and will be applied globally on the device. **This feature can only be reset by performing a device warm boot**.
 
@@ -814,7 +825,7 @@ Interaction between FunctionKeysCapturable and EnableFunctionKey_X is shown in t
 
 **Notes**
 
-* Requires a preload of the KeyCapture module; disabled by default.
+* Requires a pre-load of the KeyCapture module; disabled by default.
 * Applies to Android and WM/CE devices.  
 * Application-key mapping is device-specific; behavior may vary from one device to another.
 * This setting is not specific to an application. When enabled, settings are applied globally to the device. 
@@ -965,7 +976,7 @@ Defines plug-ins to be pre-loaded rather than loading as needed by a program fun
 	<Preload value="MyModule"/>
 
 ### PreloadLegacyActiveX
-Determines whether to preload the ActiveX object in webkit. Use this for backward compatibility with code written in PocketBrowser that used the ActiveXObject. **Applies to WM CE with the Zebra Webkit only**.
+Determines whether to pre-load the ActiveX object in webkit. Use this for backward compatibility with code written in PocketBrowser that used the ActiveXObject. **Applies to WM CE with the Zebra Webkit only**.
 
 **Possible Values**
 
@@ -977,7 +988,7 @@ Determines whether to preload the ActiveX object in webkit. Use this for backwar
 	<PreloadLegacyActiveX value="1"/>
 
 ### PreloadLegacyGeneric
-Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX object in Webkit. On the Enterprise Tablet this plugin is automatically loaded when the JSObjects plugin is preloaded.
+Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX object in Webkit. On the Enterprise Tablet this plug-in is automatically loaded when the JSObjects plug-in is preloaded.
 
 **Possible Values**
 
@@ -989,7 +1000,7 @@ Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX obje
 	<PreloadLegacyGeneric value="1"/>
 
 ### PreloadLegacyODAX
-Determines whether to preload the NPAPI plug-in to mimic the ODAX ActiveX object in Webkit. Does not apply to the Enterprise Tablet. 
+Determines whether to pre-load the NPAPI plug-in to mimic the ODAX ActiveX object in Webkit. Does not apply to the Enterprise Tablet. 
 
 **Possible Values**
 
@@ -1016,7 +1027,7 @@ Whether or not to preload the NPAPI plugin to mimic the NoSIP ActiveX object in 
  -->
 
 ### PreloadLegacyAirBeam
-Determines whether to preload the NPAPI plugin to mimic the AirBeam ActiveX object in Webkit. Not applicable to the Enterprise Tablet.
+Determines whether to pre-load the NPAPI plug-in to mimic the AirBeam ActiveX object in Webkit. Not applicable to the Enterprise Tablet.
 
 **Possible Values**
 
@@ -1028,7 +1039,7 @@ Determines whether to preload the NPAPI plugin to mimic the AirBeam ActiveX obje
 	<PreloadLegacyAirBeam value="1"/>
 
 ### PreloadLegacyAPD
-Determines whether to preload the NPAPI plugin to mimic the APD ActiveX object in Webkit.
+Determines whether to pre-load the NPAPI plug-in to mimic the APD ActiveX object in Webkit.
 
 **Possible Values**
 
@@ -1040,7 +1051,7 @@ Determines whether to preload the NPAPI plugin to mimic the APD ActiveX object i
 	<PreloadLegacyAPD value="1"/>
 
 ### PreloadJSObjects
-Determines whether to preload the NPAPI plug-in to provide native JavaScript objects for each of the modules. On the Enterprise Tablet, this plug-in will be included if the JSObjects plug-in is preloaded.
+Determines whether to pre-load the NPAPI plug-in to provide native JavaScript objects for each of the modules. On the Enterprise Tablet, this plug-in will be included if the JSObjects plug-in is preloaded.
 
 **Possible Values**
 
@@ -1223,7 +1234,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<FontDirectory value="\\Windows"/>
 
 ###JavascriptEnabled
-Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only to Windows Mobile with IE engine**. JavaScript is always enabled on Android and WM/CE with Zebra webkit. 
+Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only to Windows Mobile with IE engine**. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 
 
 **Possible Values**
 
@@ -1260,7 +1271,7 @@ Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only
 
 ## Soft Input Panel (SIP)
 ### ResizeOnSIP
-Controls window resizing when the soft input panel (on-screen keyboard, or SIP) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. **Applies to Android and Windows Mobile**. Requires SIP module preload. Not compatible with Windows CE. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. 
+Controls window resizing when the soft input panel (on-screen keyboard, or SIP) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. **Applies to Android and Windows Mobile**. Requires SIP module pre-load. Not compatible with Windows CE. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. 
 
 **Possible Values**
 
@@ -1320,7 +1331,7 @@ Used to disable barcode scanning capabilities for a previous scanner API. Does n
 **Possible Values**
 
 * 0 - does not disable the scanner
-* 1 - disables the scanner (DefaultMetaTags, Meta Tags in HTML, Javascript API, ActiveXObject)
+* 1 - disables the scanner (DefaultMetaTags, Meta Tags in HTML, JavaScript API, ActiveXObject)
 
 #### Example
 	:::xml
@@ -1465,7 +1476,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ## DOM injection
 ### CustomDOMElements 
-Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](/enterprise-browser/1-4/guide/DOMInjection). **Applies to Android and Windows Mobie/CE webkit engines**. 
+Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](/enterprise-browser/1-4/guide/DOMInjection). **Applies to Android and Windows Mobile/CE Webkit engines**. 
 
 **Possible values**
 
@@ -1478,13 +1489,13 @@ Specifies the path of a device-resident file containing data for injected DOM el
 
 ## Navigation
 ### BadLinkURI
-Specifies the ‘badlink’ URI file to be displayed when: 
+Specifies the "badlink" URI file to be displayed when: 
 
 1. An error occurs when attempting to navigate to a page (i.e. there's no network connection)
 2. A page times out (according to the timeout interval set in NavTimeout)
 3. The user presses the stop button. 
 
-The browser will automatically append the querystring value 'badlink' containing the URL of the page that could not be reached, and 'stop=true' if the page was loaded because the user pressed the stop button. The page specified in the badlink setting should be a device-resident file using the `file://` protocol so it’s accessible by the browser. 
+The browser will automatically append the querystring value "badlink" containing the URL of the page that could not be reached, and 'stop=true' if the page was loaded because the user pressed the stop button. The page specified in the badlink setting should be a device-resident file using the `file://` protocol so it’s accessible by the browser. 
 
 **Known issues**: If the device has no network connection, a navigation timeout message may be displayed on Windows Mobile devices using the IE engine. On CE5 and CE6, the IE engine will truncate the request variables when a navigation to badlink occurs and the reason for the failure may not be displayed. 
 
@@ -1554,7 +1565,7 @@ Sets the default viewport width for pages that do not have a viewport meta tag. 
 ### CaFile
 Specifies the location of a device-resident file containing CA certificates in PEM format. Please [refer to openSSL](http://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html) for more information. **Applies only to Windows Mobile/CE**. 
 
-> Note: Enteprise Browser supports only a single PEM certificate file. If multiple certificates must be passed to the Webkit browser on WM/CE, the contents of multiple `.pem` certificates can be combined into a single file using a text editor. The combined file can then be specified in the CaFile parameter. 
+> Note: Enterprise Browser supports only a single PEM certificate file. If multiple certificates must be passed to the Webkit browser on WM/CE, the contents of multiple `.pem` certificates can be combined into a single file using a text editor. The combined file can then be specified in the CaFile parameter. 
 
 **Possible Values**
 
@@ -1636,7 +1647,7 @@ Permits a default meta tag to be specified so that a tag required by the applica
 
 ## Geolocation
 ### GeolocationEnabled
-Controls HTML5 Geolocation. When enabled on a device that supports geolocation and is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled the defined JavaScript error callback is called, notifying the app that the permission to using Geolocation is disabled.
+Controls HTML5 Geolocation. When enabled on a device that supports geolocation and is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled the defined JavaScript error callback is called, notifying the app that the permission to using geolocation is disabled.
 
 **Possible Values**
 
@@ -1696,7 +1707,7 @@ Controls zoom-IN behavior for application text using function key(s) configured 
 	<ZoomInKey value="0x70"/>
 
 ### ZoomOutKey
-Controls zoom-OUT behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](/enterprise-browser/1-4/guide/configreference?Remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
+Controls zoom-OUT behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
 
 **Possible Values**
 
@@ -1745,12 +1756,12 @@ Controls whether HTTP connections will be maintained between requests. When enab
 	<KeepAlive value="1"/>
 
 ## usedwforscanning
-**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](/enterprise-browser/1-4/api/barcode). Additional settings adjustments might be required to use this tag. Please refer to the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
+**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](/enterprise-browser/1-4/api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
 
 **Possible Values**
 
 * **0 - Enable scanning through Enterprise Browser APIs (default; DataWedge disabled)**
-* 1 - Enable scanning through Datawedge (Enterprise Browser scanning disabled)
+* 1 - Enable scanning through DataWedge (Enterprise Browser scanning disabled)
 
 #### Example
 	:::xml
@@ -1764,7 +1775,7 @@ Due to its asynchronous battery notification, the Enterprise Tablet does not sup
 The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the Config.XML file be identical to those of the actual sources.
 
 ### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
-Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, please refer to the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge). **This issue applies to Android only**. 
+Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge). **This issue applies to Android only**. 
 
 ### <a name="_fnbehavior"></a>FunctionKeysCapturable-EnableFunctionKey Interaction
 **Applies to Windows Mobile/CE devices only**. 
@@ -1818,7 +1829,7 @@ The table below shows the behavior of Enterprise Browser when function keys are 
 _This table applies to Windows Mobile and Windows CE devices only_. 
 
 ### <a name="intent"></a>IntentReceiver
-The `IntentReciever` tag includes parameters to enable/disable the Intent function and to define the Action and Catagory of the Intent itself. The syntax for these parameters is as follows: 
+The `IntentReciever` tag includes parameters to enable/disable the Intent function and to define the Action and Category of the Intent itself. The syntax for these parameters is as follows: 
 
 	:::xml
 	<IntentReceiver>

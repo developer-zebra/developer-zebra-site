@@ -116,7 +116,7 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 &#55;.  Restart the device to complete the installation. 
 
-Refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide-OndeviceConfig) for help configuring Enterprise Browser following installation.  
+Refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide/OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
 ###From a Mac to Windows Mobile/CE
 The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Windows Mobile/CE devices is using Bluetooth. 
@@ -143,7 +143,7 @@ While the file is in transit, a dialog will appear on the Mac similar to the ima
 
 **Note: Copy Enterprise Runtimes to internal storage only**.
 
-Refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide-OndeviceConfig) for help configuring Enterprise Browser following installation.  
+Refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide/OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
 ## Connections
 ### Android devices
@@ -275,7 +275,7 @@ The Settings button, if enabled, appears in the UI like the one in the red box b
 
 **WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
 
-The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide-OndeviceConfig).
+The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide/OndeviceConfig).
 
 <!--## Removing Enterprise Browser
 

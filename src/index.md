@@ -47,7 +47,7 @@ products:
   - title: Enterprise Browser
     description: "Use standard web technologies (HTML5, CSS3 and JavaScript) to run and integrate with virtually any Zebra device"
     url: /enterprise-browser/1-4/guide/about
-    image: /images/products/enterprise-browser.png
+    image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started

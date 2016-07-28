@@ -6,7 +6,7 @@ layout: guide.html
 ---
 ## Installation on Host PC 
 
-Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
+Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 
 ####Platform Support
 Windows is required for full Enterprise Browser development, but the tools offer some support for Mac OS X systems. Enterprise Browser 1.3 and higher packages can be downloaded as a disk image (.dmg) file and permit Mac users to: 
@@ -34,6 +34,8 @@ If upgrading from a prior version of Enterprise Browser, the older version must 
 
 ![img](../../images/getting-started/setup/ebsetup_00.jpg)
 
+**To remove and install Enterprise Browser*:
+
 If not upgrading, skip to step 3. 
 
 1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; step 2 will cause it to be lost. 
@@ -44,25 +46,23 @@ If not upgrading, skip to step 3.
 4. When the download completes, launch the installer and follow the prompts. After installation, a screen similar to the image below appears. 
 5. Confirm that the "Launch" box is checked and **click "Close" to quit the installer** and launch Enterprise Browser. 
 
-<!--![img](../../images/getting-started/setup/setup-msi-install.png)-->
-
 ![img](../../images/getting-started/setup/ebsetup_01.jpg)
 
-This will display the Enterprise Browser's "Installer" screen, which looks similar to the one below. Supported platforms are on the left and a description appears at right when selected. 
+After closing the screen above, an Enterprise Browser "Installer" screen similar to the image below appears. Supported platforms are listed on the left and a description appears at right when a platform is selected. 
 
 To bring up this screen at a later time, select **Start Menu -> Enterprise Browser -> Enterprise Browser Installer**. 
 
-Windows-only instructions continue in the "Deployment to Device(s)" section, below. 
-
 ![img](../../images/getting-started/setup/ebsetup_02.jpg)
 
-<!--[img](../../images/getting-started/setup/setup-start-menu-items.png)-->
+Windows instructions continue in the "Deployment to Device(s)" section, below. 
 
 ### Mac OS X Installation
 1. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
+
  	a. Click on the Mac OS X ".dmg" package. 
 	b. Accept the end-user license agreement to begin the download.
-2. When the download completed, double-click the .dmg file to open it. A window similar to the image below appears. 
+
+2. When the download completes, double-click the .dmg file to open it. A window similar to the image below appears. 
 3. Drag and drop the Enterprise Browser icon onto the Applications folder (in the direction of the arrow). 
 
 ![img](../../images/getting-started/setup/setup-dmg-install.png)
@@ -71,11 +71,11 @@ The Enterprise Browser files and folders will be copied into the Application fol
 
 ![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
-It's important to note that **files in the 'Runtimes' folder (red arrows) match up with those deployed by the Windows version**; they correspond to runtimes listed on the left side of the [Windows 'Installer' screen](../../images/getting-started/setup/ebsetup_02.jpg), above. 
+**Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Windows version**. These are the same runtimes listed on the left side of the [Windows "Installer" screen](../../images/getting-started/setup/ebsetup_02.jpg), above. 
 
 ## Deployment to Device(s)
 ###From a Windows host
-On Windows host systems, communication from the host to target device(s) is handled by the [Android Debug Bridge](http://developer.android.com/tools/help/adb.html) (ADB) for Android devices and by Mobile Device Center (or ActiveSync on WinXP) for Windows Mobile/CE. It also might be necessary to **install an OEM USB driver to make a USB-attached Android device visible to Windows**. If the device isn't visible to Windows, refer to the [Connections section](/enterprise-browser/1-4/guide/setup?Connections), below. 
+On Windows host systems, communication from the host to target device(s) is handled by the [Android Debug Bridge](http://developer.android.com/tools/help/adb.html) (ADB) for Android devices and by Mobile Device Center (or ActiveSync on WinXP) for Windows Mobile/CE. It also might be necessary to **install an OEM USB driver to make a USB-attached Android device visible to Windows**. If the device isn't visible to Windows, refer to the [Connections section](/enterprise-browser/1-4/guide/setup#connections), below. 
 
 * ADB supports USB connections only
 * Mobile Device Center supports USB and Bluetooth connections 
@@ -86,10 +86,10 @@ Once a connection has been established, install the Enterprise Browser runtime o
 
 1. Select **Start -> Enterprise Browser -> Enterprise Browser Installer** to bring up the EB Installer. A window will appear similar to the image above.  
 2. **Select the platform that matches the device, OS and web view being targeted**. Information in the right-hand pane will vary according to the selection.
-3. **Click 'Deploy' and follow prompts**. A window will appear similar to the image below. 
+3. **Click "Deploy" and follow prompts**. A window will appear similar to the image below. 
 4. **Restart the device to complete the installation**.
 
-> **Note: For persistent installations on Windows CE (the lowermost two options on the 'Installer' screen above), a cold boot/cleanPS (clean persistent storage) is required to complete the installation**.
+> **Note: For persistent installations on Windows CE (the lowermost two options on the "Installer" screen above), a cold boot/cleanPS (clean persistent storage) is required to complete the installation**.
 
 ![img](../../images/getting-started/setup/WM_setup_01.jpg)
 
@@ -125,7 +125,7 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 &#50;. Pair the device with the Mac using the Mac's Bluetooth Preferences panel. Enter pairing code and follow additional prompts as necessary. 
 
-&#51;. Right-click the newly paired device and select 'Send File to Device...' (as below). 
+&#51;. Right-click the newly paired device and select "Send File to Device..." (as below). 
 
 ![img](../../images/getting-started/setup/PocketPCsend.png)
 
@@ -135,7 +135,7 @@ While the file is in transit, a dialog will appear on the Mac similar to the ima
 
 ![img](../../images/getting-started/setup/BluetoothDeploy.png)
 
-&#53;. When the transfer is complete, tap 'Yes' on the device to save the file.
+&#53;. When the transfer is complete, tap "Yes" on the device to save the file.
 
 &#54;. Using the File Explorer app, navigate to and execute the runtime to unpackage its files and directories. 
 
@@ -157,26 +157,26 @@ Requirements for using the Enterprise Browser Installer on a Windows system to t
 ####STEP 1: Get USB drivers
 Visit the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=android%20usb%20drivers), download and install the latest driver from the list. 
 
-For non-Zebra hardware, visit [Google’s OEM USB Driver page](http://developer.android.com/tools/extras/oem-usb.html) for instructions and links to OEM drivers for your brand of device.
+For non-Zebra hardware, visit [Google’s OEM USB Driver page](http://developer.android.com/tools/extras/oem-usb.html) for instructions and links to OEM drivers for the brand of device.
 
 #### STEP 2: Get Android ADT 
-Visit the [Android Developer Tools page](http://developer.android.com/sdk/index.html), download and install the Android SDK to match your system (Mac OS X, Linux or Windows 32/64). 
+Visit the [Android Developer Tools page](http://developer.android.com/sdk/index.html), download and install the Android SDK to match the system (Mac OS X, Linux or Windows 32/64). 
 
 #### STEP 3: Update system path
-Add the full path to `adb.exe` to your system path. The EB installer and its utilities use adb to push files to Android devices. Since its location could vary with any given system, the path to adb.exe **must** be available system-wide so that EB can simply execute 'abd.exe' rather than repeating the explicit path with every push function. 
+Add the full path to `adb.exe` to the system path. The EB installer and its utilities use adb to push files to Android devices. Since its location could vary with any given system, the path to adb.exe **must** be available system-wide so that EB can simply execute "abd.exe" rather than repeating the explicit path with every push function. 
 
-To add the platform-tools path to your system's environment variable: 
+To add the platform-tools path to the system's environment variable: 
 
-* Right-click 'Computer' and **select -> Properties**
-* Select 'Advanced System Settings' in the System Properties window
-* In the 'Advanced' tab, Click the 'Environment Variables' button to bring up a window similar to the one below:
+* Right-click "Computer" and **select -> Properties**
+* Select "Advanced System Settings" in the System Properties window
+* In the "Advanced" tab, Click the "Environment Variables" button to bring up a window similar to the one below:
 
 ![img](../../images/getting-started/setup/setup-environment-variables-window.jpg)
 
-* In the <u>LOWER</u> window, scroll down to 'Path'
-* Select Path and click 'Edit...' to bring up the path for editing
-* Add a semicolon (;) to the end of the line followed by the path to 'abd.exe'
-* If you're not sure of the path, the following DOS command will reveal it: 
+* In the <u>LOWER</u> window, scroll down to "Path"
+* Select Path and click "Edit..." to bring up the path for editing
+* Add a semicolon (;) to the end of the line followed by the path to "abd.exe"
+* If unsure of the path, the following DOS command will reveal it: 
 
 
 		:::term
@@ -196,11 +196,9 @@ This command should result in something like this:
 		$ adb devices
 
 
-If everything is setup correctly, you should see something like this:
+If everything is setup correctly, a display like the following will be seen:
 
 ![img](../../images/getting-started/setup/adb_devices_command.png)
-
-<!-- ![img](../../images/getting-started/setup/setup-deploying-android.png)-->
 
 The system is now ready to deploy Enterprise Browser apps and shortcuts to an Android device.
 
@@ -209,7 +207,7 @@ Upon connecting a Windows Mobile/CE device to a Windows 7 (or higher) PC, the Mo
 
 * Be sure the device is plugged into a _USB 2.0_ port (not USB 3.0)
 * Allow Windows to search for updates if prompted after plugging in the device
-* If no such prompt appears, go to Device Manager and select Action -> 'Scan for hardware changes' When USB drivers are installed correctly, a box like the image below will appear.  
+* If no such prompt appears, go to Device Manager and select Action -> "Scan for hardware changes" When USB drivers are installed correctly, a box like the image below will appear.  
 * Restart Windows after any software or driver is installed or updated 
 
 ![img](../../images/getting-started/setup/WM_setup_00.jpg)
@@ -256,16 +254,16 @@ Pressing the "Return to OS" button will skip settings configuration and bring up
 
 ![img](../../images/OndeviceConfig/On-device_config_02.png)
 
-###Activating your start page
-**To activate your EB app's start page, enter the URL in the Value field of the StartPage parameter**, as highlighted above, but **do not apply the changes yet**. Applying changes immediately will cause the new start page to be displayed next time EB is launched and will remove access to the Settings panel. 
+###Activating the start page
+**To activate an EB app's start page, enter the URL in the Value field of the StartPage parameter**, as highlighted above, but **do not apply the changes yet**. Applying changes immediately will cause the new start page to be displayed next time EB is launched and will remove access to the Settings panel. 
 
-**WARNING: Free-form text fields such as 'username' and 'password' can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
 
-If on-device access to runtime settings is desired after you've set your start page (for example, to experiment with various settings before deployment), set the SettingsButtonEnabled parameter to 'Enable' (as below). This will cause a Settings button to appear in the UI at all times. Passwords also can be set here, if desired. 
+If on-device access to runtime settings is desired after setting up the start page (for example, to experiment with various settings before deployment), set the SettingsButtonEnabled parameter to "Enable" (as below). This will cause a Settings button to appear in the UI at all times. Passwords also can be set here, if desired. 
 
 ![img](../../images/OndeviceConfig/On-device_config_03.png)
 
-Press 'Apply' to update the Config.xml file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
+Press "Apply" to update the Config.xml file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
 
 ![img](../../images/OndeviceConfig/On-device_config_04.png)
 
@@ -275,7 +273,7 @@ The Settings button, if enabled, appears in the UI like the one in the red box b
 
 **Note: When the IE engine is used on a Windows CE device**, displaying the Settings button in this way might cause screen distortion when scrolling.
 
-**WARNING: Free-form text fields such as 'username' and 'password' can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
 
 The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide-OndeviceConfig).
 

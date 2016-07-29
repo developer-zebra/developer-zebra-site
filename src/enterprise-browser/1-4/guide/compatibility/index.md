@@ -1,5 +1,5 @@
 ---
-title: Compatibility Matrix
+title: API Compatibility Matrix
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html

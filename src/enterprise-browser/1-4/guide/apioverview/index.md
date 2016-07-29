@@ -7,7 +7,9 @@ layout: guide.html
 
 ##Overview
 
-The Enterprise Browser exposes certain methods to the developer that can be used to interact with code written for the Enterprise Browser. These methods are separated into APIs for each capability that can be manipulated and used with the Enterprise Browser app. This guide describes how to use these APIs in an Enterprise Browser app.
+Enterprise Browser contains a runtime environment inside which a company's own HTML and application logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide describes how to use the APIs in general. The capabilities of each individual API is detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
+
+See the [Compatibility Matrix](/enterprise-browser/1-4/guide/compatibility/) for API support information for specific operating systems and webkits. 
 
 ## Using JavaScript APIs
 Enterprise Browser APIs are enabled differently depending on whether an application is running from HTML stored on the device or a remote server. Either way, all relevant JavaScript files must be included in the proper location in the HTML. 
@@ -17,10 +19,18 @@ The Enterprise Browser installation places the `JavaScriptFiles` directory in th
 
 * `/EnterpriseBrowser` - contains the Enterprise Browser JavaScript API files:
 	* **ebapi-modules.js** - includes all `EB.module` APIs 
-	* **individual JS modules** - optionally can include just the required modules to reduce footprint. [Optimization guide](/enterprise-browser/1-4/guide/optimization).
-* `/BackwardsCompatibility` - contains legacy PocketBrowser and RhoElements 2.x APIs:
-	* elements.js - supports RhoElements 2.x and PocketBrowser applications. [RhoElements & PocketBrowser Migration guide](/enterprise-browser/1-4/guide/elements).
-	* rhoapi-modules.js - support RhoMobile applications. [RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile).
+	* **individual JS modules** - [optimize](/enterprise-browser/1-4/guide/optimization) footprint by including only required modules
+* `/BackwardCompatibility` - contains legacy PocketBrowser and RhoElements 2.x APIs:
+	* **rhoapi-modules.js** - for supporting RhoMobile applications
+	* **elements.js** - for supporting RhoElements 2.x and PocketBrowser applications 
+
+Related Guides: 
+* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/) -** 
+* **[PocketBrowser 3.x Migration Guide](/enterprise-browser/1-4/guide/pb3/) -**
+* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements) -**
+* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile) -**
+* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for minimizing device memory footprint. 
+
 
 ####Access from web pages
 When running web pages from a server, Enterprise Browser is essentially acting as a simple browser, loading the pages and executing JavaScript within. To use the Enterprise Browser APIs from within an HTML app, the ebapi-modules.js must be stored on the web server in a location accessible to all of app's pages. Typically this will be the same `/js` folder in which other JavaScript libraries are stored. 

@@ -384,14 +384,14 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="imz220pic" src="https://www.zebra.com/content/zebra1/us/en/products/printers/mobile/mz-series/_jcr_content/mainpar/tabscontainer/overview/content/productmodel_1d2c/image.img.png/x1426276854144.png.pagespeed.ic.OndlAqm5W1.png" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="imz220pic" src="../../images/imz320.jpg" width="175"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>iMZ</b></td>
 <td class="clsSyntaxCells clsOddRow">iMZ 220, iMZ 320</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="rw420pic" src="https://www.zebra.com/content/zebra1/us/en/products/printers/mobile/rw-series/_jcr_content/mainpar/tabscontainer/overview/content/productmodel/image.img.jpg/1426276849211.jpg" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="rw420pic" src="../../images/rw420_inCradle.jpg" width="175"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>RW</b></td>
 <td class="clsSyntaxCells clsOddRow">RW 220, RW 420, RW 420 Print Station</td>
 <td class="clsSyntaxCells usb comp">Android, Windows Mobile/CE</td>
@@ -405,7 +405,7 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="zd500rpic" src="https://www.zebra.com/content/zebra1/us/en/products/printers/rfid/zd500r/_jcr_content/mainpar/tabscontainer/detailed-specs/content/subtabscontainer_540/zd500r/content/twocol_83b/leftpar/image_236a.img.png/1433356327246.png" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="zd500rpic" src="../../images/zd500r.jpg" width="175"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>ZD500R</b></td>
 <td class="clsSyntaxCells clsOddRow">ZD500R RFID Printer</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>

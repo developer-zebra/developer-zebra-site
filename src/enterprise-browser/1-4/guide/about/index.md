@@ -45,41 +45,39 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 
 ###Key Features
 
-* A development toolkit for mobile cross-platform enterprise apps
-  * Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices
-  * Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE
+####A development toolkit for mobile cross-platform enterprise apps
+* Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices
+* Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE
 
-* Build apps using HTML5, CSS and JavaScript
-  * Use web skills to create great-looking applications
-  * Based on open source and standard technologies, not proprietary toolkits
-  * Access to the world's largest developer community
+####Build apps using HTML5, CSS and JavaScript
+* Use web skills to create great-looking applications
+* Based on open source and standard technologies, not proprietary toolkits
+* Access to the world's largest developer community
 
-* Common APIs across all enterprise devices
-  * Single code base; does not require different APIs for different OSes to create a true write-once, run-anywhere apps with a consistent UI
-  * Easily access native device hardware with JavaScript APIs
+####Common APIs across all enterprise devices
+* Single code base; does not require different APIs for different OSes to create a true write-once, run-anywhere apps with a consistent UI
+* Easily access native device hardware with JavaScript APIs
 
-*Backward-compatible with PocketBrowser
-  * Enterprise Browser is compatible with legacy PocketBrowser APIs, enabling a clear path forward for legacy apps
-  * EMML (Meta Tag) support extended to Android
+####Backward-compatible with PocketBrowser and RhoElements
+* Compatible with legacy PocketBrowser APIs, enabling a clear path forward for legacy apps
+* EMML (Meta Tag) support extended to Android
+* Compatible with legacy RhoElements JavaScript APIs, enabling a clear path forward for "RhoElements Shared Runtime" users
 
-*Backward-compatible with RhoElements
-  * Enterprise Browser is compatible with legacy RhoElements JavaScript APIs, enabling a clear path forward for "RhoElements Shared Runtime" users
+####Unparalleled access to device capabilities
+* Access all device features, including bar code scanning, signature capture, printing, RFID and more
 
-* Unparalleled access to device capabilities
-  * Access all device features, including bar code scanning, signature capture, printing, RFID and more
+####Thin client architecture
+* Simplifies device deployment and management by enabling instant application updates on devices; ensures version consistency
 
-* Thin client architecture
-  * Simplifies device deployment and management by enabling instant application updates on devices; ensures version consistency
+####Offers operating system "lock out"
+* Hides access to distractions, such as web-browsing and games; simplifies user interface and eliminates risk of unauthorized changes to device settings
+* Password-protect settings screen and prevent any app from exiting
 
-* Offers operating system "lock out"
-  * Hides access to distractions, such as web-browsing and games; simplifies user interface and eliminates risk of unauthorized changes to device settings
-  * Password-protect settings screen and prevent any app from exiting
+####Full-screen display
+* Maximizes available display space for a richer, more effective user interface; hides command bar and Start menu
 
-* Full-screen display
-  * Maximizes available display space for a richer, more effective user interface; hides command bar and Start menu
-
-* Extensive logging capability
-  * Flexibility to easily capture logging information, reducing management and support effort
+####Extensive logging capability
+* Flexibility to easily capture logging information, reducing management and support effort
 
 ###Key Benefits
 

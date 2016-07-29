@@ -46,10 +46,13 @@ Kiosk Mode can be controlled from within an Android application using Android In
 	:::javascript
 	//Disable Kiosk Mode:
 	Intent intent = new Intent("com.symbol.enterprisehomescreen.actions.MODIFY_KIOSK_MODE");
-	Intent.putExtra("enable",false);
+ 	Intent.putExtra("enable",false);
+ 	sendBroadcast(intent);
 
 	//Enable Kiosk Mode:
-	sendBroadcast(intent); Change Intent.putExtra("enable",true);
+	Intent intent = new Intent("com.symbol.enterprisehomescreen.actions.MODIFY_KIOSK_MODE");
+ 	Intent.putExtra("enable",true);
+ 	sendBroadcast(intent);
 
 
 <b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 

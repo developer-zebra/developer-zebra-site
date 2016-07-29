@@ -249,22 +249,22 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 &#42; _EHS 2.4 will be the final version that supports Zebra devices running Android Jelly Bean_.
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the installer APK (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the filename(s) where necessary in the instructions. 
+These instructions apply to direct installation (from a computer to a single device) using the installer APK that detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the filename(s) where necessary in the instructions. 
 
 > <b>Note</b>: The installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
-To install EHS manually using the automatic target selection (`EHS_020300.apk`) app: 
+**To install EHS manually using the automatic target selection APK and app**: 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 
-&#50;. <b>Copy the </b>`EHS_020300.apk` <b>file</b> from the PC to any writable device folder.
+&#50;. <b>Copy the APK file</b> from the PC to any writable device folder.
 
 &#51;. On the device, <b>launch File Browser</b> from the App Drawer:
 
 <img alt="" style="height:500px" src="file_browser_in_drawer.png"/>
 <br>
 
-&#52;. <b>Locate and launch</b> `EHS_020300.apk`:
+&#52;. <b>Locate and launch the APK file</b>:
 
 <img alt="" style="height:350px" src="file_browser_search.png"/>
 <br>
@@ -338,7 +338,7 @@ In User Mode, the following features are disabled by default:
 * The status-bar Settings icon  
 * Full access to the System Settings panel  
 
-To select which settings will be available while the device is in User Mode and/or to modify other User Mode preferences:
+**To select which settings will be available while the device is in User Mode and/or to modify other User Mode preferences**:
 
 &#49;&#52;. While in Admin Mode, <b>Select Preferences</b> from the menu:  
 
@@ -358,15 +358,15 @@ For scenarios that require even more security, EHS offers Secure and Kiosk modes
 ## Automated Installation
 These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-This section covers use of the EHS Installer (`EHS_020300.apk`), which detects the target device model and operating system and installs the appropriate EHS version and the default config file if none is present. If installing a config file or device-specific APK from the 'Supported Devices and APKs' table above, be sure to add or substitute the filename(s) where necessary in the instructions. 
+This section covers use of the EHS Installer (`EHS_020xxx.apk`), which detects the target device model and operating system and installs the appropriate EHS version and the default config file if none is present. If installing a config file or device-specific APK from the 'Supported Devices and APKs' table above, be sure to add or substitute the filename(s) where necessary in the instructions. 
 
 > <b>Note</b>: The EHS Installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
-To install EHS using an MDM, instruct the MDM to do the following, in this order:
+**To install EHS using an MDM, instruct the MDM to do the following, in this order**:
 
 &#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings]() section for detailed instructions on the creation and editing of config files. 
 
-&#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the `EHS_020300.apk` (or target-specific) file and the XML file created in the previous step.
+&#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the target-specific or non-target specific file and the XML file created in the previous step.
 
 &#51;. <b>Launch the app</b> using the following package and activity commands: 
 
@@ -388,7 +388,7 @@ To install EHS using an MDM, instruct the MDM to do the following, in this order
 </tr>
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020300.apk (EHS Installer)</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk (EHS Installer)</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller</font></p>
@@ -400,7 +400,7 @@ To install EHS using an MDM, instruct the MDM to do the following, in this order
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020300.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen</font></p>
@@ -412,7 +412,7 @@ To install EHS using an MDM, instruct the MDM to do the following, in this order
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_R_020300.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_R_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
@@ -465,9 +465,9 @@ Manual uninstallation of EHS is now complete.
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-To uninstall EHS using an MDM, instruct the MDM to do the following:
+**To uninstall EHS using an MDM, instruct the MDM to do the following**:
 
-&#49;. <b> Uninstall (remove) the EHS app</b> referencing the package and activity names as indicated in the table below. Uninstalling the EHS Installer will also remove the EHS application that it installed. If a target-specific APK (EHS_L_020300.apk or EHS_R_020300.apk) was deployed, the package/activity name specific to that APK must be referenced when uninstalling it. 
+&#49;. <b> Uninstall (remove) the EHS app</b> referencing the package and activity names as indicated in the table below. Uninstalling the EHS Installer will also remove the EHS application that it installed. If a target-specific APK (i.e. `EHS_L_020xxx.apk` or `EHS_R_020xxx.apk`) was deployed, the package/activity name specific to that APK must be referenced when uninstalling it. 
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
@@ -487,7 +487,7 @@ To uninstall EHS using an MDM, instruct the MDM to do the following:
 </tr>
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020300.apk (EHS Installer)</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk (EHS Installer)</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller</font></p>
@@ -499,7 +499,7 @@ To uninstall EHS using an MDM, instruct the MDM to do the following:
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020300.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen</font></p>
@@ -511,7 +511,7 @@ To uninstall EHS using an MDM, instruct the MDM to do the following:
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020300.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
@@ -535,7 +535,10 @@ Remote uninstallation of EHS is now complete.
 ## Change the Default Launcher
 Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
 
-To manually change the default launcher on a device without removing EHS: 
+The following process applies only to Android 4.4.3 and higher. to remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
+
+**To manually change the default launcher on a device without removing EHS**: 
+(Android 4.4.3 and higher)
 
 &#49;. In Admin Mode <b>open the Settings panel and tap Home</b>: 
 <img alt="" style="height:350px" src="settings_panel.png"/>

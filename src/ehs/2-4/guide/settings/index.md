@@ -41,30 +41,30 @@ From a computer connected to a target device that has EHS installed:
     adb pull /enterprise/usr/enterprisehomescreen.xml
 <br>
 
-&#50;. Locate, open and <b>edit the config file</b> with a text editor, saving changes.
-
-Important: <b>Do NOT change the file name in any way</b>. 
+&#50;. Locate, open and <b>edit the config file</b> with a text editor, saving changes. <b>Do NOT change the file name in any way</b>. 
 <br>
 
 &#51;. <b>Push the edited config file</b> to the device: 
 
     :::term
-    adb push /enterprise/usr/enterprisehomescreen.xml
-<br>
+    adb push enterprisehomescreen.xml /enterprise/usr/enterprisehomescreen.xml
+
+
+> **Important**: Be sure to **include the name of the edited source file in the adb push command**. Not doing so could cause changes to be ignored. 
 
 ##### What happens now? 
 
 * Pushing a new version of the config file overwrites the old one. 
-* If EHS is running, the new settings will take effect immediately. 
+* If EHS is running, the new settings take effect immediately. 
 * If EHS is in the background, the new settings take effect the next time EHS comes to the foreground.
 
 ##### Other Notes
 
-* Config file name must be '`enterprisehomescreen.xml`' in lower-case letters.  
+* Config file must be named "`enterprisehomescreen.xml`" in lower-case letters. 
 * A file with any other spelling or letter case will be ignored.
 * If the config file is deleted at any time, EHS will spawn a new config file with default settings.
 * If a mixed-case config file of the same name is deployed, it will overwrite a correctly cased file.
-* An incorrectly cased config file will be treated as missing file or cause unpredictable results.
+* An incorrectly cased config file will be treated as missing or cause unpredictable results.
 * Once configured, a config file is suitable for [mass-deployment using an MDM](../setup/#automatedinstallation) with or without the EHS app.
 
 ##### Exporting the Config File
@@ -149,8 +149,8 @@ The EHS config file is broken into five sections:
 
     <preferences>
         <title>Enterprise Home Screen</title>
-        <icon_label_background_color>#AAFFFFFF</icon_label_background_color>
-        <icon_label_text_color>#FF000000</icon_label_text_color>
+        <icon_label_background_color>#00FFFFFF</icon_label_background_color>
+        <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
         <orientation></orientation>
         <bypass_keyguard>1</bypass_keyguard>
         <auto_launch_enable>0</auto_launch_enable>
@@ -759,7 +759,7 @@ Controls whether the Search app will be accessible from the Keyguard screen (als
 ------
 
 ### USB Debugging Disabled
-Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. 
+Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
 
 <img alt="" style="height:350px" src="usb_debug_disable.png"/>
 
@@ -938,7 +938,8 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
 * If one of these tags is present without the other, Settings and Search apps will be disabled in User Mode.
 * If the same package name is present under both tags, that app will be disabled.
-* Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag.  
+* Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag. 
+* **Disabled apps must be manually returned to their desired state before uninstalling EHS**.  
 * To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag. 
 * These tags cannot be used to [disable DataWedge](../../../../datawedge/5-0/guide/setup#disabledatawedge) or other services. 
 
@@ -990,7 +991,7 @@ The counter clears after a successful login or when a new `enterprisehomescreen.
 ------
 
 ### Admin Inactivity Timeout
-Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. 
+Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
 
 <img alt="" style="height:350px" src="admin_timeout.png"/>
 
@@ -1052,7 +1053,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ### App Launch Flags 
 EHS supports the option of specifying one or more Android Intent flags when an application is launched, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to launch not with its main activity, for example, but with its most recent one, retaining acquired data that would otherwise have been lost after an inadvertent press of the HOME key immediately after a scan. 
 
-App Launch Flags can be assigned to individual apps, Kiosk apps or those designated as part of a group. The flag will apply to all apps in groups of the following types: 
+App Launch Flags can be assigned only to Kiosk apps or those designated as part of a group. The flag will apply to all apps in groups of the following types: 
 
 * Auto-Launch apps
 * User-Mode apps

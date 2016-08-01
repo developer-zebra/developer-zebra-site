@@ -8,7 +8,7 @@ layout: guide.html
 
 Runtime configuration settings of Enterprise Browser apps are managed through the `Config.xml` file, a required file that must accompany every EB app. The `Config.xml` determines features and behavior of the EB runtime, including its start-up page, keys that can be intercepted by an app, and whether to pre-load modules on startup. A default configuration file is provided as part of the Enterprise Browser installation, and contains some (though not all) of the most common settings. 
 
-The default `Config.xml` file is displayed below, followed by explanations of all tags and parameter settings. The EB `Config.xml` can be edited with an ordinary text editor or with the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) included with the installation of Enterprise Browser 1.3 and higher. 
+The default `Config.xml` file for Android devices is displayed below, followed by explanations of all tags and parameter settings for Android and Windows Mobile/CE. The EB `Config.xml` can be edited with an ordinary text editor or with the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) included with the installation of Enterprise Browser 1.3 and higher. 
 
 ### Config.xml Location
 The location of the configuration file on the device varies by target and platform:

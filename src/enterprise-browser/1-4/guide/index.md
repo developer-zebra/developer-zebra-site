@@ -8,10 +8,10 @@ automenu:
       items:
         - title: Config Editor Utility
           url: ConfigEditor
-        - title: On-device Configuration
-          url: OndeviceConfig
         - title: Config.xml Reference
           url: configreference
+        - title: On-device Configuration
+          url: OndeviceConfig
         - title: Shortcut Creator Utility
           url: ShortcutCreator
     - title: Application Usage
@@ -22,20 +22,20 @@ automenu:
           url: datawedge
         - title: DOM Injection
           url: DOMinjection
-        - title: Remapping Keys
-          url: keycapture
         - title: Printing
           url: printingGuide
+        - title: Remapping Keys
+          url: keycapture
         - title: SAP ITS usage
           url: sap
         - title: Viewport Usage
           url: viewport
     - title: Debugging
       items:
-        - title: On-Device Debugging
-          url: debuggingjs
         - title: App Logging
           url: logging
+        - title: On-Device Debugging
+          url: debuggingjs
     - title: Migration
       items:
         - title: Common Migration Notes

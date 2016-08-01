@@ -61,9 +61,9 @@ _Click on any image to enlarge_.
 
 ###2. Discover Device (in Desktop Chrome)
 If you haven't already done so, **connect your device to an available USB port on the development host** and **enable device detection in Chrome**: 
------
+
 >![Chrome Detect](../../images/debugging/Chrome_detect_USB.png)
------
+
 1. Open a browser window and **enter 'chrome://inspect'** in the address bar. You should see a screen similar the one above.
 
 2. **Check the 'Discover USB Devices' checkbox**. Your mobile device should appear along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)). 
@@ -73,9 +73,9 @@ If you haven't already done so, **connect your device to an available USB port o
 4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)) for that procedure.
 
 5. At this point you should be ready to begin debugging. Once your app is deployed and running on the device, the chrome://inspect page should look something like the one shown below, with your device and a link to its debug-enabled WebViews. **To begin debugging, click an inspect link.** 
------
+
 >![Chrome Web Inspect](../../images/debugging/Chrome_WebInspect.png)
------
+
 ### Google Dev Tool Tutorial
 To learn more about debugging with Chrome, please refer to the [Google Chrome Dev Tools Tutorial](https://developers.google.com/chrome-developer-tools/).
 

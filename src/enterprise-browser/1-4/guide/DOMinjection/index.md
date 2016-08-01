@@ -6,9 +6,9 @@ layout: guide.html
 ---
 ## Overview
 
-Enterprise Browser 1.3 and higher can perform DOM Injection, which is the ability insert CSS, JavaScript and meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements stored in a text file on the device. 
+Apps made with Enterprise Browser 1.3 and higher are able to perform DOM Injection, the ability insert CSS, JavaScript and/or meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements stored in a text file on the device. 
 
-DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by  the &lt;CustomDOMElements&gt; in the &lt;Application&gt; section** of the app's `Config.xml` file. This new tag will contain a fully qualified path to the device-resident file that you create, which stores the DOM element(s) to be injected and the names of the pages to receive injections whenever displayed. **Injected CSS and JavaScript can be local, server-based or in any combination thereof**.
+DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by  the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
 
 * **DOM injection device support**: 
 	* **Android with stock webkit**
@@ -19,8 +19,8 @@ DOM injection is enabled by default in EB 1.3 and higher apps, and is **activate
 
 No special licensing is required. 
 
-## What is the DOM?
-In the context of modern web programming, **the ‘DOM’ refers to HTML5 as it will appear when running**. For example, while the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use.
+## What is "the DOM"?
+In the context of modern web programming, **the "DOM" refers to HTML5 as it will appear when running**. While the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use.
 
 ## How to use DOM Injection
 
@@ -93,7 +93,7 @@ Attributes of DOM Injection tags:
 * Meta tag data must be contained completely within the tags file  
 * If using server-based JavaScript, see JavaScript Injection section (below) for dependency cautions 
 
-* When tags are completed, **store the tags file on the device** and make note of the path 
+* When tags are completed, **store the tags file on the device** and take note of the path 
 
 ### Step 2- Specify path to tags file in Config.xml
 
@@ -109,15 +109,15 @@ The tags file created in Step 1 must reside on the device.
 		</Application>
 
 
-All runtime settings of Enterprise Browser apps are managed through the `Config.xml` file. For information about how to configure this file, please refer to the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreference). The CustomDOMElements tag cannot be configured using the [on-device Config Editor utility](/enterprise-browser/1-4/guide/OndeviceConfig).  
+For information about how to configure the `Config.xml` file, see the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreference). **Note**: The &lt;CustomDOMElements&gt; tag cannot be configured using the [On-device Config Editor utility](/enterprise-browser/1-4/guide/OndeviceConfig).  
 
-> **The value of this attribute is empty by default. DOM injection cannot function if this setting is left blank**. 
+> **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the tags file on the device is specified**. 
 
 ## JavaScript Injection
 JavaScript can be injected either through file protocol or by using an absolute or server path relative to the Enterprise Browser app's start page. Different rules apply to injection of local and server-based JavaScript, and might affect the app if dependencies exist between the JavaScript modules in use. 
 
 ####Inject Local JavaScript
-When using the file protocol, the JavaScript file(s) must be resident on the target device, and have path(s) specified in the src attribute of the script tag using the "file://" designation. For example, the following lines will inject four JavaScript files into all pages of the app-relative directory:
+When using the file protocol, the JavaScript file(s) must be resident on the target device, and have path(s) specified in the `src` attribute of the script tag using the `file://` designation. For example, the following lines will inject four JavaScript files into all pages of the app-relative directory:
 
 	:::xml
 	<script type='text/javascript' src='file://\Program Files\EnterpriseBrowser\rho\apps\app\elements.js' pages='*' /> 
@@ -131,9 +131,7 @@ When using the file protocol, the JavaScript file(s) must be resident on the tar
 **Notes**
 * Local JavaScript files are injected consecutively in the order in which they are listed in the tags file.
 * Each JavaScript file will be loaded completely before the next file is loaded. 
-* DOM injections occur every time a page is loaded. So changes to JavaScript files injected in this way can be put into effect simply by refreshing the relevant page.
-
-> **Note: DOM injections occur every time a page is loaded. So changes to injected JavaScript files can be put into effect simply by refreshing the relevant page**.
+* DOM injections occur every time a page is loaded, **so changes to JavaScript files injected in this way can be put into effect simply by refreshing the relevant page**.
 
 ####Inject Server-based JavaScript
 * Here, the same four JavaScript files are injected from a server: 
@@ -154,9 +152,9 @@ In another example, the tags file below is used to inject the `rhoapi-modules.js
 
 		<script type="text/javascript" src="./test.js" pages="/dominjection/index.html" />
 
-If an attribute contained in the rhoapi-modules file--for example the Rho namespace--is required by test.js, an error might occur if test.js is injected first. To guard against this, it might be useful for `test.js` to include some logic like the JavaScript below to wait until its dependent JavaScript (`rhoapi-modules.js`) is loaded.
+If an attribute contained in the rhoapi-modules file--for example the Rho namespace--is required by `test.js`, an error might occur if `test.js` is injected first. To guard against this, it might be useful for `test.js` to include some logic like the JavaScript below so that it waits until its dependent JavaScript (`rhoapi-modules.js`) is loaded.
 
-Sample JavaScript: 
+Sample JavaScript to delay loading: 
 
 
 		:::javascript
@@ -176,16 +174,4 @@ Sample JavaScript:
 		      alert(Rho.Application.appName); //use rho api here
 		    });
 		})();
-
-
-
-
-
-
-
-
-
-
-
-
 

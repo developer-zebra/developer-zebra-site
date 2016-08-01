@@ -7,42 +7,43 @@ layout: guide.html
 
 ##Overview
 
-Enterprise Browser contains a runtime environment inside which a company's own HTML and application logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide describes how to use the APIs in general. The capabilities of each individual API is detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
+Enterprise Browser contains a runtime environment inside which a company's own HTML and JavaScript application logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide provides an overview and basic guidance for using the APIs. The capabilities of individual APIs are detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
 
 See the [Compatibility Matrix](/enterprise-browser/1-4/guide/compatibility/) for API support information for specific operating systems and webkits. 
 
 ## Using JavaScript APIs
-Enterprise Browser APIs are enabled differently depending on whether an application is running from HTML stored on the device or a remote server. Either way, all relevant JavaScript files must be included in the proper location in the HTML. 
+Enterprise Browser APIs are enabled differently depending on whether an application is running from HTML stored on the device or from a remote server. Either way, all relevant JavaScript files must be included in the proper location in the HTML. 
 
 ### JavaScript API Files
-The Enterprise Browser installation places the `JavaScriptFiles` directory in the installation root, inside of which are two additional directories:
+The Enterprise Browser installation process puts a `JavaScriptFiles` directory in the installation root, inside of which are two additional directories:
 
 * `/EnterpriseBrowser` - contains the Enterprise Browser JavaScript API files:
 	* **ebapi-modules.js** - includes all `EB.module` APIs 
-	* **individual JS modules** - [optimize](/enterprise-browser/1-4/guide/optimization) footprint by including only required modules
+	* **individual JS modules** - for [optimizing footprint](/enterprise-browser/1-4/guide/optimization) by including only required modules
 * `/BackwardCompatibility` - contains legacy PocketBrowser and RhoElements 2.x APIs:
 	* **rhoapi-modules.js** - for supporting RhoMobile applications
-	* **elements.js** - for supporting RhoElements 2.x and PocketBrowser applications 
+	* **elements.js** - for supporting RhoElements 2.x and PocketBrowser 2.x/3.x applications 
 
-Related Guides: 
-* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/) -** 
-* **[PocketBrowser 3.x Migration Guide](/enterprise-browser/1-4/guide/pb3/) -**
-* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements) -**
-* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile) -**
-* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for minimizing device memory footprint. 
+-----
 
+**Related Guides**: 
+* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
+* **[PocketBrowser 3.x Migration Guide](/enterprise-browser/1-4/guide/pb3/)**
+* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
+* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
+* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
 
 ####Access from web pages
-When running web pages from a server, Enterprise Browser is essentially acting as a simple browser, loading the pages and executing JavaScript within. To use the Enterprise Browser APIs from within an HTML app, the ebapi-modules.js must be stored on the web server in a location accessible to all of app's pages. Typically this will be the same `/js` folder in which other JavaScript libraries are stored. 
+When running web pages from a server, Enterprise Browser is essentially acting as a simple browser, loading the pages and executing any JavaScript within. To use the Enterprise Browser APIs from within an HTML app, the `ebapi-modules.js` must be stored on the web server in a location accessible to all of the app's pages. Typically this will be the same `/js` folder in which other JavaScript libraries are stored. 
 
 ####Access from local pages
-To use the JS APIs on the device using local web pages, the JS API files must be stored on the device in a location accessible by all of the app's pages. For example, if the HTML and JS files are stored in `<device-root>\myApp`, then the HTML files would link to the ebapi-modules.js using the following relative path:
+To use the APIs on a device that's displaying locally-stored web pages, the API files must be stored on the device as well, and be in a location accessible by all of the app's pages. For example, if the HTML and API files are stored in `<device-root>\myApp`, then the HTML files would link to the `ebapi-modules.js` using the following relative path:
 
 	:::html
 	<script src="ebapi-modules.js" type="text/javascript"></script>
 
 ## Using Instance Objects
-Some API classes support instance objects, allowing the developer to maintain their own objects and assign different properties to them. The following example shows how to save a reference to the device's front-facing camera to manipulate that camera's properties separatly from the rear-facing camera:
+Some API classes support instance objects, allowing the developer to maintain their own objects and assign different properties to them. The following example shows how to save a reference to the device's front-facing camera to manipulate that camera's properties separately from the rear-facing camera:
 
 	:::javascript
 	var laserScanner;

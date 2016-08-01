@@ -82,7 +82,9 @@ For access to the same functionality with Enterprise Browser on Android, the `el
 
 See [Using the APIs](../../api/apioverview/) for details about how and where to reference the `elements.js` in HTML.  
 
-## Enterprise Browser Does not support the following: 
+## Unsupported Features 
+The following features are not supported by apps migrated from RhoElements 2.x to Enterprise Browser: 
+
 * The generic methods RasConnect and RasDisconnect
 * The NOSIP control. This control placed a text box onto any page that did not trigger the Soft Input Panel. This predates the APIs that now can hide the SIP or place it off screen. To hide the SIP, see the [SIP API page](/enterprise-browser/1-4/api/Sip).
 * The [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) parameter applies to Windows Mobile only.

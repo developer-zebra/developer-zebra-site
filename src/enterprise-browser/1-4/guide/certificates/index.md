@@ -32,23 +32,23 @@ Enterprise Browser HTTPS requests on Android can be done one of in two ways:
 Tools such as [OpenSSL](https://www.openssl.org/docs/faq.html) can be useful for creating and working with certificates, and most of of its capabilities are accessible through [CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html). Some typical usages are shown below. Before proceeding, [download OpenSSL](https://www.openssl.org/source/) and install it. 
 
 ### Generate a self-signed certificate
-A private key is required to encrypt to the certificate. An existing private key can be used or a new one can be generated for the purpose. 
+To create a self-signed certificate, a private key must exist to encrypt to the certificate. If an existing private key can be used, skip to Step 2. To generate a new key, begin with Step 1. 
 
-**&#49;.  To generate a basic key with no passphrase**:
+**&#49;. To generate a basic key with no passphrase**:
 
         :::term
         openssl genrsa -out privkey.pem
 
-**&#50;. Then the key file generated in Step 1 to create a self-signed certificate**:
+**&#50;. Next, use the key file generated in Step 1 to create a self-signed certificate**:
 
         :::term
         openssl req -new -x509 -key privkey.pem -out capturableacert.pem -days 365
 
-&#51;. A series of questions appears next. Leave all fields blank (by pressing ENTER) _except_ for **the "Common Name" field-- this should contain the domain name that will serve the certificate**. 
+&#51;. A series of questions appears. Leave all fields blank (by pressing ENTER) _except_ for **the "Common Name" field-- this should contain the domain name that will serve the certificate**. 
 
-&#52;. **Add the private key to the web server** according to the server's documentation. 
+&#52;. **Add the private key file to the web server** according to the server's documentation. 
 
-&#53;. **Add the certificate to the web client** as described above.
+&#53;. **Add the certificate file to the web client** as described above.
 
 ### Inspect a certificate
 **To decode the contents of a certificate**:

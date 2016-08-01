@@ -1,16 +1,14 @@
 ---
-title: Enterprise Browser Config Editor Utility
+title: Config Editor Utility
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Config Editor Utility 
 
-The Config Editor is a Windows utility that provides a quick and easy way to edit and deploy the Enterprise Browser Config.xml file, which controls the runtime behavior of Enterprise Browser apps. The tool pulls from connected device(s), explains the behavior of the selected XML tag, displays valid settings, parses and validates previously stored values, saves changes locally and deploys the file(s) to connected device(s) running Android or Windows Mobile/CE. 
+The Config Editor is a Windows utility that provides a quick and easy way to edit and deploy the `Config.xml` file, which controls the runtime behavior of Enterprise Browser apps. The tool can pull the `Config.xml` file from a connected device, describe the behavior of any selected XML tag, display valid settings, parse and validate previously stored values, save changes locally and deploy the file back to a connected device running Android or Windows Mobile/CE. 
 
-The Desktop Config Editor is included with Zebra Enterprise Browser 1.3. 
+The Desktop Config Editor is included with Zebra Enterprise Browser 1.3 and higher. 
 
 ### QUICK STEPS
 1. Select **File>Open** or **Action>Pull From Device>[Device name]**.

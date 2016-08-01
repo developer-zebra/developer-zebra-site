@@ -4,15 +4,17 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-Runtime configuration settings of Enterprise Browser apps are managed through the `Config.xml` file. The `Config.xml` file is required; no EB app will start without it. The `Config.xml` determines features and behavior of the EB runtime, such as the keys that can be intercepted by an app and whether to pre-load modules on startup. A sample configuration file is provided as part of the Enterprise Browser installation, and contains defaults for many (though not all) of the most common settings. 
+##Overview
 
-The sample `Config.xml` file also is displayed below, and is followed by explanations of all settings. The EB `Config.xml` can be edited with an ordinary text editor or with the Config Editor utility included with the installation of Enterprise Browser 1.3. For more information, please refer to the [Config Editor utility guide](/enterprise-browser/1-4/guide/ConfigEditor). 
+Runtime configuration settings of Enterprise Browser apps are managed through the `Config.xml` file, a required file that must accompany every EB app. The `Config.xml` determines features and behavior of the EB runtime, including its start-up page, keys that can be intercepted by an app, and whether to pre-load modules on startup. A default configuration file is provided as part of the Enterprise Browser installation, and contains some (though not all) of the most common settings. 
+
+The default `Config.xml` file is displayed below, followed by explanations of all tags and parameter settings. The EB `Config.xml` can be edited with an ordinary text editor or with the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) included with the installation of Enterprise Browser 1.3 and higher. 
 
 ### Config.xml Location
-The location of the configuration file depends on the target device:
+The location of the configuration file on the device varies by target and platform:
 
 * On the Enterprise Tablet, the `Config.xml` file is read from: 
-`/Android/data/com.symbol.EnterpriseBrowser/Config.xml`
+`/Android/data/com.symbol.EnterpriseBrowser/`
 
 * On all other devices, Enterprise Browser will attempt to read the `Config.xml` file from the `/Config` directory off the installation root, which varies by device platform: 
 
@@ -22,7 +24,7 @@ The location of the configuration file depends on the target device:
 * If multiple `Config.xml` files are required for a single device, they can be configured and selected at runtime using the /C: configuration parameter or by using Shortcuts. See the [Shortcut Creator Guide](/enterprise-browser/1-4/guide/ShortcutCreator) for details.
 
 ####Persistent Installations
-If a configuration must be retained after a cold boot, a persistent installation can be selected (applies to Windows devices only). In such systems: 
+If a `Config.xml` must be retained after a cold boot, a persistent installation can be selected (applies to Windows devices only). In such systems: 
 
 * The `Config.xml` file is permanently stored in: `\Application\EnterpriseBrowser\Config\Config.xml` 
 * On cold boot the `Config.xml` is copied to: `\Program Files\EnterpriseBrowser\Config\Config.xml` 
@@ -44,9 +46,9 @@ The following substitution variables are available in the configuration file:
 </table>
 
 ## Config.xml file format
-The following is an example of a typical configuration file, Android edition. **Important differences exist between Android and Windows Mobile/CE settings in the Config.xml file**, mainly involving directory structure and file naming. Use care when setting these values. 
+The default `Config.xml` file for Android is shown below for reference. **Important differences exist between Android and Windows Mobile/CE settings in the Config.xml file**, mainly involving directory structure and file naming. Use care when setting these values. 
 
-**WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
+> **WARNING**: Free-form text fields (i.e. username and password) can accept alpha-numeric characters unless otherwise noted. Entering non-text characters (< > \ / " ') in these fields could cause the `Config.xml` file to become corrupt. 
 
 	:::xml
 	<?xml version = "1.0"?>
@@ -285,7 +287,7 @@ Stores the name of the application.
 	<Name value="My App"/>
 
 ### UseRegularExpressions
-Regular Expressions are used to maintain backward compatibility with PocketBrowser syntax for controlling device capabilities. This is accomplished through a Regular Expression engine, which applies a series of transformations as defined in `RegEx.xml` to each meta tag or JavaScript call being processed. If backward compatibility is not required, regular expressions can be safely disabled to help improve app performance (depending on app structure). **Applies only to apps for Windows Mobile/CE devices built with RhoMobile Suite 2.2 or higher that need backward compatibility with PocketBrowser**.
+Used to maintain backward compatibility with PocketBrowser syntax for controlling device capabilities. This is accomplished through a Regular Expression engine, which applies a series of transformations as defined in `RegEx.xml` to each meta tag or JavaScript call being processed. If backward compatibility is not required, regular expressions can be safely disabled to help improve app performance (depending on app structure). **Applies only to apps for Windows Mobile/CE devices built with RhoMobile Suite 2.2 or higher that need backward compatibility with PocketBrowser**.
 
 **Possible Values**
 
@@ -301,7 +303,7 @@ Specifies the URL and port number for the HTTP proxy. Leave this field blank if 
 
 **Possible Values**
 
-* URL:PortNo
+* URL: PortNo
 
 #### Example
 	:::xml
@@ -312,7 +314,7 @@ Specifies the URL and port number for the HTTPS proxy. Leave this field blank if
 
 **Possible Values**
 
-* URL:PortNo
+* URL: PortNo
 
 #### Example
 	:::xml
@@ -349,7 +351,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 
 ### SplashScreenDuration
-**Applies only to Android devices**. Specifies the length of time (in milliseconds) to display the image defined by the SplashScreenDuration tag. It is recommended that the duration be greater than 3000 ms (3 seconds) to compensate for image loading time. If tag is removed or left unspecified, will default to 0 seconds. 
+Specifies the length of time (in milliseconds) to display the image defined by the SplashScreenDuration tag. It is recommended that the duration be greater than 3000 ms (3 seconds) to compensate for image loading time. If tag is removed or left unspecified, will default to 0 seconds. **Applies only to Android devices**. 
 
 **Possible Values**
 
@@ -402,7 +404,6 @@ Specifies the Category under which the receiver is to be registered. There can b
 
 ### DebugButtonsEnabled
 When enabled, presents a set of controls useful for development and debugging purposes.
-Note: When using this feature with the IE engine on a CE device, screen distortion may be displayed while scrolling.
 
 **Notes**
 
@@ -432,7 +433,7 @@ Sets the protocol over which the logging data will be sent.
 	<LogProtocol value="FILE"/>
 
 ### LogPort
-The port over which the logging data will be sent when HTTP is set in LogProtocol (ignored otherwise).
+The port over which the logging data will be sent when HTTP is set in LogProtocol (otherwise ignored).
 
 **Possible Values**
 
@@ -449,7 +450,7 @@ The URL or file name and path to which logged data should be sent or saved.
 
 * Any valid URL or fully qualified file name
 
->Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -573,7 +574,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 
 * Fully qualified path to plug-in file.
 
-> Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -862,7 +863,7 @@ Sets the path to an existing directory for storage of web storage databases. **A
 
 * Fully qualified local path
 
-> Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -886,7 +887,7 @@ Path to an existing directory to store Web SQL databases. **Applies only to Wind
 
 * Fully qualified local path
 
-> Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -925,7 +926,7 @@ Path to an existing directory containing the NPAPI Plug-ins. **Not applicable to
 
 * Fully qualified local path
 
-> Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -1471,7 +1472,7 @@ The browser will automatically append the querystring value "badlink" containing
 
 * Fully qualified path and file name 
 
-> Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -1571,7 +1572,7 @@ Specifies the location of the database to hold persistent cookies, if desired. I
 
 * Fully qualified local path
 
-> Note: The operating systems of some devices have case sensitive file systems. Therefore it is good practice to always keep URL values in the Config.xml file case identical to the names of the actual files.
+> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 #### Example
 	:::xml
@@ -1740,7 +1741,7 @@ Controls whether HTTP connections will be maintained between requests. When enab
 Due to its asynchronous battery notification, the Enterprise Tablet does not support BatteryRefresh. This has the effect of launching a bateryEvent only when the battery level changes. This functionality has been implemented in place of polling as a means of maximizing battery power.
 
 ### <a name="_caseSensitivity"></a>Case Sensitivity
-The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the Config.XML file be identical to those of the actual sources.
+The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
 
 ### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
 Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge). **This issue applies to Android only**. 

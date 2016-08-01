@@ -6,19 +6,19 @@ automenu:
   items:
     - title: Configuration
       items:
-        - title: Config Editor
+        - title: Config Editor Utility
           url: ConfigEditor
-        - title: On-device Config
+        - title: On-device Configuration
           url: OndeviceConfig
-        - title: Config XMl Reference
+        - title: Config.xml Reference
           url: configreference
-        - title: Shortcuts
+        - title: Shortcut Creator Utility
           url: ShortcutCreator
     - title: Application Usage
       items:
         - title: Certificates
           url: certificates
-        - title: Datawedge
+        - title: DataWedge
           url: datawedge
         - title: DOM Injection
           url: DOMinjection
@@ -26,9 +26,7 @@ automenu:
           url: keycapture
         - title: Printing
           url: printingGuide
-        - title: Printing
-          url: printing
-        - title: Sap ITS usage
+        - title: SAP ITS usage
           url: sap
         - title: Viewport Usage
           url: viewport

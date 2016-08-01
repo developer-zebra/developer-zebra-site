@@ -1,53 +1,66 @@
 ---
-title: Certificates in Enterprise Browser
+title: Certificates
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
 ## Windows Mobile and CE
-When using Enterprise Browser with webkit, any required certificates beyond the pre-loaded ones can be specified using the `CaFile` configuration setting in Config.xml. This points to a file containing the certificate data. The certificate(s) specified are treated by webkit as trusted authorities. Note this only applies to HTTPS requests made by webkit.
+When using Enterprise Browser with webkit, any required certificates beyond the pre-loaded ones can be specified using the `CaFile` configuration setting in the `Config.xml` file. This points to a file containing the certificate data, and the certificate(s) specified are treated by webkit as trusted authorities.
 
-For example, to use certificates in the file 'mycert.crt' the file should be copied to the device and the appropriate entry made in Config.xml, e.g. if the file is in the root directory of the device:
+For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 
 
 	:::xml
 	<CaFile Value=”\\mycert.pem”>
 
+> **Note**: This applies only to HTTPS requests made by webkit.
+
 ## Android
-On Android EB HTTPS requests can be done in two ways:
+Enterprise Browser HTTPS requests on Android can be done one of in two ways:
 
 * Using system browser navigation with WebView component:
-	* There are some differences in usage of these two ways: the system browser uses built-in system-trusted storage for root CAs. Root certificates should be installed from the system menu and will be used by any application that utilizes WebView UI component ( like browsers etc ) and reference navigation in EB will also use this method. Only server SSL auth is currently implemented for WebView. Android 5 introduced the ability to use client auth in a browser and we are planning to implement it in future releases.
+	* The system browser uses built-in system-trusted storage for root CAs. 
+	* Root certificates should be installed from the system menu, and will be used by any application that uses a WebView UI component (such as a browser).
+	* Reference navigation in EB also will use this method. 
+	* EB currently supports only server SSL authentication for WebView.
+	* Browser-based client authentication, which was introduced in Android 5, will be implemented in a future release.
 * Certificate formats:
-	* There are several formats of certificate available and any format is accepted which represents the certificate as encoded text. These typically have the extension .crt or .pem, but what's important is that they contain the certificate data between BEGIN and END lines. Certificates in the .der format are not supported and should be converted, e.g. using OpenSSL as shown below.
+	* There are several certificate formats available, and any format that represents the certificate as encoded text is accepted. These typically have the extension `.crt` or `.pem`. 
+	* **Certificate files must contain the certificate data between "BEGIN" and "END" lines**.
+	* Certificates in the .der format are not supported and should be converted, e.g. using OpenSSL as shown below.
 
-## OpenSSL usage
-The OpenSSL utility has many command line options which are well documented on the web, e.g. [here](https://www.sslshopper.com/article-most-common-openssl-commands.html) and [here](https://www.openssl.org/docs/HOWTO/certificates.txt):
+## OpenSSL
+Tools such as [OpenSSL](https://www.openssl.org/docs/faq.html) can be useful for creating and working with certificates, and most of of its capabilities are accessible through [CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html). Some typical usages are shown below. Before proceeding, [download OpenSSL](https://www.openssl.org/source/) and install it. 
 
-Some typical usages are shown below:
+### Generate a self-signed certificate
+A private key is required to encrypt to the certificate. An existing private key can be used or a new one can be generated for the purpose. 
 
-### Generating a self-signed certificate:
-1. You need to have a private key in order to encrypt to the certificate. Either use an existing private key, or generate one for the purpose. The easiest way to generate a basic, no passphrase, one is to use:
+**&#49;.  To generate a basic key with no passphrase**:
 
         :::term
         openssl genrsa -out privkey.pem
 
-2. A self-signed certificate can then be generated from the key using:
+**&#50;. Then the key file generated in Step 1 to create a self-signed certificate**:
 
         :::term
         openssl req -new -x509 -key privkey.pem -out capturableacert.pem -days 365
 
-3. You will be asked a series of questions. For all _but_ Common Name you can press return to leave the field blank, but for Common Name enter the domain name which will serve the certificate. Add the private key to your web server according to the server's documentation, and add the certificate to the web client as described above.
+&#51;. A series of questions appears next. Leave all fields blank (by pressing ENTER) _except_ for **the "Common Name" field-- this should contain the domain name that will serve the certificate**. 
 
-### Inspecting a certificate
-1. To decode the contents of a certificate use:
+&#52;. **Add the private key to the web server** according to the server's documentation. 
+
+&#53;. **Add the certificate to the web client** as described above.
+
+### Inspect a certificate
+**To decode the contents of a certificate**:
 
 				::term
 				openssl x509 -in cacert.pem -text -noout
 
-2. The Common Name is shown as Subject: CN=. The signing authority is shown as Issuer: CN=, which will be the same as Subject for a self-signed certificate.
+* The Common Name is shown as "Subject: CN=" 
+* The signing authority is shown as Issuer: CN=, which will be the same as Subject for a self-signed certificate.
 
-### Converting a certificate
-To convert a .der format certificate to a .pem one use:
+### Convert certificate format
+**To convert a `.der` format certificate to .`pem` format**:
 
 	:::term
 	openssl x509 -inform der -in cacert.der -out cacert.pem

@@ -1,21 +1,23 @@
 ---
-title: On-Device Debugging of Enterprise Browser Apps
+title: On-Device Debugging
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-On-device debugging should be included in the standard testing procedures for every development organization. Although much can be done using emulators and the IDE, applications often behave differently when running on hardware, and features such as [Barcode](/enterprise-browser/1-4/api/barcode) scanning cannot be tested at all without hardware to perform the scan and acquire the data.
+## Overview
 
-This guide describes three methods of debugging Enterprise Browser apps while they're running on the device:
+Just as debugging should be thought of as a vital part of every development cycle, on-device debugging should be part of any effective testing regimen. Although much can be accomplished using emulators and an IDE, applications often behave differently when running on hardware, and features such as [Barcode](../../api/barcode) scanning are impossible to test without the use of physical hardware to perform the scan and acquire the data.
 
-* **Chrome's Web Inspector** works with Android KitKat and higher, is easy to set up and offers screenshots and other nice extras. 
+This guide includes instructions for enabling debugging on an Android device and describes three methods of debugging Enterprise Browser apps while they're running on a device:  
 
-* **Weinre** is a node.js application that can effectively test most apps running on Android Jelly Bean and Windows Mobile/CE devices. 
+* **Chrome's Web Inspector -** works with Android KitKat and higher, is easy to set up, and offers screenshots and other nice extras. 
 
-* **Remote Debug Inspector** works with Windows Mobile/CE devices that use the Zebra Webkit. 
+* **Weinre -** is a node.js application that can effectively test most apps running on Android Jelly Bean as well as Windows Mobile/CE devices. 
+
+* **Remote Debug Inspector -** works with Windows Mobile/CE devices that use the Zebra Webkit. 
 
 ###Prerequisites
-Requirements of the development host vary based on the target device and its OS platform. General requirement guidelines are listed below. Platform-specific requirements, if any, will be listed in the section with the individual tool.  
+Requirements of the development host vary based on the target device and its OS platform. General requirement guidelines are listed below. Platform-specific requirements, if any, will be listed in the section that describes the individual debugging tool and/or method.  
 
 * Mac OS X or Windows development host
 * Android Debug Bridge ([ADB](http://developer.android.com/tools/help/adb.html)) or MS Mobile Device Center (or ActiveSync) 
@@ -23,7 +25,9 @@ Requirements of the development host vary based on the target device and its OS 
 * A Zebra target device (Android or Windows Mobile/CE)
 * A USB cable for connecting the target to the dev. host
 * USB debugging enabled on target
-* A WebView app configured for debugging
+* A WebView-based app configured for debugging
+
+-----
 
 <a name="chrome"></a>
 ## Debugging with Chrome
@@ -42,7 +46,7 @@ Google Remote Debugging works with native Android apps that use WebView as well 
 * An app configured for WebView debugging
 
 ###1. Enable Device Debugging
-The target device must have USB debugging enabled. This feature is found in **Settings >> Developer Options** panel, which is hidden by default. Here's how to **unhide Developer options** (if neccessary) **and enable USB debugging**: 
+The target device must have USB debugging enabled. This feature is found in **Settings >> Developer Options** panel, which is hidden by default. Here's how to **un-hide Developer options** (if necessary) **and enable USB debugging**: 
 
 1. Go to **Settings >> About Phone**
 2. **Go to the 'Build Number' box** (by scrolling all the way to the bottom)
@@ -50,7 +54,8 @@ The target device must have USB debugging enabled. This feature is found in **Se
 4. **Return to Settings** and **tap Developer Options** 
 5. **Place a check in the Enable USB Debugging** box
 
-<img style="height:300px" src="../../images/debugging/Android_developerOptions.png"/>
+![img](../../images/debugging/Android_developerOptions.png)
+
 
 _Click on any image to enlarge_.
 
@@ -61,11 +66,11 @@ If you haven't already done so, **connect your device to an available USB port o
 
 1. Open a browser window and **enter 'chrome://inspect'** in the address bar. You should see a screen similar the one above.
 
-2. **Check the 'Discover USB Devices' checkbox**. Your mobile device should appear along with an alert on the device. (If no devices are visible, please refer to the [Connections](/enterprise-browser/1-4/guide/setup?Connections) section of the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup)). 
+2. **Check the 'Discover USB Devices' checkbox**. Your mobile device should appear along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)). 
 
 3. **Tap OK on the device** to complete the connection
 
-4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](/enterprise-browser/1-4/guide/setup?Connections) section of the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup)) for that procedure.
+4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)) for that procedure.
 
 5. At this point you should be ready to begin debugging. Once your app is deployed and running on the device, the chrome://inspect page should look something like the one shown below, with your device and a link to its debug-enabled WebViews. **To begin debugging, click an inspect link.** 
 
@@ -99,6 +104,8 @@ As with most web inspectors you can change attributes in the inspector...
 
 ![img](../../images/debugging/changed_app_text.png)
  -->
+
+-----
 
 <a name="weinre"></a>
 ## Debugging with Weinre
@@ -194,16 +201,16 @@ The Elements tab can be used for on-the-fly changes to CSS styling, API and meth
 ![img](../../images/debugging/weinre-button-element-after-change.png)
 
 ### Console and Issuing API Calls
-One of the most versatile components of Weinre is its Console. Not only does it offer classic capabilities such as device visibility and monitoring during operation, but the Weinre Console also can access all of a device’s hardware fearures, issue commands and report how the device reacts.
+One of the most versatile components of Weinre is its Console. Not only does it offer classic capabilities such as device visibility and monitoring during operation, but the Weinre Console also can access all of a device’s hardware features, issue commands and report how the device reacts.
 
-The example below shows results from an attempt to use the JavaScript API to check the target platform, use the camera to scan a barcode, and issue a command to the [ScreenOrientation API](/enterprise-browser/1-4/api/screenorientation) (which returned an error).
+The example below shows results from an attempt to use the JavaScript API to check the target platform, use the camera to scan a barcode, and issue a command to the [ScreenOrientation API](../../api/screenorientation) (which returned an error).
 
 ![img](../../images/debugging/weinre-barcode-take.png)
 
 In the example, the Console is used to verify that JavaScript APIs are functioning properly. A return of the correct system platform ‘Android’ proves that the System API is working. A return of the correct scanned barcode value likewise proves that the Barcode module is working properly.
 
 <b>Here’s another important benefit of the Weinre console</b>.
-Notice that when the barcode callback handler function is executed, we are using the form `console.log(e)`, where `e` is the callback return object. This allows us to inspect the object right in the console. It also simplifies validation because we see that it contains a barcode property and a status property, exactly as described in the [Barcode.take( ) method](/enterprise-browser/1-4/api/barcode?take(HASH propertyMap)) description. Alternative means—such as adding code for outputting to a log, then for seaching and retrieving the information from the device—can be time consuming, tedious and error-prone.
+Notice that when the barcode callback handler function is executed, we are using the form `console.log(e)`, where `e` is the callback return object. This allows us to inspect the object right in the console. It also simplifies validation because we see that it contains a barcode property and a status property, exactly as described in the [Barcode.take( ) method](../../api/barcode) description. Alternative means, such as adding code for outputting to a log and then searching and retrieving the information from the device, can be time-consuming and error-prone.
 
 ### Other Tabs in Debugger UI
 Several other tabs in the debugging UI can be quite useful. 
@@ -211,15 +218,17 @@ Several other tabs in the debugging UI can be quite useful.
 ![img](../../images/debugging/weinre-tabs.png)
 
 #### Network Tab
-The Network tab <b>measures and displays the time required for HTTP requests</b> made by an application. Clicking on any of the resources in the left-hand pane will visually represent the delay as its headers and content are loaded and AJAX and other calls are made to remote servers. Data displayed when hovering over ‘Latency’ and ‘Timeline’ columns, andcan be used to help optimize load-time performance. Remember that EB application can have a 'server' running on the device as well as on the web. It is important to inspect the processing of JavaScript or CSS files and reduce lag wherever possible. 
+The Network tab <b>measures and displays the time required for HTTP requests</b> made by an application. Clicking on any of the resources in the left-hand pane will visually represent the delay as its headers and content are loaded and AJAX and other calls are made to remote servers. Data displayed when hovering over "Latency" and "Timeline" columns, andcan be used to help optimize load-time performance. Remember that EB application can have a 'server' running on the device as well as on the web. It is important to inspect the processing of JavaScript or CSS files and reduce lag wherever possible. 
 
 #### TimeLine Tab
 The Timeline tool <b>measures and displays the rendering time of each element of the user interface</b>, presenting a visual display similar to that of the Network tab. The Timeline tab is useful for finding bottlenecks in front-end UI or DOM performance.
 
-More information about Timeline can be found starting at 25:10 of Zebra’s [Front-End UI Optimization Webinar](https://developer.zebra.com/docs/DOC-1661). This one-hour video contains useful information about detecting reflows and other common problems that can bring mobile apps to a crawl.
+More information about Timeline can be found starting at 25:10 of Zebra’s [Front-End UI Optimization Webinar](https://developer.zebra.com/docs/DOC-1661). This one-hour video contains useful information about detecting re-flows and other common problems that can bring mobile apps to a crawl.
 
 #### Resources Tab
-The Resources tab allows <b>displays the resources being used by the current Webview page</b>. Reources can include outside assets being called into the app such as images, JavaScript, stylesheets and cookies. Inspecting the resources can be useful if for ensuring that a particular resource has been loaded. This tab also can provide insight into other HTML5 features such as WebSQL and localStorage, if present.
+The Resources tab allows <b>displays the resources being used by the current Webview page</b>. Resources can include outside assets being called into the app such as images, JavaScript, style sheets and cookies. Inspecting the resources can be useful if for ensuring that a particular resource has been loaded. This tab also can provide insight into other HTML5 features such as WebSQL and localStorage, if present.
+
+-----
 
 <a name="inspector"></a>
 ## Using Remote Debug Inspector
@@ -235,7 +244,7 @@ The Remote Debug Inspector tool is for debugging apps running on Zebra Windows M
 * A connection to the device for copying files (Bluetooth, USB or Wi-Fi)
 * The development host and device on the same subnet (over which to debug)
 
-<img style="height:300px" src="images/debugging/ebsetup_webkit.jpg"/>
+![img](../../images/debugging/ebsetup_webkit.jpg)
 
 Enterprise Browser device installer showing Webkit deployment options.
 
@@ -244,7 +253,7 @@ _Click on any image to enlarge_.
 ### Install 
 
 &#49;. **[Download Remote Debug Inspector](http://enterprise-browser.s3.amazonaws.com/inspector.CAB)** tool.<br>
-&#50;. **Copy the downloaded 'inspector.CAB' file to the device**.<br> 
+&#50;. **Copy the downloaded `"inspector.CAB"` file to the device**.<br> 
 &#51;. **Execute the file**, which will install into a folder called `/inspector` on the device.<br>
 &#52;. **Add to the Config.XML file** (of the target app) the following tags:<br>
 
@@ -264,7 +273,7 @@ Notice that the <b>&lt;RemoteDebug&gt;</b> section is inserted <b>after &lt;HTML
 
 Also note that we're using the default values for ResourceFiles and ServerPort. If these are changed, be sure to make the corresponding changes in the next steps.  
 
-<b>&#53;. Note the IP address of the target device</b> (Wi-Fi Settings >> Wi-FI Driver Settings). It must be on the same subnet as the development host.
+<b>&#53;. Note the IP address of the target device</b> (Wi-Fi Settings >> Wi-Fi Driver Settings). It must be on the same subnet as the development host.
 
 <b>&#54;. Launch the Enterprise Browser app</b> to be tested. 
 
@@ -276,11 +285,11 @@ Also note that we're using the default values for ResourceFiles and ServerPort. 
 
 After a few moments, the browser should display a page similar to the image below: 
 
-<img style="height:300px" src="images/debugging/inspectable_webviews.png"/>
+<img style="height:300px" src="../../images/debugging/inspectable_webviews.png"/>
 
 <b>&#56;. Click on a link</b> to inspect it in a panel similar to the image below: 
 
-<img style="height:400px" src="images/debugging/inspecting_html.png"/>
+![img](../../images/debugging/inspecting_html.png)
 
 This panel works in much the same manner as those of Weinre and Chrome Web Inspector (click on any image to enlarge). 
 

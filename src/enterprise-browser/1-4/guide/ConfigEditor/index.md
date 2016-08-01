@@ -11,6 +11,7 @@ The Config Editor is a Windows utility that provides a quick and easy way to edi
 The Desktop Config Editor is included with Zebra Enterprise Browser 1.3 and higher. 
 
 ### QUICK STEPS
+The basic steps to edit a `Config.xml` file from a PC attached to the target device: 
 1. Select **File>Open** or **Action>Pull From Device>[Device name]**.
 2. **Open the Config.xml file** to be edited. 
 3. In Config Editor window, navigate tree view to **locate and edit tag value(s)** as required.

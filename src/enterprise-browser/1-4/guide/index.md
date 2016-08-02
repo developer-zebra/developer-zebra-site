@@ -38,8 +38,6 @@ automenu:
           url: debuggingjs
     - title: Migration
       items:
-        - title: Common Migration Notes
-          url: migration
         - title: Pocket Browser 2.x
           url: pb2
         - title: Pocket Browser 3.x

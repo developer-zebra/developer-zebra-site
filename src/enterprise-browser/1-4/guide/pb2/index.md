@@ -4,10 +4,24 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-This guide is meant to assist in migration from PocketBrowser 2.x to the Enterprise Browser. For online documentation specific to PocketBrowser 2.x, please see the [online PB2 docs](http://goo.gl/H1Fuik).
+##Overview
+Enterprise Browser supports PocketBrowser 2.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few that might be. 
 
-## Overview
-PocketBrowser 2.x applications are supported when running within Enterprise Browser. Please review the [Common Migration Notes](/enterprise-browser/1-4/guide/migration) for items that also apply to migrating PocketBrowser applications to Enterprise Browser. Then review the sections below that apply to your device and installation choice type.
+**Related Guides**: 
+* **[PocketBrowser 3.x Migration Guide](/enterprise-browser/1-4/guide/pb3/)**
+* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
+* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
+* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+
+For online documentation specific to PocketBrowser 2.x, please see the [online PB2 docs](http://goo.gl/H1Fuik).
+
+* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
+
+**Location of the Enterprise Browser** `Config.xml` **file**: 
+
+* **On Android devices: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
+* **Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
+
 
 ## Windows Mobile/CE using Webkit
 Since you have chosen Webkit to run a PocketBrowser v2 application, you should expect some major differences with regard to rendering. If you wanted your page to render as it does on PocketBrowser consider using the IE web view.

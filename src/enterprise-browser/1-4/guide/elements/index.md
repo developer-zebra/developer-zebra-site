@@ -13,10 +13,13 @@ Enterprise Browser supports RhoElements 2.x applications, which in many cases wi
 * **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
 * **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
 
+* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
+
+
 -----
 
 ## Config.xml
-The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new and copy any required files.
+The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
 
 1. **Set the StartPage of the app**. This will be the first page that loads with Enterprise Browser, and can be on a server (specify the URL) or local to the device (specify the full path), as below: 
 
@@ -32,6 +35,8 @@ The single change that is always necessary when migrating to Enterprise Browser 
 2. Copy any required off-line files (i.e. ["BadLink"](/enterprise-browser/1-4/guide/configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
 
 > **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+
+3. If the app requires access to EB APIs, see the relevant section below.
 
 See the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreference) for more information about settings, parameters and other requirements.
 

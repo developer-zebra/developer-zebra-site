@@ -4,7 +4,24 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-This guide is meant to assist in migration from PocketBrowser 3.x to the Enterprise Browser. For online documentation specific to PocketBrowser 3.x, please see the [online PB3 docs](http://goo.gl/H8G4IW).
+Enterprise Browser supports PocketBrowser 3.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few that might be. 
+
+
+**Related Guides**: 
+* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
+* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
+* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
+* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+
+For online documentation specific to PocketBrowser 3.x, please see the [online PB3 docs](http://goo.gl/H8G4IW).
+
+* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
+
+**Location of the Enterprise Browser** `Config.xml` **file**: 
+
+* **On Android devices: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
+* **Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
+
 
 ## Overview
 PocketBrowser 3.x applications are supported when running within Enterprise Browser. Please review the [Common Migration Notes](/enterprise-browser/1-4/guide/migration) for items that also apply to migrating PocketBrowser applications to Enterprise Browser. Then review the sections below that apply to your device and installation choice type.

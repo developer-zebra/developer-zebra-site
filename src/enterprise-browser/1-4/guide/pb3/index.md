@@ -4,27 +4,26 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
+##Overview
 Enterprise Browser supports PocketBrowser 3.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few that might be. 
 
+See also the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)**. 
 
-**Related Guides**: 
-* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
-* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
-* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
-* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+-----
 
-For online documentation specific to PocketBrowser 3.x, please see the [online PB3 docs](http://goo.gl/H8G4IW).
+## Config.xml
+The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
 
-* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
-
-**Location of the Enterprise Browser** `Config.xml` **file**: 
-
-* **On Android devices: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
+####Location of the Enterprise Browser `Config.xml` file: 
+* **Android devices**: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
 * **Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
 
+See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference)** for more information about settings, parameters and other requirements.
 
-## Overview
-PocketBrowser 3.x applications are supported when running within Enterprise Browser. Please review the [Common Migration Notes](/enterprise-browser/1-4/guide/migration) for items that also apply to migrating PocketBrowser applications to Enterprise Browser. Then review the sections below that apply to your device and installation choice type.
+-----
+NEW FOR CHECKING
+
+
 
 ## Windows Mobile/CE using Webkit
 Since you have chosen Webkit to run a PocketBrowser v3 application, you should expect some major differences with regard to rendering. If you wanted your page to render as it does on PocketBrowser consider using the IE web view.
@@ -188,5 +187,17 @@ This section provides remarks on peculiarities or dependencies concerning specif
 
 ### DeviceApplication API
 * Windows CE - The `TextSize` feature in the DeviceApplication API from PB3 will not function properly unless you also enable text selection using the `TextSelectionEnabled` setting in Config.xml.
+
+-----
+
+**Related Guides**: 
+* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
+* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
+* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
+* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+
+* **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)**
+
+* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
 
 

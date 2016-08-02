@@ -281,7 +281,7 @@ _The User Mode screen with XXL icons_. -->
 
 * **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way.
 
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to lock screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 

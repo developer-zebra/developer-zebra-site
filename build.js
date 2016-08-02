@@ -21,7 +21,7 @@ var Metalsmith = require('metalsmith'),
     blc = require('metalsmith-broken-link-checker'),
     headingsidentifier = require("metalsmith-headings-identifier"),
 	Swag = require('swag');
-
+var stdio = require('stdio');
 
 Swag.registerHelpers(Handlebars);
 
@@ -169,6 +169,18 @@ Handlebars.registerHelper("debug", function(optionalValue) {
     console.log(optionalValue);
   }
 });
+
+var limitFolder="";
+var options = stdio.getopt({'limit': {description: 'folder to limit', mandatory: false, args: 1}});
+console.log(options)
+if(options.limit){
+    limitFolder=options.limit;
+
+    console.log("Limiting build to folder:" + limitFolder)
+}
+else{
+    console.log("Building all folders - use '-limit [foldername]' instead")
+}
 
 var sitebuild = Metalsmith(__dirname)
     .clean(false)
@@ -536,8 +548,10 @@ var sitebuild = Metalsmith(__dirname)
     .use(codehighlight({
 
     }))
-    .destination('./build')
+    .source('./src/'+limitFolder)
+    .destination('./build/'+limitFolder)
     .use(serve({
+        document_root: './build',
         cache: 0
     }))
     .build(function (err) {

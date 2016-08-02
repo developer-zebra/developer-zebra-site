@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview
-Enterprise Browser supports RhoElements 2.x applications, and in many cases such apps can run in EB with little or no changes required. This guide is intended to assist in making the few changes that might be required for migration. 
+Enterprise Browser supports RhoElements 2.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few that might be. 
 
 **Related Guides**: 
 * **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
@@ -16,9 +16,9 @@ Enterprise Browser supports RhoElements 2.x applications, and in many cases such
 -----
 
 ## Config.xml
-The single change that is always necessary when migrating from another platform to Enterprise Browser is to move any relevant settings from the config file of the former platform to the Enterprise Browser `Config.xml` file. 
+The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new and copy any required files.
 
-1. Set the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app. This will be the first page that loads with Enterprise Browser, and can be on a server (specify the URL) or local to the device (specify the full path), as below: 
+1. **Set the StartPage of the app**. This will be the first page that loads with Enterprise Browser, and can be on a server (specify the URL) or local to the device (specify the full path), as below: 
 
 		:::xml
 		<Configuration>
@@ -38,7 +38,7 @@ See the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreferen
 -----
 
 ## Meta Tags
-RhoElements 2.x and Enterprise Browser both support the configuration of app functionality "on-the-fly" through the use of meta tags. Enterprise Browser was engineered to be backward compatible with this feature, and therefore should implement RE 2.x meta tags for Android and Windows Mobile/CE with no changes required. **As a precaution, confirm that the tags were specified properly, as below**. 
+RhoElements 2.x and Enterprise Browser both support the configuration of app functionality "on-the-fly" through the use of meta tags. Enterprise Browser was engineered to be backward compatible with this feature, and therefore should implement RE 2.x meta tags for Android and Windows Mobile/CE with no changes required. **As a precaution, confirm that the tags are specified properly, as below**. 
 
 Example meta-tag specification:
 
@@ -48,7 +48,7 @@ Example meta-tag specification:
 	<META HTTP-Equiv="scanner" Content="Start"> 
 
 ## Display Rendering
-If migrating from a Windows device to one running Android, adjustments to some display settings will likely be necessary since the two platforms use different webkits. Other considerations might include display of the soft input panel and its position on the screen. Some of the relevant parameters are listed below. 
+If migrating from a Windows device to one running Android, adjustments to some display settings will likely be necessary since the two platforms use different webkits. Other considerations might include display of the soft input panel and its position on the screen. Some of the relevant parameters are listed below; all should be checked. 
 
 **Render-related settings**: 
 

@@ -1,5 +1,5 @@
 ---
-title: Enterprise Browser Installation
+title: Enterprise Browser Setup
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html

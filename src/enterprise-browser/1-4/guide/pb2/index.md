@@ -8,7 +8,7 @@ layout: guide.html
 Enterprise Browser supports PocketBrowser 2.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migrating PowcketBrowser 2.x apps to EB, and a few that might be. 
 
 ####Prerequisites
-These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software, as well as a familiarity with the process of editing a device configuration file. For help installing Enterprise Browser, see the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup). **For Windows CE devices, Zebra recommends selecting a persistent installation for Webkit** in the [device deployment step](/enterprise-browser/1-4/guide/setup#deploymenttodevices), which allows Enterprise Browser settings to persist following the cold boot that is necessary to complete the installation.
+These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software, as well as a familiarity with the process of editing a device configuration file. For help installing Enterprise Browser, see the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup). 
 
 -----
 
@@ -84,20 +84,12 @@ If migrating from a Windows device to one running Android, or from Windows Mobil
 -----
 
 ## Windows Mobile/CE using Webkit 
-**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, 
+**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, skip to the next section. 
+
+###Persistence
+**For Windows CE devices, Zebra recommends selecting an Enterprise Browser persistent installation for Webkit**. This step can be found in the [device deployment section](/enterprise-browser/1-4/guide/setup#deploymenttodevices) of the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup). This allows Enterprise Browser settings to persist following the cold boot that is necessary to complete the installation.
 
 
-NEW FOR CHECKING
-
-
-coldCAD (CE)
-cold boot will not do a cold boot. Zebra offers ColdCAD, which forces a cold boot. (HW, PWR, remove BATT)
-
-warm
-cold
-coldCAD
-
-EB cab file persistent and non
 
 copy content of EB content from app folder to pgm files location
 

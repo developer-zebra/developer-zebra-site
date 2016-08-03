@@ -15,7 +15,7 @@ See also the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)**.
 The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
 
 ####Location of the Enterprise Browser `Config.xml` file: 
-* **Android devices**: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
+* **Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/`
 * **Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
 
 See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference)** for more information about settings, parameters and other requirements.

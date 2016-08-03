@@ -7,8 +7,8 @@ layout: guide.html
 ##Overview
 Enterprise Browser supports PocketBrowser 2.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migrating PowcketBrowser 2.x apps to EB, and a few that might be. 
 
-####Installation
-These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software. For help installing Enterprise Browser, see the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup). **For Windows CE devices, Zebra recommends selecting a persistent installation for Webkit** in the [device deployment step](/enterprise-browser/1-4/guide/setup#deploymenttodevices), which allows Enterprise Browser settings to persist following the cold boot that is necessary to complete the installation.
+####Prerequisites
+These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software, as well as a familiarity with the process of editing a device configuration file. For help installing Enterprise Browser, see the [Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup). **For Windows CE devices, Zebra recommends selecting a persistent installation for Webkit** in the [device deployment step](/enterprise-browser/1-4/guide/setup#deploymenttodevices), which allows Enterprise Browser settings to persist following the cold boot that is necessary to complete the installation.
 
 -----
 
@@ -19,7 +19,7 @@ The instructions in this section apply to all migrations from Android, Windows M
 The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. For PocketBrowser apps, it's also necessary to enable the backward compatibility engine. For some apps, it also might be necessary to replicate and/or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files to the device. 
 
 ####Location of the Enterprise Browser `Config.xml` file: 
-* **On Android devices**: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
+* **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/`
 * **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
 
 &#49;. **Specify the StartPage of the EB app** in the new `Config.xml` file. This will be the first page that loads with Enterprise Browser, and can be on a server (specify the URL) or local to the device (specify the full path), as below: 

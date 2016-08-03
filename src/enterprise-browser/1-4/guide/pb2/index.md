@@ -12,7 +12,7 @@ These instructions require a development host (desktop or laptop) connected to a
 
 -----
 
-## Migration Steps Common to All Platforms
+## Common Steps For All Platforms
 The instructions in this section apply to all migrations from Android, Windows Mobile and Windows CE. Platform-specific differences will be indicated as such in corresponding sections that follow. Most of the activities related to app migration involve editing the Enterprise Browser `Config.xml` file, which stores all app settings and parameters. See the [Config Editor Utility Guide](/enterprise-browser/1-4/guide/ConfigEditor/) for information about how to connect to devices and access this file.  
 
 ###Config.xml
@@ -83,9 +83,39 @@ If migrating from a Windows device to one running Android, or from Windows Mobil
 
 -----
 
+## Windows Mobile/CE using Webkit 
+**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, 
+
+
 NEW FOR CHECKING
 
-this was from the Windows Mobile/CE using Webkit section. 
+
+coldCAD (CE)
+cold boot will not do a cold boot. Zebra offers ColdCAD, which forces a cold boot. (HW, PWR, remove BATT)
+
+warm
+cold
+coldCAD
+
+EB cab file persistent and non
+
+copy content of EB content from app folder to pgm files location
+
+pgm
+app
+temp
+win
+
+persistent goes to app
+on cold boot it copies from app to pgm files
+changes to config must be made in enterprise folder
+
+launches from /pgm/ent
+
+edit config in app folder
+cold boot ciopies to pgm files
+change become live
+
 
 
 ### Usage Notes

@@ -4,6 +4,10 @@ description: These guides explain the concepts and specific steps required to ac
 layout: list-apis.html
 automenu:
   items:
+   - title: Initial Installation
+      items:
+        - title: Enterprise Browser Setup Guide
+          url: setup
     - title: Configuration
       items:
         - title: Config Editor Utility

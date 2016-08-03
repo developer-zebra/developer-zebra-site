@@ -22,6 +22,7 @@ See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guid
 
 -----
 
+
 ## Display Rendering
 If migrating from a Windows device to one running Android, adjustments to some display settings will likely be necessary since the two platforms use different webkits. Other considerations might include display of the soft input panel and its position on the screen. Some of the relevant parameters are listed below; all should be checked. 
 

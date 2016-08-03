@@ -450,7 +450,7 @@ The URL or file name and path to which logged data should be sent or saved.
 
 * Any valid URL or fully qualified file name
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -574,7 +574,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 
 * Fully qualified path to plug-in file.
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -863,7 +863,7 @@ Sets the path to an existing directory for storage of web storage databases. **A
 
 * Fully qualified local path
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -887,7 +887,7 @@ Path to an existing directory to store Web SQL databases. **Applies only to Wind
 
 * Fully qualified local path
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -926,7 +926,7 @@ Path to an existing directory containing the NPAPI Plug-ins. **Not applicable to
 
 * Fully qualified local path
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -1472,7 +1472,7 @@ The browser will automatically append the querystring value "badlink" containing
 
 * Fully qualified path and file name 
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -1572,7 +1572,7 @@ Specifies the location of the database to hold persistent cookies, if desired. I
 
 * Fully qualified local path
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 #### Example
 	:::xml
@@ -1741,7 +1741,7 @@ Controls whether HTTP connections will be maintained between requests. When enab
 Due to its asynchronous battery notification, the Enterprise Tablet does not support BatteryRefresh. This has the effect of launching a bateryEvent only when the battery level changes. This functionality has been implemented in place of polling as a means of maximizing battery power.
 
 ### <a name="_caseSensitivity"></a>Case Sensitivity
-The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 ### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
 Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge). **This issue applies to Android only**. 

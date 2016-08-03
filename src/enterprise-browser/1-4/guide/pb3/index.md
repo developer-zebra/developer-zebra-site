@@ -21,14 +21,28 @@ The single change that is always necessary when migrating to Enterprise Browser 
 See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference)** for more information about settings, parameters and other requirements.
 
 -----
+
+## Display Rendering
+If migrating from a Windows device to one running Android, adjustments to some display settings will likely be necessary since the two platforms use different webkits. Other considerations might include display of the soft input panel and its position on the screen. Some of the relevant parameters are listed below; all should be checked. 
+
+If switching from CE to WM or vice-versa, rendering may differ due to variations in webkits and browser controls across those platforms. Some of the parameters below also are relevant here, and should be checked. 
+
+**Render-related settings**: 
+
+* **[Enable SIP](../configreference/#enablesip)**
+* **[Engine In Use](../configreference/#engineinuse)**
+* **[Fit To Screen](../configreference/#fittoscreenenabled)**
+* **[Font Family](../configreference/#fontfamily)**
+* **[Page Zoom](../configreference/#pagezoom)**
+* **[Resize on SIP](../configreference/#resizeonsip)**
+* **[Scroll Technique](../configreference/#scrolltechnique)**
+* **[Use Native Fonts](../configreference/#usenativefonts)**
+
+-----
+
+
+
 NEW FOR CHECKING
-
-
-
-## Windows Mobile/CE using Webkit
-Since you have chosen Webkit to run a PocketBrowser v3 application, you should expect some major differences with regard to rendering. If you wanted your page to render as it does on PocketBrowser consider using the IE web view.
-
-> Note: If you switch from CE to WM or vice versa, the rendering may be different as these systems have variant browser controls.
 
 ### Installation
 To install Enterprise Browser please take a look at the [installation section](/enterprise-browser/1-4/guide/setup?Device Deployment).  If deploying to a Windows CE device, a persistent installation for Webkit should be selected so that Enterprise Browser persists over a cold boot.
@@ -72,6 +86,9 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 4. Move any offline files to the device.
 
 >If you have any BadLink pages or offline resources (on the device), copy them over now.
+
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
+
 
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.

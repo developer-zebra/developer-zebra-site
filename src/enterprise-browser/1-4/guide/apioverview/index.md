@@ -7,12 +7,14 @@ layout: guide.html
 
 ##Overview
 
-Enterprise Browser contains a runtime environment inside which a company's own HTML and JavaScript application logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide provides an overview and basic guidance for using the APIs. The capabilities of individual APIs are detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
+Enterprise Browser contains a runtime environment inside which a company's new or legacy HTML and JavaScript application pages and logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide provides an overview and basic guidance for using the APIs. The capabilities of individual APIs are detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
 
-See the [Compatibility Matrix](/enterprise-browser/1-4/guide/compatibility/) for API support information for specific operating systems and webkits. 
+See the [Migration Guides](/enterprise-browser/1-4/guide/) for information about accessing PocketBrowser, RhoElements and other legacy APIs. 
+
+See the [Compatibility Matrix](/enterprise-browser/1-4/guide/compatibility/) for API support information relating to specific operating systems and webkits. 
 
 ## Using JavaScript APIs
-Enterprise Browser APIs are enabled differently depending on whether an application is running from HTML stored on the device or from a remote server. Either way, all relevant JavaScript files must be included in the proper location in the HTML. 
+Enterprise Browser APIs are enabled differently the app is running from HTML stored on the device or on a remote server. Either way, the relevant JavaScript files must be referenced in the appropriate location in the HTML. 
 
 ### JavaScript API Files
 The Enterprise Browser installation process puts a `JavaScriptFiles` directory in the installation root, inside of which are two additional directories:

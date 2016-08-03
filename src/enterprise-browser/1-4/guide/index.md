@@ -1,6 +1,6 @@
 ---
-title: Guides
-description: These guides are helpful when trying to understand specific concepts related to Enterprise Browser features.
+title: Enterprise Browser Usage Guides
+description: These guides explain the concepts and specific steps required to access all major Enterprise Browser features.
 layout: list-apis.html
 automenu:
   items:

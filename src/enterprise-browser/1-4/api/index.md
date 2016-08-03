@@ -54,8 +54,8 @@ automenu:
           url: Network
         - title: Notification
           url: Notification
-        - title: Printer (missing)
-          url: printingzebra
+        - title: Printer
+          url: printing
         - title: PrinterZebra
           url: printingzebra
         - title: Push
@@ -92,6 +92,8 @@ automenu:
           url: AirBeam
         - title: Alarm
           url: Alarm
+        - title: Apd (missing)
+          url: Apd
         - title: Application
           url: Application
         - title: AudioCapture
@@ -100,106 +102,90 @@ automenu:
           url: BackButton
         - title: Backlight
           url: Backlight
-        - title: Barcode
-          url: barcode
         - title: Battery
           url: battery
         - title: BottomCommandArea
           url: BottomCommanArea
-        - title: Camera
-          url: camera
         - title: CardReader
           url: cardreader
         - title: Comm
           url: Comm
-        - title: Configreadwrite
-          url: Configreadwrite
-        - title: Database
-          url: database
+        - title: Decoders (missing)
+          url: decoders
         - title: Device
           url: device
-        - title: EzNFC
-          url: EzNFC
-        - title: File
-          url: File
+        - title: EMML Profile (missing)
+          url: emml
         - title: FileTransfer
           url: FileTransfer
         - title: ForwardButton
           url: ForwardButton
+        - title: Generic (missing)
+          url: generic
         - title: Gesture
           url: Gesture
         - title: GoButton
           url: GoButton
+        - title: History (missing)
+          url: history
         - title: HomeButton
           url: HomeButton
         - title: Hourglass
           url: Hourglass
         - title: Imager
           url: Imager
-        - title: Intent
-          url: Intent
         - title: KeyCapture
           url: keycapture
         - title: Keylight
           url: Keylight
         - title: KeyState
           url: keystate
-        - title: Log
-          url: Log
         - title: MediaPlayer
           url: mediaPlayer
         - title: Memory
           url: Memory
         - title: MinimizeButton
           url: MinimizeButton
-        - title: MobilePayment
-          url: MobilePayment
-        - title: NativeMenubar
-          url: NativeMenubar
-        - title: NativeTabbar
-          url: NativeTabbar
-        - title: Native Toolbar
-          url: NativeToolbar
         - title: Network
           url: Network
         - title: Notification
           url: Notification
+        - title: ODAX (missing)
+          url: odax
         - title: Poweron
           url: Poweron
-        - title: printing
-          url: printingzebra
         - title: Push
           url: push
-        - title: QuitButton
+        - title: Quit Button
           url: QuitButton
+        - title: RawSensor (missing)
+          url: rawsensor
         - title: Reboot
           url: Reboot
         - title: Registry
           url: Registry
-        - title: ReloadButton
+        - title: Reload Button
           url: ReloadButton
+        - title: Rfid (missing)
+          url: rfid
+        - title: RSM (missing)
+          url: rsm
+        - title: Scanner (missing)
+          url: scanner
         - title: ScreenOrientation
           url: ScreenOrientation
-        - title: Sensor
-          url: sensor
-        - title: SettingsButton
-          url: settingsButton
-        - title: SignalIndicators
-          url: signalIndicators
-        - title: Signature
-          url: signature
-        - title: Sip
+        - title: Signal (missing)
+          url: signal
+        - title: signatureCapture (missing)
+          url: signaturecapture
+        - title: SIP
           url: Sip
         - title: SipButton
           url: SipButton
-        - title: SmartCradle
-          url: smartcradle
         - title: StopButton
           url: StopButton
         - title: Stylus
           url: stylus
-        - title: System
-          url: system
         - title: SystemTime
           url: SystemTime
         - title: Timer
@@ -212,10 +198,6 @@ automenu:
           url: Volume
         - title: Wake
           url: Wake
-        - title: Websocket
-          url: websocket
-        - title: Webview
-          url: webview
         - title: Zoom
           url: Zoom
         - title: ZoomTextButton

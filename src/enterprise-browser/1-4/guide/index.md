@@ -42,10 +42,8 @@ automenu:
           url: debuggingjs
     - title: Migration
       items:
-        - title: From Pocket Browser 2.x
+        - title: From Pocket Browser 2.x/3x
           url: pb2
-        - title: From Pocket Browser 3.x
-          url: pb3
         - title: From RhoElements 2.x
           url: elements
         - title: From RhoMobile 4.x

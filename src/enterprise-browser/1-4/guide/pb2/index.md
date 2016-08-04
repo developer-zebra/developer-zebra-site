@@ -1,11 +1,11 @@
 ---
-title: PocketBrowser 2.x Migration Guide
+title: PocketBrowser 2.x/3.x Migration Guide
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview
-Enterprise Browser supports PocketBrowser 2.x applications, which in many cases will run within EB after just a few small changes. This guide explains the changes that will always be required for migrating to EB from PocketBrowser 2.x, and a few others that might be. 
+Enterprise Browser supports PocketBrowser 2.x/3.x applications, which in many cases will run within EB after just a few small changes. This guide explains the changes that will always be required for migrating to EB from PocketBrowser 2.x/3.x, and a few others that might be. 
 
 **Prerequisites**:
 These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software, as well as a familiarity with the process of editing the Enterprise Browser `Config.xml` file. For help, see the guides below. 
@@ -13,6 +13,12 @@ These instructions require a development host (desktop or laptop) connected to a
 **Related Guides**: 
 * **[Installing Enterprise Browser](/enterprise-browser/1-4/guide/setup)**
 * **[Editing the Config.xml file](/enterprise-browser/1-4/guide/ConfigEditor/)**
+
+**Platform-specific sections in this guide**:
+* **[Android](#android)** 
+* **[PocketBrowser 3.x](#pocketbrowser3x)**. 
+* **[Windows Mobile/CE with Webkit](#windowsmobileceusingie)**. 
+* **[Windows Mobile/CE with IE](#windowsmobileceusingwebkit)**. 
 
 -----
 
@@ -93,30 +99,50 @@ See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guid
 
 -----
 
-## Windows Mobile/CE using Webkit 
-**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, skip to the next section. 
+## Android
+**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Android.
 
-####Persistence
-**For Windows CE devices, Zebra recommends the "Enterprise Browser - Webkit (Persistent)" installation option** when [deploying EB to the device](/enterprise-browser/1-4/guide/setup#deploymenttodevices). This allows Enterprise Browser settings to persist following a cold boot. On persistent installations, **the location of the** `Config.xml` **file to be edited is different** than that of non-persistent installations, and **changes could be lost after a cold boot if an edited file is placed in the wrong location on the device**. 
+####Deploy Legacy APIs
+Running a PocketBrowser 2.x/3.xapp in Enterprise Browser on Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
 
-After a device with a persistent installation is cold-booted, the Enterprise Browser executable (i.e. `EnterpriseBrowser_v1.3_IE.Cab` file) and the `Config.xml` file are copied from the persistence directory:
+**To Deploy the** `elements.js` **file**:
 
-* `\Application\EnterpriseBrowser\Config\` 
+**&#49;. Locate the** `elements.js` **file**, which by default is located in the following directory on the development host:
 
-to this non-persistent directory, which is overwritten as part of the cold-boot process:  
+* `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
 
-* `\Program Files\EnterpriseBrowser\Config\`
+**&#50;. Place a copy of `elements.js` on the device or a server** accessible by all of the app's HTML pages. 
 
-It is from the `\Program Files` directory that Enterprise Browser is launched.  
+**&#51;. Add a reference to the API file in every HTML page** that will access the APIs, as below: 
 
-> To preserve changes to the `Config.xml` file, **the edited file must be placed in the** `\Application\EnterpriseBrowser\Config\` **directory**. 
 
-If no `Config.xml` file is present in the source directory following a cold boot, a new `Config.xml` file with default values will be generated and copied to the destination directory, overwriting any prior settings. 
+		:::html
+
+		// This example applies when elements.js is in a web server's "js" folder:
+
+	<html>
+		<head>
+		<script type="text/javascript" charset="utf-8" src="/js/elements.js"></script>
+				
 
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
 * The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
-* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on WinCE.
+* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on Android.
+* EMML profiles are not supported.
+* Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.
+
+-----
+
+## PocketBrowser 3.x
+To support backward compatibility, PocketBrowser 3.x was forced to use PIE (IE4) in devices running Windows Mobile 6.5, despite the availability of IE6 at the time. This decision came about mainly due to developer dependency on the scrollbars, which Microsoft dropped from its version of IE6 for Windows Mobile. As a result, use of PIE on Windows Mobile over IE6 continues. IE6 on CE supports scrollbars and is a more capable webview. The Scroll options have changed in the configuration file to accommodate more options since CE7 has introduced Finger Scrolling.
+
+
+Windows CE - The TextSize feature in the DeviceApplication API from PB3 will not function properly unless you also enable text selection using the TextSelectionEnabled setting in Config.xml.
+
+
+Scrollbars/Fingerscrolling
+
 
 -----
 
@@ -155,38 +181,30 @@ It is from The `\Program Files\EnterpriseBrowser\` directory that Enterprise Bro
 
 ------
 
-## Android
-**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Android.
+## Windows Mobile/CE using Webkit 
+**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, skip to the next section. 
 
-####Deploy Legacy APIs
-Running a PocketBrowser 2.x app in Enterprise Browser on Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
+####Persistence
+**For Windows CE devices, Zebra recommends the "Enterprise Browser - Webkit (Persistent)" installation option** when [deploying EB to the device](/enterprise-browser/1-4/guide/setup#deploymenttodevices). This allows Enterprise Browser settings to persist following a cold boot. On persistent installations, **the location of the** `Config.xml` **file to be edited is different** than that of non-persistent installations, and **changes could be lost after a cold boot if an edited file is placed in the wrong location on the device**. 
 
-**To Deploy the** `elements.js` **file**:
+After a device with a persistent installation is cold-booted, the Enterprise Browser executable (i.e. `EnterpriseBrowser_v1.3_IE.Cab` file) and the `Config.xml` file are copied from the persistence directory:
 
-**&#49;. Locate the** `elements.js` **file**, which by default is located in the following directory on the development host:
+* `\Application\EnterpriseBrowser\Config\` 
 
-* `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
+to this non-persistent directory, which is overwritten as part of the cold-boot process:  
 
-**&#50;. Place a copy of `elements.js` on the device or a server** accessible by all of the app's HTML pages. 
+* `\Program Files\EnterpriseBrowser\Config\`
 
-**&#51;. Add a reference to the API file in every HTML page** that will access the APIs, as below: 
+It is from the `\Program Files` directory that Enterprise Browser is launched.  
 
+> To preserve changes to the `Config.xml` file, **the edited file must be placed in the** `\Application\EnterpriseBrowser\Config\` **directory**. 
 
-		:::html
-
-		// This example applies when elements.js is in a web server's "js" folder:
-
-	<html>
-		<head>
-		<script type="text/javascript" charset="utf-8" src="/js/elements.js"></script>
-				
+If no `Config.xml` file is present in the source directory following a cold boot, a new `Config.xml` file with default values will be generated and copied to the destination directory, overwriting any prior settings. 
 
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
 * The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
-* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on Android.
-* EMML profiles are not supported.
-* Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.
+* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on WinCE.
 
 -----
 
@@ -197,6 +215,7 @@ Running a PocketBrowser 2.x app in Enterprise Browser on Android requires that t
 * **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
 
 * **[PocketBrowser 2.x online docs](http://goo.gl/H1Fuik)**
+* **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)** 
 
 * **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
 

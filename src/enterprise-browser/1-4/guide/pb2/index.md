@@ -80,7 +80,7 @@ See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guid
 ####Display Rendering
 **Applies to most migration scenarios**. If migrating from a Windows device to one running Android, or from Windows Mobile to Windows CE or vice-versa, adjustments to some display settings will likely be necessary since those migrations involve the use of different webkits. Other considerations might include display of the soft input panel, its position on the screen and the ability to hide the input panel, if desired. The relevant parameters are listed below; all should be checked as part of the migration process. 
 
-**Render-related `Config.xml` parameters**: 
+**Render-related** `Config.xml` **parameters**: 
 
 * **[Enable SIP](../configreference/#enablesip)**
 * **[Engine In Use](../configreference/#engineinuse)**
@@ -115,7 +115,7 @@ If no `Config.xml` file is present in the source directory following a cold boot
 
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
-* The NOSIP control for preventing display of the soft input panel is not supported. See the [disabling the SIP](/enterprise-browser/1-4/api-Sip?Disabling%20the%20SIP) section of the SIP API reference for alternative methods.
+* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
 * [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on WinCE.
 
 -----
@@ -163,7 +163,7 @@ Running a PocketBrowser 2.x app in Enterprise Browser on Android requires that t
 
 **To Deploy the** `elements.js` **file**:
 
-**&#49;. Locate the `elements.js` file**, which by default is located in the following directory on the development host:
+**&#49;. Locate the** `elements.js` **file**, which by default is located in the following directory on the development host:
 
 * `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
 
@@ -183,7 +183,7 @@ Running a PocketBrowser 2.x app in Enterprise Browser on Android requires that t
 
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
-* The NOSIP control for preventing display of the soft input panel is not supported. See the [disabling the SIP](/enterprise-browser/1-4/api-Sip?Disabling%20the%20SIP) section of the SIP API reference for alternative methods.
+* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
 * [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on Android.
 * EMML profiles are not supported.
 * Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.

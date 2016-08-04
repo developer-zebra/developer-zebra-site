@@ -10,7 +10,6 @@ Enterprise Browser supports applications that were using RhoElements 4.x Shared 
 
 See also the **[RhoMobile 2.x online docs](http://docs.rhomobile.com/en/5.4/guide/rhoArchitecture)**. 
 
-
 ## JavaScript Usage
 In RhoElements 4.x, access to the features were made available through JavaScript objects under the `Rho.` namespace:
 
@@ -18,11 +17,10 @@ In RhoElements 4.x, access to the features were made available through JavaScrip
 	// Scan with default options
 	Rho.Barcode.take({}, scan_received);
 
-To use the `Rho.` namespace, you must replace the `rhoapi-modules.js` file that came with RhoMobile Suite 4.x with the file `rhoapi-modules.js` that came with Enterprise Browser found in the Enterprise Browser installation folder.
+To use the `Rho.` namespace, replace the `rhoapi-modules.js` file that came with RhoMobile Suite 4.x with the file `rhoapi-modules.js`. By default, this file is located in the following directory on the development host:
 
-<!-- > TBD Insert Screen Shot	 -->
+* `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
+
 ##Intents Android Limitation
-On Android Broadcast Intents are set up at build time. To listen to broadcasts from other applications, an entry must be included in the Manifest file for the application to receive them. Since Enterprise Browser is a fixed APK, Broadcast listening will not be possible. 
-
-
+On Android, Broadcast Intents are set up at build time. To listen to broadcasts from other applications, include an entry in the Manifest file for the application to receive them. Enterprise Browser uses a fixed APK, and therefore does not support Broadcast listening. 
 

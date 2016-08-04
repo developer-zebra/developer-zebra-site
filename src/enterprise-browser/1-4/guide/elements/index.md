@@ -5,18 +5,25 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview
-Enterprise Browser supports RhoElements 2.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few that might be. 
+Enterprise Browser supports RhoElements 2.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few others that might be. 
+
+**Prerequisites**:
+These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software, as well as a familiarity with the process of editing the Enterprise Browser `Config.xml` file. For help, see the guides below. 
+
+**Related Guides**: 
+* **[Installing Enterprise Browser](/enterprise-browser/1-4/guide/setup)**
+* **[Editing the Config.xml file](/enterprise-browser/1-4/guide/ConfigEditor/)**
 
 -----
 
 ## Config.xml
 The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
 
-####Location of the Enterprise Browser `Config.xml` file: 
-* **Android devices**: `/sdcard0/Android/data/com.symbol.enterprisebrowser/`
-* **Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
+####Path to Config.xml file: 
+* **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/Config.xml`
+* **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\Config.xml`
 
-1. **Set the StartPage of the app**. This will be the first page that loads with Enterprise Browser, and can be on a server (specify the URL) or local to the device (specify the full path), as below: 
+**&#49;. Set the StartPage of the app**. This will be the first page that loads with Enterprise Browser, and can be on a server (specify the URL) or local to the device (specify the full path), as below: 
 
 		:::xml
 		<Configuration>
@@ -27,11 +34,11 @@ The single change that is always necessary when migrating to Enterprise Browser 
 		                <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
 		            </General>
 
-2. Copy any required off-line files (i.e. ["BadLink"](/enterprise-browser/1-4/guide/configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
+**&#50;. Copy any required off-line files (i.e. ["BadLink"](/enterprise-browser/1-4/guide/configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
 
-> **Note**: The file systems of some operating systems are case-sensitive. Best practices for cross-platform compatibility therefore dictate that the use of upper and lower case for URL, file and path references in the `Config.xml` file be identical to those of the actual sources.
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
-3. If the app requires access to EB APIs, see the relevant section below.
+**&#51;. If the app requires access to RhoElements APIs**, see the [Deploy Legacy APIs](#deploylegacyapis) section below.
 
 See the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreference) for more information about settings, parameters and other requirements.
 
@@ -50,9 +57,9 @@ Example meta-tag specification:
 -----
 
 ## Display Rendering
-If migrating from a Windows device to one running Android, adjustments to some display settings will likely be necessary since the two platforms use different webkits. Other considerations might include display of the soft input panel and its position on the screen. Some of the relevant parameters are listed below; all should be checked. 
+**Applies to most migration scenarios**. If migrating from a Windows device to one running Android, or from Windows Mobile to Windows CE or vice-versa, adjustments to some display settings will likely be necessary since those migrations involve the use of different webkits. Other considerations might include display of the soft input panel, controlling its position on the screen and the ability to hide it, if desired. The relevant parameters are listed below; all should be checked as part of the migration process. 
 
-**Render-related settings**: 
+**Render-related** `Config.xml` **parameters**: 
 
 * **[Enable SIP](../configreference/#enablesip)**
 * **[Engine In Use](../configreference/#engineinuse)**
@@ -63,34 +70,38 @@ If migrating from a Windows device to one running Android, adjustments to some d
 * **[Scroll Technique](../configreference/#scrolltechnique)**
 * **[Use Native Fonts](../configreference/#usenativefonts)**
 
-### JavaScript APIs
-RhoElements 2.x suported the ability to access functionality directly through JavaScript:
+-----
 
-	:::javascript
-	// scanner is a RhoElments 2.x API
-	scanner.start();
+### Deploy Legacy APIs
+Running a RhoElements2.x app in Enterprise Browser requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
 
-	// generic is a JavaScript object in PocketBrowser and RhoElements
-	generic.InvokeMETAFunction('SignatureCapture', 'Visibility:Visible');
+**To Deploy the** `elements.js` **file**:
 
-For access to the same functionality with Enterprise Browser on Android, the `elements.js` file must be copied to the device and referenced within the HTML code. The `elements.js` file is located in the Enterprise Browser installation folder:
+**&#49;. Locate the** `elements.js` **file**, which by default is located in the following directory on the development host:
 
-<!-- TBD Insert ScreenShot -->
+* `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
 
-	:::html
+**&#50;. Place a copy of** `elements.js` **on the device or a server** accessible by all of the app's HTML pages. 
+
+**&#51;. Add a reference to the API file in every HTML page** that will access the APIs, as below: 
+
+
+		:::html
+
+		// This example applies when elements.js is in a web server's "js" folder:
+
 	<html>
 		<head>
-			<script type="text/javascript" charset="utf-8" src="elements.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/js/elements.js"></script>
+		
 
-See [Using the APIs](../../api/apioverview/) for details about how and where to reference the `elements.js` in HTML.  
+-----
 
-## Unsupported Features 
-The following features are not supported by apps migrated from RhoElements 2.x to Enterprise Browser: 
-
-* The generic methods RasConnect and RasDisconnect
-* The NOSIP control. This control placed a text box onto any page that did not trigger the Soft Input Panel. This predates the APIs that now can hide the SIP or place it off screen. To hide the SIP, see the [SIP API page](/enterprise-browser/1-4/api/Sip).
-* The [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) parameter applies to Windows Mobile only.
-* EMML profiles do not work.
+###Notes: 
+* The generic methods RasConnect and RasDisconnect are not supported.
+* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
+* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on Android or Windows CE.
+* EMML profiles are not supported on Android.
 * Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.
 
 -----

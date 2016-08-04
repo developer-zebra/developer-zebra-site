@@ -129,27 +129,29 @@ Running a PocketBrowser 2.x/3.x app in Enterprise Browser on Android requires th
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
 * The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
-* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on Android.
+* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported.
 * EMML profiles are not supported.
 * Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.
 
 -----
 
 ## PocketBrowser 3.x
-To support backward compatibility, PocketBrowser 3.x was forced to use Progressive Internet Explorer (PIE, a component of IE4) in devices running Windows Mobile 6.5, despite the availability of IE6 at the time. This decision came about mainly due to developer dependency on the scrollbars, which Microsoft dropped from its version of IE6 for Windows Mobile. 
+The migration procedures for PocketBrowser 3.x are the same as those for 2.x. The following device notes apply to PocketBrowser 3.x only. 
 
 ####Notes:
 
-* **The [TextSize method](/enterprise-browser/1-4/api/pb3/deviceapplication/#textsize) in the [DeviceApplication API](/enterprise-browser/1-4/api/pb3/#deviceapplication) will malfunction on Windows CE devices unless the [TextSelectionEnabled](/enterprise-browser/1-4/guide/configreference/#textselectionenabled) parameter in the EB `Config.xml` contains a value of "1" (enabled). 
+* **On Windows Mobile 6.5, PocketBrowser 3.x uses the Progressive Internet Explorer (PIE, a component of IE4)**. This was done to maintain support for scrollbars after Microsoft dropped the feature from its version of IE6 for Windows Mobile.
 
-Scrollbars/Fingerscrolling
+* **The [TextSize method](/enterprise-browser/1-4/api/pb3/deviceapplication/#textsize) in the PB 3.x DeviceApplication API will malfunction on Windows CE devices** unless the [TextSelectionEnabled](/enterprise-browser/1-4/guide/configreference/#textselectionenabled) parameter in the EB `Config.xml` contains a value of "1" (enabled). 
 
-The IE6 rendering engine on CE supports scrollbars, and is a more capable webview overall. The Scroll options have changed in the configuration file to accommodate more options since CE7 has introduced Finger Scrolling.
+* **The IE6 rendering engine on CE supports scrollbars, but does not support the [Scrolling parameter](/enterprise-browser/1-4/guide/configreference/#scrolling)** in the EB `Config.xml`. 
+
+* **With the introduction of Finger Scrolling in CE7, scrolling options in the 'Config.xml` file were modified** to accommodate the new features.
 
 -----
 
 ## Windows Mobile/CE using IE
-**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Windows Mobile or Windows CE with the IE rendering engine. If using Webkit, go back to the previous section. 
+**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Windows Mobile or Windows CE with the IE rendering engine. If using Webkit, skip to the next section. 
 
 When using IE as the rendering engine, **only PocketBrowser APIs will be available**. Enterprise Browser APIs will not. This might represents the best choice for target devices with limited memory and/or CPU resources, or for apps that don't require Webkit features or functionality offered by Enterprise Browser APIs.
 
@@ -184,7 +186,7 @@ It is from The `\Program Files\EnterpriseBrowser\` directory that Enterprise Bro
 ------
 
 ## Windows Mobile/CE using Webkit 
-**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, skip to the next section. 
+**Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, go back to the previous section. 
 
 ####Persistence
 **For Windows CE devices, Zebra recommends the "Enterprise Browser - Webkit (Persistent)" installation option** when [deploying EB to the device](/enterprise-browser/1-4/guide/setup#deploymenttodevices). This allows Enterprise Browser settings to persist following a cold boot. On persistent installations, **the location of the** `Config.xml` **file to be edited is different** than that of non-persistent installations, and **changes could be lost after a cold boot if an edited file is placed in the wrong location on the device**. 

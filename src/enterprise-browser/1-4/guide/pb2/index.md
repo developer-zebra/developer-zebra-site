@@ -14,21 +14,22 @@ These instructions require a development host (desktop or laptop) connected to a
 * **[Installing Enterprise Browser](/enterprise-browser/1-4/guide/setup)**
 * **[Editing the Config.xml file](/enterprise-browser/1-4/guide/ConfigEditor/)**
 
-**Platform-specific sections in this guide**:
-* **[Android](#android)** 
-* **[PocketBrowser 3.x](#pocketbrowser3x)**. 
-* **[Windows Mobile/CE with Webkit](#windowsmobileceusingie)**. 
-* **[Windows Mobile/CE with IE](#windowsmobileceusingwebkit)**. 
-
 -----
 
 ## Common Steps For All Platforms
-The instructions in this section apply to all migrations from Android, Windows Mobile and Windows CE. Platform-specific differences will be indicated as such in corresponding sections that follow. Most of the activities related to app migration involve editing the Enterprise Browser `Config.xml` file, which stores all app settings and parameters for runtime behavior. See the [Config Editor Utility Guide](/enterprise-browser/1-4/guide/ConfigEditor/) for information about how to connect to devices and access this file.  
+The instructions in this section apply to all migrations from Android, Windows Mobile and Windows CE. Platform-specific differences will be indicated as such in corresponding sections that follow for: 
+
+* **[Android](#android)** 
+* **[PocketBrowser 3.x](#pocketbrowser3x)**
+* **[Windows Mobile/CE with IE](#windowsmobileceusingie)** 
+* **[Windows Mobile/CE with Webkit](#windowsmobileceusingwebkit)**
+
+Most of the activities related to app migration involve editing the Enterprise Browser `Config.xml` file, which stores all app settings and parameters for runtime behavior. See the [Config Editor Utility Guide](/enterprise-browser/1-4/guide/ConfigEditor/) for information about how to connect to devices and access this file.  
 
 ####Config.xml
-The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. For PocketBrowser apps, it's also necessary to enable the backward compatibility engine. Some apps also require replication and/or adjustment of other settings from an old config file to the new, and to copy page files and/or relevant JavaScript API files to the device. This section covers all of those steps; perform as necessary.
+The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. For PocketBrowser apps on Android, it's also necessary to load legacy APIs, and on Windows Mobile/CE to enable the backward compatibility engine. Some apps also require replication and/or adjustment of other settings from an old config file to the new, and to copy page files and/or other files to the device. This section covers all of those steps, to be performed as necessary for the target platform and app.
 
-**Note for Windows CE devices**: Zebra recommends a persistent installation for most EB scenarios on WinCE. Before proceeding, see the [Windows Mobile/CE section](#windowsmobileceusingwebkit) (below) for details, **including special instructions for editing the** `Config.xml` **file** so changes are preserved.
+**Note for Windows CE devices**: Zebra recommends a persistent installation for most EB scenarios on WinCE. Before proceeding, see the [Windows Mobile/CE section](#windowsmobileceusingwebkit) (below) for details, **including special instructions for editing the** `Config.xml` **file**.
 <br>
 
 ####Path to Config.xml file: 
@@ -84,7 +85,7 @@ This enables the regular expressions engine for translation to EMML 1.0 syntax, 
 See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference)** for more information about settings, parameters and other requirements.
 
 ####Display Rendering
-**Applies to most migration scenarios**. If migrating from a Windows device to one running Android, or from Windows Mobile to Windows CE or vice-versa, adjustments to some display settings will likely be necessary since those migrations involve the use of different webkits. Other considerations might include display of the soft input panel, its position on the screen and the ability to hide the input panel, if desired. The relevant parameters are listed below; all should be checked as part of the migration process. 
+**Applies to most migration scenarios**. If migrating from a Windows device to one running Android, or from Windows Mobile to Windows CE or vice-versa, adjustments to some display settings will likely be necessary since those migrations involve the use of different webkits. Other considerations might include display of the soft input panel, controlling its position on the screen and the ability to hide it, if desired. The relevant parameters are listed below; all should be checked as part of the migration process. 
 
 **Render-related** `Config.xml` **parameters**: 
 
@@ -103,7 +104,7 @@ See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guid
 **Complete this section only after following the [Common Steps For All Platforms](#commonstepsforallplatforms) above**, and only if migrating to Android.
 
 ####Deploy Legacy APIs
-Running a PocketBrowser 2.x/3.xapp in Enterprise Browser on Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
+Running a PocketBrowser 2.x/3.x app in Enterprise Browser on Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
 
 **To Deploy the** `elements.js` **file**:
 
@@ -135,14 +136,15 @@ Running a PocketBrowser 2.x/3.xapp in Enterprise Browser on Android requires tha
 -----
 
 ## PocketBrowser 3.x
-To support backward compatibility, PocketBrowser 3.x was forced to use PIE (IE4) in devices running Windows Mobile 6.5, despite the availability of IE6 at the time. This decision came about mainly due to developer dependency on the scrollbars, which Microsoft dropped from its version of IE6 for Windows Mobile. As a result, use of PIE on Windows Mobile over IE6 continues. IE6 on CE supports scrollbars and is a more capable webview. The Scroll options have changed in the configuration file to accommodate more options since CE7 has introduced Finger Scrolling.
+To support backward compatibility, PocketBrowser 3.x was forced to use Progressive Internet Explorer (PIE, a component of IE4) in devices running Windows Mobile 6.5, despite the availability of IE6 at the time. This decision came about mainly due to developer dependency on the scrollbars, which Microsoft dropped from its version of IE6 for Windows Mobile. 
 
+####Notes:
 
-Windows CE - The TextSize feature in the DeviceApplication API from PB3 will not function properly unless you also enable text selection using the TextSelectionEnabled setting in Config.xml.
-
+* **The [TextSize method](/enterprise-browser/1-4/api/pb3/deviceapplication/#textsize) in the [DeviceApplication API](/enterprise-browser/1-4/api/pb3/#deviceapplication) will malfunction on Windows CE devices unless the [TextSelectionEnabled](/enterprise-browser/1-4/guide/configreference/#textselectionenabled) parameter in the EB `Config.xml` contains a value of "1" (enabled). 
 
 Scrollbars/Fingerscrolling
 
+The IE6 rendering engine on CE supports scrollbars, and is a more capable webview overall. The Scroll options have changed in the configuration file to accommodate more options since CE7 has introduced Finger Scrolling.
 
 -----
 

@@ -1,6 +1,6 @@
 ---
 title: Enterprise Browser Usage Guides
-description: These guides explain the concepts and specific steps required to access all major Enterprise Browser features.
+description: These guides explain the concepts behind all major Enterprise Browser features and provide specific instructions for accessing them.
 layout: list-apis.html
 automenu:
   items:
@@ -8,7 +8,7 @@ automenu:
       items:
         - title: Enterprise Browser Setup Guide
           url: setup
-    - title: Configuration
+    - title: App Configuration
       items:
         - title: Config Editor Utility
           url: ConfigEditor
@@ -20,17 +20,17 @@ automenu:
           url: ShortcutCreator
     - title: Application Usage
       items:
-        - title: Certificates
+        - title: Certificate Usage
           url: certificates
-        - title: DataWedge
+        - title: DataWedge Usage
           url: datawedge
         - title: DOM Injection
           url: DOMinjection
         - title: Printing
           url: printingGuide
-        - title: Remapping Keys
+        - title: Device-key Remapping
           url: keycapture
-        - title: SAP ITS usage
+        - title: SAP ITS Usage
           url: sap
         - title: Viewport Usage
           url: viewport
@@ -42,13 +42,13 @@ automenu:
           url: debuggingjs
     - title: Migration
       items:
-        - title: Pocket Browser 2.x
+        - title: From Pocket Browser 2.x
           url: pb2
-        - title: Pocket Browser 3.x
+        - title: From Pocket Browser 3.x
           url: pb3
-        - title: RhoElements 2.x
+        - title: From RhoElements 2.x
           url: elements
-        - title: RhoMobile 4.x Shared Runtime
+        - title: From RhoMobile 4.x
           url: rhomobile
 product: Enterprise Browser
 productversion: '1.4'

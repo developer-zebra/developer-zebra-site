@@ -85,7 +85,7 @@ Once a connection has been established, install the Enterprise Browser runtime o
 ![img](../../images/getting-started/setup/setup-eb-installer-platform-select.jpg)
 
 1. Select **Start -> Enterprise Browser -> Enterprise Browser Installer** to bring up the EB Installer. A window will appear similar to the image above.  
-2. **Select the platform that matches the device, OS and web view being targeted**. Information in the right-hand pane will vary according to the selection.
+2. **Select the platform that matches the device, OS and webview being targeted**. Information in the right-hand pane will vary according to the selection.
 3. **Click "Deploy" and follow prompts**. A window will appear similar to the image below. 
 4. **Restart the device to complete the installation**.
 

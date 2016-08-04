@@ -17,12 +17,12 @@ See the [Compatibility Matrix](/enterprise-browser/1-4/guide/compatibility/) for
 Enterprise Browser APIs are enabled differently the app is running from HTML stored on the device or on a remote server. Either way, the relevant JavaScript files must be referenced in the appropriate location in the HTML. 
 
 ### JavaScript API Files
-The Enterprise Browser installation process puts a `JavaScriptFiles` directory in the installation root, inside of which are two additional directories:
+The Enterprise Browser installation by default adds a `C:/EnterpriseBrowser/JavaScriptFiles/` directory, inside of which are two additional directories:
 
-* `/EnterpriseBrowser` - contains the Enterprise Browser JavaScript API files:
+* `/EnterpriseBrowser/` - contains the Enterprise Browser JavaScript API files:
 	* **ebapi-modules.js** - includes all `EB.module` APIs 
 	* **individual JS modules** - for [optimizing footprint](/enterprise-browser/1-4/guide/optimization) by including only required modules
-* `/BackwardCompatibility` - contains legacy PocketBrowser and RhoElements 2.x APIs:
+* `/BackwardCompatibility/` - contains legacy PocketBrowser and RhoElements 2.x APIs:
 	* **rhoapi-modules.js** - for supporting RhoMobile applications
 	* **elements.js** - for supporting RhoElements 2.x and PocketBrowser 2.x/3.x applications 
 

@@ -2,7 +2,7 @@
 title: Network.WLAN.Android
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## About Network.WLAN.Android
@@ -15,6 +15,7 @@ The Network.WLAN.Android setting type configures the WLAN settings on Android de
 * Disable all other profiles. 
 * Allow setting an option for access point ESSID.
 * Set network profile encryption.
+
 
 
 

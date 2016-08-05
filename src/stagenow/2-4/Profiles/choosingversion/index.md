@@ -2,7 +2,7 @@
 title: Profile Wizards
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 This window displays the Wizard templates available for creating profiles and allows a Wizard for profile creation. 
@@ -22,6 +22,7 @@ The drop-down offers the following MX versions for profile creation:
 Once you select the MX version, the selection is saved for subsequent profile creation.
 
 ![img](../../images/WizardList_MXdropdown.jpg)
+
 
 
 

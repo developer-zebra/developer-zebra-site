@@ -2,18 +2,18 @@
 title: Settings
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## Introduction
 The staging administrator can create and manage settings that can be used and reused in profiles.
 
-During profile creation, a configuration screen in which you enter values is a setting template. Selecting and saving values in each setting template creates a setting which configures a particular feature or function on a device. The setting can be saved for later use when creating other profiles. See [Save for Reuse](/stagenow/2-3/settingconfig?Save%20for%20Reuse) for more information.
+During profile creation, a configuration screen in which you enter values is a setting template. Selecting and saving values in each setting template creates a setting which configures a particular feature or function on a device. The setting can be saved for later use when creating other profiles. See [Save for Reuse](../settingconfig?Save%20for%20Reuse) for more information.
 
-You can also create settings outside of Wizards. See [Creating a Setting](/stagenow/2-3/settingconfig?Creating%20a%20Setting).
+You can also create settings outside of Wizards. See [Creating a Setting](../settingconfig?Creating%20a%20Setting).
 
 ## Setting Types
-See the [Setting Types](/stagenow/2-3/CSPreference) section for all setting types available for setting creation.
+See the [Setting Types](../CSPreference) section for all setting types available for setting creation.
 
 ## All Settings
 Select All Settings from the options on the left to open a list of created Settings. Note that this lists includes all Save for Re-Use settings;  settings not saved for re-use during profile creation do not appear in this window.
@@ -53,7 +53,7 @@ To create a setting for use in profiles:
 
 4. Select a setting type from the Setting Type drop-down list.
 
-5. Select and enter the information required to complete the setting. See [Setting Types](/stagenow/2-3/CSPreference) for the options available in each setting template.
+5. Select and enter the information required to complete the setting. See [Setting Types](../CSPreference) for the options available in each setting template.
 
 6. Select Save. This adds the setting to the Settings list.
 
@@ -145,6 +145,7 @@ To import all settings:
 3. Select a zip file using the browse button, and select Open.
 
 4. Select Import. A window indicates that the settings were imported successfully and the settings appear in the settings list.
+
 
 
 

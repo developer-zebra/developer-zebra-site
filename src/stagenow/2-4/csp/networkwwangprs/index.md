@@ -2,7 +2,7 @@
 title: Network.WWAN.GPRS
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## About Network.WWAN.GPRS
@@ -18,6 +18,7 @@ The Network.WWAN.GPRS setting type defines the WWAN data connection settings on 
 * Set whether GPRS is always connected.
 * Set GPRS connection name.
 * Select an access point. 
+
 
 
 

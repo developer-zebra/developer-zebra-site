@@ -6,170 +6,175 @@ content-items:
   - title: Access
     type: section
     level: 5
-    url: /stagenow/2-3/csp/access
+    url: /stagenow/2-4/csp/access
   - title: Analytics
     type: section
     level: 5
-    url: /stagenow/2-3/csp/analyticsmgr
+    url: /stagenow/2-4/csp/analyticsmgr
   - title: App
     type: section
     level: 5
-    url: /stagenow/2-3/csp/app
+    url: /stagenow/2-4/csp/app
   - title: Audio
     type: section
     level: 5
-    url: /stagenow/2-3/csp/audio
+    url: /stagenow/2-4/csp/audio
   - title: Batch
     type: section
     level: 5
-    url: /stagenow/2-3/csp/batch
+    url: /stagenow/2-4/csp/batch
   - title: Battery
     type: section
     level: 5
-    url: /stagenow/2-3/csp/battery
+    url: /stagenow/2-4/csp/battery
   - title: Bluetooth
     type: section
     level: 5
-    url: /stagenow/2-3/csp/bluetoothmgr
+    url: /stagenow/2-4/csp/bluetoothmgr
   - title: Browser
     type: section
     level: 5
-    url: /stagenow/2-3/csp/browser
+    url: /stagenow/2-4/csp/browser
   - title: Camera
     type: section
     level: 5
-    url: /stagenow/2-3/csp/camera
+    url: /stagenow/2-4/csp/camera
   - title: Cellular
     type: section
     level: 5
-    url: /stagenow/2-3/csp/cellular
+    url: /stagenow/2-4/csp/cellular
   - title: Cert
     type: section
     level: 5
-    url: /stagenow/2-3/csp/cert
+    url: /stagenow/2-4/csp/cert
   - title: Clock
     type: section
     level: 5
-    url: /stagenow/2-3/csp/clock
+    url: /stagenow/2-4/csp/clock
   - title: Component
     type: section
     level: 5
-    url: /stagenow/2-3/csp/component
+    url: /stagenow/2-4/csp/component
   - title: Condition
     type: section
     level: 5
-    url: /stagenow/2-3/csp/condition
+    url: /stagenow/2-4/csp/condition
   - title: Dev Admin
     type: section
     level: 5
-    url: /stagenow/2-3/csp/devadmin
+    url: /stagenow/2-4/csp/devadmin
   - title: DHCP
     type: section
     level: 5
-    url: /stagenow/2-3/csp/dhcp
+    url: /stagenow/2-4/csp/dhcp
   - title: Display
     type: section
     level: 5
-    url: /stagenow/2-3/csp/display
+    url: /stagenow/2-4/csp/display
   - title: Encrypt
     type: section
     level: 5
-    url: /stagenow/2-3/csp/encrypt
+    url: /stagenow/2-4/csp/encrypt
   - title: File
     type: section
     level: 5
-    url: /stagenow/2-3/csp/file
+    url: /stagenow/2-4/csp/file
   - title: Gprs
     type: section
     level: 5
-    url: /stagenow/2-3/csp/gprs
+    url: /stagenow/2-4/csp/gprs
   - title: Hosts
     type: section
     level: 5
-    url: /stagenow/2-3/csp/hostsmgr
+    url: /stagenow/2-4/csp/hostsmgr
   - title: Intent
     type: section
     level: 5
-    url: /stagenow/2-3/csp/intent
+    url: /stagenow/2-4/csp/intent
   - title: KeyMap
     type: section
     level: 5
-    url: /stagenow/2-3/csp/keymap
+    url: /stagenow/2-4/csp/keymap
   - title: License
     type: section
     level: 5
-    url: /stagenow/2-3/csp/license
+    url: /stagenow/2-4/csp/license
   - title: Network.WLAN.Android
     type: section
     level: 5
-    url: /stagenow/2-3/csp/networkwlanandroid
+    url: /stagenow/2-4/csp/networkwlanandroid
   - title: Network.WLAN.Android.FusionOptions
     type: section
     level: 5
-    url: /stagenow/2-3/csp/networkwlanandroidfusion
+    url: /stagenow/2-4/csp/networkwlanandroidfusion
   - title: Network.WWAN.GPRS
     type: section
     level: 5
-    url: /stagenow/2-3/csp/networkwwangprs
+    url: /stagenow/2-4/csp/networkwwangprs
   - title: Persistence
     type: section
     level: 5
-    url: /stagenow/2-3/csp/persistence
+    url: /stagenow/2-4/csp/persistence
   - title: Power Key
     type: section
     level: 5
-    url: /stagenow/2-3/csp/powerkey
+    url: /stagenow/2-4/csp/powerkey
   - title: Power
     type: section
     level: 5
-    url: /stagenow/2-3/csp/power
+    url: /stagenow/2-4/csp/power
+  - title: Remote Scanner Management
+    type: section
+    level: 5
+    url: /stagenow/2-4/csp/rsm
   - title: ScanMode
     type: section
     level: 5
-    url: /stagenow/2-3/csp/scanmode
+    url: /stagenow/2-4/csp/scanmode
   - title: Sd Card
     type: section
     level: 5
-    url: /stagenow/2-3/csp/sdcard
+    url: /stagenow/2-4/csp/sdcard
   - title: Settings
     type: section
     level: 5
-    url: /stagenow/2-3/csp/settingsmgr
+    url: /stagenow/2-4/csp/settingsmgr
   - title: Status
     type: section
     level: 5
-    url: /stagenow/2-3/csp/status
+    url: /stagenow/2-4/csp/status
   - title: Threat
     type: section
     level: 5
-    url: /stagenow/2-3/csp/threat
+    url: /stagenow/2-4/csp/threat
   - title: Touch
     type: section
     level: 5
-    url: /stagenow/2-3/csp/touch
+    url: /stagenow/2-4/csp/touch
   - title: UI
     type: section
     level: 5
-    url: /stagenow/2-3/csp/ui
+    url: /stagenow/2-4/csp/ui
   - title: USB
     type: section
     level: 5
-    url: /stagenow/2-3/csp/usb
+    url: /stagenow/2-4/csp/usb
   - title: Wi-Fi
     type: section
     level: 5
-    url: /stagenow/2-3/csp/wifi
+    url: /stagenow/2-4/csp/wifi
   - title: Wireless
     type: section
     level: 5
-    url: /stagenow/2-3/csp/wireless
+    url: /stagenow/2-4/csp/wireless
   - title: XML
     type: section
     level: 5
-    url: /stagenow/2-3/csp/xml
+    url: /stagenow/2-4/csp/xml
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
+
 
 
 

@@ -2,7 +2,7 @@
 title: StageNow 2.3
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## About This Help
@@ -25,29 +25,29 @@ This help file provides the staging administrator instructions on using StageNow
 ## Section Descriptions
 Topics covered in this guide are as follows:
 
-* [Getting Started](/stagenow/2-4/gettingstarted) describes StageNow and includes information on users, use cases, and devices supported.
+* [Getting Started](../gettingstarted) describes StageNow and includes information on users, use cases, and devices supported.
 
-* [Profiles](/stagenow/2-4/stagingprofiles) provides information on the StageNow Wizards which allow the staging administrator to define software configuration and installation for enterprise devices.
+* [Profiles](../stagingprofiles) provides information on the StageNow Wizards which allow the staging administrator to define software configuration and installation for enterprise devices.
 
-* [Profile Wizards](/stagenow/2-4/ProfileWizards) describes how to use each available profile creation Wizard.
+* [Profile Wizards](../ProfileWizards) describes how to use each available profile creation Wizard.
 
-* [Settings](/stagenow/2-4/settingconfig) provides information for the staging administrator on configuring and managing settings for use in creating profiles.
+* [Settings](../settingconfig) provides information for the staging administrator on configuring and managing settings for use in creating profiles.
 
-* [Setting Types](/stagenow/2-4/CSPreference) lists the parameters and values available when creating settings.
+* [Setting Types](../CSPreference) lists the parameters and values available when creating settings.
 
-* [Device Staging](/stagenow/2-4/stageclient) provides information for the staging operator on selecting a profile for configuring the target devices, and deploying the profile material to the devices.
+* [Device Staging](../stageclient) provides information for the staging operator on selecting a profile for configuring the target devices, and deploying the profile material to the devices.
 
-* [Troubleshooting](/stagenow/2-4/troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
+* [Troubleshooting](../troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
 
 ## What's New
 
 The following topics are added or updated for StageNow 2.4:
 
-* Support for connection via [Wi-Fi Hotspot](/stagenow/2-4/gettingstarted/#Wi-Fi%20Hotspot)
+* Support for connection via [Wi-Fi Hotspot](../gettingstarted/#wifihotspot)
 
-* Support for [MX 6.0](/stagenow/2-4/stagingprofiles/#MX%206.0%20Selection) with following functionalities:
+* Support for [MX 6.0](../stagingprofiles/#mx60selection) with following functionalities:
 
-   - [Clock](/stagenow/2-4/csp/clock) 
+   - [Clock](../csp/clock) 
 
    - AppGallery
 
@@ -55,12 +55,12 @@ The following topics are added or updated for StageNow 2.4:
 
    - Personal Dictionary
 
-   - [Camera](/stagenow/2-4/csp/camera) support for disabling a picture taken via the imager
+   - [Camera](../csp/camera) support for disabling a picture taken via the imager
 
-   - [Analytics](/stagenow/2-4/csp/analyticsmgr)
+   - [Analytics](../csp/analyticsmgr)
 
-   - [Condition](/stagenow/2-4/csp/condition) support for validating the device model, Android version, MX version, and OS version
+   - [Condition](../csp/condition) support for validating the device model, Android version, MX version, and OS version
 
-* Updated [OS Update Wizard](/stagenow/2-4/Profiles/osupdate/#Performing%20an%20Incremental%20OS%20Update) to support conditional and incremental OS update    
+* Updated [OS Update Wizard](../Profiles/osupdate/#performinganincrementalosupdate) to support conditional and incremental OS update    
 
-* [Troubleshooting](/stagenow/2-4/troubleshooting)
+* [Troubleshooting](../troubleshooting)

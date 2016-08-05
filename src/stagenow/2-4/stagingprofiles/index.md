@@ -2,7 +2,7 @@
 title: Profiles
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## Introduction
@@ -19,13 +19,13 @@ The staging administrator uses the provided StageNow Wizards to configure settin
 
 ![img](../images/banner.jpg)
 
-* [Config](/stagenow/2-3/stagingprofiles?Configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow bar codes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD bar codes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](/stagenow/2-3/gettingstarted?Settings) screen. The amount of settings created in this section affect the number of bar codes and/or NFC tags that the system generates later.
+* [Config](../stagingprofiles?Configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow bar codes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD bar codes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of bar codes and/or NFC tags that the system generates later.
 
-* [Deployment](/stagenow/2-3/stagingprofiles?Deployment) - This information includes settings that do not reside in StageNow bar codes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the bar code or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
+* [Deployment](../stagingprofiles?Deployment) - This information includes settings that do not reside in StageNow bar codes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the bar code or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
 
-* [Review](/stagenow/2-3/stagingprofiles?Review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the profile, or return to any setting to update it.
+* [Review](../stagingprofiles?Review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the profile, or return to any setting to update it.
 
-* [Publish](/stagenow/2-3/stagingprofiles?Publish) - The Publish section allows the administrator to select the method of delivery (linear bar codes, PDF417 bar codes, NFC tags, or Audio file) for the completed profile, as well as test, publish, and stage the profile.
+* [Publish](../stagingprofiles?Publish) - The Publish section allows the administrator to select the method of delivery (linear bar codes, PDF417 bar codes, NFC tags, or Audio file) for the completed profile, as well as test, publish, and stage the profile.
 
 ### Profile States
 As you progress through the Wizard, the top right corner of the window reflects the state of the profile: 
@@ -89,7 +89,7 @@ At any point, click the Home button to return to the Home screen.
 ![img](../images/homebutton.jpg)
 
 
-When populating a setting template window within a Wizard, to make the setting available for selection when creating other profiles, select the Save Setting for Re-use checkbox, and enter a name for the setting. See [Save for Reuse](/stagenow/2-3/settingconfig?Save%20for%20Reuse) for more information.
+When populating a setting template window within a Wizard, to make the setting available for selection when creating other profiles, select the Save Setting for Re-use checkbox, and enter a name for the setting. See [Save for Reuse](../settingconfig?Save%20for%20Reuse) for more information.
 
 ## Configure
 To create a profile, open the StageNow Workstation Tool and log in.
@@ -102,21 +102,21 @@ Initially, a warning appears indicating that selecting an incorrect version can 
 
 Select one of the following Wizards and select Create.
 
-* [Configure a Device](/stagenow/2-3/Profiles/configdevice)
+* [Configure a Device](../Profiles/configdevice)
 
-* [Connect Network](/stagenow/2-3/Profiles/ConnectNetwork)
+* [Connect Network](../Profiles/ConnectNetwork)
 
-* [Enroll in an MDM](/stagenow/2-3/Profiles/enrollmdm)
+* [Enroll in an MDM](../Profiles/enrollmdm)
 
-* [Manage Applications](/stagenow/2-3/Profiles/manageapps)
+* [Manage Applications](../Profiles/manageapps)
 
-* [Manage Device Security](/stagenow/2-3/Profiles/managesecurity)
+* [Manage Device Security](../Profiles/managesecurity)
 
-* [Perform OS Update](/stagenow/2-3/Profiles/osupdate)
+* [Perform OS Update](../Profiles/osupdate)
 
-* [Wipe a Device](/stagenow/2-3/Profiles/wipedevice)
+* [Wipe a Device](../Profiles/wipedevice)
 
-* [Xpert Mode](/stagenow/2-3/Profiles/xpertmode)
+* [Xpert Mode](../Profiles/xpertmode)
 
 After completing the StageNow Config and RD Config sections of the Wizard, proceed to the next section of the Wizard.  Certain Wizards include a Deployment section, whereas others proceed to the Review section.
 
@@ -138,7 +138,7 @@ Select an option and proceed to the instructions for the selected Wizard.
 >The second and third options are only supported by Wizards that utilize the Deployment section of the tool.
 
 ## Deployment
-Use the Deployment section of the Wizard to specify the subset of the settings that define what the profile does, and store these settings on a deployment server. See the specific [Profile Wizard](/stagenow/2-3/ProfileWizards) for instructions. 
+Use the Deployment section of the Wizard to specify the subset of the settings that define what the profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
 Note that this section is not available in certain Wizards. 
 
 Wizards that include the Deployment section require that device(s) access the Deployment Server in order to acquire the information provided there. Specifically, the device and the server should be on the same network, or there should be routing from the device network that allows connection to the Deployment Server. 
@@ -165,7 +165,7 @@ The Review section of the Wizard allows you to verify your selections.
 
 4. Enter the description and select Save.
 
-5. Encryption for staging data is selected by default in order to protect the sensitive data encoded in the profile bar code or NFC tag. See [StageNow Encryption](/stagenow/2-3/gettingstarted?StageNow%20Encryption)  for more information. De-select this checkbox if necessary to save space.
+5. Encryption for staging data is selected by default in order to protect the sensitive data encoded in the profile bar code or NFC tag. See [StageNow Encryption](../gettingstarted?StageNow%20Encryption)  for more information. De-select this checkbox if necessary to save space.
 
 6. Select Complete Profile to proceed to the Publish window. The profile status at the top right of the screen is now Complete.
 
@@ -199,9 +199,9 @@ To stage a bar code profile:
 
     ![img](../images/Publish_BarCodeTab_published.jpg)
 
-8. To make the profile available for staging, select Stage. This generates a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](/stagenow/2-3/stageclient).
+8. To make the profile available for staging, select Stage. This generates a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](../stageclient).
 
-9. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](/stagenow/2-3/stagingprofiles?Exporting%20Staging%20Profiles).
+9. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 
 To unpublish a profile to remove operator access, select Unpublish.
@@ -227,9 +227,9 @@ To stage an audio profile:
 
 6. Enter staging instructions for the operator, and select Publish Now.
 
-7. To stage the clients using the audio file, select Play Audio, or Download to save the audio file for other administrators or operators to use. See [Device Staging](/stagenow/2-3/stageclient).
+7. To stage the clients using the audio file, select Play Audio, or Download to save the audio file for other administrators or operators to use. See [Device Staging](../stageclient).
 
-8. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](/stagenow/2-3/stagingprofiles?Exporting%20Staging%20Profiles).
+8. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 
 To unpublish a profile to remove operator access, select Unpublish.
@@ -253,9 +253,9 @@ To stage an NFC profile:
 
 6. Select Publish Now.
 
-7. To make the profile available for staging, select Stage. This save the NFC tag as a .bin file that devices can read for staging. See [Device Staging](/stagenow/2-3/stageclient).
+7. To make the profile available for staging, select Stage. This save the NFC tag as a .bin file that devices can read for staging. See [Device Staging](../stageclient).
 
-8. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](/stagenow/2-3/stagingprofiles?Exporting%20Staging%20Profiles).
+8. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 
 
@@ -285,7 +285,7 @@ To edit a profile:
 
 1. Select the profile from the home screen. 
 
-2. Use the navigation UI in the Wizard to locate the setting to update. See [Navigating the Wizard](/stagenow/2-3/stagingprofiles?Navigating%20the%20Wizard).
+2. Use the navigation UI in the Wizard to locate the setting to update. See [Navigating the Wizard](../stagingprofiles?Navigating%20the%20Wizard).
 
     ![img](../images/profile_edit_setting.jpg)
 
@@ -386,6 +386,7 @@ To delete a profile:
 ## Upgrading Profiles
 
 StageNow 2.3 and later allow the administrator to upgrade profiles created in any released or beta StageNow version to the latest version, i.e., StageNow 2.4.
+
 
 
 

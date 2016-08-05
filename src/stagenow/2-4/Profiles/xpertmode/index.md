@@ -2,7 +2,7 @@
 title: Xpert Mode
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles.
 
@@ -35,7 +35,7 @@ To create an Xpert Mode profile:
 
    ![img](../../images/profiles/XpertMode_AddSettings.jpg)
 
-8. Select Add to move through the Profile Wizard and create the new Xpert Mode profile as described in [Creating a Staging Profile](/stagenow/2-3/stagingprofiles?Creating%20a%20Staging%20Profile).
+8. Select Add to move through the Profile Wizard and create the new Xpert Mode profile as described in [Creating a Staging Profile](../../stagingprofiles?Creating%20a%20Staging%20Profile).
 
    ![img](../../images/profiles/XpertMode_AddSettings_Settings1.jpg)
    
@@ -97,7 +97,7 @@ To configure EHS via the Xpert Mode Wizard:
 
 13. Select Continue to set EHS as the default launch screen on the device.
 
-14. See [Review](/stagenow/2-3/stagingprofiles?Review) to continue creating the EHS profile.
+14. See [Review](../../stagingprofiles?Review) to continue creating the EHS profile.
 
 ## Using Enterprise Home Screen Sub-Wizard With Other Settings and Wizards
 
@@ -110,6 +110,7 @@ The following items force a device reboot, and list equivalent StageNow settings
 * Disable Airplane mode ON/OFF in the quick settings panel:  Use Settings Manager to manage Airplane mode.
 
 * Clear the recent app list:  Reboot using Power Manager (make this the last step in the profile).
+
 
 
 

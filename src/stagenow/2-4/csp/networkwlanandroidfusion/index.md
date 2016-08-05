@@ -2,7 +2,7 @@
 title: Network.WLAN.Android.FusionOptions
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## About Network.WLAN.Android.FusionOptions
@@ -16,6 +16,7 @@ The Network.WLAN.Android setting type defines the WLAN settings on Android devic
 * Enable 802.11d.
 * Allow user to select country code.
 * Allow setting RF band.
+
 
 
 

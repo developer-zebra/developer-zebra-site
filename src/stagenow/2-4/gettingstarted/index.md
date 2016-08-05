@@ -2,7 +2,7 @@
 title: Getting Started
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 
 ## Introduction
@@ -27,12 +27,12 @@ The StageNow Staging Solution includes the following components:
 ### Devices Supported
 StageNow supports all Lollipop, KitKat, and Jelly Bean Android devices from Zebra. Lollipop and KitKat devices that ship with the StageNow Client installed support all StageNow features.
 
-Jelly Bean and certain KitKat devices may not include the StageNow Client but do include Rapid Deployment (RD) Client. For staging, these devices can scan StageNow-generated RD bar codes, which cause the RD Client to connect to a network and then auto-install MX 5.0 for KitKat devices, MX 4.4 or lesser for Jelly Bean devices, and the StageNow Client on the device. The StageNow Client can then be used to scan StageNow profile bar codes for configuration. See [Rapid Deployment (RD) Client](/stagenow/2-4/stageclient?Rapid%20Deployment%20(RD)%20Client) for more information on this process.
+Jelly Bean and certain KitKat devices may not include the StageNow Client but do include Rapid Deployment (RD) Client. For staging, these devices can scan StageNow-generated RD bar codes, which cause the RD Client to connect to a network and then auto-install MX 5.0 for KitKat devices, MX 4.4 or lesser for Jelly Bean devices, and the StageNow Client on the device. The StageNow Client can then be used to scan StageNow profile bar codes for configuration. See [Rapid Deployment (RD) Client](../stageclient?Rapid%20Deployment%20(RD)%20Client) for more information on this process.
 
 >Note:  
 >To install StageNow client and MX on a Jelly Bean device, create a profile using wizards from MX 4.4 or lesser versions.
 
-Once devices that did not include the StageNow Client are staged using the RD Client, they still may only support partial StageNow functionality due to limitations of the device OS. See the Feature Compatibility section of the specific [Setting Type](/stagenow/2-4/CSPreference) to determine if your device supports a given feature. 
+Once devices that did not include the StageNow Client are staged using the RD Client, they still may only support partial StageNow functionality due to limitations of the device OS. See the Feature Compatibility section of the specific [Setting Type](../CSPreference) to determine if your device supports a given feature. 
 
 ### StageNow Users
 Following are the StageNow users:
@@ -42,7 +42,7 @@ Following are the StageNow users:
 * The staging operator identifies the devices to stage and uses the Workstation Tool to view and select the profile(s) that the administrator published. The operator then prints the staging materials to use to stage the devices (e.g., bar codes), and uses the StageNow Client on the devices to perform the staging. The operator can then deliver the devices to the end users.
 
 ### Staging Methods
-Following are the staging methods available via StageNow. See [Device Staging](/stagenow/2-4/stageclient) for details:
+Following are the staging methods available via StageNow. See [Device Staging](../stageclient) for details:
 
 * Bar Code - The operator generates bar code(s) containing profile information and scans those bar codes with the device, either printed on paper or displayed on the workstation screen, to configure that device.
 
@@ -57,13 +57,13 @@ If published profiles are available, the Staging Operator home screen appears.
 
 ![img](../images/Homescreen_operator.jpg)
 
-The Operator home screen lists the latest profiles available. The top of the screen shows the [IP Address](/stagenow/2-4/gettingstarted/#Current%20IP%20Address) currently used (if any), useful for when you need to connect to the Staging Server. The top of the screen also includes a [Wi-Fi Hotspot](/stagenow/2-4/gettingstarted/#Wi-Fi%20Hotspot) option, which allows the desktop computer to act as WiFi hotspot for staging devices.
+The Operator home screen lists the latest profiles available. The top of the screen shows the [IP Address](../gettingstarted/#Current%20IP%20Address) currently used (if any), useful for when you need to connect to the Staging Server. The top of the screen also includes a [Wi-Fi Hotspot](../gettingstarted/#Wi-Fi%20Hotspot) option, which allows the desktop computer to act as WiFi hotspot for staging devices.
 
 The main sections of this window include the following fields:
 
 * Favorite - Select to add the profile to the Favorite Profiles list.
 
-* Name - Administrator-provided name of profile. Profiles requiring the client device to be connected to the staging server appear with a [Server Icon](/stagenow/2-4/gettingstarted?Server%20Icon) appended to the profile name.
+* Name - Administrator-provided name of profile. Profiles requiring the client device to be connected to the staging server appear with a [Server Icon](../gettingstarted?Server%20Icon) appended to the profile name.
 
 * Administrator Comments - Any notes regarding the profile.
 
@@ -106,14 +106,14 @@ It also eliminates the need for reprinting the bar codes even if there is a prof
 
 If the Wi-Fi hotspot is off, you can turn it on via the button on the heading bar.
 
-![img](../../images/wifi_titlebar.jpg)
+![img](../images/wifi_titlebar.jpg)
 
-By default, the StageNow Tool enables the Wi-Fi hotspot upon launch. You can disable the hotspot upon launch via the [Settings](/stagenow/2-4/gettingstarted/#Settings) menu. 
+By default, the StageNow Tool enables the Wi-Fi hotspot upon launch. You can disable the hotspot upon launch via the [Settings](../gettingstarted/#Settings) menu. 
 
 #### Admin Privileges Required
 If the Wi-Fi hotspot is disabled upon launching the StageNow Tool, turning in it on for the first time invokes the User Account Control window. This window does not appear again until the tool is closed and re-opened.
 
-![img](../../images/wifi_controlwindow.jpg)
+![img](../images/wifi_controlwindow.jpg)
 
 Select Yes to start the Wi-Fi hotspot service, or No to cancel the operation.
 
@@ -138,7 +138,7 @@ If a new StageNow version or updated components are available and the StageNow t
 
 ![img](../images/Update_Available.jpg)
 
-To enable or disable this message, see [Settings](/stagenow/2-4/gettingstarted?Settings) . 
+To enable or disable this message, see [Settings](../gettingstarted?Settings) . 
 
 >Note:  
 >Only an Administrator can update to the latest software and components. The administrator can also log out, and then log into the StageNow tool again to check for the latest software or component updates.
@@ -191,7 +191,7 @@ The following errors can occur during update:
 ### Profile Lists
 The various profile lists in the Home window include the following fields:
 
-* Name - Administrator-provided name of profile. Profiles requiring the client device to be connected to the staging server appear with a [Server Icon](/stagenow/2-4/gettingstarted?Server%20Icon) appended to the profile name.
+* Name - Administrator-provided name of profile. Profiles requiring the client device to be connected to the staging server appear with a [Server Icon](../gettingstarted?Server%20Icon) appended to the profile name.
 
 * Description - Brief description of the profile.
 
@@ -205,11 +205,11 @@ The various profile lists in the Home window include the following fields:
 
 * Actions - Offers the following actions to perform on the profile:
 
-    * Export ![img](../../images/icon_export.jpg) - Export a profile for other administrator use within the StageNow tool, or export for an MDM.
+    * Export ![img](../images/icon_export.jpg) - Export a profile for other administrator use within the StageNow tool, or export for an MDM.
 
-    * Copy ![img](../../images/icon_copy.jpg) - Copy the profile to create a similar profile with a different name.
+    * Copy ![img](../images/icon_copy.jpg) - Copy the profile to create a similar profile with a different name.
 
-    * Delete ![img](../../images/icon_trash.jpg) - Delete the profile. 
+    * Delete ![img](../images/icon_trash.jpg) - Delete the profile. 
 
 ### Server Icon
 Profiles requiring the client device to be connected to the staging server appear with a server icon appended to the profile name, as shown next to the first profile name below.
@@ -315,11 +315,11 @@ Turn this setting on to turn the Wi-Fi hotspot on when you start the StageNow to
 
 If the Wi-Fi hotspot is off, you can also turn it on via the button on the heading bar.
 
-![img](../../images/wifi_titlebar.jpg)
+![img](../images/wifi_titlebar.jpg)
 
 If your workstation doesn't support the Wi-Fi Hotspot feature, the message below appears on the Settings window.
 
-![img](../../images/wifi_notsupported.jpg)
+![img](../images/wifi_notsupported.jpg)
 
 ### Help
 This launches the StageNow user guide in the default browser. 
@@ -369,21 +369,22 @@ The general staging process is as follows. See the appropriate sections of this 
 ### StageNow Wizards
 StageNow offers the following Wizards for creating profiles to configure mobile devices within the enterprise:
 
-* [Configure a Device](/stagenow/2-4/Profiles/configdevice) - Configure the most common device settings such as locale, security options, applications, MDM enrollment, and production network settings.  This Wizard also allows you to connect to a staging and/or production network, reboot the device, or update the OS.
+* [Configure a Device](../Profiles/configdevice) - Configure the most common device settings such as locale, security options, applications, MDM enrollment, and production network settings.  This Wizard also allows you to connect to a staging and/or production network, reboot the device, or update the OS.
 
-* [Connect Network](/stagenow/2-4/Profiles/ConnectNetwork) - Connect to a Wi-Fi, GPRS, or Ethernet network. You can also enable, disable, add, or remove networks.
+* [Connect Network](../Profiles/ConnectNetwork) - Connect to a Wi-Fi, GPRS, or Ethernet network. You can also enable, disable, add, or remove networks.
 
-* [Enroll in an MDM](/stagenow/2-4/Profiles/enrollmdm) - Enroll a device for management by an MDM.  Use this Wizard to download, install, configure, and launch an MDM agent.  This Wizard also allows you to connect to a staging and/or production network and reboot the device.
+* [Enroll in an MDM](../Profiles/enrollmdm) - Enroll a device for management by an MDM.  Use this Wizard to download, install, configure, and launch an MDM agent.  This Wizard also allows you to connect to a staging and/or production network and reboot the device.
 
-* [Manage Applications](/stagenow/2-4/Profiles/manageapps) - Manage applications on a device. Use this Wizard to download, install, uninstall and launch any applications. This Wizard  also allows you to connect to a staging and/or production network, install licenses (MX 4.3 only), configure simulScan (MX 4.3 only), download data files, and reboot the device.
+* [Manage Applications](../Profiles/manageapps) - Manage applications on a device. Use this Wizard to download, install, uninstall and launch any applications. This Wizard  also allows you to connect to a staging and/or production network, install licenses (MX 4.3 only), configure simulScan (MX 4.3 only), download data files, and reboot the device.
 
-* [Manage Device Security](/stagenow/2-4/Profiles/managesecurity) - Configure security options and policies for a device.  Use this Wizard to whitelist and blacklist applications, control screen time-outs, enable or disable an SD card, camera, GPRS, Bluetooth, GPS, USB, encrypt SD card, control PowerKey menu, settings UI, unknown soruces, and threat management.
+* [Manage Device Security](../Profiles/managesecurity) - Configure security options and policies for a device.  Use this Wizard to whitelist and blacklist applications, control screen time-outs, enable or disable an SD card, camera, GPRS, Bluetooth, GPS, USB, encrypt SD card, control PowerKey menu, settings UI, unknown soruces, and threat management.
 
-* [Perform OS Update](/stagenow/2-4/Profiles/osupdate) - Perform an OS update on a device. Use this Wizard to apply an update or a patch to the OS by downloading a zip file to the device or using an existing zip file on the device.  This Wizard also allows you to connect to a network.
+* [Perform OS Update](../Profiles/osupdate) - Perform an OS update on a device. Use this Wizard to apply an update or a patch to the OS by downloading a zip file to the device or using an existing zip file on the device.  This Wizard also allows you to connect to a network.
 
-* [Wipe a Device](/stagenow/2-4/Profiles/wipedevice) - Destroy device data using Enterprise or Factory Reset. 
+* [Wipe a Device](../Profiles/wipedevice) - Destroy device data using Enterprise or Factory Reset. 
 
-* [Xpert Mode](/stagenow/2-4/Profiles/xpertmode) - Configure any available settings for a device. Use this Wizard to create any combination of settings in any sequence.
+* [Xpert Mode](../Profiles/xpertmode) - Configure any available settings for a device. Use this Wizard to create any combination of settings in any sequence.
+
 
 
 

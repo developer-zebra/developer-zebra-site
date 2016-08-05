@@ -28,11 +28,14 @@ menu:
       url: /stagenow/2-4/settingtypes
     - title: Device Staging
       url: /stagenow/2-4/stageclient
+    - title: Trouble Shooting
+      url: /stagenow/2-4/troubleshooting
     - icon: fa fa-search
       url: /stagenow/2-4/search
 product: Stagenow
 productversion: '2.4'
 ---
+
 
 
 

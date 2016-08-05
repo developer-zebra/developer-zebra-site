@@ -2,7 +2,7 @@
 title: Wipe a Device
 layout: guide.html
 product: Stagenow
-productversion: '2.3'
+productversion: '2.4'
 ---
 Use this Wizard to destroy device data using Enterprise or Factory Reset. 
 
@@ -29,9 +29,10 @@ To create a Wipe a Device profile:
 
    ![img](../../images/profiles/WipeDevice_setting.jpg)
 
-6. Select the required information, and then select Continue. See [Setting Types / Power](/stagenow/2-3/csp/power) for more information.
+6. Select the required information, and then select Continue. See [Setting Types / Power](../../csp/power) for more information.
 
-7. Select Continue to proceed to the [Review window](/stagenow/2-3/stagingprofiles?Review).
+7. Select Continue to proceed to the [Review window](../../stagingprofiles?Review).
+
 
 
 

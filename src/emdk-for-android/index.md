@@ -104,8 +104,6 @@ menu:
       items:
         - title: Importing Samples ( Android Studio )
           url: /emdk-for-android/5-0/guide/emdksamples_androidstudio
-        - title: Importing Samples ( Eclipse/ADT )
-          url: /emdk-for-android/5-0/guide/emdksamples_eclipse
         - title: Barcode Sample
           url: /emdk-for-android/5-0/samples/barcode
         - title: DataCapture Profile Sample
@@ -246,6 +244,8 @@ menu:
           url: /emdk-for-android/5-0/api/payment
         - title: Serial Comm APIs
           url: /emdk-for-android/5-0/api/serialcomm
+        - title: Notification APIs
+          url: /emdk-for-android/5-0/api/notification
     - title: Platform Intents
       items:
         - title: Datawedge Intents

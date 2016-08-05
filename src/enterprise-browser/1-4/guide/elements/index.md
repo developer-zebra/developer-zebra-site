@@ -34,7 +34,7 @@ The single change that is always necessary when migrating to Enterprise Browser 
 		                <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
 		            </General>
 
-**&#50;. Copy any required off-line files (i.e. ["BadLink"](/enterprise-browser/1-4/guide/configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
+**&#50;. Copy any required off-line files** (i.e. ["BadLink"](/enterprise-browser/1-4/guide/configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
 
 > **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
@@ -94,15 +94,30 @@ Running a RhoElements2.x app in Enterprise Browser requires that the legacy APIs
 		<head>
 		<script type="text/javascript" charset="utf-8" src="/js/elements.js"></script>
 		
+-----
+
+### Enable ActiveX Objects
+If the RhoElements app uses ActiveX controls, the legacy ActiveX and generic objects must be preloaded when EB initializes. 
+
+**Specify a value of "1" in the [PreloadLegacyActiveX](/enterprise-browser/1-4/guide/configreference/#preloadlegacyactivex) [PreloadLegacyGeneric](/enterprise-browser/1-4/guide/configreference/#preloadlegacygeneric) parameters**, as below:
+
+
+	:::xml
+	<NPAPI>
+	  	<NPAPIDirectory value="file://%INSTALLDIR%/NPAPI/" />
+		   <Preloads>
+		      <PreloadLegacyActiveX value="1" />
+	    	  <PreloadLegacyGeneric value="1" />  
+
 
 -----
 
 ###Notes: 
 * The generic methods RasConnect and RasDisconnect are not supported.
 * The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
-* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) is not supported on Android or Windows CE.
+* The [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference/#fittoscreenenabled) parameter of EB is not supported on Android or Windows CE.
 * EMML profiles are not supported on Android.
-* Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.
+* If the app is to perform scanning, check for hardware contention issues and other potential [conflicts with DataWedge](/datawedge/5-0/guide/setup/#disabledatawedge) and other Android-native apps that use the device's scanning hardware.
 
 -----
 

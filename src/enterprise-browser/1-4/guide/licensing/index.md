@@ -78,6 +78,7 @@ After a license is applied, a file can be downloaded from the Licensing System a
 * **Specify license in `Config.xml` file**: 
 The licensing company name and hexadecimal license key also can be specified in the `Config.xml` file and mass-deployed, as below:
 
+	
 	:::xml
 	<Applications>
 		<Application> 
@@ -86,4 +87,6 @@ The licensing company name and hexadecimal license key also can be specified in 
 		   ...
 		</Application> 
 	</Applications>
+
+	
 

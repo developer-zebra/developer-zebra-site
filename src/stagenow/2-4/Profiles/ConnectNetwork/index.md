@@ -25,7 +25,7 @@ To create a Connect Wi-Fi Network profile:
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
-5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](../stagingprofiles?MX%206.0%20Selection), and then proceed to Step 7.
+5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](/stagenow/2-3/stagingprofiles/#MX%206.0%20Selection), and then proceed to Step 7.
 
 6. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section (if available).
 
@@ -79,7 +79,7 @@ To create a Connect GPRS Network profile:
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
-5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](../stagingprofiles?MX%206.0%20Selection), and then proceed to Step 7.
+5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](/stagenow/2-3/stagingprofiles/#MX%206.0%20Selection), and then proceed to Step 7.
 
 6. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section, if available.
 
@@ -127,7 +127,7 @@ To create a Connect Ethernet Network profile:
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
-5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](../stagingprofiles?MX%206.0%20Selection), and then proceed to Step 7.
+5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](/stagenow/2-3/stagingprofiles/#MX%206.0%20Selection), and then proceed to Step 7.
 
 6. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section (if available).
 

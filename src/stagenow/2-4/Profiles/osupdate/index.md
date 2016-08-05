@@ -126,7 +126,7 @@ An incremental update allows you to perform an OS update on multiple devices, an
 
 18. Select whether to provide an error message if conditional updates fails.
 
-19. Select Continue to apply the update and proceed to the [Review window](../stagingprofiles?Review).
+19. Select Continue to apply the update and proceed to the [Review window](/stagenow/2-3/stagingprofiles/#Review).
 
     ![img](../../images/profiles/OSUpdate_6_Review.jpg)
 

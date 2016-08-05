@@ -65,7 +65,7 @@ To create an Enroll in an MDM profile for MX 5.1, 5.2, or 6.0:
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
-5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](../stagingprofiles?MX%206.0%20Selection), and then proceed to Step 7.
+5. If you selected MX 6.0 from the MX version drop-down menu, see [MX 6.0 Selection](/stagenow/2-3/stagingprofiles/#MX%206.0%20Selection), and then proceed to Step 7.
 
 6. To choose to connect to this network using StageNow bar codes, select Yes, and then select the type of network. Select Continue. See [Profiles / Connect Network](/stagenow/2-3/Profiles/ConnectNetwork) for instructions on connecting to a network and populating the settings window.
 

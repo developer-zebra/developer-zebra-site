@@ -5,10 +5,15 @@ menu:
   title: StageNow 2.2
   img: /images/products/stagenow.png
   versions:
+  versions:
     - versionto: 2-3
       versionfrom: 2-2
       default: /stagenow/2-3/about
       label: '2.3 '
+    - versionto: 2-4
+      versionfrom: 2-2
+      default: /stagenow/2-4/about
+      label: '2.4 '
   items:
     - title: About
       url: /stagenow/2-2/about

@@ -4,15 +4,14 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-## Installation on Host PC 
-
+## Overview 
 Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 
 ####Platform Support
 Windows is required for full Enterprise Browser development, but the tools offer some support for Mac OS X systems. Enterprise Browser 1.3 and higher packages can be downloaded as a disk image (.dmg) file and permit Mac users to: 
 
-* Copy EnterpriseBrowser .apk files to Android devices
-* Copy EnterpriseBrowser .cab files to an MDM system for mass deployment
+* Copy EnterpriseBrowser `.apk` files to Android devices
+* Copy EnterpriseBrowser `.cab` files to an MDM system for mass deployment
 * Create shortcuts to Android apps using the EB native widget (present in the device after installing the EB app)
 * Access the EB demo app
 * Easily link to EB online help

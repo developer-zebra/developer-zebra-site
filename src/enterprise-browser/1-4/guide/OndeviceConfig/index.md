@@ -1,29 +1,27 @@
 ---
-title: Enterprise Browser On-device Config
+title: On-device Configuration
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
 
-## On-device Config Editor
-
-The on-device configuration feature permits several key runtime settings contained in the Config.xml file to be edited on-device, _without_ the aid of a PC. Settings in the Config.xml file control all runtime behavior of an Enterprise Browser app. The file must reside on the target device for an EB app to launch. 
+## Overview 
+The Enterprise Browser on-device configuration feature permits several key runtime settings contained in the Config.xml file to be edited on-device, _without_ the aid of a PC. Settings in the `Config.xml` file control all runtime behavior of an Enterprise Browser app. The file must reside on the target device for an EB app to launch. 
 
 EB 1.3 and higher apps for Android and Windows Mobile/CE can configure keycapture, zoom in/out, start page and other settings listed below. The settings panel can be secured with a password, can assign an exit password to other EB apps, and can be shown or hidden from the user interface. 
 
-
 ## Using On-Device Config
 
-**WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the** `Config.xml` **file**. 
 
-A button for accessing on-device configuration is displayed by default following an initial Enterprise Browser 1.3 installation. Thereafter, it's displayed whenever the EB app is restarted until a different start page is assigned in the Startpage parameter of the Config.xml. 
+A button for accessing on-device configuration is displayed by default following an initial Enterprise Browser 1.3 installation. Thereafter, it's displayed whenever the EB app is restarted until a different start page is assigned in the Startpage parameter of the `Config.xml`. 
 
 **The first time an Enterprise Browser 1.3 app is launched, a screen like the one below will appear**. 
 
 
 ![img](../../images/OndeviceConfig/On-device_config_01.png)
 
-**Press the "Settings" button to edit the config.xml file that's on the device**. This will bring up a screen like the one below. 
+**Press the "Settings" button to edit the** `Config.xml` **file that's on the device**. This will bring up a screen like the one below. 
 
 Pressing the "Return to OS" button will skip settings configuration and bring up the operating system. To display the Settings button again, simply relaunch the Enterprise Browser app. 
 
@@ -37,7 +35,7 @@ Applying changes immediately will display its intended start page and remove acc
 
 ![img](../../images/OndeviceConfig/On-device_config_03.png)
 
-**Press 'Apply' to update the Config.xml file with the new settings**. A screen like the one below will be displayed. Restart the app to activate the changes. 
+**Press 'Apply' to update the** `Config.xml` **file with the new settings**. A screen like the one below will be displayed. Restart the app to activate the changes. 
 
 ![img](../../images/OndeviceConfig/On-device_config_04.png)
 
@@ -51,7 +49,7 @@ Next time the app launches, a Settings button will appear in the UI like the one
 
 The on-device settings panel presents four buttons at the bottom of the Settings panel. Here's now they behave. 
          
-* **<u>Apply</u> updates the config.xml** with new values entered in the Value fields.    
+* **<u>Apply</u> updates the `Config.xml`** with new values entered in the Value fields.    
 
 * **<u>Quit</u> exits the app without saving**. Unsaved changes will be lost. If ExitPasswordEnabled parameter is Enabled, the Quit button also will cause a password prompt to appear. 
 
@@ -60,9 +58,9 @@ The on-device settings panel presents four buttons at the bottom of the Settings
 * **<u>Reset</u> will revert all values to their factory defaults** as described in the [Config.xml reference guide](/enterprise-browser/1-4/guide/configreference). 
 
 ## Configurable Settings
-Below is the list of settings that can be configured on-device for an EB 1.3 app. For the descriptions and instructions for configuring the full set of runbtime configuration parameters please refer to the [Config.xml reference guide](/enterprise-browser/1-4/guide/configreference).
+Below is the list of settings that can be configured on-device for an EB 1.3 app. For the descriptions and instructions for configuring the full set of runbtime configuration parameters please see the [Config.xml reference guide](/enterprise-browser/1-4/guide/configreference).
 
-**WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**.  
+**WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the** `Config.xml` **file**.  
 
 ### Debugbuttons
 When enabled, presents a set of controls useful for development and debugging purposes. **Note: When using this feature with the IE engine on a CE device, screen distortion may be noticed when scrolling**.
@@ -113,7 +111,7 @@ Controls zoom-IN behavior for application text using function key(s) configured 
 Controls zoom-OUT behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing or left blank or contains an invalid key code. Note: The function keys used for Zoom IN or Zoom OUT operation will not be accessible via the current and previous Key Capture APIs. Applies only to WM/CE with IE or Zebra Webkit. Other requirements are detailed in the Remarks section at the bottom of this guide.Read more.
 
 ### StartPage 
-Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using `file://` or URL using `http://`**. Case sensitive. 
+Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`. Case sensitive. 
 
 ## Notes
 
@@ -123,8 +121,8 @@ Defines the start page of the Enterprise Browser application displayed at launch
 
 * Configuring the full set of [runtime settings in the Config.xml](/enterprise-browser/1-4/guide/configreference) still requires a computer. 
 
-* To simplify PC-based set up of Config.xml files, please refer to the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) for Windows desktops than can edit and deploy Config.xml files from a single panel.
+* To simplify PC-based set up of `Config.xml` files, please refer to the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) for Windows desktops than can edit and deploy `Config.xml` files from a single panel.
 
-* Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields may corrupt the Config.xml file. 
+* Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields may corrupt the `Config.xml` file. 
 
 

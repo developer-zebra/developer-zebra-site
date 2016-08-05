@@ -1,79 +1,89 @@
 ---
-title: Licensing the Runtime
+title: Enterprise Browser Licensing
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-To use the Enterprise Browser, you must have a License issued to you by Symbol Technologies for each device being used. Below are steps that you should take in order to get a license from Symbol Technologies and apply that license to your device.
+##Overview 
 
-## Obtaining a License
-To obtain a license for Enterprise Browser, you should contact us or your local Symbol Technologies reseller. You can find our contact details on the [product page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html).
+Enterprise Browser is free to download and use for evaluation purposes, but deployment requires a license issued by Zebra Technologies for each device being used. Enterprise Browser licensing is per-device; each license permits one device to run an unlimited number of Enterprise Browser applications on that device.This guide explains the steps required to obtain a license to deploy Enterprise Browser for commercial use and and how to apply that license to devices.
 
-When you've purchased your license(s), you will be sent an email with a username and password to access the licensing system, log in using these details and, once logged in, there are options to view your orders, where you can monitor how many licenses remain unassigned, and also to your licenses.
+###1. Contact a Reseller 
+[Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html) and select one of the contact methids for Zebra Technologies or a local Zebra Technologies reseller. 
 
-Click on the licensing tab followed by "Assign a License" section and you will see a list of products for which you have available licenses.
+Or select one the following Zebra resources: 
 
-<!-- > TBD Insert Screen shot -->
+* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
 
-Ensure you select the correct version for the Enterprise Browser runtime you have installed, then click on the "Assign License" link to the right.
+* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
 
-<!-- > TBD Insert Screen Shot -->
+* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** contact info for Zebra's existing global partner network
 
-You will now be presented with the licensing form; this corresponds with the licensing wizard which appears after you have started the EnterpriseBrowser runtime. Enter these details from the device into the form provided.
+* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
 
-> Note: The Group By field is free text and can be used to sort licenses on the website.
+* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
 
-<!-- > TBD ScreenShot -->
+###2. Access Licensing System
+* Once a licensing agreement is purchased, an email will be sent with user credentials for the Zebra licensing system. 
+* Log in for access to existing license inventory and assignments, new orders additional information.
 
-Once you have completed the form, hit submit and you will be presented with two barcodes which should be scanned into your device.  If you have a laser barcode scanner, you will need to print the license out and scan the license code in from that, alternatively, with an imager scanner you can scan the codes directly from the screen.
+###3. Assign a License
+* **In the Licensing System, click on the Licensing tab** and select the "Assign a License" section to see a list of products for which purchased licenses are available.
 
-Please refer to following sections to learn how to apply the Runtime license.
+* **Select the correct version for the Enterprise Browser runtime** installed on the target devices and click on the "Assign License" link to the right.
 
-## Device Licensing
-A device license allows you to run multiple EnterpriseBrowser applications on the same device and places no limits on the number of applications allowed.
+* **Enter device details into the licensing form** that appears. This corresponds with the licensing wizard that appears whenever the Enterprise Browser runtime launches.
 
-A device license consists of:
+* **Complete the form and Tap Submit**. 
 
-* The company name.
-* A hexadecimal key.
+* **Scan the barcodes that appear**. These contain the new license(s). Some device scanners might require that barcodes be printed first. 
 
-There are two types of device license, both of which are applied in the same way.
+###4. Applying the License
+Enterprise Browser licensing is per-device; each license permits one device to run an unlimited number of Enterprise Browser applications on the device. 
 
-* **Device specific licenses** are tied to the specific device and only apply to that device, trying to apply a device specific license to another device will fail.
-* **Deployment licenses** are not tied to a specific device, a single deployment license will work across an entire deployment and is most useful when including the license file in your device deployment or licensing non-Symbol Technologies devices.
+**License components**:
+* The company name to which the license is issued
+* A hexadecimal key
 
-Once your device is licensed, a splash screen will be displayed briefly each time the application is run saying who EnterpriseBrowser has been licensed to.
+Once a device is licensed, a splash screen displays the licensing company's name each time Enterprise Browser is launched. 
 
-<!-- > TBD ScreenShot -->
+**License types**:
+* **Device-specific license -** tied to a specific device. Once assigned, a Device-specific License will fail if an attempt is made to apply the license to a different device.
 
-## Applying a Device License via the Wizard
-Devices running Windows Mobile and Windows CE as well as Symbol Technologies Android devices present the user with a licensing Wizard to guide the user through licensing.
+* **Deployment license -** not tied to a specific device. A Deployment License will work across an entire device deployment. This is most useful for including the license file along with other software in a mass-deployment in a device deployment or when licensing non-Zebra devices.
 
-The first page of the licensing wizard has a "Cancel" button. Clicking it allows you to evaluate the software. While you are evaluating the software, the functionality is not restricted.
+Both license types can be applied using either of the methods below.  
 
-<!-- > TBD ScreenShot -->
+#### Apply Using the Wizard
+To simplify the device-licensing process, all Zebra devices present a licensing wizard when Enterprise Browser launches. The wizard includes a "Cancel" button, which skips the licensing process temporarily to allow Enterprise Browser software and apps to be evaluated and tested. Enterprise Browser functionality is not restricted during evaluation.
 
-The licensing wizard assumes you have already obtained a license via the Symbol Technologies software licensing website. The wizard will guide you through applying your license. There are two options available.
+**Wizard-based application methods**: 
+* **Internet Licensing -** requires the order number associated with an Enterprise Browser license order and an internet connection on the device with direct (non-proxy) contact with the licensing server.
 
-* **Internet Licensing**. This only requires you to know the order number associated with your EnterpriseBrowser licenses order. Provided your device has an internet connection not obstructed by a proxy and can contact the licensing server your device will be licensed automatically.
-* **Manual Licensing**. You can also print off the license from the licensing website and manually key in your company name and license number. If you are using a Symbol Technologies device you will be able to scan the information rather than keying it in manually.
+* **Manual Licensing** -** requires manually entering the company name and license number. On Zebra devices, this information also can be scanned from barcodes printed or displayed on a screen.
 
-More verbose instructions on licensing your device and how to interact with the licensing server are available within the Symbol Technologies software licensing website.
+#### Apply Using a File
+After a license is applied, a file can be downloaded from the Licensing System and used to automate device licensing as part of a mass-deployment. The methods for file-based licensing vary between Android and Windows Mobile/CE devices.
 
-## Applying a Device License via a File
-There are two ways to apply a device license via a file.
+**File-based application methods**:
+* **For Android via file -** This can be created locally on a computer: 
+	1. Create the text file: `C:/enterprise/device/enterprisebrowser`
+	2. On the first line of the file, enter the licensing company's name
+	3. On the second line, enter the hexadecimal license key
+	4. Deploy with the software
 
-* **Via a Registry key**: From the Symbol Technologies Software licensing site, after you have applied for your license you are able to download a registry key file (.reg) containing the company name and license key. On Windows Mobile and Windows CE devices, you can license the device via this registry key.
-* **Via a file** on Android devices when developing hybrid applications: Create the file /enterprise/device/enterprisebrowser. On its first line, enter your company name associated with the license. On its second line, enter the hexadecimal license key. The easiest way to do this is to manually license one device and then the use the file /enterprise/device/enterprisebrowser that was created.
 
-You can also define your device license and company name in your config.xml file as follows:
+* **On Windows Mobile/CE via registry key -** Available from the Licensing Server after a license is issued, a registry key (`.reg`) file containing the company name and license key can be downloaded and used in mass-deployments. 
+
+* **Specify license in `Config.xml` file**: 
+The licensing company name and hexadecimal license key also can be specified in the `Config.xml` file and mass-deployed, as below:
 
 	:::xml
 	<Applications>
-	<Application> 
-	   <LicenseKeyCompany value="Deployment License Company name"/>
-	   <LicenseKey value="Deployment License Number"/>
-	   ...
-	</Application> 
+		<Application> 
+		   <LicenseKeyCompany value="Deployment License Company name"/>
+		   <LicenseKey value="Deployment License Number"/>
+		   ...
+		</Application> 
 	</Applications>
 

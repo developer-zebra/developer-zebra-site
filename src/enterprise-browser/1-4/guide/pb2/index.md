@@ -193,7 +193,7 @@ Optionally, an edited file can be placed in both directories, with changes takin
 * The EB [PageZoom](/enterprise-browser/1-4/guide/configreference/#pagezoom) parameter is not supported on IE. This webview supports text zoom only.
 * **The JavaScript events onkeydown, onkeypress and onkeyup are not supported** in Windows Mobile devices that use the IE rendering engine. The following workaround options are available:
 	* Switch to the EB Webkit engine.
-	* Use Enterprise Browser [Keycapture APIs](/enterprise-browser/1-4/api/keycapture) to capture hardware keypresses.
+	* Use Enterprise Browser [Keycapture APIs](/enterprise-browser/1-4/api/keycapture) to capture hardware key-presses.
 	* Use the PocketBrowser KeyCapture API (implemented as a plug-in) from the EB IE engine.
 
 ------

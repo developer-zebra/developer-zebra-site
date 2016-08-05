@@ -138,21 +138,21 @@ products:
         url: /mx/compatibility
   - title: StageNow
     description: "The easy way to stage Zebra Technologies' Android-based mobile computers."
-    url: /stagenow/2-3/about
+    url: /stagenow/2-4/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: Getting Started
-        url: /stagenow/2-3/gettingstarted
+        url: /stagenow/2-4/gettingstarted
       - title: Profiles
-        url: /stagenow/2-3/stagingprofiles
+        url: /stagenow/2-4/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-3/ProfileWizards
+        url: /stagenow/2-4/ProfileWizards
       - title: Settings
-        url: /stagenow/2-3/settingconfig
+        url: /stagenow/2-4/settingconfig
       - title: Setting Types
-        url: /stagenow/2-3/settingtypes
+        url: /stagenow/2-4/settingtypes
       - title: Device Staging
-        url: /stagenow/2-3/stageclient
+        url: /stagenow/2-4/stageclient
 ---
 

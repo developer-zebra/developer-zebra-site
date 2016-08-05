@@ -263,7 +263,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ### StartPage
 Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using `file://` or URL using `http://`**. Case sensitive. 
 
-**Possible Values**::
+**Possible Values**:
 
 * Fully qualified path to start page
 
@@ -278,7 +278,7 @@ Defines the start page of the Enterprise Browser application displayed at launch
 ### Name
 Stores the name of the application.
 
-**Possible Values**::
+**Possible Values**:
 
 * ASCII text
 
@@ -289,7 +289,7 @@ Stores the name of the application.
 ### UseRegularExpressions
 Used to maintain backward compatibility with PocketBrowser syntax for controlling device capabilities. This is accomplished through a Regular Expression engine, which applies a series of transformations as defined in `RegEx.xml` to each meta tag or JavaScript call being processed. If backward compatibility is not required, regular expressions can be safely disabled to help improve app performance (depending on app structure). **Applies only to apps for Windows Mobile/CE devices built with RhoMobile Suite 2.2 or higher that need backward compatibility with PocketBrowser**.
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Do Not Use Regular Expressions
 * 1 - Use Regular Expressions
@@ -301,7 +301,7 @@ Used to maintain backward compatibility with PocketBrowser syntax for controllin
 ### HTTP_Proxy
 Specifies the URL and port number for the HTTP proxy. Leave this field blank if no proxy is to be used. **Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Supported on WM/CE only when Zebra Webkit is used; proxy settings for Internet Explorer are picked up from the Windows connection manager.
 
-**Possible Values**::
+**Possible Values**:
 
 * URL: PortNo
 
@@ -312,7 +312,7 @@ Specifies the URL and port number for the HTTP proxy. Leave this field blank if 
 ### HTTPS_Proxy
 Specifies the URL and port number for the HTTPS proxy. Leave this field blank if no proxy is to be used. **Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Supported on WM/CE only when Zebra Webkit is used. Not otherwise supported on WM/CE; use HTTP_Proxy instead.
 
-**Possible Values**::
+**Possible Values**:
 
 * URL: PortNo
 
@@ -323,7 +323,7 @@ Specifies the URL and port number for the HTTPS proxy. Leave this field blank if
 ### No_Proxy
 Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. **Applies only to the Zebra Webkit engine**.
 
-**Possible Values**::
+**Possible Values**:
 
 * Comma separated list of direct access addresses.
 
@@ -334,7 +334,7 @@ Used to specify sites to be accessed directly rather than through a proxy. Accep
 ### SplashScreenPath
 Specifies the fully qualified path of an image to be displayed at app start-up. If tag is removed or left unspecified, default EB splash screen will be displayed. Default values for Android and WM/CE are shown in the examples below. Image file must reside in device internal storage; removable storage (i.e. SD card) is not supported. Supported file formats for WM/CE are .bmp, .png; for Android are .bmp, .gif, .jpg, .png. A 640 x 960 .png file is recommended; other resolutions may not display correctly. 
 
-**Possible Values**::
+**Possible Values**:
 
 * fully qualified path and file name
 
@@ -353,7 +353,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 ### SplashScreenDuration
 Specifies the length of time (in milliseconds) to display the image defined by the SplashScreenDuration tag. It is recommended that the duration be greater than 3000 ms (3 seconds) to compensate for image loading time. If tag is removed or left unspecified, will default to 0 seconds. **Applies only to Android devices**. 
 
-**Possible Values**::
+**Possible Values**:
 
 * time in milliseconds (default = 0)
  
@@ -367,7 +367,7 @@ Specifies the length of time (in milliseconds) to display the image defined by t
 ### EnableReceiver
 Determines whether an Enterprise Browser app will receive Intent actions, which work with the Intent function for inter-application communication. When enabled, the application can be called upon by other apps to perform Actions, such as capturing an image or scanning a barcode. For more information about the IntentReceiver tag, see the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) and the [Android Developer Forum](http://developer.android.com/reference/android/content/Intent.html). 
 
-**Possible Values**::
+**Possible Values**:
 
 * **0 - Disabled (default)**
 * 1 - Enabled
@@ -379,7 +379,7 @@ Determines whether an Enterprise Browser app will receive Intent actions, which 
 ### IntentAction  	 
 Specifies the Action for which the receiver is to be registered. There must be at least one IntentAction value for a Receiver to be registered. IntentAction value can be an Android-defined or custom. 
 
-**Possible Values**::
+**Possible Values**:
 
 * string
 
@@ -391,7 +391,7 @@ Specifies the Action for which the receiver is to be registered. There must be a
 ### IntentCategory  
 Specifies the Category under which the receiver is to be registered. There can be zero or many IntentCategory tags. IntentCategory values are Android-defined.
 
-**Possible Values**::
+**Possible Values**:
 
 * string
 
@@ -410,7 +410,7 @@ When enabled, presents a set of controls useful for development and debugging pu
 * When using this feature with the IE engine on a CE device, screen distortion may be displayed while scrolling.<br>
 * When debug buttons are enabled, [Gestures](/enterprise-browser/1-4/api/Gesture) may not function as expected.<br>
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Disabled
 * 1 - Enabled
@@ -423,7 +423,7 @@ When enabled, presents a set of controls useful for development and debugging pu
 ### LogProtocol
 Sets the protocol over which the logging data will be sent.
 
-**Possible Values**::
+**Possible Values**:
 
 * File
 * HTTP
@@ -435,7 +435,7 @@ Sets the protocol over which the logging data will be sent.
 ### LogPort
 The port over which the logging data will be sent when HTTP is set in LogProtocol (otherwise ignored).
 
-**Possible Values**::
+**Possible Values**:
 
 * Any valid HTTP port
 
@@ -446,7 +446,7 @@ The port over which the logging data will be sent when HTTP is set in LogProtoco
 ### LogURI
 The URL or file name and path to which logged data should be sent or saved.
 
-**Possible Values**::
+**Possible Values**:
 
 * Any valid URL or fully qualified file name
 
@@ -460,7 +460,7 @@ The URL or file name and path to which logged data should be sent or saved.
 ### LogError
 Controls logging of ERROR messages generated by the Enterprise Browser.  If set to 1, it enables error-level logging only (can be overridden by LogWarning).
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Disabled
 * 1 - Enabled
@@ -472,7 +472,7 @@ Controls logging of ERROR messages generated by the Enterprise Browser.  If set 
 ### LogWarning
 Controls the logging of WARNING messages generated by the Enterprise Browser. If set to 1, enables warning and error messages (overrides LogError setting; can be overridden by LogInfo).
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Disabled
 * 1 - Enabled
@@ -484,7 +484,7 @@ Controls the logging of WARNING messages generated by the Enterprise Browser. If
 ### LogInfo
 Controls the logging of INFORMATION messages generated by the Enterprise Browser. If set to 1, enables Info, Warning and Error logging (Overrides LogWarning and/or LogError settings; can be overridden by LogUser). 
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Disabled
 * 1 - Enabled
@@ -496,7 +496,7 @@ Controls the logging of INFORMATION messages generated by the Enterprise Browser
 ### LogTrace
 Controls the logging of the Trace messages generated by Enterprise Browser. If set to 1, enables Trace, Info, Warning and Error logging. **Applies to Android and Windows Mobile/CE**.
 
-**Possible Values**::
+**Possible Values**:
 
 * **0 - Disabled (default)**
 * 1 - Enabled 
@@ -508,7 +508,7 @@ Controls the logging of the Trace messages generated by Enterprise Browser. If s
 ### LogUser
 Controls logging of User, Info, Warning and Error messages from the user application. Overrides LogWarning, LogError and/or LogInfo settings. Data can be logged using the Log API.
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Disabled
 * 1 - Enabled
@@ -520,7 +520,7 @@ Controls logging of User, Info, Warning and Error messages from the user applica
 ### LogMemory
 Controls the logging of memory usage in the system. Supports Android, WM/CE; does not apply to the Enterprise Tablet.
 
-**Possible Values**::
+**Possible Values**:
 
 * 0 - Disabled
 * 1 - Enabled
@@ -532,7 +532,7 @@ Controls the logging of memory usage in the system. Supports Android, WM/CE; doe
 ### LogMemPeriod
 Specifies the time interval after which memory logs will be generated. Supports Android and WM/CE; does not apply to the Enterprise Tablet.
 
-**Possible Values**::
+**Possible Values**:
 
 * Time in milliseconds
 
@@ -543,7 +543,7 @@ Specifies the time interval after which memory logs will be generated. Supports 
 ### LogMaxSize
 Specifies the maximum allowable size of the log file, after which no more logs will be saved.
 
-**Possible Values**::
+**Possible Values**:
 
 * File size in kilobytes
 
@@ -555,7 +555,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 ### RegExFile
 **Applies to Android and Windows Mobile/CE**. Defines the location of RegEx.xml, which contains conversions to be used for backward compatibility with EMML 1.0. Case sensitive. **Changing this file or its location is not recommended, and might prevent an app from launching**.   
 
-**Possible Values**::
+**Possible Values**:
 
 * Fully qualified path to file defining the regular expressions
 
@@ -570,7 +570,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 ### PluginFile
 **Applies only to Windows Mobile/CE. Not applicable to the Enterprise Tablet**. Specifies location of the plug-in file (a .DLL on the device), which facilitates mapping between modules and plug-ins on the device. **Changing this file or its location is not recommended, and might prevent an app from launching**. 
 
-**Possible Values**::
+**Possible Values**:
 
 * Fully qualified path to plug-in file.
 

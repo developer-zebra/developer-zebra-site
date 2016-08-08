@@ -42,19 +42,21 @@ Once a license is purchased, it must me assigned to one or more devices before t
 
 **&#52;. Complete the form and Tap Submit**. 
 
-**&#53;. Scan the barcodes that appear**. These contain the new license(s). Some device scanners might require that barcodes be printed first. 
+**&#53;. Scan the barcodes that appear**. These contain the new license(s). 
+
+> **Note**: Some device scanners support only printed barcodes. 
 
 ###IV. Apply the License
 Whether the purchased license is for a specific device or an entire deployment, the Enterprise Browser license must be applied to one or more devices before those devices can be used commercially. Each license permits an unlimited number of Enterprise Browser applications to run on the device(s). 
 
-**Each license is composed of**:
+**Each license contains**:
 * The company name to which the license is issued
 * A hexadecimal key
 
 Once a device is licensed, a splash screen displays the licensing company's name each time Enterprise Browser is launched. 
 
 **License types**:
-* **Device-specific License -** is assigned to a specific device. This License will fail if an attempt is made to apply it to a device other than the device to which it was originally assigned.
+* **Device-specific License -** assigned to a specific device. This License will fail if an attempt is made to apply it to a device other than the device to which it was originally assigned.
 
 * **Deployment License -** works across an entire device deployment. This is useful for remote or mass-deployment scenarios or when licensing non-Zebra devices. **Available for deployments of 50 devices or more**.  
 
@@ -69,26 +71,27 @@ To simplify the device-licensing process, unlicensed Zebra devices present a lic
 * **Manual Licensing -** requires manual entry of the company name and license number. **On Zebra devices, this information also can be scanned from barcodes printed or displayed on a screen**.
 
 #### Apply License via File
-After a license is applied, a file can be created for Android or downloaded for Windows Mobile/CE from the Zebra Licensing system and used to automate device licensing as part of a mass-deployment. A third option--to use the `Config.xml` file--is consistent across all device platforms. 
+After a license is applied, a file can be created for Android or downloaded for Windows Mobile/CE from the Zebra Licensing system and used to automate device licensing as part of a mass-deployment. A third option, to add license info to the `Config.xml` file, is consistent across all device platforms. 
 
-**File-based application methods**:
-* **For Android via** `license` **file**: 
-	1. Purchase a Deployment License
-	2. Create a text file called "license" 
-	3. On the first line of the file, enter the licensing company's name
-	4. On the second line, enter the hexadecimal license key
-	5. Place the `license` file on the device in: `/enterprise/device/enterprisebrowser`
-	6. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
+**On Android, create a** `license` **file**:
+
+1. Purchase a Deployment License
+2. Create a text file called "license" 
+3. On the first line of the file, enter the licensing company's name
+4. On the second line, enter the hexadecimal license key
+5. Place the `license` file on the device in: `/enterprise/device/enterprisebrowser`
+6. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
 <br>
 
-* **For Windows Mobile/CE via** `.reg` **registry key file**:
-	1. Purchase a Deployment License
-	2. Download the `.reg` registry key file from the licensing system 
-	3. Place the file on the device in: `/enterprise/device/enterprisebrowser`
-	4. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
+**On Windows Mobile/CE, download a** `.reg` **registry key file**:
+
+1. Purchase a Deployment License
+2. Download the `.reg` registry key file from the licensing system 
+3. Place the file on the device in: `/enterprise/device/enterprisebrowser`
+4. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
 <br>
 
-* **For all device platforms via** `Config.xml` **file**:
+**For all device platforms, add license info to the** `Config.xml` **file**:
 
 &#49;. Specify the licensing company's name and hexadecimal license key in the `Config.xml` file of an app: 
 
@@ -105,7 +108,8 @@ After a license is applied, a file can be created for Android or downloaded for 
 &#50;. Place the modified `Config.xml` file on the device in:
 * **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/`
 * **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
-* **On Windows CE devices with a persistent installation, ALSO place the file in**: `\Application\EnterpriseBrowser\Config\` 
+* **On Windows CE devices with a persistent installation, place a SECOND COPY of the file in**: `\Application\EnterpriseBrowser\Config\`
+
 &#51;. Launch Enterprise Browser and confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
 &#52;. Repeat Steps 1 and 2 for any app that will run on the device(s) 
 <br>
@@ -121,12 +125,12 @@ Any of the Deployment License files described above can be mass-deployed using [
 		:::term
 		c:/ adb push /[path_to_license_file]/license /enterprise/device/enterprisebrowser
 
-3. Launch Enterprise Browser on the device to **confirm that the push command was successful and the license has been applied** (the name of the licensed company will appear on EB splash screen)
+3. **Confirm push command and license application success by launching Enterprise Browser on the device** (the name of the licensed company will appear on EB splash screen)
 
-4. **Integrate the push command** into the MDM's deployment logic
+4. **Integrate the successful push command** into the MDM's deployment logic
 
 -----
 
 **Related Guides**:
-* **[Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup/) -** for help with initial setup or connecting to devices and pushing files
-* **[Zebra licensing system documentation page](https://softwarelicensing.motorolasolutions.com/documentation/index.html) -** for licensing information and sample screens. 
+* **[Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup/) -** help with initial setup, connecting to devices and pushing files
+* **[Zebra licensing system documentation page](https://softwarelicensing.motorolasolutions.com/documentation/index.html) -** licensing information and sample screens

@@ -60,47 +60,73 @@ Once a device is licensed, a splash screen displays the licensing company's name
 
 Both license types can be applied using either of the methods below.  
 
-#### Apply Using the Wizard
-To simplify the device-licensing process, all unlicensed Zebra devices present a licensing wizard when Enterprise Browser launches. The wizard includes a "Cancel" button, which skips the licensing process temporarily to allow Enterprise Browser software and apps to be evaluated and tested. Enterprise Browser functionality is not restricted during evaluation. 
+#### Apply License via Wizard
+To simplify the device-licensing process, unlicensed Zebra devices present a licensing wizard when Enterprise Browser launches. The wizard includes a "Cancel" button, which skips the licensing process temporarily to allow Enterprise Browser software and apps to be evaluated and tested. Enterprise Browser functionality is not restricted during evaluation. 
 
 **Wizard-based license application**: 
 * **Internet Licensing -** allows the order number associated with an Enterprise Browser license order to be entered instead of the company name and key. **Requires an internet connection on the device** with direct (non-proxy) contact with the licensing server.
 
-* **Manual Licensing -** requires manually entering the company name and license number. **On Zebra devices, this information also can be scanned from barcodes printed or displayed on a screen**.
+* **Manual Licensing -** requires manual entry of the company name and license number. **On Zebra devices, this information also can be scanned from barcodes printed or displayed on a screen**.
 
-#### Apply Using a File
-After a license is applied, a file can be downloaded from the Zebra Licensing system and used to automate device licensing as part of a mass-deployment. The methods for file-based licensing vary between Android and Windows Mobile/CE devices.
+#### Apply License via File
+After a license is applied, a file can be created for Android or downloaded for Windows Mobile/CE from the Zebra Licensing system and used to automate device licensing as part of a mass-deployment. A third option--to use the `Config.xml` file--is consistent across all device platforms. 
 
 **File-based application methods**:
-* **For Android via file**: 
+* **For Android via** `license` **file**: 
 	1. Purchase a Deployment License
 	2. Create a text file called "license" 
 	3. On the first line of the file, enter the licensing company's name
 	4. On the second line, enter the hexadecimal license key
-	5. Place the file on the device in: `/enterprise/device/enterprisebrowser`
-	6. Launch Enterprise Browser on the device to confirm that the license has been applied (company name will appear on EB splash screen)
+	5. Place the `license` file on the device in: `/enterprise/device/enterprisebrowser`
+	6. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
+<br>
 
-The license will be applied next 
-	6. Deploy with the software
+* **For Windows Mobile/CE via** `.reg` **registry key file**:
+	1. Purchase a Deployment License
+	2. Download the `.reg` registry key file from the licensing system 
+	3. Place the file on the device in: `/enterprise/device/enterprisebrowser`
+	4. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
+<br>
 
+* **For all device platforms via** `Config.xml` **file**:
 
-* **For Windows Mobile/CE via registry key -** Available from the Licensing Server after a license is issued, a registry key (`.reg`) file containing the company name and license key can be downloaded and used in mass-deployments. 
-
-* **Specify license in `Config.xml` file**: 
-The licensing company name and hexadecimal license key also can be specified in the `Config.xml` file and mass-deployed, as below:
+&#49;. Specify the licensing company's name and hexadecimal license key in the `Config.xml` file of an app: 
 
 	
 		:::xml
 		<Applications>
 			<Application> 
 			   <LicenseKeyCompany value="Deployment License Company name"/>
-			   <LicenseKey value="Deployment License Number"/>
+			   <LicenseKey value="hexadecimal license key"/>
 			   ...
 			</Application> 
 		</Applications>
+	
+&#50;. Place the modified `Config.xml` file on the device in:
+* **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/`
+* **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
+* **On Windows CE devices with a persistent installation, ALSO place the file in**: `\Application\EnterpriseBrowser\Config\` 
+&#51;. Launch Enterprise Browser and confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
+&#52;. Repeat Steps 1 and 2 for any app that will run on the device(s) 
+<br>
 
+#### Mass-deploy a License File
+Any of the Deployment License files described above can be mass-deployed using [Zebra Stage Now](/stagenow/2-3/about/) or an MDM system with a few simple steps.
 
+**To mass-deploy a Deployment License file**: 
+
+1. **Create the Deployment License file** as described earlier in this section
+2. **Execute the following Android Debug Bridge (ADB) "push" command**: 
+	
+		:::term
+		c:/ adb push /[path_to_license_file]/license /enterprise/device/enterprisebrowser
+
+3. Launch Enterprise Browser on the device to **confirm that the push command was successful and the license has been applied** (the name of the licensed company will appear on EB splash screen)
+
+4. **Integrate the push command** into the MDM's deployment logic
 
 -----
 
-See the [Zebra licensing system documentation page](https://softwarelicensing.motorolasolutions.com/documentation/index.html) for more information and sample screens. 
+**Related Guides**:
+* **[Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup/) -** for help with initial setup or connecting to devices and pushing files
+* **[Zebra licensing system documentation page](https://softwarelicensing.motorolasolutions.com/documentation/index.html) -** for licensing information and sample screens. 

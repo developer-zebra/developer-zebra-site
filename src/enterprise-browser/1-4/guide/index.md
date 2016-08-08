@@ -36,7 +36,7 @@ automenu:
           url: viewport
     - title: Debugging
       items:
-        - title: App Logging
+        - title: Logging
           url: logging
         - title: On-Device Debugging
           url: debuggingjs

@@ -111,7 +111,7 @@ After a license is applied, a file can be created for Android or downloaded for 
 * **On Windows CE devices with a persistent installation, place a SECOND COPY of the file in**: `\Application\EnterpriseBrowser\Config\`
 
 &#51;. Launch Enterprise Browser and confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
-&#52;. Repeat Steps 1 and 2 for any app that will run on the device(s) 
+&#52;. Repeat Steps 1 and 2 for every app that will run on the device(s) 
 <br>
 
 #### Mass-deploy a License File

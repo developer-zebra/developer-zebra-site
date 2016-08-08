@@ -5,10 +5,9 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview
-
 Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). The keycodes for keys with multiple values (such as upper and lower case) are accessed with the shift or other modifier key and in some cases cannot be captured. Enterprise Browser 1.4 permits Android keycode values to be assigned from a file when an Enterprise Browser app starts up.
 
-**This guide applies to Android only**.
+> **Note**: This guide applies only to Android.
 
 ### Keycode Handling 
 On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](/enterprise-browser/1-4/api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
@@ -30,7 +29,7 @@ To assign custom keycodes to Android hard or soft keys, follow these simple step
 &#49;. [Deploy Enterprise Browser](/enterprise-browser/1-4/guide/setup) to the device. 
 
 &#50;. Navigate to the installation directory on the device. 
-This is usually `sdcard0/android/data/com.symbol.enterprisebrowser`
+This is usually the `sdcard0/android/data/com.symbol.enterprisebrowser` directory.
 
 &#51;. Copy the `keycodemapping.xml` template to a PC and open it for editing. 
 
@@ -132,9 +131,9 @@ where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http:/
 
 ##More Information
 
-* [KeyCapture API](/enterprise-browser/1-4/api/keycapture)
-* [Keys that cannot be captured](/enterprise-browser/1-4/api/keycapture?Remarks) 
-* [Android KeyEvents documentation](http://developer.android.com/reference/android/view/KeyEvent.html)
+* **[KeyCapture API](/enterprise-browser/1-4/api/keycapture) -** how to include the API and use its methods
+* **[Keys that cannot be captured](/enterprise-browser/1-4/api/keycapture/#remarks) -** including the SHIFT and ALT keys 
+* **[Android KeyEvents documentation](http://developer.android.com/reference/android/view/KeyEvent.html) -** the official list of Android key names
 
 
 

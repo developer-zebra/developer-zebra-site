@@ -28,7 +28,7 @@ automenu:
           url: DOMinjection
         - title: Printing
           url: printingGuide
-        - title: Device-key Remapping
+        - title: Key Remapping
           url: keycapture
         - title: SAP ITS Usage
           url: sap

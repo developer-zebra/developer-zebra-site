@@ -6,12 +6,12 @@ layout: guide.html
 ---
 ##Overview 
 
-Enterprise Browser is free to download and use for evaluation purposes, but deployment requires a license issued by Zebra Technologies for each device being used. Enterprise Browser licensing is per-device; each license permits one device to run an unlimited number of Enterprise Browser applications on that device.This guide explains the steps required to obtain a license to deploy Enterprise Browser for commercial use and and how to apply that license to devices.
+Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires a license issued by Zebra Technologies for each device or deployment. Depending on the license type, each license permits an unlimited number of Enterprise Browser applications to run on a single device or on all devices in a deployment. This guide explains the process of obtaining a license to deploy Enterprise Browser for commercial use and and how to apply that license to devices.
 
-###1. Contact a Reseller 
-[Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html) and select one of the contact methids for Zebra Technologies or a local Zebra Technologies reseller. 
+###I. Contact a Reseller 
+[Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html) and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. 
 
-Or select one the following Zebra resources: 
+**Alternatively, select one of the following Zebra resources**: 
 
 * **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
 
@@ -23,22 +23,24 @@ Or select one the following Zebra resources:
 
 * **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
 
-###2. Access Licensing System
-* Once a licensing agreement is purchased, an email will be sent with user credentials for the Zebra licensing system. 
-* Log in for access to existing license inventory and assignments, new orders additional information.
+###II. Access Licensing System
+After a licensing agreement is purchased from Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials for accessing the [Zebra Enterprise Software Licensing system](https://softwarelicensing.motorolasolutions.com/documentation/index.html). 
 
-###3. Assign a License
-* **In the Licensing System, click on the Licensing tab** and select the "Assign a License" section to see a list of products for which purchased licenses are available.
+* **Log in to the licensing system** for access to existing license inventory and assignments, new orders and additional information.
 
-* **Select the correct version for the Enterprise Browser runtime** installed on the target devices and click on the "Assign License" link to the right.
+###III. Assign a License
 
-* **Enter device details into the licensing form** that appears. This corresponds with the licensing wizard that appears whenever the Enterprise Browser runtime launches.
+1. **In the Licensing System, click on the Licensing tab** and select the "Assign a License" section to see a list of products for which purchased licenses are available.
 
-* **Complete the form and Tap Submit**. 
+2. **Select the correct version for the Enterprise Browser runtime** installed on the target devices and click on the "Assign License" link to the right.
 
-* **Scan the barcodes that appear**. These contain the new license(s). Some device scanners might require that barcodes be printed first. 
+3. **Enter device details into the licensing form** that appears. This corresponds with the licensing wizard that appears whenever the Enterprise Browser runtime launches.
 
-###4. Applying the License
+4. **Complete the form and Tap Submit**. 
+
+5. **Scan the barcodes that appear**. These contain the new license(s). Some device scanners might require that barcodes be printed first. 
+
+###IV. Apply the License
 Enterprise Browser licensing is per-device; each license permits one device to run an unlimited number of Enterprise Browser applications on the device. 
 
 **License components**:

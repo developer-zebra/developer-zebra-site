@@ -1,4 +1,4 @@
-  ---
+---
 title: About Enterprise Browser 1.4
 productversion: '1.4'
 product: Enterprise Browser

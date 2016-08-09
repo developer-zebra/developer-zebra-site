@@ -5,44 +5,37 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser permits printing via Bluetooth, USB and Wi-Fi from mobile devices running Android and Windows Mobile/CE. **Printing via USB requires EB 1.3 or higher**. This guide describes the steps necessary to enable printing in an Enterprise Browser application. Where appropriate, it contains links to details for the function calls, methods, parameters, constants and other specifics necessary to build an application using JavaScript and the Zebra printing APIs. See the [Platform Notes](#platformnotes) for platform-specific details and the [Printing Tutorial](/enterprise-browser/1-4/tutorial/printing) for a walk-though of the process. 
+Enterprise Browser permits printing via Bluetooth, USB and Wi-Fi from mobile devices running Android and Windows Mobile/CE. **Printing via USB requires EB 1.3 or higher**. This guide describes the steps necessary to enable printing in an Enterprise Browser application. Where appropriate, it contains links to details for the function calls, methods, parameters, constants and other specifics necessary to build an application using JavaScript and the Zebra printing APIs. See the Printing on Windows Mobile/CE section (below) for important notes, and the [Printing Tutorial](/enterprise-browser/1-4/tutorial/printing) for a walk-though of EB printing setup. 
 
 **All code samples are JavaScript**. 
 
-###About USB Printing
-The ability to print via USB was added beginning with Enterprise Browser 1.3 (and higher), and uses the `CONNECTION_TYPE_USB` parameter. **USB printing requires a USB "On-The-Go" (OTG) cable or adapter and one of [Zebra's printers with USB printing support](/enterprise-browser/1-4/#printers)** or a compatible third-party printer. 
-
-Android and Windows Mobile/CE printing is supported via direct USB OTG connection or through a cradle with OTG adapter. Windows Mobile/CE devices also must be in "Host Mode," which is enabled under **USB Config in the Settings panel**. Connecting an OTG cable to an Android device invokes host mode automatically.
-
-### About Windows Mobile/CE Printing
+### Printing on Windows Mobile/CE
 Windows Mobile and Windows CE require that the `PrintingService` application is installed and always running whenever the [Printing](/enterprise-browser/1-4/api/printing) and [PrintingZebra](/enterprise-browser/1-4/api/printingzebra) APIs are to be used. This service (`PrintingService.cab`) is included with the Enterprise Browser installation, but requires the following Microsoft software to be on the device before the service can be deployed: 
 
-* **For Windows Mobile/CE devices**, the [.NET Compact Framework](http://www.microsoft.com/en-us/download/details.aspx?id=65) must be present before installing the PrintingService app. Before downloading .NET CF, it might already be present on the build machine in `C:\Program Files (x86)\Microsoft.NET\SDK\CompactFramework\v3.5\WindowsCE\NETCFv35.wm.armv4i.cab`. 
+#### PrintingService App Installation
 
-* In addition, **Windows CE devices** also require the messaging framework, which can be found on the build machine in `C:\Program Files (x86)\Microsoft.NET\SDK\CompactFramework\v3.5\WindowsCE\Diagnostics\NETCFv35.Messages.EN.cab`.
-
-###PrintingService App Installation
-* **The PrintingService installer (.cab) file** can be found in `C:\<path to Enterprise Browser>\Printing-Service\PrintingService.cab`.
+1. **For Windows Mobile/CE devices**, the [.NET Compact Framework](http://www.microsoft.com/en-us/download/details.aspx?id=65) must be present before installing the PrintingService app. Before downloading .NET CF, it might already be present on the build machine in `C:\Program Files (x86)\Microsoft.NET\SDK\CompactFramework\v3.5\WindowsCE\NETCFv35.wm.armv4i.cab`. 
+2. **Windows CE devices** also require the messaging framework, which can be found on the build machine in `C:\Program Files (x86)\Microsoft.NET\SDK\CompactFramework\v3.5\WindowsCE\Diagnostics\NETCFv35.Messages.EN.cab`.
+3. **The PrintingService installer (.cab) file** can now be installed. It's found in `C:\<path to Enterprise Browser>\Printing-Service\PrintingService.cab`.
 
 #### Limitations
 * The PrintingService app currently supports a single client at a time.
-* The method [`Printer.requestState()`](/enterprise-browser/1-4/api/printing#mrequestState) is not compatible with Bluetooth printers.
-* The method [`Printer.stopSearch()`](/enterprise-browser/1-4/api/printing#mstopSearchSTATIC) is disabled.
+* The method [`Printer.requestState()`](/enterprise-browser/1-4/api/printing/#requeststatespanclasstextinfoarrayspanlistofparameters) is not compatible with Bluetooth printers.
+* The method [`Printer.stopSearch()`](/enterprise-browser/1-4/api/printing/#stopsearch) is disabled.
 
-###USB Compatibility Notes
+###About USB Printing
+The ability to print via USB was introduced in Enterprise Browser 1.3, and uses the `CONNECTION_TYPE_USB` parameter available in that and higher versions only. **USB printing requires a USB "On-The-Go" (OTG) cable or adapter and one of [Zebra's printers with USB printing support](/enterprise-browser/1-4/guide/about/#printers)** or a compatible third-party printer. 
 
-* A USB On-the-Go (OTG) cable or adapter permits a mobile device to act as 'host' to client peripherals such as flash drives, keyboards and printers. 
+Android and Windows Mobile/CE printing is supported via direct USB OTG connection or through a cradle with OTG adapter. Windows Mobile/CE devices also must be in "Host Mode," which is enabled under **USB Config in the Settings panel**. Connecting an OTG cable to an Android device invokes host mode automatically.
 
+####USB Compatibility Notes
+
+* A USB On-the-Go (OTG) cable or adapter permits a mobile device to act as "host" to client peripherals such as flash drives, keyboards and printers. 
 * **On Android devices**, connecting an OTG cable invokes host mode automatically.
-
-* **On Windows Mobile/CE devices** 'Host Mode' must be invoked manually (under USB Config in the Settings panel). 
-
+* **On Windows Mobile/CE devices** "Host Mode" must be invoked manually (under USB Config in the Settings panel). 
 * Some [Zebra TC7X single/dual slot cradles](https://www.zebra.com/us/en/products/accessories/mobile-computer/cradles/sharecradle-system.html) present a USB micro "AB" receptacle that allows the TC7X to act as host or client, depending on the cable.
-
 * The Zebra OTG implementation lacks Session Request Protocol (SRP) and Host Negotiation Protocol (HNP), portions of the spec that allow connected devices to control power consumption and switch dynamically between host and client modes. 
-
 * Printing via USB from a cradled device is possible by inserting an OTG Micro Type A connector to the cradle and connecting the USB-B (or Mini-B) end to the printer.
-
 * OTG supports direct USB connections only; the use of USB hubs is not supported by the OTG spec. 
 
 
@@ -51,8 +44,8 @@ Enterprise Browser provides two APIs for printing. The [Printer API](/enterprise
 
 There are two methods of enabling the Printer API:
 
-* Include all 'ebapi' modules
-* Include only the API required modules
+* Include all "ebapi" modules
+* Include only the required API modules
 
 Both methods are explained below. 
 
@@ -61,29 +54,29 @@ Either way, the included files can be found in:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by an app's files and include the JavaScript modules file in the app. For instance, to include the modules file in `index.html`, copy the file to the same directory as index.html and add the following line to the HEAD section of that index.html file:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by an app's files and include the JavaScript modules file in the app. For example, to include the modules file in `index.html`, copy the file to the same directory as index.html and add the following line to the HEAD section of that index.html file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
+> This will define the EB class within the page. **Note that the path for this file is relative to the current page** (`index.html`). Any page from which the API modules are accessed must include a reference to the `.js` file(s) in this way.
 
 ### Include only the required modules
-To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Printer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For example, to use the Printer API, add the code below to the HTML file(s). Again, this assumes that the relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
     <script type="text/javascript" charset="utf-8" src="eb.printer.js"></script>
 
-> In the code lines above, notice that `ebapi.js` is included first, followed by `eb.printer.js`, which is the Printer API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
+> In the code lines above, notice that `ebapi.js` is included first, followed by `eb.printer.js`, which is the Printer API for Enterprise Browser. **This coding must be included on any HTML page that will call an individual API**.
 
 ## 2- Find a Printer
-Before an app can print, it must first discover and connect to a printer. There are a few ways to discover printers, but all use the [searchPrinters method](/enterprise-browser/1-4/api/printing?searchPrinters(HASH options)).
+Before an app can print, it must discover and connect to a printer. There are a few ways to discover printers, but all use the [searchPrinters method](/enterprise-browser/1-4/api/printing/#searchprintersspanclasstextinfohashspanoptions).
 
 ###Finding via Bluetooth
-Printing via Bluetooth is supported for Android and Windows Mobile/CE apps. During Bluetooth discovery, the printer must be set to "discoverable." 
+Printing via Bluetooth is supported for Android and Windows Mobile/CE apps. During Bluetooth discovery, the printer must be in "discoverable" mode.  
 
-**Look for any 'discoverable' Zebra printer via Bluetooth by specifying the `connectionType` and `printerType` in the `options` parameter**:
+**Look for any "discoverable" Zebra printer via Bluetooth by specifying the** `connectionType` **and** `printerType` **in the** `options` **parameter**:
 
 	:::javascript
 	var printers = [];
@@ -116,7 +109,7 @@ Printing via Bluetooth is supported for Android and Windows Mobile/CE apps. Duri
 
 The Bluetooth MAC address consists of six pairs of hexadecimal digits separated by colons. 
 
-**Specify the Bluetooth MAC address (if known) as a `deviceAddress` using the `options` parameter**: 
+**Specify the Bluetooth MAC address (if known) as a** `deviceAddress` **using the** `options` **parameter**: 
 
 	:::javascript
 	EB.PrinterZebra.searchPrinters({ 
@@ -127,7 +120,7 @@ The Bluetooth MAC address consists of six pairs of hexadecimal digits separated 
 **NOTE**: When pairing with a Bluetooth device for the first time, a prompt might appear for a pairing PIN. Commonly used PINs: 0000, 1111 and 1234. Check the printer manufacturer's specifications.
 
 ###Finding via Wi-Fi
-**Quickly identify known Wi-Fi printers, search using the `deviceAddress` and `devicePort` parameters**:
+**Quickly identify known Wi-Fi printers, search using the** `deviceAddress` **and** `devicePort` **parameters**:
 
 	:::javascript
 	EB.Printer.searchPrinters({ 
@@ -136,12 +129,12 @@ The Bluetooth MAC address consists of six pairs of hexadecimal digits separated 
 		devicePort: 6101
 		...
 
-**NOTE**: When attepting to connect via Bluetooth or Wi-Fi, be sure the device's corresponding radio is turned on. If using Bluetooth, the printer should be set to "discoverable."
+**NOTE**: When attepting to connect via Bluetooth or Wi-Fi, be sure the device's corresponding radio is turned on. If using Bluetooth, the printer should be in "discoverable" mode. 
 
 ###Finding via USB
-Printing via USB is supported from Zebra enterprise mobile computers only to [Zebra's supported printers](/enterprise-browser/1-4/?Printers), which must be connected **using an OTG cable or adapter.**  Windows Mobile/CE devices also must be in 'Host Mode,' which is found under USB Config in the Settings panel.
+Printing via USB is supported from Zebra enterprise mobile computers only to [Zebra's supported printers](/enterprise-browser/1-4/guide/about/#printers), which must be connected **using an OTG cable or adapter.**  Windows Mobile/CE devices also must be in "Host Mode," which is found under USB Config in the Settings panel.
 
-**Use the `search.Printers` method and the `CONNECTION_TYPE_USB` parameter to search for printer(s) connected to the mobile device's USB port**:
+**Use the `search.Printers` method and the** `CONNECTION_TYPE_USB` **parameter to search for printer(s) connected to the mobile device's USB port**:
 
 	:::javascript
 	var printers = [];
@@ -175,11 +168,11 @@ For more information about USB connections, please refer to the Platform Notes s
 
 ## 3- Connect to a Printer
 
-The script in STEP 2 executes the callback function of the [searchPrinters method](/enterprise-browser/1-4/api/printing?searchPrinters(HASH options)), which returns a unique printerID property for each printer found and places them in the `printers` array variable. These IDs will be used to establish a connection with the desired printer. After the last printer is found, an additional callback will be triggered that contains no printerID, signaling that the app has found all available printers and can begin the selection process.
+The script in STEP 2 executes the callback function of the [searchPrinters method](/enterprise-browser/1-4/api/printing/#searchprintersspanclasstextinfohashspanoptions), which returns a unique printerID property for each printer found and places them in the `printers` array variable. These IDs will be used to establish a connection with the desired printer. After the last printer is found, an additional callback will be triggered that contains no printerID, signaling that the app has found all available printers and can begin the selection process.
 
 **NOTE**: This `printerID` is a unique identifier that is tracked by the Enterprise Browser framework. It has no relation to ID numbers that a printer manufacturer might be using.
 
-**Select a `printerID` value from the `printers` array variable by creating an instance of the Printer class. Then call the [getPrinterByID method](/enterprise-browser/1-4/api/printingzebra?getPrinterByID(STRING printerId)) and pass the `printerID` as a string to the vairable `myPrinter`**:
+**Select a** `printerID` **value from the** `printers` **array variable by creating an instance of the Printer class. Then call the** [getPrinterByID method](/enterprise-browser/1-4/api/printingzebra/#getprinterbyidspanclasstextinfostringspanprinterid) **and pass the `printerID` as a string to the vairable `myPrinter`**:
 
 	:::javascript
 	// Ex: printers[0] = 'ZEBRA_PRINTER_1'
@@ -190,7 +183,7 @@ The script in STEP 2 executes the callback function of the [searchPrinters metho
 	// and can use the Instance Methods and properties 
 	// associated with that class
 
-**Next, connect to the instantiated printer using the [connect method](/enterprise-browser/1-4/api/printingzebra?connect())**: 
+**Next, connect to the instantiated printer using the [connect method](/enterprise-browser/1-4/api/printingzebra/#methods)**: 
 
 	:::javascript
 	myPrinter.connect(function (cb){
@@ -209,20 +202,20 @@ The script in STEP 2 executes the callback function of the [searchPrinters metho
 		
 	});
 
-The `callback` object in the [connect method](/enterprise-browser/1-4/api/printingzebra?connect()) will be a `string` containing a [PRINTER_STATUS...](/enterprise-browser/1-4/api/printingzebra?Constants) constant such as: 
+The `callback` object in the [connect method](/enterprise-browser/1-4/api/printingzebra/#methods) will be a `string` containing a [PRINTER_STATUS...](/enterprise-browser/1-4/api/printingzebra/#constants) constant such as: 
 
 - PRINTER_STATUS_SUCCESS
 - PRINTER_STATUS_ERR_NETWORK
 - PRINTER_STATUS_ERR_TIMEOUT
 
 ## 4- Retrieve Printer State
-The first parameter of the [requestState method](/enterprise-browser/1-4/api/printingzebra?requestState(ARRAY listOfParameters)) is an array that lists the items available to find. 
+The first parameter of the [requestState method](/enterprise-browser/1-4/api/printingzebra/#requeststatespanclasstextinfoarrayspanlistofparameters) is an array that lists the items available to find. 
 
-**Use the [requestState method](/enterprise-browser/1-4/api/printingzebra?requestState(ARRAY listOfParameters)) check the printer state**: 
+**Use the** `requestState method` **to check the printer state**: 
 
 	:::javascript
-	// Assumes you have created the instance 'myPrinter'
-	// from previous methods described above
+	// Assumes an instance of "myPrinter" has been
+	// created using methods described above
 
 	myPrinter.requestState(['PRINTER_STATE_IS_READY_TO_PRINT',
 	'PRINTER_STATE_IS_PAPER_OUT'],function (cb){
@@ -232,7 +225,7 @@ The first parameter of the [requestState method](/enterprise-browser/1-4/api/pri
 
 		});
 
-The returned [PRINTER_STATE...](/enterprise-browser/1-4/api/printing?Constants) callback objects are constants such as: 
+The returned [PRINTER_STATE...](/enterprise-browser/1-4/api/printingzebra/#constants) callback objects are constants such as: 
 
 - PRINTER_STATE_IS_COVER_OPENED
 - PRINTER_STATE_IS_DRAWER_OPENED
@@ -241,7 +234,7 @@ The returned [PRINTER_STATE...](/enterprise-browser/1-4/api/printing?Constants) 
 ## 5- Retrieve Supported Printer Languages
 The printer languages supported by the printer must be known before sending commands. Languages supported by Zebra printers include ZPL, CPCL and EPS.
 
-**To retrieve a list of supported languages, use the [enumerateSupportedControlLanguages](/enterprise-browser/1-4/api/printing?enumerateSupportedControlLanguages()) method**: 
+**To retrieve a list of supported languages, use the** [enumerateSupportedControlLanguages](/enterprise-browser/1-4/api/printingzebra/#enumeratesupportedcontrollanguages) **method**: 
 
 		:::javascript
 	//assumes a printer instance from previous instructions:
@@ -254,7 +247,7 @@ The printer languages supported by the printer must be known before sending comm
 		// PRINTER_LANGUAGE_EPS
 	});
 
-The callback will be an array of [PRINTER_LANGUAGE...](/enterprise-browser/1-4/api/printing?Constants) constants such as: 
+The callback will be an array of [PRINTER_LANGUAGE...](/enterprise-browser/1-4/api/printingzebra/#constants) constants such as: 
 
 - PRINTER_LANGUAGE_ZPL
 - PRINTER_LANGUAGE_CPCL
@@ -263,7 +256,7 @@ The callback will be an array of [PRINTER_LANGUAGE...](/enterprise-browser/1-4/a
 **WARNING**: Ruby is NOT supported for use with the CPCL printer language.  
 
 ## 6- Send Printer Commands
-Once the app finds and connects to a printer, it can begin sending commands. Printer behavior will vary depending on printer make, model and current state. Consult your printer's technical documentation for printer-specific commands and syntax.
+Once the app finds and connects to a printer, it can begin sending commands. Printer behavior will vary depending on printer make, model and current state. Consult the printer's technical documentation for printer-specific commands and syntax.
 
 In general, there are two fundamental ways to send commands:
 
@@ -271,7 +264,7 @@ In general, there are two fundamental ways to send commands:
 * In a series of commands stored in a file (i.e. ZPL, CPCL)
 
 ### Sending a Raw String
-**To send a string to the printer, use the [printRawString](/enterprise-browser/1-4/api/printingzebra?printRawString(STRING command, HASH options)) method**: 
+**To send a string to the printer, use the** [printRawString](/enterprise-browser/1-4/api/printingzebra/#printrawstringspanclasstextinfostringspancommandspanclasstextinfohashspanoptions) **method**: 
 
 	:::javascript
 	// If printer is in line mode, this text would be printed:
@@ -286,7 +279,7 @@ In general, there are two fundamental ways to send commands:
 ### Sending a Series of Commands
 When a series of commands is used repeatedly by an app--for example, to print an address label--the commands can be stored in a file (i.e. ZPL, CPCL) and called and/or modified programatically to perform the task. Command files can be generated manually or made using a tool provided by Zebra. They can be created in advance and delivered with the application. 
 
-For example, let's say a file called `address.cpcl` is stored in the application's `public` folder and contains some CPCL commands that are used to print an address. Such a file might look something like the one below, which is a sample terminal script file with embedded CPCL commands: 
+For example, if a file called `address.cpcl` is stored in the application's `public` folder and contains some CPCL commands that are used to print an address, such a file might look like the one below, which is a sample terminal script file with embedded CPCL commands: 
 
 	:::term
 	! U1 SETLP 5 2 46
@@ -296,14 +289,15 @@ For example, let's say a file called `address.cpcl` is stored in the application
 	(401) 555-4CUT
 
 
-To access the `address.cpcl` file, use the [RhoFile.join](/enterprise-browser/1-4/api/File?join) helper function and the [Application.publicFolder property](/enterprise-browser/1-4/api/Application?publicFolder) to create a fully qualified path to the file. 
+To access the `address.cpcl` file, use the [RhoFile.join](/enterprise-browser/1-4/api/File/#joinspanclasstextinfostringspanp1spanclasstextinfostringspanp2) helper function and the [Application.publicFolder property](/enterprise-browser/1-4/api/Application/#publicfolder) to create a fully qualified path to the file. 
 
-**Pass the fully qualified path created above to the [sendFileContents method](/enterprise-browser/1-4/api/printingzebra?sendFileContents(STRING path))**: 
+**Pass the fully qualified path created above to the** [sendFileContents method](/enterprise-browser/1-4/api/printingzebra/#sendfilecontentsspanclasstextinfostringspanpath): 
 
 	:::javascript
 	var addressFile = EB.RhoFile.join(EB.Application.publicFolder, 'address.cpcl');
 
-	//assuming you made an instance and connected per the previous instructions
+	//assuming an instance was created and connected 
+	//per the previous instructions
 
 	myPrinter.sendFileContents(addressFile,function(e){
 		console.log(e);
@@ -315,17 +309,17 @@ To access the `address.cpcl` file, use the [RhoFile.join](/enterprise-browser/1-
 ## 7- Disconnect
 Whenever an app is finished printing, it's important to disconnect from the printer. This is especially important for Bluetooth connections. 
 
-**To disconnect, use the [disconnect method](/enterprise-browser/1-4/api/printingzebra?disconnect())**:
+**To disconnect, use the** [disconnect method](/enterprise-browser/1-4/api/printingzebra/#disconnect):
 
 	:::javacript
-	//assumes you already created an instance object from previous instructions
+	//assumes an instance object was created from previous instructions
 
 	myPrinter.disconnect();
 
 ## Using Files Stored On The Printer
 Some printers have the ability to store command-file templates or other files useful for performaing print operations. 
 
-**Retrieve a list of files that exist on the printer using the [retrieveFileNames method](/enterprise-browser/1-4/api/printingzebra?retrieveFileNames())**: 
+**Retrieve a list of files that exist on the printer using the [retrieveFileNames method](/enterprise-browser/1-4/api/printingzebra/#retrievefilenames)**: 
 
 	:::javascript
 	myPrinter.retrieveFileNames(function (e){
@@ -335,12 +329,12 @@ Some printers have the ability to store command-file templates or other files us
 	
 	});
 
-Once the file names are known, your app can print with them, passing variables as specified within the ZPL or CPCL files themselves. This is done using either the [printStoredFormatWithArray method](/enterprise-browser/1-4/api/printingzebra?printStoredFormatWithArray(STRING formatPathOnPrinter, Array vars)) or the [printStoredFormatWithHash method](/enterprise-browser/1-4/api/printingzebra?printStoredFormatWithHash(STRING formatPathOnPrinter, HASH vars)). 
+Once the file names are known, the app can print with them, passing variables as specified within the ZPL or CPCL files themselves. This is done using either the [printStoredFormatWithArray method](/enterprise-browser/1-4/api/printingzebra/#printstoredformatwitharrayspanclasstextinfostringspanformatpathonprinterspanclasstextinfoarrayspanvars) or the [printStoredFormatWithHash method](/enterprise-browser/1-4/api/printingzebra/#printstoredformatwithhashspanclasstextinfostringspanformatpathonprinterspanclasstextinfohashspanvars). 
 
 Both methods above include the three parameters below. 
 
 ###Parameter 1- formatPathOnPrinter
-This will be **'E:&lt;filename&gt;'** where 'filename' is the name of one of the files found using the steps above or another file on the device (assuming the file is stored in the printer's 'E' partition). 
+This will be **'E:&lt;filename&gt;'** where 'filename' is the name of one of the files found using the steps above or another file on the device (assuming the file is stored in the printer's "E" partition). 
 
 ###Parameter 2- vars 
 This represents the data to be passed to the label, and uses `printStoredFormatWithArray`, an array of strings representing the data to fill into the format. For ZPL formats, index 0 of the array corresponds to field number 2 (^FN2). For CPCL, the variables are passed in the order that they are found in the format. 
@@ -370,17 +364,18 @@ Supported by ZPL only is `printStoredFormatWithHash`, a hash that contains the k
 
 
 ###Parameter 3- callback
-This parameter will return a [PRINTER_STATUS...](/enterprise-browser/1-4/api/printingzebra?Constants) constant as a string.
+This parameter will return a [PRINTER_STATUS...](/enterprise-browser/1-4/api/printingzebra/#constants) constant as a string.
 
 ## Printing Images
-For printers with graphics support, images are printed using the [printImageFromFile method](/enterprise-browser/1-4/api/printingzebra?printImageFromFile(STRING filePathOnDevice, INTEGER x, INTEGER y, HASH options)). For example, an image called `myImage.jpg` in your application's `public` folder could use the same [RhoFile.join](/enterprise-browser/1-4/api/File#mjoinSTATIC) helper function and [Application.publicFolder property](/enterprise-browser/1-4/api/Application?publicFolder) described above to create a fully qualified path to the `myImage.jpg` file. 
+For printers with graphics support, images are printed using the [printImageFromFile method](/enterprise-browser/1-4/api/printingzebra/#printimagefromfilespanclasstextinfostringspanfilepathondevicespanclasstextinfointegerspanxspanclasstextinfointegerspanyspanclasstextinfohashspanoptions). For example, an image called `myImage.jpg` in the application's `public` folder could use the same [RhoFile.join](/enterprise-browser/1-4/api/File/#joinspanclasstextinfostringspanp1spanclasstextinfostringspanp2) helper function and [Application.publicFolder property](/enterprise-browser/1-4/api/Application/#publicfolder) described above to create a fully qualified path to the `myImage.jpg` file. 
 
-**After creating the fully qualified path, pass the file to the [printImageFromFile method](/enterprise-browser/1-4/api/printingzebra?printImageFromFile(STRING filePathOnDevice, INTEGER x, INTEGER y, HASH options))**:
+**After creating the fully qualified path, pass the file to the** [printImageFromFile method](/enterprise-browser/1-4/api/printingzebra/#printimagefromfilespanclasstextinfostringspanfilepathondevicespanclasstextinfointegerspanxspanclasstextinfointegerspanyspanclasstextinfohashspanoptions)**:
 
 	:::javascript
 	var imagefile = EB.RhoFile.join(EB.Application.publicFolder, 'myImage.jpg');
 
-	//assuming you made an instance and connected per the previous instructions
+	//assuming an instance was created and connected 
+	//per the previous instructions
 
 	myPrinter.printImageFromFile(imagefile,0,0,{},function(e){
 
@@ -392,14 +387,14 @@ For printers with graphics support, images are printed using the [printImageFrom
 			}
 		});
 
-A callback for the [PRINTER_STATUS](/enterprise-browser/1-4/api/printingzebra?Constants) constant would return a string indicating whether the operation was successful.
+A callback for the [PRINTER_STATUS](/enterprise-browser/1-4/api/printingzebra/#constants) constant would return a string indicating whether the operation was successful.
 
 **NOTE**: Images larger than 1024x768 might take a long time or print incorrectly. Consult the printer manufacturer's documentation for image printing parameters. 
 
 ### Storing Images
-For Zebra printers that support the storage of images, this can be done by creating a ZPL or CPL command set or by using the [storeImage method](/enterprise-browser/1-4/api/printingzebra?storeImage(STRING printerDriveAndFileName, STRING imageFilePathOnDevice, INTEGER width, INTEGER height)). 
+For Zebra printers that support the storage of images, this can be done by creating a ZPL or CPL command set or by using the [storeImage method](/enterprise-browser/1-4/api/printingzebra/#storeimagespanclasstextinfostringspanprinterdriveandfilenamespanclasstextinfostringspanimagefilepathondevicespanclasstextinfointegerspanwidthspanclasstextinfointegerspanheight). 
 
-**To store an image on the printer using the [storeImage method](/enterprise-browser/1-4/api/printingzebra?storeImage(STRING printerDriveAndFileName, STRING imageFilePathOnDevice, INTEGER width, INTEGER height))**: 
+**To store an image on the printer using the** [storeImage method](/enterprise-browser/1-4/api/printingzebra/#storeimagespanclasstextinfostringspanprinterdriveandfilenamespanclasstextinfostringspanimagefilepathondevicespanclasstextinfointegerspanwidthspanclasstextinfointegerspanheight): 
 
 	:::javascript
 	//location of image on device:
@@ -410,7 +405,8 @@ For Zebra printers that support the storage of images, this can be done by creat
 
 	var destination = "E:LOGO.GRF"
 
-	//assuming you made an instance and connected per the previous instructions:
+	//assumin an instance was created and connected 
+	//per the previous instructions:
 
 	myPrinter.storeImageFromFile(destination,imagefile,0,0,{},function(e){
 		

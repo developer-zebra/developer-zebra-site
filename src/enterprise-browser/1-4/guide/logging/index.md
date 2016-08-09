@@ -5,7 +5,9 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview 
-Enterprise Browser includes a powerful logging engine, giving administrators, developers and tech support teams a rich 
+Enterprise Browser includes a powerful logging engine, offering administrators, developers and tech support teams the potential to access a rich, multi-level data streams relating to application execution, events and failures. 
+
+hierarchical 
 
 This guide should tell how to turn on logging, choices for log levels, how to send message to the log and how to retrieve the log file. This can be very useful when debugging your app to figure out exactly what is happening behind the scenes.
 

@@ -5,9 +5,9 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser permits printing via Bluetooth, USB and Wi-Fi from mobile devices running Android and Windows Mobile/CE. This guide is designed to provide an overview of the steps necessary to enable printing in an Enterprise Browser application. Where appropriate, it contains links to details for the calls, methods, parameters, constants and other specifics necessary to build an application using JavaScript and the Zebra printing APIs. 
+Enterprise Browser permits printing via Bluetooth, USB and Wi-Fi from mobile devices running Android and Windows Mobile/CE. **Printing via USB requires EB 1.3 or higher**. This guide describes the steps necessary to enable printing in an Enterprise Browser application. Where appropriate, it contains links to details for the function calls, methods, parameters, constants and other specifics necessary to build an application using JavaScript and the Zebra printing APIs. See the [Platform Notes](#platformnotes) for platform-specific details and the [Printing Tutorial](/enterprise-browser/1-4/tutorial/printing) for a walk-though of the process. 
 
-For more information, please refer to the [Printing Tutorial](/enterprise-browser/1-4/guide/tutorial/printing) and to the Platform Notes section later in this guide. **All code samples are JavaScript**. 
+**All code samples are JavaScript**. 
 
 ###About USB Printing
 The ability to print via USB was added beginning with Enterprise Browser 1.3 (and higher), and uses the `CONNECTION_TYPE_USB` parameter. **USB printing requires a USB "On-The-Go" (OTG) cable or adapter and one of [Zebra's printers with USB printing support](/enterprise-browser/1-4/#printers)** or a compatible third-party printer. 

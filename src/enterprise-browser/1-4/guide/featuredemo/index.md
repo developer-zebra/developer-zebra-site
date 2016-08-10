@@ -7,7 +7,7 @@ layout: guide.html
 ## Overview
 The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices.
 
-### Showcased Capabilites  
+### Showcased Capabilities  
   * Barcode scanning
   * Image capture
   * Signature capture
@@ -15,7 +15,7 @@ The Feature Demo application showcases some of the key capabilities of Enterpris
   * Capturing key-presses
   * Changing and capturing screen orientations
   * Timer API functions
-  * Enabling, disabling and orienting the hourglass (screen loading icon)
+  * Enabling, disabling and orienting the hourglass ("screen loading" icon)
 
 ### Showcased HTLM5 capabilities  
   * WebSQL
@@ -111,13 +111,13 @@ The Hourglass section of the Feature Demo application shows how to use the most 
 * Show – Tapping this button will show a loading indicator in the position denoted in the `Left` and `Top` coordinates field. If nothing is entered, it will show the loading indicator in the center of the screen  
 * Hide – Tapping this button will hide the loading indicator  
 * Left – Controls the left coordinates of the screen display used to position the loading indicator  
-* Stop – Controls the top coordinatre of the screen display used to position the loading indicator
+* Stop – Controls the top coordinate of the screen display used to position the loading indicator
 
 ### Key Capture  
 The Key Capture section of the Feature Demo application shows how to use the most common [Key Capture APIs](/enterprise-browser/1-4/api/keycapture/):  
 
 * Capture Trigger – Tapping this button will show when the hardware scanner button is pressed along with the keycode that represents the button  
-* Capture Keys – Tapping this button will show the corresponding keycode for any key pressed (hardware or software)  
+* Capture Keys – Tapping this button will show the corresponding key code for any key pressed (hardware or software)  
 
 ### Screen  
 The Screen section of the Feature Demo application shows how to use the most common [Screen Orientation APIs](/enterprise-browser/1-4/api/ScreenOrientation/):  
@@ -131,52 +131,52 @@ The Screen section of the Feature Demo application shows how to use the most com
 ### Signal  
 The Signal section of the Feature Demo application shows how to use the most common [Signal Indicators APIs](/enterprise-browser/1-4/api/signalIndicators):  
 
-* Show Icon – Tapping this button will show a wifi icon in the upper left hand corner. Control more aspects of how it is presented and its location by changing parameters within the code  
-* Hide Icon – Tapping this button will hide the wifi icon  
-* Start – Tapping this button will begin to monitor for wifi status events. For example when not being charged, it will show the wifi level  
-* Stop – Tapping this button will stop monitoring for wifi status events  
+* Show Icon – Tapping this button will show a Wi-Fi icon in the upper left hand corner. Control more aspects of how it is presented and its location by changing parameters within the code  
+* Hide Icon – Tapping this button will hide the Wi-Fi icon  
+* Start – Tapping this button will begin to monitor for Wi-Fi status events. For example when not being charged, it will show the Wi-Fi level  
+* Stop – Tapping this button will stop monitoring for Wi-Fi status events  
 * Status – This section will be populated with the data that comes from the signal event upon a change in status. It will only be displayed when the `Start` button has been tapped  
 
 > Note: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. It is advised to disable the monitoring of signal events by tapping `Stop` when wanting to view other features  
 
 ### Signature Capture  
-The Signature Capture  section of the Feature Demo application shows how to use the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):  
+The Signature Capture section of the Feature Demo application shows how to use the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):  
 
-* Show – Tapping this button will display a full screen signature capture widget. It will use the Color and Width properties that can be changed  
+* **Show –** displays a full-screen signature capture widget; uses the Color and Width properties (can be customized). When returning from this widget, the status of the event will be displayed along with the image of the signature (if the user pressed the OK button).
 
-When returning from this widget the status of the event will be diplayed as well as the image of the signature if the user pressed ok during capture
+* **Background Color -** hex value string representing the background color of the signature capture area. For example, changing it to `#FF0000` will result in a red background. 
 
-Background Color: This is a hex value string that represents the color of the background of the signature capture area. For example, changing it to `#FF0000` will result in a red background  
-Pen Color: This is a hex value string that represents the color of the pen stroke of the signature capture area. For example, changing it to #FF0000 will result in a red pen color  
-Pen Width: This is an integer value that represents how thick the pen should be in `pixels`  
+* **Pen Color ** hex value string that representing the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
+
+* **Pen Width -** integer value representing pen-stroke thickness (in pixels). 
 
 ### Timer  
-The Timer section of the Feature Demo application shows how to use the most common Timer APIs:  
+The Timer section of the Feature Demo application shows how to use the most common [Timer APIs](/enterprise-browser/1-4/api/Timer/):  
 
-* Duration – This is how often an event will be fired while the timer is active. The amount is in milliseconds  
-* Start – Tapping this button will start a timer to be fired at the duration interval  
-* Stop – Tapping this button will stop the timer  
-* Status – Will show when timer events have been started or stopped   
+* **Duration –** the length of time (in ms) to run an event while the timer is active. 
+* Start –** Tapping this button will start a timer to be fired at the duration interval.
+* Stop –** Tapping this button will stop the timer.
+* Status –** Will show when timer events have been started or stopped. 
 
 ### WebSQL  
 The WebSQL section of the Feature Demo application demonstrates basic functionality of the HTML5 WebSQL standard  
 
-* Input – Enter a string to be stored  
-* Output – Displays the data retrieved when tapping the `Fetch` button  
-* Store – Tapping this button will store the value in the `Input` field into WebSQL  
-* Fetch – Tapping this button will retrieve the value from WebSQL  
+* **Input –** Enter a string to be stored  
+* **Output –** Displays the data retrieved when tapping the `Fetch` button  
+* **Store –** Tapping this button will store the value in the `Input` field into WebSQL  
+* **Fetch –** Tapping this button will retrieve the value from WebSQL  
 
 ### WebStorage  
-The Web Storage section of the Feature Demo application demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs.  This allows storage of basic Name/Value data pairs  
+The Web Storage section of the Feature Demo application demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs. This allows storage of basic Name/Value data pairs. 
 
-* LocalStorage Input – Enter a string to be stored using LocalStorage. This will stay resident after the application is closed.  
-* LocalStorage Output – Displays the LocalStorage data retrieved when tapping the `Local Fetch` button  
-* SessionStorage Input – Enter a string to be stored using SessionStorage. This will not persist through the closing of the application 
-* SessionStorage Output – Displays the SessionStorage data retrieved when tapping the `Local Fetch` button  
-* Local Store – Tapping this button will store the value in the `LocalStorage Input` field into LocalStorage  
-* Local Fetch – Tapping this button will retrieve the value from LocalStorage  
-* Session Store – Tapping this button will store the value in the `SessionStorage Input` field into SessionStorage  
-* Session Fetch – Tapping this button will retrieve the value from SessionStorage  
+* **LocalStorage Input –** a string to be stored using LocalStorage; remains resident after the app is closed
+* **LocalStorage Output –** displays the LocalStorage data retrieved when tapping the "Local Fetch" button
+* **SessionStorage Input –** a string to be stored using SessionStorage; does not persist after the app is closed 
+* **SessionStorage Output –** displays the SessionStorage data retrieved when tapping the "Local Fetch" button  
+* **Local Store –** stores the value in the "LocalStorage Input" field into LocalStorage  
+* **Local Fetch –** retrieves the value from LocalStorage  
+* **Session Store –** stores the value in the "SessionStorage Input" field into SessionStorage  
+* **Session Fetch –** retrieve the value from SessionStorage  
 
 ### Inspecting the Code  
 When unzipping the contents of the Feature Demo download, the following folders and files appear:  
@@ -184,16 +184,18 @@ When unzipping the contents of the Feature Demo download, the following folders 
   <img style="padding-left:20px;" src="http://i.imgur.com/rnm2E0R.png" border="10">
   
 
-* apis – folder that contain individual `.html` files that are associated with each feature  
-* featurename.html – each file has all associated Javascript that is used to demonstrated the use of the API  
-* img – folder that contains icons and images used in the demo  
-* ebapi-modules.js – Enterprise Browser core JavaScript api library  
-* elements.js – Enterprise Browser JavaScript library used by some of the APIs  
-* rhoapi-modules.js – Enterprise Browser JavaScript library used by some of the APIs  
-* feature-demo.html – main application page that controls behavior of the Feature Demo application  
-* style.css – CSS file used for look and feel of the Feature Demo application  
+**Contents of the Feature Demo download**: 
 
-To learn from the Feature Demo application, it is best to look at the individual HTML files located in the 'apis' folder. Notice the `SCRIPT` block that contains the associated JavaScript for performing the particular action. 
+* **apis –** folder that contains individual `.html` files associated with each feature  
+* **featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API  
+* **img – folder that contains icons and images used in the demo  
+* **ebapi-modules.js –** Enterprise Browser core JavaScript api library  
+* **elements.js –** Enterprise Browser JavaScript library used by some of the APIs  
+* **rhoapi-modules.js –** Enterprise Browser JavaScript library used by some of the APIs  
+* **feature-demo.html –** main application page that controls behavior of the Feature Demo application  
+* **style.css –** CSS file used for look and feel of the Feature Demo application  
+
+To learn from the Feature Demo application, it is best to look at the individual HTML files located in the `/apis` folder. Notice the `SCRIPT` block that contains the associated JavaScript for performing the particular action. 
 
 ## Troubleshooting  
 Still having trouble getting the Feature Demo to work? Try the following:  

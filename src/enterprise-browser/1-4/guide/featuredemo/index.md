@@ -56,23 +56,22 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 
 	<img style="padding-left:40px;" src="http://i.imgur.com/Gk1rhab.png" width="600" height="480" border="10">
 
-5. On the device, launch the Enterprise Browser app.   
-
-## Using Features
-If everything worked correctly, a screen similar to the image below will display, showing all of the Feature-Demo capabilities.   
+5. On the device, launch the Enterprise Browser app. A screen similar to the image below appears, showing all Feature-Demo capabilities.   
 
   <img style="padding-left:40px;" src="http://i.imgur.com/N63KwJq.png" width="380" height="600" border="10"> 
+
+## Using Features
 
 To try a specific feature, click on the "hamburger" menu icon at the top left and select it. To quickly exit the Feature Demo App, use the `X` at the top right. 
 
 ### Barcode Scanning  
 The Barcode section of the Feature Demo application shows how to use the most common [Barcode APIs](/enterprise-browser/1-4/api/barcode/):
 
-* Enumerate – Will scan the device for all capable barcode interfaces like 2D imager, Laser, and Camera. Tapping this button will show a list of available scan engines. Tapping select on an item will then make the Enable and Disable buttons active for that scanner  
-* Enable – Tapping this button will enable the dedicated scanner button on the device. Then when pressing the hardware scan trigger and point it at a barcode, the decode information will be presented  
-* Disable – Tapping this button will disable the active barcode scanner  
-* Start – Tapping this button will activate the scanner in what is called a ‘soft trigger’ mode. It will remain active until either a barcode is decoded or a timeout occurs. This button will only be active after tapping the Enable button  
-* Stop – Tapping this button will disable the soft trigger mode.  
+* **Enumerate –** scans the device for all capable barcode interfaces. These might include 2D imager, laser, and camera. Tap in a scanner type to Enable or Disable that scanner.  
+* **Enable –** enables the dedicated scanner button on the device. Press the hardware scan trigger and point it at a barcode, the decode information will be presented.   
+* **Disable –** disable the active barcode scanner.  
+* **Start –** activates the scanner in "soft trigger" mode. Scanner remains active until a barcode is decoded or a timeout occurs. This button is active only after tapping the Enable button. 
+* **Stop –** disables the soft trigger mode.  
 
  **To Test the Scanner**
 
@@ -95,76 +94,76 @@ The Barcode section of the Feature Demo application shows how to use the most co
 ### Battery  
 The Battery section of the Feature Demo application shows how to use the most common [Battery APIs](/enterprise-browser/1-4/api/battery/):  
 
-* Show Icon – Tapping this button will show a battery icon in the upper left hand corner. Control more aspects of its presentation and location by changing parameters within the code  
-* Hide Icon – Tapping this button will hide the battery icon  
-* Start – Tapping this button will begin to monitor for battery status events. For example, when not being charged, it will show the battery level  
-* Stop – Tapping this button will stop monitoring for battery status events
+* **Show Icon –** displays a battery icon in the upper left-hand corner. Change parameters within the code to control more aspects of icon presentation and location.  
+* **Hide Icon –** hides the battery icon.  
+* **Start –** begins to monitor for battery status events. For example, when not being charged, battery level is displayed. 
+* **Stop –** stops monitoring for battery status events. 
 
 ### Camera  
 The Camera section of the Feature Demo application shows how to use the most common [Imager APIs](/enterprise-browser/1-4/api/Imager/):  
 
-* Show Camera – Tapping this button will activate the camera and allows a picture to be taken. It will show the status information from the performing the action
+* **Show Camera –** activates the camera and allows a picture to be taken. Displays status information after performing the action. 
 
 ### Hourglass  
 The Hourglass section of the Feature Demo application shows how to use the most common [Hourglass APIs](/enterprise-browser/1-4/api/Hourglass/):  
 
-* Show – Tapping this button will show a loading indicator in the position denoted in the `Left` and `Top` coordinates field. If nothing is entered, it will show the loading indicator in the center of the screen  
-* Hide – Tapping this button will hide the loading indicator  
-* Left – Controls the left coordinates of the screen display used to position the loading indicator  
-* Stop – Controls the top coordinate of the screen display used to position the loading indicator
+* **Show –** displays a loading indicator in the position denoted in the "Left" and "Top" coordinates field. If nothing is entered, displays the loading indicator in the center of the screen. 
+* **Hide –** hides the loading indicator.  
+* **Left –** controls the left coordinates of the screen display used to position the loading indicator. 
+* **Stop –** controls the top coordinate of the screen display used to position the loading indicator. 
 
 ### Key Capture  
 The Key Capture section of the Feature Demo application shows how to use the most common [Key Capture APIs](/enterprise-browser/1-4/api/keycapture/):  
 
-* Capture Trigger – Tapping this button will show when the hardware scanner button is pressed along with the keycode that represents the button  
-* Capture Keys – Tapping this button will show the corresponding key code for any key pressed (hardware or software)  
+* **Capture Trigger –** displays an indicator when the hardware scanner button is pressed as well as the key code currently assigned to the scanner button.   
+* **Capture Keys –** displays the key code assigned to any hardware or software key that is pressed.
 
 ### Screen  
 The Screen section of the Feature Demo application shows how to use the most common [Screen Orientation APIs](/enterprise-browser/1-4/api/ScreenOrientation/):  
 
-* Left – Will force the device to rotate to a left handed orientation  
-* Right – Will force the device to rotate to a right handed orientation  
-* Upside Down – Will force the device to rotate to an upside down orientation  
-* Normal – Will force the device to rotate to a normal orientation  
-* Auto Rotate – Tapping this will toggle if auto rotation is enabled or disabled  
+* **Left –** forces the device to rotate to a left-handed orientation.  
+* **Right –** forces the device to rotate to a right-handed orientation.  
+* **Upside Down –** forces the device to rotate to an upside-down orientation.   
+* **Normal –** force the device to rotate to a normal orientation.  
+* **Auto Rotate –** toggles between auto-rotation enable/disable. 
 
 ### Signal  
 The Signal section of the Feature Demo application shows how to use the most common [Signal Indicators APIs](/enterprise-browser/1-4/api/signalIndicators):  
 
-* Show Icon – Tapping this button will show a Wi-Fi icon in the upper left hand corner. Control more aspects of how it is presented and its location by changing parameters within the code  
-* Hide Icon – Tapping this button will hide the Wi-Fi icon  
-* Start – Tapping this button will begin to monitor for Wi-Fi status events. For example when not being charged, it will show the Wi-Fi level  
-* Stop – Tapping this button will stop monitoring for Wi-Fi status events  
-* Status – This section will be populated with the data that comes from the signal event upon a change in status. It will only be displayed when the `Start` button has been tapped  
+* **Show Icon –** displays a Wi-Fi icon in the upper left-hand corner. Icon appearance and location can be configured by changing parameters within the code.  
+* **Hide Icon –** hides the Wi-Fi icon.  
+* **Start –** begins monitoring for Wi-Fi status events. For example, the Wi-Fi level is displayed when not being charged.
+* **Stop –** stops monitoring for Wi-Fi status events.  
+* **Status –** This section will be populated with the data that comes from the signal event upon a change in status. It will be displayed only after the "Start" button has been tapped.   
 
-> Note: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. It is advised to disable the monitoring of signal events by tapping `Stop` when wanting to view other features  
+> **Note**: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. to avoid this, press "Stop" to disable Signal-events monitoring before viewing other features.   
 
 ### Signature Capture  
 The Signature Capture section of the Feature Demo application shows how to use the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):  
 
 * **Show –** displays a full-screen signature capture widget; uses the Color and Width properties (can be customized). When returning from this widget, the status of the event will be displayed along with the image of the signature (if the user pressed the OK button).
 
-* **Background Color -** hex value string representing the background color of the signature capture area. For example, changing it to `#FF0000` will result in a red background. 
+* **Background Color -** enter a hex value string to specify the background color of the signature capture area. For example, changing it to `#FF0000` will result in a red background. 
 
-* **Pen Color ** hex value string that representing the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
+* **Pen Color ** enter a hex value string to specify the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
 
-* **Pen Width -** integer value representing pen-stroke thickness (in pixels). 
+* **Pen Width -** enter an integer value to specify the pen-stroke thickness (in pixels). 
 
 ### Timer  
 The Timer section of the Feature Demo application shows how to use the most common [Timer APIs](/enterprise-browser/1-4/api/Timer/):  
 
 * **Duration –** the length of time (in ms) to run an event while the timer is active. 
-* Start –** Tapping this button will start a timer to be fired at the duration interval.
-* Stop –** Tapping this button will stop the timer.
-* Status –** Will show when timer events have been started or stopped. 
+* **Start –** starts a timer to be fired at the duration interval.
+* **Stop –** stops the timer.
+* **Status –** indicates when timer events are started or stopped. 
 
 ### WebSQL  
 The WebSQL section of the Feature Demo application demonstrates basic functionality of the HTML5 WebSQL standard  
 
-* **Input –** Enter a string to be stored  
-* **Output –** Displays the data retrieved when tapping the `Fetch` button  
-* **Store –** Tapping this button will store the value in the `Input` field into WebSQL  
-* **Fetch –** Tapping this button will retrieve the value from WebSQL  
+* **Input –** enter a string to be stored. 
+* **Output –** displays the data retrieved when tapping the "Fetch" button  
+* **Store –** stores the value in the "Input" field into WebSQL.  
+* **Fetch –** retrieves the stored value from WebSQL.   
 
 ### WebStorage  
 The Web Storage section of the Feature Demo application demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs. This allows storage of basic Name/Value data pairs. 
@@ -188,7 +187,7 @@ When unzipping the contents of the Feature Demo download, the following folders 
 
 * **apis –** folder that contains individual `.html` files associated with each feature  
 * **featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API  
-* **img – folder that contains icons and images used in the demo  
+* **img –** folder that contains icons and images used in the demo  
 * **ebapi-modules.js –** Enterprise Browser core JavaScript api library  
 * **elements.js –** Enterprise Browser JavaScript library used by some of the APIs  
 * **rhoapi-modules.js –** Enterprise Browser JavaScript library used by some of the APIs  

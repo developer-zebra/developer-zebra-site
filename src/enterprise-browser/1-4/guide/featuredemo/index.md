@@ -168,14 +168,14 @@ The WebSQL section of the Feature Demo application demonstrates basic functional
 ### WebStorage  
 The Web Storage section of the Feature Demo application demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs. This allows storage of basic Name/Value data pairs. 
 
-* **LocalStorage Input –** a string to be stored using LocalStorage; remains resident after the app is closed
-* **LocalStorage Output –** displays the LocalStorage data retrieved when tapping the "Local Fetch" button
-* **SessionStorage Input –** a string to be stored using SessionStorage; does not persist after the app is closed 
-* **SessionStorage Output –** displays the SessionStorage data retrieved when tapping the "Local Fetch" button  
-* **Local Store –** stores the value in the "LocalStorage Input" field into LocalStorage  
-* **Local Fetch –** retrieves the value from LocalStorage  
-* **Session Store –** stores the value in the "SessionStorage Input" field into SessionStorage  
-* **Session Fetch –** retrieve the value from SessionStorage  
+* **LocalStorage Input –** a string to be stored using LocalStorage; remains resident after the app is closed.
+* **LocalStorage Output –** displays the LocalStorage data retrieved when tapping the "Local Fetch" button.
+* **SessionStorage Input –** a string to be stored using SessionStorage; does not persist after the app is closed.
+* **SessionStorage Output –** displays the SessionStorage data retrieved when tapping the "Local Fetch" button.
+* **Local Store –** stores the value in the "LocalStorage Input" field into LocalStorage.
+* **Local Fetch –** retrieves the value from LocalStorage.
+* **Session Store –** stores the value in the "SessionStorage Input" field into SessionStorage.
+* **Session Fetch –** retrieve the value from SessionStorage.
 
 ### Inspecting the Code  
 When unzipping the contents of the Feature Demo download, the following folders and files appear:  
@@ -185,25 +185,24 @@ When unzipping the contents of the Feature Demo download, the following folders 
 
 **Contents of the Feature Demo download**: 
 
-* **apis –** folder that contains individual `.html` files associated with each feature  
-* **featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API  
-* **img –** folder that contains icons and images used in the demo  
-* **ebapi-modules.js –** Enterprise Browser core JavaScript api library  
-* **elements.js –** Enterprise Browser JavaScript library used by some of the APIs  
-* **rhoapi-modules.js –** Enterprise Browser JavaScript library used by some of the APIs  
-* **feature-demo.html –** main application page that controls behavior of the Feature Demo application  
-* **style.css –** CSS file used for look and feel of the Feature Demo application  
+* **apis –** folder that contains individual `.html` files associated with each feature.
+* **featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API.
+* **img –** folder that contains icons and images used in the demo.
+* **ebapi-modules.js –** Enterprise Browser core JavaScript api library.
+* **elements.js –** Enterprise Browser JavaScript library used by some of the APIs.
+* **rhoapi-modules.js –** Enterprise Browser JavaScript library used by some of the APIs.  
+* **feature-demo.html –** main application page that controls behavior of the Feature Demo application.
+* **style.css –** CSS file used for look and feel of the Feature Demo application.
 
 To learn from the Feature Demo application, it is best to look at the individual HTML files located in the `/apis` folder. Notice the `SCRIPT` block that contains the associated JavaScript for performing the particular action. 
 
 ## Troubleshooting  
 Still having trouble getting the Feature Demo to work? Try the following:  
 
-* Make sure the device has the latest BSP available on the [Support Portal](https://www.zebra.com/enterprisesupport).
+* Check that the device has the latest available BSP from the [Zebra Support Portal](https://www.zebra.com/enterprisesupport).
 
-* Check the device's [Integrator Guide](https://www.zebra.com/enterprisesupport) for proper DataWedge configuration
+* Confirm that DataWedge is configured correctly. See the [DataWedge documentation](/datawedge/5-0/guide/about/) and the device's [Integrator Guide](https://www.zebra.com/enterprisesupport) for more information.
 
-* If the device won't display the Feature Demo Application screen, make sure the app's `Config.xml` has the right path to the start page  
+* If the device won't display the Feature Demo application screen, double-check that the &lt;StartPage&gt; parameter in the `Config.xml` contains the correct path to the start page.
 
-* Make sure that Wi-Fi on the device is enabled and connected
-
+* Check the Settings panel on the device to ensure that Wi-Fi is enabled and connected.

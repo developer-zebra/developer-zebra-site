@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices.
+The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices. Enabling the demo app required changes to the `Config.xml` file on the device that will run the app. See the [Config.xml Regerence](/enterprise-browser/1-4/guide/configref) for more information. 
 
 ### Showcased Capabilities  
   * Barcode scanning
@@ -28,40 +28,42 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 
 **Enable the on-device web server**:
 
-1. Go into `Config.xml` and add the following `XML` snippet right under `<Configuration>`:
+&#49;. Locate the `Config.xml` file on the device that will be running the Feature Demo: 
 
-		:::XML
-    <Congiguration>
-		<WebServer>
-			<Enabled value="1" />
-			<Port value="8082" />
-			<WebFolder value="/fd/" />
-			<Public value="1" />
-		</WebServer>   
+**Path to Config.xml file**: 
+  * **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/Config.xml`
+  * **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\Config.xml`
 
-  
-  **Path to Config.xml file**: 
-    * **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/Config.xml`
-    * **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\Config.xml`
+&#50;. Add the following lines to the `Config.xml` immediately under the `<Configuration>` tag, as below:
 
-2. In `Config.xml` change the start page value to:  
+      
+    :::xml
+    <Configuration>
+      <WebServer>
+    	 <Enabled value="1" />
+    	 <Port value="8082" />
+    	 <WebFolder value="/fd/" />
+    	 <Public value="1" />
+      </WebServer>
+
+
+&#51;. In `Config.xml` specify the start page value as below:  
 		
 		:::HTML
 
-	    <StarterPage value="http://127.0.0.1:8082/feature-demo.html" name="Menu"/>
+	    <StartPage value="http://127.0.0.1:8082/feature-demo.html" name="Menu"/>
 
-3. Create a folder called `fd` (case sensitive) in the root of the device SDCard. If it doesn't have an SDCard, create the folder in the internal memory partition.  
+&#52;. Create a folder called `fd` (case sensitive) in the root of the device's SDCard. If it doesn't have an SDCard, create the folder at the root level of the device's internal memory.  
 
-4. From the computer with Enterprise Browser installed, copy the contents of `c:/EnterpriseBrowser/Feature-Demo` to the newly created `fd` folder.  
+&#53;. From the computer with Enterprise Browser installed, copy the contents of `c:/EnterpriseBrowser/Feature-Demo` to the newly created `fd` folder.  
 
 	<img style="padding-left:40px;" src="http://i.imgur.com/Gk1rhab.png" width="600" height="480" border="10">
 
-5. On the device, launch the Enterprise Browser app. A screen similar to the image below appears, showing all Feature-Demo capabilities.   
+&#54;. On the device, launch the Enterprise Browser app. A screen similar to the image below appears, showing all Feature-Demo capabilities.   
 
   <img style="padding-left:40px;" src="http://i.imgur.com/N63KwJq.png" width="380" height="600" border="10"> 
 
-## Using Features
-
+## Demo Features
 To try a specific feature, click on the "hamburger" menu icon at the top left and select it. To quickly exit the Feature Demo App, use the `X` at the top right. 
 
 ### Barcode Scanning  

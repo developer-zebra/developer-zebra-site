@@ -241,7 +241,7 @@ On Windows, this will bring up a window that looks similar to the image below:
 &#53;. If a persistent runtime was installed, perform a cold boot/cleanPS on the device to activate the runtime.
 
 ## Launching the EB App 
-After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser 1.3 app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](/enterprise-browser/1-4/guide/configreference) for complete details.  
+After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](/enterprise-browser/1-4/guide/configreference) for complete details.  
 
 By default, a screen like the one below will appear: 
 

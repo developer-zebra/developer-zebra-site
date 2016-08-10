@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices. Enabling the demo app required changes to the `Config.xml` file on the device that will run the app. See the [Config.xml Regerence](/enterprise-browser/1-4/guide/configref) for more information. 
+The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices. Enabling the demo app required changes to the `Config.xml` file on the device that will run the app. See the [Config.xml Reference](/enterprise-browser/1-4/guide/configreference) for more information. 
 
 ### Showcased Capabilities  
   * Barcode scanning
@@ -75,7 +75,7 @@ The Barcode section of the Feature Demo application shows how to use the most co
 * **Start –** activates the scanner in "soft trigger" mode. Scanner remains active until a barcode is decoded or a timeout occurs. This button is active only after tapping the Enable button. 
 * **Stop –** disables the soft trigger mode.  
 
- **To Test the Scanner**
+**To Test the Scanner**
 
 1. Go to the Barcode section of the application  
 
@@ -138,7 +138,7 @@ The Signal section of the Feature Demo application shows how to use the most com
 * **Stop –** stops monitoring for Wi-Fi status events.  
 * **Status –** This section will be populated with the data that comes from the signal event upon a change in status. It will be displayed only after the "Start" button has been tapped.   
 
-> **Note**: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. to avoid this, press "Stop" to disable Signal-events monitoring before viewing other features.   
+> **Note**: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. To avoid this, press "Stop" to disable Signal-events monitoring before viewing other features.   
 
 ### Signature Capture  
 The Signature Capture section of the Feature Demo application shows how to use the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):  
@@ -147,7 +147,7 @@ The Signature Capture section of the Feature Demo application shows how to use t
 
 * **Background Color -** enter a hex value string to specify the background color of the signature capture area. For example, changing it to `#FF0000` will result in a red background. 
 
-* **Pen Color ** enter a hex value string to specify the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
+* **Pen Color -** enter a hex value string to specify the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
 
 * **Pen Width -** enter an integer value to specify the pen-stroke thickness (in pixels). 
 
@@ -163,7 +163,7 @@ The Timer section of the Feature Demo application shows how to use the most comm
 The WebSQL section of the Feature Demo application demonstrates basic functionality of the HTML5 WebSQL standard  
 
 * **Input –** enter a string to be stored. 
-* **Output –** displays the data retrieved when tapping the "Fetch" button  
+* **Output –** displays the data retrieved when tapping the "Fetch" button.  
 * **Store –** stores the value in the "Input" field into WebSQL.  
 * **Fetch –** retrieves the stored value from WebSQL.   
 

@@ -8,6 +8,8 @@ automenu:
       items:
         - title: Enterprise Browser Setup Guide
           url: setup
+        - title: App Optimization
+          url: optimization
     - title: App Configuration
       items:
         - title: Config Editor Utility
@@ -38,8 +40,6 @@ automenu:
           url: viewport
     - title: Debugging
       items:
-        - title: App Optimization
-          url: optimization
         - title: Logging
           url: logging
         - title: On-Device Debugging

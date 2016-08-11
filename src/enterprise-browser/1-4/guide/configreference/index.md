@@ -828,7 +828,7 @@ Defines the amount of time (in milliseconds) the application should wait to esta
 
 ## Screen orientation
 ### AutoRotate
-Controls automatic rotation of screen orientation. When disabled, the orientation of the screen will not change when the device is rotated. 
+Controls automatic rotation of screen orientation between portrait and landscape modes. When disabled, the orientation of the display will not change when the device is rotated. 
 
 **Possible Values**:
 
@@ -1242,6 +1242,8 @@ Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only
 ### ResizeOnSIP
 **Applies to Android and Windows Mobile only**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. 
 
+**Note: On Windows Mobile devices**, screen rotation from portrait to landscape mode can sometimes cause the SIP to be hidden from view. To avoid this issue, Zebra recommends that the [AutoRotate](/enterprise-browser/1-4/guide/configreference/#autorotate) parameter for screen orientation be disabled.  
+
 **Possible Values**:
 
 * 0 - Disabled
@@ -1252,7 +1254,7 @@ Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only
 	<ResizeOnSIP value="1"/>
 
 ### EnableSIP
-**Applies to Enterprise Browser 1.2 for Android only**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, the SIP is controlled through the [SIP API](/enterprise-browser/1-4/api/Sip). On Windows Mobile/CE, soft input can be disabled by manipulating the top and left position parameters of the SIP module to position it off the screen, thereby making it inaccessible to the user.
+**Applies to Enterprise Browser 1.2 for Android only**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, use the [SIP API](/enterprise-browser/1-4/api/Sip). On Windows Mobile/CE, use the top and left position parameters of the SIP module to position it off the screen and make it inaccessible to the user.
 
 **Possible Values**:
 

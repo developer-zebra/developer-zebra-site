@@ -4,7 +4,7 @@ description: These guides explain the concepts behind all major Enterprise Brows
 layout: list-apis.html
 automenu:
   items:
-    - title: Setup and Removal
+    - title: Installation and Removal
       items:
         - title: Enterprise Browser Setup Guide
           url: setup
@@ -26,6 +26,8 @@ automenu:
           url: datawedge
         - title: DOM Injection
           url: DOMinjection
+        - title: Feature Demo app
+          url: featuredemo
         - title: Printing
           url: printingGuide
         - title: Key Remapping
@@ -36,6 +38,8 @@ automenu:
           url: viewport
     - title: Debugging
       items:
+        - title: App Optimization
+          url: optimization
         - title: Logging
           url: logging
         - title: On-Device Debugging

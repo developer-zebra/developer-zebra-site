@@ -7,7 +7,7 @@ layout: guide.html
 ## Overview 
 Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 
-### Platform Support
+#### Platform Support
 Windows is required for full Enterprise Browser development. Enterprise Browser 1.3 and higher packages can be downloaded as a Mac OS X disk image (.dmg) file that allows Mac users to: 
 
 * Copy EnterpriseBrowser `.apk` files to Android devices
@@ -18,7 +18,7 @@ Windows is required for full Enterprise Browser development. Enterprise Browser 
 
 <!-- * Copy EnterpriseBrowser .cab files to Windows Mobile/CE devices -->
 
-### Prerequisites
+#### Prerequisites
 The install Enterpriise Browser and build EB apps (Windows only), the following is required: 
 
 * A computer running Windows or Mac OS X (with a subset of functions as listed above)
@@ -28,7 +28,7 @@ The install Enterpriise Browser and build EB apps (Windows only), the following 
 
 _**Note**: Mobile Device Center replaced Microsoft ActiveSync starting with Windows Vista. Installation from Windows XP systems requires ActiveSync_.
 
-### Removal From Devices
+#### Removal From Devices
 When uninstalled using the Android App Manager, Enterprise Browser and its related components will be removed completely under most circumstances. The two known exceptions and recommendations are listed below). **Zebra recommends confirming the completeness of uninstallations for each device scenario**. 
  
 **Incomplete removal scenarios**:

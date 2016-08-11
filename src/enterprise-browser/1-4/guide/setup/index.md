@@ -8,33 +8,38 @@ layout: guide.html
 Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 
 #### Platform Support
-Windows is required for full Enterprise Browser development. Enterprise Browser 1.3 and higher packages can be downloaded as a Mac OS X disk image (.dmg) file that allows Mac users to: 
+**Windows is required for full Enterprise Browser development**. For Mac OS X users, Enterprise Browser 1.3 and higher can be downloaded as a disk image (.dmg), allowing a subset of administrative functions listed below. 
+
+**Mac OS X Functionality**: 
 
 * Copy EnterpriseBrowser `.apk` files to Android devices
-* Copy EnterpriseBrowser `.cab` files to an MDM system for mass deployment
-* Create shortcuts to Android apps using the EB native widget (present in the device after installing the EB app)
-* Access the EB demo app
+* Copy EnterpriseBrowser `.cab` files to [Stage Now](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
+* Create shortcuts to Android apps using the EB native widget (pushed to the device as part of EB installation)
+* Access the Enterprise Browser [Feature Demo](/enterprise-browser/1-4/guide/featuredemo/) app
 * Easily link to EB online help
 
 <!-- * Copy EnterpriseBrowser .cab files to Windows Mobile/CE devices -->
 
 #### Prerequisites
-The install Enterpriise Browser and build EB apps (Windows only), the following is required: 
+Installing Enterprise Browser and building EB apps requires the following: 
 
-* A computer running Windows or Mac OS X (with a subset of functions as listed above)
-* USB driver for targeting Zebra devices (required on Windows only)
+* A computer running Windows
+* One or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) connected to the computer (as below) 
+* USB driver for targeting Zebra devices installed
 * Android Debug Bridge (if targeting Android devices)
-* Microsoft Mobile Device Center (if targeting Windows Mobile/CE devices; included with Windows 7)
+* Microsoft Mobile Device Center (if targeting Windows Mobile/CE devices)
 
-_**Note**: Mobile Device Center replaced Microsoft ActiveSync starting with Windows Vista. Installation from Windows XP systems requires ActiveSync_.
+_**Note: Microsoft Mobile Device Center** replaced ActiveSync starting with Windows Vista. It is usually included with the operating system, but sometimes must be downloaded separately. Installation of Enterprise Browser from Windows XP systems requires ActiveSync_.
 
 #### Removal From Devices
-When uninstalled using the Android App Manager, Enterprise Browser and its related components will be removed completely under most circumstances. The two known exceptions and recommendations are listed below). **Zebra recommends confirming the completeness of uninstallations for each device scenario**. 
- 
+When Enterprise Browser is uninstalled from an Android device using the Android App Manager, EB and its related components will under most circumstances be removed properly. Known exceptions are listed below. 
+
 **Incomplete removal scenarios**:
 
-* **TC55 with Jelly Bean -** Enterprise Browser files remain if installed on internal memory. Installation on SD Card recommended.  
-* **MC32 with Jelly Bean -** Enterprise Browser files remain if installed on internal memory. Installation on SD Card recommended. 
+* **TC55 Jelly Bean -** with Enterprise Browser installed on internal memory. Enterprise Browser files remain after uninstallation. Install to SD Card instead.   
+* **MC32 Jelly Bean -**  with Enterprise Browser installed on internal memory. Enterprise Browser files remain after uninstallation. Install to SD Card instead. 
+
+> **Zebra recommends that uninstallation be verified for each device scenario** before any process is automated using [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
 ### Windows Installation
 If upgrading from a prior version of Enterprise Browser, the older version must be manually uninstalled before installing the new one (see image, below). 

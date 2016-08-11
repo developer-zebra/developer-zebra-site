@@ -7,8 +7,8 @@ layout: guide.html
 ## Overview 
 Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 
-####Platform Support
-Windows is required for full Enterprise Browser development, but the tools offer some support for Mac OS X systems. Enterprise Browser 1.3 and higher packages can be downloaded as a disk image (.dmg) file and permit Mac users to: 
+### Platform Support
+Windows is required for full Enterprise Browser development. Enterprise Browser 1.3 and higher packages can be downloaded as a Mac OS X disk image (.dmg) file that allows Mac users to: 
 
 * Copy EnterpriseBrowser `.apk` files to Android devices
 * Copy EnterpriseBrowser `.cab` files to an MDM system for mass deployment
@@ -27,6 +27,14 @@ The install Enterpriise Browser and build EB apps (Windows only), the following 
 * Microsoft Mobile Device Center (if targeting Windows Mobile/CE devices; included with Windows 7)
 
 _**Note**: Mobile Device Center replaced Microsoft ActiveSync starting with Windows Vista. Installation from Windows XP systems requires ActiveSync_.
+
+### Removal From Devices
+When uninstalled using the Android App Manager, Enterprise Browser and its related components will be removed completely under most circumstances. The two known exceptions and recommendations are listed below). **Zebra recommends confirming the completeness of uninstallations for each device scenario**. 
+ 
+**Incomplete removal scenarios**:
+
+* **TC55 with Jelly Bean -** Enterprise Browser files remain if installed on internal memory. Installation on SD Card recommended.  
+* **MC32 with Jelly Bean -** Enterprise Browser files remain if installed on internal memory. Installation on SD Card recommended. 
 
 ### Windows Installation
 If upgrading from a prior version of Enterprise Browser, the older version must be manually uninstalled before installing the new one (see image, below). 

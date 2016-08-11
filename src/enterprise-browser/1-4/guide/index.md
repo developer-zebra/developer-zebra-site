@@ -4,7 +4,7 @@ description: These guides explain the concepts behind all major Enterprise Brows
 layout: list-apis.html
 automenu:
   items:
-    - title: Initial Installation
+    - title: Setup and Removal
       items:
         - title: Enterprise Browser Setup Guide
           url: setup

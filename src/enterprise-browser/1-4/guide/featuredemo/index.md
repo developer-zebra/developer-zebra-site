@@ -63,6 +63,8 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 
   <img style="padding-left:40px;" src="http://i.imgur.com/N63KwJq.png" width="380" height="600" border="10"> 
 
+-----
+
 ## Demo Features
 To try a specific feature, click on the "hamburger" menu icon at the top left and select it. To quickly exit the Feature Demo App, use the `X` at the top right. 
 
@@ -93,6 +95,9 @@ The Barcode section of the Feature Demo application shows how to use the most co
 
 	<img style="padding-left:0px;" src="http://i.imgur.com/vHrV660.png" width="380" height="600" border="10">  
 
+
+-----
+
 ### Battery  
 The Battery section of the Feature Demo application shows how to use the most common [Battery APIs](/enterprise-browser/1-4/api/battery/):  
 
@@ -101,10 +106,16 @@ The Battery section of the Feature Demo application shows how to use the most co
 * **Start –** begins to monitor for battery status events. For example, when not being charged, battery level is displayed. 
 * **Stop –** stops monitoring for battery status events. 
 
+
+-----
+
 ### Camera  
 The Camera section of the Feature Demo application shows how to use the most common [Imager APIs](/enterprise-browser/1-4/api/Imager/):  
 
 * **Show Camera –** activates the camera and allows a picture to be taken. Displays status information after performing the action. 
+
+
+-----
 
 ### Hourglass  
 The Hourglass section of the Feature Demo application shows how to use the most common [Hourglass APIs](/enterprise-browser/1-4/api/Hourglass/):  
@@ -114,11 +125,17 @@ The Hourglass section of the Feature Demo application shows how to use the most 
 * **Left –** controls the left coordinates of the screen display used to position the loading indicator. 
 * **Stop –** controls the top coordinate of the screen display used to position the loading indicator. 
 
+
+-----
+
 ### Key Capture  
 The Key Capture section of the Feature Demo application shows how to use the most common [Key Capture APIs](/enterprise-browser/1-4/api/keycapture/):  
 
 * **Capture Trigger –** displays an indicator when the hardware scanner button is pressed as well as the key code currently assigned to the scanner button.   
 * **Capture Keys –** displays the key code assigned to any hardware or software key that is pressed.
+
+
+-----
 
 ### Screen  
 The Screen section of the Feature Demo application shows how to use the most common [Screen Orientation APIs](/enterprise-browser/1-4/api/ScreenOrientation/):  
@@ -129,16 +146,36 @@ The Screen section of the Feature Demo application shows how to use the most com
 * **Normal –** force the device to rotate to a normal orientation.  
 * **Auto Rotate –** toggles between auto-rotation enable/disable. 
 
-### Signal  
-The Signal section of the Feature Demo application shows how to use the most common [Signal Indicators APIs](/enterprise-browser/1-4/api/signalIndicators):  
 
-* **Show Icon –** displays a Wi-Fi icon in the upper left-hand corner. Icon appearance and location can be configured by changing parameters within the code.  
+-----
+
+### Signal  
+The Signal section of the Feature Demo application demonstrates usage of the most common [Signal Indicator APIs](/enterprise-browser/1-4/api/signalIndicators):  
+
+* signalStrength
+* essid
+* macAddress
+* adapterName
+* dhcpServer
+* dhcpStatic (Windows Mobile only)
+* gateway
+* ipAddress
+* rssi
+* subnetMask
+* wins (Windows Mobile only)
+
+* **Show Icon –** displays a Wi-Fi icon in the upper left-hand corner. Icon appearance and location can be configured by changing parameters within the code. 
 * **Hide Icon –** hides the Wi-Fi icon.  
-* **Start –** begins monitoring for Wi-Fi status events. For example, the Wi-Fi level is displayed when not being charged.
+* **Start –** retrieves the current signal status. On Windows Mobile/CE devices, if a callback is provided to retrieve the signal, the signal will be called according to the specified refreshInterval. On Android, the callback will be invoked whenever there's a change in one of the signal values listed above.  
 * **Stop –** stops monitoring for Wi-Fi status events.  
 * **Status –** This section will be populated with the data that comes from the signal event upon a change in status. It will be displayed only after the "Start" button has been tapped.   
+  
+All callback information will be updated in the respective field(s) on the Signal Indicator page.
 
 > **Note**: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. To avoid this, press "Stop" to disable Signal-events monitoring before viewing other features.   
+
+
+-----
 
 ### Signature Capture  
 The Signature Capture section of the Feature Demo application shows how to use the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):  
@@ -151,13 +188,19 @@ The Signature Capture section of the Feature Demo application shows how to use t
 
 * **Pen Width -** enter an integer value to specify the pen-stroke thickness (in pixels). 
 
+
+-----
+
 ### Timer  
 The Timer section of the Feature Demo application shows how to use the most common [Timer APIs](/enterprise-browser/1-4/api/Timer/):  
 
-* **Duration –** the length of time (in ms) to run an event while the timer is active. 
-* **Start –** starts a timer to be fired at the duration interval.
+* **Duration –** the length of time (in ms) an event will run. Must be specified before timer is started. 
+* **Start –** starts a timer to run the length of time specified in the Duration.
 * **Stop –** stops the timer.
-* **Status –** indicates when timer events are started or stopped. 
+* **Status –** indicates whether a timer event is started or stopped. 
+
+
+-----
 
 ### WebSQL  
 The WebSQL section of the Feature Demo application demonstrates basic functionality of the HTML5 WebSQL standard  
@@ -166,6 +209,9 @@ The WebSQL section of the Feature Demo application demonstrates basic functional
 * **Output –** displays the data retrieved when tapping the "Fetch" button.  
 * **Store –** stores the value in the "Input" field into WebSQL.  
 * **Fetch –** retrieves the stored value from WebSQL.   
+
+
+-----
 
 ### WebStorage  
 The Web Storage section of the Feature Demo application demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs. This allows storage of basic Name/Value data pairs. 
@@ -178,6 +224,9 @@ The Web Storage section of the Feature Demo application demonstrates the basic f
 * **Local Fetch –** retrieves the value from LocalStorage.
 * **Session Store –** stores the value in the "SessionStorage Input" field into SessionStorage.
 * **Session Fetch –** retrieve the value from SessionStorage.
+
+
+-----
 
 ### Inspecting the Code  
 When unzipping the contents of the Feature Demo download, the following folders and files appear:  
@@ -197,6 +246,9 @@ When unzipping the contents of the Feature Demo download, the following folders 
 * **style.css –** CSS file used for look and feel of the Feature Demo application.
 
 To learn from the Feature Demo application, it is best to look at the individual HTML files located in the `/apis` folder. Notice the `SCRIPT` block that contains the associated JavaScript for performing the particular action. 
+
+
+-----
 
 ## Troubleshooting  
 Still having trouble getting the Feature Demo to work? Try the following:  

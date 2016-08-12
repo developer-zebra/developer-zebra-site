@@ -21,8 +21,8 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 [See all supported devices](../about#mobile)
 
 ####New APIs
-  * **[EzNFC API](/enterprise-browser/1-4/api/EzNFC)**
-  * **[SettingsButton API](/enterprise-browser/1-4/api/settingsButton)**
+  * **[EzNFC API](../api/EzNFC)**
+  * **[SettingsButton API](../../settingsButton)**
 
 ####New Features
 * **[Keycode Mapping](../keycapture)** allows a custom set of Android keycode values to be assigned from a file, replacing some or all of the system's default keycode values. **Applies to Android only**.

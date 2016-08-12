@@ -93,7 +93,7 @@ The [Config.xml](../configreference) file needs to be updated:
 
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
-* NOSIP not supported. The NOSIP control was a solution for placing a text box onto the page that did not trigger the Soft Input Panel. This predates the APIs that now allow us to hide the SIP or place it off screen. There is no support for NOSIP on Enterprise Browser. To disable the SIP, see the [disabling the SIP](/enterprise-browser/1-4/api-Sip?Disabling%20the%20SIP) section in the SIP API reference.
+* NOSIP not supported. The NOSIP control was a solution for placing a text box onto the page that did not trigger the Soft Input Panel. This predates the APIs that now allow us to hide the SIP or place it off screen. There is no support for NOSIP on Enterprise Browser. To disable the SIP, see the [disabling the SIP](../..-Sip?Disabling%20the%20SIP) section in the SIP API reference.
 * [FitToScreenEnabled](../configreference?FitToScreenEnabled) not supported. This is a function for Windows Mobile only.
 
 ## Windows Mobile/CE using IE
@@ -145,7 +145,7 @@ The [Config.xml](../configreference) file needs to be updated:
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
 * [PageZoom](../configreference?PageZoom) is not supported on IE. This web view supports text zoom only.
-* Javascript events onkeydown, onkeypress, onkeyup are not supported in Windows mobile devices running Internet explorer. Use EnterpriseBrowser [Keycapture APIs](/enterprise-browser/1-4/api/keycapture) instead to capture the hardware keypresses.
+* Javascript events onkeydown, onkeypress, onkeyup are not supported in Windows mobile devices running Internet explorer. Use EnterpriseBrowser [Keycapture APIs](../../keycapture) instead to capture the hardware keypresses.
 
 #### Scrollbars/Fingerscrolling
 In order to support backwards compatibility, PocketBrowser was forced to use PIE (IE4) for WM6.5 devices even though IE6 was available. This was because developers at the time were reliant on the scrollbars, which Microsoft dropped in IE6 on Windows Mobile. As a result of that decision, PIE is still used on WM today, rather than IE6. IE6 on CE supports scrollbars and is more capable web view.The Scroll options have changed in the configuration file to accommodate more options since CE7 has introduced Finger Scrolling.
@@ -195,7 +195,7 @@ The [Config.xml](../configreference) file needs to be updated:
 
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
-* NOSIP not supported. The NOSIP control was a solution for placing a text box onto the page that did not trigger the Soft Input Panel. This predates the APIs that now allow us to hide the SIP or place it off screen. There is no support for NOSIP on Enterprise Browser. To disable the SIP, see the [disabling the SIP](/enterprise-browser/1-4/api-Sip?Disabling%20the%20SIP) section in the SIP API reference.
+* NOSIP not supported. The NOSIP control was a solution for placing a text box onto the page that did not trigger the Soft Input Panel. This predates the APIs that now allow us to hide the SIP or place it off screen. There is no support for NOSIP on Enterprise Browser. To disable the SIP, see the [disabling the SIP](../..-Sip?Disabling%20the%20SIP) section in the SIP API reference.
 * [FitToScreenEnabled](../configreference?FitToScreenEnabled) not supported. This is a function for Windows Mobile only.
 * EMML profiles do not work.
 * Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.

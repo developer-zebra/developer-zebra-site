@@ -69,7 +69,7 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 To try a specific feature, click on the "hamburger" menu icon at the top left and select it. To quickly exit the Feature Demo App, use the `X` at the top right. 
 
 ### Barcode Scanning  
-Demonstrates use of the most common [Barcode APIs](/enterprise-browser/1-4/api/barcode/):
+Demonstrates use of the most common [Barcode APIs](../../barcode/):
 
 **Enumerate –** scans the device for all capable barcode interfaces. These might include 2D imager, laser, and camera. Tap in a scanner type to Enable or Disable that scanner.  
 
@@ -102,7 +102,7 @@ Demonstrates use of the most common [Barcode APIs](/enterprise-browser/1-4/api/b
 -----
 
 ### Battery  
-Demonstrates use of the most common [Battery APIs](/enterprise-browser/1-4/api/battery/):  
+Demonstrates use of the most common [Battery APIs](../../battery/):  
 
 **Show Icon –** displays a battery icon in the upper left-hand corner. Change parameters within the code to control more aspects of icon presentation and location.  
 
@@ -115,14 +115,14 @@ Demonstrates use of the most common [Battery APIs](/enterprise-browser/1-4/api/b
 -----
 
 ### Camera  
-Demonstrates use of most common [Imager APIs](/enterprise-browser/1-4/api/Imager/):  
+Demonstrates use of most common [Imager APIs](../../Imager/):  
 
 **Show Camera –** activates the camera and allows a picture to be taken. Displays status information after performing the action. 
 
 -----
 
 ### Hourglass  
-Demonstrates use of the most common [Hourglass APIs](/enterprise-browser/1-4/api/Hourglass/):  
+Demonstrates use of the most common [Hourglass APIs](../../Hourglass/):  
 
 **Show –** displays a "loading" indicator in the position denoted in the "Left" and "Top" coordinates field. If nothing is entered, displays the loading indicator in the center of the screen. 
 
@@ -135,7 +135,7 @@ Demonstrates use of the most common [Hourglass APIs](/enterprise-browser/1-4/api
 -----
 
 ### Key Capture  
-Demonstrates use of the most common [Key Capture APIs](/enterprise-browser/1-4/api/keycapture/):  
+Demonstrates use of the most common [Key Capture APIs](../../keycapture/):  
 
 **Capture Trigger –** displays an indicator when the hardware scanner button is pressed as well as the key code currently assigned to the scanner button.   
 **Capture Keys –** displays the key code assigned to any hardware or software key that is pressed.
@@ -143,7 +143,7 @@ Demonstrates use of the most common [Key Capture APIs](/enterprise-browser/1-4/a
 -----
 
 ### Screen  
-Demonstrates use of the most common [Screen Orientation APIs](/enterprise-browser/1-4/api/ScreenOrientation/):  
+Demonstrates use of the most common [Screen Orientation APIs](../../ScreenOrientation/):  
 
 **Left –** forces the device to rotate to a left-handed orientation.  
 
@@ -158,7 +158,7 @@ Demonstrates use of the most common [Screen Orientation APIs](/enterprise-browse
 -----
 
 ### Signal  
-Demonstrates use of the most common Signals in the [Signal Indicators API](/enterprise-browser/1-4/api/signalIndicators):  
+Demonstrates use of the most common Signals in the [Signal Indicators API](../../signalIndicators):  
 
 * **signalStrength**
 * **essid**
@@ -189,7 +189,7 @@ All callback information will be updated in the respective field(s) on the Signa
 -----
 
 ### Signature Capture  
-Demonstrates use of the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):
+Demonstrates use of the most common [Signature APIs](../../signature/):
 
 **Show –** displays a full-screen signature capture widget; uses the Color and Width properties (can be customized). When returning from this widget, the status of the event will be displayed along with the image of the signature (if the user pressed the OK button).
 
@@ -202,7 +202,7 @@ Demonstrates use of the most common [Signature APIs](/enterprise-browser/1-4/api
 -----
 
 ### Timer  
-Demonstrates use of the most common [Timer APIs](/enterprise-browser/1-4/api/Timer/):  
+Demonstrates use of the most common [Timer APIs](../../Timer/):  
 
 **Duration –** the length of time (in ms) an event will run. Must be specified before timer is started. 
 

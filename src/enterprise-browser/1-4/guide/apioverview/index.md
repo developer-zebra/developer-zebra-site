@@ -7,7 +7,7 @@ layout: guide.html
 
 ##Overview
 
-Enterprise Browser contains a runtime environment inside which a company's new or legacy HTML and JavaScript application pages and logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide provides an overview and basic guidance for using the APIs. The capabilities of individual APIs are detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
+Enterprise Browser contains a runtime environment inside which a company's new or legacy HTML and JavaScript application pages and logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide provides an overview and basic guidance for using the APIs. The capabilities of individual APIs are detailed in the [Enterprise Browser API Guide](../../). 
 
 See the [Migration Guides](../) for information about accessing PocketBrowser, RhoElements and other legacy APIs. 
 

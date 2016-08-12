@@ -22,7 +22,7 @@ content-items:
     level: 4
     title: Hello EB Tutorial
     text: A step-by-step guide for building a simple Enterprise Browser app from scratch.
-    url: ../../tutorial/helloeb
+    url: ../../api/tutorial/helloeb
   - type: section
     level: 4
     title: Feature Demo

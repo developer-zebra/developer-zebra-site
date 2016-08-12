@@ -403,7 +403,7 @@ Specifies the Category under which the receiver is to be registered. There can b
 ## DebugButtons
 
 ### DebugButtonsEnabled
-When enabled, presents a set of controls useful for development and debugging purposes. **Note: When debug buttons are enabled**, the [Gesture API](../../Gesture) might not function as expected, and screen distortion might be displayed while scrolling on CE devices that use the IE rendering engine. 
+When enabled, presents a set of controls useful for development and debugging purposes. **Note: When debug buttons are enabled**, the [Gesture API](../../api/api/Gesture) might not function as expected, and screen distortion might be displayed while scrolling on CE devices that use the IE rendering engine. 
 
 **Possible Values**:
 
@@ -1249,7 +1249,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<ResizeOnSIP value="1"/>
 
 ### EnableSIP
-**Applies to Enterprise Browser 1.2 for Android only**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, use the [SIP API](../../Sip). On Windows Mobile/CE, use the top and left position parameters of the SIP module to position it off the screen and make it inaccessible to the user.
+**Applies to Enterprise Browser 1.2 for Android only**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, use the [SIP API](../../api/Sip). On Windows Mobile/CE, use the top and left position parameters of the SIP module to position it off the screen and make it inaccessible to the user.
 
 **Note: On devices running Windows CE 6**, screen distortion might be displayed when scrolling while the SIP module is enabled. 
 
@@ -1289,7 +1289,7 @@ Controls whether scanner will be automatically disabled when navigating away fro
 	<DisableScannerDuringNavigation value="1"/>
 
 ### DisableScannerInApp
-Used to disable barcode scanning capabilities for a previous scanner API. Does not apply to the [common Barcode API](../../barcode), and will not effect the behavior of barcode scanning in the License dialog. Supported on WM/CE with IE or Zebra Webkit. Note: **The scanner will not be disabled if this parameter does not exist or does not contain a value**.
+Used to disable barcode scanning capabilities for a previous scanner API. Does not apply to the [common Barcode API](../../api/barcode), and will not effect the behavior of barcode scanning in the License dialog. Supported on WM/CE with IE or Zebra Webkit. Note: **The scanner will not be disabled if this parameter does not exist or does not contain a value**.
 
 **Supported Platforms**
 
@@ -1386,7 +1386,7 @@ Specifies a .wav file to be played when the Imager captures an image. File must 
 ## GUI
 
 ### SignalRefresh
-Specifies the refresh rate (in milliseconds) of the signal display. See the [Signal API](../../signalindicators) for more information. 
+Specifies the refresh rate (in milliseconds) of the signal display. See the [Signal API](../../api/signalindicators) for more information. 
 
 **Possible Values**:
 
@@ -1640,7 +1640,7 @@ Permits the selection of a rendering engine (IE or Webkit) when deploying a Webk
 
 ## Tab instance
 ### NewTabPhysicalMemLimit
-Controls whether a new Tab will be created using the [NativeTabbar.create API](../../NativeTabbar) when physical memory percentage hits a specific threshold. For example, if set to 80, new tabs will stop being created when physical memory usage on the device reaches or exceeds 80 percent the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
+Controls whether a new Tab will be created using the [NativeTabbar.create API](../../api/NativeTabbar) when physical memory percentage hits a specific threshold. For example, if set to 80, new tabs will stop being created when physical memory usage on the device reaches or exceeds 80 percent the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
 
 **Possible Values**:
 
@@ -1651,7 +1651,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 	<NewTabPhysicalMemLimit value="50"/>
 
 ### NewTabVirtualMemLimit
-Controls whether a new Tab will be created using the [NativeTabbar.create API](../../NativeTabbar) when a virtual memory usage percentage is hit. For example, if set to 80, new tabs will stop being created when the virtual memory usage reaches or exceeds 80 percent of the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
+Controls whether a new Tab will be created using the [NativeTabbar.create API](../../api/NativeTabbar) when a virtual memory usage percentage is hit. For example, if set to 80, new tabs will stop being created when the virtual memory usage reaches or exceeds 80 percent of the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
 
 **Possible Values**:
 
@@ -1723,7 +1723,7 @@ Controls whether HTTP connections will be maintained between requests. When enab
 	<KeepAlive value="1"/>
 
 ## usedwforscanning
-**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
+**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
 
 **Possible Values**:
 
@@ -1764,14 +1764,14 @@ The table below shows the behavior of Enterprise Browser when function keys are 
 		<th>Enable Function Key = TRUE</th>
 		<td valign="top">
 			<ul>
-				<li>All Function Keys <b>can</b> be captured by the <a href="../../keycapture">Key Capture Module</a>
+				<li>All Function Keys <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
 				<li>Function Key will <b>not</b> have its default Operating system behavior
 			</ul>
 		</td>
 		<td valign="top">
 			<ul>
-				<li>Function Keys with default OS behavior <b>can not</b> be captured by the <a href="../../keycapture">Key Capture Module</a>
-				<li>Function Keys without default OS behavior <b>can</b> be captured by the <a href="../../keycapture">Key Capture Module</a>
+				<li>Function Keys with default OS behavior <b>can not</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
+				<li>Function Keys without default OS behavior <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
 				<li>Function Key <b>will</b> have its default Operating system behavior (if any)
 			</ul>
 		</td>
@@ -1781,13 +1781,13 @@ The table below shows the behavior of Enterprise Browser when function keys are 
 		<th>Enable Function Key = FALSE</th>
 		<td valign="top">
 			<ul>
-				<li>All Function Keys <b>can</b> be captured by the <a href="../../keycapture">Key Capture Module</a>
+				<li>All Function Keys <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
 				<li>Function Key will <b>not</b> have its default Operating system behavior
 			</ul>
 		</td>
 		<td valign="top">
 			<ul>
-				<li>All Function Keys <b>can not</b> be captured by the <a href="../../keycapture">Key Capture Module</a>
+				<li>All Function Keys <b>can not</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
 				<li>Function Key will <b>not</b> have its default Operating system behavior (if any)</li>
 			</ul>
 		</td>

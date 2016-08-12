@@ -16,7 +16,7 @@ Shortcut Utility is included with Zebra Enterprise Browser 1.3.
 >**IMPORTANT: This tool relies on settings in the Config.xml**, a device-resident file that controls all runtime settings for Enterprise Browser. For help editing Config.xml files, please refer to the [Config Editor utility guide](../ConfigEditor) and the [Config.xml Reference](../configreference). 
 
 ### QUICK STEPS
-1. Use these instructions only after [installing Enterprise Browser](..-setup) (version 1.3 is required). 
+1. Use these instructions only after [installing Enterprise Browser](../setup) (version 1.3 is required). 
 2. Open Shortcut Utility and **select a platform** (Android or Windows Mobile/CE).
 3. **Select Default or Custom** Config.xml (if Custom, navigate to the file).
 4. **Enter a name** for the shortcut.
@@ -165,7 +165,7 @@ Shortcut icons will be visible to the user in the device's main application area
 
 ## Troubleshooting
 
-Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](..-setup?Connections)**. 
+Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](..-setup#connections)**. 
 
 ![img](../../images/Utilities/Shortcut_Creator_05.jpg)
 

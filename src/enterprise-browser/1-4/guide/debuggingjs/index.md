@@ -6,7 +6,7 @@ layout: guide.html
 ---
 ## Overview
 
-Just as debugging should be thought of as a vital part of every development cycle, on-device debugging should be part of any effective testing regimen. Although much can be accomplished using emulators and an IDE, applications often behave differently when running on hardware, and features such as [Barcode](../../api/barcode) scanning are impossible to test without the use of physical hardware to perform the scan and acquire the data.
+Just as debugging should be thought of as a vital part of every development cycle, on-device debugging should be part of any effective testing regimen. Although much can be accomplished using emulators and an IDE, applications often behave differently when running on hardware, and features such as [Barcode](../../api/api/barcode) scanning are impossible to test without the use of physical hardware to perform the scan and acquire the data.
 
 This guide includes instructions for enabling debugging on an Android device and describes three methods of debugging Enterprise Browser apps while they're running on a device:  
 
@@ -66,11 +66,11 @@ If you haven't already done so, **connect your device to an available USB port o
 
 1. Open a browser window and **enter 'chrome://inspect'** in the address bar. You should see a screen similar the one above.
 
-2. **Check the 'Discover USB Devices' checkbox**. Your mobile device should appear along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)). 
+2. **Check the 'Discover USB Devices' checkbox**. Your mobile device should appear along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../api/guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../api/guide/setup)). 
 
 3. **Tap OK on the device** to complete the connection
 
-4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)) for that procedure.
+4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../api/guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../api/guide/setup)) for that procedure.
 
 5. At this point you should be ready to begin debugging. Once your app is deployed and running on the device, the chrome://inspect page should look something like the one shown below, with your device and a link to its debug-enabled WebViews. **To begin debugging, click an inspect link.** 
 
@@ -203,14 +203,14 @@ The Elements tab can be used for on-the-fly changes to CSS styling, API and meth
 ### Console and Issuing API Calls
 One of the most versatile components of Weinre is its Console. Not only does it offer classic capabilities such as device visibility and monitoring during operation, but the Weinre Console also can access all of a device’s hardware features, issue commands and report how the device reacts.
 
-The example below shows results from an attempt to use the JavaScript API to check the target platform, use the camera to scan a barcode, and issue a command to the [ScreenOrientation API](../../api/screenorientation) (which returned an error).
+The example below shows results from an attempt to use the JavaScript API to check the target platform, use the camera to scan a barcode, and issue a command to the [ScreenOrientation API](../../api/api/screenorientation) (which returned an error).
 
 ![img](../../images/debugging/weinre-barcode-take.png)
 
 In the example, the Console is used to verify that JavaScript APIs are functioning properly. A return of the correct system platform ‘Android’ proves that the System API is working. A return of the correct scanned barcode value likewise proves that the Barcode module is working properly.
 
 <b>Here’s another important benefit of the Weinre console</b>.
-Notice that when the barcode callback handler function is executed, we are using the form `console.log(e)`, where `e` is the callback return object. This allows us to inspect the object right in the console. It also simplifies validation because we see that it contains a barcode property and a status property, exactly as described in the [Barcode.take( ) method](../../api/barcode) description. Alternative means, such as adding code for outputting to a log and then searching and retrieving the information from the device, can be time-consuming and error-prone.
+Notice that when the barcode callback handler function is executed, we are using the form `console.log(e)`, where `e` is the callback return object. This allows us to inspect the object right in the console. It also simplifies validation because we see that it contains a barcode property and a status property, exactly as described in the [Barcode.take( ) method](../../api/api/barcode) description. Alternative means, such as adding code for outputting to a log and then searching and retrieving the information from the device, can be time-consuming and error-prone.
 
 ### Other Tabs in Debugger UI
 Several other tabs in the debugging UI can be quite useful. 

@@ -23,7 +23,7 @@ The migration procedures for PocketBrowser 3.x are the same as those for 2.x. Th
 
 * **On Windows Mobile 6.5, PocketBrowser 3.x uses the Progressive Internet Explorer (PIE, a component of IE4)**. This was done to maintain support for scrollbars after Microsoft dropped the feature from its version of IE6 for Windows Mobile.
 
-* **The [TextSize method](../../pb3/deviceapplication/#textsize) in the PB 3.x DeviceApplication API will malfunction on Windows CE devices** unless the [TextSelectionEnabled](../configreference/#textselectionenabled) parameter in the EB `Config.xml` contains a value of "1" (enabled). 
+* **The [TextSize method](../../api/pb3/deviceapplication/#textsize) in the PB 3.x DeviceApplication API will malfunction on Windows CE devices** unless the [TextSelectionEnabled](../configreference/#textselectionenabled) parameter in the EB `Config.xml` contains a value of "1" (enabled). 
 
 * **The IE6 rendering engine on WinCE supports scrollbars, but does not support the [Scrolling parameter](../configreference/#scrolling)** in the EB `Config.xml`. 
 
@@ -150,7 +150,7 @@ Running a PocketBrowser 2.x/3.x app in Enterprise Browser on Android requires th
 
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
-* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](../../Sip#hide) for an alternative.
+* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](../../api/Sip#hide) for an alternative.
 * The EB [FitToScreenEnabled](../configreference/#fittoscreenenabled) parameter is not supported.
 * EMML profiles are not supported.
 * If the app is to perform scanning, check for hardware contention issues and other potential [conflicts with DataWedge](/datawedge/5-0/guide/setup/#disabledatawedge) and other Android-native apps that use the device's scanning hardware.
@@ -193,7 +193,7 @@ Optionally, an edited file can be placed in both directories, with changes takin
 * The EB [PageZoom](../configreference/#pagezoom) parameter is not supported on IE. This webview supports text zoom only.
 * **The JavaScript events onkeydown, onkeypress and onkeyup are not supported** in Windows Mobile devices that use the IE rendering engine. The following workaround options are available:
 	* Switch to the EB Webkit engine.
-	* Use Enterprise Browser [Keycapture APIs](../../keycapture) to capture hardware key-presses.
+	* Use Enterprise Browser [Keycapture APIs](../../api/keycapture) to capture hardware key-presses.
 	* Use the PocketBrowser KeyCapture API (implemented as a plug-in) from the EB IE engine.
 
 ------
@@ -232,7 +232,7 @@ Optionally, an edited file can be placed in both directories, with changes takin
 
 ####Notes:
 * The generic methods RasConnect and RasDisconnect are not supported.
-* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](../../Sip#hide) for an alternative.
+* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](../../api/Sip#hide) for an alternative.
 * The EB [FitToScreenEnabled](../configreference/#fittoscreenenabled) parameter is not supported on WinCE.
 
 -----

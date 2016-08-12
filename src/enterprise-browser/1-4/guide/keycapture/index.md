@@ -10,18 +10,18 @@ Keycodes are constants that uniquely identify the ASCII values of device keypres
 > **Note**: This guide applies only to Android.
 
 ### Keycode Handling 
-On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
+On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
 
 The following facts apply generally to keycode mapping for Enterprise Browser: 
 
 * Keycode mapping **requires Enterprise Browser 1.4** or higher.
-* Mapping **requires a KeyCapture API**. [Read more](../../keycapture). 
+* Mapping **requires a KeyCapture API**. [Read more](../../api/keycapture). 
 * Keycode mappings are contained in the `keycodemapping.xml` file.
 * The `keycodemapping.xml` file is the same for all versions of the KeyCapture API.
 * The mapping file is read each time Enterprise Browser is launched.
 * Upon app install, a mapping-file template is placed in the EB installation directory, usually `sdcard0/android/data/com.symbol.enterprisebrowser`.
 * Keycodes not mapped (or left blank in the mapping file) retain their default values. 
-* [Additional restrictions](../../keycapture?Remarks) apply to keycapture and keycode mapping. 
+* [Additional restrictions](../../api/keycapture?Remarks) apply to keycapture and keycode mapping. 
 
 ##Mapping Keycodes 
 To assign custom keycodes to Android hard or soft keys, follow these simple steps:  
@@ -131,8 +131,8 @@ where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http:/
 
 ##More Information
 
-* **[KeyCapture API](../../keycapture) -** how to include the API and use its methods
-* **[Keys that cannot be captured](../../keycapture/#remarks) -** including the SHIFT and ALT keys 
+* **[KeyCapture API](../../api/keycapture) -** how to include the API and use its methods
+* **[Keys that cannot be captured](../../api/keycapture/#remarks) -** including the SHIFT and ALT keys 
 * **[Android KeyEvents documentation](http://developer.android.com/reference/android/view/KeyEvent.html) -** the official list of Android key names
 
 

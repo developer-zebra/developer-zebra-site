@@ -145,7 +145,7 @@ The [Config.xml](../configreference) file needs to be updated:
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
 * [PageZoom](../configreference?PageZoom) is not supported on IE. This web view supports text zoom only.
-* Javascript events onkeydown, onkeypress, onkeyup are not supported in Windows mobile devices running Internet explorer. Use EnterpriseBrowser [Keycapture APIs](../../keycapture) instead to capture the hardware keypresses.
+* Javascript events onkeydown, onkeypress, onkeyup are not supported in Windows mobile devices running Internet explorer. Use EnterpriseBrowser [Keycapture APIs](../../api/keycapture) instead to capture the hardware keypresses.
 
 #### Scrollbars/Fingerscrolling
 In order to support backwards compatibility, PocketBrowser was forced to use PIE (IE4) for WM6.5 devices even though IE6 was available. This was because developers at the time were reliant on the scrollbars, which Microsoft dropped in IE6 on Windows Mobile. As a result of that decision, PIE is still used on WM today, rather than IE6. IE6 on CE supports scrollbars and is more capable web view.The Scroll options have changed in the configuration file to accommodate more options since CE7 has introduced Finger Scrolling.

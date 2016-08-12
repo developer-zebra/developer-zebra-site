@@ -69,7 +69,7 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 To try a specific feature, click on the "hamburger" menu icon at the top left and select it. To quickly exit the Feature Demo App, use the `X` at the top right. 
 
 ### Barcode Scanning  
-Demonstrates use of the most common [Barcode APIs](../../barcode/):
+Demonstrates use of the most common [Barcode APIs](../../api/barcode/):
 
 **Enumerate –** scans the device for all capable barcode interfaces. These might include 2D imager, laser, and camera. Tap in a scanner type to Enable or Disable that scanner.  
 
@@ -102,7 +102,7 @@ Demonstrates use of the most common [Barcode APIs](../../barcode/):
 -----
 
 ### Battery  
-Demonstrates use of the most common [Battery APIs](../../battery/):  
+Demonstrates use of the most common [Battery APIs](../../api/battery/):  
 
 **Show Icon –** displays a battery icon in the upper left-hand corner. Change parameters within the code to control more aspects of icon presentation and location.  
 
@@ -115,14 +115,14 @@ Demonstrates use of the most common [Battery APIs](../../battery/):
 -----
 
 ### Camera  
-Demonstrates use of most common [Imager APIs](../../Imager/):  
+Demonstrates use of most common [Imager APIs](../../api/Imager/):  
 
 **Show Camera –** activates the camera and allows a picture to be taken. Displays status information after performing the action. 
 
 -----
 
 ### Hourglass  
-Demonstrates use of the most common [Hourglass APIs](../../Hourglass/):  
+Demonstrates use of the most common [Hourglass APIs](../../api/Hourglass/):  
 
 **Show –** displays a "loading" indicator in the position denoted in the "Left" and "Top" coordinates field. If nothing is entered, displays the loading indicator in the center of the screen. 
 
@@ -135,7 +135,7 @@ Demonstrates use of the most common [Hourglass APIs](../../Hourglass/):
 -----
 
 ### Key Capture  
-Demonstrates use of the most common [Key Capture APIs](../../keycapture/):  
+Demonstrates use of the most common [Key Capture APIs](../../api/keycapture/):  
 
 **Capture Trigger –** displays an indicator when the hardware scanner button is pressed as well as the key code currently assigned to the scanner button.   
 **Capture Keys –** displays the key code assigned to any hardware or software key that is pressed.
@@ -143,7 +143,7 @@ Demonstrates use of the most common [Key Capture APIs](../../keycapture/):
 -----
 
 ### Screen  
-Demonstrates use of the most common [Screen Orientation APIs](../../ScreenOrientation/):  
+Demonstrates use of the most common [Screen Orientation APIs](../../api/ScreenOrientation/):  
 
 **Left –** forces the device to rotate to a left-handed orientation.  
 
@@ -158,7 +158,7 @@ Demonstrates use of the most common [Screen Orientation APIs](../../ScreenOrient
 -----
 
 ### Signal  
-Demonstrates use of the most common Signals in the [Signal Indicators API](../../signalIndicators):  
+Demonstrates use of the most common Signals in the [Signal Indicators API](../../api/signalIndicators):  
 
 * **signalStrength**
 * **essid**
@@ -189,7 +189,7 @@ All callback information will be updated in the respective field(s) on the Signa
 -----
 
 ### Signature Capture  
-Demonstrates use of the most common [Signature APIs](../../signature/):
+Demonstrates use of the most common [Signature APIs](../../api/signature/):
 
 **Show –** displays a full-screen signature capture widget; uses the Color and Width properties (can be customized). When returning from this widget, the status of the event will be displayed along with the image of the signature (if the user pressed the OK button).
 
@@ -202,7 +202,7 @@ Demonstrates use of the most common [Signature APIs](../../signature/):
 -----
 
 ### Timer  
-Demonstrates use of the most common [Timer APIs](../../Timer/):  
+Demonstrates use of the most common [Timer APIs](../../api/Timer/):  
 
 **Duration –** the length of time (in ms) an event will run. Must be specified before timer is started. 
 

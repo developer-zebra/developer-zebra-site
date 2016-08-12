@@ -114,7 +114,7 @@ Example meta-tag specification:
 
 ###Notes: 
 * The generic methods RasConnect and RasDisconnect are not supported.
-* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](../../Sip#hide) for an alternative.
+* The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](../../api/Sip#hide) for an alternative.
 * The [FitToScreenEnabled](../configreference/#fittoscreenenabled) parameter of EB is not supported on Android or Windows CE.
 * EMML profiles are not supported on Android.
 * If the app is to perform scanning, check for hardware contention issues and other potential [conflicts with DataWedge](/datawedge/5-0/guide/setup/#disabledatawedge) and other Android-native apps that use the device's scanning hardware.

@@ -4,10 +4,9 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Overview
-The PrinterZebra API provides Zebra-specific API access to Zebra's Bluetooth and Wi-Fi network printers, and to USB-capable printers for Android and Windows Mobile/CE. This API inherits all methods, properties and constants from the [Printer API](#api-printing).
+The PrinterZebra API provides Zebra-specific API access to Zebra's Bluetooth and Wi-Fi network printers, and to USB-capable printers for Android and Windows Mobile. This API inherits all methods, properties and constants from the [Printer API](../printing).
+
 ## Enabling the API
 There are two methods of enabling the Printer API:
 
@@ -45,7 +44,7 @@ To include individual APIs, you must first include the `ebapi.js` in your HTML, 
 
 
 ### connect()
-**Connect to a printer using default options**. Works asynchronously; use callback to check the result. If connection is successful printer state and properties are automatically updated. **Note: Default options are defined by printer SDK and platform and may vary between different devices.
+**Connect to a printer using default options**. Works asynchronously; use callback to check the result. If connection is successful printer state and properties are automatically updated. **Note**: Default options are defined by printer SDK and platform and may vary between different devices.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -377,7 +376,7 @@ Synchronous Return:
 
 
 ### printRawString(<span class="text-info">STRING</span> command, <span class="text-info">HASH</span> options)
-**Send raw string to printer**. Works asynchronously, use callback to check the result. **Note: This method will not print ZPL commands from Windows Mobile/CE devices to Zebra printers; compatible with line mode or raw text only.
+**Send raw string to printer**. Works asynchronously, use callback to check the result. **Note**: This method will not print ZPL commands from Windows Mobile/CE devices to Zebra printers; compatible with line mode or raw text only.
 
 ####Parameters
 <ul><li>command : <span class='text-info'>STRING</span><p>Raw string to print. Could be any valid command in printer supported programming language. </p></li><li>options : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p> Providing no properties to this function will print with default settings.</p></li><ul><li>propertyWithStringValue : <span class='text-info'>STRING</span> <span class='label label-info'>Optional</span><p>This is currently not being used. </p></li><li>propertyWithIntValue : <span class='text-info'>INTEGER</span> <span class='label label-info'>Optional</span><p>Currently unused. </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -463,7 +462,7 @@ Synchronous Return:
 
 
 ### requestState(<span class="text-info">ARRAY</span> listOfParameters)
-**Requests printer state with a list of parameters**. Works asynchronously and uses the callback to check the result. Returns hash with status and parameters as keys. **NOTE: On the Windows Mobile / Windows CE platform, this method does not work in the case of a Bluetooth and USB connection.
+**Requests printer state with a list of parameters**. Works asynchronously and uses the callback to check the result. Returns hash with status and parameters as keys. **Note**: On the Windows Mobile / Windows CE platform, this method does not work in the case of a Bluetooth and USB connection.
 
 ####Parameters
 <ul><li>listOfParameters : <span class='text-info'>ARRAY</span><p>List of parameters for request from printer device. </p></li><ul><li><i>Object</i> : <span class='text-info'>STRING</span><p>Parameter name - see constants with PRINTER_STATE_... </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

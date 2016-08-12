@@ -101,22 +101,22 @@ Sets the alarm to trigger at the specified time.
 
 ## Remarks
 ### Validity of registered action on Alarm Triggered
-Uniquely for an Enterprise Browser event the registered action for the AlarmTriggered event does not get cleared when you navigate away from the current page. If using a JavaScript function, you must ensure the script is still valid when the alarm fires or alternatively you can clear the alarm.
+For an Enterprise Browser event, the registered action for the AlarmTriggered event does not get cleared when navigating away from the current page. If using a JavaScript function, be sure the script is still valid when the alarm fires or simply clear the alarm.
 
 ### Minimum Time Interval
-The Alarm is not designed to be triggered for intervals less than 30 seconds, if you require a shorter delay then consider using the JavaScript function 'SetTimeout'.
+The Alarm is not designed to be triggered for intervals shorter than 30 seconds. If such a delay is required, consider using the 'SetTimeout' JavaScript function. 
 
 ### Explanation of Time Format
-You must specify the time in GMT and then the device's timezone offset from that. E.g. a time expressed as 2012-07-27t08-30-00-05-00 breaks down as follows:
+Time must be specified as GMT plus or minus the device's timezone offset. For example, an alarm expressed as 2012-07-27t08-30-00-05-00 on a device with a GMT-5 timezone offset will fire at 8:30am (local time) on July 27, 2012. It breaks down as follows: 
 
->Assuming a device with timezone offset -5 hours
->This alarm will fire at 8:30am (local time) on 27th July 2012
->
->* Year: 2012
->* Month: July
->* Day: 27th
->* Time: 13:30 exactly (GMT)
->* Timezone: -5 (Eastern Time, 8:30am local time)
+* Year: 2012
+* Month: July
+* Day: 27
+* Time: 13:30 GMT
+* Timezone: -5 (Eastern time, 8:30 a.m. local time)
+
+### Device Support
+The Alarm API not supported on [Zebra Micro Kiosks](/enterprise-browser/1-4/guide/about/#microkiosk).  
 
 ## Example
 ### Set an Alarm

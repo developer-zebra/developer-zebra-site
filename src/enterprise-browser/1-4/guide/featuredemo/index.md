@@ -152,17 +152,17 @@ The Screen section of the Feature Demo application shows how to use the most com
 ### Signal  
 The Signal section of the Feature Demo application demonstrates usage of the most common [Signal Indicator APIs](/enterprise-browser/1-4/api/signalIndicators):  
 
-* signalStrength
-* essid
-* macAddress
-* adapterName
-* dhcpServer
-* dhcpStatic (Windows Mobile only)
-* gateway
-* ipAddress
-* rssi
-* subnetMask
-* wins (Windows Mobile only)
+  * **signalStrength**
+  * **essid**
+  * **macAddress**
+  * **adapterName**
+  * **dhcpServer**
+  * **dhcpStatic** (Windows Mobile only)
+  * **gateway**
+  * **ipAddress**
+  * **rssi**
+  * **subnetMask**
+  * **wins** (Windows Mobile only)
 
 * **Show Icon –** displays a Wi-Fi icon in the upper left-hand corner. Icon appearance and location can be configured by changing parameters within the code. 
 * **Hide Icon –** hides the Wi-Fi icon.  

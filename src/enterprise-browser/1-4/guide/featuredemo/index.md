@@ -69,15 +69,19 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 To try a specific feature, click on the "hamburger" menu icon at the top left and select it. To quickly exit the Feature Demo App, use the `X` at the top right. 
 
 ### Barcode Scanning  
-The Barcode section of the Feature Demo application shows how to use the most common [Barcode APIs](/enterprise-browser/1-4/api/barcode/):
+Demonstrates use of the most common [Barcode APIs](/enterprise-browser/1-4/api/barcode/):
 
-* **Enumerate –** scans the device for all capable barcode interfaces. These might include 2D imager, laser, and camera. Tap in a scanner type to Enable or Disable that scanner.  
-* **Enable –** enables the dedicated scanner button on the device. Press the hardware scan trigger and point it at a barcode, the decode information will be presented.   
-* **Disable –** disable the active barcode scanner.  
-* **Start –** activates the scanner in "soft trigger" mode. Scanner remains active until a barcode is decoded or a timeout occurs. This button is active only after tapping the Enable button. 
-* **Stop –** disables the soft trigger mode.  
+**Enumerate –** scans the device for all capable barcode interfaces. These might include 2D imager, laser, and camera. Tap in a scanner type to Enable or Disable that scanner.  
 
-**To Test the Scanner**
+**Enable –** enables the dedicated scanner button on the device. Press the hardware scan trigger and point it at a barcode, the decode information will be presented.   
+
+**Disable –** disable the active barcode scanner.  
+
+**Start –** activates the scanner in "soft trigger" mode. Scanner remains active until a barcode is decoded or a timeout occurs. This button is active only after tapping the Enable button. 
+
+**Stop –** disables the soft trigger mode.  
+
+**To Test the Scanner**:
 
 1. Go to the Barcode section of the application  
 
@@ -95,136 +99,152 @@ The Barcode section of the Feature Demo application shows how to use the most co
 
 	<img style="padding-left:0px;" src="http://i.imgur.com/vHrV660.png" width="380" height="600" border="10">  
 
-
 -----
 
 ### Battery  
-The Battery section of the Feature Demo application shows how to use the most common [Battery APIs](/enterprise-browser/1-4/api/battery/):  
+Demonstrates use of the most common [Battery APIs](/enterprise-browser/1-4/api/battery/):  
 
-* **Show Icon –** displays a battery icon in the upper left-hand corner. Change parameters within the code to control more aspects of icon presentation and location.  
-* **Hide Icon –** hides the battery icon.  
-* **Start –** begins to monitor for battery status events. For example, when not being charged, battery level is displayed. 
-* **Stop –** stops monitoring for battery status events. 
+**Show Icon –** displays a battery icon in the upper left-hand corner. Change parameters within the code to control more aspects of icon presentation and location.  
 
+**Hide Icon –** hides the battery icon.  
+
+**Start –** begins to monitor for battery status events. For example, when not being charged, battery level is displayed. 
+
+**Stop –** stops monitoring for battery status events. 
 
 -----
 
 ### Camera  
-The Camera section of the Feature Demo application shows how to use the most common [Imager APIs](/enterprise-browser/1-4/api/Imager/):  
+Demonstrates use of most common [Imager APIs](/enterprise-browser/1-4/api/Imager/):  
 
-* **Show Camera –** activates the camera and allows a picture to be taken. Displays status information after performing the action. 
-
+**Show Camera –** activates the camera and allows a picture to be taken. Displays status information after performing the action. 
 
 -----
 
 ### Hourglass  
-The Hourglass section of the Feature Demo application shows how to use the most common [Hourglass APIs](/enterprise-browser/1-4/api/Hourglass/):  
+Demonstrates use of the most common [Hourglass APIs](/enterprise-browser/1-4/api/Hourglass/):  
 
-* **Show –** displays a loading indicator in the position denoted in the "Left" and "Top" coordinates field. If nothing is entered, displays the loading indicator in the center of the screen. 
-* **Hide –** hides the loading indicator.  
-* **Left –** controls the left coordinates of the screen display used to position the loading indicator. 
-* **Stop –** controls the top coordinate of the screen display used to position the loading indicator. 
+**Show –** displays a "loading" indicator in the position denoted in the "Left" and "Top" coordinates field. If nothing is entered, displays the loading indicator in the center of the screen. 
 
+**Hide –** hides the loading indicator.  
+
+**Left –** controls the left coordinates of the screen display used to position the loading indicator. 
+
+**Stop –** controls the top coordinate of the screen display used to position the loading indicator. 
 
 -----
 
 ### Key Capture  
-The Key Capture section of the Feature Demo application shows how to use the most common [Key Capture APIs](/enterprise-browser/1-4/api/keycapture/):  
+Demonstrates use of the most common [Key Capture APIs](/enterprise-browser/1-4/api/keycapture/):  
 
-* **Capture Trigger –** displays an indicator when the hardware scanner button is pressed as well as the key code currently assigned to the scanner button.   
-* **Capture Keys –** displays the key code assigned to any hardware or software key that is pressed.
-
+**Capture Trigger –** displays an indicator when the hardware scanner button is pressed as well as the key code currently assigned to the scanner button.   
+**Capture Keys –** displays the key code assigned to any hardware or software key that is pressed.
 
 -----
 
 ### Screen  
-The Screen section of the Feature Demo application shows how to use the most common [Screen Orientation APIs](/enterprise-browser/1-4/api/ScreenOrientation/):  
+Demonstrates use of the most common [Screen Orientation APIs](/enterprise-browser/1-4/api/ScreenOrientation/):  
 
-* **Left –** forces the device to rotate to a left-handed orientation.  
-* **Right –** forces the device to rotate to a right-handed orientation.  
-* **Upside Down –** forces the device to rotate to an upside-down orientation.   
-* **Normal –** force the device to rotate to a normal orientation.  
-* **Auto Rotate –** toggles between auto-rotation enable/disable. 
+**Left –** forces the device to rotate to a left-handed orientation.  
 
+**Right –** forces the device to rotate to a right-handed orientation.  
+
+**Upside Down –** forces the device to rotate to an upside-down orientation.
+
+**Normal –** force the device to rotate to a normal orientation.  
+
+**Auto Rotate –** toggles between auto-rotation enable/disable. 
 
 -----
 
 ### Signal  
-The Signal section of the Feature Demo application demonstrates usage of the most common [Signal Indicator APIs](/enterprise-browser/1-4/api/signalIndicators):  
+Demonstrates use of the most common Signals in the [Signal Indicators API](/enterprise-browser/1-4/api/signalIndicators):  
 
-  * **signalStrength**
-  * **essid**
-  * **macAddress**
-  * **adapterName**
-  * **dhcpServer**
-  * **dhcpStatic** (Windows Mobile only)
-  * **gateway**
-  * **ipAddress**
-  * **rssi**
-  * **subnetMask**
-  * **wins** (Windows Mobile only)
+* **signalStrength**
+* **essid**
+* **macAddress**
+* **adapterName**
+* **dhcpServer**
+* **dhcpStatic** (Windows Mobile only)
+* **gateway**
+* **ipAddress**
+* **rssi**
+* **subnetMask**
+* **wins** (Windows Mobile only)
 
-* **Show Icon –** displays a Wi-Fi icon in the upper left-hand corner. Icon appearance and location can be configured by changing parameters within the code. 
-* **Hide Icon –** hides the Wi-Fi icon.  
-* **Start –** retrieves the current signal status. On Windows Mobile/CE devices, if a callback is provided to retrieve the signal, the signal will be called according to the specified refreshInterval. On Android, the callback will be invoked whenever there's a change in one of the signal values listed above.  
-* **Stop –** stops monitoring for Wi-Fi status events.  
-* **Status –** This section will be populated with the data that comes from the signal event upon a change in status. It will be displayed only after the "Start" button has been tapped.   
+**Show Icon –** displays a Wi-Fi icon in the upper left-hand corner. Icon appearance and location can be configured by changing parameters within the code. 
+
+**Hide Icon –** hides the Wi-Fi icon.  
+
+**Start –** retrieves the current signal status. On Windows Mobile/CE devices, if a callback is provided to retrieve the signal, the signal will be called according to the specified refreshInterval. On Android, the callback will be invoked whenever there's a change in one of the signal values listed above.  
+
+**Stop –** stops monitoring for Wi-Fi status events.  
+
+**Status –** This section will be populated with the data that comes from the signal event upon a change in status. It will be displayed only after the "Start" button has been tapped.   
   
 All callback information will be updated in the respective field(s) on the Signal Indicator page.
 
 > **Note**: Monitoring for Signal events may interfere with other UI elements of the feature demo application when it attempts to display the updated information. To avoid this, press "Stop" to disable Signal-events monitoring before viewing other features.   
 
-
 -----
 
 ### Signature Capture  
-The Signature Capture section of the Feature Demo application shows how to use the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):  
+Demonstrates use of the most common [Signature APIs](/enterprise-browser/1-4/api/signature/):
 
-* **Show –** displays a full-screen signature capture widget; uses the Color and Width properties (can be customized). When returning from this widget, the status of the event will be displayed along with the image of the signature (if the user pressed the OK button).
+**Show –** displays a full-screen signature capture widget; uses the Color and Width properties (can be customized). When returning from this widget, the status of the event will be displayed along with the image of the signature (if the user pressed the OK button).
 
-* **Background Color -** enter a hex value string to specify the background color of the signature capture area. For example, changing it to `#FF0000` will result in a red background. 
+**Background Color -** enter a hex value string to specify the background color of the signature capture area. For example, changing it to `#FF0000` will result in a red background. 
 
-* **Pen Color -** enter a hex value string to specify the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
+**Pen Color -** enter a hex value string to specify the pen-stroke color for signature capture. For example, changing this value to #FF0000 will result in a red pen color. 
 
-* **Pen Width -** enter an integer value to specify the pen-stroke thickness (in pixels). 
-
+**Pen Width -** enter an integer value to specify the pen-stroke thickness (in pixels). 
 
 -----
 
 ### Timer  
-The Timer section of the Feature Demo application shows how to use the most common [Timer APIs](/enterprise-browser/1-4/api/Timer/):  
+Demonstrates use of the most common [Timer APIs](/enterprise-browser/1-4/api/Timer/):  
 
-* **Duration –** the length of time (in ms) an event will run. Must be specified before timer is started. 
-* **Start –** starts a timer to run the length of time specified in the Duration.
-* **Stop –** stops the timer.
-* **Status –** indicates whether a timer event is started or stopped. 
+**Duration –** the length of time (in ms) an event will run. Must be specified before timer is started. 
 
+**Start –** starts a timer to run the length of time specified in the Duration.
+
+**Stop –** stops the timer.
+
+**Status –** indicates whether a timer event is started or stopped. 
 
 -----
 
 ### WebSQL  
-The WebSQL section of the Feature Demo application demonstrates basic functionality of the HTML5 WebSQL standard  
+Demonstrates basic functionality of the HTML5 WebSQL standards: 
 
-* **Input –** enter a string to be stored. 
-* **Output –** displays the data retrieved when tapping the "Fetch" button.  
-* **Store –** stores the value in the "Input" field into WebSQL.  
-* **Fetch –** retrieves the stored value from WebSQL.   
+**Input –** enter a string to be stored. 
 
+**Output –** displays the data retrieved when tapping the "Fetch" button.  
+
+**Store –** stores the value in the "Input" field into WebSQL.  
+
+**Fetch –** retrieves the stored value from WebSQL.   
 
 -----
 
 ### WebStorage  
-The Web Storage section of the Feature Demo application demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs. This allows storage of basic Name/Value data pairs. 
+Demonstrates the basic functionality of the HTML5 LocalStorage and SessionStorage APIs. This allows storage of basic Name/Value data pairs. 
 
-* **LocalStorage Input –** a string to be stored using LocalStorage; remains resident after the app is closed.
-* **LocalStorage Output –** displays the LocalStorage data retrieved when tapping the "Local Fetch" button.
-* **SessionStorage Input –** a string to be stored using SessionStorage; does not persist after the app is closed.
-* **SessionStorage Output –** displays the SessionStorage data retrieved when tapping the "Local Fetch" button.
-* **Local Store –** stores the value in the "LocalStorage Input" field into LocalStorage.
-* **Local Fetch –** retrieves the value from LocalStorage.
-* **Session Store –** stores the value in the "SessionStorage Input" field into SessionStorage.
-* **Session Fetch –** retrieve the value from SessionStorage.
+**LocalStorage Input –** a string to be stored using LocalStorage; remains resident after the app is closed.
 
+**LocalStorage Output –** displays the LocalStorage data retrieved when tapping the "Local Fetch" button.
+
+**SessionStorage Input –** a string to be stored using SessionStorage; does not persist after the app is closed.
+
+**SessionStorage Output –** displays the SessionStorage data retrieved when tapping the "Local Fetch" button.
+
+**Local Store –** stores the value in the "LocalStorage Input" field into LocalStorage.
+
+**Local Fetch –** retrieves the value from LocalStorage.
+
+**Session Store –** stores the value in the "SessionStorage Input" field into SessionStorage.
+
+**Session Fetch –** retrieve the value from SessionStorage.
 
 -----
 
@@ -236,17 +256,23 @@ When unzipping the contents of the Feature Demo download, the following folders 
 
 **Contents of the Feature Demo download**: 
 
-* **apis –** folder that contains individual `.html` files associated with each feature.
-* **featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API.
-* **img –** folder that contains icons and images used in the demo.
-* **ebapi-modules.js –** Enterprise Browser core JavaScript api library.
-* **elements.js –** Enterprise Browser JavaScript library used by some of the APIs.
-* **rhoapi-modules.js –** Enterprise Browser JavaScript library used by some of the APIs.  
-* **feature-demo.html –** main application page that controls behavior of the Feature Demo application.
-* **style.css –** CSS file used for look and feel of the Feature Demo application.
+**apis –** folder that contains individual `.html` files associated with each feature.
+
+**featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API.
+
+**img –** folder that contains icons and images used in the demo.
+
+**ebapi-modules.js –** Enterprise Browser core JavaScript api library.
+
+**elements.js –** Enterprise Browser JavaScript library used by some of the APIs.
+
+**rhoapi-modules.js –** Enterprise Browser JavaScript library used by some of the APIs.  
+
+**feature-demo.html –** main application page that controls behavior of the Feature Demo application.
+
+**style.css –** CSS file used for look and feel of the Feature Demo application.
 
 To learn from the Feature Demo application, it is best to look at the individual HTML files located in the `/apis` folder. Notice the `SCRIPT` block that contains the associated JavaScript for performing the particular action. 
-
 
 -----
 

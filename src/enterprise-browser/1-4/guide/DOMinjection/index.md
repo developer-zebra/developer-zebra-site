@@ -109,7 +109,7 @@ The tags file created in Step 1 must reside on the device.
 		</Application>
 
 
-For information about how to configure the `Config.xml` file, see the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreference). **Note**: The &lt;CustomDOMElements&gt; tag cannot be configured using the [On-device Config Editor utility](/enterprise-browser/1-4/guide/OndeviceConfig).  
+For information about how to configure the `Config.xml` file, see the [Config.xml Reference Guide](../configreference). **Note**: The &lt;CustomDOMElements&gt; tag cannot be configured using the [On-device Config Editor utility](../OndeviceConfig).  
 
 > **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the tags file on the device is specified**. 
 

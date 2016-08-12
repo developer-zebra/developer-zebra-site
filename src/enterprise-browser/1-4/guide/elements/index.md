@@ -11,13 +11,13 @@ Enterprise Browser supports RhoElements 2.x applications, which in many cases wi
 These instructions require a development host (desktop or laptop) connected to a Zebra device, both containing the Enterprise Browser software, as well as a familiarity with the process of editing the Enterprise Browser `Config.xml` file. For help, see the guides below. 
 
 **Related Guides**: 
-* **[Installing Enterprise Browser](/enterprise-browser/1-4/guide/setup)**
-* **[Editing the Config.xml file](/enterprise-browser/1-4/guide/ConfigEditor/)**
+* **[Installing Enterprise Browser](../setup)**
+* **[Editing the Config.xml file](../ConfigEditor/)**
 
 -----
 
 ## Config.xml
-The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
+The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](../configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
 
 ####Path to Config.xml file: 
 * **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/Config.xml`
@@ -34,13 +34,13 @@ The single change that is always necessary when migrating to Enterprise Browser 
 		                <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
 		            </General>
 
-**&#50;. Copy any required off-line files** (i.e. ["BadLink"](/enterprise-browser/1-4/guide/configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
+**&#50;. Copy any required off-line files** (i.e. ["BadLink"](../configreference/#badlinkuri) pages, etc.) to the device, take note of their paths and specify those paths in the relevant sections of the `Config.xml` file, as necessary. 
 
 > **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 **&#51;. If the app requires access to RhoElements APIs**, see the [Deploy Legacy APIs](#deploylegacyapis) section below.
 
-See the [Config.xml Reference Guide](/enterprise-browser/1-4/guide/configreference) for more information about settings, parameters and other requirements.
+See the [Config.xml Reference Guide](../configreference) for more information about settings, parameters and other requirements.
 
 -----
 
@@ -73,7 +73,7 @@ Example meta-tag specification:
 -----
 
 ### Deploy Legacy APIs
-**Applies to Android devices only**. Running a RhoElements2.x app in Enterprise Browser for Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
+**Applies to Android devices only**. Running a RhoElements2.x app in Enterprise Browser for Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](../apioverview/) for more information. 
 
 **To Deploy the** `elements.js` **file**:
 
@@ -99,7 +99,7 @@ Example meta-tag specification:
 ### Enable ActiveX Objects
 **Applies to Windows Mobile/CE devices only**. If the RhoElements app uses ActiveX controls, the legacy ActiveX and generic objects must be preloaded when EB initializes. 
 
-**Specify a value of "1" in the [PreloadLegacyActiveX](/enterprise-browser/1-4/guide/configreference/#preloadlegacyactivex) [PreloadLegacyGeneric](/enterprise-browser/1-4/guide/configreference/#preloadlegacygeneric) parameters**, as below:
+**Specify a value of "1" in the [PreloadLegacyActiveX](../configreference/#preloadlegacyactivex) [PreloadLegacyGeneric](../configreference/#preloadlegacygeneric) parameters**, as below:
 
 
 	:::xml
@@ -115,17 +115,17 @@ Example meta-tag specification:
 ###Notes: 
 * The generic methods RasConnect and RasDisconnect are not supported.
 * The NOSIP control for preventing display of the soft input panel is not supported. See the [SIP API's hide() method](/enterprise-browser/1-4/api/Sip#hide) for an alternative.
-* The [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference/#fittoscreenenabled) parameter of EB is not supported on Android or Windows CE.
+* The [FitToScreenEnabled](../configreference/#fittoscreenenabled) parameter of EB is not supported on Android or Windows CE.
 * EMML profiles are not supported on Android.
 * If the app is to perform scanning, check for hardware contention issues and other potential [conflicts with DataWedge](/datawedge/5-0/guide/setup/#disabledatawedge) and other Android-native apps that use the device's scanning hardware.
 
 -----
 
 **Related Guides**: 
-* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
-* **[PocketBrowser 3.x Migration Guide](/enterprise-browser/1-4/guide/pb3/)**
-* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
-* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+* **[PocketBrowser 2.x Migration Guide](../pb2/)** 
+* **[PocketBrowser 3.x Migration Guide](../pb3/)**
+* **[RhoMobile Migration guide](../rhomobile)**
+* **[Optimization Guide](../optimization) -** for help minimizing device memory footprint
 
-* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
+* **[Enterprise Browser Config.xml Reference](../configreference) -** for more information about settings, parameters and other requirements.
 

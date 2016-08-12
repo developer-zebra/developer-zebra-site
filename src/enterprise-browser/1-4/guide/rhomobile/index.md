@@ -20,4 +20,4 @@ To use the `Rho.` namespace, replace the `rhoapi-modules.js` file that came with
 * `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
 
 ##Android Intents
-Enterprise Browser 1.3 and higher includes support for Android Intents, which can be specified through an entry in the manifest file or using the [IntentReceiver](/enterprise-browser/1-4/guide/configreference/#intentreceiver) parameter of the `Config.xml` file. See the [Intent Receiver](/enterprise-browser/1-4/guide/configreference/#intentreceiver) section of the Enterprise Browser Config.xml Reference for more information.
+Enterprise Browser 1.3 and higher includes support for Android Intents, which can be specified through an entry in the manifest file or using the [IntentReceiver](../configreference/#intentreceiver) parameter of the `Config.xml` file. See the [Intent Receiver](../configreference/#intentreceiver) section of the Enterprise Browser Config.xml Reference for more information.

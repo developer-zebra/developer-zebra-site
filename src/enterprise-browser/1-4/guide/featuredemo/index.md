@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices. Enabling the demo app required changes to the `Config.xml` file on the device that will run the app. See the [Config.xml Reference](/enterprise-browser/1-4/guide/configreference) for more information. 
+The Feature Demo application showcases some of the key capabilities of Enterprise Browser when running an enterprise application on Zebra devices. Enabling the demo app required changes to the `Config.xml` file on the device that will run the app. See the [Config.xml Reference](../configreference) for more information. 
 
 ### Showcased Capabilities  
   * Barcode scanning

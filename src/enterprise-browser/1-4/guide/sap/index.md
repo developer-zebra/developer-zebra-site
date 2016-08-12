@@ -7,10 +7,10 @@ layout: guide.html
 ##Getting Started
 
 ### Setting Start Page
-To point Enterprise Browser to start with SAP ITS Mobile application, [startPage](/enterprise-browser/1-4/guide/configreference?General) parameter of the `Config.xml` must be set to the URL of SAP ITS Mobile application. 
+To point Enterprise Browser to start with SAP ITS Mobile application, [startPage](../configreference?General) parameter of the `Config.xml` must be set to the URL of SAP ITS Mobile application. 
 
 ### Enabling JavaScript APIs
-In order to use Enterprise Browser APIs, one must ensure to include the [respective JS files](/enterprise-browser/1-4/guide/apioverview) within the html file generated from the ABAP code in SAP Server. These files are included as part of the installation, and can be copied to your ABAP Server.
+In order to use Enterprise Browser APIs, one must ensure to include the [respective JS files](../apioverview) within the html file generated from the ABAP code in SAP Server. These files are included as part of the installation, and can be copied to your ABAP Server.
 
 Enterprise Browser requires JS files for the Enterprise Browser API to function:
 
@@ -87,7 +87,7 @@ As most of the JavaScript based key handling for SAP ITS Mobile applications is 
           <MetaTag VALUE="KeyCapture~KeyValue:All;Dispatch:True;KeyEvent:url('javascript:fireKeyEvent(%json);');" /> 
         </DefaultMetaTags>
 
-2. Add JavaScript method as described in the [DOM Injection guide](/enterprise-browser/1-4/guide-DOMinjection). The same method `fireKeyEvent` has been configured in config.xml under `DefaultMetaTags` attribute.
+2. Add JavaScript method as described in the [DOM Injection guide](..-DOMinjection). The same method `fireKeyEvent` has been configured in config.xml under `DefaultMetaTags` attribute.
 
         :::javascript
         //Add the fireKeyEvent in the HTML page for handling in WM device with IE Engine
@@ -189,7 +189,7 @@ The different scenarios in which the above way of handling key event is Supporte
 
 Function Keys are meant for performing some per-configured tasks on the device. We can capture Function Keys in Enterprise Browser Application just like any other keys which we capture as mentioned in previous section.
 
-However in some devices, some function keys are predefined by OS to perform the default OS behavior (e.g. F6/F7 controls the volume on some devices). In such cases, the respective function keys cannot be captured from Enterprise Browser Application. In order to capture the function keys in our application, we must ensure to follow the Enterprise Browser 1.2 configuration guidelines i.e. `Interaction between FunctionKeysCapturable and EnableFunctionKey configuration settings` explained under [Remarks section of Config Reference](/enterprise-browser/1-4/guide/configreference?Remarks).
+However in some devices, some function keys are predefined by OS to perform the default OS behavior (e.g. F6/F7 controls the volume on some devices). In such cases, the respective function keys cannot be captured from Enterprise Browser Application. In order to capture the function keys in our application, we must ensure to follow the Enterprise Browser 1.2 configuration guidelines i.e. `Interaction between FunctionKeysCapturable and EnableFunctionKey configuration settings` explained under [Remarks section of Config Reference](../configreference?Remarks).
 
 ###Android Function Keys
 A new feature has been introduced i.e. `isWindowKey` tag which can be configured via config.xml. The `isWindowsKey` tag has been introduced to mimic Windows Mobile key codes for the device's hardware keys.
@@ -215,7 +215,7 @@ To ease the usage of Applications running on Enterprise Browser, users can now c
 ## Basic/digest authentication 
 
 ### Using Webkit Engine
-It is recommended to configure SAP credentials through the [Authentication tag](/enterprise-browser/1-4/guide/configreference?Authentication)config.xml.
+It is recommended to configure SAP credentials through the [Authentication tag](../configreference?Authentication)config.xml.
 
     :::xml
     <Authentication>
@@ -258,7 +258,7 @@ Log-on fail:
         :::xml
         <ScreenOrientation value="0"/>
 
-* It is recommended to use Module Specific JS files for API access through EB namespace. See the [Optimization Guide](/enterprise-browser/1-4/guide/optimization) for more details.
+* It is recommended to use Module Specific JS files for API access through EB namespace. See the [Optimization Guide](../optimization) for more details.
 
 <!--
 
@@ -337,7 +337,7 @@ However it is still possible to fetch the barcode data in Enterprise Browser app
 -->
 
 ##Handling Badlink and Navigation
-You application may want to handle if a user encounters a link that no longer exists so that they are not stuck and can gracefully return back to the application. You can write their own badlink html page and then configure [this option](/enterprise-browser/1-4/guide/configreference?General) in the config.xml. This page should consider either a link to return to the home page of the application or utilize the Quit, Back & Reload buttons that are provided with Enterprise Browser.
+You application may want to handle if a user encounters a link that no longer exists so that they are not stuck and can gracefully return back to the application. You can write their own badlink html page and then configure [this option](../configreference?General) in the config.xml. This page should consider either a link to return to the home page of the application or utilize the Quit, Back & Reload buttons that are provided with Enterprise Browser.
 
 On the badlink page, on clicking `Reload` button, should redirect to SAP authentication page.
 
@@ -348,7 +348,7 @@ Please ensure to set `UseRegularExpressions` value to 1 in config.xml. In order 
 
 `elements.js` is required for accessing the backward compatibility API’s on Android Platform.
 
-Please refer to [migration guide](/enterprise-browser/1-4/guide/migration) for further details. 
+Please refer to [migration guide](../migration) for further details. 
 
 ##Usage of DefaultMetatags
 If the application includes multiple html pages that perform the same action, you can choose to make use of the `DefaultMetaTags` feature in the config.xml file.  A series of MetaTags can be included once to interact with APIs

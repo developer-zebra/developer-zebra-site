@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview 
-Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
+Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](../about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 
 #### Platform Support
 **Windows is required for full Enterprise Browser development**. For Mac OS X users, Enterprise Browser 1.3 and higher can be downloaded as a disk image (.dmg), allowing a subset of administrative functions listed below. 
@@ -15,7 +15,7 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 * Copy EnterpriseBrowser `.apk` files to Android devices
 * Copy EnterpriseBrowser `.cab` files to [Stage Now](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
 * Create shortcuts to Android apps using the EB native widget (pushed to the device as part of EB installation)
-* Access the Enterprise Browser [Feature Demo](/enterprise-browser/1-4/guide/featuredemo/) app
+* Access the Enterprise Browser [Feature Demo](../featuredemo/) app
 * Easily link to EB online help
 
 <!-- * Copy EnterpriseBrowser .cab files to Windows Mobile/CE devices -->
@@ -24,7 +24,7 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 Installing Enterprise Browser and building EB apps requires the following: 
 
 * A computer running Windows
-* One or more [supported Zebra devices](/enterprise-browser/1-4/guide/about/#mobile) connected to the computer (as below) 
+* One or more [supported Zebra devices](../about/#mobile) connected to the computer (as below) 
 * USB driver for targeting Zebra devices installed
 * Android Debug Bridge (if targeting Android devices)
 * Microsoft Mobile Device Center (if targeting Windows Mobile/CE devices)
@@ -87,7 +87,7 @@ The Enterprise Browser files and folders will be copied into the Application fol
 
 ## Deployment to Device(s)
 ###From a Windows host
-On Windows host systems, communication from the host to target device(s) is handled by the [Android Debug Bridge](http://developer.android.com/tools/help/adb.html) (ADB) for Android devices and by Mobile Device Center (or ActiveSync on WinXP) for Windows Mobile/CE. It also might be necessary to **install an OEM USB driver to make a USB-attached Android device visible to Windows**. If the device isn't visible to Windows, refer to the [Connections section](/enterprise-browser/1-4/guide/setup#connections), below. 
+On Windows host systems, communication from the host to target device(s) is handled by the [Android Debug Bridge](http://developer.android.com/tools/help/adb.html) (ADB) for Android devices and by Mobile Device Center (or ActiveSync on WinXP) for Windows Mobile/CE. It also might be necessary to **install an OEM USB driver to make a USB-attached Android device visible to Windows**. If the device isn't visible to Windows, refer to the [Connections section](../setup#connections), below. 
 
 * ADB supports USB connections only
 * Mobile Device Center supports USB and Bluetooth connections 
@@ -128,7 +128,7 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 &#55;.  Restart the device to complete the installation. 
 
-Refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide/OndeviceConfig) for help configuring Enterprise Browser following installation.  
+Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
 ###From a Mac to Windows Mobile/CE
 The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Windows Mobile/CE devices is using Bluetooth. 
@@ -155,7 +155,7 @@ While the file is in transit, a dialog will appear on the Mac similar to the ima
 
 **Note: Copy Enterprise Runtimes to internal storage only**.
 
-Refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide/OndeviceConfig) for help configuring Enterprise Browser following installation.  
+Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
 ## Connections
 ### Android devices
@@ -254,7 +254,7 @@ On Windows, this will bring up a window that looks similar to the image below:
 &#53;. If a persistent runtime was installed, perform a cold boot/cleanPS on the device to activate the runtime.
 
 ## Launching the EB App 
-After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](/enterprise-browser/1-4/guide/configreference) for complete details.  
+After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](../configreference) for complete details.  
 
 By default, a screen like the one below will appear: 
 
@@ -287,7 +287,7 @@ The Settings button, if enabled, appears in the UI like the one in the red box b
 
 **WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
 
-The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](/enterprise-browser/1-4/guide/OndeviceConfig).
+The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](../OndeviceConfig).
 
 <!--## Removing Enterprise Browser
 

@@ -7,10 +7,10 @@ layout: guide.html
 ## Overview
 Enterprise Browser is a runtime environment inside which a company's own HTML and application logic is executed, controlled, and given interfaces to a device's hardware (i.e. scanner, imager, etc.) through EB APIs. For Enterprise Browser to work with a company's application, a runtime configuration file called `Config.xml` must be created that includes a pointer to the HTML. This code can be stored on the device itself or on a web server. Either way, a `Config.xml` file is required, and **Enterprise Browser will not start without it**. 
 
-A sample `Config.xml` file is provided as part of the installation and contains some common default settings. However, some parameters must be configured according to the application and/or device being used, and for specific runtime preferences. See the [Config.xml Reference](/enterprise-browser/1-4/guide/configreference) page for details on the usage and options of each of parameter and their possible values.
+A sample `Config.xml` file is provided as part of the installation and contains some common default settings. However, some parameters must be configured according to the application and/or device being used, and for specific runtime preferences. See the [Config.xml Reference](../configreference) page for details on the usage and options of each of parameter and their possible values.
 
 ## Starting an Application
-To set Enterprise Browser to start with an application, find the [StartPage parameter](/enterprise-browser/1-4/guide/configreference#startpage) in the (&lt;General&gt; node of the `Config.xml` file) and enter the URL of the desired HTML application. **Note**: Different steps might be required for scenarios that use different EB APIs. See the [API Overview](/enterprise-browser/1-4/guide/apioverview) for details.
+To set Enterprise Browser to start with an application, find the [StartPage parameter](../configreference#startpage) in the (&lt;General&gt; node of the `Config.xml` file) and enter the URL of the desired HTML application. **Note**: Different steps might be required for scenarios that use different EB APIs. See the [API Overview](../apioverview) for details.
 
 As an example of using a local file called `HelloScan.html`, the following steps would be required:
 

@@ -7,12 +7,12 @@ layout: guide.html
 ##Overview 
 Enterprise Browser includes a powerful logging engine, offering administrators, developers and tech support teams the potential to access a rich, multi-level data streams relating to application execution, events and failures for  debugging an app and analyzing events following a crash or other failure. This guide explains how to enable logging, select logging levels, send messages to the log and to retrieve the log file. 
 
-Logging is hierarchical, and log-event settings in the `Config.xml` file can override or be overridden by others. See the [Logger section of the Config.xml Reference](/enterprise-browser/1-4/guide/configreference/#logger) for more information. 
+Logging is hierarchical, and log-event settings in the `Config.xml` file can override or be overridden by others. See the [Logger section of the Config.xml Reference](../configreference/#logger) for more information. 
 
 -----
 
 ## Enabling Logging
-Logging for an Enterprise Browser app is controlled in the The [Logger section](/enterprise-browser/1-4/guide/configreference/#logger) of the app's `Config.xml` file. 
+Logging for an Enterprise Browser app is controlled in the The [Logger section](../configreference/#logger) of the app's `Config.xml` file. 
 
 **The five levels of log messages**:
 
@@ -78,4 +78,4 @@ Once the log contains sufficient data, it might be desirable to view the logs pe
 
 **Related Guide**:
 
-* **[Config.xml Reference](/enterprise-browser/1-4/guide/configreference/#logger)** 
+* **[Config.xml Reference](../configreference/#logger)** 

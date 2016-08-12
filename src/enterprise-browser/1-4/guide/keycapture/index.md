@@ -26,7 +26,7 @@ The following facts apply generally to keycode mapping for Enterprise Browser:
 ##Mapping Keycodes 
 To assign custom keycodes to Android hard or soft keys, follow these simple steps:  
 
-&#49;. [Deploy Enterprise Browser](/enterprise-browser/1-4/guide/setup) to the device. 
+&#49;. [Deploy Enterprise Browser](../setup) to the device. 
 
 &#50;. Navigate to the installation directory on the device. 
 This is usually the `sdcard0/android/data/com.symbol.enterprisebrowser` directory.

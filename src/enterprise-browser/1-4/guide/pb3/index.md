@@ -12,13 +12,13 @@ See also the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)**.
 -----
 
 ## Config.xml
-The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](/enterprise-browser/1-4/guide/configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
+The single change that is always necessary when migrating to Enterprise Browser from any other platform is to specify the [StartPage](../configreference#startpage) of the app in the Enterprise Browser `Config.xml` file. It's also sometimes necessary to replicate or adjust other relevant settings from old config file to the new, and to copy page files and/or relevant JavaScript API files.
 
 ####Location of the Enterprise Browser `Config.xml` file: 
 * **Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/`
 * **Windows devices**: `\Program Files\EnterpriseBrowser\Config\`
 
-See the **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference)** for more information about settings, parameters and other requirements.
+See the **[Enterprise Browser Config.xml Reference](../configreference)** for more information about settings, parameters and other requirements.
 
 -----
 
@@ -46,14 +46,14 @@ If switching from CE to WM or vice-versa, rendering may differ due to variations
 NEW FOR CHECKING
 
 ### Installation
-To install Enterprise Browser please take a look at the [installation section](/enterprise-browser/1-4/guide/setup?Device Deployment).  If deploying to a Windows CE device, a persistent installation for Webkit should be selected so that Enterprise Browser persists over a cold boot.
+To install Enterprise Browser please take a look at the [installation section](../setup?Device Deployment).  If deploying to a Windows CE device, a persistent installation for Webkit should be selected so that Enterprise Browser persists over a cold boot.
 
 > Note: Do not forget to cold boot the device to complete the installation.
 
 ### Configuration Settings
-The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be updated:
+The [Config.xml](../configreference) file needs to be updated:
 
-1. Set the [StartPage](/enterprise-browser/1-4/guide/configreference?StartPage).
+1. Set the [StartPage](../configreference?StartPage).
 
 		:::xml
 		<Configuration>
@@ -65,7 +65,7 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 		            </General>
 
 
-2. Switch backwards compatibility on. The regular expressions engine can be activated from within the configuration file by setting the value of [UseRegularExpressions](/enterprise-browser/1-4/guide/configreference?UseRegularExpressions) to 1.
+2. Switch backwards compatibility on. The regular expressions engine can be activated from within the configuration file by setting the value of [UseRegularExpressions](../configreference?UseRegularExpressions) to 1.
 
 		:::xml
 		<Configuration>
@@ -94,20 +94,20 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
 * NOSIP not supported. The NOSIP control was a solution for placing a text box onto the page that did not trigger the Soft Input Panel. This predates the APIs that now allow us to hide the SIP or place it off screen. There is no support for NOSIP on Enterprise Browser. To disable the SIP, see the [disabling the SIP](/enterprise-browser/1-4/api-Sip?Disabling%20the%20SIP) section in the SIP API reference.
-* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) not supported. This is a function for Windows Mobile only.
+* [FitToScreenEnabled](../configreference?FitToScreenEnabled) not supported. This is a function for Windows Mobile only.
 
 ## Windows Mobile/CE using IE
 When using IE as the rendering engine only PocketBrowser API's and funtioanlity will be available. API's listed in this help document will not be supported. You may wish to choose to use this option if you are not looking to take advantage of Webkit abilities and/or other functionality that Enterprise Browser provides. This may be an only option for very low memory/CPU devices.
 
 ### Installation
-To install Enterprise Browser please take a look at the [installation section](/enterprise-browser/1-4/guide/setup?Device Deployment).  If deploying to a Windows CE device, a persistent installation for IE should be selected so that Enterprise Browser persists over a cold boot.
+To install Enterprise Browser please take a look at the [installation section](../setup?Device Deployment).  If deploying to a Windows CE device, a persistent installation for IE should be selected so that Enterprise Browser persists over a cold boot.
 
 > Note: Do not forget to cold boot the device to complete the installation.
 
 ### Configuration Settings
-The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be updated:
+The [Config.xml](../configreference) file needs to be updated:
 
-1. Set the [StartPage](/enterprise-browser/1-4/guide/configreference?StartPage).
+1. Set the [StartPage](../configreference?StartPage).
 
 		:::xml
 		<Configuration>
@@ -119,7 +119,7 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 		            </General>
 
 
-2. Switch backwards compatibility on.The regular expressions engine can be activated from within the configuration file by setting the value of [UseRegularExpressions](/enterprise-browser/1-4/guide/configreference?UseRegularExpressions) to 1.
+2. Switch backwards compatibility on.The regular expressions engine can be activated from within the configuration file by setting the value of [UseRegularExpressions](../configreference?UseRegularExpressions) to 1.
 
 		:::xml
 		<Configuration>
@@ -144,7 +144,7 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
-* [PageZoom](/enterprise-browser/1-4/guide/configreference?PageZoom) is not supported on IE. This web view supports text zoom only.
+* [PageZoom](../configreference?PageZoom) is not supported on IE. This web view supports text zoom only.
 * Javascript events onkeydown, onkeypress, onkeyup are not supported in Windows mobile devices running Internet explorer. Use EnterpriseBrowser [Keycapture APIs](/enterprise-browser/1-4/api/keycapture) instead to capture the hardware keypresses.
 
 #### Scrollbars/Fingerscrolling
@@ -154,12 +154,12 @@ In order to support backwards compatibility, PocketBrowser was forced to use PIE
 Since you have chosen Android to run a PocketBrowser v2 application, you should expect some major differences with regard to rendering. The rendering that is used on Android is the stock Webview that comes with the Android SDK.
 
 ### Installation
-To install Enterprise Browser please take a look at the [installation section](/enterprise-browser/1-4/guide/setup?Device Deployment).
+To install Enterprise Browser please take a look at the [installation section](../setup?Device Deployment).
 
 ### Configuration Settings
-The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be updated:
+The [Config.xml](../configreference) file needs to be updated:
 
-1. Set the [StartPage](/enterprise-browser/1-4/guide/configreference?StartPage).
+1. Set the [StartPage](../configreference?StartPage).
 
 		:::xml
 		<Configuration>
@@ -171,7 +171,7 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 		            </General>
 
 
-2. Switch backwards compatibility on.The regular expressions engine can be activated from within the configuration file by setting the value of [UseRegularExpressions](/enterprise-browser/1-4/guide/configreference?UseRegularExpressions) to 1.
+2. Switch backwards compatibility on.The regular expressions engine can be activated from within the configuration file by setting the value of [UseRegularExpressions](../configreference?UseRegularExpressions) to 1.
 
 		:::xml
 		<Configuration>
@@ -196,7 +196,7 @@ The [Config.xml](/enterprise-browser/1-4/guide/configreference) file needs to be
 ### Usage Notes
 * Generic methods RasConnect & RasDisconnect are not supported.
 * NOSIP not supported. The NOSIP control was a solution for placing a text box onto the page that did not trigger the Soft Input Panel. This predates the APIs that now allow us to hide the SIP or place it off screen. There is no support for NOSIP on Enterprise Browser. To disable the SIP, see the [disabling the SIP](/enterprise-browser/1-4/api-Sip?Disabling%20the%20SIP) section in the SIP API reference.
-* [FitToScreenEnabled](/enterprise-browser/1-4/guide/configreference?FitToScreenEnabled) not supported. This is a function for Windows Mobile only.
+* [FitToScreenEnabled](../configreference?FitToScreenEnabled) not supported. This is a function for Windows Mobile only.
 * EMML profiles do not work.
 * Check the device for hardware compatibility, especially the [barcode scanning](http://docs.rhomobile.com/en/2.2.0/rhoelements/scanner) options.
 
@@ -209,13 +209,13 @@ This section provides remarks on peculiarities or dependencies concerning specif
 -----
 
 **Related Guides**: 
-* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
-* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
-* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
-* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+* **[PocketBrowser 2.x Migration Guide](../pb2/)** 
+* **[RhoElements Migration Guide](../elements)**
+* **[RhoMobile Migration guide](../rhomobile)**
+* **[Optimization Guide](../optimization) -** for help minimizing device memory footprint
 
 * **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)**
 
-* **[Enterprise Browser Config.xml Reference](/enterprise-browser/1-4/guide/configreference) -** for more information about settings, parameters and other requirements.
+* **[Enterprise Browser Config.xml Reference](../configreference) -** for more information about settings, parameters and other requirements.
 
 

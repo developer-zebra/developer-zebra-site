@@ -132,5 +132,5 @@ Any of the Deployment License files described above can be mass-deployed using [
 -----
 
 **Related Guides**:
-* **[Enterprise Browser Setup Guide](/enterprise-browser/1-4/guide/setup/) -** help with initial setup, connecting to devices and pushing files
+* **[Enterprise Browser Setup Guide](../setup/) -** help with initial setup, connecting to devices and pushing files
 * **[Zebra licensing system documentation page](https://softwarelicensing.motorolasolutions.com/documentation/index.html) -** licensing information and sample screens

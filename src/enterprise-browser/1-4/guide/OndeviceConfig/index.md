@@ -55,10 +55,10 @@ The on-device settings panel presents four buttons at the bottom of the Settings
 
 * **<u>Back</u> navigates to the previous page** with no prompt. Unsaved changes will be lost. 
 
-* **<u>Reset</u> will revert all values to their factory defaults** as described in the [Config.xml reference guide](/enterprise-browser/1-4/guide/configreference). 
+* **<u>Reset</u> will revert all values to their factory defaults** as described in the [Config.xml reference guide](../configreference). 
 
 ## Configurable Settings
-Below is the list of settings that can be configured on-device for an EB 1.3 app. For the descriptions and instructions for configuring the full set of runbtime configuration parameters please see the [Config.xml reference guide](/enterprise-browser/1-4/guide/configreference).
+Below is the list of settings that can be configured on-device for an EB 1.3 app. For the descriptions and instructions for configuring the full set of runbtime configuration parameters please see the [Config.xml reference guide](../configreference).
 
 **WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the** `Config.xml` **file**.  
 
@@ -119,9 +119,9 @@ Defines the start page of the Enterprise Browser application displayed at launch
 
 * Settings edited on the device take effect the next time Enterprise Browser is launched. 
 
-* Configuring the full set of [runtime settings in the Config.xml](/enterprise-browser/1-4/guide/configreference) still requires a computer. 
+* Configuring the full set of [runtime settings in the Config.xml](../configreference) still requires a computer. 
 
-* To simplify PC-based set up of `Config.xml` files, please refer to the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) for Windows desktops than can edit and deploy `Config.xml` files from a single panel.
+* To simplify PC-based set up of `Config.xml` files, please refer to the [Config Editor utility](../ConfigEditor) for Windows desktops than can edit and deploy `Config.xml` files from a single panel.
 
 * Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields may corrupt the `Config.xml` file. 
 

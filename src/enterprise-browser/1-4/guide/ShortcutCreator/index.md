@@ -13,10 +13,10 @@ Shortcut Utility is a Windows tool that quickly creates shortcuts for Enterprise
 
 Shortcut Utility is included with Zebra Enterprise Browser 1.3. 
 
->**IMPORTANT: This tool relies on settings in the Config.xml**, a device-resident file that controls all runtime settings for Enterprise Browser. For help editing Config.xml files, please refer to the [Config Editor utility guide](/enterprise-browser/1-4/guide/ConfigEditor) and the [Config.xml Reference](/enterprise-browser/1-4/guide/configreference). 
+>**IMPORTANT: This tool relies on settings in the Config.xml**, a device-resident file that controls all runtime settings for Enterprise Browser. For help editing Config.xml files, please refer to the [Config Editor utility guide](../ConfigEditor) and the [Config.xml Reference](../configreference). 
 
 ### QUICK STEPS
-1. Use these instructions only after [installing Enterprise Browser](/enterprise-browser/1-4/guide-setup) (version 1.3 is required). 
+1. Use these instructions only after [installing Enterprise Browser](..-setup) (version 1.3 is required). 
 2. Open Shortcut Utility and **select a platform** (Android or Windows Mobile/CE).
 3. **Select Default or Custom** Config.xml (if Custom, navigate to the file).
 4. **Enter a name** for the shortcut.
@@ -36,7 +36,7 @@ Shortcut Utility is included with Zebra Enterprise Browser 1.3.
 * **Android Debug Bridge (if targeting Android devices)**
 * **Microsoft ActiveSync (if targeting Windows Mobile/CE devices)**
 
-EB Shortcut Utility is included with Zebra Enterprise Browser 1.3. If you don't already have EB 1.3, please [install Enterprise Browser](/enterprise-browser/1-4/guide/setup), then resume from here. 
+EB Shortcut Utility is included with Zebra Enterprise Browser 1.3. If you don't already have EB 1.3, please [install Enterprise Browser](../setup), then resume from here. 
 
 ## Using Shortcut Utility
 
@@ -82,7 +82,7 @@ In the same location are custom folders named for each shortcut created, with th
 **Notes**
 
 * **Shortcut(s) appear on the device _after_ Enterprise Browser is launched following deployment**.
-* **Shortcuts are created _only_ if the &lt;ShortcutCreationEnabled&gt; tag value = 1 or 2**. See [Troubleshooting section](/enterprise-browser/1-4/guide/ShortcutCreator?Troubleshooting). 
+* **Shortcuts are created _only_ if the &lt;ShortcutCreationEnabled&gt; tag value = 1 or 2**. See [Troubleshooting section](../ShortcutCreator?Troubleshooting). 
 * **Shortcuts are placed in the Home Screen on Android and in the Main Screen of WM/CE**. 
 
 ### Mass Deployment (via MDM)
@@ -98,7 +98,7 @@ Shortcuts can be packaged with an Enterprise Browser app (.apk or .cab) and the 
 
 **To prepare an Enterprise Browser app for MDM deployment**: 
 
-&#49;. **Deploy an app for Android (.apk) or Windows Mobile/CE (.cab)** using the [standard device deployment procedures](/enterprise-browser/1-4/guide/setup).
+&#49;. **Deploy an app for Android (.apk) or Windows Mobile/CE (.cab)** using the [standard device deployment procedures](../setup).
 
 &#50;. **Copy the `Config.xml` file from the device to the host PC** and open it in a text editor. **Its location varies by platform**:
 
@@ -106,7 +106,7 @@ Shortcuts can be packaged with an Enterprise Browser app (.apk or .cab) and the 
 
 **WM/CE**: `<internal storage>\Program Files\EnterpriseBrowser\Config\` 
 
-&#51;. **Set the &lt;ShortcutCreationEnabled&gt; value to either 1 or 2**. For behavior of these options, refer to the [Troubleshooting section](/enterprise-browser/1-4/guide/ShortcutCreator?Troubleshooting) (below) or the [Config.xml reference](/enterprise-browser/1-4/guide/configreference). 
+&#51;. **Set the &lt;ShortcutCreationEnabled&gt; value to either 1 or 2**. For behavior of these options, refer to the [Troubleshooting section](../ShortcutCreator?Troubleshooting) (below) or the [Config.xml reference](../configreference). 
 
 &#52;. **Push the `Config.xml` file to its original location on the device**, replacing the original.  
 
@@ -165,7 +165,7 @@ Shortcut icons will be visible to the user in the device's main application area
 
 ## Troubleshooting
 
-Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](/enterprise-browser/1-4/guide-setup?Connections)**. 
+Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](..-setup?Connections)**. 
 
 ![img](../../images/Utilities/Shortcut_Creator_05.jpg)
 

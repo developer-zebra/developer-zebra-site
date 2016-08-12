@@ -9,9 +9,9 @@ layout: guide.html
 
 Enterprise Browser contains a runtime environment inside which a company's new or legacy HTML and JavaScript application pages and logic can be executed, controlled, and given interfaces to device hardware (i.e. scanners, card readers, etc.) through Enterprise Browser APIs. This guide provides an overview and basic guidance for using the APIs. The capabilities of individual APIs are detailed in the [Enterprise Browser API Guide](/enterprise-browser/1-4/api/). 
 
-See the [Migration Guides](/enterprise-browser/1-4/guide/) for information about accessing PocketBrowser, RhoElements and other legacy APIs. 
+See the [Migration Guides](../) for information about accessing PocketBrowser, RhoElements and other legacy APIs. 
 
-See the [Compatibility Matrix](/enterprise-browser/1-4/guide/compatibility/) for API support information relating to specific operating systems and webkits. 
+See the [Compatibility Matrix](../compatibility/) for API support information relating to specific operating systems and webkits. 
 
 ## Using JavaScript APIs
 Enterprise Browser APIs are enabled differently the app is running from HTML stored on the device or on a remote server. Either way, the relevant JavaScript files must be referenced in the appropriate location in the HTML. 
@@ -21,7 +21,7 @@ The Enterprise Browser installation by default adds a `C:/EnterpriseBrowser/Java
 
 * `/EnterpriseBrowser/` - contains the Enterprise Browser JavaScript API files:
 	* **ebapi-modules.js** - includes all `EB.module` APIs 
-	* **individual JS modules** - for [optimizing footprint](/enterprise-browser/1-4/guide/optimization) by including only required modules
+	* **individual JS modules** - for [optimizing footprint](../optimization) by including only required modules
 * `/BackwardCompatibility/` - contains legacy PocketBrowser and RhoElements 2.x APIs:
 	* **rhoapi-modules.js** - for supporting RhoMobile applications
 	* **elements.js** - for supporting RhoElements 2.x and PocketBrowser 2.x/3.x applications 
@@ -29,11 +29,11 @@ The Enterprise Browser installation by default adds a `C:/EnterpriseBrowser/Java
 -----
 
 **Related Guides**: 
-* **[PocketBrowser 2.x Migration Guide](/enterprise-browser/1-4/guide/pb2/)** 
-* **[PocketBrowser 3.x Migration Guide](/enterprise-browser/1-4/guide/pb3/)**
-* **[RhoElements Migration Guide](/enterprise-browser/1-4/guide/elements)**
-* **[RhoMobile Migration guide](/enterprise-browser/1-4/guide/rhomobile)**
-* **[Optimization Guide](/enterprise-browser/1-4/guide/optimization) -** for help minimizing device memory footprint
+* **[PocketBrowser 2.x Migration Guide](../pb2/)** 
+* **[PocketBrowser 3.x Migration Guide](../pb3/)**
+* **[RhoElements Migration Guide](../elements)**
+* **[RhoMobile Migration guide](../rhomobile)**
+* **[Optimization Guide](../optimization) -** for help minimizing device memory footprint
 
 ####Access from web pages
 When running web pages from a server, Enterprise Browser is essentially acting as a simple browser, loading the pages and executing any JavaScript within. To use the Enterprise Browser APIs from within an HTML app, the `ebapi-modules.js` must be stored on the web server in a location accessible to all of the app's pages. Typically this will be the same `/js` folder in which other JavaScript libraries are stored. 

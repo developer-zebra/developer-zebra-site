@@ -24,7 +24,7 @@ Windows Mobile and Windows CE require that the `PrintingService` application is 
 * The method [`Printer.stopSearch()`](/enterprise-browser/1-4/api/printing/#stopsearch) is disabled.
 
 ###About USB Printing
-The ability to print via USB was introduced in Enterprise Browser 1.3, and uses the `CONNECTION_TYPE_USB` parameter available in that and higher versions only. **USB printing requires a USB "On-The-Go" (OTG) cable or adapter and one of [Zebra's printers with USB printing support](/enterprise-browser/1-4/guide/about/#printers)** or a compatible third-party printer. 
+The ability to print via USB was introduced in Enterprise Browser 1.3, and uses the `CONNECTION_TYPE_USB` parameter available in that and higher versions only. **USB printing requires a USB "On-The-Go" (OTG) cable or adapter and one of [Zebra's printers with USB printing support](../about/#printers)** or a compatible third-party printer. 
 
 Android and Windows Mobile/CE printing is supported via direct USB OTG connection or through a cradle with OTG adapter. Windows Mobile/CE devices also must be in "Host Mode," which is enabled under **USB Config in the Settings panel**. Connecting an OTG cable to an Android device invokes host mode automatically.
 
@@ -132,7 +132,7 @@ The Bluetooth MAC address consists of six pairs of hexadecimal digits separated 
 **NOTE**: When attepting to connect via Bluetooth or Wi-Fi, be sure the device's corresponding radio is turned on. If using Bluetooth, the printer should be in "discoverable" mode. 
 
 ###Finding via USB
-Printing via USB is supported from Zebra enterprise mobile computers only to [Zebra's supported printers](/enterprise-browser/1-4/guide/about/#printers), which must be connected **using an OTG cable or adapter.**  Windows Mobile/CE devices also must be in "Host Mode," which is found under USB Config in the Settings panel.
+Printing via USB is supported from Zebra enterprise mobile computers only to [Zebra's supported printers](../about/#printers), which must be connected **using an OTG cable or adapter.**  Windows Mobile/CE devices also must be in "Host Mode," which is found under USB Config in the Settings panel.
 
 **Use the `search.Printers` method and the** `CONNECTION_TYPE_USB` **parameter to search for printer(s) connected to the mobile device's USB port**:
 

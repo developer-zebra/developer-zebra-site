@@ -8,7 +8,7 @@ layout: guide.html
 
 Runtime configuration settings of Enterprise Browser apps are managed through the `Config.xml` file, a required file that must accompany every EB app. The `Config.xml` determines features and behavior of the EB runtime, including its start-up page, keys that can be intercepted by an app, and whether to pre-load modules on startup. A default configuration file is provided as part of the Enterprise Browser installation, and contains some (though not all) of the most common settings. 
 
-The default `Config.xml` file for Android devices is displayed below, followed by explanations of all tags and parameter settings for Android and Windows Mobile/CE. The EB `Config.xml` can be edited with an ordinary text editor or with the [Config Editor utility](/enterprise-browser/1-4/guide/ConfigEditor) included with the installation of Enterprise Browser 1.3 and higher. 
+The default `Config.xml` file for Android devices is displayed below, followed by explanations of all tags and parameter settings for Android and Windows Mobile/CE. The EB `Config.xml` can be edited with an ordinary text editor or with the [Config Editor utility](../ConfigEditor) included with the installation of Enterprise Browser 1.3 and higher. 
 
 ### Config.xml Location
 The location of the configuration file on the device varies by target and platform:
@@ -21,7 +21,7 @@ The location of the configuration file on the device varies by target and platfo
 	* **Android**: `/Android/data/com.symbol.enterprisebrowser`
 	* **Windows**: `\Program Files\EnterpriseBrowser\Config`
 
-* If multiple `Config.xml` files are required for a single device, they can be configured and selected at runtime using the /C: configuration parameter or by using Shortcuts. See the [Shortcut Creator Guide](/enterprise-browser/1-4/guide/ShortcutCreator) for details.
+* If multiple `Config.xml` files are required for a single device, they can be configured and selected at runtime using the /C: configuration parameter or by using Shortcuts. See the [Shortcut Creator Guide](../ShortcutCreator) for details.
 
 ####Persistent Installations
 If a `Config.xml` must be retained after a cold boot, a persistent installation can be selected (applies to Windows devices only). In such systems: 
@@ -365,7 +365,7 @@ Specifies the length of time (in milliseconds) to display the image defined by t
 
 ## IntentReceiver
 ### EnableReceiver
-Determines whether an Enterprise Browser app will receive Intent actions, which work with the Intent function for inter-application communication. When enabled, the application can be called upon by other apps to perform Actions, such as capturing an image or scanning a barcode. For more information about the IntentReceiver tag, see the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) and the [Android Developer Forum](http://developer.android.com/reference/android/content/Intent.html). 
+Determines whether an Enterprise Browser app will receive Intent actions, which work with the Intent function for inter-application communication. When enabled, the application can be called upon by other apps to perform Actions, such as capturing an image or scanning a barcode. For more information about the IntentReceiver tag, see the [Remarks section](../configreference#remarks) and the [Android Developer Forum](http://developer.android.com/reference/android/content/Intent.html). 
 
 **Possible Values**:
 
@@ -1237,7 +1237,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 ### ResizeOnSIP
 **Applies to Android and Windows Mobile only**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. 
 
-**Note: On Windows Mobile devices**, screen rotation from portrait to landscape mode can sometimes cause the SIP to be hidden from view, and/or on Windows Mobile/CE to behave abnormally. To avoid this issue, Zebra recommends that the [AutoRotate](/enterprise-browser/1-4/guide/configreference/#autorotate) parameter for screen orientation be disabled.  
+**Note: On Windows Mobile devices**, screen rotation from portrait to landscape mode can sometimes cause the SIP to be hidden from view, and/or on Windows Mobile/CE to behave abnormally. To avoid this issue, Zebra recommends that the [AutoRotate](../configreference/#autorotate) parameter for screen orientation be disabled.  
 
 **Possible Values**:
 
@@ -1443,7 +1443,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ## DOM injection
 ### CustomDOMElements 
-Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](/enterprise-browser/1-4/guide/DOMInjection). **Applies to Android and Windows Mobile/CE Webkit engines**. 
+Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../DOMInjection). **Applies to Android and Windows Mobile/CE Webkit engines**. 
 
 **Possible Values**:
 
@@ -1663,7 +1663,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](/
 
 ## ZoomKey
 ### ZoomInKey
-Controls zoom-IN behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
+Controls zoom-IN behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](../configreference#remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
 
 **Possible Values**:
 
@@ -1674,7 +1674,7 @@ Controls zoom-IN behavior for application text using function key(s) configured 
 	<ZoomInKey value="0x70"/>
 
 ### ZoomOutKey
-Controls zoom-OUT behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](/enterprise-browser/1-4/guide/configreference#remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
+Controls zoom-OUT behavior for application text using function key(s) configured with the EnableFunctionKey_X parameter. This setting will not be applied if the parameter is missing, left blank or contains an invalid keycode. **Note**: The function keys used for Zoom-IN or Zoom-OUT operation will not be accessible via the current or previous Key Capture APIs. Other requirements are detailed in the [Remarks section](../configreference#remarks) at the bottom of this guide. **Applies to Android with stock webkit and WM/CE with IE or Zebra Webkit**.
 
 **Possible Values**:
 
@@ -1698,7 +1698,7 @@ Allows hardware keys of an Android device running Enterprise Browser 1.2 (or lat
 
 ## Shortcut Creation
 ###ShortcutCreationEnabled
-**Applicable only when using the Enterprise Browser Shortcut Creator utility;** otherwise ignored. Controls automatic creation of app shortcuts on Android and Windows Mobile/CE target devices when Enterprise Browser is launched. When option 1 is selected, checks for and creates new shortcuts at every launch. Setting persists following EB uninstall/re-install. Setting is lost after cold reboot. Disabled by default.  For more information, please refer to the [Shortcut Creator guide](/enterprise-browser/1-4/guide/ShortcutCreator). 
+**Applicable only when using the Enterprise Browser Shortcut Creator utility;** otherwise ignored. Controls automatic creation of app shortcuts on Android and Windows Mobile/CE target devices when Enterprise Browser is launched. When option 1 is selected, checks for and creates new shortcuts at every launch. Setting persists following EB uninstall/re-install. Setting is lost after cold reboot. Disabled by default.  For more information, please refer to the [Shortcut Creator guide](../ShortcutCreator). 
 
 **Possible Values**:
 
@@ -1723,7 +1723,7 @@ Controls whether HTTP connections will be maintained between requests. When enab
 	<KeepAlive value="1"/>
 
 ## usedwforscanning
-**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](/enterprise-browser/1-4/api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
+**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](/enterprise-browser/1-4/api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
 
 **Possible Values**:
 
@@ -1742,7 +1742,7 @@ Due to its asynchronous battery notification, the Enterprise Tablet does not sup
 > **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 ### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
-Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](/enterprise-browser/1-4/guide/datawedge). **This issue applies to Android only**. 
+Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](../datawedge). **This issue applies to Android only**. 
 
 ### <a name="_fnbehavior"></a>FunctionKeysCapturable-EnableFunctionKey Interaction
 **Applies to Windows Mobile/CE devices only**. 

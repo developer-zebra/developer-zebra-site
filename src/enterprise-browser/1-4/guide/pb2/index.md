@@ -201,8 +201,8 @@ Optionally, an edited file can be placed in both directories, with changes takin
 ## Windows Mobile/CE using Webkit 
 **Complete this section only after following the [Common Steps For Most Migrations](#commonstepsformostmigrations) above**, and only if migrating to Windows Mobile or Windows CE with Webkit. If using the IE rendering engine, go back to the previous section. 
 
-####Enable ActiveX Controls
-If the PocketBrowser uses ActiveX controls, the legacy ActiveX object must be preloaded when EB initializes.
+####Enable ActiveX Objects
+If the PocketBrowser uses ActiveX controls, the legacy ActiveX Objects must be preloaded when EB initializes.
 
 **Specify a value of "1" in the [PreloadLegacyActiveX](/enterprise-browser/1-4/guide/configreference/#preloadlegacyactivex) parameter**, as below:
 

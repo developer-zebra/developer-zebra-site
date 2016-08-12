@@ -589,7 +589,7 @@ Sets the Enterprise Browser app to display in full screen mode, hiding the OS fr
 	<FullScreen value="0"/>
 
 ### ShowLicenseConfirmation
-**Applies to Windows Mobile/CE only**. Controls the display of the “Licensed to…” dialog at launch (on licensed devices only). Has no effect on unlicensed devices. 
+**Applies to Windows Mobile/CE**. Controls the display of the “Licensed to…” dialog at launch (on licensed devices only). Has no effect on unlicensed devices. 
 
 **Possible Values**:
 
@@ -940,7 +940,7 @@ Defines plug-ins to be pre-loaded rather than loading as needed by a program fun
 	<Preload value="MyModule"/>
 
 ### PreloadLegacyActiveX
-Determines whether to pre-load the ActiveX object in webkit. Use this for backward compatibility with code written in PocketBrowser that used the ActiveXObject. **Applies to WM CE with the Zebra Webkit only**.
+**Applies to Windows Mobile/CE with the Zebra Webkit only**. Determines whether to pre-load the ActiveX object in webkit. Use this for backward compatibility with code written in PocketBrowser that used the ActiveXObject.
 
 **Possible Values**:
 
@@ -952,7 +952,7 @@ Determines whether to pre-load the ActiveX object in webkit. Use this for backwa
 	<PreloadLegacyActiveX value="1"/>
 
 ### PreloadLegacyGeneric
-Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX object in Webkit. On the Enterprise Tablet this plug-in is automatically loaded when the JSObjects plug-in is preloaded.
+**Applies to Windows Mobile/CE with the Zebra Webkit only**. Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX object in Webkit. On the Enterprise Tablet this plug-in is automatically loaded when the JSObjects plug-in is preloaded.
 
 **Possible Values**:
 
@@ -964,7 +964,7 @@ Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX obje
 	<PreloadLegacyGeneric value="1"/>
 
 ### PreloadLegacyODAX
-Determines whether to pre-load the NPAPI plug-in to mimic the ODAX ActiveX object in Webkit. Does not apply to the Enterprise Tablet. 
+**Not applicable to the Enterprise Tablet**. Determines whether to pre-load the NPAPI plug-in to mimic the ODAX ActiveX object in Webkit. 
 
 **Possible Values**:
 
@@ -991,7 +991,7 @@ Whether or not to preload the NPAPI plugin to mimic the NoSIP ActiveX object in 
  -->
 
 ### PreloadLegacyAirBeam
-Determines whether to pre-load the NPAPI plug-in to mimic the AirBeam ActiveX object in Webkit. Not applicable to the Enterprise Tablet.
+**Not applicable to the Enterprise Tablet**. Determines whether to pre-load the NPAPI plug-in to mimic the AirBeam ActiveX object in Webkit. 
 
 **Possible Values**:
 
@@ -1028,7 +1028,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 ## Scrolling
 ### ScrollTechnique
-Specifies the technique used to scroll the viewport. The **FingerScroll** setting permits scrolling around a page with finger swiping (may interfere with drawing on a Canvas element). **Scrollbars** will be presented when the page is too large to fit the viewport. A value of "None" will display no scrollbars and cause the page to be unresponsive to finger swipes. **The ScrollTechnique setting is not supported on Android or on Windows CE devices that use the IE rendering engine**. 
+**Not supported on Android or on Windows CE devices that use the IE rendering engine**. Specifies the technique used to scroll the viewport. The **FingerScroll** setting permits scrolling around a page with finger swiping (may interfere with drawing on a Canvas element). **Scrollbars** will be presented when the page is too large to fit the viewport. A value of "None" will display no scrollbars and cause the page to be unresponsive to finger swipes.
 
 **Possible Values**:
 
@@ -1044,7 +1044,7 @@ Specifies the technique used to scroll the viewport. The **FingerScroll** settin
 ### Username
 **WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
 
-Specifies the username to be provided automatically when Enterprise Browser is instructed to navigate to a page that requires basic or digest HTTP authentication. If this setting is absent, a login prompt will be displayed with a username of (“”). Enterprise Browser will permit multiple incorrect entries before presenting the 'HTTP 401 Unauthorized' page. **Applies to Android and WM/CE.** 
+**Applies to Android and Windows Mobile/CE.** Specifies the username to be provided automatically when Enterprise Browser is instructed to navigate to a page that requires basic or digest HTTP authentication. If this setting is absent, a login prompt will be displayed with a username of (“”). Enterprise Browser will permit multiple incorrect entries before presenting the 'HTTP 401 Unauthorized' page.  
 
 **Possible Values**:
 
@@ -1057,7 +1057,7 @@ Specifies the username to be provided automatically when Enterprise Browser is i
 ### Password
 **WARNING: Free-form text fields (i.e. username and password) can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields will corrupt the Config.xml file**. 
 
-Specifies the password to be provided automatically when Enterprise Browser is instructed to navigate to any page that requires basic or digest HTTP authentication. If this setting is absent, a login prompt will be displayed with a password of (“”). Enterprise Browser will permit multiple incorrect entries before presenting the 'HTTP 401 Unauthorized' page. When used with IE engine, will permit multiple incorrect entries. **Applies to Android and WM/CE**. 
+**Applies to Android and Windows Mobile/CE**. Specifies the password to be provided automatically when Enterprise Browser is instructed to navigate to any page that requires basic or digest HTTP authentication. If this setting is absent, a login prompt will be displayed with a password of (“”). Enterprise Browser will permit multiple incorrect entries before presenting the 'HTTP 401 Unauthorized' page. When used with IE engine, will permit multiple incorrect entries. 
 
 **Possible Values**:
 
@@ -1139,7 +1139,7 @@ Contains the password for accessing the Settings page when password function is 
 
 ## HTMLStyles
 ### CaretWidth
-Specifies the width (in pixels) of the textbox / text-area caret. If unspecified, defaults to ‘1’. **Applies only to Webkit on Windows Mobile or Windows CE**. 
+**Applies only to Webkit on Windows Mobile or Windows CE**. Specifies the width (in pixels) of the textbox / text-area caret. If unspecified, defaults to ‘1’.  
 
 **Possible Values**:
 
@@ -1152,7 +1152,7 @@ Specifies the width (in pixels) of the textbox / text-area caret. If unspecified
 
 
 ###ClearTypeEnabled
-Controls whether ClearType is used. **Applies to Windows Mobile only**.
+**Applies to Windows Mobile only**. Controls whether ClearType is used. 
 
 **Possible Values**:
 
@@ -1198,7 +1198,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<FontDirectory value="\\Windows"/>
 
 ###JavascriptEnabled
-Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only to Windows Mobile with IE engine**. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 
+**Applies only to Windows Mobile with IE engine**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 
 
 **Possible Values**:
 
@@ -1262,7 +1262,7 @@ Controls whether JavaScript is enabled on Windows Mobile devices. **Applies only
 
 ## System
 ### LowBatteryScan
-Controls whether the scanner can be used when battery charge level is low. Set to ‘0’ to disable scanning with low battery and ‘1’ to enable. Can be overridden by calling `Barcode.enable`. **Applies to Android and WM/CE**.
+**Applies to Android and Windows Mobile/CE**. Controls whether the scanner can be used when battery charge level is low. Set to ‘0’ to disable scanning with low battery and ‘1’ to enable. Can be overridden by calling `Barcode.enable`. 
 
 **Possible Values**:
 

@@ -73,7 +73,7 @@ Example meta-tag specification:
 -----
 
 ### Deploy Legacy APIs
-Running a RhoElements2.x app in Enterprise Browser requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
+**Applies to Android devices only**. Running a RhoElements2.x app in Enterprise Browser for Android requires that the legacy APIs (contained in the `elements.js` file) be available to any HTML page rendered on the device that needs access to an API. For example, if a page exists for controlling the device scanner, that page's HTML must contain a reference to `elements.js`. The file should generally be located in the same place as the HTML pages themselves, which can be on the device or a server. See the [API Usage Guide](/enterprise-browser/1-4/guide/apioverview/) for more information. 
 
 **To Deploy the** `elements.js` **file**:
 
@@ -97,7 +97,7 @@ Running a RhoElements2.x app in Enterprise Browser requires that the legacy APIs
 -----
 
 ### Enable ActiveX Objects
-If the RhoElements app uses ActiveX controls, the legacy ActiveX and generic objects must be preloaded when EB initializes. 
+**Applies to Windows Mobile/CE devices only**. If the RhoElements app uses ActiveX controls, the legacy ActiveX and generic objects must be preloaded when EB initializes. 
 
 **Specify a value of "1" in the [PreloadLegacyActiveX](/enterprise-browser/1-4/guide/configreference/#preloadlegacyactivex) [PreloadLegacyGeneric](/enterprise-browser/1-4/guide/configreference/#preloadlegacygeneric) parameters**, as below:
 

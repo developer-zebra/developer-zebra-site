@@ -134,7 +134,7 @@ Sets the width of the Settings button.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Sets the image to be displayed when the Settings Button is in the 'up' (not pressed) state. [See Remarks](/enterprise-browser/1-4/api/settingsButton?Remarks).
+Sets the image to be displayed when the Settings Button is in the 'up' (not pressed) state. [See Remarks](/enterprise-browser/1-4/api/settingsButton#remarks).
 
 ####Possible Value
 * URL or fully-qualified local path to image
@@ -152,7 +152,7 @@ Sets the image to be displayed when the Settings Button is in the 'up' (not pres
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Sets the image to be displayed when the Settings Button is in the 'down' state (pressed). [See Remarks](/enterprise-browser/1-4/api/settingsButton?Remarks).
+Sets the image to be displayed when the Settings Button is in the 'down' state (pressed). [See Remarks](/enterprise-browser/1-4/api/settingsButton#remarks).
 
 ####Possible Value
 * URL or fully-qualified local path to image
@@ -187,5 +187,5 @@ In this example, the Settings button is made visible and its top and left coordi
 	<META HTTP-Equiv="SettingsButton" Content="Top:50">
 	<META HTTP-Equiv="SettingsButton" Content="Left:50">
 
-**Note**: Button position will vary based on whether the display is in portrait or landscape mode. To lock the screen in portrait mode, please refer to the [Screen orientation section](/enterprise-browser/1-4/guide/configreference?AutoRotate) of the [Config.xml Reference](/enterprise-browser/1-4/guide/configreference).   
+**Note**: Button position will vary based on whether the display is in portrait or landscape mode. To lock the screen in portrait mode, please refer to the [Screen orientation section](/enterprise-browser/1-4/guide/configreference#autorotate) of the [Config.xml Reference](/enterprise-browser/1-4/guide/configreference).   
 

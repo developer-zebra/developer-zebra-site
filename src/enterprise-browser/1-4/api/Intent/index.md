@@ -146,7 +146,7 @@ Synchronous Return:
 ###Registering Intent Receiver
 
                     
-For an Android app to receive intent data, the Intent receiver must be registered in the app's `Config.xml` file. Please refer to the <a href="#guide-configreference?Intent">Intent section of the EB Config Reference</a> for more information. 
+For an Android app to receive intent data, the Intent receiver must be registered in the app's `Config.xml` file. Please refer to the <a href="#guide-configreference#intent">Intent section of the EB Config Reference</a> for more information. 
                     
                 
 

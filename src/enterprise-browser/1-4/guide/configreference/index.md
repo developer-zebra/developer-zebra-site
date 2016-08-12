@@ -403,7 +403,7 @@ Specifies the Category under which the receiver is to be registered. There can b
 ## DebugButtons
 
 ### DebugButtonsEnabled
-When enabled, presents a set of controls useful for development and debugging purposes. **Note: When debug buttons are enabled**, the [Gesture API](/enterprise-browser/1-4/api/Gesture) might not function as expected, and screen distortion may be displayed while scrolling on CE devices that use the IE rendering engine. 
+When enabled, presents a set of controls useful for development and debugging purposes. **Note: When debug buttons are enabled**, the [Gesture API](/enterprise-browser/1-4/api/Gesture) might not function as expected, and screen distortion might be displayed while scrolling on CE devices that use the IE rendering engine. 
 
 **Possible Values**:
 
@@ -1250,6 +1250,8 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 
 ### EnableSIP
 **Applies to Enterprise Browser 1.2 for Android only**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, use the [SIP API](/enterprise-browser/1-4/api/Sip). On Windows Mobile/CE, use the top and left position parameters of the SIP module to position it off the screen and make it inaccessible to the user.
+
+**Note: On devices running Windows CE 6**, screen distortion might be displayed when scrolling while the SIP module is enabled. 
 
 **Possible Values**:
 

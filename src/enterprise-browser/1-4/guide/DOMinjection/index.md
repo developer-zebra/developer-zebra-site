@@ -37,15 +37,15 @@ To use DOM injection, **ALL of the following must be true**:
 **_DOM injection is NOT currently supported on Windows Mobile devices using the IE engine_**. 
 
 
-### Step 1- Prepare the 'tags' file
+### Step 1- Prepare the "tags" file
 
 * **Create a text file to contain the desired DOM-injection elements** using the tagging syntax below. This will become the list of elements that will be injected into the DOM, and will specify the pages to receive the injections. 
 
-In the sample tag file below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments, and in further detail below. 
+In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments, and in further detail below. 
 
 
 	:::xml
-	
+	<!--Sample tags file -->
 	<!--FILENAME: 'mytags.txt' -->
 	<!--DESC: 'tags' file for DOM Injection -->
 
@@ -83,9 +83,9 @@ In the sample tag file below, notice a syntax similar to that of ordinary HTML t
 
 Attributes of DOM Injection tags: 
 
-**Note that the 'pages' attribute specifies the file name of the page into which the element defined in the tag will be injected**. The following rules apply: 
+**Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag will be injected**. The following rules apply: 
 
-* Assumes an '.html' file extension; specify extension if different
+* Assumes an ".html" file extension; specify extension if different
 * For local files, works from directory relative to the installation root; include qualified path if different 
 * For server-based CSS or JavaScript files, works relative to the app's start page; include qualified URL if different
 * Accepts wildcard (*) character to inject all files in relative or specified directory

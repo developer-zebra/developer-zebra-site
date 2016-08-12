@@ -147,7 +147,7 @@ The password for the HTTP or FTP server if required.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-On a filetransfer that results in local file storage, createFolders can automatically create the directory path.
+On a filetransfer that results in local file storage, createFolders can automatically create the directory path. Value must be set to "True" if destination folder does not exist. See [Remarks](#remarks).  
 
 ### Possible Values
 
@@ -184,24 +184,23 @@ The default port settings are 80 for HTTP and 21 for FTP.
 Remember that in Javascript the '\' character is the escape character so to use a backslash in the URL use '\'. This is not the case when specifying the URL via a meta tag where a single '\'' will suffice. See the examples above.
 
 ###Setting up a Transfer
-File transfer is designed to be configured before any transfer() is made. Once a transfer hs been initiated the parameters can not be guaranteed to be the same for the next transfer, therefore set all non default parameters before starting the transfer.
+File transfer is designed to be configured prior to any transfer() is made. Once a transfer hs been initiated, the parameters cannot be guaranteed the same for a subsequent transfer. Therefore, all non-default parameters should be set before starting each transfer.
 
 ###Creating a fully qualified URL
-The protocol, port number, username (optional) and password (optional) are all derived from the URL string and should be specified in the following manner: [protocol]://[username]:[password@]Server[:Port]FileNameAndPath. FTP Example: ftp://admin:root@192.168.1.1:2500/Folder/file.txt. HTTP Example: http://admin:root@192.168.1.1:8080/Folder/upload.aspx
+The protocol, port number, username (optional) and password (optional) are all derived from the URL string, and should be specified in the following manner: [protocol]://[username]:[password@]Server[:Port]FileNameAndPath. FTP Example: ftp://admin:root@192.168.1.1:2500/Folder/file.txt. HTTP Example: http://admin:root@192.168.1.1:8080/Folder/upload.aspx
 
 ###Relative URLs
-The FileTransfer meta tag also supports relative URLs, for example if the current page’s path is `http://192.168.0.1/myElementsApp/index.html` and you specify 
-      <META HTTP-Equiv="FileTransfer" Content="Source:url('../file.xls')">
-then the source file will be `http://192.168.0.1/file.xls`. This notation can also be used for FTP upload and file URLs. Note that the relative URL must start with a '.' so to specify a file in the same directory as your application page use `Source:url('./file.xls')`
+The FileTransfer meta tag also supports relative URLs. For example, if the current page’s path is `http://192.168.0.1/myElementsApp/index.html` and the specified value is: &lt;META HTTP-Equiv="FileTransfer" Content="Source:url('../file.xls')"&gt;, the source file will be `http://192.168.0.1/file.xls`. This notation also can be used for FTP upload and file URLs. Note that the relative URL must start with a period (.). To specify a file in the same directory as the application page, use `Source:url('./file.xls')`. 
 
 ###Maximum File Size
-The maximum file size which can be transferred is about 4MB but is also dependent on the memory available to the device and the transport protocol selected. For file sizes above 2MB on lower memory devices alternate methods for transferring files should be considered.
+The maximum file size that can be transferred is about 4MB, and depends on the memory available to the device and the selected transport protocol. On memory-constrained devices, alternate methods of file transfer files should be considered for files larger than 2MB.
 
 ###Platform differences
-Although the file transfer functionality has the same behavior on all supported platforms the vast majority of the times, there might be scenarios where the Android version may return different error codes when compared to the Windows (CE, Mobile) version.
+While the FileTransfer API provides the same functionality on all supported platforms, different error codes might be seen on Android and Windows Mobile/CE.
 
-#File transfer result code 
+###File transfer result code 
 If an invalid username or password are used on an FTP transfer to a remote server the response returned is 0 instead of the expected 12014
 
-
+###CreateFolders 
+The CreateFolder method must be set to "True" if one or more destination folders are to be created to receive transferred file(s). Failure to do so could result in an incorrect "File Received" message. 
 

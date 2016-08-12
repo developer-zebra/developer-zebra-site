@@ -403,7 +403,7 @@ Specifies the Category under which the receiver is to be registered. There can b
 ## DebugButtons
 
 ### DebugButtonsEnabled
-When enabled, presents a set of controls useful for development and debugging purposes. **Note: When debug buttons enabled**, the [Gesture API](/enterprise-browser/1-4/api/Gesture) might not function as expected, and screen distortion may be displayed while scrolling on CE devices that use the IE rendering engine. 
+When enabled, presents a set of controls useful for development and debugging purposes. **Note: When debug buttons are enabled**, the [Gesture API](/enterprise-browser/1-4/api/Gesture) might not function as expected, and screen distortion may be displayed while scrolling on CE devices that use the IE rendering engine. 
 
 **Possible Values**:
 

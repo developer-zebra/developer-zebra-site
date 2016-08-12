@@ -6,7 +6,7 @@ layout: guide.html
 ---
 ## Overview
 
-Just as debugging should be thought of as a vital part of every development cycle, on-device debugging should be part of any effective testing regimen. Although much can be accomplished using emulators and an IDE, applications often behave differently when running on hardware, and features such as [Barcode](../../api/api/barcode) scanning are impossible to test without the use of physical hardware to perform the scan and acquire the data.
+Just as debugging should be thought of as a vital part of every development cycle, on-device debugging should be part of any effective testing regimen. Although much can be accomplished using emulators and an IDE, applications often behave differently when running on hardware, and features such as [Barcode](../../api/barcode) scanning are impossible to test without the use of physical hardware to perform the scan and acquire the data.
 
 This guide includes instructions for enabling debugging on an Android device and describes three methods of debugging Enterprise Browser apps while they're running on a device:  
 
@@ -49,28 +49,27 @@ Google Remote Debugging works with native Android apps that use WebView as well 
 The target device must have USB debugging enabled. This feature is found in **Settings >> Developer Options** panel, which is hidden by default. Here's how to **un-hide Developer options** (if necessary) **and enable USB debugging**: 
 
 1. Go to **Settings >> About Phone**
-2. **Go to the 'Build Number' box** (by scrolling all the way to the bottom)
+2. **Go to the "Build Number box"** (by scrolling all the way to the bottom)
 3. **Tap the Build Number box seven times** 
 4. **Return to Settings** and **tap Developer Options** 
 5. **Place a check in the Enable USB Debugging** box
 
 ![img](../../images/debugging/Android_developerOptions.png)
 
-
 _Click on any image to enlarge_.
 
 ###2. Discover Device (in Desktop Chrome)
-If you haven't already done so, **connect your device to an available USB port on the development host** and **enable device detection in Chrome**: 
+If not already done, **connect the device to an available USB port on the development host** and **enable device detection in Chrome**: 
 
 >![Chrome Detect](../../images/debugging/Chrome_detect_USB.png)
 
 1. Open a browser window and **enter 'chrome://inspect'** in the address bar. You should see a screen similar the one above.
 
-2. **Check the 'Discover USB Devices' checkbox**. Your mobile device should appear along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../api/guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../api/guide/setup)). 
+2. **Check the "Discover USB Devices" checkbox**. The mobile device appears along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)). 
 
 3. **Tap OK on the device** to complete the connection
 
-4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../api/guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../api/guide/setup)) for that procedure.
+4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)) for that procedure.
 
 5. At this point you should be ready to begin debugging. Once your app is deployed and running on the device, the chrome://inspect page should look something like the one shown below, with your device and a link to its debug-enabled WebViews. **To begin debugging, click an inspect link.** 
 
@@ -210,7 +209,7 @@ The example below shows results from an attempt to use the JavaScript API to che
 In the example, the Console is used to verify that JavaScript APIs are functioning properly. A return of the correct system platform ‘Android’ proves that the System API is working. A return of the correct scanned barcode value likewise proves that the Barcode module is working properly.
 
 <b>Here’s another important benefit of the Weinre console</b>.
-Notice that when the barcode callback handler function is executed, we are using the form `console.log(e)`, where `e` is the callback return object. This allows us to inspect the object right in the console. It also simplifies validation because we see that it contains a barcode property and a status property, exactly as described in the [Barcode.take( ) method](../../api/api/barcode) description. Alternative means, such as adding code for outputting to a log and then searching and retrieving the information from the device, can be time-consuming and error-prone.
+Notice that when the barcode callback handler function is executed, we are using the form `console.log(e)`, where `e` is the callback return object. This allows us to inspect the object right in the console. It also simplifies validation because we see that it contains a barcode property and a status property, exactly as described in the [Barcode.take( ) method](../../api/barcode) description. Alternative means, such as adding code for outputting to a log and then searching and retrieving the information from the device, can be time-consuming and error-prone.
 
 ### Other Tabs in Debugger UI
 Several other tabs in the debugging UI can be quite useful. 

@@ -91,7 +91,7 @@ Enterprise Browser 1.4 and higher addresses the EMDK issue with a new tag in the
 ##Barcode Scanning Options
 
 ###Barcode API
-The [Barcode API](../../api/api/barcode) is the recommended means of performing barcode scans with Enterprise Browser apps. Enterprise Browser also provides the Scanner API, which provides backward compatibility with PocketBrowser and RhoElements apps. Please refer to those products for more information about the Scanner API. 
+The [Barcode API](../../api/barcode) is the recommended means of performing barcode scans with Enterprise Browser apps. Enterprise Browser also provides the Scanner API, which provides backward compatibility with PocketBrowser and RhoElements apps. Please refer to those products for more information about the Scanner API. 
 
 * API: Barcode
 

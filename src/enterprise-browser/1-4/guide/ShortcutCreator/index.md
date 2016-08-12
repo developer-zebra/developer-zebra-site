@@ -165,7 +165,7 @@ Shortcut icons will be visible to the user in the device's main application area
 
 ## Troubleshooting
 
-Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](..-setup#connections)**. 
+Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](../setup#connections)**. 
 
 ![img](../../images/Utilities/Shortcut_Creator_05.jpg)
 

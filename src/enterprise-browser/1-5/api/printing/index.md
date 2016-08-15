@@ -4,10 +4,7 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Overview
-
 The Printer API module provides access to find, connect, and print over Bluetooth, Wi-Fi and USB from Android and Windows Mobile devices.
 
 ## Enabling the API

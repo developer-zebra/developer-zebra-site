@@ -12,7 +12,7 @@ This API is used to enable/disable the NFC Adapter and read NFC Tags. **The EzNF
 There are two ways to enable Enterprise Browser APIs: 
 
 * Include all 'ebapi' modules
-* Include only the API modules you need
+* Include only the required API modules
 
 Both methods are explained below. 
 
@@ -28,7 +28,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 
 > This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
 
-### Include only the modules you need
+### Include only the required modules
 
 To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the EzNFC API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 

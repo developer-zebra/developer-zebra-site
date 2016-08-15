@@ -5,13 +5,13 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-The PrinterZebra API provides Zebra-specific API access to Zebra's Bluetooth and Wi-Fi network printers, and to USB-capable printers for Android and Windows Mobile. This API inherits all methods, properties and constants from the [Printer API](../printing).
+The PrinterZebra API provides Zebra-specific API access to [Zebra's Bluetooth and Wi-Fi network printers](https://www.zebra.com/us/en/products/printers/mobile.html), and to [Zebra USB-capable printers](../..//guide/about/#printers) for Android and Windows Mobile. This API inherits all methods, properties and constants from the Printer API.
 
 ## Enabling the API
 There are two methods of enabling the Printer API:
 
 * Include all 'ebapi' modules
-* Include only the API modules you need
+* Include only the required API modules
 
 Both methods are explained below. 
 
@@ -20,15 +20,15 @@ Either way, the included files will be from:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the `index.html`, copy the modules file to the same directory as the index.html and add the following line to the HEAD section of the index.html file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
 > This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
 
-### Include only the modules you need
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the Printer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+### Include only the required modules
+To include individual APIs, include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the Printer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -61,7 +61,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -90,7 +90,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -118,7 +118,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -146,7 +146,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -157,7 +157,7 @@ Synchronous Return:
 
 
 ### enumerateSupportedTypes()
-**Immediately returns an array with supported printer types**. The result depends on your build configuration. Each extension is linked to application during build. To add or remove support for any printer type, update extension list in the `build.yml`. 
+**Immediately returns an array with supported printer types**. The result depends on the build configuration. Each extension is linked to application during build. To add or remove support for any printer type, update extension list in the `build.yml`. 
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -174,7 +174,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -200,7 +200,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -228,7 +228,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -254,7 +254,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -280,7 +280,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -308,7 +308,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -336,7 +336,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -365,7 +365,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -376,7 +376,7 @@ Synchronous Return:
 
 
 ### printRawString(<span class="text-info">STRING</span> command, <span class="text-info">HASH</span> options)
-**Send raw string to printer**. Works asynchronously, use callback to check the result. **Note**: This method will not print ZPL commands from Windows Mobile/CE devices to Zebra printers; compatible with line mode or raw text only.
+**Send raw string to printer**. Works asynchronously, use callback to check the result. **Note**: This method will not print ZPL commands from Windows Mobile devices to Zebra printers; compatible with line mode or raw text only.
 
 ####Parameters
 <ul><li>command : <span class='text-info'>STRING</span><p>Raw string to print. Could be any valid command in printer supported programming language. </p></li><li>options : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p> Providing no properties to this function will print with default settings.</p></li><ul><li>propertyWithStringValue : <span class='text-info'>STRING</span> <span class='label label-info'>Optional</span><p>This is currently not being used. </p></li><li>propertyWithIntValue : <span class='text-info'>INTEGER</span> <span class='label label-info'>Optional</span><p>Currently unused. </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -395,7 +395,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -423,7 +423,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -451,7 +451,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -462,7 +462,7 @@ Synchronous Return:
 
 
 ### requestState(<span class="text-info">ARRAY</span> listOfParameters)
-**Requests printer state with a list of parameters**. Works asynchronously and uses the callback to check the result. Returns hash with status and parameters as keys. **Note**: On the Windows Mobile / Windows CE platform, this method does not work in the case of a Bluetooth and USB connection.
+**Requests printer state with a list of parameters**. Works asynchronously and uses the callback to check the result. Returns hash with status and parameters as keys. **Note**: On the Windows Mobile platform, this method does not work in the case of a Bluetooth and USB connection.
 
 ####Parameters
 <ul><li>listOfParameters : <span class='text-info'>ARRAY</span><p>List of parameters for request from printer device. </p></li><ul><li><i>Object</i> : <span class='text-info'>STRING</span><p>Parameter name - see constants with PRINTER_STATE_... </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -479,7 +479,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -507,7 +507,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -535,7 +535,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -570,7 +570,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -596,7 +596,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -607,7 +607,7 @@ Synchronous Return:
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.PrinterZebra</span> defaultInstance)
-This method allows you to set the attributes of the default object instance by passing in an object of the same class.
+This method allows the attributes of the default object instance to be set by passing in an object of the same class.
 
 ####Parameters
 <ul><li>defaultInstance : <span class='text-info'>SELF_INSTANCE: EB.PrinterZebra</span><p>An instance object that is of the same class. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -621,7 +621,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -644,7 +644,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -669,7 +669,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -718,7 +718,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -751,7 +751,7 @@ Unique printer ID during application lifetime.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###connectionType
 
@@ -772,7 +772,7 @@ Type of connection to printer.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###deviceAddress
 
@@ -793,7 +793,7 @@ IP address for Wi-Fi connection, Bluetooth(R) MAC or device serial number. To ge
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###deviceName
 
@@ -814,7 +814,7 @@ Bluetooth/Network name of printer.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###devicePort
 
@@ -835,14 +835,14 @@ Default port when connecting with TCP/IP.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###isConnected
 
 ####Type
 <span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
 ####Description
-**Connection status flag**. All other properties are valid only if isConnect = true. Note: This property does not guarantee a real connection, because all real device functionality is processed in separate thread asynchronously. If you want a real physical connection, use `requestState()` method with receive result in the callback. This is the only guaranteed method of processing real requests to the device and analyzing answers from the device.
+**Connection status flag**. All other properties are valid only if isConnect = true. Note: This property does not guarantee a real connection, because all real device functionality is processed in separate thread asynchronously. For a real physical connection, use `requestState()` method with receive result in the callback. This is the only guaranteed method of processing real requests to the device and analyzing answers from the device.
 ####Access
 
 
@@ -856,7 +856,7 @@ Default port when connecting with TCP/IP.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###printerType
 
@@ -877,7 +877,7 @@ Type of printer - see PRINTER_TYPE_... constants.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ##Constants
 
@@ -960,13 +960,13 @@ Type of printer - see PRINTER_TYPE_... constants.
 
 ###Android Notes
 
-* To use a Bluetooth connection on Android devices you should take into account the following preconditions: Before using the printer you should pair it using the Android system Bluetooth settings.
-* When you call searchPrinters() with Bluetooth search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_BLUETOOTH) then _all_ Bluetooth devices around you will be discovered. You may see a lot of pairing requests to non-printer devices and should just cancel or ignore them. This happens because we can not detect that the device is a printer until the device is paired. It is recommended that the BT Address or WiFi MAC Address is also used when searching for printers.
-* When you call searchPrinters() with USB search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_USB) then you should configure your device USB controller as "USB Host mode" and should reboot device after the configuration. USB connection is not supported on the Zebra QLn320 printer. The searchPrinters method should not return any non-printer devices. If USB printers are not supported by the SDK or device, the searchPrinters function should return PRINTER_STATUS_ERR_UNSUPPORTED. For example, executing searchPrinters on an Android device with connectionType set to CONNECTION_TYPE_USB should return PRINTER_STATUS_ERR_UNSUPPORTED.
+* To use a Bluetooth connection on Android devices, take into account the following preconditions: Before using the printer, pair it using the Android system Bluetooth settings.
+* When calling searchPrinters() with Bluetooth search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_BLUETOOTH) then _all_ Bluetooth nearby devices will be discovered. Ignore or cancel unwanted pairing requests to non-printer devices. This happens because non-printer devices cannot be detected until the device is paired. Zebra recommends including the Bluetooth address or Wi-Fi MAC Address when searching for printers.
+* When calling searchPrinters() with USB search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_USB), configure the device's USB controller as "USB Host mode" and reboot device after the configuration. USB connection is not supported on the Zebra QLn320 printer. The searchPrinters method should not return any non-printer devices. If USB printers are not supported by the SDK or device, the searchPrinters function should return PRINTER_STATUS_ERR_UNSUPPORTED. For example, executing searchPrinters on an Android device with connectionType set to CONNECTION_TYPE_USB should return PRINTER_STATUS_ERR_UNSUPPORTED.
 
             
 
-###Windows Mobile/CE Notes
+###Windows Mobile Notes
 
 
 * Requires a Printing Service application to be running.
@@ -978,8 +978,4 @@ Type of printer - see PRINTER_TYPE_... constants.
             printer.disconnect();
         }
 
-* When you call searchPrinters() with Bluetooth search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_BLUETOOTH) then _all_ Bluetooth devices around you will be discovered. You may see a lot of pairing requests to non-printer devices and should just cancel or ignore them. This happens because we can not detect that the device is a printer until the device is paired. It is recommended that the BT Address or WiFi MAC Address is also used when searching for printers.
-
-###Supported Zebra Printers
-Only printers listed in supported models in Zebra [SDK description](https://www.zebra.com/us/en/products-services/software/zebralink/zebralink-multiplatform-sdk.html) (click "Compatible Printers" link) are supported for use with this API. For example, the QL 320 (old model) is __not__ supported but, QLn320 and QL320 plus __are__ supported.
-
+* When calling searchPrinters() with Bluetooth search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_BLUETOOTH), _all_ nearby Bluetooth devices will be discovered. Ignopre or cancel unwanted pairing requests to non-printers. This happens because non-printer devices cannot be detected until the device is paired. Zebra recommends including the Bluetooth address or Wi-Fi MAC Address when searching for printers.

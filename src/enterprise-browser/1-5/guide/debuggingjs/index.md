@@ -202,7 +202,7 @@ The Elements tab can be used for on-the-fly changes to CSS styling, API and meth
 ### Console and Issuing API Calls
 One of the most versatile components of Weinre is its Console. Not only does it offer classic capabilities such as device visibility and monitoring during operation, but the Weinre Console also can access all of a device’s hardware features, issue commands and report how the device reacts.
 
-The example below shows results from an attempt to use the JavaScript API to check the target platform, use the camera to scan a barcode, and issue a command to the [ScreenOrientation API](../../api/api/screenorientation) (which returned an error).
+The example below shows results from an attempt to use the JavaScript API to check the target platform, use the camera to scan a barcode, and issue a command to the [ScreenOrientation API](../../api/screenorientation) (which returned an error).
 
 ![img](../../images/debugging/weinre-barcode-take.png)
 

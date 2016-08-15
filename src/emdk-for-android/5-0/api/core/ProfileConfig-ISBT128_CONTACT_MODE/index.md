@@ -3,7 +3,7 @@ title: ProfileConfig.ISBT128_CONTACT_MODE
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -29,4 +29,5 @@ Option for concatenating pairs of ISBT128 code types.
 * **AUTO** -Decodes and concatenates pairs of ISBT codes immediately.
  If only a single ISBT symbol is present, the device must decode the symbol the number of times set via DataWedge Configuration 4 - 1 1 
  Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
+
 

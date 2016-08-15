@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.UpcEanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -238,4 +238,5 @@ Enable this parameter to add five leading zeros to decoded
 **Type:**
 
 boolean
+
 

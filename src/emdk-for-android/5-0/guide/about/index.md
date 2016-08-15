@@ -114,3 +114,4 @@ The EMDK for Android will continue to support the [DataCapture](/emdk-for-androi
 
 
 
+

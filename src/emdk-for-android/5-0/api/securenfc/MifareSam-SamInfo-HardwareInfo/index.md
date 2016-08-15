@@ -3,7 +3,7 @@ title: MifareSam.SamInfo.HardwareInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -50,4 +50,5 @@ IC Compliant protocol
 **Type:**
 
 java.lang.String
+
 

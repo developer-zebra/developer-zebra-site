@@ -382,3 +382,4 @@ In order for your application to receive the barcode data, you must specify one 
 
 
 
+

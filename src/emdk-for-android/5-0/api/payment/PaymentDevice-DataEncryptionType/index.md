@@ -3,7 +3,7 @@ title: PaymentDevice.DataEncryptionType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -21,4 +21,5 @@ Lists the type pf Encryption Algorithms applied on the data.
 * **RSA_1024** -Public key Algorithm with 1024 bit key.
 
 * **RSA_2048** -Public key Algorithm with 2048 bit key.
+
 

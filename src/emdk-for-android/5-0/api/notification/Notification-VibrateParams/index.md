@@ -3,7 +3,7 @@ title: Notification.VibrateParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -41,4 +41,5 @@ Vibrate with a given pattern. Pass in an array of integers that are the duration
 **Type:**
 
 long
+
 

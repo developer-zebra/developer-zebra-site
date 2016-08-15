@@ -3,7 +3,7 @@ title: SimulScanException
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -26,4 +26,5 @@ Returns the SimulScanResults object that provides additional information on the 
 **Returns:**
 
 com.symbol.emdk.simulscan.SimulScanResults - SimulScanResults
+
 

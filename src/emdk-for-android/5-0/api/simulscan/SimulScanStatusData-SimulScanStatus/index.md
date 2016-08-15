@@ -3,7 +3,7 @@ title: SimulScanStatusData.SimulScanStatus
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -22,4 +22,5 @@ productversion: '4.2'
 * **ERROR** -Error occurred
 
 * **UNKNOWN** -Unknown status
+
 

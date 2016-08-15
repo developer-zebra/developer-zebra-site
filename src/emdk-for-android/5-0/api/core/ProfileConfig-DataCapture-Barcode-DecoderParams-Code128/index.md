@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Code128
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -174,4 +174,5 @@ The scanner of fers four levels of decode security for Code 128 bar codes.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.SECURITY_LEVEL
+
 

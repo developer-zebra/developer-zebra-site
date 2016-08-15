@@ -3,7 +3,7 @@ title: ProfileConfig.CHECK_DIGIT_SCHEME
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -25,4 +25,5 @@ Two algorithms are possible for the verification of the second MSI check digit.
 * **MOD_11_10** -First check digit is MOD 11 and second check digit is MOD 10.
 
 * **MOD_10_10** -Both check digits are MOD 10.
+
 

@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.Matrix_2of5
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -102,4 +102,5 @@ Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verif
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

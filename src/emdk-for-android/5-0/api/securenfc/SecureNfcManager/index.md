@@ -3,7 +3,7 @@ title: SecureNfcManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -103,4 +103,5 @@ Returns the PassThruApduProcessor object to securely communicate with
 **Returns:**
 
 com.symbol.emdk.securenfc.PassThruApduProcessor - PassThruApduProcessor object.
+
 

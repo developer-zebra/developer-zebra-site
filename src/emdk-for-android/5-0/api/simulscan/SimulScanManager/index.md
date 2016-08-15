@@ -3,7 +3,7 @@ title: SimulScanManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -97,4 +97,5 @@ com.symbol.emdk.simulscan.SimulScanReader
 com.symbol.emdk.simulscan.SimulScanException
 
 Exception will be throw if any error occurs
+
 

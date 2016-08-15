@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.UPCA
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -54,4 +54,5 @@ The check digit is the last character of the symbol used to verify the integrity
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

@@ -3,7 +3,7 @@ title: MifarePlusSL3Results
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -54,4 +54,5 @@ productversion: '4.2'
 * **PARAM_NOT_SUPPORTED** -The parameter not supported.
 
 * **UNDEFINED** -Undefined
+
 

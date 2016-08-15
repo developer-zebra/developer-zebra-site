@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.UpcEanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -246,4 +246,5 @@ If this is set it converts DataBar bar codes to UPC/EAN format.
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

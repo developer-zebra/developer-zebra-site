@@ -3,7 +3,7 @@ title: EMDKManager.StatusListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -52,4 +52,5 @@ Called to notify the client when the feature manager object is available and its
 **Returns:**
 
 void
+
 

@@ -3,7 +3,7 @@ title: ScannerConfig.CodeIdType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -26,4 +26,5 @@ A Code ID character identifies the code type of a scanned bar code. This
 * **AIM** -A standards based three character prefix.
 
 * **SYMBOL** -A Symbol defined single character prefix.
+
 

@@ -3,7 +3,7 @@ title: Scanner.DataListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -35,4 +35,5 @@ This is the callback method upon data availability.
 **Returns:**
 
 void
+
 

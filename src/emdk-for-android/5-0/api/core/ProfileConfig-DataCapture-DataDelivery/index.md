@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.DataDelivery
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -50,4 +50,5 @@ Gets and Sets Keystroke configuration object [ ProfileConfig.DataCapture.DataDel
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.DataDelivery.Keystroke
+
 

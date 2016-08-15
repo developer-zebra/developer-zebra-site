@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.Ean8
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -19,4 +19,5 @@ Flag to convert EAN8 to EAN13.
 **Type:**
 
 boolean
+
 

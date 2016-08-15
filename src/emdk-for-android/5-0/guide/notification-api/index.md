@@ -220,3 +220,4 @@ The scanner must be enabled first to open the session with the hardware. The Sca
 
 Issuing any read request while the previous read is pending will result in an error. The recommendation is to wait for the IDLE status from the application before issuing the next read to read the barcodes.
 
+

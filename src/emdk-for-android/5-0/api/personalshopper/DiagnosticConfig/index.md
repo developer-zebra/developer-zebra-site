@@ -3,7 +3,7 @@ title: DiagnosticConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -49,4 +49,5 @@ The shopping trip duration in minutes.
 **Type:**
 
 int
+
 

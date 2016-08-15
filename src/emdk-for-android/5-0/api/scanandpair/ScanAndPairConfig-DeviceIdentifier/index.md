@@ -3,7 +3,7 @@ title: ScanAndPairConfig.DeviceIdentifier
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -21,4 +21,5 @@ Provides the list of DeviceIdentifier types.
  Bluetooth Imager before calling the ScanAndPair or ScanAndUnPair methods.
 
 * **DEFAULT** -Use default scanner. Depending on the mobile device, the first available scanner can be laser, imager or camera.
+
 

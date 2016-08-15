@@ -3,7 +3,7 @@ title: EMDKBase
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -20,4 +20,5 @@ Return the feature type of the object.
 **Returns:**
 
 com.symbol.emdk.EMDKManager.FEATURE_TYPE
+
 

@@ -3,7 +3,7 @@ title: ScannerConfig.ScanParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -155,4 +155,5 @@ Controls the audio feedback mode.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.DecodeAudioFeedbackMode
+
 

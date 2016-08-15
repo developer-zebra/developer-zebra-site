@@ -202,7 +202,7 @@ automenu:
           url: ZoomTextButton
     - title: PocketBrowser 3.x APIs
       items:
-        - title: AddressBar (missing)
+        - title: AddressBar
           url: addressbar
         - title: Airbeam Smart (missing)
           url: AirBeamSmart
@@ -270,17 +270,17 @@ automenu:
           url: Poweron
         - title: Push
           url: push
-        - title: QuitButton
+        - title: Quit Button
           url: QuitButton
         - title: Reboot
           url: Reboot
         - title: Registry
           url: Registry
-        - title: ReloadButton
+        - title: Reload Button
           url: ReloadButton
         - title: RSM (missing)
           url: rsm
-        - title: Scanner
+        - title: Scanner (missing)
           url: scanner
         - title: ScreenOrientation
           url: ScreenOrientation
@@ -292,7 +292,7 @@ automenu:
           url: Sip
         - title: SIPButton
           url: SipButton
-        - title: SNTP
+        - title: SNTP (missing)
           url: sntp
         - title: StopButton
           url: StopButton

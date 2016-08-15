@@ -399,7 +399,7 @@ Synchronous Return:
 ### takePicture(<span class="text-info">HASH</span> propertyMap)
 Start the camera application to take a picture. The user can capture the displayed image by interacting with the resident camera app. In Windows, this method always shows the preview in full screen and user can use the native button to capture the image.
 				On wp8,wm when 'outputFormat' is 'image' then imageUri/image_uri shall have only Image name with \ sign, on WP8 ImageName shall be suffixed by DTF when 'outputFormat' is 'image'
-> Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [`expandDatabaseBlobFilePath`](Application#mexpandDatabaseBlobFilePath) method of the [Application module](Application) as such:
+> Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [expandDatabaseBlobFilePath](../Application/#expanddatabaseblobfilepathspanclasstextinfostringspanrelativepath) method of the [Application module](../Application) as such:
 
 ##### Ruby
     :::ruby
@@ -409,7 +409,7 @@ Start the camera application to take a picture. The user can capture the display
     :::js
     Rho.RhoApplication.expandDatabaseBlobFilePath(x.image_uri)
                 
-
+                
 ####Parameters
 <ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the camera, for example to specify the flashMode or compressionFormat. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='../camera#properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 

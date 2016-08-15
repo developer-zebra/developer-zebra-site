@@ -1,6 +1,6 @@
 ---
-title: About Enterprise Browser 1.4
-productversion: '1.4'
+title: About Enterprise Browser 1.5
+productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
@@ -12,7 +12,9 @@ The base [EB installation](../setup) includes everything needed to quickly build
 
 For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise Browser supports those legacy products, and is the ideal path forward for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser will improve development time, reduce costs and make the transition to next-generation devices and operating systems fast, easy and affordable--especially in high-volume mobile environments.
 
-## New in v1.4
+## New in v1.5
+
+> THE FOLLOWING MUST BE CHANGED TO THOSE OF 1.5
 
 ####Zebra Device Support
   * **MC92N0** Android KitKat

@@ -110,7 +110,7 @@ Sets the number of stop bits per word on the device serial port (not all values 
 
 ### Possible Values
 
-* **1**, 1.5, 2.
+* **1**, 1.4, 2.
 
 #### Platforms
 

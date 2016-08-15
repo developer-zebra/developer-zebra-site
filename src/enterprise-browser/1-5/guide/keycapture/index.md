@@ -1,11 +1,11 @@
 ---
 title: Keycode Mapping Guide
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview
-Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). The keycodes for keys with multiple values (such as upper and lower case) are accessed with the shift or other modifier key and in some cases cannot be captured. Enterprise Browser 1.4 permits Android keycode values to be assigned from a file when an Enterprise Browser app starts up.
+Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). The keycodes for keys with multiple values (such as upper and lower case) are accessed with the shift or other modifier key and in some cases cannot be captured. Enterprise Browser 1.5 permits Android keycode values to be assigned from a file when an Enterprise Browser app starts up.
 
 > **Note**: This guide applies only to Android.
 

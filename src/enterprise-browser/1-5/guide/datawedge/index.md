@@ -1,6 +1,6 @@
 ---
 title: DataWedge Usage
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
@@ -13,7 +13,7 @@ The DataWedge app is included on every Zebra device and makes it possible to fet
 **See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/5-0/guide/about/)** 
 
 ###Use DataWedge for Scanning
-Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge profiles to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
+Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge profiles that were released with EB 1.4 to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
 
 **To use DataWedge from within Enterprise Browser apps**: 
 

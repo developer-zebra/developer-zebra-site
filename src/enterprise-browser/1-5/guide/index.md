@@ -53,6 +53,6 @@ automenu:
         - title: From RhoMobile 4.x
           url: rhomobile
 product: Enterprise Browser
-productversion: '1.4'
+productversion: '1.5'
 ---
 

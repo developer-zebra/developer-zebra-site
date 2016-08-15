@@ -249,5 +249,5 @@ Sample `config.xml` showing path to Android app in root directory:
 ![img](../../images/eb_tutorials/Network_API_tutorial_08.png)
 
 ###Conclusion
-This completes the Enterprise Browser Network API tutorial.  For more information on the Network API see the [Enterprise Browser API documentation](/enterprise-browser/1-4/api/Network).
+This completes the Enterprise Browser Network API tutorial.  For more information on the Network API see the [Enterprise Browser API documentation](../../api/Network).
 

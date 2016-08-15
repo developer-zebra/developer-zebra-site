@@ -136,7 +136,7 @@ Sample JavaScript:
 
 Gestures are created by setting several attributes and then executing `gesture.create()`. Four gestures are created in the first four sections of the code. The diagnostics attribute being set for each gesture is used to turn on visual feedback for testing purposes. Toward the end on the line that starts "gesture.detected = ..." we assign a method to be called whenever a gesture is detected. The final two lines display a status message to let the user know that gestures have been enabled.
 
->NOTE: For more details about defining gestures, please refer to the [Enterprise Browser Gesture API documentation](/enterprise-browser/1-4/api/Gesture). 
+>NOTE: For more details about defining gestures, please refer to the [Enterprise Browser Gesture API documentation](../../api/Gesture). 
 
 ###STEP 5: Respond to gestures
 The gesture handler in the previous method was set to `fnGestureDetected()`. 
@@ -234,5 +234,5 @@ Sample `config.xml` showing path to Android app in root directory:
 
 ###Conclusion
 
-This completes the Enterprise Browser Gesture API tutorial. For more information on the Gesture API, please refer to the [Enterprise Browser Gesture API documentation](/enterprise-browser/1-4/api/Gesture).
+This completes the Enterprise Browser Gesture API tutorial. For more information on the Gesture API, please refer to the [Enterprise Browser Gesture API documentation](../../api/Gesture).
 

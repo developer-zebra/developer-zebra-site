@@ -238,5 +238,5 @@ Sample `config.xml` showing path to Android app in root directory:
 
 ###Conclusion
 
-This completes the Enterprise Browser Imager API tutorial. For more information on the Imager API, please refer to the [Enterprise Browser Imager API documentation](/enterprise-browser/1-4/api/Imager).
+This completes the Enterprise Browser Imager API tutorial. For more information on the Imager API, please refer to the [Enterprise Browser Imager API documentation](../../api/Imager).
 

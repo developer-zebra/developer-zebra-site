@@ -116,7 +116,7 @@ Time must be specified as GMT plus or minus the device's timezone offset. For ex
 * Timezone: -5 (Eastern time, 8:30 a.m. local time)
 
 ### Device Support
-The Alarm API not supported on [Zebra Micro Kiosks](/enterprise-browser/1-4/guide/about/#microkiosk).  
+The Alarm API not supported on [Zebra Micro Kiosks](../../guide/about/#microkiosk).  
 
 ## Example
 ### Set an Alarm

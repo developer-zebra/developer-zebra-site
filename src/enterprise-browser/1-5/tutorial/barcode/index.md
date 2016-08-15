@@ -116,7 +116,7 @@ In this method, two parameters are being passed to the `enable()` method. The fi
 
 In the demo app, **scans will be triggered by pressing the device's hardware trigger button**. If desired, **it's also possible to trigger scans from an on-screen button by setting up the button to call the `EB.Barcode.start()` method**.
 
-For more information about using this method, please refer to the [Enterprise Browser Barcode API documentation](/enterprise-browser/1-4/api/barcode).
+For more information about using this method, please refer to the [Enterprise Browser Barcode API documentation](../../api/barcode).
 
 ###STEP 6: Process the results
 * **Add the method`fnBarcodeScanned()` at the end of the SCRIPT section** to process scan results:
@@ -204,5 +204,5 @@ Sample `config.xml` showing path to Android app in root directory:
 
 ###Conclusion
 
-This completes the Enterprise Browser Barcode API tutorial. For more information on the Barcode API, please refer to the [Enterprise Browser Barcode API documentation](/enterprise-browser/1-4/api/barcode). 
+This completes the Enterprise Browser Barcode API tutorial. For more information on the Barcode API, please refer to the [Enterprise Browser Barcode API documentation](../../api/barcode). 
 

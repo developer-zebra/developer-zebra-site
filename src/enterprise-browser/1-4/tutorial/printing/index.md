@@ -4,7 +4,7 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-
+##Overviww 
 This tutorial covers the use of the Enterprise Browser [Printer API](../../api/printing) and [PrinterZebra API](../../api/printingzebra), as well as some of the typical considerations when working with USB and wireless printers. 
 
 The level of instruction in this tutorial is higher than that of other EB tutorials. Completion of the main training module and several additional EB tutorials is recommended (see below). This tutorial enables the sample app from the MBS1018 lesson to print a ticket with a barcode that contains a summary of error data to a printer attached directly to the mobile device.

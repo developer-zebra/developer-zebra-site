@@ -218,7 +218,7 @@ automenu:
           url: Backlight
         - title: Battery
           url: battery
-        - title: BottomCommandArea
+        - title: BottomCommandArea (missing)
           url: BottomCommanArea
         - title: CardReader
           url: cardreader

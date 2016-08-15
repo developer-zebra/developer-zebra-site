@@ -102,7 +102,7 @@ automenu:
           url: Backlight
         - title: Battery
           url: battery
-        - title: BottomCommandArea
+        - title: BottomCommandArea (missing)
           url: BottomCommanArea
         - title: CardReader
           url: cardreader
@@ -174,7 +174,7 @@ automenu:
           url: ScreenOrientation
         - title: Signal (missing)
           url: signal
-        - title: signatureCapture (missing)
+        - title: SignatureCapture (missing)
           url: signaturecapture
         - title: SIP
           url: Sip
@@ -280,11 +280,11 @@ automenu:
           url: ReloadButton
         - title: RSM (missing)
           url: rsm
-        - title: Scanner
+        - title: Scanner (missing)
           url: scanner
         - title: ScreenOrientation
           url: ScreenOrientation
-        - title: Signal
+        - title: Signal (missing)
           url: signal
         - title: SignatureCapture (missing)
           url: signaturecapture
@@ -292,7 +292,7 @@ automenu:
           url: Sip
         - title: SIPButton
           url: SipButton
-        - title: SNTP
+        - title: SNTP (missing)
           url: sntp
         - title: StopButton
           url: StopButton

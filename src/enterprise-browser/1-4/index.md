@@ -8,17 +8,17 @@ menu:
   img: enterprise_browser_logo.png
   items:
     - title: Home
-      url: ../../guide/about
+      url: /enterprise-browser/1-4/guide/about
     - title: Getting Started
-      url: ../../guide/gettingstarted
+      url: /enterprise-browser/1-4/guide/gettingstarted
     - title: Tutorials
-      url: ../../tutorial/
+      url: /enterprise-browser/1-4/tutorial/
     - title: Guides
-      url: ../../guide
+      url: /enterprise-browser/1-4/guide
     - title: APIs
-      url: ../../api
+      url: /enterprise-browser/1-4/api
     - icon: fa fa-search
-      url: ../../search
+      url: /enterprise-browser/1-4/search
 product: Enterprise Browser
 productversion: '1.4'
 ---

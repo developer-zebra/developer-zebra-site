@@ -399,7 +399,7 @@ Synchronous Return:
 ### takePicture(<span class="text-info">HASH</span> propertyMap)
 Start the camera application to take a picture. The user can capture the displayed image by interacting with the resident camera app. In Windows, this method always shows the preview in full screen and user can use the native button to capture the image.
 				On wp8,wm when 'outputFormat' is 'image' then imageUri/image_uri shall have only Image name with \ sign, on WP8 ImageName shall be suffixed by DTF when 'outputFormat' is 'image'
-> Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [`expandDatabaseBlobFilePath`](Application#mexpandDatabaseBlobFilePath) method of the [Application module](Application) as such:
+> Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [expandDatabaseBlobFilePath](../Application/#expanddatabaseblobfilepathspanclasstextinfostringspanrelativepath) method of the [Application module](../Application) as such:
 
 ##### Ruby
     :::ruby

@@ -4,11 +4,8 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Overview
-
-The Printer API module provides access to find, connect, and print over Bluetooth, Wi-Fi and USB from Android and Windows Mobie/CE devices.
+The Printer API module provides access to find, connect, and print over Bluetooth, Wi-Fi and USB from Android and Windows Mobile devices.
 
 ## Enabling the API
 
@@ -380,7 +377,7 @@ Synchronous Return:
 
 
 ### printRawString(<span class="text-info">STRING</span> command, <span class="text-info">HASH</span> options)
-**Send raw string to printer**. Works asynchronously, use callback to check the result. **Note: This method will not print ZPL commands from Windows Mobile/CE devices to Zebra printers; compatible with line mode or raw text only.
+**Send raw string to printer**. Works asynchronously, use callback to check the result. **Note: This method will not print ZPL commands from Windows Mobile devices to Zebra printers; compatible with line mode or raw text only.
 
 ####Parameters
 <ul><li>command : <span class='text-info'>STRING</span><p>Raw string to print. Could be any valid command in printer supported programming language. </p></li><li>options : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p> Providing no properties to this function will print with default settings.</p></li><ul><li>propertyWithStringValue : <span class='text-info'>STRING</span> <span class='label label-info'>Optional</span><p>This is currently not being used. </p></li><li>propertyWithIntValue : <span class='text-info'>INTEGER</span> <span class='label label-info'>Optional</span><p>Currently unused. </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -410,7 +407,7 @@ Synchronous Return:
 
 
 ### requestState(<span class="text-info">ARRAY</span> listOfParameters)
-**Requests printer state with a list of parameters**. Works asynchronously and uses the callback to check the result. Returns hash with status and parameters as keys. **NOTE: On the Windows Mobile / Windows CE platform, this method does not work in the case of a Bluetooth and USB connection.
+**Requests printer state with a list of parameters**. Works asynchronously and uses the callback to check the result. Returns hash with status and parameters as keys. **NOTE: On the Windows Mobile platform, this method does not work in the case of a Bluetooth and USB connection.
 
 ####Parameters
 <ul><li>listOfParameters : <span class='text-info'>ARRAY</span><p>List of parameters for request from printer device. </p></li><ul><li><i>Object</i> : <span class='text-info'>STRING</span><p>Parameter name - see constants with PRINTER_STATE_... </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -760,9 +757,9 @@ Type of printer - see PRINTER_TYPE_... constants.
 * When calling searchPrinters() with USB search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_USB), all USB Printers connected to the device will be discovered. If USB printers are not supported by SDK or device, searchPrinters function should return PRINTER_STATUS_ERR_UNSUPPORTED.
                 
 
-###Windows Mobile/CE Notes
+###Windows Mobile Notes
 
-* Requires a Printing Service application to be running. This is described in the [Printing Guide](../../guide/printing). 
+* Requires a Printing Service application to be running. This is described in the [Printing Guide](../../guide/printingGuide). 
 
 * Avoid navigating from the current page using the printer without disconnecting from the printer first. Use the window.onunload event:
 

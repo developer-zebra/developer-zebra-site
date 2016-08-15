@@ -309,5 +309,5 @@ automenu:
         - title: ZoomTextButton
           url: ZoomTextButton
 product: Enterprise Browser
-productversion: '1.4'
+productversion: '1.5'
 ---

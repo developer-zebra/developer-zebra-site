@@ -1,6 +1,6 @@
 ---
 title: Zoom
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---

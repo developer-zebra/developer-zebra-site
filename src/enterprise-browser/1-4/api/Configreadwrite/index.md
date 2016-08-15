@@ -17,7 +17,7 @@ The `configreadwrite` extension is also included automatically if you specify th
     :::ruby
     app_type: "rhoelements"
 
-NOTE: If you are building a Windows Mobile or Windows CE app with this API, you must set your app_type as "rhoelements" in your build.yml as shown [here](/enterprise-browser/1-4/guide/build_config#other-build-time-settings).
+NOTE: If you are building a Windows Mobile or Windows CE app with this API, you must set your app_type as "rhoelements" in your build.yml as shown [here](../../guide/build_config#other-build-time-settings).
 
 ## JavaScript Usage
 Be sure to review the [JavaScript API Usage](/guide/api_js) guide for important information about using this API in JavaScript.

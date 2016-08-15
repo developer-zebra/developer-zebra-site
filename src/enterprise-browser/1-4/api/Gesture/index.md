@@ -4,7 +4,7 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-> Note: This feature is not supported on Windows CE if [debug buttons](/enterprise-browser/1-4/guide/configreference#debugbuttons) are enabled in the [Config.xml](/enterprise-browser/1-4/guide/configreference).
+> Note: This feature is not supported on Windows CE if [debug buttons](../../guide/configreference#debugbuttons) are enabled in the [Config.xml](../../guide/configreference).
 
 ## Overview
 The Enterprise Browser is capable of capturing gestures from the touch screen if the appropriate hardware is installed. You can define multiple gestures on the same page but to avoid performance issues it is recommended you do not create more than 5 per page. 

@@ -132,7 +132,7 @@ Another way to initialize settings is to add them to a parameters hash. When the
 
 In our demo application, the `takeFullScreen()` method will open a capture area that includes three buttons: Cancel, Clear and Capture. The Capture button when pressed will trigger the capture of the signature and the execution of the callback function. 
 
-An alternate method, `show()`, allows you to designate a specific location on the existing screen as a capture area. When using `show()` you'll have to provide your own Cancel, Clear and Capture buttons. In that case your Capture button also must execute code that includes the `capture()` method to explicitly capture the signature. For more details on using `show()` and `capture()`, please refer to the [Enterprise Browser API documentation](/enterprise-browser/1-4/api/signature).
+An alternate method, `show()`, allows you to designate a specific location on the existing screen as a capture area. When using `show()` you'll have to provide your own Cancel, Clear and Capture buttons. In that case your Capture button also must execute code that includes the `capture()` method to explicitly capture the signature. For more details on using `show()` and `capture()`, please refer to the [Enterprise Browser API documentation](../../api/signature).
 
 ###STEP 6: Display the signature
 
@@ -234,7 +234,7 @@ Sample `config.xml` showing path to Android app in root directory:
 ![img](../../images/eb_tutorials/Signature_API_tutorial_08.png)
 
 ###Conclusion
-This completes the Enterprise Browser Signature API tutorial. For more information on the Signature API, please refer to the [Enterprise Browser API documentation](/enterprise-browser/1-4/api/signature). 
+This completes the Enterprise Browser Signature API tutorial. For more information on the Signature API, please refer to the [Enterprise Browser API documentation](../../api/signature). 
 
 
 [a]This screen shows the app as it appears before a signature is captured. The empty img is populated in a later step by a signature image. alt text is provided in the img element.

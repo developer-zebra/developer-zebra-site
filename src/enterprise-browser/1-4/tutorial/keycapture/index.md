@@ -316,5 +316,5 @@ Sample JavaScript:
 
 
 ###Conclusion
-This completes the Enterprise Browser KeyCapture API tutorial. For more information on the KeyCapture API, please refer to the [Enterprise Browser API documentation](/enterprise-browser/1-4/api/keycapture).
+This completes the Enterprise Browser KeyCapture API tutorial. For more information on the KeyCapture API, please refer to the [Enterprise Browser API documentation](../../api/keycapture).
 

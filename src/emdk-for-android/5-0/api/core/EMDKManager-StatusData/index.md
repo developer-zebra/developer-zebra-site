@@ -3,7 +3,7 @@ title: EMDKManager.StatusData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -38,4 +38,5 @@ Returns the feature type for which the status data is returned.
 **Returns:**
 
 com.symbol.emdk.EMDKManager.FEATURE_TYPE
+
 

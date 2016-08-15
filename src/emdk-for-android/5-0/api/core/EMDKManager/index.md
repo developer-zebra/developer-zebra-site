@@ -3,7 +3,7 @@ title: EMDKManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -137,4 +137,5 @@ This method releases resources of a given manager type. Instance variable is not
 **Returns:**
 
 void
+
 

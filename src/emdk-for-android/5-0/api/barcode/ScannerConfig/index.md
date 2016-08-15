@@ -3,7 +3,7 @@ title: ScannerConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -122,4 +122,5 @@ The ReaderParams class holds the parameters for a scanner. Reader
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ReaderParams
+
 

@@ -3,7 +3,7 @@ title: ScanAndPairConfig.BluetoothInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -53,4 +53,5 @@ User supplied pin for bluetooth pairing. Passed as an argument during scanAndPai
 **Type:**
 
 java.lang.String
+
 

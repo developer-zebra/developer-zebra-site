@@ -3,7 +3,7 @@ title: PaymentData
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -31,4 +31,5 @@ This method can used to obtain the payment response status.
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults - Returns PaymentResults;
+
 

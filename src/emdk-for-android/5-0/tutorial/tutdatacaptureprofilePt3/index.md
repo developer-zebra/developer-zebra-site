@@ -426,3 +426,4 @@ The [next tutorial](/emdk-for-android/5-0/tutorial/tutdatacaptureprofilePt4) wil
 
 
 
+

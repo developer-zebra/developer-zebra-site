@@ -3,7 +3,7 @@ title: ScanAndPairManager
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -117,4 +117,5 @@ The ScanAndPairManager.config provides a way to configure the settings to use it
 **Type:**
 
 com.symbol.emdk.scanandpair.ScanAndPairConfig
+
 

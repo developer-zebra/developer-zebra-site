@@ -3,7 +3,7 @@ title: MifareDesfire
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -801,4 +801,5 @@ boolean - true : if connection with the tag is enabled false : if the
 com.symbol.emdk.securenfc.MifareDesfireExpection
 
 The exception will be thrown if the emdk is not opened.
+
 

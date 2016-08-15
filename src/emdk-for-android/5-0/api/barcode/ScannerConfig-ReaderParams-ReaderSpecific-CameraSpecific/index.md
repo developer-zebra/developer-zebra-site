@@ -3,7 +3,7 @@ title: ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -104,4 +104,5 @@ Configures the Viewfinder modes supported for camera scanning.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.ViewFinderMode
+
 

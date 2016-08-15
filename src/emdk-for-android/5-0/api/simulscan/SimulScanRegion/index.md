@@ -3,7 +3,7 @@ title: SimulScanRegion
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -62,4 +62,5 @@ Returns the processed data.
 **Returns:**
 
 java.lang.Object
+
 

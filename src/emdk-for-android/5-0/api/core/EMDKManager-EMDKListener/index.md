@@ -3,7 +3,7 @@ title: EMDKManager.EMDKListener
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -72,4 +72,5 @@ Called to notify the client that this EMDKManager object has been abruptly close
 **Returns:**
 
 void
+
 

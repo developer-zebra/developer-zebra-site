@@ -46,13 +46,13 @@ content-items:
   - type: section
     level: 4
     title: Barcode and Notification API Programmers Guide
-    text: "This guide provides an overview on design points to be considered during the development of the application to read barcode and notify users using Notification API in the business application workflow."
+    text: This guide provides an overview on design points to be considered during the development of the application to read barcode and notify users using Notification API in the business application workflow.
     url: /emdk-for-android/5-0/guide/notification-api
-
 product: EMDK For Android
 productversion: '5.0'
 ---
            
+
 
 
 

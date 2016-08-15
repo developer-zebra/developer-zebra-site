@@ -3,7 +3,7 @@ title: Notification.LEDParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -61,4 +61,5 @@ The LED blinking repeat count. Default value assigned is 0. The supported values
 **Type:**
 
 int
+
 

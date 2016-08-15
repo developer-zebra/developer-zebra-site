@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams.UkPostal
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -27,4 +27,5 @@ Transmit UK Postal data with or without the check digit.
 **Type:**
 
 boolean
+
 

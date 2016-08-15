@@ -3,7 +3,7 @@ title: PaymentData.DataType
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -34,4 +34,5 @@ The DataType enum identifies the asynchronous method for which the response is r
 * **AUTHORIZECARD** -Enum value to identify the AuthorizeCard method response.
 
 * **UNDEFINED** -Undefined.
+
 

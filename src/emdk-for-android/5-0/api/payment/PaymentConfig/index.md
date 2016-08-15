@@ -3,7 +3,7 @@ title: PaymentConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -113,4 +113,5 @@ The payment device such as PD40-100 is not discoverable by default. The
 **Type:**
 
 boolean
+
 

@@ -3,7 +3,7 @@ title: SimulScanTemplate
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -70,4 +70,5 @@ Returns the friendly name of the template
 
 java.lang.String - String 
  			The template's name
+
 

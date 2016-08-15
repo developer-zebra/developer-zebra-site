@@ -3,7 +3,7 @@ title: DeviceInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -102,4 +102,5 @@ Returns the payment device connection type to mobile computer
 **Returns:**
 
 com.symbol.emdk.payment.DeviceInfo.ConnectionType - Returns the ConnectionType
+
 

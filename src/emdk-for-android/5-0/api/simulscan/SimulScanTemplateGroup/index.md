@@ -3,7 +3,7 @@ title: SimulScanTemplateGroup
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -21,4 +21,5 @@ Returns a list of SimulScanTemplateRegion objects that represents a collection o
 **Returns:**
 
 java.util.List - List of SimulScanTemplateRegion objects
+
 

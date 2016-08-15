@@ -3,7 +3,7 @@ title: Notification.Beep
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -39,4 +39,5 @@ Beeping frequency in Hz. Default value assigned is 0.
 **Type:**
 
 int
+
 

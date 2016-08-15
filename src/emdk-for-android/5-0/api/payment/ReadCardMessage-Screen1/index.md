@@ -3,7 +3,7 @@ title: ReadCardMessage.Screen1
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -26,4 +26,5 @@ The message to be displayed on read card request in the third line.
 **Type:**
 
 java.lang.String
+
 

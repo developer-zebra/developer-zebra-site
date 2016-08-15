@@ -3,7 +3,7 @@ title: ScannerConfig.LinearSecurityLevel
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -28,4 +28,5 @@ Sets the number of times a bar code is read to confirm an accurate
  bar codes.
 
 * **ALL_THRICE** -Three times read redundancy for all bar codes.
+
 

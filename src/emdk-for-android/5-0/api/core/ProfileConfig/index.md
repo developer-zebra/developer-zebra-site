@@ -3,7 +3,7 @@ title: ProfileConfig
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -97,4 +97,5 @@ Gets and Sets the activity selection for the profiles [ ProfileConfig.activitySe
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ActivitySelection
+
 

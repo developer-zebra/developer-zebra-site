@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode.DecoderParams.MSI
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -120,4 +120,5 @@ Transmit MSI data with or without the check digit (default - disabled).
 **Type:**
 
 com.symbol.emdk.ProfileConfig.ENABLED_STATE
+
 

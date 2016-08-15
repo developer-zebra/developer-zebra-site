@@ -3,7 +3,7 @@ title: DeviceInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -179,4 +179,5 @@ Returns true if the notification device supports Vibrate feature else false.
 **Returns:**
 
 boolean - Returns true if the notification device supports Vibrate feature else false.
+
 

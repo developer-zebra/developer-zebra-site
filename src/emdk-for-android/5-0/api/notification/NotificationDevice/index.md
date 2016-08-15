@@ -3,7 +3,7 @@ title: NotificationDevice
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -170,4 +170,5 @@ void
 com.symbol.emdk.notification.NotificationException
 
 The exception will thrown if the notification device release fails.
+
 

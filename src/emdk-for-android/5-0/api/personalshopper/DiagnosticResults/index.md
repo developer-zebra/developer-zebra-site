@@ -3,7 +3,7 @@ title: DiagnosticResults
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -23,4 +23,5 @@ Defines all the error codes the diagnostic API returns.
 * **INVALID_OBJECT** -Invalid Object
 
 * **UNDEFINED** -Error code not defined.
+
 

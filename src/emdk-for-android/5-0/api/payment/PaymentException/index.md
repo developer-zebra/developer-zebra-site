@@ -3,7 +3,7 @@ title: PaymentException
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -26,4 +26,5 @@ Returns the PaymentResults.
 **Returns:**
 
 com.symbol.emdk.payment.PaymentResults
+
 

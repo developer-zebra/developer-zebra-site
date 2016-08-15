@@ -3,7 +3,7 @@ title: ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -181,4 +181,5 @@ Type of aiming pattern to be used for barcode scanning.
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.AimingPattern
+
 

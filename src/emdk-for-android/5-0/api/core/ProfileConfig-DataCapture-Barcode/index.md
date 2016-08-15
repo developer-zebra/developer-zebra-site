@@ -3,7 +3,7 @@ title: ProfileConfig.DataCapture.Barcode
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -130,4 +130,5 @@ Gets and Sets UpcEanParams configuration object [ ProfileConfig.DataCapture.Barc
 **Type:**
 
 com.symbol.emdk.ProfileConfig.DataCapture.Barcode.UpcEanParams
+
 

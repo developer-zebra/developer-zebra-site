@@ -3,7 +3,7 @@ title: SimulScanReaderInfo
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -56,4 +56,5 @@ Returns the reader device type
 
 com.symbol.emdk.simulscan.SimulScanReaderInfo.DeviceType - SimulScanDeviceType
  		Returns the SimulScanDeviceType
+
 

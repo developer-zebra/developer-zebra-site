@@ -3,7 +3,7 @@ title: PassThruApduProcessor
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -182,4 +182,5 @@ com.symbol.emdk.securenfc.PassThruApduException
 
 The exception will be thrown if it fails to process the given
              APDU.
+
 

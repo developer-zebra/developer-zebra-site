@@ -3,7 +3,7 @@ title: NotificationException
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -26,4 +26,5 @@ Returns the NotificationResults enum value.
 **Returns:**
 
 com.symbol.emdk.notification.NotificationResults
+
 

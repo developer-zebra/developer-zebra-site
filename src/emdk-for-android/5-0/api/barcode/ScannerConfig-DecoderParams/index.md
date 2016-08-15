@@ -3,7 +3,7 @@ title: ScannerConfig.DecoderParams
 type: api
 layout: guide.html
 product: EMDK For Android
-productversion: '4.2'
+productversion: '5.0'
 ---
 
 
@@ -413,4 +413,5 @@ The HanXin class provides access to parameters that are available
 **Type:**
 
 com.symbol.emdk.barcode.ScannerConfig.DecoderParams.HanXin
+
 

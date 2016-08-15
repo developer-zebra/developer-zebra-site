@@ -15,7 +15,7 @@ The Printer API module provides access to find, connect, and print over Bluetoot
 There are two methods of enabling the Printer API:
 
 * Include all 'ebapi' modules
-* Include only the API modules you need
+* Include only the required API modules
 
 Both methods are explained below. 
 
@@ -24,15 +24,15 @@ Either way, the included files will be from:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as the index.html and add the following line to the HEAD section of the index.html file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
 > This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
 
-### Include only the modules you need
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the Printer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+### Include only the required modules
+To include individual APIs, include the `ebapi.js` in the app's HTML, and then the additional required API file(s). For instance, to use the Printer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -161,7 +161,7 @@ Synchronous Return:
 
 
 ### enumerateSupportedTypes()
-**Immediately returns an array with supported printer types**. The result depends on your build configuration. Each extension is linked to application during build. To add or remove support for any printer type, update extension list in the `build.yml`. 
+**Immediately returns an array with supported printer types**. The result depends on the build configuration. Each extension is linked to application during build. To add or remove support for any printer type, update extension list in the `build.yml`. 
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -471,7 +471,7 @@ Synchronous Return:
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Printer</span> defaultInstance)
-This method allows you to set the attributes of the default object instance by passing in an object of the same class.
+This method allows attributes of the default object instance to be set by passing in an object of the same class.
 
 ####Parameters
 <ul><li>defaultInstance : <span class='text-info'>SELF_INSTANCE: EB.Printer</span><p>An instance object that is of the same class. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -678,7 +678,7 @@ Default port when connecting with TCP/IP.
 ####Type
 <span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
 ####Description
-**Connection status flag**. All other properties are valid only if isConnect = true. Note: This property does not guarantee a real connection, because all real device functionality is processed in separate thread asynchronously. If you want a real physical connection, use `requestState()` method with receive result in the callback. This is the only guaranteed method of processing real requests to the device and analyzing answers from the device.
+**Connection status flag**. All other properties are valid only if isConnect = true. Note: This property does not guarantee a real connection, because all real device functionality is processed in separate thread asynchronously. For a real physical connection, use `requestState()` method with receive result in the callback. This is the only guaranteed method of processing real requests to the device and analyzing answers from the device.
 ####Access
 
 
@@ -762,9 +762,9 @@ Type of printer - see PRINTER_TYPE_... constants.
 
 ###Windows Mobile/CE Notes
 
-* Requires a Printing Service application to be running. This is described in the [Printing Guide](../../guide/printing#platform-notes). 
+* Requires a Printing Service application to be running. This is described in the [Printing Guide](../../guide/printing). 
 
-* You should avoid navigating from the current page using the printer without disconnecting from the printer first. You can use the window.onunload event:
+* Avoid navigating from the current page using the printer without disconnecting from the printer first. Use the window.onunload event:
 
         :::javascript
         window.onunload = function(){
@@ -773,7 +773,7 @@ Type of printer - see PRINTER_TYPE_... constants.
 
 * When calling searchPrinters() with Bluetooth search (CONNECTION_TYPE_ANY or CONNECTION_TYPE_BLUETOOTH), all local Bluetooth devices--including non-printers--will be discovered and send pairing requests. Just cancel or ignore them. This happens because the software cannot detect non-printers until after the device is paired. It is recommended that the BT or Wi-Fi MAC address also be used when searching for printers.
 
-* Before calling searchPrinters() with USB search (CONNECTION_TYPE_ANY or CONNECTION_TYPE_USB), you should configure the device's USB controller for "USB Host mode" and reboot. 
+* Before calling searchPrinters() with USB search (CONNECTION_TYPE_ANY or CONNECTION_TYPE_USB), configure the device's USB controller for "USB Host mode" and reboot. 
 
 * When calling searchPrinters() with USB search (with CONNECTION_TYPE_ANY or CONNECTION_TYPE_USB), all USB Printers connected to the device will be discovered. If USB printers are not supported by SDK or device, searchPrinters function should return PRINTER_STATUS_ERR_UNSUPPORTED.
 

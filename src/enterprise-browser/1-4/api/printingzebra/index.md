@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-The PrinterZebra API provides Zebra-specific API access to [Zebra's Bluetooth and Wi-Fi network printers](https://www.zebra.com/us/en/products/printers/mobile.html), and to [Zebra USB-capable printers](../../guide/about/#printers) for Android and Windows Mobile. **Other printers might work with this API**. This API inherits all methods, properties and constants from the [Printer API](../printing). 
+The PrinterZebra API provides Zebra-specific API access to [Zebra's Bluetooth and Wi-Fi network printers](https://www.zebra.com/us/en/products/printers/mobile.html), and to [Zebra USB-capable printers](../../guide/about/#printers) for Android and Windows Mobile. This API inherits all methods, properties and constants from the [Printer API](../printing). 
 
 ## Enabling the API
 There are two methods of enabling the Printer API:
@@ -61,7 +61,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -90,7 +90,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -118,7 +118,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -146,7 +146,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -174,7 +174,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -200,7 +200,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -228,7 +228,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -254,7 +254,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -280,7 +280,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -308,7 +308,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -336,7 +336,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -365,7 +365,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -395,7 +395,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -423,7 +423,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -451,7 +451,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -479,7 +479,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -507,7 +507,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -535,7 +535,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -570,7 +570,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -596,7 +596,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -621,7 +621,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -644,7 +644,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -669,7 +669,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -718,7 +718,7 @@ Synchronous Return:
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ####Method Access:
 
@@ -751,7 +751,7 @@ Unique printer ID during application lifetime.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###connectionType
 
@@ -772,7 +772,7 @@ Type of connection to printer.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###deviceAddress
 
@@ -793,7 +793,7 @@ IP address for Wi-Fi connection, Bluetooth(R) MAC or device serial number. To ge
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###deviceName
 
@@ -814,7 +814,7 @@ Bluetooth/Network name of printer.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###devicePort
 
@@ -835,7 +835,7 @@ Default port when connecting with TCP/IP.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###isConnected
 
@@ -856,7 +856,7 @@ Default port when connecting with TCP/IP.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ###printerType
 
@@ -877,7 +877,7 @@ Type of printer - see PRINTER_TYPE_... constants.
 
 * Android
 * Windows Mobile
-* Windows CE
+
 
 ##Constants
 

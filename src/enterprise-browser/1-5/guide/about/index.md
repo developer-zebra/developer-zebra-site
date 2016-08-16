@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Browser 1.5
+title: About Enterprise Browser 1.5 (unreleased)
 productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
@@ -12,9 +12,7 @@ The base [EB installation](../setup) includes everything needed to quickly build
 
 Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
 
-## New in v1.5
-
->> **NEW FEATURES OF 1.5 TO BE ADDED**
+## New in v1.5 (unreleased)
 
 ####Zebra Device Support
   * **TC70 and TC75 with Android L**

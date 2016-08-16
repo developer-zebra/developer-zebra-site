@@ -76,9 +76,10 @@ After a license is applied, a file can be created for Android or downloaded for 
 **On Android, create a** `license` **file**:
 
 1. Purchase a Deployment License
-2. Create a text file called "license" 
+2. Create a text file called "license"
 3. On the first line of the file, enter the licensing company's name
-4. On the second line, enter the hexadecimal license key
+4. On the second line, enter the hexadecimal license key (as below)
+![img](../../images/Android_license_file.png)
 5. Place the `license` file on the device in: `/enterprise/device/enterprisebrowser`
 6. Launch Enterprise Browser on the device to confirm that the license has been applied (the name of the licensed company will appear on EB splash screen)
 <br>

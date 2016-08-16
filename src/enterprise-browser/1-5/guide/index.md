@@ -8,7 +8,9 @@ automenu:
       items:
         - title: Enterprise Browser Setup Guide
           url: setup
-        - title: App Optimization
+        - title: Licensing
+          url: licensing
+        - title: Optimization
           url: optimization
     - title: App Configuration
       items:

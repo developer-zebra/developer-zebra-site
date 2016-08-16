@@ -1139,7 +1139,7 @@ Contains the password for accessing the Settings page when password function is 
 
 ## HTMLStyles
 ### CaretWidth
-**Applies to Webkit on Windows Mobile or Windows CE only**. Specifies the width (in pixels) of the textbox / text-area caret. Accepts values from 1-5. If unspecified, a default value of "1" will be entered. 
+**Applies to Windows Mobile/CE with Webkit only**. Specifies the width (in pixels) of the textbox / text-area caret. Accepts values from 1-5. If unspecified, a default value of "1" will be entered. 
 
 **Possible Values**:
 

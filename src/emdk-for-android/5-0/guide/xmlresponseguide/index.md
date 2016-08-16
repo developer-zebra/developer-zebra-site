@@ -219,7 +219,7 @@ In this example, A parm error was introduced. The Time parm does not have the ne
 
 
 
-##XML characteristic-error
+###XML characteristic-error
 In this example, A characteristic error was introduced. The Clock feature type has be changed from Clock to Clockx. Clockx would be an unknown feature type for the EMDK, and would result in an characteristic-error.  The error description is a bit misleading. Each Profile feature ( Clock, Wifi, Camera Manager, etc...) registers with the EMDK during device startup. In this case, the EMDK thinks that we are trying to use an unregistered profile feature.
 
 **XML submitted**

@@ -4,7 +4,6 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
 ## Overview
 Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JacaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
@@ -28,8 +27,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   * **[SettingsButton API](../../api/settingsButton)**
 
 ####New Features
-* **[Keycode Mapping](../keycapture)** allows a custom set of Android keycode values to be assigned from a file, replacing some or all of the system's default keycode values. **Applies to Android only**.
-
+* **[Simplified Mass-Deployment](../keycapture)** allows Enterprise Browser to be deployed to devices along with a customized `Config.xml` file and `keycodemapping.xml` file (if desired) and access those settings the first time it's launched. **Applies to Android devices only**. 
 
 ####New Tags
 

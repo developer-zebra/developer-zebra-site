@@ -14,6 +14,8 @@ automenu:
           url: ../guide
     - title: Enterprise Browser APIs
       items:
+        - title: APD (missing)
+          url: apd
         - title: Application
           url: Application
         - title: AudioCapture
@@ -60,6 +62,8 @@ automenu:
           url: printingzebra
         - title: Push
           url: push
+        - title: Remote Notification
+          url: RemoteNotification
         - title: ScreenOrientation
           url: ScreenOrientation
         - title: Sensor
@@ -78,10 +82,6 @@ automenu:
           url: Timer
         - title: Webview
           url: webview
-        - title: Zoom
-          url: Zoom
-        - title: ZoomTextButton
-          url: ZoomTextButton
     - title: RhoElements 2.x APIs
       items:
         - title: AddressBar
@@ -91,7 +91,7 @@ automenu:
         - title: Alarm
           url: Alarm
         - title: APD (missing)
-          url: Apd
+          url: apd
         - title: Application
           url: Application
         - title: AudioCapture
@@ -174,7 +174,7 @@ automenu:
           url: ScreenOrientation
         - title: Signal (missing)
           url: signal
-        - title: signatureCapture (missing)
+        - title: SignatureCapture (missing)
           url: signaturecapture
         - title: SIP
           url: Sip

@@ -6,23 +6,26 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. In essence, Enterprise Browser acts as a runtime environment inside which a company's HTML and JacaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
+Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JacaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
-The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with [virtually any Zebra device](../about#mobile) running Android and Microsoft Windows Mobile/CE. 
+The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with [virtually any Zebra device](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](/stagenow/2-4/gettingstarted/) or a mobile device management (MDM) system.   
 
-For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise Browser supports those legacy products, and is the ideal path forward for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser will improve development time, reduce costs and make the transition to next-generation devices and operating systems fast, easy and affordable--especially in high-volume mobile environments.
+Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
 
 ## New in v1.5
 
-> THE FOLLOWING MUST BE CHANGED TO THOSE OF 1.5
+>> **NEW FEATURES OF 1.5 TO BE ADDED**
 
 ####Zebra Device Support
-  * **MC92N0** Android KitKat
-  * **TC8000** Android KitKat
-  
+  * **TC70 and TC75 with Android L**
+  * **WT6000 with Android L**
+  * **MC40 with Android L**
+  * **RS6000, RS4000 and RS507**
+  * **Psion XT15, VH10 and WAP**
+
 [See all supported devices](../about#mobile)
 
-####New APIs
+####New APIs (released with EB 1.4)
   * **[EzNFC API](../../api/EzNFC)**
   * **[SettingsButton API](../../api/settingsButton)**
 

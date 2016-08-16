@@ -4,13 +4,13 @@ insert:
   file: enterprise-browser/1-5/guide/about/index.md
 layout: guide.html
 menu:
-  title: Enterprise Browser
+  title: Enterprise Browser 1.5
   img: enterprise_browser_logo.png
   versions:
-    - versionto: 1-5
-      versionfrom: 1-4
+    - versionto: 1-4
+      versionfrom: 1-5
       default: /enterprise-browser/1-5/guide/about
-      label: '1.5'
+      label: '1.4'
   items:
     - title: Home
       url: /enterprise-browser/1-5/guide/about

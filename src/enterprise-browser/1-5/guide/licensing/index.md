@@ -7,6 +7,8 @@ layout: guide.html
 ##Overview 
 Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for entire deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser applications to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use, and applying the license to individual devices and as part of a mass-deployment.
 
+-----
+
 ###I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra directly or with a Zebra reseller. 
 
@@ -20,6 +22,8 @@ The first step in obtaining a license is to engage with Zebra directly or with a
 * **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
 * **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
 
+-----
+
 ###II. Access Licensing System
 After a licensing agreement is purchased from Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials for accessing the [Zebra Enterprise Software Licensing system](https://softwarelicensing.motorolasolutions.com/documentation/index.html). 
 
@@ -28,6 +32,8 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 	* See the status of existing orders
 	* Assign licenses to devices or deployments
 	* View current license inventory and assignments
+
+-----
 
 ###III. Assign a License
 Once a license is purchased, it must me assigned to one or more devices before those devices can be deployed and used. 
@@ -45,6 +51,8 @@ Once a license is purchased, it must me assigned to one or more devices before t
 **&#53;. Scan the barcodes that appear**. These contain the new license(s). 
 
 > **Note**: Some device scanners support only printed barcodes. 
+
+-----
 
 ###IV. Apply the License
 Whether the purchased license is for a specific device or an entire deployment, the Enterprise Browser license must be applied to one or more devices before those devices can be used commercially. Each license permits an unlimited number of Enterprise Browser applications to run on the device(s). 

@@ -41,6 +41,8 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 
 > **Zebra recommends that uninstallation be verified for each device scenario** before any process is automated using [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
+-----
+
 ### Windows Installation
 If upgrading from a prior version of Enterprise Browser, the older version must be manually uninstalled before installing the new one (see image, below). 
 
@@ -48,9 +50,9 @@ If upgrading from a prior version of Enterprise Browser, the older version must 
 
 **To remove and install Enterprise Browser*:
 
-If not upgrading, skip to step 3. 
+If not upgrading, skip to Step 3. 
 
-1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; step 2 will cause it to be lost. 
+1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; Step 2 will cause it to be lost. 
 2. To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** and follow the prompts. 
 3. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear. 
 	a. Click on the Windows ".msi" package. 
@@ -68,6 +70,8 @@ To bring up this screen at a later time, select **Start Menu -> Enterprise Brows
 
 Windows instructions continue in the "Deployment to Device(s)" section, below. 
 
+-----
+
 ### Mac OS X Installation
 1. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
@@ -84,6 +88,8 @@ The Enterprise Browser files and folders will be copied into the Application fol
 ![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
 **Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Windows version**. These are the same runtimes listed on the left side of the [Windows "Installer" screen](../../images/getting-started/setup/ebsetup_02.jpg), above. 
+
+-----
 
 ## Deployment to Device(s)
 ###From a Windows host
@@ -108,7 +114,7 @@ Once a connection has been established, install the Enterprise Browser runtime o
 > **Note**: Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
 
 ###From a Mac to Android
-The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Android target devices is with the Android File Transfer utility. **If Android File Transfer is already installed, skip to step 5**.  
+The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Android target devices is with the Android File Transfer utility. **If Android File Transfer is already installed, skip to Step 5**.  
 
 &#49;. Visit the [Android File Transfer page](https://www.android.com/filetransfer/).
 
@@ -156,6 +162,8 @@ While the file is in transit, a dialog will appear on the Mac similar to the ima
 **Note: Copy Enterprise Runtimes to internal storage only**.
 
 Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
+
+-----
 
 ## Connections
 ### Android devices
@@ -232,6 +240,8 @@ When a device is properly connected and recognized, the Mobile Device Center app
 
 The system is now ready to deploy Enterprise Browser using the Enterprise Browser installer. 
 
+-----
+
 ## Manual Deployment
 Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. 
 
@@ -252,6 +262,8 @@ On Windows, this will bring up a window that looks similar to the image below:
 &#52;. Reboot the device to complete the installation. 
 
 &#53;. If a persistent runtime was installed, perform a cold boot/cleanPS on the device to activate the runtime.
+
+-----
 
 ## Launching the EB App 
 After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](../configreference) for complete details.  

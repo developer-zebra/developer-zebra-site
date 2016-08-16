@@ -44,6 +44,20 @@ products:
         menu: '2.4'
       - url: ehs/2-3/guide/about/
         menu: '2.3'
+  - title: Enterprise Browser
+    description: "Use standard web technologies (HTML5, CSS3 and JavaScript) to run and integrate with virtually any Zebra device"
+    url: /enterprise-browser/1-4/guide/about
+    image: /enterprise-browser/enterprise_browser_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: Getting Started
+        url: /enterprise-browser/1-4/guide/gettingstarted
+      - title: Tutorials
+        url: /enterprise-browser/1-4/tutorial/
+      - title: Guides
+        url: /enterprise-browser/1-4/guide
+      - title: APIs
+        url: /enterprise-browser/1-4/api
   - title: Enterprise Keyboard
     description: A customizable keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about

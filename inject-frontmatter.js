@@ -70,12 +70,22 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-        "path": "stagenow/2-4",
+        "path": "enterprise-browser/1-4",
         "frontmatter": [
             {
                 "item" :  "productversion",
-                "value" : "2.4",
+                "value" : "1.4",
                 "override": true,
+            },
+            {
+                "item" :  "product",
+                "value" : "Enterprise Browser",
+                "override": true,
+            },
+            {
+                "item" :  "layout",
+                "value" : "guide.html",
+                "override": false
             }
         ]
     },

@@ -375,7 +375,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 ### WakeLock
 **Applies to Android only**. Controls whether the CPU will remain active after the power button is pressed, which otherwise turns off the screen and keyboard backlight. Disabled by default. Effects battery life. 
 
-**Note**: The value in the &lt;WakeLockType&gt; tag also can be manipulated using the `EB.Device.acquirePartialWakeLock();` and `EB.Device.releasePartialWakeLock();` JavaScript function calls. Refer to the [Android PowerManager docs](https://developer.android.com/reference/android/os/PowerManager.html) for more information. 
+**Note**: This setting also can be controlled using the `EB.Device.acquirePartialWakeLock();` and `EB.Device.releasePartialWakeLock();` JavaScript function calls, and would override any setting stored in the `Config.xml` file. 
 
 **Possible Values**:
 

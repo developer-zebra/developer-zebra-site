@@ -63,6 +63,10 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  <DebugButtons>
 	    <DebugButtonsEnabled value="0" />
 	  </DebugButtons>
+
+	  <DebugSetting>
+		<DebugModeEnable value="0"/>
+	  </DebugSetting> 
 	  
 	  <ExitPassword>
 	    <ExitPasswordEnabled value="0" />
@@ -327,7 +331,7 @@ Used to maintain backward compatibility with PocketBrowser syntax for controllin
 	<HTTPS_Proxy value="https://my.proxy.com:8181"/>
 
 ### No_Proxy
-**Applies only to the Zebra Webkit engine**. Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
+**Applies to the Zebra Webkit engine only**. Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
 **Possible Values**:
 
 * Comma separated list of direct access addresses.
@@ -356,7 +360,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 
 ### SplashScreenDuration
-**Applies only to Android**. Specifies the length of time (in milliseconds) to display the image defined by the SplashScreenDuration tag. It is recommended that the duration be greater than 3000 ms (3 seconds) to compensate for image loading time. If tag is removed or left unspecified, will default to 0 seconds. 
+**Applies to Android only**. Specifies the length of time (in milliseconds) to display the image defined by the SplashScreenDuration tag. It is recommended that the duration be greater than 3000 ms (3 seconds) to compensate for image loading time. If tag is removed or left unspecified, will default to 0 seconds. 
 
 **Possible Values**:
 
@@ -369,7 +373,9 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 
 ### WakeLock
-**Applies only to Android**. Controls whether the CPU will remain active after a press of the power button, which otherwise turns off the screen and keyboard backlight. Disabled by default. 
+**Applies to Android only**. Controls whether the CPU will remain active after the power button is pressed, which otherwise turns off the screen and keyboard backlight. Disabled by default. Effects battery life. 
+
+**Note**: The value in the WakeLockType tag also can be effected using the `EB.Device.acquirePartialWakeLock();` and `EB.Device.releasePartialWakeLock();` JavaScript function calls. Refer to the [Android PowerManager docs](https://developer.android.com/reference/android/os/PowerManager.html) for more information. 
 
 **Possible Values**:
 
@@ -436,6 +442,22 @@ When enabled, presents a set of controls useful for development and debugging pu
 #### Example
 	:::xml
 	<DebugButtonsEnabled value="1"/>
+
+### DebugSetting
+Provides the option to debug an Enterprise Browser app running on a USB-connected device through the Chrome browser's `chrome://inspect/` address bar function. 
+
+**Possible Values**:
+
+* 0 – Disabled
+* 1 – Enabled 
+
+#### Example
+
+	:::xml
+	<DebugSetting>
+		<DebugModeEnable value="0"/>
+	</DebugSetting> 
+
 
 -----
 
@@ -590,7 +612,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 	<RegEXFile value="file://%INSTALLDIR%\Config\RegEx.xml"/>
 
 ### PluginFile
-**Applies only to Windows Mobile/CE. Not applicable to the Enterprise Tablet**. Specifies location of the plug-in file (a .DLL on the device), which facilitates mapping between modules and plug-ins on the device. **Changing this file or its location is not recommended, and might prevent an app from launching**. 
+**Applies to Windows Mobile/CE only. Not applicable to the Enterprise Tablet**. Specifies location of the plug-in file (a .DLL on the device), which facilitates mapping between modules and plug-ins on the device. **Changing this file or its location is not recommended, and might prevent an app from launching**. 
 
 **Possible Values**:
 
@@ -1218,7 +1240,7 @@ Contains the password for accessing the Settings page when password function is 
 	<ClearTypeEnabled value="0"/>
 
 ###FitToScreenEnabled
-Automatically expands the application window to fit the screen. Apples to Windows Mobile with Internet Explorer rendering engine only.
+**Applies to Windows Mobile with IE rendering engine only**. Automatically expands the application window to fit the screen.
 
 **Possible Values**:
 
@@ -1587,7 +1609,7 @@ Controls viewport meta tag processing (enabled by default).
 	<ViewportEnabled value="1"/>
 
 ### ViewportWidth
-**Applies only to Windows Mobile/CE**. Sets the default viewport width for pages that do not have a viewport meta tag. If not specified, uses 1:1 scaling. 
+**Applies to Windows Mobile/CE only**. Sets the default viewport width for pages that do not have a viewport meta tag. If not specified, uses 1:1 scaling. 
 
 **Possible Values**:
 
@@ -1598,7 +1620,7 @@ Controls viewport meta tag processing (enabled by default).
 	<ViewportWidth value="1"/>
 
 ### CaFile
-**Applies only to Windows Mobile/CE**. Specifies the location of a device-resident file containing CA certificates in PEM format. Please [refer to openSSL](http://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html) for more information. 
+**Applies to Windows Mobile/CE only**. Specifies the location of a device-resident file containing CA certificates in PEM format. Please [refer to openSSL](http://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html) for more information. 
 
 > Note: Enterprise Browser supports only a single PEM certificate file. If multiple certificates must be passed to the Webkit browser on WM/CE, the contents of multiple `.pem` certificates can be combined into a single file using a text editor. The combined file can then be specified in the CaFile parameter. 
 
@@ -1808,7 +1830,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 -----
 
 ## usedwforscanning
-**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
+**Applies to Android only**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
 
 **Possible Values**:
 
@@ -1829,7 +1851,7 @@ Due to its asynchronous battery notification, the Enterprise Tablet does not sup
 > **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 ### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
-**This issue applies only to Android**. Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](../datawedge).  
+**This issue applies to Android only**. Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](../datawedge).  
 
 ### <a name="_fnbehavior"></a>FunctionKeysCapturable-EnableFunctionKey Interaction
 **Applies to only Windows Mobile/CE devices**. 

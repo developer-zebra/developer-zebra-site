@@ -270,7 +270,8 @@ On a Mac, the Runtimes folder looks like the image below:
 * Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/` on the device
 * Stores the Enterprise Browser executable in that new directory
 * Spawns a `Config.xml` with default settings in the directory
-* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and moves `Config.xml` and `keycodemapping.xml` files (if present), overwriting any existing file(s) 
+* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and moves `Config.xml` and `keycodemapping.xml` files (if present) to the directory, overwriting any existing file(s)
+* Copies customized config file(s) to `/<internal_mem_root_dir>/EnterpriseBrowser/backup/`
 * Activates the settings of the config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/` 
 
 &#53;. **Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.

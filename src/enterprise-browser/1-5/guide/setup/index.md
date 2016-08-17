@@ -147,7 +147,7 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 ![img](../../images/getting-started/setup/PocketPCsend.png)
 
-&#52;. A file dialog will apppear. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
+&#52;. A file dialog will appear. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
 
 While the file is in transit, a dialog will appear on the Mac similar to the image below: 
 
@@ -159,7 +159,7 @@ While the file is in transit, a dialog will appear on the Mac similar to the ima
 
 &#55;. Restart the device to complete the installation. 
 
-**Note: Copy Enterprise Runtimes to internal storage only**.
+**Note: Copy Enterprise Browser Runtimes to internal storage only**.
 
 Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
@@ -243,51 +243,68 @@ The system is now ready to deploy Enterprise Browser using the Enterprise Browse
 -----
 
 ## Manual Deployment
-Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. 
+Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) on the development host as above, perform the steps as indicated for the target platform. 
+ 
+Alternatively, Enterprise Browser can be mass-deployed using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
-After installing the Enterprise Browser (.msi or .dmg) as above: 
+&#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open **Applications -> Enterprise Browser -> Runtimes**. 
 
-&#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open the **Applications -> Enterprise Browser -> Runtimes** folder. 
+**The remaining steps apply to both platforms**.
 
 ![img](../../images/getting-started/setup/EB_resources_menu.jpg)
 
 On Windows, this will bring up a window that looks similar to the image below: 
-
 ![img](../../images/getting-started/setup/setup-enterprise-browser-runtimes.png)
 
-&#50;. Copy the desired runtime to the root directory of the device. 
+On a Mac, the Runtimes folder looks like the image below: 
+![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
-&#51;. From the device, use a file explorer to locate and execute the runtime. 
+&#50;. **Drag-copy the desired runtime** to the root directory of the device. 
 
-&#52;. Reboot the device to complete the installation. 
+&#51;. **For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
 
-&#53;. If a persistent runtime was installed, perform a cold boot/cleanPS on the device to activate the runtime.
+&#52;. From the device, **use a file explorer to locate and execute the runtime**. 
+
+**Enterprise Browser 1.5 for Android performs the following actions when launched for the first time:
+
+* Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/` on the device
+* Stores the Enterprise Browser executable in that new directory
+* Spawns a `Config.xml` with default settings in the directory
+* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and moves `Config.xml` and `keycodemapping.xml` files (if present), overwriting any existing file(s) 
+* Activates the settings of the config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/` 
+
+&#53;. **Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.
+
+> **Note: Directory names are case sensitive**. 
+
+### Mass Deployment
+Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
 -----
 
-## Launching the EB App 
-After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](../configreference) for complete details.  
+## Launch Enterprise Browser 
+After installation and first launch, an Enterprise Browser app icon will appear **in the all-apps section or "App Drawer" of Android devices** and **in the Main app menu on Windows Mobile/CE**. Versions prior to Enterprise Browser 1.5 launch with default runtime settings as defined in the `Config.xml` file on the device. Enterprise Browser 1.5 and higher can be launched with a pre-configured `Config.xml` file and optionally a pre-configured `keycodemapping.xml` file as well. See the [Config.xml Reference guide](../configreference) for information about configuring the `Config.xml` file.  
 
-By default, a screen like the one below will appear: 
+With default settings, the startup screen appears similar to the image below: 
 
 ![img](../../images/OndeviceConfig/On-device_config_01.png)
 
-Pressing the "Return to OS" button will skip settings configuration and bring up the operating system. To display the Settings button again, simply relaunch the Enterprise Browser app. 
+Press the "Return to OS" button to skip settings configuration and bring up the operating system. **To display the Settings button again, simply relaunch the Enterprise Browser app**. 
 
-**Press the "Settings" button to edit the on-device config.xml file**. A screen like the image below will appear:
+**Press the "Settings" button to edit the on-device `Config.xml` file**. A screen appears like the image below:
 
 ![img](../../images/OndeviceConfig/On-device_config_02.png)
 
-###Activating the start page
+###Setting the start page
 **To activate an EB app's start page, enter the URL in the Value field of the StartPage parameter**, as highlighted above, but **do not apply the changes yet**. Applying changes immediately will cause the new start page to be displayed next time EB is launched and will remove access to the Settings panel. 
 
-**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the `Config.xml` file**. 
 
 If on-device access to runtime settings is desired after setting up the start page (for example, to experiment with various settings before deployment), set the SettingsButtonEnabled parameter to "Enable" (as below). This will cause a Settings button to appear in the UI at all times. Passwords also can be set here, if desired. 
 
 ![img](../../images/OndeviceConfig/On-device_config_03.png)
 
-Press "Apply" to update the Config.xml file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
+Press "Apply" to update the `Config.xml` file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
 
 ![img](../../images/OndeviceConfig/On-device_config_04.png)
 
@@ -297,7 +314,7 @@ The Settings button, if enabled, appears in the UI like the one in the red box b
 
 **Note: When the IE engine is used on a Windows CE device**, displaying the Settings button in this way might cause screen distortion when scrolling.
 
-**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the `Config.xml` file**. 
 
 The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](../OndeviceConfig).
 

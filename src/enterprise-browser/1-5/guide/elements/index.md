@@ -118,6 +118,7 @@ Example meta-tag specification:
 * The [FitToScreenEnabled](../configreference/#fittoscreenenabled) parameter of EB is not supported on Android or Windows CE.
 * EMML profiles are not supported on Android.
 * If the app is to perform scanning, check for hardware contention issues and other potential [conflicts with DataWedge](/datawedge/5-0/guide/setup/#disabledatawedge) and other Android-native apps that use the device's scanning hardware.
+* **On the Psion VH10 with WinCE**, LED, beeper, pager and other objects activated through the Notification API are not supported, despite being enumerated through the `notification.enumerate();` function call. 
 
 -----
 

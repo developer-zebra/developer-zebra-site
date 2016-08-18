@@ -277,7 +277,7 @@ On a Mac, the Runtimes folder looks like the image below:
 > **Note: Directory names are case sensitive**. 
 
 ### Mass Deployment
-Enterprise Browser runtimes and its configuration and licensing files can be deployed to one or more devices using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
+The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
 
 -----
 

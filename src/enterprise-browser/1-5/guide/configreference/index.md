@@ -1579,25 +1579,70 @@ The browser will automatically append the querystring value "badlink" containing
 	<EnableSSL3 value="1"/>
 
 ### UserAgent
-Stores information about the device’s operating environment. Can be used to spoof the device to a web server, for example to view content designed for the desktop on the mobile screen. When visiting a web server, the WebKit browser can be used to report its User-Agent header as the value specified. 
-
-Use the following substitution variables:
-%p – Platform name (“Windows CE ” + version number)
-%w – WebKit version number
-%e – Zebra WebKit version number
-
-In PocketBrowser 2.1 and higher, the default value was changed to work out of the box with a greater number of server configurations. Prior to PocketBrowser 2.1, the default user agent was “Mozilla/5.0, AppleWebKit (KHTML, i.e. Gecko), Motorola Webkit, Safari.” This attribute cannot be set to a custom value for apps using Internet Explorer as their rendering engine. If using IE, please leave this value as the default value. Android does not support a custom UserAgent. 
+Stores information about the device’s operating environment to allow web sites to tailor content for optimal presentation. Could present security concerns if user-agent data is used for "spoofing," or to report header values that do not match the device. For example, a false data could allow a device to view content designed only for desktop computers. Variables are extracted from the device and replaced at runtime as described below. 
 
 **Possible Values**:
 
-* String
+* String (as defined in examples); accepts hard values or variables
 
-#### Example
+#### Variables
+At runtime, each variable extracts the corresponding system value from the device and inserts it into the UserAgent string. 
+
+#####Android (all versions)
+* **%%AndroidVersion%% -** Android version on the device (i.e. "4.4.3")
+* **%%DeviceModel%% -** device model (i.e. "TC700H")
+* **Build/%%BuildNumber%% -** BSP/Build version on the device
+* **%%Locale%% -** locale currently selected on the device (i.e. "en_US")
+* **AppleWebKit/%w -** AppleWebkit webkit version
+* **Version/%e -** KHTML webkit version
+* **Chrome/%c -** Chrome webkit version
+* **Mobile Safari /%w-** Mobile Safari webkit version
+
+##### Android KitKat and higher only (user-defined values)
+* **%%MAC%% -** Wi-Fi MAC address on the device 
+* **%%ESN%% -** serial number (ESN) of the device 
+
+##### Windows Mobile/CE
+* **%p –** Platform name (i.e. “Windows CE" + version number) 
+* **%w –** WebKit version  
+* **%e –** Zebra WebKit version
+
+**Zebra recommends strict adherence to the platform-specific UserAgent settings and substitution variables detailed here**.
+
+#### Android
+The &lt;UserAgent&gt; tag is consumed by Android to configure the Android UserAgent string. If the &lt;UserAgent&gt; tag is unspecified or not present in the `Config.xml` file, the UserAgent string will be populated with the [default Android WebView settings](https://developer.android.com/guide/webapps/migrating.html). **Zebra highly recommends following the version-specific specifications and substitution variables for UserAgent values detailed below**. 
+
+**Notes**: 
+* The order and format of the UserAgent string should not be altered.
+* Hard-coded values can used instead of substitution variables, but are inflexible and error-prone.
+* If hard-coded values are used, take extra care to ensure that they are correct.
+* Some servers implement the UserAgent string based on the string provided by a visiting client, thereby helping to ensure server-side compatibility with as many client-side UserAgents as possible. 
+
+<br>
+##### Example: Android KitKat and higher
 	:::xml
-	<UserAgent value="Mozilla/5.0 (%p) AppleWebKit/%w (KHTML, like Gecko) Safari/%w"/>
+	<UserAgent value="Mozilla/5.0 (Linux; Android %%AndroidVersion%%; %%DeviceModel%% Build/%%BuildNumber%%) AppleWebKit/%w (KHTML, like Gecko) Version/%e Chrome/%c Mobile Safari/%w MAC=%%MAC%% ESN=%%ESN%%" />
+
+<br>
+##### Example: Android Jelly Bean
+	:::xml
+	<UserAgent value="Mozilla/5.0 (Linux; U; Android %%AndroidVersion%%; %%Locale%%; %%DeviceModel%% Build/%%BuildNumber%%) AppleWebKit/%w (KHTML, like Gecko) Version/%e Mobile Safari/%w"/>
+
+**Android Notes**:
+* To detect the platform, it is necessary to have platform information (i.e: %p) in the UserAgent string. 
+* If platform information is not found, Enterprise Browser device capability APIs might not work.
+* In this case, Enterprise Browser will add "Android" string at the end of the user-defined UserAgent string. 
+
+#### Windows Mobile/CE
+<br>
+##### Example
+	:::xml
+	<UserAgent value="Mozilla/5.0 (WebKit; U; /%p) AppleWebKit/%w (KHTML, like Gecko) Version/%e Mobile Safari/%w" />
+
+In PocketBrowser 2.1 and higher, the default value was changed to work with a greater number of server configurations. Prior to PocketBrowser 2.1, the default user agent was “Mozilla/5.0, AppleWebKit (KHTML, i.e. Gecko), Motorola Webkit, Safari.” **Apps that the IE rendering engine must use this default value; the UserAgent cannot be set to a custom value**.
 
 ### ViewportEnabled
-Controls viewport meta tag processing (enabled by default).
+Controls viewport meta tag processing (enabled by default). Must be greater than zero. 
 
 **Possible Values**:
 

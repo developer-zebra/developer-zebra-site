@@ -1586,9 +1586,8 @@ Stores information about the device’s operating environment to allow web sites
 * String (as defined in examples); accepts hard values or variables
 
 #### Variables
-At runtime, each variable extracts the corresponding system value from the device and inserts it into the UserAgent string. 
 
-#####Android (all versions)
+#####Android (Jelly Bean and higher)
 * **%%AndroidVersion%% -** Android version on the device (i.e. "4.4.3")
 * **%%DeviceModel%% -** device model (i.e. "TC700H")
 * **Build/%%BuildNumber%% -** BSP/Build version on the device
@@ -1598,7 +1597,7 @@ At runtime, each variable extracts the corresponding system value from the devic
 * **Chrome/%c -** Chrome webkit version
 * **Mobile Safari /%w-** Mobile Safari webkit version
 
-##### Android KitKat and higher only (user-defined values)
+##### Android (KitKat and higher; supported user-defined values)
 * **%%MAC%% -** Wi-Fi MAC address on the device 
 * **%%ESN%% -** serial number (ESN) of the device 
 

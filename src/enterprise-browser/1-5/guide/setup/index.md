@@ -263,23 +263,21 @@ On a Mac, the Runtimes folder looks like the image below:
 
 &#51;. **For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
 
-&#52;. From the device, **use a file explorer to locate and execute the runtime**. 
+&#52;. From the device, **use a file explorer to locate and execute the runtime**. When Enterprise Browser 1.5 for Android is launched for the first time after being installed, it performs the following actions on the device:
 
-**Enterprise Browser 1.5 for Android performs the following actions when launched for the first time**:
-
-* Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/` on the device
+* Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/`
 * Stores the Enterprise Browser executable in that new directory
 * Spawns a `Config.xml` with default settings in the directory
-* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and copies `Config.xml` and `keycodemapping.xml` files (if present) to the directory, overwriting any existing file(s)
-* Copies customized config file(s) to `/<internal_mem_root_dir>/EnterpriseBrowser/backup/`; deletes originals
-* Activates the settings of the config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/` 
+* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and copies `Config.xml` and `keycodemapping.xml` files (if present) to the new directory, overwriting any existing file(s) of the same name
+* Copies those same config file(s) to `/<internal_mem_root_dir>/EnterpriseBrowser/backup/` and deletes the originals
+* Activates the settings of the new config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/`
 
 &#53;. **Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.
 
 > **Note: Directory names are case sensitive**. 
 
 ### Mass Deployment
-Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
+Enterprise Browser runtimes and its configuration and licensing files can be deployed to one or more devices using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
 
 -----
 

@@ -24,7 +24,7 @@ To include all JS APIs, copy the ebapi-modules.js file to a location accessible 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> Note: that the pathing for this file is relative to the current page.
+> Note that the pathing for this file is relative to the current page.
 
 This will define the EB class within the page. Any page you need to use the modules will need to have the .js file included in this fashion.
 

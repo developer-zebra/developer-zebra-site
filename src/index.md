@@ -23,6 +23,29 @@ products:
         url: /datawedge/5-0/guide/api
       - title: Demo
         url: /datawedge/5-0/guide/demo
+  - title: Enterprise Browser
+    description: "Build apps using standard web technologies such as HTML5, CSS3 and JavaScript that work with virtually any Zebra device."
+    url: /enterprise-browser/1-4/guide/about
+    image: /enterprise-browser/enterprise_browser_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /enterprise-browser/1-5/guide/about
+      - title: Getting Started
+        url: /enterprise-browser/1-5/guide/gettingstarted
+      - title: Setup
+        url: /enterprise-browser/1-5/guide/setup/
+      - title: Tutorials
+        url: /enterprise-browser/1-5/tutorial/
+      - title: Usage Guides
+        url: /enterprise-browser/1-5/guide
+      - title: APIs
+        url: /enterprise-browser/1-5/api
+    versions:
+      - url: /enterprise-browser/1-5/guide/about/
+        menu: '1.5'
+      - url: /enterprise-browser/1-4/guide/about/
+        menu: '1.4'
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-4/guide/about

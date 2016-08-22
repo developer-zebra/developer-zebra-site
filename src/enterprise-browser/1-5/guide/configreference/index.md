@@ -1735,6 +1735,52 @@ The browser cache size, in whole MBs.
 	:::xml
 	<Cache value="5"/>
 
+### DiskCache
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount device storage to be used for the web-page cache, improves page-access times on subsequent visits to a site. Can be expressed as a fixed maximum (in MB) or a percentage of remaining space available. The disk cache persists after EB quits. Enabled by default in Enteprise Browser 1.5 and higher. To disable, remove or comment this tag. 
+
+User also can modify disk allocation size to various size based on his/her need based on the physical memory availability on the device.
+
+**Note**: Enterprise Browser uses the "max-age" response directive or "expires" parameter in the response header to calculate the freshness of a cached page. 
+
+
+If a cached page has expired, EB sends an "If-Modified-Since" request to the server. If max-age or Expires attribute is not present under response header, EB uses heuristic time factor. Refer DiskCacheExpTimeFactor parameter for details.
+
+OLD VALUES TO EDIT
+
+**Possible Values**:
+
+* Integer values (in whole numbers) for cache size (in MBs)
+
+#### Example
+	:::xml
+	<DiskCache  VALUE="5MB"/>
+
+### DiskCachePath
+**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages to be changed. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\cache` to store cached resources. **Use this parameter only to change the default location of cached files**.
+
+**Possible Values**:
+
+* Fully qualified path to disk cache file
+
+#### Example
+	:::xml
+	<DiskCachePath  VALUE="\Program Files\EnterpriseBrowser\Cache" />
+
+### DiskCacheExpTimeFactor
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the amount of time that must elapse before a page is no longer considered "fresh" (and hence is "stale"). Setting this parameter to a larger number keeps cached pages "fresh" longer; a shorter number causes cached pages to be reloaded more often. 
+
+By default, EB uses "max-age" response directive or the "Expires" header field in the server response to calculate the freshness of a cached page. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor. 
+
+For more information, please refer to the [IETF's definition of resource freshness RFC-7234](https://tools.ietf.org/html/rfc7234#section-4.2). 
+
+**Possible Values**:
+
+* Integer values (in whole numbers)
+
+#### Example
+	:::xml
+	<DiskCacheExpTimeFactor  VALUE="5" />
+
 -----
 
 ## Device keys

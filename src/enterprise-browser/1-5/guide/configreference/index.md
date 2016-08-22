@@ -1588,36 +1588,46 @@ Stores information about the device’s operating environment to allow web sites
 * String (as defined in examples below); accepts true values, variables or a combination
 <br>
 #### Android UserAgent
-##### Example - KitKat and higher
+The &lt;UserAgent&gt; tag values are extracted from system information on the device and used by Android to configure the Android UserAgent string. **Zebra highly recommends following the version-specific syntax, specifications and substitution variables for UserAgent values detailed here**. If the &lt;UserAgent&gt; tag is left unspecified or not present in the `Config.xml` file, the UserAgent string will be populated with the [default Android WebView settings](https://developer.android.com/guide/webapps/migrating.html). Notice that the user-agent string syntax varies from one Android version to another. Variables are defined in the section that follows. 
+
+##### KitKat and higher
 	:::xml
 	<UserAgent value="Mozilla/5.0 (Linux; Android %%AndroidVersion%%; %%DeviceModel%% Build/%%BuildNumber%%) AppleWebKit/%w (KHTML, like Gecko) Version/%e Chrome/%c Mobile Safari/%w MAC=%%MAC%% ESN=%%ESN%%" />
 
-##### Example - Jelly Bean
+##### Jelly Bean
 	:::xml
 	<UserAgent value="Mozilla/5.0 (Linux; U; Android %%AndroidVersion%%; %%Locale%%; %%DeviceModel%% Build/%%BuildNumber%%) AppleWebKit/%w (KHTML, like Gecko) Version/%e Mobile Safari/%w"/>
 
-
-##### Android UserAgent String
-The &lt;UserAgent&gt; tag values are consumed by Android to configure the Android UserAgent string. If the &lt;UserAgent&gt; tag is unspecified or not present in the `Config.xml` file, the UserAgent string will be populated with the [default Android WebView settings](https://developer.android.com/guide/webapps/migrating.html). **Zebra highly recommends following the version-specific specifications and substitution variables for UserAgent values detailed here**. 
-
 ##### Android Variables
-Variables are extracted from system information on the device (as defined below) and inserted as the Android UserAgent string at runtime. **Variables are compatible with all Android versions except where noted**.
 
-* **%%AndroidVersion%% -** Android version (i.e. "4.4.3") on the device 
+* **%%AndroidVersion%% -** Android version on the device (i.e. "4.4.3")
 * **%%DeviceModel%% -** device model (i.e. "TC700H")
 * **Build/%%BuildNumber%% -** BSP/Build version on the device
-* **%%Locale%% -** locale (i.e. "en_US") currently selected on the device (**Jelly Bean only**)
+* **%%Locale%% -** locale currently selected on the device (i.e. "en_US")
 * **AppleWebKit/%w -** AppleWebkit webkit version
 * **Version/%e -** KHTML webkit version
-* **Chrome/%c -** Chrome webkit version (**KitKat and higher**)
+* **Chrome/%c -** Chrome webkit version
 * **Mobile Safari /%w-** Mobile Safari webkit version
-* **%%MAC%% -** Wi-Fi MAC address on the device (**KitKat and higher**)
-* **%%ESN%% -** serial number (ESN) of the device (**KitKat and higher**)
+
+In addition, the custom-defined values listed below can be added to the end of the UserAgent string. **Zebra recommends using the example strings below**. 
+
+* **%%MAC%% -** Wi-Fi MAC address on the device
+* **%%ESN%% -** serial number (ESN) of the device
+
+##### KitKat and higher
+	:::xml
+	<UserAgent value="Mozilla/5.0 (Linux; Android %%AndroidVersion%%; %%DeviceModel%% Build/%%BuildNumber%%) AppleWebKit/%w (KHTML, like Gecko) Version/%e Chrome/%c Mobile Safari/%w MAC=%%MAC%% ESN=%%ESN%%" />
+
+##### Jelly Bean
+	:::xml
+	<UserAgent value="Mozilla/5.0 (Linux; U; Android %%AndroidVersion%%; %%Locale%%; %%DeviceModel%% Build/%%BuildNumber%%) AppleWebKit/%w (KHTML, like Gecko) Version/%e Mobile Safari/%w MAC=%%MAC%% ESN=%%ESN%%"/>
 
 ##### Android Notes
-* To detect the platform, it is necessary to have platform information (i.e: %p) in the UserAgent string. 
+* To detect the platform, it is necessary to have platform information in the UserAgent string. 
 * If platform information is not found, Enterprise Browser device capability APIs might be inoperable. 
-* In such cases, Enterprise Browser will add the string "Android" to the end of the user-defined UserAgent string. 
+* In such cases, Enterprise Browser will add "Android" to the end of the user-defined UserAgent string. 
+* If the &lt;UserAgent&gt; tag is left unspecified or not present in the `Config.xml` file, the UserAgent string will be populated with the [default Android WebView settings](https://developer.android.com/guide/webapps/migrating.html).
+* **Also see General Notes, below**.  
 
 #### Windows Mobile/CE UserAgent
 ##### Example WM/CE
@@ -1635,9 +1645,9 @@ Variables are extracted from the system information on the device (as defined be
 ##### PocketBrowser 2.1+ 
 The default UserAgent values for PocketBrowser 2.1 and higher was changed to work with a greater number of server configurations. Prior to PocketBrowser 2.1, the default UserAgent values were “Mozilla/5.0, AppleWebKit (KHTML, i.e. Gecko), Motorola Webkit, Safari.” **Apps that the IE rendering engine must use the older default value; the UserAgent cannot be set to a custom value**.
 
-**General Notes**: 
+#### General Notes 
 * **Zebra recommends strict adherence to the platform-specific UserAgent settings and substitution variables detailed here**.
-* The order and format of the UserAgent string should not be altered.
+* The order and format of the UserAgent string should not vary from those recommended above.
 * True (non-variable) values can be used in combination with substitution variables.
 * If true values are used, take extra care to ensure that values are correct.
 * Some servers implement the UserAgent string based on the string provided by a visiting client, thereby helping to ensure server-side compatibility with as many client-side UserAgents as possible. 

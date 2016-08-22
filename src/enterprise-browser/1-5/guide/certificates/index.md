@@ -4,15 +4,22 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
+##Overview
+This guide explains how certificates are used on Zebra devices running Android and Windows Mobile/CE, and how to create them and specify their whereabouts on the device so that Enterprise Browser can find them when needed.  
+
 ## Windows Mobile and CE
-When using Enterprise Browser with webkit, any required certificates beyond the pre-loaded ones can be specified using the `CaFile` configuration setting in the `Config.xml` file. This points to a file containing the certificate data, and the certificate(s) specified are treated by webkit as trusted authorities.
+Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit must use the [ClientCertPath setting](../configreference/#clientcertpath) to specify the path to client certificate files. The `<CaFile>` parameter no longer applies, but this guide can still be useful for creating the certificate(s). 
+
+**When using apps made with Enterprise Browser versions prior to 1.5 for Windows Mobile/CE with Webkit, any required certificates beyond the pre-loaded ones must be specified using the `<CaFile>` configuration setting in the `Config.xml` file**. 
+
+The CaFile points to a file containing the certificate data, and the certificate(s) specified are treated by webkit as trusted authorities.
 
 For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 
 
 	:::xml
 	<CaFile Value=”\\mycert.pem”>
 
-> **Note**: This applies only to HTTPS requests made by webkit.
+> **Note**: This applies only to HTTPS requests made by Webkit.
 
 ## Android
 Enterprise Browser HTTPS requests on Android can be done one of in two ways:

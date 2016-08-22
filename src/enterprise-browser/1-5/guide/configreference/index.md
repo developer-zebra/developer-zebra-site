@@ -1711,6 +1711,17 @@ Controls whether server certificates will be verified against the internal certi
 	:::xml
 	<VerifyPeerCertificate value="1"/>
 
+### ClientCertPath
+**Applies to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine only**. Specifies the path to certificate (`.pem`) files requested when connecting via `https://`. For help creating a certificate, see the [Certificates guide](../certificates/). 
+
+**Possible Values**:
+
+* fully qualified path to client certificate (`.pem`) file(s)
+
+#### Example
+	:::xml
+	<ClientCertPath value="\Program Files\EnterpriseBrowser\Certs"/>
+
 ### NetworkCookieDatabase
 Specifies the location of the database to hold persistent cookies, if desired. If the specified file does not exist, one will be created. Persistent cookies will be loaded from this file and saved back to it when Enterprise Browser exits. If the file is read-only, it will not be overwritten. If not specified, cookies will not persist. Case sensitive. 
 
@@ -1736,9 +1747,9 @@ The browser cache size, in whole MBs.
 	<Cache value="5"/>
 
 ### DiskCache
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount device storage to be used for the web-page cache, improves page-access times on subsequent visits to a site. Can be expressed as a fixed maximum (in MB) or a percentage of remaining space available. The disk cache persists after EB quits. Enabled by default in Enteprise Browser 1.5 and higher. To disable, remove or comment this tag. 
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount of device storage to be used for the web-page cache, which can improve page-access times on subsequent visits to a site. Can be expressed as a fixed maximum (in MB) or a percentage of space available. The disk cache persists after EB quits. **Enabled by default in Enteprise Browser 1.5 and higher. To disable, remove or comment this tag**. 
 
-**Note**: Enterprise Browser uses the "max-age" response directive or "expires" parameter in the response header to calculate the freshness of a cached page. If a cached page has expired, EB sends an "If-Modified-Since" request to the server. If max-age or Expires attribute is not present under response header, a heuristic time factor is used. See DiskCacheExpTimeFactor parameter for more information.
+**Note**: Cached pages expire. See the DiskCacheExpTimeFactor parameter for more information.
 
 **Possible Values**:
 
@@ -1746,10 +1757,11 @@ The browser cache size, in whole MBs.
 
 #### Example
 	:::xml
+	// Default location of cached WM/CE Webkit pages: 
 	<DiskCache  VALUE="5MB"/>
 
 ### DiskCachePath
-**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages to be changed. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\cache` to store cached resources. **Use this parameter only to change the default location of cached files**.
+**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages to be changed. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\Cache` to store cached resources. **Use this parameter only to change the default location of cached files**.
 
 **Possible Values**:
 
@@ -1760,11 +1772,9 @@ The browser cache size, in whole MBs.
 	<DiskCachePath  VALUE="\Program Files\EnterpriseBrowser\Cache" />
 
 ### DiskCacheExpTimeFactor
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the amount of time that must elapse before a page is no longer considered "fresh" (and hence is "stale"). Setting this parameter to a larger number keeps cached pages "fresh" longer; a shorter number causes cached pages to be reloaded more often. 
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the amount of time that must elapse before a page is no longer considered "fresh." Larger numbers keep cached pages "fresh" longer; shorter numbers cause cached pages to be reloaded more often. 
 
-By default, EB uses "max-age" response directive or the "Expires" header field in the server response to calculate the freshness of a cached page. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor. 
-
-For more information, please refer to the [IETF's definition of resource freshness RFC-7234](https://tools.ietf.org/html/rfc7234#section-4.2). 
+**Note**: Enterprise Browser reads the "max-age" response directive or "Expires" field in the server response header to calculate the freshness of a cached page. If a cached page has expired, EB requests a fresh page by sending an "If-Modified-Since" request to the server. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor. For more information, please refer to the [IETF's definition of Freshness](https://tools.ietf.org/html/rfc7234#section-4.2). 
 
 **Possible Values**:
 

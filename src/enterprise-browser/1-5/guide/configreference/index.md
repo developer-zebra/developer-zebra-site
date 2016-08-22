@@ -1738,14 +1738,7 @@ The browser cache size, in whole MBs.
 ### DiskCache
 **Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount device storage to be used for the web-page cache, improves page-access times on subsequent visits to a site. Can be expressed as a fixed maximum (in MB) or a percentage of remaining space available. The disk cache persists after EB quits. Enabled by default in Enteprise Browser 1.5 and higher. To disable, remove or comment this tag. 
 
-User also can modify disk allocation size to various size based on his/her need based on the physical memory availability on the device.
-
-**Note**: Enterprise Browser uses the "max-age" response directive or "expires" parameter in the response header to calculate the freshness of a cached page. 
-
-
-If a cached page has expired, EB sends an "If-Modified-Since" request to the server. If max-age or Expires attribute is not present under response header, EB uses heuristic time factor. Refer DiskCacheExpTimeFactor parameter for details.
-
-OLD VALUES TO EDIT
+**Note**: Enterprise Browser uses the "max-age" response directive or "expires" parameter in the response header to calculate the freshness of a cached page. If a cached page has expired, EB sends an "If-Modified-Since" request to the server. If max-age or Expires attribute is not present under response header, a heuristic time factor is used. See DiskCacheExpTimeFactor parameter for more information.
 
 **Possible Values**:
 

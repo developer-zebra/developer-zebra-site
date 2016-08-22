@@ -1587,7 +1587,9 @@ Stores information about the device’s operating environment to allow web sites
 
 * String (as defined in examples below); accepts true values, variables or a combination
 <br>
+
 #### Android UserAgent
+
 The &lt;UserAgent&gt; tag values are extracted from system information on the device and used by Android to configure the Android UserAgent string. **Zebra highly recommends following the version-specific syntax, specifications and substitution variables for UserAgent values detailed here**. If the &lt;UserAgent&gt; tag is left unspecified or not present in the `Config.xml` file, the UserAgent string will be populated with the [default Android WebView settings](https://developer.android.com/guide/webapps/migrating.html). Notice that the user-agent string syntax varies from one Android version to another. Variables are defined in the section that follows. 
 
 ##### KitKat and higher

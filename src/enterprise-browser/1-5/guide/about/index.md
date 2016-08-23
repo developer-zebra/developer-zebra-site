@@ -34,18 +34,22 @@ see --> https://jiraemv.zebra.com/browse/MC-135289
 
 
 
-####New Features
+#### New Features
 * **[Simplified config file deployment](../keycapture)** streamlines the process of deploying Enterprise Browser to devices along with a customized `Config.xml` file and `keycodemapping.xml` file (if desired) and access those settings the first time it's launched. **Applies to Android devices only**. 
 
-####New Tags for Android
+#### New Tags
 
-* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable)** simplifies debugging of Enterprise Browser apps using Chrome. 
-see --> https://jiraemv.zebra.com/browse/MC-134092
+* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** provides a simple means of enabling debugging of Enterprise Browser apps using Chrome (**Android only**).  
 
-* **[&lt;WakeLock&gt;](../configreference#wakelock)** provides an option to allow the CPU to remain active after the power button has been pressed to turn off the screen and keyboard backlight.   
+* **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off (**Android only**).
 
+* **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache (**Windows Mobile/CE only**).
 
-####New Guides
+* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control cached pages will be refreshed (**Windows Mobile/CE only**).
+
+* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** sets the default location of client authentication certificates on the device (**Windows Mobile/CE only**).
+
+#### New Guides (releasd with EB 1.4)
 
 * **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning instead of the Enterprise Browser APIs and for switching between the two. 
 

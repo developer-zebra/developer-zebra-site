@@ -153,7 +153,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -258,14 +258,14 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC70 (GA1, GA2)</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="../../images/tc75.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -371,6 +371,38 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
+  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>Wearable Computer</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>Bluetooth Ring Scanner</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>1D Corded Ring Scanner</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>Cordless Ring Imager</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
 </tbody></table>
 
 ###Printers

@@ -12,7 +12,7 @@ menu:
       default: /enterprise-browser/1-5/guide/about
       label: '1.4'
   items:
-    - title: Home
+    - title: About
       url: /enterprise-browser/1-5/guide/about
     - title: Getting Started
       url: /enterprise-browser/1-5/guide/gettingstarted

@@ -132,7 +132,7 @@ After a license is applied, a file can be created for Android or downloaded for 
 -----
 
 #### Mass-deploy a License File
-Any of the Deployment License files described above can be mass-deployed using [Zebra Stage Now](/stagenow/2-3/about/) or an MDM system with a few simple steps.
+Any of the Deployment License files described above can be mass-deployed using [Zebra StageNow](/stagenow/2-3/about/) or an MDM system with a few simple steps.
 
 **To mass-deploy a Deployment License file**: 
 

@@ -13,7 +13,7 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 **Mac OS X Functionality**: 
 
 * Copy EnterpriseBrowser `.apk` files to Android devices
-* Copy EnterpriseBrowser `.cab` files to [Stage Now](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
+* Copy EnterpriseBrowser `.cab` files to [StageNow](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
 * Create shortcuts to Android apps using the EB native widget (pushed to the device as part of EB installation)
 * Access the Enterprise Browser [Feature Demo](../featuredemo/) app
 * Easily link to EB online help
@@ -39,7 +39,7 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 * **TC55 Jelly Bean -** If Enterprise Browser is installed onto the device's internal memory, files will not be removed by the Uninstall function of App Manager. Installation onto an external SD Card works normally. 
 * **MC32 Jelly Bean -** If Enterprise Browser is installed onto the device's internal memory, files will not be removed by the Uninstall function of App Manager. Installation onto an external SD Card works normally. 
 
-> **Zebra recommends that uninstallation be verified for each device scenario** before any process is automated using [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
+> **Zebra recommends that uninstallation be verified for each device scenario** before any process is automated using [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
 -----
 
@@ -245,7 +245,7 @@ The system is now ready to deploy Enterprise Browser using the Enterprise Browse
 ## Manual Deployment
 Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) on the development host as above, perform the steps as indicated for the target platform. 
  
-Alternatively, Enterprise Browser can be mass-deployed using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
+Alternatively, Enterprise Browser can be mass-deployed using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
 &#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open **Applications -> Enterprise Browser -> Runtimes**. 
 
@@ -280,7 +280,7 @@ On a Mac, the Runtimes folder looks like the image below:
 **Applies only to Enterprise Browser 1.5 (and higher) for Android**. After Enterprise Browser is launched for the first time following installation, subsequent launches still check the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory for new versions of the `Config.xml` and/or `keycodemapping.xml` files for processing as described above. Therefore, new versions of those settings files should be placed in the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. The next time Enterprise Browser is restarted, copies of the new settings file(s) will automatically be placed in the appropriate locations for execution and backup, and the original(s) will be deleted. 
 
 ### Mass Deployment
-The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
+The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
 
 -----
 

@@ -105,7 +105,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="es400Pic" src="../../images/es400.jpeg" height="75"></td>
@@ -125,7 +125,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow"><img id="mc18Pic" src="../../images/mc18.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC18</b></td>
   <td class="clsSyntaxCells clsOddRow">MC18</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0, Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0, Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -276,10 +276,17 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/workaboutpro.png" ></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/wap4.png" ></td>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>Workabout Pro 4</nobr></td>
   <td class="clsSyntaxCells clsOddRow">CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>XT15</b></td>
+  <td class="clsSyntaxCells clsOddRow">OMNII XT15 Mobile Computer Series</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0, Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody></table>
@@ -291,7 +298,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="vc5090Pic" src="../../images/vc5090.jpeg" height="75"></td>
@@ -308,11 +315,18 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="vc70Pic" src="../../images/vc70.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="vc70Pic" src="../../images/vc70N0.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>VC70</b></td>
   <td class="clsSyntaxCells clsOddRow">VC70</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
+  <td class="clsSyntaxCells clsOddRow">Vehicle-Mounted Computer</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
 </tbody></table>
 
@@ -323,7 +337,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mk3000Pic" src="../../images/mk3000.jpeg" height="75"></td>
@@ -340,7 +354,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="mk4000Pic" src="../../images/mk4000.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="mk4000Pic" src="../../images/mk4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MK4000</b></td>
   <td class="clsSyntaxCells clsOddRow">MK4000, MK4090</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0</td>
@@ -355,17 +369,17 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="wt4000Pic" src="../../images/wt4090.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="wt4000Pic" src="../../images/wt4090.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT4090</b></td>
   <td class="clsSyntaxCells clsOddRow">WT4070, WT4090</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="wt41n0Pic" src="../../images/wt41N0.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="wt41n0Pic" src="../../images/wt41N0.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT41N0</b></td>
   <td class="clsSyntaxCells clsOddRow">WT41N0</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
@@ -383,7 +397,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>Bluetooth Ring Scanner</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android (all)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -391,7 +405,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>1D Corded Ring Scanner</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android (all)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -399,7 +413,7 @@ see --> https://jiraemv.zebra.com/browse/MC-134092
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>Cordless Ring Imager</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android (all)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>

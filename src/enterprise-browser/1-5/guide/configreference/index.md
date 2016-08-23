@@ -690,7 +690,7 @@ Controls whether the application will monitor connection to the server specified
 	<TrackConnection value="0"/>
 
 ### HostURL
-Used to specify the URL to which your application will connect. Supports IP addresses, host names and specific ports (when appended to URL with a colon. If no port is specified, default=80).
+Used to specify the URL to which an application will connect. Supports IP addresses, host names and specific ports (when appended to URL with a colon. If no port is specified, default=80).
 
 **Possible Values**:
 
@@ -824,7 +824,7 @@ The list below shows the behavior of the Enterprise Browser when Function Keys a
 	<FunctionKeysCapturable value="1"/>
 
 ### EnableFunctionKey_X
-**Applies to Android and WM/CE**. This setting is used to specify which function keys (numbered F1 through F24) should be enabled in the Enterprise Browser app and **override** the system function key assignments (all function keys are assigned to the system by default). For each key to be enabled in EB, define a tag using EnableFunctionKey_X, replacing the ‘X’ with the key number being enabled. For example, to enable F1, your tag will include EnableFunctionKey_F1 as below. See the sample Config.xml in the user guide for correct branch placement. Requires a pre-load of the KeyCapture module.
+**Applies to Android and WM/CE**. This setting is used to specify which function keys (numbered F1 through F24) should be enabled in the Enterprise Browser app and **override** the system function key assignments (all function keys are assigned to the system by default). For each key to be enabled in EB, define a tag using EnableFunctionKey_X, replacing the ‘X’ with the key number being enabled. For example, to enable F1, the tag should include EnableFunctionKey_F1 as below. See the sample Config.xml in the user guide for correct branch placement. Requires a pre-load of the KeyCapture module.
 
 **On the Enterprise tablet**, this tag can be used to enable the 'P' keys. For compatibility with other devices, the 'P' keys are referred to as 'F' keys in the config file. To enable P2 key on the Enterprise Tablet, the tag EnableFunctionKey_F2 should be set to 1. **For WM/CE**, this setting is not specific to the current application and will be applied globally on the device. **This feature can only be reset by performing a device warm boot**.
 
@@ -842,7 +842,7 @@ Interaction between FunctionKeysCapturable and EnableFunctionKey_X is shown in t
 	<EnableFunctionKey_F1 value="1"/>
 
 ### EnableApplicationKey_X
-**Applies to Android and WM/CE**. Specifies which Application keys (numbered A1 through A16) should be enabled (all are disabled by default). For each key to be enabled, define a tag using EnableApplicationKey_X, replacing the ‘X’ with the key being enabled. For example, to enable key A5, your tag will include EnableApplicationKey_A5 as below. See the sample Config.xml file in user docs for correct branch placement. The "P" keys on Enterprise Tablet will be referred to as "F" keys in config file.
+**Applies to Android and WM/CE**. Specifies which Application keys (numbered A1 through A16) should be enabled (all are disabled by default). For each key to be enabled, define a tag using EnableApplicationKey_X, replacing the ‘X’ with the key being enabled. For example, to enable key A5, the tag should include EnableApplicationKey_A5 as below. See the sample Config.xml file in user docs for correct branch placement. The "P" keys on Enterprise Tablet will be referred to as "F" keys in config file.
 
 **Notes**
 
@@ -1678,7 +1678,7 @@ Controls viewport meta tag processing (enabled by default). Must be greater than
 	<ViewportWidth value="1"/>
 
 ### CaFile
-**Applies to Windows Mobile/CE only**. Specifies the location of a device-resident file containing CA certificates in PEM format. Please [refer to openSSL](http://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html) for more information. 
+**Applies to Windows Mobile/CE only**. Specifies the location of a device-resident file containing CA certificates in PEM format for authentication of a server. Please [refer to openSSL](http://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html) for more information. 
 
 > Note: Enterprise Browser supports only a single PEM certificate file. If multiple certificates must be passed to the Webkit browser on WM/CE, the contents of multiple `.pem` certificates can be combined into a single file using a text editor. The combined file can then be specified in the CaFile parameter. 
 
@@ -1712,7 +1712,7 @@ Controls whether server certificates will be verified against the internal certi
 	<VerifyPeerCertificate value="1"/>
 
 ### ClientCertPath
-**Applies to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine only**. Specifies the path to certificate (`.pem`) files requested when connecting via `https://`. For help creating a certificate, see the [Certificates guide](../certificates/). 
+**Applies to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine only**. Specifies the path to certificate (`.pem`) file(s) requested by a server for client authentication when connecting via `https://`. For help creating a certificate, see the [Certificates guide](../certificates/). 
 
 **Possible Values**:
 
@@ -1747,21 +1747,20 @@ The browser cache size, in whole MBs.
 	<Cache value="5"/>
 
 ### DiskCache
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount of device storage to be used for the web-page cache, which can improve page-access times on subsequent visits to a site. Can be expressed as a fixed maximum (in MB) or a percentage of space available. The disk cache persists after EB quits. **Enabled by default in Enteprise Browser 1.5 and higher. To disable, remove or comment this tag**. 
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount of device storage to be used for the web-page cache, which can improve page-access times on subsequent visits to a site, expressed as a fixed maximum (in MB). The disk cache persists after EB quits. **Enabled by default in Enterprise Browser 1.5 and higher. To disable, remove or comment this tag**. 
 
 **Note**: Cached pages expire. See the DiskCacheExpTimeFactor parameter for more information.
 
 **Possible Values**:
 
-* Integer values (in whole numbers) for cache size (in MBs)
+* Whole integer values to indicate cache size (in MBs)
 
 #### Example
 	:::xml
-	// Default location of cached WM/CE Webkit pages: 
 	<DiskCache  VALUE="5MB"/>
 
 ### DiskCachePath
-**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages to be changed. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\Cache` to store cached resources. **Use this parameter only to change the default location of cached files**.
+**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages to be changed. Disabled by default. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\Cache` to store cached resources by default. **Use this parameter only to change the default location of cached files**. 
 
 **Possible Values**:
 
@@ -1769,16 +1768,17 @@ The browser cache size, in whole MBs.
 
 #### Example
 	:::xml
-	<DiskCachePath  VALUE="\Program Files\EnterpriseBrowser\Cache" />
+	// Default location of cached WM/CE Webkit pages: 
+	<DiskCachePath  VALUE="file://%INSTALLDIR%\EnterpriseBrowser\Cache" />
 
 ### DiskCacheExpTimeFactor
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the amount of time that must elapse before a page is no longer considered "fresh." Larger numbers keep cached pages "fresh" longer; shorter numbers cause cached pages to be reloaded more often. 
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies <as a percentage> the amount of time that must elapse before a page is no longer considered "fresh." Larger numbers keep cached pages "fresh" longer; shorter numbers cause cached pages to be reloaded more often. A value of "0" causes all pages to reload with every access, effectively disabling the disk cache. 
 
-**Note**: Enterprise Browser reads the "max-age" response directive or "Expires" field in the server response header to calculate the freshness of a cached page. If a cached page has expired, EB requests a fresh page by sending an "If-Modified-Since" request to the server. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor. For more information, please refer to the [IETF's definition of Freshness](https://tools.ietf.org/html/rfc7234#section-4.2). 
+**Note**: Enterprise Browser reads the "max-age" response directive or "Expires" field in the server response header to calculate the freshness of a cached page. If a cached page has expired, EB requests a fresh page by sending an "If-Modified-Since" request to the server and will refresh the page based on the response. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor. For more information, please refer to the [IETF's definition of Freshness](https://tools.ietf.org/html/rfc7234#section-4.2). 
 
 **Possible Values**:
 
-* Integer values (in whole numbers)
+* Whole integer values from 0-100 
 
 #### Example
 	:::xml
@@ -1788,7 +1788,7 @@ The browser cache size, in whole MBs.
 
 ## Device keys
 ### EnableCtrlKey_X
-Specifies which control-key combinations (copy, paste, etc.) should be enabled. To enable a control-key combination, define a tag using EnableCtrlKey_X, replacing the ‘X’ with the key being enabled. For example, to enable copying with control-C, your tag will include EnableCtrlKey_C as below. See the sample Config.xml file in user guide for correct branch placement. **All CTRL key combinations are disabled on Windows CE by default**. 
+Specifies which control-key combinations (copy, paste, etc.) should be enabled. To enable a control-key combination, define a tag using EnableCtrlKey_X, replacing the ‘X’ with the key being enabled. For example, to enable copying with control-C, the tag should include EnableCtrlKey_C as below. See the sample Config.xml file in user guide for correct branch placement. **All CTRL key combinations are disabled on Windows CE by default**. 
 
 **Possible Values**:
 
@@ -1803,7 +1803,7 @@ Specifies which control-key combinations (copy, paste, etc.) should be enabled. 
 
 ## Default MetaTags
 ### MetaTag
-Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module, followed by the tilde character (~) and the properties of the module you wish to set, as specified in EMML 1.1. If the meta tag is present in both the configuration and a loaded page, the page will take priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the ‘additional information’ section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
+Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module, followed by the tilde character (~) and the properties of the module to set, as specified in EMML 1.1. If the meta tag is present in both the configuration and a loaded page, the page will take priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the "additional information" section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
 
 **Possible Values**:
 
@@ -1811,13 +1811,18 @@ Permits a default meta tag to be specified so that a tag required by the applica
 
 #### Example
 	:::xml
-	<MetaTag value="QuitButton~visibility:visible;width:50;"/>
+	// Make the "Quit" button visible on every page: 
+	<DefaultMetaTags>
+	...
+		<MetaTag value="QuitButton~visibility:visible;width:50;"/>
+	...
+	</DefaultMetaTags>
 
 -----
 
 ## Geolocation
 ### GeolocationEnabled
-Controls HTML5 Geolocation. When enabled on a device that supports geolocation and is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled the defined JavaScript error callback is called, notifying the app that the permission to using geolocation is disabled.
+Controls HTML5 Geolocation enablement. When enabled on a device that supports geolocation and the device is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled, the defined JavaScript error callback is called, notifying the app that the permission to using geolocation is denied.
 
 **Possible Values**:
 
@@ -1830,7 +1835,7 @@ Controls HTML5 Geolocation. When enabled on a device that supports geolocation a
 
 ## Engine
 ### EngineInUse
-Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If you are deploying an IE-only installation, Webkit will not be available as an option.
+Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If deploying an IE-only installation, Webkit will not be available as an option.
 
 **Possible Values**:
 
@@ -1845,7 +1850,7 @@ Permits the selection of a rendering engine (IE or Webkit) when deploying a Webk
 
 ## Tab instance
 ### NewTabPhysicalMemLimit
-Controls whether a new Tab will be created using the [NativeTabbar.create API](../../api/NativeTabbar) when physical memory percentage hits a specific threshold. For example, if set to 80, new tabs will stop being created when physical memory usage on the device reaches or exceeds 80 percent the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
+Controls whether a new Tab will be created using the [NativeTabbar.create API](../../api/NativeTabbar) when physical memory percentage hits a specific threshold. For example, if set to 80, new tabs will stop being created when physical memory usage on the device reaches or exceeds 80 percent of the total available. Once the defined limit is reached, the NativeTabbar.create API callback will contain tabEvent = onTabNewError.
 
 **Possible Values**:
 

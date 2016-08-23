@@ -4,36 +4,34 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Overview
-This guide explains how certificates are used on Zebra devices running Android and Windows Mobile/CE, and how to create them and specify their whereabouts on the device so that Enterprise Browser can find them when needed.  
+## Overview
+Certificates can be used by Enterprise Browser as a means of authenticating connections between a device and a server. For example, a certificate issued by a financial institution can be used to verify that incoming connections are from authorized devices and/or to assure device users that they are connecting to a server that is positively identified as the genuine certificate authority (CA). 
+
+This guide explains how client-side certificates are used on Zebra devices running Android and Windows Mobile/CE, how to create them for a device, and how to store and specify their whereabouts on the device so that Enterprise Browser can find them when needed. For help creating server-side certificates, please refer to the server's documentation. 
+
+## Android
+Enterprise Browser `https://` requests on Android can be done in two ways:
+
+* Using system browser navigation with a WebView component:
+	* The system browser uses built-in, system-trusted storage for root CAs. 
+	* Root certificates should be installed from the system menu, and will be used by any application that uses a WebView UI component (such as a browser).
+	* Reference navigation in EB also will use this method. 
+	* EB currently supports only server SSL authentication for WebView.
+	* Browser-based client authentication, which was introduced in Android 5, is not currently implemented.
+* Using certificate formats:
+	* **Certificate files must contain the certificate data between "BEGIN" and "END" lines**.
+	* Android accepts any certificate format that represents the certificate as encoded text. These typically have a `.crt` or `.pem` extension. 
+	* Certificates in the .der format are not supported. See the [OpenSSL section](#openssl) (below) for conversion instructions.
 
 ## Windows Mobile and CE
-Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit must use the [ClientCertPath setting](../configreference/#clientcertpath) to specify the path to client certificate files. The `<CaFile>` parameter no longer applies, but this guide can still be useful for creating the certificate(s). 
+Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit must use the [ClientCertPath parameter](../configreference/#clientcertpath) to specify the path to client certificate files. **When using apps made with Enterprise Browser versions prior to 1.5 for Windows Mobile/CE with Webkit, any required server certificates beyond the pre-loaded ones must be specified using the [CaFile parameter](../configreference/#cafile) to specify the path to server certificate files. in the `Config.xml` file**. 
 
-**When using apps made with Enterprise Browser versions prior to 1.5 for Windows Mobile/CE with Webkit, any required certificates beyond the pre-loaded ones must be specified using the `<CaFile>` configuration setting in the `Config.xml` file**. 
-
-The CaFile points to a file containing the certificate data, and the certificate(s) specified are treated by webkit as trusted authorities.
-
-For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 
+The `CaFile` points to a file containing the certificate data, and the certificate(s) specified there are treated by Webkit as trusted authorities. For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 
 
 	:::xml
 	<CaFile Value=”\\mycert.pem”>
 
-> **Note**: This applies only to HTTPS requests made by Webkit.
-
-## Android
-Enterprise Browser HTTPS requests on Android can be done one of in two ways:
-
-* Using system browser navigation with WebView component:
-	* The system browser uses built-in system-trusted storage for root CAs. 
-	* Root certificates should be installed from the system menu, and will be used by any application that uses a WebView UI component (such as a browser).
-	* Reference navigation in EB also will use this method. 
-	* EB currently supports only server SSL authentication for WebView.
-	* Browser-based client authentication, which was introduced in Android 5, will be implemented in a future release.
-* Certificate formats:
-	* There are several certificate formats available, and any format that represents the certificate as encoded text is accepted. These typically have the extension `.crt` or `.pem`. 
-	* **Certificate files must contain the certificate data between "BEGIN" and "END" lines**.
-	* Certificates in the .der format are not supported and should be converted, e.g. using OpenSSL as shown below.
+> **Note**: This applies only to `https://` requests made by Webkit.
 
 ## OpenSSL
 Tools such as [OpenSSL](https://www.openssl.org/docs/faq.html) can be useful for creating and working with certificates, and most of of its capabilities are accessible through [CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html). Some typical usages are shown below. Before proceeding, [download OpenSSL](https://www.openssl.org/source/) and install it. 

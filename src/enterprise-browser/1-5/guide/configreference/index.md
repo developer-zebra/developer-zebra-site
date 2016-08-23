@@ -443,7 +443,7 @@ When enabled, presents a set of controls useful for development and debugging pu
 	:::xml
 	<DebugButtonsEnabled value="1"/>
 
-### DebugSetting
+### DebugModeEnable
 Provides the option to debug an Enterprise Browser app running on a USB-connected device through the Chrome browser's `chrome://inspect/` address bar function. 
 
 **Possible Values**:

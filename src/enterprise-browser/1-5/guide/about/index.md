@@ -23,16 +23,11 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 [See all supported devices](../about#mobile)
 
 ####New or Updated APIs (released with EB 1.5)
-* **New [RemoteNotification API](../../api/remoteNotification) -** (Android only)
-see --> https://jiraemv.zebra.com/browse/MC-135531
+* **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to provide activate multi-color LEDs, beeper and vibrator (**Android only**). 
 
+* **Updated [Barcode API](../../api/barcode) -** supports addConnectionListener and removeConnectionListener for pluggable scanners and fixes sound decoding issues on some devices. 
 
-* **Updated [Barcode API](../../api/barcode) -**supports addConnectionListener and removeConnectionListener for pluggable scanners 
-see --> https://jiraemv.zebra.com/browse/MC-135289
-
-* **Updated [Device API](../../api/device) -** 
-
-
+* **Updated [Device API](../../api/device) -** allows JavaScript to programmatically access acquirePartialWakeLock and releasePartialWakeLock functions. 
 
 #### New Features
 * **[Simplified config file deployment](../keycapture)** streamlines the process of deploying Enterprise Browser to devices along with a customized `Config.xml` file and `keycodemapping.xml` file (if desired) and access those settings the first time it's launched. **Applies to Android devices only**. 
@@ -55,7 +50,7 @@ see --> https://jiraemv.zebra.com/browse/MC-135289
 
 * **[Keycode Mapping Guide](../keycapture)** explains how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
-###Key Features
+### Key Enterprise Browser Features
 
 ####A development toolkit for mobile cross-platform enterprise apps
 * Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices

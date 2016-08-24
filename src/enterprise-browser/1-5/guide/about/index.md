@@ -46,7 +46,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 * **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** sets the default location of client authentication certificates on the device (**Windows Mobile/CE only**).
 
-#### New Guides (releasd with EB 1.4)
+#### New Guides (released with EB 1.4)
 
 * **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
 

@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Certificates can be used by Enterprise Browser as a means of authenticating connections between a device and a server. For example, a certificate issued by a financial institution can be used to verify that incoming connections are from authorized devices and/or to assure device users that they are connecting to a server that is positively identified as the genuine certificate authority (CA). 
+Secure Sockets Layer (SSL) Certificates can be used by Enterprise Browser to establish a secure connection (via HTTPS) between a device and a server to protect highly confidential transactions such as those involving financial institutions and commerce sites. The Enterprise Browser Webkit supports Transport Layer Security (TLS) 1.2, and allows certificates for clients and servers to be configured according to the security requirements of any application.
 
 This guide explains how client-side certificates are used on Zebra devices running Android and Windows Mobile/CE, how to create them for a device, and how to store and specify their whereabouts on the device so that Enterprise Browser can find them when needed. For help creating server-side certificates, please refer to the server's documentation. 
 
@@ -24,7 +24,7 @@ Enterprise Browser `https://` requests on Android can be done in two ways:
 	* Certificates in the .der format are not supported. See the [OpenSSL section](#openssl) (below) for conversion instructions.
 
 ## Windows Mobile and CE
-Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit must use the [ClientCertPath parameter](../configreference/#clientcertpath) to specify the path to client certificate files. **When using apps made with Enterprise Browser versions prior to 1.5 for Windows Mobile/CE with Webkit, any required server certificates beyond the pre-loaded ones must be specified using the [CaFile parameter](../configreference/#cafile) to specify the path to server certificate files. in the `Config.xml` file**. 
+Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit can use the [ClientCertPath parameter](../configreference/#clientcertpath) to specify the path to client certificate files. **When using apps made with Enterprise Browser versions prior to 1.5 for Windows Mobile/CE with Webkit, any required server certificates beyond the pre-loaded ones must be specified using the [CaFile parameter](../configreference/#cafile) to specify the path to server certificate files. in the `Config.xml` file**. 
 
 The `CaFile` points to a file containing the certificate data, and the certificate(s) specified there are treated by Webkit as trusted authorities. For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 
 

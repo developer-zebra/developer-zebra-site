@@ -21,10 +21,15 @@ Enterprise Browser `https://` requests on Android can be done in two ways:
 * Using certificate formats:
 	* **Certificate files must contain the certificate data between "BEGIN" and "END" lines**.
 	* Android accepts any certificate format that represents the certificate as encoded text. These typically have a `.crt` or `.pem` extension. 
-	* Certificates in the .der format are not supported. See the [OpenSSL section](#openssl) (below) for conversion instructions.
+	* Certificates in the `.der` format are not supported. See the [OpenSSL section](#openssl) (below) for conversion instructions.
 
 ## Windows Mobile and CE
-Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit can use the [ClientCertPath parameter](../configreference/#clientcertpath) to specify the path to client certificate files. **When using apps made with Enterprise Browser versions prior to 1.5 for Windows Mobile/CE with Webkit, any required server certificates beyond the pre-loaded ones must be specified using the [CaFile parameter](../configreference/#cafile) to specify the path to server certificate files. in the `Config.xml` file**. 
+
+####Client Certificates
+Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit can use the [ClientCertPath parameter](../configreference/#clientcertpath) to specify the path to client certificate files. 
+
+####Server Certificates
+When using apps made with Enterprise Browser for Windows Mobile/CE with Webkit, any required server certificates beyond the pre-loaded ones must be specified using the [CaFile parameter](../configreference/#cafile) in the `Config.xml` file to specify the path to server certificate files. 
 
 The `CaFile` points to a file containing the certificate data, and the certificate(s) specified there are treated by Webkit as trusted authorities. For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 
 

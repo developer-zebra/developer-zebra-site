@@ -1760,21 +1760,21 @@ The browser cache size, in whole MBs.
 	<DiskCache  VALUE="5MB"/>
 
 ### DiskCachePath
-**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages to be changed. Disabled by default. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\Cache` to store cached resources by default. **Use this parameter only to change the default location of cached files**. 
+**Applies to Windows Mobile/CE with Webkit engine only**. Allows the default storage location for cached browser pages and resources to be changed. Disabled by default. If the specified directory does not exist, it will be created. The Enterprise Browser default installation creates the directory `\Program Files\EnterpriseBrowser\`, in which it stores cached resources. **Use this parameter only to change the default location of cached files**. 
 
 **Possible Values**:
 
-* Fully qualified path to disk cache file
+* Fully qualified path to the desired disk cache directory
 
 #### Example
 	:::xml
 	// Default location of cached WM/CE Webkit pages: 
-	<DiskCachePath  VALUE="file://%INSTALLDIR%\EnterpriseBrowser\Cache" />
+	<DiskCachePath  VALUE="file://%INSTALLDIR%\EnterpriseBrowser\" />
 
 ### DiskCacheExpTimeFactor
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies <as a percentage> the amount of time that must elapse before a page is no longer considered "fresh." Larger numbers keep cached pages "fresh" longer; shorter numbers cause cached pages to be reloaded more often. A value of "0" causes all pages to reload with every access, effectively disabling the disk cache. 
+**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the acceptable span of time past which a cached resource is no longer considered "fresh." This value is expressed as a percentage (from 0-100) calculated using the difference between the "Last-Modified" value of the cached resource and the time of access by Enterprise Browser. <!--For example, if the freshness lifespan of a resource was specified as 30 days, a DiskCacheExpTimeFactor value of 10 percent would cause EB to reload the resource if accessed after 33 days.-->Larger numbers keep cached resources "fresh" longer; smaller numbers cause cached pages to be reloaded more often. A value of "0" causes all pages to reload with every access, effectively disabling the disk cache. Default value is 10 (percent). 
 
-**Note**: Enterprise Browser reads the "max-age" response directive or "Expires" field in the server response header to calculate the freshness of a cached page. If a cached page has expired, EB requests a fresh page by sending an "If-Modified-Since" request to the server and will refresh the page based on the response. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor. For more information, please refer to the [IETF's definition of Freshness](https://tools.ietf.org/html/rfc7234#section-4.2). 
+**Note**: To determine the freshness of a resource, Enterprise Browser first reads the "max-age" response directive or "Expires" field in the server response header. If one of those parameters indicates that a cached resource has expired, EB requests a refresh by sending an "If-Modified-Since" request to the server and will reload the resource based on the response. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor described above. For more information, please refer to the [IETF's definition of Freshness](https://tools.ietf.org/html/rfc7234#section-4.2). 
 
 **Possible Values**:
 
@@ -1782,7 +1782,8 @@ The browser cache size, in whole MBs.
 
 #### Example
 	:::xml
-	<DiskCacheExpTimeFactor  VALUE="5" />
+	// Default value of 10% is shown:
+	<DiskCacheExpTimeFactor  VALUE="10" />
 
 -----
 

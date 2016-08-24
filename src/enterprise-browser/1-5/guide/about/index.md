@@ -23,14 +23,16 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 [See all supported devices](../about#mobile)
 
 ####New or Updated APIs (released with EB 1.5)
-* **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to provide activate multi-color LEDs, beeper and vibrator (**Android only**). 
+
+* **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator (**Android only**). 
 
 * **Updated [Barcode API](../../api/barcode) -** supports addConnectionListener and removeConnectionListener for pluggable scanners and fixes sound decoding issues on some devices. 
 
-* **Updated [Device API](../../api/device) -** allows JavaScript to programmatically access acquirePartialWakeLock and releasePartialWakeLock functions. 
+* **Updated [Device API](../../api/device) -** allows JavaScript to access **acquirePartialWakeLock** and **releasePartialWakeLock** functions programmatically. 
 
 #### New Features
-* **[Simplified config file deployment](../keycapture)** streamlines the process of deploying Enterprise Browser to devices along with a customized `Config.xml` file and `keycodemapping.xml` file (if desired) and access those settings the first time it's launched. **Applies to Android devices only**. 
+
+* **[Simplified config file deployment](../keycapture)** streamlines the process of deploying Enterprise Browser runtime and keymapping configuration settings to devices, with or without the EB app itself (**Android only**). 
 
 #### New Tags
 
@@ -46,7 +48,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 #### New Guides (releasd with EB 1.4)
 
-* **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning instead of the Enterprise Browser APIs and for switching between the two. 
+* **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
 
 * **[Keycode Mapping Guide](../keycapture)** explains how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
@@ -275,10 +277,10 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/wap4.png" ></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>Workabout Pro 4</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow">CE 6.0, Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -325,7 +327,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
   <td class="clsSyntaxCells clsOddRow">Vehicle-Mounted Computer</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody></table>
 
@@ -396,27 +398,31 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>Bluetooth Ring Scanner</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android (all)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
  <tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>1D Corded Ring Scanner</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android (all)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
  <tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>Cordless Ring Imager</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android (all)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
  </tr>
  <tr>
 </tbody></table>
+
+**RS507 Support Notes**: 
+* Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on those devices; optional on some Jelly Bean devices).
+* Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
 
 ###Printers
 <table cellspacing="0" cellpadding="0" class="table table-striped">

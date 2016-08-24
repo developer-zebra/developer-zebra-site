@@ -25,10 +25,12 @@ Enterprise Browser `https://` requests on Android can be done in two ways:
 
 ## Windows Mobile and CE
 
-####Client Certificates
+**Client Certificates**
+
 Apps made with Enterprise Browser 1.5 and higher for Windows Mobile/CE with Webkit can use the [ClientCertPath parameter](../configreference/#clientcertpath) to specify the path to client certificate files. 
 
-####Server Certificates
+**Server Certificates**
+
 When using apps made with Enterprise Browser for Windows Mobile/CE with Webkit, any required server certificates beyond the pre-loaded ones must be specified using the [CaFile parameter](../configreference/#cafile) in the `Config.xml` file to specify the path to server certificate files. 
 
 The `CaFile` points to a file containing the certificate data, and the certificate(s) specified there are treated by Webkit as trusted authorities. For example, to use certificates in the file `mycert.pem`, copy the file to the device and make an entry made in the `Config.xml` corresponding to the file's location on the device using the syntax below: 

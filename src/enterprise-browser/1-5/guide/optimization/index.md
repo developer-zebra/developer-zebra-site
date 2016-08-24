@@ -63,7 +63,7 @@ Windows Mobile and Windows CE devices offer two rendering engine options: IE and
 * IE does not support CSS3, and offers non-standard support for CSS2
 * IE does not support the Enterprise Browser primary syntax; apps must be written using the EMML1.0/1.1 syntax
 
-**Note: Selecting the IE engine is recommended only for legacy PocketBrowser applications**.
+**Note: The IE engine is recommended only for legacy PocketBrowser applications**.
 
 -----
 
@@ -75,7 +75,7 @@ The logging options by default are set to capture only errors and warnings. If t
 ## Regular Expressions
 The Enterprise Browser supports EMML v1.0 (PocketBrowser v2.x) through the use of a regular expressions engine. EMML 1.0 syntax is translated to EMML1.1 (which is internally processed) based on an XML file. 
 
-**Location of the `RegEx.xml` file**:
+**Location of the** `RegEx.xml` **file**:
 
 * On Android: `/<internal_mem_root_dir>/Android/data/com.symbol.enterprisebrowser/RegEx.xml`
 * On Windows: `\Program Files\EnterpriseBrowser\Config\RegEx.xml`

@@ -39,7 +39,7 @@ The `CaFile` points to a file containing the certificate data, and the certifica
 Tools such as [OpenSSL](https://www.openssl.org/docs/faq.html) can be useful for creating and working with certificates, and most of of its capabilities are accessible through [CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html). Some typical usages are shown below. Before proceeding, [download OpenSSL](https://www.openssl.org/source/) and install it. 
 
 ### Generate a self-signed certificate
-To create a self-signed certificate, a private key must exist to encrypt to the certificate. If an existing private key can be used, skip to Step 2. To generate a new key, begin with Step 1. 
+To create a self-signed certificate, a private key must exist to encrypt into the certificate. **Skip to Step 2 if an existing private key can be used**. To generate a new key, begin with Step 1. 
 
 **&#49;. To generate a basic key with no passphrase**:
 

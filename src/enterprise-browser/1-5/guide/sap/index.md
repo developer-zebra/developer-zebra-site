@@ -1,63 +1,57 @@
 ---
-title: SAP ITS Mobile Usage Guide for Enterprise Browser
+title: SAP ITSmobile Usage Guide
 productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Getting Started
+## Overview
+SAP ITSmobile is a middleware system that provides browser-based access to many of SAP's enterprise systems, including ERP and SRM. ITSmobile is built around the Internet Transaction Server (ITS), which makes apps built with SAP's proprietary dynpro language accessible through HTML. As such, Enterprise Browser apps can be built or adapted to work with ITSmobile, and hence with SAP back-end enterprise apps. This guide provides step-by-step instructions for doing so, and requires familiarity with editing an EB app's `Config.xml` file and HTML file(s). 
 
+**Related Guides**: 
+
+* [Enterprise Browser Config.xml Reference](../configreference)
+* [Enterprise Browser APIs](../apioverview)
+* [PocketBrowser and RhoElements Migration Guides](../guide)
+* [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
+
+-----
 ### Setting Start Page
-To point Enterprise Browser to start with SAP ITS Mobile application, [startPage](../configreference?General) parameter of the `Config.xml` must be set to the URL of SAP ITS Mobile application. 
+Enterprise Browser must be set to start with the SAP ITSmobile application. To do this, specify the URL of the SAP ITSmobile application in the [StartPage](../configreference/#startpage) parameter of the EB app's `Config.xml` file. 
 
 ### Enabling JavaScript APIs
-In order to use Enterprise Browser APIs, one must ensure to include the [respective JS files](../apioverview) within the html file generated from the ABAP code in SAP Server. These files are included as part of the installation, and can be copied to your ABAP Server.
+If the app uses Enterprise Browser APIs, the API modules must be present on the device and referenced from every HTML page that calls them. 
 
-Enterprise Browser requires JS files for the Enterprise Browser API to function:
+There are two methods of enabling an Enterprise Browser API:
 
-* **ebapi-modules.js** required by Enterprise Browser API in WM/CE & Android platform. In case only specific Enterprise Browser features are to be utilized in the application than it is recommended to use module specific js files for improved performance.
+* Include all "ebapi" modules
+* Include only the required API modules
 
-  > For Example: `eb.battery.js` for Enterprise Browser Battery API
+Both methods are explained below. 
 
-* **elements.js** file is required to be included to support backward compatibility for Pocket Browser and Rhoelements v2.x Shared Runtime based applications running on Enterprise Browser. This is required only for Android platform.
+With either method, the included files will be found in the directory:
+<br> 
+`/Enterprise Browser/JavaScript Files/Enterprise Browser`
+<br>
+This is a directory on the computer that contains the Enterprise Browser installation.
 
-The below table elaborates the Enterprise Browser specific js file information.
-<table>
-<tr>
-<th>Platform</th>
-<th>WM/CE</th>
-<th>Android</th>
-</tr>
-<tr>
-<td>Enterprise Browser API (Through EB Namespace)</td>
-<td>ebapi-modules.js</td>
-<td>ebapi-modules.js</td>
-</tr>
-<tr>
-<td>JavaScript Object (Backward Compatibility API)</td>
-<td>NA</td>
-<td>elements.js</td>
-</tr>
-<tr>
-<td>Meta Tags (Backward Compatibility API)</td>
-<td>NA</td>
-<td>elements.js</td>
-</tr>
-<tr>
-<td>ActiveXObject (Backward Compatibility API)</td>
-<td>NA</td>
-<td>elements.js</td>
-</tr>
-</table>
+**To include all JavaScript APIs**, copy the `ebapi-modules.js` file to a location on the device that's accessible by the app's files and include a reference to the JavaScript modules file in the app. For instance, to include a reference to the modules file in the app's `index.html`, copy the modules file to the same directory as the index.html file and add the following line to the HEAD section of that index.html file:
 
-> Note: In order to run legacy Pocket Browser/RE v2 based App in Enterprise Browser, the following additional settings are required in the `Config.xml` file.
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-* Activate Regular Expressions
-  * Configuration/Applications/Application/General/UseRegularExpressions value="1"
+> The line above defines the EB class within that page. Note that the path for this file is relative to the current page (index.html). **Any page from which the API module file will be called must contain a similar reference to** `ebapi-modules.js`.
 
-* Enable ActiveX
-  * Configuration/Applications/Application/NPAPI/Preloads/PreloadLegacyActiveX value="1"
+**To include only individual APIs**, copy the `ebapi.js` file and any required individual API files to a location on the device that's accessible by the app's files, and include a reference to `ebapi.js` and the any API file(s) being called from that page. For instance, to use the Printer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML:
 
-##Handling KeyEvents
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
+    <script type="text/javascript" charset="utf-8" src="eb.printer.js"></script>
+
+> In the code lines above, notice that `ebapi.js` is included first, followed by `eb.printer.js`, which is the Printer API for Enterprise Browser. **Similar coding is required on each HTML page whenever an individual API will be called from that page**.
+
+**For backward compatibility with PocketBrowser 2.x/3.x, RhoElements v2.x or the RhoMobile 4.x Shared Runtime, please see the [Migration Guides](../guide). 
+
+### Handling KeyEvents
 
 This section describes recommendations on how to handle key events via Keycapture/common API or JavaScript Onkeydown APIs in Enterprise Browser.
 
@@ -78,7 +72,7 @@ In order to use JavaScript onkeyup / onkeydown / onkeypress events,
 
 Alternate usage recommendations when key is not being captured using JavaScript onkeyup / onkeydown / onkeypress Event Attribute.
 
-As most of the JavaScript based key handling for SAP ITS Mobile applications is inside the `mobile.js` file which is hard to extract and modify from a SAP server and given the known limitation/issue with JavaScript onkeydown event on Windows Mobile IE Engine following method can be used to overcome that problem.
+As most of the JavaScript based key handling for SAP ITSmobile applications is inside the `mobile.js` file which is hard to extract and modify from a SAP server and given the known limitation/issue with JavaScript onkeydown event on Windows Mobile IE Engine following method can be used to overcome that problem.
 
 1. Configure KeyCapture functionality in config.xml as mentioned below:
 
@@ -185,20 +179,20 @@ The different scenarios in which the above way of handling key event is Supporte
 </tr>
 </table>
 
-##Function Keys
+## Function Keys
 
 Function Keys are meant for performing some per-configured tasks on the device. We can capture Function Keys in Enterprise Browser Application just like any other keys which we capture as mentioned in previous section.
 
 However in some devices, some function keys are predefined by OS to perform the default OS behavior (e.g. F6/F7 controls the volume on some devices). In such cases, the respective function keys cannot be captured from Enterprise Browser Application. In order to capture the function keys in our application, we must ensure to follow the Enterprise Browser 1.2 configuration guidelines i.e. `Interaction between FunctionKeysCapturable and EnableFunctionKey configuration settings` explained under [Remarks section of Config Reference](../configreference?Remarks).
 
-###Android Function Keys
+### Android Function Keys
 A new feature has been introduced i.e. `isWindowKey` tag which can be configured via config.xml. The `isWindowsKey` tag has been introduced to mimic Windows Mobile key codes for the device's hardware keys.
 
 When enabled the application will get the Windows Mobile function key code value for F1 to F12 keys instead of what Android would send normally. This can be useful to support both types of devices with one code-base. If it is set as 0 or not present, then the application will get the Android function key code value.
 
 This feature is only applicable for Android platform which consists of hardware keys. This feature will be supported from Enterprise Browser 1.2 and above when used with either PocketBrowser or RhoElements 2.x KeyCapture API.
 
-##UI rendering
+## UI rendering
 UI rendering is handled differently with each rendering engine used. It depends on the following:
 
 1. How the web page has been designed?
@@ -336,12 +330,12 @@ However it is still possible to fetch the barcode data in Enterprise Browser app
 
 -->
 
-##Handling Badlink and Navigation
+## Handling Badlink and Navigation
 You application may want to handle if a user encounters a link that no longer exists so that they are not stuck and can gracefully return back to the application. You can write their own badlink html page and then configure [this option](../configreference?General) in the config.xml. This page should consider either a link to return to the home page of the application or utilize the Quit, Back & Reload buttons that are provided with Enterprise Browser.
 
 On the badlink page, on clicking `Reload` button, should redirect to SAP authentication page.
 
-##Migration from PB
+<!-- ## Migration from PB
 Please ensure to set `PreloadLegacyActiveX` value to 1 in config.xml. This provides backwards compatibility with code written in PocketBrowser that used the ActiveXObject.
 
 Please ensure to set `UseRegularExpressions` value to 1 in config.xml. In order to be backwardly compatible with PocketBrowser syntax for controlling device capabilities the Enterprise Browser uses a Regular Expression engine to apply a series of transformations to each meta tag or JavaScript call being processed, as defined in RegEx.xml.
@@ -349,8 +343,9 @@ Please ensure to set `UseRegularExpressions` value to 1 in config.xml. In order 
 `elements.js` is required for accessing the backward compatibility API’s on Android Platform.
 
 Please refer to [migration guide](../migration) for further details. 
+-->
 
-##Usage of DefaultMetatags
+## Usage of DefaultMetatags
 If the application includes multiple html pages that perform the same action, you can choose to make use of the `DefaultMetaTags` feature in the config.xml file.  A series of MetaTags can be included once to interact with APIs
 
 The following example will use the `Signal` api to display the network signal icon on the application. This way it will be available in all html pages but can be controlled in one location (config.xml):
@@ -360,4 +355,14 @@ The following example will use the `Signal` api to display the network signal ic
       <MetaTag value="Signal~left:10;top:200;color:#663300;"/>
     </DefaultMetaTags>
 
+
+-----
+
+
+**Related Guides**: 
+
+* [Enterprise Browser Config.xml Reference](../configreference)
+* [Enterprise Browser APIs](../apioverview)
+* [PocketBrowser and RhoElements Migration Guides](../guide)
+* [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 

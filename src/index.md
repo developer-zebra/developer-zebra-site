@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: DataWedge
-    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
+    description: A standard Zebra app that provides barcode scanning and processing services for other Android and Windows apps on a device.
     url: /datawedge/5-0/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
@@ -24,7 +24,7 @@ products:
       - title: Demo
         url: /datawedge/5-0/guide/demo
   - title: Enterprise Home Screen
-    description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
+    description: A simple way to control user access to apps, settings and files on Android devices without the need for custom code.
     url: /ehs/2-4/guide/about
     image: /ehs/ehs-logo.png
     btn-text: Latest Docs
@@ -45,7 +45,7 @@ products:
       - url: ehs/2-3/guide/about/
         menu: '2.3'
   - title: Enterprise Browser
-    description: "Use standard web technologies (HTML5, CSS3 and JavaScript) to run and integrate with virtually any Zebra device"
+    description: Make apps using standard web technologies (HTML5, CSS3 and JavaScript) that integrate with and run on virtually any Zebra device.
     url: /enterprise-browser/1-4/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
@@ -59,7 +59,7 @@ products:
       - title: APIs
         url: /enterprise-browser/1-4/api
   - title: Enterprise Keyboard
-    description: A customizable keyboard made specifically for fast and accurate workplace input.
+    description: A customizable soft keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
@@ -73,7 +73,7 @@ products:
       - title: Download
         url: /enterprise-keyboard/1-0/download
   - title: EMDK For Android
-    description: "Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
+    description: The Enterprise Mobility Development Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc.
     url: /emdk-for-android/5-0/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
@@ -100,7 +100,7 @@ products:
       - url: /emdk-for-android/3-1/guide/about/
         menu: '3.1'
   - title: EMDK For Xamarin
-    description: "Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra Devices."
+    description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
     url: /emdk-for-xamarin/2-1/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
@@ -151,7 +151,7 @@ products:
       - title: Compatibility
         url: /mx/compatibility
   - title: StageNow
-    description: "The easy way to stage Zebra Technologies' Android-based mobile computers."
+    description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png

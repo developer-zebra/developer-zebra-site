@@ -6,11 +6,6 @@ layout: guide.html
 menu:
   title: Enterprise Browser
   img: enterprise_browser_logo.png
-versions:
-    - versionto: 1-4
-      versionfrom: 1-5
-      default: /enterprise-browser/1-4/guide/about
-      label: '1.4'
   items:
     - title: Home
       url: /enterprise-browser/1-4/guide/about
@@ -27,3 +22,12 @@ versions:
 product: Enterprise Browser
 productversion: '1.4'
 ---
+<!-- 
+USE OF BELOW CAUSES THE PAGE MENUS TO DISAPPEAR
+versions:
+    - versionto: 1-4
+      versionfrom: 1-5
+      default: /enterprise-browser/1-4/guide/about
+      label: '1.4'
+
+-->

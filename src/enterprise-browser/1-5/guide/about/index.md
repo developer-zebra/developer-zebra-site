@@ -40,7 +40,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 * **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off (**Android only**).
 
-* **<AutoPlayMediaElements> -** enabled by default, allows automatic media playback to be disabled (Android only).
+* **&lt;AutoPlayMediaElements&gt; -** enabled by default, allows automatic media playback to be disabled (Android only).
 
 * **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache (**Windows Mobile/CE only**).
 

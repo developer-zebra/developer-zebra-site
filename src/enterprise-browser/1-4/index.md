@@ -23,7 +23,10 @@ product: Enterprise Browser
 productversion: '1.4'
 ---
 <!-- 
-USE OF BELOW CAUSES THE PAGE MENUS TO DISAPPEAR
+USE OF BELOW CAUSES THE PAGE MENUS TO DISAPPEAR 
+
+CHECK BEFORE DEPLOYING!! 
+
 versions:
     - versionto: 1-4
       versionfrom: 1-5

@@ -271,7 +271,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 ## General
 ### StartPage
-Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`**. For URLs, accepts UTF-8 characters only. Case sensitive. 
+Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`. For URLs, accepts UTF-8 characters only. Case sensitive. 
 
 **Possible Values**:
 
@@ -768,7 +768,7 @@ Specifies the folder on the device in which the web application and its initial 
 
 #### Example
 	:::xml
-	<WebFolder value="file:///path/to/WebFolder/"/>
+	<WebFolder value="file://path/to/WebFolder/"/>
 
 ### Public
 Controls access to the local web server from an external device. Generally used only for debugging; could case serious security risks if enabled in production. **It is highly recommended that this feature be disabled before deployment**.

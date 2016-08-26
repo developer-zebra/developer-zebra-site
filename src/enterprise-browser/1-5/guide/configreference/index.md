@@ -1275,7 +1275,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<FontDirectory value="\\Windows"/>
 
 ### AutoPlayMediaElements
-**Applies to Android KitKat and higher only**. Controls whether media elements will automatically play with no requirement for a user gesture (for example pressing PLAY). Enabled by default. A setting of "0" will disable AutoPlay and require a user gesture to play media. 
+**Applies to Android KitKat and higher only**. Controls whether media elements will automatically play with no requirement for a user gesture (i.e. pressing PLAY). Enabled by default. A setting of "0" will disable AutoPlay and require a user action to play media. 
 
 **Possible Values**:
 

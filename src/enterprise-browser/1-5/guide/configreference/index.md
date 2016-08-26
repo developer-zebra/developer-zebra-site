@@ -56,7 +56,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 	:::xml
 	<?xml version = "1.0"?>
-	<!-- Enterprise Browser 1.4 configuration file for Android-->
+	<!-- Enterprise Browser 1.5 configuration file for Android-->
 	<!-- IMPORTANT: Differences exist in Windows Mobile/CE version--> 
 	<Configuration>
 	   
@@ -211,6 +211,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      <HTMLStyles>
 	        <JavascriptEnabled     value="1" />
 	        <FontFamily            value="Droid Sans Fallback" />
+	        <AutoPlayMediaElements  VALUE="0"/>
 	      </HTMLStyles>
 	      
 	      <SIP>
@@ -1272,6 +1273,18 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 #### Example
 	:::xml
 	<FontDirectory value="\\Windows"/>
+
+### AutoPlayMediaElements
+**Applies to Android KitKat and higher only**. Controls whether media elements will automatically play with no requirement for a user gesture (for example pressing PLAY). Enabled by default. A setting of "0" will disable AutoPlay and require a user gesture to play media. 
+
+**Possible Values**:
+
+* 0 - Disabled 
+* **1 - Enabled** (default)
+
+#### Example
+	:::xml
+	<AutoPlayMediaElements  VALUE="1"/>
 
 ###JavascriptEnabled
 **Applies only to Windows Mobile with IE engine**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 

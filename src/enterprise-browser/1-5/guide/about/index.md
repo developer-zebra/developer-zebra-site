@@ -34,19 +34,21 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 * **[Simplified config file deployment](../keycapture)** streamlines the process of deploying Enterprise Browser runtime and keymapping configuration settings to devices, with or without the EB app itself (**Android only**). 
 
-#### New Tags
+#### New Tags for Android
 
-* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** provides a simple means of enabling debugging of Enterprise Browser apps using Chrome (**Android only**).  
+* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** provides a simple means of enabling debugging of Enterprise Browser apps using Chrome.
 
-* **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off (**Android only**).
+* **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
 
-* **&lt;AutoPlayMediaElements&gt; -** enabled by default, allows automatic media playback to be disabled (Android only).
+* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements); -** enabled by default, allows automatic media playback to be disabled.
 
-* **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache (**Windows Mobile/CE only**).
+#### New Tags for Windows Mobile/CE
 
-* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control cached pages will be refreshed (**Windows Mobile/CE only**).
+* **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
 
-* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** sets the default location of client authentication certificates on the device (**Windows Mobile/CE only**).
+* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control cached pages will be refreshed.
+
+* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** sets the default location of client authentication certificates on the device.
 
 #### New Guides (released with EB 1.4)
 

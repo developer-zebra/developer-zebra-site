@@ -24,9 +24,9 @@ automenu:
           url: ShortcutCreator
     - title: Application Usage
       items:
-        - title: Certificate Usage
+        - title: Certificates
           url: certificates
-        - title: DataWedge Usage
+        - title: DataWedge
           url: datawedge
         - title: DOM Injection
           url: DOMinjection
@@ -36,9 +36,9 @@ automenu:
           url: printingGuide
         - title: Key Remapping
           url: keycapture
-        - title: SAP ITS Usage
+        - title: SAP ITSmobile
           url: sap
-        - title: Viewport Usage
+        - title: Viewport
           url: viewport
     - title: Debugging
       items:

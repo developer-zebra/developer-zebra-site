@@ -24,7 +24,7 @@ The basic steps for accessing ITSmobile from an Enterprise Browser app are shown
 Enterprise Browser must be set to start with the SAP ITSmobile application. Specify the URL of the SAP ITSmobile application in the [StartPage](../configreference/#startpage) parameter of the EB app's `Config.xml` file. 
 
 ### Enable JavaScript APIs
-If the app uses Enterprise Browser APIs, the [API modules](../apioverview) must be present on the device and referenced from every HTML page that calls them. 
+If the app uses Enterprise Browser APIs, the [API modules](../apioverview) must be present on the device and referenced from every HTML page that calls them. If the HTML is not available or cannot be edited, **APIs also can be accessed through meta tags** (see DefaultMetaTags section, below). 
 
 ### Handle KeyEvents
 Enterprise Browser can handle events triggered by keypresses either by using the KeyCapture common API or the `onkeyup / onkeydown / onkeypress` JavaScript APIs. Zebra generally recommends the KeyCapture method of capturing hardware keys because of several known limitations in the JavaScript APIs on devices running Windows Mobile with the IE rendering engine. For situations in which JavaScript is the only choice, consider swithing to the Zebra Webkit engine, if possible. 

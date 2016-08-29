@@ -10,7 +10,9 @@ sources:
     url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/NotificationSample1'
 features:
   - Java APIs
-
+devices:
+  - WT6000
+  
 image: 1.png
 screenshots:
   - 1.png

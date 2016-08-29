@@ -40,7 +40,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 * **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
 
-* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements); -** enabled by default, allows automatic media playback to be disabled.
+* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements) -** enabled by default, allows automatic media playback to be disabled.
 
 #### New Tags for Windows Mobile/CE
 

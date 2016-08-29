@@ -12,7 +12,7 @@ parm:
     - code: 2
       mx: "4.2"
       name: Android
-      description: 
+      description: Specify the operating system of the target device. 
 ---
 
-Specify the target OS of the device.
+Permits the operating system of the target device to be specified.

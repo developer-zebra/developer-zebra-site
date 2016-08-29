@@ -19,18 +19,22 @@ productversion: '5.0'
 
 6. Browse to the path of the extracted project(from step #3) , add click the **OK** button.
 
-When the import process is complete, the project load in the IDE, ready to deploy.
-  
+7. Once the project has opened in Android Studio, Open the build.gradle(Module.app) file
+8. Find the `provided fileTree` line in the `dependencies` node
+
+9. Update the `dir:` path to match the emdk jar install path on your developement system.
+
+10. Click the `Sync Now` link that pops up at the top of the gradle file.
+
+The sample should now be ready to deploy.
 
 ##Deploying a Sample Application
 
 1. Select the project you want to deploy from the run configuration drop down, then press the green play button.
-![img](../../images/sample/as_import_samples_11.png)
 
- 
- Android studio will push the application to your device via USB and start the main activity.
+    Android studio will push the application to your device via USB and start the main activity.
 
- ![img](profileWifiSample1.png)
+    ![img](profileWifiSample1.png)
 
 
 

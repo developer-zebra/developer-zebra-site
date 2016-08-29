@@ -23,7 +23,7 @@ productversion: '5.0'
 ---
 
 ##Overview
-This sample application will show how the EMDK Notification API's
+This sample application will show how to use the EMDK Notification API's
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

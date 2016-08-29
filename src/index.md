@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: DataWedge
-    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
+    description: 'An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other enterprise apps on the device.'
     url: /datawedge/5-0/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs

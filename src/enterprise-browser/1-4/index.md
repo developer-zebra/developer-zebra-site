@@ -7,7 +7,7 @@ menu:
   title: Enterprise Browser
   img: enterprise_browser_logo.png
   items:
-    - title: Home
+    - title: About
       url: /enterprise-browser/1-4/guide/about
     - title: Getting Started
       url: /enterprise-browser/1-4/guide/gettingstarted

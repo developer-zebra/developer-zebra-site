@@ -8,6 +8,8 @@ automenu:
       items:
         - title: Enterprise Browser Setup Guide
           url: setup
+        - title: Licensing
+          url: licensing
         - title: App Optimization
           url: optimization
     - title: App Configuration
@@ -36,7 +38,7 @@ automenu:
           url: keycapture
         - title: SAP ITSmobile
           url: sap
-        - title: Viewport Usage
+        - title: Viewport
           url: viewport
     - title: Debugging
       items:

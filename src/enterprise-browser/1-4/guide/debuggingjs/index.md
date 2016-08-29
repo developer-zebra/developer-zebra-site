@@ -8,9 +8,7 @@ layout: guide.html
 
 Just as debugging should be thought of as a vital part of every development cycle, on-device debugging should be part of any effective testing regimen. Although much can be accomplished using emulators and an IDE, applications often behave differently when running on hardware, and features such as [Barcode](../../api/barcode) scanning are impossible to test without the use of physical hardware to perform the scan and acquire the data.
 
-This guide includes instructions for enabling debugging on an Android device and describes three methods of debugging Enterprise Browser apps while they're running on a device:  
-
-* **Chrome's Web Inspector -** works with Android KitKat and higher, is easy to set up, and offers screenshots and other nice extras. 
+This guide includes instructions for enabling debugging on an Android device and describes two methods of debugging Enterprise Browser apps while they're running on a device:  
 
 * **Weinre -** is a node.js application that can effectively test most apps running on Android Jelly Bean as well as Windows Mobile/CE devices. 
 
@@ -26,83 +24,6 @@ Requirements of the development host vary based on the target device and its OS 
 * A USB cable for connecting the target to the dev. host
 * USB debugging enabled on target
 * A WebView-based app configured for debugging
-
------
-
-<a name="chrome"></a>
-## Debugging with Chrome
-
-If you're building an Android app and have a device with Android KitKat 4.4 or higher, [Google Remote Debugging](https://developer.chrome.com/devtools/docs/remote-debugging) is an alternative to Weinre that's a bit easier to install and offers some great visuals for testing, debugging and fine-tuning your app while it's running on the device. 
-
-Google Remote Debugging works with native Android apps that use WebView as well as purely browser-based apps. It includes live screencasting from the remote unit to the development host, and supports port forwarding and virtual host mapping in case your device needs to access a development server. 
-
-###Requirements
-
-* Mac OS X or Windows development host with [ADB](http://developer.android.com/tools/help/adb.html) installed
-* Chrome 32 or later installed (Chrome Canary recommended)
-* A USB cable for connecting the target to the dev. host
-* A target device running Android 4.4 (KitKat) or later
-* USB debugging enabled on target
-* An app configured for WebView debugging
-
-###1. Enable Device Debugging
-The target device must have USB debugging enabled. This feature is found in **Settings >> Developer Options** panel, which is hidden by default. Here's how to **un-hide Developer options** (if necessary) **and enable USB debugging**: 
-
-1. Go to **Settings >> About Phone**
-2. **Go to the "Build Number box"** (by scrolling all the way to the bottom)
-3. **Tap the Build Number box seven times** 
-4. **Return to Settings** and **tap Developer Options** 
-5. **Place a check in the Enable USB Debugging** box
-
-![img](../../images/debugging/Android_developerOptions.png)
-
-_Click on any image to enlarge_.
-
-###2. Discover Device (in Desktop Chrome)
-If not already done, **connect the device to an available USB port on the development host** and **enable device detection in Chrome**: 
-
->![Chrome Detect](../../images/debugging/Chrome_detect_USB.png)
-
-1. Open a browser window and **enter 'chrome://inspect'** in the address bar. You should see a screen similar the one above.
-
-2. **Check the "Discover USB Devices" checkbox**. The mobile device appears along with an alert on the device. (If no devices are visible, please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)). 
-
-3. **Tap OK on the device** to complete the connection
-
-4. Linux- and Mac-based developers can skip to the next step. **Developers on Windows must install a USB driver** to make a USB-attached Android device visible. Please refer to the [Connections](../../guide/setup#connections) section of the [Enterprise Browser Setup Guide](../../guide/setup)) for that procedure.
-
-5. At this point you should be ready to begin debugging. Once your app is deployed and running on the device, the chrome://inspect page should look something like the one shown below, with your device and a link to its debug-enabled WebViews. **To begin debugging, click an inspect link.** 
-
->![Chrome Web Inspect](../../images/debugging/Chrome_WebInspect.png)
-
-### Google Dev Tool Tutorial
-To learn more about debugging with Chrome, please refer to the [Google Chrome Dev Tools Tutorial](https://developers.google.com/chrome-developer-tools/).
-
-<!-- Once we figure out if this works, we can uncomment this piece. Leaving it out for now.
-## Remote Debugging with a Browser's Web Inspector
-> Note: This JS debugging feature is currently only supported on Windows development environments.
-Using a feature introduced in RhoElements 4.1, you can use your standard browser web inspector to debug your app's JavaScript. This is helpful if you are used to debugging your JS in a specific browser's web inspection utility. So far, this feature works in [Google Chrome](https://www.google.com/intl/en/chrome/browser/).
-
-### Using the Remote Debugger
-Before you can use this remote web inspector, you must first open the app you want to use in RhoSimulator. In this example, we'll run an app called [Barcode Example](https://github.com/rhomobile/rho-samples/tree/master/BareBones/BarcodeExample). As you can see from the data platform attribute, this is running as a Win32 app.
-
-![Opening pp in RhoSim](../../images/debugging/opening_app_in_rhosim.png)
-
-Once your app is open in RhoSimulator, simply navigate your browser to [http://localhost:9090/webkit/inspector/inspector.html?page=2](http://localhost:9090/webkit/inspector/inspector.html?page=2). You can also navigate to [http://localhost:9090](http://localhost:9090) and click the link that references your start page (for example http://127.0.0.1:49964/app/index.erb if your app starts at /app/index.erb). 
-
-Once here you should see a web inspection tool very similar to our RhoSimulator's web inspector (which is very similar to that of Google Chrome's inspector) which should look like this:
-
-![img](../../images/debugging/remote_inspector_landing_page.png)
-
-### Altering App Attributes
-As with most web inspectors you can change attributes in the inspector...
-
-![img](../../images/debugging/changed_inspector_text.png)
-
-...and have them appear immediately in the app.
-
-![img](../../images/debugging/changed_app_text.png)
- -->
 
 -----
 

@@ -5,12 +5,11 @@ layout: list-products.html
 products:
   - title: DataWedge
 <<<<<<< HEAD
-    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for any app on the device.'
-    url: /datawedge/3-1/guide/about
+    description: A standard Zebra app that provides barcode scanning and processing services for other Android and Windows apps on a device.
 =======
-    description: 'An app for Android and Windows devices that provides barcode scanning and processing services for enterprise apps.'
+    description: 'An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other enterprise apps on the device.'
+>>>>>>> eb-1.4
     url: /datawedge/5-0/guide/about
->>>>>>> TUT-8797
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
@@ -28,8 +27,26 @@ products:
         url: /datawedge/5-0/guide/api
       - title: Demo
         url: /datawedge/5-0/guide/demo
+  - title: Enterprise Browser
+    description: "Build apps using standard web technologies such as HTML5, CSS3 and JavaScript that work with virtually any Zebra device."
+    url: /enterprise-browser/1-4/guide/about
+    image: /enterprise-browser/enterprise_browser_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /enterprise-browser/1-4/guide/about
+      - title: Getting Started
+        url: /enterprise-browser/1-4/guide/gettingstarted
+      - title: Setup
+        url: /enterprise-browser/1-4/guide/setup/
+      - title: Tutorials
+        url: /enterprise-browser/1-4/tutorial/
+      - title: Usage Guides
+        url: /enterprise-browser/1-4/guide
+      - title: APIs
+        url: /enterprise-browser/1-4/api
   - title: Enterprise Home Screen
-    description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
+    description: A simple way to control user access to apps, settings and files on Android devices without the need for custom code.
     url: /ehs/2-4/guide/about
     image: /ehs/ehs-logo.png
     btn-text: Latest Docs
@@ -49,8 +66,25 @@ products:
         menu: '2.4'
       - url: ehs/2-3/guide/about/
         menu: '2.3'
+<<<<<<< HEAD
+  - title: Enterprise Browser
+    description: Make apps using standard web technologies (HTML5, CSS3 and JavaScript) that integrate with and run on virtually any Zebra device.
+    url: /enterprise-browser/1-4/guide/about
+    image: /enterprise-browser/enterprise_browser_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: Getting Started
+        url: /enterprise-browser/1-4/guide/gettingstarted
+      - title: Tutorials
+        url: /enterprise-browser/1-4/tutorial/
+      - title: Guides
+        url: /enterprise-browser/1-4/guide
+      - title: APIs
+        url: /enterprise-browser/1-4/api
+=======
+>>>>>>> eb-1.4
   - title: Enterprise Keyboard
-    description: A customizable keyboard made specifically for fast and accurate workplace input.
+    description: A customizable soft keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
@@ -64,24 +98,26 @@ products:
       - title: Download
         url: /enterprise-keyboard/1-0/download
   - title: EMDK For Android
-    description: "Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/4-2/guide/about
+    description: The Enterprise Mobility Development Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc.
+    url: /emdk-for-android/5-0/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/4-2/guide/gettingstarted
+        url: /emdk-for-android/5-0/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/4-2/tutorial/
+        url: /emdk-for-android/5-0/tutorial/
       - title: Samples
-        url: /emdk-for-android/4-2/samples
+        url: /emdk-for-android/5-0/samples
       - title: Guides
-        url: /emdk-for-android/4-2/guide/programming-guides
+        url: /emdk-for-android/5-0/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/4-2/guide/profile-manager-guides
+        url: /emdk-for-android/5-0/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/4-2/api
+        url: /emdk-for-android/5-0/api
     versions:
+      - url: emdk-for-android/5-0/guide/about/
+        menu: '5.0'
       - url: emdk-for-android/4-2/guide/about/
         menu: '4.1'
       - url: emdk-for-android/4-0/guide/about/
@@ -89,26 +125,30 @@ products:
       - url: /emdk-for-android/3-1/guide/about/
         menu: '3.1'
   - title: EMDK For Xamarin
-    description: "Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra Devices."
-    url: /emdk-for-xamarin/2-0/guide/about
+    description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
+    url: /emdk-for-xamarin/2-1/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
       - title: Getting Started
-        url: /emdk-for-xamarin/2-0/guide/gettingstarted
+        url: /emdk-for-xamarin/2-1/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-0/tutorial/
+        url: /emdk-for-xamarin/2-1/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-0/samples
+        url: /emdk-for-xamarin/2-1/samples
+      - title: Guides
+        url: /emdk-for-xamarin/2-1/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-0/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-1/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-0/api
+        url: /emdk-for-xamarin/2-1/api
     versions:
-      - url: emdk-for-xamarin/1-0/guide/about/
+      - url: emdk-for-xamarin/1-1/guide/about/
         menu: '1.0'
       - url: emdk-for-xamarin/2-0/guide/about/
         menu: '2.0'
+      - url: emdk-for-xamarin/2-1/guide/about/
+        menu: '2.1'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
     url: /link-os
@@ -116,6 +156,8 @@ products:
     sections:
       - title: Android
         url: /link-os/latest/android
+      - title: Android BTLE
+        url: /link-os/latest/android_btle
       - title: Xamarin
         url: /link-os/latest/xamarin
       - title: iOS
@@ -127,29 +169,29 @@ products:
       - title: Samples
         url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
   - title: MX
-    description: Zebra’s Mobility DNA - an added layer of enterprise-class security and manageability.
+    description: Zebra’s Mobility DNA - an added layer of enterprise-class security and manageability for Android devices.
     url: /mx
     image: /images/products/mx.png
     sections:
       - title: Compatibility
         url: /mx/compatibility
   - title: StageNow
-    description: "The easy way to stage Zebra Technologies' Android-based mobile computers."
-    url: /stagenow/2-3/about
+    description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
+    url: /stagenow/2-4/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: Getting Started
-        url: /stagenow/2-3/gettingstarted
+        url: /stagenow/2-4/gettingstarted
       - title: Profiles
-        url: /stagenow/2-3/stagingprofiles
+        url: /stagenow/2-4/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-3/ProfileWizards
+        url: /stagenow/2-4/ProfileWizards
       - title: Settings
-        url: /stagenow/2-3/settingconfig
+        url: /stagenow/2-4/settingconfig
       - title: Setting Types
-        url: /stagenow/2-3/settingtypes
+        url: /stagenow/2-4/settingtypes
       - title: Device Staging
-        url: /stagenow/2-3/stageclient
+        url: /stagenow/2-4/stageclient
 ---
 

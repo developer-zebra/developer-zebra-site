@@ -202,11 +202,11 @@ automenu:
           url: ZoomTextButton
     - title: PocketBrowser 3.x APIs
       items:
-        - title: AddressBar (missing)
+        - title: AddressBar
           url: addressbar
         - title: Airbeam Smart (missing)
           url: AirBeamSmart
-        - title: Alarm (missing)
+        - title: Alarm
           url: alarm
         - title: APD (missing)
           url: apd

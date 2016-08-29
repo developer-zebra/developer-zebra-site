@@ -10,7 +10,7 @@ automenu:
           url: setup
         - title: Licensing
           url: licensing
-        - title: App Optimization
+        - title: Optimization
           url: optimization
     - title: App Configuration
       items:

@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: DataWedge
-    description: A standard Zebra app that provides barcode scanning and processing services for other Android and Windows apps on a device.
+    description: 'An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other enterprise apps on the device.'
     url: /datawedge/5-0/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
@@ -23,6 +23,24 @@ products:
         url: /datawedge/5-0/guide/api
       - title: Demo
         url: /datawedge/5-0/guide/demo
+  - title: Enterprise Browser
+    description: "Build apps using standard web technologies such as HTML5, CSS3 and JavaScript that work with virtually any Zebra device."
+    url: /enterprise-browser/1-4/guide/about
+    image: /enterprise-browser/enterprise_browser_logo.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /enterprise-browser/1-4/guide/about
+      - title: Getting Started
+        url: /enterprise-browser/1-4/guide/gettingstarted
+      - title: Setup
+        url: /enterprise-browser/1-4/guide/setup/
+      - title: Tutorials
+        url: /enterprise-browser/1-4/tutorial/
+      - title: Usage Guides
+        url: /enterprise-browser/1-4/guide
+      - title: APIs
+        url: /enterprise-browser/1-4/api
   - title: Enterprise Home Screen
     description: A simple way to control user access to apps, settings and files on Android devices without the need for custom code.
     url: /ehs/2-4/guide/about
@@ -44,20 +62,6 @@ products:
         menu: '2.4'
       - url: ehs/2-3/guide/about/
         menu: '2.3'
-  - title: Enterprise Browser
-    description: Make apps using standard web technologies (HTML5, CSS3 and JavaScript) that integrate with and run on virtually any Zebra device.
-    url: /enterprise-browser/1-4/guide/about
-    image: /enterprise-browser/enterprise_browser_logo.png
-    btn-text: Latest Docs
-    sections:
-      - title: Getting Started
-        url: /enterprise-browser/1-4/guide/gettingstarted
-      - title: Tutorials
-        url: /enterprise-browser/1-4/tutorial/
-      - title: Guides
-        url: /enterprise-browser/1-4/guide
-      - title: APIs
-        url: /enterprise-browser/1-4/api
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate workplace input.
     url: /enterprise-keyboard/1-0/guide/about

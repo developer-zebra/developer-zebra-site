@@ -16,7 +16,7 @@ content-items:
   - type: section
     level: 4
     title: Using The APIs
-    text: how to access the device capabilities exposed through Enterprise Browser APIs. 
+    text: How to access the device capabilities exposed through Enterprise Browser APIs. 
     url: ../apioverview
   - type: section
     level: 4
@@ -31,7 +31,7 @@ content-items:
   - type: section
     level: 4
     title: Starting an Application
-    text: Explains Config.xml, which contains the Enterprise Browser runtime settings required for any EB app to run.
+    text: Explains the `Config.xml` file, which contains all Enterprise Browser runtime settings and is required for any EB app to run.
     url: ../launching
   - type: section
     level: 4

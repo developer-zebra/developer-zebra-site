@@ -6,6 +6,14 @@ layout: guide.html
 menu:
   title: Enterprise Browser
   img: enterprise_browser_logo.png
+<<<<<<< HEAD
+  versions:
+    - versionto: 1-5
+      versionfrom: 1-4
+      default: /enterprise-browser/1-5/guide/about
+      label: '1.5'
+=======
+>>>>>>> eb-1.4
   items:
     - title: About
       url: /enterprise-browser/1-4/guide/about

@@ -2,7 +2,7 @@
 csp: wifi
 title: Protect Password
 type: parm
-order: 27
+order: 28
 mx: "4.2"
 parm:
   pivotal: No

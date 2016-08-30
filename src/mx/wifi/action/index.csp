@@ -23,7 +23,7 @@ parm:
       description: Turns the Wi-Fi radio Off.
 ---
 
-This is the On-Off switch for the Wi-Fi radio. **Note**: Wi-Fi must be enabled to change a number of other Wi-Fi settings, including those controlled by the Network Actions parameter described later in this document. Attempting to change such settings while the Wi-Fi radio is disabled will result in an error. Zebra recommends beginning any profile created to change Wi-Fi settings with a command to enable the Wi-Fi radio. 
+This is the On-Off switch for the Wi-Fi radio. **Note: Wi-Fi must be enabled to change some other Wi-Fi settings**, including those controlled by the Network Actions parameter described later in this document. Attempting to change such settings while the Wi-Fi radio is disabled will result in an error. Zebra recommends beginning any profile created to change Wi-Fi settings with a command to enable the Wi-Fi radio. 
 
 **Note**: In the Wi-Fi configuration service provider, the terms "enable" and "disable" refer to the ability by a user or administrator to "turn on" and "turn off" a feature or capability. In some other CSPs, those terms refer to the feature's "Usage" setting, which can prevent access to the feature entirely. 
 

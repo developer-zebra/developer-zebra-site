@@ -1,0 +1,26 @@
+---
+csp: wifi
+title: Password Protect Encryption 
+type: parm
+order: 29
+mx: "6.1"
+parm:
+  pivotal: No
+  name: PasswordProtectEncryption
+  type: list
+  list:
+    - code: 2
+      mx: "6.1"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the current Password Protect Encryption setting; any previously selected setting will be retained.
+    - code: 1
+      mx: "6.1"
+      name: Enable
+      description: Enables passwords to be encrypted. 
+    - code: 0
+      mx: "6.1"
+      name: Disable
+      description: Disables password encryption. 
+---
+
+Controls whether passwords will be encrypted when stored and transmitted. 

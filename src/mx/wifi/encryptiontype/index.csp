@@ -2,7 +2,7 @@
 csp: wifi
 title: WPA Encryption Type 
 type: parm
-order: 32
+order: 35
 mx: "4.2"
 parm:
   pivotal: No

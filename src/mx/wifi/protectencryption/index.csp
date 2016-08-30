@@ -23,4 +23,6 @@ parm:
       description: Disables password encryption. 
 ---
 
-Controls whether passwords will be encrypted when stored and transmitted. 
+Controls whether passwords will be encrypted when stored and transmitted. The Password and Identity combine to form an authentication credential that provides access to a network. Since a stored Password must be embedded within the XML, it is often desirable to encrypt the Password to prevent extraction and exploitation in case the XML is intercepted. 
+
+A Password is used when the Security Mode is set to "Enterprise." All authentication types require a Password except EAP-TLS, which uses a client certificate. 

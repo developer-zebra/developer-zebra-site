@@ -56,17 +56,15 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 	:::xml
 	<?xml version = "1.0"?>
-	<!-- Enterprise Browser 1.5 configuration file for Android-->
-	<!-- IMPORTANT: Differences exist in Windows Mobile/CE version--> 
+	<!-- 
+	Enterprise Browser 1.5 configuration file for Android
+	IMPORTANT: Differences exist in Windows Mobile/CE version
+	--> 
 	<Configuration>
 	   
 	  <DebugButtons>
-	    <DebugButtonsEnabled value="0" />
+	    <DebugButtonsEnabled value="1" />
 	  </DebugButtons>
-
-	  <DebugSetting>
-		<DebugModeEnable value="0"/>
-	  </DebugSetting> 
 	  
 	  <ExitPassword>
 	    <ExitPasswordEnabled value="0" />
@@ -176,7 +174,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  </TabInstance>
 	  
 	  <Engine>
-	    <EngineInUse value="ENGINE_TO_USE"/>
+	    <EngineInUse value="AndroidStock"/>
 	  </Engine>
 	  
 	  <Applications>
@@ -194,7 +192,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 		  
 	      <General>
 	        <Name value="Menu"/>
-	        <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
+	        <StartPage value="file://%INSTALLDIR%/test.html" name="Menu"/>
 	      </General>
 	      
 	      <Scanner>
@@ -211,7 +209,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      <HTMLStyles>
 	        <JavascriptEnabled     value="1" />
 	        <FontFamily            value="Droid Sans Fallback" />
-	        <AutoPlayMediaElements  VALUE="0"/>
+			<AutoPlayMediaElements  VALUE="0"/>
 	      </HTMLStyles>
 	      
 	      <SIP>
@@ -226,7 +224,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	        <DecodeVolume           value="5"/>
 	        <DecodeFrequency        value="0xBB8"/>
 	        <InvalidDecodeFrequency value="0x9C4"/>
-	        <DecodeDuration         value="250"/>
+	        <DecodeDuration         value="250"/>-
 	        <ScanDecodeWav          value=""/>
 	        <ScanInvalidWav         value=""/>
 	        <ImagerCaptureWav       value=""/>
@@ -245,8 +243,9 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	        <UserAgent  value="" />
 			    <NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
 			    <ViewportEnabled value="1"/>
-			    <VerifyPeerCertificate value="1"/>
+			   <VerifyPeerCertificate value="1"/>
 	        <Cache      VALUE="5MB"/>
+			
 	      </Navigation>
 	     
 	    

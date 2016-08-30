@@ -11,6 +11,6 @@ parm:
   type: string
 
 ---
-Controls whether passwords will be stored as encrypted or clear text. The Password and Identity combine to form an authentication credential that provides access to a network. Since a stored Password must be embedded within the XML, it is often desirable to encrypt the Password to prevent extraction and exploitation in case the XML is intercepted. 
+Controls whether passwords will be stored as encrypted or clear text. The Password is embedded within the XML, and can be vulnerable at certain times. It might be desirable as a security measure to encrypt the Password to prevent extraction and exploitation in case the XML is intercepted. 
 
-A Password is used when the Security Mode is set to "Enterprise." All authentication types require a Password except EAP-TLS, which uses a client certificate. 
+The Identity combines with a Password to form an authentication credential for gaining access to a network. Authentication is required only when "Enterprise" is the selected Security Mode. All authentication types require a Password except EAP-TLS, which uses a client certificate. 

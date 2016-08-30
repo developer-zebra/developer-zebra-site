@@ -13,18 +13,18 @@ parm:
     - code: HexKey
       mx: "4.2"
       name: Hex Key
-      description: This indicates that the actual key used by the network to perform encryption will be specified.
+      description: The key used by the network to perform encryption will be specified.
     - code: Passphrase
       mx: "4.2"
       name: Passphrase
-      description: This indicates that a passphrase will be specified from which the actual key used by the network to perform encryption can be derived.
+      description: A passphrase derived from the specified key and used by the network to perform encryption.
 ---
 
-Specify the type of encryption key to be used by the network. This key is only specified when the Security Mode is "Personal" since the "Open" Security Mode does not use encryption and the "Enterprise" Security Mode distributes keys automatically following Authentication.
+Used to specify the type of encryption key to be used by the network. A key is specified only when the Security Mode is "Personal" since the "Open" Security Mode does not use encryption and the "Enterprise" Security Mode distributes keys automatically after Authentication.
 
-An encryption key can be specified using one of two methods: 
+An encryption key can be specified using either of these methods: 
 
-* A hexadecimal value of the actual key
-* A passphrase that can be used to generate a key using a pre-defined algorithm
+* A hexadecimal value (the key itself)
+* A passphrase used to generate a key using a pre-defined algorithm
 
-The method that is used usually depends on the configuration of the Wi-Fi infrastructure that implements the network. This is because the key to be used must be known to both the Wi-Fi infrastructure and the client. Therefore, both must use a common method to specify that key.
+The selected method usually depends on the configuration of the Wi-Fi network because the key must be shared between the Wi-Fi infrastructure and the client. Therefore, they must use a common method to specify the key.

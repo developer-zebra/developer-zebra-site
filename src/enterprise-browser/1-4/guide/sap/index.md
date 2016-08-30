@@ -11,7 +11,7 @@ This guide provides instructions for modifying an EB app for ITSmobile, the SAP 
 
 * [Enterprise Browser Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [PocketBrowser and RhoElements Migration Guides](../guide)
+* [PocketBrowser and RhoElements Migration Guides](../)
 * [DOM Injection guide](../DOMinjection)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 
@@ -272,7 +272,7 @@ When designing the page, consider adding Quit, Back and Reload buttons so users 
 
 * [Enterprise Browser Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [PocketBrowser and RhoElements Migration Guides](../guide)
+* [PocketBrowser and RhoElements Migration Guides](../)
 * [DOM Injection guide](../DOMinjection)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 

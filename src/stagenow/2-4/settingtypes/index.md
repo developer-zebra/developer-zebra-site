@@ -15,6 +15,10 @@ content-items:
     type: section
     level: 5
     url: /stagenow/2-4/csp/app
+  - title: AppGallery Mgr
+    type: section
+    level: 5
+    url: /stagenow/2-4/csp/appgallery
   - title: Audio
     type: section
     level: 5
@@ -75,6 +79,10 @@ content-items:
     type: section
     level: 5
     url: /stagenow/2-4/csp/encrypt
+  - title: Enterprise Keyboard
+    type: section
+    level: 5
+    url: /stagenow/2-4/csp/enterprisekeyboard
   - title: File
     type: section
     level: 5
@@ -115,14 +123,18 @@ content-items:
     type: section
     level: 5
     url: /stagenow/2-4/csp/persistence
+  - title: Personal Dictionary
+    type: section
+    level: 5
+    url: /stagenow/2-4/csp/personaldictionary
+  - title: Power Mgr
+    type: section
+    level: 5
+    url: /stagenow/2-4/csp/power
   - title: Power Key
     type: section
     level: 5
     url: /stagenow/2-4/csp/powerkey
-  - title: Power
-    type: section
-    level: 5
-    url: /stagenow/2-4/csp/power
   - title: Remote Scanner Management
     type: section
     level: 5

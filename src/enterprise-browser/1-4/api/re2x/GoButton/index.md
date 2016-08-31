@@ -1,9 +1,11 @@
-
-#GoButton Module
-
-<b>
+---
+title: GoButton
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The GoButton Module is used to set the parameters of the GoButton. When clicked, the Go button shall navigate to the page shown in the Address Bar. The Go button will not be visible when the browser is navigating as it is replaced by the stop button (if visible), in line with all major browsers.
-</b>
 
 ##Syntax
 

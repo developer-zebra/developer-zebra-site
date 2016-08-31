@@ -1,9 +1,11 @@
-
-#Zoom Module
-
-<b>
+---
+title: Zoom
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The Zoom Module is used to set the zoom size of the text or page.
-</b>
 
 ##Syntax
 

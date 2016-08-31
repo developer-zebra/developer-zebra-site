@@ -1,5 +1,11 @@
-# AudioCapture Module
-**The AudioCapture Module captures audio files from the default microphone device.**
+---
+title: AudioCapture
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The AudioCapture Module captures audio files from the default microphone device.
 
 ## Syntax
 

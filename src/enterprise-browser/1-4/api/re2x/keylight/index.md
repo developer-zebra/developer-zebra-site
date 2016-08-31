@@ -1,9 +1,11 @@
-
-#Keylight Module
-
-<b>
-The Keylight Module is used to illuminate / extinguish the keyboard backlight as well as setting the intensity of the keylight.
-</b>
+---
+title: KeyLight
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The KeyLight Module is used to illuminate / extinguish the keyboard backlight as well as setting the intensity of the keylight.
 
 ##Syntax
 

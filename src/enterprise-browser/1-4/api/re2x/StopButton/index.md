@@ -1,9 +1,11 @@
-
-#StopButton Module
-
-<b>
+---
+title: StopButton
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The StopButton Module is used to set the parameters of the Stop Button. The Stop Button will only be displayed whilst a page is loading and when clicked will cease the current navigation and navigate to the badlink page (if defined), this prevents partially rendered pages being displayed in the browser.
-</b>
 
 ##Syntax
 

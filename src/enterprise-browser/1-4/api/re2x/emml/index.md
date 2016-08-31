@@ -1,9 +1,11 @@
-
-#EmmlProfile Module
-
-<b>
+---
+title: EMML Profile
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The EmmlProfile Module is used to manage EMML profile pages.
-</b>
 
 ##Syntax
 

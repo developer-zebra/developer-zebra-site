@@ -1,9 +1,11 @@
-
-#Device Module
-
-<b>
+---
+title: Device
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The Device Module controls device functions.
-</b>
 
 ##Syntax
 

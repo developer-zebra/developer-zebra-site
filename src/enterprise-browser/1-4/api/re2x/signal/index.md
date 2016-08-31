@@ -1,8 +1,14 @@
-#Signal Module
-
-<b>
+---
+title: Signal
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The Signal Module is used to set positional and display parameters of the wireless signal indicator on the screen.
-</b><b>Check the <a href="IndicatorPositions">indicator layout overview page</a> for more detail on positioning these indicators.</b>
+
+
+Check the <a href="IndicatorPositions">indicator layout overview page</a> for more detail on positioning these indicators.
 
 
 ##Syntax

@@ -1,5 +1,11 @@
-# Application Module
-**The Application Module is to adjust the running state of RhoElements applications.**
+---
+title: Application
+productversion: '2.x'
+product: RhoElements API
+layout: guide.html
+---
+##Overview 
+The Application Module is to adjust the running state of RhoElements applications.
 
 ## Syntax
 

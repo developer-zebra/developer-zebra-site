@@ -1,5 +1,11 @@
-# Backlight Module
-**The Backlight Module is used to illuminate / extinguish the display backlight as well as setting the intensity of the backlight.**
+---
+title: Backlight
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The Backlight Module is used to control the display backlight and set its intensity.
 
 ## Syntax
 

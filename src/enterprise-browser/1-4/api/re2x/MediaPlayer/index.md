@@ -1,9 +1,11 @@
-
-#MediaPlayer Module
-
-<b>
+---
+title: MediaPlayer
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The MediaPlayer Module plays audio/video files.
-</b>
 
 ##Syntax
 

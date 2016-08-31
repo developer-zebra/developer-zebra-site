@@ -1,9 +1,11 @@
-
-#ZoomTextButton Module
-
-<b>
+---
+title: ZoomTextButton
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The ZoomTextButton Module is used to set the parameters of the ZoomTextButton. When clicked the font size in the browser will cycle from smallest to largest.
-</b>
 
 ##Syntax
 

@@ -1,9 +1,11 @@
-
-#SignatureCapture Module
-
-<b>
+---
+title: SignatureCapture 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The SignatureCapture Module creates a rectangular box that the user can draw within using the device's stylus to record handwritten data. Common usages for this tag include the capture of client/customer signatures and the input of handwritten text/notations.
-</b>
 
 ##Syntax
 

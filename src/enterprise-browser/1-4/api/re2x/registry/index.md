@@ -1,9 +1,11 @@
-
-#Registry Module
-
-<b>
+---
+title: Registry
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The Registry Module is used to write and delete registry settings, and create corresponding merge files.
-</b>
 
 ##Syntax
 

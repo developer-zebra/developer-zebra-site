@@ -1,8 +1,11 @@
-#Scanner Module
-
-<b>
+---
+title: Scanner
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The Scanner Module provides access to control the functionality of the device's scanner.
-</b>
 
 ##Syntax
 

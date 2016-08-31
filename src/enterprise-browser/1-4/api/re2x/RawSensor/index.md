@@ -1,9 +1,11 @@
-
-#RawSensors Module
-
-<b>
+---
+title: RawSensors
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The RawSensors Module is used to retrieve the raw data values of the specified sensors.
-</b>
 
 ##Syntax
 

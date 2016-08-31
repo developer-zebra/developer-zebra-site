@@ -1,8 +1,11 @@
-#KeyCapture Module
-
-<b>
+---
+title: KeyCapture
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The KeyCapture Module is used to intercept or override keyboard input.
-</b>
 
 ##Syntax
 

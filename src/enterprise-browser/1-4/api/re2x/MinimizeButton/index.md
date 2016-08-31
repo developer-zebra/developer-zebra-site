@@ -1,9 +1,11 @@
-
-#MinimizeButton Module
-
-<b>
+---
+title: MinimizeButton
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The MinimizeButton Module is used to set the parameters of the minimize button. When this button is clicked RhoElements will minimize and lose focus.
-</b>
 
 ##Syntax
 

@@ -1,8 +1,11 @@
-#KeyState Module
-
-<b>
+---
+title: KeyState
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The KeyState Module is used to set the parameters of the KeyState indicator. The KeyState indicator will display icons for Shift, Alt, Control, Function, Caps, Num lock and Orange key states. It grows from the right as necessary if more than one key state is set at once.
-</b>
 
 ##Syntax
 

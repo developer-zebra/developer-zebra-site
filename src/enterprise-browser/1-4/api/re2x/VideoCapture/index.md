@@ -1,9 +1,11 @@
-
-#VideoCapture Module
-
-<b>
+---
+title: VideoCapture
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The VideoCapture Module captures video files from the default camera device.
-</b>
 
 ##Syntax
 

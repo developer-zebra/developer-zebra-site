@@ -1,9 +1,11 @@
-
-#ScreenOrientation Module
-
-<b>
+---
+title: ScreenOrientation
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The ScreenOrientation Module is used to control the screen orientation/layout and register to receive an event when it changes.
-</b>
 
 ##Syntax
 

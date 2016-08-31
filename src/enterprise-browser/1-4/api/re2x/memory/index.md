@@ -1,9 +1,12 @@
-
-#Memory Module
-
-<b>
+---
+title: Memory
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The Memory Module is used to to retrieve the current available memory or notification of memory dropping below a user defined value.
-</b>
+
 
 ##Syntax
 

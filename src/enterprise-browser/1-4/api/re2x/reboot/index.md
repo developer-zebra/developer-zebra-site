@@ -1,5 +1,11 @@
-# Reboot Module
-*The Reboot Module is used to reboot the terminal immediately.*
+---
+title: Reboot
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The Reboot Module is used to reboot the terminal immediately.
 
 ## Syntax
 <table class="re-table">

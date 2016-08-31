@@ -1,9 +1,11 @@
-
-#Generic Preexisting JavaScript Object
-
-<b>
-The Generic Preexisting JavaScript Object contains read only properties and methods which do not belong to a specific module. If you have configured 'PreloadLegacyGeneric' to be '1' the JavaScript object 'generic' will be inserted automatically into your page's DOM by RhoElements.
-</b>
+---
+title: Generic
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The Generic Preexisting JavaScript Object contains read only properties and methods which do not belong to a specific module. If you have configured "PreloadLegacyGeneric"  to be "1" the JavaScript object "generic" will be inserted automatically into your page's DOM by RhoElements.
 
 ##Syntax
 

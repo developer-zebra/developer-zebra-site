@@ -1,5 +1,11 @@
-# APD Preexisting JavaScript Object
-**The APD Preexisting JavaScript Object contains read only properties and methods for interacting with the Adaptive Printer Driver. If you have configured 'PreloadLegacyAPD' to be '1' the JavaScript object 'apd' will be inserted automatically into your page's DOM by RhoElements.**
+---
+title: APD
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The APD Preexisting JavaScript Object contains read only properties and methods for interacting with the Adaptive Printer Driver. If you have configured 'PreloadLegacyAPD' to be '1' the JavaScript object 'apd' will be inserted automatically into your page's DOM by RhoElements.
 
 ## Syntax
 

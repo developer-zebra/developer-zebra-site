@@ -1,5 +1,11 @@
-# Comm Module
-**The Comm Module is used to control the functionality of the devices communication (serial) port; the way RhoElements interacts with that port and the data it provides.**
+---
+title: Comm
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The Comm Module is used to control the functionality of the devices communication (serial) port; the way RhoElements interacts with that port and the data it provides.
 
 ## Syntax
 

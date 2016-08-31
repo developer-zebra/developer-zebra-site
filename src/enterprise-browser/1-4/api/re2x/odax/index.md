@@ -1,9 +1,11 @@
-
-#ODAX Preexisting JavaScript Object
-
-<b>
+---
+title: ODAX
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The ODAX Preexisting JavaScript Object contains read methods to provide offline data access. ODAX uses either a CSV or XML file on the device to provide rudimentary offline capabilities and should only be used to provide backward compatibility with legacy applications. RhoElements supports Application cache and Web SQL implementations which should be used in preference to ODAX in new applications. If you have configured 'PreloadLegacyODAX' to be '1' the JavaScript object 'odax' will be inserted automatically into your page's DOM by RhoElements. The result set is stored internally in the 'odax' object and is created and manipulated using the exposed methods below
-</b>
 
 ##Syntax
 

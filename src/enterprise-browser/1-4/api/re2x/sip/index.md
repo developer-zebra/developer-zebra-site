@@ -1,9 +1,11 @@
-
-#Sip Module
-
-<b>
-The Sip Module is used to control attributes of the soft input panel. Note that these settings apply to both text boxes on the current page as well as the address bar
-</b>
+---
+title: SIP
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
+The SIP Module is used to control attributes of the soft input panel. Note that these settings apply to both text boxes on the current page as well as the address bar
 
 ##Syntax
 

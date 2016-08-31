@@ -1,9 +1,11 @@
-
-#ReloadButton Module
-
-<b>
+---
+title: ReloadButton
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+---
+## Overview
 The ReloadButton Module is used to set the parameters of the Reload Button. When clicked, the current page is reloaded.
-</b>
 
 ##Syntax
 

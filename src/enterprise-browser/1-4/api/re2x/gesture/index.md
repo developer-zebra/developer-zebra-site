@@ -1,7 +1,12 @@
 ---
 title:  Gesture Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The Gesture Module is used to define touch screen. Check the [gestures overview page](GesturesOverview) for more detail on different types of gestures.**
+## Overview
+The Gesture Module is used to define touch screen. Check the [gestures overview page](GesturesOverview) for more detail on different types of gestures.**
 
 ## Syntax
 

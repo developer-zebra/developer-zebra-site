@@ -1,7 +1,12 @@
 ---
 title:  Battery Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The Battery Module is used to set the attributes of the battery indicator and retrieve the status of the battery. For more information about positioning these indicators, please refer to the [indicator layout overview page](IndicatorPositions).**
+##Overview
+The Battery Module is used to set the attributes of the battery indicator and retrieve the status of the battery. For more information about positioning these indicators, please refer to the [indicator layout overview page](IndicatorPositions).**
 
 ## Syntax
 <table class="re-table">

@@ -81,9 +81,9 @@ automenu:
     - title: RhoElements 2.x APIs
       items:
         - title: AddressBar
-          url: re2x/AddressBar
+          url: re2x/addressbar
         - title: Airbeam
-          url: re2x/AirBeam
+          url: re2x/airbeam
         - title: Alarm
           url: re2x/alarm
         - title: APD
@@ -93,15 +93,15 @@ automenu:
         - title: AudioCapture
           url: re2x/AudioCapture
         - title: BackButton
-          url: re2x/BackButton
+          url: re2x/backbutton
         - title: Backlight
-          url: re2x/Backlight
+          url: re2x/backlight
         - title: Battery
           url: re2x/battery
         - title: BottomCommandArea
-          url: re2x/BottomCommandArea
+          url: re2x/bottomcommandarea
         - title: CardReader
-          url: re2x/CardReader
+          url: re2x/cardreader
         - title: Comm
           url: re2x/comm
         - title: Decoders 
@@ -109,19 +109,19 @@ automenu:
         - title: Device
           url: re2x/device
         - title: EMML Profile 
-          url: re2x/emml
+          url: re2x/EMMLProfile
         - title: FileTransfer
           url: re2x/FileTransfer
         - title: ForwardButton
-          url: re2x/ForwardButton
+          url: re2x/forwardbutton
         - title: Generic 
           url: re2x/generic
         - title: Gesture
-          url: re2x/gesture
+          url: re2x/Gesture
         - title: GoButton
-          url: re2x/GoButton
+          url: re2x/gobutton
         - title: History 
-          url: re2x/history
+          url: re2x/History
         - title: HomeButton
           url: re2x/HomeButton
         - title: Hourglass
@@ -129,13 +129,13 @@ automenu:
         - title: Imager
           url: re2x/imager
         - title: KeyCapture
-          url: re2x/KeyCapture
+          url: re2x/keycapture
         - title: Keylight
-          url: re2x/KeyLight
+          url: re2x/Keylight
         - title: KeyState
-          url: re2x/KeyState
+          url: re2x/keystate
         - title: MediaPlayer
-          url: re2x/MediaPlayer
+          url: re2x/mediaPlayer
         - title: Memory
           url: re2x/memory
         - title: MinimizeButton
@@ -146,28 +146,28 @@ automenu:
           url: re2x/notification
         - title: ODAX 
           url: re2x/odax
-        - title: PowerOn
+        - title: poweron
           url: re2x/PowerOn
         - title: Push
           url: re2x/push
         - title: Quit Button
-          url: re2x/QuitButton
+          url: re2x/quitbutton
         - title: RawSensor 
-          url: re2x/RawSensor
+          url: re2x/rawsensor
         - title: Reboot
           url: re2x/reboot
         - title: Registry
           url: re2x/registry
         - title: Reload Button
-          url: re2x/ReloadButton
+          url: re2x/reloadbutton
         - title: RFID 
           url: re2x/rfid
         - title: RSM 
-          url: re2x/rsm
+          url: re2x/RSM
         - title: Scanner 
           url: re2x/scanner
         - title: ScreenOrientation
-          url: re2x/ScreenOrientation
+          url: re2x/screenorientation
         - title: Signal 
           url: re2x/signal
         - title: SignatureCapture 
@@ -175,17 +175,17 @@ automenu:
         - title: SIP
           url: re2x/sip
         - title: SipButton
-          url: re2x/SipButton
+          url: re2x/sipbutton
         - title: StopButton
-          url: re2x/StopButton
+          url: re2x/stopbutton
         - title: Stylus
           url: re2x/stylus
         - title: SystemTime
-          url: re2x/SystemTime
+          url: re2x/systemTime
         - title: Timer
           url: re2x/timer
         - title: TopCommandArea
-          url: re2x/TopCommandArea
+          url: re2x/topcommandarea
         - title: VideoCapture
           url: re2x/VideoCapture
         - title: Volume
@@ -195,7 +195,7 @@ automenu:
         - title: Zoom
           url: re2x/zoom
         - title: ZoomTextButton
-          url: re2x/ZoomTextButton
+          url: re2x/zoomTextButton
     - title: PocketBrowser 3.x APIs
       items:
         - title: AddressBar

@@ -1,7 +1,12 @@
 ---
 title:  CardReader Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The CardReader Module is used to either navigate to a URL or call a JavaScript function when an attached card reader decodes data.**
+##Overview
+The CardReader Module is used to either navigate to a URL or call a JavaScript function when an attached card reader decodes data.**
 
 ## Syntax
 

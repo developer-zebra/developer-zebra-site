@@ -1,11 +1,12 @@
 ---
 title: ForwardButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
+## Overview
 The ForwardButton Module is used to set the parameters of the Forward Button. When clicked the Forward button will navigate forward to the browser history, if possible.
-</b>
 
 ##Syntax
 

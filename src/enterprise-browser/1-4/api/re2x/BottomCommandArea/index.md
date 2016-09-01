@@ -1,7 +1,12 @@
 ---
 title:  BottomCommandArea Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The BottomCommandArea Module is used to set the parameters of the Bottom Command Area. The bottom command area is a region at the bottom of the screen designed to hold RhoElements controls such as the SIP button or Zoom button to separate them from the rest of the user application.**
+##Overview
+The BottomCommandArea Module is used to set the parameters of the Bottom Command Area. The bottom command area is a region at the bottom of the screen designed to hold RhoElements controls such as the SIP button or Zoom button to separate them from the rest of the user application.**
 
 ## Syntax
 

@@ -1,7 +1,12 @@
 ---
 title:  Application Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The Application Module is to adjust the running state of RhoElements applications.**
+##Overview
+The Application Module is to adjust the running state of RhoElements applications.**
 
 ## Syntax
 

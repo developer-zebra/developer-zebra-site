@@ -1,7 +1,12 @@
 ---
 title:  Alarm Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The Alarm Module is used to set an alarm and register an action to perform when that alarm fires.**
+##Overview
+The Alarm Module is used to set an alarm and register an action to perform when that alarm fires.**
 
 ## Syntax
 

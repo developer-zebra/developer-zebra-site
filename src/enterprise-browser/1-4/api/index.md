@@ -14,8 +14,8 @@ automenu:
           url: ../guide
     - title: Enterprise Browser APIs
       items:
-        - title: ADP
-          url: adp
+        - title: APD
+          url: re2x/apd
         - title: Application
           url: Application
         - title: AudioCapture
@@ -60,8 +60,6 @@ automenu:
           url: printing
         - title: PrinterZebra
           url: printingzebra
-        - title: Remote Notification
-          url: remoteNotification
         - title: ScreenOrientation
           url: ScreenOrientation
         - title: Sensor
@@ -80,10 +78,6 @@ automenu:
           url: Timer
         - title: Webview
           url: webview
-        - title: Zoom
-          url: Zoom
-        - title: ZoomTextButton
-          url: ZoomTextButton
     - title: RhoElements 2.x APIs
       items:
         - title: AddressBar
@@ -105,7 +99,7 @@ automenu:
         - title: Battery
           url: re2x/battery
         - title: BottomCommandArea
-          url: re2x/BottomCommanArea
+          url: re2x/BottomCommandArea
         - title: CardReader
           url: re2x/CardReader
         - title: Comm
@@ -205,7 +199,7 @@ automenu:
     - title: PocketBrowser 3.x APIs
       items:
         - title: AddressBar
-          url: addressbar
+          url: pb3x/addressbar
         - title: Airbeam Smart 
           url: AirBeamSmart
         - title: Alarm

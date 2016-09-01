@@ -1,14 +1,11 @@
 ---
-title: Signal
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Signal Module
 ---
-## Overview
+
+
+<b>
 The Signal Module is used to set positional and display parameters of the wireless signal indicator on the screen.
-
-
-Check the <a href="IndicatorPositions">indicator layout overview page</a> for more detail on positioning these indicators.
+</b><b>Check the <a href="IndicatorPositions">indicator layout overview page</a> for more detail on positioning these indicators.</b>
 
 
 ##Syntax
@@ -90,11 +87,7 @@ The WINS server address and dhcpStatic data are not available on the ET1. Also t
 ###Parameter Deprecation
 For users migrating their PocketBrowser apps to RhoElements please note that due to the difference in the signal indicator graphic, the GraphPosition and IconPosition parameters have been deprecated. Please use the Layout parameter instead.
 
-###Devices lacking support
-Due to platform limitations this API is not available on the following Zebra Technologies devices on specific platform:
 
-* VH10 CE 6.0
-* Omnii XT15 CE 6.0
 
 
 ##Requirements
@@ -127,3 +120,6 @@ The following example navigates to a new page with parameters upon a wireless si
 
 	<META HTTP-Equiv="Signal" Content="signalevent:url('mypage.asp?Signal percentage=%s&ESSID=%s&MacAdd=%s&Adapter=%s&DHCPServ=%s&Mode=%s&Gateway=%s&IPAddress=%s&RSSI=%s&Subnet=%s&Wins=%s')">
 	
+
+
+

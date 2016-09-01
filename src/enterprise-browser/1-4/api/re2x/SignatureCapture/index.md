@@ -1,11 +1,11 @@
 ---
-title: SignatureCapture 
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: SignatureCapture Module
 ---
-## Overview
+
+
+<b>
 The SignatureCapture Module creates a rectangular box that the user can draw within using the device's stylus to record handwritten data. Common usages for this tag include the capture of client/customer signatures and the input of handwritten text/notations.
+</b>
 
 ##Syntax
 
@@ -218,5 +218,6 @@ The following example shows signature vectors being displayed in an HTML table
 	  <DIV id="vectorOut">Vectors Will Appear Here:</div>
 	  </BODY>  
 	
+
 
 

@@ -1,11 +1,11 @@
 ---
-title: ZoomTextButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: ZoomTextButton Module
 ---
-## Overview
+
+
+<b>
 The ZoomTextButton Module is used to set the parameters of the ZoomTextButton. When clicked the font size in the browser will cycle from smallest to largest.
+</b>
 
 ##Syntax
 
@@ -89,5 +89,6 @@ The following example shows the ZoomText button and displays the zoomText_up.gif
 
 	<META HTTP-Equiv="ZoomTextButton" Content="ImageUp:url('http://myaddress/zoomText_up.gif'); ImageDown:url('http://myaddress.zoomText_down.gif'); Visibility:Visible">
 					
+
 
 

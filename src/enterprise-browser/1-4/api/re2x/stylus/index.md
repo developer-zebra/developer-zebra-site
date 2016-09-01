@@ -1,11 +1,11 @@
 ---
-title: Stylus
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Stylus Module
 ---
-## Overview
+
+
+<b>
 The Stylus Module is used to enable or disable the touch screen.
+</b>
 
 ##Syntax
 
@@ -73,5 +73,6 @@ The following example disables the touch screen until the Enter key is pressed:
 	   }
 	</SCRIPT>
 	
+
 
 

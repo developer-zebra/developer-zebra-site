@@ -1,11 +1,11 @@
 ---
-title: Network
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Network Module
 ---
-## Overview
+
+
+<b>
 The Network Module is used to determine whether the device is able to connect to a specified server URL or IP address.
+</b>
 
 ##Syntax
 

@@ -205,7 +205,7 @@ automenu:
         - title: Alarm
           url: alarm
         - title: APD 
-          url: apd
+          url: re2x/apd
         - title: Application
           url: Application
         - title: BackButton

@@ -1,11 +1,11 @@
 ---
-title: QuitButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: QuitButton Module
 ---
-## Overview
+
+
+<b>
 The QuitButton Module is used to set the parameters of the quit button. When clicked, the Quit button will exit the RhoElements application.
+</b>
 
 ##Syntax
 
@@ -91,5 +91,6 @@ The following example shows the Quit button and displays the quit_up.jpg / quit_
 
 	<META HTTP-Equiv="QuitButton" Content="ImageUp:url('http://myaddress/quit_up.jpg'); ImageDown:url('http://myaddress/quit_down.jpg'); Visibility:Visible">
 					
+
 
 

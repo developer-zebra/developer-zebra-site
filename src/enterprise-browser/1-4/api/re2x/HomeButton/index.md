@@ -1,11 +1,11 @@
 ---
-title: HomeButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: HomeButton Module
 ---
-## Overview
+
+
+<b>
 The HomeButton Module is used to set the parameters of the Home Button. When the home button is clicked RhoElements will navigate to the start page as defined in the configuration.
+</b>
 
 ##Syntax
 
@@ -93,5 +93,6 @@ The following example shows the Home button, sets its width to 30 pixels, its le
 
 	<META HTTP-Equiv="HomeButton" Content="Width:30; Left:50; ImageUp:url('http://myaddress/home_up.gif'); ImageDown:url('http://myaddress/home_down.gif'); Visibility:Visible">
 	
+
 
 

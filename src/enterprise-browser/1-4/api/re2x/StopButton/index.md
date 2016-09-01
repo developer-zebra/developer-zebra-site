@@ -1,11 +1,11 @@
 ---
-title: StopButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: StopButton Module
 ---
-## Overview
+
+
+<b>
 The StopButton Module is used to set the parameters of the Stop Button. The Stop Button will only be displayed whilst a page is loading and when clicked will cease the current navigation and navigate to the badlink page (if defined), this prevents partially rendered pages being displayed in the browser.
+</b>
 
 ##Syntax
 
@@ -95,5 +95,6 @@ The following example shows the Stop button and displays the stop_up.gif / stop_
 
 	<META HTTP-Equiv="StopButton" Content="ImageUp:url('http://myaddress/stop_up.gif'); ImageDown:url('http://myaddress/stop_down.gif'); Visibility:Visible">
 					
+
 
 

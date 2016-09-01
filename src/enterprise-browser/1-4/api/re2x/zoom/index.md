@@ -1,11 +1,11 @@
 ---
-title: Zoom
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Zoom Module
 ---
-## Overview
+
+
+<b>
 The Zoom Module is used to set the zoom size of the text or page.
+</b>
 
 ##Syntax
 
@@ -60,5 +60,6 @@ The following example will zoom the page to enable an application written for a 
 
 	<META HTTP-Equiv="zoom" Content="page:2.0">
 	
+
 
 

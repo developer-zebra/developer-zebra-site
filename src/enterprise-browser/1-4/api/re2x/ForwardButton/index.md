@@ -1,11 +1,11 @@
 ---
-title: ForwardButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: ForwardButton Module
 ---
-## Overview
+
+
+<b>
 The ForwardButton Module is used to set the parameters of the Forward Button. When clicked the Forward button will navigate forward to the browser history, if possible.
+</b>
 
 ##Syntax
 
@@ -97,5 +97,6 @@ The following example shows the Forward button, sets its width to 30 pixels, its
 
 	<META HTTP-Equiv="ForwardButton" Content="Width:30; Left:50; ImageUp:url('http://myaddress/forward_up.gif'); ImageDown:url('http://myaddress/forward_down.gif'); Visibility:Visible"> 
 	
+
 
 

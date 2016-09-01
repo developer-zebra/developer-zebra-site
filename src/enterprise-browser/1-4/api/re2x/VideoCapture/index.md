@@ -1,11 +1,11 @@
 ---
-title: VideoCapture
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: VideoCapture Module
 ---
-## Overview
+
+
+<b>
 The VideoCapture Module captures video files from the default camera device.
+</b>
 
 ##Syntax
 
@@ -175,6 +175,7 @@ The following JavaScript will start a 30 second video capture when onStart is ca
 	      videoCapture.start();
 	   }
 	</script>
+
 
 
 

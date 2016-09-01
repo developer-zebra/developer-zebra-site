@@ -1,11 +1,7 @@
 ---
-title: BackButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title:  BackButton Module
 ---
-## Overview
-The BackButton Module is used to set the parameters of the Back Button. When clicked, the Back button will navigate to the previously loaded page, if any.
+**The BackButton Module is used to set the parameters of the Back Button. When clicked, the Back button will navigate to the previously loaded page, if any.**
 
 ## Syntax
 

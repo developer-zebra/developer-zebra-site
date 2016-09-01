@@ -1,12 +1,11 @@
+---
+title: FileTransfer Module
+---
 
----
-title: FileTransfer
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
----
-## Overview
+
+<b>
 The FileTransfer Module is used to send or receive files between the local filestore and either an FTP or HTTP site.
+</b>
 
 ##Syntax
 

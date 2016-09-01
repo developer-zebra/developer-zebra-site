@@ -1,12 +1,7 @@
 ---
-title: Battery
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title:  Battery Module
 ---
-## Overview
-
-The Battery Module is used to set the attributes of the battery indicator and retrieve the status of the battery. For more information about positioning these indicators, please refer to the [indicator layout overview page](IndicatorPositions).
+**The Battery Module is used to set the attributes of the battery indicator and retrieve the status of the battery. For more information about positioning these indicators, please refer to the [indicator layout overview page](IndicatorPositions).**
 
 ## Syntax
 <table class="re-table">
@@ -355,3 +350,4 @@ The following example alerts the user with battery notifications such as low bat
 		<BR><INPUT type="button" value="EnableNotifications" onclick="battery.setSystemNotifications='Enabled';">
 		<BR><INPUT type="button" value="DisableNotifications" onclick="battery.setSystemNotifications='Disabled';">
 	</HTML>
+

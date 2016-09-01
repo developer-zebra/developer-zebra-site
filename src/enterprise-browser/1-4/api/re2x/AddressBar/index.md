@@ -1,11 +1,7 @@
 ---
-title: AddressBar
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title:  AddressBar Module
 ---
-## Overview
-The AddressBar Module is used to set the parameters of the address bar. The address bar should only be used for debugging hybrid applications and is not designed to be used as a replacement for a web browser address bar. Press the "Go" button or ENTER key to navigate to the specified URL.
+<p>The AddressBar Module is used to set the parameters of the address bar. The address bar should only be used for debugging Hybrid applications and is not designed to be used as a replacement for a web browser address bar. Press the 'Go' button or enter key to navigate to the typed URI.</p>
 
 ## Syntax
 <table class="re-table">

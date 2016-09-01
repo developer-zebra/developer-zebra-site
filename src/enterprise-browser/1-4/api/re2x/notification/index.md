@@ -1,11 +1,11 @@
 ---
-title: Notification
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Notification Module
 ---
-## Overview
-The Notification Module is used to control the notification objects such as the LEDs, beeper and pager on the device. Some devices have more than one of an object type, though in practice devices will have multiple LEDs and a maximum of one beeper and pager. In order to control the notification objects it is first necessary to query the device to discover which objects are available, this is done through the Enumerate method and EnumNotificationsEvent. The EnumNotificationsEvent will return a unique identifier for each available notification and this will be used to set the notification state. Notifications can be set to either on, off or cycling with the behaviour of 'on' or 'off' notification objects self explanatory; when set to cyclic LEDs will flash for the specified number of times whereas the beeper and pager will only activate once for the specified duration.
+
+
+<b>
+The Notification Module is used to control the notification objects on the device. There are three types of notification object (LEDs, Beeper and Pager) and a device may have more than one of any object type, though in practise devices will have multiple LEDs and a maximum of one beeper and pager. In order to control the notification objects it is first necessary to query the device to discover which objects are available, this is done through the Enumerate method and EnumNotificationsEvent. The EnumNotificationsEvent will return a unique identifier for each available notification and this will be used to set the notification state. Notifications can be set to either on, off or cycling with the behaviour of 'on' or 'off' notification objects self explanatory; when set to cyclic LEDs will flash for the specified number of times whereas the beeper and pager will only activate once for the specified duration.
+</b>
 
 ##Syntax
 

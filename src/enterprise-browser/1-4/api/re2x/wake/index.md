@@ -1,11 +1,11 @@
 ---
-title: Wake
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Wake Module
 ---
-## Overview
+
+
+<b>
 The Wake Module is used to keep the display and wifi ON as long as RhoElements is active
+</b>
 
 ##Syntax
 
@@ -64,5 +64,6 @@ The following keeps the device on and doesn't go to standby
 
 	<META HTTP-Equiv="wake" Content="wakeLock:Enabled;wifiLock:Enabled">
 					
+
 
 

@@ -1,11 +1,11 @@
 ---
-title: ScreenOrientation
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: ScreenOrientation Module
 ---
-## Overview
+
+
+<b>
 The ScreenOrientation Module is used to control the screen orientation/layout and register to receive an event when it changes.
+</b>
 
 ##Syntax
 
@@ -108,5 +108,6 @@ The following example orientates the screen to righthanded in landscape mode:
 
 	<META HTTP-Equiv="ScreenOrientation" Content="RightHanded">
 	
+
 
 

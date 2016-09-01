@@ -1,11 +1,11 @@
 ---
-title: Volume
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Volume Module
 ---
-## Overview
+
+
+<b>
 The Volume Module is used to set the audio output volume of the device. This is the wave output volume, not the volume of the device beeper.
+</b>
 
 ##Syntax
 

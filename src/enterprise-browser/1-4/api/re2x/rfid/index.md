@@ -1,11 +1,7 @@
 ---
-title: RFID
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title:  Rfid Module
 ---
-## Overview
-The RFID Module is not included in the default RhoElements/RhoStudio installers. To be able to use the RFID module, a separate package must be downloaded and installed - please SEE REMARKS for how this can be obtained. Provides access to control the functionality of the device's RFID reader. Currently the plug-in is supported on MC 3190Z and MC 9190Z devices.
+The Rfid Module is not included in the default RhoElements/RhoStudio installers. To be able to use the RFID module, a separate package must be downloaded and installed - please SEE REMARKS for how this can be obtained. Provides access to control the functionality of the device's RFID reader. Currently the plug-in is supported on MC 3190Z and MC 9190Z devices.
 
 ## Syntax
 <table class="re-table">

@@ -1,11 +1,11 @@
 ---
-title: Timer
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Timer Module
 ---
-## Overview
+
+
+<b>
 The Timer Module is used to set a timer and register an action to perform when that timer expires. Once the timer is started the interval time can not be changed without stopping the timer and restarting it.
+</b>
 
 ##Syntax
 
@@ -105,5 +105,6 @@ The following example shows a JavaScript alert at 10 second intervals:
 	  <BODY><DIV ID="divTimer"></DIV></BODY>
 	</HTML>
 	
+
 
 

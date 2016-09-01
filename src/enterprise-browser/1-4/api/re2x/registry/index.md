@@ -1,11 +1,11 @@
 ---
-title: Registry
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Registry Module
 ---
-## Overview
+
+
+<b>
 The Registry Module is used to write and delete registry settings, and create corresponding merge files.
+</b>
 
 ##Syntax
 
@@ -118,5 +118,6 @@ The tags below delete the above setting.
 	        <META HTTP-Equiv="registry" Content="setting:RhoElements">
 	        <META HTTP-Equiv="registry" Content="delete">
 	      
+
 
 

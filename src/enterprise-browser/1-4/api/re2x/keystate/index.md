@@ -1,11 +1,11 @@
 ---
-title: KeyState
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: KeyState Module
 ---
-## Overview
+
+
+<b>
 The KeyState Module is used to set the parameters of the KeyState indicator. The KeyState indicator will display icons for Shift, Alt, Control, Function, Caps, Num lock and Orange key states. It grows from the right as necessary if more than one key state is set at once.
+</b>
 
 ##Syntax
 
@@ -61,8 +61,6 @@ When the screen orientation changes, either using the ScreenOrientation tag or b
 Due to platform limitations this API is not available on the following Zebra Technologies devices:
 
 * Workabout Pro 4
-* VH10
-* Omnii XT15
 
 
 ##Requirements
@@ -83,3 +81,6 @@ The following example shows the KeyState and sets the right and top coordinates 
 
 	<META HTTP-Equiv="KeyState" Content="Visibility:Visible; Right:20; Top:20">
 	        
+
+
+

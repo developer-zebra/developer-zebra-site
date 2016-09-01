@@ -1,11 +1,11 @@
 ---
-title: Push
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Push Module
 ---
-## Overview
+
+
+<b>
 The Push Module is used to receive data over an HTTP connection.
+</b>
 
 ##Syntax
 
@@ -147,5 +147,6 @@ To enable unattended mode:
 
 	<META HTTP-Equiv="push" Content="unattended:enable">
 	      
+
 
 

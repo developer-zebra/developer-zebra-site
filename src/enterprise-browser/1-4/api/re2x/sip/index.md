@@ -1,11 +1,11 @@
 ---
-title: SIP
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Sip Module
 ---
-## Overview
-The SIP Module is used to control attributes of the soft input panel. Note that these settings apply to both text boxes on the current page as well as the address bar
+
+
+<b>
+The Sip Module is used to control attributes of the soft input panel. Note that these settings apply to both text boxes on the current page as well as the address bar
+</b>
 
 ##Syntax
 
@@ -99,5 +99,6 @@ The following example sets the SIP to manual:
 
 	<META HTTP-Equiv="SIP" Content="Manual">
 	
+
 
 

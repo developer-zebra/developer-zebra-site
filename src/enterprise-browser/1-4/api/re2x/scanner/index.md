@@ -1,11 +1,11 @@
 ---
-title: Scanner
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Scanner Module
 ---
-## Overview
+
+
+<b>
 The Scanner Module provides access to control the functionality of the device's scanner.
+</b>
 
 ##Syntax
 
@@ -19,16 +19,16 @@ To Invoke scanner methods via JavaScript use the following syntax: scanner.metho
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">
 To Set scanner parameters via JavaScript use the following syntax: scanner.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
 <P />e.g. <b>scanner</b>.enabled = 'value';
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">            
+</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
 To Set scanner return events via JavaScript use the following syntax: scanner.event = Javascript Function;
 <P />e.g. <b>scanner</b>.decodeEvent = 'doFunction(%json)';
 <P />
 For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
 
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">             
+</td></tr><tr><td class="clsSyntaxCells clsOddRow">							
 To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: scanner.setEMML("[Your EMML Tags]");
 <P />
-e.g. <b>scanner</b>.setEMML("enabled:<i>value</i>;decodeEvent:url('JavaScript:doFunction(%json)');enumerate");              
+e.g. <b>scanner</b>.setEMML("enabled:<i>value</i>;decodeEvent:url('JavaScript:doFunction(%json)');enumerate");							
 </td></tr></table>
 
 <table class="re-table"><tr><th class="tableHeading">Scanner Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
@@ -37,7 +37,7 @@ To Invoke Scanner methods via Ruby use the following syntax: Scanner.method()
 <P />e.g. <b>Scanner</b>.enumerate</td></tr><tr><td class="clsSyntaxCells clsOddRow">
 To Set Scanner parameters via Ruby use the following syntax: Scanner.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
 <P />e.g. <b>Scanner</b>.enabled = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">            
+</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
 To Set Scanner return events via Ruby use the following syntax: Scanner.event = url_for(:action =&gt; :event_callback) 
 <P />e.g. <b>Scanner</b>.decodeEvent = url_for(:action =&gt; :scanner_event_callback)
 <P />
@@ -45,7 +45,7 @@ For more details on the event syntax and parameters see the <a href="/rhoelement
 <p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
 
 
-  
+	
 
 ##Methods
 
@@ -116,7 +116,7 @@ Items listed in this section indicate parameters, or attributes which can be set
   sensor to detect movement to use presentation mode.  See examples below.  
  <br /><b>pressAndRelease:</b>
   Scan will continue after the trigger is released until scanTimeout occurs.
- <br /><b>continuousRead:</b> 
+ <br /><b>continuousRead:</b>	
   Once the trigger is pulled barcodes will continue to be scanned whilst the trigger
   is held, enabling rapid scanning, to be used in conjunction with sameSymbolTimeout 
   and differentSymbolTimeout.  This value is ignored if viewfinderMode is set to 
@@ -228,7 +228,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 </b></td><td class="clsSyntaxCells clsOddRow">Forces the scanner to disconnect from the terminal when it is 'disabled'.  Since the scanner is disabled when you navigate to a new page, set this value to false if you want to maintain the bluetooth connection to your remote scanner.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>displayBtAddressBarcodeOnEnable:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">If set to true the bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a bluetooth scanner.  Not all devices support this functionality.  Note you must specify this parameter before calling 'enable'.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enableTimeout:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Configures the time (in seconds) allowed to pair with the external bluetooth scanner after calling the 'enable()' method.  You must specify this parameter before calling 'enable'.<br /><br /><b>Possible Values:seconds</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table> 
+<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -288,7 +288,7 @@ The following messages will be received from the Bluetooth Scanner in the blueto
 
 * 'BluetoothConnected'
    The remote scanner has successfully connected to the device.
-  
+	
 * 'BluetoothDisconnected'
    The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
    of range or scanning the 'unpairing' barcode.  The scanner will attempt to reconnect automatically for
@@ -318,27 +318,24 @@ In order to use the scanner with RhoElements Native Apps you will need to either
 
 <pre>
 DISABLING DATAWEDGE
-1.  Start the DataWedge app
-2.  Click the menu button &gt; "Settings" and untick "DataWedge enabled". 
+1.	Start the DataWedge app
+2.	Click the menu button &gt; "Settings" and untick "DataWedge enabled". 
 RHOELEMENTS DATAWEDGE PROFILE
-1.  Install your RhoElements native app,
-2.  Start the DataWedge app
-3.  Click the menu button &gt; "New Profile" and enter a name,
-4.  Click on the link to the new profile in the profile list,
-5.  Click on "Associated apps" in the "Applications" section,
-6.  Click the menu button &gt; "New app/activity",
-7.  Select the package name for your app,
-8.  Select "*",
-9.  Click the "Back" capacitive button,
-10. Make sure the "Profile enabled" checkbox is ticked.
-11. Uncheck all three "Enabled" checkboxes under the sections of:
-  "Barcode input", "Keystroke output" and "Intent output".
+1.	Install your RhoElements native app,
+2.	Start the DataWedge app
+3.	Click the menu button &gt; "New Profile" and enter a name,
+4.	Click on the link to the new profile in the profile list,
+5.	Click on "Associated apps" in the "Applications" section,
+6.	Click the menu button &gt; "New app/activity",
+7.	Select the package name for your app,
+8.	Select "*",
+9.	Click the "Back" capacitive button,
+10.	Make sure the "Profile enabled" checkbox is ticked.
+11.	Uncheck all three "Enabled" checkboxes under the sections of:
+	"Barcode input", "Keystroke output" and "Intent output".
 </pre>
 
-###Devices lacking support
-Due to platform limitations this API is not available on the following Zebra Technologies devices on specific platform. Note: However one can enable legacy scanner service and can scan the respective barcode.
 
-* VH10 CE 6.0
 
 
 ##Requirements
@@ -351,235 +348,236 @@ Due to platform limitations this API is not available on the following Zebra Tec
 
 The following example enables the scanner, turns on autoenter and performs a soft trigger start:
 
-  <META HTTP-Equiv="scanner" Content="Enable">
-  <META HTTP-Equiv="scanner" Content="AutoEnter:Enabled">
-  <META HTTP-Equiv="scanner" Content="Start">
-  
+	<META HTTP-Equiv="scanner" Content="Enable">
+	<META HTTP-Equiv="scanner" Content="AutoEnter:Enabled">
+	<META HTTP-Equiv="scanner" Content="Start">
+	
 The following example sets up the scanner on a page to submit the scanned data to an asp page upon successful decoding
 
-  <META HTTP-Equiv="scanner" Content="enabled">
-  <META HTTP-Equiv="scanner" Content="DecodeEvent:url('mypage.asp?Data=%s&Source=%s&Type=%s&Time=%s&Length=%s')">
-  
+	<META HTTP-Equiv="scanner" Content="enabled">
+	<META HTTP-Equiv="scanner" Content="DecodeEvent:url('mypage.asp?Data=%s&Source=%s&Type=%s&Time=%s&Length=%s')">
+	
 The following example sets up the scanner on a page to call a javascript function upon successful decoding:
 
-  <META HTTP-Equiv="scanner" Content="enable">
-  <META HTTP-Equiv="scanner" Content="DecodeEvent:url('javascript:doScan(%json);')">
-  
-  <script>
-     function doScan(jsonObject)
-     {
-        if(jsonObject.type == 0x35) //ean 13
-        {
-           alert('Please scan a non EAN 13 code!');
-        }
-        else
-        {
-           alert('You scanned: ' + jsonObject.data);
-        }
-     }
-  </script>
-  
+	<META HTTP-Equiv="scanner" Content="enable">
+	<META HTTP-Equiv="scanner" Content="DecodeEvent:url('javascript:doScan(%json);')">
+	
+	<script>
+	   function doScan(jsonObject)
+	   {
+	      if(jsonObject.type == 0x35) //ean 13
+	      {
+	         alert('Please scan a non EAN 13 code!');
+	      }
+	      else
+	      {
+	         alert('You scanned: ' + jsonObject.data);
+	      }
+	   }
+	</script>
+	
 The following example demonstrates how to set a device into presentation mode.
 
-  <HTML>
-  <HEAD>
-    <Meta http-equiv="scanner" content="aimType:presentation">
-    <Meta http-equiv="scanner" content="DecodeEvent:url('Javascript:doScan('%s');')">
-    <Meta http-equiv="scanner" content="enable">
-  </HEAD>
-  <BODY onLoad="doSoftScan();">
-    <SCRIPT LANGUAGE="JavaScript">
-  
-      function doSoftScan()
-      {
-        scanner.start();
-      }
-  
-      function doScan(jsonObject)
-      {
-        bcode.innerHTML = jsonObject.data;
-        doSoftScan();
-    }
-    </SCRIPT>
-    <div id="bcode"></div>
-  </BODY>
-  </HTML>
-  
-  
+	<HTML>
+	<HEAD>
+	  <Meta http-equiv="scanner" content="aimType:presentation">
+	  <Meta http-equiv="scanner" content="DecodeEvent:url('Javascript:doScan('%s');')">
+	  <Meta http-equiv="scanner" content="enable">
+	</HEAD>
+	<BODY onLoad="doSoftScan();">
+	  <SCRIPT LANGUAGE="JavaScript">
+	
+	    function doSoftScan()
+	    {
+		    scanner.start();
+	    }
+	
+	    function doScan(jsonObject)
+	    {
+		    bcode.innerHTML = jsonObject.data;
+		    doSoftScan();
+		}
+	  </SCRIPT>
+	  <div id="bcode"></div>
+	</BODY>
+	</HTML>
+	
+	
 The following example shows how an application might handle a Bluetooth Scanner whose ID is SCN2:
 
-  <HTML>
-  <HEAD>
-  <!-- Status Updates are received via bluetoothStatusEvent -->
-  <META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTStatusFunc(%json);')">
-  <META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
-  <!-- Enable the Bluetooth Scanner, this will commence the BT pairing -->
-  <META HTTP-Equiv="Scanner" Content="Enabled:SCN2">
-  </HEAD>
-  
-  Barcode Data: <DIV ID="bcode"> </DIV>
-  User Message: <DIV ID="message"> </DIV>
-  <P><INPUT TYPE="button" VALUE="Change Associated Scanner" ONCLICK="onChangeScanner();"></P>
-  </BODY>
-  </HTML>
-  
-  <SCRIPT LANGUAGE="JavaScript">
-  
-  //  Whether or not the next barcode data we receive will be the unpairing barcode
-  var expectingUnpairingBarcode = false;
-  
-  function ScanFunc(jsonObject)
-  {
-    //  Output the scanned barcode
-    bcode.innerHTML = data;
-  }
-  
-  function BTStatusFunc(jsonObject)
-  {
-    if (expectingUnpairingBarcode)
-    {
-      //  restart the scanner component so it is ready
-      //  to accept a different Bluetooth Scanner
-      expectingUnpairingBarcode = false;
-      scanner.disable();
-      scanner.enabled = 'SCN2';
-      return;
-    }
-    
-    if (jsonObject.status == 'BTScanAssociationBarcode')
-    {
-      //  Instruct the User to scan the association barcode
-      alert('Scan Association Barcode');
-    }
-    else if(jsonObject.status == 'BluetoothConnected')
-    {
-      message.innerHTML = "Bluetooth Scanner Connected";
-    }
-    else if(jsonObject.status == 'BluetoothDisconnected')
-    {
-      message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
-    }
-  }
-  
-  function onChangeScanner()
-  {
-    //  Change the BT Scanner associated with the device, the logic to do this is handled
-    //  once the 'unpairing' barcode is scanned.
-    message.innerHTML = "Please Scan Unpairing Barcode";
-    expectingUnpairingBarcode = true;
-  }
-  </SCRIPT>
-  
-  
+	<HTML>
+	<HEAD>
+	<!-- Status Updates are received via bluetoothStatusEvent -->
+	<META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTStatusFunc(%json);')">
+	<META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
+	<!-- Enable the Bluetooth Scanner, this will commence the BT pairing -->
+	<META HTTP-Equiv="Scanner" Content="Enabled:SCN2">
+	</HEAD>
+	
+	Barcode Data: <DIV ID="bcode"> </DIV>
+	User Message: <DIV ID="message"> </DIV>
+	<P><INPUT TYPE="button" VALUE="Change Associated Scanner" ONCLICK="onChangeScanner();"></P>
+	</BODY>
+	</HTML>
+	
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	//  Whether or not the next barcode data we receive will be the unpairing barcode
+	var expectingUnpairingBarcode = false;
+	
+	function ScanFunc(jsonObject)
+	{
+		//  Output the scanned barcode
+		bcode.innerHTML = data;
+	}
+	
+	function BTStatusFunc(jsonObject)
+	{
+		if (expectingUnpairingBarcode)
+		{
+			//  restart the scanner component so it is ready
+			//  to accept a different Bluetooth Scanner
+			expectingUnpairingBarcode = false;
+			scanner.disable();
+			scanner.enabled = 'SCN2';
+			return;
+		}
+		
+		if (jsonObject.status == 'BTScanAssociationBarcode')
+		{
+			//  Instruct the User to scan the association barcode
+			alert('Scan Association Barcode');
+		}
+		else if(jsonObject.status == 'BluetoothConnected')
+		{
+			message.innerHTML = "Bluetooth Scanner Connected";
+		}
+		else if(jsonObject.status == 'BluetoothDisconnected')
+		{
+			message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
+		}
+	}
+	
+	function onChangeScanner()
+	{
+		//  Change the BT Scanner associated with the device, the logic to do this is handled
+		//  once the 'unpairing' barcode is scanned.
+		message.innerHTML = "Please Scan Unpairing Barcode";
+		expectingUnpairingBarcode = true;
+	}
+	</SCRIPT>
+	
+	
 The following example displays the available scanners on screen and enables the Bluetooth Scanner (if available)
 
-  <HTML>
-  <HEAD>
-  <META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
-  <META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTFunc(%json);')">
-  <META HTTP-Equiv="Scanner" Content="EnumScannerEvent:url('Javascript:EnumScanners(%json);')">
-  </HEAD>
-  
-  <BODY onLoad="setEnumScannerTimer();">
-  <DIV ID="message"></DIV>
-  </BODY>
-  </HTML>
-  
-  <SCRIPT LANGUAGE="JavaScript">
-  function ScanFunc(jsonObject) {message.innerHTML = jsonObject.data;}
-  
-  function BTFunc(jsonObject) {message.innerHTML = jsonObject.status;}
-  
-  function EnumScanners(jsonObject)
-  {
-    var scannerInfo = "Scanners On Device: " + jsonObject.scannerArray.length + "<BR>ID  --  Name<BR>" 
-    for (i=0; i < jsonObject.scannerArray.length; i++)
-    {
-      scannerInfo = scannerInfo + jsonObject.scannerArray[i].deviceName + ' -- '
-      + jsonObject.scannerArray[i].friendlyName + '<BR>';
-      //  See if this is the Bluetooth Scanner
-      if (jsonObject.scannerArray[i].friendlyName.indexOf("Bluetooth") >= 0)
-      {
-        //  This is the Bluetooth Scanner, Enable it
-        scanner.enabled = jsonObject.scannerArray[i].deviceName;
-      }
-    }
-    message.innerHTML = scannerInfo;
-  }
-  
-  //  Wait for the DOM to fully load before we enumerate the scanners
-  function setEnumScannerTimer()
-  {
-      setTimeout("onScannerEnable()", 3000);
-  }
-  function onScannerEnable()
-  {
-    scanner.enumerate();
-  }
-  </SCRIPT>
-  
+	<HTML>
+	<HEAD>
+	<META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
+	<META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTFunc(%json);')">
+	<META HTTP-Equiv="Scanner" Content="EnumScannerEvent:url('Javascript:EnumScanners(%json);')">
+	</HEAD>
+	
+	<BODY onLoad="setEnumScannerTimer();">
+	<DIV ID="message"></DIV>
+	</BODY>
+	</HTML>
+	
+	<SCRIPT LANGUAGE="JavaScript">
+	function ScanFunc(jsonObject) {message.innerHTML = jsonObject.data;}
+	
+	function BTFunc(jsonObject) {message.innerHTML = jsonObject.status;}
+	
+	function EnumScanners(jsonObject)
+	{
+		var scannerInfo = "Scanners On Device: " + jsonObject.scannerArray.length + "<BR>ID  --  Name<BR>" 
+		for (i=0; i < jsonObject.scannerArray.length; i++)
+		{
+			scannerInfo = scannerInfo + jsonObject.scannerArray[i].deviceName + ' -- '
+			+ jsonObject.scannerArray[i].friendlyName + '<BR>';
+			//  See if this is the Bluetooth Scanner
+			if (jsonObject.scannerArray[i].friendlyName.indexOf("Bluetooth") >= 0)
+			{
+				//  This is the Bluetooth Scanner, Enable it
+				scanner.enabled = jsonObject.scannerArray[i].deviceName;
+			}
+		}
+		message.innerHTML = scannerInfo;
+	}
+	
+	//  Wait for the DOM to fully load before we enumerate the scanners
+	function setEnumScannerTimer()
+	{
+	    setTimeout("onScannerEnable()", 3000);
+	}
+	function onScannerEnable()
+	{
+		scanner.enumerate();
+	}
+	</SCRIPT>
+	
 
 
 ##Ruby Examples
 
 The following example lists the available scanners on a device. It first detaches the listeners to 'enumScannerEvent' (if any), then attaches it to a listner and makes a call to 'enumerate' which fires the 'enumScannerEvent'. This piece of code should be placed in the controller
 
-  def registerEnumEvent
-    Scanner.enumScannerEvent = ''
-    Scanner.enumScannerEvent = url_for(:action => :enumScannerEventListener)
-    Scanner.enumerate
-  end
+	def registerEnumEvent
+		Scanner.enumScannerEvent = ''
+		Scanner.enumScannerEvent = url_for(:action => :enumScannerEventListener)
+		Scanner.enumerate
+	end
 
 To call the this function from HTML, use the following code: 
 
-  <li onclick="enumerateScanner();">Enumerate Scanners</li>
+	<li onclick="enumerateScanner();">Enumerate Scanners</li>
 
 Where 'enumerateScanner()' is a JavaScript function which looks like: 
 
-  function enumerateScanner() {
-    $.get('/app/ScannerModule/registerEnumEvent', { });
-    return false;
+	function enumerateScanner() {
+		$.get('/app/ScannerModule/registerEnumEvent', { });
+		return false;
     }
 
 The following piece of code captures the array of scanners returned from the 'enumScannerEvent' and constructs a string to be displayed on an HTML div:
   
-  def enumScannerEventListener
-    scanners = @params
-        
-    String buf = "Available scanners: <BR>"    
-    if scanners    
-      scanners['scannerArray'].each {|scanner| buf += '' + scanner["deviceName"] + " : " + scanner["friendlyName"] + "<BR>"}
-      WebView.execute_js("setFieldValue('"+buf+"');")
-    else
-      WebView.execute_js("setFieldValue('No Scanners found! ');")
-    end    
-  end
+	def enumScannerEventListener
+		scanners = @params
+			  
+		String buf = "Available scanners: <BR>"    
+		if scanners    
+		  scanners['scannerArray'].each {|scanner| buf += '' + scanner["deviceName"] + " : " + scanner["friendlyName"] + "<BR>"}
+		  WebView.execute_js("setFieldValue('"+buf+"');")
+		else
+		  WebView.execute_js("setFieldValue('No Scanners found! ');")
+		end    
+	end
 
 The following example enables the scanner and attaches a listener to the decode event. This can be called from HTML in a similar fashion to the one described above.
   
-  def enableScanner
-    Scanner.enable
-    Scanner.decodeEvent = url_for(:action => :scannerEventListener)
-    WebView.execute_js("setFieldValue('Scanner Enabled');")
-  end
+	def enableScanner
+		Scanner.enable
+		Scanner.decodeEvent = url_for(:action => :scannerEventListener)
+		WebView.execute_js("setFieldValue('Scanner Enabled');")
+	end
 
 The following example populates an HTML div with scanned data upon successful decoding of a barcode:
 
-  def scannerEventListener
-    scanResult = @params
-    WebView.execute_js("setFieldValue('You scanned: <BR>" + scanResult['data'] +"<BR>');")
-  end
+	def scannerEventListener
+		scanResult = @params
+		WebView.execute_js("setFieldValue('You scanned: <BR>" + scanResult['data'] +"<BR>');")
+	end
 
 The following example disables the scanner and detaches any listeners attached to the decode event. This can be called from HTML in a similar fashion to the one described above.
 
-  def disableScanner
-    Scanner.disable
-    Scanner.decodeEvent = ''
-    WebView.execute_js("setFieldValue('Scanner Disabled.');")
-  end 
+	def disableScanner
+		Scanner.disable
+		Scanner.decodeEvent = ''
+		WebView.execute_js("setFieldValue('Scanner Disabled.');")
+	end 
 
 For all the examples described above, the 'setFieldValue()' JavaScript function looks like: 
 
-  function setFieldValue(returnval){
-    document.getElementById("result").innerHTML=returnval;
-  }
+	function setFieldValue(returnval){
+		document.getElementById("result").innerHTML=returnval;
+	}
+

@@ -1,11 +1,11 @@
 ---
-title: Device
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: Device Module
 ---
-## Overview
+
+
+<b>
 The Device Module controls device functions.
+</b>
 
 ##Syntax
 
@@ -72,5 +72,6 @@ The following example wakes the device from Suspend mode:
 
 	<META HTTP-Equiv="Device" Content="wake">
 	
+
 
 

@@ -1,11 +1,11 @@
 ---
-title: SystemTime
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: SystemTime Module
 ---
-## Overview
+
+
+<b>
 The SystemTime Module is used to set the device clock, set the timezone, or synchronize it with a network SNTP server.
+</b>
 
 ##Syntax
 
@@ -81,4 +81,5 @@ The following example sets the UTC device time from a network time server:
 
 	<META HTTP-Equiv="SystemTime" Content="SntpServerIP:132.163.4.102">
 	
+
 

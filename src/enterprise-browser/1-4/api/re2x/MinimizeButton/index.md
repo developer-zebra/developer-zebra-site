@@ -1,11 +1,11 @@
 ---
-title: MinimizeButton
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: MinimizeButton Module
 ---
-## Overview
+
+
+<b>
 The MinimizeButton Module is used to set the parameters of the minimize button. When this button is clicked RhoElements will minimize and lose focus.
+</b>
 
 ##Syntax
 
@@ -93,5 +93,6 @@ The following example shows the minimizebutton and displays the min_up.gif / min
 
 	<META HTTP-Equiv="MinimizeButton" Content="ImageUp:url('http://myaddress/min_up.gif'); ImageDown:url('http://myaddress/min_down.gif'); Visibility:Visible">
 					
+
 
 

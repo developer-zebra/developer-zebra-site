@@ -1,11 +1,11 @@
 ---
-title: History
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: History META Tag
 ---
-## Overview
+
+
+<b>
 The History META Tag is an action tag used to navigate forward or backward through the page history.
+</b>
 
 ##Syntax
 
@@ -92,5 +92,6 @@ The following example navigates back one page when the delete key is pressed (re
 	    }
 	</script>
 	
+
 
 

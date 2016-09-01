@@ -1,11 +1,11 @@
 ---
-title: MediaPlayer
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
+title: MediaPlayer Module
 ---
-## Overview
+
+
+<b>
 The MediaPlayer Module plays audio/video files.
+</b>
 
 ##Syntax
 
@@ -110,5 +110,6 @@ The following JavaScript will start and stop a media playback respectively when 
 	   }
 	</script>
 	
+
 
 

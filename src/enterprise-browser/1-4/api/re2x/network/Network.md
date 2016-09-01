@@ -1,8 +1,13 @@
-#Network
-
-
+---
+title: Network Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-This API class allows you to interact with either the WAN or WiFI network of the device.
+The Network API class permits interaction with the WAN or Wi-Fi networks available to the device.
+
 ## Enabling the API
 There are two methods of enabling the Network API:
 

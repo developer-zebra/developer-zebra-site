@@ -1,8 +1,13 @@
-#AudioCapture
+---
+title:  AudioCapture Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+Audio capture API permits the capture of audio from a built-in microphone or input source on the device.
 
-
-## Overview
-Audio capture API allows you to capture audio from the device's built in microphone or input source.
 ## Enabling the API
 There are two methods of enabling the AudioCapture API:
 

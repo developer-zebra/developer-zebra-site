@@ -1,8 +1,13 @@
-#Device
+---
+title: Device Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+The Device API provides access to some device-level functionality that is only available on Symbol devices. Such functions include suspend, calibrate, powerOff, wake, reboot and others.
 
-
-## Overview
-The Device API provides access to some device level functionality that is only available on Symbol devices such as suspend, calibrate, powerOff, wake, reboot etc.
 ## Enabling the API
 There are two methods of enabling the Device API: 
 

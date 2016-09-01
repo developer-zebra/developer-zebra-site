@@ -1,8 +1,13 @@
-#CardReader
+---
+title: CardReader Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+The Card Reader module decodes the card data when read through a card reader attachment. Currently this is available only on Symbol Technologies devices. Only the foreground application is given access to the card reader hardware. When an application is sent to the background, its state will be saved and it will automatically relinquish control of the card reader. When the app previously using the card reader is returned to the foreground, its previous configuration (eg. pinTimeout) will be reapplied to the card reader automatically.
 
-
-## Overview
-The Card Reader module decodes the card data when read through a card reader attachment. Currently this is available only on Symbol Technologies devices.Only the foreground application is given access to the card reader hardware, when an application is sent to the background its state will be saved and it will automatically relinquish control of the card reader. When brought back to the foreground, an application previously using the card reader will have its previous configuration (eg. pinTimeout) reapplied to the card reader automatically.
 ## Enabling the API
 There are two methods of enabling the CardReader API: 
 

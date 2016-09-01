@@ -1,6 +1,12 @@
-# Comm
-## Overview
-The Comm Module is used to control the functionality of the devices communication (serial) port; the way the Enterprise Browser interacts with that port and the data it provides.
+---
+title:  Comm Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+The Comm Module controls functionality of the serial port on the device, including all serial communications initiated by Enterprise Browser apps and any collected or transmitted data.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

@@ -1,8 +1,12 @@
-#Mediaplayer
-
-
+---
+title: MediaPlayer Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The MediaPlayer extension is used to playback different types of audio files. It also allows the playback of Ringtones for the respective platform.
+The MediaPlayer extension is used to play various types of audio files as well as ringtones for their respective platforms.
         
 ## Enabling the API
 There are two methods of enabling the MediaPlayer API:

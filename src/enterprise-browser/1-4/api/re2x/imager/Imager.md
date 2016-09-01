@@ -1,8 +1,12 @@
-#Imager
-
-
+---
+title: Imager
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The Imager API allows the device to capture images using a 2D imager or camera on the device that appears as an imager. This API is not supported on Micro Kiosk devices.
+The Imager API allows a device to capture images using a 2D imager or camera on the device that appears as an imager. **This API is not supported on Micro Kiosk devices**.
 
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:
 

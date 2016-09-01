@@ -1,9 +1,15 @@
-# AddressBar
-## Overview
+---
+title:  AddressBar Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: Backward compatibility API
+---
+##Overview
 The AddressBar API is used to set the parameters of the address bar. The address bar should only be used for debugging and is not designed to be used as a replacement for a web browser address bar. Press the ‘Go’ button or enter key to navigate to the typed URI.
 
-> Note: When using the addressBar on a VC5090 device, there is the possibility that the display will be slightly distorted while the addressBar is displayed. This only occurs when the addressBar or other similar overlays are on set to be visible.
-Other overlays consist of, but are not necessarily limited to:
+**Note**: The VC5090 device might exhibit slight screen distortion while the addressBar is displayed. This occurs only when the addressBar or similar overlays are set to be visible. Some are listed below. 
+
 * backbutton
 * keystate indicator
 * forwardbutton
@@ -15,11 +21,11 @@ Other overlays consist of, but are not necessarily limited to:
 * stopbutton
 
 ## Enabling the API
-In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:
+To use this API on an Android device, include a reference to the following JavaScript file, which is included on the PC with the Enterprise Browser installation:
 
-* elements.js 
+* `elements.js` 
 
-> Note: this file either needs to be on the device in a relative folder from where your HTML page is, or it must be copied to your web server appropriately.
+> Note: this file must either be on the device in a relative folder from where your HTML page is, or it must be copied to your web server appropriately.
 
 	:::html
     <script type="text/javascript" charset="utf-8" src="elements.js"></script>;

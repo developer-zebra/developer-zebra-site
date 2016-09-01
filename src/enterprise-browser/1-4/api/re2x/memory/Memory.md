@@ -1,8 +1,12 @@
-#Memory
-
-
+---
+title: Memory Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The Memory Module is used to to retrieve the current available memory or notification of memory dropping below a user defined value.
+The Memory Module is used to to retrieve the current available memory and send notifications when memory drops below a user-defined threshold.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

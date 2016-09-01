@@ -1,8 +1,14 @@
-# Gesture
-> Note: This feature is not supported on Windows CE if [debug buttons](../guide/configreference?DebugButtons) are enabled in the [Config.xml](../guide/configreference).
-
+---
+title: Gesture Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
 The Enterprise Browser is capable of capturing gestures from the touch screen if the appropriate hardware is installed. You can define multiple gestures on the same page but to avoid performance issues it is recommended you do not create more than 5 per page. 
+
+**Note**: Not supported on Windows CE if [debug buttons](../guide/configreference/#debugbuttons) are enabled in the [Config.xml](../guide/configreference) file.
 
 There are three types of screen gesture: 
 

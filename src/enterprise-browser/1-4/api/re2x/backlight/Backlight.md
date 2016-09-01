@@ -1,6 +1,12 @@
-# Backlight
-## Overview
-The Backlight API is used to illuminate / extinguish the display backlight as well as setting the intensity of the backlight.
+---
+title:  Backlight Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+The Backlight API is used to control the display backlight and set its intensity.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

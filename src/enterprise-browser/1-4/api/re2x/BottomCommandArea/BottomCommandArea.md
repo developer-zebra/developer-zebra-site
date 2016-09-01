@@ -1,6 +1,12 @@
-# BottomCommandArea
-## Overview
-The BottomCommandArea Module is used to set the parameters of the Bottom Command Area. The bottom command area is a region at the bottom of the screen designed to hold Enteprise Browser controls such as the SIP button or Zoom button to separate them from the rest of the user application.
+---
+title:  BottomCommandArea Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+The BottomCommandArea Module is used to set the parameters of the region at the bottom of the screen designed. In Enteprise Browser, this area is often used to display controls for SIP and Zoom, and serves to separate those conteols from the rest of the application.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

@@ -1,11 +1,17 @@
-#KeyState
-
-
+---
+title: Keystate Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The KeyState API is used to display small icons to the user indicating the current shifted state of the hardware keyboard. The KeyState indicator will display icons for Shift, Alt, Control, Function, Caps, Num lock and Orange key states, growing from the right as necessary if more than one key state is set at once. This API is only supported on a subset of Symbol Technologies' Windows Mobile / CE / Embedded handheld devices (see remarks).
+The KeyState API is used to display icons to the user that indicate the shifted state of the hardware keyboard. The KeyState indicator can display icons for Shift, Alt, Control, Function, Caps, Num lock and Orange key states, growing from the right as necessary if more than one key state is set at once. 
 
-> Note: When using the keyState indicator on a VC5090 device, there is the possibility that the display will be slightly distorted while the keyState indicator is displayed. This only occurs when the keyState indicator or other similar overlays are on set to be visible.
-Other overlays consist of, but are not necessarily limited to:
+**This API is supported on a subset of Zebra Technologies Windows Mobile/CE and Windows Embedded handheld devices (see remarks)**.
+
+**Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays are visible. Some are listed below.
+
 * addressBar
 * backbutton
 * forwardbutton

@@ -1,7 +1,12 @@
-#Hourglass
-
+---
+title: Hourglass
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The Hourglass Module is used to show or hide the hourglass (wait cursor) as well as adjust its position.
+The Hourglass Module controls display and position of the hourglass icon, which appears to indicate that a page is loading.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

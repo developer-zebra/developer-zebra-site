@@ -1,7 +1,12 @@
-#MinimizeButton
-
+---
+title: MinimizeButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The MinimizeButton Module is used to set the parameters of the minimize button. When this button is clicked Enterprise Browser will minimize and lose focus.
+The MinimizeButton Module is used to set the parameters of the minimize button, which minimizes the Enterprise Browser app causes it to lose focus.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

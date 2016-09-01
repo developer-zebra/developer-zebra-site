@@ -1,7 +1,12 @@
 ---
-title:  AllDecoders Decoder
+title:  AllDecoders Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-**The AllDecoders Decoder is used to set the set the barcode scanner to read all barcode types that the scanner is capable of reading.**
+##Overview
+The AllDecoders Module is used to set the barcode scanner to read all barcode types that the scanner is capable of reading.
 
 ## Syntax
 

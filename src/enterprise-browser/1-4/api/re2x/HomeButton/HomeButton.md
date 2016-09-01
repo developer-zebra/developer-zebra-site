@@ -1,6 +1,12 @@
-# HomeButton
+---
+title: HomeButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
 ## Overview
-The HomeButton Module is used to set the parameters of the Home Button. When the home button is clicked the Enterprise Browser will navigate to the start page as defined in the configuration.
+The HomeButton Module is used to set the parameters of the Home Button, which navigates to the app's start page as specified in the [StartPage parameter](../../guide/configreference/#startpage) of the `Config.xml` file.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

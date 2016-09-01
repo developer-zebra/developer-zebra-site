@@ -1,9 +1,15 @@
-# BackButton
-## Overview
-The BackButton Module is used to set the parameters of the Back Button. When clicked, the Back button will navigate to the previously loaded page, if any.
+---
+title:  BackButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+##Overview
+The BackButton Module is used to set the parameters of BACK, the button that moves application to the previously loaded page, if any. 
 
-> Note: When using the backbutton on a VC5090 device, there is the possibility that the display will be slightly distorted while the backbutton is displayed. This only occurs when the backbutton or other similar overlays are set to be visible.
-Other overlays include:
+**Note**: The VC5090 device slight screen distortion while the backbutton is displayed. or similar overlays are set to be visible. Some are listed below.
+
 * addressBar
 * keystate indicator
 * forwardbutton

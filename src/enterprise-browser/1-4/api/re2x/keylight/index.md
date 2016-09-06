@@ -1,5 +1,5 @@
 ---
-title: KeyCapture Module
+title: Keylight Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html

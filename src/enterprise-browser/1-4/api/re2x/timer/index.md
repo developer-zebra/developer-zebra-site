@@ -1,14 +1,14 @@
 ---
 title: Timer Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Timer Module is used to set a timer and register an action to perform when that timer expires. Once the timer is started the interval time can not be changed without stopping the timer and restarting it.
-</b>
+## Overview
+The Timer Module is used to set a timer and register an action to be performed when the timer expires. Once the timer is started, the interval time cannot be changed without stopping and restarting the timer.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">timer (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Timer" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Timer" content="Timeout:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Timer JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

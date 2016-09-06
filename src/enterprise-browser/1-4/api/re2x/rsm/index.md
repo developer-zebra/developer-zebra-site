@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The RSM Module is used to configure and retrieve attribute settings of a remote scanner connected to the device via cable or Bluetooth. When used for retrieval, navigation to a URL and/or calls to JavaScript functions happen immediately. See [Remarks section](#remarks) for a list of configurable scanner properties. 
+The RSM Module is used to configure and retrieve attribute settings of a remote scanner connected to the device via cable or Bluetooth. When used for retrieval, navigation to a URL and/or calls to JavaScript functions are executed immediately. See [Remarks section](#remarks) for a list of readable/configurable scanner attributes. 
 
 ##Syntax
 
@@ -178,28 +178,22 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
-
-###
-The following is a mapping between Attributes, their possible values and whether they are read / write:
+###Remote scanner attributes 
+The following table maps Attribute names, possible values and their access (read/ write):
 
 <pre>
 
-
-
 Attribute                      Access  Associated Value
 
-modelNumber                      R     The model number    
-serialNumber                     R     The serial number    
+modelNumber                      R     Scanner model number    
+serialNumber                     R     Scanner serial number    
 dateOfManufacture                R     Date of manufacture as DDMMYY    
 dateOfService                    R     Date of service as DDMMYY    
 bluetoothAddress                 R     Bluetooth address as FF:FF:FF:FF:FF:FF where FF is a hex number.    
-firmwareVersion                  R     Scanner's operating system version.    
+firmwareVersion                  R     Scanner operating system version.    
 deviceClass                      R     The device class of the system    
-batteryStatus                    R     Indicates the status us the scanner's battery, 'Unknown', 'Full', 
-                                       'Medium', 'Empty', 'Charging-FullRate', 'Charging-HalfRate', 
-                                       'Charging-Trickle' or 'Discharging'    
-batteryCapacity                  R     Remaining capacity of the battery, integer in the range '0' to 
-                                       '100'.  'Unknown' if unable to determine, e.g. if no battery in the scanner.    
+batteryStatus                    R     Scanner battery status, (Unknown. Full, Medium, Empty, Charging-FullRate, Charging-HalfRate, Charging-Trickle, Discharging)    
+batteryCapacity                  R     Battery charge remaining (integer 0-100; unknown) e.g. if no battery in the scanner.    
 batteryID                        R     'Simple', 'Double', 'Cabled', 'Unknown'    
 bluetoothAuthentication          RW    'True' if authentication is required, else 'False'    
 bluetoothEncryption              RW    True' if encryption is required, else 'False'    

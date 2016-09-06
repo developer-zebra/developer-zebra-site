@@ -1,14 +1,14 @@
 ---
 title: ScreenOrientation Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The ScreenOrientation Module is used to control the screen orientation/layout and register to receive an event when it changes.
-</b>
+## Overview
+The ScreenOrientation Module controls the screen orientation and layout, and can register to receive an event when it changes.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">screenOrientation (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="ScreenOrientation" content="[orientation]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="ScreenOrientation" content="ScreenOrientationEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">ScreenOrientation JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

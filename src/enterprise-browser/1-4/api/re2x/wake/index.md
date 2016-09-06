@@ -1,14 +1,14 @@
 ---
 title: Wake Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Wake Module is used to keep the display and wifi ON as long as RhoElements is active
-</b>
+## Overview
+The Wake Module is used to keep the display and Wi-Fi radio turned on whenever a RhoElements app is active. 
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">wake (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="wake" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Wake JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

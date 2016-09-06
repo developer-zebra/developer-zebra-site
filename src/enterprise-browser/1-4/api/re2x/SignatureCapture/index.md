@@ -1,14 +1,14 @@
 ---
 title: SignatureCapture Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The SignatureCapture Module creates a rectangular box that the user can draw within using the device's stylus to record handwritten data. Common usages for this tag include the capture of client/customer signatures and the input of handwritten text/notations.
-</b>
+## Overview
+The SignatureCapture Module presents a rectangular box that captures a signature, hand-written notes or other data using the device stylus.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">signatureCapture (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SignatureCapture" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="SignatureCapture" content="SignatureSaveEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">SignatureCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

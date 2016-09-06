@@ -1,14 +1,14 @@
 ---
 title: SipButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The SipButton Module is used to set the parameters of the SIP Button. The SIPButton will toggle the display of the soft input panel allowing keyboard input via a stylus.
-</b>
+## Overview
+The SipButton Module is used to set the parameters of the SIP Button, which toggles the display of the soft input panel and allows keyboard input via a stylus.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">sipButton (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SIPButton" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">SipButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

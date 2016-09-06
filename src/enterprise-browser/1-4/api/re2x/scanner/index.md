@@ -1,14 +1,14 @@
 ---
 title: Scanner Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Scanner Module provides access to control the functionality of the device's scanner.
-</b>
+## Overview
+The Scanner Module controls the functionality of the device scanner.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">scanner (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Scanner" content="[parameter / method]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Scanner JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

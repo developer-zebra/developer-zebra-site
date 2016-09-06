@@ -1,15 +1,14 @@
 ---
 title: Signal Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Signal Module is used to set positional and display parameters of the wireless signal indicator on the screen.
-</b><b>Check the <a href="IndicatorPositions">indicator layout overview page</a> for more detail on positioning these indicators.</b>
-
+## Overview
+The Signal Module is used to set position and display parameters of the wireless signal indicator on the screen. 
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">signal (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Signal" content="[parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Signal" content="SignalEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Signal JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

@@ -1,14 +1,14 @@
 ---
 title: ZoomTextButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The ZoomTextButton Module is used to set the parameters of the ZoomTextButton. When clicked the font size in the browser will cycle from smallest to largest.
-</b>
+## Overview
+The ZoomTextButton Module is used to set the parameters of the Zoom Text Button, which cycles the font size in the browser in ascending order (from smallest to largest).
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">zoomTextButton (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="ZoomTextButton" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">ZoomTextButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

@@ -1,14 +1,14 @@
 ---
 title: Zoom Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Zoom Module is used to set the zoom size of the text or page.
-</b>
+## Overview
+The Zoom Module is used to set the magnification of the text or page.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">zoom (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="zoom" content="[Parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Zoom JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

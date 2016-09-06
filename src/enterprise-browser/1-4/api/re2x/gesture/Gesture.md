@@ -6,15 +6,13 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The Enterprise Browser is capable of capturing gestures from the touch screen if the appropriate hardware is installed. You can define multiple gestures on the same page but to avoid performance issues it is recommended you do not create more than 5 per page. 
+The Gesture Module is used to capture gestures drawn on a touch-sensitive screen. Multiple gestures can be defined for capture on a single page. Zebra recommends defining no more than five gestures per page to avoid performance issues. **Note**: Not supported on Windows CE if [debug buttons](../guide/configreference/#debugbuttons) are enabled in the `Config.xml` file.
 
-**Note**: Not supported on Windows CE if [debug buttons](../guide/configreference/#debugbuttons) are enabled in the [Config.xml](../guide/configreference) file.
+There are three types of screen gestures: 
 
-There are three types of screen gesture: 
-
-* Linear – detects straight line movements on the screen 
-* Circle – detects full or partial circular movements on the screen 
-* Hold – detects when the screen is touched and held 
+* Linear – straight-line movements on the screen 
+* Circle – full or partially circular movements on the screen 
+* Hold – when the screen is touched and held 
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

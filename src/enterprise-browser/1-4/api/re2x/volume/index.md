@@ -1,14 +1,14 @@
 ---
 title: Volume Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Volume Module is used to set the audio output volume of the device. This is the wave output volume, not the volume of the device beeper.
-</b>
+## Overview
+The Volume Module controls the audio output volume of wave files being played on the device. This does not set the volume of the device beeper.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">volume (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Volume" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Volume JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

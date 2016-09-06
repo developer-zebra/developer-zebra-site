@@ -1,14 +1,14 @@
 ---
 title: SystemTime Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The SystemTime Module is used to set the device clock, set the timezone, or synchronize it with a network SNTP server.
-</b>
+## Overview
+The SystemTime Module is used to set the device clock and timezone, or to set the device to obtain clock and timezone settings from a network server.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">systemTime (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SystemTime" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">SystemTime JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

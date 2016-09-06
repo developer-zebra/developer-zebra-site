@@ -1,14 +1,14 @@
 ---
 title: TopCommandArea Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The TopCommandArea Module is used to set the parameters of the Top Command Area. The top command area is a region at the top of the screen designed to hold RhoElements controls such as the address bar or Go button to separate them from the rest of the user application.
-</b>
+## Overview
+The TopCommandArea Module is used to set the parameters of the Top Command Area, a region at the top of the screen designed to separate RhoElements controls such as the address bar or Go button from other parts of an application.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">topCommandArea (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="TopCommandArea" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">TopCommandArea JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

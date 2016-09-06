@@ -1,14 +1,14 @@
 ---
 title: VideoCapture Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The VideoCapture Module captures video files from the default camera device.
-</b>
+## Overview
+The VideoCapture Module captures video from the seleted camera saves it as a file on the device.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">videoCapture (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="VideoCapture" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="VideoCapture" content="VideoSaveEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">VideoCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

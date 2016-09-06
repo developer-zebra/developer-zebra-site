@@ -1,14 +1,14 @@
 ---
 title: StopButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The StopButton Module is used to set the parameters of the Stop Button. The Stop Button will only be displayed whilst a page is loading and when clicked will cease the current navigation and navigate to the badlink page (if defined), this prevents partially rendered pages being displayed in the browser.
-</b>
+## Overview
+The StopButton Module is used to set the parameters of the Stop Button, which is displayed only while a page is loading. When clicked, the Stop Button ceases the current navigation and brings up the badlink page (if defined), preventing partially rendered pages being displayed in the browser.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">stopButton (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="StopButton" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">StopButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

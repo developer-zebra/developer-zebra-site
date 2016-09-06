@@ -1,14 +1,14 @@
 ---
-title: Sip Module
+title: SIP Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Sip Module is used to control attributes of the soft input panel. Note that these settings apply to both text boxes on the current page as well as the address bar
-</b>
+## Overview
+The SIP Module is used to control attributes of the soft input panel (SIP), also known as the software keyboard. Settings apply to text boxes on the current page as well as the address bar.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">sip (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SIP" content="[method / parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Sip JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

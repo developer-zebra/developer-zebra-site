@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ##Overview
-Audio capture API permits the capture of audio from a built-in microphone or input source on the device.
+AudioCapture API permits the capture of audio from a built-in microphone or input source on the device.
 
 ## Enabling the API
 There are two methods of enabling the AudioCapture API:

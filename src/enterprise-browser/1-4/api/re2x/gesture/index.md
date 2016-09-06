@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The Gesture Module is used to define touch screen. Check the [gestures overview page](GesturesOverview) for more detail on different types of gestures.**
+The Gesture Module is used to define touch screen. Check the [gestures overview page](GesturesOverview) for more detail on different types of gestures.
 
 ## Syntax
 

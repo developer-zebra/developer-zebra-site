@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The KeyCapture module is used to intercept or override hardware keys. It is typically used to provide certain application functions through the use of the device's physical keyboard or other hardware enabled buttons.
+The KeyCapture module is used to intercept or override hardware keys, and is is typically used to assign certain application functions to physical keys or other hardware buttons.
 
 ## Enabling the API
 There are two ways to enable Enterprise Browser APIs: 

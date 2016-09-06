@@ -1,11 +1,12 @@
 ---
 title: PowerOn Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The PowerOn Module is used to register to receive an event when the device is resumed from suspend mode.
-</b>
+## Overview
+The PowerOn Module can register to receive events such as "Resume from Suspend Mode" that result when the device Power button is pressed.
 
 ##Syntax
 

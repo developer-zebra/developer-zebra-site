@@ -1,14 +1,14 @@
 ---
 title: ReloadButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The ReloadButton Module is used to set the parameters of the Reload Button. When clicked, the current page is reloaded.
-</b>
+## Overview
+The ReloadButton Module is used to set the parameters of the Reload Button, which refreshes the current page when pressed.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">reloadButton (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="ReloadButton" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">ReloadButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

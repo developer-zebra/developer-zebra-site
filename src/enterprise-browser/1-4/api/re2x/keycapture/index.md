@@ -1,11 +1,12 @@
 ---
 title: KeyCapture Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The KeyCapture Module is used to intercept or override keyboard input.
-</b>
+## Overview
+The KeyCapture module is used to intercept or override hardware keys, and is is typically used to assign certain application functions to physical keys or other hardware buttons.
 
 ##Syntax
 

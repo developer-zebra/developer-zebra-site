@@ -1,12 +1,12 @@
 ---
-title: Keystate Module
+title: KeyState Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 subhead: 
 ---
 ## Overview
-The KeyState API is used to display icons to the user that indicate the shifted state of the hardware keyboard. The KeyState indicator can display icons for Shift, Alt, Control, Function, Caps, Num lock and Orange key states, growing from the right as necessary if more than one key state is set at once. 
+The KeyState Module is used to set the parameters of the KeyState indicators, which display icons for Shift, Alt, Control, Function, Caps, Num lock, and the state of the Orange keys on some devices. Icons are placed beginning at the leftmost screen position in a row that extends toward the right, as necessary.
 
 **This API is supported on a subset of Zebra Technologies Windows Mobile/CE and Windows Embedded handheld devices (see remarks)**.
 

@@ -1,11 +1,12 @@
 ---
 title: Imager Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Imager Module controls the imager functions and navigates to a URL or calls a JavaScript function in response to an HTTP image transfer carried out by the imager meta tag.
-</b>
+## Overview
+The Imager Module controls the functions of the device imager and navigates to a URL or calls a JavaScript function in response to an HTTP image transfer executed by the imager meta tag.
 
 ##Syntax
 

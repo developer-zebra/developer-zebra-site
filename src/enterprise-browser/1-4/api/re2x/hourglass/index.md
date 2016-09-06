@@ -1,11 +1,12 @@
 ---
 title: Hourglass Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Hourglass Module is used to show or hide the hourglass (wait cursor) as well as adjust its position.
-</b>
+## Overview
+The Hourglass Module is used to show or hide the hourglass (wait cursor) and adjust its position.
 
 ##Syntax
 

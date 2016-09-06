@@ -1,14 +1,14 @@
 ---
 title: Registry Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
+## Overview
 The Registry Module is used to write and delete registry settings, and create corresponding merge files.
-</b>
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">registry (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="registry" content="[parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="registry" content="[parameter:attribute]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Registry JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

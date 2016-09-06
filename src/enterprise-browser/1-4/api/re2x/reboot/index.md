@@ -1,7 +1,12 @@
 ---
-title:  Reboot Module
+title: Reboot Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-*The Reboot Module is used to reboot the terminal immediately.*
+## Overview
+The Reboot Module immediately reboots to device when invoked.
 
 ## Syntax
 <table class="re-table">

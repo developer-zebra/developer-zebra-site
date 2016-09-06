@@ -6,8 +6,8 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The MediaPlayer extension is used to play various types of audio files as well as ringtones for their respective platforms.
-        
+The MediaPlayer extension controls playback of audio, video, ringtones and other media files.
+ 
 ## Enabling the API
 There are two methods of enabling the MediaPlayer API:
 

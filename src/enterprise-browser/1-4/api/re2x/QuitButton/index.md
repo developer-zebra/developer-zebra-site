@@ -1,11 +1,12 @@
 ---
 title: QuitButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The QuitButton Module is used to set the parameters of the quit button. When clicked, the Quit button will exit the RhoElements application.
-</b>
+## Overview
+The QuitButton Module sets the parameters of the quit button, which exits the application when pressed.
 
 ##Syntax
 

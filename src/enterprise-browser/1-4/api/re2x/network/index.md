@@ -1,14 +1,14 @@
 ---
 title: Network Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
+## Overview
 The Network Module is used to determine whether the device is able to connect to a specified server URL or IP address.
-</b>
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">network (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Network" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Network" content="NetworkEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Network JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

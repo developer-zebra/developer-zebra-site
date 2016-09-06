@@ -1,11 +1,12 @@
 ---
 title: HomeButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The HomeButton Module is used to set the parameters of the Home Button. When the home button is clicked RhoElements will navigate to the start page as defined in the configuration.
-</b>
+## Overview
+The HomeButton Module is used to set the parameters of the Home Button, which when clicked causes RhoElements to navigate to the start page defined in the `Config.xml` file.
 
 ##Syntax
 

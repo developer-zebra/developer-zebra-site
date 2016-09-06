@@ -1,14 +1,14 @@
 ---
 title: Push Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
+## Overview
 The Push Module is used to receive data over an HTTP connection.
-</b>
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">push (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Push" content="[Parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Push" content="[Parameter:Attribute]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Push" contents="detected:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Push JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

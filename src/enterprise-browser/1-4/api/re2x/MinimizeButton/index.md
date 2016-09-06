@@ -1,14 +1,14 @@
 ---
-title: MinimizeButton Module
+title: MinimizeButoon Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The MinimizeButton Module is used to set the parameters of the minimize button. When this button is clicked RhoElements will minimize and lose focus.
-</b>
+## Overview
+The MinimizeButton Module sets the parameters of the minimize button, which hides the Enterprise Browser app from view and causes it to lose focus.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">minimizeButton (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="MinimizeButton" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">MinimizeButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

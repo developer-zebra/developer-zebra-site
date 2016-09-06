@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The Keylight Module is ued to controls the keyboard backlight and its intensity.
+The Keylight Module controls the keyboard backlight and its intensity.
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

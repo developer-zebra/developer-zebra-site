@@ -1,14 +1,14 @@
 ---
-title: History META Tag
+title: History Meta Tag
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The History META Tag is an action tag used to navigate forward or backward through the page history.
-</b>
+## Overview
+The History Meta Tag is an action tag used to navigate forward or backward through the page history.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">history (META Tag) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="History" content="Back:1"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="History-Back" contents="1"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">History JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

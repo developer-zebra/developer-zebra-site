@@ -1,7 +1,12 @@
 ---
-title:  Rfid Module
+title: RFID Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-The Rfid Module is not included in the default RhoElements/RhoStudio installers. To be able to use the RFID module, a separate package must be downloaded and installed - please SEE REMARKS for how this can be obtained. Provides access to control the functionality of the device's RFID reader. Currently the plug-in is supported on MC 3190Z and MC 9190Z devices.
+## Overview
+The RFID Module provides access to functionality of the device's RFID reader, if so equipped. **Limited device support. This module is not included with the default RhoElements/RhoStudio installers; it must be downloaded and installed separately [(SEE REMARKS)](#remarks)**.
 
 ## Syntax
 <table class="re-table">
@@ -830,10 +835,22 @@ Returns results of the last Access operation
 
 ## Remarks
 ### Installation
-The RFID plug-in package for RhoElements 2.2 SP1 must be [downloaded separately on Zebra Technologies Support Site](http://goo.gl/4IwC6T) and installed on the device. Please refer to the RFID plug-in release notes included with the download for installation instructions. You can find a sample app [here](http://goo.gl/arDsF2) to see how to use rfid as the RhoMobile framework expects it to be used. And you can find release notes for the rfid plug-in and the sample app [here](http://goo.gl/VtCDnO). Once you have the plug-in installed, you'll also need to modify your config.xml setting `PreloadLegacyActiveX` and set it to '1' as such:
+The RFID plug-in package for RhoElements 2.2 SP1 is not is not part of the default installation, but is available as a separate download from the Zebra Technologies Support site. 
+
+**RFID plug-in resources**: 
+
+* **[RFID Plug-in for RhoElements 2.2 SP1](http://goo.gl/4IwC6T) -** download from Zebra Support Site (includes release notes and installation instructions)
+
+* **[Release Notes and Installation Instructions](http://goo.gl/VtCDnO) -** for viewing or download (Word doc) 
+
+* **[Sample RFID app](http://goo.gl/arDsF2) -** made for the RhoMobile framework
+
+### Config.xml setting
+Once the plug-in is installed, modify the &lt;PreloadLegacyActiveX&gt; parameter in the app's `Config.xml` file as follows:
 
 	:::xml
 	<PreloadLegacyActiveX value="1"/>
+
 
 ### General
 By default the plug-in, when loaded, is already connected to RFID Module. In order to disconnect, one may use disconnect() method call on the rfid object. After a successful disconnection, the connect() method may be used to make a new connection to the RFID Module. For a plug-in method to be successfully invoked, all of its associated non-default properties must be successfully set prior to making the call.

@@ -1,11 +1,12 @@
 ---
-title: Rsm Module
+title: RSM Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Rsm Module is used to configure or to retrieve attributes relating to a remote scanner either tethered to the device or connected via Bluetooth. The properties of the scanner which can be configured are detailed in the 'Remarks' section. When used for retrieval navigation to URL or call to JavaScript function happens immediately.
-</b>
+## Overview
+The RSM Module is used to configure and retrieve attribute settings of a remote scanner connected to the device via cable or Bluetooth. When used for retrieval, navigation to a URL and/or calls to JavaScript functions happen immediately. See [Remarks section](#remarks) for a list of configurable scanner properties. 
 
 ##Syntax
 

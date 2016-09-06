@@ -1,14 +1,14 @@
 ---
 title: MediaPlayer Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The MediaPlayer Module plays audio/video files.
-</b>
+## Overview
+The MediaPlayer Module controls playback of audio, video, ringtone and other media files.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">mediaPlayer (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="mediaPlayer" content="[method / parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">MediaPlayer JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

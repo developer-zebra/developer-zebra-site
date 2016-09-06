@@ -1,14 +1,14 @@
 ---
 title: Memory Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
-The Memory Module is used to to retrieve the current available memory or notification of memory dropping below a user defined value.
-</b>
+## Overview
+The Memory Module is used to to retrieve the current available memory and send notifications when memory drops below a user-defined threshold.
 
 ##Syntax
-
 <table class="re-table"><tr><th class="tableHeading">memory (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Memory" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Memory" content="memoryEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Memory JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">

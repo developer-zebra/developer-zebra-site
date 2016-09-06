@@ -3,142 +3,196 @@ title:  AddressBar Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: Backward compatibility API
 ---
 ##Overview
+The AddressBar API is used to set the parameters of the address bar. The address bar should only be used for debugging and is not designed to be used as a replacement for a web browser address bar. Press the ‘Go’ button or enter key to navigate to the typed URI.
 
-<p>The AddressBar Module is used to set the parameters of the address bar. The address bar should only be used for debugging Hybrid applications and is not designed to be used as a replacement for a web browser address bar. Press the 'Go' button or enter key to navigate to the typed URI.</p>
+**Note**: The VC5090 device might exhibit slight screen distortion while the addressBar is displayed. This occurs only when this or similar overlays are set to be visible. Some are listed below. 
 
-## Syntax
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">addressBar (Module) &lt;META&gt; Syntax</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="AddressBar" content="[parameter]"&gt;</p></td>
-	</tr>
-</table>
+* backbutton
+* keystate indicator
+* forwardbutton
+* gobutton
+* minimizebutton
+* quitbutton
+* reloadButton
+* sipbutton
+* stopbutton
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">AddressBar JavaScript Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			By default the JavaScript Object <b>'addressBar'</b> will exist on the current page and can be used to interact directly with the addressBar.
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set addressBar parameters via JavaScript use the following syntax: addressbar.parameter = 'value'; remembering to enclose your value in quotes where appropriate.
-			<br/><br/>
-			e.g. <b>addressBar</b>.left = 'value';
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: addressbar.setEMML("[Your EMML Tags]");
-			<br/><br/>
-			e.g. <b>addressBar</b>.setEMML("left:<i>value</i>");
-		</td>
-	</tr>
-</table>
+## Enabling the API
+To use this API on an Android device, include a reference to the following JavaScript file, which is included on the PC with the Enterprise Browser installation:
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">AddressBar Ruby Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			By default the Ruby Object <b>'AddressBar'</b> will exist on the current page and can be used to interact directly with the AddressBar. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'AddressBar'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b>
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set AddressBar parameters via Ruby use the following syntax: AddressBar.parameter = 'value' remembering to enclose your value in quotes where appropriate.
-			<br/><br/>
-			e.g. <b>AddressBar</b>.left = 'value'
-		</td>
-	</tr>
-</table>
+* `elements.js` 
 
-## Parameters
-Items listed in this section indicate parameters, or attributes which can be set.
+> Note: this file must either be on the device in a relative folder from where your HTML page is, or it must be copied to your web server appropriately.
 
-<table class="re-table"><col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
-	<tr>
-		<th class="tableHeading">Name</th>
-		<th class="tableHeading">Possible Values</th>
-		<th class="tableHeading">Description</th>
-		<th class="tableHeading">Default Value</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow"><b>left:[Value]</b></td>
-		<td class="clsSyntaxCells clsOddRow">Positive number, representing pixels</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the X position of the address bar.</td>
-		<td class="clsSyntaxCells clsOddRow">0</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>top:[Value]</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Positive number, representing pixels</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the Y position of the address bar.</td>
-		<td class="clsSyntaxCells clsEvenRow">0</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>width:[Value]</b></td>
-		<td class="clsSyntaxCells clsOddRow">Positive number, representing pixels</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the width of the address bar.</td>
-		<td class="clsSyntaxCells clsOddRow">Most of the screen width</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow"><b>visibility:[Value]</b></td>
-		<td class="clsSyntaxCells clsEvenRow">visible, hidden</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the visibility of the address bar</td>
-		<td class="clsSyntaxCells clsEvenRow">Hidden</td>
-	</tr>
-</table>
+	:::html
+    <script type="text/javascript" charset="utf-8" src="elements.js"></script>;
+
+### API Usage
+This API does not use the `EB` namespace. It is simply referenced using the API name:
+
+	:::javascript
+	addressBar.left = 0;
+
+## Properties
+### visibility
+#### Type
+<span class='text-info'>STRING</span> 
+#### Description
+Sets the visibility of the address bar.
+
+#### Possible Value
+
+* visible
+* hidden
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+#### Example
+	:::js
+	addressBar.visibility = "visible";
+
+### left
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
+
+#### Description
+Sets the X position of the address bar. Default Value = 0.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+#### Example
+	:::js
+	addressBar.left = 100;
+
+### top
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
+
+#### Description
+Sets the Y position of the address bar. Default Value = 0.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+#### Example
+	:::js
+	addressBar.top = 100;
+
+### width
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
+
+#### Description
+Sets the width of the address bar. Default Value = Most of the screen width.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+#### Example
+	:::js
+	addressBar.width = EB.System.screenWidth;
+
+> Note: The above example requires that the System API be available.
 
 ## Remarks
 ### Default Positions
-By default this control will be placed a the top of the screen. On Windows Mobile if the 'FullScreen' configuration setting is disabled the control will need to be moved, otherwise it will appear beneath the task bar.
+By default this control will be placed a the top of the screen. On Windows Mobile if the ‘FullScreen’ configuration setting is disabled the control will need to be moved, otherwise it will appear beneath the task bar.
 
 ### Switching to Other Applications
-All controls are designed to be shown on top of RhoElements. If you require to switch to an application other than RhoElements you should minimize RhoElements to ensure the buttons do not remain shown. (Not applicable to Android)
+All controls are designed to be shown on top of Enteprise Browser. If you require to switch to an application other than Enterprise Browser, you should minimize Enterprise Browser to ensure the buttons do not remain shown. (Not applicable to Android)
 
 ### Screen Orientation
-When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.
+When the screen orientation changes, either using the ScreenOrientation API or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.
 
 ### Named Anchors
-The address bar is not compatible with named anchors (page bookmarks) eg. &lt;a name="bookmark"/&gt;
+The address bar is not compatible with named anchors (page bookmarks) eg. <a name=“bookmark”/>
 
 ### Use in Production
 This API is designed for debugging your application only and should not be used in production
 
-## Requirements
+### Internet Explorer (IE) Rendering Engine
+When using the addressBar on a CE device using the IE engine, screen distortion may be noticed when scrolling. This is due to a limitation of the IE engine and can be worked around by any of the following options:
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">RhoElements Version</th>
-		<td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>
-	</tr>
-	<tr>
-		<th class="tableHeading">Supported Devices</th>
-		<td class="clsSyntaxCell clsOddRow">All supported touch devices.</td>
-	</tr>
-	<tr>
-		<th class="tableHeading">Minimum Requirements</th>
-		<td class="clsSyntaxCell clsOddRow">None.</td>
-	</tr>
-	<tr>
-		<th class="tableHeading">Persistence</th>
-		<td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td>
-	</tr>
-</table>
+* Not using debug buttons - If your app must use the IE engine, do not use debug buttons in the app.
+* If you need to use the signal or battery indicators either:
+	* Don't scroll the page.
+	* Don't use the signal / battery indicators
+	* Use the Webkit engine.
 
-## HTML/JavaScript Examples
-The following example shows the address bar, sets the left and top coordinates to 50, and the width to 100.
+## Example File
+The following file can be used to test all the APIs listed above.
 
 	:::html
-	<META HTTP-Equiv="AddressBar" Content="visibility:visible">
-	<META HTTP-Equiv="AddressBar" Content="left:50">
-	<META HTTP-Equiv="AddressBar" Content="top:50">
-	<META HTTP-Equiv="AddressBar" Content="width:100">
+	<head>
+		<script type="text/javascript" charset="utf-8" src="apis/BackwardCompatibility/elements.js"></script>
+		<script type="text/javascript" charset="utf-8" src="apis/EnterpriseBrowser/ebapi-modules.js"></script>
 
-The following example shows the address bar, sets the left and top coordinates to 0, and the width to 50.
+		<script>
+			function onLoad(){
+				visible = 0;
+				screenWidth = EB.System.screenWidth;
+			}
 
-	:::html
-	<META HTTP-Equiv="AddressBar" Content="left:0; top:0; width:50">
+			function toggleAddressBar(){
+				if(visible){
+					addressBar.visibility = "hidden";
+					visible = 0;
+				}
+				else{
+					addressBar.visibility = "visible";
+					// Reset addressBar to (0, 0)
+					addressBar.left = 0;
+					addressBar.top = 0;
+					visible = 1;
+				}
+			}
+
+			function moveAddressBar(direction, distance){
+				switch(direction){
+					case "left":
+						addressBar.left = distance;
+						break;
+					case "top":
+						addressBar.top = distance;
+						break;
+					default:
+						alert("Invalid direction!!");
+				}
+			}
+
+			function addressBarWidth(percent){
+				width = screenWidth*(percent/100);
+				addressBar.width = width;
+			}
+		</script>
+	</head>
+
+	<!-- Changing the body color to see that the BG of the address bar is white -->
+	<body onload="onLoad()" bgcolor="#C8C8C8">
+		<br/> <!-- Add break at the top of the screen to account for addressBar -->
+		<h3>Toggle the Address Bar</h3>
+		<button onclick="toggleAddressBar()">Toggle address bar</button>
+
+		<h3>Move the Address Bar</h3>
+		<button onclick="moveAddressBar('left', 100)">Left, 100px</button>
+		<button onclick="moveAddressBar('top', 100)">Top, 100px</button>
+		<button onclick="moveAddressBar('left', 0)">Left, 0px</button>
+		<button onclick="moveAddressBar('top', 0)">Top, 0px</button>
+
+		<h3>Change the width</h3>
+		<button onclick="addressBarWidth(100)">Full screen width</button>
+		<button onclick="addressBarWidth(50)">Half-screen width</button>
+	</body>

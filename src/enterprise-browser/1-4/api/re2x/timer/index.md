@@ -1,110 +1,139 @@
----
-title: Timer Module
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
-subhead: 
----
+#Timer
+
+
 ## Overview
-The Timer Module is used to set a timer and register an action to be performed when the timer expires. Once the timer is started, the interval time cannot be changed without stopping and restarting the timer.
+The Timer API is used to create, start, stop and check the existence of timers.
+## Enabling the API
 
-##Syntax
-<table class="re-table"><tr><th class="tableHeading">timer (Module) &lt;META&gt; Syntax
-</th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Timer" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Timer" content="Timeout:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Timer JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the JavaScript Object <b>'timer'</b> will exist on the current page and can be used to interact directly with the timer.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke timer methods via JavaScript use the following syntax: timer.method();
-<P />e.g. <b>timer</b>.start();
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set timer parameters via JavaScript use the following syntax: timer.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>timer</b>.interval = 'value';
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set timer return events via JavaScript use the following syntax: timer.event = JavaScript Function;
-<P />e.g. <b>timer</b>.timeout = 'doFunction(%json)';
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+There are two methods of enabling the Timer API:
 
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: timer.setEMML("[Your EMML Tags]");
-<P />
-e.g. <b>timer</b>.setEMML("interval:<i>value</i>;timeout:url('JavaScript:doFunction(%json)');start");							
-</td></tr></table>
+* Include all 'ebapi' modules
+* Include only the API modules you need
 
-<table class="re-table"><tr><th class="tableHeading">Timer Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Timer'</b> will exist on the current page and can be used to interact directly with the Timer. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Timer'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Timer methods via Ruby use the following syntax: Timer.method()
-<P />e.g. <b>Timer</b>.start</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set Timer parameters via Ruby use the following syntax: Timer.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Timer</b>.interval = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set Timer return events via Ruby use the following syntax: Timer.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>Timer</b>.timeout = url_for(:action =&gt; :timer_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
+Both methods are explained below. 
 
+Either way, the included files will be found in: 
+`/Enterprise Browser/JavaScript Files/Enterprise Browser`,
+a directory on the computer that contains the Enterprise Browser installation.
 
-	
+### Include all JS API modules
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
+
+> This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
+
+### Include only the modules you need
+To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the Timer API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
+    <script type="text/javascript" charset="utf-8" src="eb.timer.js"></script>
+
+> In the code lines above, notice that `ebapi.js` is included first, followed by `eb.timer.js`, which is the Timer API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
+
+        
+
 
 ##Methods
 
 
-Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>start</b></td><td class="clsSyntaxCells clsOddRow">Starts the timer.  The timer will expire after an interval as specified in the 'Interval' parameter</td><td class="clsSyntaxCells clsOddRow">Not Started</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>stop</b></td><td class="clsSyntaxCells clsEvenRow">Stops the timer if there is currently one running</td><td class="clsSyntaxCells clsEvenRow">Not Started</td></tr></table>
+### create()
+Create timer object(s).
 
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
-##Parameters
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>SELF_INSTANCE</span></p><ul></ul>
 
+####Returns
+Synchronous Return:
 
-Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>interval:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Values greater than or equal to 500 milliseconds</td><td class="clsSyntaxCells clsOddRow">The duration the timer should run for, specified in milliseconds.  This must be specified before the timer is started.</td><td class="clsSyntaxCells clsOddRow">1000 milliseconds (1 second)</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+* SELF_INSTANCE
 
-##Events
+####Platforms
 
+* Android
+* Windows Mobile
+* Windows CE
 
-Values are returned to the caller in RhoElements via Events.  Most modules contain events and those returned from this module are given below along with the event parameters.  Events can cause a navigation to a new URL or a JavaScript function on the page to be invoked.  Each event will in most cases have a number of parameters associated with it which will either be strings or JavaScript arrays.  Event parameters can be accessed either directly or via JSON objects.
+####Method Access:
 
-<br />
-###timeout
-The Timeout event is triggered when the timer expires and returns the current time.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>time</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The current time from the device clock.  Format is DD/MM/YY HH:MM:SS</td></tr></table>
-
-
-
-
-
-
-##Requirements
-
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
-</td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Persistent - Changes to this module will persist when navigating to a new page with the exception of timeout event.</td></tr></table>
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Timer.create()</code> 
 
 
-##HTML/JavaScript Examples
-
-The following example sets the timerinterval to 5 seconds:
-
-	<META HTTP-EQUIV="Timer" CONTENT="Interval:5000; Timeout:url('JavaScript:doTimer('%s');'); Start">
-	
-The following example shows a JavaScript alert at 10 second intervals:
-
-	<HTML>
-	  <HEAD>
-	    <META HTTP-EQUIV="Timer" CONTENT="Interval:10000; Timeout:url('JavaScript:doTimer('%s');'); Start">
-	  </HEAD>
-	  <SCRIPT LANGUAGE="javascript">
-	    function doTimer(time)
-	    {
-	      divTimer.innerHTML = 'Time: ' + time;
-	    }
-	  </SCRIPT>
-	  <BODY><DIV ID="divTimer"></DIV></BODY>
-	</HTML>
-	
+### isAlive()
 
 
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>BOOLEAN</span></p><ul></ul>
+
+####Returns
+Synchronous Return:
+
+* BOOLEAN : Return alive state of a timer. If callback doesn't return true, returns false.
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.isAlive()</code>
+
+### start(<span class="text-info">INTEGER</span> interval)
+Start timer with preset interval. Callback fired one time only.
+
+####Parameters
+<ul><li>interval : <span class='text-info'>INTEGER</span><p>timer interval in ms </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>STRING</span></p><ul></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.start(<span class="text-info">INTEGER</span> interval)</code>
+
+### stop()
+Stop the timer.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.stop()</code>

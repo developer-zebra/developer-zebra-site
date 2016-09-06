@@ -6,294 +6,601 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The Network Module is used to determine whether the device is able to connect to a specified server URL or IP address.
+The Network API class permits interaction with the WAN or Wi-Fi networks available to the device.
 
-##Syntax
-<table class="re-table"><tr><th class="tableHeading">network (Module) &lt;META&gt; Syntax
-</th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Network" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Network" content="NetworkEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Network JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the JavaScript Object <b>'network'</b> will exist on the current page and can be used to interact directly with the network.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke network methods via JavaScript use the following syntax: network.method();
-<P />e.g. <b>network</b>.start();
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set network parameters via JavaScript use the following syntax: network.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>network</b>.host = 'value';
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set network return events via JavaScript use the following syntax: network.event = Javascript Function;
-<P />e.g. <b>network</b>.networkEvent = 'doFunction(%json)';
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+## Enabling the API
+There are two methods of enabling the Network API:
 
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: network.setEMML("[Your EMML Tags]");
-<P />
-e.g. <b>network</b>.setEMML("host:<i>value</i>;networkEvent:url('JavaScript:doFunction(%json)');start");							
-</td></tr></table>
+* Include all ebapi modules or
+* Include only the API modules you need
 
-<table class="re-table"><tr><th class="tableHeading">Network Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Network'</b> will exist on the current page and can be used to interact directly with the Network. All Methods, Parameters and Events are the same as Javascript, however, notice <b>'Network'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Network methods via Ruby use the following syntax: Network.method()
-<P />e.g. <b>Network</b>.start</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set Network parameters via Ruby use the following syntax: Network.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Network</b>.host = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set Network return events via Ruby use the following syntax: Network.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>Network</b>.networkEvent = url_for(:action =&gt; :network_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
+For either of these methods, you'll need to include files from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that you installed the Enterprise Browser.
 
+### Include all JS API modules
+To include all JS APIs, you must copy the ebapi-modules.js file to a location accessible by your app's files and include the JavaScript file in your app. For instance, to include the modules file in your index.html, with the file in the same directory as your index.html, you would add the following line to the <head> section of your index.html:
 
-	
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
+
+> Note: that the pathing for this file is relative to the current page.
+
+This will define the EB class within the page. Any page you need to use the modules will need to have the .js file included in this fashion.
+
+### Include only the modules you need
+To include single APIs, you must first include the `ebapi.js` in your HTML as well as the API file you want to use. For instance, to use the Network API, I would add the following code to my HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
+    <script type="text/javascript" charset="utf-8" src="eb.network.js"></script>
+
+The ebapi.js file is necessary for all single API inclusions.
+        
+
 
 ##Methods
 
 
-Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>start</b></td><td class="clsSyntaxCells clsOddRow">Begins polling the specified host on the specified URL to check if there is a network connection available.  The connection status is reported back via the NetworkEvent.</td><td class="clsSyntaxCells clsOddRow">Not Started</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>stop</b></td><td class="clsSyntaxCells clsEvenRow">Stops polling for a network connection</td><td class="clsSyntaxCells clsEvenRow">Not Started</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>disconnectWan</b></td><td class="clsSyntaxCells clsOddRow">Disconnects the current WAN connection.  DisconnectWan will only affect connections established by RhoElements so if you have not previously called connectWan this function will have no effect.</td><td class="clsSyntaxCells clsOddRow">Not Started</td></tr></table>
+### cancel()
+Cancel the request identified by callback. If callback is not specified then all requests will be canceled.
 
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
-##Parameters
+####Returns
+Synchronous Return:
 
+* Void
 
-Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>host:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">URL or IP address</td><td class="clsSyntaxCells clsOddRow">The URL or IP address of the server to attempt to connect to</td><td class="clsSyntaxCells clsOddRow">www.motorola.com</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>port:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Any valid port</td><td class="clsSyntaxCells clsEvenRow">The port on the host on which to connect to</td><td class="clsSyntaxCells clsEvenRow">80</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>networkPollInterval:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Milliseconds</td><td class="clsSyntaxCells clsOddRow">The time, in milliseconds, between each check for a connection.  Note that the actual connection report interval will be the sum of the NetworkPollInterval and the ConnectionTimeout.</td><td class="clsSyntaxCells clsOddRow">5000</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>connectionTimeout:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Milliseconds</td><td class="clsSyntaxCells clsEvenRow">The amount of time the network plugin will attempt to connect to the specified URL before it gives up and assumes 'disconnected'</td><td class="clsSyntaxCells clsEvenRow">1000</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>connectWan:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Connection Destination</td><td class="clsSyntaxCells clsOddRow">Connects RhoElements through a Wide Area Network.  The connection destination must be first configured through the Connection Manager and the destination name provided as the value to this parameter.  If a connection is already established, you must first call disconnectWan before attempting another connection.  A list of available connection destinations is written to the log file when either connectWan, disconnectWan or wanStatusEvent are first specified.  Specify the connection as 'Internet' to use the default internet connection defined on the device.  If the specified destination does not exist no connection attempt will be made and an entry will be made in the log file.</td><td class="clsSyntaxCells clsOddRow">Not Specified</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+####Platforms
 
-##Events
+* Android
+* Windows Mobile
+* Windows CE
 
+####Method Access:
 
-Values are returned to the caller in RhoElements via Events.  Most modules contain events and those returned from this module are given below along with the event parameters.  Events can cause a navigation to a new URL or a Javascript function on the page to be invoked.  Each event will in most cases have a number of parameters associated with it which will either be strings or javascript arrays.  Event parameters can be accessed either directly or via JSON objects.
-
-<br />
-###networkEvent
-The network events notifies the user when a connection to the specified URL is gained or lost. A connection check is performed every [NetworkPollInterval] milliseconds but the user is only informed of a change of connection
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>connectionInformation</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Either "Connected" or "Disconnected"</td></tr></table>
-<br />
-###wanStatusEvent
-The WAN Status Event notifies the user whenever any parameter associated with data connectivity changes. The WAN Status Event is called when it is first declared (for the initial state) and again whenever any of the associated parameters change.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>phoneSignalStrength</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The signal strength of the phone as a percentage of maximum strength.  Returned as a number between 0 and 100.  If there is no phone service this field will be 0.</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">2</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>networkOperator</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The name of the current network operator associated with the SIM card</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">3</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>connectionTypeAvailable</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The current data connection type available to RhoElements as provided by the Network.  Values can be 'Unavailable', GPRS, 1XRTT, EVDO, EDGE, UMTS, EVDV or HSDPA</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">4</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>connectionTypeConnected</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The data connection type to which Rhoelements is currently connected.  The values returned are identical to connectionTypeAvailable, with the exception that 'Not Connected' replaces 'Unavailable'.</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">5</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>connectionManagerMessage</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">This is the last received status from the Connection Manager.  Do NOT use this parameter to determine if you are able to physically send / receive data to a remote host, it only provides an indication of whether the Connection Manager believes the connection is available.  To determine if you are connected to a remote host use the networkEvent.</td></tr></table>
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.cancel()</code> 
 
 
+### connectWan(<span class="text-info">STRING</span> connectionDestination)
+Connects the device to a Wide Area Network. The connection destination must be first configured through the Connection Manager (on the device) and the destination name provided to this method. If a connection is already established, you must first call disconnectWan before attempting another connection. A list of available connection destinations is written to the log file when either connectWan or disconnectWan are first specified. Specify the connection as 'Internet' to use the default internet connection defined on the device. If the specified destination does not exist no connection attempt will be made and an entry will be made in the log file.
+
+####Parameters
+<ul><li>connectionDestination : <span class='text-info'>STRING</span><p>The connection in the Windows Connection manager to use, specify 'Internet' to use the default internet connection. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>phoneSignalStrength : <span class='text-info'>STRING</span><p>The signal strength of the phone as a percentage of maximum strength. Returned as a number between 0 and 100. If there is no phone service this field will be 0. </p></li><li>networkOperator : <span class='text-info'>STRING</span><p>The name of the current network operator associated with the SIM card. </p></li><li>connectionTypeAvailable : <span class='text-info'>STRING</span><p>The current data connection type available to RhoElements as provided by the Network. Values can be 'Unavailable', GPRS, 1XRTT, EVDO, EDGE, UMTS, EVDV or HSDPA. </p></li><li>connectionTypeConnected : <span class='text-info'>STRING</span><p>The data connection type to which the device is currently connected. The values returned are identical to connectionTypeAvailable, with the exception that 'Not Connected' replaces 'Unavailable'. </p></li><li>connectionManagerMessage : <span class='text-info'>STRING</span><p>This is the last received status from the Connection Manager. Do NOT use this parameter to determine if you are able to physically send / receive data to a remote host, it only provides an indication of whether the Connection Manager believes the connection is available. To determine if you are connected to a remote host use the detectConnection method. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.connectWan(<span class="text-info">STRING</span> connectionDestination)</code> 
 
 
+### detectConnection(<span class="text-info">HASH</span> propertyMap)
+Begins polling the specified host on the specified URL to check if there is a network connection available. The connection status is reported back via the provided callback. Note that callback will be called only if connection status has changed compared to previous polling. Multiple concurrent detectionConnection is not supported.
+
+####Parameters
+<ul><li>propertyMap : <span class='text-info'>HASH</span><p>Properties map. </p></li><ul><li>host : <span class='text-info'>STRING</span><span class='label '> Default: www.motorolasolutions.com</span><p>When detecting a network connection, this is the URL or IP address of the server to attempt to connect to. </p></li><li>port : <span class='text-info'>INTEGER</span><span class='label '> Default: 80</span><p>When detecting a network connection, this is the port on the host to connect to. </p></li><li>pollInterval : <span class='text-info'>INTEGER</span><span class='label '> Default: 30000</span><p>The time, in milliseconds, between each check for a connection. Note that the actual connection report interval will be the sum of the poll interval and the detection timeout.  The minimum allowed value is 5000ms. </p></li><li>detectionTimeout : <span class='text-info'>INTEGER</span><span class='label '> Default: 1000</span><p>The amount of time to attempt to connect to the specified URL before giving up and assuming 'disconnected'.  Value is specified in milliseconds. </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>connectionInformation : <span class='text-info'>STRING</span><p>Whether the device is connected to the specified host and port.  Either 'Connected' or 'Disconnected'. </p></li><li>failureMessage : <span class='text-info'>STRING</span><p>If the device is disconnected this field will contain information about why the connection failed. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.detectConnection(<span class="text-info">HASH</span> propertyMap)</code> 
+
+
+### disconnectWan()
+Disconnects the current WAN connection. DisconnectWan will only affect connections established by RhoElements so if you have not previously called connectWan this function will have no effect.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.disconnectWan()</code> 
+
+
+### downloadFile(<span class="text-info">HASH</span> propertyMap)
+Download a file to the specified filename. Note: if 'overwriteFile' flag is default or false, the HEAD request to the server will be performed before actual download to retrieve 'last-modified' header which is used to support resuming interrupted download. If targeted server doesn't support HEAD requests, 'overwriteFile' should be set to true.
+
+####Parameters
+<ul><li>propertyMap : <span class='text-info'>HASH</span><p>Properties to be used in this request. </p></li><ul><li>url : <span class='text-info'>STRING</span><p>URL of file to be downloaded. HTTP and HTTPS protocols are supported. </p></li><li>filename : <span class='text-info'>STRING</span><p>The path and name of the file to be uploaded. </p></li><li>overwriteFile : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>OverWriteFile will overwrite the destination file if it already exists. </p></li><li>createFolders : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>CreateFolders can automatically create the directory path. </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li><li>fileExists : <span class='text-info'>BOOLEAN</span><p>When overwriteFile is false and file exists, when error return and this flag set to true. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* HASH<ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li><li>fileExists : <span class='text-info'>BOOLEAN</span><p>When overwriteFile is false and file exists, when error return and this flag set to true. </p></li></ul>
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.downloadFile(<span class="text-info">HASH</span> propertyMap)</code> 
+
+
+### get(<span class="text-info">HASH</span> propertyMap)
+Perform a HTTP GET request.
+
+> Note: This method will perform a POST if you send a body with it. If performing a GET, do not add a body to the call.
+
+####Parameters
+<ul><li>propertyMap : <span class='text-info'>HASH</span><p>Properties map. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-Network?Properties'>property section</a> for applicable properties. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* HASH<ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li></ul>
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.get(<span class="text-info">HASH</span> propertyMap)</code> 
+
+
+### hasCellNetwork()
+Returns true if the device is connected to a cell network. Not supported on Windows CE.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>BOOLEAN</span></p><ul></ul>
+
+####Returns
+Synchronous Return:
+
+* BOOLEAN
+
+####Platforms
+
+* Android
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.hasCellNetwork()</code> 
+
+
+### hasNetwork()
+Returns true if the device is connected to a network. Not supported on Windows CE.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>BOOLEAN</span></p><ul></ul>
+
+####Returns
+Synchronous Return:
+
+* BOOLEAN
+
+####Platforms
+
+* Android
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.hasNetwork()</code> 
+
+
+### hasWifiNetwork()
+Returns true if the device is connected to a WiFi network. Not supported on Windows CE.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>BOOLEAN</span></p><ul></ul>
+
+####Returns
+Synchronous Return:
+
+* BOOLEAN
+
+####Platforms
+
+* Android
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.hasWifiNetwork()</code> 
+
+
+### post(<span class="text-info">HASH</span> propertyMap)
+Perform a HTTP Post.
+
+####Parameters
+<ul><li>propertyMap : <span class='text-info'>HASH</span><p>The properties for the Network module can be used in this hash along with the following: </p></li><ul><li>body : <span class='text-info'>STRING</span><p>The message body of the HTTP request. </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* HASH<ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li></ul>
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.post(<span class="text-info">HASH</span> propertyMap)</code> 
+
+
+### startStatusNotify()
+Start network status notifications. Notifications are sent when WiFi or Cell network appear / disappear. To check real Internet connectivity use detectConnection method. Not supported on Windows CE.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>current_status : <span class='text-info'>STRING</span><p>Current status of network connection. Can be "connected" or "disconnected". </p></li><li>prev_status : <span class='text-info'>STRING</span><p>Previous status of network connection. Can be "connected", "disconnected" or "unknown"." </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.startStatusNotify()</code> 
+
+
+### stopDetectingConnection()
+Ceases network detection. Callback is no longer supported; it has been made optional to preserve backward compatibility.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.stopDetectingConnection()</code> 
+
+
+### stopStatusNotify()
+Stop network status notifications. Not supported on Windows CE.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Windows Mobile
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.stopStatusNotify()</code> 
+
+
+### uploadFile(<span class="text-info">HASH</span> propertyMap)
+Upload the specified file using HTTP POST.
+
+####Parameters
+<ul><li>propertyMap : <span class='text-info'>HASH</span><p>The properties for the Network module can be used in this hash along with the following: </p></li><ul><li>filename : <span class='text-info'>STRING</span><p>The path and name of the file to be uploaded. </p></li><li>body : <span class='text-info'>STRING</span><p>The message body of the HTTP request. </p></li><li>fileContentType : <span class='text-info'>STRING</span><p>Content-Type header for the file, defaults to "application/octet-stream". </p></li><li>multipart : <span class='text-info'>ARRAY</span><p>Array of hashes containing file information. </p></li><ul><li><i>Object</i> : <span class='text-info'>HASH</span><p>Multipart properties. </p></li><ul><li>filename : <span class='text-info'>STRING</span><p>The path and name of the file to be uploaded. </p></li><li>contentType : <span class='text-info'>STRING</span><p>Content-Type header, defaults to "application/octet-stream". </p></li><li>filenameBase : <span class='text-info'>STRING</span><p>Base directory containing the :filename. </p></li><li>name : <span class='text-info'>STRING</span><p>File type, defaults to "blob". </p></li></ul></ul></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* HASH<ul><li>body : <span class='text-info'>STRING</span><p>The body of the HTTP response. </p></li><li>headers : <span class='text-info'>HASH</span><p>A hash containing the response headers. </p></li><li>cookies : <span class='text-info'>STRING</span><p>The server cookies, parsed and usable for subsequent requests. </p></li><li>http_error : <span class='text-info'>INTEGER</span><p>HTTP error code if response code was not 200. </p></li></ul>
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Network.uploadFile(<span class="text-info">HASH</span> propertyMap)</code> 
+
+
+##Properties
+
+
+
+###authPassword
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+Password for basic authentication. You must also specify `authType='basic'
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.authPassword</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###authType
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+Type of authentication used for this request. Check the list of available options below. Leaving blank will result in no authentication type.
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Network.AUTH_BASIC - String: basic Basic Authentication Type. uses authUser and authPassword.
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.authType</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###authUser
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+User name for basic authentication. You must also specify `authType='basic'`
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.authUser</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###headers
+
+####Type
+<span class='text-info'>HASH</span> 
+####Description
+List of HTTP headers to be used in the network  request.
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.headers</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###<span class="text-info">httpVerb</span>
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+<span class='label label-info'>Replaces:http_command</span> HTTP verb to be used in the network request.
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.httpVerb</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###responseTimeout
+
+####Type
+<span class='text-info'>INTEGER</span> 
+####Description
+Timeout of network requests in seconds. This property has module scope. Do not pass it as hash parameter to methods, use property accessors instead.
+####Params
+<p><strong>Default:</strong> 30</p>
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.responseTimeout</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###url
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+URL of the request. This should be fully formatted URL like http://domain.com/
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.url</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
+
+###<span class="text-info">verifyPeerCertificate</span>
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+<span class='label label-info'>Replaces:ssl_verify_peer</span> Verify SSL certificates. When set to false it will allow untrusted certificates.
+####Params
+<p><strong>Default:</strong> true</p>
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.Network.verifyPeerCertificate</code>
+
+This property cannot be accessed via setter or getter methods. It can be used in methods that allow a HASH or Array of properties to be passed in.
+
+
+####Platforms
+
+* Android
+* Windows Mobile
+* Windows CE
 
 ##Remarks
 
 
-###Connecting through Proxies
-Because the network module is protocol agnostic, it will not communicate through HTTP proxies to reach a specified URL. In order to determine if you are connected when sitting behind a proxy you should configure the network plugin to attempt to connect to your proxy on the appropriate port. A successful connection to the proxy should be taken to assume the device is connected to a network. When configuring your WAN connection bear in mind that the proxy settings defined in the RhoElements configuration file will take precedence.
 
+###Detecting a connection through proxies
 
-###Maintaining an 'always on' WAN connection
-To instruct RhoElements to connect to a Wide Area Network automatically define a default meta tag with the required connection information, e.g. &lt;DefaultMetaTags&gt;&lt;MetaTag VALUE="Network~ConnectWAN:MyConnection"/&gt;&lt;/DefaultMetaTags&gt;. See the Configuration Settings page for more information.
+Because the detectConnection method is protocol agnostic, it will not communicate through HTTP proxies to reach a specified URL. In order to determine if you are connected when sitting behind a proxy you should call the method to attempt to connect to your proxy on the appropriate port. A successful connection to the proxy should be taken to assume the device is connected to a network. When configuring your WAN connection bear in mind that the proxy settings defined in the RhoElements configuration file will take precedence.
+                
 
+###Detecting a connection over WAN
 
-###NetworkEvent over WAN
-When defining a network event which will take place over WAN bear in mind if you specify a very low networkPollInterval your device will frequently have an active data connection. 'NetworkPollInterval's sufficiently low (in the region of 1000) can prevent the device from accepting incoming phone calls.
+When detecting a network connection over WAN bear in mind if you specify a low networkPollInterval your device will frequently have an active data connection and may prevent the device occasionally from accepting incoming calls.
+                    
 
+###Preventing access to the device (WEH / WM)
 
-###Preventing access to the device
 Receiving phone calls or texts whilst running RhoElements will cause the start button to be displayed on Windows Embedded Handheld devices, potentially offering users access to the operating system. It is recommended to set the following registry keys to disable Operating System access on Windows Embedded Handheld as required. The registry keys will be applied after a warm boot, omit them entirely to restore the Start and 'X' icons.
 
 <pre>
-
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\BubbleTiles]   Location in Registry
 "HardwareStartKeyEnabled"=dword:00000001                    Prevents the Start icon from appearing in the bottom left
 "HardwareDoneKeyEnabled"=dword:00000001                     Prevents the 'X' icon from appearing in the bottom right
-				</pre>
+</pre>
 
+                    
 
-###Platform differences
-On Android connectWan can be treated as a method with no parameters as its only effect is enabling mobile data from the device general settings; any parameter passed to connectWan is ignored. Likewise, disconnectWan disables mobile data from the general settings, therefore executing disconnectWan on Android is not restricted to the scope of a RhoElements application, but may affect the connectivity of any other running application using mobile data.
+###SSL Connection Failure in iOS Platform
 
+Due to a limitation in curl for iOS, an appropriate timeout is not used in 'select' system calls for a curl SSL conection. To avoid this SSL connection issue, it is recommended that the iOS native Network library be used instead of curl. To do this, add the two lines below to the rhoconfig.txt file. 
 
+For more information, please refer to <a href="https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/CommonPitfalls/CommonPitfalls.html">Avoiding Common Networking Mistakes</a> in the Apple developer reference.
 
-
-##Requirements
-
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
-</td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.  WAN Connectivity is only available on devices which support data connections through the Windows Connection Manager.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Persistent - Changes to this module will persist when navigating to a new page with the exception of the NetworkEvent and WANStatusEvent which only apply to the current page.</td></tr></table>
-
-
-##HTML/Javascript Examples
-
-The following example checks for a connection to motorola.com on the default port and notifies the user when connection is gained / lost:
-
-	<meta http-equiv="Network" content="Host:url('http://www.motorola.com')">
-	<meta http-equiv="Network" content="networkEvent:url('Javascript:onNetworkEvent(%json);');Start">
-	<SCRIPT>
-	  function onNetworkEvent(jsonObject)
-	  {
-		var html = "<b>Network Event Returned:</b> ";
-		html += jsonObject.connectionInformation;
-		networkOutput.innerHTML=html;
-	  }
-	</SCRIPT>
-	<div id="networkOutput">Connection Information goes Here</div>
-	
-The following example checks for a connection to a proxy server and notifies the user when connection is gained / lost:
-
-	<BODY onload='onStartChecking()'>
-	<SCRIPT>
-	  function onNetworkEvent(jsonObject)
-	  {
-		var html = "<b>Network Event Returned:</b> ";
-		html += jsonObject.connectionInformation;
-		networkOutput.innerHTML=html;
-	  }
-	  function onStartChecking()
-	  {
-		network.networkEvent = onNetworkEvent(%json);
-		network.host = 'wwwexampleproxy.com';
-		network.port = '1050';
-		network.start();
-	  }
-	</SCRIPT>
-	<div id="networkOutput">Connection Information goes Here</div>
-	
-The following example shows how to establish and monitor a WAN connection
-
-	<HTML><HEAD>
-	<META HTTP-Equiv="Network" Content="WANStatusEvent:url('javascript:fnWANStatus(%json);')">
-	<meta http-equiv="Network" content="NetworkEvent:url('Javascript:onNetworkEvent(%json);')">
-	<meta http-equiv="Network" content="networkPollInterval:5000;connectionTimeout:1500">
-	<meta http-equiv="Network" content="Host:url('http://www.motorola.com')">
-	  <script type="text/javascript">
-	  var count = 0;
-	  function onNetworkEvent(jsonObject)
-	  {
-	    count = count + 1;
-	    var html = "<b>Network Event Returned:</b> ";
-	    html += jsonObject.connectionInformation + " - " + count;
-	    networkOutput.innerHTML=html;
-	  }
-	  function fnWANStatus(jsonObject)
-	  {
-	    var html = "Signal Strength: " + jsonObject.phoneSignalStrength + "%";
-	    html += "<BR> Operator: " + jsonObject.networkOperator;
-	    html += "<BR> Cell Connection Available: " + jsonObject.connectionTypeAvailable;
-	    html += "<BR> Cell Connection Connected?: " + jsonObject.connectionTypeConnected;
-	    html += "<BR> Connection Manager Message: " + jsonObject.connectionManagerMessage;
-	    outputDiv.innerHTML = html;
-	  }
-	  function fnConnect(destination)
-	  {
-	    network.connectWan = "" + destination;
-	  }
-	  function fnDisconnect()
-	  {
-	    network.disconnectWan();
-	  }
-	  function fnStartNetworkCheck()
-	  {
-	    network.start();
-	  }
-	  function fnStopNetworkCheck()
-	  {
-	    network.stop();
-	    networkOutput.innerHTML = "Not Polling Network";
-	  }
-	  </script>
-	</HEAD>
-	<H1>WAN Tests</H1>
-	<P><div id="networkOutput">Network Connection Information goes Here</div><br>
-	<b><div id="outputDiv">Network Check Started</div></b><P>
-	<input type="button" onclick="fnConnect('Internet')" Value="Connect (Default)" />
-	<input type="button" onclick="fnConnect('My Connection')" Value="Connect ('My Connection')" />
-	<input type="button" onclick="fnDisconnect()" Value="Disconnect" />
-	<input type="button" onclick="fnStartNetworkCheck()" Value="Start Network Checking" />
-	<input type="button" onclick="fnStopNetworkCheck()" Value="Stop Network Checking" />
-	</BODY></HTML>
-	
-
-
-##Ruby Examples
-
-The following example tests the network with the default values. It attaches the network event to a listener and starts polling for an internet connection. If the connection is successful or when the connection times out, the 'networkEventListener' function is called with the appropriate result:
-
-	def connect
-		Network.networkEvent = url_for(:action => :networkEventListener)
-		Network.start
-	end
-	
-To call the this function from HTML, use the following code: 
-
-	<li onclick="testConnection(); ">Test connection on default port</li>
-
-Where 'testConnection()' is a JavaScript function which looks like: 
-
-	function testConnection() {
-         $.get('/app/NetworkModule/connect', { });
-         return false;
-    }
-
-The 'networkEventListener' looks like the following:
-
-	def networkEventListener
-		networkInfo = @params['connectionInformation']
-		WebView.execute_js("setFieldValue('"+networkInfo+"'); ")
-	end
-
-The following example tests network connection via a proxy. It attaches an event listener for network events, sets up a proxy host and a proxy port and starts polling. It can be called from HTML in a fashion similar to the one described above. Note that the 'networkEventListener' callback function is the same as described above.
-  
-	def connectToProxy
-		Network.networkEvent = url_for(:action => :networkEventListener)
-		Network.host = 'exampleproxy.com'
-		Network.port = 1050
-		Network.start
-	end
-	
-The following example connects to the internet using Wide Area Network (WAN). It attaches a listener for the WAN status event and the network event, sets the polling interval and connection timeout, sets the host address to connect to and sets the connection mechanism for RhoElements. Using 'Internet' in the destination parameter connects RhoElements via the default internet connection. Specifying a destination enables RhoElements to connect via a specific connection. For more information on this, please refer to the Parameters section at the top of this page. 
-
-	def connectWan	
-		destination = @params['destination]
-		Network.wanStatusEvent = url_for(:action => :wanStatusEventListner)
-		Network.networkEvent = url_for(:action => :networkEventListener)
-		Network.networkPollInterval = 5000
-		Network.connectionTimeout = 1500
-		Network.host = 'www.motorola.com'  
-		Network.connectWan = destination
-	end
-	
-This function can be called from HTML using any of the following ways: 
-
-	<li onclick="connectToDestination('Internet'); ">Connect WAN (default connection)</li> 
-	<li onclick="connectToDestination('myConnection'); ">Connect WAN (specified connection)</li>
-	
-The 'connectToDestination' is a JavaScript function that looks like: 
-
-	function connectToDestination(destination) {
-		$.get('/app/NetworkModule/connectWan', {destination: destination });
-		return false;
-	}
-	
-The 'wanStatusEventListener' looks like the following: 
-
-	def wanStatusEventListner
-		buf = 'Signal strength: '
-		buf += @params['phoneSignalStrength']
-		buf += '<BR> Cell Operator: '
-		buf += @params['networkOperator']
-		buf += '<BR> Cell Connection available: '
-		buf += @params['connectionTypeAvailable']
-		buf += '<BR> Connection connected? '
-		buf += @params['connectionTypeConnected']
-		buf += '<BR> Connection Manager message: '
-		buf += @params['connectionManagerMessage']  
-		WebView.execute_js("setOutput('"+buf+"'); ")
-	end
-	
-The following example disconnects the current WAN connection:
-
-	def disconnect
-		Network.disconnectWan
-		WebView.execute_js("setFieldValue('Test results go here ...'); ")
-	end
+<pre>
+ios_net_curl = 0
+ios_direct_local_requests = 0
+</pre>
+                    

@@ -6,94 +6,143 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The HomeButton Module is used to set the parameters of the Home Button, which when clicked causes RhoElements to navigate to the start page defined in the `Config.xml` file.
+The HomeButton Module is used to set the parameters of the Home Button, which navigates to the app's start page as specified in the [StartPage parameter](../../guide/configreference/#startpage) of the `Config.xml` file.
 
-##Syntax
+## Enabling the API
+In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:
 
-<table class="re-table"><tr><th class="tableHeading">homeButton (Module) &lt;META&gt; Syntax
-</th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="HomeButton" content="[parameter]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">HomeButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the JavaScript Object <b>'homeButton'</b> will exist on the current page and can be used to interact directly with the homeButton.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set homeButton parameters via JavaScript use the following syntax: homebutton.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>homeButton</b>.left = 'value';
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: homebutton.setEMML("[Your EMML Tags]");
-<P />
-e.g. <b>homeButton</b>.setEMML("left:<i>value</i>");							
-</td></tr></table>
+* elements.js 
 
-<table class="re-table"><tr><th class="tableHeading">HomeButton Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'HomeButton'</b> will exist on the current page and can be used to interact directly with the HomeButton. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'HomeButton'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set HomeButton parameters via Ruby use the following syntax: HomeButton.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>HomeButton</b>.left = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
+> Note - this file either needs to be on the device in a relative folder from where your HTML page is, or it must be copied to your web server appropriately.
 
+	:::html
+    <script type="text/javascript" charset="utf-8" src="elements.js"></script>;
 
+### API Usage
+This API does not use the `EB` namespace. It is simply referenced using the API name:
 
+	:::javascript
+	homeButton.visibility = 'visible';
 
-##Parameters
+## Properties
+### visibility
+#### Type
+<span class='text-info'>STRING</span>
 
+#### Description
+Sets the visibility of the button.
 
-Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>left:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Positive number, representing pixels</td><td class="clsSyntaxCells clsOddRow">Sets the X position of the Home Button.</td><td class="clsSyntaxCells clsOddRow">To the right of the address bar</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>top:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Positive number, representing pixels</td><td class="clsSyntaxCells clsEvenRow">Sets the Y position of the Home Button.</td><td class="clsSyntaxCells clsEvenRow">To the right of the address bar</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>height:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Positive number, representing pixels</td><td class="clsSyntaxCells clsOddRow">Sets the height of the Home Button.</td><td class="clsSyntaxCells clsOddRow">Dependant on screen resolution</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>width:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Positive number, representing pixels</td><td class="clsSyntaxCells clsEvenRow">Sets the width of the Home Button.</td><td class="clsSyntaxCells clsEvenRow">Dependant on screen resolution</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>imageUp:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">URL</td><td class="clsSyntaxCells clsOddRow">Sets the image to be displayed when the Home Button is in the up state.  See Remarks.</td><td class="clsSyntaxCells clsOddRow">Default image</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>imageDown:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">URL</td><td class="clsSyntaxCells clsEvenRow">Sets the image to be displayed when the Home Button is in the down state.  See Remarks.</td><td class="clsSyntaxCells clsEvenRow">Default image</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>visibility:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Visible, Hidden</td><td class="clsSyntaxCells clsOddRow">Sets the visibility of the Home button.</td><td class="clsSyntaxCells clsOddRow">Hidden</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+#### Possible Value
 
+* visible
+* hidden
 
+#### Platforms
 
+* Android
+* Windows Mobile/CE
 
-##Remarks
+### left
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
 
+#### Description
+Sets the X position of the button. Default Value = To the right of the address bar.
 
-###Use of Images on Buttons.
-Images can be specified as local to the device or on an HTTP / FTP server, just specify the required protocol as part of your URL (file://\, HTTP:// and FTP://). Image will be scaled to the size of the button. JPEG and GIF images are only supported on WM devices. Both CE and WM support BMP files.
+#### Platforms
 
+* Android
+* Windows Mobile/CE
 
-###Default Positions
-By default this control will be placed a the top of the screen. On Windows Mobile if the 'FullScreen' configuration setting is disabled the control will need to be moved, otherwise it will appear beneath the task bar.
+### top
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
 
+#### Description
+Sets the Y position of the button. Default Value = To the right of the address bar.
 
-###Switching to Other Applications
-All controls are designed to be shown on top of RhoElements. If you require to switch to an application other than RhoElements you should minimize RhoElements to ensure the buttons do not remain shown. (Not applicable to Enterprise Tablet)
+#### Platforms
 
+* Android
+* Windows Mobile/CE
 
-###Screen Orientation
+### width
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
+
+#### Description
+Sets the width of the button. Default Value = Dependant on screen resolution.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+### height
+#### Type
+<span class='text-info'>INTEGER</span> - Positive number, representing pixels
+
+#### Description
+Sets the height of the button. Default Value = Dependant on screen resolution.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+### imageUp
+#### Type
+<span class='text-info'>STRING</span>
+
+#### Description
+Sets the image to be displayed when the button is in the up state. See Remarks.
+
+#### Possible Value
+
+* String - URL to location of image file in relation to the Enterprise Browser device folder. A default image is provided.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+### imageDown
+#### Type
+<span class='text-info'>STRING</span> 
+
+#### Description
+Sets the image to be displayed when the button is in the down state. See Remarks.
+
+#### Possible Value
+
+* String - URL to location of image file in relation to the Enterprise Browser device folder. A default image is provided.
+
+#### Platforms
+
+* Android
+* Windows Mobile/CE
+
+## Remarks
+### Use of Images on Buttons.
+Images can be specified as local to the device or on an HTTP / FTP server, just specify the required protocol as part of your URL (ex: file://\, HTTP:// ). Image will be scaled to the size of the button. JPEG and GIF images are only supported on WM devices. Both CE and WM support BMP files.
+
+### Default Positions
+By default this control will be placed a the top of the screen. On Windows Mobile if the ‘FullScreen’ configuration setting is disabled the control will need to be moved, otherwise it will appear beneath the task bar.
+
+### Switching to Other Applications
+All controls are designed to be shown on top of Enterprise Browser. If you require to switch to an application other than Enterprise Browser you should minimize Enterprise Browser to ensure the buttons do not remain shown. (Not applicable to Android).
+
+### Screen Orientation
 When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.
 
+### Use in Production
+This API is designed for debugging your application only and should not be used in production.
 
-###Use in Production
-This API is designed for debugging your application only and should not be used in production
+### Internet Explorer (IE) Rendering Engine
+When using the this feature on a CE device using the IE engine, screen distortion may be noticed when scrolling. This is due to a limitation of the IE engine and can be worked around by any of the following options:
 
-
-
-
-##Requirements
-
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
-</td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported touch devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td></tr></table>
-
-
-##HTML/JavaScript Examples
-
-The following example shows the Home button, sets its left and top coordinates to 50, and its width and height to 30 pixels.
-
-	<META HTTP-Equiv="HomeButton" Content="Visibility:Visible">
-	<META HTTP-Equiv="HomeButton" Content="Left:50">
-	<META HTTP-Equiv="HomeButton" Content="Top:50">
-	<META HTTP-Equiv="HomeButton" Content="Width:30">
-	<META HTTP-Equiv="HomeButton" Content="Height:30">
-	
-The following example shows the Home button, sets its width to 30 pixels, its left coordinate to 50, and displays the home_up.gif / home_down.gif image on it (resizing the images if necessary).
-
-	<META HTTP-Equiv="HomeButton" Content="Width:30; Left:50; ImageUp:url('http://myaddress/home_up.gif'); ImageDown:url('http://myaddress/home_down.gif'); Visibility:Visible">
-	
-
-
-
+* Not using debug buttons - If your app must use the IE engine, do not use debug buttons in the app.
+* If you need to use the signal or battery indicators either:
+	* Don't scroll the page.
+	* Don't use the signal / battery indicators
+	* Use the Webkit engine.

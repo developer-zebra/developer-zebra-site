@@ -105,7 +105,7 @@ automenu:
         - title: Comm
           url: re2x/comm
         - title: Decoders 
-          url: re2x/decoders
+          url: re2x/toc_decoders
         - title: Device
           url: re2x/device
         - title: EMML Profile 
@@ -146,7 +146,7 @@ automenu:
           url: re2x/notification
         - title: ODAX 
           url: re2x/odax
-        - title: poweron
+        - title: PowerOn
           url: re2x/PowerOn
         - title: Push
           url: re2x/push
@@ -262,7 +262,7 @@ automenu:
           url: Notification
         - title: ODAX 
           url: odax
-        - title: Poweron
+        - title: PowerOn
           url: Poweron
         - title: Push
           url: push

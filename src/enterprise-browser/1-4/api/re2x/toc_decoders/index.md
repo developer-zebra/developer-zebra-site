@@ -1,80 +1,90 @@
 ---
-title: toc_decoders.md
----
-RhoElements Barcode Capture Decoders
-===
-Here you will find reference to all decoders available for the <a href="/rhoelements/scanner">RhoElements Scanner object</a>
-
-* ### [AllDecoders](all_decoders)
-
-* ### [Aztec](aztec)
-
-* ### [Chinese2of5](chinese_2of5)
-
-* ### [Codabar](toc_codeabar)
-
-* ### [Code11](toc_code11)
-
-* ### [Code128](toc_code128)
-
-* ### [CompositeAb](toc_compositeab)
-
-* ### [CompositeC](composit_c)
-
-* ### [Code39](toc_code39)
-
-* ### [Code93](toc_code93)
-
-* ### [D2of5](toc_D2of5)
-
-* ### [DataMatrix](datamatrix)
-
-* ### [Ean8](toc_ean8)
-
-* ### [Ean13](ean13)
-
-* ### [Gs1dataBar](gs1dataBar)
-
-* ### [Gs1dataBarExpanded](gs1dataBarExpanded)
-
-* ### [gs1dataBarLimited](gs1dataBarLimited)
-
-* ### [I2of5](toc_I2of5)
-
-* ### [Korean3of5](toc_Korean3of5)
-
-* ### [MacroPdf](toc_MacroPdf)
-
-* ### [MacroMicroPdf](toc_MacroMicroPdf)
-
-* ### [Matrix2of5](toc_Matrix2of5)
-
-* ### [Maxicode](maxicode)
-
-* ### [MicroPdf](micropdf)
-
-* ### [MicroQr](Microqr)
-
-* ### [MSI](toc_Msi)
-
-* ### [PDF417](pdf417)
-
-* ### [Postal](toc_postal)
-
-* ### [QrCode](qrcode)
-
-* ### [Signature](toc_signature)
-
-* ### [Tlc39](tlc39)
-
-* ### [Trioptic39](toc_Trioptic39)
-
-* ### [UPC Ean](toc_upcean)
-
-* ### [Upca](toc_Upca)
-
-* ### [Upce0](toc_Upce0)
-
-* ### [Upce1](toc_Upce1)
-
-* ### [Webcode](toc_Webcode)
+title: RhoElements Barcode Capture Decoders 
+description: 
+layout: list-apis.html
+automenu:
+  items:
+    - title: Overview
+      items:
+        - title: Back to Enterprise Browser APIs
+          url: ../api
+        - title: Compatibility Matrix
+          url: ../../guide/compatibility
+        - title: Migration Guides
+          url: ../../guide
+    - title: RhoElements 2.x Decoder APIs
+      items:
+        - title: AllDecoders
+          url: ../all_decoders
+        - title: Aztec
+          url: ../aztec
+        - title: Chinese2of5
+          url: ../chinese_2of5
+        - title: Codabar
+          url: ../toc_codeabar
+        - title: Code11
+          url: ../toc_code11
+        - title: Code128
+          url: ../toc_code128
+        - title: CompositeAb
+          url: ../toc_compositeab
+        - title: CompositeC
+          url: ../composit_c
+        - title: Code39
+          url: ../toc_code39
+        - title: Code93
+          url: ../toc_code93
+        - title: D2of5
+          url: ../toc_D2of5
+        - title: DataMatrix
+          url: ../datamatrix
+        - title: Ean8
+          url: ../toc_ean8
+        - title: Ean13
+          url: ../ean13
+        - title: Gs1dataBar
+          url: ../gs1dataBar
+        - title: Gs1dataBarExpanded
+          url: ../gs1dataBarExpanded
+        - title: gs1dataBarLimited
+          url: ../gs1dataBarLimited
+        - title: I2of5
+          url: ../toc_I2of5
+        - title: Korean3of5
+          url: ../toc_Korean3of5
+        - title: MacroPdf
+          url: ../toc_MacroPdf
+        - title: MacroMicroPdf
+          url: ../toc_MacroMicroPdf
+        - title: Matrix2of5
+          url: ../toc_Matrix2of5
+        - title: Maxicode
+          url: ../maxicode
+        - title: MicroPdf
+          url: ../micropdf
+        - title: MicroQr
+          url: ../Microqr
+        - title: MSI
+          url: ../toc_Msi
+        - title: PDF417
+          url: ../pdf417
+        - title: Postal
+          url: ../toc_postal
+        - title: QrCode
+          url: ../qrcode
+        - title: Signature
+          url: ../toc_signature
+        - title: Tlc39
+          url: ../tlc39
+        - title: Trioptic39
+          url: ../toc_Trioptic39
+        - title: UPC Ean
+          url: ../toc_upcean
+        - title: Upca
+          url: ../toc_Upca
+        - title: Upce0
+          url: ../toc_Upce0
+        - title: Upce1
+          url: ../toc_Upce1
+        - title: Webcode
+          url: ../toc_Webcode

@@ -1,11 +1,12 @@
 ---
-title: Korean3of5maxLength Decoder Setting
+title: Korean3of5maxLength 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
+## Overview
 The Korean3of5maxLength Decoder Setting is used to set the korean3of5 maxLength property.
-</b>
 
 ##Syntax
 

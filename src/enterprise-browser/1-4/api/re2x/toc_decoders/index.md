@@ -6,8 +6,10 @@ automenu:
   items:
     - title: Overview
       items:
-        - title: Back to Enterprise Browser APIs
-          url: ../api
+        - title: Back to Decoders Page
+          url: ../toc_decoders
+        - title: Back to Main API Page
+          url: ../../api
         - title: Compatibility Matrix
           url: ../../guide/compatibility
         - title: Migration Guides

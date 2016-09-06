@@ -1,26 +1,37 @@
 ---
-title: ##[Back To Decoders](toc_decoders)
+title: Code128 Barcode Capture Decoders
+description: 
+layout: list-apis.html
+automenu:
+  items:
+    - title: 
+      items:
+        - title: Back to All-APIs Page
+          url: ../../api
+        - title: Compatibility Matrix
+          url: ../../../guide/compatibility
+        - title: Migration Guides
+          url: ../../../guide
+    - title: RhoElements 2.x Decoder APIs
+      items:
+        - title: Code128
+          url: ../code128
+        - title: CheckIsBtTable
+          url: ../Code128checkIsBtTable
+        - title: Code128ean128
+          url: ../Code128EAN128
+        - title: Code128isbt128
+          url: ../Code128isbt128
+        - title: Code128isbt128ConcatMode
+          url: ../code128isBt128ConcatMode
+        - title: Code128maxLength
+          url: ../Code128MaxLength
+        - title: Code128minLength
+          url: ../Code128MinLength
+        - title: Code128other128
+          url: ../Code128Other128
+        - title: Code128redundancy
+          url: ../Code128Redundancy
+        - title: Code128securityLevel
+          url: ../Code128securityLevel
 ---
-Code128: RhoElements Barcode Capture Decoders
-===
-
-* ### [Code128](code128)
-
-* ### [CheckIsBtTable](Code128checkIsBtTable)
-
-* ### [Code128ean128](Code128EAN128)
-
-* ### [Code128isbt128](Code128isbt128)
-
-* ### [Code128isbt128ConcatMode](code128isBt128ConcatMode)
-
-* ### [Code128maxLength](Code128MaxLength)
-
-* ### [Code128minLength](Code128MinLength)
-
-* ### [Code128other128](Code128Other128)
-
-* ### [Code128redundancy](Code128Redundancy)
-
-* ### [Code128securityLevel](Code128securityLevel)
-

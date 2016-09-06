@@ -1,11 +1,13 @@
 ---
 title: UpcEanRandomWeightCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanRandomWeightCheckDigit Decoder Setting is used to enable or disable the upcEanRandomWeightCheckDigit property for random weight check digit verification.
-</b>
 
 ##Syntax
 

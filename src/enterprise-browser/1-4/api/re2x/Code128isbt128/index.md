@@ -1,11 +1,13 @@
 ---
 title: Code128isBt128 Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128isBt128 Decoder Setting is used to set the code128-isbt128 property to enable the isbt128 subtype.
-</b>
 
 ##Syntax
 

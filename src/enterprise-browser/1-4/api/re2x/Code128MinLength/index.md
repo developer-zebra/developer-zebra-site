@@ -1,11 +1,13 @@
 ---
 title: Code128minLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128minLength Decoder Setting is used to set the Code128 MinLength property.
-</b>
 
 ##Syntax
 

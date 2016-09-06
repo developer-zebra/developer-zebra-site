@@ -1,11 +1,13 @@
 ---
-title: DataMatrix Decoder
+title: DataMatrix Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The DataMatrix Decoder is an action tag used to enable or disable the DataMatrix decoder.
-</b>
 
 ##Syntax
 

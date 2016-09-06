@@ -1,11 +1,13 @@
 ---
 title: SignatureImageQuality Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The SignatureImageQuality Decoder Setting is used to set the image quality property of the signature decoder.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: UsPlanetreportCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UsPlanetreportCheckDigit Decoder Setting is used to set the usPlanet ReportCheckDigit property which enables reporting of the bar code check digit(s).
-</b>
 
 ##Syntax
 

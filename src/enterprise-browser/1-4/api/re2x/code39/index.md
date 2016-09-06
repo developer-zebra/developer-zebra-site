@@ -1,11 +1,13 @@
 ---
-title: Code39 Decoder
+title: Code39 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39 Decoder is used to enable or disable the Code39 decoder.
-</b>
 
 ##Syntax
 

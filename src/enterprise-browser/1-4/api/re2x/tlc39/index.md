@@ -1,11 +1,13 @@
 ---
 title: Tlc39 Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Tlc39 Decoder is used to enable or disable the tlc39 decoder.
-</b>
 
 ##Syntax
 

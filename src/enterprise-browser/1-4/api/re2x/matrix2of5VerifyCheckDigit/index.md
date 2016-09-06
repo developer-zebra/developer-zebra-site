@@ -1,11 +1,13 @@
 ---
 title: Matrix2of5verifyCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Matrix2of5verifyCheckDigit Decoder Setting is used to set the matrix2of5 VerifyCheckDigit property which enables verification of the bar code check digit.
-</b>
 
 ##Syntax
 

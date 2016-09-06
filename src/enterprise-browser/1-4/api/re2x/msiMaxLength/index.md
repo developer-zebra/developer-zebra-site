@@ -1,11 +1,13 @@
 ---
 title: MsiMaxLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MsiMaxLength Decoder Setting is used to set the msi MaxLength property. Setting this property will help prevent partial decoding of barcodes.
-</b>
 
 ##Syntax
 

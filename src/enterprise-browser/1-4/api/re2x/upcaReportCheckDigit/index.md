@@ -1,11 +1,13 @@
 ---
 title: UpcaReportCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcaReportCheckDigit Decoder Setting is used to set the upca ReportCheckDigit property which enables reporting of the bar code check digit(s).
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: UsPostNet Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UsPostNet Decoder is used to enable or disable the uspostnet decoder.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: Rss14 META Tag
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Rss14 META Tag is used to enable or disable the rss14 decoder.
-</b>
 
 ##Syntax
 

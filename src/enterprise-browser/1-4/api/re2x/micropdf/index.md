@@ -1,11 +1,13 @@
 ---
 title: MicroPdf Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MicroPdf Decoder is used to enable or disable the MicroPDF decoder.
-</b>
 
 ##Syntax
 

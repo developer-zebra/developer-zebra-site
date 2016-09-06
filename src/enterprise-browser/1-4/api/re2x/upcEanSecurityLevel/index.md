@@ -1,11 +1,13 @@
 ---
 title: UpcEanSecurityLevel Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanSecurityLevel Decoder Setting is used to set the upcEanSecurityLevel which describes the UPC/EAN security level.
-</b>
 
 ##Syntax
 

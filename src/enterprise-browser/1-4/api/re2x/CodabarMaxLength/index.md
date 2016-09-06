@@ -1,11 +1,13 @@
 ---
 title: CodabarMaxLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The CodabarMaxLength Decoder Setting is used to set the Codabar MaxLength property.
-</b>
 
 ##Syntax
 

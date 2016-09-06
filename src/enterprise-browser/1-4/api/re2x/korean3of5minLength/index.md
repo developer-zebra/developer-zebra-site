@@ -1,11 +1,13 @@
 ---
-title: Korean3of5minLength Decoder Setting
+title: Korean3of5minLength Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Korean3of5minLength Decoder Setting is used to set the korean3of5 minLength property.
-</b>
 
 ##Syntax
 

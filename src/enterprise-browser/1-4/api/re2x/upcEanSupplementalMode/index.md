@@ -1,11 +1,13 @@
 ---
 title: UpcEanSupplementalMode Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanSupplementalMode Decoder Setting is used to set the upcEanSupplementalMode.
-</b>
 
 ##Syntax
 

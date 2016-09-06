@@ -1,11 +1,13 @@
 ---
 title: Code128ean128 Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128ean128 Decoder Setting is used to set the code128-ean128 property to enable the EAN128 subtype.
-</b>
 
 ##Syntax
 

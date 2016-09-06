@@ -1,11 +1,13 @@
 ---
 title: Code128other128 Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128other128 Decoder Setting is used to set the code128other128 property to enable other (non EAN or ISBT) 128 subtype
-</b>
 
 ##Syntax
 

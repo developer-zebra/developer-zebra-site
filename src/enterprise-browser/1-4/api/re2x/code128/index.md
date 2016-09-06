@@ -1,11 +1,13 @@
 ---
-title: Code128 Decoder
+title: Code128 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128 Decoder is used to enable or disable the Code128 decoder.
-</b>
 
 ##Syntax
 

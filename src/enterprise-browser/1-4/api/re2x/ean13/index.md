@@ -1,11 +1,13 @@
 ---
-title: Ean13 Decoder
+title: Ean13 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Ean13 Decoder is used to enable or disable the ean13 decoder.
-</b>
 
 ##Syntax
 

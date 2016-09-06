@@ -1,11 +1,13 @@
 ---
 title: Code128maxLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128maxLength Decoder Setting is used to set the Code128 MaxLength property.
-</b>
 
 ##Syntax
 

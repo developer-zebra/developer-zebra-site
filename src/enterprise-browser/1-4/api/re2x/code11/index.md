@@ -1,11 +1,13 @@
 ---
-title: Code11 Decoder
+title: Code11 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code11 Decoder is used to enable or disable the Code11 decoder.
-</b>
 
 ##Syntax
 

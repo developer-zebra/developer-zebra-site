@@ -1,11 +1,13 @@
 ---
 title: MacroMicroPdfReportAppendInfo Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MacroMicroPdfReportAppendInfo Decoder Setting is used to set the macroMicroPdfReportAppendInfo property.
-</b>
 
 ##Syntax
 

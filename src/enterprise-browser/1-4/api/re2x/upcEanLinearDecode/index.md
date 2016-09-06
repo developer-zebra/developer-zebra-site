@@ -1,11 +1,13 @@
 ---
 title: UpcEanLinearDecode Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanLinearDecode Decoder Setting is used to enable the linear decode property.
-</b>
 
 ##Syntax
 

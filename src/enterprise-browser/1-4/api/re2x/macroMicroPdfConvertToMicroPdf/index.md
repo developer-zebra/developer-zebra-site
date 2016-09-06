@@ -1,11 +1,13 @@
 ---
 title: MacroMicroPdfConvertToMicroPdf Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MacroMicroPdfConvertToMicroPdf Decoder Setting is used to set the macroMicroPdfConvertToMicroPdf property.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: Code128checkIsBtTable Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128checkIsBtTable Decoder Setting decodes concatenated output only if the pair belongs to one of the commonly concatenated pairs as defined by the standard.
-</b>
 
 ##Syntax
 

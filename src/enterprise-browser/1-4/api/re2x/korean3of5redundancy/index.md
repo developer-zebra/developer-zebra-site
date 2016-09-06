@@ -1,11 +1,13 @@
 ---
 title: Korean3of5redundancy Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Korean3of5redundancy Decoder Setting is used to set the korean3of5redundancy property.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: Code39securityLevel Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39securityLevel Decoder Setting is used to set the code39securityLevel which describes the Code 128 security level.
-</b>
 
 ##Syntax
 

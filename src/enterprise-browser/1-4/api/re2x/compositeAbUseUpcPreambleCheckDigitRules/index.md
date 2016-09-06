@@ -1,11 +1,13 @@
 ---
 title: CompositeAbUseUpcPreambleCheckDigitRules Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The CompositeAbUseUpcPreambleCheckDigitRules Decoder Setting causes the UPC rules specified in the UPC EAN parameters to be used when reporting composite decode data.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: D2of5minLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The D2of5minLength Decoder Setting is used to set the d2of5 MinLength property. Setting this property will help prevent partial decoding of barcodes.
-</b>
 
 ##Syntax
 

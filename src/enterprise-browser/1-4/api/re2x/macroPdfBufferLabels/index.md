@@ -1,11 +1,13 @@
 ---
 title: MacroPdfBufferLabels Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MacroPdfBufferLabels Decoder Setting is used to set the macroPdfBufferLabels property.
-</b>
 
 ##Syntax
 

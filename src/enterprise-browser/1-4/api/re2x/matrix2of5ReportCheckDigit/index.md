@@ -1,11 +1,13 @@
 ---
 title: Matrix2of5reportCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Matrix2of5reportCheckDigit Decoder Setting is used to set the matrix2of5 ReportCheckDigit property which enables reporting of the bar code check digit(s).
-</b>
 
 ##Syntax
 

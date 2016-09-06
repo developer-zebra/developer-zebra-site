@@ -1,11 +1,13 @@
 ---
 title: CodabarClsiEditing Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The CodabarClsiEditing Decoder Setting is used to enable Codabar CLSi formatting.
-</b>
 
 ##Syntax
 

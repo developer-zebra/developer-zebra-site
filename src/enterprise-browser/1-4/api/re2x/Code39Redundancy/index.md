@@ -1,11 +1,13 @@
 ---
 title: Code39redundancy Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39redundancy Decoder Setting is used to set the Code39 Redundancy property. If this flag is set, the bar code must be decoded twice before being accepted.
-</b>
 
 ##Syntax
 

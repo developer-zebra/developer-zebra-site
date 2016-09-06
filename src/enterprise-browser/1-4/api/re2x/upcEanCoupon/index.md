@@ -1,11 +1,13 @@
 ---
 title: UpcEanCoupon Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanCoupon Decoder is used to enable or disable decoding of upcEanCoupon barcodes.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
-title: Ean8 Decoder
+title: Ean8 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Ean8 Decoder is used to enable or disable the ean8 decoder.
-</b>
 
 ##Syntax
 

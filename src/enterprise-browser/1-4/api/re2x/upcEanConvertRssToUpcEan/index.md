@@ -1,11 +1,13 @@
 ---
 title: UpcEanConvertRssToUpcEan Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanConvertRssToUpcEan Decoder Setting is used to set the upcEanConvertRssToUpcEan property.
-</b>
 
 ##Syntax
 

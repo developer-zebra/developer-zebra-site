@@ -1,11 +1,13 @@
 ---
 title: Code128isBt128ConcatMode Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code128isBt128ConcatMode Decoder Setting is used to set the Code128 ISBT Concatenation mode property. This feature allows a pair of barcodes which meet certain criteria defined in the ISBT128 spec to be reported as a single barcode. This parameter describes the different concatenation modes available for ISBT128.
-</b>
 
 ##Syntax
 

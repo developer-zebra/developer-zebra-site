@@ -1,11 +1,13 @@
 ---
-title: Chinese2of5 Decoder
+title: Chinese2of5 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Chinese2of5 Decoder is used to enable or disable the chinese2of5 decoder.
-</b>
 
 ##Syntax
 

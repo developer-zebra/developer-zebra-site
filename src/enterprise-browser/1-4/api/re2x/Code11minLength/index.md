@@ -1,11 +1,13 @@
 ---
 title: Code11minLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code11minLength Decoder Setting is used to set the Code11 MinLength property.
-</b>
 
 ##Syntax
 

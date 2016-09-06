@@ -1,11 +1,13 @@
 ---
 title: UsPlanet Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UsPlanet Decoder is used to enable or disable the usplanet decoder.
-</b>
 
 ##Syntax
 

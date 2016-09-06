@@ -1,11 +1,13 @@
 ---
-title: Code93 Decoder
+title: Code93 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code93 Decoder is used to enable or disable the Code93 decoder.
-</b>
 
 ##Syntax
 

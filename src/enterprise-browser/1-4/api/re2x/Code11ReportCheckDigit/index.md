@@ -1,11 +1,13 @@
 ---
 title: Code11reportCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code11reportCheckDigit Decoder Setting is used to set the Code11 ReportCheckDigit property which enables reporting of the bar code check digit(s).
-</b>
 
 ##Syntax
 

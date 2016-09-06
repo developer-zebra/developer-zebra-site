@@ -1,11 +1,13 @@
 ---
 title: MsiCheckDigitScheme Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MsiCheckDigitScheme Decoder Setting is used to set the msiCheckDigitScheme property to describe the check digit scheme to verify.
-</b>
 
 ##Syntax
 

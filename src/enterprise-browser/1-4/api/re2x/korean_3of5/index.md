@@ -1,11 +1,13 @@
 ---
 title: Korean3of5 Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Korean3of5 Decoder is used to enable or disable the korean3of5 decoder.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: UpcEanRetryCount Decoder String
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanRetryCount Decoder String is used to set the upc_ean retrycount for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive.
-</b>
 
 ##Syntax
 

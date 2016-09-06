@@ -1,11 +1,13 @@
 ---
 title: UpcEanConvertGs1dataBarToUpcEan Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanConvertGs1dataBarToUpcEan Decoder Setting is used to set the upcEanConvertGs1dataBarToUpcEan property.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: MaxiCode Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MaxiCode Decoder is used to enable or disable the MaxiCode decoder.
-</b>
 
 ##Syntax
 

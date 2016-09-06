@@ -1,11 +1,13 @@
 ---
 title: Code93minLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code93minLength Decoder Setting is used to set the Code93 MinLength property.
-</b>
 
 ##Syntax
 

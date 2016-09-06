@@ -1,11 +1,13 @@
 ---
 title: Code39reportCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39reportCheckDigit Decoder Setting is used to set the Code39 ReportCheckDigit property which enables reporting of the bar code check digit(s).
-</b>
 
 ##Syntax
 

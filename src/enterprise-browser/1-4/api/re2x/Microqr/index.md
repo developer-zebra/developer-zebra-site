@@ -1,11 +1,13 @@
 ---
 title: MicroQr Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MicroQr Decoder is used to enable or disable the microqr decoder.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: MacroPdfConvertToPdf417 Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MacroPdfConvertToPdf417 Decoder Setting is used to set the macroPdfConvertToPdf417 property.
-</b>
 
 ##Syntax
 

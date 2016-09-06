@@ -1,11 +1,13 @@
 ---
 title: UpcEanBookland Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanBookland Decoder is an action tag used to enable or disable decoding of upcEanBookland barcodes.
-</b>
 
 ##Syntax
 

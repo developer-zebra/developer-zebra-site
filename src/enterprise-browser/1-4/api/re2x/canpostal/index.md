@@ -1,11 +1,13 @@
 ---
-title: CanPostal Decoder
+title: CanPostal Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The CanPostal Decoder is used to enable or disable the canpostal decoder.
-</b>
 
 ##Syntax
 

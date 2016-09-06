@@ -1,11 +1,13 @@
 ---
 title: Code39verifyCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39verifyCheckDigit Decoder Setting is used to set the Code39 VerifyCheckDigit property which enables verification of the bar code check digit.
-</b>
 
 ##Syntax
 

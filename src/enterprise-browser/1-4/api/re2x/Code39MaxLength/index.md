@@ -1,11 +1,13 @@
 ---
 title: Code39maxLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39maxLength Decoder Setting is used to set the Code39 MaxLength property.
-</b>
 
 ##Syntax
 

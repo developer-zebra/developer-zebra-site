@@ -1,11 +1,13 @@
 ---
 title: MsiReportCheckDigit Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MsiReportCheckDigit Decoder Setting is used to set the msi ReportCheckDigit property which enables reporting of the bar code check digit(s).
-</b>
 
 ##Syntax
 

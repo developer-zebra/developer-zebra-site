@@ -1,11 +1,13 @@
 ---
 title: Code11checkDigitCount Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code11checkDigitCount Decoder Setting is used to set the Code11CheckDigitCount property. The property can be set to verify 0, 1 or 2 check digits.
-</b>
 
 ##Syntax
 

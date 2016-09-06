@@ -1,11 +1,13 @@
 ---
 title: Code39fullAscii Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39fullAscii Decoder Setting is used to set the Code39fullascii property which enables or disables full ASCII conversion of the bar code.
-</b>
 
 ##Syntax
 

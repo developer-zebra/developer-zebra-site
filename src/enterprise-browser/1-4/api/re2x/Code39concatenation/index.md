@@ -1,11 +1,13 @@
 ---
 title: Code39concatenation Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39concatenation Decoder Setting is used to set the Code39concatenation property.
-</b>
 
 ##Syntax
 

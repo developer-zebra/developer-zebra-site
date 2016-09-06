@@ -1,11 +1,13 @@
 ---
 title: Upce1 Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Upce1 Decoder is used to enable or disable the upce1 decoder.
-</b>
 
 ##Syntax
 

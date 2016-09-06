@@ -1,11 +1,13 @@
 ---
 title: UpcEanSupplemental5 Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanSupplemental5 Decoder Setting is used to enable or disable upcEanSupplemental5 supplemental barcodes.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: I2of5minLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The I2of5minLength Decoder Setting is used to set the i2of5 MinLength property.
-</b>
 
 ##Syntax
 

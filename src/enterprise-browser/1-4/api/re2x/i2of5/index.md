@@ -1,11 +1,13 @@
 ---
-title: I2of5 Decoder
+title: I2of5 Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The I2of5 Decoder is used to enable or disable the i2of5 decoder.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
-title: Gs1dataBarLimited Decoder
+title: Gs1dataBarLimited Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Gs1dataBarLimited Decoder is used to enable or disable the gs1dataBarLimited decoder.
-</b>
 
 ##Syntax
 

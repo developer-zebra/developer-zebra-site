@@ -1,11 +1,13 @@
 ---
 title: UpcEanBooklandFormat Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The UpcEanBooklandFormat Decoder Setting is used to specify the bookland format to use for UPC EAN bookland barcodes.
-</b>
 
 ##Syntax
 

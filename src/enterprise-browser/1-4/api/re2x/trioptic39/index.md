@@ -1,11 +1,13 @@
 ---
 title: Trioptic39 Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Trioptic39 Decoder is used to enable or disable the Trioptic39 decoder.
-</b>
 
 ##Syntax
 

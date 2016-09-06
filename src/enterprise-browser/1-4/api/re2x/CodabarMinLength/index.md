@@ -1,11 +1,13 @@
 ---
 title: CodabarMinLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The CodabarMinLength Decoder Setting is used to set the Codabar MinLength property.
-</b>
 
 ##Syntax
 

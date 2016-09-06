@@ -1,11 +1,13 @@
 ---
 title: Code11maxLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code11maxLength Decoder Setting is used to set the Code11 MaxLength property.
-</b>
 
 ##Syntax
 

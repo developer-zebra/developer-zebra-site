@@ -1,11 +1,13 @@
 ---
-title: DutchPostal Decoder
+title: DutchPostal Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The DutchPostal Decoder is used to enable or disable the DutchPostal decoder.
-</b>
 
 ##Syntax
 

@@ -1,11 +1,13 @@
 ---
 title: Upce1preamble Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Upce1preamble Decoder Setting is used to set the upce1-preamble property which controls the preamble applied to the bar code.
-</b>
 
 ##Syntax
 

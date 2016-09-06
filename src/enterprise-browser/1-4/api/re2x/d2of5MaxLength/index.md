@@ -1,11 +1,13 @@
 ---
 title: D2of5maxLength Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The D2of5maxLength Decoder Setting is used to set the d2of5 MaxLength property. Setting this property will help prevent partial decoding of barcodes.
-</b>
 
 ##Syntax
 

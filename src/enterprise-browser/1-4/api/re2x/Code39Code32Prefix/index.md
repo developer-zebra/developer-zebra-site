@@ -1,11 +1,13 @@
 ---
 title: Code39code32prefix Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Code39code32prefix Decoder Setting is used to set the Code39Code32prefix property which enables reporting of the Code32 prefix when a Code39 bar code is converted.
-</b>
 
 ##Syntax
 

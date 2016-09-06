@@ -1,11 +1,13 @@
 ---
-title: Gs1dataBarExpanded Decoder
+title: Gs1dataBarExpanded Decoder 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Gs1dataBarExpanded Decoder is used to enable or disable the gs1dataBarExpanded decoder.
-</b>
 
 ##Syntax
 

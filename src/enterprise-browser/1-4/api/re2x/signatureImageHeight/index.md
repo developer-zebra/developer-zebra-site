@@ -1,11 +1,13 @@
 ---
 title: SignatureImageHeight Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The SignatureImageHeight Decoder Setting is used to set the image height property of the signature decoder.
-</b>
 
 ##Syntax
 

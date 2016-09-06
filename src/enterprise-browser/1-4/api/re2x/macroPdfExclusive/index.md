@@ -1,11 +1,13 @@
 ---
 title: MacroPdfExclusive Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The MacroPdfExclusive Decoder Setting is used to set the macroPdfExclusive property.
-</b>
 
 ##Syntax
 

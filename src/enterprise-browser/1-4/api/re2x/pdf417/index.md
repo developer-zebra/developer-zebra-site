@@ -1,11 +1,13 @@
 ---
 title: Pdf417 Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The Pdf417 Decoder is used to enable or disable the PDF417 decoder.
-</b>
 
 ##Syntax
 

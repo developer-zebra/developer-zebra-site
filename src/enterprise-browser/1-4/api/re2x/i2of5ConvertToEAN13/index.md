@@ -1,11 +1,13 @@
 ---
 title: I2of5convertToEan13 Decoder Setting
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
+##Overview
 
-
-<b>
 The I2of5convertToEan13 Decoder Setting is used to enable conversion from i2of5 to EAN13 bar code. If this flag is set, the bar code is converted to EAN13, and EAN13 parameters are used.
-</b>
 
 ##Syntax
 

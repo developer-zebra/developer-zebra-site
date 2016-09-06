@@ -1,11 +1,12 @@
 ---
-title: Aztec Decoder
+title:  Aztec Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-
-
-<b>
+##Overview
 The Aztec Decoder is used to enable or disable the aztec decoder.
-</b>
 
 ##Syntax
 

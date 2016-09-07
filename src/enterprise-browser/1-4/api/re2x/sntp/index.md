@@ -1,10 +1,10 @@
 ---
-title: Sntp Module
+title: SNTP Module
 ---
 
 
 <b>
-The Sntp Module is used to synchronize the device clock with a network SNTP server.
+The SNTP Module is used to synchronize the device clock with a SNTP network server.
 </b>
 
 ##Syntax

@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The SignatureCapture Module presents a rectangular box that captures a signature, hand-written notes or other data using the device stylus.
+The SignatureCapture Module presents a rectangular box that captures a signature, hand-written notes or other data entered using the device stylus.
 
 ##Syntax
 <table class="re-table"><tr><th class="tableHeading">signatureCapture (Module) &lt;META&gt; Syntax

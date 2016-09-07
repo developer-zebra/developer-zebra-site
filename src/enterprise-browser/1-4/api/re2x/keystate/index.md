@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The KeyState Module is used to set the parameters of the KeyState indicators, which display icons for Shift, Alt, Control, Function, Caps, Num lock, and the state of the Orange on some devices. Icons are placed beginning at the leftmost screen position in a row that extends toward the right, as necessary.
+The KeyState Module is used to set the parameters of the KeyState indicators, which display icons for Shift, Alt, Control, Function, Caps, Num lock, and the state of the Orange keys on some devices. Icons are placed beginning at the leftmost screen position in a row that extends toward the right, as necessary.
 
 ##Syntax
 

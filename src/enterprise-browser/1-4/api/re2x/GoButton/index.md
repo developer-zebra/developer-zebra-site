@@ -6,7 +6,7 @@ layout: guide.html
 subhead: 
 ---
 ## Overview
-The GoButton Module is used to set the parameters of the "Go" button, which navigates to the page shown in the Address Bar. In keeping with browser conventions, the the Go button is replaced during navigation by the stop button (if enabled).
+The GoButton Module is used to set the parameters of the "Go" button, which navigates to the page shown in the Address Bar. In keeping with browser conventions, the Go button is replaced during navigation by the stop button (if enabled).
 
 **Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays (listed below) are visible.
 

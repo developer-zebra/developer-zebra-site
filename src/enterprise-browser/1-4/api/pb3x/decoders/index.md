@@ -12,13 +12,15 @@ automenu:
           url: ../../../guide/compatibility
         - title: Migration Guides
           url: ../../../guide
-    - title: pocketBrowser 3.x Decoder APIs
+    - title: PocketBrowser 3.x Decoder APIs
       items:
         - title: AllDecoders
           url: ../all_decoders
+        - title: AUSpostal
+          url: ../auspostal
         - title: Aztec
           url: ../aztec
-        - title: Chinese2of5
+        - title: chinese_2of5
           url: ../chinese_2of5
         - title: Codabar
           url: ../toc_codeabar

@@ -1,11 +1,11 @@
 ﻿---
-title: AddressBar Meta Tag
+title: Volume Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 subhead: 
 ---
-The AddressBar Meta Tag is an action tag used to set the parameters of the address bar, which allows navigation to a page for display. The AddressBar displays a history of visited URLs for selection, or will navigate to a typed-in URL when pressing the "Go" button.
+The Volume Meta Tag is an action tag used to set the audio output volume of wave files being played on the device. This does not set the volume of the device beeper.
 
 <html>
   <head>
@@ -71,7 +71,7 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
 					border-bottom: #d5d5d3 1px solid;
 					}
 				</style>
-    <title>AddressBar</title><script type="text/javascript" language="Javascript">
+    <title>Volume</title><script type="text/javascript" language="Javascript">
 					
 					function ToggleSpan(SpanId, ImgID)
 					{
@@ -97,7 +97,7 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
 					
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
-   
+    <hr size="1">
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
@@ -105,12 +105,12 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
-            <th class="clsSyntaxHeadings">AddressBar (META Tag) Syntax
+            <th class="clsSyntaxHeadings">Volume (META Tag) Syntax
 						</th>
           </tr>
           <tr>
             <td class="clsSyntaxCells">
-              <p>&lt;META HTTP-Equiv="AddressBar" content="[parameter]"&gt;</p>
+              <p>&lt;META HTTP-Equiv="Volume" content="[parameter]"&gt;</p>
             </td>
           </tr>
         </table>
@@ -139,32 +139,11 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
             </th>
           </tr>
           <tr>
-            <td valign="top" class="clsSyntaxCells"><b>Left:[Value]
+            <td valign="top" class="clsSyntaxCells"><b>SetVolume:[Value]
 													</b></td>
-            <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
-            <td valign="top" class="clsSyntaxCells">Sets the X position of the address bar.</td>
-            <td valign="top" class="clsSyntaxCells">0</td>
-          </tr>
-          <tr>
-            <td valign="top" class="clsSyntaxCells"><b>Top:[Value]
-													</b></td>
-            <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
-            <td valign="top" class="clsSyntaxCells">Sets the Y position of the address bar.</td>
-            <td valign="top" class="clsSyntaxCells">0</td>
-          </tr>
-          <tr>
-            <td valign="top" class="clsSyntaxCells"><b>Width:[Value]
-													</b></td>
-            <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
-            <td valign="top" class="clsSyntaxCells">Sets the width of the address bar.</td>
-            <td valign="top" class="clsSyntaxCells">Most of the screen width</td>
-          </tr>
-          <tr>
-            <td valign="top" class="clsSyntaxCells"><b>Visibility:[Value]
-													</b></td>
-            <td valign="top" class="clsSyntaxCells">Visible, Hidden</td>
-            <td valign="top" class="clsSyntaxCells">Sets the visibility of the address bar</td>
-            <td valign="top" class="clsSyntaxCells">Hidden</td>
+            <td valign="top" class="clsSyntaxCells">Volume in the format 0xnnnn</td>
+            <td valign="top" class="clsSyntaxCells">Specifies a new volume setting. The low-order word contains the left-channel volume setting, and the high-order word contains the right-channel setting. A value of 0xFFFF represents full volume, and a value of 0x0000 is silence.  If a device does not support both left and right volume control, the low-order word specifies the volume level and the high-order word is ignored</td>
+            <td valign="top" class="clsSyntaxCells">Device Dependant</td>
           </tr>
         </table>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -190,26 +169,20 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
           </tr>
         </table>
         <div style="display:none"><textarea id="txtMETATemplateW">&lt;!-- 
-The AddressBar META Tag is an action tag used to set the parameters of the address bar. The address bar is similar to the address bar provided by Internet Explorer and stores a history of visited URLs. Press the 'Go' button or enter key to navigate to the typed URI.
+The Volume META Tag is an action tag used to set the audio output volume of the device. This is the wave output volume, not the volume of the device beeper.
 --&gt;
 
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Left:[Value]"&gt; --&gt;      &lt;!-- Sets the X position of the address bar. --&gt;
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Top:[Value]"&gt; --&gt;      &lt;!-- Sets the Y position of the address bar. --&gt;
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Width:[Value]"&gt; --&gt;      &lt;!-- Sets the width of the address bar. --&gt;
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Visibility:[Value]"&gt; --&gt;      &lt;!-- Sets the visibility of the address bar --&gt;</textarea></div>
+&lt;!-- &lt;META HTTP-Equiv="Volume" Content="SetVolume:[Value]"&gt; --&gt;      &lt;!-- Specifies a new volume setting. The low-order word contains the left-channel volume setting, and the high-order word contains the right-channel setting. A value of 0xFFFF represents full volume, and a value of 0x0000 is silence.  If a device does not support both left and right volume control, the low-order word specifies the volume level and the high-order word is ignored --&gt;</textarea></div>
         <div style="display:none"><textarea id="txtJavascriptTemplateW">&lt;script&gt;
    /*
-   The AddressBar META Tag is an action tag used to set the parameters of the address bar. The address bar is similar to the address bar provided by Internet Explorer and stores a history of visited URLs. Press the 'Go' button or enter key to navigate to the typed URI.
+   The Volume META Tag is an action tag used to set the audio output volume of the device. This is the wave output volume, not the volume of the device beeper.
    */
 
-   function doAddressBarInit()
+   function doVolumeInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Left:[Value]');      /* Sets the X position of the address bar. */
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Top:[Value]');      /* Sets the Y position of the address bar. */
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Width:[Value]');      /* Sets the width of the address bar. */
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Visibility:[Value]');      /* Sets the visibility of the address bar */
+      //objGeneric.InvokeMETAFunction('Volume', 'SetVolume:[Value]');      /* Specifies a new volume setting. The low-order word contains the left-channel volume setting, and the high-order word contains the right-channel setting. A value of 0xFFFF represents full volume, and a value of 0x0000 is silence.  If a device does not support both left and right volume control, the low-order word specifies the volume level and the high-order word is ignored */
 
    }
 &lt;/script&gt;</textarea></div>
@@ -219,15 +192,12 @@ The AddressBar META Tag is an action tag used to set the parameters of the addre
 		</p>
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
-        <p>The following example shows the address bar, sets the left and top coordinates to 50, and the width to 100.</p>
+        <p>The following example sets the device volume to its maximum for all devices</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <td>
               <pre class="clsSyntaxCells">
-&lt;META HTTP-Equiv="AddressBar" Content="visibility:visible"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="left:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="top:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="width:100"&gt;
+&lt;meta http-equiv="Volume" content="SetVolume:0xFFFF"&gt;
 </pre>
             </td>
           </tr>
@@ -237,26 +207,23 @@ The AddressBar META Tag is an action tag used to set the parameters of the addre
           <col width="15%">
           <tr align="right">
             <td></td>
-            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EIC');">
+            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EJB');">
 									Copy example to clipboard
 								</nobr></td>
           </tr>
         </table>
-        <div id="Examples" style="display:none"><textarea id="ID0EIC">&lt;!-- 
-The following example shows the address bar, sets the left and top coordinates to 50, and the width to 100.
+        <div id="Examples" style="display:none"><textarea id="ID0EJB">&lt;!-- 
+The following example sets the device volume to its maximum for all devices
 --&gt;
 
-&lt;META HTTP-Equiv="AddressBar" Content="visibility:visible"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="left:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="top:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="width:100"&gt;
+&lt;meta http-equiv="Volume" content="SetVolume:0xFFFF"&gt;
 </textarea></div>
-        <p>The following example shows the address bar, sets the left and top coordinates to 0, and the width to 50.</p>
+        <p>The following example sets the device volume to its maximum for devices with a single wave output channel.</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <td>
               <pre class="clsSyntaxCells">
-&lt;META HTTP-Equiv="AddressBar" Content="left:0; top:0; width:50"&gt;
+&lt;meta http-equiv="Volume" content="SetVolume:0x00FF"&gt;
 </pre>
             </td>
           </tr>
@@ -266,34 +233,19 @@ The following example shows the address bar, sets the left and top coordinates t
           <col width="15%">
           <tr align="right">
             <td></td>
-            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EPC');">
+            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EQB');">
 									Copy example to clipboard
 								</nobr></td>
           </tr>
         </table>
-        <div id="Examples" style="display:none"><textarea id="ID0EPC">&lt;!-- 
-The following example shows the address bar, sets the left and top coordinates to 0, and the width to 50.
+        <div id="Examples" style="display:none"><textarea id="ID0EQB">&lt;!-- 
+The following example sets the device volume to its maximum for devices with a single wave output channel.
 --&gt;
 
-&lt;META HTTP-Equiv="AddressBar" Content="left:0; top:0; width:50"&gt;
+&lt;meta http-equiv="Volume" content="SetVolume:0x00FF"&gt;
 </textarea></div>
       </blockquote>
     </div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('RemarksSpan', 'imgRemarksToggle')"><img align="absmiddle" id="imgRemarksToggle" alt="Remarks Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
-			Remarks
-		</p>
-    <div id="RemarksSpan" style="display:block">
-      <blockquote>
-        <DIV class="clsRef">Default Positions</DIV>
-        <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">By default this control will be placed a the top of the screen.  On Windows Mobile if the 'FullScreen' configuration setting is disabled the control will need to be moved, otherwise it will appear beneath the task bar.</DIV>
-        <pre style="font-family:courier;font-size:small;"></pre>
-        <DIV class="clsRef">Switching to Other Applications</DIV>
-        <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">All controls are designed to be shown on top of PocketBrowser.  If you require to switch to an application other than PocketBrowser you should minimize PB to ensure the buttons do not remain shown.</DIV>
-        <pre style="font-family:courier;font-size:small;"></pre>
-        <DIV class="clsRef">Screen Orientation</DIV>
-        <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.</DIV>
-        <pre style="font-family:courier;font-size:small;"></pre>
-      </blockquote><br></div>
     <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('InfoSpan', 'imgInfoToggle')"><img align="absmiddle" id="imgInfoToggle" alt="Info Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
 			Additional Information
 		</p>
@@ -310,7 +262,7 @@ The following example shows the address bar, sets the left and top coordinates t
           </tr>
           <tr>
             <th>Minimum Requirements</th>
-            <td>None.</td>
+            <td>The device must have a speaker.</td>
           </tr>
         </table>
       </blockquote><br></div>
@@ -321,7 +273,7 @@ The following example shows the address bar, sets the left and top coordinates t
 			See Also
 		</p>
     <div id="AlsoSpan" style="display:block">
-      <BLOCKQUOTE><a href="GoButton.html&#xA;						">GoButton</a> <a href="StopButton.html&#xA;						">StopButton</a> <a href="BackButton.html&#xA;						">BackButton</a> <a href="SIPButton.html&#xA;						">SIPButton</a> <a href="ReloadButton.html&#xA;						">ReloadButton</a> </BLOCKQUOTE><br></div>
+      <BLOCKQUOTE><a href="Notification.html&#xA;						">Notification</a> </BLOCKQUOTE><br></div>
     <hr size="1">
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>

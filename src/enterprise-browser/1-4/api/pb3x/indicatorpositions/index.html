@@ -1,0 +1,294 @@
+---
+title: Application Meta Tag
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
+---
+
+
+<html>
+<head>
+
+<title>Indicator Positions</title>
+<style>
+					body
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					margin:20;
+					}
+					h1
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:large;
+					font-weight:bold;
+					}
+					h2
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:small;
+					font-weight:bold;
+					}
+					th
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					font-weight:bold;
+					text-align:left;
+					background-color:#CCCCCC;
+					}
+					td
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					text-align:left;
+					}
+					.clsRef
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:medium;
+					color:#003399;
+					font-weight:bold;
+					text-align:left;
+					}
+					.clsSyntax
+					{
+					font-family:courier;
+					font-size:x-small;
+					text-align:left;
+					background-color:#ffffff;
+					}
+					.clsSyntaxHeadings
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					font-weight:bold;
+					text-align:left;
+					color:#000066;
+					background-color:#efeff7;
+					border-bottom: #c8cdde 1px solid;
+					}
+					.clsSyntaxCells
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					text-align:left;
+					vertical-align:top;
+					background-color:#f7f7ff;
+					border-bottom: #d5d5d3 1px solid;
+					}
+</style>
+<script type="text/javascript" language="Javascript">
+					
+					function ToggleSpan(SpanId, ImgID)
+					{
+						var path = '../Resources/'
+					//Toggle the span view on or off
+					var Rollup = document.all.item(SpanId);
+					var RollupImg = document.all.item(ImgID);
+					var ToggleExpand = path + 'ToggleExpand.gif';
+					var ToggleCollapse = path + 'ToggleCollapse.gif';
+					Rollup.style.display = (Rollup.style.display=='none' ? 'block' : 'none');
+					RollupImg.src = (Rollup.style.display=='none' ? ToggleExpand : ToggleCollapse);
+					}
+
+					function CopyTemplate(sControl)
+					{
+					//Copy the template values held in the appropriate textarea to clipboard
+					if (window.clipboardData)
+					{
+					window.clipboardData.setData("Text", document.all.item(sControl).value);
+					}
+					return false;
+					}
+					
+				</script>
+</head>
+
+<body>
+
+  <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
+    <table width="100%">
+      <tr>
+        <td valign="middle" width="95%">
+          <h1>Meaning of Indicator Icon and Graph Position</h1>
+        </td>
+        <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
+      </tr>
+    </table>
+    <hr size="1">
+    <p>
+
+The Battery and Signal Meta tags use the 'IconPosition' and 'GraphPosition' parameters to specify the layout of the indicator icon and associated graph.  The examples below illustrate all combinations of IconPosition and GraphPosition which can be used to achieve the desired look of the indicator.
+<P>
+For more information on how to use the <a href="../Indicators/signal.html">Signal</a> and <a href="../Indicators/battery.html">Battery</a> indicators please refer to the appropriate help file sections
+<P>
+
+
+
+
+
+<H2>IconPosition:Left; GraphPosition:Top</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="#0000FF">META</font> <font color="#FF0000">HTTP-Equiv</font>="Battery" <font color="#FF0000">Content</font>="Left:50;Top:50;IconPosition:Left;GraphPosition:Top;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterytopleft.jpg">
+<P>
+The following example shows the wireless signal indicator:<br>
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Left;GraphPosition:Top;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signaltopleft.jpg">
+<P>
+ 
+ 
+ 
+ 
+ 
+ 
+<H2>IconPosition:Left; GraphPosition:Bottom</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Left;GraphPosition:Bottom;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterybottomleft.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Left;GraphPosition:Bottom;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signalbottomleft.jpg">
+<P>
+
+
+
+
+
+<H2>IconPosition:Right; GraphPosition:Top</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Right;GraphPosition:Top;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterytopright.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Right;GraphPosition:Top;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signaltopright.jpg">
+<P>
+
+  
+  
+  
+ 
+<H2>IconPosition:Right; GraphPosition:Bottom</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Right;GraphPosition:Bottom;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterybottomright.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Right;GraphPosition:Bottom;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signalbottomright.jpg">
+<P> 
+ 
+ 
+ 
+ 
+ 
+ 
+<H2>IconPosition:Top; GraphPosition:Left</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Top;GraphPosition:Left;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterytopleftv.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Top;GraphPosition:Left;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signaltopleftv.jpg">
+<P>
+
+
+
+ 
+<H2>IconPosition:Top; GraphPosition:Right</H2>
+<P>
+The following example shows the battery indicator:
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Top;GraphPosition:Right;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterytoprightv.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Top;GraphPosition:Right;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signaltoprightv.jpg">
+<P> 
+ 
+ 
+ 
+ 
+
+<H2>IconPosition:Bottom; GraphPosition:Left</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Bottom;GraphPosition:Left;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterybottomleftv.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Bottom;GraphPosition:Left;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signalbottomleftv.jpg">
+<P>
+
+
+
+ 
+<H2>IconPosition:Bottom; GraphPosition:Right</H2>
+<P>
+The following example shows the battery indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Battery" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Bottom;GraphPosition:Right;Color:#000000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/batterybottomrightv.jpg">
+<P>
+The following example shows the wireless signal indicator:
+<P>
+&lt;<font color="0000FF">META</font> <font color="FF0000">HTTP-Equiv</font>="Signal" <font color="FF0000">Content</font>="Left:50;Top:50;IconPosition:Bottom;GraphPosition:Right;Color:#FF0000; Visibility:Visible"&gt;
+<P>
+<img src="../Resources/indicators/signalbottomrightv.jpg">
+<P>  
+
+
+
+
+
+
+
+
+
+    
+
+
+    <hr size="1">
+    <div align="right">Copyright© 2016 Symbol Technologies, Inc.</div>
+</body>
+
+</html>

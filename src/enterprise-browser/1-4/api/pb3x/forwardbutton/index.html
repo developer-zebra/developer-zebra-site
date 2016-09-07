@@ -1,11 +1,11 @@
 ﻿---
-title: AddressBar Meta Tag
+title: Application Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 subhead: 
 ---
-The AddressBar Meta Tag is an action tag used to set the parameters of the address bar, which allows navigation to a page for display. The AddressBar displays a history of visited URLs for selection, or will navigate to a typed-in URL when pressing the "Go" button.
+
 
 <html>
   <head>
@@ -71,7 +71,7 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
 					border-bottom: #d5d5d3 1px solid;
 					}
 				</style>
-    <title>AddressBar</title><script type="text/javascript" language="Javascript">
+    <title>ForwardButton</title><script type="text/javascript" language="Javascript">
 					
 					function ToggleSpan(SpanId, ImgID)
 					{
@@ -97,7 +97,18 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
 					
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
-   
+    <table width="100%">
+      <tr>
+        <td valign="middle" width="95%">
+          <h1>ForwardButton META Tag</h1>
+        </td>
+        <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
+      </tr>
+    </table>
+    <hr size="1">
+    <p>
+					The 
+					<b>ForwardButton</b> META Tag is an action tag used to set the parameters of the Forward Button. When clicked the Forward button will navigate forward to the browser history, if possible.</p>
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
@@ -105,12 +116,12 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
-            <th class="clsSyntaxHeadings">AddressBar (META Tag) Syntax
+            <th class="clsSyntaxHeadings">ForwardButton (META Tag) Syntax
 						</th>
           </tr>
           <tr>
             <td class="clsSyntaxCells">
-              <p>&lt;META HTTP-Equiv="AddressBar" content="[parameter]"&gt;</p>
+              <p>&lt;META HTTP-Equiv="ForwardButton" content="[parameter]"&gt;</p>
             </td>
           </tr>
         </table>
@@ -142,29 +153,50 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
             <td valign="top" class="clsSyntaxCells"><b>Left:[Value]
 													</b></td>
             <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
-            <td valign="top" class="clsSyntaxCells">Sets the X position of the address bar.</td>
-            <td valign="top" class="clsSyntaxCells">0</td>
+            <td valign="top" class="clsSyntaxCells">Sets the X position of the Forward Button.</td>
+            <td valign="top" class="clsSyntaxCells">To the right of the address bar</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Top:[Value]
 													</b></td>
             <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
-            <td valign="top" class="clsSyntaxCells">Sets the Y position of the address bar.</td>
-            <td valign="top" class="clsSyntaxCells">0</td>
+            <td valign="top" class="clsSyntaxCells">Sets the Y position of the Forward Button.</td>
+            <td valign="top" class="clsSyntaxCells">To the right of the address bar</td>
+          </tr>
+          <tr>
+            <td valign="top" class="clsSyntaxCells"><b>Height:[Value]
+													</b></td>
+            <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
+            <td valign="top" class="clsSyntaxCells">Sets the height of the Forward Button.</td>
+            <td valign="top" class="clsSyntaxCells">Dependant on screen resolution</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Width:[Value]
 													</b></td>
             <td valign="top" class="clsSyntaxCells">Positive number, representing pixels</td>
-            <td valign="top" class="clsSyntaxCells">Sets the width of the address bar.</td>
-            <td valign="top" class="clsSyntaxCells">Most of the screen width</td>
+            <td valign="top" class="clsSyntaxCells">Sets the width of the Forward Button.</td>
+            <td valign="top" class="clsSyntaxCells">Dependant on screen resolution</td>
+          </tr>
+          <tr>
+            <td valign="top" class="clsSyntaxCells"><b>ImageUp:[Value]
+													</b></td>
+            <td valign="top" class="clsSyntaxCells">URL</td>
+            <td valign="top" class="clsSyntaxCells">Sets the image to be displayed when the Forward Button is in the up state.  See Remarks.</td>
+            <td valign="top" class="clsSyntaxCells">Default image</td>
+          </tr>
+          <tr>
+            <td valign="top" class="clsSyntaxCells"><b>ImageDown:[Value]
+													</b></td>
+            <td valign="top" class="clsSyntaxCells">URL</td>
+            <td valign="top" class="clsSyntaxCells">Sets the image to be displayed when the Forward Button is in the down state.  See Remarks.</td>
+            <td valign="top" class="clsSyntaxCells">Default image</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Visibility:[Value]
 													</b></td>
             <td valign="top" class="clsSyntaxCells">Visible, Hidden</td>
-            <td valign="top" class="clsSyntaxCells">Sets the visibility of the address bar</td>
-            <td valign="top" class="clsSyntaxCells">Hidden</td>
+            <td valign="top" class="clsSyntaxCells">Sets the visibility of the forward button.</td>
+            <td valign="top" class="clsSyntaxCells">Hidden.</td>
           </tr>
         </table>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -190,26 +222,32 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
           </tr>
         </table>
         <div style="display:none"><textarea id="txtMETATemplateW">&lt;!-- 
-The AddressBar META Tag is an action tag used to set the parameters of the address bar. The address bar is similar to the address bar provided by Internet Explorer and stores a history of visited URLs. Press the 'Go' button or enter key to navigate to the typed URI.
+The ForwardButton META Tag is an action tag used to set the parameters of the Forward Button. When clicked the Forward button will navigate forward to the browser history, if possible.
 --&gt;
 
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Left:[Value]"&gt; --&gt;      &lt;!-- Sets the X position of the address bar. --&gt;
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Top:[Value]"&gt; --&gt;      &lt;!-- Sets the Y position of the address bar. --&gt;
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Width:[Value]"&gt; --&gt;      &lt;!-- Sets the width of the address bar. --&gt;
-&lt;!-- &lt;META HTTP-Equiv="AddressBar" Content="Visibility:[Value]"&gt; --&gt;      &lt;!-- Sets the visibility of the address bar --&gt;</textarea></div>
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="Left:[Value]"&gt; --&gt;      &lt;!-- Sets the X position of the Forward Button. --&gt;
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="Top:[Value]"&gt; --&gt;      &lt;!-- Sets the Y position of the Forward Button. --&gt;
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="Height:[Value]"&gt; --&gt;      &lt;!-- Sets the height of the Forward Button. --&gt;
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="Width:[Value]"&gt; --&gt;      &lt;!-- Sets the width of the Forward Button. --&gt;
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="ImageUp:[Value]"&gt; --&gt;      &lt;!-- Sets the image to be displayed when the Forward Button is in the up state.  See Remarks. --&gt;
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="ImageDown:[Value]"&gt; --&gt;      &lt;!-- Sets the image to be displayed when the Forward Button is in the down state.  See Remarks. --&gt;
+&lt;!-- &lt;META HTTP-Equiv="ForwardButton" Content="Visibility:[Value]"&gt; --&gt;      &lt;!-- Sets the visibility of the forward button. --&gt;</textarea></div>
         <div style="display:none"><textarea id="txtJavascriptTemplateW">&lt;script&gt;
    /*
-   The AddressBar META Tag is an action tag used to set the parameters of the address bar. The address bar is similar to the address bar provided by Internet Explorer and stores a history of visited URLs. Press the 'Go' button or enter key to navigate to the typed URI.
+   The ForwardButton META Tag is an action tag used to set the parameters of the Forward Button. When clicked the Forward button will navigate forward to the browser history, if possible.
    */
 
-   function doAddressBarInit()
+   function doForwardButtonInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Left:[Value]');      /* Sets the X position of the address bar. */
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Top:[Value]');      /* Sets the Y position of the address bar. */
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Width:[Value]');      /* Sets the width of the address bar. */
-      //objGeneric.InvokeMETAFunction('AddressBar', 'Visibility:[Value]');      /* Sets the visibility of the address bar */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'Left:[Value]');      /* Sets the X position of the Forward Button. */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'Top:[Value]');      /* Sets the Y position of the Forward Button. */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'Height:[Value]');      /* Sets the height of the Forward Button. */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'Width:[Value]');      /* Sets the width of the Forward Button. */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'ImageUp:[Value]');      /* Sets the image to be displayed when the Forward Button is in the up state.  See Remarks. */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'ImageDown:[Value]');      /* Sets the image to be displayed when the Forward Button is in the down state.  See Remarks. */
+      //objGeneric.InvokeMETAFunction('ForwardButton', 'Visibility:[Value]');      /* Sets the visibility of the forward button. */
 
    }
 &lt;/script&gt;</textarea></div>
@@ -219,15 +257,16 @@ The AddressBar META Tag is an action tag used to set the parameters of the addre
 		</p>
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
-        <p>The following example shows the address bar, sets the left and top coordinates to 50, and the width to 100.</p>
+        <p>The following example shows the Forward button, sets its left and top coordinates to 50, and its width and height to 30 pixels.</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <td>
               <pre class="clsSyntaxCells">
-&lt;META HTTP-Equiv="AddressBar" Content="visibility:visible"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="left:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="top:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="width:100"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Visibility:Visible"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Left:50"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Top:50"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Width:30"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Height:30"&gt;
 </pre>
             </td>
           </tr>
@@ -237,26 +276,30 @@ The AddressBar META Tag is an action tag used to set the parameters of the addre
           <col width="15%">
           <tr align="right">
             <td></td>
-            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EIC');">
+            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EJD');">
 									Copy example to clipboard
 								</nobr></td>
           </tr>
         </table>
-        <div id="Examples" style="display:none"><textarea id="ID0EIC">&lt;!-- 
-The following example shows the address bar, sets the left and top coordinates to 50, and the width to 100.
+        <div id="Examples" style="display:none"><textarea id="ID0EJD">&lt;!-- 
+The following example shows the Forward button, sets its left and top coordinates to 50, and its width and height to 30 pixels.
 --&gt;
 
-&lt;META HTTP-Equiv="AddressBar" Content="visibility:visible"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="left:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="top:50"&gt;
-&lt;META HTTP-Equiv="AddressBar" Content="width:100"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Visibility:Visible"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Left:50"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Top:50"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Width:30"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Height:30"&gt;
 </textarea></div>
-        <p>The following example shows the address bar, sets the left and top coordinates to 0, and the width to 50.</p>
+        <p>The follwing example shows the Forward button, sets its width to 30 pixels, its left coordinate 
+                           to 50, and displays the forward_up.gif / forward_down.gif image on it (reszing the images if 
+                           necessary).
+                           </p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <td>
               <pre class="clsSyntaxCells">
-&lt;META HTTP-Equiv="AddressBar" Content="left:0; top:0; width:50"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Width:30; Left:50; ImageUp:url('http://myaddress/forward_up.gif'); ImageDown:url('http://myaddress/forward_down.gif'); Visibility:Visible"&gt; 
 </pre>
             </td>
           </tr>
@@ -266,16 +309,19 @@ The following example shows the address bar, sets the left and top coordinates t
           <col width="15%">
           <tr align="right">
             <td></td>
-            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EPC');">
+            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EQD');">
 									Copy example to clipboard
 								</nobr></td>
           </tr>
         </table>
-        <div id="Examples" style="display:none"><textarea id="ID0EPC">&lt;!-- 
-The following example shows the address bar, sets the left and top coordinates to 0, and the width to 50.
+        <div id="Examples" style="display:none"><textarea id="ID0EQD">&lt;!-- 
+The follwing example shows the Forward button, sets its width to 30 pixels, its left coordinate 
+                           to 50, and displays the forward_up.gif / forward_down.gif image on it (reszing the images if 
+                           necessary).
+                           
 --&gt;
 
-&lt;META HTTP-Equiv="AddressBar" Content="left:0; top:0; width:50"&gt;
+&lt;META HTTP-Equiv="ForwardButton" Content="Width:30; Left:50; ImageUp:url('http://myaddress/forward_up.gif'); ImageDown:url('http://myaddress/forward_down.gif'); Visibility:Visible"&gt; 
 </textarea></div>
       </blockquote>
     </div>
@@ -284,6 +330,12 @@ The following example shows the address bar, sets the left and top coordinates t
 		</p>
     <div id="RemarksSpan" style="display:block">
       <blockquote>
+        <DIV class="clsRef">Use of Images on Buttons.</DIV>
+        <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Images can be specified as local to the device or on an HTTP / FTP server, just specify the required protocol as part of your URL (file://\, HTTP:// and FTP://).  Image will be scaled to the size of the button.  JPEG and GIF images are only supported on WM devices.  Both CE and WM support BMP files.</DIV>
+        <pre style="font-family:courier;font-size:small;"></pre>
+        <DIV class="clsRef">Interaction with Back Button</DIV>
+        <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">For compatibility reasons PocketBrowser maintains its own history stack independant of the underlying browser.  This means the forward button is only compatible with the back button and will not navigate forward after the user calls javascript:history.back(1).</DIV>
+        <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Default Positions</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">By default this control will be placed a the top of the screen.  On Windows Mobile if the 'FullScreen' configuration setting is disabled the control will need to be moved, otherwise it will appear beneath the task bar.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
@@ -321,7 +373,7 @@ The following example shows the address bar, sets the left and top coordinates t
 			See Also
 		</p>
     <div id="AlsoSpan" style="display:block">
-      <BLOCKQUOTE><a href="GoButton.html&#xA;						">GoButton</a> <a href="StopButton.html&#xA;						">StopButton</a> <a href="BackButton.html&#xA;						">BackButton</a> <a href="SIPButton.html&#xA;						">SIPButton</a> <a href="ReloadButton.html&#xA;						">ReloadButton</a> </BLOCKQUOTE><br></div>
+      <BLOCKQUOTE><a href="BackButton.html&#xA;						">BackButton</a> <a href="GoButton.html&#xA;						">GoButton</a> <a href="StopButton.html&#xA;						">StopButton</a> <a href="AddressBar.html&#xA;						">AddressBar</a> <a href="ReloadButton.html&#xA;						">ReloadButton</a> </BLOCKQUOTE><br></div>
     <hr size="1">
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>

@@ -77,7 +77,7 @@ You can disable the EMDK for Xamarin component from a project, however please no
 When a Xamarin Component is installed to either Visual Studio or Xamarin Studio, it will be available to add to all projects. The component binaries are copied to a shared location and can only be removed manually. Additionally, after a component has been added to an Android project, the project folder will contain a cached version of the component even if you removed it from the project. To permanently clear your system of the component files you must follow the steps below:
 
 ### 1) Remove from IDE
-For Windows (Visual Studio or Xamarin Studio), the installed components can be found in two folders:
+For Windows, the installed components can be found in two folders:
 
 1. Delete the `emdk-component-<version>.*` files in: `C:\Users\<username>\AppData\Local\Xamarin\Cache\Components`
 

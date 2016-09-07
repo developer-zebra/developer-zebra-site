@@ -6,7 +6,7 @@ automenu:
   items:
     - title:  Related Pages
       items:
-        - title: Back to Decoders Page
+        - title: Back to RE 2.x Decoders Page
           url: ../toc_decoders
         - title: Back to Main API Page
           url: ../../../api

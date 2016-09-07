@@ -80,11 +80,11 @@ automenu:
           url: ../toc_Trioptic39
         - title: UPC Ean
           url: ../toc_upcean
-        - title: Upca
+        - title: UPCa
           url: ../toc_Upca
-        - title: Upce0
+        - title: UPCe0
           url: ../toc_Upce0
-        - title: Upce1
+        - title: UPCe1
           url: ../toc_Upce1
         - title: Webcode
           url: ../toc_Webcode

@@ -10,17 +10,17 @@ The KeyState Module is used to set the parameters of the KeyState indicators, wh
 
 **This API is supported on a subset of Zebra Technologies Windows Mobile/CE and Windows Embedded handheld devices (see remarks)**.
 
-**Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays are visible. Some are listed below.
+**Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays (listed below) are visible.
 
-* addressBar
-* backbutton
-* forwardbutton
-* gobutton
-* minimizebutton
-* quitbutton
-* reloadButton
-* sipbutton
-* stopbutton
+* AddressBar
+* BackButton
+* ForwardButton
+* GoButton
+* MinimizeButton
+* QuitButton
+* ReloadButton
+* SipButton
+* StopButton
         
 ## Enabling the API
 There are two methods of enabling the KeyState API: 

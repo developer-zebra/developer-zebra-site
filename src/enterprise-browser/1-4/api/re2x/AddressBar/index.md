@@ -8,17 +8,17 @@ subhead: Backward compatibility API
 ##Overview
 The AddressBar API is used to set the parameters of the address bar. The address bar should only be used for debugging and is not designed to be used as a replacement for a web browser address bar. Press the ‘Go’ button or enter key to navigate to the typed URI.
 
-**Note**: The VC5090 device might exhibit slight screen distortion while the addressBar is displayed. This occurs only when this or similar overlays are set to be visible. Some are listed below. 
+**Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays (listed below) are visible.
 
-* backbutton
-* keystate indicator
-* forwardbutton
-* gobutton
-* minimizebutton
-* quitbutton
-* reloadButton
-* sipbutton
-* stopbutton
+* AddressBar
+* BackButton
+* ForwardButton
+* GoButton
+* MinimizeButton
+* QuitButton
+* ReloadButton
+* SipButton
+* StopButton
 
 ## Enabling the API
 To use this API on an Android device, include a reference to the following JavaScript file, which is included on the PC with the Enterprise Browser installation:

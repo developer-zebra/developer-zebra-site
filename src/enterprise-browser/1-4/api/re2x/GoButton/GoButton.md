@@ -8,17 +8,17 @@ subhead:
 ## Overview
 The GoButton Module is used to set the parameters of the "Go" button, which navigates to the page shown in the Address Bar. In keeping with browser conventions, the the Go button is replaced during navigation by the stop button (if enabled).
 
-**Note**: The VC5090 device might exhibit slight screen distortion while the the Go Button is displayed. This can occur only when overlays are visible. Some are listed below. 
+**Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays (listed below) are visible.
 
-* addressBar
-* backbutton
-* keystate indicator
-* forwardbutton
-* minimizebutton
-* quitbutton
-* reloadButton
-* sipbutton
-* stopbutton
+* AddressBar
+* BackButton
+* ForwardButton
+* GoButton
+* MinimizeButton
+* QuitButton
+* ReloadButton
+* SipButton
+* StopButton
 
 ## Enabling the API
 In order to use this API you must include reference to the following JavaScript file that is included with the Enterprise Browser installation:

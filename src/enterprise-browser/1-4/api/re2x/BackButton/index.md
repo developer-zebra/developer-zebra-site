@@ -8,18 +8,17 @@ subhead:
 ##Overview
 The BackButton Module is used to set the parameters of BACK, the button that moves application to the previously loaded page, if any. 
 
-**Note**: The VC5090 device slight screen distortion while the backbutton is displayed. or similar overlays are set to be visible. Some are listed below.
+**Note**: The VC5090 device might exhibit slight screen distortion while one or more KeyState icons are displayed. This occurs only when overlays (listed below) are visible.
 
-* addressBar
-* keystate indicator
-* forwardbutton
-* gobutton
-* minimizebutton
-* quitbutton
-* reloadButton
-* sipbutton
-* settingsbutton
-* stopbutton
+* AddressBar
+* BackButton
+* ForwardButton
+* GoButton
+* MinimizeButton
+* QuitButton
+* ReloadButton
+* SipButton
+* StopButton
 
 ## Enabling the API
 To use this API you must include a reference to the following JavaScript file that is included with the Enterprise Browser installation:

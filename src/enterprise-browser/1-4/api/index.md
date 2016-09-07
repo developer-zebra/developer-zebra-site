@@ -201,25 +201,25 @@ automenu:
         - title: AddressBar
           url: pb3x/addressbar
         - title: Airbeam Smart 
-          url: AirBeamSmart
+          url: airbeamamart
         - title: Alarm
           url: alarm
         - title: APD 
           url: re2x/apd
         - title: Application
-          url: Application
+          url: application
         - title: BackButton
-          url: BackButton
+          url: backbutton
         - title: Backlight
-          url: Backlight
+          url: backlight
         - title: Battery
           url: battery
         - title: BottomCommandArea 
-          url: BottomCommanArea
+          url: bottomcommanarea
         - title: CardReader
           url: cardreader
         - title: Comm
-          url: Comm
+          url: comm
         - title: Decoders 
           url: decoders
         - title: Device
@@ -227,25 +227,25 @@ automenu:
         - title: EMMLProfile 
           url: emmlprofile
         - title: FileTransfer
-          url: FileTransfer
+          url: filetransfer
         - title: ForwardButton
-          url: ForwardButton
+          url: forwardbutton
         - title: Generic 
           url: generic
         - title: Gesture
-          url: Gesture
+          url: gesture
         - title: Gesturing Overview 
           url: gesturingoverview
         - title: GoButton
-          url: GoButton
+          url: gobutton
         - title: HistoryBack 
           url: historyback
         - title: HomeButton
-          url: HomeButton
+          url: homebutton
         - title: Hourglass
-          url: Hourglass
+          url: hourglass
         - title: Imager
-          url: Imager
+          url: imager
         - title: Indicator Positions 
           url: indicatorpositions
         - title: Key Capture Overview 
@@ -253,57 +253,57 @@ automenu:
         - title: KeyCapture
           url: keycapture
         - title: Keylight
-          url: Keylight
+          url: keylight
         - title: KeyState
           url: keystate
         - title: MinimizeButton
-          url: MinimizeButton
+          url: minimizebutton
         - title: Notification
-          url: Notification
+          url: notification
         - title: ODAX 
           url: odax
         - title: PowerOn
-          url: Poweron
+          url: poweron
         - title: Push
           url: push
         - title: QuitButton
-          url: QuitButton
+          url: quitbutton
         - title: Reboot
-          url: Reboot
+          url: reboot
         - title: Registry
-          url: Registry
+          url: registry
         - title: ReloadButton
-          url: ReloadButton
+          url: reloadbutton
         - title: RSM 
           url: rsm
         - title: Scanner 
           url: scanner
         - title: ScreenOrientation
-          url: ScreenOrientation
+          url: screenorientation
         - title: Signal 
           url: signal
         - title: SignatureCapture 
           url: signaturecapture
         - title: SIP
-          url: Sip
+          url: sip
         - title: SIPButton
-          url: SipButton
+          url: sipButton
         - title: SNTP 
           url: sntp
         - title: StopButton
-          url: StopButton
+          url: stopbutton
         - title: Stylus
           url: stylus
         - title: TextSize 
           url: textsize
         - title: Timer
-          url: Timer
+          url: timer
         - title: TopCommandArea
-          url: TopCommandArea
+          url: topcommandarea
         - title: Volume
-          url: Volume
+          url: volume
         - title: ZoomTextButton
-          url: ZoomTextButton
+          url: zoomtextbutton
 product: Enterprise Browser
 productversion: '1.4'
 ---

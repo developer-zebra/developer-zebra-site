@@ -1,28 +1,41 @@
 ---
-title: ##[Back To Decoders](toc_decoders)
+title: Code39 Barcode-Capture Decoders
+description: 
+layout: list-apis.html
+automenu:
+  items:
+    - title:  Related Pages
+      items:
+        - title: Back to Decoders Page
+          url: ../toc_decoders
+        - title: Back to Main API Page
+          url: ../../../api
+        - title: Compatibility Matrix
+          url: ../../../guide/compatibility
+        - title: Migration Guides
+          url: ../../../guide
+    - title: RhoElements 2.x Decoder APIs
+      items:
+        - title: Code39
+          url: ../code39
+        - title: Code39code32Prefix
+          url: ../Code39Code32Prefix
+        - title: Code39concatenation
+          url: ../Code39concatenation
+        - title: Code39convertToCode32
+          url: ../Code39ConvertToCode32
+        - title: Code39fullAscii
+          url: ../Code39FullASCII
+        - title: Code39maxLength
+          url: ../Code39MaxLength
+        - title: Code39minLength
+          url: ../Code39MinLength
+        - title: Code39redundancy
+          url: ../Code39Redundancy
+        - title: Code39reportCheckDigit
+          url: ../Code39ReportCheckDigit
+        - title: Code39securityLevel
+          url: ../Code39securityLevel
+        - title: Code39verifyCheckDigit
+          url: ../Code39VerifyCheckDigit
 ---
-Code39: RhoElements Barcode Capture Decoders
-===
-
-* ### [Code39](code39)
-
-* ### [Code39code32Prefix](Code39Code32Prefix)
-
-* ### [Code39concatenation](Code39concatenation)
-
-* ### [Code39convertToCode32](Code39ConvertToCode32)
-
-* ### [Code39fullAscii](Code39FullASCII)
-
-* ### [Code39maxLength](Code39MaxLength)
-
-* ### [Code39minLength](Code39MinLength)
-
-* ### [Code39redundancy](Code39Redundancy)
-
-* ### [Code39reportCheckDigit](Code39ReportCheckDigit)
-
-* ### [Code39securityLevel](Code39securityLevel)
-
-* ### [Code39verifyCheckDigit](Code39VerifyCheckDigit)
-

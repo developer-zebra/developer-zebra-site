@@ -1,14 +1,27 @@
 ---
-title: ##[Back To Decoders](toc_decoders)
+title: UPCe0 Barcode-Capture Decoders
+description: 
+layout: list-apis.html
+automenu:
+  items:
+    - title: Related Pages
+      items:
+        - title: Back to Decoders Page
+          url: ../toc_decoders
+        - title: Back to Main API Page
+          url: ../../../api
+        - title: Compatibility Matrix
+          url: ../../../guide/compatibility
+        - title: Migration Guides
+          url: ../../../guide
+    - title: RhoElements 2.x Decoder APIs
+      items:
+        - title: Upce0
+          url: ../upce0
+        - title: Upce0convertToUpca
+          url: ../upce0ConvertToupca
+        - title: Upce0preamble
+          url: ../upce0preamble
+        - title: Upce0reportCheckDigit
+          url: ../upce0ReportCheckDigit
 ---
-Upce0: RhoElements Barcode Capture Decoders
-===
-
-* ### [Upce0](upce0)
-
-* ### [Upce0convertToUpca](upce0ConvertToupca)
-
-* ### [Upce0preamble](upce0preamble)
-
-* ### [Upce0reportCheckDigit](upce0ReportCheckDigit)
-

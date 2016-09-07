@@ -1,13 +1,15 @@
 ---
-title: Code128 Barcode Capture Decoders
+title: Code128 Barcode-Capture Decoders
 description: 
 layout: list-apis.html
 automenu:
   items:
-    - title: 
+    - title:  Related Pages
       items:
-        - title: Back to All-APIs Page
-          url: ../../api
+        - title: Back to RE 2.x Decoders Page
+          url: ../toc_decoders
+        - title: Back to Main API Page
+          url: ../../../api
         - title: Compatibility Matrix
           url: ../../../guide/compatibility
         - title: Migration Guides

@@ -1,6 +1,6 @@
 ---
 title: Enterprise Browser - Supported APIs 
-description: Zebra recommends the use of Enterprise Browser APIs whenever possible. However, the EB runtime platform was engineered for backward compatibility with PocketBrowser 2.x and 3.x, RhoElements 2.x and the RhoMobile 4.2 Shared Runtime APIs. Some restrictions apply. See the API Usage Guide for more information, and individual API reference pages (linked below) for the usage details of each API.
+description: Zebra recommends the use of Enterprise Browser APIs whenever possible. To access functionality not implemented in EB or for running legacy apps, the APIs of PocketBrowser 2.x and 3.x, RhoElements 2.x and the RhoMobile 4.2 Shared Runtime can be used within certain boundaries. See the API Usage Guide for more information, and individual API reference pages (linked below) for the usage details and specific restrictions of each.
 layout: list-apis.html
 automenu:
   items:

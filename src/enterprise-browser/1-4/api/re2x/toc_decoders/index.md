@@ -1,19 +1,17 @@
 ---
-title: RhoElements Barcode Capture Decoders 
+title: RhoElements Barcode-Capture Decoders 
 description: 
 layout: list-apis.html
 automenu:
   items:
-    - title: Overview
+    - title: Related Pages
       items:
-        - title: Back to Decoders Page
-          url: ../toc_decoders
         - title: Back to Main API Page
-          url: ../../api
+          url: ../../../api
         - title: Compatibility Matrix
-          url: ../../guide/compatibility
+          url: ../../../guide/compatibility
         - title: Migration Guides
-          url: ../../guide
+          url: ../../../guide
     - title: RhoElements 2.x Decoder APIs
       items:
         - title: AllDecoders

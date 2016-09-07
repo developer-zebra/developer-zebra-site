@@ -6,36 +6,31 @@ productversion: '2.1'
 ---
 
 ##Before you get started
-In order to use the EMDK for Xamarin, you must have the Xamarin Platform installed on your development system. Xamarin Studio will be installed as part of the Xamarin Platform. If you intend to use Microsoft Visual Studio as your development environment, you must install Microsoft Visual Studio 2013 or higher. Zebra does not provide licenses for Microsoft Visual Studio or licenses for Xamarin Platform. Further information on obtaining licenses or getting started with these products, can be found at the following links.
+In order to use the EMDK for Xamarin, you must have the Xamarin Platform installed on your development system. When developing on Windows, you will need to use Microsoft Visual Studio 2013 or higher as your development environment. When developing on Mac you will need to use Xamarin Studio as your development environment. Xamarin Studio will be installed as part of the Xamarin Platform on Mac.  Zebra does not provide licenses for Microsoft Visual Studio or licenses for Xamarin Platform. Further information on obtaining licenses or getting started with these products, can be found at the following sections.
 
 ###Development Environment
-Consult the [Xamarin](http://developer.xamarin.com/guides/android/getting_started/) and Microsoft documentation for installing and setting up Xamarin and Visual Studio:
-
-* Xamarin.Android (Includes Xamarin Studio)
-	* [Windows Setup](http://developer.xamarin.com/guides/android/getting_started/installation/windows/)
-	* [Mac Setup](http://developer.xamarin.com/guides/android/getting_started/installation/windows/)
-
-* [Microsoft Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs) (Recommended)
+Consult the [Xamarin](http://developer.xamarin.com/guides/android/getting_started/) and [Microsoft documentation](https://www.visualstudio.com/downloads/download-visual-studio-vs) for installing and setting up Xamarin.Android, Visual Studio(Windows) or Xamarin Studio(Mac):
 
 
+<!---
 ### Xamarin Licensing
 * When using **Visual Studio** for EMDK development, a Xamarin **Business** License or higher is required.
 
 * When using **Xamarin Studio** for EMDK development, a Xamarin **Indie** License or higher is required.
 
 Learn more about [Xamarin Licensing options](https://store.xamarin.com/).
-
+-->
 
 
 ##Getting Started
 ### 1) Install The Visual Studio Extension or Xamarin Studio Add-in
 
-Download and install the Visual Studio Extension using the online extension gallery.
+Download and install the Visual Studio Extension(Windows) using the online extension gallery.
 
 - [Read the Visual Studio Setup Guide](/emdk-for-xamarin/2-1/guide/vs/setup)
 
 
-Download and install the Xamarin Studio Add-in using the Add-in Manager.
+Download and install the Xamarin Studio Add-in(Mac) using the Add-in Manager.
 
 - [Read the Xamarin Studio Setup Guide](/emdk-for-xamarin/2-1/guide/xs/setup)
 

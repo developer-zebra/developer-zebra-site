@@ -1,7 +1,12 @@
 ---
-title: all_decoders.md
+title: 
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-﻿<html>
+
+<html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>

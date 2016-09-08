@@ -14,18 +14,18 @@ automenu:
           url: ../../../guide
     - title: PocketBrowser 3.x Decoder APIs
       items:
-        - title: AllDecoders
-          url: decoders/all_decoders
+        - title: All Decoders
+          url: all_decoders
         - title: AusPostal
-          url: ../auspostal
+          url: auspostal
         - title: CanPostal
-          url: ../canpostal
+          url: canpostal
         - title: Aztec
-          url: ../aztec
+          url: aztec
         - title: chinese_2of5
-          url: ../chinese_2of5
+          url: chinese_2of5
         - title: Codabar
-          url: ../toc_codeabar
+          url: toc_codeabar
         - title: Code11
           url: ../toc_code11
         - title: Code128

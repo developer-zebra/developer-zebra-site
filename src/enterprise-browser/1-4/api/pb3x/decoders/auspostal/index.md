@@ -1,7 +1,13 @@
 ---
-title: auspostal.md
+title: Auspostal Decoder
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: 
 ---
-﻿<html>
+The Auspostal Meta Tag is an action tag used to enable or disable the auspostal decoder.
+
+<html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>

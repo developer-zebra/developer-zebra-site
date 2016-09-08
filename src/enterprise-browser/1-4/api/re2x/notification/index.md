@@ -5,7 +5,6 @@ product: Enterprise Browser
 layout: guide.html
 subhead: 
 ---
-
 ## Overview
 The Notification Module is used to control the notification objects such as the LEDs, beeper and pager on the device. While some devices are equipped more than one of a given object type, most have multiple LEDs, a single beeper and a single pager. 
 

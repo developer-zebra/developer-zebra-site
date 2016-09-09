@@ -11,91 +11,91 @@ The All Decoders Meta Tag is an action tag used to set the set the barcode scann
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>
-					body
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:x-small;
-					margin:20;
-					}
-					h1
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:medium;
-					font-weight:bold;
-					}
-					th
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:x-small;
-					font-weight:bold;
-					text-align:left;
-					background-color:#CCCCCC;
-					}
-					td
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:x-small;
-					text-align:left;
-					}
-					.clsRef
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:small;
-					color:#003399;
-					font-weight:bold;
-					text-align:left;
-					}
-					.clsSyntax
-					{
-					font-family:courier;
-					font-size:x-small;
-					text-align:left;
-					background-color:#ffffff;
-					}
-					.clsSyntaxHeadings
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:x-small;
-					font-weight:bold;
-					text-align:left;
-					color:#000066;
-					background-color:#efeff7;
-					border-bottom: #c8cdde 1px solid;
-					}
-					.clsSyntaxCells
-					{
-					font-family:verdana,arial,helvetica;
-					font-size:x-small;
-					text-align:left;
-					background-color:#f7f7ff;
-					border-bottom: #d5d5d3 1px solid;
-					}
-				</style>
+          body
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:x-small;
+          margin:20;
+          }
+          h1
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:medium;
+          font-weight:bold;
+          }
+          th
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:x-small;
+          font-weight:bold;
+          text-align:left;
+          background-color:#CCCCCC;
+          }
+          td
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:x-small;
+          text-align:left;
+          }
+          .clsRef
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:small;
+          color:#003399;
+          font-weight:bold;
+          text-align:left;
+          }
+          .clsSyntax
+          {
+          font-family:courier;
+          font-size:x-small;
+          text-align:left;
+          background-color:#ffffff;
+          }
+          .clsSyntaxHeadings
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:x-small;
+          font-weight:bold;
+          text-align:left;
+          color:#000066;
+          background-color:#efeff7;
+          border-bottom: #c8cdde 1px solid;
+          }
+          .clsSyntaxCells
+          {
+          font-family:verdana,arial,helvetica;
+          font-size:x-small;
+          text-align:left;
+          background-color:#f7f7ff;
+          border-bottom: #d5d5d3 1px solid;
+          }
+        </style>
     <title>All_Decoders</title><script type="text/javascript" language="Javascript">
-					
-					function ToggleSpan(SpanId, ImgID)
-					{
-						var path = '../../Resources/'
-					//Toggle the span view on or off
-					var Rollup = document.all.item(SpanId);
-					var RollupImg = document.all.item(ImgID);
-					var ToggleExpand = path + 'ToggleExpand.gif';
-					var ToggleCollapse = path + 'ToggleCollapse.gif';
-					Rollup.style.display = (Rollup.style.display=='none' ? 'block' : 'none');
-					RollupImg.src = (Rollup.style.display=='none' ? ToggleExpand : ToggleCollapse);
-					}
+          
+          function ToggleSpan(SpanId, ImgID)
+          {
+            var path = '../../Resources/'
+          //Toggle the span view on or off
+          var Rollup = document.all.item(SpanId);
+          var RollupImg = document.all.item(ImgID);
+          var ToggleExpand = path + 'ToggleExpand.gif';
+          var ToggleCollapse = path + 'ToggleCollapse.gif';
+          Rollup.style.display = (Rollup.style.display=='none' ? 'block' : 'none');
+          RollupImg.src = (Rollup.style.display=='none' ? ToggleExpand : ToggleCollapse);
+          }
 
-					function CopyTemplate(sControl)
-					{
-					//Copy the template values held in the appropriate textarea to clipboard
-					if (window.clipboardData)
-					{
-					window.clipboardData.setData("Text", document.all.item(sControl).value);
-					}
-					return false;
-					}
-					
-				</script></head>
+          function CopyTemplate(sControl)
+          {
+          //Copy the template values held in the appropriate textarea to clipboard
+          if (window.clipboardData)
+          {
+          window.clipboardData.setData("Text", document.all.item(sControl).value);
+          }
+          return false;
+          }
+          
+        </script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <table width="100%">
       <tr>
@@ -106,15 +106,15 @@ The All Decoders Meta Tag is an action tag used to set the set the barcode scann
       </tr>
     </table>
     <hr size="1">
-    <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif&#xA;						">
-					Syntax
-				</span></nobr></p>
+    <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif&#xA;            ">
+          Syntax
+        </span></nobr></p>
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <th class="clsSyntaxHeadings">All_Decoders (META Tag) Syntax
-						</th>
+            </th>
           </tr>
           <tr>
             <td class="clsSyntaxCells">
@@ -123,13 +123,13 @@ The All Decoders Meta Tag is an action tag used to set the set the barcode scann
           </tr>
         </table>
       </blockquote><br></div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ParametersWSpan', 'imgParametersWToggle')"><img align="absmiddle" id="imgParametersWToggle" alt="ParametersW Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif&#xA;					"></span>
-			Parameters
-		</p>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ParametersWSpan', 'imgParametersWToggle')"><img align="absmiddle" id="imgParametersWToggle" alt="ParametersW Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif&#xA;          "></span>
+      Parameters
+    </p>
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
-				Items listed in this section indicate parameters, or attributes which can be set.
-				<BR><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
+        Items listed in this section indicate parameters, or attributes which can be set.
+        <BR><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <col width="20%">
           <col width="20%">
           <col width="38%">
@@ -148,12 +148,12 @@ The All Decoders Meta Tag is an action tag used to set the set the barcode scann
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>all_decoders:[Value]
-													</b></td>
+                          </b></td>
             <td valign="top" class="clsSyntaxCells">Enabled/Disabled</td>
             <td valign="top" class="clsSyntaxCells">Enable/Disables all available decoders</td>
             <td valign="top" class="clsSyntaxCells">
-												N/A
-											</td>
+                        N/A
+                      </td>
           </tr>
         </table>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -169,12 +169,12 @@ The All Decoders Meta Tag is an action tag used to set the set the barcode scann
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><b>Copy parameters template to clipboard:</b></nobr></td>
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsW" alt="Copy META Tag template to clipboard" onclick="CopyTemplate('txtMETATemplateW')" onmouseover="this.style.cursor='hand'" src="../../Resources/CopyDefaults.gif">
-									META Tags
-								</nobr></td>
+                  META Tags
+                </nobr></td>
             <td></td>
             <td valign="middle" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsW" alt="Copy Javascript template to clipboard" onclick="CopyTemplate('txtJavascriptTemplateW')" onmouseover="this.style.cursor='hand'" src="../../Resources/CopyDefaults.gif">
-									Javascript
-								</nobr></td>
+                  Javascript
+                </nobr></td>
             <td></td>
           </tr>
         </table>
@@ -198,8 +198,8 @@ The All_Decoders META Tag is an action tag used to set the set the barcode scann
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
     <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ExamplesSpan', 'imgExamplesToggle')"><img align="absmiddle" id="imgExamplesToggle" alt="Examples Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
-			Examples
-		</p>
+      Examples
+    </p>
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example enables all available decoders then turns on the scanner:</p>
@@ -219,8 +219,8 @@ The All_Decoders META Tag is an action tag used to set the set the barcode scann
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EJB');">
-									Copy example to clipboard
-								</nobr></td>
+                  Copy example to clipboard
+                </nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EJB">&lt;!-- 
@@ -246,8 +246,8 @@ The following example enables all available decoders then turns on the scanner:
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EQB');">
-									Copy example to clipboard
-								</nobr></td>
+                  Copy example to clipboard
+                </nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EQB">&lt;!-- 
@@ -259,8 +259,8 @@ The following example enables all available decoders then turns on the scanner:
       </blockquote>
     </div>
     <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('InfoSpan', 'imgInfoToggle')"><img align="absmiddle" id="imgInfoToggle" alt="Info Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
-			Additional Information
-		</p>
+      Additional Information
+    </p>
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -282,12 +282,11 @@ The following example enables all available decoders then turns on the scanner:
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
     <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('AlsoSpan', 'imgAlsoToggle')"><img align="absmiddle" id="imgAlsoToggle" alt="Also Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
-			See Also
-		</p>
+      See Also
+    </p>
     <div id="AlsoSpan" style="display:block">
-      <BLOCKQUOTE><a href="../Scanner.html&#xA;						">Scanner</a> </BLOCKQUOTE><br></div>
+      <BLOCKQUOTE><a href="../Scanner.html&#xA;           ">Scanner</a> </BLOCKQUOTE><br></div>
     <hr size="1">
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
-

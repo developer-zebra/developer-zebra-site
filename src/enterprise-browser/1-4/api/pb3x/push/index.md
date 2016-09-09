@@ -280,7 +280,6 @@ The Push META Tag is used to receive data over an HTTP connection.
         <div style="display:none"><textarea id="txtMETATemplateW">&lt;!-- 
 The Push META Tag is used to receive data over an HTTP connection.
 --&gt;
-
 &lt;!-- &lt;META HTTP-Equiv="Push" Content="Port:[Value]"&gt; --&gt;      &lt;!-- Port number to listen on. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Push" Content="Passkey:[Value]"&gt; --&gt;      &lt;!-- If specified then the client must include passkey=value in the passed parameters. Case sensitive. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Push" Content="Response:[Value]"&gt; --&gt;      &lt;!-- Name of the HTML file to return to the client after a successful request. --&gt;

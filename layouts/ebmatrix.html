@@ -1,5 +1,7 @@
 
 {{> header}}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
+<link rel="stylesheet" href="/css/bootstrap-multiselect.css" type="text/css"/>
     <section id="blog" >
         <div class="">
             <section class="content-with-sidebar">
@@ -15,18 +17,14 @@
                                 <div class="">
                                     <h1>{{ title }}</h1>
                                     <p>
-                                    {{#if subhead}}
-                                        {{ subhead }}
-                                    {{else}}
-                                        {{#if product}}
-                                            {{ product }}
-                                        {{/if}}
-                                        {{#if productversion}}
-                                            {{ productversion }}
-                                        {{/if}}
-                                        {{#if mxversion}}
-                                            MX: {{ mxversion}}
-                                        {{/if}}
+                                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                        MX: {{ mxversion}}
                                     {{/if}}
                                     </p>
                                 </div>
@@ -57,5 +55,12 @@
     </section>    
 
 {{> modal}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+<script src="/js/bootstrap-multiselect.js" ></script>
+<script src="/js/ebmatrix.js"></script>
+<script>
+    displayMatrix();
+</script>
+
 {{> footer}}
 

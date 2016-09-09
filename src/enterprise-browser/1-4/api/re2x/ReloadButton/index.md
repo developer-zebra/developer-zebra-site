@@ -3,8 +3,9 @@ title: ReloadButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The ReloadButton Module is used to set the parameters of the Reload Button, which refreshes the current page when pressed.
 
@@ -95,6 +96,8 @@ The following example shows the Reload button and displays the reload_up.gif / r
 
 	<META HTTP-Equiv="ReloadButton" Content="ImageUp:url('http://myaddress/reload_up.gif'); ImageDown:url('http://myaddress/reload_down.gif'); Visibility:Visible">
 					
+
+
 
 
 

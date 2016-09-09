@@ -3,8 +3,9 @@ title: UpcEanConvertRssToUpcEan Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanConvertRssToUpcEan Decoder Setting is used to set the upcEanConvertRssToUpcEan property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets upcEanConvertRssToUpcEan prop
 	<META HTTP-Equiv="scanner" Content="upcEanConvertRssToUpcEan:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

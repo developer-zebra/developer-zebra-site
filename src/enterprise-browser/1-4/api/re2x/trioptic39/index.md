@@ -3,8 +3,9 @@ title: Trioptic39 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Trioptic39 Decoder is used to enable or disable the Trioptic39 decoder.
@@ -69,3 +70,5 @@ The following example enables the scanner to read all labels except Trioptic39:
 	<META HTTP-Equiv="scanner" Content="allDecoders:enabled">
 	<META HTTP-Equiv="scanner" Content="Trioptic39:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
+
+

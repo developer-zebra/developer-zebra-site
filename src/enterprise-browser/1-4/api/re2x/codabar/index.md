@@ -1,10 +1,11 @@
 ---
-title: Codabar Decoder 
+title: Codabar Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Codabar Decoder is used to enable or disable the Codabar decoder.
@@ -72,6 +73,8 @@ The following example enables the scanner to read all labels except Codabar:
 	<META HTTP-Equiv="scanner" Content="Codabar:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

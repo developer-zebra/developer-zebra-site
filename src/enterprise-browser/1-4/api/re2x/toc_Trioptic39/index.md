@@ -1,6 +1,6 @@
 ---
 title: Trioptic39 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -20,4 +20,10 @@ automenu:
           url: ../trioptic39
         - title: Trioptic39redundancy
           url: ../trioptic39Redundancy
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

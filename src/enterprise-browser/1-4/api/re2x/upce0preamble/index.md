@@ -3,8 +3,9 @@ title: Upce0preamble Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Upce0preamble Decoder Setting is to set the upce0-preamble property which controls the preamble applied to the bar code.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-upce0preamble" Content="countryAndSystemChars">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

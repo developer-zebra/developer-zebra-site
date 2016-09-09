@@ -3,8 +3,9 @@ title: Korean3of5minLength Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Korean3of5minLength Decoder Setting is used to set the korean3of5 minLength property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets the minimum length of korean3
 	<META HTTP-Equiv="scanner" Content="korean3of5minLength:30">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

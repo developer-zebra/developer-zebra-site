@@ -3,8 +3,9 @@ title: Code39convertToCode32 Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code39convertToCode32 Decoder Setting is used to enable conversion from Code39 to Code32 bar code. If this flag is set, the bar code is converted to Code32, and Code32 parameters are used.
@@ -64,6 +65,8 @@ The following example enables the scanner to read only Code39 labels with the Co
 	<META HTTP-Equiv="scanner-Code39ConvertToCode32" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

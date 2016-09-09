@@ -1,6 +1,11 @@
 ---
 title: SNTP Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
+
 
 
 <b>
@@ -67,6 +72,8 @@ The following example sets the device time from a network time server:
 
 	<META HTTP-Equiv="SNTP" Content="serverIp:132.163.4.102">
 	
+
+
 
 
 

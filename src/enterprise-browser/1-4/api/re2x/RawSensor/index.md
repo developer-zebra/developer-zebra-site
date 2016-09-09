@@ -3,7 +3,9 @@ title: RawSensors
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The RawSensors Module is used to retrieve the raw data values of the specified sensors.
 
@@ -172,5 +174,7 @@ The following example enables all the sensors and waits for the updates through 
 	<P>
 	  <INPUT align="center" type="button" value="Retrieve Sensor Data" onclick="RawSensors.getSensorData();"><br>
 	
+
+
 
 

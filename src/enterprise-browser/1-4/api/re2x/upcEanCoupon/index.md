@@ -3,8 +3,9 @@ title: UpcEanCoupon Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanCoupon Decoder is used to enable or disable decoding of upcEanCoupon barcodes.
@@ -78,6 +79,8 @@ The following example disables the scanner from decoding upcEanCoupon barcodes:
 	<META HTTP-Equiv="scanner" Content="upcEanCoupon:false">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

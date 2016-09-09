@@ -3,8 +3,9 @@ title: CodabarClsiEditing Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The CodabarClsiEditing Decoder Setting is used to enable Codabar CLSi formatting.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-CodabarCLSiEditing" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

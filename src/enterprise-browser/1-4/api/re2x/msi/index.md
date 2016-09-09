@@ -3,8 +3,9 @@ title: Msi Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Msi Decoder is used to enable or disable the msi decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except msi:
 	<META HTTP-Equiv="scanner" Content="msi:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

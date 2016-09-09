@@ -1,10 +1,11 @@
 ---
-title: DataMatrix Decoder 
+title: DataMatrix Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The DataMatrix Decoder is an action tag used to enable or disable the DataMatrix decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except DataMatrix:
 	<META HTTP-Equiv="scanner" Content="DataMatrix:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

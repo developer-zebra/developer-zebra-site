@@ -1,10 +1,10 @@
 ---
 title: Code39 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
-    - title:  Related Pages
+    - title: Related Pages
       items:
         - title: Back to RE 2.x Decoders Page
           url: ../toc_decoders
@@ -38,4 +38,10 @@ automenu:
           url: ../Code39securityLevel
         - title: Code39verifyCheckDigit
           url: ../Code39VerifyCheckDigit
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

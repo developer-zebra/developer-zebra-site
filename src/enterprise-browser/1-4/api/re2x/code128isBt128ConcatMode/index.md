@@ -3,8 +3,9 @@ title: Code128isBt128ConcatMode Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code128isBt128ConcatMode Decoder Setting is used to set the Code128 ISBT Concatenation mode property. This feature allows a pair of barcodes which meet certain criteria defined in the ISBT128 spec to be reported as a single barcode. This parameter describes the different concatenation modes available for ISBT128.
@@ -54,6 +55,8 @@ The following example enables the scanner to read only Code128 labels with the c
 	<META HTTP-Equiv="scanner" Content="code128isBt128ConcatMode:auto">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

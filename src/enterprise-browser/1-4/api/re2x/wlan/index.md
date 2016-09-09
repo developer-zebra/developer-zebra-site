@@ -1,5 +1,9 @@
 ---
 title: Wlan Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -106,6 +110,8 @@ Enable/disable the radio on a button click
 	</body>
 	</html>
 	
+
+
 
 
 

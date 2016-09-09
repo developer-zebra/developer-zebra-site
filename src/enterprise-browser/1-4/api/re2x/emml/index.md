@@ -3,7 +3,9 @@ title: EMML Profile
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The EmmlProfile Module is used to manage EMML profile pages.
 
@@ -94,5 +96,7 @@ The following is an example of an EMML Profile page.
 	  scanner-i2of5: enabled;
 	  scanner-code128: enabled;
 	}
+
+
 
 

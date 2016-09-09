@@ -3,8 +3,9 @@ title: Scanner Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Scanner Module controls the functionality of the device scanner.
 
@@ -580,4 +581,6 @@ For all the examples described above, the 'setFieldValue()' JavaScript function 
 	function setFieldValue(returnval){
 		document.getElementById("result").innerHTML=returnval;
 	}
+
+
 

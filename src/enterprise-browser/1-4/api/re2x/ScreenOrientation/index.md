@@ -3,8 +3,9 @@ title: ScreenOrientation Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The ScreenOrientation Module controls the screen orientation and layout, and can register to receive an event when it changes.
 
@@ -108,6 +109,8 @@ The following example orientates the screen to righthanded in landscape mode:
 
 	<META HTTP-Equiv="ScreenOrientation" Content="RightHanded">
 	
+
+
 
 
 

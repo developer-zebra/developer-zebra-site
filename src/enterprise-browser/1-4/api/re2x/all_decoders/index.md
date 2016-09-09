@@ -1,10 +1,11 @@
 ---
-title:  AllDecoders Module
+title: AllDecoders Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 The AllDecoders Module is used to set the barcode scanner to read all barcode types that the scanner is capable of reading.
 
@@ -109,3 +110,5 @@ The following example enables all available decoders then turns on the scanner:
 
 	:::html
 	<META HTTP-Equiv="scanner" Content="allDecoders:enabled;enable">
+
+

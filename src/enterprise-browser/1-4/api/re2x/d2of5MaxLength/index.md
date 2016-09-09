@@ -3,8 +3,9 @@ title: D2of5maxLength Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The D2of5maxLength Decoder Setting is used to set the d2of5 MaxLength property. Setting this property will help prevent partial decoding of barcodes.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-d2of5maxlength" Content="30">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

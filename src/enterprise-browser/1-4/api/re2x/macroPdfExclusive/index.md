@@ -3,8 +3,9 @@ title: MacroPdfExclusive Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MacroPdfExclusive Decoder Setting is used to set the macroPdfExclusive property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets macroPdfExclusive property
 	<META HTTP-Equiv="scanner" Content="macroPdfExclusive:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

@@ -1,10 +1,11 @@
 ---
-title: Korean3of5maxLength 
+title: Korean3of5maxLength
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Korean3of5maxLength Decoder Setting is used to set the korean3of5 maxLength property.
 
@@ -53,6 +54,8 @@ The following example enables the scanner and sets the maximum length of korean3
 	<META HTTP-Equiv="scanner" Content="korean3of5maxLength:30">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

@@ -3,8 +3,9 @@ title: CompositeAbUccLinkMode Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The CompositeAbUccLinkMode Decoder Setting describes whether the UCC link mode is enabled.
@@ -62,6 +63,8 @@ The following example enables the scanner to read barcodes with the compositeAbU
 	<META HTTP-Equiv="scanner" Content="compositeAbUccLinkMode:always">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

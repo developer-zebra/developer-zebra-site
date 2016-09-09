@@ -3,8 +3,9 @@ title: Reboot Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Reboot Module immediately reboots to device when invoked.
 
@@ -145,3 +146,5 @@ If applicable, the following example performs a cold CAD boot on CE6 devices (1+
 	end
 
 Both 'coldBoot' and 'coldCADBoot' can be called from HTML in a way similar to the one described for 'warmBoot' above.
+
+

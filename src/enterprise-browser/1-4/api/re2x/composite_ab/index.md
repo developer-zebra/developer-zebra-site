@@ -1,10 +1,11 @@
 ---
-title: CompositeAb Decoder 
+title: CompositeAb Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The CompositeAb Decoder is used to enable or disable the Composite AB decoder.
@@ -79,6 +80,8 @@ or
 		scanner.enable();
 	}
 	
+
+
 
 
 

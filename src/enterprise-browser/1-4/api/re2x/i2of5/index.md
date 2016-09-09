@@ -1,10 +1,11 @@
 ---
-title: I2of5 Decoder 
+title: I2of5 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The I2of5 Decoder is used to enable or disable the i2of5 decoder.
@@ -78,6 +79,8 @@ The following example enables the scanner to read all labels except i2of5:
 	<META HTTP-Equiv="scanner" Content="i2of5:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

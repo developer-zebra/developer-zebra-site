@@ -1,6 +1,6 @@
 ---
 title: MacroPdf Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -24,4 +24,10 @@ automenu:
           url: ../macroPdfConvertToPdf417
         - title: MacroPdfExclusive
           url: ../macroPdfExclusive
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

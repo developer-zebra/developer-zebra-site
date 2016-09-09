@@ -1,5 +1,9 @@
 ---
 title: IoSystem Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -114,6 +118,8 @@ The following example registers to receive ignition port change events. PortEven
 	   }
 	</script>
 	
+
+
 
 
 

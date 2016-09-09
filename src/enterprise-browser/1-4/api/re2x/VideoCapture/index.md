@@ -3,8 +3,9 @@ title: VideoCapture Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The VideoCapture Module captures video from the seleted camera saves it as a file on the device.
 
@@ -175,6 +176,8 @@ The following JavaScript will start a 30 second video capture when onStart is ca
 	      videoCapture.start();
 	   }
 	</script>
+
+
 
 
 

@@ -3,7 +3,7 @@ title: FileTransfer Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The FileTransfer Module is used to send or receive files between the device filestore and an FTP or HTTP site.
@@ -204,4 +204,6 @@ If an invalid username or password are used on an FTP transfer to a remote serve
 
 ###CreateFolders 
 The CreateFolder method must be set to "True" if one or more destination folders are to be created to receive transferred file(s). Failure to do so could result in an incorrect "File Received" message. 
+
+
 

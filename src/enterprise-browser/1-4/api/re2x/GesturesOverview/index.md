@@ -1,5 +1,8 @@
 ---
-title: Gesturing in RhoElements: An Overview
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 <b>RhoElements is capable of capturing gestures from the touch screen if the appropriate hardware is installed.  You can define multiple gestures on the same page but to avoid performance issues it is recommended you do not create more than 5 per page.</b>
  
@@ -63,4 +66,6 @@ Shake gestures detect if the device is shaken as per the specified threshold val
 <center><img src="/images/gestures/shake.gif"></center>
 
 The threshold parameter can be used to define the shake intensity and the quiet parameter can be used to avoid detecting the same gesture continuously.
+
+
 

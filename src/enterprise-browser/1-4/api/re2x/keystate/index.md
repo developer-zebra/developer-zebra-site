@@ -3,8 +3,9 @@ title: KeyState Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The KeyState Module is used to set the parameters of the KeyState indicators, which display icons for Shift, Alt, Control, Function, Caps, Num lock, and the state of the Orange keys on some devices. Icons are placed beginning at the leftmost screen position in a row that extends toward the right, as necessary.
 
@@ -82,6 +83,8 @@ The following example shows the KeyState and sets the right and top coordinates 
 
 	<META HTTP-Equiv="KeyState" Content="Visibility:Visible; Right:20; Top:20">
 	        
+
+
 
 
 

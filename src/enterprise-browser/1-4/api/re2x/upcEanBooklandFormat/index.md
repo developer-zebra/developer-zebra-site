@@ -3,8 +3,9 @@ title: UpcEanBooklandFormat Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanBooklandFormat Decoder Setting is used to specify the bookland format to use for UPC EAN bookland barcodes.
@@ -54,6 +55,8 @@ The following example enables the scanner to read barcodes with the upcEanBookla
 	<META HTTP-Equiv="scanner" Content="upcEanBooklandFormat:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

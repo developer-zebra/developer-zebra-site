@@ -3,8 +3,9 @@ title: TopCommandArea Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The TopCommandArea Module is used to set the parameters of the Top Command Area, a region at the top of the screen designed to separate RhoElements controls such as the address bar or Go button from other parts of an application.
 
@@ -79,3 +80,5 @@ The following example shows the Top Command Area, sets the Height to 100 and bac
 The following example shows the Top Command Area, sets the height to 100 and displays image tca.gif on it (resizing the image if necessary)
 
 	<META HTTP-Equiv="TopCommandArea" Content="Height:100; Visibility:Visible; Image:url('http://myaddress/tca.gif')">
+
+

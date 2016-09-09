@@ -3,8 +3,9 @@ title: History Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The History Meta Tag is an action tag used to navigate forward or backward through the page history.
 
@@ -92,6 +93,8 @@ The following example navigates back one page when the delete key is pressed (re
 	    }
 	</script>
 	
+
+
 
 
 

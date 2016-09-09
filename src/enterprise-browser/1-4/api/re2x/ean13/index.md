@@ -1,10 +1,11 @@
 ---
-title: Ean13 Decoder 
+title: Ean13 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Ean13 Decoder is used to enable or disable the ean13 decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except ean13:
 	<META HTTP-Equiv="scanner" Content="ean13:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

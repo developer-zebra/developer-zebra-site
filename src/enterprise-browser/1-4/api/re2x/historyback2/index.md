@@ -1,5 +1,9 @@
 ---
-title: History:Back Navigation
+title: 'History:Back Navigation'
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -49,6 +53,8 @@ The following example shows how to navigate to the previous address using JavaSc
 	   }
 	</script>
 	
+
+
 
 
 

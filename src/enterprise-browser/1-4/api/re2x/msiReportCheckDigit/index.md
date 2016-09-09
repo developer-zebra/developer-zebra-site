@@ -3,8 +3,9 @@ title: MsiReportCheckDigit Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MsiReportCheckDigit Decoder Setting is used to set the msi ReportCheckDigit property which enables reporting of the bar code check digit(s).
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-msiReportCheckDigit" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

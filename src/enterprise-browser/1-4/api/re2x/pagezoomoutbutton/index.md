@@ -1,5 +1,9 @@
 ---
 title: ZoomOutPageButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -88,6 +92,8 @@ The following example shows the ZoomOutPage button, sets its top coordinate to 3
 
 	<META HTTP-Equiv="ZoomOutPageButton" Content="top:30 left:50 width:30 height:30 imageup:http://myaddress/foo.gif visibility:visible">
 	
+
+
 
 
 

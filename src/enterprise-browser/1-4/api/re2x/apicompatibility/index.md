@@ -1,5 +1,9 @@
 ---
-title:  Mobile API Compatibility 
+title: Mobile API Compatibility
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 The following table shows the compatibility for each Mobile API.
 
@@ -1693,3 +1697,5 @@ The following table shows the compatibility for each Mobile API.
 		</td>
 	</tr>
 </table>
+
+

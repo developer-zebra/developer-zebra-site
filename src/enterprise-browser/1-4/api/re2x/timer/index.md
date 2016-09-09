@@ -3,8 +3,9 @@ title: Timer Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Timer Module is used to set a timer and register an action to be performed when the timer expires. Once the timer is started, the interval time cannot be changed without stopping and restarting the timer.
 
@@ -105,6 +106,8 @@ The following example shows a JavaScript alert at 10 second intervals:
 	  <BODY><DIV ID="divTimer"></DIV></BODY>
 	</HTML>
 	
+
+
 
 
 

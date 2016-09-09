@@ -3,8 +3,9 @@ title: UpcEanBookland Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanBookland Decoder is an action tag used to enable or disable decoding of upcEanBookland barcodes.
@@ -70,6 +71,8 @@ The following example disables the scanner from decoding upcEanBookland barcodes
 	<META HTTP-Equiv="scanner" Content="upcEanBookland:false">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

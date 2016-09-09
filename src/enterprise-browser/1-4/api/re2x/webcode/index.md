@@ -3,8 +3,9 @@ title: Webcode Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Webcode Decoder is used to enable or disable the Webcode decoder.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-Webcode" Content="disabled">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

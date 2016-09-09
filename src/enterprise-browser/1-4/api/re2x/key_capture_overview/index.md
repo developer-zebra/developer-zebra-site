@@ -1,5 +1,9 @@
 ---
 title: Key Handling in RhoElements
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 <b>Using a combination of Key Capture and Accelerator Keys it is possible for the web page designer to fully customise how RhoElements processes keyboard button presses, this document outlines how this can be achieved.</b>
 
@@ -222,3 +226,5 @@ As already stated Accelerator keys are only applicable to Windows CE, Windows Mo
 Although this behaviour can not be customised with the 'AccelerateKey' metatag the developer can still use the KeyCapture tag to intercept the keys and disable the behaviour. In a multi-line text area pressing up when the cursor is on the top line will go back to the previous form control however pressing down will move to the next line (if applicable). Similarly if the cursor is in the bottom-most line of the text area pressing up will move the cursor to the previous line; pressing down will advance to the next control.
 
 Although the AccelerateKey behaviour can not be customised with the 'AccelerateKey' metatag the developer can still use the KeyCapture tag to intercept the keys and disable the behaviour.
+
+

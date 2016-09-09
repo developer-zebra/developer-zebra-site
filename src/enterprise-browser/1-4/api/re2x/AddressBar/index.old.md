@@ -1,10 +1,11 @@
 ---
-title:  AddressBar Module
+title: AddressBar Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The AddressBar Module is used to set the parameters of the address bar, which should be used only for debugging hybrid applications and is not designed to be used as a replacement for a web browser address bar. Press the 'Go' button or enter key to navigate to the typed URL.
@@ -142,3 +143,5 @@ The following example shows the address bar, sets the left and top coordinates t
 
 	:::html
 	<META HTTP-Equiv="AddressBar" Content="left:0; top:0; width:50">
+
+

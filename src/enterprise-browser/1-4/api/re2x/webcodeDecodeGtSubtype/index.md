@@ -3,8 +3,9 @@ title: WebcodeDecodeGtSubtype Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The WebcodeDecodeGtSubtype Decoder Setting is used to set the webcodeDecodeGtSubtype property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets webcodeDecodeGtSubtype proper
 	<META HTTP-Equiv="scanner" Content="webcodeDecodeGtSubtype:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

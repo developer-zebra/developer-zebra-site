@@ -1,5 +1,9 @@
 ---
 title: ZoomInPageButton Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -87,6 +91,8 @@ The following example shows the ZoomInPage button, sets its top coordinate to 30
 
 	<META HTTP-Equiv="ZoomInPageButton" Content="top:30 left:50 width:30 height:30 imageup:http://myaddress/foo.gif visibility:visible">
 	
+
+
 
 
 

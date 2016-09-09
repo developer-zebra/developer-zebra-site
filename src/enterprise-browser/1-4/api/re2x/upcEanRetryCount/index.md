@@ -3,8 +3,9 @@ title: UpcEanRetryCount Decoder String
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanRetryCount Decoder String is used to set the upc_ean retrycount for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive.
@@ -66,6 +67,8 @@ or
 	<META HTTP-Equiv="scanner-upcEanRetryCount" Content="8">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

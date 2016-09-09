@@ -3,8 +3,9 @@ title: Code39concatenation Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code39concatenation Decoder Setting is used to set the Code39concatenation property.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-Code39concatenation" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

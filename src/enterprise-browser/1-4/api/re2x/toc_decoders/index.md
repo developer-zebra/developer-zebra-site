@@ -1,6 +1,6 @@
 ---
-title: RhoElements Barcode-Capture Decoders 
-description: 
+title: RhoElements Barcode-Capture Decoders
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -88,3 +88,9 @@ automenu:
           url: ../toc_Upce1
         - title: Webcode
           url: ../toc_Webcode
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
+---
+
+

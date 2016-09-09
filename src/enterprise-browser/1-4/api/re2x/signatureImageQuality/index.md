@@ -3,8 +3,9 @@ title: SignatureImageQuality Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The SignatureImageQuality Decoder Setting is used to set the image quality property of the signature decoder.
@@ -55,6 +56,8 @@ The following example enables the scanner to specify the signatureImageQuality p
 	<META HTTP-Equiv="scanner" Content="signatureImageQuality:100">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

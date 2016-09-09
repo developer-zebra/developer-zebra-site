@@ -3,7 +3,7 @@ title: MinimizeButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The MinimizeButton Module is used to set the parameters of the minimize button, which hides the Enterprise Browser app from view and causes it to lose focus.
@@ -141,3 +141,4 @@ When the screen orientation changes, either using the ScreenOrientation tag or b
 
 ###Use in Production
 This API is designed for debugging your application only and should not be used in production
+

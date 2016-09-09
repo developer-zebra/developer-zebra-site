@@ -3,8 +3,9 @@ title: UpcaPreamble Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcaPreamble Decoder Setting is used to set the upcapreamble property which controls the preamble applied to the bar code.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-upcapreamble" Content="countryAndSystemChars">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

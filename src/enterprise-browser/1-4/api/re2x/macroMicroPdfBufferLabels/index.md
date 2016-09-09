@@ -3,8 +3,9 @@ title: MacroMicroPdfBufferLabels Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MacroMicroPdfBufferLabels Decoder Setting is used to set the macroMicroPdfBufferLabels property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets macroMicroPdfBufferLabels pro
 	<META HTTP-Equiv="scanner" Content="macroMicroPdfBufferLabels:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

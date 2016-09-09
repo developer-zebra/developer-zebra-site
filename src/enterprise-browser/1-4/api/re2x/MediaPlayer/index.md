@@ -3,7 +3,7 @@ title: MediaPlayer Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The MediaPlayer extension controls playback of audio, video, ringtones and other media files.
@@ -222,3 +222,4 @@ On Android devices, HTTPS is supported only on Android versions 4.0 (Ice Cream S
 
 When more flexible file transfer is required than is provided by MediaPlayer itself it is recommended to use the Network API to fetch the media file, and then to play the local file using MediaPlayer. For example, if playing a file from an FTP server, or an HTTP server requiring authentication. This can also be more efficient if the same file is to be played multiple times, especially on Windows Mobile/CE, where there is no streaming support and therefore the file is completely downloaded before being played. On Windows Mobile/CE devices, HTTPS file transfer is not supported.
                 
+

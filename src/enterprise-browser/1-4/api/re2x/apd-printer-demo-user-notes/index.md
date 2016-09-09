@@ -1,5 +1,9 @@
 ---
-title:  Zebra Adaptive Printer Driver - Printing Demo User Notes
+title: Zebra Adaptive Printer Driver - Printing Demo User Notes
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 The Zebra Adaptive Printer Driver (APD) provides a simple way to interface application software to virtually any portable printer. This simple demonstration application is intended to show the main functions of the Adaptive Printer Driver, and may also be used for test purposes. A variety of types of printer are supported and the user can add new data files to provide support for further printer types as required.
@@ -390,6 +394,8 @@ Return to Section 6 of this manual.
 Zebra Moto, Zebra Technologies and the Stylized M Logo are trademarks or registered trademarks of Zebra Trademark Holdings, LLC and are used under license. All other trademarks are the property of their respective owners.
 
 ©2011 Zebra Technologies, Inc. All Rights Reserved.
+
+
 
 
 

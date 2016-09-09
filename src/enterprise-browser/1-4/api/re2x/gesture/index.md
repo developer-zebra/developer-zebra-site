@@ -3,7 +3,7 @@ title: Gesture Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The Gesture Module is used to capture gestures drawn on a touch-sensitive screen. Multiple gestures can be defined for capture on a single page. Zebra recommends defining no more than five gestures per page to avoid performance issues. **Note**: Not supported on Windows CE if [debug buttons](../guide/configreference/#debugbuttons) are enabled in the `Config.xml` file.
@@ -744,3 +744,4 @@ Any parameter values out of the allowed range will be limited to the nearest all
 
 ### Diagnostics
 Note that diagnostics exist only for the purpose of understanding and evaluating the various parameters. They should not be enabled in the release version of the code. They may also not display correctly in every circumstance, e.g. when scrolling, or for certain sets of parameters, e.g. for nearly vertical linear gestures. Diagnostics are not available for Tilt and Shake gestures.
+

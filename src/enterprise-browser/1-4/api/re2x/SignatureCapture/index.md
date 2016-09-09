@@ -3,8 +3,9 @@ title: SignatureCapture Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The SignatureCapture Module presents a rectangular box that captures a signature, hand-written notes or other data entered using the device stylus.
 
@@ -218,6 +219,8 @@ The following example shows signature vectors being displayed in an HTML table
 	  <DIV id="vectorOut">Vectors Will Appear Here:</div>
 	  </BODY>  
 	
+
+
 
 
 

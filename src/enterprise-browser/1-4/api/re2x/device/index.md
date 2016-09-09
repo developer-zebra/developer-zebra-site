@@ -3,7 +3,7 @@ title: Device Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 The Device API provides access to some device-level functionality that is only available on Symbol devices. Such functions include suspend, calibrate, powerOff, wake, reboot and others.
@@ -230,3 +230,4 @@ The suspend functionality is incompatible with the unattended functionality of t
 The wake functionality can be used along with Push module. For eg: in the push detected event the user can call the wake method to wake the device.
 					
 				
+

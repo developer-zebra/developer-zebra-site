@@ -1,9 +1,9 @@
 ---
-title:  Comm Module
+title: Comm Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 The Comm Module controls functionality of the serial port on the device, including all serial communications initiated by Enterprise Browser apps and any collected or transmitted data.
@@ -304,3 +304,4 @@ If any of the parameters (e.g. BaudRate) are set whilst the COM port is open the
 
 ### AutoEnter and AccelerateKey
 The AccelerateKey Meta tag controls the behavior of Accelerate keys on Windows CE, if the Enter key is configured to be non functional then AutoEnter will also appear to not function either
+

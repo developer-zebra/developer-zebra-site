@@ -1,9 +1,9 @@
 ---
-title:  AudioCapture Module
+title: AudioCapture Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 AudioCapture API permits the capture of audio from a built-in microphone or input source on the device.
@@ -494,3 +494,4 @@ This example will show how to capture audio from your device to a file and then 
                                 
                             
 </code></pre>
+

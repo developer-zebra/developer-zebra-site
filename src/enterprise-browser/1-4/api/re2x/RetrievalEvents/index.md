@@ -1,5 +1,9 @@
 ---
 title: Retrieval Events
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 Values are returned to the caller in RhoElements via events which will cause a navigation to a new URL to occur, a JavaScript function on the page to be invoked or in the case of a RhoElements native application, a Ruby callback function to be invoked.  Each event will in most cases have a number of parameters associated with it which will either be strings or JavaScript arrays and can be accessed in a number of ways as explained below.
 
@@ -160,4 +164,6 @@ The following example code shows how to access the different data structures in 
 		}
 		outputDiv.innerHTML = theOutput;
 	}
+
+
 

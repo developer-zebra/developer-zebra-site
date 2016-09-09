@@ -1,5 +1,9 @@
 ---
 title: Examples
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 The following example lists the available scanners on a device. It first detaches the listeners to 'enumScannerEvent' (if any), then attaches it to a listner and makes a call to 'enumerate' which fires the 'enumScannerEvent'. This piece of code should be placed in the controller
@@ -63,3 +67,5 @@ For all the examples described above, the 'setFieldValue()' JavaScript function 
 	function setFieldValue(returnval){
 		document.getElementById("result").innerHTML=returnval;
 	}
+
+

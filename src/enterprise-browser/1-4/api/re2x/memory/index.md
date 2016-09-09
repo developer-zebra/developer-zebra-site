@@ -3,7 +3,7 @@ title: Memory Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The Memory Module is used to to retrieve the current available memory and send notifications when memory drops below a user-defined threshold.
@@ -81,4 +81,6 @@ The minimum amount of available memory, specified in KB.
 ####Platforms
 
 * Windows Mobile/CE
+
+
 

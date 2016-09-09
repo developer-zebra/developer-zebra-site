@@ -3,8 +3,9 @@ title: Matrix2of5verifyCheckDigit Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Matrix2of5verifyCheckDigit Decoder Setting is used to set the matrix2of5 VerifyCheckDigit property which enables verification of the bar code check digit.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-matrix2of5VerifyCheckDigit" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

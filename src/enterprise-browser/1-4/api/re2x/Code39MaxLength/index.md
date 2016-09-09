@@ -3,8 +3,9 @@ title: Code39maxLength Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code39maxLength Decoder Setting is used to set the Code39 MaxLength property.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-Code39maxlength" Content="30">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

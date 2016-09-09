@@ -3,8 +3,9 @@ title: MacroMicroPdfConvertToMicroPdf Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MacroMicroPdfConvertToMicroPdf Decoder Setting is used to set the macroMicroPdfConvertToMicroPdf property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets macroMicroPdfConvertToMicroPd
 	<META HTTP-Equiv="scanner" Content="macroMicroPdfConvertToMicroPdf:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

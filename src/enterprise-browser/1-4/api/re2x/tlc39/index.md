@@ -3,8 +3,9 @@ title: Tlc39 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Tlc39 Decoder is used to enable or disable the tlc39 decoder.
@@ -92,6 +93,8 @@ Above example can also be written as shown below:
 		scanner.enable();
 	}
 	
+
+
 
 
 

@@ -1,10 +1,10 @@
 ---
 title: Code128 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
-    - title:  Related Pages
+    - title: Related Pages
       items:
         - title: Back to RE 2.x Decoders Page
           url: ../toc_decoders
@@ -36,4 +36,10 @@ automenu:
           url: ../Code128Redundancy
         - title: Code128securityLevel
           url: ../Code128securityLevel
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

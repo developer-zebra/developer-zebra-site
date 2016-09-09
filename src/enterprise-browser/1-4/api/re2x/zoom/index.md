@@ -3,8 +3,9 @@ title: Zoom Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Zoom Module is used to set the magnification of the text or page.
 
@@ -60,6 +61,8 @@ The following example will zoom the page to enable an application written for a 
 
 	<META HTTP-Equiv="zoom" Content="page:2.0">
 	
+
+
 
 
 

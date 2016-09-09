@@ -3,8 +3,9 @@ title: UpcaReportCheckDigit Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcaReportCheckDigit Decoder Setting is used to set the upca ReportCheckDigit property which enables reporting of the bar code check digit(s).
@@ -64,6 +65,8 @@ The following example enables the scanner to read only upca labels with the Repo
 	<META HTTP-Equiv="scanner-upcaReportCheckDigit" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

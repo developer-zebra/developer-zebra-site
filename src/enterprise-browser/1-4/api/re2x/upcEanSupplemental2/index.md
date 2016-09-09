@@ -3,8 +3,9 @@ title: UpcEanSupplemental2 Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanSupplemental2 Decoder Setting is used to enable or disable upcEanSupplemental2 supplemental barcodes.
@@ -78,6 +79,8 @@ or
 	<META HTTP-Equiv="Scanner-upcEanSupplemental2" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

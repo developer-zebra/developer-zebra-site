@@ -3,8 +3,9 @@ title: Upca Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Upca Decoder is used to enable or disable the upca decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except upca:
 	<META HTTP-Equiv="scanner" Content="upca:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

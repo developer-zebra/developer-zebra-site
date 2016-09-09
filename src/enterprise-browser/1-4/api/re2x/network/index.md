@@ -3,7 +3,7 @@ title: Network Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The Network API class permits interaction with the WAN or Wi-Fi networks available to the device.
@@ -604,3 +604,4 @@ ios_net_curl = 0
 ios_direct_local_requests = 0
 </pre>
                     
+

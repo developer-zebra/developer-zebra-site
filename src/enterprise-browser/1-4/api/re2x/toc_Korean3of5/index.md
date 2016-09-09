@@ -1,6 +1,6 @@
 ---
 title: Korean3of5 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -24,4 +24,10 @@ automenu:
           url: ../korean3of5maxLength
         - title: Korean3of5minLength
           url: ../korean3of5minLength
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

@@ -1,9 +1,9 @@
 ---
-title:  AirBeam Preexisting JavaScript Object
+title: AirBeam Preexisting JavaScript Object
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 The AirBeam Preexisting JavaScript Object contains properties and methods which can be used to control the AirBeam Smart client. AirBeam is a separate application provided by Symbol Technologies and provides the ability to download software packages to your mobile device. If you have configured ‘PreloadLegacyAirBeam’ to be ‘1’ the JavaScript object ‘airbeam’ will be inserted automatically into your page’s DOM.
@@ -142,4 +142,6 @@ The AirBeam Preexisting JavaScript Object provides backwards compatibility with 
 	  //  Note: var airbeam = new ... will fail because the object already exists on the page.
 	  myObj.Run();
 	</script>
+
+
 

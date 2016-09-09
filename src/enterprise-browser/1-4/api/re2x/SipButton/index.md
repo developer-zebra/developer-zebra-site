@@ -3,8 +3,9 @@ title: SipButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The SipButton Module is used to set the parameters of the SIP Button, which toggles the display of the soft input panel and allows keyboard input via a stylus.
 
@@ -85,6 +86,8 @@ The following example shows the SIP button and displays the sip_up.gif / sip_dow
 
 	<META HTTP-Equiv="SIPButton" Content="ImageUp:url('http://myaddress/sip_up.gif'); ImageDown:url('http://myaddress/sip_down.gif'); Visibility:Visible">
 					
+
+
 
 
 

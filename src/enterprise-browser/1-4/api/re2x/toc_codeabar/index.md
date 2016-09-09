@@ -1,6 +1,6 @@
 ---
 title: Codeabar Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -28,4 +28,9 @@ automenu:
           url: ../CodabarNotisEditing
         - title: Redundancy
           url: ../CodabarRedundancy
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+

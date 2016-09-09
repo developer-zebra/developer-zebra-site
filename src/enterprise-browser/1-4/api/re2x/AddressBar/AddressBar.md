@@ -1,9 +1,9 @@
 ---
-title:  AddressBar Module
+title: AddressBar Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: Backward compatibility API
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 The AddressBar API is used to set the parameters of the address bar. The address bar should only be used for debugging and is not designed to be used as a replacement for a web browser address bar. Press the ‘Go’ button or enter key to navigate to the typed URI.
@@ -196,3 +196,4 @@ The following file can be used to test all the APIs listed above.
 		<button onclick="addressBarWidth(100)">Full screen width</button>
 		<button onclick="addressBarWidth(50)">Half-screen width</button>
 	</body>
+

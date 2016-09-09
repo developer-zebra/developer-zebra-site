@@ -3,8 +3,9 @@ title: QuitButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The QuitButton Module sets the parameters of the quit button, which exits the application when pressed.
 
@@ -92,6 +93,8 @@ The following example shows the Quit button and displays the quit_up.jpg / quit_
 
 	<META HTTP-Equiv="QuitButton" Content="ImageUp:url('http://myaddress/quit_up.jpg'); ImageDown:url('http://myaddress/quit_down.jpg'); Visibility:Visible">
 					
+
+
 
 
 

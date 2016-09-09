@@ -3,7 +3,7 @@ title: Keylight
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The Keylight Module controls the keyboard backlight and its intensity.
@@ -66,3 +66,4 @@ Sets the keyboard backlight to the specified intensity.
 ## Remarks
 ###Device Limits
 The levels of supported keylight intensity is device dependent. When the Keylight module is first loaded it writes the supported levels to the log file as INFORMATION so you can determine the maximum setting from the log file.
+

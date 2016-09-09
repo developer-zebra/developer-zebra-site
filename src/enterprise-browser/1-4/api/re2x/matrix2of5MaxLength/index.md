@@ -3,8 +3,9 @@ title: Matrix2of5maxLength Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Matrix2of5maxLength Decoder Setting is used to set the matrix2of5 MaxLength property.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-matrix2of5maxlength" Content="30">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

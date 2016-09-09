@@ -1,10 +1,11 @@
 ---
-title: Code39 Decoder 
+title: Code39 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code39 Decoder is used to enable or disable the Code39 decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except Code39:
 	<META HTTP-Equiv="scanner" Content="Code39:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

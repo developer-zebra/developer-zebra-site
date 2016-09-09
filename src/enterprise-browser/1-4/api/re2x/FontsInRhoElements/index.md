@@ -1,5 +1,8 @@
 ---
-title: Fonts in RhoElements: An Overview
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 ##Overview
@@ -69,5 +72,7 @@ RhoElements supports Web fonts, the following example shows how to use the 'univ
 ###Localized Font Support
 
 Running on localized builds requires an appropriate truetype font for the language to be installed on the device, as described above obtain your desired truetype font file (.ttf) and copy it to the configurable font directory on your device (\Windows by default).  To ensure RhoElements picks up your localized font modify the configuration file accordingly.
+
+
 
 

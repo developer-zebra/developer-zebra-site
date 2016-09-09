@@ -3,8 +3,9 @@ title: Upce1convertToUpca Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Upce1convertToUpca Decoder Setting is used to enable conversion from upce1 to upca bar code. If this flag is set, the bar code is converted to upca, and upca parameters are used.
@@ -66,6 +67,8 @@ or
 	<META HTTP-Equiv="scanner-upce1ConvertToupca" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

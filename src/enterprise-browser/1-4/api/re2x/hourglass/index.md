@@ -3,7 +3,7 @@ title: Hourglass
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The Hourglass Module controls display and position of the hourglass icon, which appears to indicate that a page is loading.
@@ -84,4 +84,6 @@ When navigating between pages the hourglass will be shown and hidden automatical
 
 ###Scrolling
 The hourglass is not compatible with scrolling the browser window. The spinning cursor will move with the HTML page.
+
+
 

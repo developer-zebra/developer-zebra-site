@@ -3,8 +3,9 @@ title: MsiCheckDigitScheme Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MsiCheckDigitScheme Decoder Setting is used to set the msiCheckDigitScheme property to describe the check digit scheme to verify.
@@ -66,6 +67,8 @@ or
 	<META HTTP-Equiv="scanner-msiCheckDigitScheme" Content="mod10">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

@@ -3,8 +3,9 @@ title: Signal Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Signal Module is used to set position and display parameters of the wireless signal indicator on the screen. 
 
@@ -119,6 +120,8 @@ The following example navigates to a new page with parameters upon a wireless si
 
 	<META HTTP-Equiv="Signal" Content="signalevent:url('mypage.asp?Signal percentage=%s&ESSID=%s&MacAdd=%s&Adapter=%s&DHCPServ=%s&Mode=%s&Gateway=%s&IPAddress=%s&RSSI=%s&Subnet=%s&Wins=%s')">
 	
+
+
 
 
 

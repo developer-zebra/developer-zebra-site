@@ -1,5 +1,9 @@
 ---
-title:  RhoElements-Building Native Applications
+title: RhoElements-Building Native Applications
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 <!-- PLACEHOLDER - Block Diagram -->
@@ -346,6 +350,8 @@ Some of the capabilities that a RhoElements native application Rhodes applicatio
 * [synchronization](/rhoelements/rhoelements2-native.md/rhodes/synchronization) 
 * [connecting to web services](/rhoelements/rhoelements2-native.md/rhodes/connect-to-web-services)
 * [debugging](/rhoelements/rhoelements2-native.md/rhostudio.tutorial#using-the-debugger)
+
+
 
 
 

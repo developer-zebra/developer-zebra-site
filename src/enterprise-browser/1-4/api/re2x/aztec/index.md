@@ -1,10 +1,11 @@
 ---
-title:  Aztec Decoder
+title: Aztec Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 The Aztec Decoder is used to enable or disable the aztec decoder.
 
@@ -63,6 +64,8 @@ or
 	<META HTTP-Equiv="scanner-aztec" Content="enabled">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

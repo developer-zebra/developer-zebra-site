@@ -3,8 +3,9 @@ title: SignatureImageSize Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The SignatureImageSize Decoder Setting is used to set the image size property of the signature decoder.
@@ -54,6 +55,8 @@ The following example enables the scanner to specify the signatureImageSize para
 	<META HTTP-Equiv="scanner" Content="signatureImageSize:0">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

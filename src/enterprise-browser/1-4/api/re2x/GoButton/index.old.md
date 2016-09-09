@@ -3,8 +3,9 @@ title: GoButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 
 The GoButton Module is used to set the parameters of the GoButton. When clicked, the Go button shall navigate to the page shown in the Address Bar. The Go button will not be visible when the browser is navigating as it is replaced by the stop button (if visible), in line with all major browsers.
@@ -93,6 +94,8 @@ The following example shows the Go button, sets its width to 30 pixels, its left
 
 	<META HTTP-Equiv="GoButton" Content="Width:30; Left:50; ImageUp:url('http://myaddress/go_up.gif'); ImageDown:url('http://myaddress/go_down.gif'); Visibility:Visible">
 	
+
+
 
 
 

@@ -3,8 +3,9 @@ title: Us4stateFics Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Us4stateFics Decoder is used to enable or disable the US 4-state FICS decoder.
@@ -67,6 +68,8 @@ or
 		scanner.enable();
 	}
 	
+
+
 
 
 

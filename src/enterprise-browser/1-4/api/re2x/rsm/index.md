@@ -3,8 +3,9 @@ title: RSM Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The RSM Module is used to configure and retrieve attribute settings of a remote scanner connected to the device via cable or Bluetooth. When used for retrieval, navigation to a URL and/or calls to JavaScript functions are executed immediately. See [Remarks section](#remarks) for a list of readable/configurable scanner attributes. 
 
@@ -317,6 +318,8 @@ The following example retrieves some attributes of the Bluetooth Scanner:
 	</HTML>
 	
 	
+
+
 
 
 

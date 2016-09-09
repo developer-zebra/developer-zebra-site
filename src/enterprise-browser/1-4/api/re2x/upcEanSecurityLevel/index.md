@@ -3,8 +3,9 @@ title: UpcEanSecurityLevel Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanSecurityLevel Decoder Setting is used to set the upcEanSecurityLevel which describes the UPC/EAN security level.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-upcEanSecurityLevel" Content="ambiguous">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

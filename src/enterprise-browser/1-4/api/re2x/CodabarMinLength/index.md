@@ -3,8 +3,9 @@ title: CodabarMinLength Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The CodabarMinLength Decoder Setting is used to set the Codabar MinLength property.
@@ -64,6 +65,8 @@ The following example enables the scanner to read only Codabar labels with the M
 	<META HTTP-Equiv="scanner-CodabarMinLength" Content="30">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

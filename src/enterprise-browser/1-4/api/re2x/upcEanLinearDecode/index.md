@@ -3,8 +3,9 @@ title: UpcEanLinearDecode Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanLinearDecode Decoder Setting is used to enable the linear decode property.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-upcEanLinearDecode" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

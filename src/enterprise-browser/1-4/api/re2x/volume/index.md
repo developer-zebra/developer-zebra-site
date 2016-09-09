@@ -3,8 +3,9 @@ title: Volume Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Volume Module controls the audio output volume of wave files being played on the device. This does not set the volume of the device beeper.
 
@@ -101,3 +102,5 @@ The following example sets the device volume to its maximum for devices with a s
 		Volume.setVolume="0x00FF"
 		Alert.show_popup "Volume set to mute. You should not have hear a single channel beep"
 	end
+
+

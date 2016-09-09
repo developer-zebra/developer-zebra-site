@@ -1,5 +1,9 @@
 ---
 title: Module META Tag
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -185,6 +189,8 @@ The following example brings up the lock screen if no key is pressed for 30 seco
 	
 	 
 	
+
+
 
 
 

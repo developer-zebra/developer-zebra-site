@@ -1,3 +1,9 @@
+---
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
+---
 #Signature
 
 
@@ -441,3 +447,4 @@ In Android, the state of the signature will not be cleared on page navigation wh
 
 ###Persistent Behavior
 While using "takeFullScreen" method, if we press Home button and re-launch the application the state won't be persisted in Android platform.
+

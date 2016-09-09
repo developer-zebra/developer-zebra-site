@@ -1,5 +1,9 @@
 ---
 title: Lightsensor Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -114,6 +118,8 @@ The following example retrieves the light sensor value when it is changed
 	<P>
 	  <INPUT align="center" type="button" value="Retrieve Light Sensor Data" onclick="LightSensor.getSensorData();"><br>
 	
+
+
 
 
 

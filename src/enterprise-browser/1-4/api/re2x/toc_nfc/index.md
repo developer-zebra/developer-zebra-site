@@ -1,6 +1,6 @@
 ---
 title: NFCTag Mobile APIs
-description: These are the currently available NFCTag APIs. 
+description: These are the currently available NFCTag APIs.
 layout: list-apis.html
 automenu:
   items:
@@ -38,4 +38,9 @@ automenu:
           url: ..//rhoelements/toc_nfc.md/rhodesapi/NFCTagTechnology_NfcV-api
         - title: NFCTagTechnology
           url: ..//rhoelements/toc_nfc.md/rhodesapi/NFCTagTechnology-api
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+

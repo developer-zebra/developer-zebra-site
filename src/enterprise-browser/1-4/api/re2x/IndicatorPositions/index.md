@@ -1,5 +1,9 @@
 ---
 title: Meaning of Indicator Layout
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 The Battery and Signal Meta tags use the 'Layout' parameters to specify the layout of the indicator icon.  The examples below illustrate all possible values of layout parameter.
@@ -82,4 +86,6 @@ The following example shows the wireless signal indicator:
 	}
 <img src="/images/indicators/signal_bottom.PNG">
 	
+
+
 

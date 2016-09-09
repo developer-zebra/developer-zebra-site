@@ -1,6 +1,6 @@
 ---
 title: UPCe1 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -24,4 +24,10 @@ automenu:
           url: ../upce1preamble
         - title: Upce1reportCheckDigit
           url: ../upce1ReportCheckDigit
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

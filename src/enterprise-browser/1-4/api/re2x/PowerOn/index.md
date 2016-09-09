@@ -3,7 +3,7 @@ title: PowerOn Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The PowerOn API is used to register to receive an event when the device is resumed from suspend mode.
@@ -38,3 +38,4 @@ This feature is very useful for security. Navigating to an offline page (file://
 
 ### Use when cradled
 Windows Power events will not always be generated when the device is connected to power and instructed to stand by / wake up, though this is dependent on the Operating System in use.
+

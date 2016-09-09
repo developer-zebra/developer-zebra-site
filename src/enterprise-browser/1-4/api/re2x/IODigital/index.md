@@ -1,5 +1,9 @@
 ---
 title: IoDigital Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -145,6 +149,8 @@ The following example opens digital output ports 1 and 2. PortEvent will be call
 	   }
 	</script>
 	
+
+
 
 
 

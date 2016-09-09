@@ -3,8 +3,9 @@ title: Wake Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Wake Module is used to keep the display and Wi-Fi radio turned on whenever a RhoElements app is active. 
 
@@ -64,6 +65,8 @@ The following keeps the device on and doesn't go to standby
 
 	<META HTTP-Equiv="wake" Content="wakeLock:Enabled;wifiLock:Enabled">
 					
+
+
 
 
 

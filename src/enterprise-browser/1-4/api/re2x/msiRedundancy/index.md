@@ -3,8 +3,9 @@ title: MsiRedundancy Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MsiRedundancy Decoder Setting is used to set the msi Redundancy property. If this flag is set, the bar code must be decoded twice before being accepted.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-msiRedundancy" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 					
+
+
 
 
 

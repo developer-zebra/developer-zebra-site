@@ -3,8 +3,9 @@ title: StopButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The StopButton Module is used to set the parameters of the Stop Button, which is displayed only while a page is loading. When clicked, the Stop Button ceases the current navigation and brings up the badlink page (if defined), preventing partially rendered pages being displayed in the browser.
 
@@ -95,6 +96,8 @@ The following example shows the Stop button and displays the stop_up.gif / stop_
 
 	<META HTTP-Equiv="StopButton" Content="ImageUp:url('http://myaddress/stop_up.gif'); ImageDown:url('http://myaddress/stop_down.gif'); Visibility:Visible">
 					
+
+
 
 
 

@@ -3,8 +3,9 @@ title: Korean3of5redundancy Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Korean3of5redundancy Decoder Setting is used to set the korean3of5redundancy property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets korean3of5redundancy property
 	<META HTTP-Equiv="scanner" Content="korean3of5redundancy:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

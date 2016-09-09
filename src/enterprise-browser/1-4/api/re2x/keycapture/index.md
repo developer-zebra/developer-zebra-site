@@ -3,7 +3,7 @@ title: KeyCapture Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The KeyCapture module is used to intercept or override hardware keys, and is typically used to assign certain application functions to physical keys or other hardware buttons.
@@ -237,3 +237,4 @@ Certain devices may map their function keys to apparently normal keys. For examp
 
 ###Use of Key Capture module on Localized Operating Systems
 Users of the key capture module with Chinese, Korean and Japanese operating systems should bear the following in mind: Internally the KeyCapture module stores key representations as VK codes, therefore the key event will always return VK_PROCESSKEY (229) and keys can not be individually specified. In JavaScript the DOM element's keyup event can be used as an indication of which key has been pressed.
+

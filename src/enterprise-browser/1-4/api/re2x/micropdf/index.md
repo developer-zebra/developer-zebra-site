@@ -3,8 +3,9 @@ title: MicroPdf Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MicroPdf Decoder is used to enable or disable the MicroPDF decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except MicroPDF:
 	<META HTTP-Equiv="scanner" Content="MicroPDF:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

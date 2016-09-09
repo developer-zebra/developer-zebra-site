@@ -1,6 +1,6 @@
 ---
 title: Matrix2of5 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -26,4 +26,10 @@ automenu:
           url: ../matrix2of5ReportCheckDigit
         - title: Matrix2of5verifyCheckDigit
           url: ../matrix2of5VerifyCheckDigit
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

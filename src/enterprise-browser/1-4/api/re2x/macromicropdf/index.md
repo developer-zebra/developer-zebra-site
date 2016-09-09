@@ -3,8 +3,9 @@ title: MacroMicroPdf Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MacroMicroPdf Decoder is used to enable or disable the MacroMicroPDF decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except MacroMicroPD
 	<META HTTP-Equiv="scanner" Content="MacroMicroPDF:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

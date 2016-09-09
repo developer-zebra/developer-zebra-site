@@ -3,8 +3,9 @@ title: SIP Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The SIP Module is used to control attributes of the soft input panel (SIP), also known as the software keyboard. Settings apply to text boxes on the current page as well as the address bar.
 
@@ -99,6 +100,8 @@ The following example sets the SIP to manual:
 
 	<META HTTP-Equiv="SIP" Content="Manual">
 	
+
+
 
 
 

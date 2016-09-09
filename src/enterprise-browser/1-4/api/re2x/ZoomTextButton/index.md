@@ -3,8 +3,9 @@ title: ZoomTextButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The ZoomTextButton Module is used to set the parameters of the Zoom Text Button, which cycles the font size in the browser in ascending order (from smallest to largest).
 
@@ -89,6 +90,8 @@ The following example shows the ZoomText button and displays the zoomText_up.gif
 
 	<META HTTP-Equiv="ZoomTextButton" Content="ImageUp:url('http://myaddress/zoomText_up.gif'); ImageDown:url('http://myaddress.zoomText_down.gif'); Visibility:Visible">
 					
+
+
 
 
 

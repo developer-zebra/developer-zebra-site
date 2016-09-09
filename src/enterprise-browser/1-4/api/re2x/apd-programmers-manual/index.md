@@ -1,5 +1,9 @@
 ---
-title:  Zebra Adaptive Printer Driver APD Programmer's Manual
+title: "Zebra Adaptive Printer Driver APD Programmer's Manual"
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 This document describes the printing features available to applications running on Zebra hand-held.
@@ -1959,6 +1963,8 @@ Wired connections currently use a 5- or 7-character Peripheral Identifier.
 Zebra Moto, Zebra Technologies and the Stylized M Logo are trademarks or registered trademarks of Zebra Trademark Holdings, LLC and are used under license. All other trademarks are the property of their respective owners.
 
 ©2011 Zebra Technologies, Inc. All Rights Reserved.
+
+
 
 
 

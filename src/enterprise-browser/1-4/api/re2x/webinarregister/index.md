@@ -1,5 +1,9 @@
 ---
 title: Webinar Registration Form
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -39,3 +43,5 @@ Complete the following form and click Submit to received email notifications abo
 <div>
 <a href="https://developer.motorolasolutions.com/community/rhomobile-suite/videos" class="">View Webinar Schedule & Replays</a>
 </div>
+
+

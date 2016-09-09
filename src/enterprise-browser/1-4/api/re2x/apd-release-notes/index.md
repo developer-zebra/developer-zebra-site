@@ -1,5 +1,9 @@
 ---
-title:  Zebra Adaptive Printer Driver APD Release Notes
+title: Zebra Adaptive Printer Driver APD Release Notes
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 Adaptive Printer Driver v2-19.06
@@ -62,5 +66,7 @@ Last revised:  August 5, 2011
 Copyright (c) 2011 Zebra Technologies, Inc. All rights reserved.
  
  
+
+
 
 

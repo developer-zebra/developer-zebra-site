@@ -3,8 +3,9 @@ title: MicroQr Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MicroQr Decoder is used to enable or disable the microqr decoder.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-microqr" Content="enabled">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

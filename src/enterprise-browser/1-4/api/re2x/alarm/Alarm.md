@@ -1,9 +1,9 @@
 ---
-title:  Alarm Module
+title: Alarm Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 The Alarm API is used to set an alarm and register an action to perform when that alarm fires.
@@ -181,3 +181,4 @@ In this example, we will show you how to set an alarm that will go off in 30 sec
 		<button onclick="clearAlarm()">Clear Alarm</button></br>
 		<button onclick="clearDiv()">Clear Output</button></br>
 	</body>
+

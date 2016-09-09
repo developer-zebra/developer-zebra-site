@@ -1,10 +1,11 @@
 ---
-title:  Alarm Module
+title: Alarm Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 The Alarm Module is used to set an alarm and register an action to perform when that alarm fires.**
 
@@ -215,3 +216,5 @@ The following example sets the alarm to display an alert box at 8am GMT on 27th 
 
 	:::html
 	<META HTTP-Equiv="Alarm-Set" Content="Time:2012-07-27t08-00-00+00-00; AlarmTriggered:url('javascript:alert('London Olympics Start Today');')">
+
+

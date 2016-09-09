@@ -3,8 +3,9 @@ title: ODAX Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The ODAX Preexisting JavaScript Object module reads from `.CSV` or `.XML` files to provide offline data access. If a value of "1" is contained in the &lt;PreloadLegacyODAX&gt; parameter of the `Config.xml` file, the JavaScript object "odax" will be automatically inserted by RhoElements into the DOM of the running app, and result set stored internally in the "odax" object and manipulated using the exposed methods below.
 
@@ -195,6 +196,8 @@ The following JavaScript selects all records from a XML file:
 	   var count = odax.Select('SELECT * FROM \'\\application\\test.xml\';', ',', false);
 	</script>
 	
+
+
 
 
 

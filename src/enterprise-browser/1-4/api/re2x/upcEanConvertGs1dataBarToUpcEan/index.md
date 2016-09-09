@@ -3,8 +3,9 @@ title: UpcEanConvertGs1dataBarToUpcEan Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanConvertGs1dataBarToUpcEan Decoder Setting is used to set the upcEanConvertGs1dataBarToUpcEan property.
@@ -62,6 +63,8 @@ The following example enables the scanner and sets upcEanConvertGs1dataBarToUpcE
 	<META HTTP-Equiv="scanner" Content="upcEanConvertGs1dataBarToUpcEan:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

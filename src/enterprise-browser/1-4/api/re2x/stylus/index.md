@@ -3,8 +3,9 @@ title: Stylus Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Stylus Module is used to enable and disable the touch screen.
 
@@ -73,6 +74,8 @@ The following example disables the touch screen until the Enter key is pressed:
 	   }
 	</SCRIPT>
 	
+
+
 
 
 

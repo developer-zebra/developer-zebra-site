@@ -3,8 +3,9 @@ title: Code39fullAscii Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code39fullAscii Decoder Setting is used to set the Code39fullascii property which enables or disables full ASCII conversion of the bar code.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-Code39fullascii" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

@@ -3,7 +3,7 @@ title: Imager
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ## Overview
 The Imager API allows a device to capture images using a 2D imager or camera on the device that appears as an imager. **This API is not supported on Micro Kiosk devices**.
@@ -380,3 +380,5 @@ The image can only be stretched as far as the screen dimensions will allow, do n
 
 ###Multi Instance
 When multiple Enterprise Browser applications are running the following considerations should be made: Only the foreground application is given access to the imaging hardware, when an application is sent to the background its state will be saved and it will automatically relinquish control of the imager. When brought back to the foreground, an application previously using the imager will have its previous configuration (eg. whether it was enabled or not) reapplied to the imager automatically. Please note that any file transfer that is in progress continues even if the application is sent to the background and capture will not have any effect on an application that is in the background
+
+

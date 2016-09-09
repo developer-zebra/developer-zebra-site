@@ -1,10 +1,11 @@
 ---
-title: Ean8 Decoder 
+title: Ean8 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Ean8 Decoder is used to enable or disable the ean8 decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except ean8:
 	<META HTTP-Equiv="scanner" Content="ean8:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

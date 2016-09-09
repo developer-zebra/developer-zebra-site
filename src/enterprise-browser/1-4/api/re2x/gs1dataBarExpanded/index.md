@@ -1,10 +1,11 @@
 ---
-title: Gs1dataBarExpanded Decoder 
+title: Gs1dataBarExpanded Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Gs1dataBarExpanded Decoder is used to enable or disable the gs1dataBarExpanded decoder.
@@ -72,6 +73,8 @@ or
 	<META HTTP-Equiv="scanner-gs1dataBarExpanded" Content="enabled">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

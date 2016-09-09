@@ -3,8 +3,9 @@ title: Code128isBt128 Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code128isBt128 Decoder Setting is used to set the code128-isbt128 property to enable the isbt128 subtype.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-code128isbt128" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

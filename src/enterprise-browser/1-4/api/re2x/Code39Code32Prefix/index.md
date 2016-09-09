@@ -3,8 +3,9 @@ title: Code39code32prefix Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code39code32prefix Decoder Setting is used to set the Code39Code32prefix property which enables reporting of the Code32 prefix when a Code39 bar code is converted.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-Code39code32prefix" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Ean8 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -20,4 +20,9 @@ automenu:
           url: ../ean8
         - title: Ean8convertToEan13
           url: ../ean8ConvertToEAN13
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+

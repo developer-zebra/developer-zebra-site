@@ -1,5 +1,9 @@
 ---
-title:  Zebra Adaptive Printer Driver Overview
+title: Zebra Adaptive Printer Driver Overview
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 Zebra Adaptive Printer Driver (APD) is a small executable program that runs on Zebra Mobile Computers. It provides a simple, yet powerful, interface to software applications, to transfer data from the user's software application to virtually any portable printer, via cable, or Bluetooth, short-range RF, or WLAN wireless connections.
 
@@ -233,3 +237,5 @@ The previous pages show how the Zebra Adaptive Printer Driver makes use of templ
 Examples of templates for two popular printers were shown. Both of these printers offer a line printer mode, as well as a PCL (printer command language) mode, and the templates use both PCL mode and line printer mode. However, it is also possible to produce templates for printers that only offer a PCL mode, or only offer a line printer mode (the latter option assumes that the printer can print graphics and barcodes).
 
 Zebra Moto, Zebra Technologies and the Stylized M Logo are trademarks or registered trademarks of Zebra Trademark Holdings, LLC and are used under license. All other trademarks are the property of their respective owners. ©2011 Zebra Technologies, Inc. All Rights Reserved.
+
+

@@ -3,8 +3,9 @@ title: Rss14 META Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Rss14 META Tag is used to enable or disable the rss14 decoder.
@@ -64,6 +65,8 @@ or
 	<META HTTP-Equiv="scanner-rss14" Content="enabled">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

@@ -3,8 +3,9 @@ title: SignatureImageHeight Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The SignatureImageHeight Decoder Setting is used to set the image height property of the signature decoder.
@@ -55,6 +56,8 @@ The following example enables the scanner to specify the signatureImageHeight pa
 	<META HTTP-Equiv="scanner" Content="barcodeDataFormat:binary;dataBufferSize:5000">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

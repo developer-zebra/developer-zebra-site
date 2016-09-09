@@ -3,8 +3,9 @@ title: UpcEanSupplementalMode Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The UpcEanSupplementalMode Decoder Setting is used to set the upcEanSupplementalMode.
@@ -100,6 +101,8 @@ or
 	<META HTTP-Equiv="scanner-upcEanSupplementalMode" Content="always">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

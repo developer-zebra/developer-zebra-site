@@ -1,5 +1,8 @@
 ---
-title: EMML: Enterprise Mobility Mark-Up Language
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 ##Overview
@@ -135,3 +138,5 @@ As you can see from the example above it is possible to set as many profiles as 
 With EMML Profiles your web pages can be simplified further and your EMML centralized. It is also possible to name a profile page so that is persists across pages until explicitly cleared. With this you can load all your EMML tags into memory once and then access them throughout your application.
 
 For more information on how to use the EMML Profiles see the [EMMLProfile section](EMMLProfile).
+
+

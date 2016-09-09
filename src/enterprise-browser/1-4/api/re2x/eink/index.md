@@ -1,5 +1,9 @@
 ---
 title: Eink Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -154,6 +158,8 @@ Enables one-bit color depth for all textboxes when focused, disabling one-bit co
 	}
 	</script>
 	
+
+
 
 
 

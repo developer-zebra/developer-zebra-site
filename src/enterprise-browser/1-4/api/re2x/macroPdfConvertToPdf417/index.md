@@ -3,8 +3,9 @@ title: MacroPdfConvertToPdf417 Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MacroPdfConvertToPdf417 Decoder Setting is used to set the macroPdfConvertToPdf417 property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets macroPdfConvertToPdf417 prope
 	<META HTTP-Equiv="scanner" Content="macroPdfConvertToPdf417:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

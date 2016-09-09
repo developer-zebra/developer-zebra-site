@@ -3,8 +3,9 @@ title: Ean8convertToEan13 Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Ean8convertToEan13 Decoder Setting is used to enable conversion from ean8 to EAN13 bar code. If this flag is set, the bar code is converted to EAN13, and EAN13 parameters are used.
@@ -66,6 +67,8 @@ or
 	<META HTTP-Equiv="scanner-ean8ConvertToEAN13" Content="true">
 	<META HTTP-Equiv="scanner-Enabled" Content="SCN1">
 	
+
+
 
 
 

@@ -3,8 +3,9 @@ title: RFID Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The RFID Module provides access to functionality of the device's RFID reader, if so equipped. **Limited device support. This module is not included with the default RhoElements/RhoStudio installers; it must be downloaded and installed separately [(SEE REMARKS)](#remarks)**.
 
@@ -1261,3 +1262,5 @@ This example shows the usage of getLastAccessResult method. At the completion of
 		  objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+
+

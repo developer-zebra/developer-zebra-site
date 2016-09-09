@@ -3,8 +3,9 @@ title: Code128checkIsBtTable Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code128checkIsBtTable Decoder Setting decodes concatenated output only if the pair belongs to one of the commonly concatenated pairs as defined by the standard.
@@ -54,6 +55,8 @@ The following example enables the scanner to read only Code128 labels with the c
 	<META HTTP-Equiv="scanner" Content="code128checkIsBtTable:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

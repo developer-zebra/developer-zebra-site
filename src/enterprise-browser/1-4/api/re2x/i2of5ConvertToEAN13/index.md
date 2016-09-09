@@ -3,8 +3,9 @@ title: I2of5convertToEan13 Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The I2of5convertToEan13 Decoder Setting is used to enable conversion from i2of5 to EAN13 bar code. If this flag is set, the bar code is converted to EAN13, and EAN13 parameters are used.
@@ -66,6 +67,8 @@ or
 	<META HTTP-Equiv="scanner-i2of5ConvertToEAN13" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

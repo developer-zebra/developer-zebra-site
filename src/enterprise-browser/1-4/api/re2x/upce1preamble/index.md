@@ -3,8 +3,9 @@ title: Upce1preamble Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Upce1preamble Decoder Setting is used to set the upce1-preamble property which controls the preamble applied to the bar code.
@@ -64,6 +65,8 @@ The following example enables the scanner to read only upce1 labels with the pre
 	<META HTTP-Equiv="scanner-upce1preamble" Content="countryAndSystemChars">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

@@ -1,5 +1,9 @@
 ---
-title:  RhoElements Application Models
+title: RhoElements Application Models
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 <!-- PLACEHOLDER - Blurb and diagram explaining choices have for native and hybrid approached] -->
@@ -35,5 +39,7 @@ Hybrid applications are distributed to the client in a mostly thin client nature
 ### Using Hybrid Applications over Native Applications
 
 Primarily, hybrid apps operate in a mostly web-connected environment. These apps can be compared to RhoElements 1, PocketBrowser applications. These applications can easily be modified and distributed to the user each time they are accessed: a hybrid app lets you change and update app functionality on the web, without pushing out an update to the mobile device (as is the case with native apps). 
+
+
 
 

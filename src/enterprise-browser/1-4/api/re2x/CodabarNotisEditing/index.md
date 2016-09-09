@@ -3,8 +3,9 @@ title: CodabarNotisEditing Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The CodabarNotisEditing Decoder Setting is to enable Codabar Notis formatting.
@@ -64,6 +65,8 @@ The following example enables the scanner to read only Codabar labels with the N
 	<META HTTP-Equiv="scanner-Codabarnotisediting" Content="true">
 	<META HTTP-Equiv="scanner-enabled" Content="SCN1">
 	
+
+
 
 
 

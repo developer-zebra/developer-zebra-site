@@ -1,5 +1,9 @@
 ---
 title: SVG and HTML Applications
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 RhoElements Applications can be written either in SVG or HTML with both rendering engines having the same access to all modules to control the hardware on your mobile device.
 
@@ -13,4 +17,6 @@ RhoElements only supports the following types of application:
 </OL>
 
 You are not able to embed SVG within an HTML application or navigate to an SVG document from within an HTML application via a hyperlink.
+
+
 

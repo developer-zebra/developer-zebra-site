@@ -1,9 +1,9 @@
 ---
-title:  Application Module
+title: Application Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
 ##Overview
 The Application class is used for accessing or setting app-level configuration settings.
@@ -584,3 +584,4 @@ Version of Enterprise Browser.
 * Android
 * Windows Mobile
 * Windows CE
+

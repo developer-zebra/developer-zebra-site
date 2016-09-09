@@ -1,5 +1,9 @@
 ---
-title:  RhoElements Licensing
+title: RhoElements Licensing
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 Running Zebra Technologies RhoElements applications requires a license. There are a number of licensing options available depending on the specific customer need or deployment. RhoElements applications which are not licensed will display a message on startup; unlicensed Zebra Technologies devices will also display a periodic nag screen, although unlicensed devices are fully functional for the purposes of evaluation, development, and testing.
@@ -129,3 +133,5 @@ For hybrid applications, you can define your device license and company name in 
 	       ...
 	    </Application > 
 	  </Applications>
+
+

@@ -1,6 +1,6 @@
 ---
 title: I2of5 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -30,4 +30,10 @@ automenu:
           url: ../i2of5ReportCheckDigit
         - title: I2of5verifyCheckDigit
           url: ../i2of5VerifyCheckDigit
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

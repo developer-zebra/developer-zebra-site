@@ -3,8 +3,9 @@ title: MacroMicroPdfReportAppendInfo Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The MacroMicroPdfReportAppendInfo Decoder Setting is used to set the macroMicroPdfReportAppendInfo property.
@@ -54,6 +55,8 @@ The following example enables the scanner and sets macroMicroPdfReportAppendInfo
 	<META HTTP-Equiv="scanner" Content="macroMicroPdfReportAppendInfo:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 					
+
+
 
 
 

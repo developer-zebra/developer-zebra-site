@@ -3,8 +3,9 @@ title: Matrix2of5reportCheckDigit Decoder Setting
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Matrix2of5reportCheckDigit Decoder Setting is used to set the matrix2of5 ReportCheckDigit property which enables reporting of the bar code check digit(s).
@@ -55,6 +56,8 @@ The following example enables the scanner to read only matrix2of5 labels with th
 	<META HTTP-Equiv="scanner" Content="matrix2of5ReportCheckDigit:true">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

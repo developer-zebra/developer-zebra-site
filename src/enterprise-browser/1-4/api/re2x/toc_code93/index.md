@@ -1,6 +1,6 @@
 ---
 title: Code93 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -24,4 +24,9 @@ automenu:
           url: ../Code93MinLength
         - title: Code93redundancy
           url: ../Code93Redundancy
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+

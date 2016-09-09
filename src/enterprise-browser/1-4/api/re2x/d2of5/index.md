@@ -1,10 +1,11 @@
 ---
-title: D2of5 Decoder 
+title: D2of5 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The D2of5 Decoder is used to enable or disable the d2of5 decoder.
@@ -78,6 +79,8 @@ The following example enables the scanner to read all labels except d2of5:
 	<META HTTP-Equiv="scanner" Content="d2of5:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

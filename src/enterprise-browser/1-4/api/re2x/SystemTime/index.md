@@ -3,8 +3,9 @@ title: SystemTime Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The SystemTime Module is used to set the device clock and timezone, or to set the device to obtain clock and timezone settings from a network server.
 
@@ -81,5 +82,7 @@ The following example sets the UTC device time from a network time server:
 
 	<META HTTP-Equiv="SystemTime" Content="SntpServerIP:132.163.4.102">
 	
+
+
 
 

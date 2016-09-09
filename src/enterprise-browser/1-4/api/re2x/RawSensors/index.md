@@ -1,5 +1,9 @@
 ---
 title: RawSensors Module
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: RhoElements 2.x APIs
 ---
 
 
@@ -172,6 +176,8 @@ The following example enables all the sensors and waits for the updates through 
 	<P>
 	  <INPUT align="center" type="button" value="Retrieve Sensor Data" onclick="RawSensors.getSensorData();"><br>
 	
+
+
 
 
 

@@ -3,8 +3,9 @@ title: Upce0 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Upce0 Decoder is used to enable or disable the upce0 decoder.
@@ -70,6 +71,8 @@ The following example enables the scanner to read all labels except upce0:
 	<META HTTP-Equiv="scanner" Content="upce0:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

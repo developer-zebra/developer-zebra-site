@@ -1,10 +1,11 @@
 ---
-title: Code11 Decoder 
+title: Code11 Decoder
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ##Overview
 
 The Code11 Decoder is used to enable or disable the Code11 decoder.
@@ -72,6 +73,8 @@ The following example enables the scanner to read all labels except Code11:
 	<META HTTP-Equiv="scanner" Content="Code11:disabled">
 	<META HTTP-Equiv="scanner" Content="enabled">
 	
+
+
 
 
 

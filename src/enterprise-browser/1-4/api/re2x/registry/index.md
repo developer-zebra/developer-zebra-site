@@ -3,8 +3,9 @@ title: Registry Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: RhoElements 2.x APIs
 ---
+
 ## Overview
 The Registry Module is used to write and delete registry settings, and create corresponding merge files.
 
@@ -118,6 +119,8 @@ The tags below delete the above setting.
 	        <META HTTP-Equiv="registry" Content="setting:RhoElements">
 	        <META HTTP-Equiv="registry" Content="delete">
 	      
+
+
 
 
 

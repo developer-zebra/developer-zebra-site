@@ -1,6 +1,6 @@
 ---
 title: Code11 Barcode-Capture Decoders
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -28,4 +28,10 @@ automenu:
           url: ../Code11Redundancy
         - title: Code11reportCheckDigit
           url: ../Code11ReportCheckDigit
+productversion: '1.4'
+product: Enterprise Browser
+subhead: RhoElements 2.x APIs
 ---
+
+
+

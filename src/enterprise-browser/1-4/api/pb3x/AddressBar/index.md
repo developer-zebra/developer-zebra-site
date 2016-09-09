@@ -98,6 +98,7 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
 					
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
+     <hr size="1">
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -108,6 +109,11 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
           <tr>
             <td class="clsSyntaxCells">
               <p>&lt;META HTTP-Equiv="AddressBar" content="[parameter]"&gt;</p>
+                   </td>
+          </tr>
+          <tr>
+            <td class="clsSyntaxCells">
+              <p>&lt;META HTTP-Equiv="Alarm" content="AlarmTriggered:url('[jsFunction | url]')"&gt;</p>
             </td>
           </tr>
         </table>
@@ -302,7 +308,7 @@ The following example shows the address bar, sets the left and top coordinates t
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-  
     <hr size="1">
+    <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>

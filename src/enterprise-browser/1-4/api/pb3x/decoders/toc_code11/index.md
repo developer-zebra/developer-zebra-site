@@ -20,7 +20,7 @@ automenu:
           url: ../code11
         - title: Code11checkDigitCount
           url: ../Code11CheckDigitCount
-         - title: Code11Redundancy
+        - title: Code11Redundancy
           url: ../Code11Redundancy
         - title: Code11reportCheckDigit
           url: ../Code11ReportCheckDigit

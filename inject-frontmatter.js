@@ -70,7 +70,7 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-        "path": "enterprise-browser/1-4/api/pb3x",
+        "path": "enterprise-browser/1-4/api/re3x",
         "frontmatter": [
             {
                 "item" :  "productversion",
@@ -89,8 +89,8 @@ var settings = [
             }, 
             {
                 "item" :  "subhead",
-                "value" : "PocketBrowser 3.x APIs",
-                "override": false
+                "value" : "RhoElements 2.x APIs",
+                "override": true
             }
         ]
     },

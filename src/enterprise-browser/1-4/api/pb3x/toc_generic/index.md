@@ -15,41 +15,41 @@ automenu:
     - title: PocketBrowser 3.x Generic APIs
       items:
         - title: CloseProcess
-          url: ../apd/CloseProcess
+          url: ../generic/CloseProcess
         - title: ConnectionStatus
-          url: ../apd/ConnectionStatus
+          url: ../generic/ConnectionStatus
         - title: GetProcessExitCode
-          url: ../apd/GetProcessExitCode
+          url: ../generic/GetProcessExitCode
         - title: GetRegistrySetting
-          url: ../apd/GetRegistrySetting
+          url: ../generic/GetRegistrySetting
         - title: InvokeMetaFunction
-          url: ../apd/InvokeMetaFunction
+          url: ../generic/InvokeMetaFunction
         - title: LaunchProcess
-          url: ../apd/LaunchProcess
+          url: ../generic/LaunchProcess
         - title: LaunchProcessNonBlocking
-          url: ../apd/LaunchProcessNonBlocking
+          url: ../generic/LaunchProcessNonBlocking
         - title: Log
-          url: ../apd/Log
+          url: ../generic/Log
         - title: OEMInfo
-          url: ../apd/OEMInfo
+          url: ../generic/OEMInfo
         - title: PlayWave
-          url: ../apd/PlayWave
+          url: ../generic/PlayWave
         - title: RasConnect
-          url: ../apd/RasConnect
+          url: ../generic/RasConnect
         - title: RasDisconnect
-          url: ../apd/RasDisconnect
+          url: ../generic/RasDisconnect
         - title: ReadConfigSetting
-          url: ../apd/ReadConfigSetting
+          url: ../generic/ReadConfigSetting
         - title: ReadUserSetting
-          url: ../apd/ReadUserSetting
+          url: ../generic/ReadUserSetting
         - title: SetRegistrySetting
-          url: ../apd/SetRegistrySetting
-        - title: uuid
-          url: ../apd/uuid
+          url: ../generic/SetRegistrySetting
+        - title: UUID
+          url: ../generic/uuid
         - title: WaitProcess
-          url: ../apd/WaitProcess
+          url: ../generic/WaitProcess
         - title: WriteConfigSetting
-          url: ../apd/WriteConfigSetting
+          url: ../generic/WriteConfigSetting
         - title: WriteUserSetting
-          url: ../apd/WriteUserSetting
+          url: ../generic/WriteUserSetting
 ---

@@ -15,19 +15,19 @@ automenu:
     - title: PocketBrowser 3.x AirBeam APIs
       items:
         - title: AddPackage
-          url: ../apd/addpackage
+          url: ../airbeam/addpackage
         - title: AutoLoadMode
-          url: ../apd/autoloadmode
+          url: ../airbeam/autoloadmode
         - title: AutoReboot
-          url: ../apd/autoreboot
+          url: ../airbeam/autoreboot
         - title: DeletePackage
-          url: ../apd/deletepackage
+          url: ../airbeam/deletepackage
         - title: RunManagement
-          url: ../apd/runmanagement
-        - title: run
-          url: ../apd/run
+          url: ../airbeam/runmanagement
+        - title: Run
+          url: ../airbeam/run
         - title: TestMode
-          url: ../apd/testmode
+          url: ../airbeam/testmode
         - title: uploadPackage
-          url: ../apd/uploadpackage
+          url: ../airbeam/uploadpackage
 ---

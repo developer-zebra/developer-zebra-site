@@ -201,11 +201,11 @@ automenu:
         - title: AddressBar
           url: pb3x/addressbar
         - title: Airbeam Smart 
-          url: pb3x/airbeamamart
+          url: pb3x/toc_airbeam
         - title: Alarm
           url: pb3x/alarm
         - title: APD 
-          url: pb3x/apd
+          url: pb3x/toc_apd
         - title: Application
           url: pb3x/application
         - title: BackButton
@@ -231,11 +231,9 @@ automenu:
         - title: ForwardButton
           url: pb3x/forwardbutton
         - title: Generic 
-          url: pb3x/generic
+          url: pb3x/toc_generic
         - title: Gesture
           url: pb3x/gesture
-        - title: Gesturing Overview 
-          url: pb3x/gesturingoverview
         - title: GoButton
           url: pb3x/gobutton
         - title: HistoryBack 
@@ -246,10 +244,6 @@ automenu:
           url: pb3x/hourglass
         - title: Imager
           url: pb3x/imager
-        - title: Indicator Positions 
-          url: pb3x/indicatorpositions
-        - title: Key Capture Overview 
-          url: pb3x/keycaptureoverview
         - title: KeyCapture
           url: pb3x/keycapture
         - title: Keylight
@@ -261,7 +255,7 @@ automenu:
         - title: Notification
           url: pb3x/notification
         - title: ODAX 
-          url: pb3x/odax
+          url: pb3x/toc_odax
         - title: PowerOn
           url: pb3x/poweron
         - title: Push

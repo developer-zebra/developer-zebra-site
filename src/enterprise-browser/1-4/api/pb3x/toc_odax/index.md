@@ -15,29 +15,29 @@ automenu:
     - title: PocketBrowser 3.x ODAX APIs
       items:
         - title: CeODAX.Clear
-          url: ../apd/CeODAX.Clear
+          url: ../odax/CeODAX.Clear
         - title: CeODAX.Copy
-          url: ../apd/CeODAX.Copy
+          url: ../odax/CeODAX.Copy
         - title: CeODAX.Delete
-          url: ../apd/CeODAX.Delete
+          url: ../odax/CeODAX.Delete
         - title: CeODAX.Execute
-          url: ../apd/CeODAX.Execute
+          url: ../odax/CeODAX.Execute
         - title: CeODAX.FileExists
-          url: ../apd/CeODAX.FileExists
+          url: ../odax/CeODAX.FileExists
         - title: CeODAX.Get
-          url: ../apd/CeODAX.Get
+          url: ../odax/CeODAX.Get
         - title: CeODAX.GetLastErrorString
-          url: ../apd/CeODAX.GetLastErrorString
+          url: ../odax/CeODAX.GetLastErrorString
         - title: CeODAX.Move
-          url: ../apd/CeODAX.Move
+          url: ../odax/CeODAX.Move
         - title: CeODAX.MoveFirst
-          url: ../apd/CeODAX.MoveFirst
+          url: ../odax/CeODAX.MoveFirst
         - title: CeODAX.MoveLast
-          url: ../apd/CeODAX.MoveLast
+          url: ../odax/CeODAX.MoveLast
         - title: CeODAX.MoveNext
-          url: ../apd/CeODAX.MoveNext
+          url: ../odax/CeODAX.MoveNext
         - title: CeODAX.Moveprev
-          url: ../apd/CeODAX.Moveprev
+          url: ../odax/CeODAX.Moveprev
         - title: CeODAX.Select
-          url: ../apd/CeODAX.Select
+          url: ../odax/CeODAX.Select
 ---

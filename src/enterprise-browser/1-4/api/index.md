@@ -1,6 +1,6 @@
 ---
 title: Enterprise Browser - Supported APIs 
-description: Zebra recommends the use of Enterprise Browser APIs whenever possible. To access functionality not implemented in EB or for running legacy apps, the APIs of PocketBrowser 2.x and 3.x, RhoElements 2.x and the RhoMobile 4.2 Shared Runtime can be used within certain boundaries. See the API Usage Guide for more information, and individual API reference pages (linked below) for the usage details and specific restrictions of each.
+description: Zebra recommends the use of Enterprise Browser APIs whenever possible. To run legacy apps through Enterprise Browser or to access functionality not implemented in EB, the APIs of PocketBrowser 2.x and 3.x, RhoElements 2.x and the RhoMobile 4.2 Shared Runtime can be used within certain boundaries. Some of those legacy APIs are published here. See the API Usage and Migration Guides for more information, and individual API reference pages (linked below) for each API's usage details and specific restrictions, if any.
 layout: list-apis.html
 automenu:
   items:
@@ -199,105 +199,105 @@ automenu:
     - title: PocketBrowser 3.x APIs
       items:
         - title: AddressBar
-          url: pb3x/addressbar
+          url: pb3x/addressbar/addressbar.html
         - title: Airbeam Smart 
           url: pb3x/toc_airbeam
         - title: Alarm
-          url: pb3x/alarm
+          url: pb3x/alarm/alarm.html
         - title: APD 
           url: pb3x/toc_apd
         - title: Application
-          url: pb3x/application
+          url: pb3x/application/application.html
         - title: BackButton
-          url: pb3x/backbutton
+          url: pb3x/backbutton/backbutton.html
         - title: Backlight
-          url: pb3x/backlight
+          url: pb3x/backlight/backlight.html
         - title: Battery
-          url: pb3x/battery
+          url: pb3x/battery/battery.html
         - title: BottomCommandArea 
-          url: pb3x/bottomcommandarea
+          url: pb3x/bottomcommandarea/bottomcommandarea.html
         - title: CardReader
-          url: pb3x/cardreader
+          url: pb3x/cardreader/cardreader.html
         - title: Comm
-          url: pb3x/comm
+          url: pb3x/comm/comm.html
         - title: Decoders 
-          url: pb3x/decoders
+          url: pb3x/decoders/decoders.html
         - title: Device
-          url: pb3x/device
+          url: pb3x/device/device.html
         - title: EMMLProfile 
-          url: pb3x/emmlprofile
+          url: pb3x/emmlprofile/emmlprofile.html
         - title: FileTransfer
-          url: pb3x/filetransfer
+          url: pb3x/filetransfer/filetransfer.html
         - title: ForwardButton
-          url: pb3x/forwardbutton
+          url: pb3x/forwardbutton/forwardbutton.html
         - title: Generic 
           url: pb3x/toc_generic
         - title: Gesture
-          url: pb3x/gesture
+          url: pb3x/gesture/gesture.html
         - title: GoButton
-          url: pb3x/gobutton
+          url: pb3x/gobutton/gobutton.html
         - title: HistoryBack 
-          url: pb3x/historyback
+          url: pb3x/historyback/historyback2.html
         - title: HomeButton
-          url: pb3x/homebutton
+          url: pb3x/homebutton/homebutton.html
         - title: Hourglass
-          url: pb3x/hourglass
+          url: pb3x/hourglass/hourglass.html
         - title: Imager
-          url: pb3x/imager
+          url: pb3x/imager/imager.html
         - title: KeyCapture
-          url: pb3x/keycapture
+          url: pb3x/keycapture/keycapture.html
         - title: Keylight
-          url: pb3x/keylight
+          url: pb3x/keylight/keylight.html
         - title: KeyState
-          url: pb3x/keystate
+          url: pb3x/keystate/keystate.html
         - title: MinimizeButton
-          url: pb3x/minimizebutton
+          url: pb3x/minimizebutton/minimizebutton.html
         - title: Notification
-          url: pb3x/notification
+          url: pb3x/notification/notification.html
         - title: ODAX 
           url: pb3x/toc_odax
         - title: PowerOn
-          url: pb3x/poweron
+          url: pb3x/poweron/poweron.html
         - title: Push
-          url: pb3x/push
+          url: pb3x/push/push.html
         - title: QuitButton
-          url: pb3x/quitbutton
+          url: pb3x/quitbuttonquitbuttonn.html
         - title: Reboot
-          url: pb3x/reboot
+          url: pb3x/reboot/reboot.html
         - title: Registry
-          url: pb3x/registry
+          url: pb3x/registry/registry.html
         - title: ReloadButton
-          url: pb3x/reloadbutton
+          url: pb3x/reloadbutton/reloadbutton.html
         - title: RSM 
-          url: pb3x/rsm
+          url: pb3x/rsm/rsm.html
         - title: Scanner 
-          url: pb3x/scanner
+          url: pb3x/scanner/scanner.html
         - title: ScreenOrientation
-          url: pb3x/screenorientation
+          url: pb3x/screenorientation/screenorientation.html
         - title: Signal 
-          url: pb3x/signal
+          url: pb3x/signal/signal.html
         - title: SignatureCapture 
-          url: pb3x/signaturecapture
+          url: pb3x/signaturecapture/signaturecapture.html
         - title: SIP
-          url: pb3x/sip
+          url: pb3x/sip/sip
         - title: SIPButton
-          url: pb3x/sipButton
+          url: pb3x/sipbutton/sipbutton.html
         - title: SNTP 
-          url: pb3x/sntp
+          url: pb3x/sntp/sntp
         - title: StopButton
-          url: pb3x/stopbutton
+          url: pb3x/stopbutton/stopbutton.html
         - title: Stylus
-          url: pb3x/stylus
+          url: pb3x/stylus/stylus
         - title: TextSize 
-          url: pb3x/textsize
+          url: pb3x/textsize/textsize.html
         - title: Timer
-          url: pb3x/timer
+          url: pb3x/timer/timer
         - title: TopCommandArea
-          url: pb3x/topcommandarea
+          url: pb3x/topcommandarea/topcommandarea.html
         - title: Volume
-          url: pb3x/volume
+          url: pb3x/volume/volume
         - title: ZoomTextButton
-          url: pb3x/zoomtextbutton
+          url: pb3x/zoomtextbutton/zoomtextbutton.html
 product: Enterprise Browser
 productversion: '1.4'
 ---

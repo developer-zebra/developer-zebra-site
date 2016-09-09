@@ -1,107 +1,114 @@
----
-title: Scanner Meta Tag
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
-subhead: PocketBrowser 3.x APIs
----
-
-The Scanner Meta Tag is an action tag that controls the functionality of the device scanner.
-
-<html>
+﻿<html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>
-          body
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:x-small;
-          margin:20;
-          }
-          h1
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:medium;
-          font-weight:bold;
-          }
-          th
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:x-small;
-          font-weight:bold;
-          text-align:left;
-          background-color:#CCCCCC;
-          }
-          td
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:x-small;
-          text-align:left;
-          }
-          .clsRef
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:small;
-          color:#003399;
-          font-weight:bold;
-          text-align:left;
-          }
-          .clsSyntax
-          {
-          font-family:courier;
-          font-size:x-small;
-          text-align:left;
-          background-color:#ffffff;
-          }
-          .clsSyntaxHeadings
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:x-small;
-          font-weight:bold;
-          text-align:left;
-          color:#000066;
-          background-color:#efeff7;
-          border-bottom: #c8cdde 1px solid;
-          }
-          .clsSyntaxCells
-          {
-          font-family:verdana,arial,helvetica;
-          font-size:x-small;
-          text-align:left;
-          background-color:#f7f7ff;
-          border-bottom: #d5d5d3 1px solid;
-          }
-        </style>
+					body
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					margin:20;
+					}
+					h1
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:medium;
+					font-weight:bold;
+					}
+					th
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					font-weight:bold;
+					text-align:left;
+					background-color:#CCCCCC;
+					}
+					td
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					text-align:left;
+					}
+					.clsRef
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:small;
+					color:#003399;
+					font-weight:bold;
+					text-align:left;
+					}
+					.clsSyntax
+					{
+					font-family:courier;
+					font-size:x-small;
+					text-align:left;
+					background-color:#ffffff;
+					}
+					.clsSyntaxHeadings
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					font-weight:bold;
+					text-align:left;
+					color:#000066;
+					background-color:#efeff7;
+					border-bottom: #c8cdde 1px solid;
+					}
+					.clsSyntaxCells
+					{
+					font-family:verdana,arial,helvetica;
+					font-size:x-small;
+					text-align:left;
+					background-color:#f7f7ff;
+					border-bottom: #d5d5d3 1px solid;
+					}
+				</style>
     <title>Scanner</title><script type="text/javascript" language="Javascript">
-          function ToggleSpan(SpanId, ImgID)
-          {
-            var path = '../Resources/'
-          //Toggle the span view on or off
-          var Rollup = document.all.item(SpanId);
-          var RollupImg = document.all.item(ImgID);
-          var ToggleExpand = path + 'ToggleExpand.gif';
-          var ToggleCollapse = path + 'ToggleCollapse.gif';
-          Rollup.style.display = (Rollup.style.display=='none' ? 'block' : 'none');
-          RollupImg.src = (Rollup.style.display=='none' ? ToggleExpand : ToggleCollapse);
-          }
-          function CopyTemplate(sControl)
-          {
-          //Copy the template values held in the appropriate textarea to clipboard
-          if (window.clipboardData)
-          {
-          window.clipboardData.setData("Text", document.all.item(sControl).value);
-          }
-          return false;
-          }
-        </script></head>
+					
+					function ToggleSpan(SpanId, ImgID)
+					{
+						var path = '../Resources/'
+					//Toggle the span view on or off
+					var Rollup = document.all.item(SpanId);
+					var RollupImg = document.all.item(ImgID);
+					var ToggleExpand = path + 'ToggleExpand.gif';
+					var ToggleCollapse = path + 'ToggleCollapse.gif';
+					Rollup.style.display = (Rollup.style.display=='none' ? 'block' : 'none');
+					RollupImg.src = (Rollup.style.display=='none' ? ToggleExpand : ToggleCollapse);
+					}
+
+					function CopyTemplate(sControl)
+					{
+					//Copy the template values held in the appropriate textarea to clipboard
+					if (window.clipboardData)
+					{
+					window.clipboardData.setData("Text", document.all.item(sControl).value);
+					}
+					return false;
+					}
+					
+				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
+    <table width="100%">
+      <tr>
+        <td valign="middle" width="95%">
+          <h1>Scanner META Tag</h1>
+        </td>
+        <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
+      </tr>
+    </table>
     <hr size="1">
+    <p>
+					The 
+					<b>Scanner</b> META Tag is an action tag which provides access to control the functionality of the device's scanner.</p>
+    <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
+					Syntax
+				</span></nobr></p>
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <th class="clsSyntaxHeadings">Scanner (META Tag) Syntax
-            </th>
+						</th>
           </tr>
           <tr>
             <td class="clsSyntaxCells">
@@ -115,10 +122,13 @@ The Scanner Meta Tag is an action tag that controls the functionality of the dev
           </tr>
         </table>
       </blockquote><br></div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ParametersWOSpan', 'imgParametersWOToggle')"><img align="absmiddle" id="imgParametersWOToggle" alt="ParametersWO Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;					"></span>
+			Methods
+		</p>
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
-        Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
-        <BR><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
+				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
+				<BR><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <col width="10%">
           <col width="68%">
           <col width="22%">
@@ -136,10 +146,10 @@ The Scanner Meta Tag is an action tag that controls the functionality of the dev
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Enumerate</b></td>
             <td valign="top" class="clsSyntaxCells">Return a list of scanners present on the device via EnumScannerEvent.  
-              This tag will be actioned immediately and should be called via JavaScript.</td>
+				      This tag will be actioned immediately and should be called via JavaScript.</td>
             <td valign="top" class="clsSyntaxCells">
-                    N/A
-                  </td>
+										N/A
+									</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Enabled</b></td>
@@ -155,15 +165,15 @@ The Scanner Meta Tag is an action tag that controls the functionality of the dev
             <td valign="top" class="clsSyntaxCells"><b>Start</b></td>
             <td valign="top" class="clsSyntaxCells">Performs a soft trigger start</td>
             <td valign="top" class="clsSyntaxCells">
-                    N/A
-                  </td>
+										N/A
+									</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Stop</b></td>
             <td valign="top" class="clsSyntaxCells">Performs a soft trigger stop</td>
             <td valign="top" class="clsSyntaxCells">
-                    N/A
-                  </td>
+										N/A
+									</td>
           </tr>
         </table>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -179,20 +189,21 @@ The Scanner Meta Tag is an action tag that controls the functionality of the dev
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><b>Copy methods template to clipboard:</b></nobr></td>
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsWO" alt="Copy META Tag template to clipboard" onclick="CopyTemplate('txtMETATemplateWO')" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif">
-                  META Tags
-                </nobr></td>
+									META Tags
+								</nobr></td>
             <td></td>
             <td valign="middle" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsWO" alt="Copy Javascript template to clipboard" onclick="CopyTemplate('txtJavascriptTemplateWO')" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif">
-                  Javascript
-                </nobr></td>
+									Javascript
+								</nobr></td>
             <td></td>
           </tr>
         </table>
         <div style="display:none"><textarea id="txtMETATemplateWO">&lt;!-- 
 The Scanner META Tag is an action tag which provides access to control the functionality of the device's scanner.
 --&gt;
+
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="Enumerate"&gt; --&gt;      &lt;!-- Return a list of scanners present on the device via EnumScannerEvent.  
-              This tag will be actioned immediately and should be called via JavaScript. --&gt;
+				      This tag will be actioned immediately and should be called via JavaScript. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="Enabled"&gt; --&gt;      &lt;!-- Enables the default scanner --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="Disabled"&gt; --&gt;      &lt;!-- Disables the scanner.  This reverts the scanner to its default state and flushes any current decoder settings. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="Start"&gt; --&gt;      &lt;!-- Performs a soft trigger start --&gt;
@@ -201,22 +212,28 @@ The Scanner META Tag is an action tag which provides access to control the funct
    /*
    The Scanner META Tag is an action tag which provides access to control the functionality of the device's scanner.
    */
+
    function doScannerInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
+
       //objGeneric.InvokeMETAFunction('Scanner', 'Enumerate');      /* Return a list of scanners present on the device via EnumScannerEvent.  
-              This tag will be actioned immediately and should be called via JavaScript. */
+				      This tag will be actioned immediately and should be called via JavaScript. */
       //objGeneric.InvokeMETAFunction('Scanner', 'Enabled');      /* Enables the default scanner */
       //objGeneric.InvokeMETAFunction('Scanner', 'Disabled');      /* Disables the scanner.  This reverts the scanner to its default state and flushes any current decoder settings. */
       //objGeneric.InvokeMETAFunction('Scanner', 'Start');      /* Performs a soft trigger start */
       //objGeneric.InvokeMETAFunction('Scanner', 'Stop');      /* Performs a soft trigger stop */
+
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ParametersWSpan', 'imgParametersWToggle')"><img align="absmiddle" id="imgParametersWToggle" alt="ParametersW Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;					"></span>
+			Parameters
+		</p>
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
-        Items listed in this section indicate parameters, or attributes which can be set.
-        <BR><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
+				Items listed in this section indicate parameters, or attributes which can be set.
+				<BR><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <col width="20%">
           <col width="20%">
           <col width="38%">
@@ -235,42 +252,42 @@ The Scanner META Tag is an action tag which provides access to control the funct
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>Enabled:[Value]
-                          </b></td>
+													</b></td>
             <td valign="top" class="clsSyntaxCells">ID of Scanner, obtained via EnumScanner</td>
             <td valign="top" class="clsSyntaxCells">Enables the specified scanner.</td>
             <td valign="top" class="clsSyntaxCells">SCN1 (or SCN2 if SCN1 not found on device)</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>[Decoder Name]:[Value]
-                          </b></td>
+													</b></td>
             <td valign="top" class="clsSyntaxCells">Refer "Decoders and Parameters Tag" Section to know available decoders and Their Parameters</td>
             <td valign="top" class="clsSyntaxCells">Sets each Decoder's parameters</td>
             <td valign="top" class="clsSyntaxCells">Refer "Decoders and Parameters Tag" Section</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>AutoEnter:[Value]
-                          </b></td>
+													</b></td>
             <td valign="top" class="clsSyntaxCells">Enabled / Disabled</td>
             <td valign="top" class="clsSyntaxCells">If "Enabled" then automatically append an Enter to the end of any barcodes scanned.  This feature is only available when decodeevent is not specified and is useful for submitting forms.  See Remarks.</td>
             <td valign="top" class="clsSyntaxCells">Disabled</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>AutoTab:[Value]
-                          </b></td>
+													</b></td>
             <td valign="top" class="clsSyntaxCells">Enabled / Disabled</td>
             <td valign="top" class="clsSyntaxCells">If "Enabled" then automatically appends a Bab to the end of any barcodes scanned. This feature is only available when decodeevent is not specified and is useful for advancing to the next input field.  See Remarks.</td>
             <td valign="top" class="clsSyntaxCells">Disabled</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>RasterMode:[Value]
-                          </b></td>
+													</b></td>
             <td valign="top" class="clsSyntaxCells">None / Open_Always / Smart / Cyclone</td>
             <td valign="top" class="clsSyntaxCells">None: No vertical rastering.  Open_Always: Vertical rastering is always full open.  Smart: Vertical rastering mode is 'Smart'.  Cyclone: Vertical rastering mode is 'Cyclone'.</td>
             <td valign="top" class="clsSyntaxCells">Device specific</td>
           </tr>
           <tr>
             <td valign="top" class="clsSyntaxCells"><b>AimType:[Value]
-                          </b></td>
+													</b></td>
             <td valign="top" class="clsSyntaxCells">Trigger / Timed_Hold / Timed_Release / Presentation</td>
             <td valign="top" class="clsSyntaxCells">Trigger: Standard trigger mode.  Timed_Hold: Aiming lasts for a specified time before decoding.  Timed_Release: Aiming lasts until trigger is released.  Presentation: Only applicable to Kiosk devices, the scanner illuminates when movement is detected in the range of the scanner window.  The scanner must be initiated with a softscan using the start method.  Please see the example for usage</td>
             <td valign="top" class="clsSyntaxCells">Device specific</td>
@@ -289,18 +306,19 @@ The Scanner META Tag is an action tag which provides access to control the funct
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><b>Copy parameters template to clipboard:</b></nobr></td>
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsW" alt="Copy META Tag template to clipboard" onclick="CopyTemplate('txtMETATemplateW')" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif">
-                  META Tags
-                </nobr></td>
+									META Tags
+								</nobr></td>
             <td></td>
             <td valign="middle" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsW" alt="Copy Javascript template to clipboard" onclick="CopyTemplate('txtJavascriptTemplateW')" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif">
-                  Javascript
-                </nobr></td>
+									Javascript
+								</nobr></td>
             <td></td>
           </tr>
         </table>
         <div style="display:none"><textarea id="txtMETATemplateW">&lt;!-- 
 The Scanner META Tag is an action tag which provides access to control the functionality of the device's scanner.
 --&gt;
+
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="Enabled:[Value]"&gt; --&gt;      &lt;!-- Enables the specified scanner. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="[Decoder Name]:[Value]"&gt; --&gt;      &lt;!-- Sets each Decoder's parameters --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Scanner" Content="AutoEnter:[Value]"&gt; --&gt;      &lt;!-- If "Enabled" then automatically append an Enter to the end of any barcodes scanned.  This feature is only available when decodeevent is not specified and is useful for submitting forms.  See Remarks. --&gt;
@@ -311,33 +329,39 @@ The Scanner META Tag is an action tag which provides access to control the funct
    /*
    The Scanner META Tag is an action tag which provides access to control the functionality of the device's scanner.
    */
+
    function doScannerInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
+
       //objGeneric.InvokeMETAFunction('Scanner', 'Enabled:[Value]');      /* Enables the specified scanner. */
       //objGeneric.InvokeMETAFunction('Scanner', '[Decoder Name]:[Value]');      /* Sets each Decoder's parameters */
       //objGeneric.InvokeMETAFunction('Scanner', 'AutoEnter:[Value]');      /* If "Enabled" then automatically append an Enter to the end of any barcodes scanned.  This feature is only available when decodeevent is not specified and is useful for submitting forms.  See Remarks. */
       //objGeneric.InvokeMETAFunction('Scanner', 'AutoTab:[Value]');      /* If "Enabled" then automatically appends a Bab to the end of any barcodes scanned. This feature is only available when decodeevent is not specified and is useful for advancing to the next input field.  See Remarks. */
       //objGeneric.InvokeMETAFunction('Scanner', 'RasterMode:[Value]');      /* None: No vertical rastering.  Open_Always: Vertical rastering is always full open.  Smart: Vertical rastering mode is 'Smart'.  Cyclone: Vertical rastering mode is 'Cyclone'. */
       //objGeneric.InvokeMETAFunction('Scanner', 'AimType:[Value]');      /* Trigger: Standard trigger mode.  Timed_Hold: Aiming lasts for a specified time before decoding.  Timed_Release: Aiming lasts until trigger is released.  Presentation: Only applicable to Kiosk devices, the scanner illuminates when movement is detected in the range of the scanner window.  The scanner must be initiated with a softscan using the start method.  Please see the example for usage */
+
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ReturnsSpan', 'imgReturnsToggle')"><img align="absmiddle" id="imgReturnsToggle" alt="Returns Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+			Events
+		</p>
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
-          Modules return information back to their web pages via retrieval tags, for example the scanner has a retrieval tag called 'DecodeEvent' which is called whenever it decodes a barcode.  To register to receive a retrieval tag call the module as follows:
-          <blockquote>
+					Modules return information back to their web pages via retrieval tags, for example the scanner has a retrieval tag called 'DecodeEvent' which is called whenever it decodes a barcode.  To register to receive a retrieval tag call the module as follows:
+					<blockquote>
             <pre class="clsSyntaxCells">&lt;META HTTP-Equiv="[Module]" content="[RetrievalTag]:url('[URI]')"&gt;</pre>
-            So to register to retrieve the Scanner's DecodeEvent the following syntax would be used:
-            <pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('Javascript:doScan('%6', '%s', %3, '%2');')"&gt;</pre>
+						So to register to retrieve the Scanner's DecodeEvent the following syntax would be used:
+						<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('Javascript:doScan('%6', '%s', %3, '%2');')"&gt;</pre>
           </blockquote><BR><P>
-          Retrieval tags return information by replacing the text in place holders, defined as '%s' or '%&lt;number&gt;'.  Each place holder represents 1 return value with '%s' being populated sequentially or '%&lt;number&gt;' providing direct acces to the desired value.
-          </P>
+					Retrieval tags return information by replacing the text in place holders, defined as '%s' or '%&lt;number&gt;'.  Each place holder represents 1 return value with '%s' being populated sequentially or '%&lt;number&gt;' providing direct acces to the desired value.
+					</P>
           <blockquote>
             <p>
-                If the content for the Scanner's DecodeEvent is:<BR><pre class="clsSyntaxCells">"url('Javascript:doScan('%6', '%s', %3, '%2');')"</pre><BR>
-                The function would be called as follows:<BR><pre class="clsSyntaxCells">"Javascript:doScan('Decode', '5449000053879', 0x35, 'SCN:EAN13');"</pre><BR></p>
+								If the content for the Scanner's DecodeEvent is:<BR><pre class="clsSyntaxCells">"url('Javascript:doScan('%6', '%s', %3, '%2');')"</pre><BR>
+								The function would be called as follows:<BR><pre class="clsSyntaxCells">"Javascript:doScan('Decode', '5449000053879', 0x35, 'SCN:EAN13');"</pre><BR></p>
           </blockquote>
         </p><br><DIV class="clsRef">DecodeEvent</DIV>
         <DIV>A decode event is sent by the Scanner whenever a barcode is decoded or a Bluetooth connection / disconnection event occurs.</DIV><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -388,6 +412,7 @@ The Scanner META Tag is an action tag which provides access to control the funct
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
       //objGeneric.InvokeMETAFunction('Scanner', 'DecodeEvent:url('JavaScript:fnJSCallbackHandler('%1', '%2', %3, '%4', '%5', '%6');')');      /* A decode event is sent by the Scanner whenever a barcode is decoded or a Bluetooth connection / disconnection event occurs. */
+
    }
 &lt;/script&gt;</textarea></div>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -403,12 +428,12 @@ The Scanner META Tag is an action tag which provides access to control the funct
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><b>Copy this return value template to clipboard:</b></nobr></td>
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsReturn" alt="Copy META Tag template to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0ECF');">
-                  META Tags
-                </nobr></td>
+									META Tags
+								</nobr></td>
             <td></td>
             <td valign="middle" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsWO" alt="Copy Javascript template to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EIF');">
-                  Javascript
-                </nobr></td>
+									Javascript
+								</nobr></td>
             <td></td>
           </tr>
         </table><br><br><DIV class="clsRef">EnumScannerEvent</DIV>
@@ -433,7 +458,9 @@ The Scanner META Tag is an action tag which provides access to control the funct
    function doScannerInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
+
       //objGeneric.InvokeMETAFunction('Scanner', 'EnumScannerEvent:url('JavaScript:fnJSCallbackHandler(%1);')');      /* The Enum Scanner Event is used to ascertain the scanners present on the device. */
+
    }
 &lt;/script&gt;</textarea></div>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -449,15 +476,18 @@ The Scanner META Tag is an action tag which provides access to control the funct
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><b>Copy this return value template to clipboard:</b></nobr></td>
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsReturn" alt="Copy META Tag template to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EVG');">
-                  META Tags
-                </nobr></td>
+									META Tags
+								</nobr></td>
             <td></td>
             <td valign="middle" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaultsWO" alt="Copy Javascript template to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0E2G');">
-                  Javascript
-                </nobr></td>
+									Javascript
+								</nobr></td>
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ExamplesSpan', 'imgExamplesToggle')"><img align="absmiddle" id="imgExamplesToggle" alt="Examples Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+			Examples
+		</p>
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example enables the scanner, turns on autoenter and performs a soft trigger start:</p>
@@ -478,13 +508,14 @@ The Scanner META Tag is an action tag which provides access to control the funct
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EIH');">
-                  Copy example to clipboard
-                </nobr></td>
+									Copy example to clipboard
+								</nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EIH">&lt;!-- 
 The following example enables the scanner, turns on autoenter and performs a soft trigger start:
 --&gt;
+
 &lt;META HTTP-Equiv="scanner" Content="Enabled"&gt;
 &lt;META HTTP-Equiv="scanner" Content="AutoEnter:Enabled"&gt;
 &lt;META HTTP-Equiv="scanner" Content="Start"&gt;
@@ -506,13 +537,14 @@ The following example enables the scanner, turns on autoenter and performs a sof
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EPH');">
-                  Copy example to clipboard
-                </nobr></td>
+									Copy example to clipboard
+								</nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EPH">&lt;!-- 
 The following example sets up the scanner on a page to submit the scanned data to an asp page upon successful decoding
 --&gt;
+
 &lt;META HTTP-Equiv="scanner" Content="enabled"&gt;
 &lt;META HTTP-Equiv="scanner" Content="DecodeEvent:url('mypage.asp?Data=%s&amp;Source=%s&amp;Type=%s&amp;Time=%s&amp;Length=%s')"&gt;
 </textarea></div>
@@ -547,8 +579,8 @@ The following example sets up the scanner on a page to submit the scanned data t
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EWH');">
-                  Copy example to clipboard
-                </nobr></td>
+									Copy example to clipboard
+								</nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EWH">&lt;!-- 
@@ -557,6 +589,7 @@ The following example sets up the scanner on a page to call a javascript functio
 
 &lt;META HTTP-Equiv="scanner" Content="enabled"&gt;
 &lt;META HTTP-Equiv="scanner" Content="DecodeEvent:url('javascript:doScan('%s', '%s', %s, '%s', %s);')"&gt;
+
 &lt;script&gt;
    function doScan(data, source, type, time, length)
    {
@@ -588,18 +621,19 @@ The following example sets up the scanner on a page to call a javascript functio
 
     function doSoftScan()
     {
-      Generic.InvokeMetaFunction('scanner', 'start');
+	    Generic.InvokeMetaFunction('scanner', 'start');
     }
 
     function doScan(data)
     {
-      bcode.innerHTML = data;
-      doSoftScan();
-    }
+	    bcode.innerHTML = data;
+	    doSoftScan();
+	  }
   &lt;/SCRIPT&gt;
   &lt;div id="bcode"&gt;&lt;/div&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
+
 </pre>
             </td>
           </tr>
@@ -610,13 +644,14 @@ The following example sets up the scanner on a page to call a javascript functio
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0E4H');">
-                  Copy example to clipboard
-                </nobr></td>
+									Copy example to clipboard
+								</nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0E4H">&lt;!-- 
 The following example demonstrates how to set a device into presentation mode.
 --&gt;
+
 &lt;HTML&gt;
 &lt;HEAD&gt;
   &lt;Meta http-equiv="scanner" content="aimtype:presentation"&gt;
@@ -626,19 +661,22 @@ The following example demonstrates how to set a device into presentation mode.
 &lt;BODY onLoad="doSoftScan();"&gt;
   &lt;SCRIPT LANGAUGE="JavaScript"&gt;
     var Generic = new ActiveXObject("PocketBrowser.Generic");
+
     function doSoftScan()
     {
-      Generic.InvokeMetaFunction('scanner', 'start');
+	    Generic.InvokeMetaFunction('scanner', 'start');
     }
+
     function doScan(data)
     {
-      bcode.innerHTML = data;
-      doSoftScan();
-    }
+	    bcode.innerHTML = data;
+	    doSoftScan();
+	  }
   &lt;/SCRIPT&gt;
   &lt;div id="bcode"&gt;&lt;/div&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
+
 </textarea></div>
         <p>The following example shows how an application might handle a Bluetooth Scanner whose ID is SCN2:</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -652,65 +690,72 @@ The following example demonstrates how to set a device into presentation mode.
 &lt;!-- Enable the Bluetooth Scanner, this will commence the BT pairing --&gt;
 &lt;META HTTP-Equiv="Scanner" Content="Enabled:SCN2"&gt;
 &lt;/HEAD&gt;
+
 Barcode Data: &lt;DIV ID="bcode"&gt; &lt;/DIV&gt;
 User Message: &lt;DIV ID="message"&gt; &lt;/DIV&gt;
 &lt;P&gt;&lt;INPUT TYPE="button" VALUE="Change Associated Scanner" ONCLICK="onChangeScanner();"&gt;&lt;/P&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
+
 &lt;SCRIPT LANGUAGE="JavaScript"&gt;
+
 //  Keep track of whether we have minimised PB for the user to scan the association barcode
 var scanningAssociationBarcode = false;
 //  Whether or not the next barcode data we receive will be the unpairing barcode
 var expectingUnpairingBarcode = false;
+
 function ScanFunc(data, source, type, time, length, theEvent)
 {
-  var Generic = new ActiveXObject("PocketBrowser.Generic");
-  if (expectingUnpairingBarcode)
-  {
-    //  After we scan the Unpairing barcode ScanFunc will be called, 
-    //  restart the scanner component so it is ready
-    //  to accept a different Bluetooth Scanner
-    expectingUnpairingBarcode = false;
-    Generic.InvokeMETAFunction('Scanner', 'Disabled');
-    Generic.InvokeMETAFunction('Scanner', 'Enabled:SCN2');
-    return;
-  }
-  if (theEvent == 'BTScanAssociationBarcode')
-  {
-    scanningAssociationBarcode = true;
-    //  Minimise PocketBrowser and Show the Association barcode for the user to scan
-    Generic.InvokeMETAFunction('Application', 'minimize');
-    Generic.LaunchProcessNonBlocking('\\application\\BT_Information.exe', 'ShowBarcodeOnly');
-  }
-  else if(theEvent == 'BluetoothConnected')
-  {
-    //  Check to see if we are scanning the association barcode, if we are then return user control to PocketBrowser
-    if (scanningAssociationBarcode)
-    {
-      //  The Association barcode is currently shown
-      scanningAssociationBarcode = false;
-      Generic.InvokeMETAFunction('Application', 'restore');
-    }
-    message.innerHTML = "Bluetooth Scanner Connected";
-  }
-  else if(theEvent == 'BluetoothDisconnected')
-  {
-    message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
-  }
-  else if(theEvent == 'Decode')
-  {
-    //  Consider a normal Barcode Scan (to test the BT connection)
-    bcode.innerHTML = data;
-  }
+	var Generic = new ActiveXObject("PocketBrowser.Generic");
+	if (expectingUnpairingBarcode)
+	{
+		//  After we scan the Unpairing barcode ScanFunc will be called, 
+		//  restart the scanner component so it is ready
+		//  to accept a different Bluetooth Scanner
+		expectingUnpairingBarcode = false;
+		Generic.InvokeMETAFunction('Scanner', 'Disabled');
+		Generic.InvokeMETAFunction('Scanner', 'Enabled:SCN2');
+		return;
+	}
+	
+	if (theEvent == 'BTScanAssociationBarcode')
+	{
+		scanningAssociationBarcode = true;
+		//  Minimise PocketBrowser and Show the Association barcode for the user to scan
+		Generic.InvokeMETAFunction('Application', 'minimize');
+		Generic.LaunchProcessNonBlocking('\\application\\BT_Information.exe', 'ShowBarcodeOnly');
+	}
+	else if(theEvent == 'BluetoothConnected')
+	{
+		//  Check to see if we are scanning the association barcode, if we are then return user control to PocketBrowser
+		if (scanningAssociationBarcode)
+		{
+			//  The Association barcode is currently shown
+			scanningAssociationBarcode = false;
+			Generic.InvokeMETAFunction('Application', 'restore');
+		}
+		message.innerHTML = "Bluetooth Scanner Connected";
+	}
+	else if(theEvent == 'BluetoothDisconnected')
+	{
+		message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
+	}
+	else if(theEvent == 'Decode')
+	{
+		//  Consider a normal Barcode Scan (to test the BT connection)
+		bcode.innerHTML = data;
+	}
 }
+
 function onChangeScanner()
 {
-  //  Change the BT Scanner associated with the device, the logic to do this is handled
-  //  once the 'unpairing' barcode is scanned.
-  message.innerHTML = "Please Scan Unpairing Barcode";
-  expectingUnpairingBarcode = true;
+	//  Change the BT Scanner associated with the device, the logic to do this is handled
+	//  once the 'unpairing' barcode is scanned.
+	message.innerHTML = "Please Scan Unpairing Barcode";
+	expectingUnpairingBarcode = true;
 }
 &lt;/SCRIPT&gt;
+
 </pre>
             </td>
           </tr>
@@ -721,13 +766,14 @@ function onChangeScanner()
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EFAAC');">
-                  Copy example to clipboard
-                </nobr></td>
+									Copy example to clipboard
+								</nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EFAAC">&lt;!-- 
 The following example shows how an application might handle a Bluetooth Scanner whose ID is SCN2:
 --&gt;
+
 &lt;HTML&gt;
 &lt;HEAD&gt;
 &lt;!-- Status Updates are received via Scanner-Navigate along with Barcode Data --&gt;
@@ -735,65 +781,72 @@ The following example shows how an application might handle a Bluetooth Scanner 
 &lt;!-- Enable the Bluetooth Scanner, this will commence the BT pairing --&gt;
 &lt;META HTTP-Equiv="Scanner" Content="Enabled:SCN2"&gt;
 &lt;/HEAD&gt;
+
 Barcode Data: &lt;DIV ID="bcode"&gt; &lt;/DIV&gt;
 User Message: &lt;DIV ID="message"&gt; &lt;/DIV&gt;
 &lt;P&gt;&lt;INPUT TYPE="button" VALUE="Change Associated Scanner" ONCLICK="onChangeScanner();"&gt;&lt;/P&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
+
 &lt;SCRIPT LANGUAGE="JavaScript"&gt;
+
 //  Keep track of whether we have minimised PB for the user to scan the association barcode
 var scanningAssociationBarcode = false;
 //  Whether or not the next barcode data we receive will be the unpairing barcode
 var expectingUnpairingBarcode = false;
+
 function ScanFunc(data, source, type, time, length, theEvent)
 {
-  var Generic = new ActiveXObject("PocketBrowser.Generic");
-  if (expectingUnpairingBarcode)
-  {
-    //  After we scan the Unpairing barcode ScanFunc will be called, 
-    //  restart the scanner component so it is ready
-    //  to accept a different Bluetooth Scanner
-    expectingUnpairingBarcode = false;
-    Generic.InvokeMETAFunction('Scanner', 'Disabled');
-    Generic.InvokeMETAFunction('Scanner', 'Enabled:SCN2');
-    return;
-  }
-  if (theEvent == 'BTScanAssociationBarcode')
-  {
-    scanningAssociationBarcode = true;
-    //  Minimise PocketBrowser and Show the Association barcode for the user to scan
-    Generic.InvokeMETAFunction('Application', 'minimize');
-    Generic.LaunchProcessNonBlocking('\\application\\BT_Information.exe', 'ShowBarcodeOnly');
-  }
-  else if(theEvent == 'BluetoothConnected')
-  {
-    //  Check to see if we are scanning the association barcode, if we are then return user control to PocketBrowser
-    if (scanningAssociationBarcode)
-    {
-      //  The Association barcode is currently shown
-      scanningAssociationBarcode = false;
-      Generic.InvokeMETAFunction('Application', 'restore');
-    }
-    message.innerHTML = "Bluetooth Scanner Connected";
-  }
-  else if(theEvent == 'BluetoothDisconnected')
-  {
-    message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
-  }
-  else if(theEvent == 'Decode')
-  {
-    //  Consider a normal Barcode Scan (to test the BT connection)
-    bcode.innerHTML = data;
-  }
+	var Generic = new ActiveXObject("PocketBrowser.Generic");
+	if (expectingUnpairingBarcode)
+	{
+		//  After we scan the Unpairing barcode ScanFunc will be called, 
+		//  restart the scanner component so it is ready
+		//  to accept a different Bluetooth Scanner
+		expectingUnpairingBarcode = false;
+		Generic.InvokeMETAFunction('Scanner', 'Disabled');
+		Generic.InvokeMETAFunction('Scanner', 'Enabled:SCN2');
+		return;
+	}
+	
+	if (theEvent == 'BTScanAssociationBarcode')
+	{
+		scanningAssociationBarcode = true;
+		//  Minimise PocketBrowser and Show the Association barcode for the user to scan
+		Generic.InvokeMETAFunction('Application', 'minimize');
+		Generic.LaunchProcessNonBlocking('\\application\\BT_Information.exe', 'ShowBarcodeOnly');
+	}
+	else if(theEvent == 'BluetoothConnected')
+	{
+		//  Check to see if we are scanning the association barcode, if we are then return user control to PocketBrowser
+		if (scanningAssociationBarcode)
+		{
+			//  The Association barcode is currently shown
+			scanningAssociationBarcode = false;
+			Generic.InvokeMETAFunction('Application', 'restore');
+		}
+		message.innerHTML = "Bluetooth Scanner Connected";
+	}
+	else if(theEvent == 'BluetoothDisconnected')
+	{
+		message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
+	}
+	else if(theEvent == 'Decode')
+	{
+		//  Consider a normal Barcode Scan (to test the BT connection)
+		bcode.innerHTML = data;
+	}
 }
+
 function onChangeScanner()
 {
-  //  Change the BT Scanner associated with the device, the logic to do this is handled
-  //  once the 'unpairing' barcode is scanned.
-  message.innerHTML = "Please Scan Unpairing Barcode";
-  expectingUnpairingBarcode = true;
+	//  Change the BT Scanner associated with the device, the logic to do this is handled
+	//  once the 'unpairing' barcode is scanned.
+	message.innerHTML = "Please Scan Unpairing Barcode";
+	expectingUnpairingBarcode = true;
 }
 &lt;/SCRIPT&gt;
+
 </textarea></div>
         <p>The following example displays the available scanners on screen and enables the Bluetooth Scanner (if available)</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -805,31 +858,35 @@ function onChangeScanner()
 &lt;META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc('%s', '%s', '%s', '%s', '%s', '%s');')"&gt;
 &lt;META HTTP-Equiv="Scanner" Content="EnumScannerEvent:url('Javascript:EnumScanners(%s);')"&gt;
 &lt;/HEAD&gt;
+
 &lt;BODY BGCOLOR="#FFFFEA" TEXT="#0000A0" LINK="#FF0000" VLINK="#808080" ALINK="#008040" onLoad="setEnumScannerTimer();"&gt;
 &lt;DIV ID="message"&gt;&lt;/DIV&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
+
 &lt;SCRIPT LANGUAGE="JavaScript"&gt;
 function ScanFunc(data, source, type, time, length, theEvent)
 {
-  message.innerHTML = data + ' (' + theEvent + ')';
+	message.innerHTML = data + ' (' + theEvent + ')';
 }
+
 function EnumScanners(scannerArray)
 {
-  var scannerInfo = "Scanners On Device: " + scannerArray.length + "&lt;BR&gt;ID  --  Name&lt;BR&gt;" 
-  for (i=0; i &lt; scannerArray.length; i++)
-  {
-    scannerInfo = scannerInfo + scannerArray[i][0] + ' -- ' + scannerArray[i][1] + '&lt;BR&gt;';
-    //  See if this is the Bluetooth Scanner
-    if (scannerArray[i][1].indexOf("Bluetooth") &gt;= 0)
-    {
-      //  This is the Bluetooth Scanner, Enable it
-      var Generic = new ActiveXObject("PocketBrowser.Generic");
-      Generic.InvokeMETAFunction('Scanner', 'Enabled:' + scannerArray[i][0]);
-    }
-  }
-  message.innerHTML = scannerInfo;
+	var scannerInfo = "Scanners On Device: " + scannerArray.length + "&lt;BR&gt;ID  --  Name&lt;BR&gt;" 
+	for (i=0; i &lt; scannerArray.length; i++)
+	{
+		scannerInfo = scannerInfo + scannerArray[i][0] + ' -- ' + scannerArray[i][1] + '&lt;BR&gt;';
+		//  See if this is the Bluetooth Scanner
+		if (scannerArray[i][1].indexOf("Bluetooth") &gt;= 0)
+		{
+			//  This is the Bluetooth Scanner, Enable it
+			var Generic = new ActiveXObject("PocketBrowser.Generic");
+			Generic.InvokeMETAFunction('Scanner', 'Enabled:' + scannerArray[i][0]);
+		}
+	}
+	message.innerHTML = scannerInfo;
 }
+
 //  We can not call Scanner:Enumerate during page load on WM so give the page 3 seconds to finish loading
 function setEnumScannerTimer()
 {
@@ -837,8 +894,8 @@ function setEnumScannerTimer()
 }
 function onScannerEnable()
 {
-  var Generic = new ActiveXObject("PocketBrowser.Generic");
-  Generic.InvokeMETAFunction('Scanner', 'Enumerate');
+	var Generic = new ActiveXObject("PocketBrowser.Generic");
+	Generic.InvokeMETAFunction('Scanner', 'Enumerate');
 }
 &lt;/SCRIPT&gt;
 </pre>
@@ -851,43 +908,48 @@ function onScannerEnable()
           <tr align="right">
             <td></td>
             <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EMAAC');">
-                  Copy example to clipboard
-                </nobr></td>
+									Copy example to clipboard
+								</nobr></td>
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EMAAC">&lt;!-- 
 The following example displays the available scanners on screen and enables the Bluetooth Scanner (if available)
 --&gt;
+
 &lt;HTML&gt;
 &lt;HEAD&gt;
 &lt;META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc('%s', '%s', '%s', '%s', '%s', '%s');')"&gt;
 &lt;META HTTP-Equiv="Scanner" Content="EnumScannerEvent:url('Javascript:EnumScanners(%s);')"&gt;
 &lt;/HEAD&gt;
+
 &lt;BODY BGCOLOR="#FFFFEA" TEXT="#0000A0" LINK="#FF0000" VLINK="#808080" ALINK="#008040" onLoad="setEnumScannerTimer();"&gt;
 &lt;DIV ID="message"&gt;&lt;/DIV&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
+
 &lt;SCRIPT LANGUAGE="JavaScript"&gt;
 function ScanFunc(data, source, type, time, length, theEvent)
 {
-  message.innerHTML = data + ' (' + theEvent + ')';
+	message.innerHTML = data + ' (' + theEvent + ')';
 }
+
 function EnumScanners(scannerArray)
 {
-  var scannerInfo = "Scanners On Device: " + scannerArray.length + "&lt;BR&gt;ID  --  Name&lt;BR&gt;" 
-  for (i=0; i &lt; scannerArray.length; i++)
-  {
-    scannerInfo = scannerInfo + scannerArray[i][0] + ' -- ' + scannerArray[i][1] + '&lt;BR&gt;';
-    //  See if this is the Bluetooth Scanner
-    if (scannerArray[i][1].indexOf("Bluetooth") &gt;= 0)
-    {
-      //  This is the Bluetooth Scanner, Enable it
-      var Generic = new ActiveXObject("PocketBrowser.Generic");
-      Generic.InvokeMETAFunction('Scanner', 'Enabled:' + scannerArray[i][0]);
-    }
-  }
-  message.innerHTML = scannerInfo;
+	var scannerInfo = "Scanners On Device: " + scannerArray.length + "&lt;BR&gt;ID  --  Name&lt;BR&gt;" 
+	for (i=0; i &lt; scannerArray.length; i++)
+	{
+		scannerInfo = scannerInfo + scannerArray[i][0] + ' -- ' + scannerArray[i][1] + '&lt;BR&gt;';
+		//  See if this is the Bluetooth Scanner
+		if (scannerArray[i][1].indexOf("Bluetooth") &gt;= 0)
+		{
+			//  This is the Bluetooth Scanner, Enable it
+			var Generic = new ActiveXObject("PocketBrowser.Generic");
+			Generic.InvokeMETAFunction('Scanner', 'Enabled:' + scannerArray[i][0]);
+		}
+	}
+	message.innerHTML = scannerInfo;
 }
+
 //  We can not call Scanner:Enumerate during page load on WM so give the page 3 seconds to finish loading
 function setEnumScannerTimer()
 {
@@ -895,25 +957,30 @@ function setEnumScannerTimer()
 }
 function onScannerEnable()
 {
-  var Generic = new ActiveXObject("PocketBrowser.Generic");
-  Generic.InvokeMETAFunction('Scanner', 'Enumerate');
+	var Generic = new ActiveXObject("PocketBrowser.Generic");
+	Generic.InvokeMETAFunction('Scanner', 'Enumerate');
 }
 &lt;/SCRIPT&gt;
 </textarea></div>
       </blockquote>
     </div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('RemarksSpan', 'imgRemarksToggle')"><img align="absmiddle" id="imgRemarksToggle" alt="Remarks Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+			Remarks
+		</p>
     <div id="RemarksSpan" style="display:block">
-      <blockquote>        
-      <DIV class="clsRef">General</DIV>
-      <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
+      <blockquote>
+        <DIV class="clsRef">General</DIV>
+        <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
+
 If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes.
+
 Presentation trigger causes the scanner to illuminate when movement is detected in the range of the scanner window.  
 The scanner must be initiated with a softscan using the scanner start parameter.  Please see the example for usage.
 Note: Not all devices support presentation mode.
-0
-On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen. 
 
-The device's camera based scanner can not be used at the same time as the Imager.  Once the Imager is 'Enabled' the camera based scanner will be unavailable until the Imager is 'Disabled'. 
+On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen.
+
+The device's camera based scanner can not be used at the same time as the Imager.  Once the Imager is 'Enabled' the camera based scanner will be unavailable until the Imager is 'Disabled'.
 </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Enabling/Disabling Scanner</DIV>
@@ -933,8 +1000,8 @@ Note: If the decoder is disabled after enabling the scanner, it will not reflect
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">AutoEnter and AccelerateKey</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-        The AccelerateKey Meta tag controls the behaviour of Accelerate keys on Windows CE, if the Enter key is configured to be non functional then AutoEnter will also appear to not function either
-        </DIV>
+				The AccelerateKey Meta tag controls the behaviour of Accelerate keys on Windows CE, if the Enter key is configured to be non functional then AutoEnter will also appear to not function either
+				</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Bluetooth Scanner Overview</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT 
@@ -943,6 +1010,7 @@ scan the 'unpairing' barcode and then invoke the 'disabled' meta tag followed by
 this will allow you to scan the BT association barcode with a different scanner.</DIV>
         <pre style="font-family:courier;font-size:small;">
 The following messages will be received from the Bluetooth Scanner:
+
 * 'BTScanAssociationBarcode' 
    Means the device is ready to be associated with a BT scanner.  You must scan the 
    association barcode within a specified timeout (configured via the registry, see the EMDK help file).  
@@ -955,7 +1023,7 @@ The following messages will be received from the Bluetooth Scanner:
 * 'BluetoothConnected'
    The remote scanner has successfully connected to the device.  If you have launched 'Display_BD_Address.exe' 
    then return control to full user control to PocketBrowser at this stage.
-  
+	
 * 'BluetoothDisconnected'
    The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
    of range or scanning the 'unpairing' barcode.  The scanner will attempt to reconnect automatically for
@@ -977,6 +1045,9 @@ name is a user readable description of the scanner, e.g:</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Scanner Tag can not be used along with Image Capture Tags in the same page due to Hardware Limitations</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('InfoSpan', 'imgInfoToggle')"><img align="absmiddle" id="imgInfoToggle" alt="Info Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+			Additional Information
+		</p>
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -997,5 +1068,12 @@ name is a user readable description of the scanner, e.g:</DIV>
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('AlsoSpan', 'imgAlsoToggle')"><img align="absmiddle" id="imgAlsoToggle" alt="Also Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+			See Also
+		</p>
+    <div id="AlsoSpan" style="display:block">
+      <BLOCKQUOTE><a href="Decoder and Parameter Tags/All_Decoders.html&#xA;						">All_Decoders</a> <a href="../Getting Started/key_capture_overview.html&#xA;						">key_capture_overview</a> <a href="../Key Handling/KeyCapture.html&#xA;						">KeyCapture</a> </BLOCKQUOTE><br></div>
+    <hr size="1">
+    <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>

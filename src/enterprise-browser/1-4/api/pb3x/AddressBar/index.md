@@ -3,7 +3,7 @@ title: AddressBar Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
 The AddressBar Meta Tag is an action tag used to set the parameters of the address bar, which allows navigation to a page for display. The AddressBar displays a history of visited URLs for selection, or will navigate to a typed-in URL when pressing the "Go" button.
 
@@ -97,7 +97,6 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
 					
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
-  
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -112,7 +111,6 @@ The AddressBar Meta Tag is an action tag used to set the parameters of the addre
           </tr>
         </table>
       </blockquote><br></div>
-  
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -283,7 +281,6 @@ The following example shows the address bar, sets the left and top coordinates t
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

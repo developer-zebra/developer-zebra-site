@@ -70,7 +70,7 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-        "path": "enterprise-browser/1-4",
+        "path": "enterprise-browser/1-4/api/pb3x",
         "frontmatter": [
             {
                 "item" :  "productversion",
@@ -85,6 +85,11 @@ var settings = [
             {
                 "item" :  "layout",
                 "value" : "guide.html",
+                "override": false
+            }, 
+            {
+                "item" :  "subhead",
+                "value" : "PocketBrowser 3.x APIs",
                 "override": false
             }
         ]

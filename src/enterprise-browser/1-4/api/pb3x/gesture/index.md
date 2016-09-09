@@ -1,10 +1,11 @@
-﻿---
+---
 title: Gesture Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Gesture Meta Tag is used to define and capture gestures drawn on a touch-sensitive screen. Multiple gestures can be defined for capture on a single page. Zebra recommends defining no more than five gestures per page to avoid performance issues. **Note**: Not supported on Windows CE if debug buttons are enabled in the `Config.xml` file of an Enterprise Browser app.
 
 There are three types of screen gestures:
@@ -104,7 +105,6 @@ There are three types of screen gestures:
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -124,7 +124,6 @@ There are three types of screen gestures:
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -192,7 +191,6 @@ The Gesture META Tag is used to define touch screen.
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -466,7 +464,6 @@ The Gesture META Tag is used to define touch screen.
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -537,7 +534,6 @@ The Gesture META Tag is used to define touch screen.
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>
@@ -580,9 +576,7 @@ The Gesture META Tag is used to define touch screen.
         Create two gestures: a default left to right gesture with ID 'swipe', and a hold gesture at the top left
         of the screen which will fire one time after 500 milliseconds with ID 'press'. The Javascript function onGesture()
         is called when either gesture is detected.
-      
 --&gt;
-
         &lt;META HTTP-Equiv="gesture" Content="type:linear"&gt;
         &lt;META HTTP-Equiv="gesture" Content="id:swipe"&gt;
         &lt;META HTTP-Equiv="gesture" Content="create"&gt;
@@ -598,7 +592,6 @@ The Gesture META Tag is used to define touch screen.
       </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Presets and IDs</DIV>
@@ -640,7 +633,6 @@ Note that diagnostics exist only for the purpose of understanding and evaluating
       </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

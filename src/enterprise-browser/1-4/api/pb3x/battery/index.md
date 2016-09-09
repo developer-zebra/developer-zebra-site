@@ -1,10 +1,11 @@
-﻿---
+---
 title: Battery Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Battery Meta Tag is used to set the attributes of the battery indicator and retrieve battery status.
 
 <html>
@@ -98,7 +99,6 @@ The Battery Meta Tag is used to set the attributes of the battery indicator and 
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The Battery Meta Tag is used to set the attributes of the battery indicator and 
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -186,7 +185,6 @@ The Battery META Tag is a tag used to set the attributes of the battery indicato
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -301,7 +299,6 @@ The Battery META Tag is a tag used to set the attributes of the battery indicato
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -450,7 +447,6 @@ The Battery META Tag is a tag used to set the attributes of the battery indicato
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example shows the battery indicator, sets the x and y co-ordinates to 50, the color of the indicator to red and positions the indicator at the bottom of the screen growing from right to left:</p>
@@ -571,7 +567,6 @@ The following example navigates to a new page with parameters upon a battery sta
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Overlapping</DIV>
@@ -585,7 +580,6 @@ For an illustrative guide to the meaning of IconPosition and GraphPositions see 
 </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -606,7 +600,6 @@ For an illustrative guide to the meaning of IconPosition and GraphPositions see 
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="./Signal.html&#xA;						">Signal</a> <a href="../Getting%20Started/IndicatorPositions.html&#xA;						">IndicatorPositions</a>  </BLOCKQUOTE><br></div>
     <hr size="1">

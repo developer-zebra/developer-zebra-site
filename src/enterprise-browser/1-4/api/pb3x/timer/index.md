@@ -1,10 +1,11 @@
-﻿---
+---
 title: Timer Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Timer Meta Tag is an action tag used set a timer and register an action to be performed when the timer expires. Once the timer is started, the interval time cannot be changed without stopping and restarting the timer.
 
 <html>
@@ -98,7 +99,6 @@ The Timer Meta Tag is an action tag used set a timer and register an action to b
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The Timer Meta Tag is an action tag used set a timer and register an action to b
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -191,7 +190,6 @@ The Timer META Tag is an action tag used to set a timer and register an action t
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -261,7 +259,6 @@ The Timer META Tag is an action tag used to set a timer and register an action t
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -327,7 +324,6 @@ The Timer META Tag is an action tag used to set a timer and register an action t
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example sets the timerinterval to 5 seconds:</p>
@@ -406,7 +402,6 @@ The following example shows a JavaScript alert at 10 second intervals:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">General</DIV>
@@ -414,7 +409,6 @@ The following example shows a JavaScript alert at 10 second intervals:
     </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -435,6 +429,5 @@ The following example shows a JavaScript alert at 10 second intervals:
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
   </body>
 </html>

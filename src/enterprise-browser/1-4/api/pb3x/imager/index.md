@@ -1,10 +1,11 @@
-﻿---
+---
 title: Imager Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Imager Meta Tag is an action tag which controls the imager functions and navigates to a URL or calls a JavaScript function in reponse to an HTTP image transfer executed by the tag.
 
 <html>
@@ -98,7 +99,6 @@ The Imager Meta Tag is an action tag which controls the imager functions and nav
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -123,7 +123,6 @@ The Imager Meta Tag is an action tag which controls the imager functions and nav
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -218,7 +217,6 @@ The Imager META Tag is an action tag which controls the imager functions and nav
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -388,7 +386,6 @@ The Imager META Tag is an action tag which controls the imager functions and nav
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -502,7 +499,6 @@ The Imager META Tag is an action tag which controls the imager functions and nav
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example sets up the imager to capture an image and transfer it to an ftp site:</p>
@@ -549,7 +545,6 @@ The Imager META Tag is an action tag which controls the imager functions and nav
         <div id="Examples" style="display:none"><textarea id="ID0EKH">&lt;!-- 
 The following example sets up the imager to capture an image and transfer it to an ftp site:
 --&gt;
-
 &lt;meta http-equiv="Imager" content="width:100"&gt;
 &lt;meta http-equiv="Imager" content="height:100"&gt;
 &lt;meta http-equiv="Imager" content="left:120"&gt;
@@ -610,13 +605,10 @@ The following example sets up the imager to capture an image and transfer it to 
         <div id="Examples" style="display:none"><textarea id="ID0ERH">&lt;!-- 
 The following example sets up the imager to capture an image when the Javascript function 'doCapture' is called:
 --&gt;
-
-
 &lt;meta HTTP-Equiv="Imager" Content="enabled;left:30;top:50;width:160;height:100;aim:off;lamp:off"&gt;
 &lt;meta HTTP-Equiv="Imager" Content="destination:url('http://ds-laptop/PHTest/Received/HTTP/Upload.aspx')"&gt;
 &lt;meta http-equiv="Imager" content="sound:\windows\alarm2.wav"&gt;
 &lt;meta http-equiv="Imager" content="imagerevent:url('javascript:alert('%s');')"&gt;
-
 &lt;script&gt;
    var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
@@ -625,7 +617,6 @@ The following example sets up the imager to capture an image when the Javascript
       objGeneric.InvokeMETAFunction('imager', 'capture');
    }
 &lt;/script&gt;
-
 </textarea></div>
         <p>The following ASP.NET example recieves a file from the imager and saves it in a new filename:</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -634,7 +625,6 @@ The following example sets up the imager to capture an image when the Javascript
               <pre class="clsSyntaxCells">
 &lt;%@ Import namespace="System.Web.UI.HtmlControls" %&gt;
 &lt;%@ Import namespace="System.IO" %&gt;
-
 &lt;script runat="server" language="C#"&gt;
    //called when the file is submitted	
    protected void Page_Load(object o, EventArgs e) 
@@ -682,7 +672,6 @@ The following example sets up the imager to capture an image when the Javascript
       newFile.Close();
    }
 &lt;/script&gt;
-
 &lt;form name="spbImagerForm" method="post" action="upload.aspx" id="spbImagerForm" enctype="multipart/form-data"&gt;
    &lt;input id="spbImagerFile" type="file" runat="server" Visible="false"&gt;
 &lt;/form&gt;
@@ -740,7 +729,6 @@ The following ASP.NET example recieves a file from the imager and saves it in a 
          }
       }
    }
-
    // Writes file to current folder
    private void WriteToFile(string strPath, ref byte[] Buffer)
    {
@@ -754,7 +742,6 @@ The following ASP.NET example recieves a file from the imager and saves it in a 
       newFile.Close();
    }
 &lt;/script&gt;
-
 &lt;form name="spbImagerForm" method="post" action="upload.aspx" id="spbImagerForm" enctype="multipart/form-data"&gt;
    &lt;input id="spbImagerFile" type="file" runat="server" Visible="false"&gt;
 &lt;/form&gt;
@@ -807,25 +794,18 @@ The following is a useful desktop html file for testing the example above:
 &lt;div ID="message"&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
 &lt;SCRIPT LANGUAGE="JavaScript"&gt;
-
 function Enumimagers(imagerArray)
 {
 	//alert(imagerArray);
-  
   var imagerInfo = "Imagers On Device: " + imagerArray.length + "&lt;BR&gt;ID  --  Name&lt;BR&gt;" 
 	//alert(imagerInfo);
-  
   for (i=0; i &lt; imagerArray.length; i++)
 	{
-		imagerInfo = imagerInfo + imagerArray[i][0] + ' -- ' + imagerArray[i][1] + '&lt;BR&gt;';
-				
+		imagerInfo = imagerInfo + imagerArray[i][0] + ' -- ' + imagerArray[i][1] + '&lt;BR&gt;';	
 	}
-	message.innerHTML = imagerInfo;
-    
+	message.innerHTML = imagerInfo;   
 }
-
 //  We can not call Scanner:Enumerate during page load on WM so give the page 3 seconds to finish loading
 function setImagerEnumTimer()
 {
@@ -858,21 +838,17 @@ function onImagerEnable()
         <div id="Examples" style="display:none"><textarea id="ID0EHAAC">&lt;!-- 
 The following example displays the available imagers on screen 
 --&gt;
-
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta HTTP-Equiv="imager" Content="imagerEnumEvent:url('Javascript:Enumimagers(%s);')"&gt;
 &lt;meta HTTP-Equiv="quitbutton" Content="left:200;top:0;visibility:visible"&gt;
 &lt;/head&gt;
-
 &lt;body BGCOLOR="#FFFFEA" TEXT="#0000A0" LINK="#FF0000" VLINK="#808080" ALINK="#008040" onLoad="setImagerEnumTimer();"&gt;
 &lt;a HREF="./Index.html"&gt;Back&lt;/a&gt;&lt;br&gt;
 &lt;div ID="message"&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
 &lt;SCRIPT LANGUAGE="JavaScript"&gt;
-
 function Enumimagers(imagerArray)
 {
 	//alert(imagerArray);
@@ -907,33 +883,27 @@ function onImagerEnable()
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">ImagerArray attribute</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-
 The ImagerArray attribute returned from ImagerEnumevent retrieval tag will enumerate each imager present 
 on the device in a 2D array, associating each Imager's device name with a user friendly name.  
 The device ID can be passed as a parameter to "Imager" "Enabled:&lt;deviceID&gt;", the friendly
 name is a user readable description of the Imager, e.g:
 "IMG1", "Imager"
 "IMG2", "color Camera".
-
 </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Scanning and Image Capture</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-
 Image capture tags cannot be used on the same page as scanner tags due to Hardware Limitations.
-
 </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Creating a fully qualified URL</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The protocol, port number, username (optional) and password (optional) are all derived from the URL string and should be specified in the following manner: [protocol]://[username]:[password@]Server[:Port]FileNameAndPath.  FTP Example: ftp://admin:root@192.168.1.1:2500/Folder/file.txt.  HTTP Example: http://admin:root@192.168.1.1:8080/Folder/upload.aspx</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

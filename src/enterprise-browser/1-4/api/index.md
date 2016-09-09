@@ -215,7 +215,7 @@ automenu:
         - title: Battery
           url: pb3x/battery
         - title: BottomCommandArea 
-          url: pb3x/bottomcommanarea
+          url: pb3x/bottomcommandarea
         - title: CardReader
           url: pb3x/cardreader
         - title: Comm

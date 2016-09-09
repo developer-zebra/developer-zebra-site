@@ -1,10 +1,11 @@
-﻿---
+---
 title: Device Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Device Meta Tag is an action tag that controls device functions such as suspend, calibrate, powerOff, wake and reboot.
 
 <html>
@@ -98,7 +99,6 @@ The Device Meta Tag is an action tag that controls device functions such as susp
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Device Meta Tag is an action tag that controls device functions such as susp
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -217,7 +216,6 @@ The following example put the device into suspend mode:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Interaction with Unattended Tag</DIV>
@@ -226,7 +224,6 @@ The following example put the device into suspend mode:
 				</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -247,7 +244,6 @@ The following example put the device into suspend mode:
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="../Push/Unattended.html&#xA;						">Unattended</a> </BLOCKQUOTE><br></div>
     <hr size="1">

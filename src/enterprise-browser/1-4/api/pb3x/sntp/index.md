@@ -1,10 +1,11 @@
-﻿---
+---
 title: SNTP Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The SNTP Meta Tag is an action tag used to synchronize the device clock with an SNTP network server.</p>
 
 <html>
@@ -98,7 +99,6 @@ The SNTP Meta Tag is an action tag used to synchronize the device clock with an 
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The SNTP Meta Tag is an action tag used to synchronize the device clock with an 
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -183,7 +182,6 @@ The SNTP META Tag is an action tag used to synchronize the device clock with a n
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example sets the device time from a network time server:</p>
@@ -214,7 +212,6 @@ The following example sets the device time from a network time server:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Latency</DIV>
@@ -224,7 +221,6 @@ The following example sets the device time from a network time server:
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Windows Mobile 5.0 will not allow you to obtain SNTP time when requesting via a proxy server, it is recommended the proxy is bypassed for this to work.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

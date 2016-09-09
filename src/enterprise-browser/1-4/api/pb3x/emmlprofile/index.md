@@ -1,10 +1,11 @@
-﻿---
+---
 title: EMMLProfile Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The EMMLProfile Meta Tag is an action tag used to manage EMML profile pages.
 
 <html>
@@ -98,7 +99,6 @@ The EMMLProfile Meta Tag is an action tag used to manage EMML profile pages.
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The EMMLProfile Meta Tag is an action tag used to manage EMML profile pages.
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -381,7 +380,6 @@ The following is an example of an EMML Profile page.
 				</textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Named Profile Pages</DIV>
@@ -394,7 +392,6 @@ The following is an example of an EMML Profile page.
 				</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

@@ -1,3 +1,9 @@
+---
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: PocketBrowser 3.x APIs
+---
 
 <html>
 <head>
@@ -116,14 +122,14 @@ PocketBrowser is capable of capturing gestures from <!-- either -->the touch scr
 <P>
 There are three types of screen gesture:
 <ul>
-<li>Linear – detects straight line movements on the screen
-<li>Circle – detects full or partial circular movements on the screen
-<li>Hold – detects when the screen is touched and held
+<li>Linear ï¿½ detects straight line movements on the screen
+<li>Circle ï¿½ detects full or partial circular movements on the screen
+<li>Hold ï¿½ detects when the screen is touched and held
 </ul>
 <!-- There are two types of accelerometer gesture:
 <ul>
-<li>Tilt – detects when the device is in a specified orientation in space
-<li>Shake – detects the device is being shaken
+<li>Tilt ï¿½ detects when the device is in a specified orientation in space
+<li>Shake ï¿½ detects the device is being shaken
 </ul> -->
 Gesture capture is present in PocketBrowser 3.0 onwards and so is not backward compatible with earlier versions.
     
@@ -149,7 +155,7 @@ Circle gestures operate in a similar way to linear gestures but cover the gestur
 <P>
 <center><img src="../Resources/gestures/circle.gif"></center>
 <P>
-The Start and End angles (in degrees) specify the start and end of the gesture region, measuring clockwise from the 3 o’clock position. The example above uses a Start of 0° and an End of 180°. The End angle can be less than the Start, in which case the gesture must be performed in an anti-clockwise direction. Angles greater than 360° are supported.
+The Start and End angles (in degrees) specify the start and end of the gesture region, measuring clockwise from the 3 oï¿½clock position. The example above uses a Start of 0ï¿½ and an End of 180ï¿½. The End angle can be less than the Start, in which case the gesture must be performed in an anti-clockwise direction. Angles greater than 360ï¿½ are supported.
 <P>
 The Tolerance specifies the radius of the overlapping circles which cover the gesture region.
 <P>
@@ -192,7 +198,8 @@ Once the gesture is detected there must be a period of at least 'QuietPeriod' mi
 </div -->
 
     <hr size="1">
-    <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
+    <div align="right">ï¿½ 2016 Symbol Technologies, Inc. All rights reserved.</div>
 </body>
 
 </html>
+

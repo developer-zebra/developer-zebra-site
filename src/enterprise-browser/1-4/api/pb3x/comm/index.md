@@ -1,10 +1,11 @@
-﻿---
+---
 title: Comm Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Comm Meta Tag is an action tag used to control the functionality of the serial port on the device, including all serial communications initiated by PocketBrowser apps and any collected or transmitted data.
 
 <html>
@@ -98,7 +99,6 @@ The Comm Meta Tag is an action tag used to control the functionality of the seri
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The Comm Meta Tag is an action tag used to control the functionality of the seri
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -194,7 +193,6 @@ The Comm META Tag is an action tag used to control the functionality of the devi
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -387,7 +385,6 @@ The Comm META Tag is an action tag used to control the functionality of the devi
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -455,7 +452,6 @@ The Comm META Tag is an action tag used to control the functionality of the devi
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example opens up the COM1 port using META tags, and instructs the Comm module to call the 'ProcessData' JavaScript function after 250 ms of port inactivity, passing the received data to the function.  The port will be closed when PocketBrowser navigates to a new page.
@@ -490,7 +486,6 @@ The Comm META Tag is an action tag used to control the functionality of the devi
    &lt;!-- Your page goes here --&gt;
    &lt;/BODY&gt;
 &lt;/HTML&gt;
-   
 				</pre>
             </td>
           </tr>
@@ -548,7 +543,6 @@ The following example opens up the COM1 port using META tags, and instructs the 
    &lt;HEAD&gt;
    &lt;!-- Script that will get called on page load --&gt;
    &lt;SCRIPT TYPE="text/javascript"&gt;
-
    var objGeneric;
 
    function DisplayData(data)
@@ -648,7 +642,6 @@ The following example sets up the communications port and opens it using JavaScr
 				</textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">General</DIV>
@@ -660,7 +653,6 @@ The following example sets up the communications port and opens it using JavaScr
 				</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

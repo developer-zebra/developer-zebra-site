@@ -1,10 +1,11 @@
-﻿---
+---
 title: RSM Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The RSM Meta Tag is used to configure and retrieve attribute settings of a remote scanner connected to the device via cable or Bluetooth. When used for retrieval, navigation to a URL and/or calls to JavaScript functions are executed immediately. See the Remarks section below for a list of readable/configurable scanner attributes. 
 
 <html>
@@ -98,7 +99,6 @@ The RSM Meta Tag is used to configure and retrieve attribute settings of a remot
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The RSM Meta Tag is used to configure and retrieve attribute settings of a remot
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -175,7 +174,6 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
    /*
    The RSM META Tag is a tag used to configure or to retrieve attributes relating to a remote scanner either tethered to the device or connected via Bluetooth. The properties of the scanner which can be configured are detailed in the 'Remarks' section. When used for retrieval navigation to URL or call to javascript function happens immediately.
    */
-
    function doRSMInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
@@ -183,11 +181,9 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
       //objGeneric.InvokeMETAFunction('RSM', '[Attribute]');      /* 	Marks the specified attribute to be returned when RSMGetEvent is next called.
 					Applicable attributes are all those in the table in the remarks section listed as 
 					readable. */
-
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -243,7 +239,6 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
         <div style="display:none"><textarea id="txtMETATemplateW">&lt;!-- 
 The RSM META Tag is a tag used to configure or to retrieve attributes relating to a remote scanner either tethered to the device or connected via Bluetooth. The properties of the scanner which can be configured are detailed in the 'Remarks' section. When used for retrieval navigation to URL or call to javascript function happens immediately.
 --&gt;
-
 &lt;!-- &lt;META HTTP-Equiv="RSM" Content="[Attribute]:[Value]"&gt; --&gt;      &lt;!-- 	Causes the specified attribute of the remote scanner to be configured with the stated value.  
 					The table in the remarks section lists those writeable attributes which can be configured 
 					along with their range of possible values. --&gt;</textarea></div>
@@ -263,7 +258,6 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -308,7 +302,6 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
       //objGeneric.InvokeMETAFunction('RSM', 'RsmGetEvent:url('JavaScript:fnJSCallbackHandler(%1);')');      /*  */
-
    }
 &lt;/script&gt;</textarea></div>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -333,7 +326,6 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example configures some parameters associated with the remote Bluetooth scanner:</p>
@@ -365,7 +357,6 @@ The RSM META Tag is a tag used to configure or to retrieve attributes relating t
         <div id="Examples" style="display:none"><textarea id="ID0EBC">&lt;!-- 
 The following example configures some parameters associated with the remote Bluetooth scanner:
 --&gt;
-
 &lt;META HTTP-Equiv="Scanner" Content="Enabled"&gt;
 &lt;META HTTP-Equiv="RSM" Content="BluetoothAuthentication:True"&gt;
 &lt;META HTTP-Equiv="RSM" Content="BluetoothPincode:5678"&gt;
@@ -380,7 +371,6 @@ The following example configures some parameters associated with the remote Blue
             <td>
               <pre class="clsSyntaxCells">
 &lt;SCRIPT TYPE="TEXT/JAVASCRIPT"&gt;
-
 function RSMNav(attributeArray)
 {
 	//  Receive array of attribute values in the order they were registered and populate SPAN tags.
@@ -393,7 +383,6 @@ function RSMNav(attributeArray)
 		spanElement.innerText = attributeArray[i];
 	}
 }
-
 function onTest()
 {
   var Generic = new ActiveXObject("PocketBrowser.Generic");
@@ -404,20 +393,16 @@ function onTest()
   Generic.InvokeMETAFunction('RSM', 'BluetoothPINcode');
   Generic.InvokeMETAFunction('RSM', 'BluetoothFriendlyName');
   Generic.InvokeMETAFunction('RSM', 'ProximityEnable'); //  Array Index 5
-  
   //  Finally Invoke the Navigation, this will call RSMNav with the array of parameters we have registered for above.
   Generic.InvokeMETAFunction('RSM', "RsmGetEvent:url('JavaScript:RSMNav(%s);')");
-
 }
 &lt;/SCRIPT&gt;
-
 &lt;HTML&gt;
 &lt;HEAD&gt;
 &lt;META HTTP-Equiv="reloadbutton" content="show"&gt;
 &lt;!-- Scanner must be enabled to use RSM functionality --&gt;
 &lt;META HTTP-Equiv="Scanner" Content="Enabled:SCN2"&gt;
 &lt;/HEAD&gt;
-
 &lt;BODY&gt;
 &lt;a href="javascript:onTest()"&gt;Get Values&lt;/a&gt;&lt;br&gt;
 Model Number: &lt;span id=Span1&gt;&lt;/span&gt;&lt;br&gt;
@@ -428,7 +413,6 @@ BT Friendly Name: &lt;span id=Span5&gt;&lt;/span&gt;&lt;br&gt;
 Proximity Enable: &lt;span id=Span6&gt;&lt;/span&gt;&lt;br&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
-
 </pre>
             </td>
           </tr>
@@ -446,9 +430,7 @@ Proximity Enable: &lt;span id=Span6&gt;&lt;/span&gt;&lt;br&gt;
         <div id="Examples" style="display:none"><textarea id="ID0EIC">&lt;!-- 
 The following example retrieves some attributes of the Bluetooth Scanner:
 --&gt;
-
 &lt;SCRIPT TYPE="TEXT/JAVASCRIPT"&gt;
-
 function RSMNav(attributeArray)
 {
 	//  Receive array of attribute values in the order they were registered and populate SPAN tags.
@@ -461,7 +443,6 @@ function RSMNav(attributeArray)
 		spanElement.innerText = attributeArray[i];
 	}
 }
-
 function onTest()
 {
   var Generic = new ActiveXObject("PocketBrowser.Generic");
@@ -472,20 +453,16 @@ function onTest()
   Generic.InvokeMETAFunction('RSM', 'BluetoothPINcode');
   Generic.InvokeMETAFunction('RSM', 'BluetoothFriendlyName');
   Generic.InvokeMETAFunction('RSM', 'ProximityEnable'); //  Array Index 5
-  
   //  Finally Invoke the Navigation, this will call RSMNav with the array of parameters we have registered for above.
   Generic.InvokeMETAFunction('RSM', "RsmGetEvent:url('JavaScript:RSMNav(%s);')");
-
 }
 &lt;/SCRIPT&gt;
-
 &lt;HTML&gt;
 &lt;HEAD&gt;
 &lt;META HTTP-Equiv="reloadbutton" content="show"&gt;
 &lt;!-- Scanner must be enabled to use RSM functionality --&gt;
 &lt;META HTTP-Equiv="Scanner" Content="Enabled:SCN2"&gt;
 &lt;/HEAD&gt;
-
 &lt;BODY&gt;
 &lt;a href="javascript:onTest()"&gt;Get Values&lt;/a&gt;&lt;br&gt;
 Model Number: &lt;span id=Span1&gt;&lt;/span&gt;&lt;br&gt;
@@ -496,20 +473,15 @@ BT Friendly Name: &lt;span id=Span5&gt;&lt;/span&gt;&lt;br&gt;
 Proximity Enable: &lt;span id=Span6&gt;&lt;/span&gt;&lt;br&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;
-
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef"></DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The following is a mapping between Attributes, their possible values and whether they are read / write:</DIV>
         <pre style="font-family:courier;font-size:small;">
-
-
 Attribute                      Access  Associated Value
-
 ScanLineWidth                    RW    The laser scan line width, 'Wide' or 'Narrow'.
 DecodeFeedback                   RW    The remote scanner beeps and illuminates its green LED on a 
                                        successful decode.  'Enabled' or 'Disabled'.
@@ -568,7 +540,6 @@ BatteryCapacity                  R     Remaining capacity of the battery, intege
 BatteryID                        R     'Simple', 'Double', 'Cabled', 'Unknown'    
 </pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -589,6 +560,5 @@ BatteryID                        R     'Simple', 'Double', 'Cabled', 'Unknown'
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
   </body>
 </html>

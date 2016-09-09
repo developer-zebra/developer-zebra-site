@@ -1,6 +1,6 @@
 ---
 title: AirBeam APIs
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -30,4 +30,8 @@ automenu:
           url: ../airbeam/testmode
         - title: uploadPackage
           url: ../airbeam/uploadpackage
+productversion: '1.4'
+product: Enterprise Browser
+subhead: PocketBrowser 3.x APIs
 ---
+

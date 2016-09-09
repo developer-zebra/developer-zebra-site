@@ -1,10 +1,11 @@
-﻿---
+---
 title: HistoryBack Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The HistoryBack Navigation instructs PocketBrowser to navigate to the previous address in the browser history, if any.
 
 <html>
@@ -98,7 +99,6 @@ The HistoryBack Navigation instructs PocketBrowser to navigate to the previous a
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The HistoryBack Navigation instructs PocketBrowser to navigate to the previous a
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example shows how to navigate to the previous address using an anchor tag:</p>
@@ -180,14 +179,12 @@ The following example shows how to navigate to the previous address using JavaSc
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Interaction with Browser's History Stack</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The browser component on Windows Mobile has no history stack other than that provided by PocketBrowser, so this History:Back tag is the only way to navigate to a previous page (as well as the Back Button).  Windows CE's browser component has its own history stack accessed via Javascript's history.go(n), this is not compatible with PocketBrowser's history and the History:Back tag should be used in preference.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -208,7 +205,6 @@ The following example shows how to navigate to the previous address using JavaSc
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="../Controls and Appearance/BackButton.html&#xA;						">BackButton</a> </BLOCKQUOTE><br></div>
     <hr size="1">

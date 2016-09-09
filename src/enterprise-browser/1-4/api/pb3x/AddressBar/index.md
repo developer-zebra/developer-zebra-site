@@ -1,10 +1,11 @@
-﻿---
+---
 title: AddressBar Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x APIs
 ---
+
 The AddressBar Meta Tag is an action tag used to set the parameters of the address bar, which allows navigation to a page for display. The AddressBar displays a history of visited URLs for selection, or will navigate to a typed-in URL when pressing the "Go" button.
 
 <html>

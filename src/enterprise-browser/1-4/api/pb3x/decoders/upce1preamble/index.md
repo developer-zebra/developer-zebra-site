@@ -1,5 +1,9 @@
 ---
 title: upce1preamble.md
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: PocketBrowser 3.x APIs
 ---
 ﻿<html>
   <head>
@@ -317,3 +321,4 @@ The following example enables the scanner to read only upce1 labels with the pre
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
+

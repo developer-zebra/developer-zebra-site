@@ -1,10 +1,11 @@
-﻿---
+---
 title: ForwardButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The ForwardButton Meta Tag is an action tag used to set the parameters of the Forward Button, which navigates forward through the browser history, if any.
 
 <html>
@@ -98,7 +99,6 @@ The ForwardButton Meta Tag is an action tag used to set the parameters of the Fo
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The ForwardButton Meta Tag is an action tag used to set the parameters of the Fo
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -308,7 +307,6 @@ The follwing example shows the Forward button, sets its width to 30 pixels, its 
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Use of Images on Buttons.</DIV>
@@ -327,7 +325,6 @@ The follwing example shows the Forward button, sets its width to 30 pixels, its 
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -348,7 +345,6 @@ The follwing example shows the Forward button, sets its width to 30 pixels, its 
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="BackButton.html&#xA;						">BackButton</a> <a href="GoButton.html&#xA;						">GoButton</a> <a href="StopButton.html&#xA;						">StopButton</a> <a href="AddressBar.html&#xA;						">AddressBar</a> <a href="ReloadButton.html&#xA;						">ReloadButton</a> </BLOCKQUOTE><br></div>
     <hr size="1">

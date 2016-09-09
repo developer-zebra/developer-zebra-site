@@ -1,10 +1,11 @@
-﻿---
+---
 title: Reboot Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Reboot Meta Tag is an action tag used to immediately reboot the device.
 
 <html>
@@ -98,7 +99,6 @@ The Reboot Meta Tag is an action tag used to immediately reboot the device.
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Reboot Meta Tag is an action tag used to immediately reboot the device.
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -214,7 +213,6 @@ The following example Warm boots the terminal:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Suggested Use</DIV>
@@ -228,7 +226,6 @@ The following example Warm boots the terminal:
 				</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

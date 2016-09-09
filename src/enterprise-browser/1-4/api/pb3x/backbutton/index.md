@@ -1,10 +1,11 @@
-﻿---
+---
 title: BackButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The BackButton Meta Tag is an action tag used to set the parameters of the Back Button, which navigates to the previously loaded page, if any.
 
 <html>
@@ -98,7 +99,6 @@ The BackButton Meta Tag is an action tag used to set the parameters of the Back 
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">

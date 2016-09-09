@@ -1,10 +1,11 @@
-﻿---
+---
 title: Keylight Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Keylight Meta Tag is an action tag used to control the keyboard backlight and its intensity.</p>
 
 <html>
@@ -98,7 +99,6 @@ The Keylight Meta Tag is an action tag used to control the keyboard backlight an
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Keylight Meta Tag is an action tag used to control the keyboard backlight an
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -186,7 +185,6 @@ The Keylight META Tag is an action tag used to illuminate / extinguish the keybo
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -287,7 +285,6 @@ The following example turns the keyboard backlight on with an intensity of 3:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">General</DIV>
@@ -297,7 +294,6 @@ The following example turns the keyboard backlight on with an intensity of 3:
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The levels of supported keylight intensity is device dependant.  When the Keylight module is first loaded it writes the supported levels to the log file as INFORMATION so you can determine the maximum setting from the log file.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -318,7 +314,6 @@ The following example turns the keyboard backlight on with an intensity of 3:
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="Backlight.html&#xA;						">Backlight</a> </BLOCKQUOTE><br></div>
     <hr size="1">

@@ -1,10 +1,11 @@
 ---
-title: 
+title: All Decoders Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+The All Decoders Meta Tag is an action tag used to set the set the barcode scanner to read all barcode types that the scanner is capable of reading.
 
 <html>
   <head>
@@ -105,9 +106,6 @@ subhead:
       </tr>
     </table>
     <hr size="1">
-    <p>
-					The 
-					<b>All_Decoders</b> META Tag is an action tag used to set the set the barcode scanner to read all barcode types that the scanner is capable of reading.</p>
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
@@ -292,3 +290,4 @@ The following example enables all available decoders then turns on the scanner:
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
+

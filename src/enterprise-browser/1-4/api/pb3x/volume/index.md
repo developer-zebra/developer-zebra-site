@@ -1,10 +1,11 @@
-﻿---
+---
 title: Volume Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Volume Meta Tag is an action tag used to set the audio output volume of wave files being played on the device. This does not set the volume of the device beeper.
 
 <html>
@@ -98,7 +99,6 @@ The Volume Meta Tag is an action tag used to set the audio output volume of wave
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Volume Meta Tag is an action tag used to set the audio output volume of wave
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -183,7 +182,6 @@ The Volume META Tag is an action tag used to set the audio output volume of the 
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example sets the device volume to its maximum for all devices</p>
@@ -240,7 +238,6 @@ The following example sets the device volume to its maximum for devices with a s
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

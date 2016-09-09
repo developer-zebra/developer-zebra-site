@@ -1,10 +1,11 @@
-﻿---
+---
 title: Signal Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Signal Meta Tag is an action tag used to set position and display parameters of the wireless signal indicator on the screen.
 
 <html>
@@ -98,7 +99,6 @@ The Signal Meta Tag is an action tag used to set position and display parameters
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The Signal Meta Tag is an action tag used to set position and display parameters
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -229,11 +228,9 @@ The Signal META Tag is an action tag used to set positional and display paramete
       //objGeneric.InvokeMETAFunction('Signal', 'IconPosition:[Value]');      /* Sets the position of indicator icon with respect to Graph position.  "Iconposition" and "Graphposition" combination must be valid combination e.g both cannot be left. */
       //objGeneric.InvokeMETAFunction('Signal', 'GraphPosition:[Value]');      /* Sets the direction towards which level bars will grow e.g if value is Left then level bars grow from right to left.  "Iconposition" and "Graphposition" combination must be valid combination e.g both cannot be left. */
       //objGeneric.InvokeMETAFunction('Signal', 'Color:[Value]');      /* RGB value that sets the color of the wireless signal indicator using HTML web colors RR-Red, GG-Green and BB-Blue */
-
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -324,7 +321,6 @@ The Signal META Tag is an action tag used to set positional and display paramete
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
       //objGeneric.InvokeMETAFunction('Signal', 'SignalEvent:url('JavaScript:fnJSCallbackHandler('%1', '%2', '%3', '%4', '%5', '%6', '%7', '%8', '%9', '%10', '%11');')');      /* The SignalEvent gives an indication of the signal level and other associated information.  Once registered for you will receive a SignalEvent at regular intervals, as specified by the SignalRefresh configuration setting. */
-
    }
 &lt;/script&gt;</textarea></div>
         <table cellspacing="1" cellpadding="3" width="95%">
@@ -349,7 +345,6 @@ The Signal META Tag is an action tag used to set positional and display paramete
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example shows the wireless signal indicator, sets the position to (50, 50), the color of the indicator beneath the bars growing from right to left:</p>
@@ -379,7 +374,6 @@ The Signal META Tag is an action tag used to set positional and display paramete
         <div id="Examples" style="display:none"><textarea id="ID0E1F">&lt;!-- 
 The following example shows the wireless signal indicator, sets the position to (50, 50), the color of the indicator beneath the bars growing from right to left:
 --&gt;
-
 &lt;META HTTP-Equiv="Signal" Content="Visibility:Visible"&gt;
 &lt;META HTTP-Equiv="Signal" Content="Left:50"&gt;
 &lt;META HTTP-Equiv="Signal" Content="Top:50"&gt;
@@ -409,7 +403,6 @@ The following example shows the wireless signal indicator, sets the position to 
         <div id="Examples" style="display:none"><textarea id="ID0EBG">&lt;!-- 
 Above example can also be written in EMML1.1 as given below
 --&gt;
-
 &lt;META HTTP-Equiv="Signal" Content="Left:50; Top:50; Color:#FF0000; Visibility:Visible"&gt;
 </textarea></div>
         <p>In EMML1.1 it is also possible to concatenate the Parameter with the module name.  The example above can also be written as:</p>
@@ -437,7 +430,6 @@ Above example can also be written in EMML1.1 as given below
         <div id="Examples" style="display:none"><textarea id="ID0EIG">&lt;!-- 
 In EMML1.1 it is also possible to concatenate the Parameter with the module name.  The example above can also be written as:
 --&gt;
-
 &lt;META HTTP-Equiv="Signal-Left" Content="50"&gt;
 &lt;META HTTP-Equiv="Signal-Top" Content="50"&gt;
 &lt;META HTTP-Equiv="Signal-Color" Content="#FF0000"&gt;
@@ -470,7 +462,6 @@ The following example navigates to a new page with parameters upon a wirelss sig
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Overlapping</DIV>
@@ -484,7 +475,6 @@ For an illustrative guide to the meaning of IconPosition and GraphPositions see 
 </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -505,6 +495,5 @@ For an illustrative guide to the meaning of IconPosition and GraphPositions see 
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
   </body>
 </html>

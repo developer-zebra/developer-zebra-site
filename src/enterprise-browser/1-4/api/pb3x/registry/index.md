@@ -1,10 +1,11 @@
-﻿---
+---
 title: Registry Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Registry Meta Tag is used to write and delete registry settings, and to create corresponding merge files.
 
 <html>
@@ -98,7 +99,6 @@ The Registry Meta Tag is used to write and delete registry settings, and to crea
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The Registry Meta Tag is used to write and delete registry settings, and to crea
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -170,7 +169,6 @@ The Registry Meta Tag is used to write and delete registry settings, and to crea
         <div style="display:none"><textarea id="txtMETATemplateWO">&lt;!-- 
 The Registry META Tag is used to write and delete registry settings, and create corresponding merge files.
 --&gt;
-
 &lt;!-- &lt;META HTTP-Equiv="Registry" Content="delete"&gt; --&gt;      &lt;!-- Deletes the setting. --&gt;</textarea></div>
         <div style="display:none"><textarea id="txtJavascriptTemplateWO">&lt;script&gt;
    /*
@@ -186,7 +184,6 @@ The Registry META Tag is used to write and delete registry settings, and create 
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -286,7 +283,6 @@ The Registry META Tag is used to write and delete registry settings, and create 
    /*
    The Registry META Tag is used to write and delete registry settings, and create corresponding merge files.
    */
-
    function doRegistryInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
@@ -297,11 +293,9 @@ The Registry META Tag is used to write and delete registry settings, and create 
       //objGeneric.InvokeMETAFunction('Registry', 'type:[Value]');      /* Data type of the setting. */
       //objGeneric.InvokeMETAFunction('Registry', 'persistent:[Value]');      /* Whether to create the corresponding merge file. */
       //objGeneric.InvokeMETAFunction('Registry', 'value:[Value]');      /* Value for the setting. */
-
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>
@@ -335,14 +329,11 @@ The setting is of type 'multisz' and has the values 'hello' and 'world'. The cor
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EJE">&lt;!-- 
-
 The tags below add a registry setting called 'PocketBrowser' in the 'Software' key of the
 HKEY_LOCAL_MACHINE hive.
 The setting is of type 'multisz' and has the values 'hello' and 'world'. The corresponding
 .reg merge file will be created in the \Application folder.
-      
 --&gt;
-
         &lt;META HTTP-Equiv="registry" Content="hive:hklm"&gt;
         &lt;META HTTP-Equiv="registry" Content="key:Software"&gt;
         &lt;META HTTP-Equiv="registry" Content="setting:PocketBrowser"&gt;
@@ -376,11 +367,8 @@ The tags below delete the above setting.
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EQE">&lt;!-- 
-
 The tags below delete the above setting.
-      
 --&gt;
-
         &lt;META HTTP-Equiv="registry" Content="hive:hklm"&gt;
         &lt;META HTTP-Equiv="registry" Content="key:Software"&gt;
         &lt;META HTTP-Equiv="registry" Content="setting:PocketBrowser"&gt;
@@ -388,7 +376,6 @@ The tags below delete the above setting.
       </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Hive values</DIV>
@@ -412,11 +399,7 @@ multisz      Multiple strings of characters, separated by \n.
       </pre>
         <DIV class="clsRef">Merge files</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-When the persistent tag is given the module will write a .reg file to the \Application
-folder on the device, which will add the setting to the registry when merged by Windows CE/WM,
-e.g. during a cold boot.
-When the persistent tag is given when deleting a setting, the module deletes any existing .reg
-file created above, and creates a new .reg file which will delete the setting when merged - this is in addition to deleting the registry setting itself.
+When the persistent tag is given the module will write a .reg file to the \Application folder on the device, which will add the setting to the registry when merged by Windows CE/WM, e.g. during a cold boot. When the persistent tag is given when deleting a setting, the module deletes any existing .reg file created above, and creates a new .reg file which will delete the setting when merged - this is in addition to deleting the registry setting itself.
       </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>

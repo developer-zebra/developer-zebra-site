@@ -1,10 +1,11 @@
-﻿---
+---
 title: SignatureCapture Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The SignatureCapture Meta Tag presents a rectangular box that captures a signature, hand-written notes or other data entered using the device stylus.
 
 <html>
@@ -98,7 +99,6 @@ The SignatureCapture Meta Tag presents a rectangular box that captures a signatu
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The SignatureCapture Meta Tag presents a rectangular box that captures a signatu
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -193,7 +192,6 @@ The SignatureCapture META Tag creates a rectangular box that the user can draw w
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -373,7 +371,6 @@ The SignatureCapture META Tag creates a rectangular box that the user can draw w
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -487,7 +484,6 @@ The SignatureCapture META Tag creates a rectangular box that the user can draw w
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following META Tag example sets up a yellow rectangular area that has a border with a pen color of burgundy. When the Capture method is invoked via JavaScript the signature will be transferred to a server via HTTP and an alert will inform the user whether or not the transfer succeeded.</p>
@@ -664,7 +660,6 @@ function onVectors(data)
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Scrolling</DIV>
@@ -680,7 +675,6 @@ function onVectors(data)
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The protocol, port number, username (optional) and password (optional) are all derived from the URL string and should be specified in the following manner: [protocol]://[username]:[password@]Server[:Port]FileNameAndPath.  FTP Example: ftp://admin:root@192.168.1.1:2500/Folder/Sig.bmp.  HTTP Example: http://admin:root@192.168.1.1:8080/Folder/Upload.aspx.  File Example: file://\path\Sig.bmp</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -701,6 +695,5 @@ function onVectors(data)
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
   </body>
 </html>

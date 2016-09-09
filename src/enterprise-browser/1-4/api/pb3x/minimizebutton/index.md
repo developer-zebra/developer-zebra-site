@@ -1,10 +1,11 @@
-﻿---
+---
 title: MinimizeButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The MinimizeButton Meta Tag is an action tag used to set the parameters of the minimize button, which hides the PocketBrowser app from view and causes it to lose focus.
 
 <html>
@@ -98,7 +99,6 @@ The MinimizeButton Meta Tag is an action tag used to set the parameters of the m
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The MinimizeButton Meta Tag is an action tag used to set the parameters of the m
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -302,7 +301,6 @@ The follwing example shows the minimizebutton and displays the min_up.gif / min_
 				</textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Use of Images on Buttons.</DIV>
@@ -318,7 +316,6 @@ The follwing example shows the minimizebutton and displays the min_up.gif / min_
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -339,7 +336,6 @@ The follwing example shows the minimizebutton and displays the min_up.gif / min_
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="QuitButton.html&#xA;						">QuitButton</a> <a href="../Device_Application/Application.html&#xA;						">Application</a> </BLOCKQUOTE><br></div>
     <hr size="1">

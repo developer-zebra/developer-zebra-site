@@ -1,3 +1,9 @@
+---
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: PocketBrowser 3.x APIs
+---
 
 <html>
 <head>
@@ -280,7 +286,8 @@ The following example shows the wireless signal indicator:
 
 
     <hr size="1">
-    <div align="right">Copyright© 2016 Symbol Technologies, Inc.</div>
+    <div align="right">Copyrightï¿½ 2016 Symbol Technologies, Inc.</div>
 </body>
 
 </html>
+

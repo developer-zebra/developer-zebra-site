@@ -1,10 +1,11 @@
-﻿---
+---
 title: Notification Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Notification Meta Tag is an action tag used to control the notification objects such as the LEDs, beeper and pager on the device. While some devices are equipped more than one of a given object type, most have multiple LEDs, a single beeper and a single pager. 
 
 To control notification objects, it is first necessary to query the device to discover which objects are available. This is done using the Enumerate method and `EnumNotificationsEvent`, which returns a unique identifier for each available notification to be used to set the notification state. Notifications can be set as "on," "off" or "cycling." with the behaviour of 'on' or 'off' notification objects self explanatory; when set to cyclic LEDs will flash for the specified number of times whereas the beeper and pager will only activate once for the specified duration.
@@ -100,7 +101,6 @@ To control notification objects, it is first necessary to query the device to di
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -120,7 +120,6 @@ To control notification objects, it is first necessary to query the device to di
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -186,7 +185,6 @@ The Notification META Tag is an action tag used to control the notification obje
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -337,7 +335,6 @@ The Notification META Tag is an action tag used to control the notification obje
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -403,7 +400,6 @@ The Notification META Tag is an action tag used to control the notification obje
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example stores the available notifications in a javascript array and displays them to the user in an HTML table.  Note that a 2 dimensional array is returned in the EnumNotificationsEvent.</p>
@@ -593,8 +589,7 @@ The following function takes a notification index and a notification type.  Depe
 &lt;/script&gt;
 </textarea></div>
       </blockquote>
-    </div>
-    
+    </div>  
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">No Notification Objects</DIV>
@@ -620,7 +615,6 @@ The following function takes a notification index and a notification type.  Depe
 )
 </pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

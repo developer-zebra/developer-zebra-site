@@ -1,10 +1,11 @@
-﻿---
+---
 title: StopButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The StopButton Meta Tag is an action tag used to set the parameters of the Stop Button, which is displayed only while a page is loading. When clicked, the Stop Button ceases the current navigation and brings up the badlink page (if defined), preventing partially rendered pages being displayed in the browser.
 
 <html>
@@ -98,7 +99,6 @@ The StopButton Meta Tag is an action tag used to set the parameters of the Stop 
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The StopButton Meta Tag is an action tag used to set the parameters of the Stop 
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -209,7 +208,6 @@ The StopButton Meta Tag is an action tag used to set the parameters of the Stop 
         <div style="display:none"><textarea id="txtMETATemplateW">&lt;!-- 
 The StopButton META Tag is an action tag used to set the parameters of the Stop Button. The Stop Button will only be displayed whilst a page is loading and when clicked will cease the navigation.
 --&gt;
-
 &lt;!-- &lt;META HTTP-Equiv="StopButton" Content="Left:[Value]"&gt; --&gt;      &lt;!-- Sets the X position of the Stop button. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="StopButton" Content="Top:[Value]"&gt; --&gt;      &lt;!-- Sets the Y position of the Stop button. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="StopButton" Content="Height:[Value]"&gt; --&gt;      &lt;!-- Sets the height of the Stop button. --&gt;
@@ -221,11 +219,9 @@ The StopButton META Tag is an action tag used to set the parameters of the Stop 
    /*
    The StopButton META Tag is an action tag used to set the parameters of the Stop Button. The Stop Button will only be displayed whilst a page is loading and when clicked will cease the navigation.
    */
-
    function doStopButtonInit()
    {
       var objGeneric = new ActiveXObject("PocketBrowser.Generic");
-
       //objGeneric.InvokeMETAFunction('StopButton', 'Left:[Value]');      /* Sets the X position of the Stop button. */
       //objGeneric.InvokeMETAFunction('StopButton', 'Top:[Value]');      /* Sets the Y position of the Stop button. */
       //objGeneric.InvokeMETAFunction('StopButton', 'Height:[Value]');      /* Sets the height of the Stop button. */
@@ -233,7 +229,6 @@ The StopButton META Tag is an action tag used to set the parameters of the Stop 
       //objGeneric.InvokeMETAFunction('StopButton', 'ImageUp:[Value]');      /* Sets the image to be displayed when the Stop Button is in the up state. See Remarks. */
       //objGeneric.InvokeMETAFunction('StopButton', 'ImageDown:[Value]');      /* Sets the image to be displayed when the Stop Button is in the down state. See Remarks. */
       //objGeneric.InvokeMETAFunction('StopButton', 'Visibility:[Value]');      /* Sets the visibility of the Stop button. */
-
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
@@ -298,7 +293,6 @@ The follwing example shows the Stop button and displays the stop_up.gif / stop_d
 				</textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Use of Images on Buttons.</DIV>
@@ -317,7 +311,6 @@ The follwing example shows the Stop button and displays the stop_up.gif / stop_d
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support, the command areas will automatically move and resize to fit the new layout. However the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so they must be moved manually by detecting the ScreenOrientationEvent.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -338,6 +331,5 @@ The follwing example shows the Stop button and displays the stop_up.gif / stop_d
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
   </body>
 </html>

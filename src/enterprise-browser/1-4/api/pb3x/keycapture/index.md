@@ -1,10 +1,11 @@
-﻿---
+---
 title: KeyCapture Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The KeyCapture Meta Tag is an action tag is used to intercept or override hardware keys, and is typically used to assign certain application functions to physical keys or other hardware buttons.
 
 <html>
@@ -98,7 +99,6 @@ The KeyCapture Meta Tag is an action tag is used to intercept or override hardwa
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -123,7 +123,6 @@ The KeyCapture Meta Tag is an action tag is used to intercept or override hardwa
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -600,7 +599,6 @@ The following example will call a JavaScript function when the trigger is presse
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Keys which can not be captured</DIV>
@@ -639,7 +637,6 @@ If a key is remapped to itself then PocketBrowser will appear to hang because if
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Certain devices may map their function keys to apparently normal keys, for example the VC6090 maps the '{' key to F12 and the '}' key to 14.  In order to capture those two keys it is necessary to enable F12 and F14 in the Configuration Settings.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -660,7 +657,6 @@ If a key is remapped to itself then PocketBrowser will appear to hang because if
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="../Getting Started/key_capture_overview.html&#xA;						">key_capture_overview</a> </BLOCKQUOTE><br></div>
     <hr size="1">

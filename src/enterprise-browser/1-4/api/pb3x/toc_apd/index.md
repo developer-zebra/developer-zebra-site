@@ -1,6 +1,6 @@
 ---
 title: Adaptive Printer Driver (APD) APIs
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -20,4 +20,8 @@ automenu:
           url: ../apd/psexternalex
         - title: PSGetLastMessage
           url: ../apd/psgetlastmessage
+productversion: '1.4'
+product: Enterprise Browser
+subhead: PocketBrowser 3.x APIs
 ---
+

@@ -1,10 +1,11 @@
-﻿---
+---
 title: Application Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Application Meta Tag is an action tag used to adjust the running state of PocketBrowser applications.
 
 <html>
@@ -112,7 +113,6 @@ The Application Meta Tag is an action tag used to adjust the running state of Po
           </tr>
         </table>
       </blockquote><br></div>
- 
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.

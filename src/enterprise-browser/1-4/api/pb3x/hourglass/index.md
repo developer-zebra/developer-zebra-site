@@ -1,10 +1,11 @@
-﻿---
+---
 title: Hourglass Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Hourglass Meta Tag is an action tag used to control the display and position of the hourglass icon, which appears to indicate that a page is loading.
 
 <html>
@@ -98,7 +99,6 @@ The Hourglass Meta Tag is an action tag used to control the display and position
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Hourglass Meta Tag is an action tag used to control the display and position
           </tr>
         </table>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -201,7 +200,6 @@ The Hourglass META Tag is an action tag used to show or hide the hourglass (wait
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example sets the Hourglass position to (50, 50).</p>
@@ -282,7 +280,6 @@ The following example shows and hides the Hourglass.
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Navigation</DIV>
@@ -292,7 +289,6 @@ The following example shows and hides the Hourglass.
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The hourglass is not compatible with scrolling the browser window.  The spinning cursor will move with the HTML page.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -313,7 +309,6 @@ The following example shows and hides the Hourglass.
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="../Generic ActiveX Object/InvokeMetaFunction.html&#xA;						">InvokeMetaFunction</a> </BLOCKQUOTE><br></div>
     <hr size="1">

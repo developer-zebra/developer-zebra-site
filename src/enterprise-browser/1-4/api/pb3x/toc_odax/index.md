@@ -1,6 +1,6 @@
 ---
 title: Offline Data Access (ODAX) APIs
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -40,4 +40,8 @@ automenu:
           url: ../odax/CeODAX.Moveprev
         - title: CeODAX.Select
           url: ../odax/CeODAX.Select
+productversion: '1.4'
+product: Enterprise Browser
+subhead: PocketBrowser 3.x APIs
 ---
+

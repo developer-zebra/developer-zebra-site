@@ -1,10 +1,11 @@
-﻿---
+---
 title: PowerOn Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The PowerOn Meta Tag is used to register to receive an event when the device resumes from suspend mode.
 
 <html>
@@ -98,7 +99,6 @@ The PowerOn Meta Tag is used to register to receive an event when the device res
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The PowerOn Meta Tag is used to register to receive an event when the device res
           </tr>
         </table>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -132,7 +131,6 @@ The PowerOn Meta Tag is used to register to receive an event when the device res
           </blockquote>
         </p><br><DIV class="clsRef">PowerOnEvent</DIV>
         <DIV>The PowerOnEvent is sent whenever the device is resumed from suspend mode.  There is no data associated with this event.</DIV><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example displays a message box when the device resumes:</p>
@@ -163,7 +161,6 @@ The following example displays a message box when the device resumes:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Example usage</DIV>
@@ -173,7 +170,6 @@ The following example displays a message box when the device resumes:
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Windows Power events will not always be generated when the device is connected to power and instructed to stand by / wake up, though this is dependant on the Operating System in use.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

@@ -1,5 +1,9 @@
 ---
 title: WriteConfigSetting.md
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: PocketBrowser 3.x APIs
 ---
 ﻿<html>
   <head>
@@ -324,3 +328,4 @@ The following javascript example turns the scrollbars setting off for the applic
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
+

@@ -1,6 +1,6 @@
 ---
-title: PocketBrowser Barcode-Capture Decoders 
-description: 
+title: PocketBrowser Barcode-Capture Decoders
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -150,3 +150,8 @@ automenu:
           url: ../uspostnet
         - title: Webcode
           url: ../webcode
+productversion: '1.4'
+product: Enterprise Browser
+subhead: PocketBrowser 3.x APIs
+---
+

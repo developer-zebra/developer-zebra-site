@@ -1,10 +1,11 @@
-﻿---
+---
 title: Push Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Push Meta Tag is used to receive data over an HTTP connection.
 
 <html>
@@ -98,7 +99,6 @@ The Push Meta Tag is used to receive data over an HTTP connection.
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -123,7 +123,6 @@ The Push Meta Tag is used to receive data over an HTTP connection.
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -200,7 +199,6 @@ The Push META Tag is used to receive data over an HTTP connection.
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -306,7 +304,6 @@ The Push META Tag is used to receive data over an HTTP connection.
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -372,18 +369,10 @@ The Push META Tag is used to receive data over an HTTP connection.
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>
-The code below configures the server to listen on port 8080, to accept only requests to
-the virtual path \push and to require a passkey of 'secret'. Assuming the device has IP address 1.2.3.4 then
-browsing to the following URL will cause the Javascript function onPush() to be called
-with the parameters 'hello' and 'world': 
-
-http://1.2.3.4:8080/push?name1=hello&amp;name2=world&amp;passkey=secret.
-
-The browser will receive the contents of the file \ok.hmtl as response.
+The code below configures the server to listen on port 8080, to accept only requests to the virtual path \push and to require a passkey of 'secret'. Assuming the device has IP address 1.2.3.4 then browsing to the following URL will cause the Javascript function onPush() to be called with the parameters 'hello' and 'world': http://1.2.3.4:8080/push?name1=hello&amp;name2=world&amp;passkey=secret. The browser will receive the contents of the file \ok.hmtl as response.
       </p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
@@ -409,19 +398,7 @@ The browser will receive the contents of the file \ok.hmtl as response.
 								</nobr></td>
           </tr>
         </table>
-        <div id="Examples" style="display:none"><textarea id="ID0EAF">&lt;!-- 
-
-The code below configures the server to listen on port 8080, to accept only requests to
-the virtual path \push and to require a passkey of 'secret'. Assuming the device has IP address 1.2.3.4 then
-browsing to the following URL will cause the Javascript function onPush() to be called
-with the parameters 'hello' and 'world': 
-
-http://1.2.3.4:8080/push?name1=hello&amp;name2=world&amp;passkey=secret.
-
-The browser will receive the contents of the file \ok.hmtl as response.
-      
---&gt;
-
+        <div id="Examples" style="display:none"><textarea id="ID0EAF">&lt;!--The code below configures the server to listen on port 8080, to accept only requests to the virtual path \push and to require a passkey of 'secret'. Assuming the device has IP address 1.2.3.4 then browsing to the following URL will cause the Javascript function onPush() to be called with the parameters 'hello' and 'world': http://1.2.3.4:8080/push?name1=hello&amp;name2=world&amp;passkey=secret. The browser will receive the contents of the file \ok.hmtl as response.--&gt;
         &lt;META HTTP-Equiv="Push" Content="Port:8080"&gt;
         &lt;META HTTP-Equiv="Push" Content="Passkey:secret"&gt;
         &lt;META HTTP-Equiv="Push" Content="Path:/push"&gt;
@@ -452,32 +429,22 @@ To enable unattended mode:
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0EHF">&lt;!-- 
-
 To enable unattended mode:
-      
 --&gt;
-
         &lt;META HTTP-Equiv="push" Content="unattended:enabled"&gt;
       </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">HTTP request format</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-The push server accepts both GET and POST requests. For GET requests the parameters and values
-are specified in the URL, while for POST requests the request body should hold the 
-parameters and values in url encoded form. The virtual path in the URL must be as specified
-by the &lt;path&gt; tag, or can be anything if the tag isn't present. The parameters must
-include 'passkey' with the correct value if the &lt;passkey&gt; tag is present. 
+The push server accepts both GET and POST requests. For GET requests the parameters and values are specified in the URL, while for POST requests the request body should hold the parameters and values in url encoded form. The virtual path in the URL must be as specified by the &lt;path&gt; tag, or can be anything if the tag isn't present. The parameters must include 'passkey' with the correct value if the &lt;passkey&gt; tag is present. 
       </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Returned values</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-When a valid request is received the specified destination URL is called with one '%s' per
-parameter/value pair in the request. Only the values are returned; the parameter names are
-discarded. The 'passkey' parameter and value are ignored if present.
+When a valid request is received the specified destination URL is called with one '%s' per parameter/value pair in the request. Only the values are returned; the parameter names are discarded. The 'passkey' parameter and value are ignored if present.
       </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Allowed characters</DIV>
@@ -487,15 +454,11 @@ Only alphanumeric characters and the characters $-_.+!*'(), are allowed in a URL
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Unattended mode</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
-Normally when a device enters suspend mode, either because it has been idle for a certain time
-or because the power key was pressed, all the device subsystems are switched off, including the 
-wireless network. When unattended mode is enabled however the device keeps enough subsystems powered
-that applications continue to run, and it can still respond to Push requests. Note that unattended mode 
+Normally when a device enters suspend mode, either because it has been idle for a certain time or because the power key was pressed, all the device subsystems are switched off, including the wireless network. When unattended mode is enabled however the device keeps enough subsystems powered that applications continue to run, and it can still respond to Push requests. Note that unattended mode 
 uses significantly more battery power.
       </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

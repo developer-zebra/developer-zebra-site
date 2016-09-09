@@ -1,6 +1,12 @@
 ---
-title: addpackage.md
+title: AddPackage
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: PocketBrowser 3.x APIs
 ---
+The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to add the named package to the package list (can be added up to four times).
+
 ﻿<html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -100,9 +106,6 @@ title: addpackage.md
       </tr>
     </table>
     <hr size="1">
-    <p>
-					The 
-					<b>AddPackage</b> Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to add the named package to the package list (can be added up to four times).</p>
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
@@ -264,3 +267,4 @@ The following javascript is example code of how to set the AddPackage method:
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
+

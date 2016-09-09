@@ -1,10 +1,11 @@
-﻿---
+---
 title: FileTransfer Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The FileTransfer Meta Tag is an action tag used to send or receive files between the device filestore and an FTP or HTTP site.
 
 <html>
@@ -98,7 +99,6 @@ The FileTransfer Meta Tag is an action tag used to send or receive files between
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -118,7 +118,6 @@ The FileTransfer Meta Tag is an action tag used to send or receive files between
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -184,7 +183,6 @@ The FileTransfer META Tag is an action tag used to send or receive files between
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -299,7 +297,6 @@ The FileTransfer META Tag is an action tag used to send or receive files between
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -496,8 +493,6 @@ The following example shows how to download a file from an HTTP server.
    {
       gen.InvokeMETAFunction("FileTransfer", "Source:url('http://httpAdmin:httpPassword@myserver/myfile.txt'); destination:url('file://\\myfile.txt'); Transfer");     
    }
-
-  
 &lt;/script&gt;
 </textarea></div>
         <p>The following example shows to transfer a file via FTP.  After each transfer the result (OK or Error) is given in an alert box.</p>
@@ -529,7 +524,6 @@ The following example shows how to download a file from an HTTP server.
    {
       gen.InvokeMETAFunction("FileTransfer", "Source:url('ftp://ftpadmin:ftpadminpw@192.168.4.110/NewFolder/file.txt'); Destination:url('file://\\sigReceived.bmp'); Transfer");     
    }
-  
 &lt;/script&gt;
 </pre>
             </td>
@@ -578,7 +572,6 @@ The following example shows to transfer a file via FTP.  After each transfer the
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Default Ports</DIV>
@@ -600,7 +593,6 @@ The following example shows to transfer a file via FTP.  After each transfer the
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">FTP does not supply a return code to indicate success, so PocketBrowser may report a successful transfer even though the file may not arrive or be sent</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -621,7 +613,6 @@ The following example shows to transfer a file via FTP.  After each transfer the
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
     <div id="AlsoSpan" style="display:block">
       <BLOCKQUOTE><a href="../SignatureCapture/SignatureCapture.html&#xA;						">SignatureCapture</a> <a href="../Offline Data Access (ODAX)/CeODAX.Move.html&#xA;						">CeODAX.Move</a> </BLOCKQUOTE><br></div>
     <hr size="1">

@@ -1,10 +1,11 @@
-﻿---
+---
 title: Backlight Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Backlight Meta Tag controls the display backlight and its intensity.
 
 <html>
@@ -98,7 +99,6 @@ The Backlight Meta Tag controls the display backlight and its intensity.
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Backlight Meta Tag controls the display backlight and its intensity.
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -190,7 +189,6 @@ The Backlight META Tag is an action tag used to illuminate / extinguish the disp
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -291,7 +289,6 @@ The following turns on the screen backlight and sets the intensity to level 2
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">General</DIV>
@@ -301,7 +298,6 @@ The following turns on the screen backlight and sets the intensity to level 2
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The levels of supported screen backlight intensity is device dependant.  When the Backlight module is first loaded it writes the supported levels to the log file as INFORMATION so you can determine the maximum setting from the log file.</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

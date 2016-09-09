@@ -1,10 +1,11 @@
-﻿---
+---
 title: SIP Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The SIP Meta Tag is used to control attributes of the soft input panel (SIP), also known as the software keyboard. Settings apply to text boxes on the current page as well as the address bar. 
 
 <html>
@@ -98,7 +99,6 @@ The SIP Meta Tag is used to control attributes of the soft input panel (SIP), al
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The SIP Meta Tag is used to control attributes of the soft input panel (SIP), al
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -186,7 +185,6 @@ The SIP META Tag is used to control attributes of the soft input panel. Note tha
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -348,7 +346,6 @@ The following example sets the SIP to manual:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Applicable Platforms</DIV>
@@ -364,7 +361,6 @@ The following example sets the SIP to manual:
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">The SIP used is the standard keyboard input panel supplied with Windows.  Certain incompatibilities exist when using the software keyboard on a device which also has a hardware keyboard though this will have no impact on the average user.  For example moving the SIP will reset the alpha or function key (orange or blue key) lock and using the orange or blue keys may reset the position of the SIP on certain devices.  Also note that if you press a hardware key the SIP will disappear and you will need to press the SIP button again to get it to appear (or invoke the SIP control Automatic state again)</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>
@@ -385,6 +381,5 @@ The following example sets the SIP to manual:
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    
   </body>
 </html>

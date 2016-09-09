@@ -1,3 +1,9 @@
+---
+productversion: '1.4'
+product: Enterprise Browser
+layout: guide.html
+subhead: PocketBrowser 3.x APIs
+---
 
 <html>
 <head>
@@ -264,7 +270,7 @@ The onkeydown event is used in JavaScript to capture all keys pressed on the key
 
 <blockquote>
 <pre class="clsSyntaxCells">
-&lt;META HTTP-Equiv="KeyCapture" Content="AccelerateKey:All"&gt; &lt;!—For more information on this see following sections --&gt;
+&lt;META HTTP-Equiv="KeyCapture" Content="AccelerateKey:All"&gt; &lt;!ï¿½For more information on this see following sections --&gt;
 &lt;script type="text/javascript"&gt;
 document.onkeydown=enterToTab;
 function enterToTab(event) 
@@ -289,7 +295,7 @@ In PocketBrowser this can be rewritten as:
 
 <blockquote>
 <pre class="clsSyntaxCells">
-&lt;META HTTP-Equiv="KeyCapture" Content="AccelerateKey:All"&gt; &lt;!—For more information on this see following sections --&gt;
+&lt;META HTTP-Equiv="KeyCapture" Content="AccelerateKey:All"&gt; &lt;!ï¿½For more information on this see following sections --&gt;
 &lt;META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; RemapTo:0x09"&gt;
 </pre>
 </blockquote>
@@ -385,7 +391,7 @@ Backspace      No Action	               No Action
 Enter          No Action	               No Action
 Tab            No Action	               No Action
 
-               Table 3 : Accelerate Keys – 'None' Behaviour
+               Table 3 : Accelerate Keys ï¿½ 'None' Behaviour
 </pre>
 </blockquote>
 </div>
@@ -410,7 +416,7 @@ Enter          In multi-line text area:   Line feed         No Action
                In any other form control: Submit the form   No Action
 Tab            Advance to next control                      Advance to next control
 
-               Table 4 : Accelerate Keys – 'ALL' Behaviour
+               Table 4 : Accelerate Keys ï¿½ 'ALL' Behaviour
 </pre>
 </blockquote>
 </div>
@@ -447,7 +453,8 @@ Although the AccelerateKey behaviour can not be customised with the 'AccelerateK
 
 
     <hr size="1">
-    <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
+    <div align="right">ï¿½ 2016 Symbol Technologies, Inc. All rights reserved.</div>
 </body>
 
 </html>
+

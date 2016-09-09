@@ -1,10 +1,11 @@
-﻿---
+---
 title: CardReader Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The CardReader Meta Tag is a retrieval tag that either navigates to a URL or calls a JavaScript function when an attached card reader decodes some data.
 
 <html>
@@ -98,7 +99,6 @@ The CardReader Meta Tag is a retrieval tag that either navigates to a URL or cal
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The CardReader Meta Tag is a retrieval tag that either navigates to a URL or cal
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -186,7 +185,6 @@ The CardReader META Tag is a retrieval tag that either navigates to a URL or cal
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-
     <div id="ParametersWSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate parameters, or attributes which can be set.
@@ -297,11 +295,9 @@ The CardReader META Tag is a retrieval tag that either navigates to a URL or cal
       //objGeneric.InvokeMETAFunction('CardReader', 'AutoTab:[Value]');      /* When enabled, appends a tab to any data returned as keystrokes by the cardreader.  */
       //objGeneric.InvokeMETAFunction('CardReader', 'AutoEnter:[Value]');      /* When enabled, appends a carriage return to any data returned as keystrokes by the cardreader. */
       //objGeneric.InvokeMETAFunction('CardReader', 'ModuleName:[Value]');      /* If the device has multiple card reader drivers installed this parameter is used to select which driver to use.  The drivers present are output in the log file when the card reader is initialised.  This parameter is also used to distinguish between an MSR and a DCR, e.g. if you attach a DCR7000 to your device you can specify that only the MSR functionality is used by specifying this parameter as 'MSR7000' */
-
    }
 &lt;/script&gt;</textarea></div>
       </blockquote><br></div>
-   
     <div id="ReturnsSpan" style="display:block">
       <blockquote>
         <p>
@@ -319,11 +315,9 @@ The CardReader META Tag is a retrieval tag that either navigates to a URL or cal
 								The function would be called as follows:<BR><pre class="clsSyntaxCells">"Javascript:doScan('Decode', '5449000053879', 0x35, 'SCN:EAN13');"</pre><BR></p>
           </blockquote>
         </p><br><DIV class="clsRef">ReadEvent</DIV>
-        <DIV>
+         <DIV>
 					ReadEvent:URL('URI')
 					URI is either a URL or a javascript function. If a URL, the browser navigates to the URL when the attached card reader decodes some data. If a javascript function, the function is treated as a callback which is invoked when the card reader decodes data. Issuing this tag, automatically opens the card reader, if it has not been opened already.
-					
-					
 				</DIV><BR><table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <col width="3%">
           <col width="20%">
@@ -382,7 +376,6 @@ The CardReader META Tag is a retrieval tag that either navigates to a URL or cal
             <td></td>
           </tr>
         </table><br><br></blockquote><br></div>
-    
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
         <p>The following example sets up the card reader to submit the scanned data to an asp page upon successful decoding</p>
@@ -533,16 +526,12 @@ The following example closes the card reader
 				</textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
-        <DIV class="clsRef">General</DIV>
+      <DIV class="clsRef">General</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">If the CardReader return URI is "", the cardreader data will be returned as keystrokes.  
-
 					The readevent parameter must be set at least once before the pandata parameter is set.
-
 					If both the autotab and autoenter parameters are set to "enabled", autoenter will take precedence.
-
 					An opened card reader must be closed before the attached card reader device and associated
 					modulename parameter are changed.
 				</DIV>
@@ -558,7 +547,7 @@ The following example closes the card reader
         <DIV class="clsRef">Event URI and Parameter Persistence</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
 					The ReadEvent URI, the PINTimeout, PINEntry, AutoEnter / AutoTab parameters are page-specific values.  When PocketBrowser performs a page navigate (not a JavaScript callback), the URI is invalidated, the parameters set to their default values and the cardreader is closed.  While the cardreader is open, the URI value may be changed via passing a new readevent parameter/value pair.  In the case that the CardReader is already open, the readevent parameter will simply update the URI and do nothing to the state	of the port.
-				</DIV>
+          </DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
         <DIV class="clsRef">Invalid parameter values</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">
@@ -581,7 +570,6 @@ Applications running in PocketBrowser should be resiliant against the card reade
 				</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

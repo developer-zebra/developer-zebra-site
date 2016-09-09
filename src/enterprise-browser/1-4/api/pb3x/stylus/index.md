@@ -1,10 +1,11 @@
-﻿---
+---
 title: Stylus Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: 
+subhead: PocketBrowser 3.x APIs
 ---
+
 The Stylus Meta Tag is an action tag used to enable and disable the touch screen.
 
 <html>
@@ -98,7 +99,6 @@ The Stylus Meta Tag is an action tag used to enable and disable the touch screen
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
     <hr size="1">
-    
     <div id="SyntaxSpan" style="display:block">
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
@@ -113,7 +113,6 @@ The Stylus Meta Tag is an action tag used to enable and disable the touch screen
           </tr>
         </table>
       </blockquote><br></div>
-    
     <div id="ParametersWOSpan" style="display:block">
       <blockquote>
 				Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -235,14 +234,12 @@ The following example disables the touch screen until the Enter key is pressed:
 </textarea></div>
       </blockquote>
     </div>
-    
     <div id="RemarksSpan" style="display:block">
       <blockquote>
         <DIV class="clsRef">Remote Display</DIV>
         <DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">This tag does not affect the behaviour of remote display applications for controlling the device</DIV>
         <pre style="font-family:courier;font-size:small;"></pre>
       </blockquote><br></div>
-    
     <div id="InfoSpan" style="display:block">
       <blockquote>
         <table>

@@ -1,6 +1,6 @@
 ---
 title: Generic ActiveX Object APIs
-description: 
+description: null
 layout: list-apis.html
 automenu:
   items:
@@ -52,4 +52,8 @@ automenu:
           url: ../generic/WriteConfigSetting
         - title: WriteUserSetting
           url: ../generic/WriteUserSetting
+productversion: '1.4'
+product: Enterprise Browser
+subhead: PocketBrowser 3.x APIs
 ---
+

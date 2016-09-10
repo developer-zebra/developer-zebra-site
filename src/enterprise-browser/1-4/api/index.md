@@ -15,7 +15,7 @@ automenu:
     - title: Enterprise Browser APIs
       items:
         - title: APD
-          url: re2x/apd
+          url: re2x/APD
         - title: Application
           url: Application
         - title: AudioCapture
@@ -29,7 +29,7 @@ automenu:
         - title: CardReader
           url: cardreader
         - title: Database
-          url: database
+          url: Database
         - title: Device
           url: device
         - title: EzNFC
@@ -45,7 +45,7 @@ automenu:
         - title: Log
           url: Log
         - title: MediaPlayer
-          url: mediaPlayer
+          url: mediaplayer
         - title: NativeMenubar
           url: NativeMenubar
         - title: NativeTabbar
@@ -61,11 +61,11 @@ automenu:
         - title: PrinterZebra
           url: printingzebra
         - title: ScreenOrientation
-          url: ScreenOrientation
+          url: screenorientation
         - title: Sensor
           url: sensor
         - title: SignalIndicators
-          url: signalIndicators
+          url: signalindicators
         - title: Signature
           url: signature
         - title: SIP
@@ -81,25 +81,25 @@ automenu:
     - title: RhoElements 2.x APIs
       items:
         - title: AddressBar
-          url: re2x/addressbar
+          url: re2x/AddressBar
         - title: Airbeam
-          url: re2x/airbeam
+          url: re2x/Airbeam
         - title: Alarm
-          url: re2x/alarm
+          url: re2x/Alarm
         - title: APD
-          url: re2x/apd
+          url: re2x/APD
         - title: Application
-          url: re2x/application
+          url: re2x/Application
         - title: AudioCapture
           url: re2x/AudioCapture
         - title: BackButton
-          url: re2x/backbutton
+          url: re2x/BackButton
         - title: Backlight
           url: re2x/backlight
         - title: Battery
           url: re2x/battery
         - title: BottomCommandArea
-          url: re2x/bottomcommandarea
+          url: re2x/BottomCommandArea
         - title: CardReader
           url: re2x/cardreader
         - title: Comm
@@ -113,15 +113,15 @@ automenu:
         - title: FileTransfer
           url: re2x/FileTransfer
         - title: ForwardButton
-          url: re2x/forwardbutton
+          url: re2x/ForwardButton
         - title: Generic 
           url: re2x/generic
         - title: Gesture
-          url: re2x/Gesture
+          url: re2x/gesture
         - title: GoButton
-          url: re2x/gobutton
+          url: re2x/GoButton
         - title: History 
-          url: re2x/History
+          url: re2x/history
         - title: HomeButton
           url: re2x/HomeButton
         - title: Hourglass
@@ -131,11 +131,11 @@ automenu:
         - title: KeyCapture
           url: re2x/keycapture
         - title: Keylight
-          url: re2x/Keylight
+          url: re2x/keylight
         - title: KeyState
           url: re2x/keystate
         - title: MediaPlayer
-          url: re2x/mediaPlayer
+          url: re2x/MediaPlayer
         - title: Memory
           url: re2x/memory
         - title: MinimizeButton
@@ -151,23 +151,23 @@ automenu:
         - title: Push
           url: re2x/push
         - title: Quit Button
-          url: re2x/quitbutton
+          url: re2x/QuitButton
         - title: RawSensor 
-          url: re2x/rawsensor
+          url: re2x/RawSensor
         - title: Reboot
           url: re2x/reboot
         - title: Registry
           url: re2x/registry
         - title: Reload Button
-          url: re2x/reloadbutton
+          url: re2x/ReloadButton
         - title: RFID 
           url: re2x/rfid
         - title: RSM 
-          url: re2x/RSM
+          url: re2x/rsm
         - title: Scanner 
           url: re2x/scanner
         - title: ScreenOrientation
-          url: re2x/screenorientation
+          url: re2x/ScreenOrientation
         - title: Signal 
           url: re2x/signal
         - title: SignatureCapture 
@@ -175,17 +175,17 @@ automenu:
         - title: SIP
           url: re2x/sip
         - title: SipButton
-          url: re2x/sipbutton
+          url: re2x/SipButton
         - title: StopButton
-          url: re2x/stopbutton
+          url: re2x/StopButton
         - title: Stylus
           url: re2x/stylus
         - title: SystemTime
-          url: re2x/systemTime
+          url: re2x/SystemTime
         - title: Timer
           url: re2x/timer
         - title: TopCommandArea
-          url: re2x/topcommandarea
+          url: re2x/TopCommandArea
         - title: VideoCapture
           url: re2x/VideoCapture
         - title: Volume
@@ -195,109 +195,109 @@ automenu:
         - title: Zoom
           url: re2x/zoom
         - title: ZoomTextButton
-          url: re2x/zoomTextButton
+          url: re2x/ZoomTextButton
     - title: PocketBrowser 3.x APIs
       items:
         - title: AddressBar
-          url: pb3x/addressbar/addressbar.html
+          url: pb3x/addressbar
         - title: Airbeam Smart 
           url: pb3x/toc_airbeam
         - title: Alarm
-          url: pb3x/alarm/alarm.html
+          url: pb3x/alarm
         - title: APD 
           url: pb3x/toc_apd
         - title: Application
-          url: pb3x/application/application.html
+          url: pb3x/application
         - title: BackButton
-          url: pb3x/backbutton/backbutton.html
+          url: pb3x/backbutton
         - title: Backlight
-          url: pb3x/backlight/backlight.html
+          url: pb3x/backlight
         - title: Battery
-          url: pb3x/battery/battery.html
+          url: pb3x/battery
         - title: BottomCommandArea 
-          url: pb3x/bottomcommandarea/bottomcommandarea.html
+          url: pb3x/bottomcommandarea
         - title: CardReader
-          url: pb3x/cardreader/cardreader.html
+          url: pb3x/cardreader
         - title: Comm
-          url: pb3x/comm/comm.html
+          url: pb3x/comm
         - title: Decoders 
-          url: pb3x/decoders/decoders.html
+          url: pb3x/decoders
         - title: Device
-          url: pb3x/device/device.html
+          url: pb3x/device
         - title: EMMLProfile 
-          url: pb3x/emmlprofile/emmlprofile.html
+          url: pb3x/emmlprofile
         - title: FileTransfer
-          url: pb3x/filetransfer/filetransfer.html
+          url: pb3x/filetransfer
         - title: ForwardButton
-          url: pb3x/forwardbutton/forwardbutton.html
+          url: pb3x/forwardbutton
         - title: Generic 
           url: pb3x/toc_generic
         - title: Gesture
-          url: pb3x/gesture/gesture.html
+          url: pb3x/gesture
         - title: GoButton
-          url: pb3x/gobutton/gobutton.html
+          url: pb3x/gobutton
         - title: HistoryBack 
-          url: pb3x/historyback/historyback2.html
+          url: pb3x/historyback
         - title: HomeButton
-          url: pb3x/homebutton/homebutton.html
+          url: pb3x/homebutton
         - title: Hourglass
-          url: pb3x/hourglass/hourglass.html
+          url: pb3x/hourglass
         - title: Imager
-          url: pb3x/imager/imager.html
+          url: pb3x/imager
         - title: KeyCapture
-          url: pb3x/keycapture/keycapture.html
+          url: pb3x/keycapture
         - title: Keylight
-          url: pb3x/keylight/keylight.html
+          url: pb3x/keylight
         - title: KeyState
-          url: pb3x/keystate/keystate.html
+          url: pb3x/keystate
         - title: MinimizeButton
-          url: pb3x/minimizebutton/minimizebutton.html
+          url: pb3x/minimizebutton
         - title: Notification
-          url: pb3x/notification/notification.html
+          url: pb3x/notification
         - title: ODAX 
           url: pb3x/toc_odax
         - title: PowerOn
-          url: pb3x/poweron/poweron.html
+          url: pb3x/poweron
         - title: Push
-          url: pb3x/push/push.html
+          url: pb3x/push
         - title: QuitButton
-          url: pb3x/quitbuttonquitbuttonn.html
+          url: pb3x/quitbutton
         - title: Reboot
-          url: pb3x/reboot/reboot.html
+          url: pb3x/reboot
         - title: Registry
-          url: pb3x/registry/registry.html
+          url: pb3x/registry
         - title: ReloadButton
-          url: pb3x/reloadbutton/reloadbutton.html
+          url: pb3x/reloadbutton
         - title: RSM 
-          url: pb3x/rsm/rsm.html
+          url: pb3x/rsm
         - title: Scanner 
-          url: pb3x/scanner/scanner.html
+          url: pb3x/scanner
         - title: ScreenOrientation
-          url: pb3x/screenorientation/screenorientation.html
+          url: pb3x/screenorientation
         - title: Signal 
-          url: pb3x/signal/signal.html
+          url: pb3x/signal
         - title: SignatureCapture 
-          url: pb3x/signaturecapture/signaturecapture.html
+          url: pb3x/signaturecapture
         - title: SIP
-          url: pb3x/sip/sip
+          url: pb3x/sip
         - title: SIPButton
-          url: pb3x/sipbutton/sipbutton.html
+          url: pb3x/sipbutton
         - title: SNTP 
-          url: pb3x/sntp/sntp
+          url: pb3x/sntp
         - title: StopButton
-          url: pb3x/stopbutton/stopbutton.html
+          url: pb3x/stopbutton
         - title: Stylus
-          url: pb3x/stylus/stylus
+          url: pb3x/stylus
         - title: TextSize 
-          url: pb3x/textsize/textsize.html
+          url: pb3x/textsize
         - title: Timer
-          url: pb3x/timer/timer
+          url: pb3x/timer
         - title: TopCommandArea
-          url: pb3x/topcommandarea/topcommandarea.html
+          url: pb3x/topcommandarea
         - title: Volume
-          url: pb3x/volume/volume
+          url: pb3x/volume
         - title: ZoomTextButton
-          url: pb3x/zoomtextbutton/zoomtextbutton.html
+          url: pb3x/zoomtextbutton
 product: Enterprise Browser
 productversion: '1.4'
 ---

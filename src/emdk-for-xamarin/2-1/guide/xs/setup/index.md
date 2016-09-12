@@ -55,8 +55,8 @@ The previous section described a typical way to install the EMDK-For Xamarin Add
 
 6. In the `Url` field enter the appropriate url for the version you wish to install.
 	
-	* Version 1.0.5: http://techdocs.zebra.com/emdk-for-xamarin/download/xs/1.0.5/main.mrep
-	* Version 2.0.4.7: http://techdocs.zebra.com/emdk-for-xamarin/download/xs/2.0.4.7/main.mrep
+	* Version 1.0.5 [for Xamarin Studio 5.x]: http://techdocs.zebra.com/emdk-for-xamarin/download/xs/1.0.5/main.mrep
+	* Version 2.0.4.7 [for Xamarin Studio 5.x]: http://techdocs.zebra.com/emdk-for-xamarin/download/xs/2.0.4.7/main.mrep
 	* Version 2.1.0.6 [for Xamarin Studio 5.x]: http://techdocs.zebra.com/emdk-for-xamarin/download/xs/2.1.0.6/main.mrep
 	* Version 2.1.1.1 [for Xamarin Studio 6.x]: http://techdocs.zebra.com/emdk-for-xamarin/download/xs/2.1.1.1/main.mrep
 

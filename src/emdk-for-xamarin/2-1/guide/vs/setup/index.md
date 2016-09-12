@@ -53,7 +53,11 @@ The previous section described a typical way to install the EMDK-For Xamarin Ext
 
 5. Enter `EMDK for Xamarin` for the `Name` field.
 
-6. Enter `http://techdocs.zebra.com/emdk-for-xamarin/download/vs/atom.xml` for the `URL` field.
+6. Enter the followin for the `URL` field depending on which version you wish to install.
+
+	* 1.0 : `http://techdocs.zebra.com/emdk-for-xamarin/download/vs/v1.0/atom.xml`
+	* 2.0 : `http://techdocs.zebra.com/emdk-for-xamarin/download/vs/v2.0/atom.xml`
+	* 2.1 : `http://techdocs.zebra.com/emdk-for-xamarin/download/vs/v2.1/atom.xml`
 
 	![img](../../../images/vs/options-extensions-added-techdocs.jpg)
 

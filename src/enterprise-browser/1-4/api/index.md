@@ -237,7 +237,7 @@ automenu:
         - title: GoButton
           url: pb3x/gobutton/gobutton.html
         - title: HistoryBack 
-          url: pb3x/historyback/historyback.html
+          url: pb3x/historyback/historyback2.html
         - title: HomeButton
           url: pb3x/homebutton/homebutton.html
         - title: Hourglass

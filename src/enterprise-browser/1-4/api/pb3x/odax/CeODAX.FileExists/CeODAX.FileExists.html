@@ -1,12 +1,3 @@
----
-title: AddPackage
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
-subhead: PocketBrowser 3.x APIs
----
-The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to add the named package to the package list (as many as four can be added).
-
 ﻿<html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -71,7 +62,7 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
 					border-bottom: #d5d5d3 1px solid;
 					}
 				</style>
-    <title>AddPackage</title><script type="text/javascript" language="Javascript">
+    <title>FileExists </title><script type="text/javascript" language="Javascript">
 					
 					function ToggleSpan(SpanId, ImgID)
 					{
@@ -100,12 +91,15 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
     <table width="100%">
       <tr>
         <td valign="middle" width="95%">
-          <h1>AddPackage Method of the AirBEAMSmart ActiveX Object</h1>
+          <h1>FileExists  Method of the ODAX ActiveX Object</h1>
         </td>
         <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
       </tr>
     </table>
     <hr size="1">
+    <p>
+					The 
+					<b>FileExists </b> Method of the ODAX ActiveX Object checks to see whether the specified file exists in the destination.</p>
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
@@ -113,12 +107,12 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
-            <th class="clsSyntaxHeadings">AddPackage (Method of the AirBEAMSmart ActiveX Object) Syntax
+            <th class="clsSyntaxHeadings">FileExists  (Method of the ODAX ActiveX Object) Syntax
 						</th>
           </tr>
           <tr>
             <td class="clsSyntaxCells">
-              <p>var bRetVal = object.AddPackage([strPackageName]);</p>
+              <p>var status = object.FileExists(fileName);</p>
             </td>
           </tr>
         </table>
@@ -147,9 +141,9 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
             </th>
           </tr>
           <tr>
-            <td valign="top" class="clsSyntaxCells"><b>strPackageName</b></td>
+            <td valign="top" class="clsSyntaxCells"><b>fileName</b></td>
             <td valign="top" class="clsSyntaxCells">String</td>
-            <td valign="top" class="clsSyntaxCells">The name of the AirBEAM Package to add.</td>
+            <td valign="top" class="clsSyntaxCells">File Name with full path</td>
             <td valign="top" class="clsSyntaxCells">N/A</td>
           </tr>
         </table>
@@ -167,8 +161,8 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
             <th class="clsSyntaxHeadings">Description</th>
           </tr>
           <tr>
-            <td class="clsSyntaxCells" valign="top"><b>Success</b></td>
-            <td class="clsSyntaxCells" style="text-align:left;">Returns true if the package was successfully added or false if it was not</td>
+            <td class="clsSyntaxCells" valign="top"><b>Status</b></td>
+            <td class="clsSyntaxCells" style="text-align:left;">Returns true if the specified file exists and false if it does not</td>
           </tr>
         </table>
       </blockquote><br></div>
@@ -177,25 +171,18 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
 		</p>
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
-        <p>The following javascript is example code of how to set the AddPackage method:</p>
+        <p>The following example displays how to use FileExists Method:</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <td>
               <pre class="clsSyntaxCells">
 &lt;script&gt;
-   var ab = new ActiveXObject("PocketBrowser.AirBEAMSmart");
+   var ax = new ActiveXObject("CeODAX.ODAX");
+   var fileName = '\\application\\test.xml';
 
-   function doSync()
+   if( true == ax.FileExists(fileName))
    {
-      
-      if(ab.AddPackage("myPackage"))
-      {
-         setTimeout('ab.Run();', 100);
-      }
-      else
-	    {
-         alert('Add Package Failed.  You can only have a maximum of 4 packages');
-      }
+   alert("File :"+ filename + " Exists!!");
    }
 &lt;/script&gt;
 </pre>
@@ -213,23 +200,16 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
           </tr>
         </table>
         <div id="Examples" style="display:none"><textarea id="ID0ETB">&lt;!-- 
-The following javascript is example code of how to set the AddPackage method:
+The following example displays how to use FileExists Method:
 --&gt;
 
 &lt;script&gt;
-   var ab = new ActiveXObject("PocketBrowser.AirBEAMSmart");
+   var ax = new ActiveXObject("CeODAX.ODAX");
+   var fileName = '\\application\\test.xml';
 
-   function doSync()
+   if( true == ax.FileExists(fileName))
    {
-      
-      if(ab.AddPackage("myPackage"))
-      {
-         setTimeout('ab.Run();', 100);
-      }
-      else
-	    {
-         alert('Add Package Failed.  You can only have a maximum of 4 packages');
-      }
+   alert("File :"+ filename + " Exists!!");
    }
 &lt;/script&gt;
 </textarea></div>
@@ -243,15 +223,15 @@ The following javascript is example code of how to set the AddPackage method:
         <table>
           <tr>
             <th>Supported Platforms</th>
-            <td>Windows CE, Windows Mobile</td>
+            <td>Windows Mobile, Windows CE</td>
           </tr>
           <tr>
             <th>Persistence</th>
-            <td>Persists in the AirBEAMSmart Object.</td>
+            <td>Runs immediately.</td>
           </tr>
           <tr>
             <th>Minimum Requirements</th>
-            <td>AirBEAM Client.</td>
+            <td>None.</td>
           </tr>
         </table>
       </blockquote><br></div>
@@ -262,9 +242,8 @@ The following javascript is example code of how to set the AddPackage method:
 			See Also
 		</p>
     <div id="AlsoSpan" style="display:block">
-      <BLOCKQUOTE><a href="UploadPackage.html&#xA;						">UploadPackage</a> <a href="TestMode.html&#xA;						">TestMode</a> <a href="AutoReboot.html&#xA;						">AutoReboot</a> <a href="RAMManagement.html&#xA;						">RAMManagement</a> <a href="AutoLoadMode.html&#xA;						">AutoLoadMode</a> <a href="DeletePackage.html&#xA;						">DeletePackage</a> <a href="Run.html&#xA;						">Run</a> </BLOCKQUOTE><br></div>
+      <BLOCKQUOTE><a href="CeODAX.Clear.html&#xA;						">CeODAX.Clear</a> <a href="CeODAX.Copy.html&#xA;						">CeODAX.Copy</a> <a href="CeODAX.Delete.html&#xA;						">CeODAX.Delete</a> <a href="CeODAX.Execute.html&#xA;						">CeODAX.Execute</a> <a href="CeODAX.Get.html&#xA;						">CeODAX.Get</a> <a href="CeODAX.GetLastErrorString.html&#xA;						">CeODAX.GetLastErrorString</a> <a href="CeODAX.Move.html&#xA;						">CeODAX.Move</a> <a href="CeODAX.MoveFirst.html&#xA;						">CeODAX.MoveFirst</a> <a href="CeODAX.MoveLast.html&#xA;						">CeODAX.MoveLast</a> <a href="CeODAX.MoveNext.html&#xA;						">CeODAX.MoveNext</a> <a href="CeODAX.MovePrev.html&#xA;						">CeODAX.MovePrev</a> <a href="CeODAX.Select.html&#xA;						">CeODAX.Select</a> </BLOCKQUOTE><br></div>
     <hr size="1">
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
-

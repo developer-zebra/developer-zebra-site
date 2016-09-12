@@ -1,12 +1,3 @@
----
-title: AddPackage
-productversion: '1.4'
-product: Enterprise Browser
-layout: guide.html
-subhead: PocketBrowser 3.x APIs
----
-The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to add the named package to the package list (as many as four can be added).
-
 ﻿<html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -71,7 +62,7 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
 					border-bottom: #d5d5d3 1px solid;
 					}
 				</style>
-    <title>AddPackage</title><script type="text/javascript" language="Javascript">
+    <title>GetRegistrySetting</title><script type="text/javascript" language="Javascript">
 					
 					function ToggleSpan(SpanId, ImgID)
 					{
@@ -100,12 +91,15 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
     <table width="100%">
       <tr>
         <td valign="middle" width="95%">
-          <h1>AddPackage Method of the AirBEAMSmart ActiveX Object</h1>
+          <h1>GetRegistrySetting Method of the Generic ActiveX Object</h1>
         </td>
         <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
       </tr>
     </table>
     <hr size="1">
+    <p>
+					The 
+					<b>GetRegistrySetting</b> Method of the Generic ActiveX Object Gets the specified registry setting.</p>
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
@@ -113,12 +107,12 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
       <blockquote>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
-            <th class="clsSyntaxHeadings">AddPackage (Method of the AirBEAMSmart ActiveX Object) Syntax
+            <th class="clsSyntaxHeadings">GetRegistrySetting (Method of the Generic ActiveX Object) Syntax
 						</th>
           </tr>
           <tr>
             <td class="clsSyntaxCells">
-              <p>var bRetVal = object.AddPackage([strPackageName]);</p>
+              <p>strData = objGeneric.GetRegistrySetting(lHive, strKey, strSetting);</p>
             </td>
           </tr>
         </table>
@@ -147,9 +141,21 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
             </th>
           </tr>
           <tr>
-            <td valign="top" class="clsSyntaxCells"><b>strPackageName</b></td>
+            <td valign="top" class="clsSyntaxCells"><b>lKey</b></td>
+            <td valign="top" class="clsSyntaxCells">Number</td>
+            <td valign="top" class="clsSyntaxCells">The hive name (HKEY_CLASSES_ROOT = 0, HKEY_CURRENT_USER = 1, HKEY_LOCAL_MACHINE = 2, HKEY_USERS = 3)</td>
+            <td valign="top" class="clsSyntaxCells">N/A</td>
+          </tr>
+          <tr>
+            <td valign="top" class="clsSyntaxCells"><b>strSubKey</b></td>
             <td valign="top" class="clsSyntaxCells">String</td>
-            <td valign="top" class="clsSyntaxCells">The name of the AirBEAM Package to add.</td>
+            <td valign="top" class="clsSyntaxCells">Name of the sub key to be retrieved</td>
+            <td valign="top" class="clsSyntaxCells">N/A</td>
+          </tr>
+          <tr>
+            <td valign="top" class="clsSyntaxCells"><b>strSetting</b></td>
+            <td valign="top" class="clsSyntaxCells">String</td>
+            <td valign="top" class="clsSyntaxCells">Name of the setting within strKey</td>
             <td valign="top" class="clsSyntaxCells">N/A</td>
           </tr>
         </table>
@@ -167,8 +173,8 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
             <th class="clsSyntaxHeadings">Description</th>
           </tr>
           <tr>
-            <td class="clsSyntaxCells" valign="top"><b>Success</b></td>
-            <td class="clsSyntaxCells" style="text-align:left;">Returns true if the package was successfully added or false if it was not</td>
+            <td class="clsSyntaxCells" valign="top"><b>strData</b></td>
+            <td class="clsSyntaxCells" style="text-align:left;">The data held in the specified registry setting</td>
           </tr>
         </table>
       </blockquote><br></div>
@@ -177,26 +183,18 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
 		</p>
     <div id="ExamplesSpan" style="display:block">
       <blockquote>
-        <p>The following javascript is example code of how to set the AddPackage method:</p>
+        <p>The following javascript example displays in an alert box the contents of the registry key:</p>
         <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
           <tr>
             <td>
               <pre class="clsSyntaxCells">
 &lt;script&gt;
-   var ab = new ActiveXObject("PocketBrowser.AirBEAMSmart");
+   var objGeneric = new ActiveXObject("PocketBrowser.Generic");
+   var HKEY_LOCAL_MACHINE = 2;
+   var strData = "";
 
-   function doSync()
-   {
-      
-      if(ab.AddPackage("myPackage"))
-      {
-         setTimeout('ab.Run();', 100);
-      }
-      else
-	    {
-         alert('Add Package Failed.  You can only have a maximum of 4 packages');
-      }
-   }
+   strData = objGeneric.GetRegistrySetting(HKEY_LOCAL_MACHINE,  "Software\\Symbol\\MySettings",  "Name");
+   alert(strData);
 &lt;/script&gt;
 </pre>
             </td>
@@ -207,30 +205,22 @@ The AddPackage Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM S
           <col width="15%">
           <tr align="right">
             <td></td>
-            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0ETB');">
+            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0ENC');">
 									Copy example to clipboard
 								</nobr></td>
           </tr>
         </table>
-        <div id="Examples" style="display:none"><textarea id="ID0ETB">&lt;!-- 
-The following javascript is example code of how to set the AddPackage method:
+        <div id="Examples" style="display:none"><textarea id="ID0ENC">&lt;!-- 
+The following javascript example displays in an alert box the contents of the registry key:
 --&gt;
 
 &lt;script&gt;
-   var ab = new ActiveXObject("PocketBrowser.AirBEAMSmart");
+   var objGeneric = new ActiveXObject("PocketBrowser.Generic");
+   var HKEY_LOCAL_MACHINE = 2;
+   var strData = "";
 
-   function doSync()
-   {
-      
-      if(ab.AddPackage("myPackage"))
-      {
-         setTimeout('ab.Run();', 100);
-      }
-      else
-	    {
-         alert('Add Package Failed.  You can only have a maximum of 4 packages');
-      }
-   }
+   strData = objGeneric.GetRegistrySetting(HKEY_LOCAL_MACHINE,  "Software\\Symbol\\MySettings",  "Name");
+   alert(strData);
 &lt;/script&gt;
 </textarea></div>
       </blockquote>
@@ -247,11 +237,11 @@ The following javascript is example code of how to set the AddPackage method:
           </tr>
           <tr>
             <th>Persistence</th>
-            <td>Persists in the AirBEAMSmart Object.</td>
+            <td>Runs immediately.</td>
           </tr>
           <tr>
             <th>Minimum Requirements</th>
-            <td>AirBEAM Client.</td>
+            <td>None.</td>
           </tr>
         </table>
       </blockquote><br></div>
@@ -262,9 +252,8 @@ The following javascript is example code of how to set the AddPackage method:
 			See Also
 		</p>
     <div id="AlsoSpan" style="display:block">
-      <BLOCKQUOTE><a href="UploadPackage.html&#xA;						">UploadPackage</a> <a href="TestMode.html&#xA;						">TestMode</a> <a href="AutoReboot.html&#xA;						">AutoReboot</a> <a href="RAMManagement.html&#xA;						">RAMManagement</a> <a href="AutoLoadMode.html&#xA;						">AutoLoadMode</a> <a href="DeletePackage.html&#xA;						">DeletePackage</a> <a href="Run.html&#xA;						">Run</a> </BLOCKQUOTE><br></div>
+      <BLOCKQUOTE><a href="SetRegistrySetting.html&#xA;						">SetRegistrySetting</a> </BLOCKQUOTE><br></div>
     <hr size="1">
     <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>
-

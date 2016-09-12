@@ -6,14 +6,6 @@ layout: guide.html
 subhead: PocketBrowser 3.x APIs
 ---
 
-The Gesture Meta Tag is used to define and capture gestures drawn on a touch-sensitive screen. Multiple gestures can be defined for capture on a single page. Zebra recommends defining no more than five gestures per page to avoid performance issues. **Note**: Not supported on Windows CE if debug buttons are enabled in the `Config.xml` file of an Enterprise Browser app.
-
-There are three types of screen gestures:
-
-**Linear –** straight-line movements on the screen
-**Circle –** full or partially circular movements on the screen
-**Hold –** when the screen is touched and held
-
 <html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -104,18 +96,16 @@ There are three types of screen gestures:
 					
 				</script></head>
   <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff" text="#000000">
-    <table width="100%">
-      <tr>
-        <td valign="middle" width="95%">
-          <h1>Gesture META Tag</h1>
-        </td>
-        <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
-      </tr>
-    </table>
     <hr size="1">
     <p>
 					The 
-					<b>Gesture</b> META Tag is used to define touch screen.</p>
+					<b>Gesture</b> Meta Tag is used to define and capture gestures drawn on a touch-sensitive screen. Multiple gestures can be defined for capture on a single page. Zebra recommends defining no more than five gestures per page to avoid performance issues. <b>Note</b>: Not supported on Windows CE if debug buttons are enabled in the `Config.xml` file of an Enterprise Browser app.</p> 
+          <p> There are three types of screen gestures:</p>
+<ul> 
+<li><b>Linear –</b> straight-line movements on the screen</li>
+<li><b>Circle –</b> circular or semi-circular movements on the screen</li>
+<li><b>Hold –</b> when the screen is touched and held</li>
+</ul>
     <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>

@@ -334,7 +334,7 @@ The following example disables the scanner from decoding upc_ean-bookland barcod
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports decoding of upc_ean-bookland barcodes.</td>
           </tr>
         </table>

@@ -365,7 +365,7 @@ Above example can also be written as shown below:
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports auspostal.</td>
           </tr>
         </table>

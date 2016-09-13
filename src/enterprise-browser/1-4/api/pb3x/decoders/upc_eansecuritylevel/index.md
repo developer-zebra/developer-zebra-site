@@ -307,7 +307,7 @@ or
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports upc_ean-securitylevel.</td>
           </tr>
         </table>

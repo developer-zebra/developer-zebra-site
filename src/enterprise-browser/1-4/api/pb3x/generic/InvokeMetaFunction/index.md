@@ -320,7 +320,7 @@ The following example displays the battery indicator with specific styling:
             <td>Executes instantaneously.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

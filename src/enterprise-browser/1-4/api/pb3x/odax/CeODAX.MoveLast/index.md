@@ -209,7 +209,7 @@ The following javascript moves the row pointer to the last record of the results
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

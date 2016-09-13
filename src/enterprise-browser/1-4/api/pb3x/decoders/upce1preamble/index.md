@@ -304,7 +304,7 @@ The following example enables the scanner to read only upce1 labels with the pre
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports upce1.</td>
           </tr>
         </table>

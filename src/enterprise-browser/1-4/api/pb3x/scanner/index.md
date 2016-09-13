@@ -989,7 +989,7 @@ name is a user readable description of the scanner, e.g:</DIV>
             <td>This tag is page specific, though once you enable a scanner you must disable it before enabling another scanner on the same device.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner module.</td>
           </tr>
         </table>

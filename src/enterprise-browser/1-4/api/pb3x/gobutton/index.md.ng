@@ -328,7 +328,7 @@ The follwing example shows the Go button, sets its width to 30 pixels, its left 
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

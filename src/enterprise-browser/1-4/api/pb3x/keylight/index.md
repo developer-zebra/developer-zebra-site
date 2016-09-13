@@ -306,7 +306,7 @@ The following example turns the keyboard backlight on with an intensity of 3:
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>This tag requires appropriate hardware and drivers to run, i.e. a device with a keyboard backlight.</td>
           </tr>
         </table>

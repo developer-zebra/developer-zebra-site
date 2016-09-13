@@ -233,7 +233,7 @@ The following example sets the device time from a network time server:
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

@@ -161,7 +161,7 @@ Additional Information
 <td>Persists in the AirBEAMSmart Object.</td>
 </tr>
 <tr>
-<th>Minimum Requirements</th>
+<th>Min. Requirements</th>
 <td>AirBEAM Client.</td>
 </tr>
 </table>

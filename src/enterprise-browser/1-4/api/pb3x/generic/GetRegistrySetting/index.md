@@ -247,7 +247,7 @@ The following javascript example displays in an alert box the contents of the re
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

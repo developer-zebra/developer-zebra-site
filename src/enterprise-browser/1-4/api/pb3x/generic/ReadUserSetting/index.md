@@ -240,7 +240,7 @@ The following javascript example reads a custom setting.
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

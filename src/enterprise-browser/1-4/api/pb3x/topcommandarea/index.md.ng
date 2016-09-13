@@ -294,7 +294,7 @@ The following example shows the Top Command Area, sets the height to 100 and dis
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

@@ -317,7 +317,7 @@ The following example enables the scanner to read only Code39 labels with the Co
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports Code39 and Code32.</td>
           </tr>
         </table>

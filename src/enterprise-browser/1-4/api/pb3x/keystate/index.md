@@ -309,7 +309,7 @@ The following example shows the KeyState and sets the right and top coordinates 
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

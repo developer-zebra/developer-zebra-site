@@ -235,7 +235,7 @@ The following javascript is example code of how to set the AutoLoadMode property
             <td>Persists in the AirBEAMSmart Object.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>AirBEAM Client.</td>
           </tr>
         </table>

@@ -237,7 +237,7 @@ The following example displays how to use FileExists Method:
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

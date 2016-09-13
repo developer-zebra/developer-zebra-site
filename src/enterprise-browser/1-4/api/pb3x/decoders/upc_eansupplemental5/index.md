@@ -317,7 +317,7 @@ The following example enables the scanner to decode upc_ean-supplemental5 barcod
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports decoding upc_ean-supplemental5 barcodes.</td>
           </tr>
         </table>

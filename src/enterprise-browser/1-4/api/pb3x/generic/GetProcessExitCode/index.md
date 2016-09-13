@@ -227,7 +227,7 @@ The following javascript example finds the return code for the process handle sp
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

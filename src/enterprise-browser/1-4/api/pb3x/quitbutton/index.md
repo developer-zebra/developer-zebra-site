@@ -322,7 +322,7 @@ The follwing example shows the Quit button and displays the quit_up.jpg / quit_d
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

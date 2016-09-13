@@ -240,7 +240,7 @@ The following javascript gets the column 'field1' from the resultset:
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

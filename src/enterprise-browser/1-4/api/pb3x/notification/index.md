@@ -627,7 +627,7 @@ The following function takes a notification index and a notification type.  Depe
             <td>This tag is persistent except for the EnumNotificationsEvent which is page specific.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None</td>
           </tr>
         </table>

@@ -273,7 +273,7 @@ The following example enables all available decoders then turns on the scanner:
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module.</td>
           </tr>
         </table>

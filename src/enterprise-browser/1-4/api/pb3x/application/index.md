@@ -268,7 +268,7 @@ When PocketBrowser is minimized it will not be visible as a task on the taskbar.
 <td>This tag is actioned immediately</td>
 </tr>
 <tr>
-<th>Minimum Requirements</th>
+<th>Min. Requirements</th>
 <td>None.</td>
 </tr>
 </table>

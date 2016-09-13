@@ -404,7 +404,7 @@ The following is an example of an EMML Profile page.
             <td>This tag is page specific, except where a named EMML profile set is imported.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td></td>
           </tr>
         </table>

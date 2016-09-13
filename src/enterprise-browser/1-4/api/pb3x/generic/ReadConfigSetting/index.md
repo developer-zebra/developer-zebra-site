@@ -346,7 +346,7 @@ The following javascript example shows an alert for each preload in the applicat
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

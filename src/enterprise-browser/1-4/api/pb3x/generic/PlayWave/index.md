@@ -266,7 +266,7 @@ The following plays a wave file called "alarm1.wav":
             <td>Executes immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Device must support WAV file playback.</td>
           </tr>
         </table>

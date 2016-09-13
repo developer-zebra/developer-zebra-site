@@ -240,7 +240,7 @@ The following example disconnects "My Connection" and then displays the connecti
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

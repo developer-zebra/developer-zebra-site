@@ -258,7 +258,7 @@ The following javascript example sets the HKEY_LOCAL_MACHINE\Software\Symbol\MyS
             <td>Runs immediately.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

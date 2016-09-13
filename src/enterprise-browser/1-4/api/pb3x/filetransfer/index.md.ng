@@ -602,7 +602,7 @@ The following example shows to transfer a file via FTP.  After each transfer the
             <td>This tag is page specific.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

@@ -247,7 +247,7 @@ The following javascript example launches CtlPanel and waits for it to quit for 
             <td>Runs instantly.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None.</td>
           </tr>
         </table>

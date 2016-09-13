@@ -310,7 +310,7 @@ The following turns on the screen backlight and sets the intensity to level 2
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None</td>
           </tr>
         </table>

@@ -388,7 +388,7 @@ Timezone: -5 (Eastern Time, 8:30am local time)
             <td>This tag is persistent until cleared.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>None</td>
           </tr>
         </table>

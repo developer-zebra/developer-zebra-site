@@ -317,7 +317,7 @@ The following example enables the scanner to read only upce0 labels with the Con
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports upce0 and upca.</td>
           </tr>
         </table>

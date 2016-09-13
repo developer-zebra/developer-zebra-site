@@ -343,7 +343,7 @@ The following example disables the scanner from decoding upc_ean-coupon barcodes
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports decoding upc_ean-coupon barcodes.</td>
           </tr>
         </table>

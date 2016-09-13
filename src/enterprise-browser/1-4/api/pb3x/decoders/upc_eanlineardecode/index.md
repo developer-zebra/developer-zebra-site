@@ -304,7 +304,7 @@ or
             <td>This tag is persistent.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>Scanner or Imager module and device supports the upc_ean-lineardecode property.</td>
           </tr>
         </table>

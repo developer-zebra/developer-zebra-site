@@ -318,7 +318,7 @@ The following example orientates the screen to righthanded in landscape mode:
             <td>ScreenOrientationEvent is page specific.  Setting the screen orientation will persist across pages and will also be remembered if PocketBrowser is quit.</td>
           </tr>
           <tr>
-            <th>Minimum Requirements</th>
+            <th>Min. Requirements</th>
             <td>A device with a screen</td>
           </tr>
         </table>

@@ -1,12 +1,12 @@
 ---
-title: RAM Management Property
+title: RamManagement Property
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x APIs
 ---
 
-The RAMManagement Property of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client whether or not to use the RAM Management mode.
+The RamManagement Property of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client whether or not to use the RAM Management mode.
 
 <div id="SyntaxSpan" style="display:block">
 <blockquote>

@@ -22,13 +22,13 @@ automenu:
           url: ../airbeam/autoreboot
         - title: DeletePackage
           url: ../airbeam/deletepackage
-        - title: RunManagement
-          url: ../airbeam/runmanagement
+        - title: RamManagement
+          url: ../airbeam/rammanagement
         - title: Run
           url: ../airbeam/run
         - title: TestMode
           url: ../airbeam/testmode
-        - title: uploadPackage
+        - title: UploadPackage
           url: ../airbeam/uploadpackage
 productversion: '1.4'
 product: Enterprise Browser

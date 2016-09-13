@@ -281,12 +281,5 @@ The following example enables all available decoders then turns on the scanner:
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('AlsoSpan', 'imgAlsoToggle')"><img align="absmiddle" id="imgAlsoToggle" alt="Also Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
-      See Also
-    </p>
-    <div id="AlsoSpan" style="display:block">
-      <BLOCKQUOTE><a href="../Scanner.html&#xA;           ">Scanner</a> </BLOCKQUOTE><br></div>
-    <hr size="1">
-    <div align="right">© 2016 Symbol Technologies, Inc. All rights reserved.</div>
   </body>
 </html>

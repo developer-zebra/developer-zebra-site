@@ -73,7 +73,7 @@ subhead: PocketBrowser 3.x APIs
 					
 					function ToggleSpan(SpanId, ImgID)
 					{
-						var path = '../Resources/'
+						var path = '../../Resources/'
 					//Toggle the span view on or off
 					var Rollup = document.all.item(SpanId);
 					var RollupImg = document.all.item(ImgID);
@@ -100,14 +100,14 @@ subhead: PocketBrowser 3.x APIs
         <td valign="middle" width="95%">
           <h1>PSGetLastMessage Method of the NarrowBand ActiveX Object</h1>
         </td>
-        <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../Resources/Logo.gif"></td>
+        <td width="5%"><img valign="middle" id="imgSymbolLogo" alt="Symbol Inc" src="../../Resources/Logo.gif"></td>
       </tr>
     </table>
     <hr size="1">
     <p>
 					The 
 					<b>PSGetLastMessage</b> Method of the NarrowBand ActiveX Object returns the last error message encountered by the Adaptive Printer Driver.</p>
-    <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;						">
+    <p class="clsRef"><nobr><span class="ToggleView" onclick="ToggleSpan('SyntaxSpan', 'imgSyntaxToggle')"><img align="absmiddle" id="imgSyntaxToggle" alt="Syntax Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif&#xA;						">
 					Syntax
 				</span></nobr></p>
     <div id="SyntaxSpan" style="display:block">
@@ -124,7 +124,7 @@ subhead: PocketBrowser 3.x APIs
           </tr>
         </table>
       </blockquote><br></div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('axReturnsSpan', 'aximgReturnsToggle')"><img align="absmiddle" id="aximgReturnsToggle" alt="axReturns Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('axReturnsSpan', 'aximgReturnsToggle')"><img align="absmiddle" id="aximgReturnsToggle" alt="axReturns Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
 			Return Values
 		</p>
     <div id="axReturnsSpan" style="display:block">
@@ -142,7 +142,7 @@ subhead: PocketBrowser 3.x APIs
           </tr>
         </table>
       </blockquote><br></div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ExamplesSpan', 'imgExamplesToggle')"><img align="absmiddle" id="imgExamplesToggle" alt="Examples Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ExamplesSpan', 'imgExamplesToggle')"><img align="absmiddle" id="imgExamplesToggle" alt="Examples Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
 			Examples
 		</p>
     <div id="ExamplesSpan" style="display:block">
@@ -172,7 +172,7 @@ subhead: PocketBrowser 3.x APIs
           <col width="15%">
           <tr align="right">
             <td></td>
-            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EDB');">
+            <td valign="bottom" style="border-bottom-style: none;font-weight:normal;font-size:xx-small;"><nobr><img id="imgCopyDefaults" alt="Copy example to clipboard" onmouseover="this.style.cursor='hand'" src="../../Resources/CopyDefaults.gif" onclick="CopyTemplate('ID0EDB');">
 									Copy example to clipboard
 								</nobr></td>
           </tr>
@@ -195,7 +195,7 @@ The following javascript code demonstrates the useage of this method:
 </textarea></div>
       </blockquote>
     </div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('InfoSpan', 'imgInfoToggle')"><img align="absmiddle" id="imgInfoToggle" alt="Info Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('InfoSpan', 'imgInfoToggle')"><img align="absmiddle" id="imgInfoToggle" alt="Info Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
 			Additional Information
 		</p>
     <div id="InfoSpan" style="display:block">
@@ -218,7 +218,7 @@ The following javascript code demonstrates the useage of this method:
     <div id="DefaultParamsSpan" style="display:none">
       <pre><textarea id="DefaultParameters"></textarea></pre>
     </div>
-    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('AlsoSpan', 'imgAlsoToggle')"><img align="absmiddle" id="imgAlsoToggle" alt="Also Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
+    <p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('AlsoSpan', 'imgAlsoToggle')"><img align="absmiddle" id="imgAlsoToggle" alt="Also Toggle" onmouseover="this.style.cursor='hand'" src="../../Resources/ToggleCollapse.gif"></span>
 			See Also
 		</p>
     <div id="AlsoSpan" style="display:block">

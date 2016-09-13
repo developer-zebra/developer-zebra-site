@@ -15,11 +15,11 @@ automenu:
     - title: PocketBrowser 3.x APD APIs
       items:
         - title: PSExternal
-          url: ../apd/psexternal
+          url: ../apd/psexternal/PSExternal.html
         - title: PSExternalEX
-          url: ../apd/psexternalex
+          url: ../apd/psexternalex/PSExternalEx.html
         - title: PSGetLastMessage
-          url: ../apd/psgetlastmessage
+          url: ../apd/psgetlastmessage/PSGetLastMessage.html
 productversion: '1.4'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x APIs

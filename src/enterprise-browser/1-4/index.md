@@ -15,6 +15,8 @@ menu:
       url: /enterprise-browser/1-4/tutorial/
     - title: Guides
       url: /enterprise-browser/1-4/guide
+    - title: Config.xml
+      url: /enterprise-browser/1-4/guide/configreference
     - title: APIs
       url: /enterprise-browser/1-4/api
     - icon: fa fa-search

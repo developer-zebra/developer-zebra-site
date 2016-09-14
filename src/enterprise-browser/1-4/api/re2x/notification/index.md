@@ -78,15 +78,12 @@ Items listed in this section indicate parameters, or attributes which can be set
 
 ##Events
 
-
 Values are returned to the caller in RhoElements via Events.  Most modules contain events and those returned from this module are given below along with the event parameters.  Events can cause a navigation to a new URL or a Javascript function on the page to be invoked.  Each event will in most cases have a number of parameters associated with it which will either be strings or javascript arrays.  Event parameters can be accessed either directly or via JSON objects.
 
 <br />
 ###enumNotificationsEvent
 The EnumNotificationsEvent is triggered in response to calling the 'Enumerate' method and is used to obtain the notifications available on the device and their associated identifiers. There is a single return value for this event which is a two dimensional array, with one dimension listing the available notifications and the other dimension listing the attributes for each notification object
 <table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>notificationsArray (notificationIndex, notificationType, notificationName)</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">2 Dimensional array of notifications, see remarks</td></tr></table>
-
-
 
 ##Multi Instance
 When multiple RhoElememts applications are running the following considerations should be made: Only the application with Focus will have the ability to enable/disable notifications. When an application is sent to background if there are any notifications in progress (vibrator, beeper etc.) they would be stopped.
@@ -135,161 +132,77 @@ There is a single return value for this event which is a two dimensional array w
 
 The following example stores the available notifications in a javascript array and displays them to the user in an HTML table. Note that a 2 dimensional array is returned in the EnumNotificationsEvent.
 
-	<HTML>
-	<HEAD>
-	<META HTTP-Equiv="Notification" content="EnumNotificationsEvent:url('javascript:setupNtfyArr(%s)');">
-	</HEAD>
-	<script>
-	   var ntfyArr = new Array();
-	   var notType = new Array('LED', 'BEEPER', 'PAGER');
-	   var NTFY_INDEX = 0;
-	   var NTFY_TYPE = 1;
-	   var NTFY_NAME = 2;
-	
-	   function setupNtfyArr(notArr)
-	   {
-	     ntfyArr = notArr;
-		 var html = "";
-	
-		 for(i=0; i<ntfyArr.length; i++)
-	     {
-	       html += '' + ntfyArr[i][NTFY_INDEX] + ', '
-		        + notType[ntfyArr[i][NTFY_TYPE]] + ''
-		        + ntfyArr[i][NTFY_NAME] + '';
-	     }
-	
-	     html += "";
-	     htmDiv.innerHTML = html;
-	   }
-	
-	   function onListNotifications()
-	   {
-		  notification.enumerate();
-	   }
-	</script>
-	   <BODY>
-	      <div id="htmDiv">
-		  <INPUT TYPE="button" VALUE="List Notification Objects" ONCLICK="onListNotifications();">
-	      </div>
-	   </BODY>
-	</HTML>
+		:::html
+
+		<HTML>
+		<HEAD>
+		<META HTTP-Equiv="Notification" content="EnumNotificationsEvent:url('javascript:setupNtfyArr(%s)');">
+		</HEAD>
+		<script>
+		   var ntfyArr = new Array();
+		   var notType = new Array('LED', 'BEEPER', 'PAGER');
+		   var NTFY_INDEX = 0;
+		   var NTFY_TYPE = 1;
+		   var NTFY_NAME = 2;
+		
+		   function setupNtfyArr(notArr)
+		   {
+		     ntfyArr = notArr;
+			 var html = "";
+		
+			 for(i=0; i<ntfyArr.length; i++)
+		     {
+		       html += '' + ntfyArr[i][NTFY_INDEX] + ', '
+			        + notType[ntfyArr[i][NTFY_TYPE]] + ''
+			        + ntfyArr[i][NTFY_NAME] + '';
+		     }
+		
+		     html += "";
+		     htmDiv.innerHTML = html;
+		   }
+		
+		   function onListNotifications()
+		   {
+			  notification.enumerate();
+		   }
+		</script>
+		   <BODY>
+		      <div id="htmDiv">
+			  <INPUT TYPE="button" VALUE="List Notification Objects" ONCLICK="onListNotifications();">
+		      </div>
+		   </BODY>
+		</HTML>
 	
 The following function takes a notification index and a notification type. Depending on the type of notification it invokes it appropriately. The index and type of each notification can be obtained via the EnumNotificationsEvent as demonstrated in the previous example
 
-	<script>
-	   function annoyUser(index, type)
-	   {
-	     if (type == 0)
-	     {
-	       //  If the Type of Notification is an LED flash it 10 times, on for 1 second off for 1 second.
-	       notification.setLEDOnDuration = 1000;
-	       notification.setLEDOffDuration = 1000;
-	       notification.setLEDNumberOfCycles = 10;
-	       //  Flash the LED
-	       notification.stateCycle = index;
-	     }
-	     else if (type == 1)
-	     {
-	       //  If the Type of the Notification is a Beeper emit a continuous high pitch tone at maximum volume
-	       notification.setBeeperFrequency = 8000;
-	       notification.setBeeperVolume = 3;
-	       //  Start the Beeper
-	       notification.stateOn = index;
-	     }
-	     else if (type == 2)
-	     {
-	       //  If the type of the notification is a Pager then vibrate the device for 15 seconds
-	       notification.setVibrateDuration = 15000;
-	       notification.stateCycle = index);
-	     }
-	   }
-	</script>
+			:::html
+			<script>
+			   function annoyUser(index, type)
+			   {
+			     if (type == 0)
+			     {
+			       //  If the Type of Notification is an LED flash it 10 times, on for 1 second off for 1 second.
+			       notification.setLEDOnDuration = 1000;
+			       notification.setLEDOffDuration = 1000;
+			       notification.setLEDNumberOfCycles = 10;
+			       //  Flash the LED
+			       notification.stateCycle = index;
+			     }
+			     else if (type == 1)
+			     {
+			       //  If the Type of the Notification is a Beeper emit a continuous high pitch tone at maximum volume
+			       notification.setBeeperFrequency = 8000;
+			       notification.setBeeperVolume = 3;
+			       //  Start the Beeper
+			       notification.stateOn = index;
+			     }
+			     else if (type == 2)
+			     {
+			       //  If the type of the notification is a Pager then vibrate the device for 15 seconds
+			       notification.setVibrateDuration = 15000;
+			       notification.stateCycle = index);
+			     }
+			   }
+			</script>
 	
-
-
-##Ruby Examples
-
-The following example enumerates all the available notifications on a device and displays them in a div on an HTML page: 
-
-	def enumNotificationsEventListener
-		devices = @params['notificationsArray']
-		counter = 0
-		data = "Notification devices present: <BR>"
-		if devices
-			devices.each{				
-				data += "Notification Index: " + devices[counter]['notificationIndex'].to_s() + "<BR>"
-				data += "Notification Type: " + devices[counter]['notificationType'].to_s() + "<BR>"
-				data += "Notification Name: " + devices[counter]['notificationName'] + "<BR> <HR>"
-				counter += 1
-			}
-		end
-		WebView.execute_js("setFieldValue('"+data+"')")
-	end
-	
-To call the this function from HTML, use the following code: 
-
-	<li onclick="enumNotificationObjects(); ">List available notification objects</li>
-	
-Where 'enumNotificationObjects()' is a JavaScript function which looks like: 
-
-	function enumNotificationObjects() {
-		$.get('/app/NotificationModule/enumerate', { });
-		return false;
-	}
-
-The 'enumerate' is a Ruby function that attaches the 'enumNotificationEventListener' to the enumeration event and makes a call to enumerate all available notifications
-
-	def enumerate
-		Notification.enumNotificationsEvent = url_for(:action => :enumNotificationsEventListener)
-		Notification.enumerate
-	end
-	
-The following example tests notifications based on the parameters recieved. The 'index' and the 'type' are picked from the result of the enumeration function described above. 
-
-	def annoyUser
-		index = @params['index']
-		type = @params['type']
-
-		if type == 0
-			#If the Type of Notification is an LED flash it 10 times, on for 1 second off for 1 second.
-			Notification.setLEDOnDuration = 1000;
-			Notification.setLEDOffDuration = 1000;
-			Notification.setLEDNumberOfCycles = 10;
-			#Flash the LED
-			Notification.stateCycle = index;
-		elsif type == 1
-			#If the Type of the Notification is a Beeper emit a continuous high pitch tone at maximum volume for 5 seconds
-			Notification.setBeeperFrequency = 5000;
-			Notification.setBeeperVolume = 3;
-			#Start the Beeper
-			Notification.stateOn = index;
-		else
-			#If the type of the notification is a Pager then vibrate the device for 5 seconds
-			Notification.setVibrateDuration = 5000;
-			Notification.stateCycle = index;
-		end
-	end
-	
-To call this function from HTML, use one of the following:
-
-	<li onclick="testLED(); ">Test LED (If available)</li>
-    <li onclick="testBeeper(); ">Test Beeper (If available)</li>
-    <li onclick="testPager(); ">Test Pager (If available)</li>
-	
-Where the 'testLED()', 'testBeeper()' and 'testPager()' are JavaScript functions described below: 
-
-	function testLED() {
-		$.get('/app/NotificationModule/annoyUser', {index: 2, type: 0});
-		return false;
-	}
-
-	function testBeeper() {
-		$.get('/app/NotificationModule/annoyUser', {index: 5, type: 1});
-		return false;
-	}
-
-	function testPager() {
-		$.get('/app/NotificationModule/annoyUser', {index: 6, type: 2});
-		return false;
-	}
 

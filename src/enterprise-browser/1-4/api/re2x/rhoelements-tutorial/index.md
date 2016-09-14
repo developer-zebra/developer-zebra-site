@@ -3,7 +3,7 @@ title: RhoElements Tutorial
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 This tutorial will outline the steps required to create a sample inventory management application using RhoElements and RhoMobile Suite. The application will allow a user to scan barcodes and keep a running tally of how many times each item was scanned. To keep things simple, we will not be doing any synchronization in this part of the tutorial and will cover that topic later on. 
 

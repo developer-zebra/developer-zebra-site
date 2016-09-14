@@ -3,7 +3,7 @@ title: "Zebra Adaptive Printer Driver APD Programmer's Manual"
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 This document describes the printing features available to applications running on Zebra hand-held.

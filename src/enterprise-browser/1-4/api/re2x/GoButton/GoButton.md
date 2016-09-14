@@ -3,7 +3,7 @@ title: GoButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 ## Overview
 The GoButton Module is used to set the parameters of the "Go" button, which navigates to the page shown in the Address Bar. In keeping with browser conventions, the the Go button is replaced during navigation by the stop button (if enabled).

@@ -3,7 +3,7 @@ title: Zebra Adaptive Printer Driver - Print Type Codes
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 The Zebra Adaptive Printer Driver (APD) provides a simple, yet powerful, interface between your applications and virtually any portable printer.

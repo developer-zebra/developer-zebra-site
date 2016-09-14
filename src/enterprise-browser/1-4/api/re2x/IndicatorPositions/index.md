@@ -3,7 +3,7 @@ title: Meaning of Indicator Layout
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 The Battery and Signal Meta tags use the 'Layout' parameters to specify the layout of the indicator icon.  The examples below illustrate all possible values of layout parameter.

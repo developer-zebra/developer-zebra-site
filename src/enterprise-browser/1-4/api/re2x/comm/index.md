@@ -3,7 +3,7 @@ title: Comm Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 ##Overview
 The Comm Module controls functionality of the serial port on the device, including all serial communications initiated by Enterprise Browser apps and any collected or transmitted data.

@@ -3,7 +3,7 @@ title: Battery Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 ##Overview
 The Battery API is used to notify the user of the remaining power in the battery. Windows Mobile/CE devices also support the display of a small indicator to indicate the power remaining.

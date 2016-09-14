@@ -3,7 +3,7 @@ title: RhoElements-Enabling Your Web App
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 If you have an existing application that is running from a web server, it is very easy to extend this application and provide RhoElements functionality. Beyond the standard HTML5 features that may be utilized, RhoElements provides a very easy way for you to add device capabilities to your web application through JavaScript for HTML Meta tags. Let's say for example you have a form on one of your pages and you want to enable bar code scanning for ease of data entry. This can be accomplished by adding a few lines of JavaScript to your pages. You do not need to build and compile a RhoElements application using RhoStudio. You simply need to enable your web app by installing a RhoElements runtime application on the device and configuring it to point to your web server.

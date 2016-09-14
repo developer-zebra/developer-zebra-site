@@ -3,7 +3,7 @@ title: RhoElements Configuration Settings
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 Configuration of RhoElements is managed through an XML file.  Not every setting has a default so if the configuration file cannot be found, RhoElements will <b>not</b> start; an example configuration file is provided as part of the installation and will contain sensible defaults, this page explains the meanings of each of the settings and their possible values.

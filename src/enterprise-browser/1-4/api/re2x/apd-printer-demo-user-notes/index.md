@@ -3,7 +3,7 @@ title: Zebra Adaptive Printer Driver - Printing Demo User Notes
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 The Zebra Adaptive Printer Driver (APD) provides a simple way to interface application software to virtually any portable printer. This simple demonstration application is intended to show the main functions of the Adaptive Printer Driver, and may also be used for test purposes. A variety of types of printer are supported and the user can add new data files to provide support for further printer types as required.

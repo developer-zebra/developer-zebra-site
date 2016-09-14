@@ -3,7 +3,7 @@ title: RhoElements Application Models
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 <!-- PLACEHOLDER - Blurb and diagram explaining choices have for native and hybrid approached] -->

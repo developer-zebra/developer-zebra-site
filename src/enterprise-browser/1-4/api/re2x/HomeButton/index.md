@@ -3,7 +3,7 @@ title: HomeButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 ## Overview
 The HomeButton Module is used to set the parameters of the Home Button, which navigates to the app's start page as specified in the [StartPage parameter](../../guide/configreference/#startpage) of the `Config.xml` file.

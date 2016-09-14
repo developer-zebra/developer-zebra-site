@@ -3,7 +3,7 @@ title: RhoElements Web Server
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 RhoElements can be configured to run a proprietry local web server on the device. The benefits of this are that JavaScript running on the device is able to communicate with a remote server via e.g. Ajax without cross-domain security issues. 
 

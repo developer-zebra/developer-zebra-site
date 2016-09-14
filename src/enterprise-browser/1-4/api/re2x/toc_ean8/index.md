@@ -22,7 +22,7 @@ automenu:
           url: ../ean8ConvertToEAN13
 productversion: '1.4'
 product: Enterprise Browser
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 
 

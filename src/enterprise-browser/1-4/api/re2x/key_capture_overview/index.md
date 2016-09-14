@@ -3,7 +3,7 @@ title: Key Handling in RhoElements
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 <b>Using a combination of Key Capture and Accelerator Keys it is possible for the web page designer to fully customise how RhoElements processes keyboard button presses, this document outlines how this can be achieved.</b>
 

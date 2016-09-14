@@ -3,7 +3,7 @@ title: Zebra Adaptive Printer Driver Overview
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 Zebra Adaptive Printer Driver (APD) is a small executable program that runs on Zebra Mobile Computers. It provides a simple, yet powerful, interface to software applications, to transfer data from the user's software application to virtually any portable printer, via cable, or Bluetooth, short-range RF, or WLAN wireless connections.
 

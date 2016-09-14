@@ -3,7 +3,7 @@ title: BackButton Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 ##Overview
 The BackButton Module is used to set the parameters of BACK, the button that moves application to the previously loaded page, if any. 

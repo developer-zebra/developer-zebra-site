@@ -3,7 +3,7 @@ title: KeyCapture Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: RhoElements 2.x APIs
+subhead: RhoElements 2.x API
 ---
 ## Overview
 The KeyCapture module is used to intercept or override hardware keys, and is typically used to assign certain application functions to physical keys or other hardware buttons.

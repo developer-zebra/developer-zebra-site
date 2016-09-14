@@ -17,12 +17,12 @@ The Alarm Meta Tag is an action tag used to set an alarm and register an action 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Alarm" content="[method / parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Alarm" content="[method / parameter]"&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Alarm" content="AlarmTriggered:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Alarm" content="AlarmTriggered:url('[jsFunction | url]')"&gt;</pre>
 </td>
 </tr>
 </table>

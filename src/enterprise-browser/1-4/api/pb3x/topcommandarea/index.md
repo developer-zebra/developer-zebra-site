@@ -8,7 +8,7 @@ subhead: PocketBrowser 3.x APIs
 
 The TopCommandArea Meta Tag is an action tag used to set the parameters of the Top Command Area, a region at the top of the screen designed to separate PocketBrowser controls such as the address bar or Go button from other parts of an application.
 
-    <div id="SyntaxSpan" style="display:block">
+<div id="SyntaxSpan" style="display:block">
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>

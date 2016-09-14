@@ -8,7 +8,7 @@ subhead: PocketBrowser 3.x APIs
 
 The upce1preamble Meta Tag is an action tag used to set the upce1-preamble property, which controls the preamble applied to the bar code.
 
-﻿    <div id="SyntaxSpan" style="display:block">
+﻿<div id="SyntaxSpan" style="display:block">
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>

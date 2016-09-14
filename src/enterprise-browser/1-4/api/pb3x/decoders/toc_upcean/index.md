@@ -19,11 +19,11 @@ automenu:
         - title: UPC EanBookland
           url: ../upc_eanbookland
         - title: UPC EanCoupon
-          url: ../upceancoupon
+          url: ../upc_eancoupon
         - title: UPC EanLinearDecode
           url: ../upc_eanlineardecode
         - title: UPC EanRandomWeightCheckDigit
-          url: ../upceanrandomweightcheckdigit
+          url: ../upc_eanrandomweightcheckdigit
         - title: UPC EanRetryCount
           url: ../upc_eanretrycount
         - title: UPC EanSecurityLevel

@@ -17,7 +17,7 @@ The ReadConfigSetting Method of the Generic ActiveX Object reads a setting from 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>strRet = objGeneric.ReadConfigSetting(strSetting,strAppName);</p>
+<pre class="clsSyntaxCells">strRet = objGeneric.ReadConfigSetting(strSetting,strAppName);</pre>
 </td>
 </tr>
 </table>

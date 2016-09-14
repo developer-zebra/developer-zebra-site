@@ -8,6 +8,23 @@ subhead: PocketBrowser 3.x API
 
 The AutoReboot Property of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to enable or disable Auto Reboot mode.
 ﻿
+<div id="SyntaxSpan" style="display:block">
+<blockquote>
+<table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
+<tr>
+<th class="clsSyntaxHeadings">AutoReboot (Property of the AirBEAMSmart ActiveX Object) Syntax
+</th>
+</tr>
+<tr>
+<td class="clsSyntaxCells">
+<pre class="clsSyntaxCells">object.AutoReboot = [parameter]</pre>
+</td>
+</tr>
+</table>
+</blockquote><br></div>
+<p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('ParametersWSpan', 'imgParametersWToggle')"><img align="absmiddle" id="imgParametersWToggle" alt="ParametersW Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif&#xA;					"></span>
+Parameters
+</p>
 <div id="ParametersWSpan" style="display:block">
 <blockquote>
 Items listed in this section indicate parameters, or attributes which can be set.

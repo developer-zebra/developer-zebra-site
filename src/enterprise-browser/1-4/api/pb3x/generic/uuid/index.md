@@ -17,7 +17,7 @@ The UUID Method of the Generic ActiveX Object retrieves the Unique Unit IDentifi
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var txt = objGeneric.UUID;</p>
+<pre class="clsSyntaxCells">var txt = objGeneric.UUID;</pre>
 </td>
 </tr>
 </table>

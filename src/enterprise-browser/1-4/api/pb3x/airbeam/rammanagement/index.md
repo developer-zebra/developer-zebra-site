@@ -17,7 +17,7 @@ The RamManagement Property of the AirBEAMSmart ActiveX Object instructs the AirB
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>object.RAMManagement = [parameter];</p>
+<pre class="clsSyntaxCells">object.RAMManagement = [parameter];</pre>
 </td>
 </tr>
 </table>

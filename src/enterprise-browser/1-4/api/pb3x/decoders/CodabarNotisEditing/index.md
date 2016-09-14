@@ -17,7 +17,7 @@ The CodabarNotisEditing Meta Tag is an action tag used to enable Codabar Notis f
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="CodabarNotisEditing:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="CodabarNotisEditing:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

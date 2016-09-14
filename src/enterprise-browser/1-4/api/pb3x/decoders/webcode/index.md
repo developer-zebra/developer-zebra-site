@@ -17,7 +17,7 @@ The webcode Meta Tag is an action tag used to enable or disable the Webcode deco
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Webcode:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Webcode:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

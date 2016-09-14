@@ -17,7 +17,7 @@ The upce1preamble Meta Tag is an action tag used to set the upce1-preamble prope
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upce1preamble:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upce1preamble:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

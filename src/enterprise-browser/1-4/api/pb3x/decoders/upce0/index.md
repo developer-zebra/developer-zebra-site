@@ -17,7 +17,7 @@ The upce0 Meta Tag is an action tag used to enable or disable the upce0 decoder.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upce0:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upce0:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

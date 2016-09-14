@@ -17,7 +17,7 @@ The GetRegistrySetting Method of the Generic ActiveX Object Gets the specified r
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>strData = objGeneric.GetRegistrySetting(lHive, strKey, strSetting);</p>
+<pre class="clsSyntaxCells">strData = objGeneric.GetRegistrySetting(lHive, strKey, strSetting);</pre>
 </td>
 </tr>
 </table>

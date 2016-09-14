@@ -17,7 +17,7 @@ The Composit_c Meta Tag is an action tag used to enable or disable the Composit_
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Composit_c:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Composit_c:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The upc_eansecuritylevel Meta Tag is an action tag used to set the upc_eansecuri
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eansecuritylevel:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eansecuritylevel:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

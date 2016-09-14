@@ -17,7 +17,7 @@ The DeletePackage Property of the AirBEAMSmart ActiveX Object instructs the AirB
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>object.DeletePackage = [parameter];</p>
+<pre class="clsSyntaxCells">object.DeletePackage = [parameter];</pre>
 </td>
 </tr>
 </table>

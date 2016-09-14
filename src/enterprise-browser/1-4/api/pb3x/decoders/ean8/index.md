@@ -17,7 +17,7 @@ The ean8 Meta Tag is an action tag used to enable or disable the ean8 decoder.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="ean8:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="ean8:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

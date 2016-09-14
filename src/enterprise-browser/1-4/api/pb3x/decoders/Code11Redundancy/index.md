@@ -17,7 +17,7 @@ The Code11Redundancy Meta Tag is an action tag used to set the Code11 Redundancy
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code11Redundancy:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code11Redundancy:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

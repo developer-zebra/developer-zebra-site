@@ -17,7 +17,7 @@ The d2of5MinLength Meta Tag is an action tag used to set the d2of5 MinLength pro
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="d2of5minlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="d2of5minlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

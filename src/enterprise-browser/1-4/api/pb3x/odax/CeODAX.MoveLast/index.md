@@ -17,7 +17,7 @@ The MoveLast Method of the ODAX ActiveX Object moves the row pointer to the last
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var result = object.movelast();</p>
+<pre class="clsSyntaxCells">var result = object.movelast();</pre>
 </td>
 </tr>
 </table>

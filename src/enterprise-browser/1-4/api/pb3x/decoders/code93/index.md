@@ -17,7 +17,7 @@ The Code93 Meta Tag is an action tag used to enable or disable the Code93 decode
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code93:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code93:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

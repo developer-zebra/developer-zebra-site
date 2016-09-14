@@ -17,12 +17,12 @@ The Comm Meta Tag is an action tag used to control the functionality of the seri
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Comm" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Comm" content="[parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Comm" content="CommEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Comm" content="CommEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

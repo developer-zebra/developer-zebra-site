@@ -17,7 +17,7 @@ The RasDisconnect Method of the Generic ActiveX Object disconnects a specified m
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var iRetVal = objGeneric.RasDisconnect(strEntry);</p>
+<pre class="clsSyntaxCells">var iRetVal = objGeneric.RasDisconnect(strEntry);</pre>
 </td>
 </tr>
 </table>

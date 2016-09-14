@@ -19,12 +19,12 @@ To control notification objects, it is first necessary to query the device to di
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Notification" content="[method / parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Notification" content="[method / parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Notification" content="EnumNotificationsEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Notification" content="EnumNotificationsEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

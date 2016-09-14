@@ -16,7 +16,7 @@ The All_Decoders Meta Tag is an action tag used to set the set the barcode scann
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="all_decoders:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="all_decoders:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

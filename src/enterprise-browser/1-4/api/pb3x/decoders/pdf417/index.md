@@ -17,7 +17,7 @@ The PDF417 Meta Tag is an action tag used to enable or disable the PDF417 decode
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="PDF417:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="PDF417:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

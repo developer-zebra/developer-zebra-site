@@ -17,7 +17,7 @@ The upc_eansupplementalmode Meta is an action tag used to set the upc_eansupplem
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eansupplementalmode:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eansupplementalmode:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

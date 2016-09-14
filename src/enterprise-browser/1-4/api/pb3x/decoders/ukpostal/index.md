@@ -17,7 +17,7 @@ The UKPostal Meta Tag is an action tag used to enable or disable the UKPostal de
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="UKPostal:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="UKPostal:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

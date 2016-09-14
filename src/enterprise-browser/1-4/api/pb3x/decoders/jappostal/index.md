@@ -17,7 +17,7 @@ The JapPostal Meta Tag is an action tag used to enable or disable the JapPostal 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="JapPostal:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="JapPostal:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

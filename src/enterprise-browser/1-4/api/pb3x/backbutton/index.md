@@ -19,7 +19,7 @@ The BackButton Meta Tag is an action tag used to set the parameters of the Back 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="BackButton" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="BackButton" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

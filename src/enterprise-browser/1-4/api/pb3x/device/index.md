@@ -17,7 +17,7 @@ The Device Meta Tag is an action tag that controls device functions such as susp
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Device" content="[method]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Device" content="[method&gt;</pre>
 </td>
 </tr>
 </table>

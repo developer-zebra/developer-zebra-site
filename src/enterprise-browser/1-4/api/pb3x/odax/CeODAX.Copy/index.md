@@ -17,7 +17,7 @@ The Copy Method of the ODAX ActiveX Object copies the specified source filename 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var status = object.Copy(srcFileName, destFileName);</p>
+<pre class="clsSyntaxCells">var status = object.Copy(srcFileName, destFileName);</pre>
 </td>
 </tr>
 </table>

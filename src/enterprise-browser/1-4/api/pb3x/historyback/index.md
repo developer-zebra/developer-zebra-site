@@ -17,7 +17,7 @@ The HistoryBack Navigation instructs PocketBrowser to navigate to the previous a
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;a href="history:back"&gt;</p>
+<pre class="clsSyntaxCells">&lt;a href="history:back"&gt;</pre>
 </td>
 </tr>
 </table>

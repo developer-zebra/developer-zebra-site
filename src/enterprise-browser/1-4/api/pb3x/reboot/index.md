@@ -17,7 +17,7 @@ The Reboot Meta Tag is an action tag used to immediately reboot the device.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Reboot" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Reboot" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The ReadUserSetting Method of the Generic ActiveX Object reads a custom setting 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>strRet = objGeneric.ReadUserSetting(strSetting);</p>
+<pre class="clsSyntaxCells">strRet = objGeneric.ReadUserSetting(strSetting);</pre>
 </td>
 </tr>
 </table>

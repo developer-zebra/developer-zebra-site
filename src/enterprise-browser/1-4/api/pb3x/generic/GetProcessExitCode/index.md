@@ -17,7 +17,7 @@ The GetProcessExitCode Method of the Generic ActiveX Object retrieves the exit c
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var iRetVal = objGeneric.GetProcessExitCode(hProcessHandle);</p>
+<pre class="clsSyntaxCells">var iRetVal = objGeneric.GetProcessExitCode(hProcessHandle);</pre>
 </td>
 </tr>
 </table>

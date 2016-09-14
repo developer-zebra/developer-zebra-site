@@ -17,7 +17,7 @@ The MoveNext Method of the ODAX ActiveX Object moves the row pointer to the next
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var result = object.movenext();</p>
+<pre class="clsSyntaxCells">var result = object.movenext();</pre>
 </td>
 </tr>
 </table>

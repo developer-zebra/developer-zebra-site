@@ -17,12 +17,12 @@ The FileTransfer Meta Tag is an action tag used to send or receive files between
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="FileTransfer" content="[Method | Parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="FileTransfer" content="[Method | Parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="FileTransfer" content="TransferEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="FileTransfer" content="TransferEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

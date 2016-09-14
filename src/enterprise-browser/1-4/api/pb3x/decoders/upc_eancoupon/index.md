@@ -17,7 +17,7 @@ The upc_eancoupon Meta Tag is an action tag used to enable or disable decoding o
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eancoupon:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eancoupon:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

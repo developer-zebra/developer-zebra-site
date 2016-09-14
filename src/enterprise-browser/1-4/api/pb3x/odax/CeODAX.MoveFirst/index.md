@@ -17,7 +17,7 @@ The MoveFirst Method of the ODAX ActiveX Object moves the row pointer to the fir
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var result = object.MoveFirst();</p>
+<pre class="clsSyntaxCells">var result = object.MoveFirst();</pre>
 </td>
 </tr>
 </table>

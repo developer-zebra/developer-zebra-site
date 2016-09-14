@@ -17,7 +17,7 @@ The rsslim Meta Tag is an action tag used to enable or disable the rsslim decode
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="rsslim:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="rsslim:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

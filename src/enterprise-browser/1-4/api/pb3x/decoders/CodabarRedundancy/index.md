@@ -17,7 +17,7 @@ The CodabarRedundancy Meta Tag is an action tag used to set the Codabar Redundan
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="CodabarRedundancy:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="CodabarRedundancy:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

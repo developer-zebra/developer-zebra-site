@@ -17,7 +17,7 @@ The Log Method of the Generic ActiveX Object invokes a user defined type log ent
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var bRetVal = objGeneric.Log(strLogEntry, Severity);</p>
+<pre class="clsSyntaxCells">var bRetVal = objGeneric.Log(strLogEntry, Severity);</pre>
 </td>
 </tr>
 </table>

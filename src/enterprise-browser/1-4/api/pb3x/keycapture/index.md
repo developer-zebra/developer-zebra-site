@@ -17,17 +17,17 @@ The KeyCapture Meta Tag is an action tag is used to intercept or override hardwa
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="KeyCapture" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="KeyCapture" content="[parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="KeyCapture" content="KeyEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="KeyCapture" content="KeyEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="KeyCapture" content="TriggerEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="KeyCapture" content="TriggerEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

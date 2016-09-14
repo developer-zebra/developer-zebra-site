@@ -17,7 +17,7 @@ The upce0ReportCheckDigit Meta Tag is an action tag used to set the upce0 Report
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upce0ReportCheckDigit:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upce0ReportCheckDigit:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

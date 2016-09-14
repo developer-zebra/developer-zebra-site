@@ -17,7 +17,7 @@ The Select Method of the ODAX ActiveX Object is used to query .XML- and .CSV-bas
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var count = object.Select(sql_statement, delimiter, firstrow);</p>
+<pre class="clsSyntaxCells">var count = object.Select(sql_statement, delimiter, firstrow);</pre>
 </td>
 </tr>
 </table>

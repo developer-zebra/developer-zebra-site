@@ -17,7 +17,7 @@ The Code39 Meta Tag is an action tag used to enable or disable the Code39 decode
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code39:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

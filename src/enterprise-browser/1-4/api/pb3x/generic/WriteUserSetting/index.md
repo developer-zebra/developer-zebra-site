@@ -17,7 +17,7 @@ The WriteUserSetting Method of the Generic ActiveX Object writes a custom settin
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>bRetVal = objGeneric.WriteUserSetting(strSetting,strValue);</p>
+<pre class="clsSyntaxCells">bRetVal = objGeneric.WriteUserSetting(strSetting,strValue);</pre>
 </td>
 </tr>
 </table>

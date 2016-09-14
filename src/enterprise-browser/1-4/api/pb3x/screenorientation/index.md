@@ -17,12 +17,12 @@ The ScreenOrientation Meta Tag is used to control the screen orientation and lay
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="ScreenOrientation" content="[orientation]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="ScreenOrientation" content="[orientation&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="ScreenOrientation" content="ScreenOrientationEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="ScreenOrientation" content="ScreenOrientationEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

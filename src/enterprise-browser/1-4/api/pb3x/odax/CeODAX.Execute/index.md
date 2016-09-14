@@ -12,12 +12,12 @@ The Execute Method of the ODAX ActiveX Object performs INSERT, UPDATE and DELETE
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>
-<th class="clsSyntaxHeadings">Execute  (Method of the ODAX ActiveX Object) Syntax
+<th class="clsSyntaxHeadings">Execute (Method of the ODAX ActiveX Object) Syntax
 </th>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var count = object.Execute(sql_statement, format, delimiter, firstrow)</p>
+<pre class="clsSyntaxCells">var count = object.Execute(sql_statement, format, delimiter, firstrow)</pre>
 </td>
 </tr>
 </table>

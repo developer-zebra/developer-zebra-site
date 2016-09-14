@@ -17,7 +17,7 @@ The GoButton Meta Tag is used to set the parameters of the "Go" button, which na
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="GoButton" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="GoButton" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

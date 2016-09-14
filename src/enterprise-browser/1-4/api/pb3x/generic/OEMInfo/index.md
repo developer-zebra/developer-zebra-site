@@ -17,7 +17,7 @@ The OEMInfo Method of the Generic ActiveX Object retrieves the OEM Information S
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var txt = objGeneric.OEMInfo;</p>
+<pre class="clsSyntaxCells">var txt = objGeneric.OEMInfo;</pre>
 </td>
 </tr>
 </table>

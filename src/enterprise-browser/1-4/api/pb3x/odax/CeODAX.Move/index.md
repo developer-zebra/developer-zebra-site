@@ -17,7 +17,7 @@ The Move Method of the ODAX ActiveX Object moves the specified source filename t
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var status = object.Move(srcFileName, destFileName);</p>
+<pre class="clsSyntaxCells">var status = object.Move(srcFileName, destFileName);</pre>
 </td>
 </tr>
 </table>

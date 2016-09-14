@@ -17,12 +17,12 @@ The Registry Meta Tag is used to write and delete registry settings, and to crea
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="registry" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="registry" content="[parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="registry" content="[parameter:attribute]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="registry" content="[parameter:attribute&gt;</pre>
 </td>
 </tr>
 </table>

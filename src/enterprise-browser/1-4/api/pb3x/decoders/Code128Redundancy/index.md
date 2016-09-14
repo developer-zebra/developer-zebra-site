@@ -17,7 +17,7 @@ The Code128Redundancy Meta Tag is an action tag used to set the Code128 Redundan
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code128Redundancy:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code128Redundancy:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The upc_eanbookland Meta Tag is an action tag used to enable or disable decoding
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eanbookland:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eanbookland:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

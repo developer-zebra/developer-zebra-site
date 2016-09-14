@@ -17,7 +17,7 @@ The msicheckdigits Meta Tag s an action tag used to set the msicheckdigits prope
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="msicheckdigits:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="msicheckdigits:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

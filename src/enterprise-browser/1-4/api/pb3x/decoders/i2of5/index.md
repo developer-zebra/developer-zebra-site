@@ -17,7 +17,7 @@ The i2of5 Meta Tag is an action tag used to enable or disable the i2of5 decoder.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="i2of5:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="i2of5:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

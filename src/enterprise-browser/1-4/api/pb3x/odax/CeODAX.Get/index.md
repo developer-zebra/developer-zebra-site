@@ -12,12 +12,12 @@ The Get Method of the ODAX ActiveX Object retrieves the column value specified f
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>
-<th class="clsSyntaxHeadings">Get  (Method of the ODAX ActiveX Object) Syntax
+<th class="clsSyntaxHeadings">Get (Method of the ODAX ActiveX Object) Syntax
 </th>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var result = object.Get(strFieldName);</p>
+<pre class="clsSyntaxCells">var result = object.Get(strFieldName);</pre>
 </td>
 </tr>
 </table>

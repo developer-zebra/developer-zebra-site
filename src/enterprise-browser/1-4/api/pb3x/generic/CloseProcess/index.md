@@ -17,7 +17,7 @@ The CloseProcess Method of the Generic ActiveX Object closes the handle opened b
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>objGeneric.CloseProcess(hProcessHandle);</p>
+<pre class="clsSyntaxCells">objGeneric.CloseProcess(hProcessHandle);</pre>
 </td>
 </tr>
 </table>

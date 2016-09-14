@@ -17,12 +17,12 @@ The Battery Meta Tag is used to set the attributes of the battery indicator and 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Battery" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Battery" content="[parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Battery" content="BatteryEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Battery" content="BatteryEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

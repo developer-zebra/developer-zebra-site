@@ -17,7 +17,7 @@ The Composite_ab Meta Tag is an action tag used to enable or disable the Composi
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Composit_ab:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Composit_ab:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

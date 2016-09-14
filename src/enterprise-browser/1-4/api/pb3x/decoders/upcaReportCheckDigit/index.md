@@ -17,7 +17,7 @@ The upcaReportCheckDigit Meta Tag is an action tag used to set the upca ReportCh
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upcaReportCheckDigit:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upcaReportCheckDigit:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

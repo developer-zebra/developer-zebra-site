@@ -17,7 +17,7 @@ The Code39ReportCheckDigit Meta Tag is an action tag used to set the Code39 Repo
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code39ReportCheckDigit:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39ReportCheckDigit:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

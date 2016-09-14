@@ -17,7 +17,7 @@ The EMMLProfile Meta Tag is an action tag used to manage EMML profile pages.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="EMMLProfile" content="parameter:value"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="EMMLProfile" content="parameter:value"&gt;</p>
 </td>
 </tr>
 </table>

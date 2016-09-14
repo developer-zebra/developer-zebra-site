@@ -17,7 +17,7 @@ The upc_eanretrycount Meta Tag is an action tag used to set the upc_ean retrycou
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eanretrycount:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eanretrycount:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

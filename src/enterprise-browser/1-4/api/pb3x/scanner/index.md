@@ -17,12 +17,12 @@ The Scanner Meta Tag is an action tag that controls the functionality of the dev
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Scanner" content="[parameter / method]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Scanner" content="[parameter / method&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

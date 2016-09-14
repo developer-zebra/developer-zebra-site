@@ -17,7 +17,7 @@ The PlayWave Method of the Generic ActiveX Object plays the specified WAV file.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var RetVal = Generic.PlayWave(strSound, iFlags);</p>
+<pre class="clsSyntaxCells">var RetVal = Generic.PlayWave(strSound, iFlags);</pre>
 </td>
 </tr>
 </table>

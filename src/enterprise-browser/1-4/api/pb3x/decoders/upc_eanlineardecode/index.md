@@ -17,7 +17,7 @@ The upc_eanlineardecode Meta Tag is an action tag used to enable the linear deco
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eanlineardecode:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eanlineardecode:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

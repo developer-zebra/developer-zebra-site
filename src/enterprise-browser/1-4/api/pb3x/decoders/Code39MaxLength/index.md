@@ -17,7 +17,7 @@ The Code39MaxLength Meta Tag is an action tag used to set the Code39 MaxLength p
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code39maxlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39maxlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

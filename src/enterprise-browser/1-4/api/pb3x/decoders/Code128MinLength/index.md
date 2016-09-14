@@ -17,7 +17,7 @@ The Code128MinLength Meta Tag is an action tag used to set the Code128 MinLength
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code128minlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code128minlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

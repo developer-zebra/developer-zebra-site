@@ -17,7 +17,7 @@ The HomeButton Meta Tag is an action tag used to set the parameters of the Home 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="HomeButton" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="HomeButton" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

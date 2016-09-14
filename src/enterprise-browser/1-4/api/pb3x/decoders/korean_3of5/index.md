@@ -17,7 +17,7 @@ The korean_3of5 Meta Tag is an action tag used to enable or disable the korean_3
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="korean_3of5:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="korean_3of5:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The CodabarCLSiEditing Meta Tagis an action tag used to enable Codabar CLSi form
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="CodabarCLSiEditing:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="CodabarCLSiEditing:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

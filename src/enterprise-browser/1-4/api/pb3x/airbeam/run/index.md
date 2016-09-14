@@ -17,7 +17,7 @@ The Run Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart cl
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var bRetVal = object.Run( );</p>
+<pre class="clsSyntaxCells">var bRetVal = object.Run( );</pre>
 </td>
 </tr>
 </table>

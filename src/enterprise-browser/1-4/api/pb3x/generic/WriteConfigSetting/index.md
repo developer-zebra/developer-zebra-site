@@ -17,7 +17,7 @@ The WriteConfigSetting Method of the Generic ActiveX Object writes a setting to 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>bRetVal = objGeneric.WriteConfigSetting(strSetting,strValue,strAppName);</p>
+<pre class="clsSyntaxCells">bRetVal = objGeneric.WriteConfigSetting(strSetting,strValue,strAppName);</pre>
 </td>
 </tr>
 </table>

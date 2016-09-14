@@ -12,12 +12,12 @@ The FileExists Method of the ODAX ActiveX Object checks to see whether the speci
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>
-<th class="clsSyntaxHeadings">FileExists  (Method of the ODAX ActiveX Object) Syntax
+<th class="clsSyntaxHeadings">FileExists (Method of the ODAX ActiveX Object) Syntax
 </th>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var status = object.FileExists(fileName);</p>
+<pre class="clsSyntaxCells">var status = object.FileExists(fileName);</pre>
 </td>
 </tr>
 </table>

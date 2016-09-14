@@ -17,7 +17,7 @@ The Auspostal Meta Tag is an action tag used to enable or disable the auspostal 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="auspostal:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="auspostal:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

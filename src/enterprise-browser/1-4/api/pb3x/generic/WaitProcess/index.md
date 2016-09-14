@@ -17,7 +17,7 @@ The WaitProcess Method of the Generic ActiveX Object waits for the process start
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var bRetVal = objGeneric.WaitProcess(hProcessHandle, TimeoutValue);</p>
+<pre class="clsSyntaxCells">var bRetVal = objGeneric.WaitProcess(hProcessHandle, TimeoutValue);</pre>
 </td>
 </tr>
 </table>

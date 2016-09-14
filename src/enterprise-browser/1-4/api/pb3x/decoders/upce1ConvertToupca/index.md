@@ -17,7 +17,7 @@ The upce1ConvertToupca Meta Tag is an action tag used to enable conversion from 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upce1ConvertToupca:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upce1ConvertToupca:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

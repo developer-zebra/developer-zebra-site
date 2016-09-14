@@ -24,12 +24,12 @@ There are three types of screen gestures:
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Gesture" content="[method / parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Gesture" content="[method / parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Gesture" contents="Detected:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Gesture" contents="Detected:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

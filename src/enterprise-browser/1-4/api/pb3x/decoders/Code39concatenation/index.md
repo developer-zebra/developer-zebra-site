@@ -17,7 +17,7 @@ The Code39concatenation Meta Tag is an action tag used to set the Code39concaten
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code39concatenation:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39concatenation:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The LaunchProcess Method of the Generic ActiveX Object launches a new process wh
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>var iRetVal = objGeneric.LaunchProcess(strImageName, strCommandLine);</p>
+<pre class="clsSyntaxCells">var iRetVal = objGeneric.LaunchProcess(strImageName, strCommandLine);</pre>
 </td>
 </tr>
 </table>

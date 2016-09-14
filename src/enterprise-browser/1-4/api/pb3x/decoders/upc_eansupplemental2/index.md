@@ -17,7 +17,7 @@ The upc_eansupplemental2 Meta Tag is an action tag used to enable or disable upc
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upc_eansupplemental2:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upc_eansupplemental2:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

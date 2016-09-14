@@ -17,12 +17,12 @@ The Timer Meta Tag is an action tag used set a timer and register an action to b
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Timer" content="[method / parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Timer" content="[method / parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Timer" content="Timeout:url('[jsFunction | url]')"&gt;</p>
+ <pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Timer" content="Timeout:url('[jsFunction | url]')"&gt;</pre>
 </td>
 </tr>
 </table>

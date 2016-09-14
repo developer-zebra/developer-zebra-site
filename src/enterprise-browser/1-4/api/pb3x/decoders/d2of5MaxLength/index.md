@@ -17,7 +17,7 @@ The d2of5MaxLength Meta Tag is an action tag used to set the d2of5 MaxLength pro
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="d2of5maxlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="d2of5maxlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

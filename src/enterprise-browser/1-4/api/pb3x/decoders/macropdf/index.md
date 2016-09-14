@@ -17,7 +17,7 @@ The MacroPDF Meta Tag is an action tag used to enable or disable the MacroPDF de
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="MacroPDF:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="MacroPDF:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The Volume Meta Tag is an action tag used to set the audio output volume of wave
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Volume" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Volume" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

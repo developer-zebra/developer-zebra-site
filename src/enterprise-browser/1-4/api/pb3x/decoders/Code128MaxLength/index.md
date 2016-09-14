@@ -17,7 +17,7 @@ The Code128MaxLength Meta Tag is an action tag used to set the Code128 MaxLength
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code128maxlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code128maxlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

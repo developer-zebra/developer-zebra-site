@@ -17,7 +17,7 @@ The ConnectionStatus Method of the Generic ActiveX Object retrieves the status o
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var iRetVal = objGeneric.ConnectionStatus(strName);</p>
+<pre class="clsSyntaxCells">var iRetVal = objGeneric.ConnectionStatus(strName);</pre>
 </td>
 </tr>
 </table>

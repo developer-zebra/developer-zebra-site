@@ -17,7 +17,7 @@ The msiReportCheckDigit Meta Tag is an action tag used to set the msi ReportChec
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="msiReportCheckDigit:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="msiReportCheckDigit:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

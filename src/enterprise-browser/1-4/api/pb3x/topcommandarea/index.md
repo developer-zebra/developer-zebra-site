@@ -17,7 +17,7 @@ The TopCommandArea Meta Tag is an action tag used to set the parameters of the T
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="TopCommandArea" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="TopCommandArea" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

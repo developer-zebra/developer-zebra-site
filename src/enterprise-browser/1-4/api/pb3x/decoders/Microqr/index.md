@@ -17,7 +17,7 @@ The MicroQR Meta Tag is an action tag used to enable or disable the MicroQR deco
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="microqr:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="microqr:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

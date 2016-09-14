@@ -1,5 +1,5 @@
 ---
-title: PSGetLastMessage.md
+title: PSGetLastMessage Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
@@ -17,7 +17,7 @@ The PSGetLastMessage Method of the NarrowBand ActiveX Object returns the last er
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>strData = NarrowBand.PSGetLastMessage();</p>
+<pre class="clsSyntaxCells">strData = NarrowBand.PSGetLastMessage();</pre>
 </td>
 </tr>
 </table>

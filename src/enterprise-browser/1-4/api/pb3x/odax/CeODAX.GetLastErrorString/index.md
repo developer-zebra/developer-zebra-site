@@ -12,12 +12,12 @@ The GetLastErrorString Method of the ODAX ActiveX Object returns a string contai
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>
-<th class="clsSyntaxHeadings">GetLastErrorString  (Method of the ODAX ActiveX Object) Syntax
+<th class="clsSyntaxHeadings">GetLastErrorString (Method of the ODAX ActiveX Object) Syntax
 </th>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var strErrorMsg = object.GetLastErrorString();</p>
+<pre class="clsSyntaxCells">var strErrorMsg = object.GetLastErrorString();</pre>
 </td>
 </tr>
 </table>

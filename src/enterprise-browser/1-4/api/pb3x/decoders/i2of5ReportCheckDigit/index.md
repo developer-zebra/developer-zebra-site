@@ -17,7 +17,7 @@ The i2of5ReportCheckDigit Meta Tag is an action tag used to set the i2of5 Report
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="i2of5ReportCheckDigit:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="i2of5ReportCheckDigit:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

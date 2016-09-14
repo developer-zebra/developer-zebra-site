@@ -17,7 +17,7 @@ The Codabar Meta Tag is an action tag used to enable or disable the Codabar deco
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Codabar:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Codabar:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

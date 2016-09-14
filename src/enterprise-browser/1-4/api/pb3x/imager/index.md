@@ -17,17 +17,17 @@ The Imager Meta Tag is an action tag which controls the imager functions and nav
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="imager" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="imager" content="[parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="imager" content="ImagerEvent:url('jsFunction or url')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="imager" content="ImagerEvent:url('jsFunction or url')"&gt;</p>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="imager" content="ImagerEnumEvent:url('jsFunction or url')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="imager" content="ImagerEnumEvent:url('jsFunction or url')"&gt;</p>
 </td>
 </tr>
 </table>

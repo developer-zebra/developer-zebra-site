@@ -17,12 +17,12 @@ The Signal Meta Tag is an action tag used to set position and display parameters
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Signal" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Signal" content="[parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="Signal" content="SignalEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Signal" content="SignalEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

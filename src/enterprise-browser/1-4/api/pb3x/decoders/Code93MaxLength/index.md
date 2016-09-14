@@ -17,7 +17,7 @@ The Code93MaxLength Meta Tag is an action tag used to set the Code93 MaxLength p
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code93maxlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code93maxlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The Clear Method of the ODAX ActiveX Object clears the result set.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>object.Clear();</p>
+<pre class="clsSyntaxCells">object.Clear();</pre>
 </td>
 </tr>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: Testmode Property
+title: TestMode Property
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
@@ -17,7 +17,7 @@ The TestMode Property of the AirBEAMSmart ActiveX Object when set to "true" inst
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>object.TestMode = [parameter];</p>
+<pre class="clsSyntaxCells">object.TestMode = [parameter];</pre>
 </td>
 </tr>
 </table>

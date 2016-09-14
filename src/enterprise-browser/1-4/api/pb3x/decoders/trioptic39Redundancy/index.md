@@ -17,7 +17,7 @@ The trioptic39Redundancy Meta Tag is an action tag used to set the trioptic39 Re
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="trioptic39Redundancy:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="trioptic39Redundancy:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,17 +17,17 @@ The Push Meta Tag is used to receive data over an HTTP connection.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Push" content="[Parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Push" content="[Parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Push" content="[Parameter:Attribute]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Push" content="[Parameter:Attribute&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Push" contents="Detected:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Push" contents="Detected:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

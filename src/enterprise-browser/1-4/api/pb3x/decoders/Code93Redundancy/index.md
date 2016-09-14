@@ -17,7 +17,7 @@ The Code93Redundancy Meta Tag is an action tag used to set the Code93 Redundancy
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code93Redundancy:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code93Redundancy:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

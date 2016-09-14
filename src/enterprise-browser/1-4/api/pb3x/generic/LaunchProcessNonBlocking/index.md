@@ -17,7 +17,7 @@ The LaunchProcessNonBlocking Method of the Generic ActiveX Object launches a new
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>var ProcessHandle = objGeneric.LaunchProcessNonBlocking(strImageName, strCommandLine);</p>
+<pre class="clsSyntaxCells">var ProcessHandle = objGeneric.LaunchProcessNonBlocking(strImageName, strCommandLine);</pre>
 </td>
 </tr>
 </table>

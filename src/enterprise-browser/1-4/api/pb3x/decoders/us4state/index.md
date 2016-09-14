@@ -17,7 +17,7 @@ The us4state Meta Tag is an action tag used to enable or disable the us4state de
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="us4state:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="us4state:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

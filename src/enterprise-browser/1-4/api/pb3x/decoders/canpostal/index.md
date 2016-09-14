@@ -17,7 +17,7 @@ The Canpostal Meta Tag is an action tag used to enable or disable the canpostal 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="canpostal:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="canpostal:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

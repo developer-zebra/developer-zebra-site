@@ -17,7 +17,7 @@ The Code39Code32Prefix Meta Tag is an action tag used to set the Code39Code32pre
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code39code32prefix:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39code32prefix:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

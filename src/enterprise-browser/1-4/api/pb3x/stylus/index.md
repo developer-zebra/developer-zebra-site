@@ -17,7 +17,7 @@ The Stylus Meta Tag is an action tag used to enable and disable the touch screen
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-EQUIV="Stylus" content="[method]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-EQUIV="Stylus" content="[method&gt;</pre>
 </td>
 </tr>
 </table>

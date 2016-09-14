@@ -17,7 +17,7 @@ The d2of5Redundancy Meta Tag is an action tag used to set the d2of5 Redundancy p
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="d2of5Redundancy:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="d2of5Redundancy:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

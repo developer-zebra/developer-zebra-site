@@ -17,7 +17,7 @@ The TextSize Meta Tag is an action tag used to set the zoom size of the text.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="TextSize" content="[method]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="TextSize" content="[method&gt;</pre>
 </td>
 </tr>
 </table>

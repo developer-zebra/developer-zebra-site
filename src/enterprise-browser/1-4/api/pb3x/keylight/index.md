@@ -17,7 +17,7 @@ The Keylight Meta Tag is an action tag used to control the keyboard backlight an
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Keylight" content="[method / parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Keylight" content="[method / parameter&gt;</pre>
 </td>
 </tr>
 </table>

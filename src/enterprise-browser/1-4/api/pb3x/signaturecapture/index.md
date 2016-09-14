@@ -17,12 +17,12 @@ The SignatureCapture Meta Tag presents a rectangular box that captures a signatu
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="SignatureCapture" content="[method / parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="SignatureCapture" content="[method / parameter&gt;</pre>
 </td>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="SignatureCapture" content="SignatureSaveEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="SignatureCapture" content="SignatureSaveEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

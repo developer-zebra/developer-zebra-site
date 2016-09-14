@@ -17,7 +17,7 @@ The PowerOn Meta Tag is used to register to receive an event when the device res
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="PowerOn" content="PowerOnEvent:url('[jsFunction | url]')"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="PowerOn" content="PowerOnEvent:url('[jsFunction | url]')"&gt;</p>
 </td>
 </tr>
 </table>

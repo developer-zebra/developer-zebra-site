@@ -8,7 +8,7 @@ subhead: PocketBrowser 3.x API
 
 The upce1ReportCheckDigit Meta Tag is an action tag used to set the upce1 ReportCheckDigit property, which enables reporting of the bar code check digit(s).
 
-﻿    <div id="SyntaxSpan" style="display:block">
+﻿<div id="SyntaxSpan" style="display:block">
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>
@@ -17,7 +17,7 @@ The upce1ReportCheckDigit Meta Tag is an action tag used to set the upce1 Report
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upce1ReportCheckDigit:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upce1ReportCheckDigit:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The chinese_2of5 Meta Tag is an action tag used to enable or disable the chinese
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="chinese_2of5:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="chinese_2of5:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

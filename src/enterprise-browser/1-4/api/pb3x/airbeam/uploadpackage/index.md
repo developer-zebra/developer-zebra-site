@@ -17,7 +17,7 @@ The UploadPackage Property of the AirBEAMSmart ActiveX Object instructs the AirB
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>object.UploadPackage = [parameter];</p>
+<pre class="clsSyntaxCells">object.UploadPackage = [parameter];</pre>
 </td>
 </tr>
 </table>

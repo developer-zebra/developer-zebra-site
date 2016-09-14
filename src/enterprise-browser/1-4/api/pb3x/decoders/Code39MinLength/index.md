@@ -17,7 +17,7 @@ The Code39MinLength Meta Tag is an action tag used to set the Code39 MinLength p
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code39minlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39minlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

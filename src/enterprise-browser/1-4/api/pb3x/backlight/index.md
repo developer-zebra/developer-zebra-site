@@ -17,7 +17,7 @@ The Backlight Meta Tag controls the display backlight and its intensity.
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="backlight" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="backlight" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

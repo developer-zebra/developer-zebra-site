@@ -17,7 +17,7 @@ The CodabarMaxLength Meta Tag is an action tag used to set the Codabar MaxLength
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Codabarmaxlength:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Codabarmaxlength:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

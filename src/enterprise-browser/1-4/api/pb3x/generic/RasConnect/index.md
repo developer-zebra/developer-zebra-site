@@ -17,7 +17,7 @@ The RasConnect Method of the Generic ActiveX Object connects a specified modem/s
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>var iRetVal = objGeneric.RasConnect(strEntry, strUser, strPwd, strDomain);</p>
+<pre class="clsSyntaxCells">var iRetVal = objGeneric.RasConnect(strEntry, strUser, strPwd, strDomain);</pre>
 </td>
 </tr>
 </table>

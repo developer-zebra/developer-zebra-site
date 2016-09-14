@@ -17,7 +17,7 @@ The PSExternal Method of the NarrowBand ActiveX Object is used to send commands 
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>NarrowBand.PSExternal(iCommand, strParameter);</p>
+<pre class="clsSyntaxCells">NarrowBand.PSExternal(iCommand, strParameter);</pre>
 </td>
 </tr>
 </table>

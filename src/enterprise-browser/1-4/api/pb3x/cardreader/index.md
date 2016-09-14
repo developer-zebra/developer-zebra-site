@@ -17,7 +17,7 @@ The CardReader Meta Tag is a retrieval tag that either navigates to a URL or cal
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="cardreader" content="parameter:value"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="cardreader" content="parameter:value"&gt;</pre>
 </td>
 </tr>
 </table>

@@ -17,7 +17,7 @@ The Code128 Meta Tag is an action tag used to enable or disable the Code128 deco
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code128:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code128:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

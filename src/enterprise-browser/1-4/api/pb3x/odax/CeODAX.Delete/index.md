@@ -12,12 +12,12 @@ The Delete Method of the ODAX ActiveX Object deletes the specified file.
 <blockquote>
 <table class="clsSyntax" cellspacing="1" cellpadding="3" width="95%">
 <tr>
-<th class="clsSyntaxHeadings">Delete  (Method of the ODAX ActiveX Object) Syntax
+<th class="clsSyntaxHeadings">Delete (Method of the ODAX ActiveX Object) Syntax
 </th>
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var status = object.Delete(fileName);</p>
+<pre class="clsSyntaxCells">var status = object.Delete(fileName);</pre>
 </td>
 </tr>
 </table>

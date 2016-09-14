@@ -17,7 +17,7 @@ The upca_preamble Meta Tag is an action tag used to set the upcapreamble propert
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="upcapreamble:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="upcapreamble:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

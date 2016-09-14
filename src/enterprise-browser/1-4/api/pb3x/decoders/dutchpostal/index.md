@@ -17,7 +17,7 @@ The Dutchpostal Meta Tag is an action tag used to enable or disable the DutchPos
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="DutchPostal:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="DutchPostal:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

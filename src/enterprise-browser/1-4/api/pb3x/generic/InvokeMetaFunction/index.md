@@ -17,7 +17,7 @@ The InvokeMETAFunction Method of the Generic ActiveX Object invokes the specifie
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>var bRetVal = objGeneric.InvokeMETAFunction(strHTTPEquiv, strContents);</p>
+<pre class="clsSyntaxCells">var bRetVal = objGeneric.InvokeMETAFunction(strHTTPEquiv, strContents);</pre>
 </td>
 </tr>
 </table>

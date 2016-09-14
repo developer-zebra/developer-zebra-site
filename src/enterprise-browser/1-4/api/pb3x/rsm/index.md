@@ -18,7 +18,7 @@ The RSM Meta Tag is used to configure and retrieve attribute settings of a remot
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="RSM" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="RSM" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

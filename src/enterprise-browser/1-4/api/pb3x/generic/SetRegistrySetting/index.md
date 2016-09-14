@@ -17,7 +17,7 @@ The SetRegistrySetting Method of the Generic ActiveX Object Sets the specified r
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>objGeneric.SetRegistrySetting(lHive, lType, strKey, strSetting, strData);</p>
+<pre class="clsSyntaxCells">objGeneric.SetRegistrySetting(lHive, lType, strKey, strSetting, strData);</pre>
 </td>
 </tr>
 </table>

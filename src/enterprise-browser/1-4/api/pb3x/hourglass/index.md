@@ -17,7 +17,7 @@ The Hourglass Meta Tag is an action tag used to control the display and position
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="Hourglass" content="[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="Hourglass" content="[parameter&gt;</pre>
 </td>
 </tr>
 </table>

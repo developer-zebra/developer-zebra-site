@@ -17,7 +17,7 @@ The i2of5ConvertToEAN13 Meta Tag is an action tag used to enable conversion from
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="i2of5ConvertToEAN13:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="i2of5ConvertToEAN13:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

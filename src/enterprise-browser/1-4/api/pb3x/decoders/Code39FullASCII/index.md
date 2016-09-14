@@ -17,7 +17,7 @@ The Code39FullASCII Meta Tag is an action tag used to set the Code39fullascii pr
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>&lt;META HTTP-Equiv="scanner" content="Code39fullascii:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39fullascii:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

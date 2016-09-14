@@ -17,7 +17,7 @@ The Code39ConvertToCode32 Meta Tag s an action tag used to enable conversion fro
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-<p>&lt;META HTTP-Equiv="scanner" content="Code39ConvertToCode32:[parameter]"&gt;</p>
+<pre class="clsSyntaxCells">&lt;META HTTP-Equiv="scanner" content="Code39ConvertToCode32:[parameter&gt;</pre>
 </td>
 </tr>
 </table>

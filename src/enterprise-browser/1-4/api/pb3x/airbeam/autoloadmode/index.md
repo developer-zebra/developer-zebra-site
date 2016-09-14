@@ -1,5 +1,5 @@
 ---
-title: autoloadmode.md
+title: AutoLoadMode Property
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
@@ -17,7 +17,7 @@ The AutoLoadMode Property of the AirBEAMSmart ActiveX Object instructs the AirBE
 </tr>
 <tr>
 <td class="clsSyntaxCells">
-  <p>object.AutoLoadMode = [parameter];</p>
+<pre class="clsSyntaxCells">object.AutoLoadMode = [parameter];</pre>
 </td>
 </tr>
 </table>

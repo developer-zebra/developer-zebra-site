@@ -3,7 +3,7 @@ title: KeyState Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The KeyState Meta Tag is an action tag used to set the parameters of the KeyState indicators, which display icons for Shift, Alt, Control, Function, Caps, Num lock, and the state of the Orange keys on some devices. Icons are placed beginning at the leftmost screen position in a row that extends toward the right, as necessary.

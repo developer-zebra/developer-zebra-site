@@ -3,7 +3,7 @@ title: RSM Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The RSM Meta Tag is used to configure and retrieve attribute settings of a remote scanner connected to the device via cable or Bluetooth. When used for retrieval, navigation to a URL and/or calls to JavaScript functions are executed immediately. See the Remarks section below for a list of readable/configurable scanner attributes. 

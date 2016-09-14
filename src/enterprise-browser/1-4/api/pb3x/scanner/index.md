@@ -3,7 +3,7 @@ title: Scanner Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Scanner Meta Tag is an action tag that controls the functionality of the device scanner.

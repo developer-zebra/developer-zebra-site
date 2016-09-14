@@ -3,7 +3,7 @@ title: ReadUserSetting Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The ReadUserSetting Method of the Generic ActiveX Object reads a custom setting stored in the configuration file.

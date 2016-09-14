@@ -3,7 +3,7 @@ title: Comm Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Comm Meta Tag is an action tag used to control the functionality of the serial port on the device, including all serial communications initiated by PocketBrowser apps and any collected or transmitted data.

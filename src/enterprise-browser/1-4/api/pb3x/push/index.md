@@ -3,7 +3,7 @@ title: Push Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Push Meta Tag is used to receive data over an HTTP connection.

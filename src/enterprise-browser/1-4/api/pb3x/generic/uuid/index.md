@@ -3,7 +3,7 @@ title: UUID Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The UUID Method of the Generic ActiveX Object retrieves the Unique Unit IDentifier for the terminal.

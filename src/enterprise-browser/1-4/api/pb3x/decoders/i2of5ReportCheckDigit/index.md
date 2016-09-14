@@ -3,7 +3,7 @@ title: i2of5ReportCheckDigit Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The i2of5ReportCheckDigit Meta Tag is an action tag used to set the i2of5 ReportCheckDigit property which enables reporting of the bar code check digit(s).

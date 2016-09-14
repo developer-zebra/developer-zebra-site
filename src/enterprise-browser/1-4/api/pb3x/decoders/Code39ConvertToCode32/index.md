@@ -3,7 +3,7 @@ title: Code39ConvertToCode32 Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Code39ConvertToCode32 Meta Tag s an action tag used to enable conversion from Code39 to Code32 bar code. If this flag is set, the bar code is converted to Code32, and Code32 parameters are used.

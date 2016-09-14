@@ -3,7 +3,7 @@ title: CeODAX.Move Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Move Method of the ODAX ActiveX Object moves the specified source filename to the destination filename.

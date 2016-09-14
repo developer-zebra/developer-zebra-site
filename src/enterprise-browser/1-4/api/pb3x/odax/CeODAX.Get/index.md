@@ -3,7 +3,7 @@ title: CeODAX.Get Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Get Method of the ODAX ActiveX Object retrieves the column value specified from the current result set.

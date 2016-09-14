@@ -3,7 +3,7 @@ title: DeletePackage Property
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The DeletePackage Property of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to delete the specified package.

@@ -3,7 +3,7 @@ title: HistoryBack Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The HistoryBack Navigation instructs PocketBrowser to navigate to the previous address in the browser history, if any.

@@ -3,7 +3,7 @@ title: FileTransfer Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The FileTransfer Meta Tag is an action tag used to send or receive files between the device filestore and an FTP or HTTP site.

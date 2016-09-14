@@ -3,7 +3,7 @@ title: KeyCapture Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The KeyCapture Meta Tag is an action tag is used to intercept or override hardware keys, and is typically used to assign certain application functions to physical keys or other hardware buttons.

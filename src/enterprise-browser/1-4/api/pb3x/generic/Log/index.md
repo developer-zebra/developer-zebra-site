@@ -3,7 +3,7 @@ title: Log Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Log Method of the Generic ActiveX Object invokes a user defined type log entry method via the PB logger component. With this invocation the PocketBrowser Logger component executes single or multiple log operations (text or http) based on current logger registry configuration settings.

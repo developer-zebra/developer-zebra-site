@@ -3,7 +3,7 @@ title: PSExternalEx Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The PSExternalEx Method of the NarrowBand ActiveX Object is used to send commands via the Adaptive Printer Driver and return the result of the command.

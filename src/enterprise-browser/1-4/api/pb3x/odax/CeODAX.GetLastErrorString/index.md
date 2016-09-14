@@ -3,7 +3,7 @@ title: CeODAX.GetLastErrorString Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The GetLastErrorString Method of the ODAX ActiveX Object returns a string containing an error message relating to the last error that occurred.

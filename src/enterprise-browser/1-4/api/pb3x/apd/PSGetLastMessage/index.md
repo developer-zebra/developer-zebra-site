@@ -3,7 +3,7 @@ title: PSGetLastMessage.md
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The PSGetLastMessage Method of the NarrowBand ActiveX Object returns the last error message encountered by the Adaptive Printer Driver.

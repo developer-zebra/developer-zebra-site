@@ -3,7 +3,7 @@ title: Hourglass Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Hourglass Meta Tag is an action tag used to control the display and position of the hourglass icon, which appears to indicate that a page is loading.

@@ -3,7 +3,7 @@ title: Timer Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Timer Meta Tag is an action tag used set a timer and register an action to be performed when the timer expires. Once the timer is started, the interval time cannot be changed without stopping and restarting the timer.

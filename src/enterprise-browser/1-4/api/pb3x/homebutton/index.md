@@ -3,7 +3,7 @@ title: HomeButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The HomeButton Meta Tag is an action tag used to set the parameters of the Home Button, which navigates to the app's start page as specified in the configuration. 

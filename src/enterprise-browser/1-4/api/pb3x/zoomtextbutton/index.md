@@ -3,7 +3,7 @@ title: ZoomTextButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The ZoomTextButton Meta Tag is an action tag used to set the parameters of the ZoomTextButton, which cycles through the browser font sizes from smallest to largest.

@@ -3,7 +3,7 @@ title: Code93Redundancy Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Code93Redundancy Meta Tag is an action tag used to set the Code93 Redundancy property. If this flag is set, the bar code must be decoded twice before being accepted.

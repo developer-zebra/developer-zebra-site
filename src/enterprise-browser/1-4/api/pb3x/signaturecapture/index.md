@@ -3,7 +3,7 @@ title: SignatureCapture Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The SignatureCapture Meta Tag presents a rectangular box that captures a signature, hand-written notes or other data entered using the device stylus.

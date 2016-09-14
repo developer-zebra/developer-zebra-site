@@ -3,7 +3,7 @@ title: CeODAX.Select Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Select Method of the ODAX ActiveX Object is used to query .XML- and .CSV-based database files. The method performs the SQL SELECT statement on the specified file and populates the object's result set.

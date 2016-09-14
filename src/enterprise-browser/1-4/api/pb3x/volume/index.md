@@ -3,7 +3,7 @@ title: Volume Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Volume Meta Tag is an action tag used to set the audio output volume of wave files being played on the device. This does not set the volume of the device beeper.

@@ -3,7 +3,7 @@ title: Gesture Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Gesture Meta Tag is used to define and capture gestures drawn on a touch-sensitive screen. Multiple gestures can be defined for capture on a single page. Zebra recommends defining no more than five gestures per page to avoid performance issues. **Note**: Not supported on Windows CE if debug buttons are enabled in the `Config.xml` file of an Enterprise Browser app.

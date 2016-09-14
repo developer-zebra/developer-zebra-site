@@ -3,7 +3,7 @@ title: All_Decoders Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 The All_Decoders Meta Tag is an action tag used to set the set the barcode scanner to read all barcode types that the scanner is capable of reading.
 

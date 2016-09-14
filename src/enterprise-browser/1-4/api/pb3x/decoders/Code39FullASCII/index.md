@@ -3,7 +3,7 @@ title: Code39FullASCII Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Code39FullASCII Meta Tag is an action tag used to set the Code39fullascii property which enables or disables full ASCII conversion of the bar code.

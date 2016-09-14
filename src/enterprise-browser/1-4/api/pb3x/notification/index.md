@@ -3,7 +3,7 @@ title: Notification Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Notification Meta Tag is an action tag used to control the notification objects such as the LEDs, beeper and pager on the device. While some devices are equipped more than one of a given object type, most have multiple LEDs, a single beeper and a single pager. 

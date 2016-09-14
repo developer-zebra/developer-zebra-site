@@ -3,7 +3,7 @@ title: upc_eanbookland Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The upc_eanbookland Meta Tag is an action tag used to enable or disable decoding of upc_ean-bookland barcodes.

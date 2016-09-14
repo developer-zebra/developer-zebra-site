@@ -3,7 +3,7 @@ title: upce1ConvertToupca Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The upce1ConvertToupca Meta Tag is an action tag used to enable conversion from upce1 to upca bar code. If this flag is set, the bar code is converted to upca, and upca parameters are used.

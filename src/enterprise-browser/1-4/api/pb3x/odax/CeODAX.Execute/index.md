@@ -3,7 +3,7 @@ title: CeODAX.Execute Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Execute Method of the ODAX ActiveX Object performs INSERT, UPDATE and DELETE statements on the specified .XML or .CSV file. 

@@ -3,7 +3,7 @@ title: ean8ConvertToEAN13 Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The ean8ConvertToEAN13 Meta Tag is an action tag used to enable conversion from ean8 to EAN13 bar code. If this flag is set, the bar code is converted to EAN13, and EAN13 parameters are used.

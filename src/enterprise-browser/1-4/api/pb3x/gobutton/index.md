@@ -3,7 +3,7 @@ title: GoButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The GoButton Meta Tag is used to set the parameters of the "Go" button, which navigates to the page shown in the Address Bar. In keeping with browser conventions, the Go button is replaced during navigation by the stop button (if enabled).

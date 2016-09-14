@@ -3,7 +3,7 @@ title: Registry Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Registry Meta Tag is used to write and delete registry settings, and to create corresponding merge files.

@@ -3,7 +3,7 @@ title: StopButton Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The StopButton Meta Tag is an action tag used to set the parameters of the Stop Button, which is displayed only while a page is loading. When clicked, the Stop Button ceases the current navigation and brings up the badlink page (if defined), preventing partially rendered pages being displayed in the browser.

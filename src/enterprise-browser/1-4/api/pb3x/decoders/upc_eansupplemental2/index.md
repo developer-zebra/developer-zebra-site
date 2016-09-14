@@ -3,7 +3,7 @@ title: upc_eansupplemental2 Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The upc_eansupplemental2 Meta Tag is an action tag used to enable or disable upc_ean-supplemental2 supplemental barcodes.

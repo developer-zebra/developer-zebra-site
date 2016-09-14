@@ -3,7 +3,7 @@ title: AutoReboot Property
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The AutoReboot Property of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to enable or disable Auto Reboot mode.

@@ -3,7 +3,7 @@ title: RasDisconnect Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The RasDisconnect Method of the Generic ActiveX Object disconnects a specified modem/serial connection.

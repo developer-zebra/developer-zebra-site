@@ -3,7 +3,7 @@ title: CeODAX.MoveLast Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The MoveLast Method of the ODAX ActiveX Object moves the row pointer to the last record of the result set.

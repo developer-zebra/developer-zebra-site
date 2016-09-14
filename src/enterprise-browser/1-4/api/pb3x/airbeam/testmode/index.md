@@ -3,7 +3,7 @@ title: Testmode Property
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The TestMode Property of the AirBEAMSmart ActiveX Object when set to "true" instructs the AirBEAM Smart client to test the package. The client tests for package updates, but does not load packages.

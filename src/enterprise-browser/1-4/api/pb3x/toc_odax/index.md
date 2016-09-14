@@ -42,6 +42,6 @@ automenu:
           url: ../odax/CeODAX.Select
 productversion: '1.4'
 product: Enterprise Browser
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 

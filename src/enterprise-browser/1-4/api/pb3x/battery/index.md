@@ -3,7 +3,7 @@ title: Battery Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Battery Meta Tag is used to set the attributes of the battery indicator and retrieve battery status.

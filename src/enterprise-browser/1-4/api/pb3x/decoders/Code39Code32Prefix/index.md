@@ -3,7 +3,7 @@ title: Code39Code32Prefix Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Code39Code32Prefix Meta Tag is an action tag used to set the Code39Code32prefix property, which enables reporting of the Code32 prefix when a Code39 bar code is converted.

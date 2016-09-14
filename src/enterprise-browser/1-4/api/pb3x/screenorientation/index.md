@@ -3,7 +3,7 @@ title: ScreenOrientation Meta Tag
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The ScreenOrientation Meta Tag is used to control the screen orientation and layout, and can register to receive an event when it changes. A new orientation will persist if PocketBrowser is closed or the device is warm-booted.

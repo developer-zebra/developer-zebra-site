@@ -3,7 +3,7 @@ title: CeODAX.MoveFirst Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The MoveFirst Method of the ODAX ActiveX Object moves the row pointer to the first record of the result set.

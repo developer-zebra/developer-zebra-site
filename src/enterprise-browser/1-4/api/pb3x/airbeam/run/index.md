@@ -3,7 +3,7 @@ title: Run Method
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
-subhead: PocketBrowser 3.x APIs
+subhead: PocketBrowser 3.x API
 ---
 
 The Run Method of the AirBEAMSmart ActiveX Object instructs the AirBEAM Smart client to run the client and perform the current configuration. **Note**: the client is run as the foreground application. 

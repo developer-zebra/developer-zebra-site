@@ -11,7 +11,7 @@ This guide provides instructions for modifying an EB app for ITSmobile, the SAP 
 
 * [Enterprise Browser Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [PocketBrowser and RhoElements Migration Guides](../guide)
+* [PocketBrowser and RhoElements Migration Guides](../)
 * [DOM Injection guide](../DOMinjection)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 
@@ -49,7 +49,7 @@ KeyCapture API functionality varies based on the device and its operating system
 <td>YES</td>
 </tr>
 <tr>
-<td>JavaScript Object, PB KeyCapture API</td>
+<td>JavaScript Object, backward compatibility API</td>
 <td>YES</td>
 <td>NO</td>
 <td>YES</td>
@@ -57,7 +57,7 @@ KeyCapture API functionality varies based on the device and its operating system
 <td>YES</td>
 </tr>
 <tr>
-<td>ActiveX Object, PB KeyCapture API</td>
+<td>ActiveX Object, backward compatibility API</td>
 <td>YES</td>
 <td>YES</td>
 <td>YES</td>
@@ -106,7 +106,7 @@ Most JavaScript-based key handling for SAP ITSmobile applications is handled by 
 <br>
 **KeyEvents also can be handled using any of the methods below**:
 
-* **To capture keys via JavaScript Object** using PocketBrowser KeyCapture Module (backward compatibility support):
+* **To capture keys via JavaScript Object** using backward compatibility API:
 
 
           :::javascript
@@ -114,7 +114,7 @@ Most JavaScript-based key handling for SAP ITSmobile applications is handled by 
           keyCapture.keyValue = 'All'; //Here keyCapture is 2.2 KeyCapture JavaScript Object.
 
 
-* **To capture keys via Meta Tags** using PocketBrowser KeyCapture Module (backward compatibility support):
+* **To capture keys via Meta Tags** using backward compatibility API:
 
 
           :::xml
@@ -122,7 +122,7 @@ Most JavaScript-based key handling for SAP ITSmobile applications is handled by 
           <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:True; KeyEvent:url('javascript:MyCallBack(%json);')">
 
 
-* **To capture keys via ActiveX Object** using PocketBrowser KeyCapture Module (backward compatibility support):
+* **To capture keys via ActiveX Object** using backward compatibility API:
 
           :::javascript
 
@@ -272,7 +272,7 @@ When designing the page, consider adding Quit, Back and Reload buttons so users 
 
 * [Enterprise Browser Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [PocketBrowser and RhoElements Migration Guides](../guide)
+* [PocketBrowser and RhoElements Migration Guides](../)
 * [DOM Injection guide](../DOMinjection)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 

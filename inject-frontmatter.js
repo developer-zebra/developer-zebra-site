@@ -70,7 +70,7 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-        "path": "enterprise-browser/1-4",
+        "path": "enterprise-browser/1-4/api/re2x",
         "frontmatter": [
             {
                 "item" :  "productversion",
@@ -86,6 +86,11 @@ var settings = [
                 "item" :  "layout",
                 "value" : "guide.html",
                 "override": false
+            }, 
+            {
+                "item" :  "subhead",
+                "value" : "RhoElements 2.x APIs",
+                "override": true
             }
         ]
     },

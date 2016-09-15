@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products:
   - title: DataWedge
-    description: 'An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other enterprise apps on the device.'
+    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
     url: /datawedge/5-0/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
@@ -24,7 +24,7 @@ products:
       - title: Demo
         url: /datawedge/5-0/guide/demo
   - title: Enterprise Browser
-    description: "Build apps using standard web technologies such as HTML5, CSS3 and JavaScript that work with virtually any Zebra device."
+    description: Build apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
     url: /enterprise-browser/1-4/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
@@ -63,7 +63,7 @@ products:
       - url: ehs/2-3/guide/about/
         menu: '2.3'
   - title: Enterprise Keyboard
-    description: A customizable soft keyboard made specifically for fast and accurate workplace input.
+    description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
     url: /enterprise-keyboard/1-0/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs

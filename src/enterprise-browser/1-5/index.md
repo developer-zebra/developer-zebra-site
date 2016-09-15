@@ -9,7 +9,7 @@ menu:
   versions:
     - versionto: 1-4
       versionfrom: 1-5
-      default: /enterprise-browser/1-5/guide/about
+      default: /enterprise-browser/1-4/guide/about
       label: '1.4'
   items:
     - title: About

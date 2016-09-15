@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JacaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
+Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JavaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
 The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](/stagenow/2-4/gettingstarted/) or a mobile device management (MDM) system.   
 
@@ -14,10 +14,13 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 ## New in v1.5 (unreleased)
 
 ####Zebra Device Support
-  * **TC70 and TC75 with Android L**
-  * **WT6000 with Android L**
-  * **MC40 with Android L**
-  * **RS6000, RS4000 and RS507**
+  * **TC70 and TC75 with Android Lollipop**
+  * **WT6000 with Android Lollipop**
+  * **MC40 with Android Lollipop**
+  * **MC67 with Android KitKat** 
+  * **WorkAbout Pro 4 with Windows Embedded Handheld 6.5**
+  * **Omnii XT15 with Windows Ce 6.0 and Embedded Handheld 6.5** 
+  * **RS6000, RS4000 and RS507 ring scanners for use with WT6000**
   * **Psion XT15, VH10 and WAP**
 
 [See all supported devices](../about#mobile)
@@ -26,7 +29,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 * **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator (**Android only**). 
 
-* **Updated [Barcode API](../../api/barcode) -** supports addConnectionListener and removeConnectionListener for pluggable scanners and fixes sound decoding issues on some devices. 
+* **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues on some devices. 
 
 * **Updated [Device API](../../api/device) -** allows JavaScript to access **acquirePartialWakeLock** and **releasePartialWakeLock** functions programmatically. 
 
@@ -200,7 +203,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean), <br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean), 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br>Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -277,7 +280,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>

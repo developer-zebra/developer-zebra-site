@@ -83,13 +83,13 @@ This API is designed for debugging your application only and should not be used 
 
 ##HTML/JavaScript Examples
 
-The following example shows the Quit button and sets the left and top coordinates to 50.
+The following example shows the Quit button and sets the left and top coordinates to 50:
 
 	<META HTTP-Equiv="QuitButton" Content="Visibility:Visible">
 	<META HTTP-Equiv="QuitButton" Content="Left:50">
 	<META HTTP-Equiv="QuitButton" Content="Top:50">
 	
-The following example shows the Quit button and displays the quit_up.jpg / quit_down.jpg images on it (resizing the images if necessary).
+The following example shows the Quit button and displays the quit_up.jpg / quit_down.jpg images on it (resizing the images if necessary):
 
 	<META HTTP-Equiv="QuitButton" Content="ImageUp:url('http://myaddress/quit_up.jpg'); ImageDown:url('http://myaddress/quit_down.jpg'); Visibility:Visible">
 					

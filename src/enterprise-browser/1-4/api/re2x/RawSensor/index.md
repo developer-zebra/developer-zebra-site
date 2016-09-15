@@ -126,7 +126,7 @@ On iOS devices and non Zebra Technologies Windows Mobile/CE devices, only the Ru
 
 ##HTML/JavaScript Examples
 
-The following example enables all the sensors and waits for the updates through the sensor event
+The following example enables all the sensors and waits for the updates through the sensor event:
 
 	<META HTTP-EQUIV="RawSensors" CONTENT="sensorEvent:url('JavaScript:onSensor(%json);');all:enabled; ">
 	

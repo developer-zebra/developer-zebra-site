@@ -20,7 +20,7 @@ In order to use this API you must include reference to the following JavaScript 
 
 
 ### API Usage
-This API does not use the `EB` namespace. It is simply referenced using the API name:
+This API does not use the `EB` namespace. It is simply referenced using the API name as in this sample JavaScript:
 
 	:::javascript
 	powerOn.powerOnEvent = "url('JavaScript:powerOnCallback(%json)';)";

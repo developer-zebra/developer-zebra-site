@@ -20,7 +20,7 @@ automenu:
           url: ../apd/psexternalex/PSExternalEx.html
         - title: PSGetLastMessage
           url: ../apd/psgetlastmessage/PSGetLastMessage.html
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x API
 ---

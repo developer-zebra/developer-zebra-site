@@ -102,7 +102,7 @@ automenu:
           url: uspostnet
         - title: Webcode
           url: webcode
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x API
 ---

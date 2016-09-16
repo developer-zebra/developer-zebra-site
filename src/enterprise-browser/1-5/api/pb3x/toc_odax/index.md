@@ -40,7 +40,7 @@ automenu:
           url: ../odax/CeODAX.Moveprev
         - title: CeODAX.Select
           url: ../odax/CeODAX.Select
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x API
 ---

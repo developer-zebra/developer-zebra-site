@@ -24,7 +24,7 @@ automenu:
           url: ../korean3of5maxLength
         - title: Korean3of5minLength
           url: ../korean3of5minLength
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

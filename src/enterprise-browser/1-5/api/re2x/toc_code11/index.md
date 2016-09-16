@@ -28,7 +28,7 @@ automenu:
           url: ../Code11Redundancy
         - title: Code11reportCheckDigit
           url: ../Code11ReportCheckDigit
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

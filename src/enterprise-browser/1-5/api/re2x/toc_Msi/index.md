@@ -30,7 +30,7 @@ automenu:
           url: ../msiRedundancy
         - title: MsiReportCheckDigit
           url: ../msiReportCheckDigit
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

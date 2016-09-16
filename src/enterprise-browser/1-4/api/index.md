@@ -50,7 +50,7 @@ automenu:
           url: NativeMenubar
         - title: NativeTabbar
           url: NativeTabbar
-        - title: Native Toolbar
+        - title: NativeToolbar
           url: NativeToolbar
         - title: Network
           url: Network
@@ -60,6 +60,8 @@ automenu:
           url: printing
         - title: PrinterZebra
           url: printingzebra
+        - title: Push
+          url: push
         - title: ScreenOrientation
           url: screenorientation
         - title: Sensor

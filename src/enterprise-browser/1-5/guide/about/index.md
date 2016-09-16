@@ -19,7 +19,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
   * **MC40 with Android Lollipop**
   * **MC67 with Android KitKat** 
   * **WorkAbout Pro 4 with Windows Embedded Handheld 6.5**
-  * **Omnii XT15 with Windows Ce 6.0 and Embedded Handheld 6.5** 
+  * **Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5** 
   * **RS6000, RS4000 and RS507 ring scanners for use with WT6000**
   * **Psion XT15, VH10 and WAP**
 

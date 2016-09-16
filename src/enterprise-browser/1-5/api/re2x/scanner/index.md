@@ -11,7 +11,8 @@ The Scanner Module controls the functionality of the device scanner.
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">scanner (Module) &lt;META&gt; Syntax
+<table class="re-table"><tr>
+<th class="tableHeading">scanner (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Scanner" content="[parameter / method]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 
 <table class="re-table"><tr><th class="tableHeading">Scanner JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">By default, the JavaScript Object <b>"scanner"</b> will exist on the current page and can be used to interact directly with the scanner.</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
@@ -32,19 +33,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 <P />
 e.g. <b>scanner</b>.setEMML("enabled:<i>value</i>;decodeEvent:url('JavaScript:doFunction(%json)');enumerate");							
 </td></tr></table>
-
-<table class="re-table"><tr><th class="tableHeading">Scanner Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the Scanner. All Methods, Parameters and Events are the same as Javascript, however, notice <b>'Scanner'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Scanner methods via Ruby use the following syntax: Scanner.method()
-<P />e.g. <b>Scanner</b>.enumerate</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set Scanner parameters via Ruby use the following syntax: Scanner.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Scanner</b>.enabled = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set Scanner return events via Ruby use the following syntax: Scanner.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>Scanner</b>.decodeEvent = url_for(:action =&gt; :scanner_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
 
 ##Methods
 
@@ -90,8 +78,8 @@ Items listed in this section indicate parameters, or attributes which can be set
 <br /><b>smart:</b>
   Vertical rastering mode is 'Smart'.
  <br /><b>cyclone:</b>
-  Vertical rastering mode is 'Cyclone'.</DESCDETAIL><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>rasterHeight:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Vertical rastering height to use, as a percentage, when rasterMode:openAlways is applied.<br /><br /><b>Possible Values:0 - 100</b><br /><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>aimType:[Value]
+  Vertical rastering mode is 'Cyclone'.</DESCDETAIL><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>rasterHeight:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">Vertical rastering height to use, as a percentage, when rasterMode:openAlways is applied.<br /><br /><b>Possible Values:0 - 100</b><br /><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>aimType:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Describes the type of aiming to use.  This is not supported on Android. 
 <DESCDETAIL>
  <br /><b>Possible values:</b>
@@ -143,12 +131,12 @@ Items listed in this section indicate parameters, or attributes which can be set
 <br /><b>softwareReticle:</b>
   Enables picklist mode so that only the barcode in the center of the image is 
   decoded.  This is most useful when used in conjunction with static and 
-  dynamic reticle viewfinder modes.</DESCDETAIL><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderMode:[Value]
+  dynamic reticle viewfinder modes.</DESCDETAIL><i>Applicable scanner types: Imager / Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderMode:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Configures the mode of the scanner viewfinder window.  This attribute is not supported on all Scanners and will interact with the picklistMode parameter, see the EMDK for C help file for more information.    
 <DESCDETAIL>
 <br /><b>Possible values:</b>
 <br /><b>enabled:</b>
-  Only the viewfinder is enabled (not the reticle).  Displays a viewfinder on the
+  only the viewfinder is enabled (not the reticle).  Displays a viewfinder on the
   screen showing the image being captured by the camera.
 <br /><b>disabled:</b> (<i>not available on Enterprise Tablet</i>)
   The viewfinder will not be displayed during aiming or scanning.
@@ -159,11 +147,11 @@ Items listed in this section indicate parameters, or attributes which can be set
   Displays the viewfinder as well as draws a red reticle in the center of the image.
   If the barcode in the image is 'decodable' the reticle turns green to indicate
   this.  This mode requires a second trigger press to decode the barcode after the
-  reticle turns green.</DESCDETAIL><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>viewfinderX:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">When scanning a barcode using an imager scanner the viewfinder preview window will appear this number of pixels from the left hand side of the screen.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderY:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">When scanning a barcode using an imager scanner the viewfinder preview window will appear this number of pixels from the top of the screen.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>viewfinderWidth:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">When scanning a barcode using an imager scanner the viewfinder preview window will be this number of pixels wide.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderHeight:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">When scanning a barcode using an imager scanner the viewfinder preview window will be this number of pixels high.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>viewfinderFeedback:[Value]
+  reticle turns green.</DESCDETAIL><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>viewfinderX:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">When scanning a barcode using an imager scanner the viewfinder preview window will appear this number of pixels from the left hand side of the screen.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderY:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">When scanning a barcode using an imager scanner the viewfinder preview window will appear this number of pixels from the top of the screen.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>viewfinderWidth:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">When scanning a barcode using an imager scanner the viewfinder preview window will be this number of pixels wide.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderHeight:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">When scanning a barcode using an imager scanner the viewfinder preview window will be this number of pixels high.  The images displayed in the viewfinder will be scaled as appropriate.<br /><br /><b>Possible Values:pixels</b><br /><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>viewfinderFeedback:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Configures the feedback given after a successful scan in milliseconds.  This value is ignored if aimType is set to continuousRead and no feedback will be given.  
 <DESCDETAIL>
 <br /><b>Possible values:</b>
@@ -175,26 +163,25 @@ Items listed in this section indicate parameters, or attributes which can be set
 <br /><b>reticle:</b>
   The last image that was successfully decoded is displayed along with a red reticle 
   in the center of the image.  The time for which the image is displayed can be 
-  configured by the viewfinderFeedbackTime parameter.</DESCDETAIL><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderFeedbackTime:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then the decoded barcode will remain on the screen for this duration.<br /><br /><b>Possible Values:milliseconds</b><br /><i>Applicable scanner types: Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>focusMode:[Value]
+  configured by the viewfinderFeedbackTime parameter.</DESCDETAIL><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>viewfinderFeedbackTime:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then the decoded barcode will remain on the screen for this duration.<br /><br /><b>Possible Values:milliseconds</b><br /><i>Applicable scanner types: Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>focusMode:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Sets the focus mode in use.  
 <DESCDETAIL>
 <br /><b>Possible values:</b>
 <br /><b>fixed:</b>
   Use fixed focus.
-<br /><b>auto:</b>
-  Use auto focus.</DESCDETAIL><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>illuminationMode:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Selects the illumination mode to use. This parameter is not currently supported on Android (illumination is always on).  
+<br /><b>auto:</b> Use auto focus.</DESCDETAIL><i>Applicable scanner types: Imager / Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>illuminationMode:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">Selects the illumination mode to use.  
 <DESCDETAIL>
 <br /><b>Possible values:</b>
-<br /><b>auto:</b>(<i>not available on Enterprise Tablet</i>)
-  Auto-exposure algorithms will decide whether illumination is required.
+<br /><b>auto:</b>(<i>not available on Android</i>)
+  Auto-exposure algorithms determine whether illumination is required.
 <br /><b>alwaysOn:</b>
   External illumination is always on.
 <br /><b>alwaysOff:</b>
   External illumination is always off.
-<br /><b>Note:</b> On Enterprise Tablet for Camera scanners this setting has to be enabled/disabled before starting the scanner.</DESCDETAIL><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>dpmMode:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Allows Direct Part Marking (DPM) barcodes to be read when true but may adversely affect overall decoding performance.  DPM is a way of stamping barcodes directly on physical objects and is only available on DPM terminals.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>inverse1dMode:[Value]
+<br /><b>Note:</b> On Android devices that use the camera for scanning, this setting must be enabled/disabled before starting the scanner. </DESCDETAIL><i>Applicable scanner types: Imager/Camera only</i><br /><i>Default: Device-specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>dpmMode:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">Allows Direct Part Marking (DPM) barcodes to be read when true but may adversely affect overall decoding performance.  DPM is a way of stamping barcodes directly on physical objects and is only available on DPM terminals.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Imager / Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>inverse1dMode:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Allows the user to select inverse 1D barcodes for decoding.  
 <DESCDETAIL>
 <br /><b>Possible values:</b>
@@ -203,9 +190,9 @@ Items listed in this section indicate parameters, or attributes which can be set
 <br /><b>disabled:</b>
   Inverse 1D symbology decoding is disabled.
 <br /><b>auto:</b>  
-  Allows decoding of both positive and inverse 1D symbologies</DESCDETAIL><i>Applicable scanner types: Imager / Camera Only and a scanning engine which supports Inverse barcodes.</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>poorQuality1dMode:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Allows poor quality 1D barcodes to be read when true but this will adversely affect the overall decoding performance.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>beamWidth:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Specifies the width of the laser beam.<br /><br /><b>Possible Values:normal / narrow / wide</b><br /><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>dbpMode:[Value]
+  Allows decoding of both positive and inverse 1D symbologies</DESCDETAIL><i>Applicable scanner types: Imager / Camera only and a scanning engine which supports Inverse barcodes.</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>poorQuality1dMode:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">Allows poor quality 1D barcodes to be read when true but this will adversely affect the overall decoding performance.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Imager / Camera only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>beamWidth:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">Specifies the width of the laser beam.<br /><br /><b>Possible Values:normal / narrow / wide</b><br /><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>dbpMode:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Describes the type of Digital Bar Pulse (DBP) being produced by the scan engine.  
 <DESCDETAIL>
 <br /><b>Possible values:</b>
@@ -214,16 +201,16 @@ Items listed in this section indicate parameters, or attributes which can be set
 <br /><b>composite:</b>
   Tells the engine to produce composite DBP, which is 2 different sets of DBP data 
   multiplexed together for better decode performance.  In order to enable this mode 
-  it must be supported by the scanner.</DESCDETAIL><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>klasseEins:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Enables or disables the Klasse Eins laser on time function.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>adaptiveScanning:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Enables or disables adaptive scanning.  When set to true, the scan engine will automatically toggle between 2 scan angles, wide and narrow, allowing the scan engine to decode barcodes both in close proximity and far away (~100 inches).  Adaptive scanning is only supported in high performance, long working range scan engines such as SE960.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>bidirectionalRedundancy:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Enables or disables bidirectional redundancy.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Laser Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>barcodeDataFormat:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Specifies the format in which the barcode data is returned, binary data is returned in Data URI format with the appropriate mime type.  This parameter is designed to be used primarily with image based symbologies (eg. Signature).  Binary data will not be output as keystrokes, you must set a decodeEvent in order to receive scanned data.<br /><br /><b>Possible Values:text / binary</b><br /><i>Applicable scanner types: Imager Only</i><br /><i>Default: Text</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>dataBufferSize:[Value]
+  it must be supported by the scanner.</DESCDETAIL><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>klasseEins:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">Enables or disables the Klasse Eins laser on time function.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>adaptiveScanning:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">Enables or disables adaptive scanning.  When set to true, the scan engine will automatically toggle between 2 scan angles, wide and narrow, allowing the scan engine to decode barcodes both in close proximity and far away (~100 inches).  Adaptive scanning is only supported in high performance, long working range scan engines such as SE960.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>bidirectionalRedundancy:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">Enables or disables bidirectional redundancy.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Laser only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>barcodeDataFormat:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">Specifies the format in which the barcode data is returned, binary data is returned in Data URI format with the appropriate mime type.  This parameter is designed to be used primarily with image based symbologies (eg. Signature).  Binary data will not be output as keystrokes, you must set a decodeEvent in order to receive scanned data.<br /><br /><b>Possible Values:text / binary</b><br /><i>Applicable scanner types: Imager only</i><br /><i>Default: Text</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>dataBufferSize:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Specifies the number of bytes allocated to receive the scanned barcode.  This parameter is designed to be used primarily with image based symbologies and should not be modified unless absolutely necessary (eg. Signature).<br /><br /><b>Possible Values:Number</b><br /><i>Applicable scanner types: All</i><br /><i>Default: 2500 bytes</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>connectionIdleTimeout:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection is terminated to conserve power.<br /><br /><b>Possible Values:seconds</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>disconnectBtOnDisable:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Forces the scanner to disconnect from the terminal when it is 'disabled'.  Since the scanner is disabled when you navigate to a new page, set this value to false if you want to maintain the bluetooth connection to your remote scanner.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>displayBtAddressBarcodeOnEnable:[Value]
-</b></td><td class="clsSyntaxCells clsEvenRow">If set to true the bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a bluetooth scanner.  Not all devices support this functionality.  Note you must specify this parameter before calling 'enable'.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enableTimeout:[Value]
-</b></td><td class="clsSyntaxCells clsOddRow">Configures the time (in seconds) allowed to pair with the external bluetooth scanner after calling the 'enable()' method.  You must specify this parameter before calling 'enable'.<br /><br /><b>Possible Values:seconds</b><br /><i>Applicable scanner types: Bluetooth Only</i><br /><i>Default: Device specific</i></td></tr></table>
+</b></td><td class="clsSyntaxCells clsEvenRow">Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection is terminated to conserve power.<br /><br /><b>Possible Values:seconds</b><br /><i>Applicable scanner types: Bluetooth only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>disconnectBtOnDisable:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">Forces the scanner to disconnect from the terminal when it is 'disabled'.  Since the scanner is disabled when you navigate to a new page, set this value to false if you want to maintain the bluetooth connection to your remote scanner.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Bluetooth only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>displayBtAddressBarcodeOnEnable:[Value]
+</b></td><td class="clsSyntaxCells clsEvenRow">If set to true the bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a bluetooth scanner.  Not all devices support this functionality.  Note you must specify this parameter before calling 'enable'.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Bluetooth only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enableTimeout:[Value]
+</b></td><td class="clsSyntaxCells clsOddRow">Configures the time (in seconds) allowed to pair with the external bluetooth scanner after calling the 'enable()' method.  You must specify this parameter before calling 'enable'.<br /><br /><b>Possible Values:seconds</b><br /><i>Applicable scanner types: Bluetooth only</i><br /><i>Default: Device specific</i></td></tr></table>
 <table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
@@ -247,7 +234,7 @@ The Enum Scanner Event is used to ascertain the scanners present on the device.
 
 
 ##Multi Instance
-When multiple RhoElememts applications are running the following considerations should be made: Only the foreground RhoElements application is given access to the device scanner, when an application is sent to the background its state will be saved and it will automatically relinquish control of the Scanner.  When brought back to the foreground, an application previously using the scanner will have its previous configuration (eg. selected decoders) reapplied to the scanner automatically.
+When multiple RhoElememts applications are running the following considerations should be made: only the foreground RhoElements application is given access to the device scanner, when an application is sent to the background its state will be saved and it will automatically relinquish control of the Scanner.  When brought back to the foreground, an application previously using the scanner will have its previous configuration (eg. selected decoders) reapplied to the scanner automatically.
 
 
 ##Remarks

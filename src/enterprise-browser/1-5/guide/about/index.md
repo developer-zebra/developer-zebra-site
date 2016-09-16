@@ -13,37 +13,41 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ## New in v1.5 (unreleased)
 
+Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices and a range of new features for Android and Windows Mobile/CE devices.  
+
 ####Zebra Device Support
-  * **TC70 and TC75 with Android Lollipop**
-  * **WT6000 with Android Lollipop**
-  * **MC40 with Android Lollipop**
-  * **MC67 with Android KitKat** 
-  * **WorkAbout Pro 4 with Windows Embedded Handheld 6.5**
-  * **Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5** 
-  * **RS6000, RS4000 and RS507 ring scanners for use with WT6000**
-  * **Psion XT15, VH10 and WAP**
+  * TC70 and TC75 with Android Lollipop
+  * WT6000 with Android Lollipop
+  * MC40 with Android Lollipop
+  * MC67 with Android KitKat
+  * WorkAbout Pro 4 with Windows Embedded Handheld 6.5
+  * Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5
+  * RS6000, RS4000 and RS507 ring scanners for use with WT6000
+  * Psion XT15, VH10 and WAP
 
 [See all supported devices](../about#mobile)
 
 ####New or Updated APIs (released with EB 1.5)
 
-* **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator device signals (**Android only**). 
+* **New [RemoteNotification API](../../api/remotenotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator device signals (**Android only**). 
 
-* **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues on some devices. 
+* **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues that were present on some devices. 
 
 * **Updated [Device API](../../api/device) -** allows JavaScript to access **acquirePartialWakeLock** and **releasePartialWakeLock** functions programmatically. 
 
 #### New Features
 
-* **[Simplified config file deployment](../keycapture)** streamlines the process of deploying Enterprise Browser runtime and keymapping configuration settings to devices, with or without the EB app itself (**Android only**). 
+* **[Simplified mass deployment](../keycapture)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
+
+* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits a greater control over values extracted from Android devices for configuring the Android UserAgent string. 
 
 #### New Tags for Android
 
-* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** provides a simple means of enabling debugging of Enterprise Browser apps using Chrome.
+* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** enables debugging of Enterprise Browser apps using **Chrome Inspector**.
 
 * **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
 
-* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements) -** enabled by default, allows automatic media playback to be disabled.
+* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements) -** allows automatic media playback to be disabled by default.
 
 #### New Tags for Windows Mobile/CE
 
@@ -51,7 +55,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 * **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control cached pages will be refreshed.
 
-* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** sets the default location of client authentication certificates on the device.
+* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
 
 #### New Guides (released with EB 1.4)
 

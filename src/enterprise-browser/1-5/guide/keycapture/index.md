@@ -5,9 +5,9 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview
-Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). The keycodes for keys with multiple values (such as upper and lower case) are accessed with the shift or other modifier key and in some cases cannot be captured. Enterprise Browser 1.5 permits Android keycode values to be assigned from a file when an Enterprise Browser app starts up.
+Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). Apps made with Enterprise Browser 1.4 and higher permit Android keycode values to be assigned from a file when an Enterprise Browser app starts up. **Note**: The keycodes for keys with multiple values accessed with the shift or other modifier key (such as upper and lower case) might not be capturable. See the [KeyCapture API remarks](../../api/keycapture/#remarks) for more information. 
 
-> **Note**: This guide applies only to Android.
+> **This guide applies only to Android**.
 
 ### Keycode Handling 
 On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
@@ -21,7 +21,7 @@ The following facts apply generally to keycode mapping for Enterprise Browser:
 * The mapping file is read each time Enterprise Browser is launched.
 * Upon app install, a mapping-file template is placed in the EB installation directory, usually `sdcard0/android/data/com.symbol.enterprisebrowser`.
 * Keycodes not mapped (or left blank in the mapping file) retain their default values. 
-* [Additional restrictions](../../api/keycapture?Remarks) apply to keycapture and keycode mapping. 
+* [Additional restrictions](../../api/keycapture/#remarks) apply to keycapture and keycode mapping. 
 
 ##Mapping Keycodes 
 To assign custom keycodes to Android hard or soft keys, follow these simple steps:  

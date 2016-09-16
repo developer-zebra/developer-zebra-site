@@ -50,7 +50,7 @@ automenu:
           url: NativeMenubar
         - title: NativeTabbar
           url: NativeTabbar
-        - title: Native Toolbar
+        - title: NativeToolbar
           url: NativeToolbar
         - title: Network
           url: Network
@@ -60,6 +60,10 @@ automenu:
           url: printing
         - title: PrinterZebra
           url: printingzebra
+        - title: Push
+          url: push
+        - title: RemoteNotification
+          url: remotenotification
         - title: ScreenOrientation
           url: screenorientation
         - title: Sensor
@@ -130,7 +134,7 @@ automenu:
           url: re2x/imager
         - title: KeyCapture
           url: re2x/keycapture
-        - title: Keylight
+        - title: KeyLight
           url: re2x/Keylight
         - title: KeyState
           url: re2x/keystate
@@ -174,7 +178,7 @@ automenu:
           url: re2x/SignatureCapture
         - title: SIP
           url: re2x/sip
-        - title: SipButton
+        - title: SIPButton
           url: re2x/sipbutton
         - title: StopButton
           url: re2x/stopbutton
@@ -246,7 +250,7 @@ automenu:
           url: pb3x/imager
         - title: KeyCapture
           url: pb3x/keycapture
-        - title: Keylight
+        - title: KeyLight
           url: pb3x/keylight
         - title: KeyState
           url: pb3x/keystate

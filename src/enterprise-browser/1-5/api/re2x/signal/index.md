@@ -87,7 +87,11 @@ The WINS server address and dhcpStatic data are not available on the ET1. Also t
 ###Parameter Deprecation
 For users migrating their PocketBrowser apps to RhoElements please note that due to the difference in the signal indicator graphic, the GraphPosition and IconPosition parameters have been deprecated. Please use the Layout parameter instead.
 
+###Devices lacking support
+Due to platform limitations this API is not available on the following Zebra Technologies devices on specific platform:
 
+* VH10 CE 6.0
+* Omnii XT15 CE 6.0
 
 
 ##Requirements
@@ -100,28 +104,27 @@ For users migrating their PocketBrowser apps to RhoElements please note that due
 
 The following example shows the wireless signal indicator, sets the position to (50, 50), the color of the indicator beneath the bars growing from right to left:
 
-	<META HTTP-Equiv="Signal" Content="Visibility:Visible">
-	<META HTTP-Equiv="Signal" Content="Left:50">
-	<META HTTP-Equiv="Signal" Content="Top:50">
-	<META HTTP-Equiv="Signal" Content="Layout:Left">
-	<META HTTP-Equiv="Signal" Content="Color:#FF0000">
+		:::html
+		<META HTTP-Equiv="Signal" Content="Visibility:Visible">
+		<META HTTP-Equiv="Signal" Content="Left:50">
+		<META HTTP-Equiv="Signal" Content="Top:50">
+		<META HTTP-Equiv="Signal" Content="Layout:Left">
+		<META HTTP-Equiv="Signal" Content="Color:#FF0000">
 	
 Above example can also be written in EMML1.1 as given below
 
-	<META HTTP-Equiv="Signal" Content="Left:50; Top:50; Color:#FF0000; Layout:Left; Visibility:Visible">
+		:::html
+		<META HTTP-Equiv="Signal" Content="Left:50; Top:50; Color:#FF0000; Layout:Left; Visibility:Visible">
 	
 In EMML1.1 it is also possible to concatenate the Parameter with the module name. The example above can also be written as:
 
-	<META HTTP-Equiv="Signal-Left" Content="50">
-	<META HTTP-Equiv="Signal-Top" Content="50">
-	<META HTTP-Equiv="Signal-Color" Content="#FF0000">
+		:::html
+		<META HTTP-Equiv="Signal-Left" Content="50">
+		<META HTTP-Equiv="Signal-Top" Content="50">
+		<META HTTP-Equiv="Signal-Color" Content="#FF0000">
 	
 The following example navigates to a new page with parameters upon a wireless signal status change:
 
-	<META HTTP-Equiv="Signal" Content="signalevent:url('mypage.asp?Signal percentage=%s&ESSID=%s&MacAdd=%s&Adapter=%s&DHCPServ=%s&Mode=%s&Gateway=%s&IPAddress=%s&RSSI=%s&Subnet=%s&Wins=%s')">
+		:::html
+		<META HTTP-Equiv="Signal" Content="signalevent:url('mypage.asp?Signal percentage=%s&ESSID=%s&MacAdd=%s&Adapter=%s&DHCPServ=%s&Mode=%s&Gateway=%s&IPAddress=%s&RSSI=%s&Subnet=%s&Wins=%s')">
 	
-
-
-
-
-

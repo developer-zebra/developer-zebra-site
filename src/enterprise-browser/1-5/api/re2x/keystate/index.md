@@ -63,6 +63,8 @@ When the screen orientation changes, either using the ScreenOrientation tag or b
 Due to platform limitations this API is not available on the following Zebra Technologies devices:
 
 * Workabout Pro 4
+* VH10
+* Omnii XT15
 
 
 ##Requirements
@@ -83,8 +85,6 @@ The following example shows the KeyState and sets the right and top coordinates 
 
 	<META HTTP-Equiv="KeyState" Content="Visibility:Visible; Right:20; Top:20">
 	        
-
-
 
 
 

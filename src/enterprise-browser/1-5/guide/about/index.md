@@ -27,7 +27,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ####New or Updated APIs (released with EB 1.5)
 
-* **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator (**Android only**). 
+* **New [RemoteNotification API](../../api/remoteNotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator device signals (**Android only**). 
 
 * **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues on some devices. 
 

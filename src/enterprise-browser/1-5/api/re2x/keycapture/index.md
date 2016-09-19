@@ -28,19 +28,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>keyCapture</b>.setEMML("dispatch:<i>value</i>;keyEvent:url('JavaScript:doFunction(%json)')");                           
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">KeyCapture Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'KeyCapture'</b> will exist on the current page and can be used to interact directly with the KeyCapture. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'KeyCapture'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set KeyCapture parameters via Ruby use the following syntax: KeyCapture.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>KeyCapture</b>.dispatch = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsOddRow">                     
-To Set KeyCapture return events via Ruby use the following syntax: KeyCapture.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>KeyCapture</b>.keyEvent = url_for(:action =&gt; :keycapture_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow" /></tr></table>
-
-
-
 
 ##Parameters
 

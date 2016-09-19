@@ -24,17 +24,7 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>keyState</b>.setEMML("right:<i>value</i>");							
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">KeyState Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'KeyState'</b> will exist on the current page and can be used to interact directly with the KeyState. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'KeyState'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set KeyState parameters via Ruby use the following syntax: KeyState.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>KeyState</b>.right = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
-
-
-
 ##Parameters
-
 
 Items listed in this section indicate parameters, or attributes which can be set.
 <table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>right:[Value]

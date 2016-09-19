@@ -34,24 +34,7 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>scanner</b>.setEMML("enabled:<i>value</i>;decodeEvent:url('JavaScript:doFunction(%json)');enumerate");              
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">Scanner Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the Scanner. All Methods, Parameters and Events are the same as Javascript, however, notice <b>'Scanner'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Scanner methods via Ruby use the following syntax: Scanner.method()
-<P />e.g. <b>Scanner</b>.enumerate</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set Scanner parameters via Ruby use the following syntax: Scanner.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Scanner</b>.enabled = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">            
-To Set Scanner return events via Ruby use the following syntax: Scanner.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>Scanner</b>.decodeEvent = url_for(:action =&gt; :scanner_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
-
-  
-
 ##Methods
-
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 

@@ -7,9 +7,12 @@ subhead: RhoElements 2.x API
 ---
 
 ## Overview
-The RFID Module provides access to functionality of the device's RFID reader, if so equipped. **Limited device support. This module is not included with the default RhoElements/RhoStudio installers; it must be downloaded and installed separately [(SEE REMARKS)](#remarks)**.
+The RFID Module provides access to functionality of the device's RFID reader, if so equipped. 
+
+**Limited device support**. This module is supported only on Zebra MC3190-Z and MC9190-Z RFID reader devices, and is not included with the standard installation. Use of the RFID module might therefore require a separate download and installation. [See Remarks section](#remarks) for more information.
 
 ## Syntax
+
 <table class="re-table">
 	<tr>
 		<th class="tableHeading">rfid (Module) &lt;META&gt; Syntax</th>

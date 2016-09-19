@@ -247,7 +247,6 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
-
 ###General
 If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes. On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen.
 
@@ -266,6 +265,9 @@ AutoEnter and AutoTab are mutually exclusive, only one can be enabled at any one
 
 ###Bluetooth Scanner Overview
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' meta tag followed by the 'enabled' meta tag, this will allow you to scan the BT association barcode with a different scanner. You can override this default behaviour using the disconnectBtOnDisable parameter.
+
+###Psion Omnii XT15
+On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
 
 <pre>
 

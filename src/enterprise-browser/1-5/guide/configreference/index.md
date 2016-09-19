@@ -389,6 +389,30 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 	    <WakeLockType value=""/>
 	</WakeLock>
 
+
+### FunctionKeyMapping
+**Applies only to Psion devices running Windows Mobile, including the Omnii XT15 and Workabout Pro.** Controls whether Psion proprietary Unicode values are returned in the Windows `keydown/keyup` message for function keys, or if default values will be replaced with those specified in a file (see below). 
+
+**Notes**: 
+
+* **This tag is not present in the default** `Config.xml` **file**, and must be manually added to map Psion function keys. 
+* **The &lt;FunctionKeyMapping&gt; node** (shown in the example below) must be added as a child node of the &lt;Configuration&gt; node. 
+* **Use of this tag requires the mapping file to be created separately:**
+	* File name: `EBFunctionKeyMapping.xml`
+	* File location (on device): `\Program Files\EnterpriseBrowser`
+* **See the [Keycode Mapping Guide](../keycapture)** for more information. 
+
+**Possible Values**:
+
+* 0 - Disabled (does not map Psion function keys)
+* 1 - Enabled (maps Psion function keys)
+
+#### Example
+	:::xml
+	<FunctionKeyMapping> 
+    	<FunctionKeyMappingToStandardMSValue value="1"/> 
+	</FunctionKeyMapping> 
+
 -----
 
 ## IntentReceiver
@@ -426,6 +450,9 @@ Specifies the Category under which the receiver is to be registered. There can b
 #### Example
 	:::xml
 	<IntentCategory value="android.intent.category.LAUNCHER"/>
+
+
+
 
 -----
 

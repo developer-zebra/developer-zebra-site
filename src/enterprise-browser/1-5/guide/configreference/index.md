@@ -404,8 +404,8 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 **Possible Values**:
 
-* 0 - Disabled (does not map Psion function keys)
-* 1 - Enabled (maps Psion function keys)
+* 0 - Disabled (or if node is not present, does not map Psion function keys)
+* 1 - Enabled (maps Psion function keys from `EBFunctionKeyMapping.xml` file)
 
 #### Example
 	:::xml

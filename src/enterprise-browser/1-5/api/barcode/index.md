@@ -8,12 +8,15 @@ layout: guide.html
 ## Overview
 The Barcode Module controls functionality of the device scanner. Check the platform indicators in each property or method section. If developing for a device with only a camera, the number of symbologies available will be limited only to the most common such as EAN13 and UPCA, and scanning will be available only through the device camera. If the app is running on more well-equipped hardware, finer control over a more fully featured Scanner wilol be available, often with a choice of scanner hardware to use on the device. 
 
-If the use case involves capturing a single barcode (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app will decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and recieving app), then Zebra recommends using the `Barcode.enable(callback)` method. 
+If the use case involves capturing a single barcode (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app will decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
 
-**Note**: Only foreground apps have access to scanning hardware. When an app is sent to the background, its state is saved and scanner control is automatically relinquished. When a scanner app returns to the foreground, its previous state is reapplied. 
+**Notes**: 
+* **Only foreground apps have access to scanning hardware**. When an app is sent to the background, its state is saved and scanner control is automatically relinquished. When a scanner app returns to the foreground, its previous state is reapplied. 
 
-> **On the VC70**, the scanner will work only if connected in SSI Mode.
-        
+* **On the VC70**, the scanner will work only if connected in SSI Mode.
+
+* **EB 1.5 now supports the `decodeSound` method**. A bug in the method had prevented apps made with EB 1.4 and earlier from using the method.  
+
 ## Enabling the API
 There are two methods of enabling the Barcode API:
 

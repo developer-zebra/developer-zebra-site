@@ -395,11 +395,11 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 **Notes**: 
 
-* **This tag is not present in the default** `Config.xml` **file**, and must be manually added to map Psion function keys. 
-* **The &lt;FunctionKeyMapping&gt; node** (shown in the example below) must be added as a child node of the &lt;Configuration&gt; node. 
-* **Use of this tag requires the mapping file to be created separately:**
+* **This tag is not present in the default** `Config.xml` **file**; it must be added manually if Psion function-key mapping is required. 
+* **The &lt;FunctionKeyMapping&gt; node** (shown in the example below) is a child node of the &lt;Configuration&gt; node. 
+* **Use of this tag requires the mapping file to be created separately** as follows:
 	* File name: `EBFunctionKeyMapping.xml`
-	* File location (on device): `\Program Files\EnterpriseBrowser`
+	* File location (on device): `\Program Files\EnterpriseBrowser\`
 * **See the [Keycode Mapping Guide](../keycapture)** for more information. 
 
 **Possible Values**:

@@ -34,7 +34,7 @@ automenu:
           url: featuredemo
         - title: Printing
           url: printingGuide
-        - title: Key Remapping
+        - title: Keycode Mapping
           url: keycapture
         - title: SAP ITSmobile
           url: sap

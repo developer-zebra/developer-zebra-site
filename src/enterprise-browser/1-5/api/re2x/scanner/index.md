@@ -269,22 +269,19 @@ On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode succe
 ###Bluetooth Scanner Overview
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' meta tag followed by the 'enabled' meta tag, this will allow you to scan the BT association barcode with a different scanner. You can override this default behaviour using the disconnectBtOnDisable parameter.
 
-<pre>
-The following messages will be received from the Bluetooth Scanner in the bluetoothStatus event:
+The following messages will be received from the Bluetooth Scanner in the `bluetoothStatus` event:
 
 **BTScanAssociationBarcode -** the device is ready to be associated with a BT scanner. You must scan the association barcode. It is only necessary to scan the association barcode when you first associate a scanner with the device, this pairing will be remembered until you scan the unpairing barcode.
 
 **BluetoothConnected -** the remote scanner has successfully connected to the device.
   
 **BluetoothDisconnected -** the remote scanner has become disconnected from the device, this may be due to loss of battery, being out of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for a period of time once it regains power or goes out of range, if it fails to reconnect after the specified timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
-</pre>
 
 
 ###Bluetooth Scanner Support On Android Devices
 On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device.
 
 On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
-
 
 ###ScannerArray attribute
 The ScannerArray attribute returned from Scanner tag with parameter "EnumScannerEvent" will enumerate each scanner present on the device in a 2D array, associating each scanner's device name with a user friendly name. The device ID can be passed as a parameter to "Scanner" "Enabled:&lt;deviceID&gt;", the friendly name is a user readable description of the scanner, e.g:

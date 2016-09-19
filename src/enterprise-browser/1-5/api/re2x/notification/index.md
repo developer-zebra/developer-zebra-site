@@ -78,7 +78,6 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
-
 ###No Notification Objects
 If the device has no notification objects the array returned by EnumNotificationsEvent will be empty
 

@@ -263,31 +263,20 @@ In some device configurations the scanner and imager share the same hardware, e.
 AutoEnter and AutoTab are mutually exclusive, only one can be enabled at any one time. If both are enabled then AutoEnter will take priority.
 
 
+###Psion Omnii XT15
+On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
+
 ###Bluetooth Scanner Overview
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' meta tag followed by the 'enabled' meta tag, this will allow you to scan the BT association barcode with a different scanner. You can override this default behaviour using the disconnectBtOnDisable parameter.
 
-###Psion Omnii XT15
-On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
-
 <pre>
-
 The following messages will be received from the Bluetooth Scanner in the bluetoothStatus event:
 
-* 'BTScanAssociationBarcode' 
-   Means the device is ready to be associated with a BT scanner.  You must scan the 
-   association barcode.  It is only necessary to scan the association 
-   barcode when you first associate a scanner with the device, this pairing will be remembered until
-   you scan the unpairing barcode.
+**BTScanAssociationBarcode -** the device is ready to be associated with a BT scanner. You must scan the association barcode. It is only necessary to scan the association barcode when you first associate a scanner with the device, this pairing will be remembered until you scan the unpairing barcode.
 
-* 'BluetoothConnected'
-   The remote scanner has successfully connected to the device.
+**BluetoothConnected -** the remote scanner has successfully connected to the device.
   
-* 'BluetoothDisconnected'
-   The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
-   of range or scanning the 'unpairing' barcode.  The scanner will attempt to reconnect automatically for
-   a period of time once it regains power or goes out of range, if it fails to reconnect after the specified
-   timeout the reconnect button on the device should be pushed.  Once the unpairing barcode is scanned
-   it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
+**BluetoothDisconnected -** the remote scanner has become disconnected from the device, this may be due to loss of battery, being out of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for a period of time once it regains power or goes out of range, if it fails to reconnect after the specified timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
 </pre>
 
 

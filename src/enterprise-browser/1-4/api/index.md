@@ -62,8 +62,6 @@ automenu:
           url: printingzebra
         - title: Push
           url: push
-        - title: RemoteNotification
-          url: remotenotification
         - title: ScreenOrientation
           url: screenorientation
         - title: Sensor

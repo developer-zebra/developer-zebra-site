@@ -30,22 +30,17 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-browser/1-5/guide/about
+        url: /enterprise-browser/1-4/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-5/guide/gettingstarted
+        url: /enterprise-browser/1-4/guide/gettingstarted
       - title: Setup
-        url: /enterprise-browser/1-5/guide/setup/
+        url: /enterprise-browser/1-4/guide/setup/
       - title: Tutorials
-        url: /enterprise-browser/1-5/tutorial/
+        url: /enterprise-browser/1-4/tutorial/
       - title: Usage Guides
-        url: /enterprise-browser/1-5/guide
+        url: /enterprise-browser/1-4/guide
       - title: APIs
-        url: /enterprise-browser/1-5/api
-    versions:
-      - url: /enterprise-browser/1-5/guide/about/
-        menu: '1.5'
-      - url: /enterprise-browser/1-4/guide/about/
-        menu: '1.4'
+        url: /enterprise-browser/1-4/api
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-4/guide/about

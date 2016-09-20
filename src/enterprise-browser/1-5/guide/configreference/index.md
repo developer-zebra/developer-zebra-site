@@ -268,77 +268,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 
 -----
-
-## General
-### StartPage
-Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`. For URLs, accepts UTF-8 characters only. Case sensitive. 
-
-**Possible Values**:
-
-* Fully qualified path to start page
-
-#### Example
-	:::xml
-	<StartPage value="file:///index.html" name="Start Page"/>
-
-	<!-- OR -->
-
-	<StartPage value="http://www.hostsite.com/my_app_menu.html" name="Menu"/>
-
-### Name
-Stores the name of the application.
-
-**Possible Values**:
-
-* ASCII text
-
-#### Example
-	:::xml
-	<Name value="My App"/>
-
-### UseRegularExpressions
-Used to maintain backward compatibility with PocketBrowser syntax for controlling device capabilities. This is accomplished through a Regular Expression engine, which applies a series of transformations as defined in `RegEx.xml` to each meta tag or JavaScript call being processed. If backward compatibility is not required, regular expressions can be safely disabled to help improve app performance (depending on app structure). **Applies only to apps for Windows Mobile/CE devices built with RhoMobile Suite 2.2 or higher that need backward compatibility with PocketBrowser**.
-
-**Possible Values**:
-
-* 0 - Do Not Use Regular Expressions
-* 1 - Use Regular Expressions
-
-#### Example
-	:::xml
-	<UseRegularExpressions value='1'/>
-
-### HTTP_Proxy
-**Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTP proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used; proxy settings for Internet Explorer are picked up from the Windows connection manager.
-
-**Possible Values**:
-
-* URL: PortNo
-
-#### Example
-	:::xml
-	<HTTP_Proxy value="http://my.proxy.com:8080"/>
-
-### HTTPS_Proxy
-**Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTPS proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used. Not otherwise supported on WM/CE; use HTTP_Proxy instead.
-
-**Possible Values**:
-
-* URL: PortNo
-
-#### Example
-	:::xml
-	<HTTPS_Proxy value="https://my.proxy.com:8181"/>
-
-### No_Proxy
-**Applies to the Zebra Webkit engine only**. Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
-**Possible Values**:
-
-* Comma separated list of direct access addresses.
-
-#### Example
-	:::xml
-	<No_Proxy value="*.my_app.com,http://internal.site.com"/>
+## Application
 
 ### SplashScreenPath
 Specifies the fully qualified path of an image to be displayed at app start-up. If tag is removed or left unspecified, default EB splash screen will be displayed. Default values for Android and WM/CE are shown in the examples below. Image file must reside in device internal storage; removable storage (i.e. SD card) is not supported. Supported file formats for WM/CE are .bmp, .png; for Android are .bmp, .gif, .jpg, .png. A 640 x 960 .png file is recommended; other resolutions may not display correctly. 
@@ -413,6 +343,44 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
     	<FunctionKeyMappingToStandardMSValue value="1"/> 
 	</FunctionKeyMapping> 
 
+### StartPage
+Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`. For URLs, accepts UTF-8 characters only. Case sensitive. 
+
+**Possible Values**:
+
+* Fully qualified path to start page
+
+#### Example
+	:::xml
+	<StartPage value="file:///index.html" name="Start Page"/>
+
+	<!-- OR -->
+
+	<StartPage value="http://www.hostsite.com/my_app_menu.html" name="Menu"/>
+
+### Name
+Stores the name of the application.
+
+**Possible Values**:
+
+* ASCII text
+
+#### Example
+	:::xml
+	<Name value="My App"/>
+
+### UseRegularExpressions
+Used to maintain backward compatibility with PocketBrowser syntax for controlling device capabilities. This is accomplished through a Regular Expression engine, which applies a series of transformations as defined in `RegEx.xml` to each meta tag or JavaScript call being processed. If backward compatibility is not required, regular expressions can be safely disabled to help improve app performance (depending on app structure). **Applies only to apps for Windows Mobile/CE devices built with RhoMobile Suite 2.2 or higher that need backward compatibility with PocketBrowser**.
+
+**Possible Values**:
+
+* 0 - Do Not Use Regular Expressions
+* 1 - Use Regular Expressions
+
+#### Example
+	:::xml
+	<UseRegularExpressions value='1'/>
+
 -----
 
 ## IntentReceiver
@@ -450,9 +418,6 @@ Specifies the Category under which the receiver is to be registered. There can b
 #### Example
 	:::xml
 	<IntentCategory value="android.intent.category.LAUNCHER"/>
-
-
-
 
 -----
 
@@ -1138,6 +1103,67 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 #### Example
 	:::xml
 	<ScrollTechnique value="FingerScroll"/>
+
+-----
+
+## Configuration 
+
+### HTTP_Proxy
+**Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTP proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used; proxy settings for Internet Explorer are picked up from the Windows connection manager.
+
+**Possible Values**:
+
+* URL: PortNo
+
+#### Example
+	:::xml
+	<HTTP_Proxy value="http://my.proxy.com:8080"/>
+
+### HTTPS_Proxy
+**Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTPS proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used. Not otherwise supported on WM/CE; use HTTP_Proxy instead.
+
+**Possible Values**:
+
+* URL: PortNo
+
+#### Example
+	:::xml
+	<HTTPS_Proxy value="https://my.proxy.com:8181"/>
+
+### No_Proxy
+**Applies to the Zebra Webkit engine only**. Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
+**Possible Values**:
+
+* Comma separated list of direct access addresses.
+
+#### Example
+	:::xml
+	<No_Proxy value="*.my_app.com,http://internal.site.com"/>
+
+
+### isWindowsKey
+**Applies to Android devices with PocketBrowser or RhoElements 2.x or 4.x KeyCapture API only**. Allows hardware keys of an Android device running Enterprise Browser 1.2 (or later) to mimic Windows Mobile keycodes when used with the KeyCapture API of PocketBrowser or RhoElements 2.x or 4.x. When enabled, the application will substitute normal Android keycodes with the Windows Mobile function keycode values for all keys. This can be useful for supporting both Android and Windows device platforms with a single codebase. If set to 0 or not present, the application will receive Android function keycode values.  
+
+**Possible Values**:
+
+* **0 - Disabled (default); Android keycodes are used for all function keys**
+* 1 - Enabled; Windows Mobile keycodes are substituted for all Android function keys
+
+#### Example
+	:::xml
+	<isWindowsKey value="1"/>
+
+### usedwforscanning
+**Applies to Android only**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
+
+**Possible Values**:
+
+* **0 - Enable scanning through Enterprise Browser APIs (default; DataWedge disabled)**
+* 1 - Enable scanning through DataWedge (Enterprise Browser scanning disabled)
+
+#### Example
+	:::xml
+	<useDWforScanning value="0"/>
 
 -----
 
@@ -1938,20 +1964,6 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 
 -----
 
-## isWindowsKey
-**Applies to Android devices with PocketBrowser or RhoElements 2.x or 4.x KeyCapture API only**. Allows hardware keys of an Android device running Enterprise Browser 1.2 (or later) to mimic Windows Mobile keycodes when used with the KeyCapture API of PocketBrowser or RhoElements 2.x or 4.x. When enabled, the application will substitute normal Android keycodes with the Windows Mobile function keycode values for all keys. This can be useful for supporting both Android and Windows device platforms with a single codebase. If set to 0 or not present, the application will receive Android function keycode values.  
-
-**Possible Values**:
-
-* **0 - Disabled (default); Android keycodes are used for all function keys**
-* 1 - Enabled; Windows Mobile keycodes are substituted for all Android function keys
-
-#### Example
-	:::xml
-	<isWindowsKey value="1"/>
-
------
-
 ## Shortcut Creation
 ###ShortcutCreationEnabled
 **Applicable only when using the Enterprise Browser Shortcut Creator utility;** otherwise ignored. Controls automatic creation of app shortcuts on Android and Windows Mobile/CE target devices when Enterprise Browser is launched. When option 1 is selected, checks for and creates new shortcuts at every launch. Setting persists following EB uninstall/re-install. Setting is lost after cold reboot. Disabled by default.  For more information, please refer to the [Shortcut Creator guide](../ShortcutCreator). 
@@ -1978,20 +1990,6 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 ####Example
 	:::xml
 	<KeepAlive value="1"/>
-
------
-
-## usedwforscanning
-**Applies to Android only**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
-
-**Possible Values**:
-
-* **0 - Enable scanning through Enterprise Browser APIs (default; DataWedge disabled)**
-* 1 - Enable scanning through DataWedge (Enterprise Browser scanning disabled)
-
-#### Example
-	:::xml
-	<useDWforScanning value="0"/>
 
 -----
 

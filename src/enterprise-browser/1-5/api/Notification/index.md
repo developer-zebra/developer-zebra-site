@@ -196,9 +196,6 @@ Synchronous Return:
 
 ##Remarks
 
-###Psion VH10 with Windows CE 6.0
-On the Psion VH10 with Windown CE 6, the LED, beeper, pager and other objects activated through the Notification API are not supported, despite being enumerated through the `notification.enumerate();` function call.
-
 ###Maximum vibrate duration
 On Android, the maximum duration for vibrate is 15 seconds (15000ms).
 

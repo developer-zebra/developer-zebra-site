@@ -61,7 +61,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
 
-* **[Keycode Mapping Guide](../keycapture)** explains how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
+* **[Keycode Mapping Guide](../keycapture)** updated to include **function key mapping for Psion devices** running Windows Mobile. Also details Android key remapping to ensure that keycode values are delivered to apps as expected. 
 
 ### Key Enterprise Browser Features
 

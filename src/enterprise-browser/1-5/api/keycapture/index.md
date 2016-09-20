@@ -238,9 +238,10 @@ Certain devices may map their function keys to apparently normal keys. For examp
 ###Use of Key Capture module on Localized Operating Systems
 Users of the key capture module with Chinese, Korean and Japanese operating systems should bear the following in mind: Internally the KeyCapture module stores key representations as VK codes, therefore the key event will always return VK_PROCESSKEY (229) and keys can not be individually specified. In JavaScript the DOM element's keyup event can be used as an indication of which key has been pressed.
 
-###Behavior of function keys on Zebra - Psion WM Devices
-The keycode value of function keys on Zebra - Psion WM devices doesnot return Microsoft virtual keyCode value. Instead, it returns the Psion proprietary Unicode value. Hence inorder to get the Microsoft virtual keyCode value one must refer [Function Key Mapping On Zebra - Psion Windows Mobile Device](https://developer.zebra.com/thread/32954) guide. The device for which Function Key Mapping is applicable is listed below.
+###Function keys on Zebra Psion WM Devices
+The function keys on Zebra Psion devices running Windows Mobile (such as those listed below) do not return Microsoft virtual keycode value, but instead return a Psion proprietary Unicode value. This can lead to compatibility issues for Enterprise Browser apps running on these devices: 
 
 * Workabout Pro 4 WEH Device
 * Omnii XT15 WEH Device
                 
+To configure Enterprise Browser to return the Microsoft virtual keycode value, see the [Keycode Mapping Guide](../../guide/keycapture/#mappingpsionfunctionkeys).

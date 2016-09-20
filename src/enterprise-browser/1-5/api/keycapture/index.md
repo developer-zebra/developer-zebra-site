@@ -241,6 +241,6 @@ Users of the key capture module with Chinese, Korean and Japanese operating syst
 ###Behavior of function keys on Zebra - Psion WM Devices
 The keycode value of function keys on Zebra - Psion WM devices doesnot return Microsoft virtual keyCode value. Instead, it returns the Psion proprietary Unicode value. Hence inorder to get the Microsoft virtual keyCode value one must refer [Function Key Mapping On Zebra - Psion Windows Mobile Device](https://developer.zebra.com/thread/32954) guide. The device for which Function Key Mapping is applicable is listed below.
 
-                      * Workabout Pro 4 WEH Device
-                      * Omnii XT15 WEH Device
+* Workabout Pro 4 WEH Device
+* Omnii XT15 WEH Device
                 

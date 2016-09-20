@@ -15,14 +15,18 @@
                                 <div class="">
                                     <h1>{{ title }}</h1>
                                     <p>
-                                    {{#if product}}
-                                        {{ product }}
-                                    {{/if}}
-                                    {{#if productversion}}
-                                        {{ productversion }}
-                                    {{/if}}
-                                    {{#if mxversion}}
-                                        MX: {{ mxversion}}
+                                    {{#if subhead}}
+                                        {{ subhead }}
+                                    {{else}}
+                                        {{#if product}}
+                                            {{ product }}
+                                        {{/if}}
+                                        {{#if productversion}}
+                                            {{ productversion }}
+                                        {{/if}}
+                                        {{#if mxversion}}
+                                            MX: {{ mxversion}}
+                                        {{/if}}
                                     {{/if}}
                                     </p>
                                 </div>

@@ -180,26 +180,27 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  <Applications>
 	    <Application>
 	      
-	      <HTTP_Proxy value=""/>
-	      <HTTPS_Proxy value=""/>
-	      <isWindowsKey  value="0"/>
-	      <usedwforscanning  value="0"/>
-	      <IntentReceiver>
+	    <HTTP_Proxy value=""/>
+		<HTTPS_Proxy value=""/>
+	    <isWindowsKey  value="0"/>
+	    <usedwforscanning  value="0"/>
+	   	
+	   	<IntentReceiver>
 	        <EnableReceiver  value="0"/>
 	        <IntentAction  value=""/>
 	        <IntentCategory  value=""/>
-	      </IntentReceiver>
-		  
-	      <General>
+	   	</IntentReceiver>
+		 
+	   	<General>
 	        <Name value="Menu"/>
 	        <StartPage value="file://%INSTALLDIR%/test.html" name="Menu"/>
-	      </General>
+	   	</General>
 	      
-	      <Scanner>
+	   	<Scanner>
 	        <DisableScannerDuringNavigation value="1"/>
-	      </Scanner>
+	    </Scanner>
 	      
-		  <Authentication>
+		<Authentication>
 			<!--  Used for Digest Access Authentication and Basic Access Authentication -->
 			<!--  Global  -->
 			<Username VALUE=""/>
@@ -268,7 +269,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 
 -----
-## Application
+## Configuration
 
 ### SplashScreenPath
 Specifies the fully qualified path of an image to be displayed at app start-up. If tag is removed or left unspecified, default EB splash screen will be displayed. Default values for Android and WM/CE are shown in the examples below. Image file must reside in device internal storage; removable storage (i.e. SD card) is not supported. Supported file formats for WM/CE are .bmp, .png; for Android are .bmp, .gif, .jpg, .png. A 640 x 960 .png file is recommended; other resolutions may not display correctly. 
@@ -1106,7 +1107,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 -----
 
-## Configuration 
+## Application 
 
 ### HTTP_Proxy
 **Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTP proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used; proxy settings for Internet Explorer are picked up from the Windows connection manager.

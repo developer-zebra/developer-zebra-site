@@ -50,27 +50,6 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 <!-- Table Break -->
 
-	<tr>
-		<th class="tableHeading">Rfid Ruby Object Syntax:</th></tr>
-		<tr>
-			<td class="clsSyntaxCells clsOddRow">By default the Ruby Object <b>'Rfid'</b> will exist on the current page and can be used to interact directly with the Rfid. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Rfid'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b>
-			</td>
-		</tr>
-		<tr>
-			<td class="clsSyntaxCells clsEvenRow">To Invoke Rfid methods via Ruby use the following syntax: Rfid.method()<P />e.g. <b>Rfid</b>.enumerate.
-			</td>
-		</tr>
-		<tr>
-			<td class="clsSyntaxCells clsOddRow">To Set Rfid parameters via Ruby use the following syntax: Rfid.parameter = 'value' remembering to enclose your value in quotes where appropriate.<P />e.g. <b>Rfid</b>.antennaSelected = 'value'
-			</td>
-		</tr>
-		<tr>
-			<td class="clsSyntaxCells clsEvenRow">To Set Rfid return events via Ruby use the following syntax: Rfid.event = url_for(:action =&gt; :event_callback)<P />e.g. <b>Rfid</b>.enumRFIDEvent = url_for(:action =&gt; :rfid_event_callback)<P /> For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p>
-			</td>
-		</tr>
-	</tr>
-</table>
-
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 

@@ -196,8 +196,6 @@ Synchronous Return:
 
 ##Remarks
 
-
-
 ###Maximum vibrate duration
 On Android, the maximum duration for vibrate is 15 seconds (15000ms).
 

@@ -1,11 +1,10 @@
 ---
 title: Enterprise Browser
-insert:
-  file: enterprise-browser/1-5/guide/about/index.md
-layout: guide.html
+img: eb-logo.png
+layout: list-mx.html
 menu:
   title: Enterprise Browser 1.5
-  img: enterprise_browser_logo.png
+  img: /enterprisep-browser/eb-logo.png
   versions:
     - versionto: 1-4
       versionfrom: 1-5
@@ -20,6 +19,8 @@ menu:
       url: /enterprise-browser/1-5/tutorial/
     - title: Guides
       url: /enterprise-browser/1-5/guide
+    - title: Config.xml
+      url: /enterprise-browser/1-5/guide/configreference
     - title: APIs
       url: /enterprise-browser/1-5/api
     - icon: fa fa-search
@@ -27,3 +28,15 @@ menu:
 product: Enterprise Browser
 productversion: '1.5'
 ---
+
+<!-- not sure where the "insert"  code came from, but removing it had no apparent effect: 
+(surrounding lines retained for context)
+
+title: Enterprise Browser
+insert:
+  file: enterprise-browser/1-5/guide/about/index.md
+layout: guide.html
+menu:
+  title: Enterprise Browser 1.5
+
+-->

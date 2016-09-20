@@ -18,9 +18,9 @@ layout: ebmatrix.html
 	data-toolbar="#toolbar">
     <thead>
     <tr>
-        <th data-field="api">Api</th>
-        <th data-field="engines">Engines</th>
-        <th data-field="os">Operating System</th>
+        <th data-field="api">API</th>
+        <th data-field="engines">Engine(s)</th>
+        <th data-field="os">Operating System(s)</th>
     </tr>
     </thead>
 </table>

@@ -4,7 +4,7 @@ img: eb-logo.png
 layout: list-mx.html
 menu:
   title: Enterprise Browser 1.5
-  img: /enterprisep-browser/eb-logo.png
+  img: /enterprise-browser/eb-logo.png
   versions:
     - versionto: 1-4
       versionfrom: 1-5

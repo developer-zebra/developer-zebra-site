@@ -322,7 +322,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 
 ### FunctionKeyMapping
-**Applies only to Psion devices running Windows Mobile, including the Omnii XT15 and Workabout Pro.** Controls whether Psion proprietary Unicode values are returned in the Windows `keydown/keyup` message for function keys, or if default values will be replaced with those specified in a file (see below). 
+**Applies only to Psion devices running Windows Mobile, including the Omnii XT15 and Workabout Pro.** Controls whether Psion proprietary Unicode values will be substituted with those specified in a file and used for Windows `keydown/keyup` function-key messages. **Applies on;y to function keys**. 
 
 **Notes**: 
 

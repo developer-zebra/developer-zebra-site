@@ -138,9 +138,11 @@ where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http:/
 -----
 
 ## Mapping Psion Function Keys 
-The function keys of Zebra's Psion devices running Windows Mobile return a proprietary set of Unicode values in their `keydown/keyup` messages rather than the values generally expected on other devices running Windows. For example, pressing the F1 key returns the hexadecimal value E001 (57345 decimal) rather than the hex value 0x70 (112 decimal) as generally expected. This can lead to compatibility issues for Enterprise Browser apps when Microsoft virtual keycode values will be called from some devices and Psion-proprietary values on others. 
+The function keys of Zebra's Psion devices running Windows Mobile return a proprietary set of Unicode values via Windows character messages rather than the values expected from Windows `keydown/keyup` messages. For example, pressing the F1 key returns the hexadecimal value E001 (57345 decimal) rather than the hex value 0x70 (112 decimal) as generally expected. This can lead to compatibility issues for Enterprise Browser apps when running on Psion devices with Windows Mobile. 
 
 For such scenarios, Zebra developed and recommends a means of mapping the Psion proprietary Unicode values of function keys used by an Enterprise Browser application to Microsoft virtual keycode values. 
+
+> **Note**: This method should be used only for function keys. 
 
 ### Enable and specify mapping
 Mapping the function keys on a Psion device requires adding a few lines to the app's `Config.xml` file, creating a file to specify the mapping assignments and copying the file to the device. 
@@ -189,7 +191,7 @@ To map multiple function key to Microsoft keycode values, simply repeat the `SET
  
 &#51;. Once the `EBFunctionKeyMapping.xml` mapping file is complete, **copy the file to the** `\Program Files\EnterpriseBrowser\` **directory on the device**.  
 
-> The function key(s) will be mapped as specified in the mapping file the next time Enterprise Browser is launched. 
+**The function key(s) will be mapped as specified in the mapping file the next time Enterprise Browser is launched**. 
 
 #### Contents of the Function Key Mapping File
 

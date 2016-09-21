@@ -2039,7 +2039,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-By default if you have enabled the Scanner on a page, through either JavaScript or Ruby and navigate to a new page the Scanner will automatically disable. To override this behavior you can set this option to false and once enabled the Scanner will remain so in the foreground application until you disable it.
+If the Scanner is enabled on a page through JavaScript, the scanner will be disabled by default when navigating to a new page. To override this behavior, set this option to false; the Scanner will remain enabled in the foreground application until specifically disabled.
 ####Params
 <p><strong>Default:</strong> true</p>
 ####Access

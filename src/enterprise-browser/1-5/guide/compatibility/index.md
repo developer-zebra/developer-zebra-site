@@ -1,10 +1,10 @@
 ---
 title: API Compatibility Matrix
-productversion: '1.4'
+productversion: '1.5'
 product: Enterprise Browser
 layout: ebmatrix.html
 ---
-<div id="toolbar"  style="display:none">
+<div id="toolbar" style="display:none">
 	<button class="btn btn-primary" id="btnFilter"><i class="glyphicon glyphicon-filter"></i> (<span id="condition">Any</span>)</button>
 	<select id="engines" multiple="multiple">
 	</select>

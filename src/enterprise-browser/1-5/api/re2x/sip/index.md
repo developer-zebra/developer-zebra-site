@@ -75,10 +75,10 @@ The SIP used is the standard keyboard input panel supplied with Windows. Certain
 Depending on the underlying operating system the SIP position may change following screen rotation. The SIP left and top parameters can be applied in a ScreenOrientationEvent to bypass this feature if required.
 
 
-###Backwards Compatibility
-The SIP methods 'Manual' and 'Automatic' have slightly different behaviour when the configuration setting EngineInUse is set to Internet Explorer. Manual: When shown by the SIP Button, will show and hide when text boxes have focus. Automatic: Shows and hides when text boxes have focus. Applying SIP control Automatic will prevent SIP control Manual being applied in the same application. To return to Manual SIP control you can press a hardware key. In Backwards Compatibility mode Manual and Automatic do not apply for Windows CE, only Windows Mobile.
+###Backward Compatibility
+The SIP methods `manual` and `automatic` exhibit slightly different behavior when the &lt;EngineInUse&gt; `Config.xml` setting is set to "Internet Explorer." In manual mode, the SIP will be shown only after the SIP button is pressed, and from then on will show and hide whenever a text field has focus. In automatic, the SIP will appear automatically whenever a text field has focus and is otherwise hidden.
 
-
+Applying `automatic` SIP control in an app will prevent the app from later invoking `manual` SIP control. Press any hardware key to return the device to manual SIP control. In backward compatibility mode, `manual` and `automatic` methods apply only to Windows Mobile.
 
 
 ##Requirements
@@ -100,5 +100,5 @@ To completely disable the use of the SIP it can be positioned off the visible ar
 The following example sets the SIP to manual:
 
 	<META HTTP-Equiv="SIP" Content="Manual">
-
+	
 

@@ -20,12 +20,6 @@ By default the JavaScript Object <b>'scanner'</b> will exist on the current page
 To Set code128isBt128ConcatMode parameters via JavaScript use the following syntax: scanner.Parameter = Value;
 <P />e.g. <b>scanner</b>.code128isBt128ConcatMode = Value;
 </td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Code128isBt128ConcatMode Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the Code128isBt128ConcatMode.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set Code128isBt128ConcatMode parameters via Ruby use the following syntax: Scanner.Parameter = Value
-<P />e.g. <b>Scanner</b>.code128isBt128ConcatMode = Value
-</td></tr></table>
 
 
 

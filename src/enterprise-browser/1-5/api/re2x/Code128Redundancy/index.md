@@ -20,14 +20,6 @@ By default the JavaScript Object <b>'scanner'</b> will exist on the current page
 To Set code128redundancy parameters via JavaScript use the following syntax: scanner.Parameter = Value;
 <P />e.g. <b>scanner</b>.code128redundancy = Value;
 </td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Code128redundancy Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the Code128redundancy.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set Code128redundancy parameters via Ruby use the following syntax: Scanner.Parameter = Value
-<P />e.g. <b>Scanner</b>.code128redundancy = Value
-</td></tr></table>
-
-
 
 ##Parameters
 

@@ -60,40 +60,6 @@ The CardReader Module is used to either navigate to a URL or call a JavaScript f
 	</tr>
 </table>
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">CardReader Ruby Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			By default the Ruby Object <b>'CardReader'</b> will exist on the current page and can be used to interact directly with the CardReader. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'CardReader'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b>
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Invoke CardReader methods via Ruby use the following syntax: CardReader.method()
-			<br/><br/>
-			e.g. <b>CardReader</b>.open
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			To Set CardReader parameters via Ruby use the following syntax: CardReader.parameter = 'value' remembering to enclose your value in quotes where appropriate
-			<br/><br/>
-			e.g. <b>CardReader</b>.pinTimeout = 'value'
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set CardReader return events via Ruby use the following syntax: CardReader.event = url_for(:action =&gt; :event_callback) 
-			<br/><br/>
-			e.g. <b>CardReader</b>.readEvent = url_for(:action =&gt; :cardreader_event_callback)
-			<br/><br/>
-			For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.<br/>
-			To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p>
-		</td>
-	</tr>
-</table>
 
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -333,7 +299,7 @@ Applications running in RhoElements should be resilient against the card reader 
 The encrypted data is supported only on the card readres that are configured for encryption. Since the encrypted data might contain unreadable characters sometimes it is recommended to use only JSON object method rather than JavaScript '%s' notation.
 
 ### Navigation to URL on ReadEvent
-Because encrypted card data can contain characters not accepted in a URL the ReadEvent should be handled entirely in either JavaScript or Ruby.
+Because encrypted card data can contain characters not accepted in a URL the ReadEvent should be handled entirely in JavaScript.
 
 ## Requirements
 

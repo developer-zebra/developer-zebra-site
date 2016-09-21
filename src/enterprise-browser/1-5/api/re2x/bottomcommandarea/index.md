@@ -46,23 +46,6 @@ The BottomCommandArea Module is used to set the parameters of the Bottom Command
 	</tr>
 </table>
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">BottomCommandArea Ruby Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			By default the Ruby Object <b>'BottomCommandArea'</b> will exist on the current page and can be used to interact directly with the BottomCommandArea. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'BottomCommandArea'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b>
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set BottomCommandArea parameters via Ruby use the following syntax: BottomCommandArea.parameter = 'value' remembering to enclose your value in quotes where appropriate.
-			<br/><br/>
-			e.g. <b>BottomCommandArea</b>.visibility = 'value'
-		</td>
-	</tr>
-</table>
 
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.

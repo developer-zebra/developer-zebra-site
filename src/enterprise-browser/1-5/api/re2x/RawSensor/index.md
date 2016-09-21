@@ -96,12 +96,6 @@ As some of the sensor values change rapidly the minimum interval between two upd
 As this plugin returns the raw sensor values reported by the operating system the values might differ between platforms. Which sensors are supported on which platform are dependant on the hardware available on the device.
 
 
-###JavaScript and Meta-Tag Support
-On iOS devices and non Zebra Technologies Windows Mobile/CE devices, only the Ruby interface is currently available. On all Android and Zebra Technologies devices all language interfaces are supported.
-
-
-
-
 ##Requirements
 
 <table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.1 or above

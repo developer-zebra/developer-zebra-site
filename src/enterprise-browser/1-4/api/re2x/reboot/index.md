@@ -34,21 +34,6 @@ The Reboot Module immediately reboots to device when invoked.
 	</tr>
 </table>
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">Reboot Ruby Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">By default the Ruby Object <b>'Reboot'</b> will exist on the current page and can be used to interact directly with the Reboot. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Reboot'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">To Set Reboot parameters via Ruby use the following syntax: Reboot.parameter = 'value' remembering to enclose your value in quotes where appropriate.<P/>e.g. <b>Reboot</b>.bootType = 'value'</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow"/>
-	</tr>
-</table>
-
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 <table class="re-table">
@@ -107,44 +92,9 @@ The Reboot tag can be used to apply new settings after downloading files (eg. .R
 	</tr>
 </table>
 
-## HTML/Javascript Examples
+## HTML/JavaScript Example
 The following example Warm boots the terminal:
 
+	:::xml
 	<META HTTP-Equiv="Reboot" Content="BootType:Warm">
-
-## Ruby Examples
-The following example warm boots the device after displaying a warning:
-
-	def warmBoot
-		Alert.show_popup "The device will now warm boot"
-		Reboot.bootType='Warm'
-	end
-
-To call the this function from HTML, use the following code:
-
-	<li onclick="doWarmBoot(); ">Warm boot the device</li>
-
-Where 'doWarmBoot()' is a JavaScript function which looks like:
-
-	function doWarmBoot() {
-		$.get('/app/RebootModule/warmBoot', { });
-		return false;
-	}
-
-Similarly, the following example cold boots the device:
-
-	def coldBoot
-		Alert.show_popup "The device will now cold boot"
-		Reboot.bootType='Cold'
-	end
-
-If applicable, the following example performs a cold CAD boot on CE6 devices (1+9+power)
-
-	def coldCADBoot
-		Alert.show_popup "The device will now attempt a cold CAD boot"
-		Reboot.bootType='ColdCAD'
-	end
-
-Both 'coldBoot' and 'coldCADBoot' can be called from HTML in a way similar to the one described for 'warmBoot' above.
-
 

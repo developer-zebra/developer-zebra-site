@@ -20,14 +20,6 @@ By default the JavaScript Object <b>'scanner'</b> will exist on the current page
 To Set microQr parameters via JavaScript use the following syntax: scanner.Parameter = Value;
 <P />e.g. <b>scanner</b>.microQr = Value;
 </td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">MicroQr Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the MicroQr.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set MicroQr parameters via Ruby use the following syntax: Scanner.Parameter = Value
-<P />e.g. <b>Scanner</b>.microQr = Value
-</td></tr></table>
-
-
 
 ##Parameters
 

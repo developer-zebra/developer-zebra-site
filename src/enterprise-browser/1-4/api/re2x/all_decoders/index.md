@@ -38,24 +38,6 @@ The AllDecoders Module is used to set the barcode scanner to read all barcode ty
 	</tr>
 </table>
 
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">AllDecoders Ruby Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the AllDecoders.
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set AllDecoders parameters via Ruby use the following syntax: Scanner.Parameter = Value
-			<br/><br/>
-			e.g. <b>Scanner</b>.allDecoders = Value
-		</td>
-	</tr>
-</table>
-
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 

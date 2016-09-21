@@ -4,11 +4,13 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Overview
-The NativeTabbar methods let you use multiple instances of the RhoMobile webview in separate tabs. On Android, the tabs are true Native Tabbar controls to give your application a native look and feel. On Windows Mobile/CE there are no visible tabs, but can be used in conjunction with shortcuts to run multiple 'applications' from a single instance. Either Tabbar or Toolbar should be used in an application - Tabbar and Toolbar shouldnot be used simultaneously.
+The NativeTabbar methods allow multiple instances of the webview to appear in separate tabs. On Android, the tabs are true Native Tabbar controls, giving the application a native look and feel. On Windows Mobile/CE there are no visible tabs. 
+
+An application can employ either a Tabbar or a Toolbar, but should not attempt to do both simultaneously. An app can switch between tabs programatically, as shown in the [Nativetabbar Tutorial](../../tutorial/nativetabbar). 
+
 ## Enabling the API
+
 There are two methods of enabling the NativeTabbar API:
 
 * Include all ebapi modules
@@ -22,7 +24,7 @@ To include all JS APIs, copy the ebapi-modules.js file to a location accessible 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> Note: that the pathing for this file is relative to the current page.
+> Note that the pathing for this file is relative to the current page.
 
 This will define the EB class within the page. Any page you need to use the modules will need to have the .js file included in this fashion.
 

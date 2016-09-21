@@ -253,8 +253,6 @@ The callback will be an array of [PRINTER_LANGUAGE...](../../api/printingzebra/#
 - PRINTER_LANGUAGE_CPCL
 - PRINTER_LANGUAGE_EPS
 
-**WARNING**: Ruby is NOT supported for use with the CPCL printer language.  
-
 ## 6- Send Printer Commands
 Once the app finds and connects to a printer, it can begin sending commands. Printer behavior will vary depending on printer make, model and current state. Consult the printer's technical documentation for printer-specific commands and syntax.
 

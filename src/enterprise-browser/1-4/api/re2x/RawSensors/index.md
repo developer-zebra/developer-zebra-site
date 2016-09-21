@@ -35,22 +35,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>RawSensors</b>.setEMML("accelerometer:<i>value</i>;sensorEvent:url('JavaScript:doFunction(%json)');getSensorData");							
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">RawSensors Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'RawSensors'</b> will exist on the current page and can be used to interact directly with the RawSensors. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'RawSensors'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke RawSensors methods via Ruby use the following syntax: RawSensors.method()
-<P />e.g. <b>RawSensors</b>.getSensorData</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set RawSensors parameters via Ruby use the following syntax: RawSensors.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>RawSensors</b>.accelerometer = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set RawSensors return events via Ruby use the following syntax: RawSensors.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>RawSensors</b>.sensorEvent = url_for(:action =&gt; :rawsensors_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
-
-	
-
 ##Methods
 
 
@@ -112,12 +96,6 @@ As some of the sensor values change rapidly the minimum interval between two upd
 
 ###Cross platform consistency
 As this plugin returns the raw sensor values reported by the operating system the values might differ between platforms. Which sensors are supported on which platform are dependant on the hardware available on the device.
-
-
-###JavaScript and Meta-Tag Support
-On iOS devices and non Zebra Technologies Windows Mobile/CE devices, only the Ruby interface is currently available. On all Android and Zebra Technologies devices all language interfaces are supported.
-
-
 
 
 ##Requirements

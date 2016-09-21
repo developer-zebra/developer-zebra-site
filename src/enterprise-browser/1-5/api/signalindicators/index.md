@@ -7,7 +7,8 @@ layout: guide.html
 
 
 ## Overview
-The Signal API is used to notify the user of the strength of the WLAN signal.  For Windows Mobile / CE, only Symbol devices are supported and it is also possible to display a small indicator showing the available signal.
+The Signal API is used to notify the user of the strength of the WLAN signal. For Windows Mobile/CE, only Symbol devices are supported and it is also possible to display a small indicator showing the available signal.
+
 ## Enabling the API
 There are two methods of enabling the SignalIndicators API:
 
@@ -16,7 +17,7 @@ There are two methods of enabling the SignalIndicators API:
 
 For either of these methods, you'll need to include files from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that you installed the Enterprise Browser.
 
-### Include all JS API modules
+### Include all API modules
 To include all JS APIs, copy the ebapi-modules.js file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:
 
     :::html
@@ -62,7 +63,7 @@ Synchronous Return:
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.SignalIndicators.hideIcon()</code> 
+    * <code>EB.SignalIndicators.hideIcon()</code> 
 
 
 ### showIcon(<span class="text-info">HASH</span> propertyMap)
@@ -86,7 +87,7 @@ Synchronous Return:
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.SignalIndicators.showIcon(<span class="text-info">HASH</span> propertyMap)</code> 
+    * <code>EB.SignalIndicators.showIcon(<span class="text-info">HASH</span> propertyMap)</code> 
 
 
 ### stopWlanStatus()
@@ -108,7 +109,7 @@ Synchronous Return:
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.SignalIndicators.stopWlanStatus()</code> 
+    * <code>EB.SignalIndicators.stopWlanStatus()</code> 
 
 
 ### wlanStatus()
@@ -143,7 +144,7 @@ WM </p></li></ul>
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.SignalIndicators.wlanStatus()</code> 
+    * <code>EB.SignalIndicators.wlanStatus()</code> 
 
 
 ##Properties
@@ -162,7 +163,7 @@ A callback to retrieve the signal strength can be specified to occur periodicall
 
 
 * Class: This property can only be accessed via the API class object.
-	* <code>EB.SignalIndicators.refreshInterval</code>
+    * <code>EB.SignalIndicators.refreshInterval</code>
 
 
 
@@ -199,6 +200,12 @@ The position of the signal and battery indicators should not be set to overlap
 ###Screen Orientation
 The indicator positions are absolute and so when rotating the screen you should also move the indicator positions accordingly to accommodate the new screen layout.
 
+###Devices lacking support
+Due to platform limitations this API is not available on the following Zebra Technologies devices on specific platform:
+
+* VH10 CE 6.0
+* Omnii XT15 CE 6.0
+
 ###Internet Explorer (IE) Rendering Engine
 When using the this feature on a CE device using the IE engine, screen distortion may be noticed when scrolling. This is due to a limitation of the IE engine and can be worked around by any of the following options:
 
@@ -207,4 +214,3 @@ When using the this feature on a CE device using the IE engine, screen distortio
     * Don't scroll the page.
     * Don't use the signal / battery indicators
     * Use the Webkit engine.
-

@@ -32,19 +32,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>videoCapture</b>.setEMML("duration:<i>value</i>;videoSaveEvent:url('JavaScript:doFunction(%json)');start");
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">VideoCapture Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'VideoCapture'</b> will exist on the current page and can be used to interact directly with the VideoCapture. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'VideoCapture'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke VideoCapture methods via Ruby use the following syntax: VideoCapture.method()
-<P />e.g. <b>VideoCapture</b>.start</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set VideoCapture parameters via Ruby use the following syntax: VideoCapture.parameter = 'value' remembering to enclose your value in quotes where appropriate.
-<P />e.g. <b>VideoCapture</b>.duration = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set VideoCapture return events via Ruby use the following syntax: VideoCapture.event = url_for(:action =&gt; :event_callback)
-<P />e.g. <b>VideoCapture</b>.videoSaveEvent = url_for(:action =&gt; :videocapture_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 

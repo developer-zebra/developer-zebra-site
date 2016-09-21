@@ -5,41 +5,70 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
-
 ## Overview
-The Barcode Module provides access to control the functionality of the device's scanner. Check the platform indicators in each property or method section. In general if you are developing for a device with only a camera, the number of symbologies available to you will be limited to just the most common ones, eg EAN13, UPCA etc and your scanning will be via the device camera. If your application is running on more traditional Symbol Technologies' hardware you will have much finer control over a more fully featured Scanner, often with a choice of scanner hardware on the device. In general if you wish to capture a single barcode in a 'one shot' use case, eg your App just wants to capture a single barcode to be submitted to a price comparison website then use Barcode.take(callback); if your application is expecting a number of barcodes to be received, common in enterprise scenarios for example a user in a warehouse then use Barcode.enable(callback). Only the foreground application is given access to the scanning hardware, when an application is sent to the background its state will be saved and it will automatically relinquish control of the scanner. When brought back to the foreground, an application previously using the barcode API will have its previous configuration reapplied automatically. A VC70 scanner will work only if connected in SSI Mode.
-        
+The Barcode Module controls functionality of the device scanner. Check the platform indicators in each property or method section. If developing for a device with only a camera, the number of symbologies available will be limited only to the most common such as EAN13 and UPCA, and scanning will be available only through the device camera. If the app is running on more well-equipped hardware, finer control over a more fully featured Scanner wilol be available, often with a choice of scanner hardware to use on the device. 
+
+If the use case involves capturing a single barcode (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app will decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
+
+**Notes**: 
+* **Only foreground apps have access to scanning hardware**. When an app is sent to the background, its state is saved and scanner control is automatically relinquished. When a scanner app returns to the foreground, its previous state is reapplied. 
+
+* **On the VC70**, the scanner will work only if connected in SSI Mode.
+
+* **EB 1.5 now supports the `decodeSound` method**. A bug in the method had prevented apps made with EB 1.4 and earlier from using the method.  
+
 ## Enabling the API
 There are two methods of enabling the Barcode API:
 
 * Include all ebapi modules
 * Include only the required API modules
 
-For either of these methods, you'll need to include files from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that you installed the Enterprise Browser.
+For either of these methods, one or more files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the the Enterprise Browser installation.
 
-### Include all JS API modules
-To include all JS APIs, copy the ebapi-modules.js file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:
+### Include all API modules
+To include all APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> Note: that the pathing for this file is relative to the current page.
-
-This will define the EB class within the page. Any page you need to use the modules will need to have the .js file included in this fashion.
+> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include single APIs, you must first include the `ebapi.js` in your HTML as well as the API file you want to use. For instance, to use the Barcode API, I would add the following code to my HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
     <script type="text/javascript" charset="utf-8" src="eb.barcode.js"></script>
 
-The ebapi.js file is necessary for all single API inclusions.
-        
-
+> In the lines above, notice that `ebapi.js` is included first, followed by `eb.barcode.js`, which is the Barcode API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
 
+### addConnectionListener()
+If you are using an RS507/RS6000/RS4000 barcode scanner you can add a connection listener to receive connected or disconnected callbacks through this method.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Callback
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>connectionState : <span class='text-info'>STRING</span><p>The message describing the connection: Connected or Disconnected. </p></li><li>connectionType : <span class='text-info'>STRING</span><p>The message describes the connection type removed/attached scanner: Bluetooth_SSI, Serial_SSI etc. </p></li><li>decoderType : <span class='text-info'>STRING</span><p>The message describes the decode type of removed/attached scanner: ONE_DIMENSIONAL, TWO_DIMENSIONAL etc. </p></li><li>deviceType : <span class='text-info'>STRING</span><p>The message describes the device type of removed/attached scanner: IMAGER, CAMERA etc. </p></li><li>friendlyName : <span class='text-info'>STRING</span><p>The message describes the friendly name of removed/attached scanner: BLUETOOTH SCANNER,2D IMAGER,CAMERA SCANNER Disconnected. </p></li><li>isDefaultScanner : <span class='text-info'>STRING</span><p>The message describes wether removed/attached scanner is a default scanner: true or false. </p></li></ul></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Zebra Devices Only
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.addConnectionListener()</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.addConnectionListener()</code> 
 
 
 ### barcode_recognize(<span class="text-info">STRING</span> imageFilePath)
@@ -122,7 +151,7 @@ Synchronous Return:
 Enabling the scanner puts it in a state where it will respond to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner on the device can be enabled at any one time, to switch between the imager and camera scanners (for example) then first disable the currently enabled scanner. If you do not specify a callback to this method you will received the scanned data as keystrokes. Note that it is necessary to enable the scanner on WM/CE devices prior to being able to retrieve the state of properties.
 
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='../barcode#properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
 Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>data : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>source : <span class='text-info'>STRING</span><p>The source device and human readable decoder type of the decoded barcode or symbol. </p></li><li>type : <span class='text-info'>STRING</span><p>Hex value representing the decoder type. </p></li><li>time : <span class='text-info'>STRING</span><p>The time at which the decode occurred (hh:mm:ss) </p></li><li>length : <span class='text-info'>STRING</span><p>The length of the decoded barcode or symbol. </p></li><li>direction : <span class='text-info'>STRING</span><p>The direction the barcode was scanned, either forward, reverse or unavailable. </p></li></ul></ul>
@@ -334,6 +363,30 @@ Synchronous Return:
 	* <code>EB.Barcode.registerBluetoothStatus()</code> 
 
 
+### removeConnectionListener()
+If you are using an RS507/RS6000/RS4000 barcode scanner you can remove a connection listener to receive connected or disconnected callbacks through this method.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+* Zebra Devices Only
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.removeConnectionListener()</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.removeConnectionListener()</code> 
+
+
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Barcode</span> defaultInstance)
 This method allows you to set the attributes of the default object instance by passing in an object of the same class.
 
@@ -460,7 +513,7 @@ Synchronous Return:
 Enable the scanner and start capturing the barcode automatically. On Symbol Technologies' devices the amount of time to scan the barcode is defined by the scanTimeout property. On Android if a barcode is found, the user can confirm barcode recognition, or continue to try to recognize the barcode. When the user confirms or cancels, the callback is called. Once the callback has been called the barcode hardware is disabled.This method will work only on scanners which support soft scan.
 
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='../barcode#properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
 Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>barcode : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>status : <span class='text-info'>STRING</span><p>Whether or not the barcode was successfully scanned, status will be 'ok' or 'cancel' </p></li></ul></ul>
@@ -1920,7 +1973,7 @@ The frequency of the device beeper when a barcode is successfully decoded. This 
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Path to a local wave file to be played when the scanner successfully decodes a barcode. This setting overrides the scanner beeper. In Android, this settings will not override beeper and hence not supported.
+Path to a local wave file to be played when the scanner successfully decodes a barcode. The wave file must reside on the device. This will override the existing scanner beeper settings. 
 ####Access
 
 
@@ -1986,7 +2039,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-By default if you have enabled the Scanner on a page, through either JavaScript or Ruby and navigate to a new page the Scanner will automatically disable. To override this behavior you can set this option to false and once enabled the Scanner will remain so in the foreground application until you disable it.
+If the Scanner is enabled on a page through JavaScript, the scanner will be disabled by default when navigating to a new page. To override this behavior, set this option to false; the Scanner will remain enabled in the foreground application until specifically disabled.
 ####Params
 <p><strong>Default:</strong> true</p>
 ####Access
@@ -2473,7 +2526,7 @@ Enables the verification of the I2of5 check digit.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Selects the illumination mode to use. Not currently supported on Android (illumination is always on).
+Selects the illumination mode to use.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -3315,14 +3368,14 @@ Enables or disables the symbology for PDF 417 barcodes. If your application does
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Allows the imager to decode only the barcode that is directly under the cross-hair / center of the reticle. This feature is most useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode. When enabled picklistMode will override aimMode or, if no aiming is chosen, and use aimMode:reticle. This mode will also interact with viewfinderMode, see the EMDK for C help file for more information. Enabling picklist mode may adversely affect overall decoding performance.
+Allows the imager to decode only the barcode that is directly under the cross-hair on Android and center of the reticle on WM/CE. This feature is most useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode. When enabled picklistMode will override aimMode or, if no aiming is chosen, and use aimMode:reticle. This mode will also interact with viewfinderMode, see the EMDK for C help file for more information. Enabling picklist mode may adversely affect overall decoding performance.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
 * Constant: EB.Barcode.PICKLIST_DISABLED - String: disabled Disables picklist mode so any barcode within the field of view can be decoded.
 * Constant: EB.Barcode.PICKLIST_HARDWARE_RETICLE - String: hardwareReticle Enables picklist mode so that only the barcode under the projected reticle can be decoded. On Windows, if the imager does not support a projected reticle then the behavior is the same as softwareReticle. On Android, this is only supported for Imager (non-viewfinder) based scanners.
-* Constant: EB.Barcode.PICKLIST_SOFTWARE_RETICLE - String: softwareReticle Enables picklist mode so that only the barcode in the center of the image is decoded. This is most useful when used in conjunction with static and dynamic reticle viewfinder modes. This value is not supported on Android Platform.
+* Constant: EB.Barcode.PICKLIST_SOFTWARE_RETICLE - String: softwareReticle Enables picklist mode so that only the barcode in the center of the image is decoded on WM/CE and under the cross-hair on Android. This is most useful when used in conjunction with static and dynamic reticle viewfinder modes.
 ####Access
 
 
@@ -5269,33 +5322,26 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 
 ##Remarks
 
-
+###Psion Omnii XT15
+On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
 
 ###Bluetooth Scanner Overview
-
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' method followed by the 'enabled' method, this will allow you to scan the BT association barcode with a different scanner. You can override this default behavior using the disconnectBtOnDisable property.
 
-The following messages will be received from the Bluetooth Scanner in the bluetoothStatus event:
+The following messages will be received from the Bluetooth Scanner in the `bluetoothStatus` event:
 
-**'BTScanAssociationBarcode'**
+**BTScanAssociationBarcode -** the device is ready to be associated with a BT scanner. You must scan the association barcode. It is only necessary to scan the association barcode when you first associate a scanner with the device, this pairing will be remembered until you scan the unpairing barcode.
 
-Means the device is ready to be associated with a BT scanner. You must scan the
-association barcode. It is only necessary to scan the association
-barcode when you first associate a scanner with the device, this pairing will be remembered until
-you scan the unpairing barcode.
+**BluetoothConnected -** the remote scanner has successfully connected to the device.
 
-**'BluetoothConnected'**
+**BluetoothDisconnected -** the remote scanner has become disconnected from the device, this may be due to loss of battery, being out of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for a period of time once it regains power or goes out of range, if it fails to reconnect after the specified timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned it is necessary to disable the scanner and then re-enable it before another scanner can be associated.                
 
-The remote scanner has successfully connected to the device.
+###Bluetooth Scanner Support On Android Devices
 
-**'BluetoothDisconnected'**
+On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device. 
 
-The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
-of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for
-a period of time once it regains power or goes out of range, if it fails to reconnect after the specified
-timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned
-it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
-                
+On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
+               
 
 ###Viewfinder Position Parameters
 
@@ -5313,6 +5359,11 @@ On WM/CE, for some properties, it is first necessary to apply those properties b
 
 ###Android Camera Barcode limitation
 As google barcode scanning library(Zxing library) supported only in Landscape mode. Barcode scanning window only appears at centre of screen in Landscape mode.
+
+###Devices lacking support
+Due to platform limitations this API is not available on the following Zebra Technologies devices on specific platform.  Note: However one can enable legacy scanner service and can scan the respective barcode.
+
+* VH10 CE 6.0
 
 ##Examples
 
@@ -5360,4 +5411,3 @@ This example shows how to enable your device's barcode scanner and access the da
                                 
                             
 </code></pre>
-

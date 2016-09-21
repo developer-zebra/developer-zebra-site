@@ -6,7 +6,7 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Browser supports RhoElements 4.x Shared Runtime applications and HTML-based hybrid RhoMobile applications for Android and Windows Mobile/CE that use HTML and JavaScript. It does not support any Ruby APIs or Ruby-language program code. See the **[RhoMobile 2.x online docs](http://docs.rhomobile.com/en/5.4/guide/rhoArchitecture)**. 
+Enterprise Browser supports RhoElements 4.x Shared Runtime applications and HTML-based hybrid RhoMobile applications for Android and Windows Mobile/CE that use HTML and JavaScript. **Ruby APIs and Ruby-language program code are NOT supported**. 
 
 ## JavaScript Usage
 In RhoElements 4.x, access to the features were made available through JavaScript objects under the `Rho.` namespace:

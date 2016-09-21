@@ -43,10 +43,13 @@ Google Remote Debugging works with native Android apps that use WebView as well 
 * A USB cable for connecting the target to the dev. host
 * A target device running Android 4.4 (KitKat) or later
 * USB debugging enabled on target
-* An app configured for WebView debugging
+* An app made with EB 1.5 or higher 
+* The app's &lt;DebugModeEnable&gt; tag contains a value of "1"
 
 ###1. Enable Device Debugging
-The target device must have USB debugging enabled. This feature is found in **Settings >> Developer Options** panel, which is hidden by default. Here's how to **un-hide Developer options** (if necessary) **and enable USB debugging**: 
+Before continuing, check that the &lt;DebugModeEnable&gt; tag in the app's `Config.xml` contains a value of "1" (see the [Config.xml Reference](../configreference) for details). Edit that file (if necessary) and return here, or continue now and edit the file later. 
+
+The target device must have USB debugging enabled. This latter feature is found in **Settings >> Developer Options** panel, which is hidden by default. Here's how to **un-hide Developer options** (if necessary) **and enable USB debugging**: 
 
 1. Go to **Settings >> About Phone**
 2. **Go to the "Build Number box"** (by scrolling all the way to the bottom)

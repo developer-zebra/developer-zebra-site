@@ -20,14 +20,6 @@ By default the JavaScript Object <b>'scanner'</b> will exist on the current page
 To Set code39 parameters via JavaScript use the following syntax: scanner.Parameter = Value;
 <P />e.g. <b>scanner</b>.code39 = Value;
 </td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Code39 Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the Code39.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set Code39 parameters via Ruby use the following syntax: Scanner.Parameter = Value
-<P />e.g. <b>Scanner</b>.code39 = Value
-</td></tr></table>
-
-
 
 ##Parameters
 

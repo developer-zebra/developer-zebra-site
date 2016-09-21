@@ -8,24 +8,21 @@ layout: guide.html
 
 ## Overview
 The Mobile Payment module implements the functions required to work with the PD40 Bluetooth Payment MPOS. We need to include the emdk jar in the add-ons directory of android sdk in order to build it.Before an application can use this module, the device must be paired via Bluetooth the mobile device requesting use.  
-	If this is not done, no functions will work and the Open function will return an error of not paired. Only One PD40 device should be worked with one device. emdk3-manager extension has to be included before mobile_payment.
-	
-    ## Enabling the API
-    In order to use this API you must include the following extension in your `build.yml`.
-    :::ruby
-    extensions: ["mobile_payment"]
-  ## JavaScript Usage
-    Be sure to review the [JavaScript API Usage](/guide/api_js) guide for important information about using this API in JavaScript.
 
-    ## Ruby Usage
-    Be sure to review the [Ruby API Usage](/guide/api_ruby) guide for important information about using this API in Ruby.
+If this is not done, no functions will work and the Open function will return an error of not paired. Only One PD40 device should be worked with one device. emdk3-manager extension has to be included before mobile_payment.
 
-    
+## Enabling the API
 
+In order to use this API you must include the following extension in the app's `build.yml`:
+
+	:::javascript
+	extensions: ["mobile_payment"]
+
+## JavaScript Usage
+
+Be sure to review the [JavaScript API Usage](/guide/api_js) guide for important information about using this API in JavaScript.
 
 ##Methods
-
-
 
 ### abort()
 Cancel previously issued method and display welcome screen on PAYMENT device.

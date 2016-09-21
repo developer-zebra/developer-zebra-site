@@ -21,15 +21,7 @@ To Invoke stylus methods via JavaScript use the following syntax: stylus.method(
 To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: stylus.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>stylus</b>.setEMML("enable");							
-</td></tr></table>
-
-<table class="re-table"><tr><th class="tableHeading">Stylus Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Stylus'</b> will exist on the current page and can be used to interact directly with the Stylus. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Stylus'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Stylus methods via Ruby use the following syntax: Stylus.method()
-<P />e.g. <b>Stylus</b>.enable</td></tr><tr><td class="clsSyntaxCells clsEvenRow" /></tr></table>
-
-
-	
+</td></tr></table>	
 
 ##Methods
 

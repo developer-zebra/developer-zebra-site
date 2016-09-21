@@ -26,16 +26,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>registry</b>.setEMML("hive:<i>value</i>delete");							
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">Registry Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Registry'</b> will exist on the current page and can be used to interact directly with the Registry. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Registry'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Registry methods via Ruby use the following syntax: Registry.method()
-<P />e.g. <b>Registry</b>.delete</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set Registry parameters via Ruby use the following syntax: Registry.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Registry</b>.hive = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow" /></tr></table>
-
-
-	
 
 ##Methods
 

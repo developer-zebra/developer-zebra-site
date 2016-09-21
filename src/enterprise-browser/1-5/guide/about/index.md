@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Browser 1.5 (unreleased)
+title: About Enterprise Browser 1.5
 productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
@@ -11,9 +11,9 @@ The base [EB installation](../setup) includes everything needed to quickly build
 
 Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
 
-## New in v1.5 (unreleased)
+## New in v1.5
 
-Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices and a range of new features for Android and Windows Mobile/CE devices.  
+Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, function-key mapping for Psion devices and a range of additional new features for Android and Windows Mobile/CE devices.  
 
 ####Zebra Device Support
   * TC70 and TC75 with Android Lollipop
@@ -57,11 +57,11 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
 
-#### New Guides (released with EB 1.4)
+#### New Guides
 
-* **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
+* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for Psion devices** running Windows Mobile. Also details Android key remapping to ensure that keycode values are delivered to apps as expected. 
 
-* **[Keycode Mapping Guide](../keycapture)** updated to include **function key mapping for Psion devices** running Windows Mobile. Also details Android key remapping to ensure that keycode values are delivered to apps as expected. 
+* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4)details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
 
 ### Key Enterprise Browser Features
 

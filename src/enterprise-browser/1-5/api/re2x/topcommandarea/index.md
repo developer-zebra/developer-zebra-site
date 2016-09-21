@@ -23,15 +23,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>topCommandArea</b>.setEMML("visibility:<i>value</i>");							
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">TopCommandArea Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'TopCommandArea'</b> will exist on the current page and can be used to interact directly with the TopCommandArea. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'TopCommandArea'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set TopCommandArea parameters via Ruby use the following syntax: TopCommandArea.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>TopCommandArea</b>.visibility = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
-
-
-
 ##Parameters
 
 

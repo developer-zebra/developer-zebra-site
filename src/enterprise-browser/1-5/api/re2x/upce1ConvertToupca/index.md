@@ -20,14 +20,6 @@ By default the JavaScript Object <b>'scanner'</b> will exist on the current page
 To Set upce1convertToUpca parameters via JavaScript use the following syntax: scanner.Parameter = Value;
 <P />e.g. <b>scanner</b>.upce1convertToUpca = Value;
 </td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Upce1convertToUpca Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Scanner'</b> will exist on the current page and can be used to interact directly with the Upce1convertToUpca.
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set Upce1convertToUpca parameters via Ruby use the following syntax: Scanner.Parameter = Value
-<P />e.g. <b>Scanner</b>.upce1convertToUpca = Value
-</td></tr></table>
-
-
 
 ##Parameters
 

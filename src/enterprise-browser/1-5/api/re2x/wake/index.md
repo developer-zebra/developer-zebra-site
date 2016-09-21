@@ -23,14 +23,6 @@ To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events
 e.g. <b>wake</b>.setEMML("wakeLock:<i>value</i>");							
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">Wake Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Wake'</b> will exist on the current page and can be used to interact directly with the Wake. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Wake'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Set Wake parameters via Ruby use the following syntax: Wake.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Wake</b>.wakeLock = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
-
-
 
 ##Parameters
 

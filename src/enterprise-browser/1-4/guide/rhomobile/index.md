@@ -15,7 +15,7 @@ In RhoElements 4.x, access to the features were made available through JavaScrip
 	// Scan with default options
 	Rho.Barcode.take({}, scan_received);
 
-To use the `Rho.` namespace, replace the `rhoapi-modules.js` file that came with RhoMobile Suite 4.x with the file `rhoapi-modules.js`. By default, this file is located in the following directory on the development host:
+To use the `Rho.` namespace, replace the `rhoapi-modules.js` file that came with RhoMobile Suite 4.x with the file `rhoapi-modules.js` that came with Enterprise Browser. By default, this file is located in the following directory on the development host:
 
 * `C:/EnterpriseBrowser/JavaScriptFiles/BackwardCompatibility/`
 

@@ -1,0 +1,19 @@
+---
+csp: gprsmgr
+title: Custom MMS Proxy
+type: parm
+order: 16
+mx: "6.1"
+apilevel: "16"
+parm:
+  presentif: The APN Action is "Add/replace named APN" *AND* the GPRS Carrier is "Custom"
+  pivotal: No
+  name: CustomMmsProxy
+  type: string
+---
+
+Used to specify the Multimedia Messaging Service (MMS) Proxy. 
+
+Parm value input rules: 
+
+* String from 0 - 255 characters

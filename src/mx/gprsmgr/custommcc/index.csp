@@ -1,0 +1,19 @@
+---
+csp: gprsmgr
+title: Custom MCC
+type: parm
+order: 10
+mx: "6.1"
+apilevel: "16"
+parm:
+  presentif: The APN Action is "Add/replace named APN" *AND* the GPRS Carrier is "Custom"
+  pivotal: No
+  name: CustomMcc
+  type: string
+---
+
+Used to specify the Mobile Country Code (MCC). 
+
+Parm value input rules: 
+
+* String from 0 - 255 characters

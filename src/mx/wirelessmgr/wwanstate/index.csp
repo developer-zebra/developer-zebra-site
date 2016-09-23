@@ -27,4 +27,4 @@ parm:
       description: Turns Off the WWAN radio, preventing all usage.
 ---
 
-The On/Off switch for Wireless Wide Area Network (WWAN) cellular radio. By Turning it On or Off. Turning the WWAN radio On would allow the device to establish a cellular data connection and would also enable cellular voice connections, if supported.
+The On/Off switch for Wireless Wide Area Network (WWAN) cellular radio, which allows the device to establish a cellular data connection to enable cellular voice connections, if supported. Also controls whether the device user can change the State of the radio (active/inactive).

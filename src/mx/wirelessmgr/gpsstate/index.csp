@@ -27,4 +27,4 @@ parm:
       description: Turns Off the GPS radio, preventing all usage.
 ---
 
-The On/Off switch for the Global Positioning System (GPS) radio by Turning it On or Off. Turning the GPS radio On would allow the device to receive information from GPS satellites and thereby determine the position of the device.
+The On/Off switch for the Global Positioning System (GPS) radio, which allows the device to receive information from GPS satellites to determine the position of the device and controls whether the device user can change the State of the radio (active/inactive).

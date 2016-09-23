@@ -14,19 +14,19 @@ parm:
       mx: "4.2"
       osx: "4.2"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the Bluetooth radio usage status; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no change to the state of the Bluetooth radio; any previously selected setting will be retained.
     - code: 1
       name: Enable 
       mx: "4.2"
       osx: "4.2"
-      description: This value will allow changes to be made to the state of the Bluetooth radio. On JellyBean devices, this will cause the Bluetooth radio to be Turned On.
+      description: On KitKat devices, this setting On Jelly Bean devices, this setting will cause the Bluetooth radio to be Turned On, enabling its usage on the device and changes to its state.
     - code: 2
       name: Disable
       mx: "4.2"
       osx: "4.2"
-      description: This value will prevent changes from being made to the state of the Bluetooth radio. On JellyBean devices, this will cause the Bluetooth radio to be Turned Off.
+      description: This value will prevent changes from being made to the state of the Bluetooth radio. On Jelly Bean devices, this will cause the Bluetooth radio to be Turned Off.
 ---
 
-Controls whether the Bluetooth functionality on the device is enabled, which is possible only if the BluetoothState is "Turned On."
+**On KitKat devices**, controls whether the Bluetooth functionality on the device is active (Bluetooth also must be "Turned On"). 
 
-**On JellyBean devices, this parm allows the state of the Bluetooth radio to be changed by Turning it On or Off. 
+**On Jelly Bean devices**, this is the On/Off switch for the Bluetooth radio, which controls whether Bluetooth can be used on the device. If Enabled, the Jelly Bean device user can pair and connect with other Bluetooth devices make changes to the Bluetooth State (active/inactive). 

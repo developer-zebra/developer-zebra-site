@@ -27,4 +27,4 @@ parm:
       description: Turns Off the NFC radio, preventing all usage.
 ---
 
-The On/Off switch for the Near Field Communications (NFC) radio by Turning it On or Off. Turning the NFC radio On would allow the device to communicate with NFC tags by reading or writing them when they are in near proximity to the device.
+The On/Off switch for the Near Field Communications (NFC) radio, which allows the device to communicate with NFC tags by reading from or writing to them when they are in near proximity to the device, and controls whether the device user can change State of the radio (active/inactive).

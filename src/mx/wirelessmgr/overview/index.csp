@@ -15,13 +15,13 @@ Android devices often come with a variety of wireless communication interfaces. 
 
 ### Main Functionality
 
-* Enable/Disable User Access to Radios:
+* Enable/Disable user access to device radios:
 	* Bluetooth
 	* Near Field Communication (NFC)
 	* Global Positioning System (GPS)
 	* Wireless Wide Area Network (WWAN/cellular data)
 * Control State of the Bluetooth radio 
-* Select GPS Location Mode (for more efficient battery usage): 
+* Select GPS Location Mode to control battery usage: 
 	* High accuracy
 	* Battery savings
 	* Device only

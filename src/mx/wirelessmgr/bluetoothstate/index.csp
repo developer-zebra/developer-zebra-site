@@ -27,8 +27,6 @@ parm:
       description: Turns Off the Bluetooth radio, preventing all usage.
 ---
 
-The On/Off switch for the Bluetooth radio, which controls whether the state of the radio can be changed. 
-
-Turning the Bluetooth radio On would allow the device to connect to other to other Bluetooth devices that have previously been paired or would allow the setup of a new pairing.
+The On/Off switch for the Bluetooth radio, which controls whether the State of the radio (active/inactive) can be changed by the device user. Turning On the Bluetooth radio allows the device to pair with other Bluetooth devices and connect with devices previously paired.
 
 **Note: This parm is available only on devices running KitKat and higher**. 

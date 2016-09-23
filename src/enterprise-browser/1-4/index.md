@@ -1,11 +1,15 @@
 ---
 title: Enterprise Browser
-insert:
-  file: enterprise-browser/1-4/guide/about/index.md
+img: eb-logo.png
 layout: guide.html
 menu:
-  title: Enterprise Browser
-  img: enterprise_browser_logo.png
+  title: Enterprise Browser 1.4
+  img: /enterprise-browser/eb-logo.png
+  versions:
+    - versionto: 1-5
+      versionfrom: 1-4
+      default: /enterprise-browser/1-4/guide/about
+      label: '1.5'
   items:
     - title: About
       url: /enterprise-browser/1-4/guide/about
@@ -15,6 +19,8 @@ menu:
       url: /enterprise-browser/1-4/tutorial/
     - title: Guides
       url: /enterprise-browser/1-4/guide
+    - title: Config.xml
+      url: /enterprise-browser/1-4/guide/configreference
     - title: APIs
       url: /enterprise-browser/1-4/api
     - icon: fa fa-search
@@ -32,5 +38,10 @@ versions:
       versionfrom: 1-5
       default: /enterprise-browser/1-4/guide/about
       label: '1.4'
+
+removed when adding version menu:
+insert:
+  file: enterprise-browser/1-4/guide/about/index.md
+
 
 -->

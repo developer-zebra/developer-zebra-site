@@ -7,38 +7,54 @@ layout: guide.html
 
 
 ## Overview
-The Device API provides access to some device level functionality that is only available on Symbol devices such as suspend, calibrate, powerOff, wake, reboot etc.
+The Device API provides access to some device-level functionality such as suspend, calibrate, powerOff, wake, reboot etc. and available only on Zebra devices.
+
 ## Enabling the API
 There are two methods of enabling the Device API: 
 
 * Include all ebapi modules 
 * Include only the required API modules 
 
-For either of these methods, you'll need to include files from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that you installed the Enterprise Browser.
+For either of these methods, files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the Enterprise Browser installation and referenced from within the application's HTML.
 
-### Include all JS API modules
-To include all JS APIs, copy the ebapi-modules.js file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:
+### Include all API modules
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the `index.html` file, copy the file to the same directory as the index.html and add the following line to the HEAD section of the index.html:
 
-    :::html
-    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
+	    :::html
+	    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> Note: that the pathing for this file is relative to the current page.
-
-This will define the EB class within the page. Any page you need to use the modules will need to have the .js file included in this fashion.
+> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include single APIs, you must first include the `ebapi.js` in your HTML as well as the API file you want to use. For instance, to use the Device API, I would add the following code to my HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Device API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
     <script type="text/javascript" charset="utf-8" src="eb.device.js"></script>
 
-The ebapi.js file is necessary for all single API inclusions.
-        
-
+> In the lines above, notice that `ebapi.js` is included first, followed by `eb.device.js`, which is the Device API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
 
+### acquirePartialWakeLock()
+This API is used for acquiring partial wake lock in Android device. It ensures that the CPU is running; the screen and keyboard backlight will be allowed to go off, if the user presses the power button. Note: On calling this method, the wakelocktype config tags will be affected.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Device.acquirePartialWakeLock()</code> 
 
 
 ### calibrate()
@@ -141,6 +157,27 @@ Synchronous Return:
 	* <code>EB.Device.reboot(<span class="text-info">STRING</span> bootType)</code> 
 
 
+### releasePartialWakeLock()
+This API is used for releasing the acquired partial wake lock in Android device. Note: On calling this method, the wakelocktype config tags will be affected.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Device.releasePartialWakeLock()</code> 
+
+
 ### suspend()
 Puts the device into suspend mode. On suspend, the device goes to hibernation mode. Callback is triggered only for 'failed' status. In some devices, the suspend doesnot happen instead it puts the device into an idle state.
 
@@ -229,5 +266,4 @@ The suspend functionality is incompatible with the unattended functionality of t
 					
 The wake functionality can be used along with Push module. For eg: in the push detected event the user can call the wake method to wake the device.
 					
-				
 

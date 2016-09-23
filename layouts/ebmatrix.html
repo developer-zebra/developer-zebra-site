@@ -1,0 +1,65 @@
+
+{{> header}}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
+<link rel="stylesheet" href="/css/bootstrap-multiselect.css" type="text/css"/>
+    <section id="blog" >
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 hidden-sm hidden-xs" id="sidebar">
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9 ">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p>
+                                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                        MX: {{ mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div id="mainContent" class="row">
+                        <div class="col-sm-12">
+                            <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <!-- Start of guide -->
+                                <div class="service-box wow fadeInRight">
+                                    <div class="">
+
+                                        <p>{{{ contents }}}</p>
+                                        
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+
+{{> modal}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+<script src="/js/bootstrap-multiselect.js" ></script>
+<script>
+    displayMatrix();
+</script>
+
+{{> footer}}
+

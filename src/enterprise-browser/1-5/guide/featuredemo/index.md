@@ -17,7 +17,7 @@ The Feature Demo application showcases some of the key capabilities of Enterpris
   * Timer API functions
   * Enabling, disabling and orienting the hourglass ("screen loading" icon)
 
-### Showcased HTLM5 capabilities  
+### Showcased HTML5 capabilities  
   * WebSQL
   * WebStorage
 
@@ -258,11 +258,11 @@ When unzipping the contents of the Feature Demo download, the following folders 
 
 **apis –** folder that contains individual `.html` files associated with each feature.
 
-**featurename.html –** each file has all associated Javascript that is used to demonstrated the use of the API.
+**featurename.html –** each file has all associated JavaScript that is used to demonstrated the use of the API.
 
 **img –** folder that contains icons and images used in the demo.
 
-**ebapi-modules.js –** Enterprise Browser core JavaScript api library.
+**ebapi-modules.js –** Enterprise Browser core JavaScript API library.
 
 **elements.js –** Enterprise Browser JavaScript library used by some of the APIs.
 

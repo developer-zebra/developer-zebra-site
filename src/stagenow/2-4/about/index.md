@@ -49,11 +49,11 @@ The following topics are added or updated for StageNow 2.4:
 
    - [Clock](../csp/clock) 
 
-   - AppGallery
+   - [AppGallery](../csp/appgallery)
 
-   - Enterprise KeyBoard
+   - [Enterprise KeyBoard](../csp/enterprisekeyboard)
 
-   - Personal Dictionary
+   - [Personal Dictionary](../csp/personaldictionary)
 
    - [Camera](../csp/camera) support for disabling a picture taken via the imager
 

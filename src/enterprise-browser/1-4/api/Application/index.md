@@ -17,7 +17,7 @@ There are two methods of enabling the Application API:
 For either of these methods, you'll need to include files from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that you installed the Enterprise Browser.
 
 ### Include all JS API modules
-To include all JS APIs, you must copy the ebapi-modules.js file to a location accessible by your app's files and include the JavaScript file in your app. For instance, to include the modules file in your index.html, with the file in the same directory as your index.html, you would add the following line to the <head> section of your index.html:
+To include all JS APIs, you must copy the ebapi-modules.js file to a location accessible by your app's files and include the JavaScript file in your app. For instance, to include the modules file in your index.html, with the file in the same directory as your index.html, you would add the following line to the HEAD section of your index.html:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
@@ -409,8 +409,10 @@ Path to file with the model list.
 
 ####Type
 <span class='text-info'>ARRAY</span> 
+
 ####Description
-Native Menu items. To customise the native application menu and controller menu items in ruby follow [Application Menu API](http://docs.rhomobile.com/en/2.2.0/rhodesapi/menu-apis)
+Native Menu items. 
+
 ####Params
 <li><i>Object</i> : <span class='text-info'>HASH</span><p> </p></li><ul><li>label : <span class='text-info'>STRING</span><p>Visible label. </p></li><li>action : <span class='text-info'>STRING</span><p>URL to page which will be loaded. Or it can be a JavaScript method to call: 'javascript: methodOnTab();'. Or path to html page to load. </p></li></ul>
 ####Access

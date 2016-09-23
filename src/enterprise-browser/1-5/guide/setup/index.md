@@ -13,7 +13,7 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 **Mac OS X Functionality**: 
 
 * Copy EnterpriseBrowser `.apk` files to Android devices
-* Copy EnterpriseBrowser `.cab` files to [Stage Now](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
+* Copy EnterpriseBrowser `.cab` files to [StageNow](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
 * Create shortcuts to Android apps using the EB native widget (pushed to the device as part of EB installation)
 * Access the Enterprise Browser [Feature Demo](../featuredemo/) app
 * Easily link to EB online help
@@ -39,7 +39,9 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 * **TC55 Jelly Bean -** If Enterprise Browser is installed onto the device's internal memory, files will not be removed by the Uninstall function of App Manager. Installation onto an external SD Card works normally. 
 * **MC32 Jelly Bean -** If Enterprise Browser is installed onto the device's internal memory, files will not be removed by the Uninstall function of App Manager. Installation onto an external SD Card works normally. 
 
-> **Zebra recommends that uninstallation be verified for each device scenario** before any process is automated using [Stage Now](/stagenow/2-3/gettingstarted/) or an MDM system. 
+> **Zebra recommends that uninstallation be verified for each device scenario** before any process is automated using [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system. 
+
+-----
 
 ### Windows Installation
 If upgrading from a prior version of Enterprise Browser, the older version must be manually uninstalled before installing the new one (see image, below). 
@@ -48,9 +50,9 @@ If upgrading from a prior version of Enterprise Browser, the older version must 
 
 **To remove and install Enterprise Browser*:
 
-If not upgrading, skip to step 3. 
+If not upgrading, skip to Step 3. 
 
-1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; step 2 will cause it to be lost. 
+1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; Step 2 will cause it to be lost. 
 2. To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** and follow the prompts. 
 3. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear. 
 	a. Click on the Windows ".msi" package. 
@@ -68,6 +70,8 @@ To bring up this screen at a later time, select **Start Menu -> Enterprise Brows
 
 Windows instructions continue in the "Deployment to Device(s)" section, below. 
 
+-----
+
 ### Mac OS X Installation
 1. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
@@ -84,6 +88,8 @@ The Enterprise Browser files and folders will be copied into the Application fol
 ![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
 **Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Windows version**. These are the same runtimes listed on the left side of the [Windows "Installer" screen](../../images/getting-started/setup/ebsetup_02.jpg), above. 
+
+-----
 
 ## Deployment to Device(s)
 ###From a Windows host
@@ -108,7 +114,7 @@ Once a connection has been established, install the Enterprise Browser runtime o
 > **Note**: Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
 
 ###From a Mac to Android
-The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Android target devices is with the Android File Transfer utility. **If Android File Transfer is already installed, skip to step 5**.  
+The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Android target devices is with the Android File Transfer utility. **If Android File Transfer is already installed, skip to Step 5**.  
 
 &#49;. Visit the [Android File Transfer page](https://www.android.com/filetransfer/).
 
@@ -141,7 +147,7 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 ![img](../../images/getting-started/setup/PocketPCsend.png)
 
-&#52;. A file dialog will apppear. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
+&#52;. A file dialog will appear. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
 
 While the file is in transit, a dialog will appear on the Mac similar to the image below: 
 
@@ -153,9 +159,11 @@ While the file is in transit, a dialog will appear on the Mac similar to the ima
 
 &#55;. Restart the device to complete the installation. 
 
-**Note: Copy Enterprise Runtimes to internal storage only**.
+**Note: Copy Enterprise Browser Runtimes to internal storage only**.
 
 Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
+
+-----
 
 ## Connections
 ### Android devices
@@ -232,50 +240,73 @@ When a device is properly connected and recognized, the Mobile Device Center app
 
 The system is now ready to deploy Enterprise Browser using the Enterprise Browser installer. 
 
+-----
+
 ## Manual Deployment
-Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. 
+Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) on the development host as above, perform the steps as indicated for the target platform. 
+ 
+Alternatively, Enterprise Browser can be mass-deployed using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system. 
 
-After installing the Enterprise Browser (.msi or .dmg) as above: 
+&#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open **Applications -> Enterprise Browser -> Runtimes**. 
 
-&#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open the **Applications -> Enterprise Browser -> Runtimes** folder. 
+**The remaining steps apply to both platforms**.
 
 ![img](../../images/getting-started/setup/EB_resources_menu.jpg)
 
 On Windows, this will bring up a window that looks similar to the image below: 
-
 ![img](../../images/getting-started/setup/setup-enterprise-browser-runtimes.png)
 
-&#50;. Copy the desired runtime to the root directory of the device. 
+On a Mac, the Runtimes folder looks like the image below: 
+![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
-&#51;. From the device, use a file explorer to locate and execute the runtime. 
+&#50;. **Drag-copy the desired runtime** to the root directory of the device. 
 
-&#52;. Reboot the device to complete the installation. 
+&#51;. **For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
 
-&#53;. If a persistent runtime was installed, perform a cold boot/cleanPS on the device to activate the runtime.
+&#52;. From the device, **use a file explorer to locate and execute the runtime**. When Enterprise Browser 1.5 for Android is launched for the first time after being installed, it performs the following actions on the device:
 
-## Launching the EB App 
-After installation, an Enterprise Browser app icon will appear **in the all-apps section of Android devices** and **in the Main app menu of Windows Mobile/CE**. The first time an Enterprise Browser app is launched, it starts with default runtime settings as defined in the Config.xml file on the device. Refer to the [Config.xml Reference guide](../configreference) for complete details.  
+* Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/`
+* Stores the Enterprise Browser executable in that new directory
+* Spawns a `Config.xml` with default settings in the directory
+* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and copies `Config.xml` and `keycodemapping.xml` files (if present) to the new directory, overwriting any existing file(s) of the same name
+* Copies those same config file(s) to `/<internal_mem_root_dir>/EnterpriseBrowser/backup/` and deletes the originals
+* Activates the settings of the new config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/`
 
-By default, a screen like the one below will appear: 
+&#53;. **Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.
+
+> **Note: Directory names are case sensitive**. 
+
+### Update EB Settings
+**Applies only to Enterprise Browser 1.5 (and higher) for Android**. After Enterprise Browser is launched for the first time following installation, subsequent launches still check the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory for new versions of the `Config.xml` and/or `keycodemapping.xml` files for processing as described above. Therefore, new versions of those settings files should be placed in the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. The next time Enterprise Browser is restarted, copies of the new settings file(s) will automatically be placed in the appropriate locations for execution and backup, and the original(s) will be deleted. 
+
+### Mass Deployment
+The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
+
+-----
+
+## Launch Enterprise Browser 
+After installation and first launch, an Enterprise Browser app icon will appear **in the all-apps section or "App Drawer" of Android devices** and **in the Main app menu on Windows Mobile/CE**. Versions prior to Enterprise Browser 1.5 launch with default runtime settings as defined in the `Config.xml` file on the device. Enterprise Browser 1.5 and higher can be launched with a pre-configured `Config.xml` file and optionally a pre-configured `keycodemapping.xml` file as well. See the [Config.xml Reference guide](../configreference) for information about configuring the `Config.xml` file.  
+
+With default settings, the startup screen appears similar to the image below: 
 
 ![img](../../images/OndeviceConfig/On-device_config_01.png)
 
-Pressing the "Return to OS" button will skip settings configuration and bring up the operating system. To display the Settings button again, simply relaunch the Enterprise Browser app. 
+Press the "Return to OS" button to skip settings configuration and bring up the operating system. **To display the Settings button again, simply relaunch the Enterprise Browser app**. 
 
-**Press the "Settings" button to edit the on-device config.xml file**. A screen like the image below will appear:
+**Press the "Settings" button to edit the on-device `Config.xml` file**. A screen appears like the image below:
 
 ![img](../../images/OndeviceConfig/On-device_config_02.png)
 
-###Activating the start page
+###Setting the start page
 **To activate an EB app's start page, enter the URL in the Value field of the StartPage parameter**, as highlighted above, but **do not apply the changes yet**. Applying changes immediately will cause the new start page to be displayed next time EB is launched and will remove access to the Settings panel. 
 
-**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the `Config.xml` file**. 
 
 If on-device access to runtime settings is desired after setting up the start page (for example, to experiment with various settings before deployment), set the SettingsButtonEnabled parameter to "Enable" (as below). This will cause a Settings button to appear in the UI at all times. Passwords also can be set here, if desired. 
 
 ![img](../../images/OndeviceConfig/On-device_config_03.png)
 
-Press "Apply" to update the Config.xml file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
+Press "Apply" to update the `Config.xml` file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
 
 ![img](../../images/OndeviceConfig/On-device_config_04.png)
 
@@ -285,7 +316,7 @@ The Settings button, if enabled, appears in the UI like the one in the red box b
 
 **Note: When the IE engine is used on a Windows CE device**, displaying the Settings button in this way might cause screen distortion when scrolling.
 
-**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the Config.xml file**. 
+**WARNING: Free-form text fields such as "username" and "password" can accept alpha-numeric characters only. Entering non-text characters (< > \ / " ') in these fields (except in a URL field) will corrupt the `Config.xml` file**. 
 
 The on-device settings panel provides access to just a small subset of Enterprise Browser runtime settings. For access to all settings, please refer to the [On-device Configuration guide](../OndeviceConfig).
 

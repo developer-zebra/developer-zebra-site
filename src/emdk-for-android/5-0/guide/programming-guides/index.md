@@ -48,6 +48,12 @@ content-items:
     title: Barcode and Notification API Programmers Guide
     text: This guide provides an overview on design points to be considered during the development of the application to read barcode and notify users using Notification API in the business application workflow.
     url: /emdk-for-android/5-0/guide/notification-api
+  - type: section
+    level: 4
+    title: EMDK Profile Manager Programmer's Guide
+    text: This guide provides the overview on getting the profile manager instance, profile XML, applying profiles, interpreting result returned by the Profile Manager Methods and the response XML schema for the developer to understand and configure the device based their application specific requirements.
+    url: /emdk-for-android/5-0/guide/xmlresponseguide
+    
 product: EMDK For Android
 productversion: '5.0'
 ---

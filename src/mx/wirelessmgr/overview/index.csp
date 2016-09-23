@@ -5,22 +5,22 @@ type: text
 order: 0
 ---
 
-The WirelessMgr controls Usage of all the radios on the device, including those of Bluetooth, GPS, NFC and WWAN systems. By turning any of these radios on or off, the WirelessMgr controls the ability of the device user to access any of the corresponding radio's functionality. The WirelessMgr also can control the State of the Bluetooth radio and the Location mode of the GPS radio.  
+The WirelessMgr controls Usage of all the radios on the device, including those of Bluetooth, GPS, NFC and WWAN systems. By turning any of these radios on or off, the WirelessMgr controls the ability of the device user to access any of the corresponding radio's functionality, thus providing a "lock" that is untouchable by the device user.
+
+The WirelessMgr also can control the State of the Bluetooth radio and the GPS Location Mode to help preserve battery life. 
 
 It's important to distinguish between the terms "State" and "Usage." The State of a radio refers to whether that radio is turned on (and available for communication), or off (and not being used). Usage determines whether that radio is enabled on the device. A radio's State can be controlled by the device user or administrator only if its Usage is Turned On (enabled). 
 
-Android devices often support a variety of wireless communication interfaces. These include bidirectional interfaces such Wireless Wide Area Network (WWAN/cellular data), Bluetooth, and Near Field Communications (NFC). They also include unidirectional (receive only) interfaces such as that of the Global Positioning System (GPS). Wireless radios that can transmit may significantly effect battery life if turned on unnecessarily, and also may need to be turned off in certain situations (e.g. when on an airplane or in "incendiary" environments).
-
-The WirelessMgr can prevent the state of various wireless radios from being changed, thus providing a sort of "lock" that is untouchable by the device user.
+Android devices often come with a variety of wireless communication interfaces. These include bidirectional interfaces such as Bluetooth, Wireless Wide Area Network (WWAN/cellular data), Near Field Communications (NFC) and the unidirectional (receive-only) Global Positioning System (GPS). Wireless radios that can transmit may significantly effect battery life if turned on unnecessarily. Some radios also might need to be turned off in certain situations, such as during air travel or when in hazardous environments.
 
 ### Main Functionality
 
-* Turn wireless radios On or Off:
+* Enable/Disable User Access to Radios:
 	* Bluetooth
 	* Near Field Communication (NFC)
 	* Global Positioning System (GPS)
 	* Wireless Wide Area Network (WWAN/cellular data)
-* Enable/Disable changing the state (on/off) of the Bluetooth radio
+* Control State of the Bluetooth radio 
 * Select GPS Location Mode (for more efficient battery usage): 
 	* High accuracy
 	* Battery savings

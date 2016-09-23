@@ -1,6 +1,6 @@
 ---
 csp: keymapmgr
-title: Choose a key to modify
+title: Key Selector
 type: parm
 order: 3
 mx: "4.4"
@@ -101,6 +101,9 @@ parm:
     - code: Grip Trigger
       mx: "4.4"
       name: GRIP_TRIGGER
+    - code: Grip Trigger 2
+      mx: "6.1"
+      name: GRIP_TRIGGER_2
     - code: Button L1
       mx: "4.4"
       name: LEFT_TRIGGER_1
@@ -149,6 +152,9 @@ parm:
     - code: P3
       mx: "5.2"
       name: P3 Button
+    - code: REAR_BUTTON
+      mx: "6.1"
+      name: Rear Button
     - code: LEFT_EXTERNAL_TRIGGER
       mx: "5.2"
       name: Left External Trigger
@@ -157,6 +163,6 @@ parm:
       name: Right External Trigger
 ---
 
-Used to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, a parm value must be specified that contains a Key Identifier that is listed in the following table.
+Used to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, a value must be specified that contains a Key Identifier that is listed in the following table.
 
->**Note** Not all devices support Keys that correspond to every Key Identifier listed in the table. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Keys supported on that device. Alternately, query the KeyMappingMgr to acquire a list of all Key Identifiers that are supported on that device.
+**Note: Not all devices support Keys that correspond to every Key Identifier listed in the table below**. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, an error will be returned in the Result XML. To determine the supported Keys on a specific device, consult the device documentation or query the KeyMappingMgr to acquire a list of Key Identifiers.

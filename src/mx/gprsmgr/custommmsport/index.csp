@@ -12,7 +12,9 @@ parm:
   type: string
 ---
 
-Used to specify the Multimedia Messaging Service (MMS) Port to be used when sending and receiving multimedia messages to and from the device. 
+Used to specify the Multimedia Messaging Service (MMS) Port. 
+
+**Note**: The Custom parameters are "pass-through" fields; they hold sets of values in various combinations for the purpose of easily switching from one APN to another to adapt to various cellular networks. The rules for these values and settings vary by region and SIM card. **Zebra recommends testing carrier-specified APN settings on a working device and SIM card before deployment**. 
 
 Parm value input rules: 
 

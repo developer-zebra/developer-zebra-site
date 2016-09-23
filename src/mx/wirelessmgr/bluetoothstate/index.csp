@@ -1,0 +1,34 @@
+---
+csp: wirelessmgr
+title: Bluetooth Turn On/Off
+type: parm
+order: 3
+mx: 4.3
+apilevel: 5
+parm:
+  pivotal: No
+  name: BluetoothState
+  type: list
+  list:
+    - code: 0
+      mx: 4.3
+      apilevel: 5
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the Bluetooth radio state; any previously selected setting will be retained.
+    - code: 1
+      name: Turn On 
+      mx: 4.3
+      apilevel: 5
+      description: Turns On the Bluetooth radio, enabling usage and changes to its state.
+    - code: 2
+      name: Turn Off
+      mx: 4.3
+      apilevel: 5
+      description: Turns Off the Bluetooth radio, preventing all usage.
+---
+
+The On/Off switch for the Bluetooth radio, which controls whether the state of the radio can be changed. 
+
+Turning the Bluetooth radio On would allow the device to connect to other to other Bluetooth devices that have previously been paired or would allow the setup of a new pairing.
+
+**Note: This parm is available only on devices running KitKat and higher**. 

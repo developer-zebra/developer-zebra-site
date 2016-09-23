@@ -1,6 +1,6 @@
 ---
 csp: wirelessmgr
-title: Enable/Disable Bluetooth
+title: Bluetooth Enable/Disable
 type: parm
 order: 2
 mx: "4.2"
@@ -14,7 +14,7 @@ parm:
       mx: "4.2"
       osx: "4.2"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the state of the Bluetooth radio can be changed.
+      description: This value (or the absence of this parm from the XML) will cause no change to the Bluetooth radio usage status; any previously selected setting will be retained.
     - code: 1
       name: Enable 
       mx: "4.2"
@@ -27,6 +27,6 @@ parm:
       description: This value will prevent changes from being made to the state of the Bluetooth radio. On JellyBean devices, this will cause the Bluetooth radio to be Turned Off.
 ---
 
-This parm will allow you to control whether the state (On/Off) of the Bluetooth radio can be changed.
+Controls whether the Bluetooth functionality on the device is enabled, which is possible only if the BluetoothState is "Turned On."
 
->**Note:** On JellyBean devices, this parm allows you to change the state of the Bluetooth radio by Turning it On or Off. 
+**On JellyBean devices, this parm allows the state of the Bluetooth radio to be changed by Turning it On or Off. 

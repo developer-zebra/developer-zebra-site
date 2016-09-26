@@ -78,7 +78,7 @@ To deploy certificates in a CaFile called `mycert.pem` for example, copy the cer
 
 **&#55;. Specify the path to the certificate file** on the device in the [ClientCertPath parameter](../configreference/#clientcertpath) of the `Config.xml` file. 
 
-**The device will now be able to connect using SSL (`https://`) to the specified server. 
+**The device will now be able to connect using SSL (`https://`) to the specified server**. 
 
 ### Generate a self-signed certificate
 To create a self-signed certificate, a private key must exist to encrypt into the certificate. **If an existing private key can be used, skip to Step 2**. To generate a new key, begin with Step 1. 

@@ -437,7 +437,7 @@ When enabled, presents a set of controls useful for development and debugging pu
 	<DebugButtonsEnabled value="1"/>
 
 ### DebugModeEnable
-Provides the option to debug an Enterprise Browser app running on a USB-connected device through the Chrome browser's `chrome://inspect/` address bar function. 
+**Applies to Android only**. Provides the option to debug an Enterprise Browser app running on a USB-connected device through the Chrome browser's `chrome://inspect/` address bar function. 
 
 **Possible Values**:
 
@@ -450,7 +450,6 @@ Provides the option to debug an Enterprise Browser app running on a USB-connecte
 	<DebugSetting>
 		<DebugModeEnable value="0"/>
 	</DebugSetting> 
-
 
 -----
 

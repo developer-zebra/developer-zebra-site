@@ -12,6 +12,43 @@ This guide explains how client-side certificates are used on Zebra devices runni
 ## OpenSSL
 Tools such as [OpenSSL](https://www.openssl.org/docs/faq.html) can be useful for creating and working with certificates, and most of of its capabilities are accessible through [CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html). Some typical usages are shown below. Before attempting to create certificates using the steps below, [download OpenSSL](https://www.openssl.org/source/) and install it. 
 
+### Generate a self-signed certificate
+To create a self-signed certificate, a private key must exist to encrypt into the certificate. **If an existing private key can be used, skip to Step 2**. To generate a new key, begin with Step 1. 
+
+**To generate a self-signed certificate**: 
+
+**&#49;. Generate a basic key with no passphrase**:
+
+        :::term
+        openssl genrsa -out privkey.pem
+
+**&#50;. Use the key file generated in Step 1 (or an existing key) to create a self-signed certificate**:
+
+        :::term
+        openssl req -new -x509 -key privkey.pem -out capturableacert.pem -days 365
+
+**&#51;.** A series of questions appears. **Leave all fields blank** (by pressing ENTER) **_except_ the "Common Name" field**-- which should contain the domain name that will serve the certificate. 
+
+**&#52;. Add the private key file to the web server** according to the server's documentation. 
+
+**&#53;. Add the certificate file to the web client** as described above.
+
+### Inspect a certificate
+**To decode the contents of a certificate**:
+
+				::term
+				openssl x509 -in cacert.pem -text -noout
+
+* The Common Name is shown as "Subject: CN=" 
+* The signing authority is shown as Issuer: CN=, which will be the same as Subject for a self-signed certificate.
+
+### Convert certificate format
+**To convert a** `.der` **format certificate to** .`pem` **format**:
+
+	:::term
+	openssl x509 -inform der -in cacert.der -out cacert.pem
+
+
 ## Android
 Enterprise Browser `https://` requests on Android can be done in two ways, and are subject to the following rules:
 
@@ -24,9 +61,9 @@ Enterprise Browser `https://` requests on Android can be done in two ways, and a
 * **Using certificate formats**:
 	* **Certificate files must contain the certificate data between "BEGIN" and "END" lines**.
 	* Android accepts any certificate format that represents the certificate as encoded text. These files typically end with a `.crt` or `.pem` extension. 
-	* Certificates in the `.der` format are not supported. See the [OpenSSL section](#openssl) (below) for conversion instructions.
+	* Certificates in the `.der` format are not supported. See the [OpenSSL section](#openssl) for conversion instructions.
 
-## Windows Mobile and CE
+## Windows Mobile/CE
 **This section applies only to** `https://` **requests made by Webkit**.
 
 ####Server certificates
@@ -74,45 +111,9 @@ To deploy certificates in a CaFile called `mycert.pem` for example, copy the cer
 	-----END PASSWORD-----
 
 
-**&#54;. Save the client certificate with a `.pem` extension** and push it to the device.    
+**&#54;. Save the client certificate with a** `.pem` **extension** and push it to the device.    
 
 **&#55;. Specify the path to the certificate file** on the device in the [ClientCertPath parameter](../configreference/#clientcertpath) of the `Config.xml` file. 
 
 **The device will now be able to connect using SSL** (`https://`) **to the specified server**. 
-
-### Generate a self-signed certificate
-To create a self-signed certificate, a private key must exist to encrypt into the certificate. **If an existing private key can be used, skip to Step 2**. To generate a new key, begin with Step 1. 
-
-**To generate a self-signed certificate**: 
-
-**&#49;. Generate a basic key with no passphrase**:
-
-        :::term
-        openssl genrsa -out privkey.pem
-
-**&#50;. Use the key file generated in Step 1 (or an existing key) to create a self-signed certificate**:
-
-        :::term
-        openssl req -new -x509 -key privkey.pem -out capturableacert.pem -days 365
-
-**&#51;.** A series of questions appears. **Leave all fields blank** (by pressing ENTER) **_except_ the "Common Name" field**-- which should contain the domain name that will serve the certificate. 
-
-**&#52;. Add the private key file to the web server** according to the server's documentation. 
-
-**&#53;. Add the certificate file to the web client** as described above.
-
-### Inspect a certificate
-**To decode the contents of a certificate**:
-
-				::term
-				openssl x509 -in cacert.pem -text -noout
-
-* The Common Name is shown as "Subject: CN=" 
-* The signing authority is shown as Issuer: CN=, which will be the same as Subject for a self-signed certificate.
-
-### Convert certificate format
-**To convert a** `.der` **format certificate to** .`pem` **format**:
-
-	:::term
-	openssl x509 -inform der -in cacert.der -out cacert.pem
 

@@ -66,7 +66,7 @@ Enterprise Browser `https://` requests on Android can be done in two ways, and a
 ## Windows Mobile/CE
 **This section applies only to** `https://` **requests made by Webkit**.
 
-####Server certificates
+####SSL Server certificates
 To access **server certificates** (beyond the pre-loaded ones) from apps made with Enterprise Browser for Windows Mobile/CE with Webkit, specify the path to those certificates using the [CaFile parameter](../configreference/#cafile) in the `Config.xml` file. The "CaFile" itself can contain one or more certificates, which are treated by Webkit as trusted authorities. Expired certificates are ignored. 
 
 To deploy certificates in a CaFile called `mycert.pem` for example, copy the certificate file to the device and specify the path to the file in the `Config.xml` using the syntax below: 
@@ -75,8 +75,10 @@ To deploy certificates in a CaFile called `mycert.pem` for example, copy the cer
 	<CaFile Value=”\\mycert.pem”>
 <br>
 
-####Client certificates
-**The use of client certificates** from Windows Mobile/CE with Webkit is **supported only on Enterprise Browser 1.5 and higher**. To generate a client certificate, follow the steps below. **Note: The server must be configured to accept client certificates**. Refer to the server documentation, if necessary. 
+####SSL Client certificates
+**The use of client certificates** from Windows Mobile/CE with Webkit is **supported only on Enterprise Browser 1.5 and higher**. When a secure server requests a certificate during an SSL handshake, EB will analyze and send any that qualify to the server. 
+
+To generate a client certificate, follow the steps below. **Note: The server must be configured to accept client certificates**. Refer to the server documentation, if necessary. 
 
 **To generate a client certificate for WM/CE with Webkit**:
 
@@ -91,23 +93,22 @@ To deploy certificates in a CaFile called `mycert.pem` for example, copy the cer
 
 **&#52;. Create a new text file** using any editor app that can save plain text. 
 
-**&#53;. Copy and paste the contents of the files created in Steps 1 and 2** into the new file using the sample format below. Be sure to include the section tags as shown:
-
+**&#53;. Copy and paste the contents of the files created in Steps 1 and 2** into the new file using the sample format below, **including the section tags** as shown:
 
 	:::xml
-
-	// Self-signed client certificate file sample
+	// The SSL client certificate file must contain 
+	// the following three sections in any order:  
 
 	-----BEGIN CERTIFICATE-----
-		// paste contents of Step 2 file here
+		// Paste contents of file created in Step 2 here
 	-----END CERTIFICATE-----
 
 	-----BEGIN RSA PRIVATE KEY-----
-		// paste contents of Step 1 file here
+		// Paste contents of file created in Step 1 here
 	-----END RSA PRIVATE KEY-----
 
 	-----BEGIN PASSWORD-----
-		// Enter the Step 1 "passphrase" here  
+		// Enter the "passphrase" created in Step 1 here  
 	-----END PASSWORD-----
 
 

@@ -1777,7 +1777,7 @@ Controls whether server certificates will be verified against the internal certi
 	<VerifyPeerCertificate value="1"/>
 
 ### ClientCertPath
-**Applies to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine only**. Specifies the path to certificate (`.pem`) file(s) requested by a server for client authentication when connecting via `https://`. For help creating a certificate, see the [Certificates guide](../certificates/). 
+**Applies to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine only**. Specifies the path to certificate (`.pem`) file(s) requested by a server for client authentication when connecting via `https://`. Certificate files should contain no more than one certificate each. Expired certificates are ignored. See the [Certificates guide](../certificates/) for help creating certificates. 
 
 **Possible Values**:
 

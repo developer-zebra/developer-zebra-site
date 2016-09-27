@@ -46,7 +46,7 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 ### Windows Installation
 If upgrading from a prior version of Enterprise Browser, the older version must be manually uninstalled before installing the new one (see image, below). 
 
-![img](../../images/getting-started/setup/ebsetup_00.jpg)
+![img](../../images/getting-started/setup/ebsetup_00.png)
 
 **To remove and install Enterprise Browser*:
 

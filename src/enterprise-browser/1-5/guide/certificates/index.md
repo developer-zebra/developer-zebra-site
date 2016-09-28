@@ -76,9 +76,7 @@ To deploy certificates in a CaFile called `mycert.pem` for example, copy the cer
 <br>
 
 ####SSL Client certificates
-**The use of client certificates** from Windows Mobile/CE with Webkit is **supported only on Enterprise Browser 1.5 and higher**. When a secure server requests a certificate during an SSL handshake, EB will analyze and send any that qualify to the server. 
-
-To generate a client certificate, follow the steps below. **Note: The server must be configured to accept client certificates**. Refer to the server documentation, if necessary. 
+**The use of client certificates** from Windows Mobile/CE with Webkit is **supported only on Enterprise Browser 1.5 and higher**. When a secure server requests a certificate during an SSL handshake, EB will analyze and send any that qualify to the server. **Note: The server must be configured to accept client certificates**. Refer to the server documentation, if necessary. 
 
 **To generate a client certificate for WM/CE with Webkit**:
 
@@ -93,7 +91,26 @@ To generate a client certificate, follow the steps below. **Note: The server mus
 
 **&#52;. Create a new text file** using any editor app that can save plain text. 
 
-**&#53;. Copy and paste the contents of the files created in Steps 1 and 2** into the new file using the sample format below, **including the section tags** as shown:
+**&#53;. Copy and paste the contents of the files created in Steps 1 and 2** into the new file using the guidelines below:
+
+The format of certificate files is customized slightly so that all necessary information is stored conveniently in one place. The following three pieces of information are expected to be in single `.pem` file:
+
+-----
+
+####Certificate:
+This will be a Base64 encoded set of data enclosed by the **-----BEGIN CERTIFICATE-----** and **-----END CERTIFICATE-----** statements. It is also a requirement that the certificate is signed with an organisation name as this is used for matching against server certificates. This organisation name is specified in the subject and issuer lines of the certificate and must therefore also exist within the file.
+
+####Private Key:
+This will be a Base64 encoded set of data enclosed by the **-----BEGIN RSA PRIVATE KEY-----** and **-----END RSA PRIVATE KEY-----** statements. The key encryption will also be detailed within these statements.
+
+####Password:
+This is necessary to decode the certificate and private key and must be specified in the format: **“password:&lt;password&gt;”** 
+
+The three components can be specified in any order within a `.pem` file.
+
+-----
+
+<!--
 
 	:::xml
 	// The SSL client certificate file must contain 
@@ -110,7 +127,7 @@ To generate a client certificate, follow the steps below. **Note: The server mus
 	-----BEGIN PASSWORD-----
 		// Enter the "passphrase" created in Step 1 here  
 	-----END PASSWORD-----
-
+-->
 
 **&#54;. Save the client certificate with a** `.pem` **extension** and push it to the device.    
 

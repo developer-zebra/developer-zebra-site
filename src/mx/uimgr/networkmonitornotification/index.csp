@@ -1,0 +1,34 @@
+---
+csp: uimgr
+title: Network Monitored Message Enable/Disable
+type: parm
+order: 5
+mx: "6.1"
+osx: "1.0"
+parm:
+  pivotal: No
+  name: NetworkMonitorNotification
+  type: list
+  list:
+    - code: 0
+      mx: "6.1"
+      osx: "1.0"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to whether the "Network may be monitored..." message will be displayed; any previously selected setting will be retained.
+    - code: 1
+      name: Turn On 
+      mx: "6.1"
+      osx: "1.0"
+      description: Allows "Network may be monitored..." notifications to be displayed.
+    - code: 2
+      name: Turn Off
+      mx: "6.1"
+      osx: "1.0"
+      description: Prevents "Network may be monitored..." notifications from being displayed.
+---
+
+Controls whether the message "Network may be monitored..." will be displayed on the device when the device user connects to some types of networks. This message is generally associated with networks that implement a public key infrastructure and require a root certificate on the device before a client will be allowed to connect. 
+
+**Security Warning**: 
+
+there WOULD seem to be a security impact of this new function because it is effectively relaxing what Google apparently thought was a key security protection.  Again, I don’t think this would prevent us from approving this new function of this CSP, but we may want to document it properly.  In particular, we should be prepared to explain why adding such a CA certificate creates a POTENTIAL security risk and why that risk includes the POTENTIAL that network traffic MIGHT be monitored.  Then, we should be prepared to explain that the POTENTIAL security risk does not mean there is an ACTUAL security risk.  If a DEVICE USER was installing a random CA certificate, without proper consideration, then it could lead to an ACTUAL risk that the network might be monitored, hence the warning could be important.  But if a CA certificate that has been properly vetted by a device administrator is being installed by that device administrator, a message to the DEVICE USER that there is a potential security risk likely adds NO VALUE and could actually CAUSE HARM by making the device user think there is a risk that is not there.  But we need to communicate to a device administrator their responsibility if they choose to suppress this message.  First, they must take responsibility for properly vetting any CA certificates they install while the message is suppressed.  Second, if they permit the device user to install CA certs (by not blocking their ability to do so), then the risk remains that the device user will install a CA cert that is untrusted and hence CAN present a risk.  So, it might be wise for a device administrator to turn off this message only while he is actually installing CA certificates and then to turn the message back on when done.  That way, any later CA certificates that might be installed WOULD produce the message.

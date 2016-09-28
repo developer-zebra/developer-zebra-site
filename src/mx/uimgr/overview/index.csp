@@ -9,6 +9,8 @@ The UiMgr provides control of miscellaneous UI configuration settings, such as t
 
 Android devices contain a variety of System applications with UI elements spread throughout the OS. In some cases, one or more of the "standard" UI elements were deemed undesireable for devices deployed in an enterprise or thought to hinder the productivity of device users engaged in specific business tasks. As requested by Zebra partners, the UiMgr provides control over these various UI elements to allow more control over default Android behaviors or features.
 
+**Security Warning**: The UiMgr permits the "Network may be monitored..." message to be supressed. This important safegurad is intended to warn device users of a potential security risk. **Administrators should not supress this message unless CA certificates have been properly vetted before installation on a device, and must ensure that no untrusted certificates can be subsequently installed** while the message remains suppressed. 
+
 ### Main Functionality
 
 * Enable or Disable use of the following:

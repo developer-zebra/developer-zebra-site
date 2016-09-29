@@ -22,6 +22,6 @@ parm:
       description: Signals the occurrence of an externally detected Threat.
 ---
 
-Description of the signaling that can be triggered when an externally detected threat is detected, externally. 
+Controls whether signaling is triggered by an externally detected threat, which is a threat defined by an intent that can be triggered from an application.
 
 

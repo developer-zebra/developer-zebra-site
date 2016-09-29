@@ -5,11 +5,13 @@ type: text
 order: 0
 ---
 
-The Threat Manager feature allows an application to control the security threats a device actively monitors and how it responds.
+The Threat Manager feature allows an application to control security threats a device actively monitors and how it responds.
 
 ## Main Functionality
 
-* Enable Threat Detection
-* Disable Threat Detection
+* Enable/Disable Threat Detection
 * Perform Counter Measures when a Threat is Detected
+* Perform Periodic Scans of root-based threats
+* Set a custom interval for Periodic Scans
+* Define specific folders to monitor for threats
 

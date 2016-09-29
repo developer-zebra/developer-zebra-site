@@ -15,12 +15,12 @@ parm:
       mx: "4.3"
       osx: "3.5"
       name: Do not perform
-      description: This countermeasure will not be executed.
+      description: Countermeasure will not be executed.
     - code: 1
       name: Perform
       mx: "4.3"
       osx: "3.5"
-      description: This countermeasure will be executed upon threat detection.
+      description: Countermeasure will be executed upon threat detection.
 ---
 
 Locks the device; requires the user to perform the device unlock procedure configured for the device.

@@ -1,28 +1,28 @@
 ---
 csp: threatmgr
-title: Threat Action
+title: Extra Scan Folders
 type: parm
-order: 2
-mx: "4.3"
+order: 19
+mx: "6.1"
 osx: "3.5"
 parm:
   pivotal: Yes
-  name: ThreatAction
+  name: ExtraScanFolders
   type: list
   list:
     - code: 0
       name: Do nothing
-      mx: "4.3"
+      mx: "6.1"
       osx: "3.5"
       description: This value (or the absence of this parm from the XML) will not make any change to whether threats are enabled or disabled.
     - code: 1
       name: Turn On 
-      mx: "4.3"
+      mx: "6.1"
       osx: "3.5"
       description: This will turn on Threat detection.
     - code: 2
       name: Turn Off
-      mx: "4.3"
+      mx: "6.1"
       osx: "3.5"
       description: This will turn off threat detection.
 ---

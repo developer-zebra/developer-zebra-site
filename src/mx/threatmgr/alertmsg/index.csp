@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify message to send to the application you wish to send an alert to during a countermeaure procedure.
+Used to specify a message to send to the application you wish to send an alert to during a countermeaure procedure.
 
 **Parm value input rules**:
 

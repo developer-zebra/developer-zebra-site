@@ -15,26 +15,26 @@ parm:
       name: Max Password Attempts
       mx: "4.3"
       osx: "3.5"
-      description: Use this option to detect when the device has hit the maxminum password attempts.
+      description: Detect that the device has hit the maxminum number of failed password attempts.
     - code: 2
       name: MDM Client Removal 
       mx: "4.3"
       osx: "3.5"
-      description: Use this option to detect when a MDM Client has been removed.
+      description: Detects that an MDM Client has been removed.
     - code: 3
       name: Externally Detected
       mx: "4.3"
       osx: "3.5"
-      description: A custom threat defined by an intent that can be triggered from an application
+      description: A custom threat defined by an intent that can be triggered from an application.
     - code: 4
       name: Exchange Active Sync Command 
       mx: "4.3"
       osx: "3.5"
-      description: Use this option to detect when a threat has been detected while synching with Exchange
+      description: Detects a threat encountered while synching with Microsoft Exchange.
     - code: 5
       name: Device is Rooted 
       mx: "4.3"
       osx: "3.5"
-      description: Use this option to detect when a device has been rooted.
+      description: Detects that a device has been rooted.
 ---
 

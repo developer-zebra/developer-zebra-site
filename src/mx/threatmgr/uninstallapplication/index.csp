@@ -15,12 +15,12 @@ parm:
       name: Do not perform
       mx: "4.3"
       osx: "3.5"
-      description: This countermeasure will not be executed.
+      description: Countermeasure will not be executed.
     - code: 1
       name: Perform
       mx: "4.3"
       osx: "3.5"
-      description: This countermeasure will be executed upon threat detection.
+      description: Countermeasure will be executed upon threat detection.
 ---
 
 Silently removes an application from the device. Specify the package name of the application to uninstall. 

@@ -1,13 +1,13 @@
 ---
 csp: threatmgr
-title: Send Threat message
+title: Perodic Scan Interval
 type: parm
-order: 16
-mx: "4.3"
+order: 18
+mx: "6.1"
 osx: "3.5"
 parm:
   pivotal: No
-  name: SendThreatMsg
+  name: PeriodicScanInterval
   type: string
 ---
 

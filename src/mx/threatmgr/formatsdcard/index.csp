@@ -23,4 +23,4 @@ parm:
       description: This countermeasure will be executed upon threat detection.
 ---
 
-This counter measure would format the external SDCard, all existing data on card would be lost.
+Formats the external SD Card, erasing all existing data on the card.

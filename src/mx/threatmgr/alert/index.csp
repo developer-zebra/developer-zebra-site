@@ -15,12 +15,12 @@ parm:
       mx: "4.3"
       osx: "3.5"
       name: Do not perform
-      description: This countermeasure will not be executed.
+      description: Countermeasure will not be executed.
     - code: 1
       name: Perform
       mx: "4.3"
       osx: "3.5"
-      description: This countermeasure will be executed upon threat detection.
+      description: Countermeasure will be executed upon threat detection.
 ---
 
-This counter measure would send an explicit intent to an application. Provide and alert message, and the package and class name of the application you would like to notify.
+Send an explicit intent to an application. The intent should include an alert message and the package and class name of the application to be notified.

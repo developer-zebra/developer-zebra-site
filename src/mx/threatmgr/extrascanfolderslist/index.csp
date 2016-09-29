@@ -1,13 +1,13 @@
 ---
 csp: threatmgr
-title: Send Threat message
+title: Extra Scan Folders List
 type: parm
-order: 16
-mx: "4.3"
+order: 20
+mx: "6.1"
 osx: "3.5"
 parm:
   pivotal: No
-  name: SendThreatMsg
+  name: ExtraScanFoldersList
   type: string
 ---
 

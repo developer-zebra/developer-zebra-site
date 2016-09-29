@@ -7,11 +7,13 @@ order: 1
 
 Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, including the settings required for connecting to networks. 
 
->**Note: In the Wi-Fi configuration service provider, the terms "enable" and "disable" refer to the ability by a user or administrator to "turn on" and "turn off" a feature or capability. In some other CSPs, those terms refer to the feature's "Usage" setting, which can prevent access to the feature entirely**. 
+**Note**: Documention for the Wi-Fi configuration service provider uses the terms "enable" and "disable" to mean "turn on" and "turn off" a feature; to make its state active or inactive. Those terms in some other CSPs refer to the feature's "Usage" setting, which can prevent access to the feature entirely. 
+
+>**Note**: Enabling the Password Protect Encryption feature **prevents the Google Mobile Service (GMS) backup from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems. 
 
 ### Main Functionality
 
-* Enable/Disable the following 
+* Enable/Disable the following:
 	* Wi-Fi communication on the device
 	* An existing Wi-Fi network
 	* Hyper Fast Secure Roam (HF SR)
@@ -32,18 +34,17 @@ Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, 
 	* Coverage Hole Detection
 	* Sub-Net Roam
 	* WANCountry
-* Set Wi-Fi to Sleep Never, Always or Always When Plugged In
-* Use or Do Not Use Network Notifications
-* Automatically or Manually Select Country
+* Set Wi-Fi to Sleep: Never, Always or Always When Plugged In
+* Use/Do Not Use Network Notifications
+* Select Country automatically or manually 
 * Set the RF Band
-* Enable Auto RF Band Selection
+* Enable Auto RF Band selection
 * Enable Fusion Advanced Logging
-* Enable the Device to set the Clock from an Access Point (AP)
-* Set Power Savings Mode to Always Active, WMM-PS, Null Data or PS-POLL
+* Enable device to set Clock from an Access Point (AP)
+* Set Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
 * Set the band preference
-* Connect to and Disconnect from to a Wi-Fi Network
-* Enable/Disable an Existing Wi-Fi Network
-* Disable all Existing Wi-Fi Networks
-* Remove all Existing Wi-Fi Networks
-* Encrypt Passwords while in transit
+* Connect to/Disconnect from a Wi-Fi network
+* Disable all existing Wi-Fi networks
+* Remove all existing Wi-Fi networks
+* Encrypt Passwords in transit
 * Encrypt Passwords stored on the device 

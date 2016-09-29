@@ -6,7 +6,7 @@ order: 10
 mx: "4.3"
 osx: "3.5"
 parm:
-  presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected.
+  presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected.
   pivotal: Yes
   name: UnsolicitedAlert
   type: list

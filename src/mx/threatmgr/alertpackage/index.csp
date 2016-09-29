@@ -6,7 +6,7 @@ order: 11
 mx: "4.3"
 osx: "3.5"
 parm:
-  presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected and countermeasure is 'Unsolicited Alert'
+  presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected and countermeasure is "Unsolicited Alert"
   pivotal: No
   name: AlertPackage
   type: string

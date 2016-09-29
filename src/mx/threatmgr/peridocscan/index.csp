@@ -6,6 +6,7 @@ order: 17
 mx: "6.1"
 osx: "3.5"
 parm:
+  presentif: Shown if Threat Action is "Turn On"
   pivotal: Yes
   name: PeriodicScan
   type: list
@@ -24,7 +25,7 @@ parm:
       name: Turn Off
       mx: "6.1"
       osx: "3.5"
-      description: Disables Periodic Scans from being performed on the device.
+      description: Disables the Periodic Scan feature on the device.
 ---
 
-This is the On/Off switch for Periodic Scans performed on the device. Turning Periodic Scans On causes threat scans to be performed on the device according to the interval specified in the Periodic Scan Interval parameter. 
+This is the On/Off switch for Periodic Scans on the device, which detect apps with the "super-user" permissions generally associated with root-based malware. Turning Periodic Scans On causes scans to be performed according to the interval specified in the Periodic Scan Interval parameter. **Might effect battery life**. 

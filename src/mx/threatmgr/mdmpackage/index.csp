@@ -6,7 +6,7 @@ order: 3
 mx: "4.3"
 osx: "3.5"
 parm:
-  presentif: Shown when the Threat Action is "Turn On" and Threat Name is 'MDM Client Package Name'
+  presentif: Shown when the Threat Action is "Turn On" and Threat Name is "MDM Client Package Name"
   pivotal: No
   name: MDMPackage
   type: string

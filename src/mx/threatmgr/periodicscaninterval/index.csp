@@ -6,13 +6,14 @@ order: 18
 mx: "6.1"
 osx: "3.5"
 parm:
+  presentif: Shown if Threat Action is "Turn On" and Periodic Scan is "Turn On"
   pivotal: No
   name: PeriodicScanInterval
   type: string
 ---
 
-Provide a message to be sent, stating what custom threat has occurred.
+Used to specify the time, in minutes, to wait between Periodic Scans performed on the device. Periodic Scans detect apps with the "super-user" permissions generally associated with root-based malware. **Scan frequency might effect battery life**. 
 
 **Parm value input rules**:
 
-* String from 1 - 255 characters
+* Integer (in minutes) from 1 - 1440 (24 hrs.) 

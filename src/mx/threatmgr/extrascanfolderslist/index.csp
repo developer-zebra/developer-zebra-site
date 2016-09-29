@@ -11,8 +11,8 @@ parm:
   type: string
 ---
 
-Provide a message to be sent, stating what custom threat has occurred.
+Used to specify one or more folders to monitor for threats during all Periodic Scans performed on the device. Periodic Scans detect apps with the "super-user" permissions generally associated with root-based malware. **Scanning extra folders might effect battery life**. 
 
 **Parm value input rules**:
 
-* String from 1 - 255 characters
+* String from 1 - 255 characters containing comma-separated list of fully qualified path(s) of extra folders

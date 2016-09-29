@@ -1,6 +1,6 @@
 ---
 csp: threatmgr
-title: Signal Occurence
+title: Signal Occurence of Threat
 type: parm
 order: 15
 mx: "4.3"

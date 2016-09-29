@@ -6,7 +6,7 @@ order: 6
 mx: "4.3"
 osx: "3.5"
 parm:
-  presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected.
+  presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected.
   pivotal: No
   name: WipeSecureStorageKeys
   type: list

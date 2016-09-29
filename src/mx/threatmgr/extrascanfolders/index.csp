@@ -14,17 +14,17 @@ parm:
       name: Do nothing
       mx: "6.1"
       osx: "3.5"
-      description: This value (or the absence of this parm from the XML) will not make any change to whether threats are enabled or disabled.
+      description: This value (or the absence of this parm from the XML) will make no change to the use of Extra Scan Folders; any previously selected setting will be retained.
     - code: 1
       name: Turn On 
       mx: "6.1"
       osx: "3.5"
-      description: This will turn on Threat detection.
+      description: Enables Extra Scan Folders to be used.
     - code: 2
       name: Turn Off
       mx: "6.1"
       osx: "3.5"
-      description: This will turn off threat detection.
+      description: Disables the use of Extra Scan Folders.
 ---
 
-Used to enable or disable threat detection.
+This is the On/Off switch for instructing the Periodic Scan function to monitor one or more specific folders in all scans. Extra folders are spcified using the Extra Scan Folders List parameter.  

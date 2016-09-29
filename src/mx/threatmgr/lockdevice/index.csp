@@ -23,4 +23,4 @@ parm:
       description: This countermeasure will be executed upon threat detection.
 ---
 
-This counter measure would lock the device, requiring the user to perform any device unlock procedure configured for the device.
+Locks the device; requires the user to perform the device unlock procedure configured for the device.

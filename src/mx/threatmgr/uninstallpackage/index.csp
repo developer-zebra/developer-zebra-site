@@ -12,11 +12,11 @@ parm:
   type: string
 ---
 
-This parm allows you to specify the package name of the application you wish to uninstall during a countermeaure procedure.
+Used to specify the package name of the application to uninstall during a countermeaure procedure.
 
->**Note:** You must know and specify the Package Name of that application.  You could acquire the Package Name from the application developer, lookup the Package Name on a device, or use developer tools to extract the Package Name from the APK file.
+>**Note:** The Package Name of the application to be unstalled myst be specified.  The Package Name can be acquired from the application developer, a lookup of the Package Name on the device, or through use of developer tools that can extract the Package Name from the APK file.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
-* String with a minimum size of 1 character and a maximum size of 255 characters
+* String from 1 - 255 characters
 

@@ -13,6 +13,6 @@ parm:
 
 Provide a message to be sent, stating what custom threat has occurred.
 
-Parm value input rules: 
+**Parm value input rules**:
 
-* String with a minimum size of 1 character and a maximum size of 255 characters
+* String from 1 - 255 characters

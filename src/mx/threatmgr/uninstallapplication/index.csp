@@ -23,4 +23,4 @@ parm:
       description: This countermeasure will be executed upon threat detection.
 ---
 
-This counter measure would silently remove an application from the device. Provide the package name of the application to uninstall. 
+Silently removes an application from the device. Specify the package name of the application to uninstall. 

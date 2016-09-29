@@ -27,4 +27,4 @@ parm:
       description: This will turn off threat detection.
 ---
 
-This parm allows you to enable or disable threat detection.
+Used to enable or disable threat detection.

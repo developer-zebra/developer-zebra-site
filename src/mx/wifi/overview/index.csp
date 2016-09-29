@@ -11,7 +11,27 @@ Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, 
 
 ### Main Functionality
 
-* Enable/Disable Wi-Fi
+* Enable/Disable the following 
+	* Wi-Fi communication on the device
+	* An existing Wi-Fi network
+	* Hyper Fast Secure Roam (HF SR)
+	* Cisco Centralized Key Management (CCKM)
+	* Fast Transition (FT)
+	* Fast Transition Resource Request (FTRIC)
+	* OKC (Opportunistic Key Caching)
+	* PMKID Caching
+	* PreAuth
+	* Advanced Logging
+	* FIPS Compliance
+	* Restricted WLAN Settings UI
+	* Radio Resource Measurement (802.?11K)
+	* Management Frame Protection Mode (802.?11w)
+	* FTOverTheDS
+	* AggregatedFT
+	* ScanAssist
+	* Coverage Hole Detection
+	* Sub-Net Roam
+	* WANCountry
 * Set Wi-Fi to Sleep Never, Always or Always When Plugged In
 * Use or Do Not Use Network Notifications
 * Automatically or Manually Select Country
@@ -19,28 +39,11 @@ Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, 
 * Enable Auto RF Band Selection
 * Enable Fusion Advanced Logging
 * Enable the Device to set the Clock from an Access Point (AP)
-* Enable/Disable Hyper Fast Secure Roam (HF SR)
-* Enable/Disable Cisco Centralized Key Management (CCKM)
-* Enable/Disable Fast Transition (FT)
-* Enable/Disable Fast Transition Resource Request (FTRIC)
-* Enable/Disable OKC (Opportunistic Key Caching)
-* Enable/Disable PMKID Caching
-* Enable/Disable PreAuth
 * Set Power Savings Mode to Always Active, WMM-PS, Null Data or PS-POLL
-* Enable/Disable Advanced Logging
-* Enable/Disable FIPS Compliance
-* Enable/Disable Restricted WLAN Settings UI
-* Enable/Disable Radio Resource Measurement (802.?11K)
-* Enable/Disable Management Frame Protection Mode (802.?11w)
 * Set the band preference
-* Enable/Disable FTOverTheDS
-* Enable/Disable AggregatedFT
-* Enable/Disable ScanAssist
-* Enable/Disable Coverage Hole Detection
-* Enable/Disable Sub-Net Roam
-* Enable/Disable WANCountry
-* Add and Remove to a Wi-Fi Network
 * Connect to and Disconnect from to a Wi-Fi Network
 * Enable/Disable an Existing Wi-Fi Network
 * Disable all Existing Wi-Fi Networks
 * Remove all Existing Wi-Fi Networks
+* Encrypt Passwords while in transit
+* Encrypt Passwords stored on the device 

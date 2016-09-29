@@ -16,13 +16,14 @@ parm:
     - code: 1
       mx: "6.1"
       name: Enable
-      description: Enables passwords to be encrypted. 
+      description: Causes passwords stored on the device to be encrypted. 
     - code: 0
       mx: "6.1"
       name: Disable
-      description: Disables password encryption. 
+      description: Disables encryption for passwords stored on the device. 
 ---
+Controls whether the Wi-Fi Password stored on the device is encrypted, thereby preventing access to the clear-text Password on the device by any application or malicious exploit. 
 
-Controls whether passwords will be encrypted when stored and transmitted. The Password and Identity combine to form an authentication credential that provides access to a network. Since a stored Password must be embedded within the XML, it is often desirable to encrypt the Password to prevent extraction and exploitation in case the XML is intercepted. 
+**Note: Enabling this feature will prevent some device backup applications, including that of the Google Mobile Service (GMS), from successfully restoring Wi-Fi settings to a device**. 
 
-A Password is used when the Security Mode is set to "Enterprise." All authentication types require a Password except EAP-TLS, which uses a client certificate. 
+The Password combines with an Identity to form an authentication credential for gaining access to a network. Authentication is required only when "Enterprise" is the selected Security Mode. All authentication types require a Password except EAP-TLS, which uses a client certificate. 

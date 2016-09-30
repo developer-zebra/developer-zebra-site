@@ -15,7 +15,7 @@ parm:
       name: Max Password Attempts
       mx: "4.3"
       osx: "3.5"
-      description: Detect that the device has hit the maxminum number of failed password attempts.
+      description: Detect that the device has hit the minimax number of failed password attempts.
     - code: 2
       name: MDM Client Removal 
       mx: "4.3"
@@ -30,7 +30,7 @@ parm:
       name: Exchange Active Sync Command 
       mx: "4.3"
       osx: "3.5"
-      description: Detects a threat encountered while synching with Microsoft Exchange.
+      description: Detects a threat encountered while syncing with Microsoft Exchange.
     - code: 5
       name: Device is Rooted 
       mx: "4.3"

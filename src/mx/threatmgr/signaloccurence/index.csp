@@ -1,6 +1,6 @@
 ---
 csp: threatmgr
-title: Signal Occurence of Threat
+title: Signal Occurrence of Threat
 type: parm
 order: 15
 mx: "4.3"
@@ -16,7 +16,7 @@ parm:
       name: Do nothing
       description: Performs no signaling when an externally detected Threat is detected. 
     - code: 1
-      name: Signal Occurence
+      name: Signal Occurrence
       mx: "4.3"
       osx: "3.5"
       description: Signals the occurrence of an externally detected Threat.

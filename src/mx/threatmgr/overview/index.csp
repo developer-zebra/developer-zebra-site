@@ -10,8 +10,19 @@ The Threat Manager feature allows an application to control security threats a d
 ## Main Functionality
 
 * Enable/Disable Threat Detection
-* Perform Counter Measures when a Threat is Detected
-* Perform Periodic Scans of root-based threats
+* Detect common threats: 
+	* Maximum failed password attempts
+	* MDM client removal
+	* Microsoft Exchange ActiveSync Threat
+	* Device has been rooted
+* Perform Countermeasures when a Threat is Detected
+	* Lock device
+	* Perform a Factory Reset
+	* Format the SD card
+	* Wipe the Secure Storage Keys
+	* Send a custom Threat message
+* Perform Periodic Scans for root-based threats
 * Set a custom interval for Periodic Scans
-* Define specific folders to monitor for threats
+* Define specific folders to monitor for changes
+* Send an Intent when a change occurs in a monitored folder 
 

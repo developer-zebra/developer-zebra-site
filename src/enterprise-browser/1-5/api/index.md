@@ -66,6 +66,8 @@ automenu:
           url: screenorientation
         - title: Sensor
           url: sensor
+        - title: SettingsButton
+          url: settingsButton
         - title: SignalIndicators
           url: signalindicators
         - title: Signature

@@ -19,12 +19,12 @@ parm:
       name: Turn On 
       mx: "6.1"
       osx: "3.5"
-      description: Enables Folder Monitoring, which monitors the specified folder(s) for changes.
+      description: Enables folder monitoring, and sends an Intent when changes occur to the specified folder(s).
     - code: 2
       name: Turn Off
       mx: "6.1"
       osx: "3.5"
-      description: Disables Folder Monitoring, which stops monitoring any specified folder(s).
+      description: Disables folder monitoring, and causes the device to ignore changes to the specified folder(s).
 ---
 
-This is the On/Off switch for folder monitoring. This Extra Scan Folders feature monitors one or more folders on the device (including those in protected areas of an Android device) and sends a Intent whenever a change occurs. Folders to monitor are specified using the Extra Scan Folders List parameter. **Note: This parameter does not detect Threats**. 
+This is the On/Off switch for folder monitoring. This Extra Scan Folders feature monitors one or more folders on the device (including those in Android-protected areas) and sends a Intent whenever a change occurs. Folders to monitor are specified using the Extra Scan Folders List parameter. **Note: This parameter does not detect Threats**. 

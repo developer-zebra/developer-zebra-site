@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Used to specify one or more folders on the device to monitor for changes, including folders in protected areas of an Android device. **Note: Extra Scan Folders parameter does not detect Threats**. 
+Used to specify one or more folders on the device to monitor for changes, including folders in protected areas of an Android device. **Note: This parameter does not detect Threats**. 
 
 **Parm value input rules**:
 

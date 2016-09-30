@@ -27,4 +27,4 @@ parm:
       description: Disables the use of Extra Scan Folders.
 ---
 
-This is the On/Off switch for instructing the Periodic Scan function to monitor one or more specific folders in all scans. Extra folders are specified using the Extra Scan Folders List parameter.  
+This is the On/Off switch for monitoring one or more specific folders, including those in protected areas. Extra folders are specified using the Extra Scan Folders List parameter.  

@@ -14,7 +14,7 @@ parm:
       mx: "4.3"
       osx: "3.5"
       name: Do nothing
-      description: Performs no signaling when an externally detected Threat is detected. 
+      description: Performs no signaling when an externally occurring Threat is detected. 
     - code: 1
       name: Signal Occurrence
       mx: "4.3"
@@ -22,6 +22,4 @@ parm:
       description: Signals the occurrence of an externally detected Threat.
 ---
 
-Controls whether signaling is triggered by an externally detected threat, which is a threat defined by an intent that can be triggered from an application.
-
-
+Controls whether signaling is triggered by an externally detected threat warning, such as from a Mobile Device Management (MDM) system. 

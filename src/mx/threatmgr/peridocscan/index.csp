@@ -28,4 +28,4 @@ parm:
       description: Disables the Periodic Scan feature on the device.
 ---
 
-This is the On/Off switch for Periodic Scans on the device, which detect apps with the "super-user" permissions generally associated with root-based malware. Turning Periodic Scans On causes scans to be performed according to the interval specified in the Periodic Scan Interval parameter. **Might effect battery life**. 
+This is the On/Off switch for Periodic Scans on the device, which detects apps with the "super-user" permissions and other characteristics generally associated with root-based malware. Turning Periodic Scans On causes scans to be performed according to the interval specified in the Periodic Scan Interval parameter. **Scans can effect battery life**. 

@@ -23,4 +23,4 @@ parm:
       description: Countermeasure will be executed upon threat detection.
 ---
 
-Send an explicit intent to an application. The intent should include an alert message and the package and class name of the application to be notified.
+Sends an explicit intent to an application. The intent should include an alert message and the package and class name of the application to be notified.

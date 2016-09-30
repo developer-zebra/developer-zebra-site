@@ -15,12 +15,12 @@ parm:
       name: Do not perform
       mx: "4.3"
       osx: "3.5"
-      description: Countermeasure will not be executed.
+      description: Secure Storage Keys will not be removed.
     - code: 1
       name: Perform
-      description: Countermeasure will be executed upon threat detection.
+      description: Secure Storage Keys will be removed upon threat detection.
       mx: "4.3"
       osx: "3.5"
 ---
 
-Removes Secure Storage Keys.  
+Removes from the device all Secure Storage Keys, which are used to access portions of the device protected by encryption. Execution of this countermeasure does not necessarily prevent access to the encrypted data, but prevents the data from being decrypted and thus exploited. Once a threat has been neutralized, Secure Storage Keys can be restored to the device to provide access to the secure storage area as normal. 

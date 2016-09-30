@@ -14,17 +14,17 @@ parm:
       name: Do nothing
       mx: "6.1"
       osx: "3.5"
-      description: This value (or the absence of this parm from the XML) will make no change to the use of Extra Scan Folders; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will make no change to Folder Monitoring; any previously selected setting will be retained.
     - code: 1
       name: Turn On 
       mx: "6.1"
       osx: "3.5"
-      description: Enables Extra Scan Folders to be used.
+      description: Enables Folder Monitoring, which monitors the specified folder(s) for changes.
     - code: 2
       name: Turn Off
       mx: "6.1"
       osx: "3.5"
-      description: Disables the use of Extra Scan Folders.
+      description: Disables Folder Monitoring, which stops monitoring any specified folder(s).
 ---
 
-This is the On/Off switch for monitoring one or more specific folders, including those in protected areas. Extra folders are specified using the Extra Scan Folders List parameter.  
+This is the On/Off switch for folder monitoring. This Extra Scan Folders feature monitors one or more folders on the device (including those in protected areas of an Android device) and sends a Intent whenever a change occurs. Folders to monitor are specified using the Extra Scan Folders List parameter. **Note: This parameter does not detect Threats**. 

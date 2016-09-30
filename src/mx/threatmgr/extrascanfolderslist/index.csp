@@ -11,8 +11,8 @@ parm:
   type: string
 ---
 
-Used to specify one or more folders to monitor for threats during all Periodic Scans performed on the device. Periodic Scans detect apps with the "super-user" permissions generally associated with root-based malware. **Scanning extra folders might effect battery life**. 
+Used to specify one or more folders on the device to monitor for changes, including folders in protected areas of an Android device. **Note: Extra Scan Folders parameter does not detect Threats**. 
 
 **Parm value input rules**:
 
-* String from 1 - 255 characters containing comma-separated list of fully qualified path(s) of extra folders
+* String from 1 - 255 characters containing comma-separated list of fully qualified path(s) to folder(s) on the device

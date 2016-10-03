@@ -15,17 +15,17 @@ parm:
       name: Do Nothing
       mx: "6.1"
       osx: "3.5"
-      description: This value (or the absence of this parm from the XML) will make  no change to identified Threat; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will make  no change to the Threat(s) being detected on the device; any previously selected setting will be retained.
     - code: 1
       name: Max Password Attempts
       mx: "4.3"
       osx: "3.5"
-      description: Detect that the device has hit the minimax number of failed password attempts.
+      description: Detect that the device has reached the maximum number of failed password attempts.
     - code: 2
       name: MDM Client Removal 
       mx: "4.3"
       osx: "3.5"
-      description: Detects that an MDM Client has been removed.
+      description: Detects that an MDM client app has been removed from the device.
     - code: 3
       name: Externally Detected
       mx: "4.3"
@@ -40,6 +40,6 @@ parm:
       name: Device is Rooted 
       mx: "4.3"
       osx: "3.5"
-      description: Detects that a device has been rooted, and that root-level access has been given to one or more device users or apps. 
+      description: Detects that root-level access has been given to one or more device users and/or apps on the device. 
 ---
-
+Used to specify the name of the Threat to detect. 

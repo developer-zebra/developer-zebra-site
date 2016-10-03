@@ -17,14 +17,14 @@ parm:
       description: This value (or the absence of this parm from the XML) will make  no change to whether Threat Detection is enabled; any previously selected setting will be retained. 
     - code: 1
       name: Turn On 
-      mx: "6.1"
+      mx: "4.3"
       osx: "3.5"
       description: Turns on Threat detection.
     - code: 2
       name: Turn Off
-      mx: "6.1"
+      mx: "4.3"
       osx: "3.5"
       description: Turns off threat detection.
 ---
 
-This is the On/Off switch for Threat Detection on the device. Turning Threat Detection On enables all features and activities that can be triggered whenever a threat is detected on a device. 
+This is the On/Off switch for Threat Detection on the device. Turning Threat Detection On enables all features and activities that can be triggered whenever a Threat is detected on a device. 

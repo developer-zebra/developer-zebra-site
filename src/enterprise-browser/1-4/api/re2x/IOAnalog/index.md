@@ -27,10 +27,9 @@ To Set ioAnalog parameters via JavaScript use the following syntax: ioanalog.par
 To Set ioAnalog return events via JavaScript use the following syntax: ioanalog.event = JavaScript Function;
 <P />e.g. <b>ioAnalog</b>.portEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: ioanalog.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: ioanalog.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>ioAnalog</b>.setEMML("generalVoltage1:<i>value</i>;portEvent:url('JavaScript:doFunction(%json)');invokeGeneralVoltage1");							
 </td></tr></table>

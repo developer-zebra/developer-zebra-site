@@ -24,10 +24,8 @@ To Invoke cradle methods via JavaScript use the following syntax: cradle.method(
 To Set cradle return events via JavaScript use the following syntax: cradle.event = JavaScript Function;
 <P />e.g. <b>cradle</b>.cradleEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
-
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: cradle.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: cradle.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>cradle</b>.setEMML("cradleEvent:url('JavaScript:doFunction(%json)');getCradleId");							
 </td></tr></table>

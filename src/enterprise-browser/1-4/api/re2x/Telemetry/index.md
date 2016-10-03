@@ -27,10 +27,10 @@ To Set telemetry parameters via JavaScript use the following syntax: telemetry.p
 To Set telemetry return events via JavaScript use the following syntax: telemetry.event = JavaScript Function;
 <P />e.g. <b>telemetry</b>.telemetryDataEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: telemetry.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: telemetry.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>telemetry</b>.setEMML("queryFrequency:<i>value</i>;telemetryDataEvent:url('JavaScript:doFunction(%json)');invoke");							
 </td></tr></table>

@@ -21,10 +21,10 @@ To Set signal parameters via JavaScript use the following syntax: signal.paramet
 To Set signal return events via JavaScript use the following syntax: signal.event = JavaScript Function;
 <P />e.g. <b>signal</b>.signalEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: signal.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: signal.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>signal</b>.setEMML("visibility:<i>value</i>;signalEvent:url('JavaScript:doFunction(%json)')");							
 </td></tr></table>

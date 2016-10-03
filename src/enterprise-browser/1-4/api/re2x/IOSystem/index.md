@@ -27,10 +27,9 @@ To Set ioSystem parameters via JavaScript use the following syntax: iosystem.par
 To Set ioSystem return events via JavaScript use the following syntax: iosystem.event = JavaScript Function;
 <P />e.g. <b>ioSystem</b>.portEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: iosystem.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: iosystem.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>ioSystem</b>.setEMML("ignition:<i>value</i>;portEvent:url('JavaScript:doFunction(%json)');invokeIgnition");							
 </td></tr></table>

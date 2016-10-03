@@ -27,10 +27,10 @@ To Set wlan parameters via JavaScript use the following syntax: wlan.parameter =
 To Set wlan return events via JavaScript use the following syntax: wlan.event = JavaScript Function;
 <P />e.g. <b>wlan</b>.adapterPowerStateEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: wlan.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: wlan.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>wlan</b>.setEMML("parameter:<i>value</i>;adapterPowerStateEvent:url('JavaScript:doFunction(%json)');enableAdapter");							
 </td></tr></table>

@@ -27,10 +27,10 @@ To Set RawSensors parameters via JavaScript use the following syntax: rawsensors
 To Set RawSensors return events via JavaScript use the following syntax: rawsensors.event = JavaScript Function;
 <P />e.g. <b>RawSensors</b>.sensorEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: rawsensors.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: rawsensors.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>RawSensors</b>.setEMML("accelerometer:<i>value</i>;sensorEvent:url('JavaScript:doFunction(%json)');getSensorData");							
 </td></tr></table>

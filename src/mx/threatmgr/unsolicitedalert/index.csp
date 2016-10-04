@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Unsolicited Alert Countermeasure
 type: parm
-order: 10
+order: 35
 mx: "4.3"
 osx: "3.5"
 parm:
@@ -15,12 +15,12 @@ parm:
       mx: "4.3"
       osx: "3.5"
       name: Do not perform
-      description: Countermeasure will not be executed.
+      description: The alert-message intent will not be sent upon Threat detection.
     - code: 1
       name: Perform
       mx: "4.3"
       osx: "3.5"
-      description: Countermeasure will be executed upon threat detection.
+      description: The alert-message intent will be sent to the specified application and class upon Threat detection.
 ---
 
-Sends an explicit intent to an application. The intent should include an alert message and the package and class name of the application to be notified.
+Used to send an alert to an application on the device in the form of an intent. The intent must include the package name, class name and alert message. When a Threat is detected, sends the message specified in the Alert Message parameter to the specified class and package of the application. 

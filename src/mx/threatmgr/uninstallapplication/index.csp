@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Uninstall Application Countermeasure
 type: parm
-order: 8
+order: 29
 mx: "4.3"
 osx: "3.5"
 parm:

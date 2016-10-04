@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Send Threat Message
 type: parm
-order: 16
+order: 41
 mx: "4.3"
 osx: "3.5"
 parm:

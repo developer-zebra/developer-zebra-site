@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Format SD Card Countermeasure
 type: parm
-order: 5
+order: 15
 mx: "4.3"
 osx: "3.5"
 parm:

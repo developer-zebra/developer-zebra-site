@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Alert Class Name
 type: parm
-order: 11
+order: 36
 mx: "4.3"
 osx: "3.5"
 parm:

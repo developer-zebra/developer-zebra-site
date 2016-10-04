@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Perodic Scan Interval
 type: parm
-order: 18
+order: 46
 mx: "6.1"
 osx: "3.5"
 parm:

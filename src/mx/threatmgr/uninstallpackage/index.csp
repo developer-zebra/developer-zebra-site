@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Uninstall Package Name
 type: parm
-order: 9
+order: 30
 mx: "4.3"
 osx: "3.5"
 parm:

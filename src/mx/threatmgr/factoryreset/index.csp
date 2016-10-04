@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Factory Reset Countermeasure
 type: parm
-order: 6
+order: 20
 mx: "4.3"
 osx: "3.5"
 parm:

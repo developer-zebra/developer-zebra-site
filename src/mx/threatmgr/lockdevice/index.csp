@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Lock Device Countermeasure
 type: parm
-order: 7
+order: 27
 mx: "4.3"
 osx: "3.5"
 parm:

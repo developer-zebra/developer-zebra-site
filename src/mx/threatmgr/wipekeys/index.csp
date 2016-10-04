@@ -2,7 +2,7 @@
 csp: threatmgr
 title: Wipe Secure Storage Keys Countermeasure
 type: parm
-order: 6
+order: 25
 mx: "4.3"
 osx: "3.5"
 parm:

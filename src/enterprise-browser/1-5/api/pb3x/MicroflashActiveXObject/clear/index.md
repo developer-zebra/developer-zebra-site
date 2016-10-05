@@ -97,11 +97,3 @@ Additional Information
 <div id="DefaultParamsSpan" style="display:none">
 <pre><textarea id="DefaultParameters"></textarea></pre>
 </div>
-<p class="clsRef"><span class="ToggleView" onclick="ToggleSpan('AlsoSpan', 'imgAlsoToggle')"><img align="absmiddle" id="imgAlsoToggle" alt="Also Toggle" onmouseover="this.style.cursor='hand'" src="../Resources/ToggleCollapse.gif"></span>
-See Also
-</p>
-<div id="AlsoSpan" style="display:block">
-<BLOCKQUOTE><a href="SetPort.html&#xA;						">SetPort</a> <a href="AddLine.html&#xA;						">AddLine</a> <a href="AddData.html&#xA;						">AddData</a> <a href="Print.html&#xA;						">Print</a> </BLOCKQUOTE><br></div>
-<hr size="1">
-<div align="right">© 2013 Motorola Solutions, Inc. All rights reserved.
-</div>

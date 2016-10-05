@@ -25,5 +25,5 @@ parm:
     - code: 4
       mx: 4.4
       name: BSP build number
-      description: The specific number of the BSP build installed.
+      description: The specific number of the BSP build installed on the device.
 ---

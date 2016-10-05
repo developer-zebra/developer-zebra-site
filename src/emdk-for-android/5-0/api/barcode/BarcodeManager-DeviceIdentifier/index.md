@@ -19,9 +19,9 @@ Defines specific scanner devices of each type.
 
 * **INTERNAL_LASER1** -First available internal laser scanner
 
-* **BLUETOOTH_IMAGER1** -First available Bluetooth imager scanner
+* **BLUETOOTH_IMAGER1** -First available Bluetooth imager scanner such as the RS507
 
-* **PLUGGABLE_LASER1** -First available pluggable laser scanner
+* **PLUGGABLE_LASER1** -First available pluggable laser scanner such as the RS4000
 
 * **BLUETOOTH_IMAGER_RS6000** -First available Bluetooth imager RS6000 scanner
 

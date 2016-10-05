@@ -128,16 +128,22 @@ menu:
           url: /emdk-for-android/5-0/samples/personal-shopper
     - title: Programming Guides
       items:
-        - title: SimulScan API
-          url: /emdk-for-android/5-0/guide/simulscan_guide
-        - title: Name-Value Pair
-          url: /emdk-for-android/5-0/guide/name_value_pair
-        - title: PersonalShopper API
-          url: /emdk-for-android/5-0/guide/personalshopper
-        - title: Secure NFC API
-          url: /emdk-for-android/5-0/guide/securenfc
-        - title: Barcode Scanner States
-          url: /emdk-for-android/5-0/guide/scanner
+        - title: EMDK Programming Practices
+          url: /emdk-for-android/5-0/guide/programming_practices/
+        - title: Profile Manager Programmer's Guide
+          url: /emdk-for-android/5-0/guide/xmlresponseguide/
+        - title: Barcode API Programmer's Guide
+          url: /emdk-for-android/5-0/guide/barcode_scanning_guide/
+        - title: Notification API Programmer's Guide
+          url: /emdk-for-android/5-0/guide/notification-api/
+        - title: SimulScan API Programmer's Guide
+          url: /emdk-for-android/5-0/guide/simulscan_guide/
+        - title: PersonalShopper API Programmer's Guide
+          url: /emdk-for-android/5-0/guide/personalshopper/
+        - title: Secure NFC API Programmer's Guide
+          url: /emdk-for-android/5-0/guide/securenfc/
+        - title: Payment API Programmer's Guide
+          url: /emdk-for-android/5-0/guide/payment-api/
     - title: Profile Manager
       items:
         - title: Using Profile Manager

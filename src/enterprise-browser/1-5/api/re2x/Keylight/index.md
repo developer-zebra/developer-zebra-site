@@ -10,6 +10,7 @@ The KeyLight Module controls the keyboard backlight and its intensity.
 
 ##Syntax
 
+
 <table class="re-table"><tr><th class="tableHeading">keylight (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Keylight" content="[method / parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Keylight JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
@@ -21,12 +22,13 @@ To Invoke keylight methods via JavaScript use the following syntax: keylight.met
 To Set keylight parameters via JavaScript use the following syntax: keylight.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
 <P />e.g. <b>keylight</b>.intensity = 'value';
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: keylight.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: keylight.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>keylight</b>.setEMML("intensity:<i>value</i>on");							
-</td></tr></table>	
+</td></tr></table>
 
 ##Methods
+
 
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
@@ -49,11 +51,16 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
+
 ###General
-The intensity tag will have an observable effect only if the keyboard backlight is turned on; setting the intensity alone will not illuminate the backlight.
+The intensity tag will only have an observable effect if the keyboard backlight is turned on, setting the intensity by its self is insufficient to illuminate the backlight.
+
 
 ###Device Limits
-Key light intensity is device-dependent. When the Keylight module is first loaded, it writes the supported levels to the log file as INFORMATION. To determine the maximum available setting, refer to the log file.
+The levels of supported keylight intensity is device dependant. When the Keylight module is first loaded it writes the supported levels to the log file as INFORMATION so you can determine the maximum setting from the log file.
+
+
+
 
 ##Requirements
 
@@ -67,5 +74,6 @@ The following example turns the keyboard backlight on with an intensity of 3:
 
 	<META HTTP-Equiv="Keylight-On" Content="Intensity:3">
 	
+
 
 

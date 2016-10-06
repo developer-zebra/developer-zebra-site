@@ -24,7 +24,7 @@ automenu:
           url: ../MicroflashActiveXObject/print
         - title: SetPort
           url: ../MicroflashActiveXObject/setport
-productversion: '1.5'
+productversion: '1.4'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x API
 ---

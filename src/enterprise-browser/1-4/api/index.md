@@ -254,7 +254,7 @@ automenu:
           url: pb3x/keylight
         - title: KeyState
           url: pb3x/keystate
-       - title: Microflash ActiveX Object
+        - title: Microflash ActiveX Object
           url: pb3x/toc_microflash
         - title: MinimizeButton
           url: pb3x/minimizebutton

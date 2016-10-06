@@ -7,21 +7,9 @@ layout: guide.html
 ##Overview
 Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). Android apps made with Enterprise Browser 1.4 and higher permit Android keycode values to be assigned from a file when an Enterprise Browser app starts up. **Note**: The keycodes for keys with multiple values accessed with the shift or other modifier key (such as upper and lower case) might not be capturable. See the [KeyCapture API remarks](../../api/keycapture/#remarks) for more information. 
 
-Certain Zebra devices running Windows Mobile such as the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5) return proprietary keycode values that are inconsistent with those of other devices. 
+**Note: The WorkAbout Pro 4 and Omnii XT15** are among a small group of Zebra devices running Windows Mobile that return proprietary keycode values inconsistent with those of other devices and incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
-
-APIs: 
-Online content for all APIs
-EB, PB and RE
-for EB 1.6 onward, ABHINEET ONLY will modify content directly for slight mods, new method added, etc  WHICH REPO? 
-
-NEW STUFF: 
-same process as now
-
-
-**Mapping Windows Mobile function keys** is possible on certain Zebra devices only when running apps made with Enterprise Browser 1.5 or higher. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
-
-### Android Keycode Handling 
+#### Android Keycode Handling 
 On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
 
 The following facts apply generally to Android keycode mapping for Enterprise Browser: 

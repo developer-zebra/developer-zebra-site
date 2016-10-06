@@ -59,9 +59,9 @@ products:
         url: /ehs/2-4/download
     versions:
       - url: ehs/2-4/guide/about/
-        menu: '2.4'
+        label: '2.4'
       - url: ehs/2-3/guide/about/
-        menu: '2.3'
+        label: '2.3'
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
     url: /enterprise-keyboard/1-0/guide/about
@@ -96,13 +96,11 @@ products:
         url: /emdk-for-android/5-0/api
     versions:
       - url: emdk-for-android/5-0/guide/about/
-        menu: '5.0'
+        label: '5.0'
       - url: emdk-for-android/4-2/guide/about/
-        menu: '4.1'
+        label: '4.1'
       - url: emdk-for-android/4-0/guide/about/
-        menu: '4.0'
-      - url: /emdk-for-android/3-1/guide/about/
-        menu: '3.1'
+        label: '4.0'
   - title: EMDK For Xamarin
     description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
     url: /emdk-for-xamarin/2-1/guide/about
@@ -123,11 +121,11 @@ products:
         url: /emdk-for-xamarin/2-1/api
     versions:
       - url: emdk-for-xamarin/1-1/guide/about/
-        menu: '1.0'
+        label: '1.0'
       - url: emdk-for-xamarin/2-0/guide/about/
-        menu: '2.0'
+        label: '2.0'
       - url: emdk-for-xamarin/2-1/guide/about/
-        menu: '2.1'
+        label: '2.1'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
     url: /link-os
@@ -172,5 +170,13 @@ products:
         url: /stagenow/2-4/settingtypes
       - title: Device Staging
         url: /stagenow/2-4/stageclient
+    versions:
+      - url: stagenow/2-4/about
+        label: '2.4'
+      - url: stagenow/2-3/about
+        label: '2.3'
+      - url: stagenow/2-2/about
+        label: '2.2'
+
 ---
 

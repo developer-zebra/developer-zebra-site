@@ -410,7 +410,7 @@ address/friendly name via interface config**
 
 
 
-##PD40 Remote Firmware and EMV Param Update
+#PD40 Remote Firmware and EMV Param Update
 
 The Payment Manager is a service runs on mobile device which allows
 querying the information such as firmware/application version and

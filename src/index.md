@@ -23,6 +23,9 @@ products:
         url: /datawedge/5-0/guide/api
       - title: Demo
         url: /datawedge/5-0/guide/demo
+    versions:
+      - url: datawedge/5-0/guide/about
+        label: '5.0'
   - title: Enterprise Browser
     description: Build apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
     url: /enterprise-browser/1-4/guide/about
@@ -41,6 +44,11 @@ products:
         url: /enterprise-browser/1-4/guide
       - title: APIs
         url: /enterprise-browser/1-4/api
+    versions:
+      - url: enterprise-browser/1-5/guide/about
+        label: '1.5'
+      - url: enterprise-browser/1-4/guide/about
+        label: '1.4'
   - title: Enterprise Home Screen
     description: A simple way to control user access to apps, settings and files on Android devices without the need for custom code.
     url: /ehs/2-4/guide/about
@@ -76,6 +84,9 @@ products:
         url: /enterprise-keyboard/1-0/guide/settings
       - title: Download
         url: /enterprise-keyboard/1-0/download
+    versions:
+      - url: datawedge/1-0/guide/about
+        label: '1.0'
   - title: EMDK For Android
     description: The Enterprise Mobility Development Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc.
     url: /emdk-for-android/5-0/guide/about
@@ -98,7 +109,7 @@ products:
       - url: emdk-for-android/5-0/guide/about/
         label: '5.0'
       - url: emdk-for-android/4-2/guide/about/
-        label: '4.1'
+        label: '4.2'
       - url: emdk-for-android/4-0/guide/about/
         label: '4.0'
   - title: EMDK For Xamarin
@@ -120,12 +131,12 @@ products:
       - title: APIs
         url: /emdk-for-xamarin/2-1/api
     versions:
-      - url: emdk-for-xamarin/1-1/guide/about/
-        label: '1.0'
-      - url: emdk-for-xamarin/2-0/guide/about/
-        label: '2.0'
       - url: emdk-for-xamarin/2-1/guide/about/
         label: '2.1'
+      - url: emdk-for-xamarin/2-0/guide/about/
+        label: '2.0'
+      - url: emdk-for-xamarin/1-1/guide/about/
+        label: '1.0'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
     url: /link-os
@@ -152,6 +163,9 @@ products:
     sections:
       - title: Compatibility
         url: /mx/compatibility
+    versions:
+      - url: datawedge/5-0/guide/about
+        label: '6.0'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about

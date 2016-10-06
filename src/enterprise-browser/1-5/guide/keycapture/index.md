@@ -7,7 +7,9 @@ layout: guide.html
 ##Overview
 Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). Android apps made with Enterprise Browser 1.4 and higher permit Android keycode values to be assigned from a file when an Enterprise Browser app starts up. **Note**: The keycodes for keys with multiple values accessed with the shift or other modifier key (such as upper and lower case) might not be capturable. See the [KeyCapture API remarks](../../api/keycapture/#remarks) for more information. 
 
-**Mapping Windows Mobile function keys** is possible only for Zebra Psion devices running apps made with Enterprise Browser 1.5 or higher. See the [Mapping Psion Function Keys](#mappingpsionfunctionkeys) section below. 
+Certain Zebra devices running Windows Mobile such as the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5) return proprietary keycode values that are inconsistent with those of other devices. 
+
+**Mapping Windows Mobile function keys** is possible on certain Zebra devices only when running apps made with Enterprise Browser 1.5 or higher. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
 ### Android Keycode Handling 
 On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
@@ -137,17 +139,17 @@ where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http:/
 
 -----
 
-## Mapping Psion Function Keys 
-The function keys of Zebra's Psion devices running Windows Mobile return a proprietary set of Unicode values via Windows character messages rather than the values expected from Windows `keydown/keyup` messages. For example, pressing the F1 key returns the hexadecimal value E001 (57345 decimal) rather than the hex value 0x70 (112 decimal) as generally expected. This can lead to compatibility issues for Enterprise Browser apps when running on Psion devices with Windows Mobile. 
+## Mapping Proprietary Function Keycodes 
+The function keys of certain Zebra devices running Windows Mobile, including the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5), return a proprietary set of Unicode values via Windows character messages rather than the values expected from Windows `keydown/keyup` messages. For example, pressing the F1 key returns the hexadecimal value E001 (57345 decimal) rather than the hex value 0x70 (112 decimal) as generally expected. This can lead to compatibility issues for Enterprise Browser apps when running on such devices with Windows Mobile. 
 
-For such scenarios, Zebra developed and recommends a means of mapping the Psion proprietary Unicode values of function keys used by an Enterprise Browser application to Microsoft virtual keycode values. 
+For such scenarios, Zebra developed and recommends a means of mapping the proprietary Unicode values of function keys used by an Enterprise Browser application to Microsoft virtual keycode values. 
 
 > **Note**: This method should be used only for function keys. 
 
 ### Enable and specify mapping
-Mapping the function keys on a Psion device requires adding a few lines to the app's `Config.xml` file, creating a file to specify the mapping assignments and copying the file to the device. 
+Mapping the function keys on a qualifying device requires adding a few lines to the app's `Config.xml` file, creating a file to specify the mapping assignments and copying the file to the device. 
 
-**To map Psion function keys**: 
+**To map proprietary function keys**: 
 
 **&#49;. Add the three code lines shown below to the app's** `Config.xml` **file** as a child of the &lt;Configuration&gt; parent node:
 
@@ -164,11 +166,12 @@ Mapping the function keys on a Psion device requires adding a few lines to the a
 	   // of the app's Config.xml file
 
 	</Configuration>
+*_Note: The maximum number of child tags is 65_*. 
 
-**&#50;. Create a file called** `EBFunctionKeyMapping.xml`, and using one of the templates below, specify the Psion function key(s) to be mapped to Microsoft virtual keycode values. 
+**&#50;. Create a file called** `EBFunctionKeyMapping.xml`, and using one of the templates below, specify the function key(s) to be mapped to Microsoft virtual keycode values. 
  
 #### Template 1- Map a Single Function Key
-Use this template to map a single function key to a specific Microsoft keycode value. For example, to map the F1 key to a Microsoft virtual keycode, specify the Psion proprietary Unicode value in hexadecimal (0xE001) first, followed by the Microsoft virtual keycode value in hexadecimal (0x70) as shown below: 
+Use this template to map a single function key to a specific Microsoft keycode value. For example, to map the F1 key to a Microsoft virtual keycode, specify the proprietary Unicode value in hexadecimal (0xE001) first, followed by the Microsoft virtual keycode value in hexadecimal (0x70) as shown below: 
 
 	:::xml
 	<FUNCTION_KEY_MAPPING_TO_STANDARD_MS_VALUE> 
@@ -191,31 +194,29 @@ To map multiple function key to Microsoft keycode values, simply repeat the `SET
  
 &#51;. Once the `EBFunctionKeyMapping.xml` mapping file is complete, **copy the file to the** `\Program Files\EnterpriseBrowser\` **directory on the device**.  
 
-**The function key(s) will be mapped as specified in the mapping file the next time Enterprise Browser is launched**. 
+**The function key(s) will be mapped as specified in the mapping file the next time Enterprise Browser is launched** and whenever an EB app is in the foreground. 
 
 #### Contents of the Function Key Mapping File
 
 * **FUNCTION_KEY_MAPPING_TO_STANDARD_MS_VALUE –** the root tag
 * **SET_FUNCTION_KEY_TO_STANDARD_MS_VALUE -** the child tag associated with the root tag
-* **IF_CHAR_VALUE -** sets the Psion proprietary Unicode value
+* **IF_CHAR_VALUE -** sets the proprietary Unicode value
 * **SEND_KEYDOWN_VALUE -** sets the Microsoft virtual keyCode value 
 
-The set value is used internally by Enterprise Browser applications for mapping purposes whenever any function key is pressed.
+####Rules
 
-On Zebra - Psion WM device, when EnterpriseBrowser application is running in foreground, on pressing any function key, if the value of windows character message matches with anyone of the set value of IF_CHAR_VALUE attributes which is provided in EBFunctionKeyMapping.xml file, then the set value of the associated SEND_KEYDOWN_VALUE attribute is mapped and sent to windows keydown message internally in our EnterpriseBrowser application for recieving Microsoft virtual keyCode value instead of Psion proprietary Unicode value.
-
-**Notes**:
-
-* Maximum number of child tags is 65.
-* Psion function key mapping is supported on Enterprise Browser 1.5 a later.
-* Psion function key mapping applies only to Zebra Psion devices running Windows Mobile, including WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5).
-* The format of EBFunctionKeyMapping.xml file should not be altered. 
-* Use the table below for Psion and Microsoft keycode values for function keys F1 to F24.
+* Proprietary function key mapping is supported on Enterprise Browser 1.5 and later.
+* **Maximum number of child tags is 65**.
+* Mapped values are used internally by Enterprise Browser apps only. 
+* Whenver a function key is pressed, if the value of a Windows character message matches any of the IF_CHAR_VALUE attributes mapped in the `EBFunctionKeyMapping.xml` file, the set value of the associated SEND_KEYDOWN_VALUE attribute is sent to the Windows keydown message as the Microsoft virtual keycode value.
+* This function key mapping applies only to certain Zebra devices running Windows Mobile only. These include the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5).
+* The format of `EBFunctionKeyMapping.xml` file should not be altered in any way. 
+* Use the table below for Proprietary and Microsoft keycode values for function keys F1 to F24.
 
 <table style="color: #333333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; margin-bottom: 0 !important;">
 <thead>
 <tr style="border-top-width: 1px; border-top-color: #cccccc;"><th align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;font-weight: bold;padding: 6px 13px;">Function Keys</th>
-<th align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;font-weight: bold;padding: 6px 13px;">Psion Proprietary Unicode Value</th>
+<th align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;font-weight: bold;padding: 6px 13px;"> Proprietary Unicode Value</th>
 <th align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;font-weight: bold;padding: 6px 13px;">Microsoft Virtual Keycode Value</th>
 </tr>
 </thead>

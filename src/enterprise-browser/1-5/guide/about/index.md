@@ -13,7 +13,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ## New in v1.5
 
-Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, function-key mapping for Psion devices and a range of additional new features for Android and Windows Mobile/CE devices.  
+Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, and a range of additional new features for Android and Windows Mobile/CE devices.  
 
 ####Zebra Device Support
   * TC70 and TC75 with Android Lollipop
@@ -22,8 +22,8 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   * MC67 with Android KitKat
   * WorkAbout Pro 4 with Windows Embedded Handheld 6.5
   * Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5
+  * VH10 with Windows CE 6.0
   * RS6000, RS4000 and RS507 ring scanners for use with WT6000
-  * Psion XT15, VH10 and WAP
 
 [See all supported devices](../about#mobile)
 
@@ -59,7 +59,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 #### New Guides
 
-* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for Psion devices** running Windows Mobile. Also details Android key remapping to ensure that keycode values are delivered to apps as expected. 
+* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes. Also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
 * **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4)details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
 

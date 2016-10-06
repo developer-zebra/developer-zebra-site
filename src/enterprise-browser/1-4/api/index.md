@@ -46,6 +46,8 @@ automenu:
           url: Log
         - title: MediaPlayer
           url: mediaplayer
+        - title: Microflash ActiveX Object
+          url: pb3x/toc_microflash
         - title: NativeMenubar
           url: NativeMenubar
         - title: NativeTabbar

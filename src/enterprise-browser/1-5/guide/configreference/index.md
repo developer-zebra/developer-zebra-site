@@ -322,11 +322,11 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 
 ### FunctionKeyMapping
-**Applies only to Psion devices running Windows Mobile, including the Omnii XT15 and Workabout Pro.** Controls whether Psion proprietary Unicode values will be substituted with those specified in a file and used for Windows `keydown/keyup` function-key messages. **Applies only to function keys**. 
+**Applies only to certain devices running Windows Mobile, including the Omnii XT15 and Workabout Pro.** Controls whether proprietary Unicode values **specific to those devices only** will be substituted with values specified in a file and used for Windows `keydown/keyup` function-key messages. **Applies only to function keys**. 
 
 **Notes**: 
 
-* **This tag is not present in the default** `Config.xml` **file**; it must be added manually if Psion function-key mapping is required. 
+* **This tag is not present in the default** `Config.xml` **file**; it must be added manually if function key mapping is required. 
 * **The &lt;FunctionKeyMapping&gt; node** (shown in the example below) is a child node of the &lt;Configuration&gt; node. 
 * **Use of this tag requires the mapping file to be created separately** as follows:
 	* File name: `EBFunctionKeyMapping.xml`
@@ -335,8 +335,8 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 
 **Possible Values**:
 
-* 0 - Disabled (or if node is not present, does not map Psion function keys)
-* 1 - Enabled (maps Psion function keys from `EBFunctionKeyMapping.xml` file)
+* 0 - Disabled (or if node is not present, does not map proprietary function keys)
+* 1 - Enabled (maps proprietary function keys from `EBFunctionKeyMapping.xml` file)
 
 #### Example
 	:::xml

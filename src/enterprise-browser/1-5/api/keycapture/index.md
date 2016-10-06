@@ -20,7 +20,7 @@ Either way, the included files will be from:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the `index.html`, copy the file to the same directory as the `index.html` and add the following line to the HEAD section of the `index.html` file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
@@ -29,7 +29,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 
 ### Include only the required modules
 
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the KeyCapture API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, you must first include a reference to the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the KeyCapture API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -238,10 +238,9 @@ Certain devices may map their function keys to apparently normal keys. For examp
 ###Use of Key Capture module on Localized Operating Systems
 Users of the key capture module with Chinese, Korean and Japanese operating systems should bear the following in mind: Internally the KeyCapture module stores key representations as VK codes, therefore the key event will always return VK_PROCESSKEY (229) and keys can not be individually specified. In JavaScript the DOM element's keyup event can be used as an indication of which key has been pressed.
 
-###Function keys on Zebra Psion WM Devices
-The function keys on Zebra Psion devices running Windows Mobile (such as those listed below) do not return Microsoft virtual keycode value, but instead return a Psion proprietary Unicode value. This can lead to compatibility issues for Enterprise Browser apps running on these devices: 
+###Mapping Proprietary Keycodes 
+A small group of Zebra devices running Windows Mobile (such as those listed below) return proprietary keycode values inconsistent with those of other devices, and are incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](../../../guide/keycapture/#mappingproprietaryfunctionkeycodes). 
 
 * Workabout Pro 4 WEH Device
 * Omnii XT15 WEH Device
-                
-To configure Enterprise Browser to return the Microsoft virtual keycode value, see the [Keycode Mapping Guide](../../guide/keycapture/#mappingpsionfunctionkeys).
+

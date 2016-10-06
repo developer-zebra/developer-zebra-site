@@ -28,7 +28,6 @@ To set multiple EMML parameters / events on a single line use the following synt
 e.g. <b>keyCapture</b>.setEMML("dispatch:<i>value</i>;keyEvent:url('JavaScript:doFunction(%json)')");                           
 </td></tr></table>
 
-
 ##Parameters
 
 
@@ -74,6 +73,7 @@ It is not possible to capture the following types of keys, although on some devi
 *  Hot keys such as phone keys or 'soft' buttons, those whose 
    function changes based on the running application.
 *  The Home key on the ET1 device.
+*  On Android keypad devices, the ESC key behaves like a back button. User need to ensure to set the dispatch value to false or else the application will go into background and it will not perform the user defined action.
 </pre>
 
 
@@ -133,8 +133,8 @@ Certain devices may map their function keys to apparently normal keys, for examp
 ###Use of Key Capture module on Localized Operating Systems
 Users of the key capture module with Chinese, Korean and Japanese operating systems should bear the following in mind: Internally the KeyCapture module stores key representations as VK codes, therefore the key event will always return VK_PROCESSKEY (229) and keys can not be individually specified. The JavaScript standard document.onkeyup can be used as an indication of which key has been pressed.
 
-###Behavior of function keys on Zebra - Psion WM Devices
-The keycode value of function keys on Zebra - Psion WM devices doesnot return Microsoft virtual keyCode value. Instead, it returns the Psion proprietary Unicode value. Hence inorder to get the Microsoft virtual keyCode value one must refer [Function Key Mapping On Zebra - Psion Windows Mobile Device](https://developer.zebra.com/thread/32954) guide. The device for which Function Key Mapping is applicable is listed below.
+###Mapping Proprietary Keycodes 
+A small group of Zebra devices running Windows Mobile (such as those listed below) return proprietary keycode values inconsistent with those of other devices, and are incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](../../../guide/keycapture/#mappingproprietaryfunctionkeycodes). 
 
 * Workabout Pro 4 WEH Device
 * Omnii XT15 WEH Device
@@ -149,58 +149,47 @@ The keycode value of function keys on Zebra - Psion WM devices doesnot return Mi
 
 The following example displays an alert when any key is pressed:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:False; KeyEvent:url('JavaScript:alert('Key Pressed: %s');')">
-        
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:False; KeyEvent:url('JavaScript:alert('Key Pressed: %s');')">
+    
 The following example intercepts the return key and displays an alert:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; Dispatch:False; KeyEvent:url('JavaScript:alert('Return Key Pressed');')">
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; Dispatch:False; KeyEvent:url('JavaScript:alert('Return Key Pressed');')">
     
 The following example intercepts the tab key and replaces it by the return key:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x09; Remap:0x0D">
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x09; Remap:0x0D">
     
 The following example displays an alert when any key is pressed but still allows that key to received by the browser component:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:True; KeyEvent:url('JavaScript:alert('Key Pressed: %s');')">
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:True; KeyEvent:url('JavaScript:alert('Key Pressed: %s');')">
     
 The following example will not allow the return key to reach the browser but any other key will do so and display an alert:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; Dispatch:False; KeyEvent:url('JavaScript://ignore this');')">
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:True; KeyEvent:url('JavaScript:alert('Key Pressed: %s, key will be received by Browser.');')">
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; Dispatch:False; KeyEvent:url('JavaScript://ignore this');')">
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:All; Dispatch:True; KeyEvent:url('JavaScript:alert('Key Pressed: %s, key will be received by Browser.');')">
     
 The following example shows how a previously mapped key (in this case the return key) can be unmapped using JavaScript. Note that specifying KeyValue:All and later unmapping a specific key will not unmap the key, follow the example above to achieve that effect:
 
-
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; Dispatch:False; KeyEvent:url('JavaScript:alert('return pressed');')">
-        <script language=javascript>
-        function fnUnregisterReturnKey()
-        {
-           //  Call this function to unmap the return key and allow it to reach the browser.
-           keyCapture.keyValue = 0x0D;
-           keyCapture.keyEvent = url('');
-        }
-        </script>
+    <META HTTP-Equiv="KeyCapture" Content="KeyValue:0x0D; Dispatch:False; KeyEvent:url('JavaScript:alert('return pressed');')">
+    <script language=javascript>
+    function fnUnregisterReturnKey()
+    {
+       //  Call this function to unmap the return key and allow it to reach the browser.
+       keyCapture.keyValue = 0x0D;
+       keyCapture.keyEvent = url('');
+    }
+    </script>
     
 The following example disables all Accelerator Keys:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="AccelerateKey:None">
+    <META HTTP-Equiv="KeyCapture" Content="AccelerateKey:None">
     
 The following example will navigate to the RhoElements start page when return is pressed:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="HomeKeyValue:0x0D">
-
+    <META HTTP-Equiv="KeyCapture" Content="HomeKeyValue:0x0D">
     
 The following example will call a JavaScript function when the trigger is pressed or released:
 
-        :::html
-        <META HTTP-Equiv="KeyCapture" Content="TriggerEvent:url('JavaScript:alert('Trigger Event: %s');')">
+    <META HTTP-Equiv="KeyCapture" Content="TriggerEvent:url('JavaScript:alert('Trigger Event: %s');')">
     
 

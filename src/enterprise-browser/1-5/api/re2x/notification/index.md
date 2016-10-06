@@ -9,7 +9,7 @@ subhead: RhoElements 2.x API
 ## Overview
 The Notification Module is used to control the notification objects such as the LEDs, beeper and pager on the device. While some devices are equipped more than one of a given object type, most have multiple LEDs, a single beeper and a single pager. 
 
-To control notification objects, it is first necessary to query the device to discover which objects are available. This is done using the Enumerate method and `EnumNotificationsEvent`, which returns a unique identifier for each available notification to be used to set the notification state. Notifications can be set as "on," "off" or "cycling." with the behavior of 'on' or 'off' notification objects self explanatory; when set to cyclic LEDs will flash for the specified number of times whereas the beeper and pager will only activate once for the specified duration.
+To control notification objects, it is first necessary to query the device to discover which objects are available. This is done using the Enumerate method and `EnumNotificationsEvent`, which returns a unique identifier for each available notification to be used to set the notification state. Notifications can be set as "on," "off" or "cycling." The behavior of "on" or "off" notification objects is self explanatory; when set to cycling, LEDs will flash the specified number of times, whereas a beeper or pager will activate only once for the specified duration.
 
 ##Syntax
 
@@ -34,6 +34,7 @@ To set multiple EMML parameters / events on a single line use the following synt
 <P />
 e.g. <b>notification</b>.setEMML("setLEDOnDuration:<i>value</i>;enumNotificationsEvent:url('JavaScript:doFunction(%json)');enumerate");							
 </td></tr></table>
+
 
 ##Methods
 
@@ -78,8 +79,8 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
-###Psion VH10 with Windows CE 6.0
-On the Psion VH10 with Windown CE 6, the LED, beeper, pager and other objects activated through the Notification API are not supported, despite being enumerated through the `notification.enumerate();` function call.
+###Zebra VH10 with Windows CE 6.0
+On VH10 with Windown CE 6.0, the LED, beeper, pager and other objects activated through the Notification API are not supported, despite being enumerated through the `notification.enumerate();` function call.
 
 ###No Notification Objects
 If the device has no notification objects the array returned by EnumNotificationsEvent will be empty
@@ -117,9 +118,10 @@ There is a single return value for this event which is a two dimensional array w
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Persistent - Changes to this module will persist when navigating to a new page with the exception of the EnumNotificationsEvent which is page specific.</td></tr></table>
 
 
-##HTML/Javascript Examples
+##HTML/JavaScript Examples
 
-The following example stores the available notifications in a javascript array and displays them to the user in an HTML table. Note that a 2 dimensional array is returned in the EnumNotificationsEvent.
+The following example stores the available notifications in a JavaScript array and displays them to the user in an HTML table. Note that a two-dimensional array is returned in the EnumNotificationsEvent:
+
 
 		:::html
 		<HTML>
@@ -160,10 +162,11 @@ The following example stores the available notifications in a javascript array a
 		      </div>
 		   </BODY>
 		</HTML>
-		
-The following function takes a notification index and a notification type. Depending on the type of notification it invokes it appropriately. The index and type of each notification can be obtained via the EnumNotificationsEvent as demonstrated in the previous example
 
-		:::html
+		
+The following function takes a notification index and a notification type. Depending on the type of notification, it invokes it appropriately. The index and type of each notification can be obtained via the EnumNotificationsEvent as demonstrated in the previous example. 
+
+		:::javascript
 		<script>
 		   function annoyUser(index, type)
 		   {
@@ -192,4 +195,6 @@ The following function takes a notification index and a notification type. Depen
 		     }
 		   }
 		</script>
+
 		
+	

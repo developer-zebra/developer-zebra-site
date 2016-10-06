@@ -11,7 +11,6 @@ The Scanner Module controls the functionality of the device scanner.
 
 ##Syntax
 
-
 <table class="re-table"><tr><th class="tableHeading">scanner (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Scanner" content="[parameter / method]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Scanner" content="DecodeEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Scanner JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
@@ -36,7 +35,8 @@ e.g. <b>scanner</b>.setEMML("enabled:<i>value</i>;decodeEvent:url('JavaScript:do
 
 ##Methods
 
-Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
+
+Items listed in this section indicate methods, or in some cases parameters that will be retrieved.
 
 <table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enumerate</b></td><td class="clsSyntaxCells clsOddRow">Return a list of scanners present on the device via EnumScannerEvent.  This tag will be actioned immediately and should be called via JavaScript.</td><td class="clsSyntaxCells clsOddRow">
 N/A
@@ -181,7 +181,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 <br /><b>alwaysOn:</b>
   External illumination is always on.
 <br /><b>alwaysOff:</b>
-  External illumination is always off.
+  External illumination is always off. With illumination off, barcodes will be decoded only under bright light.
 <br /><b>Note:</b> On Android devices for Camera scanners this setting has to be enabled/disabled before starting the scanner. </DESCDETAIL><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>dpmMode:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Allows Direct Part Marking (DPM) barcodes to be read when true but may adversely affect overall decoding performance.  DPM is a way of stamping barcodes directly on physical objects and is only available on DPM terminals.<br /><br /><b>Possible Values:true / false</b><br /><i>Applicable scanner types: Imager / Camera Only</i><br /><i>Default: Device specific</i></td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>inverse1dMode:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Allows the user to select inverse 1D barcodes for decoding.  
@@ -227,7 +227,7 @@ A decode event is sent by the Scanner whenever a barcode is decoded.
 <br />
 
 ###connectionListenerEvent
-If using an RS507/RS6000/RS4000 scanner, register for connectionListenerEvent to receive the status of connected or disconnected state of the particular scanner through this event. **Note**: _This feature is supported on Android KitKat and higher (not supported on TC70 GA1)._
+If you are using an RS507/RS6000/RS4000 scanner you can register for connectionListenerEvent to receive the status of connected or disconnected state of the particular scanner through this event. **Note**: _This feature is supported from Android Kitkat version and above. It is not supported on TC70 GA1 device._
 <table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>connectionState</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The message describing the connection state of particular scanner when connected or disconnected. Possible values are true or false.</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">2</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>connectionType</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The message describing the connection type of particular scanner when connected or disconnected.</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">3</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>decoderType</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The message describing the decoder type of particular scanner when connected or disconnected.</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">4</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>deviceType</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The message describing the device type of particular scanner when connected or disconnected.</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">5</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>friendlyName</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The message describing the friendly name of particular scanner when connected or disconnected. </td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">6</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>isDefaultScanner</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The message describing whether the particular scanner when connected or disconnected is a default scanner or not. Possible values are true or false.</td></tr></table>
 
 <br/>
@@ -247,9 +247,13 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
+
 ###General
 If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes. On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen.
 
+
+###Limitation of Scanner and Barcode APIs
+The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application; only one or the other should be used. 
 
 ###Use Meta Tags Instead of Scanner Object
 Prefer Meta Tags instead of Scanner Object, if an application is designed to perform continuos scanning on reload of the page with certain properties(exposed by scanner object).
@@ -263,25 +267,36 @@ In some device configurations the scanner and imager share the same hardware, e.
 AutoEnter and AutoTab are mutually exclusive, only one can be enabled at any one time. If both are enabled then AutoEnter will take priority.
 
 
-###Psion Omnii XT15
-On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
-
 ###Bluetooth Scanner Overview
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' meta tag followed by the 'enabled' meta tag, this will allow you to scan the BT association barcode with a different scanner. You can override this default behaviour using the disconnectBtOnDisable parameter.
 
-The following messages will be received from the Bluetooth Scanner in the `bluetoothStatus` event:
+<pre>
 
-**BTScanAssociationBarcode -** the device is ready to be associated with a BT scanner. You must scan the association barcode. It is only necessary to scan the association barcode when you first associate a scanner with the device, this pairing will be remembered until you scan the unpairing barcode.
+The following messages will be received from the Bluetooth Scanner in the bluetoothStatus event:
 
-**BluetoothConnected -** the remote scanner has successfully connected to the device.
+* 'BTScanAssociationBarcode' 
+   Means the device is ready to be associated with a BT scanner.  You must scan the 
+   association barcode.  It is only necessary to scan the association 
+   barcode when you first associate a scanner with the device, this pairing will be remembered until
+   you scan the unpairing barcode.
+
+* 'BluetoothConnected'
+   The remote scanner has successfully connected to the device.
   
-**BluetoothDisconnected -** the remote scanner has become disconnected from the device, this may be due to loss of battery, being out of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for a period of time once it regains power or goes out of range, if it fails to reconnect after the specified timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
+* 'BluetoothDisconnected'
+   The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
+   of range or scanning the 'unpairing' barcode.  The scanner will attempt to reconnect automatically for
+   a period of time once it regains power or goes out of range, if it fails to reconnect after the specified
+   timeout the reconnect button on the device should be pushed.  Once the unpairing barcode is scanned
+   it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
+</pre>
 
 
 ###Bluetooth Scanner Support On Android Devices
 On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device.
 
 On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
+
 
 ###ScannerArray attribute
 The ScannerArray attribute returned from Scanner tag with parameter "EnumScannerEvent" will enumerate each scanner present on the device in a 2D array, associating each scanner's device name with a user friendly name. The device ID can be passed as a parameter to "Scanner" "Enabled:&lt;deviceID&gt;", the friendly name is a user readable description of the scanner, e.g:
@@ -331,249 +346,262 @@ Due to platform limitations this API is not available on the following Zebra Tec
 <table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices that have a scanner component. Android only supports the following parameters: enabled, [Decoder Name], autoEnter, autoTab, illuminationMode, linearSecurityLevel, picklistMode, scanTimeout, viewfinderMode, inverse1d.  Note that not all parameters will be supported by all scanner engines, e.g. Inverse1D barcodes are not supported on the MK4000.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Transient - The scanner is disabled when navigating to a new page or refreshing the current page.  Disabling and Re-enabling the scanner may reset some parameters back to their device default.  The Zebra utility CtlPanel, available as a separate download, can be used to configure the default state of the scanner. For Scanner to work with VC70, it should be connected as SSI mode.</td></tr></table>
 
-##HTML/Javascript Examples
+
+##HTML/JavaScript Examples
 
 The following example enables the scanner, turns on autoenter and performs a soft trigger start:
 
-  	<META HTTP-Equiv="scanner" Content="Enable">
-  	<META HTTP-Equiv="scanner" Content="AutoEnter:Enabled">
-  	<META HTTP-Equiv="scanner" Content="Start">
-  	
-The following example sets up the scanner on a page to submit the scanned data to an asp page upon successful decoding
+    :::xml
+    <META HTTP-Equiv="scanner" Content="Enable">
+    <META HTTP-Equiv="scanner" Content="AutoEnter:Enabled">
+    <META HTTP-Equiv="scanner" Content="Start">
+  
+The following example sets up the scanner on a page to submit the scanned data to an asp page upon successful decoding:
 
-  	<META HTTP-Equiv="scanner" Content="enabled">
-  	<META HTTP-Equiv="scanner" Content="DecodeEvent:url('mypage.asp?Data=%s&Source=%s&Type=%s&Time=%s&Length=%s')">
 
-The following example demonstrates to how to set the `connectionListenerEvent` from an HTML page. **Note**: _This feature is supported on Android KitKat and higher (not supported on TC70 GA1)_:
+    :::xml
+    <META HTTP-Equiv="scanner" Content="enabled">
+    <META HTTP-Equiv="scanner" Content="DecodeEvent:url('mypage.asp?Data=%s&Source=%s&Type=%s&Time=%s&Length=%s')">
 
-      :::html
+
+
+The following example demonstrates to how to set the connectionListenerEvent from an HTML page (_supported on Android KitKat and higher; not supported on TC70 GA1 device_):
+
+     :::html
       <html>
       <head>
-      <script type="text/javascript" src="../elements.js"></script>   
+      <script type="text/javascript" src="../elements.js"></script> 
       <script>
-          function doConnectionListener(object)
+        function doConnectionListener(object)
+        {
+          //connectionState, connectionType, decoderType, deviceType, friendlyName, isDefaultScanner
+          document.getElementById('myJsID').innerHTML = '<B><BR>1.Scanner-isScannerConnected:' + object.connectionState + '<BR>' +
+                                  '2.Scanner-ConnectionType:' + object.connectionType + '<BR>' +
+                                  '3.Scanner-DecoderType:' + object.decoderType + '<BR>' +
+                                  '4.Scanner-DeviceType:' + object.deviceType + '<BR>' +
+                                  '5.Scanner-FriendlyName:' + object.friendlyName + '<BR>' +
+                                  '6.Scanner-isDefaultScanner:' + object.isDefaultScanner + '</B>';
+        }
+        function addConnectionListenerEvent()
+        {
+          scanner.connectionListenerEvent = 'doConnectionListener(%json)';
+        }
+        function removeConnectionListenerEvent()
+        {
+          scanner.connectionListenerEvent = "";
+        }
+        function enumerateScanners()
+        { 
+          scanner.enumScannerEvent = "EnumScanners(%s);";
+          scanner.enumerate();    
+        }
+        function EnumScanners(scannerArray)
+        {
+          var scannerInfo = "Scanners On Device: " + scannerArray.length + "<BR>ID  --  Name<BR>" 
+          var scannerButtons = "";
+          for (i=0; i < scannerArray.length; i++)
           {
-              //connectionState, connectionType, decoderType, deviceType, friendlyName, isDefaultScanner
-              document.getElementById('myJsID').innerHTML = '<B><BR>1.Scanner-isScannerConnected:' + object.connectionState + '<BR>' +
-                                                            '2.Scanner-ConnectionType:' + object.connectionType + '<BR>' +
-                                                            '3.Scanner-DecoderType:' + object.decoderType + '<BR>' +
-                                                            '4.Scanner-DeviceType:' + object.deviceType + '<BR>' +
-                                                            '5.Scanner-FriendlyName:' + object.friendlyName + '<BR>' +
-                                                            '6.Scanner-isDefaultScanner:' + object.isDefaultScanner + '</B>';
+            scannerInfo = scannerInfo + scannerArray[i][0] + ' -- ' + scannerArray[i][1] + '<BR>';
+            scannerButtons += '<br><br> <input type="button" onclick="enableSpecifiedScanner(' + '\'' + scannerArray[i][0] + '\'' + ')" value="Enable' + scannerArray[i][0] + '" />';
           }
-          function addConnectionListenerEvent()
-          {
-              scanner.connectionListenerEvent = 'doConnectionListener(%json)';
-          }
-          function removeConnectionListenerEvent()
-          {
-              scanner.connectionListenerEvent = "";
-          }
-          function enumerateScanners()
-          {   
-              scanner.enumScannerEvent = "EnumScanners(%s);";
-              scanner.enumerate();        
-          }
-          function EnumScanners(scannerArray)
-          {
-              var scannerInfo = "Scanners On Device: " + scannerArray.length + "<BR>ID  --  Name<BR>" 
-              var scannerButtons = "";
-              for (i=0; i < scannerArray.length; i++)
-              {
-                  scannerInfo = scannerInfo + scannerArray[i][0] + ' -- ' + scannerArray[i][1] + '<BR>';
-                  scannerButtons += '<br><br> <input type="button" onclick="enableSpecifiedScanner(' + '\'' + scannerArray[i][0] + '\'' + ')" value="Enable' + scannerArray[i][0] + '" />';
-              }
-              availableScanners.innerHTML = scannerInfo;
-              document.getElementById('setEnableButtons').innerHTML = scannerButtons;
-          }
-          function enableSpecifiedScanner(theScanner)
-          {
-              msg.innerHTML = "Enabling Specified Scanner: " + theScanner;
-              scanner.enabled = theScanner;
-          }  
-          function disableScanner()
-          {
-              msg.innerHTML = "Disabling Scanner";
-              scanner.disable();
-          }
+          availableScanners.innerHTML = scannerInfo;
+          document.getElementById('setEnableButtons').innerHTML = scannerButtons;
+        }
+        function enableSpecifiedScanner(theScanner)
+        {
+          msg.innerHTML = "Enabling Specified Scanner: " + theScanner;
+          scanner.enabled = theScanner;
+        }  
+        function disableScanner()
+        {
+          msg.innerHTML = "Disabling Scanner";
+          scanner.disable();
+        }
       </script>
       </head> 
       <body>
-          <br><br> <div id="availableScanners">EnumScanners goes Here</div>
-          <br><br> <div id=myJsID></div>
-          <br><>br> <div id="msg">Messages Go Here</div>
-          <br><br> <input type='button' onClick="addConnectionListenerEvent()" value="Add Connection Listener Event"/>
-          <br><br> <input type='button' onClick="removeConnectionListenerEvent()" value="Remove Connection Listener Event"/>
-          <br><br> <input type="button" onclick="enumerateScanners()" value="Enumerate Scanners">
-          <br><br> <div id="setEnableButtons"></div>
-          <br><br> <input type="button" onclick="disableScanner()" value="Disable Scanner" />
+        <br><br> <div id="availableScanners">EnumScanners goes Here</div>
+        <br><br> <div id=myJsID></div>
+        <br><br> <div id="msg">Messages Go Here</div>
+        <br><br> <input type='button' onClick="addConnectionListenerEvent()" value="Add Connection Listener Event"/>
+        <br><br> <input type='button' onClick="removeConnectionListenerEvent()" value="Remove Connection Listener Event"/>
+        <br><br> <input type="button" onclick="enumerateScanners()" value="Enumerate Scanners">
+        <br><br> <div id="setEnableButtons"></div>
+        <br><br> <input type="button" onclick="disableScanner()" value="Disable Scanner" />
       </body>
       </html> 
 
 
 
-The following example sets up the scanner on a page to call a javascript function upon successful decoding:
+The following example sets up the scanner on a page to call a JavaScript function upon successful decoding:
 
-  	<META HTTP-Equiv="scanner" Content="enable">
-  	<META HTTP-Equiv="scanner" Content="DecodeEvent:url('javascript:doScan(%json);')">
-  	
-  :::html  
-	<script>
-	   function doScan(jsonObject)
-	   {
-	      if(jsonObject.type == 0x35) //ean 13
-	      {
-	         alert('Please scan a non EAN 13 code!');
-	      }
-	      else
-	      {
-	         alert('You scanned: ' + jsonObject.data);
-	      }
-	   }
-	</script>
-	
+    :::javascript
+    <META HTTP-Equiv="scanner" Content="enable">
+    <META HTTP-Equiv="scanner" Content="DecodeEvent:url('javascript:doScan(%json);')">
+    
+    <script>
+       function doScan(jsonObject)
+       {
+          if(jsonObject.type == 0x35) //ean 13
+          {
+             alert('Please scan a non EAN 13 code!');
+          }
+          else
+          {
+             alert('You scanned: ' + jsonObject.data);
+          }
+       }
+    </script>
+
+
+   
+
 The following example demonstrates how to set a device into presentation mode.
 
     :::html
-  	<HTML>
-  	<HEAD>
-  	  <Meta http-equiv="scanner" content="aimType:presentation">
-  	  <Meta http-equiv="scanner" content="DecodeEvent:url('Javascript:doScan('%s');')">
-  	  <Meta http-equiv="scanner" content="enable">
-  	</HEAD>
-  	<BODY onLoad="doSoftScan();">
-  	  <SCRIPT LANGUAGE="JavaScript">
-  	
-  	    function doSoftScan()
-  	    {
-  		    scanner.start();
-  	    }
-  	
-  	    function doScan(jsonObject)
-  	    {
-  		    bcode.innerHTML = jsonObject.data;
-  		    doSoftScan();
-  		}
-  	  </SCRIPT>
-  	  <div id="bcode"></div>
-  	</BODY>
-  	</HTML>
+    <HTML>
+    <HEAD>
+      <Meta http-equiv="scanner" content="aimType:presentation">
+      <Meta http-equiv="scanner" content="DecodeEvent:url('Javascript:doScan('%s');')">
+      <Meta http-equiv="scanner" content="enable">
+    </HEAD>
+    <BODY onLoad="doSoftScan();">
+      <SCRIPT LANGUAGE="JavaScript">
+    
+        function doSoftScan()
+        {
+          scanner.start();
+        }
+    
+        function doScan(jsonObject)
+        {
+          bcode.innerHTML = jsonObject.data;
+          doSoftScan();
+      }
+      </SCRIPT>
+      <div id="bcode"></div>
+    </BODY>
+    </HTML>
 
-	
+
+  
+  
 The following example shows how an application might handle a Bluetooth Scanner whose ID is SCN2:
 
+    :::html
+    <HTML>
+    <HEAD>
+    <!-- Status Updates are received via bluetoothStatusEvent -->
+    <META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTStatusFunc(%json);')">
+    <META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
+    <!-- Enable the Bluetooth Scanner, this will commence the BT pairing -->
+    <META HTTP-Equiv="Scanner" Content="Enabled:SCN2">
+    </HEAD>
+    
+    Barcode Data: <DIV ID="bcode"> </DIV>
+    User Message: <DIV ID="message"> </DIV>
+    <P><INPUT TYPE="button" VALUE="Change Associated Scanner" ONCLICK="onChangeScanner();"></P>
+    </BODY>
+    </HTML>
+    
 
-      :::html
-    	<HTML>
-    	<HEAD>
-    	<!-- Status Updates are received via bluetoothStatusEvent -->
-    	<META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTStatusFunc(%json);')">
-    	<META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
-    	<!-- Enable the Bluetooth Scanner, this will commence the BT pairing -->
-    	<META HTTP-Equiv="Scanner" Content="Enabled:SCN2">
-    	</HEAD>
-    	
-    	Barcode Data: <DIV ID="bcode"> </DIV>
-    	User Message: <DIV ID="message"> </DIV>
-    	<P><INPUT TYPE="button" VALUE="Change Associated Scanner" ONCLICK="onChangeScanner();"></P>
-    	</BODY>
-    	</HTML>
-    	
-    	<SCRIPT LANGUAGE="JavaScript">
-    	
-    	//  Whether or not the next barcode data we receive will be the unpairing barcode
-    	var expectingUnpairingBarcode = false;
-    	
-    	function ScanFunc(jsonObject)
-    	{
-    		//  Output the scanned barcode
-    		bcode.innerHTML = data;
-    	}
-    	
-    	function BTStatusFunc(jsonObject)
-    	{
-    		if (expectingUnpairingBarcode)
-    		{
-    			//  restart the scanner component so it is ready
-    			//  to accept a different Bluetooth Scanner
-    			expectingUnpairingBarcode = false;
-    			scanner.disable();
-    			scanner.enabled = 'SCN2';
-    			return;
-    		}
-    		
-    		if (jsonObject.status == 'BTScanAssociationBarcode')
-    		{
-    			//  Instruct the User to scan the association barcode
-    			alert('Scan Association Barcode');
-    		}
-    		else if(jsonObject.status == 'BluetoothConnected')
-    		{
-    			message.innerHTML = "Bluetooth Scanner Connected";
-    		}
-    		else if(jsonObject.status == 'BluetoothDisconnected')
-    		{
-    			message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
-    		}
-    	}
-    	
-    	function onChangeScanner()
-    	{
-    		//  Change the BT Scanner associated with the device, the logic to do this is handled
-    		//  once the 'unpairing' barcode is scanned.
-    		message.innerHTML = "Please Scan Unpairing Barcode";
-    		expectingUnpairingBarcode = true;
-    	}
-    	</SCRIPT>
-    	
-	
-The following example displays the available scanners on screen and enables the Bluetooth Scanner (if available)
+    :::javascript
+    <SCRIPT LANGUAGE="JavaScript">
+    
+    //  Whether or not the next barcode data we receive will be the unpairing barcode
+    var expectingUnpairingBarcode = false;
+    
+    function ScanFunc(jsonObject)
+    {
+      //  Output the scanned barcode
+      bcode.innerHTML = data;
+    }
+    
+    function BTStatusFunc(jsonObject)
+    {
+      if (expectingUnpairingBarcode)
+      {
+        //  restart the scanner component so it is ready
+        //  to accept a different Bluetooth Scanner
+        expectingUnpairingBarcode = false;
+        scanner.disable();
+        scanner.enabled = 'SCN2';
+        return;
+      }
+      
+      if (jsonObject.status == 'BTScanAssociationBarcode')
+      {
+        //  Instruct the User to scan the association barcode
+        alert('Scan Association Barcode');
+      }
+      else if(jsonObject.status == 'BluetoothConnected')
+      {
+        message.innerHTML = "Bluetooth Scanner Connected";
+      }
+      else if(jsonObject.status == 'BluetoothDisconnected')
+      {
+        message.innerHTML = "Bluetooth Disconnected, Please Reconnect";
+      }
+    }
+    
+    function onChangeScanner()
+    {
+      //  Change the BT Scanner associated with the device, the logic to do this is handled
+      //  once the 'unpairing' barcode is scanned.
+      message.innerHTML = "Please Scan Unpairing Barcode";
+      expectingUnpairingBarcode = true;
+    }
+    </SCRIPT>
 
-      :::html
-    	<HTML>
-    	<HEAD>
-    	<META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
-    	<META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTFunc(%json);')">
-    	<META HTTP-Equiv="Scanner" Content="EnumScannerEvent:url('Javascript:EnumScanners(%json);')">
-    	</HEAD>
-    	
-    	<BODY onLoad="setEnumScannerTimer();">
-    	<DIV ID="message"></DIV>
-    	</BODY>
-    	</HTML>
-    	
-    	<SCRIPT LANGUAGE="JavaScript">
-    	function ScanFunc(jsonObject) {message.innerHTML = jsonObject.data;}
-    	
-    	function BTFunc(jsonObject) {message.innerHTML = jsonObject.status;}
-    	
-    	function EnumScanners(jsonObject)
-    	{
-    		var scannerInfo = "Scanners On Device: " + jsonObject.scannerArray.length + "<BR>ID  --  Name<BR>" 
-    		for (i=0; i < jsonObject.scannerArray.length; i++)
-    		{
-    			scannerInfo = scannerInfo + jsonObject.scannerArray[i].deviceName + ' -- '
-    			+ jsonObject.scannerArray[i].friendlyName + '<BR>';
-    			//  See if this is the Bluetooth Scanner
-    			if (jsonObject.scannerArray[i].friendlyName.indexOf("Bluetooth") >= 0)
-    			{
-    				//  This is the Bluetooth Scanner, Enable it
-    				scanner.enabled = jsonObject.scannerArray[i].deviceName;
-    			}
-    		}
-    		message.innerHTML = scannerInfo;
-    	}
-    	
-    	//  Wait for the DOM to fully load before we enumerate the scanners
-    	function setEnumScannerTimer()
-    	{
-    	    setTimeout("onScannerEnable()", 3000);
-    	}
-    	function onScannerEnable()
-    	{
-    		scanner.enumerate();
-    	}
-    	</SCRIPT>
-    	
 
+    
+  
+The following example displays the available scanners on screen and enables a Bluetooth Scanner:
+
+    :::html
+    <HTML>
+    <HEAD>
+    <META HTTP-Equiv="Scanner" Content="DecodeEvent:url('Javascript:ScanFunc(%json);')">
+    <META HTTP-Equiv="Scanner" Content="BluetoothStatusEvent:url('Javascript:BTFunc(%json);')">
+    <META HTTP-Equiv="Scanner" Content="EnumScannerEvent:url('Javascript:EnumScanners(%json);')">
+    </HEAD>
+    
+    <BODY onLoad="setEnumScannerTimer();">
+    <DIV ID="message"></DIV>
+    </BODY>
+    </HTML>
+    
+    <SCRIPT LANGUAGE="JavaScript">
+    function ScanFunc(jsonObject) {message.innerHTML = jsonObject.data;}
+    
+    function BTFunc(jsonObject) {message.innerHTML = jsonObject.status;}
+    
+    function EnumScanners(jsonObject)
+    {
+      var scannerInfo = "Scanners On Device: " + jsonObject.scannerArray.length + "<BR>ID  --  Name<BR>" 
+      for (i=0; i < jsonObject.scannerArray.length; i++)
+      {
+        scannerInfo = scannerInfo + jsonObject.scannerArray[i].deviceName + ' -- '
+        + jsonObject.scannerArray[i].friendlyName + '<BR>';
+        //  See if this is the Bluetooth Scanner
+        if (jsonObject.scannerArray[i].friendlyName.indexOf("Bluetooth") >= 0)
+        {
+          //  This is the Bluetooth Scanner, Enable it
+          scanner.enabled = jsonObject.scannerArray[i].deviceName;
+        }
+      }
+      message.innerHTML = scannerInfo;
+    }
+    
+    //  Wait for the DOM to fully load before we enumerate the scanners
+    function setEnumScannerTimer()
+    {
+        setTimeout("onScannerEnable()", 3000);
+    }
+    function onScannerEnable()
+    {
+      scanner.enumerate();
+    }
+    </SCRIPT>
+    
 

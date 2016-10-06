@@ -1,5 +1,5 @@
 ---
-title: Keylight
+title: KeyLight Module
 productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html

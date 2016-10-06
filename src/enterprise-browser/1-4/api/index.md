@@ -46,8 +46,6 @@ automenu:
           url: Log
         - title: MediaPlayer
           url: mediaplayer
-        - title: Microflash ActiveX Object
-          url: pb3x/toc_microflash
         - title: NativeMenubar
           url: NativeMenubar
         - title: NativeTabbar
@@ -256,6 +254,8 @@ automenu:
           url: pb3x/keylight
         - title: KeyState
           url: pb3x/keystate
+       - title: Microflash ActiveX Object
+          url: pb3x/toc_microflash
         - title: MinimizeButton
           url: pb3x/minimizebutton
         - title: Notification

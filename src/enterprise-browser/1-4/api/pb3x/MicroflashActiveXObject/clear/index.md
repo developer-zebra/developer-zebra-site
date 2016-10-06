@@ -1,6 +1,6 @@
 ﻿---
 title: Clear Method
-productversion: '1.5'
+productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x API

@@ -9,6 +9,16 @@ Keycodes are constants that uniquely identify the ASCII values of device keypres
 
 Certain Zebra devices running Windows Mobile such as the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5) return proprietary keycode values that are inconsistent with those of other devices. 
 
+
+APIs: 
+Online content for all APIs
+EB, PB and RE
+for EB 1.6 onward, ABHINEET ONLY will modify content directly for slight mods, new method added, etc  WHICH REPO? 
+
+NEW STUFF: 
+same process as now
+
+
 **Mapping Windows Mobile function keys** is possible on certain Zebra devices only when running apps made with Enterprise Browser 1.5 or higher. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
 ### Android Keycode Handling 

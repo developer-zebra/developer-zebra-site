@@ -14,7 +14,9 @@ If the use case involves capturing a single barcode (for example, a pricing kios
 
 * **On the VC70**, the scanner will work only if connected in SSI Mode.
 
-* **EB 1.5 now supports the `decodeSound` method**. A bug in the method had prevented apps made with EB 1.4 and earlier from using the method.  
+* **EB 1.5 now supports the `decodeSound` method**. A bug in the method prevents apps made with EB 1.4 and earlier from using the method.  
+
+* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application; only one or the other should be used. 
 
 ## Enabling the API
 There are two methods of enabling the Barcode API:
@@ -33,7 +35,7 @@ To include all APIs, copy the `ebapi-modules.js` file to a location accessible b
 > The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+To include individual APIs, first include a reference to the `ebapi.js` module in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>

@@ -32,7 +32,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 > The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Remote Notification API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, first include a reference to the `ebapi.js` module in the HTML, and then the additional required API file(s). For instance, to use the Remote Notification API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -41,6 +41,7 @@ To include individual APIs, first include the `ebapi.js` in the HTML, and then t
 > In the lines above, notice that `ebapi.js` is included first, followed by `eb.remotenotification.js`, which is the Remote Notification API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
+
 
 ### clearproperties()
 
@@ -178,7 +179,7 @@ Notify method sends the notification information to the device.
 
 ####Parameters
 <ul><li>notifyinfo : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>The properties associated with the notifyinfo. Not providing properties to this function will use the notification device's default properties, or those previously set on the remote notification instance.</p></li><ul><li>beepPattern : <span class='text-info'>Array</span><span class='label '> Default: </span><p>
-									An array of Beep that specifies the durations for which to turn on the beep in milliseconds and the frequency in Hz. Default value assigned is null. Maximum allowed are 8 beep pattern pairs. If more than 8 pattern pairs are provided, only the first 8 pattern pairs will be considered.
+									An array of Beep that specifies the durations for which to turn on the beep in milliseconds and the frequency in Hz. Default value assigned is null. Maximum allowed are 4 beep pattern pairs. If more than 4 pattern pairs are provided, only the first 4 pattern pairs will be considered.
 									{ beepPattern:[
 									{beeptime:500,beepfrequency:3000},
 									{beeptime:500,beepfrequency:0},
@@ -189,7 +190,7 @@ Notify method sends the notification information to the device.
 									]
 									 </p></li><li>vibratorPattern : <span class='text-info'>Array</span><span class='label '> Default: </span><p>
 									
-										Vibrate with a given pattern. Pass in an array of integers that are the durations for which to turn on or off the vibrator in milliseconds. The supported values are 0ms to 2550ms. Behavior is undefined for any other value. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on. Maximum 8 vibrating pattern pairs are supported. If more than 8 pattern pairs are provided, only the first 8 pattern pairs will be considered. Default value assigned is null.
+										Vibrate with a given pattern. Pass in an array of integers that are the durations for which to turn on or off the vibrator in milliseconds. The supported values are 0ms to 2550ms. Behavior is undefined for any other value. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on. Maximum 4 vibrating pattern pairs are supported. If more than 4 pattern pairs are provided, only the first 4 pattern pairs will be considered. Default value assigned is null.
 									vibratorPattern:[
 									{vibratortime:500},
 									{vibratortime:500},
@@ -459,8 +460,6 @@ Returns the notification device model number.For Future Use only.Currently Not s
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Remotenotification.modelNumber</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -470,16 +469,20 @@ Returns the notification device model number.For Future Use only.Currently Not s
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, this time will be used otherwise pattern takes precedence. The supported values are 0ms to 2550ms. Behavior is undefined for any other value.
-####Access
+The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, this time will be used; otherwise pattern takes precedence. The supported values are 0 ms to 2550 ms. Behavior is undefined for any other value.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.vibrationDuration</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Remotenotification.vibrationDuration</code> 
 
-
-
 ####Platforms
 
 * Android
+
+##Remarks
+
+### Reconnecting to a Device
+To reconnect to a device after disconnection, quit and relaunch the Enterprise Browser application; the underlying layer does not support automatic device reconnection for use of the RemoteNotification object.
+

@@ -44,6 +44,11 @@ products:
         url: /enterprise-browser/1-5/guide
       - title: APIs
         url: /enterprise-browser/1-5/api
+    versions:
+      - url: enterprise-browser/1-5/guide/about
+        label: '1.5'
+      - url: enterprise-browser/1-4/guide/about
+        label: '1.4'
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-4/guide/about
@@ -80,7 +85,7 @@ products:
       - title: Download
         url: /enterprise-keyboard/1-0/download
     versions:
-      - url: datawedge/1-0/guide/about
+      - url: enterprise-keyboard/1-0/guide/about
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
@@ -130,7 +135,7 @@ products:
         label: '2.1'
       - url: emdk-for-xamarin/2-0/guide/about/
         label: '2.0'
-      - url: emdk-for-xamarin/1-1/guide/about/
+      - url: emdk-for-xamarin/1-0/guide/about/
         label: '1.0'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
@@ -159,7 +164,7 @@ products:
       - title: Compatibility
         url: /mx/compatibility
     versions:
-      - url: datawedge/5-0/guide/about
+      - url: mx/compatibility
         label: '6.0'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.

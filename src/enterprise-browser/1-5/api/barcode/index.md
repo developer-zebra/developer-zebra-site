@@ -16,7 +16,7 @@ If the use case involves capturing a single barcode (for example, a pricing kios
 
 * **EB 1.5 now supports the `decodeSound` method**. A bug in the method prevents apps made with EB 1.4 and earlier from using the method.  
 
-* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application; only one or the other should be used. 
+* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; only one or the other should be used. 
 
 ## Enabling the API
 There are two methods of enabling the Barcode API:
@@ -5320,7 +5320,7 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra Devices Only (Not all scanning engines support all symbologies or all symbology properties)
 
 ##Remarks
 
@@ -5357,9 +5357,9 @@ it is necessary to disable the scanner and then re-enable it before another scan
 
 ###Bluetooth Scanner Support On Android Devices
 
-On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device. 
+Enterprise Browser does not support Bluetooth scanners on the Zebra TC70 GA1 device. 
 
-On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
+Enterprise Browser supports Bluetooth scanners on devices running Android Kitkat and higher.
                
 
 ###Viewfinder Position Parameters

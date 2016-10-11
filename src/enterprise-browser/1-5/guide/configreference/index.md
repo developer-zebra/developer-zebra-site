@@ -1511,7 +1511,7 @@ Specifies a .wav file to be played when a scanned barcode is successfully decode
 	<ScanDecodeWav value="file://path-to-success-wav-file"/>
 
 ### ScanInvalidWav
-Specifies a .wav file to be played when a scanned barcode is not successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. 
+Specifies a .wav file to be played when a scanned barcode is not successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. **Not applicable to Enterprise Tablet**.Case sensitive. 
 
 **Possible Values**:
 

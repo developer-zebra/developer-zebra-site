@@ -8,6 +8,8 @@ subhead: RhoElements 2.x API
 ## Overview
 The KeyLight Module controls the keyboard backlight and its intensity. 
 
+**This API is not supported on Android**. 
+
 ##Syntax
 
 

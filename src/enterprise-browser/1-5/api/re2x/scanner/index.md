@@ -366,7 +366,7 @@ The following example sets up the scanner on a page to submit the scanned data t
 
 
 
-The following example demonstrates to how to set the connectionListenerEvent from an HTML page (_supported on Android KitKat and higher; not supported on TC70 GA1 device_):
+The following example demonstrates to how to set the `connectionListenerEvent` from an HTML page (**Supported on Android Lollipop only**):
 
      :::html
       <html>

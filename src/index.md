@@ -27,7 +27,7 @@ products:
       - url: datawedge/5-0/guide/about
         label: '5.0'
   - title: Enterprise Browser
-    description: "Build apps using standard web technologies such as HTML5, CSS3 and JavaScript that work with virtually any Zebra device."
+    description: "Build apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript."
     url: /enterprise-browser/1-5/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs

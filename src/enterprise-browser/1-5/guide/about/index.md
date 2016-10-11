@@ -39,7 +39,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[Simplified mass deployment](../keycapture)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
 
-* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits a greater control over values extracted from Android devices for configuring the Android UserAgent string. 
+* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
 
 #### New Tags for Android
 
@@ -53,15 +53,15 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
 
-* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control cached pages will be refreshed.
+* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control how long cached pages will be considered "fresh" by Enterprise Browser
 
 * **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
 
 #### New Guides
 
-* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes. Also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
+* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes (including the WorkAbout Pro 4 and Omnii XT15). This guide also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
-* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4)details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
+* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
 
 ### Key Enterprise Browser Features
 

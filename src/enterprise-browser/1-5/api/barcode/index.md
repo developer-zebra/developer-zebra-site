@@ -5359,7 +5359,7 @@ it is necessary to disable the scanner and then re-enable it before another scan
 
 Enterprise Browser does not support Bluetooth scanners on the Zebra TC70 GA1 device. 
 
-Enterprise Browser supports Bluetooth scanners on devices running Android Kitkat and higher.
+Enterprise Browser supports Bluetooth scanners on devices running Android KitKat and higher.
                
 
 ###Viewfinder Position Parameters

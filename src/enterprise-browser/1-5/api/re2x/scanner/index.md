@@ -227,7 +227,8 @@ A decode event is sent by the Scanner whenever a barcode is decoded.
 <br />
 
 ###connectionListenerEvent
-If you are using an RS507/RS6000/RS4000 scanner you can register for connectionListenerEvent to receive the status of connected or disconnected state of the particular scanner through this event. **Note**: _This feature is supported on Android Lollipop only._
+**Supported on Android Lollipop only**. If using an RS507/RS6000/RS4000 scanner, it is possible to register for `connectionListenerEvent` to receive the status of the connected or disconnected state of a particular scanner through this event. 
+
 <table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>connectionState</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The message describing the connection state of particular scanner when connected or disconnected. Possible values are true or false.</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">2</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>connectionType</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The message describing the connection type of particular scanner when connected or disconnected.</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">3</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>decoderType</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The message describing the decoder type of particular scanner when connected or disconnected.</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">4</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>deviceType</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The message describing the device type of particular scanner when connected or disconnected.</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">5</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>friendlyName</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The message describing the friendly name of particular scanner when connected or disconnected. </td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">6</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>isDefaultScanner</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The message describing whether the particular scanner when connected or disconnected is a default scanner or not. Possible values are true or false.</td></tr></table>
 
 <br/>
@@ -293,9 +294,9 @@ The following messages will be received from the Bluetooth Scanner in the blueto
 
 
 ###Bluetooth Scanner Support On Android Devices
-On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device.
+Enterprise Browser does not support Bluetooth scanners on the Zebra TC70 GA1 device. 
 
-On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
+Enterprise Browser supports Bluetooth scanners on devices running Android KitKat and higher.
 
 
 ###ScannerArray attribute

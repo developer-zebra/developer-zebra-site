@@ -15,7 +15,7 @@ parm:
       name: Do Nothing
       mx: "6.1"
       osx: "3.5"
-      description: This value (or the absence of this parm from the XML) will make  no change to the Threat(s) being detected on the device; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will make no change to the Threat(s) being detected on the device; any previously selected setting will be retained.
     - code: 1
       name: Max Password Attempts
       mx: "4.3"

@@ -27,30 +27,25 @@ products:
       - url: datawedge/5-0/guide/about
         label: '5.0'
   - title: Enterprise Browser
-    description: Build apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
-    url: /enterprise-browser/1-4/guide/about
+    description: "Build apps using standard web technologies such as HTML5, CSS3 and JavaScript that work with virtually any Zebra device."
+    url: /enterprise-browser/1-5/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-browser/1-4/guide/about
+        url: /enterprise-browser/1-5/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-4/guide/gettingstarted
+        url: /enterprise-browser/1-5/guide/gettingstarted
       - title: Setup
-        url: /enterprise-browser/1-4/guide/setup/
+        url: /enterprise-browser/1-5/guide/setup/
       - title: Tutorials
-        url: /enterprise-browser/1-4/tutorial/
+        url: /enterprise-browser/1-5/tutorial/
       - title: Usage Guides
-        url: /enterprise-browser/1-4/guide
+        url: /enterprise-browser/1-5/guide
       - title: APIs
-        url: /enterprise-browser/1-4/api
-    versions:
-      - url: enterprise-browser/1-5/guide/about
-        label: '1.5'
-      - url: enterprise-browser/1-4/guide/about
-        label: '1.4'
+        url: /enterprise-browser/1-5/api
   - title: Enterprise Home Screen
-    description: A simple way to control user access to apps, settings and files on Android devices without the need for custom code.
+    description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-4/guide/about
     image: /ehs/ehs-logo.png
     btn-text: Latest Docs
@@ -88,7 +83,7 @@ products:
       - url: datawedge/1-0/guide/about
         label: '1.0'
   - title: EMDK For Android
-    description: The Enterprise Mobility Development Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc.
+    description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/5-0/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs

@@ -48,12 +48,12 @@ The CardReader Module is used to either navigate to a URL or call a JavaScript f
 			<br/><br/>
 			e.g. <b>cardReader</b>.readEvent = 'doFunction(%json)';
 			<br/><br/>
-			For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+			<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 		</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow">
-			To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: cardreader.setEMML("[Your EMML Tags]");
+			To set multiple EMML parameters / events on a single line use the following syntax: cardreader.setEMML("[Your EMML Tags]");
 			<br/><br/>
 			e.g. <b>cardReader</b>.setEMML("pinTimeout:<i>value</i>;readEvent:url('JavaScript:doFunction(%json)');open");
 		</td>

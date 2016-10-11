@@ -4,7 +4,6 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
 ## Overview
 The Barcode Module controls functionality of the device scanner. Check the platform indicators in each property or method section. If developing for a device with only a camera, the number of symbologies available will be limited only to the most common such as EAN13 and UPCA, and scanning will be available only through the device camera. If the app is running on more well-equipped hardware, finer control over a more fully featured Scanner wilol be available, often with a choice of scanner hardware to use on the device. 
 
@@ -15,7 +14,9 @@ If the use case involves capturing a single barcode (for example, a pricing kios
 
 * **On the VC70**, the scanner will work only if connected in SSI Mode.
 
-* **EB 1.5 now supports the `decodeSound` method**. A bug in the method had prevented apps made with EB 1.4 and earlier from using the method.  
+* **EB 1.5 now supports the `decodeSound` method**. A bug in the method prevents apps made with EB 1.4 and earlier from using the method.  
+
+* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; only one or the other should be used. 
 
 ## Enabling the API
 There are two methods of enabling the Barcode API:
@@ -34,7 +35,7 @@ To include all APIs, copy the `ebapi-modules.js` file to a location accessible b
 > The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+To include individual APIs, first include a reference to the `ebapi.js` module in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -43,6 +44,7 @@ To include individual APIs, first include the `ebapi.js` in the HTML, and then t
 > In the lines above, notice that `ebapi.js` is included first, followed by `eb.barcode.js`, which is the Barcode API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
+
 
 ### addConnectionListener()
 If you are using an RS507/RS6000/RS4000 barcode scanner you can add a connection listener to receive connected or disconnected callbacks through this method.
@@ -2039,7 +2041,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-If the Scanner is enabled on a page through JavaScript, the scanner will be disabled by default when navigating to a new page. To override this behavior, set this option to false; the Scanner will remain enabled in the foreground application until specifically disabled.
+By default if you have enabled the Scanner on a page, through either JavaScript or Ruby and navigate to a new page the Scanner will automatically disable. To override this behavior you can set this option to false and once enabled the Scanner will remain so in the foreground application until you disable it.
 ####Params
 <p><strong>Default:</strong> true</p>
 ####Access
@@ -5318,29 +5320,46 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra Devices Only (Not all scanning engines support all symbologies or all symbology properties)
 
 ##Remarks
 
-###Psion Omnii XT15
-On the Zebra Psion Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
+###Limitation of Scanner and Barcode API
+
+The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application; only one or the other should be used. 
+               
 
 ###Bluetooth Scanner Overview
+
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' method followed by the 'enabled' method, this will allow you to scan the BT association barcode with a different scanner. You can override this default behavior using the disconnectBtOnDisable property.
 
-The following messages will be received from the Bluetooth Scanner in the `bluetoothStatus` event:
+The following messages will be received from the Bluetooth Scanner in the bluetoothStatus event:
 
-**BTScanAssociationBarcode -** the device is ready to be associated with a BT scanner. You must scan the association barcode. It is only necessary to scan the association barcode when you first associate a scanner with the device, this pairing will be remembered until you scan the unpairing barcode.
+**'BTScanAssociationBarcode'**
 
-**BluetoothConnected -** the remote scanner has successfully connected to the device.
+Means the device is ready to be associated with a BT scanner. You must scan the
+association barcode. It is only necessary to scan the association
+barcode when you first associate a scanner with the device, this pairing will be remembered until
+you scan the unpairing barcode.
 
-**BluetoothDisconnected -** the remote scanner has become disconnected from the device, this may be due to loss of battery, being out of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for a period of time once it regains power or goes out of range, if it fails to reconnect after the specified timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned it is necessary to disable the scanner and then re-enable it before another scanner can be associated.                
+**'BluetoothConnected'**
+
+The remote scanner has successfully connected to the device.
+
+**'BluetoothDisconnected'**
+
+The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
+of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for
+a period of time once it regains power or goes out of range, if it fails to reconnect after the specified
+timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned
+it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
+                
 
 ###Bluetooth Scanner Support On Android Devices
 
-On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device. 
+Enterprise Browser does not support Bluetooth scanners on the Zebra TC70 GA1 device. 
 
-On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
+Enterprise Browser supports Bluetooth scanners on devices running Android KitKat and higher.
                
 
 ###Viewfinder Position Parameters

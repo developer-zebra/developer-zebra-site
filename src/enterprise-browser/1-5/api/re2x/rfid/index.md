@@ -40,11 +40,11 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 		</td>
 	</tr>
 	<tr>
-		<td class="clsSyntaxCells clsEvenRow">To Set rfid return events via JavaScript use the following syntax: rfid.event = JavaScript Function;<P />e.g. <b>rfid</b>.enumRFIDEvent = 'doFunction(%json)';<P />For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+		<td class="clsSyntaxCells clsEvenRow">To Set rfid return events via JavaScript use the following syntax: rfid.event = JavaScript Function;<P />e.g. <b>rfid</b>.enumRFIDEvent = 'doFunction(%json)';<P /><!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 		</td>
 	</tr>
 	<tr>
-		<td class="clsSyntaxCells clsOddRow">To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: rfid.setEMML("[Your EMML Tags]");<P />e.g. <b>rfid</b>.setEMML("antennaSelected:<i>value</i>;enumRFIDEvent:url('JavaScript:doFunction(%json)');enumerate");
+		<td class="clsSyntaxCells clsOddRow">To set multiple EMML parameters / events on a single line use the following syntax: rfid.setEMML("[Your EMML Tags]");<P />e.g. <b>rfid</b>.setEMML("antennaSelected:<i>value</i>;enumRFIDEvent:url('JavaScript:doFunction(%json)');enumerate");
 		</td>
 	</tr>
 

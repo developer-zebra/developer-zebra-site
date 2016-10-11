@@ -66,6 +66,8 @@ automenu:
           url: screenorientation
         - title: Sensor
           url: sensor
+        - title: SettingsButton
+          url: settingsButton
         - title: SignalIndicators
           url: signalindicators
         - title: Signature
@@ -252,6 +254,8 @@ automenu:
           url: pb3x/keylight
         - title: KeyState
           url: pb3x/keystate
+        - title: Microflash ActiveX Object
+          url: pb3x/toc_microflash
         - title: MinimizeButton
           url: pb3x/minimizebutton
         - title: Notification

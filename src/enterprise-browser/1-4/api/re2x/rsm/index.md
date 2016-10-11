@@ -11,6 +11,7 @@ The RSM Module is used to configure and retrieve attribute settings of a remote 
 
 ##Syntax
 
+
 <table class="re-table"><tr><th class="tableHeading">rsm (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="RSM" content="[parameter]"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">Rsm JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
@@ -25,13 +26,14 @@ To Set rsm parameters via JavaScript use the following syntax: rsm.parameter = '
 To Set rsm return events via JavaScript use the following syntax: rsm.event = JavaScript Function;
 <P />e.g. <b>rsm</b>.rsmGetEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: rsm.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: rsm.setEMML("[Your EMML Tags]");
 <P />
-e.g. <b>rsm</b>.setEMML("bluetoothAuthentication:<i>value</i>;rsmGetEvent:url('JavaScript:doFunction(%json)');markForRetrievalModelNumber");							
+e.g. <b>rsm</b>.setEMML("bluetoothAuthentication:<i>value</i>;rsmGetEvent:url('JavaScript:doFunction(%json)');markForRetrievalModelNumber");			
 </td></tr></table>
+
 
 ##Methods
 
@@ -163,22 +165,26 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Remarks
 
-###Remote scanner attributes 
-The following table maps Attribute names, possible values and their access (read/ write):
+The following is a mapping between Attributes, their possible values and whether they are read / write:
 
 <pre>
 
+
+
 Attribute                      Access  Associated Value
 
-modelNumber                      R     Scanner model number    
-serialNumber                     R     Scanner serial number    
+modelNumber                      R     The model number    
+serialNumber                     R     The serial number    
 dateOfManufacture                R     Date of manufacture as DDMMYY    
 dateOfService                    R     Date of service as DDMMYY    
 bluetoothAddress                 R     Bluetooth address as FF:FF:FF:FF:FF:FF where FF is a hex number.    
-firmwareVersion                  R     Scanner operating system version.    
+firmwareVersion                  R     Scanner's operating system version.    
 deviceClass                      R     The device class of the system    
-batteryStatus                    R     Scanner battery status, (Unknown. Full, Medium, Empty, Charging-FullRate, Charging-HalfRate, Charging-Trickle, Discharging)    
-batteryCapacity                  R     Battery charge remaining (integer 0-100; unknown) e.g. if no battery in the scanner.    
+batteryStatus                    R     Indicates the status us the scanner's battery, 'Unknown', 'Full', 
+                                       'Medium', 'Empty', 'Charging-FullRate', 'Charging-HalfRate', 
+                                       'Charging-Trickle' or 'Discharging'    
+batteryCapacity                  R     Remaining capacity of the battery, integer in the range '0' to 
+                                       '100'.  'Unknown' if unable to determine, e.g. if no battery in the scanner.    
 batteryID                        R     'Simple', 'Double', 'Cabled', 'Unknown'    
 bluetoothAuthentication          RW    'True' if authentication is required, else 'False'    
 bluetoothEncryption              RW    True' if encryption is required, else 'False'    
@@ -230,8 +236,6 @@ pagingActivate                   W     'Start' or 'Stop' paging to the scanner.
 
 ###ProximityEnable / Mems
 If you press the trigger on an RSM scanner proximity enabled will be turned off, even though it still reports its self as being turned on if you query the RSM parameter. In order to use ProximityEnable you need to also have Mems enabled, this is the motion sensor and if you disable Mems the scanner will not function.
-
-
 
 
 ##Requirements
@@ -302,6 +306,7 @@ The following example retrieves some attributes of the Bluetooth Scanner:
 	</HTML>
 	
 	
+
 
 
 

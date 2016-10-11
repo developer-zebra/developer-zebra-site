@@ -143,7 +143,7 @@ Demonstrates use of the most common [Key Capture APIs](../../api/keycapture/):
 -----
 
 ### Screen  
-Demonstrates use of the most common [Screen Orientation APIs](../../api/ScreenOrientation/):  
+Demonstrates use of the most common [Screen Orientation APIs](../../api/screenorientation/):  
 
 **Left –** forces the device to rotate to a left-handed orientation.  
 
@@ -158,7 +158,7 @@ Demonstrates use of the most common [Screen Orientation APIs](../../api/ScreenOr
 -----
 
 ### Signal  
-Demonstrates use of the most common Signals in the [Signal Indicators API](../../api/signalIndicators):  
+Demonstrates use of the most common Signals in the [Signal Indicators API](../../api/signalindicators):  
 
 * **signalStrength**
 * **essid**

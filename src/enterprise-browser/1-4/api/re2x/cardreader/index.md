@@ -36,29 +36,20 @@ The CardReader Module is used to either navigate to a URL or call a JavaScript f
 		</td>
 	</tr>
 	<tr>
+		<td class="clsSyntaxCells clsEvenRow"> To set multiple EMML parameters / events on a single line use the following syntax: cardreader.setEMML("[Your EMML Tags]"); 
+	<P /> e.g. <b>cradle</b>.setEMML("cradleEvent:url('JavaScript:doFunction(%json)');getCradleId");		
+	</td>
+	</tr>
+	<tr>
 		<td class="clsSyntaxCells clsOddRow">
 			To Set cardReader parameters via JavaScript use the following syntax: cardreader.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
 			<br/><br/>
 			e.g. <b>cardReader</b>.pinTimeout = 'value';
 		</td>
 	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set cardReader return events via JavaScript use the following syntax: cardreader.event = JavaScript Function;
-			<br/><br/>
-			e.g. <b>cardReader</b>.readEvent = 'doFunction(%json)';
-			<br/><br/>
-			For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: cardreader.setEMML("[Your EMML Tags]");
-			<br/><br/>
-			e.g. <b>cardReader</b>.setEMML("pinTimeout:<i>value</i>;readEvent:url('JavaScript:doFunction(%json)');open");
-		</td>
-	</tr>
 </table>
+
+ 
 
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.

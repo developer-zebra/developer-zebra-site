@@ -24,10 +24,10 @@ To Set signatureCapture parameters via JavaScript use the following syntax: sign
 To Set signatureCapture return events via JavaScript use the following syntax: signaturecapture.event = JavaScript Function;
 <P />e.g. <b>signatureCapture</b>.signatureSaveEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: signaturecapture.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: signaturecapture.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>signatureCapture</b>.setEMML("visibility:<i>value</i>;signatureSaveEvent:url('JavaScript:doFunction(%json)');clear");							
 </td></tr></table>

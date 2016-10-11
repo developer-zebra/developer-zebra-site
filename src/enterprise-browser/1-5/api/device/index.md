@@ -26,7 +26,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 > The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include individual APIs, first include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Device API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, first include a reference to the `ebapi.js` module in the HTML, and then the additional required API file(s). For instance, to use the Device API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>

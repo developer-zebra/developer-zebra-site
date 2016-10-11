@@ -10,6 +10,8 @@ subhead: RhoElements 2.x API
 The VideoCapture Module captures video from the seleted camera saves it as a file on the device.
 
 ##Syntax
+
+
 <table class="re-table"><tr><th class="tableHeading">videoCapture (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="VideoCapture" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="VideoCapture" content="VideoSaveEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
 <table class="re-table"><tr><th class="tableHeading">VideoCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
@@ -24,18 +26,18 @@ To Set videoCapture parameters via JavaScript use the following syntax: videocap
 To Set videoCapture return events via JavaScript use the following syntax: videocapture.event = JavaScript Function;
 <P />e.g. <b>videoCapture</b>.videoSaveEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!--For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: videocapture.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: videocapture.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>videoCapture</b>.setEMML("duration:<i>value</i>;videoSaveEvent:url('JavaScript:doFunction(%json)');start");
 </td></tr></table>
 
 ## Methods
-Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
+Items listed in this section indicate methods and/or parameters that will be retrieved.
 
-> NOTE: On Android the operating System presents a preview window with controls (Start, stop and cancel) for recording. The file transfer will happen as specified even if the stop  is not sent by this API.
+> NOTE: The Android operating System presents a preview window with controls to Start, Stop and Cancel recording. A file transfer will occur as specified even if the Stop is not sent by this API.
 
 <table class="re-table">
 	<col width="10%"/>
@@ -96,7 +98,7 @@ The Video Save Event is called when the captured video has been successfully tra
 
 
 ##Multi Instance
-When multiple RhoElememts applications are running the following considerations should be made: Only the foreground RhoElements application is given access to capture video, when an application is sent to the background any capture that is in progress will be cancelled and it will automatically relinquish control of the video hardware.  When brought back to the foreground, an application previously using the video capture will have its previous configuration (eg. name etc.) reapplied to the plugin automatically. Please note that any file transfer that is in progress continues even if the application is sent to the background.
+When multiple RhoElements applications are running the following considerations should be made: Only the foreground RhoElements application is given access to capture video, when an application is sent to the background any capture that is in progress will be cancelled and it will automatically relinquish control of the video hardware.  When brought back to the foreground, an application previously using the video capture will have its previous configuration (eg. name etc.) reapplied to the plugin automatically. Please note that any file transfer that is in progress continues even if the application is sent to the background.
 
 
 ##Remarks
@@ -122,7 +124,12 @@ Video Capture is designed to be configured before any transfer is made to a remo
 The protocol, port number, username (optional) and password (optional) are all derived from the URL string and should be specified in the following manner: [protocol]://[username]:[password@]Server[:Port]FileNameAndPath. FTP Example: ftp://admin:root@192.168.1.1:2500/Folder/Cap.mov. HTTP Example: http://admin:root@192.168.1.1:8080/Folder/Upload.aspx. File Example: file://\path\Cap.mov. Remember to also wrap your URL with url('') when being used as part of a meta tag, as shown in the examples above.
 
 
+###Zebra WM/CE device support
+The VideoCapture API is not supported by Enterprise Browser apps on the following devices:
 
+1. WorkAbout Pro 4
+2. Omnii XT15
+3. VH10
 
 ##Requirements
 
@@ -163,9 +170,6 @@ The following JavaScript will start a 30 second video capture when onStart is ca
 	      videoCapture.start();
 	   }
 	</script>
-
-
-
 
 
 

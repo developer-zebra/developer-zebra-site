@@ -27,29 +27,14 @@ To Set Module parameters via JavaScript use the following syntax: module.paramet
 To Set Module return events via JavaScript use the following syntax: module.event = JavaScript Function;
 <P />e.g. <b>Module</b>.enumApplications = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+<!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: module.setEMML("[Your EMML Tags]");
+To set multiple EMML parameters / events on a single line use the following syntax: module.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>Module</b>.setEMML("iD:<i>value</i>;enumApplications:url('JavaScript:doFunction(%json)');newInstance");							
 </td></tr></table>
 
-<table class="re-table"><tr><th class="tableHeading">Module Ruby Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
-By default the Ruby Object <b>'Module'</b> will exist on the current page and can be used to interact directly with the Module. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Module'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b></td></tr><tr><td class="clsSyntaxCells clsEvenRow">
-To Invoke Module methods via Ruby use the following syntax: Module.method()
-<P />e.g. <b>Module</b>.newInstance</td></tr><tr><td class="clsSyntaxCells clsOddRow">
-To Set Module parameters via Ruby use the following syntax: Module.parameter = 'value' remembering to enclose your value in quotes where appropriate.  
-<P />e.g. <b>Module</b>.iD = 'value'
-</td></tr><tr><td class="clsSyntaxCells clsEvenRow">						
-To Set Module return events via Ruby use the following syntax: Module.event = url_for(:action =&gt; :event_callback) 
-<P />e.g. <b>Module</b>.enumApplications = url_for(:action =&gt; :module_event_callback)
-<P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page.
-<p>To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}</p></td></tr><tr><td class="clsSyntaxCells clsOddRow" /></tr></table>
-
-
-	
 
 ##Methods
 

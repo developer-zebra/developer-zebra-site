@@ -1500,7 +1500,7 @@ Controls the duration (in milliseconds) of the device beeper sound when a barcod
 	<DecodeDuration value="500"/>
 
 ### ScanDecodeWav
-Specifies a .wav file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Not applicable to the Enterprise Tablet. Case sensitive.
+Specifies a .wav file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive.
 
 **Possible Values**:
 

@@ -910,6 +910,12 @@ In some devices (eg: Samsung), an image will be saved in landscape mode even if 
 ###WM/CE devices lacking support
 Due to platform limitations, the ES400, MC65 and MC67 do not support the color camera.
 
+The Camera API is not supported by Enterprise Browser apps on the following devices:
+  
+* WorkAbout Pro 4
+* Omnii XT15
+* VH10
+
 ###takePicture resolution issue on low-memory devices with WM
 Due to platform limitations, the ES400, MC65 and MC67 do not support a color camera. The imager on the MC55 with WM does not support the Fullscreen window (eg: takePicture). Parameters such as previewLeft, previewWidth, previewTop and previewHeight are supported by the device to set up a user-defined viewer window.
 

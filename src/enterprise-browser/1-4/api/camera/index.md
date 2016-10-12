@@ -922,7 +922,7 @@ For images captured with the camera using a Rho app, the image might initially a
 High-resolution settings are not recommended for low-memory devices. Image previews on tablet devices might appear stretched or shrunken.
 
 ###Devices lacking support
-Due to platform limitations, this API is not available on the following Zebra Technologies devices:
+The Camera API is not supported from Enterprise Browser apps on the following Zebra Technologies devices:
 
 * Workabout Pro 4
 * Omnii XT15

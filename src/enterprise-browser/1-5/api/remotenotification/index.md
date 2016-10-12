@@ -150,6 +150,7 @@ Synchronous Return:
 	* <code>EB.Remotenotification.enumerate()</code> 
 
 
+<!-- 
 ### getDefault()
 This method will return an object that represents the default instance of the API Class. For example Camera.getDefault will return a Camera object that represents the default camera.
 
@@ -172,7 +173,7 @@ Synchronous Return:
 
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Remotenotification.getDefault()</code> 
-
+-->
 
 ### notify(<span class="text-info">HASH</span> notifyinfo)
 Notify method sends the notification information to the device.
@@ -218,6 +219,7 @@ Synchronous Return:
 	* <code>EB.Remotenotification.notify(<span class="text-info">HASH</span> notifyinfo)</code> 
 
 
+<!-- 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Remotenotification</span> defaultInstance)
 This method allows you to set the attributes of the default object instance by passing in an object of the same class.
 
@@ -237,7 +239,7 @@ Synchronous Return:
 
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Remotenotification.setDefault(<span class="text-info">SELF_INSTANCE: EB.Remotenotification</span> defaultInstance)</code> 
-
+-->
 
 ##Properties
 

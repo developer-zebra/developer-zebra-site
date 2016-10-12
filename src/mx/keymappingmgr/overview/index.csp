@@ -16,6 +16,8 @@ The KeyMappingMgr allows an app to modify the behavior of a given Key when that 
 	* TC8000
 * **Key mapping requires KitKat or higher on a supported device.**
 
+>**Modifier keys are known as Meta keys on Android**. 
+
 ### Main Functionality
 
 * Remap one or more device keys
@@ -33,6 +35,8 @@ Key processing begins by checking the Current Key State at the time the Key was 
 If all Key Mapping Tables associated with Key State Modifiers are searched without finding a Key Mapping for the pressed Key, the Base Key State Key Mapping Table is searched. If no Key Mapping for the pressed Key can be found, the default Android Key Behavior will be performed for the pressed Key. This will seldom be the case since most devices will have Default Key Mappings for all Keys defined in the Base Key State Mapping Table.
 
 Not all devices support all Key State Modifiers, and hence not all devices will support all Key Mapping Tables. Some devices support multiple Key State Modifiers, and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports. All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. These Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State.
+
+>**Modifier keys are known as Meta keys on Android**. 
 
 ####Key Table Search Order
 1. Blue-Key State Modifier and Blue-Key Mapping Table
@@ -114,3 +118,6 @@ Each Key Mapping specifies a single Key Behavior that should be performed for a 
 * **Reset to default**
 
 	This Key Behavior indicates that the Default Key Mapping (if any) for a Key in a specified Key Mapping Table should be restored. This is done by removing any Override Key Mapping for the Key from the specified Key Mapping Table. If there is no Override Key Mapping for the Key in the specified Key Mapping Table, no change will be made.
+
+>**Modifier keys are known as Meta keys on Android**. 
+

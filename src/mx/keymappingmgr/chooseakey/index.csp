@@ -1,6 +1,6 @@
 ---
 csp: keymapmgr
-title: Key Selector
+title: Key Identifier
 type: parm
 order: 3
 mx: "4.4"
@@ -13,7 +13,7 @@ parm:
     - code: 
       mx: "4.4"
       name: None
-      description: No Key Mapping will be added or removed for any Key from any Key Mapping Table.
+      description: No Key Mapping will be added or removed for any Key from any Key Mapping Table; any previously selected setting will be retained.
     - code: 0-9
       mx: "4.4"
       name: Number Keys
@@ -163,6 +163,6 @@ parm:
       name: Right External Trigger
 ---
 
-Used to identify the Key for which Override Key Mapping will be added or modified. To add or modify Override Mappings for a Key, a value must be specified that contains a Key Identifier that is listed in the following table.
+Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, specify a value that contains a Key Identifier listed in the table below.
 
-**Note: Not all devices support Keys that correspond to every Key Identifier listed in the table below**. If an attempt is made to add an Override Mapping to a Key Mapping Table for a Key that is not supported on a device, an error will be returned in the Result XML. To determine the supported Keys on a specific device, consult the device documentation or query the KeyMappingMgr to acquire a list of Key Identifiers.
+**Not all devices contain Keys that correspond to every Key Identifier in the table**. Attempts to add an Override Mapping to a Key Mapping Table for a Key that is not present on a device, an error will be returned in the Result XML. To determine the supported Keys on a specific device, consult the device documentation or query the KeyMappingMgr to acquire a list of Key Identifiers.

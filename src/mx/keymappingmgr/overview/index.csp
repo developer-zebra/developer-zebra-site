@@ -7,21 +7,23 @@ order: 0
 
 The KeyMappingMgr allows an app to modify the behavior of a given Key when that Key is pressed. It does so by remapping the keycode value delivered by the Key to perform a desired behavior. 
 
-**Device Notes**
-* **Device A does not support Feature B**. 
-* **Device B does not support Feature D**. 
-
-Diagram of key labeling rules: 
-
+* **Key mapping is supported only on the following devices**:
+	* MC92
+	* MC67
+	* MC40
+	* MC18
+	* WT6000
+	* TC8000
+* **Key mapping requires KitKat or higher on a supported device.**
 
 ### Main Functionality
 
 * Remap one or more device keys
-* Reset key mappings to their default values
+* Reset key mappings to factory default values
 
-Key Mapping is a capability offered on Zebra Android devices that allows Key Behavior to be defined for a specific Key when that Key is pressed in a given Key State. The Current Key State for a key at any given time is determined by one or more Key State Modifiers that may have been applied as the result of presses of Modifier Keys. For example, a device with a Blue Key may set/clear the Blue Key State Modifier in the Current Key State each time the Blue Key is pressed. Some Zebra devices support multiple Key State Modifiers to set the Current Key State; others do not.
+Key Mapping is a capability offered on certain Zebra Android devices only. It allows keypress behavior to be defined for specific key(s) or when a Key is in a given Key State. The Current Key State for a Key at any given time is determined by one or more Key State Modifiers that may have been applied as the result of presses of Modifier Keys. For example, a device with a Blue Key might set or clear the Blue-Key State Modifier in the Current Key State each time the Blue Key is pressed. Some Zebra devices support multiple Key State Modifiers to set the Current Key State; others do not.
 
-The Key Behavior desired for a particular Key when it is pressed in a particular Key State can be defined by a Key Mapping in the Key Mapping Table. There are Key Mapping Tables associated with specific Key State Modifiers that can be set within the Current Key State. A Key Mapping for a Key that is defined in a given Key Mapping Table will be used only when the Key is pressed while the associated Key Modifier associated with that Key Mapping Table is set in the Current Key State. For example, when a Key is pressed while the Blue Key State Modifier is set in the Current Key State, the Blue Key Mapping Table would be searched to find a Key Mapping for that pressed Key.
+The Key Behavior desired for a particular keypress in a particular Key State is defined by a Key Mapping in the Key Mapping Table. There are Key Mapping Tables associated with specific Key State Modifiers that can be set within the Current Key State. A Key Mapping for a Key that is defined in a given Key Mapping Table will be used only when the Key is pressed while the Key Modifier associated with that Key Mapping Table is set in the Current Key State. For example, when a Key is pressed while the Blue Key State Modifier is set in the Current Key State, the Blue Key Mapping Table would be searched to find a Key Mapping for that keypress. 
 
 Every device has a series of Default Key Mappings that are pre-installed in the Key Mapping Tables supported by that device. These Default Key Mappings define the default Key Behaviors for that device. To change the Default Key Behaviors for a device, new Key Mappings--called Override Key Mappings--can be added to one or more Key Mapping Tables. When a Mapping Table contains a Default Key Mapping and an Override Key Mapping for the same Key, the Override Key Mapping will be used. To revert to Default Key Behaviors, the Override Key Mappings can be removed, thereby restoring use of the Default Key Mappings. Default Key Mappings cannot be modified or removed, only overridden.
 
@@ -33,50 +35,50 @@ If all Key Mapping Tables associated with Key State Modifiers are searched witho
 Not all devices support all Key State Modifiers, and hence not all devices will support all Key Mapping Tables. Some devices support multiple Key State Modifiers, and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports. All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. These Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State.
 
 ####Key Table Search Order
-1. Blue Key State Modifier and Blue Key Mapping Table
+1. Blue-Key State Modifier and Blue-Key Mapping Table
 
 	This Key Mapping Table is searched when the Blue Key State Modifier is set in the Current Key State at the time a Key is pressed. If a Key Mapping for the pressed Key is found, then that Key Mapping is used to determine the Key Behavior to be performed for the pressed Key. If no Key Mapping for the pressed Key is found, then searching continues with another Key Mapping Table.
 	
-2. Orange Key State Modifier and Orange Key Mapping Table
+2. Orange-Key State Modifier and Orange-Key Mapping Table
 
 	This Key Mapping Table is searched when the Orange Key State Modifier is set in the Current Key State at the time a Key is pressed. If a Key Mapping for the pressed Key is found, then that Key Mapping is used to determine the Key Behavior to be performed for the pressed Key. If no Key Mapping for the pressed Key is found, then searching continues with another Key Mapping Table.
 	
-3. Grey Key State Modifier and Grey Key Mapping Table
+3. Grey-Key State Modifier and Grey-Key Mapping Table
 
 	This Key Mapping Table is searched when the Grey Key State Modifier is set in the Current Key State at the time a Key is pressed. If a Key Mapping for the pressed Key is found, then that Key Mapping is used to determine the Key Behavior to be performed for the pressed Key. If no Key Mapping for the pressed Key is found, then searching continues with another Key Mapping Table.
 
-4. Control Key State Modifier and Control Key Mapping Table
+4. Control-Key State Modifier and Control-Key Mapping Table
 
 	This Key Mapping Table is searched when the Control Key State Modifier is set in the Current Key State at the time a Key is pressed. If a Key Mapping for the pressed Key is found, then that Key Mapping is used to determine the Key Behavior to be performed for the pressed Key. If no Key Mapping for the pressed Key is found, then searching continues with another Key Mapping Table.
 
-5. Shift Key State Modifier and Shift Key Mapping Table
+5. Shift-Key State Modifier and Shift-Key Mapping Table
 
 	This Key Mapping Table is searched when the Shift Key State Modifier is set in the Current Key State at the time a Key is pressed. If a Key Mapping for the pressed Key is found, then that Key Mapping is used to determine the Key Behavior to be performed for the pressed Key. If no Key Mapping for the pressed Key is found, then searching continues with another Key Mapping Table.
 
-6. Base Key State Key Mapping Table
+6. Base-Key State Key Mapping Table
 	
 	The Base Key State Key Mapping Table is searched if no Key State Modifiers are set in the Current Key State (i.e. default Key State) at the time a Key is pressed. This Key Mapping is also searched if all Key Mapping Tables were searched based on the Key State Modifiers that were set in the Current Key State and no Key Mapping for the pressed Key was found (i.e. fall through). If the Base Key State Key Mapping Table is searched and no Key Mapping for the pressed Key is found, then the standard Android Key Action for the pressed Key will be performed.
 
 ####Key Identifiers
 Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be performed for a pressed Key when that Key Mapping Table is determined to be the most applicable one for that Key press. Every Key Mapping requires a specific Key to be identified. A Key is identified in Key Mapping Using a Key Identifier. Key Identifiers are constructed generally according to the rules below.
 
-* **Text-Labeled Key**
+* **Text-Labeled Keys**
 
 	For a Key that is physically labeled with text, that label is used to identify the Key. For example, a Key that is physically labeled with the letter "A" would be identified as the "A" Key. In some cases, a Key might be physically labeled with an abbreviated text legend. For example, a Key that is physically labeled "BKSP" would be identified as "BACKSPACE" by the text description. 
 
-* **Graphically Labeled Key**
+* **Graphically Labeled Keys**
 
 	For a Key that is physically labeled with a picture or icon or other graphical legend, a textual description of that graphical legend is used to identify the Key. For example, a Key with an icon of a house would be identified as "HOME" by the text description.
 	
-* **Color-Labeled Key**
+* **Color-Labeled Keys**
 
 	For a Key that is physically labeled with a color, a textual description of that color is used to identify the Key. For example, a Key that is colored blue would be identified as "BLUE" by the text description.
 	
-* **Unlabeled Key**
+* **Unlabeled Keys**
 
-	For a Key that is not physically labeled in a unique manner, a textual description may be used to identify the Key. For example, the second of two Keys used as a trigger physically located on the left side of the device would be identified as "LEFT_TRIGGER_2" by the text description.
+	For a Key that is not physically labeled in a unique manner, a textual description is used to identify the Key. This is usually based on its physical location on the device when held in its normal orientation (Landscape for tablets; Portrait for most other devices). When more than one such Key exists, they're numbered from top to bottom. For example, the top-most of two Keys used as triggers located on the left side of the device would be identified as "LEFT_TRIGGER_1" by the text description. 
 
->**Note:** The number and style of physical Keys varies greatly from one device to another, as do the key-press combinations that make the Keys work. The key identification rules above might not apply to some devices.
+>**Note:** The number and style of physical Keys varies greatly from one device to another, as do the key-press combinations that make the Keys work. **The Key identification rules above do not apply to all devices, and _in some rare cases are the opposite of those described_**.
 
 ####Key Behavior Identifiers
 Each Key Mapping specifies a single Key Behavior that should be performed for a single Key identified by a specified Key Identifier. The Key Behaviors that can be defined are listed below. 

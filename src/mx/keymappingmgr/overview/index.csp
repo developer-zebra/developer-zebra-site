@@ -5,7 +5,14 @@ type: text
 order: 0
 ---
 
-The KeyMappingMgr allows an app to modify the behavior of a given key, when pressed. It does so by remapping the keycode value delivered by one or more keys to perform a desired behavior. 
+The KeyMappingMgr allows an app to modify the behavior of a given Key when that Key is pressed. It does so by remapping the keycode value delivered by the Key to perform a desired behavior. 
+
+**Device Notes**
+* **Device A does not support Feature B**. 
+* **Device B does not support Feature D**. 
+
+Diagram of key labeling rules: 
+
 
 ### Main Functionality
 
@@ -69,7 +76,7 @@ Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be
 
 	For a Key that is not physically labeled in a unique manner, a textual description may be used to identify the Key. For example, the second of two Keys used as a trigger physically located on the left side of the device would be identified as "LEFT_TRIGGER_2" by the text description.
 
->**Note:** Different devices have different numbers and combinations of physical Keys. Not all devices will have Keys that need to be identified using all of the above rules.
+>**Note:** The number and style of physical Keys varies greatly from one device to another, as do the key-press combinations that make the Keys work. The key identification rules above might not apply to some devices.
 
 ####Key Behavior Identifiers
 Each Key Mapping specifies a single Key Behavior that should be performed for a single Key identified by a specified Key Identifier. The Key Behaviors that can be defined are listed below. 

@@ -26,7 +26,7 @@ parm:
 
 These parms control the ALT Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the corresponding Key State Mapping Table. If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML. When the Key Code is sent, the specified Key State Modifier will be set to the Current Key State, but since the Key State Modifier is not supported by the device, and hence has no associated Key Mapping Table, there will be no noticeable effect produced by setting that Key State Modifier.
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseKeyCodeAltState</b>
 * For Blue Key State Table: <b>BlueKeyCodeAltState</b>

@@ -13,7 +13,7 @@ parm:
 
 These parms are used to specify the attributes of an Intent that will be sent as the Key Behavior for the specified Key in various Key State Mapping Tables.
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseSendIntent</b>
 * For Blue Key State Table: <b>BlueSendIntent</b>
@@ -83,7 +83,7 @@ Used to specify the Action Name attribute for the Intent that will be sent as th
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentAction</b>
 * For Blue Key State Table: <b>BlueIntentAction</b>
@@ -103,7 +103,7 @@ Used to specify the Category attribute for the Intent that will be sent as the K
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentCategory</b>
 * For Blue Key State Table: <b>BlueIntentCategory</b>
@@ -123,7 +123,7 @@ Used to specify the Package Name attribute for the Intent that will be sent as t
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentPackage</b>
 * For Blue Key State Table: <b>BlueIntentPackage</b>
@@ -143,7 +143,7 @@ Used to specify the Class Name attribute for the Intent that will be sent as the
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentClass</b>
 * For Blue Key State Table: <b>BlueIntentClass</b>
@@ -163,7 +163,7 @@ Used to specify the Data URI attribute for the Intent that will be sent as the K
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentUri</b>
 * For Blue Key State Table: <b>BlueIntentUri</b>
@@ -183,7 +183,7 @@ Used to specify the MIME Type attribute for the Intent that will be sent as the 
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentMimeType</b>
 * For Blue Key State Table: <b>BlueIntentMimeType</b>
@@ -203,7 +203,7 @@ Used to specify the Name of an Extra Data attribute for the Intent that will be 
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentStringExtraName</b>
 * For Blue Key State Table: <b>BlueIntentStringExtraName</b>
@@ -223,7 +223,7 @@ Used to specify the Value of an Extra Data attribute for the Intent that will be
 
 Pivotal parm: No
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentStringExtraValue</b>
 * For Blue Key State Table: <b>BlueIntentStringExtraValue</b>

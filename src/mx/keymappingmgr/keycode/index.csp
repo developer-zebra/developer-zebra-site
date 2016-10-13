@@ -613,7 +613,7 @@ Used to specify which Key Code will be sent as the Key Behavior for the specifie
 
 >**Note:** All the parameters shown here allow control the of Key State(s) in which the Key Code will be sent. Parameters for controlling those settings are covered in the Advanced Sections. Attempts to specify a Key Behavior for a Key Mapping Table that is not supported on a given device will return an error in the Result XML. For the Keys Mapping Tables supported on a specific device, query the KeyMappingMgr (see Queries, below) or refer to the device documentation. 
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseKeyCode</b>
 * For Blue Key State Table: <b>BlueKeyCode</b>

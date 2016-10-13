@@ -22,7 +22,7 @@ parm:
 
 These parms control whether the key event should be added to the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
 
-Parm names:
+**Parm names**:
 
 * For Base Key State Table: <b>BaseIntentAddKeyState</b>
 * For Blue Key State Table: <b>BlueIntentAddKeyState</b>

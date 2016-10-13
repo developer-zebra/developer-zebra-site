@@ -109,7 +109,7 @@ parm:
     - name: W
       code: 51
       mx: "4.4"
-    - name: X.
+    - name: X
       code: 52
       mx: "4.4"
     - name: Y
@@ -496,7 +496,7 @@ parm:
     - name: Button R1
       code: 103
       mx: "4.4"
-    - name: Button L2"
+    - name: Button L2
       code: 104
       mx: "4.4"
     - name: Button R2

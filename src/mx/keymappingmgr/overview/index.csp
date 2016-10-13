@@ -28,8 +28,8 @@ For key-mapping options on Android devices not listed above, please see the [Ent
 ### Main Functionality
 
 * Remap one or more device keys to:
-	* Act like a different key
-	* Perform a pre-defined trigger (i.e. scan a barcode)
+	* Behave like a different key
+	* Execute a pre-defined trigger (i.e. scan a barcode)
 	* Launch an application 
 	* Send an Intent
 	* Do nothing
@@ -48,9 +48,9 @@ If all Key Mapping Tables associated with Key State Modifiers are searched witho
 
 Not all devices support all Key State Modifiers, and hence not all devices will support all Key Mapping Tables. Some devices support multiple Key State Modifiers, and each device will support the Key Mapping Tables associated with all the Key State Modifiers that it supports. All devices support at least the Base Key State Key Mapping Table, even if they support no other Key Mapping Tables. The following Key State Modifiers and associated Key Mapping Tables may be supported by various devices. These Key Mapping Tables will be searched (when supported on a given device) in the order listed below, based on the Key State Modifiers that are set in the Current Key State.
 
->**Modifier keys are known as Meta keys on Android**. 
+>**On Android, modifier keys are referred to as Meta keys**. 
 
-####Key Table Search Order
+#### Key Table Search Order
 1. Blue-Key State Modifier and Blue-Key Mapping Table
 
 	This Key Mapping Table is searched when the Blue Key State Modifier is set in the Current Key State at the time a Key is pressed. If a Key Mapping for the pressed Key is found, then that Key Mapping is used to determine the Key Behavior to be performed for the pressed Key. If no Key Mapping for the pressed Key is found, then searching continues with another Key Mapping Table.
@@ -75,7 +75,7 @@ Not all devices support all Key State Modifiers, and hence not all devices will 
 	
 	The Base Key State Key Mapping Table is searched if no Key State Modifiers are set in the Current Key State (i.e. default Key State) at the time a Key is pressed. This Key Mapping is also searched if all Key Mapping Tables were searched based on the Key State Modifiers that were set in the Current Key State and no Key Mapping for the pressed Key was found (i.e. fall through). If the Base Key State Key Mapping Table is searched and no Key Mapping for the pressed Key is found, then the standard Android Key Action for the pressed Key will be performed.
 
-####Key Identifiers
+#### Key Identifiers
 Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be performed for a pressed Key when that Key Mapping Table is determined to be the most applicable one for that Key press. Every Key Mapping requires a specific Key to be identified. A Key is identified in Key Mapping Using a Key Identifier. Key Identifiers are constructed generally according to the rules below.
 
 * **Text-Labeled Keys**
@@ -95,6 +95,60 @@ Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be
 	For a Key that is not physically labeled in a unique manner, a textual description is used to identify the Key. This is usually based on its physical location on the device when held in its normal orientation (Landscape for tablets; Portrait for most other devices). When more than one such Key exists, they're numbered from top to bottom. For example, the top-most of two Keys used as triggers located on the left side of the device would be identified as "LEFT_TRIGGER_1" by the text description. 
 
 >**Note:** The number and style of physical Keys varies greatly from one device to another, as do the key-press combinations that make the Keys work. **The Key identification rules above do not apply to all devices, and _in some rare cases are the opposite of those described_**.
+
+#### Standards and Deviations
+Keys that are not labeled are identified by their physical location on the device when held in its normal orientation (Landscape for tablets; Portrait for most other devices). When more than one Key is present on the left side of a device, for example, they can usually be identified in numerical order from top to bottom as illustrated below.
+
+![img](../../../images/mx/mc40_L1L2.png)
+
+
+![img](../../../images/mx/mc40_R1R2.png)
+
+However, these conventions occasionally deviate and are sometimes the opposite of what has been described as convention. 
+
+
+engineering nuances have sometimes made it necessary 
+
+due to accidents of product evolution, some devices 
+
+
+For example, the top-most of two Keys used as triggers located on the left side of the device would be identified as "LEFT_TRIGGER_1" by the text description.
+
+START HEREEEEEE >>>>>>>
+There are two different things here. There are keys names/labels (used by key remapping DSD, StageNow, EMDK, MX and the key programmer app), and then there is what actions those keys are mapped to. The problems the customer is having (correct me if I am wrong) is with the key names/labels (they don't know which key is which). This is what they use to uniquely identify the keys when they are trying to remap them. The key names/labels should adhere to the APA proposal. Top/left is 1, numbers increase as you go down and to the right. These names/labels are what we are suggesting be changed.
+ 
+The second thing that Roger is referring to (again correct me if I am wrong) is what "action" those keys are mapped to. For legacy reasons (I have been trying to fix this but no one seems to want to budge) as Roger mentions below PTT uses KEYCODE_BUTTON_L2, scanner uses KEYCODE_BUTTON_R1, and they both share KEYCODE_BUTTON_L1 (actually this is broken in L but that is another story).
+ 
+So the mapping should be setup as follows
+ 
+key name/label -> Keyboard Action
+"Button L1" or (LEFT_TRIGGER_1) -> "Button L2" (keycode 104) used for PTT
+"Button L2" or (LEFT_TRIGGER_2) -> "Button R1" (keycode 103) used for scanning
+"Button R2" or (RIGHT_TRIGGER_1) -> "Button R1" (keycode 103) used for scanning
+
+
+DANNY: I can confirm that both the MC40 and MC67 do NOT comply with the naming convention for keys in the APA standard. 
+
+
+MC40:
+      Top left key is PTT (which is L2)
+
+      MC36: top left are Vol+/- and the Scan
+
+      MC67:
+      Bottom Right is PTT (which is L2)
+
+
+            Our standard is:
+            L2 => PTT GC
+            R1 => Scan
+            L1 => Scan/PTT PC
+
+            B1, P1/P2/P3 are new addition, which is just different label.
+
+
+ 
+
 
 ####Key Behavior Identifiers
 Each Key Mapping specifies a single Key Behavior that should be performed for a single Key identified by a specified Key Identifier. The Key Behaviors that can be defined are listed below. 
@@ -131,5 +185,5 @@ Each Key Mapping specifies a single Key Behavior that should be performed for a 
 
 	This Key Behavior indicates that the Default Key Mapping (if any) for a Key in a specified Key Mapping Table should be restored. This is done by removing any Override Key Mapping for the Key from the specified Key Mapping Table. If there is no Override Key Mapping for the Key in the specified Key Mapping Table, no change will be made.
 
->**Modifier keys are known as Meta keys on Android**. 
+>**On Android, modifier keys are referred to as Meta keys**. 
 

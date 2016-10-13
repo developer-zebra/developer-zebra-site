@@ -97,11 +97,11 @@ parm:
     - code: BLUE
       mx: "4.4"
       name: Blue
-      description: The key that is colored completely blue
+      description: The key that is colored completely blue (sometimes known as the "Function" key)
     - code: ORANGE
       mx: "4.4"
       name: Orange
-      description: The key that is colored completely orange
+      description: The key that is colored completely orange (sometimes known as the "Alpha" key)
     - code: GREEN
       mx: "4.4"
       name: Green Dot
@@ -133,7 +133,7 @@ parm:
     - code: LEFT_TRIGGER_1
       mx: "4.4"
       name: Button L1
-      description: Usually the upper-most button on the left side of the device. 
+      description: Usually the upper-most button on the left side of the device 
     - code: LEFT_TRIGGER_2
       mx: "4.4"
       name: Button L2

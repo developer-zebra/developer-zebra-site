@@ -31,7 +31,7 @@ Used to specify the Intent Flags that should be included in the Intent that will
 * For Shift Key State Table: <b>ShiftIntentIncludeFlags</b>
 * For Control Key State Table: <b>ControlIntentIncludeFlags</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid flag
 	* The list of valid flags would be the Constant Values

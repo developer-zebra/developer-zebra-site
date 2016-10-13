@@ -92,7 +92,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentAction</b>
 * For Control Key State Table: <b>ControlIntentAction</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid Action Name for the Intent
 
@@ -112,7 +112,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentCategory</b>
 * For Control Key State Table: <b>ControlIntentCategory</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid category for the Intent
 
@@ -132,7 +132,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentPackage</b>
 * For Control Key State Table: <b>ControlIntentPackage</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid Package Name
 
@@ -152,7 +152,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentClass</b>
 * For Control Key State Table: <b>ControlIntentClass</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid Class Name
 
@@ -172,7 +172,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentUri</b>
 * For Control Key State Table: <b>ControlIntentUri</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid URI value
 
@@ -192,7 +192,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentMimeType</b>
 * For Control Key State Table: <b>ControlIntentMimeType</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid MIME type value
 
@@ -212,7 +212,7 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentStringExtraName</b>
 * For Control Key State Table: <b>ControlIntentStringExtraName</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid extra value name
 
@@ -232,6 +232,6 @@ Pivotal parm: No
 * For Shift Key State Table: <b>ShiftIntentStringExtraValue</b>
 * For Control Key State Table: <b>ControlIntentStringExtraValue</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid extra value

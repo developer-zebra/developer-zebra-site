@@ -22,7 +22,7 @@ Used to specify the Application Name of the application whose main Activity shou
 * For Shift Key State Table: <b>ShiftLaunchActivityName</b>
 * For Control Key State Table: <b>ControlLaunchActivityName</b>
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing a valid Application Name
 

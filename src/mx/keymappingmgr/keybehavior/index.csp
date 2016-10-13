@@ -40,4 +40,4 @@ parm:
       description: Causes the Key Behavior for the Key in the Base Key State Mapping Table to revert to the Default Key Behavior.
 ---
 
-Used to select the Key Behavior that should be defined in the Base Key State Mapping Table for the Key Mapping for a specified Key.
+Used to select the Key Behavior defined in the Base Key State Mapping Table for the Key Mapping of a specified Key.

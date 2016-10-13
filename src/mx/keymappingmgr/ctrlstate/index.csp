@@ -30,9 +30,9 @@ Controls the Control Key State Modifier when the Key Code is sent as the Key Beh
 
 **Parm names**:
 
-* For Base Key State Table: <b>BaseKeyCodeCtrlState</b>
-* For Blue Key State Table: <b>BlueKeyCodeCtrlState</b>
-* For Orange Key State Table: <b>OrangeKeyCodeCtrlState</b>
-* For Grey Key State Table: <b>GreyKeyCodeCtrlState</b>
-* For Shift Key State Table: <b>ShiftKeyCodeCtrlState</b>
-* For Control Key State Table: <b>ControlKeyCodeCtrlState</b>
+* For Base Key State Table: **BaseKeyCodeCtrlState**
+* For Blue Key State Table: **BlueKeyCodeCtrlState**
+* For Orange Key State Table: **OrangeKeyCodeCtrlState**
+* For Grey Key State Table: **GreyKeyCodeCtrlState**
+* For Shift Key State Table: **ShiftKeyCodeCtrlState**
+* For Control Key State Table: **ControlKeyCodeCtrlState**

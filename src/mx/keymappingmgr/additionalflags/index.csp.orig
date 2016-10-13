@@ -24,12 +24,12 @@ Used to specify the Intent Flags that should be included in the Intent that will
 
 **Parm names**:
 
-* For Base Key State Table: <b>BaseIntentIncludeFlags</b>
-* For Blue Key State Table: <b>BlueIntentIncludeFlags</b>
-* For Orange Key State Table: <b>OrangeIntentIncludeFlags</b>
-* For Grey Key State Table: <b>GreyIntentIncludeFlags</b>
-* For Shift Key State Table: <b>ShiftIntentIncludeFlags</b>
-* For Control Key State Table: <b>ControlIntentIncludeFlags</b>
+* For Base Key State Table: **BaseIntentIncludeFlags**
+* For Blue Key State Table: **BlueIntentIncludeFlags**
+* For Orange Key State Table: **OrangeIntentIncludeFlags**
+* For Grey Key State Table: **GreyIntentIncludeFlags**
+* For Shift Key State Table: **ShiftIntentIncludeFlags**
+* For Control Key State Table: **ControlIntentIncludeFlags**
 
 **Parm value input rules**: 
 

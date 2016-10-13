@@ -24,9 +24,9 @@ These parms control whether the key event should be added to the Intent that wil
 
 **Parm names**:
 
-* For Base Key State Table: <b>BaseIntentAddKeyState</b>
-* For Blue Key State Table: <b>BlueIntentAddKeyState</b>
-* For Orange Key State Table: <b>OrangeIntentAddKeyState</b>
-* For Grey Key State Table: <b>GreyIntentAddKeyState</b>
-* For Shift Key State Table: <b>ShiftIntentAddKeyState</b>
-* For Control Key State Table: <b>ControlIntentAddKeyState</b>
+* For Base Key State Table: **BaseIntentAddKeyState**
+* For Blue Key State Table: **BlueIntentAddKeyState**
+* For Orange Key State Table: **OrangeIntentAddKeyState**
+* For Grey Key State Table: **GreyIntentAddKeyState**
+* For Shift Key State Table: **ShiftIntentAddKeyState**
+* For Control Key State Table: **ControlIntentAddKeyState**

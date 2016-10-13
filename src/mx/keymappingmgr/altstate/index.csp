@@ -30,10 +30,10 @@ Control the ALT Key State Modifier when the Key Code is sent as the Key Behavior
 
 **Parm names**:
 
-* For Base Key State Table: <b>BaseKeyCodeAltState</b>
-* For Blue Key State Table: <b>BlueKeyCodeAltState</b>
-* For Orange Key State Table: <b>OrangeKeyCodeAltState</b>
-* For Grey Key State Table: <b>GreyKeyCodeAltState</b>
-* For Shift Key State Table: <b>ShiftKeyCodeAltState</b>
-* For Control Key State Table: <b>ControlKeyCodeAltState</b>
+* For Base Key State Table: **BaseKeyCodeAltState**
+* For Blue Key State Table: **BlueKeyCodeAltState**
+* For Orange Key State Table: **OrangeKeyCodeAltState**
+* For Grey Key State Table: **GreyKeyCodeAltState**
+* For Shift Key State Table: **ShiftKeyCodeAltState**
+* For Control Key State Table: **ControlKeyCodeAltState**
 

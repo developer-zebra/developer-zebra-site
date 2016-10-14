@@ -106,6 +106,14 @@ Keys that are not labeled are identified by their physical location on the devic
 
 However, these conventions occasionally deviate due to engineering or device production restrictions and other factors. This can cause confusion as to which Key is which, and increases the guesswork required for Keymapping. 
 
+
+![img](../../../images/mx/mc40_buttons.png)
+
+
+![img](../../../images/mx/mc67_buttons.png)
+
+
+
 START HEREEEEEE >>>>>>>
 There are two different things here. There are keys names/labels (used by key remapping DSD, StageNow, EMDK, MX and the key programmer app), and then there is what actions those keys are mapped to. The problems the customer is having (correct me if I am wrong) is with the key names/labels (they don't know which key is which). This is what they use to uniquely identify the keys when they are trying to remap them. The key names/labels should adhere to the APA proposal. Top/left is 1, numbers increase as you go down and to the right. These names/labels are what we are suggesting be changed.
  

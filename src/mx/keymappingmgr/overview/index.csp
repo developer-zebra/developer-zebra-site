@@ -14,26 +14,26 @@ The KeyMappingMgr allows an app to modify the behavior of a given Key when that 
 	* MC18
 	* WT6000
 	* TC8000
-* **KeyMappingMgr requires a supported device running Android KitKat or higher.**
+* **Device must be running Android KitKat or higher.**
 
 For key-mapping options on Android devices not listed above, please see the [Enterprise Keyboard User Guide](../../enterprise-keyboard/1-0/guide/about). 
 
 * **KeyMappingMgr is NOT supported on the following devices**:
 	* Any device not listed above, including:
-	* TC55
-	* TC70
 	* TC75
+	* TC70
+	* TC55
 	* MC36
 
 ### Main Functionality
 
-* Remap one or more device keys to:
-	* Behave like a different key
+* Remap one or more device Keys to:
+	* Behave like a different Key
 	* Execute a pre-defined trigger (i.e. scan a barcode)
 	* Launch an application 
 	* Send an Intent
 	* Do nothing
-* Reset all key mappings to factory default values
+* Reset all Key mappings to factory default values
 
 Key Mapping is a capability offered on particular Zebra Android devices only. It allows keypress behavior to be defined for specific key(s) or when a Key is in a given Key State. The Current Key State for a Key at any given time is determined by one or more Key State Modifiers that may have been applied as the result of presses of Modifier Keys. For example, a device with a Blue Key might set or clear the Blue-Key State Modifier in the Current Key State each time the Blue Key is pressed. Some Zebra devices support multiple Key State Modifiers to set the Current Key State; others do not.
 
@@ -104,17 +104,16 @@ Keys that are not labeled are identified by their physical location on the devic
 
 ![img](../../../images/mx/mc40_R1R2.png)
 
-However, these conventions occasionally deviate due to engineering or device production restrictions and other factors. This can cause confusion as to which Key is which, and increases the guesswork required for Keymapping. 
+Naming conventions for unlabeled buttons and Keys occasionally deviate due to engineering limitations, production restrictions or other factors. This can cause confusion as to which Key is which, and increases the guesswork required for Keymapping. The most common deviations are shown below. Use the label text indicated for each unlabeled button when remapping on these devices: 
 
-
+### MC40 Key Identifiers
 ![img](../../../images/mx/mc40_buttons.png)
 
 
+### MC67 Key Identifiers
 ![img](../../../images/mx/mc67_buttons.png)
 
-
-
-START HEREEEEEE >>>>>>>
+<!-- notes from "Key Mapping Improvements" email thread starting on Oct. 7 
 There are two different things here. There are keys names/labels (used by key remapping DSD, StageNow, EMDK, MX and the key programmer app), and then there is what actions those keys are mapped to. The problems the customer is having (correct me if I am wrong) is with the key names/labels (they don't know which key is which). This is what they use to uniquely identify the keys when they are trying to remap them. The key names/labels should adhere to the APA proposal. Top/left is 1, numbers increase as you go down and to the right. These names/labels are what we are suggesting be changed.
  
 The second thing that Roger is referring to (again correct me if I am wrong) is what "action" those keys are mapped to. For legacy reasons (I have been trying to fix this but no one seems to want to budge) as Roger mentions below PTT uses KEYCODE_BUTTON_L2, scanner uses KEYCODE_BUTTON_R1, and they both share KEYCODE_BUTTON_L1 (actually this is broken in L but that is another story).
@@ -129,31 +128,27 @@ key name/label -> Keyboard Action
 
 DANNY: I can confirm that both the MC40 and MC67 do NOT comply with the naming convention for keys in the APA standard. 
 
-
 MC40:
-      Top left key is PTT (which is L2)
+Top left key is PTT (which is L2)
 
-      MC36: top left are Vol+/- and the Scan
+MC36: top left are Vol+/- and the Scan
 
-      MC67:
-      Bottom Right is PTT (which is L2)
-
-
-            Our standard is:
-            L2 => PTT GC
-            R1 => Scan
-            L1 => Scan/PTT PC
-
-            B1, P1/P2/P3 are new addition, which is just different label.
+MC67:
+Bottom Right is PTT (which is L2)
 
 
- 
+Our standard is:
+L2 => PTT GC
+R1 => Scan
+L1 => Scan/PTT PC
 
+B1, P1/P2/P3 are new addition, which is just different label.
+-->
 
 ####Key Behavior Identifiers
 Each Key Mapping specifies a single Key Behavior that should be performed for a single Key identified by a specified Key Identifier. The Key Behaviors that can be defined are listed below. 
 
-* **Send key code**
+* **Send Key code**
 
 	This Key Behavior indicates that the Key pressed should produce a standard Android Key Action, but not necessarily the standard Android Key Action for the actual Key that was pressed. Any desired Key Code can be assigned to any Key, and the standard Android Key Action for that Key Code will be performed. It's also possible to specify the Key State in which standard Android Key Action for the Key Code will be performed.
 

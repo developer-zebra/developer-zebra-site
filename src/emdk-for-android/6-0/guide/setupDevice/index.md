@@ -2,7 +2,7 @@
 title: Configuring A Device
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 >NOTE: Devices will need to be updated with the latest EMDK for Android Device Runtime

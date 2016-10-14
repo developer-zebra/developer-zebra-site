@@ -2,7 +2,7 @@
 title: EMDK Mobile Payment Programmers Guide
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 The EMDK for Android provides developers with a comprehensive set of

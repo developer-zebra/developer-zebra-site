@@ -2,7 +2,7 @@
 title: "Personal Shopper Programmer's Guide"
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ##Introduction

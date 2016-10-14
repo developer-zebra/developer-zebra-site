@@ -2,7 +2,7 @@
 title: Apply Mx Profile Silently in a Non-Blocking way
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ## Overview
@@ -53,16 +53,16 @@ So let us create a tutorial and Configure the Mx App Manager Profile to install 
 * Download APK file for the application to install from [here](https://github.com/Zebra/examples-emdk/archive/AllInstalledApps.zip)
 * Once downloaded, copy the APK file to SD Card of the device. 
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/5-0/guide/setup/).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/6-0/guide/setup/).
 
 ## Creating The Project
 
 > Note: Provide "ApplyProfileSilentlyTutorial" as the project name for this tutorial and "HandlerActivity" as the activity name while creating the project.
 
-Start by creating a new Android Studio [project](/emdk-for-android/5-0/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/6-0/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding The App Manager Profile Feature
-1. Click [here](/emdk-for-android/5-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/6-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "AppManagerProfile" as the Profile Name for this tutorial.
 

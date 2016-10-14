@@ -2,7 +2,7 @@
 title: Data Capture Intents Tutorial
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ## Overview
@@ -451,7 +451,7 @@ In this article, we covered:
 * Configuring DataWedge to send intents to our application
 
 ## Sample Code
-Download the source for this project in the [associated sample](/emdk-for-android/5-0/guide/sample/sampledatacaptureintent).
+Download the source for this project in the [associated sample](/emdk-for-android/6-0/guide/sample/sampledatacaptureintent).
 
 
 

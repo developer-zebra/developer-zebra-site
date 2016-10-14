@@ -107,7 +107,7 @@ products:
         url: /emdk-for-android/6-0/api
     versions:
       - url: emdk-for-android/6-0/guide/about/
-        label: '5.0'
+        label: '6.0'
       - url: emdk-for-android/5-0/guide/about/
         label: '5.0'
       - url: emdk-for-android/4-2/guide/about/

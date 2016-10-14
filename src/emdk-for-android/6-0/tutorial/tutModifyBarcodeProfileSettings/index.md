@@ -2,21 +2,21 @@
 title: Modifying Profiles With ProfileConfig API
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ## Overview
-This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/5-0/api/core/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/5-0/mx/data-capture/keystroke) feature of [EMDK Profiles](/emdk-for-android/5-0/guide/profile-manager).
+This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/6-0/api/core/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-0/mx/data-capture/keystroke) feature of [EMDK Profiles](/emdk-for-android/6-0/guide/profile-manager).
 
 
 ## Creating The Project
 
 > Note: Provide "ModifyBarcodeProfileTutorial" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/5-0/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/6-0/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/5-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/6-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "ModifyBarcodeProfile" as the Profile Name for this tutorial.
 

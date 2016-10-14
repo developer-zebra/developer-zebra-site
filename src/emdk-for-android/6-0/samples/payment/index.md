@@ -19,7 +19,7 @@ screenshots:
   - 3.png
 layout: sample.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 
@@ -38,7 +38,7 @@ This sample demonstrates the EMDK Mobile Payment APIs allowing your application 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/5-0/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-0/guide/emdksamples_androidstudio)
 
 ##Using This Sample
 1. Bluetooth pair your Android device with the PD40 payment module.

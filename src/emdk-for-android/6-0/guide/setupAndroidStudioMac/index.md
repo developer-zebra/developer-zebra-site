@@ -58,7 +58,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 1. Launch Android Studio from Applications
 2. Go to Tools / Android / SDK Manager
 3. Then click **Launch Standalone SDK Manager** link at the bottom of the Android SDK settings page
-4. Check that the status of Android 4.1.2 (API 16) and Android 4.4.2 (API 19) SDK Platforms is "Installed".
+4. Check that the status of Android API 19 SDK Platform is "Installed".
 5. If either SDK platform is not installed check the SDK check mark, click Install Packages, and follow the on-screen instructions. When the install is complete, restart Android Studio.
 
 	![img](../../images/setup/mac/image4.png)

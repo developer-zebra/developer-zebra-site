@@ -19,7 +19,7 @@ screenshots:
   - 4.png
 layout: sample.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 
@@ -34,14 +34,14 @@ This sample demonstrates the EMDK Serial Communication API to enable support for
 * One of the approved devices listed above
 * TC7X SNAP On DEX cable ( CBL-TC7X-DEX1-01 )
 
-For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/5-0/guide/setup).
+For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/6-0/guide/setup).
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/5-0/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-0/guide/emdksamples_androidstudio)
 )
 
 ##Using This Sample

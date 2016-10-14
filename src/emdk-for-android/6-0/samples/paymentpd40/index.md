@@ -23,7 +23,7 @@ screenshots:
   - 3-update.png
 layout: sample.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 
@@ -35,7 +35,7 @@ This sample demonstrates how to update firmware in the PD40 Mobile Payment devic
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/5-0/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-0/guide/emdksamples_androidstudio)
 
 ##Prerequisites
 

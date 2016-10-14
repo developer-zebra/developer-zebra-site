@@ -2,7 +2,7 @@
 title: EMDK For Android Setup (Android Studio)
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ##Installing EMDK for Android 

@@ -2,7 +2,7 @@
 title: Adding features to Profile Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ## Overview

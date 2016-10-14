@@ -19,7 +19,7 @@ screenshots:
   - 2.png
 layout: sample.html
 product: EMDK For Android
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ##Overview
@@ -28,7 +28,7 @@ This sample application will show how to use the EMDK Notification API's
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/5-0/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-0/guide/emdksamples_androidstudio)
 
 
 

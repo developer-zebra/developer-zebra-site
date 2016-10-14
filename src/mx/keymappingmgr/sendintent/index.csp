@@ -34,17 +34,17 @@ These parms are used to specify the conditions under which an Intent will be sen
   <tr>
     <td>On key down</td>
     <td>"1"</td>
-	<td>This value indicates that the specified Intent should be sent only when the Key transitions from unpressed to pressed.</td>
+	<td>Sends the specified Intent when the Key transitions from unpressed to pressed.</td>
   </tr>
   <tr>
     <td>On key up</td>
     <td>"2"</td>
-	<td>This value indicates that the specified Intent should be sent only when the Key transitions from pressed to unpressed.</td>
+	<td>Sends the specified Intent when the Key transitions from pressed to unpressed.</td>
   </tr>
   <tr>
     <td>On both key down and up</td>
     <td>"3"</td>
-	<td>This value indicates that the specified Intent should be sent both when the Key transitions from unpressed to pressed and from pressed to unpressed.</td>
+	<td>Sends the specified Intent both when the Key transitions from unpressed to pressed and from pressed to unpressed.</td>
   </tr>
 </table>
 </div>	
@@ -66,12 +66,12 @@ Pivotal parm: Yes
   <tr>
     <td>Start activity</td>
     <td>"1"</td>
-	<td>This value indicates that the Intent should be sent using Start Activity. This should be used when you want to launch an Activity within an application (to present some UI).</td>
+	<td>Sends the Intent using Start Activity. This should be used when launching an Activity within an application (for example to present a UI).</td>
   </tr>
   <tr>
     <td>Broadcast</td>
     <td>"2"</td>
-	<td>This value indicates that the Intent should be sent using Send Broadcast. This should be used when you want to notify one or more applications (anyone that registers a suitable Broadcast Receiver) and that may invoke an Activity (to present some UI) or a Service (to perform some background processing).</td>
+	<td>Sends the Intent using Send Broadcast. This should be used when notifying one or more applications that register a suitable Broadcast Receiver, and that may invoke an Activity (for example to present a UI) or a Service (for example to perform a background process).</td>
   </tr>
 </table>
 </div>	

@@ -97,19 +97,14 @@ Each Key Mapping in each Key Mapping Table defines a specific Key Behavior to be
 >**Note:** The number and style of physical Keys varies greatly from one device to another, as do the key-press combinations that make the Keys work. **The Key identification rules above do not apply to all devices, and _in some rare cases are the opposite of those described_**.
 
 #### Standards and Deviations
-Keys that are not labeled are identified by their physical location on the device when held in its normal orientation (Landscape for tablets; Portrait for most other devices). When more than one Key is present on the left side of a device, for example, they can usually be identified in numerical order from top to bottom as illustrated below.
+Keys that are not labeled are identified by their physical location on the device when held in its normal orientation (Landscape for tablets; Portrait for most other devices). When more than one Key is present on the left side of a device, for example, the Keys can usually be identified in numerical order from top to bottom as illustrated below:
 
 ![img](../../../images/mx/mc40_L1L2.png)
 
 
 ![img](../../../images/mx/mc40_R1R2.png)
 
-However, these conventions occasionally deviate and are sometimes the opposite of what has been described as convention. 
-
-
-engineering nuances have sometimes made it necessary 
-
-due to accidents of product evolution, some devices 
+However, these conventions occasionally deviate due to engineering or device production restrictions and other factors. This can cause confusion as to which Key is which, and increases the guesswork required for Keymapping. 
 
 
 For example, the top-most of two Keys used as triggers located on the left side of the device would be identified as "LEFT_TRIGGER_1" by the text description.

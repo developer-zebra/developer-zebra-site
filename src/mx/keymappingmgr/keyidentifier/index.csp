@@ -153,31 +153,31 @@ parm:
     - code: BACK
       mx: "4.4"
       name: Back
-      description: The "BACK" key, button or capacitive function on the device
+      description: The "BACK" key, button or capacitive button on the device
     - code: HOME
       mx: "4.4"
       name: Home
-      description: The "HOME" key, button or capacitive function on the device
+      description: The "HOME" key, button or capacitive button on the device
     - code: MENU
       mx: "4.4"
       name: Menu
-      description: The "MENU" key, button or capacitive function on the device
+      description: The "MENU" key, button or capacitive button on the device
     - code: RECENT
       mx: "4.4"
       name: Recent
-      description: The "Recent Apps" key, button or capacitive function on the device
+      description: The "Recent Apps" key, button or capacitive button on the device
     - code: SEARCH
       mx: "4.4"
       name: Search
-      description: The "Search" key, button or capacitive function on the device
+      description: The "Search" key, button or capacitive button on the device
     - code: KEYLIGHT 
       mx: "4.4"
       name: Keyboard Backlight
-      description: The keyboard backlight key, button or capacitive function on the device
+      description: The keyboard backlight key or button on the device
     - code: LAMP
       mx: "4.4"
       name: Display Backlight
-      description: The display-screen backlight key, button or capacitive function on the device
+      description: The display-screen backlight key or button on the device
     - code: POWER
       mx: "4.4"
       name: Power

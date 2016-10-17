@@ -566,7 +566,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 ------
 **Illumination mode -**  Turns illumination on and off.
 
-**Aiming Pattern -** Turns aim pattern on and off.
+**Aim Mode-** Turns aim pattern on and off.
 
 **Aim Type -** Permits selection of reader behavior when the trigger is pressed: 
 

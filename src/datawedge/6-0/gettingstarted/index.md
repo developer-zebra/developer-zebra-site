@@ -34,7 +34,7 @@ content-items:
     text: Access the DataWedge data capture API programatically by broadcasting an Android intent. 
     url: /datawedge/5-0/guide/api
     product: DataWedge
-	productversion: '5.0'
+	productversion: '6.0'
 ---
     
 

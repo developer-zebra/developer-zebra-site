@@ -2,7 +2,7 @@
 title: IPWedge 
 layout: guide.html
 product: DataWedge
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ## Overview

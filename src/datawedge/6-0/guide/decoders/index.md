@@ -6,7 +6,7 @@ productversion: '6.0'
 ---
 
 ## Overview
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles as indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and details those with configurable parameters. 
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and details those with configurable parameters. 
 
 ### Default Decoders 
 <div class="table-striped">
@@ -477,24 +477,24 @@ _&#42; See **Decode Lengths** section, below_
 
 ### Decode Lengths
 
-The allowable decode lengths are specified by Length1 and Length2 as follows:
+The allowable decode lengths are specified by **Length1** and **Length2** as follows:
 
-**Variable length -** Decode symbols containing any number of characters.
+* **Variable length -** Decode symbols containing any number of characters:
 	* Set both Length1 and Length2 to "0" (zero)
-**Range -** Decode a symbol with a specific length range (from a to b, including a and b).
+* **Range -** Decode a symbol with a specific length range (from a to b, including a and b):
 	* Set Length1 to "a" and set Length2 to "b"
-**Two Discrete Lengths -** Decode only symbols containing either of two selected lengths.
+* **Two Discrete Lengths -** Decode only symbols containing either of two selected lengths:
 	* Set Length1 to "b" and Length2 to "a" where "a" is less than "b"
-**One Discrete Length -** Decode only symbols containing a specific length.
+* **One Discrete Length -** Decode only symbols containing a specific length:
 	* Set both Length1 and Length2 to the non-zero value
 
 ------
 
 ## UPC/EAN Params
+The UPC/EAN Parameter allows configuration of parameters that apply to more than one UPC or EAN decoder.
+
 <img style="height:350px" src="upc_params.png"/>
 <br>
-
-The UPC/EAN Parameter allows configuration of parameters that apply to more than one UPC or EAN decoder.
 
 **Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. As the quality of barcodes decreases, implementing an increased level of security will compensate and help improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends choosing carefully the level of security necessary for any given application: 
 

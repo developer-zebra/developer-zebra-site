@@ -201,38 +201,39 @@ The scanner and its parameters are set based on the currently active Profile.
 ------
 
 ### setDefaultProfile
-The setDefaultProfile API function can be used to set the specified Profile as the default Profile.
+The `setDefaultProfile` API function can be used to set the specified Profile as the default Profile.
 
 ####DEFAULT PROFILE RECAP
-Profile0 is the generic Profile used when there are no user created Profiles associated with an application.	
+Profile0 is the generic Profile used when there are no user-created Profiles associated with an application.	
 
 Profile0 can be edited but cannot be associated with an application. That is, DataWedge allows manipulation of plug-in settings for Profile0 but it does not allow assignment of a foreground application. This configuration allows DataWedge to send output data to any foreground application other than applications associated with user-defined Profiles when Profile0 is enabled.
 
-Profile0 can be disabled to allow DataWedge to only send output data to those applications which are associated in user-defined Profiles. For example, create a Profile associating a specific application, disable Profile0 and then scan. DataWedge only sends data to the application specified in the user-created Profile. This adds additional security to DataWedge enabling the sending of data only to specified applications.
+Profile0 can be disabled to allow DataWedge to send output data only to those applications that are associated in user-defined Profiles. For example, create a Profile associating a specific application, disable Profile0 and then scan. DataWedge only sends data to the application specified in the user-created Profile. This places an additional layer of security on DataWedge, permitting data to be sent only to specified applications. 
 
 ####USAGE SCENARIO
-Let’s say a launcher application has a list of apps that a user can launch and that none of the listed apps has an associated DataWedge Profile. Once the user has selected an app, the launcher needs to set the appropriate DataWedge Profile for the selected app. This could be done by using setDefaultProfile to set the default Profile to the required Profile. Then when the user selected app is launched, DataWedge auto Profile switching will switch to the default Profile (which is now the required Profile for that app).
+Let’s say a launcher application has a list of apps that a user can launch and that none of the listed apps has an associated DataWedge Profile. Once the user has selected an app, the launcher needs to set the appropriate DataWedge Profile for the selected app. This could be done by using `setDefaultProfile` to set the default Profile to the required Profile. Then when the user-selected app is launched, DataWedge auto-Profile switching will switch to the default Profile (which is now the required Profile for that app). 
 
-If, for some reason, the launched app has an associated DataWedge Profile then that will override the set default Profile.
-
-When control is returned to the launcher application, resetDefaultProfile can be used to reset the default Profile.
+If the launched app already had an associated DataWedge Profile, that default will override the set default Profile. When control is returned to the launcher application, `resetDefaultProfile` can be used to reset the default Profile.
 
 ####FUNCTION PROTOTYPE
+
+	:::javascript
 	Intent i = new Intent();
 	i.setAction(ACTION);
 	i.putExtra(EXTRA_DATA, "<profile name>");
+
 
 ####PARAMETERS
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SETDEFAULTPROFILE"
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
-**&lt;profile name**&gt;: The Profile name to set as the default Profile as a string (case-sensitive).
+**&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the default Profile.
 
 ####RETURN VALUES
 None.
 
-Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 
 	$ adb logcat -s DWAPI
 
@@ -240,6 +241,7 @@ Error messages will be logged for invalid actions, parameters and failures (e.g.
 
 ####EXAMPLE
 
+	:::javascript
 	// define action and data strings
 	String setDefaultProfile = "com.symbol.datawedge.api.ACTION_SETDEFAULTPROFILE";
 	String extraData = "com.symbol.datawedge.api.EXTRA_PROFILENAME";
@@ -263,14 +265,15 @@ Zebra recommends that this Profile be created to cater to all applications/activ
 ------
 
 ### resetDefaultProfile
-The resetDefaultProfile API function can be used to reset the default Profile back to Profile0.
+The `resetDefaultProfile` API function can be used to reset the default Profile back to Profile0.
 
 ####FUNCTION PROTOTYPE
 
+	:::javascript
 	Intent i = new Intent();
-
 	i.setAction(ACTION);
-	i.putExtra(EXTRA_DATA, "<Profile name>");
+	i.putExtra(EXTRA_DATA);
+
 
 ####PARAMETERS
 
@@ -278,12 +281,10 @@ The resetDefaultProfile API function can be used to reset the default Profile ba
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
-**&lt;Profile name**&gt;: The Profile name to set as the default Profile as a string (case-sensitive).
-
 ####RETURN VALUES
 None.
 
-Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+Error and debug messages will be logged to the Android logging system, which then can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example: 
 
 	$ adb logcat -s DWAPI
 

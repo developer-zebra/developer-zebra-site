@@ -20,7 +20,7 @@ menu:
     - title: Demo
       url: /datawedge/6-0/guide/demo
     - icon: fa fa-search
-      url: /datawedge/5-0/search
+      url: /datawedge/6-0/search
 product: DataWedge
 productversion: '6.0'
 ---

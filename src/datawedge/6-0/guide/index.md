@@ -1,5 +1,5 @@
 ---
-title: DataWedge 5.0
+title: DataWedge 6.0
 img: datawedge_logo.png
 layout: list-mx.html
 menu: 

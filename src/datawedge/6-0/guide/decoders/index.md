@@ -1,5 +1,5 @@
 ---
-title: DataWedge Decoders
+title: Barcode Scanner Parameters
 layout: guide.html
 product: DataWedge
 productversion: '6.0'
@@ -557,7 +557,7 @@ If the barcode is preceded by one of the prefixes above, the image is searched m
 
 * **Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
 
-### Reader Params
+## Reader Params
 Reader Parameters control specific configuration options for the barcode reader selected in the Profile being edited. **Not all parameters will apply to all readers**. 
 
 <img style="height:350px" src="reader_params.png"/>

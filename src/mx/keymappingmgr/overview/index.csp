@@ -9,7 +9,7 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 
 ####Requirements
 
-* KeyMappingMgr is **supported only on the following** devices:
+* KeyMappingMgr is **supported only on the following devices**:
 	* **MC92**
 	* **MC67**
 	* **MC40**
@@ -21,7 +21,7 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 
 For key-mapping options on Android devices not listed above, please see the [Enterprise Keyboard User Guide](../../enterprise-keyboard/1-0/guide/about). 
 
-* KeyMappingMgr is **NOT supported on the following** devices:
+* KeyMappingMgr is **NOT supported on the following devices**:
 	* Any device not listed above, including:
 	* TC75
 	* TC70
@@ -32,7 +32,7 @@ For key-mapping options on Android devices not listed above, please see the [Ent
 
 * Remap one or more device Keys to:
 	* Behave like a different Key
-	* Execute a pre-defined trigger (i.e. scan a barcode)
+	* Execute a predefined trigger (i.e. scan a barcode)
 	* Launch an application 
 	* Send an Intent
 	* Do nothing

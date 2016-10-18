@@ -193,7 +193,9 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 
 **Action Criteria**:
 
-* **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data.
+* **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data. This can include alphanumeric or control characters. For example:
+	* **x -** the character "x"
+	* **\xhh -** the character with a hexadecimal value of 0xhh
 
 * **String position -** An optional parameter that allows a character offset from the starting position (0) to be entered after which the "String to check for" must be present. For example, the target String "text" with a String position offset of 2 would invoke action(s) only if a string such as "00text" was acquired. 
 

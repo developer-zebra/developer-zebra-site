@@ -16,7 +16,7 @@ Using IPWedge requires the following:
 
 * A PC with Windows XP, Vista or 7
 * Microsoft .NET Framework 3.5 Service Pack 1 (or later) installed
-* A Zebra device running Android 4.1 Jelly Bean (or later)
+* A Zebra device running Android 4.4 KitKat (or later)
 * DataWedge for Android 1.5 (or later)
 
 ### Set up IPWedge

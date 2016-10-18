@@ -355,12 +355,12 @@ The Intent Delivery option allows the method by which the Intent is delivered to
 When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. **Note: Use this flag only if delays are seen in delivery of Intents immediately following device boot-up**.
 
 ####Decode-related data
-The decode-related data added to an Intent bundle can be retrieved using the followng calls: 
+The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
 <!-- * `Intent.getSerializableExtra()` 10/18/16- removed per Tharindu-->
 
-The calls above can be used with the following String tags:
+The call above can be used with the following String tags:
 
 * **String LABEL_TYPE_TAG = "com.symbol.datawedge.label_type"**; String contains the barcode label type
 

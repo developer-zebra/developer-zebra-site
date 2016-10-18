@@ -211,9 +211,10 @@ Profile0 can be edited but cannot be associated with an application. That is, Da
 Profile0 can be disabled to allow DataWedge to send output data only to those applications that are associated in user-defined Profiles. For example, create a Profile associating a specific application, disable Profile0 and then scan. DataWedge only sends data to the application specified in the user-created Profile. This places an additional layer of security on DataWedge, permitting data to be sent only to specified applications. 
 
 ####USAGE SCENARIO
-Let’s say a launcher application has a list of apps that a user can launch and that none of the listed apps has an associated DataWedge Profile. Once the user has selected an app, the launcher needs to set the appropriate DataWedge Profile for the selected app. This could be done by using `setDefaultProfile` to set the default Profile to the required Profile. Then when the user-selected app is launched, DataWedge auto-Profile switching will switch to the default Profile (which is now the required Profile for that app). 
+If a launcher application has a list of apps that a user can launch and none has been associated with a DataWedge Profile, the `setDefaultProfile` method can be used to associate a Profile to any app selected by the user (otherwise Profile0 will be used). When the user-selected app is launched, DataWedge auto-Profile switching will switch to the newly specified Profile. 
 
-If the launched app already had an associated DataWedge Profile, that default will override the set default Profile. When control is returned to the launcher application, `resetDefaultProfile` can be used to reset the default Profile.
+If the launched app already had an associated DataWedge Profile, the `setDefaultProfile` method call will be ignored and its previously specified Profile will be loaded. When control is returned to the launcher application, `resetDefaultProfile` can be used to reset the default Profile.
+
 
 ####FUNCTION PROTOTYPE
 

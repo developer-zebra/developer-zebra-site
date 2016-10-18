@@ -358,7 +358,7 @@ When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver
 The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
-<!-- * `Intent.getSerializableExtra()` 10/18/16- removed per Tharindu-->
+<!-- * `Intent.getSerializableExtra()` 10/18/16- removed per Tharindu. IF RESTORING, fix grammar above and below (i.e. "calls") -->
 
 The call above can be used with the following String tags:
 

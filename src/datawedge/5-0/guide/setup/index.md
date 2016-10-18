@@ -59,7 +59,7 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 **Output Plug-ins specify**:
 * Keystrokes (emulates manual keyboard input)
 * Intent (programmatic hand-off of data)
-* IP Output (saving data to a server)
+* IP Output (sending data to a server over IP)
 
 ### Input Plug-ins
 Input Plug-ins specify the device hardware to be used to acquire the data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides beep sounds and other feedback to alert the user of scanning results and barcode type. Refer to Scanner Parameters section for more information**. 
@@ -119,7 +119,7 @@ The app will now use DataWedge for barcode data acquisition.
 <img style="height:350px" src="01_datawedge_launcher.png"/>
 <br>
 
-On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text). 
+On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 
 <img style="height:350px" src="01a_ProfilesScreen.png"/>
 
 **Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
@@ -189,8 +189,8 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 See **Basic data formatting** elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced).
 <br>
 
-### Edit, Rename or Delete a Profile
-**To edit, rename or delete a profile**: 
+### Edit, Rename, Delete or Clone a Profile
+**To edit, rename, delete or clone a profile**: 
 
 &#49;. **Long-press the Profile name** to bring up its Context menu.
 &#50;. **Tap on the desired action**: 
@@ -230,7 +230,10 @@ The "Auto" option will automatically determine the best scanning device from the
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
 #### Bluetooth Scanners
-**DataWedge currently supports only the Zebra RS507 Cordless Bluetooth Ring Scanner**. 
+DataWedge supports the following Bluetooth scanners: 
+
+* **Zebra RS507** Cordless Ring Scanner
+* **RS6000 Bluetooth Ring Scanner** (when used with WT6000 only)  
 
 Bluetooth scanners are supported according to the following rules:
 

@@ -14,7 +14,7 @@ IPWedge is a small Windows app that monitors a network port and receives scanned
 ### Prerequisites
 Using IPWedge requires the following: 
 
-* A PC with Windows XP, Vista, 7 or 8
+* A PC with Windows XP, Vista or 7
 * Microsoft .NET Framework 3.5 Service Pack 1 (or later) installed
 * A Zebra device running Android 4.1 Jelly Bean (or later)
 * DataWedge for Android 1.5 (or later)

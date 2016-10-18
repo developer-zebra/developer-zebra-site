@@ -48,7 +48,8 @@ Profile0 is a generic Profile that automatically takes effect for any app that c
 Plug-ins extend DataWedge functionality to support device hardware, peripherals, data processing and transport. Plug-ins are used to configure how data will be acquired by DataWedge, manipulated or altered for an app, and output to an app or server.
 
 **Input Plug-ins specify**:
-* Barcode scanners (laser, imager, camera, bluetooth scanner, MSR)
+* Barcode scanners (laser, imager, camera, bluetooth scanner)
+* Magnetic Stripe Readers (MSR)
 * SimulScan hardware
 
 **Process Plug-ins specify**: 

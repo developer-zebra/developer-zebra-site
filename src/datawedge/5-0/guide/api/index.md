@@ -259,7 +259,7 @@ Error messages will be logged for invalid actions, parameters and failures (e.g.
 ####COMMENTS
 The API command will have no effect if the specified Profile does not exist or if the specified Profile is already associated with an application. DataWedge will automatically switch Profiles when the activity is paused, so it is recommended that this API function be called from the onResume method of the activity.
 
-Zebra recommends that this Profile be created to cater to all applications/activities that would otherwise default to using Profile0. This will ensure that these applications/activities continue to work with a consistent configuration. For example, let’s say that initially Profile0 is the default Profile using the camera as the barcode scanner. Using the Browser application and scanning a barcode with the camera, DataWedge enters the data into the Browser. Now launch an application that changes the default Profile to a Profile using the blockbuster as the barcode scanner. When returning to the Browser application, since it is using the default Profile, scanning will now be via the blockbuster not the camera as previously. To ensure that the Browser continues to use the camera as the barcode scanner a Profile should be created and associated with the Browser that specifies the camera as the barcode scanner.
+Zebra recommends that this Profile be created to cater to all applications/activities that would otherwise default to Profile0. This will ensure that these applications/activities will not inadvertently switch scanner-device configurations. For example, let’s say that Profile0 is the default Profile, and it is configured to use the camera as the barcode scanner. If only the Browser application is used to scan barcodes with the camera, DataWedge always scans with the camera and enters the acquired data into the Browser as expected. But if an application is later launched that changes to a Profile using the blockbuster as the barcode scanner, the Browser application--which is set to use the default Profile--will be unexpectedly reconfigured to use the blockbuster for scanning the next time it's used. **To ensure that the Browser continues to use the camera as the barcode scanner in this scenario, simply create a Profile that specifies the camera as the barcode scanner and associate it with the Browser**.
 
 ------
 
@@ -309,7 +309,7 @@ None.
 ------
 
 ### SwitchToProfile
-The SwitchToProfile API action can be used to switch to the specified Profile.
+The `SwitchToProfile` API action can be used to switch to the specified Profile, **as long as that profile is not already associated with another application**. 
 
 ####PROFILES RECAP
 DataWedge is based on Profiles and plug-ins. A Profile contains information on how DataWedge should behave with different applications.
@@ -329,7 +329,7 @@ Using Profiles, each application can have a specific DataWedge configuration. Fo
 A single Profile may be associated with one or many activities/apps, however, given an activity, only one Profile may be associated with it.
 
 ####USAGE SCENARIO
-Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses SwitchToProfile to activate ProfileB. Similarly, when ActivityB launches it uses switchToProfile to activate ProfileM.
+Let’s say an application has two activities. ActivityA requires only EAN13 barcodes to be scanned. ActivityB requires only MSR card data. ProfileB is configured to scan only EAN13 barcodes and is left unassociated. ProfileM is configured to accept only MSR input and is left unassociated. When ActivityA launches, it uses `SwitchToProfile` to activate ProfileB. Similarly, when ActivityB launches it uses `SwitchToProfile` to activate ProfileM.
 
 If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
 

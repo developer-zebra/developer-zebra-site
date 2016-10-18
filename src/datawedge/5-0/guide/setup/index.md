@@ -193,6 +193,7 @@ See **Basic data formatting** elsewhere in this guide for more information. For 
 **To edit, rename, delete or clone a profile**: 
 
 &#49;. **Long-press the Profile name** to bring up its Context menu.
+
 &#50;. **Tap on the desired action**: 
 <img style="height:350px" src="profile_context_menu.png"/>
 <br>

@@ -442,6 +442,7 @@ To configure a device to use the IP Output Plug-in, it's necessary to know the I
 **From the Profile in which to activate the IP Output Plug-in**:  
 
 &#49;. Locate the IP Output section of the Profile.  
+
 &#50;. **Check "Enabled" and "Remote Wedge" boxes** to enable IP Output and communication with the IPWedge server component.
 
 <img style="height:350px" src="ip_output.png"/>
@@ -449,17 +450,24 @@ _IP Output Plug-in options_.
 <br>
 
 &#51;. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+
 &#52;. **Enter the IP address** of the server running IPWedge software.
+
 &#53;. **Enter the Port number** if other than the default of 58627. 
 
 ### Using IP Output Plug-in without IPWedge
 it is possible to use the IP Output Plug-in to send captured data to a remote device without IPWedge. At the data receiving end, the PC or Mobile device should have a client application that listens to TCP or UDP data coming from the configured port and IP address in IP Output Plug-in. To get IP output plug-in configured to send captured data to a remote computer or device, follow these steps.
 
 &#49;. Locate the IP Output section of the Profile.  
+
 &#50;. **Check "Enabled" box** and **_uncheck_ the "Remote Wedge" box**.
+
 &#51;. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+
 &#52;. **Enter the IP address** of the server running IPWedge software.
+
 &#53;. **Enter the Port number** if other than the default of 58627. 
+
 **Warning: Zebra does not support this usage scenario**.
 
 ## Data Capture Plus (DCP)

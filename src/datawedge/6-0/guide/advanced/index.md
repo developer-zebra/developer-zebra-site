@@ -10,6 +10,8 @@ This guide covers advanced DataWedge features such as the importing and exportin
 
 For this guide, a basic knowledge of DataWedge Profiles, Plug-ins and other concepts is required. If necessary, please see the [About](../about) and [Setup](../setup) guides for additional information. 
 
+-----
+
 ## DataWedge Settings
 Most of the functionality referenced in this guide will be accessed through the DataWedge Settings panel. 
 
@@ -143,6 +145,8 @@ DataWedge has the ability to reset all user-configured settings and restore them
 <img style="height:350px" src="05_restore_defaults.png"/>
 <br>
 
+-----
+
 ## Advanced Data Formatting
 DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on the data content. The Advanced Data Formatting (ADF) Process Plug-in can be configured to determine whether and how the data should be altered according to rules that perform actions based on specific criteria relating to the data itself. For example, a rule might be created to check the first four digits of any 16-digit number to determine if it's from a credit card affiliated with a specific bank. 
 
@@ -196,6 +200,7 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 * **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data. This can include alphanumeric or control characters. For example:
 	* **X -** would check for the character "X"
 	* **\xhh -** would check for the character with a hexadecimal value of 0xhh
+	* **\uhhhh -** would check for the Unicode character with a value of 0xhhhh
 
 * **String position -** An optional parameter that allows a character offset from the starting position (0) to be entered after which the "String to check for" must be present. For example, the target String "text" with a String position offset of 2 would invoke action(s) only if a string such as "00text" was acquired. 
 
@@ -356,6 +361,21 @@ _The ADF Rule screen from Android L (with no configured actions)._
 * All data acquired through the Profile will be processed according to the Actions defined in the Rule before being transferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
+#### Non-printable Characters
+When setting up an ADF data processing rule to find or replace control characters, extended ASCII characters or other non-printable characters, DataWedge supports the use of the **\xNN notation** to specify hex value of the character and **\uNNNN notation** for Unicode values. 
+
+For example, if the captured data contains the Group separator (GS) character (\x1D) and data on either side of the separator must be acquired, the following ADF actions can be added to the ADF rule: 
+
+**To capture the data**: 8100712345(GS)2112345678
+
+**Execute the following Actions**:
+
+* **Send data up to (\x1D)**
+* **Skip ahead (1)**
+* **Send remaining data**
+
+-----
+
 ## ADF Rule Example
 The following is an example of the creation process for an Advanced Data Formatting Rule that might be typical for data processing scenarios. 
 
@@ -402,6 +422,8 @@ The Rule0 screen should appear similar to the image below.
 <img style="height:350px" src="Figure_18_ADF_SampleScreen.png"/>
 <br>
 
+-----
+
 ## Configuration File Management
 Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. For further information and specific instructions, see **Export a Config File** and **Import a Config File** sections, above. 
 
@@ -439,6 +461,8 @@ While DataWedge is running, it receives a system notification whenever a config 
 * On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
 * DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.
+
+-----
 
 ## Sample Code 
 The following sample Java code can be modified to suit individual needs. 
@@ -492,6 +516,8 @@ The following sample Java code can be modified to suit individual needs.
 	            outputFile.renameTo(finalFile);
 	    }
 
+
+-----
 
 ## Programming Notes
 

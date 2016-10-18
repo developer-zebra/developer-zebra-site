@@ -198,7 +198,7 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 **Action Criteria**:
 
 * **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data. This can include alphanumeric or control characters. For example:
-	* **X -** would check for the character "X"
+	* **x -** would check for the character "x"
 	* **\xhh -** would check for the character with a hexadecimal value of 0xhh
 	* **\uhhhh -** would check for the Unicode character with a value of 0xhhhh
 

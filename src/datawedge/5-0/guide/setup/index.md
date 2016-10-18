@@ -337,14 +337,12 @@ DataWedge invokes an Intent though an **Intent Action** in an **Intent Category*
 
     <intent-filter>
         ...
-        <action android:name="android.intent.action.DEFAULT" />
-        <category android:name="android.intent.category.MAIN" />
+        <action android:name="com.myapp.action" />
+		<category android:name="android.intent.category.DEFAULT" />
         ...
     </intent-filter>
 
-...then the **Intent Action** in the Intent Output Plug-in would be `android.intent.category.DEFAULT`
-
-and the `Intent Category** would be **android.intent.category.MAIN`.
+...then the **Intent Action** in the Intent Output Plug-in would be `com.myapp.action` and the **Intent Category** would be `android.intent.category.DEFAULT`.
 
 The Intent Delivery option allows the method by which the Intent is delivered to be specified. Intent-based data is delivered through one of three delivery mechanisms:  
 
@@ -360,7 +358,7 @@ When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver
 The decode-related data added to an Intent bundle can be retrieved using the followng calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()` 
+<!-- * `Intent.getSerializableExtra()` 10/18/16- removed per Tharindu-->
 
 The calls above can be used with the following String tags:
 

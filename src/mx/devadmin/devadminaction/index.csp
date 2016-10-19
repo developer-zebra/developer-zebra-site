@@ -2,7 +2,7 @@
 csp: devadmin
 title: Device Administration Action
 type: parm
-order: 4
+order: 2
 mx: "4.3"
 osx: "1.3"
 parm:

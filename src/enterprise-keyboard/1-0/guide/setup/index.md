@@ -90,9 +90,8 @@ Actions to be executed on the Android Settings panel:
 3. <b>Select Enterprise Keyboard</b> as the default input device
 4. <b>Select a language</b> (if other than the system default)
 
-Please refer to the respective tool of choice for more information. -->
-
-------
+Please refer to the respective tool of choice for more information.
+-->
 
 ## Deactivation
 

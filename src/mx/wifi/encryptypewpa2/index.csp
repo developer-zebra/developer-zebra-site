@@ -13,19 +13,19 @@ parm:
     - code: 0
       mx: "4.2"
       name: Default
-      description: This value (or the absence of this parm from the XML) will not make any change to the encryption type that is currently used on the device.
+      description: This value (or the absence of this parm from the XML) will cause no change to the encryption type that is currently selected on the device; any previously selecting setting will be retained.
     - code: 1
       mx: "4.2"
       name: AES-CCMP
-      description: This indicates that the network requires encryption to be performed using the Advanced Encryption Standard - Counter mode Cipher block chaining Message authentication code Protocol (AES-CCMP) standard, wherein the AES block cipher is used with a per-packet key length of 128 bits.
+      description: Selects use of the Advanced Encryption Standard - Counter mode Cipher block chaining Message authentication code Protocol (AES-CCMP) standard, wherein the AES block cipher is used with a per-packet key length of 128 bits.
     - code: 2
       mx: "4.2"
       name: TKIP
-      description: This indicates that the network requires encryption to be performed using the Temporal Key Integrity Protocol (TKIP) standard with a per-packet key length of 128 bits.
+      description: Selects use of the Temporal Key Integrity Protocol (TKIP) standard with a per-packet key length of 128 bits.
     - code: 3
       mx: "4.2"
       name: AES-CCMP/TKIP
-      description: This indicates that the network allows the use of either the AES-CCMP standard or the TKIP encryption standard and the proper encryption type to use can be automatically determined by negotiation with the Wi-Fi infrastructure.
+      description: Selects the use of either the AES-CCMP standard or the TKIP encryption standard and the proper encryption type to use can be automatically determined by negotiation with the Wi-Fi infrastructure.
 ---
 
-
+Used to specify the Wi-Fi Protected Access II (WPA2) encryption type to enforce on the network for Wi-Fi log-ins. 

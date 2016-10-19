@@ -1,8 +1,8 @@
 ---
 csp: threatmgr
-title: Send Threat message
+title: Send Threat Message
 type: parm
-order: 16
+order: 41
 mx: "4.3"
 osx: "3.5"
 parm:
@@ -11,8 +11,8 @@ parm:
   type: string
 ---
 
-Provide a message to be sent, stating what custom threat has occurred.
+Permits a message to be specified describing a custom threat that has occurred.
 
-Parm value input rules: 
+**Parm value input rules**:
 
-* String with a minimum size of 1 character and a maximum size of 255 characters
+* String from 1 - 255 characters

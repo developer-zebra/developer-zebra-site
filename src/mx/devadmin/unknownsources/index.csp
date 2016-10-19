@@ -2,7 +2,7 @@
 csp: devadmin
 title: Install App from Unknown Sources
 type: parm
-order: 4
+order: 8
 mx: "4.3"
 apilevel: "3"
 parm:

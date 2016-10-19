@@ -2,7 +2,7 @@
 csp: wifi
 title: Proxy Host Name
 type: parm
-order: 48
+order: 47
 mx: "4.2"
 parm:
   pivotal: No

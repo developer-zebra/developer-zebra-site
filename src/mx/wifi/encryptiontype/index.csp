@@ -2,7 +2,7 @@
 csp: wifi
 title: WPA Encryption Type 
 type: parm
-order: 32
+order: 34
 mx: "4.2"
 parm:
   pivotal: No
@@ -13,11 +13,11 @@ parm:
     - code: 0
       mx: "4.2"
       name: Default
-      description: This value (or the absence of this parm from the XML) will not make any change to the encryption type that is currently used on the device.
+      description: This value (or the absence of this parm from the XML) cause no change to the encryption type that is currently selected on the device; any previously selected setting will be retained.
     - code: 1
       mx: "4.2"
       name: TKIP
-      description: This indicates that the network requires encryption to be performed using the Temporal Key Integrity Protocol (TKIP) standard with a per-packet key length of 128 bits.
+      description: Selects use of the Temporal Key Integrity Protocol (TKIP) standard with a per-packet key length of 128 bits.
 ---
 
-Type of encryption used by the network. The values that can be selected for Encryption Type will vary based on the selections made for Security Mode and WPA Mode. But a selection must always be made for Encryption Type whenever Security Mode is not "Open" (indicating no encryption).
+Used to specify the Wi-Fi Protected Access (WPA) encryption type to enforce on the network for Wi-Fi log-ins. The values that can be selected for Encryption Type will vary based on the selections made for Security Mode and WPA Mode. A selection must always be made for Encryption Type whenever Security Mode is not "Open" (no encryption).

@@ -185,7 +185,7 @@ csps:
     url: /mx/usbmgr
     csp: usbmgr
   - type: section
-    title: WiFi
+    title: Wi-Fi Manager
     url: /mx/wifi
     csp: wifi
   - type: section

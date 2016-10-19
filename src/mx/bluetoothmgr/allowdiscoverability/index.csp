@@ -1,0 +1,28 @@
+---
+csp: bluetoothmgr
+title: Discoverability Enable/Disable
+type: parm
+order: 3
+mx: "6.1"
+parm:
+  pivotal: No
+  name: AllowDiscoverability
+  type: list
+  list:
+    - code: 0
+      mx: "6.1"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to be discoverable by other Bluetooth devices; any previously selected setting will be retained.
+    - code: 1
+      name: Enable
+      mx: "6.1"
+      description: Enables the user to set the device as discoverable by other Bluetooth devices.
+    - code: 2
+      name: Disable
+      mx: "6.1"
+      description: Prevents the user from setting the device as discoverable by other Bluetooth devices.
+---
+
+Controls whether the device will can be put into "discoverable" mode by the device user. When a device is discoverable, it can be seen by and paired with other Bluetooth devices that come into range. 
+
+The settings of this parameter do not effect existing device pairings; a device that is not discoverable will continue to pair with devices it had paired with previously. 

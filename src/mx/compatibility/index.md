@@ -43,7 +43,7 @@ csps:
     csp: batterymgr
   - type: section
     title: Bluetooth Manager
-    url: /mx/bluetoothrmgr
+    url: /mx/bluetoothmgr
     csp: bluetoothmgr
   - type: section
     title: Browser Manager
@@ -174,7 +174,7 @@ csps:
     url: /mx/usbmgr
     csp: usbmgr
   - type: section
-    title: WiFi
+    title: Wi-Fi Manager
     url: /mx/wifi
     csp: wifi
   - type: section

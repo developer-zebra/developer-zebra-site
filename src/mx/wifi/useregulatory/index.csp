@@ -12,11 +12,11 @@ parm:
     - code: true
       mx: "4.2"
       name: True
-      description: Manually select the country.
+      description: Permits manual country selection. 
     - code: false
       mx: "4.2"
       name: False
-      description: Country determined by the router.
+      description: Allows the country to be determined by the router.
 ---
 
-By leaving this option unchecked, the country may be determined by the router or access point setting. To manually select the country, you should select the checkbox. When doing this a country drop-down will appear.
+Permits the country-selection preference for network usage and Wi-Fi regulatory setting by the device to be specified. Check the box to select the country manually from the drop-down menu; leave the box unchecked to allow the network router or Wi-Fi access point to select the country. 

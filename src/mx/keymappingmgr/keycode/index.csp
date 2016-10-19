@@ -109,7 +109,7 @@ parm:
     - name: W
       code: 51
       mx: "4.4"
-    - name: X.
+    - name: X
       code: 52
       mx: "4.4"
     - name: Y
@@ -496,7 +496,7 @@ parm:
     - name: Button R1
       code: 103
       mx: "4.4"
-    - name: Button L2"
+    - name: Button L2
       code: 104
       mx: "4.4"
     - name: Button R2
@@ -609,15 +609,15 @@ parm:
       mx: "4.4"
 ---
 
-Used to specify which Key Code will be sent as the Key Behavior for the specified Key in various Key State Mapping Tables. All of these parms use the same values shown in the table of values provided for the Base Key State Mapping Table.
+Used to specify which Key Code will be sent as the Key Behavior for the specified Key in any Key State Mapping Table. All parameters use the same values shown in the Base Key State Mapping Table.
 
->**Note:** All these parms also allow you to control the Key State(s) in which the Key Code will be sent. The parms used to control that are covered later in the Advanced Sections. If an attempt is made to specify a Key Behavior for a Key Mapping Table that is not supported on a given device, then an error will be returned in the Result XML. Consult the documentation for a specific device for information on the Key Mapping Tables supported on that device. Alternately, you can query the KeyMappingMgr to acquire a list of all Key Mapping Tables that are supported on that device.
+>**Note:** All the parameters shown here allow control the of Key State(s) in which the Key Code will be sent. Parameters for controlling those settings are covered in the Advanced Sections. Attempts to specify a Key Behavior for a Key Mapping Table that is not supported on a given device will return an error in the Result XML. For the Keys Mapping Tables supported on a specific device, query the KeyMappingMgr (see Queries, below) or refer to the device documentation. 
 
-Parm names:
+**Parm names**:
 
-* For Base Key State Table: <b>BaseKeyCode</b>
-* For Blue Key State Table: <b>BlueKeyCode</b>
-* For Orange Key State Table: <b>OrangeKeyCode</b>
-* For Grey Key State Table: <b>GreyKeyCode</b>
-* For Shift Key State Table: <b>ShiftKeyCode</b>
-* For Control Key State Table: <b>ControlKeyCode</b>
+* For Base Key State Table: **BaseKeyCode**
+* For Blue Key State Table: **BlueKeyCode**
+* For Orange Key State Table: **OrangeKeyCode**
+* For Grey Key State Table: **GreyKeyCode**
+* For Shift Key State Table: **ShiftKeyCode**
+* For Control Key State Table: **ControlKeyCode**

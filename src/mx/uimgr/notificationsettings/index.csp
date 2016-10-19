@@ -1,6 +1,6 @@
 ---
 csp: uimgr
-title: Notification Quick Settings Icons Show/Hide
+title: Gear Icon in Notifications Panel Show/Hide
 type: parm
 order: 14
 mx: "5.1"
@@ -14,17 +14,17 @@ parm:
       name: Do not change
       mx: "5.1"
       osx: "5.1"
-      description: This value (or the absence of this parm from the XML) will cause no change to visibility of the Quick Settings icons in the Notifications panel; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no change to visibility of the Gear icon in the Notifications panel; any previously selected setting will be retained.
     - code: 1
       name: Show 
       mx: "5.1"
       osx: "5.1"
-      description: Shows the Quick Settings icons in the Notifications panel. 
+      description: Shows the Gear icon in the Notifications panel. 
     - code: 2
       name: Hide 
       mx: "5.1"
       osx: "5.1"
-      description: Hides the Quick Settings icons in the Notifications panel. 
+      description: Hides the Gear icon in the Notifications panel. 
 ---
 
-Controls whether Quick Settings icons will be displayed in the Android Notifications panel. Quick Settings icons provide immediate access to Wi-Fi, Bluetooth, GPS and other commonly used System settings without having to go through the Settings panel. The Notifications panel is accessed from most applications by dragging downward from the Notification/Status bar at the top of the Android screen. Hiding the Quick Settings icons can prevent a device user from accessing those Quick Settings and changing device behavior. 
+Controls whether the "Gear" icon is displayed in the Android Notifications panel. The Gear icon provides immediate access to Wi-Fi, Bluetooth, GPS and other commonly used System settings without having to go through the Settings panel. The Notifications panel is accessed from most applications by dragging downward from the Notification/Status bar at the top of the Android screen. Hiding the Gear icon can prevent a device user from accessing those Settings and changing device behavior. 

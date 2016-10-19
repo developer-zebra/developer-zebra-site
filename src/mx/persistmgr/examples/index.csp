@@ -79,7 +79,7 @@ The Request XML document below uses PersistMgr to Disable the Request XML docume
 	
 ##Queries
 
->**Note:** The following queries are supported in by the PersistMgr. However, they have not been indicated in the PersistMgr DSD. Therefore, the following queries cannot be generated with the DSD tool and will need to be created manually.
+>**Note:** The following queries are supported by the PersistMgr but have not been indicated in the PersistMgr DSD, and therefore cannot be generated with the DSD tool. If queries are desired, they must be created manually.
 
 ###Get the List of All of the Persistent Request XML documents
 

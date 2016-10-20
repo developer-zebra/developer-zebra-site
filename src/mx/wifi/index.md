@@ -1,6 +1,6 @@
 ---
-title: WiFi Manager
-description: "The Wi-Fi Manager administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks."
+title: Wi-Fi Manager
+description: "Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, including the settings required for connecting to networks."
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

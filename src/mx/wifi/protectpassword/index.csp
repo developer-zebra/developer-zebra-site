@@ -2,17 +2,17 @@
 csp: wifi
 title: Protect Password
 type: parm
-order: 27
+order: 28
 mx: "4.2"
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "PEAP-MSCHAPV2" or "LEAP" or "EAP-TTLS-MSCHAP" or "EAP-TTLS-MSCHAPV2" or "EAP-TTLS-PAP" or "PEAP-GTC" or "EAP-FAST-MSCHAPV2" or "EAP-FAST-GTC" or "PEAP-NONE"
+  presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is NOT "EAP-TLS"
   name: ProtectPassword
   type: string
 
 ---
+Controls whether passwords will be stored as encrypted or clear text while in transit to the device. Passwords specified in Profile Manager are embedded within an XML file and sent to the device for consumption as part of a configuration. Encrypting a Password using this parameter might be desirable as a security measure to prevent extraction and exploitation in case the XML is intercepted while in transit. 
 
-Controls whether the Password will be stored as encrypted or clear text. Since the Password must be embedded within the XML, it is often desirable to encrypt the Password to prevent its extraction and exploitation in case the XML is intercepted. 
+Passwords are stored in clear text on the device unless specifically encrypted using the Protect Password Encryption parameter. Encrypted and clear-text Passwords are stored in a protected area on the device that is inaccessible to users and unauthorized applications. 
 
-A Password is used when the Security Mode is set to "Enterprise." All authentication types require a Password except EAP-TLS, which uses a client certificate instead. The Identity and Password combine to form an authentication credential that provides access to a network.
-
+The Password combines with an Identity to form an authentication credential for gaining access to a network. Authentication is required only when "Enterprise" is the selected Security Mode. All authentication types require a Password except EAP-TLS, which uses a client certificate. 

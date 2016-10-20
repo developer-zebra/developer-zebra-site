@@ -5,71 +5,46 @@ type: text
 order: 1
 ---
 
-The Wi-Fi Manager administers a device's Wi-Fi settings and network profiles for remembering and connecting to networks.
+Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, including the settings required for connecting to networks. 
 
-> **Note:** The terms "enable" and "disable" in this CSP are equivalent to "turn on" and "turn off." Those terms in other CSPs refer to the feature's Usage setting, which is the ability of the device user to access the feature at all.
+**Note**: Documention for the Wi-Fi configuration service provider uses the terms "enable" and "disable" to mean "turn on" and "turn off" a feature; to make its state active or inactive. Those terms in some other CSPs refer to the feature's "Usage" setting, which can prevent access to the feature entirely. 
+
+>**Note**: Enabling the Password Protect Encryption feature **prevents the Google Mobile Service (GMS) backup from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems. 
 
 ### Main Functionality
 
-* Enable Wi-Fi
-* Disable Wi-Fi
-* Set Wi-Fi to Never Sleep
-* Set Wi-Fi to Never Sleep When Plugged In
-* Set Wi-Fi to Always Sleep
-* Use Network Notifications
-* Do Not Use Network Notifications
-* Enable Auto Country Selection
-* Manually Select country
+* Enable/Disable the following:
+	* Wi-Fi communication on the device
+	* An existing Wi-Fi network
+	* Hyper Fast Secure Roam (HF SR)
+	* Cisco Centralized Key Management (CCKM)
+	* Fast Transition (FT)
+	* Fast Transition Resource Request (FTRIC)
+	* OKC (Opportunistic Key Caching)
+	* PMKID Caching
+	* PreAuth
+	* Advanced Logging
+	* FIPS Compliance
+	* Restricted WLAN Settings UI
+	* Radio Resource Measurement (802.?11K)
+	* Management Frame Protection Mode (802.?11w)
+	* FTOverTheDS
+	* AggregatedFT
+	* ScanAssist
+	* Coverage Hole Detection
+	* Sub-Net Roam
+	* WANCountry
+* Set Wi-Fi to Sleep: Never, Always or Always When Plugged In
+* Use/Do Not Use Network Notifications
+* Select Country automatically or manually 
 * Set the RF Band
-* Enable Auto RF Band Selection
+* Enable Auto RF Band selection
 * Enable Fusion Advanced Logging
-* Enable the Device to set the Clock off the AP (Access Point) Time
-* Enable HF SR (Hyper Fast Secure Roam)
-* Disable HF SR (Hyper Fast Secure Roam)
-* Enable CCKM (Cisco Centralized Key Management)
-* Disable CCKM (Cisco Centralized Key Management)
-* Enable FT (Fast Transition)
-* Disable FT (Fast Transition)
-* Enable FTRIC (Fast Transition Resource Request)
-* Disable FTRIC (Fast Transition Resource Request)
-* Enable OKC (Opportunistic Key Caching)
-* Disable OKC (Opportunistic Key Caching)
-* Enable PMKID Caching
-* Disable PMKID Caching
-* Enable PreAuth
-* Disable PreAuth
-* Set Power Savings Mode to Always Active
-* Set Power Savings Mode to WMM-PS
-* Set Power Savings Mode to Null Data Power Save
-* Set Power Savings Mode to PS-POLL
-* Enable Advanced Logging
-* Disable Advanced Logging
-* Enable FIPS Compliance
-* Disable FIPS Compliance
-* Enable Restricted WLAN Settings UI
-* Disable Restricted WLAN Settings UI
-* Enable Radio Resource Measurement(802.?11K)
-* Disable Radio Resource Measurement(802.?11K)
-* Enable Management Frame Protection Mode(802.?11w)
-* Disable Management Frame Protection Mode(802.?11w)
+* Enable device to set Clock from an Access Point (AP)
+* Set Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
 * Set the band preference
-* Enable FTOverTheDS
-* Disable FTOverTheDS
-* Enable AggregatedFT
-* Disable AggregatedFT
-* Enable ScanAssist
-* Disable ScanAssist
-* Enable Coverage Hole Detection
-* Disable Coverage Hole Detection
-* Enable Sub-Net Roam
-* Disable Sub-Net Roam
-* Enable WANCountry
-* Disable WANCountry
-* Add a Wi-Fi Network
-* Remove a Wi-Fi Network
-* Connect to a Wi-Fi Network
-* Disconnect from a Wi-Fi Network
-* Enable an Existing Wi-Fi Network
-* Disable an Existing Wi-Fi Network
-* Disable all Existing Wi-Fi Networks
-* Remove all Existing Wi-Fi Networks
+* Connect to/Disconnect from a Wi-Fi network
+* Disable all existing Wi-Fi networks
+* Remove all existing Wi-Fi networks
+* Encrypt Passwords in transit
+* Encrypt Passwords stored on the device 

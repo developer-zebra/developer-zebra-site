@@ -9,5 +9,6 @@ BluetoothMgr controls whether a device will be allowed to pair with Bluetooth de
 
 ### Main Functionality
 
-* Enable and Disable Bluetooth Pairing 
+* Enable/Disable Bluetooth Pairing 
+* Enable/Disable Bluetooth Discoverability
 

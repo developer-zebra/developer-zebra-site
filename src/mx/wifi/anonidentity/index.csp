@@ -6,7 +6,7 @@ order: 26
 mx: "4.2"
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "PEAP-MSCHAPV2" or "EAP-TTLS-MSCHAP" or "EAP-TTLS-MSCHAPV2" or "EAP-TTLS-PAP" or "PEAP-GTC" or "EAP-FAST-MSCHAPV2" or "EAP-FAST-GTC" or "PEAP-NONE"
+  presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is NOT "EAP-TLS" or "LEAP"
   name: AnonymousIdentity
   type: string
 
@@ -22,4 +22,4 @@ Parm value input rules:
 
 * String with a minimum of 0 characters and a maximum of 64 characters
 
-**Note: Specifying an empty (length of zero) value (or the absence of this parm from the XML) will prevent the Anonymous Identity from being set**.
+**Note: Specifying an empty (length of zero) value (or the absence of this parm from the XML) will fail to set an Anonymous Identity**.

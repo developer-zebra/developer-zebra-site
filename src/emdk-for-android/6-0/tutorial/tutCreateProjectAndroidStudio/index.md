@@ -40,8 +40,19 @@ Open Android Studio.  If you have a previous project open, close the project by 
 
 ## Enable the EMDK for Android in your project
 
+### Set EMDK as Compile SDK in Project Structure
+
+After completing the steps in **Creating The Project**
+
+1. Select **Project Structure** from the **File** menu.
+2. In the Project Structure window select **app** from the left pane under **Modules**.
+3. Now select **EMDK APIs, Android 23, rev XXX (API XX)** in from the **Compile Sdk Version drop-down box.
+4. Now click the **OK** button.
+
+**Your project is now ready to use the EMDK for Android APIs**
+
 ###  EMDK as a dependency in gradle.build
-Use this method to make use of the EMDK 16 or 19 APIs in a project with a Compile SDK set above API 19.
+Use this method to make use of the EMDK APIs in a project where the Compile SDK set above an Android API level that the EMDK currently has an Addon for.
 
 After completing the steps in **Creating The Project**
 

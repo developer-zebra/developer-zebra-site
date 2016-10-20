@@ -9,10 +9,10 @@ productversion: '6.0'
 
 DataWedge provides barcode scanning and processing services for Zebra devices running Android and Windows. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
-### Current Version
-* **DataWedge 6.0.x** is the current version
-* **Requires Scanner Framework 5.1.0** or higher
-* **SimulScan 1.9 or higher** for devices that support SimulScan
+### This document applies to:
+* **DataWedge 6.0.x**, which requires:
+* **Scanner Framework 5.1.0** or higher
+* **SimulScan 1.9 or higher** (for devices that support SimulScan)
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
@@ -29,6 +29,7 @@ The version of DataWedge documented in this guide provides the following primary
 * Remotely configure and mass-deploy settings via MDM  
 * Restore settings to factory defaults
 * Apply remote settings changes immediately 
+* Handle escape characters with "string at" criteria in Advanced Data Formatting rules
 
 Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
 
@@ -42,11 +43,11 @@ _**This guide describes DataWedge for Android. Features and usage of Windows ver
 
 &#49;. On the device, locate and **tap the DataWedge icon** in the Launcher screen or App Drawer: 
 <img style="height:350px" src="01_datawedge_launcher.png"/>
-_The DataWedge icon under Android 4.4 KitKat_.
+_Launcher icon for Android 4.x_
 <br>
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
-_The DataWedge icon under Android 5.0 Lollipop_.
+_Launcher icon for Android 5.x_
 <br>
 
 &#50;. **Tap the "hamburger" menu**. The DataWedge menu appears: 
@@ -67,8 +68,9 @@ _The 'About DataWedge' box showing version 3.1.10_.
 
 #### Download an Integrator Guide
 For each of its devices, Zebra publishes an Integrator Guide containing information specific to that device. For products that include DataWedge, **the Integrator Guide includes a chapter covering only those DataWedge capabilities available on the device**. A search for the term "integrator" at the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=integrator) yields a result similar to the image below. Narrow the seach by adding the device model. 
+<br>
 <img style="height:450px" src="support_central_guides.png"/>
-_The Zebra Support Central site showing search results for "integrator_." 
+_The Zebra Support Central site showing search results for "integrator_" 
 <br>
 
 ------

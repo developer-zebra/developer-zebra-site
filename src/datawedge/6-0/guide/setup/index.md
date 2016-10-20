@@ -117,11 +117,11 @@ The app will now use DataWedge for barcode data acquisition.
 
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
 <img style="height:350px" src="01_datawedge_launcher.png"/>
-_The DataWedge icon under Android 4.4 KitKat_.
+_Launcher icon for Android 4.x_
 <br>
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
-_The DataWedge icon under Android 5.0 Lollipop_.
+_Launcher icon for Android 5.x_
 <br>
 
 On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 
@@ -363,7 +363,7 @@ When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver
 The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
-<!-- * `Intent.getSerializableExtra()` 10/18/16- removed per Tharindu. IF RESTORING, fix grammar above and below (i.e. "calls") -->
+* `Intent.getSerializableExtra()`
 
 The call above can be used with the following String tags:
 

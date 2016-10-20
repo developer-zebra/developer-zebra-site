@@ -15,7 +15,7 @@ parm:
       name: Do nothing
       mx: "6.1"
       osx: "3.5"
-      description: This value (or the absence of this parm from the XML) will make  no change to whether Threat Detection is enabled; any previously selected setting will be retained. 
+      description: This value (or the absence of this parm from the XML) will make  no change to whether the Periodic Scan feature is enabled; any previously selected setting will be retained. 
     - code: 1
       name: Turn On 
       mx: "6.1"

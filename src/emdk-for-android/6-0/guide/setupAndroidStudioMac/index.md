@@ -11,7 +11,7 @@ productversion: '6.0'
 
 **Removing SDK add-ons**
 1. Navigate to the /Users/[user]/Library/Android/sdk/add-ons directory.
-2. Remove addon-symbol-emdk_v3.1_API-16/ addon-symbol-emdk_v3.1_API-19 folders.
+2. Remove addon-symbol_emdk-symbol-XX folders.
 
 **Removing Wizard Core**
 1. Navigate to /Users/Shared directory.
@@ -87,7 +87,7 @@ In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platfor
 2. Extract the downloaded zip file and make note of the path to the extracted files. This path will be refered to as **EMDK_FILES** for the rest of this guide.
 
 The extracted folder will contain the following files
-- EMDK add-ons (“<EMDK_FILES>\SDK\addon-symbol-emdk_vX.X_API-16/ “addon-symbol-emdk_vX.X_API-19”)
+- EMDK add-ons (“<EMDK_FILES>\SDK\addon-symbol_emdk-symbol-16/ “addon-symbol_emdk-symbol-19”)
 - EMDK Wizard core components (“<EMDK_FILES>\Symbol EMDK for Android”)
 - EMDK Wizard plug-in for Android Studio (“<EMDK_FILES>\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
 - EMDK device runtime (“<EMDK_FILES>\Device Update\ EmdkOSUpdateApp_vX.X.X.apk”)

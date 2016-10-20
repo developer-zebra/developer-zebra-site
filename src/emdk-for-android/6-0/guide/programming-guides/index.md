@@ -43,7 +43,11 @@ content-items:
     title: Payment API Programmer's Guide
     text: "This guide contains examples and best practices when using the Payment API's along with Zebra's PD40 payment device."
     url: /emdk-for-android/6-0/guide/payment-api
-
+  - type: section
+    level: 4
+    title: Battery Intent API Programmer's Guide
+    text: "This guide describes the functionality of the Battery Intent API Interface."
+    url: /emdk-for-android/6-0/guide/reference/refbatteryintent
     
 product: EMDK For Android
 productversion: '6.0'

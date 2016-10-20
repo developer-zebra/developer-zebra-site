@@ -14,9 +14,9 @@ IPWedge is a small Windows app that monitors a network port and receives scanned
 ### Prerequisites
 Using IPWedge requires the following: 
 
-* A PC with Windows XP, Vista, 7 or 8
+* A PC with Windows XP, Vista or 7
 * Microsoft .NET Framework 3.5 Service Pack 1 (or later) installed
-* A Zebra device running Android 4.1 Jelly Bean (or later)
+* A Zebra device running Android 4.4 KitKat (or later)
 * DataWedge for Android 1.5 (or later)
 
 ### Set up IPWedge
@@ -51,4 +51,4 @@ _Clipboard Options_.
 
 The PC is now ready to receive data from devices running DataWedge with the IP Output Plug-in (with IP address and port settings matching those of the PC). For device setup instructions, see "IP Output" in the [DataWedge Setup Guide](../setup). 
 
-**Note: Profile0 cannot be used with IPWedge**.
+<!-- **Note: Profile0 cannot be used with IPWedge**. 10/18/16- removed per Tharindu -->

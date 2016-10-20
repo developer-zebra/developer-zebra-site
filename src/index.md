@@ -10,20 +10,22 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/5-0/guide/about
+        url: /datawedge/6-0/guide/about
       - title: Setup
-        url: /datawedge/5-0/guide/setup
+        url: /datawedge/6-0/guide/setup
       - title: Advanced
-        url: /datawedge/5-0/guide/advanced
+        url: /datawedge/6-0/guide/advanced
       - title: Decoders
-        url: /datawedge/5-0/guide/decoders
+        url: /datawedge/6-0/guide/decoders
       - title: IP Output
-        url: /datawedge/5-0/guide/ipwedge
+        url: /datawedge/6-0/guide/ipwedge
       - title: APIs
-        url: /datawedge/5-0/guide/api
+        url: /datawedge/6-0/guide/api
       - title: Demo
-        url: /datawedge/5-0/guide/demo
+        url: /datawedge/6-0/guide/demo
     versions:
+      - url: datawedge/6-0/guide/about
+        label: '6.0'
       - url: datawedge/5-0/guide/about
         label: '5.0'
   - title: Enterprise Browser

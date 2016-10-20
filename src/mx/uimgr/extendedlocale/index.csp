@@ -19,7 +19,7 @@ parm:
       name: INDIA_ENGLISH
       mx: "5.1"
       osx: "1.3"
-    - code: se_SE 
+    - code: sv_SE 
       name: SWEDEN_SWEDISH
       mx: "5.1"
       osx: "1.3"

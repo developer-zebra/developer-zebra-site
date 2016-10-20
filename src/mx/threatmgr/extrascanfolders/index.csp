@@ -1,0 +1,32 @@
+---
+csp: threatmgr
+title: Extra Scan Folders
+type: parm
+order: 50
+mx: "6.1"
+osx: "3.5"
+parm:
+  pivotal: Yes
+  name: ExtraScanFolders
+  type: list
+  list:
+    - code: 0
+      name: Do nothing
+      mx: "6.1"
+      osx: "3.5"
+      description: This value (or the absence of this parm from the XML) will make no change to Folder Monitoring; any previously selected setting will be retained.
+    - code: 1
+      name: Turn On 
+      mx: "6.1"
+      osx: "3.5"
+      description: Enables folder monitoring, and sends an Intent when changes occur to the specified folder(s).
+    - code: 2
+      name: Turn Off
+      mx: "6.1"
+      osx: "3.5"
+      description: Disables folder monitoring, and causes the device to ignore changes to the specified folder(s).
+---
+
+This is the On/Off switch for folder monitoring. This Extra Scan Folders feature monitors one or more folders on the device (including those in Android-protected areas) as specified in the Extra Scan Folders List parameter. When a change within a monitored folder occurs, ThreatMgr broadcasts an Intent with the folder name and one of the [Android FileObserver constants](https://developer.android.com/reference/android/os/FileObserver.html#constants) to describe the event. 
+
+*This parameter does not detect Threats**. 

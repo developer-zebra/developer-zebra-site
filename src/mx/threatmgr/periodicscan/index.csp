@@ -1,0 +1,31 @@
+---
+csp: threatmgr
+title: Periodic Scan
+type: parm
+order: 45
+mx: "6.1"
+osx: "3.5"
+parm:
+  presentif: Shown if Threat Action is "Turn On"
+  pivotal: Yes
+  name: PeriodicScan
+  type: list
+  list:
+    - code: 0
+      name: Do nothing
+      mx: "6.1"
+      osx: "3.5"
+      description: This value (or the absence of this parm from the XML) will make  no change to whether Threat Detection is enabled; any previously selected setting will be retained. 
+    - code: 1
+      name: Turn On 
+      mx: "6.1"
+      osx: "3.5"
+      description: Enables Periodic Scans to be performed on the device.
+    - code: 2
+      name: Turn Off
+      mx: "6.1"
+      osx: "3.5"
+      description: Disables the Periodic Scan feature on the device.
+---
+
+This is the On/Off switch for Periodic Scans on the device, which detect apps with the "super-user" permissions and other characteristics generally associated with root-based malware. When Periodic Scan is disabled, Threat detection scanning occurs each time the device boots. When enabled, scans are performed according to the interval specified in the Periodic Scan Interval parameter. **Excessive scanning can effect battery life**. 

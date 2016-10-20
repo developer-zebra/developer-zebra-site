@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: RF Band 
+title: RF Band Selection
 type: parm
 order: 7
 mx: "4.2"
@@ -12,19 +12,19 @@ parm:
     - code: 
       mx: "4.2"
       name: Unchanged
-      description: This value (or the absence of this parm from the XML) will not make any change to the current selected band on the device.
+      description: This value (or the absence of this parm from the XML) causes no change to the band(s) currently selected on the device; any previously selected setting will be retained.
     - code: 2.4GHZ
       mx: "4.2"
       name: 2.4GHZ
-      description: TThis value will enable 2.4GHz band.
+      description: Enables 2.4 GHz band.
     - code: 5.0GHZ
       mx: "4.2"
       name: 5.0GHZ
-      description: This value will enable 5.0GHz band.
+      description: Enables 5.0 GHz band.
     - code: Auto
       mx: "4.2"
       name: Auto
-      description: This value will enable both bands and connect automatically to either.
+      description: Enables 2.4 GHz and 5.0 GHz bands and allows automatic connections to either.
 ---
 
-Specifies the 802.11 band(s) to use. The bands to use will usually be determined automatically through negotiation with the Wi-Fi infrastructure. However, in some cases, the Wi-Fi infrastructure may be shared amongst multiple uses, which may mean that it would be preferable to limit the devices to one band and leave the other bands for other purposes.
+Used to specify which RF band(s) the device will use for 802.11 communications. This parameter is usually set automatically through negotiation with the Wi-Fi infrastructure. However, it might sometimes be desirable to limit Wi-Fi communications to certain bands, leaving other bands free for other purposes. 

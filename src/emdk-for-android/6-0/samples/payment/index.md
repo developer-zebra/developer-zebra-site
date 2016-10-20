@@ -4,10 +4,10 @@ title: Mobile Payment
 description: This sample demonstrates the EMDK Mobile Payment APIs allowing your application to perform EMV and Mag-stripe Payment transactions when using the PD40 Payment device.
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/PaymentSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/PaymentSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/PaymentSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/tree/PaymentSample1'
 features: null
 devices:
   - MC40 KK

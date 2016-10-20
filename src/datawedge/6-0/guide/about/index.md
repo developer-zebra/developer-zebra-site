@@ -42,6 +42,11 @@ _**This guide describes DataWedge for Android. Features and usage of Windows ver
 
 &#49;. On the device, locate and **tap the DataWedge icon** in the Launcher screen or App Drawer: 
 <img style="height:350px" src="01_datawedge_launcher.png"/>
+_The DataWedge icon under Android 4.4 KitKat_.
+<br>
+
+<img style="height:350px" src="02_datawedge_launcher.png"/>
+_The DataWedge icon under Android 5.0 Lollipop_.
 <br>
 
 &#50;. **Tap the "hamburger" menu**. The DataWedge menu appears: 

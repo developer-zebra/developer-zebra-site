@@ -18,7 +18,6 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 ####Zebra Device Support
   * TC70 and TC75 with Android Lollipop
   * WT6000 with Android Lollipop
-  * MC40 with Android Lollipop
   * MC67 with Android KitKat
   * WorkAbout Pro 4 with Windows Embedded Handheld 6.5
   * Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5

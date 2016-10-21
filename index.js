@@ -89,6 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("stagenow/2-4");
+      index_generate("enterprise-browser/1-4");
       
 

@@ -89,6 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("enterprise-browser/1-5");
+      index_generate("enterprise-browser/1-4");
       
 

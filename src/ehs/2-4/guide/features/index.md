@@ -322,7 +322,12 @@ This section covers important interactions between EHS and Android features that
 
 ### Other Unintended Access
 
-* On devices running Android 4.4 KitKat, users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings menu in the Notification drop-down. This can be prevented with the [Disable Status Bar Settings tag](../settings#disablestatusbarsettings) or through EMDK or StageNow. 
+* On devices running Android 4.4 KitKat, users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings menu in the Notification drop-down. This can be prevented with the [Disable Status Bar Settings tag](../settings#disablestatusbarsettings). 
+* Wireless capabilities also can be individually disabled through these MX modules: 
+	* [SettingsMgr](../../../../mx/settingsmgr) for Airplane Mode and Wi-Fi 
+	* [UiMgr](../../../../mx/uimgr) for Quick Settings and the "Gear" icon
+	* [WirelessMgr](../../../../mx/wirelessmgr) for Bluetooth, GPS, NFC and WWAN 
+* MX modules are accessible using EMDK or StageNow tools. 
 * Taking a screenshot (by pressing the "volume-down" and "Power" buttons simultaneously) while in User Mode might expose users to the Gallery app. To prevent this, disable the Gallery app in the Disable/Enable Applications section of [Optional Feature Tags section](../settings#optionalfeaturetags).
 * If the Programmable Keys feature on the Android System Settings panel is used to program a key to launch an application, that key mapping will be available in User Mode. 
 

@@ -68,6 +68,8 @@ products:
       - title: Download
         url: /ehs/2-4/download
     versions:
+      - url: ehs/2-5/guide/about/
+        label: '2.5'
       - url: ehs/2-4/guide/about/
         label: '2.4'
       - url: ehs/2-3/guide/about/

@@ -32,7 +32,7 @@ Selecting 'Always' locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> Ready to get started? [Download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4)
+> Ready to get started? [Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4)
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -41,209 +41,238 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <tbody>
 
 <tr>
-<td style="width: 200pt;" width="250">
+<td style="width: 150.35pt;" width="200">
 <p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
 </td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Android name</font></b></p>
+
+
+<td style="width: 220px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
+    Android 4.4 (KitKat)</font></b></p>
 </td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Android version</font></b></p>
+
+<td style="width: 220px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
+    Android 5.0/5.1 (Lollipop) </font></b></p>
+</td>
+
+
+<td style="width: 220px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
+    Android 6.0 (Marshmallow) </font></b></p>
 </td>
 </tr>
+
 
 <tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal"><font color="#333399" size="3">ET1 </font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean*</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;" width="158">
+<td style="width: 150.35pt;"  width="250">
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">Jelly Bean*</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
 
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
+<td style="width: 220px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean*</font></p></td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean*</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    Jelly Bean*</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.1</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.2</font></p>
-</td>
-</tr>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td></tr>
 
 <tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
+
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
+
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.3</font></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
 <tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
+</td>
+
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
 
-<tr>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<tr bgcolor="#ccffcc" >
+
+<tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
+
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
 </td>
+
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
-</td>
-</tr>
-
-<tr >
-<td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
 </td>
+
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
 </td>
+
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
-</tr>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
 <tr >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
 </td>
+
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">Lollipop</font></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    &nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    5.0</font></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">ET50/ET55</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+
+<tr>
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC51</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
 </tbody>
 </table>
-&#42; _EHS 2.4 will be the final version that supports Zebra devices running Android Jelly Bean_.
 
 ## What's New
 
-### New in EHS 2.4:
+#### EHS 2.5 Support Notes:
+* **Does not run on devices with Android 4.12 Jelly Bean**
+* **Does not run on the TC70 with Android 4.4.2 KitKat** (BSP version 112414)
 
->**End of support for EHS on Jelly Bean:** EHS 2.4 will be the last version of Enterprise Home Screen that will be supported by Zebra on devices running Android Jelly Bean. 
+>**[EHS 2.4](../../../2-4/guide/about) is still available for download** and supported on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean. 
+
+### New Features in EHS 2.5:
+
+* **Support for [ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)). 
+
+* **Support for the [TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)). 
+
+* **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 
+
+* **Now includes [Techdocs](../../../../)**. A link to Zebra's premier web site for user-facing documentation is now a standard component on every installation.
 <br>
->**Online-only documentation**: Beginning with EHS 2.4, the user guide will no longer be bundled with the EHS download package. 
 
-* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (See important [Android Lollipop Notes](#androidlollipopnotes), below.) 
+------
+
+#### Android Lollipop Notes
+
+* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+
+* **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
+
+* **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
+
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way.
+
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
+
+* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+
+------
+
+#### New in EHS 2.4
+
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (See important [Android Lollipop Notes](#androidlollipopnotes), above.) 
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 
@@ -267,23 +296,7 @@ _The User Mode screen with XXL icons_. -->
 
 * **[App Icon Label Text Color](../settings#iconlabeltextcolor) -** is now white on a transparent background to improve readability. 
 
-> To implement these features, [download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4).
-
-------
-
-#### Android Lollipop Notes
-
-* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
-
-* **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
-
-* **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
-
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in much the same way.
-
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
-
-* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+> To implement these features, [download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4).
 
 ------
 

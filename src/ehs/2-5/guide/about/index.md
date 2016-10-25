@@ -244,7 +244,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **No longer supports devices with Android 4.12 Jelly Bean**
 * **No longer supports the TC70 with Android 4.4.2 KitKat** (BSP version 112414)
 
-Zebra continues to support EHS on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean. For these devices, [download EHS 2.4](../../../2-4/download). 
+**Note**: Zebra continues to support EHS on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean. For these devices, [download EHS 2.4](../../../2-4/download). 
 
 #### New Features in EHS 2.5:
 * **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 

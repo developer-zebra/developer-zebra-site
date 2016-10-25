@@ -13,232 +13,198 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 
 > <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-4/download) and establish connectivity between the computer and device. Then resume from here. 
 
-## Supported Devices and APKs
-Enterprise Home Screen works with most Zebra Android devices. The EHS download package includes <b>all three files</b> indicated in the table below, plus documentation and release notes. The correct APK file for a particular target device depends on the device, its operating system and some additional considerations explained below. 
+<!--
+## Supported Devices
+This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
+
 <tr>
-<td style="width: 250.35pt;" width="250">
+<td style="width: 150.35pt;" width="200">
 <p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
 </td>
-<td style="width: 140px;">
+
+
+<td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_020404.apk</font></b></p>
+    Android 4.4 (KitKat)</font></b></p>
 </td>
-<td style="width: 140px;">
+
+<td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_L_020300.apk</font></b></p>
+    Android 5.0/5.1 (Lollipop) </font></b></p>
 </td>
-<td style="width: 140px;">
+
+
+<td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    EHS_R_020404.apk </font></b></p>
+    Android 6.0 (Marshmallow) </font></b></p>
 </td>
 </tr>
+
+
 <tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal"><font color="#333399" size="3">ET1 Jelly Bean (Android 4.1)</font></p>
+<td style="width: 150.35pt;"  width="250">
+<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
-<td style="width: 96px;" >
+
+<td style="width: 220px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
+<td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
-</tr>
-<tr>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td></tr>
+
+<tr >
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40 Jelly Bean (Android 4.1)</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-</tr>
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
 
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55 Jelly Bean (Android 4.1)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p></td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
+<td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
-<td style="width: 96px;" >
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
+</td>
+
+<td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
+
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
 </tr>
-<tr>
+
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC67 Jelly Bean (Android 4.1)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
 
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
-</tr>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<tr bgcolor="#ccffcc" >
+
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC32 Jelly Bean (Android 4.1)</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
 </td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
+</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    &nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">ET50/ET55</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
 </tr>
+
 <tr>
 <td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70 KitKat (Android 4.4.2) - BSP version 112414</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-</tr>
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70 KitKat (Android 4.4.3) </font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC51</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC75 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC18 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC92 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC8000 KitKat (Android 4.4)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">WT6000 Lollipop (Android 5.0)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
@@ -246,14 +212,14 @@ Enterprise Home Screen works with most Zebra Android devices. The EHS download p
 </tr>
 </tbody>
 </table>
-&#42; _EHS 2.4 will be the final version that supports Zebra devices running Android Jelly Bean_.
+-->
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the installer APK that detects the target device model and operating system and installs the appropriate EHS version. If installing a device-specific APK from the table above, be sure to substitute the filename(s) where necessary in the instructions. 
+These instructions apply to direct installation (from a computer to a single device) using the `EHS_020501.apk` EHS 2.5 installer file.  
 
-> <b>Note</b>: The installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
+Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
-**To install EHS manually using the automatic target selection APK and app**: 
+**To install EHS manually**: 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 
@@ -353,20 +319,16 @@ In User Mode, the following features are disabled by default:
 
 <img alt="" style="height:350px" src="prefs_3.png"/>
 
-For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please refer to the [Advanced Settings]() section. 
+For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please refer to the [Advanced Settings](../settings) section. 
 
 ## Automated Installation
 These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-This section covers use of the EHS Installer (`EHS_020xxx.apk`), which detects the target device model and operating system and installs the appropriate EHS version and the default config file if none is present. If installing a config file or device-specific APK from the 'Supported Devices and APKs' table above, be sure to add or substitute the filename(s) where necessary in the instructions. 
-
-> <b>Note</b>: The EHS Installer payload includes two EHS editions, and occupies about 170 KB more device storage than a target-specific APK alone. Further, the 'EHS Installer' app remains visible in the device's App Drawer following installation and should not be removed; doing so removes the ability to automatically uninstall all EHS components. Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
-
 **To install EHS using an MDM, instruct the MDM to do the following, in this order**:
 
-&#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings]() section for detailed instructions on the creation and editing of config files. 
+&#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings](../settings) section for detailed instructions on the creation and editing of config files. 
 
-&#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the target-specific or non-target specific file and the XML file created in the previous step.
+&#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the .apk file and the XML file (if any) created in the previous step.
 
 &#51;. <b>Launch the app</b> using the following package and activity commands: 
 
@@ -385,34 +347,9 @@ This section covers use of the EHS Installer (`EHS_020xxx.apk`), which detects t
     Main activity/class name</font></p>
 </td>
 
-</tr>
 <tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk (EHS Installer)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller.EHSinstaller</font></p>
-</td>
-</tr>
-
-<tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020xxx.apk</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen.HomeScreenActivity</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_R_020xxx.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
@@ -436,7 +373,9 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 ## Uninstallation
 
 ### Manual Uninstallation
-To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Installer</b>. This automatically removes both the EHS Installer and the Enterprise Home Screen app. 
+**Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
+
+To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b>.  
 
 &#49;. From the Admin Mode screen, <b>Select Settings</b>:  
 <img alt="" style="height:250px" src="app_admin_screen_settings.png"/>
@@ -460,14 +399,14 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Instal
 
 Manual uninstallation of EHS is now complete. 
 
-> <b>Note</b>: USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some other device settings configured by EHS might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
-
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
+**Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
+
 **To uninstall EHS using an MDM, instruct the MDM to do the following**:
 
-&#49;. <b> Uninstall (remove) the EHS app</b> referencing the package and activity names as indicated in the table below. Uninstalling the EHS Installer will also remove the EHS application that it installed. If a target-specific APK (i.e. `EHS_L_020xxx.apk` or `EHS_R_020xxx.apk`) was deployed, the package/activity name specific to that APK must be referenced when uninstalling it. 
+&#49;. <b> Uninstall (remove) the EHS app</b>, referencing the package and activity names as indicated in the table below. 
 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
@@ -484,34 +423,9 @@ These instructions apply to remote uninstallation using an organization's own MD
     Main activity/class name</font></p>
 </td>
 
-</tr>
 <tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="250">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk (EHS Installer)</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.ehsinstaller.EHSinstaller</font></p>
-</td>
-</tr>
-
-<tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_L_020xxx.apk</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="2">com.motorolasolutions.enterprisehomescreen.HomeScreenActivity</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020xxx.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
@@ -526,11 +440,9 @@ These instructions apply to remote uninstallation using an organization's own MD
 
 &#50;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
-> <b>Note</b>: USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some other device settings configured by EHS might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
-
-The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
-
 Remote uninstallation of EHS is now complete. 
+
+> The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
 ## Change the Default Launcher
 Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 

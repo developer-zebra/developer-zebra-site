@@ -51,8 +51,9 @@ The device will be reboot after the device update completes.
 * Option 1: Turn Off the AppLock Manager before EMDK device runtime deployment and the AppLock Manager can be turned On after device reboot.
 * Option 2: The customer can add the EMDK OS update app name to the AppLock Manager Applications white list before the EMDK device runtime deployment.
 
-## Installing the EMDK device runtime on Google Mobile Service (GMS) devices:
-Before installing EMDK device runtime on GMS devices, you must enable the enterprise-grade features like Mobility Extensions (MX). To download enterprise enabler for your device, go to [https://portal.motorolasolutions.com/Support/US-EN](https://portal.motorolasolutions.com/Support/US-EN) and search for "Enterprise Enabler" along with the device name.
+## Installing the EMDK device runtime on Google Mobile Service (GMS) TC55 with Android v4.1:
+Before installing EMDK device runtime on GMS TC55 with Android v4.1, you must enable the enterprise-grade features like Mobility Extensions (MX). To download enterprise enabler for your device, go to [https://portal.motorolasolutions.com/Support/US-EN](https://portal.motorolasolutions.com/Support/US-EN) and search for "Enterprise Enabler" along with the device name.  
+All other GMS devices do not require this additional step and you can install directly the EMDK device runtime.
 
 ## Modify Device Runtime Installation Behavior
 The EMDK device runtime update application will skip the EMDK runtime install if a device has an EMDK runtime version higher than the install version. The EMDK device runtime installation behavior can be modified by pushing an EMDK install mode configuration (`emdkosupdateconfig.xml`) to the `/enterprise/usr/` folder on a devices internal storage. This overrides the default settings of the application.

@@ -236,21 +236,29 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ## What's New
 
 #### EHS 2.5 Support Notes:
-* **Does not run on devices with Android 4.12 Jelly Bean**
-* **Does not run on the TC70 with Android 4.4.2 KitKat** (BSP version 112414)
 
->**[EHS 2.4](../../../2-4/guide/about) is still available for download** and supported on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean. 
+* **Supports the TC51 Smartphone Mobile Computer** running Android Marshmallow 6.0.1 (See [Android Marshmallow Notes](#androidmarshmallownotes))
+* **Supports [ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)) 
+* **Supports the [TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes))
+* **Supports [TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)) 
+* **No longer supports devices with Android 4.12 Jelly Bean**
+* **No longer supports the TC70 with Android 4.4.2 KitKat** (BSP version 112414)
 
-### New Features in EHS 2.5:
+Zebra continues to support EHS on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean. For these devices, [download EHS 2.4](../../../2-4/download). 
 
-* **Support for [ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)). 
-
-* **Support for the [TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)). 
-
+#### New Features in EHS 2.5:
 * **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 
 
 * **Now includes [Techdocs](../../../../)**. A link to Zebra's premier web site for user-facing documentation is now a standard component on every installation.
 <br>
+
+------
+
+#### Android Marshmallow Notes
+
+* **If Location Permission is disabled** on the device, a blank list of available access points will be presented in the "Wireless info" screen in EHS (which is accessed from the Admin- or User-mode "hamburger" menu). Location Permission (Settings -> Apps -> EHS -> Permissions) is enabled by default. 
+
+* **If Wi-Fi is disabled** on the device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS (which is accessed from the Admin- or User-mode "hamburger" menu).
 
 ------
 

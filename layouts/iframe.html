@@ -1,21 +1,20 @@
 
 {{> header}}
 {{{ contents }}}
-<iframe src="{{iframeurl}}" height="100%" width="100%" style="height: calc(100vh - 230px);" onload="onFrameLoad(this)"></iframe>   
+<iframe  height="100%" width="100%" style="height: calc(100vh - 230px);" ></iframe>   
 
 {{> modal}}
 
 <script type="text/javascript">
-    targetPage = "" + window.location.search;
-    var loadedTarget = false;
-    function onFrameLoad(){
-        console.log("changing iframe"+ targetPage);
-        if(!loadedTarget){
-            $("iframe").attr("src",$("iframe").attr("src")+targetPage)
-            loadedTarget=true;
-        }
-
-    }
+	$( document ).ready(function() {
+		var iframeroot = "{{iframeurl}}";
+  		// Handler for .ready() called.
+  		targetPage = "" + window.location.search;
+  		console.log("loading iframe: "+iframeroot+targetPage);
+  		 $("iframe").attr("src",iframeroot+targetPage)
+	});
+    
+    
 </script>
 
 {{> footer}}

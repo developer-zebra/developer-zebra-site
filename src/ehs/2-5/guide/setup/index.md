@@ -319,14 +319,14 @@ In User Mode, the following features are disabled by default:
 
 <img alt="" style="height:350px" src="prefs_3.png"/>
 
-For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please refer to the [Advanced Settings](../settings) section. 
+For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
 
 ## Automated Installation
 These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
 **To install EHS using an MDM, instruct the MDM to do the following, in this order**:
 
-&#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. Refer to the [Advanced Settings](../settings) section for detailed instructions on the creation and editing of config files. 
+&#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. See the [Advanced Settings](../settings) section for detailed instructions on the creation and editing of config files. 
 
 &#50;. <b>Deploy EHS and the config file</b> (if any) to the device(s). This includes the .apk file and the XML file (if any) created in the previous step.
 

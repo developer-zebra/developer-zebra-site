@@ -372,9 +372,8 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 
 ## Uninstallation
 
-**On the ET50 or ET55 devices running Android 5.x Lollipop with GMS, a permanent system UI crash could occur** if EHS is uninstalled locally or remotely while EHS is in User Mode. Before uninstalling EHS, Zebra recommends pushing an EHS configuration file (`enterprisehomescreen.xml`) to the device with the Search app enabled.
-
-See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
+#### Important
+**On ET50/ET55 devices running Android 5.x Lollipop with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled while in User Mode. This applies to local and remote operations (i.e. via MDM). Before uninstalling EHS, Zebra recommends pushing an EHS configuration file (`enterprisehomescreen.xml`) to the device with the Search app enabled. See the [Advanced Settings](../settings) section for `enterprisehomescreen.xml` configuration file usage. 
 
 ### Manual Uninstallation
 **Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
@@ -406,11 +405,10 @@ Manual uninstallation of EHS is now complete.
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
-**Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
+#### Important
+* **On ET50 and ET55 devices with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via MDM), while in User Mode. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app. See the [Advanced Settings](../settings) section for `enterprisehomescreen.xml` configuration file usage. 
 
-**On ET50 and ET55 devices with GMS, a permanent system UI crash could occur** if EHS is uninstalled remotely (i.e. via MDM), while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app.  
-
-See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
+* Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
 **To uninstall EHS using an MDM, instruct the MDM to do the following**:
 

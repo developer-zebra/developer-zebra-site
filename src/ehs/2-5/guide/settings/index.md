@@ -132,15 +132,13 @@ The EHS config file is broken into five sections:
 
     <config>
     <applications>
-        <application label="Rapid Deployment" package="com.symbol.msp" activity="com.symbol.msp.client.RDMenu"/>
         <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
         <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>
-        <link label="ET1 Video" url="http://www.youtube.com/watch?v=ERlIzLt-h6s"/>
+        <link label="Tech Docs" url="http://techdocs.zebra.com"/>
     </applications>
 
     <tools>
         <application label="Calculator" package="com.android.calculator2" activity=""/>
-        <application label="Rapid Deployment" package="com.symbol.msp" activity="com.symbol.msp.client.RDMenu"/>
     </tools>
 
     <passwords>
@@ -918,13 +916,20 @@ Permits a custom graphic to be specified in place of the system or default icon 
 #### Examples
 
 **Replace the icon for an application**: 
-<application label="DWDemo" package="com.symbol.datawedge" icon="/sdcard/datawedge/demo.png"/>
+
+    :::xml
+    <application label="DWDemo" package="com.symbol.datawedge" icon="/sdcard/datawedge/demo.png"/>
  
 **Replace the icon for a link**: 
-<link label="yahoo" url="http://www.yahoo.com" package="org.mozilla.firefox" activity="org.mozilla.firefox.App" icon="/enterprise/usr/customfirefox.jpg" />
+
+    :::xml
+    <link label="yahoo" url="http://www.yahoo.com" package="org.mozilla.firefox" activity="org.mozilla.firefox.App" icon="/enterprise/usr/customfirefox.jpg" />
 
 **Replace the icon for an app launching with a specific activity**:  
-<application label="WebMenu" package="com.symbol.rdp" activity="com.symbol.rdp.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.bmp"/>
+
+    :::xml
+    <application label="WebMenu" package="com.symbol.rdp" activity="com.symbol.rdp.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.bmp"/>
+    
 
 ------
 

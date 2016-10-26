@@ -32,7 +32,7 @@ Selecting 'Always' locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> Ready to get started? [Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4)
+> Ready to get started? [Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.5)
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -237,10 +237,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 #### EHS 2.5 Now Supports:
 
-* **TC51 Smartphone Mobile Computer** running Android Marshmallow 6.0.1 (See [Android Marshmallow Notes](#androidmarshmallownotes))
-* **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)) 
-* **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes))
-* **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (See [Android Lollipop Notes](#androidlollipopnotes)) 
+* **TC51 Smartphone Mobile Computer** running Android Marshmallow 6.0.1 (see [Android Marshmallow Notes](#androidmarshmallownotes))
+* **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
+* **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes))
+* **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes)) 
 
 #### EHS 2.5 No Longer Supports:
 * **Devices with Android 4.12 Jelly Bean**
@@ -253,7 +253,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **Now links to [Techdocs](../../../../)**, Zebra's premier web site for user-facing documentation--now a standard component on every EHS installation.
 <br>
-
 ------
 
 #### Android Marshmallow Notes
@@ -280,9 +279,23 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ------
 
+#### ET50/ET55 Device Notes
+
+**Applies to Zebra ET50 and ET55 devices with Google Mobile Services (GMS) only**.  
+
+* **The Launcher selection pop-up does not appear** when the HOME button is pressed while in User Mode, preventing a user or administrator from easily selecting the default Launcher app on the device. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
+
+* **A permanent system UI crash could occur if EHS is uninstalled remotely (i.e. via MDM), while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app.  
+
+* **A permanent system UI crash could occur on devices running Android 5.x Lollipop** if EHS is uninstalled by any means (locally or remotely) while EHS is in User Mode. Before uninstalling EHS, Zebra recommends pushing an EHS configuration file (`enterprisehomescreen.xml`) to the device with the Search app enabled.
+
+See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
+
+------
+
 #### New in EHS 2.4
 
-* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (See [Android Lollipop Notes](#androidlollipopnotes)) 
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android Lollipop Notes](#androidlollipopnotes)) 
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 

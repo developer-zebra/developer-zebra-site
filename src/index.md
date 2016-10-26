@@ -58,15 +58,15 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ehs/2-4/guide/about
+        url: /ehs/2-5/guide/about
       - title: Getting Started
-        url: /ehs/2-4/guide/gettingstarted
+        url: /ehs/2-5/guide/gettingstarted
       - title: Basic Setup
-        url: /ehs/2-4/guide/setup
+        url: /ehs/2-5/guide/setup
       - title: Advanced Features
-        url: /ehs/2-4/guide/features
+        url: /ehs/2-5/guide/features
       - title: Download
-        url: /ehs/2-4/download
+        url: /ehs/2-5/download
     versions:
       - url: ehs/2-5/guide/about/
         label: '2.5'

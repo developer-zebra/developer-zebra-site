@@ -12,17 +12,17 @@ menu:
       label: '2.3'
   items:
     - title: About
-      url: /ehs/2-4/guide/about
+      url: /ehs/2-5/guide/about
     - title: Setup
-      url: /ehs/2-4/guide/setup
+      url: /ehs/2-5/guide/setup
     - title: Advanced Settings
-      url: /ehs/2-4/guide/settings
+      url: /ehs/2-5/guide/settings
     - title: Special Features
-      url: /ehs/2-4/guide/features
+      url: /ehs/2-5/guide/features
     - icon: fa fa-search
-      url: /ehs/2-4/search
+      url: /ehs/2-5/search
     - icon: fa fa-download
-      url: /ehs/2-4/download
+      url: /ehs/2-5/download
 product: Enterprise Home Screen
 productversion: '2.5'
 ---

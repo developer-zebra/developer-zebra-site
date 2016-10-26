@@ -9,9 +9,9 @@ productversion: '2.5'
 
 These instructions provide a basic understanding of the installation, configuration, usage and essential workings of Enterprise Home Screen, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Mobile Device Management (MDM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings](../settings) section. 
 
-Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single, convenient tool.
+Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/5-0/guide/about) or remotely using [StageNow](/stagenow/2-4/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single, convenient tool.
 
-> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-4/download) and establish connectivity between the computer and device. Then resume from here. 
+> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-5/download) and establish connectivity between the computer and device. Then resume from here. 
 
 <!--
 ## Supported Devices
@@ -242,7 +242,7 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 
 &#54;. After installation, <b>tap Open</b>:
 
-<img alt="" style="height:250px" src="ehs_installed.png"/>
+<img alt="" style="height:350px" src="ehs_installed.png"/>
 If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home Screen' from the App Drawer and proceed.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
@@ -372,6 +372,10 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 
 ## Uninstallation
 
+**On the ET50 or ET55 devices running Android 5.x Lollipop with GMS, a permanent system UI crash could occur** if EHS is uninstalled locally or remotely while EHS is in User Mode. Before uninstalling EHS, Zebra recommends pushing an EHS configuration file (`enterprisehomescreen.xml`) to the device with the Search app enabled.
+
+See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
+
 ### Manual Uninstallation
 **Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
@@ -403,6 +407,10 @@ Manual uninstallation of EHS is now complete.
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
 **Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
+
+**On ET50 and ET55 devices with GMS, a permanent system UI crash could occur** if EHS is uninstalled remotely (i.e. via MDM), while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app.  
+
+See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
 
 **To uninstall EHS using an MDM, instruct the MDM to do the following**:
 

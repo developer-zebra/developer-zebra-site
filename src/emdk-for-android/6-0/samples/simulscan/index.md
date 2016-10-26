@@ -4,10 +4,10 @@ title: Document Capture
 description: "This sample application will show how the Simulscan API's can be used to capture multiple types of data from paper forms."
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/SimulScanSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/SimulScanSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/SimulScanSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/tree/SimulScanSample1'
 features:
   - Profile Manager
   - Simulscan
@@ -41,6 +41,10 @@ You will need:
 Follow the template generation and device licensing sections of the [SimulScan API tutorial](/emdk-for-android/6-0/tutorial/tutSimulScanAPI)
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
+##Requirements
+Android API 19 must be installed via the SDK Manager before attempting to load this sample.
+
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

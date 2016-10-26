@@ -205,14 +205,14 @@ Use this method to make use of the EMDK in a project with a Compile SDK set abov
 
 		:::
 		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol-emdk_v4.2_API-19\\libs')
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol_emdk-symbol-19\\libs')
 		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
     **Mac**
 
 		:::
 		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.2_API-19/libs')
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME/Library/Android/sdk/add-ons/addon-symbol_emdk-symbol-19/libs')
 		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
 

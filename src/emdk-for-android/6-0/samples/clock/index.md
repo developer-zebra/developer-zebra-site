@@ -4,10 +4,10 @@ title: Setting The Clock
 description: This sample application will show you how you can create a custom application for setting the system time using the Clock Feature of Profile Manager.
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/ProfileClockSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/ProfileClockSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/ProfileClockSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/tree/ProfileClockSample1'
 features:
   - Profile Manager
   - Clock
@@ -36,6 +36,10 @@ productversion: '6.0'
 One of the features of the EMDK for Android is the ability to set the system clock. This sample application will show you how you can create a custom application for setting the system time. 
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
+
+##Requirements
+Android API 19 must be installed via the SDK Manager before attempting to load this sample. 
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

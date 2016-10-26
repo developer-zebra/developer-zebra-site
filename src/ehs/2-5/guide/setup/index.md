@@ -237,12 +237,12 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 
 &#53;. <b>Tap Install</b>:
 
-<img alt="" style="height:350px" src="ehs_installer.png"/>
+<img alt="" style="height:350px" src="ehs_2.5_installer.png"/>
 <br>
 
 &#54;. After installation, <b>tap Open</b>:
 
-<img alt="" style="height:250px" src="app_installed.png"/>
+<img alt="" style="height:250px" src="ehs_installed.png"/>
 If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home Screen' from the App Drawer and proceed.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
@@ -385,16 +385,16 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b
 <img alt="" style="height:350px" src="app_settings.png"/>
 <br>
 
-&#51;. Locate and <b>Tap EHS Installer</b>:
-<img alt="" style="height:350px" src="app_mgr.png"/>
+&#51;. Locate and <b>Tap Enterprise Home Screen</b>:
+<img alt="" style="height:350px" src="ehs_in_app_mgr.png"/>
 <br>
 
 &#52;. <b>Tap the Uninstall button</b>:
-<img alt="" style="height:350px" src="app_uninstall.png"/>
+<img alt="" style="height:350px" src="ehs_uninstall.png"/>
 <br>
 
 &#53;. <b>Click OK</b> to confirm:
-<img alt="" style="height:350px" src="app_uninstall_confirm.png"/>
+<img alt="" style="height:350px" src="ehs_uninstall_confirm.png"/>
 <br>
 
 Manual uninstallation of EHS is now complete. 

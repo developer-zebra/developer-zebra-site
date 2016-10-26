@@ -1,5 +1,5 @@
 ---
-csp: gprsmgr
+csp: persistmgr
 title: Examples
 type: text
 order: 99

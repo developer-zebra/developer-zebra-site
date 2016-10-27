@@ -1,8 +1,8 @@
 ---
 title: EMDKResults.STATUS_CODE
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 Defines all the status codes the library returns.
 
@@ -81,5 +81,9 @@ Process profile was a success.
 Process profile had mixed results.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
+
+
+
+
 
 

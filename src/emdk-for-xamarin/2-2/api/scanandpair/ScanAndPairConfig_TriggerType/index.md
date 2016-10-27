@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairConfig.TriggerType
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 Provides the list of supported trigger types.
 
@@ -13,10 +13,12 @@ Provides the list of supported trigger types.
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType
 
@@ -24,6 +26,7 @@ Provides the list of supported trigger types.
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType[]
@@ -38,5 +41,9 @@ Hardware trigger needs to be manually pressed to turn ON the scanner
 Scanner is turned ON automatically and no need to press any triggers
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType
+
+
+
+
 
 

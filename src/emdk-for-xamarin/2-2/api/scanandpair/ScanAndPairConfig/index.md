@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairConfig
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The ScanAndPairConfig class provides a way to configure the settings to use it in scanAndPair() or scanAnUnpair() methods. These settings must be done before calling the scanAndPair() or scanAnUnpair() methods and do not modify the this while the method is processing its job.
 
@@ -35,5 +35,9 @@ Specifies the notification related information. When using the ScanAndPair() and
 Specifies the scanning related information. The settings provided through this object are used for scanning the barcode. It also exposes the scanned data. NOTE: The maximum allowed length of the barcode that can be scanned is 123 characters.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanInformation
+
+
+
+
 
 

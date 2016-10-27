@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.UsPostNetDecoder
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The UsPostNet class provides access to parameters that are available for the UsPostNet decoder.
 
@@ -14,5 +14,9 @@ The UsPostNet class provides access to parameters that are available for the UsP
 Flag to enable reporting the bar code check digit.
 
 **Type** - System.Boolean
+
+
+
+
 
 

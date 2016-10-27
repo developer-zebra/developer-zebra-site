@@ -1,8 +1,8 @@
 ---
 title: ScanDataCollection
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The ScanDataCollection object contains the scanning result and the collection of ScanData.
 
@@ -27,5 +27,9 @@ Returns the friendly name of scanner for which the data is returned (ex:'Camera'
 This method used to obtain the scanned result in the form of a ScannerResults object.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
+
+
+
+
 
 

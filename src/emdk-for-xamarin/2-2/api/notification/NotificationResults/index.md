@@ -1,8 +1,8 @@
 ---
 title: NotificationResults
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 Defines all the error codes that Notification API returns. 
 
@@ -13,10 +13,12 @@ Defines all the error codes that Notification API returns.
 **public static Symbol.XamarinEMDK.Notification.NotificationResults ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationResults
 
@@ -24,6 +26,7 @@ Defines all the error codes that Notification API returns.
 **public static Symbol.XamarinEMDK.Notification.NotificationResults[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationResults[]
@@ -32,6 +35,7 @@ Defines all the error codes that Notification API returns.
 
 ###Description
 
+        
 
 **Type** - System.String
 ###DeviceAlreadyEnabled
@@ -72,7 +76,12 @@ Error code not defined.
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Value
 
+        
 
 **Type** - System.Int32
+
+
+
+
 
 

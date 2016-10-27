@@ -1,8 +1,8 @@
 ---
 title: Scanner
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 
 Scanner class will represent and provides access to the physical scanner device.
@@ -109,5 +109,9 @@ Returns information about the scanner device.
 Specifies the trigger type for the scanner. It is set to HARD by default.
 
 **Type** - Symbol.XamarinEMDK.Barcode.Scanner.TriggerTypes
+
+
+
+
 
 

@@ -1,8 +1,8 @@
 ---
 title: NotificationManager.DeviceIdentifier
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 Defines specific notification devices of each type.
 
@@ -13,10 +13,12 @@ Defines specific notification devices of each type.
 **public static Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier
 
@@ -24,6 +26,7 @@ Defines specific notification devices of each type.
 **public static Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier[]
@@ -42,5 +45,9 @@ Default
 External Vibrator
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier
+
+
+
+
 
 

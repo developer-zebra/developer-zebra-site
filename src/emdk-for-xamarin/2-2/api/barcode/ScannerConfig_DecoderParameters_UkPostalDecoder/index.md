@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.UkPostalDecoder
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The UkPostal class provides access to parameters that are available for the UkPostal decoder.
 
@@ -14,5 +14,9 @@ The UkPostal class provides access to parameters that are available for the UkPo
 Transmit UK Postal data with or without the check digit.
 
 **Type** - System.Boolean
+
+
+
+
 
 

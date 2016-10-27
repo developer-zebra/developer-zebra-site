@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.UpcEanParameters
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The UPCEAN class provides access to parameters that are available for the UPC/EAN decoder. UPC/EAN is the family of codes which are used to identify products and UPC EAN Params are the params common to these codes
 
@@ -38,6 +38,10 @@ Enable this parameter to add five leading zeros to decoded EAN-8 symbols to make
 Flag to enable random weight check digit verification.
 
 **Type** - System.Boolean
+###ReducedQuietZone
+Flag to Enable or Disable decoding of UPC barcodes with reduced quiet zones. If you enable, select a OneDQuietZoneLevel to set the effort level.
+
+**Type** - System.Boolean
 ###SecurityLevel
 The scanner of fers four levels of decode security for UPC/EAN bar codes. Select higher security levels for lower quality bar codes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application. Use class ScannerConfig.SecurityLevel..
 
@@ -58,5 +62,9 @@ The supplemental mode. Use enum ScannerConfig.SupplementalMode.
 Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode - UPC EAN is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379 , Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20, default 10).
 
 **Type** - System.Int32
+
+
+
+
 
 

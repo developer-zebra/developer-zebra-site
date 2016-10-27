@@ -1,8 +1,8 @@
 ---
 title: StatusData.ScanAndPairStates
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 Defines the different states of the scan and pir/unpair.
 
@@ -13,10 +13,12 @@ Defines the different states of the scan and pir/unpair.
 **public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 
@@ -24,6 +26,7 @@ Defines the different states of the scan and pir/unpair.
 **public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates[]
@@ -58,5 +61,9 @@ The Bluetooth device is unpaired.
 Scanner is waiting for hard trigger press
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
+
+
+
+
 
 

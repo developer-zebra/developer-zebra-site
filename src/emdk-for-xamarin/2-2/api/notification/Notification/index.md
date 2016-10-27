@@ -1,10 +1,11 @@
 ---
 title: Notification
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -16,15 +17,22 @@ productversion: '2.2'
 
 ###Beep
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.Notification.BeepParams
 ###Led
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.Notification.LEDParams
 ###Vibrate
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.Notification.VibrateParams
+
+
+
+
 
 

@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Matrix2of5Decoder
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The Matrix2of5 class provides access to parameters that are available for the Matrix2of5 decoder.
 
@@ -30,5 +30,9 @@ Transmit Matrix 2 of 5 data with or without the check digit.
 Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verify that the data complies with a specified check digit algorithm.
 
 **Type** - System.Boolean
+
+
+
+
 
 

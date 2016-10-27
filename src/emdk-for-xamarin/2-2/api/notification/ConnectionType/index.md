@@ -1,10 +1,11 @@
 ---
 title: ConnectionType
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -13,10 +14,12 @@ productversion: '2.2'
 **public static Symbol.XamarinEMDK.Notification.ConnectionType ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType
 
@@ -24,6 +27,7 @@ productversion: '2.2'
 **public static Symbol.XamarinEMDK.Notification.ConnectionType[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType[]
@@ -42,5 +46,9 @@ Pluggable
 Undefined
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
+
+
+
+
 
 

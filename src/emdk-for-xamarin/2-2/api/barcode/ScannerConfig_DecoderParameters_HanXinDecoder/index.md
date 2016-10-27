@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.HanXinDecoder
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The HanXin class provides access to parameters that are available for the HanXin decoder.
 
@@ -14,5 +14,9 @@ The HanXin class provides access to parameters that are available for the HanXin
 Check the inverse of the HanXin decoder code. Use class ScannerConfig.HanXinInverse.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse
+
+
+
+
 
 

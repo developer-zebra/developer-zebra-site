@@ -1,8 +1,8 @@
 ---
 title: Notification.VibrateParams
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 This holds the information required for the vibrate notifications.
 
@@ -22,5 +22,9 @@ Vibrate with a given pattern. Pass in an array of integers that are the duration
 The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, the time will be used otherwise pattern takes precedence. The supported values are 0ms to 2550ms for RS6000 and 0ms to 300000ms for External Vibrator. Behavior is undefined for any other value. The RS6000 vibrator will assume the end of sequence when an entry of 0 time is set.
 
 **Type** - System.Int64
+
+
+
+
 
 

@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.ImagerSpecifics
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 ImagerSpecific provides access to the imager specific parameters.
 
@@ -50,9 +50,21 @@ Enables or disables LCD mode. LCD mode enhances the ability of the imager to rea
 Sets the number of times a bar code is read to confirm an accurate decode. Use class ScannerConfig.LinearSecurityLevel.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.LinearSecurityLevel
+###OneDQuietZoneLevel
+This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes. Behavior of the level set to this parameter will vary based on the margin-less decoder selected. Note: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. 
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel
 ###PickList
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode. Use class ScannerConfig.PickList.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList
+###PoorQualityDecodeEffortLevel
+This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel
+
+
+
+
 
 

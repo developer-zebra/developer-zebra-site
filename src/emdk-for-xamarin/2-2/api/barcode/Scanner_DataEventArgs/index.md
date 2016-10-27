@@ -1,8 +1,8 @@
 ---
 title: Scanner.DataEventArgs
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 This class is used internally and not meant for developer applications.
 
@@ -19,5 +19,9 @@ This class is used internally and not meant for developer applications.
         
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection
+
+
+
+
 
 

@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.I2of5Decoder
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 The I2of5 class provides access to parameters that are available for the I2of5 decoder.
 
@@ -22,6 +22,10 @@ Use to set decode lengths. The valid range is 0 to 55.
 Use to set decode lengths. The valid range is 0 to 55.
 
 **Type** - System.Int32
+###ReducedQuietZone
+Flag to Enable or Disable decoding of I2of5 barcodes with reduced quiet zones. If you enable, select a OneDQuietZoneLevel to set the effort level.
+
+**Type** - System.Boolean
 ###Redundancy
 Sets the reader to read the bar code twice before accepting data.
 
@@ -38,5 +42,9 @@ Specifies security level. Use class ScannerConfig.SecurityLevel.
 The check digit type to verify. Use enum ScannerConfig.CheckDigitType.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType
+
+
+
+
 
 

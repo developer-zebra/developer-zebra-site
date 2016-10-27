@@ -23,72 +23,64 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 
 ##What's New
-**Version 2.1**
+**Version 2.2**
 
+1. Xamarin Studio 6.0 Support (Xamarin Studio support is applicable only for Mac System, for Windows Visual studio should be used).
+2. Added support for ET50, ET55 and TC8000 Lollipop (Android 5.1.1) devices.
+3. Added support for MX v6.1 in Profile Manager:
+     * Threat Manager – Added new feature to configure the detection of rooting and to apply a countermeasure when the device is detected as being rooted.
+     * UI Manager – Added new feature to allow or disallow network monitored messages/notifications.
+     * Bluetooth Manager – Added new feature to enable or disable the mobile device discoverability.
+     * GPRS Manager – Added new capability to add APN and set certain parameters such as proxy, server, port.
+     * Wi-Fi – Added new feature to enable or disable the password protected encryption.
+     * Device Administrator – Added new feature to select the type of screen lock such as no password, password, pattern and swipe.
+     * Wireless Manager – Added new feature to specify balance between accuracy and battery life when using GPS.
+     * KeyMapping Manager – Added key mapping support for Rear Button and Grip Trigger 2. 
+4. Enhanced Barcode Manager APIs with the following features:
+     * Added new decoder parameter in Code128, Code39, I2of5 and UpcEan decoders in ScannerConfig.DecoderParams:
+         * ReducedQuietZone - Flag to enable or disable the decoding of margin less barcodes. 
+     * Added new parameter to ScannerConfig.DecoderParams.Gs1DatabarLim:
+         * SecurityLevel - Sets the four levels of decode security for GS1 Databar Lim barcodes.
+     * Added new reader parameters in ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific:
+         * OneDQuietZoneLevel - This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes.
+         * PoorQualityDecodeEffortLevel - This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality.
+     * Added new reader parameters in ScannerConfig.ReaderParams.ReaderSpecific. CameraSpecific:
+         * ViewfinderSize - Sets the View Finder window size in camera scanner as a percentage of full width and full height.
+         * ViewfinderOffsetX - Sets the X axis position of the top left corner of the view finder.
+         * ViewfinderOffsetY - Sets the Y axis position of the top left corner of the view finder.
+         * OneDQuietZoneLevel - This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes.
+         * PoorQualityDecodeEffortLevel - This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality.
+     * Added new reader parameters in ScannerConfig.ReaderParams.ReaderSpecific.LaserSpecific:
+         * AdaptiveScanning - This parameter enables or disables the adaptive scanning.
+         * BeamWidth - Controls the beam width of the laser scanner. Laser beam width can be shortened or widened using this parameter.
+         * OneDQuietZoneLevel - This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes.
+         * PoorQualityDecodeEffortLevel - This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality.
+     * Added new enums in ScannerConfig:
+         * OneDQuietZoneLevel - Describes the effort at which the decoder will attempt to decode margin-less barcodes.
+         * PoorQualityDecodeEffortLevel - Describes the selection of enhancement modes for decoding barcodes of poor or degraded quality.
+         * AdaptiveScanning - Enable or Disable Adaptive scanning.
+         * BeamWidth - Controls the beam width of the laser scanner
+         * GS1LimitedSecurityLevel - Security level addition of GS1 DataBar lim decoder.
+5. Enhanced DataCapture feature in the Profile Manager:
+     * Added new reader parameters:
+         * Aim Timer - Sets the duration (in ms) for timed aim modes.
+         * Viewfinder Size - Sets the View Finder window size in camera scanner as a percentage of full width and full height.
+         * Viewfinder X Offset - Sets the X axis position of the top left corner of the view finder.
+         * Viewfinder Y Offset - Sets the Y axis position of the top left corner of the view finder.
+         * Character Set Selection - Allows the user to convert the barcode data if different from default encoding type.
+     * Added new values for Aim Type:
+         * Timed Hold - Once trigger is pressed, an aiming session is started for a time specified by Aim Timer. When this time expires, a decode session is started and scan beam will be visible. The decode session will remain active until the Beam Timer expires, the trigger is released or a barcode is decoded.
+         * Timed Release - Once the trigger is pressed, an aiming session is started and will continue until the trigger is released. If the Aim Timer is expired when the trigger is released, a decode session will be started with scan beam visible for a remaining time equal to Beam Timer or a barcode is decoded.
+         * Press And Release - The scan beam starts when the trigger is pressed and released. The decode session will remain active until the Beam Timer expires or a barcode is decoded.
+     * Added new values for Character Set Selection:
+         * ISO-8859-1 - Allows the user to convert the barcode data using ISO-8859-1 character encoding type.
+         * Shift_JIS - Allows the user to convert the barcode data using Shift_JIS character encoding type.
+         * UTF-8 - Allows the user to convert the barcode data using UTF-8 character encoding type.
+6. Enhanced the performance of using decodeAudioFeedbackUri in ScannerConfig.ScannerParams in Barcode Manager API.
+7. Added PersonalShopper APIs for supporting MC18 specific features such as Cradle and Diagnostic.
+8. Added support for Serial Communication APIs for devices such as TC75 and TC70. This feature provides simple APIs to enable/disable serial communication port, read and write data to/from remote devices attached.
+9. Added support for TC5X Marshmallow Support.
 
-* Enhanced the EMDKManager > ProfileManager to support simultaneous usage in multiple applications. Refer to the “Usage Notes” for a complete description and restriction on using this feature.
-
-* Added support for the MX v6.0 in the Profile Manager:
-    * Clock
-        * Added new feature to manage Auto Time Zone - whether to automatically acquire time zone from the network.
-        * Added new feature to manage Military Time - whether to use Military (24 hour) time format.
-        * Updated to allow Manual Time Zone setting when Auto Time is On.
-
-    * Camera Manager - Some of the latest devices can now be used to take pictures using Imager. The Camera manager is enhanced to block the Imager from taking pictures.
-    * Analytics Manager - Added new capability to enable or disable features such as File Upload, ANR (Application Not Respond) Info Collection, Ruggedness Info Collection, Feature Usage Info Collection, Restrict SelfUpdate WiFi Only, Device Info Collection and custom feature.
-
-* Added support for the MX v5.2 in the Profile Manager:
-    * Remote Scanner Manager - Ability to manage the remote scanners (tasks such as query the remote scanner information, update firmware, reset, etc). This feature currently supports RS6000 only.
-    * UI Manager - Specify whether the access to QuickSettings will be allowed or not.
-
-* Added support for the following MX v4.4 features in the Profile Manager:
-    * Key Mapping Manager - Enhanced to support P1, P2, P3 and Left/ Right Trigger buttons.
-
-* Enhanced the DataCapture feature in the Profile Manager:
-    * Added support for choosing the remote scanners such as RS507, RS4000 and RS6000. Following are the expected values:
-        * Bluetooth Imager 1 (Please note this value is for use with RS507 only)
-        * Pluggable Laser 1
-        * RS6000 Bluetooth Imager
-    * Added support for controlling the barcode decode notifications:
-        * Aim Mode - Enable/Disable scanner aim during scanning.
-        * Illumination Brightness - Controls illumination brightness of the imager.
-        * Decode Audio Feedback Mode - Controls the Audio feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
-        * Decode LED Feedback Mode - Controls the LED feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
-
-* Added support for new WT6000 Lollipop (Android 5.1.1) devices along with RS4000 and RS6000 scanner support.
-
-* Enhanced Barcode Manager APIs for the following features:
-    * Added support for new pluggable scanner RS4000 to be used with WT6000 device
-        * Added new enum value "PLUGGABLE_LASER1" to BarcodeManager.DeviceIdentifier to specifically select RS4000 Scanner.
-        * Added new enum value "PLUGGABLE_SSI" to ScannerInfo.ConnectionType for RS4000.
-        * Connection event now fired for pluggable scanner RS4000 connection and disconnection. Earlier it was fired only for Bluetooth scanner connection and disconnection.
-    * Added support for new Bluetooth Scanner RS6000 to be used with WT6000 device
-        * Added new enum value "BLUETOOTH_IMAGER_RS6000" to BarcodeManager.DeviceIdentifier to specifically select RS6000 Scanner.
-        * Connection event now fired for Bluetooth scanner RS6000 connection and disconnection.
-    * Added new scanner configurations parameters in ScannerConfig.ScanParams
-        * decodeAudioFeedbackMode - Controls the Audio feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
-        * decodeLEDFeedbackMode - Controls the LED feedback mode to be given by the host device (WT6000) and remote scanner (RS6000) upon barcode decode.
-        * Added new enums: DecodeLEDFeedbackMode, DecodeAudioFeedbackMode.
-        * Connection idle timeout value 0 is supported. Device will not get disconnected when set to 0.
-    * Enhanced the ScannerInfo class for selecting the scanner:
-        * Added new method GetDeviceIdentifier() for selecting the scanner from the supported scanner devices. This method provides the information returned by the GetConnectionType() and GetDeviceType() methods in one call.
-
-*  Added support for Notification APIs to send notifications to remote devices. This feature currently supports RS6000 and pluggable External Vibrator. The Notification APIs can be used for controlling following notifications:
-    * Line Of Sight LED
-    * Beeping
-    * Vibration
-
-* All samples written in Xamarin will support both landscape and portrait devices. Now it works with default/native device orientation. In WT6000, it is working in Landscape mode.
-
-* Added support for ScanAndPair API. The ScanAndPair API provides a simple function to scan the barcode containing MAC address and pair with the Bluetooth remote device using the Serial Port Profile (SPP).
-
-* Enhanced the Password fields in the Profile Manager to accept special characters.
-
-* `Fixed:` BarcodeManager.GetSupportedDevicesInfo() returns outdated ScannerInfo when the remote scanner is connected and disconnected.
-
-* `Fixed:` Using the DataCapture > Data Delivery > Intent field in the ProfileManager is returning the unsupported error.
-
-*  `EMDK OS Update for TC8000 using Xamarin 2.1 is not supported.`
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.HanXinInverse
-layout: guide.html 
-product: EMDK For Xamarin 
-productversion: '2.2' 
+layout: guide.html
+product: EMDK For Xamarin
+productversion: '2.2'
 ---
 This class allows the user to select decoding on inverse HanXin bar codes.
 
@@ -45,5 +45,9 @@ Disables decoding of inverse HanXin symbologies
 Enables decoding of only inverse HanXin symbologies.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse
+
+
+
+
 
 

@@ -405,8 +405,10 @@ The steps above do not remove the `enterprisehomescreen.xml` configuration file 
 
 **To remove an old version of the `enterprisehomescreen.xml` file**:
 
-* Connect the device to a computer with Android Debug Bridge (ADB) installed
-* At a command prompt, execute the following command: 
+&#54;. Connect the device to a computer with Android Debug Bridge (ADB) installed.
+
+&#55;. At a command prompt, execute the following command:
+    
     :::term
     adb shell rm /enterprise/usr/enterprisehomescreen.xml
 
@@ -455,7 +457,7 @@ These instructions apply to remote uninstallation using an organization's own MD
 </table>
 <br>
 
-&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the `/enterprise/usr` folder. This will remove any previous `enterprisehomescreen.xml` file. 
+&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the `/enterprise/usr` folder. This will remove any previous config file. 
 
 &#51;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 

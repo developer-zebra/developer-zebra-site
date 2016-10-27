@@ -248,6 +248,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <br>
 **Zebra continues to support EHS on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean**. [Download EHS 2.4](../../../2-4/download) to target these devices. 
 
+_Note: Enterprise Home Screen does not support localization_. 
+
 #### New Features in EHS 2.5:
 * **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 
 
@@ -255,7 +257,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <br>
 
 [Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.5)
-
 
 ------
 

@@ -725,7 +725,7 @@ The Android Keyguard (also known as the Lock Screen).
 ------
 
 ### Keyguard Camera Disabled
-Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the camera app is enabled on the device, the camera icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the camera app is enabled on the device, the camera icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. **Note**: If no camera shortcut exists on the device lockscreen, use of this tag is not required. 
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
@@ -741,7 +741,7 @@ Controls whether the device camera will be accessible from the Keyguard screen (
 ------
 
 ### Keyguard Search Disabled
-Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the search app is enabled on the device, the search icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the search app is enabled on the device, the search icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. **Note**: If no Search-app shortcut exists on the device lockscreen, use of this tag is not required.
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 
@@ -929,7 +929,7 @@ Permits a custom graphic to be specified in place of the system or default icon 
 
     :::xml
     <application label="WebMenu" package="com.symbol.rdp" activity="com.symbol.rdp.SessionActivity" icon="/enterprise/usr/ehs_data/images/webmenu.bmp"/>
-    
+
 
 ------
 

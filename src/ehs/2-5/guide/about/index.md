@@ -253,6 +253,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **Now links to [Techdocs](../../../../)**, Zebra's premier web site for user-facing documentation--now a standard component on every EHS installation.
 <br>
+
+[Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4).
+
+
 ------
 
 #### Android Marshmallow Notes
@@ -318,8 +322,6 @@ _The User Mode screen with XXL icons_. -->
 * **[Battery and Wi-Fi Quick View](../setup#batteryandwifiquickview) -** displays real-time status of the device battery and Wi-Fi signal on a single screen.
 
 * **[App Icon Label Text Color](../settings#iconlabeltextcolor) -** is now white on a transparent background to improve readability. 
-
-> To implement these features, [download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4).
 
 ------
 

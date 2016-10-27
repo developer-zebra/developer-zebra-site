@@ -400,13 +400,24 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b
 <img alt="" style="height:350px" src="ehs_uninstall_confirm.png"/>
 <br>
 
+####OPTIONAL
+The steps above do not remove the `enterprisehomescreen.xml` configuration file from the `/enterprise/usr` folder, which could effect the behavior of EHS versions installed later.  
+
+**To remove an old version of the `enterprisehomescreen.xml` file**:
+
+* Connect the device to a computer with Android Debug Bridge (ADB) installed
+* At a command prompt, execute the following command: 
+    :::term
+    adb shell rm /enterprise/usr/enterprisehomescreen.xml
+
+
 Manual uninstallation of EHS is now complete. 
 
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
 #### Important
-* **On ET50 and ET55 devices with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via MDM), while in User Mode. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app. See the [Advanced Settings](../settings) section for `enterprisehomescreen.xml` configuration file usage. 
+* **On ET50 and ET55 devices with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via MDM) while in User Mode. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app. See the [Advanced Settings](../settings) section for `enterprisehomescreen.xml` configuration file usage. 
 
 * Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
@@ -444,7 +455,9 @@ These instructions apply to remote uninstallation using an organization's own MD
 </table>
 <br>
 
-&#50;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
+&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the `/enterprise/usr` folder. This will remove any previous `enterprisehomescreen.xml` file. 
+
+&#51;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
 Remote uninstallation of EHS is now complete. 
 

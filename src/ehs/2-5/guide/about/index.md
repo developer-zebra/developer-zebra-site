@@ -262,9 +262,9 @@ _Note: Enterprise Home Screen does not support localization_.
 
 #### Android Marshmallow Notes
 
-* **If Location Permission is disabled** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented in the "Wireless info" screen in EHS (which is accessed from the Admin- or User-mode "hamburger" menu). Location Permission (Settings -> Apps -> EHS -> Permissions) is enabled by default. 
+* **If Location Permission is disabled** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented in the "Wireless info" screen in EHS. Location Permission (Settings -> Apps -> EHS -> Permissions) is enabled by default. 
 
-* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS (which is accessed from the Admin- or User-mode "hamburger" menu).
+* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
 ------
 

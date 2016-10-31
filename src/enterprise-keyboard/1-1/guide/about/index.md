@@ -195,7 +195,7 @@ KitKat and Lollipop
 
 ## How to Get It
 
-**Enterprise Keyboard 1.1 cannot be downloaded separately**; it comes preinstalled on Zebra devices running Android 5.0 Lollipop only. 
+**Enterprise Keyboard 1.1 cannot be downloaded separately**. It's available only as a preinstalled component on Zebra devices running Android 5.x (Lollipop). 
 
 * For information about remotely configuring EKB on a Lollipop device, see [Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr).
 

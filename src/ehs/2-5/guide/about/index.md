@@ -12,6 +12,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
+_Enterprise Home Screen does not support localization_. 
 
 **[What's New in EHS 2.5](#whatsnew)**
 
@@ -107,7 +108,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -124,7 +125,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -243,12 +244,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes)) 
 
 #### EHS 2.5 No Longer Supports:
-* **Devices with Android 4.12 Jelly Bean**
+* **Devices with Android 4.1.2 Jelly Bean**
 * **TC70 with Android 4.4.2 KitKat** (BSP version 112414)
 <br>
 **Zebra continues to support EHS on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean**. [Download EHS 2.4](../../../2-4/download) to target these devices. 
-
-_Note: Enterprise Home Screen does not support localization_. 
 
 #### New Features in EHS 2.5:
 * **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 
@@ -262,13 +261,14 @@ _Note: Enterprise Home Screen does not support localization_.
 
 #### Android Marshmallow Notes
 
-* **If Location Permission is disabled** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented in the "Wireless info" screen in EHS. Location Permission (Settings -> Apps -> EHS -> Permissions) is enabled by default. 
+* **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**, and is enabled by default. 
 
 * **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
 ------
 
 #### Android Lollipop Notes
+_Applies to devices running Android Lollipop 5.x and higher_:
 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
@@ -290,9 +290,7 @@ _Note: Enterprise Home Screen does not support localization_.
 
 * **The Launcher selection pop-up does not appear** when the HOME button is pressed while in User Mode, preventing a user or administrator from easily selecting the default Launcher app on the device. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
 
-* **A permanent system UI crash could occur if EHS is uninstalled remotely (i.e. via MDM), while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing the default EHS configuration file (`enterprisehomescreen.xml`) to the device, or otherwise removing EHS as the selected Launcher app and re-enabling the GoogleNow QuickSearch app.  
-
-* **A permanent system UI crash could occur on devices running Android 5.x Lollipop** if EHS is uninstalled by any means (locally or remotely) while EHS is in User Mode. Before uninstalling EHS, Zebra recommends pushing an EHS configuration file (`enterprisehomescreen.xml`) to the device with the Search app enabled.
+* **A permanent system UI crash could occur if EHS is uninstalled remotely (i.e. via MDM) while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled.
 
 See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
 

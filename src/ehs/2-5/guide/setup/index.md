@@ -252,6 +252,8 @@ If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home S
 
 &#56;. <b>Select Enterprise Home Screen</b> and <b>tap 'Just once'</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting 'Always' makes the selection permanent. 
 
+**Note: On ET50 and ET55 devices with Google Mobile Services (GMS)**, the Launcher selection pop-up does not appear when the HOME button is pressed while in User Mode. **To avoid this issue, switch to Admin Mode and press the HOME button**; the pop-up appears and the default Launcher app can be selected. 
+
 &#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue or select 'Always' to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
 
 ### Select Apps for User Mode 
@@ -373,7 +375,7 @@ The capabilities of MDM systems vary. Please refer to the MDM documentation for 
 ## Uninstallation
 
 #### Important
-**On ET50/ET55 devices running Android 5.x Lollipop with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled while in User Mode. This applies to local and remote operations (i.e. via MDM). Before uninstalling EHS, Zebra recommends pushing an EHS configuration file (`enterprisehomescreen.xml`) to the device with the Search app enabled. See the [Advanced Settings](../settings) section for `enterprisehomescreen.xml` configuration file usage. 
+**On ET50/ET55 devices running Android 5.x Lollipop with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for `enterprisehomescreen.xml` configuration file usage. 
 
 ### Manual Uninstallation
 **Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 

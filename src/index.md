@@ -59,11 +59,11 @@ products:
     sections:
       - title: About
         url: /ehs/2-5/guide/about
-      - title: Getting Started
-        url: /ehs/2-5/guide/gettingstarted
-      - title: Basic Setup
+      - title: Setup
         url: /ehs/2-5/guide/setup
-      - title: Advanced Features
+      - title: Advanced Settings
+        url: /ehs/2-5/guide/settings
+      - title: Special Features
         url: /ehs/2-5/guide/features
       - title: Download
         url: /ehs/2-5/download

@@ -243,18 +243,18 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 &#54;. After installation, <b>tap Open</b>:
 
 <img alt="" style="height:350px" src="ehs_installed.png"/>
-If 'Done' was accidentally selected instead of 'Open,' launch 'Enterprise Home Screen' from the App Drawer and proceed.
+If "Done" was accidentally selected instead of "Open," launch "Enterprise Home Screen" from the App Drawer and proceed.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
 
 <img alt="" style="height:250px" src="select_home_app.png"/>
 <br>
 
-&#56;. <b>Select Enterprise Home Screen</b> and <b>tap 'Just once'</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting 'Always' makes the selection permanent. 
+&#56;. <b>Select Enterprise Home Screen</b> and <b>tap "Just once"</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting "Always" makes the selection permanent. 
 
-**Note: On ET50 and ET55 devices with Google Mobile Services (GMS)**, the Launcher selection pop-up does not appear when the HOME button is pressed while in User Mode. **To avoid this issue, switch to Admin Mode and press the HOME button**; the pop-up appears and the default Launcher app can be selected. 
+> **Note: On ET50 and ET55 devices with Google Mobile Services (GMS)**, the Launcher selection pop-up does not appear when the HOME button is pressed while in User Mode. To avoid this issue, switch to Admin Mode and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
 
-&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue or select 'Always' to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
+&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue or select "Always" to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
 
 ### Select Apps for User Mode 
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 

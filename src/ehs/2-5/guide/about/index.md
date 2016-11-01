@@ -239,9 +239,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 #### EHS 2.5 Now Supports:
 
 * **TC51 Smartphone Mobile Computer** running Android Marshmallow 6.0.1 (see [Android Marshmallow Notes](#androidmarshmallownotes))
-* **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
-* **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes))
-* **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android Lollipop Notes](#androidlollipopnotes)) 
+* **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android L and M Notes](#androidlandmnotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
+* **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android L and M Notes](#androidlandmnotes))
+* **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android L and M Notes](#androidlandmnotes)) 
 
 #### EHS 2.5 No Longer Supports:
 * **Devices with Android 4.1.2 Jelly Bean**
@@ -259,16 +259,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ------
 
-#### Android Marshmallow Notes
-
-* **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**, and is enabled by default. 
-
-* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
-
-------
-
-#### Android Lollipop Notes
-_Applies to devices running Android Lollipop 5.x and higher_:
+#### Android L and M Notes 
+**_These apply to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
@@ -281,6 +273,13 @@ _Applies to devices running Android Lollipop 5.x and higher_:
 * **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+
+#### Android Marshmallow Notes
+**_These apply only to Android 6.x Marshmallow_**:
+
+* **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
+
+* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
 ------
 
@@ -298,7 +297,7 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 
 #### New in EHS 2.4
 
-* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android Lollipop Notes](#androidlollipopnotes)) 
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android L and M Notes](#androidlandmnotes)) 
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 

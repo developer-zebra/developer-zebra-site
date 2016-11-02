@@ -737,7 +737,9 @@ Applies only if **_all_** of the following conditions are true:
 * The camera icon is visible on the Keyguard screen 
 * The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
-Unless **_all four_** of the above conditions are true, the value in this tag is ignored. **Note**: If no camera shortcut exists on the device lockscreen, or if the camera app is not present in User Mode, use of this tag is not required. 
+Unless **_all four_** of the above conditions are true, the value in this tag is ignored. Note: If no camera shortcut exists on the device lockscreen, or if the camera app is not present in User Mode, use of this tag is not required. 
+
+**To prevent use of the camera, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen**.
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
@@ -762,7 +764,9 @@ Applies only if **_all_** of the following conditions are true:
 * The search icon is visible on the Keyguard screen 
 * The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
-Unless **_all four_** of the above conditions are true, the value in this tag is ignored. **Note: If no search-app shortcut exists on the device lockscreen, or if the search app is not present in User Mode, use of this tag is not required**.
+Unless **_all four_** of the above conditions are true, the value in this tag is ignored. Note: If no search-app shortcut exists on the device lockscreen, or if the search app is not present in User Mode, use of this tag is not required. 
+
+**To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 

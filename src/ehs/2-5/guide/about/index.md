@@ -275,7 +275,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 #### Android Marshmallow Notes
-**_These apply only to Android 6.x Marshmallow_**:
+**_These apply to Android 6.x Marshmallow only_**:
 
 * **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
 

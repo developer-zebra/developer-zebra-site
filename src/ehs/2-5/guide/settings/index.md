@@ -22,7 +22,7 @@ This section describes important interactions between EHS and the `enterprisehom
 * The config file is stored in the `/enterprise/usr` directory on the device. (does not apply to [Secure Mode](../features#securemode))
 * This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
-* The file is <b>accessible via Android Debug Bridge (ADB)</b> 'pull' and 'push' commands. 
+* The file is <b>accessible via Android Debug Bridge (ADB)</b> "pull" and "push" commands. 
 
 > <b>Note</b>: Use caution when exposing File Browser to users; it can be used to manipulate the EHS config file and change security or other settings.
 
@@ -30,7 +30,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 ##### Using ADB
 
-The Android Debug Bridge (ADB) is by far the most efficient way to work through the 'pull-edit-push-test' cycle for configuring and testing changes to EHS settings through the `enterprisehomescreen.xml` file. The process requires a Mac or Windows PC that's connected via USB to a device with EHS installed. For help with software setup, please refer to [Setup Guide](../setup). 
+The Android Debug Bridge (ADB) is by far the most efficient way to work through the "pull-edit-push-test" cycle for configuring and testing changes to EHS settings through the `enterprisehomescreen.xml` file. The process requires a Mac or Windows PC that's connected via USB to a device with EHS installed. For help with software setup, please refer to [Setup Guide](../setup). 
 
 From a computer connected to a target device that has EHS installed: 
 
@@ -105,7 +105,7 @@ To look inside the config file on a device:
 &#51;. <b>Select "Open as.."</b> to select a viewer and <b>hit Launch</b>:
 <img alt="" style="height:350px" src="open_as.png"/>
 <br>
-It may be necessary to also tap 'txt' to specify the extension type.  
+It may be necessary to also tap "txt" to specify the extension type.  
 
 &#51;. The config file will open in the Android HTML Viewer:
 <img alt="" style="height:350px" src="html_viewer.png"/>
@@ -685,7 +685,7 @@ Controls whether the device will automatically reboot when EHS is launched for t
 ------
 
 ### Airplane Option Disabled
-Controls whether the device can be put into 'airplane mode' from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. 
+Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. 
 
 <img alt="" style="height:350px" src="airplane_disable.png"/>
 
@@ -701,14 +701,17 @@ Controls whether the device can be put into 'airplane mode' from the Power menu 
 ------
 
 ### Bypass Keyguard
-Controls whether the Keyguard screen (also known as the 'Lock Screen') is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
+Controls whether the Keyguard screen (also known as the "Lock Screen") is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
 
->**On Android L: The Bypass Keyguard feature fails to unlock the screen after rebooting a device running Android L**.
+**Notes** 
 
-<b>Note: On devices that employ MX Multi-user features, a setting of 1 for this tag will prevent the multi-user login screen from being displayed</b>. Please see to important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+* **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
+
+* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent the multi-user login screen from being displayed**. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
-The Android Keyguard (also known as the Lock Screen).  
+_The Android Keyguard (also known as the Lock Screen)_.
+<br>  
 
 <img alt="" style="height:350px" src="bypass_keyguard.png"/>
 <br> 
@@ -725,7 +728,16 @@ The Android Keyguard (also known as the Lock Screen).
 ------
 
 ### Keyguard Camera Disabled
-Controls whether the device camera will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the camera app is enabled on the device, the camera icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. **Note**: If no camera shortcut exists on the device lockscreen, use of this tag is not required. 
+Controls whether the device camera will be accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+
+Applies only if **_all_** of the following conditions are true:
+
+* The camera app is enabled on the device
+* The Keyguard screen is in "Swipe" mode 
+* The camera icon is visible on the Keyguard screen 
+* The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
+
+Unless **_all four_** of the above conditions are true, the value in this tag is ignored. **Note**: If no camera shortcut exists on the device lockscreen, or if the camera app is not present in User Mode, use of this tag is not required. 
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
@@ -741,7 +753,16 @@ Controls whether the device camera will be accessible from the Keyguard screen (
 ------
 
 ### Keyguard Search Disabled
-Controls whether the Search app will be accessible from the Keyguard screen (also known as the 'Lock Screen'). Applies only if the search app is enabled on the device, the search icon is visible on the Keyguard, and the Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag; otherwise ignored. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. **Note**: If no Search-app shortcut exists on the device lockscreen, use of this tag is not required.
+Controls whether the Search app will be accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+
+Applies only if **_all_** of the following conditions are true:
+
+* The search app is enabled on the device
+* The Keyguard screen is in "Swipe" mode 
+* The search icon is visible on the Keyguard screen 
+* The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
+
+Unless **_all four_** of the above conditions are true, the value in this tag is ignored. **Note: If no search-app shortcut exists on the device lockscreen, or if the search app is not present in User Mode, use of this tag is not required**.
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 

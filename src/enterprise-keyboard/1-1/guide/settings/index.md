@@ -2,14 +2,14 @@
 title: Enterprise Keyboard Customization
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '1.0'
+productversion: '1.1'
 ---
 
 ## Overview
 
 Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. <!--Terms can saved and mass-deployed using Zebra's Mobility Extensions (MX) and [StageNow](/stagenow/2-2/about/) tools. -->
+Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
 
 ## Customizing Keyboard Settings
 
@@ -126,11 +126,7 @@ The Personal dictionary can be used to store terms specific to a particular indu
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
 * When displayed, longer terms and phrases might be injected with an ellipsis (...) in the suggestion bar. 
 * Spelling suggestions do not appear with all field types.  
-<<<<<<< HEAD
-<!-- * For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool (not available in EKB 1.0).-->
-=======
-* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](/stagenow/2-2/about/) tool. 
->>>>>>> TUT-8005
+* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
 
 #####Add a term to the Personal dictionary: 
 
@@ -235,7 +231,7 @@ Remapping panel shows current settings of remappable keys:
 ------
 
 ## DataWedge
-The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](/datawedge/5-0/guide/about), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
+The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](../../../../), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
 
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
@@ -256,4 +252,10 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 
 For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
-Also refer to the [DataWedge User Guide](/datawedge/5-0/guide/about) for complete documentation.
+Also refer to the [DataWedge User Guide](../../../../) for complete documentation.
+
+------
+
+## Tab-Key Navigation
+The Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. On apps that are unaware of this context, the Enterprise Keyboard Tab key might input spaces instead of moving the cursor. For HTML apps, Zebra recommends using the Tab key to navigate from field to field. For help with native-app navigation, please refer to Android developer docs for information about [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html).
+

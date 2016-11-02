@@ -525,6 +525,6 @@ _Data Capture Plus shown in maximized mode_.
 
 Other DataWedge guides: 
 * [IPWedge Guide](../ipwedge)
-* [DataWedge API for Android](../api)
-* [DataWedge Capture API](../capture)
+* [DataWedge Data Capture API for Android](../api) <!--
+* [DataWedge Capture API](../capture) -->
 

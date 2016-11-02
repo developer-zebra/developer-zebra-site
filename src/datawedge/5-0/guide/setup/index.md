@@ -122,7 +122,7 @@ The app will now use DataWedge for barcode data acquisition.
 On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 
 <img style="height:350px" src="01a_ProfilesScreen.png"/>
 
-**Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
+**Note**: If DataWedge had been opened previously, it will reopen to the last screen used. If necessary, press BACK until the Profiles screen appears.  
 <br>
 
 &#50;. **Tap the "hamburger"** menu and **select -> New profile**.  

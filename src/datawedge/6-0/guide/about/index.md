@@ -47,7 +47,7 @@ _Launcher icon for Android 4.x_
 <br>
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
-_Launcher icon for Android 5.x_
+_Launcher icon for Android 6.x_
 <br>
 
 &#50;. **Tap the "hamburger" menu**. The DataWedge menu appears: 
@@ -56,14 +56,12 @@ _Launcher icon for Android 5.x_
 
 &#51;. **Tap About**. The "About DataWedge" screen appears. The DataWedge version number is highlighted in the image below. Notice that the Scanner Framework version also is shown.     
 <img style="height:350px" src="03_datawedge_about_screen.png"/>
-_The 'About DataWedge' box showing version 3.1.10_. 
+_The "About DataWedge" box showing version 6.0.1_. 
 <br>
 
+&#52;. If the DataWedge version on the device is different than that of this guide, visit the [Zebra support site](https://www.zebra.com/us/en/support-downloads.html) and download a device-specific Integrator Guide for reference. 
 
-&#52;. If the DataWedge version on the device is different than that of this guide, Zebra recommends downloading a device-specific Integrator Guide (see below) for reference. 
-
-------
-
+<!--
 #### Download an Integrator Guide
 For each of its devices, Zebra publishes an Integrator Guide containing information specific to that device. For products that include DataWedge, **the Integrator Guide includes a chapter covering only those DataWedge capabilities available on the device**. A search for the term "integrator" at the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=integrator) yields a result similar to the image below. Narrow the seach by adding the device model. 
 <br>
@@ -72,12 +70,14 @@ For each of its devices, Zebra publishes an Integrator Guide containing informat
 _The Zebra Support Central site showing search results for the search term "integrator_" 
 <br>
 
-<!--
+
 
 #### Update DataWedge (Windows only)
 **DataWedge is part of the device OS image** and relies on specific components built into that image. It cannot be downloaded separately or updated without also updating the entire device, a process that **can result in loss of user data and/or user-installed applications**. It should therefore be considered only after all other options have been eliminated. **Zebra recommends consulting with a Zebra partner before upgrading a device OS image**. 
 
 **This option is not available for Android devices**. 
 -->
-
-> Learn more about DataWedge. See the [DataWedge Setup Guide](../setup) and the [DataWedge Demo app](../demo). 
+> Related Guides: 
+> 
+> * [DataWedge Setup Guide](../setup)
+> * [DataWedge Demo app](../demo)

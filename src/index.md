@@ -79,14 +79,16 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-1/guide/about
+        url: /enterprise-keyboard/1-2/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-1/guide/setup
+        url: /enterprise-keyboard/1-2/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-1/guide/settings
+        url: /enterprise-keyboard/1-2/guide/settings
       - title: Download
-        url: /enterprise-keyboard/1-0/download
+        url: /enterprise-keyboard/1-2/download
     versions:
+     - url: enterprise-keyboard/1-2/guide/about
+        label: '1.2'
       - url: enterprise-keyboard/1-1/guide/about
         label: '1.1'
       - url: enterprise-keyboard/1-1/guide/about

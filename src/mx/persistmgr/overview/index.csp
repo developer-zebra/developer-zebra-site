@@ -9,7 +9,19 @@ Persist Manager allows administrators to designate Request XML documents as Pers
 
 PersistMgr works by assigning a name and version number to a Request XML document to uniquely identify it. An optional order number provides control over when it is resubmitted relative to other Persistent documents. Administrators also can specify whether to persist a document based on its ability to be submitted without errors. 
 
-On Zebra Android devices, an Enterprise Reset returns the operating system to its factory state while preserving the `/enterprise` partition, where persistent content is stored (a Factory Reset eliminates this partition). The Enterprise Reset is designed to return the device to an enterprise-defined default state, which is generally determined by the contents of the `/enterprise` partition. When using the MDM Tool Kit, an MDM Agent can control the Enterprise-defined state, and hence the content that will persist following an Enterprise Reset. This is done by directly controlling which MDM-deployed content is stored in the `/enterprise` folder and by controlling which Request XML documents are persistent.
+On Zebra Android devices, an Enterprise Reset returns the operating system to its factory state while preserving the `/enterprise` partition, where persistent content is stored (a Factory Reset eliminates this partition). The Enterprise Reset is designed to return the device to an enterprise-defined default state, which is generally determined by the contents of the `/enterprise` partition. When using the MDM Tool Kit, an MDM Agent can control the Enterprise-defined state by controlling the content that will persist following an Enterprise Reset and determining which Request XML documents will be submitted.
+
+## Main Functionality
+
+* Make a Request XML document Persistent
+* Reapply the settings of a Request XML document
+* Select the order of settings reapplication
+* Prevent access to all device inputs until all settings are reapplied 
+* Persist a Request XML document only if it generated no errors
+* Make a Persistent Request XML document Non-persistent
+* Enable or Disable a Persistent Request XML document
+* List the Persistent Request XML documents currently on the device
+* Show the values of a Persistent Request XML document on the device
 
 ##Common Uses
 
@@ -39,15 +51,3 @@ This query also could be useful for troubleshooting interactions between multipl
 
 ### Security Note
 After an Enterprise Reset, <!--there is a period of time before Persistent settings are fully reapplied that a device could be vulnerable. To prevent unwanted intrusion,--> some Zebra devices temporarily disable keyboard and touch input as well as the operation of Bluetooth, SD Card, USB and Wi-Fi systems. Once all persisted settings are reapplied, the device relaxes these "lock-downs" and returns protection of the device to configurations and applications defined by the administrator.
-
-## Main Functionality
-
-* Make a Request XML document Persistent
-* Reapply the settings of a Request XML document
-* Select the order of settings reapplication
-* Prevent access to all device inputs until all settings are reapplied 
-* Persist a Request XML document only if it generated no errors
-* Make a Persistent Request XML document Non-persistent
-* Enable or Disable a Persistent Request XML document
-* List the Persistent Request XML documents currently on the device
-* Show the values of a Persistent Request XML document on the device

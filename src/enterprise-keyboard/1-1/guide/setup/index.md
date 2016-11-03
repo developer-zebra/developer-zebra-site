@@ -20,7 +20,9 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Activation section](#automatedactivation) later in this guide. 
 
 <b>To quickly determine whether Enterprise Keyboard has been activated</b>: 
+
 &#49;. Bring up the Android keyboard and long-press the spacebar. 
+
 &#50;. If "Enterprise Keyboard" appears in a screen like the one below, tap its radio button (arrow) to set it as the default input device:
 <img alt="" style="height:150px" src="2a_choose_input.png"/>
 <br>

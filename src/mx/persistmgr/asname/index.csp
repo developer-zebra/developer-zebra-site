@@ -11,8 +11,8 @@ parm:
 
 ---
 
-This parm allows you to specify the name to be assigned to a Request XML document when it is made Persistent and/or to identify a currently existing Persistent Request XML document that should be operated upon. When identifying a currently existing Persistent Request XML document, this value is used in conjunction with the values of Persist As Version and Persist As Order (if specified).
+Used to specify the name to be assigned to a Request XML document when it is made Persistent and/or to identify a currently existing Persistent Request XML document on which to perform a Persist Action. When identifying an existing Persistent Request XML document, this value is used in conjunction with the values of "Persist As Version" and "Persist As Order" (if specified).
 
-Parm value input rules: 
+**Parm value input rules**: 
 
-* String with a minimum size of 1 character and a maximum size of 255 characters
+* String from 1-255 characters

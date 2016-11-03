@@ -17,7 +17,7 @@ parm:
     - code: false
       name: False
       mx: "4.2"
-      description: Causes the Request XML document in which this PersistMgr Feature is contained to not be made Persistent if any top-level characteristic errors are reported in the Result XML returned when the Request XML document is submitted.
+      description: Prevents the Request XML document in which this PersistMgr Feature is contained from being made Persistent if any top-level characteristic errors are reported in the Result XML returned when the Request XML document is submitted.
 ---
 
-This parm allows you specify whether to make a Request XML document Persistent, make a Persistent Request XML document Non-persistent, or Enable or Disable a Persistent Request XML document.
+Controls whether a Request XML document will be made Persistent if that document returned top-level characteristic errors in the Result XML when submitted.

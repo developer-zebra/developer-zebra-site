@@ -117,11 +117,11 @@ The app will now use DataWedge for barcode data acquisition.
 
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
 <img style="height:350px" src="01_datawedge_launcher.png"/>
-_Launcher icon for Android 4.x_
+_Launcher icon for DataWedge 3.x_
 <br>
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
-_Launcher icon for Android 6.x_
+_Launcher icon for DataWedge 6.x_
 <br>
 
 On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 

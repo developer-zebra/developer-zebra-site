@@ -11,6 +11,8 @@ PersistMgr works by assigning a name and version number to a Request XML documen
 
 On Zebra Android devices, an Enterprise Reset returns the operating system to its factory state while preserving the `/enterprise` partition, where persistent content is stored (a Factory Reset eliminates this partition). The Enterprise Reset is designed to return the device to an enterprise-defined default state, which is generally determined by the contents of the `/enterprise` partition. When using the MDM Tool Kit, an MDM Agent can control the Enterprise-defined state by controlling the content that will persist following an Enterprise Reset and determining which Request XML documents will be submitted.
 
+>**On KitKat devices**, PersistMgr will be inoperable following an MX upgrade until the device is rebooted. 
+
 ## Main Functionality
 
 * Make a Request XML document Persistent

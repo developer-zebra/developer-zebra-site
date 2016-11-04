@@ -358,7 +358,7 @@ When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver
 The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
+<!-- * `Intent.getSerializableExtra()` -->
 
 The call above can be used with the following String tags:
 
@@ -372,7 +372,7 @@ The call above can be used with the following String tags:
 The MSR-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()` 
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can be used with the following String tags:
 
@@ -395,11 +395,11 @@ The data from the MSR tracks is concatenated and sent out as a byte array. The S
 The SimulScan-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
 * `Intent. getParcelableArrayListExtra()`
 * `Bundle.getInt()`
 * `Bundle.getString()`
 * `Bundle.getByteArray()`
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can use the following String tags:
 

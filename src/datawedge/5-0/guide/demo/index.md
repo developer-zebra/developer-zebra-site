@@ -22,9 +22,9 @@ The DWDemo app provides a menu of available scanning input devices, making it ea
 <img style="height:350px" src="02_dwdemo_device_selector.png"/>
 <br>
 **Device controls** (from left to right):
-* **Lightning Bolt -** toggles the Camera Flash on and off (active when Camera is selected). 
+* **Lightning Bolt -** toggles the Camera Flash on and off (active when Camera is selected); controls illumination mode for other devices. 
 * **Input Device -** permits selection of Camera, Scanner or Bluetooth device (if no Bluetooth device is connected, selecting Bluetooth will attempt to pair). 
-* **Camera input type -** toggles between image and barcode data capture (active when Camera is selected).
+* **Camera input type -** toggles between image and barcode data capture (active when Camera is selected; varies by device).
 * **DWDemo "hamburger" menu -** invokes "About" panel and DWDemo Profile (see below).
 
 ------

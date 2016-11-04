@@ -41,10 +41,12 @@ _**This guide describes DataWedge for Android. Features and usage of Windows ver
 
 **To determine which DataWedge version is installed on a device**:
 
+<!--
 &#49;. On the device, locate and **tap the DataWedge icon** in the Launcher screen or App Drawer: 
 <img style="height:350px" src="01_datawedge_launcher.png"/>
 _Launcher icon for DataWedge 3.x_
 <br>
+-->
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
 _Launcher icon for DataWedge 6.x_

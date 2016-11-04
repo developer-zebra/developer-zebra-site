@@ -115,10 +115,12 @@ The app will now use DataWedge for barcode data acquisition.
 
 ####Create a New Profile:
 
+<!--
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
 <img style="height:350px" src="01_datawedge_launcher.png"/>
 _Launcher icon for DataWedge 3.x_
 <br>
+-->
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
 _Launcher icon for DataWedge 6.x_

@@ -383,7 +383,7 @@ _The ADF Rule screen from Android L (with no configured actions)._
 * All data acquired through the Profile will be processed according to the Actions defined in the Rule before being transferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
-#### Non-printable Characters
+### Non-printable Characters
 When setting up an ADF data processing rule to find or replace control characters, extended ASCII characters or other non-printable characters, DataWedge supports the use of the **\xNN notation** to specify hex value of the character and **\uNNNN notation** for Unicode values. 
 
 For example, if the captured data contains the Group separator (GS) character (\x1D) and data on either side of the separator must be acquired, the following ADF actions can be added to the ADF rule: 
@@ -569,7 +569,7 @@ It is possible to take pictures and capture barcode data using the same applicat
 <img style="height:350px" src="datawedge_enable-disable.png"/>
 <br>
 
-For imformation about accessing DataWedge programmatically, see the [Data Capture API Guide](../api). 
+To learn how to access DataWedge programmatically, see the [Data Capture API Guide](../api). 
 
 <!--
 

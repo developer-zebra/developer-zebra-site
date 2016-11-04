@@ -90,9 +90,9 @@ var index_generate = function(folder){
 }
 
 <<<<<<< HEAD
-      index_generate("enterprise-keyboard/1-1");
-=======
       index_generate("datawedge/6-0");
->>>>>>> datawedge-6.0
+=======
+      index_generate("ehs/2-5");
+>>>>>>> ehs-2.5
       
 

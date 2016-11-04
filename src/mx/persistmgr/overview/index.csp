@@ -50,4 +50,7 @@ This query also could be useful for troubleshooting interactions between multipl
 **This can be useful for troubleshooting scenarios**. PersistMgr can be used to Disable a Persistent Request XML document, or to Enable one that has been Disabled (Request XML documents made Persistent are Enabled by default). Persistent Request XML documents that are Disabled will remain on the device following an Enterprise Reset, but their settings will not be reapplied. By selectively Disabling and Enabling Request XML documents and their corresponding settings, certain device conflicts can be isolated following an Enterprise Reset until the cause of a conflict is discovered.
 
 ### Security Note
-After an Enterprise Reset, <!--there is a period of time before Persistent settings are fully reapplied that a device could be vulnerable. To prevent unwanted intrusion,--> some Zebra devices temporarily disable keyboard and touch input as well as the operation of Bluetooth, SD Card, USB and Wi-Fi systems. Once all persisted settings are reapplied, the device relaxes these "lock-downs" and returns protection of the device to configurations and applications defined by the administrator.
+After an Enterprise Reset, <!--there is a period of time before Persistent settings are fully reapplied that a device could be vulnerable. To prevent unwanted intrusion,--> some Zebra devices temporarily disable the keyboard, touch screen and <!-- operation of Bluetooth, SD Card, Wi-Fi--> USB port, and display a message during this time. Once all persisted settings are reapplied, the device relaxes these "lock-downs" and returns protection of the device to configurations and applications defined by the administrator.
+
+-----
+

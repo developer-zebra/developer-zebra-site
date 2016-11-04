@@ -171,7 +171,7 @@ products:
         url: /mx/compatibility
     versions:
       - url: mx/compatibility
-        label: '6.0'
+        label: '6.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about

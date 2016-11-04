@@ -8,7 +8,7 @@ productversion: '1.2'
 ## Overview
 Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
 
-Enterprise Keyboard 1.1 (and higher) can be activated and configured manually on the device, programmatically through [EMDK for Android](../../../../emdk-for-android) development tools or remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service or through a company's own mobile device management (MDM) system (if supported by that system). 
+Enterprise Keyboard 1.1 (and higher) can be activated and configured manually on the device, programmatically through [EMDK for Android](../../../../emdk-for-android) development tools, remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service or through a company's own mobile device management (MDM) system (if supported by that system). 
 
 Zebra's keyboard also makes use of the Android Personal Dictionary for spelling suggestions and corrections, and permits customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
 
@@ -24,8 +24,35 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
+### New in Enterprise Keyboard 1.2
+
+<b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
+<img alt="" style="height:350px" src="calculator_mode.png"/>
+<br>
+
+<b>A Telephone Mode</b> arranges numerical keys like a phone:  
+<img alt="" style="height:350px" src="telephone_mode.png"/> 
+<br>
+
+<b>New portrait layouts cater to tablets and wearables</b> such as the ET50/ET55 and WT6000:  
+<img alt="" style="height:250px" src="alpha_portrait.png"/>
+<br>
+<img alt="" style="height:250px" src="numeric_portrait.png"/>
+<br>
+
+<b>A Flick Enable/Disable switch</b> simplifies control of this time-saving input feature:  
+<img alt="" style="height:350px" src="flick_enable-disable.png"/> 
+<br>
+
+<b>Supports dynamic selection of text- and scan-tab focus</b> to match the desired input:  
+<img alt="" style="height:350px" src="text_input.png"/> 
+<br>
+<img alt="" style="height:350px" src="scan_input.png"/> 
+<br>
+
+
 ### Unique features  
-The Enterprise Keyboard offers the following unique capabilities to help improve input speed and accuracy:  
+All versions of Enterprise Keyboard offer these other unique capabilities to help improve the speed and accuracy of input:  
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:350px" src="sample_1.png"/>
@@ -194,8 +221,10 @@ KitKat and Lollipop
 
 ## How to Get It
 
-**Enterprise Keyboard 1.1 cannot be downloaded separately**. It's available only as a preinstalled component on Zebra devices running Android 5.x (Lollipop). 
+Enterprise Keyboard 1.2 comes preinstalled on Zebra devices running Android 5.0 Lollipop and higher, and can be downloaded as an OS update for Zebra MC40, TC70 and TC75 devices running Android 4.4 KitKat.
 
-* For information about remotely configuring EKB on a Lollipop device, see [Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr).
+* [Download Enterprise Keyboard 1.2](https://www.zebra.com/us/en/support-downloads.html) as an OS update for MC40/TC70/TC75 KitKat devices.
 
-* For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 
+* [Use Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) to remotely configure EKB with EMDK, StageNow or a compatible MDM system.
+
+For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

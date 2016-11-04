@@ -89,6 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("datawedge/6-0");
+      index_generate("ehs/2-5");
       
 

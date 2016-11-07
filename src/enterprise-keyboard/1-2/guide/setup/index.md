@@ -2,11 +2,11 @@
 title: Enterprise Keyboard Setup
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '1.1'
+productversion: '1.2'
 ---
 
 ## Overview
-The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on some KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, please see the [Customize section](../settings). 
+The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on some KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings). 
 
 Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
 
@@ -17,7 +17,7 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
     * Through a company's own mobile device management (MDM) system (if supported by that system) 
 
 ## Manual Activation
-The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please refer to the [Automated Activation section](#automatedactivation) later in this guide. 
+The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please see the [Automated Activation section](#automatedactivation) later in this guide. 
 
 <b>To quickly determine whether Enterprise Keyboard has been activated</b>: 
 
@@ -76,12 +76,12 @@ Following installation, Enterprise Keyboard settings can be changed through the 
 
 &#52;. On the Enterprise Keyboard Preferences panel, <b>tap the setting(s) that require change</b>:
 <img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-Refer to the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
+See the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
 
 ------
 
 ### Automated Activation
-Later versions of Enterprise Keyboard (after v1.0) will offer the ability to be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](../../../../emdk-for-android) software development kit. 
+Enterprise Keyboard 1.1 and higher can be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system (if it supports this capability). Configuration also can be handled programmatically through Zebra's [EMDK for Android](../../../../emdk-for-android) software development kit. 
 
 Actions to be executed on the Android Settings panel:
 1. <b>Open Language and input</b> 
@@ -89,7 +89,7 @@ Actions to be executed on the Android Settings panel:
 3. <b>Select Enterprise Keyboard</b> as the default input device
 4. <b>Select a language</b> (if other than the system default)
 
-Please refer to the respective tool of choice for more information.
+For details, refer to the tool of choice and its documentation.
 
 ## Deactivation
 
@@ -119,4 +119,4 @@ Manual deactivation of Enterprise Keyboard is complete.
 -----
 
 ### Automated Deactivation
-Later versions of Enterprise Keyboard (after v1.0) will offer the ability to be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/../../../../emdk-for-android) or [StageNow](../../../../) tools using the [App Manager](/mx/#app-manager) service. 
+Enterprise Keyboard 1.1 and higher will offer the ability to be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote unstallation can be accomplished through Zebra's [EMDK](/../../../../emdk-for-android) or [StageNow](../../../../) tools using the [App Manager](/mx/#app-manager) service. 

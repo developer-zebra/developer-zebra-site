@@ -262,21 +262,22 @@ Also refer to the [DataWedge User Guide](../../../../) for complete documentatio
 ## Dynamic Input Method 
 **_This feature applies to native apps only_**. 
 
-Enterprise Keyboard 1.2 (and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked in the same way that the keyboard appears when a text fields is in focus. 
+Enterprise Keyboard 1.2 (and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked and the device scanner can be used to populate the field. The keyboard returns when the cursor lands on a text field, and so on. 
 
 **To set the input method as static**: 
 
-* Include the line `android:privateImeOptions=&quot;scan&quot;` in the &lt;EditText&gt; field of the `StaticLayout.xml` file as shown below: 
+* Include the line `android:privateImeOptions="scan"` in the &lt;EditText&gt; field of the `StaticLayout.xml` file as shown below: 
 
 <img alt="" style="height:350px" src="IME_code_placement.png"/>
+_The EditText parameter of the StaticLayout.xml file, in Android Studio. Click on the image to enlarge_.
 <br>
 
 **To set the input method as dynamic**: 
 
-* Calling the `setPrivateImeOptions()` method with “scan” as the parameter: 
+* Call the `setPrivateImeOptions()` method with “scan” as the parameter, as below: 
 	* `editTextTest.setPrivateImeOptions(&quot;scan&quot;)`
 
-**This feature works only from within a native app**. 
+**_This feature applies to native apps only_**. 
 
 ------
 

@@ -49,7 +49,7 @@ This version of Enterprise Keyboard includes the following languages:
 <img alt="" style="height:350px" src="flick_enable-disable.png"/> 
 <br>
 
-<b>Supports dynamic selection of text- and scan-tab focus</b> to match the desired input:  
+<b>Supports [dynamic selection](../settings/#dynamicinputmethod) of text- and scan-tab focus</b> to match the desired input:  
 <img alt="" style="height:350px" src="text_input.png"/> 
 <br>
 <img alt="" style="height:350px" src="scan_input.png"/> 

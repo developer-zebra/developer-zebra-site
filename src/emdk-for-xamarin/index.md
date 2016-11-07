@@ -16,7 +16,7 @@ menu:
         - title: Build Hello EMDK
           url: /emdk-for-xamarin/2-2/tutorial/helloxamarin
         - title: Using Profile Manager
-          url: /emdk-for-xamarin/2-2/guide/profilemanager/about
+          url: /emdk-for-xamarin/2-2/guide/profile-manager
     - title: Tutorials
       items:
         - title: Profile Manager
@@ -61,13 +61,13 @@ menu:
         - title: Analytics Manager
           url: /emdk-for-xamarin/2-2/mx/analytics/
         - title: App Manager
-          url: /emdk-for-xamarin/2-2/mx/appmgr/5-0
+          url: /emdk-for-xamarin/2-2/mx/appmgr/
         - title: Audio Manager
           url: /emdk-for-xamarin/2-2/mx/audiomgr/
         - title: Battery Manager
           url: /emdk-for-xamarin/2-2/mx/batterymgr/
         - title: Browser Manager
-          url: /emdk-for-xamarin/2-2/mx/browsermgr/5-0
+          url: /emdk-for-xamarin/2-2/mx/browsermgr/
         - title: Camera Manager
           url: /emdk-for-xamarin/2-2/mx/cameramgr
         - title: Cellular Manager

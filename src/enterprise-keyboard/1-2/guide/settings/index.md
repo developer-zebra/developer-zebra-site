@@ -85,12 +85,15 @@ The Preferences section controls keypress feedback and other aids to productivit
 
 * <b>Sound on keypress</b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
 
-<!--
-* <b>Popup on keypress</b> displays a pop-up of the key being pressed. A delay can be added in [Advanced settings](#advanced).
--->
-* <b>Show scan tab</b> displays a tab for switching to the scanner for collecting barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+* <b>Popup on keypress</b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
 
-* <b>Voice input key</b> option will appear on GMS-enabled devices only. When checked, will display a key for allowing Enterprise Keyboard to accept spoken input using the mic. 
+* <b>Voice input key</b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
+
+* <b>Show scan tab</b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+
+* <b>Flick</b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
+
+* <b>Numeric (Telephone)</b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
 
 ------
 
@@ -253,6 +256,27 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
 Also refer to the [DataWedge User Guide](../../../../) for complete documentation.
+
+------
+
+## Dynamic Input Method 
+**_This feature applies to native apps only_**. 
+
+Enterprise Keyboard 1.2 (and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked in the same way that the keyboard appears when a text fields is in focus. 
+
+**To set the input method as static**: 
+
+* Include the line `android:privateImeOptions=&quot;scan&quot;` in the &lt;EditText&gt; field of the `StaticLayout.xml` file as shown below: 
+
+<img alt="" style="height:350px" src="IME_code_placement.png"/>
+<br>
+
+**To set the input method as dynamic**: 
+
+* Calling the `setPrivateImeOptions()` method with “scan” as the parameter: 
+	* `editTextTest.setPrivateImeOptions(&quot;scan&quot;)`
+
+**This feature works only from within a native app**. 
 
 ------
 

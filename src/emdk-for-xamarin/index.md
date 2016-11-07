@@ -16,7 +16,7 @@ menu:
         - title: Build Hello EMDK
           url: /emdk-for-xamarin/2-2/tutorial/helloxamarin
         - title: Using Profile Manager
-          url: /emdk-for-xamarin/2-2/guide/profilemanager
+          url: /emdk-for-xamarin/2-2/guide/profile-manager
     - title: Tutorials
       items:
         - title: Profile Manager

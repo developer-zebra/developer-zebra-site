@@ -122,7 +122,7 @@ The app will now use DataWedge for barcode data acquisition.
 On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 
 <img style="height:350px" src="01a_ProfilesScreen.png"/>
 
-**Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
+**Note**: If DataWedge had been opened previously, it will reopen to the last screen used. If necessary, press BACK until the Profiles screen appears.  
 <br>
 
 &#50;. **Tap the "hamburger"** menu and **select -> New profile**.  
@@ -358,7 +358,7 @@ When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver
 The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
+<!-- * `Intent.getSerializableExtra()` -->
 
 The call above can be used with the following String tags:
 
@@ -372,7 +372,7 @@ The call above can be used with the following String tags:
 The MSR-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()` 
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can be used with the following String tags:
 
@@ -395,11 +395,11 @@ The data from the MSR tracks is concatenated and sent out as a byte array. The S
 The SimulScan-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
 * `Intent. getParcelableArrayListExtra()`
 * `Bundle.getInt()`
 * `Bundle.getString()`
 * `Bundle.getByteArray()`
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can use the following String tags:
 
@@ -525,6 +525,6 @@ _Data Capture Plus shown in maximized mode_.
 
 Other DataWedge guides: 
 * [IPWedge Guide](../ipwedge)
-* [DataWedge API for Android](../api)
-* [DataWedge Capture API](../capture)
+* [DataWedge Data Capture API for Android](../api) <!--
+* [DataWedge Capture API](../capture) -->
 

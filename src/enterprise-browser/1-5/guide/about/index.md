@@ -36,7 +36,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 #### New Features
 
-* **[Simplified mass deployment](../keycapture)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
+* **[Simplified mass deployment](../setup/#manualdeployment)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
 
 * **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
 

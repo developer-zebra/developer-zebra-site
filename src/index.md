@@ -58,36 +58,40 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ehs/2-4/guide/about
-      - title: Getting Started
-        url: /ehs/2-4/guide/gettingstarted
-      - title: Basic Setup
-        url: /ehs/2-4/guide/setup
-      - title: Advanced Features
-        url: /ehs/2-4/guide/features
+        url: /ehs/2-5/guide/about
+      - title: Setup
+        url: /ehs/2-5/guide/setup
+      - title: Advanced Settings
+        url: /ehs/2-5/guide/settings
+      - title: Special Features
+        url: /ehs/2-5/guide/features
       - title: Download
-        url: /ehs/2-4/download
+        url: /ehs/2-5/download
     versions:
+      - url: ehs/2-5/guide/about/
+        label: '2.5'
       - url: ehs/2-4/guide/about/
         label: '2.4'
       - url: ehs/2-3/guide/about/
         label: '2.3'
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-0/guide/about
+    url: /enterprise-keyboard/1-1/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-0/guide/about
+        url: /enterprise-keyboard/1-1/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-0/guide/setup
+        url: /enterprise-keyboard/1-1/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-0/guide/settings
+        url: /enterprise-keyboard/1-1/guide/settings
       - title: Download
         url: /enterprise-keyboard/1-0/download
     versions:
-      - url: enterprise-keyboard/1-0/guide/about
+      - url: enterprise-keyboard/1-1/guide/about
+        label: '1.1'
+      - url: enterprise-keyboard/1-1/guide/about
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
@@ -169,7 +173,7 @@ products:
         url: /mx/compatibility
     versions:
       - url: mx/compatibility
-        label: '6.0'
+        label: '6.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about

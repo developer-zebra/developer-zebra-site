@@ -89,6 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("ehs/2-5");
+      index_generate("enterprise-keyboard/1-2");
       
 

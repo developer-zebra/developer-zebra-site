@@ -10,20 +10,22 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/5-0/guide/about
+        url: /datawedge/6-0/guide/about
       - title: Setup
-        url: /datawedge/5-0/guide/setup
+        url: /datawedge/6-0/guide/setup
       - title: Advanced
-        url: /datawedge/5-0/guide/advanced
+        url: /datawedge/6-0/guide/advanced
       - title: Decoders
-        url: /datawedge/5-0/guide/decoders
+        url: /datawedge/6-0/guide/decoders
       - title: IP Output
-        url: /datawedge/5-0/guide/ipwedge
+        url: /datawedge/6-0/guide/ipwedge
       - title: APIs
-        url: /datawedge/5-0/guide/api
+        url: /datawedge/6-0/guide/api
       - title: Demo
-        url: /datawedge/5-0/guide/demo
+        url: /datawedge/6-0/guide/demo
     versions:
+      - url: datawedge/6-0/guide/about
+        label: '6.0'
       - url: datawedge/5-0/guide/about
         label: '5.0'
   - title: Enterprise Browser
@@ -56,56 +58,64 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ehs/2-4/guide/about
-      - title: Getting Started
-        url: /ehs/2-4/guide/gettingstarted
-      - title: Basic Setup
-        url: /ehs/2-4/guide/setup
-      - title: Advanced Features
-        url: /ehs/2-4/guide/features
+        url: /ehs/2-5/guide/about
+      - title: Setup
+        url: /ehs/2-5/guide/setup
+      - title: Advanced Settings
+        url: /ehs/2-5/guide/settings
+      - title: Special Features
+        url: /ehs/2-5/guide/features
       - title: Download
-        url: /ehs/2-4/download
+        url: /ehs/2-5/download
     versions:
+      - url: ehs/2-5/guide/about/
+        label: '2.5'
       - url: ehs/2-4/guide/about/
         label: '2.4'
       - url: ehs/2-3/guide/about/
         label: '2.3'
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-0/guide/about
+    url: /enterprise-keyboard/1-2/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-0/guide/about
+        url: /enterprise-keyboard/1-2/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-0/guide/setup
+        url: /enterprise-keyboard/1-2/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-0/guide/settings
+        url: /enterprise-keyboard/1-2/guide/settings
       - title: Download
-        url: /enterprise-keyboard/1-0/download
+        url: /enterprise-keyboard/1-2/download
     versions:
-      - url: enterprise-keyboard/1-0/guide/about
+      - url: enterprise-keyboard/1-2/guide/about
+        label: '1.2'
+      - url: enterprise-keyboard/1-1/guide/about
+        label: '1.1'
+      - url: enterprise-keyboard/1-1/guide/about
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/5-0/guide/about
+    url: /emdk-for-android/6-0/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/5-0/guide/gettingstarted
+        url: /emdk-for-android/6-0/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/5-0/tutorial/
+        url: /emdk-for-android/6-0/tutorial/
       - title: Samples
-        url: /emdk-for-android/5-0/samples
+        url: /emdk-for-android/6-0/samples
       - title: Guides
-        url: /emdk-for-android/5-0/guide/programming-guides
+        url: /emdk-for-android/6-0/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/5-0/guide/profile-manager-guides
+        url: /emdk-for-android/6-0/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/5-0/api
+        url: /emdk-for-android/6-0/api
     versions:
+      - url: emdk-for-android/6-0/guide/about/
+        label: '6.0'
       - url: emdk-for-android/5-0/guide/about/
         label: '5.0'
       - url: emdk-for-android/4-2/guide/about/
@@ -169,7 +179,7 @@ products:
         url: /mx/compatibility
     versions:
       - url: mx/compatibility
-        label: '6.0'
+        label: '6.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about

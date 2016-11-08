@@ -239,7 +239,7 @@ Certain devices may map their function keys to apparently normal keys. For examp
 Users of the key capture module with Chinese, Korean and Japanese operating systems should bear the following in mind: Internally the KeyCapture module stores key representations as VK codes, therefore the key event will always return VK_PROCESSKEY (229) and keys can not be individually specified. In JavaScript the DOM element's keyup event can be used as an indication of which key has been pressed.
 
 ###Mapping Proprietary Keycodes 
-A small group of Zebra devices running Windows Mobile (such as those listed below) return proprietary keycode values inconsistent with those of other devices, and are incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](../../../guide/keycapture/#mappingproprietaryfunctionkeycodes). 
+A small group of Zebra devices running Windows Mobile (such as those listed below) return proprietary keycode values inconsistent with those of other devices, and are incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](../../guide/keycapture/#mappingproprietaryfunctionkeycodes). 
 
 * Workabout Pro 4 WEH Device
 * Omnii XT15 WEH Device

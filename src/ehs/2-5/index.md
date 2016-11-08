@@ -1,7 +1,8 @@
 ---
 title: Enterprise Home Screen
 img: ehs-logo.png
-layout: list-mx.html
+layout: redirect.html
+redirect_url: /ehs/2-5/guide/about
 menu:
   title: Enterprise Home Screen 2.4
   img: /ehs/ehs-logo.png
@@ -27,6 +28,7 @@ product: Enterprise Home Screen
 productversion: '2.5'
 ---
 
+# Redirecting to Enterprise Home Screen 2.5 Documentation
 
 
 

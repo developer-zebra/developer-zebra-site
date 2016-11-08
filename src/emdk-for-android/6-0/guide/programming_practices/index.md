@@ -114,6 +114,9 @@ The application must call the EMDKManager.release() in the below scenarios:
 
 The EMDKListener.onClosed gets called to notify the application that the EMDKManager object has been abruptly closed due to some failures at EMDK or a lower layer. When this occurs, the application must the release the current EMDK manager instance and get the new EMDK Manager instance 
 
+
+>Note: If you are blocking the main thread, the application will not get notification when the EMDK closes unexpected reasons and therefore the application must not block the main thread to receive the EMDKListener.onClosed callback.
+
 ###Refer the below code snippets for EMDKManager opening and closing
 
     :::java

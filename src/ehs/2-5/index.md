@@ -28,7 +28,7 @@ product: Enterprise Home Screen
 productversion: '2.5'
 ---
 
-# Redirecting to Enterprise Home Screen 2.5 Documentation
+### Redirecting to Enterprise Home Screen 2.5 Documentation
 
 
 

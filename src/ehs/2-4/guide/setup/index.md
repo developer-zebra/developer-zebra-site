@@ -458,6 +458,18 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS Instal
 <img alt="" style="height:350px" src="app_uninstall_confirm.png"/>
 <br>
 
+####OPTIONAL
+The steps above do not remove the `enterprisehomescreen.xml` configuration file from the `/enterprise/usr` folder, which could effect the behavior of EHS versions installed later.  
+
+**To remove an old version of the `enterprisehomescreen.xml` file**:
+
+&#54;. Connect the device to a computer with Android Debug Bridge (ADB) installed.
+
+&#55;. At a command prompt, execute the following command:
+    
+    :::term
+    adb shell rm /enterprise/usr/enterprisehomescreen.xml
+
 Manual uninstallation of EHS is now complete. 
 
 > <b>Note</b>: USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some other device settings configured by EHS might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
@@ -511,7 +523,7 @@ These instructions apply to remote uninstallation using an organization's own MD
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020xxx.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_R_020xxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
@@ -524,11 +536,13 @@ These instructions apply to remote uninstallation using an organization's own MD
 </table>
 <br>
 
-&#50;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
-
 > <b>Note</b>: USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some other device settings configured by EHS might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
+
+&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the `/enterprise/usr` folder. This will remove any previous config file. 
+
+&#51;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
 Remote uninstallation of EHS is now complete. 
 

@@ -19,7 +19,7 @@ When associated with an app, DataWedge can be invoked to scan and acquire the da
  
 **Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see **Disable DataWedge** section. 
 
-_**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly**_.
+<!-- _**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly. Please refer to Windows documentation**_. 10/20/16- Windows reference removed per eng. --> 
 
 ##Profiles
 A DataWedge Profile contains information about how DataWedge should behave with one or more associated applications, and provides a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. Alternatively, a **single** Profile can be created and associated with **many applications**, acquiring and processing data in exactly the same way for all. 
@@ -40,7 +40,7 @@ Any number of Profiles can be created to suit all the needs of an enterprise. Da
 * **RhoElements -** disables scanning when RhoElements is in the foreground.
 
 ### Profile0
-Profile0 is a generic Profile that automatically takes effect for any app that comes to the foreground that has not been associated with DataWedge. This can be useful for quickly acquiring data using an app that has just been installed, for example, or when using an app that has not yet been configured by an administrator for use with DataWedge. All parameters of Profile0 can be edited except its association. **Note: Profile0 cannot be used with IPWedge**.
+Profile0 is a generic Profile that automatically takes effect for any app that comes to the foreground that has not been associated with DataWedge. This can be useful for quickly acquiring data using an app that has just been installed, for example, or when using an app that has not yet been configured by an administrator for use with DataWedge. All parameters of Profile0 can be edited except its association. <!-- **Note: Profile0 cannot be used with IPWedge**. 10/18/16- removed per Tharindu -->
 
 **Profile0 also can be disabled within a Profile**. This provides a measure of security by restricting output to applications or servers to which DataWedge has been specifically associated. 
 
@@ -48,7 +48,8 @@ Profile0 is a generic Profile that automatically takes effect for any app that c
 Plug-ins extend DataWedge functionality to support device hardware, peripherals, data processing and transport. Plug-ins are used to configure how data will be acquired by DataWedge, manipulated or altered for an app, and output to an app or server.
 
 **Input Plug-ins specify**:
-* Barcode scanners (laser, imager, camera, bluetooth scanner, MSR)
+* Barcode scanners (laser, imager, camera, bluetooth scanner)
+* Magnetic Stripe Readers (MSR)
 * SimulScan hardware
 
 **Process Plug-ins specify**: 
@@ -58,7 +59,7 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 **Output Plug-ins specify**:
 * Keystrokes (emulates manual keyboard input)
 * Intent (programmatic hand-off of data)
-* IP Output (saving data to a server)
+* IP Output (sending data to a server over IP)
 
 ### Input Plug-ins
 Input Plug-ins specify the device hardware to be used to acquire the data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides beep sounds and other feedback to alert the user of scanning results and barcode type. Refer to Scanner Parameters section for more information**. 
@@ -85,7 +86,7 @@ Output Plug-ins send the processed data to the associated application or server.
 
 **The Intent Output Plug-in** sends the processed data to the associated foreground application as payload within an Android Intent.
 
-**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipwedge) for further information. **Note: Profile0 cannot be used with IPWedge**.
+**The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipwedge) for further information. <!-- **Note: Profile0 cannot be used with IPWedge**. 10/18/16- removed per Tharindu -->
 
 ## Create a Profile
 This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge for scanning services. 
@@ -118,10 +119,10 @@ The app will now use DataWedge for barcode data acquisition.
 <img style="height:350px" src="01_datawedge_launcher.png"/>
 <br>
 
-On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text). 
+On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 
 <img style="height:350px" src="01a_ProfilesScreen.png"/>
 
-**Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
+**Note**: If DataWedge had been opened previously, it will reopen to the last screen used. If necessary, press BACK until the Profiles screen appears.  
 <br>
 
 &#50;. **Tap the "hamburger"** menu and **select -> New profile**.  
@@ -188,10 +189,11 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 See **Basic data formatting** elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced).
 <br>
 
-### Edit, Rename or Delete a Profile
-**To edit, rename or delete a profile**: 
+### Edit, Rename, Delete or Clone a Profile
+**To edit, rename, delete or clone a profile**: 
 
 &#49;. **Long-press the Profile name** to bring up its Context menu.
+
 &#50;. **Tap on the desired action**: 
 <img style="height:350px" src="profile_context_menu.png"/>
 <br>
@@ -229,7 +231,10 @@ The "Auto" option will automatically determine the best scanning device from the
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
 #### Bluetooth Scanners
-**DataWedge currently supports only the Zebra RS507 Cordless Bluetooth Ring Scanner**. 
+DataWedge supports the following Bluetooth scanners: 
+
+* **Zebra RS507** Cordless Ring Scanner
+* **RS6000 Bluetooth Ring Scanner** (when used with WT6000 only)  
 
 Bluetooth scanners are supported according to the following rules:
 
@@ -332,14 +337,12 @@ DataWedge invokes an Intent though an **Intent Action** in an **Intent Category*
 
     <intent-filter>
         ...
-        <action android:name="android.intent.action.DEFAULT" />
-        <category android:name="android.intent.category.MAIN" />
+        <action android:name="com.myapp.action" />
+		<category android:name="android.intent.category.DEFAULT" />
         ...
     </intent-filter>
 
-...then the **Intent Action** in the Intent Output Plug-in would be `android.intent.category.DEFAULT`
-
-and the `Intent Category** would be **android.intent.category.MAIN`.
+...then the **Intent Action** in the Intent Output Plug-in would be `com.myapp.action` and the **Intent Category** would be `android.intent.category.DEFAULT`.
 
 The Intent Delivery option allows the method by which the Intent is delivered to be specified. Intent-based data is delivered through one of three delivery mechanisms:  
 
@@ -352,12 +355,12 @@ The Intent Delivery option allows the method by which the Intent is delivered to
 When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. **Note: Use this flag only if delays are seen in delivery of Intents immediately following device boot-up**.
 
 ####Decode-related data
-The decode-related data added to an Intent bundle can be retrieved using the followng calls: 
+The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()` 
+<!-- * `Intent.getSerializableExtra()` -->
 
-The calls above can be used with the following String tags:
+The call above can be used with the following String tags:
 
 * **String LABEL_TYPE_TAG = "com.symbol.datawedge.label_type"**; String contains the barcode label type
 
@@ -369,7 +372,7 @@ The calls above can be used with the following String tags:
 The MSR-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()` 
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can be used with the following String tags:
 
@@ -392,11 +395,11 @@ The data from the MSR tracks is concatenated and sent out as a byte array. The S
 The SimulScan-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
 * `Intent. getParcelableArrayListExtra()`
 * `Bundle.getInt()`
 * `Bundle.getString()`
 * `Bundle.getByteArray()`
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can use the following String tags:
 
@@ -437,6 +440,7 @@ To configure a device to use the IP Output Plug-in, it's necessary to know the I
 **From the Profile in which to activate the IP Output Plug-in**:  
 
 &#49;. Locate the IP Output section of the Profile.  
+
 &#50;. **Check "Enabled" and "Remote Wedge" boxes** to enable IP Output and communication with the IPWedge server component.
 
 <img style="height:350px" src="ip_output.png"/>
@@ -444,17 +448,24 @@ _IP Output Plug-in options_.
 <br>
 
 &#51;. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+
 &#52;. **Enter the IP address** of the server running IPWedge software.
+
 &#53;. **Enter the Port number** if other than the default of 58627. 
 
 ### Using IP Output Plug-in without IPWedge
 it is possible to use the IP Output Plug-in to send captured data to a remote device without IPWedge. At the data receiving end, the PC or Mobile device should have a client application that listens to TCP or UDP data coming from the configured port and IP address in IP Output Plug-in. To get IP output plug-in configured to send captured data to a remote computer or device, follow these steps.
 
-&#49;. Locate the IP Output section of the Profile.  
+&#49;. Locate the IP Output section of the Profile.
+
 &#50;. **Check "Enabled" box** and **_uncheck_ the "Remote Wedge" box**.
+
 &#51;. **Select the desired Protocol** for data transport (TCP or UDP) or accept the default (TCP).
+
 &#52;. **Enter the IP address** of the server running IPWedge software.
+
 &#53;. **Enter the Port number** if other than the default of 58627. 
+
 **Warning: Zebra does not support this usage scenario**.
 
 ## Data Capture Plus (DCP)
@@ -514,6 +525,6 @@ _Data Capture Plus shown in maximized mode_.
 
 Other DataWedge guides: 
 * [IPWedge Guide](../ipwedge)
-* [DataWedge API for Android](../api)
-* [DataWedge Capture API](../capture)
+* [DataWedge Data Capture API for Android](../api) <!--
+* [DataWedge Capture API](../capture) -->
 

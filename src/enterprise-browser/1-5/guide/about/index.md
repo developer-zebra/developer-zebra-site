@@ -18,7 +18,6 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 ####Zebra Device Support
   * TC70 and TC75 with Android Lollipop
   * WT6000 with Android Lollipop
-  * MC40 with Android Lollipop
   * MC67 with Android KitKat
   * WorkAbout Pro 4 with Windows Embedded Handheld 6.5
   * Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5
@@ -37,7 +36,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 #### New Features
 
-* **[Simplified mass deployment](../keycapture)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
+* **[Simplified mass deployment](../setup/#manualdeployment)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
 
 * **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
 
@@ -114,7 +113,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -150,7 +149,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc3100Pic" src="../../images/mc3100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC3100</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC3100R, MC3100S, MC3190G, </nobr>MC3190R, MC3190S, MC3190Z</td>
+  <td class="clsSyntaxCells clsOddRow">MC3100R, MC3100S, MC3190G, MC3190R, MC3190S, MC3190Z</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 Professional<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -164,7 +163,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC40</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
@@ -234,7 +233,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc9000Pic" src="../../images/mc9000.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC9090, MC9097, MC9094</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC9090, MC9097, MC9094</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0<br>Windows Mobile 6.1</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
@@ -255,42 +254,42 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9500</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC9590, MC9596, MC9598, MC959B (WM6.1)</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC9590, MC9596, MC9598, MC959B (WM6.1)</td>
   <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1, Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC55</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC55</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC70 (GA1, GA2)</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC70 (GA1, GA2)</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="../../images/tc75.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC75</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC8000</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Workabout</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Workabout Pro 4</nobr></td>
+  <td class="clsSyntaxCells clsOddRow"><b>WorkAbout</b></td>
+  <td class="clsSyntaxCells clsOddRow">WorkAbout Pro 4</td>
   <td class="clsSyntaxCells clsOddRow">CE 6.0, Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -307,7 +306,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -346,7 +345,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -400,7 +399,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Wearable Computer</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Wearable Computer</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -408,7 +407,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Bluetooth Ring Scanner</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
@@ -416,7 +415,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>1D Corded Ring Scanner</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">1D Corded Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
@@ -424,7 +423,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Cordless Ring Imager</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
  </tr>
@@ -439,7 +438,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings">These printers have been tested for USB printing compatibility. Zebra supports wireless printing on many other models.</th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device models</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="text-centered">Interface(s)</th>

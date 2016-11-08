@@ -18,6 +18,20 @@ order: 99
       </characteristic>
     </wap-provisioningdoc>
 
+### Set Enterprise Keyboard as the Default Input Method
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="4.3" >
+            <parm name="InputMethodAction" value="1"/>
+            <characteristic type="InputMethodDetails">
+            <parm name="InputMethodOption" value="4"/>
+            <parm name="InputMethodPackageName" value="com.symbol.mxmf.csp.enterprisekeyboard"/>
+            <parm name="InputMethodClassName" value="com.android.inputmethod.latin.LatinIME"/>
+            </characteristic>
+        </characteristic>
+    </wap-provisioningdoc>
+
+
 ## Queries
 
 ### Get Current Locale
@@ -154,34 +168,6 @@ order: 99
             <parm name="InputMethodClassName" value="ClassName1"/>
         </characteristic>
     </characteristic>
-
-### Set Enterprise Keyboard as the Default Input Method
-
-#### Input 
-
-    <wap-provisioningdoc>
-        <characteristic type="UiMgr" version="4.3" >
-            <parm name="InputMethodAction" value="1"/>
-            <characteristic type="InputMethodDetails">
-            <parm name="InputMethodOption" value="4"/>
-            <parm name="InputMethodPackageName" value="com.symbol.mxmf.csp.enterprisekeyboard"/>
-            <parm name="InputMethodClassName" value="com.android.inputmethod.latin.LatinIME"/>
-            </characteristic>
-        </characteristic>
-    </wap-provisioningdoc>
-
-#### Output 
-
-    <wap-provisioningdoc>
-        <characteristic type="UiMgr" version="4.3" >
-            <parm name="InputMethodAction" value="1"/>
-            <characteristic type="InputMethodDetails">
-            <parm name="InputMethodOption" value="4"/>
-            <parm name="InputMethodPackageName" value="com.symbol.mxmf.csp.enterprisekeyboard"/>
-            <parm name="InputMethodClassName" value="com.android.inputmethod.latin.LatinIME"/>
-            </characteristic>
-        </characteristic>
-    </wap-provisioningdoc>
 
 ### Get All Settings
 

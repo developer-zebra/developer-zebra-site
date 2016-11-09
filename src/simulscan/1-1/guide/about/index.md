@@ -1,6 +1,11 @@
 ---
-title: about.md
+title: About SimulScan
+layout: guide.html
+product: SimulScan
+productversion: '1.1'
 ---
+
+
 ABOUT SIMULSCAN DOCUMENT CAPTURE
 With this powerful image capture technology, you can take process automation to the next level and achieve substantial increases in worker efficiency, processing accuracy and cycle times. When SimulScan is incorporated in your Android devices, workers can capture the contents of an entire form in a single scan — including bar codes, text fields, phone numbers, images, signatures, and even check boxes — and instantly auto-populate business forms with that information.
 

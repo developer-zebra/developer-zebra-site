@@ -1,6 +1,10 @@
 ---
-title: demo.md
+title: SimulScan Demo App
+layout: guide.html
+product: SimulScan
+productversion: '1.1'
 ---
+
 NAVIGATE SIMULSCAN
 
 About SimulScan

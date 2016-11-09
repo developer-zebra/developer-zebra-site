@@ -1,6 +1,10 @@
 ---
-title: license.md
+title: SimulScan Licensing
+layout: guide.html
+product: SimulScan
+productversion: '1.1'
 ---
+
 OVERVIEW
 A SimulScan license is required to unlock all advanced functionality, including optical character recognition (OCR), optical mark recognition (OMR), and multi-barcode for 10+ barcodes on a given device. A license is also needed to enable the programming interfaces (via DataWedge, EMDK, or RhoMobile) for the advanced functionality listed above. Multi-barcode for fewer than 10 barcodes is available free of charge on all SimulScan supported devices.
 

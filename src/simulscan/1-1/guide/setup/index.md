@@ -1,6 +1,10 @@
 ---
-title: setup.md
+title: Setup and Usage
+layout: guide.html
+product: SimulScan
+productversion: '1.1'
 ---
+
 GETTING STARTED
 This document assumes the reader has a basic knowledge of what SimulScan is and the features it supports. For those not aware, please visit the SimulScan Overview Page.
 

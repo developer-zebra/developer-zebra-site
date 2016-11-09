@@ -180,6 +180,29 @@ products:
     versions:
       - url: mx/compatibility
         label: '6.1'
+  - title: SimulScan
+    description: A tool for simultaneously capturing scanned data from multiple label regions.
+    url: /simulscan/1-1/guide/about
+    btn-text: Latest Guides
+    image: /simulscan/simulscan_logo.png
+    sections:
+      - title: About
+        url: /simulscan/1-1/guide/about
+      - title: Setup and Usage
+        url: /simulscan/1-1/guide/setup
+      - title: Template Builder
+        url: /simulscan/1-1/guide/template
+      - title: APIs
+        url: /simulscan/1-1/apis
+      - title: Use Cases
+        url: /simulscan/1-1/guide/usecases
+      - title: Demo App
+        url: /simulscan/1-1/guide/demo
+      - title: Licensing
+        url: /simulscan/1-1/guide/licensing
+    versions:
+      - url: simulscan/1-1/guide/about
+        label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about

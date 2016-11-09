@@ -1,16 +1,16 @@
 ---
-title: SimulScan Licensing
+title: Licensing
 layout: guide.html
 product: SimulScan
 productversion: '1.1'
 ---
+## Overview
+The ability to scan fewer than 10 barcodes simultaneously using the Multi-barcode feature is included free with all devices that support SimulScan. A SimulScan license is required for each device to unlock all advanced functionality, including optical character recognition (OCR), optical mark recognition (OMR) and Multi-barcode for 10 or more barcodes at a time. A license also is required to enable APIs to access SimulScan via DataWedge, EMDK or RhoMobile apps, which includes Enterprise Browser. 
 
-OVERVIEW
-A SimulScan license is required to unlock all advanced functionality, including optical character recognition (OCR), optical mark recognition (OMR), and multi-barcode for 10+ barcodes on a given device. A license is also needed to enable the programming interfaces (via DataWedge, EMDK, or RhoMobile) for the advanced functionality listed above. Multi-barcode for fewer than 10 barcodes is available free of charge on all SimulScan supported devices.
-
-Please note that a license is NOT required to use the demo application.
+A license is NOT required to use the demo application.
 
 Demo License
+
 
 Demo Licenses are available for customers evaluating SimulScan and for developers looking to begin integration of SimulScan into their applications. To request a demo license to enable the SimulScan functionality and enable the programming interfaces on a device, please email NMV386@zebra.com with the subject header, "SimulScan Demo License Request."
 

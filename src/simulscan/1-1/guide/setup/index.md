@@ -4,6 +4,20 @@ layout: guide.html
 product: SimulScan
 productversion: '1.1'
 ---
+##Overview
+
+
+raw md link:
+
+![img](template.png)
+
+
+HTML w/ 350px constriction:
+
+<img style="height:350px" src="template.png"/>
+_Launcher icon for DataWedge 6.x_
+<br>
+
 
 GETTING STARTED
 This document assumes the reader has a basic knowledge of what SimulScan is and the features it supports. For those not aware, please visit the SimulScan Overview Page.

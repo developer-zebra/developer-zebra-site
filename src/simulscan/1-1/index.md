@@ -7,7 +7,7 @@ menu:
   img: /simulscan/simulscan_logo.png
   items:
     - title: About
-      url: /simulscan/1-5/guide/about
+      url: /simulscan/1-1/guide/about
     - title: Setup and Usage
       url: /simulscan/1-1/guide/setup
     - title: Template Builder
@@ -19,7 +19,7 @@ menu:
     - title: Demo App
       url: /simulscan/1-1/guide/demo
     - title: Licensing
-      url: /simulscan/1-1/guide/licensing
+      url: /simulscan/1-1/guide/license
     - icon: fa fa-search
       url: /simulscan/1-1/search
 product: SimulScan

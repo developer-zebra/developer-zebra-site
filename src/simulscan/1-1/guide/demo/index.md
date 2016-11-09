@@ -1,5 +1,5 @@
 ---
-title: SimulScan Demo App
+title: Demo App
 layout: guide.html
 product: SimulScan
 productversion: '1.1'
@@ -42,9 +42,9 @@ The videos that follow, will demonstrate how to find and use additional features
  
 Features included in the demo app are:
  
-Form Recognition and capture
-Multi-Barcode scanning on a structured form
-Multi-Barcode scanning on an unstructured form
-OCR (Single line and multi-line options for alphanumeric characters)
-OMR (Optical mark recognition)
-MRZ (Machine Readable Zone) for travel documents including passports
+* Form Recognition and capture
+* Multi-Barcode scanning on a structured form
+* Multi-Barcode scanning on an unstructured form
+* OCR (Single line and multi-line options for alphanumeric characters)
+* OMR (Optical mark recognition)
+* MRZ (Machine Readable Zone) for travel documents including passports

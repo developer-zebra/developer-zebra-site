@@ -1,5 +1,5 @@
 ---
-title: Setup and Usage
+title: SimulScan Setup
 layout: guide.html
 product: SimulScan
 productversion: '1.1'

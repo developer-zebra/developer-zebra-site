@@ -5,9 +5,9 @@ product: SimulScan
 productversion: '1.1'
 ---
 ##Overview
-A Demo App is included with all [devices that support SimulScan](../about/#supporteddevices) and is intended to quickly demonstrate how SimulScan works and what it can do. The Demo App also provides a way to test custom templates that implement multi-barcode, signature capture, Optical Character Recognition OCR, and Optical Mark Recognition (OMR, i.e. checkboxes) for SimulScan Readable Forms.
+A Demo App is included with all [devices that support SimulScan](../about/#supporteddevices) and is intended to quickly demonstrate how SimulScan works and what it can do. The Demo App also provides a way to test custom user-created templates that implement Multi-barcode, signature capture, Optical Character Recognition OCR, and Optical Mark Recognition (OMR, i.e. checkboxes) for SimulScan Readable Forms.
 
-**The Demo App cannot save data and is not suitable for production environments**.   
+**The Demo App cannot save data and is not suitable for production environments**. 
 
 ###Demo App features
 

@@ -11,11 +11,11 @@ menu:
     - title: Setup
       url: /simulscan/1-1/guide/setup
     - title: Template Builder
-      url: /simulscan/1-1/guide/template
-    - title: APIs
-      url: /simulscan/1-1/apis
-    - title: Industry Templates
+      url: /simulscan/1-1/guide/templatebuilder
+    - title: Pre-built Templates
       url: /simulscan/1-1/guide/templates
+    - title: APIs
+      url: http://zebra-stage.github.io/emdk-for-android/6-0/api/reference/com/symbol/emdk/simulscan/package-frame.html
     - title: Demo App
       url: /simulscan/1-1/guide/demo
     - title: Licensing

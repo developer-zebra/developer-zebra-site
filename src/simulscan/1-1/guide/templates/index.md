@@ -1,5 +1,5 @@
 ---
-title: simulScan Industry Templates
+title: SimulScan Industry Templates
 description: SimulScan Templates have been created as a starting point for use in specifi industries.
 layout: list-apis.html
 automenu:

@@ -16,18 +16,18 @@ SimulScan is an end-to-end data capture solution for Android devices designed to
 * **Improves overall worker efficiency** and accuracy
 
 
-**Forms for simultaneous capture can include**: 
+**Simultaneous capture can include**: 
 
-* Barcodes, including multiple symbologies on a single form
-* Text fields (names, addresses, product names, etc.)
-* Phone numbers, invoice numbers, tracking and stock numbers, etc.
+* **Barcodes**, including multiple symbologies on a single form
+* **Text**, including name and address, product names, etc.
+* **Numbers**, including phone, invoice, tracking and stock numbers, etc.
 * Images
 * Signatures
 * Checkboxes
 
 ###Requirements
-* **Supported on TC55, TC70, TC75, TC8000** only
-* **Camera and 2D imager supported** (except the camera-only TC70)
+* **A Zebra TC55, TC70, TC75, TC8000 device** running Android
+* **Camera or 2D imager** (camera only on TC70)
 * **SimulScan is preinstalled** on supported devices
 * **Per-device License required** for 10+ Multi-barcode and API support
 
@@ -39,9 +39,9 @@ The form below contains data of multiple types; it includes a barcode containing
 
 ![img](template.png)
 
-Collecting all of this data separately would be time-consuming and error-prone. SimulScan can digitize all data seen here in a single scan through the use of a Template, a structured form created in advance and programmed specifically for collecting the data on this form. 
+SimulScan is capable of capturing all of this data in a single scan, a job that if collected separately would be time-consuming and error-prone. It does this through the use of a Template, a structured form created in advance that is programmed specifically for collecting the desired data from a particular form. 
 
-While the data on incoming forms will change based on the shipment, date and other factors, the location and type of data in each field (i.e. barcode, alphanumeric characters, signature, etc.) remains consistent whenever this form is used. By creating a SimulScan Template to uniquely identify each region and data type, the developer is able to assign the data from each region of the form to a specific field in an application. 
+Templates work on the principle that the _location_ and _type_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever this form is used, and that only the data itself will change from one instance of the form to another. By creating a SimulScan Template to uniquely identify each region and data type, the developer is able to assign the data from each region of the form to specific fields in an application. 
 
 For example, in the upper-right corner of the sample form above will always be located a barcode identifying the waybill number. The lower-right corner will always contain the signature and date. Data from those fields can then be used to automatically populate a receiving record with each incoming shipment that's accompanied by this form. 
 
@@ -65,7 +65,7 @@ Some data-acquisition scenarios call for creation of a type-specific Template, f
   <th class="clsSyntaxHeadings">Link</th>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">√</td>
   <td class="clsSyntaxCells clsOddRow">√</td>
@@ -96,7 +96,14 @@ Some data-acquisition scenarios call for creation of a type-specific Template, f
 </tbody></table>
 
 
-<div class="content-large"><div class="jive-widget-formatted-body"><!-- [DocumentBodyStart:46152d05-7ceb-43ba-ab72-2acee060ee0c] --><div class="jive-rendered-content"><table border="1" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#3D3D3D&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;padding&quot;:&quot;6&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="
+<!--
+<div class="content-large"><div class="jive-widget-formatted-body">
+-->
+
+<!-- commented our from orig. [DocumentBodyStart:46152d05-7ceb-43ba-ab72-2acee060ee0c] -->
+
+<!-- 
+<div class="jive-rendered-content"><table border="1" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#3D3D3D&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;padding&quot;:&quot;6&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="
 {&quot;color&quot;:&quot;#505050&quot;,&quot;backgroundColor&quot;:&quot;#FFFFFF&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;padding&quot;:&quot;6&quot;,&quot;fontFamily&quot;:&quot;Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" style="border: 1px solid #c6c6c6; width: 100%;">
 
 <thead>
@@ -167,7 +174,13 @@ Some data-acquisition scenarios call for creation of a type-specific Template, f
 </td>
 <td style="border:1px solid black;border: 1px solid #c6c6c6;padding: 0px;vertical-align: middle;text-align: center;font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;background-color: transparent;color: #3d3d3d;"><p><a href="https://developer.zebra.com/servlet/JiveServlet/showImage/73-4090-98674/yes.png"><img alt="yes.png" class="image-1 jive-image" height="22" src="https://developer.zebra.com/servlet/JiveServlet/downloadImage/73-4090-98674/23-22/yes.png" style="text-align: right;" width="23"/></a></p></td><td style="border:1px solid black;border: 1px solid #c6c6c6;vertical-align: middle;text-align: center;padding: 0px;font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;background-color: transparent;color: #3d3d3d;">
 <p>
-<a href="https://developer.zebra.com/servlet/JiveServlet/showImage/73-4090-98674/yes.png"><img alt="yes.png" class="image-1 jive-image" height="22" src="https://developer.zebra.com/servlet/JiveServlet/downloadImage/73-4090-98674/23-22/yes.png" style="text-align: right;" width="23"/></a></p></td></tr></tbody></table></div><!-- [DocumentBodyEnd:46152d05-7ceb-43ba-ab72-2acee060ee0c] --></div>
+<a href="https://developer.zebra.com/servlet/JiveServlet/showImage/73-4090-98674/yes.png"><img alt="yes.png" class="image-1 jive-image" height="22" src="https://developer.zebra.com/servlet/JiveServlet/downloadImage/73-4090-98674/23-22/yes.png" style="text-align: right;" width="23"/></a></p></td></tr></tbody></table></div>
+
+-->
+<!-- commented out of orig [DocumentBodyEnd:46152d05-7ceb-43ba-ab72-2acee060ee0c] -->
+<!-- 
 </div>
 </div>
 </div>
+</div>
+-->

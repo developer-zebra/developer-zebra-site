@@ -8,14 +8,14 @@ menu:
   items:
     - title: About
       url: /simulscan/1-1/guide/about
-    - title: Setup and Usage
+    - title: Setup
       url: /simulscan/1-1/guide/setup
     - title: Template Builder
       url: /simulscan/1-1/guide/template
     - title: APIs
       url: /simulscan/1-1/apis
-    - title: Use Cases
-      url: /simulscan/1-1/guide/usecases
+    - title: Industry Templates
+      url: /simulscan/1-1/guide/templates
     - title: Demo App
       url: /simulscan/1-1/guide/demo
     - title: Licensing

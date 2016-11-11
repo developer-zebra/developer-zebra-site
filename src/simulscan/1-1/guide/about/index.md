@@ -6,7 +6,7 @@ productversion: '1.1'
 ---
 
 ##Overview
-SimulScan is an end-to-end data capture solution for Zebra Android devices designed to extract critical data from scanned documents. It contains powerful image capture technology that can acquire of the contents of an entire form in a single scan. Forms can include bar codes, text fields, phone numbers, images, signatures, even checkboxes; SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce cycle times.
+SimulScan is an end-to-end data capture solution for developers building apps for Zebra Android devices intended to capture data with the device scanner. It contains powerful image capture technology that can acquire of the contents of an entire form in a single scan. Forms can include bar codes, text fields, phone numbers, images, signatures, even checkboxes; SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
 
 ###Benefits
 
@@ -28,7 +28,7 @@ SimulScan is an end-to-end data capture solution for Zebra Android devices desig
 * **A Zebra TC55, TC70, TC75, TC8000 device** running Android
 * **Camera or 2D imager** (camera only on some TC70 devices)
 * **An app (or DataWedge) set to access SimulScan** on the device
-* **A per-device License** if capturing 10+ barcodes per form or using SimulScan APIs
+* **A per-device License** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
 
 ## How it Works
 Templates are the key to controlling the power of SimulScan and directing its capabilities as needed. In **Multi-barcode Mode**, SimulScan can capture an unlimited number of barcodes (of the same or different symbologies) from a single form. In **Mixed-data Mode**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single, structured form. Both modes employ Templates, which are used to identify the type of data to be extracted from each region of a form. The location of each region is identified relative to an "Anchor Barcode," which maintains those locations in case the device or form change orientation. 

@@ -5,17 +5,35 @@ product: SimulScan
 productversion: '1.1'
 ---
 
-SOMETHING IN THE FOLLOWING TEXT IS BLOWING UP THE PAGE 
+## Overview
+Template Builder is a web-based tool that can quickly define which information will be captured from a scanned document and made available to applications. Templates are the key to controlling the data-capture capabilities of SimulScan and processing acquired data as needed. 
 
-##Overview
-The “Template Builder” is a graphical web-based utility that is used to describe a document visually and is an integral component of SimulScan Document Capture. The output of this utility is an XML file known here forth as a “Template” which once deployed onto a supported Zebra device can be consumed by the resident SimulScan software via appropriate API’s.
+Most data acquisition tasks involve capturing data from printed documents. The size, shape and layout of those documents can vary tremendously, creating equally tremendous complexities for consistent and accurate data capture. Templates solve this problem by "teaching" SimulScan about the documents it will encounter most often, and defining how to process the data. 
+
+Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever a particular form is used, and that _**only the data will change**_ with each new instance of that form. By creating a SimulScan Template to uniquely identify each region (field) and data type, the developer can map data from each region of the form to a specific field in an application. 
+
+For example, a company that receives regular shipments accompanied with a label like the one below would create a Multi-barcode Template that maps the part and supplier numbers from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner. 
+
+<img style="height:350px" src="msi_reader.png"/>
+*A typical barcode-only form, SimulScan's most common and effective use case*.
+<br>
 
 
 This document provides details around the various features of the Template Builder and is intended to serve as a user guide for the utility.
 
 
-A Template is associated with a document (e.g. a shipping receipt or part sheet label) being targeted to be captured and processed. To create a Template, a document is logically broken down into regions of interest, which are called “fields”. These fields are associated with different methods of processing them, called “processing modes”. Some examples of processing modes include: Barcode, Picture, OCR (Optical Character Recognition) and OMR (Optical Mark Recognition). 
 
+**Template Builder Terms**
+
+* **Field -** a region of a form associated with a processing method (barcode, text, etc.)
+* **Template -** 
+
+A Template is always associated with a specific document (i.e. a shipping receipt or other informative label) being targeted for capture and processing. A Template is created by a document is logically broken down into regions of interest, which are called “fields”. These fields are associated with different methods of processing them, called “processing modes”. Some examples of processing modes include: Barcode, Picture, OCR (Optical Character Recognition) and OMR (Optical Mark Recognition). 
+
+The output of this utility is an XML file known here forth as a “Template” which once deployed onto a supported Zebra device can be consumed by the resident SimulScan software via appropriate API’s.
+
+
+-----
 
 To fully unlock the functionalities of OCR and OMR, you would need to acquire a license and install it on your mobile device.  Multiple barcode- decoding and Picture taking functionalities would not require a license and are available out of the box.
 

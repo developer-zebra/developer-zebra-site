@@ -10,7 +10,7 @@ SimulScan is an end-to-end data capture solution for developers building apps fo
 
 ###Benefits
 
-* **Decodes multiple barcodes** with a single scan (Multi-barcode mode)
+* **Decodes multiple barcodes** with a single scan (Multi-barcode Mode)
 * **Automates data entry** with optical character recognition (OCR)
 * **Simplifies workflow exceptions** with optical mark recognition (OMR) and Signature presence detection
 * **Improves overall worker efficiency** and accuracy

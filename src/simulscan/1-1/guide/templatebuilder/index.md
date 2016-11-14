@@ -6,32 +6,36 @@ productversion: '1.1'
 ---
 
 ## Overview
-Template Builder is a web-based tool that can quickly define which information will be captured from a scanned document and made available to applications. Templates are the key to controlling the data-capture capabilities of SimulScan and processing acquired data as needed. 
+Template Builder is a web-based tool for defining the information captured by SimulScan and determining how it will be processed and made available to applications. Templates are the key to controlling SimulScan data-capture features and for processing the data as required. 
 
-Most data acquisition tasks involve capturing data from printed documents. The size, shape and layout of such documents can vary tremendously, which makes consistent and accurate data capture a challenge. Templates solve this problem by "teaching" SimulScan about the documents it will encounter most often, and defining how to process the data. 
+Most acquisition tasks involve capturing data from printed documents, which often vary in size, shape and layout and can be a challenge to accuracy. Templates solve this problem by "teaching" SimulScan about the documents it will encounter and defining how to handle the incoming data. 
 
 <img style="height:350px" src="msi_reader.png"/>
-*A typical barcode-only form, the most common and effective usage scenario for SimulScan*.
+*A typical barcode-only form, SimulScan's most common and effective usage scenario*.
 <br>
 
-Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. By creating a SimulScan Template to uniquely identify each region and data type, the developer can map data from each region to specific fields of an application. 
+Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alpha/numeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. Templates that uniquely identify each region and data type of a particular form allow SimulScan to capture the data quickly and accurately, and permit developers to map the acquired data to specific fields of their application. 
 
-For example, a company that receives regular shipments accompanied with a label like the one above could create a Multi-barcode Template that maps the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner to corresponding fields of their application. 
+For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode](../about/#multibarcodemode) Template that maps the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner to the corresponding fields of an application. 
 
 ### What's in This Guide
-This guide provides step-by-step instructions for accessing the Template Builder tool online and how to use its drag-and-drop interface to create any required Templates, deploy them to the device and activating them when needed. 
+This guide provides step-by-step instructions for accessing the Template Builder tool online and using its drag-and-drop interface to [create a Template](#createatemplate), [deploy Templates](#deploytemplates) to the device and [activate the desired template](#activateatemplate) when needed. For those not familiar with SimulScan concepts and terminology, please see the [About SimulScan](../about) page before proceeding. 
 
-This guide assumes a basic knowledge of SimulScan concepts and terminology. It might be helpful to visit the [About SimulScan](../about) page before proceeding. 
+### Template Builder Terms
 
------
+**Anchor Element(s) -** one or more unchanging images or other Document attributes (i.e. company logo) that SimulScan can use to determine Document orientation.
 
-##Template Builder Terms
+**Data Type -** defines the source (barcode, OCR, etc.) of data being acquired from a Region of a Document. 
+
+**Document -** printed form containing data to be acquired (i.e. a shipping receipt). Documents should be associated with no more than one Template. 
 
 **Field -** region of a form associated with a data type and processing method (i.e. a barcode).
 
-**Template -** XML document that defines the fields (regions) of a shipping receipt or other document to be scanned. Templates are always associated with exactly one Document. 
+**Mixed-Data Mode -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
 
-**Document -** printed form containing data to be acquired (i.e. a shipping receipt). Documents should be associated with no more than one Template. 
+**Multi-barcode Mode -** used on forms from which only barcode data will be acquired. This is the most common usage scenario. 
+
+**Multi-Line -** acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address).
 
 **OCR -** Optical Character Recognition, a processing mode for acquiring alpha/numeric characters.
 
@@ -43,63 +47,13 @@ This guide assumes a basic knowledge of SimulScan concepts and terminology. It m
 
 **Single-Line -** acquisition using OCR of a single line of alpha/numeric characters (i.e. a product number).
 
-**Multi-Line -** acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address).
+**Target, Structured -** a Document with a layout that doesn't change from one instance to another.
 
-**Structured -** describes a Document with a layout that doesn't change from one instance to another.
+**Target, Unstructured -** a Document with no fixed layout, or a Document that has not been defined with a Template.
 
-**Unstructured -** describes a Document with a layout that changes or that has not been defined with a Template.
+**Template -** XML document that defines the fields (Regions) of a shipping receipt or other document to be scanned. Templates are always associated with exactly one Document. 
 
-**Anchor Element(s) -** one or more unchanging images  or other Document attributes (i.e. company logo) that SimulScan can use to determine Document orientation.
-
-**Multi-barcode Mode -** used on forms from which only barcode data will be acquired. This is the most common usage scenario. 
-
-**Mixed-Data Mode -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
-
------
-
-## Using Template Builder 
-Template Builder is free for Zebra customers and partners, but registration is required to access it. SimulScan also can be used without a License if the only requirement is to scan barcodes through an app using [DataWedge](../../../../datawedge). Access to OCR and OMR features or to use SimulScan APIs requires a License. For more information, please see the [Licensing page](../license).
-
-###Create an Account
-&#49;. Visit the [Zebra SimulScan registration page](https://signup.zebra.com/register.html?appId=SIMS), follow prompts to create a free account and enter all requested information. Once an account is created, an email will be sent by Zebra administrators with login information. 
-
-![img](image5.png)
-
-&#50;. Point a browser to [simulscan.zebra.com](https://simulscan.zebra.com) and enter the login information or PartnerKey. A screen similar to the image below appears.  
-
-![img](image6.png)
-
-&#51;. Select the desired template type: 
-
-* **Barcodes only** enables Multi-barcode Mode
-
-* **Structured targets** is for this and that. 
-
-* **Barcodes only**
-
-There are three main types of Templates that can be generated by the Template Builder: “Barcodes Only”,“Structured Targets” & “Unstructured Targets”.
-
-
-After creating the Template, it is output as an .XML file containing details about the various fields, processing modes and other parameters. Since this is a machine generated file, it is highly not recommended that any manual changes be made to this .XML as any manual editing may corrupt its operation. The output .XML file is Base64 encoded for additional safety.
-
-Barcodes Only Templates cater to the below use-cases:
-Decode multiple barcode(s) simultaneously
-Pick specific barcode(s) 
-
-
-Structured Targets Templates cater to the below use-cases:
-Decode barcodes.
-Extract key fields of interest
-Recognize characters (OCR)
-Recognize check marks (OMR)
-Signature presence check
-Output images
-
-
-Unstructured Targets Templates cater to below use-cases:
-Freeform OCR Single Line recognition
-Freeform OCR Multiple Line recognition
-
+ADD THESE TOO (below)? 
 
 Multi-Templates
 A Template is associated with a single document. A user can then create a Template XML file that stitches together multiple single Templates to form one larger Template, called as “multi-template”. This would serve well in use-cases given an end-user workflow where the user works with a small set of multiple document in a given day (around two to six). A single multi-template can be created for all
@@ -114,38 +68,143 @@ This feature serves well in use-cases where a logical entity is split into multi
 Secure Storage
 All Templates created by a user are stored in a secure location for future reference. Folders are created with the login user name and the user can use the File -> Manage Templates option to manage their folder. The user can create folders, cut, copy or move templates. A default “Release” folder is pre-created which is visible from the SimulScan client on the device when provided the right login credentials.
 
-
-
-
 Validation
 Validation provides a mechanism with which a Template can be verified on the Template Builder before they are deployed to devices for use. This feature validates if the “fields” marked on the document and the properties set for each of the field are correct, prompting the user to rectify the Template if required. Validation is still in Beta. 
 
 
-Form Identification via Fields
-Usually forms carry some unique features that make them different from others. These can be used to uniquely identify the document. This comes in handy either to discriminate between multiple documents or as in the case of structured documents, help detect the right orientation of the document. It is recommended to:
-Mark 2-3 fields per document as “identifier(“Use Field to Identify Form” check box)” fields.
-These fields need to be physically spread out in the document, (e.g. on the top, bottom and on one of the sides).
-Static fields such as logos and pre-printed content work best for structured targets.
-Barcodes that are consistent across labels would work best for Barcodes only targets.
-These fields may or may not be reported back to the user-application. For example, a company’s logo would be best suited to be an “identifier” field but its value need not be read and reported to the end-user application.
-Check the “Also Read Value from Field” box if you wish to report this data back to the user application.
+-----
 
-For instance, the Postal/T&L logo on the top-right corner is a good feature for a UPS shipping form; two CODE128 barcodes and one PDF417 barcode are good features to make the FedEx tracking form identifiable.
-Template Builder enables users to define these features based on the Barcode and Picture data mentioned above.
+## Using Template Builder 
+Template Builder is free but registration might be required. Zebra customers, partners and ISVs with access to Partner Central can use their existing credentials for access. Others must register using the instructions below.
 
---image--
+**Note**: SimulScan can be used without a License if the requirement is to scan only barcodes through an app using [DataWedge](../../../../datawedge). A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
 
-By checking the “Use Field to Identify Form” checkbox in the Properties panel, the specified data will be used to identify the form. For Picture data, the size, location of the picture region will be used as features. For Barcode data, the setting parameters will be used as features. If the size and location of the barcode is fixed, please check “Barcode’s location is fixed” in the Properties panel, and then the size and location of the barcode will be used as features as well.
-Specifying barcodes with fixed size and location also benefits the data processing in general. We recommend users to click “Barcode’s location is fixed” checkbox whenever a barcode will always be in the same location on a form. This check box is only available in “Structured Targets” Templates for non-postal Barcode symbologies.
+### Quick Steps
+1. Log in, Select the Template Type.
+2. Upload an image of the Document to be scanned (.bmp, .jpg, .png or PDF).
+3. Identify regions of the Document and their data types (barcodes, text, etc.).
+4. **Save work often**. Template Builder does not automatically save changes. 
+4. Download the completed Template(s) to the development host (local PC). 
+5. Copy the Template file(s) to the device that will be performing the scans. 
+6. If applicable, select the Template from within the scanning app.  
 
---image--
+### Create an Account
+**&#49;. Visit the [Zebra SimulScan registration page](https://signup.zebra.com/register.html?appId=SIMS)**, follow prompts to create a free account and enter all requested information. Once an account is created by Zebra administrators, an email will be sent with login information. 
 
-Processing Modes
-Presently four processing modes are supported:
-Barcode: Used to scan single or multiple barcodes in the field of view.
-OCR: used to read text, such as names, addresses, etc.
-OMR: Used to read check marks and bubbles.
-Picture: Used for signatures, photos, entire documents (if it’s a busy document with lot of handwritten content)
+![img](image5.png)
+<br>
+
+**&#50;. Point a browser to [simulscan.zebra.com](https://simulscan.zebra.com)** and enter the login credentials. A screen appears similar to the image below: 
+
+![img](image6.png)
+<br>
+
+### Select Template Type
+
+**&#51;. Select the desired template type**: 
+
+* **Structured Targets -** for layouts that **do not** change from one instance to another. Select this option to: 
+ * Scan barcodes
+ * Recognize characters (OCR)
+ * Recognize check marks (OMR)
+ * Capture Signature(s) or other images
+ * Extract other key fields of interest
+
+* **Unstructured Targets -** for layouts that change or that **have not** been defined with a Template. Select this option to: 
+ * Scan multiple barcodes simultaneously 
+ * Use OCR for a single line of alpha/numeric text 
+ * Use OCR for a multiple lines of alpha/numeric text 
+
+**&#51;a. If selecting Structured Targets**:
+* An Open... dialog appears
+* Select the image (.bmp, .jpg, .png or PDF) of the Document for which to create the Template**
+* Minimum image resolution is 640x480 pixels
+* Maximum image resolution is 6000x6000 pixels
+* Maximum image file size is 5MB
+* For a PDF, select page number from the drop-down (if necessary) 
+
+**&#51;b. If selecting Unstructured Targets**:
+
+ * Select "Multi-barcode" to capture barcodes or "OCR" for alpha/numeric text (see below)
+
+![img](image6a.png)
+<br>
+
+**&#52;. Save the Template to proceed**:
+
+![img](image6b.png)
+<br>
+
+> **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files. They are not intended to be edited manually. 
+
+### Identify Document Regions
+
+> **Skip to Step 7 for Unstructured Targets**. 
+
+After uploading an image of the target Document...
+
+**&#53;. Confirm that the "AutoCrop" feature (enabled by default) has accurately identified the Document boundaries**:
+
+![img](image6d.png)
+<br>
+
+**To adjust, click "Disable AutoCrop" and set Blue bounding box so that it's just outside the borders of the Document. Click "OK" when done. This serves as the base reference for identifying the form and processing its contents**.  
+
+**&#54;. Drag a box <u>from the upper-left corner to the lower-right corner</u> of each Region of the Document that contains data to be acquired**:
+
+![img](image6c.png)
+<br>
+
+Alternative ways to create Fields:
+
+ * Select **Edit --> Create New Field**, enter a name for the field and draw a box around the corresponding Region.
+ * Click the **Add Field** button (arrow, below), enter a name and draw a box around the corresponding Region.
+
+![img](image6e.png)
+<br>
+
+Fields not specifically named will be assigned a generic name (as shown). These can be edited later as desired (see [Modify a Template](modifyatemplate)). 
+
+Provide (or confirm) the following required settings for each Field created: 
+ * A name for the field, if desired.
+ * Properties (length/width and X-Y coordinates)
+ * The required Processing mode (barcode, OCR, etc.) 
+ * Processing-mode settings (decoder type, text-type, etc.)
+ * Select at least three "Anchor Elements" (explained below) 
+
+> **Be sure to save work often!** Template Builder does not automatically save changes. Unsaved changes will be lost if the screen is dismissed or the session timeout is reached.  
+
+### Select Anchor Elements
+In addition its use of Document border dimensions, SimulScan uses Fields, company logos or other unique attributes of a Document to positively identify it and determine its orientation relative to the scanner (i.e. whether it's upside down). Optionally, Anchor Elements can contain data to be acquired, such as a barcode or image. Zebra recommends that at least two Anchor Elements be identified in accordance with the guidelines below. 
+
+**Anchor Element Guidelines**:
+
+* Select two or three Fields per document as Anchor Elements. 
+* Anchor Elements should be spread across the top, bottom and side(s) of the Document.   
+* For Structured Targets, static fields such as logos and preprinted content work best.
+* For barcode-only targets, barcodes with a fixed location across different labels work best.
+* For fixed barcodes, select the “Barcode’s location is fixed” option in the Properties panel.
+* Anchor Elements need not contain data to be acquired ("Also Read Value from Field" is optional).
+
+![img](image36a.png)
+<br>
+
+For example, in the Postal T&L Document above, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below. 
+
+![img](image29.png)
+_This attribute appears only in "Structured Targets" Templates for non-postal Barcode symbologies_.
+<br>
+
+This attribute is available only on “Structured Targets” Templates for non-postal Barcode symbologies. Zebra recommends selecting this attribute to help improve processing time whenever it is known that a barcode always will be in the same location on a form. 
+
+**&#55;. When the Template is finished, Download it to the local development host**:
+
+![img](image40.png)
+<br>
+
+**The Template can now be distributed to scanning devices**. 
+
+### Deploy to Devices
 
 
 Template Persistence

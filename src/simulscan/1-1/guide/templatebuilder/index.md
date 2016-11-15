@@ -6,9 +6,9 @@ productversion: '1.1'
 ---
 
 ## Overview
-Template Builder is a web-based tool for defining the information captured by SimulScan and determining how it will be processed and made available to applications. Templates are the key to controlling SimulScan data-capture features and for processing the data as required. 
+Template Builder is a web-based tool for defining the information captured by SimulScan and determining how it will be processed and made available to applications. Templates are the key to controlling SimulScan data-capture features and for processing acquired data as needed. 
 
-Most acquisition tasks involve capturing data from printed documents, which often vary in size, shape and layout and can be a challenge to accuracy. Templates solve this problem by "teaching" SimulScan about the documents it will encounter and defining how to handle the incoming data. 
+Most acquisition tasks involve capturing data from printed documents, which often vary in size, shape and layout and can be a challenge to accuracy. Templates solve this problem by "teaching" SimulScan about the documents it will encounter and defining how to scan and process data for each instance of a "Templated" document. 
 
 <img style="height:350px" src="msi_reader.png"/>
 *A typical barcode-only form, SimulScan's most common and effective usage scenario*.
@@ -18,8 +18,12 @@ Templates work on the principle that the _**location**_ and _**type**_ of data i
 
 For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode](../about/#multibarcodemode) Template that maps the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner to the corresponding fields of an application. 
 
+-----
+
 ### What's in This Guide
-This guide provides step-by-step instructions for accessing the Template Builder tool online and using its drag-and-drop interface to [create a Template](#createatemplate), [deploy Templates](#deploytemplates) to the device and [activate the desired template](#activateatemplate) when needed. For those not familiar with SimulScan concepts and terminology, please see the [About SimulScan](../about) page before proceeding. 
+This guide provides step-by-step instructions for using the GUI-based Template Builder tool to [create Templates](#usingtemplatebuilder) and them to the devices. For those not familiar with SimulScan concepts and terminology, please see the [About SimulScan](../about) page before proceeding. 
+
+-----
 
 ### Template Builder Terms
 
@@ -31,17 +35,23 @@ This guide provides step-by-step instructions for accessing the Template Builder
 
 **Field -** region of a form associated with a data type and processing method (i.e. a barcode).
 
+**Grouped Regions -** refers to sections of a Document that require Fields (i.e. an address) to be grouped logically as an aid to processing the acquired data. 
+
 **Mixed-Data Mode -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
 
 **Multi-barcode Mode -** used on forms from which only barcode data will be acquired. This is the most common usage scenario. 
 
 **Multi-Line -** acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address).
 
+**Multi-Template -** a beta feature that allows multiple Templates to be treated as one to simplify workflow. 
+
 **OCR -** Optical Character Recognition, a processing mode for acquiring alpha/numeric characters.
 
 **OMR -** Optical Mark Recognition, a processing mode for acquiring binary (yes/no) data from checkboxes.
 
 **Picture -** graphical image to be acquired as a file (i.e. `.jpg` file).
+
+**Secure Storage -** the online area accessible only by credentialed user(s) in which Templates are stored. 
 
 **Signature -** generally of the recipient of a shipment (captured as an image).
 
@@ -53,24 +63,9 @@ This guide provides step-by-step instructions for accessing the Template Builder
 
 **Template -** XML document that defines the fields (Regions) of a shipping receipt or other document to be scanned. Templates are always associated with exactly one Document. 
 
-ADD THESE TOO (below)? 
+**Template Persistence -** keeps Templates in sync between a development host and the Template Builder host server.    
 
-Multi-Templates
-A Template is associated with a single document. A user can then create a Template XML file that stitches together multiple single Templates to form one larger Template, called as “multi-template”. This would serve well in use-cases given an end-user workflow where the user works with a small set of multiple document in a given day (around two to six). A single multi-template can be created for all
-Documents, so the app would only need to load a single Template to cater to all forms in a workflow. The software auto-selects one of the four documents providing the user with feedback as well.
-This feature is presently is still in Beta.
-
-
-Grouped Regions
-This feature serves well in use-cases where a logical entity is split into multiple fields in a document (e.g. address). These multiple fields can be grouped logically into one group to help in the next level of processing like address validation or translation.
-
-
-Secure Storage
-All Templates created by a user are stored in a secure location for future reference. Folders are created with the login user name and the user can use the File -> Manage Templates option to manage their folder. The user can create folders, cut, copy or move templates. A default “Release” folder is pre-created which is visible from the SimulScan client on the device when provided the right login credentials.
-
-Validation
-Validation provides a mechanism with which a Template can be verified on the Template Builder before they are deployed to devices for use. This feature validates if the “fields” marked on the document and the properties set for each of the field are correct, prompting the user to rectify the Template if required. Validation is still in Beta. 
-
+**Validation -** a beta feature that checks whether the Fields and their properties are correct for a given Document before a Template is deployed to devices. 
 
 -----
 
@@ -88,8 +83,10 @@ Template Builder is free but registration might be required. Zebra customers, pa
 5. Copy the Template file(s) to the device that will be performing the scans. 
 6. If applicable, select the Template from within the scanning app.  
 
+-----
+
 ### Create an Account
-**&#49;. Visit the [Zebra SimulScan registration page](https://signup.zebra.com/register.html?appId=SIMS)**, follow prompts to create a free account and enter all requested information. Once an account is created by Zebra administrators, an email will be sent with login information. 
+**&#49;. Visit the [Zebra SimulScan registration page](https://signup.zebra.com/register.html?appId=SIMS)**, follow prompts to create a free account and enter all requested information. Once an account is created, Zebra administrators will send login information to the registered address. **Zebra recommends planning ahead; this process could take several days**.
 
 ![img](image5.png)
 <br>
@@ -98,6 +95,8 @@ Template Builder is free but registration might be required. Zebra customers, pa
 
 ![img](image6.png)
 <br>
+
+-----
 
 ### Select Template Type
 
@@ -136,6 +135,8 @@ Template Builder is free but registration might be required. Zebra customers, pa
 <br>
 
 > **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files. They are not intended to be edited manually. 
+
+-----
 
 ### Identify Document Regions
 
@@ -182,30 +183,101 @@ In addition its use of Document border dimensions, SimulScan uses Fields, compan
 * Select two or three Fields per document as Anchor Elements. 
 * Anchor Elements should be spread across the top, bottom and side(s) of the Document.   
 * For Structured Targets, static fields such as logos and preprinted content work best.
-* For barcode-only targets, barcodes with a fixed location across different labels work best.
+* For barcode-only targets, barcodes with a fixed location on instances of a label work best.
 * For fixed barcodes, select the “Barcode’s location is fixed” option in the Properties panel.
 * Anchor Elements need not contain data to be acquired ("Also Read Value from Field" is optional).
 
 ![img](image36a.png)
 <br>
 
-For example, in the Postal T&L Document above, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below. 
+For example, in the Postal T&L Document above, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below: 
 
 ![img](image29.png)
-_This attribute appears only in "Structured Targets" Templates for non-postal Barcode symbologies_.
+_This attribute appears only in "Structured Targets" Templates that use non-postal symbologies_.
 <br>
 
-This attribute is available only on “Structured Targets” Templates for non-postal Barcode symbologies. Zebra recommends selecting this attribute to help improve processing time whenever it is known that a barcode always will be in the same location on a form. 
+Zebra recommends selecting the fixed-location attribute to help improve processing time whenever it is known that a barcode will be in a consistent location. 
 
 **&#55;. When the Template is finished, Download it to the local development host**:
 
 ![img](image40.png)
 <br>
 
-**The Template can now be distributed to scanning devices**. 
+**The Template can now be deployed to scanning devices**. 
 
-### Deploy to Devices
+----
 
+### Deploy Templates 
+The deployment location of Templates to the device varies depending on whether SimulScan is to be used through Zebra's [DataWedge service](../../../../datawedge) or through an organization's own app written with [EMDK](../../../../emdk-for-android) and using the SimulScan APIs. 
+
+**Zebra recommends [validating Templates](#templatevalidation) before deployment**. While this feature is still currently in beta, validation can provide useful information about the completeness of a Template and its Field properties and settings. 
+
+**Methods of Template deployment**: 
+
+* **Manually** via USB cable to the device using the Android Debug Bridge (ADB) 
+* **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
+* **Remotely** using [StageNow](../../../../stagenow) and the [UI Manager](/mx/uimgr/) service
+* Remotely through a company's own mobile device management (MDM) system (if supported by that system)
+
+Alternatively, Templates saved to the `/<accountID>/templates/release/` folder on the Template Builder web site can be accessed programmatically through EMDK APIs using the `FetchTemplate()` method. The path will appear similar to the image below: 
+
+![img](image6g.png)
+<br>
+
+**If using SimulScan through DataWedge, deploy Template(s) to the device in**: 
+
+* `/enterprise/device/settings/datawedge/templates/` folder
+
+**If using SimulScan through EMDK, deploy Template(s) to** 
+
+* `/Android/data/` or any other folder accessible to the app
+
+**Note: All files deployed within the** `/enterprise/` **folder will persist on the device following an Enterprise Reset**. 
+
+-----
+
+MODIFY A TEMPLATE
+
+REMANING THE TEMPLATE saved only the mappings, not the image  
+
+Licensing
+Templates that include OCR or OMR functionality will require an additional license to be purchased to unlock its full functionality. Below are the details to purchase, deploy and install licenses.
+
+
+Purchasing a license
+- Licenses can be purchased from https://softwarelicensing.zebra.com/
+- Documentation at https://softwarelicensing.motorolasolutions.com/documentation/index.html 
+- Licenses can be purchased for a specific device based on the serial number or for larger deployments using the enterprise-wide deployment license
+ 
+Installation 
+- Licenses are presently only supported only on TC55 and TC75 devices right now.
+- Licenses can be installed in one of the below two ways:
+Option 1 : Using the built-in Settings app 
+Use this option to install an Individual license or a fewer number of licenses.
+- Copy the License.xml file downloaded from the licensing server to an accessible location on the device.
+- Launch the Settings app -> About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license -> point to the file on the device.
+- This will install the license. 
+Option 2:  Using StageNow.
+Use this option for larger deployments.
+Please refer StageNow’s documention for further details.
+StageNow includes wizards to deploy content specific to SimulScan to make this deployment simpler.
+ 
+Usage 
+- Nothing required.  Once a license is installed, the full functionality of SimulScan will be unlocked. 
+- A given license enables SimulScan features leveraged via DW, EMDK or Rho [in the future] for a given device.
+- A factory reset will remove the license entitlement.
+
+Multi-Template 
+A Template is associated with a single document. A user can then create a Template XML file that stitches together multiple single Templates to form one larger Template, called as “multi-template”. This would serve well in use-cases given an end-user workflow where the user works with a small set of multiple document in a given day (around two to six). A single multi-template can be created for all Documents, so the app would only need to load a single Template to cater to all forms in a workflow. The software auto-selects one of the four documents providing the user with feedback as well. This feature is presently is still in Beta.
+
+Grouped Regions
+This feature serves well in use-cases where a logical entity is split into multiple fields in a document (e.g. address). These multiple fields can be grouped logically into one group to help in the next level of processing like address validation or translation.
+
+Secure Storage
+All Templates created by a user are stored in a secure location for future reference. Folders are created with the login user name and the user can use the File -> Manage Templates option to manage their folder. The user can create folders, cut, copy or move templates. A default “Release” folder is pre-created which is visible from the SimulScan client on the device when provided the right login credentials.
+
+Validation
+Validation provides a mechanism with which a Template can be verified on the Template Builder before they are deployed to devices for use. This feature validates if the “fields” marked on the document and the properties set for each of the field are correct, prompting the user to rectify the Template if required. Validation is still in Beta. 
 
 Template Persistence
 Template Builder provides a mechanism to save Templates into a dedicated space for your User ID on the server. Open/Save opens or saves a given Template into your space in the server.
@@ -707,44 +779,8 @@ When a form is parsed by decoder engine successfully, you can review the results
 By clicking on each of the field you can navigate through the parsed data on the left-hand side window. For OCR data it also shows the accuracy level for each line of the region it parsed as “high”, “medium” or “low” in addition to the decoded output. Accuracy level for each of the line is separated by the last colon(:) of that line. And for OMR regions it indicates “Checked”, “UnChecked” or “Undecided” states.
 
 --image--
+deploy removed
 
-
-Template deployment 
-Once created and validated, Templates created need to be deployed onto the devices. 
-Templates are referenced by the application on the support Zebra mobile devices that leverage SimulScan APIs via DataWedge, EMDK APIs or Rho APIs.
-Templates will need to be deployed specifically to the /enterprise/device/settings/datawedge/templates/ folder if DataWedge is being used.
-Templates can be deployed to any accessible folder on the device in the case of EMDK APIs or Rho API.
-Alternatively, Templates saved in the ‘Release’ folder on the Template Builder utility can be accessed programmatically via EMDK API and Rho API using the FetchTemplate() API.
-While, Templates can be copied over vis USB for a smaller deployments, it is recommended that StageNow or an MDM be used for larger deployments. 
-The StageNow tool includes a wizard for SimulScan to make this deployment process simpler.
-
-
-Licensing
-Templates that include OCR or OMR functionality will require an additional license to be purchased to unlock its full functionality. Below are the details to purchase, deploy and install licenses.
-
-
-Purchasing a license
-- 	Licenses can be purchased from https://softwarelicensing.zebra.com/
--          Documentation at https://softwarelicensing.motorolasolutions.com/documentation/index.html 
--          Licenses can be purchased for a specific device based on the serial number or for larger deployments using the enterprise-wide deployment license
- 
-Installation 
--          Licenses are presently only supported only on TC55 and TC75 devices right now.
-- 	Licenses can be installed in one of the below two ways:
-Option 1 : Using the built-in Settings app 
-Use this option to install an Individual license or a fewer number of licenses.
--          Copy the License.xml file downloaded from the licensing server to an accessible location on the device.
--          Launch the Settings app -> About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license -> point to the file on the device.
--          This will install the license. 
-Option 2:  Using StageNow.
-Use this option for larger deployments.
-Please refer StageNow’s documention for further details.
-StageNow includes wizards to deploy content specific to SimulScan to make this deployment simpler.
- 
-Usage 
--          Nothing required.  Once a license is installed, the full functionality of SimulScan will be unlocked. 
--          A given license enables SimulScan features leveraged via DW, EMDK or Rho [in the future] for a given device.
--          A factory reset will remove the license entitlement.
 Appendix
 
 

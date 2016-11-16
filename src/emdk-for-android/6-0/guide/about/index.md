@@ -44,12 +44,6 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * ET50 - Lollipop (5.1.1)
 * ET55 - Lollipop (5.1.1)
 
->Notes: 
-	
-
-
-
-
 
 **EMDK for Android v6.0**
 

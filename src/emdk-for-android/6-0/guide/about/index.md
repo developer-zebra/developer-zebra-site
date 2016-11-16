@@ -45,7 +45,6 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * ET55 - Lollipop (5.1.1)
 
 
-**EMDK for Android v6.0**
 
 ## Important News
 * EMDK for Android support for Payment APIs is **terminated** - With EMDK for Android v6.0, the support for Payment APIs is terminated. Even though this feature is available in this release, it must not be used in production environment. EMDK for Android v5.0 will continue to support Payment APIs.

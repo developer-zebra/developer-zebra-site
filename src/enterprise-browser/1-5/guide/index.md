@@ -24,8 +24,6 @@ automenu:
           url: ShortcutCreator
     - title: Application Usage
       items:
-        - title: Certificates
-          url: certificates
         - title: DataWedge
           url: datawedge
         - title: DOM Injection
@@ -54,6 +52,12 @@ automenu:
           url: elements
         - title: From RhoMobile 4.x
           url: rhomobile
+    - title: Security
+      items:
+        - title: Certificates
+          url: certificates
+        - title: TLS/SSL Compliance
+          url: compliance
 product: Enterprise Browser
 productversion: '1.5'
 ---

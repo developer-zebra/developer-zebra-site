@@ -593,6 +593,9 @@ var sitebuild = Metalsmith(__dirname)
         automenu: false
     }))
     .use(foldermenu({
+        folder: 'simulscan/1-1/'
+    }))
+    .use(foldermenu({
         folder: 'stagenow/2-2/'
     }))
     .use(foldermenu({

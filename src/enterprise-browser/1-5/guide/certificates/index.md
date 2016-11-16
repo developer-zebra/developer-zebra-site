@@ -9,6 +9,10 @@ Secure Sockets Layer (SSL) Certificates can be used by Enterprise Browser to est
 
 This guide explains how client-side certificates are used on Zebra devices running Android and Windows Mobile/CE, how to create them for a device, and how to store and specify their location on the device so that Enterprise Browser can access them when needed. For help creating server-side certificates, please refer to the server's documentation. 
 
+See also: [TLS/SSL Compliance guide](../compliance). 
+
+-----
+
 ## OpenSSL
 Tools such as [OpenSSL](https://www.openssl.org/docs/faq.html) can be useful for creating and working with certificates, and most of of its capabilities are accessible through [CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html). Some typical usages are shown below. Before attempting to create certificates using the steps below, [download OpenSSL](https://www.openssl.org/source/) and install it. 
 

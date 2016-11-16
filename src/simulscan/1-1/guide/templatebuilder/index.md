@@ -20,12 +20,12 @@ For example, a company that receives regular shipments accompanied with a label 
 
 -----
 
-### What's in This Guide
+### In This Guide
 This guide provides step-by-step instructions for using the GUI-based Template Builder tool to [create Templates](#usingtemplatebuilder) and them to the devices. For those not familiar with SimulScan concepts and terminology, please see the [About SimulScan](../about) page before proceeding. 
 
 -----
 
-### Template Builder Terms
+### Terminology
 
 **Anchor Element(s) -** one or more unchanging images or other Document attributes (i.e. company logo) that SimulScan can use to determine Document orientation.
 

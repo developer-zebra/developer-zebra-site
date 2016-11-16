@@ -5,15 +5,15 @@ product: SimulScan
 productversion: '1.1'
 ---
 
-##Overview
-SimulScan is an end-to-end data capture solution for developers building apps for Zebra Android devices intended to capture data with the device scanner. It contains powerful image capture technology that can acquire of the contents of an entire form in a single scan. Forms can include bar codes, text fields, phone numbers, images, signatures, even checkboxes; SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
+## Overview
+SimulScan is an end-to-end data capture solution for developers building apps for Zebra Android devices intended to capture data with the device scanner. It contains powerful image capture technology that can acquire the contents of an entire form in a single scan. Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
 
-###Benefits
+### Benefits
 
 * **Decodes multiple barcodes** with a single scan (Multi-barcode Mode)
 * **Automates data entry** with optical character recognition (OCR)
 * **Simplifies workflow exceptions** with optical mark recognition (OMR) and Signature presence detection
-* **Improves overall worker efficiency** and accuracy
+* **Improves overall worker efficiency** and accuracy of input
 
 **Simultaneous capture can include**: 
 
@@ -24,19 +24,19 @@ SimulScan is an end-to-end data capture solution for developers building apps fo
 * **Signatures** (captured as an image)
 * **Checkboxes** (captured as yes/no)
 
-###Requirements
+### Requirements
 * **A Zebra TC55, TC70, TC75, TC8000 device** running Android
 * **Camera or 2D imager** (camera only on some TC70 devices)
-* **An app (or DataWedge) set to access SimulScan** on the device
+* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
 * **A per-device License** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
 
 ## How it Works
-Templates are the key to controlling the power of SimulScan and directing its capabilities as needed. In **Multi-barcode Mode**, SimulScan can capture an unlimited number of barcodes (of the same or different symbologies) from a single form. In **Mixed-data Mode**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single, structured form. Both modes employ Templates, which are used to identify the type of data to be extracted from each region of a form. The location of each region is identified relative to an "Anchor Barcode," which maintains those locations in case the device or form change orientation. 
+SimulScan works through Templates, which are the key to controlling its power and directing its capabilities as needed. In **Multi-barcode Mode**, SimulScan can capture an unlimited number of barcodes (of the same or differing symbologies) from a single form. In **Mixed-data Mode**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single, structured form. Both modes employ Templates, which are used to identify the type of data to be extracted from each region of a form. The location of each region is identified relative to "Anchor Elements," which set a reference to those locations in case the orientation of the device or form changes. 
 
-SimulScan can be accessed in one of two ways. It can be selected as an Input Plug-in using [DataWedge](../../../../datawedge), or accessed from within an Android app using the [SimulScan APIs](http://zebra-stage.github.io/emdk-for-android/6-0/api/reference/com/symbol/emdk/simulscan/package-frame.html). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all feature and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
+SimulScan can be accessed in one of two ways. It can be selected as an Input Plug-in using Zebra's [DataWedge](../../../../datawedge) service, or accessed directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
 
 ### Multi-barcode Mode
-**By far the most common usage scenario is Multi-barcode Mode**, which is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [Licensing](../license). **The 2D imager is the most effective device for this mode**. 
+**By far the most common usage scenario is Multi-barcode Mode**, which is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [Licensing](../license). **The 2D imager is the most effective device for this mode**, and most Zebra devices have one. 
 
 <img style="height:350px" src="msi_reader.png"/>
 *A typical barcode-only form, SimulScan's most common and effective use case*.
@@ -49,13 +49,13 @@ SimulScan can be accessed in one of two ways. It can be selected as an Input Plu
 Some data-acquisition scenarios call for creation of a type-specific Template, for example to capture all the barcodes on the form, or to use (OCR) to capture only an address (not shown). For another example application, a Template might be created to capture only the machine-readable zone (MRZ) data from travel documents. -->
 
 ### Mixed-data Mode  
-**A less common usage scenario is Mixed-data Mode**, which  captures multiple data types from mixed sources. The form below contains a barcode, account numbers and other numerical shipper information, company names and addresses for the shipper and receiver, checkboxes with various values, and a signature and date. This otherwise time-consuming and error-prone data-capture task can be performed with SimulScan and a carefully crafted Template created in advance and designed specifically for this form. 
+**A less common usage scenario is Mixed-data Mode**, which  captures multiple data types from mixed sources. The form below contains a barcode, account numbers and other numerical shipper information, company names and addresses for the shipper and receiver, checkboxes with various values, and a signature and date. This otherwise time-consuming and error-prone data-capture task can be performed in seconds with SimulScan and a carefully crafted Template. 
 
 ![img](template.png)
 _Click on image to enlarge_
 <br>
 
-Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever this form is used, and that only the data itself will change for each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, the developer can map data from each region of the form to specific fields in an application. 
+Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used, and that only the data itself will change for each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, SimulScan learns what to expect from each region of a form, and the developer can map data from each region to specific fields of an application. 
 
 For example, in the upper-right corner of the sample form above will always be located a barcode identifying the waybill number. The lower-right corner will always contain the signature and date. Data from those fields can then be used to automatically populate a receiving record with each incoming shipment that's accompanied by this form. **The camera is the most effective device for this mode**. 
 

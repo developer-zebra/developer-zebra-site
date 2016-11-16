@@ -6,15 +6,22 @@ productversion: '1.1'
 ---
 ##Overview
 
+SimulScan can be accessed through DataWedge or from within an app using [SimulScan APIs](../../api). 
+
+
+It can be selected as an Input Plug-in using Zebra's [DataWedge](../../../../datawedge) service, or accessed directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
 
 raw md link:
 
-![img](template.png)
+![img](SimulScan_input.png)
+
+
+[SimulScan APIs](../../api)
 
 
 HTML w/ 350px constriction:
 
-<img style="height:350px" src="template.png"/>
+<img style="height:350px" src="SimulScan_input.png"/>
 _Launcher icon for DataWedge 6.x_
 <br>
 

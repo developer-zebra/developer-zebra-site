@@ -5,15 +5,15 @@ product: SimulScan
 productversion: '1.1'
 ---
 ##Overview
-A Demo App is included with all [devices that support SimulScan](../about/#supporteddevices) and is intended to quickly demonstrate how SimulScan works and what it can do. The Demo App also provides a way to test custom user-created templates that implement Multi-barcode, signature capture, Optical Character Recognition OCR, and Optical Mark Recognition (OMR, i.e. checkboxes) for SimulScan Readable Forms.
+A Demo App is included with all [devices that support SimulScan](../about/#supporteddevices) and is intended to quickly demonstrate how SimulScan works and what it can do. The Demo App also provides a way to test user-created Templates that implement Multi-barcode, signature capture, OCR, OMR and other SimulScan features.
 
 **The Demo App cannot save data and is not suitable for production environments**. 
 
 ###Demo App features
 
-* Form Recognition and capture
-* Multi-Barcode scanning on a structured form
-* Multi-Barcode scanning on an unstructured form
+* Form recognition and capture
+* Multi-barcode scanning on a structured form
+* Multi-barcode scanning on an unstructured form
 * OCR (Single- and multi-line options for alphanumeric characters)
 * Optical Mark Recognition (OMR) for checkboxes
 * Machine Readable Zone (MRZ) for passports and other travel documents

@@ -5,14 +5,12 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-The ability to scan fewer than 10 barcodes simultaneously using the Multi-barcode feature is included free with all devices that support SimulScan. A SimulScan license is required for each device to unlock all advanced functionality, including optical character recognition (OCR), optical mark recognition (OMR) and Multi-barcode for 10 or more barcodes at a time. A license also is required to enable APIs to access SimulScan via DataWedge, EMDK or RhoMobile apps, which includes Enterprise Browser. 
+The ability to scan as many as nine (9) barcodes simultaneously the Multi-barcode feature is included free with all devices that support SimulScan, provided the scans are performed through an app that uses [DataWedge](../../../../datawedge) (which is also free). **A SimulScan license is required for each device to unlock SimulScan's advanced features**, such as optical character recognition (OCR), optical mark recognition (OMR) and Multi-barcode for 10 or more barcodes at a time. A license also is required to use [SimulScan APIs](../../api) to access SimulScan directly from within an app or from [Enterprise Browser](../../../../enterprise-browser).  
 
-A license is NOT required to use the demo application.
+**A license is NOT required to use the [SimulScan Demo App](../demo)**.
 
-Demo License
-
-
-Demo Licenses are available for customers evaluating SimulScan and for developers looking to begin integration of SimulScan into their applications. To request a demo license to enable the SimulScan functionality and enable the programming interfaces on a device, please email NMV386@zebra.com with the subject header, "SimulScan Demo License Request."
+## Demo License
+Demo Licenses are available for customers evaluating SimulScan, and for developers that are about to begin integrating SimulScan into their applications. To request a demo license to enable the SimulScan functionality and enable the programming interfaces on a device, please email NMV386@zebra.com with the subject header, "SimulScan Demo License Request."
 
 Demo licenses are generally sent within one business day of being requested.
 

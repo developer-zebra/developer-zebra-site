@@ -5,7 +5,9 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-The ability to scan as many as nine (9) barcodes simultaneously the Multi-barcode feature is included free with all devices that support SimulScan, provided the scans are performed through an app that uses [DataWedge](../../../../datawedge) (which is also free). **A SimulScan license is required for each device to unlock SimulScan's advanced features**, such as optical character recognition (OCR), optical mark recognition (OMR) and Multi-barcode for 10 or more barcodes at a time. A license also is required to use [SimulScan APIs](../../api) to access SimulScan directly from within an app or from [Enterprise Browser](../../../../enterprise-browser).  
+SimulScan can be used without a License to scan barcodes only, provided that no more than nine (9) barcodes are scanned from a single Document, and that the scanning app is associated with the Zebra [DataWedge](../../../../datawedge) scanning service. **A SimulScan License is required for scanning 10 or more barcodes at a time, for access to advanced features** such as optical character recognition (OCR), optical mark recognition (OMR) or to use [SimulScan APIs](../../api) to access SimulScan functions from within an app or from [Enterprise Browser](../../../../enterprise-browser).  
+
+*A SimulScan License is required for each device that will access SimulScan advanced features*. 
 
 **A license is NOT required to use the [SimulScan Demo App](../demo)**.
 

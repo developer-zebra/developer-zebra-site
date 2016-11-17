@@ -10,12 +10,12 @@ SimulScan is an end-to-end data capture solution for developers building apps fo
 
 ### Benefits
 
-* **Decodes multiple barcodes** with a single scan (Multi-barcode Mode)
+* **Decodes multiple barcodes** with a single scan
 * **Automates data entry** with optical character recognition (OCR)
 * **Simplifies workflow exceptions** with optical mark recognition (OMR) and Signature presence detection
 * **Improves overall worker efficiency** and accuracy of input
 
-**Simultaneous capture can include**: 
+**Simultaneously capture**: 
 
 * **Barcodes** (single or multiple symbologies)
 * **Text** (name and address, product names, etc.)
@@ -31,9 +31,11 @@ SimulScan is an end-to-end data capture solution for developers building apps fo
 * **A per-device License** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
 
 ## How it Works
-SimulScan works through Templates, which are the key to controlling its power and directing its capabilities as needed. In **Multi-barcode Mode**, SimulScan can capture an unlimited number of barcodes (of the same or differing symbologies) from a single form. In **Mixed-data Mode**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single, structured form. Both modes employ Templates, which are used to identify the type of data to be extracted from each region of a form. The location of each region is identified relative to "Anchor Elements," which set a reference to those locations in case the orientation of the device or form changes. 
+SimulScan works through Templates, which identify regions of a form and the type of data to be extracted from each. Some regions are designated as "Anchor Elements," which set a reference to other regions to compensate for changes in the orientation of the device or the form. 
 
-SimulScan can be accessed in one of two ways. It can be selected as an Input Plug-in using Zebra's [DataWedge](../../../../datawedge) service, or accessed directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
+In **Multi-barcode Mode**, SimulScan can capture an unlimited number of barcodes from a single form. These barcodes can be of the same or differing symbologies and found on structured forms or those that might change from one scan to another. In **Mixed-data Mode**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single form, but its layout must always be the same (see Structured and Unstructured Targets in the [Template Builder Glossary](../templatebuilder/#glossary)). 
+
+**SimulScan is accessed** either by selecting it as an Input Plug-in using Zebra's [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
 
 ### Multi-barcode Mode
 **By far the most common usage scenario is Multi-barcode Mode**, which is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [Licensing](../license). **The 2D imager is the most effective device for this mode**, and most Zebra devices have one. 

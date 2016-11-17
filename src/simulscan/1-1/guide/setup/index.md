@@ -13,7 +13,7 @@ SimulScan can be accessed by selecting it as an Input Plug-in with Zebra's [Data
 -----
 
 ### Access SimulScan with DataWedge
-Before SimulScan can be used, at least one Template must be present on the device. DataWedge includes four generic templates, explained below, that might be adequate for some scenarios. For more advanced use-cases, Templates can be created from scratch [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified for individual use with Template Builder. 
+Before SimulScan can be used, at least one Template must be present on the device. DataWedge includes four generic templates that might be adequate for some scenarios (explained below). For more advanced use-cases, Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified with Template Builder. 
 
 If using Templates already on the device, skip to the "Activate SimulScan" section. 
 
@@ -32,10 +32,12 @@ See the [Template Builder guide](../templatebuilder) for details and access info
 
 #### Activate SimulScan:
 
-When the desired Templates are stored on the device, activate SimulScan in DataWedge by setting it as the Input source when configuring a DataWedge Input Plug-in (see below). See the [SimulScan Input section](http://techdocs.zebra.com/datawedge/6-0/guide/setup/#simulscaninput) of the DataWedge documentation for full details. 
+When the desired Templates are stored on the device, activate SimulScan by setting it as the Input source when configuring an Input Plug-in (see below) in DataWedge. See the [SimulScan Input section](http://techdocs.zebra.com/datawedge/6-0/guide/setup/#simulscaninput) of the DataWedge documentation for full details. 
 
 **&#49;. Open DataWedge** and the Profile that will use SimulScan.
+
 **&#50;. Select "Input Plug-in,"** scrolling as necessary.
+
 **&#51;. Select SimulScan** as the Input Source. A screen appears similar to the image below: 
 
 <img style="height:350px" src="Figure_13_SimulScan_prefs.png"/>
@@ -46,7 +48,7 @@ _SimulScan options within DataWedge_
 
 **Device Selection -** permits selection of the device camera or the default scanning device set by the system.
 
-**Template selection -** sets a SimulScan Template for the Profile being configured. Custom Templates installed in the `/enterprise/device/settings/datawedge/` directory on the device will appear along with these four templates, which are included with DataWedge:
+**Template selection -** sets a SimulScan Template for the Profile being configured. Custom Templates installed in the `/enterprise/device/settings/datawedge/` directory on the device will appear along with the following four templates included with DataWedge:
 
 * **Default-DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present on the form. This is the default form if none is selected.
 
@@ -75,7 +77,7 @@ _SimulScan options within DataWedge_
 
 * **Picture-region data** can be retrieved only through the Intent Output Plug-in.
 
-SimulScan is now ready for use. 
+**SimulScan is now ready for use**. 
 
 -----
 

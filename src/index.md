@@ -188,10 +188,10 @@ products:
     sections:
       - title: About
         url: /simulscan/1-1/guide/about
-      - title: Setup and Usage
+      - title: Setup
         url: /simulscan/1-1/guide/setup
       - title: Template Builder
-        url: /simulscan/1-1/guide/template
+        url: /simulscan/1-1/guide/templatebuilder
       - title: APIs
         url: /simulscan/1-1/api
       - title: Templates

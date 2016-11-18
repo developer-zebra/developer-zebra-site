@@ -15,18 +15,27 @@ SimulScan can be accessed by selecting it as an Input Plug-in with Zebra's [Data
 ### Access SimulScan with DataWedge
 Before SimulScan can be used, at least one Template must be present on the device. DataWedge includes four generic templates that might be adequate for some scenarios (explained below). For more advanced use-cases, Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified with Template Builder. 
 
-If using Templates already on the device, skip to the "Activate SimulScan" section. 
+**Templates included with DataWedge**:
+
+* **Default-DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
+
+* **Default-DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+
+* **Default-One-Barcode.xml -** decodes a single barcode in the form and returns a single data region as the output.
+
+* **Default-Two-Barcodes.xml -** decodes two barcodes in a form and returns the data as two data regions.
+
+If using Templates already present on the device, skip to the "Activate SimulScan" section. 
 
 #### Create a Template:  
 
-1. Log into the [Template Builder web site](http://simulscan.zebra.com).
-2. Select a Template type. 
-3. Upload an image of the Document to be scanned (.bmp, .jpg, .png or PDF).
-4. Identify regions of the Document and the data types (barcodes, text, etc.) of each.
-5. **Save work often**. Template Builder does not automatically save changes. 
-6. Download the completed Template(s) to the development host (local PC). 
-7. Copy the Template file(s) to the device that will be performing the scans. 
-8. Select the Template from within the scanning app. 
+1. **Log in** to the [Template Builder web site](http://simulscan.zebra.com).
+2. **Select the Template type** to create. 
+3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF).
+4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
+5. **Save and download** the completed Template(s) to the development host (local PC). 
+6. **Copy Template(s) to the device** that will be performing the scans. 
+7. **Activate the Template** from within DataWedge (see below) or other scanning app. 
 
 See the [Template Builder guide](../templatebuilder) for details and access information. 
 
@@ -48,33 +57,22 @@ _SimulScan options within DataWedge_
 
 **Device Selection -** permits selection of the device camera or the default scanning device set by the system.
 
-**Template selection -** sets a SimulScan Template for the Profile being configured. Custom Templates installed in the `/enterprise/device/settings/datawedge/` directory on the device will appear along with the following four templates included with DataWedge:
+**Template selection -** sets a SimulScan Template for the Profile being configured. Custom Templates installed in the `/enterprise/device/settings/datawedge/` directory on the device will appear along with the four templates included with DataWedge (listed above). 
 
-* **Default-DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present on the form. This is the default form if none is selected.
+**Region separator -** used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
 
-* **Default-DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+**Region Separator possible values**:
 
-* **Default-One-Barcode.xml -** decodes a single barcode in the form and returns a single data region as the output.
-
-* **Default-Two-Barcodes.xml -** decodes two barcodes in a form and returns the data as two data regions.
-
-**Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
-
-**Possible values**:
-
-* None (default)
-* Tab
-* Line feed
-* Carriage return
+* **None** (default)
+* **Tab**
+* **Line feed**
+* **Carriage return**
 
 **SimulScan Capture Rules**:
 
 * **Text captured through SimulScan is concatenated** into a single string, and processing is performed on that string.
-
 * **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled.
-
 * **Barcode, OCR and OMR regions are considered text regions**. When using keystroke output and IP output, only text-region data will be dispatched to the foreground application or the remote server.
-
 * **Picture-region data** can be retrieved only through the Intent Output Plug-in.
 
 **SimulScan is now ready for use**. 

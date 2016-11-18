@@ -21,7 +21,7 @@ For example, a company that receives regular shipments accompanied with a label 
 -----
 
 ### In This Guide
-This guide provides step-by-step instructions for using the GUI-based Template Builder tool to [create Templates](#usingtemplatebuilder) and them to the devices. For those not familiar with SimulScan concepts and terminology, please see the [About SimulScan](../about) page before proceeding. 
+This guide provides step-by-step instructions for using the GUI-based Template Builder tool to [create Templates](#usingtemplatebuilder) and deploy them to the devices. A familiarity with SimulScan concepts and terminology is required. If necessary, please see the [About SimulScan](../about) page before proceeding. 
 
 -----
 
@@ -91,6 +91,8 @@ Template Builder is free but registration might be required. Zebra customers, pa
 ![img](image5.png)
 <br>
 
+-----
+
 **&#50;. Point a browser to [simulscan.zebra.com](https://simulscan.zebra.com)** and enter the login credentials. A screen appears similar to the image below: 
 
 ![img](image6.png)
@@ -114,6 +116,8 @@ Template Builder is free but registration might be required. Zebra customers, pa
  * Use OCR for a single line of alpha/numeric text 
  * Use OCR for a multiple lines of alpha/numeric text 
 
+-----
+
 **&#51;a. If selecting Structured Targets**:
 * An Open... dialog appears
 * Select the image (.bmp, .jpg, .png or PDF) of the Document for which to create the Template**
@@ -122,25 +126,43 @@ Template Builder is free but registration might be required. Zebra customers, pa
 * Maximum image file size is 5MB
 * For a PDF, select page number from the drop-down (if necessary) 
 
+-----
+
 **&#51;b. If selecting Unstructured Targets**:
 
- * Select "Multi-barcode" to capture barcodes or "OCR" for alpha/numeric text (see below)
-
+ * Select "Multi-barcode" to capture barcodes or "OCR" for alpha/numeric text:
+ 
 ![img](image6a.png)
 <br>
 
-**&#52;. Save the Template to proceed**:
+>>  If Multi-barcode is selected upload an image **<u>WHICH MAKES NO SENSE</u> for unstructured targets** 
+
+a. **When selecting OCR**, a static image is automatically created (as below). 
+b. If Multi-line OCR is required, check the approproate box (arrow). 
+c. Configure other settings as required (**see Step 7** for details).  
+
+![img](unstructured_form.png)
+<br>
+
+
+> **Save the template and skip to [Step 7](#configureocrsettings)**. 
+
+-----
+
+**&#52;. Save the Template to proceed** using alpha/numeric characters:
 
 ![img](image6b.png)
 <br>
 
-> **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files. They are not intended to be edited manually. 
+**Note**: The Template name prefix "Default -" is reserved for system use. All other alpha/numeric combinations are acceptable. 
+
+> **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files, and are not intended to be edited manually. 
 
 -----
 
 ### Identify Document Regions
 
-> **Skip to Step 7 for Unstructured Targets**. 
+> **If setting up an Unstructured Target, skip to [Step 7](#configureocrsettings)**. 
 
 After uploading an image of the target Document...
 
@@ -150,6 +172,8 @@ After uploading an image of the target Document...
 <br>
 
 **To adjust, click "Disable AutoCrop" and set Blue bounding box so that it's just outside the borders of the Document. Click "OK" when done. This serves as the base reference for identifying the form and processing its contents**.  
+
+-----
 
 **&#54;. Drag a box <u>from the upper-left corner to the lower-right corner</u> of each Region of the Document that contains data to be acquired**:
 
@@ -173,7 +197,7 @@ Provide (or confirm) the following required settings for each Field created:
  * Processing-mode settings (decoder type, text-type, etc.)
  * Select at least three "Anchor Elements" (explained below) 
 
-> **Be sure to save work often!** Template Builder does not automatically save changes. Unsaved changes will be lost if the screen is dismissed or the session timeout is reached.  
+> **Save work often!** Template Builder does not automatically save changes. Unsaved changes will be lost if the screen is dismissed or the session timeout is reached.  
 
 ### Select Anchor Elements
 In addition its use of Document border dimensions, SimulScan uses Fields, company logos or other unique attributes of a Document to positively identify it and determine its orientation relative to the scanner (i.e. whether it's upside down). Optionally, Anchor Elements can contain data to be acquired, such as a barcode or image. Zebra recommends that at least two Anchor Elements be identified in accordance with the guidelines below. 
@@ -198,7 +222,39 @@ _This attribute appears only in "Structured Targets" Templates that use non-post
 
 Zebra recommends selecting the fixed-location attribute to help improve processing time whenever it is known that a barcode will be in a consistent location. 
 
-**&#55;. When the Template is finished, Download it to the local development host**:
+-----
+
+### Configure OCR Settings 
+**&#55;. If not using OCR, Skip to [Step 8](#deploytemplates)**.  
+
+For OCR regions, it's important to configure parameters according to the expected input to maximize the accuracy of character recognition.  
+
+**Character subsets -** identifies the type of text coming that will be acquired:
+
+* **All caps alphabets -** text will contain all uppercase letters
+* **All small alphabets -** text will contain all lowercase letters
+* **Only Alphabets -** text contain only alpha characters (upper- and lowercase)
+* **All digits -** text contain only numbers
+* **Alphanumeric (default) -** text contain a combination of letters and numbers
+* **Enter custom sub string set here -** enter information about custom characters in the Custom Character Set text box
+
+**Regular Expressions -** used when it is known that the data will be presented in a particular pattern (i.e. MM/DD/YYYY), the pattern can be specified as a Regular Expression according to the table below.  
+
+![img](regular_expressions.png)
+<br>
+**Zebra recommends using this option only if the format defined can be guaranteed for the region**.
+
+SimulScan references the [Perl Compatible Regular Expressions (PCRE)](http://www.pcre.org/) library for regular-expression pattern matching. Setting the character subset is easy but coarse; setting the regular expression is complex but precise. Specifying _**both**_ the  subset _**and**_ the regex great narrows the range of possible candidates. Learn more by reading the [Perl RegEx Man Pages](http://perldoc.perl.org/perlre.html). 
+
+**Word Check -** enables a spell-check in the selected language. Use on regions known to contain only words.
+
+**Language -** English is the default. Switching to European will recognize characters typically found in European languages such as the digraph, circumflex and umlaut.
+
+-----
+
+### Deploy Templates 
+
+**&#56;. When finished with settings, select File -> Download Template** to download a copy to the local development host:
 
 ![img](image40.png)
 <br>
@@ -207,7 +263,6 @@ Zebra recommends selecting the fixed-location attribute to help improve processi
 
 ----
 
-### Deploy Templates 
 The deployment location of Templates to the device varies depending on whether SimulScan is to be used through Zebra's [DataWedge service](../../../../datawedge) or through an organization's own app written with [EMDK](../../../../emdk-for-android) and using the SimulScan APIs. 
 
 **Zebra recommends [validating Templates](#templatevalidation) before deployment**. While this feature is still currently in beta, validation can provide useful information about the completeness of a Template and its Field properties and settings. 
@@ -236,6 +291,7 @@ Alternatively, Templates saved to the `/<accountID>/templates/release/` folder o
 
 -----
 
+<!-- 
 MODIFY A TEMPLATE
 
 REMANING THE TEMPLATE saved only the mappings, not the image  
@@ -997,4 +1053,6 @@ There are three options for transmitting a UPCE1 preamble:
 ·        Preamble Country and Sys Char - Transmit System Character and Country Code (“0” for USA).
 ·        Preamble None - Transmit no preamble (default).
 Convert UPCE1 To UPCA - Enable this to convert UPCE1 decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable this to transmit UPCE1 decoded data as UPCE1 data, without conversion (default - disabled).
+
+-->
 		

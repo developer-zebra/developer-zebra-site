@@ -45,7 +45,7 @@ This guide provides step-by-step instructions for using the GUI-based Template B
 
 **Multi-Template -** a beta feature that allows multiple Templates to be treated as one to simplify workflow. 
 
-**OCR -** Optical Character Recognition, a processing mode for acquiring alpha/numeric characters.
+**OCR -** Optical Character Recognition, a processing mode for acquiring alpha/numeric characters. Currently supports English, French, German, Spanish and Portuguese. 
 
 **OMR -** Optical Mark Recognition, a processing mode for acquiring binary (yes/no) data from checkboxes.
 
@@ -72,16 +72,17 @@ This guide provides step-by-step instructions for using the GUI-based Template B
 ## Using Template Builder 
 Template Builder is free but registration might be required. Zebra customers, partners and ISVs with access to Partner Central can use their existing credentials for access. Others must register using the instructions below.
 
-**Note**: SimulScan can be used without a License if the requirement is to scan only barcodes through an app using [DataWedge](../../../../datawedge). A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
+**Note**: SimulScan can be used without a License to <u>only scan barcodes through an app using [DataWedge](../../../../datawedge)</u>. A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
 
 ### Quick Steps
-1. Log in, Select the Template Type.
-2. Upload an image of the Document to be scanned (.bmp, .jpg, .png or PDF).
-3. Identify regions of the Document and the data types (barcodes, text, etc.) of each.
-4. **Save work often**. Template Builder does not automatically save changes. 
-4. Download the completed Template(s) to the development host (local PC). 
-5. Copy the Template file(s) to the device that will be performing the scans. 
-6. If applicable, select the Template from within the scanning app.  
+1. [Create account](#createanaccount) (if necessary). 
+2. Log in at [simulscan.zebra.com](https://simulscan.zebra.com) (leave this site now).
+3. [Select the Template Type](#selecttemplatetype).
+4. Upload an image of the Document to be scanned (.bmp, .jpg, .png or PDF).
+5. **File --> Save Template** for the first time. Subsequent changes are saved automatically.
+6. [Identify regions](#identifydocumentregions) of the Document and the data types (barcodes, text, etc.) of each.
+7. [Configure OCR settings](#configureocrsettings) if OCR is to be used. 
+8. [Download and Deploy Template(s)](#deploytemplates) to scanning device(s). 
 
 -----
 
@@ -102,23 +103,25 @@ Template Builder is free but registration might be required. Zebra customers, pa
 
 ### Select Template Type
 
-**&#51;. Select the desired template type**: 
+**&#51;. Select the desired Template type**: 
 
-* **Structured Targets -** for layouts that **do not** change from one instance to another. Select this option to: 
- * Scan barcodes
- * Recognize characters (OCR)
- * Recognize check marks (OMR)
- * Capture Signature(s) or other images
- * Extract other key fields of interest
+**Structured Targets -** for layouts that **do not** change from one instance to another. Select this option to: 
 
-* **Unstructured Targets -** for layouts that change or that **have not** been defined with a Template. Select this option to: 
- * Scan multiple barcodes simultaneously 
- * Use OCR for a single line of alpha/numeric text 
- * Use OCR for a multiple lines of alpha/numeric text 
+* Scan barcodes
+* Recognize and acquire characters (OCR)
+* Recognize check marks (OMR)
+* Capture Signature(s) or other images
+* Extract other key fields of interest
+
+**Unstructured Targets -** for layouts that change or that **have not** been defined with a Template. Select this option to: 
+
+* Scan multiple barcodes simultaneously 
+* Use OCR for a single line of alpha/numeric text 
+* Use OCR for a multiple lines of alpha/numeric text 
 
 -----
 
-**&#51;a. If selecting Structured Targets**:
+**&#51;a. To select Structured Targets**:
 * An Open... dialog appears
 * Select the image (.bmp, .jpg, .png or PDF) of the Document for which to create the Template**
 * Minimum image resolution is 640x480 pixels
@@ -128,14 +131,14 @@ Template Builder is free but registration might be required. Zebra customers, pa
 
 -----
 
-**&#51;b. If selecting Unstructured Targets**:
+**&#51;b. To select Unstructured Targets**:
 
  * Select "Multi-barcode" to capture barcodes or "OCR" for alpha/numeric text:
  
 ![img](image6a.png)
 <br>
 
->>  If Multi-barcode is selected upload an image **<u>WHICH MAKES NO SENSE</u> for unstructured targets** 
+>>  **If Multi-barcode is selected upload an image of the target**. 
 
 a. **When selecting OCR**, a static image is automatically created (as below). 
 b. If Multi-line OCR is required, check the approproate box (arrow). 
@@ -149,12 +152,12 @@ c. Configure other settings as required (**see Step 7** for details).
 
 -----
 
-**&#52;. Save the Template to proceed** using alpha/numeric characters:
+**&#52;. Save the Template to proceed**. 
+
+**Note**: The Template name prefix "Default -" is reserved for system use. All other alpha/numeric combinations are accepted. 
 
 ![img](image6b.png)
 <br>
-
-**Note**: The Template name prefix "Default -" is reserved for system use. All other alpha/numeric combinations are acceptable. 
 
 > **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files, and are not intended to be edited manually. 
 
@@ -197,7 +200,7 @@ Provide (or confirm) the following required settings for each Field created:
  * Processing-mode settings (decoder type, text-type, etc.)
  * Select at least three "Anchor Elements" (explained below) 
 
-> **Save work often!** Template Builder does not automatically save changes. Unsaved changes will be lost if the screen is dismissed or the session timeout is reached.  
+> **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
 
 ### Select Anchor Elements
 In addition its use of Document border dimensions, SimulScan uses Fields, company logos or other unique attributes of a Document to positively identify it and determine its orientation relative to the scanner (i.e. whether it's upside down). Optionally, Anchor Elements can contain data to be acquired, such as a barcode or image. Zebra recommends that at least two Anchor Elements be identified in accordance with the guidelines below. 
@@ -252,137 +255,117 @@ SimulScan references the [Perl Compatible Regular Expressions (PCRE)](http://www
 
 -----
 
-### Deploy Templates 
+### Deploy Templates
 
-**&#56;. When finished with settings, select File -> Download Template** to download a copy to the local development host:
+**&#56;. When settings are configured as needed, select File -> Download Template** to download a copy to the local development host:
 
 ![img](image40.png)
 <br>
 
 **The Template can now be deployed to scanning devices**. 
 
-----
+**Zebra recommends [validating Templates](#validatetemplates) before deployment**. While this feature is still currently in beta, current validation functionality provides useful information about the completeness of a Template and its Field properties and settings. 
 
-The deployment location of Templates to the device varies depending on whether SimulScan is to be used through Zebra's [DataWedge service](../../../../datawedge) or through an organization's own app written with [EMDK](../../../../emdk-for-android) and using the SimulScan APIs. 
+#### How and Where to Place Files
+If using SimulScan through [DataWedge](../../../../datawedge), **Template files must be in the directory shown below**. 
 
-**Zebra recommends [validating Templates](#templatevalidation) before deployment**. While this feature is still currently in beta, validation can provide useful information about the completeness of a Template and its Field properties and settings. 
+**For DataWedge**:
+
+* `/enterprise/device/settings/datawedge/templates/`
+
+**For the SimulScan Demo App**:
+
+* `/sdcard/simulscan/templates/`
+
+**For a custom app**:
+
+* Any device folder accessible by the app 
+
+**Notes**:
+
+* All files deployed into `/enterprise/` will persist on the device following an Enterprise Reset. 
+* If using SimulScan through a custom-built Android app, Template(s) can be deployed to any folder accessible by the app or can remain online (see below). 
 
 **Methods of Template deployment**: 
 
-* **Manually** via USB cable to the device using the Android Debug Bridge (ADB) 
-* **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
-* **Remotely** using [StageNow](../../../../stagenow) and the [UI Manager](/mx/uimgr/) service
+* **Manually via USB** cable to the device using the Android Debug Bridge (ADB) 
+* **Remotely using [StageNow](../../../../stagenow)** and the [UI Manager](/mx/uimgr/) service
 * Remotely through a company's own mobile device management (MDM) system (if supported by that system)
+* **Programmatically through [EMDK for Android](../../../../emdk-for-android)** development tools
 
-Alternatively, Templates saved to the `/<accountID>/templates/release/` folder on the Template Builder web site can be accessed programmatically through EMDK APIs using the `FetchTemplate()` method. The path will appear similar to the image below: 
+#### Using the "FetchTemplate()" method call
+Templates saved to the `/<accountID>/templates/release/` folder on the Template Builder web site can be retrieved programmatically through EMDK APIs using the `FetchTemplate()` method. Use Template Builder to identify the exact path name when calling the method. 
+
+**For example, the path to the server-based Templates folder** from the image below would be: 
+
+* `/myAccount/templates/release/<template name>`
 
 ![img](image6g.png)
 <br>
 
-**If using SimulScan through DataWedge, deploy Template(s) to the device in**: 
+**To add a Template to the** `/release` **folder**: 
 
-* `/enterprise/device/settings/datawedge/templates/` folder
+1. Open the Template
+2. Select **Edit --> Release Template**
 
-**If using SimulScan through EMDK, deploy Template(s) to** 
-
-* `/Android/data/` or any other folder accessible to the app
-
-**Note: All files deployed within the** `/enterprise/` **folder will persist on the device following an Enterprise Reset**. 
+A copy of the Template is placed in the `/release` folder; the Template also remains in its original location. 
 
 -----
 
-<!-- 
-MODIFY A TEMPLATE
+### Create a Multi-Template
+A Multi-template consists of between two and six existing Templates grouped together and given a name. For devices that will regularly use more than one Template, a Multi-template can be deployed as a single entity to help improve worker productivity by quickening the selection of the right Template when needed. For example, if workers in a warehouse regularly encounter scan Documents from three specific suppliers, grouping the corresponding three Templates together quickens the selection of the right Template whenever it's time to scan. **This feature is currently in beta**. 
 
-REMANING THE TEMPLATE saved only the mappings, not the image  
+**To Create a Multi-template**:
 
-Licensing
-Templates that include OCR or OMR functionality will require an additional license to be purchased to unlock its full functionality. Below are the details to purchase, deploy and install licenses.
+After creating the Templates needed for grouping...  
 
+&#49;. Select **File --> Create New...Multi Template**.
+![img](image7.png)
+<br>
 
-Purchasing a license
-- Licenses can be purchased from https://softwarelicensing.zebra.com/
-- Documentation at https://softwarelicensing.motorolasolutions.com/documentation/index.html 
-- Licenses can be purchased for a specific device based on the serial number or for larger deployments using the enterprise-wide deployment license
- 
-Installation 
-- Licenses are presently only supported only on TC55 and TC75 devices right now.
-- Licenses can be installed in one of the below two ways:
-Option 1 : Using the built-in Settings app 
-Use this option to install an Individual license or a fewer number of licenses.
-- Copy the License.xml file downloaded from the licensing server to an accessible location on the device.
-- Launch the Settings app -> About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license -> point to the file on the device.
-- This will install the license. 
-Option 2:  Using StageNow.
-Use this option for larger deployments.
-Please refer StageNow’s documention for further details.
-StageNow includes wizards to deploy content specific to SimulScan to make this deployment simpler.
- 
-Usage 
-- Nothing required.  Once a license is installed, the full functionality of SimulScan will be unlocked. 
-- A given license enables SimulScan features leveraged via DW, EMDK or Rho [in the future] for a given device.
-- A factory reset will remove the license entitlement.
+&#50;. **Enter a name** for the Multi-template:
+![img](image17.png)
+<br>
 
-Multi-Template 
-A Template is associated with a single document. A user can then create a Template XML file that stitches together multiple single Templates to form one larger Template, called as “multi-template”. This would serve well in use-cases given an end-user workflow where the user works with a small set of multiple document in a given day (around two to six). A single multi-template can be created for all Documents, so the app would only need to load a single Template to cater to all forms in a workflow. The software auto-selects one of the four documents providing the user with feedback as well. This feature is presently is still in Beta.
+&#51;. **Click "+ Add Template" button**. A dialog appears similar to the image in Step 4. 
+![img](image18.png)
+<br>
 
-Grouped Regions
-This feature serves well in use-cases where a logical entity is split into multiple fields in a document (e.g. address). These multiple fields can be grouped logically into one group to help in the next level of processing like address validation or translation.
+&#52;. **Select the location of the Template** to be added: 
+![img](image18a.png)
+_If a new Template is required, click the "Create new template" button_.  
+<br>
 
-Secure Storage
-All Templates created by a user are stored in a secure location for future reference. Folders are created with the login user name and the user can use the File -> Manage Templates option to manage their folder. The user can create folders, cut, copy or move templates. A default “Release” folder is pre-created which is visible from the SimulScan client on the device when provided the right login credentials.
+As Templates are added, thumbnails will appear in the far-left column and field names of the selected Template in the center column. Actions taken in this mode will apply to the selected Template.
+![img](image19.png)
+<br>
 
-Validation
-Validation provides a mechanism with which a Template can be verified on the Template Builder before they are deployed to devices for use. This feature validates if the “fields” marked on the document and the properties set for each of the field are correct, prompting the user to rectify the Template if required. Validation is still in Beta. 
+&#53;. **Repeat Step 4 until all required templates are added** (max = 6).  
 
-Template Persistence
-Template Builder provides a mechanism to save Templates into a dedicated space for your User ID on the server. Open/Save opens or saves a given Template into your space in the server.
-Upload/Download allows for uploading/downloading a Template from/to your local machine. It is automatically saved in the server as well.
+&#54;. **To deploy Multi-template(s), see [Deploy Templates](#deploytemplates)** section, above. 
+
+-----
+
+### Modify a Template
+Existing Templates can be modified to address changes that occur to incoming Documents, to allow for workflow changes, to make adjustments to OCR or other settings based on input from the field, or for any other reason. 
+
+1. Log into the [Template Builder web site](https://simulscan.zebra.com). 
+2. Open the template to be modified.
+3. Edit Template settings as required.
+4. Save using **File --> Save Template** >>OR<< save as a new Template using **File --> Save as...**
+
+-----
+
+<!--
 
 
-Template Builder Window
-
-> FROM THE GETTING STARTED PAGE. YOU NEED? 
-
-
-GETTING STARTED
-This document assumes the reader has a basic knowledge of what SimulScan is and the features it supports. For those not aware, please visit the SimulScan Overview Page.
-
-Step 1 : Ensure your device has the latest release for the best performance
-
-SimulScan is currently supported and preinstalled on the devices listed here. Since it comes preinstalled on those devices, we recommend that users check the Zebra Support portal to get access to the latest device BSP and SimulScan release.
-
-
-Step 2 : Open the SimulScan Demo App to see and test functionality
-
-There is an easy to use demo application built into the OS to help you become familiar with and test the SimulScan functionality out of the box on our supported devices. To familiarize yourself with the demo app, you can watch the videos or review the documentation posted here. For your convenience, the demo app includes multiple templates that have already been developed and can be used out of the box with the demo app. Please print the templates to use with the demo app. The two templates are attached below. 
-
-a. Postal_TL.pdf - This form showcases the following SimulScan capabilities: 
-- Signature presence detected in forms 
-- Automated data entry with character recognition (OCR). English, Spanish, German, French and Portuguese are supported 
-- Simplified workflow exceptions with checked mark recognition[OMR]. Check boxes, radio buttons and bubbles are supported 
-- Real-time data processing on the device with no backend connectivity required 
-
-b. Manufacturing.pdf - This form showcases the below capabilities of SimulScan: 
-- MultiCode2.0 feature supports decoding of up to 6 multiple barcodes in one scan 
-
-All the enterprise grade barcode symbologies are supported. Symbologies and parameters configurable via an intuitive UI in the Template Builder. Please print out the .pdfs attached to this blog and try them out with the Showcase app.
-
-
-Step 3 : Create your own template
-
-Once you are familiar with the features, the next step is to create a template for a form you would like to capture. Here is a video demonstrating how to use Template Builder to create a template. 
-
-You can log in or sign up by visiting the Template Builder page at https://simulscan.zebra.com. Once you have logged in, you will need to decide what type of template you will create. Next, upload an image of your form to create your own template. Please leverage the Help Doc in the Template Builder by pressing F1. 
-
-Once created, the templates need to be downloaded to your computer in order to (mass) deploy to your device(s). There are two ways to deploy the file to your device. 
 
 Option 1: Side load or push via MDM 
 - For use by DataWedge, push the templates to "/enterprise/device/settings/datawedge/templates" folder on the device using either ‘adb push’ or ‘USB sync’ or your preferred staging/MDM tool. 
 - For RhoMobile access, the folder is configurable via the "templateDirectory" property. 
 - For the Demo App to access the template, place the folder in the external storage folder, SimulScan, Templates folder (with ADB, push via "Environment.getExternalStorageDirectory()/simulscan/templates"). 
 
-Option 2: Over Wifi for use with the Demo app or for programatic access 
+Option 2: Over Wi-Fi for use with the Demo app or for programmatic access 
 - On the TB, copy the template over to the "username\Release" folder. - Launch the Showcase app -> My template -> Select from server -> select the template. This will download the templates to the SimulScan Template folder in the external storage. 
 - The "release" folder on the TB is also programmatically accessible via the RhoMobile FetchTemplates() API.
 
@@ -415,7 +398,7 @@ The File menu has been updated to distinguish open/save from Upload/Download. Op
 NB. AutoSave will background save changes to the Template.
 Save As… has been added to allow easy duplication of Templates & Multi-Templates.
 Rename Multi Template has been added. Template renaming is handled in the Fields panel.
-Manage Template opens the O/S File dialogue to enable organization of Templates within the server store.
+Manage Template opens the O/S File dialog to enable organization of Templates within the server store.
 Create New… menu has two child options. Template & Multi Template creation.
 
 --image--
@@ -662,10 +645,10 @@ multi-template --image--
 
 other image - --image--
 
-0°: Rotate the region anticlockwise by 0deg before output.
-90°: Rotate the region anticlockwise by 90deg before output.
-180°: Rotate the region anticlockwise by 180deg before output.
-270°: Rotate the region anticlockwise by 270deg before output.
+0°: Rotate the region anticlockwise by 0 degrees before output.
+90°: Rotate the region anticlockwise by 90 degrees before output.
+180°: Rotate the region anticlockwise by 180 degrees before output.
+270°: Rotate the region anticlockwise by 270 degrees before output.
 
 
 Creating a New Template
@@ -690,7 +673,7 @@ Upon logging in successfully, the below landing page is displayed:
 Choose “Barcodes only” , “Structured Targets” or “Unstructured Targets” depending on the type of your Template you would like to create.
 
 
-4 Load an image of the document you’d like to describe (BMP and JPEG files are supported) and ensure the size of this pic is 1.5 MB or less; higher resolution images may work, but performance may be slower. It is also recommended the image be taken with the document placed flat against a contrasting background, facing perpendicular to the camera, and captured without any shape distortion.
+4 Load an image of the document you’d like to describe (BMP and JPEG files are supported) and ensure the size of this image is 1.5 MB or less; higher resolution images may work, but performance may be slower. It is also recommended the image be taken with the document placed flat against a contrasting background, facing perpendicular to the camera, and captured without any shape distortion.
 
 
 5 In the “Structured Targets” mode, after loading the sample image, the form border needs to be defined by adjusting the blue window as in the picture below. This serves as the base reference frame that the software detects for further processing. Ensure that this border matches the border of the uploaded form; if these borders do not match, the resulting output may be incorrect.
@@ -718,7 +701,7 @@ Next, the following screen will be displayed:
 Define the Template by entering a suitable Template name in the upper left box. Please note that Template name cannot start with “Default –“.
 
 
-7 For “Unstructured Targets” a static image is loaded automatically and you can create either “Single” or “Multi” line freeform OCR templates.  
+7 For “Unstructured Targets” a static image is loaded automatically and you can create either “Single” or “Multi” line free-form OCR templates.  
 
 --image--
 
@@ -1025,9 +1008,9 @@ ISBT128 Concatenation Mode - Select an option for concatenating pairs of ISBT co
 Check ISBT Table - The ISBT specification includes a table that lists several types of ISBT bar codes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable Check ISBT Table to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated. A check in the checkbox indicates that redundancy is enabled (default - disabled).
 Security Level - The scanner offers four levels of decode security for Code 128 bar codes. Select increasing levels of security for decreasing levels of bar code quality. There is an inverse relationship between security and scanner aggressiveness, so choose only that level of security necessary for any given application.
 ·        Security Level 0 - This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most “in-spec” bar codes.
-·        Security Level 1 - This setting eliminates most misdecodes (default).
-·        Security Level 2 - Select this option if Security level 1 fails to eliminate misdecodes.
-·        Security Level 3 - If Security Level 2 is selected and misdecodes still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out of spec bar codes. Selecting this level of security significantly impairs the decoding ability of the scanner. If this level of security is needed, try to improve the quality of the bar codes.
+·        Security Level 1 - This setting eliminates most mis-decodes (default).
+·        Security Level 2 - Select this option if Security level 1 fails to eliminate mis-decodes.
+·        Security Level 3 - If Security Level 2 is selected and mis-decodes still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out of spec bar codes. Selecting this level of security significantly impairs the decoding ability of the scanner. If this level of security is needed, try to improve the quality of the bar codes.
 
 
 Composite AB

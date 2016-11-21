@@ -354,7 +354,97 @@ Existing Templates can be modified to address changes that occur to incoming Doc
 3. Edit Template settings as required.
 4. Save using **File --> Save Template** >>OR<< save as a new Template using **File --> Save as...**
 
+![img](save_as.png)
+
+Related Guides: 
+
+* [DataWedge](../../../../datawedge)
+* [SimulScan APIs](../../api)
+* [Enterprise Browser](../../../../enterprise-browser)
+
 -----
+
+## Template Settings	
+The Template Settings panel is used to configure input source, flash mode, feedback and other settings that apply generally across an entire Template.  
+
+**To access the Template Settings panel**: 
+
+&#49;. Log into the [Template Builder web site](https://simulscan.zebra.com). 
+&#50;. Open the Template in need of settings adjustment. 
+&#51;. Select **Edit --> Template Settings**. A dialog appears similar to the image in Step 4. 
+
+![img](template_settings.png)
+<br>
+
+&#52;. Adjust settings as needed according to descriptions below: 
+![img](image32.png)
+<br>
+
+### Template Settings Panel
+
+**Input Source –** used to specify the input source (Camera or Imager) to use for the Template. Selecting "Default" allows the system to choose the input source as follows: 
+ * **Selects Camera** for Structured and Unstructured targets 
+ * **Selects Imager** for Barcode-only targets
+ * If no Imager is present, the camera is selected for all targets 
+ * If camera is disabled, Imager is selected for all targets 
+ * If no capture device is available, an error message is displayed
+
+**Flash Mode –** enables/disables use of the flash during capture.
+
+**Audio Feedback –** plays a sound when data is acquired (enabled by default).
+
+**Haptic Feedback –** operated the vibrator when data is acquired (enabled by default).
+
+**LED Feedback –** lashes the LED  when data is acquired (enabled by default).
+
+**UI Result Confirmation -** forces a user confirmation before sending acquired data to app (disabled by default for Barcode-only targets; enabled by default for Structured and Unstructured targets).
+
+**Identification Timeout –** sets the maximum time allowed to attempt to identify a target Document.
+
+**Processing Timeout –** sets the maximum time allowed to process a target Document after it has been identified.
+
+**Automatic Image Capture –** automatically triggers form processing, once identified. Uncheck to force the user to manually trigger form processing (once identified) by tapping or pressing the trigger button.
+
+**Auto Capture Sensitivity –** sets the sensitivity of the auto capture from 1-10 (most sensitive). Valid only when Automatic Image Capture is enabled.
+
+**Output Entire Form –** outputs an image of the entire form along with the extracted data. Valid only for Structured Targets. Enabling this feature affects scanning performance. 
+
+**Advanced Image Correction –** enables image correction for parsing targets that are slightly curved or crumpled.
+
+-----
+
+### Field Properties Panel
+The Field Properties panel is visible in the far-left column, and presents the Properties of the selected Field. Field Properties can be configured as follows:
+
+#### Field Information
+
+**Use Field to Identify Form -** designates the field as an Anchor Element, which SimulScan uses to identify a form, match it with Template and configure its Field properties accordingly. By default, the data in this field is not output for Templates made for Structured Targets.
+
+**Also Read Value from Field -** sets the Template to acquire data from a Field that is designated as an Anchor Element (the “Use Field to Identify Form” is checked). Enabled by default. 
+
+#### Field Adjustments
+
+**Width -** the width of the field, in pixels
+**Height -** the height of the field, in pixels
+**X -** the horizontal position of the field, in pixels, relative to the left-most edge of the form 
+**Y -** the vertical position of the field, in pixels, relative to the top of the form
+
+#### Processing
+
+**Barcode -** captures single or multiple barcodes in the field of view
+
+**OCR -** captures alpha/numeric text
+
+**OMR -** captures check marks and bubbles
+
+**Picture -** captures (as an image file) signatures, photos, entire documents 
+
+**Signature Presence -** determines whether a signature is present in the selected region, displays an error to the user if none is found. Applies only to Picture fields.
+
+**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. **Zebra recommends enabling this feature** whenever possible to improve the accuracy of form identification. Applies when the field is of “Barcode processing” mode and the Barcode Type is set to one of the supported symbologies for this feature. 
+
+_**Other Field Property settings may appear under certain conditions**_.
+
 
 <!--
 
@@ -427,82 +517,6 @@ Validate Template – Perform validation on the Template, ensuring that the crea
 Template Settings – Opens window that allows changing various parameters associated with the Template.
 
 --image--
-
-Template Settings	
-
---image--
-
-
-Input Source – Use to specify a particular inputs source Camera or Imager or Default. Choosing “Default” results in the input sources being activated as below on the device: 
-Camera for Structured and Unstructured targets 
-Imager for Barcode only targets
-In the absence of an Imager on the device, the camera is picked for Barcode only targets as well
-If the Camera is disabled, the Imager is picked as a fall back. If the Imager is also absent, an error message is shown.
-
-
-Flash Mode – Choose between Off or On
-
-
-Audio Feedback – Enabled by default. Uncheck to disable audio feedback. 
-
-
-Haptic Feedback – Enabled by default. Uncheck to disable haptic feedback.
-
-
-LED Feedback – Enabled by default. Uncheck to disable LED feedback.
-
-
-UI Result Confirmation - Check to require confirmation by the user before the app receives the results. Disabled by default for “Barcode only” targets. Enabled by default for “Structured and Unstructured Targets”.
-
-
-Identification Timeout – Set the maximum amount of time to identify the target document.
-
-
-Processing Timeout – Set the maximum amount of time to process the target document after it is identified.
-
-
-Automatic Image Capture – Check to automatically trigger processing forms once identified. Uncheck to manually trigger processing forms when the user taps the screen or presses a trigger button, once identified.
-
-
-Auto Capture Sensitivity – Set the sensitivity of the auto capture on a scale of 1 to 10, 10 being the highest. Valid only when the Automatic Image Capture is enabled.   
-
-
-Output Entire Form – Check to output the image of the entire form along with the results of the extracted data. Checking this will affect the performance. Setting valid only for “Structured Targets”.
-
-
-Advanced Image Correction – Check to enable advanced image correction to parse targets that are slightly curved or crumpled.
-
-
-Properties Panel
-The Properties Panel can be found on the left side of the screen. Each field has the following options that can be configured.
-
-
-Field Information
-Use Field to Identify Form:- Check this box to use  the field to identify the form. The field will not be                output by default for “Structured Targets” Templates.
-      Also Read Value from Field:- Enabled by default. Editable when the “Use Field to Identify Form” is checked. Check this box to also output the value from the field. 
-
-
-Field Adjustments
-Width - Set the width of the field.
-Height - Set the height of the field.
-X - Set the horizontal position of the field in pixels.
-Y - Set the vertical position of the field in pixels.
-Here the X and Y values are with respect to the top left hand corner (0, 0) of the document.
-
-
-Processing
-Presently four processing modes are supported: Picture, Barcode, OCR, and OMR.
-Barcode: Used to scan single or multiple barcodes in the field of view.
-OCR: used to read text, such as names, addresses, etc.
-OMR: Used to read check marks and bubbles.
-Picture: Used for signatures, photos, entire documents (if it’s a busy document with lot of handwritten content).
-
-
-Additional options may appear under certain conditions.
- Signature Presence: Editable when the field is of “Picture processing” mode. Check this box to determine whether or not a signature is present in the selected region, and flag an error to the user if a signature is not found.
-
-
-      Barcode’s location is fixed: Editable when the field is of “Barcode processing” mode and the Barcode Type is set to one of the supported symbologies for this feature. Check this box if the selected barcode will always be in the same location on a given document. It helps improve the form identification accuracy drastically.
 
 
 

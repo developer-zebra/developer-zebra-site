@@ -6,7 +6,38 @@ productversion: '1.1'
 ---
 
 ## Overview
-SimulScan is an end-to-end data capture solution for developers building apps for Zebra Android devices intended to capture data with the device scanner. It contains powerful image capture technology that can acquire the contents of an entire form in a single scan. Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
+Zebra SimulScan is a productivity tool that can optimize data-capture workflow by enabling in a single step multiple data points to be captured and parsed directly into an application. SimulScan offers two modes of operation:  
+
+![img](ss_overview.png)
+
+[Multi-barcode](../setup/#multibarcodetemplate) can capture an unlimited number of barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. [Mixed Data-type](../setup/#mixeddatatemplate) captures data from barcodes, alphanumeric characters, check marks, signatures and images from a single form, as long as the layout of the form doesn't change.
+
+**SimulScan Can Help Optimize Workflow If...** 
+
+* **Scanning is frequent** in the organization
+* **Scanned forms are consistent** in layout or data type (i.e. always barcodes)
+* **Forms have well-defined borders**
+
+### Requirements
+* **A Zebra TC55, TC70, TC75, TC8000 device** running Android
+* **Camera or 2D imager** (both included on above devices except some TC70s)
+* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
+* **A per-device License** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
+
+## How it Works
+SimulScan works through Templates, which define "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data to be extracted from fields. 
+
+![img](regions_of_interest.png)
+
+In addition, some Fields are designated as "Anchor Elements," which serve to identify the form and set a reference for other Fields to compensate for changes in the orientation of the Document or the scanning device. 
+
+**SimulScan is accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
+
+**SimulScan is free** when used with DataWedge to scan only barcodes in quantities less than 10 at a time. A license is required for any other scenario. For licensing details, please see the [Licensing guide](../license). 
+
+<!--
+Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
+-->
 
 ### Benefits
 
@@ -25,20 +56,11 @@ SimulScan is an end-to-end data capture solution for developers building apps fo
 * **Signatures** (captured as an image)
 * **Checkboxes** (captured as yes/no)
 
-### Requirements
-* **A Zebra TC55, TC70, TC75, TC8000 device** running Android
-* **Camera or 2D imager** (camera only on some TC70 devices)
-* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
-* **A per-device License** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
+<!-- 
+**Using a [Multi-barcode Template](../setup/#multibarcodemode)**, SimulScan can capture an unlimited number of barcodes from a single form. These barcodes can be of the same or differing symbologies and found on structured forms or those that might change from one scan to another. 
 
-## How it Works
-SimulScan works through Templates, which identify regions of a form and the type of data to be extracted from each. Some regions are designated as "Anchor Elements," which set a reference to other regions to compensate for changes in the orientation of the scanning device or the form. 
-
-**In [Multi-barcode Mode](../setup/#multibarcodemode)**, SimulScan can capture an unlimited number of barcodes from a single form. These barcodes can be of the same or differing symbologies and found on structured forms or those that might change from one scan to another. 
-
-**In [Mixed-data Mode](../setup/#mixeddatamode)**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single form, but its layout must always be the same (see Structured and Unstructured Targets in the [Template Builder Glossary](../templatebuilder/#glossary)). 
-
-**SimulScan is accessed** either by selecting it as an Input Plug-in using Zebra's [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
+**With a [Mixed Data-type Template](../setup/#mixeddatamode)**, the tool can capture multiple data types (barcodes, alphanumeric characters and a signature, for example) from a single form, but its layout must always be the same (see Structured and Unstructured Targets in the [Template Builder Glossary](../templatebuilder/#glossary)). 
+-->
 
 ## Supported Devices
 

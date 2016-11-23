@@ -5,22 +5,23 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-SimulScan can be used without a License to scan barcodes only, provided that no more than nine (9) barcodes are scanned from a single Document, and that the scanning app is associated with the Zebra [DataWedge](../../../../datawedge) scanning service. **A SimulScan License is required for scanning 10 or more barcodes at a time, for access to advanced features** such as optical character recognition (OCR), optical mark recognition (OMR) or to use [SimulScan APIs](../../api) to access SimulScan functions from within an app or from [Enterprise Browser](../../../../enterprise-browser).  
+**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes in quantities of fewer than 10 barcodes at a time. 
 
-*A SimulScan License is required for each device that will access SimulScan advanced features*. 
+**A SimulScan License is required to scan 10 or more barcodes at a time, to scan using advanced features** such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within an app or from [Enterprise Browser](../../../../enterprise-browser).  
+
+_**A SimulScan License is required for each device that will access SimulScan advanced features**_. 
 
 **A license is NOT required to use the [SimulScan Demo App](../demo)**.
 
 ## Demo License
-Demo Licenses are available for customers evaluating SimulScan, and for developers that are about to begin integrating SimulScan into their applications. To request a demo license to enable the SimulScan functionality and enable the programming interfaces on a device, please email NMV386@zebra.com with the subject header, "SimulScan Demo License Request."
+Demo Licenses are available for customers evaluating SimulScan, and for developers that are about to begin integrating SimulScan into their applications. To request a demo license to enable SimulScan advanced features and APIs on a device:
 
-Demo licenses are generally sent within one business day of being requested.
+* [Send email to NMV386@zebra.com](mailto:NMV386@zebra.com?Subject=SimulScan%20Demo%20License%20Request) 
+* Include **"SimulScan Demo License Request"** in the subject header
+* A reply will be sent with access credentials for [Zebra's Software Licensing Portal](https://softwarelicensing.zebra.com/), generally within one business day
 
-Device License
-
-SimulScan is sold today as a device license. Licenses may be purchased from a Zebra Technologies product reseller. Once a license is purchased or a demo license is requested, an email will be sent to the customer with a username and password to the Software Licensing Portal (https://softwarelicensing.zebra.com/).
-
-In order to gain access to the licensing website, you must be given a login and allocated licenses by an administrator. Website documentation and navigation help can be found on the website's documentation site at https://softwarelicensing.zebra.com/documentation/index.html
+## Device License
+SimulScan licenses can be purchased through Zebra Technologies product resellers on a per-device basis. Licensees receive an email access credentials to [Zebra's Software Licensing Portal](https://softwarelicensing.zebra.com/), where licenses are allocated to devices by an administrator. For help with this process, please refer to [Licensing Portal documentation](https://softwarelicensing.zebra.com/documentation/index.html). 
 
 Licenses can be purchased for a specific device based on the product name and serial number or for larger deployments using the Deployment key that can be generated on the licensing website.
 

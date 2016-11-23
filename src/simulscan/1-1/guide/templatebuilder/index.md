@@ -21,7 +21,17 @@ For example, a company that receives regular shipments accompanied with a label 
 -----
 
 ### In This Guide
-This guide provides step-by-step instructions for using the GUI-based Template Builder tool to [create Templates](#usingtemplatebuilder) and deploy them to the devices. A familiarity with SimulScan concepts and terminology is required. If necessary, please see the [About SimulScan](../about) page before proceeding. 
+This guide provides step-by-step instructions for using the GUI-based Template Builder tool to [create Templates](#usingtemplatebuilder) and deploy them to the devices. A familiarity with SimulScan concepts and terminology is required. If necessary, please read through the [Template Builder Glossary](#glossary) and see the [About SimulScan](../about) page before proceeding. 
+
+-----
+
+### Before You Begin
+
+Before attempting to create a Template, the following assets are required: 
+
+* **Sample(s) of the Document(s)** for which the Template(s) are being created
+* **Photos or image scans** of those same documents
+* **An account on the [Template Builder web site](http://simulscan.zebra.com)**
 
 -----
 
@@ -37,9 +47,9 @@ This guide provides step-by-step instructions for using the GUI-based Template B
 
 **Grouped Regions -** refers to sections of a Document that require Fields (i.e. an address) to be grouped logically as an aid to processing the acquired data. 
 
-**Mixed-Data Mode -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
+**Mixed Data-Type (Template) -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
 
-**Multi-barcode Mode -** used on forms from which only barcode data will be acquired. This is the most common usage scenario. 
+**Multi-barcode (Template) -** captures barcode data only. 
 
 **Multi-Line -** acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address).
 
@@ -63,9 +73,11 @@ This guide provides step-by-step instructions for using the GUI-based Template B
 
 **Template -** XML document that defines the fields (Regions) of a shipping receipt or other document to be scanned. Templates are always associated with exactly one Document. 
 
-**Template Persistence -** keeps Templates in sync between a development host and the Template Builder host server.    
+<!-- 
+**Template Persistence -** keeps Templates in sync between a development host and the Template Builder host server. 
+-->
 
-**Validation -** a beta feature that checks whether the Fields and their properties are correct for a given Document before a Template is deployed to devices. 
+**Validation -** checks whether the Fields and their properties are correct for a given Document before a Template is deployed to devices. 
 
 -----
 
@@ -74,15 +86,28 @@ Template Builder is free but registration might be required. Zebra customers, pa
 
 **Note**: SimulScan can be used without a License to <u>only scan barcodes through an app using [DataWedge](../../../../datawedge)</u>. A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
 
+### Quick Steps  
+
+1. **Log in** to the [Template Builder web site](http://simulscan.zebra.com).
+2. **Select the Template type** to create. 
+3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF).
+4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
+5. **Save and download** the completed Template(s) to the development host (local PC). 
+6. **Copy Template(s) to the device** that will be performing the scans. 
+7. **Activate the Template** from within DataWedge (see below) or other scanning app. 
+
+<!-- 
 ### Quick Steps
 1. [Create account](#createanaccount) (if necessary). 
 2. Log in at [simulscan.zebra.com](https://simulscan.zebra.com) (leave this site now).
 3. [Select the Template Type](#selecttemplatetype).
 4. Upload an image of the Document to be scanned (.bmp, .jpg, .png or PDF).
-5. **File --> Save Template** for the first time. Subsequent changes are saved automatically.
+5. **File -> Save Template** for the first time. Subsequent changes are saved automatically.
 6. [Identify regions](#identifydocumentregions) of the Document and the data types (barcodes, text, etc.) of each.
 7. [Configure OCR settings](#configureocrsettings) if OCR is to be used. 
 8. [Download and Deploy Template(s)](#deploytemplates) to scanning device(s). 
+
+-->
 
 -----
 
@@ -220,17 +245,19 @@ In addition its use of Document border dimensions, SimulScan uses Fields, compan
 For example, in the Postal T&L Document above, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below: 
 
 ![img](image29.png)
-_This attribute appears only in "Structured Targets" Templates that use non-postal symbologies_.
+_This attribute appears only in "Structured Targets" Templates that use a symbology (see table)_.
 <br>
 
-Zebra recommends selecting the fixed-location attribute to help improve processing time whenever it is known that a barcode will be in a consistent location. 
+####Fixed Barcode Supported Symbologies
+![img](fixed-mode_table.png)
+_Symbologies in shaded areas are **NOT** supported for fixed barcodes_. 
 
 -----
 
 ### Configure OCR Settings 
 **&#55;. If not using OCR, Skip to [Step 8](#deploytemplates)**.  
 
-For OCR regions, it's important to configure parameters according to the expected input to maximize the accuracy of character recognition.  
+To maximize the accuracy of character recognition in OCR regions, it's important to configure parameters according to the expected input.  
 
 **Character subsets -** identifies the type of text coming that will be acquired:
 
@@ -441,7 +468,35 @@ The Field Properties panel is visible in the far-left column, and presents the P
 
 **Signature Presence -** determines whether a signature is present in the selected region, displays an error to the user if none is found. Applies only to Picture fields.
 
-**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. **Zebra recommends enabling this feature** whenever possible to improve the accuracy of form identification. Applies when the field is of “Barcode processing” mode and the Barcode Type is set to one of the supported symbologies for this feature. 
+**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. Applies when the field processing mode is “Barcode" and the Barcode Type is set to a supported symbology (see table). Symbologies in shaded areas are _**not**_ supported. To improve the accuracy of form identification, **Zebra recommends enabling this feature** whenever possible. 
+
+####Fixed Barcode Supported Symbologies
+![img](fixed-mode_table.png)
+_Symbologies in shaded areas are **NOT** supported for fixed barcodes_. 
+
+-----
+
+#### Barcode Options
+Some barcode options vary based on the symbology selected. For a complete list of options, see the [DataWedge Decoders guide](../../../../datawedge/6-0/guide/decoders/). 
+
+#### Decode Data Options
+
+**Enable Character Checking -** enables the barcode data to assist in the identification of the barcode.
+
+**Starts With / Contains -** Enter character(s) into this field to filter barcode by characters at the beginning or at some index in a String. Leave blank if characters should not be checked. Applies only if Character Checking is enabled. 
+
+**At -** Only enabled if “Enable Character Checking” is checked and “Contains” is chosen. Enter the index at which the character checking will begin. The index is “0” based, staring from Left most character. 
+
+**String Length -** Only enabled if “Enable Character Checking” is checked. Enter the number of characters the barcode data must contain. Leave blank if no length is specified.
+
+
+Barcode Orientation
+Select the direction that the barcode is facing.
+0°: Select this if the barcode is upright with respect to the form.
+90°: Select this if the barcode is rotated 90 degrees to the left with respect to the form.
+180°: Select this if the barcode is upside down with respect to the form.
+270°: Select this if the barcode is rotate 270 degrees to the left with respect to the form.
+
 
 _**Other Field Property settings may appear under certain conditions**_.
 
@@ -562,26 +617,6 @@ Webcode
 
 
 
-Barcode Options
-This option will appear depending on which symbology is chosen. Refer to additional documentation regarding Barcode Options.
-
-
-
-
-Decode Data Options
-   Enable Character Checking: Check this box to use the barcode data to assist in the identification of the
-         barcode.
-Starts With / Contains: Only enabled if “Enable Character Checking” is checked. Enter character(s) into this field to filter barcode by characters at the beginning or at some index in a String. Leave blank if characters should not be checked.
-At: Only enabled if “Enable Character Checking” is checked and “Contains” is chosen. Enter the index at which the character checking will begin. The index is “0” based, staring from Left most character. 
-String Length: Only enabled if “Enable Character Checking” is checked. Enter the number of characters the barcode data must contain. Leave blank if no length is specified.
-
-
-Barcode Orientation
-Select the direction that the barcode is facing.
-0°: Select this if the barcode is upright with respect to the form.
-90°: Select this if the barcode is rotated 90 degrees to the left with respect to the form.
-180°: Select this if the barcode is upside down with respect to the form.
-270°: Select this if the barcode is rotate 270 degrees to the left with respect to the form.
 
 
 OCR 

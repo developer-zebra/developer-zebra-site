@@ -41,19 +41,19 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 
 -----
 
-###III. Assign a License
-Once a license is purchased, it must be assigned to device(s) before they can be deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
+###III. Apply License
+Once a license is purchased, it must be assigned to device(s) before being deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
 
 ####Manual Deployment
-1. **Download the** `SDC_License.xml` **file** from the licensing server to a local PC
-2. **Push the License file to the target device** that will be used for scanning
-3. In the Settings panel, select **About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license**
-4. Navigate to the License file and select it
+1. **Download the** `SDC_License.xml` **file** from the licensing server to a local PC.
+2. **Push the License file to the device** being used for scanning.
+3. In the Settings panel, select **About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license**.
+4. Navigate to the License file and select it.
 
 ####Remote deployment
 
 1. Generate a Deployment Key on the Licensing website. 
-2. Launch the StageNow wizard and select "SimulScan mass-deployment"
+2. Launch the StageNow wizard and select "SimulScan mass-deployment."
 3. Input the Deployment Key when prompted. 
 4. Deploy the Key to devices.  
 
@@ -69,7 +69,7 @@ Demo licenses are available for companies wishing to evaluate SimulScan or while
 
 A reply will be sent with access credentials for [Zebra's Software Licensing Portal](https://softwarelicensing.zebra.com/), generally within one business day. 
 
-* **Follow directions below** to download and [apply the license](#applyingalicense). 
+* **Follow directions** to [apply the license](#iiiapplylicense). 
 
 <!--
 ## Device License

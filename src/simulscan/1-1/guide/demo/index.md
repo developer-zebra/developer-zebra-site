@@ -1,5 +1,5 @@
 ---
-title: Demo App
+title: SimulScan Demo App
 layout: guide.html
 product: SimulScan
 productversion: '1.1'

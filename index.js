@@ -89,7 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("enterprise-keyboard/1-2");
-      index_generate("enterprise-keyboard/1-1");
+      index_generate("emdk-for-xamarin/2-2");
       
 

@@ -5,7 +5,7 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes _**and**_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. A license also is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or [Enterprise Browser](../../../../enterprise-browser).
+**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes _<u>and</u>_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. A license also is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or [Enterprise Browser](../../../../enterprise-browser).
 
 **General Licensing Rules**:
 
@@ -57,7 +57,7 @@ Once a license is purchased, it must be assigned to device(s) before being deplo
 3. Input the Deployment Key when prompted. 
 4. Deploy the Key to devices.  
 
-Once deployed to the device, SimulScan licenses are automatically installed. For details, please refer to [StageNow documentation](../../../../stagenow). 
+Once deployed to the device, SimulScan licenses are installed automatically. For details, please refer to [StageNow documentation](../../../../stagenow). 
 
 -----
 
@@ -67,7 +67,7 @@ Demo licenses are available for companies wishing to evaluate SimulScan or while
 * [Send email to NMV386@zebra.com](mailto:NMV386@zebra.com?Subject=SimulScan%20Demo%20License%20Request) 
 * Include **"SimulScan Demo License Request"** in the subject header
 
-A reply will be sent with access credentials for [Zebra's Software Licensing Portal](https://softwarelicensing.zebra.com/), generally within one business day. 
+A reply will be sent with access credentials for [Zebra's Software Licensing Portal](https://softwarelicensing.zebra.com/), generally on the next business day. 
 
 * **Follow directions** to [apply the license](#iiiapplylicense). 
 

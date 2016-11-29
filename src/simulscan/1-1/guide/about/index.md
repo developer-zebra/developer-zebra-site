@@ -6,17 +6,7 @@ productversion: '1.1'
 ---
 
 ## Overview
-Zebra SimulScan is a productivity tool that can optimize data-capture workflow by enabling in a single step multiple data points to be captured and parsed directly into an application. SimulScan offers two modes of operation:  
-
-####[Multi-barcode](../setup/#multibarcodetemplate) 
-![img](multi-barcode.png)
-Captures an unlimited number of barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. 
-<br>
-
-####[Mixed Data-type](../setup/#mixeddatatypetemplate)
-![img](mixed-data.png)
-Captures data from barcodes, alphanumeric characters, check marks, signatures and images from a single form, as long as the layout of the form doesn't change.
-<br>
+Zebra SimulScan is a productivity tool that can optimize data-capture workflow by enabling in a single step multiple data points to be captured and parsed directly into an application. 
 
 **SimulScan Can Help Optimize Workflow If...** 
 
@@ -24,11 +14,30 @@ Captures data from barcodes, alphanumeric characters, check marks, signatures an
 * **Scanned forms are consistent** in layout or data type (i.e. contain only barcodes), and
 * **Forms have well-defined borders**. 
 
+-----
+
+#### SimulScan offers two modes of operation:  
+
+####[Multi-barcode](../setup/#multibarcodetemplate) 
+<img style="height:100px" src="msi_reader.png"/>
+Multi-barcode mode captures an unlimited number of 1D/2D barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. 
+<br>
+<br>
+
+####[Mixed Data-type](../setup/#mixeddatatypetemplate) 
+![img](mixed-data.png)
+Mixed Data-type mode captures data from barcodes, alphanumeric characters, check marks, signatures and images from a single form, as long as the layout of the form doesn't change.
+<br>
+
+-----
+
 ### Requirements
 * **A Zebra TC55, TC70, TC75, TC8000 device** running Android
 * **Camera or 2D imager** (both included on above devices except some camera-only TC70s)
 * **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
 * **A per-device [license](../license)** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
+
+-----
 
 ## How it Works
 SimulScan works through Templates, which an organization uses to define "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. 

@@ -6,17 +6,17 @@ productversion: '1.1'
 ---
 
 ## Overview
-Template Builder is a web-based tool for defining the information captured by SimulScan and determining how it will be processed and made available to applications. Templates are the key to controlling SimulScan data-capture features and for processing acquired data as needed. 
+Template Builder is a web-based tool for defining the information captured by SimulScan and determining how it will be processed and made available to applications. Templates are the key to controlling SimulScan data-capture features and for processing the acquired data. 
 
-Most acquisition tasks involve capturing data from printed documents, which often vary in size, shape and layout and can be a challenge to accuracy. Templates solve this problem by "teaching" SimulScan about the documents it will encounter and defining how to scan and process data for each instance of a "Templated" document. 
+Most acquisition tasks involve capturing data from printed documents. These "target" documents often vary in size, shape and layout, and present a challenge for accurate data acquisition. Templates solve this problem by "teaching" SimulScan about the documents it will encounter, and defining how to scan and process data for each instance of that target document. 
 
 <img style="height:350px" src="msi_reader.png"/>
-*A typical barcode-only form, SimulScan's most common and effective usage scenario*.
+*A typical barcode-only form, a common and effective SimulScan usage scenario*.
 <br>
 
-Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alpha/numeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. Templates that uniquely identify each region and data type of a particular form allow SimulScan to capture the data quickly and accurately, and permit developers to map the acquired data to specific fields of their application. 
+Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alpha/numeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. Templates uniquely identify each region and data type of a particular form, allowing SimulScan to capture the data quickly and accurately, and permitting developers to map the acquired data to specific fields of their application. 
 
-For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode](#selecttemplatetype) Template that maps the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner to the corresponding fields of an application. 
+For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode Template](#selecttemplatetype) to map the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the lower row to the corresponding fields of an application. 
 
 -----
 
@@ -37,33 +37,37 @@ Before attempting to create a Template, the following assets are required:
 
 ### Glossary
 
-**Anchor Element(s) -** one or more unchanging images or other Document attributes (i.e. company logo) that SimulScan can use to determine Document orientation.
+**Anchor Element(s) -** one or more unchanging images or other Document attributes (i.e. company logo) that SimulScan can use to identify the Document and determine its orientation.
 
-**Bounding Box -** an oval, round or square object on the printed form that contains the mark to be acquired. 
+**Bounding Box -** an oval, round or square object on the printed form that contains a mark to be acquired using OMR. 
 
 **Data Type -** defines the source (barcode, OCR, etc.) of data being acquired from a Region of a Document. 
 
 **Document -** printed form containing data to be acquired (i.e. a shipping receipt). Documents should be associated with no more than one Template. 
 
-**Field -** region of a form associated with a data type and processing method (i.e. a barcode).
+**Field of Interest-** area of a form within a Region of Interest that is associated with a data type and processing method (i.e. a barcode). Also referred to simply as a "Field." 
 
 **Grouped Regions -** refers to sections of a Document that require Fields (i.e. an address) to be grouped logically as an aid to processing the acquired data. 
 
+**Image -** See Picture. 
+
 **Input Plug-in -** defines in a DataWedge Profile the means by which data is acquired by DataWedge. See [SimulScan Input](../../../../datawedge/6-0/guide/setup/#simulscaninput). 
 
-**Mixed Data-Type (Template) -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
+**Mixed Data-type -** a Template that captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
 
-**Multi-barcode (Template) -** captures barcode data only. 
+**Multi-barcode -** a Template that captures only barcode data. 
 
 **Multi-Line -** acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address).
 
-**Multi-Template -** a beta feature that allows multiple Templates to be treated as one to simplify workflow. 
+**Multi-Template -** allows multiple Templates to be treated as one to simplify deployment and workflow. 
 
 **OCR -** Optical Character Recognition, a processing mode for acquiring alpha/numeric characters. Currently supports English, French, German, Spanish and Portuguese. 
 
-**OMR -** Optical Mark Recognition, a processing mode for acquiring binary (yes/no) data from checkboxes plus an "undecided" state. 
+**OMR -** Optical Mark Recognition, a processing mode for acquiring binary (present/not present) data from checkboxes. Also includes an "undecided" state. 
 
-**Picture -** graphical image to be acquired as a file (i.e. `.jpg` file).
+**Picture -** graphical image to be acquired as a file (i.e. `.jpg` file). Minimum image size: 128 x 128 pixels; maximum: 2600 x 2000 pixels.  
+
+**Region of Interest -** the area inside the outer-most border of a Document that contains Fields of Interest with data to be acquired.   
 
 **Secure Storage -** the online area accessible only by credentialed user(s) in which Templates are stored. 
 
@@ -75,7 +79,7 @@ Before attempting to create a Template, the following assets are required:
 
 **Target, Unstructured -** a Document with no fixed layout, or a Document that has not been defined with a Template.
 
-**Template -** XML document that defines the fields (Regions) of a shipping receipt or other document to be scanned. Templates are always associated with exactly one Document. 
+**Template -** an XML document that defines "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. Each Template is associated with exactly one Document. 
 
 <!-- 
 **Template Persistence -** keeps Templates in sync between a development host and the Template Builder host server. 
@@ -83,10 +87,16 @@ Before attempting to create a Template, the following assets are required:
 
 **Validation -** checks whether the Fields and their properties are correct for a given Document before a Template is deployed to devices. 
 
+**Well-defined Border -** the area surrounding a Target Document that contains: 1) a single, unbroken perimeter that defines the form, 2) a solid frame with a minimum 20% contrast from the target, 3) a minimum 5% margin between the Document and its outer-most border (see examples below). 
+
+![img](acceptable_borders.png)
+_Well-defined borders provide an unbroken perimeter as well as space and contrast from surrounding areas_. 
+<br>
+
 -----
 
 ## Using Template Builder 
-Template Builder is free but registration might be required. Zebra customers, partners and ISVs with access to Partner Central can use their existing credentials for access. Others must register using the instructions below.
+Template Builder is free for Zebra partners and other registered users. Existing Zebra customers, partners and ISVs with access to Partner Central can use their existing credentials to gain access to Template Builder. Others must register using the instructions below. Credentials are generally sent within one or two business days. 
 
 **Note**: SimulScan can be used without a License to <u>only scan barcodes through an app using [DataWedge](../../../../datawedge)</u>. A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
 
@@ -540,9 +550,9 @@ The Field Properties panel is visible in the far-left column, and presents the P
 
 **OMR -** captures check marks and bubbles
 
-**Picture -** captures (as an image file) signatures, photos, entire documents 
+**Picture -** captures signatures, photos or entire Documents as an image file. Minimum capturable image size is 128 x 128 pixels; maximum is 2600 x 2000 pixels. 
 
-**Signature Presence -** determines whether a signature is present in the selected region, displays an error to the user if none is found. Applies only to Picture fields.
+**Signature Presence -** determines whether a signature is present in the selected region, displays an error to the user if none is found. Applies to Picture fields that use the OMR feature to detect a marked area.
 
 **Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. Applies when the field processing mode is “Barcode" and the Barcode Type is set to a supported symbology (see table). Symbologies in shaded areas are _**not**_ supported. To improve the accuracy of form identification, **Zebra recommends enabling this feature** whenever possible. 
 
@@ -557,25 +567,21 @@ Some barcode options vary based on the symbology selected. For a complete list o
 
 #### Decode Data Options
 
-**Enable Character Checking -** enables the barcode data to assist in the identification of the barcode.
+**Enable Character Checking -** enables the barcode data to assist in the identification or verification of the barcode data being decoded. When selected, the following options become available:
+ * **Starts With...** checks for the specified character(s) starting with the first character (index 0) of the acquired barcode data.
+ * **Contains -** checks for the specified character(s) in the acquired data starting at the index specified in the "at" field (index 0 = the first character). 
+ * **String Length -** the number of characters the barcode data must contain. Leave blank to leave length unspecified.
 
-**Starts With / Contains -** Enter character(s) into this field to filter barcode by characters at the beginning or at some index in a String. Leave blank if characters should not be checked. Applies only if Character Checking is enabled. 
+**Barcode Orientation -**sets the orientation of the barcode relative to the scanner:
 
-**At -** Only enabled if “Enable Character Checking” is checked and “Contains” is chosen. Enter the index at which the character checking will begin. The index is “0” based, staring from Left most character. 
+* **0° -** the barcode is right-side up on the form.
+* **90° -** the barcode is rotated 90 degrees to the left (counterclockwise).
+* **180° -** the barcode is upside down.
+* **270° -** the barcode is rotated 270 degrees to the left (counterclockwise).
 
-**String Length -** Only enabled if “Enable Character Checking” is checked. Enter the number of characters the barcode data must contain. Leave blank if no length is specified.
-
-
-Barcode Orientation
-Select the direction that the barcode is facing.
-0°: Select this if the barcode is upright with respect to the form.
-90°: Select this if the barcode is rotated 90 degrees to the left with respect to the form.
-180°: Select this if the barcode is upside down with respect to the form.
-270°: Select this if the barcode is rotate 270 degrees to the left with respect to the form.
-
+Orientation must be consistent across the entire Document. 
 
 _**Other Field Property settings may appear under certain conditions**_.
-
 
 -----
 
@@ -587,8 +593,6 @@ _**Other Field Property settings may appear under certain conditions**_.
 
 
 <!--
-
-
 
 Option 1: Side load or push via MDM 
 - For use by DataWedge, push the templates to "/enterprise/device/settings/datawedge/templates" folder on the device using either ‘adb push’ or ‘USB sync’ or your preferred staging/MDM tool. 

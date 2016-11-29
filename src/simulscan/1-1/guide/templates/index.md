@@ -1,6 +1,6 @@
 ---
 title: SimulScan Industry Templates
-description: SimulScan Templates have been created as a starting point for use in specifi industries.
+description: SimulScan Templates have been created as a starting point for use in specific industries.
 layout: list-apis.html
 automenu:
   items:
@@ -14,18 +14,18 @@ automenu:
           url: processing
     - title: Manufacturing
       items:
-        - title: blah blah
+        - title: sample
           url: 
-        - title: Blah blah blah
+        - title: sample
           url: 
-        - title: This and that
+        - title: sample
           url: 
-        - title: The other
+        - title: The other sample
           url: 
     - title: Medical
       items:
         - title: Patient
-          url: patiend
+          url: patient
         - title: Supplies
           url: supplies
         - title: Emergency Room

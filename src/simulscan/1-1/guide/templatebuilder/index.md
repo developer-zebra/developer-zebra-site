@@ -16,7 +16,7 @@ Most acquisition tasks involve capturing data from printed documents, which ofte
 
 Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alpha/numeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. Templates that uniquely identify each region and data type of a particular form allow SimulScan to capture the data quickly and accurately, and permit developers to map the acquired data to specific fields of their application. 
 
-For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode](../about/#multibarcodemode) Template that maps the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner to the corresponding fields of an application. 
+For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode](#selecttemplatetype) Template that maps the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the barcode in the lower-left corner to the corresponding fields of an application. 
 
 -----
 
@@ -39,6 +39,8 @@ Before attempting to create a Template, the following assets are required:
 
 **Anchor Element(s) -** one or more unchanging images or other Document attributes (i.e. company logo) that SimulScan can use to determine Document orientation.
 
+**Bounding Box -** an oval, round or square object on the printed form that contains the mark to be acquired. 
+
 **Data Type -** defines the source (barcode, OCR, etc.) of data being acquired from a Region of a Document. 
 
 **Document -** printed form containing data to be acquired (i.e. a shipping receipt). Documents should be associated with no more than one Template. 
@@ -46,6 +48,8 @@ Before attempting to create a Template, the following assets are required:
 **Field -** region of a form associated with a data type and processing method (i.e. a barcode).
 
 **Grouped Regions -** refers to sections of a Document that require Fields (i.e. an address) to be grouped logically as an aid to processing the acquired data. 
+
+**Input Plug-in -** defines in a DataWedge Profile the means by which data is acquired by DataWedge. See [SimulScan Input](../../../../datawedge/6-0/guide/setup/#simulscaninput). 
 
 **Mixed Data-Type (Template) -** captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. 
 
@@ -57,7 +61,7 @@ Before attempting to create a Template, the following assets are required:
 
 **OCR -** Optical Character Recognition, a processing mode for acquiring alpha/numeric characters. Currently supports English, French, German, Spanish and Portuguese. 
 
-**OMR -** Optical Mark Recognition, a processing mode for acquiring binary (yes/no) data from checkboxes.
+**OMR -** Optical Mark Recognition, a processing mode for acquiring binary (yes/no) data from checkboxes plus an "undecided" state. 
 
 **Picture -** graphical image to be acquired as a file (i.e. `.jpg` file).
 
@@ -90,7 +94,7 @@ Template Builder is free but registration might be required. Zebra customers, pa
 
 1. **Log in** to the [Template Builder web site](http://simulscan.zebra.com).
 2. **Select the Template type** to create. 
-3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF).
+3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF; 5 MB max.).
 4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
 5. **Save and download** the completed Template(s) to the development host (local PC). 
 6. **Copy Template(s) to the device** that will be performing the scans. 
@@ -173,7 +177,7 @@ c. Configure other settings as required (**see Step 7** for details).
 <br>
 
 
-> **Save the template and skip to [Step 7](#configureocrsettings)**. 
+> **Save the template and skip to [Step 7](#configureocromrsettings)**. 
 
 -----
 
@@ -190,7 +194,7 @@ c. Configure other settings as required (**see Step 7** for details).
 
 ### Identify Document Regions
 
-> **If setting up an Unstructured Target, skip to [Step 7](#configureocrsettings)**. 
+> **If setting up an Unstructured Target, skip to [Step 7](#configureocromrsettings)**. 
 
 After uploading an image of the target Document...
 
@@ -208,7 +212,13 @@ After uploading an image of the target Document...
 ![img](image6c.png)
 <br>
 
-Alternative ways to create Fields:
+**Field Region Guidelines**:
+
+* **Barcode Regions** must <u>**include only the bars and spaces**</u>; no surrounding characters should be included.
+* **OCR Regions** should include surrounding white space equal to about two characters in width and height.  
+* **OMR Regions should be kept tight to Bounding Boxes. A separate OCR Region can be created to capture the description, if needed.  
+
+**Alternative ways to create Fields**:
 
  * Select **Edit --> Create New Field**, enter a name for the field and draw a box around the corresponding Region.
  * Click the **Add Field** button (arrow, below), enter a name and draw a box around the corresponding Region.
@@ -216,7 +226,7 @@ Alternative ways to create Fields:
 ![img](image6e.png)
 <br>
 
-Fields not specifically named will be assigned a generic name (as shown). These can be edited later as desired (see [Modify a Template](modifyatemplate)). 
+Fields not specifically named will be assigned a generic name (as shown). These can be edited later as desired (see [Modify a Template](#modifyatemplate)). 
 
 Provide (or confirm) the following required settings for each Field created: 
  * A name for the field, if desired.
@@ -233,7 +243,7 @@ In addition its use of Document border dimensions, SimulScan uses Fields, compan
 **Anchor Element Guidelines**:
 
 * Select two or three Fields per document as Anchor Elements. 
-* Anchor Elements should be spread across the top, bottom and side(s) of the Document.   
+* Anchor Elements should be spread across the top, bottom and side(s) of the Document.
 * For Structured Targets, static fields such as logos and preprinted content work best.
 * For barcode-only targets, barcodes with a fixed location on instances of a label work best.
 * For fixed barcodes, select the “Barcode’s location is fixed” option in the Properties panel.
@@ -254,12 +264,13 @@ _Symbologies in shaded areas are **NOT** supported for fixed barcodes_.
 
 -----
 
-### Configure OCR Settings 
-**&#55;. If not using OCR, Skip to [Step 8](#deploytemplates)**.  
+### Configure OCR/OMR Settings 
+**&#55;. If not using OCR or OMR, skip to [Step 8](#testandvalidatetemplates)**.  
 
-To maximize the accuracy of character recognition in OCR regions, it's important to configure parameters according to the expected input.  
+####OCR Settings
+To maximize the accuracy of character recognition in OCR regions, it's important to configure OCR parameters according to the expected input.  
 
-**Character subsets -** identifies the type of text coming that will be acquired:
+**Character subsets -** identifies the type of text that will be acquired:
 
 * **All caps alphabets -** text will contain all uppercase letters
 * **All small alphabets -** text will contain all lowercase letters
@@ -268,30 +279,101 @@ To maximize the accuracy of character recognition in OCR regions, it's important
 * **Alphanumeric (default) -** text contain a combination of letters and numbers
 * **Enter custom sub string set here -** enter information about custom characters in the Custom Character Set text box
 
-**Regular Expressions -** used when it is known that the data will be presented in a particular pattern (i.e. MM/DD/YYYY), the pattern can be specified as a Regular Expression according to the table below.  
+**Regular Expressions -** data will consistently be presented in a particular pattern (i.e. MM/DD/YYYY). Specify as a Regular Expression according to the table below:  
 
 ![img](regular_expressions.png)
 <br>
 **Zebra recommends using this option only if the format defined can be guaranteed for the region**.
 
-SimulScan references the [Perl Compatible Regular Expressions (PCRE)](http://www.pcre.org/) library for regular-expression pattern matching. Setting the character subset is easy but coarse; setting the regular expression is complex but precise. Specifying _**both**_ the  subset _**and**_ the regex great narrows the range of possible candidates. Learn more by reading the [Perl RegEx Man Pages](http://perldoc.perl.org/perlre.html). 
+SimulScan references the [Perl Compatible Regular Expressions (PCRE)](http://www.pcre.org/) library for regular-expression pattern matching. Setting the character subset is easy but coarse; setting the regular expression is complex but precise. Specifying _**both**_ the  subset _**and**_ the regex greatly narrows the range of possible candidates. Learn more by reading the [Perl RegEx Man Pages](http://perldoc.perl.org/perlre.html). 
 
 **Word Check -** enables a spell-check in the selected language. Use on regions known to contain only words.
 
 **Language -** English is the default. Switching to European will recognize characters typically found in European languages such as the digraph, circumflex and umlaut.
 
+#### OMR Settings
+The data type for optical mark recognition (OMR) is binary, resulting in the acquisition of a yes/no condition (i.e. "mark is present" or "mark is not present"). A third "undecided" state results when SimulScan is unable to recognize a mark. Use OCR to acquire the label that describes the mark, if desired. 
+
+**Configure the Bounding Shape** to ensure the most accurate result: 
+
+**Bounding Box Shape -** the shape of the object on the printed form that contains the mark to be acquired. 
+
+ * **Circle -** mark is inside of a circular boundary
+ * **Oval -** mark is inside of an oval-shaped boundary
+ * **Square -** mark is inside of a square boundary
+
+![img](omr_types.png)
+_Acceptable marks when using optical mark recognition_.
+<br>
+
+-----
+
+### Test and Validate Templates
+**Zebra recommends testing all Templates before deployment to devices** to ensure proper operation. This can be done using the [SimulScan Demo App](../demo). Template Builder also provides a Validation feature, which verifies template Fields and returns useful information about Field properties and settings. Both are explained below. 
+
+**To test a Template using the Demo App**:
+
+After pushing the Template to a device...
+
+&#56;. Open the SimulScan Demo App, **tap on the "Hamburger" menu, and select Menu -> Setup Custom Demo options**, and navigate to the Template to be tested.
+
+Verify that the Template works as expected. 
+
+** To Validate Template**: 
+
+&#57;. Open the Template to be validated and **select Edit...Validate Template**. 
+
+![img](validate_template.png)
+<br>
+
+A Validation Summary is displayed with one of more of the following messages:
+
+**Form Decoded**:
+
+* The Template successfully identified the target Document. 
+* At least two fields have been designated as Anchor Elements.
+* Barcode Field(s) designated as “Use field to identify the form" use a supported symbology and its length is within the supported range.
+* The uploaded image of the target Document is clear and its resolution is correct.
+
+**Keyfield(s) identified in template**:
+
+* Required attribute(s) (i.e. name, number, x/y, width, height) found for each marked region. 
+
+**Field setup and data parsing** 
+
+* Fields cover the valid vicinity of all data of interest. 
+
+**Final result**: 
+
+* (√) = "Success!" 
+* (X) = "Error!" 
+
+ 
+#### Validation Preview
+
+Following validation, test results can be reviewed by clicking on “View Preview” button as in the image below. 
+
+![img](validation_success.png)
+<br>
+
+The image below shows a validation preview. Clicking on any Field in the image area displays in the left-hand column the data that is parsed by that Field. In addition to decoded output, OCR data also shows the accuracy level (high, medium or low) for each line of the region parsed. Regions designated as OMR indicate their status (Checked, UnChecked or Undecided). <!-- Notice also the warning symbol on the Document logo, in this case indicating insufficient surrounding white space?? -->
+
+![img](image28.png)
+_Click image to enlarge_.
+
+<!-- ![img](validation_failure.png)
+<br> -->
+
 -----
 
 ### Deploy Templates
 
-**&#56;. When settings are configured as needed, select File -> Download Template** to download a copy to the local development host:
+**&#49;&#48;. After settings are configured and validated, select File -> Download Template** to download a copy to the local development host:
 
 ![img](image40.png)
 <br>
 
 **The Template can now be deployed to scanning devices**. 
-
-**Zebra recommends [validating Templates](#validatetemplates) before deployment**. While this feature is still currently in beta, current validation functionality provides useful information about the completeness of a Template and its Field properties and settings. 
 
 #### How and Where to Place Files
 If using SimulScan through [DataWedge](../../../../datawedge), **Template files must be in the directory shown below**. 
@@ -335,18 +417,18 @@ Templates saved to the `/<accountID>/templates/release/` folder on the Template 
 1. Open the Template
 2. Select **Edit --> Release Template**
 
-A copy of the Template is placed in the `/release` folder; the Template also remains in its original location. 
+A copy of the Template is placed in the `/release` folder; the Template also remains in its original location. When the method is called, **the specified Template is copied to the device**. 
 
 -----
 
 ### Create a Multi-Template
-A Multi-template consists of between two and six existing Templates grouped together and given a name. For devices that will regularly use more than one Template, a Multi-template can be deployed as a single entity to help improve worker productivity by quickening the selection of the right Template when needed. For example, if workers in a warehouse regularly encounter scan Documents from three specific suppliers, grouping the corresponding three Templates together quickens the selection of the right Template whenever it's time to scan. **This feature is currently in beta**. 
+The Multi-template feature allows as many as six (6) existing Templates to be grouped together and deployed to devices as a single entity. This simplifies deployment and can help boost worker productivity on devices that regularly use two or more Templates by automating Template selection. For example, if workers in a warehouse regularly encounter scan Documents from three specific suppliers, grouping the corresponding three Templates together quickens the selection of the appropriate Template whenever scanning is required. <!--**This feature is currently in beta**.--> 
 
 **To Create a Multi-template**:
 
 After creating the Templates needed for grouping...  
 
-&#49;. Select **File --> Create New...Multi Template**.
+&#49;. Select **File --> Create New...Multi Template**:
 ![img](image7.png)
 <br>
 
@@ -383,12 +465,6 @@ Existing Templates can be modified to address changes that occur to incoming Doc
 
 ![img](save_as.png)
 
-Related Guides: 
-
-* [DataWedge](../../../../datawedge)
-* [SimulScan APIs](../../api)
-* [Enterprise Browser](../../../../enterprise-browser)
-
 -----
 
 ## Template Settings	
@@ -412,9 +488,9 @@ The Template Settings panel is used to configure input source, flash mode, feedb
 **Input Source –** used to specify the input source (Camera or Imager) to use for the Template. Selecting "Default" allows the system to choose the input source as follows: 
  * **Selects Camera** for Structured and Unstructured targets 
  * **Selects Imager** for Barcode-only targets
- * If no Imager is present, the camera is selected for all targets 
- * If camera is disabled, Imager is selected for all targets 
- * If no capture device is available, an error message is displayed
+ * **If no Imager is present**, the camera is selected for all targets 
+ * **If camera is disabled**, Imager is selected for all targets 
+ * **If no capture device is available**, an error message is displayed
 
 **Flash Mode –** enables/disables use of the flash during capture.
 
@@ -499,6 +575,15 @@ Select the direction that the barcode is facing.
 
 
 _**Other Field Property settings may appear under certain conditions**_.
+
+
+-----
+
+**Related Guides**: 
+
+* [DataWedge](../../../../datawedge)
+* [SimulScan APIs](../../api)
+* [Enterprise Browser](../../../../enterprise-browser)
 
 
 <!--
@@ -672,12 +757,6 @@ English: OCR region is in English and contains standard characters found in the 
 
 
 
-
-
-OMR 
-Bounding Box Shape
-Choose the shape that the OCR mark is in. Circle: OCR mark is inside of a circle boundary. Oval: OCR mark is inside of an oval boundary.
-Square: OCR mark is inside of a square boundary.
 
 
 Picture 

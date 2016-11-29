@@ -8,32 +8,38 @@ productversion: '1.1'
 ## Overview
 Zebra SimulScan is a productivity tool that can optimize data-capture workflow by enabling in a single step multiple data points to be captured and parsed directly into an application. SimulScan offers two modes of operation:  
 
-![img](ss_overview.png)
+####[Multi-barcode](../setup/#multibarcodetemplate) 
+![img](multi-barcode.png)
+Captures an unlimited number of barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. 
+<br>
 
-[Multi-barcode](../setup/#multibarcodetemplate) can capture an unlimited number of barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. [Mixed Data-type](../setup/#mixeddatatemplate) captures data from barcodes, alphanumeric characters, check marks, signatures and images from a single form, as long as the layout of the form doesn't change.
+####[Mixed Data-type](../setup/#mixeddatatypetemplate)
+![img](mixed-data.png)
+Captures data from barcodes, alphanumeric characters, check marks, signatures and images from a single form, as long as the layout of the form doesn't change.
+<br>
 
 **SimulScan Can Help Optimize Workflow If...** 
 
-* **Scanning is frequent** in the organization
-* **Scanned forms are consistent** in layout or data type (i.e. always barcodes)
-* **Forms have well-defined borders**
+* **Scanning is frequent** in the organization, and
+* **Scanned forms are consistent** in layout or data type (i.e. contain only barcodes), and
+* **Forms have well-defined borders**. 
 
 ### Requirements
 * **A Zebra TC55, TC70, TC75, TC8000 device** running Android
-* **Camera or 2D imager** (both included on above devices except some TC70s)
+* **Camera or 2D imager** (both included on above devices except some camera-only TC70s)
 * **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
-* **A per-device License** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
+* **A per-device [license](../license)** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
 
 ## How it Works
-SimulScan works through Templates, which define "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data to be extracted from fields. 
+SimulScan works through Templates, which an organization uses to define "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. 
 
 ![img](regions_of_interest.png)
 
-In addition, some Fields are designated as "Anchor Elements," which serve to identify the form and set a reference for other Fields to compensate for changes in the orientation of the Document or the scanning device. 
+In addition, some Fields are designated as "Anchor Elements," which serve to help SimulScan to identify the form and to set a reference for other Fields to compensate for changes in the orientation of the Document or the scanning device. 
 
 **SimulScan is accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
 
-**SimulScan is free** when used with DataWedge to scan only barcodes in quantities less than 10 at a time. A license is required for any other scenario. For licensing details, please see the [Licensing guide](../license). 
+**SimulScan is free** when used with DataWedge to scan only barcodes _**and**_ to scan fewer than 10 barcodes at a time. A per-device license is required for any other scenario. For licensing details, please see the [Licensing guide](../license). 
 
 <!--
 Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
@@ -81,7 +87,7 @@ Forms can include barcodes, multiple lines of text, phone numbers, images, signa
   <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
   <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
   <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"></td>
+  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">GA2 devices only</td>
  </tr>
  <tr>
   <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="tc75.png" height="75"></td>
@@ -93,11 +99,11 @@ Forms can include barcodes, multiple lines of text, phone numbers, images, signa
   <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="tc8000.png" height="75"></td>
   <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√(*)</td>
  </tr>
  <tr>
 </tbody></table>
-
+_(*)The TC8000 Extended Range Imager (ERI) configuration is not supported_. 
 
 <!--
 <div class="content-large"><div class="jive-widget-formatted-body">

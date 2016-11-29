@@ -6,14 +6,14 @@ productversion: '1.1'
 ---
 ## Overview
 
-SimulScan can be accessed by selecting it as an Input Plug-in with Zebra's [DataWedge](../../../../datawedge) service or by invoking its functions from within an Android app using the SimulScan APIs, which requires licensing. SimulScan advanced features can be explored without a License by using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
+SimulScan can be accessed by selecting [SimulScan as an Input Plug-in](../../../../datawedge/6-0/guide/setup/#simulscaninput) with Zebra's [DataWedge](../../../../datawedge) service or by invoking its functions from within an Android app using the SimulScan APIs, which requires licensing. SimulScan advanced features can be explored without a license by using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
 
 **This guide covers SimulScan usage with DataWedge only**. See the [SimulScan API guide](../../api) for accessing SimulScan functions programmatically. 
 
 -----
 
 ### Access SimulScan with DataWedge
-Before SimulScan can be used, at least one Template must be present on the device. DataWedge includes four generic templates that might be adequate for some scenarios (explained below). For more advanced use-cases, Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified with Template Builder. 
+Before SimulScan can be used, at least one Template must be present on the device. DataWedge includes numerous Templates to cover common usage scenarios. For more advanced use-cases, Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified with Template Builder. 
 
 **Templates included with DataWedge**:
 
@@ -27,12 +27,11 @@ Before SimulScan can be used, at least one Template must be present on the devic
 
 If using Templates already present on the device, skip to the "Activate SimulScan" section. 
 
-
 ### Multi-barcode Template
-**A Multi-barcode Template** is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [Licensing](../license). **The 2D imager is the most effective device for this mode**, and most Zebra devices have one. 
+**A Multi-barcode Template** is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [licensing](../license). **The 2D imager is the most effective device for this mode**, and most Zebra devices have one. 
 
 <img style="height:350px" src="msi_reader.png"/>
-*A typical barcode-only form, SimulScan's most common and effective use case*.
+*A typical barcode-only form for a common and effective SimulScan use case*.
 <br>
 
 <!-- ![img](msi_reader.png)--> 

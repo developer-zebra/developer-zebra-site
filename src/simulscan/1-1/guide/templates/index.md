@@ -7,7 +7,7 @@ automenu:
     - title: Automotive
       items:
         - title: Auto-parts Receiving
-          url: parts
+          url: auto
         - title: Manufacturing
           url: manufacturing
         - title: Processing

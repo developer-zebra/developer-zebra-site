@@ -98,7 +98,7 @@ _Well-defined borders provide an unbroken perimeter as well as space and contras
 ## Using Template Builder 
 Template Builder is free for Zebra partners and other registered users. Existing Zebra customers, partners and ISVs with access to Partner Central can use their existing credentials to gain access to Template Builder. Others must register using the instructions below. Credentials are generally sent within one or two business days. 
 
-**Note**: SimulScan can be used without a License to <u>only scan barcodes through an app using [DataWedge](../../../../datawedge)</u>. A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
+**Note**: SimulScan can be used without a License <u>only to scan barcodes through an app using [DataWedge](../../../../datawedge)</u>. A SimulScan License is required for access to OCR and OMR features and/or SimulScan APIs. For more information, please see the [Licensing page](../license).
 
 ### Quick Steps  
 

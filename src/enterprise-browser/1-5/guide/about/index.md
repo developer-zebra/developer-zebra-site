@@ -15,15 +15,17 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, and a range of additional new features for Android and Windows Mobile/CE devices.  
 
+
 ####Zebra Device Support
-  * TC70 and TC75 with Android Lollipop
-  * WT6000 with Android Lollipop
-  * MC40 with Android Lollipop
-  * MC67 with Android KitKat
-  * WorkAbout Pro 4 with Windows Embedded Handheld 6.5
-  * Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5
-  * VH10 with Windows CE 6.0
-  * RS6000, RS4000 and RS507 ring scanners for use with WT6000
+* TC70 and TC75 with Android Lollipop
+* WT6000 with Android Lollipop
+* MC40 with Android Lollipop
+* MC67 with Android KitKat
+* WorkAbout Pro 4 with Windows Embedded Handheld 6.5 - _WAP4 WEH-3.0.1 BSP and above_
+* Omnii XT15 with Windows CE 6.0 - _Omnii CE-12.2 BSP and above_
+* Omnii XT15 with Windows Embedded Handheld 6.5 - _Omnii WEH-8.2 BSP and above_
+* VH10 with Windows CE 6.0 - _Omnii CE-12.2 BSP and above_
+* RS6000, RS4000 and RS507 ring scanners for use with WT6000
 
 [See all supported devices](../about#mobile)
 
@@ -137,7 +139,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc18Pic" src="../../images/mc18.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC18</b></td>
   <td class="clsSyntaxCells clsOddRow">MC18</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0, Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -165,7 +167,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -207,7 +209,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean), 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br>Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -249,14 +251,14 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc92Pic" src="../../images/mc9100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
   <td class="clsSyntaxCells clsOddRow">MC92N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat,<br> Windows CE 7.0,<br> Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat<br>Windows CE 7.0<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br> Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9500</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC9590, MC9596, MC9598, MC959B (WM6.1)</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1, Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -269,36 +271,36 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC70 (GA1, GA2)</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>	TC70 GA1, TC70 GA2</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="../../images/tc75.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Workabout</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Workabout Pro 4</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">CE 6.0, Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>XT15</b></td>
-  <td class="clsSyntaxCells clsOddRow">OMNII XT15 Mobile Computer Series</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0, Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
+  <td class="clsSyntaxCells clsOddRow">XT15</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody></table>
@@ -336,7 +338,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
-  <td class="clsSyntaxCells clsOddRow">Vehicle-Mounted Computer</td>
+  <td class="clsSyntaxCells clsOddRow">VH10</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -400,7 +402,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Wearable Computer</nobr></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>

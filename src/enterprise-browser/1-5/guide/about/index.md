@@ -161,7 +161,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br> Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
@@ -210,7 +210,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br>Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc70Pic" src="../../images/mc70.jpeg" height="75"></td>
@@ -252,7 +252,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
   <td class="clsSyntaxCells clsOddRow">MC92N0</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat<br>Windows CE 7.0<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br> Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>

@@ -17,15 +17,17 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 
 ####Zebra Device Support
-* TC70 and TC75 with Android Lollipop
-* WT6000 with Android Lollipop
-* MC40 with Android Lollipop
 * MC67 with Android KitKat
+* TC70 with Android Lollipop
+* TC75 with Android Lollipop
+* WT6000 with Android Lollipop
 * WorkAbout Pro 4 with Windows Embedded Handheld 6.5 - _WAP4 WEH-3.0.1 BSP and above_
 * Omnii XT15 with Windows CE 6.0 - _Omnii CE-12.2 BSP and above_
 * Omnii XT15 with Windows Embedded Handheld 6.5 - _Omnii WEH-8.2 BSP and above_
 * VH10 with Windows CE 6.0 - _Omnii CE-12.2 BSP and above_
-* RS6000, RS4000 and RS507 ring scanners for use with WT6000
+* RS4000 - Applicable to WT6000 Android Lollipop device only.
+* RS507 - Applicable to Android KitKat and above platform only.
+* RS6000 - Applicable to WT6000 Android Lollipop device only.
 
 [See all supported devices](../about#mobile)
 

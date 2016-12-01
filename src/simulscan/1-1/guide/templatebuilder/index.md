@@ -81,6 +81,10 @@ Before attempting to create a Template, the following assets are required:
 
 **Template -** an XML document that defines "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. Each Template is associated with exactly one Document. 
 
+**Template, Structured -**
+
+**Template, Unstructured -**
+
 <!-- 
 **Template Persistence -** keeps Templates in sync between a development host and the Template Builder host server. 
 -->

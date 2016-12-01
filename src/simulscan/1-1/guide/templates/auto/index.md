@@ -19,16 +19,19 @@ A Demo App is included with all [devices that support SimulScan](../about/#suppo
 
 AIAG B-10 CUSTOMER SEGMENT FOR MASTER LOAD_Q,4S, P.jpg
 <img style="height:350px" src="AIAG B-10 CUSTOMER SEGMENT FOR MASTER LOAD_Q,4S, P.jpg"/>
+[Download the Template](https://zebra.box.com/s/2nqgwxvtdm4kweg9mkkwinkl9pnapsy6) for the form above. 
 <br>
 
 
 AIAG B-5_P,V,S,K, 1T, 2Q, 1Q, Q.png
 <img style="height:350px" src="AIAG B-5_P,V,S,K, 1T, 2Q, 1Q, Q.png"/>
+[Download the Template](https://zebra.box.com/s/g374jiv2yml24cvtcnx52j7ivi0zi8eo) for the form above. 
 <br>
 
 
 AIAG B-10 Label File P, Q, K, V, 4S.jpg
 <img style="height:350px" src="AIAG B-10 Label File P, Q, K, V, 4S.jpg"/>
+[Download the Template](https://zebra.box.com/s/bi1b3v5xndq9rqw4jio32u2pt23ai73h) for the form above. 
 <br>
 
 
@@ -64,7 +67,7 @@ Before testing a custom Template, complete the following steps:
 * If pushing to the device, push Template(s) to: 
  * `/<internal storage>/simulscan/templates/`
 
-For more, see [Deploy Templates](../templatebuilder/#deploytemplates). 
+For more, see [Deploy Templates](../../templatebuilder/#deploytemplates). 
 
 **To open a custom Template**: 
 

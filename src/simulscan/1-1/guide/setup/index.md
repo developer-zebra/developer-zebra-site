@@ -6,29 +6,88 @@ productversion: '1.1'
 ---
 ## Overview
 
-SimulScan can be accessed by selecting [SimulScan as an Input Plug-in](../../../../datawedge/6-0/guide/setup/#simulscaninput) with Zebra's [DataWedge](../../../../datawedge) service or by invoking its functions from within an Android app using the SimulScan APIs, which requires licensing. SimulScan advanced features can be explored without a license by using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
+SimulScan can be accessed either by selecting [SimulScan as an Input Plug-in](../../../../datawedge/6-0/guide/setup/#simulscaninput) with Zebra's [DataWedge](../../../../datawedge) service or by invoking its functions from within an Android app using the SimulScan APIs, which requires licensing. SimulScan advanced features can be explored without a license by using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test user-created Templates.
 
 **This guide covers SimulScan usage with DataWedge only**. See the [SimulScan API guide](../../api) for accessing SimulScan functions programmatically. 
 
 -----
 
-### Access SimulScan with DataWedge
-Before SimulScan can be used, at least one Template must be present on the device. DataWedge includes numerous Templates to cover common usage scenarios. For more advanced use-cases, Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified with Template Builder. 
+### About Templates
+
+Templates are central to the power of SimulScan; they control its ability to decode and parse data, and determine how acquired data is consumed by an application. At least one Template must be present and selected on the device before SimulScan can be used; a number of generic Templates are included.
+
+Custom Templates can either be Structured or Unstructured. A **Structured Template** is used when the Document to be scanned has a fixed layout--one that doesn't change from one instance of the form to another. These can be used to acquire multiple types of data at once (barcodes, text, images, etc). An **Unstructured Template** is for target Documents that vary in size, shape and/or layout, and are limited to a single data type (only barcodes, only text, etc.). 
+
+-----
+
+##### Structured Templates
+Structured Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used, and that **only the data** will change with each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, SimulScan learns what to expect from each region of a form, and the developer can map the data from each region to specific fields of an application. 
+
+For example, if a form like that shown in the image below was encountered regularly, a Structured Template using the [Mixed Data-type](../setup/#mixeddatatypetemplate) mode could be created to acquire the barcode, numbers, text, checkboxes and signature in a single pass. For a demonstration using this form, see the [SimulScan Demo App](../demo). 
+
+**The camera is the most effective device for Mixed Data-type acquisition**. 
+<br>
+
+<img style="height:300px" src="template.png"/>
+_Use a Structured Template and Multi Data-type mode_. 
+<br>
+
+-----
+
+##### Unstructured Templates
+Unstructured Templates are useful for scenarios in which the target Document constantly varies or when acquiring a single data type such as barcodes or text. For example, if it's known that the only data required for acquisition is from barcodes, then an Unstructured Template can be created using Multi-barcode mode. Such a Template could capture an unlimited number of 1D/2D barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. The generic templates included with SimulScan can handle from 1-10 barcodes.  
+
+<img style="height:250px" src="AIAG B-10 Label File P, Q, K, V, 4S.jpg"/>
+_Use an Unstructured Template and Multi-barcode mode_.  
+<br>
+
+**The 2D imager is the most effective device for Multi-barcode mode**. With the exception of early TC70 models, all [Zebra devices that support SimulScan](../about/#supporteddevices) are equipped with an imager.
+
+-----
+
+### Access Through DataWedge
+DataWedge includes a number of Templates that can be used for common usage scenarios. For more advanced use-cases, Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and modified with Template Builder. 
 
 **Templates included with DataWedge**:
 
-* **Default-DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
+* **Default - BankCheck.xml -** reads the account number, routing number and amount of a check and detects the presence of a signature. 
 
-* **Default-DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+* **Barcode1.xml -** decodes a single barcode of any symbology. 
 
+* **Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies. 
+
+* **Barcode2.xml -** decodes two barcodes of the same or differing symbologies. 
+
+* **Barcode4.xml -** decodes four barcodes of the same or differing symbologies. 
+
+* **Barcode5.xml -** decodes five barcodes of the same or differing symbologies. 
+
+* **BookNumber.xml -** decodes 10- or 13-digit [ISBN codes](http://www.isbn.org/about_ISBN_standard).
+
+* **DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
+
+* **DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+
+* **TravelDoc.xml -** captures information from the machine-readable zone (MRZ) of a travel document such as a passport.
+
+* **Unstructured Multi-Line.xml -** uses OCR to acquire multiple lines of alpha/numeric text. 
+
+* **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text. 
+
+_The names of all included Templates are preceded by the word "Default" and a hyphen_.   
+
+<!--
 * **Default-One-Barcode.xml -** decodes a single barcode in the form and returns a single data region as the output.
 
 * **Default-Two-Barcodes.xml -** decodes two barcodes in a form and returns the data as two data regions.
+-->
 
 If using Templates already present on the device, skip to the "Activate SimulScan" section. 
 
+<!--
+
 ### Multi-barcode Template
-**A Multi-barcode Template** is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [licensing](../license). **The 2D imager is the most effective device for Multi-barcode mode**. With the exception of early TC70 models, all [Zebra devices that support SimulScan](../about/#supporteddevices) are equipped with an imager. 
+**A Multi-barcode Template** is designed for use on forms from which only barcode data will be acquired. In theory, there's no limit to the number of barcodes and symbologies that can be captured at one time. The unlicensed version of SimulScan permits a maximum of nine (9) barcodes to be captured from a form without [licensing](../license).  
 
 <img style="height:350px" src="msi_reader.png"/>
 *A typical barcode-only form for a common and effective SimulScan use case*.
@@ -38,18 +97,14 @@ If using Templates already present on the device, skip to the "Activate SimulSca
 
 <!-- When the data to be captured is of one type (i.e. barcodes) or contained in a single field (i.e. an address), SimulScan can be used to acquire the data regardless of whether it is presented on a structured form. In such instances, it is often the case that data must be captured only from a small portion of a form, and the remaining form data can be ignored.
 
-Some data-acquisition scenarios call for creation of a type-specific Template, for example to capture all the barcodes on the form, or to use (OCR) to capture only an address (not shown). For another example application, a Template might be created to capture only the machine-readable zone (MRZ) data from travel documents. -->
+Some data-acquisition scenarios call for creation of a type-specific Template, for example to capture all the barcodes on the form, or to use (OCR) to capture only an address (not shown). For another example application, a Template might be created to capture only the machine-readable zone (MRZ) data from travel documents.
 
 ### Mixed Data-type Template  
-**The Mixed Data-type Template** captures multiple data types from a variety of sources, such as barcodes, OCR and images. For example, the form below contains a barcode, account numbers and other numerical shipper information, company names and addresses for the shipper and receiver, checkboxes with various values, and a signature and date. This otherwise time-consuming and error-prone data-capture task can be performed in seconds with SimulScan and a carefully crafted Template. 
+**The Mixed Data-type Template** captures multiple data types from a variety of sources. For example, the form below contains a barcode, account numbers and other numerical shipper information, company names and addresses for the shipper and receiver, checkboxes with various values, and a signature and date. Acquiring all of this data separately would be time-consuming and error-prone. But SimulScan can do it in seconds once a Template is made. See this form in action using the [SimulScan Demo App](../demo). 
 
-![img](template.png)
-_Click on image to enlarge_
-<br>
+-->
 
-Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used, and that only the data itself will change for each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, SimulScan learns what to expect from each region of a form, and the developer can map data from each region to specific fields of an application. 
-
-For example, in the upper-right corner of the sample form above will always be located a barcode identifying the waybill number. The lower-right corner will always contain the signature and date. After creating a Template for this form, data from those fields can be used to automatically populate a receiving record with each incoming shipment that's accompanied by this form. **The camera is the most effective device for Mixed Data-type mode**. 
+-----
 
 #### Create a Template:  
 

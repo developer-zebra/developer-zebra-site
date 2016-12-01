@@ -20,7 +20,7 @@ automenu:
           url: 
         - title: sample
           url: 
-        - title: The other sample
+        - title: another sample
           url: 
     - title: Medical
       items:
@@ -32,7 +32,7 @@ automenu:
           url: er
         - title: X-Ray Tech
           url: xray
-        - title: Stuff
+        - title: Fake Stuff
           url: stuff
         - title: Gift Shop
           url: giftshop

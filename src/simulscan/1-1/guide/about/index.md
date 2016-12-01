@@ -6,53 +6,28 @@ productversion: '1.1'
 ---
 
 ## Overview
-Zebra SimulScan is a productivity tool that can optimize data-capture workflow by enabling in a single step multiple data points to be captured and parsed directly into an application. 
+Zebra's SimulScan is a set of productivity tools that can optimize the efficiency of data-capture workflow by enabling workers to acquire multiple points of data in a single step. When integrated with SimulScan APIs, captured data can be parsed directly into an organization's native applications. 
 
 **SimulScan Can Help Optimize Workflow If...** 
 
 * **Scanning is frequent** in the organization, and
-* **Scanned forms are consistent** in layout or data type (i.e. contain only barcodes), and
-* **Forms have well-defined borders**. 
+* **Forms have well-defined borders**, and
+* **Scanned forms are of a fixed layout**, and/or
+* **Scanned forms contain a single data type** (such as barcodes or text). 
 
 -----
 
 #### SimulScan offers two modes of operation:  
 
-####[Multi-barcode](../setup/#multibarcodetemplate) 
 <img style="height:100px" src="msi_reader.png"/>
-Multi-barcode mode captures an unlimited number of 1D/2D barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. 
-<br>
+[Multi-barcode](../setup/#multibarcodetemplate) captures an unlimited number of 1D/2D barcodes of the same or differing symbologies from a single form, even if the form changes from one scan to another. 
 <br>
 
-####[Mixed Data-type](../setup/#mixeddatatypetemplate) 
 ![img](mixed-data.png)
-Mixed Data-type mode captures data from barcodes, alphanumeric characters, check marks, signatures and images from a single form, as long as the layout of the form doesn't change.
+[Mixed Data-type](../setup/#mixeddatatypetemplate) captures from a single form data from barcodes, alphanumeric characters and images, and can determine the presence of check marks and signatures. This mode requires Documents with a fixed layout.
 <br>
 
 -----
-
-### Requirements
-* **A Zebra TC55, TC70, TC75, TC8000 device** running Android
-* **Camera or 2D imager** (both included on above devices except some camera-only TC70s)
-* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
-* **A per-device [license](../license)** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
-
------
-
-## How it Works
-SimulScan works through Templates, which an organization uses to define "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. 
-
-![img](regions_of_interest.png)
-
-In addition, some Fields are designated as "Anchor Elements," which serve to help SimulScan to identify the form and to set a reference for other Fields to compensate for changes in the orientation of the Document or the scanning device. 
-
-**SimulScan is accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
-
-**SimulScan is free** when used with DataWedge to scan only barcodes _**and**_ to scan fewer than 10 barcodes at a time. A per-device license is required for any other scenario. For licensing details, please see the [Licensing guide](../license). 
-
-<!--
-Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
--->
 
 ### Benefits
 
@@ -71,6 +46,31 @@ Forms can include barcodes, multiple lines of text, phone numbers, images, signa
 * **Signatures** (captured as an image)
 * **Checkboxes** (captured as yes/no)
 
+-----
+
+### Requirements
+* **A Zebra TC55, TC70, TC75, TC8000 device** running Android
+* **Camera or 2D imager** (both included on above devices except some camera-only TC70s)
+* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
+* **A per-device [license](../license)** if capturing 10+ barcodes per form or using OCR, OMR or SimulScan APIs
+
+-----
+
+## How it Works
+SimulScan works through Templates, which define "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. 
+
+![img](regions_of_interest.png)
+
+In addition, some Fields are designated as "Anchor Elements," which serve to help SimulScan to identify the form and to set a reference for other Fields to compensate for changes in the orientation of the Document or the scanning device. 
+
+**SimulScan is accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
+
+**SimulScan is free** when used with DataWedge to scan only barcodes _**and**_ to scan fewer than 10 barcodes at a time. A per-device license is required for any other scenario. For licensing details, please see the [Licensing guide](../license). 
+
+<!--
+Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.
+-->
+
 <!-- 
 **Using a [Multi-barcode Template](../setup/#multibarcodemode)**, SimulScan can capture an unlimited number of barcodes from a single form. These barcodes can be of the same or differing symbologies and found on structured forms or those that might change from one scan to another. 
 
@@ -81,16 +81,16 @@ Forms can include barcodes, multiple lines of text, phone numbers, images, signa
 
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th width="20%" align="center" valign="middle" class="clsSyntaxHeadings">Device</th>
-  <th width="20%" align="center" valign="middle" class="clsSyntaxHeadings">Model</th>
-  <th width="30%" align="center" valign="middle" class="clsSyntaxHeadings">Camera</th>
-  <th width="30%" align="center" valign="middle" class="clsSyntaxHeadings">2D Imager</th>
+  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">------------Device----------</th>
+  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">------------Model---------</th>
+  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">-----------Camera---------</th>
+  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">-----------2D Imager--------</th>
  </tr>
  <tr>
-  <td width="20%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
-  <td width="20%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td width="30%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="30%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
+  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
+  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
  </tr>
  <tr>
   <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>

@@ -60,11 +60,11 @@ _**Click image to enlarge**_.
 <img style="height:350px" src="07_check_results.png"/>
 <br>
 
-**&#57;. Tapping any field invokes the keyboard**. Correct as needed. 
+**&#57;. Tapping any field invokes the keyboard**. Correct as needed. **Press OK to return to the Parsed Data screen**.
 <img style="height:350px" src="08_correction.png"/>
 <br>
 
-**&#49;&#48;. Press OK to return to the Parsed Data screen**. Repeat Step 9 until all errors are corrected. SimulScan tracks edited Fields with color coding:  
+**&#49;&#48;. Repeat Step 9 until all errors are corrected**. SimulScan tracks edited Fields with color coding:  
 <img style="height:350px" src="09_checked_area.png"/>
 <br>
 

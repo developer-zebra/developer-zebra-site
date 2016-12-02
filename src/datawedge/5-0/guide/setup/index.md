@@ -258,9 +258,7 @@ _SimulScan Input Plug-in options_.
 
 **Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
 
-**Template selection -** sets a SimulScan template for the Profile being configured. Four templates are included with DataWedge: 
-
-* **Default-DocCap+Optional-Barcode.xml -** Captures the form as a picture and optionally decodes a barcode if available in the form.
+**Template selection -** sets a SimulScan template for the Profile being configured. 
 
 **Templates included with DataWedge**:
 

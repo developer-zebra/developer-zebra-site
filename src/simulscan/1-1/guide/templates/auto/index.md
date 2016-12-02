@@ -5,7 +5,10 @@ product: SimulScan
 productversion: '1.1'
 ---
 ##Overview
-A Demo App is included with all [devices that support SimulScan](../about/#supporteddevices) 
+
+
+
+All Templates can be downloaded from the `/Public/templates` folder of the [Template Builder web site](http://simulscan.zebra.com). 
 
 **Zebra assumes no responsibility for Templates**. 
 

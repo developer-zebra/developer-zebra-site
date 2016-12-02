@@ -56,7 +56,9 @@ _**Click image to enlarge**_.
 <img style="height:350px" src="06_parsed.png"/>
 <br>
 
-**&#56;. Warnings appear with results** that SimulScan considers questionable along with an image of the corresponding area to aid in validation or correction:    
+**If SimulScan has less than absolute confidence in the correctless of a decoded value**, that value will be presented along with an image of the corresponding area from the scanned Document to aid in validation or correction. 
+
+**&#56;. Tap any red-highlighted fields** to confirm or correct the captured data:
 <img style="height:350px" src="07_check_results.png"/>
 <br>
 

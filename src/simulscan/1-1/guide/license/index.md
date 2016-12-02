@@ -5,7 +5,7 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes _<u>and</u>_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. A license also is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or [Enterprise Browser](../../../../enterprise-browser).
+**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes<!-- _<u>and</u>_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. --> A license also is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or [Enterprise Browser](../../../../enterprise-browser).
 
 **General Licensing Rules**:
 

@@ -81,9 +81,9 @@ Before attempting to create a Template, the following assets are required:
 
 **Template -** an XML document that defines "regions of interest" on Documents to be scanned, "fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the fields. Each Template is associated with exactly one Document. 
 
-**Template, Structured -**
+**Template, Structured -** a Template made for a Structured Target and generally associated with Mixed Data-type mode. Work on the principle that location and type of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used. Use the device camera by default.  
 
-**Template, Unstructured -**
+**Template, Unstructured -** generally used for Unstructured Targets and when acquiring data of a single type. The device imager is automatically selected for Barcode-only mode; the camera for OCR.  
 
 <!-- 
 **Template Persistence -** keeps Templates in sync between a development host and the Template Builder host server. 
@@ -108,7 +108,7 @@ Template Builder is free for Zebra partners and other registered users. Existing
 
 1. **Log in** to the [Template Builder web site](http://simulscan.zebra.com).
 2. **Select the Template type** to create. 
-3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF; 5 MB max.).
+3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF; 5MB max.).
 4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
 5. **Save and download** the completed Template(s) to the development host (local PC). 
 6. **Copy Template(s) to the device** that will be performing the scans. 

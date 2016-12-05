@@ -1,19 +1,19 @@
 ---
 csp: ethernetmgr
-title: Proxy Port
+title: Set Proxy Port
 type: parm
 order: 7
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
 parm:
-  presentif: Set Ethernet Proxy Settings is "Manual"
+  presentif: Ethernet Proxy Setting is "Manual"
   pivotal: No
   name: ProxyPort
   type: string
 ---
 
-Used to specify the two-digit Port number to use on the Proxy server through which all device communications will pass. 
+Used to specify the two-digit Port number for accessing the Proxy server through which all device communications will pass. 
 
 **Input rules**: 
 

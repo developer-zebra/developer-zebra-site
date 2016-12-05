@@ -7,7 +7,7 @@ mx: "6.2"
 osx: "6.2"
 apilevel: "23"
 parm:
-  presentif: Set Ethernet Proxy Settings is "Manual"
+  presentif: Ethernet Proxy Setting is "Manual"
   pivotal: No
   name: ProxyHostName
   type: string

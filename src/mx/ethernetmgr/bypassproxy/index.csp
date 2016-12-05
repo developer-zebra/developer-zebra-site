@@ -1,13 +1,13 @@
 ---
 csp: ethernetmgr
-title: Bypass Proxy
+title: Set Bypass Proxy
 type: parm
 order: 10
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
 parm:
-  presentif: Set Ethernet Proxy Settings is "Manual"
+  presentif: Ethernet Proxy Setting is "Manual"
   pivotal: No
   name: BypassProxy
   type: string

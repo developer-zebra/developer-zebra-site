@@ -33,16 +33,17 @@ The following software must be installed prior to using the EMDK for Android.
 ## Devices Supported
 Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
 
-* MC18 - KitKat (4.4.4)
-* MC40 - KitKat (4.4.4)
-* MC92 - KitKat (4.4.4)
-* TC55 - KitKat (4.4.3)
-* TC70 - KitKat (4.4.3)
-* TC75 - KitKat (4.4.3)
-* TC8000 - KitKat (4.4.3),Lollipop (5.1.1)
-* WT6000 - Lollipop (5.1.1)
-* ET50 - Lollipop (5.1.1)
-* ET55 - Lollipop (5.1.1)
+* MC18 - KitKat 
+* MC40 - KitKat 
+* MC92 - KitKat 
+* TC51 - Marshmallow
+* TC55 - KitKat 
+* TC70 - KitKat ,Lollipop
+* TC75 - KitKat ,Lollipop
+* TC8000 - KitKat ,Lollipop
+* WT6000 - Lollipop 
+* ET5X - Lollipop 
+ 
 
 
 

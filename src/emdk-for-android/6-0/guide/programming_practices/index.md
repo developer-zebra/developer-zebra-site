@@ -204,7 +204,7 @@ Use this method to make use of the EMDK in a project with a Compile SDK set abov
 
 
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
-2. Add the following to the dependencies section. Be sure to update the `dir:` path to the correct com.symbol.emdk.jar path on your development system.
+2. Add the following to the dependencies section. Be sure to update the `dir:` path to the path where com.symbol.emdk.jar exists on your development system.
 
     **Windows**
 

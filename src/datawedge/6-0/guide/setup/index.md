@@ -275,7 +275,7 @@ Custom template XML files copied to the following device directory will be avail
 
 `/enterprise/device/settings/datawedge/` 
 
-Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Creator](https://simulscan.zebra.com/). 
+Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../simulscan/1-1/guide/templatebuilder). 
 
 **Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
 

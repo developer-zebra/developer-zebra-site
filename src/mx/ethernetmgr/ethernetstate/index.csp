@@ -1,9 +1,11 @@
 ---
 csp: ethernetmgr
-title: Ethetnet State Enable/Disable
+title: Ethernet Enable/Disable
 type: parm
-order: 3
+order: 1
 mx: "6.2"
+osx: "6.2"
+apilevel: "23"
 parm:
   pivotal: No
   name: EthernetState
@@ -11,16 +13,25 @@ parm:
   list:
     - code: 0
       mx: "6.2"
+      osx: "6.2"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to be discoverable by other Bluetooth devices; any previously selected setting will be retained.
+      apilevel: "23"
+      description: This value (or the absence of this parm from the XML) will cause no changes to the Ethernet state; any previously selected setting will be retained.
     - code: 1
-      name: Enable
+      name: Turn On
       mx: "6.2"
-      description: Enables the user to set the device as "discoverable" by other Bluetooth devices.
+      osx: "6.2"
+      apilevel: "23"
+      description: Enables network connectivity through an Ethernet cradle port.
     - code: 2
-      name: Disable
+      name: Turn Off
       mx: "6.2"
-      description: Prevents the user from setting the device as discoverable by other Bluetooth devices.
+      osx: "6.2"
+      apilevel: "23"
+      description: Disables network connectivity through an Ethernet cradle port.
 ---
 
-Controls whether the device can be put into "discoverable" mode by the device user. When in this mode, the device can **_be discovered_** by other Bluetooth devices, which could then attempt to pair with it. This parameter has no effect on the device's ability to discover other devices, to initiate pairing requests with them, or to reconnect with devices it had paired with previously. 
+This is the On/Off switch for Ethernet, controlling the ability of device to connect with a network via Ethernet when it is placed in an Ethernet-equipped cradle. 
+
+**This parameter has no effect on Wi-Fi communications or wireless Ethernet adapter settings**. 
+

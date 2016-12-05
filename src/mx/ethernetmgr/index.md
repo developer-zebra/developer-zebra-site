@@ -1,17 +1,11 @@
 ---
-title: Bluetooth Manager
-description: The BluetoothMgr controls whether to allow new devices to pair.
+title: Ethernet Manager
+description: The EthernetMgr controls access and settings for devices connected to an Ethernet-equipped cradle.
 layout: csp-detail.html
 mxversions:
-  - text: MX 4.2
-    value: 4.2
-  - text: MX 4.3
-    value: 4.3
-  - text: MX 4.4
-    value: 4.4
-  - text: MX 5.0
-    value: 5
-csp: bluetoothmgr
+  - text: MX 6.2
+    value: 6
+csp: ethernetmgr
 ---
 
 

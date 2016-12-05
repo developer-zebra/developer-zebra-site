@@ -1,16 +1,17 @@
 ---
-csp: bluetoothmgr
+csp: ethernetmgr
 title: Overview
 type: text
 order: 0
 ---
 
-BluetoothMgr controls whether a device can pair with other Bluetooth devices such as headsets and printers that come into range, and whether the device can be "discoverable," which would enable other Bluetooth devices to initiate pairing requests with it. 
+Ethernet Manager is used to administer settings for devices connected to a network through an Ethernet-equipped cradle. 
 
-Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band that was originally intended as a replacement for serial communications cables. It has since been adopted as a standard for hands-free headsets, stereo audio, networking to PCs and connections for barcode scanners, medical equipment and other devices formerly using RS-232. 
+**This CSP is separate from the [Wi-Fi Manager](../wifi) and has no effect on Wi-Fi communications or wireless Ethernet adapter settings**. 
 
 ### Main Functionality
 
-* Enable/Disable Bluetooth Pairing 
-* Enable/Disable Bluetooth Discoverability
-
+* Enable/Disable network connection through an Ethernet-equipped cradle
+* Enable/Disable Use of a Proxy
+* Set the Proxy Port and Proxy Host Name
+* Set a Proxy-Bypass Port

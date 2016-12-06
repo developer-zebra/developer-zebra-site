@@ -7,7 +7,7 @@ layout: guide.html
 ## Overview
 Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JavaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
-The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](/stagenow/2-4/gettingstarted/) or a mobile device management (MDM) system.   
+The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system.   
 
 Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
 
@@ -25,8 +25,8 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 * Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
 * Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
 * VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* RS4000 and RS6000 work with WT6000 running Android Lollipop.
-* RS507 work with devices running Android KitKat and higher.
+* RS4000, RS6000 ring scanners work with EB apps on the WT6000 running Android Lollipop
+* RS507 ring scanner works with EB apps on devices running Android KitKat and higher
 
 [See all supported devices](../about#mobile)
 
@@ -46,7 +46,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 #### New Tags for Android
 
-* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** enables debugging of Enterprise Browser apps using **Chrome Inspector**.
+* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** controls Enterprise Browser app **debugging with Chrome Inspector**, which is now supported.
 
 * **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
 
@@ -56,7 +56,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
 
-* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control cached pages will be refreshed.
+* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control when cached pages will be refreshed.
 
 * **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
 
@@ -64,7 +64,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes. Also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
-* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4)details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
+* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to **use DataWedge for barcode scanning in place of the Enterprise Browser APIs**, and how to switch between the two. 
 
 ### Key Enterprise Browser Features
 

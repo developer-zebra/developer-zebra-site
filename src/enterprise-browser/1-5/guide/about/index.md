@@ -21,10 +21,10 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 * TC70 with Android Lollipop
 * TC75 with Android Lollipop
 * WT6000 with Android Lollipop
-* WorkAbout Pro 4 with Windows Embedded Handheld 6.5 - (_WAP4 WEH-3.0.1 BSP and higher_)
-* Omnii XT15 with Windows CE 6.0 - (_Omnii CE-12.2 BSP and higher_)
-* Omnii XT15 with Windows Embedded Handheld 6.5 -( _Omnii WEH-8.2 BSP and higher_)
-* VH10 with Windows CE 6.0 - (_Omnii CE-12.2 BSP and higher_)
+* WorkAbout Pro 4 with Windows Embedded Handheld 6.5 (_WAP4 WEH-3.0.1 BSP and higher_)
+* Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
+* Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
+* VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
 * RS4000 and RS6000 work with WT6000 running Android Lollipop.
 * RS507 work with devices running Android KitKat and higher.
 

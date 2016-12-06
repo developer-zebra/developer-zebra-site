@@ -1,22 +1,24 @@
 ---
 title: SimulScan Pre-built Templates
-description: SimulScan Templates have been created as a starting point for use in specific industries. All Templates can be downloaded from the /Public/templates folder of the Template Builder web site. Zebra assumes no responsibility for Templates. 
+description: Zebra provides pre-built SimulScan Templates for specific industries that can be used as-is or modified as needed. All Templates can be downloaded from the /Public/templates folder of the Template Builder web site. Zebra assumes no responsibility for Templates. 
 layout: list-apis.html
 automenu:
   items:
     - title: Helpful Links
       items:
+        - title: How to Test a Custom Template
+          url: ../demo/#testacustomtemplate
         - title: Template Builder web site
           url: http://simulscan.zebra.com
         - title: SimulScan Default Templates
           url: ../setup/#accessthroughdatawedge
     - title: Automotive
       items:
-        - title: Auto-parts Receiving
+        - title: LIVE SAMPLE
           url: auto
         - title: Manufacturing
           url: 
-        - title: Processing
+        - title: Receiving
           url: 
     - title: Manufacturing
       items:
@@ -42,14 +44,6 @@ automenu:
           url: stuff
         - title: Gift Shop
           url: giftshop
-    - title: Migration
-      items:
-        - title: From Pocket Browser 2.x/3x
-          url: pb2
-        - title: From RhoElements 2.x
-          url: elements
-        - title: From RhoMobile 4.x
-          url: rhomobile
 product: SimulScan
 productversion: '1.1'
 ---

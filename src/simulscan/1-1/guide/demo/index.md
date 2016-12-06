@@ -78,10 +78,10 @@ The SimulScan Demo app exposes all SimulScan features (except the ability to sav
 ####Before You Begin
 Before testing a custom Template, complete the following steps: 
 
-* Have on hand a printed version of the target Document(s) for which the Template(s) were created.  
-* If pulling from the server, Template(s) must be in:
+* Create a printed version of the target Document(s) for which the Template(s) were created.  
+* If using the Demo App to pull from the server, Template(s) to be tested must be in:
  * `/<accountID>/templates/release/`
-* If pushing to the device, push Template(s) to: 
+* If pushing from a local PC to the device, push Template(s) to: 
  * `/<internal storage>/simulscan/templates/`
 
 For more, see [Deploy Templates](../templatebuilder/#deploytemplates). 
@@ -98,12 +98,12 @@ For more, see [Deploy Templates](../templatebuilder/#deploytemplates).
 <img style="height:350px" src="12_select_template.png"/>
 <br>
 
-**Browse external storage -** lists Templates in the `/sdcard/simulscan/templates/` folder.
+**Browse external storage -** lists Templates in the `/<internal storage>/simulscan/templates/` folder on the device.
 
-**Default templates -** lists Templates included with SimulScan.
+**Default templates -** lists Templates included with SimulScan, which are stored in the `/enterprise/device/settings/datawedge/templates` folder on the device. Custom Templates pushed to this location will be displayed with included ones. 
 
 **Select from server -** lists Templates in the `/<accountID>/templates/release/`
-folder on the [Template Builder web site](http://simulscan.zebra.com). A login prompt appears. Enter credentials for the Template Builder web site. The copy of the specified Template is placed in the `/<internal storage>/simulscan/templates/` folder on the device. 
+folder on the [Template Builder web site](http://simulscan.zebra.com) after logging into the Template Builder web site. When using this option, a copy of the specified Template is placed in the `/<internal storage>/simulscan/templates/` folder on the device. 
 
 **&#51;. Go to [How to Use the Demo App](#howtousethedemoapp) Step 5**.  
 

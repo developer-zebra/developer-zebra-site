@@ -37,7 +37,7 @@ Before attempting to create a Template, the following assets are required:
 
 ### Glossary
 
-**Anchor Element(s) -** one or more unchanging images or other Document attributes (i.e. company logo) that SimulScan can use to identify the Document and determine its orientation.
+**Anchor Element(s) -** one or more unchanging images, barcodes or other Document attributes (i.e. company logo) created as part of a Template that SimulScan can use to identify a Document and determine its orientation. 
 
 **Bounding Box -** an oval, round or square object on the printed form that contains a mark to be acquired using OMR. 
 

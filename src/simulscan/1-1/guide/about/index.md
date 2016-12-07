@@ -24,7 +24,7 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 <br>
 
 ![img](mixed-data.png)
-[Mixed Data-type](../setup/#structuredtemplates) includes the features of Multi-barcode and can also capture alphanumeric characters and images, and can determine the presence of check marks and signatures. This mode requires scan targets with a fixed layout.
+[Mixed Data-type](../setup/#structuredtemplates) includes the features of Multi-barcode and can also capture alphanumeric characters and images, and can determine the presence of check marks and signatures in a single scan. This mode requires scan targets with a fixed layout.
 <br>
 
 -----

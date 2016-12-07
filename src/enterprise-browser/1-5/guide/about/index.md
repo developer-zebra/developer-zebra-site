@@ -25,8 +25,8 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 * Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
 * Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
 * VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* RS4000, RS6000 ring scanners work with EB apps on the WT6000 running Android Lollipop
-* RS507 ring scanner works with EB apps on devices running Android KitKat and higher
+* RS4000, RS6000 ring scanners supports EB apps on WT6000 devices running Android Lollipop
+* RS507 ring scanner supports EB apps on devices running Android KitKat and higher
 
 [See all supported devices](../about#mobile)
 
@@ -43,6 +43,8 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 * **[Simplified mass deployment](../keycapture)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
 
 * **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits a greater control over values extracted from Android devices for configuring the Android UserAgent string. 
+
+* **Improved [SSL/TLS security compliance](../compliance)** with support up to TLS 1.2. 
 
 #### New Tags for Android
 

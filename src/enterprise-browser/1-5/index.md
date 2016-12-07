@@ -28,15 +28,3 @@ menu:
 product: Enterprise Browser
 productversion: '1.5'
 ---
-
-<!-- not sure where the "insert"  code came from, but removing it had no apparent effect: 
-(surrounding lines retained for context)
-
-title: Enterprise Browser
-insert:
-  file: enterprise-browser/1-5/guide/about/index.md
-layout: guide.html
-menu:
-  title: Enterprise Browser 1.5
-
--->

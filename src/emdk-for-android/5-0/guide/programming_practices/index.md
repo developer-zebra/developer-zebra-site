@@ -195,6 +195,30 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
 
 
 
+##  EMDK as a dependency in gradle.build
+Use this method to make use of the EMDK in a project with a Compile SDK set above API 19.
+
+1. In the project folder viewer, open the **build.gradle** file for the **app** module.
+2. Add the following to the dependencies section
+
+    **Windows**
+
+		:::
+		dependencies {
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol-emdk_v4.2_API-19\\libs')
+		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
+
+    **Mac**
+
+		:::
+		dependencies {
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.2_API-19/libs')
+		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
+
+
+3. Now rebuild your project by selecting **Make Project** from the **Build** menu.
+
+
 
 
 

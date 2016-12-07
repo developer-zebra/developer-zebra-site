@@ -9,10 +9,6 @@ menu:
       versionfrom: 2-3
       default: /stagenow/2-2/about
       label: '2.2 '
-    - versionto: 2-4
-      versionfrom: 2-3
-      default: /stagenow/2-4/about
-      label: '2.4 '
   items:
     - title: About
       url: /stagenow/2-3/about

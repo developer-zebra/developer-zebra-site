@@ -89,10 +89,13 @@ In order for your application to use the EMDK For Android, you will need to inst
 There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](/emdk-for-android/5-0/samples/) for more details on using these samples. You can also reference the [Programmers Guide](/emdk-for-android/5-0/tutorial/) for a complete walk-through of building your first EMDK For Android application.
 
 ### Java APIs
-The EMDK for Android offers access to the device's Barcode capabilities through [traditional native Java Barcode APIs](/emdk-for-android/5-0/api/barcode). Be sure to look at the [Barcode Scanning API tutorial.](/emdk-for-android/5-0/tutorial/tutBasicScanningAPI)
+The EMDK for Android offers access to the device's Barcode capabilities through [traditional native Java Barcode APIs](/emdk-for-android/5-0/api/reference/com/symbol/emdk/barcode/package-summary.html). Be sure to look at the [Barcode Scanning API tutorial.](/emdk-for-android/5-0/tutorial/tutBasicScanningAPI)
 
 ### Intent APIs
 The EMDK for Android will continue to support the [DataCapture](/emdk-for-android/5-0/guide/reference/refdatacaptureintent) and [Battery Intent](/emdk-for-android/5-0/guide/reference/refbatteryintent) APIs that were previously available on individual device types. 
+
+
+
 
 
 

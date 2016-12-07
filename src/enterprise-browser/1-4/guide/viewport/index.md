@@ -4,56 +4,51 @@ productversion: '1.4'
 product: Enterprise Browser
 layout: guide.html
 ---
-Using the Viewport configuration setting in your app's config.xml, as well as in the HTML source of your app, you can configure the way your app will appear on a device based on either the device's width or a width you otherwise specify. We will go over a few of the less intuitive parts of the viewport configuration here.
+The appearance of an app's pages on the device screen is controlled by the app's HTML and the viewport settings in the app's `config.xml` file. Page width can with based either on the physical width of the display or on a specified fixed width. This guide explains the workings of both settings. 
 
-## Enabling Viewport Modification
-This will enable you to use your standard viewport settings within the Symbol Technologies Webkit. For more information on the Viewport metatag see the [Mozilla Viewport Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
+## Enable Viewport Settings
+This setting enables the use of standard viewport settings within the Zebra Technologies Webkit. For details about the viewport meta tag, refer to the [Mozilla Viewport Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
 
-Firstly, to enable the viewport in Symbol Technologies WebKit on Windows Mobile / CE you need to specify the following configuration option:
-
-`config.xml`
+To enable the viewport in the WebKit, specify the following option in the `config.xml` file:
 	 
     :::xml
     <ViewportEnabled VALUE="1"/>
 
-## Specifying Device Widths
-Specifying `width=device-width` in your meta tag will either:
+## Specify Device Widths
+Specifying `width=device-width` in a meta tag will either:
 
-* Use the value specified at `&lt;ViewportWidth VALUE="320"/&gt;` if one is specified.
-* Use the actual physical device width if no configuration option is specified, 480 pixels on an MC75a.
+* Use the value specified at &lt;ViewportWidth VALUE="320"/&gt; (if one is specified)
+* Use the physical width of the display (if no value is specified)
 
-Pages that specify an initial or maximum scale means the width property actually translates into a minimum viewport width. For example, if your layout needs at least 500 pixels of width then you can use the following markup.  When the screen is more than 500 pixels wide, the browser will expand the viewport (rather than zoom in) to fit the screen:
+For comparison, the width of the MC75a display is 480 pixels.
 
-### With Specified initial-scale
-
-The same page rendered on MC75a will appear as follows:
-
-In your app's html:
+#### With Specified initial-scale
+Pages that specify an initial or maximum scale will cause the width property to translate into a minimum viewport width. For example, if the layout needs at least 500 pixels of width, the meta tag markup shown below can be used. When the same page is rendered on a screen that is more than 500 pixels wide, the browser will expand the viewport (rather than zoom in) to fit the screen. Use the following code in the app's html:
 
     :::html
     <meta name="viewport" content="width=500, initial-scale=1"/>
 
-* MC75A Windows Mobile 6.5
+The same page rendered on an MC75a will appear as follows:
 
 ![img](../../images/viewport_config/winmo_viewport_demo.png)
+_MC75a with Windows Mobile 6.5_
 
-* An Android device's viewport appears similar but is not identical; the screen width is rendered at 360 pixels, presumably because the device resolution is different for Android.
-* The MC75a is behaving within the parameters of documented behavior when specifying both device-width and initial-scale, as detailed above, expanding the viewport to fit the contents.
+* An Android device's viewport appears similar but is not identical. The screen width is rendered at 360 pixels because the device resolution is different for Android.
+* The MC75a is behaving within the documented parameters when specifying both device width and initial scale (as detailed above), and is expanding the viewport to fit the content.
 
-### Without Specified initial-scale
+#### Without Specified initial-scale
 
-Let us consider the same page without specifying an initial-scale:
+Now consider the same page without specifying an initial-scale:
 
-In your app's html:
+In the app's html:
 
     :::html
     <meta name="viewport" content="width=320"/>
 
-* MC75A Windows Mobile 6.5
-
 ![img](../../images/viewport_config/winmo_no_initial_scale.png)
+_MC75a with Windows Mobile 6.5_
 
-Note that without specifying an initial-scale the MC75a will display the page with a viewport width of 320 pixels. This is with a specified device width of 320 pixels in the `config.xml` file, had this been left blank, the page would again render with a width of 480 pixels.
+Without specifying an initial scale, the MC75a displays the page with a viewport width of 320 pixels, the width specified for the device in the `config.xml` file. If this value had been left blank, the page would rendered with a width of 480 pixels.
 
-We suggest that you not specify an initial-scale in the viewport if you want the page to be locked to a resolution of 320 pixels on Windows Mobile. You can modify your html file to have a custom viewport for Windows Mobile if required.
+Zebra recommends that the initial scale be left blank in the viewport parameter so that the page is not locked to a set resolution. If necessary, a meta tag can be added to the HTML file to allow for an adaptive viewport width.
 

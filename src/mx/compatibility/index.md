@@ -12,6 +12,8 @@ mxversions:
     value: 5
   - text: MX 6.0
     value: 6
+  - text: MX 6.1
+    value: 6.1
 csps:
   - type: section
     title: Access Manager
@@ -43,7 +45,7 @@ csps:
     csp: batterymgr
   - type: section
     title: Bluetooth Manager
-    url: /mx/bluetoothrmgr
+    url: /mx/bluetoothmgr
     csp: bluetoothmgr
   - type: section
     title: Browser Manager
@@ -174,7 +176,7 @@ csps:
     url: /mx/usbmgr
     csp: usbmgr
   - type: section
-    title: WiFi
+    title: Wi-Fi Manager
     url: /mx/wifi
     csp: wifi
   - type: section

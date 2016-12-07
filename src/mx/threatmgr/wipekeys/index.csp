@@ -2,11 +2,11 @@
 csp: threatmgr
 title: Wipe Secure Storage Keys Countermeasure
 type: parm
-order: 6
+order: 25
 mx: "4.3"
 osx: "3.5"
 parm:
-  presentif: Shown if Threat Action is 'Turn On' and any Threat Action is selected.
+  presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected.
   pivotal: No
   name: WipeSecureStorageKeys
   type: list
@@ -15,12 +15,12 @@ parm:
       name: Do not perform
       mx: "4.3"
       osx: "3.5"
-      description: This countermeasure will not be executed.
+      description: Secure Storage Keys will not be removed.
     - code: 1
       name: Perform
-      description: This countermeasure will be executed upon threat detection.
+      description: Secure Storage Keys will be removed upon threat detection.
       mx: "4.3"
       osx: "3.5"
 ---
 
-This counter measure would remove Secure Storage Keys 
+Removes from the device all Secure Storage Keys, which would otherwise be used to access portions of the device protected by encryption. Execution of this countermeasure does not necessarily prevent access to the encrypted data, but prevents the data from being decrypted and thus exploited. Once a threat has been neutralized, Secure Storage Keys can be restored to the device to provide access to the secure storage area as normal. 

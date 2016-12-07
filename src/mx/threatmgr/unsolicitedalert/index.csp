@@ -1,0 +1,26 @@
+---
+csp: threatmgr
+title: Unsolicited Alert Countermeasure
+type: parm
+order: 35
+mx: "4.3"
+osx: "3.5"
+parm:
+  presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected.
+  pivotal: Yes
+  name: UnsolicitedAlert
+  type: list
+  list:
+    - code: 0
+      mx: "4.3"
+      osx: "3.5"
+      name: Do not perform
+      description: The alert-message intent will not be sent upon Threat detection.
+    - code: 1
+      name: Perform
+      mx: "4.3"
+      osx: "3.5"
+      description: The alert-message intent will be sent to the specified application and class upon Threat detection.
+---
+
+Used to send an alert to an application on the device in the form of an intent. The intent must include the package name, class name and alert message as specified in the AlertPackage, AlertClass, and AlertMsg parameters. When a Threat is detected, the detection service sends the message specified in the Alert Message parameter to the specified class of the specified package. 

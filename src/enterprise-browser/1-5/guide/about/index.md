@@ -40,9 +40,9 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 #### New Features
 
-* **[Simplified mass deployment](../keycapture)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
+* **[Simplified mass deployment](../setup/#manualdeployment)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
 
-* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits a greater control over values extracted from Android devices for configuring the Android UserAgent string. 
+* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
 
 * **Improved [SSL/TLS security compliance](../compliance)** with support up to TLS 1.2. 
 
@@ -64,7 +64,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 #### New Guides
 
-* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes. Also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
+* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes (including the WorkAbout Pro 4 and Omnii XT15). This guide also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
 * **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to **use DataWedge for barcode scanning in place of the Enterprise Browser APIs**, and how to switch between the two. 
 
@@ -119,7 +119,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -155,7 +155,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc3100Pic" src="../../images/mc3100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC3100</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC3100R, MC3100S, MC3190G, </nobr>MC3190R, MC3190S, MC3190Z</td>
+  <td class="clsSyntaxCells clsOddRow">MC3100R, MC3100S, MC3190G, MC3190R, MC3190S, MC3190Z</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 Professional<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -239,7 +239,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc9000Pic" src="../../images/mc9000.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC9090, MC9097, MC9094</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC9090, MC9097, MC9094</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0<br>Windows Mobile 6.1</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
@@ -267,7 +267,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC55</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC55</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -312,7 +312,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -351,7 +351,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -413,7 +413,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Bluetooth Ring Scanner</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
@@ -421,7 +421,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>1D Corded Ring Scanner</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">1D Corded Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
@@ -429,7 +429,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Cordless Ring Imager</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
  </tr>
@@ -444,7 +444,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings">These printers have been tested for USB printing compatibility. Zebra supports wireless printing on many other models.</th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device models</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="text-centered">Interface(s)</th>

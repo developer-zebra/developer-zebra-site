@@ -22,7 +22,7 @@ order: 99
     :::XML
     <wap-provisioningdoc>
         <characteristic type="BrowserMgr" version="4.3">
-            <parm name="SetDefaultHomepage" value="www.google.com"/>
+            <parm name="SetDefaultHomepage" value="http://www.google.com"/>
             <parm name="SetRememberPasswords" value="1"/>
             <parm name="SetSaveFormData" value="1"/>
         </characteristic>
@@ -45,7 +45,7 @@ order: 99
     :::XML
     <wap-provisioningdoc>
         <characteristic type="BrowserMgr" version="4.3">
-            <parm name="SetDefaultHomepage" value="www.google.com"/>
+            <parm name="SetDefaultHomepage" value="http://www.google.com"/>
         </characteristic>
     </wap-provisioningdoc>
 

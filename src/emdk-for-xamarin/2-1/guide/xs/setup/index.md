@@ -11,16 +11,9 @@ productversion: '2.1'
 ##Installing the Add-in
 Before Installing this Add-in make sure your Xamarin Studio version is at least 5.9.5 or above.
 
+>Note: Xamarin Studio is no longer available for Windows. Visual Studio is recomended for EMDK for Xamarin developemnt on Windows.
 
-1. Open Xamarin Studio
-
-2. Open Xamarin Studio Add-in Manager
-	
-	* For windows, select Tools > Add-in Manager
-
-	* For Mac, select Xamarin Studio > Add-in Manager
-
-
+1. Open Xamarin Studio Add-in Manager by selecting Xamarin Studio Menu > Add-in Manager
 2. Then select the Gallery Tab 
 3. Enter `emdk` in the search box in the top right corner of the Add-in Manager.
 	> As you type in the search box, the Add-in manager will filter out all add-ins except **EMDK for Xamarin**.
@@ -44,11 +37,7 @@ Before Installing this Add-in make sure your Xamarin Studio version is at least 
 
 ##Uninstalling the Add-in
 
-1. Open Xamarin Studio Add-in Manager
-	
-	* For windows, select Tools > Add-in Manager
-
-	* For Mac, select Xamarin Studio > Add-in Manager
+1. Open Xamarin Studio Add-in Manager by selecting Xamarin Studio Menu > Add-in Manager
 
 2. In the Installed Tab, click the **arrow** left of **IDE extensions** label
 
@@ -63,12 +52,6 @@ Before Installing this Add-in make sure your Xamarin Studio version is at least 
 
 ##Support file cleanup
 The IDE Add-in copies support files to the your file system in order to perform tasks such as Device Runtime Install. To clean up the support files do the following.
-
-Windows:
-
-* Remove Folder - C:\Users\Public\Symbol EMDK for Xamarin
-
-Mac:
 
 * Remove Folder - /Users/Shared/Symbol EMDK for Xamarin
 * Remove File - /Users/Shared/Symbol EMDK for Xamarin\EmdkOSUpdateApp_v3.1.38.apk

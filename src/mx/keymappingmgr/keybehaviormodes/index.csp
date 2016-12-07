@@ -13,7 +13,7 @@ parm:
     - code: 0
       mx: "4.4"
       name: No change
-      description: This value (or the absence of this parm from the XML) will not make any change to the Key Behavior of the specified Key in the Blue, Orange, Grey, Shift and Control Key State Mapping Table.
+      description: This value (or the absence of this parm from the XML) will make no change to the Key Behavior of the specified Key in the Blue, Orange, Grey, Shift and Control Key State Mapping Table; any previously selected setting will be retained.
     - code: 1
       name: Send trigger
       mx: "4.4"

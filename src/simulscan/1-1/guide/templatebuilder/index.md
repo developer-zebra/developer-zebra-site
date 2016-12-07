@@ -243,7 +243,7 @@ After uploading an image of the target Document...
 Fields not specifically named will be assigned a generic name (as shown). These can be edited later as desired (see [Modify a Template](#modifyatemplate)). 
 
 Provide (or confirm) the following required settings for each Field created: 
- * A name for the field, if desired.
+ * A name for the field, if desired
  * Properties (length/width and X-Y coordinates)
  * The required Processing mode (barcode, OCR, etc.) 
  * Processing-mode settings (decoder type, text-type, etc.)
@@ -254,27 +254,52 @@ Provide (or confirm) the following required settings for each Field created:
 ### Select Anchor Elements
 In addition its use of Document border dimensions, SimulScan uses Fields, company logos or other unique attributes of a Document to positively identify it and determine its orientation relative to the scanner (i.e. whether it's upside down). Optionally, Anchor Elements can contain data to be acquired, such as a barcode or image. Zebra recommends that at least two Anchor Elements be identified in accordance with the guidelines below. 
 
-**Anchor Element Guidelines**:
+**Selection Guidelines**:
 
-* Select two or three Fields per document as Anchor Elements. 
-* Anchor Elements should be spread across the top, bottom and side(s) of the Document.
-* For Structured Targets, static fields such as logos and preprinted content work best.
-* For barcode-only targets, barcodes with a fixed location on instances of a label work best.
-* For fixed barcodes, select the “Barcode’s location is fixed” option in the Properties panel.
+* **Select two or three Fields per document** as Anchor Elements. 
+* **Draw Fields loosely around graphics**; white space helps with identification.  
+* Anchor Elements **should be spread across the top, bottom and side(s)** of the Document.
+* For Structured Targets, static fields such as **logos and preprinted content work well**.
 * Anchor Elements need not contain data to be acquired ("Also Read Value from Field" is optional).
+* For Anchor barcodes:
+  * **Draw Fields tightly around barcodes; leave no gaps outside the bounding box. 
+  * **Barcodes with a fixed location and size** on all instances of a form work best.
+  * **Select the “Barcode’s location is fixed”** option in the Properties panel. 
+  * **Select symbologies with uniform numbers** of digits to ensure consistent region size. 
+  * Avoid symbologies that allow multiple level/stack/region barcode combinations (which may require variations in region size).
+  * **Avoid postal barcodes** and others listed below: 
+  	* Australian Postal
+  	* Canadian Postal
+  	* Composite C
+  	* Composition AB
+  	* DataBar Expanded
+  	* Decoder Signature
+  	* Dutch Postal
+  	* Japanese Postal
+  	* MailMark
+  	* TLC39
+  	* UK Postal
+  	* US Planet
+  	* US Postnet
+  	* US4state
+  	* US4state FICS
 
+For example, in the Postal T&L Document below, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. 
 ![img](image36a.png)
+_Draw Fields tightly around barcodes and loosely around graphics for best results_.    
 <br>
 
-For example, in the Postal T&L Document above, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below: 
-
+When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below: 
 ![img](image29.png)
 _This attribute appears only in "Structured Targets" Templates that use a symbology (see table)_.
 <br>
 
+<!-- 
 ####Fixed Barcode Supported Symbologies
 ![img](fixed-mode_table.png)
 _Symbologies in shaded areas are **NOT** supported for fixed barcodes_. 
+
+-->
 
 -----
 
@@ -317,7 +342,7 @@ The data type for optical mark recognition (OMR) is binary, resulting in the acq
  * **Square -** mark is inside of a square boundary
 
 ![img](omr_types.png)
-_Acceptable marks when using optical mark recognition_.
+_Acceptable marks for optical mark recognition; OMR also is used to detect signature presence_.
 <br>
 
 -----

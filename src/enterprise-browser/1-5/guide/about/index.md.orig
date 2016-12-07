@@ -7,7 +7,11 @@ layout: guide.html
 ## Overview
 Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JavaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
+<<<<<<< HEAD
+The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](../../../../stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system.   
+=======
 The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system.   
+>>>>>>> eb-1.5
 
 Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
 
@@ -17,6 +21,15 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 
 ####Zebra Device Support
+<<<<<<< HEAD
+  * TC70 and TC75 with Android Lollipop
+  * WT6000 with Android Lollipop
+  * MC67 with Android KitKat
+  * WorkAbout Pro 4 with Windows Embedded Handheld 6.5
+  * Omnii XT15 with Windows CE 6.0 and Embedded Handheld 6.5
+  * VH10 with Windows CE 6.0
+  * RS6000, RS4000 and RS507 ring scanners for use with WT6000
+=======
 * MC67 with Android KitKat
 * TC70 with Android Lollipop
 * TC75 with Android Lollipop
@@ -27,6 +40,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 * VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
 * RS4000, RS6000 ring scanners supports EB apps on WT6000 devices running Android Lollipop
 * RS507 ring scanner supports EB apps on devices running Android KitKat and higher
+>>>>>>> eb-1.5
 
 [See all supported devices](../about#mobile)
 
@@ -58,7 +72,11 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
 
+<<<<<<< HEAD
+* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control how long cached pages will be considered "fresh" by Enterprise Browser
+=======
 * **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control when cached pages will be refreshed.
+>>>>>>> eb-1.5
 
 * **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
 
@@ -66,7 +84,11 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 
 * **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes (including the WorkAbout Pro 4 and Omnii XT15). This guide also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
 
+<<<<<<< HEAD
+* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two. 
+=======
 * **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to **use DataWedge for barcode scanning in place of the Enterprise Browser APIs**, and how to switch between the two. 
+>>>>>>> eb-1.5
 
 ### Key Enterprise Browser Features
 
@@ -169,8 +191,13 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow">MC40</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -260,8 +287,13 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9500</b></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow">MC9590, MC9596, MC9598, MC959B (WM6.1)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1, Windows Embedded Handheld 6.5</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><nobr>MC9590, MC9596, MC9598, MC959B (WM6.1)</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1<br>Windows Embedded Handheld 6.5</td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -274,29 +306,50 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow">TC70 (GA1, GA2)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><nobr>	TC70 GA1, TC70 GA2</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="../../images/tc75.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow">TC75</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow">TC8000</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat), 5.0 (Lollipop)</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow"><b>WorkAbout</b></td>
+  <td class="clsSyntaxCells clsOddRow">WorkAbout Pro 4</td>
+  <td class="clsSyntaxCells clsOddRow">CE 6.0, Windows Embedded Handheld 6.5</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -405,7 +458,11 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
+<<<<<<< HEAD
+  <td class="clsSyntaxCells clsOddRow">Wearable Computer</td>
+=======
   <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
+>>>>>>> eb-1.5
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>

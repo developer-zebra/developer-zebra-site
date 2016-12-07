@@ -25,7 +25,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 * Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
 * Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
 * VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* RS4000, RS6000 ring scanners supports EB apps on WT6000 devices running Android Lollipop
+* RS4000 and RS6000 ring scanners support EB apps on WT6000 devices running Android Lollipop
 * RS507 ring scanner supports EB apps on devices running Android KitKat and higher
 
 [See all supported devices](../about#mobile)

@@ -251,24 +251,50 @@ The SimulScan Input Plug-in permits simultaneous capture of barcodes, images, te
 _SimulScan Input Plug-in options_.
 <br>
 
-SimulScan Capture Rules: 
+**SimulScan Capture Notes**: 
+
 * **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that string.
 * **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled. 
 
 **Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
 
-**Template selection -** sets a SimulScan template for the Profile being configured. Four templates are included with DataWedge: 
+**Template selection -** sets a SimulScan template for the Profile being configured. 
 
-* **Default-DocCap+Optional-Barcode.xml -** Captures the form as a picture and optionally decodes a barcode if available in the form. **This is the default form if none is selected**.
-* **Default-DocCap+Required-Barcode.xml -** Captures the form and decodes available barcode.
-* **Default-One-Barcode.xml -** Decodes a single barcode in the form and returns a single data region as the output.
-* **Default-Two-Barcodes.xml -** Decodes two barcodes in a form and returns the data as two data regions.
+**Templates included with DataWedge**:
+
+* **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check.
+
+* **Barcode1.xml -** decodes a single barcode of any symbology.
+
+* **Barcode2.xml -** decodes two barcodes of the same or differing symbologies.
+
+* **Barcode4.xml -** decodes four barcodes of the same or differing symbologies.
+
+* **Barcode5.xml -** decodes five barcodes of the same or differing symbologies.
+
+* **Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies.
+
+* **BookNumber.xml -** decodes 10- or 13-digit ISBN codes.
+
+* **DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
+
+* **DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+
+* **TravelDoc.xml -** captures information from the machine-readable zone (MRZ) of a travel document such as a passport.
+
+* **Unstructured Multi-Line.xml -** uses OCR to acquire multiple lines of alpha/numeric text.
+
+* **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text.
+
+_The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_.
 
 Custom template XML files copied to the following device directory will be available for selection using this option:
 
-`/enterprise/device/settings/datawedge/` 
+`/enterprise/device/settings/datawedge/templates` 
 
-Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Creator](https://simulscan.zebra.com/). 
+**Note: Files and folders within the /enterprise directory are invisible to Android File Browser** by default; they can be made visible by manually inputting the path.
+
+Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../simulscan/1-1/guide/templatebuilder). 
 
 **Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
 

@@ -184,7 +184,7 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 * **Cursor movement** (i.e. skip the first 10 characters)
 * **Data modification** (i.e remove all spaces; pad the left side with four zeros)
 * **Data sending** (i.e. output the last four digits)
-* **Delay** (i.e. wait 50 ms before doing something)
+* **Pause** (i.e. pause 50 ms before executing the next action)
 
 ### Creating ADF Rules
 Setting up Advanced Data Formatting is done in three basic steps: 
@@ -347,7 +347,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send pause</p></td>
-<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before continuing the next action.</p></td>
+<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send string</p></td>
@@ -360,7 +360,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-_**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINE FEED or TAB characters._
+_**Note: To help minimize data loss, Zebra recommends sending a Pause Action of 50 ms after sending any ENTER, LINE FEED or TAB character**._
 
 &#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes and the example, below**.  
 <img style="height:350px" src="adf_22_actions_list.png"/>

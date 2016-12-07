@@ -10,13 +10,15 @@ The EMDK for Xamarin provides developers with a comprehensive set of tools to ea
 ## Devices Supported
 Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
 
-* MC18 - KitKat
+* MC18 - ( KitKat, Lollipop)
 * MC40 - ( KitKat, Lollipop)
 * MC92 - KitKat
 * TC55 - KitKat
 * TC70 -( KitKat, Lollipop) 
 * TC75 - ( KitKat, Lollipop) 
-* WT6000 -Lollipop
+* WT6000 - Lollipop
+* TC8000 - Lollipop
+* ET5X - (Lollipop, Marshmallow)
 
 >Note: Be sure to run the [device update](/emdk-for-xamarin/2-2/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
 

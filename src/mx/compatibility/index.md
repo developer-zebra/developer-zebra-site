@@ -12,6 +12,8 @@ mxversions:
     value: 5
   - text: MX 6.0
     value: 6
+  - text: MX 6.1
+    value: 6.1
 csps:
   - type: section
     title: Access Manager

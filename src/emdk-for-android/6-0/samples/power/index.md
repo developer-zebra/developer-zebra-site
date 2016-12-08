@@ -4,10 +4,10 @@ title: Rebooting The Device
 description: 'This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).'
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/ProfilePowerMgrSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/ProfilePowerMgrSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/ProfilePowerMgrSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/tree/ProfilePowerMgrSample1'
 features:
   - Profile Manager
   - Power Manager
@@ -44,6 +44,9 @@ The available actions are:
 This sample application will allow you to set the power state of "Suspend" (sleep mode) or "Reset" (reboot).
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
+##Requirements
+Android API 19 must be installed via the SDK Manager before attempting to load this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

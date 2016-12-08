@@ -303,7 +303,7 @@ This section covers important interactions between EHS and Android features that
 ### Recent Apps List
 
 * Accessing an app from the Recent Apps list could represent a security risk. 
-* EHS does not add apps or activities to the Android Recent Apps list, but apps launched from within EHS might. 
+* EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.
 * To clear the Recent Apps list, reboot the device or bring up the list and manually swipe away each app. 
 * Bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears.
 * Recent apps not cleared from the list can be activated with the Back button, potentially exposing a non-EHS home screeen.

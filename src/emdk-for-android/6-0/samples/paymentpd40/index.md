@@ -4,10 +4,10 @@ title: Update Payment Device Firmware
 description: This sample demonstrates how to update firmware in the PD40 Mobile Payment device
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/PD40FWUpdateSample.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/PD40FWUpdateSample.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/PD40FWUpdateSample'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/tree/PD40FWUpdateSample'
 features: null
 devices:
   - MC40 KK
@@ -31,6 +31,9 @@ productversion: '6.0'
 This sample demonstrates how to update firmware in the PD40 Mobile Payment device
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
+##Requirements
+Android API 19 must be installed via the SDK Manager before attempting to load this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

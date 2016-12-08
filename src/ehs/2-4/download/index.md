@@ -12,9 +12,9 @@ After download, proceed to [Setup](/ehs/2-4/guide/setup).
 
 ## Latest Release
 
-[Download Enterprise Home Screen 2.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.4)
+Visit the [Enterprise Home Screen download page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) to download Enterprise Home Screen 2.4. 
 
-
+<!--
 ## Previous Releases
 
 [Download Enterprise Home Screen 2.3](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=100676&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen)
@@ -35,18 +35,4 @@ After download, proceed to [Setup](/ehs/2-4/guide/setup).
 
 [Patch for MC40 with Android 2.3.4](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=88166&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20home%20screen) 
 (fixes intermittant EHS button visiblility issue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-->

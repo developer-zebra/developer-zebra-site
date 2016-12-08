@@ -24,7 +24,7 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 <br>
 
 ![img](mixed-data.png)
-[Mixed Data-type](../setup/#structuredtemplates) includes the features of Multi-barcode and can also capture alphanumeric characters and images, and can determine the presence of check marks and signatures in a single scan. This mode requires scan targets with a fixed layout.
+[Mixed Data-type](../setup/#structuredtemplates) includes the features of Multi-barcode and can also capture alphanumeric characters and images, and determine the presence of check marks and signatures in a single scan. This mode requires scan targets with a fixed layout.
 <br>
 
 -----
@@ -50,7 +50,7 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 
 ### Requirements
 * **A Zebra TC55, TC70, TC75, TC8000 device** running Android
-* **Camera or 2D imager** (included on most devices -- [see table](#supporteddevices))
+* **Camera or 2D imager** (included on most devices--[see table](#supporteddevices))
 * **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
 * **A per-device [license](../license)** if using OCR, OMR or SimulScan APIs
 

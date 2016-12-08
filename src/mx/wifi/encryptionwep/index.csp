@@ -2,7 +2,7 @@
 csp: wifi
 title: WEP Encryption Type 
 type: parm
-order: 34
+order: 35
 mx: "4.2"
 parm:
   pivotal: No
@@ -13,11 +13,11 @@ parm:
     - code: 1
       mx: "4.2"
       name: WEP-40
-      description: This indicates that the network requires encryption to be performed using the Wireless Equivalency Privacy (WEP) standard with a key size of 40 bits.
+      description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 40 bits.
     - code: 2
       mx: "4.2"
       name: WEP-104
-      description: This indicates that the network requires encryption to be performed using the Wireless Equivalency Privacy (WEP) standard with a key size of 104 bits.
+      description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 104 bits.
 ---
 
-
+Used to specify the Wired Equialent Privacy (WEP) encryption type to enforce on the network for Wi-Fi log-ins.

@@ -1,7 +1,21 @@
 
 {{> header}}
-<iframe src="{{iframeurl}}" height="100%" width="100%" style="height: calc(100vh - 230px);"></iframe>   
+{{{ contents }}}
+<iframe  height="100%" width="100%" style="height: calc(100vh - 230px);" ></iframe>   
 
 {{> modal}}
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		var iframeroot = "{{iframeurl}}";
+  		// Handler for .ready() called.
+  		targetPage = "" + window.location.search;
+  		console.log("loading iframe: "+iframeroot+targetPage);
+  		 $("iframe").attr("src",iframeroot+targetPage)
+	});
+    
+    
+</script>
+
 {{> footer}}
 

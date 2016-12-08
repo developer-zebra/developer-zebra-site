@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "4.2"
 parm:
-  presentif: The "Configure Country (Auto/Manual)" box is not checked
+  presentif: The "Configure Country (Auto/Manual)" box is unchecked
   pivotal: No
   name: Country
   type: list
@@ -369,8 +369,4 @@ parm:
       mx: "4.2"
 ---
 
-Sets the country to use for Wi-Fi regulatory setting. 
-
-When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 802.11d is a mode where the device will listen for a country-specific beacon. It also will not transmit unless it can auto-detect the country, which can be beneficial because the device cannot transmit with a frequency that is inconsistent with the Wi-Fi infrastructure and is therefore less likely to violate country-specific regulations.
-
-If a Wi-Fi infrastructure does not support, 802.11d, then the country that is used by this infrastructure will need to be selected so that the device can connect to it.
+Permits selection of country-specific Wi-Fi regulatory settings. Choosing "AUTO" enables 802.11d selection, which configures the device to listen for a country-specific beacon. Using the AUTO setting, the device will not transmit unless it can successfully detect the country and use a frequency that is consistent with the country's Wi-Fi infrastructure. This setting is the least likely to violate country-specific regulations. Countries that do not support the 802.11d infrastructure must be selected manually. 

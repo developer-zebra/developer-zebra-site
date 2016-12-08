@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Next Word Suggestions Enable/Disable
 type: parm
-order: 12
+order: 11
 mx: "6.0"
 parm:
   pivotal: No
@@ -12,7 +12,7 @@ parm:
     - code: 0
       mx: "6.0"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to Enterprise Keyboard settings; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
       name: Turn on
       mx: "6.0"

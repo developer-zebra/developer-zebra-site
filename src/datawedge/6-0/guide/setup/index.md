@@ -19,7 +19,7 @@ When associated with an app, DataWedge can be invoked to scan and acquire the da
  
 **Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see **Disable DataWedge** section. 
 
-_**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly. Please refer to Windows documentation**_.
+<!-- _**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly. Please refer to Windows documentation**_. 10/20/16- Windows reference removed per eng. --> 
 
 ##Profiles
 A DataWedge Profile contains information about how DataWedge should behave with one or more associated applications, and provides a means to allow different apps that might be acquiring the same data to do different things with it. For example, while "App A" might require that a TAB be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. Alternatively, a **single** Profile can be created and associated with **many applications**, acquiring and processing data in exactly the same way for all. 
@@ -258,24 +258,50 @@ The SimulScan Input Plug-in permits simultaneous capture of barcodes, images, te
 _SimulScan Input Plug-in options_.
 <br>
 
-SimulScan Capture Rules: 
+**SimulScan Capture Notes**:
+
 * **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that string.
 * **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled. 
 
 **Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
 
-**Template selection -** sets a SimulScan template for the Profile being configured. Four templates are included with DataWedge: 
+**Template selection -** sets a SimulScan template for the Profile being configured. 
 
-* **Default-DocCap+Optional-Barcode.xml -** Captures the form as a picture and optionally decodes a barcode if available in the form. **This is the default form if none is selected**.
-* **Default-DocCap+Required-Barcode.xml -** Captures the form and decodes available barcode.
-* **Default-One-Barcode.xml -** Decodes a single barcode in the form and returns a single data region as the output.
-* **Default-Two-Barcodes.xml -** Decodes two barcodes in a form and returns the data as two data regions.
+**Templates included with DataWedge**:
+
+* **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check.
+
+* **Barcode1.xml -** decodes a single barcode of any symbology.
+
+* **Barcode2.xml -** decodes two barcodes of the same or differing symbologies.
+
+* **Barcode4.xml -** decodes four barcodes of the same or differing symbologies.
+
+* **Barcode5.xml -** decodes five barcodes of the same or differing symbologies.
+
+* **Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies.
+
+* **BookNumber.xml -** decodes 10- or 13-digit ISBN codes.
+
+* **DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
+
+* **DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+
+* **TravelDoc.xml -** captures information from the machine-readable zone (MRZ) of a travel document such as a passport.
+
+* **Unstructured Multi-Line.xml -** uses OCR to acquire multiple lines of alpha/numeric text.
+
+* **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text.
+
+_The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_.
 
 Custom template XML files copied to the following device directory will be available for selection using this option:
 
-`/enterprise/device/settings/datawedge/` 
+`/enterprise/device/settings/datawedge/templates` 
 
-Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Creator](https://simulscan.zebra.com/). 
+**Note: Files and folders within the /enterprise directory are invisible to Android File Browser** by default; they can be made visible by manually inputting the path.
+
+Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../simulscan/1-1/guide/templatebuilder). 
 
 **Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
 

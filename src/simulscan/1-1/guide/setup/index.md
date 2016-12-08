@@ -31,7 +31,7 @@ _A Structured Template using Multi Data-type mode would be best here_.
 
 **Notes**:
 
-* **Zebra recommends the camera for Mixed Data-type** capture.
+* **Zebra recommends using the camera for Mixed Data-type** capture.
 * The camera is automatically selected when a Mixed Data-type Template is used.
 * Structured Templates are generally associated with Mixed Data-type mode.  
 <br>

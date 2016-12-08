@@ -1,6 +1,6 @@
 ---
 title: Enterprise Browser - Supported APIs 
-description: Zebra recommends the use of Enterprise Browser APIs whenever possible. However, the EB runtime platform was engineered for backward compatibility with PocketBrowser 2.x and 3.x, RhoElements 2.x and the RhoMobile 4.2 Shared Runtime APIs. Some restrictions apply. See the API Usage Guide for more information, and individual API reference pages (linked below) for the usage details of each API.
+description: Zebra recommends the use of Enterprise Browser APIs whenever possible. To run legacy apps through Enterprise Browser or to access functionality not implemented in EB, the APIs of PocketBrowser 2.x and 3.x, RhoElements 2.x and the RhoMobile 4.2 Shared Runtime can be used within certain boundaries. Some of those legacy APIs are published here. See the API Usage and Migration Guides for more information, and individual API reference pages (linked below) for each API's usage details and specific restrictions, if any.
 layout: list-apis.html
 automenu:
   items:
@@ -14,6 +14,8 @@ automenu:
           url: ../guide
     - title: Enterprise Browser APIs
       items:
+        - title: APD
+          url: re2x/apd
         - title: Application
           url: Application
         - title: AudioCapture
@@ -27,7 +29,7 @@ automenu:
         - title: CardReader
           url: cardreader
         - title: Database
-          url: database
+          url: Database
         - title: Device
           url: device
         - title: EzNFC
@@ -43,12 +45,12 @@ automenu:
         - title: Log
           url: Log
         - title: MediaPlayer
-          url: mediaPlayer
+          url: mediaplayer
         - title: NativeMenubar
           url: NativeMenubar
         - title: NativeTabbar
           url: NativeTabbar
-        - title: Native Toolbar
+        - title: NativeToolbar
           url: NativeToolbar
         - title: Network
           url: Network
@@ -58,14 +60,16 @@ automenu:
           url: printing
         - title: PrinterZebra
           url: printingzebra
-        - title: Push
-          url: push
+        - title: RemoteNotification
+          url: remotenotification
         - title: ScreenOrientation
-          url: ScreenOrientation
+          url: screenorientation
         - title: Sensor
           url: sensor
+        - title: SettingsButton
+          url: settingsButton
         - title: SignalIndicators
-          url: signalIndicators
+          url: signalindicators
         - title: Signature
           url: signature
         - title: SIP
@@ -78,236 +82,228 @@ automenu:
           url: Timer
         - title: Webview
           url: webview
-        - title: Zoom
-          url: Zoom
-        - title: ZoomTextButton
-          url: ZoomTextButton
     - title: RhoElements 2.x APIs
       items:
         - title: AddressBar
-          url: AddressBar
+          url: re2x/addressbar
         - title: Airbeam
-          url: AirBeam
+          url: re2x/airbeam
         - title: Alarm
-          url: Alarm
-        - title: APD (missing)
-          url: Apd
+          url: re2x/alarm
+        - title: APD
+          url: re2x/apd
         - title: Application
-          url: Application
+          url: re2x/application
         - title: AudioCapture
-          url: audiocapture
+          url: re2x/AudioCapture
         - title: BackButton
-          url: BackButton
+          url: re2x/backbutton
         - title: Backlight
-          url: Backlight
+          url: re2x/backlight
         - title: Battery
-          url: battery
+          url: re2x/battery
         - title: BottomCommandArea
-          url: BottomCommanArea
+          url: re2x/bottomcommandarea
         - title: CardReader
-          url: cardreader
+          url: re2x/cardreader
         - title: Comm
-          url: Comm
-        - title: Decoders (missing)
-          url: decoders
+          url: re2x/comm
+        - title: Decoders 
+          url: re2x/toc_decoders
         - title: Device
-          url: device
-        - title: EMML Profile (missing)
-          url: emml
+          url: re2x/device
+        - title: EMML Profile 
+          url: re2x/EMMLProfile
         - title: FileTransfer
-          url: FileTransfer
+          url: re2x/FileTransfer
         - title: ForwardButton
-          url: ForwardButton
-        - title: Generic (missing)
-          url: generic
+          url: re2x/forwardbutton
+        - title: Generic 
+          url: re2x/generic
         - title: Gesture
-          url: Gesture
+          url: re2x/Gesture
         - title: GoButton
-          url: GoButton
-        - title: History (missing)
-          url: history
+          url: re2x/gobutton
+        - title: History 
+          url: re2x/History
         - title: HomeButton
-          url: HomeButton
+          url: re2x/HomeButton
         - title: Hourglass
-          url: Hourglass
+          url: re2x/hourglass
         - title: Imager
-          url: Imager
+          url: re2x/imager
         - title: KeyCapture
-          url: keycapture
-        - title: Keylight
-          url: Keylight
+          url: re2x/keycapture
+        - title: KeyLight
+          url: re2x/Keylight
         - title: KeyState
-          url: keystate
+          url: re2x/keystate
         - title: MediaPlayer
-          url: mediaPlayer
+          url: re2x/mediaPlayer
         - title: Memory
-          url: Memory
+          url: re2x/memory
         - title: MinimizeButton
-          url: MinimizeButton
+          url: re2x/minimizebutton
         - title: Network
-          url: Network
+          url: re2x/network
         - title: Notification
-          url: Notification
-        - title: ODAX (missing)
-          url: odax
-        - title: Poweron
-          url: Poweron
+          url: re2x/notification
+        - title: ODAX 
+          url: re2x/odax
+        - title: PowerOn
+          url: re2x/poweron
         - title: Push
-          url: push
+          url: re2x/push
         - title: Quit Button
-          url: QuitButton
-        - title: RawSensor (missing)
-          url: rawsensor
+          url: re2x/quitbutton
+        - title: RawSensor 
+          url: re2x/RawSensor
         - title: Reboot
-          url: Reboot
+          url: re2x/reboot
         - title: Registry
-          url: Registry
+          url: re2x/registry
         - title: Reload Button
-          url: ReloadButton
-        - title: Rfid (missing)
-          url: rfid
-        - title: RSM (missing)
-          url: rsm
-        - title: Scanner (missing)
-          url: scanner
+          url: re2x/reloadbutton
+        - title: RFID 
+          url: re2x/rfid
+        - title: RSM 
+          url: re2x/RSM
+        - title: Scanner 
+          url: re2x/scanner
         - title: ScreenOrientation
-          url: ScreenOrientation
-        - title: Signal (missing)
-          url: signal
-        - title: signatureCapture (missing)
-          url: signaturecapture
+          url: re2x/screenorientation
+        - title: Signal 
+          url: re2x/signal
+        - title: SignatureCapture 
+          url: re2x/SignatureCapture
         - title: SIP
-          url: Sip
-        - title: SipButton
-          url: SipButton
+          url: re2x/sip
+        - title: SIPButton
+          url: re2x/sipbutton
         - title: StopButton
-          url: StopButton
+          url: re2x/stopbutton
         - title: Stylus
-          url: stylus
+          url: re2x/stylus
         - title: SystemTime
-          url: SystemTime
+          url: re2x/systemTime
         - title: Timer
-          url: Timer
+          url: re2x/timer
         - title: TopCommandArea
-          url: TopCommandArea
+          url: re2x/topcommandarea
         - title: VideoCapture
-          url: videocapture
+          url: re2x/VideoCapture
         - title: Volume
-          url: Volume
+          url: re2x/volume
         - title: Wake
-          url: Wake
+          url: re2x/wake
         - title: Zoom
-          url: Zoom
+          url: re2x/zoom
         - title: ZoomTextButton
-          url: ZoomTextButton
+          url: re2x/zoomTextButton
     - title: PocketBrowser 3.x APIs
       items:
         - title: AddressBar
-          url: addressbar
-        - title: Airbeam Smart (missing)
-          url: AirBeamSmart
-        - title: Alarm (missing)
-          url: alarm
-        - title: APD (missing)
-          url: apd
+          url: pb3x/addressbar
+        - title: Airbeam Smart 
+          url: pb3x/toc_airbeam
+        - title: Alarm
+          url: pb3x/alarm
+        - title: APD 
+          url: pb3x/toc_apd
         - title: Application
-          url: Application
+          url: pb3x/application
         - title: BackButton
-          url: BackButton
+          url: pb3x/backbutton
         - title: Backlight
-          url: Backlight
+          url: pb3x/backlight
         - title: Battery
-          url: battery
-        - title: BottomCommandArea
-          url: BottomCommanArea
+          url: pb3x/battery
+        - title: BottomCommandArea 
+          url: pb3x/bottomcommandarea
         - title: CardReader
-          url: cardreader
+          url: pb3x/cardreader
         - title: Comm
-          url: Comm
-        - title: Decoders (missing)
-          url: decoders
+          url: pb3x/comm
+        - title: Decoders 
+          url: pb3x/decoders
         - title: Device
-          url: device
-        - title: EMMLProfile (missing)
-          url: emmlprofile
+          url: pb3x/device
+        - title: EMMLProfile 
+          url: pb3x/emmlprofile
         - title: FileTransfer
-          url: FileTransfer
+          url: pb3x/filetransfer
         - title: ForwardButton
-          url: ForwardButton
-        - title: Generic (missing)
-          url: generic
+          url: pb3x/forwardbutton
+        - title: Generic 
+          url: pb3x/toc_generic
         - title: Gesture
-          url: Gesture
-        - title: Gesturing Overview (missing)
-          url: gesturingoverview
+          url: pb3x/gesture
         - title: GoButton
-          url: GoButton
-        - title: HistoryBack (missing)
-          url: historyback
+          url: pb3x/gobutton
+        - title: HistoryBack 
+          url: pb3x/historyback
         - title: HomeButton
-          url: HomeButton
+          url: pb3x/homebutton
         - title: Hourglass
-          url: Hourglass
+          url: pb3x/hourglass
         - title: Imager
-          url: Imager
-        - title: Indicator Positions (missing)
-          url: indicatorpositions
-        - title: Key Capture Overview (missing)
-          url: keycaptureoverview
+          url: pb3x/imager
         - title: KeyCapture
-          url: keycapture
-        - title: Keylight
-          url: Keylight
+          url: pb3x/keycapture
+        - title: KeyLight
+          url: pb3x/keylight
         - title: KeyState
-          url: keystate
+          url: pb3x/keystate
+        - title: Microflash ActiveX Object
+          url: pb3x/toc_microflash
         - title: MinimizeButton
-          url: MinimizeButton
+          url: pb3x/minimizebutton
         - title: Notification
-          url: Notification
-        - title: ODAX (missing)
-          url: odax
-        - title: Poweron
-          url: Poweron
+          url: pb3x/notification
+        - title: ODAX 
+          url: pb3x/toc_odax
+        - title: PowerOn
+          url: pb3x/poweron
         - title: Push
-          url: push
-        - title: Quit Button
-          url: QuitButton
+          url: pb3x/push
+        - title: QuitButton
+          url: pb3x/quitbutton
         - title: Reboot
-          url: Reboot
+          url: pb3x/reboot
         - title: Registry
-          url: Registry
-        - title: Reload Button
-          url: ReloadButton
-        - title: RSM (missing)
-          url: rsm
-        - title: Scanner (missing)
-          url: scanner
+          url: pb3x/registry
+        - title: ReloadButton
+          url: pb3x/reloadbutton
+        - title: RSM 
+          url: pb3x/rsm
+        - title: Scanner 
+          url: pb3x/scanner
         - title: ScreenOrientation
-          url: ScreenOrientation
-        - title: Signal
-          url: signal
-        - title: SignatureCapture (missing)
-          url: signaturecapture
+          url: pb3x/screenorientation
+        - title: Signal 
+          url: pb3x/signal
+        - title: SignatureCapture 
+          url: pb3x/signaturecapture
         - title: SIP
-          url: Sip
+          url: pb3x/sip
         - title: SIPButton
-          url: SipButton
-        - title: SNTP (missing)
-          url: sntp
+          url: pb3x/sipbutton
+        - title: SNTP 
+          url: pb3x/sntp
         - title: StopButton
-          url: StopButton
+          url: pb3x/stopbutton
         - title: Stylus
-          url: stylus
-        - title: TextSize (missing)
-          url: textsize
+          url: pb3x/stylus
+        - title: TextSize 
+          url: pb3x/textsize
         - title: Timer
-          url: Timer
+          url: pb3x/timer
         - title: TopCommandArea
-          url: TopCommandArea
+          url: pb3x/topcommandarea
         - title: Volume
-          url: Volume
+          url: pb3x/volume
         - title: ZoomTextButton
-          url: ZoomTextButton
+          url: pb3x/zoomtextbutton
 product: Enterprise Browser
 productversion: '1.5'
 ---

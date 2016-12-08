@@ -41,7 +41,7 @@ The EMDK for Android is used when you wish to handle all barcode scanning entire
 
 The available actions in the [Barcode/Scanning API](/emdk-for-android/5-0/api) are:
   
-* Set Scanner Device  
+* Set [Scanner Device](/emdk-for-android/5-0/api/barcode/BarcodeManager-DeviceIdentifier/)  
 * Set [TriggerType](/emdk-for-android/5-0/api/barcode/Scanner)
 * Set [Decoder Params](/emdk-for-android/5-0/api/barcode/ScannerConfig-DecoderParams)
 * Set [Reader Params](/emdk-for-android/5-0/api/barcode/ScannerConfig-ReaderParams)

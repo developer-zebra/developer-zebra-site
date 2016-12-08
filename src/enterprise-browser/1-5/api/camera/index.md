@@ -4,10 +4,9 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Overview
 The Camera API provides access to the device camera(s). Use this API to give users the ability to take a photo via one of the cameras and return it to the application. Photos can either be stored on the device as an image file or returned as a DataURI object for storage and/or display. Optionally, image files also can be transfered to online storage using the Network API.
+
 ## Enabling the API
 
 There are two methods of enabling the Camera API:
@@ -21,8 +20,8 @@ Either way, the included files will be found in:
 `/Enterprise Browser/JavaScript Files/Enterprise Browser`,
 a directory on the computer that contains the Enterprise Browser installation.
 
-### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+### Include all API modules
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as the `index.html` and add the following line to the HEAD section of the `index.html` file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
@@ -30,7 +29,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 > This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
 
 ### Include only the required modules
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the Camera API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, first include a reference to the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the Camera API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -38,7 +37,6 @@ To include individual APIs, you must first include the `ebapi.js` in your HTML, 
 
 > In the code lines above, notice that `ebapi.js` is included first, followed by `eb.camera.js`, which is the Camera API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
-        
 
 
 ##Methods
@@ -76,7 +74,7 @@ Synchronous Return:
 Choose a picture from the album.
 
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure an image, for example to specify the image size or color mode. In WM/CE,Android devices user can only specify the outputFormat in the property bag. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='../camera#properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure an image, for example to specify the image size or color mode. In WM/CE,Android devices user can only specify the outputFormat in the property bag. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-camera?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
 Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>status : <span class='text-info'>STRING</span><p>Whether or not the image was successfully chosen from the gallery. The returned string will be one of 'ok', 'cancel' or 'error'. </p></li><li>imageUri : <span class='text-info'>STRING</span><p>If the specified 'outputFormat' was 'image' then this field is the URI to the taken image stored on the device. If the specified 'outputFormat' was 'dataUri' then this field will be the image encoded as a Data URI, If the specified 'outputFormat' was 'imagePath' then this field will have the image path on the device. User can use image path to transfer image over http. Platforms:
@@ -376,7 +374,7 @@ Synchronous Return:
 Shows the preview in user configurable viewer window.
 
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the camera. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='../camera#properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the camera. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-camera?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Returns
 Synchronous Return:
@@ -398,20 +396,16 @@ Synchronous Return:
 
 ### takePicture(<span class="text-info">HASH</span> propertyMap)
 Start the camera application to take a picture. The user can capture the displayed image by interacting with the resident camera app. In Windows, this method always shows the preview in full screen and user can use the native button to capture the image.
-				On wp8,wm when 'outputFormat' is 'image' then imageUri/image_uri shall have only Image name with \ sign, on WP8 ImageName shall be suffixed by DTF when 'outputFormat' is 'image'
-> Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [expandDatabaseBlobFilePath](../Application/#expanddatabaseblobfilepathspanclasstextinfostringspanrelativepath) method of the [Application module](../Application) as such:
-
-##### Ruby
-    :::ruby
-    Rho::RhoApplication.expandDatabaseBlobFilePath(x.image_uri)
+                On wp8,wm when 'outputFormat' is 'image' then imageUri/image_uri shall have only Image name with \ sign, on WP8 ImageName shall be suffixed by DTF when 'outputFormat' is 'image'
+> Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [`expandDatabaseBlobFilePath`](Application#mexpandDatabaseBlobFilePath) method of the [Application module](Application) as such:
 
 ##### JavaScript
     :::js
     Rho.RhoApplication.expandDatabaseBlobFilePath(x.image_uri)
                 
-                
+
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the camera, for example to specify the flashMode or compressionFormat. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='../camera#properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the camera, for example to specify the flashMode or compressionFormat. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-camera?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the Camera's default properties, or those previously set on the Camera instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
 Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>status : <span class='text-info'>STRING</span><p>Whether or not the image was successfully captured. The returned string will be one of 'ok', 'cancel' or 'error'. Platforms:
@@ -455,7 +449,7 @@ Synchronous Return:
 <span class='text-info'>STRING</span> 
 ####Description
 Specifies the aim behaviour when taking a picture. Applicable only for imager module.
-				This Property shall accept/return one among the values mentioned in constant section which starts with AIM_...
+                This Property shall accept/return one among the values mentioned in constant section which starts with AIM_...
 ####Access
 
 
@@ -476,7 +470,7 @@ Specifies the aim behaviour when taking a picture. Applicable only for imager mo
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
 ####Description
 <span class='label label-info'>Replaces:camera_type</span> This property is device specific. The value for this property can be either 'back' or 'front' in the case of Android devices.In the case of windows it could be either 'imager' or 'color'. WM/CE devices will use 'color'as default and if color camera not available the default value will be 'imager'. Android devices will use 'back'as default and if back camera not available the default value will be 'front'.
-				This Property shall return one among the values mentioned in constant section which starts with CAMERA_TYPE_...
+                This Property shall return one among the values mentioned in constant section which starts with CAMERA_TYPE_...
 ####Access
 
 
@@ -519,8 +513,8 @@ Path to a sound file resident on the device which will be played when the image 
 <span class='text-info'>STRING</span> 
 ####Description
 <span class='label label-info'>Replaces:color_model</span> Where supported by the hardware this property can be used to select whether to capture a color or a grayscale image.
-				This Property shall accept/return one among the values mentioned in constant section which starts with COLOR_MODEL_...
-				
+                This Property shall accept/return one among the values mentioned in constant section which starts with COLOR_MODEL_...
+                
 ####Params
 <p><strong>Default:</strong> rgb</p>
 ####Access
@@ -542,8 +536,8 @@ Path to a sound file resident on the device which will be played when the image 
 <span class='text-info'>STRING</span> 
 ####Description
 <span class='label label-info'>Replaces:format</span> The format of the captured image in subsequent calls to takePicture(). On windows devices the format will be always .jpg type.
-				This Property shall accept/return one among the values mentioned in constant section which starts with COMPRESSION_FORMAT_...
-				
+                This Property shall accept/return one among the values mentioned in constant section which starts with COMPRESSION_FORMAT_...
+                
 ####Params
 <p><strong>Default:</strong> jpg</p>
 ####Access
@@ -609,7 +603,7 @@ Path to a sound file resident on the device which will be played when the image 
 <span class='text-info'>STRING</span> 
 ####Description
 The image file path without file extension to store captured image in subsequent calls to takePicture() or capture(). Default filename will be IMG_timestamp and will be saved under root directory. The filename extension will be added automatically according to compressionFormat property value.
-				In Wp8, only filename can be changed, by default the path shall be under picture=>CameraRoll
+                In Wp8, only filename can be changed, by default the path shall be under picture=>CameraRoll
 ####Access
 
 
@@ -631,7 +625,7 @@ The image file path without file extension to store captured image in subsequent
 <span class='text-info'>STRING</span> 
 ####Description
 <span class='label label-info'>Replaces:flash_mode</span> Specifies the flash behavior when taking a picture.
-				This Property shall accept/return one among the values mentioned in constant section which starts with FLASH_...
+                This Property shall accept/return one among the values mentioned in constant section which starts with FLASH_...
 ####Access
 
 
@@ -695,8 +689,8 @@ The maximum width of images which can be captured. This is measured in pixels. O
 <span class='text-info'>STRING</span> 
 ####Description
 Specifies the way to return the captured image to the application.
-				This Property shall accept/return one among the values mentioned in constant section which starts with OUTPUT_FORMAT_...
-				
+                This Property shall accept/return one among the values mentioned in constant section which starts with OUTPUT_FORMAT_...
+                
 ####Params
 <p><strong>Default:</strong> imagePath</p>
 ####Access
@@ -831,7 +825,6 @@ List of resolutions (width and height in pixels) supported by the camera. On WM/
 	* <code>EB.Camera.supportedSizeList</code> 
 
 
-
 ####Platforms
 
 * Android
@@ -906,9 +899,6 @@ Grayscale is supported only in the front camera of Android consumer devices.
 ###Invalid/Null values for properties in Android and iOS
 Only valid and non-empty values for properties are supported in Android and iOS.
 
-###Ruby Support
-Due to platform limitations, imager and color camera are not supported in ruby applications for CE5 and CE6 devices.
-
 ###Camera in Suspend mode
 All WM and CE7 devices automatically turn off both color and imager cameras when the device is suspended. User must restart the camera to resume. Whereas CE5 (eg: MC9000) and CE6 (eg: MC31) devices retain the preview on resuming from suspend state.
 
@@ -930,3 +920,9 @@ For images captured with the camera using a Rho app, the image might initially a
 ###Android preview
 High-resolution settings are not recommended for low-memory devices. Image previews on tablet devices might appear stretched or shrunken.
 
+###Devices lacking support
+The Camera API is not supported from Enterprise Browser apps on the following Zebra Technologies devices:
+
+* Workabout Pro 4
+* Omnii XT15
+* VH10 

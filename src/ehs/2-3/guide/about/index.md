@@ -12,6 +12,8 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
+_Enterprise Home Screen does not support localization_. 
+
 The first time it's installed, EHS offers a simple choice: 
 <img style="height:150px" src="homePrompt.png"/>
 

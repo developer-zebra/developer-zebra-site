@@ -4,10 +4,9 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
-
 ## Overview
 The KeyCapture module is used to intercept or override hardware keys. It is typically used to provide certain application functions through the use of the device's physical keyboard or other hardware enabled buttons.
+
 ## Enabling the API
 There are two ways to enable Enterprise Browser APIs: 
 
@@ -21,7 +20,7 @@ Either way, the included files will be from:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the `index.html`, copy the file to the same directory as the `index.html` and add the following line to the HEAD section of the `index.html` file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
@@ -30,7 +29,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 
 ### Include only the required modules
 
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the KeyCapture API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, you must first include a reference to the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the KeyCapture API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
@@ -68,7 +67,7 @@ Synchronous Return:
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.KeyCapture.captureKey(<span class="text-info">BOOLEAN</span> dispatch, <span class="text-info">STRING</span> keyValue)</code> 
+    * <code>EB.KeyCapture.captureKey(<span class="text-info">BOOLEAN</span> dispatch, <span class="text-info">STRING</span> keyValue)</code> 
 
 
 ### captureTrigger()
@@ -95,7 +94,7 @@ Synchronous Return:
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.KeyCapture.captureTrigger()</code> 
+    * <code>EB.KeyCapture.captureTrigger()</code> 
 
 
 ### remapKey(<span class="text-info">STRING</span> keyValue, <span class="text-info">STRING</span> remapTo)
@@ -118,7 +117,7 @@ Synchronous Return:
 ####Method Access:
 
 * Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.KeyCapture.remapKey(<span class="text-info">STRING</span> keyValue, <span class="text-info">STRING</span> remapTo)</code> 
+    * <code>EB.KeyCapture.remapKey(<span class="text-info">STRING</span> keyValue, <span class="text-info">STRING</span> remapTo)</code> 
 
 
 ##Properties
@@ -137,7 +136,7 @@ Specifies a key which, when pressed, will navigate to the start page as defined 
 
 
 * Class: This property can only be accessed via the API class object.
-	* <code>EB.KeyCapture.homeKeyValue</code>
+    * <code>EB.KeyCapture.homeKeyValue</code>
 
 
 
@@ -161,6 +160,7 @@ It is not possible to capture the following types of keys:
 7. On consumer Jelly Bean (Android) devices, the search button cannot be captured, as it has been reserved for the sole use of "Google Now".
 8. On ET1, Search (P3) key is application specific. Dispatching this key within the Enterprise Browser wont do anything as the Enterprise Browser doesn't do anything specific with this key (unlike the menu key which raises the menu).
 Although on some device configurations pressing the SHIFT key twice generates CAPS LOCK which can be captured with a key value of 16.
+9. On Android keypad devices, the ESC key behaves like a back button. User need to ensure to set the dispatch value to false or else the application will go into background and it will not perform the user defined action. 
 
 ###Precedence of APIs using the same keyValue
 If captureKey and remapKey have been called with the same keyValue, the remapKey will take precedence. In this case this means that the keyEvent for the inputted key will not be fired as the remapping will occur and consume the key event.
@@ -237,4 +237,10 @@ Certain devices may map their function keys to apparently normal keys. For examp
 
 ###Use of Key Capture module on Localized Operating Systems
 Users of the key capture module with Chinese, Korean and Japanese operating systems should bear the following in mind: Internally the KeyCapture module stores key representations as VK codes, therefore the key event will always return VK_PROCESSKEY (229) and keys can not be individually specified. In JavaScript the DOM element's keyup event can be used as an indication of which key has been pressed.
+
+###Mapping Proprietary Keycodes 
+A small group of Zebra devices running Windows Mobile (such as those listed below) return proprietary keycode values inconsistent with those of other devices, and are incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](../../guide/keycapture/#mappingproprietaryfunctionkeycodes). 
+
+* Workabout Pro 4 WEH Device
+* Omnii XT15 WEH Device
 

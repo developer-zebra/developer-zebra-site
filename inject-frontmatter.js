@@ -70,22 +70,12 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-        "path": "enterprise-browser/1-4",
+        "path": "emdk-for-xamarin/2-2/api/",
         "frontmatter": [
             {
                 "item" :  "productversion",
-                "value" : "1.4",
+                "value" : "2.2",
                 "override": true,
-            },
-            {
-                "item" :  "product",
-                "value" : "Enterprise Browser",
-                "override": true,
-            },
-            {
-                "item" :  "layout",
-                "value" : "guide.html",
-                "override": false
             }
         ]
     },

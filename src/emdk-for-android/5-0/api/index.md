@@ -1,23 +1,10 @@
 ---
 title: APIs
-publish: false
-description: null
-layout: list-apis.html
-automenuappend:
-  items:
-    - title: Platform Intents
-      items:
-        - title: Datawedge Intents
-          url: /emdk-for-android/5-0/guide/reference/refdatacaptureintent
-        - title: Battery Intent
-          url: /emdk-for-android/5-0/guide/reference/refbatteryintent
+layout: iframe.html
+iframeurl: /emdk-for-android/5-0/api/reference/?com/symbol/emdk/EMDKBase.html
 product: EMDK For Android
 productversion: '5.0'
 ---
-
-
-
-
 
 
 

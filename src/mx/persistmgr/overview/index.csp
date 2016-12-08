@@ -11,6 +11,8 @@ PersistMgr works by assigning a name and version number to a Request XML documen
 
 On Zebra Android devices, an Enterprise Reset returns the operating system to its factory state while preserving the `/enterprise` partition, where persistent content is stored (a Factory Reset eliminates this partition). The Enterprise Reset is designed to return the device to an enterprise-defined default state, which is generally determined by the contents of the `/enterprise` partition. When using the MDM Tool Kit, an MDM Agent can control the Enterprise-defined state by controlling the content that will persist following an Enterprise Reset and determining which Request XML documents will be submitted.
 
+>**On KitKat devices**, PersistMgr will be inoperable following an MX upgrade until the device is rebooted. 
+
 ## Main Functionality
 
 * Make a Request XML document Persistent
@@ -50,4 +52,7 @@ This query also could be useful for troubleshooting interactions between multipl
 **This can be useful for troubleshooting scenarios**. PersistMgr can be used to Disable a Persistent Request XML document, or to Enable one that has been Disabled (Request XML documents made Persistent are Enabled by default). Persistent Request XML documents that are Disabled will remain on the device following an Enterprise Reset, but their settings will not be reapplied. By selectively Disabling and Enabling Request XML documents and their corresponding settings, certain device conflicts can be isolated following an Enterprise Reset until the cause of a conflict is discovered.
 
 ### Security Note
-After an Enterprise Reset, <!--there is a period of time before Persistent settings are fully reapplied that a device could be vulnerable. To prevent unwanted intrusion,--> some Zebra devices temporarily disable keyboard and touch input as well as the operation of Bluetooth, SD Card, USB and Wi-Fi systems. Once all persisted settings are reapplied, the device relaxes these "lock-downs" and returns protection of the device to configurations and applications defined by the administrator.
+After an Enterprise Reset, <!--there is a period of time before Persistent settings are fully reapplied that a device could be vulnerable. To prevent unwanted intrusion,--> some Zebra devices temporarily disable the keyboard, touch screen and <!-- operation of Bluetooth, SD Card, Wi-Fi--> USB port, and display a message during this time. Once all persisted settings are reapplied, the device relaxes these "lock-downs" and returns protection of the device to configurations and applications defined by the administrator.
+
+-----
+

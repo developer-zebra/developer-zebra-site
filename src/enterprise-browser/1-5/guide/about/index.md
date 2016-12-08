@@ -4,47 +4,71 @@ productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
-
 ## Overview
-Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. In essence, Enterprise Browser acts as a runtime environment inside which a company's HTML and JacaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
+Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JavaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
-The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with [virtually any Zebra device](../about#mobile) running Android and Microsoft Windows Mobile/CE. 
+The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system.   
 
-For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise Browser supports those legacy products, and is the ideal path forward for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser will improve development time, reduce costs and make the transition to next-generation devices and operating systems fast, easy and affordable--especially in high-volume mobile environments.
+Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
 
 ## New in v1.5
 
-> THE FOLLOWING MUST BE CHANGED TO THOSE OF 1.5
+Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, and a range of additional new features for Android and Windows Mobile/CE devices.  
+
 
 ####Zebra Device Support
-  * **MC92N0** Android KitKat
-  * **TC8000** Android KitKat
-  
+* MC67 with Android KitKat
+* TC70 with Android Lollipop
+* TC75 with Android Lollipop
+* WT6000 with Android Lollipop
+* WorkAbout Pro 4 with Windows Embedded Handheld 6.5 (_WAP4 WEH-3.0.1 BSP and higher_)
+* Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
+* Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
+* VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
+* RS4000 and RS6000 ring scanners support EB apps on WT6000 devices running Android Lollipop
+* RS507 ring scanner supports EB apps on devices running Android KitKat and higher
+
 [See all supported devices](../about#mobile)
 
-####New APIs
-  * **[EzNFC API](../../api/EzNFC)**
-  * **[SettingsButton API](../../api/settingsButton)**
+####New or Updated APIs (released with EB 1.5)
 
-####New Features
-* **[Keycode Mapping](../keycapture)** allows a custom set of Android keycode values to be assigned from a file, replacing some or all of the system's default keycode values. **Applies to Android only**.
+* **New [RemoteNotification API](../../api/remotenotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator device signals (**Android only**). 
 
+* **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues that were present on some devices. 
 
-####New Tags
+* **Updated [Device API](../../api/device) -** allows JavaScript to access **acquirePartialWakeLock** and **releasePartialWakeLock** functions programmatically. 
 
-* **[&lt;KeepAlive&gt;](../configreference#keepalive)** provides the option of maintaining a connection from client to server between HTTP requests. **For Windows Mobile/CE with Webkit engine only**. 
+#### New Features
 
-* **[&lt;LogTrace&gt;](../configreference#logtrace)** provides logging of the Trace messages generated by Enterprise Browser. **For Android and Windows Mobile/CE**.
+* **[Simplified mass deployment](../setup/#manualdeployment)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
 
-* **[&lt;usedwforscanning&gt;](../configreference#usedwforscanning)** controls whether to 'use DataWedge (DW) for scanning' or to go through Enterprise Browser APIs. Refer to the [DataWedge Usage Guide](../datawedge) for details. **For Android only**.
+* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
 
-####New Guides
+* **Improved [SSL/TLS security compliance](../compliance)** with support up to TLS 1.2. 
 
-* **[DataWedge Usage Guide](../datawedge)** details the steps required to use DataWedge for barcode scanning instead of the Enterprise Browser APIs and for switching between the two. 
+#### New Tags for Android
 
-* **[Keycode Mapping Guide](../keycapture)** explains how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
+* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** controls Enterprise Browser app **debugging with Chrome Inspector**, which is now supported.
 
-###Key Features
+* **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
+
+* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements) -** allows automatic media playback to be disabled by default.
+
+#### New Tags for Windows Mobile/CE
+
+* **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
+
+* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control when cached pages will be refreshed.
+
+* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
+
+#### New Guides
+
+* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes (including the WorkAbout Pro 4 and Omnii XT15). This guide also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
+
+* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to **use DataWedge for barcode scanning in place of the Enterprise Browser APIs**, and how to switch between the two. 
+
+### Key Enterprise Browser Features
 
 ####A development toolkit for mobile cross-platform enterprise apps
 * Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices
@@ -95,10 +119,10 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="es400Pic" src="../../images/es400.jpeg" height="75"></td>
@@ -118,7 +142,7 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow"><img id="mc18Pic" src="../../images/mc18.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC18</b></td>
   <td class="clsSyntaxCells clsOddRow">MC18</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0, Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -131,7 +155,7 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc3100Pic" src="../../images/mc3100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC3100</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC3100R, MC3100S, MC3190G, </nobr>MC3190R, MC3190S, MC3190Z</td>
+  <td class="clsSyntaxCells clsOddRow">MC3100R, MC3100S, MC3190G, MC3190R, MC3190S, MC3190Z</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 Professional<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -140,7 +164,7 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br> Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
@@ -188,8 +212,8 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean), <br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br>Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc70Pic" src="../../images/mc70.jpeg" height="75"></td>
@@ -215,7 +239,7 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc9000Pic" src="../../images/mc9000.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC9090, MC9097, MC9094</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC9090, MC9097, MC9094</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0<br>Windows Mobile 6.1</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
@@ -230,35 +254,35 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow"><img id="mc92Pic" src="../../images/mc9100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
   <td class="clsSyntaxCells clsOddRow">MC92N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat,<br> Windows CE 7.0,<br> Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit,<br> Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat<br>Windows CE 7.0<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9500</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC9590, MC9596, MC9598, MC959B (WM6.1)</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1, Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC55</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC55</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC70 (GA1, GA2)</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>	TC70 GA1, TC70 GA2</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="../../images/tc75.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -269,10 +293,17 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/workaboutpro.png" ></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Workabout</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>Workabout Pro 4</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
+  <td class="clsSyntaxCells clsOddRow">XT15</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody></table>
@@ -281,10 +312,10 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="vc5090Pic" src="../../images/vc5090.jpeg" height="75"></td>
@@ -301,10 +332,17 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="vc70Pic" src="../../images/vc70.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="vc70Pic" src="../../images/vc70N0.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>VC70</b></td>
   <td class="clsSyntaxCells clsOddRow">VC70</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
+  <td class="clsSyntaxCells clsOddRow">VH10</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody></table>
@@ -313,10 +351,10 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings"></th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mk3000Pic" src="../../images/mk3000.jpeg" height="75"></td>
@@ -333,7 +371,7 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="mk4000Pic" src="../../images/mk4000.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="mk4000Pic" src="../../images/mk4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MK4000</b></td>
   <td class="clsSyntaxCells clsOddRow">MK4000, MK4090</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0</td>
@@ -348,29 +386,65 @@ For migrating from PocketBrowser or the RhoElements Shared Runtime, Enterprise B
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported Web Views</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="wt4000Pic" src="../../images/wt4090.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="wt4000Pic" src="../../images/wt4090.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT4090</b></td>
   <td class="clsSyntaxCells clsOddRow">WT4070, WT4090</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="wt41n0Pic" src="../../images/wt41N0.jpeg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="wt41n0Pic" src="../../images/wt41N0.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT41N0</b></td>
   <td class="clsSyntaxCells clsOddRow">WT41N0</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
+  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
+  <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
+ </tr>
+ <tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
+  <td class="clsSyntaxCells clsOddRow">1D Corded Ring Scanner</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
+ </tr>
+ <tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
+  <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
+ </tr>
+ <tr>
 </tbody></table>
+
+**RS507 Support Notes**: 
+* Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on those devices; optional on some Jelly Bean devices).
+* Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
 
 ###Printers
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings">These printers have been tested for USB printing compatibility. Zebra supports wireless printing on many other models.</th>
-  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device models</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="text-centered">Interface(s)</th>

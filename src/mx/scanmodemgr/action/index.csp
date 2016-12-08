@@ -12,19 +12,19 @@ parm:
     - code: 0
       name: Do Not Change
       mx: "4.3"
-      description: The Scan Mode is not altered.
+      description: The Scan Mode is not altered; any previously selected setting is retained.
     - code: 1
       name: Normal Mode
       mx: "4.3"
-      description: The Scan Mode is changed to normal default operations.
+      description: Sets the Scan Mode to its default setting for the TC55 device (Power on right, Scan-trigger on left).
     - code: 2
       name: Scan 1 (Power is side key)
       mx: "4.3"
-      description: This Scan Mode is set where the trigger is the side key.
+      description: Sets the Power key as the left-side key and the Scan trigger as the right-side key (opposite of the default setting).
     - code: 3
       name: Scan 2 (Power is front key)
       mx: "4.3"
-      description: This Scan Mode is set where the trigger is the front key.
+      description: Sets both side keys as Scan triggers and moves the Power-key function to the front key.
 ---
 
-This parm allow you to specify how the Intent will be sent one or more other applications.
+Used to set the Scan Mode on the device, which reassigns the Power key and Scan-trigger functions. 

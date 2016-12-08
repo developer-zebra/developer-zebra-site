@@ -401,10 +401,6 @@ Start the camera application to take a picture. The user can capture the display
 				On wp8,wm when 'outputFormat' is 'image' then imageUri/image_uri shall have only Image name with \ sign, on WP8 ImageName shall be suffixed by DTF when 'outputFormat' is 'image'
 > Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [expandDatabaseBlobFilePath](../Application/#expanddatabaseblobfilepathspanclasstextinfostringspanrelativepath) method of the [Application module](../Application) as such:
 
-##### Ruby
-    :::ruby
-    Rho::RhoApplication.expandDatabaseBlobFilePath(x.image_uri)
-
 ##### JavaScript
     :::js
     Rho.RhoApplication.expandDatabaseBlobFilePath(x.image_uri)
@@ -905,9 +901,6 @@ Grayscale is supported only in the front camera of Android consumer devices.
 
 ###Invalid/Null values for properties in Android and iOS
 Only valid and non-empty values for properties are supported in Android and iOS.
-
-###Ruby Support
-Due to platform limitations, imager and color camera are not supported in ruby applications for CE5 and CE6 devices.
 
 ###Camera in Suspend mode
 All WM and CE7 devices automatically turn off both color and imager cameras when the device is suspended. User must restart the camera to resume. Whereas CE5 (eg: MC9000) and CE6 (eg: MC31) devices retain the preview on resuming from suspend state.

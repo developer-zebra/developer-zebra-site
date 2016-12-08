@@ -266,23 +266,11 @@ In addition its use of Document border dimensions, SimulScan uses Fields, compan
  * **Barcodes with a fixed location and size** on all instances of a form work best.
  * **Select the “Barcode’s location is fixed”** option in the Properties panel. 
  * **Select symbologies with uniform numbers** of digits to ensure consistent region size. 
- * **Avoid symbologies with multiple level/stack/region** barcode combinations (which may require variations in region size).
- * **Avoid postal barcodes and others listed below**: 
-    * Australian Postal
-    * Canadian Postal
-    * Composite C
-    * Composition AB
-    * DataBar Expanded
-    * Decoder Signature
-    * Dutch Postal
-    * Japanese Postal
-    * MailMark
-    * TLC39
-    * UK Postal
-    * US Planet
-    * US Postnet
-    * US4state
-    * US4state FICS
+ * **Avoid symbologies with multiple level/stack/region** barcode combinations (which may vary in region size).
+ * **Zebra recommends using only the following barcodes for fixed-mode**: 
+![img](fixed-mode_table_greyed.png)
+_Greyed symbologies are **NOT** recommended for selection as fixed barcodes_. 
+<br>
 
 In the Postal T&L Document below, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. Notice that the graphic is loosely bounded and the barcode tightly. 
 ![img](image36a.png)
@@ -583,11 +571,12 @@ The Field Properties panel is visible in the far-left column, and presents the P
 
 **Signature Presence -** determines whether a signature is present in the selected region, displays an error to the user if none is found. Applies to Picture fields that use the OMR feature to detect a marked area.
 
-**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. Applies when the field processing mode is “Barcode" and the Barcode Type is set to a supported symbology (see table). Symbologies in shaded areas are _**not**_ supported. To improve the accuracy of form identification, **Zebra recommends enabling this feature** whenever possible. 
+**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. Applies when the field processing mode is “Barcode" and the Barcode Type is set to a supported symbology (see table, below). Symbologies shown in grey are _**not**_ recommended. To improve the accuracy of form identification, **Zebra recommends enabling this feature** whenever possible. 
 
 ####Fixed Barcode Supported Symbologies
-![img](fixed-mode_table.png)
-_Symbologies in shaded areas are **NOT** supported for fixed barcodes_. 
+![img](fixed-mode_table_greyed.png)
+_Greyed symbologies are **NOT** recommended for selection as fixed barcodes_. 
+<br>
 
 -----
 

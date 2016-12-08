@@ -175,11 +175,12 @@ products:
     url: /mx
     image: /images/products/mx.png
     sections:
+      - title: About
+        url: /mx/overview
       - title: Compatibility
         url: /mx/compatibility
-    versions:
-      - url: mx/compatibility
-        label: '6.1'
+      - title: What version do I have?
+        url: /mx/mx-version-on-device
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about

@@ -114,6 +114,9 @@ The application must call the EMDKManager.release() in the below scenarios:
 
 The EMDKListener.onClosed gets called to notify the application that the EMDKManager object has been abruptly closed due to some failures at EMDK or a lower layer. When this occurs, the application must the release the current EMDK manager instance and get the new EMDK Manager instance 
 
+
+>Note: If you are blocking the main thread, the application will not get notification when the EMDK closes unexpected reasons and therefore the application must not block the main thread to receive the EMDKListener.onClosed callback.
+
 ###Refer the below code snippets for EMDKManager opening and closing
 
     :::java
@@ -195,24 +198,26 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
 
 
 
-##  EMDK as a dependency in gradle.build
+##  EMDK as a dependency in build.gradle
 Use this method to make use of the EMDK in a project with a Compile SDK set above API 19.
 
+
+
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
-2. Add the following to the dependencies section
+2. Add the following to the dependencies section. Be sure to update the `dir:` path to the path where com.symbol.emdk.jar exists on your development system.
 
     **Windows**
 
 		:::
 		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol-emdk_v4.2_API-19\\libs')
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol_emdk-symbol-19\\libs')
 		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
     **Mac**
 
 		:::
 		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.2_API-19/libs')
+		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME>/Library/Android/sdk/add-ons/addon-symbol_emdk-symbol-19/libs')
 		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
 

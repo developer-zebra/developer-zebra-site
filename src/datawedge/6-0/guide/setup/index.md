@@ -115,19 +115,21 @@ The app will now use DataWedge for barcode data acquisition.
 
 ####Create a New Profile:
 
+<!--
 &#49;. Locate and <b>tap the DataWedge icon</b> from the Launcher or App Drawer to launch it:  
 <img style="height:350px" src="01_datawedge_launcher.png"/>
-_Launcher icon for Android 4.x_
+_Launcher icon for DataWedge 3.x_
 <br>
+-->
 
 <img style="height:350px" src="02_datawedge_launcher.png"/>
-_Launcher icon for Android 5.x_
+_Launcher icon for DataWedge 6.x_
 <br>
 
 On newly installed devices, the DataWedge Profiles screen similar to the image below appears, showing the three included (visible) Profiles. White text indicates enabled Profiles. Also shown is a fourth, disabled Profile (grey text) that's not present out-of-the-box. 
 <img style="height:350px" src="01a_ProfilesScreen.png"/>
 
-**Note**: If DataWedge had been opened previously, it will reopen to the last used screen. If necessary, press BACK until the Profiles screen appears.  
+**Note**: If DataWedge had been opened previously, it will reopen to the last screen used. If necessary, press BACK until the Profiles screen appears.  
 <br>
 
 &#50;. **Tap the "hamburger"** menu and **select -> New profile**.  
@@ -136,7 +138,7 @@ On newly installed devices, the DataWedge Profiles screen similar to the image b
 
 &#51;.  **Enter a name** for the new Profile and **tap OK**. The Profiles list appears, similar to the image in Step 4, below.  
 <img style="height:350px" src="03_name_profile.png"/>
-Zebra recommends that Profile names be unique and made up of alpha-numeric characters only.
+Zebra recommends that Profile names be unique and contain alpha-numeric characters only.
 <br>
 
 #### Associate the Profile with App(s) and/or Activities: 
@@ -256,24 +258,50 @@ The SimulScan Input Plug-in permits simultaneous capture of barcodes, images, te
 _SimulScan Input Plug-in options_.
 <br>
 
-SimulScan Capture Rules: 
+**SimulScan Capture Notes**:
+
 * **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that string.
 * **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled. 
 
 **Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
 
-**Template selection -** sets a SimulScan template for the Profile being configured. Four templates are included with DataWedge: 
+**Template selection -** sets a SimulScan template for the Profile being configured. 
 
-* **Default-DocCap+Optional-Barcode.xml -** Captures the form as a picture and optionally decodes a barcode if available in the form. **This is the default form if none is selected**.
-* **Default-DocCap+Required-Barcode.xml -** Captures the form and decodes available barcode.
-* **Default-One-Barcode.xml -** Decodes a single barcode in the form and returns a single data region as the output.
-* **Default-Two-Barcodes.xml -** Decodes two barcodes in a form and returns the data as two data regions.
+**Templates included with DataWedge**:
+
+* **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check.
+
+* **Barcode1.xml -** decodes a single barcode of any symbology.
+
+* **Barcode2.xml -** decodes two barcodes of the same or differing symbologies.
+
+* **Barcode4.xml -** decodes four barcodes of the same or differing symbologies.
+
+* **Barcode5.xml -** decodes five barcodes of the same or differing symbologies.
+
+* **Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies.
+
+* **BookNumber.xml -** decodes 10- or 13-digit ISBN codes.
+
+* **DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
+
+* **DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
+
+* **TravelDoc.xml -** captures information from the machine-readable zone (MRZ) of a travel document such as a passport.
+
+* **Unstructured Multi-Line.xml -** uses OCR to acquire multiple lines of alpha/numeric text.
+
+* **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text.
+
+_The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_.
 
 Custom template XML files copied to the following device directory will be available for selection using this option:
 
-`/enterprise/device/settings/datawedge/` 
+`/enterprise/device/settings/datawedge/templates` 
 
-Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Creator](https://simulscan.zebra.com/). 
+**Note: Files and folders within the /enterprise directory are invisible to Android File Browser** by default; they can be made visible by manually inputting the path.
+
+Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../simulscan/1-1/guide/templatebuilder). 
 
 **Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
 
@@ -363,7 +391,7 @@ When Intent delivery is sent via Broadcast Intent, DataWedge sets the **Receiver
 The decode-related data added to an Intent bundle can be retrieved using the followng call: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
+<!-- * `Intent.getSerializableExtra()`-->
 
 The call above can be used with the following String tags:
 
@@ -377,7 +405,7 @@ The call above can be used with the following String tags:
 The MSR-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()` 
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can be used with the following String tags:
 
@@ -400,11 +428,11 @@ The data from the MSR tracks is concatenated and sent out as a byte array. The S
 The SimulScan-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
-* `Intent.getSerializableExtra()`
 * `Intent. getParcelableArrayListExtra()`
 * `Bundle.getInt()`
 * `Bundle.getString()`
 * `Bundle.getByteArray()`
+<!-- * `Intent.getSerializableExtra()` -->
 
 The calls above can use the following String tags:
 
@@ -530,6 +558,6 @@ _Data Capture Plus shown in maximized mode_.
 
 Other DataWedge guides: 
 * [IPWedge Guide](../ipwedge)
-* [DataWedge API for Android](../api)
-* [DataWedge Capture API](../capture)
+* [DataWedge Data Capture API for Android](../api) <!--
+* [DataWedge Capture API](../capture) -->
 

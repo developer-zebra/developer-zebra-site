@@ -80,7 +80,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 3. Under the EMDK for Android key in the Registry Editor, look for the value AndroidStudioSDKPath in the details pane on the right and identify the Android SDK root folder
 4. Locate and remove the SDK add-on installed by EMDK as below:
-	* Go to `\<android-sdk>\add-ons` and delete `addon-symbol-emdk_vX.X_API-16` and `addon-symbol-emdk_vX.X_API-19` folders.
+	* Go to `\<android-sdk>\add-ons` and delete `addon-symbol_emdk-symbol-16` and `addon-symbol_emdk-symbol-19` folders.
 
 
 ###4. Removing installed EMDK registry settings

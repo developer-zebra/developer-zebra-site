@@ -8,7 +8,7 @@ productversion: '2.4'
 ## Introduction
 This section provides information on how the staging operator can use the StageNow Workstation Tool and Client to select and read a StageNow bar code or NFC tag, or generate an audio profile, to configure the target devices and deploy the profile material to the devices. 
 
-If the device does not include the StageNow Client, use [Rapid Deployment Client](../stageclient?Rapid%20Deployment%20Client) for configuration.
+If the device does not include the StageNow Client, use [Rapid Deployment Client](../stageclient/#rapiddeploymentclient) for configuration.
 
 ## Selecting a Profile for Staging
 To select a profile with which to stage the device:

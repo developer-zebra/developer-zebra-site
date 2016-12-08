@@ -3,6 +3,9 @@ title: EMDK For Android
 insert:
   file: emdk-for-android/6-0/guide/about/index.md
 layout: guide.html
+redirect_url: /emdk-for-android/6-0/guide/about
+product: EMDK For Android
+productversion: '6.0'
 menu:
   title: EMDK For Android 4.2
   img: /emdk-for-android/images/logo.png
@@ -32,23 +35,3 @@ menu:
       url: /emdk-for-android/6-0/api
     - icon: fa fa-search
       url: /emdk-for-android/6-0/search
-product: EMDK For Android
-productversion: '6.0'
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,10 +4,10 @@ title: Scan and Pair
 description: This sample application will show how the Scan and Pair API can be used to pair two bluetooth devices programmatically.
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/archive/ScanAndPairSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/ScanAndPairSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-5_0/tree/ScanAndPairSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/tree/ScanAndPairSample1'
 features:
   - Profile Manager
   - Scan and Pair
@@ -40,6 +40,9 @@ This sample application will show how the Scan and Pair API can be used to pair 
 For this sample, you will need two Android Bluetooth devices, one must be an EMDK for Android supported device. You will also need a barcode that contains the Bluetooth MAC address of the remote bluetooth device that we will be pairing with(The one not running the EMDK app).
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
+##Requirements
+Android API 19 must be installed via the SDK Manager before attempting to load this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

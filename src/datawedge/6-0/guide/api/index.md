@@ -396,21 +396,21 @@ When activity A returns to the foreground, the app must use `SwitchToProfile` ag
 DataWedge auto Profile switching works as follows: 
 
 **Every second…**
-* Sets newProfileId to the associated Profile ID of the current foreground activity. 
-* If no associated Profile is found, sets newProfileId to the associated Profile ID of the current foreground app. 
-* If no associated Profile is found, sets newProfileId to the current default Profile (which  MAY NOT be Profile0). 
-* Checks the newProfileId against the currentProfileId. If they are different: 
+* Sets **newProfileId** to the associated Profile ID of the current foreground activity. 
+* If no associated Profile is found, sets **newProfileId** to the associated Profile ID of the current foreground app. 
+* If no associated Profile is found, sets **newProfileId** to the current default Profile (which  MAY NOT be Profile0). 
+* Checks the **newProfileId** against the **currentProfileId**. If they are different: 
 	* deactivates current Profile
-	* activates new Profile (newProfileId)
-	* sets currentProfileId = newProfileId
+	* activates new Profile (**newProfileId**)
+	* sets **currentProfileId** = **newProfileId**
 
 ------
 
 LINKS
 
-[Zebra Support Central](http://portal.zebra.com/) - Integrator Guides, Product Manuals, Software Downloads and Support
+[Zebra Support Central](https://www.zebra.com/us/en/support-downloads.html) - Integrator Guides, Product Manuals, Software Downloads and Support
 
-[LaunchPad](https://developer.zebra.com/welcome) - Zebra Developer Center
+[LaunchPad](https://developer.zebra.com/welcome) - Zebra Developer Community
 
 [Intent](https://developer.android.com/reference/android/content/Intent.html) | Android Developers
 

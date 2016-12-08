@@ -19,14 +19,7 @@ productversion: '6.0'
 
 6. Browse to the path of the extracted project(from step #3) , add click the **OK** button.
 
-7. Once the project has opened in Android Studio, Open the build.gradle(Module.app) file
-8. Find the `provided fileTree` line in the `dependencies` node
-
-9. Update the `dir:` path to match the emdk jar install path on your developement system.
-
-10. Click the `Sync Now` link that pops up at the top of the gradle file.
-
-The sample should now be ready to deploy.
+Once Android Studio completes setting up the proect, the sample should now be ready to deploy.
 
 ##Deploying a Sample Application
 

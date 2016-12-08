@@ -70,11 +70,11 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-        "path": "emdk-for-xamarin/2-2/api/",
+        "path": "emdk-for-android/6-3/",
         "frontmatter": [
             {
                 "item" :  "productversion",
-                "value" : "2.2",
+                "value" : "6.3",
                 "override": true,
             }
         ]

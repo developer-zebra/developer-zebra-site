@@ -76,20 +76,24 @@ products:
         label: '2.3'
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-0/guide/about
+    url: /enterprise-keyboard/1-2/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-0/guide/about
+        url: /enterprise-keyboard/1-2/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-0/guide/setup
+        url: /enterprise-keyboard/1-2/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-0/guide/settings
+        url: /enterprise-keyboard/1-2/guide/settings
       - title: Download
-        url: /enterprise-keyboard/1-0/download
+        url: /enterprise-keyboard/1-2/download
     versions:
-      - url: enterprise-keyboard/1-0/guide/about
+      - url: enterprise-keyboard/1-2/guide/about
+        label: '1.2'
+      - url: enterprise-keyboard/1-1/guide/about
+        label: '1.1'
+      - url: enterprise-keyboard/1-1/guide/about
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
@@ -120,23 +124,27 @@ products:
         label: '4.0'
   - title: EMDK For Xamarin
     description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
-    url: /emdk-for-xamarin/2-1/guide/about
+    url: /emdk-for-xamarin/2-2/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
+      - title: About
+        url: /emdk-for-xamarin/2-2/guide/about
       - title: Getting Started
-        url: /emdk-for-xamarin/2-1/guide/gettingstarted
+        url: /emdk-for-xamarin/2-2/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-1/tutorial/
+        url: /emdk-for-xamarin/2-2/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-1/samples
+        url: /emdk-for-xamarin/2-2/samples
       - title: Guides
-        url: /emdk-for-xamarin/2-1/guide/programming-guides
+        url: /emdk-for-xamarin/2-2/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-1/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-2/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-1/api
+        url: /emdk-for-xamarin/2-2/api
     versions:
+      - url: emdk-for-xamarin/2-2/guide/about/
+        label: '2.2'
       - url: emdk-for-xamarin/2-1/guide/about/
         label: '2.1'
       - url: emdk-for-xamarin/2-0/guide/about/
@@ -167,11 +175,35 @@ products:
     url: /mx
     image: /images/products/mx.png
     sections:
+      - title: About
+        url: /mx/overview
       - title: Compatibility
         url: /mx/compatibility
+      - title: What version do I have?
+        url: /mx/mx-version-on-device
+  - title: SimulScan
+    description: A tool for simultaneously capturing scanned data from multiple label regions.
+    url: /simulscan/1-1/guide/about
+    btn-text: Latest Guides
+    image: /simulscan/simulscan_logo.png
+    sections:
+      - title: About
+        url: /simulscan/1-1/guide/about
+      - title: Setup
+        url: /simulscan/1-1/guide/setup
+      - title: Template Builder
+        url: /simulscan/1-1/guide/template
+      - title: APIs
+        url: /simulscan/1-1/apis
+      - title: Use Cases
+        url: /simulscan/1-1/guide/usecases
+      - title: Demo App
+        url: /simulscan/1-1/guide/demo
+      - title: Licensing
+        url: /simulscan/1-1/guide/licensing
     versions:
-      - url: mx/compatibility
-        label: '6.0'
+      - url: simulscan/1-1/guide/about
+        label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
     url: /stagenow/2-4/about

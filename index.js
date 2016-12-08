@@ -54,7 +54,7 @@ var index_generate = function(folder){
             for (var x = 0; x < keywords.length; x++) {
                 keyword_string += keywords[x] + " ";
             };
-            var snippet = snippets.snip(removeMd(yaml.body), {len: 150});
+            var snippet = snippets.snip(html.text, {len: 150});
             index_item = {
                 title: yaml.attributes.title,
                 keywords: keyword_string,
@@ -89,6 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("ehs/2-5");
+      index_generate("enterprise-browser/1-4");
       
 

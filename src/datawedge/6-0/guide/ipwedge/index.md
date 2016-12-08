@@ -21,7 +21,7 @@ Using IPWedge requires the following:
 
 ### Set up IPWedge
 
-&#49;. [Visit the Zebra Solutions Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=datawedge%20ip) and **download the latest version of IPWedge**. 
+&#49;. [Visit the Zebra Support Portal](https://www.zebra.com/us/en/support-downloads.html), enter "IPwedge" in the search box and **download the appropriate version for the target device**. 
 
 &#50;. **Install the .zip file** on the system to which the scanned data will be sent. 
 

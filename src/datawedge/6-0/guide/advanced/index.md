@@ -22,7 +22,7 @@ Most of the functionality referenced in this guide will be accessed through the 
 _Access the DataWedge Settings panel from the Profiles screen_. 
 <br>
 
-&#50;. **Tap the desired feature** to invoke or change its status. 
+&#50;. **Tap the desired feature** to invoke it or change its status. 
 <img style="height:350px" src="datawedge_settings_panel.png"/>
 _The DataWedge Settings panel_. 
 <br>
@@ -32,6 +32,8 @@ _The DataWedge Settings panel_.
 * **DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge and return control of scanning hardware to the system.
 
 * **Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
+
+* **Disabled app list -** Disables scanning functions for selected apps anywhere on the device. 
 
 * **Import -** Invokes navigation for importing a DataWedge configuration file from device storage. This action replaces the current configuration.
 
@@ -46,11 +48,31 @@ _The DataWedge Settings panel_.
 ### Logging
 DataWedge provides the option of outputting system log messages for viewing through the Logcat command line tool, Android Studio or another compatible viewer, usually over a USB connection. 
 
-**To Enable/Disable logging**: 
+**To Enable/Disable Logging**: 
 
 From the DataWedge Settings panel, **tap Enable Logging** to enable or disable logging as desired. 
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
+
+### Disable Scanning on Apps/Activities
+DataWedge can prohibit certain apps from accessing its data capture services. This can be useful as a security measure to ensure that acquired data is sent only to approved apps, or simply as a means of controlling which apps will have access to the scanner. By default, all apps have access. 
+
+**To Disable Data Capture for an app**: 
+
+From the DataWedge Settings panel, **tap Disabled app list**:  
+<img style="height:350px" src="datawedge_disabled_apps.png"/>
+<br>
+
+A list appears showing all installed apps and packages, similar to the image below. **Tap one or more app(s) or activities to add to the disabled list**, scrolling as necessary.  
+<img style="height:350px" src="disabled_apps_list.png"/>
+<br>
+
+**Notes**:
+
+* Apps/activities associated with a specific profile cannot be disabled. 
+* Disabled apps/activities cannot be associated with a profile.
+* Disabling a parent package disables all of its activies.
+* A disabled activity **does not** disable the parent or its other activities. 
 
 ### Import a Config File
 DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
@@ -162,7 +184,7 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 * **Cursor movement** (i.e. skip the first 10 characters)
 * **Data modification** (i.e remove all spaces; pad the left side with four zeros)
 * **Data sending** (i.e. output the last four digits)
-* **Delay** (i.e. wait 50 ms before doing something)
+* **Pause** (i.e. pause 50 ms before executing the next action)
 
 ### Creating ADF Rules
 Setting up Advanced Data Formatting is done in three basic steps: 
@@ -325,7 +347,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send pause</p></td>
-<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before continuing the next action.</p></td>
+<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send string</p></td>
@@ -338,7 +360,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
-_**Note**: To help minimize data loss, **Zebra recommends sending a Pause Action** of 50 ms after using a Send String and/or Send Char Action to send ENTER, LINE FEED or TAB characters._
+_**Note: To help minimize data loss, Zebra recommends sending a Pause Action of 50 ms after sending any ENTER, LINE FEED or TAB character**._
 
 &#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes and the example, below**.  
 <img style="height:350px" src="adf_22_actions_list.png"/>
@@ -361,7 +383,7 @@ _The ADF Rule screen from Android L (with no configured actions)._
 * All data acquired through the Profile will be processed according to the Actions defined in the Rule before being transferred to the selected Output Plug-in. 
 * If no ADF rule is enabled or defined, DataWedge passes decoded data to the Output Plug-in without processing.
 
-#### Non-printable Characters
+### Non-printable Characters
 When setting up an ADF data processing rule to find or replace control characters, extended ASCII characters or other non-printable characters, DataWedge supports the use of the **\xNN notation** to specify hex value of the character and **\uNNNN notation** for Unicode values. 
 
 For example, if the captured data contains the Group separator (GS) character (\x1D) and data on either side of the separator must be acquired, the following ADF actions can be added to the ADF rule: 
@@ -547,7 +569,7 @@ It is possible to take pictures and capture barcode data using the same applicat
 <img style="height:350px" src="datawedge_enable-disable.png"/>
 <br>
 
-For imformation about accessing DataWedge programmatically, see the [Data Capture API Guide](../api). 
+To learn how to access DataWedge programmatically, see the [Data Capture API Guide](../api). 
 
 <!--
 

@@ -5,7 +5,7 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes<!-- _<u>and</u>_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. --> A license also is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or [Enterprise Browser](../../../../enterprise-browser).
+**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes<!-- _<u>and</u>_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. --> A license is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR), or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or when using it with [Enterprise Browser](../../../../enterprise-browser).
 
 **General Licensing Rules**:
 
@@ -31,45 +31,64 @@ The first step in obtaining a license is to engage with Zebra directly or with a
 -----
 
 ###II. Access Licensing System
-After a licensing agreement is purchased from Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials. 
+After a licensing agreement is arranged with Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials. 
 
 * **Log into the [Zebra Enterprise Software Licensing system](https://softwarelicensing.zebra.com/) to:** 
-	* Place an order for licenses
+	* Place an order for device licenses (see image below)
 	* See the status of existing orders
 	* Assign licenses to devices or deployments
 	* View current license inventory and assignments
 
+![img](addorder.png)
+_Options for SimulScan licensing might vary from the image shown_.  
+<br>
+
 -----
 
-###III. Apply License
-Once a license is purchased, it must be assigned to device(s) before being deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
+###III. Assign License(s)
+Once the desired number of license(s) are purchased, they must be assigned to device(s) before being deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
 
-####Manual Deployment
-1. **Download the** `SDC_License.xml` **file** from the licensing server to a local PC.
-2. **Push the License file to the device** being used for scanning.
-3. In the Settings panel, select **About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license**.
-4. Navigate to the License file and select it.
+#### Manual Deployment
+**&#49;. Enter the device model and serial number** (as shown) and other required information and **Press Submit** when done. 
+![img](assignlicense.png)
+_Individual licenses must be applied manually. Deployment licenses can be deployed remotely_.
+<br>
 
-####Remote deployment
+**&#50;. Download the** `SDC_License.xml` **file** from the licensing server to a local PC:
+![img](downloadlicense.png)
+_Licenses are tied to the device model and serial number and will fail if deployed elsewhere_.  
+<br>
+
+**&#51;. Push the License file to the device(s)**.
+
+**&#52;. In the Settings panel, select About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license**.
+
+**&#53;. Navigate to the License file** and select it.
+
+**Manual license deployment is complete**. 
+
+#### Remote deployment
 
 1. Generate a Deployment Key on the Licensing website. 
 2. Launch the StageNow wizard and select "SimulScan mass-deployment."
 3. Input the Deployment Key when prompted. 
 4. Deploy the Key to devices.  
 
+
+
 Once deployed to the device, SimulScan licenses are installed automatically. For details, please refer to [StageNow documentation](../../../../stagenow). 
 
 -----
 
 ## Demo License
-Demo licenses are available for companies wishing to evaluate SimulScan or while integrating their app using SimulScan APIs. To request a demo license to enable SimulScan advanced features and APIs on a device:
+Demo licenses are available for companies wishing to evaluate SimulScan or while integrating a custom app using SimulScan APIs. To request a demo license to enable SimulScan advanced features and APIs on a device:
 
 * [Send email to NMV386@zebra.com](mailto:NMV386@zebra.com?Subject=SimulScan%20Demo%20License%20Request) 
 * Include **"SimulScan Demo License Request"** in the subject header
 
 A reply will be sent with access credentials for [Zebra's Software Licensing Portal](https://softwarelicensing.zebra.com/), generally on the next business day. 
 
-* **Follow directions** to [apply the license](#iiiapplylicense). 
+* **Follow directions** to [assign the license](#iiiassignlicense). 
 
 <!--
 ## Device License

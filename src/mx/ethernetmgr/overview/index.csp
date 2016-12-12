@@ -5,13 +5,11 @@ type: text
 order: 0
 ---
 
-Ethernet Manager is used to administer settings for devices connected to a network through an Ethernet-equipped cradle. 
-
-**This CSP is separate from the [Wi-Fi Manager](../wifi) and has no effect on Wi-Fi communications or wireless Ethernet adapter settings**. 
+Ethernet Manager is used to administer settings for devices connected to a network through an Ethernet-equipped cradle. **This CSP has no effect on Wi-Fi communications or wireless Ethernet adapter settings**, which are controlled through the [Wi-Fi Manager](../wifi). 
 
 ### Main Functionality
 
 * Enable/Disable network connection through an Ethernet-equipped cradle
 * Enable/Disable Use of a Proxy
 * Set the Proxy Port and Proxy Host Name
-* Set a Proxy-Bypass Port
+* Specify Host Name(s) and/or IP address(es) that Bypass the Proxy

@@ -10,12 +10,16 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 
 **SimulScan Can Help Optimize Workflow If...** 
 
-* **Scanning is frequent** in the organization, and
-* **Forms have well-defined borders**, and
-* **Scanned forms are of a fixed layout**, and/or
-* **Scanned forms contain a single type of data** (such as barcodes or text). 
+* **Scanning is frequent** in the organization, and...
+* **Forms have one or more barcodes of the same of differing symbologies**.
 
------
+####or...
+
+* **Scanning is frequent** in the organization, and...
+* **Scanned forms are of a fixed layout** and
+* **Forms have well-defined borders**.
+
+----
 
 #### SimulScan offers two modes of operation:  
 
@@ -29,44 +33,28 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 
 -----
 
-### SimulScan Benefits
-
-* **Decodes multiple barcodes** with a single scan, even those of differing symbologies
-* **Automates text and numerical data entry** using optical character recognition (OCR)
-* **Supports English, French, German, Spanish and Portuguese**
-* **Reduces workflow exceptions** by using optical mark recognition (OMR) to detect the presence of checkmarks and signatures
-* **Improves overall worker efficiency** and accuracy of input
-
-**Simultaneously capture**: 
-
-* **Barcodes** (single or multiple symbologies)
-* **Text** (name and address, product names, etc.)
-* **Numbers** (phone, invoice, tracking and stock numbers, etc.)
-* **Images** (logos, ID photos, etc.)
-* **Signatures** (captured as an image)
-* **Checkboxes** (captured as yes/no)
-
------
-
 ### Requirements
-* **A Zebra TC55, TC70, TC75, TC8000 device** running Android
-* **Camera or 2D imager** (included on most devices--[see table](#supporteddevices))
-* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device
-* **A per-device [license](../license)** if using OCR, OMR or SimulScan APIs
+* **A Zebra TC55, TC70, TC75, TC8000 device** running Android.
+* **Camera or 2D imager** (included on most devices; [see table](#supporteddevices)).
+* **An app (or [DataWedge](../../../../datawedge)) set to access SimulScan** on the device.
+* **A per-device [license](../license)** if using OCR or OMR.
 
 -----
 
 ## How it Works
-SimulScan works through Templates, which define "regions of interest" on Documents to be scanned, "Fields of interest" within those regions, and the type of data (barcode, text, etc.) to be extracted from the Fields. 
+SimulScan works through Templates, which define "Form Regions of interest" on Documents to be scanned, "Field Regions of interest" within forms, and the types of data (barcode, text, etc.) to be extracted from each Field. **SimulScan can be accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
 
+**SimulScan is free** when used with DataWedge or from a custom app to scan only barcodes. A per-device license is required access to OCR or OMR. For licensing details, please see the [Licensing guide](../license). 
+
+See the [SimulScan Glossary](../templatebuilder/#glossary) for a complete list of terms. 
+
+<!--
 ![img](regions_of_interest.png)
 
 In addition, some Fields are designated as "Anchor Elements," which help SimulScan to identify a form and also set a reference for other Fields to compensate for changes in the orientation of the Document or the scanning device. 
+-->
 
-**SimulScan can be accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
-
-**SimulScan is free** when used with DataWedge to scan only barcodes. A per-device license is required access to OCR, APIs or other advanced features. For licensing details, please see the [Licensing guide](../license). 
-
+-----
 
 ## Supported Devices
 
@@ -104,6 +92,38 @@ In addition, some Fields are designated as "Anchor Elements," which help SimulSc
  <tr>
 </tbody></table>
 _(*)The TC8000 Extended Range Imager (ERI) configuration is not supported_. 
+
+<!--
+### SimulScan Benefits
+
+* **Decodes multiple barcodes** with a single scan, even those of differing symbologies
+* **Automates text and numerical data entry** using optical character recognition (OCR)
+* **Supports English, French, German, Spanish and Portuguese**
+* **Reduces workflow exceptions** by using optical mark recognition (OMR) to detect the presence of checkmarks and signatures
+* **Improves overall worker efficiency** and accuracy of input
+
+**Simultaneously capture**: 
+
+* **Barcodes** (single or multiple symbologies)
+* **Text** (name and address, product names, etc.)
+* **Numbers** (phone, invoice, tracking and stock numbers, etc.)
+* **Images** (logos, ID photos, etc.)
+* **Signatures** (captured as an image)
+* **Checkboxes** (captured as yes/no)
+
+#### SimulScan can be used through: 
+
+* **[DataWedge](../../../../datawedge)**, which is covered in [SimulScan Setup](../setup) guide
+* **A custom Android app**, which is covered in the [SimulScan API guide](../../api)
+* **The [SimulScan Demo App](../demo)**, which exposes all features except the ability to save acquired data
+
+#### Quick Start
+
+SimulScan is activated simply by selecting it as an [Input Plug-in](../setup/#activatesimulscan) from within DataWedge, an app that comes with every Zebra device. Those already familiar with the Template-based operation of SimulScan can **get started immediately by skipping to the [SimulScan Setup guide](../setup/#accessthroughdatawedge)**. Otherwise, please read this page and the [Template intro](../setup/#intrototemplates) on the Setup guide before proceeding.  
+
+-->
+
+-----
 
 <!--
 Forms can include barcodes, multiple lines of text, phone numbers, images, signatures, even checkboxes, and SimulScan can capture them all simultaneously. Once acquired, data can be instantly used to populate business forms, be further processed according to simple or complex rules, or simply stored for later retrieval. Incorporating SimulScan into the workflow can increase process automation and worker proficiency, improve data accuracy and reduce process-cycle times.

@@ -6,17 +6,19 @@ productversion: '1.1'
 ---
 ## Overview
 
-SimulScan can be accessed either by selecting [SimulScan as an Input Plug-in](../../../../datawedge/6-0/guide/setup/#simulscaninput) within Zebra's [DataWedge](../../../../datawedge) app (included free with all Zebra devices) or by invoking its functions from within a custom Android app using the SimulScan APIs (which requires licensing). SimulScan advanced features can be explored without a license by using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
+#### SimulScan can be used through: 
 
+* **[DataWedge](../../../../datawedge)**, which is covered here
+* **A custom Android app**, which is covered in the [SimulScan API guide](../../api)
+* **The [SimulScan Demo App](../demo)**, which exposes all features except the ability to save acquired data
 
-### What's in This Guide
-**This section covers only [SimulScan usage with DataWedge](#accessthroughdatawedge)**. To access SimulScan functions programmatically, see the [SimulScan API guide](../../api). 
+**To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan)**, simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. To get started immediately, **[skip the Template intro](#accessthroughdatawedge)** if already familiar with SimulScan and Templates. Otherwise, read the short [About Templates](#intrototemplates) section below and the [About SimulScan page](../about) before proceeding. 
 
 -----
 
-### About Templates
+### Intro to Templates
 
-Templates are central to the power of SimulScan; they control its ability to decode and parse data, and determine how acquired data is consumed by an application. At least one Template must be present and selected on the device before SimulScan can be used; a number of generic Templates are included.
+**Templates are central to the power of SimulScan**; they are used in all modes and control its ability to decode and parse data, and determine how acquired data is consumed by an application. At least one Template must be present and selected on the device before SimulScan can be used; a number of generic Templates are included.
 
 Custom Templates can either be Structured or Unstructured. A **Structured Template** is used when the Document to be scanned has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire multiple types of data at once (barcodes, text, images, etc.). **Unstructured Templates** are for target Documents that vary in layout. These Templates are limited to capturing a single data type (only barcodes, only text, etc.), but the target _**data**_ can be located anywhere on the form.
 

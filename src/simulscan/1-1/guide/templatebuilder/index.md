@@ -35,7 +35,7 @@ Before attempting to create a Template, the following assets are required:
 
 -----
 
-### Glossary
+## Glossary
 
 **Anchor Element(s) -** one or more unchanging images, barcodes or other Document attributes (i.e. company logo) created as part of a Template that SimulScan can use to identify a Document and determine its orientation. 
 
@@ -45,7 +45,9 @@ Before attempting to create a Template, the following assets are required:
 
 **Document -** printed form containing data to be acquired (i.e. a shipping receipt). Documents should be associated with no more than one Template. 
 
-**Field of Interest-** area of a form within a Region of Interest that is associated with a data type and processing method (i.e. a barcode). Also referred to simply as a "Field." 
+**Field-** see Region Field.  
+
+**Form Region of Interest -** the area inside the outer-most border of a Document that contains Field Regions of Interest with data to be acquired.   
 
 **Grouped Regions -** refers to sections of a Document that require Fields (i.e. an address) to be grouped logically as an aid to processing the acquired data. 
 
@@ -67,11 +69,13 @@ Before attempting to create a Template, the following assets are required:
 
 **Picture -** graphical image to be acquired as a file (i.e. `.jpg` file). Minimum image size: 128 x 128 pixels; maximum: 2600 x 2000 pixels.  
 
-**Region of Interest -** the area inside the outer-most border of a Document that contains Fields of Interest with data to be acquired.   
+**Region Field of Interest-** area of a form within a Form Region of Interest that is associated with a data type and processing method (i.e. a barcode). Also referred to as a "Field." 
 
 **Secure Storage -** the online area accessible only by credentialed user(s) in which Templates are stored. 
 
 **Signature -** generally of the recipient of a shipment (captured as an image).
+
+**SimulScanRegion -** name of the Java object that references a SimulScan Region Field.   
 
 **Single-Line -** acquisition using OCR of a single line of alpha/numeric characters (i.e. a product number).
 

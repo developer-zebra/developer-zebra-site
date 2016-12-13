@@ -1,64 +1,106 @@
 ---
-title: Enterprise Browser Usage Guides
-description: These guides explain the concepts behind all major Enterprise Browser features and provide specific instructions for accessing them.
-layout: list-apis.html
-automenu:
-  items:
-    - title: Installation and Removal
-      items:
-        - title: Enterprise Browser Setup Guide
-          url: setup
-        - title: Licensing
-          url: licensing
-        - title: Optimization
-          url: optimization
-    - title: App Configuration
-      items:
-        - title: Config Editor Utility
-          url: ConfigEditor
-        - title: Config.xml Reference
-          url: configreference
-        - title: On-device Configuration
-          url: OndeviceConfig
-        - title: Shortcut Creator Utility
-          url: ShortcutCreator
-    - title: Application Usage
-      items:
-        - title: DataWedge
-          url: datawedge
-        - title: DOM Injection
-          url: DOMinjection
-        - title: Feature Demo app
-          url: featuredemo
-        - title: Printing
-          url: printingGuide
-        - title: Keycode Mapping
-          url: keycapture
-        - title: SAP ITSmobile
-          url: sap
-        - title: Viewport
-          url: viewport
-    - title: Debugging
-      items:
-        - title: Logging
-          url: logging
-        - title: On-Device Debugging
-          url: debuggingjs
-    - title: Migration
-      items:
-        - title: From Pocket Browser 2.x/3x
-          url: pb2
-        - title: From RhoElements 2.x
-          url: elements
-        - title: From RhoMobile 4.x
-          url: rhomobile
-    - title: Security
-      items:
-        - title: Certificates
-          url: certificates
-        - title: TLS/SSL Compliance
-          url: compliance
+title: Enterprise Browser Sample Apps
+layout: guide.html
 product: Enterprise Browser
 productversion: '1.5'
 ---
+## Overview 
+
+Sample apps are intended to demonstrate the basic functionality of some common Enterprise Browser APIs and provide a basic understanding of how to integrate API code into an HTML page. Apps are fully functional when launched using Enterprise Browser. 
+
+To see the layout, view through a desktop browser. To see the APIs in action, view them through Enterprise Browser. 
+
+## How to use
+
+1. Identify the code for the desired API 
+2. Right-click on the link **select "Copy Link Address"** 
+3. Paste the link into the [&lt;StartPage&rt; parameter](../configreference/#startpage) in the `Config.xml` file 
+4. **Launch Enterprise Browser** to see how the Sample App works.   
+
+[Config Editor utility guide](../ConfigEditor)
+
+**Related Guides**
+
+* **[API Usage Guide](../apioverview)**
+* **[API Compatibility Matrix](../../guide/compatibility)**
+* **[Config.xml Reference](../configreference)**
+
+-----
+
+### Barcode App
+Does this and that. 
+
+[Enterprise Browser](../../../samples/barcode/EB_Barcode_API.html)
+
+[Pocket Browser](../../../samples/barcode/PB_Scanner_API.html)
+
+[RhoElements](../../../samples/barcode/RE_Scanner_API.html)
+
+-----
+
+### Battery App
+[Enterprise Browser](../../../samples/battery/BatteryCommAPI.html)
+
+[Pocket Browser](../../../samples/battery/BatteryPB.html)
+
+[RhoElements (correct?)](../../../samples/battery/Battery2.2API.html)
+
+-----
+
+### Camera App
+[Enterprise Browser](../../../samples/camera/CameraCommonAPI.html)
+
+[Pocket Browser](../../../samples/camera/CameraPB.html)
+
+[RhoElements](../../../samples/camera/Camera2.2API.html)
+
+-----
+
+### ezNFC App
+[Enterprise Browser](../../../samples/eznfc/ezNFC_CommonAPI.html)
+
+-----
+
+### Intent App
+[Enterprise Browser](../../../samples/intent/intent.html)
+
+-----
+
+### KeyCapture App
+[Enterprise Browser](../../../samples/keycapture/KeyCommAPI.html)
+
+[Pocket Browser](../../../samples/keycapture/KeyPB.html)
+
+[RhoElements](../../../samples/keycapture/Key2.2API.html)
+
+[WHO KNOWS?](../../../samples/keycapture/Remap.html)
+
+-----
+
+### Printer App
+[Bluetooth Enterprise Browser](../../../samples/printer/BT_CommonAPI.html)
+
+[USB Enterprise Browser](../../../samples/printer/USB_CommonAPI.html)
+
+[Wi-Fi Enterprise Browser](../../../samples/printer/WIFI_CommonAPI.html)
+
+[Adaptive Printer Driver (APD)](../../../samples/printer/APD_2_2API.html)
+
+-----
+
+### Signal App
+[Enterprise Browser](../../../samples/signal/SignalCommAPI.html)
+
+[Pocket Browser](../../../samples/signal/SignalPB.html)
+
+[RhoElements](../../../samples/signal/Signal2.2API.html)
+
+-----
+
+### Signature App
+[Enterprise Browser](../../../samples/signature/SignatureCommAPI.html)
+
+[Pocket Browser](../../../samples/signature/SignaturePB.html)
+
+[RhoElements](../../../samples/signature/Signature2.2API.html)
 

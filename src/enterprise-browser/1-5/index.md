@@ -17,6 +17,8 @@ menu:
       url: /enterprise-browser/1-5/guide/gettingstarted
     - title: Tutorials
       url: /enterprise-browser/1-5/tutorial/
+    - title: Sample Apps
+      url: /enterprise-browser/1-5/guide/samples
     - title: Guides
       url: /enterprise-browser/1-5/guide
     - title: Config.xml

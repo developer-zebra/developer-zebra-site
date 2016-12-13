@@ -65,7 +65,7 @@ The supported formats vary according to the platform. On Android devices we can 
 
 
 ###Format of the filename URL
-Supports only HTTP and FILE formats. HTTP Example: http://192.168.1.1:8080/Folder/Media.mp4. File Example: file:///Application/Media.mp4. Remember to also wrap your URL with url('') when being used as part of a meta tag, as shown in the examples above.
+Supports only HTTP and FILE formats. HTTP Example: `http://192.168.1.1:8080/Folder/Media.mp4`. File Example: `file:///Application/Media.mp4`. Remember to also wrap your URL with url('') when being used as part of a meta tag, as shown in the examples above.
 
 ##Requirements
 
@@ -75,12 +75,12 @@ Supports only HTTP and FILE formats. HTTP Example: http://192.168.1.1:8080/Folde
 
 ##HTML/JavaScript Examples
 
-The following META Tag example plays a video file.
+The following META Tag example plays a video file:
 
 	<META HTTP-Equiv="mediaPlayer" Content="filename:url('HTTP://192.168.1.1:80/Media/RhoElements.mp4')">
 	<META HTTP-Equiv="mediaPlayer" Content="start">
 	
-The following JavaScript will start and stop a media playback respectively when onStart and onStop are called
+The following JavaScript will start and stop a media playback respectively when calling onStart and onStop:
 
 	<script>
 	   function onStart()

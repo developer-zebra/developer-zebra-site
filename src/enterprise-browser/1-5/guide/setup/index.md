@@ -54,7 +54,7 @@ If not upgrading, skip to Step 3.
 
 1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; Step 2 will cause it to be lost. 
 2. To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** and follow the prompts. 
-3. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear. 
+3. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear. 
 	a. Click on the Windows ".msi" package. 
 	b. Accept the end-user license agreement to begin the download.
 4. When the download completes, launch the installer and follow the prompts. After installation, a screen similar to the image below appears. 
@@ -73,7 +73,7 @@ Windows instructions continue in the "Deployment to Device(s)" section, below.
 -----
 
 ### Mac OS X Installation
-1. Visit the [Enterprise Browser download page](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=enterprise%20browser) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
+1. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
  	a. Click on the Mac OS X ".dmg" package. 
 	b. Accept the end-user license agreement to begin the download.
@@ -175,7 +175,7 @@ Requirements for using the Enterprise Browser Installer on a Windows system to t
 * A path to `adb.exe` in the host system's environment variable
 
 ####STEP 1: Get USB drivers
-Visit the [Zebra Support Portal](https://portal.motorolasolutions.com/Support/US-EN/Search?searchType=simple&searchTerm=android%20usb%20drivers), download and install the latest driver from the list. 
+Visit the [Zebra Support Portal](https://www.zebra.com/us/en/support-downloads/software/drivers/android-usb-driver.html), download and install the latest driver from the list. 
 
 For non-Zebra hardware, visit [Google’s OEM USB Driver page](http://developer.android.com/tools/extras/oem-usb.html) for instructions and links to OEM drivers for the brand of device.
 
@@ -331,7 +331,7 @@ If you installed the persistent version of Enterprise Browser, it will not be re
 ### Android
 Use Android Settings applet to remove the Enterprise Browser from the device.-->
 
-<!-- To install the drivers for that device. Usually this is done by simply plugging the device into the machine. Most of the time, the device driver will install automatically and you'll be good to go. If not, you'll need to download the drivers for that device. To get the drivers for your device, you'll need to find the device page on [motorolasolutions.com](http://www.motorolasolutions.com/). The best way to do this is enter your device's model number into the search bar at the top of the landing page. Once you have found your device, you should see a tab to download software. For instance, the drivers for the TC55 are [here](http://goo.gl/mjrqMM).
+<!-- To install the drivers for that device. Usually this is done by simply plugging the device into the machine. Most of the time, the device driver will install automatically and you'll be good to go. If not, you'll need to download the drivers for that device. To get the drivers for your device, you'll need to find the device page on [motorola solutions URL removed. The best way to do this is enter your device's model number into the search bar at the top of the landing page. Once you have found your device, you should see a tab to download software. For instance, the drivers for the TC55 are [here](http://goo.gl/mjrqMM).
 
 The page you want should look something like this:
 

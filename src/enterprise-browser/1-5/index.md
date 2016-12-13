@@ -25,6 +25,8 @@ menu:
       url: /enterprise-browser/1-5/api
     - icon: fa fa-search
       url: /enterprise-browser/1-5/search
+    - icon: fa fa-download
+      url: /enterprise-browser/1-5/download
 product: Enterprise Browser
 productversion: '1.5'
 ---

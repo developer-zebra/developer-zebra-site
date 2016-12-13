@@ -17,7 +17,7 @@ Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge p
 
 **To use DataWedge from within Enterprise Browser apps**: 
 
-1. Go to the [Enterprise Browser 1.4 download page](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=101080&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3Denterprise%20browser%201.4) and get the following two DataWedge (`.DB`) profiles: 
+1. Go to the [Enterprise Browser download page](https://https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and get the following two DataWedge (`.DB`) profiles: 
 	* **dwprofile_EnterpriseBrowser.db**
 	* **dwprofile_RhoElements.db**
 2. Copy the profiles to the `Android\data\com.symbol.datawedge\files` directory on the device, replacing existing files, if any. 

@@ -6,11 +6,13 @@ layout: guide.html
 ---
 ##Overview 
 
-The DataWedge app is included on every Zebra device and makes it possible to fetch barcode data from within an Enterprise Browser application without using the Enterprise Browser APIs. This guide explains how to configure an EB application to scan and acquire barcode data using DataWedge, which then enters the captured data as keystrokes into any EB input field. 
+The DataWedge app (included on every Zebra device) makes it possible to fetch barcode data from within an Enterprise Browser application without using the Enterprise Browser APIs. This guide explains how to configure an EB app to scan and acquire barcode data using DataWedge, which then enters the captured data as keystrokes into any EB input field. 
 
 **Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Enterprise Browser Barcode APIs will be inoperable. Likewise, an Enterprise Browser app that uses Barcode APIs will prevent other apps (including DataWedge) from accessing the scanner. This guide explains how to take control of a device's scanner hardware and how to subsequently release it to other apps. 
 
 **See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/5-0/guide/about/)** 
+
+-----
 
 ###Use DataWedge for Scanning
 Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge profiles to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
@@ -18,8 +20,8 @@ Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge p
 **To use DataWedge from within Enterprise Browser apps**: 
 
 1. **Click each of the links below** to download the two required DataWedge (`.db`) profiles: 
-	* **[Download dwprofile-enterprisebrowser.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-enterprisebrowser.db)**
-	* **[Download dwprofile-RhoElements.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-rhoelements.db)**
+	* [Download "dwprofile-enterprisebrowser.db"](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-enterprisebrowser.db)
+	* [Download "dwprofile-RhoElements.db"](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-rhoelements.db)
 2. **Rename the files**, replacing the dash (-) character with an underscore (_) character: so they are named: 
     * `dwprofile_EnterpriseBrowser.db` and `dwprofile_RhoElements.db` 
 3. Copy the renamed profiles to the `/Android/data/com.symbol.datawedge/files` directory on the device, replacing existing files (if any). 

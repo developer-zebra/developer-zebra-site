@@ -22,7 +22,7 @@ Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge p
 1. **Click each of the links below** to download the two required DataWedge (`.db`) profiles: 
     * [Download dwprofile-enterprisebrowser.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-enterprisebrowser.db)
     * [Download dwprofile-RhoElements.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-rhoelements.db)
-2. **Rename the files**, replacing the dash (-) character with an underscore (_) character. The files must be named as follows: 
+2. **Rename the files**, replacing the dash (-) character with an underscore (_) character. The files must be named as follows:  
     * `dwprofile_EnterpriseBrowser.db` and `dwprofile_RhoElements.db` 
 3. **Copy the renamed profiles to the device** into the `/Android/data/com.symbol.datawedge/files` directory, replacing existing files (if any). 
 4. On the device, **install the Enterprise Browser app that will be using DataWedge** (if not already installed). 

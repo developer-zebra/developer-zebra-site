@@ -14,7 +14,7 @@ To see the layout, view through a desktop browser. To see the APIs in action, vi
 
 1. Identify the code for the desired API 
 2. Right-click on the link **select "Copy Link Address"** 
-3. Paste the link into the [&lt;StartPage&rt; parameter](../configreference/#startpage) in the `Config.xml` file 
+3. Paste the link into the [&lt;StartPage &rt; parameter](../configreference/#startpage) in the `Config.xml` file 
 4. **Launch Enterprise Browser** to see how the Sample App works.   
 
 [Config Editor utility guide](../ConfigEditor)

@@ -20,7 +20,7 @@ This section requires a basic understanding of the workings of Enterprise Browse
 
 -----
 ## Using Sample Apps
-Tapping on the sample-app links below from a desktop browser will display its layout and controls but the API will be inoperative. **To see how a sample app and its API works, it must be opened from within Enterprise Browser**. This can be done either by navigating in EB to the page using its URL, or setting the URL as EB app's start page through the &lt;StartPage> parameter in the `Config.xml` file. The latter process is explained below. 
+Tapping on a sample app (from a desktop browser) using one of the links below will display the app's layout and controls but its API will be inoperative. **To see how the API works, it must be opened from within Enterprise Browser**. This can be done either by using EB to navigate to the page's URL, or setting the URL as EB's start page (through the &lt;StartPage> parameter in the `Config.xml` file). The latter process is explained below.
 
 **To activate a sample app in Enterprise Browser**:
 
@@ -35,88 +35,97 @@ Tapping on the sample-app links below from a desktop browser will display its la
 ### Barcode App
 Enumerates all the scanning devices currently attached to the device and lists them for selection as the default scanner.    
 
-[Enterprise Browser](../../../samples/barcode/EB_Barcode_API.html)
+[For Enterprise Browser](../../../samples/barcode/EB_Barcode_API.html)
 
-[Pocket Browser](../../../samples/barcode/PB_Scanner_API.html)
+[For Pocket Browser](../../../samples/barcode/PB_Scanner_API.html)
 
-[RhoElements](../../../samples/barcode/RE_Scanner_API.html)
+[For RhoElements](../../../samples/barcode/RE_Scanner_API.html)
 
 -----
 
 ### Battery App
-[Enterprise Browser](../../../samples/battery/BatteryCommAPI.html)
 
-[Pocket Browser](../../../samples/battery/BatteryPB.html)
+[For Enterprise Browser](../../../samples/battery/BatteryCommAPI.html)
 
-[RhoElements (correct?)](../../../samples/battery/Battery2.2API.html)
+[For Pocket Browser](../../../samples/battery/BatteryPB.html)
+
+[For RhoElements (correct?)](../../../samples/battery/Battery2.2API.html)
 
 -----
 
 ### Camera App
-[Enterprise Browser](../../../samples/camera/CameraCommonAPI.html)
 
-[Pocket Browser](../../../samples/camera/CameraPB.html)
+[For Enterprise Browser](../../../samples/camera/CameraCommonAPI.html)
 
-[RhoElements](../../../samples/camera/Camera2.2API.html)
+[For Pocket Browser](../../../samples/camera/CameraPB.html)
+
+[For RhoElements](../../../samples/camera/Camera2.2API.html)
 
 -----
 
 ### ezNFC App
-[Enterprise Browser](../../../samples/eznfc/ezNFC_CommonAPI.html)
+
+[For Enterprise Browser](../../../samples/eznfc/ezNFC_CommonAPI.html)
 
 -----
 
 ### Intent App
-[Enterprise Browser](../../../samples/Intent/intent.html)
+
+[For Enterprise Browser](../../../samples/Intent/intent.html)
 
 -----
 
 ### KeyCapture App
-[Enterprise Browser](../../../samples/keycapture/KeyCommAPI.html)
 
-[Pocket Browser](../../../samples/keycapture/KeyPB.html)
+[For Enterprise Browser](../../../samples/keycapture/KeyCommAPI.html)
 
-[RhoElements](../../../samples/keycapture/Key2.2API.html)
+[For Pocket Browser](../../../samples/keycapture/KeyPB.html)
+
+[For RhoElements](../../../samples/keycapture/Key2.2API.html)
 
 [WHO KNOWS?](../../../samples/keycapture/Remap.html)
 
 -----
 
 ### Printer App
-**For Enterprise Browser only**, use these APIs to   
+**For Enterprise Browser only**, use these APIs to search for a printer using the technology indicated. 
 
-[Bluetooth Enterprise Browser](../../../samples/printer/BT_CommonAPI.html)
+[Bluetooth For Enterprise Browser](../../../samples/printer/BT_CommonAPI.html)
 
-[USB Enterprise Browser](../../../samples/printer/USB_CommonAPI.html)
+[USB For Enterprise Browser](../../../samples/printer/USB_CommonAPI.html)
 
-[Wi-Fi Enterprise Browser](../../../samples/printer/WIFI_CommonAPI.html)
+[Wi-Fi For Enterprise Browser](../../../samples/printer/WIFI_CommonAPI.html)
 
-[Adaptive Printer Driver (APD)](../../../samples/printer/APD_2_2API.html)
+[For Adaptive Printer Driver (APD)](../../../samples/printer/APD_2_2API.html)
 
 -----
 
 ### Signal App
-[Enterprise Browser](../../../samples/signal/SignalCommAPI.html)
 
-[Pocket Browser](../../../samples/signal/SignalPB.html)
 
-[RhoElements](../../../samples/signal/Signal2.2API.html)
+[For Enterprise Browser](../../../samples/signal/SignalCommAPI.html)
+
+[For Pocket Browser](../../../samples/signal/SignalPB.html)
+
+[For RhoElements](../../../samples/signal/Signal2.2API.html)
 
 -----
 
 ### Signature App
-[Enterprise Browser](../../../samples/signature/SignatureCommAPI.html)
 
-[Pocket Browser](../../../samples/signature/SignaturePB.html)
 
-[RhoElements](../../../samples/signature/Signature2.2API.html)
+[For Enterprise Browser](../../../samples/signature/SignatureCommAPI.html)
+
+[For Pocket Browser](../../../samples/signature/SignaturePB.html)
+
+[For RhoElements](../../../samples/signature/Signature2.2API.html)
 
 -----
 
 ## Accessing the Code
-To view or use the source code contained a sample app, simply view it through a desktop browser to expose and/or save its source code using the steps below. 
+To view or use the source code contained in a sample app, simply view it through a desktop browser and expose and/or save its source code using the steps below.  Alternatively, [download EB_SampleApps.zip](../../../samples/EB_SampleApps.zip), which includes all sample apps shown here plus the JavaScript API modules required to make them work. 
 
-**To access the source code of a sample app**:
+**To view the source code of an individual sample app**:
 
 &#49;. Using a desktop browser, **click the link for the sample app and API** on the platform of interest. 
 
@@ -125,7 +134,7 @@ To view or use the source code contained a sample app, simply view it through a 
 _Chrome and Firefox offer a "View Page Source" right-click option_. 
 <br>
 
-&#51;. **View and/or copy the desired source code** and paste it where needed:  
+&#51;. **View and/or copy.save the desired source code** as needed:  
 <img style="height:450px" src="camera_source.png"/>
 _In Firefox, select Tools -> Web Developer -> Page Source_. 
 <br>

@@ -20,7 +20,7 @@ Enabling DataWedge for use by an Enterprise Browser app requires a DataWedge pro
 **To use DataWedge from within Enterprise Browser apps**: 
 
 1. **Click the link below** to download the required DataWedge (`.db`) profile: 
-    * [Download dwprofile_enterprisebrowser.db](https://www.zebra.com/us/en/support-downloads/eula/unrestricted-eula.-227178c9720c025483893483886ea540bd07dd0f9873752cf891686eb495040ba85f97bf163f9fda48d8c5a1d92bf58a51650c5e903b06834810c080b569398a5aa9efb4c258c682a046313dd240609ad5d68e3e0231346c29b4b2c0e54b753536a7a620fa706e6.html)
+    * [Download dwprofile_enterprisebrowser.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
 2. **Copy the profile to the device** into the `/Android/data/com.symbol.datawedge/files` directory, replacing the existing file (if any). 
 3. On the device, **install the Enterprise Browser app that will be using DataWedge** (if not already installed). 
 4. **Start DataWedge** on the device. 

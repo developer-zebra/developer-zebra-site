@@ -97,13 +97,13 @@ Devices running Windows Mobile and Windows CE as well as Zebra Technologies Andr
 
 The first page of the licensing wizard has a "Cancel" button. Clicking it allows you to evaluate the software. While you are evaluating the software, the functionality is not restricted.
 
-The licensing wizard assumes you have already obtained a license via the [Zebra Technologies software licensing website](https://softwarelicensing.motorolasolutions.com). The wizard will guide you through applying your license. There are two options available.
+The licensing wizard assumes you have already obtained a license via the [Zebra Technologies software licensing website](https://softwarelicensing.zebra.com). The wizard will guide you through applying your license. There are two options available.
 
 * Internet Licensing.  This only requires you to know the order number associated with your RhoElements licenses order.  Provided your device has an internet connection not obstructed by a proxy and can contact the licensing server your device will be licensed automatically.
 
 * Manual Licensing.  You can also print off the license from the licensing website and manually key in your company name and license number. If you are using a Zebra Technologies device you will be able to scan the information rather than keying it in manually.
 
-More verbose instructions on licensing your device and how to interact with the licensing server are available [within the Zebra Technologies software licensing website](https://softwarelicensing.motorolasolutions.com/documentation/index.html#licensingRuntime).
+More verbose instructions on licensing your device and how to interact with the licensing server are available [within the Zebra Technologies software licensing website](https://softwarelicensing.zebra.com/documentation/index.html#licensingRuntime).
 
 ## Applying a Device License via a File
 

@@ -5,17 +5,17 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview 
-The Config Editor is a Windows utility that provides a quick and easy way to edit and deploy the `Config.xml` file, which controls the runtime behavior of Enterprise Browser apps. The tool can pull the `Config.xml` file from a connected device, describe the behavior of any selected XML tag, display valid settings, parse and validate previously stored values, save changes locally and deploy the file back to a connected device running Android or Windows Mobile/CE. 
+The Config Editor is a Windows utility that provides a quick and easy way to edit and deploy the `Config.xml` file, which controls the runtime behavior of Enterprise Browser apps. The tool can pull the `Config.xml` file from a connected device, allows editing of any setting and pushed the file back again. It also describes the behavior of any selected XML tag, displays valid settings, parses and validates previously stored values and can save changes locally. It supports devices running Android or Windows Mobile/CE. 
 
 The Desktop Config Editor is included with Zebra Enterprise Browser 1.3 and higher. 
 
 ### QUICK STEPS
 The basic steps to edit a `Config.xml` file from a PC attached to the target device: 
-1. Select **File>Open** or **Action>Pull From Device>[Device name]**.
+1. Select **File->Open** or **Action->Pull From Device->[Device name]**.
 2. **Open the Config.xml file** to be edited. 
 3. In Config Editor window, navigate tree view to **locate and edit tag value(s)** as required.
 4. Press **Save Config XML** button to save changes.
-5. Use **Action>Push to Device>[Device name]** to deploy saved file to device. 
+5. Use **Action->Push to Device->[Device name]** to deploy saved file to device. 
 
 ## Prerequisites
 * Windows development host
@@ -30,14 +30,14 @@ The basic steps to edit a `Config.xml` file from a PC attached to the target dev
 
 ### Open a file stored on a development host
 
-* **Select File>Open File** from the menu bar.
+* **Select FileOpen File** from the menu bar.
 * Browse to and **open the Config.xml file** to be edited.
 
 ![img](../../images/Utilities/ConfigEditor_02.png)
 
 ### Open a file stored on a connected device 
 
-* **Select Action>Pull From Device>[Device name]** from the menu bar.
+* **Select Action->Pull From Device->[Device name]** from the menu bar.
 
 The app's Config.xml file will be pulled from the selected device, stored locally on the development host, and opened in the utility for editing. 
 
@@ -60,11 +60,11 @@ Config Editor indicates that unsaved changes are present by placing an asterisk 
 
 ![img](../../images/Utilities/ConfigEditor_05.png)
 
-* To push changes to the device, **select Action>Push to Device>[Device name]** from the menu bar.
+* To push changes to the device, **select ActionPush to Device->[Device name]** from the menu bar.
 
 ![img](../../images/Utilities/ConfigEditor_06.png)
 
-If multiple Config.xml files are desired, for example to test the behavior of various settings, select **File>Save File As** to save and/or rename additional copies of the Config.xml file as needed. 
+If multiple Config.xml files are desired, for example to test the behavior of various settings, select **File->Save File As** to save and/or rename additional copies of the Config.xml file as needed. 
 
 ![img](../../images/Utilities/ConfigEditor_07.png)
 

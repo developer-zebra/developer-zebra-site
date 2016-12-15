@@ -8,9 +8,7 @@ productversion: '1.5'
 
 Sample apps are intended to demonstrate basic functionality of common Enterprise Browser APIs and show how to integrate API code into an HTML page. Apps are fully functional only when launched using Enterprise Browser, but their layouts can be viewed from the desktop. 
 
-Use of the sample apps requires a basic understanding of Enterprise Browser and its `Config.xml` runtime configuration file. See the [Config Editor Utility guide](../ConfigEditor) for more information. To learn EB basics, see the [About page](../about). 
-
-Also see the [EB Feature Demo](../featuredemo) app. 
+Use of the sample apps requires a basic understanding of Enterprise Browser and its `Config.xml` runtime configuration file. See the [Config Editor Utility guide](../ConfigEditor) for more information. To learn EB basics, see the [About page](../about). Also see the [EB Feature Demo](../featuredemo) app. 
 
 **Notes**:
 

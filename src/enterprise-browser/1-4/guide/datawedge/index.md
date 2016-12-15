@@ -15,32 +15,34 @@ The DataWedge app (included on every Zebra device) makes it possible to fetch ba
 -----
 
 ###Use DataWedge for Scanning
-Enabling DataWedge for use by an Enterprise Browser app requires two DataWedge profiles to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
+Enabling DataWedge for use by an Enterprise Browser app requires a DataWedge profile to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
 
 **To use DataWedge from within Enterprise Browser apps**: 
 
-1. **Click each of the links below** to download the two required DataWedge (`.db`) profiles: 
-	* [Download dwprofile-enterprisebrowser.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-enterprisebrowser.db)
-	* [Download dwprofile-RhoElements.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-rhoelements.db)
-2. **Rename the files**, replacing the dash (-) character with an underscore (_) character. The files must be named as follows:  
-    * `dwprofile_EnterpriseBrowser.db` and `dwprofile_RhoElements.db` 
-3. **Copy the renamed profiles to the device** into the `/Android/data/com.symbol.datawedge/files` directory, replacing existing files (if any). 
-4. On the device, **install the Enterprise Browser app that will be using DataWedge** (if not already installed). 
-5. **Start DataWedge** on the device. 
-6. In DataWedge, select **Menu->Settings->Import Profile**. A list of available profiles appears ([as shown on this example screen](http://techdocs.zebra.com/datawedge/5-0/guide/advanced#importaprofile)).
-7. From the list, **tap on one of the profiles** copied in Step 2. Focus returns to the previous screen and a confirmation message appears. 
-8. **Repeat Steps 6 and 7** to import the other profile. 
-9. **Tap the BACK button** to return to the DataWedge Profiles list. The "EnterpriseBrowser" profile is shown and enabled by default (the other is hidden). 
+1. **Click the link below** to download the required DataWedge (`.db`) profile: 
+    * [Download dwprofile_enterprisebrowser.db](https://www.zebra.com/us/en/support-downloads/eula/unrestricted-eula.-227178c9720c025483893483886ea540bd07dd0f9873752cf891686eb495040ba85f97bf163f9fda48d8c5a1d92bf58a51650c5e903b06834810c080b569398a5aa9efb4c258c682a046313dd240609ad5d68e3e0231346c29b4b2c0e54b753536a7a620fa706e6.html)
+2. **Copy the profile to the device** into the `/Android/data/com.symbol.datawedge/files` directory, replacing the existing file (if any). 
+3. On the device, **install the Enterprise Browser app that will be using DataWedge** (if not already installed). 
+4. **Start DataWedge** on the device. 
+5. In DataWedge, select **Menu->Settings->Import Profile**. A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
+6. From the list, **tap on the profile copied in Step 2**. When the profile is imported, focus returns to the previous screen and a confirmation message appears. 
+7. **Tap the BACK button** to return to the DataWedge Profiles list. The "EnterpriseBrowser" profile is shown and enabled by default. 
 
-**For scanning to be enabled, the following additional conditions must also BOTH be TRUE**:
+**For scanning to be enabled, the following additional conditions also must BOTH be TRUE**:
 
 * **The &lt;usedwforscanning&gt; tag in the EB app's** `config.xml` **file must contain a value of "1"** 
 * **DataWedge and the EnterpriseBrowser profile must be enabled** whenever using DataWedge from EB
 
 To view and/or edit the `Config.xml`, see the [Config Editor Guide](../ConfigEditor). 
 
-**All Enterprise Browser apps configured in this way will use DataWedge for scanning**. 
+**All Enterprise Browser apps configured in this way will use DataWedge for scanning**.
 
+<!--
+* [Download dwprofile-RhoElements.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile-rhoelements.db)
+2. **Rename the files**, replacing the dash (-) character with an underscore (_) character. The files must be named as follows:  
+    * `dwprofile_EnterpriseBrowser.db` and `dwprofile_RhoElements.db` 
+7. **Tap the BACK button** to return to the DataWedge Profiles list. The "EnterpriseBrowser" profile is shown and enabled by default (the other is hidden). 
+-->
 -----
 
 ###Enable APIs for Scanning
@@ -139,4 +141,4 @@ This API provides backward compatibility for PocketBrowser and RhoElements appli
     :::javascript
     scanner.enable();
 
-**See also: [DataWedge User Guide](/datawedge/5-0/guide/about/)** 
+**See also: [DataWedge User Guide](../../../../datawedge)** 

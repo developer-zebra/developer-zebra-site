@@ -1,6 +1,6 @@
 ---
 title: SimulScan Pre-built Templates
-description: Zebra provides pre-built SimulScan Templates for specific industries that can be used as-is or modified as needed. All Templates can be downloaded from the /Public/templates folder of the Template Builder web site. Zebra assumes no responsibility for Templates. 
+description: Zebra provides pre-built SimulScan Templates for specific industries that can be used as-is or modified as needed. All Templates can be downloaded from the /Public/templates folder of the Template Builder web site.
 layout: list-apis.html
 automenu:
   items:
@@ -14,12 +14,17 @@ automenu:
           url: ../setup/#accessthroughdatawedge
     - title: Automotive
       items:
-        - title: LIVE SAMPLE
+        - title: AIAG templates
           url: auto
-        - title: Manufacturing
+        - title: (under construction)
           url: 
-        - title: Receiving
+        - title: (under construction)
           url: 
+product: SimulScan
+productversion: '1.1'
+---
+
+<!--
     - title: Manufacturing
       items:
         - title: sample
@@ -44,7 +49,4 @@ automenu:
           url: stuff
         - title: Gift Shop
           url: giftshop
-product: SimulScan
-productversion: '1.1'
----
-
+-->

@@ -16,7 +16,7 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 ####or...
 
 * **Scanning is frequent** in the organization, and...
-* **Scanned forms are of a fixed layout** and
+* **Scanned forms are of a fixed layout**, and...
 * **Forms have well-defined borders**.
 
 ----
@@ -42,7 +42,12 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 -----
 
 ## How it Works
-SimulScan works through Templates, which define "Form Regions of interest" on Documents to be scanned, "Field Regions of interest" within forms, and the types of data (barcode, text, etc.) to be extracted from each Field. **SimulScan can be accessed** either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
+SimulScan works through Templates, which define "Form Regions of interest" on Documents to be scanned, "Field Regions of interest" within forms, and the types of data (barcode, text, etc.) to be extracted from each Field. 
+
+![img](regions_of_interest.png)
+<br>
+
+SimulScan is accessed either by selecting it as an Input Plug-in using Zebra's free [DataWedge](../../../../datawedge) service, or called directly from within an Android app using the [SimulScan APIs](../../api). SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
 
 **SimulScan is free** when used with DataWedge or from a custom app to scan only barcodes. A per-device license is required access to OCR or OMR. For licensing details, please see the [Licensing guide](../license). 
 

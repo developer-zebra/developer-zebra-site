@@ -8,11 +8,11 @@ productversion: '1.1'
 
 #### SimulScan can be used through: 
 
-* **[DataWedge](../../../../datawedge)**, which is covered here
-* **A custom Android app**, which is covered in the [SimulScan API guide](../../api)
+* **[DataWedge](../../../../datawedge)**, which is covered below
+* **A custom Android app**, described in the [SimulScan API guide](../../api)
 * **The [SimulScan Demo App](../demo)**, which exposes all features except the ability to save acquired data
 
-**To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan)**, simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. To get started immediately, **[skip the Template intro](#accessthroughdatawedge)** if already familiar with SimulScan and Templates. Otherwise, read the short [About Templates](#intrototemplates) section below and the [About SimulScan page](../about) before proceeding. 
+**To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan)**, simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. To get started immediately, **[skip the Template intro](#accessthroughdatawedge)**, which covers the basics of SimulScan and Templates. To learn more, read the short intro below and the [About SimulScan page](../about) before proceeding. 
 
 -----
 

@@ -5,7 +5,7 @@ product: SimulScan
 productversion: '1.1'
 ---
 ##Overview
-Automotive Templates have been created to serve THIS, THAT and the OTHER segment. All Templates can be found on the `/Public/templates` folder of the [Template Builder web site](http://simulscan.zebra.com). **Zebra assumes no responsibility for Templates**. 
+Automotive Templates have been created to serve specific industry segments. All Templates can be found in the `/Public/templates` folder of the [Template Builder web site](http://simulscan.zebra.com). 
 
 -----
 

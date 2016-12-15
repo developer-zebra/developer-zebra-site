@@ -10,6 +10,10 @@ Template Builder is a web-based tool for defining the information captured by Si
 
 Most acquisition tasks involve capturing data from printed documents. These "target" documents often vary in size, shape and layout, and present a challenge for accurate data acquisition. Templates solve this problem by "teaching" SimulScan about the documents it will encounter, and defining how to scan and process data for each instance of that target document. 
 
+![img](regions_of_interest.png)
+
+SimulScan Templates define "Form Regions of interest" on Documents to be scanned, "Field Regions of interest" within forms, and the types of data (barcode, text, etc.) to be extracted from each Field. Templates are used in all SimulScan modes. They control its ability to decode and parse data, and determine how acquired data can be consumed by an application. 
+
 <img style="height:350px" src="msi_reader.png"/>
 *A typical barcode-only form, a common and effective SimulScan usage scenario*.
 <br>

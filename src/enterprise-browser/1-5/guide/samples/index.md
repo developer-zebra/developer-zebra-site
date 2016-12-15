@@ -6,19 +6,24 @@ productversion: '1.5'
 ---
 ## Overview 
 
-Sample apps are intended to demonstrate the basic functionality of common Enterprise Browser APIs and provide a basic understanding of how to integrate API code into an HTML page. Apps are fully functional only when launched using Enterprise Browser. 
+Sample apps are intended to demonstrate basic functionality of common Enterprise Browser APIs and show how to integrate API code into an HTML page. Apps are fully functional only when launched using Enterprise Browser, but their layouts can be viewed from the desktop. 
 
-This section requires a basic understanding of the workings of Enterprise Browser and its APIs and `Config.xml` runtime configuration file. For help editing this file, see the [Config Editor Utility guide](../ConfigEditor). 
+Use of the sample apps requires a basic understanding of Enterprise Browser and its `Config.xml` runtime configuration file. See the [Config Editor Utility guide](../ConfigEditor) for more information. To learn EB basics, see the [About page](../about). 
 
-**Related Guides**
+Also see the [EB Feature Demo](../featuredemo) app. 
 
-* **[API Usage Guide](../apioverview) -** specifics of working with APIs
-* **[API Compatibility Matrix](../../guide/compatibility) -** which APIs work with which platforms
-* **[Config.xml Reference](../configreference) -** how to control an EB app's runtime settings
-* **[Migration Guides](../) -** moving to EB from Pocket Browser or RhoElements
-* **[Config Editor Utility guide](../ConfigEditor) -** an easy way to update config files
+**Notes**:
+
+- The Adaptive Printer Driver (APD) is supported on Android and Windows Mobile/CE devices.
+- Printing an image requires a file called `image.png` to be located on the device. 
+- Printing images on a Windows Mobile/CE device requires the sample code to be modified.
+- The `ebapi-modules.js` file is required for Enterprise Browser 1.x APIs to function on Android and Windows Mobile/CE devices. 
+- The `elements.js` file is required for Pocket Browser and RhoElements APIs to function on Android devices. 
+- See the [Accessing the Code section](#accessingthecode) (below) for more information about placement of API module files. 
+- APIs for EB 1.x are sometimes referred to as "Common" APIs.
 
 -----
+
 ## Using Sample Apps
 Tapping on a sample app (from a desktop browser) using one of the links below will display the app's layout and controls but its API will be inoperative. **To see how the API works, it must be opened from within Enterprise Browser**. This can be done either by using EB to navigate to the page's URL, or setting the URL as EB's start page (through the &lt;StartPage> parameter in the `Config.xml` file). The latter process is explained below.
 
@@ -26,14 +31,14 @@ Tapping on a sample app (from a desktop browser) using one of the links below wi
 
 1. **Identify the sample app and API** on the platform of interest. 
 2. Right-click on its link and **select "Copy Link Address."** 
-3. **Paste the link into the [&lt;StartPage> parameter](../configreference/#startpage)** of the `Config.xml` file ([Help](../ConfigEditor)). 
+3. **Paste the link into the [&lt;StartPage> parameter](../configreference/#startpage)** of the `Config.xml` file. 
 4. **Push the updated** `config.xml` **file to the device**.  
 5. **Launch Enterprise Browser** and test the sample app.
 
 -----
 
 ### Barcode App
-Enumerates all the scanning devices currently attached to the device and lists them for selection as the default scanner.    
+Demonstrates how to use the Barcode or Scanner API to enumerate all the scanning devices currently attached to the device and to scan a barcode and fetch the decoded data via callback. Enterprise Browser uses the [Barcode API](../../api/barcode). The corresponding API for Pocket Browser and RhoElements is called [Scanner](../../api).  
 
 [For Enterprise Browser](../../../samples/barcode/EB_Barcode_API.html)
 
@@ -44,16 +49,18 @@ Enumerates all the scanning devices currently attached to the device and lists t
 -----
 
 ### Battery App
+Demonstrates how to use the Battery API to retrieve battery status and show/hide the battery icon.
 
 [For Enterprise Browser](../../../samples/battery/BatteryCommAPI.html)
 
 [For Pocket Browser](../../../samples/battery/BatteryPB.html)
 
-[For RhoElements (correct?)](../../../samples/battery/Battery2.2API.html)
+[For RhoElements](../../../samples/battery/Battery2.2API.html)
 
 -----
 
 ### Camera App
+Demonstrates how to use the Camera or Imager API to take a picture.
 
 [For Enterprise Browser](../../../samples/camera/CameraCommonAPI.html)
 
@@ -63,32 +70,35 @@ Enumerates all the scanning devices currently attached to the device and lists t
 
 -----
 
-### ezNFC App
+### EzNFC App
+Demonstrates how to use the EzNFC API to enable/disable the NFC Adapter and read NFC Tags. **This API is available for only Android devices**.
 
 [For Enterprise Browser](../../../samples/eznfc/ezNFC_CommonAPI.html)
 
 -----
 
 ### Intent App
+Demonstrates how to use the Intent API to send an Intent and how to receive an Intent via Broadcast receiver. **This sample code is intended for Android devices only** but will operate on Windows Mobile/CE devices with modification.  
 
 [For Enterprise Browser](../../../samples/Intent/intent.html)
 
 -----
 
 ### KeyCapture App
+Demonstrates how to use the KeyCapture API to capture and remap keys.
 
 [For Enterprise Browser](../../../samples/keycapture/KeyCommAPI.html)
 
 [For Pocket Browser](../../../samples/keycapture/KeyPB.html)
 
-[For RhoElements](../../../samples/keycapture/Key2.2API.html)
+[Remap for Pocket Browser](../../../samples/keycapture/Remap.html)
 
-[WHO KNOWS?](../../../samples/keycapture/Remap.html)
+[For RhoElements](../../../samples/keycapture/Key2.2API.html)
 
 -----
 
 ### Printer App
-**For Enterprise Browser only**, use these APIs to search for a printer using the technology indicated. 
+Demonstrates how to use the EB 1.x Printer API to find a printer and output text or images via Bluetooth, USB and Wi-Fi **on Enterprise Browser for Android only**. The APD API works to print a text string with or without a label with EB, PB and RE on Android devices and with EB on Windows Mobile/CE devices. Printing an image from a Windows Mobile/CE device requires modifications to this sample code.
 
 [Bluetooth For Enterprise Browser](../../../samples/printer/BT_CommonAPI.html)
 
@@ -96,12 +106,14 @@ Enumerates all the scanning devices currently attached to the device and lists t
 
 [Wi-Fi For Enterprise Browser](../../../samples/printer/WIFI_CommonAPI.html)
 
-[For Adaptive Printer Driver (APD)](../../../samples/printer/APD_2_2API.html)
+[Adaptive Printer Driver (APD)](../../../samples/printer/APD_2_2API.html)
+
+**Note**: Printing an image from an Android device requires a file called `image.png` to be stored in `/<internalstorage>/sdcard0/Pictures/` on the device. 
 
 -----
 
 ### Signal App
-
+Demonstrates how to use the Signal or SignalIndicators API to retrieve the signal status and to show/hide the signal icon. Enterprise Browser uses the [SignalIndicators API](../../api/signalindicators). The corresponding API for Pocket Browser and RhoElements is called [Signal](../../api). 
 
 [For Enterprise Browser](../../../samples/signal/SignalCommAPI.html)
 
@@ -112,7 +124,7 @@ Enumerates all the scanning devices currently attached to the device and lists t
 -----
 
 ### Signature App
-
+Demonstrates how to use the Signature or SignatureCapture API to capture, show, hide and clear a signature. Enterprise Browser uses the [Signature API](../../api/signature). The corresponding API for Pocket Browser and RhoElements is called [SignatureCapture](../../api). 
 
 [For Enterprise Browser](../../../samples/signature/SignatureCommAPI.html)
 
@@ -123,7 +135,7 @@ Enumerates all the scanning devices currently attached to the device and lists t
 -----
 
 ## Accessing the Code
-To view or use the source code contained in a sample app, simply view it through a desktop browser and expose and/or save its source code using the steps below.  Alternatively, [download EB_SampleApps.zip](../../../samples/EB_SampleApps.zip), which includes all sample apps shown here plus the JavaScript API modules required to make them work. 
+To view or use the source code contained in a sample app, simply view it through a desktop browser and expose and/or save its source code using the steps below. Alternatively, [download EB_SampleApps.zip](../../../samples/EB_SampleApps.zip), which includes all sample apps shown here, a web page with links to each and the JavaScript API modules required to make them work. 
 
 **To view the source code of an individual sample app**:
 
@@ -157,4 +169,7 @@ If Enterprise Browser APIs are used, these API files must be present on the devi
 * **[API Compatibility Matrix](../../guide/compatibility) -** which APIs work with which platforms
 * **[Config.xml Reference](../configreference) -** how to control an EB app's runtime settings
 * **[Migration Guides](../) -** moving to EB from Pocket Browser or RhoElements
+* **[Config Editor Utility guide](../ConfigEditor) -** an easy way to update config files
+* **[EB Feature Demo](../featuredemo) -** shows EB features with a polished UI 
+
 

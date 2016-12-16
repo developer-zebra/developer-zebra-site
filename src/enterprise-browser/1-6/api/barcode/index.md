@@ -14,7 +14,7 @@ If the use case involves capturing a single barcode (for example, a pricing kios
 
 * **On the VC70**, the scanner will work only if connected in SSI Mode.
 
-* **EB 1.5 now supports the `decodeSound` method**. A bug in the method prevents apps made with EB 1.4 and earlier from using the method.  
+* **EB 1.5 and higher supports the `decodeSound` method**. A bug in the method prevents apps made with EB 1.4 and earlier from using the method.  
 
 * **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; only one or the other should be used. 
 

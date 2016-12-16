@@ -1,6 +1,6 @@
 ---
 title: PocketBrowser 2.x/3.x Migration Guide
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 ---

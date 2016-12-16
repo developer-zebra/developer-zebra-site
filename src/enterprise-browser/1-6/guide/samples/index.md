@@ -2,7 +2,7 @@
 title: Enterprise Browser Sample Apps
 layout: guide.html
 product: Enterprise Browser
-productversion: '1.5'
+productversion: '1.6'
 ---
 ## Overview 
 

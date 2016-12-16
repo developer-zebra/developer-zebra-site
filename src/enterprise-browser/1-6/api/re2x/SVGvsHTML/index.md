@@ -1,6 +1,6 @@
 ---
 title: SVG and HTML Applications
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 subhead: RhoElements 2.x API

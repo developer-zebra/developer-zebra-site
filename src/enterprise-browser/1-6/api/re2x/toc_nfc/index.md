@@ -38,7 +38,7 @@ automenu:
           url: ..//rhoelements/toc_nfc.md/rhodesapi/NFCTagTechnology_NfcV-api
         - title: NFCTagTechnology
           url: ..//rhoelements/toc_nfc.md/rhodesapi/NFCTagTechnology-api
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

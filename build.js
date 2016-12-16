@@ -629,6 +629,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'enterprise-browser/1-5/'
     }))
         .use(foldermenu({
+        folder: 'enterprise-browser/1-6/'
+    }))
+        .use(foldermenu({
         folder: 'enterprise-keyboard/1-0/'
     }))
        .use(foldermenu({

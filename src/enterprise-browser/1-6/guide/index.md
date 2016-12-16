@@ -61,6 +61,6 @@ automenu:
         - title: TLS/SSL Compliance
           url: compliance
 product: Enterprise Browser
-productversion: '1.5'
+productversion: '1.6'
 ---
 

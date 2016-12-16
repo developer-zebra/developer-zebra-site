@@ -2,7 +2,7 @@
 title: Download Enterprise Browser
 layout: guide.html
 product: Enteprise Browser
-productversion: '1.5'
+productversion: '1.6'
 ---
 
 ## Download

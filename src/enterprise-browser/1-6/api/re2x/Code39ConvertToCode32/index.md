@@ -1,6 +1,6 @@
 ---
 title: Code39convertToCode32 Decoder Setting
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 subhead: RhoElements 2.x API

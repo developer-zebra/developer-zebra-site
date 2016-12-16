@@ -1,6 +1,6 @@
 ---
 title: On-device Configuration
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 ---

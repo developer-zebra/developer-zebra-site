@@ -30,5 +30,5 @@ menu:
     - icon: fa fa-download
       url: /enterprise-browser/1-5/download
 product: Enterprise Browser
-productversion: '1.5'
+productversion: '1.6'
 ---

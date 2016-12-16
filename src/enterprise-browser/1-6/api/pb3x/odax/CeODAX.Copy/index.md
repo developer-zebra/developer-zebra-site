@@ -1,6 +1,6 @@
 ---
 title: CeODAX.Copy Method
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x API

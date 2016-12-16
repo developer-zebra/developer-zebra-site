@@ -36,7 +36,7 @@ automenu:
           url: ../Code128Redundancy
         - title: Code128securityLevel
           url: ../Code128securityLevel
-productversion: '1.5'
+productversion: '1.6'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

@@ -13,7 +13,17 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ## New in v1.6
 
-new features will appear here
+#### Zebra Device Support
+
+[See all supported devices](../about#mobile)
+
+#### New or Updated APIs
+
+#### New Features
+
+#### New Tags
+
+#### New Guides
 
 <!-- 
 Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, and a range of additional new features for Android and Windows Mobile/CE devices.  

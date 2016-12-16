@@ -99,7 +99,7 @@ cellspacing="0" cellpadding="4">
 </div>
 &#42; _Enabled by default_
 
-_**Note**: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section.
+**Note**: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section.
 
 ### Enable/Disable Decoders
 

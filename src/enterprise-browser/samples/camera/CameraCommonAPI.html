@@ -7,9 +7,16 @@
   var camArray = "";
   var cameratype ="";
   var selectedIndexPosition =0;
-  
   var callbackFuncData = function(cbData){
-		document.getElementById('capturedImage').src = cbData.imageUri;
+		if((cbData.imageUri != undefined) || (cbData.imageUri != null)){
+			document.getElementById('capturedImage').style.height = "250px";
+			document.getElementById('capturedImage').style.width = "250px";
+			document.getElementById('capturedImage').src = 'http://localhost:' + EB.System.localServerPort + cbData.imageUri;
+		}else{
+			document.getElementById('capturedImage').style.height = "";
+			document.getElementById('capturedImage').style.width = "";
+			document.getElementById('capturedImage').src = "";
+		}
 	};
   
   function cameraPresent(){
@@ -34,7 +41,7 @@
    
    function takePicture(){
 	var param = {
-		        'outputFormat':'image'
+		        'outputFormat':'image',
 		     };
 	enumData[selectedIndexPosition].takePicture(param, callbackFuncData);
    }
@@ -46,7 +53,7 @@
 		EB.Camera.choosePicture(param, function(cbData){
 						callbackData = cbData;
 						callbackTriggered = true;
-						document.getElementById('choosePictureDiv').src =  cbData.imageUri ;
+						document.getElementById('choosePictureDiv').src =  'http://localhost:' + EB.System.localServerPort + cbData.imageUri; ;
 					});
    }
    

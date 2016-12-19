@@ -1,5 +1,5 @@
 ---
-title: Enterprise Browser Sample Apps
+title: Sample Apps
 layout: guide.html
 product: Enterprise Browser
 productversion: '1.6'

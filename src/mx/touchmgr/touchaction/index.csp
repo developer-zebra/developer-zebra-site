@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "4.2"
 parm:
+  presentif: Device Type is set to "TC55, TC70, or TC75" or "TC51, TC56, TC70x, or TC75x"
   pivotal: No
   name: TouchAction
   type: list
@@ -23,4 +24,4 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
 ---
 
-Used to specify the Touch Mode corresponding to touch-screen sensitivity for the expected usage scenario.
+Used to specify the Touch Mode for a specific set of devices corresponding to touch-screen sensitivity required for an expected usage scenario.

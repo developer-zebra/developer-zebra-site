@@ -6,7 +6,7 @@ layout: guide.html
 ---
 
 ## Overview
-The Enterprise Keyboard (EKB) API for Enterprise Browser provides programmatic access to the Enterprise Keyboard and its settings. To use EKB with an EB app, it must be selected using the Settings panel in the Zebra device. For more information on Enterprise Keyboard features and installation please see the Zebra Enterprise Keyboard documentation. 
+The Enterprise Keyboard API provides programmatic access to Zebra's software keyboard and some of its settings. To use EKB with an Enterprise Browser app, EKB must first be selected using the Settings panel in the Zebra device. Alternatively, EKB also can be activated programmatically using Zebra's [EMDK](../../../../emdk-for-android) development tools, or remotely using [StageNow](../../../../stagenow) or a compatible MDM. See the [Enterprise Keyboard usage guide](../../../../enterprise-keyboard) for details.
 
 **This API is not for use with the standard Android (AOSP) keyboard**.
 
@@ -17,30 +17,28 @@ There are two methods of enabling the EKB API:
 * Include all 'ebapi' modules
 * Include only the required API modules
 
-Both methods are explained below. 
+Both are explained below. 
 
-For either of these methods, one or more files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the Enterprise Browser installation.
+For either method, one or more files must be copied to the device from `/Enterprise Browser/JavaScript Files/Enterprise Browser`, a directory on the computer that contains the Enterprise Browser installation.
 
-### Include all JS API modules
+### Include all API modules
 To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include a reference to the JavaScript modules file in the app. For instance, to include the modules file in the `index.html`, copy it to the same directory as the app's `index.html` file and and add the following line to the HTML's HEAD section:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
+> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the API modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the Remote Notification API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, first include a reference to the `ebapi.js` file in the HTML and then to the additional required API file(s). For instance, to use the Enterprise Keyboard API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
     <script type="text/javascript" charset="utf-8" src="eb.ekb.js"></script>
 
-> In the lines above, notice that `ebapi.js` is included first, followed by `eb.ekb.js`, which is the Enterprise Keyboard API for Enterprise Browser. **This coding is required on any HTML page that calls an individual API**.
+> In the lines above, notice that `ebapi.js` is included first, followed by `eb.ekb.js`, which is the Enterprise Keyboard API for Enterprise Browser. **Similar coding is required on any HTML page that calls an individual API**.
 
 ##Methods
-
-
 
 ### clearLayout()
 Clears the layout set by calling the setLayout API.

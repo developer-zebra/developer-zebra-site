@@ -21,7 +21,7 @@ If the use case involves capturing a single barcode (for example, a pricing kios
 ## Enabling the API
 There are two methods of enabling the Barcode API:
 
-* Include all ebapi modules
+* Include all 'ebapi' modules
 * Include only the required API modules
 
 For either of these methods, one or more files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the Enterprise Browser installation.

@@ -250,7 +250,7 @@ When multiple RhoElememts applications are running the following considerations 
 
 
 ###General
-If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes. On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen.
+If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes. On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the license screen.
 
 ###Omnii XT15
 On the Zebra Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.

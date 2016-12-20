@@ -12,7 +12,7 @@ Logging is hierarchical, and log-event settings in the `Config.xml` file can ove
 -----
 
 ## Enabling Logging
-Logging for an Enterprise Browser app is controlled in the The [Logger section](../configreference/#logger) of the app's `Config.xml` file. 
+Logging for an Enterprise Browser app is controlled in the [Logger section](../configreference/#logger) of the app's `Config.xml` file. 
 
 **The five levels of log messages**:
 

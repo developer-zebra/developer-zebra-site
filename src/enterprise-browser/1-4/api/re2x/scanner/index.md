@@ -241,7 +241,7 @@ When multiple RhoElememts applications are running the following considerations 
 
 
 ###General
-If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes. On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen.
+If the Scanner Meta Tag is used without DecodeEvent, the data will be output as keystrokes. On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the license screen.
 
 
 ###Use Meta Tags Instead of Scanner Object

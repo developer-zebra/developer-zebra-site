@@ -104,7 +104,7 @@ Sample HTML:
 
 To verify that key mappings are functioning properly, we need a way to identify key codes of keys that are being pressed. To do this, we will run the following code on startup to capture the keys and send their value to an element for display. 
 
-* **In the the `keycap.html` file, insert the following code into the upper script section**, which is in the HEAD section: 
+* **In the `keycap.html` file, insert the following code into the upper script section**, which is in the HEAD section: 
 
 Sample JavaScript:
 

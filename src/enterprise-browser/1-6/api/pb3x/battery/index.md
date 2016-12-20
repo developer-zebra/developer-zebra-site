@@ -125,7 +125,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 <td valign="top" class="clsSyntaxCells"><b>Left:[Value]
 				</b></td>
 <td valign="top" class="clsSyntaxCells">Pixel value</td>
-<td valign="top" class="clsSyntaxCells">Sets the horizontal position of the battery indicator in pixels.  If it is negative the then indicator will be moved off screen</td>
+<td valign="top" class="clsSyntaxCells">Sets the horizontal position of the battery indicator in pixels.  If it is negative then indicator will be moved off screen</td>
 <td valign="top" class="clsSyntaxCells">Top left of screen</td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ The Battery META Tag is a tag used to set the attributes of the battery indicato
 --&gt;
 
 &lt;!-- &lt;META HTTP-Equiv="Battery" Content="Visibility:[Value]"&gt; --&gt;      &lt;!-- Sets whether or not the battery indicator is shown --&gt;
-&lt;!-- &lt;META HTTP-Equiv="Battery" Content="Left:[Value]"&gt; --&gt;      &lt;!-- Sets the horizontal position of the battery indicator in pixels.  If it is negative the then indicator will be moved off screen --&gt;
+&lt;!-- &lt;META HTTP-Equiv="Battery" Content="Left:[Value]"&gt; --&gt;      &lt;!-- Sets the horizontal position of the battery indicator in pixels.  If it is negative then indicator will be moved off screen --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Battery" Content="Top:[Value]"&gt; --&gt;      &lt;!-- Sets the vertical position of the battery indicator in pixels. if value is negative then indicator will be moved off screen --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Battery" Content="IconPosition:[Value]"&gt; --&gt;      &lt;!-- Sets the position of indicator icon with respect to Graph position.  "Iconposition" and "Graphposition" combination must be a valid combination e.g both cannot be left. --&gt;
 &lt;!-- &lt;META HTTP-Equiv="Battery" Content="GraphPosition:[Value]"&gt; --&gt;      &lt;!-- Sets the direction towards which level bars will grow e.g if value is Left then level bars grow from right to left.  "Iconposition" and "Graphposition" combination must be a valid combination e.g both cannot be left. --&gt;
@@ -199,7 +199,7 @@ function doBatteryInit()
 var objGeneric = new ActiveXObject("PocketBrowser.Generic");
 
 //objGeneric.InvokeMETAFunction('Battery', 'Visibility:[Value]');      /* Sets whether or not the battery indicator is shown */
-//objGeneric.InvokeMETAFunction('Battery', 'Left:[Value]');      /* Sets the horizontal position of the battery indicator in pixels.  If it is negative the then indicator will be moved off screen */
+//objGeneric.InvokeMETAFunction('Battery', 'Left:[Value]');      /* Sets the horizontal position of the battery indicator in pixels.  If it is negative then indicator will be moved off screen */
 //objGeneric.InvokeMETAFunction('Battery', 'Top:[Value]');      /* Sets the vertical position of the battery indicator in pixels. if value is negative then indicator will be moved off screen */
 //objGeneric.InvokeMETAFunction('Battery', 'IconPosition:[Value]');      /* Sets the position of indicator icon with respect to Graph position.  "Iconposition" and "Graphposition" combination must be a valid combination e.g both cannot be left. */
 //objGeneric.InvokeMETAFunction('Battery', 'GraphPosition:[Value]');      /* Sets the direction towards which level bars will grow e.g if value is Left then level bars grow from right to left.  "Iconposition" and "Graphposition" combination must be a valid combination e.g both cannot be left. */

@@ -823,7 +823,7 @@ Presentation trigger causes the scanner to illuminate when movement is detected 
 The scanner must be initiated with a softscan using the scanner start parameter.  Please see the example for usage.
 Note: Not all devices support presentation mode.
 0
-On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the the license screen. 
+On unlicensed devices it is not recommended to enable the Scanner on the application's startup page, this can interfere with the license screen. 
 
 The device's camera based scanner can not be used at the same time as the Imager.  Once the Imager is 'Enabled' the camera based scanner will be unavailable until the Imager is 'Disabled'. 
 </DIV>

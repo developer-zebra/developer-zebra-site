@@ -32,6 +32,8 @@ automenu:
           url: Database
         - title: Device
           url: device
+        - title: Enterprise Keyboard
+          url: ekb
         - title: EzNFC
           url: EzNFC
         - title: File

@@ -24,7 +24,7 @@ There are two methods of enabling the Barcode API:
 * Include all ebapi modules
 * Include only the required API modules
 
-For either of these methods, one or more files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the the Enterprise Browser installation.
+For either of these methods, one or more files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all API modules
 To include all APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:

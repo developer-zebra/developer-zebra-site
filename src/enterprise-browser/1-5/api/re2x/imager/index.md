@@ -173,7 +173,7 @@ The following example sets up the imager to capture an image and transfer it to 
 		<meta http-equiv="Imager" content="width:100">
 		<meta http-equiv="Imager" content="height:100">
 		<meta http-equiv="Imager" content="left:120">
-		<meta http-equiv="Imager" content="Destination:url('software.uk.motorolasolutions.com')">
+		<meta http-equiv="Imager" content="Destination:url('software.uk.zebra.com')">
 		<meta http-equiv="Imager" content="username:elementstest">
 		<meta http-equiv="Imager" content="password:elements30">
 		<meta http-equiv="Imager" content="sound:\windows\alarm2.wav">

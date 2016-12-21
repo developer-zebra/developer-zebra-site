@@ -25,6 +25,11 @@ content-items:
     url: ../../tutorial/helloeb
   - type: section
     level: 4
+    title: Sample Apps
+    text: Fully functional apps demonstrate the most common APIs and can be modified as needed.
+    url: ../samples
+  - type: section
+    level: 4
     title: Feature Demo
     text: Showcases the key capabilities of Zebra devices available through Enterprise Browser.
     url: ../featuredemo

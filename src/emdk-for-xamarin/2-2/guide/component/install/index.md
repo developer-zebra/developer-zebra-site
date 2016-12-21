@@ -50,11 +50,11 @@ Once the Xamarin Component has been installed to the IDE, you need to add it to 
 
 	![img](../../../images/component/installed.png)
 
-7. Clicking on the `Details` link in the projects `Edit Components` page will give you access to more details about the component, like version information, documentation and samples. Check the [Samples Guide](/emdk-for-xamarin/2-2/guide/sample/about) for instructions to access more sample projects.
+7. Clicking on the `Details` link in the projects `Edit Components` page will give you access to more details about the component, like version information, documentation and samples. Check the [Samples Guide](/emdk-for-xamarin/2-2/samples) for instructions to access more sample projects.
 
 	![img](../../../images/component/details.jpg)
 
-The component and EMDK for Xamarin APIs are now accessible in your application. To understand how to use the APIs, view source of one of our [sample projects](/emdk-for-xamarin/2-2/guide/sample/about) or [follow a tutorial](/emdk-for-xamarin/2-2/tutorial/index).
+The component and EMDK for Xamarin APIs are now accessible in your application. To understand how to use the APIs, view source of one of our [sample projects](/emdk-for-xamarin/2-2/samples) or [follow a tutorial](/emdk-for-xamarin/2-2/tutorial).
 
 ## Removing from Android Projects
 You can disable the EMDK for Xamarin component from a project, however please note that this does not permanently remove the component from the project cache or system. If you wish to permanently remove the component, please follow these instructions and the complete the steps in the `Uninstalling` section
@@ -104,7 +104,7 @@ Each project will cache the version of the component you have added within your 
 
 
 ## What's Next
-Try the Sample included with in Component[ Sample ](/emdk-for-xamarin/2-2/guide/sample/about)
+Try the Sample included with in Component[ Sample ](/emdk-for-xamarin/2-2/samples)
 
 
 

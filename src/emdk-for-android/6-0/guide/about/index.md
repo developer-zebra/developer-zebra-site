@@ -64,8 +64,11 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 
 
 ## What's New
-1.  Added support for ET50, ET55 and TC8000 Lollipop (Android 5.1.1) devices.
-2.  Added support for MX v6.1 in Profile Manager:
+1. Added support for TC51 Marshmallow (Android 6.0.1) devices.
+2. Added support for ET5X, TC70, TC75 and TC8000 Lollipop (Android 5.1.1)
+devices
+
+3.  Added support for MX v6.1 in Profile Manager:
 	*   Threat Manager – Added new feature to configure the detection of rooting and to apply a countermeasure when the device is detected as being rooted.
 	*   UI Manager – Added new feature to allow or disallow network monitored messages/notifications.
 	*   Bluetooth Manager – Added new feature to enable or disable the mobile device discoverability.
@@ -76,7 +79,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	*   KeyMapping Manager – Added key mapping support for Rear Button and Grip Trigger 2\.
 		>Note: A specific EMDK Profile Manager feature such as Keymapping Manager may not be supported on all the devices supported by EMDK for Android. To find out the details about the support f
 		or a such feature, please refer to the online help documentation and select the [specific feature](../../mx/) in Profile Manager.
-3.  Enhanced Barcode Manager APIs with the following features:
+4.  Enhanced Barcode Manager APIs with the following features:
 	* Added new decoder parameter in Code128, Code39, I2of5 and UpcEan decoders in ScannerConfig.DecoderParams:
 		* reducedQuietZone - Flag to enable or disable the decoding of margin less barcodes.
 	* Added new parameter to ScannerConfig.DecoderParams.Gs1DatabarLim:
@@ -101,7 +104,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 		* AdaptiveScanning - Enable or Disable Adaptive scanning.
 		* BeamWidth - Controls the beam width of the laser scanner.
 		* GS1LimitedSecurityLevel - Security level addition of GS1 DataBar lim decoder.
-4.  Enhanced DataCapture feature in the Profile Manager:
+5.  Enhanced DataCapture feature in the Profile Manager:
 	 * Added new reader parameters:
 		* Aim Timer - Sets the duration (in ms) for timed aim modes.
 		* Viewfinder Size - Sets the View Finder window size in camera scanner as a percentage of full width and full height.
@@ -116,10 +119,10 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 		* ISO-8859-1 - Allows the user to convert the barcode data using ISO-8859-1 character encoding type.
 		* Shift_JIS - Allows the user to convert the barcode data using Shift_JIS character encoding type.
 		* UTF-8 - Allows the user to convert the barcode data using UTF-8 character encoding type.
-5. Enhanced the performance of using decodeAudioFeedbackUri in ScannerConfig.ScannerParams in Barcode Manager API.
-6. The ProfileConfig class which can be used to access the profile data has been deprecated. It is recommended to use the [name-value pair](../xmlresponseguide/#createnamevaluepair) function of Profile Manager feature. The Profile XML can also be directly modified. Refer to the [Clock Sample](../../samples/clock/) for information on modifying Profile XML data.
-7. `Fixed:` Toggling Hard trigger and soft trigger sometimes results into cancel read exception.
-8. `Fixed:` In earlier versions, selecting EMDK APIs as target Compile Sdk Version in the Android Studio project would result in the compilation error. This issue is now fixed.
+6. Enhanced the performance of using decodeAudioFeedbackUri in ScannerConfig.ScannerParams in Barcode Manager API.
+7. The ProfileConfig class which can be used to access the profile data has been deprecated. It is recommended to use the [name-value pair](../xmlresponseguide/#createnamevaluepair) function of Profile Manager feature. The Profile XML can also be directly modified. Refer to the [Clock Sample](../../samples/clock/) for information on modifying Profile XML data.
+8. `Fixed:` Toggling Hard trigger and soft trigger sometimes results into cancel read exception.
+9. `Fixed:` In earlier versions, selecting EMDK APIs as target Compile Sdk Version in the Android Studio project would result in the compilation error. This issue is now fixed.
 
 
 ## Components

@@ -1927,7 +1927,7 @@ Describes the type of Digital Bar Pulse (DBP) being produced by the scan engine.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The duration of the device beeper when a barcode is scanned, in milliseconds.
+The duration of the device beeper when a barcode is scanned, in milliseconds. It will accept values in the range 0 to 5000 milliseconds. Note: On Android platform, calling this method, the DecodeDuration config tags value will not be applied. 
 ####Params
 <p><strong>Default:</strong> 250</p>
 ####Access
@@ -1937,11 +1937,9 @@ The duration of the device beeper when a barcode is scanned, in milliseconds.
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeDuration</code> 
 
-
-
 ####Platforms
 
-* Android
+* Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
@@ -1951,7 +1949,7 @@ The duration of the device beeper when a barcode is scanned, in milliseconds.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The frequency of the device beeper when a barcode is successfully decoded. This should be within the range of the beeper but the API will accept values in the range 0 to 65535.
+The frequency of the device beeper when a barcode is successfully decoded. This should be within the range of the beeper but the API will accept values in the range 0 to 65535. Note: On Android platform, calling this method, the DecodeFrequency config tags value will not be applied.
 ####Params
 <p><strong>Default:</strong> 3000</p>
 ####Access
@@ -1961,33 +1959,9 @@ The frequency of the device beeper when a barcode is successfully decoded. This 
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeFrequency</code> 
 
-
-
 ####Platforms
 
-* Android
-* Windows Mobile
-* Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
-
-###decodeSound
-
-####Type
-<span class='text-info'>STRING</span> 
-####Description
-Path to a local wave file to be played when the scanner successfully decodes a barcode. The wave file must reside on the device. This will override the existing scanner beeper settings. 
-####Access
-
-
-* Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeSound</code>
-* Default Instance: This property can be accessed via the default instance object of this class. 
-	* <code>EB.Barcode.decodeSound</code> 
-
-
-
-####Platforms
-
-* Android
+* Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
@@ -1997,7 +1971,7 @@ Path to a local wave file to be played when the scanner successfully decodes a b
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The volume of the device beeper when a barcode is scanned. Volume specified using 0 to 5, with 5 being the loudest. The value of 0 is device dependent, some Windows Mobile / CE devices interpret this as the quietest volume; if you wish to completely disable the beeper on scan please set decodeSound to an empty or invalid sound file.
+The volume of the device beeper when a barcode is scanned. It will accept values in the range 0 to 5. On Window Mobile/CE, the value of 0 is device dependent, some devices interpret this as the quietest volume; if you wish to completely disable the beeper on scan please set decodeSound to an empty or invalid sound file. Note: On Android platform, calling this method, the DecodeVolume config tags value will not be applied.
 ####Params
 <p><strong>Default:</strong> 5</p>
 ####Access
@@ -2007,11 +1981,29 @@ The volume of the device beeper when a barcode is scanned. Volume specified usin
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeVolume</code> 
 
+####Platforms
 
+* Android(KitKat and above platform only)
+* Windows Mobile
+* Windows CE
+* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+
+###decodeSound
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+Path to a local wave file to be played when the scanner successfully decodes a barcode. The wave file must reside on the device. This will override the existing scanner beeper settings. Note: On Android platform, calling this method, the ScanDecodeWav config tags value will not be applied.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeSound</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.decodeSound</code> 
 
 ####Platforms
 
-* Android
+* Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)

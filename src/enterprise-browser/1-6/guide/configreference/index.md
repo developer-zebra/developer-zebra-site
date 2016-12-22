@@ -1456,7 +1456,7 @@ Used to disable barcode scanning capabilities for a previous scanner API. Does n
 
 ## Sound
 ### DecodeVolume
-Controls the volume of the device beeper when a barcode is scanned.
+Controls the volume of the device beeper when a barcode is scanned. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1467,7 +1467,7 @@ Controls the volume of the device beeper when a barcode is scanned.
 	<DecodeVolume value="3"/>
 
 ### DecodeFrequency
-Controls the frequency of the device beeper when a barcode is successfully decoded. Must be within the range of the beeper.
+Controls the frequency of the device beeper when a barcode is successfully decoded. Must be within the range of the beeper. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1477,19 +1477,8 @@ Controls the frequency of the device beeper when a barcode is successfully decod
 	:::xml
 	<DecodeFrequency value="0xFFFF"/>
 
-### InvalidDecodeFrequency
-Controls the frequency of the device beeper sound when a scanned barcode is not successfully decoded. This value (in hex) must be a frequency within the range of the device beeper. Not applicable to the Enterprise Tablet.
-
-**Possible Values**:
-
-* 0 to 0xFFFF
-
-#### Example
-	:::xml
-	<InvalidDecodeFrequency value="0xFFFF"/>
-
 ### DecodeDuration
-Controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
+Controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1499,8 +1488,19 @@ Controls the duration (in milliseconds) of the device beeper sound when a barcod
 	:::xml
 	<DecodeDuration value="500"/>
 
+### InvalidDecodeFrequency
+Controls the frequency of the device beeper sound when a scanned barcode is not successfully decoded. This value (in hex) must be a frequency within the range of the device beeper. Not applicable to Android platform.
+
+**Possible Values**:
+
+* 0 to 0xFFFF
+
+#### Example
+	:::xml
+	<InvalidDecodeFrequency value="0xFFFF"/>
+
 ### ScanDecodeWav
-Specifies a .wav file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive.
+Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1508,10 +1508,13 @@ Specifies a .wav file to be played when a scanned barcode is successfully decode
 
 #### Example
 	:::xml
-	<ScanDecodeWav value="file://path-to-success-wav-file"/>
+	For WM/CE - If alarm.wav file is present under '\Program Files\EnterpriseBrowser' directory in the device.
+	<ScanDecodeWav value="file://%INSTALLDIR%/alarm.wav"/>
+	For Android - If alarm.ogg file is present under '/sdcard' directory in the device.
+	<ScanDecodeWav value="file:///sdcard/alarm.ogg"/>
 
 ### ScanInvalidWav
-Specifies a .wav file to be played when a scanned barcode is not successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. **Not applicable to Enterprise Tablet**.Case sensitive. 
+Specifies a .wav file to be played when a scanned barcode is not successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. **Not applicable to Android platform**.Case sensitive. 
 
 **Possible Values**:
 

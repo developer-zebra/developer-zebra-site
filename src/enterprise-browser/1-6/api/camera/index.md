@@ -934,14 +934,14 @@ Take an image with as little code as possible, using all default values.
 <pre><code>:::javascript
 function take_picture_with_default_camera() {
   // Capture an image from the default camera on the device, using the default image settings
-  Rho.Camera.takePicture({}, picture_taken_callback);
+  EB.Camera.takePicture({}, picture_taken_callback);
 }
 
 function picture_taken_callback(params) {
   // Did we receive an image?
   if (params["status"]=="ok") {
     // Assuming we have an <img id="#captured_image"> tag, we will be able to see the image that was just captured
-    $("#captured_image").attr("src", Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+    $("#captured_image").attr("src", EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
   }
 }                           
 </code></pre>
@@ -1001,7 +1001,7 @@ var cameras = [];
 
 function choose_camera() {
   // get all available cameras
-  cameras = Rho.Camera.enumerate();
+  cameras = EB.Camera.enumerate();
 
   // build an HTML list
   var cameraList = "&lt;ul&gt;";
@@ -1028,12 +1028,12 @@ function take_picture_with_camera(cameraIndex) {
 Apart from taking new pictures, you can also save images to the built-in gallery. In the following examples, the picture we are adding to the gallery is one that was just taken with the camera, but you can add any other image you can access by filename.
 <pre><code>:::javascript
 function take_picture_and_save_it_to_gallery() {
-  Rho.Camera.choosePicture({}, picture_taken_callback_save_to_gallery);
+  EB.Camera.choosePicture({}, picture_taken_callback_save_to_gallery);
 }
 
 function picture_taken_callback_save_to_gallery(params) {
   if (params["status"]=="ok") {
-    Rho.Camera.copyImageToDeviceGallery(Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+    EB.Camera.copyImageToDeviceGallery(EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
 
     alert("Image saved to gallery");
   }
@@ -1047,24 +1047,24 @@ function control_image_properties() {
   // Instead of accepting the defaults, let's set some properties to our liking
 
   // We will ask for a PNG file...
-  Rho.Camera.compressionFormat = "png";
+  EB.Camera.compressionFormat = "png";
 
   // ...a particular image size...
-  Rho.Camera.desiredWidth = 1024;
-  Rho.Camera.desiredHeight = 768;
+  EB.Camera.desiredWidth = 1024;
+  EB.Camera.desiredHeight = 768;
 
   // ...and force the flash to be used
-  Rho.Camera.flashMode = "on";
+  EB.Camera.flashMode = "on";
 
   // Now, take the picture
-  Rho.Camera.takePicture({}, picture_taken_callback);
+  EB.Camera.takePicture({}, picture_taken_callback);
 }
 
 function picture_taken_callback(params) {
   // Did we receive an image?
   if (params["status"]=="ok") {
     // show it in our &lt;img id="captured_image"&lt; tag
-    $("#captured_image").attr("src", Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+    $("#captured_image").attr("src", EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
   }
 
 }  
@@ -1077,7 +1077,7 @@ function determine_camera_capabilities() {
   var capabilitiesList = "&lt;ul&gt;";
 
   // Get all capabilities of the camera...
-  var capabilities = Rho.Camera.getAllProperties();
+  var capabilities = EB.Camera.getAllProperties();
 
   // ... compose a nicely formatted list with their names and values ...
   for (var capability in capabilities) {
@@ -1095,14 +1095,14 @@ function determine_camera_capabilities() {
 Apart from taking new pictures, the Camera API also lets you access existing images on the device’s gallery.
 <pre><code>:::javascript
 function select_picture_from_gallery() {
-  Rho.Camera.choose_picture({}, picture_taken_callback);
+  EB.Camera.choose_picture({}, picture_taken_callback);
 }
 
 function picture_taken_callback(params) {
   // Did we receive an image?
   if (params["status"]=="ok") {
     // Show it in an &lt;img&gt; tag
-    $("#captured_image").attr("src", Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+    $("#captured_image").attr("src", EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
   }
 }     
 </code></pre>
@@ -1112,7 +1112,7 @@ Camera API also lets you access camera instance by cameraType.
 <pre><code>:::javascript
 //get the instance by cameraType and takePicture using that instance
 function get_color_camera_instance() {
-  var camInst = Rho.Camera.getCameraByType('color');
+  var camInst = EB.Camera.getCameraByType('color');
   camInst.takePicture({'outputFormat':'image'}, my_callback);
 }
 </code></pre>
@@ -1122,7 +1122,7 @@ Camera resolution is hardware specific. Camera API supports getting the supporte
 <pre><code>:::javascript
 function getsupporteSizeList()
 {
-	var instArray = Rho.Camera.enumerate();
+	var instArray = EB.Camera.enumerate();
 	var reslnArray = instArray[0].supportedSizeList;
 	alert(reslnArray[0].width);
 	alert(reslnArray[0].height);

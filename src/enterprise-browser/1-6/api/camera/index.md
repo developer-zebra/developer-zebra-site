@@ -534,8 +534,7 @@ Path to a sound file resident on the device which will be played when the image 
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-<span class='label label-info'>Replaces:format</span> The format of the captured image in subsequent calls to takePicture(). On windows devices the format will be always .jpg type.
-                This Property shall accept/return one among the values mentioned in constant section which starts with COMPRESSION_FORMAT_...
+<span class='label label-info'>Replaces:format</span> The format of the captured image in subsequent calls to takePicture(). On WM/CE devices, only '.jpeg' or '.jpg' format is supported. This property will accept/return one among the values mentioned under [constant section](#constants) which starts with COMPRESSION_FORMAT_...
                 
 ####Params
 <p><strong>Default:</strong> jpg</p>
@@ -552,7 +551,7 @@ Path to a sound file resident on the device which will be played when the image 
 
 * Android
 * Windows Mobile
-* Windows CE(JPG is supported on all devices, Android, WP8 and Windows Mobile does not support PNG images)
+* Windows CE
 
 ###<span class="text-info">desiredHeight</span>
 
@@ -602,7 +601,7 @@ Path to a sound file resident on the device which will be played when the image 
 <span class='text-info'>STRING</span> 
 ####Description
 The image file path without file extension to store captured image in subsequent calls to takePicture() or capture(). Default filename will be IMG_timestamp and will be saved under root directory. The filename extension will be added automatically according to compressionFormat property value.
-                In Wp8, only filename can be changed, by default the path shall be under picture=>CameraRoll
+     
 ####Access
 
 
@@ -888,9 +887,6 @@ DataUri output is dependent on availability of virtual space. DataUri may fail, 
 
 ###ImageUri
 Image Uri display is dependent on browser capability.
-
-###GetSupportedProperties in WP8
-WP8 does not support getSupportedProperties or SetSupportedProperties.
 
 ###colorModel as Grayscale in Android
 Grayscale is supported only in the front camera of Android consumer devices.

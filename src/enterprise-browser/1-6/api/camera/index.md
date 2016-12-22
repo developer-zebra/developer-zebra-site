@@ -926,3 +926,252 @@ The Camera API is not supported from Enterprise Browser apps on the following Ze
 * Workabout Pro 4
 * Omnii XT15
 * VH10 
+
+##Examples
+
+###Take picture with default camera
+Take an image with as little code as possible, using all default values.
+<pre><code>:::javascript
+function take_picture_with_default_camera() {
+  // Capture an image from the default camera on the device, using the default image settings
+  Rho.Camera.takePicture({}, picture_taken_callback);
+}
+
+function picture_taken_callback(params) {
+  // Did we receive an image?
+  if (params["status"]=="ok") {
+    // Assuming we have an <img id="#captured_image"> tag, we will be able to see the image that was just captured
+    $("#captured_image").attr("src", Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+  }
+}                           
+</code></pre>
+
+###Dispalying an image using image uri
+This example demonstrate how user can dispaly an image using image uri. The callback will return a image uri when outputFormat is set to ‘image’.
+<pre><code>:::javascript
+//enumerate the available cameras on the device
+var camArray = EB.Camera.enumerate();
+
+//below is the camera call back fired after takePicture is called
+var camera_callbackFunc = function(cbData){ 
+
+  //uri will have relative path info only
+  //user has to form the absolute local server path as shown below
+  uri = 'http://localhost:'+EB.System.localServerPort + cbData.imageUri;
+  //set the image uri to the image element
+  document.getElementById('imageUri').src = uri ;
+  
+};
+ 
+//below is the test function which is used for capturing an image with outputFormat set as image
+function Test_image_uri()
+{ 
+  //invoke takePicture API with outputFormat as image and set the callback method
+  camArray[0].takePicture({'outputFormat': 'image'}, camera_callbackFunc);
+}
+</code></pre>
+
+###Dispalying an image using data uri
+This example demonstrate how user can dispaly an image using data uri. The callback will return a data uri when outputFormat is set to ‘dataUri’.
+<pre><code>:::javascript
+//enumerate the available cameras on the device
+var camArray = EB.Camera.enumerate();
+
+ //below is the camera call back fired after takePicture is called
+var camera_callbackFunc = function(cbData){ 
+  //set the image uri to the image element
+  document.getElementById('imageUri').src = cbData.imageUri ;  
+};
+ 
+ //below is the test function which is used for capturing an image with outputFormat set as dataUri
+function Test_image_uri()
+{ 
+  //invoke takePicture API with outputFormat as dataUri and set the callback method
+  camArray[0].takePicture({'outputFormat': 'dataUri'}, camera_callbackFunc);
+}
+</code></pre>
+
+###Choose which camera to use when taking images
+On devices with more than one camera, you can select which camera to use for taking pictures.
+<pre><code>:::javascript
+&lt;div id="camera_list"&gt;
+&lt;/div&gt;
+
+var cameras = [];
+
+function choose_camera() {
+  // get all available cameras
+  cameras = Rho.Camera.enumerate();
+
+  // build an HTML list
+  var cameraList = "&lt;ul&gt;";
+
+  for (var cameraIndex = 0 ; cameraIndex &lt; cameras.length; cameraIndex++) {
+    var camera = cameras[cameraIndex];
+    // Create a link for each camera with an onclick handler
+    cameraList = cameraList + '&lt;li&gt;&lt;a href="#" class="take_picture_with_selected_camera" onclick="take_picture_with_camera('+cameraIndex+')"&gt;' + camera.cameraType + '&lt;/a&gt;&lt;/li&gt;';
+  }
+
+  cameraList = cameraList+"&lt;/ul&gt;";
+
+  // make camera list visible to the user
+  $("#camera_list").html(cameraList);
+}
+
+function take_picture_with_camera(cameraIndex) {
+  var camera = cameras[cameraIndex];
+  camera.takePicture({}, picture_taken_callback);
+}                 
+</code></pre>
+
+###Saving a picture to the device's gallery
+Apart from taking new pictures, you can also save images to the built-in gallery. In the following examples, the picture we are adding to the gallery is one that was just taken with the camera, but you can add any other image you can access by filename.
+<pre><code>:::javascript
+function take_picture_and_save_it_to_gallery() {
+  Rho.Camera.choosePicture({}, picture_taken_callback_save_to_gallery);
+}
+
+function picture_taken_callback_save_to_gallery(params) {
+  if (params["status"]=="ok") {
+    Rho.Camera.copyImageToDeviceGallery(Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+
+    alert("Image saved to gallery");
+  }
+}      
+</code></pre>
+
+###Control image properties
+You can tweak multiple options to get an image exactly as you need it.
+<pre><code>:::javascript
+function control_image_properties() {
+  // Instead of accepting the defaults, let's set some properties to our liking
+
+  // We will ask for a PNG file...
+  Rho.Camera.compressionFormat = "png";
+
+  // ...a particular image size...
+  Rho.Camera.desiredWidth = 1024;
+  Rho.Camera.desiredHeight = 768;
+
+  // ...and force the flash to be used
+  Rho.Camera.flashMode = "on";
+
+  // Now, take the picture
+  Rho.Camera.takePicture({}, picture_taken_callback);
+}
+
+function picture_taken_callback(params) {
+  // Did we receive an image?
+  if (params["status"]=="ok") {
+    // show it in our &lt;img id="captured_image"&lt; tag
+    $("#captured_image").attr("src", Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+  }
+
+}  
+</code></pre>
+
+###Determine camera capabilities
+You can get all available camera properties in a single call.
+<pre><code>:::javascript
+function determine_camera_capabilities() {
+  var capabilitiesList = "&lt;ul&gt;";
+
+  // Get all capabilities of the camera...
+  var capabilities = Rho.Camera.getAllProperties();
+
+  // ... compose a nicely formatted list with their names and values ...
+  for (var capability in capabilities) {
+    capabilitiesList+="&lt;li&gt;"+capability+": "+capabilities[capability]+"&lt;/li&gt;";
+  }
+
+  capabilitiesList += "&lt;/ul&gt;";
+
+  // ... and show it
+  $("#camera_capabilities").html(capabilitiesList);
+}                
+</code></pre>
+
+###Select picture from device gallery
+Apart from taking new pictures, the Camera API also lets you access existing images on the device’s gallery.
+<pre><code>:::javascript
+function select_picture_from_gallery() {
+  Rho.Camera.choose_picture({}, picture_taken_callback);
+}
+
+function picture_taken_callback(params) {
+  // Did we receive an image?
+  if (params["status"]=="ok") {
+    // Show it in an &lt;img&gt; tag
+    $("#captured_image").attr("src", Rho.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+  }
+}     
+</code></pre>
+
+###Getting a camera instance by cameraType
+Camera API also lets you access camera instance by cameraType.
+<pre><code>:::javascript
+//get the instance by cameraType and takePicture using that instance
+function get_color_camera_instance() {
+  var camInst = Rho.Camera.getCameraByType('color');
+  camInst.takePicture({'outputFormat':'image'}, my_callback);
+}
+</code></pre>
+
+###Getting the list of resolutions supported by the camera
+Camera resolution is hardware specific. Camera API supports getting the supported resolutions of a camera instance.
+<pre><code>:::javascript
+function getsupporteSizeList()
+{
+	var instArray = Rho.Camera.enumerate();
+	var reslnArray = instArray[0].supportedSizeList;
+	alert(reslnArray[0].width);
+	alert(reslnArray[0].height);
+	alert(reslnArray[1].width);
+	alert(reslnArray[1].height);
+}
+</code></pre>
+
+###Transfering an image to HTTP server
+This example demonstrate how user can transfer an image to http server. This will be useful when application is running on a remote server.
+<pre><code>:::javascript
+//enumerate the available cameras on the device
+var camArray = EB.Camera.enumerate();
+
+//below is the callback fired by network api after image upload to the server is completed
+var upload_file_callback = function (args){
+        status = args['status'];
+        //a status ok indicates image transferred successfully
+        alert(status);
+       }
+
+//below is the camera call back fired after takePicture is called
+var camera_callbackFunc = function(cbData){ 
+  alert(cbData.imageUri); 
+  //set the upload file properties; Refer network module for more details
+  var uploadfileProps = {
+           url: 'http://10.233.82.51:8081/upload_image_file',
+          //authType: "basic",
+          //authUser: "admin",
+          //authPassword: "password",
+          filename: cbData.imageUri,
+          body: "uploading file",
+          fileContentType: "image/jpeg"
+        };
+   
+   //below is the network module API used for uploading images when camera fire the callback
+   EB.Network.uploadFile(uploadfileProps, upload_file_callback);      
+ };
+ 
+ //below is the test function which is used for capturing an image with outputFormat set as imagePath
+function Test_image_transfer1()
+{ 
+  //invoke takePicture API with outputFormat as imagePath and set the callback method
+  camArray[0].takePicture({'fileName' : '/Application/Test/myImagename', 'outputFormat': 'imagePath'}, camera_callbackFunc);
+}
+ //below is the test function which is used for choosing a picture from device with outputFormat set as imagePath
+function Test_image_transfer2()
+{ 
+  //invoke choosePicture API with outputFormat as imagePath and set the callback method
+  EB.Camera.choosePicture({'outputFormat': 'image'}, camera_callbackFunc);
+}
+</code></pre>

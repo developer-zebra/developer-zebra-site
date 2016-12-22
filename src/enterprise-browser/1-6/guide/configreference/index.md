@@ -1482,11 +1482,11 @@ Controls the duration (in milliseconds) of the device beeper sound when a barcod
 
 **Possible Values**:
 
-* number of milliseconds
+* 0 to 5000 (number of milliseconds)
 
 #### Example
 	:::xml
-	<DecodeDuration value="500"/>
+	<DecodeDuration value="1000"/>
 
 ### InvalidDecodeFrequency
 Controls the frequency of the device beeper sound when a scanned barcode is not successfully decoded. This value (in hex) must be a frequency within the range of the device beeper. Not applicable to Android platform.

@@ -14,8 +14,6 @@ If the use case involves capturing a single barcode (for example, a pricing kios
 
 * **On the VC70**, the scanner will work only if connected in SSI Mode.
 
-* **EB 1.5 and higher supports the `decodeSound` method**. A bug in the method prevents apps made with EB 1.4 and earlier from using the method.  
-
 * **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; only one or the other should be used. 
 
 ## Enabling the API
@@ -1971,7 +1969,7 @@ The frequency of the device beeper when a barcode is successfully decoded. This 
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The volume of the device beeper when a barcode is scanned. It will accept values in the range 0 to 5. On Window Mobile/CE, the value of 0 is device dependent, some devices interpret this as the quietest volume; if you wish to completely disable the beeper on scan please set decodeSound to an empty or invalid sound file. Note: On Android platform, calling this method, the DecodeVolume config tags value will not be applied.
+The volume of the device beeper when a barcode is scanned. It will accept values in the range 0 to 5. On Window Mobile/CE, the value of 0 is device dependent, some devices interpret this as the quietest volume. Note: On Android platform, calling this method, the DecodeVolume config tags value will not be applied.
 ####Params
 <p><strong>Default:</strong> 5</p>
 ####Access
@@ -1993,7 +1991,7 @@ The volume of the device beeper when a barcode is scanned. It will accept values
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Path to a local wave file to be played when the scanner successfully decodes a barcode. The wave file must reside on the device. This will override the existing scanner beeper settings. Note: On Android platform, calling this method, the ScanDecodeWav config tags value will not be applied.
+Path to a local '.wav' file to be played when the scanner successfully decodes a barcode. The '.wav' file must reside on the device. This will override the existing scanner beeper settings. The decodeSound property doesnot rely on decodeDuration, decodeFrequency and decodeVolume properties. Calling this method, the ScanDecodeWav config tags value will not be applied. Note: On Android platform, '.ogg' file is also supported.
 ####Access
 
 
@@ -5381,8 +5379,6 @@ Due to platform limitations this API is not available on the following Zebra Tec
 
 ##Examples
 
-
-
 ###Enable barcode scanner and scan a bacrode
 This example shows how to enable your device's barcode scanner and access the data gathered by the scanner. Note that this example assumes that your ebapi-modules.js file is in the same folder as the HTML invoking it. On symbol devices, data wedge needs to be disabled or the Enterprise Browser will not be able to claim any of the scanners.
 <pre><code>:::javascript
@@ -5421,7 +5417,21 @@ This example shows how to enable your device's barcode scanner and access the da
         Time: &lt;br&gt;
     &lt;/div&gt;
     &lt;button onclick="enableScanners()"&gt;Enable Barcode Scanners&lt;/button&gt;
-&lt;/body&gt;
-                                
-                            
+&lt;/body&gt;              
+</code></pre>
+
+###Setting pre-defined decode sound
+The example shows how to set the existing '.wav' or '.ogg' file for decode notification using decodeSound property on Android platform.
+<pre><code>:::javascript
+function setDecodeSoundwav() {
+   EB.Barcode.decodeSound = 'file:///sdcard/badread.wav'; //For Android	
+}
+</code></pre>
+
+###Setting custom created decode sound
+The example shows how to create and set the custom notification file for getting decode notification. Note: It is recommended to not to set decodeSound property if user want to create and set the custom notification using below barcode properties.
+<pre><code>:::javascript
+function setCustomDecodeSound(){
+   EB.Barcode.enable({'decodeDuration': 1000,'decodeFrequency':2000,'decodeVolume':3}, callback); //This is the recommended approach for creating and setting custom notification.
+}
 </code></pre>

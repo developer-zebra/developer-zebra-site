@@ -1500,7 +1500,7 @@ Controls the frequency of the device beeper sound when a scanned barcode is not 
 	<InvalidDecodeFrequency value="0xFFFF"/>
 
 ### ScanDecodeWav
-Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
+Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. The ScanDecodeWav config tag doesnot rely on DecodeDuration, DecodeFrequency and DecodeVolume config tags. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1510,6 +1510,7 @@ Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successful
 	:::xml
 	For WM/CE - If alarm.wav file is present under '\Program Files\EnterpriseBrowser' directory in the device.
 	<ScanDecodeWav value="file://%INSTALLDIR%/alarm.wav"/>
+	
 	For Android - If alarm.ogg file is present under '/sdcard' directory in the device.
 	<ScanDecodeWav value="file:///sdcard/alarm.ogg"/>
 

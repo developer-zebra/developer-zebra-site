@@ -903,7 +903,7 @@ Only valid and non-empty values for properties are supported in Android and iOS.
 All WM and CE7 devices automatically turn off both color and imager cameras when the device is suspended. User must restart the camera to resume. Whereas CE5 (eg: MC9000) and CE6 (eg: MC31) devices retain the preview on resuming from suspend state.
 
 ###Image saving after taking picture
-In some devices (eg: Samsung), an image will be saved in landscape mode even if captured in portrait mode. This behavior is determined by the device's default settings.
+In some devices, an image will be saved in landscape mode even if captured in portrait mode. This behavior is determined by the device's default settings.
 
 ###WM/CE devices lacking support
 Due to platform limitations, the ES400, MC65 and MC67 do not support the color camera.

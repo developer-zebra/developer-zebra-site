@@ -173,6 +173,9 @@ If the same key has been set as the homeKeyValue and captureKey with a callback,
 
 When the specified key is pressed, the event will fire but the homeKey event will not occur.
 
+###Persistence Behavior
+KeyCapture remains persistent across pages when Enterprise Browser KeyCapture module is used. Use instead [RhoElements 2.X KeyCapture Module](../re2x/keycapture).
+
 ###Precedence of captureKey events
 Any captureKey calls set with a specific key will take precedence over any captureKey calls with value 'all'. This means that the 'all' callback will not be called when individual keys that have been registered with captureKey are pressed. This also goes for dispatch values. If captureKey 'all' has a dispatch value of false, and captureKey with an individual keyCode value has a dispatch value of true, then this individual key will be dispatched to the app when pressed.
 

@@ -283,6 +283,22 @@ The minimum amount of time gap between two sensor update events, specified in mi
 * Windows Mobile
 * Windows CE
 
+###proximitySensorType
+
+####Type
+<span class='text-info'>INTEGER</span> 
+####Description
+A constant describing a proximity sensor type. The default value of proximitySensorType is 8. On TC8000 Android device, the default value of proximitySensorType is 22. Note: This must be called before invoking makeSensorByType method if the value of proximitySensorType is different.
+
+####Access
+
+* Default Instance: This property should only be accessed via the API class object. 
+	* <code>EB.Sensor.proximitySensorType</code>
+
+####Platforms
+
+* Android
+
 ###status
 
 ####Type

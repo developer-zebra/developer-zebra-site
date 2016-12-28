@@ -33,24 +33,37 @@ The following software must be installed prior to using the EMDK for Android.
 ## Devices Supported
 Although EMDK for Android has been designed to work with all Symbol mobile computers running Android, the following devices have been used for validation:
 
-* MC18 - KitKat (4.4.4)
-* MC40 - KitKat (4.4.4)
-* MC92 - KitKat (4.4.4)
-* TC55 - KitKat (4.4.3)
-* TC70 - KitKat (4.4.3)
-* TC75 - KitKat (4.4.3)
-* TC8000 - KitKat (4.4.3),Lollipop (5.1.1)
-* WT6000 - Lollipop (5.1.1)
-* ET50 - Lollipop (5.1.1)
-* ET55 - Lollipop (5.1.1)
+* MC18 - KitKat 
+* MC40 - KitKat 
+* MC92 - KitKat 
+* TC51 - Marshmallow
+* TC55 - KitKat 
+* TC70 - KitKat ,Lollipop
+* TC75 - KitKat ,Lollipop
+* TC8000 - KitKat ,Lollipop
+* WT6000 - Lollipop 
+* ET5X - Lollipop 
+ 
 
->Note: EMDK Support for all Jelly Bean (Android 4.1.2) and TC70 KitKat (Android 4.4.2) BSP version 112414 devices is `terminated` - EMDK for Android v6.0 and higher will support KitKat (except TC70 KitKat BSP version 112414) and higher OS versions. EMDK for Android v5.0 will continue to support Jelly Bean and TC70 KitKat BSP version 112414 devices.
 
+
+## Important News
+* EMDK for Android support for Payment APIs is **terminated** - With EMDK for Android v6.0, the support for Payment APIs is terminated. Even though this feature is available in this release, it must not be used in production environment. EMDK for Android v5.0 will continue to support Payment APIs.
+
+* EMDK Support for all Jelly Bean (Android 4.1.2) and TC70 KitKat (Android 4.4.2) BSP version 112414 devices is **terminated** - EMDK for Android v6.0 and higher will support KitKat (except TC70 KitKat BSP version 112414) and higher OS versions. EMDK for Android v5.0 will continue to support Jelly Bean and TC70 KitKat BSP version 112414 devices.
+	
+* The following EMDK features are not supported on the **TC51** Marshmallow device:
+
+	* Barcode scanning using Camera scanner
+	* Notification API
+	* SimulScan API
+	* Payment API
+	* Secure NFC API
+	* Personal Shopper API
+	* Serial Communication API
 
 
 ## What's New
-**EMDK for Android v6.0**
-
 1.  Added support for ET50, ET55 and TC8000 Lollipop (Android 5.1.1) devices.
 2.  Added support for MX v6.1 in Profile Manager:
 	*   Threat Manager – Added new feature to configure the detection of rooting and to apply a countermeasure when the device is detected as being rooted.
@@ -61,6 +74,8 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 	*   Device Administrator – Added new feature to select the type of screen lock such as no password, password, pattern and swipe.
 	*   Wireless Manager – Added new feature to specify balance between accuracy and battery life when using GPS.
 	*   KeyMapping Manager – Added key mapping support for Rear Button and Grip Trigger 2\.
+		>Note: A specific EMDK Profile Manager feature such as Keymapping Manager may not be supported on all the devices supported by EMDK for Android. To find out the details about the support f
+		or a such feature, please refer to the online help documentation and select the [specific feature](../../mx/) in Profile Manager.
 3.  Enhanced Barcode Manager APIs with the following features:
 	* Added new decoder parameter in Code128, Code39, I2of5 and UpcEan decoders in ScannerConfig.DecoderParams:
 		* reducedQuietZone - Flag to enable or disable the decoding of margin less barcodes.

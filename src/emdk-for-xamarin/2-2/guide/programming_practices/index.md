@@ -26,15 +26,20 @@ productversion: '2.2'
     * Other than the ProfileManager, all other features such as EMDKManager -> BarcodeManager used in an application must be released before another application can use that feature.
     * All instances of all features including EMDKManager must be released before the exiting of the application.
 
-##Selecting EMDK in the MAKE file
+ 
+##EMDK Manager opening and closing 
 
-The following must be declared in the application MAKE file to use the EMDK SDK library to compile the application:
+The application must call EMDKManager.getEMDKManager to use the EMDK. It is recommended to call this method in the onCreate method to avoid a delay at a later stage.  EMDKManager will call the interface EMDKListener.onOpened when the EMDK is ready to use and this callback will be called on main thread only; therefore the application must not block the Main thread to receive EMDKListener.onOpened callback.
 
-    :::java
-    LOCAL_JAVA_LIBRARIES := com.symbol.emdk
-    LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libemdk:com.symbol.emdk/com.symbol.emdk.jar
+The application must call the EMDKManager.release() in the below scenarios:
+
+1.	On application exit.
+2.	On EMDKListener.onClosed callback. 
+
+The EMDKListener.onClosed gets called to notify the application that the EMDKManager object has been abruptly closed due to some failures at EMDK or a lower layer. When this occurs, the application must the release the current EMDK manager instance and get the new EMDK Manager instance 
 
 
+>Note: If you are blocking the main thread, the application will not get notification when the EMDK closes unexpected reasons and therefore the application must not block the main thread to receive the EMDKListener.onClosed callback.
 
 
 

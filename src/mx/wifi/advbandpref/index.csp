@@ -22,6 +22,9 @@ parm:
     - code: 3
       mx: "4.3"
       name: Do not change
+    - code: 99
+      mx: "6.2"
+      name: Unsupported
 ---
 Used to specify the preferred Wi-Fi band. _**Not supported on MPA3 RevB-based devices running Android Jelly Bean**_. 
 

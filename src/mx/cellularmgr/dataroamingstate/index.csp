@@ -1,8 +1,8 @@
 ---
 csp: cellularmgr
-title: Set the state of Data Roaming
+title: Data Roaming Turn On/Off 
 type: parm
-order: 2
+order: 11
 mx: "4.3"
 apilevel: "17"
 parm:
@@ -14,17 +14,17 @@ parm:
       mx: "4.3"
       apilevel: "17"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the current state of the Data Roaming Option.
+      description: This value (or the absence of this parm from the XML) will cause no change to the current state of the Data Roaming; any previously selected setting will be retained.
     - code: 1
       name: Turn On
       mx: "4.3"
       apilevel: "17"
-      description: This value will cause the Data Roaming Option to be turned On, thus allowing Cellular data connections when roaming.
+      description: Turns On Data Roaming, allowing cellular data connections while a device is outside the carrier's home network.
     - code: 2
       name: Turn Off
       mx: "4.3"
       apilevel: "17"
-      description: This value will cause the Data Roaming Option to be turned Off, thus disallowing Cellular data connections when roaming.
+      description: Turns Off Data Roaming, preventing cellular data connections while a device is outside the carrier's home network.
 ---
 
-This parm allows you to change the state of the Data Roaming Option to On or Off.
+This is the On/Off switch for Data Roaming, which gives a device user the option of allowing cellular data connections to be established while a device is outside its "home" network. 

@@ -2,7 +2,7 @@
 csp: ethernetmgr
 title: Set Bypass Proxy
 type: parm
-order: 10
+order: 15
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"

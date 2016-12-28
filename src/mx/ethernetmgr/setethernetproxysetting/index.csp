@@ -2,7 +2,7 @@
 csp: ethernetmgr
 title: Ethernet Proxy Enable/Disable
 type: parm
-order: 3
+order: 10
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"

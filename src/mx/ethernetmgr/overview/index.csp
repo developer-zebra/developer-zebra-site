@@ -10,6 +10,8 @@ Ethernet Manager is used to administer settings for devices connected to a netwo
 ### Main Functionality
 
 * Enable/Disable network connection through an Ethernet-equipped cradle
-* Enable/Disable Use of a Proxy
+* Configure the cradle to use DHCP 
+* Manually set IP address settings for the cradle
+* Enable/Disable use of a Proxy
 * Set the Proxy Port and Proxy Host Name
-* Specify Host Name(s) and/or IP address(es) that Bypass the Proxy
+* Specify Host Name(s) and/or IP address(es) that bypass the Proxy

@@ -2,7 +2,7 @@
 csp: ethernetmgr
 title: Set Proxy Host Name
 type: parm
-order: 5
+order: 11
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
@@ -12,7 +12,8 @@ parm:
   name: ProxyHostName
   type: string
 ---
-Used to specify the Host Name of the Proxy server through which all device communications will pass. 
+
+Used to specify the Host Name of the Proxy server through which network communications will pass. 
 
 **Input rules**: 
 

@@ -12,15 +12,11 @@ parm:
     - code: 0
       mx: "6.2"
       name: Any
-      description: This value (or the absence of this parm from the XML) will apply Touch Mode settings all devices. 
+      description: This value (or the absence of this parm from the XML) will apply Touch Mode settings for any and all devices. 
     - code: 1
       name: 8960
       mx: "6.2"
       description: Applies settings for TC55, TC70, or TC75 devices.
-    - code: 2
-      name: 8000
-      mx: "6.2"
-      description: Applies settings for the TC8000 device only.
     - code: 3
       name: 8956
       mx: "6.2"
@@ -28,3 +24,10 @@ parm:
 ---
 
 Used to specify the set of Zebra devices for which to apply settings for touch-screen sensitivity.
+
+<!--
+    - code: 2
+      name: 8000
+      mx: "6.2"
+      description: Applies settings for the TC8000 device only.
+-->

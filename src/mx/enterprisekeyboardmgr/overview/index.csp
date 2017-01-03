@@ -40,6 +40,6 @@ Also see the [Enterprise Keyboard User Guide](../../enterprise-keyboard/1-0/guid
 * Russian
 
 
-#### Tab-Key Navigation
-The Enterprise Keyboard Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. On apps that are unaware of this context, the Tab key might input spaces instead of moving the cursor. For HTML apps, Zebra recommends using the Tab key to navigate from field to field. For help with native-app navigation, please refer to Android developer docs for information about [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html).
+#### About Tab-key Navigation
+The Enterprise Keyboard Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. For HTML apps, Zebra recommends using the Tab key to navigate from field to field. On apps that are unaware of this context, the Tab key might input spaces instead of moving the cursor. For help with native-app navigation, please refer to the [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html) section of the Android developer docs.
 

@@ -822,11 +822,13 @@ The RFID plug-in package for RhoElements 2.2 SP1 is not is not part of the defau
 
 **RFID plug-in resources**: 
 
-* **[RFID Plug-in for RhoElements 2.2 SP1](http://goo.gl/4IwC6T) -** download from Zebra Support Site (includes release notes and installation instructions)
+* **[RFID Plug-in for RhoElements 2.2 SP1](https://www.zebra.com/us/en/support-downloads/software/developer-tools/rfid-plugin-for-rho-elements.html) -** download from Zebra Support Site (includes release notes, installation instructions and a sample app)
 
+<!--
 * **[Release Notes and Installation Instructions](http://goo.gl/VtCDnO) -** for viewing or download (Word doc) 
 
 * **[Sample RFID app](http://goo.gl/arDsF2) -** made for the RhoMobile framework
+-->
 
 ### Config.xml setting
 Once the plug-in is installed, modify the &lt;PreloadLegacyActiveX&gt; parameter in the app's `Config.xml` file as follows:

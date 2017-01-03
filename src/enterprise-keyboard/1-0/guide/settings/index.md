@@ -250,12 +250,19 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 <img alt="" style="height:350px" src="datawedge_enabled.png"/>
 <br>
 
+**Important**: See the [Scanner Control](#scannercontrol) section, below. 
+
 For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
-Also refer to the [DataWedge User Guide](/datawedge/5-0/guide/about) for complete documentation.
+Also refer to the [DataWedge User Guide](../../../../) for complete documentation.
 
 ------
 
-## Tab-Key Navigation
+## Tab-key Navigation
 The Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. On apps that are unaware of this context, the Enterprise Keyboard Tab key might input spaces instead of moving the cursor. For HTML apps, Zebra recommends using the Tab key to navigate from field to field. For help with native-app navigation, please refer to Android developer docs for information about [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html).
+
+------
+
+## Scanner Control
+It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](../../../../datawedge/6-0/guide/setup/#disabledatawedge) in the [DataWedge User Guide](../../../../datawedge). 
 

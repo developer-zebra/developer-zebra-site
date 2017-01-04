@@ -14,6 +14,10 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 * **Scanner Framework 5.1.0** or higher
 * **SimulScan 1.9 or higher** (for devices that support SimulScan)
 
+### What's New in DataWedge 6.1
+
+DataWedge 6.1 implements a whole new  
+
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
 

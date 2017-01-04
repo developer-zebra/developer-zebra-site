@@ -3,18 +3,22 @@
 
 ### I. Create a new BRANCH off the "develop" branch of developer-zebra-site repo
 
-* $ git checkout develop
-* $ git checkout -b eb-1.6  ("eb-1.6" = new branch name)
+	:::term
+	$ git checkout develop
+	$ git checkout -b eb-1.6 develop ("eb-1.6" = new branch name off the "develop" branch)
+
 
 ### II. Create folder structure
 In product folder ("enterprise-browser"), copy folder of prior version
-Rename the copied folder to "1-6" (separate digits with dash, not dot)
+Rename the copied folder to "1-6" (separate digits with a **dash**, **NOT a dot**)
 Search and replace " 'productversion: 1-5' " with " 'productversion: 1-6' " on all pages
 Search and replace "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be "false positives")
 
-* $ git add . (stages all changed files for commit)  
-* $ git commit -m 'EB 1.6 initial commit' (commits the changes, makes a restore point)
-* $ git push --set-upstream origin eb-1.6 (only required for the first push, after that just use "git push" to replicate changes to the online repo)
+	:::term
+	$ git add . (stages all changed files for commit)  
+	$ git commit -m 'EB 1.6 initial commit' (commits the changes, makes a restore point)
+	$ git push --set-upstream origin eb-1.6 (only required for the first push, after that just use "git push" to replicate changes to the online repo)
+
 
 ### III. Modify build script and techdocs "tile-page" 
 
@@ -22,17 +26,26 @@ Search and replace "1.5" with "1.6" in appropriate places (a manual replacement 
 
 * In the /src/index.md file, replicate and modify the prior product's section of the tile page 
 
-* $ node build (builds pages and starts local web server to view them with)
+	:::term
+	$ node build (builds pages and starts local web server to view them with)
+
 Browse to http://localhost:8080/ and click the product's tile to see the pages
 
 ### IV.  Modify/Add/Create pages as necessary for the new version
 After saving major changes, commit them to the repo: 
-* $ git add . (stages all changed files for commit)  
-* $ git commit -m '[optional Jira ticket number] insert brief description of the changes'
+
+	:::term
+	$ git add . (stages all changed files for commit)  
+	$ git commit -m '[optional Jira ticket number] insert brief description of the changes'
+
 
 To see changes: 
 * press CTRL-C in the build tab to quit the local web server 
-* $ node build (to run it again and publish the latest saved changes)
+
+	:::term
+	$ node build (to run it again and publish the latest saved changes)
+
+
 * Refresh the page(s) and revise as necessary
 
 ## WHEN WORK IS COMPLETE...
@@ -48,16 +61,22 @@ To see changes:
 ### VI. Merge into Develop 
 
 * From within the develop branch:
-* $ git merge --no-ff branch-name
-* $ git commit -m 'message describing the merge'
-* $ git push origin develop
+
+	:::term
+	$ git merge --no-ff branch-name
+	$ git commit -m 'message describing the merge'
+	$ git push origin develop
+
 
 ### VII. Merge Develop into Branch
 
 From within the branch that develop is merging into: 
-* $ git merge --no-ff develop
-* $ git commit -m 'message describing the merge'
-* $ git push origin branch-name
+
+	:::term
+	$ git merge --no-ff develop
+	$ git commit -m 'message describing the merge'
+	$ git push origin branch-name
+
 
 ## Add an MX version to Android Studio
 

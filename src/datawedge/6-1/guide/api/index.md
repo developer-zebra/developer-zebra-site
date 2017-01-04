@@ -1,20 +1,22 @@
 ---
-title: DataWedge Data Capture API 
+title: Data Capture API 
 layout: guide.html
 product: DataWedge
 productversion: '6.1'
 ---
 
 ## Overview
-This guide describes the functionality of the DataWedge Data Capture API for Android developers. The Data Capture API provides specific commands that other applications can use to control data capture on Zebra Android devices through DataWedge, without the need to access hardware APIs directly.
+The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
 
-### Requirements
-This guide assumes experience with Android programming and familiarity with the Android intent mechanism. It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and [Advanced Guide](../advanced). it also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
+**DataWedge 6.1 implements a new structure for launching Android intents**, which is part of a transition that will ultimately support multiple intents launched as a single command. As part of this transition, several new commands are introduced in 6.1 that use a new command syntax. DataWedge continues to support all original commands using the original syntax. 
 
-### Interfaces
-An application accesses DataWedge APIs by broadcasting an Intent. It will use the primary pieces of information in an Intent--Action and Data--to specify which API function to perform. 
+#### Requirements
+This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
 
-**DataWedge APIs covered in this guide**: 
+#### Interfaces
+An application accesses the original DataWedge APIs by broadcasting an intent, and uses the primary pieces of information in an intent--Action and Data--to specify which API function to perform. 
+
+**Original DataWedge APIs**: 
 
 * **SoftScanTrigger -** used to start, stop or toggle a software scanning trigger
 * **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
@@ -23,7 +25,125 @@ An application accesses DataWedge APIs by broadcasting an Intent. It will use th
 * **ResetDefaultProfile -** resets the default Profile to Profile0
 * **SwitchToProfile -** switches to the specified Profile
 
+**New APIs in DataWedge 6.1**: 
+
+* **DELETE_PROFILE -** used to delete one or more Profiles
+* **GET_PROFILES_LIST -** returns a list of Profiles in the device
+* **CLONE_PROFILE -** creates a copy of an existing Profile
+* **RENAME_PROFILE -** changes the name of an existing Profile 
+* **GET_ACTIVE_PROFILE -** returns the name of the currently selected Profile
+
 ------
+
+## DataWedge 6.1 APIs
+The APIs in the table below are supported only on DataWedge 6.1 and higher. For the exact usage syntax, sample code for each interface follows the table. 
+
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title"></caption>
+<!--
+<col width="25%" />
+<col width="25%" />
+<col width="50%" />
+-->
+<thead>
+<tr>
+<th align="left" valign="top">Command</th>
+<th align="left" valign="top">Intent Extra(s)</th>
+<th align="left" valign="top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Delete a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.DELETE_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: List of profiles to be deleted<br> <strong>Note: The “*” character deletes all deletable profiles</strong></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Query the Profile list</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_PROFILES_LIST</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br>Values: Empty<br>Result: Intent Extra<br>Type: String array list<br>Name: <strong>com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST</strong><br><strong>Note: Does not list hidden profiles</strong></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Clone a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.CLONE_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: Source profile name, new profile name<br></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Rename a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.RENAME_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: Profile to be renamed, new name for Profile</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Get the Active Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_ACTIVE_PROFILE</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_ACTIVE_PROFILE</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+-----
+
+### Sample Code
+The sample code shown below is for APIs supported only on DataWedge 6.1 and higher. 
+
+#### DELETE_PROFILE 
+
+
+		:::javascript
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		String[] profiles = {"MyProfile"};
+		i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE ", profiles);
+
+-----
+
+#### GET_PROFILES_LIST
+
+
+		:::javascript
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+
+-----
+
+#### CLONE_PROFILE
+
+
+		:::javascript
+		Intent i = getIntent();
+		String[]profiles =i.gettExtra("com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST");
+
+-----
+
+#### RENAME_PROFILE 
+
+
+		:::javascript
+		Intent i = newIntent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		String[] values = {"Profile0", "MyProfile"};
+		i.putExtra("com.symbol.datawedge.api.CLONE_PROFILE ", profiles)
+
+-----
+
+#### GET_ACTIVE_PROFILE
+
+
+		:::javascript
+		Intent i = newIntent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		String[] values = {"TestProfile", "MyProfile"};
+		i.putExtra("com.symbol.datawedge.api.RENAME_PROFILE ", profiles)
+
+-----
+
+## DataWedge 6.x APIs
+The following APIs are supported on DataWedge 6.x and higher using the syntax described below. 
 
 ### SoftScanTrigger
 The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
@@ -143,7 +263,7 @@ Because DataWedge will automatically switch Profile when an activity is paused, 
 
 ------
 
-### enumerateScanners
+### EnumerateScanners
 The enumerateScanners API command can be used to get a list of scanners available on the device.
 
 ####FUNCTION PROTOTYPE
@@ -200,7 +320,7 @@ The scanner and its parameters are set based on the currently active Profile.
 
 ------
 
-### setDefaultProfile
+### SetDefaultProfile
 The `setDefaultProfile` API function can be used to set the specified Profile as the default Profile.
 
 **A Profile specified using this method MUST NOT already be associated with another application**. 
@@ -267,7 +387,7 @@ Zebra recommends that this Profile be created to cater to all applications/activ
 
 ------
 
-### resetDefaultProfile
+### ResetDefaultProfile
 The `resetDefaultProfile` API function can be used to reset the default Profile back to Profile0.
 
 ####FUNCTION PROTOTYPE
@@ -406,14 +526,14 @@ DataWedge auto Profile switching works as follows:
 
 ------
 
-LINKS
+**SEE ALSO**:
 
-[Zebra Support Central](https://www.zebra.com/us/en/support-downloads.html) - Integrator Guides, Product Manuals, Software Downloads and Support
+[Zebra Support Central](https://www.zebra.com/us/en/support-downloads.html) | Integrator Guides, Product Manuals, Software Downloads and Support
 
-[LaunchPad](https://developer.zebra.com/welcome) - Zebra Developer Community
+[LaunchPad](https://developer.zebra.com/welcome) | Zebra Developer Community
 
 [Intent](https://developer.android.com/reference/android/content/Intent.html) | Android Developers
 
 [Intents and Intent Filters](http://developer.android.com/guide/components/intents-filters.html) | Android Developers
 
-[Android Intents](http://www.vogella.com/tutorials/AndroidIntent/article.html) - Tutorial
+[Android Intents](http://www.vogella.com/tutorials/AndroidIntent/article.html) | Tutorial

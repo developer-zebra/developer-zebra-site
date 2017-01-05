@@ -45,14 +45,14 @@ Enabling DataWedge for use by an Enterprise Browser app requires a DataWedge pro
 **If DataWedge version is 6.0.1 and above, then the below configuration need to be followed:**
 
 1. Remove association of **`com.symbol.enterprisebrowser`** from **Disable app list** settings.
-	* In **DataWedge**, select **Menu->Settings->Disabled app list** and remove the association of **`com.symbol.enterprisebrowser`** activity.
+	* In **DataWedge**, select **Menu->Settings->Disabled app list** and remove the association of **`com.symbol.enterprisebrowser`** activity. Note: Ensure to remove the association of **`com.symbol.enterprisebrowser`** activity if it is getting listed again after reboot under **Disable app list** settings location.
 2. **Click the link below** to download the required **DataWedge (`.db`)** profile: 
     * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
 2. **Copy EnterpriseBrowser profile to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
 3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
 4. **Start DataWedge** on the device. 
 5. In **DataWedge**, select **Menu->Settings->Import Profile**.  A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
-6. From the list, **tap the EnterpriseBrowser profile which was copied in Step 2**. When the profile is imported, focus returns to the previous screen and a confirmation message appears. 
+6. From the list, **tap the EnterpriseBrowser profile which was copied in Step 3**. When the profile is imported, focus returns to the previous screen and a confirmation message appears. 
 7. **Tap** the **BACK** button to return to the **DataWedge** profiles list. The **EnterpriseBrowser** profile will also appear in the list and it will be enabled by default.  
 
 **For scanning to be enabled, the following additional conditions also must BOTH be TRUE**:

@@ -6,21 +6,33 @@ productversion: '1.1'
 ---
 ## Overview
 
-#### SimulScan can be used through: 
+**SimulScan can be accessed through**: 
 
-* **[DataWedge](../../../../datawedge)**, which is covered below
-* **A custom Android app**, described in the [SimulScan API guide](../../api)
-* **The [SimulScan Demo App](../demo)**, which exposes all features except the ability to save acquired data
+* [DataWedge](../../../../datawedge), which is covered below
+* The [SimulScan API](../../api) from within a custom Android app 
+* The [SimulScan Demo App](../demo), which exposes all features except the ability to save acquired data
 
-**To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan)**, simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. To get started immediately, **[skip the Template intro](#accessthroughdatawedge)**, which covers the basics of SimulScan and Templates. To learn more, read the short intro below and the [About SimulScan page](../about) before proceeding. 
+**To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan)**, simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. The exact process is detailed below, beginning with a short intro. For more information, see the [About SimulScan page](../about). 
 
 -----
 
 ### Intro to Templates
 
-**Templates are central to the power of SimulScan**; they are used in all modes and control its ability to decode and parse data, and determine how acquired data is consumed by an application. At least one Template must be present and selected on the device before SimulScan can be used; a number of generic Templates are included.
+**Templates are central to the power of SimulScan**; they are used in all modes to: 
 
-Custom Templates can either be Structured or Unstructured. A **Structured Template** is used when the Document to be scanned has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire multiple types of data at once (barcodes, text, images, etc.). **Unstructured Templates** are for target Documents that vary in layout. These Templates are limited to capturing a single data type (only barcodes, only text, etc.), but the target _**data**_ can be located anywhere on the form.
+* Define regions of a form from which to capture data
+* Control SimulScan's ability to decode and parse data
+* Determine how acquired data is consumed by an application
+
+At least one Template must be present and selected within SimulScan before the tool can be used; a number of [generic Templates](#accessthroughdatawedge) are included. Zebra also provides [industry-specific templates](../templates) for partners to downloaded and modify as needed.
+
+For use cases in which generic or pre-built templates are unsuitable, custom Templates can be easily creating using the cloud-based [Template Builder](../templatebuilder) tool. Custom Templates can either be Structured or Unstructured. 
+
+* A **Structured Template** is used when the Document to be scanned has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture.  
+
+* **Unstructured Templates** are predominantly used for capturing a single data type (only barcodes or only text, etc.). Unstructured Templates allow for target Documents that vary in layout, permitting the target _**data**_ to be located anywhere on the form. These are generally used for Multi-barcode use cases. 
+
+**Note**: Use cases involving OCR require that the view finder be positioned directly over the text to be captured. 
 
 #### Structured Templates
 Structured Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used, and that **only the data** will change with each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, SimulScan learns what to expect from each region of a form, which allows the developer to map the data from each region to specific fields of an application. 
@@ -39,9 +51,9 @@ _A Structured Template using Multi Data-type mode would be best here_.
 <br>
 
 #### Unstructured Templates
-Unstructured Templates are useful for scenarios in which the target Document varies, or when acquiring a single type of data--such as barcodes or text--from a form. For example, if the only data ever acquired in a company's warehouse is from barcodes, then warehouse operations might be completely satisfied by using one or more of the generic barcode-only templates included with SimulScan. Included Templates are designed to handle from 1-10 barcodes ([see below](#accessthroughdatawedge)).
+Unstructured Templates are useful for Multi-barcoding use cases in which the target Document varies, or when acquiring a single type of data--such as barcodes or text--from a form. <!-- For example, if the only data ever acquired in a company's warehouse is from barcodes, then warehouse operations might be completely satisfied by using one or more of the generic barcode-only templates included with SimulScan. Included Templates are designed to handle from 1-10 barcodes ([see below](#accessthroughdatawedge)).-->
 
-Alternatively, the company could help improve scanning performance by creating an Unstructured Template that's configured only for the types of barcodes it receives on a regular basis. **Multi-barcode** mode can handle an unlimited number of 1D/2D barcodes of the same or differing symbologies, but works most efficiently if the universe of potential symbologies is narrowed to just a few. 
+Companies could help improve scanning performance and workflow by creating an Unstructured Template that's configured only for the types of barcodes it receives on a regular basis. **Multi-barcode** mode can simultaneously handle a large number of 1D/2D barcodes of the same or differing symbologies, but works most efficiently if the universe of potential symbologies is narrowed to just a few. 
 
 <img style="height:250px" src="AIAG B-10 Label File P, Q, K, V, 4S.jpg"/>
 _An Unstructured Template using Multi-barcode mode would be best here_.  
@@ -97,9 +109,10 @@ If using Templates already present on the device, skip to the "Activate SimulSca
 2. **Select the Template type** to create. 
 3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF; 5MB max.).
 4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
-5. **Save and download** the completed Template(s) to the development host (local PC). 
-6. **Copy Template(s) to** `/enterprise/device/settings/datawedge/templates` on the device. 
-7. **Activate the Template** from within DataWedge (see below) or other scanning app. 
+5. **Save, Release and Deploy** the completed Template(s). 
+6. *Download the Template(s)** (.xml files) to the development host (local PC). 
+7. **Copy Template(s) to** `/enterprise/device/settings/datawedge/templates` on the device. 
+8. **Activate the Template** from within DataWedge (see below) or other scanning app. 
 
 See the [Template Builder guide](../templatebuilder) for details and access information. 
 

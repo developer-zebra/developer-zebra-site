@@ -51,6 +51,8 @@ Before attempting to create a Template, the following assets are required:
 
 **Field-** see Region Field.  
 
+**Fixed layout-** a Document with a layout that doesn't change from one instance to another. Also known as a Structured Target. 
+
 **Form Region of Interest -** the area inside the outer-most border of a Document that contains Field Regions of Interest with data to be acquired.   
 
 **Grouped Regions -** refers to sections of a Document that require Fields (i.e. an address) to be grouped logically as an aid to processing the acquired data. 
@@ -83,7 +85,7 @@ Before attempting to create a Template, the following assets are required:
 
 **Single-Line -** acquisition using OCR of a single line of alpha/numeric characters (i.e. a product number).
 
-**Target, Structured -** a Document with a layout that doesn't change from one instance to another.
+**Target, Structured -** a Document with a layout that doesn't change from one instance to another. Such targets are referred to as having a fixed layout. 
 
 **Target, Unstructured -** a Document with no fixed layout, or a Document that has not been defined with a Template.
 

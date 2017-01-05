@@ -15,23 +15,43 @@ The DataWedge app (included on every Zebra device) makes it possible to fetch ba
 -----
 
 ###Use DataWedge for Scanning
-Enabling DataWedge for use by an Enterprise Browser app requires a DataWedge profile to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
+Enabling DataWedge for use by an Enterprise Browser app requires a DataWedge profile to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android platform only. To use DataWedge from within Enterprise Browser applications, the specific DataWedge version configuration must be followed. 
 
-**To use DataWedge from within Enterprise Browser apps**: 
+**If DataWedge version is 2.2.8 or below, then the below configuration need to be followed:**
 
-Enabling DataWedge for use by an Enterprise Browser app requires a DataWedge profile to be downloaded and activated separately using the steps in the section below. Instructions shown are for Android, and will vary slightly for Windows devices. 
-
-**To use DataWedge from within Enterprise Browser apps**: 
-
-1. **Click the link below** to download the required DataWedge (`.db`) profile: 
-    * [Download dwprofile_rhoelements.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_rhoelements.db)
-    * [Download dwprofile_enterprisebrowser.db](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
-2. **Copy both profiles to the device** into the `/Android/data/com.symbol.datawedge/files` directory, replacing the existing file (if any). 
-3. On the device, **install the Enterprise Browser app that will be using DataWedge** (if not already installed). 
+1. **Click the link below** to download the required **DataWedge (`.db`)** profile: 
+    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
+2. **Copy EnterpriseBrowser profile to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
+3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
 4. **Start DataWedge** on the device. 
-5. In DataWedge, select **Menu->Settings->Import Profile**. A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
+5. In **DataWedge**, select **Menu->Settings->Import Profile**.  A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
+6. From the list, **tap the EnterpriseBrowser profile which was copied in Step 2**. When the profile is imported, focus returns to the previous screen and a confirmation message appears. 
+7. **Tap** the **BACK** button to return to the **DataWedge** profiles list. The **EnterpriseBrowser** profile will also appear in the list and it will be enabled by default. 
+
+**If DataWedge version is between 2.2.9 to 5.1.2, then the below configuration need to be followed:**
+
+1. **Click the link below** to download the required **DataWedge (`.db`)** profiles: 
+    * [Download RhoElements Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_rhoelements.db)
+    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
+2. **Copy both profiles to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
+3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
+4. **Start DataWedge** on the device. 
+5. In **DataWedge**, select **Menu->Settings->Import Profile**.  A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
 6. From the list, **tap the profiles in order which were copied in Step 2**. When the profiles are imported, focus returns to the previous screen and a confirmation message appears. 
-7. **Tap the BACK button** to return to the DataWedge Profiles list. Both profiles are shown and "EnterpriseBrowser" profile is enabled by default.  
+7. **Tap** the **BACK** button to return to the **DataWedge** profiles list. Both **RhoElements** and **EnterpriseBrowser** profiles are listed and the **EnterpriseBrowser** profile will be enabled by default. 
+
+**If DataWedge version is 6.0.1 and above, then the below configuration need to be followed:**
+
+1. Remove association of **`com.symbol.enterprisebrowser`** from **Disable app list** settings.
+	* In **DataWedge**, select **Menu->Settings->Disabled app list** and remove the association of **`com.symbol.enterprisebrowser`** activity. Note: Ensure to remove the association of **`com.symbol.enterprisebrowser`** activity if it is getting listed again after reboot under **Disable app list** settings location.
+2. **Click the link below** to download the required **DataWedge (`.db`)** profile: 
+    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
+2. **Copy EnterpriseBrowser profile to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
+3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
+4. **Start DataWedge** on the device. 
+5. In **DataWedge**, select **Menu->Settings->Import Profile**.  A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
+6. From the list, **tap the EnterpriseBrowser profile which was copied in Step 3**. When the profile is imported, focus returns to the previous screen and a confirmation message appears. 
+7. **Tap** the **BACK** button to return to the **DataWedge** profiles list. The **EnterpriseBrowser** profile will also appear in the list and it will be enabled by default.   
 
 **For scanning to be enabled, the following additional conditions also must BOTH be TRUE**:
 

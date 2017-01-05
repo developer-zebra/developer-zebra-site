@@ -324,7 +324,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send pause</p></td>
-<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
+<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds (default = 0; max. = 1000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Send string</p></td>

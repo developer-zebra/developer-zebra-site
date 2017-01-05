@@ -1,0 +1,37 @@
+---
+csp: ethernetmgr
+title: Ethernet Enable/Disable
+type: parm
+order: 1
+mx: "6.2"
+osx: "6.2"
+apilevel: "23"
+parm:
+  pivotal: No
+  name: EthernetState
+  type: list
+  list:
+    - code: 0
+      mx: "6.2"
+      osx: "6.2"
+      name: Do not change
+      apilevel: "23"
+      description: This value (or the absence of this parm from the XML) will cause no changes to the Ethernet state; any previously selected setting will be retained.
+    - code: 1
+      name: Turn On
+      mx: "6.2"
+      osx: "6.2"
+      apilevel: "23"
+      description: Enables network connectivity through an Ethernet cradle port.
+    - code: 2
+      name: Turn Off
+      mx: "6.2"
+      osx: "6.2"
+      apilevel: "23"
+      description: Disables network connectivity through an Ethernet cradle port.
+---
+
+This is the On/Off switch for Ethernet, controlling the ability of device to connect with a network via Ethernet when it is placed in an Ethernet-equipped cradle. 
+
+**This parameter has no effect on Wi-Fi communications or wireless Ethernet adapter settings**. 
+

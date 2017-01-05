@@ -99,7 +99,7 @@ cellspacing="0" cellpadding="4">
 </div>
 &#42; _Enabled by default_
 
-_**Note**: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section.
+**Note**: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section.
 
 ### Enable/Disable Decoders
 
@@ -191,7 +191,7 @@ Select the appropriate option to match the host system.
 
 **Length2&#42; -** To decode an MSI symbol with a specific length range, set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -223,7 +223,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Codabar symbol with a specific length range, set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 24.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
@@ -239,7 +239,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 24.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Verify Check Digit -** Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.
 
@@ -261,7 +261,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -273,7 +273,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -299,7 +299,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Code 11 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -319,7 +319,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Code 93 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
@@ -331,7 +331,7 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Code 128 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
@@ -383,7 +383,7 @@ _&#42; See **Decode Lengths** section, below_
 **Report Check Digit -** Transmit Matrix 2of5 data with or without the check digit.
 **Verify Check Digit -** Enable this feature to check the integrity of all Matrix 2of5 symbols to verify that the data complies with a specified check digit algorithm.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ------
 
@@ -469,24 +469,24 @@ _&#42; See **Decode Lengths** section, below_
 
 **Length2&#42; -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
-_&#42; See **Decode Lengths** section, below_
+_&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
 
-### Decode Lengths
+## Decode Lengths
 
 The allowable decode lengths are specified by **Length1** and **Length2** as follows:
 
 * **Variable length -** Decode symbols containing any number of characters:
 	* Set both Length1 and Length2 to "0" (zero)
-* **Range -** Decode a symbol with a specific length range (from a to b, including a and b):
-	* Set Length1 to "a" and set Length2 to "b"
-* **Two Discrete Lengths -** Decode only symbols containing either of two selected lengths:
-	* Set Length1 to "b" and Length2 to "a" where "a" is less than "b"
+* **Range -** Decode a symbol with a specific length range from a-b (inclusive):
+	* Set Length1 to "a" (the lower bound) and set Length2 to "b" (the upper bound)
+* **Two Discrete Lengths -** Decode only symbols containing either of two specific lengths:
+	* Set Length2 as the _**shorter**_ length and Length1 as the _**longer**_ one
 * **One Discrete Length -** Decode only symbols containing a specific length:
-	* Set both Length1 and Length2 to the non-zero value
+	* Set both Length1 and Length2 to the desired (non-zero) length
 
 ------
 

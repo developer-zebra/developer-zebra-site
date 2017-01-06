@@ -75,7 +75,7 @@ Below explains what to be done when scanning is required within Enterprise Brows
 1. Remove association of **`com.symbol.enterprisebrowser`** from **Disable app list** settings.
 	* In **DataWedge**, select **Menu->Settings->Disabled app list** and remove the association of **`com.symbol.enterprisebrowser`** activity. 
 	* **Note**: If **`com.symbol.enterprisebrowser`** activity is getting listed again after reboot under **Disable app list** settings location, then do the following as mentioned below:
-	     * **Either** remove the association of **`com.symbol.enterprisebrowser`** activity from **Disable app list** settings location.
+	     * **Either** remove the association of **`com.symbol.enterprisebrowser`** activity from **Disable app list** settings location each time after reboot.
 		 * **Or** upgrade DataWedge version. 
 2. For scanning to be enabled, the below runtime configuration tag must be set to 1:
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
@@ -85,48 +85,5 @@ Below explains what to be done when scanning is required within Enterprise Brows
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
 	
 -----
-
-##Barcode Scanning Options
-
-###Barcode API
-The [Barcode API](../../api/barcode) is the recommended means of performing barcode scans with Enterprise Browser apps. Enterprise Browser also provides the Scanner API, which provides backward compatibility with PocketBrowser and RhoElements apps. Please refer to those products for more information about the Scanner API. 
-
-* API: Barcode
-
-####Example 
-
-    :::javascript
-    EB.Barcode.enable();
-
-###Meta Tags
-This API provides backward compatibility for PocketBrowser and RhoElements applications.
-
-* API: Scanner
-
-####Example 
-
-    :::html
-    <META HTTP-Equiv="scanner" Content="enabled">
-
-###ActiveXObject
-This API provides backward compatibility for PocketBrowser and RhoElements applications.
-
-* API: Scanner
-
-####Example 
-
-    :::javascript
-    var scannerObj = new ActiveXObject("PocketBrowser.Generic"); 
-    scannerObj.InvokeMETAFunction('Scanner', 'enabled');
-
-###JavaScript Object
-This API provides backward compatibility for PocketBrowser and RhoElements applications.
-
-* API: Scanner
-
-####Example 
-
-    :::javascript
-    scanner.enable();
 
 **See also: [DataWedge User Guide](../../../../datawedge)** 

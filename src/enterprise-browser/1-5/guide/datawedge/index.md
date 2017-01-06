@@ -1,6 +1,6 @@
 ---
 title: DataWedge Usage
-productversion: '1.6'
+productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---

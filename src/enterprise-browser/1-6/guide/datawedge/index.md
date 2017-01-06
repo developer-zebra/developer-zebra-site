@@ -21,7 +21,7 @@ Below explains what to be done when scanning is required within Enterprise Brows
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
 
 ###Use EnterpriseBrowser API for Scanning
-In order to use the scanner with Enterprise Browser application you will need to either disable DataWedge application or create a DataWedge profile for Enterprise Browser application. 
+In order to use the scanner with Enterprise Browser application you will need to **either** [Disable DataWedge application](#disable-datawedge) **or** [Create DataWedge Profile](#create-datawedge-profile) for Enterprise Browser application. 
 ####Disable DataWedge:
 1. Start DataWedge application.
 2. Select **Menu->Settings**.
@@ -63,8 +63,8 @@ Below explains what to be done when scanning is required within Enterprise Brows
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
 
 ###Use EnterpriseBrowser API for Scanning
-1. For scanning to be enabled, the below runtime configuration tag must be set to 0:
-    * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
+For scanning to be enabled, the below runtime configuration tag must be set to 0:
+  * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
 
 -----	
 
@@ -81,8 +81,8 @@ Below explains what to be done when scanning is required within Enterprise Brows
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
 
 ###Use EnterpriseBrowser API for Scanning
-1. For scanning to be enabled, the below runtime configuration tag must be set to 0:
-    * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
+For scanning to be enabled, the below runtime configuration tag must be set to 0:
+  * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
 	
 -----
 

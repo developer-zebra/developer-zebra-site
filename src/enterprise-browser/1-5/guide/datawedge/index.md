@@ -76,7 +76,7 @@ Below explains what to be done when scanning is required within Enterprise Brows
 	* In **DataWedge**, select **Menu->Settings->Disabled app list** and remove the association of **`com.symbol.enterprisebrowser`** activity. 
 	* **Note**: If **`com.symbol.enterprisebrowser`** activity is getting listed again after reboot under **Disable app list** settings location, then do the following as mentioned below:
 	     * **Either** remove the association of **`com.symbol.enterprisebrowser`** activity from **Disable app list** settings location each time after reboot.
-		 * **Or** upgrade DataWedge version. 
+		 * **Or** upgrade DataWedge version to 6.1.8 or above. 
 2. For scanning to be enabled, the below runtime configuration tag must be set to 1:
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
 

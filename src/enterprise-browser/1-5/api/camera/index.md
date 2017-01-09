@@ -860,7 +860,7 @@ Setting the value of this property to "true", shall open the System ViewFinder w
 * COMPRESSION_FORMAT_JPGJPG compression.
 * COMPRESSION_FORMAT_PNGPNG compression.
 * OUTPUT_FORMAT_IMAGEThis shall provide the image uri. This can be used to display image directly on the page. An example is shown in the example section
-* OUTPUT_FORMAT_DATAURIThis is a base 64 encoding of the image and can be used to easily embed the image on the page or store the image in a database. On some consumer devices, captured image will be rotated 90 degrees while displaying.
+* OUTPUT_FORMAT_DATAURIThis is a base 64 encoding of the image and can be used to easily embed the image on the page or store the image in a database.
 * OUTPUT_FORMAT_IMAGE_PATHIf this value used for setting the outputFormat property, the takePicture or capture API will return imageUri as the path to the saved image in the device. User can use this image path to transfer the file to an http server if required. An example is given to demonstrate, transferring a file to http server.This property is not applicable for Android and windows phone 8.
 * COLOR_MODEL_RGBA colour image is captured.
 * COLOR_MODEL_GRAYSCALEA grayscale image is captured.
@@ -889,7 +889,7 @@ DataUri output is dependent on availability of virtual space. DataUri may fail, 
 Image Uri display is dependent on browser capability.
 
 ###colorModel as Grayscale in Android
-Grayscale is supported only in the front camera of Android consumer devices.
+Grayscale is not supported on Android devices.
 
 ###Invalid/Null values for properties in Android and iOS
 Only valid and non-empty values for properties are supported in Android and iOS.

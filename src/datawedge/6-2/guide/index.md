@@ -1,30 +1,30 @@
 ---
-title: DataWedge 6.1
+title: DataWedge 6.2
 img: datawedge_logo.png
 layout: list-mx.html
 menu: 
-  title: DataWedge 6.1
+  title: DataWedge 6.2
   items:
     - title: About
-      url: /datawedge/6-1/guide/about
+      url: /datawedge/6-2/guide/about
     - title: Getting Started
-      url: /datawedge/6-1/gettingstarted
+      url: /datawedge/6-2/gettingstarted
     - title: Profiles
-      url: /datawedge/6-1/guide/setup
+      url: /datawedge/6-2/guide/setup
     - title: Decoders
-      url: /datawedge/6-1/guide/decoders
+      url: /datawedge/6-2/guide/decoders
     - title: IP Output
-      url: /datawedge/6-1/guide/ipwedge
+      url: /datawedge/6-2/guide/ipwedge
     - title: Advanced Settings
-      url: /datawedge/6-1/guide/advanced
+      url: /datawedge/6-2/guide/advanced
     - title: APIs
-      url: /datawedge/6-1/guide/demo
+      url: /datawedge/6-2/guide/demo
     - title: Demo
-      url: /datawedge/6-1/guide/api
+      url: /datawedge/6-2/guide/api
     - icon: fa fa-search
-      url: /datawedge/6-1/search
+      url: /datawedge/6-2/search
     - icon: fa fa-download
-      url: /datawedge/6-1/download
+      url: /datawedge/6-2/download
 product: DataWedge
 productversion: '6.2'
 ---

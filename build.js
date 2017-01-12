@@ -623,7 +623,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'datawedge/6-0/'
     }))
    .use(foldermenu({
-        folder: 'datawedge/6-1/'
+        folder: 'datawedge/6-2/'
     }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-4/'

@@ -184,7 +184,7 @@ products:
       - title: What version do I have?
         url: /mx/mx-version-on-device
   - title: SimulScan
-    description: A tool for simultaneously capturing scanned data from multiple label regions.
+    description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
     btn-text: Latest Guides
     image: /simulscan/simulscan_logo.png
@@ -194,15 +194,15 @@ products:
       - title: Setup
         url: /simulscan/1-1/guide/setup
       - title: Template Builder
-        url: /simulscan/1-1/guide/template
+        url: /simulscan/1-1/guide/templatebuilder
       - title: APIs
-        url: /simulscan/1-1/apis
-      - title: Use Cases
-        url: /simulscan/1-1/guide/usecases
+        url: /simulscan/1-1/api
+      - title: Templates
+        url: /simulscan/1-1/guide/templates
       - title: Demo App
         url: /simulscan/1-1/guide/demo
       - title: Licensing
-        url: /simulscan/1-1/guide/licensing
+        url: /simulscan/1-1/guide/license
     versions:
       - url: simulscan/1-1/guide/about
         label: '1.1'

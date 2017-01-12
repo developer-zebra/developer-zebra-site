@@ -26,5 +26,5 @@ menu:
     - icon: fa fa-download
       url: /datawedge/6-1/download
 product: DataWedge
-productversion: '6.1'
+productversion: '6.2'
 ---

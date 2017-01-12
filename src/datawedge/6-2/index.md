@@ -22,6 +22,6 @@ menu:
     - icon: fa fa-search
       url: /datawedge/6-1/search
 product: DataWedge
-productversion: '6.1'
+productversion: '6.2'
 ---
 

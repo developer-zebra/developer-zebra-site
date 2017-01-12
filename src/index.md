@@ -25,7 +25,7 @@ products:
         url: /datawedge/6-2/guide/demo
     versions:
       - url: datawedge/6-2/guide/about
-        label: '6.1'
+        label: '6.2'
       - url: datawedge/6-0/guide/about
         label: '6.0'
       - url: datawedge/5-0/guide/about

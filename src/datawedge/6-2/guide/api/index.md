@@ -8,7 +8,7 @@ productversion: '6.2'
 ## Overview
 The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
 
-**DataWedge 6.2 implements a new structure for launching Android intents**, which is part of a transition that will ultimately support multiple intents launched as a single command. As part of this transition, several new commands are introduced in 6.2 that use a new command syntax. DataWedge continues to support all original commands using the original syntax. 
+**DataWedge 6.2 implements a new structure for launching Android intents**, which is part of a transition that will ultimately support multiple intents launched as a single command. As part of this transition, several new commands are introduced in 6.2 that use a new command syntax. DataWedge continues to support all original commands using their original syntax. 
 
 #### Requirements
 This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -32,6 +32,7 @@ An application accesses the original DataWedge APIs by broadcasting an intent, a
 * **CLONE_PROFILE -** creates a copy of an existing Profile
 * **RENAME_PROFILE -** changes the name of an existing Profile 
 * **GET_ACTIVE_PROFILE -** returns the name of the currently selected Profile
+* **ENABLE_DATAWEDGE -** used to enable/disable the DataWedge app
 
 ------
 
@@ -81,6 +82,11 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_ACTIVE_PROFILE</strong></p></td>
 <td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_ACTIVE_PROFILE</p></div></div></td>
 </tr>
+<tr>
+<td align="left" valign="top"><p class="table">Enable/Disable DataWedge</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.ENABLE_DATAWEDGE</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled</p></div></div></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -108,6 +114,8 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+		Intent i = getIntent();
+		String[]profiles = i.gettExtra("com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST ");
 
 -----
 
@@ -115,8 +123,11 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 
 
 		:::javascript
-		Intent i = getIntent();
-		String[]profiles =i.gettExtra("com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST");
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION"); 
+		String[] values = {"Profile0", "MyProfile"};
+		i. putExtra("com.symbol.datawedge.api.CLONE_PROFILE ", profiles);
+
 
 -----
 
@@ -126,8 +137,9 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		:::javascript
 		Intent i = newIntent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
-		String[] values = {"Profile0", "MyProfile"};
-		i.putExtra("com.symbol.datawedge.api.CLONE_PROFILE ", profiles)
+		String[] values = {"TestProfile", "MyProfile"};
+		i.putExtra("com.symbol.datawedge.api.RENAME_PROFILE ", profiles);
+
 
 -----
 
@@ -137,8 +149,21 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		:::javascript
 		Intent i = newIntent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
-		String[] values = {"TestProfile", "MyProfile"};
-		i.putExtra("com.symbol.datawedge.api.RENAME_PROFILE ", profiles)
+		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE ", "")
+		Intent i = getIntent();
+		String profile = i.gettExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
+
+
+-----
+
+#### ENABLE_DATAWEDGE
+
+		:::javascript
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.ENABLE_DATAWEDGE", enable);
+		//sendBroadcast(i);
+
 
 -----
 
@@ -153,7 +178,9 @@ The SoftScanTrigger API command can be used to start, stop or toggle a software 
 	Intent i = new Intent();
 	i.setAction(ACTION);
 	i.putExtra(EXTRA_DATA, "<parameter>");
-	PARAMETERS
+
+
+####PARAMETERS
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER"
 
@@ -216,7 +243,9 @@ The ScannerInputPlugin API command can be used to enable/disable the scanner plu
 	Intent i = new Intent();
 	i.setAction(ACTION);
 	i.putExtra(EXTRA_DATA, "<parameter>");
-	PARAMETERS
+
+
+####PARAMETERS
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN"
 
@@ -234,7 +263,7 @@ Error and debug messages will be logged to the Android logging system which then
 
 	$ adb logcat -s DWAPI
 
-Error messages will be logged for invalid actions and parameters
+Error messages will be logged for invalid actions and parameters. 
 
 
 ####EXAMPLE
@@ -281,7 +310,7 @@ Error and debug messages will be logged to the Android logging system which then
 
 	$ adb logcat -s DWAPI
 
-Error messages will be logged for invalid actions and parameters
+Error messages will be logged for invalid actions and parameters. 
 
 ####EXAMPLE
 

@@ -12,6 +12,8 @@ menu:
       url: /simulscan/1-1/guide/setup
     - title: Template Builder
       url: /simulscan/1-1/guide/templatebuilder
+    - title: Glossary
+      url: /simulscan/1-1/guide/glossary
     - title: Pre-built Templates
       url: /simulscan/1-1/guide/templates
     - title: APIs

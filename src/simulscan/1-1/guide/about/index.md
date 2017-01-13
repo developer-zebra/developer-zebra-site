@@ -17,7 +17,7 @@ Such scenarios are perfect for SimulScan [Multi-barcoding](../setup/#unstructure
 
 Alternatively, SimulScan [Mixed Data-type](../setup/#structuredtemplates) is ideal for data capture when...
 
-* **Scanned forms are of a [fixed layout](../templatebuilder/#glossary)**, and...
+* **Scanned forms are of a [fixed layout](../glossary)**, and...
 * **Forms have well-defined borders**.
 
 -----
@@ -66,7 +66,7 @@ SimulScan can be accessed either by:
 SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
 
 
-See the [SimulScan Glossary](../templatebuilder/#glossary) for a complete list of terms. 
+See the [SimulScan Glossary](../glossary) for a complete list of terms. 
 
 <!--
 ![img](regions_of_interest.png)

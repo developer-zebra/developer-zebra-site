@@ -71,7 +71,7 @@ _An Unstructured Template using Multi-barcode mode would be best here_.
 ### Access Through DataWedge
 SimulScan includes a number of generic Templates for common scanning scenarios that DataWedge can use when SimulScan is selected as the Input Plug-in. For more advanced use-cases, custom Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and imported and modified with Template Builder. 
 
-**Templates included with DataWedge**:
+**Templates included with DataWedge** and the [Demo App](..demo):
 
 * **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check. 
 
@@ -109,8 +109,8 @@ If using Templates already present on the device, skip to the "Activate SimulSca
 2. **Select the Template type** to create. 
 3. **Upload an image** of the Document to be scanned (.bmp, .jpg, .png or PDF; 5MB max.).
 4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
-5. **Save, Release and Deploy** the completed Template(s). 
-6. *Download the Template(s)** (.xml files) to the development host (local PC). 
+5. **Validate Template** to confirm that created fields are captured as intended. 
+6. **Save, Release and Deploy** the completed Template(s), which can be downloaded to the development host (local PC). 
 7. **Copy Template(s) to** `/enterprise/device/settings/datawedge/templates` on the device. 
 8. **Activate the Template** from within DataWedge (see below) or other scanning app. 
 

@@ -106,9 +106,9 @@ _SimulScan's Advanced Settings panel_.
 
 **Advanced Settings**:
 
-**Identification Timeout -** sets the number of seconds (from 5-30) after which SimulScan will stop trying to identify a Document described by the selected Template. 
+**Identification Timeout -** sets the number of seconds (from 5-30) SimulScan will attempt to identify a Document described by the selected Template. 
 
-**Processing Timeout -** sets the number of seconds (from 5-30) after which SimulScan will stop trying to process an identified Document. 
+**Processing Timeout -** sets the number of seconds (from 5-30) SimulScan will attempt to process an identified Document. 
 
 **Audio Feedback -** plays a beep sound to indicate processing success.   
 

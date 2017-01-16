@@ -73,11 +73,12 @@ From within the branch that develop is merging into:
 ## Add a new CSP to MX
 
 * Create a branch off develop
-* Analyze the new CSP's DSD for the number and types of parameters
+* Analyze the new CSPs DSD for the number and types of parameters
 * Identify and copy an existing CSP that's similar to the new one
 * Rename the folders as needed to correspond to the new DSD
 * Search and replace the contents of the copied index.md files for mx: "x.x"; osx: "x.x"; apilevel: "xx"; csp: name; and any other global information, as appropriate
 * Manually edit remaining file content as appropriate to document usage CSP (see gerrit repo for Mini-HLD, release notes and other techteam artifacts provided by engineering. Also see APA slides)
-* Edit /mx/index.md; /mx/newcspname/index.md; /mx/compatibility/index.md as needed for the new CSP
+* Edit /mx/index.md; /mx/newCSPname/index.md; /mx/compatibility/index.md as needed for the new CSP
 * Edit /src/build.js
 * If a new version of MX or OSx is required, edit /partials/navbar-smartdocs.html
+* copy edited build and navbar-smartdocs files to stage and production servers

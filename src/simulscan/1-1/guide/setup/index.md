@@ -16,7 +16,7 @@ productversion: '1.1'
 
 -----
 
-### Intro to Templates
+### About Templates
 
 **Templates are central to the power of SimulScan**; they are used in all modes to: 
 
@@ -26,52 +26,14 @@ productversion: '1.1'
 
 At least one Template must be present and selected within SimulScan before the tool can be used; a number of [generic Templates](#accessthroughdatawedge) are included. Zebra also provides [industry-specific templates](../templates) for partners to downloaded and modify as needed.
 
-For use cases in which generic or pre-built templates are unsuitable, custom Templates can be easily creating using the cloud-based [Template Builder](../templatebuilder) tool. Custom Templates can either be Structured or Unstructured. 
-
-* A **Structured Template** is used when the Document to be scanned has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture.  
-
-* **Unstructured Templates** are predominantly used for capturing a single data type (only barcodes or only text, etc.). Unstructured Templates allow for target Documents that vary in layout, permitting the target _**data**_ to be located anywhere on the form. These are generally used for Multi-barcode use cases. 
-
-**Note**: Use cases involving OCR require that the view finder be positioned directly over the text to be captured. 
-
-#### Structured Templates
-Structured Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used, and that **only the data** will change with each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, SimulScan learns what to expect from each region of a form, which allows the developer to map the data from each region to specific fields of an application. 
-
-For example, if a form like the one below was encountered regularly, a Structured Template using **Mixed Data-type** mode could be created to acquire the barcode, numbers, text, checkboxes and signature in a single pass. For a demonstration using this form, see the [SimulScan Demo App](../demo). 
-
-<img style="height:300px" src="template.png"/>
-_A Structured Template using Multi Data-type mode would be best here_. 
-<br>
-
-**Notes**:
-
-* **Zebra recommends using the camera for Mixed Data-type** capture.
-* The camera is automatically selected when a Mixed Data-type Template is used.
-* Structured Templates are generally associated with Mixed Data-type mode.  
-<br>
-
-#### Unstructured Templates
-Unstructured Templates are useful for Multi-barcoding use cases in which the target Document varies, or when acquiring a single type of data--such as barcodes or text--from a form. <!-- For example, if the only data ever acquired in a company's warehouse is from barcodes, then warehouse operations might be completely satisfied by using one or more of the generic barcode-only templates included with SimulScan. Included Templates are designed to handle from 1-10 barcodes ([see below](#accessthroughdatawedge)).-->
-
-Companies could help improve scanning performance and workflow by creating an Unstructured Template that's configured only for the types of barcodes it receives on a regular basis. **Multi-barcode** mode can simultaneously handle a large number of 1D/2D barcodes of the same or differing symbologies, but works most efficiently if the universe of potential symbologies is narrowed to just a few. 
-
-<img style="height:250px" src="AIAG B-10 Label File P, Q, K, V, 4S.jpg"/>
-_An Unstructured Template using Multi-barcode mode would be best here_.  
-<br>
-
-**Notes**:
-
-* **Zebra recommends using the 2D imager for capturing in Multi-barcode mode**.
-* The device imager is automatically selected for Barcode-only Templates.
-* The camera is automatically selected for OCR Templates.  
-* All [Zebra devices that support SimulScan](../about/#supporteddevices) are equipped with 1D/2D imagers (except early TC70 models).
+For use cases in which generic or pre-built templates are unsuitable, custom Templates can be easily creating using the cloud-based [Template Builder](../templatebuilder) tool. See the Template Builder guide for more information about Templates. 
 
 -----
 
 ### Access Through DataWedge
 SimulScan includes a number of generic Templates for common scanning scenarios that DataWedge can use when SimulScan is selected as the Input Plug-in. For more advanced use-cases, custom Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and imported and modified with Template Builder. 
 
-**Templates included with DataWedge** and the [Demo App](..demo):
+**Templates included with DataWedge** and the [SimulScan Demo App](../demo):
 
 * **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check. 
 

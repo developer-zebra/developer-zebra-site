@@ -22,6 +22,8 @@ menu:
       url: /simulscan/1-1/guide/demo
     - title: Licensing
       url: /simulscan/1-1/guide/license
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/community/android/simulscan/discussions
     - icon: fa fa-search
       url: /simulscan/1-1/search
 product: SimulScan

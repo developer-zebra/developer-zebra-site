@@ -1999,7 +1999,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 
 ## Remarks
 ### <a name="_scandecodewav"></a>ScanDecodeWav on Android Platform
-If ScanDecodeWav configuration paramater contains the '.wav'/'.ogg' filename same as system filename, then the system '.wav'/'.ogg' file will be selected for playing when a scanned barcode is successfully decoded.
+If ScanDecodeWav configuration paramater contains '.wav'/'.ogg' filename same as system filename, then the system '.wav'/'.ogg' file will be selected for playing when a scanned barcode is successfully decoded.
 
 ### <a name="_batteryRefresh"></a>Battery Polling on Enterprise Tablet
 Due to its asynchronous battery notification, the Enterprise Tablet does not support BatteryRefresh. This has the effect of launching a bateryEvent only when the battery level changes. This functionality has been implemented in place of polling as a means of maximizing battery power.

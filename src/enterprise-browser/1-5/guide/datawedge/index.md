@@ -86,4 +86,4 @@ For scanning to be enabled, the below runtime configuration tag must be set to 0
 	
 -----
 
-**See also: [DataWedge User Guide](../../../../datawedge)** 
+**See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/5-0/guide/about/)** 

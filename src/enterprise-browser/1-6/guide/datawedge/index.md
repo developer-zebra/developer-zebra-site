@@ -51,7 +51,7 @@ Below explains what to be done when scanning is required within Enterprise Brows
 
 ###Use DataWedge for Scanning
 1. **Click the link below** to download the required **DataWedge (`.db`)** profiles: 
-    * [Download RhoElements Profile]https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_RhoElements.db)
+    * [Download RhoElements Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_RhoElements.db)
     * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_EnterpriseBrowser.db)
 2. **Copy both profiles to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
 3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 

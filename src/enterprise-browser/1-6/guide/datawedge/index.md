@@ -46,13 +46,13 @@ In order to use the scanner with Enterprise Browser application you will need to
 
 -----
 
-##Guidelines for DataWedge Version - Between 2.2.9 to 5.1.2
+##Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13
 Below explains what to be done when scanning is required within Enterprise Browser application either using DataWedge application or Enterprise Browser Barcode API.
 
 ###Use DataWedge for Scanning
 1. **Click the link below** to download the required **DataWedge (`.db`)** profiles: 
-    * [Download RhoElements Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_rhoelements.db)
-    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_enterprisebrowser.db)
+    * [Download RhoElements Profile]https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_RhoElements.db)
+    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_EnterpriseBrowser.db)
 2. **Copy both profiles to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
 3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
 4. **Start DataWedge** on the device. 

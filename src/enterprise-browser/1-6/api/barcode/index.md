@@ -1991,7 +1991,7 @@ The volume of the device beeper when a barcode is scanned. It will accept values
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Path to a local '.wav' file to be played when the scanner successfully decodes a barcode. The '.wav' file must reside on the device. This will override the existing scanner beeper settings. The decodeSound property doesnot rely on decodeDuration, decodeFrequency and decodeVolume properties. Calling this method, the ScanDecodeWav config tags value will not be applied. Note: On Android platform, '.ogg' file is also supported.
+Path to a local '.wav' file to be played when the scanner successfully decodes a barcode. The '.wav' file must reside on the device. This will override the existing scanner beeper settings. The decodeSound property doesnot rely on decodeDuration, decodeFrequency and decodeVolume properties. Calling this method, the ScanDecodeWav config tags value will not be applied. Note: On Android platform, '.ogg' file is also supported. See [remarks](#limitation-of-decodesound-property-on-android-platform) section below.
 ####Access
 
 

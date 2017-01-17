@@ -10,7 +10,7 @@ The DataWedge app (included on every Zebra device) makes it possible to fetch ba
 
 **Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Enterprise Browser Barcode APIs will be inoperable. Likewise, an Enterprise Browser app that uses Barcode APIs will prevent other apps (including DataWedge) from accessing the scanner. This guide explains how to take control of a device's scanner hardware and how to subsequently release it to other apps. 
 
-**See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/5-0/guide/about/)** 
+**See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/6-0/guide/about/)** 
 
 -----
 ##Guidelines for DataWedge Version - 2.2.8 or below
@@ -86,4 +86,4 @@ For scanning to be enabled, the below runtime configuration tag must be set to 0
 	
 -----
 
-**See also: [DataWedge User Guide](../../../../datawedge)** 
+**See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/6-0/guide/about/)**

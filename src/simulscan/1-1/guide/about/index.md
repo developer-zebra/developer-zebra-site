@@ -8,6 +8,8 @@ productversion: '1.1'
 ## Overview
 Zebra's SimulScan is a set of productivity tools that can optimize the efficiency of data-capture workflow by enabling workers to acquire multiple points of data in a single step. When integrated with SimulScan APIs, captured data can be parsed directly into an organization's native applications. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t6tbOlcgPDk" frameborder="0" allowfullscreen></iframe>
+
 **SimulScan Can Help Optimize Workflows If...** 
 
 * **Scanning is frequent** in the organization, and...

@@ -36,16 +36,15 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 
 #### Templates can be either Structured or Unstructured 
 
-* A **Structured Template** is used when the Document to be scanned (aka "Target) has a fixed layout--one that doesn't change from one instance of the form to another. 
+**A Structured Template** is used when the Document to be scanned (aka "Target") has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture. For example, a company that often encounters a fixed-format form such as the Postal/T&L example (shown below) would create a Structured Template to identify **1) the location of each field** to be captured and ** 2) the type of data to be processed** from each identified field.  
 
-Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture. For example, a company that often encounters a fixed-format form such as the Postal/T&L example (shown below) would create a Structured Template to identify **1) the location of each field** to be captured and ** 2) the type of data to be processed** from each identified field.  
+**Structured Templates are used to**: 
 
-* **Use Structured Templates to**: 
-
-* Scan barcodes, text and other data types from a single form 
-* Use OCR to acquire alpha/numeric characters
-* Use OMR to determine the presence of check marks
-* Detect the presence of and capture Signature(s) or other images
+* **Scan barcodes**, text and other data types from a single form 
+* Acquire alpha/numeric characters with **OCR**
+* Determine the status of checkboxes with **OMR**
+* Detect the presence of and **capture Signature(s)** or other images
+* Extract data from travel documents using **MRZ** 
 * Extract data from other key fields of interest
 
 * **Unstructured Templates** are predominantly used for capturing a single data type (for example, only barcodes). 
@@ -97,7 +96,7 @@ _An Unstructured Template using Multi-barcode mode would be best here_.
 
 Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alpha/numeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. Templates uniquely identify each region and data type of a particular form, allowing SimulScan to capture the data quickly and accurately, and permitting developers to map the acquired data to specific fields of their application. 
 
-For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode Template](#selecttemplatetype) to map the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the lower row to the corresponding fields of an application. 
+For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode Template](#2selecttargettype) to map the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the lower row to the corresponding fields of an application. 
 
 -----
 
@@ -111,7 +110,7 @@ Below is a summary of the steps for creating a Template. The process is explaine
 
 1. **Log in** to the [Template Builder web site](http://simulscan.zebra.com).
 2. **Select the Template type** required. 
-3. **Upload an image** of the Document to be scanned (bmp, jpg, png or PDF; 5MB max.).
+3. **Upload an image** of the Target Document to be scanned (bmp, jpg, png or PDF; 5MB max.).
 4. **Identify regions** of the Document and the data types (barcodes, text, etc.) of each.
 5. **Save and download** the completed Template(s) to the development host (local PC). 
 6. **Copy Template(s) to the device** that will be performing the scans. 
@@ -142,7 +141,7 @@ Current account holders can skip to Step 2.
 Then:
 
  * An Open... dialog appears
- * Select and upload an image of the Document for which to create the Template, observing the following parameters:
+ * Select and upload an image of the Target Document for which to create the Template, observing the following parameters:
   * Supported file types: **bmp, jpg, png or PDF** 
   * Min. res: **640x480**
   * Max. res: **6000x6000**
@@ -150,8 +149,8 @@ Then:
   * For a PDF, select page number from the drop-down (if necessary) 
  * Confirm that the "AutoCrop" feature (enabled by default) has accurately identified the Document boundaries (image 3).
  * If boundary adjustments are necessary, click "Disable AutoCrop" and set the Blue bounding box so that it's just outside the borders of the Document. Click "OK" when done. This creates the "Form Region of Interest" for the Document.
- * Save the Template to proceed (image 4). **Note**: The Template name prefix "Default -" is reserved for system use. All other alpha/numeric combinations are accepted. 
- * After saving the new Template, the uploaded image appears. Drag a box <u>from the upper-left corner to the lower-right corner</u> over each Region of the Document that contains data to be acquired. This creates the Field Regions of Interest (image 5). 
+ * Click OK and Save the Template to proceed (image 4). **Note**: The Template name prefix "Default -" is reserved for system use. All other alpha/numeric combinations are accepted. 
+ * After saving the new Template, the uploaded image appears (image 5). Drag a box <u>from the upper-left corner to the lower-right corner</u> over each Region of the Document that contains data to be acquired. This creates the Field Regions of Interest. 
  * When finished, [configure Field settings](#3configuresettings) as required. 
 
 ![img](template2-5.png)
@@ -179,8 +178,8 @@ _Click image to enlarge_
 Then:
 
 * Select "Multi-barcode" to capture barcodes or "OCR" for alpha/numeric text:
-  * **If selecting Multi-barcode, upload an image of the target Document** to help SimulScan identify the form. 
-  * **If selecting OCR**, Template Builder generates a static image automatically (as below). 
+  * **If selecting Multi-barcode, upload an image of the target Document** to define the Fields and help SimulScan identify the form (image 4, below). 
+  * **If selecting OCR**, Template Builder generates a static image automatically (image 5, below). 
 * [Configure OCR settings](#3configuresettings) as required. 
 
 ![img](template1-4.png)
@@ -203,13 +202,15 @@ Provide (or confirm) the following required settings for each Field created:
  * Properties (length/width and X-Y coordinates)
  * The required Processing mode (barcode, OCR, etc.) 
  * Processing-mode settings (decoder type, text type, etc.)
- * Select at least two "[Anchor Elements](#selectanchorelements)" (explained below) 
+ * Select at least two "[Anchor Elements](#4selectanchorelements)" (explained below) 
 
 > **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
 
 ![img](image6c.png)
 _Click image to enlarge_
 <br>
+
+-----
 
 #### Field Properties Panel
 The Field Properties panel is visible in the far-left column, and presents the Properties of the selected Field. Field Properties can be configured as follows:
@@ -299,6 +300,8 @@ SimulScan references the [Perl Compatible Regular Expressions (PCRE)](http://www
 
 **Language -** English is the default. Switching to European will recognize characters typically found in European languages such as the digraph, circumflex and umlaut.
 
+-----
+
 #### OMR Settings
 The data type for optical mark recognition (OMR) is binary, resulting in the acquisition of a yes/no condition (i.e. "mark is present" or "mark is not present"). A third "undecided" state results when SimulScan is unable to recognize a mark. Use OCR to acquire the label that describes the mark, if desired. 
 
@@ -330,6 +333,8 @@ _Click image to enlarge_
 4. Adjust settings as needed according to descriptions that follow the image below: 
 ![img](image32.png)
 <br>
+
+-----
 
 ##### Template Settings Panel
 
@@ -398,7 +403,7 @@ In the Postal T&L Document below, the logo in the upper-left corner and the barc
 _Draw Fields tightly around barcodes and loosely around graphics for best results_.    
 <br>
 
-When using a fixed barcode as an Anchor Element, be sure to **select the “Barcode’s location is fixed” in the Properties panel**, as below: 
+When using a fixed barcode as an Anchor Element, be sure to **select “Barcode’s location is fixed” in the Properties panel**, as below: 
 ![img](image29.png)
 _This attribute appears only in Templates for Structured Targets that use a non-postal symbology_.
 <br>
@@ -453,7 +458,8 @@ A Validation Summary is displayed with one of more of the following messages:
 * (√) = "Success!" 
 * (X) = "Error!" 
 
- 
+-----
+
 #### Validation Preview
 
 Following validation, test results can be reviewed by clicking on “View Preview” button as in the image below. 
@@ -464,7 +470,7 @@ Following validation, test results can be reviewed by clicking on “View Previe
 The image below shows a validation preview. Clicking on any Field in the image area displays in the left-hand column the data that is parsed by that Field. In addition to decoded output, OCR data also shows the accuracy level (high, medium or low) for each line of the region parsed. Regions designated as OMR indicate their status (Checked, UnChecked or Undecided). <!-- Notice also the warning symbol on the Document logo, in this case indicating insufficient surrounding white space?? -->
 
 ![img](image28.png)
-_Click image to enlarge_.
+_Click image to enlarge_
 
 <!-- ![img](validation_failure.png)
 <br> -->
@@ -477,12 +483,14 @@ After settings are configured and validated, **select File -> Download Template*
 ![img](image40.png)
 <br>
 
-**The Template can now be deployed to scanning devices**. 
+**Once downloaded, the Template can be deployed to scanning devices**. 
 
 > **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files, and are not intended to be edited manually. 
 
+-----
+
 #### How and Where to Place Files
-If using SimulScan through [DataWedge](../../../../datawedge), **Template files must be in the directory shown below**. 
+If using SimulScan through [DataWedge](../../../../datawedge), **Template file(s) must be in the directory shown below**. 
 
 **For DataWedge**:
 
@@ -494,12 +502,10 @@ If using SimulScan through [DataWedge](../../../../datawedge), **Template files 
 
 **For a custom app**:
 
-* Any device folder accessible by the app 
+* Any device folder accessible by the app, or...
+* In `/templates/release/` on the Template Builder server (see `FetchTemplate()`, below)
 
-**Notes**:
-
-* All files deployed into `/enterprise/` will persist on the device following an Enterprise Reset. 
-* If using SimulScan through a custom-built Android app, Template(s) can be deployed to any folder accessible by the app or can remain online (see below). 
+**Note**: All files in `/enterprise/` on the device will persist following an Enterprise Reset. 
 
 **Methods of Template deployment**: 
 
@@ -508,8 +514,8 @@ If using SimulScan through [DataWedge](../../../../datawedge), **Template files 
 * Remotely through a company's own mobile device management (MDM) system (if supported by that system)
 * **Programmatically through [EMDK for Android](../../../../emdk-for-android)** development tools
 
-#### Using the "FetchTemplate()" method call
-Templates saved to the `/<accountID>/templates/release/` folder on the Template Builder web site can be retrieved programmatically through EMDK APIs using the `FetchTemplate()` method. Use Template Builder to identify the exact path name when calling the method. 
+#### Using the `FetchTemplate()` method call
+Templates saved to the `/<accountID>/templates/release/` folder on the Template Builder server can be retrieved programmatically through EMDK APIs using the `FetchTemplate()` method. Use Template Builder to identify the exact path name when calling the method. 
 
 **For example, the path to the server-based Templates folder** from the image below would be: 
 
@@ -525,7 +531,23 @@ Templates saved to the `/<accountID>/templates/release/` folder on the Template 
 
 A copy of the Template is placed in the `/release` folder; the Template also remains in its original location. When the method is called, **the specified Template is copied to the device**. 
 
+-----
+
+## Modify a Template
+Existing Templates can be modified to address changes that occur to incoming Documents, to allow for workflow changes, to make adjustments to OCR or other settings based on input from the field, or for any other reason. 
+
 > **Warning: Do not attempt to modify the Template file by hand**. Templates contain machine-generated XML stored in Base64-encoded files, and are not intended to be edited manually. 
+
+**To modify an existing Template**:
+
+1. Log into the [Template Builder web site](https://simulscan.zebra.com). 
+2. Click the **Open Template button** or select **File -> Open Template** to Open the template to be modified.
+3. Edit Template settings as required.
+4. Save using **File --> Save Template** or **File --> Save as...** to create a new version. 
+5. Test, Validate and Deploy as explained above. 
+
+![img](save_as.png)
+<br>
 
 -----
 
@@ -559,19 +581,7 @@ As Templates are added, thumbnails will appear in the far-left column and field 
 
 &#53;. **Repeat Step 4 until all required templates are added** (max = 6).  
 
-&#54;. **To deploy Multi-template(s), see [Deploy Templates](#deploytemplates)** section, above. 
-
------
-
-## Modify a Template
-Existing Templates can be modified to address changes that occur to incoming Documents, to allow for workflow changes, to make adjustments to OCR or other settings based on input from the field, or for any other reason. 
-
-1. Log into the [Template Builder web site](https://simulscan.zebra.com). 
-2. Open the template to be modified.
-3. Edit Template settings as required.
-4. Save using **File --> Save Template** >>OR<< save as a new Template using **File --> Save as...**
-
-![img](save_as.png)
+&#54;. **To deploy Multi-template(s), see [Deploy Templates](#6deploytemplates)** section, above. 
 
 -----
 

@@ -249,12 +249,12 @@ Bluetooth scanners are supported according to the following rules:
 * **After initial configuration**, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
 * **DataWedge will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
 * **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataWedge will revert to the current default scanner.
-* **Keep Enabled on Suspend -** This mode is supported on Bluetooth scanners only, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra RS507 will wake from suspend mode when the scan trigger is pressed**.
+* **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
 
 ## SimulScan Input 
 The SimulScan Input Plug-in permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins. 
 
-<img style="height:350px" src="Figure_13_SimulScan_prefs.png"/>
+<img style="height:350px" src="keystroke-output.png"/>
 _SimulScan Input Plug-in options_.
 <br>
 
@@ -318,7 +318,7 @@ Possible values:
 ## Keystroke Output
 The Keystroke Output Plug-in collects the processed data and sends it to the associated application as a series of keystrokes, emulating the actions of a user pressing the keys. 
 
-<img style="height:350px" src="keystroke_output.png"/>
+<img style="height:350px" src="keystroke-output.png"/>
 _Keystroke Output Plug-in options_. 
 <br>
 
@@ -331,9 +331,13 @@ Possible values:
 * **Line feed -** inject action key in place of ASCII LF (0x0A) character
 * **Carriage return -** inject action key in place of ASCII CR (0x0D) character
 
-<!-- Multi-byte character delay - Inter-character delay (in ms) for multi-byte characters. This parameter can help avoid problems that arise while sending Unicode and multi-byte characters to the Android browser. The value is set to zero by default. If you see any errors in the delivery of keystrokes adjust the delay to a higher value e.g. 100 ms.
+**Multi byte character delay -** used to set an inter-character delay (in ms) for sending multibyte characters. This parameter can help avoid problems that arise when sending Unicode and multibyte characters to the Android browser. Value is set to zero by default. If experiencing errors in the delivery of keystrokes, increase the delay value in increments of 100 ms.
 
-Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).-->
+**Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application. 
+
+<!-- 
+Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).
+-->
 
 ## Basic Data Formatting
 The Basic Format Process Plug-in provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to an Output Plug-in. It also permits the conversion of data to hexadecimal format. If the Basic Formatting Plug-in is not enabled, captured data is passed to the selected Output Plug-in without modification.

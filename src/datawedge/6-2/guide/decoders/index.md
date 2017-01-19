@@ -610,15 +610,15 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 ------
 
-**Picklist -** Permits selection of Picklist mode, which instructs the imager to decode only the barcode directly under the cross-hair/reticle. This feature is most useful for applications in which multiple barcodes may appear in the field of view during a decode session but only one is desired for decoding.
+**Picklist -** Permits selection of Picklist mode, which instructs the imager to decode only the barcode directly under the cross-hair/reticle in the viewfinder. This feature is most useful for applications in which multiple barcodes may appear in the field of view during a decode session but only one is desired for decoding.
 
 * **Disable -** Disables Picklist mode; any barcode within the field of view can be decoded.
 
 * **Hardware Picklist -** Picklist mode is enabled by sending a command to hardware.
 
-* **Software Picklist -** Picklist feature is handled in the software. No commands are sent to hardware.
+* **Software Picklist -** Picklist feature is handled in the software; no commands are sent to hardware.
 
-**Note: The hardware picklist offers better performance**.
+**Note: Performance might vary on some devices if Hardware or Software Picklist modes are set**.
 
 ------
 
@@ -724,7 +724,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 ------
 
-Refer to the [Advanced Settings Guide](../advanced) for information about Advanced Data Formatting, Profile Import/Export, Configuration File Management and Mass Deployment. 
+See the [Advanced Settings Guide](../advanced) for information about Advanced Data Formatting, Profile Import/Export, Configuration File Management and Mass Deployment. 
 
 
 

@@ -103,7 +103,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		String[] profiles = {"MyProfile"};
-		i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE ", profiles);
+		i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE", profiles);
 
 -----
 
@@ -114,8 +114,9 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+		//send intent
 		Intent i = getIntent();
-		String[]profiles = i.gettExtra("com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST ");
+		String[] profiles = i.gettExtra("com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST");
 
 -----
 
@@ -126,7 +127,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION"); 
 		String[] values = {"Profile0", "MyProfile"};
-		i. putExtra("com.symbol.datawedge.api.CLONE_PROFILE ", profiles);
+		i. putExtra("com.symbol.datawedge.api.CLONE_PROFILE ", values);
 
 
 -----
@@ -138,7 +139,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		Intent i = newIntent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		String[] values = {"TestProfile", "MyProfile"};
-		i.putExtra("com.symbol.datawedge.api.RENAME_PROFILE ", profiles);
+		i.putExtra("com.symbol.datawedge.api.RENAME_PROFILE ", values);
 
 
 -----
@@ -147,9 +148,10 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 
 
 		:::javascript
-		Intent i = newIntent();
+		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE ", "")
+		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+		//send intent
 		Intent i = getIntent();
 		String profile = i.gettExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
 
@@ -162,7 +164,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.ENABLE_DATAWEDGE", enable);
-		//sendBroadcast(i);
+		//send intent;
 
 
 -----

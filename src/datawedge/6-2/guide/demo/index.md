@@ -10,7 +10,7 @@ DWDemo is an app that demonstrates how data is acquired by an application using 
 
 This guide requires a working knowledge of DataWedge Profiles. For more information about Profile settings, see the [DataWedge Setup Guide](../setup).  
 
-<img style="height:350px" src="01_demo_app.png"/>
+<img style="height:350px" src="DWDemo-icon-in-launcher.png"/>
 _The DWDemo app as it appears in the Android App Drawer_. 
 <br>
 

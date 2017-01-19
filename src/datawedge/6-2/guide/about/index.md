@@ -2,17 +2,21 @@
 title: About DataWedge
 layout: guide.html
 product: DataWedge
-productversion: '6.0'
+productversion: '6.2'
 ---
 
-## Introduction
+## Overview
 
 DataWedge provides barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
-### This document applies to:
-* **DataWedge 6.0.x**, which requires:
-* **Scanner Framework 5.1.0** or higher
-* **SimulScan 1.9 or higher** (for devices that support SimulScan)
+#### This document applies to:
+* **DataWedge 6.2.x**, which requires:
+* **Scanner Framework 5.1.0** or higher, and
+* **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
+
+#### New in DataWedge 6.2
+
+DataWedge 6.2 implements a new structure for launching Android intents, part of a transition that will ultimately support multiple intents launched as a single command. For details, see the [DataWedge Data Capture API](../api) guide.
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
@@ -42,7 +46,6 @@ Availability and operation of DataWedge features varies by device and operating 
 **To determine which DataWedge version is installed on a device**:
 
 <!--
-&#49;. On the device, locate and **tap the DataWedge icon** in the Launcher screen or App Drawer: 
 <img style="height:350px" src="01_datawedge_launcher.png"/>
 _Launcher icon for DataWedge 3.x_
 <br>
@@ -80,7 +83,10 @@ _The Zebra Support Central site showing search results for the search term "inte
 
 **This option is not available for Android devices**. 
 -->
-> Related Guides: 
-> 
-> * [DataWedge Setup Guide](../setup)
-> * [DataWedge Demo app](../demo)
+
+-----
+
+Related Guides: 
+
+* [DataWedge Setup Guide](../setup)
+* [DataWedge Demo app](../demo)

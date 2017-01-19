@@ -4,7 +4,7 @@ layout: guide.html
 product: DataWedge
 productversion: '6.2'
 ---
- 
+  
 ## Overview
 This guide covers advanced DataWedge features such as the importing and exporting of Profiles and Configuration files, mass deployment of those files, and Advanced Data Formatting, which allows acquired data to be manipulated based on its contents. 
 

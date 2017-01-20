@@ -47,9 +47,7 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 * **Invoke MRZ** to extract data from passports and other travel documents 
 * Extract data from other key fields of interest
 
-* **Unstructured Templates** are predominantly used for capturing a single data type (for example, only barcodes). 
-
-Unstructured Templates allow for target Documents that vary in layout and for target _**data**_ to be located anywhere on the form. These are generally best for Multi-barcode use cases (as in the barcode-only the form above). 
+**Unstructured Templates** are predominantly used for capturing a single data type (for example, only barcodes). Unstructured Templates allow for target Documents that vary in layout and for target _**data**_ to be located anywhere on the form. These are generally best for Multi-barcode use cases (as in the barcode-only the form above). 
 
 **Use Unstructured Templates to**: 
 

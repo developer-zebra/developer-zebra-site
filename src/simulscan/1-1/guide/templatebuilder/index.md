@@ -240,7 +240,7 @@ In the image above, the Field Properties panel is visible in the far-left column
 
 ####Fixed Barcode Supported Symbologies
 ![img](fixed-mode_table_greyed.png)
-_Greyed symbologies are **NOT** recommended for selection as fixed barcodes_. 
+_Grayed symbologies are **NOT** recommended for selection as fixed barcodes_. 
 <br>
 
 -----
@@ -391,7 +391,7 @@ In addition its use of Document border dimensions, SimulScan uses Fields, compan
  * **Avoid symbologies with multiple level/stack/region** barcode combinations (which may vary in region size).
  * **Zebra recommends using only the following barcodes for fixed-mode**: 
 ![img](fixed-mode_table_greyed.png)
-_Greyed symbologies are **NOT** recommended for selection as fixed barcodes_. 
+_Grayed symbologies are **NOT** recommended for selection as fixed barcodes_. 
 <br>
 
 In the Postal T&L Document below, the logo in the upper-left corner and the barcode in the upper-right would identify this form adequately for SimulScan to activate its template. Notice that the graphic is loosely bounded and the barcode tightly. 

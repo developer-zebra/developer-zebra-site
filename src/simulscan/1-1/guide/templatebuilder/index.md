@@ -41,10 +41,10 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 **Structured Templates are used to**: 
 
 * **Scan barcodes**, text and other data types from a single form 
-* Acquire alpha/numeric characters with **OCR**
-* Determine the status of checkboxes with **OMR**
-* Detect the presence of and **capture Signature(s)** or other images
-* Extract data from travel documents using **MRZ** 
+* **Invoke OCR** to acquire alpha/numeric characters
+* **Invoke OMR** to determine the status of checkboxes
+* **Detect and capture signatures** and other images
+* **Invoke MRZ** to extract data from passports and other travel documents 
 * Extract data from other key fields of interest
 
 * **Unstructured Templates** are predominantly used for capturing a single data type (for example, only barcodes). 

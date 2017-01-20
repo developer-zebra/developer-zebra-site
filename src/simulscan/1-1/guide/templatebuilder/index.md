@@ -34,6 +34,8 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 *A typical barcode-only form, a common and effective SimulScan usage scenario*.
 <br>
 
+-----
+
 #### Templates can be either Structured or Unstructured 
 
 **A Structured Template** is used when the Document to be scanned (aka "Target") has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture. For example, a company that often encounters a fixed-format form such as the Postal/T&L example (shown below) would create a Structured Template to identify **1) the location of each field** to be captured and ** 2) the type of data to be processed** from each identified field.  
@@ -49,7 +51,7 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 
 **Unstructured Templates** are predominantly used for capturing a single data type (for example, only barcodes). Unstructured Templates allow for target Documents that vary in layout and for target _**data**_ to be located anywhere on the form. These are generally best for Multi-barcode use cases (as in the barcode-only the form above). 
 
-**Use Unstructured Templates to**: 
+**Unstructured Templates are used to**: 
 
 * Capture **only** barcodes or **only** text
 * Scan multiple barcodes/symbologies simultaneously **OR**
@@ -66,7 +68,7 @@ Structured Templates work on the principle that the _**location**_ and _**type**
 For example, if a form like the one below was encountered regularly, a Structured Template using **Mixed Data-type** mode could be created to acquire the barcode, numbers, text, checkboxes and signature in a single pass. For a demonstration using this form, see the [SimulScan Demo App](../demo). 
 
 <img style="height:300px" src="template.png"/>
-_A Structured Template using Multi Data-type mode would be best here_. 
+_Example form for a Structured Template using Multi Data-type mode_. 
 <br>
 
 **Notes**:
@@ -82,7 +84,7 @@ Unstructured Templates are useful for Multi-barcoding use cases in which the tar
 Companies could help improve scanning performance and workflow by creating an Unstructured Template that's configured only for the types of barcodes it receives on a regular basis. **Multi-barcode** mode can simultaneously handle a large number of 1D/2D barcodes of the same or differing symbologies, but works most efficiently if the universe of potential symbologies is narrowed to just a few. 
 
 <img style="height:250px" src="AIAG B-10 Label File P, Q, K, V, 4S.jpg"/>
-_An Unstructured Template using Multi-barcode mode would be best here_.  
+_Example form for an Unstructured Template using Multi-barcode mode_.  
 <br>
 
 **Notes**:
@@ -91,8 +93,6 @@ _An Unstructured Template using Multi-barcode mode would be best here_.
 * The device imager is automatically selected for Barcode-only Templates.
 * The camera is automatically selected for OCR Templates.  
 * All [Zebra devices that support SimulScan](../about/#supporteddevices) are equipped with 1D/2D imagers (except early TC70 models).
-
-Templates work on the principle that the _**location**_ and _**type**_ of data in each region of a form (i.e. barcodes, alpha/numeric characters, signatures, etc.) will remain consistent and that _**only the data will change**_ with each new instance of that form. Templates uniquely identify each region and data type of a particular form, allowing SimulScan to capture the data quickly and accurately, and permitting developers to map the acquired data to specific fields of their application. 
 
 For example, a company that receives regular shipments accompanied with a label like the one above could create a [Multi-barcode Template](#2selecttargettype) to map the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the lower row to the corresponding fields of an application. 
 
@@ -236,7 +236,7 @@ In the image above, the Field Properties panel is visible in the far-left column
 
 **Signature Presence -** determines whether a signature is present in the selected region, displays an error to the user if none is found. Applies to Picture fields that use the OMR feature to detect a marked area.
 
-**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. Applies when the field processing mode is “Barcode" and the Barcode Type is set to a supported symbology (see table, below). Symbologies shown in grey are _**not**_ recommended. To improve the accuracy of form identification, **Zebra recommends enabling this feature** whenever possible. 
+**Barcode’s location is fixed -** specifies that a barcode will always be in the same location on the Document being defined by the current Template. Applies when the field processing mode is “Barcode" and the Barcode Type is set to a supported symbology (see table, below). Symbologies shown in gray are _**not**_ recommended. To improve the accuracy of form identification, **Zebra recommends enabling this feature** whenever possible. 
 
 ####Fixed Barcode Supported Symbologies
 ![img](fixed-mode_table_greyed.png)
@@ -441,7 +441,7 @@ A Validation Summary is displayed with one of more of the following messages:
 * Barcode Field(s) designated as “Use field to identify the form" use a supported symbology and its length is within the supported range.
 * The uploaded image of the target Document is clear and its resolution is correct.
 
-**Keyfield(s) identified in template**:
+**Key field(s) identified in template**:
 
 * Required attribute(s) (i.e. name, number, x/y, width, height) found for each marked region. 
 

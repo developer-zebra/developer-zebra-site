@@ -23,7 +23,7 @@ menu:
     - title: Licensing
       url: /simulscan/1-1/guide/license
     - icon: fa fa-youtube-play
-      url: https://www.youtube.com/results?search_query=zebra+simulscan
+      url: https://www.youtube.com/playlist?list=PLce6-npz5dKf_5mTtakWU1ostOIaeGXzz
     - icon: fa fa-comment
       url: https://developer.zebra.com/community/android/simulscan/discussions
     - icon: fa fa-search

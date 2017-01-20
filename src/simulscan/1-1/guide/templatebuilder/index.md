@@ -119,12 +119,12 @@ Below is a summary of the steps for creating a Template. The process is explaine
 -----
 
 ### 1. Create an Account, Log In
-Current account holders can skip to Step 2. 
 
 * Visit the [Zebra SimulScan registration page](https://signup.zebra.com/register.html?appId=SIMS)**, follow prompts to create a free account and enter all requested information. Once an account is created, Zebra administrators will send login information to the registered address. **Zebra recommends planning ahead; this process could take several days**.
 
-* Point a browser to [simulscan.zebra.com](https://simulscan.zebra.com)** and enter the login credentials. A screen appears similar to the image below: 
+* **Point a browser to [simulscan.zebra.com](https://simulscan.zebra.com)** and enter the login credentials. A screen appears similar to the image below: 
 <img style="height:350px" src="image5.png"/>
+_The Template Builder login screen at simulscan.zebra.com_
 <br>
 
 <!--
@@ -195,13 +195,11 @@ _Click image to enlarge_
 
 ### 3. Configure Settings
 
-Fields not specifically named will be assigned a generic name. These can be edited later as desired (see [Modify a Template](#modifyatemplate)). 
-
 Provide (or confirm) the following required settings for each Field created: 
- * A name for the field, if desired
+ * A name for the field, if desired 
  * Properties (length/width and X-Y coordinates)
  * The required Processing mode (barcode, OCR, etc.) 
- * Processing-mode settings (decoder type, text type, etc.)
+ * Specific processing-mode settings (decoder type, text type, etc.)
  * Select at least two "[Anchor Elements](#4selectanchorelements)" (explained below) 
 
 > **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
@@ -213,7 +211,7 @@ _Click image to enlarge_
 -----
 
 #### Field Properties Panel
-The Field Properties panel is visible in the far-left column, and presents the Properties of the selected Field. Field Properties can be configured as follows:
+In the image above, the Field Properties panel is visible in the far-left column, and presents the Properties of the selected Field. Field Properties can be configured as follows:
 
 ##### Field Information
 

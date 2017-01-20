@@ -41,7 +41,7 @@ Complete the following form and click Submit to received email notifications abo
 </div>
 </form>
 <div>
-<a href="https://developer.motorolasolutions.com/community/rhomobile-suite/videos" class="">View Webinar Schedule & Replays</a>
+<a href="https://developer.zebra.com/community/rhomobile-suite/videos" class="">View Webinar Schedule & Replays</a>
 </div>
 
 

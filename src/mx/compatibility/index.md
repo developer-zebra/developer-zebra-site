@@ -96,6 +96,10 @@ csps:
     url: /mx/enterprisekeyboardmgr
     csp: enterprisekeyboardmgr
   - type: section
+    title: Ethernet Manager
+    url: /mx/ethernetmgr
+    csp: ethernetmgr
+  - type: section
     title: File Manager
     url: /mx/filemgr
     csp: filemgr

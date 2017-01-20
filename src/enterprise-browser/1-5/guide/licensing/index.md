@@ -25,7 +25,7 @@ The first step in obtaining a license is to engage with Zebra directly or with a
 -----
 
 ###II. Access Licensing System
-After a licensing agreement is purchased from Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials for accessing the [Zebra Enterprise Software Licensing system](https://softwarelicensing.motorolasolutions.com/documentation/index.html). 
+After a licensing agreement is purchased from Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials for accessing the [Zebra Enterprise Software Licensing system](https://softwarelicensing.zebra.com/documentation/index.html). 
 
 * **Log into the [Zebra Licensing system](https://softwarelicensing.zebra.com/) to:** 
 	* Place an order for licenses
@@ -150,5 +150,5 @@ Any of the Deployment License files described above can be mass-deployed using [
 **Related Guides**:
 * **[Enterprise Browser App Shortcuts](../ShortcutCreator/)-** The key to multi-app deployments 
 * **[Enterprise Browser Setup Guide](../setup/) -** Help with initial setup, connecting to devices and pushing files
-* **[Zebra licensing system documentation page](https://softwarelicensing.motorolasolutions.com/documentation/index.html) -** Additional licensing info and sample screens
+* **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html) -** Additional licensing info and sample screens
 

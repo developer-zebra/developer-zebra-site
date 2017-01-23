@@ -29,7 +29,7 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-### New in Enterprise Keyboard 1.2
+### New in Enterprise Keyboard 1.3
 
 <b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
 <img alt="" style="height:350px" src="calculator_mode.png"/>
@@ -226,7 +226,7 @@ KitKat and Lollipop
 
 ## How to Get It
 
-Enterprise Keyboard 1.2 comes preinstalled on some Zebra devices and can be downloaded for others. 
+Enterprise Keyboard 1.3 comes preinstalled on some Zebra devices and can be downloaded for others. 
 
 See [Download page](../../download) for details. 
 

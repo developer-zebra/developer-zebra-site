@@ -1,56 +1,52 @@
 ---
-title: simulScan Industry Templates
-description: SimulScan Templates have been created as a starting point for use in specifi industries.
+title: SimulScan Pre-built Templates
+description: Zebra provides pre-built SimulScan Templates for specific industries that can be used as-is or modified as needed. All Templates can be downloaded from the /Public/templates folder of the Template Builder web site.
 layout: list-apis.html
 automenu:
   items:
+    - title: Helpful Links
+      items:
+        - title: How to Test a Custom Template
+          url: ../demo/#testacustomtemplate
+        - title: Template Builder web site
+          url: http://simulscan.zebra.com
+        - title: SimulScan Default Templates
+          url: ../setup/#accessthroughdatawedge
     - title: Automotive
       items:
-        - title: Auto-parts Receiving
-          url: parts
-        - title: Manufacturing
-          url: manufacturing
-        - title: Processing
-          url: processing
+        - title: AIAG templates
+          url: auto
+        - title: (under construction)
+          url: 
+        - title: (under construction)
+          url: 
+product: SimulScan
+productversion: '1.1'
+---
+
+<!--
     - title: Manufacturing
       items:
-        - title: blah blah
+        - title: sample
           url: 
-        - title: Blah blah blah
+        - title: sample
           url: 
-        - title: This and that
+        - title: sample
           url: 
-        - title: The other
+        - title: another sample
           url: 
     - title: Medical
       items:
         - title: Patient
-          url: patiend
+          url: patient
         - title: Supplies
           url: supplies
         - title: Emergency Room
           url: er
         - title: X-Ray Tech
           url: xray
-        - title: Stuff
+        - title: Fake Stuff
           url: stuff
         - title: Gift Shop
           url: giftshop
-    - title: Debugging
-      items:
-        - title: Logging
-          url: logging
-        - title: On-Device Debugging
-          url: debuggingjs
-    - title: Migration
-      items:
-        - title: From Pocket Browser 2.x/3x
-          url: pb2
-        - title: From RhoElements 2.x
-          url: elements
-        - title: From RhoMobile 4.x
-          url: rhomobile
-product: SimulScan
-productversion: '1.1'
----
-
+-->

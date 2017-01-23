@@ -19,6 +19,7 @@ Before attempting to create a Template, the following assets are required:
 * **Sample(s) of the Document(s)** (forms, labels, etc.) for which the Template(s) are being created
 * **Photos or image scans** of those same documents (for upload)
 * **An account on the [Template Builder web site](http://simulscan.zebra.com)**
+* **A familiarity with [Template concepts](#abouttemplates)** and [SimulScan terminology](../glossary)
 
 -----
 

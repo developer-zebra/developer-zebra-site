@@ -291,7 +291,5 @@ The Enterprise Keyboard Tab key is designed to move the cursor or UI focus from 
 ------
 
 ## Scanner Control
-It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](../../../../datawedge/6-0/guide/setup/#disabledatawedge) in the [DataWedge User Guide](../../../../datawedge). 
-
-
+It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active, DataWedge (and hence the Enterprise Keyboard scan tab) are prevented from operating the scanner. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, apps that use Barcode or Scanner APIs are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](../../../../datawedge/6-0/guide/setup/#disabledatawedge) in the [DataWedge User Guide](../../../../datawedge). 
 

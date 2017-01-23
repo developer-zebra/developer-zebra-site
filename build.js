@@ -640,6 +640,9 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-2/'
     }))
+      .use(foldermenu({
+        folder: 'enterprise-keyboard/1-3/'
+    }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

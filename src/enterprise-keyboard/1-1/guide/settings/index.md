@@ -259,7 +259,10 @@ Also refer to the [DataWedge User Guide](../../../../) for complete documentatio
 ------
 
 ## Tab-key Navigation
-The Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. On apps that are unaware of this context, the Enterprise Keyboard Tab key might input spaces instead of moving the cursor. For HTML apps, Zebra recommends using the Tab key to navigate from field to field. For help with native-app navigation, please refer to Android developer docs for information about [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html).
+The Enterprise Keyboard Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. Zebra recommends that apps be built to use the Tab key to navigate in this way. 
+
+**On devices with versions prior to Enterprise Keyboard 1.3, the Tab key might not move the cursor as expected**. For help with native-app navigation, please refer to the [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html) section of the Android developer docs.
+
 
 ------
 

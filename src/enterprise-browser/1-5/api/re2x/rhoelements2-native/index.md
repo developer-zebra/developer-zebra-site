@@ -179,7 +179,7 @@ A license is required to run a RhoElements application. On Non-Zebra devices tha
 	motorola_license_company: 'Deployment License Company name'
     motorola_license: 'Deployment License Number'
 
-When the application is started, the license is checked for validity. If the license is invalid, the user will be notified and have to acknowledge before proceeding. You may obtain this information from the [Software Licensing Server](https://softwarelicensing.motorolasolutions.com/). After logging into the server you will see your license information on the 'Deployment License' tab.
+When the application is started, the license is checked for validity. If the license is invalid, the user will be notified and have to acknowledge before proceeding. You may obtain this information from the [Software Licensing Server](https://softwarelicensing.zebra.com/). After logging into the server you will see your license information on the 'Deployment License' tab.
 
 NOTE: For Zebra devices and Non-Zebra devices that run Windows Mobile or Windows CE, the license cannot be obtained directly from the device or pre-bundled with the application. For these devices, you may either apply the license directly from the device using the licensing wizard's Manual or Internet methods.
 

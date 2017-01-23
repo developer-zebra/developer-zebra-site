@@ -14,7 +14,7 @@ See the [Migration Guides](../) for information about accessing PocketBrowser, R
 See the [Compatibility Matrix](../compatibility/) for API support information relating to specific operating systems and webkits. 
 
 ## Using JavaScript APIs
-Enterprise Browser APIs are enabled differently the app is running from HTML stored on the device or on a remote server. Either way, the relevant JavaScript files must be referenced in the appropriate location in the HTML. 
+The way in which Enterprise Browser APIs are enabled differs when the app is running from HTML stored on the device and when running on a server. Either way, the relevant JavaScript files must be referenced in the appropriate location in the HTML. 
 
 ### JavaScript API Files
 The Enterprise Browser installation by default adds a `C:/EnterpriseBrowser/JavaScriptFiles/` directory, inside of which are two additional directories:

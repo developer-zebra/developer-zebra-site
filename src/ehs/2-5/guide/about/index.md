@@ -33,7 +33,7 @@ Selecting 'Always' locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> Ready to get started? [Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.5)
+> Ready to get started? [Download Enterprise Home Screen 2.5](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -98,7 +98,24 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr >
 <tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
+</td>
+
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
+
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
@@ -115,6 +132,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
@@ -132,6 +150,23 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <tr bgcolor="#ccffcc" >
+
+<tr >
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC75x</font></p>
+</td>
+
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
 
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
@@ -216,21 +251,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC51</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
 </tbody>
 </table>
 
@@ -238,7 +258,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 #### EHS 2.5 Now Supports:
 
-* **TC51 Smartphone Mobile Computer** running Android Marshmallow 6.0.1 (see [Android Marshmallow Notes](#androidmarshmallownotes))
+* **[TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers** running Android Marshmallow 6.0.1 (see [Android Marshmallow Notes](#androidmarshmallownotes))
 * **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
 * **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android Notes](#androidlollipopandmarshmallownotes))
 * **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android Notes](#androidlollipopandmarshmallownotes)) 
@@ -255,12 +275,12 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Now links to [Techdocs](../../../../)**, Zebra's premier web site for user-facing documentation--now a standard component on every EHS installation.
 <br>
 
-[Download Enterprise Home Screen 2.5](https://portal.motorolasolutions.com/Support/US-EN/Resolution?solutionId=102533&redirectForm=search&searchQuery=%3FsearchType%3Dsimple%26searchTerm%3DEnterprise%20Home%20Screen%20v2.5)
+[Download Enterprise Home Screen 2.5](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
 ------
 
 #### Android Lollipop and Marshmallow Notes 
-**_These apply to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
+**_Apply to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 
@@ -275,7 +295,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 #### Android Marshmallow Notes
-**_These apply to Android 6.x Marshmallow only_**:
+**_Apply to devices running Android 6.x Marshmallow only_**:
+
+* **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
 
 * **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
 
@@ -287,7 +309,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 **Applies to Zebra ET50 and ET55 devices with Google Mobile Services (GMS) only**.  
 
-* **The Launcher selection pop-up does not appear** when the HOME button is pressed while in User Mode, preventing a user or administrator from easily selecting the default Launcher app on the device. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
+* **The Launcher selection pop-up does not appear** when the HOME button is pressed while in User Mode, preventing a user or administrator from easily selecting the default Launcher app on the device. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
 
 * **A permanent system UI crash could occur if EHS is uninstalled remotely (i.e. via MDM) while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled.
 

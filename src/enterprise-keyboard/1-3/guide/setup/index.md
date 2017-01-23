@@ -2,7 +2,7 @@
 title: Enterprise Keyboard Setup
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '1.2'
+productversion: '1.3'
 ---
 
 ## Overview

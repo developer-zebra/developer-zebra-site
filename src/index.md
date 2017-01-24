@@ -181,7 +181,7 @@ products:
         url: /mx/overview
       - title: Compatibility
         url: /mx/compatibility
-      - title: What version do I have?
+      - title: Which version do I have?
         url: /mx/mx-version-on-device
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.

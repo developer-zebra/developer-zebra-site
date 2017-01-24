@@ -29,8 +29,13 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-### New in Enterprise Keyboard 1.3
+### New in EKB 1.3
 
+Enterprise Keyboard 1.3 is certified to work with Android Marshmallow (6.x) and is backward compatible with Lollipop and KitKat editions. 
+
+It comes preinstalled on some devices and can be downloaded for others. [Learn more](../../download).
+
+<!--
 <b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
 <img alt="" style="height:350px" src="calculator_mode.png"/>
 <br>
@@ -54,7 +59,7 @@ This version of Enterprise Keyboard includes the following languages:
 <br>
 <img alt="" style="height:350px" src="scan_input.png"/> 
 <br>
-
+-->
 
 ### Unique features  
 All versions of Enterprise Keyboard offer these other unique capabilities to help improve the speed and accuracy of input:  
@@ -103,6 +108,7 @@ _Enterprise Keyboard_:
 _Stock Android keyboard_:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
+
 
 <!--
 ## Supported Devices

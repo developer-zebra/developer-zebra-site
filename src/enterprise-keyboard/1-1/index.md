@@ -11,6 +11,8 @@ menu:
       url: /enterprise-keyboard/1-1/guide/setup
     - title: Customize
       url: /enterprise-keyboard/1-1/guide/settings
+    - icon: fa fa-download
+      url: /enterprise-keyboard/1-0/download
     - icon: fa fa-search
       url: /enterprise-keyboard/1-1/search
 product: Enterprise Keyboard

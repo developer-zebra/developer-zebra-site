@@ -28,7 +28,9 @@ EKB v1.3 also is **available as an OS update** for the following Zebra devices:
 
 * **Visit the** [Enterprise Keyboard download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html) 
 * **Select the appropriate version** for the target device(s) and Android version(s)
+* **Install the .apk file** on the device(s) 
+* [Setup and configure EKB](../guide/setup)
 
-Enterprise Keyboard (1.1 and higher) also can be configured programmatically [using Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) through EMDK, StageNow or a compatible MDM system.
+**Note**: Enterprise Keyboard 1.1 and higher can be configured programmatically [using Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) through EMDK, StageNow or a compatible MDM system. [Learn more](../guide/setup). 
 
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

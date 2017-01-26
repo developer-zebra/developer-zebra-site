@@ -37,9 +37,10 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 
 -----
 
-#### Templates can be either Structured or Unstructured 
+### Structured vs. Unstructured 
+A Template can either be Structured or Unstructured, and generally would be created to match a structured or unstructured Target. 
 
-**A Structured Template** is used when the Document to be scanned (aka "Target") has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture. For example, a company that often encounters a fixed-format form such as the Postal/T&L example (shown below) would create a Structured Template to identify **1) the location of each field** to be captured and ** 2) the type of data to be processed** from each identified field.  
+**A Structured Template** is used when the Document to be scanned (aka "Target") has a fixed layout--one that doesn't change from one instance of the form to another. Structured Templates are used to acquire mixed types of data at once (barcodes, text, images, etc.), and are generally used for Document Capture. For example, a company that often encounters a fixed-format form such as the Postal/T&L example (shown below) would create a Structured Template to identify: **1) the location of each field** to be captured and **2) the type of data to be processed** from each identified field. 
 
 **Structured Templates are used to**: 
 
@@ -50,20 +51,21 @@ SimulScan Templates define "Form Regions of interest" on Documents to be scanned
 * **Invoke MRZ** to extract data from passports and other travel documents 
 * Extract data from other key fields of interest
 
-**Unstructured Templates** are predominantly used for capturing a single data type (for example, only barcodes). Unstructured Templates allow for target Documents that vary in layout and for target _**data**_ to be located anywhere on the form. These are generally best for Multi-barcode use cases (as in the barcode-only the form above). 
+**Unstructured Templates** are predominantly used for capturing a single data type (for example, data from barcodes only). Unstructured Templates allow for target Documents that vary in layout and for target _**data**_ that's located anywhere on the form. These are generally best for Multi-barcode use cases (as for the barcode-only form above). 
 
 **Unstructured Templates are used to**: 
 
-* Capture **only** barcodes or **only** text
-* Scan multiple barcodes/symbologies simultaneously **OR**
-* Use OCR for a single line of alpha/numeric text 
-* Use OCR for a multiple lines of alpha/numeric text 
+* Capture **only** barcode data or **only** text
+* **Scan multiple barcodes/symbologies simultaneously**  
+* or...
+* **Use OCR to capture a single line** of alpha/numeric text 
+* **Use OCR to capture multiple lines** of alpha/numeric text 
 
 For step-by-step instructions on Template creation, see [Using Template Builder](#usingtemplatebuilder), below. 
 
 -----
 
-#### Structured Templates
+### Structured Templates
 Structured Templates work on the principle that the _**location**_ and _**type**_ of data in each field of a target form (i.e. barcodes, alphanumeric characters, signatures, etc.) will remain consistent whenever the form is used, and that **only the data** will change with each new instance of the form. By creating a SimulScan Template to uniquely identify each region and data type, SimulScan learns what to expect from each region of a form, which allows the developer to map the data from each region to specific fields of an application. 
 
 For example, if a form like the one below was encountered regularly, a Structured Template using **Mixed Data-type** mode could be created to acquire the barcode, numbers, text, checkboxes and signature in a single pass. For a demonstration using this form, see the [SimulScan Demo App](../demo). 
@@ -79,7 +81,7 @@ _Example form for a Structured Template using Multi Data-type mode_.
 * Structured Templates are generally associated with Mixed Data-type mode.  
 <br>
 
-#### Unstructured Templates
+### Unstructured Templates
 Unstructured Templates are useful for Multi-barcoding use cases in which the target Document varies, or when acquiring a single type of data--such as barcodes or text--from a form. <!-- For example, if the only data ever acquired in a company's warehouse is from barcodes, then warehouse operations might be completely satisfied by using one or more of the generic barcode-only templates included with SimulScan. Included Templates are designed to handle from 1-10 barcodes ([see below](#accessthroughdatawedge)).-->
 
 Companies could help improve scanning performance and workflow by creating an Unstructured Template that's configured only for the types of barcodes it receives on a regular basis. **Multi-barcode** mode can simultaneously handle a large number of 1D/2D barcodes of the same or differing symbologies, but works most efficiently if the universe of potential symbologies is narrowed to just a few. 
@@ -179,7 +181,7 @@ Then:
 * Select "Multi-barcode" to capture barcodes or "OCR" for alpha/numeric text:
   * **If selecting Multi-barcode, upload an image of the target Document** to define the Fields and help SimulScan identify the form (image 4, below). 
   * **If selecting OCR**, Template Builder generates a static image automatically (image 5, below). 
-* [Configure OCR settings](#3configuresettings) as required. 
+* [Configure settings](#3configuresettings) as described below. 
 
 ![img](template1-4.png)
 _Click image to enlarge_
@@ -199,7 +201,7 @@ Provide (or confirm) the following required settings for each Field created:
  * Properties (length/width and X-Y coordinates)
  * The required Processing mode (barcode, OCR, etc.) 
  * Specific processing-mode settings (decoder type, text type, etc.)
- * Select at least two "[Anchor Elements](#4selectanchorelements)" (explained below) 
+ * Select at least two "Anchor Elements" (explained in [Step 4](#4selectanchorelements)) 
 
 > **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
 
@@ -265,7 +267,7 @@ Some barcode options vary based on the symbology selected. For a complete list o
 
 Orientation must be consistent across the entire Document. 
 
-_**Other Field Property settings may appear under certain conditions**_.
+_**Different or additional Field Property settings appear under certain conditions**_.
 
 -----
 
@@ -375,7 +377,7 @@ _Click image to enlarge_
 -----
 
 ### 4. Select Anchor Elements
-In addition its use of Document border dimensions, SimulScan uses Fields, company logos or other unique attributes of a Document to positively identify it and determine its orientation relative to the scanner (i.e. whether it's upside down). Optionally, Anchor Elements can contain data to be acquired, such as a barcode or image. Zebra recommends that at least two Anchor Elements be identified in accordance with the guidelines below. 
+In addition to its use of Document border dimensions, SimulScan can use Fields, company logos and other unique attributes of a Document to positively identify it and determine its orientation relative to the scanner (i.e. whether it's upside down). These so-called Anchor Elements also can contain data to be acquired, such as a barcode or image, though it is not required. Zebra recommends that at least two Anchor Elements be identified in accordance with the guidelines below. 
 
 **Selection Guidelines**:
 

@@ -14,8 +14,6 @@ menu:
       url: /simulscan/1-1/guide/templatebuilder
     - title: Glossary
       url: /simulscan/1-1/guide/glossary
-    - title: Pre-built Templates
-      url: /simulscan/1-1/guide/templates
     - title: APIs
       url: /simulscan/1-1/api
     - title: Demo App
@@ -31,3 +29,7 @@ menu:
 product: SimulScan
 productversion: '1.1'
 ---
+<!--
+    - title: Templates
+      url: /simulscan/1-1/guide/templates
+-->

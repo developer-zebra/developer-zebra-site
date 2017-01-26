@@ -6,7 +6,7 @@ productversion: '1.1'
 ---
 
 ## Overview
-Zebra's SimulScan is a set of productivity tools that can optimize the efficiency of data-capture workflow by enabling workers to acquire multiple points of data in a single step. When integrated with SimulScan APIs, captured data can be parsed directly into an organization's native applications. 
+Zebra's SimulScan is a set of productivity tools that can optimize the efficiency of data-capture workflow by enabling workers to acquire multiple points of data in a single step. When integrated with SimulScan APIs, captured data can be parsed directly into an organization's native Android applications. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t6tbOlcgPDk" frameborder="0" allowfullscreen></iframe>
 [More SimulScan videos](https://www.youtube.com/playlist?list=PLce6-npz5dKf_5mTtakWU1ostOIaeGXzz)
@@ -21,7 +21,7 @@ Such scenarios are perfect for SimulScan [Multi-barcoding](../templatebuilder/#u
 
 Alternatively, SimulScan [Mixed Data-type](../templatebuilder/#structuredtemplates) is ideal for data capture when...
 
-* **Scanned forms are of a [fixed layout](../glossary)**, and...
+* **Scanned forms are of a** [fixed layout](../glossary), and...
 * **Forms have well-defined borders**.
 
 -----
@@ -44,11 +44,11 @@ Alternatively, SimulScan [Mixed Data-type](../templatebuilder/#structuredtemplat
 #### SimulScan Operation Modes  
 
 <!-- <img style="height:100px" src="barcode-multibarcode.png"/> -->
-[Multi-barcode](../templatebuilder/#unstructuredtemplates) allows workers to capture one or more 1D/2D barcodes of the same or differing symbologies from a single scan target. The target layout can be fixed or can vary from one scan to another. 
+[Multi-barcode](../templatebuilder/#unstructuredtemplates) mode allows workers to capture one or more 1D/2D barcodes of the same or differing symbologies from a single scan target. The target layout can be fixed or can vary from one scan to another. 
 <br>
 
 ![img](mixed-data.png)
-[Mixed Data-type](../templatebuilder/#structuredtemplates) includes the features of Multi-barcode and can capture alphanumeric characters and images, and determine the presence of check marks and signatures from a snapshot of the document. This mode requires scan targets with a fixed layout.
+[Mixed Data-type](../templatebuilder/#structuredtemplates) mode adds to Multi-barcode the ability to capture alphanumeric characters and images, and can determine the presence of check marks and signatures from a snapshot of the document. This mode requires scan targets with a fixed layout.
 <br>
 
 -----

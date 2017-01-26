@@ -48,6 +48,8 @@ Alternatively, SimulScan [Mixed Data-type](../templatebuilder/#structuredtemplat
 <br>
 
 ![img](mixed-data.png)
+<br>
+
 [Mixed Data-type](../templatebuilder/#structuredtemplates) mode adds to Multi-barcode the ability to capture alphanumeric characters and images, and can determine the presence of check marks and signatures from a snapshot of the document. This mode requires scan targets with a fixed layout.
 <br>
 
@@ -59,7 +61,7 @@ SimulScan Multi-barcode and Mixed Data-type modes both work through Templates, w
 ![img](regions_of_interest.png)
 <br>
 
-### Activating SimulScan
+### Using SimulScan
 **SimulScan is free** when used with DataWedge or from a custom app to scan only barcodes. A per-device license is required access to OCR or OMR features. For licensing details, please see the [Licensing guide](../license). 
 
 SimulScan can be accessed either by: 
@@ -115,7 +117,25 @@ In addition, some Fields are designated as "Anchor Elements," which help SimulSc
  </tr>
  <tr>
 </tbody></table>
-_&#42;The TC8000 Extended Range Imager (ERI) configuration is not supported_. 
+
+### Device Support Notes
+If support issues arise, check the model code of the device in use. The following codes indicate devices that contain a scanner or imager that supports SimulScan.
+
+**TC55** 
+* Model code must contain a “J”
+
+**TC70**
+* Model code must contain an “A”
+* Does not support decoded imagers
+
+**TC75**
+* All models support SimulScan
+
+**TC8000**
+* Model code must contain “1” or “2” as the last digit (TC8000-**X**) 
+* SimulScan is supported only on models with the SE4750 imager (shown in **About Device > Hardware Configuration**)
+* The Extended Range Imager (ERI) is not supported for use with SimulScan
+* Model codes containing an "A" or a "3" are not supported
 
 <!--
 ### SimulScan Benefits

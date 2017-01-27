@@ -46,6 +46,8 @@ products:
         url: /enterprise-browser/1-6/tutorial/
       - title: Usage Guides
         url: /enterprise-browser/1-6/guide
+      - title: Config.xml
+        url: /enterprise-browser/1-6/guide/configreference
       - title: APIs
         url: /enterprise-browser/1-6/api
     versions:
@@ -97,7 +99,7 @@ products:
         label: '1.2'
       - url: enterprise-keyboard/1-1/guide/about
         label: '1.1'
-      - url: enterprise-keyboard/1-1/guide/about
+      - url: enterprise-keyboard/1-0/guide/about
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."

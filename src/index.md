@@ -199,10 +199,10 @@ products:
         url: /simulscan/1-1/guide/setup
       - title: Template Builder
         url: /simulscan/1-1/guide/templatebuilder
+      - title: Glossary
+        url: /simulscan/1-1/guide/glossary
       - title: APIs
         url: /simulscan/1-1/api
-      - title: Templates
-        url: /simulscan/1-1/guide/templates
       - title: Demo App
         url: /simulscan/1-1/guide/demo
       - title: Licensing

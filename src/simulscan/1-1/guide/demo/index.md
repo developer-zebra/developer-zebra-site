@@ -66,24 +66,24 @@ For more, see [Deploy Templates](../templatebuilder/#deploytemplates).
 
 **To open a custom Template**: 
 
-**&#49;. Open SimulScan and press Start**. A screen appears similar to the image below. Notice that the most recently used Template (if any) remains selected (shown is the "Postal, Transport & Logistics" Template from the exercise above). 
+**1. Open SimulScan and press Start**. A screen appears similar to Image 1, below. Notice that the most recently used Template (if any) remains selected (shown is the "Postal, Transport & Logistics" Template from the exercise above). **To switch Templates, press the "My Template" button**. A screen appears similar to Image 2. 
 
-**To switch Templates, press the "My Template" button**. A screen appears similar to the image in Step 2. 
-<img style="height:350px" src="11_mytemplate_button.png"/>
+**2. Tap the appropriate drop-down** to open the Template to be tested, as in Image 2.
+
+3. To continue, **go to Step 4 of the** [How to Use the Demo App](#howtousethedemoapp) **section**, above.  
+
+![img](demo_app_group3.png)
+_Click image to enlarge_
 <br>
 
-**&#50;. Tap the appropriate drop-down** to open the Template to be tested: 
-<img style="height:350px" src="12_select_template.png"/>
-<br>
+#### My Template Options
 
 **Browse external storage -** lists Templates in the `/<internal storage>/simulscan/templates/` folder on the device.
 
 **Default templates -** lists Templates included with SimulScan, which are stored in the `/enterprise/device/settings/datawedge/templates` folder on the device. Custom Templates pushed to this location will be displayed with included ones. 
 
 **Select from server -** lists Templates in the `/<accountID>/templates/release/`
-folder on the [Template Builder web site](http://simulscan.zebra.com) after logging into the Template Builder web site. When using this option, a copy of the specified Template is placed in the `/<internal storage>/simulscan/templates/` folder on the device. 
-
-**&#51;. Go to [How to Use the Demo App](#howtousethedemoapp) Step 4**.  
+folder on the [Template Builder web site](http://simulscan.zebra.com) (log-in required) and copies the selected Template to the `/<internal storage>/simulscan/templates/` folder on the device. 
 
 -----
 

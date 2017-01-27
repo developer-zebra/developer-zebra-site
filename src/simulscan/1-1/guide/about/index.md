@@ -83,61 +83,59 @@ In addition, some Fields are designated as "Anchor Elements," which help SimulSc
 -----
 
 ## Supported Devices
+SimulScan works will all device cameras, and supports devices with an SE4750 imager only. To identify the imager installed on a device, see **About Device > Hardware Configuration** in the device Settings panel or check the table below for supported device model codes.
 
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">------------Device----------</th>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">------------Model---------</th>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">-----------Camera---------</th>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">-----------2D Imager--------</th>
+  <th width="15%" align="center" valign="middle" class="clsSyntaxHeadings">---------Device-------</th>
+  <th width="15%" align="center" valign="middle" class="clsSyntaxHeadings">---------Model-------</th>
+  <th width="15%" align="center" valign="middle" class="clsSyntaxHeadings">---------Camera-------</th>
+  <th width="55%" align="center" valign="middle" class="clsSyntaxHeadings">------------2D Imager-----------</th>
  </tr>
  <tr>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">• Model code must contain a 'J'</td>
  </tr>
  <tr>
-  <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">GA2 devices only</td>
+  <td width="15%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">• SimulScan supported on GA2 devices only<br>• Model code must contain an 'A'<br>• Decoded imagers not supported</td>
  </tr>
  <tr>
-  <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="tc75.png" height="75"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="15%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="tc75.png" height="75"></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">• All models support SimulScan</td>
  </tr>
  <tr>
-  <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="tc8000.png" height="75"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√ *</td>
+  <td width="15%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="tc8000.png" height="75"></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
+  <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">
+• Model code suffix must be '-1' or '-2' (i.e. TC8000<b>-2</b>)<br>
+• Devices with a suffix of '-3' or '-A' are not supported<br>
+• The Extended Range Imager (ERI) is not supported for use with SimulScan</td>
  </tr>
  <tr>
 </tbody></table>
 
+
+<!--
 ### Device Support Notes
 If support issues arise, check the model code of the device in use. The following codes indicate devices that contain a scanner or imager that supports SimulScan.
 
 **TC55** 
-* Model code must contain a “J”
 
 **TC70**
-* Model code must contain an “A”
-* Does not support decoded imagers
 
 **TC75**
-* All models support SimulScan
 
 **TC8000**
-* Model code must contain “1” or “2” as the last digit (TC8000-**X**) 
-* SimulScan is supported only on models with the SE4750 imager (shown in **About Device > Hardware Configuration**)
-* The Extended Range Imager (ERI) is not supported for use with SimulScan
-* Model codes containing an "A" or a "3" are not supported
 
-<!--
+
 ### SimulScan Benefits
 
 * **Decodes multiple barcodes** with a single scan, even those of differing symbologies

@@ -96,7 +96,7 @@ SimulScan works will all device cameras, and supports devices with an SE4750 ima
   <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
   <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td width="15%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">• Model code must contain a 'J'</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:100px" src="TC55_models.png"/></td>
  </tr>
  <tr>
   <td width="15%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
@@ -121,6 +121,12 @@ SimulScan works will all device cameras, and supports devices with an SE4750 ima
  </tr>
  <tr>
 </tbody></table>
+
+<img style="height:100px" src="TC55_models.png"/>
+
+<img style="height:100px" src="TC70_models.png"/>
+
+<img style="height:100px" src="TC8000_models.png"/>
 
 
 <!--

@@ -5321,6 +5321,9 @@ The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneou
 ###Limitation of decodeSound property on Android Platform
 If decodeSound property contains '.wav'/'.ogg' filename same as system filename, then the system '.wav'/'.ogg' file will be selected for playing when a scanned barcode is successfully decoded.
 
+###Limitation of custom decode sound properties on Android Platform
+On some Android devices, only the first set values of custom decode sound properties (i.e. decodeVolume, decodeFrequency and decodeDuration) will take effect even after setting multiple times with different values. User need to restart the Enterprise Browser application to apply the different values for custom decode sound properties.
+
 ###Omnii XT15
 
 On the Zebra Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.

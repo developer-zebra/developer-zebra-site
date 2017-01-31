@@ -13,57 +13,64 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ## New in v1.6
 
+#### Android Jelly Bean Deprecated
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](/enterprise-browser/1-5) or below versions for Android Jelly Bean device support.
+
+
+
 Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and existing Zebra devices, and a range of additional new features for Android devices. 
 
-####Zebra Android Device Support
-* ET50 Android Lollipop
-* ET55 Android Lollipop
-* MC18 Android Lollipop
-* MC40 Android Lollipop
-* TC51 Android Marshmallow
-* TC75 Android Marshmallow
-* TC8000 Android Lollipop
+#### Zebra Android Device Support
+* ET50 with Android Lollipop
+* ET55 with Android Lollipop
+* MC18 with Android Lollipop
+* MC40 with Android Lollipop
+* TC51 with Android Marshmallow
+* TC75 with Android Marshmallow
+* TC8000 with Android Lollipop
 
 [See all supported devices](#mobile)
 
-####New or Updated APIs (released with EB 1.6)
+#### New or Updated APIs (released with EB 1.6)
 
-* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**Applicable to Android devices which contains EKB 1.2 and above version**). 
+* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applicable only to Android devices with EKB 1.2 and above installed**). 
 
-* **Updated [Barcode API](../../api/barcode) -** properties **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** are now also supported on Android platform. 
+* **Updated [Barcode API](../../api/barcode) -** now includes **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** properties for Android (formerly available only for Windows Mobile/CE). 
 
-* **Updated [Scanner API](../../api/re2x/scanner) -** event **connectionListenerEvent**is now also supported on Android Kitkat platform. 
+* **Updated [Scanner API](../../api/re2x/scanner) -** adds KitKat support for the **connectionListenerEvent** event. 
 
-* **Updated [Sensor API](../../api/sensor) -** new property **proximitySensorType** has been introduced to set or get the value of proximity sensor type.
+* **Updated [Sensor API](../../api/sensor) -** implements a **proximitySensorType** property to **set** the value of proximity sensor type or **get** its current value.
 
 #### Ring Scanner Support
 
-* **RS6000 Ring Scanner -** now also applicable to Falcon - TC75 Android Marshmallow device.
+* **RS6000 Ring Scanner -** is now supported on TC75x (Falcon) devices running Android Marshmallow.
 
 #### Enterprise Browser Kiosk Mode
 
-* **Enterprise Browser Lockdown Using EHS -** now possible to lock down the Enterprise Browser application and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
+* **New Enterprise Browser Lockdown Option -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide a lock-down feature for Enterprise Browser applications and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
 
-#### New Configuration Tags for Android - Following Enterprise Browser configuration tags are now also supported on Android Platform.
+#### New Tags for Android
+The following Enterprise Browser configuration tags are now also supported on Android platform.
 
-* **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav)**
+* **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav file to be played when a scanned barcode is successfully decoded.
 
-* **[&lt;DecodeVolume&gt;](../configreference#decodevolume)**
+* **[&lt;DecodeVolume&gt;](../configreference#decodevolume) -**
 
-* **[&lt;DecodeFrequency&gt;](../configreference#decodefrequency)**
+* **[&lt;DecodeFrequency&gt;](../configreference#decodefrequency) -**
 
-* **[&lt;DecodeDuration&gt;](../configreference#decodeduration)**
+* **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -**
 
 #### New Guides
 
 * **[New DataWedge Usage Guide](../datawedge) -** detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
 
   * **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelines-for-datawedge-version---228-or-below)**
+  
   * **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelines-for-datawedge-version---between-229-to-5113)**
   * **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelines-for-datawedge-version---601-and-above)**
 
-#### Android Jellybean Update
-* Android Jellbean devices has been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jellybean device support.
+#### Android Jelly Bean Deprecated
+* Android Jelly Bean devices have been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jelly Bean device support.
 
 ## Key Enterprise Browser Features
 

@@ -430,9 +430,16 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
  </tr>
  </tbody></table>
  
- ###Ring Scanners
- <table cellspacing="0" cellpadding="0" class="table table-striped">
+ ###RingScanners
+<table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
+ <tr>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>

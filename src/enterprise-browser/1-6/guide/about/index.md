@@ -154,7 +154,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><b>MC18</b></td>
   <td class="clsSyntaxCells clsOddRow">MC18</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc3000Pic" src="../../images/mc3090.jpeg" height="75"></td>
@@ -175,7 +175,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
@@ -223,8 +223,8 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc70Pic" src="../../images/mc70.jpeg" height="75"></td>
@@ -265,8 +265,8 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc92Pic" src="../../images/mc9100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
   <td class="clsSyntaxCells clsOddRow">MC92N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat<br>Windows CE 7.0<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Windows Embedded Handheld 6.5<br>Android 4.4 KitKat</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>
@@ -276,10 +276,17 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
+  <td class="clsSyntaxCells clsOddRow">XT15</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -310,13 +317,6 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
-  <td class="clsSyntaxCells clsOddRow">XT15</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
 </tbody></table>
 
 ###Vehicle
@@ -327,6 +327,13 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
+  <td class="clsSyntaxCells clsOddRow">VH10</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="vc5090Pic" src="../../images/vc5090.jpeg" height="75"></td>
@@ -347,13 +354,6 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><b>VC70</b></td>
   <td class="clsSyntaxCells clsOddRow">VC70</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
-  <td class="clsSyntaxCells clsOddRow">VH10</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody></table>
@@ -426,7 +426,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
+  <td class="clsSyntaxCells clsOddRow">For WT6000 and Falcon - TC75 only</td>
  </tr>
  <tr>
  <tr>

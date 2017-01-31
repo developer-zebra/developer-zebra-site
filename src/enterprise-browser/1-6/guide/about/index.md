@@ -37,7 +37,7 @@ The release also adds a range of additional new features for all Android devices
 
 * **Updated [Barcode API](../../api/barcode) -** now includes **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** properties for Android (formerly available only for Windows Mobile/CE). 
 
-* **Updated [Scanner API](../../api/re2x/scanner) -** adds KitKat support for the **connectionListenerEvent** event. 
+* **Updated [Scanner API](../../api/re2x/scanner) -** adds KitKat support for the **connectionListenerEvent**. 
 
 * **Updated [Sensor API](../../api/sensor) -** implements a **proximitySensorType** property to **set** the value of proximity sensor type or **get** its current value.
 
@@ -50,15 +50,15 @@ The release also adds a range of additional new features for all Android devices
 * **New Enterprise Browser Lockdown Option -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide a lock-down feature for Enterprise Browser applications and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
 
 #### New Tags for Android
-The following Enterprise Browser configuration tags are now also supported on Android platform.
+The following Enterprise Browser configuration tags are now supported on Android.
 
-* **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav file to be played when a scanned barcode is successfully decoded.
+* **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav or .ogg file to be played when a scanned barcode is successfully decoded.
 
-* **[&lt;DecodeVolume&gt;](../configreference#decodevolume) -**
+* **[&lt;DecodeVolume&gt;](../configreference#decodevolume) -** controls the volume of the device beeper when a barcode is scanned.
 
-* **[&lt;DecodeFrequency&gt;](../configreference#decodefrequency) -**
+* **[&lt;DecodeFrequency&gt;](../configreference#decodefrequency) -** controls the frequency of the device beeper when a barcode is successfully decoded.
 
-* **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -**
+* **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -** controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
 
 #### New Guides
 

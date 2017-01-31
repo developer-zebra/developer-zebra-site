@@ -101,7 +101,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 ####Extensive logging capability
 * Flexibility to easily capture logging information, reducing management and support effort
 
-###Key Benefits
+##Key Benefits
 
 * **Reduces application and development costs** and eliminates the need to develop, manage and maintain multiple versions of an application to support different types of devices and operating systems; provides highly cost effective support for a mixed-OS environment.
 * **Protects the business from OS market uncertainty**. Devices and platforms can continue to churn without impacting the business. These OS-agnostic applications work on Symbol, Motorola and Zebra Technologies platforms of yesterday (MPA2), today and tomorrow.
@@ -132,7 +132,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
   <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet), ET1 WAN</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)[*](#android-jellybean-update)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
   <tr>
@@ -181,14 +181,14 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)[*](#android-jellybean-update)<br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)[*](#android-jellybean-update)<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -230,7 +230,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)[*](#android-jellybean-update)<br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -399,7 +399,8 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 
 ###Wearable
 <table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
+ <tbody>
+ <tr>
   <th class="clsSyntaxHeadings"></th>
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
@@ -420,14 +421,18 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
-  <tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
- <tr>
+ </tbody></table>
+ 
+ ###Ring Scanners
+ <table cellspacing="0" cellpadding="0" class="table table-striped">
+ <tbody>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
@@ -436,7 +441,6 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">For WT6000 and Falcon - TC75 only</td>
  </tr>
  <tr>
- <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
   <td class="clsSyntaxCells clsOddRow">1D Corded Ring Scanner</td>
@@ -444,14 +448,12 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
  <tr>
-<tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
   <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
  </tr>
- <tr>
 </tbody></table>
 
 **RS507 Support Notes**: 

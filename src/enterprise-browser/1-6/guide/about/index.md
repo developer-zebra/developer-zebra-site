@@ -14,13 +14,11 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 ## New in v1.6
 
 #### Android Jelly Bean Deprecated
-Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](/enterprise-browser/1-5) or below versions for Android Jelly Bean device support.
-
-
-
-Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and existing Zebra devices, and a range of additional new features for Android devices. 
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5) or below versions for Android Jelly Bean device support.
 
 #### Zebra Android Device Support
+Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and 6.0 Marshmallow: 
+
 * ET50 with Android Lollipop
 * ET55 with Android Lollipop
 * MC18 with Android Lollipop
@@ -30,6 +28,8 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 * TC8000 with Android Lollipop
 
 [See all supported devices](#mobile)
+
+The release also adds a range of additional new features for all Android devices.
 
 #### New or Updated APIs (released with EB 1.6)
 

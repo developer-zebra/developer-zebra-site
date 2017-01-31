@@ -36,9 +36,13 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 
 * **Updated [Sensor API](../../api/sensor) -** new property **proximitySensorType** has been introduced to set or get the value of proximity sensor type.
 
-#### RS6000 Ring Scanner is now also applicable to Falcon - TC75 Android Marshmallow device.
+#### Ring Scanner Support
 
-#### Enterprise Browser Lockdown Using EHS - now possible to lock down the Enterprise Browser application and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
+* **RS6000 Ring Scanner -** now also applicable to Falcon - TC75 Android Marshmallow device.
+
+#### Enterprise Browser Kiosk Mode
+
+* **Enterprise Browser Lockdown Using EHS -** now possible to lock down the Enterprise Browser application and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
 
 #### New Configuration Tags for Android - Following Enterprise Browser configuration tags are now also supported on Android Platform.
 
@@ -50,13 +54,16 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 
 * **[&lt;DecodeDuration&gt;](../configreference#decodeduration)**
 
-#### [New DataWedge Usage Guide](../datawedge) - detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
+#### New Guides
 
-* **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelines-for-datawedge-version---228-or-below)**
-* **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelines-for-datawedge-version---between-229-to-5113)**
-* **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelines-for-datawedge-version---601-and-above)**
+* **[New DataWedge Usage Guide](../datawedge) -** detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
 
-#### Android Jellybean devices has been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jellybean device support.
+  * **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelines-for-datawedge-version---228-or-below)**
+  * **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelines-for-datawedge-version---between-229-to-5113)**
+  * **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelines-for-datawedge-version---601-and-above)**
+
+#### Android Jellybean Update
+* Android Jellbean devices has been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jellybean device support.
 
 ### Key Enterprise Browser Features
 

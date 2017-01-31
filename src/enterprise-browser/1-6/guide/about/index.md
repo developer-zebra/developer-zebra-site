@@ -7,6 +7,8 @@ layout: guide.html
 ## Overview
 Enterprise Browser is a powerful, industrial browser that enables developers to build feature-rich web applications that integrate seamlessly with the capabilities offered by Zebra mobile computers and peripherals. At its core, Enterprise Browser is a runtime environment inside which a company's HTML and JavaScript application logic can be executed and controlled, and can interface with a device's hardware (i.e. scanners, card readers, etc.) through EB APIs.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4RMP9wSL1nY?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx" frameborder="0" allowfullscreen></iframe>
+
 The base [EB installation](../setup) includes everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications. Enterprise Browser applications are built with standard web technologies such as **HTML5, CSS3 and JavaScript**, and run and integrate with a long list of [supported Zebra devices](../about#mobile) running Android and Microsoft Windows Mobile/CE. All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system.   
 
 Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
@@ -14,7 +16,7 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 ## New in v1.6
 
 #### Android Jelly Bean Deprecated
-Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5) or below versions for Android Jelly Bean device support.
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower versions for Android Jelly Bean device support.
 
 #### Zebra Android Device Support
 Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and 6.0 Marshmallow: 
@@ -64,13 +66,13 @@ The following Enterprise Browser configuration tags are now supported on Android
 
 * **[New DataWedge Usage Guide](../datawedge) -** detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
 
-  * **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelines-for-datawedge-version---228-or-below)**
+  * **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelinesfordatawedgeversion228orbelow)**
   
-  * **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelines-for-datawedge-version---between-229-to-5113)**
-  * **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelines-for-datawedge-version---601-and-above)**
+  * **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelinesfordatawedgeversionbetween229to5113)**
+  * **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelinesfordatawedgeversion601andabove)**
 
 #### Android Jelly Bean Deprecated
-* Android Jelly Bean devices have been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jelly Bean device support.
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower versions for Android Jelly Bean device support.
 
 ## Key Enterprise Browser Features
 
@@ -139,7 +141,7 @@ The following Enterprise Browser configuration tags are now supported on Android
   <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
   <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet), ET1 WAN</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#androidjellybeanupdate">*</a></B></td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
   <tr>
@@ -188,14 +190,14 @@ The following Enterprise Browser configuration tags are now supported on Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B><br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#androidjellybeanupdate">*</a></B><br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#androidjellybeanupdate">*</a></B><br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -237,7 +239,7 @@ The following Enterprise Browser configuration tags are now supported on Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<B><a href="#androidjellybeanupdate">*</a></B><br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -300,7 +302,7 @@ The following Enterprise Browser configuration tags are now supported on Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#androidjellybeanupdate">*</a></B><br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>

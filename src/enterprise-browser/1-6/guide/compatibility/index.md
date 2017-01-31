@@ -4,8 +4,17 @@ productversion: '1.6'
 product: Enterprise Browser
 layout: ebmatrix.html
 ---
+
+#### Filter usage
+
+**API Type -** displays APIs of the selected category
+
+**Operting System -** displays all APIs supported by the selected OS
+
+**Engines -** displays all rendering engines supported by the APIs currently shown 
+
 <div>
-	<B>API TYPE:</B>
+	<B>API Type:</B>
 	<select id="sel_api_type" onChange="listAPI();">
 		<option value="all">ALL</option>
 		<option value="ebapi">Enterprise Browser APIs</option>

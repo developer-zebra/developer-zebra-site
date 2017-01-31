@@ -23,7 +23,7 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 #### Prerequisites
 Installing Enterprise Browser and building EB apps requires the following: 
 
-* A computer running Windows
+* A computer running Windows XP, 7, 8 or 10
 * One or more [supported Zebra devices](../about/#mobile) connected to the computer (as below) 
 * USB driver for targeting Zebra devices installed
 * Android Debug Bridge (if targeting Android devices)

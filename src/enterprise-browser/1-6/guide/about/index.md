@@ -65,7 +65,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 #### Android Jellybean Update
 * Android Jellbean devices has been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jellybean device support.
 
-### Key Enterprise Browser Features
+## Key Enterprise Browser Features
 
 ####A development toolkit for mobile cross-platform enterprise apps
 * Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices

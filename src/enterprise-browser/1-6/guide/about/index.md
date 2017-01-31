@@ -132,7 +132,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
   <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet), ET1 WAN</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)[*](#android-jellybean-update)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B></td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
   <tr>
@@ -181,14 +181,14 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)[*](#android-jellybean-update)<br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B><br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)[*](#android-jellybean-update)<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -230,7 +230,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)[*](#android-jellybean-update)<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -293,7 +293,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -363,11 +363,13 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
-</tbody></table>
+</tbody>
+</table>
 
 ###Micro-Kiosk
 <table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
+ <tbody>
+ <tr>
   <th class="clsSyntaxHeadings"></th>
   <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
@@ -395,7 +397,8 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
-</tbody></table>
+</tbody>
+</table>
 
 ###Wearable
 <table cellspacing="0" cellpadding="0" class="table table-striped">
@@ -430,7 +433,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
  </tr>
  </tbody></table>
  
- ###RingScanners
+###Ring Scanners
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>

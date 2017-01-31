@@ -24,7 +24,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
 * TC75 Android Marshmallow
 * TC8000 Android Lollipop
 
-[See all supported devices](../about#mobile)
+[See all supported devices](#mobile)
 
 ####New or Updated APIs (released with EB 1.6)
 

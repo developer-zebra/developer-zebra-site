@@ -13,77 +13,66 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ## New in v1.6
 
-#### Zebra Device Support
+#### Android Jelly Bean Deprecated
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5) or below versions for Android Jelly Bean device support.
 
-[See all supported devices](../about#mobile)
+#### Zebra Android Device Support
+Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and 6.0 Marshmallow: 
 
-#### New or Updated APIs
+* ET50 with Android Lollipop
+* ET55 with Android Lollipop
+* MC18 with Android Lollipop
+* MC40 with Android Lollipop
+* TC51 with Android Marshmallow
+* TC75 with Android Marshmallow
+* TC8000 with Android Lollipop
 
-#### New Features
+[See all supported devices](#mobile)
 
-#### New Tags
+The release also adds a range of additional new features for all Android devices.
 
-#### New Guides
+#### New or Updated APIs (released with EB 1.6)
 
-<!-- 
-Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, and a range of additional new features for Android and Windows Mobile/CE devices.  
+* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applicable only to Android devices with EKB 1.2 and above installed**). 
 
+* **Updated [Barcode API](../../api/barcode) -** now includes **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** properties for Android (formerly available only for Windows Mobile/CE). 
 
-####Zebra Device Support
-* MC67 with Android KitKat
-* TC70 with Android Lollipop
-* TC75 with Android Lollipop
-* WT6000 with Android Lollipop
-* WorkAbout Pro 4 with Windows Embedded Handheld 6.5 (_WAP4 WEH-3.0.1 BSP and higher_)
-* Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
-* VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* RS4000 and RS6000 ring scanners support EB apps on WT6000 devices running Android Lollipop
-* RS507 ring scanner supports EB apps on devices running Android KitKat and higher
+* **Updated [Scanner API](../../api/re2x/scanner) -** adds KitKat support for the **connectionListenerEvent**. 
 
-[See all supported devices](../about#mobile)
+* **Updated [Sensor API](../../api/sensor) -** implements a **proximitySensorType** property to **set** the value of proximity sensor type or **get** its current value.
 
-####New or Updated APIs (released with EB 1.5)
+#### Ring Scanner Support
 
-* **New [RemoteNotification API](../../api/remotenotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator device signals (**Android only**). 
+* **RS6000 Ring Scanner -** is now supported on TC75x (Falcon) devices running Android Marshmallow.
 
-* **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues that were present on some devices. 
+#### Enterprise Browser Kiosk Mode
 
-* **Updated [Device API](../../api/device) -** allows JavaScript to access **acquirePartialWakeLock** and **releasePartialWakeLock** functions programmatically. 
-
-#### New Features
-
-* **[Simplified mass deployment](../setup/#manualdeployment)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
-
-* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
-
-* **Improved [SSL/TLS security compliance](../compliance)** with support up to TLS 1.2. 
+* **New Enterprise Browser Lockdown Option -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide a lock-down feature for Enterprise Browser applications and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
 
 #### New Tags for Android
+The following Enterprise Browser configuration tags are now supported on Android.
 
-* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** controls Enterprise Browser app **debugging with Chrome Inspector**, which is now supported.
+* **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav or .ogg file to be played when a scanned barcode is successfully decoded.
 
-* **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
+* **[&lt;DecodeVolume&gt;](../configreference#decodevolume) -** controls the volume of the device beeper when a barcode is scanned.
 
-* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements) -** allows automatic media playback to be disabled by default.
+* **[&lt;DecodeFrequency&gt;](../configreference#decodefrequency) -** controls the frequency of the device beeper when a barcode is successfully decoded.
 
-#### New Tags for Windows Mobile/CE
-
-* **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
-
-* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control when cached pages will be refreshed.
-
-* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
+* **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -** controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
 
 #### New Guides
 
-* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes (including the WorkAbout Pro 4 and Omnii XT15). This guide also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
+* **[New DataWedge Usage Guide](../datawedge) -** detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
 
-* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to **use DataWedge for barcode scanning in place of the Enterprise Browser APIs**, and how to switch between the two. 
+  * **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelines-for-datawedge-version---228-or-below)**
+  
+  * **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelines-for-datawedge-version---between-229-to-5113)**
+  * **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelines-for-datawedge-version---601-and-above)**
 
--->
+#### Android Jelly Bean Deprecated
+* Android Jelly Bean devices have been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jelly Bean device support.
 
-### Key Enterprise Browser Features
+## Key Enterprise Browser Features
 
 ####A development toolkit for mobile cross-platform enterprise apps
 * Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices
@@ -119,7 +108,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
 ####Extensive logging capability
 * Flexibility to easily capture logging information, reducing management and support effort
 
-###Key Benefits
+##Key Benefits
 
 * **Reduces application and development costs** and eliminates the need to develop, manage and maintain multiple versions of an application to support different types of devices and operating systems; provides highly cost effective support for a mixed-OS environment.
 * **Protects the business from OS market uncertainty**. Devices and platforms can continue to churn without impacting the business. These OS-agnostic applications work on Symbol, Motorola and Zebra Technologies platforms of yesterday (MPA2), today and tomorrow.
@@ -150,7 +139,28 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
   <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet), ET1 WAN</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B></td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="et5xPic" src="../../images/et5x.jpg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>ET5X</b></td>
+  <td class="clsSyntaxCells clsOddRow">ET50, ET55</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Falcon - TC75</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="75"></img></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Ironman - TC51</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC51</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -158,7 +168,7 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><b>MC18</b></td>
   <td class="clsSyntaxCells clsOddRow">MC18</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc3000Pic" src="../../images/mc3090.jpeg" height="75"></td>
@@ -178,14 +188,14 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B><br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -227,8 +237,8 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc70Pic" src="../../images/mc70.jpeg" height="75"></td>
@@ -269,8 +279,8 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="mc92Pic" src="../../images/mc9100.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
   <td class="clsSyntaxCells clsOddRow">MC92N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 KitKat<br>Windows CE 7.0<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit, Internet Explorer, Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Windows Embedded Handheld 6.5<br>Android 4.4 KitKat</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="75"></td>
@@ -280,10 +290,17 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
+  <td class="clsSyntaxCells clsOddRow">XT15</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#android-jellybean-update">*</a></B><br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -304,20 +321,13 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="75"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
-  <td class="clsSyntaxCells clsOddRow">XT15</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -331,6 +341,13 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <th class="clsSyntaxHeadings">Device</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
+  <td class="clsSyntaxCells clsOddRow">VH10</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="vc5090Pic" src="../../images/vc5090.jpeg" height="75"></td>
@@ -353,18 +370,13 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="75"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
-  <td class="clsSyntaxCells clsOddRow">VH10</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
-</tbody></table>
+</tbody>
+</table>
 
 ###Micro-Kiosk
 <table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
+ <tbody>
+ <tr>
   <th class="clsSyntaxHeadings"></th>
   <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device</th>
@@ -392,11 +404,13 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow">Windows CE 5.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer</td>
  </tr>
-</tbody></table>
+</tbody>
+</table>
 
 ###Wearable
 <table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
+ <tbody>
+ <tr>
   <th class="clsSyntaxHeadings"></th>
   <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
   <th class="clsSyntaxHeadings">Device</th>
@@ -417,22 +431,32 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
-  <tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
+ </tbody></table>
+ 
+###Ring Scanners
+<table cellspacing="0" cellpadding="0" class="table table-striped">
+ <tbody>
  <tr>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th class="clsSyntaxHeadings">Device</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
+  <td class="clsSyntaxCells clsOddRow">For WT6000 and Falcon - TC75 only</td>
  </tr>
- <tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
@@ -441,14 +465,12 @@ Enterprise Browser 1.5 comes with a new look and feel, including new logos and s
   <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
  </tr>
  <tr>
-<tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
   <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
  </tr>
- <tr>
 </tbody></table>
 
 **RS507 Support Notes**: 

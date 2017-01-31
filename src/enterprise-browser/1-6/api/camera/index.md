@@ -395,8 +395,7 @@ Synchronous Return:
 
 
 ### takePicture(<span class="text-info">HASH</span> propertyMap)
-Start the camera application to take a picture. The user can capture the displayed image by interacting with the resident camera app. In Windows, this method always shows the preview in full screen and user can use the native button to capture the image.
-                On wp8,wm when 'outputFormat' is 'image' then imageUri/image_uri shall have only Image name with \ sign, on WP8 ImageName shall be suffixed by DTF when 'outputFormat' is 'image'
+Start the camera application to take a picture. The user can capture the displayed image by interacting with the resident camera app. In Windows, this method always shows the preview in full screen and user can use the native button to capture the image. Refer examples mentioned below when outputFormat is set to [_**image**_](#dispalying-an-image-using-image-uri) or [_**dataUri**_](#dispalying-an-image-using-data-uri). 
 > Note: To display an image, it is recommended that you use the full path to the image instead of a relative path. To do this, you can use the [`expandDatabaseBlobFilePath`](Application#mexpandDatabaseBlobFilePath) method of the [Application module](Application) as such:
 
 ##### JavaScript
@@ -535,8 +534,7 @@ Path to a sound file resident on the device which will be played when the image 
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-<span class='label label-info'>Replaces:format</span> The format of the captured image in subsequent calls to takePicture(). On windows devices the format will be always .jpg type.
-                This Property shall accept/return one among the values mentioned in constant section which starts with COMPRESSION_FORMAT_...
+<span class='label label-info'>Replaces:format</span> The format of the captured image in subsequent calls to takePicture(). On WM/CE devices, only '.jpeg' or '.jpg' format is supported. This property will accept/return one among the values mentioned under [constant section](#constants) which starts with COMPRESSION_FORMAT_...
                 
 ####Params
 <p><strong>Default:</strong> jpg</p>
@@ -553,7 +551,7 @@ Path to a sound file resident on the device which will be played when the image 
 
 * Android
 * Windows Mobile
-* Windows CE(JPG is supported on all devices, Android, WP8 and Windows Mobile does not support PNG images)
+* Windows CE
 
 ###<span class="text-info">desiredHeight</span>
 
@@ -603,7 +601,7 @@ Path to a sound file resident on the device which will be played when the image 
 <span class='text-info'>STRING</span> 
 ####Description
 The image file path without file extension to store captured image in subsequent calls to takePicture() or capture(). Default filename will be IMG_timestamp and will be saved under root directory. The filename extension will be added automatically according to compressionFormat property value.
-                In Wp8, only filename can be changed, by default the path shall be under picture=>CameraRoll
+     
 ####Access
 
 
@@ -862,7 +860,7 @@ Setting the value of this property to "true", shall open the System ViewFinder w
 * COMPRESSION_FORMAT_JPGJPG compression.
 * COMPRESSION_FORMAT_PNGPNG compression.
 * OUTPUT_FORMAT_IMAGEThis shall provide the image uri. This can be used to display image directly on the page. An example is shown in the example section
-* OUTPUT_FORMAT_DATAURIThis is a base 64 encoding of the image and can be used to easily embed the image on the page or store the image in a database. On some consumer devices, captured image will be rotated 90 degrees while displaying.
+* OUTPUT_FORMAT_DATAURIThis is a base 64 encoding of the image and can be used to easily embed the image on the page or store the image in a database.
 * OUTPUT_FORMAT_IMAGE_PATHIf this value used for setting the outputFormat property, the takePicture or capture API will return imageUri as the path to the saved image in the device. User can use this image path to transfer the file to an http server if required. An example is given to demonstrate, transferring a file to http server.This property is not applicable for Android and windows phone 8.
 * COLOR_MODEL_RGBA colour image is captured.
 * COLOR_MODEL_GRAYSCALEA grayscale image is captured.
@@ -890,11 +888,8 @@ DataUri output is dependent on availability of virtual space. DataUri may fail, 
 ###ImageUri
 Image Uri display is dependent on browser capability.
 
-###GetSupportedProperties in WP8
-WP8 does not support getSupportedProperties or SetSupportedProperties.
-
 ###colorModel as Grayscale in Android
-Grayscale is supported only in the front camera of Android consumer devices.
+Grayscale is not supported on Android devices.
 
 ###Invalid/Null values for properties in Android and iOS
 Only valid and non-empty values for properties are supported in Android and iOS.
@@ -903,7 +898,7 @@ Only valid and non-empty values for properties are supported in Android and iOS.
 All WM and CE7 devices automatically turn off both color and imager cameras when the device is suspended. User must restart the camera to resume. Whereas CE5 (eg: MC9000) and CE6 (eg: MC31) devices retain the preview on resuming from suspend state.
 
 ###Image saving after taking picture
-In some devices (eg: Samsung), an image will be saved in landscape mode even if captured in portrait mode. This behavior is determined by the device's default settings.
+In some devices, an image will be saved in landscape mode even if captured in portrait mode. This behavior is determined by the device's default settings.
 
 ###WM/CE devices lacking support
 Due to platform limitations, the ES400, MC65 and MC67 do not support the color camera.
@@ -926,3 +921,252 @@ The Camera API is not supported from Enterprise Browser apps on the following Ze
 * Workabout Pro 4
 * Omnii XT15
 * VH10 
+
+##Examples
+
+###Take picture with default camera
+Take an image with as little code as possible, using all default values.
+<pre><code>:::javascript
+function take_picture_with_default_camera() {
+  // Capture an image from the default camera on the device, using the default image settings
+  EB.Camera.takePicture({}, picture_taken_callback);
+}
+
+function picture_taken_callback(params) {
+  // Did we receive an image?
+  if (params["status"]=="ok") {
+    // Assuming we have an <img id="#captured_image"> tag, we will be able to see the image that was just captured
+    $("#captured_image").attr("src", EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+  }
+}                           
+</code></pre>
+
+###Dispalying an image using image uri
+This example demonstrate how user can dispaly an image using image uri. The callback will return a image uri when outputFormat is set to ‘image’.
+<pre><code>:::javascript
+//enumerate the available cameras on the device
+var camArray = EB.Camera.enumerate();
+
+//below is the camera call back fired after takePicture is called
+var camera_callbackFunc = function(cbData){ 
+
+  //uri will have relative path info only
+  //user has to form the absolute local server path as shown below
+  uri = 'http://localhost:'+EB.System.localServerPort + cbData.imageUri;
+  //set the image uri to the image element
+  document.getElementById('imageUri').src = uri ;
+  
+};
+ 
+//below is the test function which is used for capturing an image with outputFormat set as image
+function Test_image_uri()
+{ 
+  //invoke takePicture API with outputFormat as image and set the callback method
+  camArray[0].takePicture({'outputFormat': 'image'}, camera_callbackFunc);
+}
+</code></pre>
+
+###Dispalying an image using data uri
+This example demonstrate how user can dispaly an image using data uri. The callback will return a data uri when outputFormat is set to ‘dataUri’.
+<pre><code>:::javascript
+//enumerate the available cameras on the device
+var camArray = EB.Camera.enumerate();
+
+ //below is the camera call back fired after takePicture is called
+var camera_callbackFunc = function(cbData){ 
+  //set the image uri to the image element
+  document.getElementById('imageUri').src = cbData.imageUri ;  
+};
+ 
+ //below is the test function which is used for capturing an image with outputFormat set as dataUri
+function Test_image_uri()
+{ 
+  //invoke takePicture API with outputFormat as dataUri and set the callback method
+  camArray[0].takePicture({'outputFormat': 'dataUri'}, camera_callbackFunc);
+}
+</code></pre>
+
+###Choose which camera to use when taking images
+On devices with more than one camera, you can select which camera to use for taking pictures.
+<pre><code>:::javascript
+&lt;div id="camera_list"&gt;
+&lt;/div&gt;
+
+var cameras = [];
+
+function choose_camera() {
+  // get all available cameras
+  cameras = EB.Camera.enumerate();
+
+  // build an HTML list
+  var cameraList = "&lt;ul&gt;";
+
+  for (var cameraIndex = 0 ; cameraIndex &lt; cameras.length; cameraIndex++) {
+    var camera = cameras[cameraIndex];
+    // Create a link for each camera with an onclick handler
+    cameraList = cameraList + '&lt;li&gt;&lt;a href="#" class="take_picture_with_selected_camera" onclick="take_picture_with_camera('+cameraIndex+')"&gt;' + camera.cameraType + '&lt;/a&gt;&lt;/li&gt;';
+  }
+
+  cameraList = cameraList+"&lt;/ul&gt;";
+
+  // make camera list visible to the user
+  $("#camera_list").html(cameraList);
+}
+
+function take_picture_with_camera(cameraIndex) {
+  var camera = cameras[cameraIndex];
+  camera.takePicture({}, picture_taken_callback);
+}                 
+</code></pre>
+
+###Saving a picture to the device's gallery
+Apart from taking new pictures, you can also save images to the built-in gallery. In the following examples, the picture we are adding to the gallery is one that was just taken with the camera, but you can add any other image you can access by filename.
+<pre><code>:::javascript
+function take_picture_and_save_it_to_gallery() {
+  EB.Camera.choosePicture({}, picture_taken_callback_save_to_gallery);
+}
+
+function picture_taken_callback_save_to_gallery(params) {
+  if (params["status"]=="ok") {
+    EB.Camera.copyImageToDeviceGallery(EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+
+    alert("Image saved to gallery");
+  }
+}      
+</code></pre>
+
+###Control image properties
+You can tweak multiple options to get an image exactly as you need it.
+<pre><code>:::javascript
+function control_image_properties() {
+  // Instead of accepting the defaults, let's set some properties to our liking
+
+  // We will ask for a PNG file...
+  EB.Camera.compressionFormat = "png";
+
+  // ...a particular image size...
+  EB.Camera.desiredWidth = 1024;
+  EB.Camera.desiredHeight = 768;
+
+  // ...and force the flash to be used
+  EB.Camera.flashMode = "on";
+
+  // Now, take the picture
+  EB.Camera.takePicture({}, picture_taken_callback);
+}
+
+function picture_taken_callback(params) {
+  // Did we receive an image?
+  if (params["status"]=="ok") {
+    // show it in our &lt;img id="captured_image"&lt; tag
+    $("#captured_image").attr("src", EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+  }
+
+}  
+</code></pre>
+
+###Determine camera capabilities
+You can get all available camera properties in a single call.
+<pre><code>:::javascript
+function determine_camera_capabilities() {
+  var capabilitiesList = "&lt;ul&gt;";
+
+  // Get all capabilities of the camera...
+  var capabilities = EB.Camera.getAllProperties();
+
+  // ... compose a nicely formatted list with their names and values ...
+  for (var capability in capabilities) {
+    capabilitiesList+="&lt;li&gt;"+capability+": "+capabilities[capability]+"&lt;/li&gt;";
+  }
+
+  capabilitiesList += "&lt;/ul&gt;";
+
+  // ... and show it
+  $("#camera_capabilities").html(capabilitiesList);
+}                
+</code></pre>
+
+###Select picture from device gallery
+Apart from taking new pictures, the Camera API also lets you access existing images on the device’s gallery.
+<pre><code>:::javascript
+function select_picture_from_gallery() {
+  EB.Camera.choose_picture({}, picture_taken_callback);
+}
+
+function picture_taken_callback(params) {
+  // Did we receive an image?
+  if (params["status"]=="ok") {
+    // Show it in an &lt;img&gt; tag
+    $("#captured_image").attr("src", EB.Application.expandDatabaseBlobFilePath(params["imageUri"]));
+  }
+}     
+</code></pre>
+
+###Getting a camera instance by cameraType
+Camera API also lets you access camera instance by cameraType.
+<pre><code>:::javascript
+//get the instance by cameraType and takePicture using that instance
+function get_color_camera_instance() {
+  var camInst = EB.Camera.getCameraByType('color');
+  camInst.takePicture({'outputFormat':'image'}, my_callback);
+}
+</code></pre>
+
+###Getting the list of resolutions supported by the camera
+Camera resolution is hardware specific. Camera API supports getting the supported resolutions of a camera instance.
+<pre><code>:::javascript
+function getsupporteSizeList()
+{
+	var instArray = EB.Camera.enumerate();
+	var reslnArray = instArray[0].supportedSizeList;
+	alert(reslnArray[0].width);
+	alert(reslnArray[0].height);
+	alert(reslnArray[1].width);
+	alert(reslnArray[1].height);
+}
+</code></pre>
+
+###Transfering an image to HTTP server
+This example demonstrate how user can transfer an image to http server. This will be useful when application is running on a remote server.
+<pre><code>:::javascript
+//enumerate the available cameras on the device
+var camArray = EB.Camera.enumerate();
+
+//below is the callback fired by network api after image upload to the server is completed
+var upload_file_callback = function (args){
+        status = args['status'];
+        //a status ok indicates image transferred successfully
+        alert(status);
+       }
+
+//below is the camera call back fired after takePicture is called
+var camera_callbackFunc = function(cbData){ 
+  alert(cbData.imageUri); 
+  //set the upload file properties; Refer network module for more details
+  var uploadfileProps = {
+           url: 'http://10.233.82.51:8081/upload_image_file',
+          //authType: "basic",
+          //authUser: "admin",
+          //authPassword: "password",
+          filename: cbData.imageUri,
+          body: "uploading file",
+          fileContentType: "image/jpeg"
+        };
+   
+   //below is the network module API used for uploading images when camera fire the callback
+   EB.Network.uploadFile(uploadfileProps, upload_file_callback);      
+ };
+ 
+ //below is the test function which is used for capturing an image with outputFormat set as imagePath
+function Test_image_transfer1()
+{ 
+  //invoke takePicture API with outputFormat as imagePath and set the callback method
+  camArray[0].takePicture({'fileName' : '/Application/Test/myImagename', 'outputFormat': 'imagePath'}, camera_callbackFunc);
+}
+ //below is the test function which is used for choosing a picture from device with outputFormat set as imagePath
+function Test_image_transfer2()
+{ 
+  //invoke choosePicture API with outputFormat as imagePath and set the callback method
+  EB.Camera.choosePicture({'outputFormat': 'image'}, camera_callbackFunc);
+}
+</code></pre>

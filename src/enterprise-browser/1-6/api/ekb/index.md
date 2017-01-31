@@ -182,7 +182,7 @@ Synchronous Return:
 Sets the particular layout for Enterprise Keyboard. The user can configure the Keyboard layout by setting the input type and privateImeOption values. 
 
 ####Parameters
-<ul><li>inputType : <span class='text-info'>INTEGER</span><p>The input type to be set for Enterprise Keyboard. See the link below for all available input types.
+<ul><li>inputType : <span class='text-info'>INTEGER</span><p>The input type to be set for Enterprise Keyboard for getting the input type as Text when set to 1, Number when set to 2, Phone when set to 3 and DateTime when set to 4. See the link below for all other available input types.
 						https://developer.android.com/reference/android/text/InputType.html
 						 </p></li><li>privateImeOption : <span class='text-info'>String</span><p>The only value currently suppported is "scan," which will bring the  Enterprise Keyboard to the foreground with a scan trigger view.
 						 </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

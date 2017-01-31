@@ -7,7 +7,7 @@ layout: guide.html
 
 
 ## Overview
-The Sensors extension is used to retrieve the raw data values of the specified sensors (accelerometer, tilt angle, device orientation, motion, eCompass, magnetometer, gyroscope, ambient light, proximity, proximity long range, pressure, temperature, humidity, gravity, linear acceleration, rotation, orientation etc.) from the device. To use this, you have to first call makeSensorByType to get an instance of that sensor. Then you can use the start and stop methods on that instance.
+The Sensors extension is used to retrieve the raw data values of the specified sensors (accelerometer, tilt angle, device orientation, motion, eCompass, magnetometer, gyroscope, ambient light, proximity, proximity long range, pressure, temperature, humidity, gravity, linear acceleration, rotation, orientation etc.) from the device. To use this, you have to first call makeSensorByType to get an instance of that sensor. Note: If the value of proximitySensorType property is different then user need to set the right proximitySensorType property value before calling makeSensorByType for getting an instance of that sensor. Then you can use the start and stop methods on that instance.
         
 ## Enabling the API
 There are two methods of enabling the Sensor API:
@@ -282,6 +282,22 @@ The minimum amount of time gap between two sensor update events, specified in mi
 * Android
 * Windows Mobile
 * Windows CE
+
+###proximitySensorType
+
+####Type
+<span class='text-info'>INTEGER</span> 
+####Description
+A constant describing a proximity sensor type. The default value of proximitySensorType is 8. On TC8000 Android device, the default value of proximitySensorType is 22. Note: This must be called before invoking makeSensorByType method if the value of proximitySensorType is different.
+
+####Access
+
+* Default Instance: This property should only be accessed via the API class object. 
+	* <code>EB.Sensor.proximitySensorType</code>
+
+####Platforms
+
+* Android
 
 ###status
 

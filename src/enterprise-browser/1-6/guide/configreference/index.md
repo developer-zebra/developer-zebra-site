@@ -1456,7 +1456,7 @@ Used to disable barcode scanning capabilities for a previous scanner API. Does n
 
 ## Sound
 ### DecodeVolume
-Controls the volume of the device beeper when a barcode is scanned.
+Controls the volume of the device beeper when a barcode is scanned. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1467,7 +1467,7 @@ Controls the volume of the device beeper when a barcode is scanned.
 	<DecodeVolume value="3"/>
 
 ### DecodeFrequency
-Controls the frequency of the device beeper when a barcode is successfully decoded. Must be within the range of the beeper.
+Controls the frequency of the device beeper when a barcode is successfully decoded. Must be within the range of the beeper. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
 
 **Possible Values**:
 
@@ -1477,8 +1477,19 @@ Controls the frequency of the device beeper when a barcode is successfully decod
 	:::xml
 	<DecodeFrequency value="0xFFFF"/>
 
+### DecodeDuration
+Controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned. This feature is applicable to WM/CE platform & Android KitKat and above platform only.
+
+**Possible Values**:
+
+* 0 to 5000 (number of milliseconds)
+
+#### Example
+	:::xml
+	<DecodeDuration value="1000"/>
+
 ### InvalidDecodeFrequency
-Controls the frequency of the device beeper sound when a scanned barcode is not successfully decoded. This value (in hex) must be a frequency within the range of the device beeper. Not applicable to the Enterprise Tablet.
+Controls the frequency of the device beeper sound when a scanned barcode is not successfully decoded. This value (in hex) must be a frequency within the range of the device beeper. Not applicable to Android platform.
 
 **Possible Values**:
 
@@ -1488,19 +1499,8 @@ Controls the frequency of the device beeper sound when a scanned barcode is not 
 	:::xml
 	<InvalidDecodeFrequency value="0xFFFF"/>
 
-### DecodeDuration
-Controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
-
-**Possible Values**:
-
-* number of milliseconds
-
-#### Example
-	:::xml
-	<DecodeDuration value="500"/>
-
 ### ScanDecodeWav
-Specifies a .wav file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive.
+Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. The ScanDecodeWav config tag doesnot rely on DecodeDuration, DecodeFrequency and DecodeVolume config tags. This feature is applicable to WM/CE platform & Android KitKat and above platform only. See [remarks](#scandecodewav-on-android-platform) section below.
 
 **Possible Values**:
 
@@ -1508,10 +1508,14 @@ Specifies a .wav file to be played when a scanned barcode is successfully decode
 
 #### Example
 	:::xml
-	<ScanDecodeWav value="file://path-to-success-wav-file"/>
+	For WM/CE - If alarm.wav file is present under '\Program Files\EnterpriseBrowser' directory in the device.
+	<ScanDecodeWav value="file://%INSTALLDIR%/alarm.wav"/>
+	
+	For Android - If alarm.ogg file is present under '/sdcard' directory in the device.
+	<ScanDecodeWav value="file:///sdcard/alarm.ogg"/>
 
 ### ScanInvalidWav
-Specifies a .wav file to be played when a scanned barcode is not successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. **Not applicable to Enterprise Tablet**.Case sensitive. 
+Specifies a .wav file to be played when a scanned barcode is not successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. **Not applicable to Android platform**.Case sensitive. 
 
 **Possible Values**:
 
@@ -1994,6 +1998,9 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 -----
 
 ## Remarks
+### <a name="_scandecodewav"></a>ScanDecodeWav on Android Platform
+If ScanDecodeWav configuration paramater contains '.wav'/'.ogg' filename same as system filename, then the system '.wav'/'.ogg' file will be selected for playing when a scanned barcode is successfully decoded.
+
 ### <a name="_batteryRefresh"></a>Battery Polling on Enterprise Tablet
 Due to its asynchronous battery notification, the Enterprise Tablet does not support BatteryRefresh. This has the effect of launching a bateryEvent only when the battery level changes. This functionality has been implemented in place of polling as a means of maximizing battery power.
 

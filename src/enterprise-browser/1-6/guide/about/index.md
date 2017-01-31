@@ -128,6 +128,27 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
+  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="et5xPic" src="../../images/et5x.jpg" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>ET5X</b></td>
+  <td class="clsSyntaxCells clsOddRow">ET50, ET55</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Falcon - TC75</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.png" height="75"></img></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Ironman - TC51</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC51</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc18Pic" src="../../images/mc18.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC18</b></td>
@@ -160,7 +181,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -279,7 +300,7 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>

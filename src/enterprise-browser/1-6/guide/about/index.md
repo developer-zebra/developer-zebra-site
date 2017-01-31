@@ -136,14 +136,14 @@ Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and exi
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.png" height="75"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="75"></td>
   <td class="clsSyntaxCells clsOddRow"><b>Falcon - TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.png" height="75"></img></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="75"></img></td>
   <td class="clsSyntaxCells clsOddRow"><b>Ironman - TC51</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC51</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>

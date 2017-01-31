@@ -13,75 +13,50 @@ Enterprise Browser also can run apps built for PocketBrowser, RhoElements and th
 
 ## New in v1.6
 
-#### Zebra Device Support
+Enterprise Browser 1.6 offers support for Android 6.0 Marshmallow on new and existing Zebra devices, and a range of additional new features for Android devices. 
+
+####Zebra Android Device Support
+* ET50 Android Lollipop
+* ET55 Android Lollipop
+* MC18 Android Lollipop
+* MC40 Android Lollipop
+* TC51 Android Marshmallow
+* TC75 Android Marshmallow
+* TC8000 Android Lollipop
 
 [See all supported devices](../about#mobile)
 
-#### New or Updated APIs
+####New or Updated APIs (released with EB 1.6)
 
-#### New Features
+* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**Applicable to Android devices which contains EKB 1.2 and above version**). 
 
-#### New Tags
+* **Updated [Barcode API](../../api/barcode) -** properties **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** are now also supported on Android platform. 
 
-#### New Guides
+* **Updated [Scanner API](../../api/re2x/scanner) -** event **connectionListenerEvent**is now also supported on Android Kitkat platform. 
 
-<!-- 
-Enterprise Browser 1.5 comes with a new look and feel, including new logos and splash screens. On the inside, EB 1.5 offers support for Android 5.0 Lollipop on new and existing Zebra devices, and a range of additional new features for Android and Windows Mobile/CE devices.  
+* **Updated [Sensor API](../../api/sensor) -** new property **proximitySensorType** has been introduced to set or get the value of proximity sensor type.
 
+#### RS6000 Ring Scanner is now also applicable to Falcon - TC75 Android Marshmallow device.
 
-####Zebra Device Support
-* MC67 with Android KitKat
-* TC70 with Android Lollipop
-* TC75 with Android Lollipop
-* WT6000 with Android Lollipop
-* WorkAbout Pro 4 with Windows Embedded Handheld 6.5 (_WAP4 WEH-3.0.1 BSP and higher_)
-* Omnii XT15 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* Omnii XT15 with Windows Embedded Handheld 6.5 ( _Omnii WEH-8.2 BSP and higher_)
-* VH10 with Windows CE 6.0 (_Omnii CE-12.2 BSP and higher_)
-* RS4000 and RS6000 ring scanners support EB apps on WT6000 devices running Android Lollipop
-* RS507 ring scanner supports EB apps on devices running Android KitKat and higher
+#### Enterprise Browser Lockdown Using EHS - now possible to lock down the Enterprise Browser application and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
 
-[See all supported devices](../about#mobile)
+#### New Configuration Tags for Android - Following Enterprise Browser configuration tags are now also supported on Android Platform.
 
-####New or Updated APIs (released with EB 1.5)
+* **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav)**
 
-* **New [RemoteNotification API](../../api/remotenotification) -** works with RS-series ring scanners to activate multi-color LEDs, beeper and vibrator device signals (**Android only**). 
+* **[&lt;DecodeVolume&gt;](../configreference#decodevolume)**
 
-* **Updated [Barcode API](../../api/barcode) -** supports **addConnectionListener** and **removeConnectionListener** for pluggable scanners and fixes sound decoding issues that were present on some devices. 
+* **[&lt;DecodeFrequency&gt;](../configreference#decodefrequency)**
 
-* **Updated [Device API](../../api/device) -** allows JavaScript to access **acquirePartialWakeLock** and **releasePartialWakeLock** functions programmatically. 
+* **[&lt;DecodeDuration&gt;](../configreference#decodeduration)**
 
-#### New Features
+#### [New DataWedge Usage Guide](../datawedge) - detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
 
-* **[Simplified mass deployment](../setup/#manualdeployment)** of Enterprise Browser runtime and keymapping config files to devices, with or without the EB app itself (**Android only**). 
+* **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelines-for-datawedge-version---228-or-below)**
+* **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelines-for-datawedge-version---between-229-to-5113)**
+* **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelines-for-datawedge-version---601-and-above)**
 
-* **Customizable [&lt;UserAgent&gt; settings for Android](../configreference/#useragent)** permits greater control over values extracted from Android devices for configuring the Android UserAgent string. 
-
-* **Improved [SSL/TLS security compliance](../compliance)** with support up to TLS 1.2. 
-
-#### New Tags for Android
-
-* **[&lt;DebugModeEnable&gt;](../configreference#debugmodeenable) -** controls Enterprise Browser app **debugging with Chrome Inspector**, which is now supported.
-
-* **[&lt;WakeLock&gt;](../configreference#wakelock) -** allows the CPU to remain active after the screen and keyboard backlight are turned off.
-
-* **[&lt;AutoPlayMediaElements&gt;](../configreference#autoplaymediaelements) -** allows automatic media playback to be disabled by default.
-
-#### New Tags for Windows Mobile/CE
-
-* **[&lt;DiskCache&gt;](../configreference#diskcache) -** puts a user-defined cap on device storage used by the web-page cache.
-
-* **[&lt;DiskCacheExpTimeFactor&gt;](../configreference#diskcacheexptimefactor) -** allows an administrator to control when cached pages will be refreshed.
-
-* **[&lt;ClientCertPath&gt;](../configreference#clientcertpath) -** allows changes to the default location of client authentication certificates on the device.
-
-#### New Guides
-
-* **[Keycode Mapping Guide](../keycapture)** updated in EB 1.5 to include **function key mapping for certain Zebra devices** running Windows Mobile that use proprietary keycodes (including the WorkAbout Pro 4 and Omnii XT15). This guide also documents how to remap Android keys to ensure that keycode values are delivered to apps as expected. 
-
-* **[DataWedge Usage Guide](../datawedge)** (released with EB 1.4) details the steps required to **use DataWedge for barcode scanning in place of the Enterprise Browser APIs**, and how to switch between the two. 
-
--->
+#### Android Jellybean devices has been deprecated from this release onwards, please use Enterprise Browser 1.5 or below versions for Android Jellybean device support.
 
 ### Key Enterprise Browser Features
 

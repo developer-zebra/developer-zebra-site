@@ -5,40 +5,36 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](../about#mobile) running Android and Windows Mobile/CE. Enterprise Browser includes is a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other peripherals. 
+Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](../about#mobile) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4RMP9wSL1nY?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx" frameborder="0" allowfullscreen></iframe>
 <br>
 
-The base [EB installation](../setup) for Windows includes 
-
-All runtime settings and parameters are controlled though a single, human-readable file, the `Config.xml`, which can be mass-deployed using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system.   
-
-Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal migration path for developers looking to move legacy applications to newer devices or to update their apps with a modern UI. Enterprise Browser can help companies reduce development time and cost, making the transition to next-generation devices and operating systems fast, easy and affordable--particularly for high-volume mobile environments.
+The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. See the [API Compatibility matrix](../compatibility). 
 
 ## New in v1.6
 
-#### Android Jelly Bean Deprecated
-Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower versions for Android Jelly Bean device support.
+#### Android Jelly Bean - End of Support
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
 
 #### Zebra Android Device Support
 Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and 6.0 Marshmallow: 
 
-* ET50 with Android Lollipop
-* ET55 with Android Lollipop
-* MC18 with Android Lollipop
-* MC40 with Android Lollipop
-* TC51 with Android Marshmallow
-* TC75 with Android Marshmallow
-* TC8000 with Android Lollipop
+* **ET50** with Android Lollipop
+* **ET55** with Android Lollipop
+* **MC18** with Android Lollipop
+* **MC40** with Android Lollipop
+* **TC51** with Android Marshmallow
+* **TC75** with Android Marshmallow
+* **TC8000** with Android Lollipop
 
 [See all supported devices](#mobile)
 
-The release also adds a range of additional new features for all Android devices.
+This release also adds a range of additional new features for all supported Android devices.
 
 #### New or Updated APIs (released with EB 1.6)
 
-* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applicable only to Android devices with EKB 1.2 and above installed**). 
+* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and above**). 
 
 * **Updated [Barcode API](../../api/barcode) -** now includes **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** properties for Android (formerly available only for Windows Mobile/CE). 
 
@@ -484,13 +480,15 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 * Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
 
 ###Printers
+The printers shown below have been tested for compatibility with USB printing from Enterprise Browser. Printing wirelessly from EB apps is supported on many other Zebra printer models. **NOTE**: Zebra's QL Plus and QLn series printers do not support USB printing.
+
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th class="clsSyntaxHeadings">These printers have been tested for USB printing compatibility. Zebra supports wireless printing on many other models.</th>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device models</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="text-centered">Interface(s)</th>
+  <th width="15%" class="clsSyntaxHeadings"></th>
+  <th width="10%" class="clsSyntaxHeadings">Device family</th>
+  <th width="25%" class="clsSyntaxHeadings">Device models</th>
+  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
+  <th width="25%" class="text-centered">Interface(s)</th>
  </tr>
 <tr>
 <td class="clsSyntaxCells clsOddRow"><img id="mz220pic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-mz220.jpg" width="175"></img></td>
@@ -526,13 +524,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 <td class="clsSyntaxCells clsOddRow">ZD500R RFID Printer</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
-</tr>
-<td class="clsSyntaxCells clsOddRow"><b>NOTE</b>: Zebra's QL Plus and QLn series<br>printers do not support USB printing.</td>
-<td class="clsSyntaxCells clsOddRow"></td>
-<td class="clsSyntaxCells clsOddRow"></td>
-<td class="clsSyntaxCells clsOddRow"></td>
-<td class="clsSyntaxCells clsOddRow"></td>
-</tr>
 </tbody>
+</table>
 
 

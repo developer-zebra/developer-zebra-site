@@ -5,34 +5,35 @@ product: Enterprise Browser
 layout: ebmatrix.html
 ---
 
-#### Filter usage
+#### How to Customize
+**To create a list of APIs available to an app**, select the **API Type** from the drop-down menu. Optionally, select the operating system and/or the rendering engine currently running on the target or that is being considered as a migration target to see the APIs that support those options. 
 
-**API Type -** displays APIs of the selected category
+**API Type** displays APIs of the selected platform<br>
+**Operating System** displays APIs supported by the selected OS<br>
+**Engines** displays rendering engines supported by the APIs and OS currently selected 
 
-**Operting System -** displays all APIs supported by the selected OS
-
-**Engines -** displays all rendering engines supported by the APIs currently shown 
+-----
 
 <div>
 	<B>API Type:</B>
 	<select id="sel_api_type" onChange="listAPI();">
-		<option value="all">ALL</option>
+		<option value="all">All</option>
 		<option value="ebapi">Enterprise Browser APIs</option>
-		<option value="re2xapi">RhoElements 2.x APIs</option>
 		<option value="pb3xapi">PocketBrowser 3.x APIs</option>
+		<option value="re2xapi">RhoElements 2.x APIs</option>
 	</select>
-	<B>Operating System(s):</B>
+	<B>Operating System:</B>
 	<select id="sel_platform_type" onChange="listAPI();">
-		<option value="all">ALL</option>
-		<option value="plat_wmce">WM/CE</option>
+		<option value="all">All</option>
 		<option value="plat_android">Android</option>
+		<option value="plat_wmce">Windows Mobile/CE</option>
 	</select>
-	<B>Engine(s):</B>
+	<B>Engine:</B>
 	<select id="sel_engine_type" onChange="listAPI();">
-		<option value="all">ALL</option>
-		<option value="eng_ie_wmce">Internet Explorer</option>
-		<option value="eng_webkit_wmce">WM/CE Webkit</option>
+		<option value="all">All</option>
 		<option value="eng_android">Android Stock Webkit</option>
+		<option value="eng_ie_wmce">Internet Explorer</option>
+		<option value="eng_webkit_wmce">Windows Mobile/CE Webkit</option>
 	</select>
 	<br><br><table id='tableapilist'></table>
 </div>
@@ -69,7 +70,7 @@ layout: ebmatrix.html
 			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/cardreader'>CardReader	</a>","platform_wmce":"WM/CE",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"WM/CE Webkit",	"engine_android":"Android Stock Webkit"	},
 			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/Database'>Database	</a>","platform_wmce":"WM/CE",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"WM/CE Webkit",	"engine_android":"Android Stock Webkit"	},
 			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/device'>Device	</a>","platform_wmce":"WM/CE",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"WM/CE Webkit",	"engine_android":"Android Stock Webkit"	},
-			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/Ekb'>Ekb	</a>","platform_wmce":"",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"",	"engine_android":"Android Stock Webkit"	},
+			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/Ekb'>EnterpriseKeyboard	</a>","platform_wmce":"",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"",	"engine_android":"Android Stock Webkit"	},
 			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/EzNFC'>EzNFC	</a>","platform_wmce":"",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"",	"engine_android":"Android Stock Webkit"	},
 			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/File'>File	</a>","platform_wmce":"WM/CE",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"WM/CE Webkit",	"engine_android":"Android Stock Webkit"	},
 			{	"apitype":"EnterpriseBrowser API",	"apiname":"<a target='_blank' href='../../api/Intent'>Intent	</a>","platform_wmce":"WM/CE",	"platform_android":"Android",	"engine_ie_wmce":"",	"engine_webkit_wmce":"WM/CE Webkit",	"engine_android":"Android Stock Webkit"	},

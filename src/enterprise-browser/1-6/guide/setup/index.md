@@ -243,9 +243,9 @@ The system is now ready to deploy Enterprise Browser using the Enterprise Browse
 -----
 
 ## Manual Deployment
-Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) executables on the development host as above, perform the steps as indicated for the target platform. 
- 
-Enterprise Browser can be mass-deployed using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or a compatible MDM system. 
+Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and manually unpackaged on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) executables on the development host as above, perform the steps below as appropriate for the target platform. 
+
+Enterprise Browser can be mass-deployed using Zebra [StageNow](../../../../stagenow) or a compatible MDM system. 
 
 &#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open **Applications -> Enterprise Browser -> Runtimes**. 
 

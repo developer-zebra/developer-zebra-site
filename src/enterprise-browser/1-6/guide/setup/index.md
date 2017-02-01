@@ -243,9 +243,9 @@ The system is now ready to deploy Enterprise Browser using the Enterprise Browse
 -----
 
 ## Manual Deployment
-Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) on the development host as above, perform the steps as indicated for the target platform. 
+Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and unpackaged by hand on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) executables on the development host as above, perform the steps as indicated for the target platform. 
  
-Alternatively, Enterprise Browser can be mass-deployed using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system. 
+Enterprise Browser can be mass-deployed using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or a compatible MDM system. 
 
 &#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open **Applications -> Enterprise Browser -> Runtimes**. 
 
@@ -277,10 +277,14 @@ On a Mac, the Runtimes folder looks like the image below:
 > **Note: Directory names are case sensitive**. 
 
 ### Update EB Settings
-**Applies only to Enterprise Browser 1.5 (and higher) for Android**. After Enterprise Browser is launched for the first time following installation, subsequent launches still check the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory for new versions of the `Config.xml` and/or `keycodemapping.xml` files for processing as described above. Therefore, new versions of those settings files should be placed in the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. The next time Enterprise Browser is restarted, copies of the new settings file(s) will automatically be placed in the appropriate locations for execution and backup, and the original(s) will be deleted. 
+**Applies only to Enterprise Browser 1.5 (and higher) for Android**. After Enterprise Browser is launched for the first time following installation, subsequent launches still check the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory for new versions of the `Config.xml` and/or `keycodemapping.xml` files for processing as described above. 
 
-### Mass Deployment
-The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by adapting the instructions in the Manual Deployment section, above. 
+Therefore, new versions of those settings files should be placed in the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. The next time Enterprise Browser is restarted, copies of the new settings file(s) will automatically be placed in the appropriate locations for execution and backup, and the original(s) will be deleted. 
+
+## Mass Deployment
+The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by using the instructions below. 
+
+
 
 -----
 

@@ -4,6 +4,7 @@ productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 ---
+
 ## Overview 
 Installing Enterprise Browser on a desktop or laptop system provides all the software necessary to start making Enterprise Browser apps. All that's needed in addition to the software is a connection via Android Debug Bridge (ADB) or Microsoft Mobile Device Center (or ActiveSync on WinXP) to one or more [supported Zebra devices](../about/#mobile) running Android or Windows Mobile/CE. See the Prerequisites section for connection details. 
 

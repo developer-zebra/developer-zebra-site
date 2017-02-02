@@ -38,27 +38,26 @@ layout: ebmatrix.html
 	<br><br><table id='tableapilist'></table>
 </div>
 <style>
-	table, th, td {
-		border: 1px solid black;
-	    border-collapse: collapse;
-	}
-	th {
-	    height: 70px;
-	    background-color: #eeeeee;
-	    color: black;
-	    text-align: center;
-	}
-	td {
-		height: 60px;
-		text-align: center;
-	}
-	table{
-		width: 50%
-	}
-	tr:hover {
-		background-color: #eeeeee
-	}
-
+		table, th, td {
+			border: 1px solid black;
+		    border-collapse: collapse;
+		}
+		th {
+		    height: 70px;
+		    background-color: #eeeeee;
+		    color: black;
+		    text-align: center;
+		}
+		td {
+			height: 60px;
+			text-align: center;
+		}
+		table{
+			width: 50%
+		}
+		tr:hover {
+			background-color: #eeeeee
+		}
 </style>
 <script type="text/javascript">
 		var matrix=[

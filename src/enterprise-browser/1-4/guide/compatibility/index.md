@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: ebmatrix.html
 ---
 
-#### How to Customize
+#### How to Customize the Matrix
 **To create a list of APIs available to an app**, select the **API Type** from the drop-down menu. Optionally, select the operating system and/or the rendering engine currently running on the target or that is being considered as a migration target to see the APIs that support those options. 
 
 **API Type** displays APIs of the selected platform<br>

@@ -1,5 +1,5 @@
 ---
-title: DataWedge Usage
+title: Using DataWedge with EB
 productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
@@ -10,13 +10,53 @@ The DataWedge app (included on every Zebra device) makes it possible to fetch ba
 
 **Important: Control of barcode scanning hardware is exclusive**. When DataWedge is active, the Enterprise Browser Barcode APIs will be inoperable. Likewise, an Enterprise Browser app that uses Barcode APIs will prevent other apps (including DataWedge) from accessing the scanner. This guide explains how to take control of a device's scanner hardware and how to subsequently release it to other apps. 
 
-**See also: [DataWedge User Guide](http://techdocs.zebra.com/datawedge/6-0/guide/about/)** 
+**See also: [DataWedge User Guide](../../../../datawedge)** 
 
 -----
-##Guidelines for DataWedge Version - 2.2.8 or below
-Below explains what to be done when scanning is required within Enterprise Browser application either using DataWedge application or Enterprise Browser Barcode API.
 
-###Use DataWedge for Scanning
+## Use DataWedge for Scanning
+Instructions for the use of DataWedge vary slightly depending on [the DataWedge version installed](../../../../datawedge/6-2/guide/about) on the device. Use the following instructions for scanning from within an Enterprise Browser app using either DataWedge or the Enterprise Browser Barcode API.
+
+### DataWedge 6.0.1 and higher
+
+1. Remove the association to `com.symbol.enterprisebrowser` from the "Disabled app list" in the DataWedge Settings panel:
+  * **In DataWedge**, select **Menu->Settings->Disabled app list** and **remove `com.symbol.enterprisebrowser` from the list that appears. 
+  * **Note**: If **`com.symbol.enterprisebrowser`** activity is getting listed again after reboot under **Disable app list** settings location, then do the following as mentioned below:
+       * **Either** remove the association of **`com.symbol.enterprisebrowser`** activity from **Disable app list** settings location each time after reboot.
+     * **Or** upgrade DataWedge version to 6.1.8 or above. 
+2. For scanning to be enabled, the below runtime configuration tag must be set to 1:
+    * **The [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
+
+### Use Barcode API for Scanning
+
+For the scanning API to be enabled, the runtime configuration tag must be set to 0, as below:
+
+  * **The [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**
+
+-----
+
+### DataWedge 2.2.9 - 5.1.13
+
+1. **Download the required DataWedge (`.db`) profiles**:
+    * [Download RhoElements Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_RhoElements.db)
+    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_EnterpriseBrowser.db)
+2. **Copy both profiles** into the **`/Android/data/com.symbol.datawedge/files`** directory to the device, replacing the existing file (if any). 
+3. On the device, install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
+4. **Start DataWedge** on the device. 
+5. In **DataWedge**, select **Menu->Settings->Import Profile**.  A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
+6. From the list, **tap the profiles in order which were copied in Step 2**. When the profiles are imported, focus returns to the previous screen and a confirmation message appears. 
+7. **Tap** the **BACK** button to return to the **DataWedge** profiles list. Both **RhoElements** and **EnterpriseBrowser** profiles are listed and the **EnterpriseBrowser** profile will be enabled by default. 
+8. To enable scanning, set the runtime configuration tag to 1:
+    * **The** [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) **tag in the EB app's** `config.xml` **file must contain a value of "1"**.
+
+###Use EnterpriseBrowser API for Scanning
+For scanning to be enabled, the below runtime configuration tag must be set to 0:
+  * **The [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
+
+-----	
+
+###DataWedge 2.2.8 or lower
+
 1. For scanning to be enabled, the below runtime configuration tag must be set to 1:
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
 
@@ -28,7 +68,7 @@ In order to use the scanner with Enterprise Browser application you will need to
 3. Uncheck **DataWedge enabled** checkbox.
 4. For scanning to be enabled, the below runtime configuration tag must be set to 0:
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
-	
+  
 ####Create DataWedge Profile:
 1. Install Enterprise Browser application.
 2. Start DataWedge application.
@@ -44,46 +84,6 @@ In order to use the scanner with Enterprise Browser application you will need to
 12. For scanning to be enabled, the below runtime configuration tag must be set to 0:
      * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
 
------
-
-##Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13
-Below explains what to be done when scanning is required within Enterprise Browser application either using DataWedge application or Enterprise Browser Barcode API.
-
-###Use DataWedge for Scanning
-1. **Click the link below** to download the required **DataWedge (`.db`)** profiles: 
-    * [Download RhoElements Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_RhoElements.db)
-    * [Download EnterpriseBrowser Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_EnterpriseBrowser.db)
-2. **Copy both profiles to the device** into the **`/Android/data/com.symbol.datawedge/files`** directory, replacing the existing file (if any). 
-3. On the device, Install the **Enterprise Browser** application that will be using **DataWedge** (if not already installed). 
-4. **Start DataWedge** on the device. 
-5. In **DataWedge**, select **Menu->Settings->Import Profile**.  A list of available profiles appears ([as shown on this example screen](../../../../datawedge/5-0/guide/advanced#importaprofile)).
-6. From the list, **tap the profiles in order which were copied in Step 2**. When the profiles are imported, focus returns to the previous screen and a confirmation message appears. 
-7. **Tap** the **BACK** button to return to the **DataWedge** profiles list. Both **RhoElements** and **EnterpriseBrowser** profiles are listed and the **EnterpriseBrowser** profile will be enabled by default. 
-8. For scanning to be enabled, the below runtime configuration tag must be set to 1:
-    * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
-
-###Use EnterpriseBrowser API for Scanning
-For scanning to be enabled, the below runtime configuration tag must be set to 0:
-  * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
-
------	
-
-##Guidelines for DataWedge Version - 6.0.1 and above
-Below explains what to be done when scanning is required within Enterprise Browser application either using DataWedge application or Enterprise Browser Barcode API.
-	
-###Use DataWedge for Scanning
-1. Remove association of **`com.symbol.enterprisebrowser`** from **Disable app list** settings.
-	* In **DataWedge**, select **Menu->Settings->Disabled app list** and remove the association of **`com.symbol.enterprisebrowser`** activity. 
-	* **Note**: If **`com.symbol.enterprisebrowser`** activity is getting listed again after reboot under **Disable app list** settings location, then do the following as mentioned below:
-	     * **Either** remove the association of **`com.symbol.enterprisebrowser`** activity from **Disable app list** settings location each time after reboot.
-		 * **Or** upgrade DataWedge version to 6.1.8 or above. 
-2. For scanning to be enabled, the below runtime configuration tag must be set to 1:
-    * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
-
-###Use EnterpriseBrowser API for Scanning
-For scanning to be enabled, the below runtime configuration tag must be set to 0:
-  * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
-	
 -----
 
 **See also: [DataWedge User Guide](../../../../datawedge)**

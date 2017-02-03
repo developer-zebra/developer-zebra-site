@@ -31,8 +31,30 @@ Enables or disables this feature. Default is enabled.
 Configures which scanning device to use for data capture.
 
 * Auto - Automatically determines the best scanning device. If a Scan Module or Scan/MSR Module is installed on the MC40, then the 2D imager is selected. Otherwise the camera is selected.
-* Camera Scanner - Scanning is performed with the rear-facing camera.
-* 2D Imager - Scanning is performed using the installed Scan or Scan/MSR module.
+* Internal Laser 1 - Scanning is performed using the internal 1D laser scanner.
+* Internal Imager 1 - Scanning is performed using the internal 2D scanner or MSR module.
+* Internal Camera 1 - Scanning is performed with the rear-facing camera.
+* Pluggable Laser 1 - Scanning is performed using an external 1D laser scanner plugged into the device.
+* Bluetooth Imager 1 - Scanning is performed using an external 2D scanner connected via BlueTooth.
+* RS6000 Bluetooth Imager - Scanning is performed using a RS6000 over Bluetooth.
+
+The following Bluetooth scanners are supported: 
+
+* **Zebra RS507** Cordless Ring Scanner
+* **RS6000 Bluetooth Ring Scanner** (when used with WT6000 only)  
+
+Bluetooth scanners are supported according to the following rules:
+
+* **To initially configure the RS507** in a Profile, the scanner must be paired and connected.
+* **After initial configuration**, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
+* **The device will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while it is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
+* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataCapture will revert to the current default scanner.
+
+## Keep Enabled on Suspend 
+This mode is supported on Bluetooth and pluggable scanners only, and might result in faster battery drain than would otherwise be expected while in suspend mode. 
+
+**Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
+
 
 ## Decoders
 Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:

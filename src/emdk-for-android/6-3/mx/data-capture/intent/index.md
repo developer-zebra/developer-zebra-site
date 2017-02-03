@@ -56,6 +56,7 @@ Allows configuration of the Intent Feature for the profile. The Intent Output Fe
 	* Send via StartActivity
 	* Send via startService
 	* Broadcast intent
+* Receiver Foreground Flag - When Intent delivery is sent via Broadcast Intent, DataCapture sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. **Note: Use this flag only if delays are seen in delivery of Intents immediately following device boot-up**.
 
 > Note: Most scanning applications might want the user to be able to decode data and for that decode data to be sent to the *current* activity but not necessarily displayed. If this is the case, then the activity needs to be marked as ‘singleTop’ in its AndroidManifest.xml file. If your activity is not defined as singleTop, then on every decode, the system will create another copy of your Activity and send the decode data to this second copy.
 

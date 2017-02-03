@@ -64,12 +64,7 @@ The following Enterprise Browser configuration tags are now supported on Android
 
 #### New Guides
 
-* **[New DataWedge Usage Guide](../datawedge) -** detail steps required to use DataWedge for barcode scanning in place of the Enterprise Browser APIs, and how to switch between the two.
-
-  * **[Guidelines for DataWedge Version - 2.2.8 or below](../datawedge/#guidelinesfordatawedgeversion228orbelow)**
-  
-  * **[Guidelines for DataWedge Version - Between 2.2.9 to 5.1.13](../datawedge/#guidelinesfordatawedgeversionbetween229to5113)**
-  * **[Guidelines for DataWedge Version - 6.0.1 and above](../datawedge/#guidelinesfordatawedgeversion601andabove)**
+* **[Updated DataWedge Usage Guide](../datawedge) -** now contains detailed steps for enabling and disabling DataWedge based on which DataWedge version is installed on the device.
 
 #### Android Jelly Bean Deprecated
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower versions for Android Jelly Bean device support.

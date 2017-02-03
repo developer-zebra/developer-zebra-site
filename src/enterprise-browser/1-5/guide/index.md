@@ -44,6 +44,8 @@ automenu:
           url: logging
         - title: On-Device Debugging
           url: debuggingjs
+        - title: Sample Apps
+          url: samples
     - title: Migration
       items:
         - title: From Pocket Browser 2.x/3x

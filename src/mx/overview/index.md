@@ -50,8 +50,6 @@ MX is the umbrella term used to refer collectively to the entire experience offe
 * Configuration Service Providers (CSPs)
 * Changes and extensions to standard applications (i.e. Settings UI, Browser, Email Client, etc.)
 
->**Note:** All of the above components may or may not be present on a device. Specifically, MXMF and the CSPs may be absent. Therefore, these components would need to be installed on the device before they can be used.
-
 ### MX Management Framework (MXMF)
 
 MXMF is a device subsystem that provides an interface to applications that wish to set or query the configuration of device subsystems. It does not directly implement any set or query functions, but provides a framework that supports and hosts CSPs that do so. MXMF can be built into a BSP or can be added to a BSP after a device is shipped (via a patch applied via the OS update process). Applications and the MXMF communicate through an interchange of XML files that conform to the **XML.DTD**, as described in the **MX MF XML DTD** document.
@@ -68,6 +66,8 @@ MXMS is a term used to refer to the MXMF and all CSPs that are registered with t
 * CSPs that are built into a device and pre-registered with MXMF, such as the Wi-Fi CSP
 
 MXMS can be thought of as "the MXMF and a collection of currently registered CSPs." Although applications submit XML to the MXMF, it is more accurate to describe the MXMS (not just the MXMF) as the entity through which applications set and/or query configuration settings.
+
+>**Note:** All components described above may or may not be present on a device. Specifically, MXMF and the CSPs may be absent. Therefore, some or all of the components required for the device might need to be installed before they could be configured.
 
 ## MX Architecture and Data Flow
 

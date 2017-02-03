@@ -60,8 +60,6 @@ automenu:
           url: printing
         - title: PrinterZebra
           url: printingzebra
-        - title: Push
-          url: push
         - title: ScreenOrientation
           url: screenorientation
         - title: Sensor

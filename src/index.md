@@ -5,25 +5,27 @@ layout: list-products.html
 products:
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
-    url: /datawedge/5-0/guide/about
+    url: /datawedge/6-2/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/6-0/guide/about
+        url: /datawedge/6-2/guide/about
       - title: Setup
-        url: /datawedge/6-0/guide/setup
+        url: /datawedge/6-2/guide/setup
       - title: Advanced
-        url: /datawedge/6-0/guide/advanced
+        url: /datawedge/6-2/guide/advanced
       - title: Decoders
-        url: /datawedge/6-0/guide/decoders
+        url: /datawedge/6-2/guide/decoders
       - title: IP Output
-        url: /datawedge/6-0/guide/ipwedge
+        url: /datawedge/6-2/guide/ipwedge
       - title: APIs
-        url: /datawedge/6-0/guide/api
+        url: /datawedge/6-2/guide/api
       - title: Demo
-        url: /datawedge/6-0/guide/demo
+        url: /datawedge/6-2/guide/demo
     versions:
+      - url: datawedge/6-2/guide/about
+        label: '6.2'
       - url: datawedge/6-0/guide/about
         label: '6.0'
       - url: datawedge/5-0/guide/about
@@ -179,10 +181,10 @@ products:
         url: /mx/overview
       - title: Compatibility
         url: /mx/compatibility
-      - title: What version do I have?
+      - title: Which version do I have?
         url: /mx/mx-version-on-device
   - title: SimulScan
-    description: A tool for simultaneously capturing scanned data from multiple label regions.
+    description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
     btn-text: Latest Guides
     image: /simulscan/simulscan_logo.png
@@ -192,37 +194,41 @@ products:
       - title: Setup
         url: /simulscan/1-1/guide/setup
       - title: Template Builder
-        url: /simulscan/1-1/guide/template
+        url: /simulscan/1-1/guide/templatebuilder
       - title: APIs
-        url: /simulscan/1-1/apis
-      - title: Use Cases
-        url: /simulscan/1-1/guide/usecases
+        url: /simulscan/1-1/api
+      - title: Templates
+        url: /simulscan/1-1/guide/templates
       - title: Demo App
         url: /simulscan/1-1/guide/demo
       - title: Licensing
-        url: /simulscan/1-1/guide/licensing
+        url: /simulscan/1-1/guide/license
     versions:
       - url: simulscan/1-1/guide/about
         label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-4/about
+    url: /stagenow/2-6/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: Getting Started
-        url: /stagenow/2-4/gettingstarted
+        url: /stagenow/2-6/gettingstarted
       - title: Profiles
-        url: /stagenow/2-4/stagingprofiles
+        url: /stagenow/2-6/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-4/ProfileWizards
+        url: /stagenow/2-6/ProfileWizards
       - title: Settings
-        url: /stagenow/2-4/settingconfig
+        url: /stagenow/2-6/settingconfig
       - title: Setting Types
-        url: /stagenow/2-4/settingtypes
+        url: /stagenow/2-6/settingtypes
       - title: Device Staging
-        url: /stagenow/2-4/stageclient
+        url: /stagenow/2-6/stageclient
     versions:
+      - url: stagenow/2-6/about
+        label: '2.6'
+      - url: stagenow/2-5/about
+        label: '2.5'
       - url: stagenow/2-4/about
         label: '2.4'
       - url: stagenow/2-3/about

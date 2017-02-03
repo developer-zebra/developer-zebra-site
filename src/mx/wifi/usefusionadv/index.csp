@@ -20,4 +20,4 @@ parm:
       description: 
 ---
 
-Specify whether Fusion Advanced Logging will be used
+Used to enable/disable Fusion Advanced Logging. Available only when Advanced Wi-Fi Options are enabled. 

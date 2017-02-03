@@ -15,9 +15,19 @@ The DataWedge app (included on every Zebra device) makes it possible to fetch ba
 -----
 
 ## Use DataWedge for Scanning
-Instructions for the use of DataWedge vary slightly depending on [the DataWedge version installed](../../../../datawedge/6-2/guide/about) on the device. Use the following instructions for scanning from within an Enterprise Browser app using either DataWedge or the Enterprise Browser Barcode API.
+Enabling DataWedge for use with EB varies slightly depending which DataWedge version is installed on the device. If unsure, visit the ["Which Version is Installed?"](../../../../datawedge/6-2/guide/about/#whichversionisinstalled) section of the DataWedge About page and then resume here.
 
-### DataWedge 6.0.1 and higher
+Use the following instructions for scanning from within an Enterprise Browser app using either DataWedge or the Enterprise Browser Barcode API.
+
+**Configure Enterprise Browser to use**:
+
+*  [DataWedge 6.0.1 and higher](#dw601andhigher)
+*  [DataWedge 6.0.1 and higher](#dw229to5113)
+*  [DataWedge 6.0.1 and higher](#dw228andlower)
+*  [Barcode APIs](#usebarcodeapiforscanning)
+
+
+### DW 6.0.1 and higher
 
 1. Remove the association to `com.symbol.enterprisebrowser` from the "Disabled app list" in the DataWedge Settings panel:
   * **In DataWedge**, select **Menu->Settings->Disabled app list** and **remove `com.symbol.enterprisebrowser` from the list that appears. 
@@ -29,13 +39,13 @@ Instructions for the use of DataWedge vary slightly depending on [the DataWedge 
 
 ### Use Barcode API for Scanning
 
-For the scanning API to be enabled, the runtime configuration tag must be set to 0, as below:
+To use a device scanner through the API, the runtime configuration tag must be set to 0, as below:
 
   * **The [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**
 
 -----
 
-### DataWedge 2.2.9 - 5.1.13
+### DW 2.2.9 to 5.1.13
 
 1. **Download the required DataWedge (`.db`) profiles**:
     * [Download RhoElements Profile](https://www.zebra.com/content/dam/zebra_new_ia/en-us/software/developer-tools/enterprise-browser/dwprofile_RhoElements.db)
@@ -55,7 +65,7 @@ For scanning to be enabled, the below runtime configuration tag must be set to 0
 
 -----	
 
-###DataWedge 2.2.8 or lower
+### DW 2.2.8 or lower
 
 1. For scanning to be enabled, the below runtime configuration tag must be set to 1:
     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "1"**.
@@ -67,7 +77,7 @@ In order to use the scanner with Enterprise Browser application you will need to
 2. Select **Menu->Settings**.
 3. Uncheck **DataWedge enabled** checkbox.
 4. For scanning to be enabled, the below runtime configuration tag must be set to 0:
-    * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
+    * **The [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
   
 ####Create DataWedge Profile:
 1. Install Enterprise Browser application.
@@ -82,7 +92,7 @@ In order to use the scanner with Enterprise Browser application you will need to
 10. Make sure the newly created profile is enabled by ensuring that the **Profile enabled** checkbox is ticked.
 11. Uncheck all three **Enabled** checkboxes under the sections of: **Barcode input**, **Keystroke output** and **Intent output**.
 12. For scanning to be enabled, the below runtime configuration tag must be set to 0:
-     * **The [&lt;usedwforscanning&gt;](../configreference/index.md#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**.
+     * **The [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag in the EB app's** `config.xml` **file must contain a value of "0"**
 
 -----
 

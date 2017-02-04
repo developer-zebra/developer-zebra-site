@@ -22,6 +22,9 @@ parm:
     - code: 3
       mx: "4.3"
       name: Do not change
+    - code: 99
+      mx: "6.2"
+      name: Unsupported
 ---
 Used to specify the Management Frame Protection Mode from the values in the table below. _**Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean**_.
 

@@ -577,18 +577,6 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-xamarin/2-2/'
     }))
     .use(foldermenu({
-        folder: 'mx/4-4/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'mx/5-0/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'mx/4-2/',
-        automenu: true
-    }))
-    .use(foldermenu({
         folder: 'mx/',
         automenu: false
     }))
@@ -605,6 +593,12 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-4/'
     }))
     .use(foldermenu({
+        folder: 'stagenow/2-5/'
+    }))
+    .use(foldermenu({
+        folder: 'stagenow/2-6/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({
@@ -614,13 +608,13 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ehs/2-5/'
     }))
     .use(foldermenu({
-        folder: 'enterprise-browser/1-4/'
-    }))
-    .use(foldermenu({
         folder: 'datawedge/5-0/'
     }))
     .use(foldermenu({
         folder: 'datawedge/6-0/'
+    }))
+   .use(foldermenu({
+        folder: 'datawedge/6-2/'
     }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-4/'

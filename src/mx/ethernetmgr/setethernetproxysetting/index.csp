@@ -1,0 +1,34 @@
+---
+csp: ethernetmgr
+title: Ethernet Proxy Enable/Disable
+type: parm
+order: 10
+mx: "6.2"
+osx: "6.2"
+apilevel: "23"
+parm:
+  pivotal: No
+  name: SetEthernetProxySettings
+  type: list
+  list:
+    - code: 0
+      mx: "6.2"
+      osx: "6.2"
+      name: Do not change
+      apilevel: "23"
+      description: This value (or the absence of this parm from the XML) will cause no changes to Ethernet Proxy settings; any previously selected setting will be retained.
+    - code: 1
+      name: None
+      mx: "6.2"
+      osx: "6.2"
+      apilevel: "23"
+      description: Disables the use of an Ethernet Proxy.
+    - code: 2
+      name: Manual
+      mx: "6.2"
+      osx: "6.2"
+      apilevel: "23"
+      description: Enables the use of an Ethernet Proxy.
+---
+
+Controls whether an Ethernet Proxy will be used by the device when connecting to a network through an Ethernet-equipped cradle. When "None" is selected, all Ethernet transactions are conducted directly from the device. When "Manual" is selected, a Proxy Host Name and Proxy Host Port must be specified.

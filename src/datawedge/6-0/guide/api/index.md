@@ -143,7 +143,7 @@ Because DataWedge will automatically switch Profile when an activity is paused, 
 
 ------
 
-### enumerateScanners
+### EnumerateScanners
 The enumerateScanners API command can be used to get a list of scanners available on the device.
 
 ####FUNCTION PROTOTYPE
@@ -200,7 +200,7 @@ The scanner and its parameters are set based on the currently active Profile.
 
 ------
 
-### setDefaultProfile
+### SetDefaultProfile
 The `setDefaultProfile` API function can be used to set the specified Profile as the default Profile.
 
 **A Profile specified using this method MUST NOT already be associated with another application**. 
@@ -267,7 +267,7 @@ Zebra recommends that this Profile be created to cater to all applications/activ
 
 ------
 
-### resetDefaultProfile
+### ResetDefaultProfile
 The `resetDefaultProfile` API function can be used to reset the default Profile back to Profile0.
 
 ####FUNCTION PROTOTYPE

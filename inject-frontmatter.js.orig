@@ -71,29 +71,19 @@ var settings = [
 
     {
 <<<<<<< HEAD
-        "path": "stagenow/2-4",
+        "path": "emdk-for-android/6-3/",
         "frontmatter": [
             {
                 "item" :  "productversion",
-                "value" : "2.4",
+                "value" : "6.3",
 =======
-        "path": "enterprise-browser/1-4",
+        "path": "stagenow/2-6/",
         "frontmatter": [
             {
                 "item" :  "productversion",
-                "value" : "1.4",
->>>>>>> eb-1.4
+                "value" : "2.6",
+>>>>>>> develop
                 "override": true,
-            },
-            {
-                "item" :  "product",
-                "value" : "Enterprise Browser",
-                "override": true,
-            },
-            {
-                "item" :  "layout",
-                "value" : "guide.html",
-                "override": false
             }
         ]
     },

@@ -11,7 +11,7 @@ productversion: '6.3'
 Download and install **Android Studio** from [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
 
->NOTE: Android Studio should be installed on your computer before running the EMDK for Andriod installer.
+>NOTE: Android Studio should be installed on your computer before running the EMDK for Andriod installer. Prior to installing, all Android Studio sessions must be closed if already running.
 
 
 ### Installing EMDK for Android

@@ -16,10 +16,7 @@ The following software must be installed prior to using the EMDK for Android.
 **Windows:**
 * Microsoft Windows 7 (32-bit and 64-bit)  or Microsoft&copy; Windows 8 (32-bit and 64-bit) or Microsoft&copy; Windows 8.1 (32-bit and 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
-* Android Studio 1.1.x or higher
-* Installed via Android SDK manager
-	* The Android API 19 packages
-	* The Android SDK Build-tools rev.21.1.x or higher
+* Android Studio v2.x or higher
  
 **Mac OS X:**  
 * Yosemite (10.10.x) | (64-bit)  or El Capitan (10.11.x) | (64-bit)
@@ -29,17 +26,24 @@ The following software must be installed prior to using the EMDK for Android.
 	* The Android API 19 packages
 	* The Android SDK Build-tools rev.21.1.x or higher
 
+* Notes:
+	* The appropriate Android SDK Platform package must be installed on the development machine in order to target the right EMDK APIs SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
+	* For building EMDK samples, the Android SDK Build-tools rev.23.0.x or higher must be installed.
+	* Prior to installing, all Android Studio sessions must be closed if already running.
+
 
 ## Devices Supported
 
 * MC18 - KitKat 
 * MC40 - KitKat 
+* MC67 - KitKat
 * MC92 - KitKat 
 * TC51 - Marshmallow
-* TC56 - Marshmallow
 * TC55 - KitKat 
+* TC56 - Marshmallow
 * TC70 - KitKat ,Lollipop
-* TC75 - KitKat ,Lollipop, Marshmallow
+* TC75 - KitKat ,Lollipop
+* TC75x - Marshmallow
 * TC8000 - KitKat ,Lollipop
 * WT6000 - Lollipop 
 * ET5X - Lollipop  
@@ -76,42 +80,37 @@ The following software must be installed prior to using the EMDK for Android.
 
 ## What's New
 1.  Added support for MX v6.2 in Profile Manager:
-	*   Touch Manager 
-		* Device Type - Select the Device Type to configure touch sensitivity.
-		* Protector - Enable or disable the screen protector on the supported devices.
-	*   Cellular Manager 
-		* SimSocketSelect - Select the SIM card to connect to the network.
-		* SimSocketUsage - Allow or disallow the SIM card selection for network connection.
-	*   KeyMapping Manager 
-		* Added key mapping support for Touch NAV_PAD.
-
+    * Cellular Manager 
+        * SimSocketSelect - Select the SIM card to connect to the network.
+        * SimSocketUsage - Allow or disallow the SIM card selection for network connection.
+    * KeyMapping Manager 
+        * Added key mapping support for Touch NAV_PAD.
+    * Touch Manager 
+        * Device Type - Select the Device Type to configure touch sensitivity.
+        * Protector - Enable or disable the screen protector on the supported devices.
 2.  Enhanced Barcode Manager APIs with the following features:
-	*	Added support for new pluggable scanner RS5000 to be used with WT6000 device. Use "PLUGGABLE_IMAGER_RS5000" under BarcodeManager.DeviceIdentifier for selecting this scanner.
-	*	Added new reader parameters in each ImagerSpecific, CameraSpecific and LaserSpecific classes under ScannerConfig.ReaderParams.ReaderSpecific:
-		*	aimTimer - Sets the duration for timed aim types such as timed hold and timed release.
-		* 	sameSymbolTimeout - This setting is used to prevent the scanner driver from decoding the same symbol within this time interval during continuous scan.
-		*	differentSymbolTimeout - This setting is used to prevent the scanner from decoding another symbol within this time interval during continuous scan.
-		*	picklistEx - Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/ center of the reticle part of the pattern. This replaces the Picklist field under the imager specific class . This feature also allows selecting the hardware or software picklist.
-		*	aimType - Allows selecting the aim type such as continuous, press & release, timed hold and timed release.
-	*	The ContinuousRead class which can be used to enable the continuous scanning has been deprecated. It is recommended to use the aimType, sameSymbolTimeout, differentSymbolTimeout of camera, imager and laser specific reader parameters.
-
-3.	Enhanced Profile Manager for the following features:
-	* 	DataCapture feature:
-		* 	Support for selecting RS5000 as the scanning device.
-		*	Support for the new "Data Capture Plus (DCP)" feature. This feature Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on a designated screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger.
-		*	Support for the new "Keep enabled on suspend" feature. Enabling this feature will keep the Bluetooth scanner enabled when the device is in suspend mode. Pressing the Bluetooth scan trigger will wake up the device for scanning.
-	*	Added new parameter “Receiver foreground flag” in Intent Output for delivering the captured data via Broadcast Intent to broadcast recipient permission to run at the foreground priority with a shorter timeout interval.
-	*	Added the following new parameters in Keystroke Output feature:
-		*	Multi byte character delay -  Sets an inter character delay in milliseconds for multi byte characters. This setting was required to be set in-order to overcome data dispatching errors when dispatching multi byte characters to browser.
-		*	Key event delay - Sets a delay in milliseconds for dispatching control characters as keystrokes correctly to the foreground application.
+    * Added support for new pluggable scanner RS5000 to be used with WT6000 device. Use "PLUGGABLE_IMAGER_RS5000" under BarcodeManager.DeviceIdentifier for selecting this scanner.
+    * Added new reader parameters in each ImagerSpecific, CameraSpecific and LaserSpecific classes under ScannerConfig.ReaderParams.ReaderSpecific:
+        * aimTimer - Sets the duration for timed aim types such as timed hold and timed release.
+        * sameSymbolTimeout - This setting is used to prevent the scanner driver from decoding the same symbol within this time interval during continuous scan.
+        * differentSymbolTimeout - This setting is used to prevent the scanner from decoding another symbol within this time interval during continuous scan.
+        * picklistEx - Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/ center of the reticle part of the pattern. This replaces the Picklist field under the imager specific class . This feature also allows selecting the hardware or software picklist.
+        * aimType - Allows selecting the aim type such as continuous, press & release, timed hold and timed release.
+	* The ContinuousRead class which can be used to enable the continuous scanning has been deprecated. It is recommended to use the aimType, sameSymbolTimeout, differentSymbolTimeout of camera, imager and laser specific reader parameters.
+3. Enhanced Profile Manager for the following features:
+    * DataCapture feature:
+        * Support for selecting RS5000 as the scanning device.
+        * Support for the new "Data Capture Plus (DCP)" feature. This feature Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on a designated screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger.
+        * Support for the new "Keep enabled on suspend" feature. Enabling this feature will keep the Bluetooth scanner enabled when the device is in suspend mode. Pressing the Bluetooth scan trigger will wake up the device for scanning.
+    * Added new parameter “Receiver foreground flag” in Intent Output for delivering the captured data via Broadcast Intent to broadcast recipient permission to run at the foreground priority with a shorter timeout interval.
+    * Added the following new parameters in Keystroke Output feature:
+        * Multi byte character delay -  Sets an inter character delay in milliseconds for multi byte characters. This setting was required to be set in-order to overcome data dispatching errors when dispatching multi byte characters to browser.
+        * Key event delay - Sets a delay in milliseconds for dispatching control characters as keystrokes correctly to the foreground application.
 4. Enhanced Serial Comm APIs with the following features:
-	*	Added getConfig() and setConfig() for accessing the current configuration settings such as baudRate, parity, dataBit and stopBit.
-	*	Added getSignalState() to query the signal status such as DTR, DCD, DSR, RI, RTS and CTS.
-	*	Added new method setSignalState() to set the signal status such as RTS and DTR.
-	*	Added getPortInfo() to query the port name.
-
-
-
+    * Added getConfig() and setConfig() for accessing the current configuration settings such as baudRate, parity, dataBit and stopBit.
+    * Added getSignalState() to query the signal status such as DTR, DCD, DSR, RI, RTS and CTS.
+    * Added new method setSignalState() to set the signal status such as RTS and DTR.
+    * Added getPortInfo() to query the port name.
 
 ## Components
 

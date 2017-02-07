@@ -19,7 +19,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
 
 #### Zebra Android Device Support
-Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and 6.0 Marshmallow: 
+Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
 * **ET50** with Android Lollipop
 * **ET55** with Android Lollipop
@@ -35,7 +35,7 @@ This release also adds a range of additional new features for all supported Andr
 
 #### New or Updated APIs (released with EB 1.6)
 
-* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and above**). 
+* **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and higher**). 
 
 * **Updated [Barcode API](../../api/barcode) -** now includes **decodeSound**, **decodeVolume**, **decodeFrequency** and **decodeDuration** properties for Android (formerly available only for Windows Mobile/CE). 
 
@@ -45,14 +45,14 @@ This release also adds a range of additional new features for all supported Andr
 
 #### Ring Scanner Support
 
-* **RS6000 Ring Scanner -** is now supported on TC75x (Falcon) devices running Android Marshmallow.
+* **[RS6000 Ring Scanner](#wearable) -** is now supported on TC75x (Falcon) devices running Android Marshmallow.
 
 #### Enterprise Browser Kiosk Mode
 
-* **New Enterprise Browser Lockdown Option -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide a lock-down feature for Enterprise Browser applications and not having access to other applications and device settings by installing and configuring Enterprise Browser and Enterprise Home Screen.
+* **New [Enterprise Browser Lockdown Option](../ehs) -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide an easily configurable lock-down feature for any Enterprise Browser app, preventing access to device settings and other apps installed on the device.
 
 #### New Tags for Android
-The following Enterprise Browser configuration tags are now supported on Android.
+The following Enterprise Browser configuration tags are now supported on Android (formerly Windows-only).
 
 * **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav or .ogg file to be played when a scanned barcode is successfully decoded.
 
@@ -62,50 +62,30 @@ The following Enterprise Browser configuration tags are now supported on Android
 
 * **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -** controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
 
-#### New Guides
+#### New and Updated Guides
 
-* **[Updated DataWedge Usage Guide](../datawedge) -** now contains detailed steps for enabling and disabling DataWedge based on which DataWedge version is installed on the device.
+* **New [Security Guide](../security) -** explains Enterprise Browser's numerous security features and provides links to their individual guides or guide sections.
+
+* **Updated [DataWedge Usage Guide](../datawedge) -** adds detailed steps for enabling and disabling DataWedge based on the version installed on the device.
 
 #### Android Jelly Bean Deprecated
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower versions for Android Jelly Bean device support.
 
-## Key Enterprise Browser Features
+-----
 
-####A development toolkit for mobile cross-platform enterprise apps
-* Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices
-* Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE
+### Key Features
 
-####Build apps using HTML5, CSS and JavaScript
-* Use web skills to create great-looking applications
-* Based on open source and standard technologies, not proprietary toolkits
-* Access to the world's largest developer community
+* **A development toolkit for mobile cross-platform enterprise apps**. Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices. Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE. =
+* **Build apps using HTML5, CSS and JavaScript**. Use web skills to create great-looking applications. Based on open source and standard technologies, not proprietary toolkits. Access to the world's largest developer community=
+* **Common APIs across all enterprise devices**. Single code base; does not require different APIs for different OSes to create a true write-once, run-anywhere apps with a consistent UI. Easily access native device hardware with JavaScript APIs
+* **Backward-compatible with PocketBrowser and RhoElements**. Compatible with legacy PocketBrowser APIs, enabling a clear path forward for legacy apps. EMML (Meta Tag) support extended to Android. Compatible with legacy RhoElements JavaScript APIs, enabling a clear path forward for "RhoElements Shared Runtime" users. 
+* **Unparalleled access to device capabilities**. Access all device features, including bar code scanning, signature capture, printing, RFID and more. 
+* **Thin client architecture**. Simplifies device deployment and management by enabling instant application updates on devices; ensures version consistency. 
+* **Offers operating system "lock out"**. Hides access to distractions, such as web-browsing and games; simplifies user interface and eliminates risk of unauthorized changes to device settings. Password-protect settings screen and prevent any app from exiting. 
+* **Full-screen display**. Maximizes available display space for a richer, more effective user interface; hides command bar and Start menu. 
+* **Extensive logging capability**. Flexibility to easily capture logging information, reducing management and support effort. 
 
-####Common APIs across all enterprise devices
-* Single code base; does not require different APIs for different OSes to create a true write-once, run-anywhere apps with a consistent UI
-* Easily access native device hardware with JavaScript APIs
-
-####Backward-compatible with PocketBrowser and RhoElements
-* Compatible with legacy PocketBrowser APIs, enabling a clear path forward for legacy apps
-* EMML (Meta Tag) support extended to Android
-* Compatible with legacy RhoElements JavaScript APIs, enabling a clear path forward for "RhoElements Shared Runtime" users
-
-####Unparalleled access to device capabilities
-* Access all device features, including bar code scanning, signature capture, printing, RFID and more
-
-####Thin client architecture
-* Simplifies device deployment and management by enabling instant application updates on devices; ensures version consistency
-
-####Offers operating system "lock out"
-* Hides access to distractions, such as web-browsing and games; simplifies user interface and eliminates risk of unauthorized changes to device settings
-* Password-protect settings screen and prevent any app from exiting
-
-####Full-screen display
-* Maximizes available display space for a richer, more effective user interface; hides command bar and Start menu
-
-####Extensive logging capability
-* Flexibility to easily capture logging information, reducing management and support effort
-
-##Key Benefits
+### Key Benefits
 
 * **Reduces application and development costs** and eliminates the need to develop, manage and maintain multiple versions of an application to support different types of devices and operating systems; provides highly cost effective support for a mixed-OS environment.
 * **Protects the business from OS market uncertainty**. Devices and platforms can continue to churn without impacting the business. These OS-agnostic applications work on Symbol, Motorola and Zebra Technologies platforms of yesterday (MPA2), today and tomorrow.
@@ -113,6 +93,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 * **Leverage every feature on every device and attached peripheral**. Easily design rich applications that take advantage of all the available features on a device and its attached peripherals, including barcode scanners, RFID tag readers and payment processing devices.
 * **Create consumer-style apps for business** Without OS constraints to impact app design, a graphical user interface can be created that is every bit as engaging, intuitive and interactive as today's consumer applications. Provides complete control of application behavior on different devices. With automatic screen resizing, apps can look, feel and behave identically on all devices, or display new features or expand the presentation of existing features to take advantage of larger screens.
 * **Faster time to market**. A simplified application development approach allows for shorter time to market than ever before.
+
+-----
 
 ## Supported Devices
 
@@ -136,7 +118,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
   <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet), ET1 WAN</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#androidjellybeanupdate">*</a></B></td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
   <tr>
@@ -185,14 +167,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<B><a href="#androidjellybeanupdate">*</a></B><br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#androidjellybeanupdate">*</a></B><br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -234,7 +216,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<B><a href="#androidjellybeanupdate">*</a></B><br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1<br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -297,7 +279,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (JellyBean)<B><a href="#androidjellybeanupdate">*</a></B><br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -436,9 +418,10 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
- </tbody></table>
+ </tbody>
+ </table>
  
-###Ring Scanners
+<h3>Ring Scanners</h3>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
@@ -469,13 +452,17 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
  </tr>
-</tbody></table>
+</tbody>
+</table>
 
 **RS507 Support Notes**: 
+
 * Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on those devices; optional on some Jelly Bean devices).
+
 * Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
 
 ###Printers
+
 The printers shown below have been tested for compatibility with USB printing from Enterprise Browser. Printing wirelessly from EB apps is supported on many other Zebra printer models. **NOTE**: Zebra's QL Plus and QLn series printers do not support USB printing.
 
 <table cellspacing="0" cellpadding="0" class="table table-striped">

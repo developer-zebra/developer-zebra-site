@@ -244,27 +244,30 @@ The system is now ready to deploy Enterprise Browser using the Enterprise Browse
 -----
 
 ## Manual Deployment
-Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS machines and manually unpackaged on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) executables on the development host as above, perform the steps below as appropriate for the target platform. 
+Enterprise Browser runtimes can be individually pushed to devices from Windows or Mac OS X machines and manually unpackaged on the device. After installing the Enterprise Browser (`.msi` or `.dmg`) executables on the development host as above, perform the steps below as appropriate for the target platform. 
 
-Enterprise Browser can be mass-deployed using Zebra [StageNow](../../../../stagenow) or a compatible MDM system. 
+Enterprise Browser also can be mass-deployed using Zebra [StageNow](../../../../stagenow) or a compatible MDM system. [See the Mass Deployment section](#massdeployment). 
 
-&#49;. On Windows, go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. On Mac, open **Applications -> Enterprise Browser -> Runtimes**. 
+**&#49;. Locate the Enterprise Browser runtime files** on the installation host: 
 
-**The remaining steps apply to both platforms**.
-
+#### Windows systems
+Go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. 
 ![img](../../images/getting-started/setup/EB_resources_menu.jpg)
-
+<br>
 On Windows, this will bring up a window that looks similar to the image below: 
 ![img](../../images/getting-started/setup/setup-enterprise-browser-runtimes.png)
 
-On a Mac, the Runtimes folder looks like the image below: 
+#### Mac OS X systems
+Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on a Mac looks like the image below: 
 ![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
-&#50;. **Drag-copy the desired runtime** to the root directory of the device. 
+#### The remaining steps apply to both platforms
 
-&#51;. **For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
+**&#50;. Drag-copy the desired runtime** to the root directory of the device. 
 
-&#52;. From the device, **use a file explorer to locate and execute the runtime**. When Enterprise Browser 1.5 for Android is launched for the first time after being installed, it performs the following actions on the device:
+**&#51;. For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
+
+**&#52;. From the device, use a file explorer to locate and execute the runtime**. When Enterprise Browser 1.5 for Android is launched for the first time after installation, it performs the following actions on the device:
 
 * Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/`
 * Stores the Enterprise Browser executable in that new directory
@@ -273,7 +276,7 @@ On a Mac, the Runtimes folder looks like the image below:
 * Copies those same config file(s) to `/<internal_mem_root_dir>/EnterpriseBrowser/backup/` and deletes the originals
 * Activates the settings of the new config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/`
 
-&#53;. **Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.
+**&#53;. Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.
 
 > **Note: Directory names are case sensitive**. 
 
@@ -285,7 +288,48 @@ Therefore, new versions of those settings files should be placed in the `/<inter
 ## Mass Deployment
 The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by using the instructions below. 
 
+**&#49;. Locate the Enterprise Browser runtime files** on the installation host: 
 
+#### Windows systems
+Go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. 
+![img](../../images/getting-started/setup/EB_resources_menu.jpg)
+<br>
+On Windows, this will bring up a window that looks similar to the image below: 
+![img](../../images/getting-started/setup/setup-enterprise-browser-runtimes.png)
+
+#### Mac OS X systems
+Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on a Mac looks like the image below: 
+![img](../../images/getting-started/setup/setup-macosx-directories.png)
+
+**&#50;. Copy the desired runtime file to the MDM system**, and configure the system to push the file to the root directory of the device. 
+
+**For versions prior to Enterprise Browser 1.5, skip to Step 4**. 
+
+**On Enterprise Browser 1.5 and higher for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied into the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory on the device. at this time (create the directory, if necessary). 
+
+**&#51;. If deploying configuration files (as described above)**: 
+ * Copy config file(s) the MDM system for deployment to the device
+ * Configure the system to check for the presence of a `/<internal_mem_root_dir>/EnterpriseBrowser/` directory on the device, creating it if necessary
+
+**&#52;. Configure the MDM to execute the runtime**. When Enterprise Browser 1.5 for Android is launched for the first time after installation, it performs the following actions on the device:
+
+* Creates the directory `/Android/data/com.symbol.EnterpriseBrowser/`
+* Stores the Enterprise Browser executable in that new directory
+* Spawns a `Config.xml` with default settings in the directory
+* Checks `/<internal_mem_root_dir>/EnterpriseBrowser/` directory and copies `Config.xml` and `keycodemapping.xml` files (if present) to the new directory, overwriting any existing file(s) of the same name
+* Copies those same config file(s) to `/<internal_mem_root_dir>/EnterpriseBrowser/backup/` and deletes the originals
+* Activates the settings of the new config file(s) in `/Android/data/com.symbol.EnterpriseBrowser/`
+
+**Note: If deploying config files, it's critical that the MDM be configured to execute Step 3 prior to Step 4. Otherwise, the config files will not be activated by this process**. 
+
+**&#53;. Reboot the device to complete the installation**. On persistent installations, a cold boot/cleanPS is required to activate the runtime.
+
+> **Note: Directory names are case sensitive**. 
+
+### Update EB Settings
+**Applies only to Enterprise Browser 1.5 (and higher) for Android**. After Enterprise Browser is launched for the first time following installation, subsequent launches still check the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory for new versions of the `Config.xml` and/or `keycodemapping.xml` files for processing as described above. 
+
+Therefore, new versions of those settings files should be placed in the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. The next time Enterprise Browser is restarted, copies of the new settings file(s) will automatically be placed in the appropriate locations for execution and backup, and the original(s) will be deleted. 
 
 -----
 

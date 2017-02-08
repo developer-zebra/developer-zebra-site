@@ -82,7 +82,7 @@ As documented above, **control of barcode scanning hardware is exclusive**. When
 
 #### Use Enterprise Browser APIs for Scanning
 
-Making device scanners available to Enterprise Browser APIs can be done either by **disabling DataWedge on the device (Option 1)**, which prevents all other device apps from using DataWedge, or by **disabling DataWedge only for Enterprise Browser apps (Option 2)**, which permits other device apps to use DataWedge.
+Making device scanners available to Enterprise Browser APIs can be done either by **disabling DataWedge on the device (Option 1)**, which prevents all other device apps from using DataWedge, or by **disabling DataWedge only for Enterprise Browser apps (Option 2)**, which permits other device apps to use DataWedge when EB isn't running.
 
 ##### Option 1: Disable DataWedge on the device
 
@@ -90,6 +90,10 @@ Making device scanners available to Enterprise Browser APIs can be done either b
 2. In DataWedge, select **Menu->Settings**.
 3. **Uncheck the "DataWedge enabled"** checkbox.
 4. In the EB app's `config.xml` file, set a value of "0" in the [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag.
+
+DataWedge is now disabled and unavailable to any app on the device.  
+
+**Note: DataWedge also can be disabled (or re-enabled) programmatically using [DataWedge APIs](../../../../datawedge)**.
 
 ##### Option 2: Disable DataWedge only for Enterprise Browser
 
@@ -101,12 +105,14 @@ Making device scanners available to Enterprise Browser APIs can be done either b
 4. Tap on the newly created profile.
 5. In the **Applications section**, **tap Associated apps**.
 6. Tap **Menu->New app/activity**. A list of apps/activities appears. 
-7. From the list, **select the package name of the EB app** (i.e. `com.symbol.enterprisebrowser`) that will use DataWedge.
+7. From the list, **select the package name of the EB app** (i.e. `com.symbol.enterprisebrowser`) that will use DataWedge. The app activities list appears. 
 8. From the app activities list, **tap the asterisk (*) to associate all app activities** with the Profile, or tap on an indvidual activity to use DataWedge only for that specific activity. 
 9. **Tap BACK** to return to the Profile screen.
-10. Confirm that the Profile's **"Profile enabled" box is checked**.
-11. In the new Profile, **uncheck the "Enabled" box** for these three sections: **Barcode input, Keystroke output and Intent output**.
+10. Confirm that the Profile's **"Profile enabled" box is <u>checked</u>**.
+11. In the new Profile, **<u>uncheck</u> the "Enabled" box** for these three sections: **Barcode input, Keystroke output and Intent output**.
 12. In the EB app's `config.xml` file, set a value of "0" in the [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag.
+
+DataWedge will now be disabled whenever an Enterprise Browser app is running. 
 
 -----
 

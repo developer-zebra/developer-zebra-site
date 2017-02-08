@@ -60,7 +60,7 @@ automenu:
           url: security
         - title: Certificates
           url: certificates
-        - title: Device Lock-down
+        - title: Device Lock-down with EHS
           url: ehs
         - title: TLS/SSL Compliance
           url: compliance

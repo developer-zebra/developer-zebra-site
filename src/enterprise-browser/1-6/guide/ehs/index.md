@@ -1,92 +1,102 @@
 ---
-title: Locking Down EB with EHS
+title: Device Lock-down With EHS
 productversion: '1.6'
 product: Enterprise Browser
 layout: guide.html
 ---
 
-# WORK IN PROGESS
+## Overview 
 
+For applications that require tight control over device settings and apps, Enterprise Browser 1.6 and higher can integrate with [Enterprise Home Screen](../../../../ehs), Zebra's free Android solution that can lock users out of all but the apps and settings that a company wants them to see. In just a few minutes, EHS can be configured to show a selected set of apps, limit device usage to a single, auto-launched app (via "Kiosk Mode"), prevent changes to device settings, lock out HOME and BACK keys, and much more. 
 
-##Overview 
+All EHS settings are stored in the `enterprisehomescreen.xml`, a human-readable file and is easily edited by hand can be deployed via MDM. This guide contains the basic steps for editing the EHS config file to: 
 
-FROM EHS ABOUT PAGE:
+* **Launch an EB app into Kiosk Mode**, which prevents quitting and changing of device settings
+* **Display an EB app in User Mode**, which shows only desired apps and prevents changing of device settings
 
-Enterprise Home Screen is a free Android app from Zebra Technologies that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. 
+### Prerequisites
+* A Windows or Mac OS X computer
+* A USB cable connecting the computer to a Zebra Android device via ADB
+* EHS and Enterprise Browser installed on the device 
+* Any other desired device apps installed and working properly 
 
-EHS works by inserting itself in place of the stock Android app launcher and home screen. When first run, it presents a screen like the one below, offering a choice of which home app to open and whether to make the selection permanent. EHS also can be installed as the default launcher, bypassing the selector dialog. 
-
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+For more information, including EHS download, setup and deployment instructions, see the [Enterprise Home Screen documentation](../../../../ehs). 
 
 -----
 
-### FROM ENGINEERING:
+## Kiosk Mode
 
-HOW TO USE EB IN LOCKDOWN MODE IN ZEBRA ANROID DEVICES
+Kiosk Mode allows devices to run a single application that cannot be exited. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode opens the app in full-screen mode and prevents exit by blocking the BACK and HOME keys.  **Warning: On Android L devices, Kiosk Mode should not be used with Screen Pinning**, an Android L feature similar to Kiosk Mode.
 
-If you want your work force to be locked down within Enterprise Browser and not having access of other applications and device settings, you can achieve it via installing and configuring Enterprise Browser and Enterprise Home screen together in the device. Enterprise Home screen is a free utility which provides Device lockdown functionality, and we will be using that capability along with Enterprise Browser.
+##### Kiosk Mode tags:
+<b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
 
-After User is locked down
+<b>&lt;kiosk_mode_enabled&gt;</b> - Toggles the feature on and off
+<br>
 
-1.They will not be able to access all applications installed in the Zebra device. Their application access will be allowed/restricted via application list provided from EHS configuration. 
+### Enable Kiosk Mode
+**Before proceeding, be sure that the Kiosk Mode app is installed and working properly**. Start with the default `enterprisehomescreen.xml` file, which is found in the `/enterprise/usr` directory on the device with Enterprise Home Screen installed.
 
-2.They will not be able to go out of the EB via pressing back, Home or any other Android button.
+In the `enterprisehomescreen.xml` file:
 
-In this document we will try to provide a guidance on how to achieve device lock down mode in Enterprise Browser along with Enterprise Home Screen and how to mass deploy them in the customer environment. 
+1. Specify the Kiosk app label, package and activity (optional) in the &lt;kiosk&gt; section of the config file (shown below), replacing any pre-existing data. 
+2. Enter a value of "1" in the &lt;kiosk_mode_enabled&gt; tag in the Preferences section of the file. 
+3. If USB Debugging is desired in Kiosk Mode, enter a value of '0' in the &lt;usb_debugging_disabled&gt; tag.<br> 
+4. Remove all apps from the &lt;applications&gt; section. 
+5. Make any other required changes in the file.  
+4. Save and push the `enterprisehomescreen.xml` file to the device; changes take effect immediately. 
 
-Prereuisites may not  be required
+Once the `enterprisehomescreen.xml` file is pushed to the device, the named app will launch in full-screen mode and BACK and HOME keys will be disabled.
 
-Prerequisites:
+<b>Security Note</b>: When using Kiosk Mode, Zebra recommends configuring the EB app to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
 
-EHS apk and its Enterprisehomescreen.xml, EB apk and its config file(if required).
-If the start page is to be kept locally for EB then those files should also be ready with you.
-Enterprisehomescreen.xml should be edited for EB to be included in EHS kiosk or user mode. You can achieve the same by following the below steps.
-    
-There are two different use cases for customer how they can achieve device lock down functionality.
+<img alt="" style="height:350px" src="ehs_kiosk.png"/>
+_Click image to enlarge_
 
-1.Use Case1:- User will not be able to go out of Enterprise Browser and will not be able to use any other application
+### Disable Kiosk Mode
+Once Kiosk Mode is enabled, it can be disabled in only one of two ways (without writing custom program code):
 
-2.Use Case2:-User wants to switch between Enterprise Browser and some other applications but still should not be able to access other restricted applications and device capabilities.
+* <b>If USB Debugging <u>was not</u> disabled for User Mode</b>, disable Kiosk Mode by pushing to the device a config file with a value of "0" in the &lt;kiosk_mode_enabled&gt; tag.
 
-Please find the detailed steps to achieve each of the use cases below.
+* <b>If USB Debugging <u>was</u> disabled for User Mode</b>, perform a factory reset. 
 
-Editing Enterprisehomescreen.xml 
+For more information about Kiosk mode, including UI and programmatic access, and working with the `enterprisehomescreen.xml` file, see the **Advanced Settings** and **Special Features** sections of the [EHS documentation](../../../../ehs). 
 
-### CASE1(KIOSK MODE)
+-----
 
-Only EB to be accessible and in Full Screen mode and blocking access to all other apps.
+## User Mode
 
-Take the default Enterprisehomescreen.xml, you will get it from the installed directory.
+User Mode is the default state for EHS. When EHS is running on a device, all apps on the device or installed later are hidden unless they're listed in the &lt;applications&gt; section of the `enterprisehomescreen.xml` file (shown below). For an application to be shown in User Mode (and available to a user), it must be specified in this list as detailed below. Start with the default `enterprisehomescreen.xml` file, which is found in the `/enterprise/usr` directory on the device with Enterprise Home Screen installed.
 
-Under applications tag remove all the applications present as you don’t want to give access to any other apps.
+<img alt="" style="height:350px" src="ehs_applications.png"/>
+_Click image to enlarge_
 
-Remove Calculator under kiosk tag and associate EB details under kiosk tag, now only EB application will be there in kiosk mode.
+### Add apps to User Mode 
+**Before proceeding, be sure that any apps desired for User Mode are installed and working properly**.
 
-Enable kiosk mode by setting the kiosk_mode_enabled tag to 1.
+In the `enterprisehomescreen.xml` file:
 
-If required enable USB debugging for pushing xml in case of emergencies (this is optional).
+1. Specify the app label and package (and optional activity) in the &lt;applications&gt; section of the config file (shown above). 
+2. Enter (or confirm) a value of "0" in the &lt;kiosk_mode_enabled&gt; tag in the Preferences section of the file. 
+3. Push the `enterprisehomescreen.xml` file to the device; changes take effect immediately. 
 
-You can make any other required changes in the xml as per your requirement.
+Once the `enterprisehomescreen.xml` file is pushed to the device, the specified apps will be visible whenever the device is in User Mode.
 
-After following the above steps the xml is now ready to be pushed through MDM for achieving our purpose of EB in full screen mode.
+-----
 
-### CASE2(USER MODE) 
+# still under construction
 
-EB and some other apps should also be available to user.
+## Mass Deployment
 
-Take the default Enterprisehomescreen.xml.
+**Required files**:
 
-Under applications tag Keep only the applications which you want to give access for the user. EB details should be added here along with other apps which should be accessible.
+- ehs apk
+- An `enterprisehomescreen.xml` file configured as desired 
+- eb apk
+- eb shortcuts? 
+- EB start page file (if local) 
 
-If required enable USB debugging for pushing xml in case of emergencies (this is optional).
-
-You can make any other required changes in xml as per your requirement.
-
-After following the above steps the xml is now ready to be pushed through MDM for achieving our purpose of EB in Lockdown mode.
-
-
-### Mass Deployment 
-
+FROM ENGINEERING: 
 How to mass deploy the lockdown configuration
 
 Create a package containing EB apk, EHS apk, Enterprisehomescreen.xml and any other files as per your requirement.
@@ -103,7 +113,6 @@ The Note section is implicit and I feel not need to mention it explicitly.
 
 NOTE:
 Setting of EHS as the default launcher through MDM is necessary and if this cannot be done through MDM than the process of lockdown of EB cannot be automated.
-
 
 
 -----

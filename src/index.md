@@ -99,23 +99,25 @@ products:
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-0/guide/about
+    url: /emdk-for-android/6-3/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/6-0/guide/gettingstarted
+        url: /emdk-for-android/6-3/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-0/tutorial/
+        url: /emdk-for-android/6-3/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-0/samples
+        url: /emdk-for-android/6-3/samples
       - title: Guides
-        url: /emdk-for-android/6-0/guide/programming-guides
+        url: /emdk-for-android/6-3/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-0/guide/profile-manager-guides
+        url: /emdk-for-android/6-3/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-0/api
+        url: /emdk-for-android/6-3/api
     versions:
+      - url: emdk-for-android/6-3/guide/about/
+        label: '6.3'
       - url: emdk-for-android/6-0/guide/about/
         label: '6.0'
       - url: emdk-for-android/5-0/guide/about/
@@ -181,7 +183,7 @@ products:
         url: /mx/overview
       - title: Compatibility
         url: /mx/compatibility
-      - title: What version do I have?
+      - title: Which version do I have?
         url: /mx/mx-version-on-device
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
@@ -208,23 +210,27 @@ products:
         label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-4/about
+    url: /stagenow/2-6/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: Getting Started
-        url: /stagenow/2-4/gettingstarted
+        url: /stagenow/2-6/gettingstarted
       - title: Profiles
-        url: /stagenow/2-4/stagingprofiles
+        url: /stagenow/2-6/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-4/ProfileWizards
+        url: /stagenow/2-6/ProfileWizards
       - title: Settings
-        url: /stagenow/2-4/settingconfig
+        url: /stagenow/2-6/settingconfig
       - title: Setting Types
-        url: /stagenow/2-4/settingtypes
+        url: /stagenow/2-6/settingtypes
       - title: Device Staging
-        url: /stagenow/2-4/stageclient
+        url: /stagenow/2-6/stageclient
     versions:
+      - url: stagenow/2-6/about
+        label: '2.6'
+      - url: stagenow/2-5/about
+        label: '2.5'
       - url: stagenow/2-4/about
         label: '2.4'
       - url: stagenow/2-3/about

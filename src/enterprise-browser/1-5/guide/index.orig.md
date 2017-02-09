@@ -30,10 +30,10 @@ automenu:
           url: DOMinjection
         - title: Feature Demo app
           url: featuredemo
-        - title: Keycode Mapping
-          url: keycapture
         - title: Printing
           url: printingGuide
+        - title: Keycode Mapping
+          url: keycapture
         - title: SAP ITSmobile
           url: sap
         - title: Viewport
@@ -56,13 +56,11 @@ automenu:
           url: rhomobile
     - title: Security
       items:
-        - title: Security Overview
-          url: security
         - title: Certificates
           url: certificates
         - title: TLS/SSL Compliance
           url: compliance
 product: Enterprise Browser
-productversion: '1.4'
+productversion: '1.5'
 ---
 

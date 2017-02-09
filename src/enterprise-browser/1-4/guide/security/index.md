@@ -26,13 +26,6 @@ Enterprise Browser supports Secure Sockets Layer (SSL) and the newer Transport L
 
 -----
 
-### Device Lock-down
-When tight control over device settings and/or apps is required, Enterprise Browser 1.6 and higher integrates with [Enterprise Home Screen](../../../../ehs), Zebra's free Android device lock-down solution. 
-
-See the [EB Device Lock-down Guide](../ehs) for instructions. 
-
------
-
 ### Exit Password
 Enterprise Browser can configure any EB application to require a password before allowing the app to exit. This feature is implemented with the [&lt;ExitPasswordEnabled&gt; tag](../configreference/#exitpasswordenabled) of the app's `config.xml` file. 
 

@@ -1,6 +1,6 @@
 ---
 title: Security Features
-productversion: '1.6'
+productversion: '1.5'
 product: Enterprise Browser
 layout: guide.html
 ---
@@ -23,13 +23,6 @@ Enterprise Browser supports access to web sites that are protected with client- 
 
 ### Compliance with TLS 1.2, SSL3
 Enterprise Browser supports Secure Sockets Layer (SSL) and the newer Transport Layer Security (TLS) protocols, detailed in the [EB Compliance Guide](../compliance). 
-
------
-
-### Device Lock-down
-When tight control over device settings and/or apps is required, Enterprise Browser 1.6 and higher integrates with [Enterprise Home Screen](../../../../ehs), Zebra's free Android device lock-down solution. 
-
-See the [EB Device Lock-down Guide](../ehs) for instructions. 
 
 -----
 

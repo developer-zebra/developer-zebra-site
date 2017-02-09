@@ -29,10 +29,10 @@ menu:
       url: https://www.youtube.com/playlist?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx
     - icon: fa fa-comment
       url: https://developer.zebra.com/community/technologies/enterprisebrowser
-    - icon: fa fa-search
-      url: /enterprise-browser/1-6/search
     - icon: fa fa-download
       url: /enterprise-browser/1-6/download
+    - icon: fa fa-search
+      url: /enterprise-browser/1-6/search
 product: Enterprise Browser
 productversion: '1.6'
 ---

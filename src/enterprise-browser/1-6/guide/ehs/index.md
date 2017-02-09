@@ -84,41 +84,37 @@ Once the `enterprisehomescreen.xml` file is pushed to the device, the specified 
 
 -----
 
-# still under construction
-
 ## Mass Deployment
+A solution that uses EHS to lock down an EB app can be mass-deployed using Zebra [StageNow](../../../../stagenow) or a compatible MDM system, provided the system is capable of setting an Android app as the default Launcher for the device. 
+
+**Zebra recommends testing all apps and configuration files on a working device before general deployment**. 
 
 **Required files**:
 
-- ehs apk
-- An `enterprisehomescreen.xml` file configured as desired 
-- eb apk
-- eb shortcuts? 
-- EB start page file (if local) 
+- EHS installation package (.apk file)
+- EHS `enterprisehomescreen.xml` file configured as desired 
+- EB installation package (.apk file)
+- EB `config.xml` file configured as desired 
+- EB start-page file (if launched from the device) 
 
-FROM ENGINEERING: 
-How to mass deploy the lockdown configuration
+**To mass deploy an EB app locked down with EHS**: 
 
-Create a package containing EB apk, EHS apk, Enterprisehomescreen.xml and any other files as per your requirement.
+1. Create an installation package containing the required files listed above.
+2. Set StageNow (or a compatible MDM system) to: 
+ * Deploy `enterprisehomescreen.xml` to the `/enterprise/usr` device directory. 
+ * Check the device for a `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. Create if necessary.
+ * Deploy `config.xml` to the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. 
+ * Deploy and launch EB.
+ * Deploy and launch EHS.
+ * Set EHS as the default Launcher and set it to launch on device startup.
+ * Restart the device.
 
-The Enterprisehomescreen.xml(edited as per the need has to be pushed to this location /enterprise/usr
-
-Now make necessary changes in the package configuration to make EHS as the default Launcher and to launch EHS on device startup.
-
-Restart the device through MDM (this is necessary because EHS will pick the new xml pushed only after restarting). 
-
-After the device starts EHS will be launched on startup and depending on the Enterprisehomescreen.xml pushed, you will be able to see the apps in EHS.
-
-The Note section is implicit and I feel not need to mention it explicitly.
-
-NOTE:
-Setting of EHS as the default launcher through MDM is necessary and if this cannot be done through MDM than the process of lockdown of EB cannot be automated.
-
+On every subsequent restart, EHS will automatically run, and depending on the `enterprisehomescreen.xml` file, will launch the Kiosk Mode app or display the apps specified for User Mode.
 
 -----
 
 Related guides: 
 
-* [DataWedge User Guide](../../../../datawedge)
+* [Enterprise Home Screen user guide](../../../../ehs)
+* [Enterprise Browser Security Overview](../security)
 * [Enterprise Browser APIs](../../api)
-* [API Compatibility Matrix](../compatibility)

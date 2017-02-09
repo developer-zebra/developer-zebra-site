@@ -1,7 +1,7 @@
 ---
 title: Enterprise Home Screen Setup
 layout: guide.html
-product: Enteprise Home Screen
+product: Enterprise Home Screen
 productversion: '2.3'
 ---
 

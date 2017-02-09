@@ -41,12 +41,12 @@ In the `enterprisehomescreen.xml` file:
 
 1. Specify the Kiosk app label, package and activity (optional) in the &lt;kiosk&gt; section of the config file (shown below), replacing any pre-existing data. 
 2. Enter a value of "1" in the &lt;kiosk_mode_enabled&gt; tag in the Preferences section of the file. 
-3. If USB Debugging is desired in Kiosk Mode, enter a value of '0' in the &lt;usb_debugging_disabled&gt; tag.<br> 
+3. If USB Debugging is desired in Kiosk Mode, enter a value of "0" in the &lt;usb_debugging_disabled&gt; tag (see Disable Kiosk Mode for more info). <br> 
 4. Remove all apps from the &lt;applications&gt; section. 
 5. Make any other required changes in the file.  
 4. Save and push the `enterprisehomescreen.xml` file to the device; changes take effect immediately. 
 
-Once the `enterprisehomescreen.xml` file is pushed to the device, the named app will launch in full-screen mode and BACK and HOME keys will be disabled.
+Once the `enterprisehomescreen.xml` file is pushed to the device, the named app will launch in full-screen mode and BACK and HOME keys will be disabled. For exiting instructions, see Disable Kiosk Mode section, below. 
 
 <b>Security Note</b>: When using Kiosk Mode, Zebra recommends configuring the EB app to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
 

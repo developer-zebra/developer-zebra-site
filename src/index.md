@@ -59,7 +59,7 @@ products:
         label: '1.4'
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
-    url: /ehs/2-4/guide/about
+    url: /ehs/2-5/guide/about
     image: /ehs/ehs-logo.png
     btn-text: Latest Docs
     sections:

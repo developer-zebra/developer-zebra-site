@@ -6,18 +6,22 @@ productversion: '1.1'
 ---
 
 ## Overview
-Zebra's SimulScan is a set of productivity tools that can optimize the efficiency of data-capture workflow by enabling workers to acquire multiple points of data in a single step. When integrated with SimulScan APIs, captured data can be parsed directly into an organization's native applications. 
+Zebra's SimulScan is a set of productivity tools that can optimize the efficiency of data-capture workflow by enabling workers to acquire multiple points of data in a single step. When integrated with SimulScan APIs, captured data can be parsed directly into an organization's native Android applications. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t6tbOlcgPDk" frameborder="0" allowfullscreen></iframe>
+[More SimulScan videos](https://www.youtube.com/playlist?list=PLce6-npz5dKf_5mTtakWU1ostOIaeGXzz)
+<br>
 
 **SimulScan Can Help Optimize Workflows If...** 
 
 * **Scanning is frequent** in the organization, and...
 * **Forms have one or more barcodes of the same of differing symbologies**.
 
-Such scenarios are perfect for SimulScan [Multi-barcoding](../setup/#unstructuredtemplates).  
+Such scenarios are perfect for SimulScan [Multi-barcoding](../templatebuilder/#unstructuredtemplates).  
 
-Alternatively, SimulScan [Mixed Data-type](../setup/#structuredtemplates) is ideal for data capture when...
+Alternatively, SimulScan [Mixed Data-type](../templatebuilder/#structuredtemplates) is ideal for data capture when...
 
-* **Scanned forms are of a [fixed layout](../templatebuilder/#glossary)**, and...
+* **Scanned forms are of a** [fixed layout](../glossary), and...
 * **Forms have well-defined borders**.
 
 -----
@@ -40,11 +44,13 @@ Alternatively, SimulScan [Mixed Data-type](../setup/#structuredtemplates) is ide
 #### SimulScan Operation Modes  
 
 <!-- <img style="height:100px" src="barcode-multibarcode.png"/> -->
-[Multi-barcode](../setup/#unstructuredtemplates) allows workers to capture one or more 1D/2D barcodes of the same or differing symbologies from a single scan target. The target layout can be fixed or can vary from one scan to another. 
+[Multi-barcode](../templatebuilder/#unstructuredtemplates) mode allows workers to capture one or more 1D/2D barcodes of the same or differing symbologies from a single scan target. The target layout can be fixed or can vary from one scan to another. 
 <br>
 
 ![img](mixed-data.png)
-[Mixed Data-type](../setup/#structuredtemplates) includes the features of Multi-barcode and can capture alphanumeric characters and images, and determine the presence of check marks and signatures from a snapshot of the document. This mode requires scan targets with a fixed layout.
+<br>
+
+[Mixed Data-type](../templatebuilder/#structuredtemplates) mode adds to Multi-barcode the ability to capture alphanumeric characters and images, and can determine the presence of check marks and signatures from a snapshot of the document. This mode requires scan targets with a fixed layout.
 <br>
 
 -----
@@ -55,7 +61,7 @@ SimulScan Multi-barcode and Mixed Data-type modes both work through Templates, w
 ![img](regions_of_interest.png)
 <br>
 
-### Activating SimulScan
+### Using SimulScan
 **SimulScan is free** when used with DataWedge or from a custom app to scan only barcodes. A per-device license is required access to OCR or OMR features. For licensing details, please see the [Licensing guide](../license). 
 
 SimulScan can be accessed either by: 
@@ -66,7 +72,7 @@ SimulScan can be accessed either by:
 SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App also can be used to test custom Templates.
 
 
-See the [SimulScan Glossary](../templatebuilder/#glossary) for a complete list of terms. 
+See the [SimulScan Glossary](../glossary) for a complete list of terms. 
 
 <!--
 ![img](regions_of_interest.png)
@@ -77,43 +83,70 @@ In addition, some Fields are designated as "Anchor Elements," which help SimulSc
 -----
 
 ## Supported Devices
+SimulScan works will all device cameras, and supports devices with an SE4750 imager only. To identify the imager installed on a device, see **About Device > Hardware Configuration** in the device Settings panel or check the table below for supported device model codes.
 
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">------------Device----------</th>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">------------Model---------</th>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">-----------Camera---------</th>
-  <th width="25%" align="center" valign="middle" class="clsSyntaxHeadings">-----------2D Imager--------</th>
+  <th width="15%" align="left" valign="middle" class="clsSyntaxHeadings">Device</th>
+  <th width="15%" align="left" valign="middle" class="clsSyntaxHeadings">Model</th>
+  <th width="15%" align="left" valign="middle" class="clsSyntaxHeadings">Camera</th>
+  <th width="55%" align="left" valign="middle" class="clsSyntaxHeadings">Model code(s) with 2D imager support</th>
  </tr>
  <tr>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:83px" src="TC55_models.png"/></td>
  </tr>
  <tr>
-  <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">GA2 devices only</td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:67px" src="TC70_models.png"/></td>
  </tr>
  <tr>
-  <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="tc75.png" height="75"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="tc75.png" height="75"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">• All models support SimulScan</td>
  </tr>
  <tr>
-  <td width="25%" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="tc8000.png" height="75"></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√</td>
-  <td width="25%" align="center" valign="middle" class="clsSyntaxCells clsOddRow">√ *</td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="tc8000.png" height="75"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:105px" src="TC8000_models.png"/>
+</td>
  </tr>
  <tr>
 </tbody></table>
-_&#42;The TC8000 Extended Range Imager (ERI) configuration is not supported_. 
 
-<!--
+
+<!-- 
+<img style="height:100px" src="TC55_models.png"/>
+• Model code must contain an 'J'
+
+<img style="height:100px" src="TC70_models.png"/>
+• SimulScan supported on GA2 devices only
+• Model code must contain an 'A'
+• Decoded imagers not supported
+
+<img style="height:100px" src="TC8000_models.png"/>
+• Model code suffix must be '-1' or '-2' (i.e. TC8000<b>-2</b>)<br>
+• Devices with a suffix of '-3' or '-A' are not supported<br>
+• The Extended Range Imager (ERI) is not supported for use with SimulScan
+
+### Device Support Notes
+If support issues arise, check the model code of the device in use. The following codes indicate devices that contain a scanner or imager that supports SimulScan.
+
+**TC55** 
+
+**TC70**
+
+**TC75**
+
+**TC8000**
+
+
 ### SimulScan Benefits
 
 * **Decodes multiple barcodes** with a single scan, even those of differing symbologies

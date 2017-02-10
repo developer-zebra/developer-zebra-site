@@ -32,23 +32,27 @@ products:
         label: '5.0'
   - title: Enterprise Browser
     description: "Build apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript."
-    url: /enterprise-browser/1-5/guide/about
+    url: /enterprise-browser/1-6/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-browser/1-5/guide/about
+        url: /enterprise-browser/1-6/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-5/guide/gettingstarted
+        url: /enterprise-browser/1-6/guide/gettingstarted
       - title: Setup
-        url: /enterprise-browser/1-5/guide/setup/
+        url: /enterprise-browser/1-6/guide/setup/
       - title: Tutorials
-        url: /enterprise-browser/1-5/tutorial/
+        url: /enterprise-browser/1-6/tutorial/
       - title: Usage Guides
-        url: /enterprise-browser/1-5/guide
+        url: /enterprise-browser/1-6/guide
+      - title: Config.xml
+        url: /enterprise-browser/1-6/guide/configreference
       - title: APIs
-        url: /enterprise-browser/1-5/api
+        url: /enterprise-browser/1-6/api
     versions:
+      - url: enterprise-browser/1-6/guide/about
+        label: '1.6'
       - url: enterprise-browser/1-5/guide/about
         label: '1.5'
       - url: enterprise-browser/1-4/guide/about
@@ -95,7 +99,7 @@ products:
         label: '1.2'
       - url: enterprise-keyboard/1-1/guide/about
         label: '1.1'
-      - url: enterprise-keyboard/1-1/guide/about
+      - url: enterprise-keyboard/1-0/guide/about
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
@@ -197,10 +201,10 @@ products:
         url: /simulscan/1-1/guide/setup
       - title: Template Builder
         url: /simulscan/1-1/guide/templatebuilder
+      - title: Glossary
+        url: /simulscan/1-1/guide/glossary
       - title: APIs
         url: /simulscan/1-1/api
-      - title: Templates
-        url: /simulscan/1-1/guide/templates
       - title: Demo App
         url: /simulscan/1-1/guide/demo
       - title: Licensing

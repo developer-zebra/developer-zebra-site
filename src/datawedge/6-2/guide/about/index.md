@@ -62,7 +62,7 @@ _Launcher icon for DataWedge 6.x_
 
 &#51;. **Tap About**. The "About DataWedge" screen appears. The DataWedge version number is highlighted in the image below. Notice that the Scanner Framework version also is shown.     
 <img style="height:350px" src="03_datawedge_about_screen.png"/>
-_The "About DataWedge" box showing version 6.0.1_. 
+_The "About DataWedge" box showing version numbers_ 
 <br>
 
 &#52;. If the DataWedge version on the device is different than that of this guide, visit the [Zebra support site](https://www.zebra.com/us/en/support-downloads.html) and download a device-specific Integrator Guide for reference. 

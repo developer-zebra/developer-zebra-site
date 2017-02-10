@@ -637,26 +637,6 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-xamarin/2-2/'
     }))
     .use(foldermenu({
-        folder: 'mx/4-4/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'mx/6-0/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'mx/6-2/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'mx/5-0/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'mx/4-2/',
-        automenu: true
-    }))
-    .use(foldermenu({
         folder: 'mx/',
         automenu: false
     }))

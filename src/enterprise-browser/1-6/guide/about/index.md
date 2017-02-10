@@ -45,7 +45,7 @@ This release also adds a range of additional new features for all supported Andr
 
 #### Ring Scanner Support
 
-* **[RS6000 Ring Scanner](#wearable) -** is now supported on TC75x (Falcon) devices running Android Marshmallow.
+* **[RS6000 Ring Scanner](#wearable) -** is now supported on TC75x devices running Android Marshmallow.
 
 #### Enterprise Browser Kiosk Mode
 
@@ -130,14 +130,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Falcon - TC75</b></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
-  <td class="clsSyntaxCells clsOddRow"><b>Ironman - TC51</b></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC51</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC51</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
@@ -436,7 +436,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">For WT6000 and Falcon - TC75 only</td>
+  <td class="clsSyntaxCells clsOddRow">Supported on WT6000 and TC75 only</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="25"></td>

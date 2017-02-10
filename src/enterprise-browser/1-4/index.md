@@ -23,6 +23,12 @@ menu:
       url: /enterprise-browser/1-4/guide/configreference
     - title: APIs
       url: /enterprise-browser/1-4/api
+    - icon: fa fa-youtube-play
+      url: https://www.youtube.com/playlist?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/community/technologies/enterprisebrowser
+    - icon: fa fa-download
+      url: /enterprise-browser/1-4/download
     - icon: fa fa-search
       url: /enterprise-browser/1-4/search
 product: Enterprise Browser

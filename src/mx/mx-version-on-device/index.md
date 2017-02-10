@@ -1,11 +1,11 @@
 ---
-title: "How to Check a Device's MX Version"
+title: Device MX and OSX Versions
 layout: guide.html
 ---
 
 ## Overview
 
-The version of MX on a device is a factor in determining if certain settings will be supported. There are a few ways that you can determine the version that is installed:
+The version of MX and/or OSX on a device determine whether certain settings and/or features are supported. There are a few ways that you can determine the version that is installed:
 
 * Manually using the Settings UI
 * From application code at runtime using the EMDK

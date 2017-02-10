@@ -1307,7 +1307,7 @@ Used to disable barcode scanning capabilities for a previous scanner API. Does n
 
 ## Sound
 ### DecodeVolume
-Controls the volume of the device beeper when a barcode is scanned.
+Controls the volume of the device beeper when a barcode is scanned. Not supported on Android platform.
 
 **Possible Values**:
 
@@ -1318,7 +1318,7 @@ Controls the volume of the device beeper when a barcode is scanned.
 	<DecodeVolume value="3"/>
 
 ### DecodeFrequency
-Controls the frequency of the device beeper when a barcode is successfully decoded. Must be within the range of the beeper.
+Controls the frequency of the device beeper when a barcode is successfully decoded. Must be within the range of the beeper. Not supported on Android platform.
 
 **Possible Values**:
 
@@ -1340,7 +1340,7 @@ Controls the frequency of the device beeper sound when a scanned barcode is not 
 	<InvalidDecodeFrequency value="0xFFFF"/>
 
 ### DecodeDuration
-Controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
+Controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned. Not supported on Android platform.
 
 **Possible Values**:
 
@@ -1351,7 +1351,7 @@ Controls the duration (in milliseconds) of the device beeper sound when a barcod
 	<DecodeDuration value="500"/>
 
 ### ScanDecodeWav
-Specifies a .wav file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Not applicable to the Enterprise Tablet. Case sensitive.
+Specifies a .wav file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Not applicable to the Enterprise Tablet. Case sensitive. Not supported on Android platform.
 
 **Possible Values**:
 

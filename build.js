@@ -172,7 +172,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 
 var sitebuild = Metalsmith(__dirname)
     .clean(false)
-    .concurrency(1000)
+    .concurrency(2000)
 	.metadata({
 	    site: {
 	      title: 'Zebra Technologies - EMDK Samples',

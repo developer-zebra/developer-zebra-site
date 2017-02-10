@@ -103,23 +103,25 @@ products:
         label: '1.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-0/guide/about
+    url: /emdk-for-android/6-3/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/6-0/guide/gettingstarted
+        url: /emdk-for-android/6-3/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-0/tutorial/
+        url: /emdk-for-android/6-3/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-0/samples
+        url: /emdk-for-android/6-3/samples
       - title: Guides
-        url: /emdk-for-android/6-0/guide/programming-guides
+        url: /emdk-for-android/6-3/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-0/guide/profile-manager-guides
+        url: /emdk-for-android/6-3/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-0/api
+        url: /emdk-for-android/6-3/api
     versions:
+      - url: emdk-for-android/6-3/guide/about/
+        label: '6.3'
       - url: emdk-for-android/6-0/guide/about/
         label: '6.0'
       - url: emdk-for-android/5-0/guide/about/

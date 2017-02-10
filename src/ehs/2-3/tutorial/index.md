@@ -23,7 +23,7 @@ content-items:
     title: Item 4
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
-product: Enteprise Home Screen
+product: Enterprise Home Screen
 productversion: '2.3'
 ---
 

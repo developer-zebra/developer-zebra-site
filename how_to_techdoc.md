@@ -48,6 +48,9 @@ To see changes:
 
 * Refresh the page(s) and revise as necessary
 
+* Update the redirect link for the new product version (i.e. /src/ehs/2-5/index.md)
+This ensures that incoming links from other products (i.e. "techdocs.zebra.com/ehs") will never go stale. 
+
 ## WHEN WORK IS COMPLETE...
 
 ### V. Stage (for engineering validation)

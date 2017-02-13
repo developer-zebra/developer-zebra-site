@@ -14,7 +14,7 @@ menu:
     - title: About
       url: /enterprise-browser/1-6/guide/about
     - title: Getting Started
-      url: /enterprise-browser/1-6/guide/gettingstarted
+      url: /enterprise-browser/1-6/guide/gettingstarted/
     - title: Tutorials
       url: /enterprise-browser/1-6/tutorial/
     - title: Sample Apps

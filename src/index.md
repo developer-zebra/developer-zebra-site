@@ -39,7 +39,7 @@ products:
       - title: About
         url: /enterprise-browser/1-6/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-6/guide/gettingstarted
+        url: /enterprise-browser/1-6/guide/gettingstarted/
       - title: Setup
         url: /enterprise-browser/1-6/guide/setup/
       - title: Tutorials

@@ -20,12 +20,12 @@ menu:
       url: /ehs/2-4/guide/settings
     - title: Special Features
       url: /ehs/2-4/guide/features
-    - icon: fa fa-search
-      url: /ehs/2-4/search
     - icon: fa fa-download
       url: /ehs/2-4/download
+    - icon: fa fa-search
+      url: /ehs/2-4/search
 product: Enterprise Home Screen
 productversion: '2.4'
 ---
 
-## Redirecting to the latest Enterprise Home Screen documentation
+### Redirecting to the latest Enterprise Home Screen documentation

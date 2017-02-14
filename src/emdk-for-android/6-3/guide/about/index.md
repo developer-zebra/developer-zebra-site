@@ -105,7 +105,7 @@ The following software must be installed prior to using the EMDK for Android.
     * Added new parameter “Receiver foreground flag” in Intent Output for delivering the captured data via Broadcast Intent to broadcast recipient permission to run at the foreground priority with a shorter timeout interval.
     * Added the following new parameters in Keystroke Output feature:
         * Multi byte character delay -  Sets an inter character delay in milliseconds for multi byte characters. This setting was required to be set in-order to overcome data dispatching errors when dispatching multi byte characters to browser.
-        * Key event delay - Sets a delay in milliseconds for dispatching control characters as keystrokes correctly to the foreground application.
+    * Key event delay - Sets a delay in milliseconds for dispatching control characters as keystrokes correctly to the foreground application.
 4. Enhanced Serial Comm APIs with the following features:
     * Added getConfig() and setConfig() for accessing the current configuration settings such as baudRate, parity, dataBit and stopBit.
     * Added getSignalState() to query the signal status such as DTR, DCD, DSR, RI, RTS and CTS.

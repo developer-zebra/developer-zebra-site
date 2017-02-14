@@ -40,7 +40,9 @@ Topics covered in this guide:
 * [Troubleshooting](../troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
 
 ## What's New
-StageNow 2.6 supports [MX 6.2](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
+StageNow 2.6 now offers support for Regional PC settings for most of the formats on the Windows 7 workstation. 
+
+The release also supports [MX 6.2](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
 
 * A new [Ethernet Manager](../csp/ethernetmgr) CSP administers settings for devices connected to a network through an Ethernet-equipped cradle, including:
  * **DHCP** enable/disable
@@ -59,3 +61,5 @@ StageNow 2.6 supports [MX 6.2](../stagingprofiles/#mx6xselection), which introdu
   * **Select the active SIM socket** (SIM1, SIM2, SIM3 or SIM4)
   * **SIM socket selection enable/disable**
 * [KeyMapping Manager](../csp/keymap) adds key mapping support for the NAV_PAD button. 
+* [Hosts Manager](../csp/hostsmgr) now retains the device Host Name after a reboot. 
+* [Wifi Manager](../csp/wifi) now handles advanced options on unsupported devices.

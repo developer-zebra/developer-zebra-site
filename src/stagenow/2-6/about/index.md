@@ -21,7 +21,7 @@ This help file provides the staging administrator instructions on using StageNow
 * Internet Explorer 9 or newer
 
 ## Section Descriptions
-Topics covered in this guide are as follows:
+Topics covered in this guide:
 
 * [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow Staging Solution, including system requirements.
 
@@ -40,9 +40,30 @@ Topics covered in this guide are as follows:
 * [Troubleshooting](../troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
 
 ## What's New
-The following topics are added or updated for StageNow 2.6:
+StageNow 2.6 supports [MX 6.2](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
 
-* Support for [MX 6.2](../stagingprofiles?MX%206.X%20Selection) which adds the new setting type [Ethernet Manager](../csp/ethernetmgr) 
+* A new [Ethernet Manager](../csp/ethernetmgr) CSP administers settings for devices connected to a network through an Ethernet-equipped cradle, including:
+ * **DHCP** enable/disable
+ * **Set static IP** address, default gateway, subnet mask, DNS
+ * **Ethernet proxy** enable/disable
+ * **Set proxy host** name, port number
+ * **Set proxy bypass** host name(s) and/or IP address(es) 
 
-* Setting type updates
+<br>
+* [Persist Manager](../csp/persistence) adds the following behaviors/features: 
+ * **Device Lock** prevents touch and USB inputs on the device following an enterprise reset until profiles are applied.
+ * **Graceful recovery from battery removal** reapplies persisted settings if battery is removed while device is in enterprise reset mode.
+ * **OS Upgrade** feature prevents Device Lock while an OS Upgrade is being performed. 
 
+<br>
+* [Touch Manager](../csp/touch) adds support for:
+ * **Device Type** allows a set of Zebra devices to be specified for which to apply settings for touch-screen sensitivity.
+ * **Screen Protector** checkbox compensates for the presence of a screen protector on TC51, TC56, TC70x, or TC75x devices.
+
+<br>
+* [Cellular Manager](../csp/cellular) adds support for:
+  * **Select the active SIM socket** (SIM1, SIM2, SIM3 or SIM4)
+  * **SIM socket selection enable/disable**
+
+<br>
+* [KeyMapping Manager](../csp/keymap) adds key mapping support for the NAV_PAD button. 

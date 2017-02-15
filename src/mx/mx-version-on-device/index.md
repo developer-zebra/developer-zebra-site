@@ -5,18 +5,18 @@ layout: guide.html
 
 ## Overview
 
-The version of MX and/or OSX on a device determine whether certain settings and/or features are supported. There are a few ways that you can determine the version that is installed:
+The versions of MX and/or OSX on a device determine whether certain settings and/or features are supported. There are several ways to determine which version is installed:
 
-* Manually using the Settings UI
-* From application code at runtime using the EMDK
-* Submitting XML using the MX CSP
-* Using ADB
+* Manually using the Settings panel on the device (KitKat 4.4 and higher)
+* Programmatically using EMDK and some application code at runtime
+* Using StageNow or EMDK and the Profile Manager to submit XML to the MX CSP
+* By querying from a PC to a connected device over ADB
 
-## Using the Settings UI 
+### Using the Settings Panel 
 
-The version of MX on a Zebra Android KitKat device you can visually look in the Settings UI to determine the MX version installed:
+**To see the MX and/or OSX version with the Settings panel** on a device with kitKat 4.4 or higher: 
 
-> Note: This is only available on KitKat 4.4+ or later versions of Zebra Android devices.
+
 
 1. Open the `Settings` application in the list of applications
     

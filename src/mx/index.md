@@ -11,6 +11,8 @@ menu:
       url: /mx/choosing-a-version
     - title: Checking Device MX Version
       url: /mx/mx-version-on-device
+    - icon: fa fa-search
+      url: /mx/search
 layout: csp-mx-support.html
 mxversions:
   - text: MX 4.2

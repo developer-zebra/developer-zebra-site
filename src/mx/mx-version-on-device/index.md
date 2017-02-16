@@ -1,56 +1,60 @@
 ---
-title: Device MX and OSX Versions
+title: MX and OSX Versions
 layout: guide.html
 ---
 
 ## Overview
+The versions of MX and/or OSX on a device determine whether certain settings and/or features are supported. The OSX layer provides extensions to the base operating system to implement functionality not offered by Android. **The root OSX version number always matches the root number of the Android version that it extends**. For example, OSX 4.x will always be found on devices running Android 4.x. 
 
-The versions of MX and/or OSX on a device determine whether certain settings and/or features are supported. There are several ways to determine which version is installed:
+The same is not always true of MX, which provides a uniform interface into privileged and unprivileged APIs on a variety of Android versions, but does not extend the OS. For some features, the Android version alone is enough to determine a feature set. For others, a specific pairing of MX and Android is required, and still others need a certain combination of MX and OSX. 
 
-* Manually using the Settings panel on the device (KitKat 4.4 and higher)
-* Programmatically using EMDK and some application code at runtime
-* Using StageNow or EMDK and the Profile Manager to submit XML to the MX CSP
-* By querying from a PC to a connected device over ADB
+There are four ways determine which versions of MX and OSX are installed:
+
+* Manually [using the Settings panel](#usingthesettingspanel) on the device (**not supported on pre-KitKat 4.4 devices**)
+* Programmatically [using EMDK for Android](#usingemdkforandroid)
+* [Submitting XML](#submittingxml) to the MX CSP through Zebra StageNow (or EMDK and Profile Manager)
+* By querying a connected device from a PC [using ADB](#usingadb)
+
+-----
 
 ### Using the Settings Panel 
+**The Settings panel of some devices running Android versions prior to KitKat 4.4 do not display MX and OSX information**. To determine the MX and/or OSX version present on such a device, one of the other procedures must be used. 
 
-**To see the MX and/or OSX version with the Settings panel** on a device with kitKat 4.4 or higher: 
+**To view MX and/or OSX versions using the Settings panel**: 
 
+&#49;. In the Settings panel, **tap "About Device" (or Phone), then tap SW Components**. 
 
+&#50;. **Locate MX in the list of components**.   
 
-1. Open the `Settings` application in the list of applications
-    
-    ![img](/mx/mx-version-on-device/settings.jpg)
+&#51;. **The left-most two digits** indicate the MX and OSX versions. 
 
-2. Select `About Phone`
+<img style="height:400px" src="sw_components.png"/>
+_Settings panel showing OSX 4.4 and MX 4.4_
+<br>
 
-    ![img](/mx/mx-version-on-device/aboutphone.jpg)
-    
-3. Select `SW Components`
+**Note: On some devices, version information is returned in two groups of digits separated by an underscore (_) character. The numbers relevant to the version are those immediately <u>following</u> the underscore, as below**:
 
-    ![img](/mx/mx-version-on-device/software.jpg)
-    
-4. Inspect the `OSX` item
+<img style="height:400px" src="osx_version_older.jpg"/>
+_This panel shows OSX 4.2 running Android Jelly Bean (kernel 3.4.0)_
+<br>
 
-    ![img](/mx/mx-version-on-device/osx.jpg)
-    
-5. In the below example the version that is installed is `4.4.2`
+-----
 
-    ![img](/mx/mx-version-on-device/osx-highlighted.jpg)
-    
-## Using EMDK For Android
+### Using EMDK For Android
 
-If your application needs to determine the version of MX installed on a device at run time, then you can use a the `VersionManager` EMDK for Android API.
+Version numbers can be obtained programmatically through the `VersionManager` Android API in EMDK using the following Java code:
 
     :::java
     // Get an instance of VersionManager
     versionManager = (VersionManager) EMDKManager.getInstance(EMDKManager.FEATURE_TYPE.VERSION);
     
-    // Use the getVersion method passing in the version_Type.mx enum
+    // Use the getVersion method, passing in the version_Type.mx enum
     mxVersion = versionManager.getVersion(VERSION_TYPE.MX)
     
-## Submitting XML
-System Administrators and MDMs can submit XML using the `MX` CSP 
+-----
+
+### Submitting XML
+System Administrators can obtain version numbers through Zebra's StageNow tools or a compatible mobile device management system by submitting the following XML to the `MX` CSP: 
 
     :::xml
 	<wap-provisioningdoc>
@@ -59,8 +63,7 @@ System Administrators and MDMs can submit XML using the `MX` CSP
 		</characteristic>
 	</wap-provisioningdoc>
     
- The corresponding result returned would contain the MX version information returned in the `MXMFVersion` parm
- 
+ The result contains the MX version (which in this case is "4.4") returned in the `MXMFVersion` parameter shown below: 
  
  	:::XML
 	<wap-provisioningdoc>
@@ -69,24 +72,32 @@ System Administrators and MDMs can submit XML using the `MX` CSP
 		</characteristic>
 	</wap-provisioningdoc>
     
-## Using ADB
-The version of MX can also be obtained by using an `adb shell command`
+-----
+
+### Using ADB
+The MX version can be obtained from a PC or Mac by querying a USB-connected device using the **adb shell command** shown below:
 
     $ adb shell getprop
     
-The output will need to be filtered using something like `grep`. If the device is considered to be `rebranded` to Zebra Technologies then `ro.symbol.osx.version` should be used:
+The output must be filtered using `grep` or a similar tool. For Zebra-branded devices, use the string `ro.symbol.osx.version` in the grep argument, as shown below with the result:
 
     $ adb shell getprop | grep ro.symbol.osx.version
     [ro.symbol.osx.version]: [QC_OSX_4.4-3]
 
-> The above device has MX version `4.4` on it. The hypen 3 is merely a patch release that has been applied.
+The result above shows **a device with MX 4.4**. The number following the hyphen ("-3") indicates the release number of the latest OS patch applied to the device.
 
-On legacy Motorola Solutions branded devices, `ro.motosln.enterprise.version` should be used:
+For legacy Motorola Solutions-branded devices, use the string `ro.motosln.enterprise.version` in the grep argument, as shown below with the result:
 
     $ adb shell getprop | grep ro.motosln.enterprise.version
     [ro.motosln.enterprise.version]: [MX_TI4AJ.1.1_3.5.1-1]
 
- > The above device has MX version `1.1` on it.
+The result above shows **a device with MX 3.5**. 
 
+-----
 
+Related Guides: 
+
+* [EMDK for Android](../../../../emdk-for-android)
+* [Setting up ADB](http://zebra-stage.github.io/enterprise-browser/1-6/guide/setup/#connections)
+* [Zebra StageNow](../../../../stagenow)
 

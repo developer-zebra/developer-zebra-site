@@ -3,7 +3,7 @@ title: MX Framework
 publish: false
 menu:
   items:
-    - title: Architecture
+    - title: About
       url: /mx/overview
     - title: Compatibility
       url: /mx/compatibility

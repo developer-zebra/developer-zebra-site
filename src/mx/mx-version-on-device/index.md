@@ -1,5 +1,5 @@
 ---
-title: MX and OSX Versions
+title: How to Get the MX/OSX Version 
 layout: guide.html
 ---
 
@@ -92,6 +92,27 @@ For legacy Motorola Solutions-branded devices, use the string `ro.motosln.enterp
     [ro.motosln.enterprise.version]: [MX_TI4AJ.1.1_3.5.1-1]
 
 The result above shows **a device with MX 3.5**. 
+
+#### Other useful ADB shell commands: 
+
+    // get the OSx version:
+    getprep ro.symbol.osx.version 
+
+    // get the OS build version:
+    getprep ro.build.display.id 
+
+    //get the OS build date: (helps determine build differences)
+    getprep ro.build.version.date 
+
+    //get the device model: 
+    getprep ro.product.device
+
+    //get the Android version:
+    getprep ro.build.version.release
+
+    //get the Android security patch level:
+    getprep ro.build.version.security_patch
+
 
 -----
 

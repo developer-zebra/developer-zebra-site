@@ -1,11 +1,11 @@
 ---
-title: MX Management System
+title: About the MX Management System
 layout: guide.html
 ---
 
 ## Overview
 
-The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities provided by the underlying CSPs to give the user access to  privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files  included with the MDM Toolkit. These DSD files are imported into a DSD tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) is an XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. The XML used by the framework conforms to the Open Mobile Alliance specifications for Client Provisioning (OMA-CP). The framework affords developers and administrators an extensible, efficient, reliable and scalable means of configuring and administering Zebra Android devices. MXMS exposes capabilities provided by the underlying CSPs on a device, which provide uniform access to privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files included with the MDM Toolkit. A DSD tool, loaded with the DSD files for a particular device or set of devices, can generate XML code that when sent to the MXMS running on the device can change the devices' configuration or behavior.
 
 ## Definition of Terms
 

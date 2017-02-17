@@ -1,11 +1,11 @@
 ---
-title: About the MX Management System
+title: About MX
 layout: guide.html
 ---
 
 ## Overview
 
-The MX Management System (MXMS) is an XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. The XML used by the framework conforms to the Open Mobile Alliance specifications for Client Provisioning (OMA-CP). The framework affords developers and administrators an extensible, efficient, reliable and scalable means of configuring and administering Zebra Android devices. MXMS exposes capabilities provided by the underlying CSPs on a device, which provide uniform access to privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files included with the MDM Toolkit. A DSD tool, loaded with the DSD files for a particular device or set of devices, can generate XML code that when sent to the MXMS running on the device can change the devices' configuration or behavior.
+The MX Management System (MXMS) is an XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. The XML documents used by the framework conform to the [Open Mobile Alliance specification for Client Provisioning](http://www.openmobilealliance.org/wp/) (OMA-CP) and the Microsoft [MSPROV DTD format](https://msdn.microsoft.com/en-us/library/bb737266.aspx) on which it's based ([read more](http://www.advancedinstaller.com/user-guide/wince-winmobile-xmlprov.html)). The framework affords developers and administrators an extensible, efficient, reliable and scalable means to configure and administer devices in their organization. MXMS exposes capabilities provided by the underlying CSPs on a device, which provide uniform access to privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files included with the MDM Toolkit. A DSD tool, loaded with the DSD files for a particular device or set of devices, can generate XML code that when sent to the MXMS running on the device, can change the devices' configuration and/or behavior.
 
 ## Definition of Terms
 
@@ -56,7 +56,7 @@ MXMF is a device subsystem that provides an interface to applications that wish 
 
 ### Operating System Extensions (OSX)
 
-OSX is the term used to refer to changes and extensions to the standard AOSP as included in a BSP. OSX is versioned and the version of OSX in a device is the primary way to determine which changes and extensions are present in the operating system of that device. As a general rule, the version of OSX that is in a device can ONLY be changed by loading a different BSP (that contains a different version of OSX) into that device, via the OS update process.
+OSX is the term used to refer to a Zebra-proprietary implementation of changes and extensions to the standard AOSP as included in a BSP. The version of OSX in a device is the primary way to determine which changes and extensions are present in the operating system of that device. **The root OSX version number always matches the root number of the Android version that it extends**. For example, Android 5.x would always be extended by OSX 5.x. As a general rule, the version of OSX in a device can be changed ONLY by loading a different BSP (containing a different version of OSX) into that device using the OS update process. 
 
 ### MX Management System (MXMS)
 
@@ -101,3 +101,9 @@ The MX version on a specific device can be effected by:
 * EMDK for Android Device Runtime Updates
 
 While new CSPs can be introduced with each version of MX, and pre-existing CSPs can receive new capabilities, MX updates will not generally remove or change pre-existing behaviors or capabilities unless specifically noted.
+
+-----
+
+Related guides: 
+
+* [Which version of MX/OSX is installed?](../mx-version-on-device)

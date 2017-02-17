@@ -1,19 +1,19 @@
 ---
-title: How to Get the MX/OSX Version 
+title: Which MX/OSX is Installed? 
 layout: guide.html
 ---
 
 ## Overview
-The versions of MX and/or OSX on a device determine whether certain settings and/or features are supported. The OSX layer provides extensions to the base operating system to implement functionality not offered by Android. **The root OSX version number always matches the root number of the Android version that it extends**. For example, OSX 4.x will always be found on devices running Android 4.x. 
+The versions of MX and/or OSX on a device determine whether certain settings and/or features are supported. The Zebra-proprietary OSX layer provides extensions to the base operating system to implement functionality not offered by Android. **The root OSX version number always matches the root number of the Android version that it extends**. For example, OSX 4.x will always be found on devices running Android 4.x. 
 
 The same is not always true of MX, which provides a uniform interface into privileged and unprivileged APIs on a variety of Android versions, but does not extend the OS. For some features, the Android version alone is enough to determine a feature set. For others, a specific pairing of MX and Android is required, and still others need a certain combination of MX and OSX. 
 
-There are four ways determine which versions of MX and OSX are installed:
+####The MX/OSX version can be gotten: 
 
-* Manually [using the Settings panel](#usingthesettingspanel) on the device (**not supported on pre-KitKat 4.4 devices**)
-* Programmatically [using EMDK for Android](#usingemdkforandroid)
-* [Submitting XML](#submittingxml) to the MX CSP through Zebra StageNow (or EMDK and Profile Manager)
-* By querying a connected device from a PC [using ADB](#usingadb)
+* [Manually using the Settings panel](#usingthesettingspanel) on the device (not fully supported pre-KitKat)
+* [Programmatically using EMDK](#usingemdkforandroid) for Android
+* [By submitting XML](#submittingxml) to the MX CSP through Zebra StageNow (or EMDK and Profile Manager)
+* [Using ADB](#usingadb) to query a connected device from a PC or Mac 
 
 -----
 

@@ -1,6 +1,6 @@
 ---
 csp: intent
-title: Extra type
+title: Extra Type
 type: parm
 order: 40
 mx: "4.1"
@@ -19,7 +19,7 @@ parm:
       name: Standard Integer
       mx: "4.1"
       apilevel: "1"
-      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Standard Integer. The value provided must therefore be a string representing a valid standard integer value between -2(31) and 2(31) -1.
+      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Standard Integer. The value provided must therefore be a string representing a valid standard integer value between -2^31 and 2^31 -1.
     - code: char
       name: Character
       mx: "4.1"
@@ -39,7 +39,7 @@ parm:
       name: Long Integer
       mx: "4.1"
       apilevel: "1"
-      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Long Integer. The value provided must therefore be a string representing a valid long integer value between -2(63) and 2(63)-1.
+      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Long Integer. The value provided must therefore be a string representing a valid long integer value between -2^63 and 2^63-1.
     - code: boolean
       name: Boolean
       mx: "4.1"
@@ -54,7 +54,7 @@ parm:
       name: Short
       mx: "4.1"
       apilevel: "1"
-      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Short Integer. The value provided must therefore be a string representing a valid short integer value between -2(15) and 2(15)-1.
+      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Short Integer. The value provided must therefore be a string representing a valid short integer value between -2^15 and 2^15-1.
     - code: double
       name: Double Precision Floating Point
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Double Precision Floating Point. The value provided must therefore be a string representing a valid double-precision 64-bit IEEE 754 floating point number.
@@ -67,7 +67,7 @@ parm:
       name: Single Byte Integer
       mx: "4.1"
       apilevel: "1"
-      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Single Byte Integer. The value provided must therefore be a string representing a valid single-byte integer value between -2(7) and 2(7)-1.
+      description: Causes the corresponding extra data item to be attached to the Intent with a data type of Single Byte Integer. The value provided must therefore be a string representing a valid single-byte integer value between -2^7 and 2^7-1.
 ---
 
-Used to specify the data type of data to be attached to an Intent as an Extra Data Item. Intents allow as many as five extra data items to be attached and sent using the set prompts, parameter names and data types documented below. **Specify Extra Types as ExtraType, Extra1Type, Extra2Type, Extra3Type and Extra4Type**.
+Used to specify the data type of data to be attached to an Intent as an Extra Data Item. Intents allow as many as five extra data items to be attached and sent using the set prompts, parameter names and data types documented below. **Specify multiple Extra Types as ExtraType, Extra1Type, Extra2Type, Extra3Type and Extra4Type**.

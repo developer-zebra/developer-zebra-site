@@ -8,7 +8,7 @@ The versions of MX and/or OSX on a device determine whether certain settings and
 
 The same is not always true of MX, which provides a uniform interface into privileged and unprivileged APIs on a variety of Android versions, but does not extend the OS. For some features, the Android version alone is enough to determine a feature set. For others, a specific pairing of MX and Android is required, and still others need a certain combination of MX and OSX. 
 
-####The MX/OSX version can be gotten: 
+##### The MX/OSX version can be obtained: 
 
 * [Manually using the Settings panel](#usingthesettingspanel) on the device (not fully supported pre-KitKat)
 * [Programmatically using EMDK](#usingemdkforandroid) for Android

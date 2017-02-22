@@ -253,7 +253,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
 * **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes))
 * **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes)) 
-* **The [MC67]() Mobile Computer Series** running Android 4.4 KitKat (see [Android 4.4 KitKat Notes](#androidkitkatnotes)) 
+* **The [MC67]() Mobile Computer Series** running Android 4.4 KitKat (see [Android 4.4 Notes](#androidkitkatnotes)) 
 
 #### EHS 2.5 No Longer Supports:
 * **Devices with Android 4.1.2 Jelly Bean**
@@ -286,6 +286,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
+-----
+
 #### Android Marshmallow Notes
 **_Apply to devices running Android 6.x Marshmallow only_**:
 
@@ -294,6 +296,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
 
 * **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
+
+-----
 
 #### Android KitKat Notes 
 **_Applies to devices running Android 4.4+ KitKat only_**:

@@ -189,6 +189,9 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
             <application label="Calculator" package="com.android.calculator2" activity=""/>
     </kiosk>
 
+
+> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
+
 ------
 
 ### Applications
@@ -597,7 +600,10 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 #### Example
 
     <kiosk_mode_enabled>0</kiosk_mode_enabled>
-    
+
+
+> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
+
 ------
 
 ### Disable Status Bar Settings

@@ -26,7 +26,11 @@ For more information, including EHS download, setup and deployment instructions,
 
 ## Kiosk Mode
 
-Kiosk Mode allows devices to run a single application that cannot be exited. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode opens the app in full-screen mode and prevents exit by blocking the BACK and HOME keys.  **Warning: On Android L devices, Kiosk Mode should not be used with Screen Pinning**, an Android L feature similar to Kiosk Mode.
+Kiosk Mode allows devices to run a single application that cannot be exited. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode opens the app in full-screen mode and prevents exit by blocking the BACK and HOME keys. 
+
+##### Android Platform Notes: 
+* **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an Android L feature that works in a similar way.
+* **On devices running Android 4.4 KitKat**, a "please wait" prompt remains displayed when starting up the device in Kiosk Mode. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
 
 ##### Kiosk Mode tags:
 <b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
@@ -35,7 +39,7 @@ Kiosk Mode allows devices to run a single application that cannot be exited. Exa
 <br>
 
 ### Enable Kiosk Mode
-**Before proceeding, be sure that the Kiosk Mode app is installed and working properly**. Start with the default `enterprisehomescreen.xml` file, which is found in the `/enterprise/usr` directory on the device with Enterprise Home Screen installed.
+**Before proceeding, be sure that the Kiosk Mode app is installed and working properly**. Zebra recommends starting these instructions by editing the default `enterprisehomescreen.xml` file, which is found in the `/enterprise/usr` directory on the device with Enterprise Home Screen installed. 
 
 In the `enterprisehomescreen.xml` file:
 

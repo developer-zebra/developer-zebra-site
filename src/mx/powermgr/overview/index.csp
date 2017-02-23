@@ -5,9 +5,9 @@ type: text
 order: 0
 ---
 
-The PowerMgr allows an app to perform certain OS- and power-related actions on the device, such as resetting to a factory-fresh state, putting it into Sleep mode, rebooting or performing an OS update. PowerMgr performs only actions; there are currently no queries supported other than the ability to query the version of the CSP that implements PowerMgr itself.
+The PowerMgr allows an app to perform certain OS- and power-related actions on the device, such as resetting to a factory-fresh state, putting the device into Sleep mode, rebooting or performing an OS update. PowerMgr performs only actions; there are currently no queries supported other than the ability to query the version of the CSP that implements PowerMgr itself.
 
-**It's important to note that PowerMgr actions such as Reboot and Reset, once executed, will prevent the execution of subsequent actions submitted the Request XML document**, including the submission of a Result XML to the application sending the original Request. Zebra therefore recommends using [Condition Manager](../conditionmgr) in conjunction with PowerMgr to ensure that appropriate conditions exist on a device before attempting to perform "risky" operations such as OS updates, the failure of which can render a device unusable, severely limited or otherwise in need of service.
+**It's important to note that some PowerMgr actions--such as Reboot and Reset, once executed, will prevent the execution of subsequent actions submitted by the Request XML document**, including the submission of a Result XML to the application sending the original Request. Zebra therefore recommends using [Condition Manager](../conditionmgr) in conjunction with PowerMgr to ensure that appropriate conditions exist on a device before attempting to perform "risky" operations such as OS updates, the failure of which can render a device unusable, severely limited or otherwise in need of service.
 
 ### Main Functionality
 

@@ -30,32 +30,31 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 >**Note:** The path specified to the PowerMgr would normally be the same as the path to which the file was written when it was transferred to the device, but it doesn't always need to be the same. There may be multiple paths that can be used to store the file, all of which may cause the file to be stored in the identical location. But not all such paths may work to initiate the OS Update when specified via the PowerMgr. So, it is strongly recommended to store the files using one of the paths defined in the following table and then to specify the same path to the PowerMgr.
 
 <div class="parm-table">
- <table class="table">
+<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 	<tr>
 		<th>Device Model</th>
-		<th>Version of Android</th>
-		<th>Location Supported for OS Updates Comments</th>
+		<th>Android Version Info</th>
+		<th>Supported OS 
+		<p>Update Path(s)</p></th>
+		<th>Comments</th>
 	</tr>
-  <tr>
-    <td>ET1N0</td>
-    <td><p>Jelly Bean</p><p>v02.70.2479</p><p>ET1N0JenRU02702479.zip</p><p>02-4AJ11-2479-0700-00-M1-030215</p></td>
-	<td> 
-		 <table>
-		  <tr>
-			<td>/sdcard</td>
-			<td>Removable Micro SD Card (media must be physically present)</td>
-		  </tr>
-		  <tr>
-			<td>/data/tmp</td>
-			<td>Internal Data Partition</td>
-		  </tr>
-		  <tr>
-			<td>/data/tmp/local</td>
-			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
-		  </tr>
-		</table>
-	</td>
-  </tr>
+  	
+  	<tr>
+    	<td>ET1N0</td>
+    	<td>
+    	<p>Jelly Bean</p>
+    	<p>v02.70.2479</p>
+    	<p>ET1N0JenRU02702479.zip</p>
+    	<p>02-4AJ11-2479-0700-00-M1-030215</p>
+    	</td>
+		<td>/sdcard
+		<p>/data/tmp</p>
+		</td>
+		<td>Removable Micro SD Card (must be physically present)
+		<p>Internal Data Partition (folder must be created by an entity that <b>does not</b> need system privilege)</p>
+		</td>
+  	</tr>
+
   <tr>
     <td>ET1N2</td>
     <td><p>Jelly Bean</p><p>v02.20.2478</p><p>ET1N2JenRU02202478.zip</p><p>02-4AJ11-2478-0200-00-D1-030215</p></td>
@@ -70,7 +69,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -90,7 +89,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -110,7 +109,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -134,7 +133,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>-->
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity with system privilege)</td>
 		  </tr>
 		</table>
@@ -154,7 +153,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -183,7 +182,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity with system privilege)</td>
 		  </tr>
 		</table>
@@ -213,7 +212,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 	      <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -277,7 +276,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 	<td> 
 		 <table>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td>/data/tmp</td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -308,7 +307,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 		  </tr>
 		-->
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity with system privilege)</td>
 		  </tr>
 		</table>
@@ -338,7 +337,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 		  </tr>
 		-->
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -367,7 +366,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -397,7 +396,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 		</table>
@@ -426,7 +425,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -455,7 +454,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity with system privilege)</td>
 		  </tr>
 		</table>
@@ -488,7 +487,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 		  </tr>
 		-->
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
@@ -517,7 +516,7 @@ To perform an OS Update, an appropriate OS Update ZIP file should be transferred
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
 		  <tr>
-			<td>/data/tmp/local</td>
+			<td></td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>

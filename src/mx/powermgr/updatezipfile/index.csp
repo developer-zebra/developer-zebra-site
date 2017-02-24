@@ -19,7 +19,7 @@ Used to specify the path and filename of the file to be consumed when updating t
 
 ### Android Location Rules
 
-* **Update file location must not be blocked** by SdCardMgr or any other means. 
+* **Update file location must not be blocked** by [SdCardMgr](../sdcardmgr) or any other means. 
 
 * **Removable media must be physically present**. Storage partitions implemented on a removable medium such as a Micro SD Card must be inserted in the device when the Reset Action is initiated. 
 

@@ -5,10 +5,14 @@ type: parm
 order: 7
 mx: "4.3"
 parm:
-  presentif: File Action is transfer\copy and source is on device
+  presentif: File Action is Transfer/Copy and source is on device
   pivotal: No
   name: SourcePathAndFileName
   type: string
 ---
 
-Enter the path and file name of the source file location on the device.
+Used to specify the path and file name of the source file location on the device.
+
+**Parm value input rules**:
+
+* String containing the path and file name of the source file

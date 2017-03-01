@@ -24,21 +24,21 @@ menu:
   items:
     - title: About
       url: /stagenow/2-6/about
-    - title: Getting Started
+    - title: Get Started
       url: /stagenow/2-6/gettingstarted
     - title: Installation
       url: /stagenow/2-6/installing
     - title: Profiles
       url: /stagenow/2-6/stagingprofiles
-    - title: Profile Wizards
+    - title: Wizards
       url: /stagenow/2-6/ProfileWizards
     - title: Settings
       url: /stagenow/2-6/settingconfig
     - title: Setting Types
       url: /stagenow/2-6/settingtypes
-    - title: Device Staging
+    - title: Staging
       url: /stagenow/2-6/stageclient
-    - title: Trouble Shooting
+    - title: Troubleshooting
       url: /stagenow/2-6/troubleshooting
     - icon: fa fa-search
       url: /stagenow/2-6/search

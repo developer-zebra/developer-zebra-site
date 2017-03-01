@@ -67,7 +67,7 @@ automenu:
         - title: Wi-Fi
           url: /stagenow/2-3/csp/wifi
         - title: Wireless Manager
-          url: /stagenow/2-3/csp/wire
+          url: /stagenow/2-3/csp/wireless
     - title: Security
       items:
         - title: Access Manager

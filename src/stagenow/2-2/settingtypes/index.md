@@ -54,8 +54,6 @@ automenu:
           url: /stagenow/2-2/csp/dhcp
         - title: GPRS Manager
           url: /stagenow/2-2/csp/gprs
-        - title: Hosts Manager
-          url: /stagenow/2-2/csp/hostsmgr
         - title: Network.WLAN.Android
           url: /stagenow/2-2/csp/networkwlanandroid
         - title: Network.WLAN.Android.FusionOptions
@@ -65,7 +63,7 @@ automenu:
         - title: Wi-Fi
           url: /stagenow/2-2/csp/wifi
         - title: Wireless Manager
-          url: /stagenow/2-2/csp/wire
+          url: /stagenow/2-2/csp/wireless
     - title: Security
       items:
         - title: Access Manager

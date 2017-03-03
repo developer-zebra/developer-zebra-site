@@ -46,6 +46,64 @@ products:
         label: '6.0'
       - url: datawedge/5-0/guide/about
         label: '5.0'
+  - title: EMDK For Android
+    description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
+    url: /emdk-for-android/6-3/guide/about
+    image: /images/products/emdk-for-android.png
+    btn-text: Latest Docs
+    sections:
+      - title: Getting Started
+        url: /emdk-for-android/6-3/guide/gettingstarted
+      - title: Tutorials
+        url: /emdk-for-android/6-3/tutorial/
+      - title: Samples
+        url: /emdk-for-android/6-3/samples
+      - title: Guides
+        url: /emdk-for-android/6-3/guide/programming-guides
+      - title: Profile Manager
+        url: /emdk-for-android/6-3/guide/profile-manager-guides
+      - title: APIs
+        url: /emdk-for-android/6-3/api
+    versions:
+      - url: emdk-for-android/6-3/guide/about/
+        label: '6.3'
+      - url: emdk-for-android/6-0/guide/about/
+        label: '6.0'
+      - url: emdk-for-android/5-0/guide/about/
+        label: '5.0'
+      - url: emdk-for-android/4-2/guide/about/
+        label: '4.2'
+      - url: emdk-for-android/4-0/guide/about/
+        label: '4.0'
+  - title: EMDK For Xamarin
+    description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
+    url: /emdk-for-xamarin/2-2/guide/about
+    btn-text: Latest Docs
+    image: /images/products/emdk-for-xamarin.png
+    sections:
+      - title: About
+        url: /emdk-for-xamarin/2-2/guide/about
+      - title: Getting Started
+        url: /emdk-for-xamarin/2-2/guide/gettingstarted
+      - title: Tutorials
+        url: /emdk-for-xamarin/2-2/tutorial/
+      - title: Samples
+        url: /emdk-for-xamarin/2-2/samples
+      - title: Guides
+        url: /emdk-for-xamarin/2-2/guide/programming-guides
+      - title: Profile Manager
+        url: /emdk-for-xamarin/2-2/guide/profile-manager-guides
+      - title: APIs
+        url: /emdk-for-xamarin/2-2/api
+    versions:
+      - url: emdk-for-xamarin/2-2/guide/about/
+        label: '2.2'
+      - url: emdk-for-xamarin/2-1/guide/about/
+        label: '2.1'
+      - url: emdk-for-xamarin/2-0/guide/about/
+        label: '2.0'
+      - url: emdk-for-xamarin/1-0/guide/about/
+        label: '1.0'
   - title: Enterprise Browser
     description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
     url: /enterprise-browser/1-6/guide/about
@@ -116,64 +174,6 @@ products:
       - url: enterprise-keyboard/1-1/guide/about
         label: '1.1'
       - url: enterprise-keyboard/1-0/guide/about
-        label: '1.0'
-  - title: EMDK For Android
-    description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-3/guide/about
-    image: /images/products/emdk-for-android.png
-    btn-text: Latest Docs
-    sections:
-      - title: Getting Started
-        url: /emdk-for-android/6-3/guide/gettingstarted
-      - title: Tutorials
-        url: /emdk-for-android/6-3/tutorial/
-      - title: Samples
-        url: /emdk-for-android/6-3/samples
-      - title: Guides
-        url: /emdk-for-android/6-3/guide/programming-guides
-      - title: Profile Manager
-        url: /emdk-for-android/6-3/guide/profile-manager-guides
-      - title: APIs
-        url: /emdk-for-android/6-3/api
-    versions:
-      - url: emdk-for-android/6-3/guide/about/
-        label: '6.3'
-      - url: emdk-for-android/6-0/guide/about/
-        label: '6.0'
-      - url: emdk-for-android/5-0/guide/about/
-        label: '5.0'
-      - url: emdk-for-android/4-2/guide/about/
-        label: '4.2'
-      - url: emdk-for-android/4-0/guide/about/
-        label: '4.0'
-  - title: EMDK For Xamarin
-    description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
-    url: /emdk-for-xamarin/2-2/guide/about
-    btn-text: Latest Docs
-    image: /images/products/emdk-for-xamarin.png
-    sections:
-      - title: About
-        url: /emdk-for-xamarin/2-2/guide/about
-      - title: Getting Started
-        url: /emdk-for-xamarin/2-2/guide/gettingstarted
-      - title: Tutorials
-        url: /emdk-for-xamarin/2-2/tutorial/
-      - title: Samples
-        url: /emdk-for-xamarin/2-2/samples
-      - title: Guides
-        url: /emdk-for-xamarin/2-2/guide/programming-guides
-      - title: Profile Manager
-        url: /emdk-for-xamarin/2-2/guide/profile-manager-guides
-      - title: APIs
-        url: /emdk-for-xamarin/2-2/api
-    versions:
-      - url: emdk-for-xamarin/2-2/guide/about/
-        label: '2.2'
-      - url: emdk-for-xamarin/2-1/guide/about/
-        label: '2.1'
-      - url: emdk-for-xamarin/2-0/guide/about/
-        label: '2.0'
-      - url: emdk-for-xamarin/1-0/guide/about/
         label: '1.0'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.

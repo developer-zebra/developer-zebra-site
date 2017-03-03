@@ -2,7 +2,23 @@
 publish: false
 title: Available Product Documentation
 layout: list-products.html
-products:
+products: 
+  - title: AppGallery
+    description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
+    url: https://developer.zebra.com/docs/DOC-3040
+    image: /images/products/AppGallery.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: https://developer.zebra.com/docs/DOC-3035
+      - title: Admin
+        url: https://developer.zebra.com/docs/DOC-4151
+      - title: AppGallery Mobile
+        url: https://developer.zebra.com/docs/DOC-3071
+      - title: Supported Devices
+        url: https://developer.zebra.com/docs/DOC-3853
+      - title: Help Index
+        url: https://developer.zebra.com/docs/DOC-3040
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
     url: /datawedge/6-2/guide/about
@@ -31,7 +47,7 @@ products:
       - url: datawedge/5-0/guide/about
         label: '5.0'
   - title: Enterprise Browser
-    description: "Build apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript."
+    description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
     url: /enterprise-browser/1-6/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs

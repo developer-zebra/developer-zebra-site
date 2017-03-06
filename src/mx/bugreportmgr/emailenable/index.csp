@@ -1,13 +1,13 @@
 ---
 csp: bugreportmgr
-title: Bug Report Profile
+title: Email Reports Enable/Disable
 type: parm
-order: 10
+order: 15
 mx: "6.3"
 apilevel: "23"
 parm: 
   pivotal: No
-  name: BugReportProfile
+  name: EmailEnable
   type: list
   list:
     - code: 0
@@ -16,21 +16,16 @@ parm:
       mx: "6.3"
       apilevel: "23"
     - code: 1
-      name: old
-      description: Sets Bug Report Manager to use default handling of bug reports.
+      name: False
+      description: Prevents Bug Report Manager from sending bug reports via email.
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: new
-      description: Sets Bug Report Manager to use custom handling of bug reports.
+      description: Sets Bug Report Manager to send bug reports via email.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to configure the handling of bug reports on the device. Default handling includes the following parameters: 
-
-* **Storage -** internal flash memory, local path `/storage/sdcard0/BugReports/` 
-* **Email**
-
-
+Used to specify whether to send bug reports via email using the email sender account and recipient address spcecified in the relevant parameters below. 
 

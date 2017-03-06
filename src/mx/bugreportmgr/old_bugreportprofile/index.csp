@@ -2,12 +2,12 @@
 csp: bugreportmgr
 title: Bug Report Profile
 type: parm
-order: 10
+order: 19
 mx: "6.3"
 apilevel: "23"
-parm: 
+parm: BugReportProfile
   pivotal: No
-  name: BugReportProfile
+  name: 
   type: list
   list:
     - code: 0

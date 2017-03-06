@@ -5,14 +5,19 @@ type: text
 order: 0
 ---
 
-The Bug Report Manager (BugReportMgr) 
-
-
+The Bug Report Manager (BugReportMgr) provides a framework for reporting the time and relevant technical data associated with perceived issues on Zebra mobile computers. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user using the Power Key menu. Reports can be stored in internal memory or a removable memory card, sent to an e-mail address or uploaded to the Zebra Cloud for further analysis. 
 
 ### Main Functionality
 
-* Install, Uninstall and Upgrade User applications (with no device user involvement)
-* Set an application to be the Default Launcher
-* Turn On and Off the ability of an application to Launch (Whitelisting and Blacklisting, respectively)
-* Clear the Recent Application List
-* Enable and Disable Access to Application Info
+* Bug reporting Enable/Disable 
+* Report generation from Power Key menu Enable/Disable
+* Display user options for collecting additional information
+* Store reports in internal flash memory
+* Store reports in removable flash memory 
+* Store reports in private area
+* Send reports to a specified email address 
+* Upload reports to the Zebra Cloud
+* Capture audio with bug reports
+* Trigger bug reports silently using intents 
+
+Files – The CSP can store bug report files in primary external storage partition and external SD card. If StorageEnable is not set, CSP saves bug reports temporarily in apk private storage. It saves its settings in BugReportMgrPrefsFile shared preferences file. If dialog (questionnaire) layout is configured, it saves the layout in dialogLayout.ser file in apk private folder.

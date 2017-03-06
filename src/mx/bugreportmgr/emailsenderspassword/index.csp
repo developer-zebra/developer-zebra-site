@@ -1,0 +1,19 @@
+---
+csp: bugreportmgr
+title: Sender Email Password
+type: parm
+order: 17
+mx: "6.3"
+apilevel: "23"
+parm:
+  presentif: EmailEnable parameter is set to "True"
+  pivotal: No
+  name: EmailSendersPassword
+  type: string
+---
+
+Used to specify the password of the email account from which to send bug reports. Must be the password corresponding to the ID specified in the EmailSendersID parameter. 
+
+**Parm value input rules**: 
+
+* String from 1 - characters containing the email sender's password 

@@ -1,0 +1,19 @@
+---
+csp: bugreportmgr
+title: Sender Email ID
+type: parm
+order: 16
+mx: "6.3"
+apilevel: "23"
+parm:
+  presentif: EmailEnable parameter is set to "True"
+  pivotal: No
+  name: EmailSendersID
+  type: string
+---
+
+Used to specify the user name of the email account from which to send bug reports. Must be the ID corresponding to the password specified in the EmailSendersPassword parameter. 
+
+**Parm value input rules**: 
+
+* String from 1 - characters containing a sender's email account ID   

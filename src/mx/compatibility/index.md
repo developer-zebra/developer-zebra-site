@@ -52,6 +52,10 @@ csps:
     url: /mx/browsermgr
     csp: browsermgr
   - type: section
+    title: Bug Report Manager
+    url: /mx/bugreportmgr
+    csp: bugreportmgr
+  - type: section
     title: Camera Manager
     url: /mx/cameramgr
     csp: cameramgr

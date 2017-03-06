@@ -1,0 +1,18 @@
+---
+csp: bugreportmgr
+title: Overview
+type: text
+order: 0
+---
+
+The Bug Report Manager (BugReportMgr) 
+
+
+
+### Main Functionality
+
+* Install, Uninstall and Upgrade User applications (with no device user involvement)
+* Set an application to be the Default Launcher
+* Turn On and Off the ability of an application to Launch (Whitelisting and Blacklisting, respectively)
+* Clear the Recent Application List
+* Enable and Disable Access to Application Info

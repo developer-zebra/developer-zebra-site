@@ -1,8 +1,8 @@
 ---
 csp: bugreportmgr
-title: Recipient Email Address
+title: Recipient Email
 type: parm
-order: 20
+order: 24
 mx: "6.3"
 apilevel: "23"
 parm:

@@ -1,0 +1,19 @@
+---
+csp: bugreportmgr
+title: File Path
+type: parm
+order: 16
+mx: "6.3"
+apilevel: "23"
+parm:
+  presentif: StorageEnable parameter is set to "True"
+  pivotal: No
+  name: BugReportFilePath
+  type: string
+---
+
+Used to specify the storage path for the Bug Report. If no path is specified, default path of `/storage/sdcard0/BugReports/` will be used. 
+
+**Parm value input rules**: 
+
+* String from 1 - characters containing the path for storage of the Bug Report

@@ -1,0 +1,19 @@
+---
+csp: bugreportmgr
+title: Error Description
+type: parm
+order: 19
+mx: "6.3"
+apilevel: "23"
+parm:
+  presentif: DialogAction parameter is set to "True"
+  pivotal: No
+  name: AddTextBox
+  type: string
+---
+
+Used to prompt the person reporting the bug to provide a description of the issue being reported. 
+
+**Parm value input rules**: 
+
+* String from 1 - characters containing a description of the issue being reported

@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Bug Report Profile
+title: Bug Report Handling
 type: parm
 order: 10
 mx: "6.3"

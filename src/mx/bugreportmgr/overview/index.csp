@@ -11,13 +11,13 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 
 * Bug reporting Enable/Disable 
 * Report generation from Power Key menu Enable/Disable
-* Display user options for collecting additional information
-* Store reports in internal flash memory
+* Allow device user to provide additional information
+* Store reports in internal (public) flash memory
 * Store reports in removable flash memory 
-* Store reports in private area
+* Store reports in private area of flash memory
 * Send reports to a specified email address 
 * Upload reports to the Zebra Cloud
 * Capture audio with bug reports
-* Trigger bug reports silently using intents 
+* Trigger bug reports with an intent (or key-presses on MC40)
 
 Files – The CSP can store bug report files in primary external storage partition and external SD card. If StorageEnable is not set, CSP saves bug reports temporarily in apk private storage. It saves its settings in BugReportMgrPrefsFile shared preferences file. If dialog (questionnaire) layout is configured, it saves the layout in dialogLayout.ser file in apk private folder.

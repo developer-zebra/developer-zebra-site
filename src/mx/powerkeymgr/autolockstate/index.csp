@@ -1,6 +1,6 @@
 ---
 csp: powerkeymgr
-title: Automatic Screen Lock on Power Key State
+title: Automatic Screen Lock Enable/Disable
 type: parm
 order: 4
 mx: "4.3"
@@ -19,12 +19,12 @@ parm:
       name: Turn on
       mx: "4.3"
       osx: "4.3"
-      description: This value will cause a screen lock to always be required when the device screen is turned back on if the device screen was turned off using the Power Key.
+      description: Forces the screen to lock whenever the screen is turned off using the power key.
     - code: 2
       name: Turn off
       mx: "4.3"
       osx: "4.3"
-      description: This value will cause a screen lock to not be required when the device screen is turned back on unless the device screen was off for at least the Screen Lock Timeout, even if the device screen was turned off using the Power Key.
+      description: Prevents the screen from locking when turned off using the power key unless the Screen-lock Timeout Interval was exceeded.
 ---
 
-This parm allows you to select whether a screen lock will always be required when the device screen is turned back on if the device screen was turned off using the Power Key.
+This is the On/Off switch for the Android Automatic Screen Lock feature, which can be used to force activation of the screen lock whenever the screen is shut off using the power key. When turned off, the lock screen will not appear when turning the screen on after using the power key to turn it off unless the [Screen-lock Timeout Interval](../devadmin) was exceeded. 

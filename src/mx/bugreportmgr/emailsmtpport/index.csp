@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Sender SMTP Port
 type: parm
-order: 19
+order: 23
 mx: "6.3"
 apilevel: "23"
 parm:

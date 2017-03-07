@@ -22,30 +22,32 @@ parm:
       apilevel: "23"
     - code: 2
       name: AddErrorNameTextBox
-      description: Causes .
+      description: Displays a text box into which the user reporting the bug can enter a name for the error.
       mx: "6.3"
       apilevel: "23"
     - code: 3
       name: AddLabel
-      description: Causes .
+      description: Displays a text box into which the user reporting the bug can enter a label.
       mx: "6.3"
       apilevel: "23"
     - code: 4
       name: AddTextBox
-      description: Causes.
+      description: Displays a text box into which the user reporting the bug can enter additional description of the issue.
       mx: "6.3"
       apilevel: "23"
     - code: 6
       name: AddVoiceRecordButton
-      description: Causes.
+      description: Displays a button that the user can press to record a message to accompany the bug report.
       mx: "6.3"
       apilevel: "23"
     - code: 7
       name: LayoutEnd
-      description: Disables .
+      description: Displays a message that the questionnaire is finished.
       mx: "6.3"
       apilevel: "23"
  ---
+
+Displays a text box into which the user reporting the bug can enter
 
 Used to specify the stuff. 
 

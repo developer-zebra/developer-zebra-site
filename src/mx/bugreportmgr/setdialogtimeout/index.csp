@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Dialog Timeout Enable/Disable
 type: parm
-order: 40
+order: 11
 mx: "6.3"
 apilevel: "23"
 parm: 

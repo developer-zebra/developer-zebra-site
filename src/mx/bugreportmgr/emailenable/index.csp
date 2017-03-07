@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Email Enable/Disable
 type: parm
-order: 15
+order: 20
 mx: "6.3"
 apilevel: "23"
 parm: 

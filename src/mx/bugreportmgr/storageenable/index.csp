@@ -1,13 +1,14 @@
 ---
 csp: bugreportmgr
-title: Email Reports Enable/Disable
+title: Storage Enable/Disable
 type: parm
 order: 15
 mx: "6.3"
 apilevel: "23"
 parm: 
+  presentif: BugReportProfile parameter is set to "New"
   pivotal: No
-  name: EmailEnable
+  name: StorageEnable
   type: list
   list:
     - code: 0
@@ -17,15 +18,14 @@ parm:
       apilevel: "23"
     - code: 1
       name: False
-      description: Prevents Bug Report Manager from sending bug reports via email.
+      description: Prevents bug reports from storing bug reports in device memory.
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: True
-      description: Sets Bug Report Manager to send bug reports via email.
+      description: Enables bug reports to be stored in device memory.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to specify whether to send bug reports via email using the email sender account and recipient address spcecified in the relevant parameters below. 
-
+Used to specify whether to store bug reports in device flash memory. If enabled, bug reports will be stored in the location specified in the BugReportFilePath parameter.  

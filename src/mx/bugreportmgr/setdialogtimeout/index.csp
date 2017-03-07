@@ -1,13 +1,13 @@
 ---
 csp: bugreportmgr
-title: Email Reports Enable/Disable
+title: Dialog Timeout Enable/Disable
 type: parm
-order: 15
+order: 40
 mx: "6.3"
 apilevel: "23"
 parm: 
   pivotal: No
-  name: EmailEnable
+  name: SetDialogTimeout
   type: list
   list:
     - code: 0
@@ -17,15 +17,14 @@ parm:
       apilevel: "23"
     - code: 1
       name: False
-      description: Prevents Bug Report Manager from sending bug reports via email.
+      description: Causes the user-data collection dialog to be displayed indefinately until filled out or dismissed by the user.
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: True
-      description: Sets Bug Report Manager to send bug reports via email.
+      description: Causes the user-data collection dialog to be dismissed automatically if not filled out or dismissed by the user.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to specify whether to send bug reports via email using the email sender account and recipient address spcecified in the relevant parameters below. 
-
+Used to control whether the dialog for collecting supplemental bug report information will be dismissed automatically or displayed indefinately until filled out or dismissed by the user. If the timeout parameter is used, the dialog will be automatically dismissed when the interval specified in the Dialog Timeout parameter has passed (default = 60 seconds).   

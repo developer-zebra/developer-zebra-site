@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Dialog Action
 type: parm
-order: 5
+order: 10
 mx: "6.3"
 apilevel: "23"
 parm:
@@ -17,7 +17,7 @@ parm:
       apilevel: "23"
     - code: 1
       name: ClearDialog
-      description: Clears the thing .
+      description: Clears all fields of the dialog box.
       mx: "6.3"
       apilevel: "23"
     - code: 2
@@ -45,9 +45,7 @@ parm:
       description: Displays a message that the questionnaire is finished.
       mx: "6.3"
       apilevel: "23"
- ---
+---
 
-Displays a text box into which the user reporting the bug can enter
-
-Used to specify the stuff. 
+Displays a dialog box into which a user can enter information about an issue being reported. 
 

@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Bug Report Handling
 type: parm
-order: 10
+order: 5
 mx: "6.3"
 apilevel: "23"
 parm: 

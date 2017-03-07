@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Sender Email Password
 type: parm
-order: 21
+order: 22
 mx: "6.3"
 apilevel: "23"
 parm:

@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Panic Button Enable/Disable
 type: parm
-order: 19
+order: 15
 mx: "6.3"
 apilevel: "23"
 parm: 

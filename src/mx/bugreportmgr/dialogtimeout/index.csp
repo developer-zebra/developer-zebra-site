@@ -2,18 +2,18 @@
 csp: bugreportmgr
 title: Sender Email ID
 type: parm
-order: 16
+order: 21
 mx: "6.3"
 apilevel: "23"
 parm:
-  presentif: EmailEnable parameter is set to "True"
+  presentif: SetDialogTimeout parameter is set to "True"
   pivotal: No
-  name: EmailSendersID
+  name: DialogTimeout
   type: string
 ---
 
-Used to specify the user name of the email account from which to send bug reports. Must be the ID corresponding to the password specified in the EmailSendersPassword parameter. 
+Used to specify the timeout interval (in ms) for the supplemental information collection dialog, after which the dialog will be automatically dismissed and the report sent. Default is 60,000 ms (60 seconds), which is reset when the user touches the dialog. 
 
 **Parm value input rules**: 
 
-* String from 1 - characters containing a sender's email account ID   
+* String from 1 - characters containing the timeout interval (in ms)     

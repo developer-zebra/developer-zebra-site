@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Sender Email Host
 type: parm
-order: 22
+order: 23
 mx: "6.3"
 apilevel: "23"
 parm:

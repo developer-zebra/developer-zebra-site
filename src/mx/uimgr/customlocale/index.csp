@@ -24,7 +24,7 @@ Permits the selection of the device's Custom Locale. A locale is the combination
 
 When changing the Locale, it also might be desirable to change the Default Input Method to one that is suitable for entry of characters associated with the language of the selected Locale. Setting a particular Input Method as the Default Input Method does not prevent the device user from manually selecting a different Input Method, it merely determines which Input Method will come up automatically each time that parm is invoked. 
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String containing two lower-case letters corresponding to the language
 * Optionally may contain two upper-case letters designating a region code 

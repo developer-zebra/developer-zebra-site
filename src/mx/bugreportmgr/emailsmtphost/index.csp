@@ -16,4 +16,4 @@ Used to specify the host name of the email sender's account specified in the Ema
 
 **Parm value input rules**: 
 
-* String from 1 - characters containing a valid email address
+* String containing the host name for the email sender's account 

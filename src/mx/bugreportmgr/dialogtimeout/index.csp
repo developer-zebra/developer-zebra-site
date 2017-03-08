@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Set Dialog Timeout
 type: parm
-order: 12
+order: 51
 mx: "6.3"
 apilevel: "23"
 parm:
@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to specify the timeout interval (in ms) for the supplemental information collection dialog, after which the dialog will be automatically dismissed and the report sent. Default is 60,000 ms (60 seconds), which is reset when the user touches the dialog. 
+Used to specify the timeout interval (in ms) for the supplemental information collection dialog, after which the dialog will be automatically dismissed and the report sent. Default is 60,000 ms (60 seconds), which is reset whenever the user interacts with the dialog. 
 
 **Parm value input rules**: 
 
-* String from 1 - characters containing the timeout interval (in ms)     
+* String of at least 1 character containing the timeout interval (in ms) 

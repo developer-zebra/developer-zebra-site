@@ -1,8 +1,8 @@
 ---
 csp: bugreportmgr
-title: Dialog Timeout Enable/Disable
+title: Dialog Timeout Enable
 type: parm
-order: 11
+order: 50
 mx: "6.3"
 apilevel: "23"
 parm: 
@@ -11,20 +11,15 @@ parm:
   type: list
   list:
     - code: 0
-      name: Do nothing
+      name: None
       description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
       mx: "6.3"
       apilevel: "23"
     - code: 1
-      name: False
-      description: Causes the user-data collection dialog to be displayed indefinately until filled out or dismissed by the user.
-      mx: "6.3"
-      apilevel: "23"
-    - code: 2
       name: True
-      description: Causes the user-data collection dialog to be dismissed automatically if not filled out or dismissed by the user.
+      description: Enables the dialog to be dismissed automatically using a custom timeout interval.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to control whether the dialog for collecting supplemental bug report information will be dismissed automatically or displayed indefinately until filled out or dismissed by the user. If the timeout parameter is used, the dialog will be automatically dismissed when the interval specified in the Dialog Timeout parameter has passed (default = 60 seconds).   
+Controls whether the dialog for collecting user-generated bug report information will be dismissed automatically after 60 seconds of inactivity (the default value) or use an interval set using the DialogTimeout parameter. Dialogs dismissed as a result of user inactivity will result in a bug report with "no_user_entry" appended to the file name. 

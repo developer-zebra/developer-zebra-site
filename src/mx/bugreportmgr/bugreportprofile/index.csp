@@ -17,20 +17,14 @@ parm:
       apilevel: "23"
     - code: 1
       name: old
-      description: Sets Bug Report Manager to use default handling of bug reports.
+      description: Sets the device to use Android bug reporting functionality.
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: new
-      description: Sets Bug Report Manager to use custom handling of bug reports.
+      description: Sets the device to use Zebra Bug Report Manager for bug reporting and handling.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to configure the handling of bug reports on the device. Default handling includes the following parameters: 
-
-* **Storage -** internal flash memory, local path `/storage/sdcard0/BugReports/` 
-* **Email**
-
-
-
+This is the On/Off switch for Zebra Bug Reporting on the device. When enabled (option 2), Zebra Bug Reporting is used to generate, store and transport bug reports and to supplement reports with information provided by the device user, if desired. When disabled, the device uses Android bug reporting functionality.  

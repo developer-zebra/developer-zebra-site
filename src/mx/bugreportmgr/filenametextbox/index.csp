@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Error Name
 type: parm
-order: 17
+order: 41
 mx: "6.3"
 apilevel: "23"
 parm:
@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to provide a name for the issue being reported. 
+Allows the user to provide a name for the bug being reported. Text entered here by the user will be appended to the file name of the bug report. Any spaces entered here will be converted to underscore characters; other illegal characters are removed. 
 
 **Parm value input rules**: 
 
-* String from 1 - characters to provide the issue with a name
+* String of at least 1 character to provide the issue with a name

@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Sender Email ID
+title: Sender Email Address
 type: parm
 order: 21
 mx: "6.3"
@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to specify the user name of the email account from which to send bug reports. Must be the ID corresponding to the password specified in the EmailSendersPassword parameter. 
+Used to specify the email address of the email account from which to send bug reports. Must be the address corresponding to the password specified in the EmailSendersPassword parameter. **This would typically be a generic account specifically for the purpose of sending these reports** to simplify mass deployment, administration and maintenance tasks. 
 
 **Parm value input rules**: 
 
-* String from 1 - characters containing a sender's email account ID   
+* String containing the sender's email address

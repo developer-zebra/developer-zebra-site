@@ -2,7 +2,7 @@
 csp: bugreportmgr
 title: Dialog Action
 type: parm
-order: 10
+order: 40
 mx: "6.3"
 apilevel: "23"
 parm:
@@ -17,22 +17,22 @@ parm:
       apilevel: "23"
     - code: 1
       name: ClearDialog
-      description: Clears all fields of the dialog box.
+      description: Signals the beginning of a new dialog box layout. 
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: AddErrorNameTextBox
-      description: Displays a text box into which the user reporting the bug can enter a name for the error.
+      description: Adds a Text Box into which the device user can enter a bug name, which is appended to the bug report file name.
       mx: "6.3"
       apilevel: "23"
     - code: 3
       name: AddLabel
-      description: Displays a text box into which the user reporting the bug can enter a label.
+      description: Optional static text field used to describe the contents of a Text Box.
       mx: "6.3"
       apilevel: "23"
     - code: 4
       name: AddTextBox
-      description: Displays a text box into which the user reporting the bug can enter additional description of the issue.
+      description: Adds a Text Box into which the device user enters additional information about the bug being reported. 
       mx: "6.3"
       apilevel: "23"
     - code: 6
@@ -42,10 +42,14 @@ parm:
       apilevel: "23"
     - code: 7
       name: LayoutEnd
-      description: Displays a message that the questionnaire is finished.
+      description: Signals the end of a dialog box layout. 
       mx: "6.3"
       apilevel: "23"
 ---
 
-Displays a dialog box into which a user can enter information about an issue being reported. 
+Used to select the type(s) of field(s) to display in a Dialog, which is a "questionnaire" displayed to the user whenever a bug report is generated. Such Dialogs can be useful for gathering information about user activities that might have led to or caused the malfunction. The construction of a Dialog is cumulative; any number of fields can be added one at a time until the number and types of desired fields is reached. [See the Overview section](#overview) (above) for more information about the way these fields are used and displayed on the device. 
+
+**Note: Each new Dialog must begin with a ClearDialog Action and end with a LayoutEnd Action**.
+
+ 
 

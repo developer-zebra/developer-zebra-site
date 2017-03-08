@@ -18,14 +18,14 @@ parm:
       apilevel: "23"
     - code: 1
       name: False
-      description: Prevents bug reports from storing bug reports in device memory.
+      description: Prevents bug reports from being stored on the device.
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: True
-      description: Enables bug reports to be stored in device memory.
+      description: Enables bug reports to be stored on the device.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to specify whether to store bug reports in device flash memory. If enabled, bug reports will be stored in the location specified in the BugReportFilePath parameter.  
+Used to specify whether to store bug reports in the flash memory of a device. If enabled, bug reports will be stored in the location specified in the BugReportFilePath parameter. 

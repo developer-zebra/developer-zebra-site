@@ -5,7 +5,7 @@ type: text
 order: 0
 ---
 
-The Bug Report Manager (BugReportMgr) provides a framework for reporting the time and relevant technical data associated with perceived issues on Zebra mobile computers. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user using the Power Key menu. Reports can be stored in internal memory or a removable memory card, sent to an e-mail address or uploaded to the Zebra Cloud for further analysis. 
+The Bug Report Manager (BugReportMgr) provides a framework for reporting the time and relevant technical data associated with perceived issues on Zebra mobile computers. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user using the "Power Off" Menu. Reports can be stored in internal memory or a removable memory card, sent to an e-mail address or uploaded to the Zebra Cloud. 
 
 ### Main Functionality
 
@@ -19,3 +19,18 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 * Upload reports to the Zebra Cloud
 * Capture audio with bug reports
 * Trigger bug reports with an intent (or key-presses on MC40)
+
+### About the User Dialog
+
+Bug Report Manager permits administrators to create a custom Dialog to accompany each bug report. The Dialog is a "questionnaire" filled out by the user when the bug report is generated, and gathers information about user activities that might have led to or caused the malfunction being reported. 
+
+![img]()
+
+Used to select the type(s) of field(s) to display in 
+The construction of a Dialog is cumulative; fields are added one at a time until the number and types of desired fields is reached. [See the Overview section](#overview) (above) for more information about the way in which these fields are used and displayed on the device. 
+
+Used to add one or more text fields to describe the issue being reported. The Text Box allows an administrator to include "hint" text to help guide the user toward the desired input (i.e. "App being used"). Hint text populates the otherwise blank text field and disappears the moment the user begins typing. In the generated bug report, hint text becomes the label for data entered by the user in that field. 
+
+
+### Using Intents
+

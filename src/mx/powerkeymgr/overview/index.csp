@@ -5,7 +5,7 @@ type: text
 order: 0
 ---
 
-The Power Key Manager (PowerKeyMgr) controls the functions that will be displayed on the "Power Off" Menu, which appears after long-pressing the power key on the device. Depending on the device, such power-related functions can include power off, reset (reboot), Airplane Mode, Touch Panel and Safe Mode. All supported Power Off Menu functions are available to the device user by default. **Note: The PowerKeyMgr controls only those features supported on a given device**.
+The Power Key Manager (PowerKeyMgr) controls the functions that will be displayed on the "Power Off" Menu, which appears after long-pressing the power key on the device. Depending on the device, such power-related functions can include Power off, Restart, Airplane Mode, Touch Panel, Safe Mode and other choices. Some devices also support a bug reporting feature, which is controlled by the [Bug Report Manager](../bugreportmgr). **Note: The PowerKeyMgr controls only those features supported on a given device**. 
 
 Zebra Android devices support a Screen Lock Timeout (controlled by the [DevAdmin CSP](../devadmin)), which controls how long the device screen must remain off before a screen lock will appear when the display screen is turned back on. When the Power Key is used to turn the device off (as opposed letting the screen time-out) a screen lock can be required when the display screen is turned back on, even if the timeout was not reached. The PowerKeyMgr can enable or disable this functionality and control whether the device user can change this functionality using the Android Settings panel.
 

@@ -11,7 +11,6 @@ parm:
   list:
     - code: 0
       mx: "6.2"
-      osx: "6.2"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change; the previously selected SIM socket will be used.
     - code: 1

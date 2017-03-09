@@ -3,7 +3,7 @@ csp: cellularmgr
 title: Select SIM Socket 
 type: parm
 order: 5
-mx: "4.4"
+mx: "6.2"
 parm:
   pivotal: No
   name: SimSocketSelect

@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Sender SMTP Port
+title: Sender's SMTP Port
 type: parm
 order: 24
 mx: "6.3"

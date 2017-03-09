@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Allows the user to provide a name for the bug being reported. Text entered here by the user will be appended to the file name of the bug report. Any spaces entered here will be converted to underscore characters; other illegal characters are removed. 
+Allows the user to provide a name for the bug being reported. Text entered here is appended to the file name of the bug report (following the date and time). Spaces entered into this field are converted to underscore characters; other non-text characters are removed. 
 
 **Parm value input rules**: 
 

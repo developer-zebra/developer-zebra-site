@@ -27,5 +27,5 @@ parm:
       apilevel: "23"
 ---
 
-Used to specify whether to send bug reports via email using the email sender account and recipient address spcecified in the relevant parameters below. 
+Controls whether to send bug reports via email. If enabled, bug reports are sent using the email sender account and recipient address spcecified in the relevant parameters below. 
 

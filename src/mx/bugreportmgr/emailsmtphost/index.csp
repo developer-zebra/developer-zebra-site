@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Sender Email Host
+title: Sender's Email Host
 type: parm
 order: 23
 mx: "6.3"

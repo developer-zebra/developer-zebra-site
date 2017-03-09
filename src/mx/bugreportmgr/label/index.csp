@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to provide one or more static text fields for display in a Dialog as a means to describe to the device user what to enter in the field below it. For example, the Label above a text field intended to capture the activity that led to a crash might read "Briefly describe what you were doing immediately before the error occurred." 
+Used to provide one or more static text fields to display questions or instructions in a Dialog as a means to guide the device user as to what to enter in the field below it. For example, the Label above a text field intended to capture the activity that led to a crash might read "Briefly describe what you were doing immediately before the error occurred." 
 
 **Parm value input rules**: 
 

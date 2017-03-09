@@ -17,14 +17,14 @@ parm:
       apilevel: "23"
     - code: 1
       name: False
-      description: Prevents bug reports from being sent to the Zebra Cloud. 
+      description: Prevents bug reports from being uploaded to the Zebra Cloud. 
       mx: "6.3"
       apilevel: "23"
     - code: 2
       name: True
-      description: Causes bug reports to be sent to the Zebra Cloud.
+      description: Causes bug reports to be uploaded to the Zebra Cloud.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Used to determine whether bug reports will be sent to the Zebra Cloud. When this feature is enabled, data is stored temnporarily in a private area on the device until transport to the Zebra Cloud is compete. **At no time is locally stored data available to users or third-party apps**. Cloud transport is provided on Zebra devices by the Elemez B2M client.
+Controls whether to upload bug reports to the Zebra Cloud. When this feature is enabled, data is stored temnporarily in a private area on the device until transport to the Zebra Cloud is compete. **At no time is this pre-transport data available to users or third-party apps**. Cloud transport is provided on Zebra devices by the Elemez B2M client.

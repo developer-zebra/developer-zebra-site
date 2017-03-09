@@ -5,31 +5,53 @@ type: text
 order: 0
 ---
 
-The Bug Report Manager (BugReportMgr) provides a framework for reporting the time and relevant technical data associated with perceived issues on Zebra mobile computers. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user using the "Power Off" Menu. Reports can be stored in internal memory or a removable memory card, sent to an e-mail address or uploaded to the Zebra Cloud. 
+The Bug Report Manager (BugReportMgr) provides a framework for reporting the time, date and relevant technical data associated with perceived issues on Zebra mobile computers. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user through a button on the "Power Off" Menu. Reports can be stored in device flash (fixed or removable), sent to an e-mail address, uploaded to the Zebra Cloud or in any combination of the three. 
 
 ### Main Functionality
 
 * Bug reporting Enable/Disable 
-* Report generation from Power Key menu Enable/Disable
+* Report generation from Power Off Menu Enable/Disable
 * Allow device user to provide additional information
-* Store reports in internal (public) flash memory
+* Store reports in internal flash memory
 * Store reports in removable flash memory 
 * Store reports in private area of flash memory
 * Send reports to a specified email address 
 * Upload reports to the Zebra Cloud
-* Capture audio with bug reports
-* Trigger bug reports with an intent (or key-presses on MC40)
+* Capture audio and attach to bug reports
+* Trigger bug reports with an intent
+
+## About Bug Reports
+
+
+Standard Android Bug Report.txt
+
+bug_report_xxxdate_and_timexxx_no_user_entry.txt
+
+Screen capture.png
+
 
 ### About the User Dialog
 
 Bug Report Manager permits administrators to create a custom Dialog to accompany each bug report. The Dialog is a "questionnaire" filled out by the user when the bug report is generated, and gathers information about user activities that might have led to or caused the malfunction being reported. 
 
+
+Used to select the type(s) of field(s) to display in a Dialog, a "questionnaire" displayed to the user whenever a bug report is generated. Such Dialogs can be useful for gathering information about user activities that might have led to or caused the malfunction being reported. The construction of a Dialog is cumulative; any number of fields can be added one at a time until the all required questions are addressed. [See the Overview section](#overview) (above) for more information about the way these fields are used and displayed on the device. 
+
+**Note: Each new Dialog must begin with a ClearDialog Action and end with a LayoutEnd Action**.
+
 ![img]()
 
+
+#### Label
+Used to provide one or more static text fields to display questions or instructions in a Dialog as a means to guide the device user as to what to enter in the field below it. For example, the Label above a text field intended to capture the activity that led to a crash might read "Briefly describe what you were doing immediately before the error occurred." 
+
+#### Text Box
+Used to add one or more text fields to describe the issue being reported. The Text Box allows an administrator to include "hint" text to help guide the user toward the desired input (i.e. "App being used"). Hint text populates the otherwise blank text field and disappears the moment the user begins typing. In the generated bug report, hint text becomes the label for data entered by the user in that field. 
+
 Used to select the type(s) of field(s) to display in 
+
 The construction of a Dialog is cumulative; fields are added one at a time until the number and types of desired fields is reached. [See the Overview section](#overview) (above) for more information about the way in which these fields are used and displayed on the device. 
 
-Used to add one or more text fields to describe the issue being reported. The Text Box allows an administrator to include "hint" text to help guide the user toward the desired input (i.e. "App being used"). Hint text populates the otherwise blank text field and disappears the moment the user begins typing. In the generated bug report, hint text becomes the label for data entered by the user in that field. 
 
 
 ### Using Intents

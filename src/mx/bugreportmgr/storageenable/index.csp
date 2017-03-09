@@ -28,4 +28,4 @@ parm:
       apilevel: "23"
 ---
 
-Used to specify whether to store bug reports in the flash memory of a device. If enabled, bug reports will be stored in the location specified in the BugReportFilePath parameter. 
+Used to specify whether to store bug reports in the flash memory of a device. If enabled, bug reports are stored in the location specified in the BugReportFilePath parameter. 

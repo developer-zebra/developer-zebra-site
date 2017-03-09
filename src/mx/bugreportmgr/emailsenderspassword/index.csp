@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Sender Email Password
+title: Sender's Email Password
 type: parm
 order: 22
 mx: "6.3"

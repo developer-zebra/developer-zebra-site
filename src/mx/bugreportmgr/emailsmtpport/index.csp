@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Sender's SMTP Port
+title: Server's SMTP Port
 type: parm
 order: 24
 mx: "6.3"
@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to specify the SMTP port of the email sender's account specified in the EmailSendersID parameter. 
+Used to specify the SMTP port used by the sender's email server account specified in the EmailSendersID parameter. 
 
 **Parm value input rules**: 
 
-* String containing the port number for the email sender's account
+* String containing the port number for the sender's email server

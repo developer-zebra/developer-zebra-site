@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Dialog Timeout Enable
+title: Custom Dialog Timeout Enable
 type: parm
 order: 50
 mx: "6.3"
@@ -17,9 +17,9 @@ parm:
       apilevel: "23"
     - code: 1
       name: True
-      description: Enables the dialog to be dismissed automatically using a custom timeout interval.
+      description: Enables the Dialog timeout to be set to a custom value.
       mx: "6.3"
       apilevel: "23"
 ---
 
-Controls whether the dialog for collecting user-generated bug report information will be dismissed automatically after 60 seconds of inactivity (the default value) or use an interval set using the DialogTimeout parameter. Dialogs dismissed as a result of user inactivity will result in a bug report with "no_user_entry" appended to the file name. 
+Controls whether the Dialog for collecting user-generated bug report information will be dismissed automatically after 60 seconds of inactivity (the default value) or use a custom interval set using the DialogTimeout parameter. Dialogs dismissed as a result of user inactivity will result in a bug report with "no_user_entry" appended to the file name. 

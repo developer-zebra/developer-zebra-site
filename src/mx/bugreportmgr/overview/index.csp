@@ -5,7 +5,7 @@ type: text
 order: 0
 ---
 
-The Bug Report Manager (BugReportMgr) provides a framework for reporting the time, date, user input and relevant technical data associated with perceived issues on Zebra mobile computers, building on the standard Android bug reporting mechanism. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user through a button on the "Power Off" Menu. Enabling USB debugging on the device is not required, but adds the ability to generate bug reports from the Settings panel and to enable/disable this function from the Power Off Menu. Reports can be stored in device flash (fixed or removable) in numbers limited only by available memory. In addition to local storage, reports also can be sent to a designated e-mail address and/or uploaded to the Zebra Cloud. 
+The Bug Report Manager (BugReportMgr) provides a framework for reporting the time, date, user input and relevant technical data associated with perceived issues on Zebra mobile computers, building on the standard Android bug reporting mechanism. Bug reports can be triggered programmatically through an intent or manually by an administrator or device user through a button on the "Power Off" Menu without enabling USB debugging on the device. Reports can be stored in device flash (fixed or removable) in numbers limited only by available memory. In addition to local storage, reports also can be sent to a designated e-mail address and/or uploaded to the Zebra Cloud. 
 
 ### Main Functionality
 
@@ -38,7 +38,7 @@ _A Zebra bug report (called 'browser-crash') adds a user-generated input file to
 Among the value-adds of Bug Report Manager is the user Dialog, which can gather information from the person using the device on which a bug has manifested, often providing valuable insight to the root cause of the defect. This "questionnaire" appears when the bug report is generated, and should be designed to gather relevant information from the device user about activities that might have led to or caused the malfunction being reported. User-entered data is stored in a separate text file within the `bugreport.zip`. **The construction of a Dialog is cumulative; any number of user-entry fields (Text Boxes) and field Labels can be added until all desired questions are asked and all data-gathering needs are addressed**. 
 
 ![img](../../../images/mx/sample_user_dialog.png)
-_A sample user Dialog or "questionnaire" for gathering bug_
+_A sample user Dialog or "questionnaire" for the device user._
 <br>
 
 > **Note: Each new Dialog must <u>begin with a ClearDialog</u> Action and <u>end with a LayoutEnd</u> Action**.

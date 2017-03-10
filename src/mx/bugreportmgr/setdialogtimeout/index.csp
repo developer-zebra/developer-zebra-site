@@ -1,6 +1,6 @@
 ---
 csp: bugreportmgr
-title: Custom Dialog Timeout Enable
+title: Set Dialog Timeout
 type: parm
 order: 50
 mx: "6.3"

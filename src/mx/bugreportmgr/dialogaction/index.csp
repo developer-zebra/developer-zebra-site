@@ -11,8 +11,8 @@ parm:
   type: list
   list:
     - code: 0
-      name: None
-      description: This value (or the absence of this parm from the XML) will cause no change to the BugReportMgr settings on the device; any previously selected setting will be retained.
+      name: none
+      description: This value (or the absence of this parm from the XML) will cause no change to the Bug Report Manager settings on the device; any previously selected setting will be retained.
       mx: "6.3"
       apilevel: "23"
     - code: 1
@@ -22,22 +22,22 @@ parm:
       apilevel: "23"
     - code: 2
       name: AddErrorNameTextBox
-      description: Adds a Text Box into which the device user can enter a bug name, which is appended to the bug report file name.
+      description: Adds a Text Box for providing a bug name, which is appended to the file name of the bug report and becomes name of the file containing user-entered data within the report.
       mx: "6.3"
       apilevel: "23"
     - code: 3
       name: AddLabel
-      description: Optional static text field used to describe the contents of a Text Box.
+      description: Optional static text field used to ask a question or provide instructions for entering data into a Text Box.
       mx: "6.3"
       apilevel: "23"
     - code: 4
       name: AddTextBox
-      description: Adds a Text Box into which the device user enters additional information about the bug being reported. 
+      description: Adds a blank Text Box into which the device user enters information about the bug being reported. 
       mx: "6.3"
       apilevel: "23"
     - code: 6
       name: AddVoiceRecordButton
-      description: Displays a button that the user can press to record a message to accompany the bug report.
+      description: Displays a button for activating a voice capture function for creating a message to accompany the bug report.
       mx: "6.3"
       apilevel: "23"
     - code: 7
@@ -47,9 +47,8 @@ parm:
       apilevel: "23"
 ---
 
-Used to select the type(s) of field(s) to display in a Dialog, a "questionnaire" displayed to the user whenever a bug report is generated. Such Dialogs can be useful for gathering information about user activities that might have led to or caused the malfunction being reported. The construction of a Dialog is cumulative; any number of fields can be added one at a time until the all required questions are addressed. [See the Overview section](#overview) (above) for more information about the way these fields are used and displayed on the device. 
+Used to select the type(s) of field(s) to display in a user Dialog, the "questionnaire" displayed to the user whenever a bug report is generated. Such Dialogs can be useful for gathering information about user activities that might have led to or caused the malfunction being reported. **The construction of the Dialog is cumulative; any number of user-entry fields (Text Boxes) and field Labels can be added until all desired questions are asked and all data-gathering needs are addressed**. See the [Overview section](#overview) (above) for more information about the way these fields are used and displayed on the device. 
 
-**Note: Each new Dialog must begin with a ClearDialog Action and end with a LayoutEnd Action**.
+**Note: To ensure proper operation, each new Dialog must begin with a 'ClearDialog' Action and end with a 'LayoutEnd' Action**.
 
  
-

@@ -1,6 +1,6 @@
 ---
 title: Bug Report Manager
-description: The BugReportMgr controls reporting of the time and technical data surrounding perceived device issues.
+description: The BugReportMgr adds date, time, storage and transport options and custom data collection capabilities to the Android bug reporting mechanism.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

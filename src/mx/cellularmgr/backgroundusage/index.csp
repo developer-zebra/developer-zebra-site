@@ -24,7 +24,7 @@ parm:
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: Disables Background Data to be used on the device and prevents its state (active/inactive) from being controlled programmatically or by the device user.
+      description: Disables Background Data from being used on the device and prevents its state (active/inactive) from being controlled programmatically or by the device user.
 ---
 
 Used to control whether the device user has access to the Background Data option on the device. When Disabled, Background Data cannot be turned on or off programmatically or by the device user.

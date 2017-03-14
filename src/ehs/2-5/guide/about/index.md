@@ -1,7 +1,7 @@
 ---
-title: About Enteprise Home Screen
+title: About Enterprise Home Screen
 layout: guide.html
-product: Enteprise Home Screen
+product: Enterprise Home Screen
 productversion: '2.5'
 ---
 
@@ -41,35 +41,43 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
 
-<tr>
+<tr bgcolor="#ccffcc" >
 <td style="width: 150.35pt;" width="200">
 <p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
 </td>
-
 
 <td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
     Android 4.4 (KitKat)</font></b></p>
 </td>
-
 <td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
     Android 5.0/5.1 (Lollipop) </font></b></p>
 </td>
-
-
 <td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
     Android 6.0 (Marshmallow) </font></b></p>
 </td>
 </tr>
 
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">ET50/ET55</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
 
 <tr bgcolor="#ccffcc" >
 <td style="width: 150.35pt;"  width="250">
-<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
-
 <td style="width: 220px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
@@ -83,13 +91,42 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <tr >
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
-
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
 
+<tr bgcolor="#ccffcc" >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+
+<tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    *</font></b></p>
+</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
@@ -116,14 +153,26 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr >
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
-
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
-
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
@@ -136,12 +185,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
@@ -149,57 +196,18 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 
-<tr bgcolor="#ccffcc" >
-
 <tr >
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75x</font></p>
 </td>
-
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
-</td>
-
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
-</td>
-
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -207,12 +215,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
@@ -224,7 +230,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     &nbsp;</font></b></p>
@@ -237,20 +242,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">ET50/ET55</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-</tr>
 </tbody>
 </table>
 
@@ -258,10 +249,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 #### EHS 2.5 Now Supports:
 
-* **[TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers** running Android Marshmallow 6.0.1 (see [Android Marshmallow Notes](#androidmarshmallownotes))
-* **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
-* **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android Notes](#androidlollipopandmarshmallownotes))
-* **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android Notes](#androidlollipopandmarshmallownotes)) 
+* **[TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers** running Android Marshmallow 6.0.1 (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
+* **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
+* **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes))
+* **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes)) 
+* **The [MC67]() Mobile Computer Series** running Android 4.4 KitKat (see [Android 4.4 Notes](#androidkitkatnotes)) 
 
 #### EHS 2.5 No Longer Supports:
 * **Devices with Android 4.1.2 Jelly Bean**
@@ -294,6 +286,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
+-----
+
 #### Android Marshmallow Notes
 **_Apply to devices running Android 6.x Marshmallow only_**:
 
@@ -302,6 +296,13 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
 
 * **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
+
+-----
+
+#### Android KitKat Notes 
+**_Applies to devices running Android 4.4+ KitKat only_**:
+
+* **When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
 
 ------
 

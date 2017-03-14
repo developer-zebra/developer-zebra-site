@@ -139,7 +139,7 @@ automenu:
         - title: KeyState
           url: re2x/keystate
         - title: MediaPlayer
-          url: re2x/MediaPlayer
+          url: re2x/mediaPlayer
         - title: Memory
           url: re2x/memory
         - title: MinimizeButton

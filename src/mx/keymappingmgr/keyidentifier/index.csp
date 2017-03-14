@@ -206,6 +206,10 @@ parm:
       mx: "5.2"
       name: Right External Trigger
       description: The trigger button on the right side of an external triggering device
+    - code: NAV_PAD
+      mx: "6.2"
+      name: Touch NAV_PAD
+      description: The touch-sensitive navigation pad on a device
 ---
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, specify the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.
 

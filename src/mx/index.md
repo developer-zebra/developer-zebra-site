@@ -3,14 +3,16 @@ title: MX Framework
 publish: false
 menu:
   items:
-    - title: Architecture
+    - title: About
       url: /mx/overview
     - title: Compatibility
       url: /mx/compatibility
     - title: Choosing an MX Version
       url: /mx/choosing-a-version
-    - title: Checking Device MX Version
+    - title: Show Device's MX Version
       url: /mx/mx-version-on-device
+    - icon: fa fa-search
+      url: /mx/search
 layout: csp-mx-support.html
 mxversions:
   - text: MX 4.2
@@ -41,7 +43,7 @@ csps:
     url: /mx/appmgr
     csp: appmgr
   - type: section
-    title: Audio Vol Manager
+    title: Audio Vol UI Manager
     url: /mx/audiovoluimgr
     csp: audiovoluimgr
   - type: section
@@ -101,7 +103,7 @@ csps:
     url: /mx/encryptmgr
     csp: encryptmgr
   - type: section
-    title: Enterprise Keyboard Manager
+    title: Enterprise Keyboard
     url: /mx/enterprisekeyboardmgr
     csp: enterprisekeyboardmgr
   - type: section
@@ -121,7 +123,7 @@ csps:
     url: /mx/hostsmgr
     csp: hostsmgr
   - type: section
-    title: Intent Manager
+    title: Intent
     url: /mx/intent
     csp: intent
   - type: section
@@ -189,7 +191,7 @@ csps:
     url: /mx/usbmgr
     csp: usbmgr
   - type: section
-    title: Wi-Fi Manager
+    title: Wi-Fi
     url: /mx/wifi
     csp: wifi
   - type: section

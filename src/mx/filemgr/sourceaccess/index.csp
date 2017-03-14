@@ -2,7 +2,7 @@
 csp: filemgr
 title: Source Access
 type: parm
-order: 6
+order: 5
 mx: "4.3"
 parm:
   pivotal: Yes
@@ -12,15 +12,15 @@ parm:
     - code: 1
       name: File on remote server
       mx: "4.3"
-      description: The source file will be located on a remote server.
+      description: Indicates the source file is on a remote server.
     - code: 2
       name: File on device file system
       mx: "4.3"
-      description: The source file will be located on the device.
+      description: Indicates the source file is on the device.
     - code: 3
       name: File embedded in XML
       mx: "4.3"
-      description: The source file will be embedded in the xml.
+      description: Indicates the source file is embedded in XML.
 ---
 
-Specify where the source of te transfer\copy will be located.
+Used to specify the location of the source file to be copied or transferred.

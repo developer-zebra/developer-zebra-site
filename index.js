@@ -89,6 +89,6 @@ var index_generate = function(folder){
 
 }
 
-      index_generate("enterprise-browser/1-4");
+      index_generate("emdk-for-xamarin/2-2");
       
 

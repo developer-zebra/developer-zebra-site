@@ -5,10 +5,15 @@ type: parm
 order: 6
 mx: "4.3"
 parm:
-  presentif: File Action is transfer\copy and source is remote server
+  presentif: File Action is Transfer/Copy and source is remote server
   pivotal: No
   name: SourceURI
   type: string
 ---
 
-Enter a URI of the location of the file on the server.
+Used to specify the URI of the location of the file on the server.
+
+
+**Parm value input rules**:
+
+* String containing the URI of the source file

@@ -1,5 +1,5 @@
 ---
-csp: sdcardmgr
+csp: settingsmgr
 title: Examples
 type: text
 order: 99
@@ -48,7 +48,7 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
-### Query if Changing Wifi Configuration is Allowed
+### Query if Changing Wi-Fi Configuration is Allowed
 
 #### Input 
 

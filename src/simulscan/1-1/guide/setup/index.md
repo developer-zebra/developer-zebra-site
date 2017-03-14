@@ -33,6 +33,11 @@ For use cases in which generic or pre-built templates are unsuitable, custom Tem
 ### Access Through DataWedge
 SimulScan includes a number of generic Templates for common scanning scenarios that DataWedge can use when SimulScan is selected as the Input Plug-in. For more advanced use-cases, custom Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates) and imported and modified with Template Builder. 
 
+<img style="height:350px" src="default_templates.png"/>
+_Templates included with SimulScan_
+<br>
+
+<!--
 **Templates included with DataWedge** and the [SimulScan Demo App](../demo):
 
 * **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check. 
@@ -60,6 +65,7 @@ SimulScan includes a number of generic Templates for common scanning scenarios t
 * **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text. 
 
 _The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_. 
+--> 
 
 -----
 

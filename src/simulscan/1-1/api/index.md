@@ -10,7 +10,7 @@ When acquiring data with a custom enterprise app, SimulScan features can be acce
 ### Use with DataWedge
 DataWedge can acquire barcodes and other textual data using the device camera or 2D scanner; all API calls are handled internally. DataWedge can apply powerful processing capabilities to manipulate acquired data according to an infinite set of custom rules, and then pass that data in various ways to virtually any app. **DataWedge is designed to cover most scanning use cases**, and [setting up SimulScan with DataWedge](../guide/setup) takes just a few minutes. 
 
-**Zebra recommends testing the DataWedge method first**, to determine if it meets the requirement.
+**Zebra recommends testing the DataWedge method first**, and to begin an API integration project only if DataWedge does not meet application requirements.
 
 ### Use with SimulScan APIs 
 **For applications that already interface with device hardware and/or are performing image capture or other complex acquisitions**, it can sometimes be necessary or preferable to access SimulScan through its APIs. And while DataWedge also can capture images, it delivers images with an intent, which requires custom program code to process. 

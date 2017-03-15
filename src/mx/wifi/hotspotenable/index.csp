@@ -1,0 +1,26 @@
+---
+csp: wifi
+title: Hotspot Enable/Disable 
+type: parm
+order: 4
+mx: "6.3"
+parm:
+  pivotal: No
+  name: Hotspot
+  type: list
+  list:
+    - code: 2
+      mx: "6.3"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
+    - code: 1
+      mx: "6.3"
+      name: Enable
+      description: Enables the device to be used as a Wi-Fi hotspot. 
+    - code: 0
+      mx: "6.3"
+      name: Disable
+      description: Disables use of the device as a Wi-Fi hotspot. 
+---
+Controls whether the device will be used as a Wi-Fi hotspot, enabling nearby devices to connect to the internet by sharing the device's network or cellular connection. 
+

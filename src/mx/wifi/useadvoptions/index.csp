@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Use Advanced Options 
+title: Advanced Options Enable/Disable 
 type: parm
 order: 12
 mx: "4.2"
@@ -12,11 +12,11 @@ parm:
     - code: true
       mx: "4.2"
       name: True
-      description:
+      description: Enables the use of Advanced Wi-Fi Options on the device. 
     - code: false
       mx: "4.2"
       name: False
-      description: 
+      description: Disables the use of Advanced Wi-Fi Options on the device. 
 ---
 
-Used to enable/disable the use of Advanced Wi-Fi Options. **Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
+Controls Advanced Wi-Fi Options, which whould be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced options can result in undesirable device behavior.

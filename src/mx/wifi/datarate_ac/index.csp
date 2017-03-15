@@ -1,0 +1,93 @@
+---
+csp: wifi
+title: Data Rates for ac Mode 
+type: parm
+order: 29
+mx: "6.3"
+parm:
+  pivotal: No
+  name: datarate_11ac
+  type: list
+  list:
+    - code: 28
+      mx: "6.3"
+      name: MCS0_1
+      description: Sets the MCS0_1 data rate. 
+    - code: 29
+      mx: "6.3"
+      name: MCS1_1
+      description: Sets the MCS1_1 data rate. 
+    - code: 30
+      mx: "6.3"
+      name: MCS2_1
+      description: Sets the MCS2_1 data rate.
+    - code: 31
+      mx: "6.3"
+      name: MCS3_1
+      description: Sets the MCS3_1 data rate.
+    - code: 32
+      mx: "6.3"
+      name: MCS4_1
+      description: Sets the MCS4_1 data rate.
+    - code: 33
+      mx: "6.3"
+      name: MCS5_1
+      description: Sets the MCS5_1 data rate.
+    - code: 34
+      mx: "6.3"
+      name: MCS6_1
+      description: Sets the MCS6_1 data rate.
+    - code: 35
+      mx: "6.3"
+      name: MCS7_1
+      description: Sets the MCS7_1 data rate.
+    - code: 36
+      mx: "6.3"
+      name: MCS8_1
+      description: Sets the MCS8_1 data rate.
+    - code: 37
+      mx: "6.3"
+      name: MCS9_1
+      description: Sets the MCS9_1 data rate.
+    - code: 38
+      mx: "6.3"
+      name: MCS0_2
+      description: Sets the MCS0_2 data rate.
+    - code: 39
+      mx: "6.3"
+      name: MCS1_2
+      description: Sets the MCS1_2 data rate.
+    - code: 40
+      mx: "6.3"
+      name: MCS2_2
+      description: Sets the MCS2_2 data rate.
+    - code: 41
+      mx: "6.3"
+      name: MCS3_2
+      description: Sets the MCS3_2 data rate.
+    - code: 42
+      mx: "6.3"
+      name: MCS4_2
+      description: Sets the MCS4_2 data rate.
+    - code: 43
+      mx: "6.3"
+      name: MCS5_2
+      description: Sets the MCS5_2 data rate.
+    - code: 44
+      mx: "6.3"
+      name: MCS6_2
+      description: Sets the MCS6_2 data rate.
+    - code: 45
+      mx: "6.3"
+      name: MCS7_2
+      description: Sets the MCS7_2 data rate.
+    - code: 46
+      mx: "6.3"
+      name: MCS8_2
+      description: Sets the MCS8_2 data rate.
+    - code: 47
+      mx: "6.3"
+      name: MCS9_2
+      description: Sets the MCS9_2 data rate.
+---
+Controls the Wi-Fi operating mode to be used by Omni Trail power efficiency protocols. 

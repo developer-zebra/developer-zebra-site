@@ -2,45 +2,50 @@
 csp: wifi
 title: Overview
 type: text
-order: 1
+order: 0
 ---
 
-Wi-Fi Manager administers the Wi-Fi settings and network profiles for a device, including the settings required for connecting to networks. 
+Wi-Fi Manager (Wi-Fi) administers the Wi-Fi settings and network profiles for a device, including the settings required for connecting to networks. 
 
-**Note**: Documention for the Wi-Fi configuration service provider uses the terms "enable" and "disable" to mean "turn on" and "turn off" a feature; to make its state active or inactive. Those terms in some other CSPs refer to the feature's "Usage" setting, which can prevent access to the feature entirely. 
+**Note**: Documention for the Wi-Fi configuration service provider uses the terms "enable" and "disable" to "turn on" and "turn off" a feature and make its state "active" or "inactive." Such terms in other CSPs refer to the feature's "Usage" setting, which can prevent user access to the feature entirely. 
 
 >**Note**: Enabling the Password Protect Encryption feature **prevents the Google Mobile Service (GMS) backup from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems. 
 
 ### Main Functionality
 
-* Enable/Disable the following:
-	* Wi-Fi communication on the device
+* **Enable/Disable**:
+	* All Wi-Fi communication on the device
 	* An existing Wi-Fi network
-	* Hyper Fast Secure Roam (HF SR)
+	* Advanced Logging
+	* AggregatedFT
+	* Auto RF Band selection
 	* Cisco Centralized Key Management (CCKM)
+	* Coverage Hole Detection
 	* Fast Transition (FT)
 	* Fast Transition Resource Request (FTRIC)
+	* FIPS Compliance
+	* FTOverTheDS
+	* Fusion Advanced Logging
+	* Hotspot mode
+	* Hyper Fast Secure Roam (HF SR)
+	* Management Frame Protection Mode (802.?11w)
 	* OKC (Opportunistic Key Caching)
+	* Omni Trail Power Efficiency Protocols and Options
 	* PMKID Caching
 	* PreAuth
-	* Advanced Logging
-	* FIPS Compliance
-	* Restricted WLAN Settings UI
 	* Radio Resource Measurement (802.?11K)
-	* Management Frame Protection Mode (802.?11w)
-	* FTOverTheDS
-	* AggregatedFT
+	* Restricted WLAN Settings UI
 	* ScanAssist
-	* Coverage Hole Detection
+	* Setting the Clock from an Access Point (AP)
 	* Sub-Net Roam
 	* WANCountry
 * Set Wi-Fi to Sleep: Never, Always or Always When Plugged In
 * Use/Do Not Use Network Notifications
 * Select Country automatically or manually 
 * Set the RF Band
-* Enable Auto RF Band selection
-* Enable Fusion Advanced Logging
-* Enable device to set Clock from an Access Point (AP)
+* Set Hotspot:
+	* AP Channel, Band, SSID and Options
+	* Security Modes, Passphrase and Passphrase Encryption
 * Set Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
 * Set the band preference
 * Connect to/Disconnect from a Wi-Fi network

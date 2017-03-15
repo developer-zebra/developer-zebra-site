@@ -1,0 +1,29 @@
+---
+csp: wifi
+title: Omni Trail Data Rate Standard 
+type: parm
+order: 29
+mx: "6.3"
+parm:
+  pivotal: No
+  name: OmniTrailDataRateStandard
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: abg
+      description: Sets Wi-Fi for 802.11abg mode. 
+    - code: 1
+      mx: "6.3"
+      name: 11n
+      description: Sets Wi-Fi for 802.11n mode. 
+    - code: 2
+      mx: "6.3"
+      name: Enable
+      description: Sets Wi-Fi for 802.11ac mode.
+    - code: 3
+      mx: "6.3"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
+---
+Controls the Wi-Fi operating mode to be used by Omni Trail power efficiency protocols. 

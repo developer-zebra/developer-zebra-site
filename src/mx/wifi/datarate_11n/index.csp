@@ -1,0 +1,79 @@
+---
+csp: wifi
+title: Data Rates for 11n Mode 
+type: parm
+order: 29
+mx: "6.3"
+parm:
+  pivotal: No
+  name: datarate_11n
+  type: list
+  list:
+    - code: 12
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS0 data rate. 
+    - code: 13
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS1 data rate. 
+    - code: 14
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS2 data rate.
+    - code: 15
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS3 data rate.
+    - code: 16
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS4 data rate.
+    - code: 17
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS5 data rate.
+    - code: 18
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS6 data rate.
+    - code: 19
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS7 data rate.
+    - code: 20
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS8 data rate.
+    - code: 21
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS9 data rate.
+    - code: 22
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS10 data rate.
+    - code: 23
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS11 data rate.
+    - code: 24
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS12 data rate.
+    - code: 25
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS13 data rate.
+    - code: 26
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS14 data rate.
+    - code: 27
+      mx: "6.3"
+      name: MCS1
+      description: Sets the MCS15 data rate.
+
+---
+Set the data rate used by Omni Trail power efficiency protocols. 
+

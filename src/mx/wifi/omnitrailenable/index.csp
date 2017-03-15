@@ -1,0 +1,26 @@
+---
+csp: wifi
+title: Omni Trail Enable/Disable 
+type: parm
+order: 29
+mx: "6.3"
+parm:
+  pivotal: No
+  name: OmniTrailEnable
+  type: list
+  list:
+    - code: 2
+      mx: "6.3"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
+    - code: 1
+      mx: "6.3"
+      name: Enable
+      description: Enables Omni Trail power efficiency protocols and options. 
+    - code: 0
+      mx: "6.3"
+      name: Disable
+      description: Disables Omni Trail power efficiency protocols and options. 
+---
+Controls whether the Omni Trail power efficiency protocols and options will be used on the device. Omni Trail refers to a set of third-party battery usage protocols. 
+

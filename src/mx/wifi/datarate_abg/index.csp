@@ -1,0 +1,61 @@
+---
+csp: wifi
+title: Data Rates for abg Mode 
+type: parm
+order: 29
+mx: "6.3"
+parm:
+  pivotal: No
+  name: datarate_abg
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: 1
+      description: Sets the data rate at 1. 
+    - code: 1
+      mx: "6.3"
+      name: 2
+      description: Sets the data rate at 2. 
+    - code: 2
+      mx: "6.3"
+      name: 5.5
+      description: Sets the data rate at 5.5.
+    - code: 3
+      mx: "6.3"
+      name: 6
+      description: Sets the data rate at 6.    
+    - code: 4
+      mx: "6.3"
+      name: 9
+      description: Sets the data rate at 9.
+    - code: 5
+      mx: "6.3"
+      name: 11
+      description: Sets the data rate at 11.
+    - code: 6
+      mx: "6.3"
+      name: 12
+      description: Sets the data rate at 12.    
+    - code: 7
+      mx: "6.3"
+      name: 18
+      description: Sets the data rate at 18.
+    - code: 8
+      mx: "6.3"
+      name: 24
+      description: Sets the data rate at 24.    
+    - code: 9
+      mx: "6.3"
+      name: 36
+      description: Sets the data rate at 36.
+    - code: 10
+      mx: "6.3"
+      name: 48
+      description: Sets the data rate at 48.
+    - code: 11
+      mx: "6.3"
+      name: 54
+      description: Sets the data rate at 54.
+---
+Controls the Wi-Fi operating mode to be used by Omni Trail power efficiency protocols. 

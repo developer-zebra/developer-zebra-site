@@ -2,7 +2,7 @@
 csp: wifi
 title: Sleep Policy 
 type: parm
-order: 4
+order: 3
 mx: "4.2"
 parm:
   pivotal: No

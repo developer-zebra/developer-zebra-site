@@ -1,11 +1,12 @@
 ---
 csp: wifi
-title: Omni Trail Enable/Disable 
+title: OmniTrail Enable/Disable 
 type: parm
-order: 29
+order: 0
 mx: "6.3"
 parm:
-  pivotal: No
+  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked
+  pivotal: No  
   name: OmniTrailEnable
   type: list
   list:
@@ -16,11 +17,11 @@ parm:
     - code: 1
       mx: "6.3"
       name: Enable
-      description: Enables Omni Trail power efficiency protocols and options. 
+      description: Enables OmniTrail power efficiency protocols and options. 
     - code: 0
       mx: "6.3"
       name: Disable
-      description: Disables Omni Trail power efficiency protocols and options. 
+      description: Disables OmniTrail power efficiency protocols and options. 
 ---
-Controls whether the Omni Trail power efficiency protocols and options will be used on the device. Omni Trail refers to a set of third-party battery usage protocols. 
 
+Controls whether the OmniTrail power efficiency protocols and options will be used on the device. OmniTrail refers to a set of third-party battery usage protocols. 

@@ -1,11 +1,12 @@
 ---
 csp: wifi
-title: Omni Trail Data Rate Standard 
+title: OmniTrail Data Rate Standard 
 type: parm
-order: 29
+order: 90
 mx: "6.3"
 parm:
   pivotal: No
+  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked
   name: OmniTrailDataRateStandard
   type: list
   list:
@@ -26,4 +27,5 @@ parm:
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
 ---
-Controls the Wi-Fi operating mode to be used by Omni Trail power efficiency protocols. 
+
+Controls the Wi-Fi operating mode to be used by OmniTrail power efficiency protocols. 

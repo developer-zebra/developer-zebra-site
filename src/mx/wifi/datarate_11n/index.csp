@@ -2,10 +2,11 @@
 csp: wifi
 title: Data Rates for 11n Mode 
 type: parm
-order: 29
+order: 93
 mx: "6.3"
 parm:
   pivotal: No
+  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked and "OmniTrail DataRate Options" is set to "11n"
   name: datarate_11n
   type: list
   list:
@@ -73,7 +74,7 @@ parm:
       mx: "6.3"
       name: MCS1
       description: Sets the MCS15 data rate.
-
 ---
-Set the data rate used by Omni Trail power efficiency protocols. 
+
+Set the data rate used by OmniTrail power efficiency protocols. 
 

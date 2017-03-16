@@ -5,6 +5,7 @@ type: parm
 order: 29
 mx: "6.3"
 parm:
+  presentif: The "Specify Hotspot Options" checkbox is checked and the selected band is 2.4GHz 
   pivotal: No
   name: Hotspot24GHz
   type: list
@@ -55,3 +56,4 @@ parm:
       description: Selects channel 11 on the 2.4GHz band.
 ---
 Used to set the Wi-Fi communication channel to be used by devices connecting to the device to its Wi-Fi hotspot on the 2.4GHz band. 
+

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: 5.0GHz Channels 
+title: Set 5GHz Device Channels 
 type: parm
 order: 9
 mx: "4.2"
@@ -11,7 +11,9 @@ parm:
   type: string
 ---
 
-Used to enable only the specified channels in the 5.0GHz band. While channels used in this band are generally determined automatically through negotiation with the Wi-Fi infrastructure, channels or sets of channels also can be specified manually to avoid interference with other devices or to dedicate certain channels for specific purposes. **Warning: Not all channels are available in all countries**. See the [List of WLAN Channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels) for more information.
+Used to designate channels in the 5GHz band for use by the device. While channels used in this band are generally determined automatically through negotiation with the Wi-Fi infrastructure, channels or sets of channels also can be specified manually to avoid interference with other devices or to dedicate certain channels for specific purposes. **Warning: Not all channels are available in all countries**. See the [List of WLAN Channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels) for more information.
+
+**
 
 **Parm value input rules**: 
 

@@ -2,10 +2,11 @@
 csp: wifi
 title: Hotspot Enable/Disable 
 type: parm
-order: 4
+order: 70
 mx: "6.3"
 parm:
   pivotal: No
+  presentif: The "Specify Hotspot Options" checkbox is checked
   name: Hotspot
   type: list
   list:

@@ -1,11 +1,12 @@
 ---
 csp: wifi
-title: Data Rates for ac Mode 
+title: Data Rates for 802.11ac Mode 
 type: parm
-order: 29
+order: 94
 mx: "6.3"
 parm:
   pivotal: No
+  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked and "OmniTrail DataRate Options" is set to "11ac"
   name: datarate_11ac
   type: list
   list:
@@ -90,4 +91,5 @@ parm:
       name: MCS9_2
       description: Sets the MCS9_2 data rate.
 ---
-Controls the Wi-Fi operating mode to be used by Omni Trail power efficiency protocols. 
+
+Controls the Wi-Fi operating mode to be used by OmniTrail power efficiency protocols. 

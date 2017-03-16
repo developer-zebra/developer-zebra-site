@@ -1,11 +1,12 @@
 ---
 csp: wifi
-title: Data Rates for abg Mode 
+title: OmniTrail "abg" Data Rates 
 type: parm
-order: 29
+order: 92
 mx: "6.3"
 parm:
   pivotal: No
+  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked and "OmniTrail DataRate Options" is set to "abg"
   name: datarate_abg
   type: list
   list:
@@ -58,4 +59,5 @@ parm:
       name: 54
       description: Sets the data rate at 54.
 ---
-Controls the Wi-Fi operating mode to be used by Omni Trail power efficiency protocols. 
+
+Controls the Wi-Fi operating mode to be used by OmniTrail power efficiency protocols. 

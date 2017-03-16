@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: Hotspot Passphrase Encrypted
+type: parm
+order: 73
+mx: "6.3"
+parm:
+  presentif: The "Specify Hotspot Options" and "Protect Hotspot Passphrase" checkboxes are checked 
+  pivotal: No
+  name: HotspotSSID
+  type: string
+---
+
+Used to provide a password for accessing the hotspot, which will be stored in encrypted form. 
+
+**Parm value input rules**: 
+
+* String from 1-32 characters containing the hotspot password

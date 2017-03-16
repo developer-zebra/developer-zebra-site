@@ -10,22 +10,76 @@ parm:
   name: OmniTrailSubtype
   type: list
   list:
-    - code: 2
+    - code: 16
       mx: "6.3"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
-    - code: 1
-      mx: "6.3"
-      name: Enable
-      description: Causes passwords stored on the device to be encrypted. 
     - code: 0
       mx: "6.3"
-      name: Disable
-      description: Disables encryption for passwords stored on the device. 
+      name: 0
+      description: Sets the OmniTrail Subtype to 0. 
+    - code: 1
+      mx: "6.3"
+      name: 1
+      description: Sets the OmniTrail Subtype to 1. 
+    - code: 2
+      mx: "6.3"
+      name: 1
+      description: Sets the OmniTrail Subtype to 2. 
+    - code: 3
+      mx: "6.3"
+      name: 3
+      description: Sets the OmniTrail Subtype to 3. 
+    - code: 4
+      mx: "6.3"
+      name: 4
+      description: Sets the OmniTrail Subtype to 4. 
+    - code: 5
+      mx: "6.3"
+      name: 5
+      description: Sets the OmniTrail Subtype to 5. 
+    - code: 6
+      mx: "6.3"
+      name: 6
+      description: Sets the OmniTrail Subtype to 6. 
+    - code: 7
+      mx: "6.3"
+      name: 7
+      description: Sets the OmniTrail Subtype to 7. 
+    - code: 8
+      mx: "6.3"
+      name: 8
+      description: Sets the OmniTrail Subtype to 8. 
+    - code: 9
+      mx: "6.3"
+      name: 9
+      description: Sets the OmniTrail Subtype to 9. 
+    - code: 10
+      mx: "6.3"
+      name: 10
+      description: Sets the OmniTrail Subtype to 10. 
+    - code: 11
+      mx: "6.3"
+      name: 11
+      description: Sets the OmniTrail Subtype to 11. 
+    - code: 12
+      mx: "6.3"
+      name: 12
+      description: Sets the OmniTrail Subtype to 12. 
+    - code: 13
+      mx: "6.3"
+      name: 13
+      description: Sets the OmniTrail Subtype to 13. 
+    - code: 14
+      mx: "6.3"
+      name: 14
+      description: Sets the OmniTrail Subtype to 14. 
+    - code: 15
+      mx: "6.3"
+      name: 15
+      description: Sets the OmniTrail Subtype to 15. 
 ---
 
-Controls whether the Wi-Fi Password stored on the device is encrypted, thereby preventing access to the clear-text Password on the device by any application or malicious exploit. 
+Used to select the OmniTrail Subtype, which DOES THIS AND THAT. 
 
->**Note**: Enabling this feature **prevents the Google Mobile Service (GMS) backup from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems.
-
-The Password combines with an Identity to form an authentication credential for gaining access to a network. Authentication is required only when "Enterprise" is the selected Security Mode. All authentication types require a Password except EAP-TLS, which uses a client certificate. 
+ 

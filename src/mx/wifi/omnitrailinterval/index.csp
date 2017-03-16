@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: OmniTrail Interval
+type: parm
+order: 71
+mx: "6.3"
+parm:
+  presentif: The "Specify Hotspot Options" checkbox is checked 
+  pivotal: No
+  name: OmniTrailInterval
+  type: integer
+---
+
+Used to specify a timeout interval from 200-5000 ms, after which SOMETHING WILL HAPPEN. 
+
+**Parm value input rules**: 
+
+* Integer from 200 - 5000 containing the desired timeout interval for WHAT????

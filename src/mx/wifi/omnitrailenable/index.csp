@@ -17,11 +17,12 @@ parm:
     - code: 1
       mx: "6.3"
       name: Enable
-      description: Enables OmniTrail power efficiency protocols and options. 
+      description: Enables OmniTrail protocols and options. 
     - code: 0
       mx: "6.3"
       name: Disable
-      description: Disables OmniTrail power efficiency protocols and options. 
+      description: Disables OmniTrail protocols and options. 
 ---
 
-Controls whether the OmniTrail power efficiency protocols and options will be used on the device. OmniTrail refers to a set of third-party battery usage protocols. 
+This is the On/Off switch for OmniTrail proximity detection protocols and options on the device. 
+

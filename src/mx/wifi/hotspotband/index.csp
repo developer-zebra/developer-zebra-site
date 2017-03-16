@@ -2,7 +2,7 @@
 csp: wifi
 title: Hotspot RF Band 
 type: parm
-order: 72
+order: 74
 mx: "6.3"
 parm:
   pivotal: No

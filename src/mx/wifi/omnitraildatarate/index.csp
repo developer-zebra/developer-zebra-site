@@ -24,5 +24,4 @@ parm:
       description: Disables OmniTrail power efficiency protocols and options. 
 ---
 
-Controls whether the OmniTrail power efficiency protocols and options will be used on the device. OmniTrail is a third-party BLAH BLAH
-
+Allows the data rate to be set. 

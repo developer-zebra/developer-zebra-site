@@ -23,5 +23,4 @@ parm:
       name: Disable
       description: Disables use of the device as a Wi-Fi hotspot. 
 ---
-Controls whether the device will be used as a Wi-Fi hotspot, enabling nearby devices to connect to the internet by sharing the device's network or cellular connection. 
-
+This is the On/Off switch for hotspot functionality on the device. When enabled, the device uses the settings configures with the hotspot parameters below to act as an access point for nearby devices to connect to the internet by sharing the device's network or cellular connection. 

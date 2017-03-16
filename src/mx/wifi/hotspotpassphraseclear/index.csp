@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: Hotspot Passphrase Clear
+type: parm
+order: 72
+mx: "6.3"
+parm:
+  presentif: The "Specify Hotspot Options" is checked and the "Protect Hotspot Passphras" checkbox is unchecked  
+  pivotal: No
+  name: HotspotSSID
+  type: string
+---
+
+Used to provide a password for accessing the hotspot, which will be stored as clear text. 
+
+**Parm value input rules**: 
+
+* String from 1-32 characters containing the hotspot password

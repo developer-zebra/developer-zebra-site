@@ -180,7 +180,7 @@ With a password:
 
 ### Band Selection
 
-#### Set 2.4 GHz:
+#### Set 2.4GHz:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -199,7 +199,7 @@ With a password:
 
 <br>
 
-#### Set 5.0 GHz:
+#### Set 5.0GHz:
 
 	:::XML
 	<wap-provisioningdoc>
@@ -218,7 +218,7 @@ With a password:
 
 <br>
 
-#### Set Auto (both 2.4 and 5.0 GHz):
+#### Set Auto (both 2.4 and 5.0GHz):
 
 	:::XML
 	<wap-provisioningdoc>

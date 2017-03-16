@@ -7,7 +7,7 @@ order: 0
 
 Wi-Fi Manager (Wi-Fi) administers the Wi-Fi settings and network profiles for a device, including the settings required for connecting to networks. 
 
-**Note**: Documention for the Wi-Fi configuration service provider uses the terms "enable" and "disable" to "turn on" and "turn off" a feature and make its state "active" or "inactive." Such terms in other CSPs refer to the feature's "Usage" setting, which can prevent user access to the feature entirely. 
+**Note**: The Wi-Fi configuration service provider uses the terms "enable" and "disable" to refer to the ability by a user or administrator to "turn on" and "turn off" a feature or capability (i.e. to set its state as "active" or "inactive"). Such terms in other CSPs refer to the feature's "Usage" setting, which can prevent access to the feature entirely.
 
 >**Note**: Enabling the Password Protect Encryption feature **prevents the Google Mobile Service (GMS) backup from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems. 
 

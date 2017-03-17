@@ -19,7 +19,7 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 * **Scanning is frequent** in the organization, and...
 * **Forms have one or more barcodes of the same of differing symbologies**.
 
-Such scenarios are perfect for SimulScan [Barcode-only mode](../templatebuilder/#unstructuredtemplates).  
+Such scenarios are perfect for SimulScan [Multi-barcode mode](../templatebuilder/#unstructuredtemplates).  
 
 Alternatively, SimulScan [Document Capture](../templatebuilder/#structuredtemplates) mode is ideal for data capture when...
 
@@ -40,30 +40,25 @@ Alternatively, SimulScan [Document Capture](../templatebuilder/#structuredtempla
 
 -----
 
-#### SimulScan Operation Modes  
-
-<!-- <img style="height:100px" src="barcode-multibarcode.png"/> -->
-[Barcode-only](../templatebuilder/#unstructuredtemplates) mode allows workers to capture one or more 1D/2D barcodes of the same or differing symbologies from a single scan target. The target layout can be fixed or can vary from one scan to another. 
-<br>
-
-![img](mixed-data.png)
-<br>
-
-[Document Capture](../templatebuilder/#structuredtemplates) mode adds to Barcode-only features the ability to capture alphanumeric characters and images, and can determine the presence of check marks and signatures from a snapshot of the document. This mode requires scan targets with a fixed layout.
-<br>
-
------
-
 ## How it Works
-SimulScan Barcode-only and Document Capture modes both work through Templates, which define "Form Regions of interest" on Documents to be scanned, "Field Regions of interest" within forms, the types of data (barcode, text, etc.) to be extracted from each Field and how to process it. 
+Most acquisition tasks involve capturing data from printed documents. These "target" documents often vary in size, shape and layout, and present a challenge for accurate data acquisition. Templates solve this problem by "teaching" SimulScan about the documents it will encounter, and defining how to scan and process data for each instance of that target document. 
 
+### Document Capture Mode
+[Document Capture mode](../templatebuilder/#structuredtemplates) captures a snapshot of the document and extracts 1D/2D barcode data, alpha/numeric characters and images. It also can determine the presence of check marks and signatures. 
+
+Templates for this mode define "Form Regions* of interest" on Documents to be scanned, "Field Regions of interest" within those forms, the types of data (barcode, text, etc.) to be extracted, and how it will be processed. **Scan targets must be of a fixed layout and a Template must be created for each target encountered by the organization**.  
 ![img](regions_of_interest.png)
-<br>
+_A sample document on which Document Capture would be employed_.
+
+### Multi-barcode Mode
+[Multi-barcode mode](../templatebuilder/#unstructuredtemplates) is designed to capture one or more 1D/2D barcodes of the same or differing symbologies from a single scan target. The target layout can be fixed or can vary from one scan to another. Templates are optional for Multi-barcode mode, and are generally required only when it's necessary to specifically include certain barcodes and ignore others. **This mode also supports barcode prefixes, which can be parsed to provide processing information for the data acquired from each barcode. 
+![img](msi_reader_captions.png)
+_A Multi-barcode mode Template can specify barcodes to include and which to ignore_.
 
 -----
 
 ### Using SimulScan
-**SimulScan is free** when used with DataWedge or from a custom app to scan only barcodes. A per-device license is required access to OCR or OMR features. For licensing details, please see the [Licensing guide](../license). 
+**SimulScan is free** under many scanning scenarios. when used with DataWedge or from a custom app to scan only barcodes. A per-device license is required access to OCR or OMR features. For licensing details, please see the [Licensing guide](../license). 
 
 **SimulScan can be accessed either by**: 
 

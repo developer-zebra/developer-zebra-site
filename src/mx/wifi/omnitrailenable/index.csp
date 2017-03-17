@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Enable/Disable 
 type: parm
-order: 0
+order: 85
 mx: "6.3"
 parm:
   presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked

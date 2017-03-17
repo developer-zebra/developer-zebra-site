@@ -9,21 +9,21 @@ parm:
   name: WifiSleepPolicy
   type: list
   list:
-    - code: 
+    - code: 4
       mx: "4.2"
       name: Do not change
       description: This (null) value (or the absence of this parm from the XML) causes no change to the current sleep policy on the device; any previously selected setting will be retained.
-    - code: Never Sleep
+    - code: 0
       mx: "4.2"
-      name: Never Sleep
+      name: AlwaysOn
       description: Causes the Wi-Fi radio to remain enabled when the device goes to sleep, allowing continued access to Wi-Fi for running apps. 
-    - code: PluggedIn
+    - code: 1
       mx: "4.2"
-      name: Never Sleep When Plugged In
+      name: PluggedIn
       description: Causes the Wi-Fi radio to remain enabled whenever the device is plugged in and not running on battery power regardless of sleep state, allowing continued access to Wi-Fi for running apps. 
-    - code: NeverOn
+    - code: 2
       mx: "4.2"
-      name: Always Sleep
+      name: NeverOn
       description: Causes the Wi-Fi radio to be disabled off when the device enters sleep mode, dropping any existing Wi-Fi connections.
 ---
 

@@ -2,16 +2,16 @@
 csp: wifi
 title: Hotspot Passphrase Encrypted
 type: parm
-order: 73
+order: 82
 mx: "6.3"
 parm:
-  presentif: The "Specify Hotspot Options" and "Protect Hotspot Passphrase" checkboxes are checked 
+  presentif: The "Specify Hotspot Options" and "Protect Hotspot Passphrase" checkboxes are checked, "Hotspot" is set to "Enable" and "Hotspot Security Mode" is "WPA2/PSK"
   pivotal: No
-  name: HotspotSSID
+  name: HotspotPassphraseEncrypted
   type: string
 ---
 
-Used to provide a password for accessing the hotspot, which will be stored in encrypted form. 
+Used to provide a password for accessing the hotspot and to store in encrypted form. 
 
 **Parm value input rules**: 
 

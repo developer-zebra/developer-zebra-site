@@ -8,6 +8,9 @@ productversion: '1.1'
 ### Anchor Element(s)
 One or more unchanging images, barcodes or other Document attributes (i.e. company logo) created as part of a Template that SimulScan can use to identify a Document and determine its orientation. 
 
+### Barcode-only (mode) 
+A SimulScan mode that captures only barcode data, which can be from 1D/2D barcodes of the same or differing symbologies. The imager is generally used in this mode. When templates are used, this mode accepts an Unstructured Template and generally uses the device imager.  
+
 ### Bounding Box 
 An oval, round or square object on the printed form that contains a mark to be acquired using OMR. 
 
@@ -16,6 +19,9 @@ Defines the source (barcode, OCR, etc.) of data being acquired from a Region of 
 
 ### Document
 Printed form containing data to be acquired (i.e. a shipping receipt). Documents should be associated with no more than one Template.
+
+### Document Capture (mode) 
+A SimulScan mode that captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. This mode requires a Structured Template and generally uses the device camera.  
 
 ### Field
 See Field of Interest, Region.
@@ -31,12 +37,6 @@ See Picture.
 
 ### Input Plug-in 
 Defines (as in a DataWedge Profile) the means by which data is acquired with SimulScan using Zebra's DataWedge app. See the [SimulScan Input section](../../../../datawedge/6-0/guide/setup/#simulscaninput) of the DataWedge docs for details. 
-
-### Mixed Data-type 
-A Template that captures multiple data types from mixed sources, such as barcodes, alpha/numeric characters, checkboxes and images. The camera is generally used in this mode.  
-
-### Multi-barcode 
-A Template that captures only barcode data, which can be from 1D/2D barcodes of the same or differing symbologies. The imager is generally used in this mode. 
 
 ### Multi-Line 
 Acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address). See also Grouped Regions. 

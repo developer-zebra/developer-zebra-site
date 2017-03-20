@@ -6,13 +6,13 @@ productversion: '1.1'
 ---
 ## Overview
 
-**SimulScan can be accessed**: 
+**SimulScan can be used in three ways**: 
 
-* Through [DataWedge](../../../../datawedge), which is covered below
-* Through the [SimulScan API](../../api) from within a custom Android app 
-* By using the [SimulScan Demo App](../demo), which exposes all features except the ability to save acquired data
+* Use with [DataWedge](../../../../datawedge), which is covered below
+* Use the [SimulScan APIs](../../api) from within a custom Android app 
+* Use the [SimulScan Demo App](../demo), which exposes all features except the ability to save acquired data
 
-**To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan)**, simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. The exact process is detailed below, beginning with a short introduction to SimulScan concepts. For more information, see the [About SimulScan page](../about). 
+To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan), simply select it as an Input Plug-in from within DataWedge, an app that comes with every Zebra device. The exact process is detailed below, beginning with a short introduction to SimulScan concepts. For more information, see the [About SimulScan page](../about). 
 
 -----
 
@@ -30,16 +30,12 @@ For use cases in which generic or pre-built templates are unsuitable, custom Tem
 
 -----
 
-### Access Through DataWedge
+### Use With DataWedge
 SimulScan includes a number of generic Templates to cover common scanning scenarios when SimulScan is selected as the DataWedge Input Plug-in. For more advanced use-cases, custom Templates can be created [Using Template Builder](../templatebuilder/#usingtemplatebuilder) or downloaded from Zebra's library of [Pre-built Templates](../templates). Downloaded Templates can be modified as needed using Template Builder. 
 
-![img](default_templates.png)
+[![img](default_templates.png)](http://www.isbn.org/about_ISBN_standard)
+**_Note: The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_**.
 
-_Click image to enlarge_
-
-<br>
-
-**Note: The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen**.
 
 <!--
 <img style="height:350px" src="default_templates.png"/>

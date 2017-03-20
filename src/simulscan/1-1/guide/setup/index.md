@@ -24,7 +24,7 @@ To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan), simply s
 * Control SimulScan's ability to decode and parse data
 * Determine how acquired data is consumed by an application
 
-At least one Template must be present and selected within SimulScan before the tool can be used; a number of [generic Templates](#accessthroughdatawedge) are included. Zebra also provides [industry-specific templates](../templates) for partners to downloaded and modify as needed.
+At least one Template must be present and selected within SimulScan before the tool can be used; a number of [generic Templates](#usewithdatawedge) are included. Zebra also provides [industry-specific templates](../templates) for partners to downloaded and modify as needed.
 
 For use cases in which generic or pre-built templates are unsuitable, custom Templates can be easily creating using the cloud-based [Template Builder](../templatebuilder) tool. See the Template Builder guide for more information about Templates. 
 

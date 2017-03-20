@@ -14,14 +14,14 @@ Zebra's SimulScan is a set of productivity tools that can optimize the efficienc
 
 -----
 
-**SimulScan Can Help Optimize Workflows If...** 
+**SimulScan Can Help Optimize Work-flows If...** 
 
 * **Scanning is frequent** in the organization, and...
 * **Forms have one or more barcodes of the same of differing symbologies**.
 
-Such scenarios are perfect for SimulScan [Multi-barcode mode](../templatebuilder/#unstructuredtemplates).  
+Such scenarios are well-suited to SimulScan [Multi-barcode mode](../templatebuilder/#unstructuredtemplates).
 
-Alternatively, SimulScan [Document Capture](../templatebuilder/#structuredtemplates) mode is ideal for data capture when...
+Alternatively, SimulScan [Document Capture](../templatebuilder/#structuredtemplates) mode is suited to data-capture scenarios in which...
 
 * **Multiple data types are to be acquired**, and... 
 * **Scanned forms are of a** [fixed layout](../glossary), and...
@@ -34,7 +34,7 @@ Alternatively, SimulScan [Document Capture](../templatebuilder/#structuredtempla
 * A Zebra TC55, TC70, TC75, TC8000 device running Android
 * Camera or supported 2D imager ([see table](#supporteddevices), below)
 * An app (or [DataWedge](../../../../datawedge)) configured to access SimulScan
-* A per-device [license](../license) if using OCR or OMR
+* A per-device [license](../license) if using [advanced features](../license)
 
 **Note**: SimulScan features also can be explored using the [SimulScan Demo App](../demo), which exposes all features and functions except the ability to save acquired data. The Demo App is included on all supported devices.  
 

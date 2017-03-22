@@ -8,9 +8,6 @@ productversion: '1.1'
 ### Anchor Element(s)
 One or more unchanging images, barcodes or other Document attributes (i.e. company logo) created as part of a Template that SimulScan can use to identify a Document and determine its orientation. 
 
-### Barcode-only (mode) 
-A SimulScan mode that captures only barcode data, which can be from 1D/2D barcodes of the same or differing symbologies. The imager is generally used in this mode. When templates are used, this mode accepts an Unstructured Template and generally uses the device imager.  
-
 ### Bounding Box 
 An oval, round or square object on the printed form that contains a mark to be acquired using OMR. 
 
@@ -37,6 +34,9 @@ See Picture.
 
 ### Input Plug-in 
 Defines (as in a DataWedge Profile) the means by which data is acquired with SimulScan using Zebra's DataWedge app. See the [SimulScan Input section](../../../../datawedge/6-0/guide/setup/#simulscaninput) of the DataWedge docs for details. 
+
+### Multi-barcode (mode) 
+A SimulScan mode that captures only barcode data, which can be from 1D/2D barcodes of the same or differing symbologies. When templates are used, this mode accepts an Unstructured Template and generally uses the device imager.  
 
 ### Multi-Line 
 Acquisition using OCR of multiple lines of alpha/numeric characters (i.e. a complete address). See also Grouped Regions. 

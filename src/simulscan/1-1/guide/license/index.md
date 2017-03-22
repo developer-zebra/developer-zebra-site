@@ -5,9 +5,25 @@ product: SimulScan
 productversion: '1.1'
 ---
 ## Overview
-**The SimulScan solution is free when used with Zebra's [DataWedge](../../../../datawedge) service** to scan only barcodes<!-- _<u>and</u>_ to scan fewer than 10 barcodes at a time. Scanning 10 or more barcodes from a single form requires a SimulScan license. --> A license is required for access to advanced features such as optical character recognition (OCR) and optical mark recognition (OMR). <!-- or to use [SimulScan APIs](../../api) to access SimulScan functions from within a custom app or when using it with [Enterprise Browser](../../../../enterprise-browser).-->
 
-**General Licensing Rules**:
+**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes and/or for certain types of optical character recognition (OCR) acquisition. A per-device license is required for advanced SimulScan features. A complete breakdown is below. 
+
+**SimulScan is free when**: 
+
+* SimulScan is used to scan only barcodes ([Multi-barcode mode](../glossary/#multibarcodemode))
+* No more than 10 barcodes are present on any single scan target 
+* Text is captured using OCR-A, OCR-B or MRZ barcode symbologies
+* DataWedge is used with SimulScan and any of its default Templates
+
+**A SimulScan License is required when**: 
+
+* SimulScan is used to capture an entire Document ([Document Capture mode](../glossary/#documentcapturemode))
+* More than 10 (but no more than 20) barcodes (or other fields) are present on any single scan target
+* Text is captured using OCR
+* Optical mark recognition (OMR) is used to detect the presence of signatures or check marks  
+* Using SimulScan with [Enterprise Browser](../../../../enterprise-browser)
+
+**When a License is required, the following general rules apply**:
 
 * **A SimulScan license is required for each device** that will access SimulScan advanced features. 
 * **A Device-specific License** is assigned based on a product name and serial number, and will fail if transferred to a different device.
@@ -19,7 +35,10 @@ productversion: '1.1'
 
 -----
 
-###I. Contact a Reseller 
+## Obtain a License
+SimulScan Licenses are purchased through resellers of Zebra Technologies products. Please follow the instructions below to obtain the necessary Licenses for SimulScan use. 
+
+### I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra directly or with a Zebra reseller. To get started, use one of the following Zebra resources: 
 
 * **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
@@ -30,7 +49,7 @@ The first step in obtaining a license is to engage with Zebra directly or with a
 
 -----
 
-###II. Access Licensing System
+### II. Access Licensing System
 After a licensing agreement is arranged with Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials. 
 
 * **Log into the [Zebra Enterprise Software Licensing system](https://softwarelicensing.zebra.com/) to:** 
@@ -46,7 +65,7 @@ _Options for SimulScan licensing might vary from the image shown_.
 
 -----
 
-###III. Assign License(s)
+### III. Assign License(s)
 Once the desired number of license(s) are purchased, they must be assigned to device(s) before being deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
 
 #### Manual Deployment
@@ -101,30 +120,6 @@ SimulScan licenses are purchased through Zebra Technologies product resellers. L
 Both license types can be applied using either of the methods below.  
 
 
-FROM TEMPLATE BUILDXER:
 
-
-Purchasing a license
-- Licenses can be purchased from https://softwarelicensing.zebra.com/
-- Documentation at https://softwarelicensing.motorolasolutions.com/documentation/index.html 
-- Licenses can be purchased for a specific device based on the serial number or for larger deployments using the enterprise-wide deployment license
- 
-Installation 
-- Licenses are presently only supported only on TC55 and TC75 devices right now.
-- Licenses can be installed in one of the below two ways:
-Option 1 : Using the built-in Settings app 
-Use this option to install an Individual license or a fewer number of licenses.
-- Copy the License.xml file downloaded from the licensing server to an accessible location on the device.
-- Launch the Settings app -> About Phone –> Legal Information -> Symbol Licenses -> Menu -> Install license -> point to the file on the device.
-- This will install the license. 
-Option 2:  Using StageNow.
-Use this option for larger deployments.
-Please refer StageNow’s documentation for further details.
-StageNow includes wizards to deploy content specific to SimulScan to make this deployment simpler.
- 
-Usage 
-- Nothing required.  Once a license is installed, the full functionality of SimulScan will be unlocked. 
-- A given license enables SimulScan features leveraged via DW, EMDK or Rho [in the future] for a given device.
-- A factory reset will remove the license entitlement.
 
 -->

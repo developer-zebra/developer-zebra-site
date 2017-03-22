@@ -59,7 +59,7 @@ _A Multi-barcode mode Template can specify barcodes to include and which to igno
 -----
 
 ### Using SimulScan
-**SimulScan is free** for many scanning scenarios, including when used with DataWedge and its default Templates or from a custom app to scan only barcodes and/or certain types of OCR acquisition. A per-device license is required for advanced SimulScan features. For licensing details, please see the [Licensing guide](../license). 
+**SimulScan is free for many scanning scenarios**, including when used with DataWedge and its default Templates or from a custom app to scan only barcodes and/or for certain types of OCR acquisition. A per-device license is required for advanced SimulScan features. For licensing details, please see the [Licensing guide](../license). 
 
 **SimulScan can be accessed either by**: 
 

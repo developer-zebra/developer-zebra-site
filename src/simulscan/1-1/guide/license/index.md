@@ -10,18 +10,18 @@ productversion: '1.1'
 
 **SimulScan is free when**: 
 
-* SimulScan is used to scan only barcodes ([Multi-barcode mode](../glossary/#multibarcodemode))
-* No more than 10 barcodes are present on any single scan target 
-* Text is captured using OCR-A, OCR-B or MRZ barcode symbologies
-* DataWedge is used with SimulScan and any of its default Templates
+* SimulScan is **used to scan only barcodes** ([Multi-barcode mode](../glossary/#multibarcodemode))
+* **No more than 10 barcodes** are present on any single scan target 
+* **Text is captured using OCR-A, OCR-B or MRZ** barcode symbologies
+* **DataWedge is used** with SimulScan and any of its default Templates
 
 **A SimulScan License is required when**: 
 
-* SimulScan is used to capture an entire Document ([Document Capture mode](../glossary/#documentcapturemode))
-* More than 10 (but no more than 20) barcodes (or other fields) are present on any single scan target
-* Text is captured using OCR
-* Optical mark recognition (OMR) is used to detect the presence of signatures or check marks  
-* Using SimulScan with [Enterprise Browser](../../../../enterprise-browser)
+* SimulScan is used **to capture an entire Document** ([Document Capture mode](../glossary/#documentcapturemode))
+* **More than 10 (but no more than 20) barcodes** (or other fields) are present on any single scan target
+* **Text is captured using OCR**
+* **Optical mark recognition (OMR) is used** to detect the presence of signatures or check marks  
+* **Using SimulScan with [Enterprise Browser](../../../../enterprise-browser)**
 
 **When a License is required, the following general rules apply**:
 

@@ -36,7 +36,7 @@ productversion: '1.1'
 -----
 
 ## Obtain a License
-SimulScan Licenses are purchased through resellers of Zebra Technologies products. Please follow the instructions below to obtain the necessary Licenses for SimulScan use. 
+SimulScan Licenses are purchased through resellers of Zebra Technologies products. The section below explains the process for Licensing devices for SimulScan use. 
 
 ### I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra directly or with a Zebra reseller. To get started, use one of the following Zebra resources: 

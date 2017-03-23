@@ -1,0 +1,33 @@
+---
+csp: cellularmgr
+title: Cellular Data Limit Enable/Disable 
+type: parm
+order: 11
+mx: "6.3"
+apilevel: "17"
+parm:
+  pivotal: No
+  name: CellularDataLimitState
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      apilevel: "17"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
+    - code: 1
+      name: Enable and set default limit
+      mx: "6.3"
+      apilevel: "17"
+      description: 
+    - code: 2
+      name: Enable and set custom limit
+      mx: "6.3"
+      apilevel: "17"
+      description: 
+---
+
+This is the On/Off switch for the Cellular Data Limit, wot woto wot 
+
+limiting cellular data on the device MORE MORE MORE
+

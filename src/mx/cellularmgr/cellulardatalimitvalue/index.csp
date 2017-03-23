@@ -1,0 +1,28 @@
+---
+csp: cellularmgr
+title: Set Cellular Data Limit
+type: parm
+order: 16
+mx: "6.3"
+apilevel: "23"
+parm:
+  presentif: 
+  pivotal: No
+  name: CellularDataLimitValue
+  type: integer
+---
+
+Used to specify the limit (in MB) of cellular data usage by the device in a given period of time.  
+
+FROM ENG:
+This parameter can be used to enable a limit above which data connection over cellular
+networks are no longer allowed. As in the Android UI, the default limit is the higher
+value of 5GByte or 1.2 times the set CellularDataWarningValue, up to a maximum of 1TByte.
+If set to "Enable and set custom limit" then the actual limit must be set with
+CellularDataLimitValue (if CellularDataLimitValue is missing then the operation becomes a
+"Do not change").
+
+
+**Parm value input rules**: 
+
+* Integer from 5-1,048,576 (5MB-1TB) 

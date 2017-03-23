@@ -1,0 +1,23 @@
+---
+csp: cellularmgr
+title: Specify Cellular Data Warning
+type: parm
+order: 16
+mx: "6.3"
+apilevel: "23"
+parm:
+  presentif: StorageEnable parameter is set to "True"
+  pivotal: No
+  name: CellularDataWarningValue
+  type: string
+---
+
+ENG:
+This parameter sets the value at which a warning is displayed to the user. In StageNow
+this parameter is suppressed if CellularDataState has been set to "Turn off" or
+CellularDataWarning has not been set to "Set new warning".
+
+
+**Parm value input rules**: 
+
+* String of at least 1 character containing a valid storage path

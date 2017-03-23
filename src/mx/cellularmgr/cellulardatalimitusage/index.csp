@@ -2,31 +2,29 @@
 csp: cellularmgr
 title: Cellular Data Limit Enable/Disable
 type: parm
-order: 10
-mx: "4.4"
-osx: "4.4"
+order: 30
+mx: "6.3"
 parm:
   pivotal: No
-  name: DataRoamingUsage
+  name: CellularDataLimitUsage
   type: list
   list:
     - code: 0
-      mx: "4.4"
-      osx: "4.4"
+      mx: "6.3"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to usage of the Data Roaming Option; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
     - code: 1
       name: Enable
-      mx: "4.4"
-      osx: "4.4"
-      description: Enables Data Roaming to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
+      mx: "6.3"
+      description: Enables a limit to be set on cellular data usage. 
     - code: 2
       name: Disable
-      mx: "4.4"
-      osx: "4.4"
-      description: Disables Data Roaming on the device, preventing its state (active/inactive) from being controlled programmatically or by the device user.
+      mx: "6.3"
+      description: Prevents a limit from being set on cellulat data usage.
 ---
 
-Used to control whether the device user has access to the Data Roaming option on the device. When Disabled, Data Roaming cannot be turned on or off programmatically or by the device user. 
+Used to control 
 
-The Data Roaming Option determines whether a device can communicate over cellular data networks other than the "home" network provided by the mobile operator with which the active SIM card is affiliated. **The convenience of communicating over "foreign" networks while roaming must be weighed against the roaming charges imposed by foreign carriers, which can be significant**.  
+ENG
+This parameter determines if device users are allowed to change the settings corresponding
+to CellularDataLimitState, CellularDataLimitValue, and CellularDataWarningValue.

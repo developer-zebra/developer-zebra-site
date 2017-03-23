@@ -2,32 +2,40 @@
 csp: cellularmgr
 title: Cellular Data Limit Enable/Disable 
 type: parm
-order: 11
+order: 21
 mx: "6.3"
-apilevel: "17"
 parm:
+  presentif: Cellular Data State is set to "Enable"
   pivotal: No
   name: CellularDataLimitState
   type: list
   list:
     - code: 0
       mx: "6.3"
-      apilevel: "17"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
     - code: 1
       name: Enable and set default limit
       mx: "6.3"
-      apilevel: "17"
-      description: 
+      description: Enables the Android default limit on cellular data usage, which is the greater value of 5GB or 1.2 times the value specified in the Cellular Data Warning Value parameter, up to a maximum of 1TB. 
     - code: 2
       name: Enable and set custom limit
       mx: "6.3"
-      apilevel: "17"
-      description: 
+      description: Enables a limit on cellular data usage to be set in the Cellular Data Warning Value parameter from 5GB to 1TB. 
+    - code: 3
+      name: Disable
+      mx: "6.3"
+      description: Prevents a limit on cellular data usage from being imposed on the device. 
 ---
 
-This is the On/Off switch for the Cellular Data Limit, wot woto wot 
+Controls whether a limit is placed on the use of the cellular data connection, and if so, whether the Android-default or a custom value is used. When Enabled and a limit is set using the Cellular Data Limit Value parameter, the data connection will be terminated when usage reaches the limit defined in the selected option. If no Cellular Data Limit Value is set in such cases, this parameter is ignored and the setting remains unchanged. 
 
-limiting cellular data on the device MORE MORE MORE
+ENG
+This parameter can be used to enable a limit above which data connection over cellular
+networks are no longer allowed. As in the Android UI, the default limit is the higher
+value of 5GByte or 1.2 times the set CellularDataWarningValue, up to a maximum of 1TByte.
+If set to "Enable and set custom limit" then the actual limit must be set with
+CellularDataLimitValue (if CellularDataLimitValue is missing then the operation becomes a
+"Do not change").
+
 

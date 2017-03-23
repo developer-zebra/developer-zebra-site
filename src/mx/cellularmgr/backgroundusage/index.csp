@@ -2,7 +2,7 @@
 csp: cellularmgr
 title:  Background Data Enable/Disable
 type: parm
-order: 15
+order: 40
 mx: "4.4"
 osx: "4.4"
 parm:

@@ -2,11 +2,10 @@
 csp: cellularmgr
 title: Set Cellular Data Limit
 type: parm
-order: 16
+order: 32
 mx: "6.3"
-apilevel: "23"
 parm:
-  presentif: 
+  presentif: Cellular Data State is set to "Enable" and Cellular Data Limit State is set to "Enable and set custom limit"
   pivotal: No
   name: CellularDataLimitValue
   type: integer
@@ -21,6 +20,8 @@ value of 5GByte or 1.2 times the set CellularDataWarningValue, up to a maximum o
 If set to "Enable and set custom limit" then the actual limit must be set with
 CellularDataLimitValue (if CellularDataLimitValue is missing then the operation becomes a
 "Do not change").
+
+EQUAL TO: Corresponding Android UI: Settings > Data Usage > [red data limit slider]
 
 
 **Parm value input rules**: 

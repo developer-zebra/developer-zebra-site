@@ -11,7 +11,7 @@ parm:
   type: integer
 ---
 
-Used to specify the limit (in MB) of cellular data usage by the device. Once the limit is reached, the cellular data connection will be terminated.
+Used to specify the limit (in MB) of cellular data usage by the device. Once the limit is reached, the cellular data connection is terminated.
 
 **Parm value input rules**: 
 

@@ -2,11 +2,10 @@
 csp: cellularmgr
 title: Cellular Data Warning 
 type: parm
-order: 32
+order: 28
 mx: "6.3"
-apilevel: "17"
 parm:
-  presentif: Cellular Data State is set to "Enable"
+  presentif: Cellular Data State is set to "Turn On"
   pivotal: No
   name: CellularDataWarning
   type: list
@@ -18,14 +17,9 @@ parm:
     - code: 1
       name: Set new warning
       mx: "6.3"
-      description: 
+      description: Enables a data limit warning threshold (in MB) to be specified.
 ---
 
-Used to enable the the ability to enter a custom warning when a cellular data limit has been reached. 
+Controls whether the device user or an app running on the device can specify a threshold for cellular data usage that triggers a warning. 
 
-ENG:
-CellularDataWarning merely serves as a helper for StageNow etc. so that
-CellularDataWarningValue can be left unchanged without introducing a magic "don't change"
-value to this integer parameter. For this reason CellularDataWarning is ignored by the CSP
-and consequently can't be read back. In StageNow this parameter is suppressed if
-CellularDataState has been set to "Turn off". 
+use the Cellular Data Warning Value to provide

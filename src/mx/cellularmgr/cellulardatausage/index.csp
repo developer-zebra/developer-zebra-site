@@ -16,11 +16,11 @@ parm:
     - code: 1
       name: Enable
       mx: "6.3"
-      description: Enables cellular data to be used on the device and its state (active/inactive) to be controlled by an app or the device user.
+      description: Enables cellular data to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
     - code: 2
       name: Disable
       mx: "6.3"
-      description: Disables cellular data on the device, preventing its state (active/inactive) from being controlled by an app or the device user.
+      description: Disables cellular data on the device, preventing the establishment of a data connection using the cellular network.
 ---
 
-This is the On/Off switch for cellular data usage on the device. When Enabled, the user and apps on the device are able to control the state (active/inactive) of the cellular data connection. When Disabled, the device is prevented from establishing a data connection using the cellular network. 
+Controls whether the cellular connection on the device can be used to transmit data. When Enabled, the state (active/inactive) of the cellular data connection can be controlled programmatically or by the user. When Disabled, the device is prevented from establishing a data connection using the cellular network and the state cannot be changed. 

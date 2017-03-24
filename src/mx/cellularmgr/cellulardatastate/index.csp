@@ -1,8 +1,8 @@
 ---
 csp: cellularmgr
-title: Cellular Data Limit On/Off 
+title: Cellular Data On/Off 
 type: parm
-order: 31
+order: 21
 mx: "6.3"
 parm:
   pivotal: No
@@ -14,24 +14,13 @@ parm:
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
     - code: 1
-      name: Enable and set default limit
+      name: Turn On
       mx: "6.3"
-      description: 
+      description: Allows a cellular data connection to be established on the device.   
     - code: 2
-      name: Enable and set custom limit
+      name: Turn Off
       mx: "6.3"
-      description:
-    - code: 3
-      name: Disable
-      mx: "6.3"
-      description:  
+      description: Prevents a cellular data connection from being established on the device. 
 ---
 
-This is the On/Off switch for the ability to impose a Cellular Data Limit on the device. 
-
-
-ENG:
-This parameter determines whether data connections over cellular networks are allowed.
-
-limiting cellular data on the device MORE MORE MORE
-
+This is the On/Off switch for the ability to establish a cellular data connection on the device. **This parameter controls only cellular _data_; voice and SMS messaging apps are uneffected by this setting**. 

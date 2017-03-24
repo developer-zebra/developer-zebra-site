@@ -1,6 +1,6 @@
 ---
 csp: cellularmgr
-title: Data Roaming Turn On/Off 
+title: Data Roaming On/Off 
 type: parm
 order: 11
 mx: "4.3"

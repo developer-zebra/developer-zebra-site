@@ -1,24 +1,18 @@
 ---
 csp: cellularmgr
-title: Specify Cellular Data Warning
+title: Set Cellular Data Warning
 type: parm
-order: 33
+order: 29
 mx: "6.3"
 parm:
-  presentif: Cellular Data State is set to "Enable" and Cellular Data Limit State is set to "Enable and set custom limit"
+  presentif: Cellular Data State is set to "Turn On" and Cellular Data Warning is set to "Set new warning"
   pivotal: No
   name: CellularDataWarningValue
   type: string
 ---
 
-ENG:
-This parameter sets the value at which a warning is displayed to the user. In StageNow
-this parameter is suppressed if CellularDataState has been set to "Turn off" or
-CellularDataWarning has not been set to "Set new warning".
-
-Equal to Corresponding Android UI: Settings > Data Usage > [grey data warning slider]
-
+Used to specify a threshold (in MB) for cellular data usage  after which a warning will be displayed to the device user. 
 
 **Parm value input rules**: 
 
-* String of at least 1 character containing a valid storage path
+* Integer from 5-1048576 (5MB-1TB) corresponding to the data usage limit

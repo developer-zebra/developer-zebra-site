@@ -16,12 +16,11 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Background Data
  * SIM Slot Selection
  * Cellular Data
- * Cellular Data limitation
+ * Cellular Data Limit
 * Turn On/Off (control State of): 
  * Data Roaming 
  * Background Data
  * Cellular Data
- * Cellular Data limitation
+ * Cellular Data Limit
 * Select SIM Slot 
-* Enter a custom data-limit warning
-
+* Enter a custom cellular data limit and warning

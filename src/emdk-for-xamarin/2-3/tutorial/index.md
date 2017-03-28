@@ -14,7 +14,7 @@ content-items:
     text: "Using C# API's to use barcode scanning in your application."
     url: /emdk-for-xamarin/2-2/tutorial/barcodeapitutorial
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
    
 

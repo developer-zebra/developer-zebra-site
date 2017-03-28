@@ -2,7 +2,7 @@
 title: Using the EMDK Samples with Android Studio
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 
 ##Loading the Sample Application

@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.Tlc39Decoder
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The Tlc39 class provides access to parameters that are available for the Tlc39 decoder..
 

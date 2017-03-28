@@ -2,7 +2,7 @@
 title: ScannerConfig.DecodeLEDFeedbackMode
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Describes the LED Feedback mode is given by the host device and remote scanner.
 

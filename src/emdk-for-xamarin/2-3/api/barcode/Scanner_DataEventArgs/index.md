@@ -2,7 +2,7 @@
 title: Scanner.DataEventArgs
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 This class is used internally and not meant for developer applications.
 

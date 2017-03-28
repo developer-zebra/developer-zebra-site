@@ -2,7 +2,7 @@
 title: ScanDataCollection
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The ScanDataCollection object contains the scanning result and the collection of ScanData.
 

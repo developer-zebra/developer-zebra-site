@@ -2,7 +2,7 @@
 title: BarcodeManager.DeviceIdentifier
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Defines the specific scanner devices of each type.
 

@@ -2,7 +2,7 @@
 title: Configuring A Device
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 
 The device runtime update included with this release should be applied to any Zebra Android device in order to provide the documented features. If the device has not been updated to at least this version, features like Profile Manager may not perform as expected.

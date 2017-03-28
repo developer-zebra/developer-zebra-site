@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.ImagerSpecifics
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 ImagerSpecific provides access to the imager specific parameters.
 

@@ -24,7 +24,7 @@ content-items:
     text: Understand how to use the powerful Profile Manager
     url: /emdk-for-xamarin/2-2/guide/profile-manager
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
            
 

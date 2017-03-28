@@ -2,7 +2,7 @@
 title: ScannerInfo.DecoderType
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 This lists all the barcode types supported by scanners
 

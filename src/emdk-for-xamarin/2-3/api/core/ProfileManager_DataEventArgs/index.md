@@ -2,7 +2,7 @@
 title: ProfileManager.DataEventArgs
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Used internally, not for development use.
 

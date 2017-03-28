@@ -2,7 +2,7 @@
 title: CradleException
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The methods of cradle API throw a CradleException when an error occurs. The error could be due to:
 1. Client using the API incorrectly

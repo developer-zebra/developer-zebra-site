@@ -2,7 +2,7 @@
 title: NotificationManager.DeviceIdentifier
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Defines specific notification devices of each type.
 

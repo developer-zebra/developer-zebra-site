@@ -2,7 +2,7 @@
 title: "Name Value Pair Functionality Programmer's Guide"
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 
 ##Introduction

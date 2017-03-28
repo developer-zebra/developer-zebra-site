@@ -2,7 +2,7 @@
 title: StatusData.ScannerStates
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Defines the different states of the barcode scanner.
 

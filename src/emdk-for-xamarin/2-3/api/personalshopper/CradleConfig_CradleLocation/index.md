@@ -2,7 +2,7 @@
 title: CradleConfig.CradleLocation
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The class for provides access to the cradle location. The values modified will take effective only by calling setConfig().
 

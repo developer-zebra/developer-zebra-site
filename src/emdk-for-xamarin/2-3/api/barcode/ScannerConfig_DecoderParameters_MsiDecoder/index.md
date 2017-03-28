@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.MsiDecoder
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The Msi class provides access to parameters that are available for the Msi decoder.
 

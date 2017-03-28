@@ -2,7 +2,7 @@
 title: PersonalShopperMgr
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 This is the primary class to access the cradle and diagnostics API and this class is extends the EMDKBase class. This class creates the cradle instance field to communicate with the cradle.
 

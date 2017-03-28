@@ -2,7 +2,7 @@
 title: VersionManager
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Version information can be captured from this class.
 

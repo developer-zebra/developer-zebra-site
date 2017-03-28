@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.UpcaDecoder
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The Upca class provides access to parameters that are available for the Upca decoder.
 

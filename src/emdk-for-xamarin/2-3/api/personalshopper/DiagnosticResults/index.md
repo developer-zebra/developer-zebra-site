@@ -2,7 +2,7 @@
 title: DiagnosticResults
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 Defines all the error codes the diagnostic API returns. 
 

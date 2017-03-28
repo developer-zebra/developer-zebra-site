@@ -2,7 +2,7 @@
 title: Your First EMDK For Xamarin Application
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 
 This document contains step by step instructions for using EMDK Api's in a new Xamarin application from scratch. It covers adding the component to the project, using profile manager, using basic APIs

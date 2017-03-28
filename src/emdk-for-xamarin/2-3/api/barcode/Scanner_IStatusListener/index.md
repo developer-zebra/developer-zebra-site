@@ -2,7 +2,7 @@
 title: Scanner.IStatusListener
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 An interface for notifying client applications to notify scan events.
 

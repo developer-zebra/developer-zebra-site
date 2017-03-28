@@ -2,7 +2,7 @@
 title: Create a new project in Visual Studio
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 
 ##Prerequisites

@@ -2,7 +2,7 @@
 title: ScanDataCollection.ScanData
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 The object contains the barcode data that has been scanned and other useful information.
 

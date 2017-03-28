@@ -3,7 +3,7 @@ title: Hosts Manager
 layout: csp-detail.html
 csp: hostsmgr
 product: EMDK For Xamarin
-productversion: '2.2'
+productversion: '2.3'
 ---
 
 

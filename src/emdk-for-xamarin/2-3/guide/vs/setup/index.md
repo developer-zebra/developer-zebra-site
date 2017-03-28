@@ -107,7 +107,7 @@ The IDE extension copies support files to the your file system in order to perfo
 
 
 ## What's Next
-In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-2/guide/component/install)
+In order to fully enable the EMDK for Xamarin, you must [install the Xamarin Component](/emdk-for-xamarin/2-3/guide/component/install)
 
 
 

@@ -13,123 +13,123 @@ mxversions:
 csps:
   - type: section
     title: Access Manager
-    url: /emdk-for-xamarin/2-2/mx/accessmgr/
+    url: /emdk-for-xamarin/2-3/mx/accessmgr/
     csp: accessmgr
   - type: section
     title: Analytics Manager
-    url: /emdk-for-xamarin/2-2/mx/analytics
+    url: /emdk-for-xamarin/2-3/mx/analytics
     csp: analyticsmgr
   - type: section
     title: App Manager
-    url: /emdk-for-xamarin/2-2/mx/appmgr
+    url: /emdk-for-xamarin/2-3/mx/appmgr
     csp: appmgr
   - type: section
     title: Audio Vol Manager
-    url: /emdk-for-xamarin/2-2/mx/audiomgr
+    url: /emdk-for-xamarin/2-3/mx/audiomgr
     csp: audiovoluimgr
   - type: section
     title: Battery Manager
-    url: /emdk-for-xamarin/2-2/mx/batterymgr
+    url: /emdk-for-xamarin/2-3/mx/batterymgr
     csp: batterymgr
   - type: section
     title: Bluetooth Manager
-    url: /emdk-for-xamarin/2-2/mx/bluetoothmgr
+    url: /emdk-for-xamarin/2-3/mx/bluetoothmgr
     csp: bluetoothmgr
   - type: section
     title: Browser Manager
-    url: /emdk-for-xamarin/2-2/mx/browsermgr
+    url: /emdk-for-xamarin/2-3/mx/browsermgr
     csp: browsermgr
   - type: section
     title: Camera Manager
-    url: /emdk-for-xamarin/2-2/mx/cameramgr
+    url: /emdk-for-xamarin/2-3/mx/cameramgr
     csp: cameramgr
   - type: section
     title: Cellular Manager
-    url: /emdk-for-xamarin/2-2/mx/cellularmgr
+    url: /emdk-for-xamarin/2-3/mx/cellularmgr
     csp: cellularmgr
   - type: section
     title: Certificate Manager
-    url: /emdk-for-xamarin/2-2/mx/certmgr
+    url: /emdk-for-xamarin/2-3/mx/certmgr
     csp: certmgr
   - type: section
     title: Clock
-    url: /emdk-for-xamarin/2-2/mx/clock
+    url: /emdk-for-xamarin/2-3/mx/clock
     csp: clock
   - type: section
     title: Component Manager
-    url: /emdk-for-xamarin/2-2/mx/componentmgr
+    url: /emdk-for-xamarin/2-3/mx/componentmgr
     csp: componentmgr
   - type: section
     title: DevAdmin
-    url: /emdk-for-xamarin/2-2/mx/devadmin
+    url: /emdk-for-xamarin/2-3/mx/devadmin
     csp: devadmin
   - type: section
     title: DHCP Option Manager
-    url: /emdk-for-xamarin/2-2/mx/dhcp
+    url: /emdk-for-xamarin/2-3/mx/dhcp
     csp: dhcpoptionmgr
   - type: section
     title: Display Manager
-    url: /emdk-for-xamarin/2-2/mx/displaymgr
+    url: /emdk-for-xamarin/2-3/mx/displaymgr
     csp: displaymgr
   - type: section
     title: Encrypt Manager
-    url: /emdk-for-xamarin/2-2/mx/encryptmgr
+    url: /emdk-for-xamarin/2-3/mx/encryptmgr
     csp: encryptmgr
   - type: section
     title: GPRS Manager
-    url: /emdk-for-xamarin/2-2/mx/gprsmgr
+    url: /emdk-for-xamarin/2-3/mx/gprsmgr
     csp: gprsmgr
   - type: section
     title: KeyMapping Manager
-    url: /emdk-for-xamarin/2-2/mx/keymappingmgr
+    url: /emdk-for-xamarin/2-3/mx/keymappingmgr
     csp: keymapmgr
   - type: section
     title: Persist Manager
-    url: /emdk-for-xamarin/2-2/mx/persistence
+    url: /emdk-for-xamarin/2-3/mx/persistence
     csp: persistmgr
   - type: section
     title: PowerKey Manager
-    url: /emdk-for-xamarin/2-2/mx/powerkeymgr
+    url: /emdk-for-xamarin/2-3/mx/powerkeymgr
     csp: powerkeymgr
   - type: section
     title: Power Manager
-    url: /emdk-for-xamarin/2-2/mx/powermgr
+    url: /emdk-for-xamarin/2-3/mx/powermgr
     csp: powermgr
   - type: section
     title: SD Card Manager
-    url: /emdk-for-xamarin/2-2/mx/sdcardmgr
+    url: /emdk-for-xamarin/2-3/mx/sdcardmgr
     csp: sdcardmgr
   - type: section
     title: Settings Manager
-    url: /emdk-for-xamarin/2-2/mx/settingsmgr
+    url: /emdk-for-xamarin/2-3/mx/settingsmgr
     csp: settingsmgr
   - type: section
     title: Threat Manager
-    url: /emdk-for-xamarin/2-2/mx/threatmgr
+    url: /emdk-for-xamarin/2-3/mx/threatmgr
     csp: threatmgr
   - type: section
     title: Touch Manager
-    url: /emdk-for-xamarin/2-2/mx/touchmgr
+    url: /emdk-for-xamarin/2-3/mx/touchmgr
     csp: touchmgr
   - type: section
     title: UI Manager
-    url: /emdk-for-xamarin/2-2/mx/uimgr
+    url: /emdk-for-xamarin/2-3/mx/uimgr
     csp: uimgr
   - type: section
     title: USB Manager
-    url: /emdk-for-xamarin/2-2/mx/usbmgr
+    url: /emdk-for-xamarin/2-3/mx/usbmgr
     csp: usbmgr
   - type: section
     title: WiFi
-    url: /emdk-for-xamarin/2-2/mx/wifi
+    url: /emdk-for-xamarin/2-3/mx/wifi
     csp: wifi
   - type: section
     title: Wireless Manager
-    url: /emdk-for-xamarin/2-2/mx/wirelessmgr
+    url: /emdk-for-xamarin/2-3/mx/wirelessmgr
     csp: wirelessmgr
   - type: section
     title: XML Manager
-    url: /emdk-for-xamarin/2-2/mx/xml
+    url: /emdk-for-xamarin/2-3/mx/xml
     csp: xmlmgr
 product: EMDK For Xamarin
 productversion: '2.3'

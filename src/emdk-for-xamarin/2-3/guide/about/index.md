@@ -20,7 +20,7 @@ Although EMDK for Android has been designed to work with all Symbol mobile compu
 * TC8000 - Lollipop
 * ET5X - (Lollipop, Marshmallow)
 
->Note: Be sure to run the [device update](/emdk-for-xamarin/2-2/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
+>Note: Be sure to run the [device update](/emdk-for-xamarin/2-3/guide/deviceupdate) on all devices before using the EMDK for Xamarin.
 
 
 

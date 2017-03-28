@@ -21,5 +21,3 @@ parm:
 ---
 
 Controls whether the device user or an app running on the device can specify a threshold for cellular data usage that triggers a warning. 
-
-use the Cellular Data Warning Value to provide

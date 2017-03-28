@@ -28,7 +28,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 >**Zebra recommends** running a [device update](/emdk-for-xamarin/2-3/guide/deviceupdate) on any device that will be using EMDK for Xamarin.
 
-##What's New in Version 2.3**
+##What's New in Version 2.3
 
 1. Xamarin Studio 6.0 Support (Xamarin Studio support is applicable only for Mac System, for Windows Visual studio should be used).
 2. Added support for MX v6.2 in Profile Manager:

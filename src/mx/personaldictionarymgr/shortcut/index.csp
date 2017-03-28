@@ -15,4 +15,4 @@ Used to add or change a Shortcut for a word or phrase currently in or being adde
 
 **Parm input rules:**
 
-* A string of between 1 and 64 characters
+* A string from 1-64 characters

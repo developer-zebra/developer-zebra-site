@@ -1,6 +1,6 @@
 ---
-title: Personal Dictionary Manager
-description: The Personal Dictionary Manager adds to and deletes from the custom word repository on the device.
+title: Personal Dictionary
+description: The Personal Dictionary CSP is used to administer the words and phrases in the custom word repository on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

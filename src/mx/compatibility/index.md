@@ -132,7 +132,7 @@ csps:
     url: /mx/persistmgr
     csp: persistmgr
   - type: section
-    title: Personal Dictionary Manager
+    title: Personal Dictionary
     url: /mx/personaldictionarymgr
     csp: personaldictionarymgr
   - type: section

@@ -15,5 +15,6 @@ Used to enter a word or phrase to be added to the Personal dictionary. Use this 
 
 **Parm input rules:**
 
-* Accepts a string of between 1 and 64 characters
+* Accepts a string from 1-64 characters
 * Words/phrases are accepted one at a time
+ 

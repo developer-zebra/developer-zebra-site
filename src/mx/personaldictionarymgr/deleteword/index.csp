@@ -15,4 +15,4 @@ Used to remove a word or phrase from the Personal dictionary.
 
 **Parm input rules:**
 
-* A string of between 1 and 64 characters
+* A string from 1-64 characters

@@ -1,6 +1,6 @@
 ---
 csp: personaldictionarymgr
-title: Personal Dictionary Actions
+title: Action
 type: parm
 order: 2
 mx: "6.0"
@@ -21,6 +21,18 @@ parm:
       name: Delete all words
       mx: "6.0"
       description: Remove all words and phrases from the dictionary. WARNING: This action clears all saved data.
+    - code: 4
+      name: Add words from file
+      mx: "6.3"
+      description: Adds words to the dictionary from a file on the device.
+    - code: 5
+      name: Delete words from file
+      mx: "6.3"
+      description: Removes words from the dictionary matching words in a file on the device.
+    - code: 6
+      name: Export words to file
+      mx: "6.3"
+      description: Saves all words and phrases in the dictionary to a file on the device.
 ---
 
-Controls the addition and deletion of individual words and/or phrases into and out of the Personal dictionary. 
+Controls the addition and deletion of individual words and/or phrases into and out of the Personal Dictionary and the deletion of all saved data. 

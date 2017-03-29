@@ -19,4 +19,4 @@ parm:
       description: Actions will be performed on the currently selected locale (default).
 ---
 
-Used to determine the locale on which to perform an Action, such as adding or deleting a word or phrase from the Personal Dictionary. When checked (value=1), the current locale is used. When unchecked (value=0), a locale can be specified. For locale information, see the [UI Manager](../uimgr/#set-current-locale).
+Used to determine the locale on which to perform an Action, such as adding or deleting a word or phrase from the Personal Dictionary. When checked (value=1), the currently selected locale is used. When unchecked (value=0), a locale can be specified.

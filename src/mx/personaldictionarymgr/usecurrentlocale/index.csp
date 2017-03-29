@@ -1,8 +1,8 @@
 ---
 csp: personaldictionarymgr
-title: Use Current Locale
+title: Use Current Locale (checkbox)
 type: parm
-order: 11
+order: 12
 mx: "6.0"
 parm:
   pivotal: No
@@ -14,8 +14,8 @@ parm:
       name: Specify locale
       description: Enables a locale to be specified on which to perform Actions.
     - code: 1
+      mx: "6.0"      
       name: Use current locale
-      mx: "6.0"
       description: Actions will be performed on the currently selected locale (default).
 ---
 

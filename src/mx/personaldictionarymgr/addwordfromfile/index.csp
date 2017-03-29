@@ -1,0 +1,23 @@
+---
+csp: personaldictionarymgr
+title: Add Words From File
+type: parm
+order: 7
+mx: "6.3"
+parm:
+  presentif: Action is "Add words from file"
+  pivotal: No
+  name: AddWordsFromFile
+  type: string
+---
+
+Used to specify the full path and file name of the file containing terms to be added to the Personal Dictionary. 
+
+**Parm value input rules**:
+
+* Accepts a string from 1-64 characters
+* Must contain full path and file name (i.e. `/storage/sdcard1/NewTerms.txt`). 
+* Must be a plain text file
+* Each term must be on a separate line
+
+ 

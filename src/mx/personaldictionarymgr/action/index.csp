@@ -12,27 +12,28 @@ parm:
     - code: 1
       mx: "6.0"
       name: Add a word
-      description: Add a word or phrase to the dictionary.
+      description: Adds the specified term to the dictionary.
     - code: 2
+      mx: "6.0"
       name: Delete a word
-      mx: "6.0"
-      description: Remove a word or phrase from the dictionary.
+      description: Deletes the specified term from the dictionary.
     - code: 3
-      name: Delete all words
       mx: "6.0"
-      description: Remove all words and phrases from the dictionary. WARNING: This action clears all saved data.
+      name: Delete all words
+      description: Deletes all terms from the dictionary. WARNING- This action clears all saved data.
     - code: 4
-      name: Add words from file
       mx: "6.3"
+      name: Add words from a file
       description: Adds words to the dictionary from a file on the device.
     - code: 5
-      name: Delete words from file
       mx: "6.3"
-      description: Removes words from the dictionary matching words in a file on the device.
+      name: Delete words from a file
+      description: Removes terms from the dictionary that match terms specified in a file on the device.
     - code: 6
-      name: Export words to file
       mx: "6.3"
-      description: Saves all words and phrases in the dictionary to a file on the device.
+      name: Export words to a file
+      description: Saves terms in the current dictionary to a file on the device.
 ---
 
-Controls the addition and deletion of individual words and/or phrases into and out of the Personal Dictionary and the deletion of all saved data. 
+Controls the addition and deletion of terms (words and/or phrases) into and out of the Personal Dictionary. Terms can be added or removed one at a time or in bulk from a text file stored on the device and specified using the AddWordsFromFile and DeleteWordsFromFile parameters. 
+

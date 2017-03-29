@@ -2,8 +2,8 @@
 publish: true
 title: Serial Communication
 description: This sample demonstrates the EMDK Serial Communication API to enable support for DEX in your application. DEX (data exchange) is a format for collecting audit and event data from vending machines.
-download: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/archive/SerialCommSample1.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/tree/SerialCommSample1'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/archive/SerialCommSample1.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/tree/SerialCommSample1'
 features: null
 devices:
   - TC75KK

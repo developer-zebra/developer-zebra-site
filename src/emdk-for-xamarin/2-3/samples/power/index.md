@@ -2,8 +2,8 @@
 publish: true
 title: Rebooting The Device
 description: 'This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).'
-download: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/archive/ProfilePowerMgrSample1.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/tree/ProfilePowerMgrSample1'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/archive/ProfilePowerMgrSample1.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/tree/ProfilePowerMgrSample1'
 features:
   - Profile Manager
   - Power Manager

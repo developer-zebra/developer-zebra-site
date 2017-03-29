@@ -2,8 +2,8 @@
 publish: true
 title: Scan and Pair
 description: This sample application will show how the Scan and Pair API can be used to pair two bluetooth devices programmatically.
-download: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/archive/ScanAndPairSample1.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/tree/ScanAndPairSample1'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/archive/ScanAndPairSample1.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/tree/ScanAndPairSample1'
 features:
   - Profile Manager
   - Scan and Pair

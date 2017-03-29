@@ -2,8 +2,8 @@
 publish: true
 title: WiFi Configuration
 description: This sample application demonstrate how to manage WiFi networks.
-download: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/archive/ProfileWifiSample1.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-2_2/tree/ProfileWifiSample1'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/archive/ProfileWifiSample1.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-2_3/tree/ProfileWifiSample1'
 features:
   - Profile Manager
   - WiFi Manager

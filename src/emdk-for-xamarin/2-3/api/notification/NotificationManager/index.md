@@ -1,8 +1,8 @@
 ---
 title: NotificationManager
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This is the primary object to access the notification feature.
 
@@ -37,9 +37,5 @@ Returns the notification device based on the device identifier provided. You mus
 Returns list of supported notification devices information.
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Notification.DeviceInfo>
-
-
-
-
 
 

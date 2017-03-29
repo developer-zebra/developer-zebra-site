@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairConfig.ScanInformation
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This class is used by the ScanAndPairTool class. Specifies the scanning related information. The settings provided through this class are used for scanning the barcode. It also exposes the scanned data. NOTE: The maximum allowed length of the barcode that can be scanned is 123 characters.
 
@@ -34,9 +34,5 @@ Scan timeout in milliseconds. Specifies the time duration within which the barco
 Specifies the type of trigger to be used. The default value is AUTO. If manual, then the hardware trigger needs to be manually pressed to turn ON the scanner. If auto, then the scanner is turned ON automatically and no need to press any triggers.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType
-
-
-
-
 
 

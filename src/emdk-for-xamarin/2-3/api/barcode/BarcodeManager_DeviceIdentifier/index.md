@@ -1,8 +1,8 @@
 ---
 title: BarcodeManager.DeviceIdentifier
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Defines the specific scanner devices of each type.
 
@@ -57,6 +57,10 @@ First available internal imager scanner
 First available internal laser scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
+###PluggableImagerRs5000
+First available pluggable imager RS5000 scanner
+
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###PluggableLaser1
 First available pluggable laser scanner
 
@@ -65,9 +69,5 @@ First available pluggable laser scanner
 Scanner is undefined
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
-
-
-
-
 
 

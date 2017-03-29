@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairConfig.NotificationTypes
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This enum provides notification related information during scanning process and is used by the ScanAndPair APIs to set the notification type. The notifications can be provided to the user to indicate the progress of the different scanning states via beep sequences.  The beep sequence is explained below 
 
@@ -46,9 +46,5 @@ Beeper notification. Raises pre-defined beep sequences. This will give the user 
 Disable notification. Do not raise notification for any type of operations.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes
-
-
-
-
 
 

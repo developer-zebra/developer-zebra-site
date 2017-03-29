@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.SecurityLevel
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 The scanner offers four levels of decode security for UPC/EAN bar codes. Select higher security levels for lower quality bar codes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
 
@@ -49,9 +49,5 @@ If the scanner is misdecoding poorly printed bar codes, and the misdecodes are n
 If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out of spec bar codes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try to improve the quality of the bar codes
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SecurityLevel
-
-
-
-
 
 

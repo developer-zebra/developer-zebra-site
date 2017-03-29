@@ -1,8 +1,8 @@
 ---
 title: StatusData
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This class provides the Status detail of ScanAndPair.
 
@@ -22,9 +22,5 @@ When the state is ERROR, this method can be used to find out the exact error inf
 State of the scanAndPair or scanAndUnpair method.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
-
-
-
-
 
 

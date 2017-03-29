@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.MsiDecoder
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 The Msi class provides access to parameters that are available for the Msi decoder.
 
@@ -34,9 +34,5 @@ Sets the reader to read the bar code twice before accepting data.
 Transmit MSI data with or without the check digit.
 
 **Type** - System.Boolean
-
-
-
-
 
 

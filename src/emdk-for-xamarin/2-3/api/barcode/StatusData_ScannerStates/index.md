@@ -1,8 +1,8 @@
 ---
 title: StatusData.ScannerStates
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Defines the different states of the barcode scanner.
 
@@ -53,9 +53,5 @@ Scanner beam is on and it is acquiring data.
 Scanner has issued reads request and is waiting for trigger event.
 
 **Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
-
-
-
-
 
 

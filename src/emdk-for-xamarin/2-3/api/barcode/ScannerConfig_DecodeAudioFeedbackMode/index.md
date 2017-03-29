@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecodeAudioFeedbackMode
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Describes the Audio Feedback Mode is given by the host device and remote scanner.
 
@@ -49,9 +49,5 @@ Audio Feedback is given by the Device.
 Audio Feedback is given by the remote scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeAudioFeedbackMode
-
-
-
-
 
 

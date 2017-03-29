@@ -1,8 +1,8 @@
 ---
 title: NotificationException
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 The methods of notification object will throw a NotificationException when an error occurred.
 
@@ -18,9 +18,5 @@ The error could be due to:
 Returns the NotificationResults enum value.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
-
-
-
-
 
 

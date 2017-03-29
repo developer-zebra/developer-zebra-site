@@ -1,8 +1,8 @@
 ---
 title: ScanDataCollection.ScanData
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 The object contains the barcode data that has been scanned and other useful information.
 
@@ -31,9 +31,5 @@ The barcode symbology that was scanned.
 The timestamp when the barcode was scanned.
 
 **Type** - System.String
-
-
-
-
 
 

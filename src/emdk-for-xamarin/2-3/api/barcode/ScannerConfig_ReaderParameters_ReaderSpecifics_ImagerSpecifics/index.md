@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.ImagerSpecifics
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 ImagerSpecific provides access to the imager specific parameters.
 
@@ -14,6 +14,14 @@ ImagerSpecific provides access to the imager specific parameters.
 Type of aiming pattern to be used for barcode scanning.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern
+###AimTimer
+Duration in milliseconds for timed aim types ScannerConfig.AimType.TIMED_HOLD and ScannerConfig.AimType.TIMED_RELEASE.
+
+**Type** - System.Int32
+###AimType
+Describes the type of aiming to use.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType
 ###BeamTimer
 Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely
 
@@ -26,6 +34,10 @@ This is the time (in seconds) when an external scanner is idle in a particular s
 ContinuousRead class provides access to continuous scanning related parameters.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters.ReaderSpecifics.ContinuousRead
+###DifferentSymbolTimeout
+This setting is used to prevent the scanner from decoding another symbol within this time interval.
+
+**Type** - System.Int32
 ###DisconnectOnExit
 This parameter indicates to the scan driver to disconnect any existing connection between an external Bluetooth scanner and the terminal. When a BT scanner establishes connection to the terminal it will not automatically disconnect when the scanner is disabled by calling Scanner.disable(). If this parameter is set the scanning driver will force the scanner to disconnect. Note: If this parameter is set to true, it will not fire the DISCONNECTED state.
 
@@ -58,13 +70,18 @@ This parameter sets the effort at which the decoder will attempt to decode margi
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode. Use class ScannerConfig.PickList.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList
+###PicklistEx
+Allows the imager to decode only the barcode that is directly under the cross-hair/reticle (+) part of the pattern.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PicklistEx
 ###PoorQualityDecodeEffortLevel
 This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel
+###SameSymbolTimeout
+This setting is used to prevent the scanner driver from decoding the same symbol within this time interval.
 
 
-
-
+**Type** - System.Int32
 
 

@@ -1,8 +1,8 @@
 ---
 title: NotificationResults
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Defines all the error codes that Notification API returns. 
 
@@ -79,9 +79,5 @@ Error code not defined.
         
 
 **Type** - System.Int32
-
-
-
-
 
 

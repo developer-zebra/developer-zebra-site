@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.ReaderParameters.ReaderSpecifics
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 ReaderSpecific class provides access to the reader specific parameters.
 
@@ -26,9 +26,5 @@ Provide access to set the imager specific settings if the scanner device is imag
 Provide access to set the laser specific settings if the scanner device is laser.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters.ReaderSpecifics.LaserSpecifics
-
-
-
-
 
 

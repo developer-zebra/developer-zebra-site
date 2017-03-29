@@ -1,8 +1,8 @@
 ---
 title: SerialCommMgr
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This is the primary object to access the serial communication feature to communicate with remote device wither via USB/Serial. This class design allows to communicate with only remote device at time.
 
@@ -25,6 +25,17 @@ This method enables the channel for the application to communicate with the remo
 
 **Returns** - System.Void
 
+###GetSignalState
+**public virtual bool GetSignalState (Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal p0);**
+
+This method can be used to query the signal status of DTR, DCD, DSR, RI, RTS, CTS.
+
+**Parameters:** 
+
+* Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal **p0** - 
+
+**Returns** - System.Boolean
+
 ###Read
 **public virtual byte[] Read (int p0);**
 
@@ -35,6 +46,18 @@ This method reads the available data and returns immediately. If no data is avai
 * System.Int32 **p0** - Wait for data until timeout. The timeout unit is milli seconds. A timeout of zero means the calling read will wait forever unless interrupted by disable or release.
 
 **Returns** - System.Byte[]
+
+###SetSignalState
+**public virtual void SetSignalState (Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal p0, bool p1);**
+
+This method allows the application to set the status of control signal. Only the RTS, DTR are allowed set. For other it should return error as read only.
+
+**Parameters:** 
+
+* Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal **p0** - Control Signal Type
+* System.Boolean **p1** - Status of the control signal
+
+**Returns** - System.Void
 
 ###Write
 **public virtual int Write (byte[] p0, int p1);**
@@ -50,13 +73,17 @@ Writes a specified number of bytes from buffer to the opened communication chann
 
 ##Properties
 
+###Config
+Gets the current configuration settings of serial comm channel.
+
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig
 ###IsEnabled
 Gets whether the communication port is enabled or not.
 
 **Type** - System.Boolean
+###PortInfo
+Returns the serial port info used for communication.
 
-
-
-
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialPortInfo
 
 

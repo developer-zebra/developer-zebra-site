@@ -1,8 +1,8 @@
 ---
 title: DeviceType
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 
     
@@ -46,9 +46,5 @@ Undefined
 Vibrator
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
-
-
-
-
 
 

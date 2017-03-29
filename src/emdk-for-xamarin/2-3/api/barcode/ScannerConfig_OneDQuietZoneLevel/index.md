@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.OneDQuietZoneLevel
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Describes the effort at which the decoder will attempt to decode margin-less barcodes.
 
@@ -46,9 +46,5 @@ The decoder requires only one side end of barcode.
 The decoder can decode anything.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel
-
-
-
-
 
 

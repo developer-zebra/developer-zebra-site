@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.Code128Decoder
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 The Code128 class provides access to parameters that are available for the Code128 decoder.
 
@@ -50,9 +50,5 @@ Sets the reader to read the bar code twice before accepting data.
 The scanner of fers four levels of decode security for Code 128 bar codes. Select increasing levels of security for decreasing levels of bar code quality. There is an inverse relationship between security and scanner aggressiveness, so choose only that level of security necessary for any given application. Use enum ScannerConfig.SecurityLevel.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.SecurityLevel
-
-
-
-
 
 

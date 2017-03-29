@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairResults
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Provides list of result codes for ScanAndPair class.
 
@@ -134,9 +134,5 @@ Error in closing scanner
 Success
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
-
-
-
-
 
 

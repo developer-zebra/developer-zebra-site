@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.PoorQualityDecodeEffortLevel
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Describes the selection of enhancement modes for decoding barcodes of poor or degraded quality.
 
@@ -13,10 +13,12 @@ Describes the selection of enhancement modes for decoding barcodes of poor or de
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PoorQualityDecodeEffortLevel
 
@@ -24,6 +26,7 @@ Describes the selection of enhancement modes for decoding barcodes of poor or de
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PoorQualityDecodeEffortLevel[]
@@ -46,9 +49,5 @@ Same as Level 1.
 Same as Level 1.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel
-
-
-
-
 
 

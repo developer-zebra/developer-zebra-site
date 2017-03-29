@@ -1,8 +1,8 @@
 ---
 title: ConnectionType
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 
     
@@ -46,9 +46,5 @@ Pluggable
 Undefined
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
-
-
-
-
 
 

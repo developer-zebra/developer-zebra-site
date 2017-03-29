@@ -1,8 +1,8 @@
 ---
 title: EMDKBase
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This is the base class for all the EMDK manager classes derived from.
 
@@ -15,9 +15,5 @@ This is the base class for all the EMDK manager classes derived from.
 Return the feature type of the object.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
-
-
-
-
 
 

@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairConfig.BluetoothInformation
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This class is used by the ScanAndPairTool class. Specifies the Bluetooth related information. The settings provided through this class are used for pairing/unpairing.
 
@@ -28,9 +28,5 @@ Specifies the MAC address of the remote Bluetooth device. If the ScanAndPair.alw
 User supplied pin for bluetooth pairing. Passed as an argument during scanAndPair and stored in this member variable for later use
 
 **Type** - System.String
-
-
-
-
 
 

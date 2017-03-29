@@ -1,8 +1,8 @@
 ---
 title: ScannerConfig.DecoderParameters.I2of5Decoder
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 The I2of5 class provides access to parameters that are available for the I2of5 decoder.
 
@@ -42,9 +42,5 @@ Specifies security level. Use class ScannerConfig.SecurityLevel.
 The check digit type to verify. Use enum ScannerConfig.CheckDigitType.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType
-
-
-
-
 
 

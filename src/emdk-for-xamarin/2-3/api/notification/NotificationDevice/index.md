@@ -1,8 +1,8 @@
 ---
 title: NotificationDevice
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 NotificationDevice class will represent and provides access to the physical notification device instance. This can be used with a connected notification device. Once disconnected, current instances cannot be used any longer. When connected again, you must use NotificationManager.getDevice() method to get a new notification device object.
 
@@ -67,9 +67,5 @@ Returns whether the notification device is connected to the Mobile device or not
 Returns whether the notification device is enabled or not.
 
 **Type** - System.Boolean
-
-
-
-
 
 

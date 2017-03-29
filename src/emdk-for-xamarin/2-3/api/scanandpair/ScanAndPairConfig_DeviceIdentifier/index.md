@@ -1,8 +1,8 @@
 ---
 title: ScanAndPairConfig.DeviceIdentifier
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Provides the list of DeviceIdentifier types.
 
@@ -53,9 +53,5 @@ Use first available imager
 Use first available laser scanner
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.DeviceIdentifier
-
-
-
-
 
 

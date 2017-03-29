@@ -1,8 +1,8 @@
 ---
 title: Notification.Beeping
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 
     
@@ -24,9 +24,5 @@ For example, for the current revision of RS6000 beeper hardware, it approximatel
 Beeping time in milliseconds. Default value assigned is 0. The supported values are 0ms to 2550ms. Behavior is undefined for any other value The RS6000 beeper will assume the end of sequence when an entry of 0 time is set.
 
 **Type** - System.Int32
-
-
-
-
 
 

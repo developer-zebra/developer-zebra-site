@@ -1,8 +1,8 @@
 ---
 title: EMDKManager.FEATURE_TYPE
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 This lists all the features exposed by the EMDK.
 
@@ -61,9 +61,5 @@ EMDK feature type for Serial Communication
 EMDK feature type version
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
-
-
-
-
 
 

@@ -1,8 +1,8 @@
 ---
 title: Notification
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 
     
@@ -30,9 +30,5 @@ productversion: '2.3'
         
 
 **Type** - Symbol.XamarinEMDK.Notification.Notification.VibrateParams
-
-
-
-
 
 

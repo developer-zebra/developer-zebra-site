@@ -1,8 +1,8 @@
 ---
 title: NotificationManager.DeviceIdentifier
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.3'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.3' 
 ---
 Defines specific notification devices of each type.
 
@@ -45,9 +45,5 @@ Default
 External Vibrator
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier
-
-
-
-
 
 

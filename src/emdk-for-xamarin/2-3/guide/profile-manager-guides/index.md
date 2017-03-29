@@ -30,6 +30,8 @@ automenu:
           url: /emdk-for-xamarin/2-3/mx/data-capture/activity
         - title: Barcode Input
           url: /emdk-for-xamarin/2-3/mx/data-capture/barcode
+        - title: Data Capture Plus
+          url: /emdk-for-xamarin/2-3/mx/data-capture/data-capture-plus
         - title: Int Output
           url: /emdk-for-xamarin/2-3/mx/data-capture/intent
         - title: IP Output

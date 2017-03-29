@@ -56,6 +56,7 @@ Allows configuration of the Intent Feature for the profile. The Intent Output Fe
 	* Send via StartActivity
 	* Send via startService
 	* Broadcast intent
+* Receiver Foreground Flag - When Intent delivery is sent via Broadcast Intent, DataCapture sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. **Note: Use this flag only if delays are seen in delivery of Intents immediately following device boot-up**.
 
 > Note: Most scanning applications might want the user to be able to decode data and for that decode data to be sent to the *current* activity but not necessarily displayed. If this is the case, then the activity needs to be marked as ‘singleTop’ in its AndroidManifest.xml file. If your activity is not defined as singleTop, then on every decode, the system will create another copy of your Activity and send the decode data to this second copy.
 
@@ -74,29 +75,29 @@ Allows configuration of any data formatting. When disabled, any data is passed o
 ## EMDK Intent Return Parameters
 The decode related data added to the Intent's bundle can be retrieved using the Intent.getStringtExtra() and Intent.getSerializableExtra() calls, using the following String tags:
 
-* `com.motorolasolutions.emdk.datawedge.label_type`: String contains the label type of the bar code.
-* `com.motorolasolutions.emdk.datawedge.data_string`:
+* `com.symbol.emdk.datawedge.label_type`: String contains the label type of the bar code.
+* `com.symbol.emdk.datawedge.data_string`:
 String contains the output data as a String. In the case of concatenated bar codes, the decode data is concatenated and sent out as a single string. In the case of MSR output, the data from the MSR tracks is concatenated and sent out as a single string.
-* `com.motorolasolutions.emdk.datawedge.decode_data`:
+* `com.symbol.emdk.datawedge.decode_data`:
 Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation e.g. Codabar, Code128, MicroPDF, etc., the decoded data is stored in multiple byte arrays (one byte array per bar code). Clients can get data in each byte array by passing an index.
 
 The MSR related data added to the Intent's bundle can be retrieved using the Intent.getStringtExtra() and Intent.getSerializableExtra() calls, using the following String tags:
 
-* `com.motorolasolutions.emdk.datawedge.msr_data`:
+* `com.symbol.emdk.datawedge.msr_data`:
 The data from the MSR tracks is concatenated and sent out as a byte array. The Start/end sentinels and
 track separators are included as configured.
-* `com.motorolasolutions.emdk.datawedge.msr_track1`: MSR track 1 data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track2`: MSR track 2 data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track3`: MSR track 3 data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track1_status`: MSR track 1 decode status as an Integer where 0 indicates a successful decode.
-* `com.motorolasolutions.emdk.datawedge.msr_track2_status`: MSR track 2 decode status as an Integer where 0 indicates a successful decode.
-* `com.motorolasolutions.emdk.datawedge.msr_track3_status`: MSR track 3 decode status as an Integer where 0 indicates a successful decode.
-* `com.motorolasolutions.emdk.datawedge.msr_track1_encrypted`: MSR track 1 encrypted data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track2_encrypted`: MSR track 2 encrypted data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track3_encrypted`: MSR track 3 encrypted data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track1_hashed`: MSR track 1 hashed data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track2_hashed`: MSR track 2 hashed data is returned as a byte array.
-* `com.motorolasolutions.emdk.datawedge.msr_track3_hashed`: MSR track 3 hashed data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track1`: MSR track 1 data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track2`: MSR track 2 data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track3`: MSR track 3 data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track1_status`: MSR track 1 decode status as an Integer where 0 indicates a successful decode.
+* `com.symbol.emdk.datawedge.msr_track2_status`: MSR track 2 decode status as an Integer where 0 indicates a successful decode.
+* `com.symbol.emdk.datawedge.msr_track3_status`: MSR track 3 decode status as an Integer where 0 indicates a successful decode.
+* `com.symbol.emdk.datawedge.msr_track1_encrypted`: MSR track 1 encrypted data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track2_encrypted`: MSR track 2 encrypted data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track3_encrypted`: MSR track 3 encrypted data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track1_hashed`: MSR track 1 hashed data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track2_hashed`: MSR track 2 hashed data is returned as a byte array.
+* `com.symbol.emdk.datawedge.msr_track3_hashed`: MSR track 3 hashed data is returned as a byte array.
 
 
 

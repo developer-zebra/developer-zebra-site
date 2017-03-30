@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Boot File Name (67)
 type: parm
-order: 8
+order: 27
 mx: "4.4"
 parm:
   pivotal: No

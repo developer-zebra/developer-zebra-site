@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: User Class (77)
 type: parm
-order: 4
+order: 35
 mx: "4.4"
 parm:
   pivotal: Yes

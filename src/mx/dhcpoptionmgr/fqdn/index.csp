@@ -1,0 +1,31 @@
+---
+csp: dhcpoptionmgr
+title: FQDN Enable/Disable (81)
+type: parm
+order: 40
+mx: "6.3"
+parm:
+  pivotal: Yes
+  name: FqdnState
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+    - code: 1
+      name: Enable
+      mx: "6.3"
+      description: Enables fqdn bro.
+    - code: 2
+      name: Disable
+      mx: "6.3"
+      description: disables it, yo.
+---
+
+ENG
+
+
+-Option 81: Functionality to enable/disable FQDN, and add custom 
+value for both Client Flags and FQDN value which will be sent
+ to DHCP server in Discover/Request packets.

@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Vendor Class Identifier (60)
 type: parm
-order: 12
+order: 20
 mx: "5.0"
 parm:
   pivotal: No

@@ -1,5 +1,5 @@
 ---
-title: DHCP Manager
+title: DHCP Option Manager
 description: The DhcpOptionMgr allows an app to configure DHCP options.
 layout: csp-detail.html
 mxversions:

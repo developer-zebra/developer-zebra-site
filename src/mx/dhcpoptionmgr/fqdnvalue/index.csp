@@ -1,0 +1,18 @@
+---
+csp: dhcpoptionmgr
+title: FQDN Value
+type: parm
+order: 41
+mx: "6.3"
+parm:
+  presentif: FQDN is set to "Enable"
+  pivotal: Yes
+  name: FqdnValue
+  type: string
+---
+
+desc. 
+
+**Parm value input rules**: 
+
+* String with a minimum size of 1 character and a maximum size of 91 characters

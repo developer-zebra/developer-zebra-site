@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: User Class value
 type: parm
-order: 5
+order: 75
 mx: "4.4"
 parm:
   presentif: User Class is "Enable"

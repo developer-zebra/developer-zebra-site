@@ -1,0 +1,32 @@
+---
+csp: dhcpoptionmgr
+title: Class Identifier Enable/Disable (61)
+type: parm
+order: 21
+mx: "6.3"
+parm:
+  pivotal: Yes
+  name: ClientIdentifier
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+    - code: 1
+      name: Enable
+      mx: "6.3"
+      description: Enables class identifier, which means this 
+    - code: 2
+      name: Disable
+      mx: "6.3"
+      description: Prevents Class Identifier, meaning that. 
+---
+
+Class Identifier desc.
+
+ENG:
+-Option 61: Functionality to enable/disable Client Identifier,
+and add custom value for option which will be sent
+to DHCP server in Discover/Request packets.
+

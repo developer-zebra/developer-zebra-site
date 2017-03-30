@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Broadcast Address (28)
 type: parm
-order: 6
+order: 5
 mx: "4.4"
 parm:
   pivotal: No

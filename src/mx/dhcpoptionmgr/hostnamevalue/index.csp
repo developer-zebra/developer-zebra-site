@@ -15,4 +15,4 @@ Used to specify the Host Name that will be sent by the DHCP Client to the DHCP S
 
 **Parm value input rules**: 
 
-* String with a minimum size of 1 character and a maximum size of 91 characters
+* String from 1-91 characters containg a host name

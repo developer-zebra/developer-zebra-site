@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: Vendor Specific2 (188)
+title: Vendor Specific2 Enable/Disable (188)
 type: parm
 order: 61
 mx: "5.0"

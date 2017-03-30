@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: User Class value
+title: User Class Value
 type: parm
 order: 75
 mx: "4.4"

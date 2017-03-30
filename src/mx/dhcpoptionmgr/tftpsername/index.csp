@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: TFTP Server Name (66)
+title: TFTP Server Name Enable/Disable (66)
 type: parm
 order: 25
 mx: "4.4"

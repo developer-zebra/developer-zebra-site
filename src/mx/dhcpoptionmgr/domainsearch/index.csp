@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: Domain Search (119)
+title: Domain Search Enable/Disable (119)
 type: parm
 order: 45
 mx: "4.4"

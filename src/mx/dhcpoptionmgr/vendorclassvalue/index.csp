@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: Vendor Class value
+title: Vendor Class Value
 type: parm
 order: 80
 mx: "5.0"

@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: Vendor Specific3 (230)
+title: Vendor Specific3 Enable/Disable (230)
 type: parm
 order: 62
 mx: "6.3"

@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Used to specify the full path and file name of the file containing terms to be added to the Personal Dictionary. 
+Used to specify the path and file name of a file on the device containing terms to be added to the Personal Dictionary. **A note about performance**: Duplicate checking will increase 
 
 **Parm value input rules**:
 

@@ -13,11 +13,13 @@ parm:
     - code: 0
       mx: "6.3"
       name: (unchecked)
-      description: All terms are appended to the Personal Dictionary without regard to duplication.
-    - code: 1
-      mx: "6.0"      
-      name: (checked)
       description: Terms are appended to the Personal Dictionary only if not already present.
+    - code: 1
+      mx: "6.3"      
+      name: (checked)
+      description: All terms are appended to the Personal Dictionary without regard to duplication.
 ---
 
-Determines whether terms contained in a file will be appended to the Personal Dictionary if they already exist in that dictionary. When this box is checked (value=1), all terms in the specified file are appended to the Personal Dictionary without regard to duplication. When unchecked (value=0), unique terms are added and duplicate terms are ignored. 
+Determines whether to allow duplicate terms to be appended to the Personal Dictionary when using the "Add words from a file" parameter. When this box is checked (value=1), all terms in the specified file are appended to the Personal Dictionary without regard to duplication. When unchecked (value=0), duplicate terms are deleted from the dictionary and added from the file. 
+
+**<u>Duplicate checking is case sensitive</u>**. This allows certain abbreviations to exist along with their common language equivalents. For example, the abbreviation "AD" has many uses in the medical profession, while its lower-case equivalent "ad" is commonly used to refer to an advertisement. However, this attribute over time could result in a dictionary containing duplicates of equivalent terms. For example, "Crohn's disease" and "Crohn's Disease" are like terms, but are treated as different by the duplication-checking function. 

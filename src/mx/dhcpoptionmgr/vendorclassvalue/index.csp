@@ -13,6 +13,6 @@ parm:
 
 Used to specify the Vendor Class value that will be sent by the DHCP Client to the DHCP Server in the DHCP Request.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String with a minimum size of 1 character and a maximum size of 91 characters

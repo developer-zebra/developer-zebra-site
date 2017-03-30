@@ -21,8 +21,8 @@ DHCP Options are variable-length strings that are identified by DHCP Options Num
 		<th>DHCP Option Number</th>
 		<th>DHCP Option Name</th>
 		<th>Default State</th>
-		<th>Configurable?</th>
-		<th>Supported Mode(s)</th>
+		<th>Configurable</th>
+		<th>Supported Mode</th>
 	</tr>
   <tr>
     <td>1</td>

@@ -13,7 +13,7 @@ DHCP Options are variable-length strings that are identified by DHCP Options Num
 
 ### Main Functionality
 
-* Enable or Disable the use of DHCP Options listed as configurable in the following table:
+* Enable/Disable and set values of configurable DHCP options listed below:
 
 <div class="dhcp-table">
  <table class="table">

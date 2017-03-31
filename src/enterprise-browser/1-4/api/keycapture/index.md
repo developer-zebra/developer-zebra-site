@@ -162,6 +162,9 @@ It is not possible to capture the following types of keys:
 8. On ET1, Search (P3) key is application specific. Dispatching this key within the Enterprise Browser wont do anything as the Enterprise Browser doesn't do anything specific with this key (unlike the menu key which raises the menu).
 Although on some device configurations pressing the SHIFT key twice generates CAPS LOCK which can be captured with a key value of 16.
 
+###Persistence Behavior
+KeyCapture remains persistent across pages when Enterprise Browser KeyCapture module is used. If user needs a non persistent behavior, use instead [RhoElements 2.X KeyCapture Module](../re2x/keycapture).
+
 ###Precedence of APIs using the same keyValue
 If captureKey and remapKey have been called with the same keyValue, the remapKey will take precedence. In this case this means that the keyEvent for the inputted key will not be fired as the remapping will occur and consume the key event.
 
@@ -186,7 +189,7 @@ If you have enabled the function key in the configuration settings and that func
 Some keys which are meant for performing multiple functionalities but performs the single functionality may return the single code value. In that case it is recommended to remap the key code value with the expected desired keycode value.
 
 ###VC70 Hardware Keys
-The VC70 has a hardware keys (P1, P2, P3 and P4 as well as a brightness button) which are not capturable by the KeyCapture module. Additionally the the default Operating system behavior (like volume up / down) of hardware keys can not be blocked when the app is running in full-screen mode.
+The VC70 has a hardware keys (P1, P2, P3 and P4 as well as a brightness button) which are not capturable by the KeyCapture module. Additionally the default Operating system behavior (like volume up / down) of hardware keys can not be blocked when the app is running in full-screen mode.
 
 ###ES400 Application Keys
 The ES400 has a hardware messaging key with an envelope icon on it that does not function like a standard Application Key. To disable this key go to 'Settings' on the device, then 'Personal', then 'KeyRemap' and remap it to a key not in use. Also note that the 'Sym' key on the ES400 is not capturable.

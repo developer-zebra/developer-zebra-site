@@ -11,4 +11,8 @@ parm:
   type: string
 ---
 
-Specify the path and folder name of where the downloaded archive file should be expanded. Max length: 255 characters.
+Used to specify the path and folder name into which the downloaded archive file should be expanded. 
+
+**Parm value input rules**:
+
+* String from 1 - 255 containing the path and file name of the destination folder

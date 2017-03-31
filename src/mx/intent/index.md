@@ -1,6 +1,6 @@
 ---
-title: Intent Manager
-description: The Intent Manager allows an application to communicate with other applications using Android Intents.
+title: Intent
+description: The Intent CSP allows an application to communicate with other applications using Android Intents.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

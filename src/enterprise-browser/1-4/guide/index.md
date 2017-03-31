@@ -24,18 +24,16 @@ automenu:
           url: ShortcutCreator
     - title: Application Usage
       items:
-        - title: Certificates
-          url: certificates
         - title: DataWedge
           url: datawedge
         - title: DOM Injection
           url: DOMinjection
         - title: Feature Demo app
           url: featuredemo
+        - title: Keycode Mapping
+          url: keycapture
         - title: Printing
           url: printingGuide
-        - title: Key Remapping
-          url: keycapture
         - title: SAP ITSmobile
           url: sap
         - title: Viewport
@@ -46,6 +44,8 @@ automenu:
           url: logging
         - title: On-Device Debugging
           url: debuggingjs
+        - title: Sample Apps
+          url: samples
     - title: Migration
       items:
         - title: From Pocket Browser 2.x/3x
@@ -54,6 +54,14 @@ automenu:
           url: elements
         - title: From RhoMobile 4.x
           url: rhomobile
+    - title: Security
+      items:
+        - title: Security Overview
+          url: security
+        - title: Certificates
+          url: certificates
+        - title: TLS/SSL Compliance
+          url: compliance
 product: Enterprise Browser
 productversion: '1.4'
 ---

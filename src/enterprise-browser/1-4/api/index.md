@@ -83,7 +83,7 @@ automenu:
     - title: RhoElements 2.x APIs
       items:
         - title: AddressBar
-          url: re2x/addressbar
+          url: re2x/AddressBar
         - title: Airbeam
           url: re2x/airbeam
         - title: Alarm
@@ -95,13 +95,13 @@ automenu:
         - title: AudioCapture
           url: re2x/AudioCapture
         - title: BackButton
-          url: re2x/backbutton
+          url: re2x/BackButton
         - title: Backlight
           url: re2x/backlight
         - title: Battery
           url: re2x/battery
         - title: BottomCommandArea
-          url: re2x/bottomcommandarea
+          url: re2x/BottomCommandArea
         - title: CardReader
           url: re2x/cardreader
         - title: Comm
@@ -115,15 +115,15 @@ automenu:
         - title: FileTransfer
           url: re2x/FileTransfer
         - title: ForwardButton
-          url: re2x/forwardbutton
+          url: re2x/ForwardButton
         - title: Generic 
           url: re2x/generic
         - title: Gesture
-          url: re2x/Gesture
+          url: re2x/gesture
         - title: GoButton
-          url: re2x/gobutton
+          url: re2x/GoButton
         - title: History 
-          url: re2x/History
+          url: re2x/history
         - title: HomeButton
           url: re2x/HomeButton
         - title: Hourglass
@@ -133,15 +133,15 @@ automenu:
         - title: KeyCapture
           url: re2x/keycapture
         - title: Keylight
-          url: re2x/Keylight
+          url: re2x/keylight
         - title: KeyState
           url: re2x/keystate
         - title: MediaPlayer
-          url: re2x/mediaPlayer
+          url: re2x/MediaPlayer
         - title: Memory
           url: re2x/memory
         - title: MinimizeButton
-          url: re2x/minimizebutton
+          url: re2x/MinimizeButton
         - title: Network
           url: re2x/network
         - title: Notification
@@ -149,11 +149,11 @@ automenu:
         - title: ODAX 
           url: re2x/odax
         - title: PowerOn
-          url: re2x/poweron
+          url: re2x/PowerOn
         - title: Push
           url: re2x/push
         - title: Quit Button
-          url: re2x/quitbutton
+          url: re2x/QuitButton
         - title: RawSensor 
           url: re2x/RawSensor
         - title: Reboot
@@ -161,15 +161,15 @@ automenu:
         - title: Registry
           url: re2x/registry
         - title: Reload Button
-          url: re2x/reloadbutton
+          url: re2x/ReloadButton
         - title: RFID 
           url: re2x/rfid
         - title: RSM 
-          url: re2x/RSM
+          url: re2x/rsm
         - title: Scanner 
           url: re2x/scanner
         - title: ScreenOrientation
-          url: re2x/screenorientation
+          url: re2x/ScreenOrientation
         - title: Signal 
           url: re2x/signal
         - title: SignatureCapture 
@@ -177,17 +177,17 @@ automenu:
         - title: SIP
           url: re2x/sip
         - title: SipButton
-          url: re2x/sipbutton
+          url: re2x/SipButton
         - title: StopButton
-          url: re2x/stopbutton
+          url: re2x/StopButton
         - title: Stylus
           url: re2x/stylus
         - title: SystemTime
-          url: re2x/systemTime
+          url: re2x/SystemTime
         - title: Timer
           url: re2x/timer
         - title: TopCommandArea
-          url: re2x/topcommandarea
+          url: re2x/TopCommandArea
         - title: VideoCapture
           url: re2x/VideoCapture
         - title: Volume
@@ -197,11 +197,11 @@ automenu:
         - title: Zoom
           url: re2x/zoom
         - title: ZoomTextButton
-          url: re2x/zoomTextButton
+          url: re2x/ZoomTextButton
     - title: PocketBrowser 3.x APIs
       items:
         - title: AddressBar
-          url: pb3x/addressbar
+          url: pb3x/AddressBar
         - title: Airbeam Smart 
           url: pb3x/toc_airbeam
         - title: Alarm

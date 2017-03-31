@@ -338,7 +338,7 @@ The page you want should look something like this:
 ![img](../../images/getting-started/setup/setup-device-drivers-download.png) 
 
 1. The ActiveSync installer will deploy the selected Enterprise Browser runtime files to the device. 
-2. If installing one of the the persistent runtimes for Windows CE, a cold boot/clean PS will be required after installation.
+2. If installing one of the persistent runtimes for Windows CE, a cold boot/clean PS will be required after installation.
 
 > **Note**: Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
 

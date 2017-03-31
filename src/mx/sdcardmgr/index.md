@@ -1,6 +1,6 @@
 ---
 title: SD Card Manager
-description: The SdCardMgr controls whether External Storage can be used on the device.
+description: The SdCardMgr controls the use of device storage, primarily as a security measure.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

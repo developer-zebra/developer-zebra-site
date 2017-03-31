@@ -1,0 +1,35 @@
+---
+csp: touchmgr
+title: Touch Action Any
+type: parm
+order: 5
+mx: "6.2"
+parm:
+  presentif: Device Type is set to "Any"
+  pivotal: No
+  name: TouchActionAny
+  type: list
+  list:
+    - code: 0
+      mx: "6.2"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode; any previously selected setting will be retained. 
+    - code: 1
+      name: Stylus and Finger 
+      mx: "6.2"
+      description: Adjusts touch-screen sensitivity for input with a stylus or bare finger.
+    - code: 2
+      name: Glove and Finger
+      mx: "6.2"
+      description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
+    - code: 3
+      name: Finger Only
+      mx: "6.2"
+      description: Adjusts touch-screen sensitivity for input with a bare finger only.
+    - code: 4
+      name: Stylus, Glove and Finger
+      mx: "6.2"
+      description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.
+---
+
+Used to specify Touch-Mode settings applicable to any device corresponding to touch-screen sensitivity required for an expected usage scenario.

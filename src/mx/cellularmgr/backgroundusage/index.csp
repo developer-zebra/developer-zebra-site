@@ -1,8 +1,8 @@
 ---
 csp: cellularmgr
-title: Enable/DisableBackground Data Option
+title:  Background Data Enable/Disable
 type: parm
-order: 6
+order: 15
 mx: "4.4"
 osx: "4.4"
 parm:
@@ -14,17 +14,19 @@ parm:
       mx: "4.4"
       osx: "4.4"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to whether the state of the Background Data Option can be changed.
+      description: This value (or the absence of this parm from the XML) will cause no change to user control over usage of the Background Data Option; any previously selected setting will be retained.
     - code: 1
       name: Enable
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause the state of the Background Data Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr.
+      description: Enables Background Data to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
     - code: 2
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause the state of the Background Data Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr.
+      description: Disables Background Data from being used on the device and prevents its state (active/inactive) from being controlled programmatically or by the device user.
 ---
 
-This parm allows you to control whether the state of the Background Data Option can be changed.
+Used to control whether the device user has access to the Background Data option on the device. When Disabled, Background Data cannot be turned on or off programmatically or by the device user.
+
+The Background Data Option determines whether applications that are not in the foreground should be permitted to maintain a data connection over the cellular network (if they are capable of doing so). For example, some email applications continue to download messages while other apps are active or when the device's screen is turned off. **The convenience of having data ready "when it's asked for" must be considered when planning for cellular bandwidth utilization and weighed against the potential for data overage and roaming costs**. 

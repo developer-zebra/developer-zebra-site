@@ -1,6 +1,6 @@
 ---
 title: Cellular Manager
-description: "The CellularMgr controls the way a device's Cellular data connection is used."
+description: "The CellularMgr controls the way a device's cellular data connection is used."
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

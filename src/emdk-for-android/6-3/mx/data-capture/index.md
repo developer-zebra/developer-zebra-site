@@ -14,6 +14,10 @@ contentlist:
         description: Set and configure barcode as the input source.
         url: barcode
         icon: barcode.png
+      - title: Data Capture Plus
+        description: Data Capture Plus (formerly known as the "Data Capture Panel")enables areas of the device screen to be designated as scan triggers. 
+        url: data-capture-plus
+        icon: barcode.png
       - title: Intent Output
         description: Output the data captured as an intent.
         icon: intent.png

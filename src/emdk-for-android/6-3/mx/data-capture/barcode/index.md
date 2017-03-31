@@ -6,10 +6,10 @@ productversion: '6.3'
 ---
 
 ## Overview
-In order to get Barcode data in your application, you must create a profile with two profile features selected:
+To get Barcode data into an application, create a profile with two profile features selected:
 
 * Barcode
-* [Keystroke](/emdk-for-android/6-3/guide/profiles/profilekeystroke),[Intent](/emdk-for-android/6-3/guide/profiles/profileintent),[IP](/emdk-for-android/6-3/guide/profiles/profileIP) (Output)
+* [Keystroke](../keystroke), [Intent](../intent), [IP](../IP) (Output)
 
 The `Barcode` feature in the Profile Manager is responsible for reading data from the device's integrated bar code scanner and supports different types of bar code readers including laser, imager and internal camera. It also contains detailed parameters for scanner behavior as well as individual barcode symbology parameters.
 
@@ -22,7 +22,7 @@ The `Intent`, `Keystroke` or `IP` feature in the Profile Manager is used to defi
 * IP - IP Output allows DataWedge to send captured data to a host computer via a network connection. Captured data can be sent over an IP network to a specified IP address and port using either TCP or UDP transport protocols.
 
 ## Name
-The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/6-3/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/6-3/guide/profile-manager) for more information.
+The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](../../../api) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](../../../guide/profile-manager) for more information.
 
 ## Enabled
 Enables or disables this feature. Default is enabled.
@@ -31,8 +31,31 @@ Enables or disables this feature. Default is enabled.
 Configures which scanning device to use for data capture.
 
 * Auto - Automatically determines the best scanning device. If a Scan Module or Scan/MSR Module is installed on the MC40, then the 2D imager is selected. Otherwise the camera is selected.
-* Camera Scanner - Scanning is performed with the rear-facing camera.
-* 2D Imager - Scanning is performed using the installed Scan or Scan/MSR module.
+* Internal Laser 1 - Scanning is performed using the internal 1D laser scanner.
+* Internal Imager 1 - Scanning is performed using the internal 2D scanner or MSR module.
+* Internal Camera 1 - Scanning is performed with the rear-facing camera.
+* Pluggable Laser 1 - Scanning is performed using an external 1D laser scanner plugged into the device.
+* Bluetooth Imager 1 - Scanning is performed using an external 2D scanner connected via BlueTooth.
+* RS5000 Pluggable Imager - Scanning is performed using a Pluggable RS5000 Scanner.
+* RS6000 Bluetooth Imager - Scanning is performed using a RS6000 over Bluetooth.
+
+The following Bluetooth scanners are supported: 
+
+* **Zebra RS507** Cordless Ring Scanner
+* **RS6000 Bluetooth Ring Scanner** (when used with WT6000 only)  
+
+Bluetooth scanners are supported according to the following rules:
+
+* **To initially configure the RS507** in a Profile, the scanner must be paired and connected.
+* **After initial configuration**, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
+* **The device will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while it is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
+* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataCapture will revert to the current default scanner.
+
+## Keep Enabled on Suspend 
+This mode is supported on Bluetooth and pluggable scanners only, and might result in faster battery drain than would otherwise be expected while in suspend mode. 
+
+**Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
+
 
 ## Decoders
 Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
@@ -358,14 +381,12 @@ Allows the configuration of Code Id and decode feedback options.
 	* Off on power down
 	* Power down only after LED off
 
-
-
 ## Output Data
-In order for your application to receive the barcode data, you must specify one or more Output features. Please  refer to their reference documentation for more information.
+For an application to receive barcode data, one or more Output Features must be specified. See individual reference documentation for more information:
 
-* [Intent](/emdk-for-android/6-3/guide/profiles/profileintent)
-* [Keystroke](/emdk-for-android/6-3/guide/profiles/profilekeystroke)
-* [IP](/emdk-for-android/6-3/guide/profiles/profileIP)
+* [Intent](../intent)
+* [Keystroke](../keystroke)
+* [IP](../IP)
 
 
 

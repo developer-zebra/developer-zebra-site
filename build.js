@@ -172,7 +172,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 
 var sitebuild = Metalsmith(__dirname)
     .clean(false)
-    .concurrency(1000)
+    .concurrency(2000)
 	.metadata({
 	    site: {
 	      title: 'Zebra Technologies - EMDK Samples',
@@ -637,16 +637,31 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-xamarin/2-2/'
     }))
     .use(foldermenu({
-        folder: 'mx/4-4/',
+        folder: 'emdk-for-xamarin/2-3/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'mx/5-0/',
-        automenu: true
+        folder: 'emdk-for-xamarin/2-3/api/notification',
+        automenu: true,
+        ascontent: true
+    }))    
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/api/scanandpair',
+        automenu: true,
+        ascontent: true
+    }))    
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/api/barcode',
+        automenu: true,
+        ascontent: true
     }))
     .use(foldermenu({
-        folder: 'mx/4-2/',
-        automenu: true
+        folder: 'emdk-for-xamarin/2-3/api/core',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/'
     }))
     .use(foldermenu({
         folder: 'mx/',
@@ -665,6 +680,12 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-4/'
     }))
     .use(foldermenu({
+        folder: 'stagenow/2-5/'
+    }))
+    .use(foldermenu({
+        folder: 'stagenow/2-6/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({
@@ -674,19 +695,22 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ehs/2-5/'
     }))
     .use(foldermenu({
-        folder: 'enterprise-browser/1-4/'
-    }))
-    .use(foldermenu({
         folder: 'datawedge/5-0/'
     }))
     .use(foldermenu({
         folder: 'datawedge/6-0/'
+    }))
+   .use(foldermenu({
+        folder: 'datawedge/6-2/'
     }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-4/'
     }))
         .use(foldermenu({
         folder: 'enterprise-browser/1-5/'
+    }))
+    .use(foldermenu({
+        folder: 'enterprise-browser/1-6/'
     }))
         .use(foldermenu({
         folder: 'enterprise-keyboard/1-0/'

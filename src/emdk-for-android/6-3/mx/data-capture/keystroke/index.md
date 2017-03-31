@@ -32,6 +32,9 @@ Use to configure the Keystroke Output Feature for the profile.
 	* Tab - Tab character (\t) in a bar code is processed.
 	* Line feed - Line feed character (\t) in a bar code is processed.
 	* Carriage return - Carriage return character (\t) in a bar code is processed.
+* Multi byte character delay - used to set an inter-character delay (in ms) for sending multibyte characters. This parameter can help avoid problems that arise when sending Unicode and multibyte characters to the Android browser. Value is set to zero by default. If experiencing errors in the delivery of keystrokes, increase the delay value in increments of 100 ms.
+* Key event delay - used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application. 
+
 
 ## Basic Data Formatting 
 Allows the configuration of any data formatting. When disabled, any data is passed on without modification.

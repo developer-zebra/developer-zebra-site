@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: Vendor Specific3 Enable/Disable (230)
+title: Vendor Specific 230 Enable/Disable
 type: parm
 order: 62
 mx: "6.3"
@@ -12,28 +12,15 @@ parm:
     - code: 0
       mx: "6.3"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured; any previously selected setting will be retianed.
     - code: 1
       name: Enable
       mx: "6.3"
-      description: blah blah enables
+      description: Enables vendor-specific DHCP Option 230 to be requested by the DHCP Client.
     - code: 2
       name: Disable
       mx: "6.3"
-      description: disabled, blah blah
+      description: Prevents vendor-specific DHCP Option 230 from being requested.
 ---
 
-vendory stuffidy stuff stuff
-
-Similar to Option 186, Vendor Specific2 (Option 188) can be requested by the DHCP client. The potential returned value of this request is determined by the vendor of the DHCP server.
-
-ENG: 
--Option 230: Functionality to enable/disable Vendor Specific 
-
-Opt 230
-
-Notes:
-
--Changes to BSP needed to support these newly added options. 
-Changes are featured
-in Atlas M already, and Option 61 partially supported in Moonlight. 
+Controls whether the vendor-specific option 230 can be requested by the DHCP client. The potential returned value of this request is determined by the DHCP server vendor.. 

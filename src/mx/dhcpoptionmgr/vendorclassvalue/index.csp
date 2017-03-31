@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Vendor Class Value
 type: parm
-order: 80
+order: 21
 mx: "5.0"
 parm:
   presentif: Vendor Class is "Enable"

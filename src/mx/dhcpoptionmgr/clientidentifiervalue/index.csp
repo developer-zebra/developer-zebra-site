@@ -1,11 +1,11 @@
 ---
 csp: dhcpoptionmgr
-title: Class Identifier Value
+title: Client Identifier Value
 type: parm
-order: 22
+order: 24
 mx: "6.3"
 parm:
-  presentif: Class Identifier is set to "Enable"
+  presentif: Client Identifier is set to "Enable"
   pivotal: Yes
   name: ClientIdentifierValue
   type: string

@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Client Identifier Enable/Disable (61)
 type: parm
-order: 21
+order: 23
 mx: "6.3"
 parm:
   pivotal: Yes

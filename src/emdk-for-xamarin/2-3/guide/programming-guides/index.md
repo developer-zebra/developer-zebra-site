@@ -10,9 +10,9 @@ content-items:
     url: /emdk-for-xamarin/2-3/guide/programming_practices
   - type: section
     level: 4
-    title: Barcode Scanner States
-    text: "This guide provides diagrams to illustrate the states that a barcode scanner will transition through while using the EMDK Barcode Scanning API's."
-    url: /emdk-for-xamarin/2-3/guide/scanner
+    title: Barcode API Programmer's Guide
+    text: The EMDK Barcode API provides applications with an ability to read a variety barcode labels using different scanner devices such as built-in imager/laser, built-in camera, Bluetooth ring scanners such as RS507 and RS600 and Pluggable ring scanner such as RS4000.
+    url: /emdk-for-xamarin/2-3/guide/barcode_scanning_guide
 
 product: EMDK For Xamarin
 productversion: '2.3'

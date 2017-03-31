@@ -1,0 +1,22 @@
+---
+csp: wifi
+title: Use Hotspot Options (checkbox)
+type: parm
+order: 71
+mx: "6.3"
+parm:
+  pivotal: No
+  name: UseHotspotOptions
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: (unchecked)
+      description: Prevents the device from being used as a Wi-Fi hotspot.
+    - code: 1
+      mx: "6.3"      
+      name: (checked)
+      description: Allows the device to be used as a Wi-Fi hotspot.
+---
+
+Determines whether the device is used as a hotspot. 

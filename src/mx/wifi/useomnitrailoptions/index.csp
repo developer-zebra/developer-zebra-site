@@ -1,0 +1,22 @@
+---
+csp: wifi
+title: Use OmniTrail Options (checkbox)
+type: parm
+order: 86
+mx: "6.3"
+parm:
+  pivotal: No
+  name: UseOmniTrailOptions
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: (unchecked)
+      description: Disables OmniTrail locationing services.
+    - code: 1
+      mx: "6.3"      
+      name: (checked)
+      description: Enables OmniTrail locationing services.
+---
+
+Determines whether OmniTrail locationing services are used and its options configurable. 

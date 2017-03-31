@@ -60,4 +60,4 @@ parm:
       description: Sets the data rate at 54.
 ---
 
-Controls the Wi-Fi operating mode to be used by OmniTrail power efficiency protocols. 
+Controls the Wi-Fi operating mode to be used by OmniTrail locationing services. 

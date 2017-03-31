@@ -6,7 +6,7 @@ order: 70
 mx: "6.3"
 parm:
   pivotal: No
-  presentif: The "Specify Hotspot Options" checkbox is checked
+  presentif: The "Use Hotspot Options" checkbox is checked
   name: Hotspot
   type: list
   list:
@@ -23,4 +23,5 @@ parm:
       name: Disable
       description: Disables use of the device as a Wi-Fi hotspot. 
 ---
-This is the On/Off switch for hotspot functionality on the device. When enabled, the device uses the settings configures with the hotspot parameters below to act as an access point for nearby devices to connect to the internet by sharing the device's network or cellular connection. 
+
+This is the On/Off switch for hotspot functionality on the device. When enabled, the device uses the settings configured with the hotspot parameters below to act as an access point for nearby devices to connect to the internet by sharing the device's network or cellular connection. 

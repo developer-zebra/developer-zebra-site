@@ -2,7 +2,7 @@
 csp: wifi
 title: Hotspot SSID
 type: parm
-order: 71
+order: 72
 mx: "6.3"
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"  

@@ -9,7 +9,7 @@ Wi-Fi Manager (Wi-Fi) administers the Wi-Fi settings and network profiles for a 
 
 **Note**: The Wi-Fi configuration service provider varies from some of the conventions used by other CSPs: 
 * The "Enable" and "Disable" settings in the Wi-Fi CSP control whether a user or administrator can "turn on" and "turn off" a feature or capability, or to set its state as "active" or "inactive." Such terms in other CSPs refer to the feature's "Usage" setting, which can prevent access to the feature entirely.
-* The value "0" is used in Wi-Fi parameters to "Disable" a feature, select its default setting or "make no change" or "do nothing" to a setting. In most other CSPs, the "0" value is used to select the "make no change" option.  
+* The value "0" is used in Wi-Fi parameters to "Disable" a feature, select its default setting to "make no change" or "do nothing" to a setting. In most other CSPs, the "0" value is used primarily to select the "make no change" option.  
 
 >**Note**: Enabling the Password Protect Encryption feature **prevents the Google Mobile Service (GMS) backup from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems. 
 

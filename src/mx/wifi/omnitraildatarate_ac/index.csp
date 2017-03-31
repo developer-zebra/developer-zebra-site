@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: OmniTrail ac Data Rates 
+title: OmniTrail "ac" Data Rates 
 type: parm
 order: 94
 mx: "6.3"
@@ -92,4 +92,4 @@ parm:
       description: Sets the MCS9_2 data rate.
 ---
 
-Controls the Wi-Fi operating mode to be used by OmniTrail power efficiency protocols. 
+Controls the Wi-Fi operating mode to be used by OmniTrail locationing services. 

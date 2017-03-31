@@ -1,0 +1,23 @@
+---
+csp: wifi
+title: Protect Hotspot Passphrases (checkbox)
+type: parm
+order: 79
+mx: "6.3"
+parm:
+  presentif: Hotspot is set to "Enable" and Hotspot Security mode is not "Open" 
+  pivotal: No
+  name: ProtectHotspotPassphrases
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      name: (unchecked)
+      description: Stores hotspot passwords as clear text.
+    - code: 1
+      mx: "6.3"      
+      name: (checked)
+      description: Stores hotspot password as encrupted text.
+---
+
+Determines whether the hotspot password stored on the device is encrypted, thereby preventing access to the clear-text password on the device by an application or malicious exploit. 

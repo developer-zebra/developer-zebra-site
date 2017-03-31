@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-desc. 
+Used to specify a fully qualified domain name (FQDN) for the DHCP client to communicate to the DHCP server.  
 
 **Parm value input rules**: 
 

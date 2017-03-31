@@ -11,8 +11,8 @@ parm:
   type: string
 ---
 
-desc
+Used to specify the value of the optional FQDN flag, which DHCP clients can use to convey information about DNS updates. 
 
 **Parm value input rules**: 
 
-* String from 1-91 characters containing an FQDN flag value
+* String of exactly 7 characters containing an FQDN flag value

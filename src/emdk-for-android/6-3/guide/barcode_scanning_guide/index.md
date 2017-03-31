@@ -105,14 +105,13 @@ The below code shows how to disable the Code 128 symbology and set beam timer fo
 
         :::java
         try {
-
-        ScannerConfig scannerConfig = scanner.getConfig();
-        scannerConfig.decoderParams.code128.enabled = false; 
+                ScannerConfig scannerConfig = scanner.getConfig();
+                scannerConfig.decoderParams.code128.enabled = false; 
                 
                 //Set beam timer for imager
                 config.readerParams.readerSpecific.imagerSpecific.beamTimer = 4000;
 
-        scanner.setConfig(config); 
+                scanner.setConfig(config); 
 
         } catch (ScannerException e) {
 
@@ -137,9 +136,9 @@ The below code snippet shows how to modify the beam timer for different scanner 
 
         :::java
         //Set beam timer for camera
-                config.readerParams.readerSpecific. cameraSpecific.beamTimer = 4000;
+        config.readerParams.readerSpecific. cameraSpecific.beamTimer = 4000;
         //Set beam timer for imager
-                config.readerParams.readerSpecific.imagerSpecific.beamTimer = 4000;
+        config.readerParams.readerSpecific.imagerSpecific.beamTimer = 4000;
         //Set beam timer for laser
         config.readerParams.readerSpecific.laserSpecific.beamTimer = 4000;
 

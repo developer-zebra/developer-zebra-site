@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Type 
 type: parm
-order: 86
+order: 96
 mx: "6.3"
 parm:
   pivotal: No

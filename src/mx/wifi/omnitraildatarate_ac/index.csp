@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail "ac" Data Rates 
 type: parm
-order: 94
+order: 93
 mx: "6.3"
 parm:
   pivotal: No

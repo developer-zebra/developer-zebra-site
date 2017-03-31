@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Interval
 type: parm
-order: 95
+order: 101
 mx: "6.3"
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked 

@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Channel
 type: parm
-order: 89
+order: 99
 mx: "6.3"
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked 

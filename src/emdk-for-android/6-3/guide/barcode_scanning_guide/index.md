@@ -120,6 +120,25 @@ The below code shows how to disable the Code 128 symbology and set beam timer fo
 
         }
 
+Calling SetConfig() should be done in the Status callback. This way you can check that the scanner is indeed IDLE and that a scanner read is not pending.
+
+Below is an example of how that should be done:
+
+        :::java
+        @Override
+        public void onStatus(StatusData statusData) {
+                ScannerStates state = statusData.getState();
+                switch(state) {
+                case IDLE:
+                        if(!scanner.isReadPending()){
+                        // call SetConfig() here
+                        }
+                break;
+
+                }
+        }
+
+
 ### Decoder Parameters
 
 The ScannerConfig.DecoderParams class provides an interface for the developer to enable or disable the decoder symbologies such as Code39, Code128, Code93, UPCEAN etc.  

@@ -40,6 +40,7 @@ release BarcodeManager before exiting the application.
 
         :::cs
         barcodeManager = (BarcodeManager)emdkManager.GetInstance(EMDKManager.FEATURE_TYPE.Barcode);
+        
 
 ### Getting Scanner
 
@@ -52,7 +53,7 @@ There are two options here:
 	If the specified Device Identifier is not supported on the target platform, call to “getDevice” will return null.
 
         :::cs
-        scanner = barcodeManager.GetDevice(DeviceIdentifier.BLUETOOTH_IMAGER_RS6000);
+        scanner = barcodeManager.GetDevice(BarcodeManager.DeviceIdentifier.BluetoothImagerRs6000);
 
 2.  **Get Scanner using ScannerInfo from device enumeration**
 
@@ -60,20 +61,21 @@ There are two options here:
 
         :::cs
         
-        IList<ScannerInfo> scannerList = barcodeManager.SupportedDevicesInfo;;
-        
+        IList<ScannerInfo> scannerList = barcodeManager.SupportedDevicesInfo; ;
+
         Scanner scanner = null;
 
         if ((scannerList != null) && (scannerList.Count > 0))
         {
-                foreach(ScannerInfo scnInfo in scannerList)
+                foreach (ScannerInfo scnInfo in scannerList)
                 {
-                if(scnInfo.getDeviceIdentifier()==DeviceIdentifier.BLUETOOTH_IMAGER_RS6000){
-                
-                        scanner = barcodeManager.GetDevice(scnInfo);
+                        if (scnInfo.DeviceIdentifier == BarcodeManager.DeviceIdentifier.BluetoothImagerRs6000)
+                        {
+
+                                scanner = barcodeManager.GetDevice(scnInfo);
                         }
                 }
-                        
+
         }
 
 
@@ -106,7 +108,7 @@ The below code shows how to disable the Code 128 symbology and set beam timer fo
         scannerConfig.DecoderParams.Code128.Enabled = false; 
                 
                 //Set beam timer for imager
-                scannerConfig.ReaderParams.ReaderSpecific.RmagerSpecific.BeamTimer = 4000;
+                scannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific.BeamTimer = 4000;
 
         scanner.SetConfig(scannerConfig); 
 
@@ -153,11 +155,11 @@ The below code snippet shows how to modify the beam timer for different scanner 
 
         :::cs
         //Set beam timer for camera
-        config.ReaderParams.ReaderSpecific.CameraSpecific.BeamTimer = 4000;
+        scannerConfig.ReaderParams.ReaderSpecific.CameraSpecific.BeamTimer = 4000;
         //Set beam timer for imager
-        config.ReaderParams.ReaderSpecific.ImagerSpecific.BeamTimer = 4000;
+        scannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific.BeamTimer = 4000;
         //Set beam timer for laser
-        config.ReaderParams.ReaderSpecific.LaserSpecific.BeamTimer = 4000;
+        scannerConfig.ReaderParams.ReaderSpecific.LaserSpecific.BeamTimer = 4000;
 
 ### Scan Parameters
 The ScannerConfig.ScanParams class provides interface for user to configure scanner parameters such as decode LED time, vibrate on successful decode, beep on successful decode, beep audio file, etc. 
@@ -165,7 +167,7 @@ The ScannerConfig.ScanParams class provides interface for user to configure scan
 The below code snippet shows how to modify the decode LED time.
 
         :::cs
-        config.ScanParams.DecodeLEDTime = 75;
+        scannerConfig.ScanParams.DecodeLEDTime = 75;
 
 
 

@@ -229,6 +229,12 @@ When specifying links, the package and activity parameters can be used to launch
 
 In the example above, the package and activity attributes are used to launch the URL in the Mozilla Mobile browser. If the specified app (as defined in the package and activity parameters) is not present on the device, the URL will not be displayed. If no activity is specified, EHS will launch the link using the default browser. 
 
+#### Link Removal
+To remove a web link from the User Mode screen: 
+
+1. Delete the **entire tag** (which begins with "&lt;link label=" and ends with "/&gt;" as shown above) from the &lt;applications&gt; node of the `enterprisehomescreen.xml` file. 
+2. Redeploy the modified `enterprisehomescreen.xml` file to the device. 
+
 ------
 
 #### Tools

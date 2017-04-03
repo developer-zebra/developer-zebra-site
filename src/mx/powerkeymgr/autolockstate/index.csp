@@ -14,7 +14,7 @@ parm:
       mx: "4.3"
       osx: "4.3"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will not cause any change to whether or not a screen lock will always be required when the device screen is turned back on if the device screen was turned off using the Power Key.
+      description: This value (or the absence of this parm from the XML) will cause no change to screen lock settings; any previously selected setting will be retained.
     - code: 1
       name: Turn on
       mx: "4.3"

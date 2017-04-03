@@ -24,7 +24,7 @@ parm:
       name: Do not show Menu Option
       mx: "4.3"
       osx: "4.3"
-      description: Prevents Airplane Mode from being controlled from the Power Off Menu.
+      description: Prevents Airplane Mode from being controlled from the Power Off Menu; hides the function on some devices, grays it on others.  
 ---
 
-Controls whether the Airplane Mode control is accessible from the Power Off Menu. When a device enters Airplane Mode, its Bluetooth, cellular and Wi-Fi radios are disabled, but Bluetooth and Wi-Fi radios can be turned back on if desired by the user. 
+Controls whether the Airplane Mode control is accessible from the Power Off Menu. When a device enters Airplane Mode, its Bluetooth, cellular and Wi-Fi radios are disabled; Bluetooth and Wi-Fi radios can be turned back on if desired by the user. 

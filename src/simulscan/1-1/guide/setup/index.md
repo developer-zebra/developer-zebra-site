@@ -24,7 +24,7 @@ To [activate SimulScan](/simulscan/1-1/guide/setup/#activatesimulscan), simply s
 * Control SimulScan's ability to decode and parse data
 * Determine how acquired data is consumed by an application
 
-At least one Template must be present and selected within SimulScan before the tool can be used; a number of [generic Templates](#usewithdatawedge) are included. Zebra also provides [industry-specific templates](../templates) for partners to downloaded and modify as needed.
+At least one Template must be present and selected within SimulScan before the tool can be used; a number of [generic Templates](#usewithdatawedge) are included. <!--Zebra also provides [industry-specific templates](../templates) for partners to downloaded and modify as needed.-->
 
 For use cases in which generic or pre-built templates are unsuitable, custom Templates can be easily creating using the cloud-based [Template Builder](../templatebuilder) tool. See the Template Builder guide for more information about Templates. 
 
@@ -87,7 +87,10 @@ If using Templates already present on the device, skip to the "Activate SimulSca
 7. **Copy Template(s) to** `/enterprise/device/settings/datawedge/templates` on the device. 
 8. **Activate the Template** from within DataWedge (see below) or other scanning app. 
 
-See the [Template Builder guide](../templatebuilder) for details and access information. 
+**Related Links**: 
+
+* [Template Builder guide](../templatebuilder) - access to online tools and details
+* [Tutorials](https://developer.zebra.com/community/android/simulscan/template-builder) - visual aids for making Templates
 
 -----
 
@@ -131,7 +134,7 @@ _SimulScan options within DataWedge_
 
 -----
 
-Related guides: 
+**Related guides**: 
 
 * [DataWedge](../../../../datawedge)
 * [Template Builder](../templatebuilder)

@@ -16,6 +16,8 @@ productversion: '1.1'
 * **No more than 10 barcodes** are present on any single scan target 
 * **Text is captured using OCR-A, OCR-B or MRZ** barcode symbologies
 * **SimulScan is accessed through DataWedge** using any of its default Templates
+* **Capturing the presence of a signature**
+* **Capturing an image** 
 
 ### When a License is Required 
 
@@ -24,7 +26,7 @@ productversion: '1.1'
 * SimulScan is used **to capture an entire Document** ([Document Capture mode](../glossary/#documentcapturemode))
 * **More than 10 (but no more than 20) barcodes** (or other fields) are present on any single scan target
 * **Text is captured using OCR**
-* **Optical mark recognition (OMR) is used** to detect the presence of signatures or check marks  
+* **Optical mark recognition (OMR) is used** to detect the presence of check marks  
 * **SimulScan is used with [Enterprise Browser](../../../../enterprise-browser)**
 
 ### Licensing General Rules

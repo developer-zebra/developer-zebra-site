@@ -1,8 +1,8 @@
 ---
 csp: touchmgr
-title: Touch Action Any
+title: Touch Actions Any
 type: parm
-order: 5
+order: 2
 mx: "6.2"
 parm:
   presentif: Device Type is set to "Any"
@@ -32,4 +32,4 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.
 ---
 
-Used to specify Touch-Mode settings applicable to any device corresponding to touch-screen sensitivity required for an expected usage scenario.
+Used to apply Touch-Mode settings to any supported device in accordance with the touch-screen sensitivity required for an expected usage scenario. **This parameter can be used in place of device-specific parameters when a target device is not covered by those parameters and it is known that touch-screen sensitivity settings are supported**. Using this parameter on a device that does not support touch-screen sensitivity settings will return an error in the Result XML. 

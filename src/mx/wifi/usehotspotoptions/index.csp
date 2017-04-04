@@ -19,4 +19,4 @@ parm:
       description: Allows the device to be used as a Wi-Fi hotspot.
 ---
 
-Determines whether the device is used as a hotspot. 
+Determines whether the device is used as a Wi-Fi hotspot. 

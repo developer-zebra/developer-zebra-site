@@ -1,6 +1,6 @@
 ---
 csp: touchmgr
-title: Screen Protector
+title: Screen Protector (checkbox)
 type: parm
 order: 10
 mx: "6.2"
@@ -11,12 +11,12 @@ parm:
   type: list
   list:
     - code: false
-      name: False
+      name: (unchecked)
       mx: "6.2"
       osx: "6.2"
       description: Screen protector not present; sensitivity will not be adjusted to compensate.
     - code: true
-      name: True
+      name: (checked)
       mx: "6.2"
       osx: "6.2"
       description: Screen protector is present; sensitivity will be adjusted (on devices that support it) to compensate. 

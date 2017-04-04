@@ -1,11 +1,11 @@
 ---
 csp: touchmgr
-title: Touch Action
+title: Touch Actions for TC series
 type: parm
-order: 2
+order: 3
 mx: "4.2"
 parm:
-  presentif: Device Type is set to "TC55, TC70, or TC75" or "TC51, TC56, TC70x, or TC75x"
+  presentif: Device Type is set to "8956" or "8960" 
   pivotal: No
   name: TouchAction
   type: list
@@ -24,4 +24,4 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
 ---
 
-Used to specify the Touch Mode for a specific set of devices corresponding to touch-screen sensitivity required for an expected usage scenario.
+Used to specify the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. This parameter is designed for use with the Zebra TC51, TC56, TC70x and TC75x (8956-based) devices and with TC55, TC70, and TC75 (8960-based) devices. 

@@ -2,7 +2,7 @@
 csp: wifi
 title: Use OmniTrail Options (checkbox)
 type: parm
-order: 86
+order: 84
 mx: "6.3"
 parm:
   pivotal: No
@@ -12,11 +12,11 @@ parm:
     - code: 0
       mx: "6.3"
       name: (unchecked)
-      description: Disables OmniTrail locationing services.
+      description: Disables OmniTrail device location services and options.
     - code: 1
       mx: "6.3"      
       name: (checked)
-      description: Enables OmniTrail locationing services.
+      description: Enables OmniTrail device location services and options.
 ---
 
-Determines whether OmniTrail locationing services are used and its options configurable. 
+Determines whether OmniTrail device location services are used and their options are configurable. 

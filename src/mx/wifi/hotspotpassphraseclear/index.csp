@@ -5,7 +5,7 @@ type: parm
 order: 81
 mx: "6.3"
 parm:
-  presentif: The "Specify Hotspot Options" is checked, the "Protect Hotspot Passphrase" checkbox is unchecked, "Hotspot" is set to "Enable" and "Hotspot Security Mode" is "WPA2/PSK"
+  presentif: The "Specify Hotspot Options" is checked, the "Protect Hotspot Passphrase" checkbox is unchecked and "Hotspot" is set to "Enable"
   pivotal: No
   name: HotspotPassphraseClear
   type: string

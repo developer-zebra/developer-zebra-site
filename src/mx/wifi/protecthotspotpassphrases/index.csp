@@ -20,4 +20,4 @@ parm:
       description: Stores hotspot password as encrupted text.
 ---
 
-Determines whether the hotspot password stored on the device is encrypted, thereby preventing access to the clear-text password on the device by an application or malicious exploit. 
+Determines whether the hotspot password stored on the device is encrypted, thereby preventing access to the password on the device by an application or malicious exploit. 

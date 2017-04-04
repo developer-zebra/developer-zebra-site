@@ -28,7 +28,7 @@ For key-mapping options on Android devices not listed above, please see the [Ent
 	* TC55
 	* MC36
 
-For TC55 key-mapping options, see the [Scan Mode Manager](../scanmodemgr). 
+For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmodemgr) (not supported by EMDK). 
 
 ### Main Functionality
 

@@ -6,7 +6,7 @@ order: 96
 mx: "6.3"
 parm:
   pivotal: No
-  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked
+  presentif: The "Specify OmniTrail Options" checkbox is checked
   name: OmniTrailType
   type: list
   list:
@@ -17,12 +17,12 @@ parm:
     - code: 1
       mx: "6.3"
       name: Enable 
-      description: Enables Extreme Networks OmniTrail protocols. 
+      description: Enables OmniTrail services for Extreme Networks APs. 
     - code: 0
       mx: "6.3"
       name: Disable
-      description: Enables Cisco OmniTrail protocols. 
+      description: Enables OmniTrail services for Cisco APs.  
 ---
 
-Specifies the type of OmniTrail protocols to be used. 
+Specifies the type of OmniTrail services to be used according to the access points in use at the facility. 
 

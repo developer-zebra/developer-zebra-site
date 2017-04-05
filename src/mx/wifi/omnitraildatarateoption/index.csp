@@ -7,7 +7,7 @@ mx: "6.3"
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked
-  name: OmniTrailDataRateStandard
+  name: OmniTrailDataRateOption
   type: list
   list:
     - code: 0
@@ -20,7 +20,7 @@ parm:
       description: Sets Wi-Fi for 802.11n mode. 
     - code: 2
       mx: "6.3"
-      name: Enable
+      name: 11ac
       description: Sets Wi-Fi for 802.11ac mode.
     - code: 3
       mx: "6.3"

@@ -17,6 +17,6 @@ Used to specify the host name(s) and/or IP address(es) for direct access by a de
 
 **Zebra recommends testing bypass-proxy settings on a working device before general deployment**.
 
-**Input rules**: 
+**Parm value input rules**: 
 
 * String from 1-256 characters specifying one or more host names and/or IP addresses separated by commas. For example: "www.MyBypassProxy.com,192.168.1.100, our.internalServer" 

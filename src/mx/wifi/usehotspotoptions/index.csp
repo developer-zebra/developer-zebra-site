@@ -2,7 +2,7 @@
 csp: wifi
 title: Use Hotspot Options (checkbox)
 type: parm
-order: 71
+order: 70
 mx: "6.3"
 parm:
   pivotal: No
@@ -19,4 +19,4 @@ parm:
       description: Allows the device to be used as a Wi-Fi hotspot.
 ---
 
-Determines whether the device is used as a Wi-Fi hotspot. 
+Determines whether the device can be used as a Wi-Fi hotspot. **Hotspot functionality is supported only on Zebra ET50 and ET56 devices running Android 5.0 Lollipop**. 

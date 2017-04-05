@@ -24,7 +24,7 @@ parm:
     - code: 4
       name: ET5x
       mx: "6.3"
-      description: Applies settings for ETC50 and ET56 devices.
+      description: Applies settings for ET50 and ET56 devices.
 ---
 
 Used to specify the set of Zebra devices for which to apply settings for touch-screen sensitivity.

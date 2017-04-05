@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the IP address of the Ethernet Cradle, through which network communications will pass. 
+Used to specify the IP address of the Ethernet Cradle, through which network communications of the device will pass. 
 
 **Input rules**: 
 

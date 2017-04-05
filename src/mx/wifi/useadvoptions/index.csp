@@ -2,18 +2,18 @@
 csp: wifi
 title: Use Advanced Options (checkbox) 
 type: parm
-order: 12
+order: 50
 mx: "4.2"
 parm:
   pivotal: True
   name: UseAdvancedOptions
   type: list
   list:
-    - code: true
+    - code: 1
       mx: "4.2"
       name: (checked)
       description: Enables the use of Wi-Fi Advanced Options on the device. 
-    - code: false
+    - code: 0
       mx: "4.2"
       name: (unchecked)
       description: Disables the use of Wi-Fi Advanced Options on the device. 

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Set 2.4GHz Device Channels 
+title: Set 2.4GHz Channels 
 type: parm
 order: 8
 mx: "4.2"

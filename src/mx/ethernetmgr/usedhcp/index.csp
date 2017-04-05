@@ -26,4 +26,4 @@ parm:
       description: Sets the device to obtain IP settings from a DHCP server. 
 ---
 
-Controls whether the Ethernet-equipped cradle will obtain its IP settings automatically using DHCP or manually by an administrator using the relevant parameters. Enabled by default. When disabled (value=0), the IP addresses for the device, default gateway, subnet mask and at least one DNS server  must be specified using the relevant parameters below. 
+Controls whether the Ethernet-equipped cradle will obtain its IP settings automatically using DHCP or manually by an administrator using the relevant parameters. When disabled (value=0), the IP addresses for the device, default gateway, subnet mask and at least one DNS server must be specified using the relevant parameters below. 

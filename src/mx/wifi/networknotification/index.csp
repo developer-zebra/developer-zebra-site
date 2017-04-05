@@ -17,7 +17,7 @@ parm:
       mx: "4.2"
       name: true
       description: Enables user notifications to be displayed when unknown, open network(s) come into range.
-    - code: 2
+    - code: 0
       mx: "4.2"
       name: false
       description: Disables user notifications when unknown, open networks come into range.

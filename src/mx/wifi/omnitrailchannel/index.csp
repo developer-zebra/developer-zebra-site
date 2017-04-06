@@ -1,11 +1,11 @@
 ---
-csp: wifi
+csp: <!-- wifi -->
 title: OmniTrail Channel
 type: parm
 order: 99
 mx: "6.3"
 parm:
-  presentif: The "Specify Hotspot Options" checkbox is checked 
+  presentif: The "Specify OmniTrail Options" checkbox is checked 
   pivotal: No
   name: OmniTrailChannel
   type: string

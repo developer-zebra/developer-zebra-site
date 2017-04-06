@@ -1,12 +1,12 @@
 ---
-csp: wifi
+csp: <!-- wifi -->
 title: OmniTrail Flag 
 type: parm
 order: 100
 mx: "6.3"
 parm:
   pivotal: No
-  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked
+  presentif: The "Specify OmniTrail Options" checkbox is checked
   name: OmniTrailFlag
   type: list
   list:

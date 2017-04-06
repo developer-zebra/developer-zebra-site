@@ -1,5 +1,5 @@
 ---
-csp: wifi
+csp: <!-- wifi -->
 title: Hotspot Security Mode 
 type: parm
 order: 80

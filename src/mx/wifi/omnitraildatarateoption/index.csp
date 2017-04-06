@@ -1,5 +1,5 @@
 ---
-csp: wifi
+csp: <!-- wifi -->
 title: OmniTrail Data-Rate Option 
 type: parm
 order: 90

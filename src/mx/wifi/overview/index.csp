@@ -5,7 +5,7 @@ type: text
 order: 0
 ---
 
-Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks. The Wi-Fi CSP also controls OmniTrail, a set of services available in some Zebra devices that enable highly accurate, secure and power-efficient device location. OmniTrail can locate a device to within about 5 feet (1.5 meters). **See below for OmniTrail requirements**. 
+Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks. <!-- The Wi-Fi CSP also controls OmniTrail, a set of services available in some Zebra devices that enable highly accurate, secure and power-efficient device location. OmniTrail can locate a device to within about 5 feet (1.5 meters). **See below for OmniTrail requirements**.--> 
 
 ### Main Functionality
 
@@ -22,11 +22,11 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* FIPS Compliance
 	* FTOverTheDS
 	* Fusion Advanced Logging
-	* Hotspot mode (ET50, ET55 with Lollipop only)
+	<!--* Hotspot mode (ET50, ET55 with Lollipop only)-->
 	* Hyper Fast Secure Roam (HF SR)
 	* Management Frame Protection Mode (802.?11w)
 	* OKC (Opportunistic Key Caching)
-	* OmniTrail Device-Location Services and Options
+	<!--* OmniTrail Device-Location Services and Options-->
 	* Password Protect Encryption
 	* PMKID Caching
 	* PreAuth
@@ -40,9 +40,9 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Use/Do Not Use Network Notifications
 * Select Country automatically or manually 
 * Set the RF Band
-* Set Hotspot (ET50, ET55 with Lollipop only):
+<!--* Set Hotspot (ET50, ET55 with Lollipop only):
 	* AP Channel, Band, SSID and Options
-	* Security Modes, Passphrase and Passphrase Encryption
+	* Security Modes, Passphrase and Passphrase Encryption -->
 * Set Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
 * Set the band preference
 * Connect to/Disconnect from a Wi-Fi network
@@ -51,7 +51,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Encrypt Passwords in transit
 * Encrypt Passwords stored on the device 
 
-### OmniTrail Requirements
+<!-- ### OmniTrail Requirements
 * **OmniTrail is supported only on the following devices**:
 	* **MC18**
 	* **MC40**
@@ -61,3 +61,4 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* **TC75x**
 * **Device must be running Android 5.0 Lollipop or later**
 * **Device must contain MX 6.3 or higher**
+-->

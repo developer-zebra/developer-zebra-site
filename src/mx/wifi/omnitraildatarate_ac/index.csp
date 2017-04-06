@@ -1,12 +1,12 @@
 ---
-csp: wifi
+csp: <!-- wifi -->
 title: OmniTrail "11ac" Data Rates 
 type: parm
 order: 93
 mx: "6.3"
 parm:
   pivotal: No
-  presentif: The "Specify Hotspot Options" and "Specify OmniTrail Options" checkboxes are checked and "OmniTrail DataRate Options" is set to "11ac"
+  presentif: The "Specify OmniTrail Options" checkbox is checked and "OmniTrail DataRate Options" is set to "11ac"
   name: datarate_11ac
   type: list
   list:

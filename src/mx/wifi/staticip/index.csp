@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Static IP Address
+title: IP Address
 type: parm
 order: 42
 mx: "4.2"

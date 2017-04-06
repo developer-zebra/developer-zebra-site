@@ -31,4 +31,4 @@ parm:
       description: Uses SIM4 to connect the device to the carrier network.
 ---
 
-Used to select which SIM card will be used to connect the device to the carrier network. 
+Used to select which SIM card will be used to connect the device to the carrier network. **Supported only on the Zebra TC75x**. 

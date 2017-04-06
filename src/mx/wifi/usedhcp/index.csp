@@ -18,4 +18,4 @@ order: 41
       description: Allows IP address settings to be configured manually. 
 ---
 
-Controls whether the device will obtain its IP settings automatically using DHCP or manually by an administrator using the relevant parameters. When disabled (value=0), the IP addresses for the device, default gateway, subnet mask and at least one DNS server must be specified using the relevant parameters below. 
+Controls whether the device obtains its IP settings automatically using DHCP or manually by an administrator. When disabled (value=0), the device IP addresses those for the default gateway, subnet mask and at least one DNS server must be specified using the relevant parameters below. 

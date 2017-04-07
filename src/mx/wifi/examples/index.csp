@@ -10,7 +10,7 @@ order: 99
 
 #### Initialize the Android KeyStore
 
-> **Note:** This must be done for a new device before you can install certificates.
+> **Note:** Must be done for any new device before installing certificates.
 
 Without a password:
 

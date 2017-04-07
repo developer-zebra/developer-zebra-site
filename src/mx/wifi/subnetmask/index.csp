@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Subnet Mask
+title: Set Subnet Mask
 type: parm
 order: 44
 mx: "4.2"

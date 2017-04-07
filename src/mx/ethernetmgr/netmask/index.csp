@@ -7,13 +7,13 @@ mx: "6.2"
 osx: "6.2"
 apilevel: "23"
 parm:
-  presentif: ConfigIPAddress is "checked" and UseDHCP is "unchecked"  
+  presentif: The "Configure IP Address" box is checked and "Use DHCP" box is unchecked
   pivotal: No
   name: NetMask
   type: string
 ---
 
-Used to specify the subnet mask for the Ethernet Cradle, through which network communications will pass. 
+Used to specify the subnet mask for the Ethernet Cradle, which defines the network subdivision on which the device will operate. 
 
 **Parm value input rules**: 
 

@@ -1,5 +1,5 @@
 ---
-title: Capture critical data from documents using SimulScan API
+title: Data Capture Using the SimulScan API
 layout: guide.html
 product: EMDK For Android
 productversion: '6.3'
@@ -7,9 +7,9 @@ productversion: '6.3'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [SimulScan APIs](/emdk-for-android/6-3/api/simulscan) introduced in EMDK V 3.1, to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
+This guide walks through the creation of an application to capture critical data from documents using EMDK For Android with [SimulScan APIs](/emdk-for-android/6-3/api/simulscan) introduced in EMDK V 3.1. This includes the designation of "fields of interest" on a document and converting them into captured data that an end-user application can use immediately at the point of transaction.
 
-Different ways of capturing data from documents using [SimulScan API](/emdk-for-android/6-3/api/simulscan) are:
+Data can be captured from documents using [SimulScan API](/emdk-for-android/6-3/api/simulscan) in the following ways:
 
 * **Barcode** - Productivity gain by decoding multiple bar codes read with a single trigger pull.
 * **OCR (Optical Character Recognition)** - Automated data entry with character recognition [OCR].
@@ -39,14 +39,18 @@ If the required number of fields are more, it could be painful to capture each a
 
 **Solution:**
 
-[SimulScan API](/emdk-for-android/6-3/api/simulscan) could come really handy here as it captures upto 10 barcodes in less than one second. So we will now create a tutorial that would use above form image to create a template and use this template to capture marked fields from that document populating on UI using [SimulScan APIs](/emdk-for-android/6-3/api/simulscan). This will let you know how to create your own template for capturing different fields from any particular document.
- 
+[SimulScan API](/emdk-for-android/6-3/api/simulscan) could come really handy here as it captures upto 10 barcodes in less than one second. So we will now create a tutorial that would use above form image to create a template and use this template to capture marked fields from that document populating on UI using [SimulScan APIs](/emdk-for-android/6-3/api/simulscan). This will let you know how to create your own template for capturing different fields from any particular document. 
         
-###Prerequisites
+### Prerequisites
 
-* SimulScan is currently supported on TC55 Rev B KitKat and TC75.
+* A Zebra device that supports SimulScan: ([support details](../../../../simulscan))
+ * TC55 KK
+ * TC70 KK or L
+ * TC75 KK or L
+ * TC8000 L 
+* EMDK v3.1.x and higher
 
-> Note: As SimulScan is built into the OS image in the above devices, download the latest OS from  [SupportCentral](http://support.zebra.com). 
+> Note: As SimulScan is built into the OS image in the above devices, download the latest OS from [SupportCentral](http://support.zebra.com). 
 
 ## Creating a Template
 

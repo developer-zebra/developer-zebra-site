@@ -1,11 +1,11 @@
 ---
-title: "SimulScan API programmer's guide"
+title: SimulScan API Programmer's Guide
 layout: guide.html
 product: EMDK For Android
 productversion: '6.3'
 ---
 
-##Introduction
+## Overview
 SimulScan is an end-to-end data capture solution for extracting critical data from documents. A differentiating data capture value-add, it involves capturing fields of interest in a given document and converting it into data that an end-user application can use immediately at the point of transaction.
 
 SimulScan customers benefit from:
@@ -16,20 +16,23 @@ SimulScan customers benefit from:
 
 Customers can interactively capture documents and obtain meaningful data present in the document.  Barcodes are identified and decoded; strings are recognized from fields containing text; images are refined from fields containing pictures and so forth. Based on a "template", an image of the entire document is processed by various engines to extract the relevant data.
 
-##Determining device support
+## Prerequisites
 
-- Supported devices : TC55, TC75
-- SimulScan v1.8
-- EMDK v3.1.x
+What's required: 
 
+* A Zebra device that supports SimulScan: ([support details](../../../../simulscan))
+ * TC55 KK
+ * TC70 KK or L
+ * TC75 KK or L
+ * TC8000 L 
+* EMDK v3.1.x and higher
 
-###Our licensing procedure
+### Licensing
 
-- Obtain a device license from [https://softwarelicensing.zebra.com/](https://softwarelicensing.zebra.com/)
-	- Further information on the licensing process can be found [here](https://softwarelicensing.motorolasolutions.com/documentation/index.html).
+- Refer to the [SimulScan Licensing page](http://techdocs.zebra.com/simulscan/1-1/guide/license/) to obtain a per-device license)
 - Copy the received XML to the device
 
-- Setup the license on the device (**TC55 2.42 and later devices**)
+- Setup the license on the device:
 
 	- Go to Settings -> About phone -> Legal information -> Symbol licenses (this will only be available on a 2.42+ BSP device)
 	- Click on the Android menu button -> Install license

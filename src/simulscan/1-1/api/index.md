@@ -19,7 +19,11 @@ DataWedge can acquire barcodes and other textual data using the device camera or
 
 [![img](apis.png)](http://techdocs.zebra.com//emdk-for-android/6-0/api/reference/com/symbol/emdk/simulscan/package-summary.html)
 
+**SimulScan API Guides and Tutorials*
 
+* **[SimulScan API Programmer's Guide](http://techdocs.zebra.com/emdk-for-android/6-3/guide/simulscan_guide/)**
+* **[Using the SimulScan API with EMDK](http://techdocs.zebra.com/emdk-for-android/6-3/tutorial/tutSimulScanAPI/)**
+* **[Capturing Critical Data with SimulScan APIs](http://techdocs.zebra.com/emdk-for-android/6-3/tutorial/tutSimulScanAPI/)**
 
 <!-- 
 *[Licensing](../guide/license) is required for each device using one or more apps that access SimulScan through its APIs*. 

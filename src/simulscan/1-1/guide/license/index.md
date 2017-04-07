@@ -6,7 +6,7 @@ productversion: '1.1'
 ---
 ## Overview
 
-**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes and/or for certain types of optical character recognition (OCR). A per-device license is required for advanced SimulScan features such as signature detection highly complex scan targets. A complete breakdown is below. 
+**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes and/or for certain types of optical character recognition (OCR). A per-device license is required for advanced SimulScan features such as detection and capture of checkmarks and for scanning highly complex targets. A complete breakdown is below. 
 
 ### When a License is Not Required 
 

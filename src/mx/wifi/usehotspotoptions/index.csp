@@ -1,5 +1,5 @@
 ---
-csp: <!-- wifi -->
+csp: wifi
 title: Use Hotspot Options (checkbox)
 type: parm
 order: 70

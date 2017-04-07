@@ -1,5 +1,5 @@
 ---
-csp: <!-- wifi -->
+csp: wifi
 title: OmniTrail "11n" Data Rates
 type: parm
 order: 94

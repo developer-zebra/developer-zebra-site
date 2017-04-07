@@ -1,5 +1,5 @@
 ---
-csp: <!-- wifi -->
+csp: wifi
 title: OmniTrail Interval
 type: parm
 order: 101

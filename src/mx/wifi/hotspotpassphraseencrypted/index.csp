@@ -1,5 +1,5 @@
 ---
-csp: <!-- wifi -->
+csp: wifi
 title: Hotspot Passphrase Encrypted
 type: parm
 order: 83

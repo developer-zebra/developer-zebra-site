@@ -97,7 +97,11 @@ If the required number of fields are more, it could be painful to capture each a
 11. This is how you can create your own template to capture any field on any document.
 
 
-## Installing your license
+## Installing Device License
+
+Please refer to the SimulScan Guide Licensing Page and follow instructions for [obtaining a Demo License](/simulscan/1-1/guide/license/#demolicense). Then return here to proceed. 
+
+<!--
 If you are using features that require a license, please follow these steps:
 
 1. Request a trial license from Product Manager (Andrew.Knight@zebra.com).
@@ -109,7 +113,7 @@ license ? -> Yes -> point to the file on the sdcard.
 This will install the license . For mass deployment, end customers would need to use StageNow.
 
 > Note: Post your queries on SimulScan Launchpad page so the team can assist you at the earliest. 
-
+-->
 
 ## Creating The Project
 

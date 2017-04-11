@@ -12,14 +12,7 @@ In order to use the EMDK for Xamarin, you must have the Xamarin Platform install
 Consult the [Xamarin](http://developer.xamarin.com/guides/android/getting_started/) and [Microsoft documentation](https://www.visualstudio.com/downloads/download-visual-studio-vs) for installing and setting up Xamarin.Android, Visual Studio(Windows) or Xamarin Studio(Mac):
 
 
-<!---
-### Xamarin Licensing
-* When using **Visual Studio** for EMDK development, a Xamarin **Business** License or higher is required.
 
-* When using **Xamarin Studio** for EMDK development, a Xamarin **Indie** License or higher is required.
-
-Learn more about [Xamarin Licensing options](https://store.xamarin.com/).
--->
 
 
 ##Getting Started

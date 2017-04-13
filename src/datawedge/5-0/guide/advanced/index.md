@@ -197,13 +197,13 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 
 **Action Criteria**:
 
-* **String to check for -** Allows a string to be entered that will initiate the action(s) when present anywhere in the acquired data. This can include alphanumeric or control characters. For example:
-	* **x -** would check for the character "x"
-	* **\xhh -** would check for the character with a hexadecimal value of 0xhh
+* **String to check for -** Allows a string to be entered that will initiate the action(s) (i.e. output the acquired string) when present anywhere in the acquired data. If the specified string is not found, the action(s) will not be executed. DataWedge can check for the presence of alphanumeric or control characters. For example:
+	* **x -** checks for the character "x"
+	* **\xhh -** checks for the character with a hexadecimal value of 0xhh
 
-* **String position -** An optional parameter that allows a character offset from the starting position (0) to be entered after which the "String to check for" must be present. For example, the target String "text" with a String position offset of 2 would invoke action(s) only if a string such as "00text" was acquired. 
+* **String position -** An optional parameter that allows a starting character position to be entered (beginning with 0) at which to check for the string specified in the "String to check for" parameter. For example, the target string "AB" with a string position of 3 would invoke action(s) if the string "123ABC123" was acquired, but would not if the "AB" was located anywhere else in the string (or was not present). Notice that in the successful example, the "AB" begins with the fourth character from the left, which is position 3 when starting from 0.
 
-* **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
+* **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning U.S. Social Security numbers, a String length of nine (9) might be used as a means of initial validation.  
 
 * **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which specific decoders can be further selected or excluded), or through SimulScan. 
 <br>

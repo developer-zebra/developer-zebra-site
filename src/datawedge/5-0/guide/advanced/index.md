@@ -200,7 +200,6 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 * **String to check for -** Allows a string to be entered that will initiate the action(s) (i.e. output the acquired string) when present anywhere in the acquired data. If the specified string is not found, the action(s) will not be executed. DataWedge can check for the presence of alphanumeric or control characters. For example:
 	* **x -** checks for the character "x"
 	* **\xhh -** checks for the character with a hexadecimal value of 0xhh
-	* **\uhhhh -** checks for the Unicode character with a value of 0xhhhh
 
 * **String position -** An optional parameter that allows a starting character position to be entered (beginning with 0) at which to check for the string specified in the "String to check for" parameter. For example, the target string "AB" with a string position of 3 would invoke action(s) if the string "123ABC123" was acquired, but would not if the "AB" was located anywhere else in the string (or was not present). Notice that in the successful example, the "AB" begins with the fourth character from the left, which is position 3 when starting from 0.
 

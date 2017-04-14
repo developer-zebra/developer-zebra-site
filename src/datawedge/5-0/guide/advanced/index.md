@@ -154,7 +154,7 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 
 **Rules -** The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (optionally at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
+**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s).
 
 **Actions -** A set of procedures for analyzing, identifying and processing acquired data. 
 
@@ -197,11 +197,11 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 
 **Action Criteria**:
 
-* **String to check for -** Allows a string to be entered that will initiate the action(s) (i.e. output the acquired string) when present anywhere in the acquired data. If the specified string is not found, the action(s) will not be executed. DataWedge can check for the presence of alphanumeric or control characters. For example:
+* **String to check for -** Allows a string to be specified that if present in the acquired data will initiate the action(s) (i.e. output the acquired string). If the specified string is not present at the "Starting position" (see below), the action(s) will not be executed. DataWedge can check for the presence of alphanumeric or control characters. For example:
 	* **x -** checks for the character "x"
 	* **\xhh -** checks for the character with a hexadecimal value of 0xhh
 
-* **String position -** An optional parameter that allows a starting character position to be entered (beginning with 0) at which to check for the string specified in the "String to check for" parameter. For example, the target string "AB" with a string position of 3 would invoke action(s) if the string "123ABC123" was acquired, but would not if the "AB" was located anywhere else in the string (or was not present). Notice that in the successful example, the "AB" begins with the fourth character from the left, which is position 3 when starting from 0.
+* **String position -** The starting position (starting at 0) at which to check for the string specified in the "String to check for" parameter. For example, the target string "AB" with a string position of 3 would invoke action(s) if the string "123ABC123" is acquired, but would not invoke action if the "AB" was located anywhere else in the string (or was not present). Notice that the "AB" portion of the example string begins at the fourth character from the left, which is position 3 when starting the count from 0.
 
 * **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning U.S. Social Security numbers, a String length of nine (9) might be used as a means of initial validation.  
 

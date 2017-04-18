@@ -6,23 +6,23 @@ menu:
   title: DataWedge
   items:
     - title: About
-      url: /datawedge/6-2/guide/about
+      url: /datawedge/6-3/guide/about
     - title: Setup
-      url: /datawedge/6-2/guide/setup
+      url: /datawedge/6-3/guide/setup
     - title: Advanced
-      url: /datawedge/6-2/guide/advanced
-    - title: Decoders
-      url: /datawedge/6-2/guide/decoders
+      url: /datawedge/6-3/guide/advanced
+    - title: Parameters
+      url: /datawedge/6-3/guide/decoders
     - title: IPWedge
-      url: /datawedge/6-2/guide/ipwedge
+      url: /datawedge/6-3/guide/ipwedge
     - title: APIs
-      url: /datawedge/6-2/guide/api
+      url: /datawedge/6-3/guide/api
     - title: Demo
-      url: /datawedge/6-2/guide/demo
+      url: /datawedge/6-3/guide/demo
     - icon: fa fa-comment
       url: https://developer.zebra.com/community/technologies/advanced-data-capture
     - icon: fa fa-search
-      url: /datawedge/6-2/search
+      url: /datawedge/6-3/search
 product: DataWedge
 productversion: '6.3'
 ---

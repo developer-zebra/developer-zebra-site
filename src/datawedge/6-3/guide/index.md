@@ -11,7 +11,7 @@ menu:
       url: /datawedge/6-3/gettingstarted
     - title: Profiles
       url: /datawedge/6-3/guide/setup
-    - title: Decoders
+    - title: Parameters
       url: /datawedge/6-3/guide/decoders
     - title: IP Output
       url: /datawedge/6-3/guide/ipwedge

@@ -2,7 +2,7 @@
 title: About DataWedge
 layout: guide.html
 product: DataWedge
-productversion: '6.2'
+productversion: '6.3'
 ---
 
 ## Overview
@@ -10,13 +10,16 @@ productversion: '6.2'
 DataWedge provides barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
 #### This document applies to:
-* **DataWedge 6.2.x**, which requires:
+* **DataWedge 6.3.x**, which requires:
 * **Scanner Framework 5.1.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
-#### New in DataWedge 6.2
+#### New in DataWedge 6.3
 
-DataWedge 6.2 implements a new structure for launching Android intents, part of a transition that will ultimately support multiple intents launched as a single command. For details, see the [DataWedge Data Capture API](../api) guide.
+DataWedge 6.3 implements a new structure for launching Android intents, part of a transition that will ultimately support multiple intents launched as a single command. For details, see the [DataWedge Data Capture API](../api) guide.
+
+FIXXXXXXXXXXX and MERRRRGE (from API guide)
+**DataWedge 6.3 builds on the new structure for launching Android intents introduced in the prior version**, with the ultimate goals of providing full control of DataWedge Profiles through intents and supporting multiple intents launched as a single command. As part of this transition, more new commands are introduced in 6.3 that use a new command syntax. DataWedge continues to support all original commands using their original syntax. 
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 

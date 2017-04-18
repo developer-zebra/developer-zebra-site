@@ -2,13 +2,13 @@
 title: Data Capture API 
 layout: guide.html
 product: DataWedge
-productversion: '6.2'
+productversion: '6.3'
 ---
 
 ## Overview
 The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
 
-**DataWedge 6.2 implements a new structure for launching Android intents**, which is part of a transition that will ultimately support multiple intents launched as a single command. As part of this transition, several new commands are introduced in 6.2 that use a new command syntax. DataWedge continues to support all original commands using their original syntax. 
+**DataWedge 6.3 builds on the new structure for launching Android intents introduced in the prior version**, with the ultimate goals of providing full control of DataWedge Profiles through intents and supporting multiple intents launched as a single command. As part of this transition, more new commands are introduced in 6.3 that use a new command syntax. DataWedge continues to support all original commands using their original syntax. 
 
 #### Requirements
 This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -25,8 +25,10 @@ An application accesses the original DataWedge APIs by broadcasting an intent, a
 * **ResetDefaultProfile -** resets the default Profile to Profile0
 * **SwitchToProfile -** switches to the specified Profile
 
-**New APIs in DataWedge 6.2**: 
+**New APIs in DataWedge 6.3**: 
 
+
+Introduced in 6.2:
 * **DELETE_PROFILE -** used to delete one or more Profiles
 * **GET_PROFILES_LIST -** returns a list of Profiles in the device
 * **CLONE_PROFILE -** creates a copy of an existing Profile

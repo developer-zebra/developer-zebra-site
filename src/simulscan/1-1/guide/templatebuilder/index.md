@@ -8,7 +8,11 @@ productversion: '1.1'
 ## Overview
 Template Builder is a web-based tool for creating templates, which define the information captured by SimulScan and determine how it will be processed and made available to applications. Templates are the key to controlling SimulScan data-capture features and for processing the acquired data. 
 
-This guide provides step-by-step instructions for using the drag-and-drop interface of Template Builder to [create Templates](#usingtemplatebuilder) and deploy them to the devices. A familiarity with SimulScan concepts and terminology is required. If necessary, please see the [SimulScan Glossary](../glossary) and the [About SimulScan](../about) pages before proceeding. 
+This guide provides step-by-step instructions for using the drag-and-drop interface of Template Builder to [create Templates](#usingtemplatebuilder) and deploy them to the devices. A familiarity with SimulScan concepts and terminology is required. If necessary, please watch the short video below and review the [SimulScan Glossary](../glossary) and [About SimulScan](../about) pages before proceeding. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-A0pz-EM6mQ" frameborder="0" allowfullscreen></iframe>
+[More SimulScan videos](https://www.youtube.com/playlist?list=PLce6-npz5dKf_5mTtakWU1ostOIaeGXzz)
+<br>
 
 -----
 

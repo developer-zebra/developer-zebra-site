@@ -8,7 +8,7 @@ productversion: '6.3'
 ## Overview
 The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
 
-**DataWedge 6.3 builds on the new structure for launching Android intents introduced in the prior version**, with the ultimate goals of providing full control of DataWedge Profiles through intents and supporting multiple intents launched as a single command. As part of this transition, more new commands are introduced in 6.3 that use a new command syntax. DataWedge continues to support all original commands using their original syntax. 
+**DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2**, part of a transition that will ultimately provice full control of DataWedge Profiles through intents and support multiple intents launched as a single command. As part of this transition, more new commands are introduced in 6.3 that use the new command syntax. DataWedge continues to support all original commands using their original syntax. 
 
 #### Requirements
 This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -16,20 +16,9 @@ This guide assumes experience with Android programming and familiarity with [And
 #### Interfaces
 An application accesses the original DataWedge APIs by broadcasting an intent, and uses the primary pieces of information in an intent--Action and Data--to specify which API function to perform. 
 
-**Original DataWedge APIs**: 
-
-* **SoftScanTrigger -** used to start, stop or toggle a software scanning trigger
-* **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
-* **EnumerateScanners -** returns a list of scanners available on the device
-* **SetDefaultProfile -** sets the specified Profile as the default Profile
-* **ResetDefaultProfile -** resets the default Profile to Profile0
-* **SwitchToProfile -** switches to the specified Profile
-
-
-
 ------
 
-## DataWedge 6.2 APIs
+## DataWedge 6.3 APIs
 The APIs in the table below are supported only on DataWedge 6.2 and higher. For the exact usage syntax, sample code for each interface follows the table. 
 
 <table rules="all"

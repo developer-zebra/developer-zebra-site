@@ -5,7 +5,10 @@ product: EMDK For Android
 productversion: '6.4'
 ---
 
->NOTE: Devices will need to be updated with the latest EMDK for Android Device Runtime
+>`NOTICE:`  
+	The instructions below for updating the EMDK runtime via the EMDK OS update package pertain to devices running KitKat only. Devices running Lollipop+ will have the EMDK built in to the devices OS and can only be updated with a device BSP update package. `The OS Update package that comes with the EMDK will not be supported on Lollipop+`
+
+
 
 ##	Installing EMDK for Android Device Runtime using Deployment utility
 

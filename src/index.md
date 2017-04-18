@@ -53,18 +53,20 @@ products:
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/6-3/guide/gettingstarted
+        url: /emdk-for-android/6-4/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-3/tutorial/
+        url: /emdk-for-android/6-4/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-3/samples
+        url: /emdk-for-android/6-4/samples
       - title: Guides
-        url: /emdk-for-android/6-3/guide/programming-guides
+        url: /emdk-for-android/6-4/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-3/guide/profile-manager-guides
+        url: /emdk-for-android/6-4/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-3/api
+        url: /emdk-for-android/6-4/api
     versions:
+      - url: emdk-for-android/6-4/guide/about/
+        label: '6.4'
       - url: emdk-for-android/6-3/guide/about/
         label: '6.3'
       - url: emdk-for-android/6-0/guide/about/

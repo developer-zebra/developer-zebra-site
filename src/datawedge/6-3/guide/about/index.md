@@ -16,6 +16,22 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 
 #### New in DataWedge 6.3
 
+**New APIs in DataWedge 6.3**: 
+
+* **RESTORE_CONFIG -** restores a DataWedge configuration to its default settings
+* **CREATE_PROFILE -** creates a new profile using settings specified in extras
+* **SET_CONFIG -** allows selection of plug-ins, profiles and app associations
+* **SET_SCANNER_CONFIG -** 
+* **UPDATE?  -** 
+* **PROFILE_ENABLED -** controls the state of the specified profile
+* **KEYSTROKE?  -** 
+* **INTENT_OUTPUT_ENABLED -** controls the state of the intent output plug-in
+* **GET_VERSION_INFO -** gets version numbers of DataWedge and of scanner and SimulScan frameworks 
+* **GET_DATAWEDGE_STATUS -** returns the DataWedge state (enabled/disabled) 
+* **REGISTER_FOR_NOTIFICATION -** tells DataWedge to inform specified app or activity of updates to scanner, active profile or profile status 
+* **UNREGISTER_FOR_NOTIFICATION -** cancels request for app notification
+* **NOTIFICATION -** contains information about changes to a scanner or profile
+
 DataWedge 6.3 implements a new structure for launching Android intents, part of a transition that will ultimately support multiple intents launched as a single command. For details, see the [DataWedge Data Capture API](../api) guide.
 
 FIXXXXXXXXXXX and MERRRRGE (from API guide)

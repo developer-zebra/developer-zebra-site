@@ -25,45 +25,7 @@ An application accesses the original DataWedge APIs by broadcasting an intent, a
 * **ResetDefaultProfile -** resets the default Profile to Profile0
 * **SwitchToProfile -** switches to the specified Profile
 
-**New APIs in DataWedge 6.3**: 
 
-* **RESTORE_CONFIG -** restores a DataWedge configuration to its default settings
-* **CREATE_PROFILE -** creates a new profile using settings specified in extras
-* **SET_SCANNER_CONFIG -** 
-* **UPDATE?  -** 
-* **PROFILE_ENABLED -** 
-* **KEYSTROKE?  -** 
-* *INTENT_OUTPUT -** 
-* **GET_VERSION_INFO -** gets version numbers of DataWedge and scanner and SimulScan frameworks 
-* **GET_DATAWEDGE_STATUS -** returns the DataWedge state (enabled/disabled) 
-* **NofotyScannerStatus -** 
-* **NotifyProfileChange -** 
-
-* **REGISTER_FOR_NOTIFICATION -** tells DataWedge to inform specified app or activity of specified status updates
-
-* **UNREGISTER_FOR_NOTIFICATION -** cancels request for app notification
-
-
-Restoring DataWedge configuration 
-Create a profile 
-Set scanner configuration in a profile 
-Update application association in a profile 
-Set enabled state in a profile 
-Set Keystroke configuration in a profile 
-Set Intent output configuration in a profile 	
-Query version information
-Query the current status of DataWedge 
-Notify scanner status changes 
-Notify profile changes to applications
-
-
-Introduced in 6.2:
-* **DELETE_PROFILE -** used to delete one or more Profiles
-* **GET_PROFILES_LIST -** returns a list of Profiles in the device
-* **CLONE_PROFILE -** creates a copy of an existing Profile
-* **RENAME_PROFILE -** changes the name of an existing Profile 
-* **GET_ACTIVE_PROFILE -** returns the name of the currently selected Profile
-* **ENABLE_DATAWEDGE -** used to enable/disable the DataWedge app
 
 ------
 
@@ -81,43 +43,116 @@ cellspacing="0" cellpadding="4">
 <col width="50%" />
 -->
 <thead>
-<tr>
+<tr bgcolor="#e0e0eb" >
 <th align="left" valign="top">Command</th>
 <th align="left" valign="top">Intent Extra(s)</th>
 <th align="left" valign="top">Value</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td align="left" valign="top"><p class="table">Delete a Profile</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.DELETE_PROFILE</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String array<br>Values: List of profiles to be deleted<br> <strong>Note: The “*” character deletes all deletable profiles</strong></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Query the Profile list</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_PROFILES_LIST</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String<br>Values: Empty<br>Result: Intent Extra<br>Type: String array list<br>Name: <strong>com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST</strong><br><strong>Note: Does not list hidden profiles</strong></p></td>
-</tr>
+
 <tr>
 <td align="left" valign="top"><p class="table">Clone a Profile</p></td>
 <td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.CLONE_PROFILE</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String array<br>Values: Source profile name, new profile name<br></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: Source Profile name, New profile name<br></p></td>
 </tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Create a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.CREATE_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br>Result: CREATE_PROFILE_RESULT broadcast intent with name (success) or reason for failure (i.e. already_exists, unknown)</p></td>
+</tr>
+
 <tr>
-<td align="left" valign="top"><p class="table">Rename a Profile</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.RENAME_PROFILE</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String array<br>Values: Profile to be renamed, new name for Profile</p></td>
+<td align="left" valign="top"><p class="table">Delete a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.DELETE_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: List of profiles to be deleted<br> <strong>Note: The “*” character deletes all deletable profiles, including the "Launcher" Profile.</strong></p></td>
 </tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Enable/Disable DataWedge</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.ENABLE_DATAWEDGE</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled</p></div></div></td>
+</tr>
+
 <tr>
 <td align="left" valign="top"><p class="table">Get the Active Profile</p></td>
 <td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_ACTIVE_PROFILE</strong></p></td>
 <td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_ACTIVE_PROFILE</p></div></div></td>
 </tr>
-<tr>
-<td align="left" valign="top"><p class="table">Enable/Disable DataWedge</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.ENABLE_DATAWEDGE</strong></p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled</p></div></div></td>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Get DataWedge Status</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_DATAWEDGE_STATUS</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: Empty string<br>Result: com.symbol.datawedge.api.GET_DATAWEDGE_STATUS_RESULT<br>Enabled/Disabled</p></div></div></td>
 </tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Get Profiles list</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_PROFILES_LIST</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br>Values: Empty<br>Result: Intent Extra<br>Type: String array list<br>Name: <strong>com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST</strong><br><strong>Note: Does not list hidden profiles</strong></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Get Version Info</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_VERSION_INFO</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Empty string<br>Result: com.symbol.datawedge.api.GET_VERSION_INTO_RESULT<br>Bundle:<br>DATAWEDGE<br>BARCODE_SCANNING<br>DECODER_LIBRARY<br>SIMULSCAN</p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Intent Output Enabled</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.intent_output_enabled</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled<br></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Keystroke Output Enabled</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.keystroke_output_enabled</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled<br><strong>Note: This intent is mapped to the ime_output_enabled intent</strong></p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Notification</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.NOTIFICATION</strong></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Register for Notification</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br> Supported values: Profile name, Profile status (enabled/disabled), Scanner Status (WAITING, SCANNING, etc.)</p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Rename a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.RENAME_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: Profile to be renamed, new name for Profile</p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Restore a Configuration to Default Values</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.RESTORE_CONFIG</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String (empty)<br>Returns settings to those stored in enterprise folder, if any. Otherwise out-of-box settings from /system/device/settings/datawedge.</p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Set a Configuration</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.SET_CONFIG</strong></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Set a Scanner Configuration</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.SET_SCANNER_CONFIG</strong></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Unregister for Notification</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.UNREGISTER_FOR_NOTIFICATION</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Bundle<br> Contents: NOTIFICATION TYPE (string; supported values only), APPLICATION_NAME (string: application package name)</p></td>
+</tr>
+
 </tbody>
 </table>
 </div>

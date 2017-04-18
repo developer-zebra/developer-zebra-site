@@ -27,6 +27,35 @@ An application accesses the original DataWedge APIs by broadcasting an intent, a
 
 **New APIs in DataWedge 6.3**: 
 
+* **RESTORE_CONFIG -** restores a DataWedge configuration to its default settings
+* **CREATE_PROFILE -** creates a new profile using settings specified in extras
+* **SET_SCANNER_CONFIG -** 
+* **UPDATE?  -** 
+* **PROFILE_ENABLED -** 
+* **KEYSTROKE?  -** 
+* *INTENT_OUTPUT -** 
+* **GET_VERSION_INFO -** gets version numbers of DataWedge and scanner and SimulScan frameworks 
+* **GET_DATAWEDGE_STATUS -** returns the DataWedge state (enabled/disabled) 
+* **NofotyScannerStatus -** 
+* **NotifyProfileChange -** 
+
+* **REGISTER_FOR_NOTIFICATION -** tells DataWedge to inform specified app or activity of specified status updates
+
+* **UNREGISTER_FOR_NOTIFICATION -** cancels request for app notification
+
+
+Restoring DataWedge configuration 
+Create a profile 
+Set scanner configuration in a profile 
+Update application association in a profile 
+Set enabled state in a profile 
+Set Keystroke configuration in a profile 
+Set Intent output configuration in a profile 	
+Query version information
+Query the current status of DataWedge 
+Notify scanner status changes 
+Notify profile changes to applications
+
 
 Introduced in 6.2:
 * **DELETE_PROFILE -** used to delete one or more Profiles

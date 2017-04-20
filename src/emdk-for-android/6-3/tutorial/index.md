@@ -80,7 +80,7 @@ automenu:
           url: /emdk-for-android/6-3/tutorial/tutBluetoothScannerAPI
         - title: Pair Remote Device by Scanning its Bluetooth Name/Address
           url: /emdk-for-android/6-3/tutorial/tutScanAndPairAPI
-        - title: Capture critical data from documents using SimulScan API
+        - title: Data Capture Using SimulScan APIs
           url: /emdk-for-android/6-3/tutorial/tutSimulScanAPI
 product: EMDK For Android
 productversion: '6.3'

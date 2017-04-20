@@ -8,7 +8,7 @@ productversion: '6.2'
 ## Overview
 The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
 
-**DataWedge 6.2 implements a new structure for launching Android intents**, which is part of a transition that will ultimately support multiple intents launched as a single command. As part of this transition, several new commands are introduced in 6.2 that use a new command syntax. DataWedge continues to support all original commands using their original syntax. 
+**DataWedge 6.2 implements a new structure for launching Android intents that supports multiple intents launched as a single command**. As part of this transition, several new commands are introduced in 6.2 along with a new command syntax. Original commands remain supported in the original syntax, and will be implemented in the new syntax in a future revision. 
 
 #### Requirements
 This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -36,8 +36,24 @@ An application accesses the original DataWedge APIs by broadcasting an intent, a
 
 ------
 
-## DataWedge 6.2 APIs
+## A New API Syntax
 The APIs in the table below are supported only on DataWedge 6.2 and higher. For the exact usage syntax, sample code for each interface follows the table. 
+
+New commands are initiated using the `setAction` method and included as extras using the `putExtra` method. For example, the JavaScript below sends two intents: one to delete the "MainInventory" profile and another to query DataWedge for the Profiles list:  
+
+		:::javascript
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		String[] profiles = {"MainInventory"};
+		i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE", profiles);
+		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+
+
+When queried, DataWedge broadcasts the answer in a result intent. **To consume the result, the receiving app must first use** `RegisterReceiver`, and **then use the result filter corresponding to the original intent**. For example, to consume the result of `GET_PROFILES_LIST`, use `RESULT_GET_PROFILES_LIST`. 
+
+<!-- If no category is set in the receiving intent, the extra default category `android.intent.category.DEFAULT` will be used. -->
+
+## DataWedge 6.2 APIs 
 
 <table rules="all"
 width="100%"
@@ -80,7 +96,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Get the Active Profile</p></td>
 <td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_ACTIVE_PROFILE</strong></p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_ACTIVE_PROFILE</p></div></div></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE</p></div></div></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Enable/Disable DataWedge</p></td>
@@ -169,8 +185,8 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 
 -----
 
-## DataWedge 6.x APIs
-The following APIs are supported on DataWedge 6.x and higher using the syntax described below. 
+## Legacy DataWedge APIs
+The following APIs are supported on DataWedge 6.x and higher using the syntax described below. They will be reimplemented using the new syntax in a future DataWedge version.  
 
 ### SoftScanTrigger
 The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  

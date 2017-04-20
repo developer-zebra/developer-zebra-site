@@ -33,6 +33,7 @@ This method can be used to query the signal status of DTR, DCD, DSR, RI, RTS, CT
 **Parameters:** 
 
 * Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal **p0** - 
+        
 
 **Returns** - System.Boolean
 

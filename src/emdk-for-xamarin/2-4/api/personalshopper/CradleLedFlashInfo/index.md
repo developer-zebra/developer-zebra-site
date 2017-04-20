@@ -1,8 +1,8 @@
 ---
 title: CradleLedFlashInfo
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 The class to hold the LED Flash settings.
 
@@ -26,9 +26,5 @@ Cradle LED off time in milliseconds.This is in mSecs and the range is from 0 mSe
 Enable or disable the smooth effect of the LED blinking
 
 **Type** - System.Boolean
-
-
-
-
 
 

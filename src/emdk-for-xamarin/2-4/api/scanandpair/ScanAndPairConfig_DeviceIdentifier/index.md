@@ -10,7 +10,7 @@ Provides the list of DeviceIdentifier types.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.DeviceIdentifier ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.DeviceIdentifier ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Provides the list of DeviceIdentifier types.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier
 

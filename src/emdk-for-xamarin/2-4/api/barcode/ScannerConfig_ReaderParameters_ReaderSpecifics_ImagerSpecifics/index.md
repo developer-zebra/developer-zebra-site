@@ -66,6 +66,10 @@ Sets the number of times a bar code is read to confirm an accurate decode. Use c
 This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes. Behavior of the level set to this parameter will vary based on the margin-less decoder selected. Note: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. 
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel
+###PairAfterScannerReboot
+Enable/disable automatic reconnection after scanner reboot. Applicable to DS3678 Bluetooth scanner only.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PairAfterScannerReboot
 ###PickList
 Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode. Use class ScannerConfig.PickList.
 

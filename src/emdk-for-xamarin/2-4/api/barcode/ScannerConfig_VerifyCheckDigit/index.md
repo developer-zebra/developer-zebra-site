@@ -10,7 +10,7 @@ Check the integrity of all Code 11 symbols to verify that the data complies with
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Check the integrity of all Code 11 symbols to verify that the data complies with
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+VerifyCheckDigit
 

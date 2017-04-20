@@ -10,7 +10,7 @@ This lists all the features exposed by the EMDK.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ This lists all the features exposed by the EMDK.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 
@@ -55,6 +54,10 @@ EMDK feature type for ScanAndPair
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 ###Serialcomm
 EMDK feature type for Serial Communication
+
+**Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
+###Simulscan
+EMDK feature type for SimulScan Document Capture
 
 **Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
 ###Version

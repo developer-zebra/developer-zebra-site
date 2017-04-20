@@ -10,7 +10,7 @@ Describes the selection of enhancement modes for decoding barcodes of poor or de
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PoorQualityDecodeEffortLevel ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Describes the selection of enhancement modes for decoding barcodes of poor or de
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PoorQualityDecodeEffortLevel
 

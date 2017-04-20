@@ -1,8 +1,8 @@
 ---
 title: CradleConfig
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 The class to access cradle configuration.
 
@@ -42,9 +42,5 @@ Gets the cradle location.
 
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation
-
-
-
-
 
 

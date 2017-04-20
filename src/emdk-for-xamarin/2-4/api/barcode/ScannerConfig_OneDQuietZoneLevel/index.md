@@ -10,13 +10,13 @@ Describes the effort at which the decoder will attempt to decode margin-less bar
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel ValueOf (string this_);**
 
 Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
 
 **Parameters:** 
 
-* System.String **p0** -  the name of the enum constant to be returned.
+* System.String **p0** - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel
 

@@ -10,7 +10,7 @@ All the possible actions for ProfileManager.processProfile(String, PROFILE_FLAG,
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ All the possible actions for ProfileManager.processProfile(String, PROFILE_FLAG,
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG
 

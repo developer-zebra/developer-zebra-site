@@ -1,8 +1,8 @@
 ---
 title: Cradle
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 Class to communicate with the MC18 cradle.
 
@@ -64,9 +64,5 @@ This method gets the information of cradle.
 Check if cradle has already been enabled
 
 **Type** - System.Boolean
-
-
-
-
 
 

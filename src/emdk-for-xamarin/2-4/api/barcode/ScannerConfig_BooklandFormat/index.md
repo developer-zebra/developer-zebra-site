@@ -10,7 +10,7 @@ Lists the Bookland formats
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Lists the Bookland formats
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BooklandFormat
 

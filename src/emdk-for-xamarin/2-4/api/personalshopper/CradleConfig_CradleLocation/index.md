@@ -1,8 +1,8 @@
 ---
 title: CradleConfig.CradleLocation
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 The class for provides access to the cradle location. The values modified will take effective only by calling setConfig().
 
@@ -10,7 +10,7 @@ The class for provides access to the cradle location. The values modified will t
 
 ##Constructors
 ### CradleLocation 
-**public CradleLocation (Symbol.XamarinEMDK.PersonalShopper.CradleConfig __self, int p1, int p2, int p3);**
+**public CradleLocation (Symbol.XamarinEMDK.PersonalShopper.CradleConfig __self, int p0, int p1, int p2);**
 
 ##Properties
 
@@ -26,9 +26,5 @@ The row identification number.
 The wall identification number.
 
 **Type** - System.Int32
-
-
-
-
 
 

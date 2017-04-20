@@ -10,7 +10,7 @@ This class allows the user to select decoding on inverse HanXin bar codes.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ This class allows the user to select decoding on inverse HanXin bar codes.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+HanXinInverse
 

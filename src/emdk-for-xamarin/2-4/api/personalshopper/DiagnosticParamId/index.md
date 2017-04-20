@@ -1,8 +1,8 @@
 ---
 title: DiagnosticParamId
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 The diagnostic parameter IDs.
 
@@ -11,10 +11,6 @@ The diagnostic parameter IDs.
 ##Constructors
 ### DiagnosticParamId 
 **public DiagnosticParamId ();**
-
-
-
-
 
 
 

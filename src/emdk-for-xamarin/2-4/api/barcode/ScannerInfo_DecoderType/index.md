@@ -10,7 +10,7 @@ This lists all the barcode types supported by scanners
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ This lists all the barcode types supported by scanners
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DecoderType
 

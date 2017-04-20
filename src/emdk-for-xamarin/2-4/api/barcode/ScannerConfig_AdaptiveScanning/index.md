@@ -10,7 +10,7 @@ Enable or Disable Adaptive scanning.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AdaptiveScanning ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AdaptiveScanning ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Enable or Disable Adaptive scanning.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AdaptiveScanning
 

@@ -1,8 +1,8 @@
 ---
 title: CradleResults
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 Defines all the error codes the cradle API returns. 
 
@@ -13,10 +13,12 @@ Defines all the error codes the cradle API returns.
 **public static Symbol.XamarinEMDK.PersonalShopper.CradleResults ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.CradleResults
 
@@ -24,6 +26,7 @@ Defines all the error codes the cradle API returns.
 **public static Symbol.XamarinEMDK.PersonalShopper.CradleResults[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.CradleResults[]
@@ -84,9 +87,5 @@ Error code not defined.
 This method provides integer value assigned to the enum. It is recommended only to get error for the UNDEFINED enums at runtime if required.
 
 **Type** - System.Int32
-
-
-
-
 
 

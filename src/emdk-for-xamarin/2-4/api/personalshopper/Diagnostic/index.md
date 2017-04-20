@@ -1,8 +1,8 @@
 ---
 title: Diagnostic
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 This class provides access to fetch the diagnostics information.
 
@@ -20,10 +20,6 @@ Get the values for all the parameters or the specified parameter ID.
 * Symbol.XamarinEMDK.PersonalShopper.DiagnosticConfig **p1** - :Input parameters
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.DiagnosticData
-
-
-
-
 
 
 

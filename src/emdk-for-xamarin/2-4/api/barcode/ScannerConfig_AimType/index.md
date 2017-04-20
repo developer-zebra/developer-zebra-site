@@ -10,7 +10,7 @@ Describes the type of aiming to use. This will take affect only when the continu
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Describes the type of aiming to use. This will take affect only when the continu
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
 

@@ -10,7 +10,7 @@ A Code ID character identifies the code type of a scanned bar code. This is usef
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ A Code ID character identifies the code type of a scanned bar code. This is usef
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CodeIdType
 

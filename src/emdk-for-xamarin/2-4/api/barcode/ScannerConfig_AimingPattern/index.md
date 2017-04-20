@@ -10,7 +10,7 @@ Describes the aiming pattern to be turned ON/OFF.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimingPattern ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Describes the aiming pattern to be turned ON/OFF.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimingPattern
 

@@ -10,7 +10,7 @@ Defines specific notification devices of each type.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Defines specific notification devices of each type.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier
 

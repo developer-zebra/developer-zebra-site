@@ -10,7 +10,7 @@ Two algorithms are possible for the verification of the second MSI check digit. 
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitScheme ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitScheme ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Two algorithms are possible for the verification of the second MSI check digit. 
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitScheme
 

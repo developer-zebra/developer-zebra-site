@@ -10,7 +10,7 @@ Provides the different types of barcode data to be scanned.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Provides the different types of barcode data to be scanned.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType
 

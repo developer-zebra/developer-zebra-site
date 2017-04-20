@@ -1,8 +1,8 @@
 ---
 title: DiagnosticConfig
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 The diagnostic configuration class has to be configured before calling the get diagnostics parameter data. This class configures average current and Shopping trip in minutes.
 
@@ -23,9 +23,5 @@ The average current consumption in mA. When this is 0, the default value will be
 The shopping trip duration in minutes. When this is 0, the value will be generated for 45 minutes.
 
 **Type** - System.Int32
-
-
-
-
 
 

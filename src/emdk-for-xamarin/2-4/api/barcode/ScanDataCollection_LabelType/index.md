@@ -10,7 +10,7 @@ This class describes the barcode symbology.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScanDataCollection.LabelType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScanDataCollection.LabelType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ This class describes the barcode symbology.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
 

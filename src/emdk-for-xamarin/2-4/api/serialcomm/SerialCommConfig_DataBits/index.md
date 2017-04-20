@@ -10,9 +10,10 @@ Pre-defined constants for number of data bits in a serial frame in SerialComm ob
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.DataBits ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.DataBits ValueOf (string this_);**
 
 
+        
 
 **Parameters:** 
 
@@ -24,6 +25,7 @@ Pre-defined constants for number of data bits in a serial frame in SerialComm ob
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.DataBits[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+DataBits[]

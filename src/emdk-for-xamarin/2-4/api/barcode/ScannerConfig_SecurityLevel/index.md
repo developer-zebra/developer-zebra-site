@@ -10,7 +10,7 @@ The scanner offers four levels of decode security for UPC/EAN bar codes. Select 
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SecurityLevel ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SecurityLevel ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ The scanner offers four levels of decode security for UPC/EAN bar codes. Select 
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SecurityLevel
 

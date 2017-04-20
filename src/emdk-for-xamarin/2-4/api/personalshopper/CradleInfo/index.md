@@ -1,8 +1,8 @@
 ---
 title: CradleInfo
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 This class holds cradle information.
 
@@ -31,9 +31,5 @@ Returns the part number of the cradle. The empty string returned if not availabl
 Returns the serial number of the cradle. The empty string returned if not available.
 
 **Type** - System.String
-
-
-
-
 
 

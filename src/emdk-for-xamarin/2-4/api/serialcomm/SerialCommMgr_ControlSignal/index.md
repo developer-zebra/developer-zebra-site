@@ -10,9 +10,10 @@ List of control signals
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal ValueOf (string this_);**
 
 
+        
 
 **Parameters:** 
 
@@ -24,6 +25,7 @@ List of control signals
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal[]

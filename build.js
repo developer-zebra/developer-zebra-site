@@ -732,6 +732,11 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true
     }))
     .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-4/api/simulscan',
+        automenu: true,
+        ascontent: true
+    })) 
+    .use(foldermenu({
         folder: 'emdk-for-xamarin/2-4/api/notification',
         automenu: true,
         ascontent: true

@@ -15,7 +15,7 @@ indicates when to press the trigger. Pair Success Four short beeps of the same f
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes ValueOf (string this_);**
 
 
         
@@ -23,7 +23,6 @@ indicates when to press the trigger. Pair Success Four short beeps of the same f
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+NotificationTypes
 

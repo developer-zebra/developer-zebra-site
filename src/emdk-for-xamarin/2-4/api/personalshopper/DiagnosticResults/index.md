@@ -1,8 +1,8 @@
 ---
 title: DiagnosticResults
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 Defines all the error codes the diagnostic API returns. 
 
@@ -13,10 +13,12 @@ Defines all the error codes the diagnostic API returns.
 **public static Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults ValueOf (string p0);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
+        
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults
 
@@ -24,6 +26,7 @@ Defines all the error codes the diagnostic API returns.
 **public static Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults[]
@@ -63,9 +66,5 @@ Error code not defined.
 This method provides integer value assigned to the enum.
 
 **Type** - System.Int32
-
-
-
-
 
 

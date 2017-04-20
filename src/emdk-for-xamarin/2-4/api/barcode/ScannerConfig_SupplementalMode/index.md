@@ -11,7 +11,7 @@ productversion: '2.4'
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SupplementalMode ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SupplementalMode ValueOf (string this_);**
 
 
         
@@ -19,7 +19,6 @@ productversion: '2.4'
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SupplementalMode
 

@@ -11,14 +11,14 @@ Note: Selecting the picklist may adversely affect overall decoding performance.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PicklistEx ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PicklistEx ValueOf (string this_);**
 
 
+        
 
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PicklistEx
 
@@ -26,6 +26,7 @@ Note: Selecting the picklist may adversely affect overall decoding performance.
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PicklistEx[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PicklistEx[]

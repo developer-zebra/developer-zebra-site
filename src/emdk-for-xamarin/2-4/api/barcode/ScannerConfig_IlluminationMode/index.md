@@ -10,7 +10,7 @@ Enable/disable illumination depending on ambient light conditions. This option i
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Enable/disable illumination depending on ambient light conditions. This option i
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+IlluminationMode
 

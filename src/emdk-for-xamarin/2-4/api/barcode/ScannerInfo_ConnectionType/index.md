@@ -10,7 +10,7 @@ List of supported scanner connection types.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ List of supported scanner connection types.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 

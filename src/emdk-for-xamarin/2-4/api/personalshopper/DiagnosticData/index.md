@@ -1,8 +1,8 @@
 ---
 title: DiagnosticData
-layout: guide.html
-product: EMDK For Xamarin
-productversion: '2.4'
+layout: guide.html 
+product: EMDK For Xamarin 
+productversion: '2.4' 
 ---
 The diagnostic data.
 
@@ -44,9 +44,5 @@ The duration in days battery was last replaced.
 The time in minutes since the device cold booted the last time.
 
 **Type** - System.Int32
-
-
-
-
 
 

@@ -10,9 +10,10 @@ Specifies the parity bits for a SerialComm object.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits ValueOf (string this_);**
 
 
+        
 
 **Parameters:** 
 
@@ -24,6 +25,7 @@ Specifies the parity bits for a SerialComm object.
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits[]

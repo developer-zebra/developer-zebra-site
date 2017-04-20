@@ -10,7 +10,7 @@ Volume slider type for decode audio feedback.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Volume slider type for decode audio feedback.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 

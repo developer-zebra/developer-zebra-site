@@ -10,7 +10,7 @@ Defines the specific scanner devices of each type.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Defines the specific scanner devices of each type.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 
@@ -35,6 +34,10 @@ Defines the specific scanner devices of each type.
 
 ###BluetoothImager1
 First available Bluetooth imager scanner
+
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
+###BluetoothImagerDs3678
+First available Bluetooth imager DS3678 scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier
 ###BluetoothImagerRs6000

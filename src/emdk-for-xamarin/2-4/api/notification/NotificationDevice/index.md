@@ -34,14 +34,13 @@ Enables the notification device. You must call disable() when you are done. This
 **Returns** - System.Void
 
 ###Notify
-**public virtual void Notify (Symbol.XamarinEMDK.Notification.Notification p0);**
+**public virtual void Notify (Symbol.XamarinEMDK.Notification.NotificationConfig p0);**
 
 This sends the notification information to the device.
 
 **Parameters:** 
 
-* Symbol.XamarinEMDK.Notification.Notification **p0** - 
-        
+* Symbol.XamarinEMDK.Notification.NotificationConfig **p0** - 
 
 **Returns** - System.Void
 

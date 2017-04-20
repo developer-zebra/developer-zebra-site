@@ -10,7 +10,7 @@ Defines the different states of the scan and pir/unpair.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Defines the different states of the scan and pir/unpair.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 

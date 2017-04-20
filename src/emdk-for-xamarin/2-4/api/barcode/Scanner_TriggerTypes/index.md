@@ -10,7 +10,7 @@ Types of triggers to begin barcode scanning.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.Scanner.TriggerTypes ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.Scanner.TriggerTypes ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Types of triggers to begin barcode scanning.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.Scanner+TriggerTypes
 

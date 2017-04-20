@@ -10,7 +10,7 @@ Enable or disable LCD mode (for Blockbuster imager devices only). LCD mode enhan
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.LcdMode ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.LcdMode ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Enable or disable LCD mode (for Blockbuster imager devices only). LCD mode enhan
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+LcdMode
 

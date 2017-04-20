@@ -10,9 +10,10 @@ Specifies the number of stop bits used on the SerialComm object.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits ValueOf (string this_);**
 
 
+        
 
 **Parameters:** 
 
@@ -24,6 +25,7 @@ Specifies the number of stop bits used on the SerialComm object.
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits[] Values ();**
 
 
+        
 
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits[]

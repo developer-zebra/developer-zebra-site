@@ -10,7 +10,7 @@ Option for concatenating pairs of ISBT128 code types.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Isbt128ConcatMode ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Isbt128ConcatMode ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Option for concatenating pairs of ISBT128 code types.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Isbt128ConcatMode
 

@@ -10,7 +10,7 @@ Connection states of a scanner device.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Connection states of a scanner device.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState
 

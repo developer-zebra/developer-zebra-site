@@ -10,7 +10,7 @@ Describes the LED Feedback mode is given by the host device and remote scanner.
 
 ##Methods
 ###ValueOf
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode ValueOf (string this_);**
 
 
         
@@ -18,7 +18,6 @@ Describes the LED Feedback mode is given by the host device and remote scanner.
 **Parameters:** 
 
 * System.String **p0** - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode
 

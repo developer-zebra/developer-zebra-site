@@ -48,7 +48,7 @@ products:
         label: '5.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-3/guide/about
+    url: /emdk-for-android/6-4/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:

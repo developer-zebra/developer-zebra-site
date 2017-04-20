@@ -290,7 +290,94 @@ RegionType as shown in the table below:
 <tr>
 <td>Picture</td><td>Byte[] (binary image data)</td>
 </tr>
-</table>
+</table></br></br>
+
+
+Use the region object's .getRegionType() method to first determine the region type and then cast the region data to a usable type.
+ 
+ See the examples below:
+
+ **OCR**
+
+ 		:::java
+		String sText = "";
+        if (region.getRegionType() == RegionType.OCR)
+        {
+            if (region.getData() != null)
+            {
+               String[] OCRResults = (String[]) region.getData();
+                if (null != OCRResults) {
+                    for (int nIndex = 0; nIndex < OCRResults.length; nIndex++)
+                    {
+                       if (nIndex != 0) //if not first index, prepend with newline
+                            sText = sText.concat("\n");
+                         sText = sText.concat(OCRResults[nIndex]);
+                    }
+               }
+            }
+            txtData.setText(sText);
+        }
+
+
+**OMR**
+
+		:::java
+		if (region.getRegionType() == RegionType.OMR)
+        {
+           if (region.getData() != null)
+           {
+               int iChecked = (Integer)region.getData();
+
+                switch (iChecked) {
+                     case 1 :
+                         sText = sText.concat(omrStatus[0].toString());
+                         break;
+                     case -1 :
+                         sText = sText.concat(omrStatus[1].toString());
+                         break;
+                     default :
+                         break;
+                 }
+             }
+             else
+             {
+                 sText = sText.concat(omrStatus[1].toString()); //default to unchecked
+             }
+              txtData.setText(sText);
+         }
+
+**BARCODE**
+
+		:::java
+		if (region.getRegionType() == RegionType.BARCODE)
+        {
+            if (region.getData() != null)
+            {
+                try
+                {
+                   sText = sText.concat((String) region.getData());
+                }
+                catch (ClassCastException e) //will get here if post-processing is off
+               {
+                   sText = "Post-processing is off";
+               }
+          }
+          txtData.setText(sText);
+       }
+
+
+**PICTURE**
+
+		:::java
+		if (region.getRegionType() == RegionType.PICTURE)
+        {
+           if (region.getData() != null)
+           {
+               byte[] jpegPicture = (byte[])region.getData();
+           }
+        }
+
+
 
 ###Important considerations
 

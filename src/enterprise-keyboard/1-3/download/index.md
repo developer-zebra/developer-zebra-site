@@ -7,14 +7,22 @@ productversion: '1.3'
 
 ### Download Enterprise Keyboard
 
-**Enterprise Keyboard 1.2 will be preinstalled on the Zebra TC8000 and WT6000** devices running Android 5.x Lollipop, when released. 
+**EKB 1.3 can be downloaded <u>as an OS update package</u> for the following Zebra devices** running Android 4.4 KitKat or Android 5.x Lollipop: 
 
-**EKB 1.2 can be downloaded for Zebra MC40, TC70 and TC75** devices running Android 4.4 KitKat, and for TC70 and TC75 devices running Lollipop, when released. 
+* **ET50**
+* **ET55**
+* **MC40**
+* **TC70**
+* **TC75** 
 
-* [Download Enterprise Keyboard 1.2 for MC40/TC70/TC75 KitKat](https://www.zebra.com/us/en/support-downloads.html) (an OS update).
+**To download EKB 1.3**:  
 
-* [Download Enterprise Keyboard 1.2 for TC70/TC75 Lollipop](https://www.zebra.com/us/en/support-downloads.html) (an OS update).
+1. **[Visit the EKB download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**. 
+2. **Scroll down to the desired EKB version** <u>corresponding to the Android version on the target device</u>. 
+3. Download and install the OS Update package using the standard device-update procedure.  
 
-* [Use Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) to remotely configure EKB (1.1 and higher) with EMDK, StageNow or a compatible MDM system.
+**Related Guide**:
+
+* The [Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) guide covers remote configuration with EMDK, StageNow or a compatible MDM system.
 
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

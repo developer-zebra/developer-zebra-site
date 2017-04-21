@@ -264,7 +264,7 @@ Also refer to the [DataWedge User Guide](../../../../) for complete documentatio
 ## Dynamic Input Method 
 **_This feature applies to native apps only_**. 
 
-Enterprise Keyboard 1.2 (and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked and the device scanner used to populate the field. The keyboard returns when the cursor lands on a text field, and so on. 
+Enterprise Keyboard (1.2 and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked and the device scanner used to populate the field. The keyboard returns when the cursor lands on a text field, and so on. 
 
 **To set the input method as static**: 
 

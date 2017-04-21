@@ -25,4 +25,6 @@ productversion: '1.3'
 
 * The [Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) guide covers remote configuration with EMDK, StageNow or a compatible MDM system.
 
+-----
+
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

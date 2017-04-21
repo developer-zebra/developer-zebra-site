@@ -8,7 +8,7 @@ productversion: '1.2'
 ## Overview
 Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
 
-Enterprise Keyboard 1.1 (and higher) can be configured in the following ways: 
+Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device
 * **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
@@ -29,7 +29,7 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-### New in Enterprise Keyboard 1.2
+### New in v1.2
 
 <b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
 <img alt="" style="height:350px" src="calculator_mode.png"/>
@@ -104,130 +104,8 @@ _Stock Android keyboard_:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
 
-<!--
-## Supported Devices
-This version of Enterprise Keyboard has been approved for use with the Zebra Android devices listed below. It also works on non-Zebra many devices running Android  KitKat and Lollipop. 
-
-FROM BERNAKE:
-We tested on MC40, TC55, TC70, Frenzy and TC8000
-@Nader, implied support of derivative products based on the representative products
-KitKat and Lollipop
-
-<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
-<tbody>
-
-<tr>
-<td style="width: 200pt;" width="250">
-<p class="MsoNormal"><b><font color="#333399" size="4">Device</font></b></p>
-</td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Android name</font></b></p>
-</td>
-<td style="width: 140px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    Android version</font></b></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-</tr>
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.2</font></p>
-</td>
-</tr>
-
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4.3</font></p>
-</td>
-</tr>
-
-<tr bgcolor="#ccffcc" >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">4.4</font></p>
-</td>
-</tr>
-
-<tr>
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">WT-6000</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
-</td>
-</tr>
-
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><font color="#333399" size="4">KitKat</font></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><font color="#333399" size="4">
-    4.4</font></p>
-</td>
-</tr>
-</tbody>
-</table>
--->
-
 ## How to Get It
 
-Enterprise Keyboard 1.2 comes preinstalled on some Zebra devices and can be downloaded for others. 
-
-See [Download page](../../download) for details. 
+Enterprise Keyboard 1.2 comes preinstalled on some Zebra devices and can be downloaded for others. See [Download page](../../download) for details. 
 
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

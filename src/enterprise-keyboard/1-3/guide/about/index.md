@@ -8,7 +8,7 @@ productversion: '1.3'
 ## Overview
 Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
 
-Enterprise Keyboard 1.1 (and higher) can be configured in the following ways: 
+Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device
 * **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
@@ -29,13 +29,13 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-### New in Enterprise Keyboard 1.3
+### New in v1.3
 
-Enterprise Keyboard 1.3 now supports the Zebra ET51 and ET55 tablet devices running Android. 
+Enterprise Keyboard 1.3 now supports the Zebra ET50 and ET55 tablet devices running Android. 
 
 See the [download page](../download) for a complete list of supported devices. 
 
-### Added in Enterprise Keyboard 1.2
+### Added in v1.2
 
 <b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
 <img alt="" style="height:350px" src="calculator_mode.png"/>
@@ -113,8 +113,6 @@ _Stock Android keyboard_:
 
 ## How to Get It
 
-Enterprise Keyboard 1.2 comes preinstalled on some Zebra devices and can be downloaded for others. 
-
-See [Download page](../../download) for details. 
+Enterprise Keyboard 1.3 can be downloaded as an OS Update for several Zebra devices running KitKat or Lollipop. See the [Download page](../../download) for details. 
 
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

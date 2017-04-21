@@ -51,7 +51,7 @@ set up your project for the EMDK.
 	:::java
 	SimulScanManager simulscanManager = (SimulScanManager) emdkManager.getInstance(FEATURE_TYPE.SimulScan);
 
->Note: Release() must be called on SimulScanManager before switching to another EMDK or DataWedge application
+>Note: emdkManager.release(FEATURE_TYPE.SimulScan) must be called before switching to another EMDK or DataWedge application
 
 ###Get SimulScanReader
 
@@ -169,6 +169,27 @@ When we are done with scanning, we must release the scanner hardware resources f
 		super.onStop();
 	}
 
+###Download templates from Template Builder
+
+The **SimulScanReader.fetchTemplate(UserName, Password)** method provides a means to download Templates from SimulScan Template Builder.
+
+SimulScan Template Builder can be accessed via https://simulscan.zebra.com/. To access Template Builder, you will need a user name and a password. The same user name and password must be provided as parameters to SimulScanReader's fetchTemplate method.
+
+When the fetching is complete, onSimulScanStatus will be called with the status of FETCH_TEMPLATE_COMPLETED.
+
+If there are errors when calling SimulScanReader's fetchTemplate method. onSimulScanStatus will be called with one of the following status codes:
+
+* FETCH_TEMPLATE_LOGIN_ERROR
+* FETCH_TEMPLATE_NETWORK_ERROR
+* FETCH_TEMPLATE_CANCELLED
+
+SimulScanReader **must be enabled before** calling fetchTemplate().
+
+fetchTemplate() API call will fail if a read() is in progress, and read() API call is not allowed while a fetchTemplate() is in progress. 
+
+Downloaded templates will be saved to the default template directory of the device ( see **SimulScan Default Templates** below)
+
+
 ###SimulScanConfig in detail
 
 The SimulScanConfig APIs can be used to set various SimulScan configuration parameters for each SimulScan reader. To get the current configuration of a SimulScanReader via a SimulScanConfig object, use the SimulScanReader.getConfig() API. Use the SimulScanConfig object’s public parameters to change the configuration and then call SimulScanReader.setConfig(SimulScanConfig config) to apply the changes.
@@ -218,15 +239,50 @@ EMDK will generate onSimulSCanStatus events when there is a change in state in a
 				break;
 			case IDLE:
 				Log.v(TAG, "Idle");
+				switch(statusData.getExtendedState())
+				{
+					case PROCESSING_TIMEOUT:
+						Log.v(TAG, "Timeout occurred during processing");
+						break;
+					case IDENTIFICATION_TIMEOUT:
+						Log.v(TAG, "Timeout occurred during identification");
+						break;
+					case CANCELLED:
+						Log.v(TAG, "Cancelled scanning");
+						break;
+					case FORM_DECODED:
+						Log.v(TAG, "Form decoded successfully");
+						break;
+				}
 				break;
 			case ERROR:
-			Log.e(TAG, "ERROR: " + statusData.extendedInfo. getExtendedStatusDescription ());
+				switch(statusData.getExtendedState())
+				{
+					case FETCH_TEMPLATE_LOGIN_ERROR:
+						Log.e(TAG, "Fetch template login error");
+						break;
+					case  FETCH_TEMPLATE_NETWORK_ERROR:
+						Log.e(TAG, "Network error occurred while trying to fetch templates");
+						break;
+					case  FETCH_TEMPLATE_CANCELLED:
+						Log.e(TAG, "User cancelled fetch template");
+						break;
+					case UNLICENSED_FEATURE:
+						Log.e(TAG, "Unlicensed Feature detected: " + statusData.getStatusDescription());
+						break;
+					case UNDEFINED:
+					default:
+						Log.e(TAG, "Error: " + statusData.getStatusDescription());
+						break;
+				}
 				break;
 			case UNKNOWN:
 			default:
 				break;
 		}
-	}
+
+		}
+
 
 
 Use the SimulScanStatusData’s getFriendlyName() API to get the friendly name of the SimulScanReader that has generated the Status event and use the getState() API to get the SimulScanStatus object with the status change information.
@@ -238,9 +294,22 @@ The list of valid states are as follows:
 - ERROR : Error occurred
 - IDLE : Finished scanning
 - SCANNING : Successfully started scanning
-- UNKNOWN : Known status
+- UNKNOWN : Unknown status
 
-For additional error information use the Extended info parameter of the SimulScanStatusData object.
+Use the SimulScanStatusData’s getExtendedState() method to get extended status information of IDLE and ERROR state.
+
+A list of valid extended states are as follows:
+
+* PROCESSING_TIMEOUT : Timeout occurred during processing
+* IDENTIFICATION_TIMEOUT : Timeout occurred during identification
+* CANCELLED: Cancelled scanning
+* UNLICENSED_FEATURE: Unlicensed feature detected. Use SimulScanStatusData’s getStatusDescription() method to identify the unlicensed feature
+* FORM_DECODED: Form decoded successfully
+* FETCH_TEMPLATE_LOGIN_ERROR:  Fetch template login error
+* FETCH_TEMPLATE_NETWORK_ERROR: Network error occurred while trying to fetch templates
+* FETCH_TEMPLATE_CANCELLED: User cancelled fetch template
+* UNDEFINED: No extended state
+
 
 >Note: If you plan to do any significant processing during the onSimulScanStatus callback, you should do so in a background thread so that it does not block the UI thread.
 

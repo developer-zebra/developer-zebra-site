@@ -238,10 +238,11 @@ The "Auto" option will automatically determine the best scanning device from the
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
 #### Bluetooth Scanners
-DataWedge supports the following Bluetooth scanners: 
+DataWedge supports the following Zebra Bluetooth scanners: 
 
-* **Zebra RS507** Cordless Ring Scanner
-* **RS6000 Bluetooth Ring Scanner** (when used with WT6000 only)  
+* **RS507** Cordless Ring Scanner
+* **RS6000** Ring Scanner (when used with WT6000 only) 
+* **DS3678** Ultra-Rugged Scanner
 
 Bluetooth scanners are supported according to the following rules:
 

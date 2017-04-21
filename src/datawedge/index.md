@@ -2,7 +2,7 @@
 title: DataWedge
 img: datawedge_logo.png
 layout: redirect.html
-redirect_url: /datawedge/6-2/guide/about
+redirect_url: /datawedge/6-3/guide/about
 ---
 
-### Redirecting to the latest DataWedge documentation...
+### Going to DataWedge 6.3 docs...

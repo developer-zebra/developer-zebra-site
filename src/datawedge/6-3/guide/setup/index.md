@@ -241,7 +241,7 @@ The "Auto" option will automatically determine the best scanning device from the
 DataWedge supports the following Zebra Bluetooth scanners: 
 
 * **RS507** Cordless Ring Scanner
-* **RS6000** Ring Scanner (when used with WT6000 only) 
+* **RS6000** Ring Scanner
 * **DS3678** Ultra-Rugged Scanner
 
 Bluetooth scanners are supported according to the following rules:

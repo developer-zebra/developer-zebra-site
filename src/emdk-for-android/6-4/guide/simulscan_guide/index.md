@@ -255,6 +255,9 @@ EMDK will generate onSimulSCanStatus events when there is a change in state in a
 						break;
 				}
 				break;
+			case FETCH_TEMPLATE_COMPLETED:
+				Log.v(TAG,"Fetching templates completed");
+				break;
 			case ERROR:
 				switch(statusData.getExtendedState())
 				{
@@ -294,6 +297,7 @@ The list of valid states are as follows:
 - ERROR : Error occurred
 - IDLE : Finished scanning
 - SCANNING : Successfully started scanning
+- FETCH_TEMPLATE_COMPLETED: Fetch template completed
 - UNKNOWN : Unknown status
 
 Use the SimulScanStatusData’s getExtendedState() method to get extended status information of IDLE and ERROR state.

@@ -2,7 +2,7 @@
 title: About Enterprise Keyboard
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '1.2'
+productversion: '1.3'
 ---
 
 ## Overview
@@ -29,7 +29,13 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-### New in v1.2
+### New in v1.3
+
+Enterprise Keyboard 1.3 now supports the Zebra ET50 and ET55 tablet devices running Android. 
+
+See the [download page](../download) for a complete list of supported devices. 
+
+### Added in v1.2
 
 <b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
 <img alt="" style="height:350px" src="calculator_mode.png"/>
@@ -104,8 +110,9 @@ _Stock Android keyboard_:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
 
+
 ## How to Get It
 
-Enterprise Keyboard 1.2 comes preinstalled on some Zebra devices and can be downloaded for others. See [Download page](../../download) for details. 
+Enterprise Keyboard 1.3 can be downloaded as an OS Update for several Zebra devices running KitKat or Lollipop. See the [Download page](../../download) for details. 
 
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

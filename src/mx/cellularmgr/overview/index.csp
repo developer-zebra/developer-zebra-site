@@ -15,12 +15,18 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Data Roaming
  * Background Data
  * SIM Slot Selection (TC75x only)
- * Cellular Data
- * A Cellular Data Limit
 * Turn On/Off (control State of): 
  * Data Roaming 
  * Background Data
- * Cellular Data
- * Cellular Data Limit
 * Select SIM Slot 
 * Enter a custom cellular data limit and warning threshold
+
+<!-- 
+Present in DSD but not implemented in the CSP (with MX 6.3):   
+* Enable/Disable
+ * Cellular Data
+ * Cellular Data Limit
+* Turn On/Off 
+ * Cellular Data
+ * A Cellular Data Limit
+ -->

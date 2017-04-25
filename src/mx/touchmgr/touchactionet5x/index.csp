@@ -1,6 +1,6 @@
 ---
 csp: touchmgr
-title: Touch Actions for ET50, ET56
+title: Touch Actions for ET50, ET55
 type: parm
 order: 4
 mx: "6.3"
@@ -28,4 +28,4 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.
 ---
 
-Used to specify the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. This parameter is designed for use with the Zebra ET50 and ET56 devices. 
+Used to specify the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. This parameter is designed for use with the Zebra ET50 and ET55 devices. 

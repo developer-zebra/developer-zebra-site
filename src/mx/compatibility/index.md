@@ -52,6 +52,10 @@ csps:
     url: /mx/browsermgr
     csp: browsermgr
   - type: section
+    title: Bug Report Manager
+    url: /mx/bugreportmgr
+    csp: bugreportmgr
+  - type: section
     title: Camera Manager
     url: /mx/cameramgr
     csp: cameramgr
@@ -128,7 +132,7 @@ csps:
     url: /mx/persistmgr
     csp: persistmgr
   - type: section
-    title: Personal Dictionary Manager
+    title: Personal Dictionary
     url: /mx/personaldictionarymgr
     csp: personaldictionarymgr
   - type: section

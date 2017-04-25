@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: Set Primary DNS
+type: parm
+order: 45
+mx: "4.2"
+parm:
+  pivotal: No
+  presentif: The Network Action is "Add a New Network" and "Use DHCP" box is unchecked 
+  name: IpDns1
+  type: string
+---
+
+Used to specify the primary domain name server for the device. This parameter is required only if DNS name resolution is required for the device. 
+
+**Parm value input rules**: 
+
+* String containing a valid IPv4 address. For example: "8.8.8.8" 

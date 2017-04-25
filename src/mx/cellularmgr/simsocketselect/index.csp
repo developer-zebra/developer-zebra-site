@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Select SIM Socket 
 type: parm
-order: 5
+order: 6
 mx: "6.2"
 parm:
   pivotal: No
@@ -31,4 +31,4 @@ parm:
       description: Uses SIM4 to connect the device to the carrier network.
 ---
 
-Used to select which SIM card will be used to connect the device to the carrier network. 
+Used to select which SIM card will be used to connect the device to the carrier network. **Supported on the Zebra TC75x only**. 

@@ -23,4 +23,4 @@ parm:
       description: This value will cause this DHCP Option to be turned off and hence will prevent a Host Name from being to be sent by the DHCP Client to the DHCP Server.
 ---
 
-This parm allows you to control whether a Host Name will be sent by the DHCP Client to the DHCP Server via the Host Name DHCP Option. The Host Name is generally used by a DHCP Server to identify a device on the network and/or to track the devices to which IP Addresses have been assigned.
+Controls whether a Host Name will be sent by the DHCP Client to the DHCP Server via the Host Name DHCP Option. The Host Name is generally used by a DHCP Server to identify a device on the network and/or to track the devices to which IP Addresses have been assigned.

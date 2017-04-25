@@ -5,7 +5,7 @@ type: parm
 order: 56
 mx: "4.2"
 parm:
-  presentif: The "Specify Advanced Options" box is enabled.
+  presentif: The "Use Advanced Options" box is checked.
   pivotal: False
   name: PowerSave
   type: list
@@ -37,5 +37,5 @@ parm:
 ---
 Used to configure the Power Save Mode from the settings table below. **The default "Fast Power Save" value must be used for the "Power Save" parameter; the "Do not change" value will result in failure**.
 
-**Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
+**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
 

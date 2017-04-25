@@ -5,7 +5,7 @@ type: parm
 order: 59
 mx: "4.2"
 parm:
-  presentif: The "Specify Advanced Options" box is enabled.
+  presentif: The "Use Advanced Options" box is checked.
   pivotal: False
   name: AdvancedLogging
   type: string
@@ -13,6 +13,6 @@ parm:
 
 Used to start or stop advanced Wi-Fi logging. 
 
-**Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
+**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
 
 

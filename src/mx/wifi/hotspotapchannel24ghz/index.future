@@ -1,0 +1,59 @@
+---
+csp: wifi
+title: Set Hotspot 2.4GHz Channel 
+type: parm
+order: 76
+mx: "6.3"
+parm:
+  presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot Band" is "2.4GHz" 
+  pivotal: No
+  name: Hotspot24GHz
+  type: list
+  list:
+    - code: 1
+      mx: "6.3"
+      name: 1
+      description: Selects channel 1 on the 2.4GHz band
+    - code: 2
+      mx: "6.3"
+      name: 1
+      description: Selects channel 2 on the 2.4GHz band
+    - code: 3
+      mx: "6.3"
+      name: 3
+      description: Selects channel 3 on the 2.4GHz band    
+    - code: 4
+      mx: "6.3"
+      name: 4
+      description: Selects channel 4 on the 2.4GHz band
+    - code: 5
+      mx: "6.3"
+      name: 5
+      description: Selects channel 5 on the 2.4GHz band
+    - code: 6
+      mx: "6.3"
+      name: 6
+      description: Selects channel 6 on the 2.4GHz band    
+    - code: 7
+      mx: "6.3"
+      name: 7
+      description: Selects channel 7 on the 2.4GHz band
+    - code: 8
+      mx: "6.3"
+      name: 8
+      description: Selects channel 8 on the 2.4GHz band
+    - code: 9
+      mx: "6.3"
+      name: 9
+      description: Selects channel 9 on the 2.4GHz band
+    - code: 10
+      mx: "6.3"
+      name: 10
+      description: Selects channel 10 on the 2.4GHz band
+    - code: 11
+      mx: "6.3"
+      name: 11
+      description: Selects channel 11 on the 2.4GHz band
+---
+Used to set the Wi-Fi communication channel to be used by devices connecting to the device to its Wi-Fi hotspot on the 2.4GHz band. 
+

@@ -2,7 +2,7 @@
 csp: personaldictionarymgr
 title: Locale
 type: parm
-order: 11
+order: 13
 mx: "6.0"
 parm:
   presentif: Use Current Locale is "Unchecked" (value=0) 
@@ -11,9 +11,11 @@ parm:
   type: string
 ---
 
-Used to enter a specific Locale on which to perform an Action, such as Add Word. 
+Used to enter a specific locale on which to perform an Action, such as Add Word. A locale is the combination of a language and a region in which that language is spoken. Languages are identified by two lower-case letters; regions are identified by two upper-case letters. The locale joins the two letter-pairs with an underscore ("_") character. For example, "en_US" is the locale specification for "English spoken in the United States," and "fr_CA" is the locale specification for "French spoken in Canada." 
 
-**Parm input rules:**
+For a list of supported locales, see the [UI Manager](../uimgr/#set-current-locale). 
 
-* A string of between 2 and 10 characters
+**Parm value input rules**:
+
+* A string from 2-10 characters
 * Must correspond to a locale installed on the device 

@@ -1,22 +1,22 @@
 ---
 csp: wifi
-title: Use Advanced Options 
+title: Use Advanced Options (checkbox) 
 type: parm
-order: 12
+order: 50
 mx: "4.2"
 parm:
   pivotal: True
   name: UseAdvancedOptions
   type: list
   list:
-    - code: true
+    - code: 1
       mx: "4.2"
-      name: True
-      description:
-    - code: false
+      name: (checked)
+      description: Enables the use of Wi-Fi Advanced Options on the device. 
+    - code: 0
       mx: "4.2"
-      name: False
-      description: 
+      name: (unchecked)
+      description: Disables the use of Wi-Fi Advanced Options on the device. 
 ---
 
-Used to enable/disable the use of Advanced Wi-Fi Options. **Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
+Controls Wi-Fi Advanced Options, which whould be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced options can result in undesirable device behavior.

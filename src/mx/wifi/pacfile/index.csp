@@ -2,7 +2,7 @@
 csp: wifi
 title: PAC File Url
 type: parm
-order: 50
+order: 48
 mx: "5.0"
 parm:
   pivotal: No

@@ -1,6 +1,6 @@
 ---
 csp: powerkeymgr
-title: Airplane Mode Power Key Menu Option
+title: Airplane Mode Show/Hide
 type: parm
 order: 2
 mx: "4.3"
@@ -14,19 +14,17 @@ parm:
       mx: "4.3"
       osx: "4.3"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to whether or not Airplane Mode can be turned on or off from the Airplane Mode menu option in the Power Key Menu.
+      description: This value (or the absence of this parm from the XML) will cause no change to Power Off Menu settings; any previously selected setting will be retained.
     - code: 1
       name: Show Menu Option
       mx: "4.3"
       osx: "4.3"
-      description: This value will allow Airplane Mode to be turned on or off from the Airplane Mode Option in the Power Key Menu, if the Power Key Menu for the device supports this menu option.
+      description: Enables Airplane Mode to be controlled from the Power Off Menu.
     - code: 2
       name: Do not show Menu Option
       mx: "4.3"
       osx: "4.3"
-      description: <p>This value will prevent Airplane Mode from being turned on or off from the Airplane Mode menu option in the Power Key Menu.</p><p><b>Note:</b> Depending on the device, this value may cause the Airplane Mode Option in the Power Key menu to be hidden. However, this value will always prevent the user from using this option in the Power Key Menu.</p>
+      description: Prevents Airplane Mode from being controlled from the Power Off Menu; hides the function on some devices, grays it on others.  
 ---
 
-Turning on Airplane Mode disables all radios, including the cellular radio, the Wi-Fi radio, and the Bluetooth radio. While Airplane Mode is turned off, radios other than the cellular radio can be turned back on individually. Turning off Airplane Mode turns on the cellular radio, but does not change the state of other radios.
-
->This parm allows you to select whether or not Airplane Mode should be allowed to be turned on or off from the Airplane Mode menu option in the Power Key Menu.
+Controls whether the Airplane Mode control is accessible from the Power Off Menu. When a device enters Airplane Mode, its Bluetooth, cellular and Wi-Fi radios are disabled; Bluetooth and Wi-Fi radios can be turned back on if desired by the user. 

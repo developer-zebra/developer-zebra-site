@@ -1,8 +1,8 @@
 ---
 csp: dhcpoptionmgr
-title: Vendor Specific1 (186)
+title: Vendor Specific 186 Enable/Disable
 type: parm
-order: 15
+order: 60
 mx: "5.0"
 parm:
   pivotal: No
@@ -12,15 +12,15 @@ parm:
     - code: 0
       mx: "5.0"
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured; any previously selected setting will be retianed.
     - code: 1
       name: Enable
       mx: "5.0"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the Vendor Specific1 option 186 to be requested by the DHCP Client in the DHCP Request.
+      description: Enables vendor-specific option 186 to be requested by the DHCP Client.
     - code: 2
       name: Disable
       mx: "5.0"
-      description: This value will cause this DHCP Option to be turned off and hence will not cause the Vendor Specific1 option 186 to be requested by the DHCP Client in the DHCP Request.
+      description: Prevents vendor-specific option 186 from being requested.
 ---
 
-Similar to Option 43, Vendor Specific1 (Option 186) can be requested by the DHCP client. The potential returned value of this request is determined by the vendor of the DHCP server.
+Controls whether vendor-specific option 186 can be requested by the DHCP client. The potential returned value of this request is determined by the DHCP server vendor.

@@ -5,7 +5,7 @@ type: parm
 order: 53
 mx: "4.2"
 parm:
-  presentif: The "Specify Advanced Options" box is enabled.
+  presentif: The "Use Advanced Options" box is checked.
   pivotal: False
   name: FT
   type: string
@@ -14,4 +14,4 @@ Controls the Fast Transition roam algorithm (802.11r), which improves on IEEE 80
 
 _**Not supported on TC70 QC GA1 devices running Android KitKat**_. 
 
-**Important**: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. **Do not use these features unless told to do so by qualified personnel**; altering advanced settings can result in undesirable results.
+**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.

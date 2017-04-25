@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Specify Diagnostic Options 
+title: Use Diagnostic Options (checkbox) 
 type: parm
 order: 10
 mx: "4.4"
@@ -9,16 +9,15 @@ parm:
   name: UseDiagnosticOptions
   type: list
   list:
-    - code: true
+    - code: 1
       mx: "4.4"
-      name: True
-      description:
-    - code: false
+      name: (checked)
+      description: Allows device diagnostics options to be selected.
+    - code: 0
       mx: "4.4"
-      name: False
-      description: 
+      name: (unchecked)
+      description: Prevents diagnostics options from being displayed for selection. 
 ---
 
-Specify whether Diagnostic Options will be used. When turned on, Fusion Advanced Logging can also be turned on. This option can be used to collect additional information for troubleshooting but can impact the performance of a device.
+Controls whether Diagnostic Options will be used on the device. **Generally used only at the direction of Zebra support staff**; impacts device performance and behavior. Used to collect additional information for troubleshooting. When checked, Fusion Advanced Logging can also be enabled.
 
-> **Note:** In most cases, this option should not be used except under the direction of Zebra support staff.

@@ -1,0 +1,36 @@
+---
+csp: wifi
+title: OmniTrail Priority 
+type: parm
+order: 98
+mx: "6.3"
+parm:
+  pivotal: No
+  presentif: The "Specify OmniTrail Options" checkbox is checked
+  name: OmniTrailPriority
+  type: list
+  list:
+    - code: 4
+      mx: "6.3"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
+    - code: 0
+      mx: "6.3"
+      name: 0
+      description: Sets the OmniTrail Priority to 0 (lowest). 
+    - code: 1
+      mx: "6.3"
+      name: 1
+      description: Sets the OmniTrail Priority to 1. 
+    - code: 2
+      mx: "6.3"
+      name: 2
+      description: Sets the OmniTrail Priority to 2. 
+    - code: 3
+      mx: "6.3"
+      name: 3
+      description: Sets the OmniTrail Priority to 3 (highest). 
+
+---
+
+Used to assign a Priority to the OmniTrail service from lowest (0) to highest (3).

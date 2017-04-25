@@ -2,10 +2,10 @@
 csp: personaldictionarymgr
 title: Delete Word
 type: parm
-order: 7
+order: 6
 mx: "6.0"
 parm:
-  presentif: Action is "Delete Word"
+  presentif: Action is "Delete word"
   pivotal: No
   name: DeleteWord
   type: string
@@ -13,6 +13,6 @@ parm:
 
 Used to remove a word or phrase from the Personal dictionary. 
 
-**Parm input rules:**
+**Parm value input rules**:
 
-* A string of between 1 and 64 characters
+* A string from 1-64 characters

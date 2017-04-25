@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: Hotspot Passphrase Clear
+type: parm
+order: 81
+mx: "6.3"
+parm:
+  presentif: The "Specify Hotspot Options" is checked, the "Protect Hotspot Passphrase" checkbox is unchecked and "Hotspot" is set to "Enable"
+  pivotal: No
+  name: HotspotPassphraseClear
+  type: string
+---
+
+Used to provide a password for accessing the hotspot and to store it as clear text. 
+
+**Parm value input rules**: 
+
+* String from 1-32 characters containing the hotspot password

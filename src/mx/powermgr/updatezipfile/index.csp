@@ -13,15 +13,18 @@ parm:
 
 ---
 
-Used to specify the path and filename of the file to be consumed when updating the device using the OS Update Reset Action. The OS Update file must either the specific .zip file being applied, or a text file (with .upl extension) containing a list of patches (multiple .zip files) to be applied, in the desired order from top to bottom. 
+Used to specify the path and filename of the file to be consumed when updating the device using the OS Update Reset Action. The OS Update file must either be the specific .zip file being applied, or a text file (with .upl extension) containing a list of patches (multiple .zip files) to be applied in the desired order from top to bottom. 
 
 For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101_G_00_02.zip` are to be applied in that order, the OS Update text file should be created as follows: 
 
 	:::term
 	//Contents of the "osupdate.upl" text file:
 
-	M99N0KXXVPUCP14500.zip
-	CFE-M99-L-N0-010101_G_00_02.zip
+	package:M99N0KXXVPUCP14500.zip
+	package:CFE-M99-L-N0-010101_G_00_02.zip
+
+	// Note the package files are preceded by the notation "package:" 
+	
 
 
 ### Update File Rules

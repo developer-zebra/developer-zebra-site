@@ -6,9 +6,16 @@ productversion: '6.3'
 ---
 
 ## Overview
-The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
+The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. **DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2** that can launch multiple intents in a single command. DataWedge continues to support all original commands using their original syntax. 
 
-**DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2**, part of a transition that will ultimately provice full control of DataWedge Profiles through intents and support multiple intents launched as a single command. As part of this transition, more new commands are introduced in 6.3 that use the new command syntax. DataWedge continues to support all original commands using their original syntax. 
+**Important: API commands are not queued, <u>and might be ignored</u>** if sent while DataWedge is busy processing an earlier intent. When an API command is sent, DataWedge executes the command immediately if it is not busy doing something else. Exceptions to this rule are: 
+
+* `STOP_SCANNING` - interrupts a scan operation
+* `DISABLE_PLUGIN` - disables the current scanner input plug-in
+
+To help ensure proper execution, delay code can be inserted prior to critical commands. See the [SoftScanTrigger](#softscantrigger) API for a delay code sample.  
+
+-----
 
 #### Requirements
 This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -17,9 +24,23 @@ This guide assumes experience with Android programming and familiarity with [And
 An application accesses the original DataWedge APIs by broadcasting an intent, and uses the primary pieces of information in an intent--Action and Data--to specify which API function to perform. 
 
 ------
+## API Syntax
+The APIs in the table below are supported only on DataWedge 6.2 and higher. For the exact usage syntax, sample code for each interface follows the table. 
+
+New commands are initiated using the `setAction` method and included as extras using the `putExtra` method. For example, the JavaScript below sends two intents: one to delete the "MainInventory" profile and another to query DataWedge for the Profiles list:  
+
+		:::javascript
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		String[] profiles = {"MainInventory"};
+		i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE", profiles);
+		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+
+
+When queried, DataWedge broadcasts the answer in a result intent. **To consume the result, the receiving app must first use** `RegisterReceiver`, and **then use the result filter corresponding to the original intent**. For example, to consume the result of `GET_PROFILES_LIST`, use `RESULT_GET_PROFILES_LIST`. 
 
 ## DataWedge 6.3 APIs
-The APIs in the table below are supported only on DataWedge 6.2 and higher. For the exact usage syntax, sample code for each interface follows the table. 
+The APIs in the table below are supported by DataWedge 6.3 and higher. For the exact usage syntax, sample code for each interface follows the table. 
 
 <table rules="all"
 width="100%"
@@ -224,8 +245,8 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 
 -----
 
-## DataWedge 6.x APIs
-The following APIs are supported on DataWedge 6.x and higher using the syntax described below. 
+## Legacy DataWedge APIs
+The following legacy APIs are remain supported by DataWedge 6.2 and higher using the syntax described below. 
 
 ### SoftScanTrigger
 The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
@@ -254,7 +275,7 @@ The SoftScanTrigger API command can be used to start, stop or toggle a software 
 ####RETURN VALUES
 None.
 
-Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+Error and debug messages will be logged to the Android logging system, which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
 
 	$ adb logcat -s DWAPI
 
@@ -276,7 +297,7 @@ Error messages will be logged for invalid actions and parameters
 	context.this.sendBroadcast(i);
 
 ####COMMENTS 
-The received API commands are not queued; API commands are processed immediately. Commands received while the current API command is still being processed may be ignored. For example, attempting to send the soft scan trigger start command immediately after sending the scanner enable command will result in the soft scan trigger command being ignored because the scanner enable will not have had time to complete. In this case, the soft scan trigger command should be delayed sufficiently for the scanner enable to complete; one example of how this could be done is given below.
+The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. For example, use of delay code similar to that shown below could be used.
 
 	int triggerDelay = 250; // delay in milliseconds
 

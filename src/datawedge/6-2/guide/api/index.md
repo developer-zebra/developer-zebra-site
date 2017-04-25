@@ -36,7 +36,7 @@ An application accesses the original DataWedge APIs by broadcasting an intent, a
 
 ------
 
-## A New API Syntax
+## API Syntax
 The APIs in the table below are supported only on DataWedge 6.2 and higher. For the exact usage syntax, sample code for each interface follows the table. 
 
 New commands are initiated using the `setAction` method and included as extras using the `putExtra` method. For example, the JavaScript below sends two intents: one to delete the "MainInventory" profile and another to query DataWedge for the Profiles list:  

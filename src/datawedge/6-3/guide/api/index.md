@@ -2,13 +2,20 @@
 title: Data Capture API 
 layout: guide.html
 product: DataWedge
-productversion: '6.2'
+productversion: '6.3'
 ---
 
 ## Overview
-The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. 
+The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. **DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2** that can launch multiple intents in a single command. DataWedge continues to support all original commands using their original syntax. 
 
-**DataWedge 6.2 implements a new structure for launching Android intents that supports multiple intents launched as a single command**. As part of this transition, several new commands are introduced in 6.2 along with a new command syntax. Original commands remain supported in the original syntax, and will be implemented in the new syntax in a future revision. 
+**Important: API commands are not queued, <u>and might be ignored</u>** if sent while DataWedge is busy processing an earlier intent. When an API command is sent, DataWedge executes the command immediately if it is not busy doing something else. Exceptions to this rule are: 
+
+* `STOP_SCANNING` - interrupts a scan operation
+* `DISABLE_PLUGIN` - disables the current scanner input plug-in
+
+To help ensure proper execution, delay code can be inserted prior to critical commands. See the [SoftScanTrigger](#softscantrigger) API for a delay code sample.  
+
+-----
 
 #### Requirements
 This guide assumes experience with Android programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../setup) and the [Advanced Guide](../advanced). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -16,26 +23,7 @@ This guide assumes experience with Android programming and familiarity with [And
 #### Interfaces
 An application accesses the original DataWedge APIs by broadcasting an intent, and uses the primary pieces of information in an intent--Action and Data--to specify which API function to perform. 
 
-**Original DataWedge APIs**: 
-
-* **SoftScanTrigger -** used to start, stop or toggle a software scanning trigger
-* **ScannerInputPlugin -** enable/disable the scanner Plug-in used by the active Profile
-* **EnumerateScanners -** returns a list of scanners available on the device
-* **SetDefaultProfile -** sets the specified Profile as the default Profile
-* **ResetDefaultProfile -** resets the default Profile to Profile0
-* **SwitchToProfile -** switches to the specified Profile
-
-**New APIs in DataWedge 6.2**: 
-
-* **DELETE_PROFILE -** used to delete one or more Profiles
-* **GET_PROFILES_LIST -** returns a list of Profiles in the device
-* **CLONE_PROFILE -** creates a copy of an existing Profile
-* **RENAME_PROFILE -** changes the name of an existing Profile 
-* **GET_ACTIVE_PROFILE -** returns the name of the currently selected Profile
-* **ENABLE_DATAWEDGE -** used to enable/disable the DataWedge app
-
 ------
-
 ## API Syntax
 The APIs in the table below are supported only on DataWedge 6.2 and higher. For the exact usage syntax, sample code for each interface follows the table. 
 
@@ -51,9 +39,8 @@ New commands are initiated using the `setAction` method and included as extras u
 
 When queried, DataWedge broadcasts the answer in a result intent. **To consume the result, the receiving app must first use** `RegisterReceiver`, and **then use the result filter corresponding to the original intent**. For example, to consume the result of `GET_PROFILES_LIST`, use `RESULT_GET_PROFILES_LIST`. 
 
-<!-- If no category is set in the receiving intent, the extra default category `android.intent.category.DEFAULT` will be used. -->
-
-## DataWedge 6.2 APIs 
+## DataWedge 6.3 APIs
+The APIs in the table below are supported by DataWedge 6.3 and higher. For the exact usage syntax, sample code for each interface follows the table. 
 
 <table rules="all"
 width="100%"
@@ -66,43 +53,116 @@ cellspacing="0" cellpadding="4">
 <col width="50%" />
 -->
 <thead>
-<tr>
+<tr bgcolor="#e0e0eb" >
 <th align="left" valign="top">Command</th>
 <th align="left" valign="top">Intent Extra(s)</th>
 <th align="left" valign="top">Value</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td align="left" valign="top"><p class="table">Delete a Profile</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.DELETE_PROFILE</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String array<br>Values: List of profiles to be deleted<br> <strong>Note: The “*” character deletes all deletable profiles</strong></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Query the Profile list</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_PROFILES_LIST</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String<br>Values: Empty<br>Result: Intent Extra<br>Type: String array list<br>Name: <strong>com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST</strong><br><strong>Note: Does not list hidden profiles</strong></p></td>
-</tr>
+
 <tr>
 <td align="left" valign="top"><p class="table">Clone a Profile</p></td>
 <td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.CLONE_PROFILE</strong></p></td>
-<td align="left" valign="top"><p class="table">Type: String array<br>Values: Source profile name, new profile name<br></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: Source Profile name, New profile name<br></p></td>
 </tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Create a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.CREATE_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br>Result: CREATE_PROFILE_RESULT broadcast intent with name (success) or reason for failure (i.e. already_exists, unknown)</p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Delete a Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.DELETE_PROFILE</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String array<br>Values: List of profiles to be deleted<br> <strong>Note: The “*” character deletes all deletable profiles, including the "Launcher" Profile.</strong></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Enable/Disable DataWedge</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.ENABLE_DATAWEDGE</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled</p></div></div></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Get the Active Profile</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_ACTIVE_PROFILE</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_ACTIVE_PROFILE</p></div></div></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Get DataWedge Status</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_DATAWEDGE_STATUS</strong></p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Type: Empty string<br>Result: com.symbol.datawedge.api.GET_DATAWEDGE_STATUS_RESULT<br>Enabled/Disabled</p></div></div></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Get Profiles list</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_PROFILES_LIST</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br>Values: Empty<br>Result: Intent Extra<br>Type: String array list<br>Name: <strong>com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST</strong><br><strong>Note: Does not list hidden profiles</strong></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Get Version Info</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_VERSION_INFO</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Empty string<br>Result: com.symbol.datawedge.api.GET_VERSION_INTO_RESULT<br>Bundle:<br>DATAWEDGE<br>BARCODE_SCANNING<br>DECODER_LIBRARY<br>SIMULSCAN</p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Intent Output Enabled</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.intent_output_enabled</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled<br></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Keystroke Output Enabled</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.keystroke_output_enabled</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled<br><strong>Note: This intent is mapped to the ime_output_enabled intent</strong></p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Notification</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.NOTIFICATION</strong></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Register for Notification</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String<br> Supported values: Profile name, Profile status (enabled/disabled), Scanner Status (WAITING, SCANNING, etc.)</p></td>
+</tr>
+
 <tr>
 <td align="left" valign="top"><p class="table">Rename a Profile</p></td>
 <td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.RENAME_PROFILE</strong></p></td>
 <td align="left" valign="top"><p class="table">Type: String array<br>Values: Profile to be renamed, new name for Profile</p></td>
 </tr>
-<tr>
-<td align="left" valign="top"><p class="table">Get the Active Profile</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.GET_ACTIVE_PROFILE</strong></p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Type: String<br>Values: Empty<br> Result: Intent Extra<br>Type: String<br>Name: com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE</p></div></div></td>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Restore a Configuration to Default Values</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.RESTORE_CONFIG</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: String (empty)<br>Returns settings to those stored in enterprise folder, if any. Otherwise out-of-box settings from /system/device/settings/datawedge.</p></td>
 </tr>
+
 <tr>
-<td align="left" valign="top"><p class="table">Enable/Disable DataWedge</p></td>
-<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.ENABLE_DATAWEDGE</strong></p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Type: Boolean<br>Values: true/false<br>True = Enabled<br> False = Disabled</p></div></div></td>
+<td align="left" valign="top"><p class="table">Set a Configuration</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.SET_CONFIG</strong></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
 </tr>
+
+<tr bgcolor="#e0e0eb" >
+<td align="left" valign="top"><p class="table">Set a Scanner Configuration</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.SET_SCANNER_CONFIG</strong></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><p class="table">Unregister for Notification</p></td>
+<td align="left" valign="top"><p class="table"><strong>com.symbol.datawedge.api.UNREGISTER_FOR_NOTIFICATION</strong></p></td>
+<td align="left" valign="top"><p class="table">Type: Bundle<br> Contents: NOTIFICATION TYPE (string; supported values only), APPLICATION_NAME (string: application package name)</p></td>
+</tr>
+
 </tbody>
 </table>
 </div>
@@ -186,7 +246,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 -----
 
 ## Legacy DataWedge APIs
-The following APIs are supported on DataWedge 6.x and higher using the syntax described below. They will be reimplemented using the new syntax in a future DataWedge version.  
+The following legacy APIs are remain supported by DataWedge 6.2 and higher using the syntax described below. 
 
 ### SoftScanTrigger
 The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
@@ -215,7 +275,7 @@ The SoftScanTrigger API command can be used to start, stop or toggle a software 
 ####RETURN VALUES
 None.
 
-Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+Error and debug messages will be logged to the Android logging system, which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
 
 	$ adb logcat -s DWAPI
 
@@ -237,7 +297,7 @@ Error messages will be logged for invalid actions and parameters
 	context.this.sendBroadcast(i);
 
 ####COMMENTS 
-The received API commands are not queued; API commands are processed immediately. Commands received while the current API command is still being processed may be ignored. For example, attempting to send the soft scan trigger start command immediately after sending the scanner enable command will result in the soft scan trigger command being ignored because the scanner enable will not have had time to complete. In this case, the soft scan trigger command should be delayed sufficiently for the scanner enable to complete; one example of how this could be done is given below.
+The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. For example, use of delay code similar to that shown below could be used.
 
 	int triggerDelay = 250; // delay in milliseconds
 

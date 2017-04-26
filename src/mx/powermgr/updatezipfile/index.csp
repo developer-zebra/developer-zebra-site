@@ -24,7 +24,7 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 	package:CFE-M99-L-N0-010101_G_00_02.zip
 
 	// Note the package files are preceded by the notation "package:" 
-	
+
 
 
 ### Update File Rules
@@ -468,14 +468,21 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
   </tr>
   -->
  <tr>
-    <td>(varied)</td>
+    <td>(multiple)</td>
     <td><p>Lollipop and higher</p></td>
-	<td>/data/tmp/public</td>
-	<td>Applies to all devices running Android 5.0 Lollipop, Android 6.0 Marshmallow and higher</td>
+	<td><strong>/data/tmp/public</strong></td>
+	<td><strong>Zebra recommends using this path; it will be supported on all devices running Android 5.0 Lollipop and higher</strong>. See note below.</td>
   </tr>
 </table>
 </div>
 <br>
+
+**Note**: Zebra devices running Android Lollipop and Marshmallow might support update-file locations other than the location recommended in the table above. Other supported locations might include: 
+
+* `/storage/sdcard0` (internal)
+* `/storage/sdcard1` (external)
+
+However, support of such locations is subject to changes that are beyond Zebra's control. **Zebra recommends testing any update procedure on a working device before the process is considered for mass deployment**. 
 
 **Parm value input rules**: 
 

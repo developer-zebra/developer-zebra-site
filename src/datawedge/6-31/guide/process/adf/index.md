@@ -1,109 +1,21 @@
 ---
-title: ADF Process Plug-in
+title: Advanced Data Formatting
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
 ---
 
 ## Overview
-Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated application or server via the Output Plug-in. Process Plug-ins are grouped with each Output Plug-in, and appear as "Basic Data Formatting" and "Advanced Data Formatting." They are explained below. 
+Process Plug-ins manipulate the acquired data in a specified way before sending it via the Output Plug-in to the associated application or server. Controls for Process Plug-ins appear as "Basic Data Formatting" and "Advanced Data Formatting," and are grouped in a Profile's settings panel along with its Output Plug-in. 
 
-
+See [Basic Data Formatting](../bdf) 
+[How Plug-ins work](../overview)
 
 **Process Plug-ins specify**: 
 * Basic data formatting (append with keystrokes, prefix, suffix, etc.)
 * Advanced data formatting (rules-based data manipulation)
 
-
-**The Basic Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes as well as conversion of data to hex. For example, if the acquired barcode data is 012345, this option would cause the hex equivalent data of 30**31**32**33**34**35** to be sent. 
-
-**The Advanced Format Process Plug-in** allows for acquired data to be customized  to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. For more information, please see the [Advanced Data Formatting Guide](../advanced). 
-
-
-## SimulScan Input 
-The SimulScan Input Plug-in permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins. 
-
-<img style="height:350px" src="keystroke-output.png"/>
-_SimulScan Input Plug-in options_.
-<br>
-
-**SimulScan Capture Notes**:
-
-* **Text captured through SimulScan** is concatenated into a single string, and processing is performed on that string.
-* **If the Barcode Input Plug-in is enabled** in a Profile, enabling SimulScan in that Profile will cause the Barcode Input Plug-in to be disabled. 
-
-**Device Selection -** permits selection between the device camera or the default scanning device set by the system.  
-
-**Template selection -** sets a SimulScan template for the Profile being configured. 
-
-**Templates included with DataWedge**:
-
-* **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check.
-
-* **Barcode1.xml -** decodes a single barcode of any symbology.
-
-* **Barcode2.xml -** decodes two barcodes of the same or differing symbologies.
-
-* **Barcode4.xml -** decodes four barcodes of the same or differing symbologies.
-
-* **Barcode5.xml -** decodes five barcodes of the same or differing symbologies.
-
-* **Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies.
-
-* **BookNumber.xml -** decodes 10- or 13-digit ISBN codes.
-
-* **DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode if present. This is the default form if none is selected.
-
-* **DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
-
-* **TravelDoc.xml -** captures information from the machine-readable zone (MRZ) of a travel document such as a passport.
-
-* **Unstructured Multi-Line.xml -** uses OCR to acquire multiple lines of alpha/numeric text.
-
-* **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text.
-
-_The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_.
-
-Custom template XML files copied to the following device directory will be available for selection using this option:
-
-`/enterprise/device/settings/datawedge/templates` 
-
-**Note: Files and folders within the /enterprise directory are invisible to Android File Browser** by default; they can be made visible by manually inputting the path.
-
-Partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../simulscan/1-1/guide/templatebuilder). 
-
-**Region separator -** is used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch SimulScan region data to separate text fields.
-
-Possible values:
-* None (default)
-* Tab
-* Line feed 
-* Carriage return 
-
-**Notes**: 
-* **Barcode, OCR and OMR regions** are considered as text regions. When using keystroke output and IP output, only text-region data will be dispatched to the foreground application or the remote server.
-* **Picture-region data** can be retrieved only through the Intent Output Plug-in.
-
------
-
-## Basic Data Formatting
-The Basic Format Process Plug-in provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to an Output Plug-in. It also permits the conversion of data to hexadecimal format. If the Basic Formatting Plug-in is not enabled, captured data is passed to the selected Output Plug-in without modification.
-
-<img style="height:350px" src="basic_data_formatting.png"/>
-_Basic Data Formatting Output Plug-in options_. 
-<br>
-
-**Prefix to data -** adds (prepends) the specified characters(s) **to the beginning** of the acquired data before sending.
-
-**Suffix to data -** adds (appends) the specified characters(s) **to the end** of the acquired data before sending.
-
-**Send data -** Enabled by default, this allows transfer of the captured data to the associated application when it comes to the foreground. **Note**: Disabling this option prevents only the _captured_ data from being transferred; any prefix and/or suffix strings will be handed to the associated application(s), even when this option is disabled.
-
-**Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option would send the hex equivalent of 30**31**32**33**34**35**. 
-
-**Send TAB key -** appends a TAB character to the processed data. 
-
-**Send ENTER key -** appends an Enter character to the processed data. 
+**The Advanced Format Process Plug-in** allows for acquired data to be customized  to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. 
 
 ## Advanced Data Formatting
 DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on its contents. The Advanced Data Formatting (ADF) Process Plug-in can be configured to determine whether and how the data should be altered according to rules. These rules can be used to trigger (or prevent) actions based on specific criteria relating to the data. For example, a rule might be created to trigger an action only if the first four digits of an acquired 16-digit number determine that it's a credit card number affiliated with a specific bank. Any number of rules and interdependencies can be created, giving DataWedge the ability to suit virtually any data processing requirement.   
@@ -112,7 +24,7 @@ DataWedge permits data acquired from barcode scanning, magstripe reading or othe
 
 **Rules -** The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../decoders) can be selected or excluded. 
+**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../../decoders) can be selected or excluded. 
 
 **Actions -** A set of procedures for analyzing, identifying and processing acquired data. 
 
@@ -129,28 +41,28 @@ Setting up Advanced Data Formatting is done in three basic steps:
 2. Define Criteria to activate the Rule
 3. Define the Action(s) to be executed by the Rule
 
-These steps are all carried out within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see the Plug-ins section of the [DataWedge Setup Guide](../setup). 
+These steps are all carried out within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see the Plug-ins section of the [DataWedge Setup Guide](../../setup). 
 
 **To Create an ADF Rule**: 
 
 &#49;. In the Profile that requires ADF, **tap on Advanced data formatting** as highlighted below. A screen appears similar to the image in Step 2.
-<img style="height:350px" src="adf_intent_output.png"/>
+<img style="height:350px" src="../adf_intent_output.png"/>
 <br>
 
 &#50;. **Tap the "hamburger" menu, select New rule** and enter a name for the rule. The new Rule appears with other Rules in the Output Plug-in screen similar to the image in Step 3, below.   
-<img style="height:350px" src="Figure_14_Adv_DataFormattingScreen.png"/>
+<img style="height:350px" src="../Figure_14_Adv_DataFormattingScreen.png"/>
 <br>
 
 &#51;. **Tap the new Rule** to access its settings. A screen appears similar to the image in Step 4.  
-<img style="height:350px" src="adf_15_rules_list.png"/>
+<img style="height:350px" src="../adf_15_rules_list.png"/>
 <br>
 
 &#52;. **Tap Criteria** as highlighted below to enter the criteria that will activate the Rule.  
-<img style="height:350px" src="Criteria-MyAppRule01.png"/>
+<img style="height:350px" src="../Criteria-MyAppRule01.png"/>
 <br>
 
 &#53;. From the Criteria screen, **enter the criteria that will activate the Rule** based on the options below.  
-<img style="height:350px" src="adf_23_source_criteria.png"/>
+<img style="height:350px" src="../adf_23_source_criteria.png"/>
 <br>
 
 **Action Criteria**:
@@ -164,21 +76,21 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 
 * **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning U.S. Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
 
-* **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which [specific decoders](../decoders) can be further selected or excluded), or through SimulScan. 
+* **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which [specific decoders](../../decoders) can be further selected or excluded), or through SimulScan. 
 <br>
 
 &#54;. **Tap the BACK button** to save and return to the Rule screen.
-<img style="height:350px" src="adf_17_criteria_list.png"/>
+<img style="height:350px" src="../adf_17_criteria_list.png"/>
 <br>
 
 **To Add an Action**:
 
 &#55;. From the Rule screen, **tap "Actions"** as highlighted below. Then **select New action from the menu on the next screen**. A scrollable list of Actions appears, similar to the image in Step 8.
-<img style="height:450px" src="Criteria-MyAppRule01_copy.png"/>
+<img style="height:450px" src="../Criteria-MyAppRule01_copy.png"/>
 <br>
 
 &#56;. **Tap the desired Action in the Actions list**, scrolling as necessary. After tapping an Action, the Rule screen reappears with that Action added to the bottom of the Actions list. For a description of each Action, see the table below. 
-<img style="height:350px" src="adf_19_actions1.png"/>
+<img style="height:350px" src="../adf_19_actions1.png"/>
 <br>
 
 ### Supported ADF Actions
@@ -299,12 +211,12 @@ cellspacing="0" cellpadding="4">
 _**Note: To help minimize data loss, Zebra recommends sending a Pause Action of 50 ms after sending any ENTER, LINE FEED or TAB character**._
 
 &#57;. **Repeat Step 8 until all required Actions appear in an Actions list** similar to the image below. Actions execute from top to bottom. To re-order an Action, drag by its "hamburger" icon. **See additional notes and the example, below**.  
-<img style="height:350px" src="The-ADF-Rule screen.png"/>
+<img style="height:350px" src="../The-ADF-Rule screen.png"/>
 _The ADF Rule screen from DataWedge 6.2 (with several configured actions)._
 <br>
 <br>
 
-<img style="height:350px" src="rules_screen_AndroidL.png"/>
+<img style="height:350px" src="../rules_screen_AndroidL.png"/>
 _The ADF Rule screen from DataWedge 6.2 (with no configured actions)._
 <br>
 
@@ -381,7 +293,7 @@ The following is an example of the creation process for an Advanced Data Formatt
 1. Tap **BACK**.
 
 The Rule0 screen should appear similar to the image below. 
-<img style="height:350px" src="Figure_18_ADF_SampleScreen.png"/>
+<img style="height:350px" src="../Figure_18_ADF_SampleScreen.png"/>
 <br>
 
 -----
@@ -465,7 +377,7 @@ For more information about Android Intents, please refer to the [Android Develop
 ## IP Output
 The IP Output Plug-in enables captured data to be transferred over a network to a computer running IPWedge, a small Windows app made by Zebra. The PC receives the data as keystrokes or in its Clipboard, in essence turning the device into a wireless scanner for the PC. 
 
-To configure a device to use the IP Output Plug-in, it's necessary to know the IP address of the PC as well as the port number to which the PC will be listening. To set up the PC first, see the [IPWedge Guide](../ipwedge) for IPWedge download and set-up instructions. Then resume from here.
+To configure a device to use the IP Output Plug-in, it's necessary to know the IP address of the PC as well as the port number to which the PC will be listening. To set up the PC first, see the [IPWedge Guide](../../output/ipwedge) for IPWedge download and set-up instructions. Then resume from here.
 
 #### Set up the IP Output Plug-in: 
 
@@ -475,7 +387,7 @@ To configure a device to use the IP Output Plug-in, it's necessary to know the I
 
 &#50;. **Check "Enabled" and "Remote Wedge" boxes** to enable IP Output and communication with the IPWedge server component.
 
-<img style="height:350px" src="ip_output.png"/>
+<img style="height:350px" src="../ip_output.png"/>
 _IP Output Plug-in options_. 
 <br>
 
@@ -507,7 +419,7 @@ DCP is disabled by default. The DataWedge Profile configuration screen allows an
 
 **Note: The DCP will not appear if the scanner is disabled in the current Profile**.
 
-<img style="height:350px" src="dcp_settings.png"/>
+<img style="height:350px" src="../dcp_settings.png"/>
 _Data Capture Plus options for setting scan triggers_. 
 <br>
 
@@ -531,13 +443,13 @@ Data Capture Plus offers these configurable parameters:
 
 **Note**: A quick touch and release of the DCP can sometimes start the viewfinder when using camera as a scanner. To exit, press the back button.
 
-<img style="height:350px" src="dcp_minimized.png"/>
+<img style="height:350px" src="../dcp_minimized.png"/>
 _Data Capture Plus shown in minimized mode_. 
 <br>
 
 **Note**: If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. However, runtime changes to the vertical position and the docking side of device screen _**will**_ be saved to the active Profile.
 
-<img style="height:350px" src="dcp_maximized.png"/>
+<img style="height:350px" src="../dcp_maximized.png"/>
 _Data Capture Plus shown in maximized mode_. 
 <br>
 

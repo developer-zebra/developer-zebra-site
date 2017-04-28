@@ -724,15 +724,11 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 ------
 
-See the [Advanced Settings Guide](../advanced) for information about Advanced Data Formatting, Profile Import/Export, Configuration File Management and Mass Deployment. 
+**Related Guides**:
 
-
-
-
-
-
-
-
-
-
+* [Input Plug-ins](../input)
+* [Process Plug-ins](../process)
+* [Output Plug-ins](../output)
+* [DataWedge APIs for Android](../../api) 
+* [DataWedge Settings](../settings)
 

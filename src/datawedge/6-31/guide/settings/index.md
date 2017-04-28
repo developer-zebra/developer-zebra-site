@@ -6,12 +6,12 @@ productversion: '6.3'
 ---
   
 ## Overview
-This guide covers settings for DataWedge itself, including enabling and disabling DataWedge on the device, importing and exporting Profiles and Configuration files and management and mass-deployment of those files. For information about creating and imnplementing Profiles and Plug-ins, see the [Profiles Guides](../profiles). 
+This guide covers settings for the DataWedge app, including enabling and disabling DataWedge on the device, importing and exporting Profiles and Configuration files, and management and mass-deployment of those files. For information about creating and imnplementing Profiles and Plug-ins, see the [Profile Guides](../profiles). 
 
 -----
 
 ## DataWedge Settings
-Most of the functionality referenced in this guide will be accessed through the DataWedge Settings panel. 
+Most of the functionality referenced in this guide is accessed through the DataWedge Settings panel. 
 
 **To access DataWedge Settings**: 
 

@@ -1,5 +1,5 @@
 ---
-title: Barcode Scanner Parameters
+title: Scanner Parameters
 layout: guide.html
 product: DataWedge
 productversion: '6.3'

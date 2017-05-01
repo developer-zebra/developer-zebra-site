@@ -9,7 +9,7 @@ menu:
       url: /datawedge/6-31/guide/about
     - title: Basic Setup
       url: /datawedge/6-31/guide/setup
-    - title: Profiles
+    - title: Profiles/Plug-ins
       url: /datawedge/6-31/guide/profiles
     - title: Parameters
       url: /datawedge/6-31/guide/decoders

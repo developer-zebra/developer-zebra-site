@@ -1,14 +1,15 @@
 ---
 title: Profiles and Plug-ins
-description: Each app that uses DataWedge must be associated with a Profile, which contains Plug-ins for determining how the data will be acquired, processed and delivered to the app. For more information, see the Getting Started page. 
+description: Each app that uses DataWedge must be associated with a Profile, which contains Plug-ins for determining how the data will be acquired, processed and delivered to the app. For complete details, see the Architecture Overview page. 
 layout: list-apis.html
 automenu:
   items:
-    - title: Start Here
+    - title: About Profiles
       items:
         - title: Architecture Overview
           url: ../overview
-    - title: Input Plug-ins
+        - title: Create a Profile
+          url: ../createprofile
       items:
         - title: Barcode Scanners
           url: ../input/barcode

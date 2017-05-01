@@ -27,10 +27,10 @@ A DataWedge Profile contains information about how DataWedge should behave with 
 Any number of Profiles can be created to suit all the needs of an enterprise. DataWedge also includes several pre-configured Profiles to support general needs or for specific apps that are built into every device. Some of these, such as Profile0, are visible to the user and can be edited as needed. Others contain fixed parameters and are not visible or configurable. 
 
 #### Visible Profiles
-* **Profile0 -** is a generic that takes effect for any unassociated foreground app. 
-* **Launcher -** is used when the Launcher screen is in the foreground.
-* **DWDemo -** is used with DWDemo, the [DataWedge Demo app](../demo) app. When DWDemo comes to the foreground, data captured with DataWedge is handed to the DWDemo application.
-* **User-defined -** profiles are always visible and available for editing. 
+* **Profile0 -** a generic that takes effect for any unassociated foreground app. 
+* **Launcher -** used when the Launcher screen is in the foreground.
+* **DWDemo -** used with DWDemo, the [DataWedge Demo app](../demo) app. When DWDemo comes to the foreground, data captured with DataWedge is handed to the DWDemo application.
+* **User-defined -** always visible and available for editing. 
 
 #### Hidden Profiles
 * **RD Client -** provides support for Zebra's Rapid Deploy app and third-party MDM solutions.
@@ -94,7 +94,7 @@ Test and adjust input, processing (data formatting) and output parameters as nec
 
 The app will now use DataWedge to acquire barcode data. 
 
-For a detailed look at this process, see the [Basic Setup](../setup) page.  
+For a detailed look at this process, see the [Create a Profile](../createprofile) page.  
 
 -----
 

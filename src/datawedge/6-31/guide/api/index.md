@@ -1,19 +1,19 @@
 ---
 title: DataWedge APIs
-description: . 
+description: description of APIs here. 
 layout: list-apis.html
 automenu:
   items:
     - title: APIs
       items:
         - title: Overview 
-          url: ../overview
+          url: overview
         - title: 6.3 APIs
-          url: ../6-3
+          url: 6-3
         - title: Legacy APIs
-          url: ../legacy
+          url: legacy
         - title: API Tutorials
-          url: ../tutorials
+          url: tutorials
         - title: API Samples
-          url: ../samples
+          url: samples
 ---

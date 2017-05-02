@@ -9,7 +9,7 @@ productversion: '6.3'
 
 Barcode Input Plug-ins specify the device hardware to be used to acquire barcode data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. The the [Scanner Parameters](../../decoders/#scanparams) section for more information**. 
 
-For input using SimilScan, see the [SimulScan Input Plug-in](../simulscan). 
+For input using SimulScan, see the [SimulScan Input Plug-in](../simulscan). 
 
 Barcode Input Plug-ins are used to specify: 
 
@@ -55,5 +55,6 @@ Bluetooth scanners are supported according to the following rules:
 **Related guides**:
 
 * [Profiles/Plug-ins](../../profiles)
+* [Input Parameters](decoders)
 * [DataWedge APIs](../../api) 
 

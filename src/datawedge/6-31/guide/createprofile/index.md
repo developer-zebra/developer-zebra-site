@@ -108,22 +108,9 @@ The app will now use DataWedge for barcode data acquisition.
 Editing a Profile also can be started by tapping the Profile name in the Profile list. 
 
 -----
-## Plug-in Links
 
-### Input Plug-ins
+**Related Guides**: 
 
-* [Barcode scanners](../input/barcode)
-* [Data Capture Plus](../input/dcp) 
-* [Mag Stripe Reader (MSR)](../input/msr)
-* [SimulScan](../input/simulscan)
-
-### Process Plug-ins
-
-* [Advanced Data Formatting (ADF)](../process/adf)
-* [Basic Data Formatting (BDF)](../process/bdf)
-
-### Output Plug-ins
-
-* [Intent Output](../output/intent)
-* [IP Output (IPWedge)](../output/ipwedge)
-* [Keystroke Output](../output/keystroke)
+* **[Profile Architecture Overview](../overview) -** explains how DataWedge uses Profiles and Plug-ins
+* **[Profiles/Plug-Ins listing](../profiles) -** links and details for all DataWedge Plug-ins
+* **[DataWedge APIs](../api) -** access DataWedge programmatically 

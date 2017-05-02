@@ -21,5 +21,6 @@ _MSR input is enabled in the "DWDemo" Profile_
 **Related guides**:
 
 * [Profiles/Plug-ins](../../profiles)
+* [Input Parameters](decoders)
 * [DataWedge APIs](../../api) 
 

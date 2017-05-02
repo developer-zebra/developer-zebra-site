@@ -1,12 +1,16 @@
 ---
-title: Scanner Parameters
+title: Scanner Input Parameters
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
 ---
 
 ## Overview
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (*) in the table below. To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile. Parameters for individual Decoders also can be modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and details those with configurable parameters. 
+Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. This can be used as a means of increasing security, reducing decode errors or other reasons. For example, a company that routinely receives packages encoded with Code 128 symbology might help reduce scan errors by limiting the Code 128 decoders it implements to those of the non-EAN variety. 
+
+Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders, and provides details for those with configurable parameters.
+
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (*) in the table below. **To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile**.
 
 ### Default Decoders 
 <div class="table-striped">

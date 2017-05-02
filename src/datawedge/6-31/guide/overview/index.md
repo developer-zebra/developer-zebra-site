@@ -45,21 +45,12 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 * Intent (programmatic hand-off of data)
 * IP Output (sending data to a server over IP)
 
-**Related Guides**
-
-* [Input Plug-ins](../input)
-* [Process Plug-ins](../process)
-* [Output Plug-ins](../output)
-
 -----
 
 ## Create a Profile
-This section provides an overview of the steps required for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge for scanning services. 
+The basic steps for creating a Profile and associating it with an app on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. For a detailed look at this process, see the [Create a Profile](../createprofile) page.  
 
-For a detailed look at the process, see the [Basic Setup](../setup) page.  
-
-### Quick Steps
-To enable DataWedge scanning services for an app, perform the following steps on an Android device:
+**To enable DataWedge scanning services for an app**:
 
 1. **Install the app** that will use DataWedge for scanning. 
 2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
@@ -82,8 +73,9 @@ For a detailed look at this process, see the [Create a Profile](../createprofile
 
 -----
 
-Other DataWedge guides: 
-* [IPWedge Guide](../ipwedge)
-* [DataWedge Data Capture API for Android](../api) <!--
-* [DataWedge Capture API](../capture) -->
+**Related Guides**: 
+
+* **[Profile Architecture Overview](../overview) -** explains how DataWedge uses Profiles and Plug-ins
+* **[Profiles/Plug-Ins listing](../profiles) -** links and details for all DataWedge Plug-ins
+* **[DataWedge APIs](../api) -** access DataWedge programmatically 
 

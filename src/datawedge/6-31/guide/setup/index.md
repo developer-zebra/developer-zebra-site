@@ -26,10 +26,9 @@ When associated with an app, DataWedge can be invoked to scan and acquire the da
 -----
 
 ## Create a Profile
-This section provides step-by-step instructions for creating a DataWedge Profile, which includes plug-ins for input, processing and output, plus association with an app. Use these steps for every app that will call on DataWedge for scanning services. 
+The basic steps for creating a Profile and associating it with an app on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. For a detailed look at this process, see the [Create a Profile](../createprofile) page.  
 
-### Quick Steps
-To enable DataWedge scanning services for an app, perform the following steps on an Android device:
+**To enable DataWedge scanning services for an app**:
 
 1. **Install the app** that will use DataWedge for scanning. 
 2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
@@ -52,7 +51,7 @@ The app will now use DataWedge for barcode data acquisition.
 
 **Related Guides**: 
 
-* **[Create a Profile guide](../guide/createprofile) -** step-by-step instructions and screenshots
-* **[Profile Architecture Overview](../guide/overview) -** 
-* **[Profiles/Plug-Ins listing](../profiles) -** links to all DataWedge Plug-ins
-* **[DataWedge APIs](../api)
+* **[Create a Profile guide](createprofile) -** the instructions above plus details and screenshots
+* **[Profile Architecture Overview](overview) -** explains how DataWedge uses Profiles and Plug-ins
+* **[Profiles/Plug-Ins listing](../profiles) -** links and details for all DataWedge Plug-ins
+* **[DataWedge APIs](../api) -** access DataWedge programmatically 

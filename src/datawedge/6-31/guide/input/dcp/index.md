@@ -63,5 +63,6 @@ _Data Capture Plus shown in maximized mode_.
 **Related guides**:
 
 * [Profiles/Plug-ins](../../profiles)
+* [Input Parameters](decoders)
 * [DataWedge APIs](../../api) 
 

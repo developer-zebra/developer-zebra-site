@@ -171,9 +171,9 @@ _Data Capture Plus shown in maximized mode_.
 
 ------
 
-
 **Related guides**:
 
 * [Process Plug-ins](process)
 * [Output Plug-ins](output)
+* [Input Parameters](decoders)
 * [DataWedge APIs](../../api) 

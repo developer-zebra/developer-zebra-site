@@ -8,8 +8,9 @@ productversion: '6.3'
 ## Overview
 Process Plug-ins manipulate the acquired data in a specified way before sending it via the Output Plug-in to the associated application or server. Controls for Process Plug-ins appear as "Basic Data Formatting" and "Advanced Data Formatting," and are grouped in a Profile's settings panel along with its Output Plug-in. 
 
-See [Advanced Data Formatting](../adf)
-[How Plug-ins work](../overview)
+**See also**:
+* [Advanced Data Formatting](../adf)
+* [How Plug-ins work](../overview)
 
 **Process Plug-ins specify**: 
 * Basic data formatting (i.e. append with keystrokes, a prefix, a suffix, etc.)
@@ -492,7 +493,5 @@ _Data Capture Plus shown in maximized mode_.
 
 **Related guides**:
 
-* [Input Plug-ins](../input)
-* [Output Plug-ins](../output)
-* [DataWedge APIs for Android](../../api) 
-
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 

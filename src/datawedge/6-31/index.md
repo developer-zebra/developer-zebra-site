@@ -9,15 +9,15 @@ menu:
       url: /datawedge/6-31/guide/about
     - title: Basic Setup
       url: /datawedge/6-31/guide/setup
-    - title: Profiles
+    - title: Profiles/Plug-ins
       url: /datawedge/6-31/guide/profiles
-    - title: Parameters
+    - title: Input Parameters
       url: /datawedge/6-31/guide/decoders
-    - title: Settings
+    - title: DW Settings
       url: /datawedge/6-31/guide/settings
     - title: APIs
       url: /datawedge/6-31/guide/api
-    - title: Demo
+    - title: Demo App
       url: /datawedge/6-31/guide/demo
     - icon: fa fa-comment
       url: https://developer.zebra.com/community/technologies/advanced-data-capture

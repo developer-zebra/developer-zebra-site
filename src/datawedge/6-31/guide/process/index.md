@@ -1,11 +1,13 @@
 ---
-title: ADF Process Plug-in
+title: Advanced Data Formatting
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
 ---
 
 ## Overview
+The **Advanced Data Formatting (ADF) Plug-in** allows acquired data to be customized to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. 
+
 Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated application or server via the Output Plug-in. Process Plug-ins are grouped with each Output Plug-in, and appear as "Basic Data Formatting" and "Advanced Data Formatting." They are explained below. 
 
 
@@ -16,8 +18,6 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 
 
 **The Basic Format Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes as well as conversion of data to hex. For example, if the acquired barcode data is 012345, this option would cause the hex equivalent data of 30**31**32**33**34**35** to be sent. 
-
-**The Advanced Format Process Plug-in** allows for acquired data to be customized  to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. For more information, please see the [Advanced Data Formatting Guide](../advanced). 
 
 
 ## SimulScan Input 
@@ -557,7 +557,6 @@ _Data Capture Plus shown in maximized mode_.
 
 **Related guides**:
 
-* [Input Plug-ins](../input)
-* [Output Plug-ins](../output)
-* [DataWedge APIs for Android](../../api) 
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 
 

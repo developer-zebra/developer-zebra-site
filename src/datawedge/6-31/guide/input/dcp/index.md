@@ -1,5 +1,5 @@
 ---
-title: DCP Input Plug-ins
+title: DCP Input Plug-in
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
@@ -62,7 +62,6 @@ _Data Capture Plus shown in maximized mode_.
 
 **Related guides**:
 
-* [Process Plug-ins](../process)
-* [Output Plug-ins](../output)
-* [DataWedge APIs for Android](../../api) 
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 
 

@@ -1,5 +1,5 @@
 ---
-title: Barcode Input Plug-ins
+title: Barcode Input Plug-in
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
@@ -20,7 +20,7 @@ Barcode Input Plug-ins are used to specify:
 
 **The Barcode Scanner Input Plug-in** reads data from the integrated barcode scanner built into the device, attached via cable or Bluetooth or implemented as a snap-on module. This Plug-in supports laser, imager and internal cameras. The raw barcode data that's acquired is processed or formatted as required using Process Plug-ins. 
 
-**Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string. See **SimulScan section** later in this guide. 
+**Note**: DataWedge concatenates all text captured through SimulScan into a single string, and performs processing on the concatenated string. See the **[SimulScan section](../simulscan)** for details. 
 
 ## Scanner Selection
 For the Barcode Input Plug-in, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
@@ -54,6 +54,6 @@ Bluetooth scanners are supported according to the following rules:
 
 **Related guides**:
 
-* [Process Plug-ins](../process)
-* [Output Plug-ins](../output)
-* [DataWedge APIs for Android](../../api) 
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 
+

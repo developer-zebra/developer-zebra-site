@@ -6,7 +6,7 @@ productversion: '6.3'
 ---
 
 ## Overview
-Output Plug-ins send the processed data to the associated application or server. Those included with DataWedge are explained below. 
+**Output Plug-ins** send the processed data to the associated application or server. Those included with DataWedge are explained below. 
 
 **The Keystroke Output Plug-in** collects the processed data and sends it to the associated application as a series of keystrokes, emulating the actions of a user pressing the keys.
 
@@ -354,7 +354,6 @@ _Data Capture Plus shown in maximized mode_.
 
 **Related guides**:
 
-* [Input Plug-ins](../input)
-* [Process Plug-ins](../process)
-* [DataWedge APIs for Android](../../api) 
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 
 

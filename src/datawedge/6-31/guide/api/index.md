@@ -7,13 +7,13 @@ automenu:
     - title: APIs
       items:
         - title: Overview 
-          url: ../guide/api/overview
+          url: ../overview
         - title: 6.3 APIs
-          url: ../guide/api/6-3
+          url: ../6-3
         - title: Legacy APIs
-          url: ../guide/api/legacy
+          url: ../legacy
         - title: API Tutorials
-          url: ../guide/api/tutorials
+          url: ../tutorials
         - title: API Samples
-          url: ../guide/api/samples
+          url: ../samples
 ---

@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /datawedge/6-31/guide/about
-    - title: Basic Setup
+    - title: Setup
       url: /datawedge/6-31/guide/setup
     - title: Profiles/Plug-ins
       url: /datawedge/6-31/guide/profiles

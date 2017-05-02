@@ -111,16 +111,19 @@ Editing a Profile also can be started by tapping the Profile name in the Profile
 ## Plug-in Links
 
 ### Input Plug-ins
-*[Barcode scanners](../input/barcode)
-*[Data Capture Plus](../input/dcp) 
-*[Mag Stripe Reader (MSR)](../input/msr)
-*[SimulScan](../input/simulscan)
+
+* [Barcode scanners](../input/barcode)
+* [Data Capture Plus](../input/dcp) 
+* [Mag Stripe Reader (MSR)](../input/msr)
+* [SimulScan](../input/simulscan)
 
 ### Process Plug-ins
-*[Advanced Data Formatting (ADF)](../process/adf)
+
+* [Advanced Data Formatting (ADF)](../process/adf)
 * [Basic Data Formatting (BDF)](../process/bdf)
 
 ### Output Plug-ins
-*[Intent Output](../output/intent)
-*[IP Output (IPWedge)](../output/ipwedge)
-*[Keystroke Output](../output/keystroke)
+
+* [Intent Output](../output/intent)
+* [IP Output (IPWedge)](../output/ipwedge)
+* [Keystroke Output](../output/keystroke)

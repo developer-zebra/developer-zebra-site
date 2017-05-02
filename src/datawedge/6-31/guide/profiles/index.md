@@ -10,6 +10,7 @@ automenu:
           url: ../overview
         - title: Create a Profile
           url: ../createprofile
+    - title: Input Plug-ins
       items:
         - title: Barcode Scanners
           url: ../input/barcode
@@ -21,10 +22,10 @@ automenu:
           url: ../input/simulscan
     - title: Processing Plug-ins
       items:
-        - title: Basic Data Formatting (BDF) 
-          url: ../process/bdf
         - title: Advanced Data Formatting (ADF)
           url: ../process/adf
+        - title: Basic Data Formatting (BDF) 
+          url: ../process/bdf
     - title: Output Plug-ins
       items:
         - title: Intent Output

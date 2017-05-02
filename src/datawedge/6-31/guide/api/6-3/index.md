@@ -216,6 +216,160 @@ Error messages will be logged for invalid actions and parameters
 
 ------
 
+## SetConfig
+DataWedge profiles configuration can be updated, created or replaced by sending the SetConfig API. 
+
+###FUNCTION PROTOTYPE
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", <mainbundle>);
+
+
+###PARAMETERS
+
+**ACTION**: String "com.symbol.datawedge.api.ACTION"
+
+**EXTRA_DATA**: String "com.symbol.datawedge.api.SET_CONFIG"
+
+**Bundle &lt;mainbundle&gt;**: 
+
+
+####MAIN BUNDLE
+The main SetConfig bundle will include the following properties:
+
+**PROFILE_NAME** [String]: The name of the profile.
+**CONFIG_MODE** [String]: Default is OVERWRITE.
+Default behavior will match with the current behavior of the EMDK profile manager.  
+  **CREATE_IF_NOT_EXIST** : Creates the profile if it not exists. 
+  **OVERWRITE** : Always restore the configuration to default if profile exist before set configuration.
+  **UPDATE** : Updates the configuration only if profile available.  
+
+**PROFILE_ENABLED** [String]: Optional -Specifies if the profile should be enabled or not. Default True. If this extra does not exist no change will be done in the profile enabled state. 
+
+**PLUGIN_CONFIG** [Bundle]: A bundle which will contain the settings of a specific plug-in
+
+**APP_LIST** [Array]: List of Applications and Activities that the profile should be associated with
+
+####PLUGIN_CONFIG BUNDLE
+The PLUGIN_CONFIG bundle is configured with the following properties:
+
+**RESET_CONFIG** [String]: Optional.
+  * True (Default) – Clear any existing configuration and create a new configuration with the set parameter values.  
+  * False – Update the existing values and add values which are not in the configuration.  
+
+**PLUGIN_NAME** [String]: Name of the plug-in to configure.
+  * BARCODE – PARAM_LIST will contain parameters for Barcode Input 
+  * MSR - future
+  * SIMULSCAN - future
+  * DCP - future
+  * INTENT - future
+  * IP - future
+  * KEYSTROKE - PARAM_LIST will contain parameters for Keystroke Output
+
+**PARAM_LIST** [Bundle]: This is a Param List Bundle inside the PLUGIN_CONFIG bundle. This includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string for the parameter value will set the parameter value to its default. 
+
+####PARAM_LIST BUNDLE
+The PARAM_LIST bundle is configured by specifying the name of the paramater and the value you wish to set it to for the paramaters that are applicable to the PLUGIN_NAME that was used in the PLUGIN_CONFIG bundle. 
+
+See the available parameters for each PLUGIN_NAME:
+  * [BARCODE]()
+  * [MSR]() 
+  * [SIMULSCAN]()
+  * [DCP]()
+  * [INTENT]()
+  * [IP]()
+  * [KEYSTROKE]()
+
+####APP_LIST
+The APP_LIST is an array of bundles that contains a set of PACKAGE_NAMES and ACTIVITY_LIST that will be associated with the profile
+
+#####APP_LIST BUNDLE
+The APP_LIST Bundle will contain the following properties:
+
+**PACKAGE_NAME** [String]: ex: 'com.symbol.emdk.barcodesample1' or a wild card: '*'
+
+**ACTIVITY_LIST** [List]: A list of activities for the PACKAGE_NAME. A wildcard is also supported
+ 
+
+###RETURN VALUES
+None.
+
+Error and debug messages will be logged to the Android logging system, which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+
+	$ adb logcat -s DWAPI
+
+Error messages will be logged for invalid actions and parameters
+
+###EXAMPLE
+
+	//MAIN BUNDLE PROPERTIES
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME","Profile12");
+	bMain.putString("PROFILE_ENABLED","true");
+	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	//PLUGIN_CONFIG BUNDLE PROPERTIES
+	Bundle bConfig = new Bundle();
+	bConfig.putString("PLUGIN_NAME","Barcode");
+	bConfig.putString("RESET_CONFIG","true"); 
+
+
+	//PARAM_LIST BUNDLE PROPERTIES
+	Bundle bParams = new Bundle();
+	bParams.putString("current-device-id","0");
+	bParams.putString("scanner_input_enabled","true");
+
+	//PUT bParams into bConfig
+	bConfig.putBundle("PARAM_LIST", bParams);
+
+	//PUT bConfig into bMain
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+	// APP_LIST BUNDLES
+	Bundle bundleApp1 = new Bundle();
+	bundleApp1.putString("PACKAGE_NAME","com.symbol.emdk.simulscansample1");
+	bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
+	        "com.symbol.emdk.simulscansample1.DeviceControl",
+	        "com.symbol.emdk.simulscansample1.MainActivity",
+	        "com.symbol.emdk.simulscansample1.ResultsActivity.*",
+	        "com.symbol.emdk.simulscansample1.ResultsActivity2",
+	        "com.symbol.emdk.simulscansample1.SettingsFragment1"});
+
+
+	Bundle bundleApp2 = new Bundle();
+	bundleApp2.putString("PACKAGE_NAME","com.example.intents.datawedgeintent");
+	bundleApp2.putStringArray("ACTIVITY_LIST", new String[]{
+	        "com.example.intents.datawedgeintent.DeviceControl",
+	        "com.example.intents.datawedgeintent.MainActivity",
+	        "com.example.intents.datawedgeintent.ResultsActivity",
+	        "com.example.intents.datawedgeintent.SettingsFragment1"});
+
+	Bundle bundleApp3 = new Bundle();
+	bundleApp3.putString("PACKAGE_NAME","*");
+	bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+
+
+	Bundle bundleApp4 = new Bundle();
+	bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
+	bundleApp4.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+
+	//PUT THEM ALL TOGETHER INTO THE MAIN BUNDLE
+	bMain.putParcelableArray("APP_LIST", new Bundle[]{
+	        bundleApp1
+	        ,bundleApp2
+	        ,bundleApp3
+	        ,bundleApp4
+	});
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+
+	this.sendBroadcast(i);
+
+------
+
 ## Query Profile List
 The Query Profile API command can be used to get a list of available DataWedge profiles
 

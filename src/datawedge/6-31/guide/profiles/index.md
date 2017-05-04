@@ -30,8 +30,8 @@ automenu:
       items:
         - title: Intent Output
           url: ../output/intent
-        - title: IP Output (IPWedge) 
-          url: ../output/ipwedge
+        - title: IP Output
+          url: ../output/ip
         - title: Keystroke Output
           url: ../output/keystroke
 ---

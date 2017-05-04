@@ -14,10 +14,12 @@ productversion: '6.3'
 
 **The IP Output Plug-in** allows captured data to be sent to a specified IP address and port using either TCP or UDP transport protocols to a Windows server running Zebra IPWedge software. Please refer to the [IP Output Guide](../ipwedge) for further information. <!-- **Note: Profile0 cannot be used with IPWedge**. 10/18/16- removed per Tharindu -->
 
-**Output Plug-ins specify**:
-* Keystrokes (emulates manual keyboard input)
-* Intent (programmatic hand-off of data)
-* IP Output (sending data to a server over IP)
+
+**DataWedge Output Options**:
+
+* [Intent](../intent) (programmatic data hand-off)
+* [Internet Protocol](../ip) (to a PC or server via TCP or UDP) 
+* [Keystroke](../keystroke) (keyboard emulation)
 
 
 The "Auto" option will automatically determine the best scanning device from the list of available devices based on the rules below. 

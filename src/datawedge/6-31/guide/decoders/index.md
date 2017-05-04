@@ -1,11 +1,13 @@
 ---
-title: Scanner Input Parameters
+title: Input Parameters
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
 ---
 
-## Overview
+# OBSOLETE - IGNORE THIS PAGE
+
+## Overview (combined with Inputs)
 Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. This can be used as a means of increasing security, reducing decode errors or other reasons. For example, a company that routinely receives packages encoded with Code 128 symbology might help reduce scan errors by limiting the Code 128 decoders it implements to those of the non-EAN variety. 
 
 Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders, and provides details for those with configurable parameters.

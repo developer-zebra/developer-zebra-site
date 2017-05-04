@@ -205,14 +205,14 @@ Used to create, update or replace a DataWedge Profile and its settings. Supports
 ####MAIN BUNDLE
 The main SetConfig bundle will include the following properties:
 
-* **PROFILE_NAME** [String]: The name of the Profile
-* **CONFIG_MODE** [String]: Default = OVERWRITE (Default behavior will match that of the EMDK Profile manager.)
- * **CREATE_IF_NOT_EXIST**: Creates the Profile if none exists. 
- * **OVERWRITE**: **HUH?>>** Always restore the configuration to default if Profile exist before set configuration.
- * **UPDATE**: Updates the configuration only if Profile available.  
-* **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If this extra does not exist, no change is made to the Profile state.
+* **PROFILE_NAME** [String]: The name of the Profile on which to perform action(s)
+* **CONFIG_MODE** [String]: (Default=OVERWRITE)
+ * **CREATE_IF_NOT_EXIST**: Creates the Profile if string in PROFILE_NAME does not exist 
+ * **OVERWRITE**: If Profile exists, resets all options to default, then configures specified settings
+ * **UPDATE**: Updates only specified settings
+* **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
 * **PLUGIN_CONFIG** [Bundle]: A bundle (nested within the main bundle) that contains settings of a specific Plug-in
-* **APP_LIST** [Array]: List of applications and activities to associate with the Profile
+* **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
 
 ####PLUGIN_CONFIG BUNDLE
 The PLUGIN_CONFIG bundle is configured with the following properties:
@@ -221,20 +221,23 @@ The PLUGIN_CONFIG bundle is configured with the following properties:
   * True (Default) – Clear any existing configuration and create a new configuration with the specified set parameter values.  
   * False – Update the existing values and add values not already in the configuration
 
-**PLUGIN_NAME** [String]: Name of the plug-in to configure.
-  * BARCODE – PARAM_LIST will contain parameters for Barcode Input 
-  * MSR - future
-  * SIMULSCAN - future
-  * DCP - future
-  * INTENT - future
-  * IP - future
-  * KEYSTROKE - PARAM_LIST will contain parameters for Keystroke Output
+**PLUGIN_NAME** [String]: Name of the Plug-in to configure:
+  * BARCODE – specify decoder and other input settings in `PARAM_LIST` nested bundle 
+  * KEYSTROKE - specify output settings in `PARAM_LIST` nested bundle
 
-**PARAM_LIST** [Bundle]: This is a Param List Bundle inside the `PLUGIN_CONFIG` bundle. This includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string for the parameter value will set the parameter value to its default. 
+To be implemented in the future: 
+  * MSR 
+  * SIMULSCAN 
+  * DCP 
+  * INTENT 
+  * IP 
 
-####PARAM_LIST BUNDLE
-The `PARAM_LIST` bundle is configured by specifying the name of the parameter to set and the value to which to set it. This applies to the parameters matching the `PLUGIN_NAME` that was used in the `PLUGIN_CONFIG` bundle. 
+**PARAM_LIST** [Bundle]: This is a Param List Bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
 
+#### PARAM_LIST BUNDLE
+The `PARAM_LIST` bundle is configured by specifying the name of the parameter to set and the value to which to set it. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
+
+<!--
 See the available parameters for each PLUGIN_NAME:
   * [BARCODE]()
   * [MSR]() 
@@ -243,11 +246,12 @@ See the available parameters for each PLUGIN_NAME:
   * [INTENT]()
   * [IP]()
   * [KEYSTROKE]()
+-->
 
-####APP_LIST
+#### APP_LIST
 The `APP_LIST` is an array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
 
-#####APP_LIST BUNDLE
+##### APP_LIST BUNDLE
 The `APP_LIST` bundle will contain the following properties:
 
 **PACKAGE_NAME** [String]: ex: 'com.symbol.emdk.barcodesample1' or a wild card: '*'
@@ -255,7 +259,7 @@ The `APP_LIST` bundle will contain the following properties:
 **ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard also supported.
  
 
-###RETURN VALUES
+### RETURN VALUES
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -265,7 +269,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters
 
-###EXAMPLE
+### EXAMPLE
 
 	//MAIN BUNDLE PROPERTIES
 	Bundle bMain = new Bundle();

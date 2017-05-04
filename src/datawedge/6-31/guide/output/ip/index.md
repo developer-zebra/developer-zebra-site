@@ -75,7 +75,7 @@ It is possible to use IP Output to send captured data to a remote device that's 
 &#50;. **Install the .zip file** on the system to which the scanned data will be sent. 
 
 &#51;. **Run the IPWedge app**. A screen appears similar to the image below. **Make a note of the IP address and port number** (in the red box). 
-<img style="height:200px" src="../04_ipwedge.jpg"/>
+<img style="height:200px" src="04_ipwedge.jpg"/>
 _IPWedge System Tray menu_. 
 <br>
 
@@ -84,15 +84,15 @@ _IPWedge System Tray menu_.
 &#52;. **Open the IPWedge app** from the Windows Start menu or tap on the IPWedge icon in the System Tray and select Options. 
 
 The IPWedge Options panel appears similar to the image(s) below. 
-<img style="height:250px" src="../01_ipwedge.jpg"/>
+<img style="height:250px" src="01_ipwedge.jpg"/>
 _General Options_. 
 <br>
 
-<img style="height:250px" src="../02_ipwedge.jpg"/>
+<img style="height:250px" src="02_ipwedge.jpg"/>
 _Keystroke Options_. 
 <br>
 
-<img style="height:250px" src="../03_ipwedge.jpg"/>
+<img style="height:250px" src="03_ipwedge.jpg"/>
 _Clipboard Options_. 
 <br>
 

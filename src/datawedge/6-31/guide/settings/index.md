@@ -72,21 +72,27 @@ A list appears showing all installed apps and packages, similar to the image bel
 * Disabling a parent package disables all of its activies.
 * A disabled activity **does not** disable the parent or its other activities. 
 
-### Import a Config File
-DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
+### Disable DataWedge
+**Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
 
-The DataWedge configuration file is always named `datawedge.db`.  
+**To disable DataWedge**:
 
-**To Import a DataWedge Configuration file**:    
+&#49;. **Start DataWedge** and navigate to the Profiles list (if not shown by default).
 
-&#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
-<img style="height:350px" src="datawedge_import_config.png"/>
+&#50;. Tap on the "hamburger" menu and **select -> Settings**:
+<img style="height:350px" src="datawedge_settings.png"/>
 <br>
 
-&#50;. **Navigate to the imported file** on device storage using the interface provided:  
-<img style="height:350px" src="01_import_config.png"/>
-Imported settings take effect immediately and overwrite all prior settings.   
+&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is returned to the system. 
+<img style="height:350px" src="datawedge_enable-disable.png"/>
 <br>
+
+To learn how to access DataWedge programmatically, see the [DataWedge APIs](../api). 
+
+-----
+
+## Mass Deployment
+Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system.  
 
 ### Export a Config File
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
@@ -110,6 +116,22 @@ If an external SD card is installed, an alternate path can be selected:
 `/storage/sdcard1/Android/data/com.symbol.datawedge/files/datawedge.db`
 
 &#51;. **Retrieve the file** `datawedge.db` **from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
+
+### Import a Config File
+DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
+
+The DataWedge configuration file is always named `datawedge.db`.  
+
+**To Import a DataWedge Configuration file**:    
+
+&#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
+<img style="height:350px" src="datawedge_import_config.png"/>
+<br>
+
+&#50;. **Navigate to the imported file** on device storage using the interface provided:  
+<img style="height:350px" src="01_import_config.png"/>
+Imported settings take effect immediately and overwrite all prior settings.   
+<br>
 
 ### Import a Profile
 Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field or across an enterprise. For more information, see Export a Profile, below.  
@@ -164,28 +186,6 @@ DataWedge has the ability to reset all user-configured settings and restore them
 &#50;. **Tap Yes to Restore factory defaults** or No to cancel. 
 <img style="height:350px" src="05_restore_defaults.png"/>
 <br>
-
-### Disable DataWedge
-**Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
-
-**To disable DataWedge**:
-
-&#49;. **Start DataWedge** and navigate to the Profiles list (if not shown by default).
-
-&#50;. Tap on the "hamburger" menu and **select -> Settings**:
-<img style="height:350px" src="datawedge_settings.png"/>
-<br>
-
-&#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is returned to the system. 
-<img style="height:350px" src="datawedge_enable-disable.png"/>
-<br>
-
-To learn how to access DataWedge programmatically, see the [Data Capture API Guide](../api). 
-
------
-
-## Configuration File Management
-Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. For further information and specific instructions, see **Export a Config File** and **Import a Config File** sections, above. 
 
 The DataWedge Configuration File is always named `datawedge.db`. 
 

@@ -93,13 +93,13 @@ The PC is now ready to receive data from DataWedge IP Output (with IP address an
 
 -----
 
-**Related guides**:
-
-* [Profiles/Plug-ins](../../profiles)
-* [DataWedge APIs](../../api) 
-
 **Other DataWedge Output Options**:
 
 * [Intent](../intent) (programmatic data hand-off)
 * [Keystroke](../keystroke) (keyboard emulation)
+
+**Related guides**:
+
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 
 

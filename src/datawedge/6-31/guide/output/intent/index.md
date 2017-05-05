@@ -28,34 +28,28 @@ DataWedge invokes an intent though an **Intent action** in an **Intent category*
 
 **Once these values are known**: 
 
-&#49;. Locate the IP Output section of the Profile.  
+&#49;. Locate the IP Output section of the Profile being configured.
+
+&#50;. **Check "Enabled" box** to activate intent output:  
 <img style="height:350px" src="../intent_output 2.png"/>
 _Intent Output options_
 <br>
 
-&#50;. **Check "Enabled" box** to activate intent output.  
 &#51;. **Specify action, category and delivery** as described below: 
 
-**Intent action -** specifies the action that can handle an intent. 
-
-**Intent category -** specifies the category of intent to be handled. 
-
+**Intent action -** specifies the action to handle the intent 
+**Intent category -** specifies the category of intent to be handled 
 **Intent delivery -** used to select one of three delivery methods for intent-based data:
 * **Send via startActivity** 
 * **Send via startService** 
 * **Broadcast Intent** 
 
-**When Intent delivery is set to Broadcast Intent**, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. This flag is set only when Intent delivery is set to Broadcast Intent. **Note: Use this flag only if delays are seen in delivery of Intents immediately following device boot-up**.
+**When Intent delivery is set to Broadcast Intent**, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
 
 -----
 
 ### Decode-related data
-The decode-related data added to an Intent bundle can be retrieved using the following call: 
-
-* `Intent.getStringtExtra()`
-<!-- * `Intent.getSerializableExtra()`-->
-
-The call above can be used with the following String tags:
+The decode-related data added to an intent bundle can be retrieved using the `Intent.getStringtExtra()` call, and can be used with the following string tags:
 
 * **String LABEL_TYPE_TAG = "com.symbol.datawedge.label_type"**; String contains the barcode label type
 

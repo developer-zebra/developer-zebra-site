@@ -5,30 +5,6 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-### APIs Supporting New Syntax
-
-The following APIs can be invoked as extras from a single intent action:
-
-* [EnableDataWedge](#enabledatawedge)
-* [CloneProfile](#cloneprofile)
-* [RenameProfile](#renameprofile)
-* [DeleteProfile](#deleteprofile)
-* [QueryProfileList](#queryprofilelist)
-* [GetActiveProfile](#getactiveprofile)
-
-### APIs That Require Previous Syntax
-
-The following API calls require a distinct intent action for each: 
-
-* [SoftScanTrigger](#softscantrigger)
-* [ScannerInputPlugin](#scannerinputplugin)
-* [EnumerateScanners](#enumeratescanners) 
-* [SetDefaultProfile](#setdefaultprofile)
-* [ResetDefaultProfile](#resetdefaultprofile)
-* [SwitchToProfile](#switchtoprofile)
-
-[About the new syntax](../overview) 
-
 ## EnableDataWedge
 
 Boolean value used to enable (true) or disable (false) DataWedge on the device.

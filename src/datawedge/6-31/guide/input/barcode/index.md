@@ -35,7 +35,7 @@ The "Auto" option will automatically determine the best scanning device from the
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
-#### Bluetooth Scanners
+### Bluetooth Scanners
 DataWedge supports the following Zebra Bluetooth scanners: 
 
 * **RS507** Cordless Ring Scanner

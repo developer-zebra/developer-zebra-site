@@ -1,6 +1,6 @@
 ---
-title: Profiles and Plug-ins
-description: Each app that uses DataWedge must be associated with a Profile, which contains Plug-ins for determining how the data will be acquired (using an input Plug-in), processed (with a process Plug-in) and delivered to the app (through an output Plug-in). Details about functionality and usage of each of the available Plug-ins can be found in the links below. For general details about how Profiles and Plug-ins work, see the Architecture Overview page. 
+title: DataWedge Profiles
+description: Each app that uses DataWedge must be associated with a Profile, which contains options for determining how the data will be acquired (input), processed (data formatting) and delivered to the app (output). Details about functionality and usage of each of the input, processing and output options can be found in the links below. For general details about how Profiles work, see the Architecture Overview page. 
 layout: list-apis.html
 automenu:
   items:
@@ -10,28 +10,28 @@ automenu:
           url: ../overview
         - title: Create a Profile
           url: ../createprofile
-    - title: Input Plug-ins
+    - title: Input
       items:
-        - title: Barcode-scanner Input
+        - title: Barcode
           url: ../input/barcode
-        - title: Data Capture Plus (DCP) Input
+        - title: Data Capture Plus (DCP)
           url: ../input/dcp
-        - title: Mag-stripe Reader (MSR) Input 
+        - title: Mag-stripe Reader (MSR) 
           url: ../input/msr
-        - title: SimulScan Input
+        - title: SimulScan Capture
           url: ../input/simulscan
-    - title: Processing Plug-ins
+    - title: Processing
       items:
         - title: Advanced Data Formatting (ADF)
           url: ../process/adf
         - title: Basic Data Formatting (BDF) 
           url: ../process/bdf
-    - title: Output Plug-ins
+    - title: Output
       items:
-        - title: Intent Output
+        - title: Intent
           url: ../output/intent
-        - title: IP Output
+        - title: Internet Protocol (IP)
           url: ../output/ip
-        - title: Keystroke Output
+        - title: Keystroke
           url: ../output/keystroke
 ---

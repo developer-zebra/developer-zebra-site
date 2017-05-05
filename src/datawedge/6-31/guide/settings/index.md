@@ -6,7 +6,7 @@ productversion: '6.3'
 ---
   
 ## Overview
-This guide covers settings for the DataWedge app, including enabling and disabling DataWedge on the device, importing and exporting Profiles and Configuration files, and management and mass-deployment of those files. For information about creating and imnplementing Profiles and Plug-ins, see the [Profile Guides](../profiles). 
+This guide covers settings for the DataWedge app, including enabling and disabling DataWedge on the device and the management of Profile and Configuration files for backup and mass-deployment. For information about creating and implementing Profiles and Plug-ins, see the [Profile Guides](../profiles). 
 
 -----
 
@@ -20,28 +20,28 @@ Most of the functionality referenced in this guide is accessed through the DataW
 _Access the DataWedge Settings panel from the Profiles screen_. 
 <br>
 
-&#50;. **Tap the desired feature** to invoke it or change its status. 
+&#50;. **Tap the desired feature** to invoke it or change its state. 
 <img style="height:350px" src="datawedge_settings_panel.png"/>
-_The DataWedge Settings panel_. 
+_The DataWedge Settings panel_
 <br>
 
 **Functions of the DataWedge Settings panel**: 
 
-* **DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge and return control of scanning hardware to the system.
+* **DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge on the device and return control of scanning hardware to the system.
 
 * **Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
 
-* **Disabled app list -** Disables scanning functions for selected apps anywhere on the device. 
+* **Disabled app list -** Disables scanning functions for selected apps and/or activities anywhere on the device. [See more](#disableapps). 
 
-* **Import -** Invokes navigation for importing a DataWedge configuration file from device storage. This action replaces the current configuration.
+* **Import -** Invokes navigation for importing a DataWedge configuration file from device storage. This action replaces the current configuration. [See more](#importaconfig).
 
-* **Export -** Exports the current DataWedge configuration to device storage. 
+* **Export -** Exports the current DataWedge configuration to device storage. [See more](#exportaconfig).
 
-* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it will be modified by the imported one. 
+* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it will be modified by the imported one. [See more](#importaprofile).
 
-* **Export Profile -** Exports an individual DataWedge profile to device storage.
+* **Export Profile -** Exports an individual DataWedge profile to device storage. [See more](#exportaprofile).
 
-* **Restore -** Returns DataWedge on the device to factory default settings. 
+* **Restore -** Returns DataWedge on the device to factory default settings. [See more](#restoredefaults)
 
 ### Logging
 DataWedge provides the option of outputting system log messages for viewing through the Logcat command line tool, Android Studio or another compatible viewer, usually over a USB connection. 
@@ -52,7 +52,7 @@ From the DataWedge Settings panel, **tap Enable Logging** to enable or disable l
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
 
-### Disable Scanning on Apps/Activities
+### Disable Apps
 DataWedge can prohibit certain apps from accessing its data capture services. This can be useful as a security measure to ensure that acquired data is sent only to approved apps, or simply as a means of controlling which apps will have access to the scanner. By default, all apps have access. 
 
 **To Disable Data Capture for an app**: 
@@ -94,12 +94,10 @@ To learn how to access DataWedge programmatically, see the [DataWedge APIs](../a
 ## Mass Deployment
 Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system.  
 
-### Export a Config File
+### Export a Config
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
 
-**See Configuration File Management section of this guide for other important information**.  
-
-**To Export a DataWedge Configuration file**: 
+**To Export a DataWedge config file**: 
 
 &#49;. From the DataWedge Settings panel, **tap Export** as highlighted below. A screen appears similar to the one in Step 2. 
 <img style="height:350px" src="datawedge_export_config.png"/>
@@ -109,45 +107,17 @@ Once DataWedge is set up and configured as desired on a device, its settings fil
 <img style="height:350px" src="02_export_config.png"/>
 <br>
 
-The default path and filename of an exported configuration file is:
-`/storage/sdcard0/Android/data/com.symbol.datawedge/files/datawedge.db` 
+**Notes**: 
 
-If an external SD card is installed, an alternate path can be selected: 
+* The DataWedge config file is always named `datawedge.db`. 
+* The default path and filename of an exported configuration file is:
+`/storage/sdcard0/Android/data/com.symbol.datawedge/files/datawedge.db` 
+* If an external SD card is installed, an alternate path can be selected. For example: 
 `/storage/sdcard1/Android/data/com.symbol.datawedge/files/datawedge.db`
 
 &#51;. **Retrieve the file** `datawedge.db` **from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
 
-### Import a Config File
-DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
-
-The DataWedge configuration file is always named `datawedge.db`.  
-
-**To Import a DataWedge Configuration file**:    
-
-&#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
-<img style="height:350px" src="datawedge_import_config.png"/>
-<br>
-
-&#50;. **Navigate to the imported file** on device storage using the interface provided:  
-<img style="height:350px" src="01_import_config.png"/>
-Imported settings take effect immediately and overwrite all prior settings.   
-<br>
-
-### Import a Profile
-Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field or across an enterprise. For more information, see Export a Profile, below.  
-
-While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. **Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
-
-**To Import a DataWedge Profile**:  
-
-&#49;. From the DataWedge Settings panel, **tap Import Profile** as highlighted below. A screen appears similar to the one in Step 2. 
-<img style="height:350px" src="datawedge_import_profile.png"/>
-<br>
-
-&#50;. **Navigate to the file being imported** from device storage using the interface provided: 
-<img style="height:350px" src="03_import_profile.png"/>
-**Warning**: If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one. 
-<br>
+-----
 
 ### Export a Profile
 Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propagate those settings to others in the organization.  
@@ -174,6 +144,44 @@ If an external SD card is installed, an alternate path can be selected:
 
 **Warning: If a Profile exists on the device with the same name as one being imported, the existing profile will be overwritten by the imported one**. 
 
+-----
+
+### Import a Config
+DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
+
+**To Import a DataWedge Configuration file**:    
+
+&#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
+<img style="height:350px" src="datawedge_import_config.png"/>
+<br>
+
+&#50;. **Navigate to the imported file** on device storage using the interface provided:  
+<img style="height:350px" src="01_import_config.png"/>
+Imported settings take effect immediately and overwrite all prior settings.   
+<br>
+
+The DataWedge config file is always named `datawedge.db`. 
+
+-----
+
+### Import a Profile
+Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field or across an enterprise. For more information, see Export a Profile, below.  
+
+While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. **Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
+
+**To Import a DataWedge Profile**:  
+
+&#49;. From the DataWedge Settings panel, **tap Import Profile** as highlighted below. A screen appears similar to the one in Step 2. 
+<img style="height:350px" src="datawedge_import_profile.png"/>
+<br>
+
+&#50;. **Navigate to the file being imported** from device storage using the interface provided: 
+<img style="height:350px" src="03_import_profile.png"/>
+**Warning**: If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one. 
+<br>
+
+DataWedge Profiles are always named `dwprofile_profilename.db`.  
+
 ### Restore (defaults)
 DataWedge has the ability to reset all user-configured settings and restore them to their original factory defaults. **This action cannot be undone**. 
 
@@ -187,16 +195,14 @@ DataWedge has the ability to reset all user-configured settings and restore them
 <img style="height:350px" src="05_restore_defaults.png"/>
 <br>
 
-The DataWedge Configuration File is always named `datawedge.db`. 
-
 DataWedge Profiles are always named `dwprofile_profilename.db`.  
 
 ### Enterprise Folder
-On Zebra devices, internal storage contains a directory named `/enterprise` that persists (is not erased) after an Enterprise reset is performed on the device. DataWedge stores its files in several directories below `/enterprise`, which allows them to persist after an Enterprise reset as well.
+On Zebra devices, internal storage contains a directory named `/enterprise` that persists (is not erased) after an Enterprise reset is performed on the device. DataWedge stores its files in several directories below `/enterprise`, which allows them to persist after an Enterprise reset. 
 
 **Directory Behavior**:
 
-* `/enterprise/device/settings/datawedge/enterprisereset/` - DataWedge checks this folder following an Enterprise reset and imports a configuration file and Profile(s), if present. 
+* `/enterprise/device/settings/datawedge/enterprisereset/` - DataWedge checks this folder following an Enterprise reset and imports a configuration file and/or any Profile(s) present. 
 
 * `/enterprise/device/settings/datawedge/autoimport` - DataWedge monitors this folder whenever it's running and immediately imports and activates any configuration file placed here, overwriting prior settings. See Auto Import, below.   
 
@@ -205,12 +211,14 @@ On Zebra devices, internal storage contains a directory named `/enterprise` that
 * A _**Factory**_ reset **deletes all files** in the `/enterprise` folder.
 * If a `datawedge.db` file exists in the `/enterprisereset` directory, DataWedge will activate it as the new working config file.
 
+-----
+
 ### Auto Import
-DataWedge supports remote deployment of Configuration Files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files. If any are found, it executes the functions below.
+DataWedge supports remote deployment of config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files. If any are found, it executes the functions below.
 
 **DataWedge Auto-Import routine**:
 1. Import the new file(s) 
-2. Replace the existing Configuration File and like-named Profile(s) (if any) 
+2. Replace the existing config file and like-named Profile(s) (if any) 
 3. Delete the imported files
 4. Put new settings immediately into effect
 
@@ -224,11 +232,26 @@ While DataWedge is running, it receives a system notification whenever a config 
 
 -----
 
-## Sample Code 
+## Programming Notes
+
+### Capture Data, Photos in One App
+It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
+
+1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
+2. Create a DataWedge Profile with the following settings: 
+	* Associate the Profile with the picture-taking Activity
+	* Disable scanning in the Profile
+3. Use the standard Android-SDK APIs to control the camera
+4. When the app is used for scanning, the default DataWedge profile will come into effect. 
+5. For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
+
+-----
+
+## Sample Import Code 
 The following sample Java code can be modified to suit individual needs. 
 
-
-	    //NOTE: This Java code is for demo purposes only; it has not been checked for errors.
+		:::java
+		//NOTE: This Java code for demo purposes only; it should not be used without testing.
 	    
 	    InputStream fis = null;
 	    FileOutputStream fos = null;
@@ -278,20 +301,6 @@ The following sample Java code can be modified to suit individual needs.
 
 
 -----
-
-## Programming Notes
-
-### Capture Data, Photos in One App
-It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
-
-1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
-2. Create a DataWedge Profile with the following settings: 
-	* Associate the Profile with the picture-taking Activity
-	* Disable scanning in the Profile
-3. Use the standard Android-SDK APIs to control the camera
-4. When the app is used for scanning, the default DataWedge profile will come into effect. 
-5. For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
-
 
 <!--
 

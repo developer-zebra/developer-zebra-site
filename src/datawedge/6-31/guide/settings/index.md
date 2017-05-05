@@ -33,11 +33,11 @@ _The DataWedge Settings panel_
 
 * **Disabled app list -** Disables scanning functions for selected apps and/or activities anywhere on the device. [See more](#disableapps). 
 
-* **Import -** Invokes navigation for importing a DataWedge configuration file from device storage. This action replaces the current configuration. [See more](#importaconfig).
+* **Import -** Invokes navigation for importing a DataWedge config file from device storage, replacing the current DataWedge settings. [See more](#importaconfig).
 
 * **Export -** Exports the current DataWedge configuration to device storage. [See more](#exportaconfig).
 
-* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, it will be modified by the imported one. [See more](#importaprofile).
+* **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, settings of the existing Profile will be updated to match those of the imported file. [See more](#importaprofile).
 
 * **Export Profile -** Exports an individual DataWedge profile to device storage. [See more](#exportaprofile).
 

@@ -45,7 +45,7 @@ Error messages are logged for invalid actions and parameters.
 
 ## CloneProfile
 
-Used to create a copy of an existing DataWedge Profile.
+Used to create a copy of an existing DataWedge Profile including all settings.
 
 ###FUNCTION PROTOTYPE
 
@@ -122,7 +122,7 @@ Error messages are logged for invalid actions and parameters
 ------
 
 ## DeleteProfile
-Used to delete an existing _**deletable**_ Profile, which **included the "Launcher" Profile**.  
+Used to delete an existing _**deletable**_ Profile, **including the "Launcher" Profile**.  
 
 ###FUNCTION PROTOTYPE
 
@@ -137,8 +137,9 @@ Used to delete an existing _**deletable**_ Profile, which **included the "Launch
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.DELETE_PROFILE"
 
-**String[ ] &lt;values&gt;**: List of Profiles to be deleted. “*” deletes all the deletable Profiles from the configuration, including the "Launcher" Profile.
- 
+**String[ ] &lt;values&gt;**: List of Profiles to be deleted. 
+
+**WARNING: Supports use of the wildcard character (“*”), which deletes all deletable Profiles from the configuration, including the "Launcher" Profile**.
 
 ###RETURN VALUES
 (None)
@@ -183,7 +184,7 @@ The main SetConfig bundle will include the following properties:
 
 * **PROFILE_NAME** [String]: The name of the Profile on which to perform action(s)
 * **CONFIG_MODE** [String]: (Default=OVERWRITE)
- * **CREATE_IF_NOT_EXIST**: Creates the Profile if string in PROFILE_NAME does not exist 
+ * **CREATE_IF_NOT_EXIST**: Creates the Profile if string in PROFILE_NAME is not present on device 
  * **OVERWRITE**: If Profile exists, resets all options to default, then configures specified settings
  * **UPDATE**: Updates only specified settings
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.

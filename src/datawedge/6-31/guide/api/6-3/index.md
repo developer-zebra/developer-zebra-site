@@ -20,7 +20,7 @@ Boolean value used to enable (true) or disable (false) DataWedge on the device.
 
 **ACTION**: String `com.symbol.datawedge.api.ACTION`
 
-**EXTRA_DATA**: String `com.symbol.datawedge.api.DELETE_PROFILE`
+**EXTRA_DATA**: String `com.symbol.datawedge.api.ENABLE_DATAWEDGE`
 
 **Boolean &lt;value&gt;**: True or False 
 
@@ -58,7 +58,7 @@ Used to create a copy of an existing DataWedge Profile.
 
 **ACTION**: String `com.symbol.datawedge.api.ACTION`
 
-**EXTRA_DATA**: String `com.symbol.datawedge.api.DELETE_PROFILE`
+**EXTRA_DATA**: String `com.symbol.datawedge.api.CLONE_PROFILE`
 
 **String[ ] &lt;values&gt;**: Name of Profile to be copied, new Profile name
 
@@ -591,7 +591,7 @@ Error messages are logged for invalid actions and parameters.
 
 	// enable the app to receive the enumerated list of available scanners:
 	String enumeratedList = "com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST";
-	String KEY_ENUMERATEDSCANNERLIST = "DataWedgeAPI_KEY_ENUMERATEDSCANNERLIST";
+	String KEY_ENUMERATEDSCANNERLIST = "DWAPI_KEY_ENUMERATEDSCANNERLIST";
 
 	// create a filter for the broadcast intent
 	IntentFilter filter = new IntentFilter();

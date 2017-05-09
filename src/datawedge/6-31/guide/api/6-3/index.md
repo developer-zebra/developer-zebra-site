@@ -5,7 +5,7 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## EnableDataWedge
+## ENABLE_DATAWEDGE
 
 Boolean value used to enable (true) or disable (false) DataWedge on the device.
 

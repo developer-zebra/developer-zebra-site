@@ -11,10 +11,8 @@ parm:
   type: string
 ---
 
-Used to specify the Serial Number of the Scanner on which to perform an Action if other than the currently connected scanner. If left blank, the Action will be performed on the currently connected scanner.  
+Used to specify the serial number of a scanner on which to perform an Action to verify that it is the currently connected scanner. If the specified serial number does not match that of the connected scanner, no action will be performed and an error will be returned to the Result XML. If left blank, the Action will be performed on the currently connected scanner. 
 
 **Parm value input rules**
 
-* Accepts a string of characters matching the scanner serial number
-* Minimum length is 1 character; maximum length is 255 characters
-* If no string is input, the Action will apply to the currently connected scanner
+* Accepts a string of 1-255 characters

@@ -9,14 +9,14 @@ productversion: '6.3'
 
 Boolean value used to enable (true) or disable (false) DataWedge on the device.
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	:::java
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.ENABLE_DATAWEDGE", <value>);
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String `com.symbol.datawedge.api.ACTION`
 
@@ -24,7 +24,7 @@ Boolean value used to enable (true) or disable (false) DataWedge on the device.
 
 **Boolean &lt;value&gt;**: True or False 
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which then can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -33,7 +33,7 @@ Error and debug messages are logged to the Android logging system, which then ca
 
 Error messages are logged for invalid actions and parameters.
 
-###EXAMPLE
+###Example
 
 	:::java
 	Intent i = new Intent();
@@ -43,18 +43,18 @@ Error messages are logged for invalid actions and parameters.
 
 -----
 
-## CloneProfile
+## CLONE_PROFILE
 
 Used to create a copy of an existing DataWedge Profile including all settings.
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	:::java
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.CLONE_PROFILE", <values>);
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String `com.symbol.datawedge.api.ACTION`
 
@@ -62,7 +62,7 @@ Used to create a copy of an existing DataWedge Profile including all settings.
 
 **String[ ] &lt;values&gt;**: Name of Profile to be copied, new Profile name
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -72,7 +72,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-###EXAMPLE
+###Example
 
 	:::java
 	Intent i = new Intent();
@@ -83,16 +83,17 @@ Error messages are logged for invalid actions and parameters.
 
 -----
 
-## RenameProfile
-Used to rename a DataWedge Profile.  
+## RENAME_PROFILE
 
-###FUNCTION PROTOTYPE
+Used to rename an existing DataWedge Profile.  
+
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.RENAME_PROFILE", <values>);
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
@@ -100,7 +101,7 @@ Used to rename a DataWedge Profile.
 
 **String[ ] &lt;values&gt;**: Profile name to be renamed, New Profile name
  
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -110,7 +111,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters
 
-###EXAMPLE
+###Example
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
@@ -121,17 +122,18 @@ Error messages are logged for invalid actions and parameters
 
 ------
 
-## DeleteProfile
+## DELETE_PROFILE
+
 Used to delete an existing _**deletable**_ Profile, **including the "Launcher" Profile**.  
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE", <values>);
 
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
@@ -141,7 +143,7 @@ Used to delete an existing _**deletable**_ Profile, **including the "Launcher" P
 
 **WARNING: Supports use of the wildcard character (“*”), which deletes all deletable Profiles from the configuration, including the "Launcher" Profile**.
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -151,7 +153,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters
 
-###EXAMPLE
+###Example
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
@@ -161,17 +163,17 @@ Error messages are logged for invalid actions and parameters
 
 ------
 
-## SetConfig
+## SET_CONFIG
 
 Used to create, update or replace a DataWedge Profile and its settings. Supports [nested bundles](../overview/#nestedbundles). 
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", <mainbundle>);
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
@@ -209,10 +211,19 @@ To be implemented in the future:
   * INTENT 
   * IP 
 
-**PARAM_LIST** [Bundle]: This is a Param List Bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
+**PARAM_LIST** [Bundle]: A parameter list Bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the name of the parameter to set and the value to which to set it. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
+
+PARAM_LIST bundle objects:
+
+* Scanner_selection 
+ * current-device-index [0]
+ * auto (scanner index not required)
+* decoder_ [true/false]
+* picklist [HARDWARE, SOFTWARE]
+* AimType
 
 <!--
 See the available parameters for each PLUGIN_NAME:
@@ -236,7 +247,7 @@ The `APP_LIST` bundle will contain the following properties:
 **ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard also supported.
  
 
-### RETURN VALUES
+### Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -246,7 +257,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters
 
-### EXAMPLE
+### Example
 
 	//MAIN BUNDLE PROPERTIES
 	Bundle bMain = new Bundle();
@@ -315,18 +326,18 @@ Error messages are logged for invalid actions and parameters
 
 ------
 
-## QueryProfileList
+## GET_PROFILES_LIST
 
-The Query Profile API command can be used to get a list of available DataWedge Profiles
+Used to get a list of available DataWedge Profiles on the device. 
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
 
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
@@ -335,7 +346,7 @@ The Query Profile API command can be used to get a list of available DataWedge P
 **EXTRA VALUE: Empty String
  
 
-###RETURN VALUES
+###Return Values
 Returns a String array of Datawedge Profiles
 
 **EXTRA NAME**: Name: com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST 
@@ -349,7 +360,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-###EXAMPLE
+###Example
 
 	//SENDING THE INTENT
 	Intent i = new Intent();
@@ -370,18 +381,18 @@ Error messages are logged for invalid actions and parameters.
 
 ------
 
-## GetActiveProfile 
+## GET_ACTIVE_PROFILE 
 
-The Get Active Profile API command can be used to get the current active Profile that DataWedge is using.
+Gets the name of the Profile currently in use by DataWedge.
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
 
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
@@ -390,7 +401,7 @@ The Get Active Profile API command can be used to get the current active Profile
 **EXTRA VALUE**: Empty String
  
 
-###RETURN VALUES
+###Return Values
 Returns a String of the name of the active DataWedge Profile
 
 **EXTRA NAME**: Name: com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE 
@@ -404,7 +415,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-###EXAMPLE
+###Example
 
 	//SENDING THE INTENT
 	Intent i = new Intent();
@@ -425,18 +436,18 @@ Error messages are logged for invalid actions and parameters.
 
 ------
 
-## SoftScanTrigger
+## ACTION_SOFTSCANTRIGGER 
 
-The SoftScanTrigger API command can be used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
+Used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER");
 	i.putExtra("com.symbol.datawedge.api.EXTRA_PARAMETER", "<parameter>");
 
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER"
 
@@ -450,7 +461,7 @@ The SoftScanTrigger API command can be used to start, stop or toggle a software 
 
 * "TOGGLE_SCANNING" - to toggle between start scanning and stop scanning
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -460,7 +471,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-###EXAMPLE
+###Example
 
 	// define action and data strings
 	String softScanTrigger = "com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER";
@@ -475,7 +486,7 @@ Error messages are logged for invalid actions and parameters.
 
 	context.this.sendBroadcast(i);
 
-###COMMENTS 
+###Comments 
 The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. For example, use of delay code similar to that shown below could be used.
 
 	int triggerDelay = 250; // delay in milliseconds
@@ -490,20 +501,20 @@ The soft scan trigger command should be delayed sufficiently to enable the scann
 
 ------
 
-## ScannerInputPlugin
+## ACTION_SCANNERINPUTPLUGIN
 
-The ScannerInputPlugin API command can be used to enable/disable the scanner plug-in being used by the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile, regardless of whether the Profile is associated or unassociated. **Valid only when Barcode Input is enabled in the active Profile**. 
+Used to enable/disable the scanner plug-in being used by the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile, regardless of whether the Profile is associated with an app. **Valid only when Barcode Input is enabled in the active Profile**. 
 
-**Note**: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile. 
+**Note: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile**. 
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN");
 	i.putExtra("com.symbol.datawedge.api.EXTRA_PARAMETER", "<parameter>");
 
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN"
 
@@ -514,7 +525,7 @@ The ScannerInputPlugin API command can be used to enable/disable the scanner plu
 * "ENABLE_PLUGIN" - enables the plug-in
 * "DISABLE_PLUGIN" - disables the plug-in
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -525,7 +536,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 Error messages are logged for invalid actions and parameters. 
 
 
-###EXAMPLE
+###Example
 
 	// define action and data strings
 	String scannerInputPlugin = "com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN";
@@ -542,29 +553,29 @@ Error messages are logged for invalid actions and parameters.
 	        context.this.sendBroadcast(i);
 	}
 
-### COMMENTS
+### Comments
 This intent enables or disables the scanner plug-in for the currently enabled Profile. For example, let's say that activity A launches and uses the Data Capture API intent to switch to ProfileA in which the scanner plug-in is enabled, then at some point it uses the Data Capture API to disable the scanner plug-in. Activity B is launched. In DataWedge, ProfileB is associated with activity B. DataWedge switches to ProfileB. When activity A comes back to the foreground, in the `onResume` method, activity A must use the Data Capture API intent to switch back to ProfileA, then use the Data Capture API intent again to disable the scanner plug-in, to return back to the state it was in.
 
-### NOTE
+### Note
 The above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA, and therefore activity A must switch back to ProfileA in its `onResume` method.
 
 Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the `onResume` method of the activity.
 
 ------
 
-## EnumerateScanners
+## ACTION_ENUMERATESCANNERS
 
 Used to get the list of scanners available on the device.
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION_ENUMERATESCANNERS");
 
-### PARAMETERS
+### Parameters
 **ACTION**: String "com.symbol.datawedge.api.ACTION_ENUMERATESCANNERS"
 
-### RETURN VALUES
+### Return Values
 The enumerated list of scanners is returned via the broadcast intent `com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST`. The list of scanners is returned as a string array (see example below).
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -574,7 +585,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters. 
 
-### EXAMPLE
+### Example
 
 	// First send the intent to enumerate the available scanners on the device
 	
@@ -611,12 +622,12 @@ Error messages are logged for invalid actions and parameters.
 	        }
 	};
 
-###COMMENTS
+###Comments
 The scanner and its parameters are set based on the currently active Profile.
 
 ------
 
-## SetDefaultProfile
+## ACTION_SETDEFAULTPROFILE
 
 The `setDefaultProfile` API function can be used to set the specified Profile as the default Profile.
 
@@ -629,12 +640,12 @@ Profile0 can be edited but cannot be associated with an application. That is, Da
 
 Profile0 can be disabled to allow DataWedge to send output data only to those applications that are associated in user-defined Profiles. For example, create a Profile associating a specific application, disable Profile0 and then scan. DataWedge only sends data to the application specified in the user-created Profile. This places an additional layer of security on DataWedge, permitting data to be sent only to specified applications. 
 
-###USAGE SCENARIO
+###Usage Scenario
 If a launcher application has a list of apps that a user can launch and none has been associated with a DataWedge Profile, the `setDefaultProfile` method can be used to associate a Profile to any app selected by the user (otherwise Profile0 are used). When the user-selected app is launched, DataWedge auto-Profile switching will switch to the newly specified Profile. 
 
 If the launched app already has an associated DataWedge Profile, the `setDefaultProfile` method call is ignored and its previously specified Profile is loaded. When control is returned to the Launcher application, `resetDefaultProfile` can be used to reset the default Profile.
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	:::javascript
 	Intent i = new Intent();
@@ -642,14 +653,14 @@ If the launched app already has an associated DataWedge Profile, the `setDefault
 	i.putExtra("com.symbol.datawedge.api.EXTRA_PROFILENAME", "<profile name>");
 
 
-###PARAMETERS
+###Parameters
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SETDEFAULTPROFILE"
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
 **&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the default Profile.
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -659,7 +670,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
-###EXAMPLE
+###Example
 
 	:::javascript
 	// define action and data strings
@@ -677,18 +688,18 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        context.this.sendBroadcast(i);
 	}
 
-###COMMENTS
+###Comments
 The API command will have no effect if the specified Profile does not exist or if the specified Profile is already associated with an application. DataWedge will automatically switch Profiles when the activity is paused, so it is recommended that this API function be called from the onResume method of the activity.
 
 Zebra recommends that this Profile be created to cater to all applications/activities that would otherwise default to Profile0. This will ensure that these applications/activities will not inadvertently switch scanner-device configurations. For example, let’s say that Profile0 is the default Profile, and it is configured to use the camera as the barcode scanner. If only the Browser application is used to scan barcodes with the camera, DataWedge always scans with the camera and enters the acquired data into the Browser as expected. But if an application is later launched that changes to a Profile using the blockbuster as the barcode scanner, the Browser application--which is set to use the default Profile--are unexpectedly reconfigured to use the blockbuster for scanning the next time it's used. **To ensure that the Browser continues to use the camera as the barcode scanner in this scenario, simply create a Profile that specifies the camera as the barcode scanner and associate it with the Browser**.
 
 ------
 
-## ResetDefaultProfile
+## ACTION_RESETDEFAULTPROFILE
 
-The `resetDefaultProfile` API function can be used to reset the default Profile back to Profile0.
+Can be used to reset the default Profile to Profile0.
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	:::javascript
 	Intent i = new Intent();
@@ -696,13 +707,13 @@ The `resetDefaultProfile` API function can be used to reset the default Profile 
 	i.putExtra("com.symbol.datawedge.api.EXTRA_PROFILENAME");
 
 
-###PARAMETERS
+###Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION_RESETDEFAULTPROFILE"
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -712,7 +723,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
-###EXAMPLE
+###Example
 
 	// define action string
 	String resetDefaultProfile = "com.symbol.datawedge.api.ACTION_RESETDEFAULTPROFILE";
@@ -725,17 +736,17 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        context.this.sendBroadcast(i);
 	}
 
-###COMMENTS
+###Comments
 (None)
 
 ------
 
-## SwitchToProfile
+## ACTION_SWITCHTOPROFILE
 
-The `SwitchToProfile` API action can be used to switch to the specified Profile, **as long as that Profile is not already associated with another application**.
+The `SwitchToProfile` API Action can be used to switch to the specified Profile, **as long as that Profile is not already associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
 
-###PROFILES RECAP
-DataWedge is based on Profiles and plug-ins. A Profile contains information on how DataWedge should behave with different applications.
+###Profiles Recap
+DataWedge is based on Profiles and Plug-ins. A Profile contains information about how DataWedge will behave with a given application.
 
 Profile information consists of:
 
@@ -744,34 +755,34 @@ Profile information consists of:
 * Output plug-in configurations
 * Process plug-in configurations
 
-DataWedge includes a default Profile, Profile0, that is created automatically the first time DataWedge runs.
+DataWedge includes a default Profile, Profile0, which is created automatically the first time DataWedge runs.
 
-Using Profiles, each application can have a specific DataWedge configuration. For example, each user application can have a Profile which outputs scanned data in the required format when that application comes to the foreground. DataWedge can be configured to process the same set of captured data differently based on the requirements of each application.
+Using Profiles, each application can have a specific DataWedge configuration. For example, each user application can have a Profile that outputs scanned data in the required format when that application comes to the foreground. DataWedge can be configured to process the same set of captured data differently based on the requirements of each application.
 
-###NOTE
-A single Profile may be associated with one or many activities/apps, however, given an activity, only one Profile may be associated with it.
+###Note
+A single Profile can be associated with one or more activities or apps. However, an activity can be associated with no more than one Profile. 
 
-###USAGE SCENARIO
+###Usage Scenario
 Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses `SwitchToProfile` to activate ProfileB. Similarly, when ActivityB launches it uses `SwitchToProfile` to activate ProfileM.
 
 If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
 
 When ActivityA (or ActivityB) comes back to the foreground it will use `SwitchToProfile` to reset the Profile back to ProfileB (or ProfileM).
 
-###FUNCTION PROTOTYPE
+###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE");
 	i.putExtra("com.symbol.datawedge.api.EXTRA_PROFILENAME", "<profile name>");
 
-###PARAMETERS
+###Parameters
 **ACTION**: String "com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE"
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.EXTRA_PROFILENAME"
 
 **&lt;profile name**&gt;: The Profile name to switch to as a string (case-sensitive).
 
-###RETURN VALUES
+###Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -781,7 +792,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
-###EXAMPLE
+###Example
 	// define action and data strings
 	String switchToProfile = "com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE";
 	String extraData = "com.symbol.datawedge.api.EXTRA_PROFILENAME";
@@ -798,14 +809,14 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        context.this.sendBroadcast(i);
 	}
 
-###COMMENTS
+###Comments
 This API function will have no effect if the specified Profile does not exist or is already associated with an application.
 
 DataWedge has a one-to-one relationship between Profiles and activities; a Profile can be associated only with a single activity. When a Profile is first created, it's not associated with any application, and will not be activated until associated. This makes it possible to create multiple unassociated Profiles.
 
 This API function activates such Profiles.
 
-For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses `SwitchToProfile` function to switch to ProfileA, then ProfileA will be active whenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
+For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses the `SwitchToProfile` function to switch to ProfileA, then ProfileA will be active whenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
 
 When activity A returns to the foreground, the app must use `SwitchToProfile` again to switch back to ProfileA. This would be done in the `onResume` method of activity A.
 

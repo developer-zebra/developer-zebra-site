@@ -14,7 +14,7 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
 * Enable/Disable (control Usage of):
  * Data Roaming
  * Background Data
- * SIM Slot Selection (TC75x only)
+ * SIM Slot(s)
 * Turn On/Off (control State of): 
  * Data Roaming 
  * Background Data

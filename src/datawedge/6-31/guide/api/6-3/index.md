@@ -182,7 +182,7 @@ Used to create, update or replace a DataWedge Profile and its settings. Supports
 **Bundle &lt;mainbundle&gt;**: (see parameters, below)
 
 ####MAIN BUNDLE
-The main SetConfig bundle will include the following properties:
+The main SetConfig bundle includes the following properties:
 
 * **PROFILE_NAME** [String]: The name of the Profile on which to perform action(s)
 * **CONFIG_MODE** [String]: (Default=OVERWRITE)
@@ -219,10 +219,115 @@ To be implemented in the future:
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
-* **BARCODE –** Use values from the [PARAM_LIST for Scanner input](#param_listforscannerinput) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
-* **KEYSTROKE -** Use values from the [PARAM_LIST for Keystroke output input](#param_listforkeystrokeoutput) table below; specify output settings as `EWXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **BARCODE –** Use values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **KEYSTROKE -** Use values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
 
-### PARAM_LIST for Scanner Input 
+#### APP_LIST
+An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
+
+##### APP_LIST BUNDLE
+Contains the following properties:
+
+**PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wild card ("*") character 
+
+**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard ("*") character also supported.
+
+### Return Values
+(None)
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions and parameters
+
+### Example
+
+	//MAIN BUNDLE PROPERTIES
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME","Profile12");
+	bMain.putString("PROFILE_ENABLED","true");
+	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	//PLUGIN_CONFIG BUNDLE PROPERTIES
+	Bundle bConfig = new Bundle();
+	bConfig.putString("PLUGIN_NAME","Barcode");
+	bConfig.putString("RESET_CONFIG","true"); 
+
+
+	//PARAM_LIST BUNDLE PROPERTIES
+	Bundle bParams = new Bundle();
+	bParams.putString("current-device-id","0");
+	bParams.putString("scanner_input_enabled","true");
+
+	//PUT bParams into bConfig
+	bConfig.putBundle("PARAM_LIST", bParams);
+
+	//PUT bConfig into bMain
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+	// APP_LIST BUNDLES
+	Bundle bundleApp1 = new Bundle();
+	bundleApp1.putString("PACKAGE_NAME","com.symbol.emdk.simulscansample1");
+	bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
+	        "com.symbol.emdk.simulscansample1.DeviceControl",
+	        "com.symbol.emdk.simulscansample1.MainActivity",
+	        "com.symbol.emdk.simulscansample1.ResultsActivity.*",
+	        "com.symbol.emdk.simulscansample1.ResultsActivity2",
+	        "com.symbol.emdk.simulscansample1.SettingsFragment1"});
+
+
+	Bundle bundleApp2 = new Bundle();
+	bundleApp2.putString("PACKAGE_NAME","com.example.intents.datawedgeintent");
+	bundleApp2.putStringArray("ACTIVITY_LIST", new String[]{
+	        "com.example.intents.datawedgeintent.DeviceControl",
+	        "com.example.intents.datawedgeintent.MainActivity",
+	        "com.example.intents.datawedgeintent.ResultsActivity",
+	        "com.example.intents.datawedgeintent.SettingsFragment1"});
+
+	Bundle bundleApp3 = new Bundle();
+	bundleApp3.putString("PACKAGE_NAME","*");
+	bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+
+
+	Bundle bundleApp4 = new Bundle();
+	bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
+	bundleApp4.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+
+	//PUT THEM ALL TOGETHER INTO THE MAIN BUNDLE
+	bMain.putParcelableArray("APP_LIST", new Bundle[]{
+	        bundleApp1
+	        ,bundleApp2
+	        ,bundleApp3
+	        ,bundleApp4
+	});
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+
+	this.sendBroadcast(i);
+
+
+### Scanner Input Parameters 
+
+<!--
+<table class="c19">
+<tbody>
+<tr class="c6" bgcolor="#e0e0eb">
+<td class="c20" colspan="1" rowspan="1">
+<p class="c1">
+<span class="c9">
+<strong>Param name</strong>
+</span>
+</p>
+</td>
+<td class="c14" colspan="1" rowspan="1">
+<p class="c1"> <span class="c9"><strong>Param values</strong></span></p>
+</td>
+</tr>
+-->
 
 <table class="c19">
 <tbody>
@@ -398,7 +503,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">viewfinder_mode</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">1 - Viewfinder Enabled</span></p><p class="c1"><span class="c0">2 - Static Reticle</span></p></td></tr>
 <tr class="c5"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">code_id_type</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0 - Code Id Type None</span></p><p class="c1"><span class="c0">1 - Code Id Type Aim</span></p><p class="c1"><span class="c0">2 - Code Id Type Symbol</span></p></td></tr>
 <tr class="c10" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">volume_slider_type</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0 - Ringer</span></p><p class="c1"><span class="c0">1 - Music and Media</span></p><p class="c1"><span class="c0">2 - Alarms</span></p><p class="c1"><span class="c0">3 - Notification</span></p></td></tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decode_audio_feedback_uri</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">URI &ndash; can be query the available URIs from RingToneManager</span></p></td></tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decode_audio_feedback_uri</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">URI &ndash; Can be a query of the available URIs from RingToneManager</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decode_haptic_feedback</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">bt_disconnect_on_exit</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c6" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">connection_idle_time</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1800</span></p></td></tr>
@@ -409,28 +514,13 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 <tr class="c6"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">good_decode_led_timer</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoding_led_feedback</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c17"><td class="c4" colspan="1" rowspan="1"><p class="c8"><span class="c0">decoder_usplanet_report_check_digit</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c8"><span class="c0">false</span></p><p class="c8"><span class="c0">true</span></p><p class="c1 c7"><span class="c0"></span></p></td></tr>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">______________________________________________________</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c8"><span class="c0">________________________________________________________________</span></p></td></tr>
 </tbody>
 </table>
 
 -----
 
-### PARAM_LIST for Keystroke Output 
-<!--
-<table class="c19">
-<tbody>
-<tr class="c6" bgcolor="#e0e0eb">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c1">
-<span class="c9">
-<strong>Param name</strong>
-</span>
-</p>
-</td>
-<td class="c14" colspan="1" rowspan="1">
-<p class="c1"> <span class="c9"><strong>Param values</strong></span></p>
-</td>
-</tr>
--->
+### Keystroke Output Parameters 
 
 <table class="c19">
 <tbody>
@@ -451,125 +541,35 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 <tr class="c13"><td class="c4" colspan="1" rowspan="1"><p class="c1">
 <span class="c0">keystroke_delay_extended_ascii</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000</span></p></td></tr>
 <tr class="c13" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1">
-<span class="c0">keystroke_delay_control_characters</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000 URI – can be query the available URIs from RingToneManager</span></p></td></tr>
+<span class="c0">keystroke_delay_control_characters</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000</span></p></td></tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">______________________________________________________</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c8"><span class="c0">________________________________________________________________</span></p></td></tr>
 </tbody>
 </table>
 
------
-
-#### APP_LIST
-The `APP_LIST` is an array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
-
-##### APP_LIST BUNDLE
-The `APP_LIST` bundle will contain the following properties:
-
-**PACKAGE_NAME** [String]: ex: 'com.symbol.emdk.barcodesample1' or a wild card character ("*")
-
-**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard character ("*") also supported.
-
-### Return Values
-(None)
-
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-	:::term
-	$ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters
-
-### Example
-
-	//MAIN BUNDLE PROPERTIES
-	Bundle bMain = new Bundle();
-	bMain.putString("PROFILE_NAME","Profile12");
-	bMain.putString("PROFILE_ENABLED","true");
-	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
-
-	//PLUGIN_CONFIG BUNDLE PROPERTIES
-	Bundle bConfig = new Bundle();
-	bConfig.putString("PLUGIN_NAME","Barcode");
-	bConfig.putString("RESET_CONFIG","true"); 
-
-
-	//PARAM_LIST BUNDLE PROPERTIES
-	Bundle bParams = new Bundle();
-	bParams.putString("current-device-id","0");
-	bParams.putString("scanner_input_enabled","true");
-
-	//PUT bParams into bConfig
-	bConfig.putBundle("PARAM_LIST", bParams);
-
-	//PUT bConfig into bMain
-	bMain.putBundle("PLUGIN_CONFIG", bConfig);
-
-	// APP_LIST BUNDLES
-	Bundle bundleApp1 = new Bundle();
-	bundleApp1.putString("PACKAGE_NAME","com.symbol.emdk.simulscansample1");
-	bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
-	        "com.symbol.emdk.simulscansample1.DeviceControl",
-	        "com.symbol.emdk.simulscansample1.MainActivity",
-	        "com.symbol.emdk.simulscansample1.ResultsActivity.*",
-	        "com.symbol.emdk.simulscansample1.ResultsActivity2",
-	        "com.symbol.emdk.simulscansample1.SettingsFragment1"});
-
-
-	Bundle bundleApp2 = new Bundle();
-	bundleApp2.putString("PACKAGE_NAME","com.example.intents.datawedgeintent");
-	bundleApp2.putStringArray("ACTIVITY_LIST", new String[]{
-	        "com.example.intents.datawedgeintent.DeviceControl",
-	        "com.example.intents.datawedgeintent.MainActivity",
-	        "com.example.intents.datawedgeintent.ResultsActivity",
-	        "com.example.intents.datawedgeintent.SettingsFragment1"});
-
-	Bundle bundleApp3 = new Bundle();
-	bundleApp3.putString("PACKAGE_NAME","*");
-	bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
-
-
-	Bundle bundleApp4 = new Bundle();
-	bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
-	bundleApp4.putStringArray("ACTIVITY_LIST", new String[]{"*"});
-
-	//PUT THEM ALL TOGETHER INTO THE MAIN BUNDLE
-	bMain.putParcelableArray("APP_LIST", new Bundle[]{
-	        bundleApp1
-	        ,bundleApp2
-	        ,bundleApp3
-	        ,bundleApp4
-	});
-
-	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-
-	this.sendBroadcast(i);
-
 ------
 
-## GET_PROFILES_LIST
+## GET_CONFIG
 
-Used to get a list of available DataWedge Profiles on the device. 
+Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of value pairs. 
 
 ###Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<profile name>");
 
-
-###Parameters
+### Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA**: String "com.symbol.datawedge.api.GET_PROFILES_LIST"
+**EXTRA_DATA**: String "com.symbol.datawedge.api.GET_CONFIG"
 
-**EXTRA VALUE: Empty String
- 
+**EXTRA VALUE**: String "&lt;profile name&gt;"
 
-###Return Values
-Returns a String array of Datawedge Profiles
+### Return Values
+Returns an array of parameter name/value pairs. 
 
-**EXTRA NAME**: Name: com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST 
+**EXTRA NAME**: "com.symbol.datawedge.api.GET_CONFIG_RESULT" 
 
 **EXTRA TYPE**: String [ ]
 
@@ -581,6 +581,280 @@ Error and debug messages are logged to the Android logging system, which can be 
 Error messages are logged for invalid actions and parameters.
 
 ###Example
+
+	//SENDING THE INTENT
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "");
+	context.this.sendBroadcast(i);
+
+	//RECEIVING THE RESULT
+	private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+
+		@Override
+		public void onReceive(Context context, Intent intent){
+
+			Bundle extras = getIntent().getExtras();
+			if (intent.hasExtra("com.symbol.datawedge.api.GET_CONFIG")){
+				String[] profilesList = intent.getStringArrayExtra("com.symbol.datawedge.api.GET_CONFIG_RESULT")
+
+------
+
+## REGISTER_FOR_NOTIFICATION
+
+Used to register an app to receive a notification when DataWedge status changes. Also used to and unregister. 
+
+### Function Prototype
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION", "<notification type>");
+
+### Parameters
+
+**ACTION**: String "com.symbol.datawedge.api.ACTION"
+
+**EXTRA_DATA**: String "com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION"
+
+**EXTRA VALUE**: Bundle containing: 
+
+* `NOTIFICATION_TYPE` - Supported types:
+ * `PROFILE_SWITCH`  
+ * `SCANNER_STATUS`
+* `APPLICATION_NAME` - Package name of the app to register 
+
+### Return Values
+Returns a bundle with status of the requested DataWedge `NOTIFICATION_TYPE`
+
+**EXTRA NAME**: "com.symbol.datawedge.api.NOTIFICATION"
+
+**EXTRA TYPE**: Bundle 
+
+`PROFILE_SWITCH` BUNDLE: 
+
+* `NOTIFICATION_TYPE` - `PROFILE_SWITCH`
+* `PROFILE_NAME` - <profile name>
+
+`SCANNER_STATUS` BUNDLE: 
+
+* `NOTIFICATION_TYPE` - `SCANNER_STATUS`
+* `SCANNER_STATUS`: 
+ * 0-Waiting
+ * 1-Scanning
+ * 2-Connected
+ * 3-Disconnected
+ * 4-Disabled
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions and parameters.
+
+### Examples
+
+	// TO REGISTER AN APP TO RECIEVE NOTIFICATIONS
+
+	// PROFILE_SWITCH - Register for notifications
+
+		Bundle b = new Bundle();
+		b.putString("com.symbol.datawedge.api.APPLICATION_NAME","com.example.intenttest");
+		b.putString("com.symbol.datawedge.api.NOTIFICATION_TYPE","PROFILE_SWITCH");
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION", b);// (1)
+		this.sendBroadcast(i);
+
+	// To unregister, change only the iPutExtra command
+
+		Bundle b = new Bundle();
+		b.putString("com.symbol.datawedge.api.APPLICATION_NAME","com.example.intenttest");
+		b.putString("com.symbol.datawedge.api.NOTIFICATION_TYPE","PROFILE_SWITCH");
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.UNREGISTER_FOR_NOTIFICATION", b);
+		this.sendBroadcast(i);
+
+
+	// SCANNER_STATUS - Register for notifications
+
+		Bundle b = new Bundle();
+		b.putString("com.symbol.datawedge.api.APPLICATION_NAME","com.example.intenttest");
+		b.putString("com.symbol.datawedge.api.NOTIFICATION_TYPE", "SCANNER_STATUS");
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION", b);//(1)
+		this.sendBroadcast(i);
+
+	// To unregister, change only the iPutExtra command
+
+		Bundle b = new Bundle();
+		b.putString("com.symbol.datawedge.api.APPLICATION_NAME","com.example.intenttest");
+		b.putString("com.symbol.datawedge.api.NOTIFICATION_TYPE", "SCANNER_STATUS");
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.UNREGISTER_FOR_NOTIFICATION", b);
+		this.sendBroadcast(i);
+
+
+	// TO RECIEVE NOTIFICATIONS
+
+		public static final String NOTIFICATION_ACTION  = "com.symbol.datawedge.api.NOTIFICATION_ACTION";
+		public static final String NOTIFICATION_TYPE_SCANNER_STATUS = "SCANNER_STATUS";
+		public static final String NOTIFICATION_TYPE_PROFILE_SWITCH = "PROFILE_SWITCH";
+		public static final String NOTIFICATION_TYPE_CONFIGURATION_UPDATE = "CONFIGURATION_UPDATE";
+
+		private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+		    @Override
+		    public void onReceive(Context context, Intent intent) {
+		        String action = intent.getAction();
+		        Log.d(TAG, "#DataWedge-APP# Action: " + action);
+
+		        if(action.equals(NOTIFICATION_ACTION)){
+
+		            if(intent.hasExtra("com.symbol.datawedge.api.NOTIFICATION")) {
+		                Bundle b = intent.getBundleExtra("com.symbol.datawedge.api.NOTIFICATION");
+		                String NOTIFICATION_TYPE  = b.getString("NOTIFICATION_TYPE");
+		                if(NOTIFICATION_TYPE!= null) {
+		                    switch (NOTIFICATION_TYPE) {
+		                        case NOTIFICATION_TYPE_SCANNER_STATUS:
+		Log.d(TAG, "SCANNER_STATUS: status: " + b.getString("STATUS") + ", profileName: " + b.getString("PROFILE_NAME"));
+		                            break;
+
+		                        case NOTIFICATION_TYPE_PROFILE_SWITCH:
+		Log.d(TAG, "PROFILE_SWITCH: profileName: " + b.getString("PROFILE_NAME") + ", profileEnabled: " + b.getBoolean("PROFILE_ENABLED"));
+		                            break;
+
+		                        case NOTIFICATION_TYPE_CONFIGURATION_UPDATE:
+		                            break;
+		                    }
+		                }
+		            }
+		        }
+		    }
+		};
+
+		void registerReceivers() {
+		//to register the broadcast receiver
+		    IntentFilter filter = new IntentFilter();
+		    filter.addAction(NOTIFICATION_ACTION);
+		    registerReceiver(broadcastReceiver, filter);//Android method
+		}
+		void unRegisterReceivers() {
+		//to unregister the broadcast receiver
+		    unregisterReceiver(broadcastReceiver); //Android method
+		}
+
+
+
+------
+
+## GET_VERSION_INFO
+
+Gets the version numbers of DataWedge, SimulScan, the Scanner Framework/Decoder Library currently installed on the device. 
+
+### Function Prototype
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.GET_VERSION_INFO", "");
+
+### Parameters
+
+**ACTION**: String "com.symbol.datawedge.api.ACTION"
+
+**EXTRA_DATA**: String "com.symbol.datawedge.api.GET_VERSION_INFO"
+
+**EXTRA VALUE**: Empty string
+
+### Return Values
+Returns a bundle with the version numbers of DataWedge, SimulScan, the Scanner Framework/Decoder Library currently installed on the device. 
+
+**EXTRA NAME**: "com.symbol.datawedge.api.GET_VERSION_INFO_RESULT"
+
+**EXTRA TYPE**: Bundle 
+
+**BUNDLE**:
+
+* DATAWEDGE        | 6.3.1
+* BARCODE_SCANNING | 16.0.56.1  
+* DECODER_LIBRARY  | IMGKIT_XXXXX
+* SIMULSCAN        | 1.6.13
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions and parameters.
+
+### Example
+
+		:::java
+		//Retrieving version information
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String action = intent.getAction();
+	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
+	            Bundle b = intent.getExtras();
+
+		if(intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_VERSION_INFO")){
+	                String SimulScanVersion  = "Not supported";
+	                String[] ScannerFirmware = {""};
+	                Bundle res = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_VERSION_INFO");
+	                String DWVersion = res.getString("DATAWEDGE");
+	                String BarcodeVersion = res.getString("BARCODE_SCANNING");
+	                String DecoderVersion = res.getString("DECODER_LIBRARY");
+	                if(res.containsKey("SCANNER_FIRMWARE")){
+	                    ScannerFirmware = res.getStringArray("SCANNER_FIRMWARE");
+	                }
+	                if(res.containsKey("SIMULSCAN")) {
+	                    SimulScanVersion = res.getString("SIMULSCAN");
+	                }
+
+	            }
+	        }
+	    }
+
+
+-----
+
+## GET_PROFILES_LIST
+
+Gets a list of DataWedge Profiles on the device. 
+
+###Function Prototype
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
+
+
+### Parameters
+
+**ACTION**: String "com.symbol.datawedge.api.ACTION"
+
+**EXTRA_DATA**: String "com.symbol.datawedge.api.GET_PROFILES_LIST"
+
+**EXTRA VALUE**: Empty string
+ 
+
+### Return Values
+Returns a String array of Datawedge Profiles
+
+**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_GET_PROFILES_LIST"
+
+**EXTRA TYPE**: String [ ]
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions and parameters.
+
+### Example
 
 	//SENDING THE INTENT
 	Intent i = new Intent();
@@ -612,21 +886,89 @@ Gets the name of the Profile currently in use by DataWedge.
 	i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
 
 
-###Parameters
+### Parameters
 
 **ACTION**: String "com.symbol.datawedge.api.ACTION"
 
 **EXTRA_DATA**: String "com.symbol.datawedge.api.GET_ACTIVE_PROFILE"
 
-**EXTRA VALUE**: Empty String
+**EXTRA VALUE**: Empty string
  
 
-###Return Values
+### Return Values
 Returns a String of the name of the active DataWedge Profile
 
-**EXTRA NAME**: Name: com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE 
+**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE" 
 
 **EXTRA TYPE**: String 
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions and parameters.
+
+###Example
+
+	//Sending the intent
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+		context.this.sendBroadcast(i);
+
+	//Receiving the result
+		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+
+			@Override
+			public void onReceive(Context context, Intent intent){
+
+				Bundle extras = getIntent().getExtras();
+				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")){
+					String activeProfile = intent.getStringArrayExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")
+
+
+	// Register/unregister broadcast receiver 
+
+		void registerReceivers() {
+		    IntentFilter filter = new IntentFilter();
+		    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+		    filter.addCategory("android.intent.category.DEFAULT");
+		    registerReceiver(mybroadcastReceiver, filter);
+		}
+
+		void unRegisterReceivers(){
+		    unregisterReceiver(mybroadcastReceiver);
+		}
+		
+
+------
+
+## GET_DATAWEDGE_STATUS 
+
+Gets the name of the Profile currently in use by DataWedge.
+
+### Function Prototype
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.GET_DATAWEDGE_STATUS", "");
+
+### Parameters
+
+**ACTION**: String "com.symbol.datawedge.api.ACTION"
+
+**EXTRA_DATA**: String "com.symbol.datawedge.api.GET_DATAWEDGE_STATUS"
+
+**EXTRA VALUE**: Empty string
+ 
+
+### Return Values
+Returns a Bundle with the status (enabled/disabled) of DataWedge. 
+
+**EXTRA NAME**: "com.symbol.datawedge.api.GET_DATAWEDGE_STATUS_RESULT" 
+
+**EXTRA TYPE**: Bundle
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -640,19 +982,55 @@ Error messages are logged for invalid actions and parameters.
 	//SENDING THE INTENT
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+	i.putExtra("com.symbol.datawedge.api.GET_DATAWEDGE_STATUS", "");
 	context.this.sendBroadcast(i);
 
 	//RECEIVING THE RESULT
-	private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	intent.getBundleExtra("com.symbol.datawedge.api.GET_DATAWEDGE_STATUS_RESULT");
+	context.this.sendBroadcast(i);
 
-		@Override
-		public void onReceive(Context context, Intent intent){
 
-			Bundle extras = getIntent().getExtras();
-			if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")){
-				String activeProfile = intent.getStringArrayExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")
-			
+-----
+
+## RESTORE_CONFIG
+
+Resets all user-configured settings and restores DataWedge to its factory-default settings. **This action cannot be undone**. More about [DataWedge Restore](../../settings/#restoredefaults).
+
+###Function Prototype
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.RESTORE_CONFIG", "");
+
+
+###Parameters
+
+**ACTION**: String "com.symbol.datawedge.api.ACTION"
+
+**EXTRA_DATA**: String "com.symbol.datawedge.api.RESTORE_CONFIG"
+
+**EXTRA VALUE**: Empty string 
+
+###Return Values
+(none)
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions and parameters.
+
+###Example
+
+	//SENDING THE INTENT
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.RESTORE_CONFIG", "");
+	this.sebdBroadcast (i);
+
 
 ------
 
@@ -675,13 +1053,13 @@ Used to start, stop or toggle a software scanning trigger. **Valid only when Bar
 
 **&lt;parameter&gt;**: The parameter as a string, using any of the following: 
 
-* "START_SCANNING" - to start scanning
+* `START_SCANNING` - starts scanning when triggered
 
-* "STOP_SCANNING" - to stop scanning
+* `STOP_SCANNING` - stops or interrupts scanning when triggered
 
-* "TOGGLE_SCANNING" - to toggle between start scanning and stop scanning
+* `TOGGLE_SCANNING` - toggles between `START_SCANNING` and `STOP_SCANNING` when triggered
 
-###Return Values
+### Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -706,8 +1084,8 @@ Error messages are logged for invalid actions and parameters.
 
 	context.this.sendBroadcast(i);
 
-###Comments 
-The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. For example, use of delay code similar to that shown below could be used.
+### Comments 
+The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. Delay code similar to that shown below could be used:
 
 	int triggerDelay = 250; // delay in milliseconds
 
@@ -777,7 +1155,7 @@ Error messages are logged for invalid actions and parameters.
 This intent enables or disables the scanner plug-in for the currently enabled Profile. For example, let's say that activity A launches and uses the Data Capture API intent to switch to ProfileA in which the scanner plug-in is enabled, then at some point it uses the Data Capture API to disable the scanner plug-in. Activity B is launched. In DataWedge, ProfileB is associated with activity B. DataWedge switches to ProfileB. When activity A comes back to the foreground, in the `onResume` method, activity A must use the Data Capture API intent to switch back to ProfileA, then use the Data Capture API intent again to disable the scanner plug-in, to return back to the state it was in.
 
 ### Note
-The above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA, and therefore activity A must switch back to ProfileA in its `onResume` method.
+The scenario above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA, and therefore activity A must switch back to ProfileA in its `onResume` method.
 
 Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the `onResume` method of the activity.
 
@@ -1056,7 +1434,11 @@ DataWedge auto Profile switching works as follows:
 	* activates new Profile (**newProfileId**)
 	* sets **currentProfileId** = **newProfileId**
 
-------
+-----
+
+
+
+-----
 
 **SEE ALSO**:
 

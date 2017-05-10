@@ -191,11 +191,9 @@ DataWedge has the ability to reset all user-configured settings and restore them
 <img style="height:350px" src="datawedge_restore.png"/>
 <br>
 
-&#50;. **Tap Yes to Restore factory defaults** or No to cancel. 
+&#50;. **Tap Yes to Restore factory defaults** (tap No to cancel). 
 <img style="height:350px" src="05_restore_defaults.png"/>
 <br>
-
-DataWedge Profiles are always named `dwprofile_profilename.db`.  
 
 ### Enterprise Folder
 On Zebra devices, internal storage contains a directory named `/enterprise` that persists (is not erased) after an Enterprise reset is performed on the device. DataWedge stores its files in several directories below `/enterprise`, which allows them to persist after an Enterprise reset. 

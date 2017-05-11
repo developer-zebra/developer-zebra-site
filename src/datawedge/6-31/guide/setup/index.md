@@ -51,7 +51,7 @@ The app will now use DataWedge for barcode data acquisition.
 
 **Related Guides**: 
 
-* **[Create a Profile guide](createprofile) -** the instructions above plus details and screenshots
-* **[Profile Architecture Overview](overview) -** explains how DataWedge uses Profiles and Plug-ins
+* **[Create a Profile guide](../createprofile) -** the instructions above plus details and screenshots
+* **[Profile Architecture Overview](../overview) -** explains how DataWedge uses Profiles and Plug-ins
 * **[Profiles/Plug-Ins listing](../profiles) -** links and details for all DataWedge Plug-ins
 * **[DataWedge APIs](../api) -** access DataWedge programmatically 

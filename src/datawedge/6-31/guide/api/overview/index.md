@@ -21,27 +21,33 @@ The new syntax defined in DataWedge 6.2 permits multiple DataWedge API calls as 
 		i.putExtra("com.symbol.datawedge.api.DELETE_PROFILE", profiles);
 		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
 
-### APIs Supporting New Syntax
+### APIs Implemented Through Extras
 
 The following APIs can be invoked as extras from a single intent action:
 
-* [EnableDataWedge](../6-3/#enabledatawedge)
-* [CloneProfile](../6-3/#cloneprofile)
-* [RenameProfile](../6-3/#renameprofile)
-* [DeleteProfile](../6-3/#deleteprofile)
-* [QueryProfileList](../6-3/#queryprofilelist)
-* [GetActiveProfile](../6-3/#getactiveprofile)
+* **[CLONE_PROFILE](../cloneprofile) -** creates a copy of an existing DataWedge Profile wuth settings.
+* **[DELETE_PROFILE](../deleteprofile) -** deletes Profile(s) from the device. 
+* **[ENABLE_DATAWEDGE](../enabledatawedge) -** switches DataWedge on or off. 
+* **[GET_ACTIVE_PROFILE](../getactiveprofile) -** retrieves the name of the Profile currently in use. 
+* **[GET_DATAWEDGE_STATUS](../getdatawedgestatus) -** returns the DataWedge state (enabled/disabled). 
+* **[GET_PROFILES_LIST](../getprofileslist) -** retrieves a list of DataWedge Profiles on the device.
+* **[GET_VERSION_INFO](../getversioninfo) -** gets version numbers of DataWedge and of scanner and SimulScan frameworks on the device. 
+* **[RESTORE_CONFIG](../restoreconfig) -** restores a DataWedge configuration to its default settings.
+* **[REGISTER_FOR_NOTIFICATION](../registerfornotification) -** tells DataWedge to inform specified app or activity of updates to scanner and/or Profile status. 
+* **[RENAME_PROFILE](../renameprofile) -** changes the name of an existing Profile. 
+* **[SET_CONFIG](../setconfig) -** create new, or overwrite or update an existing Profile 
+* **[UNREGISTER_FOR_NOTIFICATION](../registerfornotification) -** cancels request for app notification.
 
-### APIs That Require Previous Syntax
+### APIs Implemented as Actions
 
 The following API calls require a distinct intent action for each: 
 
-* [SoftScanTrigger](../6-3/#softscantrigger)
-* [ScannerInputPlugin](../6-3/#scannerinputplugin)
-* [EnumerateScanners](../6-3/#enumeratescanners) 
-* [SetDefaultProfile](../6-3/#setdefaultprofile)
-* [ResetDefaultProfile](../6-3/#resetdefaultprofile)
-* [SwitchToProfile](../6-3/#switchtoprofile)
+* [SoftScanTrigger](../softscantrigger)
+* [ScannerInputPlugin](../scannerinputplugin)
+* [EnumerateScanners](../enumeratescanners) 
+* [SetDefaultProfile](../setdefaultprofile)
+* [ResetDefaultProfile](../resetdefaultprofile)
+* [SwitchToProfile](../switchtoprofile)
 
 > **DataWedge 6.3 supports current and legacy API syntaxes**. 
 
@@ -50,7 +56,7 @@ The following API calls require a distinct intent action for each:
 * `STOP_SCANNING` - immediately interrupts a scan operation
 * `DISABLE_PLUGIN` - immediately disables the current scanner input plug-in
 
-To help ensure proper execution, Zebra recommends inserting delay code prior to critical commands. See the [SoftScanTrigger](../6-3/#softscantrigger) API for an example.  
+To help ensure proper execution, Zebra recommends inserting delay code prior to critical commands. See the [SoftScanTrigger](../softscantrigger) API for an example.  
 
 ### Requirements
 The use of DataWedge APIs requires experience with Java programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../../setup) and the [Architecture Overview](../../overview). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
@@ -118,7 +124,7 @@ The Java code below implements a nested bundle.
 
 **Related Guides**:
 
-* [DataWedge APIs](../6-3)
+* [DataWedge APIs](../)
 * [DataWedge Demo App](../../demo)
 
 **SEE ALSO**:

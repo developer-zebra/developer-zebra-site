@@ -21,6 +21,6 @@ _Shows MSR input enabled in the "DWDemo" Profile_
 **Related guides**:
 
 * [Profiles/Plug-ins](../../profiles)
-* [Input Parameters](decoders)
+* [Input Parameters](../barcode/#decoderselection)
 * [DataWedge APIs](../../api) 
 

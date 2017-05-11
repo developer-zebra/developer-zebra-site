@@ -9,7 +9,7 @@ productversion: '6.3'
 **Process Plug-ins** manipulate the acquired data in a specified way before sending it via the Output Plug-in to the associated application or server. Controls for Process Plug-ins appear as "Basic Data Formatting" and "Advanced Data Formatting," and are grouped in a Profile's settings panel along with its Output Plug-in. 
 
 See [Basic Data Formatting](../bdf) 
-[How Plug-ins work](../overview)
+[How Plug-ins work](../../overview)
 
 **Process Plug-ins specify**: 
 * Basic data formatting (append with keystrokes, prefix, suffix, etc.)

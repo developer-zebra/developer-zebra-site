@@ -13,7 +13,7 @@ DCP is disabled by default. The DataWedge profile configuration screen allows an
 **Note: The DCP will not appear if the scanner is disabled in the current Profile**.
 
 <img style="height:350px" src="../dcp_settings.png"/>
-_Data Capture Plus options for setting scan triggers_. 
+_Data Capture Plus options for setting scan triggers_ 
 <br>
 
 Data Capture Plus offers these configurable parameters:
@@ -37,13 +37,13 @@ Data Capture Plus offers these configurable parameters:
 **Note**: A quick touch and release of the DCP can sometimes start the viewfinder when using camera as a scanner. To exit, press the back button.
 
 <img style="height:350px" src="../dcp_minimized.png"/>
-_Data Capture Plus shown in minimized mode_. 
+_Data Capture Plus shown in minimized mode_ 
 <br>
 
 **Note**: If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. However, runtime changes to the vertical position and the docking side of device screen _**will**_ be saved to the active Profile.
 
 <img style="height:350px" src="../dcp_maximized.png"/>
-_Data Capture Plus shown in maximized mode_. 
+_Data Capture Plus shown in maximized mode_ 
 <br>
 
 ### Scanning with DCP
@@ -63,6 +63,6 @@ _Data Capture Plus shown in maximized mode_.
 **Related guides**:
 
 * [Profiles/Plug-ins](../../profiles)
-* [Input Parameters](decoders)
+* [Input Parameters](../barcode/#decoderselection)
 * [DataWedge APIs](../../api) 
 

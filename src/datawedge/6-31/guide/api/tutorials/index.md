@@ -5,7 +5,7 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-TUTORIALS TO COME
+# TUTORIALS TO COME
 
 ## Overview
 The Data Capture API operates primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the hardware APIs of the device. This guide describes the functionality of the intents supported by DataWedge and their effects on data capture and the DataWedge app itself. **DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2** that can launch multiple intents in a single command. DataWedge continues to support all original commands using their original syntax. 

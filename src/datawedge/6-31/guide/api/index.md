@@ -1,5 +1,59 @@
 ---
 title: DataWedge APIs
+description: description of APIs here. 
+layout: list-apis.html
+automenu:
+  items:
+    - title: General Information
+      items:
+        - title: API Overview 
+          url: overview
+        - title: Tutorials
+          url: tutorials
+        - title: Sample Code
+          url: samples
+    - title: DataWedge APIs
+      items:
+        - title: Clone Profile 
+          url: cloneprofile
+        - title: Delete Profile 
+          url: deleteprofile
+        - title: Enable DataWedge 
+          url: enabledatawedge
+        - title: Enumerate Scanners 
+          url: enumeratescanners
+        - title: Get Config 
+          url: getconfig
+        - title: Get Active Profile 
+          url: getactiveprofile
+        - title: Get DataWedge Status 
+          url: getdatawedgestatus
+        - title: Get Profiles List 
+          url: getprofileslist
+        - title: Get Version Info 
+          url: getversioninfo
+        - title: Register for Notification 
+          url: registerfornotification
+        - title: Rename Profile 
+          url: renameprofile
+        - title: Reset Default Profile 
+          url: resetdefaultprofile
+        - title: Restore Config 
+          url: restoreconfig
+        - title: Scanner Input Plug-in 
+          url: scannerinputplugin
+        - title: Set Config 
+          url: setconfig
+        - title: Set Default Profile 
+          url: setdefaultprofile
+        - title: Soft Scan Trigger 
+          url: softscantrigger
+        - title: Switch to Profile 
+          url: switchtoprofile
+---
+
+<!-- 
+title: DataWedge APIs
 description: DataWedge APIs operate primarily through Android intents, which can be invoked by other applications to control the data-capture capabilities of DataWedge without the need to directly access APIs of the underlying device hardware. 
 layout: list-content-items.html
 content-items:
@@ -30,26 +84,4 @@ content-items:
     url: tutorials
 product: DataWedge
 productversion: '6.3'
----
-
-<!--
-
-title: DataWedge APIs
-description: description of APIs here. 
-layout: list-apis.html
-automenu:
-  items:
-    - title: APIs
-      items:
-        - title: Overview 
-          url: overview
-        - title: 6.3 APIs
-          url: 6-3
-        - title: Legacy APIs
-          url: legacy
-        - title: API Tutorials
-          url: tutorials
-        - title: API Samples
-          url: samples
-
 -->

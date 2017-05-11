@@ -20,7 +20,7 @@ When associated with an app, DataWedge can be invoked to scan and acquire the da
 
 **Related Guides**:
 
-* **[Profile Architecture Overview](../guide/overview) -** 
+* **[Profile Overview](../overview) -** DataWedge architecture and defaults
 * **[Profiles/Plug-Ins listing](../profiles) -** links to all DataWedge Plug-ins
 
 -----

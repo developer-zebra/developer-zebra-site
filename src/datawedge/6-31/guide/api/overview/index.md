@@ -56,7 +56,7 @@ To help ensure proper execution, Zebra recommends inserting delay code prior to 
 The use of DataWedge APIs requires experience with Java programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../../setup) and the [Architecture Overview](../../overview). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
 
 ### Nested Bundles
-DataWedge 6.3 implements the concept of nested bundles, which allows a "bundle" of values to be included as one value in another bundle. Bundles also can be multiple layers deep. For example, the image below illustrates a `PARAM_LIST` bundle nested within the `PLUGIN-CONFIG[0]` bundle nested within the API call `SET_CONFIG`. Nesting is required to configure the many parameters contained in a Profile.  
+DataWedge 6.3 implements the concept of nested bundles, which allows a "bundle" of values to be included as one value in another bundle. Bundles also can be multiple layers deep. For example, the image below illustrates a `PARAM_LIST` bundle nested within the `PLUGIN_CONFIG[0]` bundle nested within the API call `SET_CONFIG`. Nesting is required to configure with intents the many parameters contained in a Profile.
 
 The image further illustrates that the `SET_CONFIG` API call can implement a second nested bundle, `PLUGIN_CONFIG[n]`, which can contain its own `PARAM_LIST`. 
 

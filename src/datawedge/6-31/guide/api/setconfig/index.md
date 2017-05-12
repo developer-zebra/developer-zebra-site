@@ -21,7 +21,7 @@ Used to create, update or replace a DataWedge Profile and its settings. Supports
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SET_CONFIG"
 
-**BUNDLE**: &lt;mainbundle&gt;** (see parameters below)
+**BUNDLE**: &lt;mainbundle&gt; (see parameters below)
 
 #### MAIN BUNDLE
 The main SetConfig bundle includes the following properties:

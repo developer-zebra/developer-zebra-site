@@ -48,14 +48,20 @@ _Intent Output options_
 
 -----
 
-### Decode-related data
-The decode-related data added to an intent bundle can be retrieved using the `Intent.getStringtExtra()` call, and can be used with the following string tags:
+## Decode-related data
+The decode-related data added to an intent bundle can be retrieved using the following call: 
+
+	:::java
+	Intent.getStringtExtra()
+
+
+This call can be used with the following String tags:
 
 * **String LABEL_TYPE_TAG = "com.symbol.datawedge.label_type"**; String contains the barcode label type
 
 * **String DATA_STRING_TAG = "com.symbol.datawedge.data_string"**; String contains the output data as a String. In the case of concatenated barcodes, the decode data is concatenated and sent out as a single string.
 
-* **String DECODE_DATA_TAG = "com.symbol.datawedge.decode_data"**; Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array, per bar code). Clients can get data in each byte array by passing an index.
+* **String DECODE_DATA_TAG = "com.symbol.datawedge.decode_data"**; Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Clients can get data in each byte array by passing an index.
 
 -----
 

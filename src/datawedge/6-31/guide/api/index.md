@@ -8,10 +8,10 @@ automenu:
       items:
         - title: API Overview 
           url: overview
+        - title: Code Samples
+          url: samples
         - title: Tutorials
           url: tutorials
-        - title: Sample Code
-          url: samples
     - title: DataWedge APIs
       items:
         - title: Clone Profile 

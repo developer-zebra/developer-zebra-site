@@ -54,7 +54,7 @@ _Data Capture Plus shown in maximized mode_
 
 &#50;. **Aim the scan beam or camera reticle at the barcode** to be scanned. DCP will use the preferences configured in the Barcode Input Plug-in for the current Profile.
 
-&#51;. * **Release finger to stop scanning** or to close the camera viewfinder.
+&#51;. **Release finger to stop scanning** or to close the camera viewfinder.
 
 **Note**: A quick touch and release of the DCP control sometimes will start the viewfinder when using camera as a scanner. To exit, press the BACK button.
 

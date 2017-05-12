@@ -36,7 +36,7 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
 
-* Scan and process all [major barcode symbologies](../decoders)
+* Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
 * Acquire barcodes, images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to acquire scanned data for one or more apps
 * Create Profiles to implement specific DataWedge features for individual apps 

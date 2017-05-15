@@ -1,14 +1,14 @@
 ---
-title: DCP Input Plug-in
+title: DCP Input
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
 ---
 
 ## Overview
-Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on a designated screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger.
+Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on such a screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger. DCP is disabled by default. 
 
-DCP is disabled by default. The DataWedge profile configuration screen allows an app user to configure the appearance of DCP on the screen after a particular Profile is loaded. If the user checks the option to enable the DCP, the five parameters shown below appear on the preference screen and can be configured as desired.
+The DataWedge profile configuration screen allows an app user to configure the appearance of DCP on the screen after a particular Profile is loaded. If the user checks the option to enable the DCP, the five parameters shown below appear on the preference screen and can be configured as desired.
 
 **Note: The DCP will not appear if the scanner is disabled in the current Profile**.
 
@@ -16,37 +16,52 @@ DCP is disabled by default. The DataWedge profile configuration screen allows an
 _Data Capture Plus options for setting scan triggers_ 
 <br>
 
-Data Capture Plus offers these configurable parameters:
+-----
 
-**Dock button on -** Sets the initial docking location of the floating DCP button. Changes by the user at runtime are saved to the active Profile. Docking options:  
+### Dock button on
+Sets the initial docking location of the floating DCP button. Changes by the user at runtime are saved to the active Profile. 
+
+**Docking options**:
+
 * Right side only
 * Left side only
 * Either side
 
-**Start in -** Sets the mode that DCP will startup with. If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. Start-in options: 
-* Button mode (floating button)
-* Full-screen mode
-* Button-only mode
-
-**Button highest position -** Sets a ceiling for button position expressed as a percent of screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen. 
-
-**Bottom lowest position -** Sets a floor for button position expressed as a percent of screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.
-
-**Drag Detect Time -** The wait time (in ms) that DCP should wait after a screen tap before triggering a scanner action. This can help prevent accidental triggers when dragging the DCP button to a new location.
-
-**Note**: A quick touch and release of the DCP can sometimes start the viewfinder when using camera as a scanner. To exit, press the back button.
 
 <img style="height:350px" src="../dcp_minimized.png"/>
 _Data Capture Plus shown in minimized mode_ 
 <br>
 
-**Note**: If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. However, runtime changes to the vertical position and the docking side of device screen _**will**_ be saved to the active Profile.
+### Start in
+Sets the mode that DCP will startup with. If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. 
+
+**Start-in options**: 
+
+* Button mode (floating button)
+* Full-screen mode
+* Button-only mode
 
 <img style="height:350px" src="../dcp_maximized.png"/>
 _Data Capture Plus shown in maximized mode_ 
 <br>
 
-### Scanning with DCP
+### Button highest position 
+Sets a ceiling for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen. 
+
+### Bottom lowest position
+Sets a floor for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.
+
+### Drag Detect Time
+The wait time (in ms) that DCP should wait after a screen tap before triggering a scanner action. This can help prevent accidental triggers when dragging the DCP button to a new location.
+
+**Note**: A quick touch and release of the DCP can sometimes start the viewfinder when using camera as a scanner. To exit, press the back button.
+
+
+**Note**: If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. However, runtime changes to the vertical position and the docking side of device screen _**will**_ be saved to the active Profile.
+
+-----
+
+## Scanning with DCP
 
 **To scan a barcode with DCP**: 
 

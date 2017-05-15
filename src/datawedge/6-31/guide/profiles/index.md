@@ -8,7 +8,7 @@ automenu:
       items:
         - title: Architecture Overview
           url: ../overview
-        - title: Create a Profile
+        - title: Managing Profiles
           url: ../createprofile
     - title: Input
       items:

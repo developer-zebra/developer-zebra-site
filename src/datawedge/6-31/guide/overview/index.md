@@ -47,32 +47,6 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 
 -----
 
-## Create a Profile
-The basic steps for creating a Profile and associating it with an app on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. For a detailed look at this process, see the [Create a Profile](../createprofile) page.  
-
-**To enable DataWedge scanning services for an app**:
-
-1. **Install the app** that will use DataWedge for scanning. 
-2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
-3. Tap on the Profiles screen's "hamburger" menu and **select -> New profile**. 
-4. **Enter a name for the Profile and tap OK**. The new Profile appears in the Profiles list. 
-5. Tap on the new profile.
-6. **Select Associated Apps** from the Applications section.
-7. In the Hamburger menu, **select -> New app/activity**. A list of installed apps appears. 
-8. Select your app's package name (scrolling down, if necessary).
-9. **Tap the asterisk** (*) to associate all of your app's activities with DataWedge. 
-10. Tap the device's Back button until the new Profile's Settings screen appears.
-11. Confirm that the "Profile enabled" checkbox is checked. 
-12. As needed, **confirm that the Barcode Input and Keystroke Output checkboxes are checked**. 
-
-Test and adjust input, processing (data formatting) and output parameters as necessary. 
-
-The app will now use DataWedge to acquire barcode data. 
-
-For a detailed look at this process, see the [Create a Profile](../createprofile) page.  
-
------
-
 **Related Guides**: 
 
 * **[Profile Architecture Overview](../overview) -** explains how DataWedge uses Profiles and Plug-ins

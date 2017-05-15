@@ -25,8 +25,8 @@ When associated with an app, DataWedge can be invoked to scan and acquire the da
 
 -----
 
-## Create a Profile
-The basic steps for creating a Profile and associating it with an app on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. For a detailed look at this process, see the [Create a Profile](../createprofile) page.  
+## Getting Started
+The basic steps for creating a Profile and associating it with an app on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. For a detailed look at this process, see the [Managing Profiles](../createprofile) page.  
 
 **To enable DataWedge scanning services for an app**:
 

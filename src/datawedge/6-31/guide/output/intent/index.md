@@ -26,9 +26,11 @@ DataWedge invokes an intent though an **Intent action** in an **Intent category*
 
 ...the **Intent action** in the Intent is `com.myapp.action` and the **Intent category** is `android.intent.category.DEFAULT`.
 
-**Once these values are known**: 
+When combined, these two values can be like a "channel" to which an app can listen for intents that use the same combination, filtering out the "noise" from other intents that use different value pairs. 
 
-&#49;. Locate the IP Output section of the Profile being configured.
+**Once these values are known, set DataWedge intent output to match**: 
+
+&#49;. Locate the Intent Output section of the Profile being configured.
 
 &#50;. **Check "Enabled" box** to activate intent output:  
 <img style="height:350px" src="../intent_output 2.png"/>
@@ -38,7 +40,9 @@ _Intent Output options_
 &#51;. **Specify action, category and delivery** as described below: 
 
 **Intent action -** specifies the action to handle the intent 
+
 **Intent category -** specifies the category of intent to be handled 
+
 **Intent delivery -** used to select one of three delivery methods for intent-based data:
 * **Send via startActivity** 
 * **Send via startService** 

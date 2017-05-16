@@ -6,9 +6,9 @@ productversion: '6.3'
 ---
 
 ## Overview
-**Magnetic Stripe Reader (MSR) Input** is used when acquiring data from a credit or debit card about the carrier's bank, credit agency or other financial institution. Information is stored on "mag-stripe" cards in an open format using the ANSI x4.16 standard. Data is transferred to the device when the card is "swiped" through the MSR. DataWedge can acquire, process and output the data in its raw form or can encrypt it immediately upon acquisition, and keep secure it at all times thereafter. 
+**Magnetic Stripe Reader (MSR) Input** is used when acquiring data from a credit or debit card about the carrier's bank, credit agency or other financial institution. Information is stored on "mag-stripe" cards in an open format using the ANSI x4.16 standard. Data is transferred to the device when the card is "swiped" through the MSR. DataWedge can acquire and output the data in its raw form or can encrypt it immediately upon acquisition, securing it at all times thereafter. 
 
-Under the ANSI x4.16 standard, data is stored on the card in three tracks. Unencrypted data can be acquired from any of the individual tracks or from all three at once. The same is true for data encrypted using Zebra's Enhanced Mode encryption. Data encrypted using Zebra Original Mode can be acquired only all at once. 
+Under the ANSI x4.16 standard, data is stored on the card in three tracks. Unencrypted data can be acquired from any of the individual tracks or from all three at once. The same is true for data encrypted using Zebra's Enhanced Mode encryption. Zebra Original Mode encryption treats all three tracks as a single entity. Data encrypted using Original Mode must therefore be acquired all at once. 
 
 <img style="height:350px" src="msr_encryption_modes.png"/>
 _The three modes of MSR card encoding, two of which include encryption_

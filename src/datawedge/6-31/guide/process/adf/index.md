@@ -6,33 +6,38 @@ productversion: '6.3'
 ---
 
 ## Overview
-**Process Plug-ins** manipulate the acquired data in a specified way before sending it via the Output Plug-in to the associated application or server. Controls for Process Plug-ins appear as "Basic Data Formatting" and "Advanced Data Formatting," and are grouped in a Profile's settings panel along with its Output Plug-in. 
+**Advanced Data Formatting** permits acquired data to be manipulated based on its contents and/or custom rules configured to trigger (or prevent) actions based on specific criteria. For example, a simple rule can move the cursor ahead four characters or from one text field to another. A complex rule might be created to trigger an action only if the first four digits of an acquired 16-digit number match those of a specific bank. Any number of rules and interdependencies can be created, giving DataWedge the ability to suit virtually any data processing requirement. 
 
-See [Basic Data Formatting](../bdf) 
-[How Plug-ins work](../../overview)
+Controls for data processing appear as "Basic Data Formatting" and "Advanced Data Formatting," and are grouped in a Profile's settings panel along with the Output settings: 
+<img style="height:350px" src="../adf_intent_output.png"/>
+<br>
 
-**Process Plug-ins specify**: 
-* Basic data formatting (append with keystrokes, prefix, suffix, etc.)
-* Advanced data formatting (rules-based data manipulation)
 
-**The Advanced Format Process Plug-in** allows for acquired data to be customized  to suit any requirement based on a set of complex rules containing individual or multiple criteria and actions. 
+**See also**: 
+* [Basic Data Formatting](../bdf)
+* [How DataWedge Profiles work](../../overview)
 
-## Advanced Data Formatting
-DataWedge permits data acquired from barcode scanning, magstripe reading or other methods to be manipulated based on its contents. The Advanced Data Formatting (ADF) Process Plug-in can be configured to determine whether and how the data should be altered according to rules. These rules can be used to trigger (or prevent) actions based on specific criteria relating to the data. For example, a rule might be created to trigger an action only if the first four digits of an acquired 16-digit number determine that it's a credit card number affiliated with a specific bank. Any number of rules and interdependencies can be created, giving DataWedge the ability to suit virtually any data processing requirement.   
+-----
 
-**ADF Components**:
+### ADF Components
+Advanced Data Formatting features are implemented through Rules, Criteria and Actions. 
 
-**Rules -** The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
+#### Rules
+The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Criteria -** The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../../decoders) can be selected or excluded. 
+#### Criteria
+The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../../decoders) can be selected or excluded. 
 
-**Actions -** A set of procedures for analyzing, identifying and processing acquired data. 
+#### Actions 
+A set of procedures for analyzing, identifying and processing acquired data. 
 
 **The four Action types**: 
 * **Cursor movement** (i.e. skip the first 10 characters)
 * **Data modification** (i.e remove all spaces; pad the left side with four zeros)
 * **Data sending** (i.e. output the last four digits)
 * **Pause** (i.e. pause 50 ms before executing the next action)
+
+-----
 
 ### Creating ADF Rules
 Setting up Advanced Data Formatting is done in three basic steps: 
@@ -56,6 +61,10 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 &#51;. **Tap the new Rule** to access its settings. A screen appears similar to the image in Step 4.  
 <img style="height:350px" src="../adf_15_rules_list.png"/>
 <br>
+
+-----
+
+### Setting Criteria
 
 &#52;. **Tap Criteria** as highlighted below to enter the criteria that will activate the Rule.  
 <img style="height:350px" src="../Criteria-MyAppRule01.png"/>
@@ -82,6 +91,10 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 &#54;. **Tap the BACK button** to save and return to the Rule screen.
 <img style="height:350px" src="../adf_17_criteria_list.png"/>
 <br>
+
+-----
+
+### Creating ADF Actions
 
 **To Add an Action**:
 

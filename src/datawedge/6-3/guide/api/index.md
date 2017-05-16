@@ -172,10 +172,20 @@ cellspacing="0" cellpadding="4">
 ### Sample Code
 The sample code shown below is for APIs supported only on DataWedge 6.2 and higher. 
 
+##### CREATE_PROFILE
+
+		:::java
+		private void createProfile() { 
+	    Intent i = new Intent(); 
+	    i.setAction("com.symbol.datawedge.api.ACTION"); 
+	    i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", ""); 
+	    this.sendBroadcast(i); 
+	}
+
 #### DELETE_PROFILE 
 
 
-		:::javascript
+		:::java
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		String[] profiles = {"MyProfile"};
@@ -186,7 +196,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 #### GET_PROFILES_LIST
 
 
-		:::javascript
+		:::java
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_PROFILES_LIST", "");
@@ -199,7 +209,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 #### CLONE_PROFILE
 
 
-		:::javascript
+		:::java
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION"); 
 		String[] values = {"Profile0", "MyProfile"};
@@ -211,7 +221,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 #### RENAME_PROFILE 
 
 
-		:::javascript
+		:::java
 		Intent i = newIntent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		String[] values = {"TestProfile", "MyProfile"};
@@ -223,7 +233,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 #### GET_ACTIVE_PROFILE
 
 
-		:::javascript
+		:::java
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
@@ -236,7 +246,7 @@ The sample code shown below is for APIs supported only on DataWedge 6.2 and high
 
 #### ENABLE_DATAWEDGE
 
-		:::javascript
+		:::java
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.ENABLE_DATAWEDGE", enable);

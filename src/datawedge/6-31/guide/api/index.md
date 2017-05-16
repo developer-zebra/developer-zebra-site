@@ -16,6 +16,8 @@ automenu:
       items:
         - title: Clone Profile 
           url: cloneprofile
+        - title: Create Profile 
+          url: createprofile
         - title: Delete Profile 
           url: deleteprofile
         - title: Enable DataWedge 

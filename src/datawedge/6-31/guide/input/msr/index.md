@@ -69,7 +69,7 @@ The tag above returns all data readable from the card. The table below lists the
 <tr class="Table42"><td style="text-align:left;width:2.8021in; " class="Table4_A2"><p class="P21"><span class="T26">Track 1 Status</span></p></td><td style="text-align:left;width:3.6347in; " class="Table4_B2"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track1_status</span></p></td></tr>
 <tr class="Table42" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8021in; " class="Table4_A3"><p class="P21"><span class="T26">Track 2 Status</span></p></td><td style="text-align:left;width:3.6347in; " class="Table4_B3"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track2_status</span></p></td></tr>
 <tr class="Table42"><td style="text-align:left;width:2.8021in; " class="Table4_A4"><p class="P21"><span class="T26">Track 3 Status</span></p></td><td style="text-align:left;width:3.6347in; " class="Table4_B4"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track3_status</span></p></td></tr>
-<tr class="Table42" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8021in; " class="Table4_A5"><p class="P21" bgcolor="#e0e0eb"><span class="T26">All MSR Data (see Data Types, below)</span></p></td><td style="text-align:left;width:3.6347in; " class="Table4_B5"><p class="P23"><span class="T27">com.symbol.datawedge.msr_data</span></p></td></tr>
+<tr class="Table42" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8021in; " class="Table4_A5"><p class="P21" bgcolor="#e0e0eb"><span class="T26">All MSR Data (see Field Table, below)</span></p></td><td style="text-align:left;width:3.6347in; " class="Table4_B5"><p class="P23"><span class="T27">com.symbol.datawedge.msr_data</span></p></td></tr>
 </table>
 
 -----
@@ -204,7 +204,7 @@ The tag above returns all data readable from the card. The table below lists the
 
 -----
 
-### Original Mode Data Types
+### Original Mode Field Types
 <table border="0" cellspacing="0" cellpadding="0" class="Table5"><colgroup><col width="124"/><col width="347"/><col width="271"/></colgroup>
 <tr class="Table51" bgcolor="#e0e0eb"><td style="text-align:left;width:1.1208in; " class="Table5_A1"><p class="P22"><span class="T17"><strong>Field Number</strong></span></p></td><td style="text-align:left;width:3.1285in; " class="Table5_A1"><p class="P22"><span class="T17"><strong>Description</strong></span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_A1"><p class="P22"><span class="T17"><strong>Notes</strong></span></p></td></tr>
 <tr class="Table52"><td style="text-align:left;width:1.1208in; " class="Table5_A2"><p class="P22"><span class="T13">1</span></p></td><td style="text-align:left;width:3.1285in; " class="Table5_B2"><p class="P23"><span class="T13">STX</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P26"> </p></td></tr>
@@ -224,14 +224,15 @@ The tag above returns all data readable from the card. The table below lists the
 <tr class="Table52"><td style="text-align:left;width:1.1208in; " class="Table5_A2"><p class="P22"><span class="T13">15</span></p></td><td style="text-align:left;width:3.1285in; " class="Table5_B2"><p class="P23"><span class="T13">LRC </span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P26"> </p></td></tr>
 <tr class="Table52" bgcolor="#e0e0eb"><td style="text-align:left;width:1.1208in; " class="Table5_A17"><p class="P22"><span class="T13">16</span></p></td><td style="text-align:left;width:3.1285in; " class="Table5_B17"><p class="P23"><span class="T13">Checksum</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C17"><p class="P26"> </p></td></tr>
 <tr class="Table52"><td style="text-align:left;width:1.1208in; " class="Table5_A2"><p class="P22"><span class="T13">17</span></p></td><td style="text-align:left;width:3.1285in; " class="Table5_B2"><p class="P23"><span class="T13">ETX</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P26"> </p></td></tr>
+<tr class="Table52" bgcolor="#e0e0eb"><td style="text-align:left;width:1.1208in; " class="Table5_A17"><p class="P22"><span class="T13"></span></p></td><td style="text-align:left;width:3.1285in; " class="Table5_B17"><p class="P23"><span class="T13"></span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C17"><p class="P26"> </p></td></tr>
 </table>
 
 -----
 
 **Related guides**:
 
-* [Profiles](../../profiles)
-* [DataWedge APIs](../../api) 
-* [IDTech SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2)
-* [ANSI x9.24-2016 (DUKPT Specs)](http://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.24-2-2016)
+* [DataWedge Profiles](../../profiles) - guides for all DataWedge input, processing and output options 
+* [DataWedge APIs](../../api) - usage specifications for all DataWedge-supported intents 
+* [IDTech SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2) - Zebra MSR read head technical specifications 
+* [ANSI x9.24-2016](http://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.24-2-2016) - Encryption key (DUKPT) specifications
 

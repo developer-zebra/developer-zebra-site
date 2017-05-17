@@ -5,7 +5,7 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## ACTION_SETDEFAULTPROFILE
+## SET_DEFAULT_PROFILE
 
 The `setDefaultProfile` API function can be used to set the specified Profile as the default Profile.
 
@@ -27,14 +27,14 @@ If the launched app already has an associated DataWedge Profile, the `setDefault
 
 	:::javascript
 	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION_SETDEFAULTPROFILE");
-	i.putExtra("com.symbol.datawedge.api.EXTRA_PROFILENAME", "<profile name>");
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_DEFAULT_PROFILE", "<profile name>");
 
 
 ### Parameters
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION_SETDEFAULTPROFILE"
+**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.EXTRA_PROFILENAME"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SET_DEFAULT_PROFILE"
 
 **&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the default Profile.
 
@@ -52,8 +52,8 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 
 	:::javascript
 	// define action and data strings
-	String setDefaultProfile = "com.symbol.datawedge.api.ACTION_SETDEFAULTPROFILE";
-	String extraData = "com.symbol.datawedge.api.EXTRA_PROFILENAME";
+	String setDefaultProfile = "com.symbol.datawedge.api.ACTION";
+	String extraData = "com.symbol.datawedge.api.SET_DEFAULT_PROFILE";
 
 	public void onResume() {
 	        // create the intent

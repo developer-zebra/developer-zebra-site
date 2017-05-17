@@ -5,31 +5,31 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## ACTION_SCANNERINPUTPLUGIN
+## SCANNER_INPUT_PLUGIN
 
-Used to enable/disable the scanner plug-in being used by the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile, regardless of whether the Profile is associated with an app. **Valid only when Barcode Input is enabled in the active Profile**. 
+Used to enable/disable the scanner Plug-in being used by the currently active Profile. Disabling the scanner plug-in effectively disables scanning in that Profile, regardless of whether the Profile is associated with an app. **Functional only when Barcode Input is enabled in the active Profile**. 
 
 **Note: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile**. 
 
 ### Function Prototype
 
 	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN");
-	i.putExtra("com.symbol.datawedge.api.EXTRA_PARAMETER", "<parameter>");
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN", "<parameter>");
 
 
 ### Parameters
 
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN"
+**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.EXTRA_PARAMETER"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN"
 
 **&lt;parameter**&gt;: The parameter as a string, using either of the following:
 
-* "ENABLE_PLUGIN" - enables the plug-in
-* "DISABLE_PLUGIN" - disables the plug-in
+* `ENABLE_PLUGIN` - enables the plug-in
+* `DISABLE_PLUGIN` - disables the plug-in
 
-###Return Values
+### Return Values
 (None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -43,8 +43,8 @@ Error messages are logged for invalid actions and parameters.
 ### Example
 
 	// define action and data strings
-	String scannerInputPlugin = "com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN";
-	String extraData = "com.symbol.datawedge.api.EXTRA_PARAMETER";
+	String scannerInputPlugin = "com.symbol.datawedge.api.ACTION";
+	String extraData = "com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN";
 
 	public void onResume() {
 	        

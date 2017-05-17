@@ -5,7 +5,7 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## ACTION_SWITCHTOPROFILE
+## SWITCH_TO_PROFILE
 
 The `SwitchToProfile` API Action can be used to switch to the specified Profile, **as long as that Profile is not already associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
 
@@ -36,15 +36,15 @@ When ActivityA (or ActivityB) comes back to the foreground it will use `SwitchTo
 ### Function Prototype
 
 	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE");
-	i.putExtra("com.symbol.datawedge.api.EXTRA_PROFILENAME", "<profile name>");
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_TO_PROFILE", "<profile name>");
 
 ### Parameters
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE"
+**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.EXTRA_PROFILENAME"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_TO_PROFILE"
 
-**&lt;profile name**&gt;: The Profile name to switch to as a string (case-sensitive).
+**&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the active Profile.
 
 ###Return Values
 (None)
@@ -58,8 +58,8 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 
 ### Example
 	// define action and data strings
-	String switchToProfile = "com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE";
-	String extraData = "com.symbol.datawedge.api.EXTRA_PROFILENAME";
+	String switchToProfile = "com.symbol.datawedge.api.ACTION";
+	String extraData = "com.symbol.datawedge.api.SWITCH_TO_PROFILE";
 
 	public void onResume() {
 	        super.onResume();

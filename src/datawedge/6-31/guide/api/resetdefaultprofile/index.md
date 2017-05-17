@@ -5,7 +5,7 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## ACTION_RESETDEFAULTPROFILE
+## RESET_DEFAULT_PROFILE
 
 Can be used to reset the default Profile to Profile0.
 
@@ -13,15 +13,15 @@ Can be used to reset the default Profile to Profile0.
 
 	:::javascript
 	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION_RESETDEFAULTPROFILE");
-	i.putExtra("com.symbol.datawedge.api.EXTRA_PROFILENAME");
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.RESET_DEFAULT_PROFILE");
 
 
 ###Parameters
 
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION_RESETDEFAULTPROFILE"
+**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.EXTRA_PROFILENAME"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.RESET_DEFAULT_PROFILE"
 
 ### Return Values
 (None)
@@ -36,7 +36,8 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 ### Example
 
 	// define action string
-	String resetDefaultProfile = "com.symbol.datawedge.api.ACTION_RESETDEFAULTPROFILE";
+	String resetDefaultProfile = "com.symbol.datawedge.api.ACTION";
+	String extraData = "com.symbol.datawedge.api.RESET_DEFAULT_PROFILE";
 
 	public void onResume() {
 	        // create the intent

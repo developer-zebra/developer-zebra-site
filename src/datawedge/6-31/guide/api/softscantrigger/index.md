@@ -5,22 +5,22 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## ACTION_SOFTSCANTRIGGER 
+## SOFT_SCAN_TRIGGER 
 
-Used to start, stop or toggle a software scanning trigger. **Valid only when Barcode Input is enabled in the active Profile**.  
+Used to start, stop or toggle a software scanning trigger. **Functional only when Barcode Input is enabled in the active Profile**.
 
 ### Function Prototype
 
 	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER");
-	i.putExtra("com.symbol.datawedge.api.EXTRA_PARAMETER", "<parameter>");
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SOFT_SCAN_TRIGGER", "<parameter>");
 
 
 ### Parameters
 
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER"
+**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.EXTRA_PARAMETER"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SOFT_SCAN_TRIGGER"
 
 **&lt;parameter&gt;**: The parameter as a string, using any of the following: 
 
@@ -43,8 +43,8 @@ Error messages are logged for invalid actions and parameters.
 ### Example
 
 	// define action and data strings
-	String softScanTrigger = "com.symbol.datawedge.api.ACTION_SOFTSCANTRIGGER";
-	String extraData = "com.symbol.datawedge.api.EXTRA_PARAMETER";
+	String softScanTrigger = "com.symbol.datawedge.api.ACTION";
+	String extraData = "com.symbol.datawedge.api.SOFT_SCAN_TRIGGER";
 	
 	// create the intent
 	Intent i = new Intent();

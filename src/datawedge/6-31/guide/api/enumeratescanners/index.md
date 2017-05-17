@@ -5,17 +5,18 @@ product: DataWedge
 productversion: '6.3'
 ---
 
-## ACTION_ENUMERATESCANNERS
+## ENUMERATE_SCANNERS
 
 Used to get the list of scanners available on the device.
 
 ### Function Prototype
 
 	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION_ENUMERATESCANNERS");
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
 
 ### Parameters
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION_ENUMERATESCANNERS"
+**ACTION** [String]: "com.symbol.datawedge.api.ENUMERATE_SCANNERS"
 
 ### Return Values
 The enumerated list of scanners is returned via the broadcast intent `com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST`. The list of scanners is returned as a string array (see example below).
@@ -29,11 +30,13 @@ Error messages are logged for invalid actions and parameters.
 
 ### Example
 
-	// First send the intent to enumerate the available scanners on the device
+	// First send the intents to enumerate the available scanners on the device
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
 	
 	// define action string:
-	String enumerateScanners = "com.symbol.datawedge.api.ACTION_ENUMERATESCANNERS";
-	
+	String enumerateScanners = "com.symbol.datawedge.api.ACTION";
+
 	// create the intent:
 	Intent i = new Intent();
 	
@@ -44,7 +47,7 @@ Error messages are logged for invalid actions and parameters.
 	context.this.sendBroadcast(i);
 
 	// enable the app to receive the enumerated list of available scanners:
-	String enumeratedList = "com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST";
+	String enumeratedList = "com.symbol.datawedge.api.ACTION";
 	String KEY_ENUMERATEDSCANNERLIST = "DWAPI_KEY_ENUMERATEDSCANNERLIST";
 
 	// create a filter for the broadcast intent

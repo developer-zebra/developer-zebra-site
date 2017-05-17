@@ -47,7 +47,7 @@ Returns a bundle with status of the requested DataWedge `NOTIFICATION_TYPE`
  * NOTIFICATION_TYPE: "SCANNER_STATUS" 
  * SCANNER_STATUS: WAITING, SCANNING, CONNECTED, DISCONNECTED or DISABLED
 
-> **Notifications are sent <u>only if the scanner in the active Profile is enabled</u>**. 
+> **Scanner status notifications are sent <u>only if the scanner in the active Profile is enabled</u>**. 
 
 **WAITING** – Scanner is enabled and ready to scan. When profile is switched and the scanner is enabled and waiting for trigger or soft scan intent.  When this event is received to the application it can broadcast a Soft scan intent to start scanning. 
 

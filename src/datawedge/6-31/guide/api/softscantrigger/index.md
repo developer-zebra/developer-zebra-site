@@ -7,7 +7,9 @@ productversion: '6.3'
 
 ## SOFT_SCAN_TRIGGER 
 
-Used to start, stop or toggle a software scanning trigger. **Functional only when Barcode Input is enabled in the active Profile**.
+Used to start, stop or toggle a software scanning trigger. 
+
+> **Functional only when Barcode Input is enabled in the active Profile**.
 
 ### Function Prototype
 

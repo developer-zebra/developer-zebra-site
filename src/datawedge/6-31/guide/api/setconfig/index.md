@@ -102,6 +102,10 @@ Error messages are logged for invalid actions and parameters
 	Bundle bParams = new Bundle();
 	bParams.putString("current-device-id","0");
 	bParams.putString("scanner_input_enabled","true");
+	// 
+	// NOTE: The "current-device-id" can vary by device; it depends on the number of
+	// supported scanners (internal and/or external) installed and/or connected to the device.    
+	// 
 
 	//PUT bParams into bConfig
 	bConfig.putBundle("PARAM_LIST", bParams);
@@ -191,8 +195,8 @@ Error messages are logged for invalid actions and parameters
 </td>
 </tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
-<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">ScannerSelection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index no.)</span></p></td></tr>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">ScannerSelection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index no.)</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upca</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upce0</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_ean13</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>

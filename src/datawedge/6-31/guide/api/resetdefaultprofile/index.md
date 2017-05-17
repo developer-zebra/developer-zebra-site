@@ -7,7 +7,7 @@ productversion: '6.3'
 
 ## RESET_DEFAULT_PROFILE
 
-Can be used to reset the default Profile to Profile0.
+Used to reset the default Profile to Profile0.
 
 ### Function Prototype
 

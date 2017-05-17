@@ -7,9 +7,7 @@ productversion: '6.3'
 
 ## SET_DEFAULT_PROFILE
 
-The `setDefaultProfile` API function can be used to set the specified Profile as the default Profile.
-
-**A Profile specified using this method MUST NOT already be associated with another application**. 
+Used to set the specified Profile as the default Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
 
 ### About Default Profile
 **Profile0** is a generic Profile that automatically takes effect for any app that comes to the foreground that has not been associated with DataWedge. 

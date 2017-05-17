@@ -7,7 +7,7 @@ productversion: '6.3'
 
 ## SWITCH_TO_PROFILE
 
-The `SwitchToProfile` API Action can be used to switch to the specified Profile, **as long as that Profile is not already associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
+Used to switch to the specified Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
 
 ### Profiles Recap
 DataWedge is based on Profiles and Plug-ins. A Profile contains information about how DataWedge will behave with a given application.
@@ -27,11 +27,11 @@ Using Profiles, each application can have a specific DataWedge configuration. Fo
 A single Profile can be associated with one or more activities or apps. However, an activity can be associated with no more than one Profile. 
 
 ### Usage Scenario
-Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses `SwitchToProfile` to activate ProfileB. Similarly, when ActivityB launches it uses `SwitchToProfile` to activate ProfileM.
+Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses `SWITCH_TO_PROFILE` to activate ProfileB. Similarly, when ActivityB launches it uses `SWITCH_TO_PROFILE` to activate ProfileM.
 
 If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
 
-When ActivityA (or ActivityB) comes back to the foreground it will use `SwitchToProfile` to reset the Profile back to ProfileB (or ProfileM).
+When ActivityA (or ActivityB) comes back to the foreground it will use `SWITCH_TO_PROFILE` to reset the Profile back to ProfileB (or ProfileM).
 
 ### Function Prototype
 
@@ -84,9 +84,9 @@ DataWedge has a one-to-one relationship between Profiles and activities; a Profi
 
 This API function activates such Profiles.
 
-For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses the `SwitchToProfile` function to switch to ProfileA, then ProfileA will be active whenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
+For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses the `SWITCH_TO_PROFILE` function to switch to ProfileA, then ProfileA will be active whenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
 
-When activity A returns to the foreground, the app must use `SwitchToProfile` again to switch back to ProfileA. This would be done in the `onResume` method of activity A.
+When activity A returns to the foreground, the app must use `SWITCH_TO_PROFILE` again to switch back to ProfileA. This would be done in the `onResume` method of activity A.
 
 ### Notes
 * Because DataWedge will automatically switch Profile when the activity is paused, Zebra recommends that this API function be called from the onResume method of the activity.

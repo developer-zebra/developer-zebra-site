@@ -6,11 +6,11 @@ automenu:
   items:
     - title: General Information
       items:
-        - title: API Overview 
+        - title: How to Use DataWedge APIs 
           url: overview
         - title: Code Samples
           url: samples
-        - title: Tutorials
+        - title: API Tutorials
           url: tutorials
     - title: DataWedge APIs
       items:
@@ -24,8 +24,6 @@ automenu:
           url: enabledatawedge
         - title: Enumerate Scanners 
           url: enumeratescanners
-        - title: Get Config 
-          url: getconfig
         - title: Get Active Profile 
           url: getactiveprofile
         - title: Get DataWedge Status 
@@ -54,7 +52,13 @@ automenu:
           url: switchtoprofile
 ---
 
+
 <!-- 
+
+        - title: Get Config 
+          url: getconfig
+
+
 title: DataWedge APIs
 description: DataWedge APIs operate primarily through Android intents, which can be invoked by other applications to control the data-capture capabilities of DataWedge without the need to directly access APIs of the underlying device hardware. 
 layout: list-content-items.html

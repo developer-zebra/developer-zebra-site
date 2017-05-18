@@ -58,7 +58,7 @@ Error messages are logged for invalid actions and parameters.
 					String activeProfile = extras.getString("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
 
 
-	// Register/unregister broadcast receiver 
+	// Register/unregister broadcast receiver and filter results
 
 		void registerReceivers() {
 		    IntentFilter filter = new IntentFilter();

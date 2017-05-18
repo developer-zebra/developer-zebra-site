@@ -21,7 +21,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_CONFIG"
 
-**EXTRA VALUE** [String]: "&lt;profile name&gt;"
+**EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
 
 ### Return Values
 Returns an array of parameter name/value pairs. 

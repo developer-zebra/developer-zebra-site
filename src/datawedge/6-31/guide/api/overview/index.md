@@ -49,6 +49,7 @@ For intents that query DataWedge for information (such as in "GET_ACTIVE_PROFILE
 					String activeProfile = extras.getString("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
 
 
+<!--
 ### APIs Implemented Through Extras
 
 The following APIs can be invoked as extras from a single intent action:
@@ -65,8 +66,6 @@ The following APIs can be invoked as extras from a single intent action:
 * **[RENAME_PROFILE](../renameprofile) -** changes the name of an existing Profile. 
 * **[SET_CONFIG](../setconfig) -** create new, or overwrite or update an existing Profile 
 * **[UNREGISTER_FOR_NOTIFICATION](../registerfornotification) -** cancels request for app notification.
-
-<!-- 
 
 ### APIs Implemented as Actions
 

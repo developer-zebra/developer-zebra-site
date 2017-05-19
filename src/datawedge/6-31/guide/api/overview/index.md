@@ -10,6 +10,9 @@ DataWedge APIs operate primarily through Android intents--specific commands that
 
 In DataWedge versions prior to 6.2, applications access DataWedge APIs by broadcasting an intent, and use the primary pieces of information in the intent (action and data) to specify which API function to perform. DataWedge 6.2 and later implement intents as extras of an action intent, permitting multiple API calls to be sent as extras using a single intent action. 
 
+#### Requirements
+The use of DataWedge APIs requires experience with Java programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../../setup) and the [Architecture Overview](../../overview). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
+
 ### Sending Intents
 The new syntax defined in DataWedge 6.2 permits multiple DataWedge API calls as extras on a single intent action. The syntax is as follows:
 
@@ -88,9 +91,6 @@ The following API calls require a distinct intent action for each:
 * `DISABLE_PLUGIN` - immediately disables the current scanner input plug-in
 
 To help ensure proper execution, Zebra recommends inserting delay code prior to critical commands. See the [SoftScanTrigger](../softscantrigger) API for an example.  
-
-### Requirements
-The use of DataWedge APIs requires experience with Java programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../../setup) and the [Architecture Overview](../../overview). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
 
 ### Nested Bundles
 DataWedge 6.3 implements the concept of nested bundles, which allows a "bundle" of values to be included as one value in another bundle. Bundles also can be multiple layers deep. For example, the image below illustrates a `PARAM_LIST` bundle nested within the `PLUGIN_CONFIG[0]` bundle nested within the API call `SET_CONFIG`. Nesting is required to configure with intents the many parameters contained in a Profile.

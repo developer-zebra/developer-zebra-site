@@ -32,7 +32,7 @@ automenu:
           url: getprofileslist
         - title: Get Version Info 
           url: getversioninfo
-        - title: Register for Notification 
+        - title: Register/Unregister for Notification 
           url: registerfornotification
         - title: Rename Profile 
           url: renameprofile

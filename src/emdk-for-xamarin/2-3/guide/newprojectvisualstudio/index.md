@@ -8,7 +8,7 @@ productversion: '2.3'
 ##Prerequisites
 Before creating a project in Visual Studio you must have installed the following items:
 
-* Visual Studio 2013 or higher
+* Visual Studio 2013 or 2015
 * [Xamarin Platform](http://xamarin.com/download)
 
 #Create a new project

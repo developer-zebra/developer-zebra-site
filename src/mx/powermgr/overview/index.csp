@@ -17,6 +17,7 @@ The PowerMgr allows an app to perform certain OS- and power-related actions on t
 * Perform a Factory Reset on a Device
 * Wipe a Device (and erase all cards) 
 * Update the OS on a Device
+* Perform multiple updates in a single step 
 
 ### Sleep Mode
 
@@ -57,6 +58,6 @@ The Full Device Wipe is intended to return the device to its condition as it wou
 
 ### OS Update
 
-The OS Update allows the device operating system to be replaced or patched using a specified OS Update Zip File. Depending on the contents of the file, this process also can be used to perform an Enterprise Reset, Factory Reset or Full Device Wipe to facilitate the installation of the update or patch contained in the file. 
+The OS Update allows the device operating system to be replaced or patched using a specified OS Update Zip File or a text file containing a list of OS updates and/or patches. Depending on the contents of the file(s), this process also can be used to perform an Enterprise Reset, Factory Reset or Full Device Wipe to facilitate the installation of the update or patch contained in the file(s). 
 
 **Note: This Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 

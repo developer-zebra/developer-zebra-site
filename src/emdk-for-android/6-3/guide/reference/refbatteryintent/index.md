@@ -119,7 +119,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td>Int</td>
 		<td>Units=mAh</td>
 		<td>X</td>
-		<td> </td>
+		<td>X</td>
 		<td> </td>	
 	</tr>
 	<tr>

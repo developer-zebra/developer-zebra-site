@@ -23,26 +23,28 @@ products:
       - url: https://developer.zebra.com/docs/DOC-3040
         label: '3.0'
   - title: DataWedge
-    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
-    url: /datawedge/6-2/guide/about
+    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
+    url: /datawedge/6-3/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/6-2/guide/about
+        url: /datawedge/6-3/guide/about
       - title: Setup
-        url: /datawedge/6-2/guide/setup
+        url: /datawedge/6-3/guide/setup
       - title: Advanced
-        url: /datawedge/6-2/guide/advanced
+        url: /datawedge/6-3/guide/advanced
       - title: Decoders
-        url: /datawedge/6-2/guide/decoders
+        url: /datawedge/6-3/guide/decoders
       - title: IP Output
-        url: /datawedge/6-2/guide/ipwedge
+        url: /datawedge/6-3/guide/ipwedge
       - title: APIs
-        url: /datawedge/6-2/guide/api
+        url: /datawedge/6-3/guide/api
       - title: Demo
-        url: /datawedge/6-2/guide/demo
+        url: /datawedge/6-3/guide/demo
     versions:
+      - url: datawedge/6-3/guide/about
+        label: '6.3'      
       - url: datawedge/6-2/guide/about
         label: '6.2'
       - url: datawedge/6-0/guide/about
@@ -51,23 +53,25 @@ products:
         label: '5.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-3/guide/about
+    url: /emdk-for-android/6-4/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Getting Started
-        url: /emdk-for-android/6-3/guide/gettingstarted
+        url: /emdk-for-android/6-4/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-3/tutorial/
+        url: /emdk-for-android/6-4/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-3/samples
+        url: /emdk-for-android/6-4/samples
       - title: Guides
-        url: /emdk-for-android/6-3/guide/programming-guides
+        url: /emdk-for-android/6-4/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-3/guide/profile-manager-guides
+        url: /emdk-for-android/6-4/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-3/api
+        url: /emdk-for-android/6-4/api
     versions:
+      - url: emdk-for-android/6-4/guide/about/
+        label: '6.4'
       - url: emdk-for-android/6-3/guide/about/
         label: '6.3'
       - url: emdk-for-android/6-0/guide/about/
@@ -80,25 +84,27 @@ products:
         label: '4.0'
   - title: EMDK For Xamarin
     description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
-    url: /emdk-for-xamarin/2-3/guide/about
+    url: /emdk-for-xamarin/2-4/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
       - title: About
-        url: /emdk-for-xamarin/2-3/guide/about
+        url: /emdk-for-xamarin/2-4/guide/about
       - title: Getting Started
-        url: /emdk-for-xamarin/2-3/guide/gettingstarted
+        url: /emdk-for-xamarin/2-4/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-3/tutorial/
+        url: /emdk-for-xamarin/2-4/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-3/samples
+        url: /emdk-for-xamarin/2-4/samples
       - title: Guides
-        url: /emdk-for-xamarin/2-3/guide/programming-guides
+        url: /emdk-for-xamarin/2-4/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-3/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-4/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-3/api
+        url: /emdk-for-xamarin/2-4/api
     versions:
+      - url: emdk-for-xamarin/2-4/guide/about/
+        label: '2.4'
       - url: emdk-for-xamarin/2-3/guide/about/
         label: '2.3'
       - url: emdk-for-xamarin/2-2/guide/about/

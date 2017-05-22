@@ -10,7 +10,7 @@ This document contains step by step instructions for using EMDK Api's in a new X
 ##Prerequisites
 Before starting this tutorial you must install the following software.
 
-- Visual Studio 2013 or later
+- Visual Studio 2013 or 2015
 - [Xamarin Plaform](http://xamarin.com/download)
 - [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-3/guide/vs/setup/)
 

@@ -8,7 +8,7 @@ productversion: '6.3'
 ## Overview
 **Magnetic Stripe Reader (MSR) Input** is used to acquire data from a "mag-stripe" card such as a credit or debit card. The information stored on the black magnetic strip is transferred to the device when the card is "swiped" through the MSR. Information is encoded in an open format using the ANSI x4.16 standard and usually relates to the carrier's identity and/or financial institution. DataWedge can acquire and output the raw data from most cards that use the ANSI x4.16 format. For cards that also adhere to [ISO/ABA specifications](https://www.magtek.com/content/documentationfiles/d99800004.pdf) published by the ISO and American Bankers Association, developers can opt to enable Zebra encryption, which protects data immediately upon acquisition and at all times thereafter. Once enabled on a Zebra device, **encryption cannot be disabled**. 
 
-Under the [ANSI magnetic stripe standard](https://www.magtek.com/content/documentationfiles/d99800004.pdf), data is stored on the card in three tracks. Unencrypted data can be acquired from any of the individual tracks or from all three at once. The same is true of data encrypted using Zebra's Enhanced Mode encryption. Zebra Original Mode encryption treats all three tracks as a single entity. Data encrypted using Original Mode must therefore be acquired all at once, and any required parsing be done manually. 
+Under the [ANSI magnetic stripe standard](https://www.magtek.com/content/documentationfiles/d99800004.pdf), data is stored on the card in three tracks. Unencrypted data can be acquired from any of the individual tracks or from all three at once. The same is true of data encrypted using Zebra's Enhanced Mode encryption. Zebra Original Mode encryption treats all three tracks as a single entity.  
 
 <img style="height:350px" src="msr_encryption_modes.png"/>
 _The three modes of MSR card encoding, two of which include encryption_
@@ -17,9 +17,9 @@ _The three modes of MSR card encoding, two of which include encryption_
 
 #### Enabling Encryption
 
-**<u>Enabling encryption on a device cannot be undone</u>**. Once a device has been configured to encrypt ISO/ABA data, it can never again be configured to output raw ISO/ABA data; switching between Original and Enhanced encryption modes is the only permitted change. This applies only to ISO/ABA data; all other MSR-acquired data is output using Non-ISO Mode. 
+**<u>Enabling encryption on a device cannot be undone</u>**. Once a device has been configured to encrypt ISO/ABA data, it can never again be configured to output raw ISO/ABA data; switching between Original and Enhanced encryption modes is the only permitted change on such devices. <u>Encryption applies only to ISO/ABA data</u>; all other MSR-acquired data is output in unencrypted form using Non-ISO Mode. 
 
-For details about enabling encryption and working with encrypted data, refer to the [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2). 
+To learn how to enable encryption and work with encrypted data, refer to the [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2). 
 
 #### Compatible Zebra Devices
 The following Zebra devices can use DataWedge to acquire (and optionally encrypt) MSR data: 
@@ -137,7 +137,7 @@ The tag above returns all data readable from the card. The table below lists the
 <tr class="Table22"><td style="text-align:left;width:2.8743in; " class="Table2_A4"><p class="P21"><span class="T26">Track 1 Masked Data (ASCII)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B4"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track1</span></p></td></tr>
 <tr class="Table22" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8743in; " class="Table2_A9"><p class="P21"><span class="T26">Track 2 Masked Data (ASCII)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B9"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track2</span></p></td></tr>
 <tr class="Table22"><td style="text-align:left;width:2.8743in; " class="Table2_A4"><p class="P21"><span class="T26">Track 3 Masked Data (ASCII)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B4"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track3</span></p></td></tr>
-<tr class="Table22" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8743in; " class="Table2_A11"><p class="P21"><span class="T26">All MSR Data (see Field Table for details)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B11"><p class="P23"><span class="T27">com.symbol.datawedge.msr_data</span></p></td></tr>
+<tr class="Table22" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8743in; " class="Table2_A11"><p class="P21"><span class="T26"><strong>All MSR Data (see Field table for details)</strong></span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B11"><p class="P23"><span class="T27">com.symbol.datawedge.msr_data</span></p></td></tr>
 <tr class="Table22"><td style="text-align:left;width:2.8743in; " class="Table2_A4"><p class="P21"><span class="T26">Track 1 Encrypted Data (HEX)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B4"><p class="P23"><span class="T26">com.symbol.datawedge.msr_track1_encrypted</span></p></td></tr>
 <tr class="Table22" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8743in; " class="Table2_A13"><p class="P21"><span class="T26">Track 2 Encrypted Data (HEX)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B13"><p class="P23"><span class="T26">com.symbol.datawedge.msr_track2_encrypted</span></p></td></tr>
 <tr class="Table22"><td style="text-align:left;width:2.8743in; " class="Table2_A4"><p class="P21"><span class="T26">Track 3 Encrypted Data (HEX)</span></p></td><td style="text-align:left;width:3.5625in; " class="Table2_B4"><p class="P23"><span class="T26">com.symbol.datawedge.msr_track3_encrypted</span></p></td></tr>
@@ -183,11 +183,9 @@ The tag above returns all data readable from the card. The table below lists the
 
 ## Original Mode
 
-Zebra original Mode encrypts data on the three tracks as a single entity, preventing track data from be handled separately. Tags for obtaining the data are shown below. 
+Zebra Original Mode encrypts data on the three tracks as a single entity, preventing track data from be handled separately except as contained in the tags described below, which Zebra created as a convenience according to the most common use cases. All readable data from all three tracks on the card is placed in the tag `com.symbol.datawedge.msr_data` and can be parsed as desired by the developer.  
 
-**MSR data from <u>all three tracks</u> is contained in the tag**: `com.symbol.datawedge.msr_data`
-
-The tag above returns all data readable from the card. The table below lists the data fields contained in the tag.
+The table below lists the data fields contained in the tag.
 
 ### Original Mode Field-to-Tag Mapping
 <table border="0" cellspacing="0" cellpadding="0" class="Table3"><colgroup><col width="312"/><col width="402"/></colgroup><tr class="Table31" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8125in; " class="Table3_A1"><p class="P22"><span class="T18"><strong>Card Data Field</strong></span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_A1"><p class="P22"><span class="T18"><strong>Maps to DataWedge Tag</strong></span></p></td></tr>
@@ -197,7 +195,7 @@ The tag above returns all data readable from the card. The table below lists the
 <tr class="Table32" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8125in; " class="Table3_A5"><p class="P21"><span class="T26">Track 1 Masked Data (ASCII)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B5"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track1</span></p></td></tr>
 <tr class="Table32"><td style="text-align:left;width:2.8125in; " class="Table3_A4"><p class="P21"><span class="T26">Track 2 Masked Data (ASCII)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B4"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track2</span></p></td></tr>
 <tr class="Table32" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8125in; " class="Table3_A7"><p class="P21"><span class="T26">Track 3 Masked Data (ASCII)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B7"><p class="P23"><span class="T27">com.symbol.datawedge.msr_track3</span></p></td></tr>
-<tr class="Table32"><td style="text-align:left;width:2.8125in; " class="Table3_A4"><p class="P21"><span class="T26">All MSR Data (see Field Table for details)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B4"><p class="P23"><span class="T27">com.symbol.datawedge.msr_data</span></p></td></tr>
+<tr class="Table32"><td style="text-align:left;width:2.8125in; " class="Table3_A4"><p class="P21"><span class="T26"><strong>All MSR Data (see Field table for details)</strong></span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B4"><p class="P23"><span class="T27">com.symbol.datawedge.msr_data</span></p></td></tr>
 <tr class="Table32" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8125in; " class="Table3_A9"><p class="P21"><span class="T26">Track 1 Encrypted Data (HEX)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B9"><p class="P23"><span class="T26">com.symbol.datawedge.msr_track1_encrypted</span></p></td></tr>
 <tr class="Table32"><td style="text-align:left;width:2.8125in; " class="Table3_A4"><p class="P21"><span class="T26">Track 2 Encrypted Data (HEX)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B4"><p class="P23"><span class="T26">com.symbol.datawedge.msr_track2_encrypted</span></p></td></tr>
 <tr class="Table32" bgcolor="#e0e0eb"><td style="text-align:left;width:2.8125in; " class="Table3_A11"><p class="P21"><span class="T26">Track 3 Encrypted Data (HEX)</span></p></td><td style="text-align:left;width:3.6243in; " class="Table3_B11"><p class="P23"><span class="T26">com.symbol.datawedge.msr_track3_encrypted</span></p></td></tr>

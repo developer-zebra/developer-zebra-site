@@ -7,7 +7,7 @@ productversion: '6.3'
 
 ## SET_CONFIG
 
-Used to create, update or replace a DataWedge Profile and its settings. Supports [nested bundles](../overview/#nestedbundles). 
+Used to create, update or replace a DataWedge Profile and its settings. Supports [nested bundles](../overview/#nestedbundles). To create a Profile without configuring its settings parameters, see [CREATE_PROFILE](../createprofile).
 
 ### Function Prototype
 

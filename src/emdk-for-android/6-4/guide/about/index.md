@@ -33,15 +33,55 @@ The following software must be installed prior to using the EMDK for Android.
 
 
 ## Devices Supported
-
-## Devices Not - Supported
-
+* ET5X   - Lollipop
+* MC18   - KitKat
+* MC40   - KitKat 
+* MC67   - KitKat	 
+* MC92   - KitKat 
+* TC51   - Marshmallow
+* TC55   - KitKat	 
+* TC56   - Marshmallow
+* TC70   - KitKat, Lollipop
+* TC70x  - Marshmallow
+* TC75   - KitKat, Lollipop
+* TC75x  - Marshmallow
+* TC8000 - KitKat,Lollipop
+* WT6000 - Lollipop
 
 
 ## Important News
 
+* **EMDK OS update package support limited to KitKat devices** - The EMDK v6.4 OS update package distributed with the PC/MAC installation will only support installation on KitKat devices. For all Lollypop+ devices, the EMDK update for a specific device will be distributed with the latest BSP or security incremental patch.
+* **EMDK for Android support for all Jelly Bean (Android 4.1.2) and TC70 KitKat (Android 4.4.2) BSP version 112414 devices has been terminated** - Starting from EMDK for Android v6.0, KitKat and higher OS versions (except TC70 KitKat BSP version 112414) are supported. EMDK for Android v5.0 will continue to support Jelly Bean and TC70 KitKat BSP version 112414 devices.
+* **EMDK for Android support for Payment APIs is terminated** - The EMDK for Android v5.0 is the only version that supports Payment APIs.
+* **Support for ProfileConfig class has been deprecated** - The ProfileConfig class which can be used to access the profile data has been deprecated. It is recommended to use the name-value pair function of Profile Manager feature. The Profile XML can also be directly modified. Refer to the Clock Sample for information on modifying Profile XML data.
+* **Support for ContinuousRead class is deprecated** - The ContinuousRead class which can be used to enable the continuous scanning has been deprecated. It is recommended to use the aimType, sameSymbolTimeout, differentSymbolTimeout of camera, imager and laser specific reader parameters.
+* **Support for picklist field is deprecated** - The picklist field used for enabling the picklist mode has been deprecated and it is replaced by the field picklistEx.
+
 
 ## What's New
+
+* Added support for MX v6.3 in Profile Manager:
+	* Bug Report Manager – Added new custom bug reporting feature for gathering software bug reports in addition to the standard Android bug reporting mechanism.
+	* Cellular Manager – Added new feature to enable/disable mobile data and set the data usage limit.
+	* DHCP Manager – Added new feature to enable/disable features such as client identifier, FQDN and add custom DHCP options such as Vendor Specific 230.
+	* Remote Scanner Manager – Added support for DS3678 Bluetooth scanner with the features such as firmware update, paging.
+	* Touch Manager – Added Touch Mode support for ET5x devices.
+* Added support for Android Studio v2.3.
+* Enhanced Barcode Manager API with the following features:
+	* Added support for new Bluetooth Scanner DS3678:
+	* Added new enum under BarcodeManager.DeviceIdentifier for selecting the DS3678 Bluetooth Scanner.
+	* Added support to enable/disable automatic re-connection after DS3678 scanner reboot. Refer to the parameter “ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific.pairAfterScannerReboot” for details.
+* Enhanced SimulScan API with the following features:
+	* Added new API to fetch the template from the SimulScan Template Build Server.
+	* Added support for additional status information to get more details about states such as IDLE, ERROR.
+* Enhanced DataCapture feature in the Profile Manager:
+	* Added support for new Bluetooth Scanner DS3678:
+	* Added support selecting the DS3678 Bluetooth Scanner.
+	* Added support to enable/disable automatic re-connection after DS3678 scanner reboot. Refer to the parameter “Keep Pairing Info After Reboot” for details.
+* `Fixed:` NotificationDevice.release() fails after re-connection of RS6000 if BarcodeManager.addconnectionlistener() is called.
+* `Fixed:` The vibrating functionality will continue for the remaining period when the External Vibrator accessory is disconnected and reconnected.
+
 
 
 ## Components

@@ -1,6 +1,6 @@
 ---
 title: DataWedge APIs
-description: description of APIs here. 
+description: DataWedge APIs operate primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the DataWedge UI.  
 layout: list-apis.html
 automenu:
   items:

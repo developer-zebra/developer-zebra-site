@@ -1,5 +1,5 @@
 ---
-title: Ennumerate Scanners 
+title: Enumerate Scanners 
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
@@ -7,7 +7,7 @@ productversion: '6.3'
 
 ## ENUMERATE_SCANNERS
 
-Used to get the list of scanners available on the device.
+Generates a numbers list (index) of scanners available on the device. **The scanner index varies by device; it depends on the number of supported scanners (internal and/or external) installed and/or connected to the device at the time the index is generated**. 
 
 ### Function Prototype
 

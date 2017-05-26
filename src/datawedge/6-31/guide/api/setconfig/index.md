@@ -45,16 +45,16 @@ The PLUGIN_CONFIG bundle is configured using the following properties:
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure. See tables below for `PARAM_LIST` values. 
 
  * BARCODE input
+ * INTENT output
  * KEYSTROKE output
 
 To be implemented in the future: 
+  * ADF (advanced data formatting) processing 
+  * BDF (basic data formatting) processing 
+  * DCP input
+  * IP output
   * MSR input
   * SIMULSCAN input 
-  * DCP input
-  * BDF (basic data formatting) processing 
-  * ADF (advanced data formatting) processing 
-  * INTENT output
-  * IP output
 
 **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
 
@@ -62,6 +62,18 @@ To be implemented in the future:
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
 * **BARCODE –** Use values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **INTENT -** Use values as indicated below: 
+
+ `intent_output_enabled` [string] &lt;true/false&gt;
+
+ `intent_action` [string]
+
+ `intent_category` [string]  
+
+ `intent_delivery` [integer] 0=Start Activity, 1=Start Service, 2=Broadcast
+
+<!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
+
 * **KEYSTROKE -** Use values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
 
 #### APP_LIST
@@ -70,9 +82,9 @@ An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST
 ##### APP_LIST BUNDLE
 Contains the following properties:
 
-**PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wild card ("*") character 
+**PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wild card (*) character 
 
-**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard ("*") character also supported.
+**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (*) character also supported.
 
 ### Return Values
 (None)
@@ -103,8 +115,9 @@ Error messages are logged for invalid actions and parameters
 	bParams.putString("current-device-id","0");
 	bParams.putString("scanner_input_enabled","true");
 	// 
-	// NOTE: The "current-device-id" can vary by device; it depends on the number of
-	// supported scanners (internal and/or external) installed and/or connected to the device.    
+	// NOTE: The "current-device-id" varies by device; it depends on the number of
+	// supported scanners (internal and/or external) installed and/or connected to 
+	// the device at the time the index is generated.     
 	// 
 
 	//PUT bParams into bConfig
@@ -196,7 +209,7 @@ Error messages are logged for invalid actions and parameters
 </tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">ScannerSelection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index no.)</span></p></td></tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">ScannerSelection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS</a>)</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upca</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upce0</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_ean13</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>

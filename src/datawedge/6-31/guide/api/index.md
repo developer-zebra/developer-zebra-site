@@ -8,10 +8,6 @@ automenu:
       items:
         - title: How to Use DataWedge APIs 
           url: overview
-        - title: Code Samples
-          url: samples
-        - title: API Tutorials
-          url: tutorials
     - title: DataWedge APIs
       items:
         - title: Clone Profile 
@@ -54,6 +50,12 @@ automenu:
 
 
 <!-- 
+
+       - title: Code Samples
+          url: samples
+        - title: API Tutorials
+          url: tutorials
+ 
 
         - title: Get Config 
           url: getconfig

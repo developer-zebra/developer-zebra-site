@@ -782,13 +782,10 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 **Related guides**:
 
-* Processing 
- * [Advanced Data Formatting](../../process/adf)
- * [Basic Data Formatting](../../process/bdf) 
-* Output
- * [Intent](../../output/intent) 
- * [Keystrokes](../../output/keystroke)
-
+* [Advanced Data Formatting](../../process/adf)
+* [Basic Data Formatting](../../process/bdf) 
+* [Intent Output](../../output/intent) 
+* [Keystroke Output](../../output/keystroke)
 * [Profiles/Plug-ins](../../profiles)
 * [DataWedge APIs](../../api) 
 

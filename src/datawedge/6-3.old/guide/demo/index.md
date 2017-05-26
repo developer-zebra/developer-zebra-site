@@ -47,6 +47,6 @@ Acquired data appears in the window, as below.
 _The DWDemo app showing two acquired values_. 
 <br>
 
-By making changes in the DWdemo Profile, the DWDemo app can be used to test different decoders, rules for processing acquired data and other DataWedge configuration variations. For information about changing Profile settings, see the [Profiles/Plug-ins page](../profiles).  
+By making changes in the DWdemo Profile, the DWDemo app can be used to test different decoders, rules for processing acquired data and other DataWedge configuration variations. For information about changing Profile settings, see the Profiles section of the [DataWedge Setup Guide](../setup) and the Advanced Data Formatting section of the [Advanced Settings Guide](../advanced).  
 
 

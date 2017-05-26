@@ -51,13 +51,4 @@ _Clipboard Options_.
 
 The PC is now ready to receive data from devices running DataWedge with the IP Output Plug-in (with IP address and port settings matching those of the PC). For device setup instructions, see "IP Output" in the [DataWedge Setup Guide](../setup). 
 
------
-
-**Related guides**:
-
-* [Profiles/Plug-ins](../../profiles)
-* [DataWedge APIs](../../api) 
-
-
-
 <!-- **Note: Profile0 cannot be used with IPWedge**. 10/18/16- removed per Tharindu -->

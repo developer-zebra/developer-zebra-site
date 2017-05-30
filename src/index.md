@@ -57,6 +57,8 @@ products:
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
+      - title: About
+        url: /emdk-for-android/6-4/guide/about
       - title: Getting Started
         url: /emdk-for-android/6-4/guide/gettingstarted
       - title: Tutorials
@@ -270,6 +272,13 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-
+menu:
+  items:
+    - title: About TechDocs
+      url: /techdocs/about
+    - title: Contact Us
+      url: /techdocs/contact
+    - icon: fa fa-search
+      url: /techdocs/search
 ---
 

@@ -344,7 +344,7 @@ Error messages will be logged for invalid actions and parameters.
 
 	// now we need to be able to receive the enumerate list of available scanners
 	String enumeratedList = "com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST";
-	String KEY_ENUMERATEDSCANNERLIST = "DataWedgeAPI_KEY_ENUMERATEDSCANNERLIST";
+	String KEY_ENUMERATEDSCANNERLIST = "DWAPI_KEY_ENUMERATEDSCANNERLIST";
 	// Create a filter for the broadcast intent
 	IntentFilter filter = new IntentFilter();
 	filter.addAction(enumeratedList);

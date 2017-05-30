@@ -16,25 +16,27 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 
 #### New in DataWedge 6.3
 
-**New APIs in DataWedge 6.3**: 
+**New APIs**: 
 
-* **RESTORE_CONFIG -** restores a DataWedge configuration to its default settings
-* **CREATE_PROFILE -** creates a new profile using settings specified in extras
-* **SET_CONFIG -** allows selection of plug-ins, profiles and app associations
-* **PROFILE_ENABLED -** controls the state of the specified profile
-* **INTENT_OUTPUT_ENABLED -** controls the state of the intent output plug-in
-* **GET_VERSION_INFO -** gets version numbers of DataWedge and of scanner and SimulScan frameworks 
-* **GET_DATAWEDGE_STATUS -** returns the DataWedge state (enabled/disabled) 
-* **REGISTER_FOR_NOTIFICATION -** tells DataWedge to inform specified app or activity of updates to scanner, active profile or profile status 
-* **UNREGISTER_FOR_NOTIFICATION -** cancels request for app notification
-* **NOTIFICATION -** contains information about changes to a scanner or profile
+* **[CLONE_PROFILE](../api/cloneprofile) -** creates a copy of an existing DataWedge Profile wuth settings.
+* **[DELETE_PROFILE](../api/deleteprofile) -** deletes Profile(s) from the device. 
+* **[ENABLE_DATAWEDGE](../api/enabledatawedge) -** switches DataWedge on or off. 
+* **[GET_ACTIVE_PROFILE](../api/getactiveprofile) -** retrieves the name of the Profile currently in use. 
+* **[GET_DATAWEDGE_STATUS](../api/getdatawedgestatus) -** returns the DataWedge state (enabled/disabled). 
+* **[GET_PROFILES_LIST](../api/getprofileslist) -** retrieves a list of DataWedge Profiles on the device.
+* **[GET_VERSION_INFO](../api/getversioninfo) -** gets version numbers of DataWedge and of scanner and SimulScan frameworks on the device. 
+* **[RESTORE_CONFIG](../api/restoreconfig) -** restores a DataWedge configuration to its default settings.
+* **[REGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** tells DataWedge to inform specified app or activity of updates to scanner and/or Profile status. 
+* **[RENAME_PROFILE](../api/renameprofile) -** changes the name of an existing Profile. 
+* **[SET_CONFIG](../api/setconfig) -** create new, or overwrite or update an existing Profile 
+* **[UNREGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** cancels request for app notification.
 
-**DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2** that can launch multiple intents in a single command. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge Data Capture API](../api) guide.
+**DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
 
-* Scan and process all [major barcode symbologies](../decoders)
+* Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
 * Acquire barcodes, images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to acquire scanned data for one or more apps
 * Create Profiles to implement specific DataWedge features for individual apps 
@@ -52,7 +54,7 @@ Availability and operation of DataWedge features varies by device and operating 
 
 <!-- _**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly. Please refer to Windows documentation**_. 10/20/16- Windows reference removed per eng. --> 
 
-> Ready to get started? Go to the [DataWedge Setup Guide](../setup).
+> Ready to get started? Go to the [DataWedge Setup guide](../setup).
 
 ### Which Version is Installed? 
 

@@ -9,15 +9,13 @@ menu:
       url: /datawedge/6-3/guide/about
     - title: Setup
       url: /datawedge/6-3/guide/setup
-    - title: Advanced
-      url: /datawedge/6-3/guide/advanced
-    - title: Parameters
-      url: /datawedge/6-3/guide/decoders
-    - title: IPWedge
-      url: /datawedge/6-3/guide/ipwedge
+    - title: Profiles
+      url: /datawedge/6-3/guide/profiles
+    - title: DataWedge Settings
+      url: /datawedge/6-3/guide/settings
     - title: APIs
       url: /datawedge/6-3/guide/api
-    - title: Demo
+    - title: Demo App
       url: /datawedge/6-3/guide/demo
     - icon: fa fa-comment
       url: https://developer.zebra.com/community/technologies/advanced-data-capture

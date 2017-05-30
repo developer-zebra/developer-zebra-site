@@ -11,8 +11,20 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 **The following devices have been tested and validated**:
 
-* 
-
+* ET5X   - Lollipop
+* MC18   - KitKat
+* MC40   - KitKat 
+* MC67   - KitKat	 
+* MC92   - KitKat 
+* TC51   - Marshmallow
+* TC55   - KitKat	 
+* TC56   - Marshmallow
+* TC70   - KitKat, Lollipop
+* TC70x  - Marshmallow
+* TC75   - KitKat, Lollipop
+* TC75x  - Marshmallow
+* TC8000 - KitKat,Lollipop
+* WT6000 - Lollipop
 
 
 ##What's New in Version 2.4

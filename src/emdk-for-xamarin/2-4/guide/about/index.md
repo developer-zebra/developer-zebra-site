@@ -17,4 +17,26 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 ##What's New in Version 2.4
 
+* Added support for MX v6.3 in Profile Manager:
+    * Bug Report Manager – Added new custom bug reporting feature for gathering software bug reports in addition to the standard Android bug reporting mechanism.
+    * Cellular Manager – Added new feature to enable/disable mobile data and set the data usage limit.
+    * DHCP Manager – Added new feature to enable/disable features such as client identifier, FQDN and add custom DHCP options such as Vendor Specific 230.
+    * Remote Scanner Manager – Added support for DS3678 Bluetooth scanner with the features such as firmware update, paging.
+    * Touch Manager – Added Touch Mode support for ET5x devices.
+* Enhanced Barcode Manager API with the following features:
+    * Added support for new Bluetooth Scanner DS3678:
+        * Added new enum value "BLUETOOTH_IMAGER_DS3678" under BarcodeManager.DeviceIdentifier for selecting this scanner.
+        * Added new reader parameter “pairAfterScannerReboot” in ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific to enable/disable automatic reconnection after DS3678 scanner reboot.
+* SimulScan support in Xamarin.
+* Enhanced DataCapture feature in the Profile Manager:
+    * Added support for new Bluetooth Scanner DS3678:
+        * Added new enum under BarcodeManager.DeviceIdentifier for selecting the DS3678 Bluetooth Scanner.
+        * Added support to enable/disable automatic re-connection after DS3678 scanner reboot. Refer to the parameter “ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific.pairAfterScannerReboot” for details.
+* Enhanced DataCapture feature in the Profile Manager:
+    * Added support for new Bluetooth Scanner DS3678:
+        * Added support selecting the DS3678 Bluetooth Scanner.
+        * Added support to enable/disable automatic re-connection after DS3678 scanner reboot. Refer to the parameter “Keep Pairing Info After Reboot” for details.
+* `Fixed`: NotificationDevice.release() fails after re-connection of RS6000 if BarcodeManager.addconnectionlistener() is called.
+* `Fixed`: The vibrating functionality will continue for the remaining period when the External Vibrator accessory is disconnected and reconnected.
+
 

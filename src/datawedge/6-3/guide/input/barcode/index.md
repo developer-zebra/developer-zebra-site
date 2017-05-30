@@ -50,7 +50,7 @@ Bluetooth scanners are supported according to the following rules:
 * **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataWedge will revert to the current default scanner.
 * **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
 
->**Important**: Support for decode parameters can vary depending on the scanning device selected. For device device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
+>**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------
 
@@ -778,7 +778,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 **Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
 
->**Important**: Support for decode parameters can vary depending on the scanning device selected. For device device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
+>**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------
 

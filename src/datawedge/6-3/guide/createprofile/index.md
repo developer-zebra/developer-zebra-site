@@ -1,5 +1,5 @@
 ---
-title: Create a Profile
+title: Manage Profiles
 layout: guide.html
 product: DataWedge
 productversion: '6.3'
@@ -76,10 +76,10 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 
 &#49;&#49;. From the Scanner selection screen, **select the desired scanner** or imager. **Tap BACK** to return to the Input screen. 
 <img style="height:350px" src="11_select_input.png"/>
-**Note: Lists such as the one above display only devices that are present on (or connected to) the unit being configured**. For related information, see **Scanner Selection** section. 
+**Note: Lists such as the one above display only devices that are present on (or connected to) the unit being configured**. For related information, see [Scanner Selection](../input/barcode/#scannerselection) in the Barcode Input guide. 
 <br>
 
-&#49;&#50;. From the Decoders screen (accessible from the Input screen), **select only the decoders required by the application** to optimize scanning performance. **Tap BACK** to return to the Input screen. For more information about configuring Decoder parameters, see the [Decoder Guide](../decoders).
+&#49;&#50;. From the Decoders screen (accessible from the Input screen), **select only the decoders required by the application** to optimize scanning performance. **Tap BACK** to return to the Input screen. For more information about configuring Decoder parameters, see the [Barcode Input Guide](../input/barcode).
 <img style="height:350px" src="12_select_decoders.png"/>
 <br>
 
@@ -92,7 +92,7 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 <img style="height:350px" src="14_basic_data_formatting.png"/>
 <br>
 
-See **Basic data formatting** elsewhere in this guide for more information. For Advanced data formatting options, see the [Advanced Data Formatting Guide](../advanced).
+See [Basic Data Formatting](../process/bdf) and [Advanced Data Formatting](../process/adf) sections for more information about processing of acquired data.
 <br>
 
 The app will now use DataWedge for barcode data acquisition. 

@@ -50,11 +50,13 @@ Bluetooth scanners are supported according to the following rules:
 * **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataWedge will revert to the current default scanner.
 * **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
 
+>**Important**: Support for decode parameters can vary depending on the scanning device selected. For device device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
+
 ------
 
 ## Decoder Selection
 
-Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. Enabling a narrow selection of decoders can be used as a means of increasing security, reducing decode errors and inproving scan performance. For example, a company that routinely receives packages encoded with Code 128 symbology might help improve efficiency and reduce scan errors by limiting the Code 128 decoders it implements to those of the non-EAN variety. 
+Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. Enabling a narrow selection of decoders can be used as a means of increasing security, reducing decode errors and improving scan performance. For example, a company that routinely receives packages encoded with Code 128 symbology might help improve efficiency and reduce scan errors by limiting the Code 128 decoders it implements to those of the non-EAN variety. 
 
 Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and provides details for those with configurable parameters.
 
@@ -181,7 +183,7 @@ cellspacing="0" cellpadding="4">
 
 ## Decoder Parameters
 
-Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, see "[Create a Profile](../../createprofile)" page. 
+Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, see "[Manage Profiles](../../createprofile)" page. 
 
 ### Reduced Quiet Zone 
 The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When marginless decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table: 
@@ -770,13 +772,13 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 **Note**: Not all ringtones are supported as decode tones; some ringtones might be truncated when used as a decode tone. Zebra recommends testing all selected tones before deployment.
 
-------
-
 **Decode Haptic Feedback -** Enable the mobile computer to vibrate to indicate a successful decode.
 
 **Decode Feedback LED Timer -** Defines the length of time (in ms) to flash the Green LED to indicate a successful decode.
 
 **Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
+
+>**Important**: Support for decode parameters can vary depending on the scanning device selected. For device device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------
 

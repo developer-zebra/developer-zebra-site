@@ -172,26 +172,7 @@ Error messages are logged for invalid actions and parameters
 
 ### Scanner Input Parameters 
 
-<!--
-<table class="c19">
-<tbody>
-<tr class="c6" bgcolor="#e0e0eb">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c1">
-<span class="c9">
-<strong>Param name</strong>
-</span>
-</p>
-</td>
-<td class="c14" colspan="1" rowspan="1">
-<p class="c1"> <span class="c9"><strong>Param values</strong></span></p>
-</td>
-</tr>
-
-<tr class="c13" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1">
-<span class="c0">ScannerSelection</span></p></td><td class="c2"  bgcolor="#e0e0eb" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p></td></tr><tr class="c7">><td class="c4" colspan="1" rowspan="1"><p class="c8 c7"><span class="c15"></span></p></td><td class="c2" bgcolor="#e0e0eb" colspan="1" rowspan="1"><p class="c8"><span class="c0" bgcolor="#e0e0eb">0&endash;n (valid scanner index no.)</span></p></td></tr>
--->
-
+**Important**: Support for decode parameters can vary depending on the scanning device selected. For device device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 <table class="c19">
 <tbody>
@@ -209,7 +190,7 @@ Error messages are logged for invalid actions and parameters
 </tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">ScannerSelection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS</a>)</span></p></td></tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_selection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS</a>)</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upca</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upce0</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_ean13</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
@@ -379,6 +360,8 @@ Error messages are logged for invalid actions and parameters
 <tr class="c17"><td class="c4" colspan="1" rowspan="1"><p class="c8"><span class="c0">decoder_usplanet_report_check_digit</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c8"><span class="c0">false</span></p><p class="c8"><span class="c0">true</span></p><p class="c1 c7"><span class="c0"></span></p></td></tr>
 </tbody>
 </table>
+
+**Important**: Support for decode parameters can vary depending on the scanning device selected. For device device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 -----
 

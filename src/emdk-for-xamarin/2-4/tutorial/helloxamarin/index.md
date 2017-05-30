@@ -315,8 +315,8 @@ Now that we are finish with our first EMDK for Xamarin application, lets see how
 5. The Status Message should now read `Profile applied successfully ...`. You should see the Time on the devices Notification Bar change to the time you set the Clock profile. You can also pull the Notification Bar down and see that the Date has changed to the Date you set in the Clock profile.
 
 
-##Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/GettingStartedTutorial.zip).
+<!--##Download the Source
+The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/GettingStartedTutorial.zip).-->
 
 
 

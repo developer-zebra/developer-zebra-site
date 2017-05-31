@@ -19,6 +19,8 @@ products:
         url: https://developer.zebra.com/docs/DOC-3853
       - title: Help Index
         url: https://developer.zebra.com/docs/DOC-3040
+      - title: Download
+        url: /appgallery/download
     versions:
       - url: https://developer.zebra.com/docs/DOC-3040
         label: '3.0'
@@ -276,7 +278,7 @@ menu:
   items:
     - title: About TechDocs
       url: /techdocs/about
-    - title: Contact Us
+    - title: Feedback
       url: /techdocs/contact
     - icon: fa fa-search
       url: /techdocs/search

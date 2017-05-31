@@ -17,6 +17,8 @@ menu:
       url: /link-os/latest/pc
     - title: Web Services
       url: /link-os/latest/webservices
+    - title: PC Card
+      url: /link-os/latest/pc_card
     - title: Samples
       url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
 product: Link-OS

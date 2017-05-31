@@ -1,6 +1,6 @@
 ---
-title: MX Feature Compatibility
-layout: csp-mx-support.html
+title: MX Value Tier Features
+layout: csp-mxvt-support.html
 mxversions:
   - text: MX 4.2
     value: 4.2

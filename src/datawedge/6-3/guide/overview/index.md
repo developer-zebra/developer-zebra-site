@@ -49,7 +49,6 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 
 **Related Guides**: 
 
-* **[Profile Architecture Overview](../overview) -** explains how DataWedge uses Profiles and Plug-ins
 * **[Profiles/Plug-Ins listing](../profiles) -** links and details for all DataWedge Plug-ins
 * **[DataWedge APIs](../api) -** access DataWedge programmatically 
 

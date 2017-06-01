@@ -34,15 +34,15 @@ products:
         url: /datawedge/6-3/guide/about
       - title: Setup
         url: /datawedge/6-3/guide/setup
-      - title: Advanced
-        url: /datawedge/6-3/guide/advanced
-      - title: Decoders
-        url: /datawedge/6-3/guide/decoders
-      - title: IP Output
-        url: /datawedge/6-3/guide/ipwedge
+      - title: Profiles
+        url: /datawedge/6-3/guide/profiles
+      - title: Settings
+        url: /datawedge/6-3/guide/settings
+      - title: MSR
+        url: /datawedge/6-3/guide/input/msr
       - title: APIs
         url: /datawedge/6-3/guide/api
-      - title: Demo
+      - title: Demo App
         url: /datawedge/6-3/guide/demo
     versions:
       - url: datawedge/6-3/guide/about

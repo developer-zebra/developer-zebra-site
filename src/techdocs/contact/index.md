@@ -6,7 +6,9 @@ product: Feedback
 productversion: 
 ---  
 
-We strive to provide the most accurate and up-to-date information possible. 
+Thank you for using TechDocs. 
+
+We strive to provide the most accurate and up-to-date information that's easy to find and use. 
 
 **To report an error or suggest an improvement, please send the following**:
 
@@ -18,6 +20,4 @@ We strive to provide the most accurate and up-to-date information possible.
 
 > [Email to jvwc67@zebra.com](mailto:jvwc67@zebra.com?Subject=TechDocs%20Feedback)
 
-Thank you for using TechDocs, 
-<br><br>
-&ndash;TechDocs team
+TechDocs team

@@ -5,14 +5,15 @@ product:
 productversion:
 ---
 
-TechDocs (techdocs.zebra.com) is the main documentation repository for Zebra's development tools, and is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
+TechDocs (techdocs.zebra.com) is the main documentation site for Zebra's development tools, and is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
+
+**The video (below) provides a brief guided tour explaining the screenshots that follow**.   
 
 <iframe width="630" height="394" src="https://www.useloom.com/embed/799bd5b86c414b7ca7409c5fc013f0ba" frameborder="0" allowfullscreen></iframe>
-<br>
 
 -----
 
-### Main Page
+### Main "Tile" Page
 Below is the main TechDocs page, reachable at [techdocs.zebra.com](http://techdocs.zebra.com/) or by clicking the Zebra icon from within any product. Each product has its own "tile" with the product name linking to the "About" page and buttons to the product's main sections. When multiple versions of a product are documented, a drop-down list on the right side of the tile (shown) links to docs for each of the available versions. 
 
 ![img](techdocs_tilepage.png)
@@ -37,15 +38,15 @@ _An "on-ramp" for getting up to speed with Enterprise Browser_
 -----
 
 ### Guides Page
-For feature-rich products such as Enterprise Browser, TechDocs provides numerous guides categorized by type for easy identification and access. 
+For feature-rich products such as Enterprise Browser, TechDocs provides numerous guides categorized by type for easy identification and quick access. 
 
 ![img](guides.png)
 _Index of Enterprise Browser guides classifies available information for quick reference_ 
 
 -----
 
-### Additional Features
-**Redirection –** enables permanent links to be created for printed materials and other collateral that never go stale and always lead to the current doc version.
+### Redirection 
+The TechDocs Redirection feature enables permanent links to be created for printed materials and other collateral that never go stale and always lead to the current doc version.
 
 **Current redirect links**:
 
@@ -61,12 +62,28 @@ _Index of Enterprise Browser guides classifies available information for quick r
 * techdocs.zebra.com/simulscan
 * techdocs.zebra.com/stagenow
 
-**SmartDocs –** For Zebra’s Mobility DNA documentation (MX and OSX), SmartDocs allows a user to enter the MX, OSX and/or Android version(s) currently running on a device and see a list of the features and capabilities available on that device, helping to reduce development and troubleshooting time and eliminate guesswork. 
+-----
+
+### SmartDocs 
+For Zebra’s Mobility DNA documentation (MX and OSX), SmartDocs allows a user to enter the MX, OSX and/or Android version(s) currently running on a device and see a list of the features and capabilities available on that device, helping to reduce development and troubleshooting time and eliminate guesswork. 
 
 ![img](smart_docs.png)
 _SmartDocs helps simplify development by displaying only the features available to apps on the device_ 
+<br>
 
+-----
 
-**Integrated Google Search –** Instantly delivers relevant results within any product to quickly find the required information.
+### Integrated Google Search
+Through integration with Google Search, TechDocs instantly delivers results for any product ranked by relevance, enabling TechDocs users to find the required information as quickly as possible.
 
+![img](google_results.png)
+_Results of a search for "Barcode" from within DataWedge 6.3 docs_ 
+<br>
 
+-----
+
+### Feedback
+
+> Have an idea for a feature? [Let Us Know!](../contact)
+
+[Back to Main page](../)

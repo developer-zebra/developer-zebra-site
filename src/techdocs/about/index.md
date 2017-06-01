@@ -26,6 +26,7 @@ When viewing the docs of an individual product, a series of tabs along the top o
 
 ![img](product_page.png)
 _Click on image to enlarge_
+<br>
 
 -----
 
@@ -34,6 +35,7 @@ Some of the more complex products include a "Getting Started" page, an index of 
 
 ![img](getting_started.png)
 _An "on-ramp" for getting up to speed with Enterprise Browser_ 
+<br>
 
 -----
 
@@ -42,6 +44,7 @@ For feature-rich products such as Enterprise Browser, TechDocs provides numerous
 
 ![img](guides.png)
 _Index of Enterprise Browser guides classifies available information for quick reference_ 
+<br>
 
 -----
 

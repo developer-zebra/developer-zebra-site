@@ -1,4 +1,4 @@
----
+dec
 title: Mag-Stripe Reader Input
 layout: guide.html
 product: DataWedge
@@ -61,9 +61,9 @@ The method call above returns all data readable from the card. The table below l
 
 ## Non-ISO Mode
 
-Non-ISO Mode is the default mode on any device on which decryption is not enabled. This mode outputs the data without encryption exactly as read form the card. Its three status tags (in the Mapping table below) indicate the presence of data in each of the corresponding tracks on the card. 
+Non-ISO Mode is the default mode on any device on which encryption is not enabled. This mode outputs the data without encryption exactly as read form the card. Its three status tags (in the Mapping table below) indicate the presence of data in each of the corresponding tracks on the card. 
 
-On devices with encryption enabled, Non-ISO Mode is invoked only when reading a card that is **<u>not</u>** ISO/ABA compliant; data from such cards is otherwise encrypted using Original or Enhanced Mode and can never be otherwise. 
+On devices with encryption enabled, Non-ISO Mode is invoked only when reading a card that is **<u>not</u>** ISO/ABA compliant; data from such cards is otherwise encrypted using Original or Enhanced Mode and can never be configured otherwise. 
 
 **MSR data from <u>all three tracks</u> is contained in the tag**: `com.symbol.datawedge.msr_data`
 

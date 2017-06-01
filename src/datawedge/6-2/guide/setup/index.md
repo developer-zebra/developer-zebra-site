@@ -66,7 +66,7 @@ Input Plug-ins specify the device hardware to be used to acquire the data before
 
 **The Barcode Scanner Input Plug-in** reads data from the integrated barcode scanner built into the device, attached by cable or implemented as a snap-on module. This Plug-in supports laser, imager and internal cameras. The raw barcode data that's acquired is processed or formatted as required using Process Plug-ins. 
 
-**The MSR Input Plug-in** is for magnetic stripe reader modules. This plug-in reads data from an integrated MSR reader or attached Scan/MSR Module, after which the raw data from the reader can be processed or formatted as required using Process Plug-ins.
+**The MSR Input Plug-in** is for magnetic stripe reader modules. This plug-in reads data from an integrated MSR reader or attached Scan/MSR Module, after which the raw data from the reader can be processed or formatted as required using Process Plug-ins. See the [MSR Guide](../msr) for more information. 
 
 **The SimulScan Input Plug-in** permits simultaneous capture of barcodes, images, text, signatures, phone numbers and other data on multi-part forms. The SimulScan Input Plug-in adds this capability to DataWedge. When form data is captured according to a designated SimulScan template, data can be processed or formatted as required using Process Plug-ins. 
 
@@ -405,30 +405,7 @@ The call above can be used with the following String tags:
 
 * **String DECODE_DATA_TAG = "com.symbol.datawedge.decode_data"**; Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array, per bar code). Clients can get data in each byte array by passing an index.
 
-####MSR-related data
-The MSR-related data added to an Intent bundle can be retrieved using the following calls: 
-
-* `Intent.getStringtExtra()`
-<!-- * `Intent.getSerializableExtra()` -->
-
-The calls above can be used with the following String tags:
-
-* **String MSR_DATA_TAG = "com.symbol.datawedge.msr_data"**;
-The data from the MSR tracks is concatenated and sent out as a byte array. The Start/end sentinels and track separators are included as configured.
-
-* **String MSR_TRACK1_TAG = "com.symbol.datawedge.msr_track1"**; MSR track 1 data is returned as a byte array.
-
-* **String MSR_TRACK2_TAG = "com.symbol.datawedge.msr_track2"**; MSR track 2 data is returned as a byte array.
-
-* **String MSR_TRACK3_TAG = "com.symbol.datawedge.msr_track3"**; MSR track 3 data is returned as a byte array.
-
-* **String MSR_TRACK1_STATUS_TAG = "com.symbol.datawedge.msr_track1_status"**; MSR track 1 decode status as an Integer where 0 indicates a successful decode.
-
-* **String MSR_TRACK2_STATUS_TAG = "com.symbol.datawedge.msr_track2_status"**; MSR track 2 decode status as an Integer where 0 indicates a successful decode.
-
-* **String MSR_TRACK3_STATUS_TAG = "com.symbol.datawedge.msr_track3_status"**; MSR track 3 decode status as an Integer where 0 indicates a successful decode.
-
-####SimulScan-related Data
+#### SimulScan-related Data
 The SimulScan-related data added to an Intent bundle can be retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`

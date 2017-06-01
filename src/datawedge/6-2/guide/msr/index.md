@@ -1,8 +1,8 @@
-dec
+---
 title: Mag-Stripe Reader Input
 layout: guide.html
 product: DataWedge
-productversion: '6.3'
+productversion: '6.2'
 ---
 
 ## Overview
@@ -40,7 +40,7 @@ Check the "Enabled" box in the MSR Input section of the desired Profile(s):
 _MSR input enabled in the "DWDemo" Profile_
 <br>
 
-**Note**: DataWedge also provides beep sounds and other feedback to indicate scanning results. See the [Scan Params](../barcode/#scanparams) section for more information. 
+**Note**: DataWedge also provides beep sounds and other feedback to indicate scanning results. See the [Scan Params](../decoders/#scanparams) section for more information. 
 
 -----
 
@@ -234,8 +234,7 @@ The table below lists the data fields contained in the tag.
 
 **Related guides**:
 
-* [DataWedge Profiles](../../profiles) - guides for all DataWedge input, processing and output options 
-* [DataWedge APIs](../../api) - usage specifications for all DataWedge-supported intents 
+* [DataWedge APIs](../api) - usage specifications for all DataWedge-supported intents 
 * [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2) - Tech specs of the [ID TECH](http://www.idtechproducts.com/) read head used in Zebra MSR devices 
 * [ANSI x9.24-2016](http://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.24-2-2016) - Encryption key (DUKPT) specifications
 

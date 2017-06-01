@@ -13,6 +13,8 @@ menu:
       url: /datawedge/6-2/guide/advanced
     - title: Decoders
       url: /datawedge/6-2/guide/decoders
+    - title: MSR Input
+      url: /datawedge/6-2/guide/msr
     - title: IPWedge
       url: /datawedge/6-2/guide/ipwedge
     - title: APIs

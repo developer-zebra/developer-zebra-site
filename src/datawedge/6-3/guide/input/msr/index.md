@@ -1,4 +1,4 @@
-dec
+---
 title: Mag-Stripe Reader Input
 layout: guide.html
 product: DataWedge

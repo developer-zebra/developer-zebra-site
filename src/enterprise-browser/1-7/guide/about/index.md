@@ -82,8 +82,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 
 ### Key Features
 
-* **A development toolkit for mobile cross-platform enterprise apps**. Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices. Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE. =
-* **Build apps using HTML5, CSS and JavaScript**. Use web skills to create great-looking applications. Based on open source and standard technologies, not proprietary toolkits. Access to the world's largest developer community=
+* **A development toolkit for mobile cross-platform enterprise apps**. Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices. Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE.
+* **Build apps using HTML5, CSS and JavaScript**. Use web skills to create great-looking applications. Based on open source and standard technologies, not proprietary toolkits. Access to the world's largest developer community.
 * **Common APIs across all enterprise devices**. Single code base; does not require different APIs for different OSes to create a true write-once, run-anywhere apps with a consistent UI. Easily access native device hardware with JavaScript APIs
 * **Backward-compatible with PocketBrowser and RhoElements**. Compatible with legacy PocketBrowser APIs, enabling a clear path forward for legacy apps. EMML (Meta Tag) support extended to Android. Compatible with legacy RhoElements JavaScript APIs, enabling a clear path forward for "RhoElements Shared Runtime" users. 
 * **Unparalleled access to device capabilities**. Access all device features, including bar code scanning, signature capture, printing, RFID and more. 

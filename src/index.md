@@ -121,25 +121,27 @@ products:
         label: '1.0'
   - title: Enterprise Browser
     description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
-    url: /enterprise-browser/1-6/guide/about
+    url: /enterprise-browser/1-7/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-browser/1-6/guide/about
+        url: /enterprise-browser/1-7/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-6/guide/gettingstarted/
+        url: /enterprise-browser/1-7/guide/gettingstarted/
       - title: Setup
-        url: /enterprise-browser/1-6/guide/setup/
+        url: /enterprise-browser/1-7/guide/setup/
       - title: Tutorials
-        url: /enterprise-browser/1-6/tutorial/
+        url: /enterprise-browser/1-7/tutorial/
       - title: Usage Guides
-        url: /enterprise-browser/1-6/guide
+        url: /enterprise-browser/1-7/guide
       - title: Config.xml
-        url: /enterprise-browser/1-6/guide/configreference
+        url: /enterprise-browser/1-7/guide/configreference
       - title: APIs
-        url: /enterprise-browser/1-6/api
+        url: /enterprise-browser/1-7/api
     versions:
+      - url: enterprise-browser/1-7/guide/about
+        label: '1.7'
       - url: enterprise-browser/1-6/guide/about
         label: '1.6'
       - url: enterprise-browser/1-5/guide/about

@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Browser 1.6
+title: About Enterprise Browser 1.7
 productversion: '1.7'
 product: Enterprise Browser
 layout: guide.html
@@ -13,13 +13,18 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. See the [API Compatibility matrix](../compatibility). 
 
-## New in v1.6
+## New in v1.7
 
+OLD OLD OLD: 
 #### Android Jelly Bean - End of Support
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
 
 #### Zebra Android Device Support
-Enterprise Browser 1.6 now supports new and existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
+Enterprise Browser 1.7 now supports 
+
+
+OLD OLD OLD: 
+new and existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
 * **ET50** with Android Lollipop
 * **ET55** with Android Lollipop
@@ -33,7 +38,9 @@ Enterprise Browser 1.6 now supports new and existing devices running Android 5.0
 
 This release also adds a range of additional new features for all supported Android devices.
 
-#### New or Updated APIs (released with EB 1.6)
+#### New or Updated APIs (released with EB 1.7)
+
+OLD OLD OLD: 
 
 * **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and higher**). 
 

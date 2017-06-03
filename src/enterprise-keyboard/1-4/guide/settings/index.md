@@ -117,6 +117,8 @@ Text Correction controls automatic corrections to typed text based the predefine
 
 <b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next. This is sometimes referred to as "predictive text."
 
+-----
+
 #### Personal dictionary
 The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of keyboard input. For example, if configured for a medical device, the acronym "gerd" could be added as a shortcut and replaced with "gastroesophageal reflux disease" whenever it was typed.
 

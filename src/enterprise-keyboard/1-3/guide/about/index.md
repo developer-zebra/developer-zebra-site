@@ -33,7 +33,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 Enterprise Keyboard 1.3 now supports the Zebra ET50 and ET55 tablet devices running Android. 
 
-See the [download page](../download) for a complete list of supported devices. 
+See the [download page](../../download) for a complete list of supported devices. 
 
 ### Added in v1.2
 

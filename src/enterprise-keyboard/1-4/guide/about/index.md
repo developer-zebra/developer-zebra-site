@@ -6,18 +6,16 @@ productversion: '1.4'
 ---
 
 ## Overview
-Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
+Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. 
 
 Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device
 * **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
 * **Remotely** using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service
-* Remotely through a company's own mobile device management (MDM) system (if supported by that system)
+* Remotely through a company's own enterprise mobile management (EMM) system (if supported by that system)
 
-Zebra's keyboard also makes use of the Android Personal Dictionary for spelling suggestions and corrections, and permits customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
-
-Learn more [about Personal Dictionary](../settings#personaldictionary).
+Zebra's keyboard also makes use of the Android Personal Dictionary for spelling suggestions and corrections, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
 
 This version of Enterprise Keyboard includes the following languages: 
 
@@ -29,11 +27,26 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-### New in v1.3
+####Learn more about:
+* [Text correction features](../settings#textcorrection)
+* The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr)
 
-Enterprise Keyboard 1.3 now supports the Zebra ET50 and ET55 tablet devices running Android. 
+-----
 
-See the [download page](../download) for a complete list of supported devices. 
+### New in v1.4
+
+* Enterprise Keyboard 1.4 can be downloaded <u>as a stand-alone app (.apk)</u> and is certified for use on specific Zebra devices running Android 6.x Marshmallow (see the [EKB download page](../../download) for details) 
+* Supports MX 6.3 and the "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr), which can be bulk-loaded from a file of custom terms
+
+-----
+
+### Added in v1.3
+
+Support for the Zebra ET50 and ET55 tablet devices running Android. 
+
+See the [EKB 1.3 download page](../../../1-3/download) for a complete list of supported devices. 
+
+-----
 
 ### Added in v1.2
 
@@ -61,8 +74,9 @@ See the [download page](../download) for a complete list of supported devices.
 <img alt="" style="height:350px" src="scan_input.png"/> 
 <br>
 
+-----
 
-### Unique features  
+### Unique EKB features  
 All versions of Enterprise Keyboard offer these other unique capabilities to help improve the speed and accuracy of input:  
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
@@ -110,9 +124,10 @@ _Stock Android keyboard_:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
 
+-----
 
 ## How to Get It
 
-Enterprise Keyboard 1.3 can be downloaded as an OS Update for several Zebra devices running KitKat or Lollipop. See the [Download page](../../download) for details. 
+Enterprise Keyboard 1.4 can be downloaded as a stand-alone app for select Zebra devices running Android 6.x Marshmallow. See the [Download page](../../download) for details. 
 
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

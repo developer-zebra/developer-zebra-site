@@ -45,6 +45,26 @@ To include individual APIs, you must first include the `ebapi.js` in your HTML, 
 
 
 
+### disableAllIME()
+Disabes all IMEs in the device. It is supported from Android Lollipop onwards.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Sip.disableAllIME()</code>
+
 ### hide()
 Hides the default software keyboard.
 
@@ -65,6 +85,26 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Sip.hide()</code> 
 
+
+### resetToDefault()
+Resets to default IME set before disabling all IMEs. It is supported from Android Lollipop onwards.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.Sip.resetToDefault()</code>
 
 ### show()
 Displays the default software keyboard on the device.

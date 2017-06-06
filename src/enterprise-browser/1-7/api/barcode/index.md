@@ -336,6 +336,29 @@ Synchronous Return:
 	* <code>EB.Barcode.getSupportedProperties()</code> 
 
 
+### isParamSupported(<span class="text-info">STRING</span> propertyName)
+This method is used for checking whether specified barcode property is supported or not by EMDK service which is installed in the device. It will return 'true' if the specified property is supported or else it will return 'false' for all other cases.
+
+####Parameters
+<ul><li>propertyName : <span class='text-info'>STRING</span><p>The propertyName name should be same as barcode property name like 'code128', 'code128isbt128'. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* BOOLEAN
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.isParamSupported(<span class="text-info">STRING</span> propertyName)</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.isParamSupported(<span class="text-info">STRING</span> propertyName)</code>
+
+
 ### registerBluetoothStatus()
 If you are using an RS507 barcode scanner you can register to receive connected or disconnected events through this method.
 
@@ -385,6 +408,29 @@ Synchronous Return:
 	* <code>myObject.removeConnectionListener()</code>
 * Default Instance: This method can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.removeConnectionListener()</code> 
+
+
+### resetToDefault()
+Resets the scanner parameters to defaults values for the specified enable scanner.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.resetToDefault()</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.resetToDefault()</code>
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Barcode</span> defaultInstance)

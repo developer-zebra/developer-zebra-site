@@ -44,6 +44,86 @@ The ebapi.js file is necessary for all single API inclusions.
 
 
 
+### clearApplicationCache()
+Used for clearing HTML5 Application Cache data in Enterprise Browser application. Note: Use WebView clearCache API for clearing cache data.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.clearApplicationCache()</code>
+
+### clearCache()
+Forces WebView to clear cache data in Enterprise Browser application. Note: This doesnot clear HTML5 Application Cache data.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.clearCache()</code>
+
+### clearCookies()
+Forces WebView to clear cookies saved in Enterprise Browser application.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.clearCookies()</code>
+
+### clearHistory()
+Forces WebView to clear history in Enterprise Browser application.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.clearHistory()</code>
+
 ### navigate(<span class="text-info">STRING</span> url, <span class="text-info">INTEGER</span> tabIndex)
 Force WebView to navigate to a URL. White page flickering during transition may happen if a controller action method doesn't return any rendered value, but instead performs a WebView.navigate(someUrl) call. <!--It is important to avoid using WebView.navigate in Ruby action methods because WebView.navigate is intended to be used in callback methods asynchronously.-->
 
@@ -143,7 +223,7 @@ Synchronous Return:
 ####Type
 <span class='text-info'>INTEGER</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Return an active tab index. For change active tab use Use Rho.NativeTabbar.currentTab property.
+Return an active tab index. For change active tab use Use EB.NativeTabbar.currentTab property.
 ####Access
 
 
@@ -157,6 +237,42 @@ Return an active tab index. For change active tab use Use Rho.NativeTabbar.curre
 * Android
 * Windows Mobile
 * Windows CE
+
+###blockNetworkImage
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Sets whether the WebView should not load image resources from the network. Note that disabling all network loads using blockNetworkLoads property or via BlockNetworkLoads config tag will also prevent network images from loading, even if this flag is set to false. When the value of this setting is changed from true to false, network images resources referenced by content currently displayed by the WebView are fetched automatically. Note: This property overrides the value which was set using BlockNetworkImage configuration tag.
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.WebView.blockNetworkImage</code>
+
+
+
+####Platforms
+
+* Android
+
+###blockNetworkLoads
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Sets whether the WebView should not load resources from the network. Use blockNetworkImage property or BlockNetworkImage config tag to only avoid loading image resources. Note that if the value of this setting is changed from true to false, network resources referenced by content currently displayed by the WebView are not fetched until reloading of page is not done. Note: This property overrides the value which was set using BlockNetworkLoads configuration tag.
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.WebView.blockNetworkLoads</code>
+
+
+
+####Platforms
+
+* Android
 
 ###cacheSize
 
@@ -176,19 +292,17 @@ The browser cache size, in whole MBs. Defines in config.xml: Navigation\\Cache.
 
 * Windows Mobile(WebKit)
 
-###enableCache
+###contentHeight
 
 ####Type
-<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+<span class='text-info'>INTEGER</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Enable / disable Browser cache. Use 'WebView.enableCache' parameter in rhoconfig.txt to configure this value.
-####Params
-<p><strong>Default:</strong> true</p>
+Gets the height of the HTML content.
 ####Access
 
 
 * Class: This property can only be accessed via the API class object.
-	* <code>EB.WebView.enableCache</code>
+	* <code>EB.WebView.contentHeight</code>
 
 
 
@@ -373,7 +487,7 @@ From RhoElements 2.1 onwards the default value was changed to work out of the bo
 ####Type
 <span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Whether to enable or disable viewport meta tag processing.Defines in config.xml: Navigation\\ViewportEnabled.
+Get whether viewport meta tag processing is enabled or disabled in config.xml: Navigation\\ViewportEnabled.
 ####Params
 <p><strong>Default:</strong> true</p>
 ####Access

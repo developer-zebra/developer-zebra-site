@@ -133,7 +133,7 @@ Synchronous Return:
 
 
 ### reboot(<span class="text-info">STRING</span> bootType)
-It reboots the terminal using either a Warm or Cold software boot (as specified). Note on CE6 devices a "ColdCAD" boot is required to replicate the Coldboot key sequence, e.g. 1+9+Power on an MC3000. Callback is triggered only for 'failed' status. Parameter **bootType** and **callback** is not supported on Android platform.
+Reboots the terminal. On WM/CE, it reboots the terminal using either a Warm or Cold software boot (as specified). Note on CE6 devices a "ColdCAD" boot is required to replicate the Coldboot key sequence, e.g. 1+9+Power on an MC3000. Callback is triggered only for 'failed' status. Parameter **bootType** and **callback** is not supported on Android platform.
 
 ####Parameters
 <ul><li>bootType : <span class='text-info'>STRING</span><p> </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

@@ -672,7 +672,10 @@ Synchronous Return:
 ###Create & Read the file using File API
 This example demonstrate how to create & read the file using File API.
 <pre><code>:::javascript
+//Set the file path
 var path = EB.RhoFile.join(EB.Application.userFolder, "testFile.txt");
+
+//Create the file
 function createFile()
 {
 	if (EB.RhoFile.exists(path))
@@ -683,6 +686,8 @@ function createFile()
 	fWrite.write("This is Enterprise Browser File API.");
 	fWrite.close();
 }
+
+//Read the file
 function readFile()
 {
    var fOpen = new EB.RhoFile(path,EB.RhoFile.OPEN_FOR_READ);
@@ -690,4 +695,5 @@ function readFile()
    document.getElementById("myText").innerHTML = data;
    fOpen.close();
 }
+
 </code></pre>

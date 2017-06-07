@@ -669,8 +669,8 @@ Synchronous Return:
 
 ##Examples
 
-###Create & Read the file using File API
-This example demonstrate how to create & read the file using File API.
+###Create and Read the file using File API
+This example demonstrate how to create and read the file using File API.
 <pre><code>:::javascript
 //Set the file path
 var path = EB.RhoFile.join(EB.Application.userFolder, "testFile.txt");

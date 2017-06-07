@@ -43,6 +43,32 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 ##Methods
 
 
+### cancelNotification()
+
+					This cancels the active notification from the device.
+					m_rnobject.cancelNotification();
+				
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.cancelNotification()</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.cancelNotification()</code> 
+
+
 ### clearproperties()
 
 					Clears all properties related to led,vibrator and beeper settings.
@@ -316,6 +342,25 @@ Returns the friendly name of the notification device.
 
 * Android
 
+###isBeepSupported
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+####Description
+Returns true if the notification device supports Beep feature else false.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.isBeepSupported</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.isBeepSupported</code> 
+
+
+
+####Platforms
+
+* Android
+
 ###isConnected
 
 ####Type
@@ -366,6 +411,44 @@ Returns whether the notification device is enabled or not.
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.isEnabled</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Remotenotification.isEnabled</code> 
+
+
+
+####Platforms
+
+* Android
+
+###isLEDSupported
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+####Description
+Returns true if the notification device supports LED feature else false.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.isLEDSupported</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.isLEDSupported</code> 
+
+
+
+####Platforms
+
+* Android
+
+###isVibrateSupported
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+####Description
+Returns true if the notification device supports Vibrate feature else false.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.isVibrateSupported</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.isVibrateSupported</code> 
 
 
 

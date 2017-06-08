@@ -217,7 +217,7 @@ Notify method sends the notification information to the device.
 									]
 									 </p></li><li>vibratorPattern : <span class='text-info'>Array</span><span class='label '> Default: </span><p>
 									
-										Vibrate with a given pattern. Pass in an array of integers that are the durations for which to turn on or off the vibrator in milliseconds. The supported values are 0ms to 2550ms. Behavior is undefined for any other value. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on. Maximum 4 vibrating pattern pairs are supported. If more than 4 pattern pairs are provided, only the first 4 pattern pairs will be considered. Default value assigned is null.
+										Vibrate with a given pattern. Pass in an array of integers that are the durations for which to turn on or off the vibrator in milliseconds. The supported values are 0ms to 2550ms. Behavior is undefined for any other value. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on. Maximum 4 vibrating pattern pairs are supported. If more than 4 pattern pairs are provided, only the first 4 pattern pairs will be considered. Default value assigned is null. Note: This parameter is not supported for External Vibrator.
 									vibratorPattern:[
 									{vibratortime:500},
 									{vibratortime:500},
@@ -554,7 +554,7 @@ Returns the notification device model number.For Future Use only.Currently Not s
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, this time will be used; otherwise pattern takes precedence. The supported values are 0 ms to 2550 ms. Behavior is undefined for any other value.
+The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, this time will be used; otherwise pattern takes precedence. The supported values are 0 ms to 2550 ms. Behavior is undefined for any other value. Note: Supported values are 0ms to 300000ms for External Vibrator.
 
 ####Access
 

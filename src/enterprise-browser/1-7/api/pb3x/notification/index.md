@@ -523,6 +523,9 @@ NotificationName
 )
 )
 </pre>
+<DIV class="clsRef">LED Notification Object</DIV>
+<DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">On some devices, the LED objects activated through the Notification API are not supported, despite being enumerated through the `enumerate();` function call.</DIV>
+<pre style="font-family:courier;font-size:small;"></pre>
 </blockquote><br></div>
 <div id="InfoSpan" style="display:block">
 <blockquote>

@@ -51,7 +51,7 @@ _Index of Enterprise Browser guides classifies available information for quick r
 ### Redirection 
 The TechDocs Redirection feature enables permanent links to be created for printed materials and other collateral that never go stale and always lead to the current doc version.
 
-**Current redirect links**:
+**Links that always bring up the current version**:
 
 * techdocs.zebra.com/appgallery
 * techdocs.zebra.com/datawedge
@@ -71,7 +71,7 @@ The TechDocs Redirection feature enables permanent links to be created for print
 For Zebra’s Mobility DNA documentation (MX and OSX), SmartDocs allows a user to enter the MX, OSX and/or Android version(s) currently running on a device and see a list of the features and capabilities available on that device, helping to reduce development and troubleshooting time and eliminate guesswork. 
 
 ![img](smart_docs.png)
-_SmartDocs helps simplify development by displaying only the features available to apps on the device_ 
+_Shows that a device with OSX 4.1 cannot perform Enterprise or Factory Resets or a Full-Device Wipe_ 
 <br>
 
 -----

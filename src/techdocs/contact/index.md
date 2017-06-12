@@ -20,4 +20,8 @@ We strive to provide the most accurate and up-to-date information that's easy to
 
 > [Email to jvwc67@zebra.com](mailto:jvwc67@zebra.com?Subject=TechDocs%20Feedback)
 
-TechDocs team
+Sincerely, 
+
+-TechDocs team
+
+[Back to Main page](../)

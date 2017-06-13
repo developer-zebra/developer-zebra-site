@@ -27,6 +27,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * WT6000 - Lollipop
 
 
+
 ##What's New in Version 2.4
 
 * Added support for MX v6.3 in Profile Manager:

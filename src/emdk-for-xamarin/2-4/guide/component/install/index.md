@@ -103,11 +103,6 @@ Each project will cache the version of the component you have added within your 
 	![img](../../../images/component/project-folder-component.jpg)
 
 
-## What's Next
-Try the Sample included with in Component[ Sample ](/emdk-for-xamarin/2-4/guide/sample/about)
-
-
-
 
 
 

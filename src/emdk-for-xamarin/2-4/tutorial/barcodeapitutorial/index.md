@@ -7,13 +7,6 @@ productversion: '2.4'
 
 This guide will walk you through creating an EMDK For Xamarin application that will use Barcode/Scanning APIs  to perform Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses Barcode Manager, which is the primary object to access barcode scanning feature.
 
-##Prerequisites
-Before starting this tutorial you must install the following software.
-
-- Visual Studio 2013 or 2015
-- [Xamarin Plaform](http://xamarin.com/download)
-- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-4/guide/vs/setup) or [Symbol EMDK for Xamarin Add-in for Xamarin Studio](/emdk-for-xamarin/2-4/guide/xs/setup)
-
 
 ##Create a new project
 When creating a project for this tutorial use the project name **BasicScanningTutorial**
@@ -549,8 +542,8 @@ Now that we are finished with our Barcode API Application, lets see how it runs.
 
 
 
-##Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/BasicScanningTutorial.zip).
+<!--##Download the Source
+The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/BasicScanningTutorial.zip).-->
 
 
 

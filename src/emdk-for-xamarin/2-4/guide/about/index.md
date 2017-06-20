@@ -26,7 +26,16 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * TC8000 - KitKat,Lollipop
 * WT6000 - Lollipop
 
+## Developent Tools Supported
 
+* **Windows**
+    * Visual Studio
+        * 2013
+        * 2015
+        * 2017
+* **Mac**
+    * Xamarin Studio
+        * 6.x
 
 ##What's New in Version 2.4
 

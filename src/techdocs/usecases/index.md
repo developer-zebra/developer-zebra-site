@@ -4,8 +4,8 @@ title: Available Product Documentation
 layout: list-products.html
 products: 
   - title: Scanning
-    description: DataWedge- Add scaning to an existing app (easiest, no code)<br>SimulScan- Capture all data from a form at once (easy, some setup)<br>Enterprise Browser- build cross-platform apps with HTML5 (moderate; some code)<br>EMDK for Android or Xamarin- Build or modify Java or C# apps (difficult; much code)  
-    url: ../
+    description: DataWedge adds scanning to any app without coding; SimulScan captures all data from forms without coding; Enterprise Browser builds cross-platform scanning apps with easy HTML5 coding; EMDK for Android or Xamarin SDKs build or modify Java or C# apps. 
+    url: ../usecases
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
@@ -32,14 +32,14 @@ products:
         label: 'EMDK for Android'
       - url: ../../emdk-for-xamarin/
         label: 'EMDK for Xamarin'
-  - title: EMDK For Android
-    description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-4/guide/about
+  - title: Printing
+    description: Zebra offers several output solutions that range from simple line printing from an Enterprise Browser app to the development of printer firmware using Link-OS.     
+    url: ../usecases
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
-      - title: About
-        url: /emdk-for-android/6-4/guide/about
+      - title: Enterprise Browser
+        url: /enterprise-browser/1-6/guide/printingGuide/
       - title: Getting Started
         url: /emdk-for-android/6-4/guide/gettingstarted
       - title: Tutorials
@@ -65,24 +65,24 @@ products:
         label: '4.2'
       - url: emdk-for-android/4-0/guide/about/
         label: '4.0'
-  - title: EMDK For Xamarin
+  - title: Security
     description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
     url: /emdk-for-xamarin/2-4/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
-      - title: About
-        url: /emdk-for-xamarin/2-4/guide/about
-      - title: Getting Started
-        url: /emdk-for-xamarin/2-4/guide/gettingstarted
-      - title: Tutorials
-        url: /emdk-for-xamarin/2-4/tutorial/
-      - title: Samples
-        url: /emdk-for-xamarin/2-4/samples
-      - title: Guides
-        url: /emdk-for-xamarin/2-4/guide/programming-guides
-      - title: Profile Manager
-        url: /emdk-for-xamarin/2-4/guide/profile-manager-guides
+      - title: Enterprise Home Screen
+        url: /ehs
+      - title: Enterprise Browser Security
+        url: /enterprise-browser/1-6/guide/security
+      - title: Device Security
+        url: /stagenow/2-3/Profiles/managesecurity/
+      - title: Device Encryption
+        url: /mx/encryptmgr/
+      - title: Scanner Security Level (Android app)
+        url: /emdk-for-android/6-3/.../ScannerConfig.SecurityLevel.html
+      - title: Device Persistence
+        url: /mx/persistmgr/
       - title: APIs
         url: /emdk-for-xamarin/2-4/api
     versions:
@@ -98,15 +98,15 @@ products:
         label: '2.0'
       - url: emdk-for-xamarin/1-0/guide/about/
         label: '1.0'
-  - title: Enterprise Browser
+  - title: Android Development
     description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
     url: /enterprise-browser/1-6/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
-      - title: About
+      - title: EMDK for Android
         url: /enterprise-browser/1-6/guide/about
-      - title: Getting Started
+      - title: Enterprise Browser
         url: /enterprise-browser/1-6/guide/gettingstarted/
       - title: Setup
         url: /enterprise-browser/1-6/guide/setup/
@@ -125,7 +125,7 @@ products:
         label: '1.5'
       - url: enterprise-browser/1-4/guide/about
         label: '1.4'
-  - title: Enterprise Home Screen
+  - title: Xamarin (C#) Development
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-5/guide/about
     image: /ehs/ehs-logo.png
@@ -148,45 +148,22 @@ products:
         label: '2.4'
       - url: ehs/2-3/guide/about/
         label: '2.3'
-  - title: Enterprise Keyboard
-    description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-3/guide/about
-    image: /enterprise-keyboard/ekb_logo.png
-    btn-text: Latest Docs
-    sections:
-      - title: About
-        url: /enterprise-keyboard/1-3/guide/about
-      - title: Setup
-        url: /enterprise-keyboard/1-3/guide/setup
-      - title: Customize
-        url: /enterprise-keyboard/1-3/guide/settings
-      - title: Download
-        url: /enterprise-keyboard/1-3/download
-    versions:
-      - url: enterprise-keyboard/1-3/guide/about
-        label: '1.3'
-      - url: enterprise-keyboard/1-2/guide/about
-        label: '1.2'
-      - url: enterprise-keyboard/1-1/guide/about
-        label: '1.1'
-      - url: enterprise-keyboard/1-0/guide/about
-        label: '1.0'
-  - title: Link-OS SDK
-    description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
+  - title: Migration and Modernization
+    description: Zebra solutions can put a modern face apps that use terminal emulation or help move apps from older platforms to modern ones.  
     url: /link-os
     image: /images/products/link-os.png
     sections:
-      - title: Android
+      - title: All Touch TE
         url: /link-os/latest/android
-      - title: Android BTLE
+      - title: Pocket Browser
         url: /link-os/latest/android_btle
-      - title: Xamarin
+      - title: Rho Elements
         url: /link-os/latest/xamarin
-      - title: iOS
+      - title: Rho Mobile
         url: /link-os/latest/ios
-      - title: PC
+      - title: Windows Mobile/CE
         url: /link-os/latest/pc
-      - title: Web Services
+      - title: C# to Android
         url: /link-os/latest/webservices
       - title: Samples
         url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
@@ -229,35 +206,6 @@ products:
     versions:
       - url: simulscan/1-1/guide/about
         label: '1.1'
-  - title: Use Cases
-    description: Not sure where to go? Click on "Use Cases" to determine which Zebra tool best suits the skills, experience and needs of your development organization.
-    url: /techdocs/usecases
-    btn-text: Latest Guides
-    image: /images/products/stagenow.png
-    sections:
-      - title: Getting Started
-        url: /stagenow/2-6/gettingstarted
-      - title: Profiles
-        url: /stagenow/2-6/stagingprofiles
-      - title: Profile Wizards
-        url: /stagenow/2-6/ProfileWizards
-      - title: Settings
-        url: /stagenow/2-6/settingconfig
-      - title: Setting Types
-        url: /stagenow/2-6/settingtypes
-      - title: Device Staging
-        url: /stagenow/2-6/stageclient
-    versions:
-      - url: stagenow/2-6/about
-        label: '2.6'
-      - url: stagenow/2-5/about
-        label: '2.5'
-      - url: stagenow/2-4/about
-        label: '2.4'
-      - url: stagenow/2-3/about
-        label: '2.3'
-      - url: stagenow/2-2/about
-        label: '2.2'
 menu:
   items:
     - title: About TechDocs

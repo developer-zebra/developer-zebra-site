@@ -279,6 +279,35 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
+  - title: Use Cases
+    description: Not sure where to go? Click on "Use Cases" for help figuring out which Zebra tool best suits the skills, experience and needs of your organization.
+    url: /techdocs/usecases
+    btn-text: Latest Guides
+    image: /images/products/blue-question-mark.jpg
+    sections:
+      - title: Getting Started
+        url: /stagenow/2-6/gettingstarted
+      - title: Profiles
+        url: /stagenow/2-6/stagingprofiles
+      - title: Profile Wizards
+        url: /stagenow/2-6/ProfileWizards
+      - title: Settings
+        url: /stagenow/2-6/settingconfig
+      - title: Setting Types
+        url: /stagenow/2-6/settingtypes
+      - title: Device Staging
+        url: /stagenow/2-6/stageclient
+    versions:
+      - url: stagenow/2-6/about
+        label: '2.6'
+      - url: stagenow/2-5/about
+        label: '2.5'
+      - url: stagenow/2-4/about
+        label: '2.4'
+      - url: stagenow/2-3/about
+        label: '2.3'
+      - url: stagenow/2-2/about
+        label: '2.2'
 menu:
   items:
     - title: About TechDocs

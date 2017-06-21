@@ -4,7 +4,7 @@ title: Available Product Documentation
 layout: list-products.html
 products: 
   - title: Scanning
-    description: DataWedge: Add scaning to an existing app (easiest, no code)<br>SimulScan: Capture all data from a form at once (easy, some setup)<br>Enterprise Browser: build cross-platform apps with HTML5 (moderate; some code)<br>EMDK for Android or Xamarin: Build or modify Java or C# apps (difficult; much code)  
+    description: DataWedge- Add scaning to an existing app (easiest, no code)<br>SimulScan- Capture all data from a form at once (easy, some setup)<br>Enterprise Browser- build cross-platform apps with HTML5 (moderate; some code)<br>EMDK for Android or Xamarin- Build or modify Java or C# apps (difficult; much code)  
     url: ../
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs

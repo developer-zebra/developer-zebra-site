@@ -3,56 +3,35 @@ publish: false
 title: Available Product Documentation
 layout: list-products.html
 products: 
-  - title: AppGallery
-    description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
-    url: https://developer.zebra.com/docs/DOC-3040
-    image: /images/products/AppGallery.png
-    btn-text: Latest Docs
-    sections:
-      - title: About
-        url: https://developer.zebra.com/docs/DOC-3035
-      - title: Admin
-        url: https://developer.zebra.com/docs/DOC-4151
-      - title: AppGallery Mobile
-        url: https://developer.zebra.com/docs/DOC-3071
-      - title: Supported Devices
-        url: https://developer.zebra.com/docs/DOC-3853
-      - title: Help Index
-        url: https://developer.zebra.com/docs/DOC-3040
-      - title: Download
-        url: /appgallery/download
-    versions:
-      - url: https://developer.zebra.com/docs/DOC-3040
-        label: '3.0'
-  - title: DataWedge
-    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
-    url: /datawedge/6-3/guide/about
+  - title: Scanning
+    description: DataWedge: Add scaning to an existing app (easiest, no code)<br>SimulScan: Capture all data from a form at once (easy, some setup)<br>Enterprise Browser: build cross-platform apps with HTML5 (moderate; some code)<br>EMDK for Android or Xamarin: Build or modify Java or C# apps (difficult; much code)  
+    url: ../
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
-      - title: About
-        url: /datawedge/6-3/guide/about
-      - title: Setup
-        url: /datawedge/6-3/guide/setup
-      - title: Profiles
-        url: /datawedge/6-3/guide/profiles
-      - title: Settings
-        url: /datawedge/6-3/guide/settings
-      - title: MSR
-        url: /datawedge/6-3/guide/input/msr
-      - title: APIs
-        url: /datawedge/6-3/guide/api
-      - title: Demo App
-        url: /datawedge/6-3/guide/demo
+      - title: DataWedge
+        url: ../../datawedge
+      - title: SimulScan
+        url: ../../simulscan
+      - title: Enterprise Browser
+        url: ../../enterprise-browser
+      - title: EMDK for Android
+        url: ../../emdk-for-android
+      - title: EMDK for Xamarin
+        url: ../../emdk-for-xamarin
     versions:
-      - url: datawedge/6-3/guide/about
-        label: '6.3'      
-      - url: datawedge/6-2/guide/about
-        label: '6.2'
-      - url: datawedge/6-0/guide/about
-        label: '6.0'
-      - url: datawedge/5-0/guide/about
-        label: '5.0'
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: ../../datawedge
+        label: 'DataWedge'
+      - url: ../../simulscan
+        label: 'SimulScan'
+      - url: ../../enterprise-browser
+        label: 'Enterprise Browser'
+      - url: ../../emdk-for-android
+        label: 'EMDK for Android'
+      - url: ../../emdk-for-xamarin/
+        label: 'EMDK for Xamarin'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/6-4/guide/about
@@ -250,9 +229,9 @@ products:
     versions:
       - url: simulscan/1-1/guide/about
         label: '1.1'
-  - title: StageNow
-    description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-6/about
+  - title: Use Cases
+    description: Not sure where to go? Click on "Use Cases" to determine which Zebra tool best suits the skills, experience and needs of your development organization.
+    url: /techdocs/usecases
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
@@ -290,4 +269,3 @@ menu:
     - icon: fa fa-search
       url: /techdocs/search
 ---
-

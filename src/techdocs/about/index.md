@@ -1,7 +1,7 @@
 ---
 title: About Techdocs
 layout: guide.html
-product:
+product: About
 productversion:
 ---
 

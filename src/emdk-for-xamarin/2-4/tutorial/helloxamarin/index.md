@@ -7,13 +7,6 @@ productversion: '2.4'
 
 This document contains step by step instructions for using EMDK Api's in a new Xamarin application from scratch. It covers adding the component to the project, using profile manager, using basic APIs
 
-##Prerequisites
-Before starting this tutorial you must install the following software.
-
-- Visual Studio 2013 or 2015
-- [Xamarin Plaform](http://xamarin.com/download)
-- [Symbol EMDK for Xamarin Add-in for Visual Studio](/emdk-for-xamarin/2-4/guide/vs/setup/)
-
 
 ##Create a new project
 When creating a project for this tutorial use the project name **GettingStartedTutorial**
@@ -315,8 +308,8 @@ Now that we are finish with our first EMDK for Xamarin application, lets see how
 5. The Status Message should now read `Profile applied successfully ...`. You should see the Time on the devices Notification Bar change to the time you set the Clock profile. You can also pull the Notification Bar down and see that the Date has changed to the Date you set in the Clock profile.
 
 
-##Download the Source
-The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/GettingStartedTutorial.zip).
+<!--##Download the Source
+The project source to this tutorial can be [downloaded (Internet Connection Required)](https://github.com/EMDK/xamarin-samples/archive/GettingStartedTutorial.zip).-->
 
 
 

@@ -4,10 +4,10 @@ title: Document Capture
 description: "This sample application will show how the Simulscan API's can be used to capture multiple types of data from paper forms."
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_4/archive/SimulScanSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforxamarin-2_4/archive/SimulScanSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_4/tree/SimulScanSample1'
+    url: 'https://github.com/Zebra/samples-emdkforxamarin-2_4/tree/SimulScanSample1'
 features:
   - Profile Manager
   - Simulscan
@@ -22,8 +22,8 @@ screenshots:
   - 3.png
   - 4.png
 layout: sample.html
-product: EMDK For Android
-productversion: '6.4'
+product: EMDK For Xamarin
+productversion: '2.4'
 ---
 
 
@@ -38,18 +38,19 @@ You will need:
 * A Simulscan template
 * A printed copy of the form used to create the template
 
-Follow the template generation and device licensing sections of the [SimulScan API tutorial](/emdk-for-android/6-4/tutorial/tutSimulScanAPI)
-
->Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
 
 ##Requirements
 Android API 19 must be installed via the SDK Manager before attempting to load this sample.
 
 
 ##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/6-4/guide/emdksamples_androidstudio)
+1. Choose a sample and click the **See Details** button.
+2. Now click the **Download** button 
+3. Extract the downloaded project zip file.
+4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project will load in the default IDE for that file type.
+
+Alternatively, you can Launch your prefered IDE ( Visual Studio or Xamarin Studio ) and load the project via the File > Open menu.  
 
 
 ##Using This Sample

@@ -4,7 +4,7 @@ title: EMDK For Android Samples
 layout: list-samples.html
 downloads:
   - title: Android Studio Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_0/archive/AllSamples.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_4/archive/AllSamples.zip'
 product: EMDK For Android
 productversion: '6.4'
 ---

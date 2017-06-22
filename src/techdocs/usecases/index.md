@@ -3,8 +3,8 @@ publish: false
 title: Available Product Documentation
 layout: list-products.html
 products: 
-  - title: Scanning
-    description: DataWedge adds scanning to any app without coding; SimulScan captures all data from forms without coding; Enterprise Browser builds cross-platform scanning apps with easy HTML5 coding; EMDK for Android or Xamarin SDKs build or modify Java or C# apps. 
+  - title: Scan (minimal coding)
+    description: DataWedge adds scanning to any app without coding; SimulScan captures all data from forms without coding; Enterprise Browser builds cross-platform scanning apps with minimal coding. 
     url: ../usecases
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
@@ -15,10 +15,6 @@ products:
         url: ../../simulscan
       - title: Enterprise Browser
         url: ../../enterprise-browser
-      - title: EMDK for Android
-        url: ../../emdk-for-android
-      - title: EMDK for Xamarin
-        url: ../../emdk-for-xamarin
     versions:
       - url: /techdocs/usecases
         label: 'Select a Tool'      
@@ -28,54 +24,62 @@ products:
         label: 'SimulScan'
       - url: ../../enterprise-browser
         label: 'Enterprise Browser'
-      - url: ../../emdk-for-android
-        label: 'EMDK for Android'
-      - url: ../../emdk-for-xamarin/
-        label: 'EMDK for Xamarin'
+  - title: Scan (full app coding)
+    description: Use EMDK for Android or Xamarin SDKs to build or modify Java or C# apps. 
+    url: ../usecases
+    image: /images/products/emdk-for-android.png
+    btn-text: Latest Docs
+    sections:
+      - title: EMDK for Android
+        url: ../../emdk-for-android
+      - title: EMDK for Xamarin
+        url: ../../emdk-for-xamarin
   - title: Printing
-    description: Zebra offers several output solutions that range from simple line printing from an Enterprise Browser app to the development of printer firmware using Link-OS.     
+    description: Zebra offers several output solutions that range from simple line printing from an Enterprise Browser app to the development of printer apps and firmware using Link-OS.     
     url: ../usecases
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: Enterprise Browser
         url: /enterprise-browser/1-6/guide/printingGuide/
-      - title: Getting Started
-        url: /emdk-for-android/6-4/guide/gettingstarted
-      - title: Tutorials
-        url: /emdk-for-android/6-4/tutorial/
+      - title: Android Printing
+        url: /link-os/latest/android_btle
+      - title: Xamarin Printing
+        url: /link-os/latest/xamarin
+      - title: iOS Printing
+        url: /link-os/latest/ios
+      - title: Windows Mobile/CE Printing
+        url: /link-os/latest/pc
+      - title: C# to Android
+        url: /link-os/latest/webservices
       - title: Samples
-        url: /emdk-for-android/6-4/samples
-      - title: Guides
-        url: /emdk-for-android/6-4/guide/programming-guides
-      - title: Profile Manager
-        url: /emdk-for-android/6-4/guide/profile-manager-guides
-      - title: APIs
-        url: /emdk-for-android/6-4/api
+        url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
     versions:
-      - url: emdk-for-android/6-4/guide/about/
-        label: '6.4'
-      - url: emdk-for-android/6-3/guide/about/
-        label: '6.3'
-      - url: emdk-for-android/6-0/guide/about/
-        label: '6.0'
-      - url: emdk-for-android/5-0/guide/about/
-        label: '5.0'
-      - url: emdk-for-android/4-2/guide/about/
-        label: '4.2'
-      - url: emdk-for-android/4-0/guide/about/
-        label: '4.0'
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: /enterprise-browser/1-6/guide/printingGuide/
+        label: 'Enterprise Browser'
+      - url: /link-os/latest/android_btle
+        label: 'Android Printing'
+      - url: /link-os/latest/xamarin
+        label: 'Xamarin Printing'
+      - url: /link-os/latest/ios
+        label: 'iOS Printing'
+      - url: /link-os/latest/pc
+        label: 'Windows Mobile/CE Printing'
+      - url: /link-os/latest/webservices
+        label: 'C# to Android Printing'
   - title: Security
-    description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
-    url: /emdk-for-xamarin/2-4/guide/about
+    description: Zebra device security ranges from simple, feature-based solutions to whole-device lock-down and encryption.
+    url: ../usecases
     btn-text: Latest Docs
-    image: /images/products/emdk-for-xamarin.png
+    image: /ehs/ehs-logo.png
     sections:
       - title: Enterprise Home Screen
         url: /ehs
-      - title: Enterprise Browser Security
+      - title: Enterprise Browser
         url: /enterprise-browser/1-6/guide/security
-      - title: Device Security
+      - title: Android Security
         url: /stagenow/2-3/Profiles/managesecurity/
       - title: Device Encryption
         url: /mx/encryptmgr/
@@ -83,129 +87,99 @@ products:
         url: /emdk-for-android/6-3/.../ScannerConfig.SecurityLevel.html
       - title: Device Persistence
         url: /mx/persistmgr/
-      - title: APIs
-        url: /emdk-for-xamarin/2-4/api
     versions:
-      - url: emdk-for-xamarin/2-4/guide/about/
-        label: '2.4'
-      - url: emdk-for-xamarin/2-3/guide/about/
-        label: '2.3'
-      - url: emdk-for-xamarin/2-2/guide/about/
-        label: '2.2'
-      - url: emdk-for-xamarin/2-1/guide/about/
-        label: '2.1'
-      - url: emdk-for-xamarin/2-0/guide/about/
-        label: '2.0'
-      - url: emdk-for-xamarin/1-0/guide/about/
-        label: '1.0'
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: /enterprise-browser/1-6/guide/security
+        label: 'Enterprise Browser'
+      - url: /stagenow/2-3/Profiles/managesecurity/
+        label: 'Android Security'
+      - url: /mx/encryptmgr/
+        label: 'Device Encryption'
+      - url: /emdk-for-android/6-3/.../ScannerConfig.SecurityLevel.html
+        label: 'Scanner Security Level (Android app)'
+      - url: /mx/persistmgr/
+        label: 'Device Persistence'
   - title: Android Development
-    description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
-    url: /enterprise-browser/1-6/guide/about
+    description: Enterprise Browser apps use HTML5 and work with most Zebra devices; EMDK uses Java or Xamarin to target Zebra devices with full enterprise control of features and source code.
+    url: ../usecases
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
-      - title: EMDK for Android
-        url: /enterprise-browser/1-6/guide/about
       - title: Enterprise Browser
-        url: /enterprise-browser/1-6/guide/gettingstarted/
-      - title: Setup
-        url: /enterprise-browser/1-6/guide/setup/
-      - title: Tutorials
-        url: /enterprise-browser/1-6/tutorial/
-      - title: Usage Guides
-        url: /enterprise-browser/1-6/guide
-      - title: Config.xml
-        url: /enterprise-browser/1-6/guide/configreference
-      - title: APIs
-        url: /enterprise-browser/1-6/api
+        url: ../../enterprise-browser 
+      - title: EMDK for Android
+        url: ../../emdk-for-android
+      - title: EMDK for Xamarin
+        url: ../../emdk-for-xamarin
     versions:
-      - url: enterprise-browser/1-6/guide/about
-        label: '1.6'
-      - url: enterprise-browser/1-5/guide/about
-        label: '1.5'
-      - url: enterprise-browser/1-4/guide/about
-        label: '1.4'
-  - title: Xamarin (C#) Development
-    description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
-    url: /ehs/2-5/guide/about
-    image: /ehs/ehs-logo.png
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: ../../enterprise-browser
+        label: 'Enterprise Browser'
+      - url: ../../emdk-for-xamarin/
+        label: 'EMDK for Xamarin (C#)'
+  - title: Windows Development
+    description: Enterprise Browser apps use HTML5 and work with most Zebra devices. WHAT ELSE DOES ZEBRA OFFER WINDOWS DEVELOPERS?
+    url: ../usecases
+    image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
-      - title: About
+      - title: fake
         url: /ehs/2-5/guide/about
-      - title: Setup
+      - title: fake
         url: /ehs/2-5/guide/setup
-      - title: Advanced Settings
+      - title: fake
         url: /ehs/2-5/guide/settings
-      - title: Special Features
+      - title: fake
         url: /ehs/2-5/guide/features
-      - title: Download
+      - title: fake
         url: /ehs/2-5/download
     versions:
-      - url: ehs/2-5/guide/about/
-        label: '2.5'
-      - url: ehs/2-4/guide/about/
-        label: '2.4'
-      - url: ehs/2-3/guide/about/
-        label: '2.3'
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: ../../enterprise-browser
+        label: 'Enterprise Browser'
+      - url: ../../emdk-for-xamarin/
+        label: 'EMDK for Xamarin (C#)'
   - title: Migration and Modernization
     description: Zebra solutions can put a modern face apps that use terminal emulation or help move apps from older platforms to modern ones.  
-    url: /link-os
+    url: ../usecases
     image: /images/products/link-os.png
     sections:
-      - title: All Touch TE
+      - title: All Touch TE (fake)
         url: /link-os/latest/android
       - title: Pocket Browser
-        url: /link-os/latest/android_btle
+        url: /enterprise-browser/1-6/guide/pb2/
       - title: Rho Elements
-        url: /link-os/latest/xamarin
+        url: /enterprise-browser/1-6/guide/elements/
       - title: Rho Mobile
-        url: /link-os/latest/ios
+        url: /enterprise-browser/1-6/guide/rhomobile/
       - title: Windows Mobile/CE
-        url: /link-os/latest/pc
+        url: /emdk-for-xamarin/2-4/guide/about/
       - title: C# to Android
-        url: /link-os/latest/webservices
-      - title: Samples
-        url: https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE
-  - title: MX
-    description: Zebra’s Mobility DNA - an added layer of enterprise-class security and manageability for Android devices.
-    url: /mx
-    image: /images/products/mx.png
-    sections:
-      - title: About
-        url: /mx/overview
-      - title: Compatibility
-        url: /mx/compatibility
-      - title: Which version do I have?
-        url: /mx/mx-version-on-device
+        url: /emdk-for-xamarin/2-4/guide/about/
     versions:
-      - url: mx
-        label: '6.3'      
-      - url: mx/mxvt
-        label: 'Value Tier'
-  - title: SimulScan
-    description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
-    url: /simulscan/1-1/guide/about
-    btn-text: Latest Guides
-    image: /simulscan/simulscan_logo.png
-    sections:
-      - title: About
-        url: /simulscan/1-1/guide/about
-      - title: Setup
-        url: /simulscan/1-1/guide/setup
-      - title: Template Builder
-        url: /simulscan/1-1/guide/templatebuilder
-      - title: Glossary
-        url: /simulscan/1-1/guide/glossary
-      - title: APIs
-        url: /simulscan/1-1/api
-      - title: Demo App
-        url: /simulscan/1-1/guide/demo
-      - title: Licensing
-        url: /simulscan/1-1/guide/license
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: ../../enterprise-browser
+        label: 'Enterprise Browser'
+      - url: ../../emdk-for-xamarin/
+        label: 'EMDK for Xamarin (C#)'
+  - title: Scan (minimal coding)
+    description: DataWedge adds scanning to any app without coding; SimulScan captures all data from forms without coding; Enterprise Browser builds cross-platform scanning apps with minimal coding. 
+    url: ../usecases
+    image: /datawedge/datawedge_logo.png
+    btn-text: Latest Docs
     versions:
-      - url: simulscan/1-1/guide/about
-        label: '1.1'
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: ../../datawedge
+        label: 'DataWedge'
+      - url: ../../simulscan
+        label: 'SimulScan'
+      - url: ../../enterprise-browser
+        label: 'Enterprise Browser'
 menu:
   items:
     - title: About TechDocs
@@ -217,3 +191,15 @@ menu:
     - icon: fa fa-search
       url: /techdocs/search
 ---
+
+<!-- from the "full app coding" section:
+
+    versions:
+      - url: /techdocs/usecases
+        label: 'Select a Tool'      
+      - url: ../../emdk-for-android
+        label: 'EMDK for Android'
+      - url: ../../emdk-for-xamarin/
+        label: 'EMDK for Xamarin'
+
+-->

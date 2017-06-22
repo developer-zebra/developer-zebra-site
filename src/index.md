@@ -285,29 +285,18 @@ products:
     btn-text: Latest Guides
     image: /images/products/blue-question-mark.jpg
     sections:
-      - title: Getting Started
-        url: /stagenow/2-6/gettingstarted
-      - title: Profiles
-        url: /stagenow/2-6/stagingprofiles
-      - title: Profile Wizards
+      - title: About TechDocs
+        url: /techdocs/about
+      - title: Zebra Devices
+        url: https://www.zebra.com/us/en/products.html
+      - title: Zebra Services
         url: /stagenow/2-6/ProfileWizards
-      - title: Settings
+      - title: Zebra Solutions
+        url: https://www.zebra.com/us/en/solutions.html
+      - title: Zebra Support
         url: /stagenow/2-6/settingconfig
-      - title: Setting Types
-        url: /stagenow/2-6/settingtypes
-      - title: Device Staging
-        url: /stagenow/2-6/stageclient
-    versions:
-      - url: stagenow/2-6/about
-        label: '2.6'
-      - url: stagenow/2-5/about
-        label: '2.5'
-      - url: stagenow/2-4/about
-        label: '2.4'
-      - url: stagenow/2-3/about
-        label: '2.3'
-      - url: stagenow/2-2/about
-        label: '2.2'
+      - title: Developer Portal
+        url: https://developer.zebra.com/welcome
 menu:
   items:
     - title: About TechDocs

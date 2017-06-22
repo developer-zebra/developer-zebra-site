@@ -3,7 +3,7 @@ publish: false
 title: Available Product Documentation
 layout: list-products.html
 products: 
-  - title: Scan (minimal coding)
+  - title: Scanning (minimal coding)
     description: DataWedge adds scanning to any app without coding; SimulScan captures all data from forms without coding; Enterprise Browser builds cross-platform scanning apps with minimal coding. 
     url: ../usecases
     image: /datawedge/datawedge_logo.png
@@ -24,8 +24,8 @@ products:
         label: 'SimulScan'
       - url: ../../enterprise-browser
         label: 'Enterprise Browser'
-  - title: Scan (full app coding)
-    description: Use EMDK for Android or Xamarin SDKs to build or modify Java or C# apps. 
+  - title: Scanning (full app coding)
+    description: Use EMDK for Android or Xamarin SDKs to build or modify Java or C# apps that acquire data on Android devices. 
     url: ../usecases
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
@@ -35,7 +35,7 @@ products:
       - title: EMDK for Xamarin
         url: ../../emdk-for-xamarin
   - title: Printing
-    description: Zebra offers several output solutions that range from simple line printing from an Enterprise Browser app to the development of printer apps and firmware using Link-OS.     
+    description: Zebra output solutions range from simple line printing from an Enterprise Browser to the development of printer apps and firmware using Link-OS.     
     url: ../usecases
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
@@ -70,7 +70,7 @@ products:
       - url: /link-os/latest/webservices
         label: 'C# to Android Printing'
   - title: Security
-    description: Zebra device security ranges from simple, feature-based solutions to whole-device lock-down and encryption.
+    description: Zebra security ranges from simple, feature-based solutions to whole-device lock-down and encryption.
     url: ../usecases
     btn-text: Latest Docs
     image: /ehs/ehs-logo.png
@@ -143,7 +143,7 @@ products:
       - url: ../../emdk-for-xamarin/
         label: 'EMDK for Xamarin (C#)'
   - title: Migration and Modernization
-    description: Zebra solutions can put a modern face apps that use terminal emulation or help move apps from older platforms to modern ones.  
+    description: Migration tools can put a new face on older apps, modernize apps for terminal emulation or help move apps from older platforms to new ones.  
     url: ../usecases
     image: /images/products/link-os.png
     sections:

@@ -783,6 +783,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-6/'
     }))
     .use(foldermenu({
+        folder: 'stagenow/2-7/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({

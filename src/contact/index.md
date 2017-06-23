@@ -3,7 +3,15 @@ title: Contact Us
 layout: guide.html
 index: /index.json
 product: Feedback
-productversion: 
+productversion:
+menu:
+  items:
+    - title: About TechDocs
+      url: /about
+    - title: Feedback
+      url: /contact
+    - icon: fa fa-search
+      url: /search
 ---  
 
 Thank you for using TechDocs. 

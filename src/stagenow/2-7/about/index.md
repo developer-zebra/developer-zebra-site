@@ -42,31 +42,32 @@ Topics covered in this guide:
 ## What's New
 StageNow 2.7 now supports [MX 6.3](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
 
-* [Bug Report Manager](../csp/bugreportmgr) – New Feature
+* [Bug Report Manager](../csp/bugreportmgr) – New CSP features:
  * Set Bug Report Handling to default (Android) or custom (Zebra)
  * Present device-user questionnaire to collect additional information
  * Store an unlimited number of bug report files in available flash
  * Capture audio and attach to bug reports
- * Trigger "silent" bug reports with an intent
+ * Trigger "silent" bug reports with an intent 
  * Enable or Disable:
-    * Generate Bug Report from Power Off Menu
-    * Store reports in flash memory
-    * Send reports to a specified email address
-    * Upload reports to the Zebra Cloud
+	* Generate Bug Report from Power Off Menu
+	* Store reports in flash memory
+	* Send reports to a specified email address
+	* Upload reports to the Zebra Cloud
 
-* [Cellular Manager](../csp/cellular) - Added new feature 
+* [Cellular Manager](../csp/cellular) - New features: 
  * Avoid garbled UI when CellularDataWarningValue was higher than CellularDataLimitValue
- * Accept the value 2 for CellularDataLimitState
+ * Accept the value "2" for CellularDataLimitState
 
-* [Threat Manager](../csp/threat) - Added feature to detect rooted device detection
+* [Threat Manager](../csp/threat) - Added feature to detect rooted device
 * [Key Mapping Manager](../csp/keymap) – Added key mapping support for NAV PAD Button
 * [Touch Manager](../csp/touch) – Touch Mode support for ET5X M devices
 * [License Manager](../csp/license) - Bug fixes
  * Ability to select custom feature name or standard feature name
 
 * [DHCP Option Manager](../csp/dhcp) - Added new Feature
- * Added new feature to enable/disable features such as client identifier, FQDN and add custom DHCP options such as Vendor Specific 230
+ * Enable/disable features such as client identifier and FQDN
+ * Add several new vendor-specific DHCP options
 
-* [Remote Scanner Manager](../csp/rsm) –  Added support for DS3678 Bluetooth scanner with the features such as firmware update, paging
+* [Remote Scanner Manager](../csp/rsm) – Supports DS3678 Bluetooth scanner with the features such as firmware update and paging
 * [Enterprise Keyboard](/enterprise-keyboard/1-4/guide/about/) - Feature is removed; this tool can now be downloaded a user app
-* [Personal Dictionary](../csp/personaldictionary) - Added an option to bulk-add dictionary words from a file
+* [Personal Dictionary](../csp/personaldictionary) - Adds the ability to bulk-add dictionary words from a file

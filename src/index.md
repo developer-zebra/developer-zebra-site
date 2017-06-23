@@ -256,6 +256,8 @@ products:
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
+      - title: About
+        url: /stagenow/2-7/about
       - title: Getting Started
         url: /stagenow/2-7/gettingstarted
       - title: Profiles

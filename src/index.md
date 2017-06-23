@@ -272,6 +272,8 @@ products:
         url: /stagenow/2-7/settingtypes
       - title: Device Staging
         url: /stagenow/2-7/stageclient
+      - title: Download
+        url: /stagenow/2-7/download
     versions:
       - url: stagenow/2-7/about
         label: '2.7'

@@ -38,7 +38,7 @@ See [Upgrading the StageNow Workstation Tool](../installing?Upgrading%20the%20St
 
 To install the Workstation Tool:
 
-1. Download the setup package staging_solution.[Version Number].exe.
+1. Visit the [StageNow download page](../download) and download the setup package staging_solution.[Version Number].exe.
 
 2. Double-click the setup package file.
 

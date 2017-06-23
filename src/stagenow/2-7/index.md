@@ -40,6 +40,8 @@ menu:
       url: /stagenow/2-7/stageclient
     - title: Troubleshooting
       url: /stagenow/2-7/troubleshooting
+    - icon: fa fa-download
+      url: /stagenow/2-7/download    
     - icon: fa fa-search
       url: /stagenow/2-7/search
 product: Stagenow

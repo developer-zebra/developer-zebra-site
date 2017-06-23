@@ -1,6 +1,6 @@
 ---
 publish: false
-title: Available Product Documentation
+title: Zebra TechDocs
 layout: list-products.html
 products: 
   - title: AppGallery
@@ -287,18 +287,8 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-menu:
-  items:
-    - title: About TechDocs
-      url: /about
-    - title: Feedback
-      url: /contact
-    - icon: fa fa-search
-      url: /search
----
-<!--
   - title: I need to...
-    description: Not sure where to go? Click on "I need to..." for help figuring out which Zebra tool best suits the skills, experience and requirements of your organization.
+    description: Not sure where to go? Click on "I need to..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
     image: /images/products/blue-question-mark.jpg
@@ -317,5 +307,14 @@ menu:
         url: /stagenow/2-6/settingconfig
       - title: Developer Portal
         url: https://developer.zebra.com/welcome
-
--->
+menu:
+  items:
+    - title: About TechDocs
+      url: /about
+    - title: I need to...
+      url: /help
+    - title: Feedback
+      url: /contact
+    - icon: fa fa-search
+      url: /search
+---

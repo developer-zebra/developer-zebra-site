@@ -8,6 +8,8 @@ menu:
   items:
     - title: About TechDocs
       url: /about
+    - title: In need to...
+      url: /help
     - title: Feedback
       url: /contact
     - icon: fa fa-search

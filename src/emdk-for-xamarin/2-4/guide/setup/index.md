@@ -6,13 +6,10 @@ productversion: '2.4'
 ---
 
 ##Before you get started
-In order to use the EMDK for Xamarin, you must have the Xamarin Platform installed on your development system. When developing on Windows, you will need to use Microsoft Visual Studio 2013 or 2015 as your development environment. When developing on Mac you will need to use Xamarin Studio as your development environment. Xamarin Studio will be installed as part of the Xamarin Platform on Mac.  Zebra does not provide licenses for Microsoft Visual Studio or licenses for Xamarin Platform. Further information on obtaining licenses or getting started with these products, can be found at the following sections.
+In order to use the EMDK for Xamarin, you must have the Xamarin Platform installed on your development system. When developing on Windows, you will need to use Microsoft Visual Studio 2013, 2015, or 2017 as your development environment. When developing on Mac you will need to use Xamarin Studio as your development environment. Xamarin Studio will be installed as part of the Xamarin Platform on Mac.  Zebra does not provide licenses for Microsoft Visual Studio or licenses for Xamarin Platform. 
 
 ###Development Environment
 Consult the [Xamarin](http://developer.xamarin.com/guides/android/getting_started/) and [Microsoft documentation](https://www.visualstudio.com/downloads/download-visual-studio-vs) for installing and setting up Xamarin.Android, Visual Studio(Windows) or Xamarin Studio(Mac):
-
-
-
 
 
 ##Getting Started

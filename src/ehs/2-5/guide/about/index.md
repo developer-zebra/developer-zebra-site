@@ -83,7 +83,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
     *</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -97,7 +97,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -167,6 +167,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
+<tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
@@ -180,7 +181,19 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
-
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC70x</font></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;">
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
@@ -254,6 +267,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **[TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes))
 * **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes)) 
 * **The [MC67]() Mobile Computer Series** running Android 4.4 KitKat (see [Android 4.4 Notes](#androidkitkatnotes)) 
+
+#### Update for June, 2017:
+
+* **Support added for [MC18](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc1x-personal-shopper-series.html) and [MC40](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc40-mobile-computer-series.html) running Lollipop**
+* **Support added for [TC70x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) running Marshmallow** 
 
 #### EHS 2.5 No Longer Supports:
 * **Devices with Android 4.1.2 Jelly Bean**

@@ -1,6 +1,6 @@
 ---
 publish: false
-title: Available Product Documentation
+title: Zebra TechDocs
 layout: list-products.html
 products: 
   - title: AppGallery
@@ -173,19 +173,21 @@ products:
         label: '2.3'
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-3/guide/about
+    url: /enterprise-keyboard/1-4/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-3/guide/about
+        url: /enterprise-keyboard/1-4/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-3/guide/setup
+        url: /enterprise-keyboard/1-4/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-3/guide/settings
+        url: /enterprise-keyboard/1-4/guide/settings
       - title: Download
-        url: /enterprise-keyboard/1-3/download
+        url: /enterprise-keyboard/1-4/download
     versions:
+      - url: enterprise-keyboard/1-4/guide/about
+        label: '1.4'
       - url: enterprise-keyboard/1-3/guide/about
         label: '1.3'
       - url: enterprise-keyboard/1-2/guide/about
@@ -254,23 +256,29 @@ products:
         label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-6/about
+    url: /stagenow/2-7/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
+      - title: About
+        url: /stagenow/2-7/about
       - title: Getting Started
-        url: /stagenow/2-6/gettingstarted
+        url: /stagenow/2-7/gettingstarted
       - title: Profiles
-        url: /stagenow/2-6/stagingprofiles
+        url: /stagenow/2-7/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-6/ProfileWizards
+        url: /stagenow/2-7/ProfileWizards
       - title: Settings
-        url: /stagenow/2-6/settingconfig
+        url: /stagenow/2-7/settingconfig
       - title: Setting Types
-        url: /stagenow/2-6/settingtypes
+        url: /stagenow/2-7/settingtypes
       - title: Device Staging
-        url: /stagenow/2-6/stageclient
+        url: /stagenow/2-7/stageclient
+      - title: Download
+        url: /stagenow/2-7/download
     versions:
+      - url: stagenow/2-7/about
+        label: '2.7'
       - url: stagenow/2-6/about
         label: '2.6'
       - url: stagenow/2-5/about
@@ -281,13 +289,34 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
+  - title: I need to...
+    description: Not sure where to go? Click on "I need to..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
+    url: /help
+    btn-text: Latest Guides
+    image: /images/products/blue-question-mark.jpg
+    sections:
+      - title: About TechDocs
+        url: /about
+      - title: TechDocs Help
+        url: /help
+      - title: Zebra Devices
+        url: https://www.zebra.com/us/en/products.html
+      - title: Zebra Services
+        url: /stagenow/2-6/ProfileWizards
+      - title: Zebra Solutions
+        url: https://www.zebra.com/us/en/solutions.html
+      - title: Zebra Support
+        url: /stagenow/2-6/settingconfig
+      - title: Developer Portal
+        url: https://developer.zebra.com/welcome
 menu:
   items:
     - title: About TechDocs
-      url: /techdocs/about
+      url: /about
+    - title: I need to...
+      url: /help
     - title: Feedback
-      url: /techdocs/contact
+      url: /contact
     - icon: fa fa-search
-      url: /techdocs/search
+      url: /search
 ---
-

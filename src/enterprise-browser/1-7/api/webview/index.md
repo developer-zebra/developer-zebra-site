@@ -193,6 +193,48 @@ Synchronous Return:
 	* <code>EB.WebView.refresh(<span class="text-info">INTEGER</span> tabIndex)</code> 
 
 
+### resizeWebviewLayout(<span class="text-info">INTEGER</span> left, <span class="text-info">INTEGER</span> top, <span class="text-info">INTEGER</span> width, <span class="text-info">INTEGER</span> height)
+Resize the WebView layout parameters with the specified left, top, width and height values in Enterprise Browser application.
+
+####Parameters
+<ul><li>left : <span class='text-info'>INTEGER</span><p>Specifies the initial horizontal position of the webView layout in pixels.</p></li><li>top : <span class='text-info'>INTEGER</span><p>Specifies the initial vertical position of the webView layout in pixels.</p></li><li>width : <span class='text-info'>INTEGER</span><p>Specifies the width of the webView layout in pixels. The maximum value should not be greater than device Width.</p></li><li>height : <span class='text-info'>INTEGER</span><p>Specifies the height of the webView layout in pixels. The maximum value should not be greater than device Height.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.resizeWebviewLayout(<span class="text-info">INTEGER</span> left, <span class="text-info">INTEGER</span> top, <span class="text-info">INTEGER</span> width, <span class="text-info">INTEGER</span> height)</code>
+
+
+### resetWebviewLayout()
+Reset the WebView layout to default in Enterprise Browser application.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.resetWebviewLayout()</code>
+
+
 ### save(<span class="text-info">STRING</span> format, <span class="text-info">STRING</span> path, <span class="text-info">INTEGER</span> tabIndex)
 Save current page to file system.
 

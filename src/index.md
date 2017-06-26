@@ -313,7 +313,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: I need to...
+    - title: I Need To...
       url: /help
     - title: Feedback
       url: /contact

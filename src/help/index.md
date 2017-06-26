@@ -6,7 +6,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: I need to...
+    - title: I Need To...
       url: /help
     - title: Feedback
       url: /contact
@@ -22,7 +22,8 @@ Zebra Technologies provides devices for the enterprise to acquire, process and c
 ## Scan
 Zebra mobile and touch computers are equipped with a variety of scanning devices, each of which can be accessed through software included with the device or with apps developed by a partner or customer. Zebra's solutions are described below in order from easiest (and with the least coding required) to the most powerful and complex.  
 
-### DataWedge - Easiest; Coding Optional
+### DataWedge - Add scanning to existing app
+#### Easiest: minimal setup, coding optional
 
 [DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to add scanning to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without using the scanner APIs directly. DataWedge can be configured in minutes to automatically activate a particular scanner or reader whenever a particular app is launched, and can manipulate and hand off acquired data according to simple or complex rules. 
 
@@ -32,7 +33,8 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 
 -----
 
-### SimulScan - Easy, No Coding; Some Setup Required
+### SimulScan
+#### Easy: moderate setup time, coding optional 
 
 [SimulScan](../simulscan) is included only with [supported devices](../simulscan/1-1/guide/about/#supporteddevices), and is designed to optimize workflow by enabling acquisition of multiple points of data in a single step. SimulScan is well suited to organizations in which scanning is frequent, and scanned forms have one or more barcodes, or if multiple data types (such as barcodes, text and images) are to be acquired. Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. 
 
@@ -41,6 +43,9 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 **CONS**: Limited device support; longer setup time than DataWedge; subject to per-device licensing
 
 -----
+
+### Enterprise Browser
+#### 
 
 [Enterprise Browser](../enterprise-browser) is a small-footprint web browser for which apps can be built   
 

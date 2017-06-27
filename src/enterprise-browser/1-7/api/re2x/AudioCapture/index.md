@@ -6,7 +6,7 @@ layout: guide.html
 subhead: RhoElements 2.x API
 ---
 
-##Overview
+## Overview
 The AudioCapture Module captures audio files from the default microphone device.
 
 ## Syntax

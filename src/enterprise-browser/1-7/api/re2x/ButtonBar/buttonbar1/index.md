@@ -57,6 +57,12 @@ The following example demonstrates how to show the buttonBar via injecting metat
 	<META HTTP-Equiv="ButtonBar1" Content="Visibility:Visible">
 	<META HTTP-Equiv="ButtonBar1" Content="Visibility:Hidden">
 	
+Alternatively you can also show a particular ButtonBar on all pages of your application using DefaultMetaTags tag in Config.xml without changing your server application code. Please include the following in the DefaultMetaTags section in Config.xml.
+
+	<DefaultMetaTags>
+		<MetaTag value="ButtonBar1~visibility:visible;"/>
+	</DefaultMetaTags>
+	
 The following example demonstrates how to show/hide the ButtonBar via JavaScriptable objects.
 
 	<script>

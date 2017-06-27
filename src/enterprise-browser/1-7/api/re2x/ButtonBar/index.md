@@ -12,6 +12,10 @@ automenu:
           url: ../../../guide/compatibility
         - title: ButtonBar Usage Guides
           url: ../../../guide
+        - title: ButtonBar Configuration Parameter
+          url: ../../../guide/configreference
+        - title: Custom Script Definition Guide
+          url: ../../../guide
     - title: ButtonBar API's
       items:
         - title: ButtonBar1

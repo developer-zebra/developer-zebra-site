@@ -259,7 +259,7 @@ For users migrating their PocketBrowser apps to RhoElements please note that due
 	<tr>
 		<th class="tableHeading">Supported Devices</th>
 		<td class="clsSyntaxCell clsEvenRow">
-			All supported devices. Enterprise Tablet does not support Smart battery information, getBatteryStatus, sampleInterval, setSystemNotifications and eventSource.
+			All supported devices.
 		</td>
 	</tr>
 	<tr>

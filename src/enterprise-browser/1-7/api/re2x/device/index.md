@@ -18,7 +18,7 @@ By default the JavaScript Object <b>'device'</b> will exist on the current page 
 To Invoke device methods via JavaScript use the following syntax: device.method();
 <P />e.g. <b>device</b>.suspend();
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: device.setEMML("[Your EMML Tags]");
+To set multiple <a href="/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: device.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>device</b>.setEMML("suspend");							
 </td></tr></table>

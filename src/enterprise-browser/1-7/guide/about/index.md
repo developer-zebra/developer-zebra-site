@@ -15,16 +15,72 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v1.7
 
-OLD OLD OLD: 
-#### Android Jelly Bean - End of Support
-Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
+### WebView Control
+Enterprise Browser 1.7 exposes features of the Android WebView, giving apps the ability to control settings through the `Config.xml` or EB's WebView API. 
+
+> **These tags apply only to devices running KitKat and higher**. 
+
+### New Configuration tags:
+
+* **[&lt;ApplicationCacheEnabled&gt;](../configreference#applicationcacheenabled) -** allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load.
+
+* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit)-** erases a cached HTML5 app upon exiting it.
+
+* **[&lt;SetCacheMode&gt;](../configreference#setcachemode)-** controls rules for loading pages from cache vs. loading from the server.
+
+* **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit)-**  erases a cached HTML5 app upon exiting it.
+
+* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration)-** controls whether hardware acceleration is used by an EB app.
+
+* **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled)-** controls whether application data is stored locally using HTML5 Web Storage.
+
+* **[&lt;DatabaseEnabled&gt;](../configreference#databaseenabled)-** controls whether to enable the WebSQL database.
+
+* **[&lt;GeoLocationEnabled&gt;](../configreference#geolocationenabled)-** controls whether location data from the device can be consumed by the EB app.
+
+* **[&lt;JavascriptEnabled&gt;](../configreference#javascriptenabled)-** permits JavaScript code execution within an EB app to be toggled on and off.
+
+* **[&lt;SaveFormData&gt;](../configreference#saveformdata)-** determines whether an app will retain data entered by a user into forms, checkboxes and other input elements.
+
+* **[&lt;BlockNetworkImage&gt;](../configreference#blocknetworkimage)-** prevents the app from loading images over a network; allows non-image resources to load.
+
+* **[&lt;BlockNetworkLoads&gt;](../configreference#blocknetworkloads)-** prevents the app from loading all network resources, including images.
+
+* **[&lt;BackgroundColor&gt;](../configreference#backgroundcolor)-** controls the color of the screen in areas apart from those of the app (if not already set by HTML).
+
+* **[&lt;ClearWebData&gt;](../configreference#clearwebdata)-** determines whether WebView data stored by the EB app will be retained when app returns to the foreground after the device HOME key is pressed.
+
+* **[&lt;NavigateToHomePage&gt;](../configreference#navigatetohomepage)-** causes an EB app to display its Start Page when the app returns to the foreground.
+
+* **[&lt;MixedContentMode&gt;](../configreference#mixedcontentmode)-** security feature that can prevent loading of content from insecure sites.
+
+----
+
+### New or Updated APIs
+
+* An updated [WebView API](../../api/webview) provides programmatic control over the Android WebView using the following methods and/or properties:
+
+ * **clearApplicationCache -** erases a cached HTML5 app upon exiting it.
+ * **clearCache -** erases a cached HTML5 app upon exiting it.
+ * **blockNetworkImage -** prevents the app from loading images over a network; allows non-image resources to load.
+ * **blockNetworkLoads -** prevents the app from loading all network resources, including images.
+ * **contentHeight -** returns the height (in pixels) of the current Enterprise Browser page.  
+
+-----
 
 #### Zebra Android Device Support
 Enterprise Browser 1.7 now supports 
 
+#### New or Updated APIs
 
-OLD OLD OLD: 
-new and existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
+#### New or Updated Config Tags 
+
+## New in v1.6
+
+#### Android Jelly Bean - End of Support
+Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
+
+EB 1.6 now supports the following new devices and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
 * **ET50** with Android Lollipop
 * **ET55** with Android Lollipop
@@ -38,9 +94,7 @@ new and existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallo
 
 This release also adds a range of additional new features for all supported Android devices.
 
-#### New or Updated APIs (released with EB 1.7)
-
-OLD OLD OLD: 
+#### New or Updated APIs
 
 * **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and higher**). 
 

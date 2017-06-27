@@ -45,7 +45,9 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 -----
 
 ### Enterprise Browser
-#### 
+#### Easy: moderate setup time; some HTML and JavaScript coding required  
+
+Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](../about#mobile) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
 
 [Enterprise Browser](../enterprise-browser) is a small-footprint web browser for which apps can be built   
 

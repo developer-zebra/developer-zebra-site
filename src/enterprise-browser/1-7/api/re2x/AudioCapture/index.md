@@ -168,9 +168,6 @@ The Audio Save Event is called when the captured audio has been successfully tra
 When multiple RhoElememts applications are running the following considerations should be made: Only the foreground RhoElements application is given access to capture audio, when an application is sent to the background any capture that is in progress will be canceled and it will automatically relinquish control of the Audio hardware.  When brought back to the foreground, an application previously using the audio capture will have its previous configuration (eg. name etc.) reapplied to the plug-in automatically. Please note that any file transfer that is in progress continues even if the application is sent to the background.
 
 ## Remarks
-### Rhodes Applications
-If your application is a 'Rhodes' application then AudioCapture will create a WAV format file with 22050 Hz 16 bit MONO. The destination property only supports a local path. The Code and Username/Password properties are not used. If your application is 'rhoelements' type application, then AudioCapture is automatically added to the application. If your application is built for Android and your application is 'rhoelements' type and you do not setup 'non_motorola_device' capability, then the AudioCapture native extension is removed from the application automatically because in this case, the application already has Zebra rhoelements extension with implementation of the same AudioCapture API.
-
 ### Buffer full
 Once duration has been reached the audio file will be saved or transferred. Calling 'stop' once this has occurred will have no effect.
 

@@ -24,10 +24,10 @@ To Set network parameters via JavaScript use the following syntax: network.param
 To Set network return events via JavaScript use the following syntax: network.event = Javascript Function;
 <P />e.g. <b>network</b>.networkEvent = 'doFunction(%json)';
 <P />
-For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.
+For more details on the event syntax and parameters see the <a href="../RetrievalEvents">Retrieval Events</a> page.
 
 </td></tr><tr><td class="clsSyntaxCells clsOddRow">							
-To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: network.setEMML("[Your EMML Tags]");
+To set multiple <a href="../EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: network.setEMML("[Your EMML Tags]");
 <P />
 e.g. <b>network</b>.setEMML("host:<i>value</i>;networkEvent:url('JavaScript:doFunction(%json)');start");							
 </td></tr></table>

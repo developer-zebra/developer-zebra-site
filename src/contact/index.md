@@ -8,7 +8,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: In need to...
+    - title: I Need To...
       url: /help
     - title: Feedback
       url: /contact

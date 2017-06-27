@@ -12,7 +12,7 @@ automenu:
           url: ../../../guide/compatibility
         - title: Migration Guides
           url: ../../../guide
-    - title: RhoElements 2.x ButtonBar API's
+    - title: ButtonBar API's
       items:
         - title: ButtonBar1
           url: buttonbar1
@@ -36,6 +36,5 @@ automenu:
           url: buttonbar10          
 productversion: '1.7'
 product: Enterprise Browser
-subhead: RhoElements 2.x API
 ---
 

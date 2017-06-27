@@ -56,7 +56,7 @@ The wake functionality can be used along with Push module. For eg: in the push d
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Immediate - These methods are actioned immediately.</td></tr></table>
 
 
-##HTML/JavaScript Examples
+## HTML/JavaScript Examples
 
 The following example put the device into suspend mode:
 

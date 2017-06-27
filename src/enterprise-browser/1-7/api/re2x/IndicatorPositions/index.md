@@ -8,7 +8,7 @@ subhead: RhoElements 2.x API
 
 The Battery and Signal Meta tags use the 'Layout' parameters to specify the layout of the indicator icon.  The examples below illustrate all possible values of layout parameter.
 
-For more information on how to use the <a href="../rhoelements/battery">Battery</a> indicator and the <a href="../rhoelements/signal">Signal</a> indicator please refer to the appropriate help file section.
+For more information on how to use the <a href="../battery">Battery</a> indicator and the <a href="../signal">Signal</a> indicator please refer to the appropriate help file section.
 
 ##Layout:Left
 The following example shows the battery indicator:

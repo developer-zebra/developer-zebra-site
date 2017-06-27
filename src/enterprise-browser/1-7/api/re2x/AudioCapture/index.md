@@ -61,7 +61,7 @@ The AudioCapture Module captures audio files from the default microphone device.
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow">
-			To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: audiocapture.setEMML("[Your EMML Tags]");
+			To set multiple <a href="../EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: audiocapture.setEMML("[Your EMML Tags]");
 			<br/><br/>
 			e.g. <b>audioCapture</b>.setEMML("duration:<i>value</i>;audioSaveEvent:url('JavaScript:doFunction(%json)');start");
 		</td>

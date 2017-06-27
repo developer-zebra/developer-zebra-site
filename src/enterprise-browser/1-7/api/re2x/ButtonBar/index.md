@@ -10,7 +10,7 @@ automenu:
           url: ../../../api
         - title: Compatibility Matrix
           url: ../../../guide/compatibility
-        - title: Migration Guides
+        - title: ButtonBar Usage Guides
           url: ../../../guide
     - title: ButtonBar API's
       items:

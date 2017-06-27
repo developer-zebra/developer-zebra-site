@@ -830,18 +830,8 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-3/'
     }))
-// Tab menus for TechDocs help pages
-    .use(foldermenu({
-        folder: 'about/'
-    }))
-    .use(foldermenu({
-        folder: 'contact/'
-    }))
-    .use(foldermenu({
-        folder: 'search/'
-    }))
-    .use(foldermenu({
-        folder: 'help/'
+       .use(foldermenu({
+        folder: 'enterprise-keyboard/1-4/'
     }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

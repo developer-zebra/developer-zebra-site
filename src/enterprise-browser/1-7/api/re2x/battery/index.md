@@ -56,45 +56,9 @@ subhead: RhoElements 2.x API
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow">
-			To set multiple <a href="/rhoelements/EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: battery.setEMML("[Your EMML Tags]");
+			To set multiple <a href="../EMMLOverview">EMML</a> parameters / events on a single line use the following syntax: battery.setEMML("[Your EMML Tags]");
 			<br/><br/>
 			e.g. <b>battery</b>.setEMML("visibility:<i>value</i>;batteryEvent:url('JavaScript:doFunction(%json)');getSmartBatteryStatus");
-		</td>
-	</tr>
-</table>
-
-<table class="re-table">
-	<tr>
-		<th class="tableHeading">Battery Ruby Object Syntax:</th>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			By default the Ruby Object <b>'Battery'</b> will exist on the current page and can be used to interact directly with the Battery. All Methods, Parameters and Events are the same as JavaScript, however, notice <b>'Battery'</b> needs to start with an uppercase letter. Another difference in Ruby is that methods do not end in <b>'()'</b>
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Invoke Battery methods via Ruby use the following syntax: Battery.method()
-			<br/><br/>
-			e.g. <b>Battery</b>.getSmartBatteryStatus
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">
-			To Set Battery parameters via Ruby use the following syntax: Battery.parameter = 'value' remembering to enclose your value in quotes where appropriate.
-			<br/><br/>
-			e.g. <b>Battery</b>.visibility = 'value'
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">
-			To Set Battery return events via Ruby use the following syntax: Battery.event = url_for(:action =&gt; :event_callback)
-			<br/><br/>
-			e.g. <b>Battery</b>.batteryEvent = url_for(:action =&gt; :battery_event_callback)
-			<br/><br/>
-			For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents#params-object">Retrieval Events</a> page. 
-			<br/><br/>
-			To access the event parameters in a Ruby callback function, you reference the @params object within the callback function. This object is simply a ruby hash {"parameter1 name" =&gt; "parameter1 value", "parameter2 name" =&gt; "parameter2 value", ...}
 		</td>
 	</tr>
 </table>

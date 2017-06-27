@@ -1,5 +1,5 @@
 ---
-title: ButtonBar APIs
+title: ButtonBar API's
 description: null
 layout: list-apis.html
 automenu:
@@ -12,7 +12,7 @@ automenu:
           url: ../../../guide/compatibility
         - title: Migration Guides
           url: ../../../guide
-    - title: RhoElements 2.x ButtonBar APIs
+    - title: RhoElements 2.x ButtonBar API's
       items:
         - title: ButtonBar1
           url: /buttonbar1

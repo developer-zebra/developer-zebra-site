@@ -33,7 +33,7 @@ Items listed in this section indicate methods or, in some cases, indicate parame
 
 
 
-##Multi Instance
+## Multi Instance
 When multiple RhoElememts applications are running the following considerations should be made: Only the application with Focus will have the ability to control device functions.
 
 

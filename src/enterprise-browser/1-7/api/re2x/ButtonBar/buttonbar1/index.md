@@ -8,7 +8,8 @@ subhead: RhoElements 2.x API
 
 ## Overview
 
-The ButtonBar1 Module is used to show/hide the particular button Bar.The size,position,saction and other button attributes can not be controlled via this API set,Please refer to ButtoBar XML parameter guide for those details.For more information on button bars please also see the configuration parameters section to set the path of the xml.This module will only set the visibilty parameter of the button bar.
+The ButtonBar1 Module is used to show/hide the particular ButtonBar. The size, position, action and other button attributes can not be controlled via this API set. 
+Please refer to <a href="http://techdocs.zebra.com/enterprise-browser/1-7/guide/">ButtonBar Usage Guide</a> for further details.
 
 ## Syntax
 
@@ -40,8 +41,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 
 ### Screen Orientation
 
-When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so one has to create and show a different buttonbar with different coordinates to fit in particular screen orienetation mode(portrait or Landscape) by detecting the ScreenOrientationEvent.
-
+When the screen orientation changes, either using the ScreenOrientation tag or by rotating a device with hardware support the buttons themselves are not moved and in some cases this may result in them being off the screen or not in the expected position. If so one has to create and show a different ButtonBar with different coordinates to fit in particular screen orienetation mode(Portrait or Landscape) by detecting the ScreenOrientationEvent.
 
 
 ## Requirements
@@ -70,7 +70,3 @@ The following example demonstrates how to show/hide the ButtonBar via JavaScript
 			buttonBar1.hide();
 		}
 	</script>
-
-
-
-

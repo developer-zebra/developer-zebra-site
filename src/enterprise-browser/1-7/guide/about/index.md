@@ -11,69 +11,77 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4RMP9wSL1nY?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx" frameborder="0" allowfullscreen></iframe>
 <br>
 
-The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. See the [API Compatibility matrix](../compatibility). 
+The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
 ## New in v1.7
 
+### Zebra Android Device Support
+
+EB 1.7 now supports the following **new devices** and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
+
+* **CC5000-10 Android Lollipop**
+* ET50 Android Marshmallow
+* ET55 Android Marshmallow
+* MC32 Android Lollipop
+* **TC51HD (HealthCare) Android Marshmallow**
+* **TC56 Android Marshmallow**
+* TC75X Android Marshmallow
+* RS5000 Ring Scanner (when used with WT6000 Lollipop)
+
+[See all supported devices](#mobile)
+### 
+
 ### WebView Control
-Enterprise Browser 1.7 exposes features of the Android WebView, giving apps the ability to control settings through the `Config.xml` or EB's WebView API. 
+Enterprise Browser 1.7 now permits many features of the Android WebView to be controlled through the `Config.xml`, helping to simplify access to device- and web-related security capabilities and user-experience features. EB 1.7 also increases the methods and properties provided in the [WebView API](../../api/webview). 
 
 > **These tags apply only to devices running KitKat and higher**. 
 
-### New Configuration tags:
+#### New WebView Config tags:
 
+##### Web Security Features
 * **[&lt;ApplicationCacheEnabled&gt;](../configreference#applicationcacheenabled) -** allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load.
+* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** erases a cached HTML5 app upon exiting it. 
+* **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
+* **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit) -**  erases a cached HTML5 app upon exiting it.
+* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** controls whether hardware acceleration is used by an EB app.
+* **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** controls whether application data is stored locally using HTML5 Web Storage.
+* **[&lt;DatabaseEnabled&gt;](../configreference#databaseenabled) -** controls whether to enable the WebSQL database.
+* **[&lt;GeoLocationEnabled&gt;](../configreference#geolocationenabled) -** controls whether location data from the device can be consumed by the EB app.
+* **[&lt;JavascriptEnabled&gt;](../configreference#javascriptenabled) -** permits JavaScript code execution within an EB app to be toggled on and off.
+* **[&lt;SaveFormData&gt;](../configreference#saveformdata) -** determines whether an app will retain data entered by a user into forms, checkboxes and other input elements.
+* **[&lt;BlockNetworkImage&gt;](../configreference#blocknetworkimage) -** prevents the app from loading images over a network; allows non-image resources to load.
+* **[&lt;BlockNetworkLoads&gt;](../configreference#blocknetworkloads) -** prevents the app from loading all network resources, including images.
+* **[&lt;ClearWebData&gt;](../configreference#clearwebdata) -** determines whether WebView data stored by the EB app will be retained when app returns to the foreground after the device HOME key is pressed.
+* **[&lt;NavigateToHomePage&gt;](../configreference#navigatetohomepage) -** causes an EB app to 
+display its Start Page when the app returns to the foreground.
+* **[&lt;MixedContentMode&gt;](../configreference#mixedcontentmode) -** security feature that can prevent loading of content from insecure sites.
+* **[&lt;WebFilteringEnabled&gt;](../configreference#webfilteringenabled) -** 
+* **[&lt;WhiteListingUrls&gt;](../configreference#whitelistingurls) -** 
+* **[&lt;BlackListingUrls&gt;](../configreference#blacklistingurls) -** 
+* **[&lt;DeleteCookiesOnExit&gt;](../configreference#deletecookiesonexit) -** 
 
-* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit)-** erases a cached HTML5 app upon exiting it.
+##### Additional Web-related Features
+* **[&lt;BackgroundColor&gt;](../configreference#backgroundcolor) -** controls the color of the screen in areas apart from those of the app (if not already set by HTML).
+* **[&lt;WebPageCapture&gt;](../configreference#webpagecapture]) -** 
 
-* **[&lt;SetCacheMode&gt;](../configreference#setcachemode)-** controls rules for loading pages from cache vs. loading from the server.
-
-* **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit)-**  erases a cached HTML5 app upon exiting it.
-
-* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration)-** controls whether hardware acceleration is used by an EB app.
-
-* **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled)-** controls whether application data is stored locally using HTML5 Web Storage.
-
-* **[&lt;DatabaseEnabled&gt;](../configreference#databaseenabled)-** controls whether to enable the WebSQL database.
-
-* **[&lt;GeoLocationEnabled&gt;](../configreference#geolocationenabled)-** controls whether location data from the device can be consumed by the EB app.
-
-* **[&lt;JavascriptEnabled&gt;](../configreference#javascriptenabled)-** permits JavaScript code execution within an EB app to be toggled on and off.
-
-* **[&lt;SaveFormData&gt;](../configreference#saveformdata)-** determines whether an app will retain data entered by a user into forms, checkboxes and other input elements.
-
-* **[&lt;BlockNetworkImage&gt;](../configreference#blocknetworkimage)-** prevents the app from loading images over a network; allows non-image resources to load.
-
-* **[&lt;BlockNetworkLoads&gt;](../configreference#blocknetworkloads)-** prevents the app from loading all network resources, including images.
-
-* **[&lt;BackgroundColor&gt;](../configreference#backgroundcolor)-** controls the color of the screen in areas apart from those of the app (if not already set by HTML).
-
-* **[&lt;ClearWebData&gt;](../configreference#clearwebdata)-** determines whether WebView data stored by the EB app will be retained when app returns to the foreground after the device HOME key is pressed.
-
-* **[&lt;NavigateToHomePage&gt;](../configreference#navigatetohomepage)-** causes an EB app to display its Start Page when the app returns to the foreground.
-
-* **[&lt;MixedContentMode&gt;](../configreference#mixedcontentmode)-** security feature that can prevent loading of content from insecure sites.
+##### Device Security Features (for kiosk mode)
+* **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** prevents the HOME key on the device from exiting the current app. 
+* **[&lt;setStatusBarDisable&gt;](../configreference#setStatusBarDisable) -** prevents the status bar from being displayed (either automatically or by dragging down from the top of the screen). 
+* **[&lt;setBackKeyDisable&gt;](../configreference#setBackKeyDisable) -** disables the BACK capacity key, which could otherwise exit the current app and invoke the previously active app. 
+* **[&lt;setVolumeButtonDisable&gt;](../configreference#setVolumeButtonDisable) -** prevents the user from controlling the speaker volume. 
+* **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting one from the list. 
 
 ----
 
 ### New or Updated APIs
 
-* An updated [WebView API](../../api/webview) provides programmatic control over the Android WebView using the following methods and/or properties:
-
- * **clearApplicationCache -** erases a cached HTML5 app upon exiting it.
- * **clearCache -** erases a cached HTML5 app upon exiting it.
- * **blockNetworkImage -** prevents the app from loading images over a network; allows non-image resources to load.
- * **blockNetworkLoads -** prevents the app from loading all network resources, including images.
- * **contentHeight -** returns the height (in pixels) of the current Enterprise Browser page.  
+* An updated [WebView API](../../api/webview) provides programmatic control over the Android WebView using new **clearApplicationCache**, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
+* An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
+* An **updated [SIP API](../../api/sip) -** adds **disableAIIIME*8 and **resetToDefault** methods for Android. 
+* An **updated [RemoteNotification API](../../api/remotenotification) -** introduces a **cancelNotification** method and **isLEDSupported, isBeepSupported and isVibrateSupported** properties for Android. 
+* An **updated [Barcode API](../../api/barcode) -** gives Android devices new **resetToDefault and isParamSupported** methods and properties for **aimType, timesAimDuration, sameSymbolTimeout, differentSymbolTimeout, picklistEx, decodeLEDtime, decodeLEDFeedback, decodeLEDFeedbackMode, OneDQuietZoneLevel** and **PoorQualityDecideZoneLevel**.
 
 -----
-
-#### Zebra Android Device Support
-Enterprise Browser 1.7 now supports 
-
-#### New or Updated APIs
-
-#### New or Updated Config Tags 
 
 ## New in v1.6
 

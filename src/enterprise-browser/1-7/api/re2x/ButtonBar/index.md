@@ -15,25 +15,25 @@ automenu:
     - title: RhoElements 2.x ButtonBar API's
       items:
         - title: ButtonBar1
-          url: /buttonbar1
+          url: buttonbar1
         - title: ButtonBar2
-          url: /buttonbar2
+          url: buttonbar2
         - title: ButtonBar3
-          url: /buttonbar3
+          url: buttonbar3
         - title: ButtonBar4
-          url: /buttonbar4
+          url: buttonbar4
         - title: ButtonBar5
-          url: /buttonbar5
+          url: buttonbar5
         - title: ButtonBar6
-          url: /buttonbar6
+          url: buttonbar6
         - title: ButtonBar7
-          url: /buttonbar7
+          url: buttonbar7
         - title: ButtonBar8
-          url: /buttonbar8
+          url: buttonbar8
         - title: ButtonBar9
-          url: /buttonbar9
+          url: buttonbar9
         - title: ButtonBar10
-          url: /buttonbar10          
+          url: buttonbar10          
 productversion: '1.7'
 product: Enterprise Browser
 subhead: RhoElements 2.x API

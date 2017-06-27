@@ -8,6 +8,8 @@ productversion: '1.4'
 ## Overview
 Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
+
 Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device

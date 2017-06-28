@@ -1182,9 +1182,9 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 ### MixedContentMode
 **Applies only to Android devices running <u>Lollipop or higher</u>**. Controls loading of content from insecure sites based on the security level of the originating app. For example, if the app is loaded from a site secured with HTTPS://, `MIXED_CONTENT_NEVER_ALLOW` mode will block subsequent content requests that do not originate from similarly secured sites.
 
-* `MIXED_CONTENT_ALWAYS_ALLOW` - **Least secure option**. WebView allows an app from a secure origin to load content from any other origin, including insecure ones. 
-
 * `MIXED_CONTENT_NEVER_ALLOW` - **Most secure option**. WebView prevents apps loaded from a secure origin to load content from an insecure origin. 
+
+* `MIXED_CONTENT_ALWAYS_ALLOW` - **Least secure option**. WebView allows an app from a secure origin to load content from all origins, secure or insecure. 
 
 * `MIXED_CONTENT_COMPATIBILITY_MODE` - **Security not explicitly defined**. Depending on its origin, some content will be allowed and some will be blocked. This mode is designed to provide a measure of security for apps that cannot predict or control the origin of content to be rendered. 
 
@@ -1202,7 +1202,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 
 ### NavigateToHomePage
-**Applies only to Android devices running KitKat or higher**. Causes an app to display its [StartPage](#startpage) when the app returns to the foreground after the HOME key is pressed. When disabled (value=0), app will resume its most recent activity when returning to the foreground. 
+**Applies only to Android devices running KitKat or higher**. Causes an app to display its [StartPage](#startpage) (aka "HomePage") when the app returns to the foreground after the HOME key has been pressed. When disabled (value=0), app will resume its most recent activity when returning to the foreground. Disabled by default. See also [ClearWebData](#clearwebdata). 
 
 **Possible Values**:
 
@@ -1216,7 +1216,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	</BackgroundOnHomeKeyPressed>
 
 ### ClearWebData
-**Applies only to Android devices running KitKat or higher**. Determines whether WebView data stored by the EB app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See [NavigateToHomePage](#navigatetohomepage). 
+**Applies only to Android devices running KitKat or higher**. Determines whether WebView data stored by the app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See [NavigateToHomePage](#navigatetohomepage). 
 
 **Possible Values**:
 
@@ -1229,6 +1229,9 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 		<ClearWebData value="0"/>
 	</BackgroundOnHomeKeyPressed>
 
+
+
+>>>> RESUME HERE 
 
 Enterprise Browser will now have Web Filtering Feature. 
 
@@ -1498,7 +1501,7 @@ Web SQL supports the following methods:
 
 
 ### GeoLocationEnabled (ALREADY EXISTED (in its own node). QUESTION PENDING?!?!?!?)
-**Applies only to Android devices running KitKat and higher**. Controls whether location data from the device can be consumed by the EB app.
+**Applies only to Android devices running KitKat and higher**. Controls whether location data from the device can be consumed by the app.
 
 	:::xml
 	<GeoLocationEnabled	value="0"/>
@@ -2134,7 +2137,7 @@ The browser cache size, in whole MBs.
 	<SetCacheMode value="LOAD_DEFAULT"/>		
 
 ### DeleteCacheOnExit
-**Applies only to Android devices running KitKat and higher**. Controls whether to erase contents of browser cache when exiting the Enterprise Browser app. Disabled by default. 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase contents of browser cache when exiting the app. Disabled by default. 
 
 **Possible Values**:
 

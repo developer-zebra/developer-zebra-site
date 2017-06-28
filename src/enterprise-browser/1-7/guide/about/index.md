@@ -43,7 +43,7 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 * **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** erases a cached HTML5 app upon exiting it. 
 * **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
 * **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit) -**  erases a cached HTML5 app upon exiting it.
-* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** controls whether hardware acceleration is used by an EB app.
+<!-- * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** controls whether hardware acceleration is used by an EB app. 6/28/17- PER ENG., NOT BEING IMPLEMENTED AT THIS TIME-->
 * **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** controls whether application data is stored locally using HTML5 Web Storage.
 * **[&lt;DatabaseEnabled&gt;](../configreference#databaseenabled) -** controls whether to enable the WebSQL database.
 * **[&lt;GeoLocationEnabled&gt;](../configreference#geolocationenabled) -** controls whether location data from the device can be consumed by the EB app.
@@ -52,8 +52,7 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 * **[&lt;BlockNetworkImage&gt;](../configreference#blocknetworkimage) -** prevents the app from loading images over a network; allows non-image resources to load.
 * **[&lt;BlockNetworkLoads&gt;](../configreference#blocknetworkloads) -** prevents the app from loading all network resources, including images.
 * **[&lt;ClearWebData&gt;](../configreference#clearwebdata) -** determines whether WebView data stored by the EB app will be retained when app returns to the foreground after the device HOME key is pressed.
-* **[&lt;NavigateToHomePage&gt;](../configreference#navigatetohomepage) -** causes an EB app to 
-display its Start Page when the app returns to the foreground.
+* **[&lt;NavigateToHomePage&gt;](../configreference#navigatetohomepage) -** causes an EB app to display its Start Page when the app returns to the foreground.
 * **[&lt;MixedContentMode&gt;](../configreference#mixedcontentmode) -** security feature that can prevent loading of content from insecure sites.
 * **[&lt;WebFilteringEnabled&gt;](../configreference#webfilteringenabled) -** 
 * **[&lt;WhiteListingUrls&gt;](../configreference#whitelistingurls) -** 
@@ -67,17 +66,17 @@ display its Start Page when the app returns to the foreground.
 ##### Device Security Features (for kiosk mode)
 * **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** prevents the HOME key on the device from exiting the current app. 
 * **[&lt;setStatusBarDisable&gt;](../configreference#setStatusBarDisable) -** prevents the status bar from being displayed (either automatically or by dragging down from the top of the screen). 
-* **[&lt;setBackKeyDisable&gt;](../configreference#setBackKeyDisable) -** disables the BACK capacity key, which could otherwise exit the current app and invoke the previously active app. 
-* **[&lt;setVolumeButtonDisable&gt;](../configreference#setVolumeButtonDisable) -** prevents the user from controlling the speaker volume. 
-* **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting one from the list. 
+* **[&lt;setBackKeyDisable&gt;](../configreference#setBackKeyDisable) -** disables the BACK key or capacitive button, which could otherwise exit the current app and invoke the previously active app or Launcher screen. 
+* **[&lt;setVolumeButtonDisable&gt;](../configreference#setVolumeButtonDisable) -** prevents the user from controlling the speaker volume using device hardware keys. 
+* **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting one from the "recents" list. 
 
 ----
 
 ### New or Updated APIs
 
-* An updated [WebView API](../../api/webview) provides programmatic control over the Android WebView using new **clearApplicationCache**, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
+* An updated [WebView API](../../api/webview) provides programmatic control over the Android WebView using new **clearApplicationCache, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
 * An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
-* An **updated [SIP API](../../api/sip) -** adds **disableAIIIME*8 and **resetToDefault** methods for Android. 
+* An **updated [SIP API](../../api/sip) -** adds **disableAIIIME** and **resetToDefault** methods for Android. 
 * An **updated [RemoteNotification API](../../api/remotenotification) -** introduces a **cancelNotification** method and **isLEDSupported, isBeepSupported and isVibrateSupported** properties for Android. 
 * An **updated [Barcode API](../../api/barcode) -** gives Android devices new **resetToDefault and isParamSupported** methods and properties for **aimType, timesAimDuration, sameSymbolTimeout, differentSymbolTimeout, picklistEx, decodeLEDtime, decodeLEDFeedback, decodeLEDFeedbackMode, OneDQuietZoneLevel** and **PoorQualityDecideZoneLevel**.
 

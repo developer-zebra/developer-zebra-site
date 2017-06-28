@@ -271,8 +271,48 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 -----
 ## Configuration
 
+### JSLibraries
+**Applies only to devices running Android KitKat and higher**. Controls whether to allow the injection of Enterprise Browser JavaScript libraries (such as ebapi-modules.js and elements.js API libraries) into the DOM of an HTML page. Disabled by default. 
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled 
+
+#### Example
+
+	:::xml
+	<InjectEBLibraries>
+	    <JSLibraries value="0"/>
+	</InjectEBLibraries>
+
+### WebViewLayout
+**Applies only to devices running Android KitKat and higher**. Allows one or more of the WebView layout parameters to be specified (in pixels) when an Enterprise Browser app is launched. 
+
+**Supported parameters**: 
+
+* **LayoutLeft** sets the horizontal start position
+* **LayoutTop** sets the vertical start position 
+* **LayoutWidth** sets the width (not to exceed device screen width) 
+* **LayoutHeight** sets the height (not to exceed device screen height)
+
+**Possible Values**:
+
+* An integer representing the start position and/or dimension (in pixels) of the corresponding parameter. **Must not exceed device display specifications**. 
+
+#### Example
+
+	:::xml
+	<WebViewLayout>
+		<LayoutWidth value="600" />
+		<LayoutHeight value="950" />
+		<LayoutLeft value="40" />
+		<LayoutTop value="100" />
+	</WebViewLayout>
+
+
 ### SplashScreenPath
-Specifies the fully qualified path of an image to be displayed at app start-up. If tag is removed or left unspecified, default EB splash screen will be displayed. Default values for Android and WM/CE are shown in the examples below. Image file must reside in device internal storage; removable storage (i.e. SD card) is not supported. Supported file formats for WM/CE are .bmp, .png; for Android are .bmp, .gif, .jpg, .png. A 640 x 960 .png file is recommended; other resolutions may not display correctly. 
+Specifies the fully qualified path of an image to be displayed at app start-up. If tag is removed or left unspecified, default EB splash screen will be displayed. Default values for Android and WM/CE are shown in the examples below. Image file must reside in device internal storage; removable storage (i.e. SD card) is not supported. Supported file formats for WM/CE are .bmp, .png; for Android are .bmp, .gif, .jpg, .png. A 640 x 960 .png file is recommended; other resolutions might display incorrectly. 
 
 **Possible Values**:
 
@@ -947,6 +987,34 @@ Used to persist data when using Read/WriteUserSetting.
 -----
 
 ## ApplicationCache
+
+### ApplicationCacheEnabled
+**Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Application cache data is stored in the '/data/data/com.symbol.enterprisebrowser/app_webview/Application Cache/Cache
+' on the device. **Note: This is unrelated to the web cache feature**. 
+
+**Possible Values**:
+
+* 0 - Do not cache
+* 1 - Cache HTML5 apps
+
+#### Example
+
+	:::xml
+	<ApplicationCacheEnabled value="0"/>
+
+
+### ApplicationCacheOnExit
+**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Applicaiton Cache app upon exiting the app. **Note: This is unrelated to the web cache feature**.
+
+**Possible Values**:
+
+* 0 - Do not clear the cache on exit 
+* 1 - Clear the HTML5 app cache on exit
+
+#### Example
+	:::xml
+	<ApplicationCacheOnExit value="0"/>		
+
 ### ApplicationCacheQuota
 **Applies to Windows Mobile/CE using the Zebra Webkit only**. Application Cache data maximum quota per application. 
 
@@ -1108,6 +1176,101 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 ## Application 
 
+
+
+
+### MixedContentMode
+**Applies only to Android devices running <u>Lollipop or higher</u>**. Controls loading of content from insecure sites based on the security level of the originating app. For example, if the app is loaded from a site secured with HTTPS://, `MIXED_CONTENT_NEVER_ALLOW` mode will block subsequent content requests that do not originate from similarly secured sites.
+
+* `MIXED_CONTENT_ALWAYS_ALLOW` - **Least secure option**. WebView allows an app from a secure origin to load content from any other origin, including insecure ones. 
+
+* `MIXED_CONTENT_NEVER_ALLOW` - **Most secure option**. WebView prevents apps loaded from a secure origin to load content from an insecure origin. 
+
+* `MIXED_CONTENT_COMPATIBILITY_MODE` - **Security not explicitly defined**. Depending on its origin, some content will be allowed and some will be blocked. This mode is designed to provide a measure of security for apps that cannot predict or control the origin of content to be rendered. 
+
+**Zebra recommends using** `MIXED_CONTENT_NEVER_ALLOW` **for maximum security**. 
+
+**Possible Values**:
+
+* MIXED_CONTENT_ALWAYS_ALLOW
+* MIXED_CONTENT_NEVER_ALLOW 
+* MIXED_CONTENT_COMPATIBILITY_MODE
+
+#### Example
+	:::xml
+	<MixedContentModevalue="MIXED_CONTENT_NEVER_ALLOW"/>
+
+
+### NavigateToHomePage
+**Applies only to Android devices running KitKat or higher**. Causes an app to display its [StartPage](#startpage) when the app returns to the foreground after the HOME key is pressed. When disabled (value=0), app will resume its most recent activity when returning to the foreground. 
+
+**Possible Values**:
+
+* **0 - Do not return to StartPage (default)**
+* 1 - Return to StartPage
+
+#### Example
+	:::xml
+	<BackgroundOnHomeKeyPressed>
+		<NavigateToHomePage value="0"/>
+	</BackgroundOnHomeKeyPressed>
+
+### ClearWebData
+**Applies only to Android devices running KitKat or higher**. Determines whether WebView data stored by the EB app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See [NavigateToHomePage](#navigatetohomepage). 
+
+**Possible Values**:
+
+* **0 - Do not erase data (default)**
+* 1 - Erase data when EB returns to the foreground
+
+#### Example
+	:::xml
+	<BackgroundOnHomeKeyPressed>
+		<ClearWebData value="0"/>
+	</BackgroundOnHomeKeyPressed>
+
+
+Enterprise Browser will now have Web Filtering Feature. 
+
+This feature allows users to monitor web access on the devices byAllowing/Blockingparticular URLs. This feature can be used with all supported Android devices through Enterprise Browser.
+Zebra Confidential RestrictedZebra Confidential Restricted5WebFilteringConfig ParametersBy default,webfiltering tag will lookslike as below: 
+
+	<WebFiltering>
+		<WebFilteringEnabled value="0"/>
+		<WhiteListingUrls value=""/>
+		<BlackListingUrls value=""/>
+	</WebFiltering>
+
+Enable feature by 
+<WebFilteringEnabled value="1"/>
+
+ManagewhiteListingURLs as
+<WhiteListingUrls value="https://127.0.0.1;www.gmail.com"/>
+
+Manage blackListingURLsas 
+<BlackListingUrls value="www.yahoo.com;https://www.rstudio.com/"/>
+
+Note:
+1. If WebFilteringEnabledis enabled, WhiteListingUrls and BlackListingUrls are empty, none of the URLs will be blocked.
+
+2. If WebFilteringEnabled is enabled, WhiteListingUrls is empty and BlackListingUrls have some value, Users are allowed to navigate to all URLs except the URLs value provided in BlackListingUrls.
+
+3. If WebFilteringEnabled is enabled, WhiteListingUrls have some values and BlackListingUrls is empty, Users are allowed to navigate only to URLs managed in WhiteListingUrls.
+
+4. If WebFilteringEnabled is enabled, WhiteListingUrls and BlackListingUrls both contains same URLs values, priorities will be given to WhiteListingUrls.
+
+5. Manage each URLs separated by semicolon.
+
+6. Correct URLs/URLs with Regex values need to be managed in config file, if wrong format of regex is managed then proper exception will be thrown.
+
+7. Any attempt by the user to access non-whitelisted sites will redirect the user to the Default BlackListed URL Page.
+
+8. If WebFilteringEnabled is enabled, WhiteListingUrls have some values and users tries to navigate to the same page and in between network goes off or page got timeout, users will be navigated to badlink.html page
+
+
+
+
+
 ### HTTP_Proxy
 **Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTP proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used; proxy settings for Internet Explorer are picked up from the Windows connection manager.
 
@@ -1267,6 +1430,88 @@ Contains the password for accessing the Settings page when password function is 
 -----
 
 ## HTMLStyles
+
+### BackgroundColor
+**Applies only to Android devices running KitKat and higher**. Controls the color of the screen in areas other than those of the app (if not already set by app HTML). 
+
+**Possible Values**:
+* 64-bit HTML hexadecimal color code values
+
+Examples
+
+	:::xml
+	//Set background color to BLACK 
+	<BackgroundColorvalue="0xff000000"/> 
+
+	//Set background color to YELLOW
+	<BackgroundColorvalue="0xffffff00"/>
+
+	//Make background TRANSPARENT
+	<BackgroundColorvalue="0x00000000"/>
+
+
+### DOMStorageEnabled
+**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Disabled by default. See also [ApplicationCacheEnabled](#applicationcacheenabled). 
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example
+
+	:::xml
+	<DomStorageEnabled value="0"/>
+
+
+### DatabaseEnabled
+**Applies only to Android devices running KitKat and higher**. Controls whether to enable the Web SQL database, an HTML5-specific feature that implements a set of APIs to manipulate  client-side databases using SQL within a single transaction. Disabled by default. 
+
+Enterprise Browser can use Web SQL to sequentially process:
+
+* A single SQL statement string
+* An array of SQL statement strings
+* An array of SQL statement objects
+* A string containing multiple SQL statements (separated by semicolons)
+* SQL statements from a file stored on the device
+
+Web SQL supports the following methods: 
+* **openDatabase** creates a database object using a new or existing database 
+* **transaction** controls a transaction and/or perform a commit or roll-back
+* **executeSql** executes one or more SQL queries
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example:
+	:::xml
+	<DatabaseEnabledvalue="0"/>
+
+
+
+
+
+
+
+
+
+### GeoLocationEnabled (ALREADY EXISTED (in its own node). QUESTION PENDING?!?!?!?)
+**Applies only to Android devices running KitKat and higher**. Controls whether location data from the device can be consumed by the EB app.
+
+	:::xml
+	<GeoLocationEnabled	value="0"/>
+
+
+
+
+
+
+
+
+
+
 ### CaretWidth
 **Applies only to Windows Mobile/CE with Webkit**. Specifies the width (in pixels) of the textbox / text-area caret. Accepts values from 1-5. If unspecified, a default value of "1" will be entered. 
 
@@ -1338,19 +1583,19 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	:::xml
 	<AutoPlayMediaElements  VALUE="1"/>
 
-###JavascriptEnabled
-**Applies only to Windows Mobile with IE engine**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 
+### JavascriptEnabled
+**Applies to Android KitKat and higher and Windows Mobile with IE engine**. Controls whether JavaScript is enabled on the device. JavaScript is always enabled on WM/CE with Zebra Webkit and enabled by default on Android. 
 
 **Possible Values**:
 
 * 0 - Disabled
-* 1 - Enabled
+* **1 - Enabled (default)**
 
 #### Example
 	:::xml
 	<JavascriptEnabled value="0"/>
 
-###TextSelectionEnabled
+### TextSelectionEnabled
 **Applies only to WM/CE with Zebra Webkit**. Controls whether text selection is enabled when dragging the stylus on the screen. When enabled, the scroll bar is recommended for scrolling the page. Should be set to '1' for access to Copy (Ctrl+C) and Paste (Ctrl+V) functions on Webkit for WM/CE.  
 
 **Possible Values**:
@@ -1378,7 +1623,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 
 ## Soft Input Panel (SIP)
 ### ResizeOnSIP
-**Applies to Android and Windows Mobile only**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. 
+**Applies to Android and Windows Mobile only**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. See also [WebViewLayout](#webviewlayout).
 
 **Note: On Windows Mobile devices**, screen rotation from portrait to landscape mode can sometimes cause the SIP to be hidden from view, and/or on Windows Mobile/CE to behave abnormally. To avoid this issue, Zebra recommends that the [AutoRotate](../configreference/#autorotate) parameter for screen orientation be disabled.  
 
@@ -1610,10 +1855,69 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 	:::xml 
 	<CustomDOMElements value="file://%INSTALLDIR%\rho\apps\app\mytags.txt"/>
 
-
 -----
 
 ## Navigation
+
+### BlockNetworkImage
+**Applies only to Android devices running KitKat and higher**. Controls whether an Enterprise Browser app is permitted to load images over a network. Disabled by default (network images not blocked). **Note**: This setting effects only images. To block all network loads, see [BlockNetworkLoads](#blocknetworkloads). 
+
+* **0 - Do not block network image loads (default)**
+* 1 - Block network image loads
+
+#### Example
+
+	:::xml
+	<BlockNetworkImage="0"/>
+
+
+### BlockNetworkLoads
+**Applies only to Android devices running KitKat and higher**. Controls whether an Enterprise Browser app can load network resources, including images. Disabled by default (all networks loads permitted unless prevented by [BlockNetworkImage](#blocknetworkimage)). 
+
+* **0 - Do not block (default)**
+* 1 - Block
+
+#### Example
+
+	:::xml
+	<BlockNetworkLoads="0"/>
+
+### SaveFormData
+**Applies only to Android devices running KitKat and higher**. Controls whether an app will retain data entered by a user into forms, checkboxes and other input elements. Disabled by default. 
+
+* **0 - Do not save form data (default)**
+* 1 - Save form data
+
+#### Example
+
+	:::xml
+	<SaveFormDatavalue="0"/>
+
+
+### Cookies
+**Applies only to Android devices running KitKat and higher**. Controls whether cookies can be used by Enterprise Browser apps to persist user-entered form data such as login names, credit card numbers, etc. on the device. **Enabled by default**. To erase cookies automatically, use DeleteCookiesOnExit parameter. 
+
+**Possible Values**:
+
+* 0 - Do Not Allow Cookies
+* **1 - Allow Cookies (default)**
+
+#### Example 
+	:::xml
+	<Cookies value="1"/>
+
+### DeleteCookiesOnExit
+**Applies only to Android devices running KitKat and higher**. Automatically erases cookies stored by Enterprise Browser when an EB app is exited gracefully. **Disabled by default**. 
+
+**Possible Values**:
+
+* **0 - Do not erase cookies (default)**
+* 1 - Erase cookies when exiting Enterprise Browser**
+
+#### Example 
+	:::xml
+	<DeleteCookiesOnExit value="0"/>
+
 ### BadLinkURI
 Specifies the "badlink" URI file to be displayed when: 
 
@@ -1635,7 +1939,7 @@ The browser will automatically append the querystring value "badlink" containing
 	:::xml
 	<BadLinkURI value="file://%INSTALLDIR%/badlink.html"/>
 
-###EnableSSL3
+### EnableSSL3
 **Applies to WM/CE with Zebra Webkit only**. Controls whether Secure Sockets Layer v3.0 will be used. The Zebra Webkit is shipped with SSL3 disabled by default to protect against the POODLE attack vulnerability.
 
 **Possible Values**:
@@ -1815,6 +2119,32 @@ The browser cache size, in whole MBs.
 	:::xml
 	<Cache value="5"/>
 
+### SetCacheMode
+**Applies only to Android devices running KitKat and higher**. Sets the desired caching mode (for pages that are not cache-restricted) as described below. If left unspecified, "LOAD_DEFAULT" setting will be used. 
+
+**Possible Values**:
+
+* **LOAD_DEFAULT - use cache unless expired; then load from network (default)**
+* LOAD_CACHE_ELSE_NETWORK - use available cache even if expired; otherwise use network
+* LOAD_CACHE_ONLY - use cache only; do not load from network
+* LOAD_NO_CACHE - load from network only; do not use cache
+
+#### Example
+	:::xml
+	<SetCacheMode value="LOAD_DEFAULT"/>		
+
+### DeleteCacheOnExit
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase contents of browser cache when exiting the Enterprise Browser app. Disabled by default. 
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example
+	:::xml
+	<DeleteCacheOnExit value="0"/>
+
 ### DiskCache
 **Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount of device storage (in MB) to be used for the web-page cache, which can improve page-access times on subsequent visits to a site. The disk cache persists after EB quits. **Enabled by default in Enterprise Browser 1.5 and higher. To disable, remove or comment this tag**. 
 
@@ -1892,7 +2222,7 @@ Permits a default meta tag to be specified so that a tag required by the applica
 
 ## Geolocation
 ### GeolocationEnabled
-Controls HTML5 Geolocation enablement. When enabled on a device that supports geolocation and the device is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled, the defined JavaScript error callback is called, notifying the app that the permission to using geolocation is denied.
+Controls HTML5 Geolocation enablement. When enabled on a device that supports geolocation and the device is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled, the defined JavaScript error callback is called, notifying the app that the permission to use geolocation is denied.
 
 **Possible Values**:
 

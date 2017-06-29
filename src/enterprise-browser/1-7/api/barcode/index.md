@@ -5514,6 +5514,8 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 * Zebra Devices Only (Not all scanning engines support all symbologies or all symbology properties)
 
 ##Remarks
+###Methods and Properties
+Barcode respective APIs will only work if the underlying layers supports it. For further details, refer EMDK documentation.
 
 ###Limitation of Scanner and Barcode API
 

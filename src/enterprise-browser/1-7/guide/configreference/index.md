@@ -55,17 +55,29 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 > **WARNING**: Free-form text fields (i.e. username and password) can accept alpha-numeric characters unless otherwise noted. Entering non-text characters (< > \ / " ') in these fields could cause the `Config.xml` file to become corrupt. 
 
 	:::xml
-	<?xml version = "1.0"?>
-	<!-- 
-	Enterprise Browser 1.5 configuration file for Android
-	IMPORTANT: Differences exist in Windows Mobile/CE version
-	--> 
+	// Enterprise Browser 1.7 configuration file for Android
+	// IMPORTANT: Differences exist in Windows Mobile/CE version
+
 	<Configuration>
 	   
 	  <DebugButtons>
-	    <DebugButtonsEnabled value="1" />
+	    <DebugButtonsEnabled value="0" />
 	  </DebugButtons>
 	  
+	  <Diagnostic>
+	    <WebPageCapture value="0"/>
+	  </Diagnostic> 
+	  
+	  <WebFiltering>
+		<WebFilteringEnabled value="0"/>
+		<WhiteListingUrls value=""/>
+		<BlackListingUrls value=""/>
+	  </WebFiltering>
+		
+	  <DebugSetting>
+	    <DebugModeEnable value="0"/>
+	  </DebugSetting> 
+		
 	  <ExitPassword>
 	    <ExitPasswordEnabled value="0" />
 	    <ExitPasswordValue value="" />
@@ -80,10 +92,20 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  <Shortcut>
 	    <ShortcutCreationEnabled value="0"/>
 	  </Shortcut>
+	  
+	  <CustomKioskMode>
+		<setHomeKeyDisable		value ="0"/>
+		<setStatusBarDisable 	value ="0"/>
+		<setBackKeyDisable 		value ="0"/> 
+		<setVolumeButonDisable 	value ="0"/>
+		<setRecentAppDisable    value ="0"/>
+	  </CustomKioskMode>
+		
 	  <ZoomKey>
-	        <ZoomInKey value=""/> 
-	        <ZoomOutKey value=""/> 
-	   </ZoomKey>
+	    <ZoomInKey value=""/> 
+	    <ZoomOutKey value=""/> 
+	  </ZoomKey>
+	  
 	  <Logger>
 	    <LogProtocol   value="FILE"/>
 	    <LogPort       value="80"/>
@@ -112,8 +134,12 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	    <Enabled VALUE="0"/>  
 	    <Port VALUE="8082"/>  
 	    <WebFolder VALUE=""/>  
-	    <Public VALUE="0"/>  
+	    <Public VALUE="0"/>
 	  </WebServer>
+	  
+	  <InjectEBLibraries>
+		<JSLibraries value="0"/>
+	  </InjectEBLibraries>
 	  
 	  <SplashScreen>
 		<SplashScreenPath value="file://%INSTALLDIR%/rho/apps/app/loading.png"/>
@@ -160,11 +186,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	    <NavTimeout value="45000"/>
 	  </Navigation>
 
-	  <Geolocation>
-	    <GeolocationEnabled value="1"/>
-	  </Geolocation> 
-
-		<ScreenOrientation>
+	  <ScreenOrientation>
 	    <AutoRotate value="1" />
 	  </ScreenOrientation>
 	 
@@ -180,37 +202,50 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  <Applications>
 	    <Application>
 	      
-	    <HTTP_Proxy value=""/>
-		<HTTPS_Proxy value=""/>
-	    <isWindowsKey  value="0"/>
-	    <usedwforscanning  value="0"/>
-	   	
-	   	<IntentReceiver>
+	      <HTTP_Proxy value=""/>
+	      <HTTPS_Proxy value=""/>
+	      <isWindowsKey  value="0"/>
+	      <usedwforscanning  value="0"/>	 
+		  
+		  <BackgroundOnHomeKeyPressed>
+			<ClearWebData value="0"/>
+			<NavigateToHomePage value="0"/>	  
+		  </BackgroundOnHomeKeyPressed>
+		  
+	      <IntentReceiver>
 	        <EnableReceiver  value="0"/>
 	        <IntentAction  value=""/>
 	        <IntentCategory  value=""/>
-	   	</IntentReceiver>
-		 
-	   	<General>
+	      </IntentReceiver>
+		  
+	      <General>
 	        <Name value="Menu"/>
-	        <StartPage value="file://%INSTALLDIR%/test.html" name="Menu"/>
-	   	</General>
+	        <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
+	      </General>
 	      
-	   	<Scanner>
+	      <Scanner>
 	        <DisableScannerDuringNavigation value="1"/>
-	    </Scanner>
+	      </Scanner>
+		  
+		  <ApplicationCache>
+		    <ApplicationCacheEnabled value="0"/>
+	        <ApplicationCacheOnExit value="0"/>		
+	      </ApplicationCache>
 	      
-		<Authentication>
+		  <Authentication>
 			<!--  Used for Digest Access Authentication and Basic Access Authentication -->
 			<!--  Global  -->
 			<Username VALUE=""/>
 			<Password VALUE=""/>
-		</Authentication>
+		  </Authentication>
 	      
 	      <HTMLStyles>
-	        <JavascriptEnabled     value="1" />
-	        <FontFamily            value="Droid Sans Fallback" />
-			<AutoPlayMediaElements  VALUE="0"/>
+	        <JavascriptEnabled value="1"/>
+			<DatabaseEnabled value="0"/>
+			<DomStorageEnabled value="0"/>
+			<GeoLocationEnabled	value="0"/>
+	        <FontFamily value="Droid Sans Fallback"/>
+			<BackgroundColor value=""/>
 	      </HTMLStyles>
 	      
 	      <SIP>
@@ -222,10 +257,10 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      </System>
 
 	      <Sound>
-	        <DecodeVolume           value="5"/>
-	        <DecodeFrequency        value="0xBB8"/>
+	        <DecodeVolume           value=""/>
+	        <DecodeFrequency        value=""/>
 	        <InvalidDecodeFrequency value="0x9C4"/>
-	        <DecodeDuration         value="250"/>-
+	        <DecodeDuration         value=""/>
 	        <ScanDecodeWav          value=""/>
 	        <ScanInvalidWav         value=""/>
 	        <ImagerCaptureWav       value=""/>
@@ -241,16 +276,20 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      
 	      <Navigation>
 	        <BadLinkURI value="file://%INSTALLDIR%/badlink.html"/>
-	        <UserAgent  value="" />
-			    <NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
-			    <ViewportEnabled value="1"/>
-			   <VerifyPeerCertificate value="1"/>
-	        <Cache      VALUE="5MB"/>
-			
-	      </Navigation>
-	     
+	        <UserAgent value="" />
+			<NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
+			<VerifyPeerCertificate value="1"/>
+			<DeleteCookiesOnExit value="0"/>
+	    	<Cookies value="1"/>
+			<SaveFormData value="0"/>
+		    <SetCacheMode value="LOAD_DEFAULT"/>
+			<DeleteCacheOnExit value="0"/>
+			<BlockNetworkImage value="0"/>
+		    <BlockNetworkLoads value="0"/>
+		    <MixedContentMode value=""/>
+		  </Navigation>   
 	    
-		<DeviceKeys>
+		  <DeviceKeys>
 	        <EnableCtrlKey_A    value="1"/>
 	        <EnableCtrlKey_C    value="1"/>
 	        <EnableCtrlKey_V    value="1"/>
@@ -268,8 +307,94 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	</Configuration>
 
 
+
 -----
+
 ## Configuration
+
+### WebPageCapture
+**Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source and rendered screen of the WebView window currently in the foreground. When enabled (value=1), For complete instructions, see the [WebCapture User Guide](../webcapture).  
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled 
+
+#### Example
+	:::xml
+	<Diagnostic>
+		<WebPageCapture value="1"/>
+	</Diagnostic>
+
+### setHomeKeyDisable
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default (HOME key is active). 
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled (HOME key is disabled)
+
+#### Example 	
+	:::xml
+	  <CustomKioskMode>
+		<setHomeKeyDisable value ="0"/>
+	  </CustomKioskMode>
+
+### setStatusBarDisable
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the Android Status Bar, which could otherwise allow a user to quit the kiosk app by launching another app through the Status Bar. Disabled by default (Status Bar is active).
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled (Status Bar is disabled)
+
+#### Example 	
+	:::xml
+	  <CustomKioskMode>
+		<setStatusBarDisable value ="0"/>
+	  </CustomKioskMode>
+
+### setBackKeyDisable
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled 
+
+#### Example 
+	:::xml
+	  <CustomKioskMode>
+		<setBackKeyDisable value ="0"/> 
+	  </CustomKioskMode>
+
+### setVolumeButonDisable
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled 
+
+#### Example 	
+	:::xml
+	  <CustomKioskMode>
+		<setVolumeButonDisable value ="0"/>
+	  </CustomKioskMode>
+
+### setRecentAppDisable
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled 
+
+#### Example 	
+	:::xml
+	  <CustomKioskMode>
+		<setRecentAppDisable value ="0"/>
+	  </CustomKioskMode>
 
 ### JSLibraries
 **Applies only to devices running Android KitKat and higher**. Controls whether to allow the injection of Enterprise Browser JavaScript libraries (such as ebapi-modules.js and elements.js API libraries) into the DOM of an HTML page. Disabled by default. 
@@ -989,12 +1114,14 @@ Used to persist data when using Read/WriteUserSetting.
 ## ApplicationCache
 
 ### ApplicationCacheEnabled
-**Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Application cache data is stored in the '/data/data/com.symbol.enterprisebrowser/app_webview/Application Cache/Cache
-' on the device. **Note: This is unrelated to the web cache feature**. 
+**Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. **Note: This is unrelated to the web cache feature**. Disabled by default. 
+
+Application cache data is stored on the device in:<br> 
+`/data/data/com.symbol.enterprisebrowser/app_webview/Application Cache/Cache`<br>
 
 **Possible Values**:
 
-* 0 - Do not cache
+* **0 - Do not cache (default)**
 * 1 - Cache HTML5 apps
 
 #### Example
@@ -1004,11 +1131,11 @@ Used to persist data when using Read/WriteUserSetting.
 
 
 ### ApplicationCacheOnExit
-**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Applicaiton Cache app upon exiting the app. **Note: This is unrelated to the web cache feature**.
+**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app upon exiting the app. **Note: This is unrelated to the web cache feature**. Disabled by default. 
 
 **Possible Values**:
 
-* 0 - Do not clear the cache on exit 
+* **0 - Do not clear the cache on exit (default)** 
 * 1 - Clear the HTML5 app cache on exit
 
 #### Example
@@ -1020,7 +1147,7 @@ Used to persist data when using Read/WriteUserSetting.
 
 **Possible Values**:
 
-* Size in bytes
+* Integer specifying cache size (in bytes)
 
 #### Example
 	:::xml
@@ -1216,12 +1343,12 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	</BackgroundOnHomeKeyPressed>
 
 ### ClearWebData
-**Applies only to Android devices running KitKat or higher**. Determines whether WebView data stored by the app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See [NavigateToHomePage](#navigatetohomepage). 
+**Applies only to Android devices running KitKat or higher**. Determines whether cookies and other WebView data stored by the app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See also [NavigateToHomePage](#navigatetohomepage). 
 
 **Possible Values**:
 
-* **0 - Do not erase data (default)**
-* 1 - Erase data when EB returns to the foreground
+* **0 - Do not erase web data (default)**
+* 1 - Erase web data when app returns to foreground
 
 #### Example
 	:::xml
@@ -1230,49 +1357,49 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	</BackgroundOnHomeKeyPressed>
 
 
+### WebFilteringEnabled
+**Applies only to Android devices**. Controls whether web sites will be filtered by the URIs specified in the related [WhileListingUrls](#whitelistingurls) (explicitly allowed) and [BlackListingUrls](#blacklistingurls) (explicitly blocked) configuration tags. Disabled by default. If this parameter is enabled (value=1) and no URIs are specified in the related parameters, no web addresses will be blocked. 
 
->>>> RESUME HERE 
+**Other important rules apply. See related parameters, below**. 
 
-Enterprise Browser will now have Web Filtering Feature. 
+**Possible Values**:
 
-This feature allows users to monitor web access on the devices byAllowing/Blockingparticular URLs. This feature can be used with all supported Android devices through Enterprise Browser.
-Zebra Confidential RestrictedZebra Confidential Restricted5WebFilteringConfig ParametersBy default,webfiltering tag will lookslike as below: 
+* **0 - Disabled (default)**
+* 1 - Enabled
 
+#### Example
+	:::xml
 	<WebFiltering>
 		<WebFilteringEnabled value="0"/>
-		<WhiteListingUrls value=""/>
-		<BlackListingUrls value=""/>
 	</WebFiltering>
 
-Enable feature by 
-<WebFilteringEnabled value="1"/>
+### WhiteListingUrls
+**Applies only to Android devices**. Explicitly allows one or more websites to be visited by an app when [WebFilteringEnabled](#webfilteringenabled) tag is enabled (value =1). **If WebFilteringEnabled is enabled and this parameter is left blank, users will have access to all URIs except those specified in the BlackListingUrls parameter**. 
 
-ManagewhiteListingURLs as
-<WhiteListingUrls value="https://127.0.0.1;www.gmail.com"/>
+**Possible Values**:
 
-Manage blackListingURLsas 
-<BlackListingUrls value="www.yahoo.com;https://www.rstudio.com/"/>
+* One or more Uniform Resource Identifiers (URIs) with or without protocol identifiers (such as http://)
+* Separate entries with a semicolon (";")
 
-Note:
-1. If WebFilteringEnabledis enabled, WhiteListingUrls and BlackListingUrls are empty, none of the URLs will be blocked.
+#### Example
+	:::xml
+	<WebFiltering>
+		<WhiteListingUrls value="https://127.0.0.1;www.gmail.com"/>
+	</WebFiltering>
 
-2. If WebFilteringEnabled is enabled, WhiteListingUrls is empty and BlackListingUrls have some value, Users are allowed to navigate to all URLs except the URLs value provided in BlackListingUrls.
+### BlackListingUrls
+**Applies only to Android devices**. Explicitly blocks one or more websites when [WebFilteringEnabled](#webfilteringenabled) is enabled (value=1). **If WebFilteringEnabled is enabled and this parameter is left blank, apps will have access only to URIs specified in the WhiteListingUrls parameter**. Failure to specify URIs according to regular expressions, or attempting to access a page that is blacklisted (or not whitelisted, as applicable) will display the [BadLinkURI](#badlinkuri) message. 
 
-3. If WebFilteringEnabled is enabled, WhiteListingUrls have some values and BlackListingUrls is empty, Users are allowed to navigate only to URLs managed in WhiteListingUrls.
+**Possible Values**:
 
-4. If WebFilteringEnabled is enabled, WhiteListingUrls and BlackListingUrls both contains same URLs values, priorities will be given to WhiteListingUrls.
+* One or more Uniform Resource Identifiers (URIs) with or without protocol identifiers (such as http://) 
+* Separate entries with a semicolon (";")
 
-5. Manage each URLs separated by semicolon.
-
-6. Correct URLs/URLs with Regex values need to be managed in config file, if wrong format of regex is managed then proper exception will be thrown.
-
-7. Any attempt by the user to access non-whitelisted sites will redirect the user to the Default BlackListed URL Page.
-
-8. If WebFilteringEnabled is enabled, WhiteListingUrls have some values and users tries to navigate to the same page and in between network goes off or page got timeout, users will be navigated to badlink.html page
-
-
-
-
+#### Example
+	:::xml
+	<WebFiltering>
+		<BlackListingUrls value="www.yahoo.com;https://www.rstudio.com/"/>
+	</WebFiltering>
 
 ### HTTP_Proxy
 **Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTP proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used; proxy settings for Internet Explorer are picked up from the Windows connection manager.
@@ -1453,7 +1580,7 @@ Examples
 	<BackgroundColorvalue="0x00000000"/>
 
 
-### DOMStorageEnabled
+### DomStorageEnabled
 **Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Disabled by default. See also [ApplicationCacheEnabled](#applicationcacheenabled). 
 
 **Possible Values**:
@@ -1478,7 +1605,8 @@ Enterprise Browser can use Web SQL to sequentially process:
 * A string containing multiple SQL statements (separated by semicolons)
 * SQL statements from a file stored on the device
 
-Web SQL supports the following methods: 
+The following Web SQL methods are supported: 
+
 * **openDatabase** creates a database object using a new or existing database 
 * **transaction** controls a transaction and/or perform a commit or roll-back
 * **executeSql** executes one or more SQL queries
@@ -1488,32 +1616,33 @@ Web SQL supports the following methods:
 * **0 - Disabled (default)**
 * 1 - Enabled
 
-#### Example:
+#### Example
 	:::xml
 	<DatabaseEnabledvalue="0"/>
 
+### GeoLocationEnabled
+**For Android, applies only to GMS devices running KitKat and higher**. Controls HTML5 Geolocation functionality. When enabled on a device that supports geolocation and the device is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled, the defined JavaScript error callback is called, notifying the app that the permission to use geolocation is denied. **Note the upper-case "L" in the Android version of the tag**. 
 
+**Possible Values**:
 
+* 0 - Disabled
+* 1 - Enabled
 
-
-
-
-
-
-### GeoLocationEnabled (ALREADY EXISTED (in its own node). QUESTION PENDING?!?!?!?)
-**Applies only to Android devices running KitKat and higher**. Controls whether location data from the device can be consumed by the app.
-
+#### Android Example 
 	:::xml
-	<GeoLocationEnabled	value="0"/>
+	<HTMLStyles>
+		...
+		<GeoLocationEnabled	value="0"/>
+		...
+	</HTMLStyles>
 
-
-
-
-
-
-
-
-
+#### Windows Mobile/CE Example
+	:::xml
+	...
+	<Geolocation>
+		<GeolocationEnabled value="1"/>
+	</Geolocation
+	...
 
 ### CaretWidth
 **Applies only to Windows Mobile/CE with Webkit**. Specifies the width (in pixels) of the textbox / text-area caret. Accepts values from 1-5. If unspecified, a default value of "1" will be entered. 
@@ -1587,7 +1716,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<AutoPlayMediaElements  VALUE="1"/>
 
 ### JavascriptEnabled
-**Applies to Android KitKat and higher and Windows Mobile with IE engine**. Controls whether JavaScript is enabled on the device. JavaScript is always enabled on WM/CE with Zebra Webkit and enabled by default on Android. 
+Controls whether JavaScript is enabled on the device. JavaScript is enabled by default. 
 
 **Possible Values**:
 
@@ -1863,7 +1992,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 ## Navigation
 
 ### BlockNetworkImage
-**Applies only to Android devices running KitKat and higher**. Controls whether an Enterprise Browser app is permitted to load images over a network. Disabled by default (network images not blocked). **Note**: This setting effects only images. To block all network loads, see [BlockNetworkLoads](#blocknetworkloads). 
+**Applies only to Android devices running KitKat and higher**. Controls whether an Enterprise Browser app is permitted to load images over a network. Disabled by default (network images are not blocked). **Note**: This setting effects only images. To block all network loads, see [BlockNetworkLoads](#blocknetworkloads). 
 
 * **0 - Do not block network image loads (default)**
 * 1 - Block network image loads
@@ -1875,7 +2004,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 
 ### BlockNetworkLoads
-**Applies only to Android devices running KitKat and higher**. Controls whether an Enterprise Browser app can load network resources, including images. Disabled by default (all networks loads permitted unless prevented by [BlockNetworkImage](#blocknetworkimage)). 
+**Applies only to Android devices running KitKat and higher**. Controls whether an Enterprise Browser app can load network resources, including images. Disabled by default (all network loads permitted unless prevented by [BlockNetworkImage](#blocknetworkimage)). 
 
 * **0 - Do not block (default)**
 * 1 - Block
@@ -1886,7 +2015,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 	<BlockNetworkLoads="0"/>
 
 ### SaveFormData
-**Applies only to Android devices running KitKat and higher**. Controls whether an app will retain data entered by a user into forms, checkboxes and other input elements. Disabled by default. 
+**Applies only to Android devices running KitKat and higher**. Controls whether an app will retain data entered by a user into forms, checkboxes and other input elements. Disabled by default. See also: [Cookies](#cookies). 
 
 * **0 - Do not save form data (default)**
 * 1 - Save form data
@@ -1898,7 +2027,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 
 ### Cookies
-**Applies only to Android devices running KitKat and higher**. Controls whether cookies can be used by Enterprise Browser apps to persist user-entered form data such as login names, credit card numbers, etc. on the device. **Enabled by default**. To erase cookies automatically, use DeleteCookiesOnExit parameter. 
+**Applies only to Android devices running KitKat and higher**. Controls whether cookies can be used by Enterprise Browser apps to persist user-entered form data such as login names, credit card numbers, etc. on the device. **Enabled by default**. To erase cookies automatically, use [DeleteCookiesOnExit](#deletecookiesonexit) parameter. 
 
 **Possible Values**:
 
@@ -1915,7 +2044,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 **Possible Values**:
 
 * **0 - Do not erase cookies (default)**
-* 1 - Erase cookies when exiting Enterprise Browser**
+* 1 - Erase cookies when exiting an app
 
 #### Example 
 	:::xml
@@ -1930,7 +2059,7 @@ Specifies the "badlink" URI file to be displayed when:
 
 The browser will automatically append the querystring value "badlink" containing the URL of the page that could not be reached, and 'stop=true' if the page was loaded because the user pressed the stop button. The page specified in the badlink setting should be a device-resident file using the `file://` protocol so it’s accessible by the browser. 
 
-**Known issues**: If the device has no network connection, a navigation timeout message may be displayed on Windows Mobile devices using the IE engine. On CE5 and CE6, the IE engine will truncate the request variables when a navigation to badlink occurs and the reason for the failure may not be displayed. 
+**Known issues**: If the device has no network connection, a navigation timeout message may be displayed on Windows Mobile devices that use the IE engine. On CE5 and CE6, the IE engine will truncate the request variables when navigation to a badlink occurs and the reason for the failure might not be displayed. 
 
 **Possible Values**:
 
@@ -2222,19 +2351,6 @@ Permits a default meta tag to be specified so that a tag required by the applica
 	</DefaultMetaTags>
 
 -----
-
-## Geolocation
-### GeolocationEnabled
-Controls HTML5 Geolocation enablement. When enabled on a device that supports geolocation and the device is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled, the defined JavaScript error callback is called, notifying the app that the permission to use geolocation is denied.
-
-**Possible Values**:
-
-* 0 - Disabled
-* 1 - Enabled
-
-#### Example
-	:::xml
-	<GeolocationEnabled value="1"/>
 
 ## Engine
 ### EngineInUse

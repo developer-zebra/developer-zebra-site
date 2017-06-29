@@ -8,7 +8,7 @@ layout: guide.html
 ## Overview
 Remote Notification APIs enable Enterprise Browser applications to control device annunciators such as the beeper, vibrator and multi-color LEDs to notify the user of custom events in their workflow.
 
->**This API is supported only on Android devices with the following accessories (_RS6000_ and _External Vibrator - CBL-NGWT-HDVBAP-01_) only.**.
+>**This API is supported only on Android devices with the following accessories (_RS6000_ and _External Vibrator - CBL-NGWT-HDVBAP-01_) only.**
 
 ## Enabling the API
 

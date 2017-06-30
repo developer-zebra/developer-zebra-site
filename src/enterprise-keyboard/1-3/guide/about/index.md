@@ -8,6 +8,8 @@ productversion: '1.3'
 ## Overview
 Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and has the ability to scan data directly into an application. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
+
 Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device
@@ -33,7 +35,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 Enterprise Keyboard 1.3 now supports the Zebra ET50 and ET55 tablet devices running Android. 
 
-See the [download page](../download) for a complete list of supported devices. 
+See the [download page](../../download) for a complete list of supported devices. 
 
 ### Added in v1.2
 
@@ -94,7 +96,7 @@ The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function ke
 <br>
 -->
 
-<b>Design custom key layouts easily</b> with five remappable keys: 
+<b>Design custom key layouts easily</b> with five re-mappable keys: 
 <img alt="" style="height:150px" src="keyboard_alpha.png"/>
 
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>

@@ -14,7 +14,7 @@ Used to reset the default Profile to Profile0.
 	:::javascript
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.RESET_DEFAULT_PROFILE");
+	i.putExtra("com.symbol.datawedge.api.RESET_DEFAULT_PROFILE", "");
 
 
 ###Parameters
@@ -37,7 +37,7 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 
 	// define action string
 	String resetDefaultProfile = "com.symbol.datawedge.api.ACTION";
-	String extraData = "com.symbol.datawedge.api.RESET_DEFAULT_PROFILE";
+	String extraData = (com.symbol.datawedge.api.RESET_DEFAULT_PROFILE, "");
 
 	public void onResume() {
 	        // create the intent
@@ -46,6 +46,12 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        i.setAction(resetDefaultProfile);
 	        context.this.sendBroadcast(i);
 	}
+
+<!--
+6/27/17- per eng. TUT-14724:
+- added an empty string to extra data (in prototype and sample)
+-->
+
 
 ###Comments
 (None)

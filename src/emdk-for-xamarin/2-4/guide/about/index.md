@@ -8,7 +8,7 @@ The EMDK for Xamarin provides developers with a comprehensive set of tools to ea
 
 ## Important News
 
-* When Upgrading to a new version of EMDK for Xamarin IDE extension, `previous versions must be uninstalled`. Failure to remove previous versions will result in and incomplete install of the new EMDK for Xamarin IDE extension. 
+* When upgrading to a new version of EMDK for Xamarin IDE extension, `previous versions must be uninstalled`. Failure to remove previous versions will result in an incomplete install of the new EMDK for Xamarin IDE extension. 
 
 ## Devices Supported
 EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 

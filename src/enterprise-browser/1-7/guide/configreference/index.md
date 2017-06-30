@@ -1604,7 +1604,6 @@ Contains the password for accessing the Settings page when password function is 
 	:::xml
 	<SettingsPagePassword value="zebra"/>
 
-
 -----
 
 ## HTMLStyles
@@ -1613,7 +1612,8 @@ Contains the password for accessing the Settings page when password function is 
 **Applies only to Android devices running KitKat and higher**. Controls the color of the screen in areas other than those of the app (if not already set by app HTML). 
 
 **Possible Values**:
-* 64-bit HTML hexadecimal color code values
+
+* Any 32-bit hexadecimal HTML color code value
 
 Examples
 

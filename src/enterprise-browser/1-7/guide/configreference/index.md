@@ -313,7 +313,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ## Configuration
 
 ### WebPageCapture
-**Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source and rendered screen of the WebView window currently in the foreground. When enabled (value=1), For complete instructions, see the [WebCapture User Guide](../webcapture).  
+**Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source location and rendered screen of the WebView window currently in the foreground. When enabled (value=1), For complete instructions, see the [Capture a Screen](../capture) user guide.  
 
 **Possible Values**:
 
@@ -327,11 +327,11 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	</Diagnostic>
 
 ### setHomeKeyDisable
-**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default (HOME key is active). 
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter disables the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default (HOME key is active). 
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
+* **0 - Disabled (default; HOME key is active)**
 * 1 - Enabled (HOME key is disabled)
 
 #### Example 	
@@ -341,11 +341,11 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  </CustomKioskMode>
 
 ### setStatusBarDisable
-**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the Android Status Bar, which could otherwise allow a user to quit the kiosk app by launching another app through the Status Bar. Disabled by default (Status Bar is active).
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the Android Status Bar, which could otherwise allow a user to launch another app or activity, effectively quitting the kiosk app. Disabled by default (Status Bar is active).
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
+* **0 - Disabled (default; Status Bar is active)**
 * 1 - Enabled (Status Bar is disabled)
 
 #### Example 	
@@ -355,12 +355,12 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  </CustomKioskMode>
 
 ### setBackKeyDisable
-**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default.
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the BACK key, which could otherwise invoke the previously active app, activity or Android Launcher; potentially quitting the kiosk app. Disabled by default (BACK key is active).
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled 
+* **0 - Disabled (default; BACK key is active)**
+* 1 - Enabled (BACK key is disabled)
 
 #### Example 
 	:::xml
@@ -369,12 +369,12 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  </CustomKioskMode>
 
 ### setVolumeButonDisable
-**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default.
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the hardware controls for audio volume, which could otherwise silence the kiosk app. Disabled by default (volume control is active.
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled 
+* **0 - Disabled (default; volume control is active)**
+* 1 - Enabled (Volume control is disabled)
 
 #### Example 	
 	:::xml
@@ -383,12 +383,12 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  </CustomKioskMode>
 
 ### setRecentAppDisable
-**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the HOME key, which could otherwise quit the kiosk application and bring up the Android Launcher. Disabled by default.
+**Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter prevents display of the Recent Apps list when the "recents" button is pressed, which could otherwise allow the user exit the current app by selecting a different app from the "recents" list. Disabled by default (Recent Apps list will display).
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled 
+* **0 - Disabled (default; Recent Apps list will display)**
+* 1 - Enabled (Recent Apps list blocked)
 
 #### Example 	
 	:::xml
@@ -1303,11 +1303,59 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 ## Application 
 
+### buttonxmlfile
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. 
+
+For more information, see the [Customize EB Functions](../customize) guide.
+
+**Possible Values**:
+
+* Fully qualified path and file name
+* Substitution variable representing the fully qualified path 
+* Supports any valid internal or external storage device
+* **Default path: "file://%INSTALLDIR%/button.xml" (Enterprise Browser installation folder)**
+
+#### Example
+
+	:::xml
+	<Configuration>
+		<Applications>
+		    <Application> 
+		      ...
+		      <buttonxmlfile value="file://%INSTALLDIR%/button.xml"/>
+		      ...
+		     </Application>
+		</Applications>
+	</Configuration>
 
 
+### customxmlfile
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `CustomScript.xml` file (if present) from the EB installation folder. 
+
+For more information, see the [Customize EB Functions](../customize) guide. 
+
+**Possible Values**:
+
+* Fully qualified path and file name
+* Substitution variable representing the fully qualified path 
+* Supports any valid internal or external storage device
+* **Default path: "file://%INSTALLDIR%/CustomScript.xml" (Enterprise Browser installation folder)**
+
+#### Example
+
+	:::xml
+	<Configuration>
+		<Applications>
+		    <Application> 
+		      ...
+		      <customxmlfile value="file://%INSTALLDIR%/CustomScript.xml"/>
+		      ...
+		     </Application>
+		</Applications>
+	</Configuration>
 
 ### MixedContentMode
-**Applies only to Android devices running <u>Lollipop or higher</u>**. Controls loading of content from insecure sites based on the security level of the originating app. For example, if the app is loaded from a site secured with HTTPS://, `MIXED_CONTENT_NEVER_ALLOW` mode will block subsequent content requests that do not originate from similarly secured sites.
+**Applies only to Android devices running <u>Lollipop and higher</u>**. Controls loading of content from insecure sites based on the security level of the originating app. For example, if the app is loaded from a site secured with https://, `MIXED_CONTENT_NEVER_ALLOW` mode will block subsequent content requests that do not originate from similarly secured sites.
 
 * `MIXED_CONTENT_NEVER_ALLOW` - **Most secure option**. WebView prevents apps loaded from a secure origin to load content from an insecure origin. 
 
@@ -1329,7 +1377,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 
 ### NavigateToHomePage
-**Applies only to Android devices running KitKat or higher**. Causes an app to display its [StartPage](#startpage) (aka "HomePage") when the app returns to the foreground after the HOME key has been pressed. When disabled (value=0), app will resume its most recent activity when returning to the foreground. Disabled by default. See also [ClearWebData](#clearwebdata). 
+**Applies only to Android devices running KitKat and higher**. Causes an app to display its [StartPage](#startpage) (aka "HomePage") when the app returns to the foreground after the HOME key has been pressed. When disabled (value=0), app will resume its most recent activity when returning to the foreground. Disabled by default. See also [ClearWebData](#clearwebdata). 
 
 **Possible Values**:
 
@@ -1343,7 +1391,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	</BackgroundOnHomeKeyPressed>
 
 ### ClearWebData
-**Applies only to Android devices running KitKat or higher**. Determines whether cookies and other WebView data stored by the app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See also [NavigateToHomePage](#navigatetohomepage). 
+**Applies only to Android devices running KitKat and higher**. Determines whether cookies and other WebView data stored by the app will be erased when app returns to the foreground after the device HOME key is pressed. Disabled by default. See also [NavigateToHomePage](#navigatetohomepage). 
 
 **Possible Values**:
 

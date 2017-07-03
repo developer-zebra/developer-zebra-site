@@ -1165,8 +1165,10 @@ Used to persist data when using Read/WriteUserSetting.
 ### ApplicationCacheEnabled
 **Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. **Note: This is unrelated to the web cache feature**. Disabled by default. 
 
+<!-- removed, per eng. This is not a user-accessible dir. 
 Application cache data is stored on the device in:<br> 
 `/data/data/com.symbol.enterprisebrowser/app_webview/Application Cache/Cache`<br>
+-->
 
 **Possible Values**:
 

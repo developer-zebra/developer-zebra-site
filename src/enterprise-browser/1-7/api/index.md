@@ -106,6 +106,8 @@ automenu:
           url: re2x/battery
         - title: BottomCommandArea
           url: re2x/bottomcommandarea
+        - title: ButtonBar
+          url: re2x/ButtonBar
         - title: CardReader
           url: re2x/cardreader
         - title: Comm

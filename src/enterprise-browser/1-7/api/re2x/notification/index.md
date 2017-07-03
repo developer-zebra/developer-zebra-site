@@ -74,13 +74,19 @@ The EnumNotificationsEvent is triggered in response to calling the 'Enumerate' m
 
 
 ##Multi Instance
-When multiple RhoElememts applications are running the following considerations should be made: Only the application with Focus will have the ability to enable/disable notifications. When an application is sent to background if there are any notifications in progress (vibrator, beeper etc.) they would be stopped.
+When multiple RhoElements applications are running the following considerations should be made: Only the application with Focus will have the ability to enable/disable notifications. When an application is sent to background if there are any notifications in progress (vibrator, beeper etc.) they would be stopped.
 
 
 ##Remarks
 
 ###Zebra VH10 with Windows CE 6.0
 On VH10 with Windown CE 6.0, the LED, beeper, pager and other objects activated through the Notification API are not supported, despite being enumerated through the `notification.enumerate();` function call.
+
+###Behavior of Notification Objects
+In some cases, notification object may either not be turned ON or may not be turned ON for infinite time as the notification behavior depends on the underlying hardware.
+
+###LED Notification Object
+On Android device, the LED objects activated through the Notification API are not supported, despite being enumerated through the `notification.enumerate();` function call.
 
 ###No Notification Objects
 If the device has no notification objects the array returned by EnumNotificationsEvent will be empty

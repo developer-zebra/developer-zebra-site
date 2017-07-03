@@ -6,9 +6,9 @@ layout: guide.html
 ---
 
 ## Overview
-Remote Notification APIs enable Enterprise Browser applications to control device annunciators such as the beeper, vibrator and multi-color LEDs to notify the user of custom events in their workflow. 
+Remote Notification APIs enable Enterprise Browser applications to control device annunciators such as the beeper, vibrator and multi-color LEDs to notify the user of custom events in their workflow.
 
->**This API is supported only on Android devices**.
+>**This API is supported only on Android devices with the following accessories (_RS6000_ and _External Vibrator - CBL-NGWT-HDVBAP-01_) only.**
 
 ## Enabling the API
 
@@ -41,6 +41,32 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 > In the lines above, notice that `ebapi.js` is included first, followed by `eb.remotenotification.js`, which is the Remote Notification API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
+
+
+### cancelNotification()
+
+					This cancels the active notification from the device.
+					m_rnobject.cancelNotification();
+				
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.cancelNotification()</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.cancelNotification()</code> 
 
 
 ### clearproperties()
@@ -191,7 +217,7 @@ Notify method sends the notification information to the device.
 									]
 									 </p></li><li>vibratorPattern : <span class='text-info'>Array</span><span class='label '> Default: </span><p>
 									
-										Vibrate with a given pattern. Pass in an array of integers that are the durations for which to turn on or off the vibrator in milliseconds. The supported values are 0ms to 2550ms. Behavior is undefined for any other value. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on. Maximum 4 vibrating pattern pairs are supported. If more than 4 pattern pairs are provided, only the first 4 pattern pairs will be considered. Default value assigned is null.
+										Vibrate with a given pattern. Pass in an array of integers that are the durations for which to turn on or off the vibrator in milliseconds. The supported values are 0ms to 2550ms. Behavior is undefined for any other value. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on. Maximum 4 vibrating pattern pairs are supported. If more than 4 pattern pairs are provided, only the first 4 pattern pairs will be considered. Default value assigned is null. Note: This parameter is not supported for External Vibrator.
 									vibratorPattern:[
 									{vibratortime:500},
 									{vibratortime:500},
@@ -316,6 +342,25 @@ Returns the friendly name of the notification device.
 
 * Android
 
+###isBeepSupported
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+####Description
+Returns true if the notification device supports Beep feature else false.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.isBeepSupported</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.isBeepSupported</code> 
+
+
+
+####Platforms
+
+* Android
+
 ###isConnected
 
 ####Type
@@ -366,6 +411,44 @@ Returns whether the notification device is enabled or not.
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.isEnabled</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Remotenotification.isEnabled</code> 
+
+
+
+####Platforms
+
+* Android
+
+###isLEDSupported
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+####Description
+Returns true if the notification device supports LED feature else false.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.isLEDSupported</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.isLEDSupported</code> 
+
+
+
+####Platforms
+
+* Android
+
+###isVibrateSupported
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+####Description
+Returns true if the notification device supports Vibrate feature else false.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.isVibrateSupported</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Remotenotification.isVibrateSupported</code> 
 
 
 
@@ -471,7 +554,7 @@ Returns the notification device model number.For Future Use only.Currently Not s
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, this time will be used; otherwise pattern takes precedence. The supported values are 0 ms to 2550 ms. Behavior is undefined for any other value.
+The vibration time in milliseconds. Default value is assigned to 0. If the pattern array is null, this time will be used; otherwise pattern takes precedence. The supported values are 0 ms to 2550 ms. Behavior is undefined for any other value. Note: Supported values are 0ms to 300000ms for External Vibrator.
 
 ####Access
 

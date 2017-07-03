@@ -336,6 +336,29 @@ Synchronous Return:
 	* <code>EB.Barcode.getSupportedProperties()</code> 
 
 
+### isParamSupported(<span class="text-info">STRING</span> propertyName)
+This method is used for checking whether specified barcode property is supported or not by EMDK service which is installed in the device. It will return 'true' if the specified property is supported or else it will return 'false' for all other cases.
+
+####Parameters
+<ul><li>propertyName : <span class='text-info'>STRING</span><p>The propertyName name should be same as barcode property name like 'code128', 'code128isbt128'. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* BOOLEAN
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.isParamSupported(<span class="text-info">STRING</span> propertyName)</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.isParamSupported(<span class="text-info">STRING</span> propertyName)</code>
+
+
 ### registerBluetoothStatus()
 If you are using an RS507 barcode scanner you can register to receive connected or disconnected events through this method.
 
@@ -385,6 +408,29 @@ Synchronous Return:
 	* <code>myObject.removeConnectionListener()</code>
 * Default Instance: This method can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.removeConnectionListener()</code> 
+
+
+### resetToDefault()
+Resets the scanner parameters to defaults values for the specified enable scanner.
+
+####Parameters
+<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+
+####Returns
+Synchronous Return:
+
+* Void
+
+####Platforms
+
+* Android
+
+####Method Access:
+
+* Instance Method: This method can be accessed via an instance object of this class: 
+	* <code>myObject.resetToDefault()</code>
+* Default Instance: This method can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.resetToDefault()</code>
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Barcode</span> defaultInstance)
@@ -594,7 +640,7 @@ Defines the aiming mode to use.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Describes the type of aiming to use.
+Describes the type of aiming to use. It supports on Android with EMDK version 6.3 and above.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -602,7 +648,7 @@ Describes the type of aiming to use.
 * Constant: EB.Barcode.AIMTYPE_TRIGGER - String: trigger Standard trigger mode. Holding the trigger will start a decoding session.
 * Constant: EB.Barcode.AIMTYPE_TIMED_HOLD - String: timedHold Aiming lasts for the time specified by 'timedAimDuration' before decoding. The opportunity to scan will last until the barcode is decoded or scanTimeout occurs.
 * Constant: EB.Barcode.AIMTYPE_TIMED_RELEASE - String: timedRelease Aiming lasts until trigger is released. If the timedAimDuration has expired when the trigger is released then a decode session is started until a barcode is decoded or for the remaining time equal to the scanTimeout value.
-* Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: presentation Provided to support Kiosk devices. The scanner illuminates when movement is detected in the range of the scanner window. In order to use this mode the scanner must be initiated with a softscan using the EB.Barcode.start() method and again after each decode. The device must be equipped with a sensor to detect movement to use presentation mode. MK31XX devices come with presentation mode pre-enabled in the scanner driver and the aimType cannot be modified for these devices.
+* Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: presentation Provided to support Kiosk devices. The scanner illuminates when movement is detected in the range of the scanner window. In order to use this mode the scanner must be initiated with a softscan using the EB.Barcode.start() method and again after each decode. The device must be equipped with a sensor to detect movement to use presentation mode. MK31XX devices come with presentation mode pre-enabled in the scanner driver and the aimType cannot be modified for these devices. This parameter is not supported on Android platform.
 * Constant: EB.Barcode.AIMTYPE_PRESS_AND_RELEASE - String: pressAndRelease Scan will continue after the trigger is released until scanTimeout occurs.
 * Constant: EB.Barcode.AIMTYPE_CONTINUOUS_READ - String: continuousRead Once the trigger is pulled barcodes will continue to be scanned as long as the trigger is held, enabling rapid scanning, to be used in conjunction with sameSymbolTimeout and differentSymbolTimeout. This value is ignored if viewfinderMode is set to 'dynamicReticle'
 ####Access
@@ -616,6 +662,7 @@ Describes the type of aiming to use.
 
 ####Platforms
 
+* Android
 * Windows Mobile
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
 
@@ -1964,6 +2011,74 @@ The frequency of the device beeper when a barcode is successfully decoded. This 
 * Windows CE
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
 
+###decodeLEDFeedback
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable and Disable Decode LED notification. When set to true, The Decode LED Notification will glow RED on trigger press and glow Green when the scanner successfully decodes a barcode.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeLEDFeedback</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.decodeLEDFeedback</code> 
+
+
+
+####Platforms
+
+* Android
+* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+
+###decodeLEDFeedbackMode
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+Specifies the Decode LED Notification Mode on the host device and remote scanner. This Barcode Property is only applicable for external scanner. It supports on Android with EMDK version 6.3 and above.
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.LEDMODE_BOTH - String: both LED Notification is given by both device and the remote scanner.
+* Constant: EB.Barcode.LEDMODE_DISABLE - String: disable LED Notification is disabled on both Device and the remote scanner.
+* Constant: EB.Barcode.LEDMODE_LOCAL - String: local LED Notification is given by the device.
+* Constant: EB.Barcode.LEDMODE_REMOTE - String: remote LED Notification is given by the External Scanner like RS507 BT Scanner.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeLEDFeedbackMode</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.decodeLEDFeedbackMode</code> 
+
+
+
+####Platforms
+
+* Android
+* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+
+###decodeLEDTime
+
+####Type
+<span class='text-info'>INTEGER</span> 
+####Description
+Maximum time in milliseconds that the Decode LED notification will glow a green light when the scanner successfully decodes a barcode. The value is specified in the range 0 to 1000 in milliseconds.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeLEDTime</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.decodeLEDTime</code> 
+
+
+
+####Platforms
+
+* Android
+* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+
 ###decodeVolume
 
 ####Type
@@ -2011,7 +2126,7 @@ Path to a local '.wav' file to be played when the scanner successfully decodes a
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-When the aimType:continuousRead property is applied this value defines the interval between which different barcodes can be scanned. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this setting to allow time for the operator to re-aim the device between successive scans.
+When the aimType:continuousRead property is applied this value defines the interval between which different barcodes can be scanned. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this setting to allow time for the operator to re-aim the device between successive scans. It supports on Android with EMDK version 6.3 and above.
 ####Access
 
 
@@ -2023,6 +2138,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 ####Platforms
 
+* Android
 * Windows Mobile
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
 
@@ -3333,6 +3449,34 @@ When true, the barcode check digit(s) will be reported for scanned MSI barcodes.
 * Windows CE
 * Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
 
+###OneDQuietZoneLevel
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+Specifies the effort at which the decoder will attempt to decode margin-less barcodes. It supports on Android with EMDK version 6.3 and above.
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.QZ_LEVEL_0 - String: level_0 The decoder will perform margin decoding as usual.
+* Constant: EB.Barcode.QZ_LEVEL_1 - String: level_1 The decoder will perform more aggressively.
+* Constant: EB.Barcode.QZ_LEVEL_2 - String: level_2 The decoder requires only one side end of barcode.
+* Constant: EB.Barcode.QZ_LEVEL_3 - String: level_3 The decoder can decode anything.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.OneDQuietZoneLevel</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.OneDQuietZoneLevel</code> 
+
+
+
+####Platforms
+
+* Android
+* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+
 ###pdf417
 
 ####Type
@@ -3354,6 +3498,33 @@ Enables or disables the symbology for PDF 417 barcodes. If your application does
 * Windows Mobile
 * Windows CE
 * Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+
+###picklistEx
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/center of the reticle part of the pattern. This feature is useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode. It supports on Android with EMDK version 6.3 and above.
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.PICKLISTEX_DISABLED - String: disabled Disables Picklist mode. Any barcode within the field of view can be decoded.
+* Constant: EB.Barcode.PICKLISTEX_HARDWARE_RETICLE - String: hardwareReticle Enables the HARDWARE Picklist mode so that only the barcode that is directly under the cross-hair or center of reticle is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes. This mode is not applicable when there is no projected reticle like camera scanning.
+* Constant: EB.Barcode.PICKLISTEX_SOFTWARE_RETICLE - String: softwareReticle Enables the SOFTWARE Picklist mode so that only the barcode that is directly under the cross-hair or center of reticle is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes.
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.picklistEx</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.picklistEx</code> 
+
+
+
+####Platforms
+
+* Android
+* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices)
 
 ###picklistMode
 
@@ -3403,6 +3574,34 @@ Allows poor quality 1D barcodes to be read When true, but this will adversely af
 
 * Windows Mobile
 * Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices)
+
+###poorQualityDecodeEffortLevel
+
+####Type
+<span class='text-info'>STRING</span> 
+####Description
+It provides enhancement modes for decoding barcodes of poor or degraded quality. It supports on Android with EMDK version 6.3 and above.
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.PQD_LEVEL_0 - String: level_0 Decoding performance on regular 1D and 2D barcodes is not affected.
+* Constant: EB.Barcode.PQD_LEVEL_1 - String: level_1 The scanner performance on regular 2-D barcodes is impacted while decoding performance on Tesco Thailand barcode and Suppository barcode is improved.
+* Constant: EB.Barcode.PQD_LEVEL_2 - String: level_2 Same as Level_1
+* Constant: EB.Barcode.PQD_LEVEL_3 - String: level_3 Same as Level_1
+####Access
+
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.poorQualityDecodeEffortLevel</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.poorQualityDecodeEffortLevel</code> 
+
+
+
+####Platforms
+
+* Android
+* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###qrCode
 
@@ -4167,7 +4366,7 @@ Ring scanner serial number.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-When the aimType:continuousRead property is applied this value defines the interval between which the same barcode can be decoded twice. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this value to prevent accidental duplicate scans.
+When the aimType:continuousRead property is applied this value defines the interval between which the same barcode can be decoded twice. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this value to prevent accidental duplicate scans. It supports on Android with EMDK version 6.3 and above.
 ####Access
 
 
@@ -4179,6 +4378,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 ####Platforms
 
+* Android
 * Windows Mobile
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
 
@@ -4312,7 +4512,7 @@ Specifies the output width of the captured signature barcode. Signature barcodes
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease.
+Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The duration must be less than the scanTimeout. It supports on Android with EMDK version 6.3 and above.
 ####Access
 
 
@@ -4324,6 +4524,7 @@ Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease.
 
 ####Platforms
 
+* Android
 * Windows Mobile
 * Zebra Devices Only(Scanners on Symbol Technologies' devices)
 
@@ -5313,6 +5514,9 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 * Zebra Devices Only (Not all scanning engines support all symbologies or all symbology properties)
 
 ##Remarks
+
+###Methods and Properties
+Barcode respective APIs will only work if the underlying layers supports it. For further details, refer EMDK documentation.
 
 ###Limitation of Scanner and Barcode API
 

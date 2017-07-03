@@ -312,6 +312,55 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 ## Configuration
 
+### buttonxmlfile
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. 
+
+For more information, see the [Customize EB Functions](../customize) guide.
+
+**Possible Values**:
+
+* Fully qualified path and file name
+* Substitution variable representing the fully qualified path 
+* Supports any valid internal or external storage device
+* **Default path: "file://%INSTALLDIR%/button.xml" (Enterprise Browser installation folder)**
+
+#### Example
+
+	:::xml
+	<Configuration>
+		...
+		<FileLocations>
+		      <buttonxmlfile value="file://%INSTALLDIR%/button.xml"/>
+		</FileLocations>
+		...
+	</Configuration>
+
+
+### customxmlfile
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `CustomScript.xml` file (if present) from the EB installation folder. 
+
+For more information, see the [Customize EB Functions](../customize) guide. 
+
+**Possible Values**:
+
+* Fully qualified path and file name
+* Substitution variable representing the fully qualified path 
+* Supports any valid internal or external storage device
+* **Default path: "file://%INSTALLDIR%/CustomScript.xml" (Enterprise Browser installation folder)**
+
+#### Example
+
+	:::xml
+	<Configuration>
+		...
+		<FileLocations>
+		      <customxmlfile value="file://%INSTALLDIR%/CustomScript.xml"/>
+		</FileLocations>
+		...
+	</Configuration>
+
+
+
 ### WebPageCapture
 **Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source location and rendered screen of the WebView window currently in the foreground. When enabled (value=1), For complete instructions, see the [Capture a Screen](../capture) user guide.  
 
@@ -1302,57 +1351,6 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 -----
 
 ## Application 
-
-### buttonxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. 
-
-For more information, see the [Customize EB Functions](../customize) guide.
-
-**Possible Values**:
-
-* Fully qualified path and file name
-* Substitution variable representing the fully qualified path 
-* Supports any valid internal or external storage device
-* **Default path: "file://%INSTALLDIR%/button.xml" (Enterprise Browser installation folder)**
-
-#### Example
-
-	:::xml
-	<Configuration>
-		<Applications>
-		    <Application> 
-		      ...
-		      <buttonxmlfile value="file://%INSTALLDIR%/button.xml"/>
-		      ...
-		     </Application>
-		</Applications>
-	</Configuration>
-
-
-### customxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `CustomScript.xml` file (if present) from the EB installation folder. 
-
-For more information, see the [Customize EB Functions](../customize) guide. 
-
-**Possible Values**:
-
-* Fully qualified path and file name
-* Substitution variable representing the fully qualified path 
-* Supports any valid internal or external storage device
-* **Default path: "file://%INSTALLDIR%/CustomScript.xml" (Enterprise Browser installation folder)**
-
-#### Example
-
-	:::xml
-	<Configuration>
-		<Applications>
-		    <Application> 
-		      ...
-		      <customxmlfile value="file://%INSTALLDIR%/CustomScript.xml"/>
-		      ...
-		     </Application>
-		</Applications>
-	</Configuration>
 
 ### MixedContentMode
 **Applies only to Android devices running <u>Lollipop and higher</u>**. Controls loading of content from insecure sites based on the security level of the originating app. For example, if the app is loaded from a site secured with https://, `MIXED_CONTENT_NEVER_ALLOW` mode will block subsequent content requests that do not originate from similarly secured sites.

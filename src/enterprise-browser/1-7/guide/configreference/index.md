@@ -313,9 +313,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ## Configuration
 
 ### buttonxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. 
-
-For more information, see the [Customize EB Functions](../customize) guide.
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. For more information, see the [Customize EB Functions](../customize) guide.
 
 **Possible Values**:
 
@@ -1629,7 +1627,7 @@ Examples
 
 
 ### DomStorageEnabled
-**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Disabled by default. See also [ApplicationCacheEnabled](#applicationcacheenabled). 
+**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Disabled by default. <!-- See also [ApplicationCacheEnabled](#applicationcacheenabled). -->
 
 **Possible Values**:
 

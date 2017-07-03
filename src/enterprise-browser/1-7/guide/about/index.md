@@ -23,7 +23,7 @@ EB 1.7 now supports the following **new devices** and/or existing devices runnin
 * ET50 Android Marshmallow
 * ET55 Android Marshmallow
 * MC32 Android Lollipop
-* **TC51HD (HealthCare) Android Marshmallow**
+* **TC51HC (HealthCare) Android Marshmallow**
 * **TC56 Android Marshmallow**
 * TC75X Android Marshmallow
 * RS5000 Ring Scanner (when used with WT6000 Lollipop)
@@ -43,7 +43,6 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 * **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** erases a cached HTML5 app upon exiting it. 
 * **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
 * **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit) -**  erases a cached HTML5 app upon exiting it.
-<!-- * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** controls whether hardware acceleration is used by an EB app. 6/28/17- PER ENG., NOT BEING IMPLEMENTED AT THIS TIME-->
 * **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** controls whether application data is stored locally using HTML5 Web Storage.
 * **[&lt;DatabaseEnabled&gt;](../configreference#databaseenabled) -** controls whether to enable the WebSQL database.
 * **[&lt;GeoLocationEnabled&gt;](../configreference#geolocationenabled) -** controls whether location data from the device can be consumed by the EB app.
@@ -54,20 +53,20 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 * **[&lt;ClearWebData&gt;](../configreference#clearwebdata) -** determines whether WebView data stored by the EB app will be retained when app returns to the foreground after the device HOME key is pressed.
 * **[&lt;NavigateToHomePage&gt;](../configreference#navigatetohomepage) -** causes an EB app to display its Start Page when the app returns to the foreground.
 * **[&lt;MixedContentMode&gt;](../configreference#mixedcontentmode) -** security feature that can prevent loading of content from insecure sites.
-* **[&lt;WebFilteringEnabled&gt;](../configreference#webfilteringenabled) -** 
-* **[&lt;WhiteListingUrls&gt;](../configreference#whitelistingurls) -** 
-* **[&lt;BlackListingUrls&gt;](../configreference#blacklistingurls) -** 
-* **[&lt;DeleteCookiesOnExit&gt;](../configreference#deletecookiesonexit) -** 
+* **[&lt;WebFilteringEnabled&gt;](../configreference#webfilteringenabled) -** Controls whether web sites will be filtered by the addresses specified in the related tags (below). 
+* **[&lt;WhiteListingUrls&gt;](../configreference#whitelistingurls) -** explicitly allows one or more websites to be visited by an app.
+* **[&lt;BlackListingUrls&gt;](../configreference#blacklistingurls) -** explicitly blocks one or more websites. 
+* **[&lt;DeleteCookiesOnExit&gt;](../configreference#deletecookiesonexit) -** automatically erases cookies stored by Enterprise Browser when exiting. 
 
 ##### Additional Web-related Features
 * **[&lt;BackgroundColor&gt;](../configreference#backgroundcolor) -** controls the color of the screen in areas apart from those of the app (if not already set by HTML).
-* **[&lt;WebPageCapture&gt;](../configreference#webpagecapture]) -** 
+* **[&lt;WebPageCapture&gt;](../configreference#webpagecapture) -** diagnostic tool captures screenshots and source files for all app screens. 
 
-##### Device Security Features (for kiosk mode)
+##### Device Security Features (for kiosk mode--Lollipop and higher only)
 * **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** prevents the HOME key on the device from exiting the current app. 
-* **[&lt;setStatusBarDisable&gt;](../configreference#setStatusBarDisable) -** prevents the status bar from being displayed (either automatically or by dragging down from the top of the screen). 
-* **[&lt;setBackKeyDisable&gt;](../configreference#setBackKeyDisable) -** disables the BACK key or capacitive button, which could otherwise exit the current app and invoke the previously active app or Launcher screen. 
-* **[&lt;setVolumeButtonDisable&gt;](../configreference#setVolumeButtonDisable) -** prevents the user from controlling the speaker volume using device hardware keys. 
+* **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** prevents the status bar from being displayed (either automatically or by dragging down from the top of the screen). 
+* **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** disables the BACK key or capacitive button, which could otherwise exit the current app and invoke the previously active app or Launcher screen. 
+* **[&lt;setVolumeButonDisable&gt;](../configreference#setvolumebutondisable) -** prevents the user from controlling the speaker volume using device hardware keys. 
 * **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting one from the "recents" list. 
 
 ----
@@ -185,7 +184,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
-  <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet), ET1 WAN</td>
+  <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet)<br> ET1 WAN</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -193,20 +192,20 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="et5xPic" src="../../images/et5x.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET5X</b></td>
   <td class="clsSyntaxCells clsOddRow">ET50, ET55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC75x</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC51</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC51</nobr></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC51, TC51HC, TC56</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -235,7 +234,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 5.0 (Lollipop)<br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -284,7 +283,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -360,7 +359,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="../../images/tc75.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC75</nobr></td>
+  <td class="clsSyntaxCells clsOddRow"><nobr>TC75, TC75x</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -460,7 +459,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tbody>
  <tr>
   <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th width="10%" class="clsSyntaxHeadings">Device family</th>
   <th width="25%" class="clsSyntaxHeadings">Device</th>
   <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
   <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
@@ -494,17 +493,24 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tbody>
  <tr>
   <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings"><nobr>Device family</nobr></th>
+  <th width="10%" class="clsSyntaxHeadings">Device family</th>
   <th width="25%" class="clsSyntaxHeadings">Device</th>
   <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
   <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="rs5000Pic" src="../../images/rs5000.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>RS5000</b></td>
+  <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 (Lollipop) only.</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported on WT6000 and TC75 only</td>
+  <td class="clsSyntaxCells clsOddRow">Supported for use with:<br>WT6000 (Lollipop)<br>TC8000 (Lollipop)<br>TC75x (Marshmallow)<br>TC51 and TC51HC (Marshmallow)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="25"></td>
@@ -528,6 +534,46 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 * Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on those devices; optional on some Jelly Bean devices).
 
 * Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
+
+<h3>Ultra-Rugged Scanners</h3>
+<table cellspacing="0" cellpadding="0" class="table table-striped">
+ <tbody>
+ <tr>
+  <th width="15%" class="clsSyntaxHeadings"></th>
+  <th width="10%" class="clsSyntaxHeadings">Device family</th>
+  <th width="25%" class="clsSyntaxHeadings">Device</th>
+  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
+  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="ds3678" src="../../images/ds3678.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>DS3678</b></td>
+  <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">Supported for use with TC51 and TC51HC (Marshmallow)</td>
+ </tr>
+</tbody>
+</table>
+
+<h3>Misc. Accessories</h3>
+<table cellspacing="0" cellpadding="0" class="table table-striped">
+ <tbody>
+ <tr>
+  <th width="15%" class="clsSyntaxHeadings"></th>
+  <th width="10%" class="clsSyntaxHeadings">Device family</th>
+  <th width="25%" class="clsSyntaxHeadings">Device</th>
+  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
+  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="CBL-NGWT-HDVBAP-01pic" src="../../images/CBL-NGWT-HDVBAP-01.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>Vibrator CBL-NGWT-HDVBAP-01</b></td>
+  <td class="clsSyntaxCells clsOddRow">Vibrating Cable</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 (Lollipop)</td>
+ </tr>
+</tbody>
+</table>
 
 ###Printers
 

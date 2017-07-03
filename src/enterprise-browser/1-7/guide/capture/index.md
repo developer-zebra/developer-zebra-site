@@ -23,9 +23,7 @@ Apps made with Enterprise Browser 1.7 (and higher) come with Web Page Capture, a
  * `/Android/data/com.symbol.enterprisebrowser/Diagnostic/WebPageSource`
  * `/Android/data/com.symbol.enterprisebrowser/Diagnostic/WebPageScreen`<br>
 
-
->>>>> FIXXXXX: 
-* **Until the app is exited, screenshots and source files for all app screens that come to the foreground for the first time during that session are saved** to the folders above in the formats described below. 
+* **Until the app is exited, screenshots are saved for all app screens that come to the foreground** and source files for those screens are saved once for each session. Files are saved to the folders above in the formats described below. 
 
 **Note: Screen source files are saved only when screens appear for the first time during a session; sources are <u>NOT SAVED</u> for subsequent visits to a page**. 
 

@@ -6,14 +6,14 @@ layout: guide.html
 ---
 ##Overview
 
-Button XML File
+INCLUDE ANCHOR LINKS TO SECTIONS BELOW 
 
-Custom XML File
+[Button XML File]()
+
+[Custom XML File]()
 
 ### buttonxmlfile
 **Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. 
-
-For more information, see the [Customize EB Functions](../customize) guide.
 
 **Possible Values**:
 

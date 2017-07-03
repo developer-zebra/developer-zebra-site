@@ -11,11 +11,11 @@ automenu:
         - title: Compatibility Matrix
           url: ../../../guide/compatibility
         - title: ButtonBar Usage Guides
-          url: ../../../guide
+          url: ../../../guide/customize
         - title: ButtonBar Configuration Parameter
-          url: ../../../guide/configreference
+          url: ../../../guide/configreference/#buttonxmlfile
         - title: Custom Script Definition Guide
-          url: ../../../guide
+          url: ../../../guide/configreference/#customxmlfile
     - title: ButtonBar API's
       items:
         - title: ButtonBar1

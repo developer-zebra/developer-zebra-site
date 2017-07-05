@@ -31,45 +31,45 @@ Error messages are logged for invalid actions and parameters.
 ### Example
 
 	// First send the intents to enumerate the available scanners on the device:
-	 i.setAction("com.symbol.datawedge.api.ACTION");
-	 i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
-	 this.sendBroadcast(i);
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
+	this.sendBroadcast(i);
 	
 	// define action string:
-	 String enumerateScanners = "com.symbol.datawedge.api.ACTION";
+	String enumerateScanners = "com.symbol.datawedge.api.ACTION";
 
 	// create the intent:
-	 Intent i = new Intent();
+	Intent i = new Intent();
 	
 	// set the action to perform:
-	 i.setAction(enumerateScanners);
+	i.setAction(enumerateScanners);
 	
 	// send the intent to DataWedge:
 	context.this.sendBroadcast(i);
 
 	// enable the app to receive the enumerated list of available scanners:
-	 String enumeratedList = "com.symbol.datawedge.api.ACTION";
-	 String KEY_ENUMERATEDSCANNERLIST = "DWAPI_KEY_ENUMERATEDSCANNERLIST";
+	String enumeratedList = "com.symbol.datawedge.api.ACTION";
 
 	// create a filter for the broadcast intent
-	 IntentFilter filter = new IntentFilter();
-	  filter.addAction(enumeratedList);
-	  registerReceiver(myBroadcastReceiver, filter);
+	IntentFilter filter = new IntentFilter();
+	 	filter.addAction(enumeratedList);
+	  	filter.addCategory(Intent.CATEGORY_DEFAULT);  // NOTE: REQUIRED for DW6.2 and higher
+	  	registerReceiver(myBroadcastReceiver, filter);
 
 	// create a broadcast receiver
-	 private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
+	private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
 	   @Override
 	   public void onReceive(Context context, Intent intent) {
 	        String action = intent.getAction();
 	        Log.d(TAG, "Action: " + action); 
 	                
          	if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
-                Bundle b = intent.getExtras();
+            	Bundle b = intent.getExtras();
 
     // enumerate scanners
-     if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
+    if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
         ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
-     if((scannerList != null) && (scannerList.size() > 0)) {
+    if((scannerList != null) && (scannerList.size() > 0)) {
         for ( Bundle bunb: scannerList)
             Log.d(TAG,"Scanner:"+bunb.getString("SCANNER_NAME")+" Connection:"+bunb.getBoolean("SCANNER_CONNECTION_STATE")+" Index:"+bunb.getInt("SCANNER_INDEX"));
                     }

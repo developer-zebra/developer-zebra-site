@@ -18,6 +18,8 @@ automenu:
           url: ConfigEditor
         - title: Config.xml Reference
           url: configreference
+        - title: Customize Buttons/JavaScript
+          url: customize
         - title: On-device Configuration
           url: OndeviceConfig
         - title: Shortcut Creator Utility
@@ -46,6 +48,8 @@ automenu:
           url: debuggingjs
         - title: Sample Apps
           url: samples
+        - title: Web Page Capture
+          url: capture
     - title: Migration
       items:
         - title: From Pocket Browser 2.x/3x

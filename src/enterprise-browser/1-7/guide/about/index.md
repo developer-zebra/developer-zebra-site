@@ -15,11 +15,10 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v1.7
 
-### Zebra Android Device Support
+### Device Support
 
-EB 1.7 now supports the following **new devices** and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
+EB 1.7 now supports the following **new devices** (shown in **bold**) and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
-* **CC5000-10 Android Lollipop**
 * ET50 Android Marshmallow
 * ET55 Android Marshmallow
 * MC32 Android Lollipop
@@ -29,10 +28,9 @@ EB 1.7 now supports the following **new devices** and/or existing devices runnin
 * RS5000 Ring Scanner (when used with WT6000 Lollipop)
 
 [See all supported devices](#mobile)
-### 
 
 ### WebView Control
-Enterprise Browser 1.7 now permits many features of the Android WebView to be controlled through the `Config.xml`, helping to simplify access to device- and web-related security capabilities and user-experience features. EB 1.7 also increases the methods and properties provided in the [WebView API](../../api/webview). 
+Enterprise Browser 1.7 now permits many features of the Android WebView to be controlled through the `Config.xml` file, helping to simplify access to device- and web-related security capabilities and user-experience features. EB 1.7 also increases the methods and properties provided in the [WebView API](../../api/webview). 
 
 > **These tags apply only to devices running KitKat and higher**. 
 
@@ -77,15 +75,27 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 * An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
 * An **updated [SIP API](../../api/sip) -** adds **disableAIIIME** and **resetToDefault** methods for Android. 
 * An **updated [RemoteNotification API](../../api/remotenotification) -** introduces a **cancelNotification** method and **isLEDSupported, isBeepSupported and isVibrateSupported** properties for Android. 
-* An **updated [Barcode API](../../api/barcode) -** gives Android devices new **resetToDefault and isParamSupported** methods and properties for **aimType, timesAimDuration, sameSymbolTimeout, differentSymbolTimeout, picklistEx, decodeLEDtime, decodeLEDFeedback, decodeLEDFeedbackMode, OneDQuietZoneLevel** and **PoorQualityDecideZoneLevel**.
+* An **updated [Barcode API](../../api/barcode) -** gives Android devices new **resetToDefault** and **isParamSupported** methods and properties for **aimType, timesAimDuration, sameSymbolTimeout, differentSymbolTimeout, picklistEx, decodeLEDtime, decodeLEDFeedback, decodeLEDFeedbackMode, OneDQuietZoneLevel** and **PoorQualityDecideZoneLevel**.
+
+-----
+
+New or Updated Guides
+
+* A **new [Web Page Capture guide](../capture)** covers diagnostic features introduced in EB 1.7 that can capture screenshots and source code files for all app pages. 
+
+* The **new [Customization guide](../customize)** shows how to customize the on-screen buttons on a device and how to include custom JavaScript snippets for use by the buttons or apps.
+
+* An **updated [Security Overview guide](../security)** includes the new security-related `Config.xml`-file tags.  
 
 -----
 
 ## New in v1.6
 
-#### Android Jelly Bean - End of Support
+### Android Jelly Bean - End of Support
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
 
+
+### Device Support
 EB 1.6 now supports the following new devices and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
 * **ET50** with Android Lollipop
@@ -100,7 +110,7 @@ EB 1.6 now supports the following new devices and/or existing devices running An
 
 This release also adds a range of additional new features for all supported Android devices.
 
-#### New or Updated APIs
+### New or Updated APIs
 
 * **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and higher**). 
 
@@ -114,11 +124,11 @@ This release also adds a range of additional new features for all supported Andr
 
 * **[RS6000 Ring Scanner](#wearable) -** is now supported on TC75x devices running Android Marshmallow.
 
-#### Enterprise Browser Kiosk Mode
+### Enterprise Browser Kiosk Mode
 
 * **New [Enterprise Browser Lockdown Option](../ehs) -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide an easily configurable lock-down feature for any Enterprise Browser app, preventing access to device settings and other apps installed on the device.
 
-#### New Tags for Android
+### New Tags for Android
 The following Enterprise Browser configuration tags are now supported on Android (formerly Windows-only).
 
 * **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav or .ogg file to be played when a scanned barcode is successfully decoded.
@@ -129,7 +139,7 @@ The following Enterprise Browser configuration tags are now supported on Android
 
 * **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -** controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
 
-#### New and Updated Guides
+### New and Updated Guides
 
 * **New [Security Guide](../security) -** explains Enterprise Browser's numerous security features and provides links to their individual guides or guide sections.
 
@@ -140,7 +150,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 
 -----
 
-### Key Features
+### Key EB Features
 
 * **A development toolkit for mobile cross-platform enterprise apps**. Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices. Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE.
 * **Build apps using HTML5, CSS and JavaScript**. Use web skills to create great-looking applications. Based on open source and standard technologies, not proprietary toolkits. Access to the world's largest developer community.
@@ -152,7 +162,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 * **Full-screen display**. Maximizes available display space for a richer, more effective user interface; hides command bar and Start menu. 
 * **Extensive logging capability**. Flexibility to easily capture logging information, reducing management and support effort. 
 
-### Key Benefits
+### Key EB Benefits
 
 * **Reduces application and development costs** and eliminates the need to develop, manage and maintain multiple versions of an application to support different types of devices and operating systems; provides highly cost effective support for a mixed-OS environment.
 * **Protects the business from OS market uncertainty**. Devices and platforms can continue to churn without impacting the business. These OS-agnostic applications work on Symbol, Motorola and Zebra Technologies platforms of yesterday (MPA2), today and tomorrow.

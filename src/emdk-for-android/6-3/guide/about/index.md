@@ -33,20 +33,21 @@ The following software must be installed prior to using the EMDK for Android.
 
 
 ## Devices Supported
-
-* MC18 - KitKat 
-* MC40 - KitKat 
-* MC67 - KitKat
-* MC92 - KitKat 
-* TC51 - Marshmallow
-* TC55 - KitKat 
-* TC56 - Marshmallow
-* TC70 - KitKat ,Lollipop
-* TC75 - KitKat ,Lollipop
-* TC75x - Marshmallow
-* TC8000 - KitKat ,Lollipop
-* WT6000 - Lollipop 
-* ET5X - Lollipop  
+* ET5X   - Lollipop
+* MC18   - KitKat, Lollipop
+* MC32N0 - Lollipop
+* MC40   - KitKat, Lollipop
+* MC67   - KitKat	 
+* MC92   - KitKat 
+* TC51   - Marshmallow
+* TC55   - KitKat	 
+* TC56   - Marshmallow
+* TC70   - KitKat, Lollipop
+* TC70x  - Marshmallow
+* TC75   - KitKat, Lollipop
+* TC75x  - Marshmallow
+* TC8000 - KitKat,Lollipop
+* WT6000 - Lollipop
 
 ## Devices Not - Supported
 

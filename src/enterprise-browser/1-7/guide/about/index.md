@@ -208,14 +208,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC75x</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC75x</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC51</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC51, TC51HC, TC56</nobr></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC5x</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC56</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -341,7 +341,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc95Pic" src="../../images/mc9500.gif" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9500</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC9590, MC9596, MC9598, MC959B (WM6.1)</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC9590, MC9596, MC9598, MC959B (WM6.1)</td>
   <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -362,7 +362,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>	TC70 GA1, TC70 GA2</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC70 GA1, TC70 GA2</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>

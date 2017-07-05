@@ -35,16 +35,19 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 
 ### Example
 
+	::javascript
 	// define action string
-	String resetDefaultProfile = "com.symbol.datawedge.api.ACTION";
-	String extraData = (com.symbol.datawedge.api.RESET_DEFAULT_PROFILE, "");
+	String action = "com.symbol.datawedge.api.ACTION";
+	String extraData = "com.symbol.datawedge.api.RESET_DEFAULT_PROFILE";
 
 	public void onResume() {
-	        // create the intent
-	        Intent i = new Intent();
-	        // set the action to perform
-	        i.setAction(resetDefaultProfile);
-	        context.this.sendBroadcast(i);
+		// create the intent
+		Intent i = new Intent();
+
+		// set the action to perform
+		i.setAction(action);
+		i.putExtra(extraData, ""); // empty since a name is not required
+		this.sendBroadcast;
 	}
 
 <!--

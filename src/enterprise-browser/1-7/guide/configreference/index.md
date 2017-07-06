@@ -444,7 +444,9 @@ For more information, see the [Customize EB Functions](../customize) guide.
 	  </CustomKioskMode>
 
 ### JSLibraries
-**Applies only to devices running Android KitKat and higher**. Controls whether to allow the injection of Enterprise Browser JavaScript libraries (such as ebapi-modules.js and elements.js API libraries) into the DOM of an HTML page. Disabled by default. 
+**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called. It is designed for use when the source HTML is difficult or impossible to modify. 
+
+**Important: If the source HTML contains API calls via meta tags or body/window-onload commands, Zebra recommends using [DOM Injection](../dominjection) for best results when inserting API libraries**.
 
 **Possible Values**:
 
@@ -1161,7 +1163,7 @@ Used to persist data when using Read/WriteUserSetting.
 ## ApplicationCache
 
 ### ApplicationCacheEnabled
-**Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. **Note: This is unrelated to the web cache feature**. Disabled by default. 
+**Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: This is unrelated to the web cache feature**.  
 
 <!-- removed, per eng. This is not a user-accessible dir. 
 Application cache data is stored on the device in:<br> 
@@ -1404,7 +1406,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 
 ### WebFilteringEnabled
-**Applies only to Android devices**. Controls whether web sites will be filtered by the URIs specified in the related [WhileListingUrls](#whitelistingurls) (explicitly allowed) and [BlackListingUrls](#blacklistingurls) (explicitly blocked) configuration tags. Disabled by default. If this parameter is enabled (value=1) and no URIs are specified in the related parameters, no web addresses will be blocked. 
+**Applies only to Android devices**. Controls whether web sites will be filtered by URIs specified in the related [WhileListingUrls](#whitelistingurls) (explicitly allowed) and [BlackListingUrls](#blacklistingurls) (explicitly blocked) configuration tags. Disabled by default. If this parameter is enabled (value=1) and no URIs are specified in the related parameters, no web addresses will be blocked. 
 
 **Other important rules apply. See related parameters, below**. 
 
@@ -1420,12 +1422,13 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	</WebFiltering>
 
 ### WhiteListingUrls
-**Applies only to Android devices**. Explicitly allows one or more websites to be visited by an app when [WebFilteringEnabled](#webfilteringenabled) tag is enabled (value =1). **If WebFilteringEnabled is enabled and this parameter is left blank, users will have access to all URIs except those specified in the BlackListingUrls parameter**. 
+**Applies only to Android devices**. Explicitly allows one or more websites to be visited by an app when [WebFilteringEnabled](#webfilteringenabled) tag is enabled (value =1). **If WebFilteringEnabled is enabled and this parameter is left blank, users will have access to all URIs except those specified in the BlackListingUrls parameter**. Failure to specify URIs according to regular expressions, or attempting to access a page that is blacklisted (or not whitelisted, as applicable) will display the [BadLinkURI](#badlinkuri) message.
 
 **Possible Values**:
 
-* One or more Uniform Resource Identifiers (URIs) with or without protocol identifiers (such as http://)
-* Separate entries with a semicolon (";")
+* One or more Uniform Resource Identifiers (URIs) and/or protocol identifiers (i.e. http://)
+* Multiple entries can be separated by a semicolon (";")
+* Wildcard character (*) supported (i.e. https://*.*; *.MySite.com; www.*)
 
 #### Example
 	:::xml

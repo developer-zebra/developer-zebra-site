@@ -45,39 +45,42 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 -----
 
 ### Windows Installation
-If upgrading from a prior version of Enterprise Browser, the older version must be manually uninstalled before installing the new one (see image, below). 
+Enterprise Browser 1.7 for Windows eliminates the need to manually remove a prior EB version before installing a new one. 
 
+**To install Enterprise Browser for Windows**:
+
+**&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC**. 
+
+**&#50;. THIS STEP IS NOT REQUIRED IF USING EB 1.7 OR HIGHER**: 
+To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** (similar to the image below) and follow the prompts. 
 ![img](../../images/getting-started/setup/ebsetup_00.png)
+<br>
 
-**To remove and install Enterprise Browser*:
+&#51;. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). Then: 
 
-If not upgrading, skip to Step 3. 
+* Scroll to find the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
-1. **Backup any data stored in the `C:\EnterpriseBrowser` directory of the host PC**; Step 2 will cause it to be lost. 
-2. To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** and follow the prompts. 
-3. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear. 
-	a. Click on the Windows ".msi" package. 
-	b. Accept the end-user license agreement to begin the download.
-4. When the download completes, launch the installer and follow the prompts. After installation, a screen similar to the image below appears. 
-5. Confirm that the "Launch" box is checked and **click "Close" to quit the installer** and launch Enterprise Browser. 
+* For Windows, click on the Windows ".msi" package, accept the end-user license agreement and begin the download.
+
+&#52;. When the download completes, launch the installer and follow the prompts. After installation, a screen similar to the image below appears. 
 
 ![img](../../images/getting-started/setup/ebsetup_01.jpg)
 
-After closing the screen above, an Enterprise Browser "Installer" screen similar to the image below appears. Supported platforms are listed on the left and a description appears at right when a platform is selected. 
-
-To bring up this screen at a later time, select **Start Menu -> Enterprise Browser -> Enterprise Browser Installer**. 
+&#53;. Confirm that the "Launch" box is checked. **Click "Close" to quit the installer and launch Enterprise Browser**. An Enterprise Browser "Installer" screen similar to the image below appears. Supported platforms are listed on the left and a description appears at right when a platform is selected. 
 
 ![img](../../images/getting-started/setup/ebsetup_02.jpg)
+_To bring up this screen at a later time, select **Start Menu -> Enterprise Browser -> Enterprise Browser Installer**_. 
+<br>
 
-Windows instructions continue in the "Deployment to Device(s)" section, below. 
+**Windows instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
 
 -----
 
 ### Mac OS X Installation
 1. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
- 	a. Click on the Mac OS X ".dmg" package. 
-	b. Accept the end-user license agreement to begin the download.
+ a. Click on the Mac OS X ".dmg" package. <br>
+ b. Accept the end-user license agreement to begin the download.
 
 2. When the download completes, double-click the .dmg file to open it. A window similar to the image below appears. 
 3. Drag and drop the Enterprise Browser icon onto the Applications folder (in the direction of the arrow). 
@@ -88,7 +91,7 @@ The Enterprise Browser files and folders will be copied into the Application fol
 
 ![img](../../images/getting-started/setup/setup-macosx-directories.png)
 
-**Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Windows version**. These are the same runtimes listed on the left side of the [Windows "Installer" screen](../../images/getting-started/setup/ebsetup_02.jpg), above. 
+**Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Windows version**. These are the same runtimes listed on the left side of the [Windows "Installer" screen](../../images/getting-started/setup/ebsetup_02.jpg) above. 
 
 -----
 

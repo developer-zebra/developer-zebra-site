@@ -38,9 +38,9 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 
 ##### Web Security Features
 * **[&lt;ApplicationCacheEnabled&gt;](../configreference#applicationcacheenabled) -** allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load.
-* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** erases a cached HTML5 app upon exiting it. 
+* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** controls whether to erase a cached HTML5 app upon exiting it. 
 * **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
-* **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit) -**  erases a cached HTML5 app upon exiting it.
+* **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit) -** controls whether to erase contents of the browser cache when exiting an app.
 * **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** controls whether application data is stored locally using HTML5 Web Storage.
 * **[&lt;DatabaseEnabled&gt;](../configreference#databaseenabled) -** controls whether to enable the WebSQL database.
 * **[&lt;GeoLocationEnabled&gt;](../configreference#geolocationenabled) -** controls whether location data from the device can be consumed by the EB app.

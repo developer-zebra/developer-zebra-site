@@ -446,7 +446,7 @@ For more information, see the [Customize EB Functions](../customize) guide.
 ### JSLibraries
 **Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called. It is designed for use when the source HTML is difficult or impossible to modify. 
 
-**Important: If the source HTML contains API calls via meta tags or body/window-onload commands, Zebra recommends using [DOM Injection](../dominjection) for best results when inserting API libraries**.
+**Important: If the source HTML issues API calls using meta tags or body/window-onload commands, Zebra recommends using [DOM Injection](../dominjection) for best results when inserting API libraries**. 
 
 **Possible Values**:
 
@@ -1427,8 +1427,8 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 **Possible Values**:
 
 * One or more Uniform Resource Identifiers (URIs) and/or protocol identifiers (i.e. http://)
-* Multiple entries can be separated by a semicolon (";")
-* Wildcard character (*) supported (i.e. https://*.*; *.MySite.com; www.*)
+* Multiple entries can be separated by a semicolon (;)
+* Wildcard character (&#42;) supported (i.e. https://&#42;.&#42;; &#42;.MySite.com; www.&#42;)
 
 #### Example
 	:::xml
@@ -1442,7 +1442,8 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 **Possible Values**:
 
 * One or more Uniform Resource Identifiers (URIs) with or without protocol identifiers (such as http://) 
-* Separate entries with a semicolon (";")
+* Multiple entries can be separated by a semicolon (;)
+* Wildcard character (&#42;) supported (i.e. https://&#42;.&#42;; &#42;.MySite.com; www.&#42;)
 
 #### Example
 	:::xml
@@ -2026,7 +2027,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ## DOM injection
 ### CustomDOMElements 
-**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../DOMInjection).  
+**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../DOMinjection).  
 
 **Possible Values**:
 

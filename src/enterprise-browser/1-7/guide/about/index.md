@@ -17,7 +17,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 ## New in v1.7
 
 ### ButtonBar API
-A new Android-only ButtonBar API permits as many as five custom buttons or keys to be displayed on the screen and configured to launch an app, execute a JavaScript snippet or perform any operation available to the device. 
+A new Android-only ButtonBar API permits a series of custom buttons or keys to be displayed on the screen and configured to launch an app, execute a JavaScript snippet or perform other operations available to the device. 
 ![img](EB_ButtonBar_API.png)
 <br>
 
@@ -26,7 +26,7 @@ A new Android-only ButtonBar API permits as many as five custom buttons or keys 
 * [Custom Button guide](../customize)
 * [Button XML file parameter](../configreference/#buttonxmlfile) in `Config.xml` reference
 * [ButtonBar API](../../api/re2x/ButtonBar)
-* Other [new or updated APIs](#neworupdatedapis). 
+* [Other new and updated APIs](#neworupdatedapis)
 
 -----
 
@@ -34,19 +34,19 @@ A new Android-only ButtonBar API permits as many as five custom buttons or keys 
 
 EB 1.7 now supports the following **new devices** (shown in **bold**) and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
+* **TC51HC (HealthCare) Android Marshmallow**
+* **TC56 Android Marshmallow**
+* **DS3678 Ultra Rugged Scanner** (when used with Android TC51/TC51HC Marshmallow)
+* **CBL-NGWT-HDVBAP-01 External Vibrator** (when used with WT6000 Lollipop)
 * ET50 Android Marshmallow
 * ET55 Android Marshmallow
 * MC32 Android Lollipop
-* **TC51HC (HealthCare) Android Marshmallow**
-* **TC56 Android Marshmallow**
 * TC75X Android Marshmallow
 * RS5000 Ring Scanner (when used with WT6000 Lollipop)
 * RS6000 Ring Scanner when used with: 
  * TC51 Marshmallow
  * TC51HC Marshmallow
  * TC8000 Lollipop
-* **DS3678 Ultra Rugged Scanner** (when used with Android TC51/TC51HC Marshmallow)
-* **CBL-NGWT-HDVBAP-01 External Vibrator** (when used with WT6000 Lollipop)
 
 [See all supported devices](#mobile)
 
@@ -79,7 +79,7 @@ The following new substitution variables are now supported by Enterprise Browser
 * **%SECONDARYDIR% -** resolves to the root directory of external storage (i.e. `/storage/sdcard1`)
 * **%PERSISTCONFDIR% -** resolves to a directory that persists after an Enterprise Reset of the device (i.e. `/enterprise/device/enterprisebrowser`)
 
-For details, see the [Config.XML Reference](../configreference/#substitutionvariables). 
+For details, see the [Config.xml Reference](../configreference/#substitutionvariables). 
 
 -----
 

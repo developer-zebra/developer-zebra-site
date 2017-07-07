@@ -29,7 +29,9 @@ Enterprise Browser supports Secure Sockets Layer (SSL) and the newer Transport L
 ### Device Lock-down
 When tight control over device settings and/or apps is required, Enterprise Browser 1.6 and higher integrates with [Enterprise Home Screen](../../../../ehs), Zebra's free Android device lock-down solution. 
 
-See the [EB Device Lock-down Guide](../ehs) for instructions. 
+See the [Enterprise Browser Device Lock-down Guide](../ehs) for complete instructions. 
+
+Also see **Kiosk Mode Enhancements**, below. 
 
 -----
 
@@ -58,13 +60,13 @@ The following security features can be implemented in an app's `config.xml` file
 * [&lt;ExitPasswordEnabled&gt; tag](../configreference/#exitpasswordenabled) - forces the app to require a password to exit. 
 
 ##### Kiosk Mode Enhancements
-**The following tags work only on devices running Android Lollipop (and higher)**. Though they also work independently of Kiosk Mode, they're intended to enhance that Lollipop feature, which restricts device usage to a single app. 
+**The following tags work only on devices running Android Lollipop (and higher)**. These features are intended to enhance Kiosk Mode, a Lollipop feature that restricts device usage to a single app. The tags also work independently.  
 
 * [&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) - prevents the HOME key  (or capacitive button) on the device from exiting the current app. 
 * [&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) - prevents the status bar from being displayed (either automatically or by dragging down from the top of the screen). 
 * [&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) - disables the BACK key (or capacitive button), which could otherwise exit the current app and invoke the previously active app or Launcher screen. 
 * [&lt;setVolumeButonDisable&gt;](../configreference#setvolumebutondisable) - prevents the user from controlling the speaker volume using device hardware keys. 
-* [&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) - prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting one from the "recents" list. 
+* [&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) - prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting an app from the "recents" list. 
 
 -----
 

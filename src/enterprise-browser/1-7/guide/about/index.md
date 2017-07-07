@@ -13,7 +13,22 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
+-----
 ## New in v1.7
+
+### ButtonBar API
+A new Android-only ButtonBar API permits as many as five custom buttons or keys to be displayed on the screen and configured to launch an app, execute a JavaScript snippet or perform any operation available to the device. 
+![img](EB_ButtonBar_API.png)
+<br>
+
+**Related links**:
+
+* [Custom Button guide](../customize)
+* [Button XML file parameter](../configreferente/#buttonxmlfile) in `Config.xml` reference
+* [ButtonBar API](../../api/re2x/ButtonBar)
+* Other [new or updated APIs](#neworupdatedapis). 
+
+-----
 
 ### Device Support
 
@@ -26,6 +41,12 @@ EB 1.7 now supports the following **new devices** (shown in **bold**) and/or exi
 * **TC56 Android Marshmallow**
 * TC75X Android Marshmallow
 * RS5000 Ring Scanner (when used with WT6000 Lollipop)
+* RS6000 Ring Scanner when used with: 
+ * TC51 Marshmallow
+ * TC51HC Marshmallow
+ * TC8000 Lollipop
+* **DS3678 Ultra Rugged Scanner** (when used with Android TC51/TC51HC Marshmallow)
+* **CBL-NGWT-HDVBAP-01 External Vibrator** (when used with WT6000 Lollipop)
 
 [See all supported devices](#mobile)
 
@@ -35,8 +56,29 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 > **These tags apply only to devices running KitKat and higher**. 
 
 #### New WebView Config tags:
+* &lt;LayoutLeft&gt;()
+* &lt;LayoutTop&gt;()
+* &lt;LayoutWidth&gt;()
+* &lt;LayoutHeight&gt;()
 
-##### Web Security Features
+Other new UI-related tags
+
+* **[&lt;customxmlfile&gt;]() -** specifies the location of the `button.xml` file containing configuration settings for the custom on-screen buttons on the device. 
+
+* **[&lt;JSLibraries&gt;]() -** can be used to inject JavaScript API libraries (`ebapi-modules.js` and `elements.js`) into the DOM of every HTML page when it's not otherwise possible to edit the source. 
+
+-----
+
+### New Substitution Variables
+The following new substitution variables are now supported by Enterprise Browser for use in Config.xml parameters: 
+
+* %PRIMARYDIR%
+* %SECONDARYDIR%
+* %PERSISTCONFDIR%
+
+-----
+
+### Web Security Features
 * **[&lt;ApplicationCacheEnabled&gt;](../configreference#applicationcacheenabled) -** allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load.
 * **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** controls whether to erase a cached HTML5 app upon exiting it. 
 * **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
@@ -71,7 +113,7 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 
 ### New or Updated APIs
 
-* An updated [WebView API](../../api/webview) provides programmatic control over the Android WebView using new **clearApplicationCache, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
+* An **updated [WebView API](../../api/webview)** provides programmatic control over the Android WebView using new **clearApplicationCache, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
 * An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
 * An **updated [SIP API](../../api/sip) -** adds **disableAIIIME** and **resetToDefault** methods for Android. 
 * An **updated [RemoteNotification API](../../api/remotenotification) -** introduces a **cancelNotification** method and **isLEDSupported, isBeepSupported and isVibrateSupported** properties for Android. 

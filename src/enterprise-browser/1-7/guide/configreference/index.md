@@ -35,17 +35,35 @@ If a `Config.xml` must be retained after a cold boot, a persistent installation 
 -----
 
 ## Substitution Variables
-The following substitution variables are available in the configuration file:
+The following substitution variables are supported for use in the `Config.xml` file:
 <table class="re-table">
 	<tr>
 		<th>Variable</th>
-		<th>-> Expanded Value</th>
+		<th>  Description</th>
 	</tr>
 	<tr>
 		<td>%INSTALLDIR%</td>
-		<td>-> The directory into which the Enterprise Browser has been installed.</td>
+		<td>  Installation directory of the Enterprise Browser app (i.e. <strong>/Android/Data/com.symbol.enterprisebrowser</strong>)</td>
+	</tr>
+	<tr>
+		<td>%PRIMARYDIR%</td>
+		<td>  The root directory of internal device storage (i.e. <strong>/storage/sdcard0</strong>).</td>
+	</tr>
+	<tr>
+		<td>%SECONDARYDIR% (read-only)</td>
+		<td>  The root directory of external storage (i.e. <strong>/storage/sdcard1</strong>).</td>
+	</tr>
+	<tr>
+		<td>%PERSISTCONFDIR%</td>
+		<td>  A directory that persists after an Enterprise Reset of the device (<strong>/enterprise/device/enterprisebrowser</strong>).</td>
 	</tr>
 </table>
+
+**Notes**:
+
+* **Zebra recommends using the %PERSISTCONFDIR% variable only with MDM or EMM systems** or in mass deployment scenarios.
+
+* **The %SECONDARYDIR% variable is read-only**; Enterprise Browser cannot write to an external SD Card.
 
 -----
 
@@ -313,7 +331,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ## Configuration
 
 ### buttonxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device.  **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. For more information, see the [Customize EB Functions](../customize) guide.
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. For more information, see the [Customize EB Functions](../customize) guide.
 
 **Possible Values**:
 
@@ -444,9 +462,16 @@ For more information, see the [Customize EB Functions](../customize) guide.
 	  </CustomKioskMode>
 
 ### JSLibraries
-**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called. It is designed for use when the source HTML is difficult or impossible to modify. 
+**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called. 
 
-**Important: If the source HTML issues API calls using meta tags or body/window-onload commands, Zebra recommends using [DOM Injection](../dominjection) for best results when inserting API libraries**. 
+**Important: The standard method of accessing Enterprise Browser APIs API libraries (`ebapi-modules.js` and `elements.js`) is to include a reference to the libraries on every page from which an API is called. If doing so is difficult because the source HTML is difficult or impossible to modify,  
+
+>>> FIXXXXX
+
+If the source HTML issues API calls using meta tags or body/window-onload commands, Zebra recommends using [DOM Injection](../dominjection) for best results when inserting API libraries**. 
+
+ABHINEET:
+“Important: If any source HTML invokes EB API’s using HTML Meta Tags or onload attributes or both, Zebra recommends to invoke the same using DOM Injection<http://zebra-stage.github.io/enterprise-browser/1-7/guide/dominjection>. Note: One can also put direct reference of Enterprise Browser JavaScript API libraries (ebapi-modules.js and elements.js) inside the source HTML if they don’t want to invoke the same using DOM Injection<http://zebra-stage.github.io/enterprise-browser/1-7/guide/dominjection>.”
 
 **Possible Values**:
 
@@ -1467,7 +1492,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 **Possible Values**:
 
-* URL: PortNo
+* URL:PortNo
 
 #### Example
 	:::xml
@@ -1475,9 +1500,10 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 ### No_Proxy
 **Applies to the Zebra Webkit engine only**. Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
+
 **Possible Values**:
 
-* Comma separated list of direct access addresses.
+* Comma-separated list of direct access addresses
 
 #### Example
 	:::xml

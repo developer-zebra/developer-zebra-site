@@ -36,32 +36,44 @@ If a `Config.xml` must be retained after a cold boot, a persistent installation 
 
 ## Substitution Variables
 The following substitution variables are supported for use in the `Config.xml` file:
-<table class="re-table">
-	<tr>
+
+<div class="parm-table">
+<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
+
+	<tr bgcolor="#e0e0eb" >
 		<th>Variable</th>
-		<th>  Description</th>
+		<th>Description</th>
 	</tr>
-	<tr>
-		<td>%INSTALLDIR%</td>
-		<td>  Installation directory of the Enterprise Browser app (i.e. <strong>/Android/Data/com.symbol.enterprisebrowser</strong>)</td>
-	</tr>
-	<tr>
-		<td>%PRIMARYDIR%</td>
-		<td>  The root directory of internal device storage (i.e. <strong>/storage/sdcard0</strong>).</td>
-	</tr>
-	<tr>
-		<td>%SECONDARYDIR% (read-only)</td>
-		<td>  The root directory of external storage (i.e. <strong>/storage/sdcard1</strong>).</td>
-	</tr>
-	<tr>
-		<td>%PERSISTCONFDIR%</td>
-		<td>  A directory that persists after an Enterprise Reset of the device (<strong>/enterprise/device/enterprisebrowser</strong>).</td>
-	</tr>
+  	<tr>
+    	<td>%INSTALLDIR%<br>(read-write)</td>
+    	<td>
+    	Installation directory of the Enterprise Browser app<br>(i.e. <strong>/Android/Data/com.symbol.enterprisebrowser</strong>)
+    	</td>
+  	</tr>
+  	<tr>
+    	<td>%PRIMARYDIR%<br>(read-write)</td>
+    	<td>
+	    The root directory of internal device storage<br>(i.e. <strong>/storage/sdcard0</strong>)
+    	</td>
+  	</tr>
+  	<tr>
+    	<td>%SECONDARYDIR%<br>(read-only)</td>
+    	<td>
+	    The root directory of external storage<br>(i.e. <strong>/storage/sdcard1</strong>)
+    	</td>
+  	</tr>
+  	<tr>
+    	<td>%PERSISTCONFDIR%<br>(read-write)</td>
+    	<td>
+    	A directory that persists after an Enterprise Reset of the device<br>(<strong>i.e. /enterprise/device/enterprisebrowser</strong>)
+    	</td>
+  	</tr>
 </table>
+</div>
 
 **Notes**:
 
-* **Zebra recommends using the %PERSISTCONFDIR% variable only with MDM or EMM systems** or in mass deployment scenarios.
+* **Zebra recommends using the %PERSISTCONFDIR% variable only with MDM and/or EMM systems** or in mass deployment scenarios.
 
 * **The %SECONDARYDIR% variable is read-only**; Enterprise Browser cannot write to an external SD Card.
 
@@ -462,16 +474,14 @@ For more information, see the [Customize EB Functions](../customize) guide.
 	  </CustomKioskMode>
 
 ### JSLibraries
-**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called. 
+**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but will not conflict with such references. 
 
-**Important: The standard method of accessing Enterprise Browser APIs API libraries (`ebapi-modules.js` and `elements.js`) is to include a reference to the libraries on every page from which an API is called. If doing so is difficult because the source HTML is difficult or impossible to modify,  
+**Important Notes**: 
 
->>> FIXXXXX
-
-If the source HTML issues API calls using meta tags or body/window-onload commands, Zebra recommends using [DOM Injection](../dominjection) for best results when inserting API libraries**. 
-
-ABHINEET:
-“Important: If any source HTML invokes EB API’s using HTML Meta Tags or onload attributes or both, Zebra recommends to invoke the same using DOM Injection<http://zebra-stage.github.io/enterprise-browser/1-7/guide/dominjection>. Note: One can also put direct reference of Enterprise Browser JavaScript API libraries (ebapi-modules.js and elements.js) inside the source HTML if they don’t want to invoke the same using DOM Injection<http://zebra-stage.github.io/enterprise-browser/1-7/guide/dominjection>.”
+* **The JSLibraries parameter should be used only if the existing HTML pages <u>DO NOT</u> invoke EB APIs using HTML meta tags and/or onload attributes**. 
+* The standard method of accessing Enterprise Browser API libraries (`ebapi-modules.js` and `elements.js`) is to include a reference to the appropriate library on every HTML page from which an EB API is called. 
+* The standard API access method should be used whenever possible and is detailed on each of the [API pages](../../api). 
+* For scenarios in which it is difficult or impossible to modify the HTML source to include EB API references, Zebra recommends invoking APIs using [DOM Injection](../dominjection) for best results. 
 
 **Possible Values**:
 
@@ -1953,7 +1963,7 @@ Controls the frequency of the device beeper sound when a scanned barcode is not 
 	<InvalidDecodeFrequency value="0xFFFF"/>
 
 ### ScanDecodeWav
-Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. The ScanDecodeWav config tag doesnot rely on DecodeDuration, DecodeFrequency and DecodeVolume config tags. This feature is applicable to WM/CE platform & Android KitKat and above platform only. See [remarks](#scandecodewav-on-android-platform) section below.
+Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. The ScanDecodeWav config tag does not rely on DecodeDuration, DecodeFrequency and DecodeVolume config tags. **Applies only to Windows Mobile/CE and Android KitKat and above**. Also see [remarks](#remarks) section below.
 
 **Possible Values**:
 
@@ -2133,7 +2143,7 @@ Specifies the "badlink" URI file to be displayed when:
 2. A page times out (according to the timeout interval set in NavTimeout)
 3. The user presses the stop button. 
 
-The browser will automatically append the querystring value "badlink" containing the URL of the page that could not be reached, and 'stop=true' if the page was loaded because the user pressed the stop button. The page specified in the badlink setting should be a device-resident file using the `file://` protocol so it’s accessible by the browser. 
+The browser will automatically append the query string value "badlink" containing the URL of the page that could not be reached, and 'stop=true' if the page was loaded because the user pressed the stop button. The page specified in the badlink setting should be a device-resident file using the `file://` protocol so it’s accessible by the browser. 
 
 **Known issues**: If the device has no network connection, a navigation timeout message may be displayed on Windows Mobile devices that use the IE engine. On CE5 and CE6, the IE engine will truncate the request variables when navigation to a badlink occurs and the reason for the failure might not be displayed. 
 
@@ -2259,7 +2269,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 	<ViewportWidth value="1"/>
 
 ### CaFile
-**Applies to Windows Mobile/CE only**. Specifies the location of a device-resident file containing CA certificates in PEM format for authentication of a server. Please [refer to openSSL](http://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html) for more information. 
+**Applies to Windows Mobile/CE only**. Specifies the location of a device-resident file containing CA certificates in PEM format for authentication of a server. Please [refer to openSSL](https://www.openssl.org/docs/man1.0.2/ssl/SSL_CTX_load_verify_locations.html) for more information. 
 
 > Note: Enterprise Browser supports only a single PEM certificate file. If multiple certificates must be passed to the Webkit browser on WM/CE, the contents of multiple `.pem` certificates can be combined into a single file using a text editor. The combined file can then be specified in the CaFile parameter. 
 

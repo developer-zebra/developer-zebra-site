@@ -24,7 +24,7 @@ A new Android-only ButtonBar API permits as many as five custom buttons or keys 
 **Related links**:
 
 * [Custom Button guide](../customize)
-* [Button XML file parameter](../configreferente/#buttonxmlfile) in `Config.xml` reference
+* [Button XML file parameter](../configreference/#buttonxmlfile) in `Config.xml` reference
 * [ButtonBar API](../../api/re2x/ButtonBar)
 * Other [new or updated APIs](#neworupdatedapis). 
 
@@ -50,31 +50,36 @@ EB 1.7 now supports the following **new devices** (shown in **bold**) and/or exi
 
 [See all supported devices](#mobile)
 
+-----
+
 ### WebView Control
 Enterprise Browser 1.7 now permits many features of the Android WebView to be controlled through the `Config.xml` file, helping to simplify access to device- and web-related security capabilities and user-experience features. EB 1.7 also increases the methods and properties provided in the [WebView API](../../api/webview). 
 
 > **These tags apply only to devices running KitKat and higher**. 
 
 #### New WebView Config tags:
-* &lt;LayoutLeft&gt;()
-* &lt;LayoutTop&gt;()
-* &lt;LayoutWidth&gt;()
-* &lt;LayoutHeight&gt;()
 
-Other new UI-related tags
+* **[&lt;LayoutLeft&gt;](../configreference#webviewlayout) -** Optionally sets the horizontal start position of an EB app
+* **[&lt;LayoutTop&gt;](../configreference#webviewlayout) -** Optionally sets the vertical start position of an EB app
+* **[&lt;LayoutWidth&gt;](../configreference#webviewlayout) -** Optionally sets the width (not to exceed device screen width) 
+* **[&lt;LayoutHeight&gt;](../configreference#webviewlayout) -** Optionally sets the height (not to exceed device screen height)
 
-* **[&lt;customxmlfile&gt;]() -** specifies the location of the `button.xml` file containing configuration settings for the custom on-screen buttons on the device. 
+#### Other new UI-related tags
 
-* **[&lt;JSLibraries&gt;]() -** can be used to inject JavaScript API libraries (`ebapi-modules.js` and `elements.js`) into the DOM of every HTML page when it's not otherwise possible to edit the source. 
+* **[&lt;customxmlfile&gt;](../configreference#customxmlfile) -** specifies the location of the `button.xml` file containing configuration settings for the custom on-screen buttons on the device. 
+
+* **[&lt;JSLibraries&gt;](../configreference#jslibraries) -** can be used to inject JavaScript API libraries (`ebapi-modules.js` and `elements.js`) into the DOM of every HTML page when it's not otherwise possible or convenient to edit the source. 
 
 -----
 
 ### New Substitution Variables
 The following new substitution variables are now supported by Enterprise Browser for use in Config.xml parameters: 
 
-* %PRIMARYDIR%
-* %SECONDARYDIR%
-* %PERSISTCONFDIR%
+* **%PRIMARYDIR% -** resolves to the root directory of internal device storage (i.e. `/storage/sdcard0`)
+* **%SECONDARYDIR% -** resolves to the root directory of external storage (i.e. `/storage/sdcard1`)
+* **%PERSISTCONFDIR% -** resolves to a directory that persists after an Enterprise Reset of the device (i.e. `/enterprise/device/enterprisebrowser`)
+
+For details, see the [Config.XML Reference](../configreference/#substitutionvariables). 
 
 -----
 

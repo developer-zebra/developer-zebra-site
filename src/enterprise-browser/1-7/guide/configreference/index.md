@@ -1147,7 +1147,7 @@ Used to persist data when using Read/WriteUserSetting.
 
 ## WebDB
 ### WebStorageDBPath
-**Applies to Windows Mobile/CE using the Zebra Webkit only**. Sets the path to an existing directory for storage of web storage databases.  Case sensitive. 
+**Applies to Windows Mobile/CE only**. <!-- 7/7/17 removed "...using the Zebra Webkit only" per eng.--> Sets the path to an existing directory for storage of web storage databases.  Case sensitive. 
 
 **Possible Values**:
 
@@ -1188,7 +1188,7 @@ Used to persist data when using Read/WriteUserSetting.
 ## ApplicationCache
 
 ### ApplicationCacheEnabled
-**Applies only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: This is unrelated to the web cache feature**.  
+**Applies to Windows Mobile/CE only**.<!-- **Applies only to Android devices running KitKat and higher**.  7/7/17- changed to WM/CE only, per eng.--> Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: This is unrelated to the web cache feature**.  
 
 <!-- removed, per eng. This is not a user-accessible dir. 
 Application cache data is stored on the device in:<br> 
@@ -1499,7 +1499,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	<HTTPS_Proxy value="https://my.proxy.com:8181"/>
 
 ### No_Proxy
-**Applies to the Zebra Webkit engine only**. Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
+**Applies to Windows Mobile/CE only**. <!-- **Applies to the Zebra Webkit engine only**. 7/7/17- changed to WM/CE only, per eng.--> Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
 
 **Possible Values**:
 
@@ -2236,7 +2236,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 * Some servers implement the UserAgent string based on the string provided by a visiting client, thereby helping to ensure server-side compatibility with as many client-side UserAgents as possible. 
 
 ### ViewportEnabled
-Controls viewport meta tag processing (enabled by default). Must be greater than zero. 
+**Applies to Windows Mobile/CE only**. Controls viewport meta tag processing (enabled by default). Must be greater than zero. 
 
 **Possible Values**:
 

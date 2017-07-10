@@ -147,6 +147,8 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
         </ButtonBar3>
     </Buttonbargroup>
 
+---
+
 ## Nodes
 Below mentioned code is the head node and all other tags should be inside this parent node.
 
@@ -486,6 +488,8 @@ As of now the only command supported is **`quit`** which can be used to exit fro
             <buttonAction value ="quit"/>
             <buttonImage value ="file://%INSTALLDIR%/quit.png"/>
         </Button5>
+
+---
 
 ## Remarks
 * Donot assign values (i.e. inside any button related tags) which contains special characters such as (< > \ / " '). Doing so, will cause the button xml file to become corrupt. 

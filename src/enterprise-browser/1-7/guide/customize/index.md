@@ -32,18 +32,18 @@ The [10 new ButtonBar APIs](../../api/re2x/ButtonBar/) can be used to:
 
 The settings, parameters, actions and attributes of the desired on-screen button(s) are stored in an XML container called `Button.xml`. If any of the buttons are to execute JavaScript, the JavaScript code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths specified in corresponding tags in the app's `Config.xml` file. 
 
-ButtonBars are shown and hidden using methods implemented in the 10 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. Enterprise Browser accepts API calls using any of the following: 
+ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented one of 10 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. Enterprise Browser can send API calls using any of the following in any combination: 
 
 * JavaScript object
-* ActiveX object (Windows Mobile/CE)
+* ActiveX object (Windows Mobile/CE only)
 * HTML meta tag
-* Enterprise Browser [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) `Config.xml` tag
-* DOM Injection
+* [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) tag in the `Config.xml` file
+* [DOM Injection](../DOMinjection)
 
 **More Info**:
 
-* [&lt;buttonxmlfile&gt; path tag](../configreference/#buttonxmlfile) in `Config.xml` reference
-* [&lt;customxmlfile&gt; path tag](../configreference/#customxmlfile) in `Config.xml` reference
+* [&lt;buttonxmlfile&gt;](../configreference/#buttonxmlfile) path tag in `Config.xml`
+* [&lt;customxmlfile&gt;](../configreference/#customxmlfile)  path tag in `Config.xml`
 * [ButtonBar APIs](../../api/re2x/ButtonBar) 
 
 One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser buttonxmlfile config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons.

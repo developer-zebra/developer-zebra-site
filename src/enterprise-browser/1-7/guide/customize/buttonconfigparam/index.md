@@ -387,7 +387,7 @@ User has to provide the key and value in `**key-value**` format where value is t
    * Generating a keyevent for the particular key can be captured inside JavaScript onkeydown events and it will also key-in the values in the input areas if associated.
    * User can also create their own keyboard creating multiple Horizontal ButtonBars placed in rows or multiple Vertical ButtonBars placed in columns.
 
-**Key Event Examples**
+###### **Key Event Examples**
 1. **F1** key as <buttonAction>: 
 For generating **F1** keyevent as button action for the particular button inside the particular ButtonBar, one must set the **`buttonAction`** syntax in the below manner.
         
@@ -411,12 +411,13 @@ One can use a particular button to invoke any JavaScript code block (including [
 User has to assign the **`buttonAction`** value in **`runscript-scriptname`** format.
     * `runscript` - _This indicate that `buttonAction` is associated with JavaScript code block_.
     * `scriptname` - _This indicate the name of the script which is defined in another custom script xml file. The script definition can contain any JavaScript code block to perform any operation on press of that button. Inside JavaScript code block, user can invoke/use any Enterprise Browser API's based on their requirement._
+    
 **Note:**
-    1. If any button action is associted with JavaScript Execution, one must ensure to define the definition of that script (i.e. **`scriptname`**) inside the custom script xml file.
-    2. Refer Enterprise Browser [Custom JavaScript XML Guide](../../customscriptdefinition), for complete details on how to create the custom script xml file.
-    3. Also refer Enterprise Browser [customxmlfile](../../configreference/#customxmlfile) config tag for changing custom script xml file.
+   1. If any button action is associted with JavaScript Execution, one must ensure to define the definition of that script (i.e. **`scriptname`**) inside the custom script xml file.
+   2. Refer Enterprise Browser [Custom JavaScript XML Guide](../../customscriptdefinition), for complete details on how to create the custom script xml file.
+   3. Also refer Enterprise Browser [customxmlfile](../../configreference/#customxmlfile) config tag for changing custom script xml file.
 
-**JavaScript Execution Examples:**
+###### **JavaScript Execution Examples:**
 1. Button to act as a Trigger: 
 The below examples shows how button can be configured to be used as a trigger using Enterprise Browser Barcode API.
 
@@ -471,15 +472,15 @@ Apart from using the buttons as keyevent or executing specific JavaScript task, 
 
 As of now the only command supported is **`quit`** which can be used to exit from Enterprise Browser application.
 
-**Command Example:**
-The below examples shows how buttonAction can be associated with the **`quit`** command for exiting the Enterprise Browser application when button is pressed.
+###### **Command Example:**
+* The below examples shows how buttonAction can be associated with the **`quit`** command for exiting the Enterprise Browser application when button is pressed.
 
-**Inside button xml file (say _button.xml_ file):**
-* * *
-    <Button5>
-    	<buttonAction value ="quit"/>
-    	<buttonImage value ="file://%INSTALLDIR%/quit.png"/>
-    </Button5>
+    **Inside button xml file (say _button.xml_ file):**
+    * * *
+        <Button5>
+            <buttonAction value ="quit"/>
+            <buttonImage value ="file://%INSTALLDIR%/quit.png"/>
+        </Button5>
 
 ## Remarks
 * Donot assign values (i.e. inside any button related tags) which contains special characters such as (< > \ / " '). Doing so, will cause the button xml file to become corrupt.  

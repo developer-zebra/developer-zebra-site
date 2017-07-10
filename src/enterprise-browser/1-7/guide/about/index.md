@@ -66,7 +66,7 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 
 #### Other new UI-related tags
 
-* **[&lt;customxmlfile&gt;](../configreference#customxmlfile) -** specifies the location of the `button.xml` file containing configuration settings for the custom on-screen buttons on the device. 
+* **[&lt;customxmlfile&gt;](../configreference#customxmlfile) -** specifies the location of the `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions.  
 
 * **[&lt;JSLibraries&gt;](../configreference#jslibraries) -** can be used to inject JavaScript API libraries (`ebapi-modules.js` and `elements.js`) into the DOM of every HTML page when it's not otherwise possible or convenient to edit the source. 
 

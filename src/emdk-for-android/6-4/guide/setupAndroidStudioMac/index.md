@@ -21,76 +21,32 @@ productversion: '6.4'
 1. Launch Finder and go to Applications (on the left side panel)
 2. Locate Android Studio.app right click and select Show Package Contents.
 2. Locate the Contents\plugins directory.
-4. Remove the com.symbol.emdk.wizard.intellijIdea_3.1.xx folder.
+4. Remove the com.symbol.emdk.wizard.intellijIdea folder.
 
-
-##Installing Android Studio 
-
-1. Go to http://developer.android.com/sdk/index.html.
-
-	![img](../../images/setup/mac/image3.png)
-
-2. Click on the "Download Android Studio for Mac" button.
-3. Accept the License Agreement and click the "Download Android Studio for Mac" button.
-4. Launch the .dmg file you just downloaded (ex: android-studio-ide-<version>.dmg).
-5. Drag and drop Android Studio into the Applications folder.
-Open Android Studio and follow the setup wizard to install any necessary SDK tools.
-
-Depending on your security settings, when you attempt to open Android Studio, you might see a warning that says the package is damaged and should be moved to the trash.
-
-If that error occurs:
-
-1. Go to System Preferences / Security &amp; Privacy
-2. Click the padlock icon in the bottom left corner, and login to allow changes in this screen.
-3. Under Allow applications downloaded from, select Anywhere
-4. Then open Android Studio again.
-
-If you need to use the Android SDK tools from a command line, you can access them at:
-`/Users/<user>/Library/Android/sdk/`
-
-
-##Configuring Android Studio for EMDK development
-
-In order to develop EMDK apps on Android Studio, API's 16 and 19 Android platforms and Android SDK Build-tools revision 21.1.x or newer must be downloaded and installed.
-
-###How to determine which the installed APIs platforms  in Android Studio
-
-1. Launch Android Studio from Applications
-2. Go to Tools / Android / SDK Manager
-3. Then click **Launch Standalone SDK Manager** link at the bottom of the Android SDK settings page
-4. Check that the status of Android API 19 SDK Platform is "Installed".
-5. If either SDK platform is not installed check the SDK check mark, click Install Packages, and follow the on-screen instructions. When the install is complete, restart Android Studio.
-
-	![img](../../images/setup/mac/image4.png)
-
-
-###How to determine the Build-tools version installed in Android Studio
-
-1. Launch Android Studio from Applications
-2. Go to Tools / Android / SDK Manager
-3. Check the status of Android SDK Build-tools 21.1.x or newer is "Installed".
-4. If Android SDK Build-tools 21.1.x or newer is not installed check the SDK check mark, click Install Packages, and follow the on screen instructions. When the install is complete, restart Android Studio.
-
-	![img](../../images/setup/mac/image5.png)
 
 ##Installing EMDK
 
 ###Prerequisites
 
-- Android Studio 1.1.x or newer
-	- Android API 16, API 19 platforms
-	- Android SDK Build-tools 21.1.x or newer	
+* Android Studio 2.x or newer with Android API 19, API 22 and API 23 platforms and Android SDK Build-tools 23.0.x or newer installed. 
+* Latest EMDK add-ons (“\EMDK-A-0604098-MAC\SDK\ addon-symbol_emdk-symbol-19/ “addon-symbol_emdk-symbol-22 ” / “addon-symbol_emdk-symbol-23”)
+* Latest EMDK Wizard core components (“\EMDK-A-0604098-MAC\Symbol EMDK for Android”)
+* Latest EMDK Wizard plug-in for Android Studio (“\EMDK-A-0604098-MAC\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
+* Latest EMDK device runtime (“\EMDK-A-0604098-MAC\Device Update\ EmdkOSUpdateApp_v6.4.12.apk”)
+
+>IMPORTANT: All the Android Studio sessions must be closed before starting this step.
 	
 ###Download the EMDK for Android MAC install files
 
 1. Download the [EMDK for Android MAC install files](/emdk-for-android/download)
 2. Extract the downloaded zip file and make note of the path to the extracted files. This path will be refered to as **EMDK_FILES** for the rest of this guide.
 
-The extracted folder will contain the following files
-- EMDK add-ons (“<EMDK_FILES>\SDK\addon-symbol_emdk-symbol-16/ “addon-symbol_emdk-symbol-19”)
-- EMDK Wizard core components (“<EMDK_FILES>\Symbol EMDK for Android”)
-- EMDK Wizard plug-in for Android Studio (“<EMDK_FILES>\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
-- EMDK device runtime (“<EMDK_FILES>\Device Update\ EmdkOSUpdateApp_vX.X.X.apk”)
+The extracted folder will contain the following files:
+
+* EMDK add-ons 
+* EMDK Wizard core components
+* EMDK Wizard plug-in for Android Studio
+* EMDK device runtime
 
 >NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in the [Device Setup](/emdk-for-android/6-4/guide/setupDevice) guide.
 
@@ -101,23 +57,21 @@ Add EMDK APIs to the Android SDK
 
 	![img](../../images/setup/mac/image6.png)
 
-2. Copy the following EMDK sdk addon folders from **EMDK\_FILES/SDK/** into the add-ons directory.
-	- addon-symbol-emdk\_vX.X_API-16
-	- addon-symbol-emdk\_vX.X_API-19 
+2. Copy all EMDK sdk addon folders from **EMDK\_FILES/SDK/** into the add-ons directory.
+	* addon-symbol-emdk\*
+
 
 3. Exit & Launch Android Studio
 4. Go to Tools > Android > SDK Manager
 
 Now the integrated EMDK add-ons should appear in the SDK Manager
-	![img](../../images/setup/mac/image8.png)
+
 
 ###EMDK Wizard plug-in Integration
 
 **Configuring Mac OS X with EMDK Wizard core components**
 
 1. Locate the /Users/Shared folder.
-
-	![img](../../images/setup/mac/image10.png)
 
 2. Copy **EMDK\_FILES/Symbol EMDK for Android** folder into the /Users/Shared folder.
 
@@ -152,9 +106,8 @@ To uninstall the EMDK for android perform the following steps:
 
 >Note: It is recommended that you close all Android Studio IDE windows before proceeding with uninstallation. 
 
-1. Remove the EMDK SDK add-on by deleting the following folders from `/Users/**username**/Library/Android/sdk/add-ons`
-	- addon-symbol-emdk\_vX.X_API-16
-	- addon-symbol-emdk\_vX.X_API-19 
+1. Remove the EMDK SDK add-on by deleting the emdk addon folders from `/Users/**username**/Library/Android/sdk/add-ons`
+	- addon-symbol-emdk*
 	
 2.  Locate the /Users/Shared folder then delete the **Symbol EMDK for Android** folder.
 

@@ -783,6 +783,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-6/'
     }))
     .use(foldermenu({
+        folder: 'stagenow/2-7/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({
@@ -829,6 +832,19 @@ var sitebuild = Metalsmith(__dirname)
     }))
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-3/'
+    }))
+// Tab menus for TechDocs help pages
+    .use(foldermenu({
+        folder: 'about/'
+    }))
+    .use(foldermenu({
+        folder: 'contact/'
+    }))
+    .use(foldermenu({
+        folder: 'search/'
+    }))
+    .use(foldermenu({
+        folder: 'help/'
     }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

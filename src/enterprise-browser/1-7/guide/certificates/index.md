@@ -61,7 +61,7 @@ Enterprise Browser `https://` requests on Android can be done in two ways, and a
 	* Root certificates should be installed from the system menu, and will be used by any application that uses a WebView UI component (such as a browser).
 	* Reference navigation in EB also will use this method. 
 	* EB currently supports only server SSL authentication for WebView.
-	* Browser-based client authentication (introduced in Android 5) is not currently supported in EB.
+	* Browser-based client authentication is supported on Lollipop devices running EB 1.7 and higher.
 * **Using certificate formats**:
 	* **Certificate files must contain the certificate data between "BEGIN" and "END" lines**.
 	* Android accepts any certificate format that represents the certificate as encoded text. These files typically end with a `.crt` or `.pem` extension. 

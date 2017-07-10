@@ -1339,7 +1339,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<AutoPlayMediaElements  VALUE="1"/>
 
 ###JavascriptEnabled
-**Applies only to Windows Mobile with IE engine**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 
+**Applies only to Windows Mobile/CE**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android. 
 
 **Possible Values**:
 

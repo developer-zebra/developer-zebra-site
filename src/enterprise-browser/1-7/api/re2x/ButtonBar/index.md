@@ -1,5 +1,5 @@
 ---
-title: ButtonBar API's
+title: ButtonBar APIs
 description: null
 layout: list-apis.html
 automenu:
@@ -16,7 +16,7 @@ automenu:
           url: ../../../guide/configreference/#buttonxmlfile
         - title: Custom Script Definition Guide
           url: ../../../guide/configreference/#customxmlfile
-    - title: ButtonBar API's
+    - title: ButtonBar APIs
       items:
         - title: ButtonBar1
           url: buttonbar1

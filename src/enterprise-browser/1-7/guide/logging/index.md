@@ -74,6 +74,8 @@ Once the log contains sufficient data, it might be desirable to view the logs pe
 * **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/`
 * **On Windows devices**: `\Program Files\EnterpriseBrowser\log\`
 
+**Note: Enterprise Browser cannot write to an external SD Card**.
+
 -----
 
 **Related Guide**:

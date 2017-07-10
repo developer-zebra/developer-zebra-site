@@ -8,8 +8,8 @@ subhead: RhoElements 2.x API
 
 ## Overview
 
-The ButtonBar4 Module is used to show/hide the particular ButtonBar. The size, position, action and other button attributes can not be controlled via this API set. 
-Please refer to <a href="http://techdocs.zebra.com/enterprise-browser/1-7/guide/customize/">ButtonBar Usage Guide</a> for further details.
+The ButtonBar4 Module is used to show/hide a particular ButtonBar. **To control the size, position, actions and other button attributes, see the [ButtonBar Usage guide](../../../../guide/customize)**.
+
 
 ## Syntax
 

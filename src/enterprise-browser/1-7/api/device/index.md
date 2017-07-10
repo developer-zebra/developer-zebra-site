@@ -241,7 +241,7 @@ Synchronous Return:
 ###General
 
                     
-Note that some devices may not support all the API's or there is a possiblities of discrepancy across BSP's & platforms.
+**Note**: Some devices might not support all APIs; discrepancies sometimes exist across BSPs and/or platforms.
                     
                 
 

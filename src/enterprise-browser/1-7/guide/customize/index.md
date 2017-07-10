@@ -35,7 +35,7 @@ In this new solution, one can create their own custom on-screen buttons which is
   * HTML Meta Tags
   * Enterprise Browser <defaultmetatags> config tag
   * DOM Injection
-
+---
 ## ButtonBar XML Guide 
 One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser [buttonxmlfile](../configreference/#buttonxmlfile) config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons. 
 #### ButtonBar and it's button 
@@ -47,7 +47,7 @@ One can create their own custom on-screen buttons placed in the container called
 
 ### buttonxmlfile 
 **Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings to customize the on-screen buttons on the device. For complete details, refer [buttonxmlfile](../configreference/#buttonxmlfile) configuration parameter.
-
+---
 ## Custom JavaScript XML Guide 
 Custom JavaScript XML file is used for defining custom javascript code block based on the user requirement. For complete details, refer [Custom JavaScript Definition Guide](../customscriptdefinition) for creating custom xml file which contains custom JavaScript snippets to be called by custom on-screen buttons or other app functions.
 

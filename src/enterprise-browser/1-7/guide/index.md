@@ -40,6 +40,14 @@ automenu:
           url: sap
         - title: Viewport
           url: viewport
+    - title: Custom On-screen Buttons/Keyboard Usage
+      items:
+        - title: Custom On-screen Buttons/Keyboard Guide
+          url: customize
+        - title: Button Configuration Parameter Guide
+          url: customize/buttonconfigparam
+        - title: Custom JavaScript Definition Guide
+          url: customscriptdefinition
     - title: Debugging
       items:
         - title: Logging

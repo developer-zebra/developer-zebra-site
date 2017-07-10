@@ -40,12 +40,6 @@ ButtonBars can be shown and hidden programmatically as required by an app's page
 * [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) setting in the `Config.xml` file
 * [DOM Injection](../DOMinjection)
 
-**More Info**:
-
-* [&lt;buttonxmlfile&gt;](../configreference/#buttonxmlfile) path tag in `Config.xml`
-* [&lt;customxmlfile&gt;](../configreference/#customxmlfile)  path tag in `Config.xml`
-* [ButtonBar APIs](../../api/re2x/ButtonBar) 
-
 <!-- One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser buttonxmlfile config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons.
 ButtonBar and it's button
 
@@ -111,5 +105,9 @@ The &lt;customxmlfile&gt; tag specifies the location of `CustomScript.xml` in an
 
 **Related Guides**:
 
+* **[&lt;buttonxmlfile&gt;](../configreference/#buttonxmlfile) path tag** in `Config.xml`
+* **[&lt;customxmlfile&gt;](../configreference/#customxmlfile)  path tag** in `Config.xml`
+* **[ButtonBar APIs](../../api/re2x/ButtonBar)** 
 * **[Button.xml Guide]()**
 * **[CustomScript.xml Guide]()**
+

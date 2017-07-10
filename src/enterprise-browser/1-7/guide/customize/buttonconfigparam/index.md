@@ -378,12 +378,15 @@ Examples:
 * `<buttonAction value="quit"/>`
 * `<buttonAction value="runscript-camerascript"/>`  
     
-One can associate anyone of the below actions (i.e. **`buttonAction`**) for specific button which is contained inside any ButtonBar.
+One can associate (i.e. **`buttonAction`**) for anyone of the below actions:
+* For performing [keyevent](#keyevent) actions.
+* For executing [JavaScript](#javaScript-execution) operation.
+* For invoking specific [Command](#commands).
 
 ##### keyevent
 One can use a particular button to generate a keyevent and also for typing the character in the input boxes in the page.  
 
-User has to provide the key and value in `**key-value**` format where value is the android keycode value for the particular key. Please refer to Android [KeyEvent](https://developer.android.com/reference/android/view/KeyEvent.html) documentation for the values of different keys.
+User has to provide the key and value in **`key-value`** format where value is the android keycode value for the particular key. Please refer to Android [KeyEvent](https://developer.android.com/reference/android/view/KeyEvent.html) documentation for the values of different keys.
 
 Note:
    * Generating a keyevent for the particular key can be captured inside JavaScript onkeydown events and it will also key-in the values in the input areas if associated.
@@ -411,8 +414,8 @@ To use a Button as a scan trigger one can send the trigger KeyCodes(104) to the 
 ##### JavaScript Execution
 One can use a particular button to invoke any JavaScript code block (including [Enterprise Browser API's](../../../api/)).  
 User has to assign the **`buttonAction`** value in **`runscript-scriptname`** format.
-    * `runscript` - _This indicate that `buttonAction` is associated with JavaScript code block_.
-    * `scriptname` - _This indicate the name of the script which is defined in another custom script xml file. The script definition can contain any JavaScript code block to perform any operation on press of that button. Inside JavaScript code block, user can invoke/use any Enterprise Browser API's based on their requirement._
+* `runscript` - _This indicate that `buttonAction` is associated with JavaScript code block_.
+* `scriptname` - _This indicate the name of the script which is defined in another custom script xml file. The script definition can contain any JavaScript code block to perform any operation on press of that button. Inside JavaScript code block, user can invoke/use any Enterprise Browser API's based on their requirement._
     
 Note:
    1. If any button action is associted with JavaScript Execution, one must ensure to define the definition of that script (i.e. **`scriptname`**) inside the custom script xml file.
@@ -469,7 +472,7 @@ The below examples shows how button can be configured to fetch device informatio
         	</deviceinfoscript>
         </CustomScripts>
 
-##### Other Commands
+##### Commands
 Apart from using the buttons as keyevent or executing specific JavaScript task, one can also use predefined command to achieve predefined actions inside Enterprise Browser application.  
 
 As of now the only command supported is **`quit`** which can be used to exit from Enterprise Browser application.
@@ -486,5 +489,5 @@ As of now the only command supported is **`quit`** which can be used to exit fro
 
 ## Remarks
 * Donot assign values (i.e. inside any button related tags) which contains special characters such as (< > \ / " '). Doing so, will cause the button xml file to become corrupt. 
-  
+
   **Note**: If any special characters such as (< > \ / " ') need to be set as a [buttonText](#buttontext) then use [buttonImage](#buttonimage) instead.

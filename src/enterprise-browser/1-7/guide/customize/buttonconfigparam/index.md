@@ -1,8 +1,14 @@
+---
+title: Button Configuration Parameter Guide
+productversion: '1.7'
+product: Enterprise Browser
+layout: guide.html
+---
 ## Overview
 
 Button XML file enables the user to have runtime configuration settings for custom onscreen buttons. Enterprise Browser currently supports up to 10 ButtonBars(named as ButtonBar1 to ButtonBar10) and it's definition are maintained in the button.xml file. The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
 
-Refer Enterprise Browser [buttonxmlfile](../configreference/#buttonxmlfile) config tag for changing the button xml file.  
+Refer Enterprise Browser [buttonxmlfile](../../configreference/#buttonxmlfile) config tag for changing the button xml file.  
 
 Refer Enterprise Browser [Custom On-screen Buttons/Keyboard Guide](../../customize), to know about the different solutions which can be created via custom onscreen buttons.  
 
@@ -174,9 +180,9 @@ All ButtonBar specific parameters should be enclosed inside particular ButtonBar
 **Example:**
 All **`ButtonBar1`** bar specific parameters should be defined inside `<ButtonBar1>.....</ButtonBar1>`.
 
-#### All ButtonBar specific parameters are mentioned below:
+All ButtonBar specific parameters are mentioned below:
 
-##### barColor
+#### barColor
 The color of the entire ButtonBar in Hex values(#RRGGBB format). For color formats, refer [here](https://www.w3schools.com/colors/colors_hexadecimal.asp).
 **Note:**
    * Currently, setting the color for individual button is not supported.
@@ -187,7 +193,7 @@ The color of the entire ButtonBar in Hex values(#RRGGBB format). For color forma
 **Example:**
     `<barColor value="#AF7AC5"/>` 
 
-##### barColorPressed
+#### barColorPressed
 The color of the entire ButtonBar in Hex values(#RRGGBB format). When any individual button of that ButtonBar will be pressed, the background color of that particular button will be changed to this specified value. For color formats, refer [here](https://www.w3schools.com/colors/colors_hexadecimal.asp).
 **Note:**
    * Currently, setting the color for individual button is not supported.
@@ -198,7 +204,7 @@ The color of the entire ButtonBar in Hex values(#RRGGBB format). When any indivi
 **Example:**
     `<barColorPressed value="#3498DB"/>`  
 
-##### barFontSize
+#### barFontSize
 Set the default text size to the given value, interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference.  
 **Note:**
    * Currently, setting the font size for individual button is not supported.
@@ -207,13 +213,13 @@ Set the default text size to the given value, interpreted as "scaled pixel" unit
 **Example:**
     `<barFontSize value="100"/>`  
 
-##### barTransparency
+#### barTransparency
 Transparency value in percentage. 0 means no transparency and 100 means fully transparent.
     
 **Example:**
     `<barTransparency value="14"/>`  
 
-##### barOrientation
+#### barOrientation
 It can be one of the values i.e. either "Horizontal" or "Vertical". Buttons will be placed vertically or horizontally in given buttonBar coordinates based on the specified value of this parameter.  
 **Note:**
    * Default value is "Horizontal".
@@ -224,31 +230,31 @@ It can be one of the values i.e. either "Horizontal" or "Vertical". Buttons will
 **Example**
     `<barOrientation value="Vertical"/>`  
 
-##### barLeft
+#### barLeft
 Left coordinate in pixel for this particular buttonbar.
     
 **Example:**
     `<barLeft value="0"/>`  
 
-##### barTop
+#### barTop
 Top coordinate in pixel for this particular buttonbar.
     
 **Example:**
     `<barTop value="0"/>`  
 
-##### barHeight
+#### barHeight
 Height of this particular buttonbar in pixel.
     
 **Example:**
     `<barHeight value="0"/>`  
 
-##### barWidth
+#### barWidth
 Width of this particular buttonbar in pixel.
     
 **Example:**
     `<barWidth value="0"/>`
 
-##### Remarks
+#### Remarks
  1. If positional attributes (_barLeft, barTop, barHeight, barWidth_) are not set, Horizontal button bar will be placed in the bottom of the screen occupying the full screen width.
  2. If positional attributes (_barLeft, barTop, barHeight, barWidth_) are not set, Vertical button bar will be placed in the right of the screen occupying the full screen height.
 
@@ -278,9 +284,9 @@ All individual buttons which is part of particular ButtonBar resides inside the 
 
 Please create individual ButtonN tag for each button you need in particular ButtonBar and place all button specific parameter nodes inside those ButtonN tags. Example: If you place 3 ButtonN tags inside a ButtoBar, then number of buttons in that ButtonBar will be calculated as 3 and they will share equal space in the whole ButtonBar area, if their individual coordinates are not set.
 
-#### All button specific parameters are mentioned below:
+All button specific parameters are mentioned below:
 
-##### buttonLeft
+#### buttonLeft
 Left coordinate value of the particular button inside the ButtonBar.  
 **Note:**
    * If this parameter is not specified then the value of this will be calculated based on the ButtonBar position, size, orientation and number of buttons in that particular ButtonBar.
@@ -290,7 +296,7 @@ Left coordinate value of the particular button inside the ButtonBar.
 **Example:**
     `<buttonLeft value="413"/>`  
 
-##### buttonTop
+#### buttonTop
 Top coordinate value of the particular button inside the ButtonBar.  
 **Note:**
    * If this parameter is not specified then the value of this will be calculated based on the ButtonBar position, size, orientation and number of buttons in that particular ButtonBar.
@@ -300,7 +306,7 @@ Top coordinate value of the particular button inside the ButtonBar.
 **Example:**
     `<buttonTop value="1063"/>`  
 
-##### buttonHeight
+#### buttonHeight
 Height of the particular button inside the ButtonBar.  
 **Note:**
    * If this parameter is not specified then the value of this will be calculated based on the ButtonBar size, orientation and number of buttons in that particular ButtonBar.
@@ -310,7 +316,7 @@ Height of the particular button inside the ButtonBar.
 **Example:**
     `<buttonHeight value="120"/>`  
 
-##### buttonWidth
+#### buttonWidth
 Width of the particular button inside the ButtonBar.  
 **Note:**
    * If this parameter is not specified then the value of this will be calculated based on the ButtonBar, size, orientation and number of buttons in that particular ButtonBar.
@@ -320,7 +326,7 @@ Width of the particular button inside the ButtonBar.
 **Example:**
     `<buttonWidth value="204"/>`  
 
-##### buttonText
+#### buttonText
 Used for setting the text which need to be displayed for the particular button inside the ButtonBar if the background image is not specified.  
 **Note:**
    * If background image is specified this tag will be ignored.
@@ -331,7 +337,7 @@ Used for setting the text which need to be displayed for the particular button i
 **Example:**
     `<buttonText value="Submit"/>`  
 
-##### buttonImage
+#### buttonImage
 Used for setting the image (in .png format) for the particular button inside the ButtonBar. One can either use absolute path of the image or specify the following substitute variables for specifying full path along with the file protocol.
    * `%INSTALLDIR%`
    * `%PRIMARYDIR%`
@@ -346,7 +352,7 @@ For further details on substitute variables, please refer to Enterprise Browser 
     `<buttonImage value="file://%INSTALLDIR%/space_bar.png"/>`
     `<buttonImage value="/storage/emulated/0/deviceinfo.png"/>`
 
-##### buttonImagePressed
+#### buttonImagePressed
 Used for setting the image (in .png format) for the particular button when the button is pressed and hold inside the ButtonBar. This image will be shown as long as the button is pressed and hold and will be gone once the button is released. One can either use absolute path of the image or specify the following substitute variables for specifying full path along with the file protocol.
    * `%INSTALLDIR%`
    * `%PRIMARYDIR%`
@@ -372,7 +378,7 @@ Action of a particular button pressed can be configuried via this tag. User has 
     
 One can associate anyone of the below actions (i.e. **`buttonAction`**) for specific button which is contained inside any ButtonBar.
 
-###### **keyevent**
+##### keyevent
 One can use a particular button to generate a keyevent and also for typing the character in the input boxes in the page.  
 
 User has to provide the key and value in `**key-value**` format where value is the android keycode value for the particular key. Please refer to Android [KeyEvent](https://developer.android.com/reference/android/view/KeyEvent.html) documentation for the values of different keys.
@@ -400,7 +406,7 @@ To use a Button as a scan trigger one can send the trigger KeyCodes(104) to the 
         	<buttonAction value ="key-104"/>
         </Button1>
 
-###### **JavaScript Execution**
+##### JavaScript Execution
 One can use a particular button to invoke any JavaScript code block (including [Enterprise Browser API's](../../../api/)).  
 User has to assign the **`buttonAction`** value in **`runscript-scriptname`** format.
     * `runscript` - _This indicate that `buttonAction` is associated with JavaScript code block_.
@@ -460,12 +466,12 @@ The below examples shows how button can be configured to fetch device informatio
         	</deviceinfoscript>
         </CustomScripts>
 
-###### **Other Commands**
+##### Other Commands
 Apart from using the buttons as keyevent or executing specific JavaScript task, one can also use predefined command to achieve predefined actions inside Enterprise Browser application.  
 
 As of now the only command supported is **`quit`** which can be used to exit from Enterprise Browser application.
 
-Command Example:
+**Command Example:**
 The below examples shows how buttonAction can be associated with the **`quit`** command for exiting the Enterprise Browser application when button is pressed.
 
 **Inside button xml file (say _button.xml_ file):**

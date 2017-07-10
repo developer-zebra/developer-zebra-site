@@ -343,7 +343,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ## Configuration
 
 ### buttonxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `button.xml` file (if present) from the EB installation folder. For more information, see the [Customize EB Functions](../customize) guide.
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `button.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide.
 
 **Possible Values**:
 
@@ -365,9 +365,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 
 ### customxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will extract the `CustomScript.xml` file (if present) from the EB installation folder. 
-
-For more information, see the [Customize EB Functions](../customize) guide. 
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `CustomScript.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide. 
 
 **Possible Values**:
 
@@ -474,11 +472,12 @@ For more information, see the [Customize EB Functions](../customize) guide.
 	  </CustomKioskMode>
 
 ### JSLibraries
-**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into the DOM of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but will not conflict with such references. 
+**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../DOMinjection/#whatisthedom) of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 
 
 **Important Notes**: 
 
-* **The JSLibraries parameter should be used only if the existing HTML pages <u>DO NOT</u> invoke EB APIs using HTML meta tags and/or onload attributes**. 
+* **If the existing HTML page(s) invoke EB APIs using HTML meta tags and/or onload attributes**, JSLibraries parameter should be used only if invocation was through [DOM injection](../DOMinjection). 
+* Directly invoking APIs through meta tags or onload attributes (without DOM injection) can result in timing issues. 
 * The standard method of accessing Enterprise Browser API libraries (`ebapi-modules.js` and `elements.js`) is to include a reference to the appropriate library on every HTML page from which an EB API is called. 
 * The standard API access method should be used whenever possible and is detailed on each of the [API pages](../../api). 
 * For scenarios in which it is difficult or impossible to modify the HTML source to include EB API references, Zebra recommends invoking APIs using [DOM Injection](../dominjection) for best results. 
@@ -496,7 +495,7 @@ For more information, see the [Customize EB Functions](../customize) guide.
 	</InjectEBLibraries>
 
 ### WebViewLayout
-**Applies only to devices running Android KitKat and higher**. Allows one or more of the WebView layout parameters to be specified (in pixels) when an Enterprise Browser app is launched. 
+**Applies only to devices running Android KitKat and higher**. Allows one or more of the WebView layout parameters to be specified (in pixels) when an Enterprise Browser app is launched. *Note**: This tag is not included in the default `Config.xml` file. If one or more of these layout parameters are required on startup, tags must be added as shown in the example below.
 
 **Supported parameters**: 
 
@@ -512,12 +511,22 @@ For more information, see the [Customize EB Functions](../customize) guide.
 #### Example
 
 	:::xml
-	<WebViewLayout>
-		<LayoutWidth value="600" />
-		<LayoutHeight value="950" />
-		<LayoutLeft value="40" />
-		<LayoutTop value="100" />
-	</WebViewLayout>
+	<Configuration>
+	  ...
+	  <Applications>
+	    <Application>
+	                ...
+	        <WebViewLayout>
+			<LayoutWidth value="600" />
+			<LayoutHeight value="950" />
+			<LayoutLeft value="40" />
+			<LayoutTop value="100" />
+	        </WebViewLayout>
+	                ...
+	    </Application>
+	  </Applications>
+	  ...
+	</Configuration>
 
 
 ### SplashScreenPath
@@ -1198,7 +1207,7 @@ Used to persist data when using Read/WriteUserSetting.
 ## ApplicationCache
 
 ### ApplicationCacheEnabled
-**Applies to Windows Mobile/CE only**.<!-- **Applies only to Android devices running KitKat and higher**.  7/7/17- changed to WM/CE only, per eng.--> Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: This is unrelated to the web cache feature**.  
+**Applies to only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: This is unrelated to the web cache feature**.  
 
 <!-- removed, per eng. This is not a user-accessible dir. 
 Application cache data is stored on the device in:<br> 

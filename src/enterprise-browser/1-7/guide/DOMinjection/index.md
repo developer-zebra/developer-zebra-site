@@ -28,8 +28,8 @@ To use DOM injection, **ALL of the following must be true**:
 
 * The app was made with Enterprise Browser 1.3 (or higher)
 * A `tags` file containing elements to be injected has been created and pushed to the target device
-* The path to the `tags` file is specified in the app's `Config.xml` file 
-* The target device is one of the following: 
+* The path to the `tags` file is specified in the app's `Config.xml` file (see Step 2, below)
+* The target device is running one of the following: 
 	* Android with stock webkit 
 	* Windows Mobile/CE device with Zebra Webkit
 	* Windows CE with IE engine

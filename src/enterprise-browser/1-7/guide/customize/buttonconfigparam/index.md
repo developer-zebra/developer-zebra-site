@@ -380,7 +380,7 @@ Examples:
     
 One can associate (i.e. **`buttonAction`**) for anyone of the below actions:
 * For performing [keyevent](#keyevent) actions.
-* For executing [JavaScript](#javaScript-execution) operation.
+* For executing [JavaScript](#javascript-execution) operation.
 * For invoking specific [Command](#commands).
 
 ##### keyevent

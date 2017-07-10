@@ -189,7 +189,7 @@ Note:
    * Currently, setting the color for individual button is not supported.
    * If the tag is not mentioned, then the default color will be blue.
    * If image is set as button background, background color will not apply.
-   * If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImage](#buttonImage) in those cases.
+   * If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImage](#buttonimage) in those cases.
     
 Example:
 * `<barColor value="#AF7AC5"/>` 
@@ -200,7 +200,7 @@ Note:
    * Currently, setting the color for individual button is not supported.
    * If the tag is not mentioned, then the default color will be yellow.
    * If image is set as button background, background color will not apply.
-   * If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImagePressed](#buttonImagePressed) in those cases.
+   * If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImagePressed](#buttonimagepressed) in those cases.
     
 Example:
 * `<barColorPressed value="#3498DB"/>`  
@@ -261,27 +261,28 @@ Example:
 
 ### Individual Button Specific Parameters
 All individual buttons which is part of particular ButtonBar resides inside the `<Buttons>......</Buttons>` nodes. The `<Buttons>......</Buttons>` nodes resides inside the particular `<ButtonBarN>......</ButtonBarN>` nodes. Here N (of ButtonBarN) is any value in the range of 1 to 10. All individual button specific parameter should be enclosed inside the `<ButtonN>......</ButtonN>` nodes. Here N (of ButtonN) could be any positive number.
-    **Example:**
-    All individual button specific parameter for `<ButtonBar1>` should be defined inside the respective ButtonN tag.
 
-**Inside button xml file (say _button.xml_ file):**
-* * *
-    <ButtonBar1>
-       <Buttons>
-      	 <Button1>
-      	 .......
-      	 </Button1>
-      	 <Button2>
-      	 .......
-      	 </Button2>
-      	 <Button3>
-      	 .......
-      	 </Button3>
-      	 <Button4>
-      	 .......
-      	 </Button4>
-       </Buttons>
-    </ButtonBar1>
+**Example:**
+* All individual button specific parameter for `<ButtonBar1>` should be defined inside the respective ButtonN tag.
+
+    **Inside button xml file (say _button.xml_ file):**
+    * * *
+        <ButtonBar1>
+           <Buttons>
+          	 <Button1>
+          	 .......
+          	 </Button1>
+          	 <Button2>
+          	 .......
+          	 </Button2>
+          	 <Button3>
+          	 .......
+          	 </Button3>
+          	 <Button4>
+          	 .......
+          	 </Button4>
+           </Buttons>
+        </ButtonBar1>
 
 Please create individual ButtonN tag for each button you need in particular ButtonBar and place all button specific parameter nodes inside those ButtonN tags. Example: If you place 3 ButtonN tags inside a ButtoBar, then number of buttons in that ButtonBar will be calculated as 3 and they will share equal space in the whole ButtonBar area, if their individual coordinates are not set.
 
@@ -331,9 +332,9 @@ Example:
 Used for setting the text which need to be displayed for the particular button inside the ButtonBar if the background image is not specified.  
 Note:
    * If background image is specified this tag will be ignored.
-   * Please set the text according to the size of the buttons and as well as the [barFontSize](#barFontSize) parameter value.
+   * Please set the text according to the size of the buttons and as well as the [barFontSize](#barfontsize) parameter value.
    * If the text is too big as compared to button size text may not be fully visible.
-   * If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImage](#buttonImage) and [buttonImagePressed](#buttonImagePressed)in those cases.
+   * If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImage](#buttonimage) and [buttonImagePressed](#buttonimagepressed)in those cases.
    
 Example:
 * `<buttonText value="Submit"/>`  
@@ -368,7 +369,7 @@ Examples:
 * `<buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png"/>`
 * `<buttonImagePressed value="/storage/emulated/0/scan_pressed.png"/>`
 
-##### buttonAction
+#### buttonAction
 Action of a particular button pressed can be configuried via this tag. User has to provide the predefined command strings in order to achieve particular action.
 
 Examples:
@@ -486,4 +487,4 @@ As of now the only command supported is **`quit`** which can be used to exit fro
 ## Remarks
 * Donot assign values (i.e. inside any button related tags) which contains special characters such as (< > \ / " '). Doing so, will cause the button xml file to become corrupt. 
   
-  **Note**: If any special characters such as (< > \ / " ') need to be set as a [buttonText](#buttonText) then use [buttonImage](#buttonImage) instead.
+  **Note**: If any special characters such as (< > \ / " ') need to be set as a [buttonText](#buttontext) then use [buttonImage](#buttonimage) instead.

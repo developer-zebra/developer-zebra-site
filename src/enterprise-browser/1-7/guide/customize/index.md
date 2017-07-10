@@ -37,7 +37,7 @@ ButtonBars can be shown and hidden programmatically as required by an app's page
 * JavaScript object
 * ActiveX object (Windows Mobile/CE only)
 * HTML meta tag
-* [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) tag in the `Config.xml` file
+* [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) setting in the `Config.xml` file
 * [DOM Injection](../DOMinjection)
 
 **More Info**:
@@ -46,7 +46,7 @@ ButtonBars can be shown and hidden programmatically as required by an app's page
 * [&lt;customxmlfile&gt;](../configreference/#customxmlfile)  path tag in `Config.xml`
 * [ButtonBar APIs](../../api/re2x/ButtonBar) 
 
-One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser buttonxmlfile config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons.
+<!-- One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser buttonxmlfile config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons.
 ButtonBar and it's button
 
 There are 10 ButtonBars which are currently supported on Enterprise Browser.
@@ -60,12 +60,12 @@ For complete details, refer Button Configuration Parameter Guide for creating Cu
 Custom JavaScript XML Guide
 
 Custom JavaScript XML file is used for defining custom javascript code block based on the user requirement. For complete details, refer Custom JavaScript Definition Guide for creating custom xml file which contains custom JavaScript snippets to be called by custom on-screen buttons or other app functions.
-
+-->
 
 -----
 
-## buttonxmlfile Path Tag
-Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `button.xml` file (if present) from the specified folder when the app launches. For more information, see the [&lt;buttonxmlfile&gt; path tag](../configreference/#buttonxmlfile) in `Config.xml` reference.
+## Button.xml Path
+The &lt;buttonxmlfile&gt; tag specifies the location of `button.xml` in an app's `Config.xml` file, which contains the majority of its runtime settings. **Note**: This tag is not included in the default `Config.xml` file and must be added as shown below. Enterprise Browser will read the `button.xml` file if present in the specified folder each time the app launches. For more information, see the [&lt;buttonxmlfile&gt; path tag](../configreference/#buttonxmlfile) in `Config.xml` reference.
 
 **Possible Values**:
 
@@ -86,8 +86,8 @@ Specifies the location of `button.xml`, an optional file containing configuratio
 	</Configuration>
 
 
-## customxmlfile Path Tag
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `CustomScript.xml` file (if present) from the specified folder when the app launches. For more information, see the [&lt;customxmlfile&gt; path tag](../configreference/#customxmlfile) in `Config.xml` reference. 
+## CustomScript.xml Path
+The &lt;customxmlfile&gt; tag specifies the location of `CustomScript.xml` in an app's `Config.xml` file, which contains the majority of its runtime settings. **Note**: This tag is not included in the default `Config.xml` file and must be added as shown below. Enterprise Browser will read the `CustomScript.xml` file if present in the specified folder each time the app launches. For more information, see the [&lt;customxmlfile&gt; path tag](../configreference/#customxmlfile) in `Config.xml` reference. 
 
 **Possible Values**:
 
@@ -107,4 +107,9 @@ Specifies the location of `button.xml`, an optional file containing configuratio
 		...
 	</Configuration>
 
+-----
 
+**Related Guides**:
+
+* **[Button.xml Guide]()**
+* **[CustomScript.xml Guide]()**

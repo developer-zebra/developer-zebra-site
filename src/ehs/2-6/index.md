@@ -2,7 +2,18 @@
 title: Enterprise Home Screen
 img: ehs-logo.png
 layout: redirect.html
-redirect_url: /ehs/2-5/guide/about
+redirect_url: /ehs/2-6/guide/about
+product: Enterprise Home Screen
+productversion: '2.6'
+---
+
+### Redirecting to the latest Enterprise Home Screen docs...
+
+
+<!-- 
+
+7/11/17- removed from front matter; no longer needed!? -EC
+
 menu:
   title: Enterprise Home Screen 2.4
   img: /ehs/ehs-logo.png
@@ -13,25 +24,18 @@ menu:
       label: '2.3'
   items:
     - title: About
-      url: /ehs/2-5/guide/about
+      url: /ehs/2-6/guide/about
     - title: Setup
-      url: /ehs/2-5/guide/setup
+      url: /ehs/2-6/guide/setup
     - title: Advanced Settings
-      url: /ehs/2-5/guide/settings
+      url: /ehs/2-6/guide/settings
     - title: Special Features
-      url: /ehs/2-5/guide/features
+      url: /ehs/2-6/guide/features
     - icon: fa fa-download
-      url: /ehs/2-5/download
+      url: /ehs/2-6/download
     - icon: fa fa-search
-      url: /ehs/2-5/search
-product: Enterprise Home Screen
-productversion: '2.6'
----
-
-### Redirecting to Enterprise Home Screen 2.5 Documentation
-
-
-
+      url: /ehs/2-6/search
+-->
 
 
 

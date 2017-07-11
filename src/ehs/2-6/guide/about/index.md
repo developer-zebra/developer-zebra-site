@@ -14,7 +14,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 _Enterprise Home Screen does not support localization_. 
 
-**[What's New in EHS 2.5](#whatsnew)**
+**[What's New in EHS 2.6](#whatsnew)**
 
 ------
 
@@ -260,7 +260,15 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## What's New
 
-#### EHS 2.5 Now Supports:
+### EHS 2.5 Now Supports:
+
+
+
+-----
+
+## New in EHS 2.5
+
+### EHS 2.5 Now Supports:
 
 * **[TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers** running Android Marshmallow 6.0.1 (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
 * **[ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
@@ -268,18 +276,18 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **[TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html)** running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes)) 
 * **The [MC67]() Mobile Computer Series** running Android 4.4 KitKat (see [Android 4.4 Notes](#androidkitkatnotes)) 
 
-#### Update for June, 2017:
+### Update for June, 2017:
 
 * **Support added for [MC18](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc1x-personal-shopper-series.html) and [MC40](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc40-mobile-computer-series.html) running Lollipop**
 * **Support added for [TC70x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) running Marshmallow** 
 
-#### EHS 2.5 No Longer Supports:
+### EHS 2.5 No Longer Supports:
 * **Devices with Android 4.1.2 Jelly Bean**
 * **TC70 with Android 4.4.2 KitKat** (BSP version 112414)
 <br>
 **Zebra continues to support EHS on the TC70 with Android 4.4.2 KitKat and on Zebra devices running Jelly Bean**. [Download EHS 2.4](../../../2-4/download) to target these devices. 
 
-#### New Features in EHS 2.5:
+### New Features in EHS 2.5:
 * **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 
 
 * **Now links to [Techdocs](../../../../)**, Zebra's premier web site for user-facing documentation--now a standard component on every EHS installation.
@@ -289,7 +297,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ------
 
-#### Android Lollipop and Marshmallow Notes 
+### Android Lollipop and Marshmallow Notes 
 **_Apply to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
@@ -306,7 +314,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 -----
 
-#### Android Marshmallow Notes
+### Android Marshmallow Notes
 **_Apply to devices running Android 6.x Marshmallow only_**:
 
 * **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
@@ -317,14 +325,14 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 -----
 
-#### Android KitKat Notes 
+### Android KitKat Notes 
 **_Applies to devices running Android 4.4+ KitKat only_**:
 
 * **When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
 
 ------
 
-#### ET50/ET55 Device Notes
+### ET50/ET55 Device Notes
 
 **Applies to Zebra ET50 and ET55 devices with Google Mobile Services (GMS) only**.  
 
@@ -336,7 +344,7 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 
 ------
 
-#### New in EHS 2.4
+## New in EHS 2.4
 
 * **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android Notes](#androidlollipopandmarshmallownotes)) 
 
@@ -364,6 +372,6 @@ _The User Mode screen with XXL icons_. -->
 
 ------
 
-#### New in EHS 2.3
+## New in EHS 2.3
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)

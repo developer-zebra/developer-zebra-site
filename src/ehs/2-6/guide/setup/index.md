@@ -14,7 +14,7 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 > <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-5/download) and establish connectivity between the computer and device. Then resume from here. 
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the `EHS_020501.apk` EHS 2.5 installer file.  
+These instructions apply to direct installation (from a computer to a single device) using the `EHS_020601.apk` EHS 2.6 installer file.  
 
 Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
@@ -32,6 +32,7 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 &#52;. <b>Locate and launch the APK file</b>:
 
 <img alt="" style="height:350px" src="file_browser_search.png"/>
+_File name of the .apk will match that of the version number being installed_. 
 <br>
 
 &#53;. <b>Tap Install</b>:
@@ -42,7 +43,7 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 &#54;. After installation, <b>tap Open</b>:
 
 <img alt="" style="height:350px" src="ehs_installed.png"/>
-If "Done" was accidentally selected instead of "Open," launch "Enterprise Home Screen" from the App Drawer and proceed.
+_If "Done" was accidentally selected instead of "Open," launch "Enterprise Home Screen" from the App Drawer to proceed_.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
 

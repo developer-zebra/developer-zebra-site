@@ -88,12 +88,12 @@ These instructions require Android Debug Bridge (ADB) for communication with the
 
 &#51;. <b> Copy the</b> `caroot.pem` <b>to the SD card</b> on the device. 
 
-&#52;. <b> Push</b> `certificate.xml` to the device </b> using Android File Browser or the following command ADB: 
+&#52;. <b>Push</b> `certificate.xml` to the device </b> using Android File Browser or the following command ADB: 
 
 	:::term
 	adb push certificate.xml /enterprise/device/settings/mdm/autoimport/
 
-This will cause the root certificate to be installed on the device.
+This will cause the root certificate to be installed on the device. (**Not supported on devices running Android N and higher; use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type**).
 
 &#53;. To confirm installation, <b> pull the</b> `Results.xml` <b>file</b> with the following command:
 

@@ -126,6 +126,8 @@ For scenarios that require even more security, EHS offers Secure and Kiosk modes
 ## Automated Installation
 These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
+> **Important**: To execute EHS in a device in which a managed profile is enabled, EHS must be installed <u>before</u> configuring the managed profile in the device.
+
 **To install EHS using an MDM, instruct the MDM to do the following, in this order**:
 
 &#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. See the [Advanced Settings](../settings) section for detailed instructions on the creation and editing of config files. 
@@ -170,7 +172,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
-> <b>Note</b>: App installation, uninstallation, setting the default launcher and other operations can be achieved using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools. 
+**Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools**. 
 
 ## Uninstallation
 

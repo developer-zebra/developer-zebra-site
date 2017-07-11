@@ -124,7 +124,7 @@ In User Mode, the following features are disabled by default:
 For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
 
 ## Automated Installation
-These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](../../../../emdk-for-android) or [StageNow](../../../../stagenow) tools using its App Manager Setting Type service. 
 
 > **Important**: To execute EHS in a device in which a managed profile is enabled, EHS must be installed <u>before</u> configuring the managed profile in the device.
 

@@ -9,7 +9,7 @@ productversion: '2.6'
 
 This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/4-0/guide/about) or remotely using [StageNow](/stagenow/2-2/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
 ## Kiosk Mode
 Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode places the app in full-screen mode and prevents the BACK and HOME keys from being used to exit the app. This is the main difference between Kiosk Mode and the EHS [Auto-Launch](../settings#autolaunch) feature. 
@@ -93,7 +93,7 @@ These instructions require Android Debug Bridge (ADB) for communication with the
 	:::term
 	adb push certificate.xml /enterprise/device/settings/mdm/autoimport/
 
-This will cause the root certificate to be installed on the device. (**Not supported on devices running Android N and higher; use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type**).
+This will cause the root certificate to be installed on the device. (**Not supported on devices running Android N and higher**; use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type).
 
 &#53;. To confirm installation, <b> pull the</b> `Results.xml` <b>file</b> with the following command:
 

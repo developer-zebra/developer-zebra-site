@@ -8,6 +8,12 @@ layout: guide.html
 
 Enterprise Browser 1.7 (and higher) for Android includes [ButtonBar APIs](../../api/re2x/ButtonBar), which can deliver custom features and functions through on-screen buttons or keys. Functions can include simple actions such as launching an app or activity, sending an intent or virtually any action that can be executed using JavaScript. 
 
+**Customization Guides**:
+
+* **[Button Parameter Guide](button) -** 
+* **[JavaScript Parameter Guide](script) -**
+
+
 ![img](EB_ButtonBar_API.png)
 <br>
 The [10 new ButtonBar APIs](../../api/re2x/ButtonBar/) can be used to: 
@@ -30,14 +36,16 @@ The [10 new ButtonBar APIs](../../api/re2x/ButtonBar/) can be used to:
 
 ## How it Works
 
-The settings, parameters, actions and attributes of the desired on-screen button(s) are stored in an XML container called `Button.xml`. If any of the buttons are to execute JavaScript, the JavaScript code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths specified in corresponding tags in the app's `Config.xml` file. 
+The settings, parameters, actions and attributes of the desired on-screen button(s) are stored in an XML container called `Button.xml`. If any of those buttons are to execute JavaScript, the JavaScript code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths specified in corresponding tags in the app's `Config.xml` file. 
 
-ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented one of 10 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. Enterprise Browser can send API calls using any of the following in any combination: 
+ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 10 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. Enterprise Browser can send API calls by any of the means listed below, which can be used in any combination.  
 
-* JavaScript object
-* ActiveX object (Windows Mobile/CE only)
-* HTML meta tag
-* [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) setting in the `Config.xml` file
+**Call EB APIs using**: 
+
+* JavaScript objects
+* ActiveX objects (Windows Mobile/CE only)
+* HTML meta tags
+* The [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) setting in the `Config.xml` file
 * [DOM Injection](../DOMinjection)
 
 <!-- One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser buttonxmlfile config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons.

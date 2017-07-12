@@ -18,12 +18,18 @@ automenu:
           url: ConfigEditor
         - title: Config.xml Reference
           url: configreference
-        - title: Customize Buttons/JavaScript
-          url: customize
         - title: On-device Configuration
           url: OndeviceConfig
         - title: Shortcut Creator Utility
           url: ShortcutCreator
+    - title: App Customization
+      items:
+        - title: Custom On-screen Buttons/Keys
+          url: customize
+        - title: Button Parameter Guide
+          url: customize/button
+        - title: Custom JavaScript Guide
+          url: customize/script
     - title: Application Usage
       items:
         - title: DataWedge

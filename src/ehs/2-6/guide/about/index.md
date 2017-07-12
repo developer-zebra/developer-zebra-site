@@ -21,7 +21,7 @@ _Enterprise Home Screen does not support localization_.
 The first time it's installed, EHS presents the admin with this simple choice: 
 <img style="height:150px" src="homePrompt.png"/>
 
-Selecting 'Always' locks EHS in as the default home app and **locks users out of the following** device features by default:
+Selecting "Always" locks EHS in as the default home app and **locks users out of the following** device features by default:
 
 * Airplane mode
 * USB debugging
@@ -33,7 +33,11 @@ Selecting 'Always' locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> Ready to get started? [Download Enterprise Home Screen 2.5](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+> **Note: After selecting "Always," some devices require a five-second pause before restarting to ensure that the change is made permanent**. This applies to ET50, ET55, TC51, TC56, TC70x and TC75x devices running Marshmallow.
+
+Ready to get started? [Download Enterprise Home Screen 2.6](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+
+-----
 
 ## Supported Devices
 This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
@@ -70,7 +74,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
 

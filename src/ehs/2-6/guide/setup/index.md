@@ -14,7 +14,7 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 > <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-5/download) and establish connectivity between the computer and device. Then resume from here. 
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the `EHS_020601.apk` EHS 2.6 installer file.  
+These instructions apply to direct installation (from a computer to a single device) using the `EHS_0206xx.apk` EHS 2.6 installer file.  
 
 Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
 
@@ -54,7 +54,9 @@ _If "Done" was accidentally selected instead of "Open," launch "Enterprise Home 
 
 > **Note: On ET50 and ET55 devices with Google Mobile Services (GMS)**, the Launcher selection pop-up does not appear when the HOME button is pressed while in User Mode. To avoid this issue, switch to Admin Mode and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
 
-&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap Just once</b> to continue or select "Always" to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
+&#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap "Just once"</b> to continue or select "Always" to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
+
+> **Note: After selecting "Always," some devices require a five-second pause before restarting to ensure that the change is made permanent**. This applies to ET50, ET55, TC51, TC56, TC70x and TC75x devices running Marshmallow.
 
 ### Select Apps for User Mode 
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 

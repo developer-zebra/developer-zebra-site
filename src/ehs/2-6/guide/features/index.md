@@ -70,7 +70,7 @@ A device that is not in Secure Mode is considered to be running in Normal Mode. 
 ### Enable Secure Mode
 These instructions require [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb.html) for communication with the device and [OpenSSL for Windows](#installopenssl) for the creation of device certificate and private key files. If necessary, please install ADB and OpenSSL before proceeding. 
 
-**Important: Manual push is not supported on devices running Android N and higher. Use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type or [EMDK](../../../../emdk-for-android) and the Certificate Manager CSP in Profile Manager To deploy certificates to a device**.
+**Important: Manual push is not supported on devices running Android N and higher**. Use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type or [EMDK](../../../../emdk-for-android) and the Certificate Manager CSP in Profile Manager to deploy certificates to a device.
 
 &#49;. Create a device root certificate (`caroot.pem`) and private key (`privatekey.pem`) using the following OpenSSL command: 
 

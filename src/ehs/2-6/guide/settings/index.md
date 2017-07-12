@@ -134,7 +134,6 @@ The EHS config file is broken into five sections:
     <applications>
         <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
         <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>
-        <link label="Tech Docs" url="http://techdocs.zebra.com"/>
     </applications>
 
     <tools>
@@ -173,7 +172,7 @@ This section describes all tags in the `enterprisehomescreen.xml` file and their
 
 ### Kiosk
 
-Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys are disabled as a means of exit. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag in the &lt;Preferences&gt; section. 
+Specifies the app to run when the device is in [Kiosk Mode](../features), an optional mode under which a single app fills the screen and the BACK and HOME keys cannot be used to exit it. Kiosk Mode is activated using the &lt;kiosk_mode_enabled&gt; tag in the &lt;Preferences&gt; section. 
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
@@ -591,7 +590,7 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ------
 
 ### Kiosk Mode Enabled
-Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS starts up and disables BACK and HOME keys to prevent users from exiting the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that works in much the same way**.
+Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**.
 
 
 > Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 

@@ -68,7 +68,9 @@ In Secure Mode, EHS will accept only a signed EHS configuration file, thereby pr
 A device that is not in Secure Mode is considered to be running in Normal Mode. When in Normal Mode (the default), EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
 
 ### Enable Secure Mode
-These instructions require Android Debug Bridge (ADB) for communication with the device and OpenSSL for the creation of device certificate and private key files. If necessary, please install ADB and [OpenSSL for Windows]() before proceeding. 
+These instructions require [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb.html) for communication with the device and [OpenSSL for Windows](#installopenssl) for the creation of device certificate and private key files. If necessary, please install ADB and OpenSSL before proceeding. 
+
+**Important: Manual push is not supported on devices running Android N and higher. Use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type or [EMDK](../../../../emdk-for-android) and the Certificate Manager CSP in Profile Manager To deploy certificates to a device**.
 
 &#49;. Create a device root certificate (`caroot.pem`) and private key (`privatekey.pem`) using the following OpenSSL command: 
 
@@ -93,7 +95,7 @@ These instructions require Android Debug Bridge (ADB) for communication with the
 	:::term
 	adb push certificate.xml /enterprise/device/settings/mdm/autoimport/
 
-This will cause the root certificate to be installed on the device. (**Not supported on devices running Android N and higher**; use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type).
+This will cause the root certificate to be installed on the device (**Note: Manual push is not supported on devices running Android N**).
 
 &#53;. To confirm installation, <b> pull the</b> `Results.xml` <b>file</b> with the following command:
 

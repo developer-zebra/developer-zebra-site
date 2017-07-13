@@ -12,14 +12,16 @@ This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It a
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
 ## Kiosk Mode
-Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode places the app in full-screen mode and prevents the BACK and HOME keys from being used to exit the app. Also see the EHS [Auto-Launch](../settings#autolaunch) feature, which provides similar functionality without key remapping. 
+Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode places the app in full-screen mode and prevents the BACK and HOME keys from being used to exit the app by mapping those keys to the Kiosk app's most recent activity. 
+
+Also see the EHS [Auto-Launch](../settings#autolaunch) feature, which provides functionality similar to Kiosk Mode without key remapping. 
 
 ##### Android Platform Notes: 
 * **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an Android L feature that provides similar functionality.
-* **On devices running Android 4.4 KitKat**, a "please wait" prompt remains displayed when starting up the device in Kiosk Mode. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
+* **On devices running Android 4.4 KitKat**, a "please wait" prompt remains displayed when starting up the device in Kiosk Mode. Press the HOME key to launch the Kiosk app and resume normal behavior. 
 
 ##### Kiosk Mode tags:
-<b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk mode is enabled
+<b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk Mode is enabled
 
 <b>&lt;kiosk_mode_enabled&gt;</b> - Toggles the feature on and off
 <br>
@@ -313,7 +315,7 @@ This section covers important interactions between EHS and Android features that
 
 ### Recent Apps List
 
-* Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the Back button, potentially exposing a non-EHS home screen.
+* Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
 * EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
 * The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
 * Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system to clear the list. 
@@ -332,7 +334,7 @@ This section covers important interactions between EHS and Android features that
 	* [UiMgr](../../../../mx/uimgr) for Quick Settings and the "Gear" icon
 	* [WirelessMgr](../../../../mx/wirelessmgr) for Bluetooth, GPS, NFC and WWAN 
 * MX modules are accessible using EMDK or StageNow tools. 
-* Taking a screenshot (by pressing the "volume-down" and "Power" buttons simultaneously) while in User Mode might expose users to the Gallery app. To prevent this, disable the Gallery app in the Disable/Enable Applications section of [Optional Feature Tags section](../settings#optionalfeaturetags).
+* Taking a screenshot (by pressing the "volume-down" and "Power" buttons simultaneously) while in User Mode might expose users to the Gallery app or to apps used for sharing images such as Gmail and MMS. To prevent this, disable such unwanted apps in the Disable/Enable Applications section of [Optional Feature Tags section](../settings#optionalfeaturetags).
 * If the Programmable Keys feature on the Android System Settings panel is used to program a key to launch an application, that key mapping will be available in User Mode. 
 
 ------

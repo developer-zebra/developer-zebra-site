@@ -970,7 +970,7 @@ Permits a custom graphic to be specified in place of the system or default icon 
 ------
 
 ### Enable/Disable Apps
-Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. Use these tags to enable Settings and/or Search apps in User Mode. (Settings and Search apps are always enabled in Admin Mode, even if  &lt;apps_disabled&gt; tag is applied). Applies to both Admin and User Modes for all other apps. <b>Note</b>: Package names may vary from one Android version to another. 
+Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. Use these tags to enable Settings and/or Search apps in User Mode. (Settings and Search apps are always enabled in Admin Mode, even if  &lt;apps_disabled&gt; tag is applied). Applies to both Admin and User Modes for all other apps. <b>Note: Package names might vary from one Android version to another</b>. 
 
 <img alt="" style="height:350px" src="disable_apps.png"/>
 
@@ -978,10 +978,11 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
 * If one of these tags is present without the other, Settings and Search apps will be disabled in User Mode.
-* If the same package name is present under both tags, that app will be disabled.
+* If the same package name is present under both (enable and disable) tags, that app will be disabled.
 * Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag. 
 * **Disabled apps must be manually returned to their desired state before uninstalling EHS**.  
-* To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag. 
+* To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag.
+* **After the device user takes a screenshot, some Android versions present apps (i.e. Gmail, Messaging, etc.) as a means of sharing the image. Disable such apps to prevent unwanted access**. 
 * These tags cannot be used to [disable DataWedge](../../../../datawedge/5-0/guide/setup#disabledatawedge) or other services. 
 
 <b>Possible values</b>:

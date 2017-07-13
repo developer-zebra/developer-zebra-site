@@ -134,6 +134,7 @@ The EHS config file is broken into five sections:
     <applications>
         <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
         <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>
+        <link label="Tech Docs" url="http://techdocs.zebra.com"/>
     </applications>
 
     <tools>

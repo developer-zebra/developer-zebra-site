@@ -13,9 +13,11 @@ The number of buttons or keys and the appearance, layout, on-screen position, fu
 
 -----
 
+The Button.xml File
 
+The `button.xml` file stores all the runtime configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 10 ButtonBars (ButtonBar1 through ButtonBar10) and all definitions are maintained in the `button.xml` file. 
 
-Button XML file enables the user to have runtime configuration settings for custom onscreen buttons. Enterprise Browser currently supports 10 ButtonBars (named ButtonBar1 through ButtonBar10) and its definition are maintained in the button.xml file. The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
+The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
 
 
 The positional and size related attributes (left, top, height and width) should be defined as per target device screen resolution and current screen orientation. One may have to create different button.xml for different screen resolution device.  
@@ -26,193 +28,209 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
 
 ### Sample Button.xml File
 
-Inside button.xml file:
-
-  :::xml
-  <?xml version = "1.0"?>
-  <!-- Enterprise Browser Button Configuration Parameter file -->
-  <Buttonbargroup>
-      <ButtonBar1>
-          <barOrientation value="Horizontal" />
-          <barColor value="#AF7AC5" />
-          <barColorPressed value="#3498DB" />
-          <barTransparency value="50" />
-          <barFontSize value="14" />
-          <barLeft value="2" />
-          <barTop value="942" />
-          <barWidth value="720" />
-          <barHeight value="120" />
-          <Buttons>
-              <Button1>
-                  <buttonText value="F1" />
-                  <buttonAction value="key-131" />
-              </Button1>
-              <Button2>
-                  <buttonText value="F2" />
-                  <buttonAction value="key-132" />
-              </Button2>
-              <Button3>
-                  <buttonText value="0" />
-                  <buttonAction value="key-7" />
-              </Button3>
-              <Button4>
-                  <buttonText value="1" />
-                  <buttonAction value="key-8" />
-              </Button4>
-              <Button5>
-                  <buttonText value="A" />
-                  <buttonAction value="key-29" />
-              </Button5>
-              <Button6>
-                  <buttonText value="B" />
-                  <buttonAction value="key-57" />
-              </Button6>
-              <Button7>
-                  <buttonText value="Ent" />
-                  <buttonAction value="key-66" />
-              </Button7>
-          </Buttons>
-      </ButtonBar1>
-      <ButtonBar2>
-          <barColor value="#AF7AC5" />
-          <barColorPressed value="#3498DB" />
-          <barTransparency value="100" />
-          <barFontSize value="14" />
-          <Buttons>
-              <Button1>
-                  <buttonLeft value="2" />
-                  <buttonTop value="1063" />
-                  <buttonWidth value="102" />
-                  <buttonHeight value="120" />
-                  <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
-                  <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
-                  <buttonAction value="key-19" />
-              </Button1>
-              <Button2>
-                  <buttonLeft value="105" />
-                  <buttonTop value="1063" />
-                  <buttonWidth value="102" />
-                  <buttonHeight value="120" />
-                  <buttonImage value="file://%INSTALLDIR%/DownArrow.png" />
-                  <buttonImagePressed value="file://%INSTALLDIR%/DownArrow.png" />
-                  <buttonAction value="key-20" />
-              </Button2>
-              <Button3>
-                  <buttonLeft value="208" />
-                  <buttonTop value="1063" />
-                  <buttonWidth value="204" />
-                  <buttonHeight value="120" />
-                  <buttonImage value="file://%INSTALLDIR%/scan.png" />
-                  <buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png" />
-                  <buttonAction value="runscript-scantriggerscript" />
-              </Button3>
-              <Button4>
-                  <buttonLeft value="413" />
-                  <buttonTop value="1063" />
-                  <buttonWidth value="204" />
-                  <buttonHeight value="120" />
-                  <buttonImage value="file://%INSTALLDIR%/space_bar.png" />
-                  <buttonImagePressed value="file://%INSTALLDIR%/space_bar.png" />
-                  <buttonAction value="key-62" />
-              </Button4>
-              <Button5>
-                  <buttonLeft value="618" />
-                  <buttonTop value="1063" />
-                  <buttonWidth value="102" />
-                  <buttonHeight value="120" />
-                  <buttonText value="Quit" />
-                  <buttonAction value="quit" />
-              </Button5>
-          </Buttons>
-      </ButtonBar2>
-      <ButtonBar3>
-          <barLeft value="0" />
-          <barTop value="0" />
-          <barWidth value="720" />
-          <barHeight value="140" />
-          <Buttons>
-              <Button1>
-                  <buttonAction value="runscript-deviceinfoscript" />
-                  <buttonImage value="file://%INSTALLDIR%/deviceinfo.png" />
-              </Button1>
-              <Button2>
-                  <buttonAction value="runscript-camerascript" />
-                  <buttonImage value="file://%INSTALLDIR%/camera.png" />
-              </Button2>
-              <Button3>
-                  <buttonAction value="runscript-barcodescript" />
-                  <buttonImage value="file://%INSTALLDIR%/button1image.bmp" />
-              </Button3>
-              <Button4>
-                  <buttonAction value="runscript-signaturescript" />
-                  <buttonImage value="file://%INSTALLDIR%/signature.png" />
-              </Button4>
-              <Button5>
-                  <buttonAction value="quit" />
-                  <buttonImage value="file://%INSTALLDIR%/quit.png" />
-              </Button5>
-          </Buttons>
-      </ButtonBar3>
-  </Buttonbargroup>
-
----
-
-## Nodes
-Below mentioned code is the head node and all other tags should be inside this parent node.
-
-**Inside button xml file:**
-
-    :::xml 
-    <Buttonbargroup>
-      .......
-    </Buttonbargroup>
-
-All the specific parameters/attributes of a particular ButtonBar have to be mentioned inside this tag. As there are total of 10 ButtonBar supported currently in Enterprise Browser application, the possible values of N (of ButtonBarN) could be any value in the range of 1 to 10.
-
-**Inside button xml file :**
 
     :::xml
-    <ButtonBarN>
-    .......
-    </ButtonBarN>
-    
-**Example:** 
-All parameters of **`ButtonBar1`** have to be enclosed inside `<ButtonBar1>.....</ButtonBar1>`.  
+    <?xml version = "1.0"?>
+    <!-- Enterprise Browser Button Configuration Parameter file -->
+    <Buttonbargroup>
+        <ButtonBar1>
+            <barOrientation value="Horizontal" />
+            <barColor value="#AF7AC5" />
+            <barColorPressed value="#3498DB" />
+            <barTransparency value="50" />
+            <barFontSize value="14" />
+            <barLeft value="2" />
+            <barTop value="942" />
+            <barWidth value="720" />
+            <barHeight value="120" />
+            <Buttons>
+                <Button1>
+                    <buttonText value="F1" />
+                    <buttonAction value="key-131" />
+                </Button1>
+                <Button2>
+                    <buttonText value="F2" />
+                    <buttonAction value="key-132" />
+                </Button2>
+                <Button3>
+                    <buttonText value="0" />
+                    <buttonAction value="key-7" />
+                </Button3>
+                <Button4>
+                    <buttonText value="1" />
+                    <buttonAction value="key-8" />
+                </Button4>
+                <Button5>
+                    <buttonText value="A" />
+                    <buttonAction value="key-29" />
+                </Button5>
+                <Button6>
+                    <buttonText value="B" />
+                    <buttonAction value="key-57" />
+                </Button6>
+                <Button7>
+                    <buttonText value="Ent" />
+                    <buttonAction value="key-66" />
+                </Button7>
+            </Buttons>
+        </ButtonBar1>
+        <ButtonBar2>
+            <barColor value="#AF7AC5" />
+            <barColorPressed value="#3498DB" />
+            <barTransparency value="100" />
+            <barFontSize value="14" />
+            <Buttons>
+                <Button1>
+                    <buttonLeft value="2" />
+                    <buttonTop value="1063" />
+                    <buttonWidth value="102" />
+                    <buttonHeight value="120" />
+                    <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
+                    <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
+                    <buttonAction value="key-19" />
+                </Button1>
+                <Button2>
+                    <buttonLeft value="105" />
+                    <buttonTop value="1063" />
+                    <buttonWidth value="102" />
+                    <buttonHeight value="120" />
+                    <buttonImage value="file://%INSTALLDIR%/DownArrow.png" />
+                    <buttonImagePressed value="file://%INSTALLDIR%/DownArrow.png" />
+                    <buttonAction value="key-20" />
+                </Button2>
+                <Button3>
+                    <buttonLeft value="208" />
+                    <buttonTop value="1063" />
+                    <buttonWidth value="204" />
+                    <buttonHeight value="120" />
+                    <buttonImage value="file://%INSTALLDIR%/scan.png" />
+                    <buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png" />
+                    <buttonAction value="runscript-scantriggerscript" />
+                </Button3>
+                <Button4>
+                    <buttonLeft value="413" />
+                    <buttonTop value="1063" />
+                    <buttonWidth value="204" />
+                    <buttonHeight value="120" />
+                    <buttonImage value="file://%INSTALLDIR%/space_bar.png" />
+                    <buttonImagePressed value="file://%INSTALLDIR%/space_bar.png" />
+                    <buttonAction value="key-62" />
+                </Button4>
+                <Button5>
+                    <buttonLeft value="618" />
+                    <buttonTop value="1063" />
+                    <buttonWidth value="102" />
+                    <buttonHeight value="120" />
+                    <buttonText value="Quit" />
+                    <buttonAction value="quit" />
+                </Button5>
+            </Buttons>
+        </ButtonBar2>
+        <ButtonBar3>
+            <barLeft value="0" />
+            <barTop value="0" />
+            <barWidth value="720" />
+            <barHeight value="140" />
+            <Buttons>
+                <Button1>
+                    <buttonAction value="runscript-deviceinfoscript" />
+                    <buttonImage value="file://%INSTALLDIR%/deviceinfo.png" />
+                </Button1>
+                <Button2>
+                    <buttonAction value="runscript-camerascript" />
+                    <buttonImage value="file://%INSTALLDIR%/camera.png" />
+                </Button2>
+                <Button3>
+                    <buttonAction value="runscript-barcodescript" />
+                    <buttonImage value="file://%INSTALLDIR%/button1image.bmp" />
+                </Button3>
+                <Button4>
+                    <buttonAction value="runscript-signaturescript" />
+                    <buttonImage value="file://%INSTALLDIR%/signature.png" />
+                </Button4>
+                <Button5>
+                    <buttonAction value="quit" />
+                    <buttonImage value="file://%INSTALLDIR%/quit.png" />
+                </Button5>
+            </Buttons>
+        </ButtonBar3>
+    </Buttonbargroup>
 
-If there is a use case of multiple ButtonBar, user can define them one after another inside the **`<Buttonbargroup>`** tag.  
+-----
 
-For a ButtonBar, one can set attributes specific to the whole ButtonBar or can set the parameters for individual buttons. But all parameters may not be exposed either for button bar or for individual buttons. There may be instances as same parameter is exposed for both bar and individual button, then the setting for individual button will take precedence.  
+## Nodes
 
-The parameter of Buttons are categorized as mentioned below:
-1.  [ButtonBar Specific Parameters](buttonbar-specific-parameters)
-2.  [Individual Button Specific Parameters](#individual-button-specific-parameters)
-
-### ButtonBar Specific Parameters
-
-All ButtonBar specific parameters should be enclosed inside particular ButtonBarN nodes.
+### Buttonbargroup
+This is the head or parent node of the `button.xml` file; all tags should be contained with this node as shown in the example below. 
 
 #### Example
 
-// All `ButtonBar1` bar specific parameters should be defined inside 
+    :::xml 
+      <Buttonbargroup>
+        <ButtonBar1>
+            ...
+            //ButtonBar1 parameters and attributes (color, transparency, position, etc.)
+            ...
+            <Buttons>
+              <Button1>
+                //Button1 attributes, parameters, text (label) and action 
+              </Button1>
+              ...            
+            </Buttons>
+        </ButtonBar1>
+        <ButtonBar2>  
+        ...
+        //Supports up to ButtonBar10  
+    </Buttonbargroup>
+
+-----
+
+### ButtonBarN
+Numbered ButtonBar1 through ButtonBar10, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. It multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
+
+**Note**: If an attribute defined for a ButtonBar conflicts with one or more individual [Button parameters](#buttonparameters), the individual Button setting will take precedence.   
+
+#### Example
+
+    :::xml
+    <ButtonBarN>
+      <Button1>
+      </Button1>
+      ...
+    </ButtonBarN>
+
+-----
+
+## ButtonBar Parameters
+
+ButtonBar-specific parameters are used to specify attributes that apply to the entire ButtonBar. These tags must be enclosed within the ButtonBar node for which the settings are intended. 
+
+#### Example
 
     :::xml
     <ButtonBar1>
-    .....
+        <barOrientation value="Horizontal" />
+        <barColor value="#AF7AC5" />
+        <barColorPressed value="#3498DB" />
+        <barTransparency value="50" />
+        <barFontSize value="14" />
+        <barLeft value="2" />
+        <barTop value="942" />
+        <barWidth value="720" />
+        <barHeight value="120" />
     </ButtonBar1>
-
-All ButtonBar specific parameters are mentioned below:
 
 -----
 
 ### barColor
-The color of the entire ButtonBar (as #RRGGBB) using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp).
+Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp). Uses hex format #RRGGBB. 
 
 **Notes**:
 
-* Setting the color for individual button is not supported.
-* If no color is specified, the default color will be blue.
-* If image is set as button background, background color will not apply.
-* If WebView is resized and ButtonBar is not rendered on top of WebView layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImage](#buttonimage) in those cases.
+* Setting the color for individual buttons is not supported.
+* If no color is specified, the default color is blue.
+* If an image is specified as a button background, barColor setting is ignored.
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) parameter.
     
 #### Example
 
@@ -226,16 +244,15 @@ The color of the entire ButtonBar (as #RRGGBB) using [HTML hexadecimal color val
 -----
 
 ### barColorPressed
-The color of the entire ButtonBar in Hex values(#RRGGBB format). When any individual button of that ButtonBar will be pressed, the background color of that particular button will be changed to this specified value. 
 
-(as #RRGGBB) using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp).
+Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB. 
 
 Notes:
 
-* Currently, setting the color for individual button is not supported.
-* If the tag is not mentioned, then the default color will be yellow.
-* If image is set as button background, background color will not apply.
-* If WebView is resized and ButtonBar is not rendered on top of WebView layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImagePressed](#buttonimagepressed) in those cases.
+* Setting the color for individual buttons is not supported.
+* If no color is specified, the default color is yellow.
+* If an image is specified as a button background, barColor setting is ignored.
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImagePressed](#buttonimagepressed) parameter.
 
 #### Example
 
@@ -250,13 +267,8 @@ Notes:
 
 ### barFontSize
 
-Set the default text size to the given value, interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference.  
+Used to specify the default text size interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size will be chosen based on the device default. **Note**: Setting the font size for individual buttons is not supported.
 
-Notes:
-
-* Currently, setting the font size for individual button is not supported.
-* If the tag is not mentioned, then the default text size will apply and default font size will be device dependent.
-    
 #### Example
 
     :::xml
@@ -266,12 +278,11 @@ Notes:
       ...
     </ButtonBar1>
 
-
 -----
 
 ### barTransparency
 
-Transparency value in percentage. 0 means no transparency and 100 means fully transparent.
+Used to specify ButtonBar transparency as a percentage from 0-100 (0=none; 100=full).
 
 #### Example
 
@@ -282,20 +293,12 @@ Transparency value in percentage. 0 means no transparency and 100 means fully tr
       ...
     </ButtonBar1>
 
-
 -----
 
 ### barOrientation
 
-It can be one of the values i.e. either "Horizontal" or "Vertical". Buttons will be placed vertically or horizontally in given buttonBar coordinates based on the specified value of this parameter.  
+Used to set the orientation (horizontal or vertical) of buttons on the ButtonBar. If left unspecified, defaults to horizontal. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value and ButtonBar positional attributes.
 
-Note:
-
-* Default value is "Horizontal".
-* If the tag is not specified or any invalid string is specified, default value will be set.
-* This is only ButtonBar specific parameter.
-* If button specific positional attributes(left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value and ButtonBar positional attributes.
-  
 #### Example
 
     :::xml
@@ -304,14 +307,19 @@ Note:
       <barOrientation value="Vertical"/>
       ...
     </ButtonBar1>
-  
+
+-----
+## Positional Attributes
+Used to specify the placement of the ButtonBar on the device screen. 
+
+> **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are not set, a buttonBar with horizontal orientation will be placed at the bottom of the screen and occupy the full screen width; a ButtonBar with vertical orientation will be placed along the right edge of the screen and occupy the full screen height. 
 
 -----
 
 ### barLeft
 
-Left coordinate in pixel for this particular buttonbar.
-    
+Used to specify the left coordinate (in pixels) for the ButtonBar. 
+
 #### Example
 
     :::xml
@@ -325,7 +333,7 @@ Left coordinate in pixel for this particular buttonbar.
 
 ### barTop
 
-Top coordinate in pixel for this particular buttonbar.
+Used to specify the top coordinate (in pixels) for the ButtonBar.
 
 #### Example
 
@@ -335,12 +343,12 @@ Top coordinate in pixel for this particular buttonbar.
       <barTop value="0"/>
       ...
     </ButtonBar1>
-  
 
 -----
 
 ### barHeight
-Height of this particular buttonbar in pixel.
+
+Used to specify the height (in pixels) of the ButtonBar.
 
 #### Example
 
@@ -355,7 +363,8 @@ Height of this particular buttonbar in pixel.
 -----
 
 ### barWidth
-Width of this particular buttonbar in pixel.
+
+Used to specify the width (in pixels) of the ButtonBar.
 
 #### Example
 
@@ -366,55 +375,40 @@ Width of this particular buttonbar in pixel.
       ...
     </ButtonBar1>
 
-
-#### Remarks
- 1. If positional attributes (_barLeft, barTop, barHeight, barWidth_) are not set, Horizontal button bar will be placed in the bottom of the screen occupying the full screen width.
- 2. If positional attributes (_barLeft, barTop, barHeight, barWidth_) are not set, Vertical button bar will be placed in the right of the screen occupying the full screen height.
-
 -----
 
 ## Button-Specific Parameters
 
-All individual buttons which is part of particular ButtonBar resides inside the `<Buttons>......</Buttons>` nodes. The `<Buttons>......</Buttons>` nodes resides inside the particular `<ButtonBarN>......</ButtonBarN>` nodes. Here N (of ButtonBarN) is any value in the range of 1 to 10. All individual button specific parameter should be enclosed inside the `<ButtonN>......</ButtonN>` nodes. Here N (of ButtonN) could be any positive number.
+Button-specific parameters are used to specify attributes that apply to an individual Button. These tags must be enclosed within the ButtonN node for which the settings are intended. 
+
+Buttons effect one another only in terms of the total number of buttons created on a given ButtonBar. **The space occupied by each button is calculated as the number of available horizontal or vertical pixels (as determined by [barOrientation](#barorientation)) divided by the total number of ButtonN tags in the ButtonBarN node**. For example, if four buttons are created (as Button1 through Button4), a horizontally oriented ButtonBar will display four buttons of equal size across the screen.  
+
+**Note**: If an attribute defined in one or more [ButtonBar parameters](#buttonbarparameters) conflicts with one or more individual Button parameters, the individual Button setting will take precedence.   
 
 #### Example
-* All individual button specific parameter for `<ButtonBar1>` should be defined inside the respective ButtonN tag.
 
-    **Inside button xml file (say _button.xml_ file):**
-
-      :::xml
-      <ButtonBar1>
-         <Buttons>
-        	 <Button1>
-        	 .......
-        	 </Button1>
-        	 <Button2>
-        	 .......
-        	 </Button2>
-        	 <Button3>
-        	 .......
-        	 </Button3>
-        	 <Button4>
-        	 .......
-        	 </Button4>
-         </Buttons>
-      </ButtonBar1>
-
-Create an individual ButtonN tag for each button you need in particular ButtonBar and place all button specific parameter nodes inside those ButtonN tags. Example: If you place 3 ButtonN tags inside a ButtoBar, then number of buttons in that ButtonBar will be calculated as 3 and they will share equal space in the whole ButtonBar area, if their individual coordinates are not set.
-
-All button specific parameters are mentioned below:
+  :::xml
+  <ButtonBar1>
+    <Buttons>
+      <Button1>
+          <buttonLeft value="2" />
+          <buttonTop value="1063" />
+          <buttonWidth value="102" />
+          <buttonHeight value="120" />
+          <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
+          <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
+          <buttonAction value="key-19" />
+      </Button1>
+      <Button2>
+      ...
+    </Buttons>
+  </ButtonBar1>
 
 -----
 
 ### buttonLeft
 
-Left coordinate value of the particular button inside the ButtonBar.  
-
-Note:
-
-* If this parameter is not specified then the value of this will be calculated based on the ButtonBar position, size, orientation and number of buttons in that particular ButtonBar.
-* Please do not use this parameter if you need equal buttons in a particular ButtonBar. Use ButtonBar specific parameters instead.
-* If you want to customize the size of the buttons inside a ButtonBar which are not equal, then set this particular parameter.
+Used to specify the left coordinate value of the particular button inside the ButtonBar. **Use only if the size of a particular button must be larger or smaller than others in the ButtonBar**. If left unspecified, this value is calculated as described under [Button-specific Parameters](#buttonspecificparameters), above.
 
 #### Example
 
@@ -430,13 +424,7 @@ Note:
 
 ### buttonTop
 
-Top coordinate value of the particular button inside the ButtonBar.  
-
-Note:
-
-* If this parameter is not specified then the value of this will be calculated based on the ButtonBar position, size, orientation and number of buttons in that particular ButtonBar.
-* Please do not use this parameter if you need equal buttons in a particular ButtonBar. Use ButtonBar specific parameters instead.
-* If you want to customize the size of the buttons inside a ButtonBar which are not equal, then set this particular parameter.
+Used to specify the top coordinate value of the button inside the ButtonBar. **Use only if the placement of a particular button must be larger or smaller than others in the ButtonBar**. If left unspecified, this value is calculated as described under [Button-specific Parameters](#buttonspecificparameters), above.
 
 #### Example
 
@@ -452,13 +440,7 @@ Note:
 
 ### buttonHeight
 
-Height of the particular button inside the ButtonBar.  
-
-Note:
-
-* If this parameter is not specified then the value of this will be calculated based on the ButtonBar size, orientation and number of buttons in that particular ButtonBar.
-* Please do not use this parameter if you need equal buttons in a particular ButtonBar. Use ButtonBar specific parameters instead.
-* If you want to customize the size of the buttons inside a ButtonBar which are not equal, then set this particular parameter.
+Used to specify the height of the button inside the ButtonBar. **Use only if the size of a particular button must be larger or smaller than others in the ButtonBar**. If left unspecified, this value is calculated as described under [Button-specific Parameters](#buttonspecificparameters), above.
 
 #### Example
 
@@ -472,13 +454,8 @@ Note:
 -----
 
 ### buttonWidth
-Width of the particular button inside the ButtonBar.  
 
-Note:
-
-* If this parameter is not specified then the value of this will be calculated based on the ButtonBar, size, orientation and number of buttons in that particular ButtonBar.
-* Please do not use this parameter if you need equal buttons in a particular ButtonBar. Use ButtonBar specific parameters instead.
-* If you want to customize the size of the buttons inside a ButtonBar which are not equal, then set this particular parameter.
+Used to specify the width of the particular button inside the ButtonBar. **Use only if the size of a particular button must be larger or smaller than others in the ButtonBar**. If left unspecified, this value is calculated as described under [Button-specific Parameters](#buttonspecificparameters), above.
 
 #### Example
 
@@ -493,7 +470,7 @@ Note:
 
 ### buttonText
 
-Used for setting the text which need to be displayed for the particular button inside the ButtonBar if the background image is not specified.  
+Used to specify the text to be displayed for the particular button inside the ButtonBar. **Applies only if a background image is not specified**. 
 
 Note:
 
@@ -515,19 +492,14 @@ Note:
 
 ### buttonImage
 
-Used for setting the image (in .png format) for the particular button inside the ButtonBar. One can either use absolute path of the image or specify the following substitute variables for specifying full path along with the file protocol.
+Used to specify a device-resident image file (.png format only) for the particular button inside the ButtonBar. Supports [substitution variables](../../configreference/#substitutionvariables) (recommended) or full path plus file name.
+
+**Supported substitution variables:
 
 * `%INSTALLDIR%`
 * `%PRIMARYDIR%`
 * `%SECONDARYDIR%`
 * `%PERSISTCONFDIR%`
-
-For further details on substitute variables, please refer to Enterprise Browser [Substitution Variables](../../configreference/#substitutionvariables) section.  
-Note: 
-   * It is recommended to use the substitute variable, as the full path may vary from device to device depending on the different factors.
-
-
->>>>>CHECK CHECK
 
 #### Example
 
@@ -542,19 +514,15 @@ Note:
 -----
 
 ### buttonImagePressed
-Used for setting the image (in .png format) for the particular button when the button is pressed and hold inside the ButtonBar. This image will be shown as long as the button is pressed and hold and will be gone once the button is released. One can either use absolute path of the image or specify the following substitute variables for specifying full path along with the file protocol.
+
+Used to specify a device-resident image file (.png format only) for the particular button inside the ButtonBar to be displayed while the button is pressed. Supports [substitution variables](../../configreference/#substitutionvariables) (recommended) or full path plus file name.
+
+**Supported substitution variables:
 
 * `%INSTALLDIR%`
 * `%PRIMARYDIR%`
 * `%SECONDARYDIR%`
 * `%PERSISTCONFDIR%`
-
-For further details on substitute variables, please refer to Enterprise Browser [Substitution Variables](../../configreference/#substitutionvariables) section.  
-Note: 
-It is recommended to use the substitute variable, as the full path may vary from device to device depending on the different factors.
-
-
->>>>>CHECK CHECK
 
 #### Example
 
@@ -569,12 +537,13 @@ It is recommended to use the substitute variable, as the full path may vary from
 
 -----
 
+
+>>>>>CHECK CHECK CHECK -> still under construction
+
+
 ### buttonAction
 
-Action of a particular button pressed can be configuried via this tag. User has to provide the predefined command strings in order to achieve particular action.
-
-
->>>>>CHECK CHECK
+Used to specify the action to be taken when a particular button is pressed. Accepts predefined command strings only.
 
 #### Example
 
@@ -604,8 +573,6 @@ Note:
 
 * Generating a keyevent for the particular key can be captured inside JavaScript onkeydown events and it will also key-in the values in the input areas if associated.
 * User can also create their own keyboard creating multiple Horizontal ButtonBars placed in rows or multiple Vertical ButtonBars placed in columns.
-
->>>>>CHECK CHECK
 
 #### Example
 

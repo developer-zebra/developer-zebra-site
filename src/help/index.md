@@ -1,12 +1,12 @@
 ---
 publish: false
-title: In Need To...
+title: I Need a Tool For...
 layout: guide.html
 menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: I Need To...
+    - title: I Need a Tool For...
       url: /help
     - title: Feedback
       url: /contact
@@ -19,7 +19,7 @@ Zebra Technologies provides devices for the enterprise to acquire, process and c
 
 -----
 
-## Scan
+## Scanning
 Zebra mobile and touch computers are equipped with a variety of scanning devices, each of which can be accessed through software included with the device or with apps developed by a partner or customer. Zebra's solutions are described below in order from easiest (and with the least coding required) to the most powerful and complex.  
 
 ### DataWedge - Add scanning to existing app
@@ -61,7 +61,7 @@ Use EMDK for Android or EMDK for Xamarin SDKs to build or modify Java or C# apps
 
 -----
 
-## Print
+## Printing
 Zebra output solutions range from simple line printing from an Enterprise Browser to the development of printer apps and firmware using Link-OS.
 
 -----
@@ -105,7 +105,7 @@ EHS can be used with or without an Enterprise Browser app. For an concise overvi
 
 -----
 
-## Migrate Apps
+## Migrating Apps
 When the need arises to migrate existing apps from one device platform to another, such as from Windows CE to Android,  
 
 Migration tools can put a new face on older apps, modernize apps for terminal emulation or help move apps from older platforms to new ones.
@@ -134,7 +134,7 @@ C# to Android
 
 -----
 
-## Manage and Stage Devices
+## Staging and Managing Devices
 StageNow is Zebra's world-class device staging and management system. 
 
 StageNow

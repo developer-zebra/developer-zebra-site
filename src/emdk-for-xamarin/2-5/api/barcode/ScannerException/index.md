@@ -1,6 +1,6 @@
 ---
 title: ScannerException
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -14,5 +14,3 @@ The methods of barcode scanning object throws ScannerException when an error occ
 Returns the ScannerResults enum value
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
-
-

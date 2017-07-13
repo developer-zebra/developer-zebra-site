@@ -1,12 +1,10 @@
 ---
 title: DiagnosticException
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
-The methods of diagnostic API throw a DiagnosticException when an error occurs. The error could be due to:
-1. Client using the API incorrectly
-2. Because an unexpected error occurred
+The methods of diagnostic API throw a DiagnosticException when an error occurs.
 
 **Type** - Java.Lang.Exception
 
@@ -16,5 +14,3 @@ The methods of diagnostic API throw a DiagnosticException when an error occurs. 
 Returns the DiagnosticResults enum.
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults
-
-

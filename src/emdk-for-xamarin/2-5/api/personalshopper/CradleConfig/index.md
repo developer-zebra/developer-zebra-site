@@ -1,6 +1,6 @@
 ---
 title: CradleConfig
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,24 +10,26 @@ The class to access cradle configuration.
 
 ##Methods
 ###SetFastChargingState
+
 **public virtual int SetFastChargingState (bool p0);**
 
 Sets fast charging state of cradle. True for fast charging and false slow charging state.
 
-**Parameters:** 
+**Parameters:**
 
-* System.Boolean **p0** -  (true - to enable fast charge, false - to disable fast charge)
+System.Boolean **p0**  - isFastChargingState - (true - to enable fast charge, false - to disable fast charge)
 
 **Returns** - System.Int32
 
 ###SetLocation
+
 **public virtual int SetLocation (Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation p0);**
 
 Sets the cradle location.
 
-**Parameters:** 
+**Parameters:**
 
-* Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation **p0** - information (row, column, wall)
+Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation **p0**  - CradleLocation - information (row, column, wall)
 
 **Returns** - System.Int32
 
@@ -40,7 +42,4 @@ Gets fast charging state of the cradle. If the returned value is true, then the 
 ###Location
 Gets the cradle location.
 
-
-**Type** - Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation
-
-
+**Type** - Symbol.XamarinEMDK.PersonalShopper.CradleConfig+CradleLocation

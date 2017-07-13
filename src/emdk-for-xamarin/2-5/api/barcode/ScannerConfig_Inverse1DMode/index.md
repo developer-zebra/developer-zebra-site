@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.Inverse1DMode
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Inverse1DMode ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Inverse1DMode
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Inverse1DMode[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Inverse1DMode[]
 
@@ -35,14 +38,12 @@ This parameter allows the user to select decoding on inverse 1D bar codes.
 ###Auto
 Allows decoding of both positive as well as inverse 1D symbologies.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Inverse1DMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Inverse1DMode
 ###Disabled
 Disables decoding of inverse 1D symbologies
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Inverse1DMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Inverse1DMode
 ###Enabled
 Enables decoding of only inverse 1D symbologies.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Inverse1DMode
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Inverse1DMode

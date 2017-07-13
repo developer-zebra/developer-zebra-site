@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.PairAfterScannerReboot
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,21 +10,27 @@ Enable/disable automatic reconnection after scanner reboot. Applicable to DS3678
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PairAfterScannerReboot ValueOf (string this_);**
 
 
+        
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **this_** - 
+System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PairAfterScannerReboot
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PairAfterScannerReboot[] Values ();**
 
 
+        
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PairAfterScannerReboot[]
 
@@ -33,10 +39,8 @@ Enable/disable automatic reconnection after scanner reboot. Applicable to DS3678
 ###Disable
 Don't keep paring Info after bluetooth scanner reboot.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PairAfterScannerReboot
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PairAfterScannerReboot
 ###Enable
 Keep pairing info after bluetooth scanner reboot.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PairAfterScannerReboot
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PairAfterScannerReboot

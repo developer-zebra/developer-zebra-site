@@ -1,6 +1,6 @@
 ---
 title: SimulScanTemplateGroup
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -14,5 +14,3 @@ The SimulScanTemplateGroup class is a grouping of multiple SimulScanTemplateRegi
 Returns a list of SimulScanTemplateRegion objects that represents a collection of template regions that are contained within this SimulScanTemplateGroup
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.SimulScan.SimulScanTemplateRegion>
-
-

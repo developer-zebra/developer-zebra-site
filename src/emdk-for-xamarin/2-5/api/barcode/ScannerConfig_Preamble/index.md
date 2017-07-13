@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.Preamble
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Controls the preamble applied to the bar code Preamble characters are part of th
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Preamble
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Preamble[]
 
@@ -35,14 +38,12 @@ Controls the preamble applied to the bar code Preamble characters are part of th
 ###CountryAndSysChar
 Both country and system code preamble
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Preamble
 ###None
 No preamble
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Preamble
 ###SysChar
 System character preamble
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.Preamble
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Preamble

@@ -1,6 +1,6 @@
 ---
 title: DeviceType
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -11,24 +11,27 @@ productversion: '2.5'
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Notification.DeviceType ValueOf (string p0);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
         
 
 **Returns** - Symbol.XamarinEMDK.Notification.DeviceType
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Notification.DeviceType[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Notification.DeviceType[]
 
@@ -46,5 +49,3 @@ Undefined
 Vibrator
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
-
-

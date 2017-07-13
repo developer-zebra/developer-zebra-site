@@ -1,6 +1,6 @@
 ---
 title: SerialCommResults
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,24 +10,27 @@ Serial Communication error codes and its details.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommResults ValueOf (string p0);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
         
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 
 ###Values
+
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommResults[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommResults[]
 
@@ -39,7 +42,6 @@ The communication channel is already enabled.
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###CommPortInUse
 The serial communication port is already used by other instance.
-
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###DataSizeTooLarge
@@ -69,7 +71,6 @@ Failure
 ###FeatureNotSupported
 The feature is not supported.
 
-
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###InvalidObject
 The object is not valid.
@@ -88,7 +89,7 @@ The requested signal settings is read only.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###SignalOutOfRange
-The signal is out of range
+The signal is out of range.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###Success
@@ -103,5 +104,3 @@ Error code not defined.
 This method provides integer value assigned to the enum. It is recommended only to get error for the UNDEFINED enums at runtime if required.
 
 **Type** - System.Int32
-
-

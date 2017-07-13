@@ -1,6 +1,6 @@
 ---
 title: SimulScanElement
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -22,5 +22,3 @@ Returns unique identifier of this element
 Returns the friendly name of this element
 
 **Type** - System.String
-
-

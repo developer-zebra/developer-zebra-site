@@ -1,6 +1,6 @@
 ---
 title: StatusData
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -9,8 +9,13 @@ This class provides the Status detail of ScanAndPair.
 **Type** - Java.Lang.Object
 
 ##Constructors
-### StatusData 
+
+###StatusData
+
 **public StatusData ();**
+
+
+        
 
 ##Properties
 
@@ -21,6 +26,4 @@ When the state is ERROR, this method can be used to find out the exact error inf
 ###State
 State of the scanAndPair or scanAndUnpair method.
 
-**Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates
-
-
+**Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates

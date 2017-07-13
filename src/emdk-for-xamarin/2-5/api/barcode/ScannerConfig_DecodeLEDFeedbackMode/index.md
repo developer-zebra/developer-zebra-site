@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.DecodeLEDFeedbackMode
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Describes the LED Feedback mode is given by the host device and remote scanner.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode[]
 
@@ -35,18 +38,16 @@ Describes the LED Feedback mode is given by the host device and remote scanner.
 ###Both
 LED Feedback is given by both Device and the remote scanner.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode
 ###Disable
 LED Feedback is disabled on both Device and the remote scanner.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode
 ###Local
 LED Feedback is given by the Device.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode
 ###Remote
 LED Feedback is given by the Ring Scanner.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecodeLEDFeedbackMode
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecodeLEDFeedbackMode

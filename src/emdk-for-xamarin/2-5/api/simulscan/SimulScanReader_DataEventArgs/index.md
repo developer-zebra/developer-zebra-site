@@ -1,22 +1,27 @@
 ---
 title: SimulScanReader.DataEventArgs
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
 
+    
 
 **Type** - System.EventArgs
 
 ##Constructors
-### DataEventArgs 
+
+###DataEventArgs
+
 **public DataEventArgs (Symbol.XamarinEMDK.SimulScan.SimulScanData p0);**
+
+
+        
 
 ##Properties
 
 ###P0
 
+        
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanData
-
-

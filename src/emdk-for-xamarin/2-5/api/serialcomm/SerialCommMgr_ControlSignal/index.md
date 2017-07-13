@@ -1,6 +1,6 @@
 ---
 title: SerialCommMgr.ControlSignal
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,27 @@ List of control signals
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 
 ###Values
+
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal[]
 
@@ -35,26 +39,24 @@ List of control signals
 ###Cts
 Clear To Send
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Dcd
 Data Carrier Detect
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Dsr
 Data Set Ready
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Dtr
 Data Terminal Ready
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Ri
 Ring Indicator
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Rts
 Request To Send
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal
-
-
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal

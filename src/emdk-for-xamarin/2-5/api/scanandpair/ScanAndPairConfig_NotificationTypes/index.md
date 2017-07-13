@@ -1,6 +1,6 @@
 ---
 title: ScanAndPairConfig.NotificationTypes
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -15,23 +15,26 @@ indicates when to press the trigger. Pair Success Four short beeps of the same f
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+NotificationTypes
 
 ###Values
+
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+NotificationTypes[]
 
@@ -40,10 +43,8 @@ indicates when to press the trigger. Pair Success Four short beeps of the same f
 ###Beeper
 Beeper notification. Raises pre-defined beep sequences. This will give the user an audible alert when specific operations are performed.
 
-**Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes
+**Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+NotificationTypes
 ###None
 Disable notification. Do not raise notification for any type of operations.
 
-**Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.NotificationTypes
-
-
+**Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+NotificationTypes

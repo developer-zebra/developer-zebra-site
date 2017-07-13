@@ -1,6 +1,6 @@
 ---
 title: VersionManager
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,15 +10,14 @@ Version information can be captured from this class.
 
 ##Methods
 ###GetVersion
+
 **public virtual string GetVersion (Symbol.XamarinEMDK.VersionManager.VERSION_TYPE p0);**
 
 Gets the version of the specified VersionManager.VERSION_TYPE
 
-**Parameters:** 
+**Parameters:**
 
-* Symbol.XamarinEMDK.VersionManager.VERSION_TYPE **p0** - VersionManager.VERSION_TYPE
+Symbol.XamarinEMDK.VersionManager.VERSION_TYPE **p0**  - VersionManager.VERSION_TYPE
 
 **Returns** - System.String
-
-
 

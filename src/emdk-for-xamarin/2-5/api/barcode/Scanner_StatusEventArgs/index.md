@@ -1,6 +1,6 @@
 ---
 title: Scanner.StatusEventArgs
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -9,8 +9,13 @@ This class is used internally and not meant for developer applications.
 **Type** - System.EventArgs
 
 ##Constructors
-### StatusEventArgs 
+
+###StatusEventArgs
+
 **public StatusEventArgs (Symbol.XamarinEMDK.Barcode.StatusData p0);**
+
+
+        
 
 ##Properties
 
@@ -19,5 +24,3 @@ This class is used internally and not meant for developer applications.
         
 
 **Type** - Symbol.XamarinEMDK.Barcode.StatusData
-
-

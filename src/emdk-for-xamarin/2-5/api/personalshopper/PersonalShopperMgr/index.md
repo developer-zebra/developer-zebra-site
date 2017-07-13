@@ -1,6 +1,6 @@
 ---
 title: PersonalShopperMgr
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -18,5 +18,3 @@ The field to access the cradle features.
 The field to access the diagnostics feature.
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.Diagnostic
-
-

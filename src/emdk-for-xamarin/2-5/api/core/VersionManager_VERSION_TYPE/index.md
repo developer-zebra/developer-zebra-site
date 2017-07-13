@@ -1,6 +1,6 @@
 ---
 title: VersionManager.VERSION_TYPE
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated 
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 
 ###Values
+
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE[]
 
@@ -35,14 +38,12 @@ All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated 
 ###Barcode
 Barcode Scanner Framework version.
 
-**Type** - Symbol.XamarinEMDK.VersionManager.VERSION_TYPE
+**Type** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 ###Emdk
 EMDK version
 
-**Type** - Symbol.XamarinEMDK.VersionManager.VERSION_TYPE
+**Type** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 ###Mx
 MX framework version
 
-**Type** - Symbol.XamarinEMDK.VersionManager.VERSION_TYPE
-
-
+**Type** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE

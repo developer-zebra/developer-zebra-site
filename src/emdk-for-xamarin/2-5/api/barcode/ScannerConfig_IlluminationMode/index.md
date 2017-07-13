@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.IlluminationMode
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Enable/disable illumination depending on ambient light conditions. This option i
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+IlluminationMode
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+IlluminationMode[]
 
@@ -35,10 +38,8 @@ Enable/disable illumination depending on ambient light conditions. This option i
 ###Off
 Illumination turned off during scanning.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+IlluminationMode
 ###On
 Illumination turned on during scanning.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.IlluminationMode
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+IlluminationMode

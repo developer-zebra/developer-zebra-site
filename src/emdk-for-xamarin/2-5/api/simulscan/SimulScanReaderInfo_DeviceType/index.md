@@ -1,6 +1,6 @@
 ---
 title: SimulScanReaderInfo.DeviceType
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,21 +10,27 @@ List of supported scanner device type.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType ValueOf (string this_);**
 
 
+        
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **this_** - 
+System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 
 ###Values
+
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType[] Values ();**
 
 
+        
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType[]
 
@@ -33,14 +39,12 @@ List of supported scanner device type.
 ###Camera
 The Scanner device class is camera.
 
-**Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType
+**Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 ###Imager
 The scanner device class is imager.
 
-**Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType
+**Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 ###Undefined
 The scanner device class is not defined.
 
-**Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType
-
-
+**Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType

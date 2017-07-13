@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.ReaderParameters
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -13,6 +13,4 @@ The ReaderParams class holds the parameters for a scanner. Reader parameters are
 ###ReaderSpecific
 ReaderSpecificParams provides access to the reader specific parameters.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters.ReaderSpecifics
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics

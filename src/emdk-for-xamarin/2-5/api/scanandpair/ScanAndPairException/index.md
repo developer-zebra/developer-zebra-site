@@ -1,6 +1,6 @@
 ---
 title: ScanAndPairException
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -15,5 +15,3 @@ productversion: '2.5'
 Returns the ScanAndPairResults enum value.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
-
-

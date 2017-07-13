@@ -1,6 +1,6 @@
 ---
 title: DiagnosticData
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -13,7 +13,6 @@ The diagnostic data.
 ###BatteryChargingTime
 The remaining time needed for the terminal to be in cradle to reach capacity that will be enough for a requested duration of shopping trip.
 
-
 **Type** - System.Int32
 ###BatteryChargingTimeElapsed
 The duration in minutes in which battery was charged during the current charge cycle.
@@ -21,7 +20,6 @@ The duration in minutes in which battery was charged during the current charge c
 **Type** - System.Int32
 ###BatteryDateOfManufacture
 The manufacture date of the battery in the format year/mm/date.
-
 
 **Type** - System.String
 ###BatteryStateOfCharge
@@ -44,5 +42,3 @@ The duration in days battery was last replaced.
 The time in minutes since the device cold booted the last time.
 
 **Type** - System.Int32
-
-

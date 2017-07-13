@@ -1,6 +1,6 @@
 ---
 title: DeviceInfo
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -46,5 +46,3 @@ Returns true if the notification device supports Vibrate feature else false.
 Returns the notification device model number. This information will be available only after the device is enabled.
 
 **Type** - System.String
-
-

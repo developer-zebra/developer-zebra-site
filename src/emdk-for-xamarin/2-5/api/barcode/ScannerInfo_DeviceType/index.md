@@ -1,6 +1,6 @@
 ---
 title: ScannerInfo.DeviceType
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ List of supported scanner device types.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType[]
 
@@ -35,18 +38,16 @@ List of supported scanner device types.
 ###Camera
 The Scanner device class is camera.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 ###Imager
 The scanner device class is imager.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 ###Laser
 The scanner device class is laser.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 ###Undefined
 The scanner device class is not defined.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType

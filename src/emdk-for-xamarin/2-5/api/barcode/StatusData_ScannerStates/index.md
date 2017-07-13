@@ -1,6 +1,6 @@
 ---
 title: StatusData.ScannerStates
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Defines the different states of the barcode scanner.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates[]
 
@@ -35,22 +38,20 @@ Defines the different states of the barcode scanner.
 ###Disabled
 Scanner is not enabled.
 
-**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates
 ###Error
 An error has occurred.
 
-**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates
 ###Idle
 Scanner is enabled but no reads are pending.
 
-**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates
 ###Scanning
 Scanner beam is on and it is acquiring data.
 
-**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates
 ###Waiting
 Scanner has issued reads request and is waiting for trigger event.
 
-**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates

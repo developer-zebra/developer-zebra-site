@@ -1,6 +1,6 @@
 ---
 title: ScannerResults
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,24 +10,27 @@ Defines all the error codes the barcode scanning API returns.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerResults ValueOf (string p0);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
         
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerResults
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerResults[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerResults[]
 
@@ -35,6 +38,10 @@ Defines all the error codes the barcode scanning API returns.
 
 ###AlreadyScanning
 Scanning in progress.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
+###DataParsingFailure
+Data parsing failed.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 ###Description
@@ -139,5 +146,3 @@ Error code not defined.
 View finder error.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
-
-

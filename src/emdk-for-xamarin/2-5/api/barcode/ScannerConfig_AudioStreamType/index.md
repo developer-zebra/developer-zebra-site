@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.AudioStreamType
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Volume slider type for decode audio feedback.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType[]
 
@@ -35,14 +38,12 @@ Volume slider type for decode audio feedback.
 ###Alarms
 Alarms
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 ###Media
 Music and Media.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 ###Ringer
 Ringer and Notifications.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType

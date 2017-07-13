@@ -1,6 +1,6 @@
 ---
 title: ScanAndPairResults
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,37 +10,41 @@ Provides list of result codes for ScanAndPair class.
 
 ##Methods
 ###GetErrorDescription
+
 **public static string GetErrorDescription (Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults p0);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults **p0** - 
+Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults **p0**  - 
         
 
 **Returns** - System.String
 
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults ValueOf (string p0);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
         
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 
 ###Values
+
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults[]
 
@@ -134,5 +138,3 @@ Error in closing scanner
 Success
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
-
-

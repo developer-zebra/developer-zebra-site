@@ -1,6 +1,6 @@
 ---
 title: StatusData
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -18,6 +18,4 @@ Friendlyname of scanner
 ###State
 Scanner State - check class StatusData.ScannerStates
 
-**Type** - Symbol.XamarinEMDK.Barcode.StatusData.ScannerStates
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates

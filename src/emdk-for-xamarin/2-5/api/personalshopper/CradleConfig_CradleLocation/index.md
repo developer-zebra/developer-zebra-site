@@ -1,6 +1,6 @@
 ---
 title: CradleConfig.CradleLocation
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -9,8 +9,13 @@ The class for provides access to the cradle location. The values modified will t
 **Type** - Java.Lang.Object
 
 ##Constructors
-### CradleLocation 
+
+###CradleLocation
+
 **public CradleLocation (Symbol.XamarinEMDK.PersonalShopper.CradleConfig __self, int p0, int p1, int p2);**
+
+
+        
 
 ##Properties
 
@@ -26,5 +31,3 @@ The row identification number.
 The wall identification number.
 
 **Type** - System.Int32
-
-

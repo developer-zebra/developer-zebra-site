@@ -1,6 +1,6 @@
 ---
 title: SimulScanResults
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,21 +10,27 @@ Defines all the error codes the SimulScan API returns.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ValueOf (string p0);**
 
 
+        
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 
 ###Values
+
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanResults[] Values ();**
 
-Returns an array containing the constants of this enum type, in the order they are declared.
 
+        
+
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanResults[]
 
@@ -47,7 +53,7 @@ EMDK is not opened
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FailedToLoadTemplate
-EMDK is not opened
+Failed to load template
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FailedToSetTemplate
@@ -61,11 +67,9 @@ Failure
 ###FeatureNotSupported
 The feature is not supported completely or for specified input.
 
-
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FetchTemplateInProgress
 Fetch template is in progress
-
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FetchTemplateNotAllowed
@@ -74,7 +78,6 @@ Fetch template not allowed while a read is in progress
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###InvalidObject
 The reader has been released and is not valid.
-
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###InvalidValue
@@ -92,7 +95,6 @@ The reader is already disabled
 ###ReaderAlreadyEnabled
 Reader is already enabled
 
-
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderDeinitFailed
 Reader de-initialization failed.
@@ -101,10 +103,10 @@ Reader de-initialization failed.
 ###ReaderInitFailed
 Reader initialization failed.
 
+
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderInUse
 Another reader is already enabled and in use.
-
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderNotEnabled
@@ -112,12 +114,11 @@ The selected reader is not enabled.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Success
-Success.
+Success
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###TemplateNotSet
 Failed to set template
-
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Undefined
@@ -128,5 +129,3 @@ Undefined
 Get the error code integer value assigned to the SimulScanResults
 
 **Type** - System.Int32
-
-

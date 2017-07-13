@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.CheckDigit
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ The number of check digits to be verified. With MSI symbols, one check digit is 
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit[]
 
@@ -35,10 +38,8 @@ The number of check digits to be verified. With MSI symbols, one check digit is 
 ###One
 Verify one check digit.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit
 ###Two
 Verify two check digits.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit

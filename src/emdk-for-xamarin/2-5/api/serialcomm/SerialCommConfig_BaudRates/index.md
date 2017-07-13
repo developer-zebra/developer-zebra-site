@@ -1,6 +1,6 @@
 ---
 title: SerialCommConfig.BaudRates
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -9,8 +9,11 @@ Possible baud rate constants defined. All the baud rate may not be supported all
 **Type** - Java.Lang.Object
 
 ##Constructors
-### BaudRates 
+
+###BaudRates
+
 **public BaudRates ();**
 
 
+        
 

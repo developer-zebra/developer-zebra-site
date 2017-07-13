@@ -1,6 +1,6 @@
 ---
 title: ConnectionType
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -11,24 +11,27 @@ productversion: '2.5'
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Notification.ConnectionType ValueOf (string p0);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
         
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Notification.ConnectionType[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType[]
 
@@ -46,5 +49,3 @@ Pluggable
 Undefined
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
-
-

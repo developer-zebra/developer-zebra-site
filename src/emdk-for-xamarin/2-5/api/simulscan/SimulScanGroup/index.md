@@ -1,6 +1,6 @@
 ---
 title: SimulScanGroup
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -18,5 +18,3 @@ Returns additional processed data as an object of type Object
 Returns a list of SimulScanRegion objects that represents a collection of processed regions that are contained within the group
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.SimulScan.SimulScanRegion>
-
-

@@ -1,6 +1,6 @@
 ---
 title: NotificationException
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -18,5 +18,3 @@ The error could be due to:
 Returns the NotificationResults enum value.
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationResults
-
-

@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.DecoderParameters
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -13,174 +13,172 @@ The DecoderParams class contains decoder parameters that are used by multiple de
 ###AustralianPostal
 The AustralianPostal class provides access to parameters that are available for the AustralianPostal decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.AustralianPostalDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+AustralianPostalDecoder
 ###Aztec
 The AZTEC class provides access to parameters that are available for the AZTEC decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.AztecDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+AztecDecoder
 ###CanadianPostal
 The CanadianPostal class provides access to parameters that are available for the CanadianPostal decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.CanadianPostalDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+CanadianPostalDecoder
 ###Chinese2of5
 The Chinese_2of5 class provides access to parameters that are available for the Chinese2of5 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Chinese2of5Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Chinese2of5Decoder
 ###CodaBar
 The CodaBar class provides access to parameters that are available for the CodaBar decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.CodaBarDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+CodaBarDecoder
 ###Code11
 The Code11 class provides access to parameters that are available for the Code11 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Code11Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Code11Decoder
 ###Code128
 The Code128 class provides access to parameters that are available for the Code128 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Code128Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Code128Decoder
 ###Code39
 The Code39 class provides access to parameters that are available for the Code39 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Code39Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Code39Decoder
 ###Code93
 The Code93 class provides access to parameters that are available for the Code93 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Code93Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Code93Decoder
 ###CompositeAB
 The Composite_AB class provides access to parameters that are available for the CompositeAB decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.CompositeABDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+CompositeABDecoder
 ###CompositeC
 The Composite_C class provides access to parameters that are available for the CompositeC decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.CompositeCDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+CompositeCDecoder
 ###D2of5
 The D2OF5 class provides access to parameters that are available for the D2OF5 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.D2of5Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+D2of5Decoder
 ###DataMatrix
 The DataMatrix class provides access to parameters that are available for the DataMatrix decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.DataMatrixDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+DataMatrixDecoder
 ###DutchPostal
 The DutchPostal class provides access to parameters that are available for the DutchPostal decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.DutchPostalDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+DutchPostalDecoder
 ###Ean13
 The EAN13 class provides access to parameters that are available for the EAN13 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Ean13Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Ean13Decoder
 ###Ean8
 The EAN8 class provides access to parameters that are available for the EAN8 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Ean8Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Ean8Decoder
 ###Gs1Databar
 The GS1Databar class provides access to parameters that are available for the GS1 Databar decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Gs1DatabarDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1DatabarDecoder
 ###Gs1DatabarExp
 The GS1DatabarExp class provides access to parameters that are available for the GS1 Databar Exp decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Gs1DatabarExpDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1DatabarExpDecoder
 ###Gs1DatabarLim
 The GS1DatabarLim class provides access to parameters that are available for the GS1 Databar Lim decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Gs1DatabarLimDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1DatabarLimDecoder
 ###HanXin
 The HanXin class provides access to parameters that are available for the HanXin decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.HanXinDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+HanXinDecoder
 ###I2of5
 The I2OF5 class provides access to parameters that are available for the I2OF5 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.I2of5Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+I2of5Decoder
 ###JapanesePostal
 The JapanesePostal class provides access to parameters that are available for the JapanesePostal decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.JapanesePostalDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+JapanesePostalDecoder
 ###Korean3of5
 The Korean_3of5 class provides access to parameters that are available for the Korean3of5 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Korean3of5Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Korean3of5Decoder
 ###MailMark
 The MailMark class provides access to parameters that are available for the MailMark decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.MailMarkDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+MailMarkDecoder
 ###Matrix2of5
 The Matrix_2of5 class provides access to parameters that are available for the Matrix2of5 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Matrix2of5Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Matrix2of5Decoder
 ###MaxiCode
 The MaxiCode class provides access to parameters that are available for the MaxiCode decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.MaxiCodeDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+MaxiCodeDecoder
 ###MicroPDF
 The MicroPDF class provides access to parameters that are available for the MicroPDF decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.MicroPdfDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+MicroPdfDecoder
 ###MicroQR
 The MicroQR class provides access to parameters that are available for the MicroQR decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.MicroQrDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+MicroQrDecoder
 ###Msi
 The MSI class provides access to parameters that are available for the MSI decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.MsiDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+MsiDecoder
 ###Pdf417
 The PDF417 class provides access to parameters that are available for the PDF417 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Pdf417Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Pdf417Decoder
 ###QrCode
 The QRCode class provides access to parameters that are available for the QRCode decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.QrCodeDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+QrCodeDecoder
 ###Signature
 The Signature class provides access to parameters that are available for the Signature decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.SignatureDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+SignatureDecoder
 ###Tlc39
 The TLC39 class provides access to parameters that are available for the TLC39 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Tlc39Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Tlc39Decoder
 ###TriOptic39
 The TriOptic39 class provides access to parameters that are available for the TriOptic39 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.TriOptic39Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+TriOptic39Decoder
 ###UkPostal
 The UKPostal class provides access to parameters that are available for the UKPostal decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UkPostalDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+UkPostalDecoder
 ###Upca
 The UPCA class provides access to parameters that are available for the UPCA decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UpcaDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+UpcaDecoder
 ###Upce0
 The UPCE0 class provides access to parameters that are available for the UPCE0 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Upce0Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Upce0Decoder
 ###Upce1
 The UPCE1 class provides access to parameters that are available for the UPCE1 decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Upce1Decoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Upce1Decoder
 ###UpcEanParams
 The UPCEAN class provides access to parameters that are available for the UPC/EAN decoder. UPC/EAN is the family of codes which are used to identify products and UPC EAN Params are the params common to these codes
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UpcEanParameters
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+UpcEanParameters
 ###Us4State
 The US4State class provides access to parameters that are available for the US4State decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Us4StateDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Us4StateDecoder
 ###Us4StateFics
 The US4State_FICS class provides access to parameters that are available for the US4StateFics decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.Us4StateFicsDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Us4StateFicsDecoder
 ###UsPlanet
 The USPlanet class provides access to parameters that are available for the USPlanet decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UsPlanetDecoder
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+UsPlanetDecoder
 ###UsPostNet
 The USPostNet class provides access to parameters that are available for the USPostNet decoder.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.UsPostNetDecoder
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+UsPostNetDecoder

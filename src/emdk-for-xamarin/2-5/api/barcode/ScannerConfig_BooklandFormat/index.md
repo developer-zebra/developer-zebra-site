@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.BooklandFormat
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Lists the Bookland formats
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BooklandFormat
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BooklandFormat[]
 
@@ -35,10 +38,8 @@ Lists the Bookland formats
 ###ISBN_10
 978 reported in 10 digit mode
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BooklandFormat
 ###ISBN_13
 978/979 transmitted as EAN13 as per 2007 ISBN-13 protocol
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.BooklandFormat
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BooklandFormat

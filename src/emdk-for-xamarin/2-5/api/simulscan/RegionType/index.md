@@ -1,6 +1,6 @@
 ---
 title: RegionType
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,21 +10,27 @@ The data type contained within the region
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.SimulScan.RegionType ValueOf (string p0);**
 
 
+        
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.RegionType
 
 ###Values
+
 **public static Symbol.XamarinEMDK.SimulScan.RegionType[] Values ();**
 
 
+        
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.RegionType[]
 
@@ -50,5 +56,3 @@ Data type is picture.
 Data type is Unknown.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.RegionType
-
-

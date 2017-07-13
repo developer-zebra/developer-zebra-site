@@ -1,6 +1,6 @@
 ---
 title: SimulScanMultiTemplate
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -9,11 +9,20 @@ The SimulScanMultiTemplate class contains an entire parsed XML template file. It
 **Type** - Java.Lang.Object
 
 ##Constructors
-### SimulScanMultiTemplate 
+
+###SimulScanMultiTemplate
+
 **public SimulScanMultiTemplate (Symbol.XamarinEMDK.SimulScan.SimulScanManager p0, Android.Net.Uri p1);**
 
-### SimulScanMultiTemplate 
+
+        
+
+###SimulScanMultiTemplate
+
 **public SimulScanMultiTemplate (Symbol.XamarinEMDK.SimulScan.SimulScanManager p0, string p1);**
+
+
+        
 
 ##Properties
 
@@ -21,5 +30,3 @@ The SimulScanMultiTemplate class contains an entire parsed XML template file. It
 Returns the friendly name of the MultiTemplate object
 
 **Type** - System.String
-
-

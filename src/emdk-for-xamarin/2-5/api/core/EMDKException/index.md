@@ -1,6 +1,6 @@
 ---
 title: EMDKException
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -13,8 +13,6 @@ The methods of EMDKManager object throws EMDKException when an error occurs.
 ##Properties
 
 ###Result
-TReturns the result.
+Returns the result.
 
-**Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
-
-
+**Type** - Symbol.XamarinEMDK.EMDKResults+STATUS_CODE

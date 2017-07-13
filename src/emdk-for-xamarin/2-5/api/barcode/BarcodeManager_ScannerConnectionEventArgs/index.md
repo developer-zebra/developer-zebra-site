@@ -1,6 +1,6 @@
 ---
 title: BarcodeManager.ScannerConnectionEventArgs
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -9,8 +9,13 @@ used internally by BarcodeManager - not to be used in applications.
 **Type** - System.EventArgs
 
 ##Constructors
-### ScannerConnectionEventArgs 
+
+###ScannerConnectionEventArgs
+
 **public ScannerConnectionEventArgs (Symbol.XamarinEMDK.Barcode.ScannerInfo p0, Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState p1);**
+
+
+        
 
 ##Properties
 
@@ -23,6 +28,4 @@ used internally by BarcodeManager - not to be used in applications.
 
         
 
-**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState

@@ -1,6 +1,6 @@
 ---
 title: SimulScanRegion
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -15,7 +15,11 @@ Returns the absolute confidence of OCR results
 
 **Type** - System.Int32
 ###Data
-Returns the processed data.
+Returns the processed data. 
+        OCR (String)
+        OMR (Integer)
+        BARCODE (String)
+        PICTURE (byte[])
 
 **Type** - Java.Lang.Object
 ###Image
@@ -30,5 +34,3 @@ Returns the processed data type of this region
 Returns the relative confidence of OCR results
 
 **Type** - System.Int32
-
-

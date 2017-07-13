@@ -1,6 +1,6 @@
 ---
 title: SerialCommConfig.StopBits
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,39 +10,44 @@ Specifies the number of stop bits used on the SerialComm object.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits
 
 ###Values
+
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits[]
 
 ##Properties
 
 ###One
-One stop bit is used
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits
+        
+
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits
 ###OneAndHalf
-1.5 stop bits are used
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits
+        
+
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits
 ###Two
-Two stop bits are used
 
-**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig.StopBits
+        
 
-
+**Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits

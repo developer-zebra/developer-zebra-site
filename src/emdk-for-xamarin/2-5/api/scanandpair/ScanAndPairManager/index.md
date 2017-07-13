@@ -1,6 +1,6 @@
 ---
 title: ScanAndPairManager
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,22 +10,25 @@ The ScanAndPair provides simple methods to scan a Bluetooth barcode (name or add
 
 ##Methods
 ###ScanAndPair
+
 **public virtual Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults ScanAndPair (string p0);**
 
 This is an asynchronous method. The status of the scanAndPair() method will be returned if the callback is registered. If the always scan is enabled in the configuration, this method scans a barcode to get the Bluetooth address or name of a remote device, and pairs with that remote device. If a Bluetooth address is scanned, the remote device is paired without performing a discovery. If a Bluetooth name is scanned, then a discovery is done to find the address of the device and then the pairing is done. The provided authentication PIN is used for pairing. The maximum allowed length for the authentication PIN is 15 characters.
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - Pin required to pair with the Bluetooth device.
+System.String **p0**  - Pin required to pair with the Bluetooth device.
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 
 ###ScanAndUnpair
+
 **public virtual Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults ScanAndUnpair ();**
 
 This is an asynchronous method. The status of the scanAndUnpair() method will be returned if the callback is registered. If the always scan is enabled in the configuration, this method scans a barcode to get the Bluetooth address or name of a remote device, and pairs with that remote device. 
 If a Bluetooth address was scanned for pairing during scanAndPair calls, then the same address can be scanned for unpairing during the ScanAndUnPair call.
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 
@@ -43,5 +46,10 @@ This method provides information if any of the previous request is pending. If t
 This method provides an option to get the current or recent status of scanAndPair or scanAndUnpair calls
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData
+##Events
 
+###StatusEvent
+
+
+        
 

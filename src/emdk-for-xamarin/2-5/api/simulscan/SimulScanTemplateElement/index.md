@@ -1,6 +1,6 @@
 ---
 title: SimulScanTemplateElement
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -18,5 +18,3 @@ Returns the friendly name of the element
 Returns the region number of the element
 
 **Type** - System.Int32
-
-

@@ -1,6 +1,6 @@
 ---
 title: CradleInfo
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -12,7 +12,6 @@ This class holds cradle information.
 
 ###DateOfManufacture
 Returns Date of manufacture in the format MM/DD/YY. i.e. 4/10/2014 means April 10, 2014. The empty string returned if not available.
-
 
 **Type** - System.String
 ###FirmwareVersion
@@ -31,5 +30,3 @@ Returns the part number of the cradle. The empty string returned if not availabl
 Returns the serial number of the cradle. The empty string returned if not available.
 
 **Type** - System.String
-
-

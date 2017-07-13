@@ -1,6 +1,6 @@
 ---
 title: ScanAndPairManager.StatusEventArgs
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,8 +10,13 @@ productversion: '2.5'
 **Type** - System.EventArgs
 
 ##Constructors
-### StatusEventArgs 
+
+###StatusEventArgs
+
 **public StatusEventArgs (Symbol.XamarinEMDK.ScanAndPair.StatusData p0);**
+
+
+        
 
 ##Properties
 
@@ -20,5 +25,3 @@ productversion: '2.5'
         
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData
-
-

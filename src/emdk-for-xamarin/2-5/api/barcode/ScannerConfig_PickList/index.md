@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.PickList
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Allows the imager to decode only the bar code that is directly under the cross-h
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PickList
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PickList[]
 
@@ -35,10 +38,8 @@ Allows the imager to decode only the bar code that is directly under the cross-h
 ###Disabled
 Disables Picklist mode. Any bar code within the field of view can be decoded.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PickList
 ###Enabled
 Enables the Picklist mode so that only the bar code that is directly under the cross-hair (reticle) is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes. (Scan Module Only)
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PickList
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PickList

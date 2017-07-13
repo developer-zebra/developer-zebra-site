@@ -1,6 +1,6 @@
 ---
 title: SimulScanTemplateRegion
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,18 +10,22 @@ The SimulScanTemplateRegion class represents a particular region in a Template.
 
 ##Methods
 ###GetX
+
 **public virtual int GetX ();**
 
 Returns the X coordinate of this template region
 
+**Parameters:**
 
 **Returns** - System.Int32
 
 ###GetY
+
 **public virtual int GetY ();**
 
 Returns the Y coordinate of this template region
 
+**Parameters:**
 
 **Returns** - System.Int32
 
@@ -29,7 +33,6 @@ Returns the Y coordinate of this template region
 
 ###Height
 Returns the height of this template region
-
 
 **Type** - System.Int32
 ###RegionType
@@ -40,5 +43,3 @@ Returns the type of data contained within this region
 Returns the width of this template region
 
 **Type** - System.Int32
-
-

@@ -1,6 +1,6 @@
 ---
 title: BarcodeManager.ConnectionState
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Connection states of a scanner device.
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState[]
 
@@ -35,10 +38,8 @@ Connection states of a scanner device.
 ###Connected
 Scanner interface is connected. Ready to scan barcodes.
 
-**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState
 ###Disconnected
 Scanner interface is dis-connected. Not ready to scan barcodes.
 
-**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState

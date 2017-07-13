@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.PowerMode
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Set laser scanner power mode
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode[]
 
@@ -35,18 +38,16 @@ Set laser scanner power mode
 ###AlwaysOn
 Highest power, fastest performance.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###High
 High power, and excellent performance.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###Low
 Lowest power, but slowest performance.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###Optimized
 Power level adjusts with scanning usage.
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode

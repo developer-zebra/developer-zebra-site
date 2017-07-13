@@ -1,6 +1,6 @@
 ---
 title: ScannerConfig.CouponReport
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -10,23 +10,26 @@ Supported Coupon modes
 
 ##Methods
 ###ValueOf
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport ValueOf (string this_);**
 
 
         
 
-**Parameters:** 
+**Parameters:**
 
-* System.String **p0** - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 
 ###Values
+
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport[] Values ();**
 
 
         
 
+**Parameters:**
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport[]
 
@@ -35,14 +38,12 @@ Supported Coupon modes
 ###Both
 Scanner will read both old coupon format as well as the new GS1 DataBar coupon format
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 ###New
 Scanner will read only the new GS1 DataBar coupon format
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 ###Old
 Scanner will read only the old coupon format
 
-**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport
-
-
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport

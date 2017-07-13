@@ -1,6 +1,6 @@
 ---
 title: EMDKManager.StatusData
-layout: guide.html 
+layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.5' 
 ---
@@ -13,10 +13,8 @@ StatusData class provides access to EMDK Manager feature ready to use status.
 ###FeatureType
 Returns the feature type for which the status data is returned.
 
-**Type** - Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE
+**Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Result
 Returns the associated error code.
 
-**Type** - Symbol.XamarinEMDK.EMDKResults.STATUS_CODE
-
-
+**Type** - Symbol.XamarinEMDK.EMDKResults+STATUS_CODE

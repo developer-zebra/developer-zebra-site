@@ -20,6 +20,11 @@ content-items:
     url: /emdk-for-android/6-6/guide/barcode_scanning_guide
   - type: section
     level: 4
+    title: "UDI Label Scanning Programmer's Guide"
+    text: 'The EMDK Barcode API exposes a UDI barcode scanning feature that provides applications with the ability to read UDI Labels from from three issuing agencies, GS1, HIBCC and ICCBBA.'
+    url: /emdk-for-android/6-6/guide/udi_scanning_guide
+  - type: section
+    level: 4
     title: "Notification API Programmer's Guide"
     text: This guide provides an overview on design points to be considered during the development of an application that notifies users using Notification API in the business application workflow.
     url: /emdk-for-android/6-6/guide/notification-api

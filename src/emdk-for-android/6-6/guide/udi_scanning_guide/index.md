@@ -1,4 +1,3 @@
-
 ---
 title: "UDI Label Scanning Programmer's Guide"
 layout: guide.html
@@ -79,7 +78,7 @@ The UDI label type recognized by the EMDK Barcode API's is provided as a String,
      Log.d("UDI", "UDI Label Type: " + scanDataCollection.getLabelIdentifier());
 
 ### Retrieving Data by Token Name
-Token Data can also be retrieved by individual Token name. The EMDK API provides of supported Tokens in the TokenizedData.Keys class. The code snippet below demonstrates how to retrieve data by Token Name.
+Token Data can also be retrieved by individual Token name. The EMDK API provides the supported Tokens in the TokenizedData.Keys class. The code snippet below demonstrates how to retrieve data by Token Name.
 
     :::java
     scanDataCollection.getTokenizedData().getTokensByKey(TokenizedData.Keys.DEVICE_IDENTIFIER);

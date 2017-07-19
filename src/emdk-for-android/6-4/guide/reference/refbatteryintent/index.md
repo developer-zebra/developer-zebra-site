@@ -29,7 +29,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>Power Precision Plus </td>
-		<td>MC18, TC8000, WT6000</td>
+		<td>MC18, TC8000, WT6000, TC51, TC56, TC7X</td>
 	</tr>
 	<tr>
 		<td>Backup Battery</td>

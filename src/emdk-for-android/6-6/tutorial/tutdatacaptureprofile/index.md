@@ -6,7 +6,7 @@ productversion: '6.6'
 ---
 ## Developing an EMDK for Android Application Part 1
 
-This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/6-6/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-6/mx/data-capture/keystroke) feature of [EMDK Profiles](/emdk-for-android/6-6/mx/).
+This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/6-6/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-6/mx/data-capture/keystroke) feature of EMDK Profiles.
 
 
 ## Creating The Project

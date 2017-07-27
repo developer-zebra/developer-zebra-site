@@ -8,8 +8,6 @@ automenu:
       items:
         - title: Using Profile Manager
           url: /emdk-for-android/6-6/guide/profile-manager/
-        - title: Profile Features
-          url: /emdk-for-android/6-6/mx
         - title: MX Overview
           url: /emdk-for-android/6-6/mx/overview
         - title: Choosing a Version
@@ -22,6 +20,8 @@ automenu:
       items:
         - title: App Manager
           url: /emdk-for-android/6-6/mx/appmgr
+        - title: App Gallery Manager
+          url: /emdk-for-android/6-6/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-android/6-6/mx/browsermgr
     - title: Data Capture
@@ -46,6 +46,8 @@ automenu:
           url: /emdk-for-android/6-6/mx/analytics/
         - title: Audio Manager
           url: /emdk-for-android/6-6/mx/audiomgr/
+        - title: Batch Manager
+          url: /emdk-for-android/6-6/mx/batchmgr/
         - title: Battery Manager
           url: /emdk-for-android/6-6/mx/batterymgr/
         - title: Clock

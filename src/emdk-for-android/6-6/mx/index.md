@@ -11,6 +11,10 @@ contentlist:
         url: appmgr
         icon: /mx/icons/app_manager.png
         description: The AppMgr allows you manage the set of user applications that are installed on the device.
+      - title: App Gallery Manager
+        url: appgallerymgr
+        icon: /mx/icons/mx.png
+        description: The AppMgr allows you manage the set of user applications that are installed on the device.
       - title: Browser Manager
         url: browsermgr
         description: The Browser Manager allows you to configure browser settings like the default home page.

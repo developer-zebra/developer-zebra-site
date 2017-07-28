@@ -11,10 +11,18 @@ contentlist:
         url: appmgr
         icon: /mx/icons/app_manager.png
         description: The AppMgr allows you manage the set of user applications that are installed on the device.
+      - title: App Gallery Manager
+        url: appgallerymgr
+        icon: /mx/icons/mx.png
+        description: 'App Gallery Manager enables administrators to remotely configure the AppGallery client app.'
       - title: Browser Manager
         url: browsermgr
         description: The Browser Manager allows you to configure browser settings like the default home page.
         icon: /mx/icons/browsermgr.png
+      - title: Enterprise Keyboard Manager
+        url: enterprisekeyboardmgr
+        description: 'Enterprise Keyboard Manager controls the settings of Enterprise Keyboard, Zebra's soft input device that provides an efficient means of hand-inputting data into Zebra devices running Android. '
+        icon: /mx/icons/mx.png
   - heading: Data Capture
     description: Use profiles to obtain barcode and MSR data into your application.
     visible: true
@@ -59,6 +67,14 @@ contentlist:
         url: batterymgr
         description: The BatteryMgr allows you to configure the thresholds that will be used to determine when a battery needs to be decommissioned.
         icon: /mx/icons/battery_threshold.png
+      - title: Batch Manager
+        url: batchmgr
+        description: 'The Batch setting is used to execute one Profile (which may contain any number of settings) from within another Profile.'
+        icon: /mx/icons/mx.png 
+      - title: Bug Report Manager
+        url: bugreportmgr
+        description: 'The Bug Report Manager (BugReportMgr) provides a framework for reporting the time, date, user input and relevant technical data associated with perceived issues on Zebra mobile computers, building on the standard Android bug reporting mechanism.'
+        icon: /mx/icons/mx.png 
       - title: Clock Manager
         url: clock
         description: 'The Clock Manager allows you to set the Date, Time, and Time Zone or to configure the device to automatically acquire it via NTP.'
@@ -67,10 +83,26 @@ contentlist:
         url: componentmgr
         description: 'The ComponentMgr allows you to configure the state and usage of specific subsystems on the device, such as Ethernet.'
         icon: /mx/icons/ethernet.png
+      - title: Condition Manager
+        url: conditionmgr
+        description: 'The Condition Manager allows an administrator to check for one or more conditions on a device before taking some action or checking for additional conditions.'
+        icon: /mx/icons/mx.png
       - title: Display Manager
         url: displaymgr
         description: The DisplayMgr allows you to control the display screen on the device.
         icon: /mx/icons/displaymgr.png
+      - title: Ethernet Manager
+        url: ethernetmgr
+        description: 'Ethernet Manager is used to administer settings for devices connected to a network through an Ethernet-equipped cradle.'
+        icon: /mx/icons/mx.png
+      - title: File Manager
+        url: filemgr
+        description: 'The File Manager (FileMgr) allows an application to manage files for the device, for example to download a file from a server to the device, or to copy a file or folder from one area of the device to another and delete the original.'
+        icon: /mx/icons/mx.png
+      - title: Personal Dictionary Manager
+        url: personaldictionarymgr
+        description: 'The Personal Dictionary CSP (PersonalDictionary) is used to administer changes to the custom word repository used by Zebra's Enterprise Keyboard.'
+        icon: /mx/icons/mx.png
       - title: Power Manager
         url: powermgr
         description: 'The PowerMgr allows you to perform power-related actions on the device, such as putting it into Sleep mode.'
@@ -119,6 +151,10 @@ contentlist:
         url: encryptmgr
         description: 'The EncryptMgr allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.'
         icon: /mx/icons/encryptmgr.png
+      - title: License Manager
+        url: licensemgr
+        description: 'The LicenseMgr administers the set of Software Licenses present on a device, thereby allowing an app to control the usability of Software Components that require licensing.'
+        icon: /mx/icons/mx.png
       - title: SD Card Manager
         url: sdcardmgr
         description: The SdCardMgr allows you to control whether one specific External Storage on the device can be used.

@@ -8,8 +8,6 @@ automenu:
       items:
         - title: Using Profile Manager
           url: /emdk-for-android/6-6/guide/profile-manager/
-        - title: Profile Features
-          url: /emdk-for-android/6-6/mx
         - title: MX Overview
           url: /emdk-for-android/6-6/mx/overview
         - title: Choosing a Version

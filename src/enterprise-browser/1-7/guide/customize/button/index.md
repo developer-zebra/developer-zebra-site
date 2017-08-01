@@ -9,7 +9,7 @@ layout: guide.html
 
 Apps made with Enterprise Browser 1.7 (and higher) for Android can be accompanied by a series 1-10 custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
 
-The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 10 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
+The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 10 [ButtonBar APIs](../../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
 
 -----
 
@@ -188,7 +188,7 @@ This is the head or parent node of the `button.xml` file; all tags should be con
 ### ButtonBarN
 Numbered ButtonBar1 through ButtonBar10, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
-**Note**: If an attribute defined for a ButtonBar conflicts with one or more individual [Button parameters](#buttonparameters), the individual Button setting will take precedence.   
+**Note**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button setting will take precedence.   
 
 #### Example
 
@@ -297,7 +297,7 @@ Used to specify ButtonBar transparency as a percentage from 0-100 (0=none; 100=f
 
 ### barOrientation
 
-Used to set the orientation (horizontal or vertical) of buttons on the ButtonBar. If left unspecified, horizontal orientation will be used. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value and [Positional Attributes](#positionalattributes).
+Used to select the horizontal or vertical orientation of buttons on the ButtonBar. The horizontal setting will position the bar across the screen from left to right; vertical from top to bottom. If unspecified, horizontal orientation will be selected. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value (if any) and [Positional Attributes](#positionalattributes).
 
 #### Example
 
@@ -311,15 +311,16 @@ Used to set the orientation (horizontal or vertical) of buttons on the ButtonBar
 -----
 
 ## Positional Attributes
+
 Used to specify the placement of the ButtonBar on the device screen. 
 
-> **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are not set, a buttonBar with horizontal orientation will be placed at the bottom of the screen and occupy the full screen width; a ButtonBar with vertical orientation will be placed along the right edge of the screen and occupy the full screen height. 
+> **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are unspecified, a buttonBar with horizontal orientation will be placed at the bottom of the screen and occupy the full screen width; and with vertical orientation placed along the right edge of the screen and occupy the full screen height. 
 
 -----
 
 ### barLeft
 
-Used to specify the left coordinate (in pixels) for the ButtonBar. 
+Used to specify the left coordinate (in pixels) of the ButtonBar. 
 
 #### Example
 
@@ -334,7 +335,7 @@ Used to specify the left coordinate (in pixels) for the ButtonBar.
 
 ### barTop
 
-Used to specify the top coordinate (in pixels) for the ButtonBar.
+Used to specify the top coordinate (in pixels) of the ButtonBar.
 
 #### Example
 
@@ -473,11 +474,17 @@ Used to specify the width of the particular button inside the ButtonBar. **Use o
 
 Used to specify the text to be displayed for the particular button inside the ButtonBar. **Applies only if a background image is not specified**. 
 
+can accept  unless otherwise noted. Entering non-text characters (< > \ / " ') in these fields could cause the Config.xml file to become corrupt.
+
+If any special characters such as (< > \ / " ') need to be set as a [buttonText](#buttontext) then .
+
 **Notes**:
 
-* **This tag will be ignored** if a background image is specified.
+* **The buttonText field accepts alpha-numeric characters only**. Use of non-text characters (i.e. < > \ / " ') will corrupt the `Button.xml` file.
+* **Non-text characters, if required, can be incorporated into an image and displayed using the [buttonImage](#buttonimage) parameter. 
+* **The buttonText tag will be ignored if a background image is specified**.
 * Text size should be selected based on button size and the [barFontSize](#barfontsize) parameter value.
-* Oversized text might not be fully visible.
+* Over-sized text might not be fully visible.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) and [buttonImagePressed](#buttonimagepressed) parameters.
 
 #### Example
@@ -558,14 +565,14 @@ The following Button Actions are supported:
 
 * For performing [keyevent](#keyevent) actions
 * For executing [JavaScript](#javascriptexecution) operations
-* For invoking specific [Commands](#commands)
+* For invoking specific [Commands](#commandexecution)
 
 -----
 
 ### keyevent
 Used to generate a particular keyevent or to output a character. Specify the key and value in **key-value** format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent.html).
 
-**This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript onkeydown events, and also will output the value if associated.
+**This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript onkeydown events, and also will output the value, if associated.
 
 #### Example
 
@@ -579,13 +586,13 @@ Used to generate a particular keyevent or to output a character. Specify the key
 
 #### Key Event Examples
 
-**F1 key as &lt;buttonAction&gt; -** To generate an F1 KeyEvent as a button action for a particular button in a ButtonBar, set the **buttonAction** syntax as follows:
+**To generate an F1 key as a buttonAction** for a particular button in a ButtonBar, set the buttonAction syntax as follows:
 
     :::xml        
     <buttonAction value ="key-131"/>
 
 
-**Scan Trigger key as &lt;buttonAction&gt; -** To configure a button as a scan trigger, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
+**To set the scan trigger key as a buttonAction**, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
         
     :::xml
     <Button1>
@@ -599,33 +606,37 @@ Used to generate a particular keyevent or to output a character. Specify the key
 
 ## JavaScript Execution
 
-A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned a **buttonAction** value using the **runscript-scriptname** format. 
+A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned to a **buttonAction** value using the **runscript-scriptname** format. 
 
-* **runscript -** indicates that `buttonAction` is associated with JavaScript code block
-* **scriptname -** specifies the name of the script (an .xml file containing the desired JavaScript block), which can perform an operation or invoke an API on press of that button. 
+* **runscript -** indicates that a **buttonAction** is associated with a JavaScript code block.
+* **scriptname -** specifies the name of the script (an .xml file) containing the desired JavaScript block. [More about this file](../script)
 
 **Notes**:
 
-* If any button action is associated with JavaScript execution, one must ensure to define the definition of that script (i.e. **`scriptname`**) inside the custom script xml file.
-* Refer Enterprise Browser [Custom JavaScript XML Guide](../../customscriptdefinition), for complete details on how to create the custom script xml file.
-* Also refer Enterprise Browser [customxmlfile](../../configreference/#customxmlfile) config tag for changing custom script xml file.
+* If a **buttonAction** is to be associated with JavaScript execution, the .xml file containing the code must be stored on the device and identified as above. 
+* See the [Custom JavaScript Guide](../script) for details on creating custom script .xml files.
+* See also the [&lt;customxmlfile&gt; tag](../../configreference/#customxmlfile) in the `Config.xml` reference to specify or change the name and/or location of the script .xml file.
 
-#### JavaScript Execution Examples:
+-----
 
-1. Button to act as a Trigger: 
-The below examples shows how button can be configured to be used as a trigger using Enterprise Browser Barcode API.
+### Example Code
 
-    **Inside button xml file (say _button.xml_ file):**
-    * * *
+#### Scan Trigger Button
+
+The two snippets below show the code required to configure a button as a scan trigger using the Enterprise Browser Barcode API. **Both snippets are required**. 
+
+##### In the `button.xml` file: 
+        :::xml
+        ...
         <Button1>
         	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
         	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
         	<buttonAction value ="runscript-scantriggerscript"/>
         </Button1>
-                
-                
-    **Inside custom script xml file (say _CustomScript.xml_ file):**
-    * * *
+        ...
+
+##### In the `CustomScript.xml` file:
+
         <?xml version = "1.0"?>
         <!--  Enterprise Browser Custom Script definition file -->
         <CustomScripts>
@@ -634,18 +645,22 @@ The below examples shows how button can be configured to be used as a trigger us
         	</scantriggerscript>
         </CustomScripts>
 
-2. Button to get device details: 
-The below examples shows how button can be configured to fetch device information using Enterprise Browser System API.
+-----
 
-    **Inside button xml file (say _button.xml_ file):**
-    * * *
-        <Button1>
-        	<buttonAction value ="runscript-deviceinfoscript"/>
-        </Button1>
+#### Display Device Info
 
-            
-    **Inside custom script xml file (say _CustomScript.xml_ file):**
-    * * *
+The two snippets below show how to use a button to fetch and display information from within a device using the Enterprise Browser System API. **Both snippets are required**. 
+
+##### In the `button.xml` file:
+
+      :::xml
+      <Button1>
+        <buttonAction value ="runscript-deviceinfoscript"/>
+      </Button1>
+           
+##### In the `CustomScript.xml` file:
+      
+        :::xml
         <?xml version = "1.0"?>
         <!--  Enterprise Browser Custom Script definition file -->
         <CustomScripts>
@@ -661,25 +676,30 @@ The below examples shows how button can be configured to fetch device informatio
         	</deviceinfoscript>
         </CustomScripts>
 
-##### Commands
-Apart from using the buttons as keyevent or executing specific JavaScript task, one can also use predefined command to achieve predefined actions inside Enterprise Browser application.  
+-----
 
-As of now the only command supported is **`quit`** which can be used to exit from Enterprise Browser application.
+## Command Execution
 
-###### Command Example:
-* The below examples shows how buttonAction can be associated with the **`quit`** command for exiting the Enterprise Browser application when button is pressed.
+A button can be configured to execute a command. **Enterprise Browser currently supports only the ability to quit the app**. 
 
-**Inside button xml file (say _button.xml_ file):**
+### Example Code
 
-  :::xml
-  <Button5>
-      <buttonAction value ="quit"/>
-      <buttonImage value ="file://%INSTALLDIR%/quit.png"/>
-  </Button5>
+#### 'Quit App' Button
 
----
+The example below shows how to use a button to execute a command to quit the app: 
 
-## Remarks
-* Do not assign values (i.e. inside any button related tags) which contains special characters such as (< > \ / " '). Doing so, will cause the button xml file to become corrupt. 
+##### In the `button.xml` file:
 
-**Note**: If any special characters such as (< > \ / " ') need to be set as a [buttonText](#buttontext) then use [buttonImage](#buttonimage) instead.
+    :::xml
+    <Button5>
+        <buttonAction value ="quit"/>
+        <buttonImage value ="file://%INSTALLDIR%/quit.png"/>
+    </Button5>
+
+-----
+
+**Related Guides**:
+
+* **[JavaScript Guide](../script)**
+* **[Customize Enterprise Browser](../)**
+* **[&lt;customxmlfile&gt; tag](../../configreference/#customxmlfile)** in the `Config.xml` reference

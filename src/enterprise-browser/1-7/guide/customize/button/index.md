@@ -13,9 +13,9 @@ The number of buttons or keys and the appearance, layout, on-screen position, fu
 
 -----
 
-The Button.xml File
+## Button.xml File
 
-The `button.xml` file stores all the runtime configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 10 ButtonBars (ButtonBar1 through ButtonBar10) and all definitions are maintained in the `button.xml` file. 
+The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 10 ButtonBars (ButtonBar1 through ButtonBar10) and all definitions are maintained in the `button.xml` file. 
 
 The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
 
@@ -186,7 +186,7 @@ This is the head or parent node of the `button.xml` file; all tags should be con
 -----
 
 ### ButtonBarN
-Numbered ButtonBar1 through ButtonBar10, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. It multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
+Numbered ButtonBar1 through ButtonBar10, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
 **Note**: If an attribute defined for a ButtonBar conflicts with one or more individual [Button parameters](#buttonparameters), the individual Button setting will take precedence.   
 
@@ -247,7 +247,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB. 
 
-Notes:
+**Notes**:
 
 * Setting the color for individual buttons is not supported.
 * If no color is specified, the default color is yellow.
@@ -297,7 +297,7 @@ Used to specify ButtonBar transparency as a percentage from 0-100 (0=none; 100=f
 
 ### barOrientation
 
-Used to set the orientation (horizontal or vertical) of buttons on the ButtonBar. If left unspecified, defaults to horizontal. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value and ButtonBar positional attributes.
+Used to set the orientation (horizontal or vertical) of buttons on the ButtonBar. If left unspecified, horizontal orientation will be used. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value and [Positional Attributes](#positionalattributes).
 
 #### Example
 
@@ -309,6 +309,7 @@ Used to set the orientation (horizontal or vertical) of buttons on the ButtonBar
     </ButtonBar1>
 
 -----
+
 ## Positional Attributes
 Used to specify the placement of the ButtonBar on the device screen. 
 
@@ -379,30 +380,30 @@ Used to specify the width (in pixels) of the ButtonBar.
 
 ## Button-Specific Parameters
 
-Button-specific parameters are used to specify attributes that apply to an individual Button. These tags must be enclosed within the ButtonN node for which the settings are intended. 
+Button-specific parameters are used to specify attributes that apply to an individual Button. These tags must be enclosed within the ButtonN node for which the settings are intended. Buttons effect one another only in terms of the total number of buttons created on a given ButtonBar. 
 
-Buttons effect one another only in terms of the total number of buttons created on a given ButtonBar. **The space occupied by each button is calculated as the number of available horizontal or vertical pixels (as determined by [barOrientation](#barorientation)) divided by the total number of ButtonN tags in the ButtonBarN node**. For example, if four buttons are created (as Button1 through Button4), a horizontally oriented ButtonBar will display four buttons of equal size across the screen.  
+**The space occupied by each button is calculated as the number of available horizontal or vertical pixels (as determined by [barOrientation](#barorientation)) divided by the total number of ButtonN tags in the ButtonBarN node**. For example, if four buttons are created (as Button1 through Button4), a horizontally oriented ButtonBar will display four buttons of equal size across the screen.  
 
 **Note**: If an attribute defined in one or more [ButtonBar parameters](#buttonbarparameters) conflicts with one or more individual Button parameters, the individual Button setting will take precedence.   
 
 #### Example
 
-  :::xml
-  <ButtonBar1>
-    <Buttons>
-      <Button1>
-          <buttonLeft value="2" />
-          <buttonTop value="1063" />
-          <buttonWidth value="102" />
-          <buttonHeight value="120" />
-          <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
-          <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
-          <buttonAction value="key-19" />
-      </Button1>
-      <Button2>
-      ...
-    </Buttons>
-  </ButtonBar1>
+    :::xml
+    <ButtonBar1>
+      <Buttons>
+        <Button1>
+            <buttonLeft value="2" />
+            <buttonTop value="1063" />
+            <buttonWidth value="102" />
+            <buttonHeight value="120" />
+            <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
+            <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
+            <buttonAction value="key-19" />
+        </Button1>
+        <Button2>
+        ...
+      </Buttons>
+    </ButtonBar1>
 
 -----
 
@@ -472,13 +473,13 @@ Used to specify the width of the particular button inside the ButtonBar. **Use o
 
 Used to specify the text to be displayed for the particular button inside the ButtonBar. **Applies only if a background image is not specified**. 
 
-Note:
+**Notes**:
 
-* If background image is specified this tag will be ignored.
-* Please set the text according to the size of the buttons and as well as the [barFontSize](#barfontsize) parameter value.
-* If the text is too big as compared to button size text may not be fully visible.
-* If webview is resized and ButtonBar is not rendered on top of webview layout, the color of the button may be effected depending on the device display. Hence it is recommended to use [buttonImage](#buttonimage) and [buttonImagePressed](#buttonimagepressed)in those cases.
-   
+* **This tag will be ignored** if a background image is specified.
+* Text size should be selected based on button size and the [barFontSize](#barfontsize) parameter value.
+* Oversized text might not be fully visible.
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) and [buttonImagePressed](#buttonimagepressed) parameters.
+
 #### Example
 
     :::xml
@@ -494,7 +495,7 @@ Note:
 
 Used to specify a device-resident image file (.png format only) for the particular button inside the ButtonBar. Supports [substitution variables](../../configreference/#substitutionvariables) (recommended) or full path plus file name.
 
-**Supported substitution variables:
+**Supported substitution variables**:
 
 * `%INSTALLDIR%`
 * `%PRIMARYDIR%`
@@ -517,7 +518,7 @@ Used to specify a device-resident image file (.png format only) for the particul
 
 Used to specify a device-resident image file (.png format only) for the particular button inside the ButtonBar to be displayed while the button is pressed. Supports [substitution variables](../../configreference/#substitutionvariables) (recommended) or full path plus file name.
 
-**Supported substitution variables:
+**Supported substitution variables**:
 
 * `%INSTALLDIR%`
 * `%PRIMARYDIR%`
@@ -537,10 +538,6 @@ Used to specify a device-resident image file (.png format only) for the particul
 
 -----
 
-
->>>>>CHECK CHECK CHECK -> still under construction
-
-
 ### buttonAction
 
 Used to specify the action to be taken when a particular button is pressed. Accepts predefined command strings only.
@@ -557,22 +554,18 @@ Used to specify the action to be taken when a particular button is pressed. Acce
       ...
     </ButtonBar1>
     
-One can associate (i.e. **`buttonAction`**) for anyone of the below actions:
-* For performing [keyevent](#keyevent) actions.
-* For executing [JavaScript](#javascript-execution) operation.
-* For invoking specific [Command](#commands).
+The following Button Actions are supported:
+
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commands)
 
 -----
 
 ### keyevent
-One can use a particular button to generate a keyevent and also for typing the character in the input boxes in the page.  
+Used to generate a particular keyevent or to output a character. Specify the key and value in **key-value** format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent.html).
 
-User has to provide the key and value in **`key-value`** format where value is the android keycode value for the particular key. Please refer to Android [KeyEvent](https://developer.android.com/reference/android/view/KeyEvent.html) documentation for the values of different keys.
-
-Note:
-
-* Generating a keyevent for the particular key can be captured inside JavaScript onkeydown events and it will also key-in the values in the input areas if associated.
-* User can also create their own keyboard creating multiple Horizontal ButtonBars placed in rows or multiple Vertical ButtonBars placed in columns.
+**This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript onkeydown events, and also will output the value if associated.
 
 #### Example
 
@@ -586,38 +579,36 @@ Note:
 
 #### Key Event Examples
 
-1. **F1** key as <buttonAction>: 
-For generating **F1** keyevent as button action for the particular button inside the particular ButtonBar, one must set the **`buttonAction`** syntax in the below manner.
-        
-    **Inside button xml file (say _button.xml_ file):**
-    * * *
-        <buttonAction value ="key-131"/>
+**F1 key as &lt;buttonAction&gt; -** To generate an F1 KeyEvent as a button action for a particular button in a ButtonBar, set the **buttonAction** syntax as follows:
 
-2. Scan Trigger key as <buttonAction>: 
-To use a Button as a scan trigger one can send the trigger KeyCodes(104) to the Enterprise Browser app, which will be passed to Barcode scanning framework to activate the scanner. Please see the below example on how onscreen button can be used as a barcode scanner trigger.
+    :::xml        
+    <buttonAction value ="key-131"/>
+
+
+**Scan Trigger key as &lt;buttonAction&gt; -** To configure a button as a scan trigger, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
         
-    **Inside button xml file (say _button.xml_ file):**
-  :::xml
-  <Button1>
-  	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
-  	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
-  	<buttonAction value ="key-104"/>
-  </Button1>
+    :::xml
+    <Button1>
+    	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
+    	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
+    	<buttonAction value ="key-104"/>
+    </Button1>
+
 
 -----
 
 ## JavaScript Execution
-One can use a particular button to invoke any JavaScript code block (including [Enterprise Browser APIs](../../../api/)).  
-User has to assign the **`buttonAction`** value in **`runscript-scriptname`** format.
 
-* `runscript` - _This indicate that `buttonAction` is associated with JavaScript code block_.
-* `scriptname` - _This indicate the name of the script which is defined in another custom script xml file. The script definition can contain any JavaScript code block to perform any operation on press of that button. Inside JavaScript code block, user can invoke/use any Enterprise Browser APIs based on their requirement._
-    
-Notes:
+A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned a **buttonAction** value using the **runscript-scriptname** format. 
 
-1. If any button action is associted with JavaScript Execution, one must ensure to define the definition of that script (i.e. **`scriptname`**) inside the custom script xml file.
-2. Refer Enterprise Browser [Custom JavaScript XML Guide](../../customscriptdefinition), for complete details on how to create the custom script xml file.
-3. Also refer Enterprise Browser [customxmlfile](../../configreference/#customxmlfile) config tag for changing custom script xml file.
+* **runscript -** indicates that `buttonAction` is associated with JavaScript code block
+* **scriptname -** specifies the name of the script (an .xml file containing the desired JavaScript block), which can perform an operation or invoke an API on press of that button. 
+
+**Notes**:
+
+* If any button action is associated with JavaScript execution, one must ensure to define the definition of that script (i.e. **`scriptname`**) inside the custom script xml file.
+* Refer Enterprise Browser [Custom JavaScript XML Guide](../../customscriptdefinition), for complete details on how to create the custom script xml file.
+* Also refer Enterprise Browser [customxmlfile](../../configreference/#customxmlfile) config tag for changing custom script xml file.
 
 #### JavaScript Execution Examples:
 

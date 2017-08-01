@@ -6,9 +6,10 @@ layout: guide.html
 ---
 
 ## Overview
-The Enterprise Keyboard API provides programmatic access to Zebra's software keyboard and some of its settings. To use EKB with an Enterprise Browser app, EKB must first be selected using the Settings panel in the Zebra device. Alternatively, EKB also can be activated programmatically using Zebra's [EMDK](../../../../emdk-for-android) development tools, or remotely using [StageNow](../../../../stagenow) or a compatible MDM. See the [Enterprise Keyboard usage guide](../../../../enterprise-keyboard) for details.
+The Enterprise Keyboard API provides programmatic access to Zebra's Enterprise Keyboard (EKB 1.2 and higher) soft input device and some of its settings. To use EKB with an Enterprise Browser app, EKB must be enabled and selected as the default input device. This can be done manually using the Settings panel on the Zebra device, programmatically using Zebra's [EMDK](../../../../emdk-for-android) development tools, or remotely using [StageNow](../../../../stagenow) or a compatible MDM. See the [Enterprise Keyboard usage guide](../../../../enterprise-keyboard) for details.
 
-**This API is not for use with the standard Android (AOSP) keyboard**.
+* **This API works only with EKB 1.2 and higher**.
+* **This API is not for use with the standard Android (AOSP) keyboard**.
 
 ## Enabling the API
 
@@ -22,7 +23,7 @@ Both are explained below.
 For either method, one or more files must be copied to the device from `/Enterprise Browser/JavaScript Files/Enterprise Browser`, a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include a reference to the JavaScript modules file in the app. For instance, to include the modules file in the `index.html`, copy it to the same directory as the app's `index.html` file and and add the following line to the HTML's HEAD section:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include a reference to the JavaScript modules file in the app. For instance, to include the modules file in the `index.html`, copy it to the same directory as the app's `index.html` file and add the following line to the HTML's HEAD section:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>

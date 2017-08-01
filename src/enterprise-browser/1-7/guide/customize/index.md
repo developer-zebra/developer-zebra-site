@@ -43,7 +43,7 @@ ButtonBars can be shown and hidden programmatically as required by an app's page
 **Call EB APIs using**: 
 
 * JavaScript objects
-* ActiveX objects (Windows Mobile/CE only)
+* ActiveX objects
 * HTML meta tags
 * The [&lt;DefaultMetaTags&gt;](../configreference/#defaultmetatags) setting in the `Config.xml` file
 * [DOM Injection](../DOMinjection)

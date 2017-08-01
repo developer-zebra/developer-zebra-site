@@ -42,7 +42,7 @@ The version of MX on a Zebra Android KitKat device you can visually look in the 
     
 ## Using APIs
 
-If your application needs to determine the version of MX installed on a device at run time, then you can use a the `VersionManager` EMDK for Android API.
+If your application needs to determine the version of MX installed on a device at run time, then you can use a the `VersionManager` API.
 
     :::java
     // Get an instance of VersionManager

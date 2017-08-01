@@ -85,7 +85,7 @@ System components:
 The MX version on a specific device can be effected by:
 
 * OS Updates
-* EMDK for Android Device Runtime Updates
+* EMDK for Xamarin Device Runtime Updates
 
 With each version of MX, new CSPs can be introduced, and pre-existing CSPs can also have new behavior. It is generally not found that MX updates will remove or change pre-existing behavior unless specifically noted.
 

@@ -7,9 +7,7 @@ automenu:
     - title: Getting Started
       items:
         - title: Using Profile Manager
-          url: /emdk-for-xamarin/2-5/guide/profile-manager
-        - title: Profile Features
-          url: /emdk-for-xamarin/2-5/mx
+          url: /emdk-for-xamarin/2-5/guide/profile-manager/
         - title: MX Overview
           url: /emdk-for-xamarin/2-5/mx/overview
         - title: Choosing a Version
@@ -22,8 +20,12 @@ automenu:
       items:
         - title: App Manager
           url: /emdk-for-xamarin/2-5/mx/appmgr
+        - title: App Gallery Manager
+          url: /emdk-for-xamarin/2-5/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-xamarin/2-5/mx/browsermgr
+        - title: Enterprise Keyboard Manager
+          url: /emdk-for-xamarin/2-5/mx/enterprisekeyboardmgr/
     - title: Data Capture
       items:
         - title: Activity Selection
@@ -46,14 +48,26 @@ automenu:
           url: /emdk-for-xamarin/2-5/mx/analytics/
         - title: Audio Manager
           url: /emdk-for-xamarin/2-5/mx/audiomgr/
+        - title: Batch Manager
+          url: /emdk-for-xamarin/2-5/mx/batchmgr/
         - title: Battery Manager
           url: /emdk-for-xamarin/2-5/mx/batterymgr/
+        - title: Bug Report Manager
+          url: /emdk-for-xamarin/2-5/mx/bugreportmgr/
         - title: Clock
           url: /emdk-for-xamarin/2-5/mx/clock/
         - title: Component Manager
           url: /emdk-for-xamarin/2-5/mx/componentmgr/
+        - title: Condition Manager
+          url: /emdk-for-xamarin/2-5/mx/conditionmgr/
         - title: Display Manager
           url: /emdk-for-xamarin/2-5/mx/displaymgr/
+        - title: Ethernet Manager
+          url: /emdk-for-xamarin/2-5/mx/ethernetmgr/
+        - title: File Manager
+          url: /emdk-for-xamarin/2-5/mx/filemgr/
+        - title: Personal Dictionary Manager
+          url: /emdk-for-xamarin/2-5/mx/personaldictionarymgr/
         - title: Power Manager
           url: /emdk-for-xamarin/2-5/mx/powermgr/
         - title: Touch Manager
@@ -62,8 +76,8 @@ automenu:
           url: /emdk-for-xamarin/2-5/mx/remotescannermgr/
     - title: Core Framework
       items:
-        - title: Persistance Manager
-          url: /emdk-for-xamarin/2-5/mx/persistance
+        - title: Persistence Manager
+          url: /emdk-for-xamarin/2-5/mx/persistence
         - title: XML Manager
           url: /emdk-for-xamarin/2-5/mx/xml
     - title: Security
@@ -78,6 +92,8 @@ automenu:
           url: /emdk-for-xamarin/2-5/mx/devadmin
         - title: Encrypt Manager
           url: /emdk-for-xamarin/2-5/mx/encryptmgr
+        - title: License Manager
+          url: /emdk-for-xamarin/2-5/mx/licensemgr/
         - title: SD Card Manager
           url: /emdk-for-xamarin/2-5/mx/sdcardmgr
         - title: Threat Manager
@@ -94,7 +110,7 @@ automenu:
           url: /emdk-for-xamarin/2-5/mx/settingsmgr
         - title: UI Manager
           url: /emdk-for-xamarin/2-5/mx/uimgr
-    - title: Wireless
+    - title: Network
       items:
         - title: Bluetooth Manager
           url: /emdk-for-xamarin/2-5/mx/bluetoothmgr/

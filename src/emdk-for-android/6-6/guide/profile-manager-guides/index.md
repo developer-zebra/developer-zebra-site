@@ -24,6 +24,8 @@ automenu:
           url: /emdk-for-android/6-6/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-android/6-6/mx/browsermgr
+        - title: Enterprise Keyboard Manager
+          url: /emdk-for-android/6-6/mx/enterprisekeyboardmgr/
     - title: Data Capture
       items:
         - title: Activity Selection
@@ -50,12 +52,22 @@ automenu:
           url: /emdk-for-android/6-6/mx/batchmgr/
         - title: Battery Manager
           url: /emdk-for-android/6-6/mx/batterymgr/
+        - title: Bug Report Manager
+          url: /emdk-for-android/6-6/mx/bugreportmgr/
         - title: Clock
           url: /emdk-for-android/6-6/mx/clock/
         - title: Component Manager
           url: /emdk-for-android/6-6/mx/componentmgr/
+        - title: Condition Manager
+          url: /emdk-for-android/6-6/mx/conditionmgr/
         - title: Display Manager
           url: /emdk-for-android/6-6/mx/displaymgr/
+        - title: Ethernet Manager
+          url: /emdk-for-android/6-6/mx/ethernetmgr/
+        - title: File Manager
+          url: /emdk-for-android/6-6/mx/filemgr/
+        - title: Personal Dictionary Manager
+          url: /emdk-for-android/6-6/mx/personaldictionarymgr/
         - title: Power Manager
           url: /emdk-for-android/6-6/mx/powermgr/
         - title: Touch Manager
@@ -80,6 +92,8 @@ automenu:
           url: /emdk-for-android/6-6/mx/devadmin
         - title: Encrypt Manager
           url: /emdk-for-android/6-6/mx/encryptmgr
+        - title: License Manager
+          url: /emdk-for-android/6-6/mx/licensemgr/
         - title: SD Card Manager
           url: /emdk-for-android/6-6/mx/sdcardmgr
         - title: Threat Manager

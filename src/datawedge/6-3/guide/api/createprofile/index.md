@@ -23,7 +23,7 @@ Used to create a new DataWedge Profile on the device. If a Profile of the same n
 
 **EXTRA_DATA** [String]: `com.symbol.datawedge.api.CREATE_PROFILE`
 
-**String[ ] &lt;values&gt;**: Name of Profile to be created
+**String &lt;value&gt;**: Name of Profile to be created
 
 ### Return Values
 (None)
@@ -41,9 +41,15 @@ Error messages are logged for invalid actions and parameters.
 		private void createProfile() { 
 	    Intent i = new Intent(); 
 	    i.setAction("com.symbol.datawedge.api.ACTION"); 
-	    i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", ""); 
+	    i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", profileName); 
 	    this.sendBroadcast(i); 
 	}
+
+<!--
+6/27/17- per eng. TUT-14724:
+- data type set to "string" (not an array, as "String[ ]")
+- In sample code, blank profile name changed to profileName 
+-->
 
 -----
 

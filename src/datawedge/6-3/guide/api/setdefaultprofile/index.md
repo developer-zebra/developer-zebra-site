@@ -56,10 +56,13 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	public void onResume() {
 	        // create the intent
 	        Intent i = new Intent();
+
 	        // set the action to perform
 	        i.setAction(setDefaultProfile);
-	        // add additional info
+	        
+	        // add additional info (a name)
 	        i.putExtra(extraData, "myProfile");
+	        
 	        // send the intent to DataWedge
 	        context.this.sendBroadcast(i);
 	}

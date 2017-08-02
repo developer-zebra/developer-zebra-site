@@ -2,10 +2,10 @@
 title: Enterprise Keyboard
 img: ekb_logo.png
 layout: redirect.html
-redirect_url: /enterprise-keyboard/1-3/guide/about
+redirect_url: /enterprise-keyboard/1-4/guide/about
 ---
 
-### Going to version 1.3...
+### Loading the latest EKB version...
 
 
 

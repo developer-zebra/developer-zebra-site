@@ -172,7 +172,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 
 var sitebuild = Metalsmith(__dirname)
     .clean(false)
-    .concurrency(1000)
+    .concurrency(2000)
 	.metadata({
 	    site: {
 	      title: 'Zebra Technologies - EMDK Samples',
@@ -547,6 +547,66 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/6-3/'
     }))
 
+//emdk for android 6.4
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/',
+        automenu: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/barcode',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/core',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/notification',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/payment',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/PersonalShopper',
+        automenu: true,
+        ascontent: true
+    }))
+    
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/scanandpair',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/securenfc',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/serialcomm',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/simulscan',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/api/notification',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-4/'
+    }))
+
     //emdk for xamarin 1.0
     .use(foldermenu({
         folder: 'emdk-for-xamarin/1-0/api/',
@@ -636,30 +696,71 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-xamarin/2-2/'
     }))
+
+    //emdk-x 2.3
     .use(foldermenu({
-<<<<<<< HEAD
-=======
-        folder: 'mx/4-4/',
+        folder: 'emdk-for-xamarin/2-3/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'mx/6-0/',
+        folder: 'emdk-for-xamarin/2-3/api/notification',
+        automenu: true,
+        ascontent: true
+    }))    
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/api/scanandpair',
+        automenu: true,
+        ascontent: true
+    }))    
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/api/barcode',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/api/core',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-3/'
+    }))
+
+    //emdk-x 2.4
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-4/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'mx/6-2/',
-        automenu: true
+        folder: 'emdk-for-xamarin/2-4/api/simulscan',
+        automenu: true,
+        ascontent: true
+    })) 
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-4/api/notification',
+        automenu: true,
+        ascontent: true
+    }))    
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-4/api/scanandpair',
+        automenu: true,
+        ascontent: true
+    }))    
+    .use(foldermenu({
+        folder: 'emdk-for-xamarin/2-4/api/barcode',
+        automenu: true,
+        ascontent: true
     }))
     .use(foldermenu({
-        folder: 'mx/5-0/',
-        automenu: true
+        folder: 'emdk-for-xamarin/2-4/api/core',
+        automenu: true,
+        ascontent: true
     }))
     .use(foldermenu({
-        folder: 'mx/4-2/',
-        automenu: true
+        folder: 'emdk-for-xamarin/2-4/'
     }))
+
     .use(foldermenu({
->>>>>>> develop
         folder: 'mx/',
         automenu: false
     }))
@@ -682,6 +783,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-6/'
     }))
     .use(foldermenu({
+        folder: 'stagenow/2-7/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({
@@ -699,6 +803,12 @@ var sitebuild = Metalsmith(__dirname)
    .use(foldermenu({
         folder: 'datawedge/6-2/'
     }))
+   .use(foldermenu({
+        folder: 'datawedge/6-3/'
+    }))
+   .use(foldermenu({
+        folder: 'datawedge/6-31/'
+    }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-4/'
     }))
@@ -709,9 +819,6 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'enterprise-browser/1-6/'
     }))
         .use(foldermenu({
-        folder: 'enterprise-browser/1-6/'
-    }))
-        .use(foldermenu({
         folder: 'enterprise-keyboard/1-0/'
     }))
        .use(foldermenu({
@@ -719,6 +826,27 @@ var sitebuild = Metalsmith(__dirname)
     }))
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-2/'
+    }))
+       .use(foldermenu({
+        folder: 'enterprise-keyboard/1-3/'
+    }))
+<<<<<<< HEAD
+// Tab menus for TechDocs help pages
+    .use(foldermenu({
+        folder: 'about/'
+    }))
+    .use(foldermenu({
+        folder: 'contact/'
+    }))
+    .use(foldermenu({
+        folder: 'search/'
+    }))
+    .use(foldermenu({
+        folder: 'help/'
+=======
+       .use(foldermenu({
+        folder: 'enterprise-keyboard/1-4/'
+>>>>>>> ekb-1.4
     }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

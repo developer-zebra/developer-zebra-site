@@ -64,8 +64,6 @@ automenu:
           url: /emdk-for-xamarin/2-5/mx/displaymgr/
         - title: Ethernet Manager
           url: /emdk-for-xamarin/2-5/mx/ethernetmgr/
-        - title: File Manager
-          url: /emdk-for-xamarin/2-5/mx/filemgr/
         - title: Personal Dictionary Manager
           url: /emdk-for-xamarin/2-5/mx/personaldictionarymgr/
         - title: Power Manager
@@ -92,8 +90,6 @@ automenu:
           url: /emdk-for-xamarin/2-5/mx/devadmin
         - title: Encrypt Manager
           url: /emdk-for-xamarin/2-5/mx/encryptmgr
-        - title: License Manager
-          url: /emdk-for-xamarin/2-5/mx/licensemgr/
         - title: SD Card Manager
           url: /emdk-for-xamarin/2-5/mx/sdcardmgr
         - title: Threat Manager
